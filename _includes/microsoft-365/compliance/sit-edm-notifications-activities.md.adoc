@@ -1,0 +1,71 @@
+= Create notifications for exact data match activities
+:audience: Admin
+:author: chrfox
+:description: Learn how to create notifications for exact data match activities.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.custom: seo-marvel-apr2020
+:ms.date:
+:ms.localizationpriority: high
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MOE150", "MET150"]
+
+== Create notifications for exact data match activities
+
+When you link:sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types[create custom sensitive information types with exact data match (EDM)], there are a number of activities that are created in the link:search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log[audit log].
+You can use the link:/powershell/module/exchange/new-protectionalert[New-ProtectionAlert] PowerShell cmdlet to create notifications that let you know when these activities occur:
+
+* `CreateSchema`
+* `EditSchema`
+* `RemoveSchema`
+* `UploadDataFailed`
+* `UploadDataCompleted`
+
+____
+[!NOTE]  The ability to create notifications for EDM activities is available for the World Wide and GCC clouds only.
+____
+
+=== Pre-requisites
+
+The account you use must be one of the following:
+
+* A global admin
+* Compliance administrator
+* Exchange Online administrator
+
+To learn more about DLP permissions, see link:data-loss-prevention-policies.md#permissions[Permissions].
+
+EDM-based classification is included in these subscriptions:
+
+* Office 365 E5
+* Microsoft 365 E5
+* Microsoft 365 E5 Compliance
+* Microsoft E5/A5 Information Protection and Governance
+
+To learn more about DLP licensing, see link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection[Microsoft 365 licensing guidance for security & compliance].
+
+=== Configure notifications for EDM activities
+
+. Connect to the link:/powershell/exchange/connect-to-scc-powershell[Security & Compliance PowerShell].
+. Run the `New-ProtectionAlert` cmdlet using the activity that you want to create the notification for.
+For example, if you want to be notified when the `UploadDataCompleted` action occurred, run:
++
+[,powershell]
+----
+ New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
+----
++
+For the `UploadDataFailed` you can run:
++
+[,powershell]
+----
+ New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High
+----
+
+=== Related articles
+
+* link:sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types[Learn about exact data match based sensitive information types]
+* link:/powershell/module/exchange/new-protectionalert[New-ProtectionAlert]

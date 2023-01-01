@@ -1,0 +1,79 @@
+= Azure SQL connection string entity definition (preview)
+:audience: Admin
+:author: chrfox
+:description: Azure SQL connection string sensitive information type entity definition.
+:f1.keywords: ["CSH"]
+:f1_keywords: ["ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation"]
+:feedback_system: None
+:hideEdit: true
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: reference
+:recommendations: false
+:search.appverid: MET150
+
+== Azure SQL connection string (preview)
+
+=== Format
+
+Up to 20,000-character combination of letters, digits, and special characters.
+
+or
+
+A pair of username and password used in general authentication process.
+
+=== Pattern
+
+Any combination of up to 20,000 characters consisting of:
+
+* a-z (not case-sensitive)
+* 0-9
+* forward slashes (/)
+* or plus signs (+)
+* Up to 2
+* equal signs (=)
+
+for example:
+
+`MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM`
+
+or
+
+Variant username and password formats, for example:
+
+`+username=...;password=********;+` + `+user id=...;password=********;+` + `+uid=...;pwd=********;+` + `+DB_USER=...;DB_PASS=********;+` + `+Service Account=...;Password=********;+` +
+
+=== Checksum
+
+Yes
+
+=== Definition
+
+This SIT is designed to match the security information that's used to connect to link:/azure/sql-database/sql-database-aad-authentication-configure[Azure SQL Databases].
+
+It uses several primary resources:
+
+* Patterns of Base64 encoded string literal.
+* Patterns of Plain-text username and password.
+* Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
+* Patterns of mockup values, redactions, and placeholders.
+
+The patterns are designed to match actual credentials with reasonable confidence.
+The patterns don't match credentials formatted as examples.
+Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present won't be matched.
+
+=== Keywords
+
+==== Keyword_Base64EncodedStringLiteral:
+
+* MII
+
+==== Keyword_LoginCredentials:
+
+* password
+* pw
+* DB_

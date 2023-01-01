@@ -1,0 +1,69 @@
+= Supported Microsoft 365 Defender APIs
+:audience: ITPro
+:author: mjcaparas
+:description: Supported Microsoft 365 Defender APIs
+:f1.keywords: ["NOCSH"]
+:keywords: Microsoft 365 Defender, APIs, api
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Supported Microsoft 365 Defender APIs
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may be substantially modified before it's commercially released.
+Microsoft makes no warranties, express or implied, with respect to the information provided here.
+____
+
+=== List of available APIs
+
+|===
+| Article | Description
+
+| xref:api-advanced-hunting.adoc[Advanced Hunting API]
+| Run Advanced Hunting queries.
+
+| xref:api-incident.adoc[Incident APIs]
+| List and update incidents, along with other practical tasks.
+
+| xref:streaming-api.adoc[Streaming API]
+| Ship real-time events and alerts as they occur in a single data stream.
+|===
+
+==== Endpoint URIs
+
+The base URI for both of the main APIs is: https://api.security.microsoft.com.
+For better performance, use a server closer to your geolocation:
+
+* The United States: api-us.security.microsoft.com
+* Europe: api-eu.security.microsoft.com
+* The United Kingdom: api-uk.security.microsoft.com
+
+Tokens can be acquired by accessing https://api.security.microsoft.com.
+
+All APIs along the `/api` path use the link:/odata/overview[OData] Protocol;
+for example, https://api.security.microsoft.com/api/incidents.
+
+=== Related articles
+
+* xref:api-overview.adoc[Microsoft 365 Defender APIs overview]
+* xref:api-access.adoc[Access the Microsoft 365 Defender APIs]
+* xref:../defender-endpoint/raw-data-export.adoc[Streaming API]
+* xref:api-terms.adoc[Learn about API limits and licensing]
+* xref:api-error-codes.adoc[Understand error codes]

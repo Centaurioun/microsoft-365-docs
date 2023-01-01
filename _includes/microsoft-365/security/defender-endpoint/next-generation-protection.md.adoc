@@ -1,0 +1,66 @@
+= Overview of next-generation protection in Microsoft Defender for Endpoint
+:author: denisebmsft
+:description: Get an overview of next-generation protection in Microsoft Defender for Endpoint. Reinforce the security perimeter of your network by using next-generation protection designed to catch all types of emerging threats.
+:keywords: Microsoft Defender Antivirus, windows defender, antimalware, virus, malware, threat, detection, protection, security
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: M365-security-compliance
+:ms.custom: nextgen
+:ms.localizationpriority: high
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer: mkaminska
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Next-generation protection overview
+
+*Applies to*
+
+* Microsoft Defender Antivirus
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* link:../defender-business/index.yml[Microsoft Defender for Business]
+
+*Platforms*
+
+* Windows
+
+Microsoft Defender for Endpoint includes next-generation protection to reinforce the security perimeter of your network.
+Next-generation protection was designed to catch all types of emerging threats.
+In addition to Microsoft Defender Antivirus, your next-generation protection services include the following capabilities:
+
+* xref:configure-protection-features-microsoft-defender-antivirus.adoc[Behavior-based, heuristic, and real-time antivirus protection], which includes always-on scanning using file and process behavior monitoring and other heuristics (also known as _real-time protection_).
+It also includes detecting and blocking apps that are deemed unsafe, but might not be detected as malware.
+* xref:cloud-protection-microsoft-defender-antivirus.adoc[Cloud-delivered protection], which includes near-instant detection and blocking of new and emerging threats.
+* xref:manage-updates-baselines-microsoft-defender-antivirus.adoc[Dedicated protection and product updates], which includes updates related to keeping Microsoft Defender Antivirus up to date.
+
+____
+[!TIP] Next-generation protection is included in both Microsoft Defender for Endpoint Plan 1 and Plan 2.
+xref:defender-endpoint-plan-1-2.adoc[Learn more about Defender for Endpoint Plan 1 and Plan 2] Next-generation protection is also included in Microsoft Defender for Business and Microsoft 365 Business Premium.
+xref:../defender-business/compare-mdb-m365-plans.adoc[Compare security features in Microsoft 365 plans for small and medium-sized businesses].
+____
+
+=== Configure next-generation protection services
+
+For information on how to configure next-generation protection services, see xref:configure-microsoft-defender-antivirus-features.adoc[Configure Microsoft Defender Antivirus features].
+
+____
+[!NOTE] Configuration and management is largely the same in Windows Server as in Windows clients.
+However, there are some differences.
+____
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____

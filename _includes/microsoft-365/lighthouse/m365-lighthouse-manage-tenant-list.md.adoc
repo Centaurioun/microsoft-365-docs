@@ -1,0 +1,89 @@
+= Manage your tenant list in Microsoft 365 Lighthouse
+:audience: Admin
+:author: SKjerland
+:description: For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage your tenant list.
+:f1.keywords: NOCSH
+:manager: scotv
+:ms-reviewer: ragovind
+:ms.author: sharik
+:ms.collection: ["M365-subscription-management", "Adm_O365"]
+:ms.custom: ["AdminSurgePortfolio", "M365-Lighthouse"]
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-lighthouse
+:ms.topic: article
+:search.appverid: MET150
+
+== Manage your tenant list in Microsoft 365 Lighthouse
+
+To help you manage your tenant list in Microsoft 365 Lighthouse, you can apply custom tags to your tenants.
+These tags can be used to organize your tenants and can also help you filter the existing views and insights available to relevant sets of tenants.
+You can manage your tags from the Tenants page.
+Once created and assigned, you can filter the data within the Tenants, Users, Devices, Threat management, and Windows 365 pages based on a tag.
+
+=== Before you begin
+
+To manage tenant tags, you must:
+
+* Meet the xref:m365-lighthouse-requirements.adoc[requirements for Microsoft 365 Lighthouse].
+* Complete the processes outlined in the xref:m365-lighthouse-sign-up.adoc[Sign up for Microsoft 365 Lighthouse] article.
+* Complete the processes outlined in the xref:m365-lighthouse-configure-portal-security.adoc[Configure Microsoft 365 Lighthouse portal security] article.
+* Be a Global Administrator of the partner tenant.
+
+=== Create a tag
+
+. In the left navigation pane in Lighthouse, select *Tenants*.
+. Select *Manage Tags*.
+. In the *Manage tags* pane, select *Create tag*.
+. Enter a name and description.
+. Select *Save*.
+
+=== Edit a tag
+
+. In the left navigation pane in Lighthouse, select *Tenants*.
+. Select *Manage Tags*.
+. In the *Manage tags* pane, select the tag that you want to edit.
+. Edit the name and/or description as needed.
+. Select *Save*.
+
+=== Assign a tag
+
+. In the left navigation pane in Lighthouse, select *Tenants*.
+. From the list of tenants, select the three dots (more actions) next to the tenant you want to tag.
+. Select *Tags*.
+. Select a tag from the list.
+You can select only one tag at a time.
+
+Tags that are already assigned to the tenant have a check mark to the right of the tag name.
+You can also assign a tag to multiple tenants by selecting the checkbox next to each tenant in the list, selecting *Assign Tags*, and then selecting a tag from the list.
+
+____
+[!NOTE] You can create up to 30 unique Tags and assign them to as many tenants as needed.
+____
+
+=== Delete a tag
+
+. In the left navigation pane in Lighthouse, select *Tenants*.
+. Select *Manage Tags*.
+. In the *Manage tags* pane, select the tag that you want to delete.
+. Select *Delete*.
+. In the confirmation dialog, select *Confirm*.
+
+=== Remove a tag
+
+. In the left navigation pane in Lighthouse, select *Tenants*.
+. From the list of tenants, select the three dots (more actions) next to the tenant you want to edit.
+. Select *Tags*.
+. Select the tag you want to remove.
+
+Tags that are currently assigned have a check mark to the right of the name.
+You can also remove a tag from multiple tenants by selecting the checkbox next to each tenant in the list, selecting *Assign Tags*, and then selecting a checked tag from the list.
+
+=== Next steps
+
+After you've created and assigned tags, you can use them to filter your tenants.
+Go to any of the other pages (Users, Devices, Threat management, or Windows 365) and select one or more tags from the Tenant filter.
+You can create new tags to support specific views based on each page.
+
+=== Related content
+
+xref:m365-lighthouse-sign-up.adoc[Sign up for Microsoft 365 Lighthouse] (article) + xref:m365-lighthouse-device-compliance-page-overview.adoc[Overview of the Device compliance page in Microsoft 365 Lighthouse] (article) + link:m365-lighthouse-faq.yml[Microsoft 365 Lighthouse FAQ] (article)

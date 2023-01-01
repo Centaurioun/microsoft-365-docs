@@ -1,0 +1,65 @@
+= Microsoft 365 solutions for the retail industry
+:author: samanro
+:description: Learn about solution and architecture resources for the retail industry using Microsoft 365
+:f1.keywords: NOCSH
+:manager: bcarter
+:ms.audience: ITPro
+:ms.author: samanro
+:ms.collection: ["highpri", "M365-subscription-management", "M365solutions"]
+:ms.localizationpriority: medium
+:ms.service: o365-solutions
+:ms.topic: article
+
+== Microsoft 365 solutions for the retail industry
+
+Microsoft provides many capabilities to help retail organizations serve customers, fulfill orders, manage the supply chain, and help retail teams stay on top of tasks and work together.
+Microsoft also provides a comprehensive platform for the retail industry, Microsoft Cloud for Retail, which includes components from Microsoft 365, Dynamics 365, and Microsoft Azure.
+Modernization and digital transformation of retail environments is key to keeping up with the ever-changing economy.
+
+{blank} +
+
+____
+[!VIDEO https://www.youtube.com/embed/Vn5x7VM7UwQ]
+____
+
+{blank} +
+
+Learn how you can use Microsoft 365, Dynamics 365, and Azure to digitize, modernize, and enhance your retail solution.
+
+=== Resources for retail
+
+|===
+| Resource | Description
+
+| xref:../frontline/teams-for-retail-landing-page.adoc[Microsoft 365 for Retail]
+| Microsoft 365 and Microsoft Teams offer several capabilities that can help retail organizations with their daily operations and digital transformation.
++ - In-store and cross-store communication + - Virtual fittings and consultations + - Simplify business processes + - Corporate communications + - Onboarding new employees
+
+| link:/industry/retail/overview[Microsoft Cloud for Retail]
+| Learn about Microsoft Cloud for Retail and how it accelerates business growth by providing trusted retail industry solutions that integrate with retailer's existing systems.
+
+| link:/azure/architecture/industries/retail[Azure architecture and solutions for retail]
+| Learn how you can use Microsoft Azure services to digitize, modernize, and enhance your retail solutions at Azure Solutions for the Retail industry.
+|===
+
+=== Videos you can share with your team
+
+Learn about Microsoft Cloud for Retail:
+
+{blank} +
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RWRygC]
+____
+
+{blank} +
+
+Learn how you can empower your associates with real-time store communications and collaboration with Microsoft Teams and the Microsoft Cloud for Retail:
+
+{blank} +
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RWxAgt]
+____
+
+{blank} +

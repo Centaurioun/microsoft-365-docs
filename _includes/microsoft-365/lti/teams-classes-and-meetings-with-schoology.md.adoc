@@ -1,0 +1,62 @@
+= Integrate Microsoft Teams meetings with Schoology LMS
+:audience: admin
+:author: DaniEASmith
+:description: Create and manage Teams meetings with Microsoft Learning Tools Interoperability (LTI) for Schoology LMS.
+:manager: serdars
+:ms.author: danismith
+:ms.collection: ["M365-modern-desktop", "m365initiative-edu"]
+:ms.localizationpriority: medium
+:ms.reviewer: amitman
+:ms.service: o365-administration
+:ms.topic: article
+
+== Integrate Microsoft Teams meetings with Schoology LMS
+
+This guide provides the IT admin steps for registering the Teams Meetings LTI app on Schoology.
+
+For an overview of Microsoft LTI, see xref:index.adoc[Integrating Microsoft products with your Learning Management System (LMS)].
+
+____
+[!NOTE] The person who performs this integration should be an administrator of Schoology.
+However, Schoology users with access to the Schoology *App Center* can also install the Microsoft Teams Meetings LTI app.
+____
+
+=== Register the Teams Meetings LTI app for Schoology
+
+. Sign into your Schoology instance as an administrator with access to install and configure apps.
+. Access the *Microsoft Teams Meetings* app in the https://app.schoology.com/apps[*App Center*] by opening this direct link https://app.schoology.com/apps/profile/6017478062[Microsoft Teams Meetings on Schoology].
+. Select the *Install LTI 1.3 App* button to begin the installation process.
+. Select the *I agree* button.
+. You'll be asked if this app should be installed for your entire organization, or just for you.
+Select *Add to Organization*, and you'll be redirected to the *Organization Apps* page to complete the configuration.
+. From the https://app.schoology.com/apps/school_apps[*Organization Apps list*], locate the *Microsoft Teams Meetings* app and select the *Configure* button.
+ .. Copy the *Deployment ID* assigned to your deployment of the app.
+  ... This ID will be used in the *Microsoft LMS Gateway* configuration process.
+. From the https://app.schoology.com/apps/school_apps[*Organization Apps list*], locate the *Microsoft Teams Meetings* app and select the *Install/Remove* button.
+ .. To install the app for all users, choose the *All Users* checkbox.
+  ... Select only the roles that will have access to Microsoft Teams in your organization, like teachers, students, or system administrators.
+ .. To install the app for all courses, choose the *All Courses* checkbox.
+  ... Don't check the *Course Admins Only* option to ensure the app is available to all members of the course.
+ .. To install the app for all groups, choose the *All Groups* checkbox.
+
+____
+[!NOTE] If you choose not to install the app for all courses, then _Course Admins_ must install the app for themselves by either:
+
+. Going to the https://app.schoology.com/apps/school_apps[Organization Apps list], selecting the *Install/Remove* button, and choosing the courses in which to install the app.
+. Or, they can select the *Install Your App(s)* link at the bottom of the course left rail navigation menu, and then select the *Microsoft Teams Meetings* app to install.
+____
+
+=== Configure the Teams Meetings LTI app to work with Schoology
+
+. Visit https://lti.microsoft.com/[Microsoft LMS Gateway] and select the *Go to registration portal* button.
+. Sign in with a Microsoft 365 administrator account.
+. Select the *Admin Consent* button and accept the permissions.
+ .. If this step isn't performed, the following step will give you an error, and you won't be able to take this step for an hour once you've received the error.
+. Select the *Create new LTI Tenant* button.
+. On the LTI Registration page, choose *Schoology* from the LTI Consumer Platform dropdown, and then select the *Next* button.
+. Paste the *Deployment ID* that you copied while registering the tool in Schoology and select *Next*.
+. Review and save your changes.
+A message will be displayed upon successful registration.
+. Your registration details can also be reviewed by selecting the *View LTI Tenants* button on the home page.
+
+After you complete these steps, your educators will be able to use the Teams Meetings LTI app.

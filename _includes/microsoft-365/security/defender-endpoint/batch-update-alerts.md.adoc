@@ -1,0 +1,171 @@
+= Batch Update alert entities API
+:audience: ITPro
+:author: mjcaparas
+:description: Learn how to update Microsoft Defender for Endpoint alerts in a batch by using this API. You can update the status, determination, classification, and assignedTo properties.
+:keywords: apis, graph api, supported apis, get, alert, information, id
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Batch update alerts
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+=== API description
+
+Updates properties of a batch of existing xref:alerts.adoc[Alerts].
+
+Submission of *comment* is available with or without updating properties.
+
+Updatable properties are: `status`, `determination`, `classification` and `assignedTo`.
+
+=== Limitations
+
+. You can update alerts that are available in the API.
+See xref:get-alerts.adoc[List Alerts] for more information.
+. Rate limitations for this API are 10 calls per minute and 500 calls per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API.
+To learn more, including how to choose permissions, see xref:apis-intro.adoc[Use Microsoft Defender for Endpoint APIs]
+
+|===
+| Permission type | Permission | Permission display name
+
+| Application
+| Alert.ReadWrite.All
+| 'Read and write all alerts'
+
+| Delegated (work or school account)
+| Alert.ReadWrite
+| 'Read and write alerts'
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* The user needs to have at least the following role permission: 'Alerts investigation' (See xref:user-roles.adoc[Create and manage roles] for more information)
+* The user needs to have access to the device associated with the alert, based on device group settings (See xref:machine-groups.adoc[Create and manage device groups] for more information)
+
+Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+____
+
+=== HTTP request
+
+[,http]
+----
+POST /api/alerts/batchUpdate
+----
+
+=== Request headers
+
+|===
+| Name | Type | Description
+
+| Authorization
+| String
+| Bearer \{token}.
+*Required*.
+
+| Content-Type
+| String
+| application/json.
+*Required*.
+|===
+
+=== Request body
+
+In the request body, supply the IDs of the alerts to be updated and the values of the relevant fields that you wish to update for these alerts.
+
+Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+
+For best performance you shouldn't include existing values that haven't changed.
+
+|===
+| Property | Type | Description
+
+| alertIds
+| List<String>
+| A list of the IDs of the alerts to be updated.
+*Required*
+
+| status
+| String
+| Specifies the updated status of the specified alerts.
+The property values are: 'New', 'InProgress' and 'Resolved'.
+
+| assignedTo
+| String
+| Owner of the specified alerts
+
+| classification
+| String
+| Specifies the specification of the specified alerts.
+The property values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.
+
+| determination
+| String
+| Specifies the determination of the specified alerts.
+<p>Possible determination values for each classification are: + <li> *True positive*: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) -- consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other).
+<li> *Informational, expected activity:* `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other).
+<li>  *False positive:* `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).
+
+| comment
+| String
+| Comment to be added to the specified alerts.
+|===
+
+____
+[!NOTE] Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
+____
+
+=== Response
+
+If successful, this method returns 200 OK, with an empty response body.
+
+=== Example
+
+==== Request
+
+Here is an example of the request.
+
+[,http]
+----
+POST https://api.securitycenter.microsoft.com/api/alerts/batchUpdate
+----
+
+[,json]
+----
+{
+    "alertIds": ["da637399794050273582_760707377", "da637399989469816469_51697947354"],
+    "status": "Resolved",
+    "assignedTo": "secop2@contoso.com",
+    "classification": "FalsePositive",
+    "determination": "Malware",
+    "comment": "Resolve my alert and assign to secop2"
+}
+----

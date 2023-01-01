@@ -1,0 +1,23 @@
+= Improve request performance
+:audience: ITPro
+:author: mjcaparas
+:description: Improve request performance
+:keywords: server, request, performance
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.topic: article
+:search.product: eADQiWindows 10XVcnh
+
+____
+[!TIP] For better performance, you can use server closer to your geo location:
+
+* api-us.securitycenter.microsoft.com
+* api-eu.securitycenter.microsoft.com
+* api-uk.securitycenter.microsoft.com
+____

@@ -1,0 +1,84 @@
+= Microsoft Defender for Business and Microsoft partner resources
+:audience: Admin
+:author: denisebmsft
+:description: Learn about partner resources, such as MSP PSA and RMM integration with Defender for Business, and Microsoft 365 Lighthouse.
+:f1.keywords: NOCSH
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: ["SMB", "M365-security-compliance"]
+:ms.date: 08/31/2022
+:ms.localizationpriority: medium
+:ms.reviewer: shlomiakirav
+:ms.service: microsoft-365-security
+:ms.subservice: mdb
+:ms.topic: overview
+:search.appverid: MET150
+
+== Microsoft Defender for Business and Microsoft partner resources
+
+Microsoft partners have access to resources, programs, and tools that empower partners to enable customers to succeed.
+This article provides an overview of resources that are available for Microsoft partners who serve customers using xref:mdb-overview.adoc[Defender for Business] or xref:../../business-premium/index.adoc[Microsoft 365 Business Premium].
+
+=== Resources for Microsoft managed service providers to build cybersecurity capabilities
+
+Most managed service providers (MSPs) offer a sophisticated stack of capabilities.
+For example, many MSPs offer software and services that include backup & recovery, network management, line of business apps, and cybersecurity capabilities.
+Small and medium-sized businesses recognize security as a key component to their success, but often don't have the capacity or expertise to have a dedicated security operations team.
+These customers often need help with managing the security of their endpoints and network, and addressing alerts or detected threats.
+
+*If you're a Microsoft MSP and you want to integrate Microsoft endpoint security capabilities with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software, you can use the xref:../defender-endpoint/management-apis.adoc[Defender for Endpoint APIs]*.
+Using the Defender for Endpoint APIs, with your RMM tools and PSA software, you can:
+
+* Get access to your customers' Microsoft 365 Defender portal to xref:mdb-respond-mitigate-threats.adoc[address alerts and incidents].
+* Get xref:mdb-email-notifications.adoc[email notifications] about new alerts or vulnerabilities across your customers' tenants.
+* Fetch and view xref:mdb-view-manage-incidents.adoc[incidents and alerts] with your security information and event management (SIEM) tools.
+* Orchestrate xref:mdb-review-remediation-actions.adoc[remediation actions], such as approving actions following automated investigations, or taking manual response actions on a device.
+
+Use the following resources to learn more:
+
+|===
+| Resource | Description
+
+| xref:../defender-endpoint/management-apis.adoc[Overview of management and APIs]
+| Defender for Business is built on Microsoft Defender for Endpoint, and is an integration-ready platform.
+This article describes how to automate workflows and innovate using the Defender for Endpoint APIs.
+
+| xref:../defender-endpoint/configure-mssp-support.adoc[Configure managed security service provider integration]
+| Provides an overview of steps to take to successfully integrate a customer's tenant with your MSP solution.
+|===
+
+=== Resources for Cloud Solution Providers
+
+Microsoft Cloud Solution Providers (CSPs) can go beyond reselling licenses and be more involved in customers' business.
+For example, CSPs can use Microsoft 365 Lighthouse to manage small and medium-sized business customers' security settings and capabilities.
+CSPs can also view and manage detected threats, and initiate antivirus scans on devices.
+
+|===
+| Resource | Description
+
+| xref:mdb-lighthouse-integration.adoc[Microsoft 365 Lighthouse and Microsoft Defender for Business]
+| Describes how Defender for Business integrates with Microsoft 365 Lighthouse and includes links to additional information.
+|===
+
+=== Resources for partners to learn about Defender for Business and Microsoft 365 Business Premium
+
+|===
+| Resource | Description
+
+| https://partner.microsoft.com[Microsoft Partner Network]
+| Visit the Microsoft Partner Network to learn how to become a Microsoft partner and join the Microsoft Partner Network.
+
+| https://aka.ms/M365MDBseries[Microsoft 365 Business Premium and Defender for Business partner webinar series]
+| This webinar series provides: <ul><li>Practical guidance about how to have conversations with your customers about security and drive upsell to Microsoft 365 Business Premium.
+</li><li>Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business.
+</li><li>A panel of experts to help answer your questions.</li></ul>
+
+| https://aka.ms/M365BPPartnerPlaybook[Microsoft 365 Business Premium partner playbook and readiness series]
+| Practical guidance on building a profitable managed services practice, with: <ul><li>Examples of successful managed service offers from industry experts and peers.
+</li><li>Technical enablement and checklists from Microsoft experts.
+</li><li>Sales enablement and customer conversation aids to help you market your solution.
+</li></ul>
+
+| https://aka.ms/MDBPartnerKit[Defender for Business partner kit]
+| The Defender for Business partner kit provides you with practical guidance, technical information, and customer-ready resources to market and sell Defender for Business to small and medium-sized businesses.
+|===

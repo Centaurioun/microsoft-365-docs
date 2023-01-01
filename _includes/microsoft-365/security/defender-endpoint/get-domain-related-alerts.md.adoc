@@ -1,0 +1,115 @@
+= Get domain-related alerts API
+:audience: ITPro
+:author: mjcaparas
+:description: Learn how to use the Get domain-related alerts API to retrieve alerts related to a given domain address in Microsoft Defender for Endpoint.
+:keywords: apis, graph api, supported apis, get, domain, related, alerts
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Get domain-related alerts API
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+=== API description
+
+Retrieves a collection of xref:alerts.adoc[Alerts] related to a given domain address.
+
+=== Limitations
+
+* You can query on alerts last updated according to your configured retention period.
+* Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API.
+To learn more, including how to choose permissions, see xref:apis-intro.adoc[Use Microsoft Defender for Endpoint APIs]
+
+|===
+| Permission type | Permission | Permission display name
+
+| Application
+| Alert.Read.All
+| 'Read all alerts'
+
+| Application
+| Alert.ReadWrite.All
+| 'Read and write all alerts'
+
+| Delegated (work or school account)
+| Alert.Read
+| 'Read alerts'
+
+| Delegated (work or school account)
+| Alert.ReadWrite
+| 'Read and write alerts'
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* The user needs to have at least the following role permission: 'View Data' (See xref:user-roles.adoc[Create and manage roles] for more information)
+* Response will include only alerts, associated with devices, that the user have access to, based on device group settings (See xref:machine-groups.adoc[Create and manage device groups] for more information)
+
+Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+____
+
+=== HTTP request
+
+[,http]
+----
+GET /api/domains/{domain}/alerts
+----
+
+=== Request headers
+
+|===
+| Header | Value
+
+| Authorization
+| String
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful and domain exists - 200 OK with list of xref:alerts.adoc[alert] entities.
+If domain does not exist - 200 OK with an empty set.
+
+=== Example
+
+==== Request
+
+Here's an example of the request.
+
+[,http]
+----
+GET https://api.securitycenter.microsoft.com/api/domains/client.wns.windows.com/alerts
+----

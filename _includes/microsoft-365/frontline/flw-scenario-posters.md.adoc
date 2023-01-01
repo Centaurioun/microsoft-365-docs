@@ -1,0 +1,52 @@
+'''
+
+title: Microsoft 365 for frontline workers - scenario posters description: Learn about scenarios you can easily implement for the frontline workers in your organization with these downloadable posters.
+search.appverid: MET150 author: samanro ms.author: samanro manager: pamgreen audience: admin ms.topic: article ms.service: microsoft-365-frontline ms.localizationpriority: high ms.collection:
+
+* m365-frontline
+* m365solution-frontline
+* m365solution-scenario ms.reviewer: aaglick appliesto:
+* Microsoft Teams
+* Microsoft 365 for frontline workers
+
+'''
+
+== Microsoft 365 for frontline workers - scenario posters
+
+Use these scenario overviews to start envisioning what your organization can do with Microsoft 365 for frontline workers, then follow the links to find out how to implement these scenarios.
+You can download these posters in PDF or Visio format and customize them for your organization.
+
+=== Scenarios for frontline workers
+
+|===
+| Item | Description
+
+| image:media/m365-frontline-scenarios-thumb.png[Microsoft 365 for frontline worker scenarios.,link=https://go.microsoft.com/fwlink/?linkid=2206713] + https://go.microsoft.com/fwlink/?linkid=2206713[PDF] \| https://go.microsoft.com/fwlink/?linkid=2206386[Visio]  + Updated September 2022
+| This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.
+|===
+
+=== Scenarios for healthcare organizations
+
+Use the following poster to start envisioning what your organization can do with Microsoft 365 for frontline workers.
+
+|===
+| Item | Description
+
+| image:media/m365-frontline-healthcare-thumb.png[Microsoft 365 for frontline workers: Healthcare scenarios.,link=https://go.microsoft.com/fwlink/?linkid=2206475] + https://go.microsoft.com/fwlink/?linkid=2206475[PDF] \| https://go.microsoft.com/fwlink/?linkid=2206474[Visio]  + Updated September 2022
+| This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.
+|===
+
+=== Scenarios for retail organizations
+
+Use the following poster to start envisioning what your organization can do with Microsoft 365 for frontline workers.
+
+|===
+| Item | Description
+
+| image:media/m365-frontline-retail-thumb.png[Microsoft 365 for frontline workers: Retail scenarios.,link=https://go.microsoft.com/fwlink/?linkid=2206476] + https://go.microsoft.com/fwlink/?linkid=2206476[PDF] \| https://go.microsoft.com/fwlink/?linkid=2206271[Visio]  + Updated September 2022
+| This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.
+|===
+
+=== See also
+
+xref:/microsoft-365/solutions/productivity-illustrations.adoc[Microsoft 365 productivity illustrations]

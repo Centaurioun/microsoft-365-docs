@@ -1,0 +1,51 @@
+= Application/Test rules
+:audience: Software-Vendor
+:author: andreicsibi-msft
+:description: Rules to be followed when uploading an application/test
+:f1.keywords: NOCSH
+:manager: rshastri
+:ms.author: ancsibi
+:ms.collection: TestBase-M365
+:ms.custom:
+:ms.date: 02/04/2022
+:ms.localizationpriority: medium
+:ms.reviewer: tinachen
+:ms.service: test-base
+:ms.topic: how-to
+:search.appverid: MET150
+
+== Application/Test rules
+
+All applications or tests in Test Base need to comply with the following rules:
+
+=== Test Base folders
+
+The following folders are used by the Test Base infrastructure:
+
+* %SYSTEMDRIVE%\USL
+* %SYSTEMDRIVE%\EtlExport
+* %SYSTEMDRIVE%\Ffmpeg
+* %SYSTEMDRIVE%\Monitoring
+* %SYSTEMDRIVE%\powershell-yaml
+* %SYSTEMDRIVE%\ProcMon
+* %SYSTEMDRIVE%\PSTools
+* %SYSTEMDRIVE%\TokenProviderTool
+* %SYSTEMDRIVE%\USLPowershellModules
+* %SYSTEMDRIVE%\UtcUtil
+* %SYSTEMDRIVE%\WPT
+* %SYSTEMDRIVE%\WULogs
+
+____
+[!IMPORTANT] *Avoid the following*:
+
+* Blocking the execution of any process from these folders.
+If your application is anti-malware software, configure your app installation to allow unimpeded execution of all processes from these folders.
+* Tampering with any of these folders.
+____
+
+=== Test Base registry keys
+
+The applications/tests should not delete or modify any registry keys related to:
+
+* Windows telemetry level
+* Removing TLS 1.2

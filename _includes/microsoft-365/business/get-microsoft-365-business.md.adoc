@@ -1,0 +1,40 @@
+= Get Microsoft 365 Business Premium from partner center
+:audience: Admin
+:author: cmcatee-MSFT
+:description: Discover your options for purchasing Microsoft 365 Business Premium and step-by-step instructions for purchasing it from Microsoft Partner Center.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
+:ms.author: cmcatee
+:ms.collection: ["Adm_O365", "M365-subscription-management"]
+:ms.custom: ["Adm_O365", "Core_O365Admin_Migration", "MiniMaven", "MSB365", "OKR_SMB_M365", "seo-marvel-mar", "AdminSurgePortfolio"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150"]
+
+== Get Microsoft 365 Business Premium
+
+=== Get Microsoft 365 Business Premium from Microsoft
+
+If you don't have a partner and want to get Microsoft 365 Business Premium, you can https://www.microsoft.com/microsoft-365/business[buy it here].
+
+See xref:sign-up.adoc[sign up for Microsoft 365 Business Premium] for detailed instructions.
+
+You can also head over to a https://www.microsoft.com/store/locations/find-a-store?icid=en_US_Store_UH_FAS[Microsoft Store] to buy Microsoft 365 Business Premium and get setup help.
+
+=== Get Microsoft 365 Business Premium from Microsoft Partner Center
+
+. Sign in at https://go.microsoft.com/fwlink/p/?linkid=849910[Microsoft Partner Center] by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program.
+. On the Partner Dashboard, choose *Customers*, then select your customer or add a new customer before you get Microsoft 365 Business Premium.
++
+image::../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png[In the Microsoft Partner center, add a customer.]
+
+. On the customer's *Subscription* page, select *Add subscription*, choose the Small business option under Catalog, and then choose *Microsoft 365 Business Premium*.
++
+Select the number of licenses you need (up to 300).
+If you have more than 300 users, see link:../enterprise/index.yml[Microsoft 365 Enterprise] instead.
++
+image::../media/52d99e89-2175-4974-84bb-dd626048541b.png[On the New subscription page, choose small business.]
++
+Complete the rest of the steps for adding a new customer, including the business name.

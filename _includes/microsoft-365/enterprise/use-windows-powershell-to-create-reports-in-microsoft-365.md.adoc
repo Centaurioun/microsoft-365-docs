@@ -1,0 +1,47 @@
+= Use PowerShell to create reports for Microsoft 365
+:audience: ITPro
+:author: kelleyvice-msft
+:description: Summary: Use PowerShell for Microsoft 365 to create reports that you can't produce in the Microsoft 365 admin center.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
+:ms.author: kvice
+:ms.collection: Ent_O365
+:ms.custom: ["Ent_Office_Other", "seo-marvel-apr2020"]
+:ms.date: 07/17/2020
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: landing-page
+
+== Use PowerShell to create reports for Microsoft 365
+
+_This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise._
+
+Many different reports are available in the Microsoft 365 admin center.
+But these reports only provide so much information, and sometimes you need more.
+That's when you need PowerShell for Microsoft 365.
+
+These articles describe how to use PowerShell for Microsoft 365 to get information from your Microsoft 365 tenant:
+
+* Get started with reporting using PowerShell for Microsoft 365:
+ ** xref:./why-you-need-to-use-microsoft-365-powershell.adoc[Why you need to use PowerShell for Microsoft 365]
+* Reports for user accounts and licenses:
+ ** xref:view-licenses-and-services-with-microsoft-365-powershell.adoc[View Microsoft 365 licenses and services with PowerShell]
+ ** xref:view-licensed-and-unlicensed-users-with-microsoft-365-powershell.adoc[View Microsoft 365 licensed and unlicensed users with PowerShell]
+ ** xref:view-account-license-and-service-details-with-microsoft-365-powershell.adoc[View Microsoft 365 account license and service details with PowerShell]
+ ** xref:view-user-accounts-with-microsoft-365-powershell.adoc[View Microsoft 365 user accounts with PowerShell]
+* Reports for SharePoint Online:
+ ** link:/powershell/sharepoint/sharepoint-online/connect-sharepoint-online[Get started with SharePoint Online Management Shell]
+ ** link:/powershell/module/sharepoint-online/get-spositegroup[Get-SPOSiteGroup - Gets all the groups on a specified site collection]
+* Reports for Exchange Online:
+ ** link:/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information[Use Exchange Online PowerShell to display mailbox]
+
+=== Related articles
+
+xref:manage-microsoft-365-with-microsoft-365-powershell.adoc[Manage Microsoft 365 with PowerShell]
+
+xref:getting-started-with-microsoft-365-powershell.adoc[Get started with PowerShell for Microsoft 365]
+
+xref:manage-sharepoint-online-with-microsoft-365-powershell.adoc[Manage SharePoint with PowerShell]
+
+xref:manage-user-accounts-and-licenses-with-microsoft-365-powershell.adoc[Manage Microsoft 365 user accounts, licenses, and groups with PowerShell]

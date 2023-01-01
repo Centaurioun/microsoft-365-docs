@@ -1,0 +1,71 @@
+= Allow cookies for LMS URLs in your browser
+:audience: admin
+:author: DaniEASmith
+:description: Learn how to allow cookies for LMS URLs in Edge, Chrome, and Firefox, and Safari browsers.
+:f1.keywords: ["CSH"]
+:manager: serdars
+:ms.author: danismith
+:ms.collection: M365-modern-desktop
+:ms.localizationpriority: medium
+:ms.reviewer: amitman
+:ms.service: o365-administration
+:ms.topic: article
+
+== Allow cookies for LMS URLs in your browser
+
+Third-party browser cookies are needed to complete the LTI 1.3 handshake according to IMS Global standards.
+Therefore, when launching the LTI tool from a Learning Management System (LMS), the browser setting must allow third-party cookies for the LMS URL.
+
+Here are the steps to allow the cookies in your browser.
+
+== <<tab/edge,Microsoft Edge>>
+
+=== Allow cookies for LMS URLS in Microsoft Edge
+
+. In the Edge *Settings* window, select *Cookies and site permissions* > *Cookies and data stored* > *Manage and delete cookies and site data*.
+. Turn on *Allow sites to save and read cookie data (recommended)*, and make sure that *Block third-party cookies* is turned off.
+
+If you must keep third-party cookies blocked:
+
+. In the Edge *Settings* window, select *Cookies and site permissions* > *Cookies and data stored* > *Manage and delete cookies and site data*.
+. Under *Allow*, select *Add* to add the domain URL of the LMS platform.
+ .. For example, if the LMS platform is hosted at `+https://contoso.com+`, then that URL must be added under *Allow*.
+
+image::media/edge-cookies.png[Screenshot of Microsoft Edge cookie settings page]
+
+== <<tab/chrome,Google Chrome>>
+
+=== Allow cookies for LMS URLS in Google Chrome
+
+. In the Chrome *Settings* window, on the *Privacy and security* tab, select *Cookies and other site data*.
+. Under *Sites that can always use cookies*, select *Add*, and then select the *Including third-party cookies on this site* checkbox.
+. Add the domain URL of the LMS platform.
+ .. For instance, if the LMS platform is hosted at `+https://contoso.com+`, then that URL must be used.
+
+image::media/chrome-cookies.png[Screenshot of Google Chrome cookie settings page]
+
+== <<tab/firefox,Mozilla Firefox>>
+
+=== Allow cookies for LMS URLS in Mozilla Firefox
+
+. In the Firefox *Settings* window, select the *Privacy & Security* tab.
+. Under *Cookies and Site Data*, select *Manage Exceptions*.
+. In the *Address of website* text box, enter the URL of the LMS platform.
+ .. For instance, if the LMS platform is hosted at `+https://contoso.com+`, then that URL must be used.
+. Select *Allow* to allow cookies for the entered website.
+. Select *Save Changes*.
+
+image::media/firefox-cookies.png[Screenshot of Mozilla Firefox cookie settings page]
+
+== <<tab/safari,Safari>>
+
+=== Allow cookies for LMS URLS in Safari
+
+. Select *Preferences* > *Privacy*.
+. Clear the *Prevent cross-site tracking* checkbox.
+
+'''
+
+____
+[!NOTE] In you can't change the settings yourself (your browser is managed by your organization), reach out to your IT department.
+____

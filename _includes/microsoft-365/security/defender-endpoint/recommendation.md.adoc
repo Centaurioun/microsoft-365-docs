@@ -1,0 +1,174 @@
+= Recommendation methods and properties
+:audience: ITPro
+:author: DulceMontemayor
+:description: Retrieves the top recent alerts.
+:keywords: apis, graph api, supported apis, get, alerts, recent
+:manager: dansimp
+:ms.author: dolmont
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Recommendation resource type
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+[!includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+=== Methods
+
+{blank} +
+
+'''
+
+|===
+| Method | Return Type | Description
+
+| xref:get-all-recommendations.adoc[List all recommendations]
+| Recommendation collection
+| Retrieves a list of all security recommendations affecting the organization
+
+| xref:get-recommendation-by-id.adoc[Get recommendation by ID]
+| Recommendation
+| Retrieves a security recommendation by its ID
+
+| xref:list-recommendation-software.adoc[Get recommendation software]
+| xref:software.adoc[Software]
+| Retrieves a security recommendation related to a specific software
+
+| xref:get-recommendation-machines.adoc[Get recommendation devices]
+| MachineRef collection
+| Retrieves a list of devices associated with the security recommendation
+
+| xref:get-recommendation-vulnerabilities.adoc[Get recommendation vulnerabilities]
+| xref:vulnerability.adoc[Vulnerability] collection
+| Retrieves a list of vulnerabilities associated with the security recommendation
+
+|
+|
+|
+|===
+
+=== Properties
+
+{blank} +
+
+'''
+
+|===
+| Property | Type | Description
+
+| id
+| String
+| Recommendation ID
+
+| productName
+| String
+| Related software name
+
+| recommendationName
+| String
+| Recommendation name
+
+| Weaknesses
+| Long
+| Number of discovered vulnerabilities
+
+| Vendor
+| String
+| Related vendor name
+
+| recommendedVersion
+| String
+| Recommended version
+
+| recommendedProgram
+| String
+| Recommended program
+
+| recommendedVendor
+| String
+| Recommended vendor
+
+| recommendationCategory
+| String
+| Recommendation category.
+Possible values are: "Accounts", "Application", "Network", "OS", "SecurityControls"
+
+| subCategory
+| String
+| Recommendation sub-category
+
+| severityScore
+| Double
+| Potential impact of the configuration to the organization's Microsoft Secure Score for Devices (1-10)
+
+| publicExploit
+| Boolean
+| Public exploit is available
+
+| activeAlert
+| Boolean
+| Active alert is associated with this recommendation
+
+| associatedThreats
+| String collection
+| Threat analytics report is associated with this recommendation
+
+| remediationType
+| String
+| Remediation type.
+Possible values are: "ConfigurationChange","Update","Upgrade","Uninstall"
+
+| Status
+| Enum
+| Recommendation exception status.
+Possible values are: "Active" and "Exception"
+
+| configScoreImpact
+| Double
+| Microsoft Secure Score for Devices impact
+
+| exposureImpact
+| Double
+| Exposure score impact
+
+| totalMachineCount
+| Long
+| Number of installed devices
+
+| exposedMachinesCount
+| Long
+| Number of installed devices that are exposed to vulnerabilities
+
+| nonProductivityImpactedAssets
+| Long
+| Number of devices that are not affected
+
+| relatedComponent
+| String
+| Related software component
+
+|
+|
+|
+|===

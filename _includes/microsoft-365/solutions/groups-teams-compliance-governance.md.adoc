@@ -1,0 +1,175 @@
+= Compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration
+:audience: Admin
+:author: MikePlumleyMSFT
+:description: Learn about compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration.
+:f1.keywords: NOCSH
+:manager: serdars
+:ms.author: mikeplum
+:ms.collection: ["highpri", "M365-collaboration", "m365solution-collabgovernance"]
+:ms.custom: ["M365solutions"]
+:ms.localizationpriority: medium
+:ms.reviewer:
+:ms.service: o365-solutions
+:ms.topic: article
+:recommendations: false
+
+== Compliance options for Microsoft 365 groups, Teams, and SharePoint collaboration
+
+Microsoft 365 offers a full suite of tools to maintain compliance as your users collaborate.
+Review these options and consider how they map to your business needs, the sensitivity of your data, and the scope of people that your users need to collaborate with.
+
+The following table provides a quick reference for the compliance controls available in Microsoft 365.
+Further information is provided in the following sections.
+
+|===
+| Category | Description | Reference
+
+| Information retention
+|
+|
+
+|
+| Retain groups mail and SharePoint content
+| xref:../compliance/retention-policies-sharepoint.adoc[Learn about retention policies for SharePoint and OneDrive]
+
+|
+| Retain chat and messages
+| xref:../compliance/retention-policies-teams.adoc[Learn about retention policies for Microsoft Teams]
+
+| Information classification
+|
+|
+
+|
+| Classify groups and teams
+| xref:../compliance/sensitivity-labels-teams-groups-sites.adoc[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites]
+
+|
+| Automatically classify sensitive content
+| xref:../compliance/apply-sensitivity-label-automatically.adoc[Apply a sensitivity label to content automatically]
+
+|
+| Encrypt sensitive content
+| xref:../compliance/encryption-sensitivity-labels.adoc[Restrict access to content by using sensitivity labels to apply encryption]
+
+| Information protection
+|
+|
+
+|
+| Prevent the loss of sensitive information
+| xref:../compliance/dlp-learn-about-dlp.adoc[Learn about Microsoft Purview Data Loss Prevention]
+
+|
+| Protect sensitive information in chat.
+| xref:../compliance/dlp-microsoft-teams.adoc[Microsoft Purview Data loss prevention and Microsoft Teams]
+
+|
+| Define your organization's sensitive information
+| xref:../compliance/sensitive-information-type-learn-about.adoc[Custom sensitive information types]
+
+| User segmentation
+|
+|
+
+|
+| Restrict communication between user segments
+| xref:../compliance/information-barriers.adoc[Information barriers]
+
+| Data residency
+|
+|
+
+|
+| Store data in specific geo-locations
+| link:/microsoft-365/enterprise/microsoft-365-multi-geo[Microsoft 365 Multi-Geo]
+|===
+
+=== Information retention
+
+Retention policies are available to retain or delete items used for collaboration in groups and teams, including files, messages, and mail.
+Policies can be set to retain and delete, to retain only, or delete only.
+Information covered by a retention policy is protected in the event that the group or team expires or is otherwise deleted.
+
+Configuring a retention policy for Microsoft 365 Groups covers the group mailbox and the associated SharePoint site and files.
+
+* xref:../compliance/retention-policies-sharepoint.adoc[Learn about retention policies for SharePoint and OneDrive]
+
+Retention policies for Teams retain chat and channel messages.
+While chat and channel messages are stored in Exchange mailboxes, they are not affected by Exchange retention policies.
+You must set your retention policies to apply to Teams chats and Teams channel messages.
+
+User chats are retained indefinitely even if a user account is deleted.
+If you don't want to retain this data indefinitely, consider using a retention policy to delete user chats after a specified time or include this deletion in your user deletion process.
+
+* xref:../compliance/retention-policies-teams.adoc[Learn about retention policies for Microsoft Teams]
+* link:/microsoftteams/retention-policies[Retention policies in Microsoft Teams]
+
+A single retention policy can be set to apply to Teams chat and Teams channel messages.
+
+Additional resources:
+
+* xref:../compliance/retention.adoc[Learn about retention policies]
+* link:/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies[Retention tags and retention policies] in Exchange
+
+=== Information classification
+
+You can use sensitivity labels to govern guest access, group and team privacy, and access by unmanaged devices for groups and teams.
+By applying the label, these settings are automatically configured as specified by the label settings.
+
+* xref:../compliance/sensitivity-labels-teams-groups-sites.adoc[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites]
+
+You can configure Microsoft 365 to auto-apply sensitivity labels to files and emails based on the criteria that you specify, including detecting sensitive information types or pattern matching with trainable classifiers.
+
+* xref:../compliance/apply-sensitivity-label-automatically.adoc[Apply a sensitivity label to content automatically]
+
+You can use sensitivity labels to encrypt files, allowing only those with permissions to decrypt and read them.
+
+* xref:../compliance/encryption-sensitivity-labels.adoc[Restrict access to content by using sensitivity labels to apply encryption]
+* xref:./secure-teams-security-isolation.adoc[Configure a team with security isolation]
+
+Additional resources:
+
+* xref:../compliance/sensitivity-labels.adoc[Learn about sensitivity labels]
+
+=== Information protection
+
+DLP policies can prevent the accidental sharing of sensitive information across SharePoint, Exchange, and Teams.
+You can create policies that specify actions to take (such as blocking access) based on a set of rules.
+
+* xref:../compliance/dlp-learn-about-dlp.adoc[Learn about data loss prevention]
+
+DLP in Teams can help protect sensitive information in Teams chat and channel messages by deleting messages that contain sensitive information.
+
+* xref:../compliance/dlp-microsoft-teams.adoc[Data loss prevention and Microsoft Teams]
+
+If you have sensitive information that is unique to your organization, such as project code names, you can create your own sensitive information types and apply them to DLP policies to protect content in groups, teams, and SharePoint.
+
+* xref:../compliance/sensitive-information-type-learn-about.adoc[Custom sensitive information types]
+
+=== User segmentation
+
+With information barriers, you can segment your data and users to restrict unwanted communication and collaboration between groups and avoid conflicts of interest in your organization.
+Information barriers lets you create policies to allow or prevent file collaboration, chatting, calling, or meeting invitations between groups of people in your organization.
+
+* xref:../compliance/information-barriers.adoc[Information barriers]
+* link:/microsoftteams/information-barriers-in-teams[Information barriers in Microsoft Teams]
+* link:/sharepoint/information-barriers[Use information barriers with SharePoint]
+
+=== Data residency
+
+With Microsoft 365 Multi-Geo, you can provision and store data at rest in the geo locations that you've chosen to meet data residency requirements.
+In a Multi-Geo environment, your Microsoft 365 tenant consists of a central location (where your Microsoft 365 subscription was originally provisioned) and one or more satellite locations where you can store data.
+
+* link:/microsoft-365/enterprise/microsoft-365-multi-geo[Microsoft 365 Multi-Geo]
+* link:/microsoft-365/enterprise/plan-for-multi-geo[Plan for Microsoft 365 Multi-Geo]
+
+=== Related topics
+
+link:collaboration-governance-overview.md#collaboration-governance-planning-recommendations[Collaboration governance planning recommendations]
+
+xref:collaboration-governance-first.adoc[Create your collaboration governance plan]
+
+link:/exchange/security-and-compliance/security-and-compliance[Security and compliance for Exchange Online]
+
+xref:../compliance/information-protection.adoc[Protect information]

@@ -1,0 +1,26 @@
+= Use Microsoft Teams meetings with Blackboard Learn
+:audience: admin
+:author: cichur
+:description: Learn how to set up Microsoft Teams meetings with Blackboard Learn.
+:manager: serdars
+:ms.author: danismith
+:ms.collection: ["M365-modern-desktop", "m365initiative-edu"]
+:ms.localizationpriority: medium
+:ms.reviewer: amitman
+:ms.service: o365-administration
+:ms.topic: article
+
+== Use Microsoft Teams meetings with Blackboard Learn
+
+This guide provides the IT admin steps for registering the Teams Meetings LTI app on Blackboard Learn.
+
+=== Add the Blackboard Learn Teams Meetings LTI 1.3 Tool
+
+. From the Blackboard Administrator Panel, select *LTI Tool Providers*.
+. Select *Register LTI 1.3 Tool*.
+. In the _Client ID_ field, type or copy and paste this ID: `027328b7-c2e3-4c9e-aaa1-07802dae6c89`.
+. Review the pre-populated settings and *Tool Status*, then select *Enabled*.
+. In _Institution Policies_, select *Role in Course*, *Name*, and *Email Address*.
+. Select *Yes* for both *Allow grade service access* and *Allow Membership Service Access*.
+
+Educators and students can now access the tool in their Blackboard courses in both _Blackboard Learn Ultra_ and _Blackboard Learn Original Experience_.

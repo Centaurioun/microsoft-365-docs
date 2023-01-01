@@ -1,0 +1,52 @@
+= EU passport number entity definition
+:audience: Admin
+:author: chrfox
+:description: EU passport number sensitive information type entity definition.
+:f1.keywords: ["CSH"]
+:f1_keywords: ["ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation"]
+:feedback_system: None
+:hideEdit: true
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: reference
+:recommendations: false
+:search.appverid: MET150
+
+== EU passport number
+
+These entities are in the EU passport number and are sensitive information types.
+These entities are in the EU passport number bundle.
+
+* xref:sit-defn-austria-passport-number.adoc[Austria]
+* xref:sit-defn-belgium-passport-number.adoc[Belgium]
+* xref:sit-defn-bulgaria-passport-number.adoc[Bulgaria]
+* xref:sit-defn-croatia-passport-number.adoc[Croatia]
+* xref:sit-defn-cyprus-passport-number.adoc[Cyprus]
+* xref:sit-defn-czech-passport-number.adoc[Czech]
+* xref:sit-defn-denmark-passport-number.adoc[Denmark]
+* xref:sit-defn-estonia-passport-number.adoc[Estonia]
+* xref:sit-defn-finland-passport-number.adoc[Finland]
+* xref:sit-defn-france-passport-number.adoc[France]
+* xref:sit-defn-germany-passport-number.adoc[Germany]
+* xref:sit-defn-greece-passport-number.adoc[Greece]
+* xref:sit-defn-hungary-passport-number.adoc[Hungary]
+* xref:sit-defn-ireland-passport-number.adoc[Ireland]
+* xref:sit-defn-italy-passport-number.adoc[Italy]
+* xref:sit-defn-latvia-passport-number.adoc[Latvia]
+* xref:sit-defn-lithuania-passport-number.adoc[Lithuania]
+* xref:sit-defn-luxemburg-passport-number.adoc[Luxemburg]
+* xref:sit-defn-malta-passport-number.adoc[Malta]
+* xref:sit-defn-netherlands-passport-number.adoc[Netherlands]
+* xref:sit-defn-poland-passport-number.adoc[Poland]
+* xref:sit-defn-portugal-passport-number.adoc[Portugal]
+* xref:sit-defn-romania-passport-number.adoc[Romania]
+* xref:sit-defn-slovakia-passport-number.adoc[Slovakia]
+* xref:sit-defn-slovenia-passport-number.adoc[Slovenia]
+* xref:sit-defn-spain-passport-number.adoc[Spain]
+* xref:sit-defn-sweden-passport-number.adoc[Sweden]
+* xref:sit-defn-us-uk-passport-number.adoc[U.S./U.K.
+passport number]

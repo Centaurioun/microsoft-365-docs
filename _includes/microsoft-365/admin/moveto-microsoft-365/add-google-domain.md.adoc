@@ -1,0 +1,44 @@
+= Add your Google Workspace domain
+:audience: Admin
+:author: twernermsft
+:description: Learn how to move your domain from Google Workspace to Microsoft 365 for business.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:monikerRange: o365-worldwide
+:ms.author: twerner
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365"]
+:ms.custom: ["VSBFY23", "AdminSurgePortfolio", "adminvideo", "admindeeplinkMAC"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Add your Google Workspace domain to Microsoft 365
+
+Check out https://go.microsoft.com/fwlink/?linkid=2197659[Microsoft 365 small business help] on YouTube.
+
+=== Watch: Add Google Workspace domain
+
+Check out this video and others on our https://go.microsoft.com/fwlink/?linkid=2198105[YouTube channel].
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LWKT?autoplay=false]
+____
+
+Add your Google Workspace domain to Microsoft 365 for business so you can keep using your business email address.
+
+. Go to the https://admin.microsoft.com[Microsoft 365 admin center].
+. In the Microsoft 365 admin center, in the left nav, select *Show all* > *Settings* > https://go.microsoft.com/fwlink/p/?linkid=834818[*Domains*].
+. Choose *Add domain*, enter your domain name then select *Use this domain*.
+. Choose, *Add a TXT record to the domains DNS records*, select *Continue*, and copy the TXT value.
+. Go back to the https://admin.google.com[Google Admin Console], choose *Domains*, *Manage domains*, *View Details*, *Manage domain*, *DNS*, and  then scroll down to *Custom resource records*.
+. Open the record type drop-down, choose *TXT*, paste the TXT value you copied then select *Add*.
++
+The update usually takes a fact within a few minutes but may take up to 48 hours.
+
+. Return to the https://go.microsoft.com/fwlink/p/?linkid=2024339[admin center], select *Verify*,and then *Close*.
+. To set your domain as the primary email for your users, in the left nav, select *Users* > https://go.microsoft.com/fwlink/p/?linkid=834822[*Active users*].
+. Choose a user, select *Manage username and email*, *Edit*, select your domain from the dropdown, then select *Done* and *Save changes*.
+. Repeat this process for each user.
++
+When you're finished, you'll be ready to install Office apps and migrate your email and calendar items to Microsoft 365.

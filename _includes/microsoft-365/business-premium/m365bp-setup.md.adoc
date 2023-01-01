@@ -1,0 +1,98 @@
+= Set up Microsoft 365 Business Premium
+:audience: Admin
+:author: denisebmsft
+:description: How to set up Microsoft 365 Business Premium or work with a solution provider to do so.
+:f1.keywords: NOCSH
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: ["M365-security-compliance"]
+:ms.custom: intro-get-started
+:ms.date: 09/15/2022
+:ms.localizationpriority: high
+:ms.reviewer: shlomiakirav
+:ms.service: microsoft-365-security
+:ms.subservice: other
+:ms.topic: overview
+:search.appverid: MET150
+
+== Set up Microsoft 365 Business Premium
+
+After you have xref:get-microsoft-365-business-premium.adoc[started a trial or purchased Microsoft 365 Business Premium], your next step is to get everything set up.
+You have several options available.
+You can:
+
+* Start with the link:m365bp-setup.md#guided-setup-process[guided setup experience] for basic setup and configuration, and then proceed to xref:m365bp-security-overview.adoc[Bump up security];
+or
+* link:m365bp-setup.md#work-with-a-microsoft-partner[Work with a Microsoft partner] who can help you get everything set up and configured.
+
+=== Before you begin
+
+Make sure that you meet the following requirements before you begin your setup process:
+
+|===
+| Requirement | Description
+
+| Subscription
+| Microsoft 365 Business Premium or Microsoft 365 for Campaigns +  + To start a trial or purchase your subscription, see the following articles: + - xref:get-microsoft-365-business-premium.adoc[Get Microsoft 365 Business Premium] + - xref:get-microsoft-365-campaigns.adoc[Get Microsoft 365 for Campaigns]
+
+| Permissions
+| To complete the initial setup process, you must be a Global Admin.
+xref:../admin/add-users/about-admin-roles.adoc[Learn more about admin roles].
+
+| Browser requirements
+| Microsoft Edge, Safari, Chrome or Firefox.
+https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy[Learn more about browser requirements].
+
+| Operating systems (client)
+| *Windows*:  Windows 11, Windows 10, Windows 8.1 + *macOS*: One of the three most recent versions of macOS
+
+| Operating systems (servers)
+| Windows Server or Linux Server + - Requires Microsoft Defender for Business servers (currently in preview) + - See xref:../security/defender-business/get-defender-business-servers.adoc[How to get Microsoft Defender for Business servers (preview)].
+|===
+
+____
+[!NOTE] For more detailed information about Microsoft 365, Office, and system requirements, see https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources[Microsoft 365 and Office Resources].
+____
+
+=== Guided setup process
+
+Microsoft 365 Business Premium includes a guided process.
+The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium.
++  +
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+____
+
+As soon as you've completed the guided setup process, make sure to proceed to xref:m365bp-security-overview.adoc[bump up security].
+
+____
+[!TIP] After you have added users, give them a link to the xref:../admin/setup/employee-quick-setup.adoc[Employee quick setup guide].
+The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
+____
+
+=== Work with a Microsoft partner
+
+If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
+
+. Go to the https://appsource.microsoft.com/marketplace/partner-dir[Browse Partners] page.
+. In the *Filters* pane, specify search criteria, such as:
+ ** Your location
+ ** Your organization's size
+ ** *Focus areas*, such as *Security* and/or *Threat Protection*
+ ** *Services*, such as *Licensing* or *Managed Services (MSP)*
+
++
+As soon as you select one or more criteria, the list of partners updates.
+. Review the list of results.
+Select a provider to learn more about their expertise and the services they provide.
+
+=== See also
+
+* xref:../admin/manage/find-your-partner-or-reseller.adoc[Find a Microsoft partner or reseller]
+* xref:../admin/add-users/let-users-reset-passwords.adoc[Set up self-service passwords]
+* link:/azure/active-directory/enterprise-users/groups-self-service-management[Set up self-service group management]
+
+=== Next objective
+
+Proceed to xref:m365bp-security-overview.adoc[Bump up security].

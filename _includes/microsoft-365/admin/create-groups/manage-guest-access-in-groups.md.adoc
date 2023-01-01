@@ -1,0 +1,72 @@
+= Manage guest access in Microsoft 365 groups
+:audience: Admin
+:author: MikePlumleyMSFT
+:description: Learn how to add guests to a Microsoft 365 group, view guests, and use PowerShell to control guest access.
+:f1.keywords: NOCSH
+:manager: scotv
+:ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
+:ms.author: mikeplum
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["AdminSurgePortfolio", "AdminTemplateSet", "admindeeplinkMAC"]
+:ms.localizationpriority: medium
+:ms.reviewer: arvaradh
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["MET150", "MOE150"]
+
+== Manage guest access in Microsoft 365 groups
+
+By default, guest access for Microsoft 365 groups is turned on for your organization.
+Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
+
+When it's turned on, group members can invite guests to a Microsoft 365 group through Outlook on Web.
+Invitations are sent to the group owner for approval.
+
+Once approved, the guest is added to the directory and the group.
+
+____
+[!Note] Yammer Enterprise networks that are in Native Mode or the link:/yammer/manage-security-and-compliance/manage-data-compliance[EU Geo] do not support network guests.
+Microsoft 365 Connected Yammer groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network.
+See link:/yammer/work-with-external-users/create-and-manage-external-groups[Create and manage external groups in Yammer] for instructions.
+____
+
+Guest access in groups is often used as part of a broader scenario that includes SharePoint or Teams.
+These services have their own guest sharing settings.
+For complete instructions for setting up guest sharing across groups, SharePoint, and Teams, see:
+
+* xref:../../solutions/collaborate-in-site.adoc[Collaborate with guests in a site]
+* xref:../../solutions/collaborate-as-team.adoc[Collaborate with guests in a team]
+
+=== Manage groups guest access
+
+If you want to enable or disable guest access in groups, you can do so in the https://go.microsoft.com/fwlink/p/?linkid=2052855[*Groups*].
+
+. In the admin center, go to *Show all* > *Settings* > *Org settings* and on the https://go.microsoft.com/fwlink/p/?linkid=2053743[*Services* tab], select *Microsoft 365 Groups*.
+. On the *Microsoft 365 Groups* page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
+
+=== Add guests to a Microsoft 365 group from the admin center
+
+If the guest already exists in your directory, you can add them to your groups from the https://go.microsoft.com/fwlink/p/?linkid=2052855[Microsoft 365 admin center].
+(Groups with dynamic membership must be link:/azure/active-directory/enterprise-users/groups-create-rule[managed in Azure Active Directory].)
+
+. In the admin center, go to the *Groups* > https://go.microsoft.com/fwlink/p/?linkid=2052855[*Groups*].
+. Select the group you want to add the guest to, and select *View all and manage members* on the *Members* tab.
+. Select *Add members*, and choose the name of the guest you want to add.
+. Select *Save*.
+
+If you want to add a guest to the directory directly, you can link:/azure/active-directory/b2b/add-users-administrator[Add Azure Active Directory B2B collaboration users in the Azure portal].
+
+If you want to edit any of a guest's information, you can link:/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal[Add or update a user's profile information using Azure Active Directory].
+
+=== Remove a guest
+
+Once you're done collaborating with a guest user, you can remove them, and they'll no longer have access to your organization.
+
+. In the Microsoft 365 admin center, expand *Users* and then choose https://go.microsoft.com/fwlink/p/?linkid=2074830[*Guest users*].
+. On the *Guest users* page, choose the user you want to remove and then choose *Delete a user*.
+
+To remove users in the Azure AD portal, see link:/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources[remove a guest user and resources].
+
+=== Related content
+
+xref:../../solutions/per-group-guest-access.adoc[Block guests from a specific group] (article) + xref:add-or-remove-members-from-groups.adoc[Manage group membership in the Microsoft 365 admin center] (article) + link:/azure/active-directory/active-directory-azure-ad-controls-perform-access-review[Azure Active Directory access reviews] (article) + link:/powershell/module/azuread/set-azureaduser[Set-AzureADUser] (article)

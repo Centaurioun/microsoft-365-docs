@@ -1,0 +1,68 @@
+= Microsoft 365 solutions for the healthcare industry
+:author: samanro
+:description: Learn about solution and architecture resources for the healthcare industry using Microsoft 365
+:f1.keywords: NOCSH
+:manager: bcarter
+:ms.audience: ITPro
+:ms.author: samanro
+:ms.collection: ["highpri", "M365-subscription-management", "M365solutions"]
+:ms.custom: seo-marvel-jun2020
+:ms.localizationpriority: medium
+:ms.service: o365-solutions
+:ms.topic: article
+
+== Microsoft 365 solutions for the healthcare industry
+
+Microsoft provides many capabilities to help healthcare organizations serve patients, streamline administration, and facilitate collaboration while meeting regulatory obligations.
+Microsoft also provides a comprehensive platform for the healthcare industry, Microsoft Cloud for Healthcare, which includes components from  Microsoft 365 and Dynamics 365, in addition to Azure.
+Modernization and digital transformation of healthcare facilities is all the more important during the current COVID-19 global pandemic.
+
+{blank} +
+
+____
+[!VIDEO https://www.youtube.com/embed/ehv6UL-_MoE]
+____
+
+{blank} +
+
+Learn how you can use Microsoft 365, Dynamics 365, and Azure to digitize, modernize, and enhance your healthcare solution.
+
+=== Resources for healthcare
+
+|===
+| Resource | Description
+
+| link:/microsoftteams/expand-teams-across-your-org/bookings-virtual-visits[Virtual visits with Microsoft Teams and the Bookings app]
+| The Bookings app in Microsoft Teams gives organizations a simple way to schedule and manage virtual appointments for staff and attendees.
+Use it to schedule virtual appointments such as healthcare visits, financial consultations, interviews, customer support, virtual shopping experiences, education office hours, and more.
+
+| link:/microsoft-365/frontline/teams-in-hc[Microsoft 365 for Healthcare]
+| Microsoft Teams offers a number of telemedicine features useful for hospitals and other Healthcare organizations.
++ - Virtual visits and Electronic Healthcare Record (EHR) integration + - Teams policy packages + - Secure messaging + - Teams templates + - Care coordination and collaboration
+
+| link:/industry/healthcare/overview[Microsoft Cloud for Healthcare]
+| Learn about Microsoft Cloud for Healthcare and how it brings together trusted capabilities to customers and partners that enhance patient engagement, empowers health team collaboration, and improves clinical and operational data insights to improve decision-making and operational efficiencies.
+
+| link:/industry/healthcare/architecture/overview[Microsoft Cloud for Healthcare reference architectures]
+| Find reference architectures to help healthcare organizations project managers, enterprise architects, and IT managers collaborate and communicate effectively about implementing Microsoft Cloud for Healthcare.
+
+| link:/azure/architecture/industries/healthcare[Azure architecture and solutions for healthcare]
+| Learn how you can use Microsoft Azure services to digitize, modernize, and enhance your healthcare solution at Azure for healthcare
+|===
+
+=== Videos you can share with your team
+
+*St.
+Luke's Hospital uses Microsoft 365 to reimagine care for patients*  +
+
+____
+[!VIDEO https://www.youtube.com/embed/-jcBjy88n4s]
+____
+
+*Microsoft Viva empowers Humana to achieve productivity & wellbeing in a hybrid workplace*
+
+____
+[!VIDEO https://www.youtube.com/embed/vu1oqbuVOns]
+____
+
+{blank} +

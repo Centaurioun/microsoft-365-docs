@@ -1,0 +1,17 @@
+= Placeholder article
+:audience: ITPro
+:author: kelleyvice-msft
+:description: TBD.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: kvice
+:ms.collection: M365-subscription-management
+:ms.custom: it-pro
+:ms.date: 09/19/2019
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+
+== Placeholder article
+
+This article is a placeholder for now.

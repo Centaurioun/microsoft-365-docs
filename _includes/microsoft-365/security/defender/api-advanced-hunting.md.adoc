@@ -1,0 +1,204 @@
+= Microsoft 365 Defender advanced hunting API
+:audience: ITPro
+:author: mjcaparas
+:description: Learn how to run advanced hunting queries using Microsoft 365 Defender's advanced hunting API
+:f1.keywords: ["NOCSH"]
+:keywords: Advanced Hunting, APIs, api, M365 Defender, Microsoft 365 Defender
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Microsoft 365 Defender Advanced hunting API
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may be substantially modified before it's commercially released.
+Microsoft makes no warranties, express or implied, with respect to the information provided here.
+____
+
+xref:advanced-hunting-overview.adoc[Advanced hunting] is a threat-hunting tool that uses xref:advanced-hunting-query-language.adoc[specially constructed queries] to examine the past 30 days of event data in Microsoft 365 Defender.
+You can use advanced hunting queries to inspect unusual activity, detect possible threats, and even respond to attacks.
+The advanced hunting API allows you to programmatically query event data.
+
+=== Quotas and resource allocation
+
+The following conditions relate to all queries.
+
+. Queries explore and return data from the past 30 days.
+. Results can return up to 100,000 rows.
+. You can make up to 45 calls per minute per tenant.
+. Queries are blocked if the tenant has reached 100% until after the next 15-minute cycle.
+. If a single request runs for more than 10 minutes, it will time out and return an error.
+. A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time.
+Read the response body to understand the limit you have reached.
+
+____
+[!NOTE] All quotas listed above (for example 15 calls per min) are tenant wide.
+These quotas are the minimum.
+____
+
+=== Permissions
+
+One of the following permissions is required to call the advanced hunting API.
+To learn more, including how to choose permissions, see xref:api-access.adoc[Access the Microsoft 365 Defender Protection APIs].
+
+|===
+| Permission type | Permission | Permission display name
+
+| Application
+| AdvancedHunting.Read.All
+| Run advanced queries
+
+| Delegated (work or school account)
+| AdvancedHunting.Read
+| Run advanced queries
+|===
+
+____
+[!Note] When obtaining a token using user credentials:
+
+* The user needs to have the 'View Data' role.
+* The user needs to have access to the device, based on device group settings.
+____
+
+=== HTTP request
+
+[,http]
+----
+POST https://api.security.microsoft.com/api/advancedhunting/run
+----
+
+=== Request headers
+
+|===
+| Header | Value
+
+| Authorization
+| Bearer \{token} *Note: required*
+
+| Content-Type
+| application/json
+|===
+
+=== Request body
+
+In the request body, supply a JSON object with the following parameters:
+
+|===
+| Parameter | Type | Description
+
+| Query
+| Text
+| The query to run.
+*(required)*
+|===
+
+=== Response
+
+If successful, this method will return `200 OK`, and a _QueryResponse_ object in the response body.
+
+The response object contains three top-level properties:
+
+. Stats - A dictionary of query performance statistics.
+. Schema - The schema of the response, a list of Name-Type pairs for each column.
+. Results - A list of advanced hunting events.
+
+=== Example
+
+In the following example, a user sends the query below and receives an API response object containing `Stats`, `Schema`, and `Results`.
+
+==== Query
+
+[,json]
+----
+{
+    "Query":"DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
+}
+----
+
+==== Response object
+
+[,json]
+----
+{
+    "Stats": {
+        "ExecutionTime": 4.621215,
+        "resource_usage": {
+            "cache": {
+                "memory": {
+                    "hits": 773461,
+                    "misses": 4481,
+                    "total": 777942
+                },
+                "disk": {
+                    "hits": 994,
+                    "misses": 197,
+                    "total": 1191
+                }
+            },
+            "cpu": {
+                "user": "00:00:19.0468750",
+                "kernel": "00:00:00.0156250",
+                "total cpu": "00:00:19.0625000"
+            },
+            "memory": {
+                "peak_per_node": 236822432
+            }
+        },
+        "dataset_statistics": [
+            {
+                "table_row_count": 2,
+                "table_size": 102
+            }
+        ]
+    },
+    "Schema": [
+        {
+            "Name": "Timestamp",
+            "Type": "DateTime"
+        },
+        {
+            "Name": "FileName",
+            "Type": "String"
+        },
+        {
+            "Name": "InitiatingProcessFileName",
+            "Type": "String"
+        }
+    ],
+    "Results": [
+        {
+            "Timestamp": "2020-08-30T06:38:35.7664356Z",
+            "FileName": "conhost.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        },
+        {
+            "Timestamp": "2020-08-30T06:38:30.5163363Z",
+            "FileName": "conhost.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        }
+    ]
+}
+----
+
+=== Related articles
+
+* xref:api-access.adoc[Access the Microsoft 365 Defender APIs]
+* xref:api-terms.adoc[Learn about API limits and licensing]
+* xref:api-error-codes.adoc[Understand error codes]
+* xref:advanced-hunting-overview.adoc[Advanced hunting overview]

@@ -1,0 +1,1195 @@
+'''
+
+title: "Use data connectors to import and archive third-party data in Microsoft 365" description: "Learn how to import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms to Microsoft 365 mailboxes." f1.keywords:
+
+* NOCSH ms.author: robmazz author: robmazz manager: laurawi ms.date: audience: Admin ms.topic: overview ms.service: O365-seccomp ms.localizationpriority: medium ms.collection:
+* tier1
+* M365-security-compliance
+* data-connectors search.appverid:
+* MOE150
+* MET150 ms.custom:
+* seo-marvel-apr2020
+
+'''
+
+== Learn about connectors for third-party data
+
+Microsoft 365 lets administrators use data connectors to import and archive non-Microsoft, third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Microsoft 365 organization.
+One primary benefit of using data connectors to import and archive third-party data in Microsoft 365 is that you can apply various Microsoft Purview solutions to the data after it's been imported.
+This helps you ensure that your organization's non-Microsoft data is in compliance with the regulations and standards that affect your organization.
+
+Watch this interactive guide that demonstrates how to create data connectors to import and archive third-party data and examples of applying compliance solutions to data after it's imported to Microsoft 365.
+
+____
+[!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
+____
+
+=== Third-party data connectors
+
+The Microsoft Purview compliance portal provides native third-party data connectors from Microsoft to import data from various data sources, such as LinkedIn, Instant Bloomberg, and Twitter and data connectors that support the Insider risk management solution.
+In addition to these data connectors, Microsoft works with the following partners to provide many more third part data connectors in the compliance portal.
+Your organization works with these partners to set up their archiving service before creating a corresponding data connector in the compliance portal.
+
+* <<veritas-data-connectors,Veritas>>
+* <<telemessage-data-connectors,TeleMessage>>
+* <<17a-4-data-connectors,17a-4 LLC>>
+* <<celltrust-data-connectors,CellTrust>>
+
+The third-party data listed in the next sections (except for HR data and physical badging data that is used for the Microsoft Purview Insider Risk Management solution) is imported into user mailboxes.
+The Microsoft Purview solutions that support third-party data are applied to the user mailbox where the data is stored.
+
+==== Microsoft data connectors
+
+The following table lists the native third-party data connectors available in the compliance portal.
+The table also summarizes the compliance solutions that you can apply after you import and archive third-party data in Microsoft 365.
+See the <<overview-of-compliance-solutions-that-support-third-party-data,Overview of compliance solutions that support third-party data>> section for a more detailed description of each compliance solution and how it supports third-party data.
+
+Click the link in the *Third-party data* column to go the step-by-step instructions for creating a connector for that data type.
+
+|===
+| Third-party data | Litigation hold | eDiscovery | Retention settings | Records management | Communication compliance | Insider risk management
+
+| xref:archive-bloomberg-message-data.adoc[Bloomberg Message]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+|
+
+| xref:import-epic-data.adoc[Epic EHR healthcare]
+|
+|
+|
+|
+|
+| image:../media/checkmark.png[Check mark]
+
+| xref:archive-facebook-data-with-sample-connector.adoc[Facebook]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:import-healthcare-data.adoc[Generic EHR healthcare]
+|
+|
+|
+|
+|
+| image:../media/checkmark.png[Check mark]
+
+| xref:import-hr-data.adoc[Human resources (HR)]
+|
+|
+|
+|
+|
+| image:../media/checkmark.png[Check mark]
+
+| xref:archive-icechat-data.adoc[ICE Chat]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-instant-bloomberg-data.adoc[Instant Bloomberg]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-linkedin-data.adoc[LinkedIn]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:import-physical-badging-data.adoc[Physical badging]
+|
+|
+|
+|
+|
+| image:../media/checkmark.png[Check mark]
+
+| xref:archive-slack-data-microsoft.adoc[Slack eDiscovery]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-twitter-data-with-sample-connector.adoc[Twitter]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+|
+|
+|
+|
+|
+|
+|
+|===
+
+==== Veritas data connectors
+
+The table in this section lists the third-party data connectors available in partnership with Veritas.
+The table also summarizes the compliance solutions that you can apply to third-party data after you import and archive it in Microsoft 365.
+See the <<overview-of-compliance-solutions-that-support-third-party-data,Overview of compliance solutions that support third-party data>> section for a more detailed description of each compliance solution and how it supports third-party data.
+
+Before you can archive third-party data in Microsoft 365, you have to work with Veritas to set up their archiving service (called _Merge1_) for your organization.
+For more information, click the link in the *Third-party data* column to go the step-by-step instructions for creating a connector for that data type.
+
+|===
+| Third-party data | Litigation hold | eDiscovery | Retention settings | Records management | Communication compliance | Insider risk management
+
+| xref:archive-celltrust-data.adoc[CellTrust]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-ciscojabberonmssql-data.adoc[Cisco Jabber on MS SQL]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-ciscojabberonoracle-data.adoc[Cisco Jabber on Oracle]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-ciscojabberonpostgresql-data.adoc[Cisco Jabber on PostgreSQL]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-eml-data.adoc[EML]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:archive-fxconnect-data.adoc[FX Connect]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-jive-data.adoc[Jive]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-mssqldatabaseimporter-data.adoc[MS SQL Database]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:archive-pivot-data.adoc[Pivot]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-redtailspeak-data.adoc[Redtail Speak]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-reutersdealing-data.adoc[Reuters Dealing]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-reuterseikon-data.adoc[Reuters Eikon]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-reutersfx-data.adoc[Reuters FX]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-ringcentral-data.adoc[RingCentral]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-salesforcechatter-data.adoc[Salesforce Chatter]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:archive-servicenow-data.adoc[ServiceNow]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:archive-skypeforbusiness-data.adoc[Skype for Business]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-slack-data.adoc[Slack eDiscovery]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-symphony-data.adoc[Symphony]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-text-delimited-data.adoc[Text-delimited]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:archive-veritas-twitter-data.adoc[Twitter]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:archive-webexteams-data.adoc[Webex Teams]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-webpagecapture-data.adoc[Webpages]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:archive-workplacefromfacebook-data.adoc[Workplace from Facebook]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-xip-data.adoc[XIP]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-xslt-xml-data.adoc[XSLT/XML]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:archive-yieldbroker-data.adoc[Yieldbroker]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-youtube-data.adoc[YouTube]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+|
+
+| xref:archive-zoommeetings-data.adoc[Zoom Meetings]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+|
+|
+|
+|
+|
+|
+|
+|===
+
+==== TeleMessage data connectors
+
+The table in this section lists the third-party data connectors available in partnership with TeleMessage.
+The table also summarizes the compliance solutions that you can apply to third-party data after you import and archive it in Microsoft 365.
+See the <<overview-of-compliance-solutions-that-support-third-party-data,Overview of compliance solutions that support third-party data>> section for a more detailed description of each compliance solution and how it supports third-party data.
+
+Before you can archive third-party data in Microsoft 365, you have to work with TeleMessage to set up their archiving service for your organization.
+For more information, click the link in the *Third-party data* column to go the step-by-step instructions for creating a connector for that data type.
+
+TeleMessage data connectors are also available in GCC environments in the Microsoft 365 US Government cloud.
+For more information, see the <<data-connectors-in-the-us-government-cloud,Data connectors in the US Government cloud>> section in this article.
+
+|===
+| Third-party data | Litigation hold | eDiscovery | Retention settings | Records management | Communication compliance | Insider risk management
+
+| xref:archive-android-archiver-data.adoc[Android]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-att-network-archiver-data.adoc[AT&T Network]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-bell-network-data.adoc[Bell Network]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-enterprise-number-data.adoc[Enterprise Number]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-o2-network-data.adoc[O2 Network]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-rogers-network-archiver-data.adoc[Rogers Network]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-signal-archiver-data.adoc[Signal]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-telegram-archiver-data.adoc[Telegram]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-telus-network-data.adoc[TELUS Network]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-verizon-network-data.adoc[Verizon Network]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-wechat-data.adoc[WeChat]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-whatsapp-data.adoc[WhatsApp]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+|
+|
+|
+|
+|
+|
+|
+|===
+
+==== 17a-4 data connectors
+
+The table in this section lists the third-party data connectors available in partnership with 17a-4 LLC.
+The table also summarizes the compliance solutions that you can apply to third-party data after you import and archive it in Microsoft 365.
+See the <<overview-of-compliance-solutions-that-support-third-party-data,Overview of compliance solutions that support third-party data>> section for a more detailed description of each compliance solution and how it supports third-party data.
+
+Before you can archive third-party data in Microsoft 365, you have to work with 17a-4 LLC to set up their archiving service (called _DataParser_) for your organization.
+For more information, click the link in the *Third-party data* column to go the step-by-step instructions for creating a connector for that data type.
+
+17a-4 data connectors are also available in GCC environments in the Microsoft 365 US Government cloud.
+For more information, see the <<data-connectors-in-the-us-government-cloud,Data connectors in the US Government cloud>> section in this article.
+
+|===
+| Third-party data | Litigation hold | eDiscovery | Retention settings | Records management | Communication compliance | Insider risk management
+
+| xref:archive-17a-4-blackberry-data.adoc[BlackBerry]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-bloomberg-data.adoc[Bloomberg]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-cisco-jabber-data.adoc[Cisco Jabber]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-webex-teams-data.adoc[Cisco Webex]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-factset-data.adoc[FactSet]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-fuze-data.adoc[Fuze]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-fxconnect-data.adoc[FX Connect]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-ice-im-data.adoc[ICE Chat]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-investedge-data.adoc[InvestEdge]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-liveperson-data.adoc[LivePerson Conversational Cloud]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-quip-data.adoc[Quip]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-refinitiv-messenger-data.adoc[Refinitiv Eikon Messenger]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-servicenow-data.adoc[ServiceNow]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-skype-for-business-server-data.adoc[Skype for Business Server]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-slack-data.adoc[Slack]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-sql-database-data.adoc[SQL]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-symphony-data.adoc[Symphony]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+| xref:archive-17a-4-zoom-data.adoc[Zoom]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+|
+|
+|
+|
+|
+|
+|
+|===
+
+==== CellTrust data connectors
+
+The table in this section lists the third-party data connector available in partnership with CellTrust.
+The table also summarizes the compliance solutions that you can apply to third-party data after you import and archive it in Microsoft 365.
+See the <<overview-of-compliance-solutions-that-support-third-party-data,Overview of compliance solutions that support third-party data>> section for a more detailed description of each compliance solution and how it supports third-party data.
+
+Before you can archive third-party data in Microsoft 365, you have to work with CellTrust to set up their archiving service (called _CellTrust SL2_) for your organization.
+For more information, click the link in the *Third-party data* column to go the step-by-step instructions for creating a CellTrust SL2 connector.
+
+|===
+| Third-party data | Litigation hold | eDiscovery | Retention settings | Records management | Communication compliance | Insider risk management
+
+| xref:archive-data-from-celltrustsl2.adoc[CellTrust SL2]
+| image:../media/checkmark.png[Check mark.]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+| image:../media/checkmark.png[Check mark]
+|
+
+|
+|
+|
+|
+|
+|
+|
+|===
+
+The CellTrust SL2 data connector is also available in GCC environments in the Microsoft 365 US Government cloud.
+For more information, see the <<data-connectors-in-the-us-government-cloud,Data connectors in the US Government cloud>> section in this article.
+
+=== Overview of compliance solutions that support third-party data
+
+The following sections describe some of the things that the Microsoft Purview solutions can help you to manage the third-party data listed in the previous table.
+
+==== Litigation hold
+
+You place a xref:create-a-litigation-hold.adoc[Litigation hold] on a user mailbox to retain third-party data.
+When you create a hold, you can specify a hold duration (also called a _time-based hold_) so that deleted and modified third-party data is retained for a specified period and then permanently deleted from the mailbox.
+Or you can just retain content indefinitely (called an _infinite hold_) or until the Litigation hold is removed.
+
+==== eDiscovery
+
+The three primary eDiscovery tools in Microsoft 365 are Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium).
+
+* *xref:content-search.adoc[Content search].* You can use the content search tool to search mailboxes for third-party data that you imported.
+You can use search queries and conditions to narrow your search results, and the export the search results.
+* *xref:get-started-core-ediscovery.adoc[eDiscovery (Standard)].* This tool builds on the basic search and export functionality by enabling you to create cases that let you control who can access case data, place a hold on user mailboxes or mailbox content that matches search criteria.
+That means you can place an eDiscovery hold on the third-party data that was imported to user mailboxes.
+* *xref:overview-ediscovery-20.adoc[eDiscovery (Premium)].* This powerful tool expands the case functionality of eDiscovery (Standard) by letting you add custodians to a case, placing custodian's data on hold, and then loading a custodian's third-party data into a review for further analysis such as themes and duplicate detection.
+After you load third-party data into a review set, you can query and filter it to a narrow result set.
++
+Both eDiscovery (Standard) and eDiscovery (Premium) let you manage third-party data that may be relevant to your organization's legal or internal investigations.
+
+==== Retention settings
+
+You can apply a xref:retention.adoc[retention policy] to user mailboxes to retain and then delete third-party data (and other mailbox content) after retention period expires.
+You can also use retention policies to delete third-party data of a certain age or xref:disposition.adoc[use retention labels to trigger a disposition review] when the retention period for third-party data expires.
+
+==== Records management
+
+The xref:records-management.adoc[records management] feature in Microsoft 365 lets you declare third-party data as a record.
+This can be done manually by users who apply a retention label that marks third-party data in their mailbox as record.
+Or you can auto-apply retention labels by identifying sensitive information, keywords, or content types in third-party data.
+
+==== Communication compliance
+
+You can use xref:communication-compliance.adoc[Communication compliance] to examine third-party data to make sure it is compliant with your organization's data standards.
+You can do this by you detecting, capturing, and taking remediation actions for inappropriate messages in your organization.
+For example, you can monitor the third-party data that you import for offensive language, sensitive information, and regulatory compliance.
+
+==== Insider risk management
+
+Signals from third-party data, like selective HR data, can be used by the xref:insider-risk-management.adoc[Insider risk management] solution to minimize internal risks by letting you to detect, investigate, and act on risky activities in your organization.
+For example, data imported by the HR data connector is used as risk indicators to help detect departing employee data theft.
+
+=== Using eDiscovery tools to search for third-party data
+
+After you use data connectors to import and archive third-party data in user mailboxes, you can use Microsoft 365 eDiscovery tools to search for third-party data.
+You can also eDiscovery tools to create query-based holds associated with eDiscovery (Standard) and eDiscovery (Premium) cases to preserve third-party data.
+For more information about eDiscovery tools, see xref:ediscovery.adoc[eDiscovery solutions in Microsoft 365].
+
+To search for (or place a hold on) any type of third-party data that you've imported to user mailboxes using a data connector, you can use the following search query.
+Be sure to scope the search to user mailboxes.
+
+[,powershell]
+----
+kind:externaldata
+----
+
+You can use this query in the *Keywords* box for a Content search, a search associated with a eDiscovery (Standard) case, or a collection in eDiscovery (Premium).
+
+image::..\media\SearchThirdPartyData1.png[Query to search for third-party data.]
+
+You can also use the `kind:externaldata` property:value pair to narrow the scope of searches to third-party data.
+For example, to search for items imported from any third-party data source that contain the word _contoso_ in the *Subject* property of the imported item, use the following query in the *Keywords* box:
+
+[,powershell]
+----
+subject:contoso AND kind:externaldata
+----
+
+Alternatively, you can use the *Message kind* condition to configure the same query.
+
+image::..\media\SearchThirdPartyData2.png[Use Message kind condition to narrow searches to third-party data.]
+
+To search for a specific type of archived third-party data, use the *itemclass* mailbox property in a search query.
+Use the following property:value format:
+
+[,powershell]
+----
+itemclass:ipm.externaldata.<third-party data type>
+----
+
+Every item imported by a third-party data connector includes the *itemclass* property with a value that corresponds to the third-party data type.
+For example, to search for Facebook data that contains the word _contoso_, in the *Subject* property of the imported item, use the following query:
+
+[,powershell]
+----
+subject:contoso AND itemclass:ipm.externaldata.facebook*
+----
+
+Here are a few examples for *itemclass* values for different types of third-party data.
+
+|===
+| *Third-party data type* | *Value for itemclass property*
+
+| Bloomberg Message
+| ipm.externaldata.bloombergmessage*
+
+| CellTrust
+| ipm.externaldata.celltrust*
+
+| Pivot
+| ipm.externaldata.pivot*
+
+| WhatsApp Archiver
+| ipm.externaldata.whatsapparchiver*
+
+|
+|
+|===
+
+Values for the _itemclass_ property are not case-sensitive.
+In general, use the name of the third-party data type (without spaces) followed by a wildcard ( * ) character.
+
+For more information about creating eDiscovery search queries, see xref:keyword-queries-and-search-conditions.adoc[Keyword queries and search conditions for eDiscovery].
+
+=== Data connectors in the US Government cloud
+
+Some data connectors are available in the US Government cloud.
+The following sections indicate the specific government environments that support third-party data connectors.
+For more information about US Government clouds, see link:/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy[Microsoft 365 US Government].
+
+==== Veritas data connectors in the US Government cloud (preview)
+
+|===
+| Data connector | GCC | GCC High | DoD
+
+| CellTrust
+| Yes
+| No
+| No
+
+| Cisco Jabber on MS SQL
+| Yes
+| No
+| No
+
+| Cisco Jabber on Oracle
+| Yes
+| No
+| No
+
+| Cisco Jabber on PostgreSQL
+| Yes
+| No
+| No
+
+| EML
+| Yes
+| No
+| No
+
+| FX Connect
+| Yes
+| No
+| No
+
+| Jive
+| Yes
+| No
+| No
+
+| MS SQL Database
+| Yes
+| No
+| No
+
+| Pivot
+| Yes
+| No
+| No
+
+| Redtail Speak
+| Yes
+| No
+| No
+
+| Reuters Dealing
+| Yes
+| No
+| No
+
+| Reuters Eikon
+| Yes
+| No
+| No
+
+| Reuters FX
+| Yes
+| No
+| No
+
+| RingCentral
+| Yes
+| No
+| No
+
+| Salesforce Chatter
+| Yes
+| No
+| No
+
+| ServiceNow
+| Yes
+| No
+| No
+
+| Skype for Business
+| Yes
+| No
+| No
+
+| Slack eDiscovery
+| Yes
+| No
+| No
+
+| Symphony
+| Yes
+| No
+| No
+
+| Text-delimited
+| Yes
+| No
+| No
+
+| Twitter
+| Yes
+| No
+| No
+
+| Webex Teams
+| Yes
+| No
+| No
+
+| Webpages
+| Yes
+| No
+| No
+
+| Workplace from Facebook
+| Yes
+| No
+| No
+
+| XIP
+| Yes
+| No
+| No
+
+| XSLT/XML
+| Yes
+| No
+| No
+
+| Yieldbroker
+| Yes
+| No
+| No
+
+| YouTube
+| No
+| No
+| No
+
+| Zoom Meetings
+| Yes
+| No
+| No
+
+|
+|
+|
+|
+|===
+
+==== TeleMessage data connectors in the US Government cloud
+
+|===
+| Data connector | GCC | GCC High | DoD
+
+| Android Archiver
+| Yes
+| No
+| No
+
+| AT&T SMS/MMS Network Archiver
+| Yes
+| No
+| No
+
+| Bell SMS/MMS Network Archiver
+| Yes
+| No
+| No
+
+| Enterprise Number Archiver
+| Yes
+| No
+| No
+
+| O2 SMS and Voice Network Archiver
+| Yes
+| No
+| No
+
+| Rogers Network Archiver
+| Yes
+| No
+| No
+
+| Signal Archiver
+| Yes
+| No
+| No
+
+| Telegram Archiver
+| Yes
+| No
+| No
+
+| TELUS SMS Network Archiver
+| Yes
+| No
+| No
+
+| Verizon SMS/MMS Network Archiver
+| Yes
+| No
+| No
+
+| WeChat Archiver
+| Yes
+| No
+| No
+
+| WhatsApp Archiver
+| Yes
+| No
+| No
+
+|
+|
+|
+|
+|===
+
+==== 17a-4 data connectors in the US Government cloud
+
+|===
+| Data connector | GCC | GCC High | DoD
+
+| BlackBerry DataParser
+| Yes
+| No
+| No
+
+| Bloomberg DataParser
+| Yes
+| No
+| No
+
+| Cisco Jabber DataParser
+| Yes
+| No
+| No
+
+| Cisco Webex DataParser
+| Yes
+| No
+| No
+
+| FactSet DataParser
+| Yes
+| No
+| No
+
+| Fuze DataParser
+| Yes
+| No
+| No
+
+| FX Connect DataParser
+| Yes
+| No
+| No
+
+| ICE DataParser
+| Yes
+| No
+| No
+
+| InvestEdge DataParser
+| Yes
+| No
+| No
+
+| LivePerson Conversational Cloud DataParser
+| Yes
+| No
+| No
+
+| Quip DataParser
+| Yes
+| No
+| No
+
+| Refinitiv Eikon Messenger DataParser
+| Yes
+| No
+| No
+
+| ServiceNow DataParser
+| Yes
+| No
+| No
+
+| Skype for Business Server DataParser
+| Yes
+| No
+| No
+
+| Slack DataParser
+| Yes
+| No
+| No
+
+| SQL DataParser
+| Yes
+| No
+| No
+
+| Symphony DataParser
+| Yes
+| No
+| No
+
+| Zoom DataParser
+| Yes
+| No
+| No
+
+|
+|
+|
+|
+|===
+
+==== CellTrust data connectors in the US Government cloud
+
+|===
+| Data connector | GCC | GCC High | DoD
+
+| CellTrust SL2
+| Yes
+| No
+| No
+
+|
+|
+|
+|
+|===
+
+=== Working with a Microsoft partner to archive third-party data
+
+Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner.
+If a third-party data type isn't supported by the data connectors available in the Microsoft compliance center, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365.
+The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
+
+For a list of partners that you can work with and the step-by-step process for this method, see xref:work-with-partner-to-archive-third-party-data.adoc[Work with a partner to archive third-party data in Microsoft 365].

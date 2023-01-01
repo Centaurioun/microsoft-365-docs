@@ -1,0 +1,100 @@
+'''
+
+title: Onboard Windows 10 and Windows 11 devices via Group Policy
+
+f1.keywords:     NOCSH ms.author: chrfox author: chrfox manager: laurawi ms.date: audience: ITPro ms.topic: how-to ms.service: O365-seccomp ms.localizationpriority: medium ms.collection:
+
+* M365-security-compliance  ms.custom: admindeeplinkCOMPLIANCE search.appverid:
+* MET150  description: Use Group Policy to deploy the configuration package on Windows 10 and Windows 11 devices so that they are onboarded to the service.
+--
+
+== Onboard Windows 10 devices and Windows 11 using Group Policy
+
+*Applies to:*
+
+* xref:./endpoint-dlp-learn-about.adoc[Endpoint data loss prevention (DLP)]
+* xref:insider-risk-management.adoc[Insider risk management]
+* Group Policy
+
+____
+[!NOTE] To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
+____
+
+____
+For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
+____
+
+=== Onboard devices using Group Policy
+
+. Open the https://compliance.microsoft.com[Compliance center].
+. In the navigation pane, select *Settings* > *Device Onboarding*.
+. In the *Deployment method* field, select *Group policy*.
+. Click *Download package* and save the .zip file.
+. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device.
+You should have a folder called _OptionalParamsPolicy_ and the file _DeviceComplianceLocalOnboardingScript.cmd_.
+. Open the link:/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11[Group Policy Management Console] (GPMC), right-click the Group Policy Object (GPO) you want to configure and click *Edit*.
+. In the *Group Policy Management Editor*, go to *Computer configuration*, then *Preferences*, and then *Control panel settings*.
+. Right-click *Scheduled tasks*, point to *New*, and then click *Immediate Task (At least Windows 7)*.
+. In the *Task* window that opens, go to the *General* tab.
+Under *Security options* click *Change User or Group* and type SYSTEM and then click *Check Names* then *OK*.
+NT AUTHORITY\SYSTEM appears as the user account the task will run as.
+. Select *Run whether user is logged on or not* and check the *Run with highest privileges* check box.
+. Go to the *Actions* tab and click *New...* Ensure that *Start a program* is selected in the *Action* field.
+Enter the file name and location of the shared _WindowsDefenderATPOnboardingScript.cmd_ file.
+. Click *OK* and close any open GPMC windows.
+
+=== Offboard devices using Group Policy
+
+For security reasons, the package used to offboard devices will expire 30 days after the date it was downloaded.
+Expired offboarding packages sent to a device will be rejected.
+When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+
+____
+[!NOTE] Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
+____
+
+. Get the offboarding package from https://compliance.microsoft.com/compliancesettings/deviceonboarding[Microsoft Purview compliance portal].
+. In the navigation pane, select *Settings* > *//Device onboarding* > *Offboarding*.
+. In the *Deployment method* field, select *Group policy*.
+. Click *Download package* and save the .zip file.
+. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device.
+You should have a file named _DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd_.
+. Open the link:/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11[Group Policy Management Console] (GPMC), right-click the Group Policy Object (GPO) you want to configure and click *Edit*.
+. In the *Group Policy Management Editor*, go to *Computer configuration,* then *Preferences*, and then *Control panel settings*.
+. Right-click *Scheduled tasks*, point to *New*, and then click *Immediate task*.
+. In the *Task* window that opens, go to the *General* tab.
+Choose the local SYSTEM user account (BUILTIN\SYSTEM) under *Security options*.
+. Select *Run whether user is logged on or not* and check the *Run with highest privileges* check-box.
+. Go to the *Actions* tab and click *New...*.
+Ensure that *Start a program* is selected in the *Action* field.
+Enter the file name and location of the shared  _DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd_ file.
+. Click *OK* and close any open GPMC windows.
+
+____
+[!IMPORTANT] Offboarding causes the device to stop sending sensor data to the portal but data from the device.
+____
+
+=== Monitor device configuration
+
+With Group Policy there isn't an option to monitor deployment of policies on the devices.
+Monitoring can be done directly on the portal, or by using the different deployment tools.
+
+=== Monitor devices using the portal
+
+. Go to the https://go.microsoft.com/fwlink/p/?linkid=2077149[Microsoft Purview compliance portal].
+. Click *Devices* list.
+. Verify that devices are appearing.
+
+____
+[!NOTE] It can take several days for devices to start showing on the *Devices list*.
+This includes the time it takes for the policies to be distributed to the device, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
+____
+
+=== Related topics
+
+* xref:device-onboarding-sccm.adoc[Onboard Windows 10 and Windows 11 devices using Microsoft Endpoint Configuration Manager]
+* xref:device-onboarding-mdm.adoc[Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools]
+* xref:device-onboarding-script.adoc[Onboard Windows 10 and Windows 11 devices using a local script]
+* xref:device-onboarding-vdi.adoc[Onboard non-persistent virtual desktop infrastructure (VDI) devices]
+* link:/windows/security/threat-protection/microsoft-defender-atp/run-detection-test[Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices]
+* link:/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding[Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues]

@@ -1,0 +1,338 @@
+= Microsoft 365 admin center activity reports
+:audience: Admin
+:author: camillepack
+:description: Get a periodic report of how people in your organization are using Microsoft 365 services and drill into each chart for more insights.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
+:ms.author: camillepack
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["adminvideo", "AdminSurgePortfolio", "AdminTemplateSet"]
+:ms.localizationpriority: high
+:ms.service: o365-administration
+:ms.topic: overview
+:search.appverid: ["MET150", "MOE150", "GEA150"]
+
+== Microsoft 365 Reports in the admin center
+
+Check out https://go.microsoft.com/fwlink/?linkid=2197659[Microsoft 365 small business help] on YouTube.
+
+You can easily see how people in your business are using Microsoft 365 services.
+For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all.
+Perpetual license model will not be included in the reports.
+
+Reports are available for the last 7 days, 30 days, 90 days, and 180 days.
+Data won't exist for all reporting periods right away.
+The reports become available within 48 hours.
+
+=== Watch: Act on a usage report in Microsoft 365
+
+Check out this video and others on our https://go.microsoft.com/fwlink/?linkid=2198103[YouTube channel].
++  +
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
+____
+
+=== How to get to the Reports dashboard
+
+::: moniker range="o365-worldwide"
+
+. In the admin center, go to the *Reports* > https://go.microsoft.com/fwlink/p/?linkid=2074756[Usage] page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+. In the https://go.microsoft.com/fwlink/p/?linkid=850627[admin center], go to the *Reports* > *Usage* page.
+
+::: moniker-end
+
+. Click the *View more* button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page.
+On that page, different reports for the service are provided in tabs.
++
+:::image type="content" alt-text="The Usage dashboard." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
+
+=== Who can see reports
+
+People who have the following permissions:
+
+* Global admins: We recommend that only a few people in your company have this role.
+It reduces the risk to your business.
+* Exchange admins
+* SharePoint admins
+* Skype for Business admins
+* Global reader (with no user details)
+* Usage Summary Reports reader (with no user details)
+* Reports reader
+* Teams Administrator
+* Teams Communications Administrator
+
+To learn more, see xref:../add-users/about-admin-roles.adoc[About admin roles] and xref:../add-users/assign-admin-roles.adoc[Assign admin roles].
+
+=== Which activity reports are available in the admin center
+
+Depending on your subscription, here are the available reports in all environments.
+
+|===
+| Report | Public | GCC | GCC-High | DoD | Office 365 operated by 21Vianet
+
+| xref:browser-usage-report.adoc[Microsoft browser usage]
+| Yes
+| No^1^
+| No^1^
+| No^1^
+| No^1^
+
+| xref:email-activity-ww.adoc[Email activity]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:email-apps-usage-ww.adoc[Email apps usage]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:mailbox-usage.adoc[Mailbox usage]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:microsoft-office-activations-ww.adoc[Office activations]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:active-users-ww.adoc[Active Users]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:office-365-groups-ww.adoc[Microsoft 365 groups]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:microsoft365-apps-usage-ww.adoc[Microsoft 365 Apps usage]
+| Yes
+| Yes
+| No^1^
+| No^1^
+| Yes
+
+| xref:onedrive-for-business-activity-ww.adoc[OneDrive for Business user activity]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:onedrive-for-business-usage-ww.adoc[OneDrive for Business usage]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:sharepoint-site-usage-ww.adoc[SharePoint site usage]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:sharepoint-activity-ww.adoc[SharePoint activity]
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| xref:microsoft-teams-user-activity-preview.adoc[Microsoft Teams user activity]
+| Yes
+| Yes
+| Yes
+| Yes
+| N/A^2^
+
+| xref:microsoft-teams-device-usage-preview.adoc[Microsoft Teams device usage]
+| Yes
+| Yes
+| Yes
+| Yes
+| N/A^2^
+
+| xref:microsoft-teams-usage-activity.adoc[Microsoft Teams usage activity]
+| Yes
+| Yes
+| Yes
+| Yes
+| N/A^2^
+
+| xref:yammer-activity-report-ww.adoc[Yammer activity]
+| Yes
+| Yes
+| N/A^2^
+| N/A^2^
+| N/A^2^
+
+| xref:yammer-device-usage-report-ww.adoc[Yammer device usage]
+| Yes
+| Yes
+| N/A^2^
+| N/A^2^
+| N/A^2^
+
+| xref:yammer-groups-activity-report-ww.adoc[Yammer groups activity report]
+| Yes
+| Yes
+| N/A^2^
+| N/A^2^
+| N/A^2^
+
+| xref:forms-activity-ww.adoc[Forms activity]
+| Yes
+| Yes
+| No^1^
+| No^1^
+| No^1^
+
+| xref:forms-pro-activity-ww.adoc[Dynamics 365 Customer Voice activity]
+| Yes
+| Yes
+| N/A^2^
+| N/A^2^
+| N/A^2^
+
+| link:/SkypeForBusiness/skype-for-business-online-reporting/activity-report[Skype for Business Online activity]
+| Yes
+| Yes
+| No^1^
+| No^1^
+| Yes
+
+| link:/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report[Skype for Business Online conference organized activity]
+| Yes
+| Yes
+| No^1^
+| No^1^
+| Yes
+
+| link:/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report[Skype for Business Online conference participant activity]
+| Yes
+| Yes
+| No^1^
+| No^1^
+| Yes
+
+| link:/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report[Skype for Business Online peer-to-peer activity]
+| Yes
+| Yes
+| No^1^
+| No^1^
+| Yes
+
+| xref:viva-learning-activity.adoc[Viva Learning activity]
+| Yes
+| N/A
+| N/A
+| N/A
+| N/A
+
+| xref:viva-insights-activity.adoc[Viva Insights activity]
+| Yes
+| Yes
+| N/A
+| N/A
+| N/A
+
+| xref:project-activity.adoc[Project activity]
+| Yes
+| Yes
+| N/A
+| N/A
+| N/A
+|===
+
+N/A^1^: The report is in plan to be released in the future.
+The https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=[Microsoft 365 Roadmap] will be updated before the release.
+N/A^2^: The service is not available in the environment so no plan to release the report.
+
+=== How to view licensing information
+
+* To see how many licenses you have assigned and unassigned, in the admin center, go to the *Billing* > https://go.microsoft.com/fwlink/p/?linkid=842264[Licenses] page.
+* To see who is licensed, unlicensed, or guest, in the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=834822[Active users] page.
+
+=== How to view usage information for a specific user
+
+Use the service reports to research how much a specific user is using the service.
+For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name.
+If you have thousands of users, export the report to Excel so you filter through the list quickly.
+
+You can't generate a report where you enter a user's account and then get a list of which services they are using and how much.
+
+There are circumstances where new users show up as *unknown*.
+This is usually due to occasional delays in creating user profiles.
+
+=== Show user details in the reports
+
+By default, user details will be hidden for all reports.
+
+Your user list will look like this:
+
+image::../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png[Reports - anonymized user list.]
+
+If you want to unhide user-level information when you're generating your reports, a *global administrator* can quickly make that change in the admin center.
+
+Reports provide information about your organization's usage data.
+By default, reports display information with identifiable names for users, groups, and sites.
+Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+
+Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it.
+It can be achieved in the Microsoft 365 admin center by following these steps:
+
+. In the admin center, go to the *Settings* > *Org Settings* > *Services* page.
+. Select *Reports*.
+. Uncheck the statement *Display concealed user, group, and site names in all reports*, and then save your changes.
+
+Beginning on June 23, 2022, an API will gradually become available to all environments for global admins to change this setting without needing to visit the Microsoft 365 admin center.
+The API details are below:
+
+The URL is https://graph.microsoft.com/beta/admin/reportSettings
+
+Two methods have been approved for this API:
+
+:::image type="content" source="../../media/api-show-details.png" alt-text="API Methods.":::
+
+The report will only contain a Privacy Setting property.
+For more information on Graph API, see link:/graph/use-the-api[Use the Microsoft Graph API].
+Global admins can use the Software Development Kit (SDK) or directly call the API using any program language with network ability.
+We recommend using link:/graph/graph-explorer/graph-explorer-overview[Graph Explorer].
+
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard.
+This setting also applies to the Microsoft 365 usage reports in link:/graph/api/resources/report[Microsoft Graph] and link:/microsoft-365/admin/usage-analytics/usage-analytics[Power BI] and link:/microsoftteams/teams-analytics-and-reports/teams-reporting-reference[the usage reports in Microsoft Teams Admin center].
+Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.
+
+=== What happens to usage data when a user account is closed?
+
+Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days.
+That user will still be included in the Activity chart totals for the periods she was active in, but will not appear in the User Details table.
+
+However, when you select a particular day, up to 28 days from the current date, the report show the user's usage for that day in the User Details table.
+
+=== Related content
+
+xref:../usage-analytics/usage-analytics.adoc[Microsoft 365 usage analytics] (article) + xref:../usage-analytics/customize-reports.adoc[Customize the reports in Microsoft 365 usage analytics] (article)

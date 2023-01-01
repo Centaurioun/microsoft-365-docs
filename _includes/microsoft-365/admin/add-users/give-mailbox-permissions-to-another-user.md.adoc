@@ -1,0 +1,144 @@
+'''
+
+title: "Give mailbox permissions to another user - Admin Help" f1.keywords:
+
+* NOCSH ms.author: kwekua author: kwekua manager: scotv audience: Admin ms.topic: article ms.service: o365-administration ms.localizationpriority: high ms.collection:
+* M365-subscription-management
+* Adm_O365
+
+ms.custom:
+
+* MSStore_Link
+* AdminSurgePortfolio
+* okr_smb
+* AdminTemplateSet
+* admindeeplinkEXCHANGE
+* business_assist search.appverid:
+* BCS160
+* MET150
+* MOE150 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8 description: "Give a Microsoft 365 user the right to access another user's mailbox, which allows the user to read and send emails from the other user's mailbox." --
+
+== Give mailbox permissions to another Microsoft 365 user - Admin help
+
+As the admin, you may have company requirements to allow some users access to another user's mailbox.
+For example, you may want to enable an assistant to send or read email from their manager's mailbox, or one of your user's the ability to send email on behalf of another user.
+This topic shows you how to accomplish this.
+
+If you're looking for information about creating and managing shared mailboxes, check out xref:../email/create-a-shared-mailbox.adoc[Create a shared mailbox].
+
+____
+[!TIP] If you need help with the steps in this topic, consider https://go.microsoft.com/fwlink/?linkid=2186871[working with a Microsoft small business specialist].
+With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+____
+
+=== Looking to set up mailbox permissions?
+
+Mailbox permissions allow you to give read/write access to a mailbox to another user.
+The articles below might give you the help you need to set up and use this feature:
+
+*Setting up the permissions:*
+
+The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox.
+You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox.
+Refer to the following articles on how to set up each type of permissions:
+
+* link:give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox[Read email from another user's mailbox]
+* link:give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox[Send email from another user's mailbox]
+* link:give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user[Send email on behalf of another user]
+
+*Changing propagation:*
+
+Once you've set up the permissions, it can take up to 60 minutes for the changes to propagate through the system and be in effect.
+
+*How to use it once permissions are set up:*
+
+There are a few different ways you can access a mailbox once you've been given access.
+For help on this, refer to this article: https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081[Access another person's mailbox].
+
+____
+[!NOTE] The permissions can be set up only within the current organization tenant.
+It is not possible to set up mailbox permissions with out of tenant users.
+____
+
+=== Send email from another user's mailbox
+
+::: moniker range="o365-worldwide"
+
+. In the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=834822[Active users] page.
+. Select the name of the user (from whom you plan to give a sending permission) to open their properties pane.
+. On the *Mail* tab, select *Manage mailbox permissions*.
+. Next to *Send as*, select *Edit*.
+. Select *Add permissions*, then choose the name of the person who you want this user to be able to send as.
+. Select *Add*.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+. In the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=850628[Active users] page.
+. Select the user you want, expand *Mail Settings*, and then Select *Edit* next to *Mailbox permissions*.
+. Next to *Send as*, select *Edit*.
+. Select *Add permissions*, then choose the name of the person who you want this user to be able to send as.
+. Select *Add*.
+
+::: moniker-end
+
+=== Read email in another user's mailbox
+
+::: moniker range="o365-worldwide"
+
+. In the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=834822[Active users] page.
+. Select the name of the user (whose mailbox you want to allow to be read) to open their properties pane.
+. On the *Mail* tab, select *Manage mailbox permissions*.
+. Next to *Read and manage*, select *Edit*.
+. Select *Add permissions*, then choose the name of the user or users that you want to allow to read email from this mailbox.
+. Select *Add*.
+
+____
+[!NOTE] *Read* and *Manage* permissions are called *Full Access* permission when granted in the https://go.microsoft.com/fwlink/p/?linkid=2059104[Exchange admin center].
+This permission allows the assigned user mailbox to read as well as manage emails in the user mailbox on which the permission is assigned.
+Full Access permission does not grant *Send as* or *Send on behalf*  permissions.
+____
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+. In the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=850628[Active users] page.
+. Select the user you want, expand *Mail Settings*, and then select *Edit* next to *Mailbox permissions*.
+. Next to *Read and manage*, select *Edit*.
+. Select *Add permissions*, then choose the name of the user or users that you want to allow to read email from this mailbox.
+. Select *Add*.
+
+::: moniker-end
+
+=== Send email on behalf of another user
+
+::: moniker range="o365-worldwide"
+
+. In the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=834822[Active users] page.
+. Select the name of the user (from whom you plan to give a *Send on behalf* permission) to open their properties pane.
+. On the *Mail* tab, select *Manage mailbox permissions*.
+. Next to *Send on behalf*, select *Edit*.
+. Select *Add permissions*, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
+. Select *Add*.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+. In the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=850628[Active users] page.
+. Select the user you want, expand *Mail Settings*, and then select *Edit* next to *Mailbox permissions*.
+. Next to *Send on behalf*, select *Edit*.
+. Select *Add permissions*, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
+. Select *Add*.
+
+::: moniker-end
+
+____
+[!NOTE] The *Send As* and *Send on Behalf* permissions do not work in Outlook Desktop client with the _HiddenFromAddressListsEnabled_ parameter on the mailbox set to *True*, since they require the mailbox to be visible in Outlook via the Global Address List.
+____
+
+=== Related content
+
+https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5[Manage another person's mail and calendar items] (article)\ + https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b[Send email from another person or group] (article) + xref:../add-users/change-a-user-name-and-email-address.adoc[Change a user name and email address] (video)

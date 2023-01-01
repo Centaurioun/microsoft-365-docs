@@ -1,0 +1,183 @@
+= Manage payment methods
+:audience: Admin
+:author: cmcatee-MSFT
+:description: Buy business products or services from Microsoft by using an existing payment method or adding a new one in the Microsoft 365 admin center.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.author: cmcatee
+:ms.collection: ["M365-subscription-management", "Adm_O365"]
+:ms.custom: ["commerce_billing", "TopSMBIssues", "okr_SMB", "AdminSurgePortfolio", "AdminTemplateSet", "adminvideo", "business_assist"]
+:ms.date: 06/01/2022
+:ms.localizationpriority: high
+:ms.reviewer: lishepar, vikdesai
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: MET150
+
+== Manage payment methods
+
+____
+[!IMPORTANT] As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States.
+If you're an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account that is in good standing.
+However, you can't add new subscriptions to the bank account.
+____
+
+When you buy business products or services from Microsoft, you can use an existing payment method, or add a new one.
+You can use a credit or debit card, or bank account to pay for the things you buy.
+
+If your business account has a billing profile, and you are a billing profile owner or billing profile contributor, you can use the billing profile that's backed by a credit card or invoice payment to make purchases or pay bills.
+If you're a billing invoice manager, you can only use a billing profile to pay bills.
+To learn more about billing profiles and roles, see xref:manage-billing-profiles.adoc[Manage billing profiles].
+
+If your business account doesn't have a billing profile, any Global or Billing admin can manage and use any bank account that is added to the business account.
+However, you can only manage or use credit cards that you add.
+
+____
+[!NOTE] The option to pay with a bank account is not available in some countries or regions.
+
+You must use a payment method issued from the same country as your tenant.
+____
+
+____
+[!TIP] If you need help with the steps in this topic, consider https://go.microsoft.com/fwlink/?linkid=2186871[working with a Microsoft small business specialist].
+With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+____
+
+=== Watch: Update your payment method
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
+____
+
+You can easily update the payment method for your Microsoft 365 Business subscription.
+You can change details such as the credit card used, the name, or the address.
+
+=== Before you begin
+
+You must be a Global or Billing admin to do the tasks in this article.
+For more information, see xref:../../admin/add-users/about-admin-roles.adoc[About admin roles].
+
+=== Add a payment method
+
+Adding a payment method doesn't associate any subscriptions with it.
+To assign a single subscription to the payment method, see <<change-a-payment-method-for-a-single-subscription,Change a payment method for a single subscription>>.
+To replace all subscriptions that use another payment method with the new one, see <<replace-a-payment-method,Replace a payment method>>.
+
+. In the admin center, go to the *Billing* > *Bills & payments* > https://go.microsoft.com/fwlink/p/?linkid=2018806[Payment methods] page.
+. Select *Add a payment method*.
+. On the *Payment methods* page, pick a payment method from the drop-down menu.
+. Enter the information for the new card or bank account, then select *Add*.
+
+=== Update payment method details
+
+You can change the name on the credit or debit card, billing address, or expiration date for an existing payment method.
+However, you can't change the card or account number.
+If the account number has changed, <<replace-a-payment-method,replace it with a different payment method>>, and then <<delete-a-payment-method,delete the old one>>.
+
+. In the admin center, go to the *Billing* > *Bills & payments* > https://go.microsoft.com/fwlink/p/?linkid=2018806[Payment methods] page.
+. Select the row of the payment method to update.
+In the right pane, select *Edit*.
+. Update your payment method information, including the name on the credit or debit card, billing address, or expiration date, and then select *Save*.
+
+=== Replace a payment method
+
+When you replace a payment method, you replace it for all subscriptions and billing profiles that use the same payment method.
+Replacing a payment method doesn't delete the existing payment method.
+It's still available for you to select and use for other subscriptions and billing profiles.
+
+To change the payment method for a single subscription, see <<change-a-payment-method-for-a-single-subscription,Change a payment method for a single subscription>>.
+
+. In the admin center, go to the *Billing* > *Bills & payments* > https://go.microsoft.com/fwlink/p/?linkid=2018806[Payment methods] page.
+. Select the row of the payment method to replace.
+The right pane lists all billing profiles and individual subscriptions that use the selected payment method.
+. In the right pane, select *Replace payment method for all items*.
+. To use an existing payment method, choose one from the drop-down list, then select *Replace*.
++
+____
+[!NOTE] If you have subscriptions associated with a billing profile, you can only use a credit or debit card to pay for them.
+If you have bank accounts listed on the *Payment methods* page, they aren't available to select in the drop-down list.
+____
+
+. To add a new payment method, select *Add payment method*.
+. In the *Add a payment method* pane, enter the account information, then select *Save*.
+You must use a payment method from the same country as your tenant.
+. The new payment method is already selected in the drop-down list.
+Select *Replace*.
+
+=== Change a payment method for a single subscription
+
+You can change the payment method used to pay for a single subscription.
+
+. In the admin center, go to the *Billing* > https://go.microsoft.com/fwlink/p/?linkid=842054[Your products] page.
+. On the *Products* tab, find the subscription that you want to pay for with the alternate payment method.
+. Select the three dots (more actions), then select *Replace payment method*.
+. In the *Replace payment method* pane, from the drop-down list, choose an alternate payment method, or choose to add a payment method.
+. If you add a payment method, enter the card or account details, then select *Save*.
+. Verify that the selected payment method is correct, then select *Replace*.
+
+=== Delete a payment method
+
+You can only delete a payment method that isn't attached to a subscription or billing profile.
+This applies to all subscriptions, whatever their status.
+
+==== Delete a payment method with no subscriptions or billing profiles attached
+
+If a payment method isn't associated with any subscriptions or billing profiles, you can immediately delete it.
+
+. In the admin center, go to the *Billing* > *Bills & payments* > https://go.microsoft.com/fwlink/p/?linkid=2018806[Payment methods] page.
+. Find the payment method to delete, select the three dots, then select *Delete*.
+. At the bottom of the right pane, select *Delete*.
+
+==== Delete a payment method with subscriptions or billing profiles attached
+
+If a payment method is attached to any subscriptions or billing profiles, first replace it with an existing payment method, or add a new one, then delete the old payment method.
+
+. In the admin center, go to the *Billing* > *Bills & payments* > https://go.microsoft.com/fwlink/p/?linkid=2018806[Payment methods] page.
+. Select the row for the payment method to delete.
+The right pane lists existing subscriptions that use that payment method.
+. In the right pane, select *Delete*.
+. To use an existing payment method, choose one from the drop-down list, select *Next*, and then select *Delete*.
++
+____
+[!NOTE] If you have subscriptions associated with a billing profile, you can only use a credit card to pay for them.
+If you have bank accounts listed on the *Payment methods* page, they aren't available to choose in the drop-down list.
+____
+
+. To add a new payment method, select *Add payment method*.
+. Choose the type of payment method that you want to add, enter the account information, and then select *Save*.
+. The new payment method is already selected in the drop-down list.
+Select *Next*.
+. Select *Delete*.
+
+=== Troubleshoot payment methods
+
+|===
+| Issue | Troubleshooting steps
+
+| *I get an error message that says, "The browser is currently set to block cookies."*
+| Set your browser to allow third-party cookies and try again.
+
+| *My credit or debit card was declined.*
+| If you pay by credit or debit card, and your card is declined, you receive an email that says Microsoft was unable to process the payment.
+Double-check that the card details&mdash;card number, expiration date, name on the card, and address, including city, state, and ZIP code&mdash;appear exactly as they do on the card and your statement.
+You can update your card information and immediately submit the payment by using the *Settle balance* link in the *Billing* section of the subscription details page.
+For more information, see link:pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance[What if I have an outstanding balance?]  +  + If you continue to see the "declined" message, contact your bank.
+It's possible that your card isn't active.
+If you recently received the card in the mail with an updated expiration date, make sure it's activated.
+Your bank can also tell you whether your card isn't approved for online, international, or recurring transactions.
+
+| *I want to update a card or bank account number.*
+| You can't change the card or account number on an existing payment method.
+If your card or account number has changed, <<replace-a-payment-method,replace it with a different payment method>>, which moves all active subscriptions from the payment method to the new one, then <<delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached,delete the old payment method>>.
+
+| *I only have one card or bank account on my account and I want to remove it.*
+| If you only have one payment method, you must <<replace-a-payment-method,replace it with a new payment method>> before you can delete it.
+
+| *I can't add my card or bank account.*
+| You must use a payment method issued from the same country as your tenant.
+If you have trouble entering your card or bank account information, you can xref:../../admin/get-help-support.adoc[contact support].
+|===
+
+=== Related content
+
+xref:pay-for-your-subscription.adoc[Pay for your business subscription] (article) + xref:manage-billing-profiles.adoc[Manage billing profiles] (article) + xref:change-payment-frequency.adoc[Change your billing frequency] (article)

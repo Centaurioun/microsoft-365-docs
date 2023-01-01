@@ -1,0 +1,132 @@
+= Get alert related user information
+:audience: ITPro
+:author: mjcaparas
+:description: Learn how to use the Get alert-related user information API to retrieve the user related to a specific alert in Microsoft Defender for Endpoint.
+:keywords: apis, graph api, supported apis, get, alert, information, related, user
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Get alert related user information API
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+=== API description
+
+Retrieves the User related to a specific alert.
+
+=== Limitations
+
+* You can query on alerts last updated according to your configured retention period.
+* Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API.
+To learn more, including how to choose permissions, see xref:apis-intro.adoc[Use Microsoft Defender for Endpoint APIs]
+
+|===
+| Permission type | Permission | Permission display name
+
+| Application
+| User.Read.All
+| 'Read user profiles'
+
+| Delegated (work or school account)
+| User.Read.All
+| 'Read user profiles'
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* The user needs to have at least the following role permission: 'View Data' (See xref:user-roles.adoc[Create and manage roles] for more information)
+* The user needs to have access to the device associated with the alert, based on device group settings (See xref:machine-groups.adoc[Create and manage device groups] for more information)
+
+Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+____
+
+=== HTTP request
+
+[,http]
+----
+GET /api/alerts/{id}/user
+----
+
+=== Request headers
+
+|===
+| Name | Type | Description
+
+| Authorization
+| String
+| Bearer \{token}.
+*Required*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful and alert and a user exists - 200 OK with user in the body.
+If alert or user not found - 404 Not Found.
+
+=== Example
+
+==== Request example
+
+Here's an example of the request.
+
+[,http]
+----
+GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/user
+----
+
+==== Response example
+
+Here is an example of the response.
+
+[,json]
+----
+{
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users/$entity",
+    "id": "contoso\\user1",
+    "accountName": "user1",
+    "accountDomain": "contoso",
+    "accountSid": "S-1-5-21-72051607-1745760036-109187956-93922",
+    "firstSeen": "2019-12-08T06:33:39Z",
+    "lastSeen": "2020-01-05T06:58:34Z",
+    "mostPrevalentMachineId": "0111b647235c26159bec3e5eb6c8c3a0cc3ab766",
+    "leastPrevalentMachineId": "0111b647235c26159bec3e5eb6c8c3a0cc3ab766",
+    "logonTypes": "Network",
+    "logOnMachinesCount": 1,
+    "isDomainAdmin": false,
+    "isOnlyNetworkUser": false
+}
+----

@@ -1,0 +1,9 @@
+= Microsoft 365 Defender important guidance
+:author: dansimp
+:description: A note regarding important Microsoft 365 Defender guidance.
+:manager: dansimp
+:ms.author: dansimp
+:ms.date: 09/21/2020
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.topic: include

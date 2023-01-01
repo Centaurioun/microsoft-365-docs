@@ -1,0 +1,86 @@
+'''
+
+title: "Microsoft 365 for enterprise for the Contoso Corporation" author: kelleyvice-msft f1.keywords:
+
+* NOCSH ms.author: kvice manager: scotv audience: ITPro ms.topic: article ms.service: microsoft-365-enterprise ms.localizationpriority: medium ms.collection:
+* Strat_O365_Enterprise
+* M365-subscription-management ms.custom:
+
+=== description: How a fictional but representative global organization adopted Microsoft 365 for enterprise.
+
+== Microsoft 365 for enterprise for the Contoso Corporation
+
+Microsoft 365 for enterprise is the Microsoft premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features.
+It's a complete, intelligent solution that enables everyone to work together creatively and securely.
+
+Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris.
+The company deployed Microsoft 365 for enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security.
+
+The company's overall goal for Microsoft 365 for enterprise is to accelerate its digital transformation by using cloud services to bring together its employees, partners, data, and processes to create customer value and maintain its competitive advantage in a digital-first world.
+
+See these articles for the details:
+
+* xref:contoso-overview.adoc[Overview]
++
+Contoso is a global manufacturing, sales, and support organization with more than 100,000 products.
+
+* xref:contoso-infra-needs.adoc[Contoso IT infrastructure and needs]
++
+Contoso is transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive setup that incorporates cloud-based personal productivity workloads, applications, and hybrid scenarios.
+
+* xref:contoso-networking.adoc[Networking]
++
+Contoso network engineers optimized traffic for their on-premises users to their intranet edge and to the closest Microsoft network location on the internet.
+
+* xref:contoso-identity.adoc[Identity]
++
+The Contoso identity-in-the-cloud solution leverages the company's on-premises Active Directory Domain Services (AD DS) forest.
+It includes federated authentication with their existing trusted, third-party identity providers.
+
+* xref:contoso-win10.adoc[Windows 10 Enterprise]
++
+The Contoso infrastructure for Windows 10 Enterprise deploys and automatically installs updates for devices that are running the company's primary PC and device operating system.
+
+* xref:contoso-o365pp.adoc[Microsoft 365 Apps for enterprise]
++
+The Contoso infrastructure for Microsoft 365 Apps for enterprise deploys and automatically installs updates for the Microsoft Office suite of productivity software.
+
+* xref:contoso-mdm.adoc[Mobile device management]
++
+With many roaming employees who have both company and personal smart phones and tablets, Contoso uses mobile device management to enroll and secure devices and their data and manage apps.
+
+* xref:contoso-info-protect.adoc[Information protection]
++
+To ensure that both common and high-value data are identified, labeled, and subject to layers of security, Contoso enforces its data-security policies with Microsoft 365 for enterprise information protection.
+
+* xref:contoso-security-summary.adoc[Summary of Microsoft 365 for enterprise security]
++
+Contoso uses the full spectrum of Microsoft 365 for enterprise security features for identity and access management, threat protection, information protection, and security management.
+
+See these additional IT scenarios and configurations:
+
+* xref:../solutions/contoso-remote-onsite-work.adoc[COVID-19 response and infrastructure for remote and onsite work]
++
+Learn how Contoso updated their remote access capability and their new installs and updates infrastructure for remote and onsite workers.
+
+* xref:../solutions/contoso-team-for-top-secret-project.adoc[Team for a top-secret project]
++
+To create a secure collaboration environment for a top-secret project, Contoso used a team with security isolation.
+
+* link:/MicrosoftTeams/voice-case-study-overview[Teams voice migration]
++
+Learn how Contoso migrated their on-premises users to Microsoft Teams for unified communication, collaboration, and voice.
+
+* xref:../compliance/communication-compliance-case-study.adoc[Communication compliance offensive language policy]
++
+Learn how Contoso quickly configured an offensive language policy for Microsoft Teams, Exchange, and Yammer communications.
+
+=== Next step
+
+Learn xref:contoso-overview.adoc[about the Contoso Corporation] and the design considerations that were addressed when they deployed Microsoft 365 for enterprise.
+
+=== See also
+
+xref:microsoft-365-overview.adoc[Microsoft 365 for enterprise overview]
+
+xref:m365-enterprise-test-lab-guides.adoc[Test lab guides]

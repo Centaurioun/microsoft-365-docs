@@ -1,0 +1,100 @@
+= Assign admin roles the Microsoft 365 admin center
+:audience: Admin
+:author: kwekua
+:description: Learn how to assign administrator roles to a user or multiple users in your business so that they can perform specific tasks in the admin center.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
+:ms.author: kwekua
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["MSStore_Link", "okr_smb", "TRN_M365B", "OKR_SMB_Videos", "AdminSurgePortfolio", "AdminTemplateSet", "adminvideo"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150", "BEA160", "GEA150"]
+
+== Assign admin roles in the Microsoft 365 admin center
+
+Check out https://go.microsoft.com/fwlink/?linkid=2197659[Microsoft 365 small business help] on YouTube.
+
+If you're the person who purchased your Microsoft business subscription, you are the global admin.
+This means you have unlimited control over the products in your subscriptions and you can access most data.
+
+For more information, see xref:about-admin-roles.adoc[About admin roles].
+
+When you add new users, if you don't assign them an admin role then they are in the _user role_ and don't have admin privileges to any of the Microsoft admin centers.
+But if you need help getting things done, you can assign an admin role to a user.
+For example, if you need someone to help reset passwords, you shouldn't assign them the global admin role, you should assign them the password admin role.
+Having too many global admins, with unlimited access to your data and online business, is a security risk.
+
+=== Watch: Add an admin
+
+Check out this video and others on our https://go.microsoft.com/fwlink/?linkid=2198030[YouTube channel].
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO]
+____
+
+. When you sign up for Microsoft 365 Business, you automatically become a global admin.
+To help manage the business, you can make other people admins as well.
+. In the Microsoft 365 admin center, select *Users* > https://go.microsoft.com/fwlink/p/?linkid=834822[*Active users*].
+. Choose the user you want to make an admin, and then select *Manage roles*.
+
+If you found this video helpful, check out the link:../../business-video/index.yml[complete training series for small businesses and those new to Microsoft 365].
+
+=== Assign admin roles
+
+You can assign users to a role in two different ways:
+
+* You can go to the user's details and *Manage roles* to assign a role to the user.
+* Or you can go to *Roles* and select the role, and then add multiple users to it.
+
+==== Assign admin roles to users using Roles
+
+. In the admin center, go to https://go.microsoft.com/fwlink/p/?linkid=2097861[*Role assignments*].
+Choose the *Azure AD* or *Intune* tabs to view the admin roles available for your organization.
+. Select the admin role that you want to assign the user to.
+. Select *Assigned admins* > *Add*.
+. Type the user's *display name* or *username*, and then select the user from the list of suggestions.
+. Add multiple users until you're done.
+. Select *Save*, and then the user will be added to the list of assigned admins.
+
+==== Assign a user to an admin role from Active users
+
+::: moniker range="o365-worldwide"
+
+. In the admin center, go to *Users* > https://go.microsoft.com/fwlink/p/?linkid=834822[Active users] page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+. In the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=850628[Active users] page.
+
+::: moniker-end
+
+. On the *Active users* page, select the user whose admin role you want to change.
+In the flyout pane, under *Roles*, select *Manage roles*.
+. Select the admin role that you want to assign to the user.
+If you don't see the role you're looking for, select *Show all* at the bottom of the list.
+
+=== Assign admin roles to multiple users
+
+If you know PowerShell, see xref:../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.adoc[Assign roles to user accounts with PowerShell].
+It's ideal for assigning roles to hundreds of users.
+
+Use the following instructions to assign roles to tens of users.
+
+=== Check admin roles in your organization
+
+You might not have the correct permissions to assign admin roles to other users.
+Check to make sure you have the correct permissions or ask another admin to assign roles for you.
+
+You can check admin role permissions in 2 different ways:
+
+* You can go to the user's details and look under *Roles* on the *Account* page.
+* Or you can go to *Roles* and select the admin role, and select assigned admins to see which users are assigned.
+
+=== Related content
+
+xref:about-admin-roles.adoc[About Microsoft 365 admin roles] (article) + link:/azure/active-directory/roles/permissions-reference[Azure AD built-in roles] (article) + xref:../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.adoc[Assign roles to user accounts with PowerShell] (article) + xref:../misc/add-partner.adoc[Authorize or remove partner relationships] (article)

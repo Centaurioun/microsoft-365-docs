@@ -1,0 +1,88 @@
+= Plan your Microsoft Defender for Endpoint deployment
+:audience: ITPro
+:author: mjcaparas
+:description: Select the best Microsoft Defender for Endpoint deployment strategy for your environment
+:keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: ["M365-security-compliance", "m365-initiative-defender-endpoint"]
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: conceptual
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Plan your Microsoft Defender for Endpoint deployment
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink[Sign up for a free trial.]
+____
+
+Plan your Microsoft Defender for Endpoint deployment so that you can maximize the security capabilities within the suite and better protect your enterprise from cyber threats.
+
+This solution provides guidance on how to identify your environment architecture, select the type of deployment tool that best fits your needs, and guidance on how to configure capabilities.
+
+:::image type="content" source="images/deployment-guide-plan.png" alt-text="The deployment flow" lightbox="images/deployment-guide-plan.png":::
+
+=== Step 1: Identify architecture
+
+We understand that every enterprise environment is unique, so we've provided several options to give you the flexibility in choosing how to deploy the service.
+
+Depending on your environment, some tools are better suited for certain architectures.
+
+Use the following material to select the appropriate Defender for Endpoint architecture that best suites your organization.
+
+|===
+| Item | Description
+
+| https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="The strategy for deployment of Defender for Endpoint" lightbox="images/mde-deployment-strategy.png":::] + https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf[PDF]  \| https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx[Visio]
+| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
+|===
+
+=== Step 2: Select deployment method
+
+The following table lists the supported endpoints and the corresponding deployment tool that you can use so that you can plan the deployment appropriately.
+
+|===
+| Endpoint | Deployment tool
+
+| *Windows*
+| xref:configure-endpoints-script.adoc[Local script (up to 10 devices)] + xref:configure-endpoints-gp.adoc[Group Policy] + xref:configure-endpoints-mdm.adoc[Microsoft Endpoint Manager/ Mobile Device Manager] + xref:configure-endpoints-sccm.adoc[Microsoft Endpoint Configuration Manager] + xref:configure-endpoints-vdi.adoc[VDI scripts]
+
+| *macOS*
+| xref:mac-install-manually.adoc[Local script] + xref:mac-install-with-intune.adoc[Microsoft Endpoint Manager] + xref:mac-install-with-jamf.adoc[JAMF Pro] + xref:mac-install-with-other-mdm.adoc[Mobile Device Management]
+
+| *Linux Server*
+| xref:linux-install-manually.adoc[Local script] + xref:linux-install-with-puppet.adoc[Puppet] + xref:linux-install-with-ansible.adoc[Ansible]
+
+| *iOS*
+| xref:ios-install.adoc[App-based]
+
+| *Android*
+| xref:android-intune.adoc[Microsoft Endpoint Manager]
+|===
+
+=== Step 3: Configure capabilities
+
+After onboarding endpoints, configure the security capabilities in Defender for Endpoint so that you can maximize the robust security protection available in the suite.
+Capabilities include:
+
+* Endpoint detection and response
+* Next-generation protection
+* Attack surface reduction
+
+=== Related topics
+
+* xref:deployment-phases.adoc[Deployment phases]

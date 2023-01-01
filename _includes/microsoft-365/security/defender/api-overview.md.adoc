@@ -1,0 +1,71 @@
+= Overview of Microsoft 365 Defender APIs
+:audience: ITPro
+:author: mjcaparas
+:description: Learn about the available APIs in Microsoft 365 Defender
+:f1.keywords: ["NOCSH"]
+:keywords: api, apis, overview, incident, incidents, threat hunting, microsoft 365 defender
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Overview of Microsoft 365 Defender APIs
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may be substantially modified before it's commercially released.
+Microsoft makes no warranties, express or implied, with respect to the information provided here.
+____
+
+Microsoft 365 Defender is built on top of an integration-ready platform.
+
+Use the Microsoft 365 Defender APIs to automate workflows based on the shared incident and advanced hunting tables.
+
+* *xref:api-incident.adoc[Combined incidents queue]* - Focus on what's critical by grouping the full attack scope and all impacted assets together under the incident API.
+* *xref:api-advanced-hunting.adoc[Cross-product threat hunting]* - Leverage your security team's organizational knowledge to hunt for signs of compromise, by creating your own custom queries to sift over raw data collected across multiple protection products.
+* *xref:streaming-api.adoc[Event streaming API]* - Ship real-time events and alerts in a single data stream as they occur.
+
+Along with these Microsoft 365 Defender-specific APIs, each of our other security products expose xref:api-articles.adoc[additional APIs] to help you take advantage of their unique capabilities.
+
+____
+[!NOTE] The transition to the unified portal should not affect the PowerBi dashboards based on Microsoft Defender for Endpoint APIs.
+You can continue to work with the existing APIs regardless of the interactive portal transition.
+____
+
+Watch this short video to learn how you can use Microsoft 365 Defender to automate workflows and integrate apps.
+
+____
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M?rel=0]
+____
+
+=== Learn more
+
+|===
+| *Understand how to access the APIs*
+
+| xref:api-terms.adoc[Learn about API quotas and licensing]
+| xref:api-access.adoc[Access the Microsoft 365 Defender APIs]
+| *Build apps*
+| xref:api-hello-world.adoc[Create a 'Hello world' app]
+| xref:api-create-app-user-context.adoc[Create an app to access Microsoft 365 Defender APIs on behalf of a user]
+| xref:api-create-app-web.adoc[Create an app to access Microsoft 365 Defender without a user]
+| xref:api-partner-access.adoc[Create an app with multi-tenant partner access to Microsoft 365 Defender APIs]
+| *Troubleshoot and maintain your apps*
+| xref:api-error-codes.adoc[Understand API error codes]
+| link:/training/modules/manage-secrets-with-azure-key-vault/[Manage secrets in your apps with Azure Key Vault]
+| link:/azure/active-directory/develop/active-directory-v2-protocols-oauth-code[Implement OAuth 2.0 authorization for user sign in]
+|===

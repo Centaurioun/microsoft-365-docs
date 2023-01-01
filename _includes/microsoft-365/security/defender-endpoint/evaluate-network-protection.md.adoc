@@ -1,0 +1,89 @@
+= Evaluate network protection
+:audience: ITPro
+:author: dansimp
+:description: See how network protection works by testing common scenarios that it protects against.
+:keywords: Network protection, exploits, malicious website, ip, domain, domains, evaluate, test, demo
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["M365-security-compliance"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: conceptual
+:search.appverid: met150
+
+== Evaluate network protection
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+xref:network-protection.adoc[Network protection] helps prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
+
+This article helps you evaluate network protection by enabling the feature and guiding you to a testing site.
+The sites in this evaluation article aren't malicious.
+They're specially created websites that pretend to be malicious.
+The site will replicate the behavior that would happen if a user visited a malicious site or domain.
+
+=== Enable network protection in audit mode
+
+Enable network protection in audit mode to see which IP addresses and domains would have been blocked.
+You can make sure it doesn't affect line-of-business apps, or get an idea of how often blocks occur.
+
+. Type *powershell* in the Start menu, right-click *Windows PowerShell* and select *Run as administrator*
+. Enter the following cmdlet:
++
+[,powershell]
+----
+ Set-MpPreference -EnableNetworkProtection AuditMode
+----
+
+==== Visit a (fake) malicious domain
+
+. Open Internet Explorer, Google Chrome, or any other browser of your choice.
+. Go to https://smartscreentestratings2.net.
++
+The network connection will be allowed and a test message will be displayed.
++
+:::image type="content" source="images/np-notif.png" alt-text="The connection blockage notification" lightbox="images/np-notif.png":::
+
+____
+[!NOTE] Network connections can be successful even though a site is blocked by network protection.
+To learn more, see link:network-protection.md#network-protection-and-the-tcp-three-way-handshake[Network protection and the TCP three-way handshake].
+____
+
+=== Review network protection events in Windows Event Viewer
+
+To review apps that would have been blocked, open Event Viewer and filter for Event ID 1125 in the Microsoft-Windows-Windows Defender/Operational log.
+The following table lists all network protection events.
+
+|===
+| Event ID | Provide/Source | Description
+
+| 5007
+| Windows Defender (Operational)
+| Event when settings are changed
+
+| 1125
+| Windows Defender (Operational)
+| Event when a network connection is audited
+
+| 1126
+| Windows Defender (Operational)
+| Event when a network connection is blocked
+|===
+
+=== See also
+
+* xref:network-protection.adoc[Network protection]
+* link:network-protection.md#network-protection-and-the-tcp-three-way-handshake[Network protection and the TCP three-way handshake]
+* xref:enable-network-protection.adoc[Enable network protection]
+* xref:troubleshoot-np.adoc[Troubleshoot network protection]

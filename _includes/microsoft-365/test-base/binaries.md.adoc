@@ -1,0 +1,45 @@
+= Upload Application Binaries
+:audience: Software-Vendor
+:author: mansipatel-usl
+:description: How to get started using Test Base for Microsoft 365
+:f1.keywords: NOCSH
+:manager: rshastri
+:ms.author: tinachen
+:ms.collection: TestBase-M365
+:ms.custom:
+:ms.date: 07/06/2021
+:ms.localizationpriority: medium
+:ms.reviewer: tinachen
+:ms.service: test-base
+:ms.topic: how-to
+:search.appverid: MET150
+
+== Step 3: Upload your binaries, dependencies, and scripts
+
+On this tab, you'll upload a single zip package containing your binaries, dependencies and scripts used to run your test suite.
+
+____
+[!NOTE] The size of the zip package should be between a minimum of 10 MB and a maximum of 2 GB.
+____
+
+=== Upload package zip file
+
+:::image type="content" alt-text="Upload your binaries." source="Media/AddBinaries.png":::
+
+* Uploaded dependencies can include test frameworks, scripting engines or data that will be accessed to run your application or test cases.
+For example, you can upload Selenium and a web driver installer to help run browser-based tests.
+* It's best practice to ensure your script activities are kept modular that is.
+ ** The `Install` script only performs install operations.
+ ** The `Launch` script only launches the application.
+ ** The `Close` script only closes the application.
+ ** The optional `Uninstall` script only uninstalls the application.
+
+*Currently, the portal only supports PowerShell scripts.*
+
+=== Next steps
+
+Advance to the next article to go onto Step 4: *Set your Test Tasks*.
+
+____
+[!div class="nextstepaction"] xref:uploadApplication.adoc[Go back] [!div class="nextstepaction"] xref:testtask.adoc[Next step]
+____

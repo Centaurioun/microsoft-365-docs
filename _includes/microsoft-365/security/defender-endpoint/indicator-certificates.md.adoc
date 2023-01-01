@@ -1,0 +1,84 @@
+= Create indicators based on certificates
+:audience: ITPro
+:author: mjcaparas
+:description: Create indicators based on certificates that define the detection, prevention, and exclusion of entities.
+:keywords: ioc, certificate, certificates, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Create indicators based on certificates
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink[Sign up for a free trial.]
+____
+
+You can create indicators for certificates.
+Some common use cases include:
+
+* Scenarios when you need to deploy blocking technologies, such as xref:attack-surface-reduction.adoc[attack surface reduction rules] and xref:controlled-folders.adoc[controlled folder access] but need to allow behaviors from signed applications by adding the certificate in the allow list.
+* Blocking the use of a specific signed application across your organization.
+By creating an indicator to block the certificate of the application, Windows Defender AV will prevent file executions (block and remediate) and the Automated Investigation and Remediation behave the same.
+
+=== Before you begin
+
+It's important to understand the following requirements prior to creating indicators for certificates:
+
+* This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled.
+For more information, see link:/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus[Manage cloud-based protection].
+* The Antimalware client version must be  4.18.1901.x or later.
+* Supported on machines on Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
++
+____
+[!NOTE] Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in link:configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016[Onboard Windows servers] for this feature to work.
+____
+
+* The virus and threat protection definitions must be up to date.
+* This feature currently supports entering .CER or .PEM file extensions.
+
+____
+[!IMPORTANT]
+
+* A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft.
+Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').
+* The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality, only leaf certificates are supported.
+* Microsoft signed certificates cannot be blocked.
+____
+
+=== Create an indicator for certificates from the settings page:
+
+____
+[!IMPORTANT] It can take up to 3 hours to create and remove a certificate IoC.
+____
+
+. In the navigation pane, select *Settings* > *Endpoints* > *Indicators* (under *Rules*).
+. Select *Add indicator*.
+. Specify the following details:
+ ** Indicator - Specify the entity details and define the expiration of the indicator.
+ ** Action - Specify the action to be taken and provide a description.
+ ** Scope - Define the scope of the machine group.
+. Review the details in the Summary tab, then click *Save*.
+
+=== Related topics
+
+* xref:manage-indicators.adoc[Create indicators]
+* xref:indicator-file.adoc[Create indicators for files]
+* xref:indicator-ip-domain.adoc[Create indicators for IPs and URLs/domains]
+* xref:indicator-manage.adoc[Manage indicators]

@@ -1,0 +1,163 @@
+= Enable controlled folder access
+:audience: ITPro
+:author: dansimp
+:description: Learn how to protect your important files by enabling Controlled folder access
+:experimental:
+:keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, enable, turn on, use
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: m365-security-compliance
+:ms.date:
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer: oogunrinde, sugamar
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Enable controlled folder access
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink[Sign up for a free trial.]
+____
+
+xref:controlled-folders.adoc[Controlled folder access] helps you protect valuable data from malicious apps and threats, such as ransomware.
+Controlled folder access is included with Windows 10, Windows 11, and Windows Server 2019.
+Controlled folder access is also included as part of the link:/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview[modern, unified solution for Windows Server 2012R2 and 2016].
+
+You can enable controlled folder access by using any of these methods:
+
+* <<windows-security-app,Windows Security app *>>
+* <<endpoint-manager,Microsoft Endpoint Manager>>
+* <<mobile-device-management-mdm,Mobile Device Management (MDM)>>
+* <<microsoft-endpoint-configuration-manager,Microsoft Endpoint Configuration Manager>>
+* <<group-policy,Group Policy>>
+* <<powershell,PowerShell>>
+
+xref:evaluate-controlled-folder-access.adoc[Audit mode] allows you to test how the feature would work (and review events) without impacting the normal use of the device.
+
+Group Policy settings that disable local administrator list merging will override controlled folder access settings.
+They also override protected folders and allowed apps set by the local administrator through controlled folder access.
+These policies include:
+
+* Microsoft Defender Antivirus *Configure local administrator merge behavior for lists*
+* System Center Endpoint Protection *Allow users to add exclusions and overrides*
+
+For more information about disabling local list merging, see link:/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus[Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings].
+
+=== Windows Security app
+
+. Open the Windows Security app by selecting the shield icon in the task bar.
+You can also search the start menu for *Windows Security*.
+. Select the *Virus & threat protection* tile (or the shield icon on the left menu bar) and then select *Ransomware protection*.
+. Set the switch for *Controlled folder access* to *On*.
+
+____
+[!NOTE] *This method is not available on Windows Server 2012R2 or 2016.
+
+If controlled folder access is configured with Group Policy, PowerShell, or MDM CSPs, the state will change in the Windows Security app after a restart of the device.
+If the feature is set to *Audit mode* with any of those tools, the Windows Security app will show the state as *Off*.
+If you are protecting user profile data, we recommend that the user profile should be on the default Windows installation drive.
+____
+
+=== Endpoint Manager
+
+. Sign in to the https://endpoint.microsoft.com[Endpoint Manager] and open *Endpoint Security*.
+. Go to *Attack Surface Reduction* > *Policy*.
+. Select *Platform*, choose *Windows 10 and later*, and select the profile *Attack Surface Reduction rules* > *Create*.
+. Name the policy and add a description.
+Select *Next*.
+. Scroll down to the bottom, select the *Enable Folder Protection* drop-down, and choose *Enable*.
+. Select *List of additional folders that need to be protected* and add the folders that need to be protected.
+. Select *List of apps that have access to protected folders* and add the apps that have access to protected folders.
+. Select *Exclude files and paths from attack surface reduction rules* and add the files and paths that need to be excluded from attack surface reduction rules.
+. Select the profile *Assignments*, assign to *All Users & All Devices*, and select *Save*.
+. Select *Next* to save each open blade and then *Create*.
++
+____
+[!NOTE] Wildcards are supported for applications, but not for folders.
+Subfolders are not protected.
+Allowed apps will continue to trigger events until they are restarted.
+____
+
+=== Mobile Device Management (MDM)
+
+Use the link:/windows/client-management/mdm/policy-csp-defender[./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders] configuration service provider (CSP) to allow apps to make changes to protected folders.
+
+=== Microsoft Endpoint Configuration Manager
+
+. In Microsoft Endpoint Configuration Manager, go to *Assets and Compliance* > *Endpoint Protection* > *Windows Defender Exploit Guard*.
+. Select *Home* > *Create Exploit Guard Policy*.
+. Enter a name and a description, select *Controlled folder access*, and select *Next*.
+. Choose whether block or audit changes, allow other apps, or add other folders, and select *Next*.
++
+____
+[!NOTE] Wildcard is supported for applications, but not for folders.
+Subfolders are not protected.
+Allowed apps will continue to trigger events until they are restarted.
+____
+
+. Review the settings and select *Next* to create the policy.
+. After the policy is created, *Close*.
+
+=== Group Policy
+
+. On your Group Policy management device, open the https://technet.microsoft.com/library/cc731212.aspx[Group Policy Management Console], right-click the Group Policy Object you want to configure and select *Edit*.
+. In the *Group Policy Management Editor*, go to *Computer configuration* and select *Administrative templates*.
+. Expand the tree to menu:Windows components[Microsoft Defender Antivirus > Windows Defender Exploit Guard > Controlled folder access].
+. Double-click the *Configure Controlled folder access* setting and set the option to *Enabled*.
+In the options section you must specify one of the following options:
+ ** *Enable* - Malicious and suspicious apps won't be allowed to make changes to files in protected folders.
+A notification will be provided in the Windows event log.
+ ** *Disable (Default)* - The Controlled folder access feature won't work.
+All apps can make changes to files in protected folders.
+ ** *Audit Mode* - Changes will be allowed if a malicious or suspicious app attempts to make a change to a file in a protected folder.
+However, it will be recorded in the Windows event log where you can assess the impact on your organization.
+ ** *Block disk modification only* - Attempts by untrusted apps to write to disk sectors will be logged in Windows Event log.
+These logs can be found in *Applications and Services Logs* > Microsoft > Windows > Windows Defender > Operational > ID 1123.
+ ** *Audit disk modification only* - Only attempts to write to protected disk sectors will be recorded in the Windows event log (under *Applications and Services Logs* > *Microsoft* > *Windows* > *Windows Defender* > *Operational* > *ID 1124*).
+Attempts to modify or delete files in protected folders won't be recorded.
+
++
+:::image type="content" source="../../media/cfa-gp-enable.png" alt-text="The group policy option Enabled and Audit Mode selected" lightbox="../../media/cfa-gp-enable.png":::
+
+____
+[!IMPORTANT] To fully enable controlled folder access, you must set the Group Policy option to *Enabled* and select *Block* in the options drop-down menu.
+____
+
+=== PowerShell
+
+. Type *powershell* in the Start menu, right-click *Windows PowerShell* and select *Run as administrator*.
+. Enter the following cmdlet:
++
+[,powershell]
+----
+ Set-MpPreference -EnableControlledFolderAccess Enabled
+----
+
+You can enable the feature in audit mode by specifying `AuditMode` instead of `Enabled`.
+
+Use `Disabled` to turn off the feature.
+
+=== See also
+
+* xref:controlled-folders.adoc[Protect important folders with controlled folder access]
+* xref:customize-controlled-folders.adoc[Customize controlled folder access]
+* xref:evaluate-mde.adoc[Evaluate Microsoft Defender for Endpoint]

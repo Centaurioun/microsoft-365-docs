@@ -1,0 +1,64 @@
+= Export and download content from a eDiscovery (Standard) case
+:audience: Admin
+:author: robmazz
+:description: Describes how to export and download content from a eDiscovery (Standard) case in Microsoft 365.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance", "ediscovery"]
+:ms.custom: admindeeplinkCOMPLIANCE
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MOE150", "MET150"]
+
+== Export content from a eDiscovery (Standard) case
+
+After a search associated with a Microsoft Purview eDiscovery (Standard) case is successfully run, you can export the search results.
+When you export search results, mailbox items are downloaded in PST files or as individual messages.
+When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents and other documents are exported.
+A Results.csv file that contains information about every item that's exported and a manifest file (in XML format) that contains information about every search result is also exported.
+
+=== Export search results
+
+. Go to the https://go.microsoft.com/fwlink/p/?linkid=2077149[Microsoft Purview compliance portal] and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
+. In the left navigation pane of the compliance portal, select *Show all*, and then select *eDiscovery* > https://go.microsoft.com/fwlink/p/?linkid=2174007[*eDiscovery (Standard)*].
+. On the *eDiscovery (Standard)* page, click the name of the case that you want to create the hold in.
+. On the *Home* page for the case, click the *Searches* tab.
+. On the *Actions* menu at the bottom of the flyout page, click *Export results*.
++
+image::../media/ActionMenuExportResults.png[Export results option in Actions menu.]
++
+The workflow to export the results of a search associated with a eDiscovery (Standard) case is that same as exporting the search results for a search on the *Content search* page.
+For step-by-step instructions, see xref:export-search-results.adoc[Export content search results].
++
+____
+[!NOTE] When you export search results, you have the option to enable de-duplication so that only one copy of an email message is exported even though multiple instances of the same message might have been found in the mailboxes that were searched.
+For more information about de-duplication and how duplicate items are identified, see xref:de-duplication-in-ediscovery-search-results.adoc[De-duplication in eDiscovery search results].
+____
++
+After you start the export, the search results are prepared for downloading, which means they are transferred to a Microsoft-provided Azure Storage location in the Microsoft cloud.
+
+. Click the *Exports* tab in the case to display the list of export jobs.
++
+image::../media/CoreeDiscoveryExport.png[Export jobs on the Export tab in eDiscovery (Standard) case.]
++
+You may have to click *Refresh* to update the list of export jobs so that it shows the export job you created.
+Export jobs have the same name as the corresponding search with *_Export* appended to the search name.
+
+. Click the export job you created to display status information on the flyout page.
+This information includes the percentage of items that have been transferred to the Azure Storage location.
+. After all items have been transferred, click *Download results* to download the search results to your local computer.
+For more information downloading search results, see Step 2 in link:export-search-results.md#step-2-download-the-search-results[Export content search results]
+
+____
+[!NOTE] The exported search results must be downloaded within 14 days after you created the export job.
+____
+
+==== More information about exporting searches from a case
+
+* For more information about the export files that are included when you export search results, see link:export-a-content-search-report.md#whats-included-in-the-report[Export a Content search report].
+* If you restart the export, any changes to the queries of the searches that make up the export job won't affect the search results that are retrieved.
+When you restart an export, the same combined search query job that was run when the export job was created will be run again.
+* Also, if you restart an export, the search results that are copied to the Azure Storage location overwrites the previous results.
+The previous results that were copied won't be available to be downloaded.

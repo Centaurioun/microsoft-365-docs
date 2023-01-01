@@ -1,0 +1,429 @@
+= Connect your DNS records at Cloudflare to Microsoft 365
+:audience: Admin
+:author: efrene
+:description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Cloudflare for Microsoft.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
+:ms.author: efrene
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_NonTOC", "Adm_O365_Setup"]
+:ms.custom: AdminSurgePortfolio
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Connect your DNS records at Cloudflare to Microsoft 365
+
+*link:../setup/domains-faq.yml[Check the Domains FAQ]* if you don't find what you're looking for.
+
+If Cloudflare is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
+
+=== Before you begin
+
+You have two options for setting up DNS records for your domain:
+
+* <<use-domain-connect-to-verify-and-set-up-your-domain,*Use Domain Connect*>> If you haven't set up your domain with another email service provider, use the Domain Connect steps to automatically verify and set up your new domain to use with Microsoft 365.
++
+OR
+
+* <<create-dns-records-with-manual-setup,*Use the manual steps*>> Verify your domain using the manual steps below and choose when and which records to add to your domain registrar.
+This allows you to set up new MX (mail) records, for example, at your convenience.
+
+=== Use Domain Connect to verify and set up your domain
+
+Follow these steps to automatically verify and set up your Cloudflare domain with Microsoft 365:
+
+. In the Microsoft 365 admin center, select *Settings* > https://go.microsoft.com/fwlink/p/?linkid=834818[*Domains*], and select the domain you want to set up.
+. Select the three dots (more actions) > choose *Start setup*.
++
+:::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+. On the How do you want to connect your domain?
+page, select *Continue*.
+. On the Add DNS records page, select *Add DNS records*.
+. On the Cloudflare login page, sign in to your account, and select *Authorize*.
++
+This completes your domain setup for Microsoft 365.
+
+=== Create DNS records with manual setup
+
+After you add these records at Cloudflare, your domain will be set up to work with Microsoft 365 services.
+
+____
+[!NOTE] Typically it takes about 15 minutes for DNS changes to take effect.
+However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.
+If you're having trouble with mail flow or other issues after adding DNS records, see xref:../get-help-with-domains/find-and-fix-issues.adoc[Troubleshoot issues after changing your domain name or DNS records].
+____
+
+==== Change your domain's nameserver (NS) records
+
+____
+[!IMPORTANT] You must perform this procedure at the domain registrar where you purchased and registered your domain.
+____
+
+When you signed up for Cloudflare, you added a domain by using the Cloudflare Setup process.
+
+The domain that you added was purchased from Cloudflare or a separate domain registrar.
+To verify and create DNS records for your domain in Microsoft 365, you first need to change the nameservers at your domain registrar so that they use the Cloudflare nameservers.
+
+To change your domain's name servers at your domain registrar's website yourself, follow these steps.
+
+. Find the area on the domain registrar's website where you can edit the nameservers for your domain.
+. Either create two nameserver records by using the values in the following table, or edit the existing nameserver records so that they match these values.
++
+|===
+| Type | Value
+
+| First nameserver
+| Use the nameserver value provided by Cloudflare.
+
+| Second nameserver
+| Use the nameserver value provided by Cloudflare.
+|===
++
+____
+[!TIP] You should use at least two name server records.
+If there are any other name servers listed, you should delete them.
+____
+
+. Save your changes.
+
+____
+[!NOTE] Your nameserver record updates may take up to several hours to update across the Internet's DNS system.
+Then your Microsoft email and other services will be all set to work with your domain.
+____
+
+==== Add a TXT record for verification
+
+Before you use your domain with Microsoft, we have to make sure that you own it.
+Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
+
+____
+[!NOTE] This record is used only to verify that you own your domain;
+it doesn't affect anything else.
+You can delete it later, if you like.
+____
+
+. To get started, go to your domains page at Cloudflare by using https://www.cloudflare.com/a/login[this link].
+You'll be prompted to log in first.
+. On the Home page, select the domain that you want to update.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+
+. On the Overview page for your domain, select *DNS*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
+
+. On the DNS management page, select *+Add record*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
+. Select the TXT type from the drop-down list, and type or copy and paste the values from this table.
++
+|===
+| Type | Name | TTL | Content
+
+| TXT
+| @
+| 30 minutes
+| MS=ms__XXXXXXXX__ + *Note:* This is an example.
+Use your specific *Destination or Points to Address* value here, from the table.
+xref:../get-help-with-domains/information-for-dns-records.adoc[How do I find this?]
+|===
+
+. Select *Save*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Select Add record.":::
++
+Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and search for the record.
+When Microsoft finds the correct TXT record, your domain is verified.
+
+To verify the record in Microsoft 365:
+
+. In the admin center, go to the *Settings* > https://go.microsoft.com/fwlink/p/?linkid=834818[*Domains*].
+. On the Domains page, select the domain that you're verifying, and select *Start setup*.
++
+:::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+. Select *Continue*.
+. On the *Verify domain* page, select *Verify*.
+
+____
+[!NOTE] Typically it takes about 15 minutes for DNS changes to take effect.
+However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.
+If you're having trouble with mail flow or other issues after adding DNS records, see xref:../get-help-with-domains/find-and-fix-issues.adoc[Troubleshoot issues after changing your domain name or DNS records].
+____
+
+==== Add an MX record so email for your domain will come to Microsoft
+
+. To get started, go to your domains page at Cloudflare by using https://www.cloudflare.com/a/login[this link].
+You'll be prompted to log in first.
+. On the Home page, select the domain that you want to update.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+
+. On the Overview page for your domain, select *DNS*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
+
+. On the DNS management page, select *+Add record*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
+. Select the MX type from the drop-down list, and type or copy and paste the values from this table.
++
+|===
+| Type | Name | Mail server | TTL | Priority
+
+| MX
+| @
+| _<domain-key>_.mail.protection.outlook.com + *Note:* Get your _<domain-key>_ from your Microsoft 365 account.
+xref:../get-help-with-domains/information-for-dns-records.adoc[How do I find this?]
+| 30 minutes
+| 1 + For more information about priority, see link:../setup/domains-faq.yml[What is MX priority?] +
+|===
+
+. Select *Save*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-save.png" alt-text="Select Add record.":::
+
+. If there are any other MX records listed in the *MX Records* section, delete them by selecting *Edit*, and then select *Delete*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-delete.png" alt-text="Select Delete.":::
+
+. In the confirmation dialog box, select *Delete* to confirm your changes.
+
+==== Add the CNAME record required for Microsoft
+
+. To get started, go to your domains page at Cloudflare by using https://www.cloudflare.com/a/login[this link].
+You'll be prompted to log in first.
+. On the Home page, select the domain that you want to update.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+
+. On the Overview page for your domain, select *DNS*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
+
+. On the *DNS management* page, select *+Add record*
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
+. Select the CNAME type from the drop-down list, and type or copy and paste the values from this table.
++
+|===
+| Type | Name | Target | TTL
+
+| CNAME
+| autodiscover
+| autodiscover.outlook.com
+| Auto
+|===
+
+. Select *Save*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Select Save.":::
+
+==== Add a TXT record for SPF to help prevent email spam
+
+____
+[!IMPORTANT] You cannot have more than one TXT record for SPF for a domain.
+If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues.
+If you already have an SPF record for your domain, don't create a new one for Microsoft 365.
+Instead, add the required Microsoft 365 values to the current record so that you have a _single_ SPF record that includes both sets of values.
+____
+
+. To get started, go to your domains page at Cloudflare by using https://www.cloudflare.com/a/login[this link].
+You'll be prompted to log in first.
+. On the Home page, select the domain that you want to update.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+
+. On the Overview page for your domain, select *DNS*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
+
+. On the DNS management page, select *+Add record*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
+. Select the TXT type from the drop-down list, and type or copy and paste the values from this table.
++
+|===
+| Type | Name | TTL | Content
+
+| TXT
+| @
+| 30 minutes
+| v=spf1 include:spf.protection.outlook.com -all + *Note:* We recommend copying and pasting this entry, so that all of the spacing stays correct.
+|===
+
+. Select *Save*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Select Save.":::
+
+=== Advanced option: Skype for Business
+
+Only select this option if your organization uses Skype for Business for online communication services like chat, conference calls, and video calls, in addition to Microsoft Teams.
+Skype needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+
+==== Add the two required SRV records
+
+____
+[!IMPORTANT] Keep in mind that Cloudflare is responsible for making this functionality available.
+In case you see discrepancies between the steps below and the current Cloudflare GUI (Graphical User Interface), leverage the https://community.cloudflare.com/[Cloudflare Community].
+____
+
+. To get started, go to your domains page at Cloudflare by using https://www.cloudflare.com/a/login[this link].
+You'll be prompted to log in first.
+. On the Home page, select the domain that you want to update.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+
+. On the Overview page for your domain, select *DNS*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
+
+. On the DNS management page, select *+Add record*
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
+. Select the SRV type from the drop-down list, and type or copy and paste the values from this table.
++
+|===
+| Type | Name | Service | Protocol | TTL | Priority | Weight | Port | Target
+
+| SRV
+| Use your _domain_name_;
+for example, contoso.com
+| _sip
+| TLS
+| 30 minutes
+| 100
+| 1
+| 443
+| sipfed.online.lync.com
+
+| SRV
+| _sipfederationtls
+| TCP
+| Use your _domain_name_;
+for example, contoso.com
+| 30 minutes
+| 100
+| 1
+| 5061
+| sipfed.online.lync.com
+|===
+
+. Select *Save*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-srv-save.png" alt-text="Select Save.":::
+
+. Add the other SRV record by copying the values from the second row of the table.
+
+____
+[!NOTE] Typically it takes about 15 minutes for DNS changes to take effect.
+However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.
+If you're having trouble with mail flow or other issues after adding DNS records, see xref:../get-help-with-domains/find-and-fix-issues.adoc[Troubleshoot issues after changing your domain name or DNS records].
+____
+
+==== Add the two required CNAME records for Skype for Business
+
+. To get started, go to your domains page at Cloudflare by using https://www.cloudflare.com/a/login[this link].
+You'll be prompted to log in first.
+. On the Home page, select the domain that you want to update.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+
+. On the Overview page for your domain, select *DNS*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
+
+. On the DNS management page, select *+Add record*
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
+. Select the CNAME type from the drop-down list, and type or copy and paste the values from this table.
++
+|===
+| Type | Name | Target | TTL
+
+| CNAME
+| sip
+| sipdir.online.lync.com.
++ *This value MUST end with a period (.)*
+| 1 Hour
+
+| CNAME
+| lyncdiscover
+| webdir.online.lync.com.
++ *This value MUST end with a period (.)*
+| 1 Hour
+|===
+
+. Select the *Save*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Select Save.":::
+
+. Add the other CNAME record by copying the values from the second row of the table.
+
+____
+[!NOTE] Typically it takes about 15 minutes for DNS changes to take effect.
+However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.
+If you're having trouble with mail flow or other issues after adding DNS records, see xref:../get-help-with-domains/find-and-fix-issues.adoc[Troubleshoot issues after changing your domain name or DNS records].
+____
+
+=== Advanced option: Intune and Mobile Device Management for Microsoft 365
+
+This service helps you secure and remotely manage mobile devices that connect to your domain.
+Mobile Device Management needs 2 CNAME records so that users can enroll devices to the service.
+
+==== Add the two required CNAME records for Mobile Device Management
+
+. To get started, go to your domains page at Cloudflare by using https://www.cloudflare.com/a/login[this link].
+You'll be prompted to log in first.
+. On the Home page, select the domain that you want to update.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+
+. On the Overview page for your domain, select *DNS*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
+
+. On the DNS management page, select *+Add record*
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
+. Select the CNAME type from the drop-down list, and type or copy and paste the values from this table.
++
+|===
+| Type | Name | Target | TTL
+
+| CNAME
+| enterpriseregistration
+| enterpriseregistration.windows.net.
++ *This value MUST end with a period (.)*
+| 1 Hour
+
+| CNAME
+| enterpriseenrollment
+| enterpriseenrollment-s.manage.microsoft.com.
++ *This value MUST end with a period (.)*
+| 1 Hour
+|===
+
+. Select *Save*.
++
+:::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Select Save.":::
+
+. Add the other CNAME record by copying the values from the second row of the table.
+
+____
+[!NOTE] Typically it takes about 15 minutes for DNS changes to take effect.
+However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.
+If you're having trouble with mail flow or other issues after adding DNS records, see xref:../get-help-with-domains/find-and-fix-issues.adoc[Troubleshoot issues after changing your domain name or DNS records].
+____

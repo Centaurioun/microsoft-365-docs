@@ -1,0 +1,149 @@
+= Data tables in the Microsoft 365 Defender advanced hunting schema
+:audience: ITPro
+:author: schmurky
+:description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on
+:f1.keywords: ["NOCSH"]
+:keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
+:manager: dansimp
+:ms.author: maccruz
+:ms.collection: m365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: article
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Understand the advanced hunting schema
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+[!INCLUDE xref:../includes/prerelease.adoc[Prerelease information]]
+
+The xref:advanced-hunting-overview.adoc[advanced hunting] schema is made up of multiple tables that provide either event information or information about devices, alerts, identities, and other entity types.
+To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
+
++++<a name="get-schema-information-in-the-security-center">++++++</a>+++
+
+=== Get schema information
+
+While constructing queries, use the built-in schema reference to quickly get the following information about each table in the schema:
+
+* *Tables description*--type of data contained in the table and the source of that data.
+* *Columns*--all the columns in the table.
+* *Action types*--possible values in the `ActionType` column representing the event types supported by the table.
+This information is provided only for tables that contain event information.
+* *Sample query*--example queries that feature how the table can be utilized.
+
+==== Access the schema reference
+
+To quickly access the schema reference, select the *View reference* action next to the table name in the schema representation.
+You can also select *Schema reference* to search for a table.
+
+:::image type="content" source="../../media/understand-schema-1.png" alt-text="The Schema Reference page on the Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="../../media/understand-schema-1.png":::
+
+=== Learn the schema tables
+
+The following reference lists all the tables in the schema.
+Each table name links to a page describing the column names for that table.
+Table and column names are also listed in the Defender for Cloud as part of the schema representation on the advanced hunting screen.
+
+|===
+| Table name | Description
+
+| *xref:advanced-hunting-alertevidence-table.adoc[AlertEvidence]*
+| Files, IP addresses, URLs, users, or devices associated with alerts
+
+| *xref:advanced-hunting-alertinfo-table.adoc[AlertInfo]*
+| Alerts from Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity, including severity information and threat categorization
+
+| *xref:advanced-hunting-cloudappevents-table.adoc[CloudAppEvents]*
+| Events involving accounts and objects in Office 365 and other cloud apps and services
+
+| *xref:advanced-hunting-deviceevents-table.adoc[DeviceEvents]*
+| Multiple event types, including events triggered by security controls such as Microsoft Defender Antivirus and exploit protection
+
+| *xref:advanced-hunting-DeviceFileCertificateInfo-table.adoc[DeviceFileCertificateInfo]*
+| Certificate information of signed files obtained from certificate verification events on endpoints
+
+| *xref:advanced-hunting-devicefileevents-table.adoc[DeviceFileEvents]*
+| File creation, modification, and other file system events
+
+| *xref:advanced-hunting-deviceimageloadevents-table.adoc[DeviceImageLoadEvents]*
+| DLL loading events
+
+| *xref:advanced-hunting-deviceinfo-table.adoc[DeviceInfo]*
+| Machine information, including OS information
+
+| *xref:advanced-hunting-devicelogonevents-table.adoc[DeviceLogonEvents]*
+| Sign-ins and other authentication events on devices
+
+| *xref:advanced-hunting-devicenetworkevents-table.adoc[DeviceNetworkEvents]*
+| Network connection and related events
+
+| *xref:advanced-hunting-devicenetworkinfo-table.adoc[DeviceNetworkInfo]*
+| Network properties of devices, including physical adapters, IP and MAC addresses, as well as connected networks and domains
+
+| *xref:advanced-hunting-deviceprocessevents-table.adoc[DeviceProcessEvents]*
+| Process creation and related events
+
+| *xref:advanced-hunting-deviceregistryevents-table.adoc[DeviceRegistryEvents]*
+| Creation and modification of registry entries
+
+| *xref:advanced-hunting-devicetvmsecureconfigurationassessment-table.adoc[DeviceTvmSecureConfigurationAssessment]*
+| Microsoft Defender Vulnerability Management assessment events, indicating the status of various security configurations on devices
+
+| *xref:advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.adoc[DeviceTvmSecureConfigurationAssessmentKB]*
+| Knowledge base of various security configurations used by Microsoft Defender Vulnerability Management to assess devices;
+includes mappings to various standards and benchmarks
+
+| *xref:advanced-hunting-devicetvmsoftwareinventory-table.adoc[DeviceTvmSoftwareInventory]*
+| Inventory of software installed on devices, including their version information and end-of-support status
+
+| *xref:advanced-hunting-devicetvmsoftwarevulnerabilities-table.adoc[DeviceTvmSoftwareVulnerabilities]*
+| Software vulnerabilities found on devices and the list of available security updates that address each vulnerability
+
+| *xref:advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.adoc[DeviceTvmSoftwareVulnerabilitiesKB]*
+| Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available
+
+| *xref:advanced-hunting-emailattachmentinfo-table.adoc[EmailAttachmentInfo]*
+| Information about files attached to emails
+
+| *xref:advanced-hunting-emailevents-table.adoc[EmailEvents]*
+| Microsoft 365 email events, including email delivery and blocking events
+
+| *xref:advanced-hunting-emailpostdeliveryevents-table.adoc[EmailPostDeliveryEvents]*
+| Security events that occur post-delivery, after Microsoft 365 has delivered the emails to the recipient mailbox
+
+| *xref:advanced-hunting-emailurlinfo-table.adoc[EmailUrlInfo]*
+| Information about URLs on emails
+
+| *xref:advanced-hunting-identitydirectoryevents-table.adoc[IdentityDirectoryEvents]*
+| Events involving an on-premises domain controller running Active Directory (AD).
+This table covers a range of identity-related events and system events on the domain controller.
+
+| *xref:advanced-hunting-identityinfo-table.adoc[IdentityInfo]*
+| Account information from various sources, including Azure Active Directory
+
+| *xref:advanced-hunting-identitylogonevents-table.adoc[IdentityLogonEvents]*
+| Authentication events on Active Directory and Microsoft online services
+
+| *xref:advanced-hunting-identityqueryevents-table.adoc[IdentityQueryEvents]*
+| Queries for Active Directory objects, such as users, groups, devices, and domains
+|===
+
+=== Related topics
+
+* xref:advanced-hunting-overview.adoc[Advanced hunting overview]
+* xref:advanced-hunting-query-language.adoc[Learn the query language]
+* xref:advanced-hunting-query-results.adoc[Work with query results]
+* xref:advanced-hunting-shared-queries.adoc[Use shared queries]
+* xref:advanced-hunting-query-emails-devices.adoc[Hunt across devices, emails, apps, and identities]
+* xref:advanced-hunting-best-practices.adoc[Apply query best practices]

@@ -1,0 +1,62 @@
+= Live response library methods and properties
+:audience: ITPro
+:author: mjcaparas
+:description: Learn how to use the live response library methods and properties.
+:f1.keywords: ["NOCSH"]
+:keywords: apis, graph api, supported apis, get, devices
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: ["M365-security-compliance"]
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: reference
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Live response library methods and properties
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint]
+
+[!includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+* Want to experience Microsoft Defender for Endpoint?
+https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+=== Methods
+
+|===
+| *Method* | *Return Type* | *Description*
+
+| List library files
+| Library file collection
+| List library file entities
+
+| Upload to library
+| Library file entity
+| Upload a file to live response library
+
+| Delete from library
+| No content
+| Delete library file entity
+|===
+
+=== Properties
+
+|===
+| *Property* | *Type* | *Description*
+
+| Commands
+| Live Response command collection
+| Array of Command objects.
+See link:live-response.md#live-response-commands[live response commands].
+|===

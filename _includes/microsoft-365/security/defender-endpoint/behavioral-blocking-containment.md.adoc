@@ -1,0 +1,154 @@
+= Behavioral blocking and containment
+:audience: ITPro
+:author: denisebmsft
+:description: Learn about behavioral blocking and containment capabilities at Microsoft Defender for Endpoint
+:keywords: Microsoft Defender for Endpoint, EDR in block mode, passive mode blocking
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: m365-security-compliance
+:ms.custom: ["next-gen", "edr", "admindeeplinkDEFENDER"]
+:ms.localizationpriority: medium
+:ms.pagetype: security
+:ms.reviewer: shwetaj
+:ms.service: microsoft-365-security
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Behavioral blocking and containment
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink[Sign up for a free trial.]
+____
+
+=== Overview
+
+Today's threat landscape is overrun by link:/windows/security/threat-protection/intelligence/fileless-threats[fileless malware] and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices.
+Traditional security solutions aren't sufficient to stop such attacks;
+you need artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment, included in link:/windows/security[Defender for Endpoint].
+
+Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution.
+Next-generation protection, EDR, and Defender for Endpoint components and features work together in behavioral blocking and containment capabilities.
+
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="The Behavioral blocking and containment in the Microsoft Defender ATP portal" lightbox="images/mdatp-next-gen-EDR-behavblockcontain.png":::
+
+Behavioral blocking and containment capabilities work with multiple components and features of Defender for Endpoint to stop attacks immediately and prevent attacks from progressing.
+
+* xref:microsoft-defender-antivirus-in-windows-10.adoc[Next-generation protection] (which includes Microsoft Defender Antivirus) can detect threats by analyzing behaviors, and stop threats that have started running.
+* xref:overview-endpoint-detection-response.adoc[Endpoint detection and response] (EDR) receives security signals across your network, devices, and kernel behavior.
+As threats are detected, alerts are created.
+Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
+* xref:overview-endpoint-detection-response.adoc[Defender for Endpoint] has a wide range of optics across identities, email, data, and apps, in addition to the network, endpoint, and kernel behavior signals received through EDR.
+A component of xref:../defender/microsoft-365-defender.adoc[Microsoft 365 Defender], Defender for Endpoint processes and correlates these signals, raises detection alerts, and connects related alerts in incidents.
+
+With these capabilities, more threats can be prevented or blocked, even if they start running.
+Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks.
+
+The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
+
+:::image type="content" source="images/blocked-behav-alert.png" alt-text="The Alerts page with an alert through behavioral blocking and containment" lightbox="images/blocked-behav-alert.png":::
+
+=== Components of behavioral blocking and containment
+
+* *On-client, policy-driven xref:attack-surface-reduction.adoc[attack surface reduction rules]* Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules.
+When such behaviors attempt to execute, they can be seen in https://go.microsoft.com/fwlink/p/?linkid=2077139[Microsoft 365 Defender] as informational alerts.
+Attack surface reduction rules aren't enabled by default;
+you configure your policies in the link:/microsoft-365/security/defender/microsoft-365-defender[Microsoft 365 Defender portal].
+* *xref:client-behavioral-blocking.adoc[Client behavioral blocking]* Threats on endpoints are detected through machine learning, and then are blocked and remediated automatically.
+(Client behavioral blocking is enabled by default.)
+* *xref:feedback-loop-blocking.adoc[Feedback-loop blocking]* (also referred to as rapid protection) Threat detections are observed through behavioral intelligence.
+Threats are stopped and prevented from running on other endpoints.
+(Feedback-loop blocking is enabled by default.)
+* *xref:edr-in-block-mode.adoc[Endpoint detection and response (EDR) in block mode]* Malicious artifacts or behaviors that are observed through post-breach protection are blocked and contained.
+EDR in block mode works even if Microsoft Defender Antivirus isn't the primary antivirus solution.
+(EDR in block mode isn't enabled by default;
+you turn it on at Microsoft 365 Defender.)
+
+Expect more to come in the area of behavioral blocking and containment, as Microsoft continues to improve threat protection features and capabilities.
+To see what's planned and rolling out now, visit the https://www.microsoft.com/microsoft-365/roadmap[Microsoft 365 roadmap].
+
+=== Examples of behavioral blocking and containment in action
+
+Behavioral blocking and containment capabilities have blocked attacker techniques such as the following:
+
+* Credential dumping from LSASS
+* Cross-process injection
+* Process hollowing
+* User Account Control bypass
+* Tampering with antivirus (such as disabling it or adding the malware as exclusion)
+* Contacting Command and Control (C&C) to download payloads
+* Coin mining
+* Boot record modification
+* Pass-the-hash attacks
+* Installation of root certificate
+* Exploitation attempt for various vulnerabilities
+
+Below are two real-life examples of behavioral blocking and containment in action.
+
+==== Example 1: Credential theft attack against 100 organizations
+
+As described in https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks[In hot pursuit of elusive threats: AI-driven behavior-based blocking stops attacks in their tracks], a credential theft attack against 100 organizations around the world was stopped by behavioral blocking and containment capabilities.
+Spear-phishing email messages that contained a lure document were sent to the targeted organizations.
+If a recipient opened the attachment, a related remote document was able to execute code on the user's device and load Lokibot malware, which stole credentials, exfiltrated stolen data, and waited for further instructions from a command-and-control server.
+
+Behavior-based device-learning models in Defender for Endpoint caught and stopped the attacker's techniques at two points in the attack chain:
+
+* The first protection layer detected the exploit behavior.
+Device-learning classifiers in the cloud correctly identified the threat as and immediately instructed the client device to block the attack.
+* The second protection layer, which helped stop cases where the attack got past the first layer, detected process hollowing, stopped that process, and removed the corresponding files (such as Lokibot).
+
+While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the link:/microsoft-365/security/defender/microsoft-365-defender[Microsoft 365 Defender portal].
+
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft 365 Defender portal" lightbox="images/behavblockcontain-initialaccessalert.png":::
+
+This example shows how behavior-based device-learning models in the cloud add new layers of protection against attacks, even after they have started running.
+
+==== Example 2: NTLM relay - Juicy Potato malware variant
+
+As described in the recent blog post, https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection[Behavioral blocking and containment: Transforming optics into protection], in January 2020, Defender for Endpoint detected a privilege escalation activity on a device in an organization.
+An alert called "Possible privilege escalation using NTLM relay" was triggered.
+
+:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="An NTLM alert for Juicy Potato malware" lightbox="images/NTLMalertjuicypotato.png":::
+
+The threat turned out to be malware;
+it was a new, not-seen-before variant of a notorious hacking tool called Juicy Potato, which is used by attackers to get privilege escalation on a device.
+
+Minutes after the alert was triggered, the file was analyzed, and confirmed to be malicious.
+Its process was stopped and blocked, as shown in the following image:
+
+:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artifact blocked"  lightbox="images/Artifactblockedjuicypotato.png":::
+
+A few minutes after the artifact was blocked, multiple instances of the same file were blocked on the same device, preventing more attackers or other malware from deploying on the device.
+
+This example shows that with behavioral blocking and containment capabilities, threats are detected, contained, and blocked automatically.
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____
+
+=== Next steps
+
+* xref:overview-endpoint-detection-response.adoc[Learn more about Defender for Endpoint]
+* xref:attack-surface-reduction.adoc[Configure your attack surface reduction rules]
+* xref:edr-in-block-mode.adoc[Enable EDR in block mode]
+* https://www.microsoft.com/wdsi/threats[See recent global threat activity]
+* xref:../defender/microsoft-365-defender.adoc[Get an overview of Microsoft 365 Defender]

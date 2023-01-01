@@ -1,0 +1,37 @@
+= Microsoft 365 Defender data security and privacy
+:audience: ITPro
+:author: mjcaparas
+:description: Describes the privacy and data security of the service.
+:f1.keywords: ["NOCSH"]
+:keywords: privacy, data, security, trust center, information collection
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Microsoft 365 Defender data security and privacy
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+Microsoft 365 Defender operates in Microsoft Azure data centers in the European Union, The United Kingdom, and the United States.
+Customer data collected by the service is stored at rest in (a) the geographic location of the tenant as identified during provisioning or, (b) if Microsoft 365 Defender uses another Microsoft online service to process such data, the geolocation as defined by the data storage rules of that other online service.
+
+Customer data in pseudonymized form might also be stored in central storage and processing systems in the United States.
+
+For more information on the data storage and privacy information of the specific products, see:
+
+* link:/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy[Microsoft Defender for Endpoint data storage and privacy]
+* link:/cloud-app-security/cas-compliance-trust[Microsoft Defender for Cloud Apps data security and privacy]
+* link:/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection[Microsoft 365 privacy, security, and transparency]

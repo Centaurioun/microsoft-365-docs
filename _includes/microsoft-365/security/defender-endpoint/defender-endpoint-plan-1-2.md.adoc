@@ -1,0 +1,113 @@
+= Compare Microsoft endpoint security plans
+:audience: ITPro
+:author: denisebmsft
+:description: Compare Microsoft endpoint security plans, such as Defender for Endpoint Plan 1 to Defender for Endpoint Plan 2. Learn about the differences between the plans and select the plan that suits your organization's needs.
+:f1.keywords: NOCSH
+:keywords: Defender for Endpoint, advanced threat protection, endpoint protection, endpoint security, device security, cybersecurity
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: ["M365-security-compliance", "m365initiative-defender-endpoint"]
+:ms.date: 07/25/2022
+:ms.localizationpriority: medium
+:ms.reviewer: shlomi, efratka
+:ms.service: microsoft-365-security
+:ms.subservice: mde
+:ms.topic: overview
+:search.appverid: MET150
+
+== Compare Microsoft endpoint security plans
+
+Microsoft endpoint security plans, such as Microsoft Defender for Endpoint and Microsoft 365 Defender, were designed to help enterprise organizations prevent, detect, investigate, and respond to advanced threats.
+Microsoft Defender for Business and Microsoft 365 Business Premium provide similar capabilities, optimized for small and medium-sized businesses.
+These plans provide advanced threat protection with antivirus and antimalware protection, ransomware mitigation, and more, together with centralized management and reporting.
+
+This article helps clarify what's included in the following plans:
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* link:../defender-vulnerability-management/index.yml[Microsoft Defender Vulnerability Management add-on]
+* xref:../defender-business/mdb-overview.adoc[Microsoft Defender for Business] and xref:../../business-premium/index.adoc[Microsoft 365 Business Premium]
+
+____
+[!IMPORTANT] This article provides a summary of threat protection capabilities in Microsoft endpoint security plans;
+however, it's not intended to be a service description or licensing contract document.
+For more detailed information, see link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft 365 licensing guidance for security & compliance].
+____
+
+=== Compare Microsoft endpoint security plans
+
+The following table summarizes what's included in Microsoft endpoint security plans.
+
+|===
+| Plan | What's included
+
+| xref:defender-endpoint-plan-1.adoc[Defender for Endpoint Plan 1] ^[<<fn1,1>>]^
+| <ul><li>link:defender-endpoint-plan-1.md#next-generation-protection[Next-generation protection] (includes antimalware and antivirus)</li><li>link:defender-endpoint-plan-1.md#attack-surface-reduction[Attack surface reduction]</li><li> link:defender-endpoint-plan-1.md#manual-response-actions[Manual response actions]</li><li>link:defender-endpoint-plan-1.md#centralized-management[Centralized management]</li><li>link:defender-endpoint-plan-1.md#reporting[Security reports]</li><li>link:defender-endpoint-plan-1.md#apis[APIs]</li><li>link:defender-endpoint-plan-1.md#cross-platform-support[Support for Windows 10, iOS, Android OS, and macOS devices]</li></ul>
+
+| xref:microsoft-defender-endpoint.adoc[Defender for Endpoint Plan 2] ^[<<fn2,2>>]^
+| All of the Defender for Endpoint Plan 1 capabilities, plus:<ul><li>xref:device-discovery.adoc[Device discovery]</li><li>xref:machines-view-overview.adoc[Device inventory]</li><li>xref:../defender-vulnerability-management/defender-vulnerability-management-capabilities.adoc[Core Defender Vulnerability Management capabilities]</li><li>xref:threat-analytics.adoc[Threat Analytics]</li><li>xref:automated-investigations.adoc[Automated investigation and response]</li><li>xref:advanced-hunting-overview.adoc[Advanced hunting]</li><li>xref:overview-endpoint-detection-response.adoc[Endpoint detection and response]</li><li>xref:microsoft-threat-experts.adoc[Microsoft Threat Experts]</li><li>Support for xref:configure-endpoints.adoc[Windows] (client and server) and xref:configure-endpoints-non-windows.adoc[non-Windows platforms] (macOS, iOS, Android, and Linux)</li></ul>
+
+| xref:../defender-vulnerability-management/defender-vulnerability-management-capabilities.adoc[Defender Vulnerability Management add-on]
+| More Defender Vulnerability Management capabilities for Defender for Endpoint Plan 2:<ul><li>xref:../defender-vulnerability-management/tvm-security-baselines.adoc[Security baselines assessment]</li><li>xref:../defender-vulnerability-management/tvm-block-vuln-apps.adoc[Block vulnerable applications]</li><li>xref:../defender-vulnerability-management/tvm-browser-extensions.adoc[Browser extensions]</li><li>xref:../defender-vulnerability-management/tvm-certificate-inventory.adoc[Digital certificate assessment]</li><li>xref:../defender-vulnerability-management/tvm-network-share-assessment.adoc[Network share analysis]</li><li>Support for xref:configure-endpoints.adoc[Windows] (client and server) and xref:configure-endpoints-non-windows.adoc[non-Windows platforms] (macOS, iOS, Android, and Linux)</li></ul>
+
+| xref:../defender-business/mdb-overview.adoc[Defender for Business] ^[<<fn3,3>>]^
+| xref:../defender-business/compare-mdb-m365-plans.adoc[Services optimized for small and medium-sized businesses] include: <ul><li>Email protection</li><li>Antispam protection</li><li>Antimalware protection</li><li>Next-generation protection</li><li>Attack surface reduction</li><li>Endpoint detection and response</li><li>Automated investigation and response </li><li>Vulnerability management</li><li>Centralized reporting</li><li>APIs (for integration with custom apps or reporting solutions)</li><li>xref:../defender-business/mdb-lighthouse-integration.adoc[Integration with Microsoft 365 Lighthouse]</li></ul>
+|===
+
+(+++<a id="fn1">+++1+++</a>+++) Microsoft Defender for Endpoint Plan 1 is available as a standalone subscription for commercial and education customers.
+It's also included as part of Microsoft 365 E3/A3.
+
+(+++<a id="fn2">+++2+++</a>+++) Microsoft Defender for Endpoint Plan 2, which was previously called Microsoft Defender for Endpoint, is available as a standalone subscription.
+It's also included as part of the following plans:
+
+* Windows 11 Enterprise E5/A5
+* Windows 10 Enterprise E5/A5
+* Microsoft 365 E5/A5/G5 (which includes Windows 10 or Windows 11 Enterprise E5)
+* Microsoft 365 E5/A5/G5/F5 Security
+* Microsoft 365 F5 Security & Compliance
+
+(+++<a id="fn3">+++3+++</a>+++) Microsoft Defender for Business is available as a standalone subscription for small and medium-sized businesses.
+It's also included as part of link:/microsoft-365/business-premium[Microsoft 365 Business Premium].
+These plans feature advanced security capabilities with a simplified setup and configuration experience.
+See link:/microsoft-365/security/defender-business/compare-mdb-m365-plans#compare-microsoft-defender-for-business-to-microsoft-365-business-premium[Compare Microsoft Defender for Business to Microsoft 365 Business Premium].
+
+=== Options for onboarding servers
+
+Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalone), and Microsoft 365 Business Premium don't include server licenses.
+To onboard servers, choose from the following options:
+
+* *Microsoft Defender for Servers Plan 1 or Plan 2* as part of the link:/azure/defender-for-cloud/defender-for-cloud-introduction[Defender for Cloud] offering.
+To learn more.
+see link:/azure/defender-for-cloud/defender-for-servers-introduction[Overview of Microsoft Defender for Servers].
+* *Microsoft Defender for Business servers (preview)* for small and medium-sized businesses.
+See xref:../defender-business/get-defender-business-servers.adoc[How to get Microsoft Defender for Business servers (preview)].
+
+=== Mixed licensing scenarios
+
+Suppose that your organization is using a mix of Microsoft endpoint security subscriptions, such as Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2.
+*Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant*.
+In this example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
+
+However, *you can contact support and request an override for your tenant experience*.
+That is, you could request an override to keep the Defender for Endpoint Plan 1 experience for all users.
+
+* For details about licenses and product terms, see https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA[Licensing and product terms for Microsoft 365 subscriptions].
+* For information about how to contact support, see xref:contact-support.adoc[Contact Microsoft Defender for Endpoint support].
+
+____
+[!TIP] If your organization is a small or medium-sized business, see the following articles:
+
+* xref:../defender-business/mdb-overview.adoc[What is Microsoft Defender for Business?]
+* xref:../defender-business/compare-mdb-m365-plans.adoc[Compare security features in Microsoft 365 plans for small and medium-sized businesses].
+____
+
+=== Start a trial
+
+* To try Defender for Endpoint, go to the https://go.microsoft.com/fwlink/p/?LinkID=2168109[Defender for Endpoint trial sign-up page].
+* To try the Microsoft Defender Vulnerability Management add-on for Defender for Endpoint Plan 2, visit https://aka.ms/AddonPreviewTrial.
+
+=== See also
+
+* https://www.microsoft.com/security/business/get-started/start-free-trial[Get started with Microsoft Security (trial offers)]
+* xref:microsoft-defender-endpoint.adoc[Microsoft Defender for Endpoint]
+* xref:../defender-business/mdb-overview.adoc[Microsoft Defender for Business] (endpoint protection for small and medium-sized businesses)

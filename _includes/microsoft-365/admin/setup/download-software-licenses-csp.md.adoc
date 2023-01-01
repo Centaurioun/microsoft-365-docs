@@ -1,0 +1,34 @@
+= Download perpetual software and product license keys bought through the Cloud Solution Provider (CSP) program
+:audience: Admin
+:author: cmcatee-MSFT
+:description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: cmcatee
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["commerce_licensing", "AdminSurgePortfolio", "admindeeplinkMAC"]
+:ms.date: 01/27/2021
+:ms.localizationpriority: medium
+:ms.reviewer: mijeffer, jmueller
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: MET150
+
+== Download perpetual software and product license keys in Microsoft 365
+
+This article explains how to download software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
+
+=== Before you begin
+
+You must be a Global admin to do the steps in this article.
+For more information, see xref:../add-users/about-admin-roles.adoc[About admin roles].
+
+=== Download software and product license keys
+
+. In the Microsoft 365 admin center, go to the *Billing* > https://go.microsoft.com/fwlink/p/?linkid=842054[Your products] page.
+. On the *Products* tab, in the *Software* section, select the software that you want to download.
+. On the subscription details page, in the *Downloads & keys* section, choose the *Product version*, *Language*, and *CPU & file type*, then select *Download*.
+. To download the key, select *Copy key to clipboard*.
+. In the right pane, select *Copy*, then close the pane.
+. Paste the key in a file in a secure location and then enter it as instructed during the software installation.
+The key is needed to activate the downloaded software.

@@ -1,0 +1,677 @@
+= What DLP policy templates include
+:audience: Admin
+:author: chrfox
+:description: Learn what the data loss prevention (DLP) policy templates in the Microsoft Purview compliance portal include.
+:f1.keywords: ["NOCSH"]
+:f1_keywords: ["ms.o365.cc.DLPNewPolicyFromTemplate"]
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.custom: ["seo-marvel-apr2020"]
+:ms.date: 6/29/2018
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: reference
+:recommendations: false
+:search.appverid: ["MOE150", "MET150"]
+
+== What the DLP policy templates include
+
+Microsoft Purview Data Loss Prevention (DLP) in the Microsoft Purview compliance portal includes ready-to-use policy templates that address common compliance requirements, such as helping you to protect sensitive information subject to the U.S.
+Health Insurance Act (HIPAA), U.S.
+Gramm-Leach-Bliley Act (GLBA), or U.S.
+Patriot Act.
+This article lists all of the policy templates, what types of sensitive information they look for, and what the default conditions and actions are.
+This article doesn't include every detail of how each policy template is configured;
+instead, the article presents with you enough information to help you decide which template is the best starting point for your scenario.
+Remember, you can customize these policy templates to meet your specific requirements.
+
+=== Australia Financial Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Australia Financial: Scan content shared outside - low count  +
+| Content contains sensitive information:  + SWIFT Code - Min count 1, Max count 9  + Australia Tax File Number - Min count 1, Max count 9  + Australia Bank Account Number - Min count 1, Max count 9  + Credit Card Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Australia Financial: Scan content shared outside - high count  +
+| Content contains sensitive information:  + SWIFT Code - Min count 10, Max count 500  + Australia Tax File Number - Min count 10, Max count 500  + Australia Bank Account Number - Min count 10, Max count 500  + Credit Card Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Australia Health Records Act (HRIP Act)
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Australia HRIP: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Australia Tax File Number - Min count 1, Max count 9  + Australia Medical Account Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Australia HRIP: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Australia Tax File Number - Min count 10, Max count 500  + Australia Medical Account Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Australia Personally Identifiable Information (PII) Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Australia PII: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Australia Tax File Number - Min count 1, Max count 9  + Australia Driver's License Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Australia PII: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Australia Tax File Number - Min count 10, Max count 500  + Australia Driver's License Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Australia Privacy Act
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Australia Privacy: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Australia Driver's License Number - Min count 1, Max count 9  + Australia Passport Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Australia Privacy: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Australia Driver's License Number - Min count 10, Max count 500  + Australia Passport Number - Min count 10, Max count 500 + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Canada Financial Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Canada Financial Data: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + Canada Bank Account Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Canada Financial Data: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + Canada Bank Account Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Canada Health Information Act (HIA)
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Canada HIA: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Canada Passport Number - Min count 1, Max count 9  + Canada Social Insurance Number - Min count 1, Max count 9  + Canada Health Service Number - Min count 1, Max count 9  + Canada Personal Health Identification Number (PHIN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Canada HIA: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Canada Passport Number - Min count 10, Max count 500  + Canada Social Insurance Number - Min count 10, Max count 500  + Canada Health Service Number - Min count 10, Max count 500  + Canada Personal Health Identification Number (PHIN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Canada Personal Health Act (PHIPA) - Ontario
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Canada PHIPA: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Canada Passport Number - Min count 1, Max count 9  + Canada Social Insurance Number - Min count 1, Max count 9  + Canada Health Service Number - Min count 1, Max count 9  + Canada Personal Health Identification Number (PHIN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Canada PHIPA: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Canada Passport Number - Min count 10, Max count 500  + Canada Social Insurance Number - Min count 10, Max count 500  + Canada Health Service Number - Min count 10, Max count 500  + Canada Personal Health Identification Number (PHIN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Canada Personal Health Information Act (PHIA) - Manitoba
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Canada PHIA: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Canada Social Insurance Number - Min count 1, Max count 9  + Canada Health Service Number - Min count 1, Max count 9  + Canada Personal Health Identification Number (PHIN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Canada PHIA: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Canada Social Insurance Number - Min count 10, Max count 500  + Canada Health Service Number - Min count 10, Max count 500 + Canada Personal Health Identification Number (PHIN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Canada Personal Information Protection Act (PIPA)
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Canada PIPA: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Canada Passport Number - Min count 1, Max count 9  + Canada Social Insurance Number - Min count 1, Max count 9  + Canada Health Service Number - Min count 1, Max count 9  + Canada Personal Health Identification Number (PHIN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Canada PIPA: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Canada Passport Number - Min count 10, Max count 500  + Canada Social Insurance Number - Min count 10, Max count 500  + Canada Health Service Number - Min count 10, Max count 500  + Canada Personal Health Identification Number (PHIN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Canada Personal Information Protection Act (PIPEDA)
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Canada PIPEDA: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Canada Driver's License Number - Min count 1, Max count 9  + Canada Bank Account Number - Min count 1, Max count 9  + Canada Passport Number - Min count 1, Max count 9  + Canada Social Insurance Number - Min count 1, Max count 9  + Canada Health Service Number - Min count 1, Max count 9  + Canada Personal Health Identification Number (PHIN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Canada PIPEDA: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Canada Driver's License Number - Min count 10, Max count 500 + Canada Bank Account Number - Min count 10, Max count 500 + Canada Passport Number - Min count 10, Max count 500  + Canada Social Insurance Number - Min count 10, Max count 500  + Canada Health Service Number - Min count 10, Max count 500  + Canada Personal Health Identification Number (PHIN) - Min count 10, Max count 500 + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Canada Personally Identifiable Information (PII) Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Canada PII: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Canada Driver's License Number - Min count 1, Max count 9  + Canada Bank Account Number - Min count 1, Max count 9  + Canada Passport Number - Min count 1, Max count 9  + Canada Social Insurance Number - Min count 1, Max count 9  + Canada Health Service Number - Min count 1, Max count 9  + Canada Personal Health Identification Number (PHIN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Canada PII: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Canada Driver's License Number - Min count 10, Max count 500  + Canada Bank Account Number - Min count 10, Max count 500  + Canada Passport Number - Min count 10, Max count 500  + Canada Social Insurance Number - Min count 10, Max count 500  + Canada Health Service Number - Min count 10, Max count 500  + Canada Personal Health Identification Number (PHIN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== France Data Protection Act
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| France DPA: Scan content shared outside - low count  +
+| Content contains sensitive information:  + France National ID Card (CNI) - Min count 1, Max count 9  + France Social Security Number (INSEE) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| France DPA: Scan content shared outside - high count  +
+| Content contains sensitive information:  + France National ID Card (CNI) - Min count 10, Max count 500  + France Social Security Number (INSEE) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== France Financial Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| France Financial: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + EU Debit Card Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| France Financial: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + EU Debit Card Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== France Personally Identifiable Information (PII) Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| France PII: Scan content shared outside - low count  +
+| Content contains sensitive information:  + France Social Security Number (INSEE) - Min count 1, Max count 9  + France Driver's License Number - Min count 1, Max count 9  + France Passport Number - Min count 1, Max count 9  + France National ID Card (CNI) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| France PII: Scan content shared outside - high count  +
+| Content contains sensitive information:  + France Social Security Number (INSEE) - Min count 10, Max count 500  + France Driver's License Number - Min count 10, Max count 500  + France Passport Number - Min count 10, Max count 500  + France National ID Card (CNI) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== General Data Protection Regulation (GDPR)
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Low volume EU Sensitive content found  +
+| Content contains sensitive information:  + EU Debit Card Number - Min count 1, Max count 9  + EU Driver's License Number - Min count 1, Max count 9  + EU National Identification Number - Min count 1, Max count 9  + EU Passport Number - Min count 1, Max count 9  + EU Social Security Number (SSN) or Equivalent ID - Min count 1, Max count 9  + EU Tax Identification Number (TIN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send incident reports to Administrator  +
+
+| High volume of EU Sensitive content found  +
+| Content contains sensitive information:  + EU Debit Card Number - Min count 10, Max count 500  + EU Driver's License Number - Min count 10, Max count 500  + EU National Identification Number - Min count 10, Max count 500  + EU Passport Number - Min count 10, Max count 500  + EU Social Security Number (SSN) or Equivalent ID - Min count 10, Max count 500  + EU Tax Identification Number (TIN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Restrict access to the content for external users  + Notify users with email and policy tips  + Allow override  + Require business justification  + Send incident reports to Administrator  +
+|===
+
+=== Germany Financial Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Germany Financial Data: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + EU Debit Card Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Germany Financial Data: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + EU Debit Card Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Germany Personally Identifiable Information (PII) Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Germany PII: Scan content shared outside - low count  +
+| Content contains sensitive information:  + German Driver's License Number - Min count 1, Max count 9  + German Passport Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Germany PII: Scan content shared outside - high count  +
+| Content contains sensitive information:  + German Driver's License Number - Min count 10, Max count 500  + German Passport Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Israel Financial Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Israel Financial Data: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Israel Bank Account Number - Min count 1, Max count 9  + SWIFT Code - Min count 1, Max count 9  + Credit Card Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Israel Financial Data: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Israel Bank Account Number - Min count 10, Max count 500  + SWIFT Code - Min count 10, Max count 500  + Credit Card Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Israel Personally Identifiable Information (PII) Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Israel PII: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Israel National ID - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Israel PII: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Israel National ID - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Israel Protection of Privacy
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Israel Privacy: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Israel National ID - Min count 1, Max count 9  + Israel Bank Account Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Israel Privacy: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Israel National ID - Min count 10, Max count 500  + Israel Bank Account Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Japan Financial Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Japan Financial: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Japan Bank Account Number - Min count 1, Max count 9  + Credit Card Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Japan Financial: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Japan Bank Account Number - Min count 10, Max count 500  + Credit Card Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Japan Personally Identifiable Information (PII) Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Japan PII: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Japan Resident Registration Number - Min count 1, Max count 9  + Japan Social Insurance Number (SIN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Japan PII: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Japan Resident Registration Number - Min count 10, Max count 500  + Japan Social Insurance Number (SIN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Japan Protection of Personal Information
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Japan PPI: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Japan Resident Registration Number - Min count 1, Max count 9  + Japan Social Insurance Number (SIN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Japan PPI: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Japan Resident Registration Number - Min count 10, Max count 500  + Japan Social Insurance Number (SIN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== PCI Data Security Standard (PCI DSS)
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| PCI DSS: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| PCI DSS: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Saudi Arabia - Anti-Cyber Crime Law
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Saudi Arabia ACC: Scan content shared outside - low count  +
+| Content contains sensitive information:  + SWIFT Code - Min count 1, Max count 9  + International Banking Account Number (IBAN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Saudi Arabia ACC: Scan content shared outside - high count  +
+| Content contains sensitive information:  + SWIFT Code - Min count 10, Max count 500  + International Banking Account Number (IBAN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Saudi Arabia Financial Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Saudi Arabia Financial: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + SWIFT Code - Min count 1, Max count 9  + International Banking Account Number (IBAN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Saudi Arabia Financial: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + SWIFT Code - Min count 10, Max count 500  + International Banking Account Number (IBAN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== Saudi Arabia Personally Identifiable Information (PII) Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Saudi Arabia PII: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Saudi Arabia National ID - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| Saudi Arabia PII: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Saudi Arabia National ID - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.K. Access to Medical Reports Act
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.K.
+AMRA: Scan content shared outside - low count  +
+| Content contains sensitive information:  + U.K.
+National Health Service Number - Min count 1, Max count 9  + U.K.
+National Insurance Number (NINO) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.K.
+AMRA: Scan content shared outside - high count  +
+| Content contains sensitive information:  + U.K.
+National Health Service Number - Min count 10, Max count 500  + U.K.
+National Insurance Number (NINO) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.K. Data Protection Act
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.K.
+DPA: Scan content shared outside - low count  +
+| Content contains sensitive information:  + U.K.
+National Insurance Number (NINO) - Min count 1, Max count 9  + U.S.
+/ U.K.
+Passport Number - Min count 1, Max count 9  + SWIFT Code - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.K.
+DPA: Scan content shared outside - high count  +
+| Content contains sensitive information:  + U.K.
+National Insurance Number (NINO) - Min count 10, Max count 500  + U.S.
+/ U.K.
+Passport Number - Min count 10, Max count 500  + SWIFT Code - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.K. Financial Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.K.
+Financial: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + EU Debit Card Number - Min count 1, Max count 9  + SWIFT Code -Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.K.
+Financial: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + EU Debit Card Number - Min count 10, Max count 500  + SWIFT Code - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.K. Personal Information Online Code of Practice (PIOCP)
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.K.
+PIOCP: Scan content shared outside - low count  +
+| Content contains sensitive information:  + U.K.
+National Insurance Number (NINO) - Min count 1, Max count 9  + U.K.
+National Health Service Number - Min count 1, Max count 9  + SWIFT Code - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.K.
+PIOCP: Scan content shared outside - high count  +
+| Content contains sensitive information:  + U.K.
+National Insurance Number (NINO) - Min count 10, Max count 500  + U.K.
+National Health Service Number - Min count 10, Max count 500  + SWIFT Code - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.K. Personally Identifiable Information (PII) Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.K.
+PII: Scan content shared outside - low count  +
+| Content contains sensitive information:  + U.K.
+National Insurance Number (NINO) - Min count 1, Max count 9  + U.S.
+/ U.K.
+Passport Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.K.
+PII: Scan content shared outside - high count  +
+| Content contains sensitive information:  + U.K.
+National Insurance Number (NINO) - Min count 10, Max count 500  + U.S.
+/ U.K.
+Passport Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.K. Privacy and Electronic Communications Regulations
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.K.
+PECR: Scan content shared outside - low count  +
+| Content contains sensitive information:  + SWIFT Code - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.K.
+PECR: Scan content shared outside - high count  +
+| Content contains sensitive information:  + SWIFT Code - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.S. Federal Trade Commission (FTC) Consumer Rules
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.S.
+FTC Rules: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + U.S.
+Bank Account Number - Min count 1, Max count 9  + ABA Routing Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.S.
+FTC Rules: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + U.S.
+Bank Account Number - Min count 10, Max count 500  + ABA Routing Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.S. Financial Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.S.
+Financial: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + U.S.
+Bank Account Number - Min count 1, Max count 9  + ABA Routing Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.S.
+Financial: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + U.S.
+Bank Account Number - Min count 10, Max count 500  + ABA Routing Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.S. Gramm-Leach-Bliley Act (GLBA)
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.S.
+GLBA: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + U.S.
+Bank Account Number - Min count 1, Max count 9  + U.S.
+Individual Taxpayer Identification Number (ITIN) - Min count 1, Max count 9  + U.S.
+Social Security Number (SSN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.S.
+GLBA: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + U.S.
+Bank Account Number - Min count 10, Max count 500  + U.S.
+Individual Taxpayer Identification Number (ITIN) - Min count 10, Max count 500  + U.S.
+Social Security Number (SSN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.S. Health Insurance Act (HIPAA)
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| Content matches U.S.
+HIPAA  +
+| Contains any of the following sensitive information:  + U.S.
+Social Security Number (SSN) - Min count 1, Max count any  + Drug Enforcement Agency (DEA) Number - Min count 1, Max count any  + *AND* + Content contains any of these terms:  + International Classification of Diseases (ICD-9-CM) - Min count 1, Max count any  + International Classification of Diseases (ICD-10-CM) - Min count 1, Max count any  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+|===
+
+=== U.S. Patriot Act
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.S.
+Patriot Act: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + U.S.
+Bank Account Number - Min count 1, Max count 9  + U.S.
+Individual Taxpayer Identification Number (ITIN) - Min count 1, Max count 9  + U.S.
+Social Security Number (SSN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.S.
+Patriot Act: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + U.S.
+Bank Account Number - Min count 10, Max count 500  + U.S.
+Individual Taxpayer Identification Number (ITIN) - Min count 10, Max count 500  + U.S.
+Social Security Number (SSN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.S. Personally Identifiable Information (PII) Data
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.S.
+PII: Scan content shared outside - low count  +
+| Content contains sensitive information:  + U.S.
+Individual Taxpayer Identification Number (ITIN) - Min count 1, Max count 9  + U.S.
+Social Security Number (SSN) - Min count 1, Max count 9  + U.S.
+/ U.K.
+Passport Number - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.S.
+PII: Scan content shared outside - high count  +
+| Content contains sensitive information:  + U.S.
+Individual Taxpayer Identification Number (ITIN) - Min count 10, Max count 500  + U.S.
+Social Security Number (SSN) - Min count 10, Max count 500  + U.S.
+/ U.K.
+Passport Number - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.S. State Breach Notification Laws
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.S.
+State Breach: Scan content shared outside - low count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 1, Max count 9  + U.S.
+Bank Account Number - Min count 1, Max count 9  + U.S.
+Driver's License Number - Min count 1, Max count 9  + U.S.
+Social Security Number (SSN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.S.
+State Breach: Scan content shared outside - high count  +
+| Content contains sensitive information:  + Credit Card Number - Min count 10, Max count 500  + U.S.
+Bank Account Number - Min count 10, Max count 500  + U.S.
+Driver's License Number - Min count 10, Max count 500  + U.S.
+Social Security Number (SSN) - Min count 10, Max count 500 + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===
+
+=== U.S. State Social Security Number Confidentiality Laws
+
+|===
+| *Rule name* | *Conditions  + (including sensitive information types)* | *Actions*
+
+| U.S.
+SSN Laws: Scan content shared outside - low count  +
+| Content contains sensitive information:  + U.S.
+Social Security Number (SSN) - Min count 1, Max count 9  + Content is shared with:  + People outside my organization  +
+| Send a notification  +
+
+| U.S.
+SSN Laws: Scan content shared outside - high count  +
+| Content contains sensitive information:  + U.S.
+Social Security Number (SSN) - Min count 10, Max count 500  + Content is shared with:  + People outside my organization  +
+| Block access to content  + Send a notification  + Allow override  + Require business justification  + Send incident report  +
+|===

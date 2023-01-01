@@ -1,0 +1,86 @@
+= Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
+:audience: ITPro
+:author: chrfox
+:description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the service.
+:f1.keywords: NOCSH
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.custom: admindeeplinkCOMPLIANCE
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MET150"]
+
+== Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
+
+*Applies to:*
+
+* xref:./endpoint-dlp-learn-about.adoc[Endpoint data loss prevention (DLP)]
+* xref:insider-risk-management.adoc[Insider risk management]
+
+You can use mobile device management (MDM) solutions to configure devices.
+Microsoft 365 information protection supports MDMs by providing OMA-URIs to create policies to manage devices.
+
+=== Before you begin
+
+If you're using Microsoft Intune, you must have the device MDM Enrolled.
+Otherwise, settings will not be applied successfully.
+
+For more information on enabling MDM with Microsoft Intune, see link:/mem/intune/enrollment/device-enrollment[Device enrollment (Microsoft Intune)].
+
+=== Onboard devices using Microsoft Intune
+
+Follow the instructions from link:/mem/intune/protect/advanced-threat-protection-configure[Intune].
+
+____
+[!NOTE]
+
+* The *Health Status for onboarded devices* policy uses read-only properties and can't be remediated.
+____
+
+=== Offboard and monitor devices using Mobile Device Management tools
+
+For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded.
+Expired offboarding packages sent to a device will be rejected.
+When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+
+____
+[!NOTE] Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
+____
+
+. Get the offboarding package from the https://go.microsoft.com/fwlink/p/?linkid=2077149[Microsoft Purview compliance portal].
+. In the navigation pane, select *Settings* > *Device onboarding* > *Offboarding*.
+. In the *Deployment method* field, select *Mobile Device Management / Microsoft Intune*.
+. Click *Download package*, and save the .zip file.
+. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package.
+You should have a file named _DeviceCompliance_valid_until_YYYY-MM-DD.offboarding_.
+. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings.
++
+[,text]
+----
+ OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding
+ Date type: String
+ Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
+----
++
+____
+[!NOTE] If Microsoft Defender for Endpoint is already configured, you can *Turn on device onboarding* and Step 6 is no longer required.
+____
+
+____
+[!NOTE] The *Health Status for offboarded devices* policy uses read-only properties and can't be remediated.
+____
+
+____
+[!IMPORTANT] Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
+____
+
+=== Related topics
+
+* xref:device-onboarding-gp.adoc[Onboard Windows 10 devices using Group Policy]
+* xref:device-onboarding-sccm.adoc[Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager]
+* xref:device-onboarding-script.adoc[Onboard Windows 10 devices using a local script]
+* xref:device-onboarding-vdi.adoc[Onboard non-persistent virtual desktop infrastructure (VDI) devices]
+* link:/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding[Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues]

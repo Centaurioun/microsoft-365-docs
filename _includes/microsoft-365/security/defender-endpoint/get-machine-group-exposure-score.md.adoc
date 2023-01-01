@@ -1,0 +1,122 @@
+= List exposure score by device group
+:audience: ITPro
+:author: dansimp
+:description: Retrieves a list of exposure scores by device group.
+:keywords: apis, graph api, supported apis, get, exposure score, device group, device group exposure score
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== List exposure score by device group
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+[!includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+Retrieves the exposure score for each machine group.
+
+=== Permissions
+
+One of the following permissions is required to call this API.
+To learn more, including how to choose permissions, see xref:apis-intro.adoc[Use Microsoft Defender for Endpoint APIs]
+
+|===
+| Permission type | Permission | Permission display name
+
+| Application
+| Score.Read.All
+| 'Read Threat and Vulnerability Management score'
+
+| Delegated (work or school account)
+| Score.Read
+| 'Read Threat and Vulnerability Management score'
+|===
+
+=== HTTP request
+
+[,http]
+----
+GET /api/exposureScore/ByMachineGroups
+----
+
+=== Request headers
+
+|===
+| Name | Type | Description |
+
+|
+| Authorization
+| String
+| Bearer \{token}.*Required*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful, this method returns 200 OK, with a list of exposure score per device group data in the response body.
+
+=== Example
+
+==== Example request
+
+Here is an example of the request.
+
+[,http]
+----
+GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
+----
+
+==== Example response
+
+Here is an example of the response.
+
+[,json]
+----
+{
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#ExposureScore",
+    "value": [
+        {
+            "time": "2019-12-03T09:51:28.214338Z",
+            "score": 41.38041766305988,
+            "rbacGroupName": "GroupOne"
+        },
+        {
+            "time": "2019-12-03T09:51:28.2143399Z",
+            "score": 37.403726933165366,
+            "rbacGroupName": "GroupTwo"
+        }
+        ...
+    ]
+}
+----
+
+=== Related topics
+
+* link:/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt[Microsoft Defender Vulnerability Management]
+* link:/microsoft-365/security/defender-endpoint/tvm-exposure-score[Defender Vulnerability Management exposure score]

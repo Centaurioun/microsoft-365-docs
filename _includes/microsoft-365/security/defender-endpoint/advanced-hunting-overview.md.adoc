@@ -1,0 +1,133 @@
+= Overview of advanced hunting in Microsoft Defender for Endpoint
+:audience: ITPro
+:author: schmurky
+:description: Use threat hunting capabilities in Microsoft Defender for Endpoint to build queries that find threats and weaknesses in your network
+:keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, microsoft defender for endpoint, wdatp, search, query, telemetry, custom detections, schema, kusto, time zone, UTC
+:manager: dansimp
+:ms.author: maccruz
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Proactively hunt for threats with advanced hunting
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhunting-abovefoldlink[Sign up for a free trial.]
+____
+
+Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data.
+You can proactively inspect events in your network to locate threat indicators and entities.
+The flexible access to data enables unconstrained hunting for both known and potential threats.
+
+Watch this video for a quick overview of advanced hunting and a short tutorial that will get you started fast.
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqo]
+____
+
+You can use the same threat-hunting queries to build custom detection rules.
+These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
+
+____
+[!TIP] Use link:/microsoft-365/security/defender/advanced-hunting-overview[advanced hunting in Microsoft 365 Defender] to hunt for threats using data from Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity.
+link:/microsoft-365/security/defender/m365d-enable[Turn on Microsoft 365 Defender].
+____
+
+Learn more about how to move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender in link:/microsoft-365/security/defender/advanced-hunting-migrate-from-mde[Migrate advanced hunting queries from Microsoft Defender for Endpoint].
+
+=== Get started with advanced hunting
+
+Go through the following steps to ramp up your advanced hunting knowledge.
+
+We recommend going through several steps to quickly get up and running with advanced hunting.
+
+{blank} +
+
+'''
+
+|===
+| Learning goal | Description | Resource
+
+| *Learn the language*
+| Advanced hunting is based on link:/azure/kusto/query/[Kusto query language], supporting the same syntax and operators.
+Start learning the query language by running your first query.
+| xref:advanced-hunting-query-language.adoc[Query language overview]
+
+| *Learn how to use the query results*
+| Learn about charts and various ways you can view or export your results.
+Explore how you can quickly tweak queries and drill down to get richer information.
+| xref:advanced-hunting-query-results.adoc[Work with query results]
+
+| *Understand the schema*
+| Get a good, high-level understanding of the tables in the schema and their columns.
+Learn where to look for data when constructing your queries.
+| xref:advanced-hunting-schema-reference.adoc[Schema reference]
+
+| *Use predefined queries*
+| Explore collections of predefined queries covering different threat hunting scenarios.
+| xref:advanced-hunting-shared-queries.adoc[Shared queries]
+
+| *Optimize queries and handle errors*
+| Understand how to create efficient and error-free queries.
+| xref:advanced-hunting-best-practices.adoc[Query best practices] <p> xref:advanced-hunting-errors.adoc[Handle errors]
+
+| *Get the most complete coverage*
+| Use audit settings to provide better data coverage for your organization.
+| xref:advanced-hunting-extend-data.adoc[Extend advanced hunting coverage]
+
+| *Run a quick investigation*
+| Quickly run an advanced hunting query to investigate suspicious activity.
+| xref:advanced-hunting-go-hunt.adoc[Quickly hunt for entity or event information with _go hunt_]
+
+| *Contain threats and address compromises*
+| Respond to attacks by quarantining files, restricting app execution, and other actions
+| xref:advanced-hunting-take-action.adoc[Take action on advanced hunting query results]
+
+| *Create custom detection rules*
+| Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically.
+| xref:overview-custom-detections.adoc[Custom detections overview] <p> xref:custom-detection-rules.adoc[Custom detection rules]
+
+|
+|
+|
+|===
+
+=== Data freshness and update frequency
+
+Advanced hunting data can be categorized into two distinct types, each consolidated differently.
+
+* *Event or activity data*: Populates tables about alerts, security events, system events, and routine assessments.
+Advanced hunting receives this data almost immediately after the sensors that collect them successfully transmit them to Defender for Endpoint.
+* *Entity data*: Populates tables with consolidated information about users and devices.
+This data comes from both relatively static data sources and dynamic sources, such as Active Directory entries and event logs.
+To provide fresh data, tables are updated with any new information every 15 minutes, adding rows that might not be fully populated.
+Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
+
+=== Time zone
+
+Time information in advanced hunting is currently in the UTC time zone.
+
+=== Related topics
+
+* xref:advanced-hunting-query-language.adoc[Learn the query language]
+* xref:advanced-hunting-query-results.adoc[Work with query results]
+* xref:advanced-hunting-shared-queries.adoc[Use shared queries]
+* xref:advanced-hunting-schema-reference.adoc[Understand the schema]
+* xref:advanced-hunting-best-practices.adoc[Apply query best practices]
+* xref:overview-custom-detections.adoc[Custom detections overview]
+* link:/azure/storage/common/storage-account-overview[Storage account overview]
+* link:/azure/event-hubs/event-hubs-about[Azure Event Hubs -- A big data streaming platform and event ingestion service]

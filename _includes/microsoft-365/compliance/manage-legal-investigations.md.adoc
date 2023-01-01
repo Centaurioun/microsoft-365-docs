@@ -1,0 +1,61 @@
+= Manage legal investigations in Microsoft 365
+:audience: Admin
+:author: robmazz
+:description: Use eDiscovery cases in the Microsoft Purview compliance portal to manage your organization's legal investigation.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance", "ediscovery"]
+:ms.custom: ["seo-marvel-apr2020"]
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+
+== Manage legal investigations in Microsoft 365
+
+Organizations have many reasons to respond to a legal case involving certain executives or other employees in your organization.
+This might involve quickly finding and retaining for further investigation-specific information in email, documents, instant messaging conversations, and other content locations used by people in their day-to-day work tasks.
+You can perform these and many other similar activities by using the eDiscovery case tools in the security and compliance center.
+
+*Want to know how Microsoft manages its eDiscovery investigations?* Here's a https://go.microsoft.com/fwlink/?linkid=852161[technical white paper] you can download that explains how we use the same search and investigation tools to manage our internal eDiscovery workflow.
+
+=== Manage legal investigations with eDiscovery cases
+
+eDiscovery cases let you control who can create, access, and manage eDiscovery cases in your organization.
+Use cases to add members and control what types of actions they can perform, place a hold on content locations relevant to a legal case, and use the Content Search tool to search the locations on hold for content that might be responsive to your case.
+Then you can also export and download those results for further investigation by external reviewers.
+
+* xref:./get-started-core-ediscovery.adoc[Manage your eDiscovery workflow] by creating and using eDiscovery cases for every legal investigation your organization has to undertake.
+* xref:assign-ediscovery-permissions.adoc[Assign eDiscovery permissions] to control who can create and manage eDiscovery cases in your organization.
+* xref:set-up-compliance-boundaries.adoc[Set up compliance boundaries] to control the user content locations that eDiscovery managers can search.
+* xref:search-for-content.adoc[Search for content] in your organization.
+
+==== Use scripts for advanced scenarios
+
+Like the previous section that listed scripts for content search scenarios, we've also created some Security & Compliance PowerShell scripts to help you manage eDiscovery cases.
+
+* xref:create-a-report-on-holds-in-ediscovery-cases.adoc[Create a eDiscovery hold report] that contains information about all holds associated with eDiscovery cases in your organization.
+* xref:use-a-script-to-add-users-to-a-hold-in-ediscovery.adoc[Add mailboxes and OneDrive locations] for a list of users to an eDiscovery hold.
+
+=== Manage legal investigations with the eDiscovery (Premium) solution in Microsoft 365
+
+The Microsoft Purview eDiscovery (Premium) solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365.
+This new solution, called _eDiscovery (Premium)_, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations.
+It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+
+eDiscovery (Premium) requires an E5 subscription for your Microsoft 365 or Office 365 organization.
+For more information about licensing, see link:get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses[Set up eDiscovery (Premium)].
+
+Here's a quick overview of the built-in workflow in eDiscovery (Premium).
+For more information, see link:create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow[Manage the eDiscovery (Premium) workflow].
+
+* link:create-and-manage-advanced-ediscoveryv2-case.md#create-a-case[Create a case] to get started.
+* xref:managing-custodians.adoc[Manage custodians] by adding them to a case and placing a legal hold on content in their mailbox, OneDrive account, and Microsoft Teams they're members of.
+* xref:managing-custodian-communications.adoc[Manage communications] with custodians by automating the legal hold notification process.
+* xref:processing-data-for-case.adoc[Index custodian data] and fix indexing errors so you can effectively collect data for your investigations.
+* xref:collecting-data-for-ediscovery.adoc[Collect data] for a case and add link:collecting-data-for-ediscovery.md#add-search-results-to-a-review-set[add it to a review set] for further investigation.
+* xref:view-documents-in-review-set.adoc[View] documents, xref:review-set-search.adoc[query] data, and xref:tagging-documents.adoc[tag] items in a review set.
+* xref:analyzing-data-in-review-set.adoc[Analyze case data] with advanced analytics tools.
+* xref:exporting-data-ediscover20.adoc[Export case data] for review by outside counsel.
+* xref:managing-jobs-ediscovery20.adoc[Manage long-running jobs] in eDiscovery (Premium).

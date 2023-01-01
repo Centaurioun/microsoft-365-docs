@@ -1,0 +1,55 @@
+'''
+
+title: Add support for anonymous inbound email over IPv6 f1.keywords:
+
+* NOCSH author: chrisda ms.author: chrisda manager: chrisda audience: ITPro ms.topic: how-to
+
+ms.localizationpriority: medium search.appverid:
+
+* MET150 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398 ms.collection:
+* M365-security-compliance ms.custom:
+* seo-marvel-apr2020 description: Admin can learn how to configure support for anonymous inbound email from IPv6 sources in Exchange Online and Exchange Online Protection.
+ms.subservice: mdo ms.service: microsoft-365-security --
+
+== Add support for anonymous inbound email over IPv6 in Microsoft 365
+
+*Applies to*
+
+* xref:exchange-online-protection-overview.adoc[Exchange Online Protection]
+* xref:defender-for-office-365.adoc[Microsoft Defender for Office 365 plan 1 and plan 2]
+* xref:../defender/microsoft-365-defender.adoc[Microsoft 365 Defender]
+
+Microsoft 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support anonymous inbound email over IPv6.
+The source IPv6 email server must meet both of the following requirements:
+
+* The source IPv6 address must have a valid reverse DNS lookup (PTR) record that allows the destination to find the domain name from the IPv6 address.
+* The sender must pass either SPF verification (defined in https://tools.ietf.org/html/rfc7208[RFC 7208]) or http://dkim.org/[DKIM verification] (defined in https://www.rfc-editor.org/rfc/rfc6376.txt[RFC 6376]).
+
+Before your organization can receive anonymous inbound email over IPv6, an admin needs to contact Microsoft support and ask for it.
+For instructions about how to open a support request, see xref:../../admin/get-help-support.adoc[Contact support for business products - Admin Help].
+
+After anonymous inbound IPv6 message support is enabled in your organization, the message will go through the normal message filtering that's provided by the service.
+
+=== Troubleshooting
+
+* If the source email server doesn't have an IPv6 reverse DNS lookup record, the messages will be rejected with the following error:
++
+____
+450 4.7.25 Service unavailable, sending IPv6 address [2a01:111:f200:2004::240] must have reverse DNS record.
+____
+
+* If the sender doesn't pass SPF or DKIM validation, the messages will be rejected with the following error:
++
+____
+450 4.7.26 Service unavailable, message sent over IPv6 [2a01:111:f200:2004::240] must pass either SPF or DKIM validation.
+____
+
+* If you try to receive anonymous IPv6 messages before you've opted in, the message will be rejected with the following error:
++
+____
+550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.
+____
+
+=== Related topics
+
+xref:support-for-validation-of-dkim-signed-messages.adoc[Support for validation of DKIM signed messages]

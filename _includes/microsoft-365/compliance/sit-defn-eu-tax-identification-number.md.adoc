@@ -1,0 +1,50 @@
+= EU Tax identification number entity definition
+:audience: Admin
+:author: chrfox
+:description: EU Tax identification number sensitive information type entity definition.
+:f1.keywords: ["CSH"]
+:f1_keywords: ["ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation"]
+:feedback_system: None
+:hideEdit: true
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: reference
+:recommendations: false
+:search.appverid: MET150
+
+== EU Tax identification number
+
+These entities are in the EU Tax identification number sensitive information type.
+
+* xref:sit-defn-austria-tax-identification-number.adoc[Austria]
+* xref:sit-defn-belgium-national-number.adoc[Belgium]
+* xref:sit-defn-bulgaria-uniform-civil-number.adoc[Bulgaria]
+* xref:sit-defn-croatia-identity-card-number.adoc[Croatia]
+* xref:sit-defn-cyprus-tax-identification-number.adoc[Cyprus]
+* xref:sit-defn-czech-personal-identity-number.adoc[Czech]
+* xref:sit-defn-denmark-personal-identification-number.adoc[Denmark]
+* xref:sit-defn-estonia-personal-identification-code.adoc[Estonia]
+* xref:sit-defn-finland-national-id.adoc[Finland]
+* xref:sit-defn-france-tax-identification-number.adoc[France]
+* xref:sit-defn-germany-tax-identification-number.adoc[Germany]
+* xref:sit-defn-greece-tax-identification-number.adoc[Greece]
+* xref:sit-defn-hungary-tax-identification-number.adoc[Hungary]
+* xref:sit-defn-ireland-personal-public-service-number.adoc[Ireland]
+* xref:sit-defn-italy-fiscal-code.adoc[Italy]
+* xref:sit-defn-latvia-personal-code.adoc[Latvia]
+* xref:sit-defn-lithuania-personal-code.adoc[Lithuania]
+* xref:sit-defn-luxemburg-national-identification-number-non-natural-persons.adoc[Luxemburg]
+* xref:sit-defn-malta-tax-identification-number.adoc[Malta]
+* xref:sit-defn-netherlands-tax-identification-number.adoc[Netherlands]
+* xref:sit-defn-poland-tax-identification-number.adoc[Poland]
+* xref:sit-defn-portugal-tax-identification-number.adoc[Portugal]
+* xref:sit-defn-romania-personal-numeric-code.adoc[Romania]
+* xref:sit-defn-slovakia-personal-number.adoc[Slovakia]
+* xref:sit-defn-slovenia-tax-identification-number.adoc[Slovenia]
+* xref:sit-defn-spain-tax-identification-number.adoc[Spain]
+* xref:sit-defn-sweden-tax-identification-number.adoc[Sweden]
+* xref:sit-defn-uk-unique-taxpayer-reference-number.adoc[U.K.]

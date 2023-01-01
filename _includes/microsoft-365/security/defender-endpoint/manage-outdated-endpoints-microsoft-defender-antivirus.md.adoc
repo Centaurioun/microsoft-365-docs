@@ -1,0 +1,217 @@
+= Apply Microsoft Defender Antivirus protection updates to out of date endpoints
+:author: denisebmsft
+:description: Define when and how updates should be applied for endpoints that haven't updated in a while.
+:experimental:
+:keywords: updates, protection, out of date, outdated, old, catch-up
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: m365-security-compliance
+:ms.custom: nextgen
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+With Microsoft Defender Antivirus, your security team can define how long an endpoint can avoid an update or how many scans it can miss before it's required to receive the update and run a scan.
+This capability is especially useful in environments where devices aren't often connected to a corporate or external network, or for devices that aren't used on a daily basis.
+
+For example, an employee who uses a particular computer takes three days off of work, and doesn't sign on their computer during that time.
+When the employee returns to work and signs into their computer, Microsoft Defender Antivirus will immediately check and download the latest protection updates, and then run a scan.
+
+=== Set up catch-up protection updates for endpoints that haven't updated for a while
+
+If Microsoft Defender Antivirus didn't download protection updates for a specified period, you can set it up to automatically check and download the latest update the next time someone signs in on an endpoint.
+This configuration is useful if you have xref:manage-event-based-updates-microsoft-defender-antivirus.adoc[globally disabled automatic update downloads on startup].
+
+You can use one of several methods to set up catch-up protection updates:
+
+* <<use-configuration-manager-to-configure-catch-up-protection-updates,Configuration Manager>>
+* <<use-group-policy-to-enable-and-configure-the-catch-up-update-feature,Group Policy>>
+* <<use-powershell-cmdlets-to-configure-catch-up-protection-updates,PowerShell cmdlets>>
+* <<use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates,Windows Management Instruction (WMI)>>
+
+==== Use Configuration Manager to configure catch-up protection updates
+
+. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (select *Assets and Compliance* in the navigation pane on the left, then expand the tree to *Overview* > *Endpoint Protection* > *Antimalware Policies*)
+. Go to the *Security intelligence updates* section and configure the following settings:
+ ** Set *Force a security intelligence update if the client computer is offline for more than two consecutive scheduled updates* to *Yes*.
+ ** For the  *If Configuration Manager is used as a source for security intelligence updates...*, specify the hours before which the protection updates delivered by Configuration Manager should be considered out of date.
+This setting causes the next update location to be used, based on the defined link:manage-protection-updates-microsoft-defender-antivirus.md#fallback-order[fallback source order].
+. Select *OK*.
+. link:/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers[Deploy the updated policy as usual].
+
+==== Use Group Policy to enable and configure the catch-up update feature
+
+. On your Group Policy management computer, open the link:/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)[Group Policy Management Console], right-click the Group Policy Object you want to configure and then select *Edit*.
+. In the *Group Policy Management Editor* go to *Computer configuration*.
+. Select *Policies* then *Administrative templates*.
+. Expand the tree to menu:Windows components[Microsoft Defender Antivirus > Signature Updates].
+. Double-click the *Define the number of days after which a catch-up security intelligence update is required* setting and set the option to *Enabled*.
+Enter the number of days after which you want Microsoft Defender Antivirus to check for and download the latest protection update.
+. Select *OK*.
+
+==== Use PowerShell cmdlets to configure catch-up protection updates
+
+Use the following cmdlet:
+
+[,powershell]
+----
+Set-MpPreference -SignatureUpdateCatchupInterval
+----
+
+For more information about using PowerShell with Microsoft Defender Antivirus, see the following articles:
+
+* xref:use-powershell-cmdlets-microsoft-defender-antivirus.adoc[Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus]
+* link:/powershell/module/defender/[Defender Antivirus cmdlets]
+
+==== Use Windows Management Instruction (WMI) to configure catch-up protection updates
+
+Use the link:/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)[*Set* method of the *MSFT_MpPreference*] class for the following properties:
+
+[,wmi]
+----
+SignatureUpdateCatchupInterval
+----
+
+See the following article for more information and allowed parameters:
+
+* link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[Windows Defender WMIv2 APIs]
+
+=== Set the number of days before protection is reported as out of date
+
+You can also specify the number of days after which Microsoft Defender Antivirus protection is considered old or out of date.
+After the specified number of days, the client will report itself as "out of date" and will show an error to the endpoint user.
+When an endpoint is considered out of date, Microsoft Defender Antivirus might attempt to download an update from other sources (based on the defined link:manage-protection-updates-microsoft-defender-antivirus.md#fallback-order[fallback source order]).
+
+You can use Group Policy to specify the number of days after which endpoint protection is considered to be out of date.
+
+==== Use Group Policy to specify the number of days before protection is considered out of date
+
+. On your Group Policy management machine, open the link:/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)[Group Policy Management Console], right-click the Group Policy Object you want to configure and then select *Edit*.
+. In the *Group Policy Management Editor* go to *Computer configuration*.
+. Select *Policies* then *Administrative templates*.
+. Expand the tree to menu:Windows components[Microsoft Defender Antivirus > Signature Updates] and configure the following settings:
+ .. Double-click *Define the number of days before spyware definitions are considered out of date* and set the option to *Enabled*.
+Enter the number of days after which you want Microsoft Defender Antivirus to consider spyware Security intelligence to be out of date.
+ .. Select *OK*.
+ .. Double-click *Define the number of days before virus definitions are considered out of date* and set the option to *Enabled*.
+Enter the number of days after which you want Microsoft Defender Antivirus to consider virus Security intelligence to be out of date.
+ .. Select *OK*.
+
+=== Set up catch-up scans for endpoints that have not been scanned for a while
+
+You can set the number of consecutive scheduled scans that can be missed before Microsoft Defender Antivirus will force a scan.
+
+The process for enabling this feature is:
+
+. Set up at least one scheduled scan (see the xref:scheduled-catch-up-scans-microsoft-defender-antivirus.adoc[Scheduled scans] article).
+. Enable the catch-up scan feature.
+. Define the number of scans that can be skipped before a catch-up scan occurs.
+
+This feature can be enabled for both full and quick scans.
+
+____
+[!TIP] We recommend using quick scans for most situations.
+To learn more, see link:schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan[Quick scan, full scan, and custom scan].
+____
+
+You can use one of several methods to set up catch-up scans:
+
+* <<use-group-policy-to-enable-and-configure-the-catch-up-scan-feature,Group Policy>>
+* <<use-powershell-cmdlets-to-configure-catch-up-scans,Use PowerShell cmdlets to configure catch-up scans>>
+* <<use-windows-management-instruction-wmi-to-configure-catch-up-scans,Windows Management Instruction (WMI)>>
+* <<use-configuration-manager-to-configure-catch-up-scans,Configuration Manager>>
+
+==== Use Group Policy to enable and configure the catch-up scan feature
+
+. Ensure you have set up at least one scheduled scan.
+. On your Group Policy management machine, open the link:/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)[Group Policy Management Console], right-click the Group Policy Object you want to configure and select *Edit*.
+. In the *Group Policy Management Editor* go to *Computer configuration*.
+. Select *Policies* then *Administrative templates*.
+. Expand the tree to menu:Windows components[Microsoft Defender Antivirus > Scan] and configure the following settings:
+ ** If you have set up scheduled quick scans, double-click the *Turn on catch-up quick scan* setting and set the option to *Enabled*.
+ ** If you have set up scheduled full scans, double-click the *Turn on catch-up full scan* setting and set the option to *Enabled*.
+Select *OK*.
+ ** Double-click the *Define the number of days after which a catch-up scan is forced* setting and set the option to *Enabled*.
+ ** Enter the number of scans that can be missed before a scan will be automatically run when the user next signs in on the endpoint.
+The type of scan that is run is determined by the *Specify the scan type to use for a scheduled scan* (see the xref:scheduled-catch-up-scans-microsoft-defender-antivirus.adoc[Schedule scans] article).
+Select *OK*.
+
+____
+[!NOTE] The Group Policy setting title refers to the number of days.
+The setting, however, is applied to the number of scans (not days) before the catch-up scan will be run.
+____
+
+==== Use PowerShell cmdlets to configure catch-up scans
+
+Use the following cmdlets:
+
+[,powershell]
+----
+Set-MpPreference -DisableCatchupFullScan
+Set-MpPreference -DisableCatchupQuickScan
+----
+
+For more information about using PowerShell with Microsoft Defender Antivirus, see the following articles:
+
+* xref:use-powershell-cmdlets-microsoft-defender-antivirus.adoc[Use PowerShell cmdlets to manage Microsoft Defender Antivirus]
+* link:/powershell/module/defender/[Defender Antivirus cmdlets]
+
+==== Use Windows Management Instruction (WMI) to configure catch-up scans
+
+Use the link:/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)[*Set* method of the *MSFT_MpPreference*] class for the following properties:
+
+[,wmi]
+----
+DisableCatchupFullScan
+DisableCatchupQuickScan
+----
+
+See the following article for more information and allowed parameters:
+
+* link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[Windows Defender WMIv2 APIs]
+
+==== Use Configuration Manager to configure catch-up scans
+
+. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (select *Assets and Compliance* in the navigation pane on the left, then expand the tree to *Overview* > *Endpoint Protection* > *Antimalware Policies*)
+. Go to the *Scheduled scans* section and *Force a scan of the selected scan type if client computer is offline...* to *Yes*.
+. Select *OK*.
+. link:/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers[Deploy the updated policy as usual].
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____
+
+=== Related articles
+
+* xref:deploy-manage-report-microsoft-defender-antivirus.adoc[Deploy Microsoft Defender Antivirus]
+* xref:manage-updates-baselines-microsoft-defender-antivirus.adoc[Manage Microsoft Defender Antivirus updates and apply baselines]
+* xref:manage-protection-update-schedule-microsoft-defender-antivirus.adoc[Manage when protection updates should be downloaded and applied]
+* xref:manage-event-based-updates-microsoft-defender-antivirus.adoc[Manage event-based forced updates]
+* xref:manage-updates-mobile-devices-vms-microsoft-defender-antivirus.adoc[Manage updates for mobile devices and virtual machines (VMs)]
+* xref:microsoft-defender-antivirus-in-windows-10.adoc[Microsoft Defender Antivirus in Windows 10]

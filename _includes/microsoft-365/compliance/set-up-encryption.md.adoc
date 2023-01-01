@@ -1,0 +1,78 @@
+= Set up encryption in Office 365 Enterprise
+:audience: Admin
+:author: kccross
+:description: With Office 365, some encryption capabilities are turned on by default; other capabilities can be configured to meet certain compliance or legal requirements.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
+:ms.author: krowley
+:ms.date: 4/2/2018
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: landing-page
+:search.appverid: ["MET150", "MOE150"]
+
+== Set up encryption in Office 365 Enterprise
+
+Encryption can protect your content from being read by unauthorized users.
+Because xref:encryption.adoc[encryption in Office 365] can be done using various technologies and methods, there isn't one single place where you turn on or set up encryption.
+This article provides information about various ways you can set up or configure encryption as part of your information protection strategy.
+
+____
+[!TIP] If you are looking for more technical details about encryption, see xref:technical-reference-details-about-encryption.adoc[Technical reference details about encryption in Office 365].
+____
+
+With Office 365, several encryption capabilities are available by default.
+Additional encryption capabilities can be configured to meet certain compliance or legal requirements.
+The following table describes several encryption methods for different scenarios.
+
+{blank} +
+
+'''
+
+|===
+| Scenario | Encryption Methods
+
+| Files are saved on Windows computers
+| Encryption at the computer level can be done using BitLocker on Windows devices.
+As an enterprise administrator or IT Pro, you can set this up using the Microsoft Deployment Toolkit (MDT).
+See link:/windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker[Set up MDT for BitLocker].
+
+| Files are saved on mobile devices
+| Some kinds of mobile devices encrypt files that are saved to those devices by default.
+With https://support.microsoft.com/office/capabilities-of-built-in-mobile-device-management-for-microsoft-365-a1da44e5-7475-4992-be91-9ccec25905b0[Capabilities of built-in Mobile Device Management for Office 365], you can set policies that determine whether to allow mobile devices to access data in Office 365.
+For example, you can set a policy that allows only devices that encrypt content to access Office 365 data.
+See https://support.microsoft.com/office/create-and-deploy-device-security-policies-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6[Create and deploy device security policies].
+<p> For additional control over how mobile devices interact with Office 365, you can consider adding link:/mem/intune/fundamentals/setup-steps[Microsoft Intune].
+
+| You need control over the encryption keys used to encrypt your data in Microsoft's data centers
+| As an Office 365 administrator, you can control your organization's encryption keys and then configure Office 365 to use them to encrypt your data at rest in Microsoft's data centers.
+<p> xref:customer-key-overview.adoc[Service encryption with Microsoft Purview Customer Key]
+
+| People are communicating via email (Exchange Online)
+| As an Exchange Online administrator, you have several options for configuring email encryption.
+These include: <ul><li>Using xref:set-up-new-message-encryption-capabilities.adoc[Office 365 message encryption (OME)] with Azure Rights Management (Azure RMS) to enable people to send encrypted messages inside or outside your organization</li><li>Using link:/exchange/security-and-compliance/smime-exo/smime-exo[S/MIME] to encrypt and digitally sign email messages</li><li>Using TLS to link:/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner[set up connectors for secure mail flow with another organization]</li></ul> <p> See xref:./email-encryption.adoc[Email encryption in Office 365].
+
+| Files are accessed from team sites or document libraries (OneDrive for Business or SharePoint Online)
+| When people are working with files saved to OneDrive for Business or SharePoint Online, TLS connections are used.
+This is built into Office 365 automatically.
+See xref:./data-encryption-in-odb-and-spo.adoc[Data Encryption in OneDrive for Business and SharePoint Online].
+
+| Files are shared in online meetings and IM conversations (Skype for Business Online)
+| When people are working with files using Skype for Business Online, TLS is used for the connection.
+This is built into Office 365 automatically.
+See link:/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features[Security and Archiving (Skype for Business Online)].
+
+| Files are shared in online meetings and IM conversations (Microsoft Teams)
+| When people are working with files using Microsoft Teams, TLS is used for the connection.
+This is built into Office 365 automatically.
+Microsoft Teams does not currently support inline rendering of encrypted email.
+To prevent encrypted email from landing in Microsoft Teams as encrypted, see link:./ome-faq.yml#can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail-[Message Encryption FAQ].
+
+|
+|
+|===
+
+=== Additional information
+
+To learn more about file protection solutions that include encryption options, see https://www.microsoft.com/download/details.aspx?id=55523[File Protection Solutions in Office 365].

@@ -1,0 +1,21 @@
+= PowerShell roadmap for Microsoft 365
+:audience: ITPro
+:author: kelleyvice-msft
+:description: The roadmap to use PowerShell for Microsoft 365.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: kvice
+:ms.collection: M365-subscription-management
+:ms.custom: it-pro
+:ms.date: 09/19/2019
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+
+== PowerShell roadmap for Microsoft 365
+
+PowerShell roadmap content
+
+=== Next step
+
+TBD

@@ -1,0 +1,93 @@
+= Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management
+:audience: Admin
+:author: cabailey
+:description: Implement capabilities from Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management to govern your data for compliance or regulatory requirements.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: cabailey
+:ms.collection: ["m365-security-compliance", "tier1"]
+:ms.localizationpriority: high
+:ms.service: O365-seccomp
+:ms.topic: overview
+:recommendations: false
+:search.appverid: ["MOE150", "MET150"]
+
+== Govern your data with Microsoft Purview
+
+____
+_link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft 365 licensing guidance for security & compliance]._
+____
+
+Use the capabilities from *Microsoft Purview Data Lifecycle Management* (formerly Microsoft Information Governance) and *Microsoft Purview Records Management* to govern your data for compliance or regulatory requirements.
+
+____
+[!TIP] Looking to map and manage your data across your entire data estate, including multi-cloud, and software-as-a-service (SaaS)?
+Use link:/azure/purview/overview[Microsoft Purview Data Map, Microsoft Purview Data Catalog, and Microsoft Purview Data Estate Insights].
+____
+
+From a <<licensing-requirements,licensing perspective>>, there can be considerable overlap between data lifecycle management and records management.
+Both solutions support retention and deletion of data for Microsoft 365 apps and services.
+
+Use the following graphic to help you identify the main configurable components for these solutions that each have their own configuration area in the Microsoft Purview compliance portal:
+
+image::../media/govern-your-data.png[Main components to configure and use to govern your data with Microsoft Purview.]
+
+The following sections detail the main capabilities for each solution, with links to understand more.
+However, if you're looking for a guided deployment, see xref:data-governance-solution.adoc[Deploy a data governance solution with Microsoft Purview].
+
+Looking for complementary capabilities to protect your data?
+See xref:information-protection.adoc[Protect your data with Microsoft Purview].
+
+=== Microsoft Purview Data Lifecycle Management
+
+To keep what you need and delete what you don't:
+
+|===
+| Capability | What problems does it solve?
+
+| xref:retention.adoc[Retention policies for Microsoft 365 workloads, with retention labels for exceptions]
+| Lets you retain or delete content with policy management for email, documents, Teams and Yammer messages.
+
+| xref:inactive-mailboxes-in-office-365.adoc[Inactive mailboxes]
+| Lets you retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers.
+
+| xref:archive-mailboxes.adoc[Archive mailboxes]
+| Provides additional mailbox storage space for users.
+
+| xref:importing-pst-files-to-office-365.adoc[Import service for PST files]
+| Supports bulk-importing PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements.
+|===
+
+Want to learn more?
+See xref:data-lifecycle-management.adoc[Learn about data lifecycle management].
+
+Ready to start using some or all of these capabilities?
+See xref:get-started-with-data-lifecycle-management.adoc[Get started with data lifecycle management].
+
+=== Microsoft Purview Records Management
+
+Manage high-value items for business, legal, or regulatory record-keeping requirements:
+
+|===
+| Capability | What problems does it solve?
+
+| xref:file-plan-manager.adoc[File plan]
+| Lets you create retention labels interactively or import in bulk, and export for analysis.
+Labels support additional administrative information (optional) to help you identify and track business or regulatory requirements.
+
+| xref:retention.adoc[Retention labels for individual items, retention policies if needed for baseline retention]
+| Labels support flexible retention and deletion schedules that can be applied manually or automatically, with records declaration when needed.
+
+| xref:disposition.adoc[Disposition review and proof of disposition]
+| Manual review of content before it's permanently deleted, with proof of disposition of records.
+|===
+
+Want to learn more?
+See xref:records-management.adoc[Learn about records management].
+
+Ready to start using some or all of these capabilities?
+See xref:get-started-with-records-management.adoc[Get started with records management].
+
+=== Licensing requirements
+
+To understand your licensing requirements and options, see the information from the Microsoft 365 guidance for security & compliance, link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management[Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management] section for feature-level licensing requirements.

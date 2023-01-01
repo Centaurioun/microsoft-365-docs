@@ -1,0 +1,60 @@
+= Create a Microsoft 365 Group with a specific preferred data location
+:audience: ITPro
+:author: MikePlumleyMSFT
+:description: Learn how to create a Microsoft 365 group with a specified preferred data location in a multi-geo environment.
+:f1.keywords: ["NOCSH"]
+:manager: pamgreen
+:ms.author: mikeplum
+:ms.collection: Strat_SP_gtc
+:ms.custom: ["seo-marvel-apr2020", "admindeeplinkSPO"]
+:ms.localizationpriority: medium
+:ms.reviewer: adwood
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+
+== Create a Microsoft 365 group with a specific preferred data location
+
+When users in a multi-geo environment create a Microsoft 365 group, the group preferred data location (PDL) is automatically set to that of the user.
+Global, SharePoint, and Exchange Administrators can create groups in any region they select.
+
+If you need to create a group with a specific PDL, you can do that using from the https://go.microsoft.com/fwlink/?linkid=2185219[SharePoint admin center] or through the Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet.
+When you do this, both the group mailbox and SharePoint site associated with the group will be provisioned in the specified PDL.
+
+To create a Microsoft 365 group with the PDL that you specify, go to the https://go.microsoft.com/fwlink/?linkid=2185219[SharePoint admin center] in the geo location where you want to create the group site.
+
+For example:
+
+If you want to create a group site in your Australia location, you can go to `+https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement+`
+
+. Select *+ Create*.
+. Follow the process to create a group site.
+
+Your group site will be provisioned in the geo location corresponding to the SharePoint admin center from which you initiated the site creation request.
+
+Using Exchange PowerShell
+
+Connect to Exchange Online PowerShell and pass the parameter _-MailBoxRegion_ with the geo location code.
+
+For example:
+
+[,powershell]
+----
+New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR
+----
+
+image::../media/multi-geo-new-group-with-pdl-powershell.png[Screenshot of New-UnifiedGroup PowerShell cmdlet with syntax.]
+
+____
+[!Note] SharePoint group site provisioning is on-demand.
+The site will be provisioned the first time a group owner or member attempts to access it.
+____
+
+=== Geo location codes
+
+[!INCLUDE xref:../includes/microsoft-365-multi-geo-locations.adoc[Microsoft 365 Multi-Geo locations]]
+
+=== Related topics
+
+link:/powershell/exchange/connect-to-exchange-online-powershell[Connect to Exchange Online PowerShell]
+
+link:/graph/api/group-post-groups[Create groups with a specific preferred data location using Graph API]

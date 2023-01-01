@@ -1,0 +1,22 @@
+= Update your MX records to transition to the global Exchange Online service
+:ROBOTS: NOINDEX, NOFOLLOW
+:audience: Admin
+:author: pebaum
+:description: Learn how to transition from Microsoft Cloud Germany Exchange Online to the global Exchange Online service
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.author: pebaum
+:ms.custom: ["AdminSurgePortfolio", "admindeeplinkMAC"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+
+== Update your MX records to transition to the global Exchange Online service
+
+. Sign in to Microsoft 365 admin center, and go to *Settings* > https://go.microsoft.com/fwlink/p/?linkid=834818[*Domains*]
+. Status will be shown on the right side for each domain.
+If your organization's domains point to Microsoft Cloud Germany Exchange Online, you'll need to update your MX record.
+. Click the domain, then click *DNS errors detected, click here to view*.
+. This page will have instructions to show you how to fix the MX record.
+If your domain's registrar uses link:../setup/add-domain.md#registrars-with-domain-connect[Domain Connect], you can click "`Fix my records`" on top.
+Otherwise you can follow the link in the wizard to *step-by-step instructions* for your registrar.

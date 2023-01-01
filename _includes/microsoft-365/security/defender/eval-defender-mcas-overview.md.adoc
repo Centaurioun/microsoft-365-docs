@@ -1,0 +1,45 @@
+= Step 5. Evaluate Microsoft Defender for Cloud Apps overview
+:audience: ITPro
+:author: brendacarter
+:description: Steps to set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
+:f1.keywords: ["NOCSH"]
+:manager: dansimp
+:ms.author: bcarter
+:ms.collection: ["M365-security-compliance", "m365solution-scenario", "m365solution-evalutatemtp", "zerotrust-solution", "highpri"]
+:ms.date: 07/09/2021
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Step 5. Evaluate Microsoft Defender for Cloud Apps
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+This article outlines the process to enable and pilot Microsoft Defender for Cloud Apps alongside Microsoft 365 Defender.
+Before starting this process, be sure you've reviewed the overall process for xref:eval-overview.adoc[evaluating Microsoft 365 Defender] and you have xref:eval-create-eval-environment.adoc[created the Microsoft 365 Defender evaluation environment].
++
+
+Use the following steps to enable and pilot Microsoft Defender for Cloud Apps.
+
+:::image type="content" source="../../media/defender/m365-defender-office-eval-steps.png" alt-text="The steps for adding Microsoft Defender for Office to the Defender evaluation environment" lightbox="../../media/defender/m365-defender-office-eval-steps.png":::
+
+|===
+| Step | Description
+
+| xref:eval-defender-mcas-architecture.adoc[Review architecture requirements and key concepts]
+| Understand the Defender for Cloud Apps architecture and how it integrates with Microsoft 365 Defender, Microsoft Defender for Endpoint, and Azure Active Directory.
+
+| xref:eval-defender-mcas-enable-eval.adoc[Enable the evaluation environment]
+| Connect to the portal, configure integration with Defender for Identity and/or your organization's network devices, and begin to view and manage cloud apps.
+
+| xref:eval-defender-mcas-pilot.adoc[Set up the pilot]
+| Scope your deployment to certain user groups, configure Conditional Access App Control, and try out tutorials for protecting your environment.
+|===

@@ -1,0 +1,70 @@
+= Networking roadmap for Microsoft 365
+:audience: ITPro
+:author: kelleyvice-msft
+:description: The roadmap for planning, implementing and managing Microsoft 365 networking.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: kvice
+:ms.collection: ["M365-subscription-management", "Strat_O365_Enterprise"]
+:ms.custom:
+:ms.date: 03/03/2022
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+
+== Networking roadmap for Microsoft 365
+
+Microsoft 365 for enterprise includes collaboration and productivity cloud services, Microsoft Intune, and many identity and security services of Microsoft Azure.
+All of these cloud-based services rely on the security, performance, and reliability of connections from client devices over the Internet or dedicated circuits.
+To host these services and make them available to customers all over the world, Microsoft has designed a networking infrastructure that emphasizes performance and integration.
+
+A crucial part of your Microsoft 365 onboarding is to ensure that your network and Internet connections are set up for optimized access.
+Configuring your on-premises network to access a globally distributed Software-as-a-Service (SaaS) cloud is different from a traditional network that is optimized for traffic to on-premises datacenters and a central Internet connection.
+
+Use these articles to understand the key differences and to modify your edge devices, client computers, and on-premises network to get the best performance for your on-premises users.
+
+=== Plan
+
+In the planning phase of your networking implementation:
+
+* xref:microsoft-365-networking-overview.adoc[Understand how Microsoft 365 networking works]
+* xref:microsoft-365-network-connectivity-principles.adoc[Learn about network connectivity principles]
+* xref:assessing-network-connectivity.adoc[Assess your current network connectivity]
+* xref:network-planning-with-expressroute.adoc[Determine if ExpressRoute is right for your organization]
+* xref:plan-for-network-devices.adoc[Plan for your network devices]
+* xref:network-and-migration-planning.adoc[Get your network set up for migration]
+
+=== Deploy
+
+In the deployment phase of your networking implementation:
+
+* xref:set-up-network-for-microsoft-365.adoc[Ensure your enterprise network is optimized for Microsoft 365 connectivity]
+* xref:../admin/setup/add-domain.adoc[Add the DNS domains for your organization]
+* xref:microsoft-365-vpn-split-tunnel.adoc[Optimize connectivity for remote workers using VPN split tunneling]
+* xref:office-365-cdn-quickstart.adoc[Configure CDN to improve network performance]
+* xref:microsoft-365-ip-web-service.adoc[Optimize your connectivity to Microsoft 365 endpoints]
+* If needed, xref:azure-expressroute.adoc[configure ExpressRoute]
+
+=== Manage
+
+In the management phase of your networking implementation:
+
+* xref:office-365-network-mac-perf-onboarding-tool.adoc[Test and optimize using the Microsoft 365 network connectivity test tool]
+* xref:microsoft-365-endpoints.adoc[Ensure that your network devices are using the latest Office 365 endpoints]
+* xref:network-planning-and-performance.adoc[Monitor and tune your networking performance]
+* xref:monitor-connectivity.adoc[Monitor your Microsoft 365 connectivity]
+
+=== Network equipment vendors
+
+If you are a network equipment vendor, join the xref:microsoft-365-networking-partner-program.adoc[Microsoft 365 Networking Partner Program].
+Enroll in the program to build Microsoft 365 network connectivity principles into your products and solutions.
+
+=== How Contoso did networking for Microsoft 365
+
+See how the Contoso Corporation, a fictional but representative multi-national business, xref:contoso-networking.adoc[optimized their network devices and Internet connections] for Microsoft 365 cloud services.
+
+image::../media/contoso-overview/contoso-icon.png[The Contoso Corporation.]
+
+=== Next step
+
+Start your networking planning with the xref:microsoft-365-networking-overview.adoc[Microsoft 365 networking connectivity overview].

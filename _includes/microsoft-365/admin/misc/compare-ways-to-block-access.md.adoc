@@ -1,0 +1,58 @@
+= Compare ways to block access
+:ROBOTS: NOINDEX
+:audience: Admin
+:author: twernermsft
+:description: Learn how to block access to Microsoft 365 when an employee leaves your organization.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 5785d21d-1abd-4571-a04a-8cc5a65ca9b5
+:ms.author: twerner
+:ms.collection: ["Adm_O365", "Adm_NonTOC"]
+:ms.custom: AdminSurgePortfolio
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Compare ways to block access to Microsoft 365
+
+When an employee leaves your organization, on good terms or bad, you need to block their access to Microsoft 365.
+Here are a few ways you can do that.
+
+|===
+| Way to block access | Definition | Best practice
+
+| Block sign-in  +
+| One way to block a user from accessing Microsoft 365 is to change their sign-in status to *Sign-in blocked*.
+This prevents them from signing into Microsoft 365 from their computers and mobile devices though they can still view previously downloaded or synced email and documents.
+If you're using Blackberry Enterprise Service, you can disable their access there as well.
++
+| Use when an employee plans to leave the organization or they plan to take a long-term leave of absence.
++
+
+| Reset user password  +
+| Another way to prevent a user from accessing Microsoft 365 is to reset their password.
+This prevents them from using their account though they can still view previously downloaded or synced email and documents.
+You can then sign in as them and change the password to one of your choosing.
++
+| Use when an employee leaves suddenly and permanently and you feel there's concern for business data.
++
+
+| Remove all assigned licenses  +
+| Another option is to remove any Microsoft 365 licenses assigned to the user.
+This prevents them from using applications and services like the Office suite, Office apps for the web, Yammer, and SharePoint Online.
+They can still sign in but can't use these services.
++
+| Use when you feel this user no longer needs access to specific features in Microsoft 365.
++  + *Important:* When you remove a license, the user's mailbox will be deleted in 30 days.
+|===
+
+=== Related articles
+
+xref:../add-users/remove-former-employee.adoc[Offboard a user from Microsoft 365]
+
+xref:../add-users/reset-passwords.adoc[Reset a user's password in Microsoft 365]
+
+xref:../manage/assign-licenses-to-users.adoc[Assign licenses to users in Microsoft 365 for business]
+
+xref:../manage/remove-licenses-from-users.adoc[Remove licenses from users in Microsoft 365 for business]

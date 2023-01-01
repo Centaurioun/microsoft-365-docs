@@ -1,0 +1,22 @@
+= Microsoft Cloud Solution Provider Partners in Russia
+:ROBOTS: NOINDEX
+:audience: Admin
+:author: LoreenLa
+:description: Get a list of Microsoft Cloud Solutions providers in Russia.
+:f1.keywords: ["NOCSH"]
+:manager: pamgreen
+:ms.assetid: d3adf0cf-d581-4452-a5b3-6e0d16a34daa
+:ms.author: loreenl
+:ms.collection: ["Adm_O365", "Adm_NonTOC"]
+:ms.custom: AdminSurgePortfolio
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["MET150", "MOE150"]
+
+== Microsoft Cloud Solution Provider Partners in Russia
+
+Here's a list of Microsoft Cloud Solution Providers in Russia.
+
+* https://www.mont.com/ru-ru/[Mont]
+* https://softline.ru/[Softline]

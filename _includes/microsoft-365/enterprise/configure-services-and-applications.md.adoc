@@ -1,0 +1,50 @@
+= Configure Microsoft 365 Enterprise services and applications
+:audience: ITPro
+:author: kelleyvice-msft
+:description: Configure Microsoft 365 Enterprise services and applications, such as SharePoint, Exchange, and Microsoft Teams.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
+:ms.author: kvice
+:ms.collection: ["Ent_O365", "M365-subscription-management"]
+:ms.custom: seo-marvel-mar2020
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+:search.appverid: ["MET150", "MOE150", "BCS160"]
+
+== Configure Microsoft 365 Enterprise services and applications
+
+Our xref:../admin/setup/setup.adoc[basic set up instructions] help you get everyone using your Microsoft 365 services and applications in the shortest time possible.
+Sometimes getting things configured before everyone starts using them is preferred.
+For example if you want to configure mail routing, file storage, or sharing policies.
+
+If you want help getting Microsoft 365 set up, use *https://www.microsoft.com/fasttrack/microsoft-365[FastTrack]* or the xref:setup-guides-for-microsoft-365.adoc[Setup guides for Microsoft 365 and Office 365 services].
+
+|===
+| *Services & applications* | *Resources*
+
+| *Microsoft 365 Suite*
+| - https://support.office.com/article/Add-your-company-branding-to-Office-365-Sign-In-Page-a1229cdb-ce19-4da5-90c7-2b9b146aef0a[Add your company branding to Microsoft 365 Sign In Page] + - https://support.office.com/article/Add-customized-help-desk-info-to-the-Office-365-help-pane-9dd9b104-68f7-4d49-9a30-82561c7d79a3[Add customized help desk info to the Microsoft 365 help pane] + - https://support.office.com/article/Integrated-Apps-and-Azure-AD-for-Office-365-administrators-cb2250e3-451e-416f-bf4e-363549652c2a[Add integration with Azure AD and other applications].
++ - https://support.office.microsoft.com/article/Manage-mobile-devices-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd[Activate and use mobile device management in Microsoft 365] + - xref:monitor-connectivity.adoc[Monitor Microsoft 365 connectivity]
+
+| *Email* + (Exchange Online)
+| - Use the https://aka.ms/office365setup[Exchange migration advisor] to get customized setup guidance  + - link:/exchange/standalone-eop/set-up-your-eop-service[Set up Exchange Online Protection]
+
+| *Sites* + (SharePoint)
+| - Configure hybrid functionality for link:/SharePoint/hybrid/hybrid[SharePoint Server] + - Use the https://support.office.com/article/SharePoint-Online-Planning-Guide-for-Office-365-for-business-d5089cdf-3fd2-4230-acbd-20ecda2f9bb8[SharePoint Planning Guide] or the https://aka.ms/spoguidance[SharePoint deployment advisor] to plan and configure additional features
+
+| *IM and online meetings* + (Teams)
+| - link:/microsoftteams/deploy-overview[Microsoft Teams deployment overview] + - link:/microsoftteams/deploy-meetings-microsoft-teams-landing-page[Meetings and conferencing in Microsoft Teams] + - link:/microsoftteams/cloud-voice-landing-page[Plan your Teams voice solution]
+
+| *File storage & sharing* + (OneDrive and SharePoint)
+| - https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_WhatDif[Set up Microsoft 365 file storage and sharing]: Learn when you should use OneDrive to store files and when you should use SharePoint team sites + - Use the https://aka.ms/OD4Bguidance[OneDrive setup guide] to get customized setup guidance
+
+| *Microsoft 365 applications*
+| - Microsoft 365 administrators should use the link:/deployoffice[Office Deployment Guide] to get help planning a Microsoft 365 Apps for enterprise deployment or upgrade.
++ - https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044[Power BI for Microsoft 365 admin center] + - link:/project-for-the-web/projectforweb-admin-home[Get started with Project for the web].
++ - link:/mem/intune/[Microsoft Intune deployment advisor]
+
+| *Enterprise Social* + (Yammer)
+| - https://support.office.com/article/Plan-for-Yammer-integration-with-Office-365-4086681f-6de1-4d39-aa72-752b2af1cbd7[Use Yammer with Microsoft 365]  + - Use the https://aka.ms/yammerdeploy[Yammer Enterprise setup guide] to get customized setup guidance
+|===

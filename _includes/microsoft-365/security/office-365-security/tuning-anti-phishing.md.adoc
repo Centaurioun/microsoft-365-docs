@@ -1,0 +1,98 @@
+'''
+
+title: Tune anti-phishing protection f1.keywords:
+
+* NOCSH ms.author: chrisda author: chrisda manager: dansimp audience: ITPro ms.topic: how-to
+
+ms.localizationpriority: medium search.appverid:  ms.collection:
+
+* M365-security-compliance
+* m365initiative-defender-office365
+* MET150 description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
+ms.subservice: mdo ms.service: microsoft-365-security --
+
+== Tune anti-phishing protection
+
+*Applies to*
+
+* xref:exchange-online-protection-overview.adoc[Exchange Online Protection]
+* xref:defender-for-office-365.adoc[Microsoft Defender for Office 365 plan 1 and plan 2]
+* xref:../defender/microsoft-365-defender.adoc[Microsoft 365 Defender]
+
+Although Microsoft 365 comes with a variety of anti-phishing features that are enabled by default, it's possible that some phishing messages could still get through to your mailboxes.
+This topic describes what you can do to discover why a phishing message got through, and what you can do to adjust the anti-phishing settings in your Microsoft 365 organization _without accidentally making things worse_.
+
+=== First things first: deal with any compromised accounts and make sure you block any more phishing messages from getting through
+
+If a recipient's account was compromised as a result of the phishing message, follow the steps in xref:responding-to-a-compromised-email-account.adoc[Responding to a compromised email account in Microsoft 365].
+
+If your subscription includes Microsoft Defender for Office 365, you can use xref:office-365-ti.adoc[Office 365 Threat Intelligence] to identify other users who also received the phishing message.
+You have additional options to block phishing messages:
+
+* xref:set-up-safe-links-policies.adoc[Safe Links in Microsoft Defender for Office 365]
+* xref:set-up-safe-attachments-policies.adoc[Safe Attachments in Microsoft Defender for Office 365]
+* xref:configure-mdo-anti-phishing-policies.adoc[Anti-phishing policies in Microsoft Defender for Office 365].
+Note that you can temporarily increase the *Advanced phishing thresholds* in the policy from *Standard* to *Aggressive*, *More aggressive*, or *Most aggressive*.
+
+Verify these Defender for Office 365 features are turned on.
+
+=== Report the phishing message to Microsoft
+
+Reporting phishing messages is helpful in tuning the filters that are used to protect all customers in Microsoft 365.
+For instructions, see xref:report-junk-email-messages-to-microsoft.adoc[Report messages and files to Microsoft].
+
+=== Inspect the message headers
+
+You can examine the headers of the phishing message to see if there's anything that you can do yourself to prevent more phishing messages from coming through.
+In other words, examining the messages headers can help you identify any settings in your organization that were responsible for allowing the phishing messages in.
+
+Specifically, you should check the *X-Forefront-Antispam-Report* header field in the message headers for indications of skipped filtering for spam or phishing in the Spam Filtering Verdict (SFV) value.
+Messages that skip filtering will have an entry of `SCL:-1`, which means one of your settings allowed this message through by overriding the spam or phishing verdicts that were determined by the service.
+For more information on how to get message headers and the complete list of all available anti-spam and anti-phishing message headers, see xref:anti-spam-message-headers.adoc[Anti-spam message headers in Microsoft 365].
+
+=== Best practices to stay protected
+
+* On a monthly basis, run xref:../defender/microsoft-secure-score.adoc[Secure Score] to assess your organization's security settings.
+* For messages that end up in quarantine by mistake, or for messages that are allowed through, we recommend that you search for those messages in xref:threat-explorer.adoc[Threat Explorer and real-time detections].
+You can search by sender, recipient, or message ID.
+After you locate the message, go to details by clicking on the subject.
+For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override.
+For an allowed message, look to see which policy allowed the message.
+* Email from spoofed senders (the From address of the message doesn't match the source of the message) is classified as phishing in Defender for Office 365.
+Sometimes spoofing is benign, and sometimes users don't want messages from specific spoofed sender to be quarantined.
+To minimize the impact to users, periodically review the xref:learn-about-spoof-intelligence.adoc[spoof intelligence insight], the *Spoofed senders* tab in the xref:manage-tenant-allow-block-list.adoc[Tenant Allow/Block List], and the link:view-email-security-reports.md#spoof-detections-report[Spoof detections report].
+Once you have reviewed allowed and blocked spoofed senders and made any necessary overrides, you can be confident to link:set-up-anti-phishing-policies.md#spoof-settings[configure spoof intelligence in anti-phishing policies] to *Quarantine* suspicious messages instead of delivering them to the user's Junk Email folder.
+* You can repeat the above step for Impersonation (domain or user) in Microsoft Defender for Office 365.
+The Impersonation report is found under *Threat Management* > *Dashboard* > *Insights*.
+* Periodically review the link:view-reports-for-mdo.md#threat-protection-status-report[Threat Protection Status report].
+* Some customers inadvertently allow phishing messages through by putting their own domains in the Allow sender or Allow domain list in anti-spam policies.
+Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the spam and/or phishing filters.
+Instead of allowing the domain, you should correct the underlying problem.
++
+The best way to deal with legitimate messages that are blocked by Microsoft 365 (false positives) that involve senders in your domain is to fully and completely configure the SPF, DKIM, and DMARC records in DNS for _all_ of your email domains:
+
+ ** Verify that your SPF record identifies _all_ sources of email for senders in your domain (don't forget third-party services!).
+ ** Use hard fail (-all) to ensure that unauthorized senders are rejected by email systems that are configured to do so.
+You can use the xref:learn-about-spoof-intelligence.adoc[spoof intelligence insight] to help identify senders that are using your domain so that you can include authorized third-party senders in your SPF record.
+
++
+For configuration instructions, see:
+
+ ** xref:set-up-spf-in-office-365-to-help-prevent-spoofing.adoc[Set up SPF to help prevent spoofing]
+ ** xref:use-dkim-to-validate-outbound-email.adoc[Use DKIM to validate outbound email sent from your custom domain]
+ ** xref:use-dmarc-to-validate-email.adoc[Use DMARC to validate email]
+
+* Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365.
+In other words, point your Microsoft 365 domain's MX record to Microsoft 365.
+Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Microsoft 365.
+If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors.
+For instructions, see link:/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors[Enhanced Filtering for Connectors in Exchange Online].
+* Users should use the xref:enable-the-report-message-add-in.adoc[Report Message add-in] or the xref:enable-the-report-phish-add-in.adoc[Report Phishing add-in] to report messages to Microsoft, which can train our system.
+Admins should also take advantage of xref:admin-submission.adoc[Admin Submission] capabilities.
+* Multi factor authentication (MFA) is a good way to prevent compromised accounts.
+You should strongly consider enabling MFA for all of your users.
+For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone.
+For instructions, see xref:../../admin/security-and-compliance/set-up-multi-factor-authentication.adoc[Set up multi-factor authentication].
+* Forwarding rules to external recipients are often used by attackers to extract data.
+Use the *Review mailbox forwarding rules* information in xref:../defender/microsoft-secure-score.adoc[Microsoft Secure Score] to find and even prevent forwarding rules to external recipients.
+For more information, see link:/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score[Mitigating Client External Forwarding Rules with Secure Score].

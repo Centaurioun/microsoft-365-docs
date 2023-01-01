@@ -1,0 +1,36 @@
+= Work with custodians in eDiscovery (Premium)
+:audience: Admin
+:author: robmazz
+:description: Learn how to use the custodian management tool in eDiscovery (Premium) to manage data for a legal case.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.assetid:
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance", "ediscovery"]
+:ms.custom: ["seo-marvel-apr2020"]
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MOE150", "MET150"]
+
+== Work with custodians and non-custodial data sources in eDiscovery (Premium)
+
+When an organization responds to a legal investigation, the workflow around identifying, preserving, and collecting potentially relevant content is based on the people in the organization who are the custodians of relevant data.
+In eDiscovery, these individuals are called _data custodians_ (or just _custodians_) and are defined as "persons having administrative control of a document or electronic file".
+For example, the custodian of an email message could be the owner of the mailbox that contains the relevant message.
+
+Additionally, there may be content located in mailboxes and sites that aren't associated with a custodian but that's relevant to the case.
+Content locations where case custodians don't have administrative control but may be owners of relevant data, are known as _non-custodial data sources_.
+
+In an eDiscovery (Premium) case, legal teams can add individuals in their organization as custodians, and  identify and preserve custodial data sources such as Exchange mailboxes, OneDrive accounts, and SharePoint and Teams sites.
+They can also identify and preserve non-custodial data sources.
+By using the built-in custodian and data source management tool in eDiscovery (Premium), organizations can secure electronically stored information from inadvertent (or intentional) deletion.
+This lets you eliminate the time-consuming and error-prone process of manually having to perform the legal hold processes.
+
+For more information about working with custodians, see the following articles:
+
+* xref:add-custodians-to-case.adoc[Add custodians to a case]
+* xref:bulk-add-custodians.adoc[Bulk-add custodians to a case]
+* xref:manage-new-custodians.adoc[Manage custodians in a case]
+* xref:view-custodian-activity.adoc[View custodian activity]
+* xref:non-custodial-data-sources.adoc[Add non-custodial data sources to a case]

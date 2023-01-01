@@ -1,0 +1,114 @@
+= Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
+:audience: ITPro
+:author: chrfox
+:description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using JAMF Pro for Microsoft Defender for Endpoint customers
+:f1.keywords: NOCSH
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MET150"]
+
+== Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers
+
+You can use JAMF Pro to onboard macOS devices into Microsoft Purview solutions.
+
+____
+[!IMPORTANT] Use this procedure *_if you have_* deployed Microsoft Defender for Endpoint (MDE) to your macOS devices
+____
+
+*Applies to:*
+
+* Customers who have MDE deployed to their macOS devices.
+* xref:./endpoint-dlp-learn-about.adoc[Endpoint data loss prevention (DLP)]
+* xref:insider-risk-management.adoc[Insider risk management]
+
+=== Before you begin
+
+* Make sure your https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/[macOS devices are managed through JAMF pro] and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
+* Install the v95+ Edge browser on your macOS devices
+
+=== Onboard devices into Microsoft Purview solutions using JAMF Pro
+
+Onboarding a macOS device into Compliance solutions is a multi phase process.
+
+==== Download the configuration files
+
+. You'll need these files for this procedure.
+
+|===
+| file needed for | source
+
+| accessibility
+| https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig[accessibility.mobileconfig]
+
+| full disk access
+| https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig[fulldisk.mobileconfig]
+
+| MDE preference
+| https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json[schema.json]
+|===
+
+____
+[!TIP] You can download the _.mobileconfig_ files individually or in https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig[single combined file] that contains:
+
+* accessibility.mobileconfig
+* fulldisk.mobileconfig
+
+If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
+____
+
+==== Update the existing MDE Preference domain profile using the JAMF PRO console
+
+. Update the schema.xml profile with the *schema.json* file you just downloaded.
+. Under *MDE Preference Domain Properties* choose these settings
+ ** Features
+  *** Use System Extensions: `enabled` - required for network extensions on Catalina
+  *** Use Data Loss Prevention: `enabled`
+. Choose the *Scope* tab.
+. Choose the groups to deploy this configuration profile to.
+. Choose *Save*.
+
+==== Update the configuration profile for Grant full disk access
+
+. Update the existing full disk access profile with the *fulldisk.mobileconfig* file.
+. Upload the *fulldisk.mobileconfig* file to JAMF.
+Refer to https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html[Deploying Custom Configuration Profiles using JAMF Pro].
+
+==== Grant accessibility access to DLP
+
+. Use the accessibility.mobileconfig file you previously downloaded.
+. Upload to JAMF as described in https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro[Deploying Custom Configuration Profiles using Jamf Pro].
+
+==== Check the macOS device
+
+. Restart the macOS device.
+. Open *System Preferences* > *Profiles*.
+. You should see:
+ ** Accessiblity
+ ** Full Disk Access
+ ** Kernel Extension Profile
+ ** MAU
+ ** MDATP Onboarding
+ ** MDE Preferences
+ ** Management profile
+ ** Network filter
+ ** Notifications
+ ** System extension profile
+
+=== Offboard macOS devices using JAMF Pro
+
+____
+[!IMPORTANT] Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
+____
+
+To offboard a macOS device, follow these steps
+
+. Under *MDE Preference Domain Properties* remove the values for these settings
+ ** Features
+  *** Use System Extensions
+  *** Use Data Loss Prevention
+. Choose *Save*.

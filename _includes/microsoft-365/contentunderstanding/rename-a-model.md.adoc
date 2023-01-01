@@ -1,0 +1,65 @@
+= Rename a model in Microsoft SharePoint Syntex
+:audience: admin
+:author: chuckedmonson
+:description: Learn how and why to rename a document understanding model in Microsoft SharePoint Syntex.
+:manager: pamgreen
+:ms.author: chucked
+:ms.collection: ["enabler-strategic", "m365initiative-syntex"]
+:ms.localizationpriority: medium
+:ms.reviewer: ssquires
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+:search.appverid:
+
+== Rename a model in Microsoft SharePoint Syntex
+
+At some point, you might want to rename a document understanding model.
+A common example is when you create an initial draft of a model, you might not have given a lot of thought as to the final name (for example, you might have named it "`AlexWilburModel1`").
+As you come closer to finalizing the model and putting it to use, you realize that a more proper name would be "`Contract Renewals,`" and you want to rename it.
+
+Another example is when your organization makes a decision to refer to a process or document type by a different name.
+For example, after you create your model and are ready to apply it, your organization might mandate that all "`Contracts`" will now formally be referred to as "`Agreements.`" If needed, you can choose to rename your model from "`Contract Renewals`" to "`Agreement Renewals.`"
+
+____
+[!IMPORTANT] You can only rename a document understanding model if it has not been applied to a document library.
+____
+
+Renaming a model also renames the link:/sharepoint/governance/content-type-and-workflow-planning#content-type-overview[content type] that is associated with the model.
+
+=== Rename a model
+
+Follow these steps to rename a document understanding model.
+
+. From the content center, select *Models* to see your models list.
+. On the *Models* page, select the model you want to rename.
+. By using either the ribbon or the *Show actions* button (next to the model name), select *Rename*.
+</br>
++
+image:../media/content-understanding/select-model-rename-both.png[Screenshot of the Models page showing a selected model with the Rename options highlighted.] </br>
+
+. On the *Rename model* panel:
++
+a.
+Under *New name*, enter the new name of the model that you want to rename.</br>
++
+image:../media/content-understanding/rename-model-panel.png[Screenshot showing the Rename model panel.] </br>
++
+b.
+(Optional) Under *Advanced settings*, select whether you want to associate an existing link:/sharepoint/governance/content-type-and-workflow-planning#content-type-overview[content type].
+If you choose *Use an existing content type*, the model will be renamed to match the selected content type.
+
+. Select *Rename*.
+
+=== See also
+
+xref:create-a-classifier.adoc[Create a classifier]
+
+xref:create-an-extractor.adoc[Create an extractor]
+
+xref:rename-an-extractor.adoc[Rename an extractor]
+
+xref:document-understanding-overview.adoc[Document Understanding overview]
+
+xref:explanation-types-overview.adoc[Explanation types]
+
+xref:apply-a-model.adoc[Apply a model]

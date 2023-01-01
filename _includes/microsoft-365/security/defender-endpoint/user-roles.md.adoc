@@ -1,0 +1,106 @@
+= Create and manage roles for role-based access control
+:audience: ITPro
+:author: mjcaparas
+:description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation in the Microsoft 365 Defender
+:keywords: user roles, roles, access rbac
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: admindeeplinkDEFENDER
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Create and manage roles for role-based access control
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-roles-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+=== Create roles and assign the role to an Azure Active Directory group
+
+The following steps guide you on how to create roles in Microsoft 365 Defender.
+It assumes that you have already created Azure Active Directory user groups.
+
+. Log in to https://go.microsoft.com/fwlink/p/?linkid=2077139[Microsoft 365 Defender] using account with a Security administrator or Global administrator role assigned.
+. In the navigation pane, select *Settings* > *Endpoints* > *Roles* (under *Permissions*).
+. Select *Add item*.
+. Enter the role name, description, and permissions you'd like to assign to the role.
+. Select *Next* to assign the role to an Azure AD Security group.
+. Use the filter to select the Azure AD group that you'd like to add to this role to.
+. *Save and close*.
+. Apply the configuration settings.
+
+____
+[!IMPORTANT] After creating roles, you'll need to create a device group and provide access to the device group by assigning it to a role that you just created.
+____
+
+____
+[!NOTE] Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+____
+
+==== Permission options
+
+* *View data*
+ ** *Security operations* - View all security operations data in the portal
+ ** *Threat and vulnerability management* - View Defender Vulnerability Management data in the portal
+* *Active remediation actions*
+ ** *Security operations* - Take response actions, approve or dismiss pending remediation actions, manage allowed/blocked lists for automation and indicators
+ ** *Threat and vulnerability management - Exception handling* - Create new exceptions and manage active exceptions
+ ** *Threat and vulnerability management - Remediation handling* - Submit new remediation requests, create tickets, and manage existing remediation activities
+* *Alerts investigation* - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files
+* *Manage portal system settings* - Configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and device groups
++
+____
+[!NOTE] This setting is only available in the Microsoft Defender for Endpoint administrator (default) role.
+____
+
+* *Manage security settings in Security Center* - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, manage email notifications, and manage evaluation lab
+* *Live response capabilities*
+ ** *Basic* commands:
+  *** Start a live-response session
+  *** Perform read-only live-response commands on remote device (excluding file copy and execution)
+  *** Download a file from the remote device via live response
+ ** *Advanced* commands:
+  *** Download PE and non-PE files from the file page
+  *** Upload a file to the remote device
+  *** View a script from the files library
+  *** Execute a script on the remote device from the files library
+
+For more information on the available commands, see xref:live-response.adoc[Investigate devices using Live response].
+
+=== Edit roles
+
+. Log in to https://go.microsoft.com/fwlink/p/?linkid=2077139[Microsoft 365 Defender] using account with Security administrator or Global administrator role assigned.
+. In the navigation pane, select *Settings* > *Endpoints* > *Roles* (under *Permissions*).
+. Select the role you'd like to edit.
+. Click *Edit*.
+. Modify the details or the groups that are assigned to the role.
+. Click *Save and close*.
+
+=== Delete roles
+
+. Log in to https://go.microsoft.com/fwlink/p/?linkid=2077139[Microsoft 365 Defender] using account with Security administrator or Global administrator role assigned.
+. In the navigation pane, select *Settings* > *Endpoints* > *Roles* (under *Permissions*).
+. Select the role you'd like to delete.
+. Click the drop-down button and select *Delete role*.
+
+=== Related topic
+
+* xref:basic-permissions.adoc[User basic permissions to access the portal]
+* xref:machine-groups.adoc[Create and manage device groups]

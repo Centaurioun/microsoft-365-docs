@@ -1,0 +1,65 @@
+= Restore quarantined files in Microsoft Defender Antivirus
+:author: denisebmsft
+:description: You can restore files and folders that were quarantined by Microsoft Defender Antivirus.
+:keywords:
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: M365-security-compliance
+:ms.custom: nextgen
+:ms.date: 10/19/2021
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Restore quarantined files in Microsoft Defender Antivirus
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+If Microsoft Defender Antivirus is configured to detect and remediate threats on your device, Microsoft Defender Antivirus quarantines suspicious files.
+If you are certain a quarantined file is not a threat, you can restore it.
+
+. Open *Windows Security*.
+. Select *Virus & threat protection* and then click *Protection history*.
+. In the list of all recent items, filter on *Quarantined Items*.
+. Select an item you want to keep, and take an action, such as restore.
+
+____
+[!TIP] Restoring a file from quarantine can also be done using Command Prompt.
+See link:/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#restore-file-from-quarantine[Restore a file from quarantine].
+____
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____
+
+=== Related articles
+
+* xref:configure-remediation-microsoft-defender-antivirus.adoc[Configure remediation for scans]
+* xref:review-scan-results-microsoft-defender-antivirus.adoc[Review scan results]
+* xref:configure-extension-file-exclusions-microsoft-defender-antivirus.adoc[Configure and validate exclusions based on file name, extension, and folder location]
+* xref:configure-process-opened-file-exclusions-microsoft-defender-antivirus.adoc[Configure and validate exclusions for files opened by processes]
+* xref:configure-server-exclusions-microsoft-defender-antivirus.adoc[Configure Microsoft Defender Antivirus exclusions on Windows Server]

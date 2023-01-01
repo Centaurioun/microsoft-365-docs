@@ -1,0 +1,55 @@
+= Manage Microsoft 365 with PowerShell
+:audience: Admin
+:author: kelleyvice-msft
+:description: Learn how to manage Microsoft 365 users, licenses, and 365 apps with PowerShell.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
+:ms.author: kvice
+:ms.collection: Ent_O365
+:ms.custom: ["PowerShell", "O365ITProTrain", "Ent_Office_Other", "seo-marvel-apr2020"]
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: landing-page
+:search.appverid: ["MET150"]
+
+== Manage Microsoft 365 with PowerShell
+
+_This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise._
+
+PowerShell for Microsoft 365 is a powerful management tool that complements the Microsoft 365 admin center.
+For example, you can use PowerShell automation to easily manage multiple user accounts and licenses and to create reports.
+
+Select from the following topics to learn how to use PowerShell to manage Microsoft 365:
+
+* xref:getting-started-with-microsoft-365-powershell.adoc[*Get started*]
++
+Start here if you're not familiar with PowerShell for Microsoft 365, and you want to install the Microsoft 365 modules and connect to your subscription.
+
+* xref:manage-user-accounts-and-licenses-with-microsoft-365-powershell.adoc[*User accounts, licenses, and groups*]
++
+Start here if want to learn about using automation commands to manage user accounts, licenses, and groups.
+
+* xref:manage-sharepoint-online-with-microsoft-365-powershell.adoc[*SharePoint*]
++
+Start here if you want to use automation commands to manage SharePoint.
+
+* link:/powershell/exchange/exchange-online-powershell[*Exchange Online*]
++
+Start here if you want to manage Exchange Online.
+
+* xref:use-powershell-for-email-migration-to-microsoft-365.adoc[*Email migration*]
++
+Start here if you want to migrate your email from pre-existing systems.
+
+* link:/powershell/exchange/scc-powershell[*Security & Compliance Center*]
++
+Start here if you want to manage Security & Compliance Center features.
+
+* xref:manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.adoc[*Delegated Access Permissions (DAP) partners*]
++
+Start here if you want to use Syndication and Cloud Solution Provider (CSP) partners to manage your Microsoft 365 customer tenants.
+
+* xref:manage-skype-for-business-online-with-microsoft-365-powershell.adoc[*Skype for Business Online*]
++
+Start here to manage Skype for Business Online.

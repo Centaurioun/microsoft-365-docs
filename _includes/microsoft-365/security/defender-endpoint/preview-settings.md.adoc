@@ -1,0 +1,46 @@
+= Turn on the preview experience in Microsoft Defender for Endpoint
+:audience: ITPro
+:author: mjcaparas
+:description: Turn on the preview experience in Microsoft Defender for Endpoint to try upcoming features.
+:keywords: advanced features, settings, block file
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Turn on the preview experience in Microsoft Defender for Endpoint
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-previewsettings-abovefoldlink[Sign up for a free trial.]
+____
+
+Turn on the preview experience setting to be among the first to try upcoming features.
+
+. In the navigation pane, select *Settings* > *Endpoints* > *Advanced features*.
++
+:::image type="content" source="../../media/atp-preview-features-new.png" alt-text="The settings and preview experience" lightbox="../../media/atp-preview-features-new.png":::
+
+. Toggle the setting between *On* and *Off* and select *Save preferences*.
+
+=== Related topics
+
+* xref:data-retention-settings.adoc[Update general settings in Microsoft Defender for Endpoint]
+* xref:advanced-features.adoc[Turn on advanced features in Microsoft Defender for Endpoint]
+* xref:configure-email-notifications.adoc[Configure email notifications in Microsoft Defender for Endpoint]

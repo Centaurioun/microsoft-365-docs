@@ -1,0 +1,187 @@
+= Protect important folders from ransomware from encrypting your files with controlled folder access
+:audience: ITPro
+:author: denisebmsft
+:description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
+:keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: m365-security-compliance
+:ms.custom: asr
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer: oogunrinde, sugamar
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: how-to
+:search.appverid: met150
+
+== Protect important folders with controlled folder access
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+* Microsoft Defender Antivirus
+
+*Applies to*
+
+* Windows
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink[Sign up for a free trial.]
+____
+
+=== What is controlled folder access?
+
+Controlled folder access helps protect your valuable data from malicious apps and threats, such as ransomware.
+Controlled folder access protects your data by checking apps against a list of known, trusted apps.
+Supported on Windows Server 2019, Windows Server 2022, Windows 10, and Windows 11 clients, controlled folder access can be turned on using the Windows Security App, Microsoft Endpoint Configuration Manager, or Intune (for managed devices).
+
+____
+[!NOTE] Scripting engines are not trusted and you cannot allow them access to controlled protected folders.
+For example, PowerShell is not trusted by controlled folder access, even if you allow with link:/microsoft-365/security/defender-endpoint/indicator-certificates[certificate and file indicators].
+____
+
+Controlled folder access works best with xref:microsoft-defender-endpoint.adoc[Microsoft Defender for Endpoint], which gives you detailed reporting into controlled folder access events and blocks as part of the usual xref:investigate-alerts.adoc[alert investigation scenarios].
+
+____
+[!TIP] Controlled folder access blocks don't generate alerts in the xref:alerts-queue.adoc[Alerts queue].
+However, you can view information about controlled folder access blocks in the xref:investigate-machines.adoc[device timeline view], while using xref:advanced-hunting-overview.adoc[advanced hunting], or with xref:custom-detection-rules.adoc[custom detection rules].
+____
+
+=== How does controlled folder access work?
+
+Controlled folder access works by only allowing trusted apps to access protected folders.
+Protected folders are specified when controlled folder access is configured.
+Typically, commonly used folders, such as those used for documents, pictures, downloads, and so on, are included in the list of controlled folders.
+
+Controlled folder access works with a list of trusted apps.
+Apps that are included in the list of trusted software work as expected.
+Apps that are not included in the list are prevented from making any changes to files inside protected folders.
+
+Apps are added to the list based upon their prevalence and reputation.
+Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy.
+Those apps are added to the list automatically.
+
+Apps can also be added manually to the trusted list by using Configuration Manager or Intune.
+Additional actions can be performed from the Microsoft 365 Defender portal.
+
+=== Why controlled folder access is important
+
+Controlled folder access is especially useful in helping to protect your documents and information from https://www.microsoft.com/wdsi/threats/ransomware[ransomware].
+In a ransomware attack, your files can get encrypted and held hostage.
+With controlled folder access in place, a notification appears on the computer where an app attempted to make changes to a file in a protected folder.
+You can link:attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules[customize the notification] with your company details and contact information.
+You can also enable the rules individually to customize what techniques the feature monitors.
+
+The <<review-controlled-folder-access-events-in-windows-event-viewer,protected folders>> include common system folders (including boot sectors), and you can link:customize-controlled-folders.md#protect-additional-folders[add more folders].
+You can also link:customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders[allow apps] to give them access to the protected folders.
+
+You can use xref:audit-windows-defender.adoc[audit mode] to evaluate how controlled folder access would impact your organization if it were enabled.
+
+Controlled folder access is supported on the following versions of Windows:
+
+* link:/windows/whats-new/whats-new-windows-10-version-1709[Windows 10, version 1709] and later
+* Windows 11
+* Windows 2012 R2
+* Windows 2016
+* link:/windows-server/get-started-19/whats-new-19[Windows Server 2019]
+* Windows Server 2022
+
+=== Windows system folders are protected by default
+
+Windows system folders are protected by default, along with several other folders:
+
+The protected folders include common system folders (including boot sectors), and you can add additional folders.
+You can also allow apps to give them access to the protected folders.
+The Windows systems folders that are protected by default are:
+
+* `c:\Users\<username>\Documents`
+* `c:\Users\Public\Documents`
+* `c:\Users\<username>\Pictures`
+* `c:\Users\Public\Pictures`
+* `c:\Users\Public\Videos`
+* `c:\Users\<username>\Videos`
+* `c:\Users\<username>\Music`
+* `c:\Users\Public\Music`
+* `c:\Users\<username>\Favorites`
+
+Default folders appear in the user's profile, under *This PC*.
+
+____
+[!div class="mx-imgBorder"] image:images/defaultfolders.png[Protected Windows default systems folders]
+____
+
+____
+[!NOTE] You can configure additional folders as protected, but you cannot remove the Windows system folders that are protected by default.
+____
+
+=== Requirements for controlled folder access
+
+Controlled folder access requires enabling xref:configure-real-time-protection-microsoft-defender-antivirus.adoc[Microsoft Defender Antivirus real-time protection].
+
+=== Review controlled folder access events in the Microsoft 365 Defender portal
+
+Defender for Endpoint provides detailed reporting into events and blocks as part of its xref:investigate-alerts.adoc[alert investigation scenarios] in the Microsoft 365 Defender portal;
+see xref:../defender/microsoft-365-security-center-mde.adoc[Microsoft Defender for Endpoint in Microsoft 365 Defender].
+
+You can query Microsoft Defender for Endpoint data by using xref:advanced-hunting-overview.adoc[Advanced hunting].
+If you're using xref:audit-windows-defender.adoc[audit mode], you can use xref:advanced-hunting-overview.adoc[advanced hunting] to see how controlled folder access settings would affect your environment if they were enabled.
+
+Example query:
+
+[,powershell]
+----
+DeviceEvents
+| where ActionType in ('ControlledFolderAccessViolationAudited','ControlledFolderAccessViolationBlocked')
+----
+
+=== Review controlled folder access events in Windows Event Viewer
+
+You can review the Windows event log to see events that are created when controlled folder access blocks (or audits) an app:
+
+. Download the https://aka.ms/mp7z2w[Evaluation Package] and extract the file _cfa-events.xml_ to an easily accessible location on the device.
+. Type *Event viewer* in the Start menu to open the Windows Event Viewer.
+. On the left panel, under *Actions*, select *Import custom view...*.
+. Navigate to where you extracted _cfa-events.xml_ and select it.
+Alternatively, xref:event-views.adoc[copy the XML directly].
+. Select *OK*.
+
+The following table shows events related to controlled folder access:
+
+{blank} +  +
+
+|===
+| Event ID | Description
+
+| 5007
+| Event when settings are changed
+
+| 1124
+| Audited controlled folder access event
+
+| 1123
+| Blocked controlled folder access event
+|===
+
+=== View or change the list of protected folders
+
+You can use the Windows Security app to view the list of folders that are protected by controlled folder access.
+
+. On your Windows 10 or Windows 11 device, open the Windows Security app.
+. Select *Virus & threat protection*.
+. Under *Ransomware protection*, select *Manage ransomware protection*.
+. If controlled folder access is turned off, you'll need to turn it on.
+Select *protected folders*.
+. Do one of the following steps:
+ ** To add a folder, select *+ Add a protected folder*.
+ ** To remove a folder, select it, and then select *Remove*.
+
+____
+[!NOTE] <<windows-system-folders-are-protected-by-default,Windows system folders>> are protected by default, and you cannot remove them from the list.
+____

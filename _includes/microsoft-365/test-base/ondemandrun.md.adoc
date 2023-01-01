@@ -1,0 +1,47 @@
+= Run your test on-demand
+:audience: Software-Vendor
+:author: Tinacyt
+:description: How to run your test on-demand
+:f1.keywords: NOCSH
+:manager: rshastri
+:ms.author: tinachen
+:ms.collection: TestBase-M365
+:ms.custom:
+:ms.date: 08/10/2022
+:ms.localizationpriority: medium
+:ms.reviewer: Tinacyt
+:ms.service: test-base
+:ms.topic: troubleshooting
+:search.appverid: MET150
+
+== Run your test on-demand
+
+____
+[!NOTE] Test Base now provides the option to kickoff a test with an on-demand approach.
+____
+
+=== Run as request under Manage packages
+
+For an active package, you can access the run-on-request feature from the Manage packages page.
+
+____
+[!div class="mx-imgBorder"] link:Media/runondemand01-managepackages.png#lightbox[image:Media/runondemand01-managepackages.png[Manage packages\]]
+____
+
+By specifying the OS update type and Windows product which are pre-defined with the package, you can kick off the test on demand which immediately gets scheduled for the current monthly churn of Windows updates.
+
+____
+[!div class="mx-imgBorder"] link:Media/runondemand02-runonrequest.png#lightbox[image:Media/runondemand02-runonrequest.png[Run on request\]]
+____
+
+You don't need the test to be executed with its automatic cadence before you can use the feature.
+You can now decide which product and when to be tested.
+
+____
+[!div class="mx-imgBorder"] link:Media/runondemand03-testsummary.png#lightbox[image:Media/runondemand03-testsummary.png[Testsummary\]]
+____
+
+____
+[!NOTE] Please be remind that only active packages will have Run on request button enabled.
+Make sure you Enable the package for future tests if you would like to opt-in the package for this feature.
+____

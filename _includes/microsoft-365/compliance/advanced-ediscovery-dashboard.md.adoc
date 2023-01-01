@@ -1,0 +1,81 @@
+= eDiscovery (Premium) dashboard for review sets
+:audience: Admin
+:author: robmazz
+:description: Use the Microsoft Purview eDiscovery (Premium) dashboard for review sets to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy.
+:experimental:
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance", "ediscovery"]
+:ms.date: 04/05/2022
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MOE150", "MET150"]
+
+== eDiscovery (Premium) dashboard for review sets
+
+For some cases in Microsoft Purview eDiscovery (Premium), you may have a large volume of documents and email messages that need to be reviewed.
+Before you start the review process, you may want to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy.
+To do this, you can use the eDiscovery (Premium) dashboard for review sets to quickly analyze your corpus.
+
+=== Step 1: Create a widget on the review set dashboard
+
+. In the Microsoft Purview compliance portal, go to menu:eDiscovery[eDiscovery (Premium)] to display the list of cases in your organization.
+. Select an existing case.
+. Click the *Review Set* tab, and then select a review set.
+. In the *Individual results* dropdown list, click *Search profile view*.
++
+image::../media/dashboardpivot.png[DashboardPivot.]
++
+The *Search profile view* page is displayed;
+the first time you display this page, three default widgets are displayed.
++
+image::../media/dashboardonly.png[Dashboard.]
+
+. Click the *New  widget* and then select one of the following items:
++
+image::../media/NewWidgetDropdownBox.png[New widget dropdown list.]
+
+ ** *Choose from library:* Displays a default library of widgets.
+You click a widget and then click *Add* to add it to the widgets on the *Search profile view* page.
+ ** *Create custom widget:* Displays a flyout page that you can use to set up a custom widget.
+
+. To create a custom widget, do the following on the *Add widget* flyout page:
++
+image::../media/addwidget.png[Create Widget.]
++
+a.
+Type a name for the widget, which is displayed in the widget title bar.
+Naming a widget is required, but it's helpful to identify the widget data.
++
+b.
+Select a property in the *Choose pivot* dropdown list that will be used for the widget data.
+The items in this list are the searchable properties for the items in the review set.
+For a description of these properties, see xref:document-metadata-fields-in-Advanced-eDiscovery.adoc[Document metadata fields in eDiscovery (Premium)].
+The pivot options for the widget are listed in the *Searchable field name* column in this topic.
++
+c.
+Select a chart type to display the data from the selected pivot property.
+
+. Click *Add* to create the custom widget and display it on the *Search profile view* page.
+
+=== Step 2: Create a review set search query
+
+. Click *...* in the widget title bar, and then click *Apply condition*.
++
+image::../media/searchprofilehome.png[Dashboard home.]
+
+. On the flyout page, click an element on the widget key or widget chart to create a filter.
++
+image::../media/applyconditionfilter.png[CreateFilter.]
+
+. Repeat steps 1-2 for other widgets multiple widgets.
+. When you're done, click *Save as query* to save your conditions as a new search query for the review set.
++
+image::../media/savequery.png[Query.]
+
+. Close the *Search profile view* to return to the search results view.
++
+If you have created any visual filters, the resulting query is applied to the search results that are displayed, and the search query that you saved in step 4 is displayed under *Saved queries*.
+For more information about review set queries, see xref:review-set-search.adoc[Query the data in a review set].

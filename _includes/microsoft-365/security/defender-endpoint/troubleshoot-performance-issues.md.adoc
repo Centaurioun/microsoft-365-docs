@@ -1,0 +1,337 @@
+= Troubleshoot performance issues
+:audience: ITPro
+:author: schmurky
+:description: Troubleshoot high CPU usage related to the real-time protection service in Microsoft Defender for Endpoint.
+:keywords: troubleshoot, performance, high CPU utilization, high CPU usage, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
+:manager: dansimp
+:ms.author: maccruz
+:ms.collection: m365-security-compliance
+:ms.date: 10/19/2021
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: troubleshooting
+:search.appverid: met150
+
+== Troubleshoot performance issues related to real-time protection
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+If your system is having high CPU usage or performance issues related to the real-time protection service in Microsoft Defender for Endpoint, you can submit a ticket to Microsoft support.
+Follow the steps in xref:collect-diagnostic-data.adoc[Collect Microsoft Defender Antivirus diagnostic data].
+
+As an admin, you can also troubleshoot these issues on your own.
+
+First, you might want to check if the issue is being caused by another software.
+Read <<check-with-vendor-for-antivirus-exclusions,Check with vendor for antivirus exclusions>>.
+
+Otherwise, you can identify which software is related to the identified performance issue by following the steps in <<analyze-the-microsoft-protection-log,Analyze the Microsoft Protection Log>>.
+
+You can also provide additional logs to your submission to Microsoft support by following the steps in:
+
+* <<capture-process-logs-using-process-monitor,Capture process logs using Process Monitor>>
+* <<capture-performance-logs-using-windows-performance-recorder,Capture performance logs using Windows Performance Recorder>>
+
+=== Check with vendor for antivirus exclusions
+
+If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center.
+Search if they have recommendations about antivirus exclusions.
+If the vendor's website does not have them, you can open a support ticket with them and ask them to publish one.
+
+We recommend that software vendors follow the various guidelines in https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/[Partnering with the industry to minimize false positives].
+The vendor can submit their software through the https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper[Microsoft Security Intelligence portal].
+
+=== Analyze the Microsoft Protection Log
+
+You can find the Microsoft protection log file in *C:\ProgramData\Microsoft\Windows Defender\Support*.
+
+In *MPLog-xxxxxxxx-xxxxxx.log*, you can find the estimated performance impact information of running software as _EstimatedImpact_:
+
+`Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
+
+{blank} +
+
+'''
+
+|===
+| Field name | Description
+
+| ProcessImageName
+| Process image name
+
+| TotalTime
+| The cumulative duration in milliseconds spent in scans of files accessed by this process
+
+| Count
+| The number of scanned files accessed by this process
+
+| MaxTime
+| The duration in milliseconds in the longest single scan of a file accessed by this process
+
+| MaxTimeFile
+| The path of the file accessed by this process for which the longest scan of `MaxTime` duration was recorded
+
+| EstimatedImpact
+| The percentage of time spent in scans for files accessed by this process out of the period in which this process experienced scan activity
+
+|
+|
+|===
+
+If the performance impact is high, try adding the process to the Path/Process exclusions by following the steps in xref:collect-diagnostic-data.adoc[Configure and validate exclusions for Microsoft Defender Antivirus scans].
+
+If the previous step doesn't solve the problem, you can collect more information through the <<capture-process-logs-using-process-monitor,Process Monitor>> or the <<capture-performance-logs-using-windows-performance-recorder,Windows Performance Recorder>> in the following sections.
+
+=== Capture process logs using Process Monitor
+
+Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time processes.
+You can use this to capture the performance issue as it is occurring.
+
+. Download link:/sysinternals/downloads/procmon[Process Monitor v3.89] to a folder like `C:\temp`.
+. To remove the file's mark of the web:
+ .. Right-click *ProcessMonitor.zip* and select *Properties*.
+ .. Under the _General_ tab, look for _Security_.
+ .. Check the box beside *Unblock*.
+ .. Select *Apply*.
+
++
+:::image type="content" source="images/procmon-motw.png" alt-text="The Remove MOTW page" lightbox="images/procmon-motw.png":::
+. Unzip the file in `C:\temp` so that the folder path will be `C:\temp\ProcessMonitor`.
+. Copy *ProcMon.exe*  to the Windows client or Windows server you're troubleshooting.
+. Before running ProcMon, make sure all other applications not related to the high CPU usage issue are closed.
+Doing this will minimize the number of processes to check.
+. You can launch ProcMon in two ways.
+ .. Right-click *ProcMon.exe* and select *Run as administrator*.
++
+Since logging starts automatically, select the magnifying glass icon  to stop the current capture or use the keyboard shortcut *Ctrl+E*.
++
+:::image type="content" source="images/procmon-magglass.png" alt-text="The magnifying glass icon" lightbox="images/procmon-magglass.png":::
++
+To verify that you have stopped the capture, check if the magnifying glass icon now appears with a red X.
++
+:::image type="content" source="images/procmon-magglass-stop.png" alt-text="The red slash" lightbox="images/procmon-magglass-stop.png":::
++
+Next, to clear the earlier capture, select the eraser icon.
++
+:::image type="content" source="images/procmon-eraser-clear.png" alt-text="The clear icon" lightbox="images/procmon-eraser-clear.png":::
++
+Or use the keyboard shortcut *Ctrl+X*.
+
+ .. The second way is to run the *command line* as admin, then from the Process Monitor path, run:
++
+:::image type="content" source="images/cmd-procmon.png" alt-text="The cmd procmon" lightbox="images/cmd-procmon.png":::
++
+[,console]
+----
+ Procmon.exe /AcceptEula /Noconnect /Profiling
+----
++
+____
+[!TIP] Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
+
+:::image type="content" source="images/procmon-minimize.png" alt-text="The page displaying a minimize Procmon" lightbox="images/procmon-minimize.png":::
+____
+. After following one of the procedures in step 6, you'll next see an option to set filters.
+Select *OK*.
+You can always filter the results after the capture is completed.
++
+:::image type="content" source="images/procmon-filter-options.png" alt-text="The page on which System Exclude is chosen as the Filter out Process Name" lightbox="images/procmon-filter-options.png":::
+
+. To start the capture, select the magnifying glass icon again.
+. Reproduce the problem.
++
+____
+[!TIP] Wait for the problem to be fully reproduced, then take note of the timestamp when the trace started.
+____
+
+. Once you have two to four minutes of process activity during the high CPU usage condition, stop the capture by selecting the magnifying glass icon.
+. To save the capture with a unique name and with the .pml format, select *File* then select *Save...*.
+Make sure to select the radio buttons *All events* and *Native Process Monitor Format (PML)*.
++
+:::image type="content" source="images/procmon-savesettings1.png" alt-text="The save settings page" lightbox="images/procmon-savesettings1.png":::
+
+. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
+ ** `%ComputerName%` is the device name
+ ** `MMDDYEAR` is the month, day, and year
+ ** `Repro_of_issue` is the name of the issue you're trying to reproduce
+
++
+____
+[!TIP] If you have a working system, you might want to get a sample log to compare.
+____
+. Zip the .pml file and submit it to Microsoft support.
+
+=== Capture performance logs using Windows Performance Recorder
+
+You can use Windows Performance Recorder (WPR) to include additional information in your submission to Microsoft support.
+WPR is a powerful recording tool that creates Event Tracing for Windows recordings.
+
+WPR is part of the Windows Assessment and Deployment Kit (Windows ADK) and can be downloaded from link:/windows-hardware/get-started/adk-install[Download and install the Windows ADK].
+You can also download it as part of the Windows 10 Software Development Kit at https://developer.microsoft.com/windows/downloads/windows-10-sdk/[Windows 10 SDK].
+
+You can use the WPR user interface by following the steps in <<capture-performance-logs-using-the-wpr-ui,Capture performance logs using the WPR UI>>.
+
+Alternatively, you can also use the command-line tool _wpr.exe_, which is available in Windows 8 and later versions  by following the steps in <<capture-performance-logs-using-the-wpr-cli,Capture performance logs using the WPR CLI>>.
+
+==== Capture performance logs using the WPR UI
+
+____
+[!TIP] If multiple devices are experiencing this issue, use the one which has the most RAM.
+____
+
+. Download and install WPR.
+. Under _Windows Kits_, right-click *Windows Performance Recorder*.
++
+:::image type="content" source="images/wpr-01.png" alt-text="The Start menu" lightbox="images/wpr-01.png":::
++
+Select *More*.
+Select *Run as administrator*.
+
+. When the User Account Control dialog box appears, select *Yes*.
++
+:::image type="content" source="images/wpt-yes.png" alt-text="The UAC page" lightbox="images/wpt-yes.png":::
+
+. Next, download the https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp[Microsoft Defender for Endpoint analysis] profile and save as `MDAV.wprp` to a folder like `C:\temp`.
+. On the WPR dialog box, select *More options*.
++
+:::image type="content" source="images/wpr-03.png" alt-text="The page on which you can select more options" lightbox="images/wpr-03.png":::
+
+. Select *Add Profiles...* and browse to the path of the `MDAV.wprp` file.
+. After that, you should see a new profile set under _Custom measurements_ named _Microsoft Defender for Endpoint analysis_ underneath it.
++
+:::image type="content" source="images/wpr-infile.png" alt-text="The in-file" lightbox="images/wpr-infile.png":::
++
+____
+[!WARNING] If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`.
+Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability.
+You can choose which profiles to add by expanding *Resource Analysis*.
+This custom profile provides the necessary context for in-depth performance analysis.
+____
+
+. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
+ .. Ensure no profiles are selected under the _First-level triage_, _Resource Analysis_ and _Scenario Analysis_ groups.
+ .. Select *Custom measurements*.
+ .. Select *Microsoft Defender for Endpoint analysis*.
+ .. Select *Verbose* under _Detail_ level.
+ .. Select *File* or *Memory* under Logging mode.
+
++
+____
+[!IMPORTANT] You should select _File_ to use the file logging mode if the performance issue can be reproduced directly by the user.
+Most issues fall under this category.
+However, if the user cannot directly reproduce the issue but can easily notice it once the issue occurs, the user should select _Memory_ to use the memory logging mode.
+This ensures that the trace log will not inflate excessively due to the long run time.
+____
+. Now you're ready to collect data.
+Exit all the applications that are not relevant to reproducing the performance issue.
+You can select *Hide options* to keep the space occupied by the WPR window small.
++
+:::image type="content" source="images/wpr-08.png" alt-text="The Hide options" lightbox="images/wpr-08.png":::
++
+____
+[!TIP] Try starting the trace at whole number seconds.
+For instance, 01:30:00.
+This will make it easier to analyze the data.
+Also try to keep track of the timestamp of exactly when the issue is reproduced.
+____
+
+. Select *Start*.
++
+:::image type="content" source="images/wpr-09.png" alt-text="The Record system information page" lightbox="images/wpr-09.png":::
+
+. Reproduce the issue.
++
+____
+[!TIP] Keep the data collection to no more than five minutes.
+Two to three minutes is a good range since a lot of data is being collected.
+____
+
+. Select *Save*.
++
+:::image type="content" source="images/wpr-10.png" alt-text="The Save option" lightbox="images/wpr-10.png":::
+
+. Fill up *Type in a detailed description of the problem:* with information about the problem and how you reproduced the issue.
++
+:::image type="content" source="images/wpr-12.png" alt-text="The pane in which you fill" lightbox="images/wpr-12.png":::
+
+ .. Select *File Name:* to determine where your trace file will be saved.
+By default, it is saved to `%user%\Documents\WPR Files\`.
+ .. Select *Save*.
+
+. Wait while the trace is being merged.
++
+:::image type="content" source="images/wpr-13.png" alt-text="The WPR gathering general trace" lightbox="images/wpr-13.png":::
+
+. Once the trace is saved, select *Open folder*.
++
+:::image type="content" source="images/wpr-14.png" alt-text="The page displaying the notification that WPR trace has been saved" lightbox="images/wpr-14.png":::
++
+Include both the file and the folder in your submission to Microsoft Support.
++
+:::image type="content" source="images/wpr-15.png" alt-text="The details of the file and the folder" lightbox="images/wpr-15.png":::
+
+==== Capture performance logs using the WPR CLI
+
+The command-line tool _wpr.exe_ is part of the operating system starting with Windows 8.
+To collect a WPR trace using the command-line tool wpr.exe:
+
+. Download *https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp[Microsoft Defender for Endpoint analysis]* profile for performance traces to a file named `MDAV.wprp` in a local directory such as `C:\traces`.
+. Right-click the *Start Menu* icon and select *Windows PowerShell (Admin)* or *Command Prompt (Admin)* to open an Admin command prompt window.
+. When the User Account Control dialog box appears, select *Yes*.
+. At the elevated prompt, run the following command to start a Microsoft Defender for Endpoint performance trace:
++
+[,console]
+----
+ wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
+----
++
+____
+[!WARNING] If your Windows Server has 64 GB or RAM or more, use profiles `WDForLargeServers.Light` and `WDForLargeServers.Verbose` instead of profiles `WD.Light` and `WD.Verbose`, respectively.
+Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability.
+____
+
+. Reproduce the issue.
++
+____
+[!TIP] Keep the data collection no to more than five minutes.
+Depending on the scenario, two to three minutes is a good range since a lot of data is being collected.
+____
+
+. At the elevated prompt, run the following command to stop the performance trace, making sure to provide information about the problem and how you reproduced the issue:
++
+[,console]
+----
+ wpr.exe -stop merged.etl "Timestamp when the issue was reproduced, in HH:MM:SS format" "Description of the issue" "Any error that popped up"
+----
+
+. Wait until the trace is merged.
+. Include both the file and the folder in your submission to Microsoft support.
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____
+
+=== See also
+
+* xref:collect-diagnostic-data.adoc[Collect Microsoft Defender Antivirus diagnostic data]
+* xref:configure-exclusions-microsoft-defender-antivirus.adoc[Configure and validate exclusions for Microsoft Defender Antivirus scans]

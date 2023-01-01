@@ -1,0 +1,398 @@
+= DLP policy conditions, exceptions, and actions
+:audience: Admin
+:author: chrfox
+:description: learn about dlp policy conditions and exceptions
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: M365-security-compliance
+:ms.localizationpriority:
+:ms.service: O365-seccomp
+:ms.topic: reference
+:recommendations: false
+:search.appverid: ["MOE150", "MET150"]
+
+== DLP policy conditions, exceptions, and actions
+
+Conditions and exceptions in DLP policies identify sensitive items that the policy is applied to.
+Actions define what happens as a consequence of a condition of exception being met.
+
+* Conditions define what to include
+* Exceptions define what to exclude.
+* Actions define what happens as a consequence of condition or exception being met
+
+Most conditions and exceptions have one property that supports one or more values.
+For example, if the DLP policy is being applied to Exchange emails, the *The sender* is condition requires the sender of the message.
+Some conditions have two properties.
+For example, the *A message header includes any of these words* condition requires one property to specify the message header field, and a second property to specify the text to look for in the header field.
+Some conditions or exceptions don't have any properties.
+For example, the *Attachment is password protected* condition simply looks for attachments in messages that are password protected.
+
+Actions typically require additional properties.
+For example, when the DLP policy rule redirects a message, you need to specify where the message is redirected to.
+// Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.
+
+=== Conditions and exceptions for DLP policies
+
+The tables in the following sections describe the conditions and exceptions that are available in DLP.
+
+* <<senders,Senders>>
+* <<recipients,Recipients>>
+* <<message-subject-or-body,Message subject or body>>
+* <<attachments,Attachments>>
+* <<message-headers,Message headers>>
+* <<message-properties,Message properties>>
+
+==== Senders
+
+If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the sender address location configured.
+By default,  DLP rules use the Header address as the sender address.
+
+image::../media/dlp-conditions-exceptions-meetinginvite-callouts.png[Image of an email header showing the difference between the Envelope (P1) address and the Header (P2) address]
+
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule.
+To set tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+
+[,powershell]
+----
+Set-PolicyConfig -SenderAddressLocation Envelope
+----
+
+To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_.
+The available values are:
+
+* *Header*: Only examine senders in the message headers (for example, the *From*, *Sender*, or *Reply-To* fields).
+This is the default value.
+* *Envelope*: Only examine senders from the message envelope (the *MAIL FROM* value that was used in the SMTP transmission, which is typically stored in the *Return-Path* field).
+* *Header or envelope* (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
+
+|===
+| condition or exception in DLP | condition/exception parameters in Security & Compliance PowerShell | property type | description
+
+| Sender is
+| condition: _From_ +  + exception: _ExceptIfFrom_
+| Addresses
+| Messages that are sent by the specified mailboxes, mail users, mail contacts, or Microsoft 365 groups in the organization.
+
+| The sender is a member of
+| _FromMemberOf_ +  + _ExceptIfFromMemberOf_
+| Addresses
+| Messages that are sent by a member of the specified distribution group, mail-enabled security group, or Microsoft 365 group.
+
+| Sender IP address is
+| condition: _SenderIPRanges_ +  + exception: _ExceptIfSenderIPRanges_
+| IPAddressRanges
+| Messages where the sender's IP address matches the specified IP address, or falls within the specified IP address range.
+
+| Sender address contains words
+| condition: _FromAddressContainsWords_ +  + exception: _ExceptIfFromAddressContainsWords_
+| Words
+| Messages that contain the specified words in the sender's email address.
+
+| Sender address matches patterns
+| condition: _FromAddressMatchesPatterns_ +  + exception: _ExceptFromAddressMatchesPatterns_
+| Patterns
+| Messages where the sender's email address contains text patterns that match the specified regular expressions.
+
+| Sender domain is
+| condition: _SenderDomainIs_ +  + exception: _ExceptIfSenderDomainIs_
+| DomainName
+| Messages where the domain of the sender's email address matches the specified value.
+If you need to find sender domains that _contain_ the specified domain (for example, any subdomain of a domain), use *The sender address matches*(_FromAddressMatchesPatterns_) condition and specify the domain by using the syntax: '.domain.com$'.
+
+| Sender scope
+| condition: _FromScope_ +  + exception: _ExceptIfFromScope_
+| UserScopeFrom
+| Messages that are sent by either internal or external senders.
+
+| The sender's specified properties include any of these words
+| condition: _SenderADAttributeContainsWords_ +  + exception: _ExceptIfSenderADAttributeContainsWords_
+| First property: `ADAttribute` +  + Second property: `Words`
+| Messages where the specified Active Directory attribute of the sender contains any of the specified words.
+
+| The sender's specified properties match these text patterns
+| condition: _SenderADAttributeMatchesPatterns_ +  + exception: _ExceptIfSenderADAttributeMatchesPatterns_
+| First property: `ADAttribute` +  + Second property: `Patterns`
+| Messages where the specified Active Directory attribute of the sender contains text patterns that match the specified regular expressions.
+|===
+
+==== Recipients
+
+|===
+| condition or exception in DLP | condition/exception parameters in Security & Compliance PowerShell | property type | description
+
+| Recipient is
+| condition: _SentTo_ +  + exception: _ExceptIfSentTo_
+| Addresses
+| Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the organization.
+The recipients can be in the *To*, *Cc*, or *Bcc* fields of the message.
+
+| Recipient domain is
+| condition: _RecipientDomainIs_ +  + exception: _ExceptIfRecipientDomainIs_
+| DomainName
+| Messages where the domain of the recipient's email address matches the specified value.
+
+| Recipient address contains words
+| condition: _AnyOfRecipientAddressContainsWords_ +  + exception: _ExceptIfAnyOfRecipientAddressContainsWords_
+| Words
+| Messages that contain the specified words in the recipient's email address.
++  + *Note*: This condition doesn't consider messages that are sent to recipient proxy addresses.
+It only matches messages that are sent to the recipient's primary email address.
+
+| Recipient address matches patterns
+| condition: _AnyOfRecipientAddressMatchesPatterns_ +  + exception: _ExceptIfAnyOfRecipientAddressMatchesPatterns_
+| Patterns
+| Messages where a recipient's email address contains text patterns that match the specified regular expressions.
++  + *Note*: This condition doesn't consider messages that are sent to recipient proxy addresses.
+It only matches messages that are sent to the recipient's primary email address.
+
+| Sent to member of
+| condition: _SentToMemberOf_ +  + exception: _ExceptIfSentToMemberOf_
+| Addresses
+| Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Microsoft 365 group.
+The group can be in the *To*, *Cc*, or *Bcc* fields of the message.
+
+| The recipient's specified properties include any of these words
+| _RecipientADAttributeContainsWords_ +  + _ExceptIfRecipientADAttributeContainsWords_
+| First property: `ADAttribute` +  + Second property: `Words`
+| Messages where the specified Active Directory attribute of a recipient contains any of the specified words.
++  + Note that the *Country* attribute requires the two-letter country code value (for example, DE for Germany).
+
+| The recipient's specified properties match these text patterns
+| _RecipientADAttributeMatchesPatterns_ +  + _ExceptIfRecipientADAttributeMatchesPatterns_
+| First property: `ADAttribute` +  + Second property: `Patterns`
+| Messages where the specified Active Directory attribute of a recipient contains text patterns that match the specified regular expressions.
+|===
+
+==== Message subject or body
+
+|===
+| condition or exception in DLP | condition/exception parameters in Security & Compliance PowerShell | property type | description
+
+| Subject contains words or phrases
+| condition: _SubjectContainsWords_ + exception: _ExceptIf SubjectContainsWords_
+| Words
+| Messages that have the specified words in the Subject field.
+
+| Subject matches patterns
+| condition: _SubjectMatchesPatterns_ + exception: _ExceptIf SubjectMatchesPatterns_
+| Patterns
+| Messages where the Subject field contain text patterns that match the specified regular expressions.
+
+| Content contains
+| condition: _ContentContainsSensitiveInformation_ + exception _ExceptIfContentContainsSensitiveInformation_
+| SensitiveInformationTypes
+| Messages or documents that contain sensitive information as defined by Microsoft Purview Data Loss Prevention (DLP) policies.
+
+| Subject or Body matches pattern
+| condition: _SubjectOrBodyMatchesPatterns_ + exception: _ExceptIfSubjectOrBodyMatchesPatterns_
+| Patterns
+| Messages where the subject field or message body contains text patterns that match the specified regular expressions.
+
+| Subject or Body contains words
+| condition: _SubjectOrBodyContainsWords_ + exception: _ExceptIfSubjectOrBodyContainsWords_
+| Words
+| Messages that have the specified words in the subject field or message body
+
+|
+|
+|
+|
+|===
+
+==== Attachments
+
+|===
+| condition or exception in DLP | condition/exception parameters in Security & Compliance PowerShell | property type | description
+
+| Attachment is password protected
+| condition: _DocumentIsPasswordProtected_ +  + exception: _ExceptIfDocumentIsPasswordProtected_
+| none
+| Messages where an attachment is password protected (and therefore can't be scanned).
+Password detection only works for Office documents, .zip files, and .7z files.
+
+| Attachment's file extension is
+| condition: _ContentExtensionMatchesWords_ +  + exception: _ExceptIfContentExtensionMatchesWords_
+| Words
+| Messages where an attachment's file extension matches any of the specified words.
+
+| Any email attachment's content could not be scanned
+| condition: _DocumentIsUnsupported_ +  + exception: _ExceptIf DocumentIsUnsupported_
+| n/a
+| Messages where an attachment isn't natively recognized by Exchange Online.
+
+| Any email attachment's content didn't complete scanning
+| condition: _ProcessingLimitExceeded_ +  + exception: _ExceptIfProcessingLimitExceeded_
+| n/a
+| Messages where the rules engine couldn't complete the scanning of the attachments.
+You can use this condition to create rules that work together to identify and process messages where the content couldn't be fully scanned.
+
+| Document name contains words
+| condition: _DocumentNameMatchesWords_ +  + exception: _ExceptIfDocumentNameMatchesWords_
+| Words
+| Messages where an attachment's file name matches any of the specified words.
+
+| Document name matches patterns
+| condition: _DocumentNameMatchesPatterns_ +  + exception: _ExceptIfDocumentNameMatchesPatterns_
+| Patterns
+| Messages where an attachment's file name contains text patterns that match the specified regular expressions.
+
+| Document property is
+| condition: _ContentPropertyContainsWords_ +  + exception: _ExceptIfContentPropertyContainsWords_
+| Words
+| Messages with documents where an attachment's custom property matches the given value.
+
+| Document size equals or is greater than
+| condition: _DocumentSizeOver_ +  + exception: _ExceptIfDocumentSizeOver_
+| Size
+| Messages where any attachment is greater than or equal to the specified value.
+
+| Any attachment's content includes any of these words
+| condition: _DocumentContainsWords_ +  + exception: _ExceptIfDocumentContainsWords_
+| `Words`
+| Messages where an attachment contains the specified words.
+
+| Any attachments content matches these text patterns
+| condition: _DocumentMatchesPatterns_ +  + exception: _ExceptIfDocumentMatchesPatterns_
+| `Patterns`
+| Messages where an attachment contains text patterns that match the specified regular expressions.
+|===
+
+==== Message Headers
+
+|===
+| condition or exception in DLP | condition/exception parameters in Security & Compliance PowerShell | property type | description
+
+| Header contains words or phrases
+| condition: _HeaderContainsWords_ +  + exception: _ExceptIfHeaderContainsWords_
+| Hash Table
+| Messages that contain the specified header field, and the value of that header field contains the specified words.
+
+| Header matches patterns
+| condition: _HeaderMatchesPatterns_ +  + exception: _ExceptIfHeaderMatchesPatterns_
+| Hash Table
+| Messages that contain the specified header field, and the value of that header field contains the specified regular expressions.
+|===
+
+==== Message properties
+
+|===
+| condition or exception in DLP | condition/exception parameters in Security & Compliance PowerShell | property type | description
+
+| With importance
+| condition: _WithImportance_ +  + exception: _ExceptIfWithImportance_
+| Importance
+| Messages that are marked with the specified importance level.
+
+| Content character set contains words
+| condition: _ContentCharacterSetContainsWords_ +  + _ExceptIfContentCharacterSetContainsWords_
+| CharacterSets
+| Messages that have any of the specified character set names.
+
+| Has sender override
+| condition: _HasSenderOverride_ +  + exception: _ExceptIfHasSenderOverride_
+| n/a
+| Messages where the sender has chosen to override a data loss prevention (DLP) policy.
+For more information about DLP policies see xref:./dlp-learn-about-dlp.adoc[Learn about data loss prevention]
+
+| Message type matches
+| condition: _MessageTypeMatches_ +  + exception: _ExceptIfMessageTypeMatches_
+| MessageType
+| Messages of the specified type.
+*Note*: The available message types are Automatic reply, Auto-forward, Encrypted (S/MIME), Calendaring, Permission controlled (rights management), Voicemail, Signed, Read receipt, and Approval request.
+
+| The message size is greater than or equal to
+| condition: _MessageSizeOver_ +  + exception: _ExceptIfMessageSizeOver_
+| `Size`
+| Messages where the total size (message plus attachments) is greater than or equal to the specified value.
+*Note*: Message size limits on mailboxes are evaluated before mail flow rules.
+A message that's too large for a mailbox will be rejected before a rule with this condition is able to act on the message.
+|===
+
+=== Actions for DLP policies
+
+This table describes the actions that are available in DLP.
+
+|===
+| action in DLP | action parameters in Security & Compliance PowerShell | property type | description
+
+| Set header
+| SetHeader
+| First property: _Header Name_ +  + Second property: _Header Value_
+| The SetHeader parameter specifies an action for the DLP rule that adds or modifies a header field and value in the message header.
+This parameter uses the syntax "HeaderName:HeaderValue".
+You can specify multiple header name and value pairs separated by commas
+
+| Remove header
+| RemoveHeader
+| First property: _MessageHeaderField_ +  + Second property: _String_
+| The RemoveHeader parameter specifies an action for the DLP rule that removes a header field from the message header.
+This parameter uses the syntax "HeaderName" or "HeaderName:HeaderValue".You can specify multiple header names or header name and value pairs separated by commas
+
+| Redirect the message to specific users
+| _RedirectMessageTo_
+| Addresses
+| Redirects the message to the specified recipients.
+The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.
+
+| Forward the message for approval to sender's manager
+| Moderate
+| First property: _ModerateMessageByManager_ +  + Second property: _Boolean_
+| The Moderate parameter specifies an action for the DLP rule that sends the email message to a moderator.
+This parameter uses the syntax: @{ModerateMessageByManager = <$true \|$false>;
+
+| Forward the message for approval to specific approvers
+| Moderate
+| First property: _ModerateMessageByUser_ +  + Second property: _Addresses_
+| The Moderate parameter specifies an action for the DLP rule that sends the email message to a moderator.
+This parameter uses the syntax: @{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")}
+
+| Add recipient
+| AddRecipients
+| First property: _Field_ +  + Second property: _Addresses_
+| Adds one or more recipients to the To/Cc/Bcc field of the message.
+This parameter uses the syntax: @{<AddToRecipients <CopyTo \| BlindCopyTo> = "emailaddress"}
+
+| Add the sender's manager as recipient
+| AddRecipients
+| First property: _AddedManagerAction_ +  + Second property: _Field_
+| Adds the sender's manager to the message as the specified recipient type (To, Cc, Bcc), or redirects the message to the sender's manager without notifying the sender or the recipient.
+This action only works if the sender's Manager attribute is defined in Active Directory.
+This parameter uses the syntax: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}
+
+| Prepend subject
+| PrependSubject
+| String
+| Adds the specified text to the beginning of the Subject field of the message.
+Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.
++  + To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.
+
+| Apply HTML disclaimer
+| ApplyHtmlDisclaimer
+| First property: _Text_ +  + Second property: _Location_ +  + Third property: _Fallback action_
+| Applies the specified HTML disclaimer to the required location of the message.
++  + This parameter uses the syntax: @{ Text = " " ; Location = <Append \| Prepend>;
+FallbackAction = <Wrap \| Ignore \| Reject> }
+
+| Remove message encryption and rights protection
+| RemoveRMSTemplate
+| n/a
+| Removes message encryption applied on an email
+
+| Deliver the message to the hosted quarantine
+| _Quarantine_
+| n/a
+| This action is currently in *public preview*.
+During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.
++  + Delivers the message to the quarantine in EOP.
+For more information, see link:/microsoft-365/security/office-365-security/quarantine-email-messages[Quarantined email messages in EOP].
+
+| Modify Subject
+| ModifySubject
+| PswsHashTable
+| Remove text from the subject line that matches a specific pattern and replace it with different text.
+See the example below.
+You can: +  + - *Replace* all matches in the subject with the replacement text +  + - *Append* to remove all matches in the subject and inserts the replacement text at the end of the subject.
++  + - *Prepend* to remove all matches and inserts the replacement text at the beginning of the subject.
+See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule
+|===

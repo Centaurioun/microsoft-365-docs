@@ -1,0 +1,181 @@
+= Add a domain to Microsoft 365
+:audience: Admin
+:author: efrene
+:description: Use the setup wizard to add your domain to Microsoft 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
+:ms.author: efrene
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365_Setup", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["VSBFY23", "adminvideo", "TopSMBIssues", "SaRA", "MSStore_Link", "okr_smb", "business_assist", "AdminSurgePortfolio", "AdminTemplateSet"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Add a domain to Microsoft 365
+
+*link:domains-faq.yml[Check the Domains FAQ]* if you don't find what you're looking for.
+
+Check out https://go.microsoft.com/fwlink/?linkid=2197659[Microsoft 365 small business help] on YouTube.
+
+=== Before you begin
+
+To add, modify, or remove domains, you *must* be a *Domain Name Administrator* or *Global Administrator* of a https://products.office.com/business/office[business or enterprise plan].
+These changes affect the whole tenant;
+_Customized administrators_ or _regular users_ won't be able to make these changes.
+
+____
+[!TIP] If you need help with the steps in this topic, consider https://go.microsoft.com/fwlink/?linkid=2186871[working with a Microsoft small business specialist].
+With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+____
+
+=== Watch: Add a domain
+
+Check out this video and others on our https://go.microsoft.com/fwlink/?linkid=2198213[YouTube channel].
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
+____
+
+Your company might need multiple domain names for different purposes.
+For example, you might want to add a different spelling of your company name because customers are already using it and their communications have failed to reach you.
+
+. In the Microsoft 365 admin center, choose https://go.microsoft.com/fwlink/p/?linkid=2171997[*Setup*].
+. Under *Get your custom domain set up*, select *View* > *Manage* > *Add domain*.
+. Enter the new domain name that you want to add, and then select *Next*.
+. Sign in to your domain registrar, and then select *Next*.
+. Choose the services for your new domain.
+. Select *Next* > *Authorize* > *Next*, and then *Finish*.
+Your new domain has been added.
+
+=== Add a domain
+
+Follow these steps to add, set up, or continue setting up a domain.
+
+::: moniker range="o365-worldwide"
+
+. Go to the admin center at https://go.microsoft.com/fwlink/p/?linkid=2024339[https://admin.microsoft.com].
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+. Go to the admin center at https://go.microsoft.com/fwlink/p/?linkid=850627[https://portal.partner.microsoftonline.cn].
+
+::: moniker-end
+
+. Go to the *Settings* > *Domains* page.
+. Select *Add domain*.
+. Enter the name of the domain you want to add, then select *Next*.
+. Choose how you want to verify that you own the domain.
+ .. If your domain registrar uses <<domain-connect-registrars-integrating-with-microsoft-365,Domain Connect>>, Microsoft xref:../get-help-with-domains/domain-connect.adoc[will set up your records automatically] by having you sign in to your registrar and confirm the connection to Microsoft 365.
+You'll be returned to the admin center and Microsoft will then automatically verify your domain.
+ .. You can use a TXT record to verify your domain.
+Select this and select *Next* to see instructions for how to add this DNS record to your registrar's website.
+This can take up to 30 minutes to verify after you've added the record.
+ .. You can add a text file to your domain's website.
+Select and download the .txt file from the setup wizard, then upload the file to your website's top level folder.
+The path to the file should look similar to: `+http://mydomain.com/ms39978200.txt+`.
+We'll confirm you own the domain by finding the file on your website.
+. Choose how you want to make the DNS changes required for Microsoft to use your domain.
+ .. Choose *Add the DNS records for me* if your registrar supports <<domain-connect-registrars-integrating-with-microsoft-365,Domain Connect>>, and Microsoft xref:../get-help-with-domains/domain-connect.adoc[will set up your records automatically] by having you sign in to your registrar and confirm the connection to Microsoft 365.
+ .. Choose *I'll add the DNS records myself* if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later.
+*Choose this option if you know exactly what you're doing.*
+. If you chose to _add DNS records yourself_, select *Next* and you'll see a page with all the records that you need to add to your registrars website to set up your domain.
++
+If the portal doesn't recognize your registrar, you can xref:../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.adoc[follow these general instructions.]
++
+If you don't know the DNS hosting provider or domain registrar for your domain, see xref:../get-help-with-domains/find-your-domain-registrar.adoc[Find your domain registrar or DNS hosting provider].
++
+If you want to wait for later, either unselect all the services and click *Continue*, or in the previous domain connection step choose *More Options* and select *Skip this for now*.
+
+. Select *Finish* - you're done!
+
+=== Add or edit custom DNS records
+
+Follow the steps below to add a custom record for a website or 3rd party service.
+
+. Sign in to the Microsoft admin center at https://go.microsoft.com/fwlink/p/?linkid=2024339[https://admin.microsoft.com].
+. Go to the *Settings*  > *Domains* page.
+. On the *Domains* page, select a domain.
+. Under *DNS settings*, select *Custom Records*;
+then select *New custom record*.
+. Select the type of DNS record you want to add and type the information for the new record.
+. Select *Save*.
+
+=== Registrars with Domain Connect
+
+https://www.domainconnect.org/[Domain Connect] enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes.
+
+In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.
+
+____
+[!NOTE] Make sure you disable any popup blockers in your browser before you start the setup wizard.
+____
+
+==== Domain Connect registrars integrating with Microsoft 365
+
+* https://www.1and1.com/[1&1 IONOS]
+* https://www.eurodns.com/[EuroDNS]
+* https://www.cloudflare.com/[Cloudflare]
+* https://www.godaddy.com/[GoDaddy]
+* https://wordpress.com/[WordPress.com]
+* https://www.plesk.com/[Plesk]
+* https://mediatemple.net/[MediaTemple]
+* SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)
+ ** Examples:
+  *** https://www.domainspricedright.com/products/domain-registration[DomainsPricedRight]
+  *** https://www.domainrightnow.com/[DomainRightNow]
+
+==== What happens to my email and website?
+
+After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365.
+Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!
+
+If you have a website that you use with your business, it will keep working where it is.
+The Domain Connect setup steps don't affect your website.
+
+==== Add an onmicrosoft.com domain
+
+Each Microsoft 365 organization can have up to five onmicrosoft.com domains.
+
+____
+[!NOTE] You must be a Global admin or a Domain Name admin to add a domain.
+Creating an additional .onmicrosoft domain and using it as your default will not do a rename for SharePoint Online.
+To make changes to your .onmicrosoft SharePoint domain you would need to use the link:/sharepoint/change-your-sharepoint-domain-name[SharePoint domain rename preview] (currently available to any tenant with less than 10,000 sites).
+If you're using Microsoft 365 mail services, removal of your initial .onmicrosoft domain is not supported.
+____
+
+To add an onmicrosoft.com domain:
+
+. In the Microsoft 365 admin center, select *Settings*, and then select *Domains*.
+. Select an existing _.onmicrosoft.com_ domain.
++
+image::../../media/onmicrosoft-domains.png[Domains page.]
+
+. On the *Overview* tab, select *Add onmicrosoft.com domain*.
++
+image::../../media/add-onmicrosoft-domain-link.png[Screenshot of domain properties.]
+
+. On the *Add onmicrosoft domain* page, in the *Domain name* box, enter the name for your new onmicrosoft.com domain.
++
+image::../../media/add-an-onmicrosoftcom-domain-page.png[Screenshot of Add onmicrosoft domain.]
++
+____
+[!NOTE] Make sure to verify the spelling and accuracy of the domain name you entered.
+You are limited to five onmicrosoft.com domains, and currently they cannot be deleted once they are created.
+____
+
+. Select *Add domain*.
+When successfully added, you will see a message stating this.
++
+image::../../media/domain-added.png[Screenshot of domain added successfully.]
+
+You can set any domain you own as your default domain.
+
+For more details on how to add an onmicrosoft.com domain, see xref:add-or-replace-your-onmicrosoftcom-domain.adoc[Add or replace your onmicrosoft.com domain].
+
+=== Related content
+
+link:domains-faq.yml[Domains FAQ] (article)</br> xref:../get-help-with-domains/what-is-a-domain.adoc[What is a domain?] (article)</br> xref:../get-help-with-domains/buy-a-domain-name.adoc[Buy a domain name in Microsoft 365] (article)</br> xref:../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.adoc[Add DNS records to connect your domain] (article)</br> xref:../get-help-with-domains/change-nameservers-at-any-domain-registrar.adoc[Change nameservers to set up Microsoft 365 with any domain registrar] (article)

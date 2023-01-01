@@ -1,0 +1,29 @@
+= Create DNS records for Office 365 when you manage your DNS records
+:ROBOTS: NOINDEX
+:audience: Admin
+:author: efrene
+:description: Learn to create DNS records for Office 365 operated by 21Vianet when your manage your DNS records.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:monikerRange: o365-21vianet
+:ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
+:ms.author: efrene
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_NonTOC"]
+:ms.custom: AdminSurgePortfolio
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["MET150", "GEA150"]
+
+== Create DNS records for Office 365 when you manage your DNS records
+
+For detailed instructions about how to create DNS records for Office 365 operated by 21Vianet, including the MX record required for mail routing, see xref:../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.adoc[Create DNS records at any DNS hosting provider for Office 365].
+
+More options and some things to be aware of:
+
+* If you don't know the DNS hosting provider or domain registrar for your domain, see xref:../get-help-with-domains/find-your-domain-registrar.adoc[Find your domain registrar or DNS hosting provider].
+For descriptions of what the DNS records do, see xref:../get-help-with-domains/dns-basics.adoc[DNS basics].
+* Some DNS hosting providers don't let you create all the required record types, which causes https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection].
+If your provider doesn't support SRV, TXT, or CNAME records, we recommend that you xref:../get-help-with-domains/buy-a-domain-name.adoc[transfer your domain] to a https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77[provider that supports all required record types].
+* To see which DNS records are required and find the values to use for each record, including the MX record for email, see xref:../get-help-with-domains/information-for-dns-records.adoc[Gather the information you need to create Office 365 DNS records].
+For descriptions of what the DNS records do, see xref:../get-help-with-domains/dns-basics.adoc[DNS basics].

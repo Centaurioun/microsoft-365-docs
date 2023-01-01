@@ -1,0 +1,63 @@
+= Create the Microsoft 365 Defender Evaluation Environment for greater cyber security and XDR
+:audience: ITPro
+:author: MSFTTracyP
+:description: Learn what's included in the Microsoft 365 Defender XDR you will evaluate, and se up your Microsoft 365 Defender trial lab or pilot environment by activating trial licenses. Start your XDR cyber security journey here and learn how to take that test to production.
+:f1.keywords: ["NOCSH"]
+:manager: dansimp
+:ms.author: tracyp
+:ms.collection: ["M365-security-compliance", "m365solution-scenario", "m365solution-evalutatemtp", "zerotrust-solution", "highpri"]
+:ms.date: 05/19/2021
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: how-to
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Step 1. Create the Microsoft 365 Defender Evaluation Environment for greater cyber security
+
+You can learn about and build out this Microsoft Defender XDR solution in steps that are distributed through the rest of this series:
+
+* xref:eval-create-eval-environment.adoc[How to create the environment]
+* Set up or learn about each technology of this Microsoft XDR
+ ** xref:eval-defender-identity-overview.adoc[Microsoft Defender for Identity]
+ ** xref:eval-defender-office-365-overview.adoc[Microsoft Defender for Office]
+ ** xref:eval-defender-endpoint-overview.adoc[Microsoft Defender for Endpoint]
+ ** xref:eval-defender-mcas-overview.adoc[Microsoft Defender for Cloud Apps]
+* xref:eval-defender-investigate-respond.adoc[How to investigate and respond using this XDR]
+* xref:eval-defender-promote-to-production.adoc[Promote the trial environment to production]
+* xref:eval-overview.adoc[Back to the Overview]
+
+The steps in this series run end-to-end, from learning the concepts behind the Microsoft 365 Defender XDR to building it, and into taking the evaluation environment live to production.
+
+There are two common ways to do this next step in evaluation.
+This series assumes you already have a production Microsoft 365 tenant and will activate E5 trial licenses to evaluate Microsoft 365 Defender in _the current environment_.
+An in-place evaluation will let you keep any security methods with the purchase of licenses after the evaluation period.
+
+The second is to  xref:setup-m365deval.adoc[Set up your Microsoft 365 Defender trial lab environment] for the purpose of evaluation.
+Note that it may not have many real signals from the business while in testing.
+
+=== You will need to activate E5 trial licenses to evaluate Microsoft 365 Defender
+
+. Log on to your existing Microsoft 365 tenant administration portal.
+. Select *Purchase Services* from the navigation menu.
+. Scroll down to the Office 365 section and select *Details* button under Office 365 E5 license.
++
+:::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="The Details button in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
+
+. Select *Start free trial* link.
++
+:::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="The Start free trial button in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
+
+. Confirm your request and click *Try now* button.
++
+:::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="The Try Now button in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
+
+=== Go to the next step
+
+xref:eval-defender-identity-overview.adoc[Learn how to enable Microsoft 365 for Identity]
+
+Or return to the Overview for xref:eval-overview.adoc[Evaluate and pilot Microsoft 365 Defender]

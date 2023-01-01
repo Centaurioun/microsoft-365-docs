@@ -1,0 +1,184 @@
+= Turn on cloud protection in Microsoft Defender Antivirus
+:author: denisebmsft
+:description: Turn on cloud protection to benefit from fast and advanced protection features.
+:experimental:
+:keywords: Microsoft Defender Antivirus, antimalware, security, cloud, block at first sight
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: m365-security-compliance
+:ms.custom: nextgen
+:ms.date: 02/03/2022
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.reviewer: mkaminska
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: conceptual
+:search.appverid: met150
+
+== Turn on cloud protection in Microsoft Defender Antivirus
+
+*Applies to:*
+
+* Microsoft Defender Antivirus
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+
+*Platforms*
+
+* Windows
+
+xref:cloud-protection-microsoft-defender-antivirus.adoc[Cloud protection in Microsoft Defender Antivirus] delivers accurate, real-time, and intelligent protection.
+Cloud protection should be enabled by default;
+however, you can configure cloud protection to suit your organization's needs.
+
+=== Methods to configure cloud protection
+
+You can turn Microsoft Defender Antivirus cloud protection on or off by using one of several methods:
+
+* Microsoft Endpoint Manager, which includes Microsoft Intune and Configuration Manager
+* Group Policy
+* PowerShell cmdlets
+
+You can also turn cloud protection on or off on individual endpoints using the Windows Security app.
+
+For more information about the specific network-connectivity requirements to ensure your endpoints can connect to the cloud protection service, see xref:configure-network-connections-microsoft-defender-antivirus.adoc[Configure and validate network connections].
+
+____
+[!NOTE] In Windows 10 and Windows 11, there is no difference between the *Basic* and *Advanced* reporting options described in this article.
+This is a legacy distinction and choosing either setting will result in the same level of cloud protection.
+There is no difference in the type or amount of information that is shared.
+For more information on what we collect, see the https://go.microsoft.com/fwlink/?linkid=521839[Microsoft Privacy Statement].
+____
+
+=== Use Intune to turn on cloud protection
+
+. Go to the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com) and sign in.
+. On the *Home* pane, select menu:Device configuration[Profiles].
+. Select the *Device restrictions* profile type you want to configure.
+If you need to create a new *Device restrictions* profile type, see link:/intune/device-restrictions-configure[Configure device restriction settings in Microsoft Intune].
+. Select *Properties* > *Configuration settings: Edit* > *Microsoft Defender Antivirus*.
+. On the *Cloud-delivered protection* switch, select *Enable*.
+. In the *Prompt users before sample submission* dropdown, select *Send all data automatically*.
+
+For more information about Intune device profiles, including how to create and configure their settings, see link:/intune/device-profiles[What are Microsoft Intune device profiles?]
+
+=== Use Microsoft Endpoint Manager to turn on cloud protection
+
+. Go to the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com) and sign in.
+. Choose *Endpoint security* > *Antivirus*.
+. Select an antivirus profile.
+(If you don't have one yet, or if you want to create a new profile, see link:/intune/device-restrictions-configure[Configure device restriction settings in Microsoft Intune].
+. Select *Properties*.
+Then, next to *Configuration settings*, choose *Edit*.
+. Expand *Cloud protection*, and then in the *Cloud-delivered protection level* list, select one of the following:
+ ** *High*: Applies a strong level of detection.
+ ** *High plus*: Uses the *High* level and applies more protection measures (may affect client performance).
+ ** *Zero tolerance*: Blocks all unknown executables.
+. Select *Review + save*, then choose *Save*.
+
+For more information about configuring Microsoft Endpoint Configuration Manager, see link:/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service[How to create and deploy antimalware policies: Cloud-protection service].
+
+=== Use Group Policy to turn on cloud protection
+
+. On your Group Policy management device, open the link:/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)[Group Policy Management Console], right-click the Group Policy Object you want to configure and select *Edit*.
+. In the *Group Policy Management Editor*, go to *Computer configuration*.
+. Select *Administrative templates*.
+. Expand the tree to *Windows components* > menu:Microsoft Defender Antivirus[MAPS]
++
+____
+[!NOTE] MAPS settings are equal to cloud-delivered protection.
+____
+
+. Double-click *Join Microsoft MAPS*.
+Ensure the option is turned on and set to *Basic MAPS* or *Advanced MAPS*.
+Select *OK*.
++
+You can choose to send basic or additional information about detected software:
+
+ ** Basic MAPS: Basic membership will send basic information to Microsoft about malware and potentially unwanted software that has been detected on your device.
+Information includes where the software came from (like URLs and partial paths), the actions taken to resolve the threat, and whether the actions were successful.
+ ** Advanced MAPS: In addition to basic information, advanced membership will send detailed information about malware and potentially unwanted software, including the full path to the software, and detailed information about how the software has affected your device.
+
+. Double-click *Send file samples when further analysis is required*.
+Ensure that the first option is set to *Enabled* and that the other options are set to either:
+ ** *Send safe samples* (1)
+ ** *Send all samples* (3)
+
++
+____
+[!NOTE] The *Send safe samples* (1) option means that most samples will be sent automatically.
+Files that are likely to contain personal information will still prompt and require additional confirmation.
+Setting the option to *Always Prompt* (0) will lower the protection state of the device.
+Setting it to *Never send* (2) means that the xref:configure-block-at-first-sight-microsoft-defender-antivirus.adoc[Block at First Sight] feature of Microsoft Defender for Endpoint won't work.
+____
+. Select *OK*.
+
+=== Use PowerShell cmdlets to turn on cloud protection
+
+The following cmdlets can turn on cloud protection:
+
+[,powershell]
+----
+Set-MpPreference -MAPSReporting Advanced
+Set-MpPreference -SubmitSamplesConsent SendAllSamples
+----
+
+For more information on how to use PowerShell with Microsoft Defender Antivirus, see xref:use-powershell-cmdlets-microsoft-defender-antivirus.adoc[Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus] and link:/powershell/module/defender/[Microsoft Defender Antivirus cmdlets].
+link:/windows/client-management/mdm/policy-csp-defender[Policy CSP - Defender] also has more information specifically on link:/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent[-SubmitSamplesConsent].
+
+____
+[!IMPORTANT] You can set *-SubmitSamplesConsent* to `SendSafeSamples` (the default, recommended setting), `NeverSend`, or `AlwaysPrompt`.
+The `SendSafeSamples` setting means that most samples will be sent automatically.
+Files that are likely to contain personal information will result in a prompt to continue and will require confirmation.
+The `NeverSend` and `AlwaysPrompt` settings lower the protection level of the device.
+Furthermore, the `NeverSend` setting means that the xref:configure-block-at-first-sight-microsoft-defender-antivirus.adoc[Block at First Sight] feature of Microsoft Defender for Endpoint won't work.
+____
+
+=== Use Windows Management Instruction (WMI) to turn on cloud protection
+
+Use the link:/previous-versions/windows/desktop/defender/set-msft-mppreference[*Set* method of the *MSFT_MpPreference*] class for the following properties:
+
+[,wmi]
+----
+MAPSReporting
+SubmitSamplesConsent
+----
+
+For more information about allowed parameters, see link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[Windows Defender WMIv2 APIs]
+
+=== Turn on cloud protection on individual clients with the Windows Security app
+
+____
+[!NOTE] If the *Configure local setting override for reporting Microsoft MAPS* Group Policy setting is set to *Disabled*, then the *Cloud-based protection* setting in Windows Settings will be greyed-out and unavailable.
+Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
+____
+
+. Open the Windows Security app by selecting the shield icon in the task bar, or by searching the start menu for *Windows Security*.
+. Select the *Virus & threat protection* tile (or the shield icon on the left menu bar), and then, under *Manage settings* select *Virus & threat protection settings*.
++
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="The Virus & threat protection settings" lightbox="../../media/wdav-protection-settings-wdsc.png":::
+
+. Confirm that *Cloud-based Protection* and *Automatic sample submission* are switched to *On*.
++
+____
+[!NOTE] If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.
+____
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____
+
+=== See also
+
+* xref:cloud-protection-microsoft-defender-antivirus.adoc[Use Microsoft cloud protection in Microsoft Defender Antivirus]
+* link:/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service[How to create and deploy antimalware policies: Cloud-protection service]
+* xref:use-powershell-cmdlets-microsoft-defender-antivirus.adoc[Use PowerShell cmdlets to manage Microsoft Defender Antivirus]

@@ -1,0 +1,79 @@
+= Manage automation folder exclusions
+:audience: ITPro
+:author: mjcaparas
+:description: Add automation folder exclusions to control the files that are excluded from an automated investigation.
+:keywords: manage, automation, exclusion, block, clean, malicious
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Manage automation folder exclusions
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink[Sign up for a free trial.]
+____
+
+Automation folder exclusions allow you to specify folders that the Automated investigation will skip.
+
+You can control the following attributes about the folder that you'd like to be skipped:
+
+* *Folders*: You can specify a folder and its subfolders to be skipped.
++
+____
+[!NOTE] At this time, use of wild cards as a way to exclude files under a directory is not yet supported.
+____
+
+* *Extensions of the files*: You can specify the extensions to exclude in a specific directory.
+The extensions are a way to prevent an attacker from using an excluded folder to hide an exploit.
+The extensions explicitly define which files to ignore.
+* *File names*: You can specify the file names that you want to be excluded in a specific directory.
+The names are a way to prevent an attacker from using an excluded folder to hide an exploit.
+The names explicitly define which files to ignore.
+
+=== Add an automation folder exclusion
+
+. In the navigation pane, select *Settings* > *Endpoints* > *Rules* > *Automation folder exclusions*.
+. Click *New folder exclusion*.
+. Enter the folder details:
+ ** Folder
+ ** Extensions
+ ** File names
+ ** Description
+. Click *Save*.
+
+____
+[!NOTE] Live Response commands to collect or examine excluded files will fail with error: "File is excluded".
+In addition, automated investigations will ignore the excluded items.
+____
+
+=== Edit an automation folder exclusion
+
+. In the navigation pane, select *Settings* > *Endpoints* > *Rules* > *Automation folder exclusions*.
+. Click *Edit* on the folder exclusion.
+. Update the details of the rule and click *Save*.
+
+=== Remove an automation folder exclusion
+
+. In the navigation pane, select *Settings* > *Endpoints* > *Rules* > *Automation folder exclusions*.
+. Click *Remove exclusion*.
+
+=== Related topics
+
+* xref:manage-indicators.adoc[Manage automation allowed/blocked lists]
+* xref:manage-automation-file-uploads.adoc[Manage automation file uploads]

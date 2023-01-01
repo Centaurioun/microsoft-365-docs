@@ -1,0 +1,54 @@
+= Insider risk management
+:audience: itpro
+:author: robmazz
+:description: Learn how to configure insider risk management.
+:f1.keywords: ["NOCSH"]
+:keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
+:manager: laurawi
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance", "m365solution-insiderrisk"]
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+
+== Insider risk management
+
+Increasingly, employees have more access to create, manage, and share data across a broad spectrum of platforms and services.
+In most cases, organizations have limited resources and tools to identify and mitigate organization-wide risks while also meeting compliance requirements and employee privacy standards.
+These risks may include data theft by departing employees and data leaks of information outside your organization by accidental oversharing or malicious intent.
+
+Microsoft Purview Insider Risk Management uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity.
+By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators.
+After identifying the risks, you can take action to mitigate these risks.
+
+Watch the videos below to learn how insider risk management can help your organization prevent, detect, and contain risks:  +  +
+
+*Insider risk management solution & development*:
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]  +
+____
+
+*Insider risk management workflow*:
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+____
+
+=== Configure insider risk management
+
+Use the following steps to configure insider risk management for your organization:
+
+image::../media/ir-solution-ir-steps.png[Insider risk solution insider risk management steps.]
+
+. Learn about xref:insider-risk-management.adoc[insider risk management]
+. Plan for xref:insider-risk-management-plan.adoc[insider risk management and verify licensing]
+. Configure xref:insider-risk-management-settings.adoc[insider risk management settings]
+. Configure link:insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management[permissions] and link:insider-risk-management-configure.md#step-4-recommended-configure-prerequisites-for-policies[policy prerequisites & connectors]
+. Create and configure link:insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy[insider risk management policies]
+
+=== More information about insider risk management
+
+* xref:insider-risk-management-policies.adoc[Manage insider risk policies]
+* xref:insider-risk-management-activities.adoc[Investigate insider risk activities]
+* xref:insider-risk-management-cases.adoc[Act on insider risk cases]

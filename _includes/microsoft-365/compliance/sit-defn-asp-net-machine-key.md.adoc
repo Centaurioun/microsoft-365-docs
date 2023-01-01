@@ -1,0 +1,58 @@
+= ASP.NET machine key entity definition (preview)
+:audience: Admin
+:author: chrfox
+:description: ASP.NET machine key sensitive information type entity definition.
+:f1.keywords: ["CSH"]
+:f1_keywords: ["ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation"]
+:feedback_system: None
+:hideEdit: true
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: reference
+:recommendations: false
+:search.appverid: MET150
+
+== ASP.NET machine key (preview)
+
+=== Format
+
+Symmetric keys in XML configuration.
+
+=== Pattern
+
+Various symmetric key formats in XML, for example:
+
+[,xml]
+----
+<machineKey decryptionKey="******** </br>
+<machineKey validationKey="********
+----
+
+=== Checksum
+
+No
+
+=== Definition
+
+This SIT is designed to match the security information that's used to encrypt or hash data in link:/dotnet/api/system.web.security.machinekey?view=netframework-4.8[ASP.NET] forms authentication and view state.
+
+It uses several primary resources:
+
+* Patterns of Symmetric key context in xml files.
+* Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
+
+The patterns are designed to match actual credentials with reasonable confidence.
+The patterns do not match credentials formatted as examples.
+Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
+
+=== Keywords
+
+==== Keyword_SymmetricKeyContextInXml:
+
+* password
+* key
+* connectionstring

@@ -1,0 +1,118 @@
+= Turn on Microsoft 365 Defender
+:audience: ITPro
+:author: dansimp
+:description: Learn how to enable Microsoft 365 Defender and start integrating your security incident and response.
+:f1.keywords: ["NOCSH"]
+:keywords: get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["M365-security-compliance", "m365solution-getstarted", "highpri"]
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Turn on Microsoft 365 Defender
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+xref:microsoft-365-defender.adoc[Microsoft 365 Defender] unifies your incident response process by integrating key capabilities across Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity.
+This unified experience adds powerful features you can access in the Microsoft 365 Defender portal.
+
+Microsoft 365 Defender automatically turns on when eligible customers with the required permissions visit Microsoft 365 Defender portal.
+Read this article to understand various prerequisites and how Microsoft 365 Defender is provisioned.
+
+=== Check license eligibility and required permissions
+
+A license to a Microsoft 365 security product generally entitles you to use Microsoft 365 Defender without additional licensing cost.
+We do recommend getting a Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses that provides access to all supported services.
+
+For detailed licensing information, link:prerequisites.md#licensing-requirements[read the licensing requirements].
+
+==== Check your role
+
+You must be one of the following roles to turn on Microsoft 365 Defender:
+
+* Global Administrator
+* Security Administrator
+* Security Operator
+* Global Reader
+* Security Reader
+* Compliance Administrator
+* Compliance Data Administrator
+* Application Administrator
+* Cloud Application Administrator
+
+link:/azure/active-directory/users-groups-roles/directory-manage-roles-portal[View your roles in Azure AD]
+
+=== Supported services
+
+Microsoft 365 Defender aggregates data from the various supported services that you've already deployed.
+It will process and store data centrally to identify new insights and make centralized response workflows possible.
+It does this without affecting existing deployments, settings, or data associated with the integrated services.
+
+To get the best protection and optimize Microsoft 365 Defender, we recommend deploying all applicable supported services on your network.
+For more information, xref:deploy-supported-services.adoc[read about deploying supported services].
+
+=== Onboard to the service
+
+Onboarding to Microsoft 365 Defender is simple.
+From the navigation menu, select any item, such as *Incidents & alerts*, *Hunting*, *Action center*, or *Threat analytics* to initiate the onboarding process.
+
+==== Data center location
+
+Microsoft 365 Defender will store and process data in the link:/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy[same location used by Microsoft Defender for Endpoint].
+If you don't have Microsoft Defender for Endpoint, a new data center location is automatically selected based on the location of active Microsoft 365 security services.
+The selected data center location is shown in the screen.
+
+Select *Need help?* in the Microsoft 365 Defender portal to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
+
+____
+[!NOTE] In the past, Microsoft Defender for Endpoint automatically provisioned in European Union (EU) data centers when turned on through Microsoft Defender for Cloud.
+Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Defender for Endpoint in this manner in the past.
+____
+
+==== Confirm that the service is on
+
+Once the service is provisioned, it adds:
+
+* xref:incidents-overview.adoc[Incidents management]
+* xref:investigate-alerts.adoc[Alerts queue]
+* An action center for managing xref:m365d-autoir.adoc[automated investigation and response]
+* xref:advanced-hunting-overview.adoc[Advanced hunting] capabilities
+* Threat analytics
+
+:::image type="content" source="../../media/overview-incident.png" alt-text="The navigation pane in the Microsoft 365 Defender portal with Microsoft 365 Defender features" lightbox="../../media/overview-incident.png"::: _Microsoft 365 Defender portal with incidents management and other capabilities_
+
+==== Getting Microsoft Defender for Identity data
+
+To enable the integration with Microsoft Defender for Cloud Apps, you'll need to log in to the Microsoft Defender for Cloud Apps at least once.
+
+=== Get assistance
+
+To get answers to the most commonly asked questions about turning on Microsoft 365 Defender, xref:m365d-enable-faq.adoc[read the FAQ].
+
+Microsoft support staff can help provision or deprovision the service and related resources on your tenant.
+For assistance, select *Need help?* in the Microsoft 365 Defender portal.
+When contacting support, mention Microsoft 365 Defender.
+
+=== Related topics
+
+* xref:m365d-enable-faq.adoc[Frequently asked questions]
+* xref:prerequisites.adoc[Licensing requirements and other prerequisites]
+* xref:deploy-supported-services.adoc[Deploy supported services]
+* xref:microsoft-365-defender.adoc[Microsoft 365 Defender overview]
+* xref:../defender-endpoint/microsoft-defender-endpoint.adoc[Microsoft Defender for Endpoint overview]
+* xref:../office-365-security/defender-for-office-365.adoc[Defender for Office 365 overview]
+* link:/cloud-app-security/what-is-cloud-app-security[Microsoft Defender for Cloud Apps overview]
+* link:/azure-advanced-threat-protection/what-is-atp[Microsoft Defender for Identity overview]
+* xref:../defender-endpoint/data-storage-privacy.adoc[Microsoft Defender for Endpoint data storage]

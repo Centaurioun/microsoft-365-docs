@@ -1,0 +1,58 @@
+= Manage devices in Microsoft Defender for Business
+:audience: Admin
+:author: denisebmsft
+:description: Learn how to add, remove, and manage devices in Defender for Business, endpoint protection for small and medium sized businesses.
+:f1.keywords: NOCSH
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: ["SMB", "M365-security-compliance", "m365-initiative-defender-business"]
+:ms.date: 09/14/2022
+:ms.localizationpriority: medium
+:ms.reviewer: shlomiakirav
+:ms.service: microsoft-365-security
+:ms.subservice: mdb
+:ms.topic: how-to
+:search.appverid: MET150
+
+== Manage devices in Microsoft Defender for Business
+
+In Defender for Business, you can manage devices as follows:
+
+* <<view-the-list-of-onboarded-devices,View a list of onboarded devices>> to see their risk level, exposure level, and health state
+* <<take-action-on-a-device-that-has-threat-detections,Take action on a device>> that has threat detections
+* <<onboard-a-device,Onboard a device to Defender for Business>>
+* <<offboard-a-device,Offboard a device from Defender for Business>>
+
+=== View the list of onboarded devices
+
+:::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
+
+. Go to the Microsoft 365 Defender portal (https://security.microsoft.com) and sign in.
+. In the navigation pane, go to *Assets* > *Devices*.
+. Select a device to open its flyout panel, where you can learn more about its status and take action.
++
+If you don't have any devices listed yet, xref:mdb-onboard-devices.adoc[Onboard devices to Defender for Business]
+
+=== Take action on a device that has threat detections
+
+:::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Screenshot of a selected device with details and actions available":::
+
+. In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, go to *Assets* > *Devices*.
+. Select a device to open its flyout panel, and review the information that is displayed.
+. Select the ellipsis (*...*) to open the actions menu.
+. Select an action, such as *Run antivirus scan* or *Initiate Automated Investigation*.
+
+=== Onboard a device
+
+See xref:mdb-onboard-devices.adoc[Onboard devices to Defender for Business].
+
+=== Offboard a device
+
+See xref:mdb-offboard-devices.adoc[Offboarding a device].
+
+=== Next steps
+
+* xref:mdb-view-manage-incidents.adoc[View and manage incidents in Defender for Business]
+* xref:mdb-respond-mitigate-threats.adoc[Respond to and mitigate threats in Defender for Business]
+* xref:mdb-review-remediation-actions.adoc[Review remediation actions in the Action center]
+* xref:mdb-create-edit-device-groups.adoc[Create or edit device groups]

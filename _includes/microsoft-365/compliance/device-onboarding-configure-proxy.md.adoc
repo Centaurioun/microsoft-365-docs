@@ -1,0 +1,165 @@
+= Configure device proxy and internet connection settings for Information Protection
+:audience: ITPro
+:author: chrfox
+:description: Configure device proxy and internet connection settings for Information Protection
+:experimental:
+:f1.keywords: ["CSH"]
+:f1_keywords: ["ms.o365.cc.DLPLandingPage"]
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance", "m365solution-mip", "m365initiative-compliance"]
+:ms.date:
+:ms.localizationpriority: high
+:ms.service: O365-seccomp
+:ms.topic: conceptual
+:search.appverid: ["MET150"]
+
+== Configure device proxy and internet connection settings for Information Protection
+
+Microsoft Endpoint technologies uses Microsoft Windows HTTP (WinHTTP) to report data and communicate with the Microsoft endpoint cloud service.
+The embedded service runs in system context using the LocalSystem account.
+
+____
+[!TIP] For organizations that use forward proxies as a gateway to the Internet, you can use network protection to investigate behind a proxy.
+For more information, see link:/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy[Investigate connection events that occur behind forward proxies].
+____
+
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) Internet browsing proxy settings and can only discover a proxy server by using the following auto discovery methods:
+
+* Transparent proxy
+* Web Proxy Auto-discovery Protocol (WPAD)
+
+____
+[!NOTE] If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings.
+For more information on Defender for Endpoint URL exclusions in the proxy, see <<enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server,Enable access to Endpoint DLP cloud service URLs in the proxy server>>.
+____
+
+* Manual static proxy configuration:
+ ** Registry-based configuration
+ ** WinHTTP configured using netsh command -- Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
+
+=== Configure the proxy server manually using a registry-based static proxy
+
+For endpoint devices that aren't permitted to connect to the Internet, you need to configure a registry-based static proxy.
+You need to configure this to allow only Microsoft Endpoint DLP to report diagnostic data and communicate with Microsoft endpoint cloud service.
+
+The static proxy is configurable through Group Policy (GP).
+The group policy can be found under:
+
+. Open menu:Administrative Templates[Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service]
+. Set it to *Enabled* and select *Disable Authenticated Proxy usage*:
++
+image::../media/atp-gpo-proxy1.png[Image of group policy settings 1.]
+
+. Open menu:Administrative Templates[Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry]:
++
+Configure the proxy
++
+image::../media/atp-gpo-proxy2.png[Image of group policy settings 2.]
++
+The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
++
+The registry value TelemetryProxyServer is in this format <server name or ip>:<port>.
+For example: *10.0.0.6:8080*
++
+The registry value `DisableEnterpriseAuthProxy` should be set to 1.
+
+=== Configure the proxy server manually using "netsh" command
+
+Use netsh to configure a system-wide static proxy.
+
+____
+[!NOTE] This will affect all applications including Windows services which use WinHTTP with default proxy.
+- Laptops that are changing topology (for example: from office to home) will malfunction with netsh.
+Use the registry-based static proxy configuration.
+____
+
+. Open an elevated command line:
+ .. Go to *Start* and type *cmd*
+ .. Right-click *Command prompt* and select *Run as administrator*.
+. Enter the following command and press *Enter*:
++
+`netsh winhttp set proxy <proxy>:<port>`
++
+For example: *netsh winhttp set proxy 10.0.0.6:8080*
+
+. To reset the winhttp proxy, enter the following command and press *Enter*:
++
+`netsh winhttp reset proxy`
+
+See link:/windows-server/networking/technologies/netsh/netsh-contexts[Netsh Command Syntax, Contexts, and Formatting] to learn more.
+
+=== Enable access to Endpoint DLP cloud service URLs in the proxy server
+
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed in the downloadable sheet to the allowed domains list.
+
+This https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx[downloadable spreadsheet] lists the services and their associated URLs that your network must be able to connect to.
+You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an allow rule specifically for them.
+
+If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
+If a proxy or firewall is blocking anonymous traffic, as Endpoint DLP is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
+
+=== Verify client connectivity to Microsoft cloud service URLs
+
+Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Defender for Endpoint service URLs.
+
+. Download the https://aka.ms/mdatpanalyzer[MDATP Client Analyzer tool] to the PC where Endpoint DLP is running on.
+. Extract the contents of MDATPClientAnalyzer.zip on the device.
+. Open an elevated command line:
+ .. Go to *Start* and type *cmd*.
+ .. Right-click *Command prompt* and select *Run as administrator*.
+. Enter the following command and press *Enter*:
++
+`HardDrivePath\MDATPClientAnalyzer.cmd`
++
+Replace _HardDrivePath_ with the path where the MDATPClientAnalyzer tool was downloaded to, for example
++
+*C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd*
+
+. Extract the *MDATPClientAnalyzerResult.zip** file created by tool in the folder used in the _HardDrivePath_.
+. Open *MDATPClientAnalyzerResult.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
+The tool checks the connectivity of Defender for Endpoint service URLs that Defender for Endpoint client is configured to interact with.
+It then prints the results into the *MDATPClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services.
+For example:
++
+[,dos]
+----
+Testing URL: https://xxx.microsoft.com/xxx
+1 - Default proxy: Succeeded (200)
+2 - Proxy auto discovery (WPAD): Succeeded (200)
+3 - Proxy disabled: Succeeded (200)
+4 - Named proxy: Doesn't exist
+5 - Command-line proxy: Doesn't exist
+----
+
+If at least one of the connectivity options returns a (200) status, then the Defender for Endpoint client can communicate with the tested URL properly using this connectivity method.
+
+However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes).
+You can then use the URLs in the table shown in <<enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server,Enable access to Endpoint DLP cloud service URLs in the proxy server>>.
+The URLs you'll use will depend on the region selected during the onboarding procedure.
+
+____
+[!NOTE]
+
+The Connectivity Analyzer tool is not compatible with attack surface reduction rule link:/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-process-creations-originating-from-psexec-and-wmi-commands[Block process creations originating from PSExec and WMI commands].
+You will need to temporarily disable this rule to run the connectivity tool.
+
+When the TelemetryProxyServer is set, in Registry or via Group Policy, Defender for Endpoint will fall back to direct if it can't access the defined proxy.
+Related topics:
+
+* Onboard Windows 10 devices
+* Troubleshoot Microsoft Endpoint DLP onboarding issues
+____
+
+=== See also
+
+* xref:endpoint-dlp-learn-about.adoc[Learn about Endpoint data loss prevention]
+* xref:endpoint-dlp-using.adoc[Using Endpoint data loss prevention]
+* xref:dlp-learn-about-dlp.adoc[Learn about data loss prevention]
+* xref:create-test-tune-dlp-policy.adoc[Create, test, and tune a DLP policy]
+* xref:data-classification-activity-explorer.adoc[Get started with Activity explorer]
+* link:/windows/security/threat-protection/[Microsoft Defender for Endpoint]
+* link:/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints[Onboarding tools and methods for Windows 10 machines]
+* https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1[Microsoft 365 subscription]
+* link:/azure/active-directory/devices/concept-azure-ad-join[Azure AD joined devices]
+* https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium[Download the new Microsoft Edge based on Chromium]

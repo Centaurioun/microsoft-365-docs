@@ -1,0 +1,40 @@
+= Hybrid solutions
+:audience: ITPro
+:author: kelleyvice-msft
+:description: Provides a list of links to useful information for deploying Office Server workloads in Microsoft Azure.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
+:ms.author: kvice
+:ms.collection: Ent_O365
+:ms.custom: ["Ent_Solutions", "seo-marvel-apr2020"]
+:ms.date: 09/30/2020
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: landing-page
+:search.appverid: ["MET150"]
+
+== Hybrid solutions
+
+With Microsoft Azure, you can deploy some Office Server workloads that were typically deployed on-premises in Azure infrastructure services.
+
+For Microsoft 365 identity infrastructure in Azure:
+
+* link:/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial[Using Azure AD for SharePoint Server Authentication]
+* xref:deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.adoc[Deploy Microsoft 365 Directory Synchronization in Microsoft Azure]
+* xref:connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.adoc[Connect an on-premises network to a Microsoft Azure virtual network]
+* xref:deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.adoc[Deploy high availability federated authentication for Microsoft 365 in Azure]
+
+For SharePoint Server 2013 workloads in Azure:
+
+* xref:microsoft-azure-architectures-for-sharepoint-2013.adoc[Microsoft Azure Architectures for SharePoint 2013]
+* xref:sharepoint-server-2013-disaster-recovery-in-microsoft-azure.adoc[SharePoint Server 2013 Disaster Recovery in Microsoft Azure]
+* xref:internet-sites-in-microsoft-azure-using-sharepoint-server-2013.adoc[Internet Sites in Microsoft Azure using SharePoint Server 2013]
+
+=== Related topics
+
+link:../solutions/index.yml[Microsoft 365 solution and architecture center]
+
+xref:../solutions/cloud-architecture-models.adoc[Microsoft cloud for enterprise architects illustrations]
+
+xref:architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.adoc[Architectural models for SharePoint, Exchange, Skype for Business, and Lync]

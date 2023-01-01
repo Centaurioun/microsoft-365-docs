@@ -1,0 +1,56 @@
+= Enter your product key for Microsoft 365 Business Standard
+:ROBOTS: NOINDEX
+:audience: Admin
+:author: cmcatee-MSFT
+:description: If you bought Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: cmcatee
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365"]
+:ms.custom: ["commerce_purchase", "VSBFY23", "okr_SMB", "AdminSurgePortfolio", "AdminTemplateSet"]
+:ms.date: 08/18/2022
+:ms.localizationpriority: high
+:ms.reviewer: drjones, jmueller
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: MET150
+
+== Enter your product key for Microsoft 365 Business Standard
+
+If you bought Microsoft 365 Business Standard from a retail store, this article helps you activate your subscription.
+
+*Need something else?*  *For help with Microsoft 365 Family or Microsoft 365 Personal*, see https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759[Using product keys with Office].
++  *Volume licensing customer?* If you bought Microsoft 365 for business through a https://go.microsoft.com/fwlink/p/?LinkID=613298[Microsoft Open License Program], see the article, xref:purchases-from-microsoft-open.adoc[Enter your product key purchased from Microsoft Open].
+
+=== Activate a new subscription
+
+. Go to https://go.microsoft.com/fwlink/p/?LinkId=839911[https://microsoft365.com/setupbusiness].
+. Enter your product key, then select *Next*.
+. Enter your name, work email address, business phone number, company name, and country or region, then select *Next*.
+. Enter a phone number to receive either a text or call to verify your identity.
+. You can get a new domain, use a domain name you already own, or add a domain later.
+The steps can vary, so follow the prompts, depending on which option you choose.
++
+____
+[!NOTE] If you want to make sure that your subscription is automatically extended at the end of its term, you can add a credit card or bank account, and then link:subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on[turn on Recurring billing] for that subscription.
+____
+
+. When you're finished, go to the https://go.microsoft.com/fwlink/p/?linkid=2024339[Admin center] to manage your subscription.
+
+=== Extend the expiration date or add a license to an existing subscription
+
+To extend the expiration date or add a license to your existing Microsoft 365 Business Standard subscription, use a new and unused product key for the same Microsoft 365 plan.
+Entering your original Microsoft 365 product key won't work because a key that has already been redeemed can't be used again.
+For more information, see link:subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key[Extend the expiration date of your prepaid subscription by using a Microsoft 365 product key] or link:licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key[Add licenses to a prepaid subscription by using a Microsoft 365 product key].
+
+=== Next steps
+
+If you're new to Microsoft 365 for business, learn how to xref:../admin/setup/setup.adoc[set up Microsoft 365].
+
+Check out this list of common errors and solutions: xref:product-key-errors-and-solutions.adoc[Problems with your Microsoft 365 for business product key?]
+
+Or, xref:../admin/get-help-support.adoc[call Microsoft Support].
+
+=== Related content
+
+xref:./subscriptions/upgrade-to-different-plan.adoc[Upgrade to a different plan] (article) + xref:./subscriptions/what-if-my-subscription-expires.adoc[What happens to my data and access when my Microsoft 365 for business subscription ends?] (article) + xref:./licenses/subscriptions-and-licenses.adoc[Understand subscriptions and licenses in Microsoft 365 for business] (article)

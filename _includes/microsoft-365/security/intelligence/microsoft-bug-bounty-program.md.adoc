@@ -1,0 +1,22 @@
+= About the Microsoft Bug Bounty Program
+:audience: ITPro
+:author: dansimp
+:description: If you are a security researcher, you can get a reward for reporting a vulnerability in a Microsoft product, service, or device.
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.topic: article
+:search.appverid: met150
+
+== About the Microsoft Bug Bounty Program
+
+Are you a security researcher?
+Did you find a vulnerability in a Microsoft product, service, or device?
+If so, we want to hear from you!
+
+If your vulnerability report affects a product or service that is within scope of one of our bounty programs below, you could receive a bounty award according to the program descriptions.
+
+Visit the https://www.microsoft.com/en-us/msrc/bounty?rtc=1[Microsoft Bug Bounty Program site] for all the details!

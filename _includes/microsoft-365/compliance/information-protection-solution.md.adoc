@@ -1,0 +1,162 @@
+= Deploy an information protection solution with Microsoft Purview
+:audience: Admin
+:author: cabailey
+:description: Prescriptive guidance to deploy Microsoft Purview Information Protection for your organization.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: cabailey
+:ms.collection: ["m365solution-overview", "m365solution-mip", "tier1", "zerotrust-solution"]
+:ms.date:
+:ms.localizationpriority: high
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MOE150", "MET150"]
+
+== Deploy an information protection solution with Microsoft Purview
+
+____
+_link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Licensing for Microsoft 365 Security & Compliance]_
+____
+
+Your information protection strategy is driven by your business needs.
+Many organizations must comply with regulations, laws, and business practices.
+Additionally, organizations need to protect proprietary information, such as data for specific projects.
+
+Microsoft Purview Information Protection (formerly Microsoft Information Protection) provides a framework, process, and capabilities you can use to accomplish your specific business objectives.
+
+=== Microsoft Purview Information Protection framework
+
+Use Microsoft Purview Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.
+
+image::../media/mip-solution-overview-extended.png[Microsoft Purview Information Protection solution overview]
+
+Watch the following Ignite session to see how these capabilities support and build on each other: https://myignite.microsoft.com/archives/IG20-OD273[Know your data, protect your data, and prevent data loss with Microsoft Information Protection].
+
+For data governance, see xref:data-governance-solution.adoc[Deploy a data governance solution with Microsoft Purview].
+
+=== Licensing
+
+Microsoft Purview Information Protection capabilities are included with Microsoft Purview.
+The licensing requirements can vary even within capabilities, depending on configuration options.
+To identify licensing requirements and options, see the link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft 365 guidance for security & compliance].
+
+=== Know your data
+
+image::../media/knowyourdata-mipsolution.png[Know your data for Microsoft Purview Information Protection solution overview]
+
+Knowing where your sensitive data resides is often the biggest challenge for many organizations.
+Microsoft Purview Information Protection data classification helps you to discover and accurately classify ever-increasing amounts of data that your organization creates.
+Graphical representations help you gain insights into this data so you can set up and monitor policies to protect and govern it.
+
+|===
+| Step | Description | More information
+
+| 1
+| Describe the categories of sensitive information you want to protect.
++  + You already have an idea of what types of information are most valuable to your org and what types aren't.
+Work with stakeholders to describe these categories that are your starting point.
+| xref:sensitive-information-type-learn-about.adoc[Learn about sensitive information types] <p> xref:classifier-learn-about.adoc[Learn about trainable classifiers]
+
+| 2
+| Discover and classify sensitive data.
++  + Sensitive data in items can be found by using many different methods that include default DLP policies, manual labeling by users, and automated pattern recognition using sensitive information types or machine learning.
+| xref:data-classification-overview.adoc[Learn about data classification] <p> https://www.microsoft.com/videoplayer/embed/RE4vx8x[Video: Data classification in the compliance center]
+
+| 3
+| View your sensitive items.
++  + Use content explorer and activity explorer for a deeper analysis of sensitive items and the actions that users are taking on these items.
+| xref:data-classification-content-explorer.adoc[Get started with content explorer] <p> xref:data-classification-activity-explorer.adoc[Get started with activity explorer]
+|===
+
+=== Protect your data
+
+image::../media/protect-mipsolution.png[Protect your data for Microsoft Purview Information Protection solution overview]
+
+Use the information from knowing where your sensitive data resides to help you more efficiently protect it.
+But there's no need to wait--you can start to protect your data immediately with a combination of manual, default, and automatic labeling.
+Then use xref:data-classification-content-explorer.adoc[content explorer] and xref:data-classification-activity-explorer.adoc[activity explorer] from the previous section to confirm what items are labeled and how your labels are being used.
+
+|===
+| Step | Description | More information
+
+| 1
+| Define your xref:sensitivity-labels.adoc[sensitivity labels] and policies that will protect your organization's data.
++  + In addition to identifying the sensitivity of content, these labels can apply protection actions, such as headers, footers, watermarks, and encryption.
+| xref:get-started-with-sensitivity-labels.adoc[Get started with sensitivity labels] +  + xref:create-sensitivity-labels.adoc[Create and configure sensitivity labels and their policies] +  + xref:encryption-sensitivity-labels.adoc[Restrict access to content by using sensitivity labels to apply encryption]
+
+| 2
+| Label and protect items for Microsoft 365 apps and services.
++  + Sensitivity labels are supported for Microsoft 365 Word, Excel, PowerPoint, Outlook, and containers that include SharePoint and OneDrive sites, and Microsoft 365 groups.
+Use a combination of labeling methods such as manual labeling, automatic labeling, a default label, and mandatory labeling.
+| xref:sensitivity-labels-office-apps.adoc[Manage sensitivity labels in Office apps] +  + xref:sensitivity-labels-sharepoint-onedrive-files.adoc[Enable sensitivity labels for Office files in SharePoint and OneDrive] +  + xref:sensitivity-labels-coauthoring.adoc[Enable co-authoring for files encrypted with sensitivity labels] +  + xref:sensitivity-labels-sharepoint-default-label.adoc[Configure a default sensitivity label for a SharePoint document library] +  + xref:apply-sensitivity-label-automatically.adoc[Apply a sensitivity label to content automatically] +  + xref:sensitivity-labels-teams-groups-sites.adoc[Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites] +  + xref:sensitivity-labels-default-sharing-link.adoc[Use sensitivity labels to set the default sharing link for sites and documents in SharePoint and OneDrive] +  + link:/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model[Apply a sensitivity label to a model in Microsoft SharePoint Syntex] +  + link:/power-bi/admin/service-security-sensitivity-label-overview[Sensitivity labels in Power BI]
+
+| 3
+| Discover, label, and protect sensitive items that reside in data stores in the cloud by using link:/cloud-app-security/what-is-cloud-app-security[Microsoft Defender for Cloud Apps] with your sensitivity labels.
+| link:/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud[Discover, classify, label, and protect regulated and sensitive data stored in the cloud]
+
+| 4
+| Discover, label, and protect sensitive items that reside in data stores on premises by deploying the link:/azure/information-protection/deploy-aip-scanner[Azure Information Protection unified labeling scanner] with your sensitivity labels.
+| link:/azure/information-protection/deploy-aip-scanner-configure-install[Configuring and installing the Azure Information Protection unified labeling scanner]
+
+| 5
+| Extend your sensitivity labels to Azure by using link:/azure/purview/overview[Microsoft Purview Data Map], to discover and label items for Azure Blob Storage, Azure files, Azure Data Lake Storage Gen1, and Azure Data Lake Storage Gen12.
+| link:/azure/purview/create-sensitivity-label[Labeling in Microsoft Purview Data Map]
+|===
+
+If you're a developer who wants to extend sensitivity labels to line-of-business apps or third-party SaaS apps, see link:/information-protection/develop/setup-configure-mip[Microsoft Information Protection (MIP) SDK setup and configuration].
+
+==== Additional protection capabilities
+
+Microsoft Purview includes additional capabilities to help protect data.
+Not every customer needs these capabilities, and some might be superseded by more recent releases.
+
+Use the xref:information-protection.adoc[Protect your data with Microsoft Purview] page for the full list of protection capabilities.
+
+=== Prevent data loss
+
+image::../media/dlp-mipsolution.png[Prevent data loss for Microsoft Purview Information Protection solution overview]
+
+Deploy Microsoft Purview Data Loss Prevention (DLP) policies to govern and prevent the inappropriate sharing, transfer, or use of sensitive data across apps and services.
+These policies help users make the right decisions and take the right actions when they're using sensitive data.
+
+|===
+| Step | Description | More information
+
+| 1
+| Learn about DLP.
++  + Organizations have sensitive information under their control, such as financial data, proprietary data, credit card numbers, health records, or social security numbers.
+To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it.
+This practice is called data loss prevention (DLP).
+| xref:dlp-learn-about-dlp.adoc[Learn about data loss prevention]
+
+| 2
+| Plan your DLP implementation.
++  + Every organization will plan for and implement data loss prevention (DLP) differently, because every organization's business needs, goals, resources, and situation are unique to them.
+However, there are elements that are common to all successful DLP implementations.
+| xref:dlp-overview-plan-for-dlp.adoc[Plan for data loss prevention]
+
+| 3
+| Design and create a DLP policy.
++  + Creating a data loss prevention (DLP) policy is quick and easy, but getting a policy to yield the intended results can be time consuming if you have to do a lot of tuning.
+Taking the time to design a policy before you implement it will get you to the desired results faster, and with fewer unintended issues, than tuning by trial and error alone.
+| xref:dlp-policy-design.adoc[Design a DLP policy] <p> xref:dlp-policy-reference.adoc[DLP policy reference] <p>xref:create-test-tune-dlp-policy.adoc[Create, test, and tune a DLP policy]
+
+| 4
+| Tune your DLP policies.
++  + After you deploy a DLP policy, you'll see how well it meets the intended purpose.
+Use that information to adjust your policy settings for better performance.
+| xref:create-test-tune-dlp-policy.adoc[Create, test, and tune a DLP policy]
+|===
+
+=== Training resources
+
+Learning modules for consultants and admins:
+
+* link:/training/modules/m365-compliance-information-governance[Introduction to information protection and data lifecycle management in Microsoft Purview]
+* link:/training/modules/m365-compliance-information-classify-data[Classify data for protection and governance]
+* link:/training/modules/m365-compliance-information-protect-information[Protect information in Microsoft Purview]
+* link:/training/modules/m365-compliance-information-prevent-data-loss[Prevent data loss in Microsoft Purview]
+
+To help train your users to apply and use the sensitivity labels that you configure for them, see link:get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels[End-user documentation for sensitivity labels].
+
+When you deploy data loss prevention policies for Teams, you might find useful the following end-user guidance as an introduction to this technology with some potential messages that they might see: https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0[Teams messages about data loss prevention (DLP) and communication compliance policies].

@@ -1,0 +1,78 @@
+= Assign roles and permissions in Microsoft Defender for Business
+:audience: Admin
+:author: denisebmsft
+:description: Assign roles to your cybersecurity team. Learn about these roles and permissions in Defender for Business.
+:f1.keywords: NOCSH
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: ["SMB", "M365-security-compliance", "m365solution-mdb-setup", "highpri"]
+:ms.date: 08/09/2022
+:ms.localizationpriority: medium
+:ms.reviewer: shlomiakirav
+:ms.service: microsoft-365-security
+:ms.subservice: mdb
+:ms.topic: overview
+:search.appverid: MET150
+
+== Assign roles and permissions in Microsoft Defender for Business
+
+To perform tasks in the Microsoft 365 Defender portal, such as configuring Defender for Business, viewing reports, or taking response actions on detected threats, appropriate permissions must be assigned to your security team.
+Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal (https://security.microsoft.com) or in link:/azure/active-directory/roles/manage-roles-portal[Azure Active Directory].
+
+=== What to do
+
+. <<roles-in-defender-for-business,Learn about roles in Defender for Business>>.
+. <<view-or-edit-role-assignments,View or edit role assignments for your security team>>.
+. <<next-steps,Proceed to your next steps>>.
+
+=== Roles in Defender for Business
+
+The following table describes the three roles that can be assigned in Defender for Business.
+xref:../../admin/add-users/about-admin-roles.adoc[Learn more about admin roles].
+
+|===
+| Permission level | Description
+
+| *Global administrators* (also referred to as global admins) <p> _As a best practice, limit the number of global admins._
+| Global admins can perform all kinds of tasks.
+The person who signed up your company for Microsoft 365 or for Defender for Business is a global administrator by default.
+<p> Global admins are able to modify settings across all Microsoft 365 portals, such as: <ul><li>The Microsoft 365 admin center (https://admin.microsoft.com)</li><li>Microsoft 365 Defender portal (https://security.microsoft.com)</li></ul>
+
+| *Security administrators* (also referred to as security admins)
+| Security admins can perform the following tasks: <ul><li>View and manage security policies</li><li>View and manage security threats and alerts (these activities include taking response actions on endpoints)</li><li>View security information and reports</li></ul>
+
+| *Security reader*
+| Security readers can perform the following tasks:<ul><li>View security policies</li><li>View security threats and alerts</li><li>View security information and reports</li></ul>
+|===
+
+=== View or edit role assignments
+
+. Go to the Microsoft 365 Defender portal (https://security.microsoft.com) and sign in.
+. In the navigation pane, choose *Permissions & roles*, and then under *Azure AD*, select *Roles*.
+. Select one of the following roles to open its side pane:
+ ** Global administrator
+ ** Security administrator
+ ** Security reader
+
++
+____
+[!IMPORTANT] Microsoft recommends that you grant people access to only what they need to perform their tasks.
+We call this concept _least privilege_ for permissions.
+To learn more, see link:/azure/active-directory/develop/secure-least-privileged-access[Best practices for least-privileged access for applications].
+____
+. In the side pane, select the *Manage members in Azure AD* link.
+This action takes you to Azure Active Directory (Azure AD), where you can view and manage your role assignments.
+. Select a user to open their profile, and then choose *Assigned roles*.
+ ** To add a role, choose *+ Add assignments*.
+ ** To remove a role, choose *X Remove assignments*.
+
+=== Need to add users?
+
+If you haven't already added users to your subscription, see xref:mdb-add-users.adoc[Add users and assign licenses at the same time].
+
+=== Next steps
+
+Go to:
+
+* xref:mdb-email-notifications.adoc[Step 3: Set up email notifications]
+* xref:mdb-onboard-devices.adoc[Step 4: Onboard devices to Defender for Business]

@@ -1,0 +1,63 @@
+= Virtual appointments with Microsoft Teams
+:appliesto: ["Microsoft Teams", "Microsoft 365 for frontline workers"]
+:audience: admin
+:author: LanaChin
+:description: Learn about the capabilities in Microsoft Teams for scheduling and managing virtual appointments.
+:f1.keywords: ["NOCSH"]
+:manager: samanro
+:ms.author: v-lanachin
+:ms.collection: ["m365-frontline", "m365solution-frontline", "m365solution-scenario", "highpri"]
+:ms.localizationpriority: high
+:ms.reviewer:
+:ms.service: microsoft-365-frontline
+:ms.topic: article
+:search.appverid: MET150
+
+== Virtual appointments with Microsoft Teams
+
+With virtual appointments in Microsoft Teams, you have a complete meeting platform to schedule, manage, and conduct virtual appointments.
+For example:
+
+* Financial advisors, claims adjusters, and other financial professionals can meet with clients remotely.
+* Sales associates, product experts, and design consultants can conduct virtual fittings and consultations.
+* Clinicians can meet with patients or other healthcare providers to discuss medical care.
+
+This article gives you an overview of the capabilities available in Teams for scheduling and managing virtual appointments.
+
+* <<the-bookings-app,The Bookings app>>, for every organization.
+* <<teams-electronic-health-record-ehr-connector,The Teams Electronic Health Record (EHR) connector>>, for healthcare organizations who use an EHR system.
+
+=== The Bookings app
+
+The https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5[Bookings app] in Teams offers a simple way to schedule and manage virtual appointments.
+Use it to schedule virtual appointments such as financial consultations, healthcare visits, interviews, customer support, virtual fittings and consultations, and education office hours.
+
+Schedulers can manage multiple department and staff calendars, as well as communications with internal and external attendees.
+
+Each virtual appointment contains a Teams meeting link that's sent to attendees in email where they can easily join from a web browser or in Teams on any device.
+
+To learn more, see:
+
+* link:/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage the Bookings app]
+* xref:bookings-virtual-visits.adoc[Virtual appointments with Teams and the Bookings app]
+* xref:virtual-appointments-toolkit.adoc[Help your clients and customers use virtual appointments]
+
+=== Teams Electronic Health Record (EHR) connector
+
+If your healthcare organization uses an EHR system, you can use the Teams EHR connector to integrate Teams for a more seamless virtual care experience.
+The Teams EHR connector requires an active subscription to Microsoft Cloud for Healthcare or a subscription to Microsoft Teams EHR connector standalone offer.
+
+After you set up the Teams EHR connector, clinicians can launch visits with patients and consultations with other providers in Teams directly from the EHR system.
+
+Currently, the Teams EHR connector supports integration with the Cerner EHR system and Epic EHR system.
+To learn more, see:
+
+* xref:ehr-admin-cerner.adoc[Virtual appointments with Teams - Integration into Cerner EHR]
+* xref:ehr-admin-epic.adoc[Virtual appointments with Teams - Integration into Epic EHR]
+
+=== Related articles
+
+* xref:browser-join.adoc[Manage the join experience for Teams virtual appointments on browsers]
+* xref:virtual-visits-usage-report.adoc[Virtual Visits usage report]
+* xref:ehr-connector-report.adoc[Teams EHR connector Virtual Appointments report]
+* xref:teams-in-hc.adoc[Get started with Teams for healthcare organizations]

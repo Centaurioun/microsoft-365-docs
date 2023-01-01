@@ -1,0 +1,121 @@
+= List software version distribution
+:audience: ITPro
+:author: DulceMontemayor
+:description: Retrieves a list of your organization's software version distribution
+:keywords: apis, graph api, supported apis, get, software version distribution, Microsoft Defender for Endpoint tvm api
+:manager: dansimp
+:ms.author: dolmont
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== List software version distribution
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+[!includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+Retrieves a list of your organization's software version distribution.
+
+=== Permissions
+
+One of the following permissions is required to call this API.
+To learn more, including how to choose permissions, see xref:apis-intro.adoc[Use Microsoft Defender for Endpoint APIs] for details.
+
+|===
+| Permission type | Permission | Permission display name
+
+| Application
+| Software.Read.All
+| 'Read Threat and Vulnerability Management Software information'
+
+| Delegated (work or school account)
+| Software.Read
+| 'Read Threat and Vulnerability Management Software information'
+|===
+
+=== HTTP request
+
+[,http]
+----
+GET /api/Software/{Id}/distributions
+----
+
+=== Request headers
+
+|===
+| Name | Type | Description
+
+| Authorization
+| String
+| Bearer \{token}.*Required*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful, this method returns 200 OK with a list of software distributions data in the body.
+
+=== Example
+
+==== Request example
+
+Here is an example of the request.
+
+[,http]
+----
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/distributions
+----
+
+==== Response example
+
+Here is an example of the response.
+
+[,json]
+----
+
+{
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Distributions",
+    "value": [
+        {
+            "version": "11.0.17134.1039",
+            "installations": 1,
+            "vulnerabilities": 11
+        },
+        {
+            "version": "11.0.18363.535",
+            "installations": 750,
+            "vulnerabilities": 0
+        }
+        ...
+    ]
+}
+----
+
+=== Related topics
+
+* link:/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt[Microsoft Defender Vulnerability Management]
+* link:/microsoft-365/security/defender-endpoint/tvm-software-inventory[Defender Vulnerability Management software inventory]

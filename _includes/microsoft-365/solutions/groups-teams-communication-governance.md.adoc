@@ -1,0 +1,97 @@
+= Communications governance for collaboration scenarios
+:audience: Admin
+:author: MikePlumleyMSFT
+:description: Learn about Communications governance collaboration scenarios.
+:f1.keywords: NOCSH
+:manager: serdars
+:ms.author: mikeplum
+:ms.collection: ["highpri", "M365-collaboration", "m365solution-collabgovernance"]
+:ms.custom: ["M365solutions"]
+:ms.localizationpriority: medium
+:ms.reviewer:
+:ms.service: o365-solutions
+:ms.topic: article
+:recommendations: false
+
+== Communications governance for collaboration scenarios
+
+Microsoft 365 offers a number of controls to help you govern communication in your organization, including messaging and meetings settings.
+Review these options and consider how they map to your business needs, the sensitivity of your data, and the scope of people that your users need to collaborate with.
+
+The following table provides a quick reference for the communications controls available in Microsoft 365.
+Further information is provided in the following sections.
+
+|===
+| Category | Description | Reference
+
+| Messaging
+|
+|
+
+|
+| Manage what users can do while messaging in Teams.
+| link:/microsoftteams/messaging-policies-in-teams[Manage messaging policies in Teams]
+
+|
+| Control who can start and reply to posts in a channel.
+| link:/microsoftteams/manage-channel-moderation-in-teams[Set up and manage channel moderation in Microsoft Teams]
+
+| Meetings
+|
+|
+
+|
+| Manage what meeting participants can do.
+| link:/microsoftteams/meeting-policies-in-teams[Manage meeting policies in Teams]
+
+|
+| Allow or prevent anonymous users joining meetings.
+| link:/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings[Allow anonymous users to join meetings]
+
+| Communication compliance
+|
+|
+
+|
+| Surface and respond to careless and negligent communication
+| xref:../compliance/communication-compliance.adoc[Communication compliance]
+|===
+
+=== Messaging
+
+You can control which chat and channel messaging features - such as editing or deleting messages - are available to users in Microsoft Teams by using messaging policies.
+You can create different policies for different users and groups.
+
+link:/microsoftteams/messaging-policies-in-teams[Manage messaging policies in Teams]
+
+You can control who can start new posts and reply to posts in a Teams channel by configuring channel moderation.
+
+link:/microsoftteams/manage-channel-moderation-in-teams[Set up and manage channel moderation in Microsoft Teams]
+
+=== Meetings
+
+You can control the features that are available to Teams meeting participants, including scheduling, content sharing, participants, and audio and video policies.
+
+link:/microsoftteams/meeting-policies-in-teams[Manage meeting policies in Teams]
+
+You can control anonymous join for Teams meetings which allows anyone with a link to the meeting to join.
+
+link:/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings[Allow anonymous users to join meetings]
+
+=== Communication compliance
+
+Communication compliance allows you to examine communications for offensive language, sensitive information, and information related to internal and regulatory standards.
+Chat communications, mailboxes, and Yammer messages can all be monitored, generating alerts.
+With administration tools, you can quickly identify and take action on messages with policy matches.
+
+xref:../compliance/communication-compliance.adoc[Learn about communication compliance]
+
+=== Related topics
+
+link:collaboration-governance-overview.md#collaboration-governance-planning-recommendations[Collaboration governance planning recommendations]
+
+xref:collaboration-governance-first.adoc[Create your collaboration governance plan]
+
+link:/microsoftteams/enable-features-office-365[Manage Microsoft Teams settings for your organization]
+
+link:/yammer/manage-security-and-compliance/manage-data-compliance[Manage Yammer data compliance]

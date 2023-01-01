@@ -1,0 +1,32 @@
+= What Microsoft 365 subscription do I have?
+:audience: Admin
+:author: cmcatee-MSFT
+:description: Learn to verify which Microsoft 365 subscriptions your organization has by going to the Your products page.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: cmcatee
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365", "Adm_O365_Setup", "Adm_TOC"]
+:ms.custom: ["commerce_subscriptions", "VSBFY23", "okr_smb", "AdminSurgePortfolio", "AdminTemplateSet"]
+:ms.date: 01/21/2021
+:ms.localizationpriority: medium
+:ms.reviewer: sgautam, jmueller
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: MET150
+
+== Which Microsoft 365 subscription do I have?
+
+If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
+
+*Not an admin?* See https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd[What Microsoft 365 for business product or license do I have?]
+
+. In the admin center, go to the *Billing* > https://go.microsoft.com/fwlink/p/?linkid=842054[Your products] page.
+. On the *Products* tab, you see all your subscriptions.
+Each subscription line includes information about licenses, subscription status, and billing.
+. If you want to change the columns that appear in the list, select *Choose columns*.
+Change the selection of columns, then select *Save*.
+. To see more details for a single subscription, select that subscription.
+
+=== Related content
+
+link:../../commerce/index.yml[Subscriptions and billing] (link page) + xref:../../commerce/billing-and-payments/view-your-bill-or-invoice.adoc[View your bill or invoice] (article) + xref:../../commerce/billing-and-payments/pay-for-your-subscription.adoc[Paying for your subscription] (article) + xref:../../commerce/billing-and-payments/change-your-billing-addresses.adoc[Change your billing addresses] (article)

@@ -1,0 +1,104 @@
+= Troubleshoot problems with reporting tools for Microsoft Defender Antivirus
+:author: denisebmsft
+:description: Identify and solve common problems when attempting to report in Microsoft Defender Antivirus protection status in Update Compliance
+:keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: m365-security-compliance
+:ms.custom: nextgen
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+____
+[!IMPORTANT] On March 31, 2020, the Microsoft Defender Antivirus reporting feature of Update Compliance will be removed.
+You can continue to define and review security compliance policies using https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager[Microsoft Endpoint Manager], which allows finer control over security features and updates.
+____
+
+You can use Microsoft Defender Antivirus with Update Compliance.
+You'll see status for E3, B, F1, VL, and Pro licenses.
+However, for E5 licenses, you need to use the link:/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints[Microsoft Defender for Endpoint portal].
+To learn more about licensing options, see https://www.microsoft.com/licensing/product-licensing/windows10.aspx[Windows 10 product licensing options].
+
+When you use link:/windows/deployment/update/update-compliance-using#wdav-assessment[Windows Analytics Update Compliance to obtain reporting into the protection status of devices or endpoints] in your network that are using Microsoft Defender Antivirus, you might encounter problems or issues.
+
+Typically, the most common indicators of a problem are:
+
+* You only see a small number or subset of all the devices you were expecting to see
+* You do not see any devices at all
+* The reports and information you do see is outdated (older than a few days)
+
+For common error codes and event IDs related to the Microsoft Defender Antivirus service that are not related to Update Compliance, see xref:troubleshoot-microsoft-defender-antivirus.adoc[Microsoft Defender Antivirus events].
+
+There are three steps to troubleshooting these problems:
+
+. Confirm that you have met all prerequisites
+. Check your connectivity to the Windows Defender cloud-based service
+. Submit support logs
+
+____
+[!IMPORTANT] It typically takes 3 days for devices to start appearing in Update Compliance.
+____
+
+=== Confirm prerequisites
+
+In order for devices to properly show up in Update Compliance, you have to meet certain prerequisites for both the Update Compliance service and for Microsoft Defender Antivirus:
+
+____
+[!div class="checklist"]
+
+* Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app.
+xref:microsoft-defender-antivirus-compatibility.adoc[Using any other antivirus app will cause Microsoft Defender Antivirus to disable itself] and the endpoint will not be reported in Update Compliance.
+* xref:enable-cloud-protection-microsoft-defender-antivirus.adoc[Cloud-delivered protection is enabled].
+* Endpoints can link:configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud[connect to the Microsoft Defender Antivirus cloud]
+* If the endpoint is running Windows 10 version 1607 or earlier, link:/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level[Windows 10 diagnostic data must be set to the Enhanced level].
+* It has been 3 days since all requirements have been met
+____
+
+"You can use Microsoft Defender Antivirus with Update Compliance.
+You'll see status for E3, B, F1, VL, and Pro licenses.
+However, for E5 licenses, you need to use the Microsoft Defender for Endpoint portal (/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+To learn more about licensing options, see Windows 10 product licensing options"
+
+If the above prerequisites have all been met, you might need to proceed to the next step to collect diagnostic information and send it to us.
+
+____
+[!div class="nextstepaction"] xref:collect-diagnostic-data.adoc[Collect diagnostic data for Update Compliance troubleshooting]
+____
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____
+
+=== Related topics
+
+* xref:microsoft-defender-antivirus-in-windows-10.adoc[Microsoft Defender Antivirus in Windows 10]
+* xref:deploy-manage-report-microsoft-defender-antivirus.adoc[Deploy Microsoft Defender Antivirus]

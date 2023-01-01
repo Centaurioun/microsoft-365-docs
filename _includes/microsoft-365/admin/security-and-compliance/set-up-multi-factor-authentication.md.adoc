@@ -1,0 +1,124 @@
+= Set up multifactor authentication for users
+:audience: Admin
+:author: kwekua
+:description: Learn how to set up multi-factor authentication for your organization.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:monikerRange: o365-worldwide
+:ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
+:ms.author: kwekua
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["VSBFY23", "AdminSurgePortfolio", "AdminTemplateSet", "admindeeplinkMAC", "adminvideo", "business_assist"]
+:ms.localizationpriority: high
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150", "BEA160", "GEA150"]
+
+== Set up multifactor authentication for Microsoft 365
+
+Check out https://go.microsoft.com/fwlink/?linkid=2197659[Microsoft 365 small business help] on YouTube.
+
+Multifactor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business.
+Based on your understanding of xref:multi-factor-authentication-microsoft-365.adoc[multifactor authentication (MFA) and its support in Microsoft 365], it's time to set it up and roll it out to your organization.
+
+____
+[!IMPORTANT] If you purchased your subscription or trial after October 21, 2019, and you're prompted for MFA when you sign in, link:/azure/active-directory/fundamentals/concept-fundamentals-security-defaults[security defaults] have been automatically enabled for your subscription.
+____
+
+____
+[!TIP] If you need help with the steps in this topic, consider https://go.microsoft.com/fwlink/?linkid=2186871[working with a Microsoft small business specialist].
+With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+____
+
+=== Watch: Turn on multifactor authentication
+
+Check out this video and others on our https://go.microsoft.com/fwlink/?linkid=2197909[YouTube channel].
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
+____
+
+. Go to the Microsoft 365 admin center at https://admin.microsoft.com/ [https://admin.microsoft.com].
+. Select  *Show All*, then choose the *Azure Active Directory Admin Center*.
+. Select *Azure Active Directory*, *Properties*, *Manage Security defaults*.
+. Under *Enable Security defaults*, select *Yes* and then *Save*.
+
+=== Before you begin
+
+* You must be a Global admin to manage MFA.
+For more information, see xref:../add-users/about-admin-roles.adoc[About admin roles].
+* If you have legacy per-user MFA turned on, <<turn-off-legacy-per-user-mfa,Turn off legacy per-user MFA>>.
+* If you have Office 2013 clients on Windows devices, xref:./enable-modern-authentication.adoc[turn on Modern Authentication for Office 2013 clients].
+* Advanced: If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server.
+See link:/azure/active-directory/authentication/howto-mfaserver-nps-vpn[advanced scenarios with Azure AD Multifactor Authentication and third-party VPN solutions] for more information.
+
+==== Turn off legacy per-user MFA
+
+If you've previously turned on per-user MFA, you must turn it off before enabling Security defaults.
+
+. In the Microsoft 365 admin center, in the left nav choose *Users* > *Active users*.
+. On the *Active users* page, choose *Multi-factor authentication*.
+. On the multi-factor authentication page, select each user and set their Multi-Factor auth status to *Disabled*.
+
+=== Turn Security defaults on or off
+
+For most organizations, Security defaults offer a good level of additional sign-in security.
+For more information, see link:/azure/active-directory/fundamentals/concept-fundamentals-security-defaults[What are security defaults?]
+
+If your subscription is new, Security defaults might already be turned on for you automatically.
+
+You enable or disable security defaults from the *Properties* pane for Azure Active Directory (Azure AD) in the Azure portal.
+
+. Sign in to the https://admin.microsoft.com[Microsoft 365 admin center] with global admin credentials.
+. In the left nav choose *Show All* and under *Admin centers*, choose *Azure Active Directory*.
+. In the *Azure Active Directory admin center* choose *Azure Active Directory* > *Properties*.
+. At the bottom of the page, choose *Manage Security defaults*.
+. Choose *Yes* to enable security defaults or *No* to disable security defaults, and then choose *Save*.
+
+If you have been using link:/azure/active-directory/conditional-access/concept-baseline-protection[baseline Conditional Access policies], you'll be prompted to turn them off before you move to using security defaults.
+
+. Go to the https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies[Conditional Access - Policies page].
+. Choose each baseline policy that is *On* and set *Enable policy* to *Off*.
+. Go to the https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties[Azure Active Directory - Properties page].
+. At the bottom of the page, choose *Manage Security defaults*.
+. Choose *Yes* to enable security defaults and *No* to disable security defaults, and then choose *Save*.
+
+=== Use Conditional Access policies
+
+If your organization has more granular sign-in security needs, Conditional Access policies can offer you more control.
+Conditional Access lets you create and define policies that react to sign in events and request additional actions before a user is granted access to an application or service.
+
+____
+[!IMPORTANT] Turn off both per-user MFA and Security defaults before you enable Conditional Access policies.
+____
+
+Conditional Access is available for customers who have purchased Azure AD Premium P1, or licenses that include this, such as Microsoft 365 Business Premium, and Microsoft 365 E3.
+For more information, see link:/azure/active-directory/authentication/tutorial-enable-azure-mfa[create a Conditional Access policy].
+
+Risk-based conditional access is available through Azure AD Premium P2 license, or licenses that include this, such as Microsoft 365 E5.
+For more information, see link:/azure/active-directory/conditional-access/howto-conditional-access-policy-risk[risk-based Conditional Access].
+
+For more information about the Azure AD P1 and P2, see https://azure.microsoft.com/pricing/details/active-directory/[Azure Active Directory pricing].
+
+==== Turn on Modern authentication for your organization
+
+For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription before August 2017, it's likely that you'll need to turn on Modern Authentication in order to get features like Multifactor Authentication to work in Windows clients like Outlook.
+
+. In the https://go.microsoft.com/fwlink/p/?linkid=2024339[Microsoft 365 admin center], in the left nav choose *Settings* > *Org settings*.
+. Under the *Services* tab, choose *Modern authentication*, and in the *Modern authentication* pane, make sure *Enable Modern authentication* is selected.
+Choose *Save changes*.
+
+=== Next steps
+
+* https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14[How to register for their additional verification method]
+* https://support.microsoft.com/help/4577374/what-is-multifactor-authentication[What is: Multifactor Authentication]
+* https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb[How to sign-in after registration]
+* https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831[How to change their additional verification method]
+
+=== Related content
+
+xref:set-up-multi-factor-authentication.adoc[Set up multifactor authentication] (video)\
+
+https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14[Turn on multi-factor authentication for your phone] (article)\
+
+link:/microsoft-365/business-premium/m365bp-conditional-access[Security defaults and multi-factor authentication] (article)

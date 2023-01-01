@@ -1,0 +1,98 @@
+= Limit who can be invited by an organization
+:audience: ITPro
+:author: MikePlumleyMSFT
+:description: Learn how to limit which of your users can be invited as a guest or shared channel participant to a specific organization.
+:f1.keywords: NOCSH
+:manager: serdars
+:ms.author: mikeplum
+:ms.collection: ["highpri", "SPO_Content", "M365-collaboration", "m365solution-securecollab", "m365solution-scenario", "m365initiative-externalcollab"]
+:ms.localizationpriority: medium
+:ms.service: o365-solutions
+:ms.topic: article
+:recommendations: false
+
+== Limit who can be invited by an organization
+
+If you collaborate with another organization and want to limit who can be invited to that organization as a guest or a shared channel member in Teams, you can specify who can be invited in the cross-tenant access settings in Azure Active Directory.
+
+____
+[!NOTE] Changes to cross-tenant access settings may take six hours to take effect.
+____
+
+=== Create a security group
+
+The easiest way to specify who can be invited to another organization is to use a security group.
+You can use a security group with a defined membership or a dynamic security group.
+You can use an existing security group or create a new one for this purpose.
+
+To create a security group
+
+. Sign in to https://aad.portal.azure.com[Azure Active Directory] using a Global administrator or Security administrator account.
+. On the *Active Directory* page, select *Groups* and then select *New group*.
+. Choose *Security* for the *Group type*.
+. Type a *Group name.*
+. Optionally, add a description for the group.
+. For *Azure AD roles can be assigned to the group*, choose *No*.
+. Select a pre-defined *Membership type (required)*.
+. Add group owners and members or a link:/azure/active-directory/enterprise-users/groups-dynamic-membership[dynamic query] if you're using dynamic user membership.
+. Select *Create*.
+Your group is created and ready for you to add members.
+
+=== Add an organization
+
+To define collaboration rules with another organization, you have to add that organization to the Azure AD cross-tenant access settings.
+If you haven't already added the organization, follow this procedure to add it.
+
+To add an organization
+
+. In https://aad.portal.azure.com[Azure Active Directory], select *External Identities*, and then select *Cross-tenant access settings (preview)*.1.
+Select *Organizational settings*.
+. Select *Add organization*.
+. On the *Add organization* pane, type the full domain name (or tenant ID) for the organization.
+. Select the organization in the search results, and then select *Add*.
+. The organization appears in the *Organizational settings* list.
+At this point, all access settings for this organization are inherited from your default settings.
+
+=== Choose who can be invited by an organization
+
+There are two options for limiting who can be invited to an organization:
+
+* Limit who can be invited as a guest.
+This prevents users from being added to the other organization's Azure AD as a guest.
+It prevents sharing of files, folders, sites, teams, and Microsoft 365 groups with people who aren't in the security group.
+* Limit who can be added to an external shared channel.
+This prevents people who aren't in the security group from being added to shared channels in the other organization.
+
+In https://aad.portal.azure.com[Azure Active Directory], select *External Identities*, and then select *Cross-tenant access settings (preview)*.
+
+To limit who can be invited as a guest
+
+. Select the outbound access link for the organization that you want to modify.
+. On the *B2B collaboration* tab, choose *Customize settings*.
+. Under *Access status*, choose *Allow access*.
+. Under *Target*, choose *Select external users and groups*.
+. Select the link to add users and groups.
+. Search for and select the security group that you want to use.
+. Choose *Select*.
+. Select *Save* and close the *Outbound access settings* blade.
+
+To limit who can be invited as a shared channel participant
+
+. Select the outbound access link for the organization that you want to modify.
+. On the *B2B direct connect* tab, choose *Customize settings*.
+. Under *Access status*, choose *Allow access*.
+. Under *Target*, choose *Select external users and groups*.
+. Select the link to add users and groups.
+. Search for and select the security group that you want to use.
+. Choose *Select*.
+. Select *Save* and close the *Outbound access settings* blade.
+
+=== Related topics
+
+link:/azure/active-directory/external-identities/b2b-direct-connect-overview[B2B direct connect overview]
+
+link:/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect[Configure cross-tenant access settings for B2B direct connect]
+
+xref:limit-organizations-where-users-have-guest-accounts.adoc[Limit organizations where users can have guest accounts]
+
+xref:limit-guest-sharing-to-specific-organization.adoc[Limit guest sharing to specific organizations]

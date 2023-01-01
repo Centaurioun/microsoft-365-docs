@@ -1,0 +1,195 @@
+= Configure a team with security isolation in a dev/test environment
+:audience: ITPro
+:author: MikePlumleyMSFT
+:description: Configure the security and infrastructure that allows your employees to work remotely from anywhere and at any time.
+:experimental:
+:f1.keywords: ["NOCSH"]
+:manager: serdars
+:ms.author: mikeplum
+:ms.collection: ["highpri", "M365-security-compliance", "Strat_O365_Enterprise", "remotework"]
+:ms.custom: ["admindeeplinkCOMPLIANCE", "admindeeplinkSPO"]
+:ms.date: 08/14/2020
+:ms.localizationpriority: high
+:ms.service: o365-solutions
+:ms.topic: article
+
+== Configure a team with security isolation in a dev/test environment
+
+This article provides step-by-step instructions to create a xref:secure-teams-security-isolation.adoc[team with security isolation] in a dev/test environment.
+
+link:../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png[Configuration for the Company Strategy isolated team.]
+
+Use this dev/test environment to experiment and fine-tune settings for your specific needs before deploying this type of team in production.
+
+=== Phase 1: Build out your Microsoft 365 Enterprise test environment
+
+If you just want to test sensitive and highly sensitive teams in a lightweight way with the minimum requirements, follow the instructions in xref:../enterprise/lightweight-base-configuration-microsoft-365-enterprise.adoc[Lightweight base configuration].
+
+If you want to test sensitive and highly sensitive teams in a simulated enterprise, follow the instructions in xref:../enterprise/password-hash-sync-m365-ent-test-environment.adoc[Password hash synchronization].
+
+____
+[!NOTE] Testing a team with security isolation does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest.
+It is provided here as an option so that you can test a team with security isolation and experiment with it in an environment that represents a typical organization.
+____
+
+=== Phase 2: Create and configure your Azure Active Directory (Azure AD) group and users
+
+In this phase, you create and configure an Azure AD group and users for your fictional organization.
+
+First, create a security group with the Azure portal.
+
+. Create a separate tab in your browser, and then go to the Azure portal at https://portal.azure.com.
+If needed, sign in with the credentials of the global administrator account for your Microsoft 365 E5 trial or paid subscription.
+. In the Azure portal, click menu:Azure Active Directory[Groups].
+. On the *Groups - All groups* blade, click *+ New group*.
+. On the *Group* blade:
+
+* Select *Security* in *Group type*.
+* Type *C-Suite* in *Name*.
+* Select *Assigned* in *Membership type*.
+
+. Click *Create*, and then close the *Group* blade.
+
+Next, configure automatic licensing so that members of the new *C-Suite* group are automatically assigned a Microsoft 365 E5 license.
+
+. In the Azure portal, click menu:Azure Active Directory[Licenses > All products].
+. In the list, select *Microsoft 365 Enterprise E5*, and then click *Assign*.
+. In the *Assign license* blade, click *Users and groups*.
+. In the list of groups, select the *C-Suite* group.
+. Click *Select*, and then click *Assign*.
+. Close the Azure portal tab in your browser.
+
+Next, link:../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module[connect with the Azure Active Directory PowerShell for Graph module].
+
+Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create new user accounts and add them to the C-Suite group:
+
+[,powershell]
+----
+$orgName="<organization name, such as contoso-test for the contoso-test.onmicrosoft.com trial subscription domain name>"
+$location="<the ISO ALPHA2 country code, such as US for the United States>"
+$commonPassword="<common password for all the new accounts>"
+
+$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+$PasswordProfile.Password=$commonPassword
+
+$groupName="C-Suite"
+$userNames=@("CEO","CFO","CIO")
+$groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
+ForEach ($element in $userNames){
+New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location
+Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
+}
+----
+
+____
+[!NOTE] The use of a common password here is for automation and ease of configuration for a dev/test environment.
+Obviously, this is highly discouraged for production subscriptions.
+____
+
+Use these steps to verify that group-based licensing is working correctly.
+
+. Sign in to the https://admin.microsoft.com[Microsoft 365 admin center].
+. From the new *Microsoft 365 admin center* tab of your browser, click *Users*.
+. In the list of users, click *CEO*.
+. In the pane that lists the properties of the *CEO* user account, verify that it has been assigned the *Microsoft 365 Enterprise E5* license in *Product licenses*.
+
+=== Phase 3: Create your team
+
+In this phase, you create and configure a team with security isolation for members of the senior leadership team to collaborate on company strategy.
+
+First, enable sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites before you proceed with the steps in xref:../compliance/sensitivity-labels-teams-groups-sites.adoc[this article].
+
+Next, create the team:
+
+. In Teams, click *Teams* on the left side of the app, then click *Join or create a team* at the bottom of the teams list.
+. Click *Create team* (first card, top left corner).
+. Choose *Build a team from scratch*.
+. In the *Sensitivity* list, keep the default.
+. Under *Privacy*, click *Private*.
+. Type *Company Strategy*, and then click *Create* > *Close*.
+
+Next, restrict the creation of private channels to owners of the Company Strategy group.
+
+. In the team, click *More options*, and then click *Manage team*.
+. On the *Settings* tab, expand *Member permissions*.
+. Clear the *Allow members to create private channels* check box.
+
+Next, you need to configure a sensitivity label with the following settings:
+
+* The name is Company Strategy
+* Encryption is enabled
+* The Company Strategy group has Co-Author permissions
+
+Follow these steps:
+
+. Open the Microsoft Purview compliance portal, under *Solutions*, select https://go.microsoft.com/fwlink/p/?linkid=2174015[*Information protection*].
+. Click *Create a label*.
+. Type *Company Strategy* for the label name.
+. Type *Senior leadership company strategy documents* as the tool tip, and then click *Next*.
+. On the *Encryption* page, in the *Encryption* dropdown, choose *Apply*.
+. To add the team permissions: +   a.
+Click *Assign permissions*.
++   b.
+Click *Add users or groups*, select *Company Strategy*, and then click *Add*.
++   c.
+Click *Choose permissions*.
++   d.
+Choose *Co-Author* from the dropdown list, and then click *Save*.
++
+. Click *Next*.
+. On the *Content marking* page, click *Next*.
+. On the *Site and group settings* page, set *Site and group settings* to *On*.
+. In the *Privacy of Office 365 group-connected team sites* dropdown, choose *Private - only members can access the site*.
+. Under *Unmanaged devices*, choose *Block access*.
+. Click *Next*.
+. On the *Auto-labeling for Office apps* page, click *Next*.
+. Click *Submit*, and then click *Done*.
+
+Next, publish the new label with these steps:
+
+. In the Microsoft Purview compliance portal, on the https://go.microsoft.com/fwlink/p/?linkid=2174015[*Information protection*], choose the *Label policies* tab.
+. Click *Publish labels*.
+. On the *Choose sensitivity labels to publish* page, click *Choose sensitivity labels to publish*.
+. Select *Company Strategy*, and then click *Add*.
+. Click *Next*.
+. On the *Publish to users and groups* page, click *Choose users and groups*.
+. Click *Add*, and then select *Company Strategy*.
+. Click *Add*, and then click *Done*.
+. Click *Next*.
+. On the Policy settings page, select the *Users must provide justification to remove a label or lower classification label* check box, and then click *Next*.
+. Type *Company Strategy* for the policy name, and then click *Next*.
+. Click *Submit* and then click *Done*.
+
+It may take some time for the *Company Strategy* label to become available after it's been published.
+
+Next, apply your new label to the *Company Strategy* team and update the default sharing link type to reduce the risk of accidentally sharing files and folders to a wider audience than intended.
+
+. Open the SharePoint admin center, under *Sites*, select https://go.microsoft.com/fwlink/?linkid=2185220[*Active sites*].
+. Select the *Company Strategy* site.
+. On the *Policies* tab, under *Sensitivity*, select *Edit*.
+. Select the *Company Strategy* label, and then select *Save*.
+. On the *Policies* tab, under *External sharing*, select *Edit*.
+. Choose *Only people in your organization*.
+. Under *Default sharing* link type, clear the *Same as organization-level setting* check box, and select *People with existing access*.
+. Select *Save*.
+
+Next, configure owners-only site sharing for the *Company Strategy* team.
+
+. In Teams, navigate to the *General* tab of the *Company Strategy* team.
+. In the tool bar for the team, click *Files*.
+. Click the ellipsis, and then click *Open in SharePoint*.
+. In the tool bar of the underlying SharePoint site, click the settings icon, and then click *Site permissions*.
+. In the Site permissions pane, under *Site Sharing*, click *Change how members can share*.
+. Under *Sharing permissions*, choose *Only site owners can share files, folders, and the site*, and then click *Save*.
+. Close the *Permissions* and *Settings* panes.
+
+If you sign in as a member of the Company Strategy group, you will see *Company Strategy* in the *Sensitivity* option in the Home toolbar of Word, Excel, and PowerPoint.
+Select the *Company Strategy* label from the *Sensitivity* option to assign the label to a file.
+
+Here is the resulting configuration for the Company Strategy team.
+
+image::../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png[Configuration for the Company Strategy isolated team.]
+
+=== Next step
+
+When you're ready for production deployment, see these xref:secure-teams-security-isolation.adoc[configuration instructions].

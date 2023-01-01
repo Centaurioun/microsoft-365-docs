@@ -1,0 +1,140 @@
+'''
+
+title: Onboard non-persistent virtual desktop infrastructure (VDI) devices f1.keywords:     NOCSH ms.author: chrfox author: chrfox manager: laurawi ms.date: audience: ITPro ms.topic: article ms.service: O365-seccomp ms.localizationpriority: medium ms.collection:
+
+* M365-security-compliance search.appverid:
+* MET150 description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to the Endpoint data loss prevention service.
+
+'''
+
+== Onboard non-persistent virtual desktop infrastructure devices
+
+*Applies to:*
+
+* xref:./endpoint-dlp-learn-about.adoc[Endpoint data loss prevention (DLP)]
+* xref:insider-risk-management.adoc[Insider risk management]
+* Virtual desktop infrastructure (VDI) devices
+
+____
+[!WARNING] Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios.
+Multi-session scenarios on Windows Virtual Desktop are currently not supported.
+____
+
+=== Onboard VDI devices
+
+Microsoft 365 supports non-persistent virtual desktop infrastructure (VDI) session onboarding.
+
+____
+[!NOTE] To onboard non-persistent VDI sessions, VDI devices must be on Windows 10 1809 or higher.
+____
+
+There might be associated challenges when onboarding VDIs.
+The following are typical challenges for this scenario:
+
+* Instant early onboarding of short-lived sessions, which must be onboarded to Microsoft 365 prior to the actual provisioning.
+* The device name is typically reused for new sessions.
+
+VDI devices can appear in the Microsoft Purview compliance portal as either:
+
+* Single entry for each device.
+Note that in this case, the _same_ device name must be configured when the session is created, for example using an unattended answer file.
+* Multiple entries for each device - one for each session.
+
+The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
+
+____
+[!WARNING] For environments where there are low resource configurations, the VDI boot procedure might slow the device onboarding process.
+____
+
+. Get the VDI configuration package .zip file (_DeviceCompliancePackage.zip_) from https://compliance.microsoft.com[Microsoft Purview compliance portal].
+. In the navigation pane, select *Settings* > *Device onboarding* > *Onboarding*.
+. In the *Deployment method* field, select *VDI onboarding scripts for non-persistent endpoints*.
+. Click *Download package* and save the .zip file.
+. Copy the files from the DeviceCompliancePackage folder extracted from the .zip file into the `golden` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+. If you are not implementing a single entry for each device, copy DeviceComplianceOnboardingScript.cmd.
+. If you are implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and DeviceComplianceOnboardingScript.cmd.
++
+____
+[!NOTE] If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden.
+You'll need to choose the *Show hidden files and folders* option from File Explorer.
+____
+
+. Open a Local Group Policy Editor window and navigate to *Computer Configuration* > *Windows Settings* > *Scripts* > *Startup*.
++
+____
+[!NOTE] Domain Group Policy may also be used for onboarding non-persistent VDI devices.
+____
+
+. Depending on the method you'd like to implement, follow the appropriate steps:
++
+*For single entry for each device*
++
+Select the *PowerShell Scripts* tab, then click *Add* (Windows Explorer will open directly in the path where you copied the onboarding script earlier).
+Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`.
++
+*For multiple entries for each device*:
++
+Select the *Scripts* tab, then click *Add* (Windows Explorer will open directly in the path where you copied the onboarding script earlier).
+Navigate to the onboarding bash script `DeviceComplianceOnboardingScript.cmd`.
+
+. Test your solution:
+ .. Create a pool with one device.
+ .. Log on to device.
+ .. Log off from device.
+ .. Log on to device with another user.
+ .. *For single entry for each device*: Check only one entry in Microsoft Defender Security Center.
+*For multiple entries for each device*: Check multiple entries in Microsoft Defender Security Center.
+. Click *Devices list* on the Navigation pane.
+. Use the search function by entering the device name and select *Device* as search type.
+
+=== Updating non-persistent virtual desktop infrastructure (VDI) images
+
+As a best practice, we recommend using offline servicing tools to patch golden images.
+
+For example, you can use the below commands to install an update while the image remains offline:
+
+[,dos]
+----
+DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
+DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
+DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
+----
+
+For more information on DISM commands and offline servicing, please refer to the articles below:
+
+* link:/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism[Modify a Windows image using DISM]
+* link:/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14[DISM Image Management Command-Line Options]
+* link:/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image[Reduce the Size of the Component Store in an Offline Windows Image]
+
+If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
+
+. After booting the golden image for online servicing or patching, run an offboarding script to turn off the Microsoft 365 device monitoring sensor.
+For more information, see link:device-onboarding-script.md#offboard-devices-using-a-local-script[Offboard devices using a local script].
+. Ensure the sensor is stopped by running the command below in a CMD window:
++
+[,dos]
+----
+sc query sense
+----
+
+. Service the image as needed.
+. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
++
+[,dos]
+----
+ PsExec.exe -s cmd.exe
+ cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+ del *.* /f /s /q
+ REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+ exit
+----
+
+. Re-seal the golden image as you normally would.
+
+=== Related topics
+
+* xref:device-onboarding-gp.adoc[Onboard Windows 10 and Windows 11 devices using Group Policy]
+* xref:device-onboarding-sccm.adoc[Onboard Windows 10 and Windows 11 devices using Microsoft Endpoint Configuration Manager]
+* xref:device-onboarding-mdm.adoc[Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools]
+* xref:device-onboarding-script.adoc[Onboard Windows 10 and Windows 11 devices using a local script]
+* link:/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding[Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues]

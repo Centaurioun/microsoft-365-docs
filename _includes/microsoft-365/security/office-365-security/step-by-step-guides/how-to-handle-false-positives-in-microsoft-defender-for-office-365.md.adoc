@@ -1,0 +1,49 @@
+= (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
+:audience: ITPro
+:author: MSFTTracyP
+:description: The steps to handle legitimate email getting blocked(False Positive) by Microsoft Defender for Office 365 in order to prevent lose of business.
+:f1.keywords: ["NOCSH"]
+:manager: jarogers
+:ms.author: tracyp
+:ms.collection: m365-guidance-templates
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mdo
+:ms.topic: how-to
+:search.appverid: met150
+:search.product:
+
+== How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365
+
+Microsoft Defender for Office 365 helps deal with important legitimate business emails that are mistakenly blocked as threats (False Positives).
+Defender for Office 365 can help admins understand _why_ legitimate emails are being blocked, how to resolve the situation quickly, and prevent similar situations from happening in the future.
+
+=== What you'll need
+
+* Microsoft Defender for Office 365 Plan 1 or 2 (included as part of E5).
+Exchange Online customers can also leverage this feature.
+* Sufficient permissions (Security Administrator role).
+* 5-10 minutes to perform the steps below.
+
+=== Handling legitimate emails in to Junk folder of end users
+
+. Ask end users to report the email as *not junk* using Microsoft Message Add-in or the Outlook buttons.
+. End users can also add the sender to the https://support.microsoft.com/en-us/office/safe-senders-in-outlook-com-470d4ee6-e3b6-402b-8cd9-a6f00eda7339[*safe sender list*] in Outlook to prevent the email from these senders landing in Junk folder.
+. Admins can triage the user-reported messages from link:/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#view-user-submissions-to-microsoft&preserve-view=true[user-reported content] portal.
+. From those reported messages admins can submit to link:/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#notify-users-from-within-the-portal&preserve-view=true[*Microsoft for analysis*] and understand why was that email blocked in the first place.
+. If needed, while submitting to Microsoft for analysis, admins can judiciously create an link:/microsoft-365/security/office-365-security/manage-tenant-allows?view=o365-worldwide#add-sender-allows-using-the-submissions-portal&preserve-view=true[*allow* for a sender] to mitigate the problem.
+. Once the results from the admin submission are available, read it to understand why emails were blocked and how your tenant setup could be improved to _prevent_ similar situations from happening in the future.
+
+=== Handling legitimate emails that are in quarantine folder of end users
+
+. An end user receives an link:/microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages?view=o365-worldwide&preserve-view=true[email digest] about quarantined messages as per the settings enabled by security admins.
+. End users can preview the messages in quarantine, block the sender, release the messages, submit those messages to Microsoft for analysis, and request release of those emails from admins.
+
+=== Handling legitimate emails in quarantine folder of an admin
+
+. Admins can view the quarantined emails (including the ones asking permission to request release) from the link:/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files?view=o365-worldwide&preserve-view=true[review page].
+. Admins can release the message from quarantine while submitting it to Microsoft for analysis, and create an allow to mitigate the situation.
+. Once the results for submissions are available, admins should read the verdict to understand why emails were blocked, and how the tenant setup could be improved to prevent similar situations from happening in the future.

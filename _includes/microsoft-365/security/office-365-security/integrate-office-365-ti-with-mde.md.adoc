@@ -1,0 +1,70 @@
+= Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
+:audience: ITPro
+:author: denisebmsft
+:description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
+:f1.keywords: ["NOCSH"]
+:keywords: integrate, Microsoft Defender, Microsoft Defender for Endpoint
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: ["M365-security-compliance"]
+:ms.custom: ["seo-marvel-apr2020"]
+:ms.date: 12/02/2021
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-security
+:ms.subservice: mdo
+:ms.topic: article
+:search.appverid: ["MET150", "MOE150"]
+
+== Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint
+
+[!INCLUDE xref:../includes/mdo-trial-banner.adoc[MDO Trial banner]]
+
+xref:defender-for-office-365.adoc[Microsoft Defender for Office 365] can be configured to work with link:/windows/security/threat-protection[Microsoft Defender for Endpoint].
+
+Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint can help your security operations team monitor and take action quickly if users' devices are at risk.
+For example, once integration is enabled, your security operations team will be able to see the devices that are potentially affected by a detected email message, as well as how many recent alerts were generated for those devices in Microsoft Defender for Endpoint.
+
+The following image depicts what the *Devices* tab looks like when you have Microsoft Defender for Endpoint integration enabled:
+
+:::image type="content" source="../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG" alt-text="A list of devices with alerts" lightbox="../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG":::
+
+In this example, you can see that the recipients of the detected email message have four devices and one has an alert.
+Clicking the link for a device opens its page in the link:/microsoft-365/security/defender/microsoft-365-defender[Microsoft 365 Defender portal].
+
+____
+[!TIP] The Microsoft 365 Defender portal replaces the Microsoft Defender Security Center.
+See xref:../defender/microsoft-365-security-center-mde.adoc[Microsoft Defender for Endpoint in Microsoft 365 Defender].
+____
+
+=== Requirements
+
+* Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.
+* You must have either the global administrator or security administrator role assigned in Microsoft 365.
+For more information, see xref:permissions-microsoft-365-security-center.adoc[Permissions in the Microsoft 365 Defender portal].
+* You must have access to xref:threat-explorer.adoc[Explorer (or real-time detections)].
+
+=== To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint
+
+Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up in both Defender for Endpoint and Defender for Office 365.
+
+. Go to the Microsoft 365 Defender portal (https://security.microsoft.com) and sign in.
+. Go to *Email & collaboration* > *Explorer*.
+. On the *Explorer* page, in the upper right corner of the screen, select *MDE Settings*.
+. In the *Microsoft Defender for Endpoint connection* flyout that appears, turn on *Connect to Microsoft Defender for Endpoint* (image:../../media/scc-toggle-on.png[Toggle on.]) and then select *Close*.
++
+:::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="The MDE Connection page" lightbox="../../media/explorer-mdeconnection-dialognew.png":::
+
+. In the navigation pane, choose *Settings*.
+On the *Settings* page, choose *Endpoints*
+. On the *Endpoints* page that opens, choose *Advanced features*.
+. Scroll down to *Office 365 Threat Intelligence connection*, and turn it on (image:../../media/scc-toggle-on.png[Toggle on.]).
++
+When you're finished, select *Save preferences*.
+
+=== See also
+
+xref:office-365-ti.adoc[Threat investigation and response capabilities in Office 365]
+
+xref:defender-for-office-365.adoc[Microsoft Defender for Office 365]
+
+link:/windows/security/threat-protection[Microsoft Defender for Endpoint]

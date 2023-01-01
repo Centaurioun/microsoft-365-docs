@@ -1,0 +1,131 @@
+= Learn about named entities
+:audience: Admin
+:author: chrfox
+:description: Learn how named entities help you detect sensitive items containing names of people, physical addresses, and medical terms via data loss prevention policies
+:experimental:
+:f1.keywords: ["CSH"]
+:f1_keywords: ["ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation"]
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: conceptual
+:search.appverid: MET150
+
+== Learn about named entities
+
+_Named entities_ are xref:sensitive-information-type-learn-about.adoc[sensitive information types] (SIT).
+They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions.
+You can see them in the menu:Microsoft Purview compliance portal[Data classification > Sensitive info types].
+Here is a partial list of where you can use SITs:
+
+* xref:dlp-learn-about-dlp.adoc[Microsoft Purview Data Loss Prevention policies (DLP)]
+* xref:sensitivity-labels.adoc[Sensitivity labels]
+* xref:insider-risk-management-solution-overview.adoc[Insider risk management]
+* link:/cloud-app-security/what-is-cloud-app-security[Microsoft Defender for Cloud Apps]
+* xref:apply-sensitivity-label-automatically.adoc[Microsoft Purview Information Protection]
+* xref:information-governance.adoc[Data Lifecycle Management]
+* xref:records-management.adoc[Records management]
+* xref:ediscovery.adoc[Microsoft Purview eDiscovery]
+* xref:/privacy/priva/priva-overview.adoc[Microsoft Priva]
+* xref:sit-learn-about-exact-data-match-based-sits.adoc[Exact data match sensitive information types]
+
+DLP makes special use of named entities in _enhanced policy templates_, which are pre-configured DLP policies that you can customize for your organizations needs.
+You can also xref:create-test-tune-dlp-policy.adoc[create your own DLP policies] from a xref:create-a-dlp-policy-from-a-template.adoc[blank template]   and use a named entity SIT as a condition.
+
+// There are many other SITs that detect strings like social security, credit card, or bank account numbers to identify sensitive items. For more information, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).
+
+=== Examples of named entity SITs
+
+Named entity SITs come in two flavors, _bundled_ and _unbundled_
+
+Bundled named entity SITs detect all possible matches.
+Use them as broad criteria in your DLP policies for detecting sensitive items.
+
+Unbundled named entity SITs have a narrower focus, like a single country.
+Use them when you need a DLP policy with a narrower detection scope.
+
+Here are some examples of named entity SITs.
+You can find all of them in xref:sensitive-information-type-entity-definitions.adoc[Sensitive information type entity definitions].
+
+|===
+| Named Entity | Description | Bundled/Unbundled
+
+| All full names
+| will detect all possible matches of full names
+| bundled
+
+| All physical addresses
+| will detect all possible matches of physical addresses
+| bundled
+
+| All medical terms and conditions
+| will detect all possible matches of medical terms and conditions
+| bundled
+
+| Australia Physical Addresses
+| Detects patterns related to physical addresses from Australia.
+Included in All physical addresses SIT.
+| unbundled
+
+| Blood Test Terms
+| Detects terms related to blood tests, such as 'hCG'.
+English terms only.
+Included in All medical terms and conditions SIT
+| unbundled
+
+| Brand Medication Names
+| Detects names of brand medication, such as 'Tylenol'.
+English terms only.
+Included in All medical terms and conditions.
+| unbundled
+|===
+
+=== Examples of enhanced DLP policies
+
+Here are some examples of enhanced DLP policies that use named entity SITs.
+You can find all 10 of them in the menu:Microsoft Purview compliance portal[Data loss prevention > Create policy].
+Enhanced templates can be used in DLP and auto-labeling.
+
+|===
+| Policy category | Template | Description
+
+| Financial
+| U.S.
+Gramm-Leach-Bliley Act (GLBA) Enhanced
+| Helps detect the presence of information subject to Gramm-Leach-Bliley Act (GLBA), including information like social security numbers or credit card numbers.
+This enhanced template extends the original by also detecting people's full names, U.S./U.K.
+passport number, U.S.
+driver's license number and U.S.
+physical addresses.
+
+| Medical and health
+| Australia Health Records Act (HRIP Act) Enhanced
+| Helps detect the presence of information commonly considered to be subject to the Health Records and Information Privacy (HRIP) act in Australia, like medical account number and tax file number.
+This enhanced template extends the original by also detecting people's full names, medical terms and conditions, and Australia physical addresses.
+
+| Privacy
+| General Data Protection Regulation (GDPR) Enhanced
+| Helps detect the presence of personal information for individuals inside the European Union (EU) to help meet GDPR privacy obligations.
+This enhanced template detects people's full names and physical addresses for countries in the EU.
+|===
+
+=== Next steps
+
+* xref:named-entities-use.adoc[Use named entities in your data loss prevention policies]
+
+=== For further information
+
+* xref:sensitive-information-type-entity-definitions.adoc[Sensitive information type entity definitions]
+* xref:sensitive-information-type-learn-about.adoc[Learn about Sensitive information types]
+* xref:create-a-custom-sensitive-information-type.adoc[Create a custom sensitive information type]
+* xref:create-a-custom-sensitive-information-type-in-scc-powershell.adoc[Create a custom sensitive information type in PowerShell]
+* xref:data-loss-prevention-policies.adoc[Data loss prevention policies (DLP)]
+* xref:sensitivity-labels.adoc[Sensitivity labels]
+* xref:retention.adoc[Retention labels]
+* xref:communication-compliance.adoc[Communication compliance]
+* link:apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps[Autolabeling policies]
+* xref:create-test-tune-dlp-policy.adoc[Create, test, and tune a DLP policy]
+* xref:create-a-dlp-policy-from-a-template.adoc[Create a DLP policy from a template]

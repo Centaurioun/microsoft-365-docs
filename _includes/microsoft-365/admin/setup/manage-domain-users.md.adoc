@@ -1,0 +1,49 @@
+= Synchronize domain users to Microsoft 365
+:audience: Admin
+:author: efrene
+:description: Synchronize domain-controlled users with Microsoft 365 for business.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: efrene
+:ms.collection: ["M365-subscription-management", "Adm_TOC"]
+:ms.custom: ["Adm_O365", "Core_O365Admin_Migration", "MiniMaven", "MSB365", "OKR_SMB_M365", "seo-marvel-mar", "AdminSurgePortfolio"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: conceptual
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Synchronize domain users to Microsoft 365
+
+=== 1. Prepare for Directory Synchronization
+
+Before you synchronize your users and computers from the local Active Directory Domain, review xref:../../enterprise/prepare-for-directory-synchronization.adoc[Prepare for directory synchronization to Microsoft 365].
+In particular:
+
+* Make sure that no duplicates exist in your directory for the following attributes: *mail*, *proxyAddresses*, and *userPrincipalName*.
+These values must be unique and any duplicates must be removed.
+* We recommend that you configure the *userPrincipalName* (UPN) attribute for each local user account to match the primary email address that corresponds to the licensed Microsoft 365 user.
+For example: _mary.shelley@contoso.com_ rather than _mary@contoso.local_
+* If the Active Directory domain ends in a non-routable suffix like _.local_ or _.lan_, instead of an internet routable suffix such as _.com_ or _.org_, adjust the UPN suffix of the local user accounts first as described in xref:../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.adoc[Prepare a non-routable domain for directory synchronization].
+
+The *Run IdFix* in step four (4) below, will also make sure your on-premises Active Directory is ready for directory synchronization.
+
+=== 2. Install and configure Azure AD Connect
+
+To synchronize your users, groups, and contacts from the local Active Directory into Azure Active Directory, install Azure Active Directory Connect and set up directory synchronization.
+
+. In the https://go.microsoft.com/fwlink/p/?linkid=2024339[admin center], select *Setup* in the left nav.
+. Under *Sign-in and security*, select *Add or sync users to your Microsoft account*.
+. On the *Add or sync users to your Microsoft account* page, choose *Get started*.
+. In the first step  run IdFix tool to prepare for Directory sync.
+. Follow the wizard steps to download Azure AD Connect and use it to synchronize your domain-controlled users to Microsoft 365.
+
+See xref:../../enterprise/set-up-directory-synchronization.adoc[Set up directory synchronization for Microsoft 365] to learn more.
+
+As you configure your options for Azure AD Connect, we recommend that you enable *Password Synchronization*, *Seamless Single Sign-On*, and the *password writeback* feature, which is also supported in Microsoft 365 for business.
+
+____
+[!NOTE] There are some additional steps for password writeback beyond the check box in Azure AD Connect.
+For more information, see link:/azure/active-directory/authentication/howto-sspr-writeback[How-to: configure password writeback].
+____
+
+If you also want to manage domain-joined Windows 10 devices, see xref:../../business-premium/m365bp-manage-windows-devices.adoc[Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium] to set up a hybrid Azure AD Join.

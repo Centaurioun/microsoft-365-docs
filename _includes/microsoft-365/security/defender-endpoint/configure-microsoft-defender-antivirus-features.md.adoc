@@ -1,0 +1,62 @@
+= Configure Microsoft Defender Antivirus features
+:author: denisebmsft
+:description: You can configure Microsoft Defender Antivirus features with Intune, Microsoft Endpoint Configuration Manager, Group Policy, and PowerShell.
+:keywords: Microsoft Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: M365-security-compliance
+:ms.custom: nextgen
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Configure Microsoft Defender Antivirus features
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+You can configure Microsoft Defender Antivirus with a number of tools, such as:
+
+* Microsoft Endpoint Manager (which includes Microsoft Intune and Microsoft Endpoint Configuration Manager)
+* Group Policy
+* PowerShell cmdlets
+* Windows Management Instrumentation (WMI)
+* link:/mem/configmgr/tenant-attach/[Tenant attach]
+
+The following broad categories of features can be configured:
+
+* Cloud-delivered protection.
+See xref:cloud-protection-microsoft-defender-antivirus.adoc[Cloud-delivered protection and Microsoft Defender Antivirus]
+* Always-on real-time protection, including behavioral, heuristic, and machine learning-based protection.
+See xref:configure-protection-features-microsoft-defender-antivirus.adoc[Configure behavioral, heuristic, and real-time protection].
+* How end users interact with the client on individual endpoints.
+See the following resources:
+ ** xref:prevent-end-user-interaction-microsoft-defender-antivirus.adoc[Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface]
+ ** xref:configure-local-policy-overrides-microsoft-defender-antivirus.adoc[Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings]
+
+____
+[!TIP] Review xref:configuration-management-reference-microsoft-defender-antivirus.adoc[Reference topics for management and configuration tools].
+If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____

@@ -1,0 +1,39 @@
+= View directory synchronization errors in Microsoft 365
+:audience: Admin
+:author: kelleyvice-msft
+:description: Learn how to view directory synchronization errors and possible fixes in Microsoft 365 admin center.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
+:ms.author: kvice
+:ms.collection: ["Ent_O365", "M365-identity-device-management"]
+:ms.custom: ["Adm_O365", "seo-marvel-apr2020", "admindeeplinkMAC"]
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+:search.appverid: ["MET150", "MOE150", "MED150", "MBS150", "GPA150"]
+
+== View directory synchronization errors in Microsoft 365
+
+You can view directory synchronization errors in the https://go.microsoft.com/fwlink/p/?linkid=2024339[Microsoft 365 admin center].
+Only the User object errors are displayed.
+To view errors with PowerShell, see link:/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency[Identify objects with DirSyncProvisioningErrors].
+
+=== View directory synchronization errors in the Microsoft 365 admin center
+
+To view any errors in the Microsoft 365 admin center:
+
+. Sign in to the https://admin.microsoft.com[Microsoft 365 admin center] with a global administrator account.
+. On the *Home* page, you'll see the *User management* card.
++
+image::../media/060006e9-de61-49d5-8979-e77cda198e71.png[The User management card in the Microsoft 365 admin center.]
+
+. On the card, choose *Sync errors* under *Azure AD Connect* to see the errors on the *Directory sync errors* page.
++
+image::../media/882094a3-80d3-4aae-b90b-78b27047974c.png[An example of the Directory sync errors page.]
+
+. Choose any of the errors to display the details pane with information about the error and tips on how to fix it.
++
+image::../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png[Example of the details of a directory sync error.]
+
+After viewing, see xref:fix-problems-with-directory-synchronization.adoc[fixing problems with directory synchronization for Microsoft 365] to correct any identified issues.

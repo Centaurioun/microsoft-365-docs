@@ -1,0 +1,179 @@
+= Introduction to Microsoft SharePoint Syntex
+:audience: admin
+:author: chuckedmonson
+:description: Learn how to find resources for Microsoft SharePoint Syntex.
+:manager: pamgreen
+:ms.author: chucked
+:ms.collection: ["enabler-strategic", "m365initiative-syntex"]
+:ms.custom: ["intro-overview", "intro-get-started"]
+:ms.localizationpriority: medium
+:ms.reviewer: ssquires, toresing
+:ms.service: microsoft-365-enterprise
+:ms.topic: landing-page
+:search.appverid:
+
+== Introduction to Microsoft SharePoint Syntex
+
+SharePoint Syntex is a Microsoft 365 service that helps organizations to:
+
+* Use advanced AI and machine teaching to amplify human experiences
+* Automate content processing
+* Transform content into knowledge
+
+The resources on this page are designed to get you started with learning about and using SharePoint Syntex in your organization.
+
+</br>
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS]
+____
+
+</br>
+
+=== Get started
+
+The resources in this section help you learn more about the methods of data classification and extraction used by SharePoint Syntex.
+There are two custom model types--xref:document-understanding-overview.adoc[document understanding] and xref:form-processing-overview.adoc[form processing]--and a xref:prebuilt-overview.adoc[prebuilt] model type.
+
+____
+[!NOTE] You can get started with SharePoint Syntex without buying licenses by xref:create-a-content-center.adoc[creating a content center from the SharePoint admin center].
+Unlicensed users can create document understanding models but can't apply them to a document library.
+____
+
+|===
+| If you're looking for this information: | Go to this resource:
+
+| Learn more about document understanding
+| xref:./document-understanding-overview.adoc[Document understanding overview]
+
+| Learn more about form processing
+| xref:./form-processing-overview.adoc[Form processing overview]
+
+| Understand the differences between the two methods
+| xref:./difference-between-document-understanding-and-form-processing-model.adoc[Difference between document understanding and form processing models]
+
+| See resources in the Microsoft Tech Community Resource Center
+| https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex[SharePoint Syntex - Content services in Microsoft 365]
+
+| SharePoint Syntex FAQ on the Microsoft Tech Community Resource Center
+| https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/[SharePoint Syntex - FAQ]
+
+| How to get SharePoint Syntex
+| https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex[SharePoint Syntex product page]
+
+| Learn to use SharePoint Syntex
+| link:/training/paths/syntex-get-started[SharePoint Syntex learning path]
+|===
+
+=== Adoption
+
+Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
+
+|===
+| If you're looking for this information: | Go to this resource:
+
+| Learn how to start planning to use SharePoint Syntex
+| xref:./adoption-getstarted.adoc[SharePoint Syntex adoption: get started]
+
+| See example scenarios to give you ideas about how you can use SharePoint Syntex in your organization
+| xref:./adoption-scenarios.adoc[Scenarios and use cases for SharePoint Syntex]
+
+| Set up and run a trial pilot program for SharePoint Syntex
+| xref:./trial-syntex.adoc[Run a trial]
+
+| Learn how to use SharePoint Syntex to automate document processes
+| xref:./solution-manage-contracts-in-microsoft-365.adoc[Manage contracts using a Microsoft 365 solution]
+
+| Try out a customizable SharePoint site template to help manage contracts
+| xref:./use-contracts-management-site.adoc[Use the Contracts Management site template]
+
+| Try out an instructional Content Center site template to learn more about models
+| xref:./use-content-center-site.adoc[Use the Content Center site template]
+|===
+
+=== Set up SharePoint Syntex
+
+The resources in this section help your admin in your organization to set up and configure Microsoft SharePoint Syntex in your Microsoft 365 environment.
+
+|===
+| If you're looking for this information: | Go to this resource:
+
+| Set up and configure SharePoint Syntex
+| xref:./set-up-content-understanding.adoc[Set up SharePoint Syntex]
+
+| Learn about licensing for SharePoint Syntex
+| xref:./syntex-licensing.adoc[Licensing for SharePoint Syntex]
+
+| Learn about image tagging and how to disable
+| xref:./image-tagging.adoc[Image tagging in SharePoint Syntex]
+
+| Use PowerShell to manage SharePoint Syntex
+| xref:./powershell-syntex-intro.adoc[Manage SharePoint Syntex with PowerShell]
+|===
+
+=== Models
+
+The resources in this section help your users learn how to create and configure document understanding and form processing models.
+
+|===
+| If you're looking for this information: | Go to this resource:
+
+| Learn how to work with models
+| xref:./create-a-content-center.adoc[Create a content center] +  + xref:./create-a-classifier.adoc[Create a classifier] +  + xref:./duplicate-a-model.adoc[Duplicate a model] +  + xref:./rename-a-model.adoc[Rename a model] +  + xref:./create-an-extractor.adoc[Create an extractor] +  + xref:./rename-an-extractor.adoc[Rename an extractor] +  + xref:./create-a-form-processing-model.adoc[Create a form processing model] +  + xref:./explanation-types-overview.adoc[Explanation types] +  + xref:./explanation-templates.adoc[Use explanation templates] +  + xref:./apply-a-model.adoc[Apply a document understanding model] +  + xref:./learn-about-document-understanding-models-through-the-sample-model.adoc[Learn about document understanding models through the sample model] +  +
+
+| Apply a retention label to your model
+| xref:./apply-a-retention-label-to-a-model.adoc[Apply a retention label to a document understanding model]
+
+| Apply a sensitivity label to your model
+| xref:./apply-a-sensitivity-label-to-a-model.adoc[Apply a sensitivity label to a document understanding model]
+
+| Use prebuilt models to extract info from documents
+| xref:./prebuilt-models.adoc[Use a prebuilt model to extract info from invoices or receipts]
+
+| Create and train models locally on a SharePoint site
+| xref:./create-local-model.adoc[Create a model on a local SharePoint site]
+
+| Use trained models in other content centers
+| xref:./model-discovery.adoc[Publish and discover document understanding models]
+
+| Perform metadata-based queries on document libraries
+| xref:./metadata-search.adoc[Search for metadata in document libraries]
+
+| Use Managed Metadata services term store taxonomy when creating an extractor
+| xref:./leverage-term-store-taxonomy.adoc[Leverage term store taxonomy when creating an extractor]
+
+| Learn how to see data about your models
+| xref:./model-usage-analytics.adoc[Model usage analytics]
+
+| Learn how to use accessibility mode when training a model
+| xref:./accessibility-mode.adoc[SharePoint Syntex accessibility mode]
+|===
+
+=== Premium services
+
+A SharePoint Syntex license gives your users premium content services that give you additional functionality in your Microsoft 365 environment.
+The resources in this section give you more details about these features and how to use them.
+
+|===
+| If you're looking for this information: | Go to this resource:
+
+| Learn about importing a data set using Simple Knowledge Organization System based format
+| xref:./import-term-set-skos.adoc[Import a term set using a SKOS-based format] +  + xref:./skos-format-reference.adoc[SKOS format reference for SharePoint taxonomy] +  +
+
+| Learn how to make content types more consistently available to SharePoint libraries and lists
+| xref:./push-content-type-to-hub.adoc[Push content types to a hub]
+
+| Learn about the term store reports that are available to you
+| xref:./term-store-analytics.adoc[Term store reports]
+|===
+
+=== Extensibility
+
+Use REST APIs to create a document understanding model, apply or remove the model to one or more libraries, and obtain or update information about the model.
+
+|===
+| If you're looking for this information: | Go to this resource:
+
+| Use REST APIs for document understanding models
+| link:/sharepoint/dev/apis/syntex/syntex-model-rest-api[SharePoint Syntex document understanding model REST API]
+|===

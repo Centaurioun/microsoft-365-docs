@@ -1,0 +1,674 @@
+// This file is generated automatically each week. Changes made to this file will be overwritten.
+
+=== Week of December 23, 2019
+
+|===
+| Published On | Topic title | Change
+
+| 12/23/2019
+| link:/Office365/Admin/add-users/assign-admin-roles[Assign admin roles the Microsoft 365 admin center]
+| modified
+
+| 12/23/2019
+| link:/Office365/Admin/add-users/change-a-user-name-and-email-address[Change a user name and email address in Microsoft 365]
+| modified
+
+| 12/23/2019
+| link:/Office365/Admin/add-users/let-users-reset-passwords[Let users reset their own passwords in Microsoft 365]
+| modified
+
+| 12/23/2019
+| link:/Office365/Admin/add-users/remove-former-employee[Remove a former employee from Microsoft 365]
+| modified
+
+| 12/23/2019
+| link:/Office365/Admin/add-users/reset-passwords[Reset Microsoft 365 Apps for business passwords]
+| modified
+
+| 12/23/2019
+| link:/Office365/Admin/admin-overview/admin-center-overview[About the Microsoft 365 admin center]
+| modified
+
+| 12/23/2019
+| link:/Office365/Admin/setup/create-signatures-and-disclaimers[Create organization-wide signatures and disclaimers]
+| modified
+
+| 12/23/2019
+| link:/Office365/Admin/setup/set-up-file-storage-and-sharing[Set up Microsoft 365 file storage and sharing]
+| modified
+
+| 12/23/2019
+| link:/Office365/Admin/subscriptions-and-billing/remove-licenses-from-subscription[Remove licenses from your Microsoft 365 for business subscription]
+| modified
+
+| 12/23/2019
+| link:/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice[View your bill or invoice]
+| modified
+|===
+
+=== Week of January 06, 2020
+
+|===
+| Published On | Topic title | Change
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/active-users[Microsoft 365 Reports in the admin center - Active Users]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/activity-reports[Microsoft 365 Reports in the admin center]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/email-activity[Microsoft 365 Reports in the admin center - Email activity]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/email-apps-usage[Microsoft 365 Reports in the admin center - Email apps usage]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/mailbox-usage[Microsoft 365 Reports in the admin center - Mailbox usage]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/microsoft-office-activations[Microsoft 365 Reports in the admin center - Microsoft Office activations]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/microsoft-teams-device-usage[Microsoft 365 Reports in the admin center - Microsoft Teams device usage]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/microsoft-teams-user-activity[Microsoft 365 Reports in the admin center - Microsoft Teams user activity]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/office-365-groups[Microsoft 365 Reports in the admin center - Microsoft 365 groups]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/onedrive-for-business-activity[Microsoft 365 Reports in the admin center - OneDrive for Business activity]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/onedrive-for-business-usage[Microsoft 365 Reports in the admin center - OneDrive for Business usage]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/sharepoint-activity[Microsoft 365 Reports in the admin center - SharePoint activity]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/sharepoint-site-usage[Microsoft 365 Reports in the admin center - SharePoint site usage]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/yammer-activity-report[Microsoft 365 Reports in the admin center - Yammer activity report]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/yammer-device-usage-report[Microsoft 365 Reports in the admin center - Yammer device usage report]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/activity-reports/yammer-groups-activity-report[Microsoft 365 Reports in the admin center - Yammer groups activity report]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/about-admin-roles[About admin roles in the Microsoft 365 admin center]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/add-users[Add users individually or in bulk to Microsoft 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/admin-roles-page[About admin roles]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/assign-admin-roles[Assign admin roles the Microsoft 365 admin center]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/create-edit-or-delete-a-custom-user-view[Create, edit, or delete a custom user view in Microsoft 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/get-access-to-and-back-up-a-former-user-s-data[Get access to and back up a former user's data]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/give-mailbox-permissions-to-another-user[Give mailbox permissions to another user in Microsoft 365 - Admin Help]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/remove-former-employee[Remove a former employee from Microsoft 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/reset-passwords[Reset Microsoft 365 Apps for business passwords]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/add-users/restore-user[Restore a user in Microsoft 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/admin-overview/admin-center-overview[About the Microsoft 365 admin center]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/admin-overview/get-started-with-office-365[Get started with Microsoft 365 for business]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/admin-overview/what-subscription-do-i-have[What Microsoft 365 for business subscription do I have?]
+| modified
+
+| 1/10/2020
+| xref:../get-help-support.adoc[Contact support for business products - Admin Help]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/create-groups/compare-groups[Compare groups in Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/create-groups/create-groups[Create a Microsoft 365 group in the admin center]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/create-groups/office-365-groups-expiration-policy[Microsoft 365 Group Expiration Policy]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/create-groups/office-365-groups[Overview of Microsoft 365 Groups for administrators]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/add-or-edit-custom-dns-records[Add or edit custom DNS records in Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/change-nameservers-at-1-1-internet[Change nameservers to set up Office 365 with 1&1 IONOS]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/change-nameservers-at-aws[Change nameservers to set up Office 365 with Amazon Web Services (AWS)]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/change-nameservers-at-bluehost[Change nameservers to set up Office 365 with Bluehost]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/change-nameservers-at-google-domains[Change nameservers to set up Office 365 with Google Domains]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/change-nameservers-at-hostgator[Change nameservers to set up Office 365 with Hostgator]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/change-nameservers-at-mydomain[Change nameservers to set up Office 365 with MyDomain]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/change-nameservers-at-network-solutions[Change nameservers to set up Office 365 with Network Solutions]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-1-1-internet[Create DNS records at 1&1 IONOS for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-123-reg-co-uk[Create DNS records at 123-reg.co.uk for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-aws[Create DNS records at Amazon Web Services (AWS) for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-bluehost[Create DNS records at Bluehost for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-crazy-domains[Create DNS records at Crazy Domains for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-dnsmadeeasy[Create DNS records at DNSMadeEasy for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-dyn-com[Create DNS records at Dyn.com for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-enomcentral[Create DNS records at eNomCentral for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-godaddy[Create DNS records at GoDaddy for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-google-domains[Create DNS records at Google Domains for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-hostgator[Create DNS records at Hostgator for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-hover[Create DNS records at Hover for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-mydomain[Create DNS records at MyDomain for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-name-com[Create DNS records at name.com for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-names-co-uk[Create DNS records at Names.co.uk for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-network-solutions[Create DNS records at Network Solutions for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-register-com[Create DNS records at Register.com for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-register365[Create DNS records at Register365 for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/dns/create-dns-records-at-yahoo-small-business[Create DNS records at Yahoo!
+Small Business for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/email/about-shared-mailboxes[About shared mailboxes]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/email/add-user-or-contact-to-distribution-list[Add a user or contact to an Office 365 distribution group]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/email/change-email-address[Change your email address to use your custom domain]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/email/configure-a-shared-mailbox[Configure a shared mailbox]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/email/create-a-shared-mailbox[Create a shared mailbox]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/email/create-edit-or-delete-a-security-group[Create, edit, or delete a security group in the Microsoft 365 admin center]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/email/email-collaboration[Email collaboration in Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/email/manage-email-app-access[Manage email app access in Microsoft 365 admin center]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/email/resolve-issues-with-shared-mailboxes[Resolve issues with shared mailboxes]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/get-help-with-domains/buy-a-domain-name[Buy a domain name in Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/get-help-with-domains/change-nameservers-at-any-domain-registrar[Change nameservers to set up Office 365 with any domain registrar]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider[Create DNS records at any DNS hosting provider for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/get-help-with-domains/dns-basics[DNS basics]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/get-help-with-domains/domain-connect[Using Domain Connect]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/get-help-with-domains/find-your-domain-registrar[Find your domain registrar for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/get-help-with-domains/get-help-with-domains[Get help with Office 365 domains]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/get-help-with-domains/remove-a-domain[Remove a domain from Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/get-help-with-domains/set-up-your-domain-host-specific-instructions[Set up your domain (host-specific instructions)]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/assign-licenses-to-users[Assign licenses to users]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/change-address-contact-and-more[Change your organization's address, technical contact, and more]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/change-contact-preferences[Change your contact preferences for communications from Microsoft]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/customize-the-app-launcher[Add custom tiles to the app launcher]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/manage-deployment-of-add-ins[Manage deployment of Office 365 add-ins in the admin center]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/release-options-in-office-365[Set up the Standard or Targeted release options in Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/remove-licenses-from-users[Unassign licenses from users]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/room-and-equipment-mailboxes[Room and equipment mailboxes]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/set-password-expiration-policy[Set the password expiration policy for your organization]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/share-calendars-with-external-users[Share calendars with external users]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/share-sites-with-external-users[Share sites and files externally]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/manage/stay-on-top-of-updates[Stay on top of Office 365 changes]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/add-partner[Add, change, or delete a subscription advisor partner]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/become-admin-and-make-purchases[Become the admin and purchase Office 365 for your organization]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/become-the-admin[Perform an internal admin takeover in Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/compare-ways-to-block-access[Compare ways to block access to Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/contacts[Quick help Contacts]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/cortana-integration[Cortana integration with Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/customize-help-desk[Add customized help desk info to the Office 365 help pane]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/deleted-user[Quick help Deleted user]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/deleted-users-checklist[Quick help Deleted users checklist]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/device-list[Device list CSV-file]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/e-invoice-of-your-subscription-in-taiwan[Understand your e-Invoice for Office 365 for business (Taiwan)]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/integrated-apps[Turning Integrated Apps on or off]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/license-restrictions[License restrictions for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/manage-licenses-for-devices[Manage licenses for devices]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/password-policy-recommendations[Password policy recommendations for Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/product-key-errors-and-solutions[Problems with your Office 365 for business product key?]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/self-service-sign-up[Using self-service sign up in your organization]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/set-up-outlook-to-read-email[Set up Outlook to read email]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/sign-up-for-online-services[Your domain may be in use if someone else in your organization signed up with it]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/top-billing-questions[Top billing questions for Office 365 for business]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/types-of-users[Quick help Types of users]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/use-a-promo-code[Use your Office 365 promo code to reduce price]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/ways-to-manage-contacts[Quick help Ways to manage contacts]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/what-happens-if-i-cancel[What happens if I cancel a subscription?]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/misc/why-can-t-i-switch-plans[Why can't I switch Office 365 for business plans?]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication[Set up multi-factor authentication for users]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/services-in-china/buy-or-try-subscriptions?view=o365-21vianet&preserve-view=true[Buy or try subscriptions for Office 365 operated by 21Vianet]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet[Create DNS records for Office 365 when you manage your DNS records]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/services-in-china/purpose-of-cname?view=o365-21vianet&preserve-view=true[What's the purpose of the Office 365 CNAME record for MSOID?]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/services-in-china/services-in-china?view=o365-21vianet&preserve-view=true[Office 365 operated by 21Vianet]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/setup/add-domain[Add a domain to Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/setup/create-distribution-lists[Create distribution groups in the Microsoft 365 admin center]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/setup/domains-faq[Domains FAQ]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/setup/migrate-email-and-contacts-admin[Migrate email and contacts to Office 365]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/setup/plan-your-setup[Plan your setup of Office 365 for business]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/setup/set-up-file-storage-and-sharing[Set up Office 365 file storage and sharing]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/setup/setup[Set up Office 365 for business]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/add-storage-space[Add storage space for your subscription]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/buy-a-subscription-from-your-free-trial[Buy a subscription to Office 365 for business from your free trial]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/buy-another-subscription[Buy another Office 365 for business subscription]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/buy-licenses[Buy licenses for your Office 365 for business subscription]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/buy-or-edit-an-add-on[Buy or edit an add-on for Office 365 for business]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/cancel-your-subscription[Cancel your subscription]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/extend-your-trial[Extend your trial for Office 365 for business]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/remove-licenses-from-subscription[Remove licenses from your Office 365 for business subscription]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/switch-to-a-different-plan[Switch to a different Office 365 for business plan]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice[View your bill or invoice]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/what-does-switching-plans-do-to-my-service-and-billing[What does upgrading Office 365 plans do to my service and billing?]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/subscriptions-and-billing/what-if-my-subscription-expires[What happens to my data and access when my subscription ends?]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/usage-analytics/enable-usage-analytics[Enable Microsoft 365 usage analytics]
+| modified
+
+| 1/10/2020
+| link:/Office365/Admin/usage-analytics/usage-analytics[Microsoft 365 usage analytics]
+| modified
+|===
+
+=== Week of January 13, 2020
+
+|===
+| Published On | Topic title | Change
+
+| 1/14/2020
+| link:/Office365/Admin/subscriptions-and-billing/change-payment-frequency[Change your payment frequency]
+| modified
+
+| 1/14/2020
+| link:/Office365/Admin/usage-analytics/enable-usage-analytics[Enable Microsoft 365 usage analytics]
+| modified
+
+| 1/14/2020
+| link:/Office365/Admin/usage-analytics/usage-analytics-data-model[Microsoft 365 usage analytics data model]
+| modified
+
+| 1/14/2020
+| link:/Office365/Admin/subscriptions-and-billing/cancel-your-subscription[Cancel your subscription]
+| modified
+
+| 1/14/2020
+| link:/Office365/Admin/usage-analytics/customize-reports[Customize the reports in Microsoft 365 usage analytics]
+| modified
+
+| 1/15/2020
+| link:/Office365/Admin/subscriptions-and-billing/manage-payment-methods[Manage payment methods]
+| modified
+
+| 1/17/2020
+| link:/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication[Set up multi-factor authentication for users]
+| modified
+|===
+
+=== Week of January 20, 2020
+
+|===
+| Published On | Topic title | Change
+
+| 1/21/2020
+| link:/Office365/Admin/manage/set-password-expiration-policy[Set the password expiration policy for your organization]
+| modified
+
+| 1/21/2020
+| link:/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication[Set up multi-factor authentication for users]
+| modified
+
+| 1/21/2020
+| link:/Office365/Admin/setup/upgrade-users-to-latest-office-client[Upgrade your Office 365 for business users to the latest Office client]
+| modified
+|===

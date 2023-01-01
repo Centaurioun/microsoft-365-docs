@@ -1,0 +1,84 @@
+= Review the results of Microsoft Defender Antivirus scans
+:author: denisebmsft
+:description: Review the results of scans using Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Windows Security app
+:keywords: scan results, remediation, full scan, quick scan
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: M365-security-compliance
+:ms.custom: nextgen
+:ms.date: 10/18/2021
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Review Microsoft Defender Antivirus scan results
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+After a Microsoft Defender Antivirus scan completes, whether it is an xref:run-scan-microsoft-defender-antivirus.adoc[on-demand] or xref:scheduled-catch-up-scans-microsoft-defender-antivirus.adoc[scheduled scan], the results are recorded and you can view the results.
+
+=== Use Configuration Manager to review scan results
+
+See link:/configmgr/protect/deploy-use/monitor-endpoint-protection[How to monitor Endpoint Protection status].
+
+=== Use PowerShell cmdlets to review scan results
+
+The following cmdlet will return each detection on the endpoint.
+If there are multiple detections of the same threat, each detection will be listed separately, based on the time of each detection:
+
+[,powershell]
+----
+Get-MpThreatDetection
+----
+
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="The PowerShell cmdlets and outputs" lightbox="../../media/wdav-get-mpthreatdetection.png":::
+
+You can specify `-ThreatID` to limit the output to only show the detections for a specific threat.
+
+If you want to list threat detections, but combine detections of the same threat into a single item, you can use the following cmdlet:
+
+[,powershell]
+----
+Get-MpThreat
+----
+
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="The PowerShell code" lightbox="../../media/wdav-get-mpthreat.png":::
+
+See xref:use-powershell-cmdlets-microsoft-defender-antivirus.adoc[Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus] and link:/powershell/module/defender/[Defender Antivirus cmdlets] for more information on how to use PowerShell with Microsoft Defender Antivirus.
+
+=== Use Windows Management Instruction (WMI) to review scan results
+
+Use the link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[*Get* method of the *MSFT_MpThreat* and *MSFT_MpThreatDetection*] classes.
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____
+
+=== Related articles
+
+* xref:customize-run-review-remediate-scans-microsoft-defender-antivirus.adoc[Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation]
+* xref:microsoft-defender-antivirus-in-windows-10.adoc[Microsoft Defender Antivirus in Windows 10]

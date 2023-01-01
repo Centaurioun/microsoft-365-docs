@@ -1,0 +1,134 @@
+= Find devices by tag API
+:audience: ITPro
+:author: mjcaparas
+:description: Find all devices that contain specifc tag
+:keywords: apis, supported apis, get, device, find, find device, by tag, tag
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Find devices by tag API
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+=== API description
+
+Find xref:machine.adoc[Machines] by xref:machine-tags.adoc[Tag].
+
+`startswith` query is supported.
+
+=== Limitations
+
+. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API.
+To learn more, including how to choose permissions, see xref:apis-intro.adoc[Use Microsoft Defender for Endpoint APIs]
+
+|===
+| Permission type | Permission | Permission display name
+
+| Application
+| Machine.Read.All
+| 'Read all machine profiles'
+
+| Application
+| Machine.ReadWrite.All
+| 'Read and write all machine information'
+
+| Delegated (work or school account)
+| Machine.Read
+| 'Read machine information'
+
+| Delegated (work or school account)
+| Machine.ReadWrite
+| 'Read and write machine information'
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* Response will include only devices that the user have access to based on device group settings (See xref:machine-groups.adoc[Create and manage device groups] for more information)
+* The user needs to have at least the following role permission: 'View Data' (See xref:user-roles.adoc[Create and manage roles] for more information)
+* Response will include only devices that the user have access to based on device group settings (See xref:machine-groups.adoc[Create and manage device groups] for more information)
+
+Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+____
+
+=== HTTP request
+
+[,http]
+----
+GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
+----
+
+=== Request headers
+
+|===
+| Name | Type | Description
+
+| Authorization
+| String
+| Bearer \{token}.
+*Required*.
+|===
+
+=== Request URI parameters
+
+|===
+| Name | Type | Description
+
+| tag
+| String
+| The tag name.
+*Required*.
+
+| useStartsWithFilter
+| Boolean
+| When set to true, the search will find all devices with tag name that starts with the given tag in the query.
+Defaults to false.
+*Optional*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful - 200 OK with list of the machines in the response body.
+
+=== Example
+
+==== Request
+
+Here is an example of the request.
+
+[,http]
+----
+GET https://api.securitycenter.microsoft.com/api/machines/findbytag?tag=testTag&useStartsWithFilter=true
+----

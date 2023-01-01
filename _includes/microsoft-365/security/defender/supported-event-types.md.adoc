@@ -1,0 +1,160 @@
+= Microsoft 365 Defender streaming event types supported in Event Streaming API
+:audience: ITPro
+:author: mjcaparas
+:description: Learn which streaming event types (tables) are supported by the streaming API
+:keywords: raw data export, Streaming API, API, Event hubs, Azure storage, storage account, Hunting, raw data sharing
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: article
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Supported Microsoft 365 Defender streaming event types in event streaming API
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+[!includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+The Event Streaming API is constantly being expanded to support more event types.
+Learn which Hunting tables are generally available, currently in public preview, or not yet supported.
+*New - Email event types/tables are now GA*
+
+=== Hunting tables support status in Event Streaming API
+
+The following table only includes the list of the tables supported in the streaming API, and is not inclusive of all AH schema.
+For a full list of the API see, link:advanced-hunting-schema-tables.md#learn-the-schema-tables[Learn the schema tables].
+
+|===
+| Table name | Status + (Commercial) | GCC | GCC High | DoD
+
+| *xref:advanced-hunting-alertevidence-table.adoc[AlertEvidence]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-alertinfo-table.adoc[AlertInfo]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-deviceevents-table.adoc[DeviceEvents]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-DeviceFileCertificateInfo-table.adoc[DeviceFileCertificateInfo]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-devicefileevents-table.adoc[DeviceFileEvents]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-deviceimageloadevents-table.adoc[DeviceImageLoadEvents]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-deviceinfo-table.adoc[DeviceInfo]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-devicelogonevents-table.adoc[DeviceLogonEvents]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-devicenetworkevents-table.adoc[DeviceNetworkEvents]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-devicenetworkinfo-table.adoc[DeviceNetworkInfo]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-deviceprocessevents-table.adoc[DeviceProcessEvents]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-deviceregistryevents-table.adoc[DeviceRegistryEvents]*
+| GA
+| GA
+| GA
+| GA
+
+| *xref:advanced-hunting-emailattachmentinfo-table.adoc[EmailAttachmentInfo]*
+| GA
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+
+| *xref:advanced-hunting-emailevents-table.adoc[EmailEvents]*
+| GA
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+
+| *xref:advanced-hunting-emailpostdeliveryevents-table.adoc[EmailPostDeliveryEvents]*
+| GA
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+
+| *xref:advanced-hunting-emailurlinfo-table.adoc[EmailUrlInfo]*
+| GA
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+
+| *xref:advanced-hunting-identitylogonevents-table.adoc[IdentityLogonEvents]*
+| GA
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+
+| *xref:advanced-hunting-identityqueryevents-table.adoc[IdentityQueryEvents]*
+| GA
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+
+| *xref:advanced-hunting-identitydirectoryevents-table.adoc[IdentityDirectoryEvents]*
+| GA
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+
+| *xref:advanced-hunting-cloudappevents-table.adoc[CloudAppEvents]*
+| GA
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+| image:../defender-endpoint/images/svg/check-no.svg[No]
+|===

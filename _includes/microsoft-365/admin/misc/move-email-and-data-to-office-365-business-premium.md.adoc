@@ -1,0 +1,77 @@
+= Move email and data to Microsoft 365 Business Standard
+:ROBOTS: NOINDEX
+:audience: Admin
+:author: efrene
+:description: Learn to move data over to your new business identity.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
+:ms.author: efrene
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365", "Adm_NonTOC", "SPO_Content"]
+:ms.custom: ["VSBFY23", "AdminSurgePortfolio"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Move email and data to Microsoft 365 Business Standard
+
+When you upgrade to Microsoft 365 Business Standard, we give you a brand new  _business identity_.
+You get a new email account, and a separate OneDrive account for your business data.
+
+If you want to move some of your personal data over to your new business identity, follow the instructions below.
+
+=== <<tab/OneDrive,OneDrive>>
+
+*Copy your OneDrive data*
+
+. Create a temporary folder on your hard drive to temporarily store the files that you want to migrate to Microsoft 365 for business.
+. Go to https://onedrive.live.com/ and sign in using the Microsoft account that you use to access your Microsoft 365 Family subscription.
+. Copy the files that you want to use with Microsoft 365 for business to the local folder that you created in step 1.
+
+*Import OneDrive files to Microsoft 365 for business*
+
+. Go to https://go.microsoft.com/fwlink/?LinkId=816877[admin.microsoft.com] and sign in with your Microsoft 365 Apps for business user name and password.
+. Select the *app launcher* icon in the upper-left and then choose *OneDrive*.
++
+____
+[!TIP] The first time you open OneDrive for Business, you'll need to set up your OneDrive.
+If this occurs, on the *Welcome to OneDrive for Business* page, select *Next*.
+After OneDrive is set up, select *Your OneDrive is ready*.
+____
+
+. You'll be taken to an empty OneDrive folder.
+If you want to create sub folders, select *New* > *Folder*.
+. Select *Upload* to copy the files from your hard drive where you copied your OneDrive files.
++
+____
+[!NOTE]  You can upload individual files and groups of files (such as all files in a particular folder) at one time but you cannot copy a folder to OneDrive for Business.
+Instead, you'll need to create the folder structure you want on OneDrive for business.
+>  If you want to copy files to a folder that you created in step 4, open that folder before you upload the files.
+Otherwise, the files will be uploaded to the root folder.
+You can also move your files between folders in OneDrive for Business after you've uploaded them.
+____
+
+=== <<tab/Outlook,Outlook/Email>>
+
+*Export Outlook 2013 information to an Outlook data file*
+
+. Before you can create your Outlook data file (.pst), the account that you want to export Outlook information from must already be added to the desktop version of Outlook.
+For information about how to add an account to Outlook 2013 or higher, see https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b[Set up email in Outlook (for Windows)] or https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54[Set up email in Outlook for Mac 2011].
+. Each user needs to complete the steps in https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91[Export or backup email, contacts, and calendar to an Outlook .pst file].
+
+*Set up your new email account in Outlook*
+
+. Each user needs to set up their new email account that came with the Microsoft 365 for business subscription.
+To do this, they'll need the address of their new email account.
+Each user's email account is the same as the user name that they use to sign into Microsoft 365 for business.
+It will look something like sue@contoso.onmicrosoft.com or david@contoso.com.
+. Ask each user to add their email account to Outlook.
+To learn how, see https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b[Set up email in Outlook (for Windows)] or https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54[Set up email in Outlook for Mac 2011].
+
+*Import information from the Outlook data file*
+
+. This merges the email, calendar, tasks, and contacts that are stored in the PST file into your Microsoft 365 for business email account.
+. To import the information stored in the PST file into your Microsoft 365 for business email account, have each user complete the steps in https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac[Import email, contacts, and calendar from an Outlook .pst file].
+
+'''

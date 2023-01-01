@@ -1,0 +1,113 @@
+= Get started with data lifecycle management
+:audience: Admin
+:author: cabailey
+:description: Prescriptive steps for admins, licensing requirements, and common scenarios that manage the lifecycle of your organization's data.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: cabailey
+:ms.collection: ["M365-security-compliance", "tier1", "highpri", "SPO_Content"]
+:ms.custom: admindeeplinkCOMPLIANCE
+:ms.date:
+:ms.localizationpriority: high
+:ms.service: O365-seccomp
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+
+== Get started with data lifecycle management
+
+____
+_link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft 365 licensing guidance for security & compliance]._
+____
+
+Ready to start managing the lifecycle of your organization's data by retaining the content that you need to keep, and deleting the content that you don't?
+To get started, use the following guidance for Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Governance):
+
+. *Understand how retention and deletion works* in Microsoft 365, and then identify the workloads that need a retention policy and whether you need to create retention labels for exceptions: xref:retention.adoc[Learn about retention]
++
+____
+[!NOTE] If you need to manage high-value items for business, legal, or regulatory record-keeping requirements: Use retention labels with xref:records-management.adoc[records management] rather than data lifecycle management.
+____
+
+. *Create retention policies* for the workloads you identified, specifying retention settings and actions that are required by your organization policies or industry regulations: xref:create-retention-policies.adoc[Create retention policies]
++
+If needed, xref:create-retention-labels-information-governance.adoc[create and apply retention labels for your exceptions].
+
+. *Enable mailbox archiving* to provide users with additional mailbox storage space: xref:enable-archive-mailboxes.adoc[Enable archive mailboxes in Microsoft 365]
++
+If required to support archive mailboxes:
+
+ ** xref:enable-autoexpanding-archiving.adoc[Enable auto-expanding archiving] for mailboxes that need more than 100 GB storage.
+ ** Use xref:set-up-an-archive-and-deletion-policy-for-mailboxes.adoc[retention tags with a retention policy from messaging records management (MRM)] if you need to customize how emails are automatically moved from a user's primary mailbox to their archive mailbox, or if you need to specify retention and deletion settings for specific folders rather than the whole mailbox.
+
+. *Understand and manage inactive mailboxes* that retain mailbox content after employees leave the organization: xref:inactive-mailboxes-in-office-365.adoc[Learn about inactive mailboxes]
+. If you have PST files that contain data you want to govern: *Import PST files to online mailboxes* by using network upload or drive shipping: xref:importing-pst-files-to-office-365.adoc[Learn about importing your organization's PST files]
+
+=== Subscription and licensing requirements
+
+A number of different subscriptions support data lifecycle management capabilities.
+
+To see the options for licensing your users to benefit from Microsoft Purview features, see the link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft 365 licensing guidance for security & compliance].
+For the features listed on this page, see the link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management[Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management] section for feature-level licensing requirements.
+
+=== Permissions
+
+See the following section for information about roles and role groups to manage Microsoft 365 retention.
+
+For permissions to manage mailboxes for archiving, inactive mailboxes, and import, these typically require Exchange permissions, such as the Mail Recipients role.
+By default, this role is assigned to the Recipient Management and Organization Management role groups.
+For the exact permissions requirement for each management task, see the documentation that accompanies the admin instructions.
+
+==== Permissions for retention policies and retention labels
+
+Members of your compliance team who will create and manage retention policies and retention labels need permissions to the https://go.microsoft.com/fwlink/p/?linkid=2077149[Microsoft Purview compliance portal].
+By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin.
+To grant permissions for this limited administration, we recommend that you add users to the *Compliance Administrator* admin role group.
+
+Alternatively to using this default role, you can create a new role group and add the *Retention Management* role to this group.
+For a read-only role, use *View-Only Retention Management*.
+
+For instructions to add users to the default roles or create your own role groups, see xref:microsoft-365-compliance-center-permissions.adoc[Permissions in the Microsoft Purview compliance portal].
+
+These permissions are required only to create, configure, and apply retention policies and retention labels.
+The person configuring these policies and labels doesn't require access to the content.
+
+=== Common scenarios
+
+Use the following table to help you map your business requirements to the most common scenarios for data lifecycle management.
+
+|===
+| I want to ... | Documentation
+
+| Efficiently retain or delete data for Microsoft 365 services: + -  Exchange  + - SharePoint  + - OneDrive  + - Microsoft 365 Groups + - Teams + - Yammer + - Skype for Business
+| xref:create-retention-policies.adoc[Create and configure retention policies]
+
+| Provide users with additional mailbox storage
+| xref:enable-archive-mailboxes.adoc[Enable archive mailboxes in Microsoft 365]
+
+| Retain mailbox data after employees leave the organization
+| xref:create-and-manage-inactive-mailboxes.adoc[Create and manage inactive mailboxes]
+
+| Upload mailbox data from PST files
+| xref:use-network-upload-to-import-pst-files.adoc[Use network upload to import PST files]
+|===
+
+If you have a scenario that requires data management of individual items, see the link:get-started-with-records-management.md#common-scenarios[common scenarios for records management].
+
+=== End-user documentation
+
+See the following section for information about end-user documentation to support Microsoft 365 retention.
+
+The data lifecycle management capabilities for inactive mailboxes and import of PST files don't require end-user documentation because these are admin operations only.
+To help users understand and interact with their archive mailboxes in Outlook after you've enabled this capability, see https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721[Manage email storage with online archive mailboxes].
+
+==== End-user documentation for retention and deletion
+
+Most retention policies work unobtrusively in the background without user interaction, and so need little documentation for users.
+Retention policies for Teams inform users when their messages have been deleted with a link to https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b[Teams messages about retention policies].
+
+However, if you supplement retention policies with retention labels, these labels do have a UI presence in Microsoft 365 apps.
+Before you deploy these labels to your production network, make sure you provide information and instructions for end users and your help desk.
+To help users apply retention labels in SharePoint and OneDrive, see https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df[Apply retention labels to files in SharePoint or OneDrive].
+
+The most effective end-user documentation will always be customized guidance and instructions you provide for the retention label names and configurations you choose.
+See the following page and downloads that you can use to help train your users: https://microsoft.github.io/ComplianceCxE/enduser/retention/[End User Training for Retention Labels].

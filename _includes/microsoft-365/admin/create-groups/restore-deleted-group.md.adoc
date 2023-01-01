@@ -1,0 +1,71 @@
+= Restore a deleted Microsoft 365 group
+:audience: Admin
+:author: MikePlumleyMSFT
+:description: A deleted group is retained for 30 days and you can still restore the group. After 30 days, the group and its content is permanently deleted.
+:f1.keywords: CSH
+:manager: scotv
+:ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
+:ms.author: mikeplum
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["AdminSurgePortfolio", "AdminTemplateSet"]
+:ms.localizationpriority: medium
+:ms.reviewer: arvaradh
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Restore a deleted Microsoft 365 group
+
+If you've deleted a group, it will be retained for 30 days by default.
+This 30-day period is considered a "soft-delete" because you can still restore the group.
+After 30 days, the group and its associated contents are permanently deleted and cannot be restored.
+
+When a group is restored, the following content is restored:
+
+* Azure Active Directory (AD) Microsoft 365 Groups object, properties, and members.
+* Group's e-mail addresses.
+* Exchange Online shared Inbox and calendar.
+* SharePoint Online team site and files.
+* OneNote notebook
+* Planner
+* Teams
+* Yammer group and group content (If the Microsoft 365 group was created from Yammer)
+* Power BI link:/power-bi/collaborate-share/service-create-workspaces[Classic workspace]
+
+____
+[!NOTE] This article describes restoring only Microsoft 365 groups.
+All other groups cannot be restored once deleted.
+____
+
+=== Restore a group
+
+== <<tab/outlook,Outlook>>
+
+If you are the owner of a Microsoft 365 group, you can restore the group yourself in Outlook on the web by following these steps:
+
+. On the https://outlook.office.com/people/group/deleted[deleted groups page], select the *Manage groups* option under the *Groups* node, and then choose *Deleted*.
+. Click on the *Restore* tab next to the group you want to restore.
+
+If the deleted group doesn't appear here, contact an administrator.
+
+== <<tab/admin-center,Admin center>>
+
+If you are a global administrator or a groups administrator, you can restore a deleted group in the Microsoft 365 admin center:
+
+. Go to the https://admin.microsoft.com[admin center].
+. Expand *Groups*, and then click *Deleted groups*.
+. Select the group that you want to restore, and then click *Restore group*.
+
+____
+[!NOTE] In some cases, it may take as long as 24 hours for the group and all of its data to be restored.
+____
+
+'''
+
+=== Got questions about Microsoft 365 Groups?
+
+Visit the https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups[Microsoft Tech Community] to post questions and participate in conversations about Microsoft 365 groups.
+
+=== Related content
+
+xref:../../enterprise/manage-microsoft-365-groups-with-powershell.adoc[Manage Microsoft 365 Groups with PowerShell] (article) + link:/powershell/module/exchange/remove-unifiedgroup[Delete groups using the Remove-UnifiedGroup cmdlet] (article) + https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42[Manage your group-connected team site settings] (article) + https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f[Delete a group in Outlook] (article)

@@ -1,0 +1,27 @@
+= Cancel Google Workspace (and keep your domain)
+:audience: Admin
+:author: twernermsft
+:description: Learn how to cancel Google Workspace subscription but keep your domain.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:monikerRange: o365-worldwide
+:ms.author: twerner
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365"]
+:ms.custom: ["VSBFY23", "AdminSurgePortfolio", "adminvideo"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Cancel Google Workspace subscription
+
+. Sign in to https://admin.google.com/[Google Admin] and go to *Billing*.
+. In the *Subscriptions* list,choose your G Suite subscription, *Cancel subscription*, and then choose *Continue*.
++
+____
+[!IMPORTANT] your subscription will be cancelled immediately and you cannot undo this action.
+____
++
+:::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Screen shot of the Google Admin Billing page.":::
+
+Note that you might not see Domain Registration in your Subscriptions list if your DNS host provider isn't Google domains.

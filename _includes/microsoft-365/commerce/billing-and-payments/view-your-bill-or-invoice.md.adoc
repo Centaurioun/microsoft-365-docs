@@ -1,0 +1,110 @@
+= View your bill or invoice
+:audience: Admin
+:author: cmcatee-MSFT
+:description: Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: cmcatee
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365"]
+:ms.custom: ["commerce_billing", "VSBFY23", "TopSMBIssues", "okr_smb", "TRN_M365B", "OKR_SMB_Videos", "AdminSurgePortfolio", "AdminTemplateSet", "adminvideo"]
+:ms.date: 01/25/2022
+:ms.localizationpriority: high
+:ms.reviewer: jkinma, jmueller
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: GEA150
+
+== View your Microsoft 365 for business subscription bill or invoice
+
+Check out https://go.microsoft.com/fwlink/?linkid=2197659[Microsoft 365 small business help] on YouTube.
+
+This article is for people who have a Microsoft 365 for business subscription.
+
+If you need help with interpreting the charges you see on your bill, see xref:understand-your-invoice2.adoc[Understand your bill or invoice] for a detailed walkthrough.
+
+*Have a problem with your bill?* xref:../../admin/get-help-support.adoc[Contact support for business products].
+
+=== Before you begin
+
+You must be a Global or Billing admin to do the steps described in this article.
+
+=== Watch: View, download, or print your bill
+
+Check out this video and others on our https://go.microsoft.com/fwlink/?linkid=2209539[YouTube channel].
+
+____
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
+____
+
+. In the Microsoft 365 admin center, select *Billing* in the left navigation pane, and then select the https://go.microsoft.com/fwlink/p/?linkid=2102895[*Invoices* tab].
+. Select an invoice to view it.
+If you don't see an invoice, select *Filter by: Last 6 months* from the drop-down list.
+. To view the invoice details, select *Download PDF* in the top-right corner of the invoice.
+
+=== View a bill or invoice
+
+::: moniker range="o365-worldwide"
+
+. In the admin center, go to the *Billing* > https://go.microsoft.com/fwlink/p/?linkid=2102895[Bills & payments] page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+. In the admin center, go to the *Billing* > https://go.microsoft.com/fwlink/p/?linkid=2127421[Bills & payments] page.
+
+::: moniker-end
+
+. On the *Invoices* tab, select a date range from the drop-down list, and then choose the order that you want to view.
+. On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.
+. To print or save a PDF copy of the invoice, select *Download PDF*.
+
+If you want to receive a copy of your billing statement in email, see xref:manage-billing-notifications.adoc[Manage billing notifications and invoice attachments].
+
+::: moniker range="o365-21vianet"
+
+=== Request a Fapiao
+
+You can submit your Fapiao request to our https://go.microsoft.com/fwlink/p/?linkid=837465[Fapiao management system] about three (3) days after you have paid.
+
+. In the https://go.microsoft.com/fwlink/p/?linkid=850627[admin center], go to the *Billing* > https://go.microsoft.com/fwlink/p/?linkid=2127421[*Bills & payments*] page.
+. Find the invoice that you want, and then select *Get Fapiaos*.
+
+____
+[!NOTE]
+
+You need a registered account to access the https://go.microsoft.com/fwlink/p/?linkid=837465[Fapiao management system].
+If you haven't already set up an account, see xref:../../admin/services-in-china/apply-for-a-fapiao.adoc[Apply for a Fapiao for Office 365 operated by 21Vianet].
+____
+
+::: moniker-end
+
+____
+[!NOTE]
+
+Microsoft 365 services do not provide payment receipts.
+For credit card payments, please use the invoice and credit card billing statement to match your payment.
+____
+
+=== Run the Unknown Charge Diagnostic
+
+As a Microsoft 365 Global admin, you can use a diagnostic tool that runs within the Microsoft 365 admin center to research unexpected charges from Microsoft that appear on your bank or credit card statement.
+
+____
+[!NOTE] The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.
+____
+
+Select the *Run Tests* link below to open the diagnostic tool in the Microsoft 365 admin center.
+
+____
+[!div class="nextstepaction"] https://aka.ms/PillarUnknownCharge[Run Tests: Unknown Charge]
+____
+
+=== Next steps
+
+If you have a balance and would like to pay it, you can do that online.
+To learn how, see xref:pay-for-your-subscription.adoc[Pay for your subscription].
+
+=== Related content
+
+xref:pay-for-your-subscription.adoc[Pay by invoice, credit card, or bank account] (article) + xref:manage-payment-methods.adoc[Manage payment methods] (article) + xref:mexico-billing-info.adoc[Billing information for Microsoft 365 for business in Mexico] (article) + link:/education/windows/school-get-minecraft[Minecraft: Education Edition payment options] (article)

@@ -1,0 +1,64 @@
+= Configure Microsoft Defender Antivirus with WMI
+:audience: ITPro
+:author: denisebmsft
+:description: Learn how to configure and manage Microsoft Defender Antivirus by using WMI scripts to retrieve, modify, and update settings in Microsoft Defender for Endpoint.
+:keywords: wmi, scripts, windows management instrumentation, configuration
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: m365-security-compliance
+:ms.custom: nextgen
+:ms.date: 10/18/2018
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: how-to
+:search.appverid: met150
+
+== Use Windows Management Instrumentation (WMI) to configure and manage Microsoft Defender Antivirus
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+Windows Management Instrumentation (WMI) is a scripting interface that allows you to retrieve, modify, and update settings.
+
+Read more about WMI at the link:/windows/win32/wmisdk/wmi-start-page[Microsoft Developer Network System Administration library].
+
+Microsoft Defender Antivirus has a number of specific WMI classes that can be used to perform most of the same functions as Group Policy and other management tools.
+Many of the classes are analogous to xref:use-powershell-cmdlets-microsoft-defender-antivirus.adoc[Defender for Cloud PowerShell cmdlets].
+
+The link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[MSDN Windows Defender WMIv2 Provider reference library] lists the available WMI classes for Microsoft Defender Antivirus, and includes example scripts.
+
+Changes made with WMI will affect local settings on the endpoint where the changes are deployed or made.
+This means that deployments of policy with Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune can overwrite changes made with WMI.
+
+You can xref:configure-local-policy-overrides-microsoft-defender-antivirus.adoc[configure which settings can be overridden locally  with local policy overrides].
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____
+
+=== Related topics
+
+* xref:configuration-management-reference-microsoft-defender-antivirus.adoc[Reference topics for management and configuration tools]
+* xref:microsoft-defender-antivirus-in-windows-10.adoc[Microsoft Defender Antivirus in Windows 10]

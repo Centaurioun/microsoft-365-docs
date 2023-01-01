@@ -1,0 +1,129 @@
+= Integrate Microsoft OneDrive LTI with Canvas
+:audience: admin
+:author: DaniEASmith
+:description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the Microsoft OneDrive LTI for Canvas.
+:f1.keywords: ["CSH"]
+:manager: serdars
+:ms.author: danismith
+:ms.collection: M365-modern-desktop
+:ms.localizationpriority: medium
+:ms.reviewer: amitman
+:ms.service: o365-administration
+:ms.topic: article
+
+== Integrate Microsoft OneDrive LTI with Canvas
+
+This article is for education IT admins who need to set up the Microsoft OneDrive LTI for Canvas.
+
+For instructions for educators on how to use the OneDrive LTI in Canvas, see https://support.microsoft.com/topic/use-microsoft-onedrive-with-your-lms-c2ddeb48-f695-4267-94f2-14f7ff1b7bdd[Use Microsoft OneDrive with your LMS].
+
+Integrating Microsoft OneDrive LTI with Canvas is a two-step process.
+The first step enables Microsoft OneDrive in Canvas, and the second step makes the Microsoft OneDrive LTI available within Canvas courses.
+
+=== Recommended browser settings
+
+* Cookies should be enabled for Microsoft OneDrive.
+* Popups shouldn't be blocked for Microsoft OneDrive.
+
+____
+[!NOTE]
+
+* Cookies are not enabled by default in the Chrome browser incognito mode, and will need to be enabled.
+* Microsoft OneDrive LTI works in the private mode in Microsoft Edge browser.
+Ensure that you have not blocked cookies (which are enabled by default).
+____
+
+=== Enable Microsoft OneDrive LTI in Canvas
+
+____
+[!IMPORTANT] The person who performs this integration should be an administrator of Canvas and an administrator of the Microsoft 365 tenant.
+____
+
+. Sign into the https://onedrivelti.microsoft.com/admin[Microsoft OneDrive LTI Registration Portal]
+. Select the *Admin Consent* button and accept the permissions.
++
+____
+[!CAUTION] If this step isn't performed, the following step will give you an error, and you won't be able to take this step for an hour once you've gotten the error.
+____
+
+. Select the *Create new LTI Tenant* button.
+On the LTI Registration page, select *Canvas* in the dropdown and enter the base URL of your Canvas instance.
++
+____
+[!NOTE] If your Canvas instance is, for example, `+https://contoso.test.instructure.com+`, then the complete URL should be entered.
+____
++
+:::image type="content" source="media/OneDrive-LTI-07.png" alt-text="The LTI tenant administration page, with a dropdown field for choosing the LTI consumer platform and a URL text field.":::
+
+. Copy the JSON by selecting the *Copy* button (an icon on the right that shows two pages on top of one another).
+This will be used to generate the key in Canvas.
++
+:::image type="content" source="media/OneDrive-LTI-08.png" alt-text="An image showing the copy button that will copy the displayed JSON text and make it available for key generation in Canvas.":::
+
+. Sign into your Canvas instance as the administrator and select *Developer Keys* from the menu on the left side of the page.
+From the dropdown, create a developer key by choosing *LTI Key* from the dropdown on the upper right of the page.
++
+:::image type="content" source="media/OneDrive-LTI-14.png" alt-text="A screenshot showing the left-hand navigation bar with Developer Keys selected, and the LTI key entry selected from a dropdown on the right of the page.":::
+
+. On the Configure page, in the *Method* dropdown, select *Paste JSON* as the method and paste the JSON text you copied in Step 4 in the text field that appears.
++
+____
+[!TIP] *Optional Step:* If your school's educators wish to control for themselves which links appear in their courses' navigation, you can modify the `default` parameter in the copied JSON.
+The `default` parameter is set to `enabled` automatically;
+however, changing the `default` parameter to `disabled` allows educators to choose their own courses' navigation.
+
+For more information on how educators can modify their course navigation links, see https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020[How do I manage Course Navigation links?]
+____
+
+. Next, expand the *Additional settings* dropdown and set the *Privacy Level* to *Public*.
++
+Setting the *Privacy Level* to *Public* allows course members' names to appear to other members for collaboration.
+
+. Save the key, and it becomes available in Canvas in an *Off* state.
+Turn the key *On* and copy the key given in the *Details* column to be used in the next step.
++
+:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="The Canvas page with the key set in an off state.
+It will need to be turned on and the key will need to be copied from the details column on this page.":::
+
+. Return to the Microsoft OneDrive LTI Registration portal and paste the key in the *Canvas Client ID* field.
+Select *Next* when you're ready.
++
+:::image type="content" source="media/OneDrive-LTI-20.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
+
+. Review and save your changes.
+A message will be displayed on successful registration.
+. Your registration details can also be reviewed by selecting the *View LTI Tenants* button on the home page.
+
+Future releases may require additional admin consent.
+In those cases, you'll need to repeat only steps 1 and 2.
+
+=== Enable Microsoft OneDrive LTI in Canvas Courses
+
+A Canvas administrator can enable Microsoft OneDrive LTI for all courses.
+If Microsoft OneDrive LTI is needed in a specific course (and not all courses), the course educator needs to follow the same steps within the course settings.
+
+. Sign in as an administrator and go to the *Settings* section.
+. Go to the *Apps* section and select the *View App Configurations* button.
+. Select the *Add App* button.
+. In the *Configuration Type* dropdown, choose the *By Client ID* option.
+. Paste the value of the developer key generated previously in the *Client ID* field, and select the *Submit* button.
+
+:::image type="content" source="media/OneDrive-LTI-31.png" alt-text="The add app page, showing the By client ID option under the Configuration type dropdown menu.":::
+
+=== Collaboration Settings for Microsoft OneDrive LTI in Canvas Courses
+
+For OneDrive Collaborations to work for educators and students, ensure the *External Collaborations Tools* setting is turned off.
+To turn off the *External Collaborations Tool* setting, follow the steps below.
+
+. Sign to Canvas as an admin and go to the *Settings* section.
+. Go to *Feature Options* section, and then go to the *Course* section.
+. Set the *External Collaborations Tool* toggle to the off position.
+
+Collaborations can be assigned to individual students and to groups of students in a course.
+Collaborations in Canvas Groups isn't currently supported.
+
+Assigning to individual students works by default.
+To assign collaboration to groups of students, follow these steps:
+
+. Sign into Canvas as an admin and go to the *Developer Keys* section.
+. Find the key with value `170000000000710` and set it to *On*.

@@ -1,0 +1,77 @@
+= Add custom tiles to the app launcher
+:audience: Admin
+:author: twernermsft
+:description: Create quick links to your email, documents, apps, SharePoint sites, external sites, and other resources by adding custom tiles to the app launcher.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
+:ms.author: twerner
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["AdminSurgePortfolio", "okr_smb", "AdminTemplateSet"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150", "GEA150"]
+
+== Add custom tiles to the app launcher
+
+In Microsoft 365, you can quickly and easily get to your email, calendars, documents, and apps using the App launcher (https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a[learn more]).
+These are apps you get with Microsoft 365 as well as custom apps that you add from the https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43[SharePoint Store] or link:/previous-versions/office/office-365-api/[Azure AD].
+
+You can add your own custom tiles to the app launcher that point to SharePoint sites, external sites, legacy apps, and more.
+The custom tile appears under the app launcher's *All* apps, but you can pin it to the *Home* apps and instruct your users to do the same.
+This makes it easy to find the relevant sites, apps, and resources to do your job.
+In the below example, a custom tile called "Contoso Portal" is used to access an organization's SharePoint intranet site.
+
+image::../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png[App launcher.]
+
+=== Add a custom tile to the app launcher
+
+. Sign in to the admin center as a Global Administrator, go to *Settings* > *Org Settings*, and choose the *Organization profile* tab.
+. On the *Organization profile* tab, choose *Custom app launcher tiles*.
+. Select *Add a custom tile*.
+. Enter a *Tile name* for the new tile.
+The name will appear in the tile.
+. Enter a *URL of website* for the tile.
+This is the location where you want your users to go when they select the tile on the app launcher.
+Use HTTPS in the URL.
++
+____
+[!TIP] If you're creating a tile for a SharePoint site, navigate to that site, copy the URL, and paste it here.
+The URL of your default team site looks like this: `https://<company_name>.sharepoint.com`
+____
+
+. Enter a *URL of the image* for the tile.
+The image appears on the My apps page and app launcher.
++
+____
+[!TIP] The image should be 60x60 pixels and be available to everyone in your organization without requiring authentication.
+____
+
+. Enter a *Description* for the tile.
+You see this when you select the tile on the My apps page and select *App details*.
+. Select *Save changes* to create the custom tile.
++
+Your custom tile will appear within the next 24 hours in the app launcher on the *All* tab for you and your users.
++
+____
+[!NOTE] If you don't see the custom tile created in the previous steps, make sure you have an Exchange Online mailbox assigned to you and you've signed into your mailbox at least once.
+These steps are required for custom tiles in Microsoft 365.
+____
+
+=== Edit or delete a custom tile
+
+. In the admin center, go to the *Settings* > *Org Settings* > *Organization profile* tab.
+. On the *Organization profile* page, go to *Custom App launcher tiles*,  If you select the three dots next to your *Custom Tile* and Select *Edit custom tile*.
+. Update the *Tile name*, *URL*, *Description*, or *Image URL* for the custom tile (see <<add-a-custom-tile-to-the-app-launcher,Add a custom tile to the app launcher>>).
+. Select *Update* > *Close*.
+
+To delete a custom tile, from the *Custom tiles* window, select the tile, select *Remove tile* > *Delete*.
+
+=== Next steps
+
+To customize the look and feel of Microsoft 365 to match your organization's brand, see xref:../setup/customize-your-organization-theme.adoc[Customize the Microsoft 365 theme].
+
+=== Related content
+
+xref:pin-apps-to-app-launcher.adoc[Pin apps to your users' app launcher] (article) + xref:../setup/upgrade-users-to-latest-office-client.adoc[Upgrade your Microsoft 365 for business users to the latest Office client] (article) + xref:../manage/manage-addins-in-the-admin-center.adoc[Manage add-ins in the admin center] (article)

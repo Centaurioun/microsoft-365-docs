@@ -1,0 +1,118 @@
+= Investigation resource type
+:audience: ITPro
+:author: mjcaparas
+:description: Microsoft Defender for Endpoint Investigation entity.
+:keywords: apis, graph api, supported apis, get, alerts, investigations
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: m365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Investigation resource type
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!Includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!Includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+Represent an Automated Investigation entity in Defender for Endpoint.
+
+For more information, see xref:automated-investigations.adoc[Overview of automated investigations].
+
+=== Methods
+
+|===
+| Method | Return Type | Description
+
+| xref:get-investigation-collection.adoc[List Investigations]
+| Investigation collection
+| Get collection of Investigation
+
+| xref:get-investigation-object.adoc[Get single Investigation]
+| Investigation entity
+| Gets single Investigation entity.
+
+| xref:initiate-autoir-investigation.adoc[Start Investigation]
+| Investigation entity
+| Starts Investigation on a device.
+|===
+
+=== Properties
+
+|===
+| Property | Type | Description
+
+| ID
+| String
+| Identity of the investigation entity.
+
+| startTime
+| DateTime Nullable
+| The date and time when the investigation was created.
+
+| endTime
+| DateTime Nullable
+| The date and time when the investigation was completed.
+
+| cancelledBy
+| String
+| The ID of the user/application that canceled that investigation.
+
+| State
+| Enum
+| The current state of the investigation.
+Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
+
+| statusDetails
+| String
+| Additional information about the state of the investigation.
+
+| machineId
+| String
+| The ID of the device on which the investigation is executed.
+
+| computerDnsName
+| String
+| The name of the device on which the investigation is executed.
+
+| triggeringAlertId
+| String
+| The ID of the alert that triggered the investigation.
+|===
+
+=== Json representation
+
+[,json]
+----
+{
+    "id": "63004",
+    "startTime": "2020-01-06T13:05:15Z",
+    "endTime": null,
+    "state": "Running",
+    "cancelledBy": null,
+    "statusDetails": null,
+    "machineId": "e828a0624ed33f919db541065190d2f75e50a071",
+    "computerDnsName": "desktop-test123",
+    "triggeringAlertId": "da637139127150012465_1011995739"
+}
+----

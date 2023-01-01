@@ -1,0 +1,36 @@
+= Test Base SDK for Python
+:audience: Software-Vendor
+:author: mansipatel-usl
+:description: Details on understanding Test Base's SDK for Python
+:f1.keywords: NOCSH
+:manager: rshastri
+:ms.author: tinachen
+:ms.collection: TestBase-M365
+:ms.custom:
+:ms.date: 07/06/2021
+:ms.localizationpriority: medium
+:ms.reviewer: tinachen
+:ms.service: test-base
+:ms.topic: article
+:search.appverid: MET150
+
+== Test Base SDK for Python
+
+=== Overview
+
+The Test Base SDK can be used to interact with the Azure test base resource.
+(That is, manage your application package, include create package, edit package, and delete package).
+
+With the SDK, the test summary and Analysis Result that can be gotten include: scriptExecution, reliability, memoryUtilization, cpuUtilization, memoryRegression, cpuRegression.
+
+With the Test Base SDK, you can integrate test base in your CI/CD pipeline.
+
+=== Client Library
+
+Install the test base package with pip.
+
+----
+pip install  Microsoft.Testbase
+----
+
+=== Example

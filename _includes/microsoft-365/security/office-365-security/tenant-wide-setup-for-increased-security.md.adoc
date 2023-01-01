@@ -1,0 +1,196 @@
+'''
+
+title: Configure your Microsoft 365 tenant for increased security f1.keywords:
+
+* NOCSH ms.author: bcarter author: BrendaCarter manager: laurawi ms.date: 04/06/2022 audience: ITPro ms.topic: article
+
+ms.localizationpriority: medium ms.collection:
+
+* Ent_O365
+* Strat_O365_IP
+* M365-security-compliance search.appverid: MET150 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355 ms.custom:
+* seo-marvel-apr2020
+* admindeeplinkSPO description: This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment.
+ms.subservice: mdo ms.service: microsoft-365-security --
+
+== Configure your Microsoft 365 tenant for increased security
+
+[!INCLUDE xref:../includes/mdo-trial-banner.adoc[MDO Trial banner]]
+
+*Applies to*
+
+* xref:exchange-online-protection-overview.adoc[Exchange Online Protection]
+* xref:defender-for-office-365.adoc[Microsoft Defender for Office 365 plan 1 and plan 2]
+* xref:../defender/microsoft-365-defender.adoc[Microsoft 365 Defender]
+
+This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment.
+Your security needs might require more or less security.
+Use these recommendations as a starting point.
+
+=== Tune threat management policies in the Microsoft 365 Defender portal
+
+The Microsoft 365 Defender portal includes capabilities that protect your environment.
+It also includes reports and dashboards you can use to monitor and take action.
+Some areas come with default policy configurations.
+Some areas do not include default policies or rules.
+Visit these policies under *Email & collaboration* > *Policies & rules* > *Threat policies* to tune threat management settings for a more secure environment.
+
+|===
+| Area | Default policy? | Recommendation
+
+| *Anti-phishing*
+| Yes
+| Configure the default anti-phishing policy as described here: link:protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365[Configure anti-phishing protection settings in EOP and Defender for Office 365].
+<p> More information: <ul><li>xref:set-up-anti-phishing-policies.adoc[Anti-phishing policies in Microsoft 365]</li><li>link:recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365[Recommended anti-phishing policy settings in Microsoft Defender for Office 365]</li><li> xref:impersonation-insight.adoc[Impersonation insight]</li><li>xref:learn-about-spoof-intelligence.adoc[Spoof intelligence insight in EOP]</li><li>xref:manage-tenant-allow-block-list.adoc[Manage the Tenant Allow/Block List].</li></ul>
+
+| *Anti-Malware Engine*
+| Yes
+| Configure the default anti-malware policy as described here: link:protect-against-threats.md#part-1---anti-malware-protection-in-eop[Configure anti-malware protection settings in EOP].
+<p> More information: <ul><li>xref:anti-malware-protection.adoc[Anti-malware protection]</li><li>link:recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings[Recommended anti-malware policy settings]</li><li>xref:configure-anti-malware-policies.adoc[Configure anti-malware policies]</li></ul>
+
+| *Safe Attachments in Defender for Office 365*
+| No
+| Configure the global settings for Safe Attachments and create a Safe Attachments policy as described here: link:protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365[Configure Safe Attachments settings in Microsoft Defender for Office 365].
+<p> More information: <ul><li>link:recommended-settings-for-eop-and-office365.md#safe-attachments-settings[Recommended Safe Attachments settings]</li><li>xref:safe-attachments.adoc[Safe Attachments in Microsoft Defender for Office 365]</li><li>xref:set-up-safe-attachments-policies.adoc[Set up Safe Attachments policies]</li><li>xref:mdo-for-spo-odb-and-teams.adoc[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams]</li><li>xref:safe-docs.adoc[Safe Documents in Microsoft 365 E5]</li></ul>
+
+| *Safe Links in Microsoft Defender for Office 365*
+| No
+| Create a Safe Links policy as described here: link:protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365[Configure Safe Links settings in Microsoft Defender for Office 365].
+<p> More information: <ul><li>link:recommended-settings-for-eop-and-office365.md#safe-links-settings[Recommended Safe Links settings]</li><li>xref:set-up-safe-links-policies.adoc[Set up Safe Links policies]</li><li>xref:safe-links.adoc[Safe Links in Microsoft Defender for Office 365]</li></ul>
+
+| *Anti-spam (mail filtering)*
+| Yes
+| Configure the default anti-spam policy as described here: link:protect-against-threats.md#part-3---anti-spam-protection-in-eop[Configure anti-spam protection settings in EOP] <p> More information: <ul><li>link:recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings[Recommended anti-spam policy settings]</li><li>xref:anti-spam-protection.adoc[Anti-spam protection in EOP]</li><li>xref:configure-your-spam-filter-policies.adoc[Configure anti-spam policies in EOP]</li></ul>
+
+| *_Email Authentication_*
+| Yes
+| Email authentication uses DNS records to add verifiable information to email messages about the message source and sender.
+Microsoft 365 automatically configures email authentication for its default domain (onmicrosoft.com), but Microsoft 365 admins can also configure email authentication for custom domains.
+Three authentication methods are used: <ul><li>Sender Policy Framework (or SPF).</li><ul><li>For setup, see xref:set-up-spf-in-office-365-to-help-prevent-spoofing.adoc[Set up SPF in Microsoft 365 to help prevent spoofing].</li></ul> <li>DomainKeys Identified Mail (DKIM).</li><ul><li>See xref:use-dkim-to-validate-outbound-email.adoc[Use DKIM to validate outbound email sent from your custom domain].</li><li>After you've configured DKIM, enable it in the Microsoft 365 Defender portal.</li></ul><li>Domain-based Message Authentication, Reporting, and Conformance (DMARC).</li><ul><li>For DMARC setup xref:use-dmarc-to-validate-email.adoc[Use DMARC to validate email in Microsoft 365].</li></ul></ul>
+|===
+
+____
+[!NOTE] For non-standard deployments of SPF, hybrid deployments, and troubleshooting: xref:how-office-365-uses-spf-to-prevent-spoofing.adoc[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing].
+____
+
+=== View dashboards and reports in the Microsoft 365 Defender portal
+
+Visit these reports and dashboards to learn more about the health of your environment.
+The data in these reports will become richer as your organization uses Office 365 services.
+For now, be familiar with what you can monitor and take action on.
+
+|===
+| Dashboard | Description
+
+| Email security reports
+| These reports are available in Exchange Online Protection.
+For more information, see xref:view-email-security-reports.adoc[View email security reports in the Microsoft 365 Defender portal].
+
+| Defender for Office 365 reports
+| The reports are available only in Defender for Office 365.
+For more information, see xref:view-reports-for-mdo.adoc[View Defender for Office 365 reports in the Microsoft 365 Defender portal].
+
+| Mail flow reports and insights
+| These reports and insights are available in the Exchange admin center (EAC).
+For more information, see link:/exchange/monitoring/mail-flow-reports/mail-flow-reports[Mail flow reports] and link:/exchange/monitoring/mail-flow-insights/mail-flow-insights[Mail flow insights].
+
+| xref:threat-explorer.adoc[Threat Explorer (or real-time detections)]
+| If you are investigating or experiencing an attack against your tenant, use Explorer (or real-time detections) to analyze threats.
+Explorer (and the real-time detections report) shows you the volume of attacks over time, and you can analyze this data by threat families, attacker infrastructure, and more.
+You can also mark any suspicious email for the Incidents list.
+|===
+
+=== Configure additional Exchange Online tenant-wide settings
+
+Here are a couple of additional settings that are recommended.
+
+|===
+| Area | Recommendation
+
+| *Mail flow rules* (also known as transport rules)
+| Add a mail flow rule to help protect against ransomware by blocking executable file types and Office file types that contain macros.
+For more information, see link:/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments[Use mail flow rules to inspect message attachments in Exchange Online].
+<p> See these additional topics: <ul><li>xref:../../admin/security-and-compliance/secure-your-business-data.adoc[Protect against ransomware]</li><li>link:/compliance/assurance/assurance-malware-and-ransomware-protection[Malware and Ransomware Protection in Microsoft 365]</li><li>xref:recover-from-ransomware.adoc[Recover from a ransomware attack in Office 365]</li></ul> <p> Create a mail flow rule to prevent auto-forwarding of email to external domains.
+For more information, see link:/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score[Mitigating Client External Forwarding Rules with Secure Score].
+<p> More information: link:/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules[Mail flow rules (transport rules) in Exchange Online]
+
+| *Modern authentication*
+| Modern authentication is a prerequisite for using multi-factor authentication (MFA).
+MFA is recommended for securing access to cloud resources, including email.
+<p> See these topics: <ul><li>link:/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online[Enable or disable modern authentication in Exchange Online]</li><li>https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx[Skype for Business Online: Enable your tenant for modern authentication]</li></ul> <p> Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business.
+<p> More information: xref:../../enterprise/modern-auth-for-office-2013-and-2016.adoc[How modern authentication works for Office 2013 and Office 2016 client apps]
+|===
+
+=== Configure tenant-wide sharing policies in SharePoint admin center
+
+Microsoft recommendations for configuring SharePoint team sites at increasing levels of protection, starting with baseline protection.
+For more information, see xref:sharepoint-file-access-policies.adoc[Policy recommendations for securing SharePoint sites and files].
+
+SharePoint team sites configured at the baseline level allow sharing files with external users by using anonymous access links.
+This approach is recommended instead of sending files in email.
+
+To support the goals for baseline protection, configure tenant-wide sharing policies as recommended here.
+Sharing settings for individual sites can be more restrictive than this tenant-wide policy, but not more permissive.
+
+|===
+| Area | Includes a default policy | Recommendation
+
+| *Sharing* (SharePoint Online and OneDrive for Business)
+| Yes
+| External sharing is enabled by default.
+These settings are recommended: <ul><li>Allow sharing to authenticated external users and using anonymous access links (default setting).</li><li>Anonymous access links expire in this many days.
+Enter a number, if desired, such as 30 days.</li><li>Default link type -- select Internal (people in the organization only).
+Users who wish to share using anonymous links must choose this option from the sharing menu.</li></ul> <p> More information: link:/sharepoint/external-sharing-overview[External sharing overview]
+|===
+
+SharePoint admin center and OneDrive for Business admin center include the same settings.
+The settings in either admin center apply to both.
+
+=== Configure settings in Azure Active Directory
+
+Be sure to visit these two areas in Azure Active Directory to complete tenant-wide setup for more secure environments.
+
+==== Configure named locations (under conditional access)
+
+If your organization includes offices with secure network access, add the trusted IP address ranges to Azure Active Directory as named locations.
+This feature helps reduce the number of reported false positives for sign-in risk events.
+
+See: link:/azure/active-directory/conditional-access/location-condition[Named locations in Azure Active Directory]
+
+==== Block apps that don't support modern authentication
+
+Multi-factor authentication requires apps that support modern authentication.
+Apps that do not support modern authentication cannot be blocked by using conditional access rules.
+
+For secure environments, be sure to disable authentication for apps that do not support modern authentication.
+You can do this in Azure Active Directory with a control that is coming soon.
+
+In the meantime, use one of the following methods to accomplish this for SharePoint Online and OneDrive for Business:
+
+* Use PowerShell, see link:/mem/intune/protect/app-modern-authentication-block[Block apps that do not use modern authentication].
+* Configure this in the https://go.microsoft.com/fwlink/?linkid=2185219[SharePoint admin center] on the "device access' page -- "Control access from apps that don't use modern authentication." Choose Block.
+
+=== Get started with Defender for Cloud Apps or Office 365 Cloud App Security
+
+Use Office 365 Cloud App Security to evaluate risk, to alert on suspicious activity, and to automatically take action.
+Requires Office 365 E5 plan.
+
+Or, use Microsoft Defender for Cloud Apps to obtain deeper visibility even after access is granted, comprehensive controls, and improved protection for all your cloud applications, including Office 365.
+
+Because this solution recommends the EMS E5 plan, we recommend you start with Defender for Cloud Apps so you can use this with other SaaS applications in your environment.
+Start with default policies and settings.
+
+More information:
+
+* link:/cloud-app-security/getting-started-with-cloud-app-security[Deploy Defender for Cloud Apps]
+* https://www.microsoft.com/cloud-platform/cloud-app-security[More information about Microsoft Defender for Cloud Apps]
+* link:/cloud-app-security/what-is-cloud-app-security[What is Defender for Cloud Apps?]
+
+:::image type="content" source="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png" alt-text="The Defender for Cloud Apps dashboard" lightbox="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png":::
+
+=== Additional resources
+
+These articles and guides provide additional prescriptive information for securing your Microsoft 365 environment:
+
+* xref:microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.adoc[Microsoft security guidance for political campaigns, nonprofits, and other agile organizations] (you can use these recommendations in any environment, especially cloud-only environments)
+* xref:microsoft-365-policies-configurations.adoc[Recommended security policies and configurations for identities and devices] (these recommendations include help for AD FS environments)

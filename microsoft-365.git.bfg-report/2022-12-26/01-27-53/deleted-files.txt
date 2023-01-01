@@ -1,0 +1,22 @@
+0e1144348481fd35b613695694eb8ee3789d5ef4 19909332 Azure Security Compass v1.1 - Presentation.pdf
+5c8112ec7a79a1df89a3f7e9ecc21e3176f09355 20642850 Azure Security Compass v1.1 - Presentation.pptx
+665dfbb0d56dac088944e82c0eff1c965ad95344 10568752 CISO Workshop - 3 - Identity and Zero Trust User Access.pptx
+c7ee891190af1789f14e00d00c9bb18a57a55431 66747923 E&D Talk - Future of Remote Work initiative - December 2020.pptx
+8883294663caa3cde24c237df28b8bbd61a492a9 15894482 M365CampaignsCreateCommunicationSite.pdf
+0d5230245f1ef41eb09c8b2e0e116a0635c231c8 11134839 Top 10 Azure Security Best Practices.pptx
+ecc1fac7109fd6098934ae486248bb99e400b5e0 15386562 ciso-workshop-1-cybersecurity-briefing.pptx
+5faf706b79b10c0f827d1e57d52da8955c3e6c49 24516764 ciso-workshop-2-security-management.pptx
+665dfbb0d56dac088944e82c0eff1c965ad95344 10568752 ciso-workshop-3-identity-and-zero-trust-user-access.pptx
+2181d91d8f4e285b0e86fc801100fcc9e4f96ffa 40320204 ciso-workshop-4a-threat-protection.pptx
+4c9fe18a8736ad5402283ac614b27e5324290418 26033409 ciso-workshop-4b-threat-protection-strategy.pptx
+5a4f65124f919946255b8ee8454f25f5218088ab 11903405 ciso-workshop-5-information-protection-strategy.pptx
+6c0d70c78d808b7b61f17a86ee7c5e4939e469df 23619324 getting-started-media-1.emf
+0665a337eefdbcdd4bafcdc3fce48e7ad7897dba 17949853 m365cO19-ent-dell-latitude13-5951.jpg
+0e1144348481fd35b613695694eb8ee3789d5ef4 19909332 security-compass-presentation.pdf
+eb9106fdbfaf2adffea8444157961e8073a834c2 20782079 security-compass-presentation.pptx
+5c8112ec7a79a1df89a3f7e9ecc21e3176f09355 20642850 security-compass-presentation.pptx
+0d5230245f1ef41eb09c8b2e0e116a0635c231c8 11134839 top-10-azure-security-best-practices.pptx
+38b57365b1d00a0d01deddec6e1c4942a3689f86 12008321 tutorialInfraChainMyPillowcomHostPairsLiveChatScriptSrc.gif
+a975905fa0596ca0ab8de3d53c1477c54a3029a2 11352319 tutorialVulnerabilityIntelDomainReview.gif
+9c7ab9f5785d9ffd89d0ae7b6f11bf01f9e60e15 12835408 tutorialVulnerabilityIntelIpReview.gif
+bc2332f24efcfd40d81511a1a3fa86bf6ace41f3 19401132 win17-15021-00-n9.jpg

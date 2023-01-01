@@ -1,0 +1,1075 @@
+== link:index.yml[Microsoft Defender for Endpoint]
+
+=== link:[Overview]
+
+==== xref:microsoft-defender-endpoint.adoc[What is Microsoft Defender for Endpoint?]
+
+==== xref:defender-endpoint-trial-playbook.adoc[Trial playbook: Get the most out of your trial]
+
+==== xref:defender-endpoint-plan-1-2.adoc[Compare Microsoft endpoint security plans]
+
+==== xref:minimum-requirements.adoc[Minimum requirements]
+
+==== xref:supported-capabilities-by-platform.adoc[Supported Microsoft Defender for Endpoint capabilities by platform]
+
+==== link:[What's new]
+
+===== xref:whats-new-in-microsoft-defender-endpoint.adoc[What's new in Microsoft Defender for Endpoint?]
+
+===== xref:windows-whatsnew.adoc[What's new in Microsoft Defender for Endpoint on Windows]
+
+==== xref:preview.adoc[Preview features]
+
+==== xref:data-storage-privacy.adoc[Data storage and privacy]
+
+==== xref:use.adoc[Overview of Microsoft Defender Security Center]
+
+==== link:[Defender for Endpoint Plan 1]
+
+===== xref:defender-endpoint-plan-1.adoc[Overview]
+
+===== xref:mde-p1-setup-configuration.adoc[Setup and configuration]
+
+===== xref:mde-plan1-getting-started.adoc[Get started]
+
+===== xref:mde-p1-maintenance-operations.adoc[Maintenance and operations]
+
+==== xref:gov.adoc[Microsoft Defender for Endpoint for US Government customers]
+
+==== xref:non-windows.adoc[Microsoft Defender for Endpoint on non-Windows platforms]
+
+==== xref:defender-compatibility.adoc[Antivirus solution compatibility with Defender for Endpoint]
+
+=== xref:evaluation-lab.adoc[Evaluate capabilities]
+
+=== xref:deployment-strategy.adoc[Plan deployment]
+
+=== link:[Deployment guide]
+
+==== xref:deployment-phases.adoc[Deployment phases]
+
+==== xref:prepare-deployment.adoc[Phase 1: Prepare]
+
+==== xref:production-deployment.adoc[Phase 2: Set up]
+
+==== link:[Phase 3: Onboard]
+
+===== xref:onboarding.adoc[Onboarding overview]
+
+===== xref:deployment-rings.adoc[Deployment rings]
+
+===== xref:onboarding-endpoint-configuration-manager.adoc[Onboarding using Microsoft Endpoint Configuration Manager]
+
+===== xref:onboarding-endpoint-manager.adoc[Onboarding using Microsoft Endpoint Manager]
+
+=== xref:migration-guides.adoc[Migration guides]
+
+==== xref:migrating-mde-server-to-cloud.adoc[Migrate Defender for Endpoint servers to Defender for Cloud]
+
+==== xref:switch-to-mde-overview.adoc[Move to Defender for Endpoint]
+
+===== xref:switch-to-mde-phase-1.adoc[Phase 1: Prepare]
+
+===== xref:switch-to-mde-phase-2.adoc[Phase 2: Setup]
+
+===== xref:switch-to-mde-phase-3.adoc[Phase 3: Onboard]
+
+===== xref:switch-to-mde-troubleshooting.adoc[Troubleshooting]
+
+==== xref:manage-mde-post-migration.adoc[Manage Defender for Endpoint after migration]
+
+===== xref:manage-mde-post-migration-intune.adoc[Use Intune (recommended)]
+
+===== xref:manage-mde-post-migration-configuration-manager.adoc[Use Configuration Manager]
+
+===== xref:manage-mde-post-migration-group-policy-objects.adoc[Use Group Policy]
+
+===== xref:manage-mde-post-migration-other-tools.adoc[Use PowerShell, WMI, or MPCmdRun.exe]
+
+===== xref:server-migration.adoc[Server migration scenarios]
+
+====== xref:application-deployment-via-mecm.adoc[Migrating servers from Microsoft Monitoring Agent to the unified solution]
+
+=== link:[Onboard and configure devices]
+
+==== xref:onboard-configure.adoc[Onboard devices and configure Microsoft Defender for Endpoint capabilities]
+
+==== xref:onboard-windows-client.adoc[Onboarding Windows Client]
+
+===== xref:configure-endpoints-mdm.adoc[Onboard Windows Client using Intune]
+
+===== xref:configure-endpoints-sccm.adoc[Onboard Windows Client using Microsoft Endpoint Configuration Manager]
+
+===== xref:configure-endpoints-gp.adoc[Onboard Windows Client using Group Policy]
+
+===== xref:configure-endpoints-script.adoc[Onboard Windows Client using a local script]
+
+===== xref:configure-endpoints-vdi.adoc[Onboard non-persistent virtual desktop infrastructure (VDI) devices]
+
+===== xref:onboard-windows-multi-session-device.adoc[Onboard Windows 10 multi-session devices in Windows Virtual Desktop]
+
+===== xref:onboard-downlevel.adoc[Onboard previous versions of Windows]
+
+==== xref:onboard-windows-server.adoc[Onboarding Windows Server]
+
+===== xref:configure-server-endpoints.adoc[Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022]
+
+===== xref:configure-endpoints-sccm.adoc[Onboard Windows Server using Configuration Manager]
+
+===== xref:configure-endpoints-gp.adoc[Onboard Windows Server devices using Group Policy]
+
+===== xref:configure-endpoints-script.adoc[Onboard Windows Server using a local script]
+
+===== xref:configure-endpoints-vdi.adoc[Onboard non-persistent virtual desktop infrastructure (VDI) devices]
+
+==== link:[Microsoft Defender for Endpoint on other Operating Systems]
+
+===== xref:configure-endpoints-non-windows.adoc[Onboard non-Windows devices]
+
+===== link:[Microsoft Defender for Endpoint on macOS]
+
+====== xref:microsoft-defender-endpoint-mac.adoc[Overview of Microsoft Defender for Endpoint on macOS]
+
+====== xref:mac-whatsnew.adoc[What's New]
+
+====== link:[Deploy]
+
+======= xref:mac-install-with-intune.adoc[Microsoft Intune-based deployment]
+
+======= link:[JAMF Pro-based deployment]
+
+####### xref:mac-install-with-jamf.adoc[Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro] ####### xref:mac-install-jamfpro-login.adoc[Login to Jamf Pro] ####### xref:mac-jamfpro-device-groups.adoc[Set up device groups] ####### xref:mac-jamfpro-policies.adoc[Set up policies] ####### xref:mac-jamfpro-enroll-devices.adoc[Enroll devices]
+
+======= xref:mac-install-with-other-mdm.adoc[Deployment with a different Mobile Device Management (MDM) system]
+
+======= xref:mac-install-manually.adoc[Manual deployment]
+
+====== xref:mac-updates.adoc[Update]
+
+====== link:[Configure]
+
+======= xref:mac-exclusions.adoc[Configure and validate exclusions]
+
+======= xref:mac-preferences.adoc[Set preferences]
+
+======= xref:mac-pua.adoc[Detect and block Potentially Unwanted Applications]
+
+======= xref:tamperprotection-macos.adoc[Protect macOS security settings using tamper protection]
+
+======= link:[Device control]
+
+####### xref:mac-device-control-overview.adoc[Device control overview] ####### xref:mac-device-control-jamf.adoc[JAMF examples] ####### xref:mac-device-control-intune.adoc[Intune examples]
+
+======= xref:mac-schedule-scan.adoc[Schedule scans]
+
+====== link:[Troubleshoot]
+
+======= xref:mac-support-install.adoc[Troubleshoot installation issues]
+
+======= xref:mac-support-perf.adoc[Troubleshoot performance issues]
+
+======= xref:troubleshoot-cloud-connect-mdemac.adoc[Troubleshoot cloud connectivity]
+
+======= xref:mac-support-kext.adoc[Troubleshoot kernel extension issues]
+
+======= xref:mac-support-license.adoc[Troubleshoot license issues]
+
+====== xref:mac-privacy.adoc[Privacy]
+
+====== xref:mac-resources.adoc[Resources]
+
+===== link:[Microsoft Defender for Endpoint on Linux]
+
+====== xref:microsoft-defender-endpoint-linux.adoc[Overview of Microsoft Defender for Endpoint on Linux]
+
+====== xref:linux-whatsnew.adoc[What's New]
+
+====== link:[Deploy]
+
+======= xref:linux-install-manually.adoc[Manual deployment]
+
+======= xref:linux-install-with-puppet.adoc[Puppet based deployment]
+
+======= xref:linux-install-with-ansible.adoc[Ansible based deployment]
+
+======= xref:linux-deploy-defender-for-endpoint-with-chef.adoc[Deploy Defender for Endpoint on Linux with Chef]
+
+====== xref:linux-updates.adoc[Update]
+
+====== link:[Configure]
+
+======= xref:linux-exclusions.adoc[Configure and validate exclusions]
+
+======= xref:linux-static-proxy-configuration.adoc[Static proxy configuration]
+
+======= xref:linux-preferences.adoc[Set preferences]
+
+======= xref:linux-pua.adoc[Detect and block Potentially Unwanted Applications]
+
+======= xref:linux-schedule-scan-mde.adoc[Schedule scans with Microsoft Defender for Endpoint on Linux]
+
+======= xref:schedule-antivirus-scan-in-mde.adoc[Schedule antivirus scan in Defender for Endpoint on Linux]
+
+======= xref:linux-update-MDE-Linux.adoc[Schedule an update of the Microsoft Defender for Endpoint (Linux)]
+
+====== link:[Troubleshoot]
+
+======= xref:linux-support-install.adoc[Troubleshoot installation issues]
+
+======= xref:health-status.adoc[Investigate agent health issues]
+
+======= xref:linux-support-connectivity.adoc[Troubleshoot cloud connectivity issues]
+
+======= xref:linux-support-rhel.adoc[Troubleshoot RHEL 6 installation issues]
+
+======= xref:linux-support-perf.adoc[Troubleshoot performance issues]
+
+======= xref:linux-support-events.adoc[Troubleshoot missing events issues]
+
+======= xref:troubleshoot-auditd-performance-issues.adoc[Troubleshoot AuditD performance issues]
+
+====== xref:linux-privacy.adoc[Privacy]
+
+====== xref:linux-resources.adoc[Resources]
+
+===== link:[Mobile Threat Defense]
+
+====== xref:mtd.adoc[Mobile Threat Defense Overview]
+
+====== link:[Microsoft Defender for Endpoint on Android]
+
+======= xref:microsoft-defender-endpoint-android.adoc[Overview of Microsoft Defender for Endpoint on Android]
+
+======= xref:android-whatsnew.adoc[What's new]
+
+======= link:[Deploy]
+
+####### xref:android-intune.adoc[Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune]
+
+======= link:[Configure]
+
+####### xref:android-configure.adoc[Configure Microsoft Defender for Endpoint on Android features] ####### xref:android-configure-mam.adoc[Configure Microsoft Defender for Endpoint risk signals using app protection policy]
+
+======= link:[Privacy]
+
+####### xref:android-privacy.adoc[Microsoft Defender for Endpoint on Android - Privacy information]
+
+======= link:[Troubleshoot]
+
+####### xref:android-support-signin.adoc[Troubleshoot issues]
+
+====== link:[Microsoft Defender for Endpoint on iOS]
+
+======= xref:microsoft-defender-endpoint-ios.adoc[Overview of Microsoft Defender for Endpoint on iOS]
+
+======= xref:ios-whatsnew.adoc[What's New]
+
+======= link:[Deploy]
+
+####### xref:ios-install.adoc[Deploy Microsoft Defender for Endpoint on iOS via Intune] ####### xref:ios-install-unmanaged.adoc[Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices]
+
+======= xref:ios-configure-features.adoc[Configure iOS features]
+
+======= xref:ios-troubleshoot.adoc[FAQs and Troubleshooting]
+
+======= xref:ios-privacy.adoc[Privacy]
+
+==== xref:azure-server-integration.adoc[Integration with Microsoft Defender for Cloud]
+
+==== xref:run-detection-test.adoc[Run a detection test on a newly onboarded device]
+
+==== xref:attack-simulations.adoc[Run simulated attacks on devices]
+
+==== xref:onboard-offline-machines.adoc[Onboard devices without Internet access]
+
+==== xref:configure-proxy-internet.adoc[Configure proxy and Internet connectivity settings]
+
+==== xref:onboarding-notification.adoc[Create an onboarding or offboarding notification rule]
+
+==== xref:security-config-management.adoc[Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager]
+
+==== link:[Troubleshoot onboarding issues]
+
+===== xref:troubleshoot-onboarding.adoc[Troubleshoot issues during onboarding]
+
+===== xref:troubleshoot-onboarding-error-messages.adoc[Troubleshoot subscription and portal access issues]
+
+===== xref:troubleshoot-security-config-mgt.adoc[Troubleshoot security configuration management onboarding issues]
+
+==== link:[Configure portal settings]
+
+===== xref:preferences-setup.adoc[Configure general Defender for Endpoint settings]
+
+===== link:[General]
+
+====== xref:data-retention-settings.adoc[Verify data storage location and  update data retention settings]
+
+====== xref:configure-email-notifications.adoc[Configure alert notifications]
+
+====== xref:configure-vulnerability-email-notifications.adoc[Configure vulnerability email notifications]
+
+====== xref:advanced-features.adoc[Configure advanced features]
+
+===== link:[Permissions]
+
+====== xref:basic-permissions.adoc[Use basic permissions to access the portal]
+
+====== xref:assign-portal-access.adoc[Assign user access to Microsoft Defender Security Center]
+
+====== xref:rbac.adoc[Manage portal access using RBAC]
+
+======= xref:user-roles.adoc[Create and manage roles]
+
+======= xref:machine-groups.adoc[Create and manage device groups]
+
+======= xref:machine-tags.adoc[Create and manage device tags]
+
+===== link:[Rules]
+
+====== xref:manage-suppression-rules.adoc[Manage suppression rules]
+
+====== xref:manage-indicators.adoc[Create indicators]
+
+======= xref:indicator-file.adoc[Create indicators for files]
+
+======= xref:indicator-ip-domain.adoc[Create indicators for IPs and URLs/domains]
+
+======= xref:indicator-certificates.adoc[Create indicators for certificates]
+
+======= xref:indicator-manage.adoc[Manage indicators]
+
+====== xref:manage-automation-file-uploads.adoc[Manage automation file uploads]
+
+====== xref:manage-automation-folder-exclusions.adoc[Manage automation folder exclusions]
+
+===== link:[Device management]
+
+====== xref:onboard-configure.adoc[Onboarding devices]
+
+====== xref:offboard-machines.adoc[Offboarding devices]
+
+====== xref:configure-machines.adoc[Ensure your devices are configured properly]
+
+====== xref:configure-machines-onboarding.adoc[Monitor and increase device onboarding]
+
+===== xref:time-settings.adoc[Configure Microsoft Defender Security Center time zone settings]
+
+=== link:[Detect threats and protect endpoints]
+
+==== link:../defender-vulnerability-management/index.yml[Microsoft Defender Vulnerability Management]
+
+==== link:[Device discovery]
+
+===== xref:device-discovery.adoc[Device discovery overview]
+
+===== xref:configure-device-discovery.adoc[Configure device discovery]
+
+===== xref:enable-microsoft-defender-for-iot-integration.adoc[Microsoft Defender for IoT integration]
+
+===== xref:corelight-integration.adoc[Enable Corelight data integration]
+
+===== xref:device-discovery-faq.adoc[Device discovery FAQ]
+
+==== link:[Device inventory]
+
+===== xref:machines-view-overview.adoc[Device inventory]
+
+===== xref:exclude-devices.adoc[Exclude devices]
+
+===== xref:device-timeline-event-flag.adoc[Device timeline event flags]
+
+===== xref:machine-tags.adoc[Manage device group and tags]
+
+==== xref:network-devices.adoc[Network devices]
+
+==== xref:host-firewall-reporting.adoc[Host firewall reporting in Microsoft Defender for Endpoint]
+
+==== xref:built-in-protection.adoc[Built-in protection]
+
+==== link:[Attack surface reduction]
+
+===== xref:overview-attack-surface-reduction.adoc[Attack surface reduction overview]
+
+===== link:[Attack surface reduction (ASR) rules]
+
+====== xref:attack-surface-reduction.adoc[Learn about ASR rules]
+
+====== link:[Attack surface reduction (ASR) rules deployment guide]
+
+======= xref:attack-surface-reduction-rules-deployment.adoc[Attack surface reduction (ASR) rules deployment overview]
+
+======= xref:attack-surface-reduction-rules-deployment-plan.adoc[Plan attack surface reduction (ASR) rules deployment]
+
+======= xref:attack-surface-reduction-rules-deployment-test.adoc[Test attack surface reduction (ASR) rules]
+
+======= xref:attack-surface-reduction-rules-deployment-implement.adoc[Enable attack surface reduction (ASR) rules]
+
+======= xref:attack-surface-reduction-rules-deployment-operationalize.adoc[Operationalize attack surface reduction (ASR) rules]
+
+====== xref:attack-surface-reduction-rules-reference.adoc[Attack surface reduction (ASR) rules reference]
+
+====== xref:attack-surface-reduction-rules-report.adoc[Attack surface reduction rules report]
+
+====== xref:troubleshoot-asr-rules.adoc[Troubleshoot attack surface reduction (ASR) rules]
+
+====== xref:enable-attack-surface-reduction.adoc[Enable ASR rules alternate configuration methods]
+
+===== link:attack-surface-reduction-faq.yml[Attack surface reduction FAQ]
+
+===== link:[Controlled folder access]
+
+====== xref:controlled-folders.adoc[Protect folders]
+
+====== xref:evaluate-controlled-folder-access.adoc[Evaluate controlled folder access]
+
+====== xref:enable-controlled-folders.adoc[Enable controlled folder access]
+
+====== xref:customize-controlled-folders.adoc[Customize controlled folder access]
+
+===== link:[Device Control]
+
+====== xref:device-control-removable-storage-protection.adoc[Removable Storage Protection]
+
+====== link:[Removable Storage Access Control]
+
+======= xref:device-control-removable-storage-access-control.adoc[Overview]
+
+======= xref:deploy-manage-removable-storage-intune.adoc[Deploy and manage using Intune]
+
+======= xref:deploy-manage-removable-storage-group-policy.adoc[Deploy and manage using group policy]
+
+======= xref:device-control-removable-storage-access-control-faq.adoc[Frequently asked questions]
+
+====== xref:mde-device-control-device-installation.adoc[Device Installation]
+
+====== xref:printer-protection.adoc[Device Control Printer Protection]
+
+====== xref:device-control-report.adoc[Device Control Reports]
+
+===== link:[Exploit protection]
+
+====== xref:exploit-protection.adoc[Protect devices from exploits]
+
+====== xref:evaluate-exploit-protection.adoc[Exploit protection evaluation]
+
+====== xref:enable-exploit-protection.adoc[Enable exploit protection]
+
+====== xref:customize-exploit-protection.adoc[Customize exploit protection]
+
+====== xref:import-export-exploit-protection-emet-xml.adoc[Import, export, and deploy exploit protection configurations]
+
+====== xref:troubleshoot-exploit-protection-mitigations.adoc[Troubleshoot exploit protection mitigations]
+
+====== xref:exploit-protection-reference.adoc[Exploit protection reference]
+
+===== link:[Network protection]
+
+====== xref:network-protection.adoc[Protect your network]
+
+====== xref:evaluate-network-protection.adoc[Evaluate network protection]
+
+====== xref:enable-network-protection.adoc[Turn on network protection]
+
+====== xref:network-protection-linux.adoc[Network protection for Linux]
+
+====== xref:network-protection-macos.adoc[Network protection for MacOS]
+
+===== link:[Web protection]
+
+====== xref:web-protection-overview.adoc[Web protection overview]
+
+====== link:[Web threat protection]
+
+======= xref:web-threat-protection.adoc[Web threat protection overview]
+
+======= xref:web-protection-monitoring.adoc[Monitor web security]
+
+======= xref:web-protection-response.adoc[Respond to web threats]
+
+====== xref:web-content-filtering.adoc[Web content filtering]
+
+==== Next-generation protection
+
+===== xref:next-generation-protection.adoc[Next-generation protection overview]
+
+====== xref:microsoft-defender-antivirus-windows.adoc[Overview of Microsoft Defender Antivirus]
+
+====== xref:enable-update-mdav-to-latest-ws.adoc[Enable and update Microsoft Defender Antivirus on Windows Server]
+
+====== xref:why-use-microsoft-defender-antivirus.adoc[Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint]
+
+====== xref:office-365-microsoft-defender-antivirus.adoc[Better together: Microsoft Defender Antivirus and Office 365]
+
+===== xref:evaluate-microsoft-defender-antivirus.adoc[Evaluate Microsoft Defender Antivirus]
+
+===== xref:configure-microsoft-defender-antivirus-features.adoc[Configure Microsoft Defender Antivirus features]
+
+===== xref:cloud-protection-microsoft-defender-antivirus.adoc[Cloud protection and Microsoft Defender Antivirus]
+
+====== xref:why-cloud-protection-should-be-on-mdav.adoc[Why cloud protection should be on]
+
+====== xref:enable-cloud-protection-microsoft-defender-antivirus.adoc[Turn on cloud protection]
+
+====== xref:specify-cloud-protection-level-microsoft-defender-antivirus.adoc[Specify the cloud protection level]
+
+====== xref:cloud-protection-microsoft-antivirus-sample-submission.adoc[Cloud protection and sample submission]
+
+===== xref:configure-network-connections-microsoft-defender-antivirus.adoc[Configure and validate Microsoft Defender Antivirus network connections]
+
+===== xref:specify-additional-definitions-network-traffic-inspection-mdav.adoc[Specify additional definition sets for network traffic inspection]
+
+===== link:[Tamper protection]
+
+====== xref:prevent-changes-to-security-settings-with-tamper-protection.adoc[Protect security settings with tamper protection]
+
+====== xref:manage-tamper-protection-microsoft-365-defender.adoc[Manage tamper protection using Microsoft 365 Defender]
+
+====== xref:manage-tamper-protection-microsoft-endpoint-manager.adoc[Manage tamper protection using Microsoft Endpoint Manager]
+
+====== xref:manage-tamper-protection-configuration-manager.adoc[Manage tamper protection with Configuration Manager]
+
+====== xref:manage-tamper-protection-individual-device.adoc[Manage tamper protection on an individual device]
+
+====== xref:faqs-tamper-protection.adoc[FAQs on tamper protection]
+
+===== xref:configure-block-at-first-sight-microsoft-defender-antivirus.adoc[Turn on block at first sight]
+
+===== xref:configure-cloud-block-timeout-period-microsoft-defender-antivirus.adoc[Configure the cloud block timeout period]
+
+===== xref:configure-protection-features-microsoft-defender-antivirus.adoc[Configure behavioral, heuristic, and real-time protection]
+
+===== xref:detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.adoc[Detect and block potentially unwanted applications]
+
+===== xref:configure-real-time-protection-microsoft-defender-antivirus.adoc[Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy]
+
+===== xref:configure-remediation-microsoft-defender-antivirus.adoc[Configure remediation for Microsoft Defender Antivirus detections]
+
+===== xref:schedule-antivirus-scans.adoc[Configure Microsoft Defender Antivirus scans]
+
+====== xref:schedule-antivirus-scans-group-policy.adoc[Schedule scans using Group Policy]
+
+====== xref:schedule-antivirus-scans-powershell.adoc[Schedule scans using PowerShell]
+
+====== xref:schedule-antivirus-scans-wmi.adoc[Schedule scans using WMI]
+
+===== xref:limited-periodic-scanning-microsoft-defender-antivirus.adoc[Use limited periodic scanning in Microsoft Defender Antivirus]
+
+===== xref:microsoft-defender-antivirus-compatibility.adoc[Compatibility with other security products]
+
+===== xref:find-defender-malware-name.adoc[Find malware detection names for Microsoft Defender for Endpoint]
+
+===== xref:manage-updates-baselines-microsoft-defender-antivirus.adoc[Get your antivirus and antimalware updates]
+
+====== xref:manage-protection-updates-microsoft-defender-antivirus.adoc[Manage the sources for Microsoft Defender Antivirus protection updates]
+
+====== xref:manage-protection-update-schedule-microsoft-defender-antivirus.adoc[Manage the schedule for when protection updates should be downloaded and applied]
+
+====== xref:manage-gradual-rollout.adoc[Manage gradual rollout process for Microsoft Defender updates]
+
+====== xref:configure-updates.adoc[Configure gradual rollout process for Microsoft Defender updates]
+
+====== xref:manage-outdated-endpoints-microsoft-defender-antivirus.adoc[Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date]
+
+====== xref:manage-event-based-updates-microsoft-defender-antivirus.adoc[Manage event-based forced updates]
+
+====== xref:manage-updates-mobile-devices-vms-microsoft-defender-antivirus.adoc[Manage updates for mobile devices and virtual machines (VMs)]
+
+===== xref:configuration-management-reference-microsoft-defender-antivirus.adoc[Manage Microsoft Defender Antivirus for your organization]
+
+====== xref:use-intune-config-manager-microsoft-defender-antivirus.adoc[Use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus]
+
+====== xref:use-group-policy-microsoft-defender-antivirus.adoc[Use Group Policy settings to manage Microsoft Defender Antivirus]
+
+====== xref:use-powershell-cmdlets-microsoft-defender-antivirus.adoc[Use PowerShell cmdlets to manage Microsoft Defender Antivirus]
+
+====== xref:use-wmi-microsoft-defender-antivirus.adoc[Use Windows Management Instrumentation (WMI) to manage Microsoft Defender Antivirus]
+
+====== xref:command-line-arguments-microsoft-defender-antivirus.adoc[Use the mpcmdrun.exe tool to manage Microsoft Defender Antivirus]
+
+====== xref:configure-notifications-microsoft-defender-antivirus.adoc[Configure the notifications that appear on endpoints]
+
+====== xref:configure-local-policy-overrides-microsoft-defender-antivirus.adoc[Specify whether users can locally modify Microsoft Defender Antivirus policy settings]
+
+====== xref:prevent-end-user-interaction-microsoft-defender-antivirus.adoc[Specify whether users can see or interact with Microsoft Defender Antivirus user interface]
+
+====== xref:turn-on-definition-retirement.adoc[Turn on definition retirement]
+
+===== xref:deploy-manage-report-microsoft-defender-antivirus.adoc[Deploy and report on Microsoft Defender Antivirus]
+
+====== xref:deploy-microsoft-defender-antivirus.adoc[Deploy and enable Microsoft Defender Antivirus]
+
+====== xref:deployment-vdi-microsoft-defender-antivirus.adoc[Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment]
+
+====== xref:report-monitor-microsoft-defender-antivirus.adoc[Report on Microsoft Defender Antivirus]
+
+===== xref:review-scan-results-microsoft-defender-antivirus.adoc[Scans and remediation]
+
+====== xref:run-scan-microsoft-defender-antivirus.adoc[Configure and run on-demand Microsoft Defender Antivirus scans]
+
+====== xref:microsoft-defender-offline.adoc[Run and review the results of a Microsoft Defender Offline scan]
+
+====== xref:configure-advanced-scan-types-microsoft-defender-antivirus.adoc[Configure Microsoft Defender Antivirus scanning options]
+
+====== xref:restore-quarantined-files-microsoft-defender-antivirus.adoc[Restore quarantined files in Microsoft Defender Antivirus]
+
+===== xref:configure-exclusions-microsoft-defender-antivirus.adoc[Microsoft Defender Antivirus exclusions]
+
+====== xref:configure-extension-file-exclusions-microsoft-defender-antivirus.adoc[Exclusions based on file extension and folder location]
+
+====== xref:configure-process-opened-file-exclusions-microsoft-defender-antivirus.adoc[Exclusions for files opened by processes]
+
+====== xref:configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.adoc[Contextual file and folder exclusions]
+
+====== xref:configure-server-exclusions-microsoft-defender-antivirus.adoc[Exclusions for Windows Server]
+
+====== xref:common-exclusion-mistakes-microsoft-defender-antivirus.adoc[Common mistakes to avoid]
+
+===== Troubleshooting mode for Defender for Endpoint
+
+====== xref:enable-troubleshooting-mode.adoc[Get started with troubleshooting mode]
+
+====== xref:troubleshooting-mode-scenarios.adoc[Troubleshooting mode scenarios]
+
+===== Diagnostics and performance for Microsoft Defender Antivirus
+
+====== xref:device-health-reports.adoc[Device health reports]
+
+======= xref:device-health-microsoft-defender-antivirus-health.adoc[Microsoft Defender Antivirus health report]
+
+======= xref:device-health-sensor-health-os.adoc[Sensor health and OS report]
+
+====== xref:troubleshoot-performance-issues.adoc[Troubleshoot performance issues related to real-time protection]
+
+====== xref:troubleshoot-reporting.adoc[Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance]
+
+====== xref:collect-diagnostic-data.adoc[Collect diagnostic data of Microsoft Defender Antivirus]
+
+====== xref:collect-diagnostic-data-update-compliance.adoc[Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus]
+
+====== xref:tune-performance-defender-antivirus.adoc[Tune performance of Microsoft Defender Antivirus]
+
+===== Troubleshooting Microsoft Defender Antivirus
+
+====== xref:troubleshoot-microsoft-defender-antivirus.adoc[Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus]
+
+====== xref:troubleshoot-microsoft-defender-antivirus-when-migrating.adoc[Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution]
+
+===== link:[Behavioral blocking and containment]
+
+====== xref:behavioral-blocking-containment.adoc[Behavioral blocking and containment]
+
+====== xref:client-behavioral-blocking.adoc[Client behavioral blocking]
+
+====== xref:feedback-loop-blocking.adoc[Feedback-loop blocking]
+
+==== xref:defender-endpoint-false-positives-negatives.adoc[Address false positives/negatives in Microsoft Defender for Endpoint]
+
+==== link:[Manage device configuration]
+
+===== xref:configure-machines-security-baseline.adoc[Increase compliance to the security baseline]
+
+===== xref:configure-machines-asr.adoc[Optimize attack surface reduction rule deployment and detections]
+
+=== link:[Investigate and respond to threats]
+
+==== link:[Endpoint detection and response]
+
+===== xref:overview-endpoint-detection-response.adoc[Endpoint detection and response overview]
+
+===== xref:admin-submissions-mde.adoc[Submit files]
+
+===== link:[Incidents queue]
+
+====== xref:view-incidents-queue.adoc[View and organize the Incidents queue]
+
+====== xref:manage-incidents.adoc[Manage incidents]
+
+====== xref:investigate-incidents.adoc[Investigate incidents]
+
+===== link:[Alerts queue]
+
+====== xref:alerts-queue-endpoint-detection-response.adoc[Alerts queue in Microsoft 365 Defender]
+
+====== xref:alerts-queue.adoc[View and organize the Alerts queue]
+
+====== xref:review-alerts.adoc[Review alerts]
+
+====== xref:manage-alerts.adoc[Manage alerts]
+
+====== xref:investigate-alerts.adoc[Investigate alerts]
+
+====== xref:investigate-files.adoc[Investigate files]
+
+====== xref:investigate-machines.adoc[Investigate devices]
+
+====== xref:investigate-ip.adoc[Investigate an IP address]
+
+====== xref:investigate-domain.adoc[Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert]
+
+======= xref:investigate-behind-proxy.adoc[Investigate connection events that occur behind forward proxies]
+
+====== xref:investigate-user.adoc[Investigate a user account]
+
+===== link:[Take response actions]
+
+====== link:[Take response actions on a device]
+
+======= xref:respond-machine-alerts.adoc[Response actions on devices]
+
+======= link:respond-machine-alerts.md#manage-tags[Manage tags]
+
+======= link:respond-machine-alerts.md#initiate-automated-investigation[Start an automated investigation]
+
+======= link:respond-machine-alerts.md#initiate-live-response-session[Start a Live Response session]
+
+======= link:respond-machine-alerts.md#collect-investigation-package-from-devices[Collect investigation package]
+
+======= link:respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices[Run antivirus scan]
+
+======= link:respond-machine-alerts.md#restrict-app-execution[Restrict app execution]
+
+======= link:respond-machine-alerts.md#isolate-devices-from-the-network[Isolate devices from the network]
+
+======= link:respond-machine-alerts.md#contain-devices-from-the-network[Contain devices from the network]
+
+======= link:respond-machine-alerts.md#consult-a-threat-expert[Consult a threat expert]
+
+======= link:respond-machine-alerts.md#check-activity-details-in-action-center[Check activity details in Action center]
+
+====== link:[Take response actions on a file]
+
+======= xref:respond-file-alerts.adoc[Response actions on files]
+
+======= link:respond-file-alerts.md#stop-and-quarantine-files-in-your-network[Stop and quarantine files in your network]
+
+======= link:respond-file-alerts.md#restore-file-from-quarantine[Restore file from quarantine]
+
+======= link:respond-file-alerts.md#add-indicator-to-block-or-allow-a-file[Add indicators to block or allow a file]
+
+======= link:respond-file-alerts.md#consult-a-threat-expert[Consult a threat expert]
+
+======= link:respond-file-alerts.md#check-activity-details-in-action-center[Check activity details in Action center]
+
+======= link:respond-file-alerts.md#download-or-collect-file[Download or collect file]
+
+======= link:respond-file-alerts.md#deep-analysis[Deep analysis]
+
+===== xref:manage-auto-investigation.adoc[View and approve remediation actions]
+
+====== xref:auto-investigation-action-center.adoc[View details and results of automated investigations]
+
+===== link:[Investigate entities using Live response]
+
+====== xref:live-response.adoc[Investigate entities on devices]
+
+====== xref:live-response-command-examples.adoc[Live response command examples]
+
+===== xref:information-protection-investigation.adoc[Use sensitivity labels to prioritize incident response]
+
+===== link:[Reporting]
+
+====== xref:api-power-bi.adoc[Power BI - How to use API - Samples]
+
+====== xref:threat-protection-reports.adoc[Threat protection reports]
+
+==== link:[Advanced hunting]
+
+===== xref:advanced-hunting-overview.adoc[Advanced hunting overview]
+
+===== xref:advanced-hunting-schema-reference.adoc[Understand the schema]
+
+===== xref:advanced-hunting-devicealertevents-table.adoc[DeviceAlertEvents]
+
+==== xref:threat-analytics.adoc[Threat analytics overview]
+
+===== xref:threat-analytics-analyst-reports.adoc[Read the analyst report]
+
+==== xref:edr-in-block-mode.adoc[EDR in block mode]
+
+==== link:[Automated investigation and response (AIR)]
+
+===== xref:automated-investigations.adoc[Overview of AIR]
+
+===== xref:automation-levels.adoc[Automation levels in AIR]
+
+===== xref:configure-automated-investigations-remediation.adoc[Configure AIR capabilities]
+
+===== xref:autoir-investigation-results.adoc[View the details and results of an automated investigation]
+
+==== link:[Microsoft Threat Experts]
+
+===== xref:microsoft-threat-experts.adoc[Microsoft Threat Experts overview]
+
+===== xref:configure-microsoft-threat-experts.adoc[Configure and manage Microsoft Threat Experts capabilities]
+
+==== link:[Next generation protection]
+
+===== xref:customize-run-review-remediate-scans-microsoft-defender-antivirus.adoc[Run and customize scheduled and on-demand scans]
+
+=== Reference
+
+==== xref:threat-indicator-concepts.adoc[Understand threat intelligence concepts]
+
+==== link:[Configure integration with other Microsoft solutions]
+
+===== xref:configure-conditional-access.adoc[Configure conditional access]
+
+===== xref:microsoft-cloud-app-security-config.adoc[Configure Microsoft Defender for Cloud Apps integration]
+
+==== link:[Management and APIs]
+
+===== xref:management-apis.adoc[Overview of management and APIs]
+
+===== xref:api-release-notes.adoc[API release notes]
+
+===== link:[Microsoft Defender for Endpoint API]
+
+====== link:[Get started]
+
+======= xref:api-terms-of-use.adoc[Microsoft Defender for Endpoint API license and terms]
+
+======= xref:apis-intro.adoc[Access the Microsoft Defender for Endpoint APIs]
+
+======= xref:api-hello-world.adoc[Hello World]
+
+======= xref:exposed-apis-create-app-webapp.adoc[Get access with application context]
+
+======= xref:exposed-apis-create-app-nativeapp.adoc[Get access with user context]
+
+====== link:[Microsoft Defender for Endpoint APIs Schema]
+
+======= xref:exposed-apis-list.adoc[Supported Microsoft Defender for Endpoint APIs]
+
+======= xref:common-errors.adoc[Common REST API error codes]
+
+======= xref:run-advanced-query-api.adoc[Advanced Hunting]
+
+======= link:[Alert]
+
+####### xref:alerts.adoc[Alert methods and properties] ####### xref:get-alerts.adoc[List alerts] ####### xref:create-alert-by-reference.adoc[Create alert] ####### xref:batch-update-alerts.adoc[Batch update alerts] ####### xref:update-alert.adoc[Update Alert] ####### xref:get-alert-info-by-id.adoc[Get alert information by ID] ####### xref:get-alert-related-domain-info.adoc[Get alert related domains information] ####### xref:get-alert-related-files-info.adoc[Get alert related file information] ####### xref:get-alert-related-ip-info.adoc[Get alert related IPs information] ####### xref:get-alert-related-machine-info.adoc[Get alert related device information] ####### xref:get-alert-related-user-info.adoc[Get alert related user information]
+
+======= link:[Assessments of vulnerabilities and secure configurations]
+
+####### xref:get-assessment-methods-properties.adoc[Export assessment methods and properties] ####### xref:get-assessment-secure-config.adoc[Export secure configuration assessment] ####### xref:get-assessment-software-inventory.adoc[Export software inventory assessment] ####### xref:get-assessment-non-cpe-software-inventory.adoc[Export non product code software inventory assessment] ####### xref:get-assessment-software-vulnerabilities.adoc[Export software vulnerabilities assessment]
+
+======= link:[Browser extensions]
+
+####### xref:get-assessment-browser-extensions.adoc[Export browser extensions assessment] ####### xref:get-browser-extensions-permission-info.adoc[Get browser extensions permission information]
+
+======= link:[Automated investigation]
+
+####### xref:investigation.adoc[Investigation methods and properties] ####### xref:get-investigation-collection.adoc[List Investigation] ####### xref:get-investigation-object.adoc[Get Investigation] ####### xref:initiate-autoir-investigation.adoc[Start Investigation]
+
+======= link:[Device Health]
+
+####### xref:device-health-api-methods-properties.adoc[Export device health methods and properties] ####### xref:device-health-export-antivirus-health-report-api.adoc[Export device antivirus health report]
+
+======= link:[Certificate inventory]
+
+####### xref:export-certificate-inventory-assessment.adoc[Export certificate inventory assessment]
+
+======= link:[Domain]
+
+####### xref:get-domain-related-alerts.adoc[Get domain related alerts] ####### xref:get-domain-related-machines.adoc[Get domain related machines] ####### xref:get-domain-statistics.adoc[Get domain statistics]
+
+======= link:[File]
+
+####### xref:files.adoc[File methods and properties] ####### xref:get-file-information.adoc[Get file information] ####### xref:get-file-related-alerts.adoc[Get file related alerts] ####### xref:get-file-related-machines.adoc[Get file related machines] ####### xref:get-file-statistics.adoc[Get file statistics]
+
+======= link:[Indicators]
+
+####### xref:ti-indicator.adoc[Indicators methods and properties] ####### xref:get-ti-indicators-collection.adoc[List Indicators] ####### xref:post-ti-indicator.adoc[Submit Indicator] ####### xref:import-ti-indicators.adoc[Import Indicator] ####### xref:delete-ti-indicator-by-id.adoc[Delete Indicator]
+
+======= link:[IP]
+
+####### xref:get-ip-related-alerts.adoc[Get IP related alerts] ####### xref:get-ip-statistics.adoc[Get IP statistics]
+
+======= link:[Live response library]
+
+####### xref:live-response-library-methods.adoc[Live response library methods and properties] ####### xref:list-library-files.adoc[List library files] ####### xref:upload-library.adoc[Upload to live response library] ####### xref:delete-library.adoc[Delete from library]
+
+======= link:[Machine]
+
+####### xref:machine.adoc[Machine methods and properties] ####### xref:get-machines.adoc[List machines] ####### xref:get-machine-by-id.adoc[Get machine by ID] ####### xref:get-machine-log-on-users.adoc[Get machine log on users] ####### xref:get-machine-related-alerts.adoc[Get machine related alerts] ####### xref:get-machinesecuritystates-collection.adoc[Get machines security states collection API] ####### xref:get-installed-software.adoc[Get installed software] ####### xref:get-discovered-vulnerabilities.adoc[Get discovered vulnerabilities] ####### xref:get-security-recommendations.adoc[Get security recommendations] ####### xref:add-or-remove-machine-tags.adoc[Add or Remove machine tags] ####### xref:find-machines-by-ip.adoc[Find machines by IP] ####### xref:find-machine-info-by-ip.adoc[Find device information by internal IP] ####### xref:find-machines-by-tag.adoc[Find machines by tag] ####### xref:get-missing-kbs-machine.adoc[Get missing KBs] ####### xref:set-device-value.adoc[Set device value] ####### xref:update-machine-method.adoc[Update machine]
+
+======= link:[Machine Action]
+
+####### xref:machineaction.adoc[Machine Action methods and properties] ####### xref:get-machineactions-collection.adoc[List Machine Actions] ####### xref:get-machineaction-object.adoc[Get Machine Action] ####### xref:collect-investigation-package.adoc[Collect investigation package] ####### xref:get-package-sas-uri.adoc[Get investigation package SAS URI] ####### xref:get-live-response-result.adoc[Get live response result] ####### xref:isolate-machine.adoc[Isolate machine] ####### xref:unisolate-machine.adoc[Release machine from isolation] ####### xref:restrict-code-execution.adoc[Restrict app execution] ####### xref:unrestrict-code-execution.adoc[Remove app restriction] ####### xref:run-av-scan.adoc[Run antivirus scan] ####### xref:run-live-response.adoc[Run live response] ####### xref:offboard-machine-api.adoc[Offboard machine] ####### xref:stop-and-quarantine-file.adoc[Stop and quarantine file] ####### xref:cancel-machine-action.adoc[Cancel machine action]
+
+======= link:[Recommendation]
+
+####### xref:recommendation.adoc[Recommendation methods and properties] ####### xref:get-all-recommendations.adoc[List all recommendations] ####### xref:get-recommendation-by-id.adoc[Get recommendation by ID] ####### xref:list-recommendation-software.adoc[Get recommendation by software] ####### xref:get-recommendation-machines.adoc[List machines by recommendation] ####### xref:get-recommendation-vulnerabilities.adoc[List vulnerabilities by recommendation]
+
+======= link:[Remediation activity]
+
+####### xref:get-remediation-methods-properties.adoc[Remediation activity methods and properties] ####### xref:get-remediation-one-activity.adoc[Get one remediation activity by ID] ####### xref:get-remediation-all-activities.adoc[List all remediation activities] ####### xref:get-remediation-exposed-devices-activities.adoc[List exposed devices of one remediation activity]
+
+======= link:[Score]
+
+####### xref:score.adoc[Score methods and properties] ####### xref:get-machine-group-exposure-score.adoc[List exposure score by machine group] ####### xref:get-exposure-score.adoc[Get exposure score] ####### xref:get-device-secure-score.adoc[Get device secure score]
+
+======= link:[Security baselines]
+
+####### xref:export-security-baseline-assessment.adoc[Export security baselines assessment] ####### xref:get-security-baselines-assessment-profiles.adoc[List security baselines assessment profiles] ####### xref:get-security-baselines-assessment-configurations.adoc[List security baselines assessment configurations]
+
+======= link:[Software]
+
+####### xref:software.adoc[Software methods and properties] ####### xref:get-software.adoc[List software] ####### xref:get-software-by-id.adoc[Get software by ID] ####### xref:get-software-ver-distribution.adoc[List software version distribution] ####### xref:get-machines-by-software.adoc[List machines by software] ####### xref:get-vuln-by-software.adoc[List vulnerabilities by software] ####### xref:get-missing-kbs-software.adoc[Get missing KBs] ####### xref:get-machinegroups-collection.adoc[Get KB collection API]
+
+======= link:[User]
+
+####### xref:user.adoc[User methods] ####### xref:get-user-related-alerts.adoc[Get user related alerts] ####### xref:get-user-related-machines.adoc[Get user related machines]
+
+======= link:[Vulnerability]
+
+####### xref:vulnerability.adoc[Vulnerability methods and properties] ####### xref:get-all-vulnerabilities.adoc[List vulnerabilities] ####### xref:get-all-vulnerabilities-by-machines.adoc[List vulnerabilities by machine and software] ####### xref:get-vulnerability-by-id.adoc[Get vulnerability by ID] ####### xref:get-cvekbmap-collection.adoc[Get CVE-KB map API] ####### xref:get-kbinfo-collection.adoc[Get KB collection API] ####### xref:get-machines-by-vulnerability.adoc[List machines by vulnerability]
+
+====== link:[How to use APIs - Samples]
+
+======= xref:api-microsoft-flow.adoc[Power Automate]
+
+======= xref:api-power-bi.adoc[Power BI]
+
+======= xref:run-advanced-query-sample-python.adoc[Advanced Hunting using Python]
+
+======= xref:run-advanced-query-sample-powershell.adoc[Advanced Hunting using PowerShell]
+
+======= xref:exposed-apis-odata-samples.adoc[Using OData Queries]
+
+======= xref:exposed-apis-full-sample-powershell.adoc[Advanced Hunting with PowerShell API Guide]
+
+===== link:[Raw data streaming API]
+
+====== xref:raw-data-export.adoc[Raw data streaming]
+
+====== xref:raw-data-export-event-hub.adoc[Stream advanced hunting events to Azure Events hub]
+
+====== xref:raw-data-export-storage.adoc[Stream advanced hunting events to your storage account]
+
+===== link:[SIEM integration]
+
+====== xref:configure-siem.adoc[Integrate SIEM tools with Microsoft Defender for Endpoint]
+
+====== xref:troubleshoot-siem.adoc[Troubleshoot SIEM tool integration issues]
+
+===== link:[Partners & APIs]
+
+====== xref:partner-applications.adoc[Partner applications]
+
+====== xref:connected-applications.adoc[Connected applications]
+
+====== xref:api-explorer.adoc[API explorer]
+
+===== link:[Role-based access control]
+
+====== xref:rbac.adoc[Manage portal access using RBAC]
+
+====== xref:user-roles.adoc[Create and manage roles]
+
+====== link:[Create and manage device groups]
+
+======= xref:machine-groups.adoc[Using device groups]
+
+======= xref:machine-tags.adoc[Create and manage device tags]
+
+==== link:[Managed security service provider (MSSP) integration]
+
+===== xref:configure-mssp-support.adoc[Configure managed security service provider integration]
+
+===== xref:mssp-list.adoc[Supported managed security service providers]
+
+===== xref:grant-mssp-access.adoc[Grant MSSP access to the portal]
+
+===== xref:access-mssp-portal.adoc[Access the MSSP customer portal]
+
+===== xref:configure-mssp-notifications.adoc[Configure alert notifications]
+
+===== xref:exposed-apis-create-app-partners.adoc[Get partner application access]
+
+===== xref:fetch-alerts-mssp.adoc[Fetch alerts from customer tenant]
+
+===== xref:mssp-support.adoc[Managed security service provider opportunity]
+
+==== link:[Partner integration scenarios]
+
+===== xref:partner-integration.adoc[Technical partner opportunities]
+
+===== xref:get-started-partner-integration.adoc[Become a Microsoft Defender for Endpoint partner]
+
+==== link:[Integrations]
+
+===== xref:threat-protection-integration.adoc[Microsoft Defender for Endpoint integrations]
+
+===== xref:conditional-access.adoc[Protect users, data, and devices with conditional access]
+
+===== xref:microsoft-cloud-app-security-integration.adoc[Microsoft Defender for Cloud Apps integration overview]
+
+==== link:[Information protection in Windows overview]
+
+===== xref:information-protection-in-windows-overview.adoc[Windows integration]
+
+==== xref:community.adoc[Access the Microsoft Defender for Endpoint Community Center]
+
+==== xref:helpful-resources.adoc[Helpful resources]
+
+=== link:[Troubleshoot]
+
+==== link:[Troubleshoot sensor state]
+
+===== xref:check-sensor-status.adoc[Check sensor state]
+
+===== xref:fix-unhealthy-sensors.adoc[Fix unhealthy sensors]
+
+===== link:fix-unhealthy-sensors.md#inactive-devices[Inactive devices]
+
+===== link:fix-unhealthy-sensors.md#misconfigured-devices[Misconfigured devices]
+
+===== xref:event-error-codes.adoc[Review sensor events and errors on machines with Event Viewer]
+
+==== link:[Troubleshoot sensor health issues using Client Analyzer]
+
+===== xref:overview-client-analyzer.adoc[Client analyzer overview]
+
+===== xref:download-client-analyzer.adoc[Download and run the client analyzer]
+
+===== xref:run-analyzer-windows.adoc[Run the client analyzer on Windows]
+
+===== xref:run-analyzer-macos-linux.adoc[Run the client analyzer on macOS or Linux]
+
+===== xref:data-collection-analyzer.adoc[Data collection for advanced troubleshooting on Windows]
+
+===== xref:analyzer-report.adoc[Understand the analyzer HTML report]
+
+===== xref:analyzer-feedback.adoc[Provide feedback on the client analyzer tool]
+
+==== link:[Troubleshoot Microsoft Defender for Endpoint service issues]
+
+===== xref:troubleshoot-mdatp.adoc[Troubleshoot service issues]
+
+===== xref:contact-support.adoc[Contact Microsoft Defender for Endpoint support]
+
+==== xref:troubleshoot-live-response.adoc[Troubleshoot live response issues]
+
+==== xref:troubleshoot-collect-support-log.adoc[Collect support logs using LiveAnalyzer]
+
+==== link:[Troubleshoot attack surface reduction issues]
+
+===== xref:troubleshoot-np.adoc[Network protection]
+
+===== xref:troubleshoot-asr.adoc[Attack surface reduction rules]
+
+===== xref:migrating-asr-rules.adoc[Migrate to Attack surface reduction rules]
+
+== link:[Microsoft 365 Defender docs]
+
+=== link:../defender/index.yml[Microsoft 365 Defender]
+
+=== link:../office-365-security/index.yml[Defender for Office 365]
+
+=== link:/defender-for-identity/[Defender for Identity]
+
+=== link:/cloud-app-security/[Defender for Cloud Apps]
+
+=== link:../defender-business/index.yml[Defender for Business]
+
+=== link:../defender-vulnerability-management/index.yml[Defender Vulnerability Management]

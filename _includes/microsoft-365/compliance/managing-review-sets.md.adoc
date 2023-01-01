@@ -1,0 +1,50 @@
+= Manage review sets in eDiscovery (Premium)
+:audience: Admin
+:author: robmazz
+:description: Learn how to manage review sets so you can analyze, query, view, tag, and export data in an eDiscovery (Premium) case.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance", "ediscovery"]
+:ms.custom: seo-marvel-mar2020
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MOE150", "MET150"]
+
+== Manage review sets in eDiscovery (Premium)
+
+Review sets are a static set of documents where you can analyze, query, view, tag, and export data in a case.
+For more information about performing these tasks, see:
+
+* xref:analyzing-data-in-review-set.adoc[Analyze data in a review set]
+* xref:review-set-search.adoc[Query the data in a review set]
+* xref:view-documents-in-review-set.adoc[View documents in a review set]
+* xref:tagging-documents.adoc[Tag documents in a review set]
+* xref:exporting-data-ediscover20.adoc[Export case data]
+
+=== Create a review set
+
+Review sets can be created on the *Review sets* tab by clicking *+ Add review set*.
+
+image::../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png[Add review set.]
+
+On the *Add review set* flyout page, type a name for the review set and then click *Save*.
+The new review set is displayed in the list on the *Review sets* tab.
+
+image::../media/AeDnewreviewset.png[New review set listed on Review set tab.]
+
+There are three different ways to add data to a review set in an eDiscovery (Premium) case.
+
+image::../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png[Three ways to add to a review sets.]
+
+. xref:add-data-to-review-set.adoc[Add search results to a review set]
+. xref:load-non-Office-365-data-into-a-review-set.adoc[Load non-Microsoft 365 data into a review set]
+. xref:add-data-to-review-set-from-another-review-set.adoc[Add data to a review set from another review set]
+
+____
+[!NOTE] You can't delete items from a review set and you can't delete review sets from a case.
+To delete a review set (and delete the data in it), you have to delete the eDiscovery (Premium) case the review set is located in.
+For more information, see xref:close-or-delete-case.adoc[Close or delete an eDiscovery (Premium) case].
+____

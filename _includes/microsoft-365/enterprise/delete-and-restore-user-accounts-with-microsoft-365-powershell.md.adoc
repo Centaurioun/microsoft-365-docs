@@ -1,0 +1,130 @@
+= Delete Microsoft 365 user accounts with PowerShell
+:audience: Admin
+:author: kelleyvice-msft
+:description: Learn how to use different modules in PowerShell to delete Microsoft 365 user accounts.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
+:ms.author: kvice
+:ms.collection: Ent_O365
+:ms.custom: ["PowerShell", "Ent_Office_Other", "O365ITProTrain", "seo-marvel-apr2020"]
+:ms.date: 09/23/2020
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+:search.appverid: ["MET150"]
+
+== Delete Microsoft 365 user accounts with PowerShell
+
+You can use PowerShell for Microsoft 365 to delete and restore user accounts.
+
+____
+[!Note] Learn how to xref:../admin/add-users/restore-user.adoc[restore a user account] by using the Microsoft 365 admin center.
+
+For a list of additional resources, see link:/admin[Manage users and groups].
+____
+
+=== Use the Azure Active Directory PowerShell for Graph module
+
+First, link:connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module[connect to your Microsoft 365 tenant].
+
+After you connect, use the following syntax to remove an individual user account:
+
+[,powershell]
+----
+Remove-AzureADUser -ObjectID <sign-in name>
+----
+
+This example removes the user account _fabricec\@litwareinc.com_.
+
+[,powershell]
+----
+Remove-AzureADUser -ObjectID fabricec@litwareinc.com
+----
+
+____
+[!NOTE] The _-ObjectID_ parameter in the *Remove-AzureADUser* cmdlet accepts either the account's sign-in name, also known as the User Principal Name or the account's object ID.
+____
+
+To display the account name based on the user's name, use the following commands:
+
+[,powershell]
+----
+$userName="<User name>"
+Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
+----
+
+This example displays the account name for the user _Caleb Sills_.
+
+[,powershell]
+----
+$userName="Caleb Sills"
+Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
+----
+
+To remove an account based on the user's display name, use the following commands:
+
+[,powershell]
+----
+$userName="<display name>"
+Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
+----
+
+=== Use the Microsoft Azure Active Directory Module for Windows PowerShell
+
+When you delete a user account through the Microsoft Azure Active Directory Module for Windows PowerShell, the account isn't permanently deleted.
+You can restore the deleted user account within 30 days.
+
+First, link:connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell[connect to your Microsoft 365 tenant].
+
+To delete a user account, use the following syntax:
+
+[,powershell]
+----
+Remove-MsolUser -UserPrincipalName <sign-in name>
+----
+
+____
+[!Note] PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with _Msol_ in their name.
+Run these cmdlets from Windows PowerShell.
+____
+
+This example deletes the user account _BelindaN@litwareinc.com_.
+
+[,powershell]
+----
+Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
+----
+
+To restore a deleted user account within the 30-day grace period, use the following syntax:
+
+[,powershell]
+----
+Restore-MsolUser -UserPrincipalName <sign-in name>
+----
+
+This example restores the deleted account _BelindaN\@litwareinc.com_.
+
+[,powershell]
+----
+Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
+----
+
+____
+[!Note] To see the list of deleted users that can be restored, run the following command:
+
+[,powershell]
+----
+Get-MsolUser -All -ReturnDeletedUsers
+----
+
+If the user account's original user principal name is used by another account, use the _NewUserPrincipalName_ parameter instead of _UserPrincipalName_ to specify a different user principal name when you restore the user account.
+____
+
+=== See also
+
+xref:manage-user-accounts-and-licenses-with-microsoft-365-powershell.adoc[Manage Microsoft 365 user accounts, licenses, and groups with PowerShell]
+
+xref:manage-microsoft-365-with-microsoft-365-powershell.adoc[Manage Microsoft 365 with PowerShell]
+
+xref:getting-started-with-microsoft-365-powershell.adoc[Get started with PowerShell for Microsoft 365]

@@ -1,0 +1,44 @@
+= Create an APNs certificate for iOS devices
+:audience: Admin
+:author: kwekua
+:description: To manage iOS devices such as iPads and iPhones in Basic Mobility and Security, begin by creating an APNs certificate.
+:f1.keywords: NOCSH
+:manager: scotv
+:ms.author: kwekua
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: AdminSurgePortfolio
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+
+== Create an APNs certificate for iOS devices
+
+To manage iOS devices such as iPads and iPhones in Basic Mobility and Security, create an APNs certificate.
+
+. Sign in to Microsoft 365 with your global admin account.
+. Go to the https://portal.office.com/adminportal/home?#/MifoDevices[Microsoft 365 admin center], and choose *APNs Certificate for iOS*.
+. On the Apple Push Notification Certificate Settings page, choose *Next*.
+. Select Download your CSR file and save the certificate signing request to somewhere on your computer that you'll remember.
+Select *Next*.
+. On the Create an APNs certificate page:
+ .. Select Apple APNS Portal to open the Apple Push Certificates Portal.
+ .. Sign in with an Apple ID.
++
+____
+[!IMPORTANT] Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves.
+Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+____
+
+ .. Select *Create a Certificate* and accept the Terms of Use.
+ .. Browse to the certificate signing request you downloaded to your computer from Microsoft 365, and select *Upload*.
++
+Download the APNs certificate created by the Apple Push Certificate Portal to your computer.
++
+____
+[!TIP] If you're having trouble downloading the certificate, refresh your browser.
+____
+. Go back to Microsoft 365, and select *Next* to get to the *Upload APNS certificate* page.
+. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
+. Select *Finish*.
+
+To complete setup, go back to the Security & Compliance Center > *Security policies* > *Device management* > *Manage settings*.

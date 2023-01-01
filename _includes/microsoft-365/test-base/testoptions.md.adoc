@@ -1,0 +1,32 @@
+= Choose your test options
+:audience: Software-Vendor
+:author: mansipatel-usl
+:description: Choose your test options
+:f1.keywords: NOCSH
+:manager: rshastri
+:ms.author: tinachen
+:ms.collection: TestBase-M365
+:ms.custom:
+:ms.date: 07/06/2021
+:ms.localizationpriority: medium
+:ms.reviewer: tinachen
+:ms.service: test-base
+:ms.topic: troubleshooting
+:search.appverid: MET150
+
+== Step 5: Choose your test options.
+
+The `Test Options` tab is for users who wish to perform functional tests to indicate when the Windows Update patch should be applied in the sequence of executing their functional test scripts.
+
+image::Media/testoptions.png[Image of test options.
+Either out-of-box or functional tests.]
+
+Select _*Review*_ to navigate to the next tab and review your selected test options.
+
+=== Next steps
+
+Details of the nest step can be seen in the next article via the link below:
+
+____
+[!div class="nextstepaction"] xref:review.adoc[Next step]
+____

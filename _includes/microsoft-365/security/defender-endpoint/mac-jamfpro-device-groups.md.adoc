@@ -1,0 +1,54 @@
+= Set up device groups in Jamf Pro
+:audience: ITPro
+:author: dansimp
+:description: Learn how to set up device groups in Jamf Pro for Microsoft Defender for Endpoint on macOS
+:keywords: device, group, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["m365-security-compliance"]
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: conceptual
+:search.appverid: met150
+
+== Set up Microsoft Defender for Endpoint on macOS device groups in Jamf Pro
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink[Sign up for a free trial.]
+____
+
+____
+[!NOTE] Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+____
+
+Set up the device groups similar to Group policy  organizational unite (OUs), Microsoft Endpoint Configuration Manager's device collection, and Intune's device groups.
+
+. Navigate to *Static Computer Groups*.
+. Select *New*.
++
+:::image type="content" source="images/jamf-pro-static-group.png" alt-text="The Jamf Pro1 page" lightbox="images/jamf-pro-static-group.png":::
+
+. Provide a display name and select *Save*.
++
+:::image type="content" source="images/jamfpro-machine-group.png" alt-text="The Jamf Pro2 page" lightbox="images/jamfpro-machine-group.png":::
+
+. Now you will see the *Contoso's Machine Group* under *Static Computer Groups*.
++
+:::image type="content" source="images/contoso-machine-group.png" alt-text="The Jamf Pro3 page" lightbox="images/contoso-machine-group.png":::
+
+=== Next step
+
+* xref:mac-jamfpro-policies.adoc[Set up Microsoft Defender for Endpoint on macOS policies in Jamf Pro]

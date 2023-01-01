@@ -1,0 +1,53 @@
+= Turn on definition retirement for Microsoft Defender Antivirus
+:author: denisebmsft
+:description: Turn on definition retirement for Microsoft Defender Antivirus.
+:keywords: Microsoft Defender Antivirus, antimalware, security, defender, definition retirement
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: m365-security-compliance
+:ms.custom: nextgen
+:ms.date: 06/10/2021
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer:
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Turn on definition retirement
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+
+You can configure definition retirement using Group Policy.
+Definition retirement checks to see if a computer has the required security updates necessary to protect it against a particular vulnerability.
+If the system is not vulnerable to the exploit detected by a definition, then that definition is "retired".
+If all security intelligence for a given protocol are retired then that protocol is no longer parsed.
+Enabling this feature helps to improve performance.
+On a computer that is up-to-date with all the latest security updates, network protection will have no impact on network performance.
+
+=== Use Group Policy to configure definition retirement
+
+. On your Group Policy management endpoint, open the link:/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)[Group Policy Management Console].
+. Go to *Computer Configuration* > *Administrative Templates* > *Windows Components* > *Microsoft Defender Antivirus* > *Network Inspection System*.
+. Select *Turn on definition retirement*.
+By default, this policy is enabled.
+If set *Not configured*, definition retirement is enabled.
+. To edit the policy, select the *edit policy setting* link.
+. Select *Enabled*, and then select *OK*.
+. Deploy your updated Group Policy Object.
+See link:/windows/win32/srvnodes/group-policy[Group Policy Management Console].
+
+____
+[!TIP] Are you using Group Policy Objects on premises?
+See how they translate in the cloud.
+link:/mem/intune/configuration/group-policy-analytics[Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview].
+____

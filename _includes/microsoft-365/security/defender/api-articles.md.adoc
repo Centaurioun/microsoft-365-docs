@@ -1,0 +1,38 @@
+= Other security and threat protection APIs
+:audience: ITPro
+:author: mjcaparas
+:description: View a list of APIs related to Microsoft security and threat protection products.
+:f1.keywords: ["NOCSH"]
+:keywords: api, security, threat protection, mde, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, cloud app security
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Other security and threat protection APIs
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender API
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may be substantially modified before it's commercially released.
+Microsoft makes no warranties, express or implied, with respect to the information provided here.
+____
+
+The following resources provide more information about APIs available for other Microsoft security solutions, beyond the Microsoft 365 Defender API.
+
+* link:/windows/security/threat-protection/microsoft-defender-atp/apis-intro[Microsoft Defender for Endpoint]
+* link:/office/office-365-management-api/[Microsoft Defender for Office 365]
+* link:/cloud-app-security/api-introduction[Microsoft Defender for Cloud Apps]

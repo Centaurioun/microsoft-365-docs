@@ -1,0 +1,68 @@
+= Migration and setup guides to move to Microsoft Defender for Endpoint
+:audience: ITPro
+:author: denisebmsft
+:description: Learn how to make the switch from a non-Microsoft 365 Defender solution to Microsoft Defender for Endpoint
+:f1.keywords: NOCSH
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: ["M365-security-compliance"]
+:ms.custom: migrationguides
+:ms.date: 07/01/2022
+:ms.localizationpriority: medium
+:ms.reviewer: chriggs, depicker, yongrhee
+:ms.service: microsoft-365-security
+:ms.subservice: mde
+:ms.topic: conceptual
+:search.appverid: met150
+
+== Move to Microsoft Defender for Endpoint
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+=== Migration and setup guides
+
+If you're considering moving to Defender for Endpoint, we have guidance to help.
+In the following table, review the scenarios.
+Select the scenario that best represents your situation, and see the recommended guidance.
+
+|===
+| Scenario | Guidance
+
+| You don't have an endpoint protection solution in place yet, and you want to know more about Defender for Endpoint.
+You want to see how Defender for Endpoint works before rolling it out in your environment.
+| xref:evaluation-lab.adoc[Microsoft Defender for Endpoint evaluation lab]
+
+| You already have Defender for Endpoint, and you want some help getting everything set up and configured.
+| xref:deployment-phases.adoc[Microsoft Defender for Endpoint deployment guide]
+
+| You're planning to switch from a non-Microsoft endpoint protection solution to Defender for Endpoint, which includes Microsoft Defender Antivirus.
+You want to get an overview of the migration process and how to make the switch.
+| xref:switch-to-mde-overview.adoc[Make the switch to Microsoft Defender for Endpoint]
+
+| You've already migrated or onboarded to Defender for Endpoint.
+You want some help with next steps, such as managing your security settings, configuring more features, or fine-tuning your security policies.
+| xref:manage-mde-post-migration.adoc[Manage Microsoft Defender for Endpoint, post-migration]
+|===
+
+=== Do you have feedback for us?
+
+Let us know what you think!
+Submit your feedback at the bottom of the page.
+We'll take your feedback into account as we continue to improve and add to our migration guidance.
+
+=== See also
+
+* link:/microsoft-365/security/defender/microsoft-365-defender[Microsoft 365 Defender]
+* link:/windows/security/threat-protection[Microsoft Defender for Endpoint]
+* link:/microsoft-365/security/office-365-security/office-365-atp[Microsoft Defender for Office 365]
+* xref:../../business-premium/index.adoc[Microsoft 365 Business Premium]
+* xref:../defender-business/mdb-overview.adoc[Microsoft Defender for Business]

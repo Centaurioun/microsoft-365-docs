@@ -1,0 +1,14 @@
+= Office 365 measurements for network performance recommendations
+:audience: Admin
+:author: kelleyvice-msft
+:description: Office 365 measurements for network performance recommendations
+:manager: scotv
+:ms.author: kvice
+:ms.collection: ["Ent_O365", "Strat_O365_Enterprise"]
+:ms.date: 10/22/2019
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: conceptual
+:search.appverid: ["MET150"]
+
+== Office 365 measurements for network performance recommendations

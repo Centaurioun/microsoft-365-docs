@@ -1,0 +1,62 @@
+= Enter your Microsoft Open product key
+:ROBOTS: NOINDEX
+:audience: Admin
+:author: cmcatee-MSFT
+:description: Learn how to activate, renew, or add licenses to a Microsoft 365 for business subscription.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: cmcatee
+:ms.collection: ["M365-subscription-management", "Adm_O365"]
+:ms.custom: ["commerce_purchase", "AdminSurgePortfolio"]
+:ms.date: 10/21/2020
+:ms.localizationpriority: medium
+:ms.reviewer: drjones, jmueller
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: MET150
+
+== Enter your product key purchased from Microsoft Open
+
+If you purchased Microsoft 365 for business from a https://go.microsoft.com/fwlink/p/?LinkID=613298[Microsoft Open License Program], this article is for you.
+Volume licensing customers who purchased a product key can follow this topic to activate, renew, or add licenses to a subscription.
+
+*Need help immediately?* xref:../admin/get-help-support.adoc[Call Microsoft Support].
+
+*Need something else?*
+
+*For help with Microsoft 365 Home, or Personal*, see https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759[Using product keys with Office].
+
+*For help with Microsoft 365 Business Standard purchased from a retail store*, see xref:enter-your-product-key.adoc[Enter your product key purchased from a retail store].
+
+=== Activate, renew, or add licenses to a subscription purchased from Microsoft Open
+
+If you bought Microsoft 365 from a Microsoft Open License Program, the system automatically enters the key for you when you activate, renew, or add licenses to a subscription.
+
+. After you purchase a key from a Microsoft 365 partner, check your inbox for an email from Microsoft containing an activation link.
++
+____
+[!TIP]  The email is sent to the person listed as the online administrator in the volume licensing agreement.
+If you're not sure who is designated as the online administrator, ask your Microsoft 365 partner.
+____
+
+. Follow the link in the email to sign in with your work or school account, accept the Open License Agreement, and renew the subscription.
+For a step-by-step walkthrough, download the PDF guide, https://go.microsoft.com/fwlink/p/?LinkId=618100[Activate Online Services: Microsoft 365 Subscription], which covers how to activate a new subscription, renew an existing subscription, or add licenses to an existing subscription.
+
+____
+[!NOTE] Volume licensing customers can also choose to activate subscriptions in the https://go.microsoft.com/fwlink/p/?LinkID=282016[Volume Licensing Service Center].
+To learn how, download the PDF guide, https://go.microsoft.com/fwlink/p/?LinkId=618096[Activate Online Services in the Volume Licensing Service Center].
+____
+
+=== What's next?
+
+If you're new to Microsoft 365 for business, learn how to xref:../admin/setup/setup.adoc[set up Microsoft 365 for your organization].
+
+=== Still having trouble with product keys?
+
+Check out this list of common errors and solutions: xref:product-key-errors-and-solutions.adoc[Problems with your product key?]
+
+Partners, see https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40[Partners: use a product key to set up a customer subscription].
+
+Volume licensing customers can learn more by visiting https://go.microsoft.com/fwlink/p/?LinkId=618103[Microsoft Volume Licensing Service Center training and resources].
+
+Or, if you want to talk to a person, xref:../admin/get-help-support.adoc[call Microsoft Support].

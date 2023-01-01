@@ -1,0 +1,53 @@
+= View tenant service health in Microsoft 365 Lighthouse
+:audience: Admin
+:author: SKjerland
+:description: For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to view tenant service health.
+:f1.keywords: NOCSH
+:manager: scotv
+:ms-reviewer: chboyd
+:ms.author: sharik
+:ms.collection: ["M365-subscription-management", "Adm_O365"]
+:ms.custom: ["AdminSurgePortfolib", "M365-Lighthouse"]
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-lighthouse
+:ms.topic: article
+:search.appverid: MET150
+
+== View tenant service health in Microsoft 365 Lighthouse
+
+You can view service health for the tenants you manage in Microsoft 365 Lighthouse.
+Service health includes incidents and advisories for several services, including Microsoft Intune, Azure Active Directory (Azure AD) identity services, and mobile device management (MDM) cloud services.
+You can also see how many of your managed tenants are affected by incidents.
+For example, if one of your tenants is experiencing problems, you can check the Service health page to determine whether it's a known issue with a resolution in progress or whether a recent change may be impacting them.
+This could save you time troubleshooting and reduce support calls.
+
+If you can't sign in to Lighthouse, you can use the https://status.office365.com/[Microsoft 365 service health status page] to check for known issues preventing you from logging in to your partner tenant.
+Also, sign up to follow https://twitter.com/MSFT365Status[@MSFT365status] on Twitter to see information on specific service incidents.
+
+=== Before you begin
+
+To view service health, you'll need an Azure AD role in the partner tenant with the following property set: *microsoft.office365.serviceHealth/allEntities/allTasks*.
+For a list of Azure AD roles, see link:/azure/active-directory/roles/permissions-reference[Azure AD built-in roles].
+
+=== View service health status for all tenants
+
+. In the left navigation pane in Lighthouse, select *Service health*.
+. On the *Service health* page, review the current service health status, including:
+ ** Total number of incidents
+ ** Total number of advisories affecting any of the managed tenants
+ ** Number of services with active incidents.
+. On the *All services* tab, review issues by service.
+. On the *All issues* tab, review all current issues.
+
+=== Review issue details
+
+. In the left navigation pane in Lighthouse, select *Service health*.
+. On the *Service health* page, select the *All services* or *All issues* tab.
+. Select an issue from the list.
+. In the issue details pane, review detailed information, including issue type, tenants affected, user impact, and issue history.
+
+On the *Tenants affected* tab, you can export a list of affected tenants to a comma-separated values (.csv) file so you can share it with your support teams.
+
+=== Related content
+
+link:/microsoft-365/enterprise/view-service-health[How to check Microsoft 365 service health] (article) + xref:m365-lighthouse-known-issues.adoc[Known issues with Microsoft 365 Lighthouse] (article) + xref:m365-lighthouse-view-your-roles.adoc[View your Azure Active Directory roles in Microsoft 365 Lighthouse] (article)

@@ -1,0 +1,155 @@
+= Set up SharePoint Syntex
+:audience: admin
+:author: MikePlumleyMSFT
+:description: Set up SharePoint Syntex
+:manager: serdars
+:ms.author: mikeplum
+:ms.collection: ["enabler-strategic", "m365initiative-syntex"]
+:ms.custom: ["admindeeplinkMAC"]
+:ms.localizationpriority: high
+:ms.reviewer: ssquires
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+:search.appverid: MET150
+
+== Set up SharePoint Syntex
+
+Admins can use the https://go.microsoft.com/fwlink/p/?linkid=2024339[Microsoft 365 admin center] to set up xref:index.adoc[Microsoft SharePoint Syntex].
+
+Consider the following before you start:
+
+* In which SharePoint sites will you enable form processing?
+All of them, some, or select sites?
+* What will you name your default content center?
+
+You can change your settings after initial setup in the https://go.microsoft.com/fwlink/p/?linkid=2024339[Microsoft 365 admin center].
+
+Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment.
+For example, you need to make the following decisions:
+
+* The SharePoint sites in which you want to enable form processing - all of them, some, or selected sites
+* The name and admins for your content center
+
+=== Requirements
+
+____
+[!NOTE] You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint Syntex.
+____
+
+As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the https://go.microsoft.com/fwlink/p/?linkid=2024339[Microsoft 365 admin center].
+
+==== Custom Power Platform environments
+
+If you plan to use a custom Power Platform environment, you must install the _AI Builder for Project Cortex_ app in this environment.
+See link:/power-platform/admin/manage-apps#install-an-app-in-the-environment-view[Manage Dynamics 365 apps] for details and look for the _AI Builder for Project Cortex_ app in the list of Dynamics 365 apps.
+
+You also need to link:/power-platform/admin/capacity-add-on[allocate AI Builder credits] to the custom environment before you can create form processing models.
+
+When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role.
+See link:/power-platform/admin/assign-security-roles[Assign a security role to a user] for more information.
+
+Users creating models in a link:/microsoft-365/contentunderstanding/create-a-content-center[content center site] must be site members.
+Users creating models locally outside the content center must be site owners of those sites.
+
+==== Licensing
+
+To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each user must have a licenses assigned.
+SharePoint Syntex licenses include the following apps, which must all be assigned:
+
+* SharePoint Syntex
+* SharePoint Syntex - SPO type
+* Common Data Service for SharePoint Syntex
+
+To use form processing, you also need AI Builder credits.
+For each licensed user of SharePoint Syntex, an allocation of AI Builder credits is provided each month.
+
+For details about SharePoint Syntex licensing, see xref:syntex-licensing.adoc[SharePoint Syntex licensing]
+
+=== To set up SharePoint Syntex
+
+. In the Microsoft 365 admin center, select https://go.microsoft.com/fwlink/p/?linkid=2171997[*Setup*], and then view the *Files and content* section.
+. In the *Files and content* section, select *Automate content understanding*.
+Note that your current AI Builder credit availability is shown in the *At a glance* section.
++
+. On the *Automate content understanding* page, click *Get started* to walk through the setup process.
++
++
+____
+[!div class="mx-imgBorder"] image:../media/content-understanding/admin-content-understanding-get-started.png[Begin setup.]</br>
+____
+
+. On the *Configure Form Processing* page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries.
+A menu option will be available in the document library ribbon to *Create a form processing model* in SharePoint document libraries in which it is enabled.
++
+For *Which SharePoint libraries should show option to create a form processing model*, you can select:</br>
+
+ ** *Libraries in all SharePoint sites* to make it available to all SharePoint libraries in your organization.</br>
+ ** *Libraries in selected SharePoint sites*, and then select the sites in which you want to make it available or upload a list of up to 50 sites.</br>
+ ** *No SharePoint libraries* if you don't want to make it available to any sites (you can change this after setup).
+
++
+____
+[!div class="mx-imgBorder"] image:../media/content-understanding/admin-configforms.png[Configure form processing site options.]
+____
++
+____
+[!Note] Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply document understanding models to a library.
+____
++
+If you have multiple Power Platform environments configured, you can choose which one you want to use with for form processing.
+(This option will not appear if you only have one environment.)
++
+image::../media/content-understanding/setup-power-platform-env.png[Configure form processing Power Platform options.]
++
+For *Power Platform environment*, you can select:
+
+ ** *Use the default environment* to use your default Power Platform environment.
+ ** *Use a custom environment* to use a custom environment.
+Choose the environment that you want to use from the list.
+(link:/microsoft-365/contentunderstanding/set-up-content-understanding#requirements[See the requirements for a custom environment]).
+
++
+Click *Next*.
+
+. On the *Create Content Center* page, you can create a SharePoint content center site where your users can create and manage document understanding models.
+If you previously created a content center from the SharePoint admin center, that information will display here and you can just select *Next*.
+ .. For *Site name*, type the name you want to give your content center site.
+ .. The *Site address* will show the URL for your site, based on what you selected for the site name.
+If you want to change it, click *Edit*.
++
+____
+[!div class="mx-imgBorder"] image:../media/content-understanding/admin-cu-create-cc.png[Create content center.]</br>
+____
++
+Select *Next*.
+. On the *Review and finish* page, you can look at your selected setting and choose to make changes.
+If you are satisfied with your selections, select *Activate*.
+. On the confirmation page, click *Done*.
+. You'll be returned to your *Automate content understanding* page.
+From this page, you can select *Manage* to make any changes to your configuration settings.
+
+=== Assign licenses
+
+Once you have configured SharePoint Syntex, you must assign licenses for the users who will be using any SharePoint Syntex features.
+
+To assign licenses:
+
+. In the Microsoft 365 admin center, under *Users*, select https://go.microsoft.com/fwlink/p/?linkid=834822[*Active users*].
+. Select the users that you want to license, and choose *Manage product licenses*.
+. Choose *Apps* from the drop-down menu.
+. Select *Show apps for  SharePoint Syntex*.
+Under *Apps*, make sure *Common Data Service for SharePoint Syntex*, *SharePoint Syntex*, and *SharePoint Syntex - SPO type* are all selected.
++
+____
+[!div class="mx-imgBorder"] image:../media/content-understanding/sharepoint-syntex-licenses.png[SharePoint Syntex licenses in the Microsoft 365 admin center.]
+____
+
+. Click *Save changes*.
+
+=== See also
+
+link:/ai-builder/form-processing-model-overview[Overview of the form processing model]
+
+https://www.youtube.com/watch?v=DymSHObD-bg[Step-by-Step: How to Build a Document Understanding Model (video)]
+
+link:/power-platform/admin/create-environment[Create and manage environments in the Power Platform admin center]

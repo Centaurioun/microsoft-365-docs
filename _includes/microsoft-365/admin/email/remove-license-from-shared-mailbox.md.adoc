@@ -1,0 +1,62 @@
+= Remove license from shared mailbox
+:audience: Admin
+:author: SKjerland
+:description: Remove a license from a shared mailbox to assign it to another user or return the license so you're not paying for it.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: sharik
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["commerce_licensing", "AdminSurgePortfolio"]
+:ms.date: 04/22/2022
+:ms.localizationpriority: medium
+:ms.reviewer: sinakassaw, nicholak
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Remove a license from a shared mailbox
+
+Shared mailboxes usually don't require a license.
+Follow these instructions to remove a license from a shared mailbox so that you can either assign it to a user or return the license so that you aren't paying for a license you don't need.
+
+____
+[!NOTE]
+
+An Exchange Online Plan 2 license is required in the following scenarios:
+
+* The shared mailbox has more than 50 GB of storage in use.
+* The shared mailbox uses in-place archiving.
+* The shared mailbox is placed in litigation hold.
+
+For step-by-step instructions on how to assign licenses, see link:/microsoft-365/admin/manage/assign-licenses-to-users[Assign licenses to users].
+____
+
+=== Remove the license
+
+::: moniker range="o365-worldwide"
+
+. In the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=834822[Active users] page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+. In the admin center, go to the *Users* > https://go.microsoft.com/fwlink/p/?linkid=850628[Active users] page.
+
+::: moniker-end
+
+____
+[!NOTE] You need to remove the license from the Active users page.
+You can't remove the license from the Shared mailbox page because licenses are user settings.
+____
+
+. Select the shared mailbox.
+. One the *Licenses and Apps* tab, expand *Licenses* and uncheck the box for the license you want to remove.
+. Select *Save changes*.
+. When you return to the *Active users* page, the status of the shared mailbox will be *Unlicensed*.
+. You're still paying for the license.
+To stop paying for it, xref:../../commerce/licenses/buy-licenses.adoc[remove the license from your subscription].
+
+=== Related content
+
+xref:about-shared-mailboxes.adoc[About shared mailboxes] (article) + xref:create-a-shared-mailbox.adoc[Create a shared mailbox] (article) + xref:configure-a-shared-mailbox.adoc[Configure a shared mailbox] (article) + xref:convert-user-mailbox-to-shared-mailbox.adoc[Convert a user mailbox to a shared mailbox] (article) + xref:resolve-issues-with-shared-mailboxes.adoc[Resolve issues with shared mailboxes] (article)

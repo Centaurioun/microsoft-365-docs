@@ -1,0 +1,160 @@
+= Set up Azure Rights Management for the previous version of Message Encryption
+:audience: Admin
+:author: kccross
+:description: The previous version of Office 365 Message Encryption depends on Microsoft Azure Rights Management (previously known as Windows Azure Active Directory Rights Management).
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
+:ms.author: krowley
+:ms.date: 10/30/2018
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MET150", "MOE150"]
+
+== Set up Azure Rights Management for the previous version of Message Encryption
+
+This topic describes the steps you need to follow in order to activate and then set up Azure Rights Management (RMS), part of Azure Information Protection, for use with the previous version of Office 365 Message Encryption (OME).
+
+=== This article only applies to the previous version of OME
+
+If you haven't yet moved your organization to Microsoft Purview Message Encryption, but you have already deployed OME, then the information in this article applies to your organization.
+Microsoft recommends that you make a plan to move to Microsoft Purview Message Encryption as soon as it is reasonable for your organization.
+For instructions, see xref:set-up-new-message-encryption-capabilities.adoc[Set up Microsoft Purview Message Encryption].
+If you want to find out more about how the new capabilities work first, see xref:ome.adoc[Message Encryption].
+The rest of this article refers to OME behavior before the release of Microsoft Purview Message Encryption.
+
+=== Prerequisites for using the previous version of Office 365 Message Encryption
+
++++<a name="warmprereqs">++++++</a>+++
+
+Office 365 Message Encryption (OME), including IRM, depends on Azure Rights Management (Azure RMS).
+Azure RMS is the protection technology used by Azure Information Protection.
+To use OME, your organization must include an Exchange Online or Exchange Online Protection subscription that, in turn, includes an Azure Rights Management subscription.
+
+* If you're not sure of what your subscription includes, see the Exchange Online service descriptions for link:/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance[Message Policy, Recovery, and Compliance].
+* If you have Azure Rights Management but it's not set up for Exchange Online or Exchange Online Protection, this article explains how to activate Azure Rights Management and then the describes the best way to set up OME to work with Azure Rights Management.
+* If you've already set up OME to work with Azure Rights Management for Exchange Online or Exchange Online Protection, depending on how you set it up, you may be ready to start using OME and its new capabilities right away.
+This article explains how to determine if you've set OME up correctly, what to do if you need to change your setup, and what happens if you choose not to change your setup.
+For example, in order to use the new capabilities, you must use Azure RMS with OME.
+You can't use the new capabilities with an on-premises Active Directory RMS.
+
+=== Activate Azure Rights Management for  the previous version of OME in Office 365
+
+You need to activate Azure Rights Management so that the users in your organization can apply information protection to messages that they send, and open messages and files that have been protected by the Azure Rights Management service.
+For instructions, see link:/azure/information-protection/activate-service[Activating Azure Rights Management].
+Once you've completed the activation, return here and continue with the tasks in this article.
+
+=== Set up the previous version of OME to use Azure RMS by importing trusted publishing domains (TPDs)
+
+A TPD is an XML file that contains information about your organization's rights management settings.
+For example, the TPD contains information about the server licensor certificate (SLC) used for signing and encrypting certificates and licenses, the URLs used for licensing and publishing, and so on.
+You import the TPD into your organization by using PowerShell.
+
+____
+[!IMPORTANT] Previously, you could choose to import TPDs from the Active Directory Rights Management service (AD RMS) into your organization.
+However, doing so will prevent you from using Microsoft Purview Message Encryption and is not recommended.
+If your organization is currently configured this way, Microsoft recommends that you create a plan to migrate from your on-premises Active Directory RMS to cloud-based Azure Information Protection.
+For more information, see link:/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms[Migrating from AD RMS to Azure Information Protection].
+You will not be able to use Microsoft Purview Message Encryption until you have completed the migration to Azure Information Protection.
+____
+
+*To import TPDs from Azure RMS*:
+
+. link:/powershell/exchange/connect-to-exchange-online-powershell[Connect to Exchange Online PowerShell].
+. Choose the key-sharing URL that corresponds to your organization's geographic location:
++
+|===
+| Location | Key sharing location URL
+
+| North America
+| https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc
+
+| European Union
+| https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc
+
+| Asia
+| https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc
+
+| South America
+| https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc
+
+| Office 365 for Government (Government Community Cloud)  + This RMS key-sharing location is reserved for customers who have purchased Office 365 for Government SKUs.
+| https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc
+|===
+
+. Configure the key-sharing location by running the link:/powershell/module/exchange/set-irmconfiguration[Set-IRMConfiguration] cmdlet as follows:
++
+[,powershell]
+----
+Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
+----
++
+For example, to configure the key sharing location if your organization is located in North America:
++
+[,powershell]
+----
+Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
+----
+
+. Run the link:/powershell/module/exchange/import-rmstrustedpublishingdomain[Import-RMSTrustedPublishingDomain] cmdlet with the -RMSOnline switch to import the TPD from Azure Rights Management:
++
+[,powershell]
+----
+Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
+----
++
+Where  _TPDName_  is the name you want to use for the TPD.
+For example, "Contoso North American TPD".
+
+. To verify that you successfully configured your organization to use the Azure Rights Management service, run the link:/powershell/module/exchange/test-irmconfiguration[Test-IRMConfiguration] cmdlet with the -RMSOnline switch as follows:
++
+[,powershell]
+----
+Test-IRMConfiguration -RMSOnline
+----
++
+Among other things, this cmdlet checks connectivity with the Azure Rights Management service, downloads the TPD, and checks its validity.
+
+. Run the link:/powershell/module/exchange/set-irmconfiguration[Set-IRMConfiguration] cmdlet as follows to disable Azure Rights Management templates from being available in Outlook on the web and Outlook:
++
+[,powershell]
+----
+Set-IRMConfiguration -ClientAccessServerEnabled $false
+----
+
+. Run the link:/powershell/module/exchange/set-irmconfiguration[Set-IRMConfiguration] cmdlet as follows to enable Azure Rights Management for your cloud-based email organization and configure it to use Azure Rights Management for Office 365 Message Encryption:
++
+[,powershell]
+----
+Set-IRMConfiguration -InternalLicensingEnabled $true
+----
+
+. To verify that you have successfully imported the TPD and enabled Azure Rights Management, use the Test-IRMConfiguration cmdlet to test Azure Rights Management functionality.
+For details, see "Example 1" in link:/powershell/module/exchange/test-irmconfiguration[Test-IRMConfiguration].
+
+=== I have the previous version of OME set up with Active Directory Rights Management not Azure Information Protection, what do I do?
+
++++<a name="importTPDs">++++++</a>+++
+
+You can continue to use your existing Office 365 Message Encryption mail flow rules with Active Directory Rights Management, but you can't configure or use Microsoft Purview Message Encryption.
+Instead, you need to migrate to Azure Information Protection.
+For information about migration and what this means for your organization, see link:/information-protection/deploy-use/prepare-environment-adrms[Migrating from AD RMS to Azure Information Protection].
+
+=== Next steps
+
++++<a name="importTPDs">++++++</a>+++
+
+Once you've completed Azure Rights Management setup, if you want to enable Microsoft Purview Message Encryption, see xref:./set-up-new-message-encryption-capabilities.adoc[Set up Microsoft Purview Message Encryption].
+
+After you've set up your organization to use Microsoft Purview Message Encryption, you're ready to xref:define-mail-flow-rules-to-encrypt-email.adoc[Define mail flow rules].
+
+=== Related topics
+
++++<a name="importTPDs">++++++</a>+++
+
+xref:encryption.adoc[Encryption in Office 365]
+
+xref:technical-reference-details-about-encryption.adoc[Technical reference details about encryption in Office 365]
+
+link:/information-protection/understand-explore/what-is-azure-rms[What is Azure Rights Management?]

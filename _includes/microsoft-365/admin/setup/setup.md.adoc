@@ -1,0 +1,30 @@
+= Set up Microsoft 365 for business
+:audience: Admin
+:author: kwekua
+:description: Learn how to set up your Microsoft Business Premium, Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education subscription.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
+:ms.author: kwekua
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365", "Adm_O365_Setup", "TRN_SMB"]
+:ms.custom: ["VSBFY23", "TRN_M365B", "OKR_SMB_Videos", "AdminSurgePortfolio", "AdminTemplateSet"]
+:ms.localizationpriority: high
+:ms.service: o365-administration
+:ms.topic: landing-page
+:search.appverid: ["MET150", "MOE150", "BEA160"]
+
+== Set up Microsoft 365 for business
+
+See the following links to get your business or https://go.microsoft.com/fwlink/p/?LinkId=627221[nonprofit] up and running with https://go.microsoft.com/fwlink/p/?LinkId=627220[Microsoft 365 Business Standard], Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education.
+
+Not a business?
+See https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2[Set up for Microsoft 365 Family or Microsoft 365 Personal].
+
+* xref:setup-business-basic.adoc[Set up Microsoft 365 Business Basic]
+* xref:setup-business-standard.adoc[Set up Microsoft Business Standard]
+* xref:../../business/set-up.adoc[Set up Microsoft 365 Business Premium]
+* xref:setup-apps-for-business.adoc[Set up Microsoft 365 Apps for business]
+
+=== Related content
+
+link:/admin[Get started] (link page) + xref:../admin-overview/sign-up-for-office-365.adoc[How to sign up - Admin Help] (video) + xref:../../commerce/try-or-buy-microsoft-365.adoc[Try or buy a Microsoft 365 for business subscription] (article)

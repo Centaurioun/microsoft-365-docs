@@ -1,0 +1,121 @@
+= Create and manage an eDiscovery (Premium) case
+:audience: Admin
+:author: robmazz
+:description: This article describes how to create and manage Microsoft Purview eDiscovery (Premium) cases. The first step is to create a case and start using eDiscovery (Premium) features and functionality.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance", "m365solution-aed", "m365solution-scenario", "ediscovery"]
+:ms.custom: admindeeplinkCOMPLIANCE
+:ms.date: 04/08/2022
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: how-to
+:search.appverid: ["MOE150", "MET150"]
+
+== Create and manage an eDiscovery (Premium) case
+
+After setting up Microsoft Purview eDiscovery (Premium) and link:get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions[assigning permissions to eDiscovery managers] in your organization that will manage cases, the next step is to create and manage a case.
+
+This article also provides a high-level overview of using cases to manage the eDiscovery (Premium) workflow for a legal case or other types of investigations.
+
+=== Create a case
+
+Complete the following steps to create a case and add members.
+The user who creates the case is automatically added as a member.
+Members of the case can access the case in the Microsoft Purview compliance portal and perform eDiscovery (Premium) tasks.
+
+. Go to https://go.microsoft.com/fwlink/p/?linkid=2077149[compliance portal] and sign in using the credentials for user account that has been assigned eDiscovery permissions.
+Members of the Organization Management role group can also create eDiscovery (Premium) cases.
+. In the left navigation pane of the compliance portal, click *Show all*, and then select *eDiscovery* > *Advanced*, and then select the  https://go.microsoft.com/fwlink/p/?linkid=2173764[*Cases* tab].
+. Select *Create a case*.
+. On the *New eDiscovery case* flyout page, give the case a name (required), and then type an optional case number and description.
+The case name must be unique in your organization.
+. Click *Save* to create the case.
++
+The new case is created and the *Settings* tab in the new case is displayed.
+
+. In the *Access & permissions* tile on the *Settings* tab, click *Select*.
+. On the *Manage this case* flyout page, under *Manage members*, click *Add* to add members to the case.
+. In the list of people, select the check box next to the names of the people that you want to add to the case.
+As previously explained, be sure that the people you add to the case have been assigned the appropriate eDiscovery permissions.
+. After you've selected the people to add as members of the case, click *Add*.
+. In the *Manage this case* flyout page, click *Save* to save the new list of case members.
+. Click the *Home* tab to go to the case home page.
+
+=== Manage the workflow
+
+To get you started using eDiscovery (Premium), here's a basic workflow that aligns with xref:advanced-ediscovery-edrm.adoc[common eDiscovery practices].
+In each of these steps, we'll also highlight some extended eDiscovery (Premium) functionality that you can explore.
+
+image::../media/AeDWorkflow.png[eDiscovery (Premium) workflow.]
+
+. *xref:add-custodians-to-case.adoc[Add custodians] and xref:non-custodial-data-sources.adoc[non-custodial data sources] to the case*.
+The first step after creating a case is to add custodians.
+A _custodian_ is a person having administrative control of a document or electronic file that may be relevant to the case.
+Additionally, you can add data sources that aren't associated with a specific user but may be relevant to the case.
++
+Here are some things that happen (or that you can do) when you add custodians to a case:
+
+ ** Data in the custodian's Exchange mailbox, OneDrive account, and any Microsoft Teams or Yammer groups that the custodian is a member of can be "marked" as custodial data in the case.
+ ** Custodian data is reindexed (by a process called _Advanced indexing_).
+This helps optimize searching for it in the next step.
+ ** You can place a hold on custodian data.
+This preserves data that may be relevant to the case during the investigation.
+ ** You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Microsoft 365 Group with a custodian) so this data can be reindexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
+ ** You can use the xref:managing-custodian-communications.adoc[communications workflow] in eDiscovery (Premium) to send a legal hold notification to custodians.
+
+. *xref:create-draft-collection.adoc[Collect relevant content from data sources]*.
+After you add custodians and non-custodial data sources to a case, use the built-in collections tool to search these data sources for content that may be relevant to the case.
+You use keywords, properties, and conditions to xref:building-search-queries.adoc[build search queries] that return search results with the data that's most likely relevant to the case.
+You can also:
+ ** View xref:collection-statistics-reports.adoc[collection statistics] that may help you refine a collection to narrow the results.
+ ** Preview a sample of the collection to quickly verify whether the relevant data is being found.
+ ** Revise a query and rerun the collection.
+. *xref:commit-draft-collection.adoc[Commit collection to a review set]*.
+Once you've configured and verified that a search returns the desired data, the next step is to add the search results to a review set.
+When you add data to a review set, items are copied from their original location to a secure Azure Storage location.
+The data is reindexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set.
+Additionally, you can also xref:load-non-office-365-data-into-a-review-set.adoc[add non-Office 365 data into a review set].
++
+There's also a special kind of review set that you can add data to, called a _conversation review set_.
+These types of reviews sets provide conversation reconstruction capabilities to reconstruct, review, and export threaded conversations like those in Microsoft Teams.
+For more information, see xref:conversation-review-sets.adoc[Review conversations in eDiscovery (Premium)].
+
+. *Review and analyze data in a review set*.
+Now that data is in a review set, you can use a wide-variety of tools and capabilities to view and analyze the case data with the goal of reducing the data set to what is most relevant to the case you're investigating.
+Here's a list of some tools and capabilities that you can use during this process.
+ ** xref:view-documents-in-review-set.adoc[View documents].
+This includes viewing the metadata for each document in a review set, and viewing the document in its native version or text version.
+ ** xref:review-set-search.adoc[Create queries and filters].
+You create search queries using various search criteria (including the ability to search all xref:document-metadata-fields-in-advanced-ediscovery.adoc[file metadata properties] to further refine and cull the case data to what is most relevant to the case.
+You can also use review set filters to quickly apply other conditions to the results of a search query to further refine those results.
+ ** xref:tagging-documents.adoc[Create and use tags].
+You can apply tags to documents in a review set to identify which are responsive (or non-responsive to the case) and then use those tags when creating search queries to include or exclude the tagged documents.
+You can also tagging to determine which documents to export.
+ ** link:view-documents-in-review-set.md#annotate-view[Annotate and redact documents].
+You can use the annotation tool in a review to annotate documents and redact content in documents as work product.
+We generate a PDF version of an annotated or redacted document during review to reduce the risk of exporting the unredacted native version of the document.
+ ** xref:analyzing-data-in-review-set.adoc[Analyze case data].
+The analytics functionality in eDiscovery (Premium) is powerful.
+After you run analytics on the data in review set, we perform analysis such as near duplicate detection, email threading, and themes that can help reduce the volume of documents that you have to review.
+We also generate an Analytics reports that summarize the result of running analytics.
+As previously explained, running analytics also runs link:attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model[the attorney-client privilege detection model].
+. *Export and download case data*.
+A final step after collecting, reviewing, and analyzing case data is to export it out of eDiscovery (Premium) for external review or for review by people outside of the investigation team.
+Exporting data is a two-step process.
+The first step is to xref:export-documents-from-review-set.adoc[export] data out of the review set and copy it to a different Azure Storage location (one provided by Microsoft or one managed by your organization).
+Then you use Azure Storage Explorer to xref:download-export-jobs.adoc[download] the data to a local computer.
+In addition to the exported data files, the contains of the export package also contains an export report, a summary report, and an error report.
+
+=== eDiscovery (Premium) architecture
+
+Here's an architecture diagram that shows the eDiscovery (Premium) end-to-end workflow in a single-geo environment and in a multi-geo environment, and the end-to-end data flow that's aligned with the link:overview-ediscovery-20.md#ediscovery-premium-alignment-with-the-electronic-discovery-reference-model[Electronic Discovery Reference Model].
+
+link:../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png[image:../media/solutions-architecture-center/ediscovery-poster-thumb.png[Model poster: eDiscovery (Premium) Architecture in Microsoft 365.\]]
+
+link:../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png[View as an image]
+
+https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf[Download as a PDF file]
+
+https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx[Download as a Visio file]

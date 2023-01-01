@@ -1,0 +1,74 @@
+= Manage Skype for Business Online with PowerShell
+:audience: ITPro
+:author: kelleyvice-msft
+:description: Use PowerShell for Microsoft 365 to manage Skype for Business Online policies, per-user policies, and meeting settings.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
+:ms.author: kvice
+:ms.collection: Ent_O365
+:ms.custom:
+:ms.date: 07/17/2020
+:ms.localizationpriority: high
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+
+== Manage Skype for Business Online with PowerShell
+
+_This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise._
+
+Skype for Business Online administrators are responsible for managing policies.
+Although you can do some of these tasks in the Microsoft 365 admin center, others are easier to do in PowerShell.
+
+=== Before you start
+
+____
+[!NOTE] Skype for Business Online Connector is currently part of the latest Teams PowerShell module.
+If you're using the latest *Teams PowerShell* public release, you don't need to install the Skype for Business Online Connector.
+____
+
+____
+[!NOTE] Skype for Business Online Admins can manage both *Teams* and *Skype for Business Online* app policies through PowerShell.
+____
+
+Install the link:/microsoftteams/teams-powershell-install[Teams PowerShell module].
+
+=== Connect using admin credentials
+
+. Open a Windows PowerShell command prompt window and run the following commands:
++
+[,powershell]
+----
+Import-Module MicrosoftTeams
+$userCredential = Get-Credential
+Connect-MicrosoftTeams -Credential $userCredential
+----
+
+. In the *Windows PowerShell Credential Request* dialog box, type your administrator account name and password, and then select *OK*.
+
+=== Connect using an admin account with multi-factor authentication
+
+. Open a Windows PowerShell command prompt window, and run the following commands:
++
+[,powershell]
+----
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
+----
+
+. When prompted enter your Skype for Business Online administrator account name.
+. In the *Sign in to your account* dialog box, type your Skype for Business Online administrator password and select *Sign in*.
+. In the *Sign in to your account* dialog box, follow the instructions to add authentication information, such as a verification code, and then select *Verify*.
+
+For more information, see:
+
+* xref:manage-skype-for-business-online-policies-with-microsoft-365-powershell.adoc[Manage Skype for Business Online policies with PowerShell]
+* xref:assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.adoc[Assign per-user Skype for Business Online policies with PowerShell]
+
+=== See also
+
+xref:manage-microsoft-365-with-microsoft-365-powershell.adoc[Manage Microsoft 365 with PowerShell]
+
+xref:getting-started-with-microsoft-365-powershell.adoc[Get started with PowerShell for Microsoft 365]
+
+link:/powershell/module/skype/[Skype for Business PowerShell cmdlet references]

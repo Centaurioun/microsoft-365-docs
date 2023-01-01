@@ -1,0 +1,124 @@
+= Cancel machine action API
+:audience: ITPro
+:author: mjcaparas
+:description: Learn how to cancel an already launched machine action
+:f1.keywords: ["NOCSH"]
+:keywords: apis, graph api,
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: m365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Cancel machine action API
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* link:/microsoft-365/security/defender-endpoint/defender-endpoint[Microsoft Defender for Endpoint]
+* link:/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1[Microsoft Defender for Endpoint Plan 1]
+
+[!includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+=== API description
+
+Cancel an already launched machine action that is not yet in final state (completed, canceled, failed).
+
+=== Limitations
+
+. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API.
+To learn more, including how to choose permissions, see xref:apis-intro.adoc[Get started].
+
+|===
+| Permission type | Permission | Permission display name
+
+| Application
+| Machine.CollectForensics + Machine.Isolate + Machine.RestrictExecution + Machine.Scan + Machine.Offboard + Machine.StopAndQuarantine + Machine.LiveResponse
+| Collect forensics + Isolate machine + Restrict code execution + Scan machine + Offboard machine + Stop And Quarantine + Run live response on a specific machine
+
+| Delegated (work or school account)
+| Machine.CollectForensics + Machine.Isolate  + Machine.RestrictExecution + Machine.Scan + Machine.Offboard + Machine.StopAndQuarantineMachine.LiveResponse
+| Collect forensics + Isolate machine + Restrict code execution + Scan machine + Offboard machine + Stop And Quarantine + Run live response on a specific machine
+|===
+
+=== HTTP request
+
+[,http]
+----
+POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel
+----
+
+=== Request headers
+
+|===
+| Name | Type | Description
+
+| Authorization
+| String
+| Bearer \{token}.
+Required.
+
+| Content-Type
+| string
+| application/json.
+Required.
+|===
+
+=== Request body
+
+|===
+| Parameter | Type | Description
+
+| Comment
+| String
+| Comment to associate with the cancellation action.
+|===
+
+=== Response
+
+If successful, this method returns 200, OK response code with a Machine Action entity.
+If machine action entity with the specified id was not found - 404 Not Found.
+
+=== Example
+
+==== Request
+
+Here is an example of the request.
+
+[,http]
+----
+POST
+https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/cancel
+----
+
+[,json]
+----
+{
+    "Comment": "Machine action was canceled by automation"
+}
+----
+
+=== Related topic
+
+* xref:get-machineaction-object.adoc[Get machine action API]

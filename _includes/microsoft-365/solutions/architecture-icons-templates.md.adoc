@@ -1,0 +1,55 @@
+= Microsoft 365 architecture diagram templates and icons
+:author: samanro
+:description: Create Microsoft 365 architecture diagrams in Visio with these icons, stencils, and templates.
+:f1.keywords: NOCSH
+:manager: bcarter
+:ms.audience: ITPro
+:ms.author: samanro
+:ms.collection: ["highpri"]
+:ms.custom:
+:ms.localizationpriority: medium
+:ms.service: o365-solutions
+:ms.topic: article
+
+== Microsoft 365 architecture templates and icons
+
+Helping our partners and customers design and architect new solutions is important.
+Architecture diagrams like those included in our guidance can help communicate design decisions and the relationships between components in an environment.
+We use a set of symbols and icons along with Visio templates to create the architecture diagrams we product and are providing these tools here to help you build a custom architecture diagram for your next solution.
+
+You can see these icons, symbols, and templates in action in downloadable files available on the following pages:
+
+* xref:productivity-illustrations.adoc[Productivity illustrations]
+* xref:cloud-architecture-models.adoc[Microsoft cloud architecture models]
+
+=== Terms and download
+
+Microsoft permits the use of these icons in architectural diagrams, training materials, or documentation.
+You may copy, distribute, and display the icons only for the permitted use unless granted explicit permission by Microsoft.
+Microsoft reserves all other rights.
+
+____
+[!div class="button"] https://go.microsoft.com/fwlink/?linkid=869455[Download SVG and PNG icons]
+____
+
+____
+[!div class="button"] https://go.microsoft.com/fwlink/?linkid=2056186[Download Visio templates and stencils]
+____
+
+=== Example architecture diagrams
+
+You can use these icons and templates to create diagrams like the following examples:
+
+. Example search architecture diagram for SharePoint:
++
+image::../media/configure-search-for-multi-geo-image1-1.png[Example search architecture for SharePoint.]
+
+. Teams retention lifecycle architecture diagram:
++
+image::../media/TeamsRetentionLifecycle.png[Teams retention lifecycle.]
+
+=== More icon sets from Microsoft
+
+* link:/azure/architecture/icons/[Azure architecture icons]
+* link:/dynamics365/get-started/icons[Dynamics 365 architecture icons]
+* link:/power-platform/guidance/icons[Microsoft Power Platform icons]

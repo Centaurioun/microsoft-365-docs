@@ -1,0 +1,128 @@
+= Get started with records management in Microsoft 365
+:audience: Admin
+:author: cabailey
+:description: Prescriptive steps for admins, licensing requirements, and common scenarios that manage high-value content in Microsoft 365 for your legal, business, or regulatory obligations.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: cabailey
+:ms.collection: ["M365-security-compliance", "tier1", "highpri", "SPO_Content"]
+:ms.custom: admindeeplinkCOMPLIANCE
+:ms.date:
+:ms.localizationpriority: high
+:ms.service: O365-seccomp
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+
+== Get started with records management
+
+____
+_link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft 365 licensing guidance for security & compliance]._
+____
+
+Ready to start managing your organization's high-value content for legal, business, or regulatory obligations by using a records management solution in Microsoft 365?
+Use the following guidance to get started:
+
+. *Understand how retention and deletion works* in Microsoft 365, and identify whether you need to use retention policies to supplement retention labels that manage documents and emails at the item level: xref:retention.adoc[Learn about retention policies and retention labels]
++
+If necessary, xref:create-retention-policies.adoc[create retention policies] for baseline governance of data across Microsoft 365 workloads.
+
+. *Understand the records management solution* and how retention labels can be used to allow or block actions when documents and emails are declared records: xref:records-management.adoc[Learn about records management]
+. *Create your file plan for retention and deletion settings and actions, and when items should be marked as records* by importing an existing plan if you have one, or create new retention labels: xref:file-plan-manager.adoc[Use file plan to create and manage retention labels]
+. *Publish and apply your retention labels*.
+Retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows:
+ ** xref:create-apply-retention-labels.adoc[Publish retention labels and apply them in apps]
+ ** xref:apply-retention-labels-automatically.adoc[Apply a retention label to content automatically]
+
+____
+[!TIP] If you're migrating records to Microsoft 365 and need to validate that they haven't been altered, see link:records-management.md#validating-migrated-records[Validating migrated records].
+____
+
+=== Subscription and licensing requirements
+
+A number of different subscriptions support records management and the licensing requirements for users depends on the features you use.
+
+To see the options for licensing your users to benefit from Microsoft Purview features, see the link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft 365 licensing guidance for security & compliance].
+For records management, see the link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management[Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management] section for feature-level licensing requirements.
+
+=== Permissions
+
+Members of your compliance team who are responsible for records management need permissions to the https://go.microsoft.com/fwlink/p/?linkid=2077149[Microsoft Purview compliance portal].
+By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin.
+To grant permissions for this limited administration, we recommend that you add users to the *Records Management* admin role group, which grants permissions for all features related to records management, including xref:disposition.adoc[disposition review and verification].
+
+For a read-only role, you can create a new role group and add the *View-Only Record Management* role to this group.
+
+For instructions to add users to the default roles or create your own role groups, see xref:microsoft-365-compliance-center-permissions.adoc[Permissions in the Microsoft Purview compliance portal].
+
+These permissions are required only to create, configure, and apply retention labels that declare records, and manage disposition.
+The person configuring these labels doesn't require access to the content.
+
+=== Common scenarios
+
+Use the following table to help you map your business requirements to the scenarios that are supported by records management.
+
+____
+[!TIP] Need to comply with a specific industry regulation?
+Check xref:retention-regulatory-requirements.adoc[Regulatory requirements for data lifecycle management and records management] for regulation-specific guidance.
+____
+
+|===
+| I want to ... | Documentation
+
+| Declare a record
+| xref:declare-records.adoc[Declare records by using retention labels]
+
+| Update a record
+| xref:record-versioning.adoc[Use record versioning to update records stored in SharePoint or OneDrive]
+
+| Let admins and users manually apply retain and delete actions for documents and emails: + -  SharePoint + - OneDrive + - Outlook and Outlook on the web
+| xref:create-apply-retention-labels.adoc[Publish retention labels and apply them in apps]
+
+| Let site admins set default retain and delete actions for all content in a SharePoint library, folder, or document set
+| xref:create-apply-retention-labels.adoc[Publish retention labels and apply them in apps]
+
+| Let users automatically apply retain and delete actions to emails by using Outlook rules
+| xref:create-apply-retention-labels.adoc[Publish retention labels and apply them in apps]
+
+| Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library
+| xref:create-apply-retention-labels.adoc[Publish retention labels and apply them in apps]
+
+| Automatically apply retain and delete actions to documents and emails
+| xref:apply-retention-labels-automatically.adoc[Apply a retention label to content automatically]
+
+| Start the retention period when an event occurs, such as:  + - Employees leave the organization + - Contracts expire + - End of product lifetime
+| xref:event-driven-retention.adoc[Start retention when an event occurs]
+
+| Restrict changes to policies to help meet regulatory requirements or safeguard against rogue administrators
+| xref:retention-preservation-lock.adoc[Use Preservation Lock to restrict changes to retention policies and retention label policies]
+
+| Manage the lifecycle of different document types in SharePoint
+| xref:auto-apply-retention-labels-scenario.adoc[Use retention labels to manage the lifecycle of documents stored in SharePoint]
+
+| Apply a retention label to a file when I receive an alert that content containing personal data is being stored or remains untouched for too long
+| link:/privacy/priva/risk-management-alerts[Investigate and remediate alerts in Privacy Risk Management]
+
+| Make sure somebody reviews and approves before content is deleted at the end of its retention period
+| link:disposition.md#disposition-reviews[Disposition reviews]
+
+| Have proof of disposition for content that is permanently deleted at the end of its retention period
+| link:disposition.md#disposition-of-records[Disposition of records]
+
+| Monitor how and where retain and delete settings are applied to items
+| link:retention.md#monitoring-retention-labels[Monitoring retention labels]
+
+| Programatically create and manage retention labels, event-based retention, and automate repetitive tasks for records management
+| link:compliance-extensibility.md#microsoft-graph-api-for-records-management-preview[Microsoft Graph API for records management (preview)]
+|===
+
+=== End-user documentation
+
+If you're using retention policies for baseline data governance, they typically work unobtrusively in the background without user interaction.
+As a result, they need little documentation for users.
+Retention policies for Teams inform users when their messages have been deleted with a link to https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b[Teams messages about retention policies].
+
+In comparison, retention labels have a UI presence in Microsoft 365 apps, so make sure you provide guidance for end users and your help desk before these labels are deployed to your production network.
+To help users apply retention labels in SharePoint and OneDrive, and information about unlocking records for editing, see https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df[Apply retention labels to files in SharePoint or OneDrive].
+
+However, the most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose.
+See the following page and downloads that you can use to help train your users: https://microsoft.github.io/ComplianceCxE/enduser/retention/[End User Training for Retention Labels].

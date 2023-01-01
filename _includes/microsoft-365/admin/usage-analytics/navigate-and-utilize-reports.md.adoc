@@ -1,0 +1,72 @@
+= Navigate and utilize the reports in Microsoft 365 usage analytics
+:audience: Admin
+:author: efrene
+:description: Learn how to view the reports using navigation tabs and filters.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
+:ms.author: efrene
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: AdminSurgePortfolio
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Navigate and utilize the reports in Microsoft 365 usage analytics
+
+The dashboard provides you with a quick overview of the main usage and adoption metrics.
+By selecting the top-level metrics, you can access reports that provide more details and insights.
+Each report tab contains data visualizations specific to an aspect of usage and adoption for your organization.
+The data collected is explained in the title of each report and a tile appears that contains further information about the visualizations on the report tab that you are viewing.
+
+To get started with your reports, here are some tips:
+
+* Use the navigation tabs on the left or on a related metric on the *Executive Summary* page to navigate to each top-level report.
++
+image::../../media/navigate-usage-analytics1.png[Shows the navigation tabs on the left.]
+
+* Use the navigation tabs at the top of each top-level report to navigate to different reports within that level.
++
+image::../../media/navigate-usage-analytics2.png[Shows the navigation tabs at the top of each report.]
+
+* Many reports contain a slicer where you can filter on the product, AAD attribute, or activity that you want to view.
+These can be either single-select or multi-select.
++
+image::../../media/navigate-usage-analytics3.png[Shows a slicer.]
++
+image::../../media/navigate-usage-analytics4.png[Shows a slicer.]
+
+* Hover over data points to view a callout that contains details.
++
+image::../../media/navigate-usage-analytics6.png[Shows hover example.]
+
+The user who has instantiated the template app will have the ability to customize the report to their needs.
+To customize the template app:
+
+* Select *Edit report* at the top of the report.
++
+image::../../media/navigate-usage-analytics7.png[Shows Edit report.]
+
+* Create your own visuals by using the underlying xref:usage-analytics-data-model.adoc[datasets].
+* Use Power BI Desktop to bring in your own data sources.
+
+To share your reports, just select the share button image:../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png[Power BI Share icon.] at the top of the page.
+
+To learn how to customize the reports, see xref:customize-reports.adoc[Customizing the reports in Microsoft 365 usage analytics].
+
+You can find lots of additional information in the Power BI help documentation:
+
+* link:/power-bi/service-basic-concepts[Power BI basic concepts]
++
+Learn about dashboard, datasets, reports, and other Power BI concepts.
+
+* link:/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack[Get started with Power BI]
++
+Learn the basic functionality in Power BI.
+Find links to how to use Power BI Desktop.
+
+* link:/power-bi/service-share-dashboards[Share dashboards and reports]
++
+Learn how to share reports with your colleagues or people outside your organization.
+You can also share the report or a filtered version of the report.

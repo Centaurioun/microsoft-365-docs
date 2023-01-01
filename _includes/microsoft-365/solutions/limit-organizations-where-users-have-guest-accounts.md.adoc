@@ -1,0 +1,79 @@
+= Limit organizations where users can have guest accounts
+:audience: ITPro
+:author: MikePlumleyMSFT
+:description: Learn how to specify which organizations your users can have guest accounts in.
+:f1.keywords: NOCSH
+:manager: serdars
+:ms.author: mikeplum
+:ms.collection: ["highpri", "SPO_Content", "M365-collaboration", "m365solution-securecollab", "m365solution-scenario", "m365initiative-externalcollab"]
+:ms.localizationpriority: medium
+:ms.service: o365-solutions
+:ms.topic: article
+:recommendations: false
+
+== Limit organizations where users can have guest accounts
+
+By default, other Microsoft 365 and Azure Active Directory organizations can invite your users to participate in their organization as guests.
+This includes inviting them to teams in Microsoft Team, SharePoint sites, and sharing individual files and folders with them.
+
+If you only want your users to participate as guests with specific organizations, you can specify these organizations in the Azure Active Directory cross-tenant access settings for link:/azure/active-directory/external-identities/what-is-b2b[B2B collaboration].
+
+____
+[!NOTE] Changes to cross-tenant access settings may take two hours to take effect.
+____
+
+=== Set the default B2B collaboration settings to block users from being guests
+
+Because participating as guests is enabled by default, limiting guest participation to certain organizations requires blocking outbound B2B collaboration by default.
+
+To block outbound B2B collaboration by default
+
+. Sign in to https://aad.portal.azure.com[Azure Active Directory] using a Global administrator or Security administrator account.
+. Select *External Identities*, and then select *Cross-tenant access settings (preview)*.
+. Select the *Default settings* tab.
+. Under *Outbound access settings*, select *Edit outbound defaults*.
+. Select the *B2B collaboration* tab and the *Users and groups* tab.
+. Under *Access status*, choose *Block access*.
+. Select the *External access* tab.
+. Under *Access status*, choose *Block access*.
+. Select *Save*.
+. Close the *Default settings* blade.
+
+=== Add an organization
+
+Next, add the organizations where you want to allow your users to collaborate as guests to the Azure AD cross-tenant access list.
+
+To add an organization
+
+. In https://aad.portal.azure.com[Azure Active Directory], select *External Identities*, and then select *Cross-tenant access settings (preview)*.
+. Select *Organizational settings*.
+. Select *Add organization*.
+. On the *Add organization* pane, type the full domain name (or tenant ID) for the organization.
+. Select the organization in the search results, and then select *Add*.
+. The organization appears in the *Organizational settings* list.
+
+At this point, all access settings for this organization are inherited from your default settings.
+
+=== Configure the organization's outbound setting to allow all users
+
+Once you have added the organization, you need to update the organization's outbound settings to allow B2B collaboration users to be added as guests.
+Do this for each organization where you want to allow your users to be added as guests.
+
+To allow users to B2B collaboration guests in an organization
+
+. In https://aad.portal.azure.com[Azure Active Directory], select *External Identities*, and then select *Cross-tenant access settings (preview)*.
+. Select the outbound access link for the organization that you want to modify.
+. On the *B2B collaboration* tab, choose *Customize settings*.
+. Under *Access status*, choose *Allow access*.
+. Under *Target*, choose to allow all users.
+. Select *Save* and close the *Outbound access settings* blade.
+
+=== Related topics
+
+link:/azure/active-directory/external-identities/b2b-direct-connect-overview[B2B direct connect overview]
+
+link:/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect[Configure cross-tenant access settings for B2B direct connect]
+
+xref:limit-invitations-from-specific-organization.adoc[Limit who can be invited by an organization]
+
+xref:limit-guest-sharing-to-specific-organization.adoc[Limit guest sharing to specific organizations]

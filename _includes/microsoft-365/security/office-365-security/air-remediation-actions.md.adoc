@@ -1,0 +1,124 @@
+= Remediation actions in Microsoft Defender for Office 365
+:audience: ITPro
+:author: dansimp
+:description: Learn about remediation actions following automated investigation in Microsoft Defender for Office 365.
+:f1.keywords: ["NOCSH"]
+:keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["M365-security-compliance", "m365initiative-defender-office365"]
+:ms.custom: ["air"]
+:ms.date: 04/30/2021
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-security
+:ms.subservice: mdo
+:ms.topic: article
+:search.appverid: ["MET150", "MOE150"]
+
+== Remediation actions in Microsoft Defender for Office 365
+
+[!INCLUDE xref:../includes/mdo-trial-banner.adoc[MDO Trial banner]]
+
+*Applies to*
+
+* xref:defender-for-office-365.adoc[Microsoft Defender for Office 365 plan 2]
+* xref:../defender/microsoft-365-defender.adoc[Microsoft 365 Defender]
+
+=== Remediation actions
+
+Threat protection features in xref:defender-for-office-365.adoc[Microsoft Defender for Office 365] include certain remediation actions.
+Such remediation actions can include:
+
+* Soft delete email messages or clusters
+* Block URL (time-of-click)
+* Turn off external mail forwarding
+* Turn off delegation
+
+In Microsoft Defender for Office 365, remediation actions are not taken automatically.
+Instead, remediation actions are taken only upon approval by your organization's security operations team.
+
+=== Threats and remediation actions
+
+Microsoft Defender for Office 365 includes remediation actions to address various threats.
+Automated investigations often result in one or more remediation actions to review and approve.
+In some cases, an automated investigation does not result in a specific remediation action.
+To further investigate and take appropriate actions, use the guidance in the following table.
+
+|===
+| Category | Threat/risk | Remediation action(s)
+
+| Email
+| Malware
+| Soft delete email/cluster <p> If more than a handful of email messages in a cluster contain malware, the cluster is considered to be malicious.
+
+| Email
+| Malicious URL + (A malicious URL was detected by xref:safe-links.adoc[Safe Links].)
+| Soft delete email/cluster + Block URL (time-of-click verification) <p> Email that contains a malicious URL is considered to be malicious.
+
+| Email
+| Phish
+| Soft delete email/cluster <p> If more than a handful of email messages in a cluster contain phishing attempts, the whole cluster is considered a phishing attempt.
+
+| Email
+| Zapped phish + (Email messages were delivered and then xref:zero-hour-auto-purge.adoc[zapped].)
+| Soft delete email/cluster <p> Reports are available to view zapped messages.
+link:zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message[See if ZAP moved a message and FAQs].
+
+| Email
+| Missed phish email xref:enable-the-report-message-add-in.adoc[reported] by a user
+| link:automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook[Automated investigation triggered by the user's report]
+
+| Email
+| Volume anomaly + (Recent email quantities exceed the previous 7-10 days for matching criteria.)
+| Automated investigation does not result in a specific pending action.
+<p>Volume anomaly is not a clear threat, but is merely an indication of larger email volumes in recent days compared to the last 7-10 days.
+<p>Although a high volume of email can indicate potential issues, confirmation is needed in terms of either malicious verdicts or a manual review of email messages/clusters.
+See link:investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered[Find suspicious email that was delivered].
+
+| Email
+| No threats found + (The system did not find any threats based on files, URLs, or analysis of email cluster verdicts.)
+| Automated investigation does not result in a specific pending action.
+<p>Threats found and xref:zero-hour-auto-purge.adoc[zapped] after an investigation is complete are not reflected in an investigation's numerical findings, but such threats are viewable in xref:threat-explorer.adoc[Threat Explorer].
+
+| User
+| A user clicked a malicious URL + (A user navigated to a page that was later found to be malicious, or a user bypassed a link:safe-links.md#warning-pages-from-safe-links[Safe Links warning page] to get to a malicious page.)
+| Automated investigation does not result in a specific pending action.
+<p> Block URL (time-of-click) <p> Use Threat Explorer to link:threat-explorer.md#view-phishing-url-and-click-verdict-data[view data about URLs and click verdicts].
+<p> If your organization is using link:/windows/security/threat-protection/[Microsoft Defender for Endpoint], consider link:/microsoft-365/security/defender-endpoint/investigate-user[investigating the user] to determine if their account is compromised.
+
+| User
+| A user is sending malware/phish
+| Automated investigation does not result in a specific pending action.
+<p> The user might be reporting malware/phish, or someone could be xref:anti-spoofing-protection.adoc[spoofing the user] as part of an attack.
+Use xref:threat-explorer.adoc[Threat Explorer] to view and handle email containing link:threat-explorer-views.md#email--malware[malware] or link:threat-explorer-views.md#email--phish[phish].
+
+| User
+| Email forwarding + (Mailbox forwarding rules are configured, chch could be used for data exfiltration.)
+| Remove forwarding rule <p> Use xref:mail-flow-insights-v2.adoc[mail flow insights], including the xref:mfi-auto-forwarded-messages-report.adoc[Autofowarded messages report], to view more specific details about forwarded email.
+
+| User
+| Email delegation rules + (A user's account has delegations set up.)
+| Remove delegation rule <p> If your organization is using link:/windows/security/threat-protection/[Microsoft Defender for Endpoint], consider link:/microsoft-365/security/defender-endpoint/investigate-user[investigating the user] who's getting the delegation permission.
+
+| User
+| Data exfiltration + (A user violated email or file-sharing xref:../../compliance/dlp-learn-about-dlp.adoc[DLP policies]
+| Automated investigation does not result in a specific pending action.
+<p> xref:../../compliance/view-the-dlp-reports.adoc[View DLP reports and take action].
+
+| User
+| Anomalous email sending + (A user recently sent more email than during the previous 7-10 days.)
+| Automated investigation does not result in a specific pending action.
+<p> Sending a large volume of email isn't malicious by itself;
+the user might just have sent email to a large group of recipients for an event.
+To investigate, use xref:mail-flow-insights-v2.adoc[mail flow insights], including the xref:mfi-mail-flow-map-report.adoc[mail flow map report] to determine what's going on and take action.
+|===
+
+=== Next steps
+
+* xref:air-view-investigation-results.adoc[View details and results of an automated investigation in Microsoft Defender for Office 365]
+* xref:air-review-approve-pending-completed-actions.adoc[View pending or completed remediation actions following an automated investigation in Microsoft Defender for Office 365]
+
+=== Related articles
+
+* link:/windows/security/threat-protection/microsoft-defender-atp/automated-investigations[Learn about automated investigation in Microsoft Defender for Endpoint]
+* link:/microsoft-365/security/defender/microsoft-365-defender[Learn about capabilities in Microsoft 365 Defender]

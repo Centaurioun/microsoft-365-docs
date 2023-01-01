@@ -1,0 +1,105 @@
+'''
+
+title: Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe description: Learn how to manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender for Endpoint, edr ms.service: microsoft-365-security ms.subservice: mde ms.mktglfcycl: deploy ms.sitesec: library ms.pagetype: security ms.author: deniseb author: denisebmsft ms.localizationpriority: medium manager: dansimp audience: ITPro ms.collection:
+
+* M365-security-compliance
+
+ms.custom: admindeeplinkDEFENDER ms.topic: article ms.reviewer: chventou search.appverid: met150 --
+
+== Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+____
+[!NOTE] We recommend using link:/mem[Microsoft Endpoint Manager] to manage your organization's threat protection features for devices (also referred to as endpoints).
+Endpoint Manager includes link:/mem/intune/fundamentals/what-is-intune[Microsoft Intune] and link:/mem/configmgr/core/understand/introduction[Microsoft Endpoint Configuration Manager].
+
+* link:/mem/endpoint-manager-overview[Learn more about Endpoint Manager]
+* xref:manage-mde-post-migration-intune.adoc[Co-manage Microsoft Defender for Endpoint on Windows 10 and Windows 11 devices with Configuration Manager and Intune]
+* xref:manage-mde-post-migration-intune.adoc[Manage Microsoft Defender for Endpoint with Intune]
+____
+
+You can manage some Microsoft Defender Antivirus settings on devices with <<configure-microsoft-defender-for-endpoint-with-powershell,PowerShell>>,  <<configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi,Windows Management Instrumentation>> (WMI), and the <<configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe,Microsoft Malware Protection Command Line Utility>> (MPCmdRun.exe).
+For example, you can manage some Microsoft Defender Antivirus settings.
+And, in some cases, you can customize your attack surface reduction rules and exploit protection settings.
+
+____
+[!IMPORTANT] Threat protection features that you configure by using PowerShell, WMI, or MCPmdRun.exe can be overwritten by configuration settings that are deployed with Intune or Configuration Manager.
+____
+
+=== Configure Microsoft Defender for Endpoint with PowerShell
+
+You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.
+
+|===
+| Task | Resources to learn more
+
+| *Manage Microsoft Defender Antivirus* +  + View status of antimalware protection, configure preferences for antivirus scans & updates, and make other changes to your antivirus protection.*
+| link:/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus[Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus] +  + link:/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection[Use PowerShell cmdlets to enable cloud-delivered protection]
+
+| *Configure exploit protection* to mitigate threats on your organization's devices +  + _We recommend using exploit protection in link:/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell[audit mode] at first.
+That way, you can see how exploit protection affects apps your organization is using._
+| link:/microsoft-365/security/defender-endpoint/customize-exploit-protection[Customize exploit protection] +  + link:/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference[PowerShell cmdlets for exploit protection]
+
+| *Configure attack surface reduction rules* with PowerShell +  + _You can use PowerShell to exclude files and folders from attack surface reduction rules._
+| link:/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction[Customize attack surface reduction rules: Use PowerShell to exclude files & folders] +  + Also, see https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI[António Vasconcelo's graphical user interface tool for setting attack surface reduction rules with PowerShell].
+
+| *Enable Network Protection* with PowerShell +  + _You can use PowerShell to enable Network Protection._
+| link:/microsoft-365/security/defender-endpoint/enable-network-protection#powershell[Turn on Network Protection with PowerShell]
+
+| *Configure controlled folder access* to protect against ransomware +  + _link:/microsoft-365/security/defender-endpoint/controlled-folders[Controlled folder access] is also referred to as antiransomware protection._
+| link:/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell[Enable controlled folder access with PowerShell]
+
+| *Configure Microsoft Defender Firewall* to block unauthorized network traffic flowing into or out of your organization's devices
+| link:/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell[Microsoft Defender Firewall with Advanced Security Administration using Windows PowerShell]
+
+| *Configure encryption and BitLocker* to protect information on your organization's devices running Windows
+| link:/powershell/module/bitlocker/[BitLocker PowerShell reference guide]
+|===
+
+=== Configure Microsoft Defender for Endpoint with Windows Management Instrumentation (WMI)
+
+WMI is a scripting interface that allows you to retrieve, modify, and update settings.
+To learn more, see link:/windows/win32/wmisdk/using-wmi[Using WMI].
++  +
+
+|===
+| Task | Resources to learn more
+
+| *Enable cloud-delivered protection* on a device
+| link:/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection[Use Windows Management Instruction (WMI) to enable cloud-delivered protection]
+
+| *Retrieve, modify, and update settings* for Microsoft Defender Antivirus
+| [Use WMI to configure and manage Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus +  + link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[Review the list of available WMI classes and example scripts] +  + Also see the archived link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN[Windows Defender WMIv2 Provider reference information]
+|===
+
+=== Configure Microsoft Defender for Endpoint with Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)
+
+On an individual device, you can run a scan, start diagnostic tracing, check for security intelligence updates, and more using the mpcmdrun.exe command-line tool.
+You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`.
+Run it from a command prompt.
+
+To learn more, see link:/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus[Configure and manage Microsoft Defender Antivirus with mpcmdrun.exe].
+
+=== Configure your Microsoft 365 Defender portal
+
+If you haven't already done so, configure your https://go.microsoft.com/fwlink/p/?linkid=2077139[Microsoft 365 Defender portal] to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.
+
+You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
+
+* link:/microsoft-365/security/defender-endpoint/use[Overview of the Microsoft Defender Security Center]
+* link:/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center[Endpoint protection: Microsoft Defender Security Center]
+
+=== Next steps
+
+* link:/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt[Get an overview of Defender Vulnerability Management]
+* xref:manage-mde-post-migration-intune.adoc[Manage Microsoft Defender for Endpoint with Intune]

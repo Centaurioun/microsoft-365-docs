@@ -1,0 +1,59 @@
+= Feature update validation
+:audience: Software-Vendor
+:author: mansipatel-usl
+:description: Details on how to upload your application for feature update validation
+:f1.keywords: NOCSH
+:manager: rshastri
+:ms.author: tinachen
+:ms.collection: TestBase-M365
+:ms.custom:
+:ms.date: 07/06/2021
+:ms.localizationpriority: medium
+:ms.reviewer: tinachen
+:ms.service: test-base
+:ms.topic: how-to
+:search.appverid: MET150
+
+== Windows Feature update validation
+
+Do you need insights on how your applications will perform with the next release of Windows 10 or Windows 11 - without you maintaining an environment to validate new Windows features?
+
+Do you want to run your validation tests against Windows Insider Program builds in our Azure environment?
+
+*Feature update* validation on Test Base for M365 can help you achieve all these and more!
+
+Check out the step-by-step outline below to find out how to access this new capability in Test Base for M365 service.
+
+To get started with `Feature update validation` in Test Base for M365, upload your applications (and related files) through the self-service onboarding portal.
+
+Highlighted below are the steps to take as you fill out the *Test details*:
+
+. Select *Feature Update* as your OS update type:
+
+image::Media/Feature-update-validation-01.png[Feature update validation OS type.]
+
+. Choose the Windows Insider Channel against which you want your application validated.
+
+image::Media/Feature-update-validation-02.png[Feature update validation.
+Choosing the Insider beta channel.]
+
+. Select an in-market release of Windows 10 or Windows 11 as the baseline for your test (and resulting insights!) and provide the other details required to onboard your package successfully.
+
+image::Media/Feature-update-validation-03.png[Feature update validation with released versions of Windows 10 and Windows 11.]
+
+. To view the results from the validation of your application against pre-released Windows 10 feature updates, visit the `Feature Updates Test Results`.
+
+image::Media/Feature-update-validation-04.png[Feature update validation allows you to review results quickly.]
+
+=== Next steps
+
+Advance to the next article to get started with understanding Memory regression analysis.
+
+____
+[!div class="nextstepaction"] xref:memory.adoc[Next step]
+____
+
+////
+-
+Add button for next page
+////

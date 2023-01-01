@@ -1,0 +1,77 @@
+= Learn about the Microsoft Purview Extension
+:audience: ITPro
+:author: chrfox
+:description: The Microsoft Purview Extension extends monitoring and control of file activities and protective actions to the Google Chrome browser
+:f1.keywords: ["CSH"]
+:f1_keywords: ["ms.o365.cc.DLPLandingPage"]
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance", "m365solution-mip", "m365initiative-compliance"]
+:ms.date:
+:ms.localizationpriority: high
+:ms.service: O365-seccomp
+:ms.topic: conceptual
+:search.appverid: ["MET150"]
+
+== Learn about the Microsoft Purview Extension
+
+xref:endpoint-dlp-learn-about.adoc[Endpoint data loss prevention (endpoint DLP)] extends the activity monitoring and protection capabilities of xref:dlp-learn-about-dlp.adoc[Microsoft Purview data loss prevention (DLP)] to sensitive items that are on Windows 10 devices.
+Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in xref:data-classification-activity-explorer.adoc[activity explorer] and you can enforce protective actions on those items via xref:create-test-tune-dlp-policy.adoc[DLP policies].
+
+Once the Extension is installed on a Windows 10 device, organizations can monitor when a user attempts to access or upload a sensitive item to a cloud service using Google Chrome and enforce protective actions via DLP.
+
+=== Activities you can monitor and take action on
+
+The extension enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
+
+|===
+| activity | description | supported policy actions |
+
+|
+| file copied to cloud
+| Detects when a user attempts to upload a sensitive item to a restricted service domain through the Chrome browser
+| audit, block with override, block
+
+|
+| file printed
+| Detects when a user attempts to print a sensitive item that is open in the Chrome browser to a local or network printer
+| audit, block with override, block
+
+|
+| file copied to clipboard
+| Detects when a user attempts to copy information from a sensitive item that is being viewed in the Chrome browser and then paste it into another app, process, or item.
+| audit, block with override, block
+
+|
+| file copied to removable storage
+| Detects when a user attempts to copy a sensitive item or information from a sensitive item that is open in the Chrome browser to removable media or USB device
+| audit, block with override, block
+
+|
+| file copied to network share
+| Detects when a user attempts to copy a sensitive item or information from a sensitive item that is open in the Chrome browser  to a network share or mapped network drive.
+| audit, block with override, block
+|===
+
+=== Deployment process
+
+. xref:endpoint-dlp-getting-started.adoc[Get started with endpoint data loss prevention]
+. xref:device-onboarding-overview.adoc[Onboarding tools and methods for Windows 10 devices]
+. xref:dlp-chrome-get-started.adoc[Install the extension on your Windows 10 devices]
+. xref:create-test-tune-dlp-policy.adoc[Create or edit DLP policies] that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10 devices
+
+=== Next steps
+
+See xref:dlp-chrome-get-started.adoc[Get started with the Microsoft Purview Extension] for complete deployment procedures and scenarios.
+
+=== See also
+
+* xref:dlp-chrome-get-started.adoc[Get started with Microsoft Purview Extension]
+* xref:endpoint-dlp-learn-about.adoc[Learn about Endpoint data loss prevention]
+* xref:endpoint-dlp-getting-started.adoc[Getting started with Endpoint data loss prevention]
+* xref:endpoint-dlp-using.adoc[Using Endpoint data loss prevention]
+* xref:dlp-learn-about-dlp.adoc[Learn about data loss prevention]
+* xref:create-test-tune-dlp-policy.adoc[Create, test, and tune a DLP policy]
+* xref:data-classification-activity-explorer.adoc[Get started with Activity explorer]
+* link:/windows/security/threat-protection/[Microsoft Defender for Endpoint]
+* xref:insider-risk-management.adoc[Insider risk management]

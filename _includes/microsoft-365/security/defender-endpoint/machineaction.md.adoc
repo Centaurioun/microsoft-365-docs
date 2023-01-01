@@ -1,0 +1,201 @@
+= machineAction resource type
+:audience: ITPro
+:author: mjcaparas
+:description: Learn about the methods and properties of the MachineAction resource type in Microsoft Defender for Endpoint.
+:keywords: apis, supported apis, get, machineaction, recent
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== MachineAction resource type
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+* For more information, see xref:respond-machine-alerts.adoc[Response Actions].
+
+|===
+| Method | Return Type | Description
+
+| xref:get-machineactions-collection.adoc[List MachineActions]
+| xref:machineaction.adoc[Machine Action]
+| List xref:machineaction.adoc[Machine Action] entities.
+
+| xref:get-machineaction-object.adoc[Get MachineAction]
+| xref:machineaction.adoc[Machine Action]
+| Get a single xref:machineaction.adoc[Machine Action] entity.
+
+| xref:collect-investigation-package.adoc[Collect investigation package]
+| xref:machineaction.adoc[Machine Action]
+| Collect investigation package from a xref:machine.adoc[machine].
+
+| xref:get-package-sas-uri.adoc[Get investigation package SAS URI]
+| xref:machineaction.adoc[Machine Action]
+| Get URI for downloading the investigation package.
+
+| xref:isolate-machine.adoc[Isolate machine]
+| xref:machineaction.adoc[Machine Action]
+| Isolate xref:machine.adoc[machine] from network.
+
+| xref:unisolate-machine.adoc[Release machine from isolation]
+| xref:machineaction.adoc[Machine Action]
+| Release xref:machine.adoc[machine] from Isolation.
+
+| xref:restrict-code-execution.adoc[Restrict app execution]
+| xref:machineaction.adoc[Machine Action]
+| Restrict application execution.
+
+| xref:unrestrict-code-execution.adoc[Remove app restriction]
+| xref:machineaction.adoc[Machine Action]
+| Remove application execution restriction.
+
+| xref:run-av-scan.adoc[Run antivirus scan]
+| xref:machineaction.adoc[Machine Action]
+| Run an AV scan using Windows Defender (when applicable).
+
+| xref:offboard-machine-api.adoc[Offboard machine]
+| xref:machineaction.adoc[Machine Action]
+| Offboard xref:machine.adoc[machine] from Microsoft Defender for Endpoint.
+
+| xref:stop-and-quarantine-file.adoc[Stop and quarantine file]
+| xref:machineaction.adoc[Machine Action]
+| Stop execution of a file on a machine and delete it.
+
+| xref:run-live-response.adoc[Run live response]
+| xref:machineaction.adoc[Machine Action]
+| Runs a sequence of live response commands on a device
+
+| xref:get-live-response-result.adoc[Get live response result]
+| URL entity
+| Retrieves specific live response command result download link by its index.
+
+| xref:cancel-machine-action.adoc[Cancel machine action]
+| xref:machineaction.adoc[Machine Action]
+| Cancel an active machine action.
+|===
+
+{blank} +
+
+=== Properties
+
+|===
+| Property | Type | Description
+
+| ID
+| Guid
+| Identity of the xref:machineaction.adoc[Machine Action] entity.
+
+| type
+| Enum
+| Type of the action.
+Possible values are: "RunAntiVirusScan", "Offboard", "Live Response", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution", and "UnrestrictCodeExecution".
+
+| scope
+| string
+| Scope of the action.
+"Full" or "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.
+
+| requestor
+| String
+| Identity of the person that executed the action.
+
+| externalID
+| String
+| Id the customer can submit in the request for custom correlation.
+
+| requestSource
+| string
+| The name of the user/application that submitted the action.
+
+| commands
+| array
+| Commands to run.
+Allowed values are PutFile, RunScript, GetFile.
+
+| cancellationRequestor
+| String
+| Identity of the person that canceled the action.
+
+| requestorComment
+| String
+| Comment that was written when issuing the action.
+
+| cancellationComment
+| String
+| Comment that was written when canceling the action.
+
+| status
+| Enum
+| Current status of the command.
+Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut", and "Cancelled".
+
+| machineId
+| String
+| ID of the xref:machine.adoc[machine] on which the action was executed.
+
+| computerDnsName
+| String
+| Name of the xref:machine.adoc[machine] on which the action was executed.
+
+| creationDateTimeUtc
+| DateTimeOffset
+| The date and time when the action was created.
+
+| cancellationDateTimeUtc
+| DateTimeOffset
+| The date and time when the action was canceled.
+
+| lastUpdateDateTimeUtc
+| DateTimeOffset
+| The last date and time when the action status was updated.
+
+| title
+| String
+| Machine action title.
+
+| relatedFileInfo
+| Class
+| Contains two Properties.
+string `fileIdentifier`, Enum `fileIdentifierType` with the possible values: "Sha1", "Sha256", and "Md5".
+|===
+
+=== Json representation
+
+[,json]
+----
+{
+        "id": "5382f7ea-7557-4ab7-9782-d50480024a4e",
+        "type": "Isolate",
+        "scope": "Selective",
+        "requestor": "Analyst@TestPrd.onmicrosoft.com",
+        "requestorComment": "test for docs",
+        "status": "Succeeded",
+        "machineId": "7b1f4967d9728e5aa3c06a9e617a22a4a5a17378",
+        "computerDnsName": "desktop-test",
+        "creationDateTimeUtc": "2019-01-02T14:39:38.2262283Z",
+        "lastUpdateDateTimeUtc": "2019-01-02T14:40:44.6596267Z",
+        "relatedFileInfo": null
+}
+----

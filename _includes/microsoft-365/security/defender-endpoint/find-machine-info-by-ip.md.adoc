@@ -1,0 +1,120 @@
+= Find device information by internal IP API
+:audience: ITPro
+:author: mjcaparas
+:description: Use this API to create calls related to finding a device entry around a specific timestamp by internal IP.
+:keywords: ip, apis, graph api, supported apis, find device, device information
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Find device information by internal IP API
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+Find a device by internal IP.
+
+____
+[!NOTE] The timestamp must be within the last 30 days.
+____
+
+=== Permissions
+
+One of the following permissions is required to call this API.
+To learn more, including how to choose permissions, see xref:apis-intro.adoc[Use Microsoft Defender for Endpoint APIs]
+
+|===
+| Permission type | Permission | Permission display name
+
+| Application
+| Machine.Read.All
+| 'Read all machine profiles'
+
+| Application
+| Machine.ReadWrite.All
+| 'Read and write all machine information'
+|===
+
+=== HTTP request
+
+[,http]
+----
+GET /api/machines/find(timestamp={time},key={IP})
+----
+
+=== Request headers
+
+|===
+| Name | Type | Description
+
+| Authorization
+| String
+| Bearer \{token}.
+*Required*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful and machine exists - 200 OK.
+If no machine found - 404 Not Found.
+
+=== Example
+
+==== Request example
+
+Here's an example of the request.
+
+[,http]
+----
+GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.166.93.61')
+Content-type: application/json
+----
+
+==== Response example
+
+Here's an example of the response.
+
+The response will return a list of all devices that reported this IP address within 16 minutes prior and after the timestamp.
+
+[,json]
+----
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#Machines",
+    "value": [
+        {
+            "id": "04c99d46599f078f1c3da3783cf5b95f01ac61bb",
+            "computerDnsName": "",
+            "firstSeen": "2017-07-06T01:25:04.9480498Z",
+            "osPlatform": "Windows10",
+...
+}
+----

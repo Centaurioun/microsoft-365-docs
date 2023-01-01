@@ -1,0 +1,27 @@
+= Microsoft 365 community resources for PowerShell
+:audience: ITPro
+:author: kelleyvice-msft
+:description: This article provides community resources to connect to your peers and get help for PowerShell for Microsoft 365.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
+:ms.author: kvice
+:ms.collection: Ent_O365
+:ms.custom: ["Ent_Office_Other", "seo-marvel-apr2020"]
+:ms.date: 07/17/2020
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: landing-page
+
+== Microsoft 365 community resources for PowerShell
+
+Connect to these communities to reach your peers and get answers for your PowerShell for Microsoft 365 questions.
+
+* https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365[Microsoft 365 Microsoft Tech Community]
+* https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral[Exchange Server TechNet community forum]
+
+=== See also
+
+xref:manage-microsoft-365-with-microsoft-365-powershell.adoc[Manage Microsoft 365 with PowerShell]
+
+xref:getting-started-with-microsoft-365-powershell.adoc[Get started with PowerShell for Microsoft 365]

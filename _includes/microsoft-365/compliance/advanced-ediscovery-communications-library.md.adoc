@@ -1,0 +1,69 @@
+= Manage custodian communications templates in the Communications library in eDiscovery (Premium)
+:audience: Admin
+:author: robmazz
+:description: You can add custodian communications templates (such as a template for hold notification) in eDiscovery (Premium) so they can be used in any case in your organization.
+:experimental:
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance", "ediscovery"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MOE150", "MET150"]
+
+== Manage custodian communications templates in eDiscovery (Premium)
+
+When you or other users create a hold notification or other types of custodian communications, you had to create the communication document from scratch by using the communications editor on the *Communications* tab in an eDiscovery (Premium) case.
+Now, we've released a new feature that lets you create communications templates that can be used to create communications in any case in your organization.
+After communication templates are created, they're available to be used in a case.
+This means that paralegals or other users who create custodian communications don't have to start from scratch to build a notification.
+Instead, they can select a template to build the notification that is sent to a custodian.
+
+This article explains how to create organization-wide communications templates and select them when creating a new custodian notification for a specific eDiscovery (Premium) case.
+
+=== Before you create templates in the Communications library
+
+* You must be an eDiscovery Administrator in your organization to add or remove templates in the Communications library in eDiscovery (Premium).
+For more information, see xref:assign-ediscovery-permissions.adoc[Assign eDiscovery permissions in the Microsoft Purview compliance portal]
+* Your organization can have a maximum of 50 templates in the Communications library.
+
+=== Create a communications template
+
+. In the compliance portal, go to https://go.microsoft.com/fwlink/p/?linkid=2173764[eDiscovery (Premium)], and then click *eDiscovery (Premium) settings*.
++
+image::..\media\HistoricalVersions1.png[Select eDiscovery (Premium) settings]
+
+. On the *Settings* page, select the *Communications library* tab.
+. On the *Communications library* page, click *Create*.
+. Follow the procedure to create a custodian communication.
+For step-by-step instructions, see xref:create-hold-notification.adoc[Create a legal hold notification].
++
+____
+[!NOTE] The steps to create a communications template are the same as the workflow to create a notification within a case.
+The only difference is that when you create a template, you don't specify an issuing officer and you don't assign custodians.
+Specifying an issuing officer and assigning custodians is done when you use a communications template to create a custodian notification for a case.
+____
+
+. After you create a template, it's displayed on the *Communications library* page.
++
+image::..\media\AeDCommunicationsLibrary1.png[Templates displayed in Communications library]
+
+You or other eDiscovery Administrators can edit a communications template.
+Any changes that you make to a template don't affect or modify any notifications that were previously created using that template.
+These changes will only apply to new notifications that created using the updated template.
+
+=== Use a communications template to create a custodian notification
+
+After one or more communications templates are created in the Communications library, these templates can be selected to create a custodian notification in a case.
+
+To select a template:
+
+. In the compliance portal, go to menu:eDiscovery[Advanced] to display the list of cases in your organization.
+. Select a case, click the *Communications* tab, and then click *New communication*.
+. On the *Name communication* page, use the *Select communication template* drop-down list to select a communications template to use to create the custodian notification.
++
+The list of templates in your organization's Communication library is displayed in the drop-down list.
++
+image::..\media\AeDCommunicationsTemplates1.png[Templates from Communications library displayed in the drop-down list.]

@@ -1,0 +1,50 @@
+= Reactivate your subscription
+:audience: Admin
+:author: cmcatee-MSFT
+:description: Admins can reactivate a subscription when it expires, is disabled, or canceled, or if you canceled in the middle of a subscription term.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.author: cmcatee
+:ms.collection: ["M365-subscription-management", "Adm_O365"]
+:ms.custom: ["commerce_subscriptions", "TopSMBIssues", "fwlink 874703", "AdminSurgePortfolio", "AdminTemplateSet"]
+:ms.date: 04/07/2021
+:ms.localizationpriority: medium
+:ms.reviewer: sgautam, jmueller
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: MET150
+
+== Reactivate your Microsoft subscription
+
+You can reactivate your subscription in the admin center if: the subscription expired, was disabled by Microsoft, or if you canceled it in the middle of a subscription term.
+
+=== Before you begin
+
+You must be a Global or Billing admin to reactivate a subscription.
+For more information, see xref:../../admin/add-users/about-admin-roles.adoc[About admin roles].
+
+*Not an admin?* Contact your administration to reactivate your subscription.
+
+=== Reactivate a subscription
+
+::: moniker range="o365-worldwide"
+
+. In the admin center, go to the *Billing* > https://go.microsoft.com/fwlink/p/?linkid=842054[Your products] page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+. In the admin center, go to the *Billing* > https://go.microsoft.com/fwlink/p/?linkid=850626[Your products] page.
+
+::: moniker-end
+
+. On the *Products* tab, find the subscription that you want to reactivate.
+Select the three dots (more actions), then select *Reactivate this subscription*.
++  If you don't see *Reactivate this subscription*, xref:../../admin/get-help-support.adoc[contact support].
+. In the *Reactivate this subscription* pane, select a payment method from the drop-down list, or select *Add payment method*.
+. Select *Save*.
+
+=== Related content
+
+xref:../try-or-buy-microsoft-365.adoc[Try or buy a Microsoft 365 for business subscription] (article) + xref:renew-your-subscription.adoc[Renew Microsoft 365 for business] (article) + xref:cancel-your-subscription.adoc[Cancel your subscription] (article)

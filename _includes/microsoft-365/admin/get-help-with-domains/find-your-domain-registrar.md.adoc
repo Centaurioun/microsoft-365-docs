@@ -1,0 +1,51 @@
+= Find your domain registrar
+:audience: Admin
+:author: efrene
+:description: Learn to find your domain registrar and DNS hosting provider using InterNIC search.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
+:ms.author: efrene
+:ms.collection: ["highpri", "M365-subscription-management", "Adm_O365", "Adm_O365_Setup"]
+:ms.custom: ["VSBFY23", "AdminSurgePortfolio"]
+:ms.localizationpriority: high
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150", "GEA150"]
+
+== Find your domain registrar
+
+*link:../setup/domains-faq.yml[Check the Domains FAQ]* if you don't find what you're looking for.
+
+=== Domain registrar
+
+==== Find your domain name registrar
+
+____
+[!NOTE] Only domains ending in _.COM_, _.NET_, and _.EDU_ work with this tool.
+____
+
+. On the https://go.microsoft.com/fwlink/p/?LinkId=402770[InterNIC search page], in the *Whois Search* box, type your domain.
+For example,  _contoso.com._
+. Select the *Domain* option, and then select *Submit*.
+. On the *Whois Search Results* page, locate the *Registrar* entry.
+This entry lists the organization that provides registrar service for your domain.
+
+=== DNS hosting provider
+
+==== Find your DNS hosting provider
+
+____
+[!NOTE] Only domains ending in _.COM_, _.NET_, and _.EDU_ work with this tool.
+____
+
+. On the https://go.microsoft.com/fwlink/p/?LinkId=402770[InterNIC search page], in the *Whois Search* box, type your domain.
+For example, contoso.com.
+. Select the *Domain* option, and then select *Submit*.
+. On the *Whois Search Results* page, locate the first *Name Server* entry.
+. Copy the name server (NS) information that appears after the colon (:), and then paste it into the *Search* box at the top of the page.
+Select *Nameserver*, and then select *Submit*.
+. On the *Whois Search Results* page, locate the *Registrar* entry.
+This entry lists your DNS hosting provider, the DNS provider who owns the name server for your domain.
+
+'''

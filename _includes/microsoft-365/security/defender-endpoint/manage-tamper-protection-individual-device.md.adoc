@@ -1,0 +1,60 @@
+= Manage tamper protection on an individual device
+:audience: ITPro
+:author: denisebmsft
+:description: Turn tamper protection on or off for an individual device.
+:keywords: malware, defender, antivirus, tamper protection
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection: ["M365-security-compliance", "m365initiative-defender-endpoint"]
+:ms.custom: ["nextgen", "admindeeplinkDEFENDER"]
+:ms.localizationpriority: medium
+:ms.mktglfcycl: manage
+:ms.pagetype: security
+:ms.reviewer: mattcall, pahuijbr, hayhov, oogunrinde
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Manage tamper protection on an individual device
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms*
+
+* Windows
+
+____
+[!NOTE] Tamper protection blocks attempts to modify Microsoft Defender Antivirus settings through the registry.
+To help ensure that tamper protection doesn't interfere with non-Microsoft security products or enterprise installation scripts that modify these settings, go to *Windows Security* and update *Security intelligence* to version 1.287.60.0 or later.
+(See https://www.microsoft.com/wdsi/definitions[Security intelligence updates].) After you've made this update, tamper protection continues to protect your registry settings, and logs attempts to modify them without returning errors.
+____
+
+If you're a home user, or you aren't subject to settings managed by a security team, you can use the Windows Security app to manage tamper protection.
+You must have appropriate admin permissions on your device to do change security settings, such as tamper protection.
+
+Here's what you see in the Windows Security app:
+
+:::image type="content" source="images/tamperprotectionturnedon.png" alt-text="Turn tamper protection turned on in Windows 10 Home" lightbox="images/tamperprotectionturnedon.png":::
+
+. Select *Start*, and start typing _Security_.
+In the search results, select *Windows Security*.
+. Select *Virus & threat protection* > *Virus & threat protection settings*.
+. Set *Tamper Protection* to *On* or *Off*.
+
+____
+[!TIP] If you're looking for Antivirus related information for other platforms, see:
+
+* xref:mac-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on macOS]
+* xref:microsoft-defender-endpoint-mac.adoc[Microsoft Defender for Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* xref:linux-preferences.adoc[Set preferences for Microsoft Defender for Endpoint on Linux]
+* xref:microsoft-defender-endpoint-linux.adoc[Microsoft Defender for Endpoint on Linux]
+* xref:android-configure.adoc[Configure Defender for Endpoint on Android features]
+* xref:ios-configure-features.adoc[Configure Microsoft Defender for Endpoint on iOS features]
+____

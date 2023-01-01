@@ -1,0 +1,113 @@
+= Microsoft Purview compliance portal
+:audience: ITPro
+:author: robmazz
+:description: Learn about the Microsoft Purview compliance portal, including what it contains, how to get it, and your next steps.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance"]
+:ms.custom: ["admindeeplinkCOMPLIANCE", "intro-overview"]
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+
+== Microsoft Purview compliance portal
+
+If you're interested in your organization's compliance posture, you're going to love the https://go.microsoft.com/fwlink/p/?linkid=2077149[Microsoft Purview compliance portal].
+The Microsoft Purview compliance portal provides easy access to the data and tools you need to manage to your organization's compliance needs.
+
+Read this article to get acquainted with the compliance portal, <<how-do-i-access-the-compliance-portal,how to access it>>, and your <<next-steps,next steps>>.
+
+image::../media/m365-compliance-center-home.png[Microsoft Purview compliance portal home page.,link=https://compliance.microsoft.com]
+
+=== Welcome to Microsoft Purview
+
+When you go to the compliance portal for the first time, you're greeted with the following welcome message:
+
+image::../media/m365-compliance-center-welcome-steps.png[Microsoft Purview compliance portal intro.]
+
+The welcome banner gives you some pointers on how to get started, with next steps, and an invitation for you to give us feedback.
+
+=== Card section
+
+When you first visit the compliance portal, the card section on the home page shows you at a glance how your organization is doing with data compliance, what solutions are available for your organization, and a summary of any active alerts.
+
+From here, you can:
+
+* Review the *Microsoft Purview Compliance Manager* card, which leads you to the xref:compliance-manager.adoc[Compliance Manager] solution.
+Compliance Manager helps simplify the way you manage compliance.
+It calculates a risk-based score measuring your progress toward completing recommended actions that help reduce risks around data protection and regulatory standards.
+It also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
++
+image::../media/m365-compliance-center-compliance-manager-card.png[Compliance Manager card Microsoft Purview compliance portal.]
+
+* Review the new *Solution catalog* card, which links to collections of xref:microsoft-365-solution-catalog.adoc[integrated solutions] you can use to help you manage end-to-end compliance scenarios.
+A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
++
+image::../media/m365-compliance-center-solution-catalog-card.png[Solution catalog card Microsoft Purview compliance portal.]
+
+* Review the *Active alerts* card, which includes a summary of the most xref:alert-policies.adoc[active alerts] and includes a link where you can view more detailed information, such as Severity, Status, Category, and more.
++
+image::../media/m365-compliance-center-active-alerts-card.png[Active alerts card Microsoft Purview compliance portal.]
+
+You can also use the *Add cards* feature to add additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to link:/cloud-app-security/[Defender for Cloud Apps] or other tools where you can explore data.
+
+image::../media/m365-compliance-center-additional-cards.png[Additional compliance center card details.]
+
+=== Easy navigation to more compliance features and capabilities
+
+In addition to links in cards on the home page, you'll see a navigation pane on the left side of the screen that gives you easy access to your xref:../security/office-365-security/alerts.adoc[alerts], xref:reports-in-security-and-compliance.adoc[reports], xref:alert-policies.adoc[policies], compliance solutions, and more.
+To add or remove options for a customized navigation pane, use the *Customize navigation* control on the navigation pane.
+This opens the *Customize your navigation pane* settings so you can configure which items appear in the navigation pane.
+
+{blank} +
+
+'''
+
+|===
+| Navigation | Comments
+
+| image:../media/m365-compliance-center-leftnav.png[Navigation in the Microsoft Purview compliance portal.]
+| Select *Home* to return to the compliance portal main page.
+<p> Visit *Compliance Manager* to check your compliance score and start xref:compliance-manager.adoc[managing compliance] for your organization.
+<p> Select the *Data classification* section to access xref:classifier-learn-about.adoc[trainable classifiers], xref:sensitive-information-type-entity-definitions.adoc[Sensitive information type entity definitions], content and xref:data-classification-activity-explorer.adoc[activity] explorers.
+<p> Select *Data connectors* to xref:archiving-third-party-data.adoc[configure connectors] to import and archive data in your Microsoft 365 subscription.
+<p> Go to *Alerts* to view and resolve xref:alert-policies.adoc[alerts] <p>Visit *Reports* to view data about xref:sensitivity-labels.adoc[label usage and retention], xref:view-the-dlp-reports.adoc[DLP policy matches and overrides], link:/cloud-app-security/file-filters[shared files], link:/cloud-app-security/discovered-apps[third-party apps in use], and more.
+<p> Go to *Policies* to set up policies to govern data, manage devices, and receive xref:../security/office-365-security/alerts.adoc[alerts].
+You can also access your xref:dlp-learn-about-dlp.adoc[DLP] and xref:retention.adoc[retention] policies.
+<p> Select *Permissions* to manage who in your organization has access to the compliance portal to view content and complete tasks.
+<p> Use the links in the *Solutions* section to access your organization's compliance solutions.
+These include: <p> xref:microsoft-365-solution-catalog.adoc[Catalog] + Discover, learn about, and start using the intelligent compliance and risk management solutions available to your organization.
+<p> xref:search-the-audit-log-in-security-and-compliance.adoc[Audit] + Use the Audit log to investigate common support and compliance issues.
+<p> xref:search-for-content.adoc[Content search] + Use Content search to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Microsoft Teams and Skype for Business.
+<p> xref:communication-compliance.adoc[Communication compliance] + Minimize communication risks by automatically capturing inappropriate messages, investigating possible policy violations, and taking steps to remediate.
+<p> xref:dlp-learn-about-dlp.adoc[Learn about Microsoft Purview Data Loss Prevention] + Detect sensitive content as it's used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss.
+<p> link:/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool[Data subject requests] + Find and export a user's personal data to help you respond to data subject requests for the General Data Protection Regulation (GDPR).
+<p> xref:overview-ediscovery-20.adoc[eDiscovery] + Expand this section to use the core and eDiscovery (Premium) for preserving, collecting, reviewing, analyzing, and exporting content that's responsive to your organization's internal and external investigations.
+<p> xref:manage-data-governance.adoc[Data lifecycle management] + Manage the lifecycle of sensitive data by using features to import, store, and classify business-critical data so you can keep what you need and delete what you don't.
+<p> xref:information-protection.adoc[Information protection] + Discover, classify, and protect sensitive and business-critical data throughout its lifecycle across your organization.
+<p> xref:insider-risk-management.adoc[Insider risk management] + Detect risky activity across your organization to help you quickly identify, investigate, and take action on insider risks and threats.
+<p> xref:records-management.adoc[Records management] + Manage retention and deletion of high-value items for business, legal, or regulatory record-keeping requirements.
+
+|
+|
+|===
+
+=== How do I access the compliance portal?
+
+To access the compliance portal, go to https://compliance.microsoft.com and sign in as a global administrator, compliance administrator, or compliance data administrator.
+
+=== Next steps
+
+* *Visit Microsoft Purview Compliance Manager* to see your compliance score and start managing compliance for your organization.
+To learn more, see xref:compliance-manager.adoc[Compliance Manager].
+* *Configure insider risk management policies* to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization.
+See xref:insider-risk-management.adoc[Learn about insider risk management].
+* *Review your organization's data loss prevention policies* and make required changes as necessary.
+To learn more about, see xref:dlp-learn-about-dlp.adoc[Learn about data loss prevention].
+* *Get acquainted with and set up Microsoft Defender for Cloud Apps*.
+See link:/cloud-app-security/getting-started-with-cloud-app-security[Quickstart: Get started with Microsoft Defender for Cloud Apps].
+* *Learn about and create communication compliance policies* to quickly identify and remediate corporate code-of-conduct policy violations.
+See xref:communication-compliance.adoc[Learn about communication compliance].
+* *Visit your compliance portal often*, and make sure to review any alerts or potential risks that arise.
+Go to https://compliance.microsoft.com and sign in.

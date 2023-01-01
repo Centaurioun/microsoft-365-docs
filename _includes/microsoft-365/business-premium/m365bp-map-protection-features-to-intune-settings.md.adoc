@@ -1,0 +1,168 @@
+= How do protection features in Microsoft 365 Business Premium map to Intune settings
+:audience: Admin
+:author: denisebmsft
+:description: Learn how protection features in Microsoft 365 Business Premium map to Intune settings. The subscription provides you with a license to modify Intune settings.
+:f1.keywords: ["NOCSH"]
+:manager: dansimp
+:ms.author: deniseb
+:ms.collection:
+:ms.custom: ["MiniMaven"]
+:ms.date: 09/15/2022
+:ms.localizationpriority: high
+:ms.service: microsoft-365-security
+:ms.subservice: other
+:ms.topic: conceptual
+:search.appverid: ["BCS160", "MET150"]
+
+== How do protection features in Microsoft 365 Business Premium map to Intune settings
+
+=== Android and iOS application protection settings
+
+The following table details how the Android and iOS application policy settings map to Intune settings.
+
+To find the Intune setting, sign in with your Microsoft 365 Business Premium admin credentials, and go to *Admin centers*, and then *Intune*.
+
+____
+[!IMPORTANT]
+
+A Microsoft 365 Business Premium subscription gives you a license to modify all the Intune settings.
+See link:/intune/introduction-intune[Introduction to Intune to get started.]
+____
+
+Select the Policy name you want &mdash;
+for example, Application policy for Android &mdash;
+and then choose *Policy settings*.
+
+Under *Protect work files when devices are lost or stolen*
+
+|===
+| *Android or iOS application policy setting* | *Intune setting(s)*
+
+| Delete work files from an inactive device after
+| Offline interval (days) before app data is wiped
+
+| Force users to save work files to OneDrive for Business  + Note that only OneDrive for Business is allowed
+| Select which storage services corporate data can be saved to
+|===
+
+Under *Manage how user access Office files in mobile devices*
+
+|===
+| *Android or iOS application policy setting* | *Intune setting(s)*
+
+| Delete work files from an inactive device after
+| Offline interval (days) before app data is wiped
+
+| Force users to save work files to OneDrive for Business  + Note that only OneDrive for Business is allowed
+| Select which storage services corporate data can be saved to
+
+| Encrypt work files
+| Encrypt app data
+
+| Under *Manage how user access Office files in mobile devices*
+|
+
+| Require a PIN or fingerprint to access Office apps
+| Require PIN to access  + This also sets:  + *Allow simple PIN* to *Yes* + *Pin Length* to 4  + *Allow fingerprint instead of PIN* to *Yes* + *Disable app PIN when device PIN is managed* to *No*
+
+| Reset PIN when login fails this many times (this is disabled if PIN isn't required)
+| Number of attempts before PIN reset
+
+| Require users to sign in again after Office apps have been idle for (this is disabled if PIN isn't required)
+| Recheck the access requirements after (minutes)  + This also sets:  + *Timeout* is set to minutes  + This is same number of minutes you set in Microsoft 365 Business.
++ *Offline grace period* is set to 720 minutes by default
+
+| Deny access to work files on jailbroken or rooted devices
+| Block managed apps from running on jailbroken or rooted devices
+
+| Allow users to copy content from Office apps into personal apps
+| Restrict cut, copy, and paste with other apps  + If the Microsoft 365 Business Premium option is set to *On*, then these three options are also set to *All Apps* in Intune:  + *Allow app to transfer data to other apps* + *Allow app to receive data from other apps* + *Restrict cut, copy, and paste with other apps* + If the Microsoft 365 Business option is set to *On*, then all the Intune options are set to:  + *Allow app to transfer data to other apps* is set to *Policy managed apps* + *Allow app to receive data from other apps* is set to *All Apps* + *Restrict cut, copy, and paste with other apps* is set to *Policy Managed apps with Paste-In*
+|===
+
+=== Windows 10 app protection settings
+
+The following table details how the Windows 10 application policy settings map to Intune settings.
+
+To find the Intune setting, sign in with your Microsoft 365 Business Premium admin credentials, and go to https://portal.azure.com[Azure portal].
+Select *More services*, and type Intune into the *Filter*.
+Select *Intune App Protection* > *App Policy*.
+
+____
+[!IMPORTANT] A Microsoft 365 Business Premium subscription gives you a license to modify only the Intune settings that map to the settings available in Microsoft 365 Business Premium.
+____
+
+To explore the available settings, select the policy name you want, and then choose *General, Assignments*, *Allowed apps*, *Exempt apps*, *Required settings*, or *Advanced settings* from the left navigation pane.
+
+|===
+| *Windows 10 application policy setting* | *Intune setting(s)*
+
+| Encrypt work files
+| *Advanced settings* > *Data protection*: *Revoke encryption keys on unenroll* and *Revoke access to protected data device enrolls to MDM* are both set to *On*.
+
+| Prevent users from copying company data to personal files.
+| *Required settings* > *Windows Information Protection mode*.
+*On* in Microsoft 365 Business Premium maps to: *Hide Overrides*, *Off* in Microsoft 365 Business Premium maps to: *Off*.
+
+| Office documents access control
+| If this is set to *On* in Microsoft 365 Business Premium, then  + *Advanced settings* > *Access*, *Use Windows Hello for Business as a method for signing into Windows* is set to *On*, with the following additional settings:  + *Set the minimum number of characters required for the PIN* is set to *4*.
++ *Configure the use of uppercase letters in the Windows Hello for Business PIN* is set to *Do not allow use of upper case letters for PIN*.
++ *Configure the use of lowercase letters in the Windows Hello for Business PIN* is set to *Do not allow use of lower case letters for PIN*.
++ *Configure the use of special characters in the Windows Hello for Business PIN* is set to *Do not allow the use of special characters in PIN*.
++ *Specify the period of time (in days) that a PIN can be used before the system requires the user to change* is set to *0*.
++ *Specify the number of past PINs that can be associated to a user account that can't be reused* is set to *0*.
++ *Number of authentication failures allowed before the device will be wiped* is set to same as in Microsoft 365 Business (5 by default).
++ *Maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked* is set to same as in Microsoft 365 Business.
+
+| Enable recovery of protected data
+| *Advanced settings* > *Data protection*: *Show the enterprise data protection icon* and *Use Azure RMS for WIP* are set to *On*.
+
+| Protect additional company cloud locations
+| *Advanced settings* > *Protected domains* and *Cloud resources* show domains and SharePoint sites.
+
+| Files used by these apps are protected
+| The list of protected apps is listed in *Allowed apps*.
+|===
+
+=== Windows 10 device protection settings
+
+The following table details how the Windows 10 device configuration settings map to Intune settings.
+
+To find the Intune setting, sign in with your Microsoft 365 Business Premium admin credentials, and go to https://portal.azure.com[Azure portal], then select *More services*, and type in Intune into the *Filter*, select *Intune* > *Device configuration* > *Profiles*.
+Then select *Device policy for Windows 10* > *Properties* > *Settings*.
+
+|===
+| *Windows 10 device policy setting* | *Intune setting(s)*
+
+| Help protect PCs from viruses and other threats using Microsoft Defender Antivirus
+| Allow Real-time Monitoring = ON  + Allow Cloud Protection = ON  + Prompt Users for Samples Submission = Send Safe samples automatically (Default Non PII auto submit)
+
+| Help protect PCs from web-based threats in Microsoft Edge
+| *SmartScreen* in *Edge Browser settings* is set to *Required*.
+
+| Turn off device screen when idle for (minutes)
+| Maximum minutes of inactivity until screen locks (minutes)
+
+| Allow users to download apps from Microsoft Store
+| Custom URI policy
+
+| Allow users to access Cortana
+| *General* > *Cortana* is set to *block* in Intune when set to *off* in Microsoft 365 Business Premium.
+
+| Allow users to receive Windows tips and advertisements from Microsoft
+| *Windows spotlight*, all blocked if this is set to *off* in Microsoft 365 Business Premium.
+
+| Keep Windows 10 devices up to date automatically
+| This setting is in *Microsoft Intune* > *Service updates - Windows 10 Update Rings*, choose *Update policy for Windows 10 devices*, and then *Properties* > *Settings*.
++ When the Microsoft 365 Business Premium setting is set to *On*, all the following settings are set:  + *Service branch* is set to *CB* (CBB when this is turned off in Microsoft 365 Business Premium).
++ *Microsoft product updates* is set to *Allow*.
++ *Windows drivers* is set to *Allow*.
++ *Automatic update behavior* is set to *Auto install at maintenance time* with:  + *After hours start* is set to *6 AM*.
++ *Active hours end* is set to *10 PM*.
++ *Quality update deferral period (days)* is set to *0*.
++ *Feature update deferral period (days)* is set to *0*.
++ *Delivery optimization download mode* is set to *HTTP blended with peering behind same NAT*.
+|===
+
+=== See also
+
+xref:../admin/security-and-compliance/secure-your-business-data.adoc[Best practices for securing Microsoft 365 for business plans]

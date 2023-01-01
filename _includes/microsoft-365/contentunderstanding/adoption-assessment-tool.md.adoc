@@ -1,0 +1,49 @@
+= Discover opportunities in SharePoint Syntex by using the Microsoft 365 Assessment tool
+:audience: admin
+:author: chuckedmonson
+:description: Learn how to use the adoption assessment tool to see how your organization can benefit from SharePoint Syntex.
+:manager: pamgreen
+:ms.author: chucked
+:ms.collection: ["enabler-strategic", "m365initiative-syntex"]
+:ms.custom: ["Adopt", "admindeeplinkMAC"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.reviewer: jaeccles
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+:search.appverid:
+
+== Discover opportunities in SharePoint Syntex by using the Microsoft 365 Assessment tool
+
+____
+[!NOTE] The Microsoft 365 Assessment tool can be run only against SharePoint Online.
+____
+
+You can assess how SharePoint Syntex will benefit your organization by using the Microsoft 365 Assessment tool.
+When you run an assessment, you'll generate a Power BI report that summarizes aspects of your SharePoint information architecture that are indicators for where SharePoint Syntex might be of value.
+
+image::../media/content-understanding/assessment-tool-reports.png[Image of three sample report pages in the Power BI summary.]
+
+The assessment report includes the following information:
+
+* *Libraries with custom columns* -- Identify libraries where SharePoint Syntex can automatically populate columns, improving consistency.
+* *Column usage* -- Identify patterns of column usage, to target SharePoint Syntex models where they'll have the maximum benefit.
+* *Libraries with custom content types* -- Identify libraries using custom content types, where SharePoint Syntex models can be used to automatically categorize files.
+* *Content type usage* -- Identify patterns of content type usage, to target SharePoint Syntex models where they'll have the maximum benefit.
+* *Libraries with retention labels* -- Identify libraries where retention labels are used, where SharePoint Syntex can be used to automate and improve consistency.
+* *Library size* -- Identify large libraries where classification and metadata can improve the content discovery experience.
+* *Library modernization status* -- Identify libraries that might need to be modernized to fully make use of SharePoint Syntex.
+* *Prebuilt model candidates* -- Identify libraries where names or content types suggest a prebuilt model could be applied.
+* *Syntex model usage* -- Review the current use of SharePoint Syntex models in your sites.
+* *Assessment overview* -- Review the assessment results to identify any failures.
+
+=== Run the assessment
+
+The SharePoint Syntex assessment is a module in the Microsoft 365 Assessment tool.
+To run the assessment:
+
+. Visit the https://pnp.github.io/pnpassessment/index.html[Microsoft 365 Assessment tool documentation] to learn more.
+. https://pnp.github.io/pnpassessment/using-the-assessment-tool/download.html[Download the tool].
+. https://pnp.github.io/pnpassessment/using-the-assessment-tool/setupauth.html[Decide on an authentication method].
+. https://pnp.github.io/pnpassessment/sharepoint-syntex/requirements.html[Configure permissions].
+. https://pnp.github.io/pnpassessment/sharepoint-syntex/assess.html[Run a SharePoint Syntex assessment].

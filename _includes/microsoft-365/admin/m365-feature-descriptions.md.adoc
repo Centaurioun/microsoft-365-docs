@@ -1,0 +1,681 @@
+= Microsoft 365 feature descriptions
+:audience: ITPro
+:author: pebaum
+:description: Learn about the information available for Microsoft 365 feature descriptions.
+:f1_keywords: ["microsoft-365-and-office-365-general-information"]
+:manager: scotv
+:ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
+:ms.author: office365servicedesc
+:ms.custom: ["Adm_ServiceDesc", "Adm_ServiceDesc_top"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: reference
+
+== Microsoft 365 feature descriptions
+
+== <<tab/User-account-management,*User account management*>>
+
+=== User account management
+
+Microsoft supports the following methods for creating, managing, and authenticating users.
+However, this topic doesn't include information about security features that allow or prohibit access to individual Microsoft resources (for example, role-based access control in Microsoft Exchange Online or configuring security in Microsoft SharePoint Online).
+For details about these features, see the link:/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description[*Exchange Online service description*] and the link:/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description[*SharePoint Online service description*].
+If you need information about tools that can help you perform administrative tasks, see link:/office365/enterprise/manage-office-365-accounts[Tools to manage Microsoft accounts].
+To learn how to perform day-to-day management tasks, see link:/office365/admin/manage/manage[Common management tasks].
+
+[cols=3*]
+|===
+| *Need help with signing in, installing or uninstalling, or canceling your subscription?:* Get help with: https://support.office.com/article/where-to-sign-in-to-office-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4[signing in]
+| https://support.office.com/article/download-and-install-or-reinstall-office-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658[Installing or uninstalling Office]
+| https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a[Canceling Office 365]
+|===
+
+For other issues, visit the https://support.microsoft.com/contactus/[Microsoft support center].
+To get support for Office 365 operated by 21Vianet in China, contact the https://support.office.com/article/Get-technical-billing-and-subscription-support-for-Office-365-operated-by-21Vianet-671FB12E-F5D8-4CDF-B3E9-E8068A9AA496[21Vianet support team].
+
+*Sign-in options:* Microsoft has two systems that can be used for user identities: *Work or school account (cloud identity)* and *Federated account (federated identity)*.
+The type of identity affects the user experience and user account management options, as well as hardware and software requirements and other deployment considerations.
+
+*Work or school account (cloud identity)* - Users receive Azure Active Directory cloud credentials--separate from other desktop or corporate credentials--for signing into Microsoft cloud services.
+This is the default identity, and is recommended in order to minimize deployment complexity.
+Passwords for work or school accounts use the Azure Active Directory link:/previous-versions/azure/jj943764(v=azure.100)[password policy].
+
+*Federated account (federated identity)* - For all subscriptions in organizations with on-premises Active Directory that use single sign-on (SSO), users can sign into Microsoft services by using their Active Directory credentials.
+The corporate Active Directory stores and controls the password policy.
+For information about SSO, see link:/previous-versions/azure/azure-services/hh967643(v=azure.100)[Single sign-on roadmap].
+
+*Single sign-on:* For organizations using single sign-on, all users on a domain must use the same identity system: either cloud identity or federated identity.
+For example, you could have one group of users that only needs a cloud identity because they don't access on-premises systems, and another group of users who use Microsoft and on-premises systems.
+You would add two domains to Office 365, such as *contractors.contoso.com* and *staff.contoso.com*, and only set up SSO for one of them.
+An entire domain can be converted from cloud identity to federated identity, or from federated identity to cloud identity.
+
+*Authentication:* Except for Internet sites for anonymous access created with SharePoint Online, users must be authenticated when accessing Microsoft services.
+*Modern authentication*, *Cloud identity authentication*, and *Federated identity authentication*.
+Microsoft uses forms-based authentication, and authentication traffic over the network is always encrypted with TLS/SSL using port 443.
+Authentication traffic uses a negligible percentage of bandwidth for Microsoft services.
+
+*Modern authentication* - Modern authentication brings Microsoft Authentication Library-based sign-in to Office client apps across platforms.
+This enables sign-in features such as Multi-Factor Authentication (MFA), SAML-based third-party identity providers with Office client applications, and smart card and certificate-based authentication.
+It also removes the need for Microsoft Outlook to use the basic authentication protocol.
+For more information, including the availability of modern authentication across Office applications, see link:/office365/enterprise/modern-auth-for-office-2013-and-2016[How modern authentication works for Office 2013 and Office 2016 client apps].
+Modern authentication is turned on by default for Exchange Online.
+To learn how to turn it on or off, see link:/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online[Enable modern authentication in Exchange Online].
+
+*Cloud identity authentication* - Users with cloud identities are authenticated using traditional challenge/response.
+The web browser is redirected to the Microsoft sign-in service, where you type the user name and password for your work or school account.
+The sign-in service authenticates your credentials and generates a service token, which the web browser posts to the requested service and logs you in.
+
+*Federated identity authentication* - Users with federated identities are authenticated using Active Directory Federation Services (AD FS) 2.0 or other Security Token Services.
+The web browser is redirected to the Microsoft sign-in service, where you type your corporate ID in the form a user principal name (UPN), for example: _isabel@contoso.com_.
+The sign-in service determines that you're part of a federated domain and offers to redirect you to the on-premises Federation Server for authentication.
+If you're logged on to the desktop (domain joined), you're authenticated (using Kerberos or NTLMv2) and the on-premises Security Token Service generates a logon token, which the web browser posts to the Microsoft sign-in service.
+Using the logon token, the sign-in service generates a service token that the web browser posts to the requested service and logs you in.
+For a list of available Security Token Services available, see link:/previous-versions/azure/azure-services/hh967643(v=azure.100)[Single sign-on roadmap].
+
+*Multi-Factor Authentication:* With Multi-Factor Authentication, users are required to acknowledge a phone call, text message, or an app notification on their smartphone after correctly entering their password.
+Only after this second authentication can the user sign in.
+Microsoft administrators can enroll users for multi-factor authentication in the Microsoft 365 admin center.
+Learn more about link:/office365/admin/security-and-compliance/set-up-multi-factor-authentication[Multi-Factor Authentication].
+
+*Rich client authentication:* For rich clients such as Microsoft Office desktop applications, authentication can occur in two ways: *Microsoft Online Services Sign-In Assistant* and *Basic/proxy authentication over SSL*.
+To ensure proper discovery and authentication of Microsoft services, administrators must apply a set of components and updates to each workstation that uses rich clients (such as Microsoft Office 2010) and connects to Office 365.
+Desktop setup is an automated tool to configure workstations with the required updates.
+For more information, see https://support.office.com/article/3324b8b8-dceb-45e2-ac24-c642720108f7[Use my current Office desktop apps].
+
+*Microsoft Online Services Sign-In Assistant* - The Sign-in assistant, which is installed by desktop setup, contains a client service that obtains a service token from the sign-in service and returns it to the rich client.
+If you have a cloud identity, you receive a prompt for credentials, which the client service sends to the sign-in service for authentication (using WS-Trust).
+If you have a federated identity, the client service first contacts the AD FS 2.0 server to authenticate the credentials (using Kerberos or NTLMv2) and obtain a logon token that is sent to the sign-in service (using WS-Federation and WS-Trust).
+
+*Basic/proxy authentication over SSL* - The Outlook client passes basic authentication credentials over SSL to Exchange Online.
+Exchange Online proxies the authentication request to the identity platform, and then to on-premises Active Directory Federation Server (for SSO).
+
+*Sign-in experience:* The sign-in experience changes depending on the type of identity in use:
+
+|===
+| Service | Cloud identity | Federated identity
+
+| Outlook 2016
+| Sign in each session ^1^
+| Sign in each session ^2^
+
+| Outlook 2013
+| Sign in each session ^1^
+| Sign in each session ^2^
+
+| Outlook 2010 or Office 2007 on Windows 7
+| Sign in each session ^1^
+| Sign in each session ^2^
+
+| Outlook 2010 or Office Outlook 2007 on Windows Vista
+| Sign in each session ^1^
+| Sign in each session ^2^
+
+| Microsoft Exchange ActiveSync
+| Sign in each session ^1^
+| Sign in each session ^2^
+
+| POP, IMAP, Outlook for Mac
+| Sign in each session ^1^
+| Sign in each session ^2^
+
+| Web experiences: Microsoft 365 admin center/Outlook on the web/SharePoint Online/Office for the web
+| Sign in each browser session^4^
+| Sign in each session ^3^
+
+| Office 2010 or Office 2007 using SharePoint Online
+| Sign in each SharePoint Online session ^4^
+| Sign in each SharePoint Online session^3^
+
+| Skype for Business Online
+| Sign in each session ^1^
+| No prompt
+
+| Outlook for Mac
+| Sign in each session ^1^
+| Sign in each session ^2^
+|===
+
+^1^ When first prompted, you can save your password for future use.
+You won't receive another prompt until you change the password.
++ ^2^ You enter your corporate credentials.
+You can save your password and won't be prompted again until your password changes.
++ ^3^ All apps require you to enter or select your username to sign in.
+You aren't prompted for your password if your computer is joined to the domain.
+If you select *Keep me signed in* you won't be prompted again until you sign out.
++ ^4^ If you select *Keep me signed in* you won't be prompted again until you sign out.
+
+[cols=2*]
+|===
+| *Create user accounts:* There are multiple ways for you to add users.
+To learn more, see link:/office365/admin/add-users/add-users[Add users individually or in bulk - Admin Help] and [Add users and assign licenses - Microsoft 365 admin
+| Microsoft Docs](/microsoft-365/admin/add-users/add-users).
+If you're using Office 365 operated by 21Vianet in China, see link:/office365/admin/add-users/add-users[Create or edit user accounts in Office 365 operated by 21Vianet - Admin Help].
+|===
+
+*Delete user accounts:* How you delete accounts depends on whether or not you're using directory synchronization.
+If you aren't using directory synchronization, accounts can be deleted by using the admin page or by using Windows PowerShell.
+If you're using directory synchronization, you must delete users from the local Active Directory, rather than from Office 365.
+
+*Deleted accounts:* When an account is deleted, it becomes inactive.
+For approximately 30 days after having deleted it, you can restore the account.
+For more information about deleting and restoring accounts, see link:/office365/admin/add-users/delete-a-user[Delete users] and link:/office365/admin/add-users/restore-user[Restore users] or, if you're using Office 365 operated by 21Vianet in China, see link:/office365/admin/add-users/add-users[Create or edit user accounts in Office 365 operated by 21Vianet - Admin Help].
+
+*Password management:* The policies and procedures for password management depend on the identity system.
+
+*Cloud identity password management:* When using cloud identities, passwords are automatically generated when the account is created.
+For cloud identity password strength requirements, see link:/previous-versions/azure/jj943764(v=azure.100)[password policy].
+To increase security, users must change their passwords when they first access Microsoft services.
+As a result, before users can access Microsoft services, they must sign into the Microsoft 365 admin center, where they're prompted to change their passwords.
+Admins can set the password expiration policy.
+For more information, see link:/office365/admin/manage/set-password-expiration-policy[Set a user's password expiration policy].
+
+*Cloud identity password reset:* There are several tools for resetting passwords for users with cloud identities: *Admin resets password,* *User changes passwords with Outlook on the web*, *Role-based reset password rights*, and *Reset passwords using Windows PowerShell*.
+
+*Admin resets password* - If users lose or forget their passwords, admins can reset users' passwords in the admin center or by using Windows PowerShell.
+Users can only change their own password if they know their existing password.
+For enterprise plans, if administrators lose or forget their passwords, a different administrator with the Global Administrator role can reset administrators' passwords in the Microsoft 365 admin center or by using Windows PowerShell.
+For more information, see link:/office365/admin/add-users/reset-passwords[Reset passwords for admins].
+If you're working in Office 365 operated by 21Vianet in China, see https://support.office.com/article/change-or-reset-your-password-in-office-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b[Change or reset passwords in Office 365 operated by 21Vianet].
+
+*User changes passwords with Outlook on the web* - The Outlook on the web options page includes a Change password hyperlink, which redirects users to the *Change Password* page.
+The user must know their previous password.
+For more information, see https://support.office.com/article/change-password-in-outlook-web-app-50bb1309-6f53-4c24-8bfd-ed24ca9e872c[Change password].
+If you're using Office 365 operated by 21Vianet in China, see https://support.office.com/article/change-or-reset-your-password-in-office-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b[Change or reset passwords in Office 365 operated by 21Vianet].
+
+*Role-based reset password rights* - For enterprise plans, authorized users such as helpdesk staff can be assigned the *Reset Password* user right and the right to change passwords by using predefined or custom roles without becoming full services administrators.
+By default in enterprise plans, admins with the Global Administrator, Password Administrator, or User Management Administrator role can change passwords.
+For more information, see link:/office365/admin/add-users/assign-admin-roles[Assigning admin roles].
+
+*Reset passwords using Windows PowerShell* - Service administrators can use Windows PowerShell to reset passwords.
+
+*Federated identity password management:* When using federated identities, passwords are managed in Active Directory.
+The on-premises Security Token Service negotiates the authentication with Federation Gateway without passing users' local Active Directory passwords over the internet to Office 365.
+Local password policies are used, or, for web clients, two-factor identification.
+Outlook on the web doesn't include a Change Password hyperlink.
+Users change their passwords using standard, on-premises tools or through their desktop PC logon options.
+
+*Directory Sync:* If you have link:/previous-versions/azure/azure-services/dn441213(v=azure.100)[Directory Sync with single sign-on (SSO)] enabled in your organization environment and there is an outage that impacts your federated identity provider, Password Sync Backup for Federated Sign-in provides the option to manually switch your domain to Password Sync.
+Using Password Sync will allow your users access while the outage is fixed.
+Learn https://go.microsoft.com/fwlink/p/?LinkId=509832[how to switch from Single Sign-On to Password Sync].
+
+*License management:* A license gives a user access to a set of Microsoft services.
+An administrator assigns a license to each user for the service they need access to.
+For example, you can assign a user access to Skype for Business Online, but not SharePoint Online.
+
+*Billing:* Microsoft billing admins can make changes to subscription details like the number of user licenses and number of additional services your company uses.
+Check out link:/office365/admin/subscriptions-and-billing/assign-licenses-to-users[Assign or remove a license].
+If you're using Office 365 operated by 21Vianet, see link:/office365/admin/subscriptions-and-billing/assign-licenses-to-users[Assign or remove licenses in Office 365 operated by 21Vianet].
+
+*Group management:* Security groups are used in SharePoint Online to control access to sites.
+Security groups can be created in the Microsoft 365 admin center.
+For more information about security groups, see link:/office365/admin/email/create-edit-or-delete-a-security-group[Create, edit, or delete a security group].
+
+*Azure Active Directory services:* Azure Active Directory (AD) brings comprehensive identity and access management capabilities to Office 365.
+It combines directory services, advanced identity governance, application access management and a rich standards-based platform for developers.
+To learn more about AD features in Office 365, see https://go.microsoft.com/fwlink/?linkid=2144147[Sign in page branding and cloud user self-service password reset].
+Learn more about the link:/previous-versions/azure/dn532272(v=azure.100)[Free, Basic, and Premium editions of Azure Active Directory].
+
+== <<tab/Support,*Support, help, and training*>>
+
+=== Support
+
+With every Microsoft 365 and Office 365 subscription for enterprise, business, frontline, education, and government, Microsoft Support provides global technical, pre-sales, billing, and subscription support.
+Support is available both online through the Microsoft 365 admin center and by telephone for both paid and trial subscriptions.
+For more information, see link:/Office365/Admin/contact-support-for-business-products[Microsoft Support Options].
+To contact technical support, see: link:/Office365/Admin/contact-support-for-business-products[*Contact Microsoft 365 for business support*].
+Technical Support doesn't include troubleshooting third-party services or add-ins.
+Learn about finding answers from other customers in the https://answers.microsoft.com/[*Microsoft Community*].
+
+*Support:* The Microsoft development and operations teams are complemented by a dedicated support organization, which plays an important role in providing customers with business continuity.
+Support staff has a deep knowledge of the service and its associated applications as well as direct access to Microsoft experts in architecture, development, and testing.
+The support organization closely aligns with operations and product development, offers fast resolution times and provides a channel for customers' voices to be heard.
+Feedback from customers provides input to the planning, development, and operations processes.
+For more information about support, see the link:/office365/servicedescriptions/office-365-platform-service-description/support[Support] article.
+
+*Support for Online issue tracking:* Customers need to know that their issues are being addressed, and they need to be able to track timely resolution.
+The Microsoft 365 admin center provides a single web-based interface for support.
+Customers can use the portal to add and monitor service requests and receive feedback from Microsoft support teams.
+
+*Support for Self-help, backed by continuous staff support:* Microsoft offers a wide range of self-help resources and tools that can help customers to resolve service-related issues without requiring Microsoft support.
+Before customers enter service requests, they can access knowledge base articles and FAQs that provide immediate help with the most common problems.
+These resources are continually updated with the latest information, which helps avoid delays by providing solutions to known issues.
+However, when an issue arises that needs the help of a support professional;
+staff members are available for immediate assistance by telephone and through the administration portal 24 hours a day, 7 days a week.
+
+*Administrator support:* Authorized administrators can use the Microsoft 365 admin center to submit service requests online, access support telephone numbers, and view all open and recently closed service requests.
+Service requests submitted in the admin center can be reopened for up to 14 days after the request has been closed.
+For instructions, see link:/Office365/Admin/contact-support-for-business-products[Contact Microsoft 365 for business support].
+
+*Microsoft 365 support:* The Microsoft 365 technical support team troubleshoots only those issues that are related to Microsoft 365 and Office 365.
+Issues that originate in customer networks fall outside of the support boundaries, and in these cases, customers must either work with their networking team or engage the https://support.microsoft.com/gp/contactus81?Audience=Commercial[Microsoft Networking team] for assistance.
+
+*Community and self-service support options:* Self-service support is available for all plans, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the https://go.microsoft.com/fwlink/p/?LinkID=279811[Microsoft 365 community].
+For more information about self-service support resources, see the link:/office365/servicedescriptions/office-365-platform-service-description/help-and-training[Help and training] service description.
+
+*Pre-sales support:* Pre-sales support provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs.
+In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial.
+You can call during local business hours, Monday through Friday.
+Pre-sales support can be accessed using the same phone number as with technical support.
+The support telephone number can be found on the admin center of the free trial.
+For instructions, see link:/Office365/Admin/contact-support-for-business-products[Contact Microsoft 365 for business support].
+
+*Billing and subscription management support:* Assistance for billing and subscription management issues is available online or by telephone during local business hours, Monday through Friday.
+Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support.
+The support telephone number can be found on the admin center.
+For instructions, see link:/Office365/Admin/contact-support-for-business-products[Contact Microsoft 365 for business support].
+Here are some examples of billing and subscription management issues: Signing up for a trial or purchasing a subscription, Converting from a trial subscription to a paid subscription, Understanding the bill, Renewing a subscription, Adding or removing licenses, and Canceling a paid subscription.
+
+*Technical support:* Technical support for Microsoft 365 subscriptions provides assistance with basic installation, setup, and general technical usage.
+Some examples of these issues are listed in the following table.
+
+|===
+| Support category | Examples
+
+| Installation and setup  +
+| Exchange Online:  + Mailbox migration  + Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)  + Autodiscover configuration  + SharePoint Online:  + Permissions and user groups  + Configuration of guests  + Skype for Business Online:  + Installation and creating contacts  + Microsoft 365 Apps for enterprise: Installation and setup assistance  +
+
+| Configuration  +
+| Service configuration failure issues  + Provisioning issues  + Domain setup and re-delegation  + Service configuration issues  + Single sign-on (SSO)  + Active Directory synchronization  +
+|===
+
+*Technical support case handling:* Microsoft assigns a severity level to a case when it is opened, based on an assessment of the issue type and customer impact.
+Examples of issue types and severity levels are shown in the following table.
+
+|===
+| Severity level | Operations and support description | Examples
+
+| Sev A (Critical)  +
+| One or more services aren't accessible or are unusable.
+Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability.
+Multiple users or services are affected.
++
+| Widespread problems sending or receiving mail.
++ SharePoint site down.
++ All users can't send instant messages, join or schedule Skype for Business Meetings, or make Skype for Business calls.
++
+
+| Sev B (High)  +
+| The service is usable but in an impaired fashion.
+The situation has moderate business impact and can be dealt with during business hours.
+A single user, customer, or service is partially affected.
++
+| Send button in Outlook is garbled.
++ Setting is impossible from EAC (Exchange Admin Center) but possible in PowerShell.
++
+
+| Sev C (Non-critical)  +
+| The situation has minimal business impact.
+The issue is important but doesn't have a significant current service or productivity impact for the customer.
+A single user is experiencing partial disruption, but an acceptable workaround exists.
++
+| How to set user password that never expires.
++ User can't delete contact information in Exchange Online.
++
+|===
+
+*Technical support initial response times:* Initial response time is based on the severity levels described above and the type of subscription.
+The response time objectives are described in the following table.
+
+|===
+| Severity level | Microsoft 365 Business Basic^1^ + Microsoft 365 Apps for business^1^ + Microsoft 365 Business Standard^1^ + Microsoft 365 Business Premium^1^ | All Microsoft 365 and Office 365 Enterprise (E), + Frontline (F), + Government (G), and + Education (A) plans | Elevated support options^3^
+
+| Sev A (Critical)  +
+| Available: 24/7^4^ + Response time: one hour  +
+| Available: 24/7^4^ + Response time: one hour  +
+| Available: 24/7^4^ + Response time: one hour  +
+
+| Sev B (High)  +
+| Available: business hours  + Response time: no commitment  +
+| Available: 24/7^4^ + Response time: next day  +
+| Available: 24/7^4^ + Response time: 2 hours  +
+
+| Sev C (Medium)  +
+| Available: business hours  + Response time: no commitment  +
+| Available: 24/7^4^ + Response time: no commitment  +
+| Available: 24/7^4^ + Response time: 4 hours  +
+|===
+
+^1^ Business plans include business hours support for all non-critical issues and 24/7 phone support from Microsoft.
++ ^2^ Enterprise plans include 24/7 phone support from Microsoft for all issues.
++ ^3^ For descriptions of the elevated support options, see link:/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-office-365-general-information?tabs=Support[Additional support options].
++ ^4^ Calls and service requests are handled 24 hours a day, seven days a week in most countries and regions.
+
+*Support for standalone plans:* Support for paid standalone plans is handled with the same level of support and response time objectives as plans in the Enterprise service family.
+For a list of standalone plans, see link:/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options#standalone-services[Standalone services].
+
+*Technical support languages:* Depending on the location and language, support engineers are available during most regional business hours and, in several cases, on a 24-hour basis.
+For more information, see link:/Office365/Admin/contact-support-for-business-products[International Phone Numbers] and https://products.office.com/business/office-365-for-business-support-options[Microsoft Support Options].
+If additional translation assistance is required, support engineers can remain on the line and arrange for a translator to join the call.
+
+*Business Assist for Microsoft 365:* Business Assist for Microsoft 365 is designed for small businesses to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+Learn more at link:/microsoft-365/admin/misc/business-assist[Business Assist for Microsoft 365].
+
+*Shared support responsibilities:* Microsoft understands that receiving timely technical support from qualified professionals is a key aspect of cloud services.
+Equally important is the critical role that the customer's IT department plays in the support of its users.
+
+*Administrator responsibilities:* People with Microsoft administrator roles are the only ones in the customer's organization authorized to access the *Admin* section of the admin center, and to submit service requests to Microsoft, communicating directly with Microsoft about service requests.
+With Office 365 for enterprise and Microsoft 365 Apps Plan, you can designate several types of administrators who serve different functions.
+This service description uses the generic title administrator to refer to all categories of administrators.
+For more information about the types of administrator roles, see link:/office365/admin/add-users/assign-admin-roles[Assigning admin roles].
+
+*Administrator role*: The administrator is the primary contact that sets up and supports each service user.
+The administrator is responsible for service administration and account maintenance and provides user account setup and configuration to allow users access to the services, address client connectivity, client software, and mobility installation issues, address service availability issues within the customer's organizational span of control, use Microsoft's self-service support resources to resolve support issues.
+The administrator is expected to provide initial assistance for the customer's users.
+However, if the administrator is unable to resolve issues with the help of self-service support resources, they should contact link:/office365/servicedescriptions/office-365-platform-service-description/support#technical-support[Technical support].
+
+Office 365 for enterprise follows a role-based access control (RBAC) model: permissions and capabilities are defined by management roles.
+The person who signs up for Office 365 for his or her organization automatically becomes a global administrator, or top-level administrator.
+There are five administrator roles: global administrator, billing administrator, password administrator, service administrator, and user management administrator.
+For more information about administrator roles in Office 365 for enterprise, including how they apply to Exchange Online, SharePoint Online, and Skype for Business Online administration, see link:/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj878348(v=ws.11)[Assigning administrator roles].
+If you're using Office 365 operated by 21Vianet in China, see link:/office365/admin/add-users/assign-admin-roles[Assign admin roles in Office 365 for business].
+
+*Delegated administration and support for partners:* Partners can be authorized to administer accounts on behalf of customers.
+The customer doesn't require a user account for the partners use and doesn't consume a license when granting delegated administration authority.
+Partners can assign full or limited access to users within their organization.
+Limited access includes rights to reset passwords, manage service requests, and monitor service health (ability to use and specify a partner as a delegated administrator varies by region).
+
+*Microsoft support role:* Microsoft support's role is to Troubleshoot and provide technical guidance for customer issues and escalations, gather and validate information related to specific service requests, provide issue coordination and resolution management, maintain communication with the administrators to help ensure that issues are addressed on an ongoing basis, provide assistance with licensing, invoicing, and subscription inquiries, provide assistance with purchasing and trial inquiries, and continually gather customer feedback on how to improve the service through surveys.
+
+*Elevated support options:* While the support services included with Microsoft meet the needs of many customers, customers with more advanced requirements or complex environments should consider paid support options from Microsoft.
+These elevated support offers include quicker response objectives, the ability to set issue severity level, and access to additional technical resources and support account management.
+Examples of elevated support include: Service update management;
+end-to-end support for clients and services;
+reactive and advisory services from advanced engineers;
+and incident management and on-site workshops.
+
+*Additional support services:* There are several types of additional support services available: For options for large enterprise customers looking for a full-lifecycle service to support their move to Office 365, see https://www.microsoft.com/en-us/microsoftservices/cloud-productivity.aspx[Empower your employees to be more productive];
+for options for large enterprise customers looking for a managed support service that covers both Microsoft and on-premises technologies required to access the online service, see https://www.microsoft.com/enterprise/services/support[Premier Support]: for options for smaller enterprise customers in the United States, Canada, and the United Kingdom, see https://support.microsoft.com/help/4341255/support-for-business[Professional Direct Support].
+
+*Partners:* You can select a Microsoft partner and delegate administrative functions, including creating service request tickets.
+For more information, see the link:/office365/servicedescriptions/office-365-platform-service-description/partners[Partners] service description and link:/office365/admin/misc/add-partner[Add, change, or delete a subscription advisor partner].
+
+*Developers:* Developers can learn more about developing Office and SharePoint applications at the https://developer.microsoft.com/office/docs[MSDN Microsoft Developer Network].
+Developer Support is available through online blogs and forums in the developer community, through Premier or Partner support resources, or directly through Microsoft.
+For links to Developer Support options, see https://developer.microsoft.com/office/docs[Support Resources].
+
+*Volume licensing*: If you have already purchased licenses from Microsoft under a volume licensing program, here's where to go for support: For support related to licenses and locating keys, go to the https://www.microsoft.com/licensing/servicecenter/default.aspx[Volume Licensing Service Center];
+for technical support, see link:/office365/servicedescriptions/office-365-platform-service-description/support#technical-support[Technical support];
+for billing questions, see link:/office365/servicedescriptions/office-365-platform-service-description/support#billing-and-subscription-management-support[Billing and subscription management support];
+for general information about volume licensing, go to https://www.microsoft.com/licensing/default[Volume Licensing].
+
+____
+[!NOTE]
+
+The Microsoft team does not support scripts (for example, scripting techniques like JavaScript, VBScript, and so on, or VBA).
+If you need assistance with scripts, contact https://support.microsoft.com/[*Microsoft Support*].
+For Office applications usage support, see https://support.office.com/article/support-options-for-microsoft-office-application-issues-for-office-365-subscribers-0a02cd18-19be-4cfa-b430-3b53ea26920f[*Support options for Microsoft Office application issues for subscribers*].
+____
+
+=== Help and training
+
+Microsoft Office 365 provides the following help and training resources.
+Community resources apply to worldwide versions of Office 365.
+If you're using Office 365 operated by 21Vianet, you can use WeChat.
+See link:/microsoft-365/admin/contact-support-for-business-products[*Get technical, billing, and subscription support for Office 365 operated by 21Vianet*] and scroll to the bottom of the page for a QR code.
+
+*Online help:* Help articles and videos are available from any inline help link in the service, including the help icon in the top navigation bar of the Office 365 portal and Microsoft 365 admin center.
+You can also search all Office 365 help on https://go.microsoft.com/fwlink/p/?LinkId=272056[https://office.microsoft.com].
+
+*Training:* Training is available through videos, recorded live events, and classes leading to certification.
+For more information, see https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb[Microsoft 365 basics video training], https://support.microsoft.com/training[Microsoft 365 Training], link:/training/m365/[for admins and IT Pros], link:/microsoft-365/admin/admin-video-library[for small businesses], link:/training/browse/[browse the full learning catalog], link:/certifications/[become Microsoft certified], link:/training/browse/[browse all learning options], and link:/training/tv/[watch live and recorded events].
+
+*Community:* The Office 365 Community is a single destination for self-help support information.
+It has the latest information to help customers find answers to a variety of technical, billing, and service questions through support forums, wikis, and blogs.
+The support forums are staffed and moderated by Microsoft Support agents.
+From the Office 365 Community home page, customers can access the following resources: Forums, Wikis, Blogs.
+For more information, visit the https://techcommunity.microsoft.com/[Office 365 community].
+
+*Forums:* Forums are intended to provide community participants with an online destination where they can post technical support questions and discuss topics related to the Office 365 services.
+Here are the forums that are available: Deploy Office 365, Directory integration services, Domains in Office 365, Downloads, Email and calendar, IM, meetings and conferencing, Manage Office 365, Manage projects, Mobile access, Office 365 for Mac, Office apps, Sites and document sharing, Trust Center documents, Upgrade to Office 365, Yammer
+
+*Wikis:* Wikis include wiki pages created by Microsoft employees and authenticated community members.
+This collaborative site encompasses the latest collective content about specific Office 365 technical scenarios.
+Each individual wiki page typically includes links to websites, webcasts, troubleshooting videos, FAQ pages, documents, and downloads about that specific technical scenario.
+Historical tracking of every revision date and author alias is provided along with the ability to compare versions.
+
+*Blogs*: The Office 365 Technical Blog is a good resource for obtaining current information about Office 365 online services and for learning about the benefits of Office 365 features and functions.
+Topics include product insights, new product announcements, customer interviews, and a guest blog series.
+
+*Manage Office 365 guidance:* IT professionals of large organizations can visit the Manage Office 365 documentation home page.
+This page provides links to complex deployment guidance intended for large organizations.
+For more information, visit link:/Office365/[Manage Office 365].
+
+*Other self-help resources:* In addition to the Office 365 Community and online help, Office 365 includes the following self-help resources: Troubleshooting tool for Office 365, Technical support videos, Social media
+
+*Troubleshooting tool for Office 365* After answering a series of short questions about your issue, the Troubleshooting tool for Office 365 suggests helpful tools and information based on your answers.
+To use the tool, go to the link:/office365/troubleshoot/[Office troubleshooting for admins and IT professionals] page of the Office 365 Community.
+
+*Technical support videos* English language-only instructional troubleshooting videos have been developed based on the most commonly asked questions from customers.
+There are more than 35 individual videos and more coming every week.
+Topics range from an overview of the BlackBerry® Administration Center to activating and migrating directory synchronization.
+To view these videos, go to the Office 365 Community site and search for videos.
+Customers are encouraged to submit a request for a video through the community portal.
+Customers can also navigate to the https://go.microsoft.com/fwlink/?LinkId=272059[Office 365 YouTube] and link:/office365/servicedescriptions/office-365-service-descriptions-technet-library[Showcase] channels.
+
+*Social media* Following Office 365 on https://go.microsoft.com/fwlink/?LinkId=272061[Facebook], https://go.microsoft.com/fwlink/?LinkId=272062[Twitter], and https://www.linkedin.com/groups/Microsoft-Office-365-3724282?itemaction=mclk&anetid=3724282&impid=&pgkey=anet_search_results&actpref=anetsrch_name&trk=anetsrch_name&goback=%2Egdr_1307137875158_1[LinkedIn] provides a way for customers and partners to become more educated about Office 365.
+This fast and easy way of learning about Office 365 allows customers to listen to what others are saying and be able to add their own comments and tweets.
+Microsoft support professionals monitor the Microsoft-related Facebook and Twitter activity to assist with any support-related inquiries.
+To find the most current Facebook feeds along with the most recent tweets, go to the bottom of the Office 365 Community homepage to hear the daily discussions among customers and partners.
+
+*Languages:* Online Help Articles, Wikis and Blogs, Forums, Tech Centers, and Troubleshooting are available in various languages.
+
+*Languages for Online Help Articles:* Bulgarian, Chinese-Simplified, Chinese-Traditional, Czech, Danish, Dutch, Estonian, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Latvian, Lithuanian, Norwegian, Polish, Portuguese, Portuguese-Brazil, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, and Ukrainian.
+
+*Languages for Wikis and Blogs:* Arabic, Chinese-Simplified, Chinese-Traditional, Danish, Dutch, French, German, Italian, Japanese, Korean, Norwegian, Polish, Portuguese-Brazil, Russian, Spanish, and Swedish.
+
+*Languages for Forums:* Chinese-Simplified, Chinese-Traditional, French, German, Italian, Japanese, Korean, Polish, Portuguese-Brazil, Russian, and Spanish.
+
+*Languages for Tech Center:* Chinese-Simplified, Chinese-Traditional, French, German, Italian, Japanese, Korean, Portuguese-Brazil, Russian, and Spanish.
+
+*Languages for Troubleshooting:* Chinese-Simplified, Chinese-Traditional, French, German, Italian, Japanese, Korean, Polish, Portuguese-Brazil, Russian, and Spanish.
+
+== <<tab/Domains,*Domains, networking and partners*>>
+
+=== Domains
+
+*Domains*: When you add a domain, a step-by-step wizard helps you add users and convert your email addresses and other services to your business name.
+After you complete the wizard, your business email starts coming to Microsoft instead of going to your current email provider.
+To learn more, see https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611[Add your users and domains to Microsoft].
+If you use Office 365 operated by 21Vianet, see link:/office365/admin/setup/add-domain[Verify your domain].
+
+*Custom domains:* You can add up to 5000 domains to your subscription (including subdomains).
+You can't add a domain to Microsoft 365 that you're already using in another Microsoft cloud service.
+This restriction also means the same domain can't be added to multiple subscriptions.
+For more information, see https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a[Domains FAQ].
+
+When you create a new user, the user's sign-in name and email address are assigned to the default domain as set in the Microsoft 365 admin center.
+To learn more, see https://support.office.com/article/Add-your-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611[Add your users and domain].
+By default, the subscription uses the <__company name__>**.onmicrosoft.com** domain that was created with the account.
+For more information about domains in Office 365, see the link:/office365/servicedescriptions/office-365-platform-service-description/domains[Domains] service description.
+If you're using Office 365 operated by 21Vianet in China, the default domain is <__companyname__>**.onmsChina.cn**.
+
+*Adding domains:* You can add one or more custom domains to Microsoft rather than retaining the *onmicrosoft.com* domain and can assign users to sign in with any of the validated domains.
+Each user's assigned domain is the email address that will appear on sent and received email messages.
+You can host up to 900 registered internet domains, each represented by a different namespace.
+
+*Second and third-level domains:* With Office 365 Enterprise and Microsoft 365 Apps for business, you can add any level domain, including third-level domains such as marketing.contoso.com.
+See link:/office365/admin/setup/domains-faq[Add custom subdomains or multiple domains to Microsoft].
+If you're using Office 365 operated by 21Vianet, see link:/office365/admin/setup/domains-faq[Add custom subdomains or multiple domains to Office 365 operated by 21Vianet].
+
+*Domain verification DNS records:* With Microsoft 365, you can manage all your DNS records at your DNS hosting provider, or opt to have Microsoft set up and manage your domain's DNS records for you.
+If you continue to manage the records, you change specific records to point to Microsoft services as needed.
+If Microsoft manages your domain's DNS records for you, you first must switch your domain's nameserver records to point to Microsoft and then Microsoft sets up your services and then your domain's DNS records are managed at Microsoft.
+
+*Domain registrars:* For a list of domain registrars for which we provide step-by-step directions for adding the records, including the specific values to use for each record, see link:/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider[Create DNS records] or, if you're using Office 365 operated by 21Vianet, see Create DNS records at any provider for Office 365 operated by 21Vianet.
+If your domain is registered at GoDaddy, Microsoft can create the required records for you at GoDaddy.
+
+*Managing DNS records:* No matter where your DNS records are hosted, you can set up the DNS records to use your domain for the URL for a public website hosted on Microsoft or with a different hosting provider.
+Microsoft proactively checks your DNS records to find and help fix DNS issues.
+If your DNS records don't match what we expect them to be, you'll receive a notification in the Microsoft 365 admin center, along with information that tells you how to fix the possible issues that have been identified.
+For more information, see link:/office365/admin/setup/domains-faq[How Microsoft manages DNS records] or, for Office 365 operated by 21Vianet, see link:/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records[Create DNS records for Office 365 when you manage your DNS records].
+
+*Sharing a domain:* You can pilot some email addresses for a domain on Microsoft, and some on your previous email provider.
+This is recommended only for use during a pilot, because it requires additional setup steps and has some limitations for Microsoft services.
+For more information, see: https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7[Pilot Microsoft 365 for a small business] and link:/fasttrack/eligibility[Eligibility - FastTrack -- Microsoft 365].
+
+=== Networking
+
+Microsoft supports the following networking features.
+
+*Ports, protocols, and IP addresses:* Microsoft uses IPv4 and IPv6 addresses.
+Use of IPv6 addressing is optional and not required for connectivity with Office 365.
+Not all Microsoft 365 features are fully enabled using IPv6.
+For more information about Ipv6 support, see link:/office365/enterprise/ipv6-support[IPv6 support in Microsoft services].
+
+*IP addresses:* Microsoft maintains a list of allowed IP addresses in Microsoft help.
+For more information, see link:/office365/enterprise/urls-and-ip-address-ranges[URLs and IP address ranges].
+For Office 365 operated by 21Vianet, see link:/office365/enterprise/managing-office-365-endpoints[URLs and IP Addresses for Office 365 operated by 21Vianet].
+
+____
+[!IMPORTANT]
+
+We strongly recommend that you enable routing to the root domain names listed in the articles above (such as *.Outlook.com, *.MicrosoftOnline.com and *.SharePoint.com) instead of routing to specific IP address subnets.
+Relying on IP address subnets runs the risk of outages for your users as changes are made.
+____
+
+*Bandwidth requirements:* For information on bandwidth requirements, see link:/office365/enterprise/network-planning-and-performance[Internet bandwidth planning].
+
+*Connecting to Microsoft:* All Connections to Microsoft are done over the public internet or over a private Azure ExpressRoute connection, and are secured by SSL as appropriate.
+Azure ExpressRoute allows connecting directly to the global Microsoft network, bypassing the internet.
+A Microsoft networking partner provides connectivity to the global Microsoft network.
+For more information about Azure ExpressRoute, see link:/microsoft-365/enterprise/azure-expressroute[Azure ExpressRoute for Office 365].
+
+*WAN accelerators:* Microsoft doesn't provide support for customer-owned WAN acceleration and caching devices with Office 365.
+If you decide to use a WAN optimization controller to improve performance under conditions of high latency or low bandwidth, you'll need to disable it while troubleshooting service requests with Microsoft, and work with your device vendor for device support.
+For more information, see https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365[WAN Acceleration and caching devices with Office 365].
+
+*Microsoft Global Network:* The Microsoft networking infrastructure consists of a large global portfolio of data centers, servers, content distribution networks, edge computing nodes, and fiber optic networks to provide global distribution of services.
+Sophisticated service instrumentation and monitoring integrate at the deepest levels with each component, giving visibility into the data center, network backbone, internet exchanges and beyond, to help spot, diagnose and manage the cause of disruptions that arise.
+The network is built to maintain sufficient capacity even for large scale network interruptions without degradation of performance.
+For more information, see link:/azure/networking/microsoft-global-network[Microsoft Global Network].
+
+*Consumer services networks:* To maintain the confidentiality and integrity of customer data, Microsoft keeps consumer services networks separate from Microsoft networks.
+Multiple techniques are used to control information flows, including but not limited to physical separation, logical separation, Firewalls, and protocol restrictions.
+For more information, see the https://www.microsoft.com/trust-center[Office 365 Trust Center].
+
+*Physical separation:* Network segments are physically separated by routers that are configured to prevent specific communication patterns.
+
+*Logical separation:* Virtual LAN (VLAN) technology is used to further separate communications.
+
+*Firewalls:* Firewalls and other network security enforcement points are used to limit data exchanges with systems that are exposed to the internet, and to isolate systems from back-end systems managed by Microsoft.
+
+=== Partners
+
+As an authorized Microsoft partner, Microsoft Office 365 offers you an opportunity to grow your customer base and create lasting relationships with them.
+For a monthly or annual fee paid to you, your customers can use cloud-based services so they don't have to manage data backups, server hardware, and server updates.
+The services available to you depend on the types of services you're authorized to provide.
+
+*Partner features:* For more information on how to use partner features, see https://go.microsoft.com/fwlink/?LinkID=271614&clcid=0x409[*Build your business and administer your Office 365 partner subscription*] and review the partner features presentation.
+To receive access to the partner features, you can join Cloud Essentials by signing the https://go.microsoft.com/fwlink/p/?LinkId=285473[*Microsoft Online Services Partner Agreement*].
+
+____
+[!NOTE]
+
+Partner features as described below are not yet available in Office 365 operated by 21Vianet.
+____
+
+*Create trial invitations and purchase orders:* You can create and send trial invitations to your customers so they can try Office 365 by using the *Partner overview* page in Office 365.
+The invitation can contain one or more services, depending on the offer.
+If you're certified to offer delegated administration, you can add an option to the trial invitation that allows you to administer the account on behalf of your customer.
+This makes it easier for your customer to try Office 365.
+
+*Trial invitation:* After you've sent a trial invitation for Office 365 to a customer, you can follow up by creating and sending a purchase offer that's customized to fit the needs of your customer including the specific services and the number of licenses your customer needs.
+If you're certified to offer delegated administration, you can add the option to the purchase offer that allows you to administer the account on behalf of your customer.
+
+*Provide delegated administration:* Delegated administration allows a partner to have full administrative access to all the customer's services and subscriptions.
+This means you can perform administrative tasks on behalf of customers (including setting up mailboxes, adding or removing users and groups, data migration, and submitting service requests to Microsoft Customer Service and Support).
+Delegated administration capability is offered exclusively for partners who are enrolled in Cloud Essentials, Cloud Accelerate or the Cloud Deployment programs.
+
+*Delegated administrator:* Before you can start administering a customer's account, the customer must authorize you as a delegated administrator.
+To get customer approval, you send them an offer for delegated administration, which you can include with a trial invitation or purchase offer.
+The customer authorizes a Delegated Administration partner by responding to the partner's invitational email.
+Even when a customer has authorized a partner to perform administrative tasks on its behalf, the customer can still contact Microsoft support directly and submit service requests.
+
+*Delegated partner:* Each customer is entitled to have one delegated administration partner.
+This partner can also be a customer's Partner of Record (POR) but doesn't need to be.
+The roles of POR and delegated administration partners are separate, and the customer designates them separately.
+This lets a customer choose one partner for purchase advice and another partner for implementation or managed services.
+It also lets partners choose whether to build a business with a specialty in one or both of these roles.
+
+*Connect with customers and other partners in the Office 365 Marketplace:* Office 365 Marketplace offers customers the opportunity to find partner services and expertise.
+For more information, see link:/dynamics365/sales/connect-with-customers[Connect with customers through record or up next widget] and link:/partner-center/work-with-other-partners[Work with other partners - Partner Center].
+
+*Microsoft partner network:* The Microsoft Partner Network is committed to serving the needs of our partners.
+To join the network, and to see how Microsoft serves its partners, see https://go.microsoft.com/fwlink/?LinkID=272021&clcid=0x409[Microsoft Partner Network].
+
+== <<tab/Privacy,*Privacy, security, rights, and SLA*>>
+
+=== Privacy, security, and transparency
+
+Microsoft values the partnerships we have with our customers and places great emphasis on protecting the privacy and security of customer data.
+For more information, see the https://go.microsoft.com/fwlink/?LinkID=717951&clcid=0x409[Microsoft Trust Center].
+The information in this article applies to worldwide versions of Office 365.
+If you're using a national cloud instance of Office 365, including Office 365 U.S.
+Government, and Office 365 operated by 21Vianet, see https://go.microsoft.com/fwlink/?linkid=841582[*Microsoft National Clouds*].
+
+*Privacy:* To learn about how Microsoft Office 365 protects the privacy of your data, see the https://go.microsoft.com/fwlink/?LinkID=717953&clcid=0x409[Privacy] page.
+On specific steps for admins to take to configure Office 365 privacy settings  for Enterprise, Business, Government, and Education, see https://go.microsoft.com/fwlink/p/?LinkID=285202[Advanced Privacy Options for Administrators].
+
+*Security and privacy for other services:* For information about security and privacy for other Microsoft services, including Microsoft 365 Apps for enterprise, see https://www.microsoft.com/trustcenter/default.aspx[To which online services does the Trust Center apply?]
+
+*Security:* To learn how Microsoft delivers Office 365 services securely and reliably, see https://go.microsoft.com/fwlink/?LinkID=717954&clcid=0x409[Security].
+
+*Transparency:* As a customer, you can find out where your data resides, who at Microsoft can access it, and what we do with that information internally.
+For more information, see https://go.microsoft.com/fwlink/?LinkID=717955&clcid=0x409[Transparency].
+
+*Advanced eDiscovery:* Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases.
+Advanced eDiscovery builds on the existing set of eDiscovery capabilities in Office 365, allowing you to analyze large, unstructured data sets and reduce the amount of data that's relevant to a legal case.
+You can use the Search feature in the Office 365 Compliance Center to perform an initial search of all the content sources in your organization to identify and collect the data that might be relevant to a specific legal case.
+You can then analyze that data by applying the text analytics, machine learning, and relevance/predictive coding capabilities of Advanced eDiscovery.
+For more information, see link:/microsoft-365/compliance/overview-ediscovery-20[Advanced eDiscovery].
+
+*Customer Lockbox:* As a Microsoft admin, you can use Customer Lockbox to control how a Microsoft support engineer accesses your data during a help session.
+In cases where the engineer requires access to your data to troubleshoot and fix an issue, Customer Lockbox allows you to approve or reject the access request.
+If you approve it, the engineer is able to access the data.
+Each request has an expiration time, and once the issue is resolved, the request is closed and access is revoked.
+Customer Lockbox is included in the Office 365 Enterprise 5 plan, or you can purchase a separate subscription with any other Office 365 Enterprise plan.
+For more information, see link:/microsoft-365/compliance/customer-lockbox-requests[Office 365 Customer Lockbox Requests].
+
+*Microsoft Defender for Office 365:* Defender for Office 365 helps protect your organization against malware and viruses.
+Defender for Office 365 includes link:/office365/securitycompliance/atp-safe-links[Safe Links], link:/office365/securitycompliance/atp-safe-attachments[Safe Attachments], link:/office365/securitycompliance/atp-anti-phishing[Anti-phishing], and link:/office365/securitycompliance/learn-about-spoof-intelligence[Spoof intelligence] features.
+For more information about Defender for Office 365, see link:/office365/servicedescriptions/office-365-advanced-threat-protection-service-description[Microsoft Defender for Office 365 service description].
+
+link:/office365/securitycompliance/atp-safe-links[*Safe Links*] *and* link:/office365/securitycompliance/atp-safe-attachments[*Safe Attachments*]*:* Safe Links proactively protects your users from malicious hyperlinks in a message, providing protection every time the link is selected.
+Safe Attachments protects against unknown malware and viruses, routing all messages and attachments that don't have a known virus/malware signature to a special environment where Defender for Office 365 can detect malicious intent.
+
+=== Product use rights
+
+*Microsoft Online Services product use rights:* If you comply with your Microsoft Online Subscription Agreement, you may use the online services and related software as expressly permitted under https://www.microsoft.com/licensing/docs[Licensing Resources and Documents].
+
+*Office 365 operated by 21Vianet product use rights:* See the https://go.microsoft.com/fwlink/?linkid=846729[21Vianet Service Level Agreement], https://www.21vbluecloud.com/office365/O365-AgreeWebDir/[Online Services Standard Agreement], and https://www.21vbluecloud.com/office365/O365-TOU/[Terms of Use] for Office 365 operated by 21Vianet.
+Office 365 operated by 21Vianet is a service offered and operated only in China.
+This service is powered by technology that Microsoft has licensed to 21Vianet.
+For more information, see link:/microsoft-365/admin/services-in-china/services-in-china?viewFallbackFrom=o365-worldwide[*Learn about Office 365 operated by 21Vianet*].
+
+*Licensing:* To learn about licensing programs for your organization, see https://go.microsoft.com/fwlink/?LinkId=393693[Volume Licensing].
+
+=== Service level agreement
+
+*Microsoft Online Services Level Agreement:* We provide financial backing to our commitment to achieve and maintain the service levels for each service.
+If we don't achieve and maintain the service levels for each service as described in the Service Level Agreement, then you might be eligible for a credit towards a portion of your monthly service fees.
+To learn more about our Service Level Agreements for the services, download the https://go.microsoft.com/fwlink/?linkid=272026[Service Level Agreement for Microsoft Online Services].
+For overview information about system uptimes, as well as security, privacy, and compliance information, see link:/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity[Transparent operations from Office 365].
+
+*Service updates:* Updates and upgrades are rolled out to customers based on many factors, such as geography, language, data center, and subscription.
+This means that not all updates are available immediately to existing customers.
+To find out about features that have just released, or are about to be released, check out the https://go.microsoft.com/fwlink/?LinkId=509914[Microsoft 365 Roadmap].
+This topic doesn't apply to Office 365 operated by 21Vianet.
+To learn about service updates, see link:/microsoft-365/admin/contact-support-for-business-products[*Get technical, billing, and subscription support for Office 365 operated by 21Vianet*].
+
+*Targeted release:* With Targeted release, your organization or a set of your users receives a select set of service updates approximately one week before we begin our standard release process.
+To learn more, see link:/office365/admin/manage/release-options-in-office-365[Microsoft release options].
+
+*Update notifications:* Microsoft strives to notify customers in advance of any change that requires the administrator to take action to keep the service functioning normally.
+Unless otherwise noted, Microsoft will provide a minimum of 30 days advanced notification via link:/office365/admin/manage/message-center[Message Center] when an update may require admin action.
+Most service updates are bug fixes, performance improvements, and security updates that require zero action on behalf of the customer.
+New and improved features are found on the https://roadmap.office.com/[Microsoft 365 for business roadmap].
+Microsoft follows the https://support.microsoft.com/lifecycle#gp/osslpolicy[Online Lifecycle Policy].
+
+'''
+
+*Feature availability:* To view feature availability across plans, see link:/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description[Microsoft 365 and Office 365 platform service description].

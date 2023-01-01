@@ -1,0 +1,65 @@
+= Train your security staff for Microsoft 365 Defender
+:audience: ITPro
+:author: dansimp
+:description: Get to the key training resources for quick ramp-up of your security staff.
+:f1.keywords: ["NOCSH"]
+:keywords: videos, self-help, self-study, ramp-up, instruction, courses, learning path, Microsoft Learn, course, courses, SecOps, security analyst
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["M365-security-compliance", "m365initiative-m365-defender"]
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Train your security staff for Microsoft 365 Defender
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+With the urgency of protecting your organization and its data from attackers, you need to quickly onboard your security staff to Microsoft 365 Defender.
+Microsoft provides multiple types of learning and self-study resources for Microsoft 365 Defender and associated services.
+
+=== Microsoft 365 Defender Ninja training
+
+https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376[Microsoft 365 Defender Ninja training] is a set of organized sections and modules to step you through the features and functions of Microsoft 365 Defender.
+The training goes across the threat signal sources&mdash;such as Microsoft Defender for Endpoint and others&mdash;but does not cover the individual sources themselves.
+
+The content is structured into three different knowledge levels, with multiple modules: Fundamentals, Intermediate, and Expert.
+Each level includes a knowledge check to test your understanding of the material.
+
+=== Learning paths
+
+Use these learning paths and their modules to build an understanding of Microsoft 365 Defender and Microsoft Defender for Endpoint, one module and unit at a time.
+
+* link:/training/paths/defender-detect-respond/[Detect and respond to cyber attacks with Microsoft 365 Defender]
+* link:/training/paths/defender-endpoint-fundamentals/[Secure your organization with Microsoft Defender for Endpoint]
+
+=== Learning paths in the Microsoft 365 Defender portal learning hub
+
+The https://security.microsoft.com/learning[Microsoft 365 Defender portal learning hub] includes these learning paths:
+
+* Getting started with the Microsoft 365 security center
+* How to Investigate Using Microsoft 365 Defender
+* Microsoft 365 Defender Basic Training
+* Microsoft Defender for Endpoint Basic Training
+* Microsoft Defender for Office 365 Best Practices
+* Setup
+
+=== Hands-on with a trial environment
+
+One of the best ways to learn is by configuring and testing Microsoft 365 Defender and its associated services in a trial environment.
+See xref:eval-overview.adoc[Evaluate and pilot Microsoft 365 Defender] for the details.
+
+=== Simulating an attack
+
+To test your security staff on their ability to detect and respond to a cyberattack, use a simulated attack.
+See link:eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal[Simulate attacks with the Microsoft 365 Defender portal] for more information.

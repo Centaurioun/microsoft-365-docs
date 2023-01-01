@@ -1,0 +1,66 @@
+= Responding to your first incident
+:audience: ITPro
+:author: dansimp
+:description: The basics of responding to your first incident in Microsoft 365 Defender.
+:f1.keywords: ["NOCSH"]
+:keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, self-study, ramp up, ramp-up, onboard, incident responder
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["M365-security-compliance", "m365solution-firstincident", "highpri"]
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Responding to your first incident
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+An organization's incident response strategy determines its ability to deal with increasingly disruptive security incidents and cybercrime.
+While taking preventative measures is important, the ability to act quickly to contain, eradicate, and recover from detected incidents can minimize damage and business losses.
+
+This incident response walkthrough shows how you, as part of a security operations (SecOps) team, can perform most of the key incident response steps within Microsoft 365 Defender.
+Here are the steps:
+
+* Preparation of your security posture
+* For each incident:
+ ** Step 1: Triage and analysis
+ ** Step 2: Remediation (containment, eradication, and recovery)
+ ** Step 3: Post-incident review
+
+A security incident is defined by National Institute of Standards and Technology (NIST) as "an occurrence that actually or potentially jeopardizes the confidentiality, integrity, or availability of an information system;
+or the information the system processes, stores, or transmits;
+or that constitutes a violation or imminent threat of violation of security policies, security procedures, or acceptable use policies."
+
+Incidents in Microsoft 365 Defender are the logical starting points for analysis and incident response.
+Analyzing and remediating incidents typically makes up most of a  (SecOps) team's tasks and time.
+
+=== Next step
+
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="The Remediate option in Respond to your first incident page" lightbox="../../media/first-incident-overview/first-incident-path.png":::
+
+Make sure your organization and Microsoft 365 tenant is xref:first-incident-prepare.adoc[prepared for incident handling].
+
+=== See also
+
+Incident response guidance for Microsoft 365 Defender:
+
+* xref:incidents-overview.adoc[Incidents overview]
+* xref:investigate-incidents.adoc[Investigate incidents]
+* xref:manage-incidents.adoc[Manage incidents]
+
+More examples of first incident responses:
+
+* xref:first-incident-path-phishing.adoc[Phishing email]
+* xref:first-incident-path-identity.adoc[Identity-base attack]
+
+link:/security/compass/incident-response-playbooks[Detailed incident response playbooks]

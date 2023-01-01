@@ -1,0 +1,656 @@
+= Double Key Encryption (DKE)
+:audience: Admin
+:author: kccross
+:description: DKE enables you to protect highly sensitive data while maintaining full control of your key.
+:manager: laurawi
+:ms.author: krowley
+:ms.collection: ["M365-security-compliance"]
+:ms.custom: admindeeplinkCOMPLIANCE
+:ms.date: 02/28/2022
+:ms.localizationpriority: medium
+:ms.reviewer: esaggese
+:ms.service: information-protection
+:ms.topic: conceptual
+
+== Double Key Encryption
+
+____
+_Applies to: Microsoft Purview Double Key Encryption, https://www.microsoft.com/microsoft-365/business/compliance-management[Microsoft Purview], https://azure.microsoft.com/pricing/[Azure Information Protection]_
+
+_Instructions for: link:/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients[Azure Information Protection unified labeling client for Windows]_
+____
+
+____
+_Service description for: link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft Purview]_
+____
+
+Double Key Encryption (DKE) uses two keys together to access protected content.
+Microsoft stores one key in Microsoft Azure, and you hold the other key.
+You maintain full control of one of your keys using the Double Key Encryption service.
+You apply protection using The Azure Information Protection unified labeling client to your highly sensitive content.
+
+Double Key Encryption supports both cloud and on-premises deployments.
+These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
+
+For more information about the default, cloud-based tenant root keys, see link:/azure/information-protection/plan-implement-tenant-key[Planning and implementing your Azure Information Protection tenant key].
+
+=== When your organization should adopt DKE
+
+Double Key Encryption is intended for your most sensitive data that is subject to the strictest protection requirements.
+DKE isn't intended for all data.
+In general, you'll be using Double Key Encryption to protect only a small part of your overall data.
+You should do due diligence in identifying the right data to cover with this solution before you deploy.
+In some cases, you might need to narrow your scope and use other solutions for most of your data, such as Microsoft Purview Information Protection with Microsoft-managed keys or BYOK.
+These solutions are sufficient for documents that aren't subject to enhanced protections and regulatory requirements.
+Also, these solutions enable you to use the most powerful Office 365 services;
+services that you can't use with DKE encrypted content.
+For example:
+
+* Transport rules including anti-malware and spam that require visibility into the attachment
+* Microsoft Delve
+* eDiscovery
+* Content search and indexing
+* Office Web Apps including coauthoring functionality
+
+Any external applications or services that aren't integrated with DKE through the Microsoft Information Protection (MIP) SDK will be unable to perform actions on the encrypted data.
+
+The Microsoft Information Protection SDK 1.7+ supports Double Key Encryption.
+Applications that integrate with our SDK can reason over this data with sufficient permissions and integrations in place.
+
+Use Microsoft Purview Information Protection capabilities (classification and labeling) to protect most of your sensitive data and only use DKE for your mission-critical data.
+Double Key Encryption is relevant for sensitive data in highly regulated industries such as Financial services and Healthcare.
+
+If your organizations have any of the following requirements, you can use DKE to help secure your content:
+
+* You want to ensure that _only you_ can ever decrypt protected content, under all circumstances.
+* You don't want Microsoft to have access to protected data on its own.
+* You have regulatory requirements to hold keys within a geographical boundary.
+All of the keys that you hold for data encryption and decryption are maintained in your data center.
+
+=== System and licensing requirements for DKE
+
+*Double Key Encryption* comes with Microsoft 365 E5.
+If you don't have a Microsoft 365 E5 license, you can sign up for a https://aka.ms/M365E5ComplianceTrial[trial].
+For more information about these licenses, see link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft 365 licensing guidance for security & compliance].
+
+*Azure Information Protection*.
+DKE works with sensitivity labels and requires Azure Information Protection.
+
+DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps.
+Install these prerequisites on each client computer where you want to protect and consume protected documents.
+
+*Microsoft Office Apps for enterprise* version 2009 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
+
+*Azure Information Protection Unified Labeling Client* versions 2.7.93.0 or later.
+Download and install the Unified Labeling client from the https://www.microsoft.com/download/details.aspx?id=53018[Microsoft download center].
+
+=== Supported environments for storing and viewing DKE-protected content
+
+*Supported applications*.
+https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product[Microsoft 365 Apps for enterprise] clients on Windows, including Word, Excel, and PowerPoint.
+
+*Online content support*.
+You can store documents and files that are protected with Double Key Encryption online in both Microsoft SharePoint and OneDrive for Business.
+You must label and protect documents and files with DKE by supported applications before you upload to these locations.
+You can share encrypted content by email, but you can't view encrypted documents and files online.
+Instead, you must view protected content using the supported desktop applications and clients on your local computer.
+
+=== Overview of deploying DKE
+
+You'll follow these general steps to set up DKE.
+Once you've completed these steps, your end users can protect your highly sensitive data with Double Key Encryption.
+
+. Deploy the DKE service as described in this article.
+. Create a label with Double Key Encryption.
+In the Microsoft Purview compliance portal, navigate to *Information protection* and create a new label with Double Key Encryption.
+See xref:./encryption-sensitivity-labels.adoc[Restrict access to content by using sensitivity labels to apply encryption].
+. Use Double Key Encryption labels.
+Protect data by selecting the Double Key Encrypted label from the Sensitivity ribbon in Microsoft Office.
+
+There are several ways you can complete some of the steps to deploy Double Key Encryption.
+This article provides detailed instructions so that less experienced admins successfully deploy the service.
+If you're comfortable doing so, you can choose to use your own methods.
+
+=== Deploy DKE
+
+This article and the deployment video use Azure as the deployment destination for the DKE service.
+If you're deploying to another location, you'll need to provide your own values.
+
+You'll follow these general steps to set up Double Key Encryption for your organization.
+
+. <<install-software-prerequisites-for-the-dke-service,Install software prerequisites for the DKE service>>
+. <<clone-the-dke-github-repository,Clone the Double Key Encryption GitHub repository>>
+. <<modify-application-settings,Modify application settings>>
+. <<generate-test-keys,Generate test keys>>
+. <<build-the-project,Build the project>>
+. <<deploy-the-dke-service-and-publish-the-key-store,Deploy the DKE service and publish the key store>>
+. <<validate-your-deployment,Validate your deployment>>
+. <<register-your-key-store,Register your key store>>
+. <<create-sensitivity-labels-using-dke,Create sensitivity labels using DKE>>
+. <<enable-dke-in-your-client,Enable DKE in your client>>
+. <<migrate-protected-files-from-hyok-labels-to-dke-labels,Migrate protected files from HYOK labels to DKE labels>>
+
+When you're done, you can encrypt documents and files using DKE.
+For information, see https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9[Apply sensitivity labels to your files and email in Office].
+
+==== Install software prerequisites for the DKE service
+
+Install these prerequisites on the computer where you want to install the DKE service.
+
+*.NET Core 3.1 SDK*.
+Download and install the SDK from https://dotnet.microsoft.com/download/dotnet-core/3.1[Download .NET Core 3.1].
+
+*Visual Studio Code*.
+Download Visual Studio Code from https://code.visualstudio.com.
+Once installed, run Visual Studio Code and select *View* > *Extensions*.
+Install these extensions.
+
+* C# for Visual Studio Code
+* NuGet Package Manager
+
+*Git resources*.
+Download and install one of the following.
+
+* https://git-scm.com/downloads[Git]
+* https://desktop.github.com/[GitHub Desktop]
+* https://github.com/enterprise[GitHub Enterprise]
+
+*OpenSSL* You must have https://slproweb.com/products/Win32OpenSSL.html[OpenSSL] installed to <<generate-test-keys,generate test keys>> after you deploy DKE.
+Make sure you're invoking it correctly from your environment variables path.
+For example, see "Add the installation directory to PATH" at https://www.osradar.com/install-openssl-windows/ for details.
+
+==== Clone the DKE GitHub repository
+
+Microsoft supplies the DKE source files in a GitHub repository.
+You clone the repository to build the project locally for your organization's use.
+The DKE GitHub repository is located at https://github.com/Azure-Samples/DoubleKeyEncryptionService.
+
+The following instructions are intended for inexperienced git or Visual Studio Code users:
+
+. In your browser, go to: https://github.com/Azure-Samples/DoubleKeyEncryptionService.
+. Towards the right side of the screen, select *Code*.
+Your version of the UI might show a *Clone or download* button.
+Then, in the dropdown that appears, select the copy icon to copy the URL to your clipboard.
++
+For example:
++
+____
+[!div class="mx-imgBorder"] image:../media/dke-clone.png[Clone the Double Key Encryption service repository from GitHub.]
+____
+
+. In Visual Studio Code, select *View* > *Command Palette* and select *Git: Clone*.
+To jump to the option in the list, start typing `git: clone` to filter the entries and then select it from the drop-down.
+For example:
++
+____
+[!div class="mx-imgBorder"] image:../media/dke-vscode-clone.png[Visual Studio Code GIT:Clone option.]
+____
+
+. In the text box, paste the URL that you copied from Git and select *Clone from GitHub*.
+. In the *Select Folder* dialog that appears, browse to and select a location to store the repository.
+At the prompt, select *Open*.
++
+The repository opens in Visual Studio Code, and displays the current Git branch at the bottom left.
+For example,  The branch should be *main*.
+For example:
++
+image::../media/dke-vscode-main-branch.jpg[Screenshot of the DKE repo in Visual Studio Code displaying the main branch.]
+
+. If you're not on the main branch, you'll need to select it.
+In Visual Studio Code, select the branch and choose *main* from the list of branches that displays.
++
+____
+[!IMPORTANT] Selecting the main branch ensures that you have the correct files to build the project.
+If you don't choose the correct branch your deployment will fail.
+____
+
+You now have your DKE source repository set up locally.
+Next, <<modify-application-settings,modify application settings>> for your organization.
+
+==== Modify application settings
+
+To deploy the DKE service, you must modify the following types of application settings:
+
+* <<key-access-settings,Key access settings>>
+* <<tenant-and-key-settings,Tenant and key settings>>
+
+You modify application settings in the appsettings.json file.
+This file is located in the DoubleKeyEncryptionService repo you cloned locally under DoubleKeyEncryptionService\src\customer-key-store.
+For example, in Visual Studio Code, you can browse to the file as shown in the following picture.
+
+image::../media/dke-appsettingsjson.png[Locating the appsettings.json file for DKE.]
+
+===== Key access settings
+
+Choose whether to use email or role authorization.
+DKE supports only one of these authentication methods at a time.
+
+* *Email authorization*.
+Allows your organization to authorize access to keys based on email addresses only.
+* *Role authorization*.
+Allows your organization to authorize access to keys based on Active Directory groups, and requires that the web service can query LDAP.
+
+====== To set key access settings for DKE using email authorization
+
+. Open the *appsettings.json* file and locate the `AuthorizedEmailAddress` setting.
+. Add the email address or addresses that you want to authorize.
+Separate multiple email addresses with double quotes and commas.
+For example:
++
+[,json]
+----
+"AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
+----
+
+. Locate the `LDAPPath` setting and remove the text `If you use role authorization (AuthorizedRoles) then this is the LDAP path.` between the double quotes.
+Leave the double quotes in place.
+When you're finished, the setting should look like this.
++
+[,json]
+----
+"LDAPPath": ""
+----
+
+. Locate the `AuthorizedRoles` setting and delete the entire line.
+
+This image shows the *appsettings.json* file correctly formatted for email authorization.
+
+image::../media/dke-email-accesssetting.png[The appsettings.json file showing email authorization method.]
+
+====== To set key access settings for DKE using role authorization
+
+. Open the *appsettings.json* file and locate the `AuthorizedRoles` setting.
+. Add the Active Directory group names you want to authorize.
+Separate multiple group names with double quotes and commas.
+For example:
++
+[,json]
+----
+"AuthorizedRoles": ["group1", "group2", "group3"]
+----
+
+. Locate the `LDAPPath` setting and add the Active Directory domain.
+For example:
++
+[,json]
+----
+"LDAPPath": "contoso.com"
+----
+
+. Locate the `AuthorizedEmailAddress` setting and delete the entire line.
+
+This image shows the *appsettings.json* file correctly formatted for role authorization.
+
+image::../media/dke-role-accesssetting.png[appsettings.json file showing role authorization method.]
+
+===== Tenant and key settings
+
+DKE tenant and key settings are located in the *appsettings.json* file.
+
+====== To configure tenant and key settings for DKE
+
+. Open the *appsettings.json* file.
+. Locate the `ValidIssuers` setting and replace `<tenantid>` with your tenant ID.
+You can locate your tenant ID by going to the Azure portal and viewing the https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties[tenant properties].
+For example:
++
+[,json]
+----
+"ValidIssuers": [
+  "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
+]
+----
+
+____
+[!NOTE] If you want to enable external B2B access to your key store, you will also need to include these external tenants as part of the valid issuers' list.
+____
+
+Locate the `JwtAudience`.
+Replace `<yourhostname>` with the hostname of the machine where the DKE service will run.
+For example: "https://dkeservice.contoso.com"
+
+____
+[!IMPORTANT] The value for `JwtAudience` must match the name of your host _exactly_.
+____
+
+* `TestKeys:Name`.
+Enter a name for your key.
+For example: `TestKey1`
+* `TestKeys:Id`.
+Create a GUID and enter it as the `TestKeys:ID` value.
+For example, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`.
+You can use a site like https://guidgenerator.com/[Online GUID Generator] to randomly generate a GUID.
+
+This image shows the correct format for tenant and keys settings in *appsettings.json*.
+`LDAPPath` is configured for role authorization.
+
+image::../media/dke-appsettingsjson-tenantkeysettings.png[Shows correct tenant and key settings for DKE in the appsettings.json file.]
+
+==== Generate test keys
+
+Once you have your application settings defined, you're ready to generate public and private test keys.
+
+To generate keys:
+
+. From the Windows Start menu, run the OpenSSL Command Prompt.
+. Change to the folder where you want to save the test keys.
+The files you create by completing the steps in this task are stored in the same folder.
+. Generate the new test key.
++
+[,console]
+----
+openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
+----
+
+. Generate the private key.
++
+If you installed OpenSSL version 3 or later, run the following command:
+
+[,console]
+----
+  openssl rsa -in key.pem -out privkeynopass.pem -outform PEM -traditional
+----
+
+____
+Otherwise run the following command:
+
+[,console]
+----
+ openssl rsa -in key.pem -out privkeynopass.pem -outform PEM
+----
+____
+
+. Generate the public key.
++
+[,console]
+----
+openssl rsa -in key.pem -pubout > pubkeyonly.pem
+----
+
+. In a text editor, open *pubkeyonly.pem*.
+Copy all of the content in the *pubkeyonly.pem* file, except the first and last lines, into the `PublicPem` section of the *appsettings.json* file.
+. In a text editor, open *privkeynopass.pem*.
+Copy all of the content in the *privkeynopass.pem* file, except the first and last lines, into the `PrivatePem` section of the *appsettings.json* file.
+. Remove all blank spaces and newlines in both the `PublicPem` and `PrivatePem` sections.
++
+____
+[!IMPORTANT] When you copy this content, do not delete any of the PEM data.
+____
+
+. In Visual Studio Code, browse to the *Startup.cs* file.
+This file is located in the DoubleKeyEncryptionService repo you cloned locally under DoubleKeyEncryptionService\src\customer-key-store.
+. Locate the following lines:
++
+[,csharp]
+----
+     #if USE_TEST_KEYS
+     #error !!!!!!!!!!!!!!!!!!!!!! Use of test keys is only supported for testing,
+     DO NOT USE FOR PRODUCTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+     services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
+     #endif
+----
+
+. Replace these lines with the following text:
++
+[,csharp]
+----
+ services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
+----
++
+The end results should look similar to the following.
++
+image::../media/dke-startupcs-usetestkeys.png[startup.cs file for public preview.]
+
+Now you're ready to <<build-the-project,build your DKE project>>.
+
+==== Build the project
+
+Use the following instructions to build the DKE project locally:
+
+. In Visual Studio Code, in the DKE service repository, select *View* > *Command Palette* and then type *build* at the prompt.
+. From the list, choose *Tasks: Run build task*.
++
+If there are no build tasks found, select *Configure Build Task* and create one for .NET core as follows.
++
+image::../media/dke-configurebuildtask.png[Configure missing build task for .NET.]
+
+ .. Choose *Create tasks.json from template*.
++
+image::../media/dke-createtasksjsonfromtemplate.png[Create tasks.json file from template for DKE.]
+
+ .. From the list of template types, select *.NET Core*.
++
+image::../media/dke-tasksjsontemplate.png[Select the correct template for DKE.]
+
+ .. In the build section, locate the path to the *customerkeystore.csproj* file.
+If it's not there, add the following line:
++
+[,json]
+----
+"${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
+----
+
+ .. Run the build again.
+
+. Verify that there are no red errors in the output window.
++
+If there are red errors, check the console output.
+Ensure that you completed all the previous steps correctly and the correct build versions are present.
+
+Your setup is now complete.
+Before you publish the keystore, in appsettings.json, for the JwtAudience setting, ensure the value for hostname exactly matches your App Service host name.
+
+==== Deploy the DKE service and publish the key store
+
+For production deployments, deploy the service either in a third-party cloud or link:/aspnet/core/tutorials/publish-to-iis?preserve-view=true&tabs=netcore-cli&view=aspnetcore-3.1[publish to an on-premises system].
+
+You may prefer other methods to deploy your keys.
+Select the method that works best for your organization.
+
+For pilot deployments, you can deploy in Azure and get started right away.
+
+===== To create an Azure Web App instance to host your DKE deployment
+
+To publish the key store, you'll create an Azure App Service instance to host your DKE deployment.
+Next, you'll publish your generated keys to Azure.
+
+. In your browser, sign in to the https://ms.portal.azure.com[Microsoft Azure portal], and go to *App Services* > *Add*.
+. Select your subscription and resource group and define your instance details.
+ ** Enter the hostname of the computer where you want to install the DKE service.
+Make sure it's the same name as the one defined for the JwtAudience setting in the <<tenant-and-key-settings,*appsettings.json*>> file.
+The value you provide for the name is also the WebAppInstanceName.
+ ** For *Publish*, select *code*, and for *Runtime stack*, select *.NET Core 3.1*.
+
++
+For example:
++
+____
+[!div class="mx-imgBorder"] image:../media/dke-azure-add-app-service.png[Add your App Service.]
+____
+. At the bottom of the page, select *Review + create*, and then select *Add*.
+. Do one of the following to publish your generated keys:
+ ** <<publish-via-zipdeployui,Publish via ZipDeployUI>>
+ ** <<publish-via-ftp,Publish via FTP>>
+ ** link:/aspnet/core/tutorials/[Publish via Visual Studio 2019 or later]
+
+===== Publish via ZipDeployUI
+
+. Go to `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
++
+For example: `+https://dkeservice.contoso.scm.azurewebsites.net/ZipDeployUI+`
+
+. In the codebase for the key store, go to the *customer-key-store\src\customer-key-store* folder, and verify that this folder contains the *customerkeystore.csproj* file.
+. Run: *dotnet publish*
++
+The output window displays the directory where the publish was deployed.
++
+For example: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
+
+. Send all files in the publish directory to a .zip file.
+When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
+. Drag and drop the .zip file you create to the ZipDeployUI site you opened above.
+For example: `+https://dkeservice.scm.azurewebsites.net/ZipDeployUI+`
+
+DKE is deployed and you can browse to the test keys you've created.
+Continue to <<validate-your-deployment,Validate your deployment>> below.
+
+===== Publish via FTP
+
+. Connect to the App Service you created <<deploy-the-dke-service-and-publish-the-key-store,above>>.
++
+In your browser, go to: *Azure portal* > *App Service* > *Deployment Center* > *Manual Deployment* > *FTP* > *Dashboard*.
+
+. Copy the connection strings displayed to a local file.
+You'll use these strings to connect to the Web App Service and upload files via FTP.
++
+For example:
++
+image::../media/dke-ftp-dashboard.png[Copy connection strings from the FTP dashboard.]
+
+. In the codebase for the key storage, go to the *customer-key-store\src\customer-key-store directory*.
+. Verify that this directory contains the *customerkeystore.csproj* file.
+. Run: *dotnet publish*
++
+The output contains the directory where the publish was deployed.
++
+For example: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
+
+. Send all files in the publish directory to a zip file.
+When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
+. From your FTP client, use the connection information you copied to connect to your App Service.
+Upload the .zip file you created in the previous step to the root directory of your Web App.
+
+DKE is deployed and you can browse to the test keys you'd created.
+Next, <<validate-your-deployment,Validate your deployment>>.
+
+==== Validate your deployment
+
+After deploying DKE using one of the methods described above, validate the deployment and the key store settings.
+
+Run:
+
+[,powershell]
+----
+src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
+----
+
+For example:
+
+[,powershell]
+----
+key_store_tester.ps1 https://dkeservice.contoso.com/TestKey1
+----
+
+Ensure that no errors appear in the output.
+When you're ready, <<register-your-key-store,register your key store>>.
+
+The key name is case-sensitive.
+Enter the key name as it appears in the appsettings.json file.
+
+=== Register your key store
+
+The following steps enable you to register your DKE service.
+Registering your DKE service is the last step in deploying DKE before you can start creating labels.
+
+To register the DKE service:
+
+. In your browser, open the https://ms.portal.azure.com/[Microsoft Azure portal], and go to *All Services* > *Identity* > *App Registrations*.
+. Select *New registration*, and enter a meaningful name.
+. Select an account type from the options displayed.
++
+For example:
++
+____
+[!div class="mx-imgBorder"] image:../media/dke-app-registration.png[New App Registration.]
+____
+
+. At the bottom of the page, select *Register* to create the new App Registration.
+. In your new App Registration, in the left pane, under *Manage*, select *Authentication*.
+. Select *Add a platform*.
+. On the *Configure platforms* popup, select *Web*.
+. Under *Redirect URIs*, enter the URI of your double key encryption service.
+Enter the App Service URL, including both the hostname and domain.
++
+For example: `+https://mydkeservicetest.com+`
+
+ ** The URL you enter must match the hostname where your DKE service is deployed.
+ ** The domain must be a link:/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains[verified domain].
+ ** In all cases, the scheme must be *https*.
+
++
+Ensure the hostname exactly matches your App Service hostname.
+
+. Under *Implicit grant*, select the *ID tokens* checkbox.
+. Select *Save* to save your changes.
+. On the left pane, select *Expose an API*, next to Application ID URI, enter your App Service URL, including both hostname and domain, and then select *Set*.
+. Still on the *Expose an API* page, in the *Scopes defined by this API* area, select *Add a scope*.
+In the new scope:
+ .. Define the scope name as *user_impersonation*.
+ .. Select the administrators and users who can consent.
+ .. Define any remaining values required.
+ .. Select *Add scope*.
+ .. Select *Save* at the top to save your changes.
+. Still on the *Expose an API* page, in the *Authorized client applications* area, select *Add a client application*.
++
+In the new client application:
+
+ .. Define the Client ID as `d3590ed6-52b3-4102-aeff-aad2292ab01c`.
+This value is the Microsoft Office client ID, and enables Office to obtain an access token for your key store.
+ .. Under *Authorized scopes*, select the *user_impersonation* scope.
+ .. Select *Add application*.
+ .. Select *Save* at the top to save your changes.
+ .. Repeat these steps, but this time, define the client ID as `c00e9d32-3c8d-4a7d-832b-029040e7db99`.
+This value is the Azure Information Protection unified labeling client ID.
+
+Your DKE service is now registered.
+Continue by <<create-sensitivity-labels-using-dke,creating labels using DKE>>.
+
+=== Create sensitivity labels using DKE
+
+In the Microsoft Purview compliance portal, create a new sensitivity label and apply encryption as you would otherwise.
+Select *Use Double Key Encryption* and enter the endpoint URL for your key.
+You need to include the key name you've provided within the "TestKeys" section of the appsettings.json file in the URL.
+
+For example: `+https://testingdke1.azurewebsites.net/KEYNAME+`
+
+____
+[!div class="mx-imgBorder"] image:../media/dke-use-dke.png[Select Use Double Key Encryption in the Microsoft Purview compliance portal.]
+____
+
+Any DKE labels you add will start appearing for users in the latest versions of Microsoft 365 Apps for enterprise.
+
+____
+[!NOTE] It may take up to 24 hours for the clients to refresh with the new labels.
+____
+
+==== Enable DKE in your client
+
+If you're an Office Insider, DKE is enabled for you.
+Otherwise, enable DKE for your client by adding the following registry keys:
+
+[,console]
+----
+   [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
+   "DoubleKeyProtection"=dword:00000001
+
+   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
+   "DoubleKeyProtection"=dword:00000001
+----
+
+=== Migrate protected files from HYOK labels to DKE labels
+
+If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels.
+To migrate, you'll use the AIP scanner.
+To get started using the scanner, see link:/azure/information-protection/deploy-aip-scanner[What is the Azure Information Protection unified labeling scanner?].
+
+If you don't migrate content, your HYOK protected content will remain unaffected.
+
+=== Other deployment options
+
+We realize that for some customers in highly regulated industries, this standard reference implementation using software-based keys may not be sufficient to meet their enhanced compliance obligations and needs.
+We've partnered with third-party hardware security module (HSM) vendors to support enhanced key management options in the DKE service, including:
+
+* https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.[Entrust]
+* https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption[Thales]
+
+Reach out directly to these vendors for more information and guidance on their in-market DKE HSM solutions.

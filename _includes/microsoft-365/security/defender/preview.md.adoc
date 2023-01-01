@@ -1,0 +1,67 @@
+= Preview features in Microsoft 365 Defender
+:audience: ITPro
+:author: mjcaparas
+:description: Learn about new features in Microsoft 365 security
+:f1.keywords: ["NOCSH"]
+:keywords: preview, new, m365 security, security, 365, capabilities
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Microsoft 365 Defender preview features
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+The Microsoft 365 Defender service is constantly being updated to include new feature enhancements and capabilities.
+
+Learn about new features in the Microsoft 365 Defender preview release and be among the first to try upcoming features by turning on the preview experience.
+
+For more information on new capabilities that are generally available, see xref:whats-new.adoc[What's new in Microsoft 365 Defender].
+
+## What you need to know
+
+When working with features in public preview, these features:
+
+* May have restricted or limited functionality.
+For example, the feature may only apply to one platform.
+* Typically go through feature changes before they're generally available (GA).
+* Are fully supported by Microsoft.
+* May only be available in selected geographic regions or cloud environments.
+For example, the feature may not exist in the government cloud.
+* Individual features in preview may have more usage and support restrictions.
+If so, this information is typically noted in the feature documentation.
+* The preview versions are provided with a standard support level, and can be used for production environments.
+
+=== Required permissions
+
+Accounts assigned the following Azure Active Directory (Azure AD) roles can turn on Microsoft 365 Defender Preview features:
+
+* Global administrator
+* Security administrator
+* Security Operator
+
+=== Turn on preview features
+
+You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.
+
+Turn on the preview experience setting to be among the first to try upcoming features.
+
+. In the navigation pane, select *Settings*.
+. Select *Microsoft 365 Defender*.
+. Select *Preview features* > *Turn on preview features*.
+. Select *Save*.
+
+You'll know you have preview features turned on when you see that the *Turn on preview features* check box is selected.

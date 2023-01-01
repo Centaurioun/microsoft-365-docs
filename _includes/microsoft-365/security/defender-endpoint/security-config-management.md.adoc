@@ -1,0 +1,83 @@
+= Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager
+:audience: ITPro
+:author: mjcaparas
+:description: Learn how to enable security settings in Microsoft Endpoint Manager through Microsoft Defender for Endpoint.
+:experimental:
+:keywords: device management, configure Microsoft Defender for Endpoint devices, Microsoft Endpoint Manager
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* link:/mem/intune/protect/mde-security-integration[Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink[Sign up for a free trial.]
+____
+
+Security Management for Microsoft Defender for Endpoint is a capability for devices that aren't managed by a Microsoft Endpoint Manager to receive security configurations for Microsoft Defender directly from Endpoint Manager.
+
+For more information on Security Configuration Management, including prerequisites, supported platforms and more, see link:/mem/intune/protect/mde-security-integration[Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager].
+
+Watch this video to learn how to use Microsoft Endpoint Manager to manage security configuration for Microsoft Defender for Endpoint.
+
+____
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVq]
+____
+
+[!INCLUDE xref:../../includes/security-config-mgt-prerequisites.adoc[Prerequisites]]
+
+____
+[!NOTE] This capability is being rolled out gradually.
+____
+
+For more information on Security Configuration Management, see link:/mem/intune/protect/mde-security-integration[Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager].
+
+If you encounter enrollment issues, see xref:troubleshoot-security-config-mgt.adoc[Troubleshoot Security Configuration Management onboarding issues].
+
+____
+[!NOTE] This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager).
+Devices enrolled into Intune will continue to receive policies through their established management channel.
+____
+
+=== Identify onboarded devices
+
+Use the following steps to validate that your endpoints have successfully completed the Security Management for Microsoft Defender for Endpoint onboarding process.
+
+. Verify that the device appears in the Device Inventory section of https://security.microsoft.com/[Microsoft 365 Defender].
+. In the https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/[Azure Active Directory portal], verify that the device has successfully been enrolled.
+. In the https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview[Microsoft Endpoint Manager Admin Center],  verify that the device has successfully been enrolled by looking it up in the menu:Devices[All devices] section.
+
+=== Offboard devices
+
+To offboard devices that have been onboarded via Security Management for Microsoft Defender for Endpoint, see xref:offboard-machines.adoc[Offboard devices from the Microsoft Defender for Endpoint service].
+
+____
+[!NOTE] Offboarding will xref:manage-tamper-protection-microsoft-365-defender.adoc[disable Tamper Protection] if it is enabled.
+____
+
+=== Troubleshooting Security Management
+
+To troubleshoot Security Management for Microsoft Defender for Endpoint enrollment issues, see xref:troubleshoot-security-config-mgt.adoc[Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint].
+
+=== Related topic
+
+* xref:troubleshoot-security-config-mgt.adoc[Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint]
+* link:/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-mde-security-configuration-management[Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager]

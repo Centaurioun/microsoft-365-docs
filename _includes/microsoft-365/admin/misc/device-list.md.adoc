@@ -1,0 +1,38 @@
+= Device list CSV-file
+:ROBOTS: NOINDEX
+:audience: Admin
+:author: kwekua
+:description: Learn how to make a CSV file for AutoPilot in Microsoft 365 for business.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
+:ms.author: kwekua
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_NonTOC"]
+:ms.custom: ["MSB365", "AdminSurgePortfolio"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: overview
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Windows Autopilot device list CSV-file
+
+=== Device list .csv file format
+
+To manage and deploy devices through Windows Autopilot, you'll need a .csv file that contains specific information about the devices.
+
+Columns in the device list file must have the following headers in the specified order:
+
+* Column A: Device Serial Number
+* Column B: leave blank
+* Column C: Hardware Hash
+
+You can get this information from your hardware vendor, or you can use the https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo[Get-WindowsAutoPilotInfo PowerShell script] that will generate a CSV file.
+
+When you add devices, you also need to add them to a Profile.
+A profile is used to apply AutoPilot deployment profiles to a device or a group of devices.
+
+=== Related content
+
+link:../../index.yml[Microsoft 365 for business documentation and resources]
+
+xref:../../admin/admin-overview/what-is-microsoft-365.adoc[Get started with Microsoft 365 for business]

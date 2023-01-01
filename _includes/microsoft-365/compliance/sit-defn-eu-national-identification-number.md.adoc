@@ -1,0 +1,49 @@
+= EU national identification number entity definition
+:audience: Admin
+:author: chrfox
+:description: EU national identification number sensitive information type entity definition.
+:f1.keywords: ["CSH"]
+:f1_keywords: ["ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation"]
+:feedback_system: None
+:hideEdit: true
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: reference
+:recommendations: false
+:search.appverid: MET150
+
+== EU national identification number
+
+These entities are in the EU National Identification Number and are sensitive information types.
+
+* xref:sit-defn-austria-identity-card.adoc[Austria]
+* xref:sit-defn-belgium-national-number.adoc[Belgium]
+* xref:sit-defn-bulgaria-uniform-civil-number.adoc[Bulgaria]
+* xref:sit-defn-croatia-identity-card-number.adoc[Croatia]
+* xref:sit-defn-cyprus-identity-card.adoc[Cyprus]
+* xref:sit-defn-czech-personal-identity-number.adoc[Czech]
+* xref:sit-defn-denmark-personal-identification-number.adoc[Denmark]
+* xref:sit-defn-estonia-personal-identification-code.adoc[Estonia]
+* xref:sit-defn-finland-national-id.adoc[Finland]
+* xref:sit-defn-france-national-id-card.adoc[France]
+* xref:sit-defn-germany-identity-card-number.adoc[Germany]
+* xref:sit-defn-greece-national-id-card.adoc[Greece]
+* xref:sit-defn-hungary-personal-identification-number.adoc[Hungary]
+* xref:sit-defn-ireland-personal-public-service-number.adoc[Ireland]
+* xref:sit-defn-italy-fiscal-code.adoc[Italy]
+* xref:sit-defn-latvia-personal-code.adoc[Latvia]
+* xref:sit-defn-lithuania-personal-code.adoc[Lithuania]
+* xref:sit-defn-luxemburg-national-identification-number-natural-persons.adoc[Luxemburg]
+* xref:sit-defn-malta-identity-card-number.adoc[Malta]
+* xref:sit-defn-netherlands-citizens-service-number.adoc[Netherlands]
+* xref:sit-defn-poland-national-id.adoc[Poland]
+* xref:sit-defn-portugal-citizen-card-number.adoc[Portugal]
+* xref:sit-defn-romania-personal-numeric-code.adoc[Romania]
+* xref:sit-defn-slovakia-personal-number.adoc[Slovakia]
+* xref:sit-defn-slovenia-unique-master-citizen-number.adoc[Slovenia]
+* xref:sit-defn-spain-dni.adoc[Spain]
+* xref:sit-defn-uk-national-insurance-number.adoc[U.K.]

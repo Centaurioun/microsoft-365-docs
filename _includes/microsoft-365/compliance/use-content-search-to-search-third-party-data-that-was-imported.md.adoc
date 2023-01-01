@@ -1,0 +1,307 @@
+= Use Content Search to search third-party imported data
+:audience: Admin
+:author: robmazz
+:description: Use the Content Search eDiscovery tool to search for items imported to mailboxes in Microsoft 365 from a third-party data source by creating queries.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: robmazz
+:ms.collection: ["tier1", "M365-security-compliance", "content-search"]
+:ms.custom: seo-marvel-apr2020
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+
+== Use Content Search to search third-party data imported by a custom partner connector
+
+You can use the xref:content-search.adoc[Content search eDiscovery tool] in the Microsoft Purview compliance portal to search for items imported to mailboxes in Microsoft 365 from a third-party data source.
+You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items.
+Also, you can also create a query-based retention policy or a query-based eDiscovery hold to preserve third-party data.
+
+For more information about working with a partner to import third-party data and a list of the third-party data types that you can import to Microsoft 365, see xref:work-with-partner-to-archive-third-party-data.adoc[Work with a partner to archive third-party data in Office 365].
+
+____
+[!IMPORTANT] The guidance in this article only applies to third-party data that was imported by a custom partner connector.
+This article doesn't apply to third-party data that is imported by using the link:archiving-third-party-data.md#third-party-data-connectors[third-party data connectors] in the Microsoft compliance center.
+____
+
+=== Creating a query to search all third-party data
+
+To search (or place on hold) any type of third-party data that you've imported to Office 365, you can use the  `kind:externaldata` message property-value pair in the keyword box for a Content Search or when creating a query-based hold.
+For example, to search for items imported from any third-party data source and contain the word "contoso" in the Subject property of the imported item, you would use the following query:
+
+[,powershell]
+----
+kind:externaldata AND subject:contoso
+----
+
+The previous keyword query example includes the subject property.
+For a list of other properties for third-party data items that can include in a keyword query, see the "More information" section in link:work-with-partner-to-archive-third-party-data.md#more-information[Work with a partner to archive third-party data in Office 365].
+
+When creating queries to search and hold third-party data, you can also use conditions to narrow the search results.
+For more information about creating Content Search queries, see xref:keyword-queries-and-search-conditions.adoc[Keyword queries and search conditions for Content Search].
+
+=== Creating a query to search specific types of third-party data
+
+Instead of searching all types of third-party data, you can create queries that only search for a specify type of third-party data by using the following message _property: value_ pair in the keyword box for a Content Search:
+
+[,powershell]
+----
+itemclass:ipm.externaldata.<third-party data type>*
+----
+
+For example, to search Facebook data that contains the word "contoso" in the Subject property, you would use the following query:
+
+[,powershell]
+----
+itemclass:ipm.externaldata.Facebook* AND subject:contoso
+----
+
+The following table lists the third-party data types that you can search, and the value to use for the  `itemclass:` message property to specifically search for that type of third-party data.
+The query syntax isn't case-sensitive.
+
+|===
+| *Third-party data type* | *Value for  `itemclass:` property*
+
+| AIM  +
+| `ipm.externaldata.AIM*` +
+
+| American Idol  +
+| `ipm.externaldata.AmericanIdol*` +
+
+| AOL with Pivot Client  +
+| `ipm.externaldata.Pivot.IM` +
+
+| Apple Juice  +
+| `ipm.externaldata.AppleJuice*` +
+
+| Ares  +
+| `ipm.externaldata.Ares*` +
+
+| Axs Encrypted  +
+| `ipm.externaldata.AxsEncrypted*` +
+
+| Axs Exchange  +
+| `ipm.externaldata.AxsExchange*` +
+
+| Axs Local Archive  +
+| `ipm.externaldata.AxsLocalArchive*` +
+
+| Axs Placeholder  +
+| `ipm.externaldata.AxsPlaceHolder*` +
+
+| Axs Signed  +
+| `ipm.externaldata.AxsSigned*` +
+
+| Bazaarvoice  +
+| `ipm.externaldata.Bazaarvoice*` +
+
+| Bearshare  +
+| `ipm.externaldata.Bearshare*` +
+
+| BitTorrent  +
+| `ipm.externaldata.BitTorrent*` +
+
+| Blackberry  +
+| `ipm.externaldata.Blackberry*` +
+
+| BlackBerry Call Logs  +
+| `ipm.externaldata.BlackBerryCall*` +
+
+| BlackBerry Messenger  +
+| `ipm.externaldata.BlackBerryMessenger*` +
+
+| BlackBerry PIN  +
+| `ipm.externaldata.BlackBerryPIN*` +
+
+| BlackBerry SMS  +
+| `ipm.externaldata.BlackBerrySMS*` +
+
+| Bloomberg  +
+| `ipm.externaldata.Bloomberg*` +
+
+| Bloomberg Message  +
+| `ipm.externaldata.conversation.Bloomberg Message*` +
+
+| Bloomberg Messaging  +
+| `ipm.externaldata.BloombergMessaging*` +
+
+| Box  +
+| `ipm.externaldata.Box*` +
+
+| Cisco IM & Presence Server  +
+| `ipm.externaldata.Jabber.IM` +
+
+| Cisco Jabber  +
+| `ipm.externaldata.Jabber*` +
+
+| CipherCloud for Salesforce Chatter  +
+| `ipm.externaldata.Chatter.Post` + `ipm.externaldata.Chatter.Comment` +
+
+| Direct Connect  +
+| `ipm.externaldata.DirectConnect*` +
+
+| Facebook  +
+| `ipm.externaldata.Facebook*` +
+
+| FastTrack  +
+| `ipm.externaldata.FastTrack*` +
+
+| FXConnect  +
+| `ipm.externaldata.FXConnect.chat` +
+
+| Flickr  +
+| `ipm.externaldata.Flickr*` +
+
+| Gnutella  +
+| `ipm.externaldata.Gnutella*` +
+
+| Google+  +
+| `ipm.externaldata.GooglePlus*` +
+
+| Google Talk  +
+| `ipm.externaldata.GoogleTalk*` +
+
+| GoToMyPC  +
+| `ipm.externaldata.GoToMyPC*` +
+
+| HipChat  +
+| `ipm.externaldata.HipChat*` +
+
+| Hopster  +
+| `ipm.externaldata.Hopster*` +
+
+| HubConnex  +
+| `ipm.externaldata.HubConnex*` +
+
+| IBM Connections  +
+| `ipm.externaldata.Connections*` +
+
+| IBM SameTime  +
+| `ipm.externaldata.Sametime*` +
+
+| ICE Chat  +
+| `ipm.externaldata.conversation.Ice Chat*` +
+
+| Indii Messenger  +
+| `ipm.externaldata.Indii*` +
+
+| Instagram  +
+| `ipm.externaldata.Instagram*` +
+
+| Instant Bloomberg  +
+| `ipm.externaldata.InstantBloomberg*` +
+
+| InvestEdge  +
+| `ipm.externaldata.InvestEdge*` +
+
+| IRC  +
+| `ipm.externaldata.IRC*` +
+
+| Jive  +
+| `ipm.externaldata.Jive*` +
+
+| JiveApiRetention  +
+| `ipm.externaldata.JiveApiRetention*` +
+
+| JXTA  +
+| `ipm.externaldata.JXTA*` +
+
+| LinkedIn  +
+| `ipm.externaldata.LinkedIn*` +
+
+| MFTP  +
+| `ipm.externaldata.MFTP*` +
+
+| Microsoft UC  +
+| `ipm.externaldata.MicrosoftUC*` +
+
+| Mind Align  +
+| `ipm.externaldata.MindAlign*` +
+
+| Mobile Guard  +
+| `ipm.externaldata.MobileGuard*` +
+
+| MSN  +
+| `ipm.externaldata.MSN*` +
+
+| MySpace  +
+| `ipm.externaldata.MySpace*` +
+
+| NEONetwork  +
+| `ipm.externaldata.NEONetwork*` +
+
+| OpenNap  +
+| `ipm.externaldata.OpenNap*` +
+
+| Pinterest  +
+| `ipm.externaldata.Pinterest*` +
+
+| Pivot  +
+| `ipm.externaldata.Pivot*` +
+
+| QQ  +
+| `ipm.externaldata.QQ*` +
+
+| Microsoft SharePoint  +
+| `ipm.externaldata.SharePoint*` +
+
+| Salesforce Chatter  +
+| `ipm.externaldata.Chatter*` +
+
+| Skype for Business  +
+| `ipm.externaldata.Skype*` +
+
+| Slack Enterprise Grid  +
+| `ipm.externaldata.Slack.IM` +
+
+| SoftEther  +
+| `ipm.externaldata.SoftEther*` +
+
+| Squawker  +
+| `ipm.externaldata.Squawker*` +
+
+| Symphony  +
+| `ipm.externaldata.Symphony*` +
+
+| Thomson Reuters  +
+| `ipm.externaldata.Reuters*` +
+
+| Thomson Reuters Eikon Messenger  +
+| `ipm.externaldata.ReutersEikon*` +
+
+| Tor  +
+| `ipm.externaldata.Tor*` +
+
+| TTT  +
+| `ipm.externaldata.TTT*` +
+
+| Twitter  +
+| `ipm.externaldata.Twitter*` +
+
+| UBS Chat  +
+| `ipm.externaldata.UBS*` +
+
+| Vimeo  +
+| `ipm.externaldata.Vimeo*` +
+
+| WinMX  +
+| `ipm.externaldata.WinMX*` +
+
+| Winny  +
+| `ipm.externaldata.Winny*` +
+
+| Yahoo!
++
+| `ipm.externaldata.Yahoo!*` +
+
+| Yammer  +
+| `ipm.externaldata.Yammer*` +
+
+| YellowJacket  +
+| `ipm.externaldata.YellowJacket*` +
+
+| YouTube  +
+| `ipm.externaldata.YouTube*` +
+|===

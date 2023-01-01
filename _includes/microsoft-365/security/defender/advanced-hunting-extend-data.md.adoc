@@ -1,0 +1,79 @@
+= Extend advanced hunting coverage with the right settings
+:audience: ITPro
+:author: schmurky
+:description: Check auditing settings on Windows devices and other settings to help ensure that you get the most comprehensive data in advanced hunting
+:f1.keywords: ["NOCSH"]
+:keywords: advanced hunting, incident, pivot, entity, audit settings, user account management, security group management, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
+:manager: dansimp
+:ms.author: maccruz
+:ms.collection: m365-security-compliance
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: article
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Extend advanced hunting coverage with the right settings
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+* Microsoft Defender for Endpoint
+
+xref:advanced-hunting-overview.adoc[Advanced hunting] relies on data coming from various sources, including your devices, your Office 365 workspaces, Azure AD, and Microsoft Defender for Identity.
+To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
+
+=== Advanced security auditing on Windows devices
+
+Turn on these advanced auditing settings to ensure you get data about activities on your devices, including local account management, local security group management, and service creation.
+
+|===
+| Data | Description | Schema table | How to configure
+
+| Account management
+| Events captured as various `ActionType` values indicating local account creation, deletion, and other account-related activities
+| xref:advanced-hunting-deviceevents-table.adoc[DeviceEvents]
+| - Deploy an advanced security audit policy: link:/windows/security/threat-protection/auditing/audit-user-account-management[Audit User Account Management] + - link:/windows/security/threat-protection/auditing/advanced-security-auditing[Learn about advanced security audit policies]
+
+| Security group management
+| Events captured as various `ActionType` values indicating local security group creation and other local group management activities
+| xref:advanced-hunting-deviceevents-table.adoc[DeviceEvents]
+| - Deploy an advanced security audit policy: link:/windows/security/threat-protection/auditing/audit-security-group-management[Audit Security Group Management] + - link:/windows/security/threat-protection/auditing/advanced-security-auditing[Learn about advanced security audit policies]
+
+| Service installation
+| Events captured with the `ActionType` value `ServiceInstalled`, indicating that a service has been created
+| xref:advanced-hunting-deviceevents-table.adoc[DeviceEvents]
+| - Deploy an advanced security audit policy: link:/windows/security/threat-protection/auditing/audit-security-system-extension[Audit Security System Extension] + - link:/windows/security/threat-protection/auditing/advanced-security-auditing[Learn about advanced security audit policies]
+|===
+
+=== Microsoft Defender for Identity sensor on the domain controller
+
+If you're running Active Directory on premises, you need to install the Microsoft Defender for Identity sensor on the domain controller to get data for Microsoft Defender for Identity.
+When installed and properly configured, this data also feeds into advanced hunting through Microsoft Defender for Identity and provides a more holistic picture of identity information and events in your network.
+This data also enhances the ability of Microsoft Defender for Identity to generate relevant alerts that are also covered by advanced hunting.
+
+|===
+| Data | Description | Schema table | How to configure
+
+| Domain controller
+| Data from on-premises Active Directory sent to Microsoft Defender for Identity, enriching identity-related information, such as account details, logon activity, and Active Directory queries
+| Multiple tables, including xref:advanced-hunting-identityinfo-table.adoc[IdentityInfo], xref:advanced-hunting-identitylogonevents-table.adoc[IdentityLogonEvents], and xref:advanced-hunting-identityqueryevents-table.adoc[IdentityQueryEvents]
+| - link:/azure-advanced-threat-protection/install-atp-step4[Install the Microsoft Defender for Identity sensor] + - link:/azure-advanced-threat-protection/configure-event-collection[Turn on relevant Windows Events]
+|===
+
+____
+[!NOTE] Some tables in this article might not be available in Microsoft Defender for Endpoint.
+xref:m365d-enable.adoc[Turn on Microsoft 365 Defender] to hunt for threats using more data sources.
+You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in xref:advanced-hunting-migrate-from-mde.adoc[Migrate advanced hunting queries from Microsoft Defender for Endpoint].
+____
+
+=== Related topics
+
+* xref:advanced-hunting-overview.adoc[Advanced hunting overview]
+* xref:advanced-hunting-schema-tables.adoc[Understand the schema]

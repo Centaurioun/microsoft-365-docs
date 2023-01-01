@@ -1,0 +1,70 @@
+= Perform an internal admin takeover
+:audience: Admin
+:author: efrene
+:description: Learn how to verify your email and domain ownership to take over an unmanaged account created by a self-service user signup in Microsoft 365.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
+:ms.author: efrene
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_NonTOC"]
+:ms.custom: ["AdminSurgePortfolio", "AdminTemplateSet"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Internal admin takeover
+
+*link:../setup/domains-faq.yml[Check the Domains FAQ]* if you don't find what you're looking for.
+
+If you're an admin and want to take over an unmanaged account created by a self-service user signup, you can perform an internal admin takeover by following the steps in this article.
+
+____
+[!NOTE] A self-service sign up for any cloud service that uses Azure AD adds the user to an unmanaged or "shadow" Azure AD directory and creates an unmanaged account.
+An unmanaged account is a directory without a global administrator.
+To determine whether an account is managed or unmanaged, see link:/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type[Determining Tenant Type].
+____
+
+=== Before you begin
+
+When a user signs up for Microsoft 365 services using an email address, an account is automatically created for them.
+If an admin wants to manage the users on the account or purchase additional Microsoft 365 services, they must become an admin on the account by following these steps to perform an admin takeover.
+
+=== Step 1: Verify your email address
+
+____
+[!NOTE] If self-service is enabled in your account, users can subscribe to free services such as Power BI, on their own.
+These services are specifically for use in cases where a self-service user subscription has created the unmanaged account you want to take over as admin.
+In Step 1 you create a user account for the domain you want to remove by using Power BI to launch the admin takeover wizard so you can become the admin for the unmanaged domain account.
+____
+
+. To sign up for Power BI, go to the https://powerbi.com[Power BI site] and select *Start Free* > *Start free trial* (in Share with Power BI Pro box).
+. Sign up with a user account that uses the domain name of your organization (like `powerbiadmin@contoso.com`).
+If your account is already in use, sign in using your current password.
+. Check your email for the *verification code* and enter the code to validate your email address.
+
+=== Step 2: Create a new account for admin access
+
+. When you enter the verification code, you'll be brought to a page where you can create a new account.
+. Fill in the user name and password fields with the account that you want to use, and then complete the steps to create the account.
+
+=== Step 3: Verify domain ownership and become the admin
+
+. After you complete Step 2, select the admin center icon in the left navigation pane (alternatively, go to a browser and type in `+https://admin.microsoft.com+`).
++
+You're redirected to the admin takeover wizard.
+
+. Select *Next* and verify that you own the domain you want to take over by adding a TXT record to your domain registrar.
++
+The wizard will give you the TXT record to add, as well as provide a link to your registrar's website, and a link to step-by-step instructions.
+
+. On the *You're now the admin* page, select *Go to the admin center*.
++
+You have the admin privileges required to manage the account in the admin center.
+For example, you can manage account users and groups, purchase new subscriptions and make user assignments, and manage the account domains.
++
+If you want to remove your domain from this account so you can add it to another account, see xref:remove-a-domain-from-another-account.adoc[Remove a domain from another account].
+
+=== Related content
+
+YouTube: https://www.youtube.com/watch?v=xt5EsrQBZZk[Three steps to do an IT Admin Takeover for Power BI and Microsoft 365] (video) + link:/azure/active-directory/users-groups-roles/domains-admin-takeover[Admin takeover in Azure AD] (article) + xref:self-service-sign-up.adoc[Using self-service sign up in your organization] (article) + link:/power-bi/service-admin-role[Understanding the Power BI service administrator role] (article)

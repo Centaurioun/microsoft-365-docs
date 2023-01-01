@@ -1,0 +1,27 @@
+= Tune Microsoft 365 performance
+:audience: Admin
+:author: kelleyvice-msft
+:description: Links to training courses, blogs, articles, and other resources that tell you how to improve performance of Microsoft 365.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
+:ms.author: kvice
+:ms.collection: Ent_O365
+:ms.custom: Adm_O365
+:ms.date: 04/09/2019
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: troubleshooting
+:search.appverid: ["MET150", "BCS160"]
+
+== Tune Microsoft 365 performance
+
+This article links to training courses, blogs, articles, and other resources that tell you how to improve performance of Microsoft 365.
+
+This article is part of the xref:./network-planning-and-performance.adoc[Network planning and performance tuning for Microsoft 365] project.
+
+=== Articles about fine-tuning Microsoft 365 and Office 365 performance
+
+Take a look at the link:/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity[top 10 tips for optimizing and troubleshooting your Office 365 network connectivity] by Paul Collinge.
+
+For information about using network address translation with Microsoft 365, see xref:nat-support-with-microsoft-365.adoc[NAT support with Microsoft 365].

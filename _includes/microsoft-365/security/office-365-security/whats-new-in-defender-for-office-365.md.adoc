@@ -1,0 +1,181 @@
+= What's new in Microsoft Defender for Office 365
+:audience: ITPro
+:author: msfttracyp
+:description: Learn about the new features and functionality available in the latest release of Microsoft Defender for Office 365.
+:f1.keywords: NOCSH
+:keywords: what's new in Microsoft Defender for Office 365, ga, generally available, capabilities, available, new
+:manager: dansimp
+:ms.author: tracyp
+:ms.collection: ["M365-security-compliance", "m365initiative-defender-office365"]
+:ms.custom: seo-marvel-apr2020
+:ms.date: 09/20/2022
+:ms.localizationpriority: medium
+:ms.pagetype: security
+:ms.reviewer: vippand
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mdo
+:ms.topic: conceptual
+:search.appverid: met150
+
+== What's new in Microsoft Defender for Office 365
+
+[!INCLUDE xref:../includes/mdo-trial-banner.adoc[MDO Trial banner]]
+
+*Applies to:*
+
+* xref:defender-for-office-365.adoc[Microsoft Defender for Office 365 plan 1 and plan 2]
+* xref:../defender/microsoft-365-defender.adoc[Microsoft 365 Defender]
+
+This article lists new features in the latest release of Microsoft Defender for Office 365.
+Features that are currently in preview are denoted with *(preview)*.
+
+Learn more by watching https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3[this video].
+
+For more information on what's new with other Microsoft Defender security products, see:
+
+* xref:../defender/whats-new.adoc[What's new in Microsoft 365 Defender]
+* xref:../defender-endpoint/whats-new-in-microsoft-defender-endpoint.adoc[What's new in Microsoft Defender for Endpoint]
+* link:/defender-for-identity/whats-new[What's new in Microsoft Defender for Identity]
+* link:/cloud-app-security/release-notes[What's new in Microsoft Defender for Cloud Apps]
+
+=== September 2022
+
+*Automatic redirection from Office 365 Security and Compliance Center to Microsoft 365 Defender portal:* Automatic redirection begins for users accessing the security solutions in Office 365 Security and Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com).
+This is for all security workflows like: Alerts, Threat Management, and Reports.
+
+* Redirection URLs:
+ ** GCC Environment:
+  *** From Office 365 Security & Compliance Center URL: protection.office.com
+  *** To Microsoft 365 Defender URL: security.microsoft.com
+ ** GCC-High Environment:
+  *** From Office 365 Security & Compliance Center URL: scc.office365.us
+  *** To Microsoft 365 Defender URL: security.microsoft.us
+ ** DoD Environment:
+  *** From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
+  *** To Microsoft 365 Defender URL: security.apps.mil
+* Items in the Office 365 Security and Compliance Center that are not related to security aren't redirected to Microsoft 365 Defender.
+For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886.
+* This is a continuation of https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702[Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community], announced in March 2022.
+* This change enables users to view and manage additional Microsoft 365 Defender security solutions in one portal.
+* {blank}
++
+[cols=2*]
+|===
+| This change impacts all customers who use the Office 365 Security and Compliance Center (protection.office.com), including Microsoft Defender for Office (Plan 1 or Plan 2), Microsoft 365 E3 / E5, Office 365 E3/ E5, and Exchange Online Protection.
+For the full list, see [Security & Compliance Center - Service Descriptions
+| Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+|===
+
+* This change impacts all users who log in to the Office 365 Security and Compliance portal (protection.office.com), including security teams and end-users who access the Email Quarantine experience, at the *Microsoft Defender Portal* > *Review* > *Quarantine*.
+* Redirection is enabled by default and impacts all users of the Tenant.
+* Global Administrators and Security Administrators can turn on or off redirection in the Microsoft 365 Defender portal by navigating to *Settings* > *Email & collaboration* > *Portal redirection* and switch the redirection toggle.
+* *Built-in protection*: A profile that enables a base level of Safe Links and Safe Attachments protection that's on by default for all Defender for Office 365 customers.
+To learn more about this new policy and order of precedence, see xref:preset-security-policies.adoc[Preset security policies] and to learn about the specific Safe Links and Safe Attachment controls set, see link:recommended-settings-for-eop-and-office365.md#safe-attachments-settings[Safe Attachments settings] and link:recommended-settings-for-eop-and-office365.md#safe-links-settings[Safe Links settings].
+
+=== July 2022
+
+* xref:mdo-email-entity-page.adoc[Introducing actions into the email entity page]: Admins can take preventative, remediation and submission actions from email entity page.
+
+=== June 2022
+
+* link:allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-submissions-portal[Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Submissions portal]: Create allowed spoofed sender entries using the Tenant Allow/Block List.
+* link:allow-block-email-spoof.md#about-impersonated-domains-or-senders[Impersonation allows using admin submission]: Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
+* link:admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission[View converted admin submission from user submission]: Configure the custom mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
+* link:admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions[View associated alert for user and admin submissions]: View the corresponding alert for each user reported phish message and admin email submission.
+* https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459[Configurable impersonation protection custom users and domains and increased scope within Preset policies]:
+ ** (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization.
+ ** Configure impersonation protection settings for custom users and custom domains within Preset Strict/Standard policies and automatically protect your targeted users and targeted domain against impersonation attacks.
+* https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687[Simplifying the quarantine experience (part two) in Microsoft 365 Defender for office 365]: Highlights additional features to make the quarantine experience even easier to use.
+* https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838[Introducing differentiated protection for priority accounts in Microsoft Defender for Office 365]: Introducing GCC, GCC-H, and DoD availability of differentiated protection for priority accounts.
+
+=== April 2022
+
+* https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096[Introducing the URLClickEvents table in Microsoft 365 Defender Advanced Hunting]: Introducing the UrlClickEvents table in advanced hunting with Microsoft Defender for Office 365.
+* link:/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365[Manual email remediation enhancements]: Bringing manual email purge actions taken in Microsoft Defender for Office 365 to the Microsoft 365 Defender (M365D) unified Action Center using a new action-focused investigation.
+* https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838[Introducing differentiated protection for priority accounts in Microsoft Defender for Office 365]: Introducing the general availability of differentiated protection for priority accounts.
+
+=== March 2022
+
+* https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080[Streamlined the submission experience in Microsoft Defender for Office 365]: Introducing the new unified and streamlined submission process to make your experience simpler.
+
+=== January 2022
+
+* https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015[Updated Hunting and Investigation Experiences for Microsoft Defender for Office 365]: Introducing the email summary panel for experiences in Defender for Office 365, along with experience updates for Threat Explorer and Real-time detections.
+
+=== October 2021
+
+* xref:configure-advanced-delivery.adoc[Advanced Delivery DKIM enhancement]: Added support for DKIM domain entry as part of third-party phishing simulation configuration.
+* xref:secure-by-default.adoc[Secure by Default]: Extended Secure by Default for Exchange mail flow rules (also known as transport rules).
+
+=== September 2021
+
+* https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/improving-the-reporting-experience-in-microsoft-defender-for/ba-p/2760898[Improved reporting experience in Defender for Office 365]
+* xref:quarantine-policies.adoc[Quarantine policies]: Admins can configure granular control for recipient access to quarantined messages and customize end-user spam notifications.
+ ** https://youtu.be/vnar4HowfpY[Video of admin experience]
+ ** https://youtu.be/s-vozLO43rI[Video of end-user experience]
+ ** Other new capabilities coming to the quarantine experience are described in this blog post: https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388[Simplifying the Quarantine experience].
+* Portal redirection by default begins, redirecting users from Security & Compliance to Microsoft 365 Defender https://security.microsoft.com.
+For more on this, see: link:/microsoft-365/security/defender/microsoft-365-security-mdo-redirection[Redirecting accounts from Office 365 Security & Compliance Center to Microsoft 365 Defender]
+
+=== August 2021
+
+* xref:admin-review-reported-message.adoc[Admin review for reported messages]: Admins can now send templated messages back to end users after they review reported messages.
+The templates can be customized for your organization and based on your admin's verdict as well.
+* ou can now add allow entries to the Tenant Allow/Block List if the blocked message was submitted as part of the admin submission process.
+Depending on the nature of the block, the submitted URL, file, and/or sender allow will be added to the Tenant Allow/Block List.
+In most cases, the allows are added to give the system some time and allow it naturally if warranted.
+In some cases, Microsoft manages the allow for you.
+For more information, see:
+ ** link:allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal[Use the Microsoft 365 Defender portal to create allow entries for URLs in the Submissions portal]
+ ** link:allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal[Use the Microsoft 365 Defender portal to create allow entries for files in the Submissions portal]
+ ** link:allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal[Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal]
+
+=== July 2021
+
+* xref:email-analysis-investigations.adoc[Email analysis improvements in automated investigations]
+* xref:configure-advanced-delivery.adoc[Advanced Delivery]: Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
+* link:safe-links.md#safe-links-settings-for-microsoft-teams[Safe Links for Microsoft Teams]
+* New alert policies for the following scenarios: compromised mailboxes, Forms phishing, malicious mails delivered due to overrides and rounding out ZAP
+ ** Suspicious email forwarding activity
+ ** User restricted from sharing forms and collecting responses
+ ** Form blocked due to potential phishing attempt
+ ** Form flagged and confirmed as phishing
+ ** xref:../../compliance/new-defender-alert-policies.adoc[New alert policies for ZAP]
+* Microsoft Defender for Office 365 alerts are now integrated into Microsoft 365 Defender - xref:../defender/investigate-alerts.adoc[Microsoft 365 Defender Unified Alerts Queue and Unified Alerts Queue]
+* xref:user-tags.adoc[User Tags] are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies.
+ ** Tags are also available in the unified alerts queue in the Microsoft 365 Defender portal (Microsoft Defender for Office 365 Plan 2)
+
+=== June 2021
+
+* New first contact safety tip setting within anti-phishing policies.
+This safety tip is shown when recipients first receive an email from a sender or don't often receive email from a sender.
+For more information on this setting and how to configure it, see the following articles:
+ ** link:set-up-anti-phishing-policies.md#first-contact-safety-tip[First contact safety tip]
+ ** xref:configure-anti-phishing-policies-eop.adoc[Configure anti-phishing policies in EOP]
+ ** xref:configure-mdo-anti-phishing-policies.adoc[Configure anti-phishing policies in Microsoft Defender for Office 365]
+
+=== April/May 2021
+
+* xref:mdo-email-entity-page.adoc[Email entity page]: A unified 360-degree view of an email with enriched information around threats, authentication and detections, detonation details, and a brand-new email preview experience.
+* link:/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events[Office 365 Management API]: Updates to EmailEvents (RecordType 28) to add delivery action, original and latest delivery locations, and updated detection details.
+* link:/microsoft-365/security/defender/threat-analytics[Threat Analytics for Defender for Office 365]: View active threat actors, popular techniques and attack surfaces, along with extensive reporting from Microsoft researchers around ongoing campaigns.
+
+=== February/March 2021
+
+* Alert ID integration (search using Alert ID and Alert-Explorer navigation) in xref:threat-explorer.adoc[hunting experiences]
+* Increasing the limits for Export of records from 9990 to 200,000 in xref:threat-explorer.adoc[hunting experiences]
+* Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in xref:threat-explorer.adoc[hunting experiences]
+* New hunting pivots called *Impersonated domain* and *Impersonated user* within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains.
+For more information, see link:threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains[details].
+(Microsoft Defender for Office 365 Plan 1 or Plan 2)
+
+=== Microsoft Defender for Office 365 Plan 1 and Plan 2
+
+Did you know that Microsoft Defender for Office 365 is available in two plans?
+link:defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2[Learn more about what each plan includes].
+
+=== See also
+
+* https://www.microsoft.com/microsoft-365/roadmap[Microsoft 365 roadmap]
+* link:/office365/servicedescriptions/office-365-advanced-threat-protection-service-description[Microsoft Defender for Office 365 Service Description]

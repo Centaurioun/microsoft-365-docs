@@ -1,0 +1,42 @@
+= Block user sign-in in Microsoft 365 Lighthouse
+:audience: Admin
+:author: SKjerland
+:description: For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to block a user account if you think it's compromised so users can't sign in.
+:f1.keywords: NOCSH
+:manager: scotv
+:ms-reviewer: ragovind
+:ms.author: sharik
+:ms.collection: ["M365-subscription-management", "Adm_O365"]
+:ms.custom: ["AdminSurgePortfolib", "M365-Lighthouse"]
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-lighthouse
+:ms.topic: article
+:search.appverid: MET150
+
+== Block user sign-in in Microsoft 365 Lighthouse
+
+You can block a user account if you think it's compromised.
+When you block a user account, it immediately blocks anyone from signing in to that account.
+If a user tries to sign in, they're automatically signed out of all Microsoft 365 services within 60 minutes.
+Blocking a user account won't delete any data, and it won't stop the account from receiving mail.
+
+=== Block sign-in for a user
+
+. In the left navigation pane in Lighthouse, select *Users* > *Account management* >**Search users**.
+. On the *Search users* tab, enter a user's name in the search box.
+. From the search results list, select the user.
+. In the user details pane, select *Block sign-in*.
+. In the *Block sign-in* pane, select *Block this user from signing in*.
+. Select *Save changes*.
+
+=== Block sign-in for risky users
+
+. In the left navigation pane in Lighthouse, select *Users* > *Risky users*.
+. On the *Risky Users* page, select the set of users you want to take action on.
+. Select *Block sign-in*.
+. In the *Manage sign-in status* pane, select *Block users from signing in*.
+. Select *Save*.
+
+=== Related content
+
+xref:../enterprise/manage-microsoft-365-accounts.adoc[Manage Microsoft 365 user accounts] (article) + xref:m365-lighthouse-reset-user-password.adoc[Reset user password] (article)

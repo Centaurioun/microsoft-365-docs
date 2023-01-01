@@ -1,0 +1,29 @@
+= Microsoft 365 solutions for the Contoso Corporation
+:audience: ITPro
+:author: kelleyvice-msft
+:description: How a fictional but representative global organization has deployed Microsoft 365 solutions.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: kvice
+:ms.collection: ["highpri", "Strat_O365_Enterprise", "M365-subscription-management"]
+:ms.custom:
+:ms.date: 06/17/2020
+:ms.localizationpriority: high
+:ms.service: o365-solutions
+:ms.topic: article
+
+== Microsoft 365 solutions for the Contoso Corporation
+
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France.
+Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security.
+
+The overall goal of Contoso for Microsoft 365 Enterprise is to accelerate their digital transformation by using cloud services to bring together its employees, partners, data, and processes to create customer value and maintain its competitive advantage in a digital-first world.
+
+First, learn about the xref:../enterprise/contoso-overview.adoc[Contoso Corporation], their worldwide offices, and the design considerations that were addressed when they deployed Microsoft 365 Enterprise.
+
+Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
+
+* xref:contoso-remote-onsite-work.adoc[COVID-19 response and infrastructure for hybrid work]
+* xref:contoso-team-for-top-secret-project.adoc[An isolated team for a top-secret project]
+* link:/MicrosoftTeams/voice-case-study-overview[Migration of their on-premises users to Teams for unified communication, collaboration, and voice]
+* xref:../compliance/communication-compliance-case-study.adoc[Configure an offensive language policy for Microsoft Teams, Exchange, and Yammer communications]

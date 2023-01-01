@@ -1,0 +1,53 @@
+= Step 2. An Overview of Microsoft 365 Defender for Identity evaluation
+:audience: ITPro
+:author: dansimp
+:description: Use Microsoft 365 Defender for Identity in your Microsoft 365 Defender XDR solution. Steps for the evaluation of Microsoft 365 Defender for Identity including requirements, enabling or activating the eval, and set up of the pilot or test.
+:f1.keywords: ["NOCSH"]
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["M365-security-compliance", "m365solution-scenario", "m365solution-evalutatemtp", "zerotrust-solution", "highpri"]
+:ms.date: 07/09/2021
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: met150
+:search.product: eADQiWindows 10XVcnh
+
+== Step 2. Evaluate Microsoft Defender for Identity overview
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+____
+[!NOTE] This article is also part of the Microsoft 365 Defender XDR solution we talk about in this xref:eval-overview.adoc[Overview].
+____
+
+Before starting the process that enables and pilots Microsoft Defender for Identity, if you intend to evaluate _Microsoft 365 Defender as an eXtended Detection and Response (XDR) solution_, make sure you've reviewed the process from the beginning: xref:eval-overview.adoc[evaluating Microsoft 365 Defender] including xref:eval-create-eval-environment.adoc[created the Microsoft 365 Defender evaluation environment].
++
+
+Use the steps below to enable and pilot Microsoft Defender for Identity.
+
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="The steps for adding Microsoft Defender for Identity to the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
+
+This table describes the steps in the illustration.
+
+|===
+| Serial Number | Step | Description
+
+| 1
+| xref:eval-defender-identity-architecture.adoc[Review architecture requirements and key concepts]
+| Understand the Defender for Identity architecture and be sure your environment meets the architecture prerequisites.
+
+| 2
+| xref:eval-defender-identity-enable-eval.adoc[Enable the evaluation environment]
+| Follow the steps to set up the evaluation environment.
+
+| 3
+| xref:eval-defender-identity-pilot.adoc[Set up the pilot]
+| Learn about benchmark settings for your identity environment and try out Defender for Identity tutorials.
+|===

@@ -1,0 +1,196 @@
+= Machine resource type
+:audience: ITPro
+:author: mjcaparas
+:description: Learn about the methods and properties of the Machine resource type in Microsoft Defender for Endpoint.
+:keywords: apis, supported apis, get, machines
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Machine resource type
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+[!includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+=== Methods
+
+|===
+| Method | Return Type | Description
+
+| xref:get-machines.adoc[List machines]
+| xref:machine.adoc[machine] collection
+| List set of xref:machine.adoc[machine] entities in the org.
+
+| xref:get-machine-by-id.adoc[Get machine]
+| xref:machine.adoc[machine]
+| Get a xref:machine.adoc[machine] by its identity.
+
+| xref:get-machine-log-on-users.adoc[Get logged on users]
+| xref:user.adoc[user] collection
+| Get the set of xref:user.adoc[User] that logged on to the xref:machine.adoc[machine].
+
+| xref:get-machine-related-alerts.adoc[Get related alerts]
+| xref:alerts.adoc[alert] collection
+| Get the set of xref:alerts.adoc[alert] entities that were raised on the xref:machine.adoc[machine].
+
+| xref:get-installed-software.adoc[Get installed software]
+| xref:software.adoc[software] collection
+| Retrieves a collection of installed software related to a given machine ID.
+
+| xref:get-discovered-vulnerabilities.adoc[Get discovered vulnerabilities]
+| xref:vulnerability.adoc[vulnerability] collection
+| Retrieves a collection of discovered vulnerabilities related to a given machine ID.
+
+| xref:get-security-recommendations.adoc[Get security recommendations]
+| xref:recommendation.adoc[recommendation] collection
+| Retrieves a collection of security recommendations related to a given machine ID.
+
+| xref:add-or-remove-machine-tags.adoc[Add or Remove machine tags]
+| xref:machine.adoc[machine]
+| Add or Remove tag to a specific machine.
+
+| xref:find-machines-by-ip.adoc[Find machines by IP]
+| xref:machine.adoc[machine] collection
+| Find machines seen with IP.
+
+| xref:find-machines-by-tag.adoc[Find machines by tag]
+| xref:machine.adoc[machine] collection
+| Find machines by xref:machine-tags.adoc[Tag].
+
+| xref:get-missing-kbs-machine.adoc[Get missing KBs]
+| KB collection
+| Get a list of missing KBs associated with the machine ID
+
+| xref:set-device-value.adoc[Set device value]
+| xref:machine.adoc[machine] collection
+| Set the xref:tvm-assign-device-value.adoc[value of a device].
+
+| xref:update-machine-method.adoc[Update machine]
+| xref:machine.adoc[machine] collection
+| Get the update status of a machine.
+|===
+
+=== Properties
+
+|===
+| Property | Type | Description
+
+| id
+| String
+| xref:machine.adoc[machine] identity.
+
+| computerDnsName
+| String
+| xref:machine.adoc[machine] fully qualified name.
+
+| firstSeen
+| DateTimeOffset
+| First date and time where the xref:machine.adoc[machine] was observed by Microsoft Defender for Endpoint.
+
+| lastSeen
+| DateTimeOffset
+| Time and date of the last received full device report.
+A device typically sends a full report every 24 hours.
+
+| osPlatform
+| String
+| Operating system platform.
+
+| onboardingstatus
+| String
+| Status of machine onboarding.
+Possible values are: "onboarded", "CanBeOnboarded", "Unsupported", and "InsufficientInfo".
+
+| osProcessor
+| String
+| Operating system processor.
+Use osArchitecture property instead.
+
+| version
+| String
+| Operating system Version.
+
+| osBuild
+| Nullable long
+| Operating system build number.
+
+| lastIpAddress
+| String
+| Last IP on local NIC on the xref:machine.adoc[machine].
+
+| lastExternalIpAddress
+| String
+| Last IP through which the xref:machine.adoc[machine] accessed the internet.
+
+| healthStatus
+| Enum
+| xref:machine.adoc[machine] health status.
+Possible values are: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" and "Unknown".
+
+| rbacGroupName
+| String
+| Machine group Name.
+
+| rbacGroupId
+| String
+| Machine group ID.
+
+| riskScore
+| Nullable Enum
+| Risk score as evaluated by Microsoft Defender for Endpoint.
+Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.
+
+| aadDeviceId
+| Nullable representation Guid
+| AAD Device ID (when xref:machine.adoc[machine] is AAD Joined).
+
+| machineTags
+| String collection
+| Set of xref:machine.adoc[machine] tags.
+
+| exposureLevel
+| Nullable Enum
+| Exposure level as evaluated by Microsoft Defender for Endpoint.
+Possible values are: 'None', 'Low', 'Medium' and 'High'.
+
+| deviceValue
+| Nullable Enum
+| The xref:tvm-assign-device-value.adoc[value of the device].
+Possible values are: 'Normal', 'Low' and 'High'.
+
+| ipAddresses
+| IpAddress collection
+| Set of *_IpAddress_* objects.
+See xref:get-machines.adoc[Get machines API].
+
+| osArchitecture
+| String
+| Operating system architecture.
+Possible values are: "32-bit", "64-bit".
+Use this property instead of osProcessor.
+|===

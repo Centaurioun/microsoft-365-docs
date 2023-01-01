@@ -1,0 +1,125 @@
+= SharePoint Online modern portal site limits
+:audience: Admin
+:author: kelleyvice-msft
+:description: Learn about performance recommendations for modern sites in SharePoint Online, such as limiting calls to SharePoint and external endpoints.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.author: kvice
+:ms.collection: ["Strat_O365_Enterprise", "SPO_Content"]
+:ms.custom: ["Adm_O365", "seo-marvel-apr2020"]
+:ms.date: 10/9/2019
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: interactive-tutorial
+:search.appverid: ["MET150"]
+
+== SharePoint Online modern portal site limits
+
+This article provides performance recommendations for modern portal sites in SharePoint Online.
+Use the guidelines in this article to optimize modern portal site performance and avoid common performance issues.
+
+=== Performance considerations for modern portal sites
+
+From the standpoint of performance optimization, there are a few characteristics that make modern portal sites unique.
+The principal difference between collaboration and portal sites in SharePoint Online is scale.
+Portal sites are generally expected to serve more page views to a greater number of users than collaboration sites, and are likely to contain more static content and fewer editable resources.
+Additionally, the architecture of modern sites differs from classic sites in that most of the processing involved in rendering pages and executing code takes place on the client rather than the server.
+
+Performance optimization for modern portal sites is primarily focused on a few overall objectives:
+
+* Reduce the total size of the components of each site page
+* Offload hosting of common static files such as images, stylesheets and scripts to CDN
+* Limit calls to SharePoint and external endpoints to only what is necessary
+* Avoid duplicate requests for the same content
+
+Many of the guidelines in this article focus on minimizing and optimizing calls to SharePoint Online.
+Making repetitive calls each time a page is loaded will impact performance for users as the information will be retrieved from the service each time even if it has not changed.
+As such, requests to SharePoint can be categorized either as calls that are common for all users or calls required for each individual user.
+Results from these two call categories should be cached to optimize the user experience.
+
+____
+[!NOTE] Use the xref:./page-diagnostics-for-spo.adoc[Page Diagnostics for SharePoint tool] as a starting point to analyze specific performance metrics on SharePoint Online site pages.
+____
+
+=== Modern portal site limits and recommendations
+
+|===
+| *Limit* | *Maximum recommended value* | *Notes*
+
+| Pages and news items  +
+| 5,000 per site  +
+| We recommend limiting the number of pages and news items in a modern portal site to below 5,000.
++
+
+| Web parts on a page  +
+| 20 per page  +
+| We recommend using 20 or fewer total web parts per page, including both out-of-the-box Microsoft web parts and custom web parts.
++ For more information, see xref:modern-web-part-optimization.adoc[Optimize web part performance in SharePoint Online modern site pages].
++
+
+| Dynamic web parts on a page  +
+| 4 per page  +
+| Dynamic web parts that make one or more queries to SharePoint to fetch the latest data should be limited to 4 per page.
+The _News_ web part is an example of a dynamic web part.
++ For more information, see xref:modern-web-part-optimization.adoc[Optimize web part performance in SharePoint Online modern site pages].
++
+
+| Security groups  +
+| 20 per site  +
+| The number of security groups affects the scale of many queries in modern portal sites.
+We recommend that you limit the number of security groups to as small a set as possible, with no more than 20 per site.
++
+
+| Items in site navigation  +
+| 100 per site  +
+| We recommend adding fewer than 100 items to site navigation, and that you make use of out-of-the-box navigation controls.
++ For more information, see xref:modern-page-weight-optimization.adoc[Optimize page weight in SharePoint Online modern site pages].
++
+
+| Maximum image size  +
+| 300 Kb per image  +
+| We recommend limiting the size of images to 300kb or smaller, and using a CDN to host images, stylesheets and scripts.
++ For more information, see xref:modern-image-optimization.adoc[Optimize images in SharePoint Online modern site pages] and xref:use-microsoft-365-cdn-with-spo.adoc[Use the Office 365 Content Delivery Network (CDN) with SharePoint Online].
++
+
+| Users with edit rights  +
+| 200 users per site  +
+| SharePoint portal sites are optimized for viewing and consuming content.
+Edit permissions on a portal should be limited to a restricted group of users because edit permissions download additional controls and will therefore perform slower for those users.
+An excessive number of users with edit permissions will therefore affect the overall experience.
++
+
+| Third party iFrames  +
+| 2 per page  +
+| iFrames are unpredictably slow because they load a separate external page including all associated content such as javascript, CSS and framework elements.
+If you must use iFrames, limit their number to 2 or fewer per page.
++ For more information, see xref:modern-iframe-optimization.adoc[Optimize iFrames in SharePoint Online modern and classic publishing site pages].
++
+
+| Calls to the UPA service  +
+| 1 per user per hour  +
+| We recommend that you make no _per request_ calls to the UPA (User Profile Application) service.
+The link:/graph/call-api[Microsoft Graph API] and link:/javascript/api/sp-page-context/pagecontext[PageContext] can be used to query for user information.
++ If a UPA service call is necessary, make a single call when required, and then cache the information for reuse in the same session.
+
+| Calls to the Taxonomy service  +
+| 5 per user per hour  +
+| We recommend that you make no _per request_ calls to the Taxonomy service.
+If Taxonomy service calls are necessary, cache the information for reuse in the same session.
++ For more information, see xref:modern-page-call-optimization.adoc[Optimize page calls in SharePoint Online modern and classic publishing site pages].
++
+|===
+
+=== Related topics
+
+link:/sharepoint/portal-health[Creating a healthy SharePoint portal]
+
+xref:tune-sharepoint-online-performance.adoc[Tune SharePoint Online performance]
+
+xref:tune-microsoft-365-performance.adoc[Tune Office 365 performance]
+
+link:/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits[SharePoint Online limits]
+
+link:/sharepoint/modern-experience-performance[Performance in the modern SharePoint experience]
+
+link:/sharepoint/dev/solution-guidance/portal-performance[Performance guidance for SharePoint Online portals]

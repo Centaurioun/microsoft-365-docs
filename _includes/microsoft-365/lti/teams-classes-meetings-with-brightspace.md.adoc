@@ -1,0 +1,121 @@
+= Integrate Microsoft Teams classes and meetings LTI apps with Desire2Learn Brightspace LMS
+:audience: admin
+:author: DaniEASmith
+:description: Create and manage Teams classes and meetings with Microsoft Learning Tools Interoperability (LTI) for the Desire2Learn (D2L) Brightspace LMS.
+:manager: serdars
+:ms.author: danismith
+:ms.collection: ["M365-modern-desktop", "m365initiative-edu"]
+:ms.localizationpriority: medium
+:ms.reviewer: amitman
+:ms.service: o365-administration
+:ms.topic: article
+
+== Integrate Microsoft Teams classes and meetings LTI apps within Desire2Learn Brightspace LMS
+
+This guide provides the IT admin steps for registering both Teams Classes and Teams Meetings LTI apps for the Desire2Learn (D2L) Brightspace LMS.
+
+For details on managing all LTI apps for any LMS, see xref:manage-microsoft-one-lti.adoc[Manage Microsoft LMS Gateway for any LMS].
+
+The basic steps to integrate Teams LTI apps and Brightspace are:
+
+. <<prerequisites-before-integration,Prerequisites before integration>>.
+. <<register-microsoft-teams-lti-for-use-in-brightspace,Register Microsoft LTI for use in Brightspace>>.
+. <<deploy-the-microsoft-lti-apps-to-brightspace,Deploy the Microsoft LTI apps to Brightspace>>.
+. <<add-teams-lti-app-links-to-educators-brightspace,Add Teams LTI app links to educators' Brightspace>>.
+
+=== Prerequisites before integration
+
+For the integration between D2L Brightspace and Teams to function correctly, Brightspace and Teams must be set up to communicate with one another.
+
+. For Teams Classes to work, you need to have *Brightspace Course Connector* installed and configured correctly.
+Follow https://community.brightspace.com/s/article/Getting-started-with-Brightspace-Course-Connector-for-Microsoft-Teams[these steps to install the connector on your Brightspace account].
++
+____
+[!NOTE] Select *Class Team* for *Integration type* when setting up the connector to ensure compatibility with Teams LTI tools.
+____
+
+. Teams Meetings will work without the course connector.
+However, certain features such as *Add entire class* won't be available.
+We recommend installing *Brightspace Course Connector* for the Teams Meetings LTI app.
+
+=== Register Microsoft Teams LTI for use in Brightspace
+
+. Visit https://lti.microsoft.com/[Microsoft LMS Gateway] and select the *Go to Registration Portal* button.
+. Sign in with a _Microsoft 365 administrator account_.
+. After signing in, select *Add new registration*.
+. Select either *Teams Meetings LTI* or *Teams Classes LTI* to register and then select *Next*.
+. Enter in an easily identifiable *Registration* name and select *D2L Brightspace* as the LMS platform.
+Select *Next*.
+. You'll be given a list of keys that need to be added to your Brightspace LMS site.
+. Open the Brightspace site in another tab.
+Don't close the Microsoft LMS Gateway tab.
+. On the Brightspace site, navigate to *Admin* > *Manage Extensibility* and select *LTI Advantage* then *Register Tool*.
+. Select *Standard registration* and copy the keys from *Microsoft LTI keys* to the corresponding tool inputs.
+ .. Microsoft's *Target link URL* key goes into Brightspace's *Target Link URI* field.
+ .. Microsoft's *Open ID connection URL* key goes into Brightspace's *OpenID Connect Login URL* field.
+ .. Microsoft's *Redirect URL* key goes into Brightspace's *Redirect URLs* field.
+. In the *Domain* field, enter `+https://teams.microsoft.com+`.
+. Select the *Register* button.
+. A modal will display the Brightspace registration details.
+These values need to be added on Microsoft LMS Gateway.
+. On the *Microsoft LMS gateway* tab, select *LMS provided registration keys*.
+. Copy and paste the values from Brightspace's configuration details to Microsoft's *LMS provided registration keys* step.
++
+Paste the values as follows:
++
+|===
+| On Brightspace | On Microsoft LTI registration portal
+
+| Issuer
+| Issuer ID URL
+
+| Client ID
+| Client ID
+
+| Brightspace Keyset URL
+| Keyset URL
+
+| OpenID Connect Authentication Endpoint
+| Platform authentication URL
+|===
++
+Select *Next*.
+
+. Review the *Review and add* page.
+If there are no errors, select *Save and exit*.
+You should see a message indicating successful registration.
+
+You've completed registration of either the Teams Classes or Teams Meetings LTI app.
+
+If you would like to add the other app too, repeat the steps above, selecting the other Teams LTI app in step 4.
+
+=== Deploy the Microsoft LTI apps to Brightspace
+
+After registering your Microsoft LTI apps, you need to deploy the apps on your Brightspace site.
+
+Here's the procedure to create a new deployment:
+
+. On the Brightspace site, select the tool that you created.
+. Enter a deployment name.
+. Select all security settings except *Classlist* and *Anonymous*.
+. Don't set configuration settings.
+. Select *Create Deployment*.
+
+Choose the *Org Units* you would like to use the new LTI app.
+Select the *root org* or select individual org unit children.
+
+=== Add Teams LTI app links to educators' Brightspace
+
+After creating a deployment, you'll create a new link.
+This link will add the Microsoft LTI app to educators' Brightspace experience.
+
+. On the Brightspace site, select the deployment you created.
+. Scroll down and select *View Links*.
+. Select *New link*.
+. Fill in these required details:
+ .. Paste the *Redirect URL* from _Microsoft LMS gateway_ into the *URL* field.
+This URL can be accessed by viewing the registration on the gateway.
+ .. Set the type to *Basic Launch*.
+. Select *Save and Close*.
+
+The educator can now add the Microsoft LTI app by selecting it in the Brightspace *Existing Content* dropdown.

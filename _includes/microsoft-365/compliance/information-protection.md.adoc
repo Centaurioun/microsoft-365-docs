@@ -1,0 +1,150 @@
+= Microsoft Purview Information Protection
+:audience: Admin
+:author: cabailey
+:description: Implement Microsoft Purview Information Protection capabilities to help you protect sensitive information wherever it lives or travels.
+:f1.keywords: ["NOCSH"]
+:manager: laurawi
+:ms.author: cabailey
+:ms.collection: ["m365solution-mip", "tier1"]
+:ms.date:
+:ms.localizationpriority: high
+:ms.service: O365-seccomp
+:ms.topic: overview
+:pp: {plus}{plus}
+:recommendations: false
+:search.appverid: ["MOE150", "MET150"]
+
+== Protect your sensitive data with Microsoft Purview
+
+____
+_link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Licensing for Microsoft 365 Security & Compliance]_
+____
+
+____
+[!TIP] _Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?_ Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs.
+Microsoft 365 E3 and Office 365 E3 customers can start now at the https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef[Microsoft Purview compliance portal trials hub].
+Learn details about xref:compliance-easy-trials.adoc[who can sign up and trial terms].
+____
+
+Implement capabilities from *Microsoft Purview Information Protection* (formerly Microsoft Information Protection) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+
+These information protection capabilities give you the tools to <<know-your-data,know your data>>, <<protect-your-data,protect your data>>, and <<prevent-data-loss,prevent data loss>>.
+
+image::../media/powered-by-intelligent-platform.png[Image of how Microsoft Purview Information Protection helps you discover, classify, and protect sensitive data.]
+
+Use the following sections to learn more about the available capabilities and how to get started with each one.
+However, if you're looking for a guided deployment, see xref:information-protection-solution.adoc[Deploy an information protection solution with Microsoft Purview].
+
+For information about governing your data for compliance or regulatory requirements, see xref:manage-data-governance.adoc[Govern your data with Microsoft Purview].
+
+=== Know your data
+
+To understand your data landscape and identify sensitive data across your hybrid environment, use the following capabilities:
+
+|===
+| Capability | What problems does it solve? | Get started
+
+| xref:sensitive-information-type-learn-about.adoc[Sensitive information types]
+| Identifies sensitive data by using built-in or custom regular expressions or a function.
+Corroborative evidence includes keywords, confidence levels, and proximity.
+| xref:customize-a-built-in-sensitive-information-type.adoc[Customize a built-in sensitive information type]
+
+| xref:classifier-learn-about.adoc[Trainable classifiers]
+| Identifies sensitive data by using examples of the data you're interested in rather than identifying elements in the item (pattern matching).
+You can use built-in classifiers or train a classifier with your own content.
+| xref:classifier-get-started-with.adoc[Get started with trainable classifiers]
+
+| xref:data-classification-overview.adoc[Data classification]
+| A graphical identification of items in your organization that have a sensitivity label, a retention label, or have been classified.
+You can also use this information to gain insights into the actions that your users are taking on these items.
+| xref:data-classification-content-explorer.adoc[Get started with content explorer] <p> xref:data-classification-activity-explorer.adoc[Get started with activity explorer]
+|===
+
+=== Protect your data
+
+To apply flexible protection actions that include encryption, access restrictions, and visual markings, use the following capabilities:
+
+|===
+| Capability | What problems does it solve? | Get started
+
+| xref:sensitivity-labels.adoc[Sensitivity labels]
+| A single labeling solution across apps, services, and devices to protect your data as it travels inside and outside your organization.
++  + Example scenarios: + - xref:sensitivity-labels-office-apps.adoc[Manage sensitivity labels for Office apps] + - xref:encryption-sensitivity-labels.adoc[Encrypt documents and emails] + -  link:/power-bi/admin/service-security-apply-data-sensitivity-labels[Apply and view labels in Power BI] +  + For a comprehensive list of supported scenarios for sensitivity labels, see the Get started documentation.
+| xref:get-started-with-sensitivity-labels.adoc[Get started with sensitivity labels]
+
+| link:/azure/information-protection/rms-client/aip-clientv2[Azure Information Protection unified labeling client]
+| For Windows computers, extends labeling to File Explorer and PowerShell, with additional features for Office apps if needed
+| link:/azure/information-protection/rms-client/clientv2-admin-guide[Azure Information Protection unified labeling client administrator guide]
+
+| xref:double-key-encryption.adoc[Double Key Encryption]
+| Under all circumstances, only your organization can ever decrypt protected content or for regulatory requirements, you must hold encryption keys within a geographical boundary.
+| link:double-key-encryption.md#deploy-dke[Deploy Double Key Encryption]
+
+| xref:ome.adoc[Office 365 Message Encryption (OME)]
+| Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information.
++  + Example scenario: xref:revoke-ome-encrypted-mail.adoc[Revoke email encrypted by Advanced Message Encryption]
+| xref:set-up-new-message-encryption-capabilities.adoc[Set up new Message Encryption capabilities]
+
+| xref:customer-key-overview.adoc[Service encryption with Customer Key]
+| Protects against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters.
+| xref:customer-key-set-up.adoc[Set up Customer Key for Office 365]
+
+| link:set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists[SharePoint Information Rights Management (IRM)]
+| Protects SharePoint lists and libraries so that when a user checks out a document, the downloaded file is protected so that only authorized people can view and use the file according to policies that you specify.
+| xref:set-up-irm-in-sp-admin-center.adoc[Set up Information Rights Management (IRM) in SharePoint admin center]
+
+| link:/azure/information-protection/deploy-rms-connector[Rights Management connector]
+| Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI).
+| link:/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector[Steps to deploy the RMS connector]
+
+| link:/azure/information-protection/deploy-aip-scanner[Azure Information Protection unified labeling scanner]
+| Discovers, labels, and protects sensitive information that resides in data stores that are on premises.
+| link:/azure/information-protection/deploy-aip-scanner-configure-install[Configuring and installing the Azure Information Protection unified labeling scanner]
+
+| link:/cloud-app-security/what-is-cloud-app-security[Microsoft Defender for Cloud Apps]
+| Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud.
+| link:/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud[Discover, classify, label, and protect regulated and sensitive data stored in the cloud]
+
+| link:/azure/purview/overview[Microsoft Purview Data Map]
+| Identifies sensitive data and applies automatic labeling to content in Microsoft Purview Data Map assets.
+These include files in storage such as Azure Data Lake and Azure Files, and schematized data such as columns in Azure SQL DB, and Cosmos DB.
+| link:/azure/purview/create-sensitivity-label[Labeling in Microsoft Purview Data Map]
+
+| link:/information-protection/develop/overview#microsoft-information-protection-sdk[Microsoft Information Protection SDK]
+| Extends sensitivity labels to third-party apps and services.
++  + Example scenario: link:/information-protection/develop/quick-file-set-get-label-cpp[Set and get a sensitivity label (C{pp})]
+| link:/information-protection/develop/setup-configure-mip[Microsoft Information Protection (MIP) SDK setup and configuration]
+|===
+
+=== Prevent data loss
+
+To help prevent accidental oversharing of sensitive information, use the following capabilities:
+
+|===
+| Capability | What problems does it solve? | Get started
+
+| xref:dlp-learn-about-dlp.adoc[Microsoft Purview Data Loss Prevention]
+| Helps prevent unintentional sharing of sensitive items.
+| xref:get-started-with-the-default-dlp-policy.adoc[Get started with the default DLP policy]
+
+| xref:endpoint-dlp-learn-about.adoc[Endpoint data loss prevention]
+| Extends DLP capabilities to items that are used and shared on Windows 10 computers.
+| xref:endpoint-dlp-getting-started.adoc[Get started with Endpoint data loss prevention]
+
+| xref:dlp-chrome-learn-about.adoc[Microsoft Compliance Extension]
+| Extends DLP capabilities to the Chrome browser
+| xref:dlp-chrome-get-started.adoc[Get started with the Microsoft Compliance Extension]
+
+| xref:dlp-on-premises-scanner-learn.adoc[Microsoft Purview data loss prevention on-premises scanner (preview)]
+| Extends DLP monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries.
+| xref:dlp-on-premises-scanner-get-started.adoc[Get started with Microsoft Purview data loss prevention on-premises scanner (preview)]
+
+| xref:dlp-microsoft-teams.adoc[Protect sensitive information in Microsoft Teams chat and channel messages]
+| Extends some DLP functionality to Teams chat and channel messages
+| xref:dlp-teams-default-policy.adoc[Learn about the default data loss prevention policy in Microsoft Teams (preview)]
+|===
+
+=== Licensing requirements
+
+License requirements for Microsoft Purview Information Protection depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page.
+To understand your licensing requirements and options for Microsoft Purview Information Protection, see the *Information Protection* sections from link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft 365 guidance for security & compliance] and the related https://go.microsoft.com/fwlink/?linkid=2139145[PDF download] for feature-level licensing requirements.

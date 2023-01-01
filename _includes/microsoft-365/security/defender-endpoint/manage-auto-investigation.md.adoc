@@ -1,0 +1,185 @@
+= Review remediation actions following automated investigations
+:audience: ITPro
+:author: dansimp
+:description: Review and approve (or reject) remediation actions following an automated investigation.
+:keywords: autoir, automated, investigation, detection, remediation, action, pending, approved
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["m365-security-compliance", "m365initiative-defender-endpoint"]
+:ms.custom: admindeeplinkDEFENDER
+:ms.date: 07/20/2022
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: how-to
+:search.appverid: met150
+
+== Review remediation actions following an automated investigation
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* xref:../defender-business/mdb-overview.adoc[Microsoft Defender for Business]
+
+=== Remediation actions
+
+When an xref:automated-investigations.adoc[automated investigation] runs, a verdict is generated for each piece of evidence investigated.
+Verdicts can be _Malicious_, _Suspicious_, or _No threats found_.
+
+Depending on
+
+* the type of threat,
+* the resulting verdict, and
+* how your organization's link:/microsoft-365/security/defender-endpoint/machine-groups[device groups] are configured,
+
+remediation actions can occur automatically or only upon approval by your organization's security operations team.
+
+____
+[!NOTE] Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
+____
+
+Here are a few examples:
+
+* *Example 1*: Fabrikam's device groups are set to *Full - remediate threats automatically* (the recommended setting).
+In this case, remediation actions are taken automatically for artifacts that are considered to be malicious following an automated investigation (see <<review-completed-actions,Review completed actions>>).
+* *Example 2*: Contoso's devices are included in a device group that is set for *Semi - require approval for any remediation*.
+In this case, Contoso's security operations team must review and approve all remediation actions following an automated investigation (see <<review-pending-actions,Review pending actions>>).
+* *Example 3*: Tailspin Toys has their device groups set to *No automated response* (not recommended).
+In this case, automated investigations do not occur.
+No remediation actions are taken or pending, and no actions are logged in the link:/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center[Action center] for their devices (see link:/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups[Manage device groups]).
+
+Whether taken automatically or upon approval, an automated investigation can result in one or more of the remediation actions:
+
+* Quarantine a file
+* Remove a registry key
+* Kill a process
+* Stop a service
+* Disable a driver
+* Remove a scheduled task
+
+=== Review pending actions
+
+. Go to the https://go.microsoft.com/fwlink/p/?linkid=2077139[Microsoft 365 Defender portal] and sign in.
+. In the navigation pane, choose *Action center*.
+. Review the items on the *Pending* tab.
+. Select an action to open its flyout pane.
+. In the flyout pane, review the information, and then take one of the following steps:
+ ** Select *Open investigation page* to view more details about the investigation.
+ ** Select *Approve* to initiate a pending action.
+ ** Select *Reject* to prevent a pending action from being taken.
+ ** Select *Go hunt* to go into xref:advanced-hunting-overview.adoc[Advanced hunting].
+
+=== Review completed actions
+
+. Go to the https://go.microsoft.com/fwlink/p/?linkid=2077139[Microsoft 365 Defender portal] and sign in.
+. In the navigation pane, choose *Action center*.
+. Review the items on the *History* tab.
+. Select an item to view more details about that remediation action.
+
+=== Undo completed actions
+
+If you've determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually.
+In the Action center, on the *History* tab, you can undo any of the following actions:
+
+|===
+| Action source | Supported Actions
+
+| <ul><li>Automated investigation</li><li>Manual response actions (see the note below)</li><li>Microsoft Defender Antivirus</li></ul>
+| <ul><li>Disable a driver</li><li>Isolate device</li><li>Quarantine a file</li><li>Remove a registry key</li><li>Remove a scheduled task</li><li>Restrict code execution</li><li>Stop a service</li></ul>
+|===
+
+____
+[!NOTE] xref:defender-endpoint-plan-1.adoc[Defender for Endpoint Plan 1] and xref:../defender-business/mdb-overview.adoc[Microsoft Defender for Business] include only the following manual response actions:
+
+* Run antivirus scan
+* Isolate device
+* Stop and quarantine a file
+* Add an indicator to block or allow a file
+
+To learn more, see xref:defender-endpoint-plan-1-2.adoc[Compare Microsoft Defender for Endpoint plans] and xref:../defender-business/compare-mdb-m365-plans.adoc[Compare security features in Microsoft 365 plans for small and medium-sized businesses].
+____
+
+==== To undo multiple actions at one time
+
+. Go to the Action center (https://security.microsoft.com/action-center) and sign in.
+. On the *History* tab, select the actions that you want to undo.
+Make sure to select items that have the same Action type.
+A flyout pane opens.
+. In the flyout pane, select *Undo*.
+
+==== To remove a file from quarantine across multiple devices
+
+. Go to the Action center (https://security.microsoft.com/action-center) and sign in.
+. On the *History* tab, select an item that has the Action type *Quarantine file*.
+. In the flyout pane, select *Apply to X more instances of this file*, and then select *Undo*.
+
+=== Automation levels, automated investigation results, and resulting actions
+
+Automation levels affect whether certain remediation actions are taken automatically or only upon approval.
+Sometimes your security operations team has more steps to take, depending on the results of an automated investigation.
+The following table summarizes automation levels, results of automated investigations, and what to do in each case.
+
+|===
+| Device group setting | Automated investigation results | What to do
+
+| *Full - remediate threats automatically* + (recommended)
+| A verdict of _Malicious_ is reached for a piece of evidence.
+<p> Appropriate remediation actions are taken automatically.
+| <<review-completed-actions,Review completed actions>>
+
+| *Semi - require approval for any remediation*
+| A verdict of either _Malicious_ or _Suspicious_ is reached for a piece of evidence.
+<p> Remediation actions are pending approval to proceed.
+| <<review-pending-actions,Approve (or reject) pending actions>>
+
+| *Semi - require approval for core folders remediation*
+| A verdict of _Malicious_ is reached for a piece of evidence.
+<p> If the artifact is a file or executable and is in an operating system directory, such as the Windows folder or the Program files folder, then remediation actions are pending approval.
+<p> If the artifact is _not_ in an operating system directory, remediation actions are taken automatically.
+| <ol><li><<review-pending-actions,Approve (or reject) pending actions>></li><li><<review-completed-actions,Review completed actions>></li></ol>
+
+| *Semi - require approval for core folders remediation*
+| A verdict of _Suspicious_ is reached for a piece of evidence.
+<p> Remediation actions are pending approval.
+| <<review-pending-actions,Approve (or reject) pending actions>>.
+
+| *Semi - require approval for non-temp folders remediation*
+| A verdict of _Malicious_ is reached for a piece of evidence.
+<p> If the artifact is a file or executable that is not in a temporary folder, such as the user's downloads folder or temp folder, remediation actions are pending approval.
+<p> If the artifact is a file or executable that _is_ in a temporary folder, remediation actions are taken automatically.
+| <ol><li><<review-pending-actions,Approve (or reject) pending actions>></li><li><<review-completed-actions,Review completed actions>></li></ol>
+
+| *Semi - require approval for non-temp folders remediation*
+| A verdict of _Suspicious_ is reached for a piece of evidence.
+<p> Remediation actions are pending approval.
+| <<review-pending-actions,Approve (or reject) pending actions>>
+
+| Any of the *Full* or *Semi* automation levels
+| A verdict of _No threats found_ is reached for a piece of evidence.
+<p> No remediation actions are taken, and no actions are pending approval.
+| link:/microsoft-365/security/defender-endpoint/auto-investigation-action-center[View details and results of automated investigations]
+
+| *No automated response* (not recommended)
+| No automated investigations run, so no verdicts are reached, and no remediation actions are taken or awaiting approval.
+| link:/microsoft-365/security/defender-endpoint/machine-groups[Consider setting up or changing your device groups to use *Full* or *Semi* automation]
+|===
+
+All verdicts are tracked in the link:auto-investigation-action-center.md#the-unified-action-center[Action center].
+
+____
+[!NOTE] In xref:../defender-business/mdb-overview.adoc[Defender for Business], automated investigation and remediation capabilities are preset to use *Full - remediate threats automatically*.
+These capabilities are applied to all devices by default.
+____
+
+=== Next steps
+
+* xref:live-response.adoc[Learn about live response capabilities]
+* xref:advanced-hunting-overview.adoc[Proactively hunt for threats with advanced hunting]
+* xref:defender-endpoint-false-positives-negatives.adoc[Address false positives/negatives in Microsoft Defender for Endpoint]
+
+=== See also
+
+* xref:automated-investigations.adoc[Overview of automated investigations]

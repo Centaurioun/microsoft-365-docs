@@ -1,0 +1,124 @@
+= Manage active content in Office documents for IT admins
+:ROBOTS: NOINDEX,NOFOLOW
+:audience: Admin
+:author: chrisda
+:description: Admins can learn how to create policies to block active content in Office documents
+:f1.keywords: ["NOCSH"]
+:manager: dansimp
+:ms.author: chrisda
+:ms.collection: ["M365-security-compliance"]
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-security
+:ms.topic: tutorial
+:search.appverid: ["MET150"]
+
+== Manage active content in Office documents
+
+____
+[!NOTE] The features that are described in this article are in Preview, aren't available to everyone, and are subject to change.
+____
+
+Office documents can be automatically refreshed, updated, or executed when they contain _active content_.
+Examples of active content are macros, ActiveX controls, and Office Add-ins.
+Active content can provide powerful and useful functionality to users, but attackers can also use active content to deliver malware.
+
+Admins can create organization policies (group policies or cloud policies) that limit the use of active content to specific sets of users, or to disable active content entirely.
+Users can configure their own security and privacy settings in the Office Trust Center in their Office apps at *File* > *Options* > *Trust Center*.
+
+Previously, when users identified documents as trusted documents, their selection would allow active content to run, even if an admin configured policies to block active content in Office documents.
+Now, policies set by admins take precedence over user identification of trusted documents.
+This change in behavior might cause issues for users.
+
+The updated Trust Center logic is described in the following diagram:
+
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="A flow chart describing Trust center Logic in the Microsoft 365 Defender portal" lightbox="../media/office-trust-center-flow.png":::
+
+. A user opens an Office document that contains active content.
+. If the document is from a trusted location, the document is opened with the active content enabled.
+If the document is not from a trusted location, the evaluation continues.
+. It is here the updated behavior takes effect:
+ ** Previously, the next evaluated setting would have been if the user had identified this document as a trusted document.
+If they did, the document would open with the active content enabled.
+ ** Now, whether or not the user identified the document as a trusted document is not considered here (now at step 8).
++
+The fundamental change in behavior is described as follows: cloud policies (step 4), group policies (step 6), and local settings (step 7) are checked _before_ the user designation of a trusted document is even considered.
+If any of those steps block access to the active content *and* none of the steps allow user overrides, then user identification of the document as a trusted document is irrelevant.
+. Cloud policies are checked to see if this type of active content is allowed or blocked.
+If the active content is not blocked, the evaluation continues to step 6.
++
+If the active content is blocked by policy, the experience is described in step 5.
+
+. The opening of the document is blocked with a notification in the trust bar.
+What happens next is controlled by the user override settings in the policy: a.
+*User override not allowed*: The user can't open the document and the evaluation stops.
+b.
+*User override allowed*: The user can click the link in the trust bar to open the document with the active content enabled.
+. Group policies are checked to see if this type of active content is allowed or blocked.
+If the active content is not blocked, the evaluation continues to step 7.
++
+If the active content is blocked by policy, the experience is described in step 5.
+
+. Local settings are checked to see if this type of active content is allowed or blocked.
+If the active content is blocked, the opening of the document is blocked with a notification in the trust bar.
+If the active content is not blocked, the evaluation continues.
+. If the user previously identified the document as a trusted document, the document is opened with the active content enabled.
+If not, the opening of the document is blocked.
+
+=== What is a trusted document?
+
+Trusted documents are Office documents that open without any security prompts for macros, ActiveX controls, and other types of active content in the document.
+Protected View or Application Guard is not used to open the document.
+When users open a Trusted Document, and all active content is enabled.
+Even if the document contains new active content or updates to existing active content, users won't receive security prompts the next time they open the document.
+
+Because of this behavior, users should clearly trust documents only if they trust the document source.
+
+If an admin blocks active content by using a policy, or if users set a Trust Center setting that blocks active content, the active content will remain blocked.
+
+For more information, see the following articles:
+
+* https://support.microsoft.com/topic/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53[Trusted documents]
+* https://support.microsoft.com/topic/add-remove-or-change-a-trusted-location-7ee1cdc2-483e-4cbb-bcb3-4e7c67147fb4[Add, remove, or change a trusted location]
+* https://support.microsoft.com/topic/active-content-types-in-your-files-b7ff2e8a-4055-47d4-8c7d-541e19f62bea[Active content types in your files]
+
+=== Configure trusted document settings in Office policies
+
+Admins have many ways to configure Office in an organization.
+For example:
+
+* *Office cloud policy service*: Set up a user-based policy that applies to a user on any device accessing files in Office apps with their Azure AD account.
+See the steps for link:/DeployOffice/overview-office-cloud-policy-service[creating an Office cloud policy configuration] in the https://config.office.com/officeSettings/officePolicies[Office Cloud Policy Service].
+* *Office policies in Intune*: Use the Intune Settings catalog or Administrative templates to deploy HKCU policies to Windows 10 PCs: In the https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles[MEM admin center] under *Devices* > *Configuration Profiles*.
+ ** *_Administrative Templates_*: See instructions to use Windows 10 templates to configure link:/mem/intune/configuration/administrative-templates-windows[Administrative Templates].
+ ** *_Settings catalog (preview)_*: See instructions to use the link:/mem/intune/configuration/settings-catalog[Settings catalog (preview)].
+* *Group policy*: Use your on-premise Active Directory to deploy group policy objects (GPOs) to users and computers.
+To create a GPO for this setting, download the latest https://www.microsoft.com/download/details.aspx?id=49030[Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016].
+
+=== Known issues
+
+* When the policy *VBA Macro notifications* (Access, PowerPoint, Visio, Word) or *Macro notifications* (Excel) is set to the value *Disable all except digitally signed macros*, the expected trust bar is not displayed, and *Security Information* in the backstage does not list details of macros blocked, even though the setting is working as expected.
+The Office team is working to resolve this issue.
+
+=== Admin options for restricting active content
+
+There's a large difference in the level of trust in internally created content vs.
+content that users download from the internet.
+Consider allowing active content in internal documents and globally not allowing active content in documents from the internet.
+
+If your users don't need specific types of active content, your most secure option is to use policies to turn off user access to that active content, and allow exceptions as needed.
+
+The following policies are available:
+
+* *Turn off Trusted Locations*: Exceptions for groups available.
+* *Turn off Trusted Documents*: Exceptions for groups available.
+* *Turn off all active content*: Exceptions for individuals.
+
+The tables in the following sections describe the settings that control active content.
+These policies, if applied to users, will be enforced on trusted documents, and the previous end-user experience might not be the same.
+The tables also include the recommended security baselines setting, and identify other settings where the user prompt to override is available (allowing the user to enable the active content).
+
+==== HKEY_CURRENT_USER settings
+
+**** |Category|App|Policy name|Security baseline + setting (recommended)|Setting with user prompt + and override available?| |---|---|---|---|---| |ActiveX|Office|ActiveX Control Initialization|**6**|**Yes** for the following values:   * **3** * **4** * **5** * **6**| |ActiveX|Office|Allow Active X One Off Forms|**Load only Outlook Controls**|No| |ActiveX|Office|Check ActiveX objects|Not a security baseline setting.|No| |ActiveX|Office|Disable All ActiveX|Not a security baseline setting.|**Yes** for the following values:   * **Disabled** * **Not configured**| |ActiveX|Office|Load Controls in Forms3|**1**|**Yes** for the following values:   * **2** * **3**| |Add-ins & Extensibility|Excel   PowerPoint   Project   Publisher   Visio   Word|Disable Trust Bar Notification for unsigned application add-ins and block them|**Enabled**|**Yes** for the value **Disabled**.| |Add-ins & Extensibility|Excel   PowerPoint   Project   Publisher   Visio   Word|Require that application add-ins are signed by Trusted Publisher|**Enabled**|No| |Add-ins & Extensibility|Excel|Do not show AutoRepublish warning alert|**Disabled**|No| |Add-ins & Extensibility|Excel|WEBSERVICE Function Notification Settings|**Disable all with notification**|**Yes** for the following values:   * **Disable all with notification** * **Disabled** * **Not configured**| |Add-ins & Extensibility|Office|Disable the Office client from polling the SharePoint Server for published links|**Disabled**|No| |Add-ins & Extensibility|Office|Disable UI extending from documents and templates|Disallow in Word = True   Disallow in Project = False   Disallow in Excel = True   Disallow in Visio= False   Disallow in PowerPoint = True   Disallow in Access = True   Disallow in Outlook = True   Disallow in Publisher = True   Disallow in InfoPath = True|No| |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt when accessing an address book|**Automatically Deny**|**Yes** for the following values:   * **Prompt user** * **Prompt user based on computer security** * **Disabled** * **Not configured**| |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt When accessing the Formula property of a UserProperty object|**Automatically Deny**|**Yes** for the following values:   * **Prompt user** * **Prompt user based on computer security** * **Disabled** * **Not configured**| |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt when executing Save As|**Automatically Deny**|**Yes** for the following values:   * **Prompt user** * **Prompt user based on computer security** * **Disabled** * **Not configured**| |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt when reading address information|**Automatically Deny**|**Yes** for the following values:   * **Prompt user** * **Prompt user based on computer security** * **Disabled** * **Not configured**| |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt when responding to meeting and task requests|**Automatically Deny**|**Yes** for the following values:   * **Prompt user** * **Prompt user based on computer security** * **Disabled** * **Not configured**| |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt when sending mail|**Automatically Deny**|**Yes** for the following values:   * **Prompt user** * **Prompt user based on computer security** * **Disabled** * **Not configured**| |Add-ins & Extensibility|Outlook|Set Outlook object model custom actions execution prompt|**Automatically Deny**|**Yes** for the following values:   * **Prompt user** * **Prompt user based on computer security** * **Disabled** * **Not configured**| |Add-ins & Extensibility|PowerPoint|Run Programs|**disable (don't run any programs)**|**Yes** for the value **Enable (prompt user before running)**| |Add-ins & Extensibility|Word   Excel|Disable Smart Document's use of manifests|**Enabled**|No| |DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server launch in Excel|**Enabled**|**Yes** for the value **Not configured**.| |DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server lookup in Excel|**Enabled**|**Yes** for the following values:   * **Disabled** * **Not configured**| |DDE|Word|Dynamic Data Exchange|**Disabled**|No| |Jscript & VBScript|Outlook|Allow scripts in one-off Outlook forms|**Disabled**|No| |Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for public folders|**Enabled**|No| |Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for shared folders|**Enabled**|No| |Macros|Excel|Macro Notifications|**Disable all except digitally signed macros**|**Yes** for the following values:   * **Disabled** * **Not configured**| |Macros|Access   PowerPoint   Project   Publisher   Visio   Word|VBA Macro Notification Settings|**Disable all except digitally signed macros**   and   **Require macros to be signed by a trusted publisher**|**Yes** for the following values:   * **Disabled** * **Not configured**| |Macros|Access   Excel   PowerPoint   Visio   Word|Block macros from running in Office files from the Internet|**Enabled**|**Yes** for the following values:   * **Disabled** * **Not configured**| |Macros|Excel|Scan encrypted macros in Excel Open XML workbooks|**Scan encrypted macros (default)**|No| |Macros|Office|Allow VBA to load typelib references by path from untrusted intranet locations|**Disabled**|No| |Macros|Office|Automation Security|**Use application macro security level**|No| |Macros|Office|Disable other security checks on VBA library references that may refer to unsafe locations on the local machine|**Disabled**|No| |Macros|Office|Macro Runtime Scan Scope|**Enable for all documents**|No| |Macros|Office|Only trust VBA macros that use V3 signatures|Not a security baseline setting.|No| |Macros|Outlook|Outlook Security Mode|**Use Outlook Security Group Policy**|Required to enable all Outlook GPO settings.
+Mentioned as a dependency (this policy doesn't block active content itself).| |Macros|Outlook|Security setting for macros|**Warn for signed, disable unsigned**|**Yes** for the following values:   * **Always warn** * **Warn for signed, disable unsigned** * **Disabled** * **Not configured**| |Macros|PowerPoint|Scan encrypted macros in PowerPoint Open XML presentations|**Scan encrypted macros (default)**|No| |Macros|Publisher|Publisher Automation Security Level|**By UI (prompted)**|No| |Macros|Word|Scan encrypted macros in Word Open XML documents|**Scan encrypted macros (default)**|No| | ### HKEY_LOCAL_MACHINE settings   **** |Category|App|Policy name|Security baseline + setting (recommended)|Setting with user prompt + and override available?| |---|---|---|---|---| |ActiveX|Office|Restrict ActiveX Install|excel.exe = True   exprwd.exe = True   groove.exe = True   msaccess.exe = True   mse7.exe = True   mspub.exe = True   onent.exe = True   outlook.exe = True   powerpnt.exe = True   pptview.exe = True   spDesign.exe = True   visio.exe = True   winproj.exe = True   winword.exe = True|No| |Add-ins & Extensibility|Office|Add-on Management|excel.exe = True   exprwd.exe = True   groove.exe = True   msaccess.exe = True   mse7.exe = True   mspub.exe = True   onent.exe = True   outlook.exe = True   powerpnt.exe = True   pptview.exe = True   spDesign.exe = True   visio.exe = True   winproj.exe = True   winword.exe = True|No| |Add-ins & Extensibility|Office|Block Flash activation in Office documents|See the Microsoft Security Guide ADMX/ADML files for a list of COM killbits to block all activation for Flash at Microsoft 365 apps.
+The ADMX/ADML files for enterprise Security Baselines are available in the [Security Compliance Toolkit](https://www.microsoft.com/download/details.aspx?id=55319).|No| |Jscript & VBScript|Office|Restrict legacy JScript execution for Office|**Enabled**:   Access: 69632   Excel: 69632   OneNote: 69632   Outlook: 69632   PowerPoint: 69632   Project: 69632   Publisher: 69632   Visio: 69632   Word: 69632|No| |Jscript & VBScript|Office|Scripted Window Security Restrictions|excel.exe = True   exprwd.exe = True   groove.exe = True   msaccess.exe = True   mse7.exe = True   mspub.exe = True   onent.exe = True   outlook.exe = True   powerpnt.exe = True   pptview.exe = True   spDesign.exe = True   visio.exe = True   winproj.exe = True   winword.exe = True|No| |

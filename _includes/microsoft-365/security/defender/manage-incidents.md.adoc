@@ -1,0 +1,135 @@
+= Manage incidents in Microsoft 365 Defender
+:audience: ITPro
+:author: dansimp
+:description: Learn how to assign, update the status,
+:experimental:
+:f1.keywords: ["NOCSH"]
+:keywords: incident, incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["M365-security-compliance", "m365-initiative-defender-endpoint"]
+:ms.custom: admindeeplinkDEFENDER
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+
+== Manage incidents in Microsoft 365 Defender
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+Incident management is critical to ensuring that incidents are named, assigned, and tagged to optimize time in your incident workflow and more quickly contain and address threats.
+
+You can manage incidents from menu:Incidents & alerts[Incidents] on the quick launch of the Microsoft 365 Defender portal (https://security.microsoft.com[security.microsoft.com]).
+Here's an example.
+
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+
+Here are the ways you can manage your incidents:
+
+* <<edit-the-incident-name,Edit the incident name>>
+* <<add-incident-tags,Add incident tags>>
+* <<assign-an-incident,Assign the incident to a user account>>
+* <<resolve-an-incident,Resolve them>>
+* <<specify-the-classification,Specify its classification>>
+* <<add-comments,Add comments>>
+
+You can manage incidents from the *Manage incident* pane for an incident.
+Here's an example.
+
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="The Manage incident pane in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+
+You can display this pane from the *Manage incident* link on the:
+
+* Properties pane of an incident in the incident queue.
+* *Summary* page of an incident.
+
+In cases where you want to move alerts from one incident to another, you can also do so from the *Alerts* tab, thus creating a larger or smaller incident that includes all relevant alerts.
+
+=== Edit the incident name
+
+Microsoft 365 Defender automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories.
+This allows you to quickly understand the scope of the incident.
+For example: _Multi-stage incident on multiple endpoints reported by multiple sources._
+
+You can edit the incident name from the *Incident name* field on the *Manage incident* pane.
+
+____
+[!NOTE] Incidents that existed before the rollout of the automatic incident naming feature will retain their name.
+____
+
+=== Add incident tags
+
+You can add custom tags to an incident, for example to flag a group of incidents with a common characteristic.
+You can later filter the incident queue for all incidents that contain a specific tag.
+
+When you start typing, you have the option to select from a list of previously-used and selected tags.
+
+=== Assign an incident
+
+If an incident has not yet been assigned, you can select the *Assign to* box and specify the user account.
+To re-assign an incident, remove the current assignment account by selecting the "x" next to the account name and then select the *Assign to* box.
+Assigning ownership of an incident assigns the same ownership to all the alerts associated with it.
+
+You can get a list of incidents assigned to you by filtering the incident queue.
+
+. From the incident queue, select *Filters*.
+. in the *Incident assignment* section, clear *Select all* and select *Assigned to me*.
+. Select *Apply*, and then close the *Filters* pane.
+
+You can then save the resulting URL in your browser as a bookmark to quickly see the list of incidents assigned to you.
+
+=== Resolve an incident
+
+If the incident has been remediated, select *Resolve incident* to move the toggle to the right.
+Note that resolving an incident also resolves all the linked and active alerts related to the incident.
+
+An incident that is not resolved displays as *Active*.
+
+=== Specify the classification
+
+From the *Classification* field, you specify whether the incident is:
+
+* *Not set* (the default).
+* *True positive* with a type of threat.
+Use this classification for incidents that accurately indicate a real threat.
+Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.
+* *Informational, expected activity* with a type of activity.
+Use the options in this category to classify incidents for security tests, red team activity, and expected unusual behavior from trusted apps and users.
+* *False positive* for types of incidents that you determine can be ignored because they are technically inaccurate or misleading.
+
+Classifying incidents and specifying their status and type helps tune Microsoft 365 Defender to provide better detection determination over time.
+
+Watch this short video to learn how to use classification to increase triage efficiency.
+
+____
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHJq]
+____
+
+=== Add comments
+
+You can add multiple comments to an incident with the *Comment* field.
+Each comment gets added to the historical events of the incident.
+You can see the comments and history of an incident from the *Comments and history* link on the *Summary* page.
+
+=== Next steps
+
+For new incidents, begin your xref:investigate-incidents.adoc[investigation].
+
+For in-process incidents, continue your xref:investigate-incidents.adoc[investigation].
+
+For resolved incidents, perform a xref:first-incident-post.adoc[post-incident review].
+
+=== See also
+
+* xref:incidents-overview.adoc[Incidents overview]
+* xref:incident-queue.adoc[Prioritize incidents]
+* xref:investigate-incidents.adoc[Investigate incidents]

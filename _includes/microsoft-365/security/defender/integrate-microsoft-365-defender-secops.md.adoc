@@ -1,0 +1,73 @@
+= Integrating Microsoft 365 Defender into your security operations
+:audience: ITPro
+:author: dansimp
+:description: The basics of integrating Microsoft 365 Defender into your security operations.
+:f1.keywords: ["NOCSH"]
+:keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["M365-security-compliance", "m365solution-m365dsecops", "m365solution-overview", "highpri"]
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: m365d
+:ms.topic: conceptual
+:search.appverid: ["MOE150", "MET150"]
+:search.product: eADQiWindows 10XVcnh
+
+== Integrating Microsoft 365 Defender into your security operations
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+A modern Security Operations Center (SOC) is an intelligence-driven, adaptive organization that embraces threat defense strategy of moving security processes earlier in the deployment process so that security is built in.
+This means that the traditional assignment of isolated technologies and processes to single security analysts no longer supports the vast increase in data coming in from multiple sources.
+Security analysts and engineers are being asked to take a more holistic approach and to use shared insights across different platforms and disciplines to take effective action.
+
+For this reason, the deployment and implementation of the Microsoft 365 Defender platform will need careful planning with the SOC team to optimize the day-to-day operations and lifecycle management of the Microsoft 365 Defender service itself.
+This content explores several concepts on how to operationalize and integrate Microsoft 365 Defender with either new or existing people, processes, and technologies that form the basis for modern security operations.
+
+If you are not already familiar with Microsoft 365 Defender, see these articles:
+
+* xref:get-started.adoc[Get started with Microsoft 365 Defender]
+* xref:m365d-enable.adoc[Turn on Microsoft 365 Defender]
+
+If your organization has already implemented some aspects of Microsoft 365 Defender, these articles can either affirm or help improve your existing architecture and processes.
+
+____
+[!Note] As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
+____
+
+=== Target audience
+
+This content is designed for the following:
+
+* DevOps and Security Operations (SecOps) teams
+* Security engineering teams
+* IT teams
+* CISOs and CTOs
+* Red, Blue, and Purple Teams
+* CSIRT & forensic teams
+* Microsoft 365 administrators
+
+=== Next steps
+
+Use these steps to integrate Microsoft 365 Defender into your SOC.
+
+* xref:integrate-microsoft-365-defender-secops-plan.adoc[Step 1.
+Plan for Microsoft 365 Defender operations readiness]
+* xref:integrate-microsoft-365-defender-secops-readiness.adoc[Step 2.
+Perform a SOC integration readiness assessment using the Zero Trust Framework]
+* xref:integrate-microsoft-365-defender-secops-services.adoc[Step 3.
+Plan for Microsoft 365 Defender integration with your SOC catalog of services]
+* xref:integrate-microsoft-365-defender-secops-roles.adoc[Step 4.
+Define Microsoft 365 Defender roles, responsibilities, and oversight]
+* xref:integrate-microsoft-365-defender-secops-use-cases.adoc[Step 5.
+Develop and test use cases]
+* xref:integrate-microsoft-365-defender-secops-tasks.adoc[Step 6.
+Identify SOC maintenance tasks]

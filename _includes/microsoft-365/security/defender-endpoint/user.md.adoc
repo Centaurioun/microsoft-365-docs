@@ -1,0 +1,48 @@
+= User resource type
+:audience: ITPro
+:author: mjcaparas
+:description: Retrieve recent Microsoft Defender for Endpoint alerts related to users.
+:keywords: apis, graph api, supported apis, get, alerts, recent
+:manager: dansimp
+:ms.author: macapara
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== User resource type
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+|===
+| Method | Return Type | Description
+
+| xref:get-user-related-alerts.adoc[List User related alerts]
+| xref:alerts.adoc[alert] collection
+| List all the alerts that are associated with a xref:user.adoc[user].
+
+| xref:get-user-related-machines.adoc[List User related devices]
+| xref:machine.adoc[machine] collection
+| List all the devices that were logged on by a xref:user.adoc[user].
+|===

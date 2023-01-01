@@ -1,0 +1,234 @@
+= Step 1. Use SharePoint Syntex to identify contract files and extract data
+:ROBOTS:
+:audience: admin
+:author: chuckedmonson
+:description: Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution.
+:experimental:
+:manager: pamgreen
+:ms.author: chucked
+:ms.date:
+:ms.localizationpriority: medium
+:ms.reviewer: ssquires
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+:search.appverid:
+
+== Step 1. Use SharePoint Syntex to identify contract files and extract data
+
+Your organization needs a way to identify and classify all contract documents from the many files you receive.
+You also want to be able to quickly view several key elements in each of the contract files identified (for example, _Client_, _Contractor_, and _Fee amount_).
+You can do this by using xref:index.adoc[SharePoint Syntex] to create a document understanding model and applying it to a document library.
+
+=== Overview of the process
+
+xref:document-understanding-overview.adoc[Document understanding] uses artificial intelligence (AI) models to automate classification of files and extraction of information.
+Document understanding models are also optimal in extracting information from unstructured and semi-structured documents where the information you need isn't contained in tables or forms, such as contracts.
+
+Document understanding models use Optical Character Recognition (OCR) technology to scan PDFs, images, and TIFF files, both when you train a model with example files and when you run the model against files in a document library.
+
+. First, you need to find at least five example files that you can use to "train" the model to search for characteristics that are specific to the content type you're trying to identify (a contract).
+. Using SharePoint Syntex, create a new document understanding model.
+Using your example files, you need to xref:create-a-classifier.adoc[create a classifier].
+By training the classifier with your example files, you teach it to search for characteristics that are specific to what you would see in your company's contracts.
+For example, link:create-a-classifier.md#create-an-explanation[create an "explanation"] that searches for specific strings that are in your contracts, such as _Service Agreement_, _Terms of Agreement_, and _Compensation_.
+You can even train your explanation to look for these strings in specific sections of the document, or located next to other strings.
+When you think you have trained your classifier with the information it needs, you can test your model on a sample set of example files to see how efficient it is.
+After testing, if needed you can choose to make changes to your explanations to make them more efficient.
+. In your model, you can xref:create-an-extractor.adoc[create an extractor] to pull out specific pieces of data from each contract.
+For example, for each contract, the information you're most concerned about is who the client is, the name of the contractor, and the total cost.
+. After you successfully create your model, xref:apply-a-model.adoc[apply it to a SharePoint document library].
+As you upload documents to the document library, your document understanding model will run and will identify and classify all files that match the contracts content type you defined in your model.
+All files that are classified as contracts will display in a custom library view.
+The files will also display the values from each contract that you defined in your extractor.
++
+image::../media/content-understanding/doc-lib-solution.png[Contracts in document library.]
+
+. If you have retention or security requirements for your contracts, you can also use your model to apply a xref:apply-a-retention-label-to-a-model.adoc[retention label] or a xref:apply-a-sensitivity-label-to-a-model.adoc[sensitivity label] that will prevent your contracts from being deleted for a specified period of time or to restrict who can access the contracts.
+
+=== Steps to create and train your model
+
+____
+[!NOTE] For these steps, you can use the example files in the https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management[Contracts Management Solution Assets repository].
+The examples in this repository contain both the document understanding model files and the files used to train the model.
+____
+
+==== Create a Contract model
+
+The first step is to create your Contract model.
+
+. From the content center, select *New*, and then *Create a model*.
+. On the *New document understanding model* pane, in the *Name* field, type the name of the model.
+For this contract management solution, you can name the model _Contract_.
+. Choose *Create*.
+This creates a home page for the model.</br>
++
+image::../media/content-understanding/models-contract-home-page.png[Screenshot of the Contract home page.]
+
+==== Train your model to classify a type of file
+
+===== Add example files for your model
+
+You need to add at least five example files that are contract documents, and one example file that's not a contract document (for example, a statement of work).
+
+. On the menu:Models[Contract] page, under *Key actions* > *Add example files*, select *Add files*.
++
+image::../media/content-understanding/key-actions-add-example-files.png[Screenshot showing the Contracts page with Add example files option highlighted.]
+
+. On the *Select example files for your model* page, open the Contract folder, select files you want to use, and then select *Add*.
+If you don't have example files there, select *Upload* to add them.
+
+===== Label the files as positive or negative examples
+
+. On the menu:Models[Contract] page, under *Key actions* > *Classify files and run training*, select *Train classifier*.
++
+image::../media/content-understanding/key-actions-classify-files.png[Screenshot showing the Contracts page with Classify files and run training option highlighted.]
+
+. On the menu:Models[Contract > Contract classifier] page, in the viewer on the top of the first example file, you'll see text asking if the file is an example of the Contract model you created.
+If it is a positive example, select *Yes*.
+If it is a negative example, select *No*.
+. From the *Labeled examples* list on the left, select other files that you want to use as examples, and label them.
++
+image::../media/content-understanding/models-contract-classifier.png[Classifier home page.]
+
+===== Add at least one explanation to train the classifier
+
+. On the menu:Models[Contract > Contract classifier] page, select the *Train* tab.
+. In the *Trained files* section, you'll see a list of the example files that you previously labeled.
+Select one of the positive files from the list to display it in the viewer.
+. In the *Explanations* section, select *New* and then *Blank*.
+. On the *Create an explanation* page:
++
+a.
+In the *Name* field, type the name of the explanation (such as "Agreement").
++
+b.
+In the *Explanation type* field, select *Phrase list*, because you add a text string.
++
+c.
+In the *Phrase list* box, type the string (such as "AGREEMENT").
+You can select *Case sensitive* if the string needs to be case-sensitive.
++
+d.
+Select *Save and train*.
++
+image::../media/content-understanding/contract-classifier-create-explanation.png[Screenshot of the Create an explanation panel.]
+
+===== Test your model
+
+You can test your Contract model on example files it hasn't seen before.
+This is optional, but it can be a useful best practice.
+
+. On the menu:Models[Contract > Contract classifier] page, select the *Test* tab.
+This runs the model on your unlabeled example files.
+. In the *Test Files* list, your example files display and shows if the model predicted them to be positive or negative.
+Use this information to help determine the effectiveness of your classifier in identifying your documents.
++
+image::../media/content-understanding/test-on-files.png[Screenshot of the unlabeled files in the Text Files list.]
+
+. When done, select *Exit Training*.
+
+==== Create and train an extractor
+
+. On the menu:Models[Contract] page, under *Key actions* > *Create and train extractors*, select *Create extractor*.
++
+image::../media/content-understanding/key-actions-create-extractors.png[Screenshot showing the Contracts page with Create and train extractors option highlighted.]
+
+. On the *New entity extractor* panel, in the *New name* field, type the name of your extractor.
+For example, name it _Client_ if you want to extract the name of the client from each contract.
+. When you're done, select *Create*.
+
+===== Label the entity you want to extract
+
+When you create the extractor, the extractor page opens.
+Here you see a list of your sample files, with the first file on the list displayed in the viewer.
+
+image::../media/content-understanding/client-extractor-labeled-examples.png[Screenshot of the Client extractor Labeled examples page.]
+
+To label the entity:
+
+. From the viewer, select the data that you want to extract from the files.
+For example, if you want to extract the _Client_, you highlight the client value in the first file (in this example, _Best For You Organics_), and then select *Save*.
+You'll see the value display from the file in the *Labeled examples* list, under the *Label* column.
+. Select *Next file* to autosave and open the next file in the list in the viewer.
+Or select *Save*, and then select another file from the *Labeled examples* list.
+. In the viewer, repeat steps 1 and 2, then repeat until you saved the label in all the files.
+
+After you've labeled the files, a notification banner displays informing you to move to training.
+You can choose to label more documents or advance to training.
+
+===== Add an explanation
+
+You can create an explanation that provides a hint about the entity format itself and variations it might have in the example files.
+For example, a date value can be in many different formats, such as:
+
+* 10/14/2019
+* October 14, 2019
+* Monday, October 14, 2019
+
+To help identify the _Contract Start Date_, you can create an explanation.
+
+. In the *Explanations* section, select *New* and then *Blank*.
+. On the *Create an explanation* page:
++
+a.
+In the *Name* field, type the name of the explanation (such as _Date_).
++
+b.
+In the *Explanation type* field, select *Phrase list*.
++
+c.
+In the *Value* field, provide the date variation as they appear in the sample files.
+For example, if you have date formats that appear as 0/00/0000, you enter any variations that appear in your documents, such as:
+
+ ** 0/0/0000
+ ** 0/00/0000
+ ** 00/0/0000
+ ** 00/00/0000
+
+. Select *Save and train*.
+
+===== Test your model again
+
+You can test your Contract model on example files it hasn't seen before.
+This is optional, but it can be a useful best practice.
+
+. On the menu:Models[Contract > Contract classifier] page, select the *Test* tab.
+This runs the model on your unlabeled example files.
+. In the *Test files* list, your example files display and shows if the model is able to extract the information you need.
+Use this information to help determine the effectiveness of your classifier in identifying your documents.
+. When done, select *Exit Training*.
+
+==== Apply your model to a document library
+
+To apply your model to a SharePoint document library:
+
+. On the menu:Models[Contract] page, under *Key actions* > *Apply model to libraries*, select *Apply model*.
++
+image::../media/content-understanding/key-actions-apply-model.png[Screenshot showing the Contracts page with Apply model to libraries option highlighted.]
+
+. On the *Add Contract* panel, select the SharePoint site that contains the document library that you want to apply the model to.
+If the site does not show in the list, use the search box to find it.
+Select *Add*.
++
+____
+[!NOTE] You must have _Manage List_ permissions or _Edit_ rights to the document library you are applying the model to.
+____
+
+. After you select the site, select the document library to which you want to apply the model.
+. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns.
+This view is the library's default view by default, but you can optionally choose to have it not be the default view by selecting *Advanced settings* and clearing the *Set this new view as default* check box.
+. Select *Add* to apply the model to the library.
+. On the menu:Models[Contract] page, in the *Libraries with this model* section, you'll see the URL to the SharePoint site listed.
++
+image::../media/content-understanding/contract-libraries-with-this-model.png[Screenshot of the Contract home page showing the Libraries with this model section.]
+
+. Under *Settings* > *Library settings*:
+ ** Add a column named *Status* and select *Choice* as the column type.
+ ** Apply the *In review*, *Approved*, and *Rejected* values.
+
+After you apply the model to the document library, you can begin uploading documents to the site and see the results.
+
+=== Next step
+
+xref:solution-manage-contracts-step2.adoc[Step 2.
+Use Microsoft Teams to create your contract management channel]

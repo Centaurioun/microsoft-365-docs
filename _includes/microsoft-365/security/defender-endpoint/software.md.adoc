@@ -1,0 +1,122 @@
+= Software methods and properties
+:audience: ITPro
+:author: DulceMontemayor
+:description: Retrieves top recent alerts.
+:keywords: apis, graph api, supported apis, get, alerts, recent
+:manager: dansimp
+:ms.author: dolmont
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Software resource type
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+[!includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+[!includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+=== Methods
+
+{blank} +
+
+'''
+
+|===
+| Method | Return Type | Description
+
+| xref:get-software.adoc[List software]
+| Software collection
+| List the organizational software inventory
+
+| xref:get-software-by-id.adoc[Get software by ID]
+| Software
+| Get a specific software by its software ID
+
+| xref:get-software-ver-distribution.adoc[List software version distribution]
+| Distribution collection
+| List software version distribution by software ID
+
+| xref:get-machines-by-software.adoc[List machines by software]
+| MachineRef collection
+| Retrieve a list of devices that are associated with the software ID
+
+| xref:get-vuln-by-software.adoc[List vulnerabilities by software]
+| xref:vulnerability.adoc[Vulnerability] collection
+| Retrieve a list of vulnerabilities associated with the software ID
+
+| xref:get-missing-kbs-software.adoc[Get missing KBs]
+| KB collection
+| Get a list of missing KBs associated with the software ID
+
+|
+|
+|
+|===
+
+=== Properties
+
+{blank} +
+
+'''
+
+|===
+| Property | Type | Description
+
+| id
+| String
+| Software ID
+
+| Name
+| String
+| Software name
+
+| Vendor
+| String
+| Software publisher name
+
+| Weaknesses
+| Long
+| Number of discovered vulnerabilities
+
+| publicExploit
+| Boolean
+| Public exploit exists for some of the vulnerabilities
+
+| activeAlert
+| Boolean
+| Active alert is associated with this software
+
+| exposedMachines
+| Long
+| Number of exposed devices
+
+| impactScore
+| Double
+| Exposure score impact of this software
+
+|
+|
+|
+|===

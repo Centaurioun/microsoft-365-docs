@@ -1,0 +1,282 @@
+= Microsoft Defender for Endpoint in Microsoft 365 Defender
+:audience: ITPro
+:author: dansimp
+:description: Learn about changes from the Microsoft Defender Security Center to Microsoft 365 Defender
+:experimental:
+:f1.keywords: ["NOCSH"]
+:keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, security portal, defender security portal
+:manager: dansimp
+:ms.author: dansimp
+:ms.collection: ["M365-security-compliance"]
+:ms.custom: admindeeplinkDEFENDER
+:ms.date: 04/21/2021
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.service: microsoft-365-security
+:ms.subservice: m365d
+:ms.topic: article
+:search.appverid: ["MOE150", "MET150"]
+
+== Microsoft Defender for Endpoint in Microsoft 365 Defender
+
+[!INCLUDE xref:../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* xref:microsoft-365-defender.adoc[Microsoft 365 Defender]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint]
+
+=== Quick reference
+
+The image and the table below lists the changes in navigation between the Microsoft Defender Security Center and Microsoft 365 Defender.
+
+____
+[!div class="mx-imgBorder"] :::image type="content" source="../../media/mde-m3d-security-center.png" alt-text="The new locations in the Microsoft 365 Defender portal" lightbox="../../media/mde-m3d-security-center.png":::
+____
+
+|===
+| Microsoft Defender Security Center | Microsoft 365 Defender
+
+| Dashboards <ul><li>Security Operations</li><li>Threat Analytics</li></ul>
+| Home <ul><li>Threat analytics</li></ul>
+
+| Incidents
+| Incidents & alerts
+
+| Device inventory
+| Device inventory
+
+| Alerts queue
+| Incidents & alerts
+
+| Automated investigations
+| Action center
+
+| Advanced hunting
+| Hunting
+
+| Reports
+| Reports
+
+| Partners & APIs
+| Partners & APIs
+
+| Microsoft Defender Vulnerability Management
+| Vulnerability management
+
+| Evaluation and tutorials
+| Evaluation & tutorials
+
+| Configuration management
+| Configuration management
+
+| Settings
+| Settings
+|===
+
+The improved xref:microsoft-365-defender-portal.adoc[Microsoft 365 Defender] at https://go.microsoft.com/fwlink/p/?linkid=2077139[https://security.microsoft.com] combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats.
+This brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
+
+If you're familiar with the Microsoft Defender Security Center, this article helps describe some of the changes and improvements in Microsoft 365 Defender.
+However there are some new and updated elements to be aware of.
+
+Historically, the link:/windows/security/threat-protection/microsoft-defender-atp/portal-overview[Microsoft Defender Security Center] has been the home for Microsoft Defender for Endpoint.
+Enterprise security teams have used it to monitor and help responding to alerts of potential advanced persistent threat activity or data breaches.
+To help reduce the number of portals, Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
+
+Microsoft Defender for Endpoint in Microsoft 365 Defender supports link:/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access[granting access to managed security service providers (MSSPs)] in the same way xref:mssp-access.adoc[access is granted in the Microsoft Defender Security Center].
+
+____
+[!IMPORTANT] What you see in Microsoft 365 Defender depends on your current subscriptions.
+For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown.
+____
+
+____
+[!Note] Microsoft 365 Defender is not available for:
+
+* US Government Community Cloud (GCC)
+* US Government Community Cloud High (GCC High)
+* US Department of Defense
+* All US government institutions with commercial licenses
+____
+
+Take a look in Microsoft 365 Defender at https://go.microsoft.com/fwlink/p/?linkid=2077139[https://security.microsoft.com].
+
+Learn more about the benefits: xref:microsoft-365-defender.adoc[Overview of Microsoft 365 Defender]
+
+=== What's changed
+
+This table is a quick reference of the changes between the Microsoft Defender Security Center and Microsoft 365 Defender.
+
+==== Alerts and actions
+
+|===
+| Area | Description of change
+
+| xref:incidents-overview.adoc[Incidents & alerts]
+| In Microsoft 365 Defender, you can manage incidents and alerts across all of your endpoints, email, and identities.
+We've converged the experience to help you find related events more easily.
+For more information, see xref:incidents-overview.adoc[Incidents Overview].
+
+| xref:advanced-hunting-overview.adoc[Hunting]
+| Modifying custom detection rules created in Microsoft Defender for Endpoint to include identity and email tables automatically moves them to Microsoft 365 Defender.
+Their corresponding alerts will also appear in Microsoft 365 Defender.
+For more details about these changes, read link:advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules[Migrate custom detection rules].
++  + The `DeviceAlertEvents` table for advanced hunting isn't available in Microsoft 365 Defender.
+To query device-specific alert information in Microsoft 365 Defender, you can use the `AlertInfo` and `AlertEvidence` tables to accommodate even more information from a diverse set of sources.
+Craft your next device-related query by following link:advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents[Write queries without DeviceAlertEvents].
+
+| xref:m365d-action-center.adoc[Action center]
+| Lists pending and completed actions that were taken following automated investigations and remediation actions.
+Formerly, the Action center in the Microsoft Defender Security Center listed pending and completed actions for remediation actions taken on devices only, while Automated investigations listed alerts and status.
+In the  improved Microsoft 365 Defender, the Action center brings together remediation actions and investigations across email, devices, and users--all in one location.
+
+| xref:threat-analytics.adoc[Threat analytics]
+| Moved to the top of the navigation bar for easier discovery and use.
+Now includes threat information for both endpoints and email and collaboration.
+|===
+
+==== Endpoints
+
+|===
+| Area | Description of change
+
+| Search
+| The search bar is located at the top of the page.
+Suggestions are provided as you type.
+You can search across the following entities in Defender for Endpoint and Defender for Identity: +  + - *Devices* - supported for both Defender for Endpoint and Defender for Identity.
+You can even use search operators, for example, you can use "contains" to search for part of a host name.
++  + - *Users* - supported for both Defender for Endpoint and Defender for Identity.
++  + - *Files, IPs, and URLs* - same capabilities as in Defender for Endpoint.
++ NOTE: *IP and URL searches are exact match and don't appear in the search results page -- they lead directly to the entity page.
++  + - *MDVM* -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations).
++  + The enhanced search results page centralizes the results from all entities.
+
+| link:/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard[Dashboard]
+| This is your security operations dashboard.
+See an overview of how many active alerts were triggered, which devices are at risk, which users are at risk, and severity level for alerts, devices, and users.
+You can also see if any devices have sensor issues, your overall service health, and how any unresolved alerts were detected.
+
+| Device inventory
+| No changes.
+
+| link:/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt[Vulnerability management]
+| Name was shortened to fit in the navigation pane.
+It's the same as the Microsoft Defender Vulnerability Management section, with all the pages underneath.
+
+| Partners and APIs
+| No changes.
+
+| Evaluations & tutorials
+| New testing and learning capabilities.
+
+| Configuration management
+| No changes.
+|===
+
+____
+[!NOTE] *Automatic investigation and remediation* is now a part of  incidents.
+You can see Automated  investigation and remediation events in the menu:Incident[Investigation] tab.
+____
+
+____
+[!TIP] Device search is done from Endpoints > Search.
+____
+
+==== Access and reporting
+
+|===
+| Area | Description of change
+
+| Reports
+| See reports for endpoints and email & collaboration, including Threat protection, Device health and compliance, and Vulnerable devices.
+
+| Health
+| Currently links out to the "Service health" page in the https://admin.microsoft.com/[Microsoft 365 admin center].
+
+| Settings
+| Manage your settings for Microsoft 365 Defender, Endpoints, Email & collaboration, Identities, and Device discovery.
+|===
+
+=== Microsoft 365 security navigation and capabilities
+
+The left navigation, or quick launch bar, will look familiar.
+However, there are some new and updated elements in Microsoft 365 Defender portal.
+
+==== Incidents and alerts
+
+Brings together incident and alert management across your email, devices, and identities.
+The alert page provides full context to the alert by combining attack signals to construct a detailed story.
+A new, unified experience now brings together a consistent view of alerts across workloads.
+You can quickly triage, investigate, and take effective action.
+
+* xref:incidents-overview.adoc[Learn more about incidents]
+* xref:investigate-alerts.adoc[Learn more about managing alerts]
+
+:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="The Alerts and Actions quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-1-alerts-and-actions.png":::
+
+==== Hunting
+
+Proactively search for threats, malware, and malicious activity across your endpoints, Office 365 mailboxes, and more by using xref:advanced-hunting-overview.adoc[advanced hunting queries].
+These powerful queries can be used to locate and review threat indicators and entities for both known and potential threats.
+
+xref:custom-detection-rules.adoc[Custom detection rules] can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
+
+==== Action center
+
+Action center shows you the investigations created by automated investigation and response capabilities.
+This automated, self-healing in Microsoft 365 Defender can help security teams by automatically responding to specific events.
+
+xref:m365d-action-center.adoc[Learn more about the Action center].
+
+==== Threat Analytics
+
+Get threat intelligence from expert Microsoft security researchers.
+Threat Analytics helps security teams be more efficient when facing emerging threats.
+Threat Analytics includes:
+
+* Email-related detections and mitigations from Microsoft Defender for Office 365.
+This is in addition to the endpoint data already available from Microsoft Defender for Endpoint.
+* Incidents view related to the threats.
+* Enhanced experience for quickly identifying and using actionable information in the reports.
+
+You can access threat analytics either from the upper left navigation bar in Microsoft 365 Defender, or from a dedicated dashboard card that shows the top threats for your organization.
+
+Learn more about how to xref:./threat-analytics.adoc[track and respond to emerging threats with threat analytics].
+
+==== Endpoints section
+
+View and manage the security of endpoints in your organization.
+If you've used the Microsoft Defender Security Center, it will look familiar.
+
+:::image type="content" source="../../media/converge-2-endpoints.png" alt-text="The Endpoints quick launch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-2-endpoints.png":::
+
+==== Access and reports
+
+View reports, change your settings, and modify user roles.
+
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The Access and Reporting quicklaunch bar in the Microsoft 365 Defender portal" lightbox="../../media/converge-4-access-and-reporting-new.png":::
+
+==== SIEM API connections
+
+If you use the xref:../defender-endpoint/enable-siem-integration.adoc[Defender for Endpoint SIEM API], you can continue to do so.
+We've added new links on the API payload that point to the alert page or the incident page in the Microsoft 365 security portal.
+New API fields include LinkToMTP and IncidentLinkToMTP.
+For more information, see xref:./microsoft-365-security-mde-redirection.adoc[Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender].
+
+==== Email alerts
+
+You can continue to use email alerts for Defender for Endpoint.
+We've added new links in the emails that point to the alert page or the incident page in Microsoft 365 Defender.
+For more information, see xref:./microsoft-365-security-mde-redirection.adoc[Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender].
+
+==== Managed Security Service Providers (MSSP)
+
+Logging in to multiple tenants simultaneously in the same browsing session is currently not supported in the unified portal.
+You can opt out of the automatic redirection by link:microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal[reverting to the former Microsoft Defender for Endpoint portal], to maintain this functionality until the issue is resolved.
+
+=== Related information
+
+* xref:microsoft-365-defender.adoc[Microsoft 365 Defender]
+* xref:microsoft-365-security-center-mde.adoc[Microsoft Defender for Endpoint in Microsoft 365 Defender]
+* xref:microsoft-365-security-mde-redirection.adoc[Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender]

@@ -1,0 +1,50 @@
+= Image tagging in SharePoint Syntex
+:ROBOTS: NOINDEX, NOFOLLOW
+:audience: admin
+:author: MikePlumleyMSFT
+:description: Learn about image tagging in SharePoint Syntex
+:manager: serdars
+:ms.author: mikeplum
+:ms.collection: ["enabler-strategic", "m365initiative-syntex"]
+:ms.custom: admindeeplinkMAC
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+:search.appverid:
+
+== Image tagging in SharePoint Syntex
+
+(Coming soon)
+
+With image tagging in SharePoint Syntex, users can find images through search by searching on image tags, and create workflows based on image tags.
+By default, basic image tagging is turned on for SharePoint and OneDrive.
+Images uploaded to either location are automatically scanned and applicable tags are applied, if available, from a list of 37 basic tags.
+Users can find images through search by searching on the image tags.
+
+When a user uploads an image, the  tagging process runs automatically.
+If an image is edited, the tagging process runs again to update the tags.
+
+Users with permissions to the image file can see and edit the tags in the file information panel or in the search results page.
+Once a user edits an image's tags, the system no longer auto-tags that image, even if it's edited.
+
+If you turn tagging off, images will no longer be automatically tagged.
+Existing tags won't be removed.
+
+____
+[!NOTE] System generated tags may change with updates to the image or our tag technology.
+____
+
+=== Configure image tagging
+
+After you xref:set-up-content-understanding.adoc[set up SharePoint Syntex], you can configure image tagging in the Microsoft 365 admin center.
+
+To turn image tagging on or off
+
+. In the Microsoft 365 admin center, select https://go.microsoft.com/fwlink/p/?linkid=2171997[*Setup*].
+. Under *Organizational knowledge*, click *Automate content understanding*.
+. Click *Manage*.
+. On the *Image tagging* tab, click *Edit*.
+. Choose to allow *Basic tagging* or turn tagging *Off*.
+. Click *Save*.
++
+image::../media/content-understanding/sharepoint-syntex-image-tagging-control.png[Screenshot of image tagging control.]

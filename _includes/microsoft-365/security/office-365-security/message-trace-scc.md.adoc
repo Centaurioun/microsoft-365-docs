@@ -1,0 +1,55 @@
+= Message trace in the Microsoft 365 Defender portal
+:audience: ITPro
+:author: chrisda
+:description: Admins can use the message trace link in the Microsoft 365 Defender portal to find out what happened to messages.
+:f1.keywords: ["NOCSH"]
+:manager: dansimp
+:ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+:ms.author: chrisda
+:ms.collection: M365-security-compliance
+:ms.custom: ["seo-marvel-apr2020"]
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-security
+:ms.subservice: mdo
+:ms.topic: how-to
+:search.appverid: met150
+
+== Message trace in the Microsoft 365 Defender portal
+
+[!INCLUDE xref:../includes/mdo-trial-banner.adoc[MDO Trial banner]]
+
+*Applies to*
+
+* xref:exchange-online-protection-overview.adoc[Exchange Online Protection]
+* xref:defender-for-office-365.adoc[Microsoft Defender for Office 365 plan 1 and plan 2]
+* xref:../defender/microsoft-365-defender.adoc[Microsoft 365 Defender]
+
+Message trace follows email messages as they travel through your Exchange Online organization.
+You can determine if a message was received, rejected, deferred, or delivered by the service.
+It also shows what actions were taken on the message before it reached its final status.
+
+You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
+
+____
+[!NOTE] Message trace in the Microsoft 365 Defender portal is just a pass through to Message trace in the Exchange admin center.
+For more information, see link:/exchange/monitoring/trace-an-email-message/message-trace-modern-eac[Message trace in the modern Exchange admin center].
+____
+
+=== What do you need to know before you begin?
+
+* You need to be a member of the *Organization Management*, *Compliance Management* or *Help Desk* role groups in *Exchange Online* to use message trace.
+For more information, see link:/exchange/permissions-exo/permissions-exo[Permissions in Exchange Online].
++
+*Notes*: Membership in the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365.
+For more information, see xref:../../admin/add-users/about-admin-roles.adoc[About admin roles].
+
+* The maximum number of messages that are displayed in the results of a message trace depends on the report type you selected (see the link:/exchange/monitoring/trace-an-email-message/message-trace-modern-eac#choose-report-type[Choose report type] section for details).
+The link:/powershell/module/exchange/get-historicalsearch[Get-HistoricalSearch] cmdlet in Exchange Online PowerShell or standalone EOP PowerShell returns all messages in the results.
+
+=== Open message trace
+
+In the Microsoft 365 Defender portal at https://security.microsoft.com, go to *Email & collaboration* > *Exchange message trace*.
+To go directly to the message trace page, use https://admin.exchange.microsoft.com/#/messagetrace.
+
+At this point, message trace in the EAC opens.
+For more information, see link:/exchange/monitoring/trace-an-email-message/message-trace-modern-eac[Message trace in the modern Exchange admin center].

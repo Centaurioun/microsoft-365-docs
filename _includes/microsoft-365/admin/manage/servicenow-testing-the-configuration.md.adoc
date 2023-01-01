@@ -1,0 +1,26 @@
+= Testing the ServiceNow configuration
+:ROBOTS: NOINDEX, NOFOLLOW
+:audience: Admin
+:author: efrene
+:description: Scoped Certified application installation and configuration guide for ServiceNow.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: efrene
+:ms.collection: ["M365-subscription-management", "Adm_TOC"]
+:ms.custom: AdminSurgePortfolio
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["MET150"]
+
+== Testing the ServiceNow configuration
+
+If your application requires successful communication with external systems, outline how to test the connection to ensure a successful configuration.
+
+Follow these steps to test the configuration of Microsoft 365 support integration:
+
+. Log into your ServiceNow portal as admin.
+. Open any incident.
+. Focus on the *Microsoft 365 Support* tab and select *Microsoft 365 Insights* to determine if the recommended solutions were returned successfully.
++
+:::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image38.png" alt-text="Graphical user interface, application, website Description automatically generated":::

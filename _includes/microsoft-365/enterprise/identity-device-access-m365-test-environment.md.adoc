@@ -1,0 +1,40 @@
+= Identity and device access for your Microsoft 365 test environment
+:audience: ITPro
+:author: kelleyvice-msft
+:description: Create a Microsoft 365 environment to test identity and device access.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: kvice
+:ms.collection: ["M365-subscription-management", "Strat_O365_Enterprise"]
+:ms.custom:
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: article
+
+== Identity and device access for your Microsoft 365 test environment
+
+_This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments._
+
+xref:../security/office-365-security/microsoft-365-policies-configurations.adoc[Identity and device access configurations] are a set of recommended configurations and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD).
+
+To create a test environment that has the common identity and device access configurations in place:
+
+. Configure your test environment with the prerequisite identity and security features based on your choice of identity model and authentication method:
+
+* xref:cloud-only-prereqs-m365-test-environment.adoc[Cloud only]
+* xref:phs-prereqs-m365-test-environment.adoc[Password hash synchronization (PHS)]
+* xref:pta-prereqs-m365-test-environment.adoc[Pass-through authentication (PTA)]
+
+. Use xref:../security/office-365-security/identity-access-policies.adoc[Common identity and device access policies] to configure the policies that build on the prerequisites configured for your test environment and explore and verify protection for identities and devices.
+
+=== See also
+
+link:m365-enterprise-test-lab-guides.md#identity[Additional identity Test Lab Guides]
+
+xref:deploy-identity-solution-overview.adoc[Deploy identity]
+
+xref:m365-enterprise-test-lab-guides.adoc[Microsoft 365 for enterprise Test Lab Guides]
+
+xref:microsoft-365-overview.adoc[Microsoft 365 for enterprise overview]
+
+link:/microsoft-365-enterprise/[Microsoft 365 for enterprise documentation]

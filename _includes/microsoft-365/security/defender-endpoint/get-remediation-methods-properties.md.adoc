@@ -1,0 +1,192 @@
+= Remediation activity methods and properties
+:audience: ITPro
+:author: jweston-1
+:description: The API response contains Microsoft Defender Vulnerability Management remediation activities created in your tenant. You can request all the remediation activities, only one remediation activity, or information about exposed devices for a selected remediation task.
+:keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
+:manager: dansimp
+:ms.author: v-jweston
+:ms.collection: M365-security-compliance
+:ms.custom: api
+:ms.localizationpriority: medium
+:ms.mktglfcycl: deploy
+:ms.pagetype: security
+:ms.service: microsoft-365-security
+:ms.sitesec: library
+:ms.subservice: mde
+:ms.topic: article
+:search.appverid: met150
+
+== Remediation activity methods and properties
+
+[!INCLUDE xref:../../includes/microsoft-defender.adoc[Microsoft 365 Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for Endpoint Plan 2]
+* link:../defender-vulnerability-management/index.yml[Microsoft Defender Vulnerability Management]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign up for a free trial.]
+____
+
+____
+Want to experience Microsoft Defender Vulnerability Management?
+Learn more about how you can sign up to the xref:../defender-vulnerability-management/get-defender-vulnerability-management.adoc[Microsoft Defender Vulnerability Management public preview trial].
+____
+
+[!Includexref:../../includes/prerelease.adoc[Prerelease information]]
+
+[!Includexref:../../includes/microsoft-defender-api-usgov.adoc[Microsoft Defender for Endpoint API URIs for US Government]]
+
+[!Includexref:../../includes/improve-request-performance.adoc[Improve request performance]]
+
+The API response contains xref:next-gen-threat-and-vuln-mgt.adoc[Microsoft Defender Vulnerability Management] remediation activities that have been created in your tenant.
+
+=== Methods
+
+|===
+| Method | Data type | Description
+
+| xref:get-remediation-all-activities.adoc[List all remediation activities]
+| Investigation collection
+| Returns information about all remediation activities.
+
+| xref:get-remediation-exposed-devices-activities.adoc[List exposed devices of one remediation activity]
+| Investigation entity
+| Returns information about exposed devices for the specified remediation activity.
+
+| xref:get-remediation-one-activity.adoc[Get one remediation activity by ID]
+| Investigation entity
+| Returns information for the specified remediation activity.
+|===
+
+Learn more about xref:tvm-remediation.adoc[remediation activities].
+
+=== Properties
+
+|===
+| Property ID | Data type | Description
+
+| Category
+| String
+| Category of the remediation activity (Software/Security configuration)
+
+| completerEmail
+| String
+| If the remediation activity was manually completed by someone, this column contains their email
+
+| completerId
+| String
+| If the remediation activity was manually completed by someone, this column contains their object ID
+
+| completionMethod
+| String
+| A remediation activity can be completed "automatically" (if all the devices are patched) or "manually" by a person who selects "mark as completed."
+
+| createdOn
+| DateTime
+| Time this remediation activity was created
+
+| Description
+| String
+| Description of this remediation activity
+
+| dueOn
+| DateTime
+| Due date the creator set for this remediation activity
+
+| fixedDevices
+|
+| The number of devices that have been fixed
+
+| ID
+| String
+| ID of this remediation activity
+
+| nameId
+| String
+| Related product name
+
+| Priority
+| String
+| Priority the creator set for this remediation activity (High\Medium\Low)
+
+| productId
+| String
+| Related product ID
+
+| productivityImpactRemediationType
+| String
+| A few configuration changes could be requested only for devices that don't affect users.
+This value indicates the selection between "all exposed devices" or "only devices with no user impact."
+
+| rbacGroupNames
+| String
+| Related device group names
+
+| recommendedProgram
+| String
+| Recommended program to upgrade to
+
+| recommendedVendor
+| String
+| Recommended vendor to upgrade to
+
+| recommendedVersion
+| String
+| Recommended version to update/upgrade to
+
+| relatedComponent
+| String
+| Related component of this remediation activity (similar to the related component for a security recommendation)
+
+| requesterEmail
+| String
+| Creator email address
+
+| requesterId
+| String
+| Creator object ID
+
+| requesterNotes
+| String
+| The notes (free text) the creator added for this remediation activity
+
+| Scid
+| String
+| SCID of the related security recommendation
+
+| Status
+| String
+| Remediation activity status (Active/Completed)
+
+| statusLastModifiedOn
+| DateTime
+| Date when the status field was updated
+
+| targetDevices
+| Long
+| Number of exposed devices that this remediation is applicable to
+
+| Title
+| String
+| Title of this remediation activity
+
+| Type
+| String
+| Remediation type
+
+| vendorId
+| String
+| Related vendor name
+|===
+
+=== See also
+
+* xref:get-remediation-one-activity.adoc[Get one remediation activity by ID]
+* xref:get-remediation-all-activities.adoc[List all remediation activities]
+* xref:get-remediation-exposed-devices-activities.adoc[List exposed devices of one remediation activity]
+* xref:next-gen-threat-and-vuln-mgt.adoc[Microsoft Defender Vulnerability Management]
+* xref:tvm-weaknesses.adoc[Vulnerabilities in your organization]

@@ -1,0 +1,50 @@
+= Manage Microsoft 365 user accounts, licenses, and groups with PowerShell
+:audience: ITPro
+:author: kelleyvice-msft
+:description: Learn how to manage Microsoft 365 user accounts, licenses, and groups with PowerShell.
+:f1.keywords: ["CSH"]
+:manager: scotv
+:ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
+:ms.author: kvice
+:ms.collection: Ent_O365
+:ms.custom: ["PowerShell", "Ent_Office_Other", "seo-marvel-apr2020"]
+:ms.date: 11/13/2020
+:ms.localizationpriority: medium
+:ms.service: microsoft-365-enterprise
+:ms.topic: landing-page
+
+== Manage Microsoft 365 user accounts, licenses, and groups with PowerShell
+
+_This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise._
+
+Microsoft 365 administrators need to manage user accounts, licenses, and groups.
+Although you can do most of these tasks in the Microsoft 365 admin center, some are easier in PowerShell.
+
+For more information, see the following articles.
+
+=== User accounts
+
+* xref:create-user-accounts-with-microsoft-365-powershell.adoc[Create user accounts]
+* xref:view-user-accounts-with-microsoft-365-powershell.adoc[View user accounts]
+* xref:configure-user-account-properties-with-microsoft-365-powershell.adoc[Configure user account properties]
+* xref:assign-roles-to-user-accounts-with-microsoft-365-powershell.adoc[Assign roles to user accounts]
+* xref:delete-and-restore-user-accounts-with-microsoft-365-powershell.adoc[Delete and restore user accounts]
+* xref:block-user-accounts-with-microsoft-365-powershell.adoc[Block user accounts]
+* xref:manage-passwords-with-microsoft-365-powershell.adoc[Passwords]
+
+=== Licenses and services
+
+* xref:view-licenses-and-services-with-microsoft-365-powershell.adoc[View licenses and services]
+* xref:view-licensed-and-unlicensed-users-with-microsoft-365-powershell.adoc[View licensed and unlicensed users]
+* xref:assign-licenses-to-user-accounts-with-microsoft-365-powershell.adoc[Assign licenses to user accounts]
+* xref:view-account-license-and-service-details-with-microsoft-365-powershell.adoc[View account license and service details]
+* xref:disable-access-to-services-with-microsoft-365-powershell.adoc[Disable access to services]
+ ** xref:disable-access-to-sway-with-microsoft-365-powershell.adoc[Disable access to Sway]
+ ** xref:disable-access-to-services-while-assigning-user-licenses.adoc[Disable access to services while assigning user licenses]
+* xref:remove-licenses-from-user-accounts-with-microsoft-365-powershell.adoc[Remove licenses from user accounts]
+
+=== Groups
+
+* xref:manage-security-groups-with-microsoft-365-powershell.adoc[Manage security groups]
+* xref:maintain-group-membership-with-microsoft-365-powershell.adoc[Maintain security group membership]
+* xref:manage-microsoft-365-groups-with-powershell.adoc[Manage Microsoft 365 groups]

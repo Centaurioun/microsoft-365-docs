@@ -1,0 +1,20 @@
+= For additional support
+:audience: Software-Vendor
+:author: mansipatel-usl
+:description: Details on how to reach out to the Test Base team
+:f1.keywords: NOCSH
+:manager: rshastri
+:ms.author: tinachen
+:ms.collection: TestBase-M365
+:ms.custom:
+:ms.date: 07/06/2021
+:ms.localizationpriority: medium
+:ms.reviewer: tinachen
+:ms.service: test-base
+:ms.topic: how-to
+:search.appverid: MET150
+
+== Additional support
+
+[discrete]
+==== For additional support, please reach out to the Test Base team at TestBasePreview@microsoft.com

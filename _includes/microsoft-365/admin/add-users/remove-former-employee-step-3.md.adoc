@@ -1,0 +1,35 @@
+= Step 3 - Wipe and block a former employee's mobile device
+:audience: Admin
+:author: kwekua
+:description: Use the Exchange admin center to wipe and block a former employee's device so that all organization data is removed and it no longer connects to Microsoft 365.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.author: kwekua
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC", "SPO_Content"]
+:ms.custom: ["MSStore_Link", "TRN_M365B", "OKR_SMB_Videos", "AdminSurgePortfolio", "m365solution-removeemployee", "admindeeplinkEXCHANGE"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Step 3 - Wipe and block a former employee's mobile device
+
+If your former employee had an organization phone, you can use the https://go.microsoft.com/fwlink/p/?linkid=2059104[Exchange admin center] to wipe and block that device so that all organization data is removed from the device and it can no longer connect to Office 365.
+If your organization uses Basic Mobility and Security to manage mobile devices, you can wipe and block those devices using Basic Mobility and Security.
+
+=== Wipe mobile device using the Exchange admin center
+
+. Go to the Exchange admin center > *Recipients* > https://go.microsoft.com/fwlink/?linkid=2183135[Mailboxes].
+. Select the user, and under *Mobile Devices*, select *View details*.
+. On the *Mobile Device Details* page, under *Mobile devices*, select the mobile device, select *Wipe Data*image:../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png[Wipe Device.], and then select *Block*.
+. Select *Save*.
++
+____
+[!TIP] Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service.
+You should also disable any Blackberry devices for the user.
+Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user.
+____
+
+=== Related content
+
+link:/exchange/exchange-admin-center[Exchange admin center in Exchange Online]

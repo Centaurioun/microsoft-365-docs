@@ -1,0 +1,48 @@
+= Update your admin phone number and email address
+:audience: Admin
+:author: kwekua
+:description: Update your administrator phone number and email address in the admin center if you want to reset your own admin password.
+:f1.keywords: ["NOCSH"]
+:manager: scotv
+:ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
+:ms.author: kwekua
+:ms.collection: ["M365-subscription-management", "Adm_O365", "Adm_TOC"]
+:ms.custom: ["AdminSurgePortfolio", "AdminTemplateSet", "admindeeplinkMAC"]
+:ms.localizationpriority: medium
+:ms.service: o365-administration
+:ms.topic: article
+:search.appverid: ["BCS160", "MET150", "MOE150"]
+
+== Update your Microsoft 365 admin phone number and email address
+
+This article explains how you, the admin, can change your business phone and email address in Microsoft 365.
+
+If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see xref:change-address-contact-and-more.adoc[Change your organization's address, technical contact email, and other information].
+
+For more information about changing user contact information or removing former employees, see <<related-content,Related content>>.
+
+=== To update your phone number and email address
+
+Use the *Security Info* page to change your mobile phone number and alternate email address.
+The alternate email address is used for important notifications, such as resetting your admin password (not your computer admin password).
+
+. Browse to the https://go.microsoft.com/fwlink/p/?linkid=2024339[Microsoft 365 admin center].
+. In the header, select your profile icon > *My account* > *Security Info*.
+. In the *Security info* tab, select *Add Method* > *Phone* > *Alternate Phone* or *Email* to add details.
+To update your mobile, phone, and alternate email address details, select *Change*.
+Make sure you use something other than your Microsoft email address for your alternate email address.
++
+____
+[!IMPORTANT] The alternate email address and the mobile phone number are needed for resetting your admin password (not your computer admin password).
+____
+
+. When you are finished, select *Save*.
+
+For answers to billing questions, see:
+
+* xref:../../commerce/billing-and-payments/change-your-billing-addresses.adoc[Change your billing addresses for Microsoft 365 for business]
+* xref:../../commerce/billing-and-payments/manage-payment-methods.adoc[Manage payment methods]
+
+=== Related content
+
+xref:../add-users/change-a-user-name-and-email-address.adoc[Change a user name and email address] (video) + xref:../add-users/add-new-employee.adoc[Add a new employee] (video) + xref:../add-users/remove-former-employee.adoc[Remove a former employee] (video) + xref:../add-users/get-access-to-and-back-up-a-former-user-s-data.adoc[Access and back up a former user's data] (article)

@@ -1,0 +1,79 @@
+= Use DLP policies for non-Microsoft cloud apps
+:audience: ITPro
+:author: chrfox
+:description: Learn how to use dlp policies for non-Microsoft cloud apps.
+:f1.keywords: ["CSH"]
+:f1_keywords: ["ms.o365.cc.DLPLandingPage"]
+:manager: laurawi
+:ms.author: chrfox
+:ms.collection: ["M365-security-compliance", "SPO_Content"]
+:ms.custom: ["seo-marvel-apr2020"]
+:ms.date:
+:ms.localizationpriority: medium
+:ms.service: O365-seccomp
+:ms.topic: article
+:search.appverid: ["MET150"]
+
+== Use data loss prevention policies for non-Microsoft cloud apps
+
+You can scope DLP policies to Microsoft Defender for Cloud Apps to monitor, detect and take actions when sensitive items are used and shared via non-Microsoft cloud apps.
+
+=== Before you begin
+
+==== SKU/subscriptions licensing
+
+Before you start using DLP policies, confirm your https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1[Microsoft 365 subscription] and any add-ons.
+To access and use this functionality, you must have one of these subscriptions or add-ons:
+
+* Microsoft 365 E5
+* Microsoft 365 E5 Compliance
+* Microsoft 365 E5 Security
+
+==== Permissions
+
+The user who creates the DLP policy should be a:
+
+* Global administrator
+* Compliance administrator: assign in Azure AD
+* Compliance data administrator: assign in Azure AD
+
+==== Prepare your Defender for Cloud Apps environment
+
+Before you configure DLP policies scoped to Microsoft Defender for Cloud Apps, you must prepare your Defender for Cloud Apps environment.
+For instructions, see link:/defender-cloud-apps/get-started[Quickstart: Get started with Microsoft Defender for Cloud Apps].
+
+==== Connect a non-Microsoft cloud app
+
+To use a DLP policy thats scoped to a specific non-Microsoft cloud app, the app must be connected to Defender for Cloud Apps.
+For information, see:
+
+* link:/defender-cloud-apps/connect-box[Connect Box]
+* link:/defender-cloud-apps/connect-dropbox[Connect Dropbox]
+* link:/defender-cloud-apps/connect-google-workspace[Connect Google Workspace]
+* link:/defender-cloud-apps/connect-salesforce[Connect Salesforce]
+* link:/defender-cloud-apps/connect-webex[Connect Cisco Webex]
+
+After you connect your cloud apps to Defender for Cloud Apps, you can create DLP policies for them.
+
+=== Create a DLP policy scoped to a non-Microsoft cloud app
+
+Refer to xref:create-test-tune-dlp-policy.adoc[Create, test, and tune a DLP policy] for the procedures to create a DLP policy.
+Keep these points in mind as you configure your policy.
+
+* Select the turn on the *Microsoft Defender for Cloud Apps* location.
+* To select a specific app or instance, select *Choose instance*.
+If you don't select an instance, the policy will be scoped to all connected apps in your Microsoft Defender for Cloud Apps tenant.
+* You can select from a number of *Actions* to enforce on third party apps.
+To restrict third-party apps, select *Restrict Third Party Apps* and then select the specific actions.
+
+image::../media/dlp-non-microsoft-cloud-app-restrict-third-party-apps.png[list of actions to enforce on connected cloud apps]
+
+____
+[!NOTE] When you create a DLP policy that is scoped to Microsoft Defender for Cloud Apps, the same policy will be automatically created in Microsoft Defender for Cloud Apps.
+____
+
+=== See Also
+
+* xref:./create-test-tune-dlp-policy.adoc[Create test and tune a DLP policy]
+* xref:./get-started-with-the-default-dlp-policy.adoc[Get started with the default DLP policy]
+* xref:./create-a-dlp-policy-from-a-template.adoc[Create a DLP policy from a template]
