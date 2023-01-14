@@ -1,0 +1,64 @@
+= 
+JoanneHendrickson
+
+== Step 4: Pre-creating users and groups
+
+This is Step 4 in a solution designed to complete a Cross-tenant
+OneDrive migration. To learn more, see
+link:cross-tenant-onedrive-migration.md[Cross-tenant OneDrive migration
+overview].
+
+* Step 1: link:cross-tenant-onedrive-migration-step1.md[Connect to the
+source and the target tenants]
+* Step 2: link:cross-tenant-onedrive-migration-step2.md[Establish trust
+between the source and the target tenant]
+* Step 3: link:cross-tenant-onedrive-migration-step3.md[Verify trust has
+been established]
+* *Step 4: link:cross-tenant-onedrive-migration-step4.md[Pre-create
+users and groups]* +
+* Step 5: link:cross-tenant-onedrive-migration-step5.md[Prepare identity
+mapping]
+* Step 6: link:cross-tenant-onedrive-migration-step6.md[Start a
+Cross-tenant OneDrive migration]
+* Step 7: link:cross-tenant-onedrive-migration-step7.md[Post migration
+steps]
+
+=== Identify users and groups to be migrated
+
+To ensure that OneDrive permissions are retained as part of the
+migration, a mapping file needs to be created to align users from the
+source tenant to the target tenant.
+
+[arabic]
+. Identify the full list of OneDrive sites that will be migrated from
+the source to the target tenant.
+. Prepare a complete list of users and groups that will be migrated to
+the target tenant.
+
+=== Pre-create users and groups on the target tenant
+
+[arabic]
+. Pre-create users and groups as needed in the target tenant’s
+directory.
+. All users whose OneDrive accounts are migrating to the target tenant
+must have new user identities created for them in the target tenant.
+. All users whose OneDrive accounts are migrating to the target tenant
+must be assigned the appropriate OneDrive license.
+. Any users who remain in the source tenant but need access to resources
+migrating to the target tenant should have new guest identities created
+for them in the target tenant.
+. Pre-created users must be added as members of any appropriate security
+groups or unified groups before the OneDrive migration begins.
+. If the user or group name already exists in the target tenant, create
+a user or group with a different name and make a note of it for the next
+step.
+. We recommend that OneDrive site creations are restricted in the target
+tenant to prevent users from creating OneDrive sites.
+
+____
+{empty}[!Note] To learn more on restricting OneDrive site creation, see
+link:/sharepoint/manage-user-profiles#disable-onedrive-creation-for-some-users[Disable
+OneDrive creation for some users]
+____
+
+=== Step 5: link:cross-tenant-onedrive-migration-step5.md[Prepare the identity mapping file]

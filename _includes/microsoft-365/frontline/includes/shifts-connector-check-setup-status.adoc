@@ -1,0 +1,19 @@
+= 
+LanaChin
+
+To check the status of the connection you set up using the operation ID
+that you received in email:
+
+[arabic]
+. link:#set-up-your-environment[Set up your environment] (if you haven’t
+already).
+. Run the following command. This command gives you the overall status
+of the team mappings for the connection.
++
+[source,powershell]
+----
+Get-CsTeamsShiftsConnectionOperation -OperationId <YourOperationId>
+----
+
+To learn more, see
+link:/powershell/module/teams/get-csteamsshiftsconnectionoperation[Get-CsTeamsShiftsConnectionOperation].

@@ -1,0 +1,105 @@
+= 
+mjcaparas
+:keywords: investigate, investigation, IP address, alert, Microsoft
+Defender for Endpoint, external IP
+
+== Investigate an IP address associated with a Microsoft Defender for Endpoint alert
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink[Sign
+up for a free trial.]
+____
+
+Examine possible communication between your devices and external
+internet protocol (IP) addresses.
+
+Identifying all devices in the organization that communicated with a
+suspected or known malicious IP address, such as Command and Control
+(C2) servers, helps determine the potential scope of breach, associated
+files, and infected devices.
+
+You can find information from the following sections in the IP address
+view:
+
+* IP geo information
+* Alerts related to this IP
+* IP in organization observations
+* Prevalence in organization
+
+=== IP geo information
+
+In the left pane, the page provides IP details (if available). -
+Organization (ISP) - ASN - Country - State - City - Carrier - Latitude -
+Longitude - Postal code
+
+=== Alerts related to this IP
+
+The *Alerts related to this IP* section provides a list of alerts that
+are associated with the IP.
+
+=== IP observed in organization
+
+The *IP observed in organization* section provides a list of devices
+that have a connection with this IP and the last event details for each
+device (the list is limited to 100 devices).
+
+=== Prevalence
+
+The *Prevalence* section displays how many devices have connected to
+this IP address, and when the IP was first and last seen. You can filter
+the results of this section by time period; the default period is 30
+days.
+
+*Investigate an external IP:*
+
+[arabic]
+. Enter the IP address in the *Search* field.
+. Select the IP suggestion box and open the IP side panel.
+. Select *Enter*.
+
+Details about the IP address are displayed, including: registration
+details (if available), prevalence of devices in the organization that
+communicated with this IP Address (during selectable time period), and
+the devices in the organization that were observed communicating with
+this IP address.
+
+____
+[!NOTE] Search results will only be returned for IP addresses observed
+in communication with devices in the organization.
+____
+
+Use the search filters to define the search criteria. You can also use
+the timeline search box to filter the displayed results of all devices
+in the organization observed communicating with the IP address, the file
+associated with the communication and the last date observed.
+
+Clicking any of the device names will take you to that device’s view,
+where you can continue to investigate reported alerts, behaviors, and
+events.
+
+=== Related topics
+
+* link:alerts-queue.md[View and organize the Microsoft Defender for
+Endpoint Alerts queue]
+* link:manage-alerts.md[Manage Microsoft Defender for Endpoint alerts]
+* link:investigate-alerts.md[Investigate Microsoft Defender for Endpoint
+alerts]
+* link:investigate-files.md[Investigate a file associated with a
+Microsoft Defender for Endpoint alert]
+* link:investigate-machines.md[Investigate devices in the Microsoft
+Defender for Endpoint Devices list]
+* link:investigate-domain.md[Investigate a domain associated with a
+Microsoft Defender for Endpoint alert]
+* link:investigate-user.md[Investigate a user account in Microsoft
+Defender for Endpoint]

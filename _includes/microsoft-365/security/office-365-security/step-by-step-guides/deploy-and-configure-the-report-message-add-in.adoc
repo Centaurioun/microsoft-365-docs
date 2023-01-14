@@ -1,0 +1,97 @@
+= 
+MSFTBen
+
+== Deploy and configure the report message add-in to users
+
+The Report message and report phishing add-in for Outlook makes it easy
+to report phishing to Microsoft and its affiliates for analysis, along
+with easy triage for admins in the
+https://security.microsoft.com/reportsubmission?viewid=user[submissions
+portal].
+
+Depending on whether you are licensed for Defender for Office 365,
+you’ll also get added functionality such as alerting & automated
+investigation and response (AIR), which will remove the burden from your
+security operations staff. This guide will walk you through configuring
+the add-in deployment as recommended by the Microsoft Defender for
+Office 365 team.
+
+=== Choose between which add-in to deploy
+
+* The Report Phishing add-in provides the option to report only phishing
+messages
+* The Report Message add-in provides the option to report junk, not junk
+(false positive), and phishing messages
+
+=== What you’ll need
+
+* Exchange Online Protection (some features require Defender for Office
+365 Plan 2)
+* Sufficient permissions (Global admin for add-in deployment, security
+admin for customization)
+* 5-10 minutes to perform the steps below
+
+=== Deploy the add-in for users
+
+[arabic]
+. *Login* to the Microsoft 365 admin center at
+https://admin.microsoft.com.
+. On the left nav, press *Show All* then expand *Settings* and select
+*Integrated Apps*.
+. On the page that loads, press *Get Apps*.
+. In the page that appears, in the top right Search box, enter *Report
+Message* or *Report Phishing*, and then select *Search*.
+. Press *Get it now* on your chosen app within the search results
+(publisher is *Microsoft Corporation*).
+. On the flyout that appears, select who to deploy the add-in to. If
+testing you may wish to use a specific group, otherwise configure it for
+the *entire organization* – when you’ve made a selection press *Next*.
+. Review the permissions, information and capabilities then press
+*Next*.
+. Press *Finish deployment* (it can take 12-24 hours for the add-in to
+appear automatically in Outlook clients).
+
+=== Configure the add-in for users
+
+[arabic]
+. *Login* to the Microsoft Security portal at
+https://security.microsoft.com.
+. On the left nav, under *Email & collaboration*, select *Policies &
+rules*.
+. Select *Threat policies*.
+. Select *User reported message settings* underneath the *Others*
+heading.
+. Ensure *Microsoft Outlook Report Message button* is toggled to *On*.
+. Under *Send the reported messages to* choose *Microsoft*
+(Recommended).
+. Ensure *Let users choose if they want to report* is unchecked and
+*Always report the message* is selected.
+. Press *Save*.
+
+=== Optional steps – configure notifications
+
+[arabic]
+. On the configuration page from the earlier steps, underneath the *User
+reporting experience*, configure the before and after reporting pop-ups
+title and body if desired. The end users will see the before reporting
+pop up if *Ask me before reporting* is also enabled.
+. If you wish for notifications to come from an internal organizational
+mailbox, select *Specify Office 365 email address to use as sender* and
+search for a valid mailbox in your organization to send the
+notifications from.
+. Press *Customize notifications* to set up the text sent to reporting
+users after admin reviews a reported message using Mark & Notify,
+configure the *Phishing*, *Junk* & *No threats* found options.
+. On the *Footer* tab, select the global footer to be sent for
+notifications, along with your organization’s logo if appropriate.
+
+==== Further reading
+
+Learn more about user reported message settings
+link:../submissions-user-reported-messages-files-custom-mailbox.md[User
+reported message settings - Office 365 | Microsoft Docs]
+
+Enable the report message or report phishing add-in
+link:../submissions-users-report-message-add-in-configure.md[Enable the
+Microsoft Report Message or Report Phishing add-ins - Office 365 |
+Microsoft Docs]

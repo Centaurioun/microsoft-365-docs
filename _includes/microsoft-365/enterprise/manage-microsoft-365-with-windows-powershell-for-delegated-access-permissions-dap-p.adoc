@@ -1,0 +1,35 @@
+= 
+kelleyvice-msft
+
+== How to manage Microsoft 365 with Windows PowerShell for Delegated Access Permissions partners
+
+_This article applies to both Microsoft 365 Enterprise and Office 365
+Enterprise._
+
+Delegated Access Permission (DAP) partners are Syndication and Cloud
+Solution Providers (CSP) Partners. Many are network or telecom
+providers. They bundle Microsoft 365 subscriptions into their service
+offerings. When they sell a Microsoft 365 subscription, they’re
+automatically granted Administer On Behalf Of (AOBO) permissions to the
+customer’s tenancies so they can administer and report on those
+tenancies. These tasks are difficult to do in the Microsoft 365 admin
+center. It’s much easier to use PowerShell for Microsoft 365 to do
+administrative tasks such as: - List all the customer *TenantIds* and
+their domains - Identify all users in a customer tenancy and their
+assigned licenses > [!NOTE] > Some administrative tasks can only be done
+in PowerShell.
+
+The following articles show how Syndication and CSP partners use
+PowerShell to administer their customer tenancies:
+
+* link:manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md[Manage
+Microsoft 365 tenants with Windows PowerShell for Delegated Access
+Permissions (DAP) partners]
+* link:add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md[Add
+a domain to a client tenancy with Windows PowerShell for Delegated
+Access Permission (DAP) partners]
+* link:/powershell/exchange/connect-to-exchange-online-powershell[Connect
+to Exchange Online PowerShell]
+* link:retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md[Retrieve
+customer tenant reporting data with Windows PowerShell for Delegated
+Access Permissions (DAP) partners]

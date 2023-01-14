@@ -1,0 +1,117 @@
+= 
+dansimp
+:keywords: automated, investigation, level, Microsoft Defender for
+Endpoint
+
+== Automation levels in automated investigation and remediation capabilities
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* link:../defender-business/mdb-overview.md[Microsoft Defender for
+Business]
+
+Automated investigation and remediation (AIR) capabilities in Microsoft
+Defender for Business are preconfigured and are not configurable. In
+Microsoft Defender for Endpoint, you can configure AIR to one of several
+levels of automation. Your automation level affects whether remediation
+actions following AIR investigations are taken automatically or only
+upon approval.
+
+* _Full automation_ (recommended) means remediation actions are taken
+automatically on artifacts determined to be malicious. (_Full automation
+is set by default in Defender for Business_.)
+* _Semi-automation_ means some remediation actions are taken
+automatically, but other remediation actions await approval before being
+taken. (See the table in link:#levels-of-automation[Levels of
+automation].)
+* All remediation actions, whether pending or completed, are tracked in
+the Action Center (https://security.microsoft.com).
+
+____
+[!TIP] For best results, we recommend using full automation when you
+link:configure-automated-investigations-remediation.md[configure AIR].
+Data collected and analyzed over the past year shows that customers who
+are using full automation had 40% more high-confidence malware samples
+removed than customers who are using lower levels of automation. Full
+automation can help free up your security operations resources to focus
+more on your strategic initiatives.
+____
+
+____
+[!NOTE] Device group creation is supported in Defender for Endpoint Plan
+1 and Plan 2.
+____
+
+=== Levels of automation
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Automation level |Description
+|*Full - remediate threats automatically* (also referred to as _full
+automation_) |With full automation, remediation actions are performed
+automatically on entities that are considered to be malicious. All
+remediation actions that are taken can be viewed in the
+link:auto-investigation-action-center.md[Action Center] on the *History*
+tab. If necessary, a remediation action can be undone.
+
+|*Semi - require approval for all folders* (also referred to as
+_semi-automation_) |With this level of semi-automation, approval is
+required for remediation actions on all files. Such pending actions can
+be viewed and approved in the
+link:auto-investigation-action-center.md[Action Center], on the
+*Pending* tab.
+
+|*Semi - require approval for core folders remediation* (also a type of
+_semi-automation_) |With this level of semi-automation, approval is
+required for any remediation actions needed on files or executables that
+are in core folders. Core folders include operating system directories,
+such as the *Windows* (`\windows\*`).
+
+|*Semi - require approval for non-temp folders remediation* (also a type
+of _semi-automation_) |With this level of semi-automation, approval is
+required for any remediation actions needed on files or executables that
+are _not_ in temporary folders.
+
+|*No automated response* (also referred to as _no automation_) |With no
+automation, automated investigation does not run on your organization’s
+devices. As a result, no remediation actions are taken or pending as a
+result of automated investigation. However, other threat protection
+features, such as
+link:/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus[protection
+from potentially unwanted applications], can be in effect, depending on
+how your antivirus and next-generation protection features are
+configured.
+|===
+
+=== Important points about automation levels
+
+* Full automation has proven to be reliable, efficient, and safe, and is
+recommended for all customers. Full automation frees up your critical
+security resources so they can focus more on your strategic initiatives.
+* New tenants (which include tenants that were created on or after
+August 16, 2020) with Defender for Endpoint are set to full automation
+by default.
+* link:../defender-business/compare-mdb-m365-plans.md[Defender for
+Business] uses full automation by default. Defender for Business doesn’t
+use device groups the same way as Defender for Endpoint. Thus, full
+automation is turned on and applied to all devices in Defender for
+Business.
+* If your security team has defined device groups with a level of
+automation, those settings are not changed by the new default settings
+that are rolling out.
+* You can keep your default automation settings, or change them
+according to your organizational needs. To change your settings,
+link:/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups[set
+your level of automation].
+
+=== Next steps
+
+* link:configure-automated-investigations-remediation.md[Configure
+automated investigation and remediation capabilities in Defender for
+Endpoint]
+* link:/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center[Visit
+the Action Center]

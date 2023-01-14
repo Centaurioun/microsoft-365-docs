@@ -1,0 +1,37 @@
+= 
+denisebmsft
+
+== Get help and support for Microsoft Defender for Business
+
+=== Get help and support
+
+[arabic]
+. If you need help with Defender for Business, select the Help icon (?)
+in the upper right corner of the screen.
+. Type your question or issue, and then select the blue arrow, as shown
+in the following screenshot:
++
+:::image type=``content'' source=``media/help-pane.png''
+alt-text=``Screenshot of help pane with a question about how to add
+devices.'':::
++
+Several options, such as quick answers or help articles, will be listed.
+. Select an item in the list of results. If you don’t see the answer to
+your question, select *Contact Support* at the bottom of the flyout
+pane. For more information, see link:../../admin/get-help-support.md[Get
+support]
+
+=== Resources for partners
+
+If you’re a Microsoft partner helping your customer with security
+capabilities in Defender for Business, see
+link:mdb-partners.md[Microsoft Defender for Business and Microsoft
+partner resources].
+
+=== See also
+
+* link:mdb-faq.yml[Defender for Business - Frequently asked questions
+and answers]
+* link:mdb-troubleshooting.yml[Defender for Business troubleshooting]
+* link:../../business-premium/index.md[Microsoft 365 Business Premium
+Overview]

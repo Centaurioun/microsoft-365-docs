@@ -1,0 +1,82 @@
+= 
+chuckedmonson
+
+== Overview of unstructured document processing in Microsoft Syntex
+
+____
+[!NOTE] _Unstructured document processing_ was known as _document
+understanding_ in previous releases.
+____
+
+Use the unstructured document processing model
+(link:create-syntex-model.md#train-a-custom-model[teaching method]) to
+automatically classify files and extract information. It works best for
+unstructured documents, such as letters or contracts.
+
+The unstructured document processing model (formerly known as _document
+understanding model_) uses artificial intelligence (AI) to process
+documents. These documents must have text that can be identified based
+on phrases or patterns. The identified text designates both the type of
+file it is (its classification) and what you’d like to extract (its
+extractors).
+
+____
+{empty}[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
+____
+
+____
+[!NOTE] For more information about how to use Syntex and scenario
+examples, see link:./adoption-getstarted.md[Get started driving adoption
+of Microsoft Syntex] and link:./adoption-scenarios.md[Scenarios and use
+cases for Microsoft Syntex].
+____
+
+Unstructured document processing models are created and managed in a
+type of SharePoint site called a link:create-a-content-center.md[content
+center]. When applied to a SharePoint document library, the model is
+associated with a content type has columns to store the information
+being extracted. The content type you create is stored in the SharePoint
+content type gallery. You can also choose to use existing content types
+to use their schema.
+
+____
+[!NOTE] Read-only or sealed content types can’t be updated, so they
+can’t be used in a model.
+____
+
+Add link:create-a-classifier.md[classifiers] and
+link:create-an-extractor.md[extractors] to your unstructured document
+processing models to do the following actions:
+
+* Classifiers are used to identify and classify documents that are
+uploaded to the document library. For example, a classifier can be
+``trained'' to identify all _contract renewal_ documents that are
+uploaded to the library. The contract renewal content type is defined by
+you when you create your classifier.
+* Extractors pull information from these documents. For example, for
+each contract renewal document identified in your document library,
+columns will display that show the _Service Start Date_ and _Client_ for
+each document.
+
+You can use example files to train and test your classifiers and
+extractors in your model. Example files provide your model examples of
+what to look for when trying to identify and extract data from files.
+For example, you would train your contract renewal classifiers and
+extractors with examples of contract renewal documents your company
+works with. You can also use example files to test the effectiveness of
+your model.
+
+After publishing your model, use the content center to apply it to any
+SharePoint document library that you have access to.
+
+=== Requirements
+
+For information about requirements to consider when choosing this model,
+see
+link:requirements-and-limitations.md#unstructured-document-processing[Requirements
+and limitations for models in Microsoft Syntex].
+
+=== See also
+
+link:difference-between-document-understanding-and-form-processing-model.md[Compare
+custom models]

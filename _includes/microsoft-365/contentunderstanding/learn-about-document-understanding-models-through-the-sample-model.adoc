@@ -1,0 +1,59 @@
+= 
+chuckedmonson
+
+== Import a sample model for Microsoft Syntex
+
+*Applies to:*   ✓ Unstructured document processing
+
+Microsoft Syntex provides you with a sample unstructured document
+processing model you can use to examine, giving you a better
+understanding of how to create your own models. The sample model also
+allows you to examine model components, such as its classifier,
+extractors, and explanations. You can also use the sample files to train
+the model.
+
+=== Import the sample model
+
+To access the sample model, you need to first import the model to your
+content center.
+
+[arabic]
+. From the content center, select *Models* to see your models list.
+. On the *Models* page, select *Import sample model*.
++
+image::../media/content-understanding/import-sample-model.png[Import
+sample model.]
+. When the import completes, the *BenefitsChangeNotice* model home page
+will open. If you need to open the sample model in the future, you can
+open it from the models list in the content center.
++
+image::../media/content-understanding/sample-home-page.png[Sample home
+page.]
+
+Not only can you look through analyze the sample model to get a better
+understanding of how the model is constructed, but as a working model
+you can go further and do things such as:
+
+* Add another extractor. For example, add one that extracts the
+_discount fee_.
+* Apply the model to a document library, and upload some of the training
+files to it to see how the model classifies files and extracts data from
+them.
+
+=== Get sample models
+
+You can access the https://github.com/pnp/syntex-samples[Syntex Samples
+repository], which contains community samples that demonstrate different
+usage patterns of unstructured document processing models. The samples
+in this repository contain both the model files and the files used to
+train the model. Once imported, you can use these models to process
+files and to view and edit the classifier and extractors.
+
+=== See also
+
+link:document-understanding-overview.md[Overview of unstructured
+document processing]
+
+link:create-a-classifier.md[Create a classifier]
+
+link:create-an-extractor.md[Create an extractor]

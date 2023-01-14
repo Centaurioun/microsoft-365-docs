@@ -1,0 +1,39 @@
+= 
+mjcaparas
+:keywords: apis, graph api, supported apis, get, alerts, recent
+
+== User resource type
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Method |Return Type |Description
+|link:get-user-related-alerts.md[List User related alerts]
+|link:alerts.md[alert] collection |List all the alerts that are
+associated with a link:user.md[user].
+
+|link:get-user-related-machines.md[List User related devices]
+|link:machine.md[machine] collection |List all the devices that were
+logged on by a link:user.md[user].
+|===

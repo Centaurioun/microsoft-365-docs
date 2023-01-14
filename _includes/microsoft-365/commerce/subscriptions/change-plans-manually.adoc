@@ -1,0 +1,138 @@
+= 
+cmcatee-MSFT
+
+== Manually change Microsoft plans
+
+=== Step 1: Decide how to change plans
+
+The best way to change all your users from one plan to another is to
+link:upgrade-to-different-plan.md[use the Upgrade tab]. Sometimes this
+isn’t possible. Change plans manually instead:
+
+* If the *Upgrade* tab indicates you can’t upgrade the current plan.
+* If, when you select the *Upgrade* tab, the plan you want isn’t listed.
+* If you don’t want to upgrade all your users in the same way. Some
+businesses need different users subscribed to different plans. Use a
+manual change for this.
+
+To continue with a manual change, read
+link:#step-2-buy-a-new-subscription[Step 2: Buy a new subscription] in
+this topic.
+
+____
+[!IMPORTANT] If you are changing to a plan with fewer data-related
+services than your current plan (downgrading), you need to manually back
+up any data you wish to keep. For more information, see
+link:move-users-different-subscription.md[Back up data before changing
+plans].
+____
+
+=== Step 2: Buy a new subscription
+
+*Already purchased?* If you already have a subscription you want to move
+users to, skip this step and go to
+link:#step-3-check-your-new-subscription-and-licenses[Step 3: Check your
+new subscription and licenses] in this topic.
+
+OR
+
+*Purchase a new subscription and licenses:* Follow the steps in
+link:../try-or-buy-microsoft-365.md[Buy another Microsoft 365 for
+business subscription] to buy a new subscription.
+
+Make sure you purchase a subscription for the same organization that the
+users are in now. For example, check the email addresses for the users
+you want to move. If their email addresses include @contoso.com, you
+must purchase a new subscription for contoso.com. Include a license for
+each user that you want to move.
+
+=== Step 3: Check your new subscription and licenses
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+. *Verify that both subscriptions are listed and active* The
+subscription that you’re moving users from and the subscription that
+you’re moving users to must be listed together. If the new subscription
+isn’t there when you first check, try again later. Check that both
+subscriptions are active.
+link:#the-new-subscription-isnt-listed-or-isnt-active[The new
+subscription isn’t listed&#44; or isn’t active].
+. *Check that you have enough licenses for each user* Each user needs a
+license that matches their subscription. So if you want to move ten
+users to Microsoft 365 Business Premium, you’ll need to make sure ten
+licenses are available.
+. *Need more licenses for the new subscription?* Go to the *Your
+products* page and link:../licenses/buy-licenses.md[buy more licenses].
+
+____
+link:#what-about-the-old-licenses[What about the old licenses?]
+____
+
+==== The new subscription isn’t listed, or isn’t active
+
+* *If you purchased two subscriptions and they are not both listed
+here*, they may have been purchased for different organizations (for
+different domains). Subscriptions can’t cross organization boundaries.
+* *If you know you have an additional subscription*, and it’s not listed
+here, or is not active, link:../../admin/get-help-support.md[call
+Microsoft support].
+
+==== What about the old licenses?
+
+The licenses for the current subscription will be removed later; you’ll
+only pay for the new user licenses from then on.
+
+=== Step 4: Reassign licenses
+
+When you upgrade from an Office 365 plan to a Microsoft 365 plan, you
+must change the license assignments for all users. Licenses aren’t
+automatically assigned when you change plans manually.
+
+==== Reassign a license for one user
+
+[arabic]
+. In the admin center, go to the *Users* > Active users page.
+. On the *Active users* page, select the user to whom you want to assign
+a license.
+. On the *Licenses and Apps* tab, expand *Licenses*, select the boxes
+for the licenses that you want to assign, then select *Save changes*.
+
+==== Reassign licenses for multiple users at once
+
+[arabic]
+. In the admin center, go to the *Users* > Active users page.
+. Select the circles next to the names of the users for whom you want to
+replace existing licenses.
+. At the top, select the three dots (more actions), and then choose
+*Manage product licenses*.
+. Select *Replace existing product license assignments* > *Next*.
+. Switch the toggle to the *On* position for the products you want to
+assign to these users.
++
+____
+[!TIP]
+
+* To limit which services are available to the user, switch to toggles
+to the *Off* position for the services that you want to remove for that
+user. For example, if you want the user to have access to all available
+services except Skype for Business Online, you can switch the toggle for
+the Skype for Business Online service to the *Off* position.
+* Any previous license assignments for the selected users will be
+removed.
+____
+. At the bottom of the *Replace existing products* pane, select
+*Replace* > *Close*.
+
+=== Step 5: Cancel subscriptions or remove licenses that you no longer need (Optional)
+
+If you moved all users from one subscription to another, and you no
+longer need the original subscription, you can
+link:cancel-your-subscription.md[cancel the subscription].
+
+If you moved only some users to a different subscription,
+link:../licenses/buy-licenses.md[remove licenses] that you no longer
+need.
+
+=== Call support to help you change plans
+
+link:../../admin/get-help-support.md[Call Microsoft support].

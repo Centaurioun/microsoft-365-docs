@@ -1,0 +1,133 @@
+= 
+dansimp
+:keywords: deploy, licenses, supported services, provisioning,
+configuration Microsoft 365 Defender, M365, license eligibility,
+Microsoft Defender for Endpoint, Microsoft Defender for Office 365,
+Microsoft Defender for Identity, Microsoft Defender for Cloud Apps,
+MCAS, E5, A5, EMS
+
+== Deploy supported services
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender
+
+{empty}[!INCLUDE link:../includes/prerelease.md[Prerelease information]]
+
+link:microsoft-365-defender.md[Microsoft 365 Defender] integrates
+various Microsoft security services to provide centralized detection,
+prevention, and investigation capabilities against sophisticated
+attacks. This article describes the supported services, their licensing
+requirements, the advantages and limitations associated with deploying
+one or more services, and links to how you can fully deploy them
+individually.
+
+=== Supported services
+
+A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid
+combination of licenses provides access to the following supported
+services and entitles you to use Microsoft 365 Defender.
+link:prerequisites.md#licensing-requirements[See licensing requirements]
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Supported service |Description
+|Microsoft Defender for Endpoint |Endpoint protection suite built around
+powerful behavioral sensors, cloud analytics, and threat intelligence
+
+|Microsoft Defender for Office 365 |Advanced protection for your apps
+and data in Office 365, including email and other collaboration tools
+
+|Microsoft Defender for Identity |Defend against advanced threats,
+compromised identities, and malicious insiders using correlated Active
+Directory signals
+
+|Microsoft Defender for Cloud Apps |Identify and combat cyberthreats
+across your Microsoft and third-party cloud services
+|===
+
+=== Deployed services and functionality
+
+Microsoft 365 Defender provides better visibility, correlation, and
+remediation as you deploy more supported services.
+
+==== Benefits of full deployment
+
+To get the complete benefits of Microsoft 365 Defender, we recommend
+deploying all supported services. Here are some of the key benefits of
+full deployment:
+
+* Incidents are identified and correlated based on alerts and event
+signals from all available sensors and service-specific analysis
+capabilities
+* Automated investigation and remediation (AIR) playbooks apply across
+various entity types, including devices, mailboxes, and user accounts
+* A more comprehensive advanced hunting schema can be queried for event
+and entity data from devices, mailboxes, and other entities
+
+==== Limited deployment scenarios
+
+Each supported service that you deploy provides an extremely rich set of
+raw signals as well as correlated information. While limited deployment
+doesn’t cause Microsoft 365 Defender functionality to turn off, its
+ability to provide comprehensive visibility across your endpoints, apps,
+data, and identities is affected. At the same time, any remediation
+capabilities only apply to entities that can be managed by the services
+you’ve deployed.
+
+The table below lists how each supported service provides additional
+data, opportunities to obtain additional insight by correlating the
+data, and better remediation and response capabilities.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Service |Data (signals & correlated info) |Remediation & response scope
+|Microsoft Defender for Endpoint | |Endpoints
+|Microsoft Defender for Office 365 | |
+|Microsoft Defender for Identity | |Identities
+|Microsoft Defender for Cloud Apps | |Cloud apps
+|===
+
+=== Deploy the services
+
+Deploying each service typically requires provisioning to your tenant
+and some initial configuration. See the following table to understand
+how each of these services is deployed.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Service |Provisioning instructions |Initial configuration
+|Microsoft Defender for Endpoint
+|link:../defender-endpoint/deployment-phases.md[Microsoft Defender for
+Endpoint deployment guide] |_See provisioning instructions_
+
+|Microsoft Defender for Office 365 |_None, provisioned with Office 365_
+|link:/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies[Configure
+Microsoft Defender for Office 365 policies]
+
+|Microsoft Defender for Identity
+|link:/azure-advanced-threat-protection/install-atp-step1[Quickstart:
+Create your Microsoft Defender for Identity instance] |_See provisioning
+instructions_
+
+|Microsoft Defender for Cloud Apps |_None_
+|link:/cloud-app-security/getting-started-with-cloud-app-security[Quickstart:
+Get started with Microsoft Defender for Cloud Apps]
+|===
+
+Once you’ve deployed the supported services, link:m365d-enable.md[turn
+on Microsoft 365 Defender].
+
+=== Related topics
+
+* link:microsoft-365-defender.md[Microsoft 365 Defender overview]
+* link:m365d-enable.md[Turn on Microsoft 365 Defender]
+* link:../defender-endpoint/microsoft-defender-endpoint.md[Microsoft
+Defender for Endpoint overview]
+* link:../office-365-security/defender-for-office-365.md[Microsoft
+Defender for Office 365 overview]
+* link:/cloud-app-security/what-is-cloud-app-security[Microsoft Defender
+for Cloud Apps overview]
+* link:/azure-advanced-threat-protection/what-is-atp[Microsoft Defender
+for Identity overview]

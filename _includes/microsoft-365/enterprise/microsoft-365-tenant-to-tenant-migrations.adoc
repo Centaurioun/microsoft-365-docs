@@ -1,0 +1,34 @@
+= 
+kelleyvice-msft
+
+== Microsoft 365 tenant-to-tenant migrations
+
+There are several architecture approaches for mergers, acquisitions,
+divestitures, and other scenarios that might lead you to migrate an
+existing Microsoft 365 tenant to a new tenant. Most customers work with
+Microsoft Consulting Services or a Microsoft partner to migrate tenants,
+including using third-party tools to migrate content.
+
+Use the
+https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf[Tenant-to-tenant
+migration architecture model] to understand how to plan for Microsoft
+365 tenant-to-tenant migrations and the steps of a migration.
+
+https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf[image:../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png[Tenant-to-tenant
+migration model.]]
+
+You download this model in
+https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf[PDF]
+format and print it on letter, legal, or tabloid (11 x 17) size paper.
+
+This model provides guidance and a starting-point for planning with
+sections on:
+
+* Mapping of business scenarios to architecture approaches
+* Design considerations
+
+This model also contains detailed examples of:
+
+* A single event migration flow
+* A phased migration flow
+* A tenant move or split flow

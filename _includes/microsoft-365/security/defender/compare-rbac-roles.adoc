@@ -1,0 +1,274 @@
+= 
+siosulli
+
+== Map Microsoft 365 Defender role-based access control (RBAC) permissions
+
+All permissions listed within the Microsoft 365 Defender RBAC model
+align to existing permissions in the individual RBAC models. Once you
+activate the Microsoft 365 Defender RBAC model the permissions and
+assignments configured in your imported roles will replace the existing
+roles in the individual RBAC models.
+
+This article describes how existing roles and permissions in Microsoft
+Defender for Endpoint, Microsoft Defender for Office 365 (Exchange
+Online Protection), Microsoft Defender for Identity, and Azure Active
+Directory roles map to the roles and permission in the Microsoft 365
+Defender RBAC model.
+
+{empty}[!INCLUDElink:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+* https://go.microsoft.com/fwlink/?LinkID=2198108[Microsoft Defender for
+Identity]
+* https://go.microsoft.com/fwlink/?LinkID=2158212[Microsoft Defender for
+Office 365 P2]
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+=== Map Microsoft 365 Defender RBAC permissions to existing RBAC permissions
+
+Use the tables in the following sections to learn more about how your
+existing individual RBAC role definitions map to your new Microsoft 365
+Defender RBAC roles:
+
+[arabic]
+. link:#map-defender-for-endpoint-permissions-to-the-microsoft-365-defender-rbac-permissions[Map
+Defender for Endpoint permissions]
+. link:#map-defender-for-office-365-exchange-online-protection-roles-to-the-microsoft-365-defender-rbac-permissions[Map
+Defender for Office 365 (Exchange Online Protection) roles]
+. link:#map-microsoft-defender-for-identity-permissions-to-the-microsoft-365-defender-rbac-permissions[Map
+Microsoft Defender for Identity permissions]
+. link:#azure-active-directory-global-roles-access[Azure Active
+Directory Global roles access]
+
+==== Map Defender for Endpoint permissions to the Microsoft 365 Defender RBAC permissions
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Defender for Endpoint permission |Microsoft 365 Defender RBAC
+permission |
+|View data - Security operations |Security operations  Security data
+ Security data basics (read) |
+
+|View data - Threat and vulnerability management |Security posture
+ Posture management  Vulnerability management (read) |
+
+|Alerts investigation |Security operations  Security data  Alerts
+(manage) |
+
+|Active remediation actions - Security operations |Security operations
+ Security data  Response (manage) |
+
+|Active remediation actions - Threat and vulnerability management -
+Exception handling |Security posture  Posture management  Exception
+handling (manage) |
+
+|Active remediation actions - Threat and vulnerability management -
+Remediation handling |Security posture  posture management  Remediation
+handling (manage) |
+
+|Active remediation actions - Threat and vulnerability management -
+Application handling |Security posture  Posture management  Application
+handling (manage) |
+
+|Vulnerability management – Manage security baselines assessment
+profiles |Security posture  posture management  Security baselines
+assessment (manage) |
+
+|Live response capabilities |Security operations  Basic live response
+(manage) |
+
+|Live response capabilities - advanced |Security operations  Advanced
+live response (manage) |
+
+|Manage security settings in the Security Center |Configuration
+ Security setting (All permissions) |
+
+|Manage portal system settings |Configuration  System setting (All
+permissions) |
+
+|Manage endpoint security settings in Microsoft Endpoint Manager |Not
+supported - this permission is managed in the Microsoft Endpoint
+Management portal |
+|===
+
+==== Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender RBAC permissions
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Defender for Office (EOP) role group |Microsoft 365 Defender RBAC
+permission |
+|Security reader |Security operations  Security data data basics
+(read)Security operations  Raw data (Email & collaboration)  Email
+message headers (read)Security operations  Security data  Response
+(manage) Configuration  Security setting (read) Configuration  System
+setting (read) |
+
+|Global reader |Security operations  Security data  Security data basics
+(read)Security operations  Raw data (Email & collaboration)  Email
+message headers (read)Security operations  Security data  Response
+(manage) Configuration  Security setting (read) Configuration  System
+setting (read) |
+
+|Security administrator |Security operations  Security data  Security
+data basics (read) Security operations  Security data  Alerts
+(manage)Security operations  Raw data (Email & collaboration)  Email
+message headers (read)Security operations  Security data  Response
+(manage) Security operations  Security data  Email quarantine
+(manage)Configuration  Authorization (read) Configuration  Security
+setting (All permissions) Configuration  System setting (All
+permissions) |
+
+|Organization Management |Security operations  Security data  Security
+data basics (read) Security operations  Security data  Alerts
+(manage)Security operations  Raw data (Email & collaboration)  Email
+message headers (read) Security operations  Security data  Response
+(manage) Security operations  Security data  Email advanced actions
+(manage)Security operations  Security data  Email quarantine
+(manage)Configuration  Authorization (All permissions) Configuration
+ Security setting (All permissions) Configuration  System setting (All
+permissions) |
+
+|View-Only Recipients |Security operations  Security data  Security data
+basics (read) Security operations  Raw data (Email & collaboration)
+ Email message headers (read) |
+
+|Preview |Security operations Security operations  Raw data (Email &
+collaboration)  Email content (read) |
+
+|Search and Purge |Security operations  Security data  Email advanced
+actions (manage) |
+
+|View-Only Manage Alerts |Security operations  Security data  Security
+data basics (read) |
+
+|Manage Alerts |Security operations  Security data  Security data basics
+(read) Security operations  Security data  Alerts (manage) |
+
+|View-only Audit Logs |Security operations  Security data  Security data
+basics (read) |
+
+|Audit Logs |Security operations  Security data  Security data basics
+(read) |
+
+|Quarantine |Security operations  Security data  Email quarantine
+(manage) |
+
+|Role Management |Configuration  Authorization (All permissions) |
+|===
+
+==== Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender RBAC permissions
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Defender for Identity permission |Unified RBAC permission |
+|MDI admin |Security operations  Security data  Security data basics
+(read)Security operations  Security data  Alerts (manage)Configuration
+ Authorization (All permissions) Configuration  Security setting (All
+permissions) Configuration  System setting (All permissions) |
+
+|MDI user |Security operations  Security data  Security data basics
+(read) Security operations  Security data  Alerts (manage)Configuration
+ Security setting (All permissions) Configuration  System setting (read)
+|
+
+|MDI viewer |Security operations  Security data  Security data basics
+(read)Configuration  Security setting (read) Configuration  System
+setting (read) |
+|===
+
+____
+[!NOTE] Defender for Identity experiences will also adhere to
+permissions granted from
+https://security.microsoft.com/cloudapps/permissions/roles[Microsoft
+Defender for Cloud Apps]. For more information, see
+https://go.microsoft.com/fwlink/?linkid=2202729[Microsoft Defender for
+Identity role groups].
+____
+
+==== Azure Active Directory Global roles access
+
+Users assigned with Azure Active Directory global roles may also have
+access to the https://security.microsoft.com[Microsoft 365 Defender
+portal].
+
+Use this table to learn about the permissions assigned by default for
+each workload (Defender for Endpoint, Defender for Office and Defender
+for Identity) in Microsoft 365 Defender RBAC to each global Azure Active
+Directory role.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|AAD role |Microsoft 365 Defender RBAC assigned permissions for all
+workloads |Microsoft 365 Defender RBAC assigned permissions – workload
+specific |
+|Global administrator |Security operations  Security data  Security data
+basics (read)Security operations  Security data  Alerts (manage)
+Security operations  Security data  Response (manage)Configuration
+ Authorization  (All permissions)Configuration  Security settings  (All
+permissions)Configuration  System settings  (All permissions)
+|*_Defender for Endpoint only permissions_* Security operations  Basic
+live response (manage)Security operations  Advanced live response
+(manage)Security posture  Posture management  Vulnerability management
+(read)Security posture  Posture management  Exception handling
+(manage)Security posture  Posture management  Remediation handling
+(manage)Security posture  Posture management  Application handling
+(manage)Security posture  Posture management  Security baseline
+assessment (manage) *_Defender for Office only permissions_* Security
+operations  Security data  Email quarantine (manage)Security operations
+ Security data  Email advanced actions (manage)Security operations  Raw
+data (Email & collaboration)  Email message headers (read) |
+
+|Security administrator |Same as Global administrator |Same as Global
+administrator |
+
+|Global reader |Security operations  Security data  Security data basics
+(read) |*_Defender for Endpoint and Defender for Identity only
+permissions_* Configuration  Security settings  (read)Configuration
+ System settings  (read) *_Defender for Office only permissions_*
+Security operations  Security data  Response (manage)Security operations
+ Raw data (Email & collaboration)  Email message headers
+(read)Configuration  Authorization  (read) *_Defender for Identity only
+permissions_* Security posture  Posture management  Vulnerability
+management (read) |
+
+|Security reader |Same as Global reader |Same as Global reader |
+
+|Security operator |Security operations  Security data  Security data
+basics (read) Security operations  Security data  Alerts (manage)
+Security operations  Security data  Response (manage)Configuration
+ Security settings  (All permissions) |*_Defender for Endpoint only
+permissions_*Security operations  Basic live response (manage)Security
+operations  Advanced live response (manage)Security posture  Posture
+management  Vulnerability management (read)Security posture  Posture
+management  Exception handling (manage)Security posture  Posture
+management  Remediation handling (manage)*_Defender for Identity only
+permissions_* Configuration  System settings  (read) |
+
+|Compliance administrator |not applicable |*_Defender for Office only
+permissions_* Security operations  Security data  Security data basics
+(read) Security operations  Security data  Alerts (manage) |
+
+|Compliance data administrator |not applicable |Same as Compliance
+administrator |
+
+|Billing admin |not applicable |not applicable |
+|===
+
+____
+[!NOTE] By activating the Microsoft 365 Defender RBAC model, users with
+Security reader and Global reader roles will have access to Defender for
+Endpoint data.
+____
+
+=== Next steps
+
+* link:import-rbac-roles.md[Import existing RBAC roles]
+* link:activate-defender-rbac.md[Activate Microsoft 365 Defender RBAC]

@@ -1,0 +1,89 @@
+= 
+mjcaparas
+:keywords: apis, public api, supported apis, delete, ti indicator,
+entity, id
+
+== Delete Indicator API
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== API description
+
+Deletes an link:ti-indicator.md[Indicator] entity by ID.
+
+=== Limitations
+
+Rate limitations for this API are 100 calls per minute and 1500 calls
+per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API. To learn
+more, including how to choose permissions, see link:apis-intro.md[Get
+started]
+
+[cols="<,<,<",options="header",]
+|===
+|Permission type |Permission |Permission display name
+|Application |Ti.ReadWrite |`Read and write TI Indicators'
+|Application |Ti.ReadWrite.All |`Read and write Indicators'
+|===
+
+=== HTTP request
+
+[source,http]
+----
+Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
+----
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== Request headers
+
+[cols="<,<,<",options="header",]
+|===
+|Name |Type |Description
+|Authorization |String |Bearer \{token}. *Required*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If Indicator exists and deleted successfully - 204 OK without content
+
+If Indicator with the specified id wasn’t found - 404 Not Found
+
+=== Example
+
+==== Request
+
+Here’s an example of the request.
+
+[source,http]
+----
+DELETE https://api.securitycenter.microsoft.com/api/indicators/995
+----

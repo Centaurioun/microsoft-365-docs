@@ -1,0 +1,44 @@
+= 
+mjcaparas
+:keywords: advanced features, settings, block file
+
+== Turn on the preview experience in Microsoft Defender for Endpoint
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-previewsettings-abovefoldlink[Sign
+up for a free trial.]
+____
+
+Turn on the preview experience setting to be among the first to try
+upcoming features.
+
+[arabic]
+. In the navigation pane, select *Settings* > *Endpoints* > *Advanced
+features*.
++
+:::image type=``content''
+source=``../../media/atp-preview-features-new.png'' alt-text=``The
+settings and preview experience''
+lightbox=``../../media/atp-preview-features-new.png'':::
+. Toggle the setting between *On* and *Off* and select *Save
+preferences*.
+
+=== Related topics
+
+* link:data-retention-settings.md[Update general settings in Microsoft
+Defender for Endpoint]
+* link:advanced-features.md[Turn on advanced features in Microsoft
+Defender for Endpoint]
+* link:configure-email-notifications.md[Configure email notifications in
+Microsoft Defender for Endpoint]

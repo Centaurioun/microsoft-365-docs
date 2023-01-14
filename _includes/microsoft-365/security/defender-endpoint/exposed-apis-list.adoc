@@ -1,0 +1,138 @@
+= 
+mjcaparas
+:keywords: apis, supported apis, actor, alerts, device, user, domain,
+ip, file, advanced queries, advanced hunting
+
+== Supported Microsoft Defender for Endpoint APIs
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] - link:../defender-business/index.yml[Microsoft
+Defender for Business]
+
+____
+[!IMPORTANT] Advanced hunting capabilities are not included in Defender
+for Business. See
+link:../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2[Compare
+Microsoft Defender for Business to Microsoft Defender for Endpoint Plans
+1 and 2].
+____
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+=== Endpoint URI and versioning
+
+==== Endpoint URI
+
+____
+The service base URI is: https://api.securitycenter.microsoft.com
+
+The queries based OData have the `/api' prefix. For example, to get
+Alerts you can send GET request to
+https://api.securitycenter.microsoft.com/api/alerts
+____
+
+==== Versioning
+
+____
+The API supports versioning.
+
+The current version is *V1.0*.
+
+To use a specific version, use this format:
+`https://api.securitycenter.microsoft.com/api/{Version}`. For example:
+`https://api.securitycenter.microsoft.com/api/v1.0/alerts`
+
+If you don’t specify any version
+(e.g. `https://api.securitycenter.microsoft.com/api/alerts`) you will
+get to the latest version.
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+Learn more about the individual supported entities where you can run API
+calls to and details such as HTTP request values, request headers and
+expected responses.
+
+=== In this section
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Topic |Description
+|link:run-advanced-query-api.md[*Advanced Hunting* methods] |Run queries
+from API.
+
+|link:alerts.md[*Alert* methods and properties] |Run API calls such as -
+get alerts, create alert, update alert and more.
+
+|link:get-assessment-methods-properties.md[Export *Assessment*
+per-device methods and properties] |Run API calls to gather
+vulnerability assessments on a per-device basis, such as: - export
+secure configuration assessment, export software inventory assessment,
+export software vulnerabilities assessment, and delta export software
+vulnerabilities assessment.
+
+|link:investigation.md[*Automated investigation* methods and properties]
+|Run API calls such as - get collection of Investigation.
+
+|link:device-health-api-methods-properties.md[Export device health
+methods and properties] |Run API Calls such as - GET
+/api/public/avdeviceshealth.
+
+|link:get-domain-related-alerts.md[*Domain*-related alerts] |Run API
+calls such as - get domain-related devices, domain statistics and more.
+
+|link:files.md[*File* methods and properties] |Run API calls such as -
+get file information, file related alerts, file related devices, and
+file statistics.
+
+|link:ti-indicator.md[*Indicators* methods and properties] |Run API call
+such as - get Indicators, create Indicator, and delete Indicators.
+
+|link:get-ip-related-alerts.md[*IP*-related alerts] |Run API calls such
+as - get IP-related alerts and get IP statistics.
+
+|link:machine.md[*Machine* methods and properties] |Run API calls such
+as - get devices, get devices by ID, information about logged on users,
+edit tags and more.
+
+|link:machineaction.md[*Machine Action* methods and properties] |Run API
+call such as - Isolation, Run anti-virus scan and more.
+
+|link:recommendation.md[*Recommendation* methods and properties] |Run
+API calls such as - get recommendation by ID.
+
+|link:get-remediation-methods-properties.md[*Remediation activity*
+methods and properties] |Run API call such as - get all remediation
+tasks, get exposed devices remediation task and get one remediation task
+by id.
+
+|link:score.md[*Score* methods and properties] |Run API calls such as -
+get exposure score or get device secure score.
+
+|link:software.md[*Software* methods and properties] |Run API calls such
+as - list vulnerabilities by software.
+
+|link:user.md[*User* methods and properties] |Run API calls such as -
+get user-related alerts and user-related devices.
+
+|link:vulnerability.md[*Vulnerability* methods and properties] |Run API
+calls such as - list devices by vulnerability.
+|===
+
+=== See also
+
+* link:apis-intro.md[Microsoft Defender for Endpoint APIs]
+* link:api-release-notes.md[Microsoft Defender for Endpoint API release
+notes]

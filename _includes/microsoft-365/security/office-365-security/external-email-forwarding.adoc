@@ -1,0 +1,151 @@
+= 
+MSFTTracyP
+
+== Control automatic external email forwarding in Microsoft 365
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:exchange-online-protection-overview.md[Exchange
+Online Protection] - link:defender-for-office-365.md[Microsoft Defender
+for Office 365 plan 1 and plan 2] -
+link:../defender/microsoft-365-defender.md[Microsoft 365 Defender]
+
+As an admin, you might have company requirements to restrict or control
+automatically forwarded messages to external recipients (recipients
+outside of your organization). Email forwarding can be useful, but can
+also pose a security risk due to the potential disclosure of
+information. Attackers might use this information to attack your
+organization or partners.
+
+The following types of automatic forwarding are available in Microsoft
+365:
+
+* Users can configure
+https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59[Inbox
+rules] to automatically forward messages to external senders
+(deliberately or as a result of a compromised account).
+* Admins can configure
+link:/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding[mailbox
+forwarding] (also known as _SMTP forwarding_) to automatically forward
+messages to external recipients. The admin can choose whether to simply
+forward messages, or keep copies of forwarded messages in the mailbox.
+
+____
+[!NOTE] Users with automatic forwarding from on-premises email systems
+through Microsoft 365 will be subject to the same policy controls as
+cloud mailboxes in an upcoming update. This update will be communicated
+via Message Center post.
+____
+
+You can use outbound spam filter policies to control automatic
+forwarding to external recipients. Three settings are available:
+
+* *Automatic - System-controlled*: This is the default setting. This
+setting is now the same as *Off*. When this setting was originally
+introduced, it was equivalent to *On*. Over time, thanks to the
+principles of link:secure-by-default.md[secure by default], this setting
+was gradually changed to *Off* for all customers. For more information,
+see
+https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888[this
+blog post].
+* *On*: Automatic external forwarding is allowed and not restricted.
+* *Off*: Automatic external forwarding is disabled and will result in a
+non-delivery report (also known as an NDR or bounce message) to the
+sender.
+
+For instructions on how to configure these settings, see
+link:configure-the-outbound-spam-policy.md[Configure outbound spam
+filtering in EOP].
+
+____
+{empty}[!NOTE]
+
+* Disabling automatic forwarding disables any Inbox rules (users) or
+mailbox forwarding (admins) that redirect messages to external
+addresses.
+* Automatic forwarding of messages between internal users isn’t affected
+by the settings in outbound spam filter policies.
+____
+
+=== How the outbound spam filter policy settings work with other automatic email forwarding controls
+
+As an admin, you might have already configured other controls to allow
+or block automatic email forwarding. For example:
+
+* link:/exchange/mail-flow-best-practices/remote-domains/remote-domains[Remote
+domains] to allow or block automatic email forwarding to some or all
+external domains.
+* Conditions and actions in Exchange
+link:/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules[mail
+flow rules] (also known as transport rules) to detect and block
+automatically forwarded messages to external recipients.
+
+When one setting allows external forwarding, but another setting blocks
+external forwarding, the block typically wins. Examples are described in
+the following table:
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Scenario |Result
+| |Automatically forwarded messages to recipients in the affected
+domains are blocked.
+
+| |Automatically forwarded messages to recipients in the affected
+domains are blocked.
+
+| |Automatically forwarded messages to affected recipients are blocked
+by mail flow rules or remote domains.
+|===
+
+You can use this behavior (for example) to allow automatic forwarding in
+outbound spam filter policies, but use remote domains to control the
+external domains that users can forward messages to.
+
+=== How to find users that are automatically forwarding
+
+You can see information about users that are automatically forwarding
+messages to external recipients in the
+link:/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report[Auto
+forwarded messages report] for cloud-based accounts. For on-premises
+users that automatically forward from their on-premises email system
+through Microsoft 365, you need to create a mail flow rule to track
+these users. For instructions on how to create a mail flow rule, see
+link:/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#use-the-eac-to-create-a-mail-flow-rule[Use
+the EAC to create a mail flow rule].
+
+The following information is required to create the mail flow rule in
+the Exchange admin center (EAC):
+
+* *Apply this rule if* (condition): *A message header* > *matches these
+text patterns*. Note you might need to click *More options* to see this
+option.
+** *Header name*: `X-MS-Exchange-Inbox-Rules-Loop`
+** *Header value*: `.`
++
+The condition looks like this: *`X-MS-Exchange-Inbox-Rules-Loop'* header
+matches *`.'*
++
+This condition will match any value for the header.
+* (Optional) *Do the following* (action): You can configure an optional
+action. For example, you can use the action *Modify the message
+properties* > *set a message header*, with the header name *X-Forwarded*
+and the value *True*. But, configuring an action is not required.
+* Set *Audit this rue with severity level* to the value *Low*, *Medium*,
+or *High*. This setting allows you to use the
+link:view-email-security-reports.md#exchange-transport-rule-report[Exchange
+transport rule report] to get details of users that are forwarding.
+
+:::image type=``content''
+source=``../../media/mail-flow-rule-for-forwarded-messages.png''
+alt-text=``The Mail flow rule properties in the EAC for a rule to
+identify forwarded messages''
+lightbox=``../../media/mail-flow-rule-for-forwarded-messages.png'':::
+
+=== Blocked email forwarding messages
+
+When a message is detected as automatically forwarded, and the
+link:configure-the-outbound-spam-policy.md[outbound spam filter] policy
+_blocks_ that activity, the message is returned to the sender in an NDR
+that contains the following information:
+
+`5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

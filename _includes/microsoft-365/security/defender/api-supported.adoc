@@ -1,0 +1,63 @@
+= 
+mjcaparas
+:keywords: Microsoft 365 Defender, APIs, api
+
+== Supported Microsoft 365 Defender APIs
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender
+
+____
+[!NOTE] *Try our new APIs using MS Graph security API*. Find out more
+at: link:/graph/api/resources/security-api-overview[Use the Microsoft
+Graph security API - Microsoft Graph beta | Microsoft Learn].
+____
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may
+be substantially modified before it’s commercially released. Microsoft
+makes no warranties, express or implied, with respect to the information
+provided here.
+____
+
+=== List of available APIs
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Article |Description
+|link:api-advanced-hunting.md[Advanced Hunting API] |Run Advanced
+Hunting queries.
+
+|link:api-incident.md[Incident APIs] |List and update incidents, along
+with other practical tasks.
+
+|link:streaming-api.md[Streaming API] |Ship real-time events and alerts
+as they occur in a single data stream.
+|===
+
+==== Endpoint URIs
+
+The base URI for both of the main APIs is:
+https://api.security.microsoft.com. For better performance, use a server
+closer to your geolocation:
+
+* The United States: api-us.security.microsoft.com
+* Europe: api-eu.security.microsoft.com
+* The United Kingdom: api-uk.security.microsoft.com
+
+Tokens can be acquired by accessing https://api.security.microsoft.com.
+
+All APIs along the `/api` path use the link:/odata/overview[OData]
+Protocol; for example, https://api.security.microsoft.com/api/incidents.
+
+=== Related articles
+
+* link:/graph/api/resources/security-api-overview[Use the Microsoft
+Graph security API - Microsoft Graph beta | Microsoft Learn]
+* link:api-overview.md[Microsoft 365 Defender APIs overview]
+* link:api-access.md[Access the Microsoft 365 Defender APIs]
+* link:../defender-endpoint/raw-data-export.md[Streaming API]
+* link:api-terms.md[Learn about API limits and licensing]
+* link:api-error-codes.md[Understand error codes]

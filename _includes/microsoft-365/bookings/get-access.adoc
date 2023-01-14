@@ -1,0 +1,43 @@
+= 
+kwekuako
+
+== Get access to Microsoft Bookings
+
+This topic describes how to get access to Bookings for the first time.
+It also tells you how to turn on or off Bookings in your organization.
+It also explains how you can assign licenses to your users so they can
+access and use Bookings.
+
+=== Access Bookings for the first time
+
+If your IT administrator has granted you
+link:/microsoft-365/bookings/turn-bookings-on-or-off[access to
+Bookings], you can access the app via Office online.
+
+The first time you use
+https://outlook.office.com/bookings/onboarding[Bookings] you’ll create a
+calendar and set up your business.
+
+[arabic]
+. Select *Get started*, enter your business name and business type, and
+then select *Create calendar*.
+. If this isn’t your first time on this page, you can select another
+booking calendar or do a search for another booking calendar.
+. Enter your business name and business type and select *Continue*.
+
+You’re now ready to set up Bookings for your organization. You can get
+to the Bookings page with this
+https://outlook.office.com/bookings/onboarding[link], from the app
+launcher or from office.com. Use the following topics to continue
+setting up your Bookings features.
+
+* link:enter-business-information.md[Enter your business information]
+* link:add-staff.md[Add staff to Bookings]
+* link:define-service-offerings.md[Define your service offerings]
+* link:schedule-closures-time-off-vacation.md[Schedule business
+closures&#44; time off&#44; and vacation time]
+* link:set-scheduling-policies.md[Set your scheduling policies]
+* link:employee-hours.md[Set employee working hours]
+* link:customize-booking-page.md[Customize and publish your booking
+page]
+* link:create-a-manual-booking.md[Create a manual booking]

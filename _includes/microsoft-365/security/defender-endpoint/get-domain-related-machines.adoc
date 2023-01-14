@@ -1,0 +1,112 @@
+= 
+mjcaparas
+:keywords: apis, graph api, supported apis, get, domain, related,
+devices
+
+== Get domain-related machines API
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!Includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!Includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== API description
+
+Retrieves a collection of link:machine.md[Machines] that have
+communicated to or from a given domain address.
+
+=== Limitations
+
+[arabic]
+. You can query on devices last updated according to your configured
+retention period.
+. Rate limitations for this API are 100 calls per minute and 1500 calls
+per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API. To learn
+more, including how to choose permissions, see link:apis-intro.md[Use
+Microsoft Defender for Endpoint APIs]
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Permission type |Permission |Permission display name
+|Application |Machine.Read.All |`Read all machine profiles'
+
+|Application |Machine.ReadWrite.All |`Read and write all machine
+information'
+
+|Delegated (work or school account) |Machine.Read |`Read machine
+information'
+
+|Delegated (work or school account) |Machine.ReadWrite |`Read and write
+machine information'
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* The user needs to have at least the following role permission: `View
+Data' (For more information, see link:user-roles.md[Create and manage
+roles]
+* Response will include only devices that the user can access, based on
+device group settings (For more information, see
+link:machine-groups.md[Create and manage device groups]
+
+Device group creation is supported in Defender for Endpoint Plan 1 and
+Plan 2.
+____
+
+=== HTTP request
+
+[source,http]
+----
+GET /api/domains/{domain}/machines
+----
+
+=== Request headers
+
+[cols="<,<,<",options="header",]
+|===
+|Name |Type |Description
+|Authorization |String |Bearer \{token}. *Required*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful and domain exists - 200 OK with list of
+link:machine.md[machine] entities. If domain doesn’t exist - 200 OK with
+an empty set.
+
+=== Example
+
+==== Request
+
+Here’s an example of the request.
+
+[source,http]
+----
+GET https://api.securitycenter.microsoft.com/api/domains/api.securitycenter.microsoft.com/machines
+----

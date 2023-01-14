@@ -1,0 +1,404 @@
+= 
+siosulli
+:keywords: onboard devices using sccm, device management, configure
+Microsoft Defender for Endpoint devices
+
+== Onboard Windows devices using Configuration Manager
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+* Microsoft Endpoint Configuration Manager current branch
+* System Center 2012 R2 Configuration Manager
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink[Sign
+up for a free trial.]
+____
+
+=== Prerequisites
+
+* link:/mem/configmgr/protect/deploy-use/endpoint-protection-site-role[Endpoint
+Protection point site system role]
+
+____
+[!IMPORTANT] The Endpoint Protection point site system role is required
+so that antivirus and attack surface reduction policies are properly
+deployed to the targeted endpoints. Without this role, the endpoints in
+the device collection won’t receive the configured antivirus and attack
+surface reduction policies.
+____
+
+You can use Configuration Manager to onboard endpoints to the Microsoft
+Defender for Endpoint service.
+
+There are several options you can use to onboard devices using
+Configuration Manager: -
+link:/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection[Onboard
+devices using System Center Configuration Manager] -
+link:/mem/configmgr/tenant-attach/[Tenant attach]
+
+For Windows Server 2012 R2 and Windows Server 2016 - after completing
+the onboarding steps, you’ll need to
+link:onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients[Configure
+and update System Center Endpoint Protection clients].
+
+____
+[!NOTE] Defender for Endpoint doesn’t support onboarding during the
+link:/windows-hardware/test/assessments/out-of-box-experience[Out-Of-Box
+Experience (OOBE)] phase. Make sure users complete OOBE after running
+Windows installation or upgrading.
+
+Note that it’s possible to create a detection rule on a Configuration
+Manager application to continuously check if a device has been
+onboarded. An application is a different type of object than a package
+and program. If a device is not yet onboarded (due to pending OOBE
+completion or any other reason), Configuration Manager will retry to
+onboard the device until the rule detects the status change.
+
+This behavior can be accomplished by creating a detection rule checking
+if the ``OnboardingState'' registry value (of type REG_DWORD) = 1. This
+registry value is located under ``HKLMAdvanced Threat Protection''. For
+more information, see
+link:/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type[Configure
+Detection Methods in System Center 2012 R2 Configuration Manager].
+____
+
+==== Configure sample collection settings
+
+For each device, you can set a configuration value to state whether
+samples can be collected from the device when a request is made through
+Microsoft 365 Defender to submit a file for deep analysis.
+
+____
+[!NOTE] These configuration settings are typically done through
+Configuration Manager.
+____
+
+You can set a compliance rule for configuration item in Configuration
+Manager to change the sample share setting on a device.
+
+This rule should be a _remediating_ compliance rule configuration item
+that sets the value of a registry key on targeted devices to make sure
+they’re compliant.
+
+The configuration is set through the following registry key entry:
+
+[source,text]
+----
+Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
+Name: "AllowSampleCollection"
+Value: 0 or 1
+----
+
+Where Key type is a D-WORD. Possible values are:
+
+* 0: Doesn’t allow sample sharing from this device
+* 1: Allows sharing of all file types from this device
+
+The default value in case the registry key doesn’t exist is 1.
+
+For more information about System Center Configuration Manager
+Compliance, see
+link:/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)[Introduction
+to compliance settings in System Center 2012 R2 Configuration Manager].
+
+=== Other recommended configuration settings
+
+After onboarding devices to the service, it’s important to take
+advantage of the included threat protection capabilities by enabling
+them with the following recommended configuration settings.
+
+==== Device collection configuration
+
+If you’re using Endpoint Configuration Manager, version 2002 or later,
+you can choose to broaden the deployment to include servers or
+down-level clients.
+
+==== Next generation protection configuration
+
+The following configuration settings are recommended:
+
+===== Scan
+
+* Scan removable storage devices such as USB drives: Yes
+
+===== Real-time Protection
+
+* Enable Behavioral Monitoring: Yes
+* Enable protection against Potentially Unwanted Applications at
+download and prior to installation: Yes
+
+===== Cloud Protection Service
+
+* Cloud Protection Service membership type: Advanced membership
+
+===== Attack surface reduction
+
+Configure all available rules to Audit.
+
+____
+[!NOTE] Blocking these activities may interrupt legitimate business
+processes. The best approach is setting everything to audit, identifying
+which ones are safe to turn on, and then enabling those settings on
+endpoints which do not have false positive detections.
+____
+
+For deploying Antivirus (AV) and Attack Surface Reduction (ASR) policies
+through Microsoft Endpoint Configuration Manager (SCCM) follow the
+steps:
+
+* Enable Endpoint Protection and configure custom client settings.
+* Install the Endpoint Protection client from a command prompt.
+* Verify the Endpoint Protection client installation.
+
+====== Enable Endpoint Protection and configure custom client settings
+
+Follow the steps to enable endpoint protection and configuration of
+custom client settings:
+
+[arabic]
+. In the Configuration Manager console, click *Administration.*
+. In the *Administration* workspace, click *Client Settings.*
+. On the *Home* tab, in the *Create* group, click *Create Custom Client
+Device Settings.*
+. In the *Create Custom Client Device Settings* dialog box, provide a
+name and a description for the group of settings, and then select
+*Endpoint Protection.*
+. Configure the Endpoint Protection client settings that you require.
+For a full list of Endpoint Protection client settings that you can
+configure, see the Endpoint Protection section in
+link:/mem/configmgr/core/clients/deploy/about-client-settings#endpoint-protection[About
+client settings.]
++
+____
+[!IMPORTANT] Install the Endpoint Protection site system role before you
+configure client settings for Endpoint Protection.
+____
+. Click *OK* to close the *Create Custom Client Device Settings* dialog
+box. The new client settings are displayed in the *Client Settings* node
+of the *Administration* workspace.
+. Next, deploy the custom client settings to a collection. Select the
+custom client settings you want to deploy. In the *Home* tab, in the
+*Client Settings* group, click *Deploy.*
+. In the *Select Collection* dialog box, choose the collection to which
+you want to deploy the client settings and then click *OK.* The new
+deployment is shown in the *Deployments* tab of the details pane.
+
+Clients are configured with these settings when they next download
+client policy. For more information, see
+link:/mem/configmgr/core/clients/manage/manage-clients[Initiate policy
+retrieval for a Configuration Manager client.]
+
+====== Installation of Endpoint Protection client from a command prompt
+
+Follow the steps to complete installation of endpoint protection client
+from the command prompt.
+
+[arabic]
+. Copy *scepinstall.exe* from the *Client* folder of the Configuration
+Manager installation folder to the computer on which you want to install
+the Endpoint Protection client software.
+. Open a command prompt as an administrator. Change directory to the
+folder with the installer. Then run `scepinstall.exe`, adding any extra
+command-line properties that you require:
++
+[width="100%",cols="50%,50%",options="header",]
+|===
+|*Property* |*Description*
+|`/s` |Run the installer silently
+
+|`/q` |Extract the setup files silently
+
+|`/i` |Run the installer normally
+
+|`/policy` |Specify an antimalware policy file to configure the client
+during installation
+
+|`/sqmoptin` |Opt-in to the Microsoft Customer Experience Improvement
+Program (CEIP)
+|===
+. Follow the on-screen instructions to complete the client installation.
+. If you downloaded the latest update definition package, copy the
+package to the client computer, and then double-click the definition
+package to install it.
++
+____
+[!NOTE] After the Endpoint Protection client install completes, the
+client automatically performs a definition update check. If this update
+check succeeds, you don’t have to manually install the latest definition
+update package.
+____
+
+*Example: install the client with an antimalware policy*
+
+`scepinstall.exe /policy <full path>\<policy file>`
+
+====== Verify the Endpoint Protection client installation
+
+After you install the Endpoint Protection client on your reference
+computer, verify that the client is working correctly.
+
+[arabic]
+. On the reference computer, open *System Center Endpoint Protection*
+from the Windows notification area.
+. On the *Home* tab of the *System Center Endpoint Protection* dialog
+box, verify that *Real-time protection* is set to *On.*
+. Verify that *Up-to-date* is displayed for *Virus and spyware
+definitions.*
+. To make sure that your reference computer is ready for imaging, under
+*Scan options,* select *Full,* and then click *Scan now.*
+
+===== Network protection
+
+Prior to enabling network protection in audit or block mode, ensure that
+you’ve installed the antimalware platform update, which can be obtained
+from the
+https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing[support
+page].
+
+===== Controlled folder access
+
+Enable the feature in audit mode for at least 30 days. After this
+period, review detections and create a list of applications that are
+allowed to write to protected directories.
+
+For more information, see
+link:evaluate-controlled-folder-access.md[Evaluate controlled folder
+access].
+
+=== Run a detection test to verify onboarding
+
+After onboarding the device, you can choose to run a detection test to
+verify that a device is properly onboarded to the service. For more
+information, see link:run-detection-test.md[Run a detection test on a
+newly onboarded Microsoft Defender for Endpoint device].
+
+=== Offboard devices using Configuration Manager
+
+For security reasons, the package used to Offboard devices will expire
+30 days after the date it was downloaded. Expired offboarding packages
+sent to a device will be rejected. When downloading an offboarding
+package, you will be notified of the packages expiry date and it will
+also be included in the package name.
+
+____
+[!NOTE] Onboarding and offboarding policies must not be deployed on the
+same device at the same time, otherwise this will cause unpredictable
+collisions.
+____
+
+==== Offboard devices using Microsoft Endpoint Manager current branch
+
+If you use Microsoft Endpoint Manager current branch, see
+link:/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file[Create
+an offboarding configuration file].
+
+==== Offboard devices using System Center 2012 R2 Configuration Manager
+
+[arabic]
+. Get the offboarding package from Microsoft 365 Defender portal:
+[arabic]
+.. In the navigation pane, select *Settings* > *Endpoints* > *Device
+management* > *Offboarding*.
+.. Select Windows 10 or Windows 11 as the operating system.
+.. In the *Deployment method* field, select *System Center Configuration
+Manager 2012/2012 R2/1511/1602*.
+.. Select *Download package*, and save the .zip file.
+. Extract the contents of the .zip file to a shared, read-only location
+that can be accessed by the network administrators who will deploy the
+package. You should have a file named
+_WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd_.
+. Deploy the package by following the steps in the
+link:/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10)[Packages
+and Programs in System Center 2012 R2 Configuration Manager] article.
++
+Choose a predefined device collection to deploy the package to.
+
+____
+[!IMPORTANT] Offboarding causes the device to stop sending sensor data
+to the portal but data from the device, including reference to any
+alerts it has had will be retained for up to 6 months.
+____
+
+=== Monitor device configuration
+
+If you’re using Microsoft Endpoint Manager current branch, use the
+built-in Defender for Endpoint dashboard in the Configuration Manager
+console. For more information, see
+link:/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor[Defender
+for Endpoint - Monitor].
+
+If you’re using System Center 2012 R2 Configuration Manager, monitoring
+consists of two parts:
+
+[arabic]
+. Confirming the configuration package has been correctly deployed and
+is running (or has successfully run) on the devices in your network.
+. Checking that the devices are compliant with the Defender for Endpoint
+service (this ensures the device can complete the onboarding process and
+can continue to report data to the service).
+
+==== Confirm the configuration package has been correctly deployed
+
+[arabic]
+. In the Configuration Manager console, click *Monitoring* at the bottom
+of the navigation pane.
+. Select *Overview* and then *Deployments*.
+. Select on the deployment with the package name.
+. Review the status indicators under *Completion Statistics* and
+*Content Status*.
++
+If there are failed deployments (devices with *Error*, *Requirements Not
+Met*, or *Failed statuses*), you may need to troubleshoot the devices.
+For more information, see, link:troubleshoot-onboarding.md[Troubleshoot
+Microsoft Defender for Endpoint onboarding issues].
++
+:::image type=``content'' source=``images/sccm-deployment.png''
+alt-text=``The Configuration Manager showing successful deployment with
+no errors'' lightbox=``images/sccm-deployment.png'':::
+
+==== Check that the devices are compliant with the Microsoft Defender for Endpoint service
+
+You can set a compliance rule for configuration item in System Center
+2012 R2 Configuration Manager to monitor your deployment.
+
+This rule should be a _non-remediating_ compliance rule configuration
+item that monitors the value of a registry key on targeted devices.
+
+Monitor the following registry key entry:
+
+[source,console]
+----
+Path: "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status"
+Name: "OnboardingState"
+Value: "1"
+----
+
+For more information, see
+link:/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)[Introduction
+to compliance settings in System Center 2012 R2 Configuration Manager].
+
+=== Related topics
+
+* link:configure-endpoints-gp.md[Onboard Windows devices using Group
+Policy]
+* link:configure-endpoints-mdm.md[Onboard Windows devices using Mobile
+Device Management tools]
+* link:configure-endpoints-script.md[Onboard Windows devices using a
+local script]
+* link:configure-endpoints-vdi.md[Onboard non-persistent virtual desktop
+infrastructure (VDI) devices]
+* link:run-detection-test.md[Run a detection test on a newly onboarded
+Microsoft Defender for Endpoint device]
+* link:troubleshoot-onboarding.md[Troubleshoot Microsoft Defender for
+Endpoint onboarding issues]

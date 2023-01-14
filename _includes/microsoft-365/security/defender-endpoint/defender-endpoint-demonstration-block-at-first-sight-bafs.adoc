@@ -1,0 +1,37 @@
+= 
+dansimp
+:keywords: Microsoft Defender for Endpoint, cloud-delivered protection,
+detect malware, block malware, demonstration
+
+== Block at First Sight (BAFS) demonstration
+
+Block at First Sight, is a feature of Microsoft Defender Antivirus
+cloud-delivered protection that provides a way to detect and block new
+malware within seconds. You can test that it is working as expected by
+downloading a fake malware file.
+
+=== Scenario requirements and setup
+
+* Windows 10 Anniversary update (1607) or later
+* Cloud protection is enabled
+* You can
+https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/[download
+and use the Powershell script] to enable this setting and others
++
+____
+[!NOTE] You should see your browser ask to save this file in a few
+seconds.
+____
+
+==== Test BAFS
+
+Follow the instructions in https://demo.wd.microsoft.com/Page/BAFS[Block
+at first sight demo].
+
+=== See also
+
+link:configure-block-at-first-sight-microsoft-defender-antivirus.md[Block
+at First Sight]
+
+link:defender-endpoint-demonstrations.md[Microsoft Defender for Endpoint
+- demonstration scenarios]

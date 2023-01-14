@@ -1,0 +1,101 @@
+= 
+denisebmsft
+:keywords: malware, defender, antivirus, tamper protection, Microsoft
+Intune
+
+== Manage tamper protection for your organization using Microsoft Intune
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+If your organization uses
+link:/mem/intune/fundamentals/what-is-intune[Microsoft Intune], you can
+turn tamper protection on (or off) for your organization in the
+https://endpoint.microsoft.com[Microsoft Endpoint Manager admin center].
+Use Intune when you want to fine-tune tamper protection settings. For
+example, if you want to enable tamper protection on some devices, but
+not all, use Intune.
+
+Tamper protection is part of anti-tampering capabilities that include
+link:attack-surface-reduction-rules-reference.md[standard protection
+attack surface reduction rules].
+
+____
+[!NOTE] If you’re using Microsoft Intune to manage Defender for Endpoint
+settings, we recommend setting
+link:/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge[DisableLocalAdminMerge]
+to true on devices.
+____
+
+=== Requirements for managing tamper protection in Intune
+
+* You must have appropriate
+link:/microsoft-365/security/defender-endpoint/assign-portal-access[permissions]
+assigned, such as global admin, security admin, or security operations.
+* Your organization uses
+link:/mem/endpoint-manager-getting-started[Intune to manage devices].
+(Intune licenses are required; Intune is included in Microsoft 365
+E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business
+Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and
+corresponding education licenses.)
+* Your Windows devices must be running Windows 10
+link:/lifecycle/announcements/revised-end-of-service-windows-10-1709[version
+1709 or later] or Windows 11. (For more information about releases, see
+link:/windows/release-health/release-information[Windows 10 release
+information].)
+* You must be using Windows security with
+https://www.microsoft.com/wdsi/definitions[security intelligence]
+updated to version 1.287.60.0 (or above).
+* Your devices must be using anti-malware platform version 4.18.1906.3
+(or above) and anti-malware engine version `1.1.15500.X` (or above).
+(link:manage-updates-baselines-microsoft-defender-antivirus.md[Manage
+Microsoft Defender Antivirus updates and apply baselines].)
+* Your Intune and Defender for Endpoint tenants must share the same
+Microsoft Entra (Azure Active Directory) infrastructure.
+* Your devices must be onboarded to Defender for Endpoint.
+
+____
+[!NOTE] If your devices are not enrolled in Microsoft Defender for
+Endpoint, tamper protection will show as *Not Applicable* until the
+onboarding process completes.
+____
+
+=== Turn tamper protection on (or off) in Microsoft Intune
+
+:::image type=``content'' source=``images/turnontamperprotectinmem.png''
+alt-text=``Turn tamper protection turned on with Intune''
+lightbox=``images/turnontamperprotectinmem.png'':::
+
+[arabic]
+. In the https://go.microsoft.com/fwlink/?linkid=2109431[Microsoft
+Endpoint Manager admin center], go to *Endpoint security* > *Antivirus*,
+and then choose *+ Create Policy*.
+* In the *Platform* list, select *Windows 10, Windows 11, and Windows
+Server*.
+* In the *Profile* list, select *Windows Security experience*.
+. Create a profile that includes the following setting:
+* *TamperProtection (Device): Enable*
+. Assign the profile to one or more groups.
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____

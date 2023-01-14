@@ -1,0 +1,88 @@
+= 
+dansimp
+:keywords: apis, graph api, supported apis, get, alerts, recent
+
+== Software resource type
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+=== Methods
+
+'''''
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Method |Return Type |Description
+|link:get-software.md[List software] |Software collection |List the
+organizational software inventory
+
+|link:get-software-by-id.md[Get software by ID] |Software |Get a
+specific software by its software ID
+
+|link:get-software-ver-distribution.md[List software version
+distribution] |Distribution collection |List software version
+distribution by software ID
+
+|link:get-machines-by-software.md[List machines by software] |MachineRef
+collection |Retrieve a list of devices that are associated with the
+software ID
+
+|link:get-vuln-by-software.md[List vulnerabilities by software]
+|link:vulnerability.md[Vulnerability] collection |Retrieve a list of
+vulnerabilities associated with the software ID
+
+|link:get-missing-kbs-software.md[Get missing KBs] |KB collection |Get a
+list of missing KBs associated with the software ID
+
+| | |
+|===
+
+=== Properties
+
+'''''
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Property |Type |Description
+|id |String |Software ID
+
+|Name |String |Software name
+
+|Vendor |String |Software publisher name
+
+|Weaknesses |Long |Number of discovered vulnerabilities
+
+|publicExploit |Boolean |Public exploit exists for some of the
+vulnerabilities
+
+|activeAlert |Boolean |Active alert is associated with this software
+
+|exposedMachines |Long |Number of exposed devices
+
+|impactScore |Double |Exposure score impact of this software
+
+| | |
+|===

@@ -1,0 +1,263 @@
+= 
+dansimp
+:keywords: microsoft, defender, Microsoft Defender for Endpoint, linux,
+scans, antivirus, microsoft defender for endpoint (linux)
+
+== Schedule an update of the Microsoft Defender for Endpoint (Linux)
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+
+To run an update on Microsoft Defender for Endpoint on Linux, see
+link:/microsoft-365/security/defender-endpoint/linux-updates[Deploy
+updates for Microsoft Defender for Endpoint on Linux].
+
+Linux (and Unix) have a tool called *crontab* (similar to Task
+Scheduler) to be able to run scheduled tasks.
+
+=== Pre-requisite
+
+____
+[!NOTE] To get a list of all the time zones, run the following command:
+`timedatectl list-timezones`
+
+Examples for timezones:
+
+* `America/Los_Angeles`
+* `America/New_York`
+* `America/Chicago`
+* `America/Denver`
+____
+
+=== To set the Cron job
+
+Use the following commands:
+
+==== Backup crontab entries
+
+[source,bash]
+----
+sudo crontab -l > /var/tmp/cron_backup_201118.dat
+----
+
+____
+[!NOTE] Where 201118 == YYMMDD
+____
+
+____
+[!TIP] Do this before you edit or remove.
+____
+
+To edit the crontab, and add a new job as a root user:
+
+[source,bash]
+----
+sudo crontab -e
+----
+
+____
+[!NOTE] The default editor is VIM.
+____
+
+You might see:
+
+[source,output]
+----
+0****/etc/opt/microsoft/mdatp/logrorate.sh
+----
+
+And
+
+[source,output]
+----
+02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
+----
+
+See link:linux-schedule-scan-mde.md[Schedule scans with Microsoft
+Defender for Endpoint (Linux)]
+
+Press ``Insert''
+
+Add the following entries:
+
+[source,bash]
+----
+CRON_TZ=America/Los_Angeles
+----
+
+____
+#!RHEL and variants (CentOS and Oracle Linux)
+
+[source,bash]
+----
+0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp -y >> ~/mdatp_cron_job.log
+----
+____
+
+____
+#!SLES and variants
+
+[source,bash]
+----
+0 6 * * sun [ $(date +%d) -le 15 ] && sudo zypper update mdatp >> ~/mdatp_cron_job.log
+----
+____
+
+____
+#!Ubuntu and Debian systems
+
+[source,bash]
+----
+0 6 * * sun [ $(date +%d) -le 15 ] && sudo apt-get install --only-upgrade mdatp >> ~/mdatp_cron_job.log
+----
+____
+
+____
+[!NOTE] In the examples above, we are setting it to 00 minutes, 6
+a.m.(hour in 24 hour format), any day of the month, any month, on
+Sundays.[$(date +%d) -le 15] == Won’t run unless it’s equal or less than
+the 15th day (3rd week). Meaning it will run every 3rd Sundays(7) of the
+month at 6:00 a.m. Pacific (UTC -8).
+____
+
+Press ``Esc''
+
+Type ```:wq`'' w/o the double quotes.
+
+____
+[!NOTE] w == write, q == quit
+____
+
+To view your cron jobs, type `sudo crontab -l`
+
+:::image type=``content'' source=``images/update-MDE-linux-4634577.jpg''
+alt-text=``update Defender for Endpoint on Linux.'':::
+
+To inspect cron job runs:
+
+[source,bash]
+----
+sudo grep mdatp /var/log/cron
+----
+
+To inspect the mdatp_cron_job.log
+
+[source,bash]
+----
+sudo nano mdatp_cron_job.log
+----
+
+=== For those who use Ansible, Chef, or Puppet
+
+Use the following commands:
+
+==== To set cron jobs in Ansible
+
+[source,bash]
+----
+cron - Manage cron.d and crontab entries
+----
+
+See https://docs.ansible.com/ansible/latest/modules/cron_module.html for
+more information.
+
+==== To set crontabs in Chef
+
+[source,bash]
+----
+cron resource
+----
+
+See https://docs.chef.io/resources/cron/ for more information.
+
+==== To set cron jobs in Puppet
+
+Resource Type: cron
+
+See https://puppet.com/docs/puppet/5.5/types/cron.html for more
+information.
+
+Automating with Puppet: Cron jobs and scheduled tasks
+
+See
+https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/
+for more information.
+
+=== Additional information
+
+==== To get help with crontab
+
+[source,bash]
+----
+man crontab
+----
+
+==== To get a list of crontab file of the current user
+
+[source,bash]
+----
+crontab -l
+----
+
+==== To get a list of crontab file of another user
+
+[source,bash]
+----
+crontab -u username -l
+----
+
+==== To backup crontab entries
+
+[source,bash]
+----
+crontab -l > /var/tmp/cron_backup.dat
+----
+
+____
+[!TIP] Do this before you edit or remove.
+____
+
+==== To restore crontab entries
+
+[source,bash]
+----
+crontab /var/tmp/cron_backup.dat
+----
+
+==== To edit the crontab and add a new job as a root user
+
+[source,bash]
+----
+sudo crontab -e
+----
+
+==== To edit the crontab and add a new job
+
+[source,bash]
+----
+crontab -e
+----
+
+==== To edit other user’s crontab entries
+
+[source,bash]
+----
+crontab -u username -e
+----
+
+==== To remove all crontab entries
+
+[source,bash]
+----
+crontab -r
+----
+
+==== To remove other user’s crontab entries
+
+[source,bash]
+----
+crontab -u username -r
+----
+
+==== Explanation

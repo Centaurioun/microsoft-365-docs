@@ -1,0 +1,1317 @@
+== link:index.yml[Microsoft Defender for Endpoint]
+
+=== link:[Overview]
+
+==== link:microsoft-defender-endpoint.md[What is Microsoft Defender for Endpoint?]
+
+==== link:defender-endpoint-trial-user-guide.md[Trial user guide: Microsoft Defender for Endpoint]
+
+==== link:defender-endpoint-plan-1-2.md[Compare Microsoft endpoint security plans]
+
+==== link:minimum-requirements.md[Minimum requirements]
+
+==== link:supported-capabilities-by-platform.md[Supported Microsoft Defender for Endpoint capabilities by platform]
+
+==== link:[What’s new]
+
+===== link:whats-new-in-microsoft-defender-endpoint.md[What’s new in Microsoft Defender for Endpoint?]
+
+===== link:windows-whatsnew.md[What’s new in Microsoft Defender for Endpoint on Windows]
+
+==== link:preview.md[Preview features]
+
+==== link:data-storage-privacy.md[Data storage and privacy]
+
+==== link:use.md[Overview of Microsoft Defender Security Center]
+
+==== link:[Defender for Endpoint Plan 1]
+
+===== link:defender-endpoint-plan-1.md[Overview]
+
+===== link:mde-p1-setup-configuration.md[Setup and configuration]
+
+===== link:mde-plan1-getting-started.md[Get started]
+
+===== link:mde-p1-maintenance-operations.md[Maintenance and operations]
+
+==== link:gov.md[Microsoft Defender for Endpoint for US Government customers]
+
+==== link:non-windows.md[Microsoft Defender for Endpoint on non-Windows platforms]
+
+==== link:defender-compatibility.md[Antivirus solution compatibility with Defender for Endpoint]
+
+=== link:evaluation-lab.md[Evaluate capabilities]
+
+==== link:[Microsoft defender for endpoint demonstrations]
+
+===== link:defender-endpoint-demonstrations.md[Microsoft Defender for Endpoint demonstration scenarios]
+
+===== link:defender-endpoint-demonstration-app-reputation.md[App reputation demonstration]
+
+===== link:defender-endpoint-demonstration-attack-surface-reduction-rules.md[Attack surface reduction rules demonstrations]
+
+===== link:defender-endpoint-demonstration-block-at-first-sight-bafs.md[Block at First Sight (BAFS) demonstration]
+
+===== link:defender-endpoint-demonstration-cloud-delivered-protection.md[Cloud-delivered protection demonstration]
+
+===== link:defender-endpoint-demonstration-controlled-folder-access-test-tool.md[Controlled folder access (CFA) demonstration (block script)]
+
+===== link:defender-endpoint-demonstration-controlled-folder-access.md[Controlled folder access (CFA) demonstrations (block ransomware)]
+
+===== link:defender-endpoint-demonstration-exploit-protection.md[Exploit protection (EP) demonstrations]
+
+===== link:defender-endpoint-demonstration-network-protection.md[Network protection demonstrations]
+
+===== link:defender-endpoint-demonstration-potentially-unwanted-applications.md[Potentially unwanted applications (PUA) demonstration]
+
+===== link:defender-endpoint-demonstration-smartscreen-url-reputation.md[URL reputation demonstrations]
+
+=== link:deployment-strategy.md[Plan deployment]
+
+=== link:[Deployment guide]
+
+==== link:deployment-phases.md[Deployment phases]
+
+==== link:prepare-deployment.md[Phase 1: Prepare]
+
+==== link:production-deployment.md[Phase 2: Set up]
+
+==== link:[Phase 3: Onboard]
+
+===== link:onboarding.md[Onboarding overview]
+
+===== link:deployment-rings.md[Deployment rings]
+
+===== link:onboarding-endpoint-configuration-manager.md[Onboarding using Microsoft Endpoint Configuration Manager]
+
+===== link:onboarding-endpoint-manager.md[Onboarding using Microsoft Endpoint Manager]
+
+=== link:migration-guides.md[Migration guides]
+
+==== link:migrating-mde-server-to-cloud.md[Migrate Defender for Endpoint servers to Defender for Cloud]
+
+==== link:switch-to-mde-overview.md[Move to Defender for Endpoint]
+
+===== link:switch-to-mde-phase-1.md[Phase 1: Prepare]
+
+===== link:switch-to-mde-phase-2.md[Phase 2: Setup]
+
+===== link:switch-to-mde-phase-3.md[Phase 3: Onboard]
+
+===== link:switch-to-mde-troubleshooting.md[Troubleshooting]
+
+==== link:manage-mde-post-migration.md[Manage Defender for Endpoint after migration]
+
+===== link:manage-mde-post-migration-intune.md[Use Intune (recommended)]
+
+===== link:manage-mde-post-migration-configuration-manager.md[Use Configuration Manager]
+
+===== link:manage-mde-post-migration-group-policy-objects.md[Use Group Policy]
+
+===== link:manage-mde-post-migration-other-tools.md[Use PowerShell&#44; WMI&#44; or MPCmdRun.exe]
+
+===== link:update-agent-mma-windows.md[Updating MMA on Windows devices]
+
+===== link:server-migration.md[Server migration scenarios]
+
+====== link:application-deployment-via-mecm.md[Migrating servers from Microsoft Monitoring Agent to the unified solution]
+
+=== link:[Onboard and configure devices]
+
+==== link:onboard-configure.md[Onboard devices and configure Microsoft Defender for Endpoint capabilities]
+
+==== link:onboard-windows-client.md[Onboarding Windows Client]
+
+===== link:configure-endpoints-mdm.md[Onboard Windows Client using Intune]
+
+===== link:configure-endpoints-sccm.md[Onboard Windows Client using Microsoft Endpoint Configuration Manager]
+
+===== link:configure-endpoints-gp.md[Onboard Windows Client using Group Policy]
+
+===== link:configure-endpoints-script.md[Onboard Windows Client using a local script]
+
+===== link:configure-endpoints-vdi.md[Onboard non-persistent virtual desktop infrastructure (VDI) devices]
+
+===== link:onboard-windows-multi-session-device.md[Onboard Windows 10 multi-session devices in Azure Virtual Desktop]
+
+===== link:onboard-downlevel.md[Onboard previous versions of Windows]
+
+==== link:onboard-windows-server.md[Onboarding Windows Server]
+
+===== link:configure-server-endpoints.md[Onboard Windows Server 2012 R2&#44; 2016&#44; Semi-Annual Channel&#44; 2019&#44; and 2022]
+
+===== link:configure-endpoints-sccm.md[Onboard Windows Server using Configuration Manager]
+
+===== link:configure-endpoints-gp.md[Onboard Windows Server devices using Group Policy]
+
+===== link:configure-endpoints-script.md[Onboard Windows Server using a local script]
+
+===== link:configure-endpoints-vdi.md[Onboard non-persistent virtual desktop infrastructure (VDI) devices]
+
+==== link:[Microsoft Defender for Endpoint on other Operating Systems]
+
+===== link:configure-endpoints-non-windows.md[Onboard non-Windows devices]
+
+===== link:[Microsoft Defender for Endpoint on macOS]
+
+====== link:microsoft-defender-endpoint-mac.md[Overview of Microsoft Defender for Endpoint on macOS]
+
+====== link:mac-whatsnew.md[What’s New]
+
+====== link:[Deploy]
+
+======= link:mac-install-with-intune.md[Microsoft Intune-based deployment]
+
+======= link:[JAMF Pro-based deployment]
+
+======== link:mac-install-with-jamf.md[Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro]
+
+======== link:mac-install-jamfpro-login.md[Login to Jamf Pro]
+
+======== link:mac-jamfpro-device-groups.md[Set up device groups]
+
+======== link:mac-jamfpro-policies.md[Set up policies]
+
+======== link:mac-jamfpro-enroll-devices.md[Enroll devices]
+
+======= link:mac-install-with-other-mdm.md[Deployment with a different Mobile Device Management (MDM) system]
+
+======= link:mac-install-manually.md[Manual deployment]
+
+====== link:mac-updates.md[Update]
+
+====== link:[Configure]
+
+======= link:mac-exclusions.md[Configure and validate exclusions]
+
+======= link:mac-preferences.md[Set preferences]
+
+======= link:mac-pua.md[Detect and block Potentially Unwanted Applications]
+
+======= link:tamperprotection-macos.md[Protect macOS security settings using tamper protection]
+
+======= link:[Device control]
+
+======== link:mac-device-control-overview.md[Device control overview]
+
+======== link:mac-device-control-jamf.md[JAMF examples]
+
+======== link:mac-device-control-intune.md[Intune examples]
+
+======= link:mac-schedule-scan.md[Schedule scans]
+
+====== link:[Troubleshoot]
+
+======= link:mac-support-install.md[Troubleshoot installation issues]
+
+======= link:mac-support-perf.md[Troubleshoot performance issues]
+
+======= link:troubleshoot-cloud-connect-mdemac.md[Troubleshoot cloud connectivity]
+
+======= link:mac-support-kext.md[Troubleshoot kernel extension issues]
+
+======= link:mac-support-license.md[Troubleshoot license issues]
+
+====== link:mac-privacy.md[Privacy]
+
+====== link:mac-resources.md[Resources]
+
+===== link:[Microsoft Defender for Endpoint on Linux]
+
+====== link:microsoft-defender-endpoint-linux.md[Overview of Microsoft Defender for Endpoint on Linux]
+
+====== link:linux-whatsnew.md[What’s New]
+
+====== link:[Deploy]
+
+======= link:linux-install-manually.md[Manual deployment]
+
+======= link:linux-install-with-puppet.md[Puppet based deployment]
+
+======= link:linux-install-with-ansible.md[Ansible based deployment]
+
+======= link:linux-deploy-defender-for-endpoint-with-chef.md[Deploy Defender for Endpoint on Linux with Chef]
+
+====== link:linux-updates.md[Update]
+
+====== link:[Configure]
+
+======= link:linux-exclusions.md[Configure and validate exclusions]
+
+======= link:linux-static-proxy-configuration.md[Static proxy configuration]
+
+======= link:linux-preferences.md[Set preferences]
+
+======= link:linux-pua.md[Detect and block Potentially Unwanted Applications]
+
+======= link:linux-schedule-scan-mde.md[Schedule scans with Microsoft Defender for Endpoint on Linux]
+
+======= link:schedule-antivirus-scan-in-mde.md[Schedule antivirus scan in Defender for Endpoint on Linux]
+
+======= link:linux-update-MDE-Linux.md[Schedule an update of the Microsoft Defender for Endpoint (Linux)]
+
+====== link:[Troubleshoot]
+
+======= link:linux-support-install.md[Troubleshoot installation issues]
+
+======= link:health-status.md[Investigate agent health issues]
+
+======= link:linux-support-connectivity.md[Troubleshoot cloud connectivity issues]
+
+======= link:linux-support-rhel.md[Troubleshoot RHEL 6 installation issues]
+
+======= link:linux-support-perf.md[Troubleshoot performance issues]
+
+======= link:linux-support-events.md[Troubleshoot missing events issues]
+
+======= link:troubleshoot-auditd-performance-issues.md[Troubleshoot AuditD performance issues]
+
+====== link:linux-privacy.md[Privacy]
+
+====== link:linux-resources.md[Resources]
+
+===== link:[Mobile Threat Defense]
+
+====== link:mtd.md[Mobile Threat Defense Overview]
+
+====== link:[Microsoft Defender for Endpoint on Android]
+
+======= link:microsoft-defender-endpoint-android.md[Overview of Microsoft Defender for Endpoint on Android]
+
+======= link:android-whatsnew.md[What’s new]
+
+======= link:[Deploy]
+
+======== link:android-intune.md[Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune]
+
+======= link:[Configure]
+
+======== link:android-configure.md[Configure Microsoft Defender for Endpoint on Android features]
+
+======== link:android-configure-mam.md[Configure Microsoft Defender for Endpoint risk signals using app protection policy]
+
+======= link:[Privacy]
+
+======== link:android-privacy.md[Microsoft Defender for Endpoint on Android - Privacy information]
+
+======= link:[Troubleshoot]
+
+======== link:android-support-signin.md[Troubleshoot issues]
+
+====== link:[Microsoft Defender for Endpoint on iOS]
+
+======= link:microsoft-defender-endpoint-ios.md[Overview of Microsoft Defender for Endpoint on iOS]
+
+======= link:ios-whatsnew.md[What’s New]
+
+======= link:[Deploy]
+
+======== link:ios-install.md[Deploy Microsoft Defender for Endpoint on iOS via Intune]
+
+======== link:ios-install-unmanaged.md[Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices]
+
+======= link:ios-configure-features.md[Configure iOS features]
+
+======= link:ios-troubleshoot.md[FAQs and Troubleshooting]
+
+======= link:ios-privacy.md[Privacy]
+
+==== link:azure-server-integration.md[Integration with Microsoft Defender for Cloud]
+
+==== link:run-detection-test.md[Run a detection test on a newly onboarded device]
+
+==== link:attack-simulations.md[Run simulated attacks on devices]
+
+==== link:onboard-offline-machines.md[Onboard devices without Internet access]
+
+==== link:configure-proxy-internet.md[Configure proxy and Internet connectivity settings]
+
+==== link:onboarding-notification.md[Create an onboarding or offboarding notification rule]
+
+==== link:/mem/intune/protect/mde-security-integration?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-endpoint%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-endpoint%2Ftoc.json[Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager]
+
+==== link:[Troubleshoot onboarding issues]
+
+===== link:troubleshoot-onboarding.md[Troubleshoot issues during onboarding]
+
+===== link:troubleshoot-onboarding-error-messages.md[Troubleshoot subscription and portal access issues]
+
+===== link:troubleshoot-security-config-mgt.md[Troubleshoot security configuration management onboarding issues]
+
+==== link:[Configure portal settings]
+
+===== link:preferences-setup.md[Configure general Defender for Endpoint settings]
+
+===== link:[General]
+
+====== link:configure-email-notifications.md[Configure alert notifications]
+
+====== link:configure-vulnerability-email-notifications.md[Configure vulnerability email notifications]
+
+====== link:advanced-features.md[Configure advanced features]
+
+===== link:[Permissions]
+
+====== link:basic-permissions.md[Use basic permissions to access the portal]
+
+====== link:assign-portal-access.md[Assign user access to Microsoft Defender Security Center]
+
+====== link:rbac.md[Manage portal access using RBAC]
+
+======= link:user-roles.md[Create and manage roles]
+
+======= link:machine-groups.md[Create and manage device groups]
+
+======= link:machine-tags.md[Create and manage device tags]
+
+===== link:[Rules]
+
+====== link:manage-suppression-rules.md[Manage suppression rules]
+
+====== link:manage-indicators.md[Create indicators]
+
+======= link:indicator-file.md[Create indicators for files]
+
+======= link:indicator-ip-domain.md[Create indicators for IPs and URLs/domains]
+
+======= link:indicator-certificates.md[Create indicators for certificates]
+
+======= link:indicator-manage.md[Manage indicators]
+
+====== link:manage-automation-file-uploads.md[Manage automation file uploads]
+
+====== link:manage-automation-folder-exclusions.md[Manage automation folder exclusions]
+
+===== link:[Device management]
+
+====== link:onboard-configure.md[Onboarding devices]
+
+====== link:offboard-machines.md[Offboarding devices]
+
+====== link:configure-machines.md[Ensure your devices are configured properly]
+
+====== link:configure-machines-onboarding.md[Monitor and increase device onboarding]
+
+===== link:time-settings.md[Configure Microsoft Defender Security Center time zone settings]
+
+=== link:[Detect threats and protect endpoints]
+
+==== link:../defender-vulnerability-management/index.yml[Microsoft Defender Vulnerability Management]
+
+==== link:[Device discovery]
+
+===== link:device-discovery.md[Device discovery overview]
+
+===== link:configure-device-discovery.md[Configure device discovery]
+
+===== link:corelight-integration.md[Enable Corelight as a data source]
+
+===== link:[Enterprise IoT security]
+
+====== link:/azure/defender-for-iot/organizations/concept-enterprise/[Securing IoT devices in the enterprise]
+
+====== link:/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/[Enable Enterprise IoT security with Defender for Endpoint]
+
+====== link:/azure/defender-for-iot/organizations/manage-subscriptions-enterprise/[Manage Defender for IoT plans]
+
+====== link:/azure/defender-for-iot/organizations/eiot-sensor/[Enhance Enterprise IoT discovery]
+
+===== link:device-discovery-faq.md[Device discovery FAQ]
+
+==== link:[Authenticated scans]
+
+===== link:network-devices.md[Network devices]
+
+===== link:../defender-vulnerability-management/windows-authenticated-scan.md[Windows authenticated scan]
+
+==== link:[Devices]
+
+===== link:machines-view-overview.md[Device inventory]
+
+===== link:exclude-devices.md[Exclude devices]
+
+===== link:device-timeline-event-flag.md[Device timeline]
+
+===== link:machine-tags.md[Manage device group and tags]
+
+==== link:host-firewall-reporting.md[Host firewall reporting in Microsoft Defender for Endpoint]
+
+==== link:built-in-protection.md[Built-in protection]
+
+==== link:[Attack surface reduction]
+
+===== link:overview-attack-surface-reduction.md[Attack surface reduction overview]
+
+===== link:[Attack surface reduction (ASR) rules]
+
+====== link:attack-surface-reduction.md[Learn about ASR rules]
+
+====== link:[Attack surface reduction (ASR) rules deployment guide]
+
+======= link:attack-surface-reduction-rules-deployment.md[Attack surface reduction (ASR) rules deployment overview]
+
+======= link:attack-surface-reduction-rules-deployment-plan.md[Plan attack surface reduction (ASR) rules deployment]
+
+======= link:attack-surface-reduction-rules-deployment-test.md[Test attack surface reduction (ASR) rules]
+
+======= link:attack-surface-reduction-rules-deployment-implement.md[Enable attack surface reduction (ASR) rules]
+
+======= link:attack-surface-reduction-rules-deployment-operationalize.md[Operationalize attack surface reduction (ASR) rules]
+
+====== link:attack-surface-reduction-rules-reference.md[Attack surface reduction (ASR) rules reference]
+
+====== link:attack-surface-reduction-rules-report.md[Attack surface reduction rules report]
+
+====== link:troubleshoot-asr-rules.md[Troubleshoot attack surface reduction (ASR) rules]
+
+====== link:enable-attack-surface-reduction.md[Enable ASR rules alternate configuration methods]
+
+===== link:attack-surface-reduction-faq.yml[Attack surface reduction FAQ]
+
+===== link:[Controlled folder access]
+
+====== link:controlled-folders.md[Protect folders]
+
+====== link:evaluate-controlled-folder-access.md[Evaluate controlled folder access]
+
+====== link:enable-controlled-folders.md[Enable controlled folder access]
+
+====== link:customize-controlled-folders.md[Customize controlled folder access]
+
+===== link:[Device Control]
+
+====== link:device-control-removable-storage-protection.md[Removable Storage Protection]
+
+====== link:[Removable Storage Access Control]
+
+======= link:device-control-removable-storage-access-control.md[Overview]
+
+======= link:deploy-manage-removable-storage-intune.md[Deploy and manage using Intune]
+
+======= link:deploy-manage-removable-storage-group-policy.md[Deploy and manage using group policy]
+
+======= link:device-control-removable-storage-access-control-faq.md[Frequently asked questions]
+
+====== link:mde-device-control-device-installation.md[Device Installation]
+
+====== link:printer-protection.md[Device Control Printer Protection]
+
+====== link:device-control-report.md[Device Control Reports]
+
+===== link:[Exploit protection]
+
+====== link:exploit-protection.md[Protect devices from exploits]
+
+====== link:evaluate-exploit-protection.md[Exploit protection evaluation]
+
+====== link:enable-exploit-protection.md[Enable exploit protection]
+
+====== link:customize-exploit-protection.md[Customize exploit protection]
+
+====== link:import-export-exploit-protection-emet-xml.md[Import&#44; export&#44; and deploy exploit protection configurations]
+
+====== link:troubleshoot-exploit-protection-mitigations.md[Troubleshoot exploit protection mitigations]
+
+====== link:exploit-protection-reference.md[Exploit protection reference]
+
+===== link:[Network protection]
+
+====== link:network-protection.md[Protect your network]
+
+====== link:evaluate-network-protection.md[Evaluate network protection]
+
+====== link:enable-network-protection.md[Turn on network protection]
+
+====== link:network-protection-linux.md[Network protection for Linux]
+
+====== link:network-protection-macos.md[Network protection for MacOS]
+
+===== link:[Web protection]
+
+====== link:web-protection-overview.md[Web protection overview]
+
+====== link:[Web threat protection]
+
+======= link:web-threat-protection.md[Web threat protection overview]
+
+======= link:web-protection-monitoring.md[Monitor web security]
+
+======= link:web-protection-response.md[Respond to web threats]
+
+====== link:web-content-filtering.md[Web content filtering]
+
+==== Next-generation protection
+
+===== link:next-generation-protection.md[Next-generation protection overview]
+
+====== link:microsoft-defender-antivirus-windows.md[Overview of Microsoft Defender Antivirus]
+
+====== link:microsoft-defender-antivirus-on-windows-server.md[Microsoft Defender Antivirus on Windows Server]
+
+====== link:enable-update-mdav-to-latest-ws.md[Enable and update Microsoft Defender Antivirus on Windows Server]
+
+====== link:why-use-microsoft-defender-antivirus.md[Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint]
+
+====== link:office-365-microsoft-defender-antivirus.md[Better together: Microsoft Defender Antivirus and Office 365]
+
+===== link:evaluate-microsoft-defender-antivirus.md[Evaluate Microsoft Defender Antivirus]
+
+===== link:configure-microsoft-defender-antivirus-features.md[Configure Microsoft Defender Antivirus features]
+
+===== link:defender-endpoint-antivirus-exclusions.md[Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus]
+
+===== link:cloud-protection-microsoft-defender-antivirus.md[Cloud protection and Microsoft Defender Antivirus]
+
+====== link:why-cloud-protection-should-be-on-mdav.md[Why cloud protection should be on]
+
+====== link:enable-cloud-protection-microsoft-defender-antivirus.md[Turn on cloud protection]
+
+====== link:specify-cloud-protection-level-microsoft-defender-antivirus.md[Specify the cloud protection level]
+
+====== link:cloud-protection-microsoft-antivirus-sample-submission.md[Cloud protection and sample submission]
+
+===== link:configure-network-connections-microsoft-defender-antivirus.md[Configure and validate Microsoft Defender Antivirus network connections]
+
+===== link:specify-additional-definitions-network-traffic-inspection-mdav.md[Specify additional definition sets for network traffic inspection]
+
+===== link:[Tamper protection]
+
+====== link:prevent-changes-to-security-settings-with-tamper-protection.md[Protect security settings with tamper protection]
+
+====== link:manage-tamper-protection-microsoft-365-defender.md[Manage tamper protection using Microsoft 365 Defender]
+
+====== link:manage-tamper-protection-microsoft-endpoint-manager.md[Manage tamper protection using Microsoft Intune]
+
+====== link:manage-tamper-protection-configuration-manager.md[Manage tamper protection with Configuration Manager]
+
+====== link:manage-tamper-protection-individual-device.md[Manage tamper protection on an individual device]
+
+====== link:faqs-tamper-protection.md[FAQs on tamper protection]
+
+===== link:configure-block-at-first-sight-microsoft-defender-antivirus.md[Turn on block at first sight]
+
+===== link:configure-cloud-block-timeout-period-microsoft-defender-antivirus.md[Configure the cloud block timeout period]
+
+===== link:configure-protection-features-microsoft-defender-antivirus.md[Configure behavioral&#44; heuristic&#44; and real-time protection]
+
+===== link:detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md[Detect and block potentially unwanted applications]
+
+===== link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy]
+
+===== link:configure-remediation-microsoft-defender-antivirus.md[Configure remediation for Microsoft Defender Antivirus detections]
+
+===== link:schedule-antivirus-scans.md[Configure Microsoft Defender Antivirus scans]
+
+====== link:schedule-antivirus-scans-group-policy.md[Schedule scans using Group Policy]
+
+====== link:schedule-antivirus-scans-powershell.md[Schedule scans using PowerShell]
+
+====== link:schedule-antivirus-scans-wmi.md[Schedule scans using WMI]
+
+===== link:limited-periodic-scanning-microsoft-defender-antivirus.md[Use limited periodic scanning in Microsoft Defender Antivirus]
+
+===== link:microsoft-defender-antivirus-compatibility.md[Compatibility with other security products]
+
+===== link:find-defender-malware-name.md[Find malware detection names for Microsoft Defender for Endpoint]
+
+===== link:manage-updates-baselines-microsoft-defender-antivirus.md[Get your antivirus and antimalware updates]
+
+====== link:manage-protection-updates-microsoft-defender-antivirus.md[Manage the sources for Microsoft Defender Antivirus protection updates]
+
+====== link:manage-protection-update-schedule-microsoft-defender-antivirus.md[Manage the schedule for when protection updates should be downloaded and applied]
+
+====== link:manage-gradual-rollout.md[Manage gradual rollout process for Microsoft Defender updates]
+
+====== link:configure-updates.md[Configure gradual rollout process for Microsoft Defender updates]
+
+====== link:manage-outdated-endpoints-microsoft-defender-antivirus.md[Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date]
+
+====== link:manage-event-based-updates-microsoft-defender-antivirus.md[Manage event-based forced updates]
+
+====== link:manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md[Manage updates for mobile devices and virtual machines (VMs)]
+
+===== link:configuration-management-reference-microsoft-defender-antivirus.md[Manage Microsoft Defender Antivirus for your organization]
+
+====== link:use-intune-config-manager-microsoft-defender-antivirus.md[Use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus]
+
+====== link:use-group-policy-microsoft-defender-antivirus.md[Use Group Policy settings to manage Microsoft Defender Antivirus]
+
+====== link:use-powershell-cmdlets-microsoft-defender-antivirus.md[Use PowerShell cmdlets to manage Microsoft Defender Antivirus]
+
+====== link:use-wmi-microsoft-defender-antivirus.md[Use Windows Management Instrumentation (WMI) to manage Microsoft Defender Antivirus]
+
+====== link:command-line-arguments-microsoft-defender-antivirus.md[Use the mpcmdrun.exe tool to manage Microsoft Defender Antivirus]
+
+====== link:configure-notifications-microsoft-defender-antivirus.md[Configure the notifications that appear on endpoints]
+
+====== link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Specify whether users can locally modify Microsoft Defender Antivirus policy settings]
+
+====== link:prevent-end-user-interaction-microsoft-defender-antivirus.md[Specify whether users can see or interact with Microsoft Defender Antivirus user interface]
+
+====== link:turn-on-definition-retirement.md[Turn on definition retirement]
+
+===== link:deploy-manage-report-microsoft-defender-antivirus.md[Deploy and report on Microsoft Defender Antivirus]
+
+====== link:deploy-microsoft-defender-antivirus.md[Deploy and enable Microsoft Defender Antivirus]
+
+====== link:deployment-vdi-microsoft-defender-antivirus.md[Configure Microsoft Defender Antivirus in a remote desktop or virtual desktop infrastructure environment]
+
+====== link:report-monitor-microsoft-defender-antivirus.md[Report on Microsoft Defender Antivirus]
+
+===== link:review-scan-results-microsoft-defender-antivirus.md[Scans and remediation]
+
+====== link:run-scan-microsoft-defender-antivirus.md[Configure and run on-demand Microsoft Defender Antivirus scans]
+
+====== link:microsoft-defender-offline.md[Run and review the results of a Microsoft Defender Offline scan]
+
+====== link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure Microsoft Defender Antivirus scanning options]
+
+====== link:restore-quarantined-files-microsoft-defender-antivirus.md[Restore quarantined files in Microsoft Defender Antivirus]
+
+===== link:configure-exclusions-microsoft-defender-antivirus.md[Microsoft Defender Antivirus exclusions]
+
+====== link:configure-extension-file-exclusions-microsoft-defender-antivirus.md[Exclusions based on file extension and folder location]
+
+====== link:configure-process-opened-file-exclusions-microsoft-defender-antivirus.md[Exclusions for files opened by processes]
+
+====== link:configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md[Contextual file and folder exclusions]
+
+====== link:configure-server-exclusions-microsoft-defender-antivirus.md[Exclusions for Windows Server]
+
+====== link:common-exclusion-mistakes-microsoft-defender-antivirus.md[Common mistakes to avoid]
+
+===== Troubleshooting mode for Defender for Endpoint
+
+====== link:enable-troubleshooting-mode.md[Get started with troubleshooting mode]
+
+====== link:troubleshooting-mode-scenarios.md[Troubleshooting mode scenarios]
+
+===== Diagnostics and performance for Microsoft Defender Antivirus
+
+====== link:device-health-reports.md[Device health reports]
+
+======= link:device-health-microsoft-defender-antivirus-health.md[Microsoft Defender Antivirus health report]
+
+======= link:device-health-sensor-health-os.md[Sensor health and OS report]
+
+====== link:troubleshoot-performance-issues.md[Troubleshoot performance issues related to real-time protection]
+
+====== link:troubleshoot-reporting.md[Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance]
+
+====== link:collect-diagnostic-data.md[Collect diagnostic data of Microsoft Defender Antivirus]
+
+====== link:collect-diagnostic-data-update-compliance.md[Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus]
+
+====== link:tune-performance-defender-antivirus.md[Improve performance of Microsoft Defender Antivirus]
+
+===== Troubleshooting Microsoft Defender Antivirus
+
+====== link:troubleshoot-microsoft-defender-antivirus.md[Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus]
+
+====== link:troubleshoot-microsoft-defender-antivirus-when-migrating.md[Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution]
+
+===== link:[Behavioral blocking and containment]
+
+====== link:behavioral-blocking-containment.md[Behavioral blocking and containment]
+
+====== link:client-behavioral-blocking.md[Client behavioral blocking]
+
+====== link:feedback-loop-blocking.md[Feedback-loop blocking]
+
+==== link:defender-endpoint-false-positives-negatives.md[Address false positives/negatives in Microsoft Defender for Endpoint]
+
+==== link:[Manage device configuration]
+
+===== link:configure-machines-security-baseline.md[Increase compliance to the security baseline]
+
+===== link:configure-machines-asr.md[Optimize attack surface reduction rule deployment and detections]
+
+=== link:[Investigate and respond to threats]
+
+==== link:[Endpoint detection and response]
+
+===== link:overview-endpoint-detection-response.md[Endpoint detection and response overview]
+
+===== link:admin-submissions-mde.md[Submit files]
+
+===== link:[Incidents queue]
+
+====== link:view-incidents-queue.md[View and organize the Incidents queue]
+
+====== link:manage-incidents.md[Manage incidents]
+
+====== link:investigate-incidents.md[Investigate incidents]
+
+===== link:[Alerts queue]
+
+====== link:alerts-queue-endpoint-detection-response.md[Alerts queue in Microsoft 365 Defender]
+
+====== link:alerts-queue.md[View and organize the Alerts queue]
+
+====== link:review-alerts.md[Review alerts]
+
+====== link:manage-alerts.md[Manage alerts]
+
+====== link:investigate-alerts.md[Investigate alerts]
+
+====== link:investigate-files.md[Investigate files]
+
+====== link:investigate-machines.md[Investigate devices]
+
+====== link:investigate-ip.md[Investigate an IP address]
+
+======= link:investigate-behind-proxy.md[Investigate connection events that occur behind forward proxies]
+
+====== link:investigate-user.md[Investigate a user account]
+
+===== link:[Take response actions]
+
+====== link:[Take response actions on a device]
+
+======= link:respond-machine-alerts.md[Response actions on devices]
+
+======= link:respond-machine-alerts.md#manage-tags[Manage tags]
+
+======= link:respond-machine-alerts.md#initiate-automated-investigation[Start an automated investigation]
+
+======= link:respond-machine-alerts.md#initiate-live-response-session[Start a Live Response session]
+
+======= link:respond-machine-alerts.md#collect-investigation-package-from-devices[Collect investigation package]
+
+======= link:respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices[Run antivirus scan]
+
+======= link:respond-machine-alerts.md#restrict-app-execution[Restrict app execution]
+
+======= link:respond-machine-alerts.md#isolate-devices-from-the-network[Isolate devices from the network]
+
+======= link:respond-machine-alerts.md#contain-devices-from-the-network[Contain devices from the network]
+
+======= link:respond-machine-alerts.md#consult-a-threat-expert[Consult a threat expert]
+
+======= link:respond-machine-alerts.md#check-activity-details-in-action-center[Check activity details in Action center]
+
+====== link:[Take response actions on a file]
+
+======= link:respond-file-alerts.md[Response actions on files]
+
+======= link:respond-file-alerts.md#stop-and-quarantine-files-in-your-network[Stop and quarantine files in your network]
+
+======= link:respond-file-alerts.md#restore-file-from-quarantine[Restore file from quarantine]
+
+======= link:respond-file-alerts.md#add-indicator-to-block-or-allow-a-file[Add indicators to block or allow a file]
+
+======= link:respond-file-alerts.md#consult-a-threat-expert[Consult a threat expert]
+
+======= link:respond-file-alerts.md#check-activity-details-in-action-center[Check activity details in Action center]
+
+======= link:respond-file-alerts.md#download-or-collect-file[Download or collect file]
+
+======= link:respond-file-alerts.md#deep-analysis[Deep analysis]
+
+===== link:manage-auto-investigation.md[View and approve remediation actions]
+
+====== link:auto-investigation-action-center.md[View details and results of automated investigations]
+
+===== link:[Investigate entities using Live response]
+
+====== link:live-response.md[Investigate entities on devices]
+
+====== link:live-response-command-examples.md[Live response command examples]
+
+===== link:information-protection-investigation.md[Use sensitivity labels to prioritize incident response]
+
+===== link:[Reporting]
+
+====== link:api-power-bi.md[Power BI - How to use API - Samples]
+
+====== link:threat-protection-reports.md[Threat protection reports]
+
+==== link:/microsoft-365/security/defender/advanced-hunting-overview[Advanced hunting]
+
+==== link:threat-analytics.md[Threat analytics overview]
+
+===== link:threat-analytics-analyst-reports.md[Read the analyst report]
+
+==== link:edr-in-block-mode.md[EDR in block mode]
+
+==== link:[Automated investigation and response (AIR)]
+
+===== link:automated-investigations.md[Overview of AIR]
+
+===== link:automation-levels.md[Automation levels in AIR]
+
+===== link:configure-automated-investigations-remediation.md[Configure AIR capabilities]
+
+===== link:autoir-investigation-results.md[View the details and results of an automated investigation]
+
+==== link:[Next generation protection]
+
+===== link:customize-run-review-remediate-scans-microsoft-defender-antivirus.md[Run and customize scheduled and on-demand scans]
+
+==== link:endpoint-attack-notifications.md[Endpoint Attack Notifications]
+
+=== Reference
+
+==== link:threat-indicator-concepts.md[Understand threat intelligence concepts]
+
+==== link:comprehensive-guidance-on-linux-deployment.md[Advanced deployment guidance - Microsoft Defender for Endpoint on Linux]
+
+==== link:[Configure integration with other Microsoft solutions]
+
+===== link:configure-conditional-access.md[Configure conditional access]
+
+===== link:microsoft-cloud-app-security-config.md[Configure Microsoft Defender for Cloud Apps integration]
+
+==== link:[Management and APIs]
+
+===== link:management-apis.md[Overview of management and APIs]
+
+===== link:api-release-notes.md[API release notes]
+
+===== link:[Microsoft Defender for Endpoint API]
+
+====== link:[Get started]
+
+======= link:api-terms-of-use.md[Microsoft Defender for Endpoint API license and terms]
+
+======= link:apis-intro.md[Access the Microsoft Defender for Endpoint APIs]
+
+======= link:api-hello-world.md[Hello World]
+
+======= link:exposed-apis-create-app-webapp.md[Get access with application context]
+
+======= link:exposed-apis-create-app-nativeapp.md[Get access with user context]
+
+====== link:[Microsoft Defender for Endpoint APIs Schema]
+
+======= link:exposed-apis-list.md[Supported Microsoft Defender for Endpoint APIs]
+
+======= link:common-errors.md[Common REST API error codes]
+
+======= link:run-advanced-query-api.md[Advanced Hunting]
+
+======= link:[Alert]
+
+======== link:alerts.md[Alert methods and properties]
+
+======== link:get-alerts.md[List alerts]
+
+======== link:create-alert-by-reference.md[Create alert]
+
+======== link:batch-update-alerts.md[Batch update alerts]
+
+======== link:update-alert.md[Update Alert]
+
+======== link:get-alert-info-by-id.md[Get alert information by ID]
+
+======== link:get-alert-related-domain-info.md[Get alert related domains information]
+
+======== link:get-alert-related-files-info.md[Get alert related file information]
+
+======== link:get-alert-related-ip-info.md[Get alert related IPs information]
+
+======== link:get-alert-related-machine-info.md[Get alert related device information]
+
+======== link:get-alert-related-user-info.md[Get alert related user information]
+
+======= link:[Assessments of vulnerabilities and secure configurations]
+
+======== link:get-assessment-methods-properties.md[Export assessment methods and properties]
+
+======== link:get-assessment-secure-config.md[Export secure configuration assessment]
+
+======== link:get-assessment-software-inventory.md[Export software inventory assessment]
+
+======== link:get-assessment-non-cpe-software-inventory.md[Export non product code software inventory assessment]
+
+======== link:get-assessment-software-vulnerabilities.md[Export software vulnerabilities assessment]
+
+======= link:[Authenticated scan]
+
+======== link:get-authenticated-scan-properties.md[Authenticated scan methods and properties]
+
+======== link:get-all-scan-definitions.md[Get all scan definitions]
+
+======== link:add-a-new-scan-definition.md[Add&#44; delete or update a scan definition]
+
+======== link:get-all-scan-agents.md[Get all scan agents]
+
+======== link:get-scan-history-by-definition.md[Get scan history by definition]
+
+======== link:get-scan-history-by-session.md[Get scan history by session]
+
+======= link:[Browser extensions]
+
+======== link:get-assessment-browser-extensions.md[Export browser extensions assessment]
+
+======== link:get-browser-extensions-permission-info.md[Get browser extensions permission information]
+
+======= link:[Automated investigation]
+
+======== link:investigation.md[Investigation methods and properties]
+
+======== link:get-investigation-collection.md[List Investigation]
+
+======== link:get-investigation-object.md[Get Investigation]
+
+======== link:initiate-autoir-investigation.md[Start Investigation]
+
+======= link:[Device Health]
+
+======== link:device-health-api-methods-properties.md[Export device health methods and properties]
+
+======== link:device-health-export-antivirus-health-report-api.md[Export device antivirus health report]
+
+======= link:[Certificate inventory]
+
+======== link:export-certificate-inventory-assessment.md[Export certificate inventory assessment]
+
+======= link:[Domain]
+
+======== link:get-domain-related-alerts.md[Get domain related alerts]
+
+======== link:get-domain-related-machines.md[Get domain related machines]
+
+======== link:get-domain-statistics.md[Get domain statistics]
+
+======= link:[File]
+
+======== link:files.md[File methods and properties]
+
+======== link:get-file-information.md[Get file information]
+
+======== link:get-file-related-alerts.md[Get file related alerts]
+
+======== link:get-file-related-machines.md[Get file related machines]
+
+======== link:get-file-statistics.md[Get file statistics]
+
+======= link:[Indicators]
+
+======== link:ti-indicator.md[Indicators methods and properties]
+
+======== link:get-ti-indicators-collection.md[List Indicators]
+
+======== link:post-ti-indicator.md[Submit Indicator]
+
+======== link:import-ti-indicators.md[Import Indicator]
+
+======== link:delete-ti-indicator-by-id.md[Delete Indicator]
+
+======= link:[Information gathering]
+
+======== link:get-assessment-information-gathering.md[Export information gathering assessment]
+
+======= link:[IP]
+
+======== link:get-ip-related-alerts.md[Get IP related alerts]
+
+======== link:get-ip-statistics.md[Get IP statistics]
+
+======= link:[Live response library]
+
+======== link:live-response-library-methods.md[Live response library methods and properties]
+
+======== link:list-library-files.md[List library files]
+
+======== link:upload-library.md[Upload to live response library]
+
+======== link:delete-library.md[Delete from library]
+
+======= link:[Machine]
+
+======== link:machine.md[Machine methods and properties]
+
+======== link:get-machines.md[List machines]
+
+======== link:get-machine-by-id.md[Get machine by ID]
+
+======== link:get-machine-log-on-users.md[Get machine log on users]
+
+======== link:get-machine-related-alerts.md[Get machine related alerts]
+
+======== link:get-machinesecuritystates-collection.md[Get machines security states collection API]
+
+======== link:get-installed-software.md[Get installed software]
+
+======== link:get-discovered-vulnerabilities.md[Get discovered vulnerabilities]
+
+======== link:get-security-recommendations.md[Get security recommendations]
+
+======== link:add-or-remove-machine-tags.md[Add or Remove machine tags]
+
+======== link:find-machines-by-ip.md[Find machines by IP]
+
+======== link:find-machine-info-by-ip.md[Find device information by internal IP]
+
+======== link:find-machines-by-tag.md[Find machines by tag]
+
+======== link:get-missing-kbs-machine.md[Get missing KBs]
+
+======== link:set-device-value.md[Set device value]
+
+======== link:update-machine-method.md[Update machine]
+
+======= link:[Machine Action]
+
+======== link:machineaction.md[Machine Action methods and properties]
+
+======== link:get-machineactions-collection.md[List Machine Actions]
+
+======== link:get-machineaction-object.md[Get Machine Action]
+
+======== link:collect-investigation-package.md[Collect investigation package]
+
+======== link:get-package-sas-uri.md[Get investigation package SAS URI]
+
+======== link:get-live-response-result.md[Get live response result]
+
+======== link:isolate-machine.md[Isolate machine]
+
+======== link:unisolate-machine.md[Release machine from isolation]
+
+======== link:restrict-code-execution.md[Restrict app execution]
+
+======== link:unrestrict-code-execution.md[Remove app restriction]
+
+======== link:run-av-scan.md[Run antivirus scan]
+
+======== link:run-live-response.md[Run live response]
+
+======== link:offboard-machine-api.md[Offboard machine]
+
+======== link:stop-and-quarantine-file.md[Stop and quarantine file]
+
+======== link:cancel-machine-action.md[Cancel machine action]
+
+======= link:[Recommendation]
+
+======== link:recommendation.md[Recommendation methods and properties]
+
+======== link:get-all-recommendations.md[List all recommendations]
+
+======== link:get-recommendation-by-id.md[Get recommendation by ID]
+
+======== link:list-recommendation-software.md[Get recommendation by software]
+
+======== link:get-recommendation-machines.md[List machines by recommendation]
+
+======== link:get-recommendation-vulnerabilities.md[List vulnerabilities by recommendation]
+
+======= link:[Remediation activity]
+
+======== link:get-remediation-methods-properties.md[Remediation activity methods and properties]
+
+======== link:get-remediation-one-activity.md[Get one remediation activity by ID]
+
+======== link:get-remediation-all-activities.md[List all remediation activities]
+
+======== link:get-remediation-exposed-devices-activities.md[List exposed devices of one remediation activity]
+
+======= link:[Score]
+
+======== link:score.md[Score methods and properties]
+
+======== link:get-machine-group-exposure-score.md[List exposure score by machine group]
+
+======== link:get-exposure-score.md[Get exposure score]
+
+======== link:get-device-secure-score.md[Get device secure score]
+
+======= link:[Security baselines]
+
+======== link:export-security-baseline-assessment.md[Export security baselines assessment]
+
+======== link:get-security-baselines-assessment-profiles.md[List security baselines assessment profiles]
+
+======== link:get-security-baselines-assessment-configurations.md[List security baselines assessment configurations]
+
+======= link:[Software]
+
+======== link:software.md[Software methods and properties]
+
+======== link:get-software.md[List software]
+
+======== link:get-software-by-id.md[Get software by ID]
+
+======== link:get-software-ver-distribution.md[List software version distribution]
+
+======== link:get-machines-by-software.md[List machines by software]
+
+======== link:get-vuln-by-software.md[List vulnerabilities by software]
+
+======== link:get-missing-kbs-software.md[Get missing KBs]
+
+======== link:get-machinegroups-collection.md[Get KB collection API]
+
+======= link:[User]
+
+======== link:user.md[User methods]
+
+======== link:get-user-related-alerts.md[Get user related alerts]
+
+======== link:get-user-related-machines.md[Get user related machines]
+
+======= link:[Vulnerability]
+
+======== link:vulnerability.md[Vulnerability methods and properties]
+
+======== link:get-all-vulnerabilities.md[List vulnerabilities]
+
+======== link:get-all-vulnerabilities-by-machines.md[List vulnerabilities by machine and software]
+
+======== link:get-vulnerability-by-id.md[Get vulnerability by ID]
+
+======== link:get-cvekbmap-collection.md[Get CVE-KB map API]
+
+======== link:get-kbinfo-collection.md[Get KB collection API]
+
+======== link:get-machines-by-vulnerability.md[List machines by vulnerability]
+
+====== link:[How to use APIs - Samples]
+
+======= link:api-microsoft-flow.md[Power Automate]
+
+======= link:api-power-bi.md[Power BI]
+
+======= link:run-advanced-query-sample-python.md[Advanced Hunting using Python]
+
+======= link:run-advanced-query-sample-powershell.md[Advanced Hunting using PowerShell]
+
+======= link:exposed-apis-odata-samples.md[Using OData Queries]
+
+======= link:exposed-apis-full-sample-powershell.md[Advanced Hunting with PowerShell API Guide]
+
+===== link:[Raw data streaming API]
+
+====== link:raw-data-export.md[Raw data streaming]
+
+====== link:raw-data-export-event-hub.md[Stream advanced hunting events to Azure Events hub]
+
+====== link:raw-data-export-storage.md[Stream advanced hunting events to your storage account]
+
+===== link:[SIEM integration]
+
+====== link:configure-siem.md[Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API]
+
+====== link:troubleshoot-siem.md[Troubleshoot SIEM tool integration issues]
+
+===== link:[Partners & APIs]
+
+====== link:partner-applications.md[Partner applications]
+
+====== link:connected-applications.md[Connected applications]
+
+====== link:api-explorer.md[API explorer]
+
+===== link:[Role-based access control]
+
+====== link:rbac.md[Manage portal access using RBAC]
+
+====== link:user-roles.md[Create and manage roles]
+
+====== link:[Create and manage device groups]
+
+======= link:machine-groups.md[Using device groups]
+
+======= link:machine-tags.md[Create and manage device tags]
+
+==== link:[Managed security service provider (MSSP) integration]
+
+===== link:configure-mssp-support.md[Configure managed security service provider integration]
+
+===== link:grant-mssp-access.md[Grant MSSP access to the portal]
+
+===== link:access-mssp-portal.md[Access the MSSP customer portal]
+
+===== link:configure-mssp-notifications.md[Configure alert notifications]
+
+===== link:exposed-apis-create-app-partners.md[Get partner application access]
+
+===== link:fetch-alerts-mssp.md[Fetch alerts from customer tenant]
+
+===== link:mssp-support.md[Managed security service provider opportunity]
+
+==== link:[Partner integration scenarios]
+
+===== link:partner-integration.md[Technical partner opportunities]
+
+===== link:get-started-partner-integration.md[Become a Microsoft Defender for Endpoint partner]
+
+==== link:[Integrations]
+
+===== link:threat-protection-integration.md[Microsoft Defender for Endpoint integrations]
+
+===== link:conditional-access.md[Protect users&#44; data&#44; and devices with conditional access]
+
+===== link:microsoft-cloud-app-security-integration.md[Microsoft Defender for Cloud Apps integration overview]
+
+==== link:[Information protection in Windows overview]
+
+===== link:information-protection-in-windows-overview.md[Windows integration]
+
+==== link:community.md[Access the Microsoft Defender for Endpoint Community Center]
+
+==== link:helpful-resources.md[Helpful resources]
+
+=== link:[Troubleshoot]
+
+==== link:[Troubleshoot sensor state]
+
+===== link:check-sensor-status.md[Check sensor state]
+
+===== link:fix-unhealthy-sensors.md[Fix unhealthy sensors]
+
+===== link:fix-unhealthy-sensors.md#inactive-devices[Inactive devices]
+
+===== link:fix-unhealthy-sensors.md#misconfigured-devices[Misconfigured devices]
+
+===== link:event-error-codes.md[Review sensor events and errors on machines with Event Viewer]
+
+==== link:[Troubleshoot sensor health issues using Client Analyzer]
+
+===== link:overview-client-analyzer.md[Client analyzer overview]
+
+===== link:download-client-analyzer.md[Download and run the client analyzer]
+
+===== link:run-analyzer-windows.md[Run the client analyzer on Windows]
+
+===== link:run-analyzer-macos-linux.md[Run the client analyzer on macOS or Linux]
+
+===== link:data-collection-analyzer.md[Data collection for advanced troubleshooting on Windows]
+
+===== link:analyzer-report.md[Understand the analyzer HTML report]
+
+===== link:analyzer-feedback.md[Provide feedback on the client analyzer tool]
+
+==== link:[Troubleshoot Microsoft Defender for Endpoint service issues]
+
+===== link:troubleshoot-mdatp.md[Troubleshoot service issues]
+
+===== link:contact-support.md[Contact Microsoft Defender for Endpoint support]
+
+==== link:troubleshoot-live-response.md[Troubleshoot live response issues]
+
+==== link:troubleshoot-collect-support-log.md[Collect support logs using LiveAnalyzer]
+
+==== link:[Troubleshoot attack surface reduction issues]
+
+===== link:troubleshoot-np.md[Network protection]
+
+===== link:troubleshoot-asr.md[Attack surface reduction rules]
+
+===== link:migrating-asr-rules.md[Migrate to Attack surface reduction rules]
+
+== link:[Microsoft 365 Defender docs]
+
+=== link:../defender/index.yml[Microsoft 365 Defender]
+
+=== link:../office-365-security/index.yml[Defender for Office 365]
+
+=== link:/defender-for-identity/[Defender for Identity]
+
+=== link:/cloud-app-security/[Defender for Cloud Apps]
+
+=== link:../defender-business/index.yml[Defender for Business]
+
+=== link:../defender-vulnerability-management/index.yml[Defender Vulnerability Management]

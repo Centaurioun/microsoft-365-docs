@@ -1,0 +1,69 @@
+= 
+brendacarter
+
+== Step 7. Promote your Microsoft 365 Defender evaluation environment to production
+
+*Applies to:* - Microsoft 365 Defender
+
+To promote your Microsoft 365 Defender evaluation environment to
+production, first purchase the necessary license. Follow the steps in
+link:eval-create-eval-environment.md[Create the eval environment] and
+purchase the Office 365 E5 license (instead of selecting Start free
+trial).
+
+Next, complete any additional configuration and expand your pilot groups
+until these have reached full production.
+
+=== Microsoft Defender for Identity
+
+Defender for Identity doesn’t require any additional configuration. Just
+make sure you’ve purchased the necessary licenses and installed the
+sensor on all of your Active Directory domain controllers and Active
+Directory Federation Services (AD FS) servers.
+
+=== Microsoft Defender for Office 365
+
+After successfully evaluating or piloting MDO, it can be promoted to
+your entire production environment.
+
+[arabic]
+. Purchase and provision the necessary licenses and assign them to your
+production users.
+. Re-run recommended baseline policy configurations (either Standard or
+Strict) against your production email domain or specific groups of
+users.
+. Optionally create and configure any custom MDO policies against your
+production email domain or groups of users. However, remember that any
+assigned baseline policies will always take precedence over custom
+policies.
+. Update the public MX record for your production email domain to
+resolve directly to EOP.
+. Decommission any third-party SMTP gateways and disable or delete any
+EXO connectors associated with this relay.
+
+=== Microsoft Defender for Endpoint
+
+To promote Microsoft Defender for Endpoint evaluation environment from a
+pilot to production, simply onboard more endpoints to the service using
+any of the link:../defender-endpoint/onboard-configure.md[supported
+tools and methods].
+
+Use the following general guidelines to onboard more devices to
+Microsoft Defender for Endpoint.
+
+[arabic]
+. Verify that the device fulfills the
+link:../defender-endpoint/minimum-requirements.md[minimum requirements].
+. Depending on the device, follow the configuration steps provided in
+the onboarding section of the Defender for Endpoint portal.
+. Use the appropriate management tool and deployment method for your
+devices.
+. Run a detection test to verify that the devices are properly onboarded
+and reporting to the service.
+
+=== Microsoft Defender for Cloud Apps
+
+Microsoft Defender for Cloud Apps doesn’t require any additional
+configuration. Just make sure you’ve purchased the necessary licenses.
+If you’ve scoped the deployment to certain user groups, increase the
+scope of these groups until you reach production scale.

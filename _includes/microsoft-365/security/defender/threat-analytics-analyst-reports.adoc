@@ -1,0 +1,181 @@
+= 
+schmurky
+:keywords: analyst report, threat analytics, detections, advanced
+hunting queries, mitigations,
+
+== Understand the analyst report in threat analytics in Microsoft 365 Defender
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+{empty}[!INCLUDE link:../includes/prerelease.md[Prerelease]]
+
+Each link:threat-analytics.md[threat analytics report] includes dynamic
+sections and a comprehensive written section called the _analyst
+report_. To access this section, open the report about the tracked
+threat and select the *Analyst report* tab.
+
+:::image type=``content''
+source=``../../media/threat-analytics/ta_analystreport_mtp.png''
+alt-text=``The analyst report section of a threat analytics report''
+lightbox=``../../media/threat-analytics/ta_analystreport_mtp.png'':::
+
+_Analyst report section of a threat analytics report_
+
+=== Scan the analyst report
+
+Each section of the analyst report is designed to provide actionable
+information. While reports vary, most reports include the sections
+described in the following table.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Report section |Description
+|Executive summary |Overview of the threat, including when it was first
+seen, its motivations, notable events, major targets, and distinct tools
+and techniques. You can use this information to further assess how to
+prioritize the threat in the context of your industry, geographic
+location, and network.
+
+|Analysis |Technical information about the threats, including the
+details of an attack and how attackers might utilize a new technique or
+attack surface
+
+|MITRE ATT&CK techniques observed |How observed techniques map to the
+https://attack.mitre.org/[MITRE ATT&CK attack framework]
+
+|link:#apply-additional-mitigations[Mitigations] |Recommendations that
+can stop or help reduce the impact of the threat. This section also
+includes mitigations that aren’t tracked dynamically as part of the
+threat analytics report.
+
+|link:#understand-how-each-threat-can-be-detected[Detection details]
+|Specific and generic detections provided by Microsoft security
+solutions that can surface activity or components associated with the
+threat.
+
+|link:#find-subtle-threat-artifacts-using-advanced-hunting[Advanced
+hunting] |link:advanced-hunting-overview.md[Advanced hunting queries]
+for proactively identifying possible threat activity. Most queries are
+provided to supplement detections, especially for locating potentially
+malicious components or behaviors that couldn’t be dynamically assessed
+to be malicious.
+
+|References |Microsoft and third-party publications referenced by
+analysts during the creation of the report. Threat analytics content is
+based on data validated by Microsoft researchers. Information from
+publicly available, third-party sources are identified clearly as such.
+
+|Change log |The time the report was published and when significant
+changes were made to the report.
+|===
+
+=== Apply additional mitigations
+
+Threat analytics dynamically tracks the
+link:threat-analytics.md#exposure-and-mitigations-review-list-of-mitigations-and-the-status-of-your-devices[status
+of security updates and secure configurations]. This information is
+available as charts and tables in the *Exposure & mitigations* tab.
+
+In addition to these tracked mitigations, the analyst report also
+discusses mitigations that are _not_ dynamically monitored. Here are
+some examples of important mitigations that are not dynamically tracked:
+
+* Block emails with _.lnk_ attachments or other suspicious file types
+* Randomize local administrator passwords
+* Educate end users about phishing email and other threat vectors
+* Turn on specific
+link:/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction[attack
+surface reduction rules]
+
+While you can use the *Exposure & mitigations* tab to assess your
+security posture against a threat, these recommendations let you take
+additional steps towards improving your security posture. Carefully read
+all the mitigation guidance in the analyst report and apply them
+whenever possible.
+
+=== Understand how each threat can be detected
+
+The analyst report also provides the detections from Microsoft Defender
+Antivirus and _endpoint detection and response_ (EDR) capabilities.
+
+==== Antivirus detections
+
+These detections are available on devices with
+link:/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10[Microsoft
+Defender Antivirus] turned on. When these detections occur on devices
+that have been onboarded to Microsoft Defender for Endpoint, they also
+trigger alerts that light up the charts in the report.
+
+____
+[!NOTE] The analyst report also lists *generic detections* that can
+identify a wide-range of threats, in addition to components or behaviors
+specific to the tracked threat. These generic detections don’t reflect
+in the charts.
+____
+
+==== Endpoint detection and response (EDR) alerts
+
+EDR alerts are raised for
+link:/windows/security/threat-protection/microsoft-defender-atp/onboard-configure[devices
+onboarded to Microsoft Defender for Endpoint]. These alerts generally
+rely on security signals collected by the Microsoft Defender for
+Endpoint sensor and other endpoint capabilities—such as antivirus,
+network protection, tamper protection—that serve as powerful signal
+sources.
+
+Like the list of antivirus detections, some EDR alerts are designed to
+generically flag suspicious behavior that might not be associated with
+the tracked threat. In such cases, the report will clearly identify the
+alert as ``generic'' and that it doesn’t influence any of the charts in
+the report.
+
+==== Email-related detections and mitigations
+
+Email-related detections and mitigations from Microsoft Defender for
+Office 365, are included in analyst reports in addition to the endpoint
+data already available from Microsoft Defender for Endpoint.
+
+Prevented email attempt information gives you insights on whether your
+organization was a target of the threat tackled in the analyst report
+even if the attack has been effectively blocked before delivery or
+delivered to the junk mail folder.
+
+=== Find subtle threat artifacts using advanced hunting
+
+While detections allow you to identify and stop the tracked threat
+automatically, many attack activities leave subtle traces that require
+additional inspection. Some attack activities exhibit behaviors that can
+also be normal, so detecting them dynamically can result in operational
+noise or even false positives.
+
+link:advanced-hunting-overview.md[Advanced hunting] provides a query
+interface based on Kusto Query Language that simplifies locating subtle
+indicators of threat activity. It also allows you to surface contextual
+information and verify whether indicators are connected to a threat.
+
+Advanced hunting queries in the analyst reports have been vetted by
+Microsoft analysts and are ready for you to run in the
+https://security.microsoft.com/advanced-hunting[advanced hunting query
+editor]. You can also use the queries to create
+link:custom-detection-rules.md[custom detection rules] that trigger
+alerts for future matches.
+
+____
+[!NOTE] Threat analytics is also available in
+link:/windows/security/threat-protection/microsoft-defender-atp/threat-analytics[Microsoft
+Defender for Endpoint]. However, it does not have the data integration
+between Microsoft Defender for Office and Microsoft Defender for
+Endpoint.
+____
+
+=== Related topics
+
+* link:threat-analytics.md[Threat analytics overview]
+* link:advanced-hunting-overview.md[Proactively find threats with
+advanced hunting]
+* link:custom-detection-rules.md[Custom detection rules]

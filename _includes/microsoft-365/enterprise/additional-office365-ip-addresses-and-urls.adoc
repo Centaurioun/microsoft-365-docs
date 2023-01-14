@@ -1,0 +1,204 @@
+= 
+kelleyvice-msft
+
+== Other endpoints not included in the Office 365 IP Address and URL Web service
+
+Some network endpoints were previously published and haven’t been
+included in the link:microsoft-365-ip-web-service.md[Office 365 IP
+Address and URL Web Service]. The web service publishes network
+endpoints that are required for Office 365 connectivity across an
+enterprise perimeter network. This scope currently doesn’t include:
+
+[arabic]
+. Network connectivity that may be required from a Microsoft datacenter
+to a customer network (inbound hybrid server network traffic).
+. Network connectivity from servers on a customer network across the
+enterprise perimeter (outbound server network traffic).
+. Uncommon scenarios for network connectivity requirements from a user.
+. DNS resolution connectivity requirement (not listed below).
+. Internet Explorer or Microsoft Edge Trusted Sites.
+
+Apart from DNS, these instances are all optional for most customers
+unless you need the specific scenario that is described.
+
+'''''
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Row |Purpose |Destination |Type
+|1
+|*https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6[Import
+Service] for PST and file ingestion* |Refer to the
+https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6[Import
+Service] for more requirements. |Uncommon outbound scenario
+
+|2 |*https://diagnostics.office.com/#/[Microsoft Support and Recovery
+Assistant for Office 365]* |`https://autodiscover.outlook.com`
+https://officecdn.microsoft.com https://api.diagnostics.office.com
+`https://apibasic.diagnostics.office.com`
+https://autodiscover-s.outlook.com
+`https://cloudcheckenabler.azurewebsites.net` https://login.live.com
+https://login.microsoftonline.com https://login.windows.net
+https://o365diagtelemetry.trafficmanager.net
+https://odc.officeapps.live.com https://offcatedge.azureedge.net
+https://officeapps.live.com https://outlook.office365.com
+https://outlookdiagnostics.azureedge.net
+https://sara.api.support.microsoft.com |Outbound server traffic
+
+|3 |*Azure AD Connect (w/SSO option)* |Customer STS environment (AD FS
+Server and AD FS Proxy) | TCP ports 80 & 443 |Inbound server traffic
+
+|4 |*STS* such as AD FS Proxy server(s) (for federated customers only)
+|Customer STS (such as AD FS Proxy) | Ports TCP 443 or TCP 49443
+w/ClientTLS |Inbound server traffic
+
+|5
+|*link:/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers[Exchange
+Online Unified Messaging/SBC integration]* |Bidirectional between
+on-premises Session Border Controller and *.um.outlook.com |Outbound
+server-only traffic
+
+|6 |*Mailbox Migration* |Customer on-premises EWS/MRS Proxy TCP port 443
+|Inbound server traffic
+
+|7 |*link:/exchange/exchange-deployment-assistant[Exchange Hybrid]
+coexistence functions* such as Free/Busy sharing. |Customer on-premises
+Exchange server |Inbound server traffic
+
+|8 |*link:/exchange/exchange-deployment-assistant[Exchange Hybrid] proxy
+authentication* |Customer on-premises STS |Inbound server traffic
+
+|9 |Used to configure
+link:/exchange/exchange-deployment-assistant[Exchange Hybrid], using the
+*link:/exchange/hybrid-configuration-wizard[Exchange Hybrid
+Configuration Wizard]* |domains.live.com on TCP ports 80 & 443, only
+required for Exchange 2010 SP3 Hybrid Configuration Wizard |Outbound
+server-only traffic
+
+|10 |The *AutoDetect service* is used in
+link:/exchange/exchange-deployment-assistant[Exchange Hybrid] scenarios
+with
+link:/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth[Hybrid
+Modern Authentication with Outlook for iOS and Android] |Customer
+on-premises Exchange server on TCP 443 |Inbound server traffic
+
+|11 |*Exchange hybrid Azure AD authentication* |*.msappproxy.net |TCP
+outbound server-only traffic
+
+|12 |Skype for Business in Office 2016 includes *video based screen
+sharing*, which uses UDP ports. Prior Skype for Business clients in
+Office 2013 and earlier used RDP over TCP port 443. |TCP port 443 opens
+to 52.112.0.0/14 |Skype for Business older client versions in Office
+2013 and earlier
+
+|13 |*Skype for Business hybrid on-premises server connectivity* to
+Skype for Business Online |13.107.64.0/18, 52.112.0.0/14 UDP ports
+50,000-59,999 TCP ports 50,000-59,999; 5061 |Skype for Business
+on-premises server outbound connectivity
+
+|14 |*Cloud PSTN* with on-premises hybrid connectivity requires network
+connectivity open to the on-premises hosts. For more details about Skype
+for Business Online hybrid configurations |See
+link:/skypeforbusiness/hybrid/plan-hybrid-connectivity[Plan hybrid
+connectivity between Skype for Business Server and Office 365] |Skype
+for Business on-premises hybrid inbound
+
+|15 |*Authentication and identity FQDNs* | |Trusted Sites
+
+|16 |*Microsoft Teams FQDNs* | |Trusted Sites
+
+|17 |*SharePoint Online and OneDrive for Business FQDNs* | |Trusted
+Sites
+
+|18 |*Yammer* Yammer is only available in the browser and requires the
+authenticated user to be passed through a proxy. All Yammer FQDNs need
+to be in your client’s IE or Edge Trusted Sites Zone to function. |
+|Trusted Sites
+
+|19 |Use *link:/azure/active-directory/hybrid/[Azure AD Connect]* to
+sync on-premises user accounts to Azure AD. |See
+link:/azure/active-directory/hybrid/reference-connect-ports[Hybrid
+Identity Required Ports and Protocols],
+link:/azure/active-directory/hybrid/tshoot-connect-connectivity[Troubleshoot
+Azure AD connectivity], and
+link:/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints[Azure
+AD Connect Health Agent Installation]. |Outbound server-only traffic
+
+|20 |*link:/azure/active-directory/hybrid/[Azure AD Connect]* with 21
+ViaNet in China to sync on-premises user accounts to Azure AD.
+|*.digicert.com:80 *.entrust.net:80 *.chinacloudapi.cn:443
+secure.aadcdn.partner.microsoftonline-p.cn:443
+*.partner.microsoftonline.cn:443 |Outbound server-only traffic
+
+|21 |*Microsoft Stream* (needs the Azure AD user token). Office 365
+Worldwide (including GCC) |*.cloudapp.net *.api.microsoftstream.com
+*.notification.api.microsoftstream.com amp.azure.net
+api.microsoftstream.com az416426.vo.msecnd.net s0.assets-yammer.com
+vortex.data.microsoft.com web.microsoftstream.com TCP port 443 |Inbound
+server traffic
+
+|22 |Use *MFA server* for multi-factor authentication requests, both new
+installations of the server and setting it up with Active Directory
+Domain Services (AD DS). |See
+link:/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment[Getting
+started with the Azure AD multi-factor authentication Server]. |Outbound
+server-only traffic
+
+|23 |*Microsoft Graph Change Notifications* |Public Cloud:
+52.159.23.209, 52.159.17.84, 13.78.204.0, 52.148.24.136, 52.148.27.39,
+52.147.213.251, 52.147.213.181, 20.127.53.125, 40.76.162.99,
+40.76.162.42, 70.37.95.92, 70.37.95.11, 70.37.92.195, 70.37.93.191,
+70.37.90.219, 20.9.36.45, 20.9.35.166, 20.9.36.128, 20.9.37.73,
+20.9.37.76, 20.96.21.67, 20.69.245.215, 104.46.117.15, 20.96.21.98,
+20.96.21.115, 137.135.11.161, 137.135.11.116, 20.253.156.113,
+137.135.11.222, 137.135.11.250, 52.159.107.50, 52.159.107.4,
+52.159.124.33, 52.159.109.205, 52.159.102.72, 20.98.68.182, 20.98.68.57,
+20.98.68.200, 20.98.68.203, 20.98.68.218, 20.171.81.121, 20.25.189.138,
+20.171.82.192, 20.171.83.146, 20.171.83.157, 52.142.114.29,
+52.142.115.31, 20.223.139.245, 51.104.159.213, 51.104.159.181,
+51.124.75.43, 51.124.73.177, 104.40.209.182, 51.138.90.7, 51.138.90.52,
+20.199.102.157, 20.199.102.73, 20.216.150.67, 20.111.9.46, 20.111.9.77,
+13.87.81.123, 13.87.81.35, 20.90.99.1, 13.87.81.133, 13.87.81.141,
+20.91.212.211, 20.91.212.136, 20.91.213.57, 20.91.208.88, 20.91.209.147,
+20.44.210.83, 20.44.210.146, 20.212.153.162, 52.148.115.48,
+52.148.114.238, 40.80.232.177, 40.80.232.118, 52.231.196.24,
+40.80.233.14, 40.80.239.196, 20.48.12.75, 20.48.11.201, 20.89.108.161,
+20.48.14.35, 20.48.15.147, 104.215.13.23, 104.215.6.169, 20.89.240.165,
+104.215.18.55, 104.215.12.254 |Inbound server traffic
+
+|24 |*Network Connection Status Indicator* |www.msftconnecttest.com
+13.107.4.52 |Outbound server-only traffic
+
+|25 |*Teams Notifications on Mobile Devices* |For specific ports, see
+https://firebase.google.com/docs/cloud-messaging/concept-options#messaging-ports-and-your-firewall[FCM
+ports and your firewall in the Google Firebase documentation] and
+https://support.apple.com/en-us/HT203609[If your Apple devices aren’t
+getting Apple push notifications]. |Outbound server-only traffic
+|===
+
+=== Related Topics
+
+link:managing-office-365-endpoints.md[Managing Office 365 endpoints]
+
+link:./monitor-connectivity.md[Monitor Microsoft 365 connectivity]
+
+https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b[Client
+connectivity]
+
+https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f[Content
+delivery networks]
+
+https://www.microsoft.com/download/details.aspx?id=56519[Azure IP Ranges
+and Service Tags – Public Cloud]
+
+https://www.microsoft.com/download/details.aspx?id=57063[Azure IP Ranges
+and Service Tags – US Government Cloud]
+
+https://www.microsoft.com/download/details.aspx?id=57064[Azure IP Ranges
+and Service Tags – Germany Cloud]
+
+https://www.microsoft.com/download/details.aspx?id=57062[Azure IP Ranges
+and Service Tags – China Cloud]
+
+https://www.microsoft.com/download/details.aspx?id=53602[Microsoft
+Public IP Space]

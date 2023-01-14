@@ -1,0 +1,37 @@
+= 
+johnddeweese
+
+== Manage clients for Microsoft Whiteboard in GCC environments
+
+____
+[!NOTE] This guidance applies to US Government Community Cloud (GCC)
+environments.
+____
+
+Whiteboard clients are currently being updated to support OneDrive for
+Business.
+
+=== Clients supported
+
+The following clients are currently supported in Whiteboard:
+
+* Standalone Whiteboard web application at https://whiteboard.office.com
+* Microsoft Teams meetings, chats, and channels using Teams desktop and
+web
+* Standalone Whiteboard application for mobile
+* Standalone Whiteboard applications for Windows 10
+
+=== Clients planned
+
+The following clients are planned for future releases of Whiteboard:
+
+* Whiteboard in the Office.com app launcher
+* Whiteboard in Teams meeting room
+
+=== See also
+
+link:manage-whiteboard-access-gcc.md[Manage access to Whiteboard - GCC]
+
+link:manage-data-gcc.md[Manage data for Whiteboard - GCC]
+
+link:manage-sharing-gcc.md[Manage sharing for Whiteboard - GCC]

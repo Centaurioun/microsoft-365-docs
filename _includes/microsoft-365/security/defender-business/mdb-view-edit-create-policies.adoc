@@ -1,0 +1,152 @@
+= 
+denisebmsft
+
+== View or edit policies in Microsoft Defender for Business
+
+In Defender for Business, security settings are configured through
+policies that are applied to devices. To help simplify your setup and
+configuration experience, Defender for Business includes preconfigured
+policies to help protect your company’s devices as soon as they are
+onboarded. You can use the default policies, edit policies, or create
+your own policies.
+
+*This article describes how to*:
+
+* link:#default-policies-in-defender-for-business[Get an overview of
+your default policies]
+* link:#view-your-existing-policies[View your existing policies]
+* link:#edit-an-existing-policy[Edit an existing policy]
+* link:#create-a-new-policy[Create a new policy]
+
+____
+[!NOTE] The procedures in this article describe how to view, edit, and
+create security policies in the Microsoft 365 Defender portal
+(https://security.microsoft.com). If you’re using Microsoft Intune, see
+link:/mem/intune/protect/endpoint-security[Manage endpoint security in
+Microsoft Intune].
+____
+
+=== Default policies in Defender for Business
+
+In Defender for Business, there are two main types of policies to
+protect your company’s devices:
+
+* *Next-generation protection policies*, which determine how Microsoft
+Defender Antivirus and other threat protection features are configured
+* *Firewall policies*, which determine what network traffic is permitted
+to flow to and from your company’s devices
+
+=== View your existing policies
+
+[arabic]
+. Go to the Microsoft 365 Defender portal
+(https://security.microsoft.com), and sign in.
+. In the navigation pane, choose *Device configuration*. Policies are
+organized by operating system (such as *Windows client*) and policy type
+(such as *Next-generation protection* and *Firewall*).
+. Select an operating system tab (for example, *Windows clients*), and
+then review the list of policies under the *Next-generation protection*
+and *Firewall* categories.
+. To view more details about a policy, select its name. A side pane will
+open that provides more information about that policy, such as which
+devices are protected by that policy.
+
+=== Edit an existing policy
+
+[arabic]
+. Go to the Microsoft 365 Defender portal
+(https://security.microsoft.com), and sign in.
+. In the navigation pane, choose *Device configuration*. Policies are
+organized by operating system (such as *Windows client*) and policy type
+(such as *Next-generation protection* and *Firewall*).
+. Select an operating system tab (for example, *Windows clients*), and
+then review the list of policies under the *Next-generation protection*
+and *Firewall* categories.
+. To edit a policy, select its name, and then choose *Edit*.
+. On the *General information* tab, review the information. If
+necessary, you can edit the description. Then choose *Next*.
+. On the *Device groups* tab, determine which device groups should
+receive this policy.
+* To keep the selected device group as it is, choose *Next*.
+* To remove a device group from the policy, select *Remove*.
+* To set up a new device group, select *Create new group*, and then set
+up your device group. (To get help with this task, see
+link:mdb-create-edit-device-groups.md[Device groups in Defender for
+Business].)
+* To apply the policy to another device group, select *Use existing
+group*.
++
+After you have specified which device groups should receive the policy,
+choose *Next*.
+. On the *Configuration settings* tab, review the settings. If
+necessary, you can edit the settings for your policy. To get help with
+this task, see the following articles:
+* link:mdb-next-gen-configuration-settings.md[Understand next-generation
+configuration settings] +
+* link:mdb-firewall.md[Firewall settings]
++
+After you have specified your next-generation protection settings,
+choose *Next*.
+. On the *Review your policy* tab, review the general information,
+targeted devices, and configuration settings.
+* Make any needed changes by selecting *Edit*.
+* When you’re ready to proceed, choose *Update policy*.
+
+=== Create a new policy
+
+[arabic]
+. Go to the Microsoft 365 Defender portal
+(https://security.microsoft.com), and sign in.
+. In the navigation pane, choose *Device configuration*. Policies are
+organized by operating system (such as *Windows client*) and policy type
+(such as *Next-generation protection* and *Firewall*).
+. Select an operating system tab (for example, *Windows clients*), and
+then review the list of *Next-generation protection* policies.
+. Under *Next-generation protection* or *Firewall*, select *+ Add*.
+. On the *General information* tab, take the following steps:
+[arabic]
+.. Specify a name and description. This information will help you and
+your team identify the policy later on.
+.. Review the policy order, and edit it if necessary. (For more
+information, see link:mdb-policy-order.md[Policy order].)
+.. Choose *Next*.
+. On the *Device groups* tab, either create a new device group, or use
+an existing group. Policies are assigned to devices through device
+groups. Here are some things to keep in mind:
+* Initially, you might only have your default device group, which
+includes the devices people in your company are using to access company
+data and email. You can keep and use your default device group.
+* Create a new device group to apply a policy with specific settings
+that are different from the default policy.
+* When you set up your device group, you specify certain criteria, such
+as the operating system version. Devices that meet the criteria are
+included in that device group, unless you exclude them.
+* All device groups, including the default and custom device groups that
+you define, are stored in Azure Active Directory (Azure AD).
++
+To learn more about device groups, see
+link:mdb-create-edit-device-groups.md[Device groups in Defender for
+Business].
+. On the *Configuration settings* tab, specify the settings for your
+policy, and then choose *Next*. For more information about the
+individual settings, see
+link:mdb-next-gen-configuration-settings.md[Configuration settings for
+Defender for Business].
+. On the *Review your policy* tab, review the general information,
+targeted devices, and configuration settings.
+* Make any needed changes by selecting *Edit*.
+* When you’re ready to proceed, choose *Create policy*.
+
+=== Next steps
+
+Choose one or more of the following tasks:
+
+* link:mdb-manage-devices.md[Manage devices]
+* link:mdb-create-new-policy.md[Create a new policy in Defender for
+Business]
+* link:mdb-view-manage-incidents.md[View and manage incidents in
+Defender for Business]
+* link:mdb-respond-mitigate-threats.md[Respond to and mitigate threats
+in Defender for Business]
+* link:mdb-review-remediation-actions.md[Review remediation actions in
+the Action center]

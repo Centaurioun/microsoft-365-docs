@@ -1,0 +1,50 @@
+= 
+mjcaparas
+:keywords: troubleshoot Microsoft 365 Defender, troubleshoot, Microsoft
+Defender for Identity, issues, add-on, settings page
+
+== Troubleshoot Microsoft 365 Defender service issues
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender
+
+This section addresses issues that might arise as you use the Microsoft
+365 Defender service.
+
+=== I don’t see Microsoft 365 Defender content
+
+If you don’t see capabilities on the navigation pane such as the
+Incidents, Action center, or Hunting in your portal, you’ll need to
+verify that your tenant has the appropriate licenses.
+
+For more information, see link:prerequisites.md[Prerequisites].
+
+=== Microsoft Defender for Identity alerts are not showing up in the Microsoft 365 Defender incidents
+
+If you have Microsoft Defender for Identity deployed in your environment
+but you’re not seeing Defender for Identity alerts as part of Microsoft
+365 Defender incidents, you’ll need to ensure that the Microsoft
+Defender for Cloud Apps and Defender for Identity integration is
+enabled.
+
+For more information, see
+link:/cloud-app-security/mdi-integration[Microsoft Defender for Identity
+integration].
+
+=== Where is the settings page for turning on the service?
+
+To turn on Microsoft 365 Defender, access *Settings* from the navigation
+pane in the Microsoft 365 Defender portal. This navigation item is
+visible only if you have the
+link:m365d-enable.md#check-license-eligibility-and-required-permissions[prerequisite
+permissions and licenses].
+
+=== How do I create an exception for my file/URL?
+
+A false positive is a file or URL that is detected as malicious but is
+not a threat. You can create indicators and define exclusions to unblock
+and allow certain files/URLs. See
+link:/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives[Address
+false positives/negatives in Defender for Endpoint].

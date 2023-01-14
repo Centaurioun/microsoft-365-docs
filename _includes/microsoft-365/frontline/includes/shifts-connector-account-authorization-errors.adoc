@@ -1,0 +1,13 @@
+= 
+LanaChin
+
+Account authorization errors may occur if the WFM service account or
+Microsoft 365 system account credentials are incorrect or don’t have the
+required permissions.
+
+To change your WFM service account or Microsoft 365 system account
+credentials for the connection, you can run the
+link:/powershell/module/teams/set-csteamsshiftsconnectioninstance[Set-CsTeamsShiftsConnectionInstance]
+cmdlet or use the PowerShell script in the
+link:#change-connection-settings[Change connection settings] section of
+this article.

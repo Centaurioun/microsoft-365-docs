@@ -1,0 +1,32 @@
+= 
+Tinacyt
+
+== Test your application on Test Base
+
+In this section, you’ll learn how to create packages with different
+types of applications for uploading and testing on *Test Base*.
+Application types consist of the following values:
+
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/testoverview01.png[Package publish prompts]
+____
+
+* *Test Binaries files*
++
+See link:testapplication.md[Creating and Testing Binary Files on Test
+Base] to prepare a package with a Binary application file (that is,
+.exe, .msi) for uploading and testing.
+* *Intunewin app*
++
+See link:testintuneapplication.md[Test your Intune app on Test Base] to
+prepare a package with an Intune application file (.intunewin) for
+uploading and testing.
+* *Pre-built Zip package*
++
+See link:uploadapplication.md[Uploading pre-built zip package] if you
+already have an offline built package in .zip format.
+* *Clone existing package*
++
+See link:clonepackage.md[Clone an existing package] to create a new
+package by duplicating your previously published package.

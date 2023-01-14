@@ -1,0 +1,163 @@
+= 
+schmurky
+:keywords: advanced hunting, threat hunting, cyber threat hunting,
+Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry,
+schema reference, kusto, table, data, naming changes, rename
+
+== Advanced hunting schema - Naming changes
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender
+
+{empty}[!INCLUDE link:../includes/prerelease.md[Prerelease information]]
+
+The link:advanced-hunting-schema-tables.md[advanced hunting schema] is
+updated regularly to add new tables and columns. In some cases, existing
+columns names are renamed or replaced to improve the user experience.
+Refer to this article to review naming changes that could impact your
+queries.
+
+Naming changes are automatically applied to queries that are saved in
+the Defender for Cloud, including queries used by custom detection
+rules. You don’t need to update these queries manually. However, you
+will need to update the following queries: - Queries that are run using
+the API - Queries that are saved elsewhere outside the Defender for
+Cloud
+
+=== December 2020
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Table name |Original column name |New column name |Reason for change
+|link:advanced-hunting-emailevents-table.md[EmailEvents]
+|`FinalEmailAction` |`EmailAction` |Customer feedback
+
+|link:advanced-hunting-emailevents-table.md[EmailEvents]
+|`FinalEmailActionPolicy` |`EmailActionPolicy` |Customer feedback
+
+|link:advanced-hunting-emailevents-table.md[EmailEvents]
+|`FinalEmailActionPolicyGuid` |`EmailActionPolicyGuid` |Customer
+feedback
+|===
+
+=== January 2021
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Column name |Original value name |New value name |Reason for change
+|`DetectionSource` |Defender for Cloud Apps |Microsoft Defender for
+Cloud Apps |Rebranding
+
+|`DetectionSource` |WindowsDefenderAtp |EDR |Rebranding
+
+|`DetectionSource` |WindowsDefenderAv |Antivirus |Rebranding
+
+|`DetectionSource` |WindowsDefenderSmartScreen |SmartScreen |Rebranding
+
+|`DetectionSource` |CustomerTI |Custom TI |Rebranding
+
+|`DetectionSource` |OfficeATP |Microsoft Defender for Office 365
+|Rebranding
+
+|`DetectionSource` |MTP |Microsoft 365 Defender |Rebranding
+
+|`DetectionSource` |AzureATP |Microsoft Defender for Identity
+|Rebranding
+
+|`DetectionSource` |CustomDetection |Custom detection |Rebranding
+
+|`DetectionSource` |AutomatedInvestigation |Automated investigation
+|Rebranding
+
+|`DetectionSource` |ThreatExperts |Microsoft Threat Experts |Rebranding
+
+|`DetectionSource` |3rd party TI |3rd Party sensors |Rebranding
+
+|`ServiceSource` |Microsoft Defender ATP |Microsoft Defender for
+Endpoint |Rebranding
+
+|`ServiceSource` |Microsoft Threat Protection |Microsoft 365 Defender
+|Rebranding
+
+|`ServiceSource` |Office 365 ATP |Microsoft Defender for Office 365
+|Rebranding
+
+|`ServiceSource` |Azure ATP |Microsoft Defender for Identity |Rebranding
+|===
+
+`DetectionSource` is available in the
+link:advanced-hunting-alertinfo-table.md[AlertInfo] table.
+`ServiceSource` is available in the
+link:advanced-hunting-alertevidence-table.md[AlertEvidence] and
+link:advanced-hunting-alertinfo-table.md[AlertInfo] tables.
+
+=== February 2021
+
+[arabic]
+. In the
+link:advanced-hunting-emailattachmentinfo-table.md[EmailAttachmentInfo]
+and link:advanced-hunting-emailevents-table.md[EmailEvents] tables, the
+`MalwareFilterVerdict`and `PhishFilterVerdict` columns have been
+replaced by the `ThreatTypes` column. The `MalwareDetectionMethod` and
+`PhishDetectionMethod` columns were also replaced by the
+`DetectionMethods` column. This streamlining allows us to provide more
+information under the new columns. The mapping is provided below.
++
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Table name |Original column name |New column name |Reason for change
+|`EmailAttachmentInfo` |`MalwareDetectionMethod` `PhishDetectionMethod`
+|`DetectionMethods` |Include more detection methods
+
+|`EmailAttachmentInfo` |`MalwareFilterVerdict` `PhishFilterVerdict`
+|`ThreatTypes` |Include more threat types
+
+|`EmailEvents` |`MalwareDetectionMethod` `PhishDetectionMethod`
+|`DetectionMethods` |Include more detection methods
+
+|`EmailEvents` |`MalwareFilterVerdict` `PhishFilterVerdict`
+|`ThreatTypes` |Include more threat types
+|===
+. In the `EmailAttachmentInfo` and `EmailEvents` tables, the
+`ThreatNames` column was added to give more information about the email
+threat. This column contains values like Spam or Phish.
+. In the link:advanced-hunting-deviceinfo-table.md[DeviceInfo] table,
+the `DeviceObjectId` column was replaced by the `AadDeviceId` column
+based on customer feedback.
+. In the link:advanced-hunting-deviceevents-table.md[DeviceEvents]
+table, several ActionType names were modified to better reflect the
+description of the action. Details of the changes can be found below.
++
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Table name |Original ActionType name |New ActionType name |Reason for
+change
+|`DeviceEvents` |`DlpPocPrintJob` |`FilePrinted` |Customer feedback
+
+|`DeviceEvents` |`UsbDriveMount` |`UsbDriveMounted` |Customer feedback
+
+|`DeviceEvents` |`UsbDriveUnmount` |`UsbDriveUnmounted` |Customer
+feedback
+
+|`DeviceEvents` |`WriteProcessMemoryApiCall`
+|`WriteToLsassProcessMemory` |Customer feedback
+|===
+
+=== March 2021
+
+The `DeviceTvmSoftwareInventoryVulnerabilities` table has been
+deprecated. Replacing it are the `DeviceTvmSoftwareInventory` and
+`DeviceTvmSoftwareVulnerabilities` tables.
+
+=== May 2021
+
+The `AppFileEvents` table has been deprecated. The `CloudAppEvents`
+table includes information that used to be in the `AppFileEvents` table,
+along with other activities in cloud services.
+
+=== Related topics
+
+* link:advanced-hunting-overview.md[Advanced hunting overview]
+* link:advanced-hunting-schema-tables.md[Understand the schema]

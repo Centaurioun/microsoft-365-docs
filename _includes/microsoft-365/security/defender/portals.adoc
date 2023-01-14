@@ -1,0 +1,119 @@
+= 
+dansimp
+:keywords: security, portals, Microsoft 365, M365, security center,
+admin center, URL, link, Microsoft 365 Defender, Microsoft Defender for
+Endpoint, Microsoft Defender Security Center, Microsoft Defender for
+Identity, Microsoft Defender for Office 365, MCAS, WDSI, SCC, Intune,
+MDM, MEM, ASC, Cloud App Security , Azure AD, security & compliance
+center
+
+== Microsoft security portals and admin centers
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+While link:microsoft-365-defender-portal.md[Microsoft 365 Defender
+portal] is the new home for monitoring and managing security across your
+identities, data, devices, and apps, you will need to access various
+portals for certain specialized tasks.
+
+____
+[!TIP] To access various relevant portals from Microsoft 365 Defender
+portal, select *More resources* in the navigation pane.
+____
+
+=== Security portals
+
+Security operators and admins can go to the following portals to manage
+security-specific settings, investigate possible threat activities,
+respond to active threats, and collaborate with IT admins to remediate
+issues.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Portal name |Description |Link
+|Microsoft 365 Defender portal |Monitor and respond to threat activity
+and strengthen security posture across your identities, email, data,
+endpoints, and apps with link:microsoft-365-defender.md[Microsoft 365
+Defender] |https://security.microsoft.com/[security.microsoft.com]
+
+|Microsoft Defender Security Center |Monitor and respond to threat
+activity on your endpoints using capabilities provided with
+link:/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint[Microsoft
+Defender for Endpoint]. *NOTE:* Most tenants should now be redirected to
+the Microsoft 365 Defender portal at
+https://security.microsoft.com/[security.microsoft.com].
+|https://securitycenter.windows.com[securitycenter.windows.com]
+
+|Office 365 Security & Compliance Center |Manage
+link:../office-365-security/eop-about.md[Exchange Online Protection] and
+link:/microsoft-365/security/office-365-security/defender-for-office-365[Microsoft
+Defender for Office 365] to protect your email and collaboration
+services, and ensure compliance to various data-handling regulations.
+*NOTE:* Most tenants using the security sections of the Office 365
+Security & Compliance Center should now be redirected to the Microsoft
+365 Defender portal at
+https://security.microsoft.com/[security.microsoft.com].
+|https://protection.office.com[protection.office.com]
+
+|Defender for Cloud portal |Use
+link:/azure/security-center/security-center-intro[Microsoft Defender for
+Cloud] to strengthen the security posture of your data centers and your
+hybrid workloads in the cloud
+|https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0[portal.azure.com/#blade/Microsoft_Azure_Security]
+
+|Microsoft Defender for Identity portal |Identify, detect, and
+investigate advanced threats, compromised identities, and malicious
+insider actions using Active Directory signals with
+link:/azure-advanced-threat-protection/what-is-atp[Microsoft Defender
+for Identity] |https://portal.atp.azure.com/[portal.atp.azure.com]
+
+|Defender for Cloud Apps portal |Use
+link:/cloud-app-security/what-is-cloud-app-security[Microsoft Defender
+for Cloud Apps] to get rich visibility, control over data travel, and
+sophisticated analytics to identify and combat cyberthreats on cloud
+services
+|https://portal.cloudappsecurity.com/[portal.cloudappsecurity.com]
+
+|Microsoft Security Intelligence portal |Get security intelligence
+updates for Microsoft Defender for Endpoint, submit samples, and explore
+the threat encyclopedia |https://microsoft.com/wdsi[microsoft.com/wdsi]
+|===
+
+=== Portals for other workloads
+
+While these portals are not specifically for managing security, they
+support various workloads and tasks that can impact your security. Visit
+these portals to manage identities, permissions, device settings, and
+data handling policies.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Portal name |Description |Link
+|Azure portal |View and manage all your
+link:/azure/azure-resource-manager/management/overview[Azure resources]
+|https://portal.azure.com/[portal.azure.com]
+
+|Azure Active Directory portal |View and manage
+link:/azure/active-directory/fundamentals/active-directory-whatis[Azure
+Active Directory] |https://aad.portal.azure.com/[aad.portal.azure.com]
+
+|Microsoft Purview compliance portal |Manage data handling policies and
+ensure link:/compliance/regulatory/offering-home[compliance with
+regulations]
+|https://compliance.microsoft.com/[compliance.microsoft.com]
+
+|Microsoft 365 admin center |Configure Microsoft 365 services; manage
+roles, licenses, and track updates to your Microsoft 365 services
+|https://go.microsoft.com/fwlink/p/?linkid=2166757[admin.microsoft.com]
+
+|Microsoft Endpoint Manager admin center |Use
+link:/mem/configmgr/[Microsoft Endpoint Manager] to manage and secure
+devices using combined Intune and Configuration Manager capabilities
+|https://endpoint.microsoft.com/[endpoint.microsoft.com]
+
+|Microsoft Intune portal |Use
+link:/intune/fundamentals/what-is-intune[Microsoft Intune] to deploy
+device policies and monitor devices for compliance
+|https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview[endpoint.microsoft.com]
+|===

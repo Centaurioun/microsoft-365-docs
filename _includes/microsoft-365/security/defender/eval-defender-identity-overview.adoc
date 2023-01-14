@@ -1,0 +1,45 @@
+= 
+dansimp
+
+== Step 2. Evaluate Microsoft Defender for Identity overview
+
+*Applies to:* - Microsoft 365 Defender
+
+____
+[!NOTE] This article is also part of the Microsoft 365 Defender XDR
+solution we talk about in this link:eval-overview.md[Overview].
+____
+
+Before starting the process that enables and pilots Microsoft Defender
+for Identity, if you intend to evaluate _Microsoft 365 Defender as an
+eXtended Detection and Response (XDR) solution_, make sure you’ve
+reviewed the process from the beginning:
+link:eval-overview.md[evaluating Microsoft 365 Defender] including
+link:eval-create-eval-environment.md[created the Microsoft 365 Defender
+evaluation environment].
+
+Use the steps below to enable and pilot Microsoft Defender for Identity.
+
+:::image type=``content''
+source=``../../media/defender/m365-defender-identity-eval-steps.png''
+alt-text=``The steps for adding Microsoft Defender for Identity to the
+Microsoft Defender evaluation environment''
+lightbox=``../../media/defender/m365-defender-identity-eval-steps.png'':::
+
+This table describes the steps in the illustration.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Serial Number |Step |Description
+|1 |link:eval-defender-identity-architecture.md[Review architecture
+requirements and key concepts] |Understand the Defender for Identity
+architecture and be sure your environment meets the architecture
+prerequisites.
+
+|2 |link:eval-defender-identity-enable-eval.md[Enable the evaluation
+environment] |Follow the steps to set up the evaluation environment.
+
+|3 |link:eval-defender-identity-pilot.md[Set up the pilot] |Learn about
+benchmark settings for your identity environment and try out Defender
+for Identity tutorials.
+|===

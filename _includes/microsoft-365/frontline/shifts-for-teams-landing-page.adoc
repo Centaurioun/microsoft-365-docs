@@ -1,0 +1,120 @@
+= 
+LanaChin
+
+== Shifts for frontline workers
+
+Shifts, the schedule management tool in Teams, keeps your frontline
+workforce connected and in sync. It’s built mobile first for fast and
+effective schedule management and communications. With Shifts, frontline
+managers and workers can seamlessly manage schedules and keep in touch.
+
+Managers can create, update, and manage shift schedules for their teams.
+They can assign shifts, add open shifts, and approve schedule requests
+from employees. Employees can view their own and their team’s schedules,
+set their availability, request to swap or offer a shift, request time
+off, and clock in and out.
+
+____
+{empty}[!VIDEO https://www.microsoft.com/videoplayer/embed/RE42FjP]
+____
+
+Use the following resources to help you set up and manage Shifts in your
+organization.
+
+=== Set up and manage Shifts
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|  | 
+|:::image type=``icon''
+source=``/office/media/icons/administrator.png'':::
+|*link:/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage
+Shifts]* Get an overview of how to manage Shifts for your organization.
+Learn how to control access to Shifts, pin Shifts to the Teams app bar
+for easy access, enable shift-based tags, and more.
+
+|:::image type=``icon''
+source=``/office/media/icons/users-people.png'':::
+|*link:schedule-owner-for-shift-management.md[Manage schedule owners for
+shift management]* This feature lets you elevate the permissions of a
+team member to a schedule owner without making the employee a team
+owner.
+
+|:::image type=``icon'' source=``/office/media/icons/help.png'':::
+|*link:/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Shifts
+data FAQ]* Learn where Shifts data is stored and other topics related to
+Shifts data, including retention, retrieval, and encryption.
+|===
+
+=== Shifts connectors
+
+If you’re using a third-party workforce management (WFM) system for
+scheduling, you can integrate directly with Shifts through managed
+Shifts connectors. After you set up a connection, your frontline workers
+can seamlessly view and manage their schedules in your WFM system from
+within Shifts.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|  | 
+|:::image type=``icon''
+source=``/office/media/icons/connector-teams.png'':::
+|*link:shifts-connectors.md[Overview]* Get an overview of Shifts
+connectors and how they work. Learn about the managed connectors that
+are available and the supported WFM systems.
+
+|:::image type=``icon''
+source=``/office/media/icons/connector-teams.png'':::
+|*link:shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder[Teams
+Shifts connector for Blue Yonder]*
+
+|:::image type=``icon''
+source=``/office/media/icons/connector-teams.png'':::
+|*link:shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions[Teams
+Shifts connector for UKG Dimensions]* (preview)
+
+|:::image type=``icon''
+source=``/office/media/icons/connector-teams.png'':::
+|*link:shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams[Reflexis
+Shifts connector for Microsoft Teams]* Learn about integrating Shifts
+with the Reflexis WFM system through the connector.
+|===
+
+=== Shifts extensions
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|  | 
+|:::image type=``icon'' source=``/office/media/icons/api.png'':::
+|*link:/graph/api/resources/shift[Shift Graph APIs]* Shifts Graph APIs
+allow you to integrate Shifts data with external WFM systems. You’ll
+have the flexibility to build custom Shifts experiences in the back end,
+while giving users a rich, front-end experience in Teams.
+
+|:::image type=``icon''
+source=``/office/media/icons/process-flow-teams.png'':::
+|*https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates[Shifts
++ Power Automate]* Shifts + Power Automate lets you take info from
+Shifts and create custom workflows with other apps and perform
+operations at scale. Automate key processes with little to no code. The
+triggers and templates support various scenarios such as enabling
+auto-approvals for shift requests when a manager’s approval isn’t
+needed.
+|===
+
+=== Featured training
+
+[width="99%",cols="20%,16%,16%,16%,16%,16%",options="header",]
+|===
+|  |  |  |  |  | 
+|:::image type=``icon''
+source=``/office/media/icons/get-started-teams.png'':::
+|https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821[Video:
+What is Shifts?] |:::image type=``icon''
+source=``/office/media/icons/calendar.png'':::
+|https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984[Video:
+Create a shifts schedule] |:::image type=``icon''
+source=``/office/media/icons/blocks-teams.png'':::
+|https://support.microsoft.com/office/manage-and-view-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7[Video:
+Manage a Shifts schedule]
+|===

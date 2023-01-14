@@ -1,0 +1,45 @@
+= 
+MSFTTracyP
+
+== Support for validation of DKIM signed messages
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:exchange-online-protection-overview.md[Exchange
+Online Protection] - link:defender-for-office-365.md[Microsoft Defender
+for Office 365 plan 1 and plan 2] -
+link:../defender/microsoft-365-defender.md[Microsoft 365 Defender]
+
+Exchange Online Protection (EOP) and Exchange Online both support
+inbound validation of Domain Keys Identified Mail
+(https://www.rfc-editor.org/rfc/rfc6376.txt[DKIM]) messages.
+
+DKIM validates that an email message wasn’t _spoofed_ by someone else,
+and was sent from the domain it _says_ it came from. It ties an email
+message to the organization that sent it. DKIM verification is used
+automatically for all messages sent with IPv6. Microsoft 365 also
+supports DKIM when mail is sent over IPv4. (For more information about
+IPv6 support, see
+link:support-for-anonymous-inbound-email-messages-over-ipv6.md[Support
+for anonymous inbound email messages over IPv6].)
+
+DKIM validates a digitally signed message that appears in the
+DKIM-Signature header of the message headers. The results of a
+DKIM-Signature validation are stamped in the Authentication-Results
+header. The message header text appears similar to the following (where
+contoso.com is the sender):
+
+`Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
+
+____
+[!NOTE] For more information about the Authentication-Results header,
+see RFC 7001 (https://www.rfc-editor.org/rfc/rfc7001.txt[Message Header
+Field for Indicating Message Authentication Status]. Microsoft’s DKIM
+implementation conforms with this RFC.
+____
+
+Admins can create Exchange
+link:/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules[mail
+flow rules] (also known as transport rules) on the results of DKIM
+validation. These mail flow rules will allow admins to filter or route
+messages as needed.

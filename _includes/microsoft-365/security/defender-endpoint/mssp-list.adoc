@@ -1,0 +1,170 @@
+= 
+mjcaparas
+:keywords: managed security service provider, mssp, configure,
+integration
+
+== Supported managed security service providers
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+The following managed security service providers can be accessed through
+the portal.
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Logo |Partner name |Description
+|image:images/accenture-logo.png[Image of Accenture logo.]
+|https://go.microsoft.com/fwlink/?linkid=2164353[Accenture Managed
+Detection & Response (MDR)] |Manage, maintain, and enhance global
+cybersecurity operations with extended capabilities that detect,
+proactively hunt for and respond to advanced cyber-attacks across both
+IT and OT environments located in the cloud and on-premise.
+
+|image:images/aujas-logo.png[Image of Aujas logo.]
+|https://go.microsoft.com/fwlink/?linkid=2162429[Aujas managed MDE
+Service] |Aujas cybersecurity provides 24*7 managed security services
+across the entire enterprise spectrum, using Microsoft Defender for
+Endpoint through its Cyber Defense Centers.
+
+|image:images/bdo-logo.png[Image of BDO Digital logo.]
+|link:/openspecs/ie_standards/ms-html401/ad459f6f-5219-4f68-829c-a58f7397a11f[BDO
+Digital] |BDO Digital’s Managed Defense uses best practice tools, AI,
+and in-house security experts for 24/7/365 identity protection
+
+|image:images/bluevoyant-logo.png[Image of BlueVoyant logo.]
+|https://go.microsoft.com/fwlink/?linkid=2121401[BlueVoyant] |MDR
+services that deliver comprehensive threat data analytics and advanced
+technology solutions with 24x7 remote monitoring and XDR incident
+remediation in your environment.
+
+|:::image type=``content'' source=``images/bt-logo.png''
+alt-text=``!Image of BT logo.'':::
+|https://www.globalservices.bt.com/en/solutions/solution/endpoint-security-and-protection-solutions[Managed
+Endpoint Microsoft from BT] |We have been defending ourselves for many
+years, this expertise has allowed us to develop unique tradecraft which
+we use to protect Microsoft customers. We’ll provide 24x7x365 monitoring
+of your Microsoft Defender for Endpoint estate in our global security
+operation centers.
+
+|image:images/cloudsecuritycenter-logo.png[Image of Cloud Defender for
+Cloud logo.] |https://go.microsoft.com/fwlink/?linkid=2099315[Cloud
+Defender for Cloud] |InSpark’s Cloud Defender for Cloud is a 24x7
+managed service that delivers protect, detect & respond capabilities
+
+|image:images/cloudsoc-logo.png[Image of Cloud SOC logo.]
+|https://go.microsoft.com/fwlink/?linkid=2104265[Cloud SOC] |Cloud SOC
+provides 24/7 security monitoring services based on Microsoft cloud and
+helps you to continuously improve your security posture
+
+|image:images/csis-logo.png[Image of CSIS Managed Detection & Response
+logo.] |https://go.microsoft.com/fwlink/?linkid=2091005[CSIS Managed
+Detection & Response] |24/7 monitoring and analysis of security alerts
+giving companies actionable insights into what, when and how security
+incidents have taken place
+
+|image:images/cyberproof-logo.png[Image of CyberProof logo.]
+|https://go.microsoft.com/fwlink/?linkid=2163964[CyberProof Managed
+Detection & Response (MDR)] |24x7 managed threat detection and response
+services fully integrated with Microsoft Sentinel and Defender for
+Endpoint.
+
+|image:images/dell-logo.png[Image of Dell Technologies Advanced Threat
+Protection logo.] |https://go.microsoft.com/fwlink/?linkid=2091004[Dell
+Technologies Advanced Threat Protection] |Professional monitoring
+service for malicious behavior and anomalies with 24/7 capability
+
+|:::image type=``content'' source=``images/dxc-logo.png''
+alt-text=``Image of DXC-Managed Endpoint Threat Detection and Response
+logo.'':::. |https://go.microsoft.com/fwlink/?linkid=2090395[DXC-Managed
+Endpoint Threat Detection and Response] |Identify endpoint threats that
+evade traditional security defenses and contain them in hours or
+minutes, not days.
+
+|image:images/esentire-logo.png[Image of eSentire log.]
+|https://go.microsoft.com/fwlink/?linkid=2154970[eSentire Managed
+Detection and Response] |24/7 threat hunting, investigation, and
+complete response with certified MDR expertise across the Microsoft
+Ecosystem, including Microsoft 365 Defender & Sentinel-plus 15-minute
+mean time to contain.
+
+|image:images/expel-logo.png[Image of expel logo.]
+|https://go.microsoft.com/fwlink/?linkid=2162430[Expel Managed detection
+and response for Microsoft Defender for Endpoint] |Expel helps your
+security keep up by detecting security risks in Microsoft Defender for
+Endpoint.
+
+|image:images/mandiant-logo.png[Image of Mandiant logo.]
+|https://go.microsoft.com/fwlink/?linkid=2164352[Mandiant Managed
+Defense (MDR) for Microsoft Defender for Endpoint] |Fortify your
+Defender for Endpoint with 24/7 frontline MDR intelligence and expertise
+from Mandiant.
+
+|image:images/ntt-logo.png[Image of NTT Security logo.]
+|https://go.microsoft.com/fwlink/?linkid=2095320[NTT Security] |NTT’s
+EDR Service provides 24/7 security monitoring & response across your
+endpoint and network
+
+|image:images/onevinn-logo.png[Image of OneVinn logo.]
+|https://go.microsoft.com/fwlink/?linkid=2155203[Onevinn MDR] |24/7
+Managed Detection and Response built on Microsoft 365 Defender and
+Microsoft Sentinel, enriched with Onevinn’s threat intelligence.
+
+|image:images/quorum-logo.png[Image of Quorum Cyber logo.]
+|https://go.microsoft.com/fwlink/?linkid=2155202[Quorum Cyber] |A
+cutting-edge Threat Hunting & Security Engineering service.
+
+|image:images/redcanary-logo.png[Image of Red Canary logo.]
+|https://go.microsoft.com/fwlink/?linkid=2103852[Red Canary] |Red Canary
+is a security operations partner for modern teams, MDR deployed in
+minutes
+
+|image:images/secureworks-logo.png[Image of SecureWorks Managed
+Detection and Response Powered by Red Cloak logo.]
+|https://go.microsoft.com/fwlink/?linkid=2133634[SecureWorks Managed
+Detection and Response Powered by Red Cloak] |Secureworks combines
+threat intelligence and 20+ years of experience into SaaS and managed
+security solutions
+
+|image:images/sepago-logo.png[Image of sepagoSOC logo.]
+|https://go.microsoft.com/fwlink/?linkid=2090491[sepagoSOC] |Ensure
+holistic security through sophisticated automated workflows in your Zero
+Trust environment
+
+|image:images/trustwave-logo.png[Image of Trustwave Threat Detection &
+Response Services logo.]
+|https://go.microsoft.com/fwlink/?linkid=2127542[Trustwave Threat
+Detection & Response Services] |Threat Detection and Response services
+for Azure using integrations with Sentinel and Defender for Endpoint
+
+|image:images/white-shark.png[Image of White Shark Managed Security
+Services.] |https://go.microsoft.com/fwlink/?linkid=2154210[White Shark
+Managed Security Services] |True expert approach to cyber security with
+transparent pricing on every platform, mobile included.
+
+|image:images/wortell-logo.png[Image of Wortell’s cloud SOC logo.]
+|https://go.microsoft.com/fwlink/?linkid=2108415[Wortell’s cloud SOC]
+|24x7 managed Defender for Endpoint service for monitoring & response
+
+|image:images/ztap-logo.png[Image of Zero Trust Analytics Platform
+(ZTAP) logo.] |https://go.microsoft.com/fwlink/?linkid=2090971[Zero
+Trust Analytics Platform (ZTAP)] |Reduce your alerts by 99% and access a
+full range of security capabilities from mobile devices
+|===
+
+=== Related topics
+
+* link:configure-mssp-support.md[Configure managed service security
+provider integration]

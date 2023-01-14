@@ -1,0 +1,67 @@
+= 
+MSFTTracyP
+
+== Welcome to the Microsoft Defender for Office 365 step-by-step guides
+
+Microsoft Defender for Office 365 is a powerful product with a lot of
+capabilities. Along with that comes a lot of documentation and detail.
+*But sometimes you have to get a task completed _quickly_. That’s when
+you need a step-by-step guide.*
+
+These step-by-step guides help administrators configure and use
+Microsoft Defender for Office 365 by reducing distracting information
+like how a feature might work, and other details not _directly linked to
+completing a process_. The guides maximize on specific steps and clicks
+needed to do a thing, and reduce the time taken for admins to test a
+feature and secure an organization.
+
+*_If you learn Microsoft products best by doing_*, the step-by-step
+guides will jumpstart configuration and testing. They are as useful for
+set up in a _trial subscription_ as they are in _production_.
+
+=== Why use Microsoft Defender for Office 365 step-by-step guides
+
+____
+[!IMPORTANT] Admins need to be on top of prevention, detection,
+investigation and hunting, response and remediation, and user training
+to position their organization securely. The step-by-step guides touch
+on all of these areas so that admins can set up trials, launch quickly
+into production, and configure in minutes. :::image type=``content''
+source=``../../../media/msft-a-graphic-showing-the-steps-to-mastering-microsoft-defender-for-office-365.png''
+alt-text=``This graphic illustrates the areas that admins need to master
+in order to properly secure their organization. The step-by-step guides
+touch on all of these areas, so that admins can set up trials, launch
+quickly, and configure production in minutes.'':::
+____
+
+Beyond links to the documentation, the step-by-step guides don’t concern
+themselves with product details (the docs around Microsoft Defender for
+Office 365 are thorough for when you need them).
+
+Instead, these guides are streamlined for *learning by doing*,
+*testing*, and *running experiments*. They’re ideal for *trial
+subscriptions*, and will allow admins and security operators to *deploy
+the same logic in production*.
+
+=== Examples
+
+* If you’ve just got Microsoft Defender for Office 365, and you want to
+get protected as quickly as possible use
+link:ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md[Preset
+security policies].
+* Take advantage of additional protections designed for
+link:protect-your-c-suite-with-priority-account-protection.md[members of
+your c-suite].
+* How do you link:how-to-run-attack-simulations-for-your-team.md[setup]
+or
+link:how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md[automate]
+a new simulation quickly and easily?
+* link:connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md[Connect
+Microsoft Defender for Office 365 to Sentinel].
+
+Documentation in this format can be found under the step-by-step section
+in Office 365 Security. Visit the docs by using
+https://aka.ms/step-by-step[aka.ms/step-by-step].
+
+*If there’s a topic, task or config you’d like to see in this format,
+please let us know by leaving feedback. Thank you!*

@@ -1,0 +1,84 @@
+= 
+MSFTTracyP
+
+== How to handle malicious emails that are delivered to recipients (False Negatives), using Microsoft Defender for Office 365
+
+Microsoft Defender for Office 365 helps deal with malicious emails
+(False Negative) that are delivered to recipients and that put your
+organizational productivity at risk. Defender for Office 365 can help
+you understand why emails are getting delivered, how to resolve the
+situation quickly, and how to prevent similar situations from happening
+in the future.
+
+=== What you’ll need
+
+* Microsoft Defender for Office 365 Plan 1 and 2 (included as part of
+E5). Exchange Online customers can also leverage this.
+* Sufficient permissions (Security Administrator role).
+* 5-10 minutes to perform the steps below.
+
+=== Handling malicious emails in the Inbox folder of end users
+
+[arabic]
+. Ask end users to report the email as *phishing* or *junk* using
+Microsoft Message Add-in or Microsoft Phish add-in or the Outlook
+buttons.
+. End users can also add the sender to the
+https://support.microsoft.com/office/block-a-mail-sender-b29fd867-cac9-40d8-aed1-659e06a706e4#:~:text=1%20On%20the%20Home%20tab%2C%20in%20the%20Delete,4%20Click%20OK%20in%20both%20open%20dialog%20boxes..[block
+senders list] in Outlook to prevent emails from this sender from being
+delivered to their inbox.
+. Admins can triage the user reported messages from
+link:/microsoft-365/security/office-365-security/admin-submission#view-user-reported-messages-to-microsoft[User
+reported tab on the Submissions page].
+. From those reported messages, admins can *submit to*
+link:/microsoft-365/security/office-365-security/admin-submission#notify-users-from-within-the-portal[Microsoft
+for analysis] to learn why that email was allowed in the first place.
+. If needed, while submitting to Microsoft for analysis, admins can
+create a
+link:/microsoft-365/security/office-365-security/tenant-allow-block-list-email-spoof-configure[block
+for the sender] to mitigate the problem.
+. Once the results for submissions are available, read the verdict to
+understand why emails were allowed, and how your tenant setup could be
+improved to prevent similar situations from happening in the future.
+
+=== Handling malicious emails in junk folder of end users
+
+[arabic]
+. Ask end users to report the email as *phishing* using Microsoft
+Message Add-in, or Microsoft Phish Add-in, or the Outlook buttons.
+. Admins can triage the user reported messages from the
+link:/microsoft-365/security/office-365-security/admin-submission#view-user-reported-messages-to-microsoft[User
+reported tab on the Submissions page].
+. From those reported messages admins can *submit to*
+link:/microsoft-365/security/office-365-security/admin-submission#notify-users-from-within-the-portal[Microsoft
+for analysis] and learn why that email was allowed in the first place.
+. If needed, while submitting to Microsoft for analysis, admins can
+create a
+link:/microsoft-365/security/office-365-security/tenant-allow-block-list-email-spoof-configure[block
+for the sender] to mitigate the problem.
+. Once the results for submissions are available, read the verdict to
+understand why emails were allowed, and how your tenant setup could be
+improved to prevent similar situations from happening in the future.
+
+=== Handling malicious emails landing in the quarantine folder of end users
+
+[arabic]
+. End users receive an
+link:../quarantine-quarantine-notifications.md[email digest] about
+quarantined messages as per the settings enabled by admins.
+. End users can preview the messages in quarantine, block the sender,
+and submit those messages to Microsoft for analysis.
+
+=== Handling malicious emails landing in the quarantine folder of admins
+
+[arabic]
+. Admins can view the quarantined emails (including the ones asking
+permission to request release) from the
+link:/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files[review
+page].
+. Admins can submit any malicious, or suspicious messages to Microsoft
+for analysis, and create a block to mitigate the situation while waiting
+for verdict.
+. Once the results for submissions are available, read the verdict to
+learn why the emails were allowed, and how your tenant setup could be
+improved to prevent similar situations from happening in the future.

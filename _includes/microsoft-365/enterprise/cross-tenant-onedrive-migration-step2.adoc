@@ -1,0 +1,132 @@
+= 
+JoanneHendrickson
+
+== Step 2: Establishing trust between the source and target tenants
+
+This is Step 2 in a solution designed to complete a Cross-tenant
+OneDrive migration. To learn more, see
+link:cross-tenant-onedrive-migration.md[Cross-tenant OneDrive migration
+overview].
+
+* Step 1: link:cross-tenant-onedrive-migration-step1.md[Connect to the
+source and the target tenants]
+* *Step 2: link:cross-tenant-onedrive-migration-step2.md[Establish trust
+between the source and the target tenant]*
+* Step 3: link:cross-tenant-onedrive-migration-step3.md[Verify trust has
+been established]
+* Step 4: link:cross-tenant-onedrive-migration-step4.md[Pre-create users
+and groups]
+* Step 5: link:cross-tenant-onedrive-migration-step5.md[Prepare identity
+mapping]
+* Step 6: link:cross-tenant-onedrive-migration-step6.md[Start a
+Cross-tenant OneDrive migration]
+* Step 7: link:cross-tenant-onedrive-migration-step7.md[Post migration
+steps]
+
+After connecting to the source and target tenant, the next step in
+performing a cross-tenant OneDrive migration is establishing trust
+between the tenants.
+
+To establish trust, each SharePoint Online tenant administrator must run
+specific commands on both source and target tenants. Once the trust has
+been requested, the administrator of the target tenant will receive an
+email informing them that another tenant is trying to establish a trust
+relationship.
+
+____
+[!NOTE] The ``trust'' command is specific to SharePoint Online. It only
+grants permission for the SharePoint administrator on the source tenant
+to execute OneDrive Migration operations to the identified target
+tenant.
+
+Granting trust _doesn’t_ give the administrator any visibility,
+permission, or ability to collaborate between the source tenant and the
+target tenant.
+____
+
+____
+[!IMPORTANT] If you are Microsoft 365 Multi-Geo customer, you must
+establish trust between each geography involved in your migration
+project.
+____
+
+=== Before you begin
+
+Before running the trust commands, obtain the cross-tenant host URLs for
+both the source and target tenants. You’ll need these URLs when
+establishing the trust relationship between source-to-target and
+target-to-source.
+
+*To obtain the cross-tenant host URLs:*
+
+On both the source and target tenants, run:
+
+[source,powershell]
+----
+Get-SPOCrossTenantHostURL
+----
+
+_Example:_ Run command on Source tenant:
+
+:::image type=``content''
+source=``../media/cross-tenant-migration/t2t-onedrive-hosturl-source.png''
+alt-text=``example of how to obtain host url for source'':::
+
+_Example:_ Run command on target tenant:
+
+:::image type=``content''
+source=``../media/cross-tenant-migration/t2t-onedrive-hosturl-target.png''
+alt-text=``example of how to obtain host url for target'':::
+
+=== Run the trust commands
+
+These commands send a request to the tenant with whom you want to
+establish trust.
+
+[arabic]
+. On the source tenant, run this command to send a trust request to the
+target tenant:
++
+[source,powershell]
+----
+Set-SPOCrossTenantRelationship -Scenario MnA -PartnerRole Target -PartnerCrossTenantHostUrl <TARGETCrossTenantHostUrl>
+----
+. On the target tenant, run this command to send a trust request to the
+source tenant:
++
+[source,powershell]
+----
+Set-SPOCrossTenantRelationship -Scenario MnA -PartnerRole Source -PartnerCrossTenantHostUrl <SOURCECrossTenantHostUrl>
+----
+
+==== Parameter definitions
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Parameter |Definition
+|PartnerRole |Roles of the partner tenant you’re establishing trust
+with. Use _source_ if partner tenant is the source of the OneDrive
+migrations, and _target_ if the partner tenant is the Destination.
+
+|PartnerCrossTenantHostURL |The cross-tenant host URL of the partner
+tenant. The partner tenant can determine this for you by running:
+_Get-SPOCrossTenantHostURL_ on each of the tenants.
+|===
+
+=== Sample trust email
+
+The following in an example of the email that is sent to global admins:
+
+:::image type=``content''
+source=``../media/cross-tenant-migration/t2t-onedrive-trust-email.png''
+alt-text=``example of trust email'':::
+
+*Subject:* SPO Tenant
+[https://a830edad9050849mnaus093022-my.sharepoint.com/] [setuporupdate]
+Organization Relation [Scenario=MnA, Role=Source] with us
+
+*Message:* SPO Tenant
+[https://a830edad9050849mnaus093022-my.sharepoint.com/] [setuporupdate]
+Organization Relation [Scenario=MnA, Role=Source] with us
+
+=== Step 3: link:cross-tenant-onedrive-migration-step3.md[Verify that trust has been established]

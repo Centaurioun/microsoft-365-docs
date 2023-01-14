@@ -1,0 +1,54 @@
+= 
+MSFTTracyP
+
+== Protect your c-suite with priority account protection
+
+Priority account protection helps IT and security teams ensure a high
+quality of service and protection for the critical people within your
+organization. Tagging an account as a priority account will enable the
+additional protection tuned for the mail flow patterns targeting company
+executives, along with extra visibility in reports, alerts, and
+investigations.
+
+=== What you’ll need
+
+* Microsoft Defender for Office 365 Plan 2 (included as part of E5
+plans)
+* Sufficient permissions (Security Administrator role)
+* 5 minutes to perform the steps below.
+
+=== Tag Priority users
+
+[arabic]
+. Identify the users, groups, or domains you would like to tag as
+priority accounts.
+. Login to the https://security.microsoft.com/[Microsoft Security
+Portal] and navigate to Settings on the left navigation bar.
+. Select Email & collaboration on the page that loads and then click
+User tags
+. On the User tags page, select the Priority account tag and press Edit
+tag
+. On the flyout that appears, select Add members
+. Search for the users you wish to tag, select one or more users and
+press Add
+. Review the members you have selected and press Next
+. Press Submit to confirm the changes
+
+To learn what priority account tags are see
+link:../../../admin/setup/priority-accounts.md[Manage and monitor
+priority accounts - Microsoft 365 admin | Microsoft Docs].
+
+=== Next Steps
+
+link:../../office-365-security/priority-accounts-turn-on-priority-account-protection.md[Review
+the differentiated protection for users tagged as priority accounts].
+
+=== PowerShell configuration
+
+If you want to achieve these steps via
+link:/powershell/exchange/connect-to-exchange-online-powershell[PowerShell],
+you can do this using the following cmdlets: 1. View a list of priority
+accounts: *Get-User -IsVIP | select Identity* 1. Add user to list of
+priority accounts: *Set-User
+-VIP:latexmath:[$true -Identity \<Identity\>** 1. Remove user from list of priority accounts: **Set-User -VIP:$]false
+-Identity <Identity>*

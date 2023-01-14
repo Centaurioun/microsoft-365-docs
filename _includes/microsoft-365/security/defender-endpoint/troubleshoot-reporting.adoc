@@ -1,0 +1,157 @@
+= 
+denisebmsft
+:keywords: troubleshoot, error, fix, update compliance, oms, monitor,
+report, Microsoft Defender Antivirus
+
+== Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] - Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+____
+[!IMPORTANT] On March 31, 2020, the Microsoft Defender Antivirus
+reporting feature of Update Compliance will be removed. You can continue
+to define and review security compliance policies using
+https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager[Microsoft
+Endpoint Manager], which allows finer control over security features and
+updates.
+____
+
+You can use Microsoft Defender Antivirus with Update Compliance. You’ll
+see status for E3, B, F1, VL, and Pro licenses. However, for E5
+licenses, you need to use the
+link:/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints[Microsoft
+Defender for Endpoint portal]. To learn more about licensing options,
+see
+https://www.microsoft.com/licensing/product-licensing/windows10.aspx[Windows
+10 product licensing options].
+
+When you use
+link:/windows/deployment/update/update-compliance-using#wdav-assessment[Windows
+Analytics Update Compliance to obtain reporting into the protection
+status of devices or endpoints] in your network that are using Microsoft
+Defender Antivirus, you might encounter problems or issues.
+
+Typically, the most common indicators of a problem are:
+
+* You only see a small number or subset of all the devices you were
+expecting to see
+* You do not see any devices at all
+* The reports and information you do see is outdated (older than a few
+days)
+
+For common error codes and event IDs related to the Microsoft Defender
+Antivirus service that are not related to Update Compliance, see
+link:troubleshoot-microsoft-defender-antivirus.md[Microsoft Defender
+Antivirus events].
+
+There are three steps to troubleshooting these problems:
+
+[arabic]
+. Confirm that you have met all prerequisites
+. Check your connectivity to the Windows Defender cloud-based service
+. Submit support logs
+
+____
+[!IMPORTANT] It typically takes 3 days for devices to start appearing in
+Update Compliance.
+____
+
+=== Confirm prerequisites
+
+In order for devices to properly show up in Update Compliance, you have
+to meet certain prerequisites for both the Update Compliance service and
+for Microsoft Defender Antivirus:
+
+____
+{empty}[!div class=``checklist'']
+
+* Endpoints are using Microsoft Defender Antivirus as the sole antivirus
+protection app. link:microsoft-defender-antivirus-compatibility.md[Using
+any other antivirus app will cause Microsoft Defender Antivirus to
+disable itself] and the endpoint will not be reported in Update
+Compliance.
+* link:enable-cloud-protection-microsoft-defender-antivirus.md[Cloud-delivered
+protection is enabled].
+* Endpoints can
+link:configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud[connect
+to the Microsoft Defender Antivirus cloud]
+* If the endpoint is running Windows 10 version 1607 or earlier,
+link:/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level[Windows
+10 diagnostic data must be set to the Enhanced level].
+* It has been 3 days since all requirements have been met
+____
+
+``You can use Microsoft Defender Antivirus with Update Compliance.
+You’ll see status for E3, B, F1, VL, and Pro licenses. However, for E5
+licenses, you need to use the Microsoft Defender for Endpoint portal
+(/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+To learn more about licensing options, see Windows 10 product licensing
+options''
+
+If the above prerequisites have all been met, you might need to proceed
+to the next step to collect diagnostic information and send it to us.
+
+____
+{empty}[!div class=``nextstepaction'']
+link:collect-diagnostic-data.md[Collect diagnostic data for Update
+Compliance troubleshooting]
+____
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____
+
+____
+[!TIP] *Performance tip* Due to a variety of factors (examples listed
+below) Microsoft Defender Antivirus, like other antivirus software, can
+cause performance issues on endpoint devices. In some cases, you might
+need to tune the performance of Microsoft Defender Antivirus to
+alleviate those performance issues. Microsoft’s *Performance analyzer*
+is a PowerShell command-line tool that helps determine which files, file
+paths, processes, and file extensions might be causing performance
+issues; some examples are:
+
+* Top paths that impact scan time
+* Top files that impact scan time
+* Top processes that impact scan time
+* Top file extensions that impact scan time
+* Combinations – for example:
+** top files per extension
+** top paths per extension
+** top processes per path
+** top scans per file
+** top scans per file per process
+
+You can use the information gathered using Performance analyzer to
+better assess performance issues and apply remediation actions. See:
+link:tune-performance-defender-antivirus.md[Performance analyzer for
+Microsoft Defender Antivirus].
+____
+
+=== Related topics
+
+* link:microsoft-defender-antivirus-in-windows-10.md[Microsoft Defender
+Antivirus in Windows 10]
+* link:deploy-manage-report-microsoft-defender-antivirus.md[Deploy
+Microsoft Defender Antivirus]

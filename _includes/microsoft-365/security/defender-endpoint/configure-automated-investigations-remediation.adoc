@@ -1,0 +1,91 @@
+= 
+dansimp
+:keywords: configure, setup, automated, investigation, detection,
+alerts, remediation, response
+
+== Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+- https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2] -
+link:../defender-business/mdb-overview.md[Microsoft Defender for
+Business]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink[Sign
+up for a free trial.]
+____
+
+If your organization is using
+link:/windows/security/threat-protection/[Defender for Endpoint] (or
+link:../defender-business/mdb-overview.md[Defender for Business]),
+link:/microsoft-365/security/defender-endpoint/automated-investigations[automated
+investigation and remediation capabilities] can save your security
+operations team time and effort. As outlined in
+https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946[this
+blog post], these capabilities mimic the ideal steps that a security
+analyst takes to investigate and remediate threats.
+link:/microsoft-365/security/defender-endpoint/automated-investigations[Learn
+more about automated investigation and remediation].
+
+To configure automated investigation and remediation:
+
+[arabic]
+. link:#turn-on-automated-investigation-and-remediation[Turn on the
+features]; and
+. link:#set-up-device-groups[Set up device groups].
+
+____
+[!NOTE] - Device group creation is supported in Defender for Endpoint
+Plan 1 and Plan 2.
+____
+
+=== Turn on automated investigation and remediation
+
+[arabic]
+. As a global administrator or security administrator, go to the
+Microsoft 365 Defender portal (https://security.microsoft.com) and sign
+in.
+. In the navigation pane, choose *Settings*.
+. Select *Endpoints*, then select *Advanced features*.
+. Turn on both *Automated Investigation* and *Automatically resolve
+alerts*.
+
+=== Set up device groups
+
+____
+[!NOTE] This procedure does not apply to Defender for Business.
+____
+
+[arabic]
+. In the Microsoft 365 Defender portal (https://security.microsoft.com),
+on the *Settings* page, under *Permissions*, select *Device groups*.
+. Select *+ Add device group*.
+. Create at least one device group, as follows:
+* Specify a name and description for the device group.
+* In the *Automation level list*, select a level, such as *Full -
+remediate threats automatically*. The automation level determines
+whether remediation actions are taken automatically, or only upon
+approval. To learn more, see link:automation-levels.md[Automation levels
+in automated investigation and remediation].
+* In the *Members* section, use one or more conditions to identify and
+include devices.
+* On the *User access* tab, select the
+link:/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context[Azure
+Active Directory groups] who should have access to the device group
+you’re creating.
+. Select *Done* when you’re finished setting up your device group.
+
+=== Next steps
+
+* link:/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center[Visit
+the Action Center to view pending and completed remediation actions]
+* link:/microsoft-365/security/defender-endpoint/manage-auto-investigation[Review
+and approve pending actions]
+
+=== See also
+
+* link:defender-endpoint-false-positives-negatives.md[Address false
+positives/negatives in Microsoft Defender for Endpoint]

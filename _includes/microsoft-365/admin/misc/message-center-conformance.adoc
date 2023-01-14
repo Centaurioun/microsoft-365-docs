@@ -1,0 +1,89 @@
+= 
+kwekua
+
+== Conformance metadata for Message Center posts
+
+____
+[!IMPORTANT] This private document is only for Change Management:
+Conformance metadata users. Don’t share this document beyond those who
+are directly involved in the pilot.
+____
+
+When planning for new features or service deployments, you would like to
+understand and assess the changes for conformance to your industry,
+region and country. We’ve heard your feedback when there’s insufficient
+conformance information about a new or changing feature, you have to
+conduct your own research about the feature or reach out to the
+Compliance Program with questions.
+
+In this pilot program, we want to proactively provide metadata for new
+and updated Microsoft 365 features and services. Our goal is to help you
+efficiently assess your compliance requirements and help you with
+adoption and change management decisions.
+
+For example, if for a feature the metadata has the following values,
+feature adoption decision should be quick.
+
+* Customer data is stored? *No*
+* Change to customer data storage? *No*
+* Changes to existing data flow? *No*
+* Feature integrates with third party services? *No*
+
+____
+[!NOTE] The above list is slightly different from what you previously
+saw in the pilot conformance posts. We’ve updated the list based on
+feedback we’ve received from pilot customers.
+____
+
+For features where the metadata is different from the list above, the
+Message center post may provide you with documentation.
+
+=== Understanding conformance metadata
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|*Metadata name* |*Values* |*Definition and questions asked* |*Example:
+Yes*
+|*Customer data is stored* |Yes/No |Does this change store or process
+any net new data (classified as customer or personal data) which wasn’t
+previously stored or processed by the service/previous version of this
+feature? |Teams Meetings recordings capturing and collecting customer
+data and is now stored in.
+
+|*Change to customer data storage* |Yes/No |Does this change use a new
+or different service to store data |Teams Meetings Recordings
+capturing/collecting customer data/content and is now stored in.
+
+|*Changes to existing data flow* |Yes/No |Does this feature process data
+via a new or different processing pipeline? Or Is the feature just
+extending an existing processing pipeline to newer data or exposing data
+already exposed on one surface to another surface? (*Answer = No*).
+|When Bing for Business started using text from Word to send to Bing
+then bring data back to Word, the flow of data changed.
+
+|*Feature integrates with third party services* |Yes/No |Does this
+feature utilize a net new service or app (first party or third party)
+that customer data could potentially be stored or processed outside of
+Microsoft 365? |Bing for Business may receive customer content in the
+form of ``search'' data to present a user with potentially relevant
+information/content.
+
+| | | |
+|===
+
+=== Join the pilot program
+
+You can join by completing this
+https://go.microsoft.com/fwlink/p/?linkid=2211581[questionnaire].
+
+When a Message center post is delivered, you’ll receive an additional
+Message Center post that says: *Additional Conformance Information for
+MC######*. This post contains more conformance metadata. You can provide
+feedback directly on the extra post or you can email:
+MCSHDPMS@Microsoft.com. You can also send feedback on the
+https://go.microsoft.com/fwlink/p/?linkid=2211676[Teams channel].
+
+____
+[!NOTE] We’ll start with features from Microsoft Teams, OneDrive for
+Business and SharePoint Online.
+____

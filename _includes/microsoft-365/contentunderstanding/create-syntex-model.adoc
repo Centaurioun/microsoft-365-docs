@@ -1,0 +1,254 @@
+= 
+chuckedmonson
+
+== Create an enterprise model in Microsoft Syntex
+
+*Applies to:*   ✓ All custom models   |   ✓ All prebuilt models
+
+An enterprise model is created and trained in the
+link:create-a-content-center.md[content center], and can be discovered
+by others to use. Whether you want to create a custom model or use a
+prebuilt model, you can do so from any of these places in Microsoft
+Syntex:
+
+* From the *Models* library
+* From the link:create-a-content-center.md[content center] home page
+* From any document library in a site where Syntex has been activated
+
+For this article, we start in the *Models* library. For information
+about the different model types, see
+link:model-types-overview.md[Overview of model types in Syntex].
+
+If you want to create a local model, see
+link:create-local-model.md[Create a model on a local SharePoint site].
+
+=== Create a model
+
+From the *Models* library, select *Create a model*.
+
+image::../media/content-understanding/create-a-model-from-the-models-page.png[Screenshot
+of the Models library showing the Create a model button.]
+
+On the *Options for model creation* page, there are two sections:
+
+* link:#train-a-custom-model[*Train a custom model*]
+* link:#set-up-a-prebuilt-model[*Set up a prebuilt model*]
+
+image::../media/content-understanding/options-for-model-creation.png[Screenshot
+of the Options for model creation page showing the custom models and
+prebuilt models.]
+
+____
+[!NOTE] All model options might not be available. These options are
+configured by your Microsoft 365 admin.
+____
+
+=== Train a custom model
+
+The *Train a custom model* section shows the training method for the
+type of custom models you want to create.
+
+image::../media/content-understanding/build-a-custom-model-section.png[Screenshot
+of the Train a custom model section on the Options for model creation
+page.]
+
+* *Teaching method* – Creates an
+link:document-understanding-overview.md[unstructured document processing
+model].
+* *Freeform selection method* – Creates a
+link:freeform-document-processing-overview.md[freeform document
+processing model].
+* *Layout method* – Creates a
+link:form-processing-overview.md[structured document processing model].
+
+Select one of the following tabs to continue with the custom model you
+want to use.
+
+== link:#tab/teaching-method[Teaching method]
+
+Use the *Teaching method* to create an
+link:document-understanding-overview.md[unstructured document processing
+model].
+
+[arabic]
+. Select *Teaching method*.
+. On the *Teaching method: Details* page, you’ll find more information
+about the model. If you want to proceed with creating the model, select
+*Next*.
+. On the right panel of the *Create a model with the teaching method*
+page, enter the following information.
+* *Model name* – Enter the name of the model, for example _Service
+agreements_.
+* *Description* – Enter information about how this model will be used.
++
+image::../media/content-understanding/create-a-model-panel.png[Screenshot
+of the right panel of the Create a model with the teaching method page.]
+. Under *Advanced settings*:
+* In the *Content type* section, choose whether to create a new content
+type or to use an existing one.
+* In the *Compliance* section, under *Retention labels*, select the
+retention label you want to add. Under *Sensitivity labels*, select the
+sensitivity label you want to add. If a compliance label has been
+already applied to the library where the file is stored, it will be
+shown.
+. When you’re ready to create the model, select *Create*.
+. You’re now ready to link:create-a-classifier.md[train the model].
+
+== link:#tab/freeform-selection-method[Freeform selection method]
+
+Use the *Freeform selection method* to create a
+link:freeform-document-processing-overview.md[freeform document
+processing model].
+
+[arabic]
+. Select *Freeform selection method*.
+. On the *Freeform selection method: Details* page, you’ll find more
+information about the model. If you want to proceed with creating the
+model, select *Next*.
+. On the right panel of the *Create a model with the freeform selection
+method* page, enter the following information.
+* *Model name* – Enter the name of the model, for example _Service
+agreements_.
+* *Description* – Enter information about how this model will be used.
++
+image::../media/content-understanding/create-a-model-panel.png[Screenshot
+of the right panel of the Create a model with the Freeform selection
+method page.]
+. Under *Advanced settings*:
+* In the *Content type* section, choose whether to create a new content
+type or to use an existing one.
+* In the *Compliance* section, under *Retention labels*, select the
+retention label you want to add. If a compliance label has been already
+applied to the library where the file is stored, it will be shown.
++
+____
+[!NOTE] Sensitivity labels are not available for *Freeform selection
+method* (freeform document processing models) at this time.
+____
+. When you’re ready to create the model, select *Create*.
+. You’re now ready to
+link:train-freeform-document-processing-model.md[train the model].
++
+____
+[!NOTE] When published, this model type is available for reuse by others
+who do not own the model. Currently, this model can be edited and shared
+for editing only by the model owner.
+____
+
+== link:#tab/layout-method[Layout method]
+
+Use the *Layout method* to create a
+link:form-processing-overview.md[structured document processing model].
+
+[arabic]
+. Select *Layout method*.
+. On the *Layout method: Details* page, you’ll find more information
+about the model. If you want to proceed with creating the model, select
+*Next*.
+. On the right panel of the *Create a model with the layout method*
+page, enter the following information.
+* *Model name* – Enter the name of the model, for example _Service
+agreements_.
+* *Description* – Enter information about how this model will be used.
++
+image::../media/content-understanding/create-a-model-panel.png[Screenshot
+of the right panel of the Create a model with the layout method page.]
+. Under *Advanced settings*:
+* In the *Content type* section, choose whether to create a new content
+type or to use an existing one.
+* In the *Compliance* section, under *Retention labels*, select the
+retention label you want to add. If a compliance label has been already
+applied to the library where the file is stored, it will be shown.
++
+____
+[!NOTE] Sensitivity labels are not available for *Layout method*
+(structured document processing models) at this time.
+____
+. When you’re ready to create the model, select *Create*.
+. You’re now ready to link:create-a-form-processing-model.md[train the
+model].
++
+____
+[!NOTE] When published, this model type is available for reuse by others
+who do not own the model. Currently, this model can be edited and shared
+for editing only by the model owner.
+____
+
+'''''
+
+=== Set up a prebuilt model
+
+The *Set up a prebuilt model* section shows the types of prebuilt models
+you can use.
+
+image::../media/content-understanding/use-a-trained-model-section.png[Screenshot
+of the Use a prebuilt model section on the Set up a prebuilt model
+page.]
+
+* *Invoice processing*
+* *Receipt processing*
+
+Select one of the following tabs to continue with the prebuilt model you
+want to use.
+
+== link:#tab/invoice-processing[Invoice processing]
+
+[arabic]
+. Select *Invoice processing*.
+. On the *Invoice processing: Details* page, you’ll find more
+information about the model. If you want to proceed with using the
+model, select *Next*.
+. On the right panel of the *Create an invoice processing model* page,
+enter the following information.
+* *Model name* – Enter the name of the model, for example _Office
+expenses_.
+* *Description* – Enter information about how this model will be used.
++
+image::../media/content-understanding/create-a-model-panel.png[Screenshot
+of the right panel of the Create an invoice processing model page.]
+. Under *Advanced settings*:
+* In the *Content type* section, choose whether to create a new content
+type or to use an existing one.
+* In the *Compliance* section, under *Retention labels*, select the
+retention label you want to add. If a retention label has been already
+applied to the library where the file is stored, it will be selected.
++
+____
+[!NOTE] Sensitivity labels are not available for prebuilt models at this
+time.
+____
+. When you’re ready to create the model, select *Create*.
+. You’re now ready to link:prebuilt-model-invoice.md[complete setting up
+the model].
+
+== link:#tab/receipt-processing[Receipt processing]
+
+[arabic]
+. Select *Receipt processing*.
+. On the *Receipt processing: Details* page, you’ll find more
+information about the model. If you want to proceed with using the
+model, select *Next*.
+. On the right panel of the *Create a receipt processing model* page,
+enter the following information.
+* *Model name* – Enter the name of the model, for example _Office
+expenses_.
+* *Description* – Enter information about how this model will be used.
++
+image::../media/content-understanding/create-a-model-panel.png[Screenshot
+of the right panel of the Create a model to process receipts page.]
+. Under *Advanced settings*:
+* In the *Content type* section, choose whether to create a new content
+type or to use an existing one.
+* In the *Compliance* section, under *Retention labels*, select the
+retention label you want to add. If a retention label has been already
+applied to the library where the file is stored, it will be selected.
++
+____
+[!NOTE] Sensitivity labels are not available for prebuilt models at this
+time.
+____
+. When you’re ready to create the model, select *Create*.
+. You’re now ready to link:prebuilt-model-receipt.md[complete setting up
+the model].
+
+'''''

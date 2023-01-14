@@ -1,0 +1,105 @@
+= 
+mjcaparas
+:keywords: raw data export, Streaming API, API, Event hubs, Azure
+storage, storage account, Hunting, raw data sharing
+
+== Supported Microsoft 365 Defender streaming event types in event streaming API
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+[!NOTE] *Try our new APIs using MS Graph security API*. Find out more
+at: link:/graph/api/resources/security-api-overview[Use the Microsoft
+Graph security API - Microsoft Graph beta | Microsoft Learn].
+____
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+The Event Streaming API is constantly being expanded to support more
+event types. Learn which Hunting tables are generally available,
+currently in public preview, or not yet supported.
+
+*New - Identity and CloudApp event types/tables are now GA*.
+
+=== Hunting tables support status in Event Streaming API
+
+The following table only includes the list of the tables supported in
+the streaming API, and is not inclusive of all AH schema. For a full
+list of the API see,
+link:advanced-hunting-schema-tables.md#learn-the-schema-tables[Learn the
+schema tables].
+
+[width="100%",cols="20%,20%,20%,20%,20%",options="header",]
+|===
+|Table name |Status(Commercial) |GCC |GCC High |DoD
+|*link:advanced-hunting-alertevidence-table.md[AlertEvidence]* |GA |GA
+|GA |GA
+
+|*link:advanced-hunting-alertinfo-table.md[AlertInfo]* |GA |GA |GA |GA
+
+|*link:advanced-hunting-deviceevents-table.md[DeviceEvents]* |GA |GA |GA
+|GA
+
+|*link:advanced-hunting-DeviceFileCertificateInfo-table.md[DeviceFileCertificateInfo]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-devicefileevents-table.md[DeviceFileEvents]* |GA
+|GA |GA |GA
+
+|*link:advanced-hunting-deviceimageloadevents-table.md[DeviceImageLoadEvents]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-deviceinfo-table.md[DeviceInfo]* |GA |GA |GA |GA
+
+|*link:advanced-hunting-devicelogonevents-table.md[DeviceLogonEvents]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-devicenetworkevents-table.md[DeviceNetworkEvents]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-devicenetworkinfo-table.md[DeviceNetworkInfo]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-deviceprocessevents-table.md[DeviceProcessEvents]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-deviceregistryevents-table.md[DeviceRegistryEvents]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-emailattachmentinfo-table.md[EmailAttachmentInfo]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-emailevents-table.md[EmailEvents]* |GA |GA |GA
+|GA
+
+|*link:advanced-hunting-emailpostdeliveryevents-table.md[EmailPostDeliveryEvents]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-emailurlinfo-table.md[EmailUrlInfo]* |GA |GA |GA
+|GA
+
+|*link:advanced-hunting-identitylogonevents-table.md[IdentityLogonEvents]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-identityqueryevents-table.md[IdentityQueryEvents]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-identitydirectoryevents-table.md[IdentityDirectoryEvents]*
+|GA |GA |GA |GA
+
+|*link:advanced-hunting-cloudappevents-table.md[CloudAppEvents]* |GA |GA
+|GA |GA
+
+|*link:advanced-hunting-urlclickevents-table.md[UrlClickEvents]* |GA |GA
+|GA |GA
+|===
+
+=== Related topics
+
+link:/graph/api/resources/security-api-overview[Use the Microsoft Graph
+security API - Microsoft Graph beta | Microsoft Learn]

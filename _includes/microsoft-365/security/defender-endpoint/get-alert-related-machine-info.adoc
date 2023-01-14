@@ -1,0 +1,152 @@
+= 
+mjcaparas
+:keywords: apis, graph api, supported apis, get alert information, alert
+information, related device
+
+== Get alert related machine information API
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== API description
+
+Retrieves link:machine.md[Device] related to a specific alert.
+
+=== Limitations
+
+[arabic]
+. You can query on alerts last updated according to your configured
+retention period.
+. Rate limitations for this API are 100 calls per minute and 1500 calls
+per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API. To learn
+more, including how to choose permissions, see link:apis-intro.md[Use
+Microsoft Defender for Endpoint APIs]
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Permission type |Permission |Permission display name
+|Application |Machine.Read.All |`Read all machine information'
+
+|Application |Machine.ReadWrite.All |`Read and write all machine
+information'
+
+|Delegated (work or school account) |Machine.Read |`Read machine
+information'
+
+|Delegated (work or school account) |Machine.ReadWrite |`Read and write
+machine information'
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* The user needs to have at least the following role permission: `View
+Data' (See link:user-roles.md[Create and manage roles] for more
+information)
+* The user needs to have access to the device associated with the alert,
+based on device group settings (See link:machine-groups.md[Create and
+manage device groups] for more information)
+
+Device group creation is supported in Defender for Endpoint Plan 1 and
+Plan 2.
+____
+
+=== HTTP request
+
+[source,http]
+----
+GET /api/alerts/{id}/machine
+----
+
+=== Request headers
+
+[cols="<,<,<",options="header",]
+|===
+|Name |Type |Description
+|Authorization |String |Bearer \{token}. *Required*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful and alert and device exist - 200 OK. If alert not found or
+device not found - 404 Not Found.
+
+=== Example
+
+==== Request example
+
+Here is an example of the request.
+
+[source,http]
+----
+GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/machine
+----
+
+==== Response example
+
+Here is an example of the response.
+
+[source,json]
+----
+{
+    "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+    "computerDnsName": "mymachine1.contoso.com",
+    "firstSeen": "2018-08-02T14:55:03.7791856Z",
+    "lastSeen": "2021-01-25T07:27:36.052313Z",
+    "osPlatform": "Windows10" "Windows11", 
+    "osProcessor": "x64",
+    "version": "1901",
+    "lastIpAddress": "10.166.113.46",
+    "lastExternalIpAddress": "167.220.203.175",
+    "osBuild": 19042,
+    "healthStatus": "Active",
+    "deviceValue": "Normal",
+    "rbacGroupName": "The-A-Team",
+    "riskScore": "Low",
+    "exposureLevel": "Low",
+    "aadDeviceId": "fd2e4d29-7072-4195-aaa5-1af139b78028",
+    "machineTags": [
+        "Tag1",
+        "Tag2"
+    ],
+    "ipAddresses": [
+        {
+            "ipAddress": "10.166.113.47",
+            "macAddress": "8CEC4B897E73",
+            "operationalStatus": "Up"
+        },
+        {
+            "ipAddress": "2a01:110:68:4:59e4:3916:3b3e:4f96",
+            "macAddress": "8CEC4B897E73",
+            "operationalStatus": "Up"
+        }
+    ]
+}
+----

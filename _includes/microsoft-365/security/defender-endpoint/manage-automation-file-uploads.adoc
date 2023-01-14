@@ -1,0 +1,53 @@
+= 
+mjcaparas
+:keywords: automation, file, uploads, content, analysis, file,
+extension, email, attachment
+
+== Manage automation file uploads
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationefileuploads-abovefoldlink[Sign
+up for a free trial.]
+____
+
+Enable the content analysis capability so that certain files and email
+attachments can automatically be uploaded to the cloud for additional
+inspection in Automated investigation.
+
+Identify the files and email attachments by specifying the file
+extension names and email attachment extension names.
+
+For example, if you add _exe_ and _bat_ as file or attachment extension
+names, then all files or attachments with those extensions will
+automatically be sent to the cloud for additional inspection during
+Automated investigation.
+
+=== Add file extension names and attachment extension names.
+
+[arabic]
+. Log in to https://go.microsoft.com/fwlink/p/?linkid=2077139[Microsoft
+365 Defender] using an account with the Security administrator or Global
+administrator role assigned.
+. In the navigation pane, select *Settings* > *Endpoints* > *Rules* >
+*Automation uploads*.
+. Toggle the content analysis setting between *On* and *Off*.
+. Configure the following extension names and separate extension names
+with a comma:
+* *File extension names* - Suspicious files except email attachments
+will be submitted for additional inspection
+
+=== Related topics
+
+* link:manage-automation-folder-exclusions.md[Manage automation folder
+exclusions]

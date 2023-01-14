@@ -1,0 +1,47 @@
+= 
+kelleyvice-msft
+
+== Tune Skype for Business Online performance
+
+This article provides links for system administrators who want to plan
+for network bandwidth requirements, or who need to improve the
+performance of Skype for Business Online.
+
+=== Fine tuning Skype for Business Online performance
+
+* *To learn about the settings and metrics for maintaining call quality
+for your organization*, it’s important to read
+link:/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance[Media
+Quality and Network Connectivity Performance in Skype for Business
+Online]. This article gives you information about the deployment types
+and other information that you will need.
+* *For on-premises and Hybrid deployments*, you can see the bandwidth
+requirements for Skype for Business Server dial-in conferencing, see
+link:/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing[Plan
+for dial-in conferencing in Skype for Business Server 2015].
+
+=== More ways to improve Skype for Business Online performance
+
+* link:/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard[Turning
+on and using Call Quality Dashboard in Skype for Business Online]: The
+Call Quality Dashboard (CQD) allows you to monitor and gain insights
+into the quality of calls made using Skype for Business services.
+
+=== Articles on setting up Skype for Business Online
+
+* link:/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online[Set
+up Skype for Business Online]
+* link:/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing[Set
+up Audio Conferencing for Skype for Business and Microsoft Teams]
+* link:/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans[Set
+up Calling Plans (Skype for Business)]
+* link:/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system[Here’s
+what you get with Phone System in Office 365]
+
+=== See also
+
+link:network-planning-and-performance.md[Network planning and
+performance tuning for Office 365]
+
+link:/skypeforbusiness/optimizing-your-network/optimizing-your-network[Optimizing
+your network for Skype for Business Online]

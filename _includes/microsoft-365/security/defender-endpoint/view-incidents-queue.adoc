@@ -1,0 +1,110 @@
+= 
+dansimp
+:keywords: view, organize, incidents, aggregate, investigations, queue,
+ttp
+
+== View and organize the Microsoft Defender for Endpoint Incidents queue
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink[Sign
+up for a free trial.]
+____
+
+The *Incidents queue* shows a collection of incidents that were flagged
+from devices in your network. It helps you sort through incidents to
+prioritize and create an informed cybersecurity response decision.
+
+By default, the queue displays incidents seen in the last 30 days, with
+the most recent incident showing at the top of the list, helping you see
+the most recent incidents first.
+
+There are several options you can choose from to customize the Incidents
+queue view.
+
+On the top navigation you can: - Customize columns to add or remove
+columns - Modify the number of items to view per page - Select the items
+to show per page - Batch-select the incidents to assign - Navigate
+between pages - Apply filters - Customize and apply date ranges
+
+:::image type=``content'' source=``images/atp-incident-queue.png''
+alt-text=``The Incidents queue''
+lightbox=``images/atp-incident-queue.png'':::
+
+=== Sort and filter the incidents queue
+
+You can apply the following filters to limit the list of incidents and
+get a more focused view.
+
+==== Severity
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Incident severity |Description
+|High (Red) |Threats often associated with advanced persistent threats
+(APT). These incidents indicate a high risk due to the severity of
+damage they can inflict on devices.
+
+|Medium (Orange) |Threats rarely observed in the organization, such as
+anomalous registry change, execution of suspicious files, and observed
+behaviors typical of attack stages.
+
+|Low (Yellow) |Threats associated with prevalent malware and hack-tools
+that do not necessarily indicate an advanced threat targeting the
+organization.
+
+|Informational (Grey) |Informational incidents might not be considered
+harmful to the network but might be good to keep track of.
+|===
+
+=== Assigned to
+
+You can choose to filter the list by selecting assigned to anyone or
+ones that are assigned to you.
+
+==== Category
+
+Incidents are categorized based on the description of the stage by which
+the cybersecurity kill chain is in. This view helps the threat analyst
+to determine priority, urgency, and corresponding response strategy to
+deploy based on context.
+
+==== Status
+
+You can choose to limit the list of incidents shown based on their
+status to see which ones are active or resolved.
+
+==== Data sensitivity
+
+Use this filter to show incidents that contain sensitivity labels.
+
+=== Incident naming
+
+To understand the incident’s scope at a glance, incident names are
+automatically generated based on alert attributes such as the number of
+endpoints affected, users affected, detection sources or categories.
+
+For example: _Multi-stage incident on multiple endpoints reported by
+multiple sources._
+
+____
+[!NOTE] Incidents that existed prior the rollout of automatic incident
+naming will retain their name.
+____
+
+=== See also
+
+* link:/microsoft-365/security/defender-endpoint/view-incidents-queue[Incidents
+queue]
+* link:manage-incidents.md[Manage incidents]
+* link:investigate-incidents.md[Investigate incidents]

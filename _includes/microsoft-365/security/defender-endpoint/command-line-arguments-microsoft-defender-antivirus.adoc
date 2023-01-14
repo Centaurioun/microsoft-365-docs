@@ -1,0 +1,176 @@
+= 
+denisebmsft
+:keywords: run windows defender scan, run antivirus scan from command
+line, run windows defender scan from command line, mpcmdrun, defender
+
+== Configure and manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+You can perform various functions in Microsoft Defender Antivirus using
+the dedicated command-line tool *mpcmdrun.exe*. This utility is useful
+when you want to automate Microsoft Defender Antivirus tasks. You can
+find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run
+it from a command prompt.
+
+____
+[!TIP] You might need to open an administrator-level version of the
+command prompt. When you search for *Command Prompt* on the Start menu,
+choose *Run as administrator*. If you’re running an updated Microsoft
+Defender antimalware platform version, run `MpCmdRun` from the following
+location:
+`C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`.
+For more information about the antimalware platform, see
+link:manage-updates-baselines-microsoft-defender-antivirus.md[Microsoft
+Defender Antivirus updates and baselines].
+____
+
+The MpCmdRun utility uses the following syntax:
+
+[source,console]
+----
+MpCmdRun.exe [command] [-options]
+----
+
+Here’s an example:
+
+[source,console]
+----
+MpCmdRun.exe -Scan -ScanType 2
+----
+
+In our example, the MpCmdRun utility starts a full antivirus scan on the
+device.
+
+=== Commands
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Command |Description
+|`-?` *or* `-h` |Displays all available options for the MpCmdRun tool
+
+|`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`
+|Scans for malicious software. Values for *ScanType* are:
+
+|`-Trace [-Grouping #] [-Level #]` |Starts diagnostic tracing
+
+|`-GetFiles [-SupportLogLocation <path>]` |Collects support information.
+See `link:collect-diagnostic-data.md[collecting diagnostic data]'
+
+|`-GetFilesDiagTrack` |Same as `-GetFiles`, but outputs to temporary
+DiagTrack folder
+
+|`-RemoveDefinitions [-All]` |Restores the installed Security
+intelligence to a previous backup copy or to the original default set
+
+|`-RemoveDefinitions [-DynamicSignatures]` |Removes only the dynamically
+downloaded Security intelligence
+
+|`-RemoveDefinitions [-Engine]` |Restores the previous installed engine
+
+|`-SignatureUpdate [-UNC \|-MMPC]` |Checks for new Security intelligence
+updates
+
+|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`
+|Restores or lists quarantined item(s)
+
+|`-AddDynamicSignature [-Path]` |Loads dynamic Security intelligence
+
+|`-ListAllDynamicSignatures` |Lists the loaded dynamic Security
+intelligence
+
+|`-RemoveDynamicSignature [-SignatureSetID]` |Removes dynamic Security
+intelligence
+
+|`-CheckExclusion -path <path>` |Checks whether a path is excluded
+
+|`-ValidateMapsConnection` |Verifies that your network can communicate
+with the Microsoft Defender Antivirus cloud service. This command will
+only work on Windows 10, version 1703 or higher.
+|===
+
+=== Common errors in running commands via mpcmdrun.exe
+
+The following table lists common errors that can occur while using the
+MpCmdRun tool.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Error message |Possible reason
+|*ValidateMapsConnection failed (800106BA)* or *0x800106BA* |The
+Microsoft Defender Antivirus service is disabled. Enable the service and
+try again. If you need help re-enabling Microsoft Defender Antivirus,
+see
+link:switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints[Reinstall/enable
+Microsoft Defender Antivirus on your endpoints].
+
+|*0x80070667* |You’re running the `-ValidateMapsConnection` command from
+a computer that is Windows 10 version 1607 or older, or Windows Server
+2016 or older. Run the command from a machine that is Windows 10 version
+1703 or newer, or Windows Server 2019 or newer.
+
+|*MpCmdRun is not recognized as an internal or external command,
+operable program, or batch file.* |The tool must be run from either
+`%ProgramFiles%\Windows Defender` or
+`C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0`
+(where `2012.4-0` might differ since platform updates are monthly except
+for March)
+
+|*ValidateMapsConnection failed to establish a connection to MAPS
+(hr=80070005 httpcode=450)* |The command was attempted using
+insufficient privileges. Use the command prompt (cmd.exe) as an
+administrator.
+
+|*ValidateMapsConnection failed to establish a connection to MAPS
+(hr=80070006 httpcode=451)* |The firewall is blocking the connection or
+conducting SSL inspection.
+
+|*ValidateMapsConnection failed to establish a connection to MAPS
+(hr=80004005 httpcode=450)* |Possible network-related issues, like name
+resolution problems
+
+|*ValidateMapsConnection failed to establish a connection to MAPS
+(hr=0x80508015* |The firewall is blocking the connection or conducting
+SSL inspection.
+
+|*ValidateMapsConnection failed to establish a connection to MAPS
+(hr=800722F0D* |The firewall is blocking the connection or conducting
+SSL inspection.
+
+|*ValidateMapsConnection failed to establish a connection to MAPS
+(hr=80072EE7 httpcode=451)* |The firewall is blocking the connection or
+conducting SSL inspection.
+|===
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____
+
+=== See also
+
+* link:tune-performance-defender-antivirus.md[Performance analyzer for
+Microsoft Defender Antivirus]
+* link:configure-microsoft-defender-antivirus-features.md[Configure
+Microsoft Defender Antivirus features]
+* link:configure-network-connections-microsoft-defender-antivirus.md[Configure
+and validate Microsoft Defender Antivirus network connections]
+* link:configuration-management-reference-microsoft-defender-antivirus.md[Reference
+topics for management and configuration tools]

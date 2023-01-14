@@ -1,0 +1,49 @@
+= 
+LanaChin
+
+[arabic]
+. Install PowerShell version 7 or later. For step-by-step guidance, see
+link:/powershell/scripting/install/installing-powershell-on-windows[Installing
+PowerShell on Windows].
+. Run PowerShell in administrator mode.
+. Install the Microsoft Graph PowerShell module.
++
+[source,powershell]
+----
+Install-Module Microsoft.Graph
+Import-Module Microsoft.Graph
+----
++
+Verify that it’s version 1.6.1 or later.
++
+[source,powershell]
+----
+Get-InstalledModule Microsoft.Graph 
+----
+. Install the Teams Preview PowerShell module.
++
+[source,powershell]
+----
+Install-Module -Name MicrosoftTeams -AllowPrerelease -Force
+Import-Module MicrosoftTeams 
+----
++
+Verify that it’s at least version 4.7.0 and contains the Shifts
+connector cmdlets.
++
+[source,powershell]
+----
+Get-Command -Module MicrosoftTeams -Name *teamsshiftsconnection* 
+----
+. Set PowerShell to exit if an error occurs when running the script.
++
+[source,powershell]
+----
+$ErrorActionPreference = "Stop" 
+----
+. Enable scripts to run in Windows.
++
+[source,powershell]
+----
+Set-ExecutionPolicy bypass 
+----

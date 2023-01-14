@@ -1,0 +1,61 @@
+= 
+kwekuako
+
+== Schedule Bookings business closures, time off, and vacation time
+
+Occasionally, you’ll want to close your business for holidays or team
+events, or your employees will need time off when they’re sick, on
+vacation, or unavailable for other reasons. You can schedule time off
+from the Microsoft Bookings calendar, and the employee will be
+unavailable for bookings during the specified time. Once the business
+reopens or employees return to work, everyone will be listed on the
+booking page according to their established work hours.
+
+=== Watch: Enter business hours and time off for employees
+
+____
+{empty}[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TxDC]
+____
+
+Schedule business closures or employee off.
+
+=== Schedule ad hoc business closures
+
+[arabic]
+. In Microsoft 365, select the app launcher, and then select *Bookings*.
+. Choose your calendar.
+. In the top navigation pane, select *Add time off*.
++
+:::image type=``content''
+source=``../media/bookings-calendar-timeoff-2.png'' alt-text=``Bookings
+calendar view and time off button.'':::
+. Fill in the details, including a title, start, and end date and times,
+location, and extra notes.
+. Select *All day event*.
+. Select all staff members.
+. Select *Save*.
+
+When a customer attempts to schedule service on a day the office is
+closed, they’ll see a message on the booking page.
+
+image::../media/bookings-timeoff-message.png[Image of example message
+that customer sees when trying to book during time off.]
+
+=== Schedule employee time off
+
+[arabic]
+. In Microsoft 365, select the app launcher, and then select *Bookings*.
++
+:::image type=``content'' source=``../media/bookings-applauncher.png''
+alt-text=``App launcher.'':::
+. Choose your calendar.
+. In the top navigation pane, select *Add time off*.
++
+:::image type=``content''
+source=``../media/bookings-calendar-timeoff-2.png'' alt-text=``Bookings
+calendar view and time off button.'':::
+. Fill in the details, including a title, start, and end date and times,
+location, and more notes. If the employee will be gone for a full day or
+for several days, select *All day event*.
+. Select the staff member or members who are taking the time off.
+. Select *Save*.

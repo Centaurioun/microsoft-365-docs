@@ -1,0 +1,31 @@
+= 
+LanaChin
+
+____
+[!NOTE] Complete this step if you’re mapping instances to existing teams
+that have schedules. If you’re mapping to teams that don’t have any
+schedules or if you’re creating new teams to map to, you can skip this
+step.
+____
+
+Use PowerShell to remove schedules from teams.
+
+[arabic]
+. First, you’ll need to install the PowerShell modules and get set up.
+Follow the steps to
+link:../shifts-connector-powershell-manage.md#set-up-your-environment[set
+up your environment]
+. Run the following command:
++
+[source,powershell]
+----
+Remove-CsTeamsShiftsScheduleRecord -TeamId <Teams team ID> -DateRangeStartDate <start time> -DateRangeEndDate <end time> -ClearSchedulingGroup:$false -EntityType <the scenario entities that you want to remove, the format is @(scenario1, scenario2, ...)> -DesignatedActorId <Teams team owner ID>
+----
++
+To get a list of scenarios for the `EntityType` parameter, run
+link:/powershell/module/teams/get-csteamsshiftsconnectionconnector[Get-CsTeamsShiftsConnectionConnector].
+Schedule data will be removed for the date and time range that you
+specify.
+
+To learn more, see
+link:/powershell/module/teams/remove-csteamsshiftsschedulerecord[Remove-CsTeamsShiftsScheduleRecord].

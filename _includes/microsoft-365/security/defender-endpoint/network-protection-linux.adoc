@@ -1,0 +1,386 @@
+= 
+dansimp
+:keywords: Network protection, Linux exploits, malicious website, ip,
+domain, domains, command and control, SmartScreen, toast notification
+
+== Network protection for Linux
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may
+be substantially modified before it’s commercially released. Microsoft
+makes no warranties, express or implied, with respect to the information
+provided here.
+____
+
+=== Overview
+
+Microsoft is bringing Network Protection functionality to Linux.
+
+Network protection helps reduce the attack surface of your devices from
+Internet-based events. It prevents employees from using any application
+to access dangerous domains that may host:
+
+* phishing scams
+* exploits
+* other malicious content on the Internet
+
+Network protection expands the scope of Microsoft Defender
+link:/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md[SmartScreen]
+to block all outbound HTTP(s) traffic that attempts to connect to
+low-reputation sources. The blocks on outbound HTTP(s) traffic are based
+on the domain or hostname.
+
+=== Web content filtering for Linux
+
+You can use web content filtering for testing with Network protection
+for Linux. See link:web-content-filtering.md[Web content filtering].
+
+==== Known issues
+
+* Network Protection is implemented as a virtual private network (VPN)
+tunnel. Advanced packet routing options using custom nftables/iptables
+scripts are available.
+* Block/Warn UX isn’t available
+** Customer feedback is being collected to drive further design
+improvements
+
+____
+[!NOTE] To evaluate the effectiveness of Linux Web Threat Protection, we
+recommend using the Firefox browser which is the default for all the
+distributions.
+____
+
+==== Prerequisites
+
+* Licensing: Microsoft Defender for Endpoint tenant (can be trial) and
+platform specific requirements found in
+link:non-windows.md#licensing-requirements[Microsoft Defender for
+Endpoint for non-Windows platforms]
+* Onboarded Machines:
+** *Minimum Linux version*: For a list of supported distributions, see
+link:microsoft-defender-endpoint-linux.md[Microsoft Defender for
+Endpoint on Linux].
+** *Microsoft Defender for Endpoint Linux client version*: 101.78.13
+-insiderSlow(Preview)
+
+=== Instructions
+
+Deploy Linux manually, see link:linux-install-manually.md[Deploy
+Microsoft Defender for Endpoint on Linux manually]
+
+The following example shows the sequence of commands needed to the mdatp
+package on ubuntu 20.04 for insiders-Slow channel.
+
+[source,bash]
+----
+curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-slow.list
+sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-slow.list
+sudo apt-get install gpg
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo apt-get install apt-transport-https
+sudo apt-get update
+sudo apt install -y mdatp
+----
+
+==== Device Onboarding
+
+To onboard the device, you must download the Python onboarding package
+for Linux server from Microsoft 365 Defender -> Settings -> Device
+Management -> Onboarding and run:
+
+[source,bash]
+----
+sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
+----
+
+==== Manually enable network protection
+
+[arabic]
+. Turn on the ``networkProtection'' feature, edit the
+``/etc/opt/microsoft/mdatp/wdavcfg'' and set *networkProtection* to
+*enabled*.
+. Restart the mdatp service by running the following command:
+
+[source,bash]
+----
+sudo systemctl restart mdatp
+----
+
+____
+:::image type=``content''
+source=``images/network-protection-linux-mdatp-restart.png''
+alt-text=``Shows Linux mdatp restart.''
+lightbox=``images/network-protection-linux-mdatp-restart.png'':::
+____
+
+==== Configure the enforcement level
+
+Network protection is disabled by default, but it can be configured to
+run in one of the following modes (also called enforcement levels):
+
+* *Audit*: useful to make sure it doesn’t affect line-of-business apps,
+or get an idea of how often blocks occur
+* *Block*: network protection prevents connection to malicious websites
+* *Disabled*: all components associated with Network Protection are
+disabled
+
+[source,bash]
+----
+sudo mdatp config network-protection enforcement-level --value block
+----
+
+or
+
+[source,bash]
+----
+sudo mdatp config network-protection enforcement-level --value audit
+----
+
+To confirm Network Protection has successfully started, run the
+following command from the Terminal; verify that it prints ``started'':
+
+[source,bash]
+----
+mdatp health --field network_protection_status
+----
+
+==== Validation
+
+A. Check Network Protection has effect on always blocked sites:
+
+* http://www.smartscreentestratings2.net
+* https://www.smartscreentestratings2.net
+
+B. Inspect diagnostic logs
+
+[source,bash]
+----
+$ sudo mdatp log level set --level debug
+$ sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log
+----
+
+===== To exit the validation mode
+
+Disable network protection and restart the network connection:
+
+[source,bash]
+----
+$ sudo mdatp config network-protection enforcement-level --value disabled
+----
+
+=== Advanced configuration
+
+By default, Linux network protection is active on the default gateway;
+routing and tunneling are internally configured. To customize the
+network interfaces, change the *networkSetupMode* parameter from the
+*/opt/microsoft/mdatp/conf/* configuration file and restart the service:
+
+[source,bash]
+----
+sudo systemctl restart  mdatp
+----
+
+The configuration file also enables the user to customize:
+
+* proxy setting
+* SSL certificate stores
+* tunneling device name
+* IP
+* and more
+
+The default values were tested for all distributions as described in
+link:microsoft-defender-endpoint-linux.md[Microsoft Defender for
+Endpoint on Linux]
+
+==== Microsoft Defender portal
+
+Also, make sure that in *Microsoft Defender* > *Settings* > *Endpoints*
+> *Advanced features* that *`Custom network indicators'* toggle is set
+_enabled_.
+
+____
+[!IMPORTANT] The above *`Custom network indicators'* toggle controls
+*Custom Indicators* enablement **for ALL platforms with Network
+Protection support, including Windows. Reminder that - on Windows - for
+indicators to be enforced you also must have Network Protection
+explicitly enabled.
+____
+
+____
+:::image type=``content''
+source=``images/network-protection-linux-defender-security-center-advanced-features-settings.png''
+alt-text=``MEM Create Profile''
+lightbox=``images/network-protection-linux-defender-security-center-advanced-features-settings.png'':::
+____
+
+=== How to explore the features
+
+[arabic]
+. Learn how to link:web-threat-protection.md[Protect your organization
+against web threats] using web threat protection.
+* Web threat protection is part of web protection in Microsoft Defender
+for Endpoint. It uses network protection to secure your devices against
+web threats.
+. Run through the link:indicator-ip-domain.md[Custom Indicators of
+Compromise] flow to get blocks on the Custom Indicator type.
+. Explore link:web-content-filtering.md[Web content filtering].
++
+____
+[!NOTE] If you are removing a policy or changing device groups at the
+same time, this might cause a delay in policy deployment. Pro tip: You
+can deploy a policy without selecting any category on a device group.
+This action will create an audit only policy, to help you understand
+user behavior before creating a block policy.
+
+Device group creation is supported in Defender for Endpoint Plan 1 and
+Plan 2.
+____
+. link:/defender-cloud-apps/mde-integration[Integrate Microsoft Defender
+for Endpoint with Defender for Cloud Apps] and your network
+protection-enabled macOS devices will have endpoint policy enforcement
+capabilities.
++
+____
+[!NOTE] Discovery and other features are currently not supported on
+these platforms.
+____
+
+=== Scenarios
+
+The following scenarios are supported during public preview:
+
+==== Web threat protection
+
+Web threat protection is part of Web protection in Microsoft Defender
+for Endpoint. It uses network protection to secure your devices against
+web threats. By integrating with Microsoft Edge and popular third-party
+browsers like Chrome and Firefox, web threat protection stops web
+threats without a web proxy. Web threat protection can protect devices
+while they’re on premises or away. Web threat protection stops access to
+the following types of sites:
+
+* phishing sites
+* malware vectors
+* exploit sites
+* untrusted or low-reputation sites
+* sites you’ve blocked in your custom indicator list
+
+____
+:::image type=``content''
+source=``images/network-protection-reports-web-protection.png''
+alt-text=``Web Protection reports web threat detections.''
+lightbox=``images/network-protection-reports-web-protection.png'':::
+____
+
+For more information, see link:web-threat-protection.md[Protect your
+organization against web threat]
+
+===== Custom Indicators of Compromise
+
+Indicator of compromise (IoCs) matching is an essential feature in every
+endpoint protection solution. This capability gives SecOps the ability
+to set a list of indicators for detection and for blocking (prevention
+and response).
+
+Create indicators that define the detection, prevention, and exclusion
+of entities. You can define the action to be taken as well as the
+duration for when to apply the action and the scope of the device group
+to apply it to.
+
+Currently supported sources are the cloud detection engine of Defender
+for Endpoint, the automated investigation and remediation engine, and
+the endpoint prevention engine (Microsoft Defender Antivirus).
+
+____
+:::image type=``content'' source
+=``images/network-protection-add-url-domain-indicator.png''
+alt-text=``Shows network protection add URL or domain indicator.''
+lightbox=``images/network-protection-add-url-domain-indicator.png'':::
+____
+
+For more information, see: link:indicator-ip-domain.md[Create indicators
+for IPs and URLs/domains].
+
+==== Web content filtering
+
+Web content filtering is part of the link:web-protection-overview.md[Web
+protection] capabilities in Microsoft Defender for Endpoint and
+Microsoft Defender for Business. Web content filtering enables your
+organization to track and regulate access to websites based on their
+content categories. Many of these websites (even if they’re not
+malicious) might be problematic because of compliance regulations,
+bandwidth usage, or other concerns.
+
+Configure policies across your device groups to block certain
+categories. Blocking a category prevents users within specified device
+groups from accessing URLs associated with the category. For any
+category that’s not blocked, the URLs are automatically audited. Your
+users can access the URLs without disruption, and you’ll gather access
+statistics to help create a more custom policy decision. Your users will
+see a block notification if an element on the page they’re viewing is
+making calls to a blocked resource.
+
+Web content filtering is available on the major web browsers, with
+blocks performed by Windows Defender SmartScreen (Microsoft Edge) and
+Network Protection (Chrome, Firefox, Brave, and Opera). For more
+information about browser support, see
+link:#prerequisites[Prerequisites].
+
+____
+:::image type=``content''
+source=``images/network-protection-wcf-add-policy.png'' alt-text=``Shows
+network protection web content filtering add policy.''
+lightbox=``images/network-protection-wcf-add-policy.png'':::
+____
+
+For more information about reporting, see
+link:web-content-filtering.md[Web content filtering].
+
+==== Microsoft Defender for Cloud Applications
+
+The Microsoft Defender for Cloud Applications / Cloud App Catalog
+identifies apps you would want end users to be warned upon accessing
+with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_.
+The domains listed under monitored apps would be later synced to
+Microsoft 365 Defender for Endpoint:
+
+____
+:::image type=``content''
+source=``images/network-protection-macos-mcas-monitored-apps.png''
+alt-text=``Shows network protection mcas monitored apps.''
+lightbox=``images/network-protection-macos-mcas-monitored-apps.png'':::
+____
+
+Within 10-15 minutes, these domains will be listed in Microsoft 365
+Defender for Endpoint Security Center under Indicators > URLs/Domains
+with Action=Warn. Within the enforcement SLA (see details at the end of
+this article).
+
+____
+:::image type=``content''
+source=``images/network-protection-macos-mcas-cloud-app-security.png''
+alt-text=``Shows network protection mcas cloud app security.''
+lightbox=``images/network-protection-macos-mcas-cloud-app-security.png'':::
+____
+
+=== See also
+
+* link:network-protection.md[Protect your network]
+* link:enable-network-protection.md[Turn on network protection]
+* link:web-protection-overview.md[Web protection]
+* link:manage-indicators.md[Create indicators]
+* link:web-content-filtering.md[Web content filtering]
+* link:microsoft-defender-endpoint-linux.md[Microsoft Defender for
+Endpoint on Linux]

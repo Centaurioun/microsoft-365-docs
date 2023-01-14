@@ -1,0 +1,75 @@
+= 
+denisebmsft
+:keywords: migration, windows defender, advanced endpoint protection,
+antivirus, antimalware, passive mode, active mode
+
+== Migrate to Microsoft Defender for Endpoint from non-Microsoft endpoint protection
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+If you are ready to switch from a non-Microsoft endpoint protection
+solution to link:microsoft-defender-endpoint.md[Microsoft Defender for
+Endpoint] (Defender for Endpoint), or you’re just interested in what all
+is involved in the process, use this article as a guide. This article
+describes the overall process of moving to
+link:defender-endpoint-plan-1-2.md[Defender for Endpoint Plan 1 or Plan
+2]. The following image depicts the migration process at a high level:
+
+:::image type=``content'' source=``images/nonms-mde-migration.png''
+alt-text=``Diagram depicting the process of migrating to Defender for
+Endpoint'' lightbox=``images/nonms-mde-migration.png'':::
+
+When you migrate to Defender for Endpoint, you begin with your
+non-Microsoft antivirus/antimalware protection in active mode. Then, you
+configure Microsoft Defender Antivirus in passive mode, and onboard your
+devices to Defender for Endpoint. Next, you configure Defender for
+Endpoint features, and verify that everything is working correctly.
+Finally, you remove the non-Microsoft solution from your devices.
+
+=== The migration process
+
+:::image type=``content''
+source=``images/phase-diagrams/migration-phases.png'' alt-text=``The MDE
+migration process''
+lightbox=``images/phase-diagrams/migration-phases.png'':::
+
+The process of migrating to Defender for Endpoint can be divided into
+three phases, as described in the following table:
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Phase |Description
+|link:switch-to-mde-phase-1.md[Prepare for your migration] |During
+link:switch-to-mde-phase-1.md[the *Prepare* phase]: 1. Update your
+organization’s devices.2. Get Defender for Endpoint Plan 1 or Plan 2.3.
+Plan roles and permissions for your security team, and grant them access
+to the Microsoft 365 Defender portal.4. Configure your device proxy and
+internet settings to enable communication between your organization’s
+devices and Defender for Endpoint.
+
+|link:switch-to-mde-phase-2.md[Set up Defender for Endpoint] |During
+link:switch-to-mde-phase-2.md[the *Setup* phase]: 1. Enable/reinstall
+Microsoft Defender Antivirus, and make sure it’s in passive mode on
+devices.2. Configure your Defender for Endpoint Plan 1 or Plan 2
+capabilities.3. Add Defender for Endpoint to the exclusion list for your
+existing solution.4. Add your existing solution to the exclusion list
+for Microsoft Defender Antivirus.5. Set up your device groups,
+collections, and organizational units.
+
+|link:switch-to-mde-phase-3.md[Onboard to Defender for Endpoint] |During
+link:switch-to-mde-phase-3.md[the *Onboard* phase]: 1. Onboard your
+devices to Defender for Endpoint.2. Run a detection test to confirm that
+onboarding was successful.3. Confirm that Microsoft Defender Antivirus
+is running in passive mode.4. Get updates for Microsoft Defender
+Antivirus.5. Uninstall your existing endpoint protection solution.6.
+Make sure that Defender for Endpoint working correctly.
+|===
+
+=== Next step
+
+* Proceed to link:switch-to-mde-phase-1.md[Prepare for your migration].

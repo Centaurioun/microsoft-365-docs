@@ -1,0 +1,10 @@
+= 
+vpattnai
+:keywords: XDR, Xtended detection and response, defender experts for
+xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed
+detection and response (MDR) service, service delivery manager,
+real-time visibility with XDR experts, threat hunting and analysis
+
+== Opt out of Microsoft Defender Experts for XDR preview
+
+Consult your service delivery manager (SDM) to opt out of the preview.

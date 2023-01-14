@@ -1,0 +1,99 @@
+= 
+dansimp
+
+== Mail flow map in the Security & Compliance Center
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:eop-about.md[Exchange Online Protection] -
+link:defender-for-office-365.md[Microsoft Defender for Office 365 plan 1
+and plan 2] - link:../defender/microsoft-365-defender.md[Microsoft 365
+Defender]
+
+The *Mail flow map* in the https://protection.office.com[Security &
+Compliance Center] gives insight as to how mail flows through your
+organization. You can use this information to learn patterns, identify
+anomalies, and fix issues as they occur.
+
+:::image type=``content''
+source=``../../media/mfi-mail-flow-map-widget.png'' alt-text=``The Mail
+flow map widget in the Mail flow dashboard in the Security & Compliance
+Center'' lightbox=``../../media/mfi-mail-flow-map-widget.png'':::
+
+By default, the widget shows the mail flow pattern from the previous day
+in a chart known as a _Sankey_ diagram. You can use the left arrow
+image:../../media/scc-left-arrow.png[Left arrow.] and right arrow
+image:../../media/scc-right-arrow.png[Right arrow] to show information
+from different days. Each different color represents mail flow over a
+different inbound or outbound connector (or without using connectors).
+If you hover over a specific color, the number of messages is displayed
+for that type of connector.
+
+=== Report view for the Mail flow map
+
+Clicking on the *Mail flow map* widget will take you to the *Mail flow
+map* report.
+
+The following charts are available in the report view:
+
+* *Show data for: Overview*: This is basically a larger view of the
+widget. If you hover over a specific color, the number of messages is
+displayed for that type of connector.
++
+:::image type=``content''
+source=``../../media/mfi-mail-flow-map-report-overview.png''
+alt-text=``The Overview view in the Mail flow map report''
+lightbox=``../../media/mfi-mail-flow-map-report-overview.png'':::
+* *Show data for: Detail*: This view shows details about the connectors
+and destination domains. The top sender and recipient domains are
+listed, and the rest are put in *Others*. If you hover over a specific
+color and section, the number of messages is displayed.
++
+:::image type=``content''
+source=``../../media/mfi-mail-flow-map-report-detail.png''
+alt-text=``The Detail view in the Mail flow map report''
+lightbox=``../../media/mfi-mail-flow-map-report-detail.png'':::
+
+If you click *Filters* in a report view, you can specify a date range
+with *Start date* and *End date*.
+
+To email the report for a specific date range to one or more recipients,
+click *Request download*.
+
+Related insights are shown beneath the Mail flow map if they’re
+available (for example, the
+link:/exchange/monitoring/mail-flow-insights/mfi-fix-possible-mail-loop-insight[Fix
+possible mail loop insight].
+
+=== Details table view for the Mail flow map
+
+If you click *View details table* in a report view, the following
+information is shown:
+
+* *Date*
+* *Category*
+* *Connector / Third-party service provider*
+* *Sender/Recipient domain*
+* *Message count*
+
+If you click *Filters* in a details table view, you can specify a date
+range with *Start date* and *End date*.
+
+If you select a row, similar details are shown in a flyout:
+
+:::image type=``content''
+source=``../../media/mfi-mail-flow-map-view-details-table-details.png''
+alt-text=``The Details flyout from the details table in the Mail flow
+map''
+lightbox=``../../media/mfi-mail-flow-map-view-details-table-details.png'':::
+
+To email the report for a specific date range to one or more recipients,
+click *Request download*.
+
+To go back to the reports view, click *View report*.
+
+=== See also
+
+For information about other mail flow insights, see
+link:/exchange/monitoring/mail-flow-insights/mail-flow-insights[Mail
+flow insights in Exchange Online].

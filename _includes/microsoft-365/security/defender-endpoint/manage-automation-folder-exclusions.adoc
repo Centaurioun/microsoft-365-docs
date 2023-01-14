@@ -1,0 +1,84 @@
+= 
+mjcaparas
+:keywords: manage, automation, exclusion, block, clean, malicious
+
+== Manage automation folder exclusions
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink[Sign
+up for a free trial.]
+____
+
+Automation folder exclusions allow you to specify folders that the
+Automated investigation will skip.
+
+You can control the following attributes about the folder that you’d
+like to be skipped:
+
+* *Folders*: You can specify a folder and its subfolders to be skipped.
++
+____
+[!NOTE] At this time, use of wild cards as a way to exclude files under
+a directory is not yet supported.
+____
+* *Extensions of the files*: You can specify the extensions to exclude
+in a specific directory. The extensions are a way to prevent an attacker
+from using an excluded folder to hide an exploit. The extensions
+explicitly define which files to ignore.
+* *File names*: You can specify the file names that you want to be
+excluded in a specific directory. The names are a way to prevent an
+attacker from using an excluded folder to hide an exploit. The names
+explicitly define which files to ignore.
+
+=== Add an automation folder exclusion
+
+[arabic]
+. Log in to https://go.microsoft.com/fwlink/p/?linkid=2077139[Microsoft
+365 Defender] using an account with the Security administrator or Global
+administrator role assigned.
+. In the navigation pane, select *Settings* > *Endpoints* > *Rules* >
+*Automation folder exclusions*.
+. Click *New folder exclusion*.
+. Enter the folder details:
+* Folder
+* Extensions
+* File names
+* Description
+. Click *Save*.
+
+____
+[!NOTE] Live Response commands to collect or examine excluded files will
+fail with error: ``File is excluded''. In addition, automated
+investigations will ignore the excluded items.
+____
+
+=== Edit an automation folder exclusion
+
+[arabic]
+. In the navigation pane, select *Settings* > *Endpoints* > *Rules* >
+*Automation folder exclusions*.
+. Click *Edit* on the folder exclusion.
+. Update the details of the rule and click *Save*.
+
+=== Remove an automation folder exclusion
+
+[arabic]
+. In the navigation pane, select *Settings* > *Endpoints* > *Rules* >
+*Automation folder exclusions*.
+. Click *Remove exclusion*.
+
+=== Related articles
+
+* link:manage-indicators.md[Manage automation allowed/blocked lists]
+* link:manage-automation-file-uploads.md[Manage automation file uploads]
+* link:defender-endpoint-antivirus-exclusions.md[Exclusions for
+Microsoft Defender for Endpoint and Microsoft Defender Antivirus]

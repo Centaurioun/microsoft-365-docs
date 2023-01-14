@@ -1,0 +1,104 @@
+= 
+MSFTTracyP
+
+== How to configure quarantine permissions and policies
+
+Providing security admins and users with a very simple way to manage
+false positive folders is vital given the increased demand for a more
+aggressive security posture with the evolution of hybrid work. Taking a
+prescriptive approach, admins and users can achieve this with the
+guidance below.
+
+____
+[!TIP] For a short video aimed at admins trying to set quarantine
+permissions and policies,
+https://www.youtube.com/watch?v=vnar4HowfpY[see this link]. If you are
+an end user opt for this https://www.youtube.com/watch?v=s-vozLO43rI[1
+minute overview] of the process.
+____
+
+=== What you will need
+
+* Sufficient permissions (Security Administrator role)
+* 5 minutes to perform the steps below.
+
+=== Creating Custom quarantine policies with Request release flow
+
+Our custom policies give admins the ability to decide what items their
+users can triage in the *_False positive_* folder with an extended
+ability of allowing the user to request the _release_ of those items
+from the folder.
+
+[arabic]
+. Decide what verdicts category (bulk, spam, phish, high confidence
+phish, or malware) of items you want your user to triage and not triage.
+. For those categories that you don’t want the users to triage, assign
+the items to the *AdminOnlyPolicy*. As for the category you want users
+to triage with limited access, you can _create a custom policy_ with a
+request release access and assign users to that category.
+. It’s *strongly recommended* that malware and high confidence phish
+items be assigned to *AdminOnlyPolicy*, regular confidence phish items
+be assigned _limited access with request release_, while bulk and spam
+can be left as full access for users.
+
+____
+[!IMPORTANT] For more information on how granular custom policies can be
+created, see
+link:../../office-365-security/quarantine-policies.md[Quarantine
+policies - Office 365 | Microsoft Docs].
+____
+
+=== Assigning quarantine policies and enabling notification with organization branding
+
+Once it has been decided the categories of items users can triage or
+not-triage, and created the corresponding quarantine policies, admins
+should to assign these policies to the respective users and enable
+notifications.
+
+[arabic]
+. Identify the users, groups, or domains that you would like to include
+in the _full access_ category vs. the _limited access_ category, versus
+the _Admin-Only_ category.
+. Sign in to the https://security.microsoft.com[Microsoft Security
+portal].
+. Select *Email & collaboration* > *Policies & rules*.
+. Select *Threat policies*.
+. Select each of the following: *Anti-spam policies*, *Anti-phishing
+policy*, *Anti-Malware policy*.
+. Select *Create policy* and choose *Inbound*.
+. Add policy Name, users, groups, or domains to apply the policy to, and
+*Next*.
+. In the *Actions* tab, select *Quarantine message* for categories. You
+will notice an additional panel for _select quarantine policy_, use that
+dropdown to select the quarantine policy you created earlier.
+. Move on to the *Review* section and click the *Confirm* button to
+create the new policy.
+. Repeat these same steps for the other policies: *Anti-phishing
+policy*, *Anti-Malware policy*, and *Safe Attachment policy*.
+
+____
+{empty}[!TIP] For more detailed information on what you’ve learned so
+far, see
+link:../../office-365-security/anti-spam-policies-configure.md[Configure
+spam filter policies - Office 365 | Microsoft Docs]|
+link:../../office-365-security/anti-phishing-policies-eop-configure.md[Configure
+anti-phishing policies in EOP - Office 365 | Microsoft Docs] |
+link:../../office-365-security/anti-malware-policies-configure.md[Configure
+anti-malware policies - Office 365 | Microsoft Docs]|
+link:../../office-365-security/safe-attachments-policies-configure.md[Set
+up Safe Attachments policies in Microsoft Defender for Office 365 -
+Office 365 | Microsoft Docs]
+____
+
+=== Next Steps
+
+* Use *Global policy* available in quarantine policy to enable your
+organization branding logo, display name, and disclaimer.
+* Also set the *User frequency to 1 day* for the quarantine
+notification.
+
+=== More information
+
+Learn more about organization branding and notification settings here
+link:../../office-365-security/quarantine-policies.md[Quarantine
+policies - Office 365 | Microsoft Docs]

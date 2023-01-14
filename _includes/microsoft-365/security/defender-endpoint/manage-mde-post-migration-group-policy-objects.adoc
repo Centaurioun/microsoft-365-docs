@@ -1,0 +1,140 @@
+= 
+denisebmsft
+:keywords: post-migration, manage, operations, maintenance, utilization,
+PowerShell, Microsoft Defender for Endpoint, edr
+
+== Manage Microsoft Defender for Endpoint with Group Policy Objects
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+____
+[!NOTE] We recommend using link:/mem[Microsoft Endpoint Manager] to
+manage your organization’s threat protection features for devices (also
+referred to as endpoints). Endpoint Manager includes
+link:/mem/intune/fundamentals/what-is-intune[Microsoft Intune] and
+link:/mem/configmgr/core/understand/introduction[Microsoft Endpoint
+Configuration Manager]. *link:/mem/endpoint-manager-overview[Learn more
+about Endpoint Manager]*.
+____
+
+You can use Group Policy Objects in Azure Active Directory Domain
+Services to manage some settings in Microsoft Defender for Endpoint.
+
+=== Configure Microsoft Defender for Endpoint with Group Policy Objects
+
+____
+[!NOTE] If you’re using
+link:/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview[the
+new&#44; unified Microsoft Defender for Endpoint solution for Windows Server
+2012 R2 and 2016], please ensure you are using the latest ADMX files in
+your central store to get access to the correct Microsoft Defender for
+Endpoint policy options. Please reference
+link:/troubleshoot/windows-client/group-policy/create-and-manage-central-store[How
+to create and manage the Central Store for Group Policy Administrative
+Templates in Windows] and download the latest files *for use with
+Windows 10*.
+____
+
+The following table lists various tasks you can perform to configure
+Microsoft Defender for Endpoint with Group Policy Objects.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Task |Resources to learn more
+|*Manage settings for user and computer objects* _Customize built-in
+Group Policy Objects, or create custom Group Policy Objects and
+organizational units to suit your organizational needs._
+|link:/azure/active-directory-domain-services/manage-group-policy[Administer
+Group Policy in an Azure Active Directory Domain Services managed
+domain]
+
+|*Configure Microsoft Defender Antivirus* _Configure antivirus features
+& capabilities, including policy settings, exclusions, remediation, and
+scheduled scans on your organization’s devices (also referred to as
+endpoints)._
+|link:/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus[Use
+Group Policy settings to configure and manage Microsoft Defender
+Antivirus]
+link:/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection[Use
+Group Policy to enable cloud-delivered protection]
+
+|*Manage your organization’s attack surface reduction rules* _Customize
+your attack surface reduction rules by excluding files & folders, or by
+adding custom text to notification alerts that appear on users’
+devices._
+|link:/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-implement[Customize
+attack surface reduction rules with Group Policy Objects]
+
+|*Manage exploit protection settings* _You can customize your exploit
+protection settings, import a configuration file, and then use Group
+Policy to deploy that configuration file._
+|link:/microsoft-365/security/defender-endpoint/customize-exploit-protection[Customize
+exploit protection settings]
+link:/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml[Import&#44;
+export&#44; and deploy exploit protection configurations]
+link:/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration[Use
+Group Policy to distribute the configuration]
+
+|*Enable Network Protection* to help prevent employees from using apps
+that malicious content on the Internet _We recommend using
+link:/microsoft-365/security/defender-endpoint/evaluate-network-protection[audit
+mode] at first for network protection in a test environment to see which
+apps would be blocked before rolling out._
+|link:/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy[Turn
+on network protection using Group Policy]
+
+|*Configure controlled folder access* to protect against ransomware
+_link:/microsoft-365/security/defender-endpoint/controlled-folders[Controlled
+folder access] is also referred to as antiransomware protection._
+|link:/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy[Enable
+controlled folder access using Group Policy]
+
+|*Configure Microsoft Defender SmartScreen* to protect against malicious
+sites and files on the internet.
+|link:/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings[Configure
+Microsoft Defender SmartScreen Group Policy and mobile device management
+(MDM) settings using Group Policy]
+
+|*Configure encryption and BitLocker* to protect information on your
+organization’s devices running Windows
+|link:/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings[BitLocker
+Group Policy settings]
+
+|*Configure Microsoft Defender Credential Guard* to protect against
+credential theft attacks
+|link:/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy[Enable
+Windows Defender Credential Guard by using Group Policy]
+|===
+
+=== Configure your Microsoft 365 Defender portal
+
+If you haven’t already done so, configure your Microsoft 365 Defender
+portal to view alerts, configure threat protection features, and view
+detailed information about your organization’s overall security posture.
+See
+link:/microsoft-365/security/defender/microsoft-365-defender[Microsoft
+365 Defender]. You can also configure whether and what features end
+users can see in the Microsoft 365 Defender portal.
+
+* link:/microsoft-365/security/defender-endpoint/use[Overview of
+Microsoft 365 Defender]
+* link:/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center[Endpoint
+protection: Microsoft 365 Defender]
+
+=== Next steps
+
+* link:/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt[Get
+an overview of Defender Vulnerability Management]
+* link:manage-mde-post-migration-intune.md[Manage Microsoft Defender for
+Endpoint with Intune]

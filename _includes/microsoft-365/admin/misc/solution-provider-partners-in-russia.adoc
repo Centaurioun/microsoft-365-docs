@@ -1,0 +1,9 @@
+= 
+LoreenLa
+
+== Microsoft Cloud Solution Provider Partners in Russia
+
+Here’s a list of Microsoft Cloud Solution Providers in Russia.
+
+* https://www.mont.com/ru-ru/[Mont]
+* https://softline.ru/[Softline]

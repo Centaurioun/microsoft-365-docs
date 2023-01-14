@@ -1,0 +1,167 @@
+= 
+mjcaparas
+:keywords: apis, supported apis, get, TiIndicator, Indicator, recent
+
+== Indicator resource type
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+* See the corresponding
+https://securitycenter.windows.com/preferences2/custom_ti_indicators/files[Indicators
+page] in the portal.
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Method |Return Type |Description
+|link:get-ti-indicators-collection.md[List Indicators]
+|link:ti-indicator.md[Indicator] Collection |List
+link:ti-indicator.md[Indicator] entities.
+
+|link:post-ti-indicator.md[Submit Indicator]
+|link:ti-indicator.md[Indicator] |Submit or update
+link:ti-indicator.md[Indicator] entity.
+
+|link:import-ti-indicators.md[Import Indicators]
+|link:ti-indicator.md[Indicator] Collection |Submit or update
+link:ti-indicator.md[Indicators] entities.
+
+|link:delete-ti-indicator-by-id.md[Delete Indicator] |No Content
+|Deletes link:ti-indicator.md[Indicator] entity.
+|===
+
+=== Properties
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Property |Type |Description
+|id |String |Identity of the link:ti-indicator.md[Indicator] entity.
+
+|indicatorValue |String |The value of the
+link:ti-indicator.md[Indicator].
+
+|indicatorType |Enum |Type of the indicator. Possible values are:
+``FileSha1'', ``FileSha256'', ``FileMd5'', ``CertificateThumbprint'',
+``IpAddress'', ``DomainName'' and ``Url''.
+
+|application |String |The application associated with the indicator.
+
+|action |Enum |The action that will be taken if the indicator will be
+discovered in the organization. Possible values are: ``Warn'',
+``Block'', ``Audit'', ``Alert'', ``AlertAndBlock'',
+``BlockAndRemediate'' and ``Allowed''.
+
+|externalID |String |Id the customer can submit in the request for
+custom correlation.
+
+|sourceType |Enum |``User'' in case the Indicator created by a user (for
+example, from the portal), ``AadApp'' in case it submitted using
+automated application via the API.
+
+|createdBySource |string |The name of the user/application that
+submitted the indicator.
+
+|createdBy |String |Unique identity of the user/application that
+submitted the indicator.
+
+|lastUpdatedBy |String |Identity of the user/application that last
+updated the indicator.
+
+|creationTimeDateTimeUtc |DateTimeOffset |The date and time when the
+indicator was created.
+
+|expirationTime |DateTimeOffset |The expiration time of the indicator.
+
+|lastUpdateTime |DateTimeOffset |The last time the indicator was
+updated.
+
+|severity |Enum |The severity of the indicator. possible values are:
+``Informational'', ``Low'', ``Medium'' and ``High''.
+
+|description |String |Description of the indicator.
+
+|recommendedActions |String |Recommended actions for the indicator.
+
+|rbacGroupNames |List of strings |RBAC device group names where the
+indicator is exposed and active. Empty list in case it exposed to all
+devices.
+
+|rbacGroupIds |List of strings |RBAC device group ID’s where the
+indicator is exposed and active. Empty list in case it exposed to all
+devices.
+
+|generateAlert |Enum |*True* if alert generation is required, *False* if
+this indicator should not generate an alert.
+|===
+
+=== Indicator Types
+
+The indicator action types supported by the API are:
+
+* Allowed
+* Audit
+* Block
+* BlockAndRemediate
+* Warn (Defender for Cloud Apps only)
+
+For more information on the description of the response action types,
+see link:manage-indicators.md[Create indicators].
+
+____
+{empty}[!Note]
+
+The prior response actions (AlertAndBlock, and Alert) will be supported
+until January 2022. After this date, all customers must be use one of
+the action types listed above.
+____
+
+=== Json representation
+
+[source,json]
+----
+{
+    "id": "994",
+    "indicatorValue": "881c0f10c75e64ec39d257a131fcd531f47dd2cff2070ae94baa347d375126fd",
+    "indicatorType": "FileSha256",
+    "action": "AlertAndBlock",
+    "application": null,
+    "source": "user@contoso.onmicrosoft.com",
+    "sourceType": "User",
+    "createdBy": "user@contoso.onmicrosoft.com",
+    "severity": "Informational",
+    "title": "Michael test",
+    "description": "test",
+    "recommendedActions": "nothing",
+    "creationTimeDateTimeUtc": "2019-12-19T09:09:46.9139216Z",
+    "expirationTime": null,
+    "lastUpdateTime": "2019-12-19T09:09:47.3358111Z",
+    "lastUpdatedBy": null,
+    "rbacGroupNames": ["team1"]
+}
+----
+
+=== See also
+
+* link:defender-endpoint-antivirus-exclusions.md[Exclusions for
+Microsoft Defender for Endpoint and Microsoft Defender Antivirus]

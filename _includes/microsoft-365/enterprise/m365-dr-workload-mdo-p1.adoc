@@ -1,0 +1,90 @@
+= 
+kelleyvice-msft
+
+== Data Residency for Microsoft Defender for Office P1
+
+=== Overview
+
+Service documentation:
+link:/microsoft-365/security/office-365-security/defender-for-office-365[Office
+365 Security including Microsoft Defender for Office 365 and Exchange
+Online Protection]
+
+Capability Summary: Protects email and collaboration from zero-day
+malware, phish, and business email compromise. MDO P1 builds on Exchange
+Online Protection (EOP).
+
+=== Data Residency commitments available
+
+==== Advanced Data Residency add-on
+
+Required Conditions:
+
+[arabic]
+. _Tenant_ has a sign-up country included in _Local Region Geography_ or
+_Expanded Local Region Geography_.
+. _Tenant_ has a valid Advanced Data Residency subscription for all
+users in the _Tenant_
+. The MDO P1 subscription customer data is provisioned in _Local Region
+Geography_ or _Expanded Local Region Geography_.
+
+*Commitment:*
+
+Please refer to the
+link:m365-dr-commitments.md#microsoft-defender-for-office-p1[ADR
+Commitment page] for the specific customer data at rest commitment for
+Microsoft Defender for Office P1.
+
+Other Information
+
+In addition, processing of data that is required to analyze threats and
+inspect suspicious emails, documents, messages, and links is done in a
+sandbox environment and performed within the _Local Region Geography_ or
+_Expanded Local Region_.
+
+=== Exchange Online Protection
+
+==== Overview
+
+Service documentation:
+link:/microsoft-365/security/office-365-security/eop-about[Exchange
+Online Protection (EOP) overview]
+
+Capability summary: Exchange Online Protection (EOP) is the cloud-based
+filtering service that protects your organization against spam, malware,
+and other email threats.
+
+==== Data Residency commitments available
+
+===== Advanced Data Residency add-on
+
+Required Conditions:
+
+[arabic]
+. _Tenant_ has a sign up country included in _Local Region Geography_ or
+_Expanded Local Region Geography_.
+. _Tenant_ has a valid Advanced Data Residency subscription for all
+users in the _Tenant_
+. The EOP subscription customer data is provisioned in _Local Region
+Geography_ or _Expanded Local Region Geography_
+
+*Commitment:*
+
+Please refer to the link:m365-dr-commitments.md[Advanced Data Residency
+Commitment] page for the specific customer data at rest commitment for
+Exchange Online Protection.
+
+=== Migration
+
+EOP customer data migrates during the Exchange Online migration. MDO P1
+does not have customer data to migrate.
+
+=== How can I determine customer data location?
+
+We are in the process of updating the actual data location in the
+_Tenant_ Admin Center. When this change is complete you will be able to
+see the actual data location, for committed workloads, by navigating to
+Admin|Settings|Org Settings|Organization Profile|Data Location. Until
+that change is visible, you can view the Exchange Online data location
+information in order to understand where your in scope customer data is
+stored for this service.

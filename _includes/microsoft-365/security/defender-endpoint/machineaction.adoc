@@ -1,0 +1,167 @@
+= 
+mjcaparas
+:keywords: apis, supported apis, get, machineaction, recent
+
+== MachineAction resource type
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+* For more information, see link:respond-machine-alerts.md[Response
+Actions].
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Method |Return Type |Description
+|link:get-machineactions-collection.md[List MachineActions]
+|link:machineaction.md[Machine Action] |List
+link:machineaction.md[Machine Action] entities.
+
+|link:get-machineaction-object.md[Get MachineAction]
+|link:machineaction.md[Machine Action] |Get a single
+link:machineaction.md[Machine Action] entity.
+
+|link:collect-investigation-package.md[Collect investigation package]
+|link:machineaction.md[Machine Action] |Collect investigation package
+from a link:machine.md[machine].
+
+|link:get-package-sas-uri.md[Get investigation package SAS URI]
+|link:machineaction.md[Machine Action] |Get URI for downloading the
+investigation package.
+
+|link:isolate-machine.md[Isolate machine] |link:machineaction.md[Machine
+Action] |Isolate link:machine.md[machine] from network.
+
+|link:unisolate-machine.md[Release machine from isolation]
+|link:machineaction.md[Machine Action] |Release link:machine.md[machine]
+from Isolation.
+
+|link:restrict-code-execution.md[Restrict app execution]
+|link:machineaction.md[Machine Action] |Restrict application execution.
+
+|link:unrestrict-code-execution.md[Remove app restriction]
+|link:machineaction.md[Machine Action] |Remove application execution
+restriction.
+
+|link:run-av-scan.md[Run antivirus scan] |link:machineaction.md[Machine
+Action] |Run an AV scan using Windows Defender (when applicable).
+
+|link:offboard-machine-api.md[Offboard machine]
+|link:machineaction.md[Machine Action] |Offboard
+link:machine.md[machine] from Microsoft Defender for Endpoint.
+
+|link:stop-and-quarantine-file.md[Stop and quarantine file]
+|link:machineaction.md[Machine Action] |Stop execution of a file on a
+machine and delete it.
+
+|link:run-live-response.md[Run live response]
+|link:machineaction.md[Machine Action] |Runs a sequence of live response
+commands on a device
+
+|link:get-live-response-result.md[Get live response result] |URL entity
+|Retrieves specific live response command result download link by its
+index.
+
+|link:cancel-machine-action.md[Cancel machine action]
+|link:machineaction.md[Machine Action] |Cancel an active machine action.
+|===
+
+=== Properties
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Property |Type |Description
+|ID |Guid |Identity of the link:machineaction.md[Machine Action] entity.
+
+|type |Enum |Type of the action. Possible values are:
+``RunAntiVirusScan'', ``Offboard'', ``Live Response'',
+``CollectInvestigationPackage'', ``Isolate'', ``Unisolate'',
+``StopAndQuarantineFile'', ``RestrictCodeExecution'', and
+``UnrestrictCodeExecution''.
+
+|scope |string |Scope of the action. ``Full'' or ``Selective'' for
+Isolation, ``Quick'' or ``Full'' for Anti-Virus scan.
+
+|requestor |String |Identity of the person that executed the action.
+
+|externalID |String |Id the customer can submit in the request for
+custom correlation.
+
+|requestSource |string |The name of the user/application that submitted
+the action.
+
+|commands |array |Commands to run. Allowed values are PutFile,
+RunScript, GetFile.
+
+|cancellationRequestor |String |Identity of the person that canceled the
+action.
+
+|requestorComment |String |Comment that was written when issuing the
+action.
+
+|cancellationComment |String |Comment that was written when canceling
+the action.
+
+|status |Enum |Current status of the command. Possible values are:
+``Pending'', ``InProgress'', ``Succeeded'', ``Failed'', ``TimeOut'', and
+``Cancelled''.
+
+|machineId |String |ID of the link:machine.md[machine] on which the
+action was executed.
+
+|computerDnsName |String |Name of the link:machine.md[machine] on which
+the action was executed.
+
+|creationDateTimeUtc |DateTimeOffset |The date and time when the action
+was created.
+
+|cancellationDateTimeUtc |DateTimeOffset |The date and time when the
+action was canceled.
+
+|lastUpdateDateTimeUtc |DateTimeOffset |The last date and time when the
+action status was updated.
+
+|title |String |Machine action title.
+
+|relatedFileInfo |Class |Contains two Properties. string
+`fileIdentifier`, Enum `fileIdentifierType` with the possible values:
+``Sha1'', ``Sha256'', and ``Md5''.
+|===
+
+=== Json representation
+
+[source,json]
+----
+{
+        "id": "5382f7ea-7557-4ab7-9782-d50480024a4e",
+        "type": "Isolate",
+        "scope": "Selective",
+        "requestor": "Analyst@TestPrd.onmicrosoft.com",
+        "requestorComment": "test for docs",
+        "status": "Succeeded",
+        "machineId": "7b1f4967d9728e5aa3c06a9e617a22a4a5a17378",
+        "computerDnsName": "desktop-test",
+        "creationDateTimeUtc": "2019-01-02T14:39:38.2262283Z",
+        "lastUpdateDateTimeUtc": "2019-01-02T14:40:44.6596267Z",
+        "relatedFileInfo": null
+}
+----

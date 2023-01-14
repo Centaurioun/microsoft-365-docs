@@ -1,0 +1,137 @@
+= 
+denisebmsft
+
+== Device groups in Microsoft Defender for Business
+
+In Defender for Business, policies are applied to devices through
+certain collections that are called device groups.
+
+*This article describes*:
+
+* link:#what-is-a-device-group[What device groups are] +
+* link:#create-a-new-device-group[How to create device groups in
+Defender for Business]
+* link:#view-an-existing-device-group[How to view an existing device
+group]
+* link:#what-does-the-add-all-devices-option-do[What the Add All Devices
+option does]
+
+=== What is a device group?
+
+A device group is a collection of devices that are grouped together
+because of certain specified criteria, such as operating system version.
+Devices that meet the criteria are included in that device group, unless
+you exclude them. In Defender for Business, policies are applied to
+devices by using device groups.
+
+Defender for Business includes default device groups that you can use.
+The default device groups include all the devices that are onboarded to
+Defender for Business. For example, there’s a default device group for
+Windows devices. Whenever you onboard Windows devices, they’re added to
+the default device group automatically.
+
+You can also create new device groups to assign policies with specific
+settings to certain devices. For example, you might have a firewall
+policy assigned to one set of Windows devices, and a different firewall
+policy assigned to another set of Windows devices. You can define
+specific device groups to use with your policies.
+
+____
+[!NOTE] As you create policies in Defender for Business, an order of
+priority is assigned. If you apply multiple policies to a given set of
+devices, those devices will receive the first applied policy only. For
+more information, see link:mdb-policy-order.md[Understand policy order
+in Defender for Business].
+____
+
+All device groups, including your default device groups and any custom
+device groups that you define, are stored in
+link:/azure/active-directory/fundamentals/active-directory-whatis[Azure
+Active Directory] (Azure AD).
+
+=== Create a new device group
+
+Currently, in Defender for Business, you can create a new device group
+while you are in the process of creating or editing a policy, as
+described in the following procedure:
+
+[arabic]
+. Go to the Microsoft 365 Defender portal
+(https://security.microsoft.com) and sign in.
+. In the navigation pane, choose *Device configuration*.
+. Take one of the following actions:
+[arabic]
+.. Select an existing policy, and then choose *Edit*.
+.. Choose *+ Add* to create a new policy.
++
+____
+[!TIP] To get help creating or editing a policy, see
+link:mdb-view-edit-policies.md[View or edit policies in Defender for
+Business].
+____
+. On the *General information* step, review the information, edit if
+necessary, and then choose *Next*.
+. Choose *+ Create new group*.
+. Specify a name and description for the device group, and then choose
+*Next*.
+. Select the devices to include in the group, and then choose *Create
+group*.
+. On the *Device groups* step, review the list of device groups for the
+policy. If needed, remove a group from the list. Then choose *Next*.
+. On the *Configuration settings* page, review and edit settings as
+needed, and then choose *Next*. For more information about these
+settings, see link:mdb-next-gen-configuration-settings.md[Configuration
+settings].
+. On the *Review your policy* step, review all the settings, make any
+needed edits, and then choose *Create policy* or *Update policy*.
+
+=== View an existing device group
+
+Currently, in Defender for Business, you can view your existing device
+groups while you are in the process of creating or editing a policy, as
+described in the following procedure:
+
+[arabic]
+. Go to the Microsoft 365 Defender portal
+(https://security.microsoft.com) and sign in.
+. In the navigation pane, choose *Device configuration*.
+. Take one of the following actions:
+[arabic]
+.. Select an existing policy, and then choose *Edit*.
+.. Choose *+ Add* to create a new policy.
++
+____
+[!TIP] To get help creating or editing a policy, see
+link:mdb-view-edit-policies.md[View or edit policies in Defender for
+Business].
+____
+. On the *General information* step, review the information, edit if
+necessary, and then choose *Next*.
+. Choose *Use existing group*. A flyout opens and displays device
+groups. If you don’t have any device groups yet, you’ll be prompted to
+create a new device group.
+
+=== What does the Add All Devices option do?
+
+When you are creating or editing a policy, you might see the *Add all
+devices* option.
+
+:::image type=``content'' source=``media/add-all-devices-option.png''
+alt-text=``Screenshot of the Add All Devices option.'':::
+
+If you select this option, all devices that are enrolled in Microsoft
+Intune will receive the policy that you are creating or editing by
+default.
+
+=== Next steps
+
+Choose one or more of the following tasks:
+
+* link:mdb-view-edit-policies.md[View or edit policies]
+* link:mdb-create-new-policy.md[Create a new policy]
+* link:mdb-view-manage-incidents.md[View and manage incidents in
+Defender for Business]
+* link:mdb-respond-mitigate-threats.md[Respond to and mitigate threats
+in Defender for Business]
+* link:mdb-review-remediation-actions.md[Review remediation actions in
+the Action center]

@@ -1,0 +1,57 @@
+= 
+dansimp
+
+== Fix possible mail loop insight in the Security & Compliance Center
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:exchange-online-protection-overview.md[Exchange
+Online Protection] - link:defender-for-office-365.md[Microsoft Defender
+for Office 365 plan 1 and plan 2] -
+link:../defender/microsoft-365-defender.md[Microsoft 365 Defender]
+
+Mail loops are bad because:
+
+* They waste system resources.
+* They consume your organization’s mail volume quota.
+* They send confusing non-delivery reports (also known as NDRs or bounce
+messages) to the original message senders.
+
+The *Fix possible mail loop* insight in the *Recommended for you* area
+of the link:mail-flow-insights-v2.md[Mail flow dashboard] in the
+https://protection.office.com[Security & Compliance Center] notifies you
+when a mail loop is detected in your organization.
+
+This insight appears only after the condition is detected (if you don’t
+have any mail loops, you won’t see the insight).
+
+:::image type=``content''
+source=``../../media/mfi-fix-possible-mail-loop.png'' alt-text=``The Fix
+slow mail flow rules insight in the Recommended for you area of the Mail
+flow dashboard''
+lightbox=``../../media/mfi-fix-possible-mail-loop.png'':::
+
+When you click *View details* on the widget, a flyout appears with more
+information:
+
+* *Domain*
+* *Number of messages*: You can click *View sample messages* to see the
+link:message-trace-scc.md[message trace] results for a sample of the
+messages that were affected by the loop.
+* *Domain type*” For example, Authoritative or Non-authoritative.
+* *MX record*: The host (*Mail server*) and *Priority* values of the MX
+record for the domain.
+* *Loop reason* and *How to fix*: We’ll identify the most common mail
+loop scenarios and provide recommended actions to fix the loop.
+
+:::image type=``content''
+source=``../../media/mfi-fix-possible-mail-loop-details.png''
+alt-text=``The Details flyout that appears after clicking View details
+on the Fix possible mail loop insight''
+lightbox=``../../media/mfi-fix-possible-mail-loop-details.png'':::
+
+=== See also
+
+For information about other insights in the Mail flow dashboard, see
+link:mail-flow-insights-v2.md[Mail flow insights in the Security &
+Compliance Center].

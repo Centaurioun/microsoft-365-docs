@@ -1,0 +1,101 @@
+= 
+cmcatee-MSFT
+
+== Change your Microsoft 365 for business billing addresses
+
+Your bill or invoice contains three addresses:
+
+* *Sold-To Address* Your company name and address, as shown in your
+organization profile.
+* *Bill-To address* The address of your billing department, usually the
+same as the *Sold-To* address.
+* *Service Usage Address* The address where the service is being used,
+usually the same as the *Sold-To* address. If your organization has
+remote users or multiple offices, use the address where the majority of
+your users are located.
+
+In most cases, these addresses are the same. If you need to change one
+or more of the addresses, you can do that. You can also provide an
+alternate email address to receive billing notifications and change the
+alternate email address for other admins.
+
+To learn more about your bill or invoice, see
+link:view-your-bill-or-invoice.md[View your bill or invoice] and
+link:understand-your-invoice2.md[Understand your bill or invoice].
+
+=== Change your Sold-To address
+
+::: moniker range=``o365-worldwide''
+
+[arabic]
+. In the admin center, go to the *Billing* > *Billing accounts* page.
+
+::: moniker-end
+
+::: moniker range=``o365-21vianet''
+
+[arabic]
+. In the admin center, go to the *Billing* > *Billing accounts* page.
+
+::: moniker-end
+
+[arabic, start=2]
+. Select *Edit billing account information*.
+. Update your organization information, then select *Save*.
+
+=== Change your Bill-To address
+
+::: moniker range=``o365-worldwide''
+
+[arabic]
+. In the admin center, go to the *Billing* > Payment methods page.
+
+::: moniker-end
+
+::: moniker range=``o365-21vianet''
+
+[arabic]
+. In the admin center, go to the *Billing* > *Payment methods* page.
+
+::: moniker-end
+
+[arabic, start=2]
+. Select the credit card or bank account that you want to change.
+. On the *Payment method details* page, select *Edit*.
+. Update your billing address, then select *Save* > *Done*.
+
+=== Change your service usage address
+
+::: moniker range=``o365-worldwide''
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+
+::: moniker-end
+
+::: moniker range=``o365-21vianet''
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
++
+If you’re using Office 365 operated by 21Vianet in China, see
+link:../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md[View
+your bill or get Fapiaos for Office 365 operated by 21Vianet].
+
+::: moniker-end
+
+[arabic, start=2]
+. On the *Products* tab, select the subscription that you want to
+change.
+. On the subscription details page, in the *Service usage address*
+section, select *Edit service usage address*.
+. In the *Edit service usage address* pane, update your address, then
+select *Save*.
+
+=== Related content
+
+link:view-your-bill-or-invoice.md[View your bill or invoice] (article) +
+link:understand-your-invoice2.md[Understand your bill or invoice]
+(article) +
+link:pay-for-your-subscription.md[Pay for your subscription] (article) +
+link:../index.yml[Subscriptions and billing - Admin Help] (link page)

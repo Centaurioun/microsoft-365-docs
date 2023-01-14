@@ -1,0 +1,79 @@
+= 
+vpattnai
+:keywords: XDR, Xtended detection and response, defender experts for
+xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed
+detection and response (MDR) service, service delivery manager,
+Microsoft Defender Experts for hunting, threat hunting and analysis,
+Microsoft XDR service
+
+== Get started with Microsoft Defender Experts for XDR
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+
+{empty}[!INCLUDE link:../includes/prerelease.md[Prerelease]]
+
+Once the Defender Experts for XDR team is ready to onboard you, we’ll
+reach out to get you started.
+
+=== Activate your trial license
+
+[arabic]
+. Select the link in the welcome email to go directly to the Defender
+Experts settings page in the Microsoft 365 Defender portal. You can also
+open this page by going to *Settings* > *Defender Experts*.
+. Read the Defender Experts for XDR preview terms and conditions then
+select *Accept* to accept them.
+. Get your free license in Microsoft 365 admin center. In the checkout
+page, select *Place order*.
+
+=== Grant permissions to our experts
+
+By default, Defender Experts for XDR requires the following permissions
+to investigate incidents and notify you when you need to take action:
+
+* *Service provider access* - This permission lets our experts sign in
+to your tenant and deliver services based on assigned security roles.
+For details,
+link:/azure/active-directory/external-identities/cross-tenant-access-overview[learn
+more about cross-tenant access].
+* *Security reader* - This built-in Azure Active Directory (Azure AD)
+role lets our experts investigate incidents and provide guidance on
+necessary response actions.
+
+You can also provide our experts the following permissions to
+investigate incidents on your behalf:
+
+* *Security operator* (recommended) - In addition to the permissions
+provided to a security reader, this built-in Azure AD role lets our
+experts take necessary actions to remediate active threats.
+* *Security administrator* (optimal) - In addition to the permissions
+provided to a security operator, this built-in Azure AD role lets our
+experts configure security settings and deploy preventive measures.
+
+link:/azure/active-directory/roles/permissions-reference[Learn more
+about Azure AD roles and permissions]
+
+Follow these steps to grant our experts additional permissions:
+
+[arabic]
+. In the same Defender Experts settings page mentioned earlier, select
+*Manage permissions*.
+. Under *Additional permissions*, select the other role(s) you want to
+grant.
+. Select *Give access*.
+
+____
+[!IMPORTANT] If you skip providing additional permissions, our experts
+won’t be able to take certain response actions to secure your network.
+____
+
+=== Go to the next step
+
+link:start-using-mdex-xdr.md[Start using Microsoft Defender Experts for
+XDR preview service]

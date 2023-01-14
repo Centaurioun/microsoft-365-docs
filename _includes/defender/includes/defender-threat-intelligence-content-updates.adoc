@@ -1,0 +1,8 @@
+== Week of June 20, 2022
+
+[width="100%",cols="24%,46%,30%",options="header",]
+|===
+|Published On |Topic title |Change
+|6/23/2022 |link:/defender-threat-intelligence/index[Defender Threat
+Intelligence] |modified
+|===

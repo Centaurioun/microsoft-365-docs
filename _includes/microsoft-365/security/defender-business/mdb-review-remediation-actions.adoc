@@ -1,0 +1,59 @@
+= 
+denisebmsft
+
+== Review remediation actions in the Action center
+
+As threats are detected, remediation actions come into play. Depending
+on the particular threat and how your security settings are configured,
+remediation actions might be taken automatically or only upon approval.
+Examples of remediation actions include stopping a process from running
+or removing a scheduled task.
+
+All remediation actions are tracked in the Action center.
+
+:::image type=``content''
+source=``../../media/defender-business/mdb-actioncenter.png''
+alt-text=``Screenshot of the Action center'':::
+
+*This article describes*:
+
+* link:#how-to-use-the-action-center[How to use the Action center]
+* link:#remediation-actions[Remediation actions]
+
+=== How to use the Action center
+
+[arabic]
+. Go to the Microsoft 365 Defender portal
+(https://security.microsoft.com) and sign in.
+. In the navigation pane, choose *Action center*.
+. Select the *Pending* tab to view and approve (or reject) any pending
+actions. Actions can arise from antivirus/antimalware protection,
+automated investigations, manual response activities, or live response
+sessions.
+. Select the *History* tab to view a list of completed actions.
+
+=== Remediation actions
+
+Defender for Business includes several remediation actions. These
+actions include manual response actions, actions following automated
+investigation, and live response actions.
+
+The following table lists remediation actions that are available.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Source |Actions
+|link:../defender-endpoint/automated-investigations.md[Automated
+investigations] |
+
+|link:../defender-endpoint/respond-machine-alerts.md[Manual response
+actions] |
+
+|link:../defender-endpoint/live-response.md[Live response] |
+|===
+
+=== Next steps
+
+* link:mdb-respond-mitigate-threats.md[Respond to and mitigate threats
+in Defender for Business]
+* link:mdb-manage-devices.md[Manage devices in Defender for Business]

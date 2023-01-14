@@ -1,0 +1,253 @@
+= 
+chrisda
+
+== Anti-spam message headers in Microsoft 365
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:exchange-online-protection-overview.md[Exchange
+Online Protection] - link:defender-for-office-365.md[Microsoft Defender
+for Office 365 plan 1 and plan 2] -
+link:../defender/microsoft-365-defender.md[Microsoft 365 Defender]
+
+In all Microsoft 365 organizations, Exchange Online Protection (EOP)
+scans all incoming messages for spam, malware, and other threats. The
+results of these scans are added to the following header fields in
+messages:
+
+* *X-Forefront-Antispam-Report*: Contains information about the message
+and about how it was processed.
+* *X-Microsoft-Antispam*: Contains additional information about bulk
+mail and phishing.
+* *Authentication-results*: Contains information about SPF, DKIM, and
+DMARC (email authentication) results.
+
+This article describes what’s available in these header fields.
+
+For information about how to view an email message header in various
+email clients, see
+https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c[View
+internet message headers in Outlook].
+
+____
+[!TIP] You can copy and paste the contents of a message header into the
+https://mha.azurewebsites.net/[Message Header Analyzer] tool. This tool
+helps parse headers and put them into a more readable format.
+____
+
+=== X-Forefront-Antispam-Report message header fields
+
+After you have the message header information, find the
+*X-Forefront-Antispam-Report* header. There will be multiple field and
+value pairs in this header separated by semicolons (;). For example:
+
+`...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
+
+The individual fields and values are described in the following table.
+
+____
+[!NOTE] The *X-Forefront-Antispam-Report* header contains many different
+fields and values. Fields that aren’t described in the table are used
+exclusively by the Microsoft anti-spam team for diagnostic purposes.
+____
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Field |Description
+|`ARC` |The `ARC` protocol has the following fields:
+
+|`CAT:` |The category of protection policy, applied to the message:
+
+|`CIP:[IP address]` |The connecting IP address. You can use this IP
+address in the IP Allow List or the IP Block List. For more information,
+see link:configure-the-connection-filter-policy.md[Configure connection
+filtering].
+
+|`CTRY` |The source country as determined by the connecting IP address,
+which may not be the same as the originating sending IP address.
+
+|`H:[helostring]` |The HELO or EHLO string of the connecting email
+server.
+
+|`IPV:CAL` |The message skipped spam filtering because the source IP
+address was in the IP Allow List. For more information, see
+link:configure-the-connection-filter-policy.md[Configure connection
+filtering].
+
+|`IPV:NLI` |The IP address was not found on any IP reputation list.
+
+|`LANG` |The language in which the message was written, as specified by
+the country code (for example, ru_RU for Russian).
+
+|`PTR:[ReverseDNS]` |The PTR record (also known as the reverse DNS
+lookup) of the source IP address.
+
+|`SCL` |The spam confidence level (SCL) of the message. A higher value
+indicates the message is more likely to be spam. For more information,
+see link:spam-confidence-levels.md[Spam confidence level (SCL)].
+
+|`SFTY` |The message was identified as phishing and will also be marked
+with one of the following values:
+
+|`SFV:BLK` |Filtering was skipped and the message was blocked because it
+was sent from an address in a user’s Blocked Senders list.
+
+|`SFV:NSPM` |Spam filtering marked the message as non-spam and the
+message was sent to the intended recipients.
+
+|`SFV:SFE` |Filtering was skipped and the message was allowed because it
+was sent from an address in a user’s Safe Senders list.
+
+|`SFV:SKA` |The message skipped spam filtering and was delivered to the
+Inbox because the sender was in the allowed senders list or allowed
+domains list in an anti-spam policy. For more information, see
+link:configure-your-spam-filter-policies.md[Configure anti-spam
+policies].
+
+|`SFV:SKB` |The message was marked as spam because it matched a sender
+in the blocked senders list or blocked domains list in an anti-spam
+policy. For more information, see
+link:configure-your-spam-filter-policies.md[Configure anti-spam
+policies].
+
+|`SFV:SKI` |Similar to SFV:SKN, the message skipped spam filtering for
+another reason (for example, an intra-organizational email within a
+tenant).
+
+|`SFV:SKN` |The message was marked as non-spam prior to being processed
+by spam filtering. For example, the message was marked as SCL -1 or
+*Bypass spam filtering* by a mail flow rule.
+
+|`SFV:SKQ` |The message was released from the quarantine and was sent to
+the intended recipients.
+
+|`SFV:SKS` |The message was marked as spam prior to being processed by
+spam filtering. For example, the message was marked as SCL 5 to 9 by a
+mail flow rule.
+
+|`SFV:SPM` |The message was marked as spam by spam filtering.
+
+|`SRV:BULK` |The message was identified as bulk email by spam filtering
+and the bulk complaint level (BCL) threshold. When the
+_MarkAsSpamBulkMail_ parameter is `On` (it’s on by default), a bulk
+email message is marked as spam (SCL 6). For more information, see
+link:configure-your-spam-filter-policies.md[Configure anti-spam
+policies].
+
+|`X-CustomSpam: [ASFOption]` |The message matched an Advanced Spam
+Filter (ASF) setting. To see the X-header value for each ASF setting,
+see link:advanced-spam-filtering-asf-options.md[Advanced Spam Filter
+(ASF) settings].
+|===
+
+=== X-Microsoft-Antispam message header fields
+
+The following table describes useful fields in the
+*X-Microsoft-Antispam* message header. Other fields in this header are
+used exclusively by the Microsoft anti-spam team for diagnostic
+purposes.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Field |Description
+|`BCL` |The bulk complaint level (BCL) of the message. A higher BCL
+indicates a bulk mail message is more likely to generate complaints (and
+is therefore more likely to be spam). For more information, see
+link:bulk-complaint-level-values.md[Bulk complaint level (BCL)].
+|===
+
+=== Authentication-results message header
+
+The results of email authentication checks for SPF, DKIM, and DMARC are
+recorded (stamped) in the *Authentication-results* message header in
+inbound messages.
+
+The following list describes the text that’s added to the
+*Authentication-Results* header for each type of email authentication
+check:
+
+* SPF uses the following syntax:
++
+[source,text]
+----
+spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
+----
++
+For example:
++
+[source,text]
+----
+spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
+spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
+----
+* DKIM uses the following syntax:
++
+[source,text]
+----
+dkim=<pass|fail (reason)|none> header.d=<domain>
+----
++
+For example:
++
+[source,text]
+----
+dkim=pass (signature was verified) header.d=contoso.com
+dkim=fail (body hash did not verify) header.d=contoso.com
+----
+* DMARC uses the following syntax:
++
+[source,text]
+----
+dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
+----
++
+For example:
++
+[source,text]
+----
+dmarc=pass action=none header.from=contoso.com
+dmarc=bestguesspass action=none header.from=contoso.com
+dmarc=fail action=none header.from=contoso.com
+dmarc=fail action=oreject header.from=contoso.com
+----
+
+==== Authentication-results message header fields
+
+The following table describes the fields and possible values for each
+email authentication check.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Field |Description
+|`action` |Indicates the action taken by the spam filter based on the
+results of the DMARC check. For example:
+
+|`compauth` |Composite authentication result. Used by Microsoft 365 to
+combine multiple types of authentication such as SPF, DKIM, DMARC, or
+any other part of the message to determine whether or not the message is
+authenticated. Uses the From: domain as the basis of evaluation.
+
+|`dkim` |Describes the results of the DKIM check for the message.
+Possible values include:
+
+|`dmarc` |Describes the results of the DMARC check for the message.
+Possible values include:
+
+|`header.d` |Domain identified in the DKIM signature if any. This is the
+domain that’s queried for the public key.
+
+|`header.from` |The domain of the `5322.From` address in the email
+message header (also known as the From address or P2 sender). Recipient
+sees the From address in email clients.
+
+|`reason` |The reason the composite authentication passed or failed. The
+value is a 3-digit code. For example:
+
+|`smtp.mailfrom` |The domain of the `5321.MailFrom` address (also known
+as the MAIL FROM address, P1 sender, or envelope sender). This is the
+email address that’s used for non-delivery reports (also known as NDRs
+or bounce messages).
+
+|`spf` |Describes the results of the SPF check for the message. Possible
+values include:
+|===

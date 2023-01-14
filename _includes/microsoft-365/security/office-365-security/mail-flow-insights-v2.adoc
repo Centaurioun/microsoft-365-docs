@@ -1,0 +1,79 @@
+= 
+dansimp
+
+== Mail flow insights in the Security & Compliance Center
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:exchange-online-protection-overview.md[Exchange
+Online Protection] - link:defender-for-office-365.md[Microsoft Defender
+for Office 365 plan 1 and plan 2] -
+link:../defender/microsoft-365-defender.md[Microsoft 365 Defender]
+
+Admins can use Mail flow dashboard in the Security & Compliance Center
+to discover trends, insights, and take actions to fix issues related to
+mail flow in their organization.
+
+:::image type=``content''
+source=``../../media/mail-flow-dashboard-v2.png'' alt-text=``The Mail
+flow dashboard in the Security & Compliance Center''
+lightbox=``../../media/mail-flow-dashboard-v2.png'':::
+
+The available insights are:
+
+* link:mfi-auto-forwarded-messages-report.md[Auto-forwarded messages
+insight]
+* link:mfi-mail-loop-insight.md[Fix possible mail loop insight]1
+* link:mfi-slow-mail-flow-rules-insight.md[Fix slow mail flow rules
+insight]1
+* link:mfi-mail-flow-map-report.md[Mail flow map]
+* link:mfi-new-domains-being-forwarded-email.md[New domains being
+forwarded email insight]2
+* link:mfi-new-users-forwarding-email.md[New users forwarding email
+insight]2
+* link:mfi-non-accepted-domain-report.md[Non-accepted domain report]
+* link:mfi-non-delivery-report.md[Non-delivery report]
+* link:mfi-outbound-and-inbound-mail-flow.md[Outbound and inbound mail
+flow insight]
+* link:mfi-queue-alerts-and-queues.md[Queues insight]
+* link:mfi-smtp-auth-clients-report.md[SMTP Auth clients insight and
+report]
+* link:mfi-domain-mail-flow-status-insight.md[Top domain mail flow
+status insight]
+
+1 This insight appears in the *Recommended for you* area of the Mail
+flow dashboard only after the issue is detected. Otherwise, you won’t
+see it.
+
+2 This insight doesn’t appear on the Mail flow dashboard, but is visible
+on the link:view-mail-flow-reports.md#forwarding-report[Forwarding
+report] page after the issue is detected. Otherwise, you won’t see it.
+
+=== Permissions required to view the Mail flow dashboard
+
+The Mail flow dashboard is available to members of the following role
+groups:
+
+* *Organization Management* in the Security & Compliance Center (global
+admins).
+* *link:/azure/active-directory/roles/permissions-reference#exchange-administrator[Exchange
+Administrator]* in Azure Active Directory.
+* *MailFlow Administrator* in the Security & Compliance Center. If the
+account is not also a member of the Organization Management or Exchange
+Administrator role groups, consider the following issues:
+** The user must sign in to the Security & Compliance Center directly at
+https://protection.office.com.
+** The user will only have read-only permission to the Mail flow
+dashboard.
+** The user won’t have access to the Microsoft 365 admin center.
+
+For more information about permissions, see
+link:permissions-in-the-security-and-compliance-center.md[Permissions in
+the Security & Compliance Center] and
+link:grant-access-to-the-security-and-compliance-center.md[Give users
+access to the Security & Compliance Center].
+
+=== Where to find the Mail flow dashboard
+
+To go directly to the Mail flow dashboard, open
+https://protection.office.com/mailflow/dashboard.

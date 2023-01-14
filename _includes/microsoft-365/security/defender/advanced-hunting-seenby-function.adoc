@@ -1,0 +1,56 @@
+= 
+schmurky
+:keywords: advanced hunting, threat hunting, cyber threat hunting,
+Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry,
+schema reference, kusto, SeenBy, device discovery, function, enrichment
+
+== SeenBy()
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender
+
+The `SeenBy()` function is invoked to see a list of onboarded devices
+that have seen a certain device using the device discovery feature.
+
+This function returns a table that has the following column:
+
+[width="100%",cols="31%,37%,32%",options="header",]
+|===
+|Column |Data type |Description
+|`DeviceId` |`string` |Unique identifier for the device in the service
+|===
+
+=== Syntax
+
+[source,kusto]
+----
+invoke SeenBy(x)
+----
+
+* where *x* is the device ID of interest
+
+____
+[!TIP] Enrichment functions will show supplemental information only when
+they are available. Availability of information is varied and depends on
+a lot of factors. Make sure to consider this when using SeenBy() in your
+queries or in creating custom detections. For best results, we recommend
+using the SeenBy() function with the DeviceInfo table.
+____
+
+==== Example: Obtain list of onboarded devices that have seen a device
+
+[source,kusto]
+----
+DeviceInfo 
+| where OnboardingStatus <> "Onboarded" 
+| limit 100 | invoke SeenBy()
+----
+
+=== Related topics
+
+* link:advanced-hunting-overview.md[Advanced hunting overview]
+* link:advanced-hunting-query-language.md[Learn the query language]
+* link:advanced-hunting-schema-tables.md[Understand the schema]
+* link:advanced-hunting-shared-queries.md[Get more query examples]

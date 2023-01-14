@@ -1,0 +1,152 @@
+= 
+schmurky
+:keywords: advanced hunting, threat hunting, cyber threat hunting,
+mdatp, microsoft defender atp, microsoft defender for endpoint, wdatp
+search, query, telemetry, schema reference, kusto, table, data
+
+== Understand the advanced hunting schema in Microsoft Defender for Endpoint
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+The link:advanced-hunting-overview.md[advanced hunting] schema is made
+up of multiple tables that provide either event information or
+information about devices and other entities. To effectively build
+queries that span multiple tables, you need to understand the tables and
+the columns in the advanced hunting schema.
+
+=== Get schema information in the Defender for Cloud
+
+While constructing queries, use the built-in schema reference to quickly
+get the following information about each table in the schema:
+
+* *Tables description*: Type of data contained in the table and the
+source of that data.
+* *Columns*: All the columns in the table.
+* *Action types*: Possible values in the `ActionType` column
+representing the event types supported by the table. These values are
+provided only for tables that contain event information.
+* *Sample query*: Example queries that feature how the table can be
+utilized.
+
+==== Access the schema reference
+
+To quickly access the schema reference, select the *View reference*
+action next to the table name in the schema representation. You can also
+select *Schema reference* to search for a table.
+
+:::image type=``content'' source=``images/ah-reference.png''
+alt-text=``The Advanced hunting page''
+lightbox=``images/ah-reference.png'':::
+
+=== Learn the schema tables
+
+The following reference lists all the tables in the advanced hunting
+schema. Each table name links to a page describing the column names for
+that table.
+
+Table and column names are also listed within the Microsoft 365 Defender
+portal, in the schema representation on the advanced hunting screen.
+
+'''''
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Table name |Description
+|*link:advanced-hunting-devicealertevents-table.md[DeviceAlertEvents]*
+|Alerts on Microsoft 365 Defender
+
+|*link:advanced-hunting-deviceinfo-table.md[DeviceInfo]* |Device
+information, including OS information
+
+|*link:advanced-hunting-devicenetworkinfo-table.md[DeviceNetworkInfo]*
+|Network properties of devices, including adapters, IP and MAC
+addresses, as well as connected networks and domains
+
+|*link:advanced-hunting-deviceprocessevents-table.md[DeviceProcessEvents]*
+|Process creation and related events
+
+|*link:advanced-hunting-devicenetworkevents-table.md[DeviceNetworkEvents]*
+|Network connection and related events
+
+|*link:advanced-hunting-devicefileevents-table.md[DeviceFileEvents]*
+|File creation, modification, and other file system events
+
+|*link:advanced-hunting-deviceregistryevents-table.md[DeviceRegistryEvents]*
+|Creation and modification of registry entries
+
+|*link:advanced-hunting-devicelogonevents-table.md[DeviceLogonEvents]*
+|Sign-ins and other authentication events
+
+|*link:advanced-hunting-deviceimageloadevents-table.md[DeviceImageLoadEvents]*
+|DLL loading events
+
+|*link:advanced-hunting-deviceevents-table.md[DeviceEvents]* |Multiple
+event types, including events triggered by security controls such as
+Microsoft Defender Antivirus and exploit protection
+
+|*link:advanced-hunting-devicefilecertificateinfo-table.md[DeviceFileCertificateInfo]*
+|Certificate information of signed files obtained from certificate
+verification events on endpoints
+
+|*link:advanced-hunting-devicetvmsoftwareinventory-table.md[DeviceTvmSoftwareInventory]*
+|Inventory of software installed on devices, including their version
+information and end-of-support status
+
+|*link:advanced-hunting-devicetvmsoftwarevulnerabilities-table.md[DeviceTvmSoftwareVulnerabilities]*
+|Software vulnerabilities found on devices and the list of available
+security updates that address each vulnerability
+
+|*link:advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md[DeviceTvmSoftwareVulnerabilitiesKB]*
+|Knowledge base of publicly disclosed vulnerabilities, including whether
+exploit code is publicly available
+
+|*link:advanced-hunting-devicetvmsecureconfigurationassessment-table.md[DeviceTvmSecureConfigurationAssessment]*
+|Microsoft Defender Vulnerability Management assessment events,
+indicating the status of various security configurations on devices
+
+|*link:advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md[DeviceTvmSecureConfigurationAssessmentKB]*
+|Knowledge base of various security configurations used by Defender
+Vulnerability Management to assess devices; includes mappings to various
+standards and benchmarks
+
+| |
+|===
+
+____
+[!TIP] Use
+link:/microsoft-365/security/defender/advanced-hunting-overview[advanced
+hunting at Microsoft 365 Defender] to hunt for threats using data from
+Defender for Endpoint, Microsoft Defender for Office 365, Microsoft
+Defender for Cloud Apps, and Microsoft Defender for Identity.
+link:/microsoft-365/security/defender/m365d-enable[Turn on Microsoft 365
+Defender].
+____
+
+Learn more about how to move your advanced hunting workflows from
+Microsoft Defender for Endpoint to Microsoft 365 Defender in
+link:/microsoft-365/security/defender/advanced-hunting-migrate-from-mde[Migrate
+advanced hunting queries from Microsoft Defender for Endpoint].
+
+=== Related topics
+
+* link:advanced-hunting-overview.md[Advanced hunting overview]
+* link:advanced-hunting-query-language.md[Learn the query language]
+* link:advanced-hunting-query-results.md[Work with query results]
+* link:advanced-hunting-best-practices.md[Apply query best practices]
+* link:overview-custom-detections.md[Custom detections overview]
+* https://techcommunity.microsoft.com/t5/microsoft-defender-atp/advanced-hunting-data-schema-changes/ba-p/1043914[Advanced
+hunting data schema changes]

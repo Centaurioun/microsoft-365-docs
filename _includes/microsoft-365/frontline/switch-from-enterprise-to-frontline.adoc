@@ -1,0 +1,387 @@
+= 
+LanaChin
+
+== Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
+
+If you’re considering switching some of your users from a Microsoft 365
+E plan to a Microsoft 365
+https://www.microsoft.com/microsoft-365/enterprise/f3[F3] or
+https://www.microsoft.com/microsoft-365/enterprise/f1[F1] plan, this
+article provides guidance to help you prepare your organization for the
+change. Changing from an E plan to an F plan affects the services and
+features users have access to.
+
+E plans are meant for information workers (employees who typically work
+at a desk) and F plans are meant for frontline workers (employees who
+are on the go, often on mobile devices, and work directly with customers
+or the general public). Each plan may continue to evolve over time to
+become more tailored for information workers and frontline workers
+respectively. To learn more, see
+link:flw-licensing-options.md[Understand frontline worker user types and
+licensing].
+
+You’ll get an overview of what to expect when users are switched to an F
+plan, how to prepare for the change, and what to do after switching
+plans to transition the frontline workers in your organization.
+
+=== Understand the key differences between E and F plans
+
+Start by getting familiar with the service and feature differences
+between the plans.
+
+Some key differences include:
+
+* F plans don’t include Office desktop apps or the Outlook desktop app.
+* F plans are limited to devices with integrated screens smaller than
+10.9 inches on Office mobile apps.
+* F plans link:pin-teams-apps-based-on-license.md[pin frontline worker
+apps] like Walkie Talkie, Tasks, Shifts, and Approvals by default in
+Microsoft Teams.
+
+In this section, we’ve included more information about these key
+differences and highlighted some additional differences to pay attention
+to. Keep in mind that this isn’t a comprehensive list. To learn more:
+
+* See https://go.microsoft.com/fwlink/p/?linkid=2139145[Modern work plan
+comparison] for a detailed comparison of what’s included in E and F
+plans.
+* See
+link:/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options#service-availability-within-each-microsoft-365-and-office-365-plan[service
+availability] and
+link:/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description#feature-availability-across-some-plans[feature
+availability across plans] for a list of service and feature
+availability across E and F plans.
+
+==== Office apps
+
+Office desktop apps aren’t included in F3 and F1 plans. Your frontline
+workers can use Office for the web and Office mobile apps to get things
+done. Keep in mind that F3 users have full access to documents in Office
+for the web and F1 users have read-only access.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Service or feature |Microsoft 365 E3/E5 |Microsoft 365 F3 |Microsoft
+365 F1
+|Office desktop apps (Word, Excel, OneNote, PowerPoint, Access,
+Publisher) |Yes |No |No
+
+|Office for the web (Word, Excel, OneNote, PowerPoint) |Yes |Yes
+|Read-only
+
+|Office mobile apps (Word, Excel, PowerPoint, Outlook, OneNote) |Yes
+|Yes¹ |Read-only
+|===
+
+¹Editing files supported on devices with integrated screens less than
+10.9 inches.
+
+===== Office for the web
+
+With Office for the web, your frontline workers use a web browser to
+open Word, Excel, OneNote, and PowerPoint files.
+
+Here’s some differences to be aware when using Office for the web. For a
+detailed feature comparison between Office for the web and Office
+desktop apps, see
+link:/office365/servicedescriptions/office-online-service-description/office-online-service-description[Office
+for the web service description].
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Service or feature |Some differences |Learn more
+|*Word for the web* | |
+|*Excel for the web* | |
+|*OneNote for the web* | |
+|*PowerPoint for the web* | |
+|===
+
+===== Office mobile
+
+Your frontline workers can get Office on their mobile devices in two
+ways:
+
+* Install the Office mobile app that combines Word, Excel, and
+PowerPoint.
+* Install individual Office mobile apps for Word, Excel, PowerPoint, and
+OneNote.
+
+To learn more, see
+https://support.microsoft.com/office/install-and-set-up-office-on-an-android-cafe9d6f-8b0c-4b03-b20a-12438a82a22d[Install
+and set up Office on an Android] and
+https://support.microsoft.com/office/install-and-set-up-office-on-an-iphone-or-ipad-9df6d10c-7281-4671-8666-6ca8e339b628[Install
+and set up Office on an iPhone or iPad].
+
+For more information about the features that are available in Office
+mobile, see
+https://support.microsoft.com/office/what-you-can-do-in-the-office-apps-on-mobile-devices-with-a-microsoft-365-subscription-9ef8b63a-05fd-4f9c-bac5-29da046833ea[What
+you can do in the Office apps on mobile devices with a Microsoft 365
+subscription].
+
+===== Email
+
+F3 users have a 2 GB mailbox that they can access through Outlook on the
+web. For a feature comparison between Outlook on the web and the Outlook
+desktop app, see
+https://support.microsoft.com/office/compare-outlook-for-pc-outlook-on-the-web-and-outlook-for-ios-android-b26a7bf5-0ac7-48ba-97af-984e0645dde5[Compare
+Outlook for PC&#44; Outlook on the web&#44; and Outlook for iOS & Android].
+
+F1 users don’t have mailbox rights. Although a mailbox is provisioned
+for users through the Exchange Kiosk plan, they aren’t entitled to use
+it. We recommend that you
+link:/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app[disable
+Outlook on the web] for F1 users.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Service or feature |Microsoft 365 E3/E5 |Microsoft 365 F3 |Microsoft
+365 F1
+|Exchange Online mailbox |Yes (100 GB mailbox) |Yes (2 GB mailbox) |No¹
+
+|Outlook desktop app |Yes |No |No
+
+|Archive mailbox |Yes |No |No
+
+|Delegate access |Yes |No |No
+|===
+
+¹F1 includes the Exchange Kiosk plan to enable Teams calendar only and
+doesn’t include mailbox rights.
+
+To learn more, see
+link:/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description[Exchange
+Online service description].
+
+===== Teams
+
+F3 and F1 plans include the Teams desktop app, mobile app, and web app
+for frontline worker communication and collaboration. Your frontline
+workers have access to Teams features including meetings, chat,
+channels, content, and apps. However, they won’t be able to create live
+events and webinars or use Teams Phone capabilities.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Service or feature |Microsoft 365 E3/E5 |Microsoft 365 F3 |Microsoft
+365 F1
+|Live events |Yes |No |No
+
+|Webinars |Yes |No |No
+
+|Teams Phone |Yes |No |No
+|===
+
+===== SharePoint
+
+F3 and F1 users can collaborate on documents and access
+organization-wide resources such as training materials stored in
+SharePoint. Keep in mind that F3 and F1 plans don’t include site
+mailboxes or personal sites.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Service or feature |Microsoft 365 E3/E5 |Microsoft 365 F3 |Microsoft
+365 F1
+|Site mailbox |Yes |No |No
+
+|Personal site |Yes |No |No
+|===
+
+To learn more about SharePoint limits, see
+link:/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits[SharePoint
+limits].
+
+===== Content services
+
+F3 and F1 users have 2 GB of OneDrive storage to store and share files.
+To learn more, see
+link:/office365/servicedescriptions/onedrive-for-business-service-description[OneDrive
+service description].
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Service or feature |Microsoft 365 E3/E5 |Microsoft 365 F3 |Microsoft
+365 F1
+|OneDrive |Unlimited storage¹ |2 GB storage |2 GB storage
+
+|Microsoft Stream |Yes |Yes² |Yes²
+
+|Sway |Yes |Yes |No
+
+|Visio for the web |Yes |Yes |Read-only
+
+|Delve |Yes |No |No
+|===
+
+¹Up to 5 TB of initial OneDrive storage per user based on the
+link:/onedrive/set-default-storage-space[default quota] of the tenant
+for subscriptions with more than five users. More storage can be
+requested. ²Users can record meetings and consume Stream content but
+can’t publish to or share in Stream.
+
+===== Insights and analytics
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Service or feature |Microsoft 365 E3/E5 |Microsoft 365 F3 |Microsoft
+365 F1
+|Viva Insights |Yes |No |No
+
+|Power BI |Yes |No |No
+|===
+
+===== Work management and automation
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Service or feature |Microsoft 365 E3/E5 |Microsoft 365 F3 |Microsoft
+365 F1
+|Power Apps |Yes |Yes |No
+
+|Power Automate |Yes |Yes |No
+
+|Power Virtual Agents |Yes |Yes |No
+
+|Dataverse for Teams |Yes |Yes |No
+
+|Microsoft Forms |Yes¹ |Yes¹ |No
+
+|Microsoft To Do |Yes |Yes |No
+|===
+
+¹Licensed users can create, share, and manage forms. A license isn’t
+needed to complete or respond to a form.
+
+===== Windows
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Service or feature |Microsoft 365 E3/E5 |Microsoft 365 F3 |Microsoft
+365 F1
+|Windows 11 Enterprise |Yes |Yes¹ |No
+|===
+
+¹No Long-Term Servicing Channel (LTSC) or Microsoft Desktop Optimization
+Pack (MDOP). Virtual desktop infrastructure (VDI) only for licensed
+users of a shared device with a Quality of Service (QoS), (except for
+Azure Virtual Desktop).
+
+=== What to expect
+
+The following table lists important things to consider and recommended
+actions to take during the change process. Use this information to help
+you identify what to do before the switch and what to plan for after the
+switch is completed.
+
+We’ll be referring to this table in later sections of this article.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Service or feature |Before the switch |After the switch
+|Office apps | |Users:
+|Email, Exchange, Outlook | |Users:
+|Teams | |
+|OneDrive | |
+|===
+
+=== Prepare to switch plans
+
+==== Create a change management strategy
+
+An optimal change management strategy includes how you’ll communicate
+with, train, and support your users before and after you switch them to
+an F plan. For example, here are a few things to consider:
+
+* How will users be aware of the switch?
+* How will users learn to navigate the differences in services and
+features? The switch to an F plan might need an increased effort in
+training as it requires a change in behavior.
+* How will users get help and support?
+
+When building your strategy, consider communication and training
+preferences. To help ensure a successful transition, tailor your
+messaging, training, and support to the specific needs of your frontline
+workers and company culture.
+
+Here’s some ideas to help plan your strategy.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Communication |Training |Support
+| | |
+|===
+
+You may also want to check out these adoption resources to help you
+engage and train your users:
+
+* https://adoption.microsoft.com/microsoft-365/[Microsoft 365 –
+Microsoft Adoption]
+* https://adoption.microsoft.com/microsoft-teams/frontline-workers/[Teams
+for frontline workers – Microsoft Adoption]
+
+==== Back up or prepare data
+
+Identify and back up or prepare data that users want to keep. Follow the
+guidance in the link:#what-to-expect[What to expect] section earlier in
+this article and complete the recommended actions in the *Before the
+switch* column of the table for each of the following components:
+
+* Office apps
+* Email, Exchange, Outlook
+* Teams
+* OneDrive
+
+For more information, see
+link:/microsoft-365/commerce/subscriptions/move-users-different-subscription[Back
+up data before switching plans].
+
+=== Switch users to a Microsoft 365 F plan
+
+You can use the Microsoft 365 admin center to manually change plans or a
+scripted approach through PowerShell cmdlets. Whichever method you
+choose, it’s important to complete the license change assignment in one
+operation. In other words, remove an existing E license and replace it
+by assigning an F license in the same operation.
+
+Avoid removing an existing license for a user and then reassigning a new
+one at a later point in time. Doing this can impact a user’s data. To
+learn more, see
+link:/microsoft-365/admin/manage/remove-licenses-from-users#what-happens-to-a-users-data-when-you-remove-their-license[What
+happens to a user’s data when you remove their license?].
+
+For step-by-step guidance on how to change plans in the Microsoft admin
+center, see
+link:/microsoft-365/commerce/subscriptions/change-plans-manually[Manually
+change Microsoft plans].
+
+=== What to do after switching plans
+
+Follow the guidance in the link:#what-to-expect[What to expect] section
+earlier in this article and complete the recommended actions in the
+*After the switch* column of the table for each of the following
+components:
+
+* Office apps
+* Email, Exchange, Outlook
+* Teams
+* OneDrive
+
+Communicate to your users that the change is completed and let them know
+how to get help as defined in your change management strategy. You may
+want to include links to
+link:#user-setup-help-and-learning-resources[help and learning
+resources] to support them in the transition.
+
+=== User setup, help, and learning resources
+
+Here are some links to setup, help, and learning resources that you can
+share with your frontline workers for training and support.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|App |Links
+|Office for the web |
+|Outlook on the web |
+|Office mobile |Setup:
+|Teams |
+|===

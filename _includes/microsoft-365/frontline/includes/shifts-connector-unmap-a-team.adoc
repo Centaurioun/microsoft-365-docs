@@ -1,0 +1,39 @@
+= 
+LanaChin
+
+____
+[!NOTE] The Microsoft 365 system account must be the same for both
+connections. If it isn’t, you’ll get a ``This designated actor profile
+doesn’t have team ownership privileges'' error message.
+____
+
+If you want to unmap a team from one connection and map it to another
+connection:
+
+[arabic]
+. link:#set-up-your-environment[Set up your environment] (if you haven’t
+already).
+. View a list of all team mappings for a connection.
++
+[source,powershell]
+----
+Get-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId>
+----
+. Remove a team mapping from the connection.
++
+[source,powershell]
+----
+Remove-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId> -TeamId <TeamId>
+----
+. Map the team to another connection.
++
+[source,powershell]
+----
+New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId> -TeamId <TeamId> -WfmTeamId <SiteId> -TimeZone <TimeZone>
+----
+
+To learn more, see
+link:/powershell/module/teams/get-csteamsshiftsconnectionteammap[Get-CsTeamsShiftsConnectionTeamMap],
+link:/powershell/module/teams/remove-csteamsshiftsconnectionteammap[Remove-CsTeamsShiftsConnectionTeamMap],
+and
+link:/powershell/module/teams/new-csteamsshiftsconnectionteammap[New-CsTeamsShiftsConnectionTeamMap].

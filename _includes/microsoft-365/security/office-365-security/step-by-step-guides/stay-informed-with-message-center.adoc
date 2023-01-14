@@ -1,0 +1,50 @@
+= 
+MSFTTracyP
+
+== Set up a digest notification of changes to Microsoft Defender for Office 365 using the message center
+
+Would it be convenient if, every week, a digest email of Microsoft
+Defender for Office 365 changes from the Microsoft message center landed
+in your inbox?
+
+The message center is where admins learn about official _service
+announcements and feature changes_, via visiting the site (desktop or
+mobile app), consulting Microsoft Planner, or _by email_.
+
+Follow the steps below to make that helpful digest email happen.
+
+=== What you’ll need
+
+* Microsoft Defender for Office 365 Plan 1 or 2
+* Sufficient permissions (Message center reader as a minimum)
+* 5 minutes to perform the steps below.
+
+=== Steps to set up a weekly digest mail of message center changes and notifications.
+
+[arabic]
+. Login to the *Admin Center* at https://admin.microsoft.com
+. On the left-hand navigation, select *Show All*.
+. Expand *Health* and press *Message Center*.
+. On the page that loads, select *Preferences*.
+. A flyout will appear on the right, select the *Email* tab.
+. Ensure the email notification settings are as expected, you can select
+*Other e-mail addresses* if required to setup the digest to be sent to
+different users or a shared mailbox for example.
+. Select the *Send me a weekly digest about services I select* box, and
+select the services you wish to receive information about, as a minimum
+you should select *Exchange Online* & *Microsoft 365 Defender*.
+. Press *Save*.
+
+You’re done.
+
+=== Watch: Track your message center tasks in Planner
+
+https://www.microsoft.com/en-us/videoplayer/embed/RE4C7Ne[Video]
+
+=== Learn More
+
+link:../../../admin/manage/message-center.md[Track new and changed
+features in the Microsoft 365 Message center]
+
+link:/office365/planner/track-message-center-tasks-planner[Track your
+message center tasks in Planner]

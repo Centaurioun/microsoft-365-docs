@@ -1,0 +1,64 @@
+= 
+dansimp
+:keywords: SIEM, API, AIR, autoIR, Microsoft Defender for Endpoint,
+automated investigation, integration, custom report
+
+== Custom or third-party reporting solutions for Microsoft Defender for Office 365
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:defender-for-office-365.md[Microsoft Defender for
+Office 365 plan 2] -
+link:../defender/microsoft-365-defender.md[Microsoft 365 Defender]
+
+With link:defender-for-office-365.md[Microsoft Defender for Office 365],
+you get link:air-view-investigation-results.md[detailed information
+about automated investigations]. However, some organizations also use a
+custom or third-party reporting solution. If your organization wants to
+integrate information about link:air-about.md[automated investigations]
+with such a solution, you can use the Office 365 Management Activity
+API.
+
+With link:defender-for-office-365.md[Microsoft Defender for Office 365],
+you get link:air-view-investigation-results.md[detailed information
+about automated investigations]. However, some organizations also use a
+custom or third-party reporting solution. If your organization wants to
+integrate information about automated investigations with such a
+solution, you can use the Office 365 Management Activity API.
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Resource |Description
+|link:/office/office-365-management-api/office-365-management-apis-overview[Office
+365 Management APIs overview] |The Office 365 Management Activity API
+provides information about various user, admin, system, and policy
+actions and events from Microsoft 365 and Azure Active Directory
+activity logs.
+
+|link:/office/office-365-management-api/get-started-with-office-365-management-apis[Get
+started with Office 365 Management APIs] |The Office 365 Management API
+uses Azure AD to provide authentication services for your application to
+access Microsoft 365 data. Follow the steps in this article to set this
+up.
+
+|link:/office/office-365-management-api/office-365-management-activity-api-reference[Office
+365 Management Activity API reference] |You can use the Office 365
+Management Activity API to retrieve information about user, admin,
+system, and policy actions and events from Microsoft 365 and Azure AD
+activity logs. Read this article to learn more about how this works.
+
+|link:/office/office-365-management-api/office-365-management-activity-api-schema[Office
+365 Management Activity API schema] |Get an overview of the
+link:/office/office-365-management-api/office-365-management-activity-api-schema#common-schema[Common
+schema] and the
+link:/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema[Defender
+for Office 365 and threat investigation and response schema] to learn
+about specific kinds of data available through the Office 365 Management
+Activity API.
+|===
+
+=== See also
+
+* link:defender-for-office-365.md[Microsoft Defender for Office 365]
+* link:/microsoft-365/security/defender/m365d-autoir[Automated
+investigation and response in Microsoft 365 Defender]

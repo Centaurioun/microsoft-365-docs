@@ -1,0 +1,63 @@
+= 
+kelleyvice-msft
+
+== Cloud services roadmap for Microsoft 365
+
+To get the creativity, teamwork, and productivity benefits of Microsoft
+365 for enterprise, deploy the cloud services that best fit your
+organization’s needs.
+
+If you have existing server-based deployments for Exchange, SharePoint,
+or Skype for Business and want to migrate your entire organization to
+Microsoft 365 for enterprise, see the
+link:client-server-software-roadmap-microsoft-365.md[client and server
+software roadmap]. This roadmap includes Microsoft Office client
+products, on-premises Office Server products, and Microsoft
+Windows-based devices.
+
+=== Deploy
+
+To deploy your cloud services:
+
+* link:configure-services-and-applications.md[Get your services ready]
+* link:migrate-data-to-office-365.md[Migrate your on-premises data to
+Microsoft 365]
+* Get your cloud services set up for your users
+** link:/Exchange/exchange-online[Exchange Online]
+** link:/sharepoint/sharepoint-online[SharePoint]
+** link:/MicrosoftTeams/Teams-overview[Microsoft Teams]
+** https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe[Yammer]
+* link:/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users[Train
+your users]
+
+=== Manage
+
+To manage your cloud services:
+
+* link:view-service-health.md[Check your service health]
+* link:../admin/get-help-support.md[Understand your support options]
+* Administer your cloud services
+** link:/Exchange/exchange-online[Exchange Online]
+** https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a[SharePoint]
+** link:/SkypeForBusiness/skype-for-business-online[Skype for Business]
+** link:/MicrosoftTeams/quality-of-experience-review-guide[Teams]
+** https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe[Yammer]
+* link:tune-microsoft-365-performance.md[Perform performance tuning for
+your cloud services]
+
+=== How Microsoft does cloud services for Microsoft 365
+
+For information about how Microsoft IT has deployed or is managing
+Microsoft 365 cloud services:
+
+[arabic]
+. Go to https://www.microsoft.com/itshowcase[Microsoft IT Showcase].
+. Select *Search content*.
+. Under *Refine results*, select *IT Pro* under *Audience*, and then
+under *Product*, select a cloud service.
+
+=== Next step
+
+Start your cloud services implementation. For guidance, see
+link:configure-services-and-applications.md[Configure Microsoft 365
+Enterprise services and applications].

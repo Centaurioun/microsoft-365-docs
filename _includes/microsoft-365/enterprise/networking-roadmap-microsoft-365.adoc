@@ -1,0 +1,89 @@
+= 
+kelleyvice-msft
+
+== Networking roadmap for Microsoft 365
+
+Microsoft 365 for enterprise includes collaboration and productivity
+cloud services, Microsoft Intune, and many identity and security
+services of Microsoft Azure. All of these cloud-based services rely on
+the security, performance, and reliability of connections from client
+devices over the Internet or dedicated circuits. To host these services
+and make them available to customers all over the world, Microsoft has
+designed a networking infrastructure that emphasizes performance and
+integration.
+
+A crucial part of your Microsoft 365 onboarding is to ensure that your
+network and Internet connections are set up for optimized access.
+Configuring your on-premises network to access a globally distributed
+Software-as-a-Service (SaaS) cloud is different from a traditional
+network that is optimized for traffic to on-premises datacenters and a
+central Internet connection.
+
+Use these articles to understand the key differences and to modify your
+edge devices, client computers, and on-premises network to get the best
+performance for your on-premises users.
+
+=== Plan
+
+In the planning phase of your networking implementation:
+
+* link:microsoft-365-networking-overview.md[Understand how Microsoft 365
+networking works]
+* link:microsoft-365-network-connectivity-principles.md[Learn about
+network connectivity principles]
+* link:assessing-network-connectivity.md[Assess your current network
+connectivity]
+* link:plan-for-network-devices.md[Plan for your network devices]
+* link:network-and-migration-planning.md[Get your network set up for
+migration]
+
+=== Deploy
+
+In the deployment phase of your networking implementation:
+
+* link:set-up-network-for-microsoft-365.md[Ensure your enterprise
+network is optimized for Microsoft 365 connectivity]
+* link:../admin/setup/add-domain.md[Add the DNS domains for your
+organization]
+* link:microsoft-365-vpn-split-tunnel.md[Optimize connectivity for
+remote workers using VPN split tunneling]
+* link:office-365-cdn-quickstart.md[Configure CDN to improve network
+performance]
+* link:microsoft-365-ip-web-service.md[Optimize your connectivity to
+Microsoft 365 endpoints]
+* If needed, link:azure-expressroute.md[configure ExpressRoute]
+
+=== Manage
+
+In the management phase of your networking implementation:
+
+* link:office-365-network-mac-perf-onboarding-tool.md[Test and optimize
+using the Microsoft 365 network connectivity test tool]
+* link:microsoft-365-endpoints.md[Ensure that your network devices are
+using the latest Office 365 endpoints]
+* link:network-planning-and-performance.md[Monitor and tune your
+networking performance]
+* link:monitor-connectivity.md[Monitor your Microsoft 365 connectivity]
+
+=== Network equipment vendors
+
+If you are a network equipment vendor, join the
+link:microsoft-365-networking-partner-program.md[Microsoft 365
+Networking Partner Program]. Enroll in the program to build Microsoft
+365 network connectivity principles into your products and solutions.
+
+=== How Contoso did networking for Microsoft 365
+
+See how the Contoso Corporation, a fictional but representative
+multi-national business, link:contoso-networking.md[optimized their
+network devices and Internet connections] for Microsoft 365 cloud
+services.
+
+image::../media/contoso-overview/contoso-icon.png[The Contoso
+Corporation.]
+
+=== Next step
+
+Start your networking planning with the
+link:microsoft-365-networking-overview.md[Microsoft 365 networking
+connectivity overview].

@@ -1,0 +1,105 @@
+= 
+denisebmsft
+:keywords: quick scan, full scan, antivirus, schedule, PowerShell
+
+== Schedule antivirus scans using PowerShell
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] - Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+This article describes how to configure scheduled scans using PowerShell
+cmdlets. To learn more about scheduling scans and about scan types, see
+link:schedule-antivirus-scans.md[Configure scheduled quick or full
+Microsoft Defender Antivirus scans].
+
+=== Use PowerShell cmdlets to schedule scans
+
+Use the following cmdlets:
+
+[source,powershell]
+----
+Set-MpPreference -ScanParameters
+Set-MpPreference -ScanScheduleDay
+Set-MpPreference -ScanScheduleTime
+Set-MpPreference -RandomizeScheduleTaskTimes
+----
+
+For more information, see
+link:use-powershell-cmdlets-microsoft-defender-antivirus.md[Use
+PowerShell cmdlets to configure and run Microsoft Defender Antivirus]
+and link:/powershell/module/defender/[Defender Antivirus cmdlets] for
+more information on how to use PowerShell with Microsoft Defender
+Antivirus.
+
+=== PowerShell cmdlets for scheduling scans when an endpoint is not in use
+
+Use the following cmdlets:
+
+[source,powershell]
+----
+Set-MpPreference -ScanOnlyIfIdleEnabled
+----
+
+For more information, see
+link:use-powershell-cmdlets-microsoft-defender-antivirus.md[Use
+PowerShell cmdlets to configure and run Microsoft Defender Antivirus]
+and link:/powershell/module/defender/[Defender Antivirus cmdlets].
+
+____
+[!NOTE] When you schedule scans for times when endpoints are not in use,
+scans do not honor the CPU throttling configuration and will take full
+advantage of the resources available to complete the scan as fast as
+possible.
+____
+
+=== PowerShell cmdlets for scheduling scans to complete remediation
+
+Use the following cmdlets:
+
+[source,powershell]
+----
+Set-MpPreference -RemediationScheduleDay
+Set-MpPreference -RemediationScheduleTime
+----
+
+See link:use-powershell-cmdlets-microsoft-defender-antivirus.md[Use
+PowerShell cmdlets to configure and run Microsoft Defender Antivirus]
+and link:/powershell/module/defender/[Defender Antivirus cmdlets] for
+more information on how to use PowerShell with Microsoft Defender
+Antivirus.
+
+=== PowerShell cmdlets for scheduling daily scans
+
+Use the following cmdlets:
+
+[source,powershell]
+----
+Set-MpPreference -ScanScheduleQuickScanTime
+----
+
+For more information about how to use PowerShell with Microsoft Defender
+Antivirus, see
+link:use-powershell-cmdlets-microsoft-defender-antivirus.md[Use
+PowerShell cmdlets to configure and run Microsoft Defender Antivirus]
+and link:/powershell/module/defender/[Defender Antivirus cmdlets].
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____

@@ -1,0 +1,87 @@
+= 
+dansimp
+
+== Non-accepted domain report in the Security & Compliance Center
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:exchange-online-protection-overview.md[Exchange
+Online Protection] - link:defender-for-office-365.md[Microsoft Defender
+for Office 365 plan 1 and plan 2] -
+link:../defender/microsoft-365-defender.md[Microsoft 365 Defender]
+
+The *Non-accepted domain* report in the
+link:mail-flow-insights-v2.md[Mail flow dashboard] in the
+https://protection.office.com[Security & Compliance Center] displays
+information about messages from your on-premises email organization
+where the sender’s domain isn’t configured as an accepted domain in your
+Microsoft 365 organization.
+
+Microsoft 365 might throttle these messages if we have data to prove
+that the intent of these messages is malicious. Therefore, it’s
+important for you to understand what’s happening and to fix the issue.
+
+:::image type=``content''
+source=``../../media/mfi-non-accepted-domain-report-widget.png''
+alt-text=``The Non-accepted domain widget in the Mail flow dashboard in
+the Security & Compliance Center''
+lightbox=``../../media/mfi-non-accepted-domain-report-widget.png'':::
+
+=== Report view for the Non-accepted domain report
+
+Clicking the chart on the *Non-accepted domain* widget will take you to
+the *Non-accepted domain* report.
+
+By default, the activity for all affected connectors is shown. If you
+click *Show data for*, you can select a specific connector from the
+dropdown.
+
+If you hover over a data point (day) in the chart, you’ll see the total
+number of messages for the connector.
+
+:::image type=``content''
+source=``../../media/mfi-non-accepted-domain-report-overview-view.png''
+alt-text=``The Report view in the Non-accepted domain report''
+lightbox=``../../media/mfi-non-accepted-domain-report-overview-view.png'':::
+
+=== Details table view for the Non-accepted domain report
+
+If you click *View details table* in a report view, the following
+information is shown:
+
+* *Date*
+* *Inbound connector name*
+* *Sender domain*
+* *Message count*
+* *Sample messages*: The message IDs of a sample of affected messages.
+
+If you click *Filters* in a details table view, you can specify a date
+range with *Start date* and *End date*.
+
+To email the report for a specific date range to one or more recipients,
+click *Request download*.
+
+When you select a row in the table, a flyout appears with the following
+information:
+
+* *Date*
+* *Inbound connector name*
+* *Sender domain*
+* *Message count*
+* *Sample messages*: You can click *View sample messages* to see the
+link:message-trace-scc.md[message trace] results for a sample of the
+affected messages.
+
+:::image type=``content''
+source=``../../media/mfi-non-accepted-domain-report-details-flyout.png''
+alt-text=``The Details flyout after selecting a row in Details table
+view in the Non-accepted domain report''
+lightbox=``../../media/mfi-non-accepted-domain-report-details-flyout.png'':::
+
+To go back to the reports view, click *View report*.
+
+=== Related topics
+
+For information about other insights in the Mail flow dashboard, see
+link:mail-flow-insights-v2.md[Mail flow insights in the Security &
+Compliance Center].

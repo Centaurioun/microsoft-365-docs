@@ -1,0 +1,68 @@
+= 
+MikePlumleyMSFT
+
+== Create a Microsoft 365 group with a specific preferred data location
+
+When users in a multi-geo environment create a Microsoft 365 group, the
+group preferred data location (PDL) is automatically set to that of the
+user. Global, SharePoint, and Exchange Administrators can create groups
+in any _Geography_ they select.
+
+If you need to create a group with a specific PDL, you can do that using
+from the SharePoint admin center or through the Exchange Online
+New-UnifiedGroup Microsoft PowerShell cmdlet. When you do this, both the
+group mailbox and SharePoint site associated with the group will be
+provisioned in the specified PDL.
+
+To create a Microsoft 365 group with the PDL that you specify, go to the
+SharePoint admin center in the _Geography_ location where you want to
+create the group site.
+
+For example:
+
+If you want to create a group site in your Australia location, you can
+go to
+`https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement`
+
+[arabic]
+. Select *+ Create*.
+. Follow the process to create a group site.
+
+Your group site will be provisioned in the _Geography_ location
+corresponding to the SharePoint admin center from which you initiated
+the site creation request.
+
+Using Exchange PowerShell
+
+Connect to Exchange Online PowerShell and pass the parameter
+_-MailBoxRegion_ with the geo location code.
+
+For example:
+
+[source,powershell]
+----
+New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
+----
+
+image::../media/multi-geo-new-group-with-pdl-powershell.png[Screenshot
+of New-UnifiedGroup PowerShell cmdlet with syntax.]
+
+____
+[!NOTE] SharePoint group site provisioning is on-demand. The site will
+be provisioned the first time a group owner or member attempts to access
+it.
+____
+
+=== Geo location codes
+
+{empty}[!INCLUDE
+link:../includes/microsoft-365-multi-geo-locations.md[Microsoft 365
+Multi-Geo locations]]
+
+=== Related topics
+
+link:/powershell/exchange/connect-to-exchange-online-powershell[Connect
+to Exchange Online PowerShell]
+
+link:/graph/api/group-post-groups[Create groups with a specific
+preferred data location using Graph API]

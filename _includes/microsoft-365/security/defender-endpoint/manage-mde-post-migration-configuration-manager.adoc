@@ -1,0 +1,107 @@
+= 
+denisebmsft
+:keywords: post-migration, manage, operations, maintenance, utilization,
+Configuration Manager, Microsoft Defender for Endpoint, edr
+
+== Manage Microsoft Defender for Endpoint with Configuration Manager
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+We recommend using link:/mem[Microsoft Endpoint Manager], which includes
+link:/mem/intune/fundamentals/what-is-intune[Microsoft Intune] (Intune)
+and link:/mem/configmgr/core/understand/introduction[Microsoft Endpoint
+Configuration Manager] (Configuration Manager) to manage your
+organization’s threat protection features for devices (also referred to
+as endpoints).
+
+* link:/mem/endpoint-manager-overview[Learn more about Endpoint Manager]
+* link:manage-mde-post-migration-intune.md[Co-manage Microsoft Defender
+for Endpoint on Windows 10 and Windows 11 devices with Configuration
+Manager and Intune]
+
+=== Configure Microsoft Defender for Endpoint with Configuration Manager
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Task |Resources to learn more
+|*Install the Configuration Manager console* if you don’t already have
+it _If you don’t already have the Configuration Manger console, use
+these resources to get the bits and install it._
+|link:/mem/configmgr/core/servers/deploy/install/get-install-media[Get
+the installation media]
+link:/mem/configmgr/core/servers/deploy/install/install-consoles[Install
+the Configuration Manager console]
+
+|*Use Configuration Manager to onboard devices* to Microsoft Defender
+for Endpoint _If you have devices (or endpoints) not already onboarded
+to Microsoft Defender for Endpoint, you can do that with Configuration
+Manager._
+|link:/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#about-onboarding-to-atp-with-configuration-manager[Onboard
+to Microsoft Defender for Endpoint with Configuration Manager]
+
+|*Manage antimalware policies and Windows Firewall security* for client
+computers (endpoints) _Configure endpoint protection features, including
+Microsoft Defender for Endpoint, exploit protection, application
+control, antimalware, firewall settings, and more._
+|link:/mem/configmgr/protect/deploy-use/endpoint-protection[Configuration
+Manager: Endpoint Protection]
+
+|*Choose methods for updating antimalware updates* on your
+organization’s devices _With Endpoint Protection in Configuration
+Manager, you can choose from several methods to keep antimalware
+definitions up to date on your organization’s devices._
+|link:/mem/configmgr/protect/deploy-use/endpoint-definition-updates[Configure
+definition updates for Endpoint Protection]
+link:/mem/configmgr/protect/deploy-use/endpoint-definitions-configmgr[Use
+Configuration Manager to deliver definition updates]
+
+|*Enable Network Protection* to help prevent employees from using apps
+that malicious content on the Internet _We recommend using
+link:/microsoft-365/security/defender-endpoint/evaluate-network-protection[audit
+mode] at first for network protection in a test environment to see which
+apps would be blocked before rolling out._
+|link:/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager[Turn
+on network protection with Configuration Manager]
+
+|*Configure controlled folder access* to protect against ransomware
+_Controlled folder access is also referred to as antiransomware
+protection._
+|link:/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access[Endpoint
+protection: Controlled folder access]
+link:/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager[Enable
+controlled folder access in Microsoft Endpoint Configuration Manage]
+|===
+
+=== Configure your Microsoft 365 Defender portal
+
+If you haven’t already done so, configure your Microsoft 365 Defender
+portal to view alerts, configure threat protection features, and view
+detailed information about your organization’s overall security posture.
+See While the attack was detected and stopped, alerts, such as an
+``initial access alert,'' were triggered and appeared in the
+link:/microsoft-365/security/defender/microsoft-365-defender[Microsoft
+365 Defender portal]. You can also configure whether and what features
+end users can see in the Microsoft 365 Defender portal.
+
+* link:/microsoft-365/security/defender-endpoint/use[Overview of
+Microsoft 365 Defender]
+* link:/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center[Endpoint
+protection: Microsoft 365 Defender]
+
+=== Next steps
+
+* link:/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt[Get
+an overview of Defender Vulnerability Management]
+* link:manage-mde-post-migration-intune.md[Manage Microsoft Defender for
+Endpoint with Intune]
