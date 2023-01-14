@@ -1,0 +1,106 @@
+= 
+mjcaparas
+:keywords: support, log, collect, troubleshoot, live response,
+liveanalyzer, analyzer, live, response
+
+== Collect support logs in Microsoft Defender for Endpoint using live response
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink[Sign
+up for a free trial.]
+____
+
+When contacting support, you may be asked to provide the output package
+of the Microsoft Defender for Endpoint Client Analyzer tool.
+
+This topic provides instructions on how to run the tool via Live
+Response.
+
+[arabic]
+. Download and fetch the required scripts available from within the
+`Tools' sub-directory of the https://aka.ms/BetaMDEAnalyzer[Microsoft
+Defender for Endpoint Client Analyzer]. For example, to get the basic
+sensor and device health logs, fetch ``...ps1''. If you also require
+Defender Antivirus support logs (MpSupportFiles.cab), then fetch
+``...ps1''
+. Initiate a
+link:live-response.md#initiate-a-live-response-session-on-a-device[Live
+Response session] on the machine you need to investigate.
+. Select *Upload file to library*.
++
+:::image type=``content'' source=``images/upload-file.png''
+alt-text=``The upload file'' lightbox=``images/upload-file.png'':::
+. Select *Choose file*.
++
+:::image type=``content'' source=``images/choose-file.png''
+alt-text=``The choose file button-1''
+lightbox=``images/choose-file.png'':::
+. Select the downloaded file named MDELiveAnalyzer.ps1 and then click on
+*Confirm*
++
+:::image type=``content'' source=``images/analyzer-file.png''
+alt-text=``The choose file button-2''
+lightbox=``images/analyzer-file.png'':::
+. While still in the LiveResponse session, use the commands below to run
+the analyzer and collect the result file:
++
+[source,console]
+----
+Run MDELiveAnalyzer.ps1
+GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
+----
++
+link:images/analyzer-commands.png#lightbox[image:images/analyzer-commands.png[Image
+of commands.]]
+
+____
+{empty}[!NOTE]
+
+* The latest preview version of MDEClientAnalyzer can be downloaded
+here: https://aka.ms/Betamdeanalyzer.
+* The LiveAnalyzer script downloads the troubleshooting package on the
+destination machine from:
+https://mdatpclientanalyzer.blob.core.windows.net.
++
+If you cannot allow the machine to reach the above URL, then upload
+MDEClientAnalyzerPreview.zip file to the library before running the
+LiveAnalyzer script:
++
+[source,console]
+----
+PutFile MDEClientAnalyzerPreview.zip -overwrite
+Run MDELiveAnalyzer.ps1
+GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
+----
+* For more information on gathering data locally on a machine in case
+the machine isn’t communicating with Microsoft Defender for Endpoint
+cloud services, or does not appear in Microsoft Defender for Endpoint
+portal as expected, see
+link:configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls[Verify
+client connectivity to Microsoft Defender for Endpoint service URLs].
+* As described in link:live-response-command-examples.md[Live response
+command examples], you may want to use the `&' symbol at the end of the
+command to collect logs as a background action:
++
+[source,console]
+----
+Run MDELiveAnalyzer.ps1&
+----
+____
+
+=== See also
+
+* link:overview-client-analyzer.md[Client analyzer overview]
+* link:download-client-analyzer.md[Download and run the client analyzer]
+* link:run-analyzer-windows.md[Run the client analyzer on Windows]
+* link:run-analyzer-macos-linux.md[Run the client analyzer on macOS or
+Linux]
+* link:data-collection-analyzer.md[Data collection for advanced
+troubleshooting on Windows]
+* link:analyzer-report.md[Understand the analyzer HTML report]

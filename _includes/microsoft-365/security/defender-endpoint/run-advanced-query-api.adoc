@@ -1,0 +1,193 @@
+= 
+mjcaparas
+:keywords: apis, supported apis, advanced hunting, query
+
+== Advanced hunting API
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+
+____
+[!NOTE] For the full available Advanced Hunting API experience across
+all Microsoft Defenders’ products, visit
+link:/graph/api/resources/security-api-overview[Use the Microsoft Graph
+security API - Microsoft Graph beta | Microsoft Learn].
+____
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+____
+[!NOTE] This API can only query tables belonging to Microsoft Defender
+for Endpoint. Tables belonging to other Microsoft 365 Defender services
+require the use of the
+link:/microsoft-365/security/defender/api-advanced-hunting[Microsoft 365
+Defender Advanced hunting API].
+____
+
+=== Limitations
+
+[arabic]
+. You can only run a query on data from the last 30 days.
+. The results will include a maximum of 100,000 rows.
+. The number of executions is limited per tenant:
+* API calls: Up to 45 calls per minute, up to 1500 calls per hour.
+* Execution time: 10 minutes of running time every hour and 3 hours of
+running time a day.
+. The maximal execution time of a single request is 200 seconds.
+. 429 response will represent reaching quota limit either by number of
+requests or by CPU. Read response body to understand what limit has been
+reached.
+. The maximum query result size of a single request cannot exceed 124
+MB. If exceeded, HTTP 400 Bad Request with the message ``Query execution
+has exceeded the allowed result size. Optimize your query by limiting
+the number of results and try again'' will appear.
+
+=== Permissions
+
+One of the following permissions is required to call this API. To learn
+more, including how to choose permissions, see link:apis-intro.md[Use
+Microsoft Defender for Endpoint APIs]
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Permission type |Permission |Permission display name
+|Application |AdvancedQuery.Read.All |`Run advanced queries'
+
+|Delegated (work or school account) |AdvancedQuery.Read |`Run advanced
+queries'
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* The user needs to have `View Data' AD role
+* The user needs to have access to the device, based on device group
+settings (See link:machine-groups.md[Create and manage device groups]
+for more information)
+
+Device group creation is supported in Defender for Endpoint Plan 1 and
+Plan 2.
+____
+
+=== HTTP request
+
+[source,http]
+----
+POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
+----
+
+=== Request headers
+
+[cols="<,<",options="header",]
+|===
+|Header |Value
+|Authorization |Bearer \{token}. *Required*.
+|Content-Type |application/json
+|===
+
+=== Request body
+
+In the request body, supply a JSON object with the following parameters:
+
+[cols="<,<,<",options="header",]
+|===
+|Parameter |Type |Description
+|Query |Text |The query to run. *Required*.
+|===
+
+=== Response
+
+If successful, this method returns 200 OK, and _QueryResponse_ object in
+the response body.
+
+=== Example
+
+==== Request example
+
+Here is an example of the request.
+
+[source,http]
+----
+POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
+----
+
+[source,json]
+----
+{
+    "Query":"DeviceProcessEvents
+|where InitiatingProcessFileName =~ 'powershell.exe'
+|where ProcessCommandLine contains 'appdata'
+|project Timestamp, FileName, InitiatingProcessFileName, DeviceId
+|limit 2"
+}
+----
+
+==== Response example
+
+Here is an example of the response.
+
+____
+[!NOTE] The response object shown here may be truncated for brevity. All
+of the properties will be returned from an actual call.
+____
+
+[source,json]
+----
+{
+    "Schema": [
+        {
+            "Name": "Timestamp",
+            "Type": "DateTime"
+        },
+        {
+            "Name": "FileName",
+            "Type": "String"
+        },
+        {
+            "Name": "InitiatingProcessFileName",
+            "Type": "String"
+        },
+        {
+            "Name": "DeviceId",
+            "Type": "String"
+        }
+    ],
+    "Results": [
+        {
+            "Timestamp": "2020-02-05T01:10:26.2648757Z",
+            "FileName": "csc.exe",
+            "InitiatingProcessFileName": "powershell.exe",
+            "DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
+        },
+        {
+            "Timestamp": "2020-02-05T01:10:26.5614772Z",
+            "FileName": "csc.exe",
+            "InitiatingProcessFileName": "powershell.exe",
+            "DeviceId": "10cbf9182d4e95660362f65cfa67c7731f62fdb3"
+        }
+    ]
+}
+----
+
+=== Related topics
+
+* link:/graph/api/resources/security-api-overview[Use the Microsoft
+Graph security API - Microsoft Graph beta | Microsoft Learn]
+* link:apis-intro.md[Microsoft Defender for Endpoint APIs introduction]
+* link:advanced-hunting-query-language.md[Advanced Hunting from Portal]
+* link:run-advanced-query-sample-powershell.md[Advanced Hunting using
+PowerShell]

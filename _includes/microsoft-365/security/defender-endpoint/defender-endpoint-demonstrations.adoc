@@ -1,0 +1,106 @@
+= 
+dansimp
+:keywords: demonstration, Microsoft Defender for Endpoint demonstration,
+anti-Malware demonstration, Cloud-delivered protection, Block at First
+Sight (BAFS), Potentially unwanted applications (PUA)s, Microsoft
+security intelligence VDI, VDI security, Attack Surface Reduction (ASR)
+rules demonstration, Controlled folder access demonstration, Exploit
+Protection, Network Protection, Microsoft Defender SmartScreen, edge
+SmartScreen,
+
+== Microsoft Defender for Endpoint - demonstration scenarios
+
+The following demonstration scenarios will help you learn about the
+capabilities of Microsoft Defender for Endpoint on Windows (Mac and
+Linux are out of scope). Demonstration scenarios are provided for the
+following Microsoft Defender for Endpoint protection areas:
+
+:::image type=``content''
+source=``images/microsoft-defender-for-endpoint-cloud-protection.png''
+alt-text=``Shows the areas of Microsoft Defender for Endpoint
+demonstration scenarios covered in this collection''
+lightbox=``images/microsoft-defender-for-endpoint-cloud-protection.png'':::
+
+* Attack surface protection (*ASR*)
+* Next Generation Protection (*NGP*)
+* Endpoint detection and response (*EDR*)
+
+____
+[!NOTE] None of the sample files or _suspicious_ links provided in this
+collection are actually malicious; all links and demonstration files are
+harmless.
+
+We encourage you to read link:next-generation-protection.md[Microsoft
+Defender Antivirus documentation], and to download the
+link:evaluate-microsoft-defender-antivirus.md[Evaluation guide].
+____
+
+=== Demonstrations
+
+The following table lists the available demonstrations alphabetically,
+with their associated protection area.
+
+[width="100%",cols="<22%,<26%,<26%,<26%",options="header",]
+|===
+|# |Demonstration name |Protection area |Description
+|1 |link:defender-endpoint-demonstration-app-reputation.md[App
+reputation demonstration] |NGP |Navigate to the app reputation page to
+see the demonstration scenario using Microsoft Edge.
+
+|2
+|link:defender-endpoint-demonstration-attack-surface-reduction-rules.md[Attack
+surface reduction rules demonstrations] |ASR |Download sample files to
+trigger each ASR rule.
+
+|3
+|link:defender-endpoint-demonstration-block-at-first-sight-bafs.md[Block
+at First Sight (BAFS) demonstration] |NGP |With the BAFS feature in
+Microsoft Defender Antivirus, newly discovered files are analyzed and -
+if needed - blocked.
+
+|4
+|link:defender-endpoint-demonstration-cloud-delivered-protection.md[Cloud-delivered
+protection demonstration] |NGP |Confirm that cloud-delivered protection
+is working properly on your computer.
+
+|5
+|link:defender-endpoint-demonstration-controlled-folder-access-test-tool.md[Controlled
+folder access (CFA) demonstration (block script)] |ASR |Download the CFA
+test tool.
+
+|6
+|link:defender-endpoint-demonstration-controlled-folder-access.md[Controlled
+folder access (CFA) demonstrations (block ransomware)] |ASR |Download
+and execute a sample file to trigger CFA ransomware protection.
+
+|7 |link:defender-endpoint-demonstration-exploit-protection.md[Exploit
+protection (EP) demonstrations] |ASR |Apply custom exploit protection
+settings.
+
+|8 |link:defender-endpoint-demonstration-network-protection.md[Network
+protection demonstrations] |ASR |Navigate to a suspicious URL to trigger
+network protection.
+
+|9
+|link:defender-endpoint-demonstration-potentially-unwanted-applications.md[Potentially
+unwanted applications (PUA) demonstration] |NGP |Confirm that
+potentially unwanted applications (PUAs) are being blocked on your
+network by downloading a fake (safe) PUA file.
+
+|10
+|link:defender-endpoint-demonstration-smartscreen-url-reputation.md[URL
+reputation demonstrations] |NGP |Navigate to the URL Reputation page to
+see the demonstration scenarios using Microsoft Edge.
+|===
+
+=== See also
+
+link:overview-attack-surface-reduction.md[Attack surface protection
+(ASR) overview]
+link:attack-surface-reduction-rules-deployment-test.md[Test attack
+surface reduction rules] link:next-generation-protection.md[Next
+Generation Protection (NGP) overview]
+link:overview-endpoint-detection-response.md[Endpoint detection and
+response (EDR) overview]
+https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog[Microsoft
+Defender for Endpoint security blog]

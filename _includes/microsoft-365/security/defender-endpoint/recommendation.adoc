@@ -1,0 +1,120 @@
+= 
+DulceMontemayor
+:keywords: apis, graph api, supported apis, get, alerts, recent
+
+== Recommendation resource type
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+=== Methods
+
+'''''
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Method |Return Type |Description
+|link:get-all-recommendations.md[List all recommendations]
+|Recommendation collection |Retrieves a list of all security
+recommendations affecting the organization
+
+|link:get-recommendation-by-id.md[Get recommendation by ID]
+|Recommendation |Retrieves a security recommendation by its ID
+
+|link:list-recommendation-software.md[Get recommendation software]
+|link:software.md[Software] |Retrieves a security recommendation related
+to a specific software
+
+|link:get-recommendation-machines.md[Get recommendation devices]
+|MachineRef collection |Retrieves a list of devices associated with the
+security recommendation
+
+|link:get-recommendation-vulnerabilities.md[Get recommendation
+vulnerabilities] |link:vulnerability.md[Vulnerability] collection
+|Retrieves a list of vulnerabilities associated with the security
+recommendation
+
+| | |
+|===
+
+=== Properties
+
+'''''
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Property |Type |Description
+|id |String |Recommendation ID
+
+|productName |String |Related software name
+
+|recommendationName |String |Recommendation name
+
+|Weaknesses |Long |Number of discovered vulnerabilities
+
+|Vendor |String |Related vendor name
+
+|recommendedVersion |String |Recommended version
+
+|recommendedProgram |String |Recommended program
+
+|recommendedVendor |String |Recommended vendor
+
+|recommendationCategory |String |Recommendation category. Possible
+values are: ``Accounts'', ``Application'', ``Network'', ``OS'',
+``SecurityControls''
+
+|subCategory |String |Recommendation sub-category
+
+|severityScore |Double |Potential impact of the configuration to the
+organization’s Microsoft Secure Score for Devices (1-10)
+
+|publicExploit |Boolean |Public exploit is available
+
+|activeAlert |Boolean |Active alert is associated with this
+recommendation
+
+|associatedThreats |String collection |Threat analytics report is
+associated with this recommendation
+
+|remediationType |String |Remediation type. Possible values are:
+``ConfigurationChange'',``Update'',``Upgrade'',``Uninstall''
+
+|Status |Enum |Recommendation exception status. Possible values are:
+``Active'' and ``Exception''
+
+|configScoreImpact |Double |Microsoft Secure Score for Devices impact
+
+|exposureImpact |Double |Exposure score impact
+
+|totalMachineCount |Long |Number of installed devices
+
+|exposedMachinesCount |Long |Number of installed devices that are
+exposed to vulnerabilities
+
+|nonProductivityImpactedAssets |Long |Number of devices that are not
+affected
+
+|relatedComponent |String |Related software component
+
+| | |
+|===

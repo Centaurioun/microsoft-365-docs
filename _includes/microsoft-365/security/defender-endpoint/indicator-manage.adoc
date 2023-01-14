@@ -1,0 +1,120 @@
+= 
+mjcaparas
+:keywords: import, indicator, list, ioc, csv, manage, allowed, blocked,
+block, clean, malicious, file hash, ip address, urls, domain
+
+== Manage indicators
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink[Sign
+up for a free trial.]
+____
+
+[arabic]
+. In the navigation pane, select *Settings* > *Endpoints* > *Indicators*
+(under *Rules*).
+. Select the tab of the entity type you’d like to manage.
+. Update the details of the indicator and click *Save* or click the
+*Delete* button if you’d like to remove the entity from the list.
+
+=== Import a list of IoCs
+
+You can also choose to upload a CSV file that defines the attributes of
+indicators, the action to be taken, and other details.
+
+Download the sample CSV to know the supported column attributes.
+
+[arabic]
+. In the navigation pane, select *Settings* > *Endpoints* > *Indicators*
+(under *Rules*).
+. Select the tab of the entity type you’d like to import indicators for.
+. Select *Import* > *Choose file*.
+. Select *Import*. Do this for all the files you’d like to import.
+. Select *Done*.
+
+____
+[!NOTE] Only 500 indicators can be uploaded for each batch.
+
+Attempting to import indicators with specific categories requires the
+string to be written in Pascal case convention and only accepts the
+category list available at the portal.
+____
+
+The following table shows the supported parameters.
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Parameter |Type |Description
+|indicatorType |Enum |Type of the indicator. Possible values are:
+``FileSha1'', ``FileSha256'', ``IpAddress'', ``DomainName'' and ``Url''.
+*Required*
+
+|indicatorValue |String |Identity of the link:ti-indicator.md[Indicator]
+entity. *Required*
+
+|action |Enum |The action that will be taken if the indicator will be
+discovered in the organization. Possible values are: ``Allowed'',
+``Audit'', ``BlockAndRemediate'', ``Warn'', and ``Block''. *Required*
+
+|description |String |Description of the indicator. *Required*
+
+|expirationTime |DateTimeOffset |The expiration time of the indicator in
+the following format YYYY-MM-DDTHH:MM:SS.0Z. The indicator gets deleted
+if the expiration time passes and whatever happens at the expiration
+time occurs at the seconds (SS) value. *Optional*
+
+|severity |Enum |The severity of the indicator. Possible values are:
+``Informational'', ``Low'', ``Medium'' and ``High''. *Optional*
+
+|recommendedActions |String |TI indicator alert recommended actions.
+*Optional*
+
+|rbacGroups |String |Comma-separated list of RBAC groups the indicator
+would be applied to. *Optional*
+
+|category |String |Category of the alert. Examples include: Execution
+and credential access. *Optional*
+
+|mitretechniques |String |MITRE techniques code/id (comma separated).
+For more information, see
+https://attack.mitre.org/tactics/enterprise/[Enterprise tactics].
+*Optional* It is recommended to add a value in category when a MITRE
+technique.
+
+|GenerateAlert |String |Whether the alert should be generated. Possible
+Values are: True or False. *Optional*
+|===
+
+____
+[!NOTE] Classless Inter-Domain Routing (CIDR) notation for IP addresses
+is not supported. For more information, see
+https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748[Microsoft
+Defender for Endpoint alert categories are now aligned with MITRE
+ATT&CK!].
+____
+
+Watch this video to learn how Microsoft Defender for Endpoint provides
+multiple ways to add and manage Indicators of compromise (IoCs). >
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVw]
+
+=== See also
+
+* link:manage-indicators.md[Create indicators]
+* link:indicator-file.md[Create indicators for files]
+* link:indicator-ip-domain.md[Create indicators for IPs and
+URLs/domains]
+* link:indicator-certificates.md[Create indicators based on
+certificates]
+* link:defender-endpoint-antivirus-exclusions.md[Exclusions for
+Microsoft Defender for Endpoint and Microsoft Defender Antivirus]

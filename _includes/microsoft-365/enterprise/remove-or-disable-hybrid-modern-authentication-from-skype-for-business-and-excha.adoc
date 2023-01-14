@@ -1,0 +1,71 @@
+= 
+kelleyvice-msft
+
+== Removing or disabling Hybrid Modern Authentication from Skype for Business and Exchange
+
+_This article applies to both Microsoft 365 Enterprise and Office 365
+Enterprise._
+
+If you’ve enabled Hybrid Modern Authentication (HMA) only to find it’s
+unsuitable for your current environment, you can disable HMA. This
+article explains how.
+
+=== Who is this article for?
+
+If you’ve enabled Modern Authentication in Skype for Business Online or
+On-premises, and/or Exchange Online or On-premises and found you need to
+disable HMA, these steps are for you.
+
+____
+[!IMPORTANT] See the
+`link:/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported[Skype
+for Business topologies supported with Modern Authentication]' article
+if you’re in Skype for Business Online or On-premises, have a
+mixed-topology HMA, and need to look at supported topologies before you
+begin.
+____
+
+=== How to disable Hybrid Modern Authentication (Exchange)
+
+[arabic]
+. *Exchange On-premises*:
+link:/powershell/exchange/open-the-exchange-management-shell[Open the
+Exchange Management Shell] and run the following commands:
++
+[source,powershell]
+----
+Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
+Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
+----
+. *Exchange Online*:
+link:/powershell/exchange/connect-to-exchange-online-powershell[Connect
+to Exchange Online PowerShell]. Run the following command to disable
+Modern Authentication:
++
+[source,powershell]
+----
+Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
+----
+
+=== How to disable Hybrid Modern Authentication (Skype for Business)
+
+[arabic]
+. *Skype for Business On-premises*: Run the following commands in Skype
+for Business Management Shell:
++
+[source,powershell]
+----
+Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
+----
+. *Skype for Business Online*:
+link:manage-skype-for-business-online-with-microsoft-365-powershell.md[Connect
+to Skype for Business Online PowerShell]. Run the following command to
+disable Modern Authentication:
++
+[source,powershell]
+----
+Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed
+----
+
+link:hybrid-modern-auth-overview.md[Link back to the Modern
+Authentication overview].

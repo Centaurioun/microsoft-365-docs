@@ -1,0 +1,181 @@
+= 
+siosulli
+:keywords: apis, graph api, supported apis, scan, authenticated scan
+
+== Get scan definitions
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* link:../defender-vulnerability-management/index.yml[Microsoft Defender
+Vulnerability Management]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+____
+Want to experience Microsoft Defender Vulnerability Management? Learn
+more about how you can sign up to the
+link:../defender-vulnerability-management/get-defender-vulnerability-management.md[Microsoft
+Defender Vulnerability Management public preview trial].
+____
+
+{empty}[!Includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+{empty}[!Includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!Includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== API description
+
+Retrieves a list of all scan definitions.
+
+=== Limitations
+
+[arabic]
+. Rate limitations for this API are 100 calls per minute and 1500 calls
+per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API. To learn
+more, including how to choose permissions, see link:apis-intro.md[Use
+Microsoft Defender for Endpoint APIs].
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Permission type |Permission |Permission display name
+|Application |Machine.Read.All |Read all scan information.
+
+|Delegated (work or school account) |Machine.Read.All |Read all scan
+information.
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* To view data the user needs to have at least the following role
+permission: `ViewData' or `TvmViewData' (See link:user-roles.md[Create
+and manage roles] for more information)
+____
+
+=== HTTP request
+
+[source,http]
+----
+GET /api/DeviceAuthenticatedScanDefinitions
+----
+
+=== Request headers
+
+[cols="<,<,<",options="header",]
+|===
+|Name |Type |Description
+|Authorization |String |Bearer \{token}. *Required*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful, this method returns 200 - OK response code with a list of
+authenticated scan definitions.
+
+=== Example
+
+==== Request example
+
+Here is an example of the request.
+
+[source,http]
+----
+GET https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions
+----
+
+==== Response example
+
+Here is an example of the response.
+
+[source,json]
+----
+{
+"@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAuthenticatedScanDefinitions",
+    "value": [
+    {
+    "id": "60c4vv57-asdf-3454-a456-2e45t9d79ec9d", 
+    "scanType": "Windows", 
+    "scanName": "Test Windows scan", 
+    "isActive": true, 
+    "target": "127.0.0.1", 
+    "orgId": "47d21a0c-cccd-45d3-bffa-a93dbc0bfcaa",
+    "intervalInHours": 1, 
+    "createdBy": "test@contoso.com",
+    "targetType": "Ip",
+    "scanAuthenticationParams": {
+        "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
+        "type": "Kerberos", 
+        "username": "username", 
+        "domain": "password",
+        "isGmsaUser": true
+        },
+    "scannerAgent": {
+        "id": "47d41a0c-xxx-46d3-bbea-93dbc0bfcaa_1bc268a79eedf14c4b90f77",
+        "machineId": "eb663asadf345dfg4bc268a79eedf14c4b90f77",
+        "machineName": "DESKTOP-TEST",
+        "lastSeen": "2021-12-19T20:29:04.8242449Z"
+        },
+    "latestScan": {
+        "status": "Fail",
+        "failureReason": null,
+        "executionDateTime": "2021-12-19T20:06:55.2295854Z"
+       }, 
+    {    
+    "id": "60c4aa57-ioi3-1290-7ff6-09fr14792a92",
+    "scanType": "Network",
+    "scanName": "Network-test-scan",
+    "isActive": true, 
+    "target": "127.0.0.1", 
+    "orgId": "asdf781a0c-792d-46d3-bbea-a93dbc0bfcaa",
+    "intervalInHours": 1, 
+    "createdBy": "test@contoso.com",
+    "targetType": "Ip",
+    "scanAuthenticationParams": {
+    "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams"", 
+        type": "AuthPriv", 
+        "username": "username", 
+        "authProtocol": "authProtocol", 
+        "authPassword": "authPassword", 
+        "privProtocol": "privProtocol", 
+        "privPassword": "privPassword", 
+        "communityString": "community-string" 
+            },
+    "scannerAgent": {
+    "id": "4asdff0c-3344-46d3-bxxe-a9334rtgfcaa_eb6df89dfdf9032f61eedf14c4b90f77",
+    "machineId": "eb663a27676kjhj61bc268a79eedf14c4t78u7",
+    "machineName": "DESKTOP-Test",
+    "lastSeen": "2022-12-21T14:34:19.5698988Z"
+            },
+    "latestScan": {
+    "status": "Fail",
+    "failureReason": null,
+    "executionDateTime": "2022-12-21T14:35:55.6702703Z"
+        }        
+    },
+     }    
+    ]
+}
+----

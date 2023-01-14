@@ -1,0 +1,319 @@
+= 
+mansipatel-usl
+
+== Uploading a pre-built zip package
+
+This section provides all the steps necessary to edit, upload, and test
+on Test Base when you already have a pre-built .zip file.
+
+*Pre-requests*
+
+* Test Base account: If you don’t have a *Test Base* account, you’ll
+need to create one before proceeding, as described in
+link:createAccount.md[Creating a Test Base account].
+* Pre-built .zip file: A .zip file built offline containing your
+application binary and test scripts. See link:buildpackage.md[Build a
+package | Microsoft Docs] to prepare your Test Base .zip package from
+desktop.
+
+=== Upload an offline built package
+
+In the https://portal.azure.com/[Azure portal], go to the *Test Base*
+account for which you’ll be creating and uploading your package and
+perform the steps that follow.
+
+In the left-hand menu under *Package catalog*, select the *New package*.
+Then select the third card *`Upload pre-built package'*.
+
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip01-new-package.png#lightbox[image:Media/uploadingzip01-new-package.png[Left-hand
+menu]]
+____
+
+==== Step 1. Define content
+
+[arabic]
+. In the *Package source* section, select Pre-built package (.zip) in
+the Package source type.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip02-define-content.png#lightbox[image:Media/uploadingzip02-define-content.png[New
+package]]
+____
+. Upload your pre-built package (zip) file by selecting `Select file'
+button.
+. Type in your package’s name and version in the *Basic information*
+section.
++
+____
+[!NOTE] The combination of package name and version must be unique
+within your Test Base account.
+____
++
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/uploadingzip03-basic-information.png[Basic information]
+____
+. After all the requested information is specified, select the *Next:
+Configuration test* button.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/uploadingzip04-next.png[Next: Configuration test]
+____
+
+==== Step 2. Configure test
+
+[arabic]
+. Select the *Type of test* according to your pre-built package. There
+are two test types supported:
+* An *Out of Box (OOB) test* performs an install, launch, close, and
+uninstall of your package. After the install, the launch-close routine
+is repeated 30 times before a single uninstall is run. The OOB test
+provides you with standardized telemetry on your package to compare
+across Windows builds.
+* A *Functional test* executes your uploaded test script(s) on your
+package. The scripts are run in the sequence you specified and a failure
+in a particular script will stop subsequent scripts from executing.
++
+____
+[!NOTE] Out of Box test is optional now.
+____
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip05-configure-test.png#lightbox[image:Media/uploadingzip05-configure-test.png[Out
+of Box test option]]
+____
+. Once all required info is filled out, select the Next button.
+
+==== Step 3. Edit package
+
+[arabic]
+. In the Edit package tab, you can:
+* check your package folder and file structure in *Package Preview*.
+* edit your scripts online with the *PowerShell code editor*.
++
+____
+[!NOTE] Your pre-built package is extracted to edit. Script tags are
+added according to the script name, please review these script tags and
+adjust if need. Script tags indicate the correct script paths which will
+be used when testing is initiated.
+____
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip06-edit-package.png#lightbox[image:Media/uploadingzip06-edit-package.png[PowerShell
+code editor]]
+____
+. In the *Package Preview*, per your need, you can:
+* create a new folder.
+* create a new script.
+* upload a new file.
+. Under *scripts folder*, sample scripts and script tags have been
+created for you. All script tags are editable. You can reassign them to
+reference your script paths.
+* If the *Out of Box test* is selected in step 2, you can see the
+*outofbox* folder under the scripts folder. You can also choose to add
+*`Reboot after install'* tag for the Install script.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip07-edit-script.png#lightbox[image:Media/uploadingzip07-edit-script.png[Sample
+scripts and script tags]]
+____
++
+____
+[!NOTE] Install, Launch, and Close script tags are mandatory for the OOB
+test type. Reassigning tags ensures that the correct script path will be
+used when testing is initiated.
+____
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip08-required-prompt.png#lightbox[image:Media/uploadingzip08-required-prompt.png[Scripts
+missing notification]]
+____
+* If the *Functional test* is selected in step 2, you can see the
+*functional* folder under the scripts folder. More functional test
+scripts can be added using the *`Add to functional test list'* button.
+You need a minimum of one (1) script and can add up to eight (8)
+functional test scripts.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip09-add-to-list.png#lightbox[image:Media/uploadingzip09-add-to-list.png[Add
+to functional test list]]
+____
++
+____
+[!NOTE] At least 1 functional script tag is mandatory for the functional
+test type.
+____
++
+Select *Add to functional test list* to add more functional scripts from
+the action panel. Here are the options:
+* Reorder the script paths by dragging with the left ellipse buttons.
+The functional scripts run in the sequence they’re listed. A failure in
+a particular script stops subsequent scripts from executing.
+* Set `Restart after execution' for multiple scripts.
+* Apply update before on specific script path. This update is for users
+who wish to perform functional tests to indicate when the Windows Update
+patch should be applied in the sequence of executing their functional
+test scripts.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip10-functional-test.png#lightbox[image:Media/uploadingzip10-functional-test.png[Functional
+test]]
+____
+. Once all required info is filled out, you can proceed to step 4 by
+selecting the Next button at the bottom.
+
+==== Step 4. Set test matrix
+
+The Test matrix tab is for you to indicate the specific Windows update
+program or Windows product that you may want your test to execute
+against.
+
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/settestmatrix01-newpackage.png[Screenshot shows Set test
+matrix new package.]
+____
+
+[arabic]
+. Choose *OS update type*
+* Test Base provides scheduled testing to make sure your applications
+performance won’t break by the latest Windows updates.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/settestmatrix02-chooseosupdate.png[Screenshot shows Set test
+matrix choose osupdate.]
+____
+* There are 2 available options:
+** The *Security updates* enable your package to be tested against
+incremental churns of Windows monthly security updates.
+** The *Feature updates* enable your package to be tested against new
+features in the latest Windows Insider Preview Builds from the Windows
+Insider Program.
+. Configure *Security Update* To set up for security updates, you must
+specify the Windows product(s) you want to test against from the
+dropdown list of ``OS versions to test''.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/settestmatrix03-configuresecurityupdate.png[Screenshot shows
+Set test matrix configure securityupdate.]
+____
+* Your selection will register your application for automatic test runs
+against the B release of Windows monthly quality updates of selected
+product(s).
+** For customers who have Default Access customers on Test Base, their
+applications are validated against the final release version of the B
+release security updates, starting from Patch Tuesday.
+** For customers who have Full Access customers on Test Base, their
+applications are validated against the pre-release versions of the B
+release security updates, starting up to 3-weeks before prior to Patch
+Tuesday. This allows time for the Full Access customers time to take
+proactive steps in resolving any issues found during testing before in
+advance of the final release on Patch Tuesday. +
+(How to become a Full Access customer? Please refer to
+link:accesslevel.md[Request to change access level | Microsoft Docs])
+. Configure *Feature Update*
+* To set up for feature updates, you must specify the target product and
+it’s preview channel from ``Insider Channel'' dropdown list.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/settestmatrix04-configurefeatureupdate.png[Screenshot shows
+Set test matrix configure featureupdate.]
+____
+* Your selection will register your application for automatic test runs
+against the latest feature updates of your selected product channel and
+all future new updates in the latest Windows Insider Preview Builds of
+your selection.
+* You may also set your current OS in ``OS baseline for Insight''. We
+would provide you more test insights by regression analysis of your
+as-is OS environment and the latest target OS.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/settestmatrix05-setos.png[Screenshot shows Set test matrix
+set os.]
+____
+
+==== Step 5. Review + publish
+
+[arabic]
+. Review all the information for correctness and accuracy of your draft
+package. To make corrections, you can navigate back to early steps where
+you specified the settings as needed.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip12-review.png#lightbox[image:Media/uploadingzip12-review.png[Review
+and publish]]
+____
+. You can also check the notification box to receive the email
+notification of your package for the validation run completion notice.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/uploadingzip13-notification.png[Notification]
+____
+. When you’re done finalizing the input data configuration, select
+*Publish* to upload your package to Test Base. The notification that
+follows displays when the package is successfully published and has
+entered the Verification process.
++
+____
+[!NOTE] The package must be verified before it is accepted for future
+tests. The Verification can take up to 24 hours, as it includes running
+the package in an actual test environment.
+____
++
+____
+{empty}[!div class=``mx-imgBorder'']
+image:Media/uploadingzip14-success.png[Publish success notification]
+____
+. You’ll be redirected to the *Manage Packages* page to check the
+progress of your newly uploaded package.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip15-package-list.png#lightbox[image:Media/uploadingzip15-package-list.png[Manage
+Packages]]
+____
++
+____
+[!NOTE] When the Verification process is complete, the Verification
+status will change to Accepted. At this point, no further actions are
+required. Your package will be acquired automatically for execution
+whenever your configured operating systems have new updates available.
+If the Verification process fails, your package is not ready for
+testing. Please check the logs and assess whether any errors occurred.
+You may also need to check your package configuration settings for
+potential issues.
+____
+
+=== Continue package creation
+
+If you have any previous draft packages, you can view the list of your
+saved draft packages on the *New package* page. You can continue your
+edit directly to the step you paused last time by selecting the `edit'
+pencil icon.
+
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/uploadingzip16-draft-packages.png#lightbox[image:Media/uploadingzip16-draft-packages.png[New
+package page]]
+____
+
+____
+[!NOTE] The dashboard only shows the working in progress package. For
+the published package, you can check the Manage Packages page.
+____

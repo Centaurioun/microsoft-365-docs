@@ -1,0 +1,89 @@
+= 
+mjcaparas
+:keywords: apis, graph api, supported apis, delete from library
+
+== Delete a file from the live response library
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+link:/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint[Microsoft
+Defender for Endpoint]
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== API description
+
+Delete a file from live response library.
+
+=== Limitations
+
+[arabic]
+. Rate limitations for this API are 100 calls per minute and 1500 calls
+per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API. To learn
+more, including how to choose permissions, see link:apis-intro.md[Get
+started].
+
+[width="100%",cols="43%,19%,38%",options="header",]
+|===
+|Permission type |Permission |Permission display name
+|Application |Library.Manage |Manage live response library
+
+|Delegated (work or school account) |Library.Manage |Manage live
+response library
+|===
+
+=== HTTP request
+
+DELETE
+https://api.securitycenter.microsoft.com/api/libraryfiles/\{fileName}
+
+=== Request headers
+
+[cols=",,",options="header",]
+|===
+|Name |Type |Description
+|Authorization |String |Bearer<token>. Required.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+* If file exists in library and deleted successfully 204 No Content.
+* If specified file name was not found 404 Not Found.
+
+=== Example
+
+Request
+
+Here is an example of the request.
+
+[source,http]
+----
+DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/script1.ps1
+----
+
+=== Related topic
+
+* link:run-live-response.md[Run live response]

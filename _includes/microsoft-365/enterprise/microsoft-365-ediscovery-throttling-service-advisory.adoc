@@ -1,0 +1,53 @@
+= 
+kelleyvice-msft
+
+== Service advisories for eDiscovery throttling in Exchange Online monitoring
+
+We’ve released a new Exchange Online service advisory that informs you
+of eDiscovery being throttled. These service advisories provide
+visibility into the instances when the user is unable to submit Search
+and Export because of throttling.
+
+These service advisories are displayed in the Microsoft 365 admin
+center. To view these service advisories, go to *Health* |
+*https://go.microsoft.com/fwlink/p/?linkid=842900[Service health]* |
+*Exchange Online*. Here’s an example of eDiscovery service advisory.
+
+image::../media/ediscovery-service-health.jpg[eDiscovery service health
+screenshot]
+
+=== What does this service advisory indicate?
+
+The service advisories for eDiscovery throttling inform admins about
+their tenant being throttled due to number of Search and Export jobs
+exceeding the limit set by Microsoft. Various limits are applied to
+eDiscovery search tools in the link:~/compliance/index.yml[Microsoft
+Purview] compliance portal. This includes searches run on the
+link:~/compliance/search-for-content.md[Content Search] page and
+searches that are associated with an eDiscovery case on the
+link:~/compliance/get-started-core-ediscovery.md[eDiscovery (Standard)]
+page. These limits help to maintain the health and quality of services
+provided to organizations. These advisories provide awareness so that
+you can take these limits into consideration when planning, running, and
+troubleshooting eDiscovery searches and exports.
+
+For limits related to the Microsoft Purview eDiscovery (Standard) tool,
+see
+link:~/compliance/limits-for-content-search.md?viewFallbackFrom=o365-worldwide%20for%20service%20limits[Limits
+for Content search and eDiscovery (Standard) in the compliance center].
+
+==== How often will I see these service advisories?
+
+You can expect to see this type of advisory until the time where the
+Search and Export jobs are within the defined limit.
+
+=== More information
+
+* For information about troubleshooting and resolving eDiscovery
+compliance issues, see
+link:/troubleshoot/microsoft-365-compliance-welcome[Microsoft Purview
+troubleshooting].
+* For information about Microsoft Purview, see
+link:/purview/purview[What is Microsoft Purview?]
+* To learn more about Microsoft Purview eDiscovery solutions, see
+link:~/compliance/ediscovery.md[Microsoft Purview eDiscovery solutions]

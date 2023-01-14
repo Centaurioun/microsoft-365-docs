@@ -1,0 +1,61 @@
+= 
+chuckedmonson
+
+== Rename a model in Microsoft Syntex
+
+*Applies to:*   ✓ All custom models   |   ✓ All prebuilt models
+
+At some point, you might want to rename a model. A common example is
+when you create an initial draft of a model, you might not have given a
+lot of thought as to the final name (for example, you might have named
+it ``AlexWilburModel1''). As you come closer to finalizing the model and
+putting it to use, you realize that a more proper name would be
+``Contract Renewals,'' and you want to rename it.
+
+Another example is when your organization makes a decision to refer to a
+process or document type by a different name. For example, after you
+create your model and are ready to apply it, your organization might
+mandate that all ``Contracts'' will now formally be referred to as
+``Agreements.'' If needed, you can choose to rename your model from
+``Contract Renewals'' to ``Agreement Renewals.''
+
+____
+[!IMPORTANT] You can only rename a model if it has not been applied to a
+document library.
+____
+
+Renaming a model also renames the
+link:/sharepoint/governance/content-type-and-workflow-planning#content-type-overview[content
+type] that is associated with the model.
+
+=== Rename a model
+
+Follow these steps to rename a model.
+
+[arabic]
+. From the content center, select *Models* to see your models list.
+. On the *Models* page, select the model you want to rename.
+. By using either the ribbon or the *Show actions* button (next to the
+model name), select *Rename*.
++
+image:../media/content-understanding/select-model-rename-both.png[Screenshot
+of the Models page showing a selected model with the Rename options
+highlighted.]
+. On the *Rename model* panel:
+[loweralpha]
+.. Under *New name*, enter the new name of the model that you want to
+rename.
++
+image:../media/content-understanding/rename-model-panel.png[Screenshot
+showing the Rename model panel.]
+[loweralpha, start=2]
+.. (Optional) Under *Advanced settings*, select whether you want to
+associate an existing
+link:/sharepoint/governance/content-type-and-workflow-planning#content-type-overview[content
+type]. If you choose *Use an existing content type*, the model will be
+renamed to match the selected content type.
+. Select *Rename*.
+
+=== See also
+
+link:delete-a-model.md[Delete a model]

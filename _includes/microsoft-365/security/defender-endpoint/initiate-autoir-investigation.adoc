@@ -1,0 +1,136 @@
+= 
+mjcaparas
+:keywords: apis, graph api, supported apis, investigation
+
+== Start Investigation API
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== API description
+
+Start automated investigation on a device.
+
+See link:automated-investigations.md[Overview of automated
+investigations] for more information.
+
+=== Limitations
+
+[arabic]
+. Rate limitations for this API are 50 calls per hour.
+
+=== Requirements for AIR
+
+Your organization must have Defender for Endpoint (see
+link:minimum-requirements.md[Minimum requirements for Microsoft Defender
+for Endpoint].
+
+Currently, AIR only supports the following OS versions:
+
+* Windows Server 2019
+* Windows Server 2022
+* Windows 10, version 1709 (OS Build 16299.1085 with
+https://support.microsoft.com/help/4493441/windows-10-update-kb4493441[KB4493441])
+or later
+* Windows 10, version 1803 (OS Build 17134.704 with
+https://support.microsoft.com/help/4493464/windows-10-update-kb4493464[KB4493464])
+or later
+* Windows 10, version
+link:/windows/release-information/status-windows-10-1809-and-windows-server-2019[1803]
+or later
+* Windows 11
+
+=== Permissions
+
+One of the following permissions is required to call this API. To learn
+more, including how to choose permissions, see link:apis-intro.md[Use
+Microsoft Defender for Endpoint APIs]
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Permission type |Permission |Permission display name
+|Application |Alert.ReadWrite.All |`Read and write all alerts'
+
+|Delegated (work or school account) |Alert.ReadWrite |`Read and write
+alerts'
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* The user needs to have at least the following role permission: `Active
+remediation actions' (See link:user-roles.md[Create and manage roles]
+for more information)
+* The user needs to have access to the device, based on device group
+settings (See link:machine-groups.md[Create and manage device groups]
+for more information)
+
+Device group creation is supported in Defender for Endpoint Plan 1 and
+Plan 2.
+____
+
+=== HTTP request
+
+[source,http]
+----
+POST https://api.security.microsoft.com/api/machines/{id}/startInvestigation
+----
+
+=== Request headers
+
+[cols="<,<,<",options="header",]
+|===
+|Name |Type |Description
+|Authorization |String |Bearer \{token}. *Required*.
+|Content-Type |string |application/json. *Required*.
+|===
+
+=== Request body
+
+In the request body, supply a JSON object with the following parameters:
+
+[cols="<,<,<",options="header",]
+|===
+|Parameter |Type |Description
+|Comment |String |Comment to associate with the action. *Required*.
+|===
+
+=== Response
+
+If successful, this method returns 201 - Created response code and
+link:investigation.md[Investigation] in the response body.
+
+=== Example
+
+==== Request
+
+Here is an example of the request.
+
+[source,https]
+----
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
+----
+
+[source,json]
+----
+{
+  "Comment": "Test investigation"
+}
+----

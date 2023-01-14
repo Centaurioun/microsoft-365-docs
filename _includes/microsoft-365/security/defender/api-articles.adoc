@@ -1,0 +1,31 @@
+= 
+mjcaparas
+:keywords: api, security, threat protection, mde, Microsoft Defender for
+Endpoint, Microsoft Defender for Office 365, cloud app security
+
+== Other security and threat protection APIs
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender API
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may
+be substantially modified before it’s commercially released. Microsoft
+makes no warranties, express or implied, with respect to the information
+provided here.
+____
+
+The following resources provide more information about APIs available
+for other Microsoft security solutions, beyond the Microsoft 365
+Defender API.
+
+* link:/windows/security/threat-protection/microsoft-defender-atp/apis-intro[Microsoft
+Defender for Endpoint]
+* link:/office/office-365-management-api/[Microsoft Defender for Office
+365]
+* link:/cloud-app-security/api-introduction[Microsoft Defender for Cloud
+Apps]

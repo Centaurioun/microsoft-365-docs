@@ -1,0 +1,20 @@
+= 
+kelleyvice-msft
+
+== Microsoft 365 community resources for PowerShell
+
+Connect to these communities to reach your peers and get answers for
+your PowerShell for Microsoft 365 questions.
+
+* https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365[Microsoft
+365 Microsoft Tech Community]
+* https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral[Exchange
+Server TechNet community forum]
+
+=== See also
+
+link:manage-microsoft-365-with-microsoft-365-powershell.md[Manage
+Microsoft 365 with PowerShell]
+
+link:getting-started-with-microsoft-365-powershell.md[Get started with
+PowerShell for Microsoft 365]

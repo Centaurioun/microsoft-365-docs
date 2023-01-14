@@ -1,0 +1,9 @@
+= 
+mjcaparas
+
+____
+[!NOTE] This page focuses on performing a machine action via API. See
+link:/microsoft-365/security/defender-endpoint/respond-machine-alerts[take
+response actions on a machine] for more information about response
+actions functionality via Microsoft Defender for Endpoint.
+____

@@ -1,0 +1,33 @@
+= 
+LanaChin
+
+== Known issues: Teams Shifts connector for Blue Yonder
+
+This article lists known issues for the
+link:shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder[Microsoft
+Teams Shifts connector for Blue Yonder].
+
+=== You can map an instance to more than one team using PowerShell or Microsoft Graph
+
+A Blue Yonder Workforce Management instance should only be mapped to one
+team at any given time in a connection.
+
+However, when you use PowerShell or Microsoft Graph to set up a
+connection, it’s possible to map an instance to more than one team. We
+recommend that you avoid mapping an instance to multiple teams as it can
+result in syncing issues and unexpected behavior.
+
+=== Related articles
+
+* link:shifts-connectors.md[Shifts connectors]
+* link:shifts-connector-wizard.md[Use the Shifts connector wizard to
+connect Shifts to Blue Yonder Workforce Management]
+* link:shifts-connector-blue-yonder-powershell-setup.md[Use PowerShell
+to connect Shifts to Blue Yonder Workforce Management]
+* link:shifts-connector-blue-yonder-admin-center-manage.md[Use the
+Microsoft 365 admin center to manage your Shifts connection to Blue
+Yonder Workforce Management]
+* link:shifts-connector-powershell-manage.md[Use PowerShell to manage
+your Shifts connection to Blue Yonder Workforce Management]
+* link:/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage
+the Shifts app]

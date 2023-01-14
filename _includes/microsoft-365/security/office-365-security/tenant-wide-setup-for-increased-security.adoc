@@ -1,0 +1,267 @@
+= 
+BrendaCarter
+
+== Configure your Microsoft 365 tenant for increased security
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:eop-about.md[Exchange Online Protection] -
+link:defender-for-office-365.md[Microsoft Defender for Office 365 plan 1
+and plan 2] - link:../defender/microsoft-365-defender.md[Microsoft 365
+Defender]
+
+Your organizational needs require security.
+
+Specifics are up to your business.
+
+This topic will walk you through the manual configuration of tenant-wide
+settings that affect the security of your Microsoft 365 environment. Use
+these recommendations as a starting point.
+
+=== Tune threat management policies in the Microsoft 365 Defender portal
+
+The Microsoft 365 Defender portal has capabilities for both protection
+and reporting. It has dashboards you can use to monitor and take action
+when threats arise.
+
+Keep in mind that some areas come with _default policy configurations_.
+Some areas do not include default policies or rules.
+
+For example, the _recommended_ setup of Microsoft Defender for Office
+365 (plan 1 and plan 2) is described by this handy step-by-step guide,
+right here:
+’link:step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md[Ensuring
+you always have the optimal security’]. But, even so, some admins opt
+for a more hands-on approach to this product.
+
+To automate your setup of Microsoft Defender for Office 365 visit the
+Standard and Strict policies under *Email & collaboration* > *Policies &
+rules* > *Threat policies* to tune threat management settings for a more
+secure environment.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Area |Default policy? |Recommendation
+|*Anti-phishing* |Yes |Configure the default anti-phishing policy as
+described here:
+link:++protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365++[Configure
+anti-phishing protection settings in EOP and Defender for Office 365].
+
+|*Anti-Malware Engine* |Yes |Configure the default anti-malware policy
+as described here:
+link:++protect-against-threats.md#part-1---anti-malware-protection-in-eop++[Configure
+anti-malware protection settings in EOP].
+
+|*Safe Attachments in Defender for Office 365* |No |Configure the global
+settings for Safe Attachments and create a Safe Attachments policy as
+described here:
+link:protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365[Configure
+Safe Attachments settings in Microsoft Defender for Office 365].
+
+|*Safe Links in Microsoft Defender for Office 365* |No |Create a Safe
+Links policy as described here:
+link:protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365[Configure
+Safe Links settings in Microsoft Defender for Office 365].
+
+|*Anti-spam (mail filtering)* |Yes |Configure the default anti-spam
+policy as described here:
+link:++protect-against-threats.md#part-3---anti-spam-protection-in-eop++[Configure
+anti-spam protection settings in EOP]
+
+|*_Email Authentication_* |Yes |Email authentication uses DNS records to
+add verifiable information to email messages about the message source
+and sender. Microsoft 365 automatically configures email authentication
+for its default domain (onmicrosoft.com), but Microsoft 365 admins can
+also configure email authentication for custom domains. Three
+authentication methods are used:
+|===
+
+____
+[!NOTE] For non-standard deployments of SPF, hybrid deployments, and
+troubleshooting: link:email-authentication-anti-spoofing.md[How
+Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing].
+____
+
+=== View dashboards and reports in the Microsoft 365 Defender portal
+
+Browse to https://security.microsoft.com[security.microsoft.com]. The
+menu of Microsoft 365 Defender is divided into sections that begin, in
+order, Home, Email & Collaboration, Cloud Apps, and Reports (you may see
+_some_ or _all_ of these depending on your Plan). You’re looking for
+Reports.
+
+[arabic]
+. Browse to https://security.microsoft.com[security.microsoft.com].
+. Click *Reports* on the menu.
+[arabic]
+.. Here you can view information about security trends and track the
+protection status of your identities, data, devices, apps, and
+infrastructure.
+
+The data in these reports will become richer as your organization uses
+Office 365 services, keep that in mind if you are in pilot or testing.
+For now, be familiar with what you can monitor and take action on.
+
+Inside each report, you’ll see cards for the specific areas monitored.
+
+[arabic]
+. Click the *Email & Collaboration reports*.
+. Take note of the report cards available.
+[arabic]
+.. Everything from _Malware detected in email_, to _Spam detections_,
+_Compromised users_, to _User reported messages_ and _Submissions_ the
+final two, with a button that links to Submissions.
+. Click a report, for example _Mailflow status summary_ and the click
+the *View details* button to dig into the data (which even includes a
+funnel view for easier interpretation of total mail flow vs. blocked,
+spam, and phishing emails, and more).
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Dashboard |Description
+|Security reports |Identities and device security reports such as users
+and devices with malware detections, device compliance, and users at
+risk.
+
+|Defender for Office 365 reports |The reports are available only in
+Defender for Office 365. For more information, see
+link:reports-defender-for-office-365.md[View Defender for Office 365
+reports in the Microsoft 365 Defender portal].
+
+|Mail flow reports and insights |These reports and insights are
+available in the Exchange admin center (EAC). For more information, see
+link:/exchange/monitoring/mail-flow-reports/mail-flow-reports[Mail flow
+reports] and
+link:/exchange/monitoring/mail-flow-insights/mail-flow-insights[Mail
+flow insights].
+
+|link:threat-explorer-about.md[Threat Explorer (or real-time
+detections)] |If you are investigating or experiencing an attack against
+your tenant, use Explorer (or real-time detections) to analyze threats.
+Explorer (and the real-time detections report) shows you the volume of
+attacks over time, and you can analyze this data by threat families,
+attacker infrastructure, and more. You can also mark any suspicious
+email for the Incidents list.
+|===
+
+=== Configure additional Exchange Online tenant-wide settings
+
+Here are a couple of additional settings that are recommended.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Area |Recommendation
+|*Mail flow rules* (also known as transport rules) |Add a mail flow rule
+to help protect against ransomware by blocking executable file types and
+Office file types that contain macros. For more information, see
+link:/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments[Use
+mail flow rules to inspect message attachments in Exchange Online].
+
+|*Modern authentication* |Modern authentication is a prerequisite for
+using multi-factor authentication (MFA). MFA is recommended for securing
+access to cloud resources, including email.
+|===
+
+=== Configure tenant-wide sharing policies in SharePoint admin center
+
+Microsoft recommendations for configuring SharePoint team sites at
+increasing levels of protection, starting with baseline protection. For
+more information, see link:sharepoint-file-access-policies.md[Policy
+recommendations for securing SharePoint sites and files].
+
+SharePoint team sites configured at the baseline level allow sharing
+files with external users by using anonymous access links. This approach
+is recommended instead of sending files in email.
+
+To support the goals for baseline protection, configure tenant-wide
+sharing policies as recommended here. Sharing settings for individual
+sites can be more restrictive than this tenant-wide policy, but not more
+permissive.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Area |Includes a default policy |Recommendation
+|*Sharing* (SharePoint Online and OneDrive for Business) |Yes |External
+sharing is enabled by default. These settings are recommended:
+|===
+
+SharePoint admin center and OneDrive for Business admin center include
+the same settings. The settings in either admin center apply to both.
+
+=== Configure settings in Azure Active Directory
+
+Be sure to visit these two areas in Azure Active Directory to complete
+tenant-wide setup for more secure environments.
+
+==== Configure named locations (under conditional access)
+
+If your organization includes offices with secure network access, add
+the trusted IP address ranges to Azure Active Directory as named
+locations. This feature helps reduce the number of reported false
+positives for sign-in risk events.
+
+See:
+link:/azure/active-directory/conditional-access/location-condition[Named
+locations in Azure Active Directory]
+
+==== Block apps that don’t support modern authentication
+
+Multi-factor authentication requires apps that support modern
+authentication. Apps that do not support modern authentication cannot be
+blocked by using conditional access rules.
+
+For secure environments, be sure to disable authentication for apps that
+do not support modern authentication. You can do this in Azure Active
+Directory with a control that is coming soon.
+
+In the meantime, use one of the following methods to accomplish this for
+SharePoint Online and OneDrive for Business:
+
+* Use PowerShell, see
+link:/mem/intune/protect/app-modern-authentication-block[Block apps that
+do not use modern authentication].
+* Configure this in the SharePoint admin center on the ``device access’
+page —''Control access from apps that don’t use modern authentication.”
+Choose Block.
+
+=== Get started with Defender for Cloud Apps or Office 365 Cloud App Security
+
+Use Office 365 Cloud App Security to evaluate risk, to alert on
+suspicious activity, and to automatically take action. Requires Office
+365 E5 plan.
+
+Or, use Microsoft Defender for Cloud Apps to obtain deeper visibility
+even after access is granted, comprehensive controls, and improved
+protection for all your cloud applications, including Office 365.
+
+Because this solution recommends the EMS E5 plan, we recommend you start
+with Defender for Cloud Apps so you can use this with other SaaS
+applications in your environment. Start with default policies and
+settings.
+
+More information:
+
+* link:/cloud-app-security/getting-started-with-cloud-app-security[Deploy
+Defender for Cloud Apps]
+* https://www.microsoft.com/cloud-platform/cloud-app-security[More
+information about Microsoft Defender for Cloud Apps]
+* link:/cloud-app-security/what-is-cloud-app-security[What is Defender
+for Cloud Apps?]
+
+:::image type=``content''
+source=``../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png''
+alt-text=``The Defender for Cloud Apps dashboard''
+lightbox=``../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png'':::
+
+=== Additional resources
+
+These articles and guides provide additional prescriptive information
+for securing your Microsoft 365 environment:
+
+* link:/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations[Microsoft
+security guidance for political campaigns&#44; nonprofits&#44; and other agile
+organizations] (you can use these recommendations in any environment,
+especially cloud-only environments)
+* link:microsoft-365-policies-configurations.md[Recommended security
+policies and configurations for identities and devices] (these
+recommendations include help for AD FS environments)

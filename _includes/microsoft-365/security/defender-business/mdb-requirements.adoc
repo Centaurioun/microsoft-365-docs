@@ -1,0 +1,88 @@
+= 
+denisebmsft
+
+== Microsoft Defender for Business requirements
+
+This article describes the requirements for Defender for Business.
+
+=== What to do
+
+[arabic]
+. link:#review-the-requirements[Review the requirements and make sure
+you meet them].
+. link:#next-steps[Proceed to your next steps].
+
+=== Review the requirements
+
+The following table lists the basic requirements you need to configure
+and use Defender for Business.
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Requirement |Description
+|Subscription |Microsoft 365 Business Premium or Defender for Business
+(standalone). See link:get-defender-business.md[How to get Defender for
+Business].
+
+|Datacenter |One of the following datacenter locations:
+
+|User accounts |
+
+|Permissions |To sign up for Defender for Business, you must be a Global
+Admin.To access the Microsoft 365 Defender portal, users must have one
+of the following link:mdb-roles-permissions.md[roles in Azure AD]
+assigned:
+
+|Browser requirements |Microsoft Edge or Google Chrome
+
+|Client device operating system |To manage devices in the Microsoft 365
+Defender portal, your devices must be running one of the following
+operating systems:
+
+|Server requirements |To onboard a device running Windows Server or
+Linux Server, you’ll need an additional license, such as
+link:get-defender-business-servers.md[Microsoft Defender for Business
+servers][link:#fn2[2]].Windows Server endpoints must meet the
+link:/microsoft-365/security/defender-endpoint/minimum-requirements#hardware-and-software-requirements[requirements
+for Defender for Endpoint], and enforcement scope must be turned on.
+|===
+
+{empty}(1) Microsoft Intune is not included in the standalone version of
+Defender for Business. Intune can be added onto Defender for Business.
+Intune is included in Microsoft 365 Business Premium.
+
+{empty}(2) To onboard servers, we recommend using
+link:get-defender-business-servers.md[Microsoft Defender for Business
+servers]. Alternately, you could use
+link:/azure/defender-for-cloud/defender-for-servers-introduction[Microsoft
+Defender for Servers]; however, your Defender for Business experience
+could change when you add an enterprise plan, such as Defender for
+Servers Plan 1 or Plan 2. To learn more, see
+link:mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions[What
+happens if I have a mix of Microsoft endpoint security subscriptions?]
+and link:mdb-onboard-devices.md[Onboard devices to Microsoft Defender
+for Business].
+
+____
+[!NOTE]
+link:/azure/active-directory/fundamentals/active-directory-whatis[Azure
+Active Directory (Azure AD)] is used to manage user permissions and
+device groups. Azure AD is included in your Defender for Business
+subscription. - If you don’t have a Microsoft 365 subscription before
+you start your trial, Azure AD will be provisioned for you during the
+activation process. - If you do have another Microsoft 365 subscription
+when you start your Defender for Business trial, you can use your
+existing Azure AD service.
+____
+
+=== Next steps
+
+* If you don’t already have Defender for Business, see
+link:get-defender-business.md[Get and provision Microsoft Defender for
+Business].
+* If you’re starting a trial subscription, see the
+link:trial-playbook-defender-business.md[Trial user guide: Microsoft
+Defender for Business].
+* If you’re ready to set up Defender for Business for your organization,
+see link:mdb-setup-configuration.md[Set up and configure Microsoft
+Defender for Business].

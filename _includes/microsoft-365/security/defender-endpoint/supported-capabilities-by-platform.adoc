@@ -1,0 +1,175 @@
+= 
+mjcaparas
+:keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm,
+group policy, mdm, local script, detection test
+
+== Supported Microsoft Defender for Endpoint capabilities by platform
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink[Sign
+up for a free trial.]
+____
+
+Learn how to link:onboard-configure.md[Onboard devices and configure
+Microsoft Defender for Endpoint capabilities].
+
+The following table gives information about the supported Microsoft
+Defender for Endpoint capabilities by platform.
+
+[width="100%",cols="20%,20%,20%,20%,20%",options="header",]
+|===
+|Operating System |Windows 10 & 11 |Windows Server 2012 R2
+[link:#fn1[1]], 2016 [link:#fn1[1]], 2019 & 2022, 1803+ |macOS |Linux
+|*Prevention* | | | |
+
+|link:attack-surface-reduction.md[Attack Surface Reduction rules]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] |image:images/svg/check-no.svg[No]
+|image:images/svg/check-no.svg[No]
+
+|link:controlled-folders.md[Controlled folder access]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] |image:images/svg/check-no.svg[No]
+|image:images/svg/check-no.svg[No]
+
+|Device Control |image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-no.svg[No] |image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-no.svg[No]
+
+|link:host-firewall-reporting.md[Firewall]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] |image:images/svg/check-no.svg[No]
+|image:images/svg/check-no.svg[No]
+
+|link:exploit-protection.md[Exploit Protection]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] |image:images/svg/check-no.svg[No]
+|image:images/svg/check-no.svg[No]
+
+|link:network-protection.md[Network Protection]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]]
+
+|link:next-generation-protection.md[Next-generation protection]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+
+|link:prevent-changes-to-security-settings-with-tamper-protection.md[Tamper
+Protection] |image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] |image:images/svg/check-no.svg[No]
+
+|link:web-protection-overview.md[Web Protection]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]]
+
+| | | | |
+
+|*Detection* | | | |
+
+|link:../defender/advanced-hunting-overview.md[Advanced Hunting]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+
+|link:indicator-file.md[Custom file indicators]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+
+|link:indicator-ip-domain.md[Custom network indicators]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]]
+
+|link:edr-in-block-mode.md[EDR Block]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] |image:images/svg/check-no.svg[No]
+|image:images/svg/check-no.svg[No]
+
+|link:microsoft-defender-antivirus-compatibility.md[Passive Mode]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+
+|Sense detection sensor |image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+
+|Endpoint & network device discovery
+|image:images/svg/check-yes.svg[Yes.] |image:images/svg/check-no.svg[No]
+|image:images/svg/check-no.svg[No] |image:images/svg/check-no.svg[No]
+
+|link:../defender-vulnerability-management/defender-vulnerability-management.md[Vulnerability
+management] |image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+
+| | | | |
+
+|*Response* | | | |
+
+|link:automated-investigations.md[Automated Investigation & Response
+(AIR)] |image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] |image:images/svg/check-no.svg[No]
+|image:images/svg/check-no.svg[No]
+
+|link:respond-machine-alerts.md[Device response capabilities: collect
+investigation package&#44; run AV scan]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]][link:#fn3[3]]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]][link:#fn3[3]]
+
+|link:respond-machine-alerts.md[Device isolation]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]][link:#fn3[3]]
+|image:images/svg/check-no.svg[No]
+
+|File response capabilities: collect file, deep analysis, block file,
+stop, and quarantine processes |image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] |image:images/svg/check-no.svg[No]
+[link:#fn4[4]] |image:images/svg/check-no.svg[No] [link:#fn4[4]]
+
+|link:live-response.md[Live Response]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]]
+|image:images/svg/check-yes.svg[Yes.] [link:#fn2[2]]
+|===
+
+{empty}(1) Refers to the modern, unified solution for Windows Server
+2012 R2 and 2016. For more information, see
+link:configure-server-endpoints.md[Onboard Windows Servers to the
+Defender for Endpoint service].
+
+{empty}(2) Feature is currently in preview (link:preview.md[Microsoft
+Defender for Endpoint preview features])
+
+{empty}(3) Response capabilities using Live Response [2]
+
+{empty}(4) Collect file only, using Live Response [2] +
+>[!NOTE] >Windows 7, 8.1, Windows Server 2008 R2 include support for the
+EDR sensor, and AV using System Center Endpoint Protection (SCEP).

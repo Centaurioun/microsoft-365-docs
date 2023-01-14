@@ -1,0 +1,621 @@
+= 
+kelleyvice-msft
+
+== Data Residency for Other Microsoft 365 Services
+
+=== Data Residency commitments available
+
+Use the following guidance to determine where your data is located.
+Please reference your _tenant_ _Default Geography_.
+
+==== Azure Active Directory (AAD)
+
+Please refer to https://aka.ms/aaddatamap[Azure Active Directory Data
+Locations].
+
+==== Forms
+
+Tenants in EU member Countries maintain data in Macro Region Geography 1
+– EMEA. All other tenants have customer data stored in the United
+States, except Australia. For customers in Australia, Microsoft Forms
+customer data will be stored at rest in Australia for all new tenants
+using Forms and existing tenants that have not previously used Forms.
+
+==== Intune
+
+Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status
+for existing tenants. If you do not have an existing tenant, create a
+trial tenant and provision Intune.
+
+* Microsoft will not store Intune customer data at rest outside the
+stated geo, except if:
+* It is necessary for Microsoft to provide customer support,
+troubleshoot the service, or comply with legal requirements.
+* The customer configures an account to enable such storage of customer
+data, including through the use of the following:
+* Features that are designed to operate globally, such as Content
+Delivery Network (CDN), which provides a global caching service and
+stores customer data at edge locations around the world.
+* For Azure Active Directory: Please refer to
+https://aka.ms/aaddatamap[Azure Active Directory Data Locations].
+* Preview, beta, or other prerelease services, which typically store
+customer data in the United States but may store it globally.
+Regardless, Microsoft does not control or limit the Geo from which
+customers or their end users may access customer data. Similarly, where
+customer data in other services is subsequently integrated into Intune,
+the originating customer data will continue to be stored subject to the
+other service’s own Geo commitments (if any); only the copy of the
+customer data integrated into Intune will be stored in the stated Geo
+for Intune.
+
+==== Office for Mobile
+
+Customer data for this service comes from other services, like Exchange
+Online and SharePoint Online. There is no customer data stored outside
+of those services with the exception of the mobile device.
+
+==== OneNote Services
+
+OneNote stores customer data in OneDrive for Business. It does however
+have an API that can cause persistent caches to be made outside of the
+Geography where OneDrive for Business stores customer data.
+
+==== Planner
+
+Please see the
+link:#static-data-location-information-for-select-workloads[Static data
+location information for select workloads] section.
+
+==== Power Apps for Microsoft 365
+
+Please refer to link:/dynamics365/get-started/availability[Dynamics 365
+availability and data locations | Microsoft Learn].
+
+==== Stream
+
+You can find this information from the ``?'' option in the Stream UI, if
+you have it running and then click on ``About Microsoft Stream'' and see
+where your data is stored. If needed, create a trial tenant.
+
+==== Viva Insights – Advanced, Mgr, Leader
+
+Please see the
+link:#static-data-location-information-for-select-workloads[Static data
+location information for select workloads] section. The data region for
+Manager/Leader and Advanced is determined by the _Default Geography_ of
+the _tenant_, not individual users.
+
+==== Viva Insights – Personal
+
+Customer data is processed and stored in the employee’s Exchange Online
+mailbox. Data residency for Personal insights in Viva Insights is based
+on the employee’s mailbox location. For more information, see
+link:/viva/insights/personal/overview/privacy-guide-admins?branch=main#summary-of-key-points[Personal
+insights in Viva Insights privacy guide for admins].
+
+==== Viva Learning
+
+Please see the
+link:#static-data-location-information-for-select-workloads[Static data
+location information for select workloads] section.
+
+==== Whiteboard
+
+Please refer to
+link:/microsoft-365/whiteboard/manage-data-organizations[Manage data for
+Microsoft Whiteboard | Microsoft Learn].
+
+==== Yammer
+
+Please refer to
+link:/yammer/manage-security-and-compliance/data-residency[Data
+Residency - Yammer | Microsoft Learn].
+
+=== Static data location information for select workloads
+
+[arabic]
+. Macro Region Geography 1 – EMEA / European Union
+. Macro Region Geography 2 - Asia Pacific
+. Macro Region Geography 3 – Americas
+. Australia
+. Canada
+. Japan
+
+[width="100%",cols="20%,20%,20%,20%,20%",options="header",]
+|===
+|Country Code |Countries/Regions |Viva Insights Advanced |Viva Learning
+|Planner
+|AF |Afghanistan |APC2 |APC2 |APC2
+
+|AX |Aland Islands |APC2 |AMER3 |EUR1
+
+|AL |Albania |EUR1 |EUR1 |EUR1
+
+|DZ |Algeria |EUR1 |EUR1 |EUR1
+
+|AS |American Samoa |APC2 |APC2 |APC2
+
+|AD |Andorra |EUR1 |EUR1 |EUR1
+
+|AO |Angola |EUR1 |EUR1 |EUR1
+
+|AI |Anguilla |AMER3 |AMER3 |AMER3
+
+|AQ |Antarctica |AMER3 |EUR1 |AMER3
+
+|AG |Antigua and Barbuda |AMER3 |AMER3 |AMER3
+
+|AR |Argentina |AMER3 |AMER3 |AMER3
+
+|AM |Armenia |EUR1 |EUR1 |EUR1
+
+|AW |Aruba |AMER3 |AMER3 |AMER3
+
+|AU |Australia |APC2 |AUS4 |AUS4
+
+|AT |Austria |EUR1 |EUR1 |EUR1
+
+|AZ |Azerbaijan |EUR1 |EUR1 |EUR1
+
+|BS |Bahamas |AMER3 |AMER3 |AMER3
+
+|BH |Bahrain |EUR1 |EUR1 |EUR1
+
+|BD |Bangladesh |APC2 |APC2 |APC2
+
+|BB |Barbados |AMER3 |AMER3 |AMER3
+
+|BY |Belarus |EUR1 |EUR1 |EUR1
+
+|BE |Belgium |EUR1 |EUR1 |EUR1
+
+|BZ |Belize |AMER3 |AMER3 |AMER3
+
+|BJ |Benin |EUR1 |EUR1 |EUR1
+
+|BM |Bermuda |AMER3 |AMER3 |AMER3
+
+|BT |Bhutan |APC2 |APC2 |APC2
+
+|BO |Bolivia |AMER3 |AMER3 |AMER3
+
+|BQ |Bonaire |AMER3 |AMER3 |AMER3
+
+|BA |Bosnia and Herzegovina |EUR1 |EUR1 |EUR1
+
+|BW |Botswana |EUR1 |EUR1 |EUR1
+
+|BV |Bouvet Island |AMER3 |EUR1 |AMER3
+
+|BR |Brazil |AMER3 |AMER3 |AMER3
+
+|IO |British Indian Ocean Territory |APC2 |APC2 |APC2
+
+|VG |British Virgin Islands |AMER3 |AMER3 |AMER3
+
+|BN |Brunei Darussalam |APC2 |APC2 |APC2
+
+|BG |Bulgaria |EUR1 |EUR1 |EUR1
+
+|BF |Burkina Faso |EUR1 |EUR1 |EUR1
+
+|BI |Burundi |EUR1 |EUR1 |EUR1
+
+|KH |Cambodia |APC2 |APC2 |APC2
+
+|CM |Cameroon |EUR1 |EUR1 |EUR1
+
+|CA |Canada |AMER3 |AMER3 |CAN5
+
+|CV |Cape Verde |EUR1 |EUR1 |EUR1
+
+|KY |Cayman Islands |AMER3 |AMER3 |AMER3
+
+|CF |Central African Republic |EUR1 |EUR1 |EUR1
+
+|TD |Chad |EUR1 |EUR1 |EUR1
+
+|CL |Chile |AMER3 |AMER3 |AMER3
+
+|CN |China |APC2 |APC2 |APC2
+
+|CX |Christmas Island |APC2 |APC2 |APC2
+
+|CC |Cocos (Keeling) Islands |APC2 |APC2 |APC2
+
+|CO |Colombia |AMER3 |AMER3 |AMER3
+
+|KM |Comoros |EUR1 |EUR1 |EUR1
+
+|CG |Congo (Brazzaville) |EUR1 |EUR1 |EUR1
+
+|CD |Congo, (Kinshasa) |EUR1 |EUR1 |EUR1
+
+|CK |Cook Islands |APC2 |APC2 |APC2
+
+|CR |Costa Rica |AMER3 |AMER3 |AMER3
+
+|CI |Côte d’Ivoire |EUR1 |EUR1 |EUR1
+
+|HR |Croatia |EUR1 |EUR1 |EUR1
+
+|CW |Curaçao |AMER3 |EUR1 |AMER3
+
+|CY |Cyprus |EUR1 |EUR1 |EUR1
+
+|CZ |Czech Republic |EUR1 |EUR1 |EUR1
+
+|DK |Denmark |EUR1 |EUR1 |EUR1
+
+|DJ |Djibouti |EUR1 |EUR1 |EUR1
+
+|DM |Dominica |AMER3 |AMER3 |AMER3
+
+|DO |Dominican Republic |AMER3 |AMER3 |AMER3
+
+|EC |Ecuador |AMER3 |AMER3 |AMER3
+
+|EG |Egypt |EUR1 |EUR1 |EUR1
+
+|SV |El Salvador |AMER3 |AMER3 |AMER3
+
+|GQ |Equatorial Guinea |EUR1 |EUR1 |EUR1
+
+|ER |Eritrea |EUR1 |EUR1 |EUR1
+
+|EE |Estonia |EUR1 |EUR1 |EUR1
+
+|ET |Ethiopia |EUR1 |EUR1 |EUR1
+
+|FK |Falkland Islands (Malvinas) |AMER3 |AMER3 |AMER3
+
+|FO |Faroe Islands |EUR1 |EUR1 |EUR1
+
+|FM |Federated States of Micronesia |APC2 |APC2 |APC2
+
+|FJ |Fiji |APC2 |APC2 |AUS4
+
+|FI |Finland |EUR1 |EUR1 |EUR1
+
+|FR |France |EUR1 |EUR1 |EUR1
+
+|GF |French Guiana |AMER3 |AMER3 |AMER3
+
+|PF |French Polynesia |APC2 |APC2 |APC2
+
+|TF |French Southern Territories |AMER3 |EUR1 |AMER3
+
+|GA |Gabon |EUR1 |EUR1 |EUR1
+
+|GM |Gambia |EUR1 |EUR1 |EUR1
+
+|GE |Georgia |EUR1 |EUR1 |EUR1
+
+|DE |Germany |EUR1 |EUR1 |EUR1
+
+|GH |Ghana |EUR1 |EUR1 |EUR1
+
+|GI |Gibraltar |EUR1 |EUR1 |EUR1
+
+|GR |Greece |EUR1 |EUR1 |EUR1
+
+|GL |Greenland |AMER3 |AMER3 |AMER3
+
+|GD |Grenada |AMER3 |AMER3 |AMER3
+
+|GP |Guadeloupe |AMER3 |AMER3 |AMER3
+
+|GU |Guam |APC2 |APC2 |APC2
+
+|GT |Guatemala |AMER3 |AMER3 |AMER3
+
+|GG |Guernsey |EUR1 |EUR1 |EUR1
+
+|GN |Guinea |EUR1 |EUR1 |EUR1
+
+|GW |Guinea-Bissau |EUR1 |EUR1 |EUR1
+
+|GY |Guyana |AMER3 |AMER3 |AMER3
+
+|HT |Haiti |AMER3 |AMER3 |AMER3
+
+|HM |Heard and Mcdonald Islands |AMER3 |AMER3 |AMER3
+
+|VA |Holy See (Vatican City State) |EUR1 |EUR1 |EUR1
+
+|HN |Honduras |AMER3 |AMER3 |AMER3
+
+|HK |Hong Kong, SAR China |APC2 |APC2 |APC2
+
+|HU |Hungary |EUR1 |EUR1 |EUR1
+
+|IS |Iceland |EUR1 |EUR1 |EUR1
+
+|IN |India |APC2 |APC2 |APC2
+
+|ID |Indonesia |APC2 |APC2 |APC2
+
+|IQ |Iraq |EUR1 |EUR1 |EUR1
+
+|IE |Ireland |EUR1 |EUR1 |EUR1
+
+|IM |Isle of Man |EUR1 |EUR1 |EUR1
+
+|IL |Israel |EUR1 |EUR1 |EUR1
+
+|IT |Italy |EUR1 |EUR1 |EUR1
+
+|JM |Jamaica |AMER3 |AMER3 |AMER3
+
+|JP |Japan |APC2 |APC2 |JPN6
+
+|JE |Jersey |EUR1 |EUR1 |EUR1
+
+|JO |Jordan |EUR1 |EUR1 |EUR1
+
+|KZ |Kazakhstan |EUR1 |EUR1 |EUR1
+
+|KE |Kenya |EUR1 |EUR1 |EUR1
+
+|KI |Kiribati |APC2 |APC2 |APC2
+
+|KP |Korea (North) |APC2 |APC2 |APC2
+
+|KR |Korea (South) |APC2 |APC2 |APC2
+
+|XK |Kosovo |EUR1 |AMER3 |EUR1
+
+|KW |Kuwait |EUR1 |EUR1 |EUR1
+
+|KG |Kyrgyzstan |EUR1 |APC2 |EUR1
+
+|LA |Lao PDR |APC2 |APC2 |APC2
+
+|LV |Latvia |EUR1 |EUR1 |EUR1
+
+|LB |Lebanon |EUR1 |EUR1 |EUR1
+
+|LS |Lesotho |EUR1 |EUR1 |EUR1
+
+|LR |Liberia |EUR1 |EUR1 |EUR1
+
+|LY |Libya |EUR1 |EUR1 |EUR1
+
+|LI |Liechtenstein |EUR1 |EUR1 |EUR1
+
+|LT |Lithuania |EUR1 |EUR1 |EUR1
+
+|LU |Luxembourg |EUR1 |EUR1 |EUR1
+
+|MO |Macao, SAR China |APC2 |APC2 |APC2
+
+|MG |Madagascar |EUR1 |EUR1 |EUR1
+
+|MW |Malawi |EUR1 |EUR1 |EUR1
+
+|MY |Malaysia |APC2 |APC2 |APC2
+
+|MV |Maldives |APC2 |APC2 |APC2
+
+|ML |Mali |EUR1 |EUR1 |EUR1
+
+|MT |Malta |EUR1 |EUR1 |EUR1
+
+|MH |Marshall Islands |APC2 |APC2 |APC2
+
+|MQ |Martinique |AMER3 |AMER3 |AMER3
+
+|MR |Mauritania |EUR1 |EUR1 |EUR1
+
+|MU |Mauritius |EUR1 |EUR1 |EUR1
+
+|YT |Mayotte |EUR1 |EUR1 |EUR1
+
+|MX |Mexico |AMER3 |AMER3 |AMER3
+
+|MC |Monaco |EUR1 |EUR1 |EUR1
+
+|MD |Moldova |EUR1 |EUR1 |EUR1
+
+|MN |Mongolia |APC2 |APC2 |APC2
+
+|ME |Montenegro |EUR1 |EUR1 |EUR1
+
+|MS |Montserrat |AMER3 |AMER3 |AMER3
+
+|MA |Morocco |EUR1 |EUR1 |EUR1
+
+|MZ |Mozambique |EUR1 |EUR1 |EUR1
+
+|MM |Myanmar |APC2 |APC2 |APC2
+
+|NA |Namibia |EUR1 |EUR1 |EUR1
+
+|NR |Nauru |APC2 |APC2 |APC2
+
+|NP |Nepal |APC2 |APC2 |APC2
+
+|NL |Netherlands |EUR1 |EUR1 |EUR1
+
+|AN |Netherlands Antilles |AMER3 |AMER3 |AMER3
+
+|NC |New Caledonia |APC2 |APC2 |APC2
+
+|NZ |New Zealand |APC2 |APC2 |AUS4
+
+|NI |Nicaragua |AMER3 |AMER3 |AMER3
+
+|NE |Niger |EUR1 |EUR1 |EUR1
+
+|NG |Nigeria |EUR1 |EUR1 |EUR1
+
+|NU |Niue |APC2 |APC2 |APC2
+
+|NF |Norfolk Island |APC2 |APC2 |APC2
+
+|MP |Northern Mariana Islands |APC2 |APC2 |APC2
+
+|NO |Norway |EUR1 |EUR1 |EUR1
+
+|OM |Oman |EUR1 |APC2 |EUR1
+
+|PK |Pakistan |EUR1 |APC2 |EUR1
+
+|PW |Palau |APC2 |APC2 |APC2
+
+|PS |Palestinian Authority |APC2 |EUR1 |APC2
+
+|PA |Panama |AMER3 |AMER3 |AMER3
+
+|PG |Papua New Guinea |APC2 |APC2 |APC2
+
+|PY |Paraguay |AMER3 |AMER3 |AMER3
+
+|PE |Peru |AMER3 |AMER3 |AMER3
+
+|PH |Philippines |APC2 |APC2 |APC2
+
+|PN |Pitcairn |APC2 |APC2 |APC2
+
+|PL |Poland |EUR1 |EUR1 |EUR1
+
+|PT |Portugal |EUR1 |EUR1 |EUR1
+
+|PR |Puerto Rico |AMER3 |AMER3 |AMER3
+
+|QA |Qator |EUR1 |EUR1 |EUR1
+
+|MK |Republic of Macedonia |EUR1 |EUR1 |EUR1
+
+|RE |Réunion |EUR1 |EUR1 |EUR1
+
+|RO |Romania |EUR1 |EUR1 |EUR1
+
+|RU |Russian Federation |EUR1 |EUR1 |EUR1
+
+|RW |Rwanda |EUR1 |EUR1 |EUR1
+
+|SH |Saint Helena |EUR1 |EUR1 |EUR1
+
+|KN |Saint Kitts and Nevis |AMER3 |AMER3 |AMER3
+
+|LC |Saint Lucia |AMER3 |AMER3 |AMER3
+
+|PM |Saint Pierre and Miquelon |AMER3 |AMER3 |AMER3
+
+|VC |Saint Vincent and Grenadines |AMER3 |AMER3 |AMER3
+
+|BL |Saint-Barthélemy |AMER3 |EUR1 |AMER3
+
+|MF |Saint-Martin (French part) |AMER3 |EUR1 |AMER3
+
+|WS |Samoa |APC2 |APC2 |APC2
+
+|SM |San Marino |EUR1 |EUR1 |EUR1
+
+|ST |Sao Tome and Principe |EUR1 |EUR1 |EUR1
+
+|SA |Saudi Arabia |EUR1 |EUR1 |EUR1
+
+|SN |Senegal |EUR1 |EUR1 |EUR1
+
+|RS |Serbia |EUR1 |EUR1 |EUR1
+
+|SC |Seychelles |EUR1 |EUR1 |EUR1
+
+|SL |Sierra Leone |EUR1 |EUR1 |EUR1
+
+|SG |Singapore |APC2 |APC2 |APC2
+
+|SX |Sint Maarten |AMER3 |EUR1 |AMER3
+
+|SK |Slovakia |EUR1 |EUR1 |EUR1
+
+|SI |Slovenia |EUR1 |EUR1 |EUR1
+
+|SB |Solomon Islands |APC2 |APC2 |APC2
+
+|SO |Somalia |EUR1 |EUR1 |EUR1
+
+|ZA |South Africa |EUR1 |EUR1 |EUR1
+
+|GS |South Georgia and the South Sandwich Islands |AMER3 |EUR1 |AMER3
+
+|SS |South Sudan |EUR1 |EUR1 |EUR1
+
+|ES |Spain |EUR1 |EUR1 |EUR1
+
+|LK |Sri Lanka |APC2 |APC2 |APC2
+
+|SR |Suriname |AMER3 |AMER3 |AMER3
+
+|SJ |Svalbard and Jan Mayen Islands |EUR1 |EUR1 |EUR1
+
+|SZ |Swaziland |EUR1 |EUR1 |EUR1
+
+|SE |Sweden |EUR1 |EUR1 |EUR1
+
+|CH |Switzerland |EUR1 |EUR1 |EUR1
+
+|TW |Taiwan |APC2 |APC2 |APC2
+
+|TJ |Tajikistan |EUR1 |APC2 |EUR1
+
+|TH |Thailand |APC2 |APC2 |APC2
+
+|TL |Timor-Leste |APC2 |EUR1 |APC2
+
+|TG |Togo |EUR1 |EUR1 |EUR1
+
+|TK |Tokelau |APC2 |APC2 |APC2
+
+|TO |Tonga |APC2 |APC2 |APC2
+
+|TT |Trinidad and Tobago |AMER3 |AMER3 |AMER3
+
+|TN |Tunisia |EUR1 |EUR1 |EUR1
+
+|TR |Turkey |EUR1 |EUR1 |EUR1
+
+|TM |Turkmenistan |EUR1 |APC2 |EUR1
+
+|TC |Turks and Caicos Islands |AMER3 |AMER3 |AMER3
+
+|TV |Tuvalu |APC2 |APC2 |APC2
+
+|UG |Uganda |EUR1 |EUR1 |EUR1
+
+|UA |Ukraine |EUR1 |EUR1 |EUR1
+
+|AE |United Arab Emirates |EUR1 |EUR1 |EUR1
+
+|GB |United Kingdom |EUR1 |EUR1 |EUR1
+
+|TZ |United Republic of Tanzania |EUR1 |EUR1 |EUR1
+
+|US |United States of America |AMER3 |AMER3 |AMER3
+
+|UY |Uruguay |AMER3 |AMER3 |AMER3
+
+|UM |US Minor Outlying Islands |APC2 |APC2 |APC2
+
+|UZ |Uzbekistan |EUR1 |APC2 |EUR1
+
+|VU |Vanuatu |APC2 |APC2 |APC2
+
+|VE |Venezuela (Bolivarian Republic) |AMER3 |AMER3 |AMER3
+
+|VN |Vietnam |APC2 |APC2 |APC2
+
+|VI |Virgin Islands, US |AMER3 |AMER3 |AMER3
+
+|WF |Wallis and Futuna Islands |APC2 |APC2 |APC2
+
+|EH |Western Sahara |EUR1 |EUR1 |EUR1
+
+|YE |Yemen |EUR1 |EUR1 |EUR1
+
+|ZM |Zambia |EUR1 |EUR1 |EUR1
+
+|ZW |Zimbabwe |EUR1 |EUR1 |EUR1
+|===

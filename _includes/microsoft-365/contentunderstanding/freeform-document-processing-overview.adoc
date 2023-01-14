@@ -1,0 +1,72 @@
+= 
+chuckedmonson
+
+== Overview of freeform document processing in Microsoft Syntex
+
+Use the freeform document processing model
+(link:create-syntex-model.md#train-a-custom-model[freeform selection
+method]) to automatically extract information from unstructured and
+freeform documents such as letters and contracts.
+
+Microsoft Syntex uses Microsoft Power Apps
+link:/ai-builder/form-processing-model-overview[AI Builder] document
+processing (formerly known as form processing) to create freeform
+document processing models within SharePoint document libraries. You can
+use AI Builder document processing to create freeform document
+processing models that use machine learning technology to identify and
+extract key-value pairs and table data from unstructured or freeform
+documents, such as contracts and correspondence.
+
+Organizations often receive documents that have no structure in large
+quantities from various sources, such as mail, fax, and email.
+Processing these documents and manually entering them into a database
+can take a considerable amount of time. By using AI to extract the text,
+key-value pairs, and tables from your documents, Syntex automates this
+process.
+
+____
+[!NOTE] For more ideas about how to use these models in your
+organization, see link:adoption-getstarted.md[Get started driving
+adoption] and link:adoption-scenarios.md[Scenarios and use cases].
+____
+
+For example, you can create a structured document processing model that
+identifies all documents that are uploaded to the document library. From
+each document, you can then extract and display specific data that is
+important to you.
+
+image::../media/content-understanding/doc-lib-done.png[Screenshot
+showing the document library view.]
+
+You use example files to train your model and define the information to
+be extracted from your form. The layout of your document is learned by
+training your model. You only need five form documents to get started.
+Syntex will analyze your example files for key-value pairs, and you can
+also manually identify ones that might not have been detected. AI
+builder lets you test the accuracy of your model on your example files.
+
+You can only create a structured document processing model in SharePoint
+document libraries for which it’s enabled. If it has been enabled,
+you’re able to see the *Classify and extract* option in your document
+library.
+
+image::../media/content-understanding/create-ai-builder-model2.png[Screenshot
+showing the AI Builder model.]
+
+If you need it enabled on your document library, contact your Microsoft
+365 admin.
+
+=== Requirements
+
+For information about requirements to consider when choosing this model,
+see
+link:requirements-and-limitations.md#freeform-document-processing[Requirements
+and limitations for models in Microsoft Syntex].
+
+=== See also
+
+link:difference-between-document-understanding-and-form-processing-model.md[Compare
+custom models]
+
+link:train-freeform-document-processing-model.md[Train a freeform
+document processing model]

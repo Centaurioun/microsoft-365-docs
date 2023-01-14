@@ -1,0 +1,77 @@
+= 
+denisebmsft
+:keywords: malware, defender, antivirus, tamper protection,
+Configuration Manager
+
+== Manage tamper protection using tenant attach with Configuration Manager, version 2006
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+If you’re using
+link:/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006[version
+2006 of Configuration Manager], you can manage tamper protection
+settings on Windows 10, Windows 10 Enterprise multi-session, Windows 11,
+Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows
+Server 2016, Windows Server 2019, and Windows Server 2022 by using a
+method called _tenant attach_. Tenant attach enables you to sync your
+on-premises-only Configuration Manager devices into the Microsoft
+Endpoint Manager admin center, and then deliver endpoint security
+configuration policies to on-premises collections & devices.
+
+____
+[!NOTE] The procedure can be used to extend tamper protection to devices
+running Windows 10, Windows 10 Enterprise multi-session, Windows 11,
+Windows 11 Enterprise multi-session, Windows Server 2019, and Windows
+Server 2022. Make sure to review the prerequisites and other information
+in the resources mentioned in this procedure. For Windows Server 2012 R2
+running the modern, unified solution
+link:/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203[version
+2203 of Configuration Manager] is required.
+____
+
+[arabic]
+. Set up tenant attach. To learn more, see
+link:/mem/configmgr/tenant-attach/endpoint-security-get-started[Get
+started: Create and deploy endpoint security policies from the admin
+center].
+. In the https://go.microsoft.com/fwlink/?linkid=2109431[Microsoft
+Endpoint Manager admin center], go to *Endpoint security* > *Antivirus*,
+and then choose *+ Create Policy*.
+* In the *Platform* list, select *Windows 10, Windows 11, and Windows
+Server (ConfigMgr)*.
+* In the *Profile* list, select *Windows Security experience (preview)*.
+. Deploy the policy to your device collection.
+
+=== Need help with this method?
+
+See the following resources:
+
+* link:/mem/intune/protect/antivirus-security-experience-windows-settings[Settings
+for the Windows Security experience profile in Microsoft Intune]
+* https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin[Tech
+Community Blog: Announcing Tamper Protection for Configuration Manager
+Tenant Attach clients]
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____

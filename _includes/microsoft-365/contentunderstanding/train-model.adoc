@@ -1,0 +1,29 @@
+= 
+chuckedmonson
+
+== Train your model in Microsoft Syntex
+
+*Applies to:*   ✓ All custom models  
+
+The steps to train your model depends on the type of model you are
+using.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Model type |Steps to train
+|Unstructured document processing |link:create-a-classifier.md[Train
+your unstructured document processing model]
+
+|Freeform document processing
+|link:train-freeform-document-processing-model.md[Train your freeform
+document processing model]
+
+|Structured document processing
+|link:create-a-form-processing-model.md[Train your structured document
+processing model]
+|===
+
+=== See also
+
+link:model-types-overview.md[Overview of model types in Microsoft
+Syntex]

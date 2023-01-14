@@ -1,0 +1,63 @@
+= 
+JoanneHendrickson
+
+== Step 1: Connect to the source and target tenants
+
+This is Step 1 in a solution designed to complete a Cross-tenant
+OneDrive migration. To learn more, see
+link:cross-tenant-onedrive-migration.md[Cross-tenant OneDrive migration
+overview].
+
+* *Step 1: link:cross-tenant-onedrive-migration-step1.md[Connect to the
+source and the target tenants]*
+* Step 2: link:cross-tenant-onedrive-migration-step2.md[Establish trust
+between the source and the target tenant]
+* Step 3: link:cross-tenant-onedrive-migration-step3.md[Verify trust has
+been established]
+* Step 4: link:cross-tenant-onedrive-migration-step4.md[Pre-create users
+and groups] +
+* Step 5: link:cross-tenant-onedrive-migration-step5.md[Prepare identity
+mapping]
+* Step 6: link:cross-tenant-onedrive-migration-step6.md[Start a
+Cross-tenant OneDrive migration]
+* Step 7: link:cross-tenant-onedrive-migration-step7.md[Post migration
+steps]
+
+=== Before you begin
+
+* *Microsoft SharePoint Online Powershell*. Confirm you have the most
+recent version installed. If not,
+link:/download/details.aspx?id=35588[Download SharePoint Online
+Management Shell from Official Microsoft Download Center].
+* Be a SharePoint Online admin or Microsoft 365 Global admin on both the
+source and target tenants
+
+==== Connect to both tenants
+
+[arabic]
+. Sign in to the Sharepoint Management Shell as a SharePoint Online
+admin or Microsoft 365 Global admin.
+. Run the following entering the *source* tenant URL:
++
+[source,powershell]
+----
+Connect-SPOService -url https://<TenantName>-admin.sharepoint.com
+----
+. When prompted, sign in to the *source* tenant using your Admin
+username and password.
+. Run the following entering the *target* tenant URL:
++
+[source,powershell]
+----
+Connect-SPOService -url https://<TenantName>-admin.sharepoint.com
+----
+. When prompted, sign in to the *target* tenant using your Admin
+username and password.
+
+____
+[!Important] *Microsoft 365 Multi-Geo customers:* You must treat each
+geography as a separate tenant. Provide the correct geography-specific
+URLs throughout the migration process.
+____
+
+=== Step 2: link:cross-tenant-onedrive-migration-step2.md[Establish trust between the source and target tenants]

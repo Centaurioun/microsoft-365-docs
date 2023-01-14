@@ -1,0 +1,34 @@
+= 
+kelleyvice-msft
+
+== Desktop Deployment Center (deprecated)
+
+The body of content that comprised the Desktop Deployment Center has
+been deprecated.
+
+Use these resources to deploy modern desktops:
+
+* link:/windows/deployment/[Windows 10 deployment]
+* link:/deployoffice/deployment-guide-microsoft-365-apps[Deploy
+Microsoft 365 Apps]
+* link:/mem/intune/fundamentals/planning-guide[Microsoft Intune]
+* link:../security/office-365-security/microsoft-365-policies-configurations.md[Identity
+and device access policies]
+
+You can also view the https://www.aka.ms/watchhowtoshift[Desktop
+Deployment series videos from Microsoft Mechanics].
+
+You can also find help for your desktop deployment from Microsoft
+partners and
+https://www.microsoft.com/fasttrack/microsoft-365[FastTrack].
+
+=== Windows and Office Deployment Lab Kit
+
+This kit helps you plan, test, and validate your deployment and
+management of desktops running Windows 10 Enterprise and Microsoft 365
+Apps for enterprise. The labs cover using Microsoft Endpoint
+Configuration Manager, Desktop Analytics, Office Customization Tool,
+OneDrive, Windows Autopilot and more.
+
+See link:modern-desktop-deployment-and-management-lab.md[Windows and
+Office Deployment Lab Kit] for the details.

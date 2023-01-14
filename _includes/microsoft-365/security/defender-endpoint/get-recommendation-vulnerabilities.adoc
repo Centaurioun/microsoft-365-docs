@@ -1,0 +1,120 @@
+= 
+DulceMontemayor
+:keywords: apis, graph api, supported apis, get, list of
+vulnerabilities, security recommendation, security recommendation for
+vulnerabilities, threat and vulnerability management, threat and
+vulnerability management api
+
+== List vulnerabilities by recommendation
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+Retrieves a list of vulnerabilities associated with the security
+recommendation.
+
+=== Permissions
+
+One of the following permissions is required to call this API. To learn
+more, including how to choose permissions, see link:apis-intro.md[Use
+Microsoft Defender for Endpoint APIs] for details.
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Permission type |Permission |Permission display name
+|Application |Vulnerability.Read.All |`Read Threat and Vulnerability
+Management security recommendation information'
+
+|Delegated (work or school account) |Vulnerability.Read |`Read Threat
+and Vulnerability Management security recommendation information'
+|===
+
+=== HTTP request
+
+[source,http]
+----
+GET /api/recommendations/{id}/vulnerabilities
+----
+
+=== Request headers
+
+[cols="<,<,<",options="header",]
+|===
+|Name |Type |Description
+|Authorization |String |Bearer \{token}. *Required*.
+|===
+
+=== Request body
+
+Empty
+
+=== Response
+
+If successful, this method returns 200 OK, with the list of
+vulnerabilities associated with the security recommendation.
+
+=== Example
+
+==== Request example
+
+Here is an example of the request.
+
+[source,http]
+----
+GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome/vulnerabilities
+----
+
+==== Response example
+
+Here is an example of the response.
+
+[source,json]
+----
+{
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(Analytics.Contracts.PublicAPI.PublicVulnerabilityDto)",
+    "value": [
+        {
+            "id": "CVE-2019-13748",
+            "name": "CVE-2019-13748",
+            "description": "Insufficient policy enforcement in developer tools in Google Chrome prior to 79.0.3945.79 allowed a local attacker to obtain potentially sensitive information from process memory via a crafted HTML page.",
+            "severity": "Medium",
+            "cvssV3": 6.5,
+            "exposedMachines": 0,
+            "publishedOn": "2019-12-10T00:00:00Z",
+            "updatedOn": "2019-12-16T12:15:00Z",
+            "publicExploit": false,
+            "exploitVerified": false,
+            "exploitInKit": false,
+            "exploitTypes": [],
+            "exploitUris": []
+        }
+        ...
+     ]
+}
+----
+
+=== Related topics
+
+* link:/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt[Microsoft
+Defender Vulnerability Management]
+* link:/microsoft-365/security/defender-endpoint/tvm-security-recommendation[Defender
+Vulnerability Management security recommendation]

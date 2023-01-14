@@ -1,0 +1,152 @@
+= 
+dansimp
+
+== Configure automated investigation and response capabilities in Microsoft 365 Defender
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+Microsoft 365 Defender includes powerful link:m365d-autoir.md[automated
+investigation and response capabilities] that can save your security
+operations team much time and effort. With
+link:m365d-autoir.md#how-automated-investigation-and-self-healing-works[self-healing],
+these capabilities mimic the steps a security analyst would take to
+investigate and respond to threats, only faster, and with more ability
+to scale.
+
+This article describes how to configure automated investigation and
+response in Microsoft 365 Defender with these steps:
+
+[arabic]
+. link:#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender[Review
+the prerequisites].
+. link:#review-or-change-the-automation-level-for-device-groups[Review
+or change the automation level for device groups].
+. link:#review-your-security-and-alert-policies-in-office-365[Review
+your security and alert policies in Office 365].
+
+Then, after you’re all set up, you can link:m365d-autoir-actions.md[view
+and manage remediation actions in the Action center]. And, if necessary,
+you can
+link:#need-to-make-changes-to-automated-investigation-settings[make
+changes to automated investigation settings].
+
+=== Prerequisites for automated investigation and response in Microsoft 365 Defender
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Requirement |Details
+|Subscription requirements |One of these subscriptions:
+
+|Network requirements |
+
+|Windows device requirements |
+
+|Protection for email content and Office files |
+
+|Permissions |To configure automated investigation and response
+capabilities, you must have one of the following roles assigned in
+either Azure Active Directory (https://portal.azure.com) or in the
+Microsoft 365 admin center (https://admin.microsoft.com):
+|===
+
+=== Review or change the automation level for device groups
+
+Whether automated investigations run, and whether remediation actions
+are taken automatically or only upon approval for your devices depend on
+certain settings, such as your organization’s device group policies.
+Review the configured automation level for your device group policies.
+You must be a global administrator or security administrator to perform
+the following procedure:
+
+[arabic]
+. Go to the Microsoft 365 Defender portal
+(https://security.microsoft.com) and sign in.
+. Go to *Settings* > *Endpoints* > *Device groups* under *Permissions*.
+. Review your device group policies. In particular, look at the
+*Automation level* column. We recommend using *Full - remediate threats
+automatically*. You might need to create or edit your device groups to
+get the level of automation you want. To get help with this task, see
+the following articles:
+* link:/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated[How
+threats are remediated]
+* link:/windows/security/threat-protection/microsoft-defender-atp/machine-groups[Create
+and manage device groups]
+
+=== Review your security and alert policies in Office 365
+
+Microsoft provides built-in
+link:../../compliance/alert-policies.md[alert policies] that help
+identify certain risks. These risks include Exchange admin permissions
+abuse, malware activity, potential external and internal threats, and
+data lifecycle management risks. Some alerts can trigger
+link:../office-365-security/air-about.md[automated investigation and
+response in Office 365]. Make sure your
+link:../office-365-security/defender-for-office-365.md[Defender for
+Office 365] features are configured correctly.
+
+Although certain alerts and security policies can trigger automated
+investigations, _no remediation actions are taken automatically for
+email and content_. Instead, all remediation actions for email and email
+content await approval by your security operations team in the
+link:m365d-action-center.md[Action center].
+
+Security settings in Office 365 help protect email and content. To view
+or change these settings, follow the guidance in
+link:../office-365-security/protect-against-threats.md[Protect against
+threats].
+
+[arabic]
+. In the Microsoft 365 Defender portal, go to *Policies & Rules* >
+*Threat policies*.
+. Make sure all of the following policies are configured. To get help
+and recommendations, see
+link:/microsoft-365/security/office-365-security/protect-against-threats[Protect
+against threats].
+* link:++../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop++[Anti-malware]
+* link:++../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365++[Anti-phishing]
+* link:++../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop++[Anti-spam]
+* link:../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365[Safe
+Attachments]
+* link:../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365[Safe
+Links]
+. Make sure
+link:../office-365-security/safe-attachments-for-spo-odfb-teams-about.md[Safe
+Attachments for SharePoint&#44; OneDrive&#44; and Microsoft Teams] is turned on.
+. Make sure
+link:../office-365-security/zero-hour-auto-purge.md[Zero-hour auto purge
+(ZAP) in Exchange Online] is in effect.
+. (This step is optional.) Review your
+link:../../compliance/alert-policies.md[Office 365 alert policies] in
+the Microsoft Purview compliance portal
+(https://compliance.microsoft.com/compliancepolicies). Several default
+alert policies are in the Threat management category. Some of these
+alerts can trigger automated investigation and response. To learn more,
+see
+link:../../compliance/alert-policies.md#default-alert-policies[Default
+alert policies].
+
+=== Need to make changes to automated investigation settings?
+
+You can choose from several options to change settings for your
+automated investigation and response capabilities. Some options are
+listed in the following table:
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|To do this |Follow these steps
+|Specify automation levels for groups of devices |
+
+|Turn automated investigation on or off |_We recommend keeping automated
+investigation turned on. If you want to turn it off for some devices, we
+recommend
+link:#review-or-change-the-automation-level-for-device-groups[reviewing
+or changing the automation level for device groups] instead of turning
+off automated investigation for your organization._
+|===
+
+=== Next steps
+
+* link:m365d-remediation-actions.md[Remediation actions in Microsoft 365
+Defender]
+* link:m365d-action-center.md[Visit the Action center]

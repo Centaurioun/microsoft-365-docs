@@ -1,0 +1,62 @@
+= 
+kelleyvice-msft
+
+== Deployment and update channel example configurations
+
+Choosing which update channels to use for Windows 10 and Microsoft 365
+Apps can depend on your type of organization and where on the
+development cycle you want to be deploying and using new features and
+capabilities. Find the pre-release and production channels that best fit
+your needs.
+
+=== Pre-release channels
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Customer/Channel Offering |Windows 10 |Microsoft 365 Apps for
+Enterprise (Windows 10)
+|Right for highly technical users and developers. Be the first to access
+the latest builds earliest in the development cycle with the newest
+code. There will be rough edges and some instability. |Dev |N/A
+
+|Right for early adopters and IT Pros who want more reliable builds that
+are still in development. See what”s coming up next and help validate
+new features. |Beta Channel |Beta Channel
+
+|Right for those who want early access to upcoming releases. Where
+companies preview and validate upcoming releases before broad
+deployment. These are supported. |Release Preview |Current Channel
+(Preview) Semi-Annual Enterprise Channel (Preview)
+|===
+
+=== Production channels for broad deployment
+
+Click the link in the *Example* column to step through deployment stages
+and groups for an example organization.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Customer/Channel Offering |Windows 10 |Microsoft 365 Apps for
+Enterprise (Windows 10) |Example
+|Right for customers who want the latest releases as soon as they’re
+ready. |Semi-Annual Channel
+|link:/deployoffice/overview-update-channels#current-channel-overview[Current
+Channel] |link:deploy-update-channels-examples-rapid-deploy.md[Latest
+releases]
+
+|Right for enterprises who want the latest release with more
+predictability. |Semi-Annual Channel
+|link:/deployoffice/overview-update-channels#monthly-enterprise-channel-overview[Monthly
+Enterprise Channel] |
+
+|Right for enterprises with need for extensive IT testing before each
+update. |Semi-Annual Channel
+|link:/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview[Semi-Annual
+Enterprise Channel] |
+|===
+
+=== See also
+
+link:microsoft-365-overview.md[Microsoft 365 for enterprise overview]
+
+link:m365-enterprise-test-lab-guides.md[Test lab guides]

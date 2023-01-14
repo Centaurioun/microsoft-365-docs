@@ -1,0 +1,47 @@
+= 
+mjcaparas
+:keywords: apis, graph api, supported apis, get, devices
+
+== Live response library methods and properties
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft
+Defender for Endpoint]
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+* Want to experience Microsoft Defender for Endpoint?
+https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== Methods
+
+[width="100%",cols="25%,28%,47%",options="header",]
+|===
+|*Method* |*Return Type* |*Description*
+|List library files |Library file collection |List library file entities
+
+|Upload to library |Library file entity |Upload a file to live response
+library
+
+|Delete from library |No content |Delete library file entity
+|===
+
+=== Properties
+
+[width="100%",cols="15%,32%,53%",options="header",]
+|===
+|*Property* |*Type* |*Description*
+|Commands |Live Response command collection |Array of Command objects.
+See link:live-response.md#live-response-commands[live response
+commands].
+|===

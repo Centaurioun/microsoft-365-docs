@@ -1,0 +1,9 @@
+= 
+mjcaparas
+:keywords: defender, endpoint, api, government, gov
+
+____
+[!NOTE] If you are a US Government customer, please use the URIs listed
+in link:/microsoft-365/security/defender-endpoint/gov#api[Microsoft
+Defender for Endpoint for US Government customers].
+____

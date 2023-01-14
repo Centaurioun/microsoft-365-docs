@@ -1,0 +1,76 @@
+= 
+denisebmsft
+:keywords: troubleshoot, error, fix, update compliance, oms, monitor,
+report, Microsoft Defender AV, Microsoft Defender Antivirus
+
+== Collect update compliance diagnostic data for Microsoft Defender Antivirus assessment
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+
+This article describes how to collect diagnostic data that can be used
+by Microsoft support and engineering teams to help troubleshoot issues
+you may encounter when using the Microsoft Defender Antivirus Assessment
+section in the Update Compliance add-in.
+
+____
+[!NOTE] For performance-specific issues related to Microsoft Defender
+Antivirus, see: link:tune-performance-defender-antivirus.md[Performance
+analyzer for Microsoft Defender Antivirus].
+____
+
+Before attempting this process, ensure you have read
+link:troubleshoot-reporting.md[Troubleshoot Microsoft Defender Antivirus
+reporting], met all require prerequisites, and taken any other suggested
+troubleshooting steps.
+
+On at least two devices that are not reporting or showing up in Update
+Compliance, obtain the .cab diagnostic file by taking the following
+steps:
+
+[arabic]
+. Open an administrator-level version of the command prompt as follows:
+[loweralpha]
+.. Open the *Start* menu.
+.. Type *cmd*. Right-click on *Command Prompt* and then select *Run as
+administrator*.
+.. Specify administrator credentials or approve the prompt.
+. Navigate to the Windows Defender directory. By default, this is
+`C:\Program Files\Windows Defender`.
+. Type the following command, and then press *Enter*
++
+[source,dos]
+----
+mpcmdrun -getfiles
+----
+. A .cab file will be generated that contains various diagnostic logs.
+The location of the file will be specified in the output in the command
+prompt. By default, the location is
+`C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
+. Copy these .cab files to a location that can be accessed by Microsoft
+support. An example could be a password-protected OneDrive folder that
+you can share with us.
+. Send an email using the update compliance support email template, and
+fill out the template with the following information:
++
+[source,text]
+----
+I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:
+
+I have provided at least 2 support .cab files at the following location: <accessible share, including access details such as password>
+
+My OMS workspace ID is:
+
+Please contact me at:
+----
+
+=== See also
+
+* link:troubleshoot-reporting.md[Troubleshoot Microsoft Defender
+Antivirus reporting]
+* link:tune-performance-defender-antivirus.md[Performance analyzer for
+Microsoft Defender Antivirus]

@@ -1,0 +1,43 @@
+= 
+cmcatee-MSFT
+
+== Get Microsoft 365 Business Premium
+
+=== Get Microsoft 365 Business Premium from Microsoft
+
+If you don’t have a partner and want to get Microsoft 365 Business
+Premium, you can https://www.microsoft.com/microsoft-365/business[buy it
+here].
+
+See link:sign-up.md[sign up for Microsoft 365 Business Premium] for
+detailed instructions.
+
+You can also head over to a
+https://www.microsoft.com/store/locations/find-a-store?icid=en_US_Store_UH_FAS[Microsoft
+Store] to buy Microsoft 365 Business Premium and get setup help.
+
+=== Get Microsoft 365 Business Premium from Microsoft Partner Center
+
+[arabic]
+. Sign in at https://go.microsoft.com/fwlink/p/?linkid=849910[Microsoft
+Partner Center] by using the credentials you created when you enrolled
+to the Cloud Service Provider (CSP) program.
+. On the Partner Dashboard, choose *Customers*, then select your
+customer or add a new customer before you get Microsoft 365 Business
+Premium.
++
+image::../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png[In the
+Microsoft Partner center, add a customer.]
+. On the customer’s *Subscription* page, select *Add subscription*,
+choose the Small business option under Catalog, and then choose
+*Microsoft 365 Business Premium*.
++
+Select the number of licenses you need (up to 300). If you have more
+than 300 users, see link:../enterprise/index.yml[Microsoft 365
+Enterprise] instead.
++
+image::../media/52d99e89-2175-4974-84bb-dd626048541b.png[On the New
+subscription page, choose small business.]
++
+Complete the rest of the steps for adding a new customer, including the
+business name.

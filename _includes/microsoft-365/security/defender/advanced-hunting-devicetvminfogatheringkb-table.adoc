@@ -1,0 +1,105 @@
+= 
+schmurky
+:keywords: advanced hunting, threat hunting, cyber threat hunting,
+Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry,
+schema reference, kusto, table, column, data type, description, threat &
+vulnerability management, TVM, device management, software, inventory,
+vulnerabilities, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities,
+MDVM
+
+== DeviceTvmInfoGatheringKB
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender - Microsoft Defender for Endpoint
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may
+be substantially modified before it’s commercially released. Microsoft
+makes no warranties, express or implied, with respect to the information
+provided here.
+____
+
+The `DeviceTvmInfoGatheringKB` table in the advanced hunting schema
+contains metadata for
+link:/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management[Microsoft
+Defender Vulnerability Management] assessment events data collected in
+the `DeviceTvmInfoGathering` table. The `DeviceTvmInfoGatheringKB` table
+contains the list of various configuration and attack surface area
+assessments used by Defender Vulnerability Management information
+gathering to assess devices. Use this reference to construct queries
+that return information from the table.
+
+For information on other tables in the advanced hunting schema, see
+link:advanced-hunting-schema-tables.md[the advanced hunting reference].
+
+[width="100%",cols="36%,29%,35%",options="header",]
+|===
+|Column name |Data type |Description
+|`IgId` |`string` |Unique identifier for the piece of information
+gathered
+
+|`FieldName` |`string` |Name of the field where this information appears
+in the AdditionalFields column of the DeviceTvmInfoGathering table
+
+|`Description` |`string` |Description of the information gathered
+
+|`Categories` |`string` |List of categories that the information belongs
+to, in JSON array format
+
+|`DataStructure` |`string` |The data structure of the information
+gathered
+|===
+
+You can use this table to explore the kinds of information available in
+`DeviceTvmInfoGathering` so you can later fine-tune your hunting query.
+
+For instance, to see the list of information being collected, you can
+try the following query:
+
+[source,kusto]
+----
+// Check out what is being collected 
+DeviceTvmInfoGatheringKB  
+----
+
+From the results, say you become interested in the available categories,
+you can use the following query:
+
+[source,kusto]
+----
+// Return all available categories 
+DeviceTvmInfoGatheringKB 
+| mv-expand Categories to typeof(string) 
+| distinct Categories 
+----
+
+Then, let’s say you want to see the assessment categories involving the
+TLS protocol:
+
+[source,kusto]
+----
+// Return all findings for a specified category 
+DeviceTvmInfoGatheringKB 
+| where Categories contains "tls" 
+----
+
+Using the resulting fields, you can then use the
+`DeviceTvmInfoGathering` table to get a list of devices using TLS client
+version 1.0.
+
+[source,kusto]
+----
+// Return all devices on which the TLS version 1.0 is enabled 
+DeviceTvmInfoGathering 
+| where AdditionalFields.TlsClient10 == "Enabled" or AdditionalFields.TlsServer10 == "Enabled" 
+----
+
+=== Related topics
+
+* link:advanced-hunting-devicetvminfogathering-table.md[DeviceTvmInfoGathering]
+* link:advanced-hunting-schema-tables.md[Understand the schema]
+* link:advanced-hunting-best-practices.md[Apply query best practices]
+* link:/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt[Overview
+Defender Vulnerability Management]

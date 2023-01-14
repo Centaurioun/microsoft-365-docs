@@ -1,0 +1,57 @@
+= 
+denisebmsft
+:keywords: scan, schedule, customize, exclusions, exclude files,
+remediation, scan results, quarantine, remove threat, quick scan, full
+scan, Microsoft Defender Antivirus
+
+== Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+
+You can use Group Policy, PowerShell, and Windows Management
+Instrumentation (WMI) to configure Microsoft Defender Antivirus scans.
+
+=== In this section
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Topic |Description
+|link:configure-exclusions-microsoft-defender-antivirus.md[Configure and
+validate file&#44; folder&#44; and process-opened file exclusions in Microsoft
+Defender Antivirus scans] |You can exclude files (including files
+modified by specified processes) and folders from on-demand scans,
+scheduled scans, and always-on real-time protection monitoring and
+scanning
+
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+Microsoft Defender Antivirus scanning options] |You can configure
+Microsoft Defender Antivirus to include certain types of email storage
+files, back-up or reparse points, and archived files (such as .zip
+files) in scans. You can also enable network file scanning
+
+|link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation for scans] |Configure what Microsoft Defender Antivirus
+should do when it detects a threat, and how long quarantined files
+should be retained in the quarantine folder
+
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled scans] |Set up recurring (scheduled) scans, including when
+they should run and whether they run as full or quick scans
+
+|link:run-scan-microsoft-defender-antivirus.md[Configure and run scans]
+|Run and configure on-demand scans using PowerShell, Windows Management
+Instrumentation, or individually on endpoints with the Windows Security
+app
+
+|link:review-scan-results-microsoft-defender-antivirus.md[Review scan
+results] |Review the results of scans using Microsoft Endpoint
+Configuration Manager, Microsoft Intune, or the Windows Security app
+|===

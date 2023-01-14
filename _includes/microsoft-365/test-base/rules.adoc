@@ -1,0 +1,27 @@
+= 
+andreicsibi-msft
+
+== Application/Test rules
+
+All applications or tests in Test Base need to comply with the following
+rules:
+
+=== Test Base folders
+
+The following folders are used by the Test Base infrastructure: *
+%SYSTEMDRIVE% * %SYSTEMDRIVE% * %SYSTEMDRIVE% * %SYSTEMDRIVE% *
+%SYSTEMDRIVE%-yaml * %SYSTEMDRIVE% * %SYSTEMDRIVE% * %SYSTEMDRIVE% *
+%SYSTEMDRIVE% * %SYSTEMDRIVE% * %SYSTEMDRIVE% * %SYSTEMDRIVE%
+
+____
+[!IMPORTANT] *Avoid the following*: * Blocking the execution of any
+process from these folders. If your application is anti-malware
+software, configure your app installation to allow unimpeded execution
+of all processes from these folders. * Tampering with any of these
+folders.
+____
+
+=== Test Base registry keys
+
+The applications/tests should not delete or modify any registry keys
+related to: * Windows telemetry level * Removing TLS 1.2

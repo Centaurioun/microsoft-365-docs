@@ -1,0 +1,107 @@
+= 
+dansimp
+:keywords: Microsoft Defender for Endpoint, website phishing protection,
+website malware protection, URL reputation, demonstration,
+
+== URL reputation demonstrations
+
+Test how Microsoft Defender SmartScreen helps you identify phishing and
+malware websites based on URL reputation. Scenario requirements and
+setup
+
+* Windows 10 or 11
+* Microsoft Edge browser required
+* For more information, see
+link:/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview[Microsoft
+Defender SmartScreen]
+
+=== SmartScreen for Microsoft Edge URL scenario demonstrations
+
+==== Is This Phishing?
+
+Alerts the user to a suspicious page and ask for feedback:
+
+* https://demo.smartscreen.msft.net/other/areyousure.html[Is this
+Phishing?]
++
+Launching this link should render a message similar to the following
+screenshot:
++
+:::image type=``content''
+source=``images/smartscreen-url-reputation-is-this-phishing.png''
+alt-text=``SmartScreen alerts the user the site is potentially a
+phishing site and possibly unsafe'':::
+
+==== Phishing Page
+
+A page known for phishing that should be blocked:
+
+* https://demo.smartscreen.msft.net/phishingdemo.html[A known Phishing
+page]
++
+Launching this link should render a message similar to the following
+example:
++
+:::image type=``content''
+source=``images/smartscreen-url-reputation-this-is-phishing.png''
+alt-text=``SmartScreen reports the site is known for containing phishing
+threats'':::
+
+==== Malware page
+
+A page that hosts malware and should be blocked:
+
+* https://demo.smartscreen.msft.net/other/malware.html[A known malware
+page]
++
+Launching this link should render a message similar to the following
+screenshot:
++
+:::image type=``content''
+source=``images/smartscreen-url-reputation-malware-page.png''
+alt-text=``SmartScreen alerts the user that the site is know for
+containing harmful programs'':::
+
+==== Blocked download
+
+Blocked from downloading because of its URL reputation
+
+* https://demo.smartscreen.msft.net/download/malwaredemo/freevideo.exe[Download
+blocked due to URL reputation]
++
+Launching this link should render a message similar to the Malware page
+message.
+
+==== Exploit page
+
+A page that attacks a browser vulnerability
+
+* https://demo.smartscreen.msft.net/other/exploit.html[Known browser
+exploit page]
++
+Launching this link should render a message similar to the Malware page
+message.
+
+==== Malvertising
+
+A benign page hosting a malicious advertisement
+
+* https://demo.smartscreen.msft.net/other/exploit_frame.html[A page
+known to contain malicious advertisements]
++
+Launching this link should render a message similar to the following
+screenshot:
++
+:::image type=``content''
+source=``images/smartscreen-url-reputation-malvertising.png''
+alt-text=``A demonstration of how SmartScreen responds to a frame on a
+page that is detected to be malicious. Only the malicious frame is
+blocked'':::
+
+=== See also
+
+link:/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview[Microsoft
+Defender SmartScreen Documentation]
+
+link:defender-endpoint-demonstrations.md[Microsoft Defender for Endpoint
+- demonstration scenarios]

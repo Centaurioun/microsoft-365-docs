@@ -1,0 +1,212 @@
+= 
+cmcatee-MSFT
+
+== Buy or remove Microsoft 365 licenses for a subscription
+
+Check out https://go.microsoft.com/fwlink/?linkid=2197659[Microsoft 365
+small business help] on YouTube.
+
+You can buy more licenses or reduce the number of licenses for your
+subscriptions by using the following steps.
+
+____
+[!NOTE] For some subscriptions, you can only cancel during a limited
+window of time after you buy or renew your subscription. If the
+cancellation window has passed, turn off recurring billing to cancel the
+subscription at the end of its term.
+____
+
+=== Before you begin
+
+* You must be either a Global or Billing admin to do the tasks described
+in this article. For more information, see
+link:../../admin/add-users/about-admin-roles.md[About admin roles].
+* You can link:../../admin/add-users/add-users.md[add users and assign
+licenses at the same time].
+* If you bought your Microsoft 365 for business or Office 365 Enterprise
+plan through a third-party partner, you must buy additional licenses
+through that partner.
+
+=== Watch: Buy new licenses
+
+Check out this video and others on our
+https://go.microsoft.com/fwlink/?linkid=2198206[YouTube channel].
+
+____
+{empty}[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
+____
+
+If the people who you’re buying licenses for aren’t active users in your
+organization yet, the next thing to do is
+link:../../admin/add-users/add-users.md[add users and assign licenses at
+the same time].
+
+=== Watch: Remove existing licenses
+
+____
+{empty}[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r]
+____
+
+If you’ve removed licenses from a subscription, the next thing to do is
+link:../../admin/add-users/delete-a-user.md[delete users from your
+organization].
+
+=== Buy or remove licenses for your business subscription
+
+::: moniker range=``o365-worldwide''
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+
+::: moniker-end
+
+::: moniker range=``o365-21vianet''
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+
+::: moniker-end
+
+[arabic, start=2]
+. On the *Products* tab, find the subscription for which you want to buy
+or remove licenses. Select the three dots (more actions), then select
+*Buy licenses*.
+link:#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons[What
+if I don’t see the Buy licenses or Remove licenses buttons?]
+. If you want to reduce the number of licenses, at the top of the *Buy
+licenses* pane, select *remove licenses*.
+. To buy or remove licenses, under *New quantity* in the *Total
+licenses* box, enter the total number of licenses that you want for this
+subscription. For example, if you have 100 licenses and you want to add
+five more, enter 105. If you want to remove five of them, enter 95.
+. Select *Save*.
+
+____
+{empty}[!NOTE]
+
+* You can’t reduce the number of licenses for your subscription if all
+licenses are currently assigned to users. To reduce the number of
+licenses, first
+link:../../admin/manage/remove-licenses-from-users.md[unassign one or
+more licenses from users], then remove the licenses from the
+subscription.
+* If you bought your subscription through a Microsoft Representative,
+contact them directly for help with reducing your license count.
+____
+
+=== Add licenses to a prepaid subscription by using a Microsoft 365 product key
+
+Prepaid product licenses are issued to you as a 25-character
+alphanumeric code, called a product key. After you buy the licenses you
+need, you can add them to your subscription by using the steps below.
+You can also use a product key to
+link:../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key[extend
+the expiration date of your subscription].
+
+____
+[!NOTE] If you don’t want to buy a new product key, you can always
+choose to add a credit card or bank account to your subscription to pay
+for more licenses. For more information, see
+link:../subscriptions/renew-your-subscription.md[Renew your
+subscription].
+____
+
+::: moniker range=``o365-worldwide''
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+
+::: moniker-end
+
+::: moniker range=``o365-21vianet''
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+
+::: moniker-end
+
+[arabic, start=2]
+. On the *Products* tab, select the subscription to which you want to
+add licenses.
+. On the subscription details page, in the *Licenses* section, select
+*Add more licenses*.
+. In the *Add more licenses pane*, select *Use a new and unused product
+key*, then select *Next*.
+. Enter the product key, then select *Next*. > [!NOTE] > If you have
+more than one product key, you can select *Add another product key* to
+enter them.
+. Review your order details, then select *Redeem*.
+
+=== What if I don’t see the Buy licenses or Remove licenses buttons?
+
+This table describes the reasons why the *Buy licenses* or *Remove
+licenses* buttons aren’t available, and possible solutions.
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Reason |Description |Solution
+|A credit check is pending. |If a credit check is pending, you can’t buy
+or remove licenses until the credit check is complete. |Check back later
+to see if the credit check has completed. Credit checks typically take
+up to two working days to complete.After the credit check is complete,
+you should see the *Buy licenses* and *Remove licenses* buttons.
+
+|You activated the subscription by using a product key. |If the
+subscription was bought and activated by using a 25-character product
+key, you see the word ``Prepaid'' in the *Purchase channel* column of
+the *Your products* page. |See
+link:add-licenses-using-product-key.md[Add licenses to a subscription
+paid for using a product key].
+
+|You bought your subscription through a reseller. |You see the word
+``Reseller'' in the *Purchase channel* column of the *Your products*
+page. |If the subscription was bought via a Cloud Solution Provider
+(CSP) partner, contact your CSP partner to buy more licenses.
+
+|You have a trial subscription. |To view your trial subscriptions,
+select the filter button, then choose *Trial*. |First buy your trial
+subscription, then you can buy more licenses.
+|===
+
+=== When will the new licenses be available to assign?
+
+The payment method associated with your subscription or billing profile
+is charged as soon as you buy more licenses for a subscription. The
+licenses are immediately available for you to assign to users.
+
+If you prepaid for your subscription with a product key, you can add
+more licenses by using another product key, or by adding a credit or
+debit card, or bank account to cover the additional cost of the new
+licenses. If your subscription is prepaid, you can’t remove licenses.
+
+=== How does buying or removing licenses affect my billing statements?
+
+* Licenses added in the middle of your billing period appear on your
+next invoice. If you pay annually, you are invoiced within a month for
+these changes.
+* On your next billing statement, the previous charge for the original
+number of licenses is deducted. We add a prorated charge for the time
+period with the original number of licenses and add a charge for the new
+license count. There’s also a charge for the current license count for
+the remainder of your billing period.
+
+=== Next steps
+
+If you bought more licenses for your subscription, the next thing you
+should do is link:../../admin/manage/assign-licenses-to-users.md[assign
+those licenses to users in your organization].
+
+If you reduced the number of licenses for your subscription because
+someone has left your organization, you might want to remove that user’s
+account. To learn more, see
+link:../../admin/add-users/remove-former-employee.md[Remove a former
+employee].
+
+=== Related content
+
+link:../../admin/manage/assign-licenses-to-users.md[Assign licenses to
+users] (article) +
+link:subscriptions-and-licenses.md[Understand subscriptions and
+licenses] (article) +
+link:../try-or-buy-microsoft-365.md[Try or buy a Microsoft 365
+subscription] (article)

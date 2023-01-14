@@ -1,0 +1,282 @@
+= 
+denisebmsft
+
+== Understand next-generation configuration settings in Microsoft Defender for Business
+
+Next-generation protection in Defender for Business includes robust
+antivirus and antimalware protection. The default policies are designed
+to protect your devices and users without hindering productivity. You
+can also customize the policies to suit your business needs. And, if
+you’re using Microsoft Intune, you can use the Microsoft Endpoint
+Manager admin center to manage your security policies.
+
+*This article describes*:
+
+* link:#next-generation-protection-settings-and-options[Next-generation
+protection settings and options]
+* link:#other-preconfigured-settings-in-defender-for-business[Other
+preconfigured settings in Defender for Business]
+* link:#how-default-settings-in-defender-for-business-correspond-to-settings-in-microsoft-intune[How
+default settings in Defender for Business correspond to settings in
+Microsoft Intune]
+* link:#microsoft-defender-antivirus-states[Microsoft Defender Antivirus
+states (active&#44; passive&#44; and disabled)]
+
+=== Next-generation protection settings and options
+
+The following table lists settings and options.
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Setting |Description
+|*Real-time protection* |
+
+|*Turn on real-time protection* |Enabled by default, real-time
+protection locates and stops malware from running on devices. _We
+recommend keeping real-time protection turned on._ When real-time
+protection is turned on, it configures the following settings:
+
+|*Block at first sight* |Enabled by default, block at first sight blocks
+malware within seconds of detection, increases the time (in seconds)
+allowed to submit sample files for analysis, and sets your detection
+level to High. _We recommend keeping block at first sight turned
+on._When block at first sight is turned on, it configures the following
+settings for Microsoft Defender Antivirus:
+
+|*Turn on network protection* |When turned on, network protection helps
+protect against phishing scams, exploit-hosting sites, and malicious
+content on the internet. It also prevents users from turning network
+protection off.Network protection can be set to the following modes:
+
+|*Remediation* |
+
+|*Action to take on potentially unwanted apps (PUA)* |PUA can include
+advertising software; bundling software that offers to install other,
+unsigned software; and evasion software that attempts to evade security
+features. Although PUA isn’t necessarily a virus, malware, or other type
+of threat, it can affect device performance. PUA protection blocks items
+that are detected as PUA. You can set PUA protection to the following
+modes:
+
+|*Scan* |
+
+|*Scheduled scan type* |Consider running a weekly antivirus scan on your
+devices. You can choose from the following scan type options:
+
+|*Day of week to run a scheduled scan* |Select a day for your regular,
+weekly antivirus scans to run.
+
+|*Time of day to run a scheduled scan* |Select a time to run your
+regularly scheduled antivirus scans to run.
+
+|*Use low performance* |This setting is turned off by default. _We
+recommend keeping this setting turned off._ However, you can turn on
+this setting to limit the device memory and resources that are used
+during scheduled scans. *Important* If you turn on *Use low
+performance*, it configures the following settings for Microsoft
+Defender Antivirus:
+
+|*User experience* |
+
+|*Allow users to access the Windows Security app* |Turn on this setting
+to enable users to open the Windows Security app on their devices. Users
+won’t be able to override settings that you configure in Defender for
+Business, but they’ll be able to run a quick scan or view any detected
+threats.
+
+|*Antivirus exclusions* |Exclusions are processes, files, or folders
+that are skipped by Microsoft Defender Antivirus scans. _In general, you
+shouldn’t need to define exclusions._ Microsoft Defender Antivirus
+includes many automatic exclusions that are based on known operating
+system behavior and typical management files.
+link:../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md[Learn
+more about exclusions].
+
+|*Process exclusions* |Process exclusions prevent files that are opened
+by specific processes from being scanned by Microsoft Defender
+Antivirus.
+link:../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md[Learn
+more about process exclusions].
+
+|*File extension exclusions* |File extension exclusions prevent files
+with specific extensions from being scanned by Microsoft Defender
+Antivirus.
+link:../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md[Learn
+more about file extension exclusions].
+
+|*File and folder exclusions* |File and folder exclusions prevent files
+that are in specific folders from being scanned by Microsoft Defender
+Antivirus.
+link:../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md[Learn
+more about file and folder exclusions].
+|===
+
+=== Other preconfigured settings in Defender for Business
+
+The following security settings are preconfigured in Defender for
+Business:
+
+* Scanning of removable drives is turned on
+(link:/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning[AllowFullScanRemovableDriveScanning]).
+* Daily quick scans don’t have a preset time
+(link:/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime[ScheduleQuickScanTime]).
+* Security intelligence updates are checked before an antivirus scan
+runs
+(link:/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan[CheckForSignaturesBeforeRunningScan]).
+* Security intelligence checks occur every four hours
+(link:/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval[SignatureUpdateInterval]).
+
+=== How default settings in Defender for Business correspond to settings in Microsoft Intune
+
+The following table describes settings that are preconfigured for
+Defender for Business and how those settings correspond to what you
+might see in Intune (managed in the Microsoft Endpoint Manager admin
+center). If you’re using the
+link:mdb-simplified-configuration.md[simplified configuration process in
+Defender for Business], you don’t need to edit these settings.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Setting |Description
+|link:/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection[Cloud
+protection] |Sometimes referred to as cloud-delivered protection or
+Microsoft Advanced Protection Service (MAPS), cloud protection works
+with Microsoft Defender Antivirus and the Microsoft cloud to identify
+new threats, sometimes even before a single device is affected. By
+default,
+link:/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection[AllowCloudProtection]
+is turned on.
+link:../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md[Learn
+more about cloud protection].
+
+|link:/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection[Monitoring
+for incoming and outgoing files] |To monitor incoming and outgoing
+files,
+link:/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection[RealTimeScanDirection]
+is set to monitor all files.
+
+|link:/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles[Scan
+network files] |By default,
+link:/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles[AllowScanningNetworkFiles]
+isn’t enabled, and network files aren’t scanned.
+
+|link:/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning[Scan
+email messages] |By default,
+link:/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning[AllowEmailScanning]
+isn’t enabled, and email messages aren’t scanned.
+
+|link:/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware[Number
+of days (0-90) to keep quarantined malware] |By default, the
+link:/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware[DaysToRetainCleanedMalware]
+setting is set to zero (0) days. Artifacts that are in quarantine aren’t
+removed automatically.
+
+|link:/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent[Submit
+samples consent] |By default,
+link:/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent[SubmitSamplesConsent]
+is set to send safe samples automatically. Examples of safe samples
+include `.bat`, `.scr`, `.dll`, and `.exe` files that don’t contain
+personally identifiable information (PII). If a file does contain PII,
+the user receives a request to allow the sample submission to proceed.
+link:../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md[Learn
+more about cloud protection and sample submission].
+
+|link:/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning[Scan
+removable drives] |By default,
+link:/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning[AllowFullScanRemovableDriveScanning]
+is configured to scan removable drives, such as USB thumb drives on
+devices.
+link:/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings[Learn
+more about antimalware policy settings].
+
+|link:/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime[Run
+daily quick scan time] |By default,
+link:/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime[ScheduleQuickScanTime]
+is set to 2:00 AM.
+link:/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings[Learn
+more about scan settings].
+
+|link:/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan[Check
+for signature updates before running scan] |By default,
+link:/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan[CheckForSignaturesBeforeRunningScan]
+is configured to check for security intelligence updates prior to
+running antivirus/antimalware scans.
+link:/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings[Learn
+more about scan settings] and
+link:../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates[Security
+intelligence updates].
+
+|link:/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval[How
+often (0-24 hours) to check for security intelligence updates] |By
+default,
+link:/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval[SignatureUpdateInterval]
+is configured to check for security intelligence updates every four
+hours.
+link:/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings[Learn
+more about scan settings] and
+link:../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates[Security
+intelligence updates].
+|===
+
+=== Microsoft Defender Antivirus states
+
+Microsoft Defender Antivirus is a key component of next-generation
+protection in Defender for Business. Depending on whether devices are
+onboarded to Defender for Business and whether those devices are running
+a non-Microsoft antivirus/antimwalware solution, Microsoft Defender
+Antivirus can have one of the following states:
+
+* Active mode
+* Passive mode
+* Disabled (or uninstalled) mode
+
+The following table describes each state and what it means.
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Microsoft Defender Antivirus state |What it means
+|*Active mode* (_recommended_) |Microsoft Defender Antivirus is used as
+the antivirus app on the machine. Files are scanned, threats are
+remediated, and detection information is reported in the Microsoft 365
+Defender portal and in the Windows Security app on a device running
+Windows.We recommend running Microsoft Defender Antivirus in active mode
+so that devices onboarded to Defender for Business will get all of the
+following types of protection:
+
+|*Passive mode* |A non-Microsoft antivirus/antimalware product is
+installed on the device, and even though the device has been onboarded
+to Defender for Business, Microsoft Defender Antivirus can detect
+threats but doesn’t remediate them. Devices with Microsoft Defender
+Antivirus can still receive security intelligence and platform updates.
+You can switch Microsoft Defender Antivirus to active mode automatically
+by uninstalling the non-Microsoft antivirus/antimalware product.
+
+|*Disabled mode* |A non-Microsoft antivirus/antimwalware product is
+installed on the device, and the device hasn’t been onboarded to
+Defender for Business. Whether Microsoft Defender Antivirus went into
+disabled mode automatically or was set manually, it’s not currently
+running on the device. In this case, Microsoft Defender Antivirus
+neither detects nor remediates threats on the device.You can switch
+Microsoft Defender Antivirus to active mode by uninstalling the
+non-Microsoft antivirus/antimalware solution and onboarding the device
+to Defender for Business.
+|===
+
+=== Next steps
+
+* link:mdb-view-manage-incidents.md[View and manage incidents in
+Defender for Business]
+* link:mdb-respond-mitigate-threats.md[Respond to and mitigate threats
+in Defender for Business]
+* link:mdb-review-remediation-actions.md[Review remediation actions in
+the Action center]
+
+=== See also
+
+* link:mdb-get-started.md[Visit the Microsoft 365 Defender portal]
+* link:mdb-custom-rules-firewall.md[Manage firewall settings in Defender
+for Business]
+* link:mdb-configure-security-settings.md[View and edit security
+policies and settings in Microsoft Defender for Business]
+* link:/windows/client-management/mdm/policy-csp-defender[Policy CSP -
+Defender]

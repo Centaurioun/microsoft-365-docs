@@ -1,0 +1,135 @@
+= 
+dansimp
+:keywords: health state, antivirus, os platform, windows 10 version,
+version, health, compliance, state
+
+== Device health reports in Microsoft Defender for Endpoint
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* link:../defender-business/mdb-overview.md[Microsoft Defender for
+Business]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+The Device Health report provides information about the devices in your
+organization. The report includes trending information showing the
+sensor health state, antivirus status, OS platforms, Windows 10
+versions, and Microsoft Defender Antivirus update versions.
+
+____
+[!IMPORTANT] For Windows Server 2012 R2 and Windows Server 2016 to
+appear in device health reports, these devices must be onboarded using
+the modern unified solution package. For more information, see
+link:/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution[New
+functionality in the modern unified solution for Windows Server 2012 R2
+and 2016].
+____
+
+In the Microsoft 365 Security dashboard navigation panel, select
+*Reports*, and then open *Device health and compliance*. The Device
+health and compliance dashboard is structured in two tabs:
+
+* The
+link:++device-health-sensor-health-os.md#sensor-health--os-tab++[*Sensor
+health & OS* tab] provides general operating system information, divided
+into three cards that display the following device attributes:
+** link:device-health-sensor-health-os.md#sensor-health-card[Sensor
+health card]
+** link:device-health-sensor-health-os.md#operating-systems-and-platforms-card[Operating
+systems and platforms card]
+** link:device-health-sensor-health-os.md#windows-versions-card[Windows
+versions card]
+* The
+link:device-health-microsoft-defender-antivirus-health.md#microsoft-defender-antivirus-health-tab[*Microsoft
+Defender Antivirus health* tab] has eight cards that report on aspects
+of Microsoft Defender Antivirus:
+** link:device-health-microsoft-defender-antivirus-health.md#antivirus-mode-card[Antivirus
+mode card]
+** link:device-health-microsoft-defender-antivirus-health.md#antivirus-engine-version-card[Antivirus
+engine version card]
+** link:device-health-microsoft-defender-antivirus-health.md#antivirus-security-intelligence-version-card[Antivirus
+security intelligence version card]
+** link:device-health-microsoft-defender-antivirus-health.md#antivirus-platform-version-card[Antivirus
+platform version card]
+** link:device-health-microsoft-defender-antivirus-health.md#recent-antivirus-scan-results-card[Recent
+antivirus scan results card]
+** link:device-health-microsoft-defender-antivirus-health.md#antivirus-engine-updates-card[Antivirus
+engine updates card]
+** link:device-health-microsoft-defender-antivirus-health.md#security-intelligence-updates-card[Security
+intelligence updates card]
+** link:device-health-microsoft-defender-antivirus-health.md#antivirus-platform-updates-card[Antivirus
+platform updates card]
+
+=== Report access permissions
+
+To access the Device health and antivirus compliance report in the
+Microsoft 365 Security dashboard, the following permissions are
+required:
+
+[cols="<,<",options="header",]
+|===
+|Permission name |Permission type
+|View Data |Threat and vulnerability management (TVM)
+|===
+
+To Assign these permissions:
+
+[arabic]
+. Sign in to Microsoft 365 Defender using account with Security
+administrator or Global administrator role assigned.
+. In the navigation pane, select *Settings* > *Endpoints* > *Roles*
+(under *Permissions*).
+. Select the role you’d like to edit.
+. Select *Edit*.
+. In *Edit role*, on the *General* tab, in *Role name*, type a name for
+the role.
+. In *Description* type a brief summary of the role.
+. In *Permissions*, select *View Data*, and under *View Data* select
+*Threat and vulnerability management* (TVM).
+
+=== See also
+
+____
+[!TIP] *Performance tip* Due to a variety of factors (examples listed
+below) Microsoft Defender Antivirus, like other antivirus software, can
+cause performance issues on endpoint devices. In some cases, you might
+need to tune the performance of Microsoft Defender Antivirus to
+alleviate those performance issues. Microsoft’s *Performance analyzer*
+is a PowerShell command-line tool that helps determine which files, file
+paths, processes, and file extensions might be causing performance
+issues; some examples are:
+
+* Top paths that impact scan time
+* Top files that impact scan time
+* Top processes that impact scan time
+* Top file extensions that impact scan time
+* Combinations – for example:
+** top files per extension
+** top paths per extension
+** top processes per path
+** top scans per file
+** top scans per file per process
+
+You can use the information gathered using Performance analyzer to
+better assess performance issues and apply remediation actions. See:
+link:tune-performance-defender-antivirus.md[Performance analyzer for
+Microsoft Defender Antivirus].
+____
+
+* link:user-roles.md[Create and manage roles for role-based access
+control].
+* link:device-health-api-methods-properties.md[Export device antivirus
+health details API methods and properties]

@@ -1,0 +1,76 @@
+= 
+denisebmsft
+
+== Assign security roles and permissions in Microsoft Defender for Business
+
+To perform tasks in the Microsoft 365 Defender portal, such as
+configuring Defender for Business, viewing reports, or taking response
+actions on detected threats, appropriate permissions must be assigned to
+your security team. Permissions are granted through roles that are
+assigned in the Microsoft 365 Defender portal
+(https://security.microsoft.com) or in
+link:/azure/active-directory/roles/manage-roles-portal[Azure Active
+Directory].
+
+=== What to do
+
+[arabic]
+. link:#roles-in-defender-for-business[Learn about roles in Defender for
+Business].
+. link:#view-or-edit-role-assignments[View or edit role assignments for
+your security team].
+. link:#next-steps[Proceed to your next steps].
+
+=== Roles in Defender for Business
+
+The following table describes the three roles that can be assigned in
+Defender for Business.
+link:../../admin/add-users/about-admin-roles.md[Learn more about admin
+roles].
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Permission level |Description
+|*Global administrators* (also referred to as global admins) |Global
+admins can perform all kinds of tasks. The person who signed up your
+company for Microsoft 365 or for Defender for Business is a global
+administrator by default.
+
+|*Security administrators* (also referred to as security admins)
+|Security admins can perform the following tasks:
+
+|*Security reader* |Security readers can perform the following tasks:
+|===
+
+=== View or edit role assignments
+
+[arabic]
+. Go to the Microsoft 365 Defender portal
+(https://security.microsoft.com) and sign in.
+. In the navigation pane, choose *Permissions & roles*, and then under
+*Azure AD*, select *Roles*.
+. Select one of the following roles to open its side pane:
+* Global administrator
+* Security administrator
+* Security reader
++
+____
+[!IMPORTANT] Microsoft recommends that you grant people access to only
+what they need to perform their tasks. We call this concept _least
+privilege_ for permissions. To learn more, see
+link:/azure/active-directory/develop/secure-least-privileged-access[Best
+practices for least-privileged access for applications].
+____
+. In the side pane, select the *Manage members in Azure AD* link. This
+action takes you to Azure Active Directory (Azure AD), where you can
+view and manage your role assignments.
+. Select a user to open their profile, and then choose *Assigned roles*.
+* To add a role, choose *+ Add assignments*.
+* To remove a role, choose *X Remove assignments*.
+
+=== Next steps
+
+* link:mdb-email-notifications.md[Set up email notifications] for your
+security team.
+* Proceed to link:mdb-onboard-devices.md[Step 4: Onboard devices to
+Microsoft Defender for Business].

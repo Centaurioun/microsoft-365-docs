@@ -1,0 +1,269 @@
+= 
+daisyfell
+
+== Get started with Microsoft 365 for Financial Services
+
+Frontline workers in the financial services industry have unique needs
+for communicating and collaborating based on the services they offer. To
+get the most benefit for your frontline workforce, you first choose
+which scenarios Microsoft 365 can help you with in your day-to-day
+business operations, and then make sure that you prepare your
+environment with the right fundamentals, teams, and apps to support
+those scenarios.
+
+[arabic]
+. link:#choose-your-scenarios[Choose your scenarios] you want to
+implement for your business.
+. link:flw-setup-microsoft-365.md[Set up Microsoft 365] - Set up
+Microsoft 365’s core elements, Microsoft Teams, and any other services
+you need.
+. link:#configure-services-and-apps[Configure services and apps] - Use
+team templates to set up the teams you need quickly, including the
+channels and apps you need for your business. Add in other apps from
+Microsoft as needed to support your scenarios.
+
+=== Choose your scenarios
+
+Microsoft 365 and Microsoft Teams offer several capabilities that can
+help financial services organizations with their daily operations and
+digital transformation. We recommend the following scenarios for
+financial services organizations:
+
+* link:#communicate-within-and-across-locations[Communicate within and
+across locations]
+* link:#simplify-business-processes[Simplify business processes]
+* link:#onboard-and-train-employees[Onboard and train employees]
+* link:#strengthen-corporate-communications[Strengthen corporate
+communications]
+* link:#collaborate-on-loan-applications[Collaborate on loan
+applications]
+
+____
+[!NOTE] These scenarios are also part of the Microsoft Cloud for
+Financial Services. You can do more with these scenarios when you also
+use other capabilities from the Microsoft Cloud for Financial Services,
+such as Microsoft Dynamics 365. Learn more about using this solution,
+which brings together capabilities from Dynamics 365, and Microsoft 365
+at link:/industry/financial-services[Microsoft Cloud for Financial
+Services].
+____
+
+==== Communicate within and across locations
+
+Bring associates and management together across branches to collaborate
+and streamline operations with Teams and Teams apps.
+
+*Key apps:* Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise,
+Lists, Files, Updates
+
+*Additional services:* Viva Connections, SharePoint, Power Platform and
+Power Apps
+
+More information: link:flw-team-collaboration.md[Frontline team
+collaboration]
+
+==== Simplify business processes
+
+* Create and manage schedules for your employees with Shifts
+* Automate your organization’s unique workflows with Power Apps
+* Streamline approvals with the Approvals app
+* Track key performance indicators (KPIs) with Power BI reports
+* And more
+
+*Key apps:* Approvals, Shifts, Updates
+
+*Additional services:* Power Platform with Power Apps and Power BI
+
+More information: link:simplify-business-processes.md[Simplify business
+processes]
+
+==== Onboard and train employees
+
+Financial services organizations have unique needs due to the high
+knowledge bases of frontline staff. From numeracy skills to up-to-date
+knowledge of company and governmental regulations, make sure your
+workforce is prepared with a strong onboarding and training process.
+
+*Key features and apps:* Lists, meetings
+
+*Additional services:* Viva Learning, Viva Connections, SharePoint, Viva
+Engage
+
+More information: link:flw-onboarding-training.md[Training and
+onboarding]
+
+==== Strengthen corporate communications
+
+Employee engagement is a significant contributor to workplace
+satisfaction, loyalty, and productivity at any organization. Learn how
+to keep everyone informed and engaged using SharePoint, Teams, Viva
+Engage, Stream, and Viva Connections.
+
+*Additional services:* Viva Connections, SharePoint, Stream, Viva Engage
+
+More information: link:flw-corp-comms.md[Corporate communications with
+frontline workers]
+
+____
+[!NOTE] For all of these capabilities, users must have an appropriate
+license. Microsoft 365 for frontline workers F1 and F3 or Office 365 F3,
+Office 365 A3, A5, E3, and E5, as well as Microsoft 365 Business
+Standard, Business Premium, A3, A5, E3, and E5 are all supported. For
+more information about general Teams licensing, see
+link:/microsoftteams//user-access[Manage user access to Teams]. See
+link:flw-licensing-options.md[Licensing options for frontline workers]
+for more about using Microsoft 365 for frontline workers in combination
+with other licenses.
+____
+
+==== Collaborate on loan applications
+
+Use
+link:/industry/financial-services/collaboration-manager/overview[Collaboration
+Manager for Loans] to accelerate the lending process with automation and
+collaboration tools, to quickly go from application to signing.
+Collaboration Manager for Loans includes tools for keeping track of loan
+records, taking notes, and managing customer communications and
+bookings.
+
+____
+[!NOTE] Collaboration Manager for Loans is available as part of the
+Microsoft Cloud for Financial Services, which includes additional
+capabilities from Microsoft 365 and Dynamics 365.
+link:/industry/financial-services[Learn more about the Microsoft Cloud
+for Financial Services].
+____
+
+More information:
+link:/industry/financial-services/collaboration-manager/overview[Admin
+documentation for Collaboration Manager for Loans] and
+link:/industry/financial-services/collaboration-manager/use[Collaboration
+Manager for Loans user guide]
+
+=== Configure services and apps
+
+:::image type=``content'' source=``media/financial-teams-apps.png''
+alt-text=``Diagram of teams, team templates and apps that can be
+included.'':::
+
+==== Apps and services for financial services
+
+Ensure that your workers can communicate, collaborate, and deliver great
+customer service with apps like Shifts, Tasks, Lists, Praise, and more.
+You can determine which apps are available for your users by enabling
+them in the Teams admin center or by including them in a team template.
+More information about link:/microsoftteams/manage-apps[managing Teams
+apps].
+
+For financial services environments, the following apps and services can
+help you transform your business processes and support communication:
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Teams apps and services |Description |Manage |Help
+|Approvals |Streamline the sign-off process by integrating Approvals
+into chat.
+|link:/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage
+Approvals]
+|https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3[Use
+Approvals]
+
+|Chat |Enable quick conversations between staff with secure chat in
+Teams.
+|link:/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page[Chat&#44;
+teams&#44; channels & apps in Microsoft Teams]
+|https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams[Chat
+in Teams]
+
+|Documents and files |Share standard operating procedures, regulatory
+compliance policies, company policies, and financial product fact
+sheets. |link:/sharepoint/teams-connected-sites[Teams and SharePoint
+integration]
+|https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12[Share
+files]
+
+|Praise |Recognize coworkers for great teamwork with the Praise app.
+|link:/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage
+the Praise app]
+|https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e[Send
+Praise to people]
+
+|Shifts |Manage schedules and clock in and out with Shifts.
+|link:/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage
+the Shifts app]
+|https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821[Use
+Shifts]
+
+|Tasks |Help employees know what they should focus on when not with
+customers by assigning tasks. Your corporate office can use
+link:/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing[task
+publishing] to send out tasks to locations and track progress across
+those locations.
+|link:/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage
+the Tasks app]
+|https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070[Use
+Tasks]
+
+|Updates |Check in on recurring or one-off priorities such as daily
+counts. Managers can create templates for employees to fill out and
+submit.
+|link:/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage
+the Updates app]
+|https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a[Use
+Updates]
+
+|Virtual Appointments (Preview) |A central hub for all your virtual
+appointment needs. Schedule and manage virtual consultations with
+clients, view analytics, and configure options, all in one place.
+|link:/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage
+the Virtual Appointments app] |-
+
+|Bookings |Schedule and manage virtual consultations with clients.
+|link:/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json[Manage
+the Bookings app] |link:bookings-virtual-appointments.md[Virtual
+Appointments with Teams and the Bookings app]
+|===
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|More apps and services from Microsoft |Description |Manage |Help
+|Power Apps and the Power Platform |Integrate business processes and
+enable quick updates to data, such as sales numbers, KPIs, and other
+reports.
+|link:/microsoftteams/platform/samples/teams-low-code-solutions[Teams
+integration with Microsoft Power Platform] and
+link:/microsoftteams/manage-power-platform-apps[Manage Microsoft Power
+Platform apps in the Microsoft Teams admin center] |-
+
+|SharePoint |A new, connected SharePoint site is created whenever you
+create a new team. You can use SharePoint to store files, post news, and
+make sure your workers have access to important information.
+|link:/sharepoint/teams-connected-sites[Teams and SharePoint
+integration]
+|https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b[Add
+a SharePoint page&#44; list&#44; or document library as a tab in Teams]
+
+|Viva Connections |Viva Connections creates a hub in Teams where your
+frontline team can view a tailored news feed from your organization and
+a personalized dashboard with resources they need.
+|link:/sharepoint/viva-connections-overview[Overview of Viva
+Connections]
+|https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b[Viva
+Connections in Microsoft Teams]
+
+|Viva Learning |Provide initial and ongoing training to make sure your
+employees are up-to-date with their skills and knowledge base.
+|link:/microsoft-365/learning/[Manage Viva Learning]
+|https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a[Use
+Viva Learning]
+
+|Viva Engage |Connect your entire organization and enable communication
+across departments and regions. |link:/viva/engage/overview[Overview of
+Viva Engage]
+|https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284[Use
+Viva Engage]
+|===
+
+For more about successfully implementing and adopting Teams, see
+link:/microsoftteams/adopt-microsoft-teams-landing-page[Adopt Microsoft
+Teams].

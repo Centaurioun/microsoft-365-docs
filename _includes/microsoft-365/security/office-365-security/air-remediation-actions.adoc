@@ -1,0 +1,104 @@
+= 
+dansimp
+:keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated,
+investigation, response, remediation, threats, advanced, threat,
+protection
+
+== Remediation actions in Microsoft Defender for Office 365
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:defender-for-office-365.md[Microsoft Defender for
+Office 365 plan 2] -
+link:../defender/microsoft-365-defender.md[Microsoft 365 Defender]
+
+=== Remediation actions
+
+Threat protection features in link:defender-for-office-365.md[Microsoft
+Defender for Office 365] include certain remediation actions. Such
+remediation actions can include:
+
+* Soft delete email messages or clusters
+* Block URL (time-of-click)
+* Turn off external mail forwarding
+* Turn off delegation
+
+In Microsoft Defender for Office 365, remediation actions are not taken
+automatically. Instead, remediation actions are taken only upon approval
+by your organization’s security operations team.
+
+=== Threats and remediation actions
+
+Microsoft Defender for Office 365 includes remediation actions to
+address various threats. Automated investigations often result in one or
+more remediation actions to review and approve. In some cases, an
+automated investigation does not result in a specific remediation
+action. To further investigate and take appropriate actions, use the
+guidance in the following table.
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Category |Threat/risk |Remediation action(s)
+|Email |Malware |Soft delete email/cluster
+
+|Email |Malicious URL (A malicious URL was detected by
+link:safe-links-about.md[Safe Links].) |Soft delete email/cluster Block
+URL (time-of-click verification)
+
+|Email |Phish |Soft delete email/cluster
+
+|Email |Zapped phish (Email messages were delivered and then
+link:zero-hour-auto-purge.md[zapped].) |Soft delete email/cluster
+
+|Email |Missed phish email
+link:submissions-users-report-message-add-in-configure.md[reported] by a
+user
+|link:air-about-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook[Automated
+investigation triggered by the user’s report]
+
+|Email |Volume anomaly (Recent email quantities exceed the previous 7-10
+days for matching criteria.) |Automated investigation does not result in
+a specific pending action.
+
+|Email |No threats found (The system did not find any threats based on
+files, URLs, or analysis of email cluster verdicts.) |Automated
+investigation does not result in a specific pending action.
+
+|User |A user clicked a malicious URL (A user navigated to a page that
+was later found to be malicious, or a user bypassed a
+link:safe-links-about.md#warning-pages-from-safe-links[Safe Links
+warning page] to get to a malicious page.) |Automated investigation does
+not result in a specific pending action.
+
+|User |A user is sending malware/phish |Automated investigation does not
+result in a specific pending action.
+
+|User |Email forwarding (Mailbox forwarding rules are configured, chch
+could be used for data exfiltration.) |Remove forwarding rule
+
+|User |Email delegation rules (A user’s account has delegations set up.)
+|Remove delegation rule
+
+|User |Data exfiltration (A user violated email or file-sharing
+link:../../compliance/dlp-learn-about-dlp.md[DLP policies] |Automated
+investigation does not result in a specific pending action.
+
+|User |Anomalous email sending (A user recently sent more email than
+during the previous 7-10 days.) |Automated investigation does not result
+in a specific pending action.
+|===
+
+=== Next steps
+
+* link:air-view-investigation-results.md[View details and results of an
+automated investigation in Microsoft Defender for Office 365]
+* link:air-review-approve-pending-completed-actions.md[View pending or
+completed remediation actions following an automated investigation in
+Microsoft Defender for Office 365]
+
+=== Related articles
+
+* link:/windows/security/threat-protection/microsoft-defender-atp/automated-investigations[Learn
+about automated investigation in Microsoft Defender for Endpoint]
+* link:/microsoft-365/security/defender/microsoft-365-defender[Learn
+about capabilities in Microsoft 365 Defender]

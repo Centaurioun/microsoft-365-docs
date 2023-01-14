@@ -1,0 +1,79 @@
+= 
+MSFTTracyP
+
+== Prioritize, Manage, Investigate & Respond to Incidents in Microsoft 365 Defender
+
+When alerts are triggered in Microsoft 365 Defender, automated
+investigation and response (AIR) will trigger to hunt across an
+organization’s subscription, determine the impact and scope of the
+threat, and collate the information into a single Incident so that
+admins don’t have to manage multiple incidents.
+
+=== What you’ll need
+
+* Microsoft Defender for Office 365 Plan 2 or higher
+* Sufficient permissions (Security reader, security operations, or
+security administrator, plus link:../mdo-portal-permissions.md[Search
+and purge] role)
+
+=== Prioritize & manage Incidents
+
+Navigate to the security portal Incidents page
+https://security.microsoft.com/incidents.
+
+When the Incident page loads you can filter and prioritize by clicking
+columns to sort the actions or press Filters to apply a filter such as
+data source, tags or state.
+
+Now you have a prioritized list of incidents, from which you can select
+to rename, assign, classify, tag, change the status or add comments via
+the Manage incidents button.
+
+Use the filters to make sure Microsoft Defender for Office items are
+included.
+
+If you are looking for specific alerts, either use the incident search
+capability (_Search for name or ID_) or consider using the alert queue
+filtering on a specific alert.
+
+=== Investigate & Respond to Incidents
+
+After you have prioritized your incident queue, click on the Incident
+you’d like to investigate to load the incidents Overview page. There
+will be useful information such as _MITRE ATT&CK techniques observed_
+and a _timeline of the attack_.
+
+The tabs at the top of the incident page allow you to explore more
+details such as the affected users, mailboxes, endpoints, and et cetera.
+
+The _Evidence and Response_ tab shows items identified as related to the
+original alert via the investigation.
+
+Any items showing as _Pending Action_ within Evidence and Response are
+awaiting approval from an administrator. Sorting by the remediation
+status column in the _All Evidence_ view is recommended, followed by
+clicking the entity or cluster to load the flyout menu where you can
+then approve the actions if appropriate.
+
+If you need to understand the items involved further, you can use the
+incident graph to see the visual linkage of the evidence and entities
+involved. Alternatively, you can review the underlying investigations,
+which will show more of the entities and items involved in the security
+event.
+
+=== Next Steps
+
+You can start using _Action Center_ to act on pending action items from
+all incidents in your organization if you want to focus on the action
+items AIR needs approval for.
+
+=== More Information
+
+link:../../defender/manage-incidents.md[Manage incidents in Microsoft
+365 Defender | Microsoft Docs]
+
+link:../air-about-office.md[How automated investigation and response
+works in Microsoft Defender for Office 365]
+
+link:../air-remediation-actions.md[Remediation actions in Microsoft
+Defender for Office 365]

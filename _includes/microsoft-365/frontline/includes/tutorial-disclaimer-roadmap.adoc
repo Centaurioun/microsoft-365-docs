@@ -1,0 +1,11 @@
+____
+[!NOTE] Microsoft Teams is evolving on a regular basis—new features and
+functionality are added frequently. Please monitor the following
+resources to stay up-to-date: - Follow the
+https://aka.ms/teamsblog[Teams Blog]. - Read the
+https://aka.ms/O365Roadmap[Teams Roadmap]. - Learn about the latest
+released features in the
+https://support.office.com/article/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de[Release
+Notes]. - Participate in the https://aka.ms/TeamsCommunity[Microsoft
+Teams technical community] to get your feature questions answered.
+____

@@ -1,0 +1,51 @@
+= 
+cmcatee-MSFT
+
+== Reactivate your Microsoft subscription
+
+You can reactivate your subscription in the admin center if: the
+subscription expired, was disabled by Microsoft, or if you canceled it
+in the middle of a subscription term.
+
+=== Before you begin
+
+You must be a Global or Billing admin to reactivate a subscription. For
+more information, see
+link:../../admin/add-users/about-admin-roles.md[About admin roles].
+
+*Not an admin?* Contact your administration to reactivate your
+subscription.
+
+=== Reactivate a subscription
+
+::: moniker range=``o365-worldwide''
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+
+::: moniker-end
+
+::: moniker range=``o365-21vianet''
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+
+::: moniker-end
+
+[arabic, start=2]
+. On the *Products* tab, find the subscription that you want to
+reactivate. Select the three dots (more actions), then select
+*Reactivate this subscription*. +
+If you don’t see *Reactivate this subscription*,
+link:../../admin/get-help-support.md[contact support].
+. In the *Reactivate this subscription* pane, select a payment method
+from the drop-down list, or select *Add payment method*.
+. Select *Save*.
+
+=== Related content
+
+link:../try-or-buy-microsoft-365.md[Try or buy a Microsoft 365 for
+business subscription] (article) +
+link:renew-your-subscription.md[Renew Microsoft 365 for business]
+(article) +
+link:cancel-your-subscription.md[Cancel your subscription] (article)

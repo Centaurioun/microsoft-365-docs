@@ -1,0 +1,160 @@
+= 
+kelleyvice-msft
+
+== Example of broad deployment for the latest releases
+
+This channel configuration example is for an organization that uses
+rapid deployment of the latest releases to fit these business
+priorities:
+
+* Ensure business continuity with Microsoft apps and services.
+* Maximize device, service, and data security with the latest features
+and fixes from Microsoft.
+* Maximize user productivity with the latest features from Microsoft.
+
+These goals translate to the IT task of finding the balance between
+rapid production deployment and early vetting with a representative
+subset of users and devices to validate functionally before broad
+deployment.
+
+Our example organization has 5,000 employees in buildings across the
+world in Europe, Africa, Asia, and the Americas. 70% of the employees
+use Microsoft 365 E3 and the rest of the organization uses Microsoft 365
+E5.
+
+____
+[!Note] This example is designed to show you how you can use deployment
+stages and groups, which can work for organizations of many types and
+sizes.
+____
+
+This organization’s IT infrastructure:
+
+* Is largely homogeneous, with Windows, Microsoft 365 Apps, and
+Microsoft cloud services comprising 60% of the installed base. A few
+legacy systems remain after an intensive, multi-year effort to simplify
+and streamline the IT infrastructure.
+* Is maintained by highly experienced staff and tasked with keeping
+users and their devices productive and secure by following Microsoft’s
+lead in their releases.
+
+=== Deployment and update stages
+
+Based on rapid deployment goals of the latest release, this example
+organization uses a two-step deployment process.
+
+[arabic]
+. *Use a preview or pilot deployment:* Validate and iterate with early
+adopters, IT staff, users with representative configurations, and
+training staff.
++
+The early adopters, IT staff, users with representative configurations
+can validate functionality with other apps and on devices before the new
+features roll out to the rest of the organization.
++
+Change managers have an early peek at the new features before widespread
+rollout and can plan messaging and rollout.
++
+Training staff can plan new internal courses or update existing courses
+for the new features before widespread rollout.
+. *Production deployment:* Roll out to all remaining users by region,
+department, or other deployment method.
+
+=== Deployment configuration for Windows 10
+
+The overall goal is to perform a broad deployment of the latest
+Semi-Annual Channel release after validation of Release Preview Channel
+changes by a group of representative users and their devices.
+
+See link:/windows/deployment/[Windows 10 deployment] for more
+information on Windows 10 deployment methods and strategies.
+
+[width="100%",cols="<37%,<36%,<27%",options="header",]
+|===
+|Stage |Channel |Deployment group
+|Pilot |*Release Preview Channel* |*Win10ReleasePreviewChannel* (example
+name) Members are groups containing:
+
+|Production |*Semi-Annual Channel* |*Win10SemiAnnualChannel* (example
+name) Members are all users that aren’t in the
+Win10ReleasePreviewChannel group.
+
+| | |
+|===
+
+This organization uses the best practice of deploying the Release
+Preview Channel payload in the same way as they deploy Semi-Annual
+Channel releases, such as Windows Update or Windows Server Update
+Services, and that they apply the same policies for both channel
+updates.
+
+Ongoing updates process:
+
+[arabic]
+. Release Preview Channel changes are deployed to the
+Win10ReleasePreviewChannel (example name) deployment group.
+. Win10ReleasePreviewChannel group members confirm that Release Preview
+Channel changes are working to IT deployment staff, who can provide
+feedback to Microsoft and wait for the next Release Preview Channel
+changes for additional validation.
+. Semi-Annual Channel feature changes are deployed to the
+Win10SemiAnnualChannel deployment group.
+
+____
+[!Note] While the Semi-Annual Channel is the recommended channel, your
+IT department should utilize their management tools and determine when
+to deploy the latest Semi-Annual Channel release within their
+organization and then roll it out in waves.
+____
+
+=== Deployment configuration for Microsoft 365 Apps
+
+The overall goal is to perform a broad deployment of the latest Current
+Channel release after validation of Current Channel (Preview) changes by
+a group of representative users.
+
+See link:/deployoffice/plan-office-365-proplus[Microsoft 365 Apps
+deployment] for more information on Microsoft 365 Apps deployment
+methods and strategies.
+
+[width="100%",cols="<37%,<36%,<27%",options="header",]
+|===
+|Stage |Channel |Deployment group
+|Pilot |*Current Channel (Preview)* |*AppsCurrentChannelPreview*
+(example name) Members are groups containing:
+
+|Production |*Current Channel* |*AppsCurrentChannel* (example name)
+Members are all users that aren’t in the AppsCurrentChannelPreview
+group.
+
+| | |
+|===
+
+Ongoing updates process:
+
+[arabic]
+. Current Channel (Preview) changes are deployed to the
+AppsCurrentChannelPreview deployment group.
+. AppsCurrentChannelPreview group members confirm that Current Channel
+(Preview) changes are working to IT deployment staff, who can provide
+feedback to Microsoft and wait for the next Current Channel (Preview)
+release for additional validation.
+. Current Channel changes are deployed to the AppsCurrentChannel
+deployment group.
+
+=== Visual summary
+
+Here are the products, their channels, and the deployment groups used by
+this example organization.
+
+image::../media/deploy-update-channels-examples-rapid-deploy/group-summary.png[Deployment
+groups for broad deployment of the latest releases.]
+
+=== See also
+
+link:deploy-update-channels-examples.md[Deployment and update channel
+example configurations]
+
+link:microsoft-365-overview.md[Microsoft 365 for enterprise overview]
+
+link:m365-enterprise-test-lab-guides.md[Test lab guides]

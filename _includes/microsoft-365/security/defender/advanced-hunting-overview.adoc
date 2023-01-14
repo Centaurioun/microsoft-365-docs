@@ -1,0 +1,109 @@
+= 
+schmurky
+:keywords: advanced hunting, threat hunting, cyber threat hunting,
+Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry,
+custom detections, schema, kusto
+
+== Proactively hunt for threats with advanced hunting in Microsoft 365 Defender
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender
+
+Advanced hunting is a query-based threat hunting tool that lets you
+explore up to 30 days of raw data. You can proactively inspect events in
+your network to locate threat indicators and entities. The flexible
+access to data enables unconstrained hunting for both known and
+potential threats.
+
+Advanced hunting supports two modes, guided and advanced. Use
+link:advanced-hunting-query-builder.md[guided mode] if you are not yet
+familiar with Kusto Query Language (KQL) or prefer the convenience of a
+query builder. Use link:advanced-hunting-query-language.md[advanced
+mode] if you are comfortable using KQL to create queries from scratch.
+
+*To start hunting, read link:advanced-hunting-modes.md[Choose between
+guided and advanced modes to hunt in Microsoft 365 Defender].*
+
+____
+{empty}[!VIDEO
+https://www.microsoft.com/en-us/videoplayer/embed/RE4G6DO]
+____
+
+You can use the same threat hunting queries to build custom detection
+rules. These rules run automatically to check for and then respond to
+suspected breach activity, misconfigured machines, and other findings.
+
+Advanced hunting supports queries that check a broader data set coming
+from:
+
+* Microsoft Defender for Endpoint
+* Microsoft Defender for Office 365
+* Microsoft Defender for Cloud Apps
+* Microsoft Defender for Identity
+
+To use advanced hunting, link:m365d-enable.md[turn on Microsoft 365
+Defender].
+
+For more information on advanced hunting in Microsoft Defender for Cloud
+Apps data, see the
+https://www.microsoft.com/en-us/videoplayer/embed/RWFISa[video].
+
+=== Get access
+
+To use advanced hunting or other
+link:microsoft-365-defender.md[Microsoft 365 Defender] capabilities, you
+need an appropriate role in Azure Active Directory.
+link:custom-roles.md[Read about required roles and permissions for
+advanced hunting].
+
+Also, your access to endpoint data is determined by role-based access
+control (RBAC) settings in Microsoft Defender for Endpoint.
+link:m365d-permissions.md[Read about managing access to Microsoft 365
+Defender].
+
+=== Data freshness and update frequency
+
+Advanced hunting data can be categorized into two distinct types, each
+consolidated differently.
+
+* *Event or activity data*—populates tables about alerts, security
+events, system events, and routine assessments. Advanced hunting
+receives this data almost immediately after the sensors that collect
+them successfully transmit them to the corresponding cloud services. For
+example, you can query event data from healthy sensors on workstations
+or domain controllers almost immediately after they are available on
+Microsoft Defender for Endpoint and Microsoft Defender for Identity.
+* *Entity data*—populates tables with information about users and
+devices. This data comes from both relatively static data sources and
+dynamic sources, such as Active Directory entries and event logs. To
+provide fresh data, tables are updated with any new information every 15
+minutes, adding rows that might not be fully populated. Every 24 hours,
+data is consolidated to insert a record that contains the latest, most
+comprehensive data set about each entity.
+
+=== Time zone
+
+==== Queries
+
+Advanced hunting data uses the UTC (Universal Time Coordinated)
+timezone. image:../../media/custom-time-range.png[Screenshot of custom
+time range.]
+
+Queries should be created in UTC.
+
+==== Results
+
+Advanced hunting results are converted to the
+link:m365d-time-zone.md[timezone] set in Microsoft 365 Defender.
+
+=== Related topics
+
+* link:advanced-hunting-modes.md[Choose between guided and advanced
+hunting modes]
+* link:advanced-hunting-query-builder.md[Build hunting queries using
+guided mode]
+* link:advanced-hunting-query-language.md[Learn the query language]
+* link:advanced-hunting-schema-tables.md[Understand the schema]
+* link:custom-detections-overview.md[Custom detections overview]

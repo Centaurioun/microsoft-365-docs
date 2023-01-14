@@ -1,0 +1,225 @@
+= 
+denisebmsft
+:keywords: updates, protection, force updates, events, startup, check
+for latest, notifications
+
+== Manage event-based forced updates
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] - Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+Microsoft Defender Antivirus allows you to determine if updates should
+(or should not) occur after certain events, such as at startup or after
+receiving specific reports from the cloud-delivered protection service.
+
+=== Check for protection updates before running a scan
+
+You can use Microsoft Endpoint Configuration Manager, Group Policy,
+PowerShell cmdlets, and WMI to force Microsoft Defender Antivirus to
+check and download protection updates before running a scheduled scan.
+
+==== Use Configuration Manager to check for protection updates before running a scan
+
+[arabic]
+. On your Microsoft Endpoint Manager console, open the antimalware
+policy you want to change (click *Assets and Compliance* in the
+navigation pane on the left, then expand the tree to *Overview* >
+*Endpoint Protection* > *Antimalware Policies*)
+. Go to the *Scheduled scans* section and set *Check for the latest
+security intelligence updates before running a scan* to *Yes*.
+. Click *OK*.
+. link:/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers[Deploy
+the updated policy as usual].
+
+==== Use Group Policy to check for protection updates before running a scan
+
+[arabic]
+. On your Group Policy management machine, open the
+link:/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal[Group
+Policy Management Console], right-click the Group Policy Object you want
+to configure and click *Edit*.
+. Using the *Group Policy Management Editor* go to *Computer
+configuration*.
+. Click *Policies* then *Administrative templates*.
+. Expand the tree to *Windows components* > *Microsoft Defender
+Antivirus* > *Scan*.
+. Double-click *Check for the latest virus and spyware definitions
+before running a scheduled scan* and set the option to *Enabled*.
+. Click *OK*.
+
+==== Use PowerShell cmdlets to check for protection updates before running a scan
+
+Use the following cmdlets:
+
+[source,powershell]
+----
+Set-MpPreference -CheckForSignaturesBeforeRunningScan
+----
+
+For more information, see
+link:use-powershell-cmdlets-microsoft-defender-antivirus.md[Use
+PowerShell cmdlets to configure and run Microsoft Defender Antivirus]
+and link:/powershell/module/defender/index[Defender Antivirus cmdlets].
+
+==== Use Windows Management Instruction (WMI) to check for protection updates before running a scan
+
+Use the
+link:/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)[*Set*
+method of the *MSFT_MpPreference*] class for the following properties:
+
+[source,wmi]
+----
+CheckForSignaturesBeforeRunningScan
+----
+
+For more information, see
+link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[Windows
+Defender WMIv2 APIs].
+
+=== Check for protection updates on startup
+
+You can use Group Policy to force Microsoft Defender Antivirus to check
+and download protection updates when the machine is started.
+
+[arabic]
+. On your Group Policy management computer, open the
+link:/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal[Group
+Policy Management Console], right-click the Group Policy Object you want
+to configure and click *Edit*.
+. Using the *Group Policy Management Editor* go to *Computer
+configuration*.
+. Click *Policies* then *Administrative templates*.
+. Expand the tree to *Windows components* > *Microsoft Defender
+Antivirus* > *Security Intelligence Updates*.
+. Double-click *Check for the latest virus and spyware definitions on
+startup* and set the option to *Enabled*.
+. Click *OK*.
+
+You can also use Group Policy, PowerShell, or WMI to configure Microsoft
+Defender Antivirus to check for updates at startup even when it is not
+running.
+
+==== Use Group Policy to download updates when Microsoft Defender Antivirus is not present
+
+[arabic]
+. On your Group Policy management machine, open the
+link:/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal[Group
+Policy Management Console], right-click the Group Policy Object you want
+to configure and click *Edit*.
+. Using the *Group Policy Management Editor*, go to *Computer
+configuration*.
+. Click *Policies* then *Administrative templates*.
+. Expand the tree to *Windows components* > *Microsoft Defender
+Antivirus* > *Security Intelligence Updates*.
+. Double-click *Initiate security intelligence update on startup* and
+set the option to *Enabled*.
+. Click *OK*.
+
+==== Use PowerShell cmdlets to download updates when Microsoft Defender Antivirus is not present
+
+Use the following cmdlets:
+
+[source,powershell]
+----
+Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
+----
+
+For more information, see
+link:use-powershell-cmdlets-microsoft-defender-antivirus.md[Use
+PowerShell cmdlets to manage Microsoft Defender Antivirus] and
+link:/powershell/module/defender/index[Defender Antivirus cmdlets] for
+more information on how to use PowerShell with Microsoft Defender
+Antivirus.
+
+==== Use Windows Management Instruction (WMI) to download updates when Microsoft Defender Antivirus is not present
+
+Use the
+link:/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)[*Set*
+method of the *MSFT_MpPreference*] class for the following properties:
+
+[source,wmi]
+----
+SignatureDisableUpdateOnStartupWithoutEngine
+----
+
+For more information, see
+link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[Windows
+Defender WMIv2 APIs].
+
+=== Allow ad hoc changes to protection based on cloud-delivered protection
+
+Microsoft Defender Antivirus can make changes to its protection based on
+cloud-delivered protection. Such changes can occur outside of normal or
+scheduled protection updates.
+
+If you have enabled cloud-delivered protection, Microsoft Defender
+Antivirus will send files it is suspicious about to the Windows Defender
+cloud. If the cloud service reports that the file is malicious, and the
+file is detected in a recent protection update, you can use Group Policy
+to configure Microsoft Defender Antivirus to automatically receive that
+protection update. Other important protection updates can also be
+applied.
+
+==== Use Group Policy to automatically download recent updates based on cloud-delivered protection
+
+[arabic]
+. On your Group Policy management machine, open the
+link:/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal[Group
+Policy Management Console], right-click the Group Policy Object you want
+to configure and click *Edit*.
+. Using the *Group Policy Management Editor* go to *Computer
+configuration*.
+. Click *Policies* then *Administrative templates*.
+. Expand the tree to *Windows components* > *Microsoft Defender
+Antivirus* > *Security Intelligence Updates*.
+. Double-click *Allow real-time security intelligence updates based on
+reports to Microsoft MAPS* and set the option to *Enabled*. Then click
+*OK*.
+. *Allow notifications to disable definitions-based reports to Microsoft
+MAPS* and set the option to *Enabled*. Then click *OK*.
+
+____
+[!NOTE] *Allow notifications to disable definitions based reports*
+enables Microsoft MAPS to disable those definitions known to cause
+false-positive reports. You must configure your computer to join
+Microsoft MAPS for this function to work.
+____
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____
+
+=== See also
+
+* link:deploy-manage-report-microsoft-defender-antivirus.md[Deploy
+Microsoft Defender Antivirus]
+* link:manage-updates-baselines-microsoft-defender-antivirus.md[Manage
+Microsoft Defender Antivirus updates and apply baselines]
+* link:manage-protection-update-schedule-microsoft-defender-antivirus.md[Manage
+when protection updates should be downloaded and applied]
+* link:manage-outdated-endpoints-microsoft-defender-antivirus.md[Manage
+updates for endpoints that are out of date]
+* link:manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md[Manage
+updates for mobile devices and virtual machines (VMs)]
+* link:microsoft-defender-antivirus-in-windows-10.md[Microsoft Defender
+Antivirus in Windows 10]

@@ -1,0 +1,106 @@
+= 
+siosulli
+:keywords: apis, scan, authenticated scan, get, authenticated methods,
+authenticated properties,
+
+== Authenticated scan methods and properties
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* link:../defender-vulnerability-management/index.yml[Microsoft Defender
+Vulnerability Management]
+* https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365
+Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+____
+Want to experience Microsoft Defender Vulnerability Management? Learn
+more about how you can sign up to the
+link:../defender-vulnerability-management/get-defender-vulnerability-management.md[Microsoft
+Defender Vulnerability Management public preview trial].
+____
+
+{empty}[!Includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+{empty}[!Includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!Includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== Methods
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Method |Description |
+|link:get-all-scan-definitions.md[Get all scan definitions] |List all
+scan definitions. |
+
+|link:add-a-new-scan-definition.md[Add&#44; delete or update a scan
+definition] |Add, delete, or update a new scan definition. |
+
+|link:get-all-scan-agents.md[Get all scan agents] |List all scan agents.
+|
+
+|link:get-scan-history-by-definition.md[Get scan history by definition]
+|List scan definition history. |
+
+|link:get-scan-history-by-session.md[Get scan history by session] |List
+scan history for a session. |
+|===
+
+Learn more about
+link:../defender-vulnerability-management/windows-authenticated-scan.md[Windows
+authenticated scan] and link:./network-devices.md[Network authenticated
+scans].
+
+=== Properties
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Property ID |Data type |Description
+|id |String |Scan id.
+
+|scanType |Enum |The type of scan. Possible values are: ``Windows'',
+``Network''.
+
+|scanName |String |Name of the scan.
+
+|isActive |Boolean |Status of whether the scan actively running.
+
+|orgId |String |Related organization id.
+
+|intervalInHours |Int |The interval at which the scan will run.
+
+|createdBy |String |Unique identity of the user that created the scan.
+
+|targetType |String |The target type in the target field. Possible types
+are ``IP Address'' or ``Hostname''. Default value is IP Address.
+
+|target |String |A comma separated list of targets to scan, either IP
+addresses or hostnames.
+
+|scanAuthenticationParams |Object |Set of authenticated scan objects,
+contains: authentication type string, username string, password string.
+See link:./get-all-scan-definitions.md[Get all scan definitions].
+
+|scannerAgent |Object |Set of scanner agent objects, contains: scanning
+agent id string, scanning agent device id string, scanning agent device
+name string, the date and time (in UTC) the device was last seen. See
+link:./get-all-scan-definitions.md[Get all scan definitions].
+
+|latestScan |Object |Latest scan object contains: scan status string,
+failure string, the date and time (in UTC) the scan was executed. See
+link:./get-all-scan-definitions.md[Get all scan definitions].
+|===

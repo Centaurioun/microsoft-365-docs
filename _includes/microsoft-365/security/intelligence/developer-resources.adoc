@@ -1,0 +1,38 @@
+= 
+dansimp
+:keywords: wdsi, software, developer, resources, detection, criteria,
+questions, scan, software, definitions, cloud, protection, security
+intelligence
+
+== Software developer resources
+
+Concerned about the detection of your software? If you believe that your
+application or program has been incorrectly detected by Microsoft
+security software, submit the relevant files for analysis.
+
+Check out the following resources for information on how to submit and
+view submissions:
+
+* https://www.microsoft.com/wdsi/filesubmission[Submit files]
+* https://www.microsoft.com/wdsi/submissionhistory[View your
+submissions]
+
+=== Additional resources
+
+==== Detection criteria
+
+To objectively identify malware and unidentified software, Microsoft
+applies a link:criteria.md[set of criteria] for evaluating malicious or
+potentially harmful code.
+
+==== Developer questions
+
+Find more guidance about the file submission and detection dispute
+process in our link:developer-faq.yml[FAQ for software developers].
+
+==== Scan your software
+
+Use
+link:/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10[Microsoft
+Defender Antivirus] to check your software against the latest Security
+intelligence and cloud protection from Microsoft.

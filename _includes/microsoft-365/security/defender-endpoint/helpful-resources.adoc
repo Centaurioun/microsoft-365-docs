@@ -1,0 +1,57 @@
+= 
+mjcaparas
+:keywords: Microsoft 365 Defender, product brief, brief, capabilities,
+licensing
+
+== Helpful Microsoft Defender for Endpoint resources
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+Access helpful resources such as links to blogs and other resources
+related to Microsoft Defender for Endpoint.
+
+=== Endpoint protection platform
+
+* link:/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests[Top
+scoring in industry tests]
+* https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/[Inside
+out: Get to know the advanced technologies at the core of Defender for
+Endpoint next generation protection]
+* https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Protecting-disconnected-devices-with-Microsoft-Defender-ATP/ba-p/500341[Protecting
+disconnected devices with Defender for Endpoint]
+* https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Tamper-protection-in-Microsoft-Defender-ATP/ba-p/389571[Tamper
+protection in Defender for Endpoint]
+
+=== Endpoint Detection Response
+
+* https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Incident-response-at-your-fingertips-with-Microsoft-Defender-ATP/ba-p/614894[Incident
+response at your fingertips with Defender for Endpoint live response]
+
+=== Vulnerability Management
+
+* https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977[Defender
+for Endpoint Vulnerability Management now publicly available!]
+
+=== Operational
+
+* https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/The-Golden-Hour-remake-Defining-metrics-for-a-successful/ba-p/782014[The
+Golden Hour remake - Defining metrics for a successful security
+operations]
+* https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Microsoft-Defender-ATP-Evaluation-lab-is-now-available-in-public/ba-p/770271[Defender
+for Endpoint Evaluation lab is now available in public preview]
+* https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297[How
+automation brings value to your security teams]
+* link:defender-endpoint-false-positives-negatives.md[Address false
+positives/negatives in Microsoft Defender for Endpoint]

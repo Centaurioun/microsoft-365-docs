@@ -1,0 +1,108 @@
+= 
+cmcatee-MSFT
+
+== Close your Microsoft account
+
+When you close your account with Microsoft, all information related to
+your account is deleted. This information includes subscriptions,
+licenses, payment methods, users, and user data.
+
+=== Before you begin
+
+Before you start this process, make sure to back up any data that you
+want to preserve.
+
+You must be a Global or Billing admin to do the tasks in this article.
+For more information, see
+link:../admin/add-users/about-admin-roles.md[About admin roles].
+
+=== Step 1: Delete users
+
+Delete all users except for one global administrator. The global
+administrator completes the steps to close the account. Before you can
+delete the directory at the end of this process, you must delete all
+other users.
+
+If users are synchronized from on-premises, first turn off sync, then
+delete the users in the cloud directory by using the Azure portal or
+Azure PowerShell cmdlets.
+
+To delete users, see
+link:../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365[User
+management admin: Delete one or more users].
+
+You can also use the
+link:/powershell/module/msonline/remove-msoluser[Remove-MsolUser]
+PowerShell cmdlet to delete users in bulk.
+
+If your organization uses Active Directory that synchronizes with
+Microsoft Azure Active Directory (Azure AD), delete the user account
+from Active Directory, instead. For instructions, see
+link:/azure/active-directory/users-groups-roles/users-bulk-delete[Bulk
+delete users in Azure Active Directory].
+
+=== Step 2: Cancel all active subscriptions
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+. On the *Products* tab, find an active subscription. Select the three
+dots (more actions), then select *Cancel subscription*.
+. In the *Cancel subscription* pane, choose a reason why you’re
+canceling. Optionally, provide any feedback.
+. Select *Save*.
+. Repeat steps 1 through 4 to cancel all active subscriptions.
+
+=== Step 3: Delete all disabled subscriptions
+
+[arabic]
+. In the admin center, go to the *Billing* > Your products page.
+. On the *Products* tab, select a disabled subscription.
+. On the subscription details page, in the *Subscription and payment
+settings* section, select *Delete subscription*.
+. In the *Delete subscription* pane, select *Delete subscription*.
+. In the *Delete subscription* dialog box, select *Yes*.
+. For each disabled subscription, repeat steps 3 through 5 until all
+subscriptions are deleted.
+
+____
+[!NOTE] If you’re unable to immediately delete a disabled subscription,
+link:../admin/get-help-support.md[contact support].
+____
+
+=== Step 4: Disable multi-factor authentication
+
+[arabic]
+. Sign in to the admin center with a Global administrator account. To
+verify what roles you have, see
+link:../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization[Check
+admin roles in your organization].
+. Go to the *Users* > Active users page.
+. Choose *Multi-factor authentication*.
+. On the multi-factor authentication page, disable all accounts except
+for the global admin account that you’re currently using.
+
+You can also
+link:/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell[use
+PowerShell to disable multi-factor authentication for multiple users].
+
+=== Step 5: Delete the directory in Azure Active Directory
+
+[arabic]
+. Sign in to the Azure AD admin center with a Global administrator
+account.
+. Select *Azure Active Directory*.
+. Switch to the organization that you want to delete.
+. Select *Delete tenant*.
+. If your organization fails one or more checks, you see a link to more
+information on how to pass the checks. After you pass all checks, select
+*Delete* to complete the process.
+
+After you complete this final step, your account with Microsoft is
+closed and deleted.
+
+=== Related content
+
+link:./billing-and-payments/understand-your-invoice2.md[Understand your
+bill or invoice for Microsoft 365 for business] (article) +
+link:./subscriptions/cancel-your-subscription.md[Cancel your
+subscription] (article)

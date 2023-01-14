@@ -1,0 +1,60 @@
+= 
+dansimp
+:keywords: incidents, alerts, investigate, analyze, response,
+correlation, attack, machines, devices, users, identities, identity,
+mailbox, email, 365, microsoft, m365
+
+== Microsoft 365 Defender integration with Microsoft Sentinel
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender
+
+The Microsoft 365 Defender connector for Microsoft Sentinel (preview)
+sends all Microsoft 365 Defender incidents and alerts information to
+Microsoft Sentinel and keeps the incidents synchronized.
+
+Once you add the connector, Microsoft 365 Defender incidents—which
+include all associated alerts, entities, and relevant information
+received from Microsoft Defender for Endpoint, Microsoft Defender for
+Identity, Microsoft Defender for Office 365, and Microsoft Defender for
+Cloud Apps—are streamed to Microsoft Sentinel as security information
+and event management (SIEM) data, providing you with context to perform
+triage and incident response with Microsoft Sentinel.
+
+Once in Microsoft Sentinel, incidents remain bi-directionally
+synchronized with Microsoft 365 Defender, allowing you to take advantage
+of the benefits of both the Microsoft 365 Defender portal and Microsoft
+Sentinel in the Azure portal for incident investigation and response.
+
+Watch this short overview of Microsoft Sentinel integration with
+Microsoft 365 Defender (4 minutes).
+
+____
+{empty}[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRo]
+____
+
+Here’s how it works.
+
+:::image type=``content''
+source=``../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png''
+alt-text=``The flow and sharing of incident data for the Microsoft 365
+Defender and Microsoft Sentinel portals''
+lightbox=``../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png'':::
+
+=== Next steps
+
+[arabic]
+. Get a deeper understanding of
+link:/azure/sentinel/microsoft-365-defender-sentinel-integration[Microsoft
+365 Defender integration with Microsoft Sentinel].
+. link:/azure/sentinel/connect-microsoft-365-defender[Connect data from
+Microsoft 365 Defender to Microsoft Sentinel].
+
+=== See also
+
+* link:incidents-overview.md[Overview of incidents in Microsoft 365
+Defender]
+* link:/azure/sentinel/tutorial-investigate-cases[Investigate incidents
+with Microsoft Sentinel]

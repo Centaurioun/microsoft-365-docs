@@ -1,0 +1,97 @@
+= 
+chuckedmonson
+
+== Create a model on a local SharePoint site with Microsoft Syntex
+
+*Applies to:*   ✓ All custom models   |   ✓ All trained models
+
+Microsoft Syntex provides an option to create and train models locally
+on your own SharePoint site. These models can be used only on the site
+where they’re created.
+
+____
+[!NOTE] If you want to make your model discoverable and available for
+other users, you need to create an _enterprise model_. An enterprise
+model is a model that is created and trained in the
+link:create-a-content-center.md[content center].
+____
+
+By activating document classification and extraction on your SharePoint
+site, Syntex lets you classify files in document libraries, extract
+information from new files, and automate activities based on extracted
+information.
+
+When you activate local model creation, the following lists and
+libraries will be added to your site:
+
+* Models document library
+* Training files document library
+* Explanation templates list
+* Model usage list
+
+A model is automatically promoted to the current site only when the
+model first has been applied to any library in the site. This makes the
+model discoverable in the list of available site models and available
+for any other library in the site. Until the model is applied to a
+library in the site, it is unavailable. Similarly, when a model is
+removed from all the libraries in the site, it is also removed from the
+list of available site models.
+
+This feature is available for all link:model-types-overview.md[model
+types].
+
+=== Create a model on a local site
+
+[arabic]
+. From a SharePoint document library, select the files you want to
+analyze, and then select *Classify and extract*.
++
+image::../media/content-understanding/local-model-classify-and-extract-option.png[Screenshot
+of a SharePoint document library with the Classify and extract option
+highlighted.]
+. The first time you use this feature, you’re activating Syntex on your
+site. You’ll see the following message.
++
+image::../media/content-understanding/local-model-first-run-activate-message.png[Screenshot
+of the Activate document classification and extraction infomation page.]
++
+____
+[!NOTE] You must have the Manage Web Site permission to perform
+administration tasks and manage content for the site. This would be a
+site owner. Once the feature is activated, anyone with the Manage Lists
+permission will be able to create and manage models.
+____
+. Select *Activate* to continue. You’ll see the following message.
++
+image::../media/content-understanding/local-model-activated-message.png[Screenshot
+of the Document classification and extraction activated message with the
+option to Create a model.]
+. Select *Create a model*.
+. On the *Create a model* panel, type the name of the model, add a
+description, and then select *Create*.
++
+image::../media/content-understanding/local-model-create-a-model.png[Screenshot
+of the Create a model panel.]
+. Proceed to link:apply-a-model.md[train your custom model] or to
+link:prebuilt-overview.md[configure your trained model] using the files
+that you selected.
+. When done, the *Add to library* panel opens.
++
+image::../media/content-understanding/local-model-add-to-library-panel.png[Screenshot
+of the Add to library panel showing the site and libraries applied.]
+. On the *Add to library* panel, you’ll see the name of your SharePoint
+site and the document library that the model will be applied to. If you
+want to apply the model to a different library, select *Back to
+libraries*, and choose the library you want to use. Then select *Add*.
+. On the model home page, in the *Where the model is applied on this
+site* section, you can see the libraries that have the model applied. To
+apply the model to other libraries on the site, select *Apply model*.
++
+image::../media/content-understanding/local-model-home-page.png[Screenshot
+of the model home page showing the Where the model is applied on the
+site section.]
+
+____
+[!NOTE] When a local model is applied to a single library, it becomes
+available for discovery for application to other libraries in same site.
+____

@@ -1,0 +1,30 @@
+= 
+chuckedmonson
+
+== Create a document from a modern template in Microsoft Syntex
+
+You can use a _published_ modern template to quickly create similar
+documents without having to start from scratch. To create a document
+using a published template, follow these steps:
+
+[arabic]
+. From a SharePoint document library, select *New*, and then select the
+modern template you want to use.
++
+image::../media/content-understanding/content-assembly-create-document-1.png[Screenshot
+of document library showing the modern template choices on the New
+menu.]
+. The template opens in the template studio.
+. On the *Create a document from a template* panel, enter the
+information, and then select *Create document*.
++
+image::../media/content-understanding/content-assembly-create-document-2b.png[Screenshot
+of document library showing the Create a document from a template
+panel.]
++
+To help reduce time and effort involved in filling values for fields,
+Syntex provides:
+* Suggestions to help you easily pick values when selecting values from
+a list.
+* Autofill field values if able to uniquely identify a record for fields
+associated with the same list.

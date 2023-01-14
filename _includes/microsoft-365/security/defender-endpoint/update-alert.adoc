@@ -1,0 +1,153 @@
+= 
+mjcaparas
+:keywords: apis, graph api, supported apis, get, alert, information, id
+
+== Update alert
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!Includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!Includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+=== API description
+
+Updates properties of existing link:alerts.md[Alert].
+
+Submission of *comment* is available with or without updating
+properties.
+
+Updatable properties are: `status`, `determination`, `classification`,
+and `assignedTo`.
+
+=== Limitations
+
+[arabic]
+. You can update alerts that available in the API. For more information,
+see link:get-alerts.md[List Alerts].
+. Rate limitations for this API are 100 calls per minute and 1500 calls
+per hour.
+
+=== Permissions
+
+One of the following permissions is required to call this API. To learn
+more, including how to choose permissions, see link:apis-intro.md[Use
+Microsoft Defender for Endpoint APIs]
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Permission type |Permission |Permission display name
+|Application |Alerts.ReadWrite.All |`Read and write all alerts'
+
+|Delegated (work or school account) |Alert.ReadWrite |`Read and write
+alerts'
+|===
+
+____
+[!NOTE] When obtaining a token using user credentials:
+
+* The user needs to have at least the following role permission: `Alerts
+investigation' (For more information, see link:user-roles.md[Create and
+manage roles])
+* The user needs to have access to the device associated with the alert,
+based on device group settings (For more information, see
+link:machine-groups.md[Create and manage device groups]
+
+Device group creation is supported in Defender for Endpoint Plan 1 and
+Plan 2.
+____
+
+=== HTTP request
+
+[source,http]
+----
+PATCH /api/alerts/{id}
+----
+
+=== Request headers
+
+[cols="<,<,<",options="header",]
+|===
+|Name |Type |Description
+|Authorization |String |Bearer \{token}. *Required*.
+|Content-Type |String |application/json. *Required*.
+|===
+
+=== Request body
+
+In the request body, supply the values for the relevant fields that
+should be updated.
+
+Existing properties that aren’t included in the request body will
+maintain their previous values or be recalculated based on changes to
+other property values.
+
+For best performance, you shouldn’t include existing values that haven’t
+change.
+
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Property |Type |Description
+|Status |String |Specifies the current status of the alert. The property
+values are: `New', `InProgress' and `Resolved'.
+
+|assignedTo |String |Owner of the alert
+
+|Classification |String |Specifies the specification of the alert. The
+property values are: `TruePositive`, `Informational, expected activity`,
+and `FalsePositive`.
+
+|Determination |String |Specifies the determination of the alert.
+
+|Comment |String |Comment to be added to the alert.
+|===
+
+____
+[!NOTE] Around August 29, 2022, previously supported alert determination
+values (`Apt' and `SecurityPersonnel') will be deprecated and no longer
+available via the API.
+____
+
+=== Response
+
+If successful, this method returns 200 OK, and the link:alerts.md[alert]
+entity in the response body with the updated properties. If alert with
+the specified ID wasn’t found - 404 Not Found.
+
+=== Example
+
+==== Request
+
+Here’s an example of the request.
+
+[source,http]
+----
+PATCH https://api.securitycenter.microsoft.com/api/alerts/121688558380765161_2136280442
+----
+
+[source,json]
+----
+{
+    "status": "Resolved",
+    "assignedTo": "secop2@contoso.com",
+    "classification": "FalsePositive",
+    "determination": "Malware",
+    "comment": "Resolve my alert and assign to secop2"
+}
+----

@@ -1,0 +1,112 @@
+= 
+chrisda
+
+== View and release quarantined messages from shared mailboxes
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to:* - link:eop-about.md[Exchange Online Protection] -
+link:defender-for-office-365.md[Microsoft Defender for Office 365 plan 1
+and plan 2] - link:../defender/microsoft-365-defender.md[Microsoft 365
+Defender]
+
+Users can manage quarantined messages where they are one of the
+recipients as described in link:quarantine-end-user.md[Find and release
+quarantined messages as a user in EOP]. But what about *shared
+mailboxes* where the user has Full Access and Send As or Send on Behalf
+permissions to the mailbox as described in
+link:/exchange/collaboration-exo/shared-mailboxes[Shared mailboxes in
+Exchange Online]?
+
+Previously, the ability for users to manage quarantined messages sent to
+a shared mailbox required admins to leave automapping enabled for the
+shared mailbox (it’s enabled by default when an admin gives a user
+access to another mailbox). However, depending on the size and number of
+mailboxes that the user has access to, performance can suffer as
+Outlooks tries to open _all_ mailboxes that the user has access to. For
+this reason, many admins choose to
+link:/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox[remove
+automapping for shared mailboxes].
+
+Now, automapping is no longer required for users to manage quarantined
+messages that were sent to shared mailboxes. It just works. There are
+two different methods to access quarantined messages that were sent to a
+shared mailbox:
+
+* If the following statements are all true:
+** An admin has configured link:quarantine-policies.md[quarantine
+policies] to allow quarantine notifications (formerly known as end-user
+spam notifications).
+** The user has access to quarantine notifications of the shared
+mailbox.
+** The user has Full Access permissions to the shared mailbox (directly
+or via a security group).
++
+The user can click the *Review* button in the notification to go to
+quarantine in the Microsoft 365 Defender portal. This method only allows
+access to quarantined messages that were sent to the shared mailbox.
+Users can’t manage their own quarantine messages in this context.
+* The user can link:quarantine-end-user.md[go to quarantine in the
+Microsoft 365 Defender portal] and click *Filter* to filter the results
+by *Recipient address* (the email address of the shared mailbox). On the
+main *Quarantine* page, you can click on the *Recipient* column to sort
+by messages that were sent to the shared mailbox.
+
+=== Things to keep in mind
+
+* _Quarantine policies_ define what users are allowed to do or not do to
+quarantined messages based on why the message was quarantined (for
+supported features). Default quarantine policies enforce the historical
+capabilities that allow recipients to view and act on messages. Admins
+can create and apply custom quarantine policies that define less
+restrictive or more restrictive capabilities for users. For more
+information, see link:quarantine-policies.md[Quarantine policies].
+* The first user to act on the quarantined message decides the fate of
+the message for everyone who uses the shared mailbox. For example, if a
+shared mailbox is accessed by 10 users, and a user decides to delete the
+quarantine message, the message is deleted for all 10 users. Likewise,
+if a user decides to release the message, it’s released to the shared
+mailbox and is accessible by all other users of the shared mailbox.
+* Currently, the *Block sender* button is not available in the *Details*
+flyout for quarantined messages that were sent to the shared mailbox.
+* Regarding quarantine operations for shared mailboxes, if you use
+nested security groups to grant access to a shared mailbox, we recommend
+no more than two levels of nested groups. For example, Group A is a
+member of Group B, which is a member of Group C. To assign permissions
+to a shared mailbox, don’t add the user to Group A and then assign Group
+C to the shared mailbox.
+* As of July 2022, users with primary SMTP addresses that are different
+from their user principal names (UPNs) should be able to access
+quarantined messages for the shared mailbox.
+* To manage quarantined messages for the shared mailbox in
+link:/powershell/exchange/connect-to-exchange-online-powershell[Exchange
+Online PowerShell], the end-user will need to use the
+link:/powershell/module/exchange/get-quarantinemessage[Get-QuarantineMessage]
+cmdlet with shared mailbox email address for the value of the
+_RecipientAddress_ parameter to identify the messages. For example:
++
+[source,powershell]
+----
+Get-QuarantineMessage -RecipientAddress officeparty@contoso.com
+----
++
+Then, the end-user can select a quarantined message from the list to
+view or take action on.
++
+This example shows all of the quarantined messages that were sent to the
+shared mailbox, and then releases the first message in the list from
+quarantine (the first message in the list is 0, the second is 1, and so
+on).
++
+[source,powershell]
+----
+$SharedMessages = Get-QuarantineMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
+$SharedMessages
+Release-QuarantineMessage -Identity $SharedMessages[0]
+----
++
+For detailed syntax and parameter information, see the following topics:
+** link:/powershell/module/exchange/get-quarantinemessage[Get-QuarantineMessage]
+** link:/powershell/module/exchange/get-quarantinemessageheader[Get-QuarantineMessageHeader]
+** link:/powershell/module/exchange/preview-quarantinemessage[Preview-QuarantineMessage]
+** link:/powershell/module/exchange/release-quarantinemessage[Release-QuarantineMessage]

@@ -1,0 +1,92 @@
+= 
+chrisda
+
+== Give users access to the Security & Compliance Center
+
+{empty}[!INCLUDE link:../includes/mdo-trial-banner.md[MDO Trial banner]]
+
+*Applies to* - link:exchange-online-protection-overview.md[Exchange
+Online Protection] - link:defender-for-office-365.md[Microsoft Defender
+for Office 365 plan 1 and plan 2] -
+link:../defender/microsoft-365-defender.md[Microsoft 365 Defender]
+
+Users need to be assigned permissions in the Security & Compliance
+Center before they can manage any of its security or compliance
+features. As a global admin or member of the OrganizationManagement role
+group in the Security & Compliance Center, you can give these
+permissions to users. Users will only be able to manage the security or
+compliance features that you give them access to.
+
+For more information about the different permissions you can give to
+users in the Security & Compliance Center, check out
+link:permissions-in-the-security-and-compliance-center.md[Permissions in
+the Security & Compliance Center].
+
+=== What do you need to know before you begin?
+
+* You need to be a global admin, or a member of the
+OrganizationManagement role group in the Security & Compliance Center,
+to complete the steps in this article.
+* Role groups for the Security & Compliance Center might have similar
+names to the role groups in Exchange Online, but they’re not the same.
+* Role group memberships aren’t shared between Exchange Online and the
+Security & Compliance Center.
+* Delegated Access Permission (DAP) partners with Administer On Behalf
+Of (AOBO) permissions can’t access the Security & Compliance Center.
+
+=== Use the Security & Compliance Center to give another user access to the Security & Compliance Center
+
+[arabic]
+. Open the Security & Compliance Center at https://protection.office.com
+and then go to *Permissions*. To go directly to the *Permissions* tab,
+open https://protection.office.com/permissions.
+. From the list of role groups, choose the role group, and then click
+*Edit* image:../../media/O365-MDM-CreatePolicy-EditIcon.gif[Edit icon.].
+. In the role group’s properties page under *Members*, click
+*Add*image:../../media/ITPro-EAC-AddIcon.gif[Add Icon.] and select the
+name of the user (or users) you want to add.
+. When you’ve selected all of the users you want to add to the role
+group, click *add->* and then *OK*.
+. When you’re finished, click *Save*.
+
+=== Use Security & Compliance PowerShell to give another user access to the Security & Compliance Center
+
+[arabic]
+. link:/powershell/exchange/connect-to-scc-powershell[Connect to
+Security & Compliance PowerShell].
+. Use the following syntax:
++
+[source,powershell]
+----
+Add-RoleGroupMember -Identity <RoleGroup> -Member <UserIdentity>
+
+- _Identity_ is the role group.
+- _Member_ is the user or universal security group (USG). You can specify only one member at a time.
+
+This example adds MatildaS to the Organization Management role group.
+
+```PowerShell
+Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
+----
+
+For detailed syntax and parameter issues, see
+link:/powershell/module/exchange/add-rolegroupmember[Add-RoleGroupMember]
+
+==== How do you know this worked?
+
+To verify that you’ve successfully granted access to the Security &
+Compliance Center, do either of the following steps:
+
+* In the Security & Compliance Center, go to *Permissions* and select
+the role group. In the details flyout that opens, verify the members of
+the role group.
+* In Security & Compliance PowerShell, replace <RoleGroupName> with the
+name of the role group, and run the following command:
++
+[source,powershell]
+----
+Get-RoleGroupMember -Identity "<RoleGroupName>"
+----
++
+For detailed syntax and parameter information, see
+link:/powershell/module/exchange/Get-RoleGroupMember[Get-RoleGroupMember].

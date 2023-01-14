@@ -1,0 +1,64 @@
+= 
+denisebmsft
+
+== Manage devices in Microsoft Defender for Business
+
+In Defender for Business, you can manage devices as follows:
+
+* link:#view-the-list-of-onboarded-devices[View a list of onboarded
+devices] to see their risk level, exposure level, and health state
+* link:#take-action-on-a-device-that-has-threat-detections[Take action
+on a device] that has threat detections
+* link:#onboard-a-device[Onboard a device to Defender for Business] +
+* link:#offboard-a-device[Offboard a device from Defender for Business]
+
+=== View the list of onboarded devices
+
+:::image type=``content''
+source=``../../media/defender-business/mdb-deviceinventory.png''
+alt-text=``Screenshot of device inventory'':::
+
+[arabic]
+. Go to the Microsoft 365 Defender portal
+(https://security.microsoft.com) and sign in.
+. In the navigation pane, go to *Assets* > *Devices*.
+. Select a device to open its flyout panel, where you can learn more
+about its status and take action.
++
+If you don’t have any devices listed yet,
+link:mdb-onboard-devices.md[Onboard devices to Defender for Business]
+
+=== Take action on a device that has threat detections
+
+:::image type=``content''
+source=``../../media/defender-business/mdb-selected-device.png''
+alt-text=``Screenshot of a selected device with details and actions
+available'':::
+
+[arabic]
+. In the Microsoft 365 Defender portal (https://security.microsoft.com),
+in the navigation pane, go to *Assets* > *Devices*.
+. Select a device to open its flyout panel, and review the information
+that is displayed.
+. Select the ellipsis (*…*) to open the actions menu.
+. Select an action, such as *Run antivirus scan* or *Initiate Automated
+Investigation*.
+
+=== Onboard a device
+
+See link:mdb-onboard-devices.md[Onboard devices to Defender for
+Business].
+
+=== Offboard a device
+
+See link:mdb-offboard-devices.md[Offboarding a device].
+
+=== Next steps
+
+* link:mdb-view-manage-incidents.md[View and manage incidents in
+Defender for Business]
+* link:mdb-respond-mitigate-threats.md[Respond to and mitigate threats
+in Defender for Business]
+* link:mdb-review-remediation-actions.md[Review remediation actions in
+the Action center]
+* link:mdb-create-edit-device-groups.md[Create or edit device groups]

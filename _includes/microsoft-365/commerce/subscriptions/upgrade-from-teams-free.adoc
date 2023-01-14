@@ -1,0 +1,85 @@
+= 
+cmcatee-MSFT
+
+== Upgrade from Microsoft Teams Free to Microsoft 365 for business
+
+____
+[!IMPORTANT] This article only applies to Microsoft Teams Free
+organizations in India.
+____
+
+=== Before you begin
+
+You must be a Microsoft Teams Free admin to upgrade a Microsoft Teams
+Free organization. You’re automatically an admin if you created the
+Microsoft Teams Free organization.
+
+=== Step 1: Get your work or school account ID
+
+To begin the process, get your underlying work or school account ID.
+This account ID is different from the email address that you use to
+access Microsoft Teams Free.
+
+[arabic]
+. Go to https://account.activedirectory.windowsazure.com
+. In the header, select the profile icon. Your account ID is displayed
+below your name, and ends with _.onmicrosoft.com_. +
+Your admin email address will look like
+_admin@yourfreeorgname.onmicrosoft.com_.
+
+=== Step 2: Reset your password
+
+After you have the underlying work or school account for your Microsoft
+Teams Free org, you must reset the password for the account.
+
+[arabic]
+. Go to the Microsoft 365 admin center. When prompted to sign in, choose
+*Forgot my password*.
+. Complete the password reset procedure using the underlying work or
+school account (the one ending with _.onmicrosoft.com_).
+. Complete the verification steps. You will receive an email with a code
+to use to set a new password.
+. Enter the code to complete the verification process.
+
+=== Step 3: Buy your new subscription
+
+Use the underlying work or school account that you recovered and your
+new admin password to buy a new Microsoft 365 for business subscription.
+
+[arabic]
+. In the Microsoft 365 admin center, go to *Billing* > Purchase
+Services.
+. Find the Microsoft 365 for business product that you want to buy. >
+[!IMPORTANT] > Be sure to choose one that includes Microsoft Teams.
+. Complete the purchase. Remember to buy enough licenses for all the
+users in your Microsoft Teams Free org who you want to move to Microsoft
+365 for business.
+
+=== Step 4: Assign new licenses to users
+
+Now that you have a new Microsoft 365 for business subscription, you can
+assign licenses to the existing users in your Microsoft Teams Free
+organization.
+
+[arabic]
+. In the admin center, go to *Users* > *Active users*.
+. Select the users to whom you want to assign Microsoft 365 for business
+licenses, then select *Manage product licenses*.
+. In the *Manage product licenses* pane, select *Replace existing
+license assignments*.
+. In the *Replace existing products* pane, find the Microsoft 365 for
+business product that you bought, and switch the toggle to *On*.
+. Select *Replace*, then select *Close*.
+
+=== Related content
+
+https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c[Welcome
+to Microsoft Teams free] (article) +
+link:/microsoftteams/upgrade-freemium[Upgrade Microsoft Teams free to
+subscription version] (article) +
+link:../licenses/buy-licenses.md[Buy or remove subscription licenses]
+(article) +
+link:../../admin/manage/assign-licenses-to-users.md[Assign licenses to
+users] (article) +
+link:../../admin/manage/remove-licenses-from-users.md[Unassign licenses
+from users] (article)

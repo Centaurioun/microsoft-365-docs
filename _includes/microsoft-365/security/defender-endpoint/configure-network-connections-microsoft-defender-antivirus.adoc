@@ -1,0 +1,209 @@
+= 
+denisebmsft
+:keywords: antivirus, Microsoft Defender Antivirus, antimalware,
+security, defender, cloud, aggressiveness, protection level
+
+== Configure and validate Microsoft Defender Antivirus network connections
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+____
+[!TIP] RSS feed: Get notified when this page is updated by copying and
+pasting the following URL into your feed reader:
+
+[source,https]
+----
+https://github.com/MicrosoftDocs/microsoft-365-docs/commits/public/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus.md.atom
+----
+____
+
+To ensure Microsoft Defender Antivirus cloud-delivered protection works
+properly, your security team must configure your network to allow
+connections between your endpoints and certain Microsoft servers. This
+article lists connections that must be allowed for using the firewall
+rules. It also provides instructions for validating your connection.
+Configuring your protection properly will ensure you receive the best
+value from your cloud-delivered protection services.
+
+____
+[!IMPORTANT] This article contains information about configuring network
+connections only for Microsoft Defender Antivirus. If you are using
+Microsoft Defender for Endpoint (which includes Microsoft Defender
+Antivirus), see link:configure-proxy-internet.md[Configure device proxy
+and Internet connectivity settings for Defender for Endpoint].
+____
+
+=== Allow connections to the Microsoft Defender Antivirus cloud service
+
+The Microsoft Defender Antivirus cloud service provides fast, and strong
+protection for your endpoints. It’s optional to enable the
+cloud-delivered protection service. Microsoft Defender Antivirus cloud
+service is recommended, because it provides important protection against
+malware on your endpoints and network. For more information, see
+link:enable-cloud-protection-microsoft-defender-antivirus.md[Enable
+cloud-delivered protection] for enabling service with Intune, Microsoft
+Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or
+individual clients in the Windows Security app.
+
+After you’ve enabled the service, you need to configure your network or
+firewall to allow connections between network and your endpoints.
+Because your protection is a cloud service, computers must have access
+to the internet and reach the Microsoft cloud services. Don’t exclude
+the URL `*.blob.core.windows.net` from any kind of network inspection.
+
+____
+[!NOTE] The Microsoft Defender Antivirus cloud service delivers updated
+protection to your network and endpoints. The cloud service should not
+be considered as only protection for your files that are stored in the
+cloud; instead, the cloud service uses distributed resources and machine
+learning to deliver protection for your endpoints at a faster rate than
+the traditional Security intelligence updates.
+____
+
+=== Services and URLs
+
+The table in this section lists services and their associated website
+addresses (URLs).
+
+Make sure that there are no firewall or network filtering rules denying
+access to these URLs. Otherwise, you must create an allow rule
+specifically for those URLs (excluding the URL
+`*.blob.core.windows.net`). The URLs in the following table use port 443
+for communication.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Service and description |URL
+|Microsoft Defender Antivirus cloud-delivered protection service is
+referred as Microsoft Active Protection Service (MAPS).
+|`*.wdcp.microsoft.com`
+
+|Microsoft Update Service (MU) and Windows Update Service (WU)
+|`*.update.microsoft.com`
+
+|Security intelligence updates Alternate Download Location (ADL)
+|`*.download.microsoft.com`
+
+|Malware submission storage |`ussus1eastprod.blob.core.windows.net`
+
+|Certificate Revocation List (CRL)
+|`http://www.microsoft.com/pkiops/crl/`
+
+|Symbol Store |`https://msdl.microsoft.com/download/symbols`
+
+|Universal GDPR Client |The update uses SSL (TCP Port 443) to download
+manifests and upload diagnostic data to Microsoft that uses the
+following DNS endpoints:
+|===
+
+=== Validate connections between your network and the cloud
+
+After allowing the URLs listed, test whether you’re connected to the
+Microsoft Defender Antivirus cloud service. Test the URLs are correctly
+reporting and receiving information to ensure you’re fully protected.
+
+==== Use the cmdline tool to validate cloud-delivered protection
+
+Use the following argument with the Microsoft Defender Antivirus
+command-line utility (`mpcmdrun.exe`) to verify that your network can
+communicate with the Microsoft Defender Antivirus cloud service:
+
+[source,console]
+----
+"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
+----
+
+____
+[!NOTE] Open Command Prompt as an administrator. Right-click the item in
+the *Start* menu, click *Run as administrator* and click *Yes* at the
+permissions prompt. This command will only work on Windows 10, version
+1703 or higher, or Windows 11.
+____
+
+For more information, see
+link:command-line-arguments-microsoft-defender-antivirus.md[Manage
+Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool].
+
+==== Attempt to download a fake malware file from Microsoft
+
+You can download a sample file that Microsoft Defender Antivirus will
+detect and block if you’re properly connected to the cloud. Visit
+https://aka.ms/ioavtest1 to download the file.
+
+____
+[!NOTE] The downloaded file is not exactly malware. It’s a fake file
+designed to test if you’re properly connected to the cloud.
+____
+
+If you’re properly connected, you’ll see a warning Microsoft Defender
+Antivirus notification.
+
+If you’re using Microsoft Edge, you’ll also see a notification message:
+
+:::image type=``content'' source=``../../media/wdav-bafs-edge.png''
+alt-text=``The notification that malware was found in Edge''
+lightbox=``../../media/wdav-bafs-edge.png'':::
+
+A similar message occurs if you’re using Internet Explorer:
+
+:::image type=``content'' source=``../../media/wdav-bafs-ie.png''
+alt-text=``The Microsoft Defender Antivirus notification that malware
+was found'' lightbox=``../../media/wdav-bafs-ie.png'':::
+
+===== View the fake malware detection in your Windows Security app
+
+[arabic]
+. On your task bar, select the Shield icon, open the *Windows Security*
+app. Or, search the *Start* for _Security_.
+. Select *Virus & threat protection*, and then select *Protection
+history*.
+. Under the *Quarantined threats* section, select *See full history* to
+see the detected fake malware.
++
+____
+[!NOTE] Versions of Windows 10 before version 1703 have a different user
+interface. See
+link:microsoft-defender-security-center-antivirus.md[Microsoft Defender
+Antivirus in the Windows Security app].
+____
++
+The Windows event log will also show
+link:troubleshoot-microsoft-defender-antivirus.md[Windows Defender
+client event ID 1116].
++
+____
+[!TIP] If you’re looking for Antivirus related information for other
+platforms, see:
+
+* link:mac-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on macOS]
+* link:microsoft-defender-endpoint-mac.md[Microsoft Defender for
+Endpoint on Mac]
+* link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune]
+* link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux]
+* link:microsoft-defender-endpoint-linux.md[Microsoft Defender for
+Endpoint on Linux]
+* link:android-configure.md[Configure Defender for Endpoint on Android
+features]
+* link:ios-configure-features.md[Configure Microsoft Defender for
+Endpoint on iOS features]
+____
+
+=== See also
+
+* link:configure-proxy-internet.md[Configure device proxy and Internet
+connectivity settings for Microsoft Defender for Endpoint]
+* link:use-group-policy-microsoft-defender-antivirus.md[Use Group Policy
+settings to configure and manage Microsoft Defender Antivirus]
+* https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006[Important
+changes to Microsoft Active Protection Services endpoint]

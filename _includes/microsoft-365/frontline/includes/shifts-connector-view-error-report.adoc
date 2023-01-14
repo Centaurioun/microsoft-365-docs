@@ -1,0 +1,26 @@
+= 
+LanaChin
+
+You can run a report that shows error details for a connection. The
+report lists team and user mappings that succeeded and failed. It also
+provides information about any issues related to the accounts associated
+with the connection.
+
+[arabic]
+. link:#set-up-your-environment[Set up your environment] (if you haven’t
+already).
+. Get a list of error reports for a connection.
++
+[source,powershell]
+----
+Get-CsTeamsShiftsConnectionErrorReport -ConnectorInstanceId <ConnectorInstanceId>
+----
+. To view a specific error report, run the following command:
++
+[source,powershell]
+----
+Get-CsTeamsShiftsConnectionErrorReport -ErrorReportId <ErrorReportId>
+----
+
+To learn more, see
+link:/powershell/module/teams/get-csteamsshiftsconnectionerrorreport[Get-CsTeamsShiftsConnectionErrorReport].

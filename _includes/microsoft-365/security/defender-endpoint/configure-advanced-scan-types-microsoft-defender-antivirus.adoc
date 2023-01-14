@@ -1,0 +1,182 @@
+= 
+denisebmsft
+:keywords: advanced scans, scanning, email, archive, zip, rar, archive,
+reparse scanning
+
+== Configure Microsoft Defender Antivirus scanning options
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] - Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+=== Use Microsoft Intune to configure scanning options
+
+For more information, see
+link:/intune/device-restrictions-configure[Configure device restriction
+settings in Microsoft Intune] and
+link:/intune/device-restrictions-windows-10#microsoft-defender-antivirus[Microsoft
+Defender Antivirus device restriction settings for Windows 10 in
+Intune].
+
+=== Use Microsoft Endpoint Manager to configure scanning options
+
+For details on configuring Microsoft Endpoint Manager (current branch),
+see
+link:/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings[How
+to create and deploy antimalware policies: Scan settings].
+
+=== Use Group Policy to configure scanning options
+
+____
+{empty}[!TIP] Download the Group Policy Reference Spreadsheet, which
+lists the policy settings for computer and user configurations that are
+included in the Administrative template files delivered with for
+Windows. You can configure refer to the spreadsheet when you edit Group
+Policy Objects. Here are the most recent versions: -
+https://www.microsoft.com/download/details.aspx?id=101451[Group Policy
+Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)] -
+https://www.microsoft.com/download/details.aspx?id=103506[Group Policy
+Settings Reference Spreadsheet for Windows 11 October 2021 Update
+(21H2)]
+____
+
+[arabic]
+. On your Group Policy management computer, open the
+link:/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)[Group
+Policy Management Console].
+. Right-click the Group Policy Object you want to configure, and then
+select *Edit*.
+. In the *Group Policy Management Editor* go to *Computer configuration*
+and click *Administrative templates*.
+. Expand the tree to *Windows components* > *Microsoft Defender
+Antivirus*, and then select a location (refer to
+link:#settings-and-locations[Settings and locations] in this article).
+. Edit the policy object.
+. Click *OK*, and repeat for any other settings.
+
+==== Settings and locations
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Policy item and location |Default setting (if not configured)
+|PowerShell `Set-MpPreference` parameter or WMI property for
+`MSFT_MpPreference` class
+|Email scanning |Disabled |`-DisableEmailScanning`
+
+|Script scanning |Enabled |This policy setting allows you to configure
+script scanning. If you enable or do not configure this setting, script
+scanning will be enabled.
+
+|Scan link:/windows/win32/fileio/reparse-points[reparse points]
+|Disabled |Not available
+
+|Scan mapped network drives |Disabled
+|`-DisableScanningMappedNetworkDrivesForFullScan`
+
+|Scan archive files (such as .zip or .rar files). |Enabled
+|`-DisableArchiveScanning`
+
+|Scan files on the network |Disabled |`-DisableScanningNetworkFiles`
+
+|Scan packed executables |Enabled |Not available
+
+|Scan removable drives during full scans only |Disabled
+|`-DisableRemovableDriveScanning`
+
+|Specify the level of subfolders within an archive folder to scan |0
+|Not available
+
+|Specify the maximum CPU load (as a percentage) during a scan. |50
+|`-ScanAvgCPULoadFactor`
+
+|Specify the maximum size (in kilobytes) of archive files that should be
+scanned. |No limit |Not available
+
+|Configure low CPU priority for scheduled scans |Disabled |Not available
+|===
+
+____
+[!NOTE] If real-time protection is turned on, files are scanned before
+they are accessed and executed. The scanning scope includes all files,
+including files on mounted removable media, such as USB drives. If the
+device performing the scan has real-time protection or on-access
+protection turned on, the scan will also include network shares.
+____
+
+=== Use PowerShell to configure scanning options
+
+For more information on how to use PowerShell with Microsoft Defender
+Antivirus, see
+
+* link:use-powershell-cmdlets-microsoft-defender-antivirus.md[Manage
+Microsoft Defender Antivirus with PowerShell cmdlets]
+* link:/powershell/module/defender/[Microsoft Defender Antivirus
+cmdlets]
+
+=== Use WMI to configure scanning options
+
+See
+link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[Windows
+Defender WMIv2 APIs].
+
+=== Email scanning limitations
+
+Email scanning enables scanning of email files used by Outlook and other
+mail clients during on-demand and scheduled scans. Embedded objects
+within email (such as attachments and archived files) are also scanned.
+The following file format types can be scanned and remediated:
+
+* DBX
+* MBX
+* MIME
+
+PST files used by Outlook 2003 or older (where the archive type is set
+to non-unicode) are also scanned, but Microsoft Defender Antivirus
+cannot remediate threats that are detected inside PST files.
+
+If Microsoft Defender Antivirus detects a threat inside an email
+message, it will show you the following information to assist you in
+identifying the compromised email, so you can remediate the threat
+manually:
+
+* Email subject
+* Attachment name
+
+=== Scanning mapped network drives
+
+On any OS, only the network drives that are mapped at system level, are
+scanned. User-level mapped network drives aren’t scanned. User-level
+mapped network drives are those that a user maps in their session
+manually and using their own credentials.
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____
+
+=== See also
+
+* link:customize-run-review-remediate-scans-microsoft-defender-antivirus.md[Customize&#44;
+initiate&#44; and review the results of Microsoft Defender Antivirus scans
+and remediation]
+* link:run-scan-microsoft-defender-antivirus.md[Configure and run
+on-demand Microsoft Defender Antivirus scans]
+* link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled Microsoft Defender Antivirus scans]
+* link:microsoft-defender-antivirus-in-windows-10.md[Microsoft Defender
+Antivirus in Windows 10]

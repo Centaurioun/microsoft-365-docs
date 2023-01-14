@@ -1,0 +1,59 @@
+= 
+denisebmsft
+
+== How to get Microsoft Defender for Business servers
+
+Microsoft Defender for Business servers is an add-on to Defender for
+Business. This new offering enables you to secure your server operating
+systems with the same protection that you get for client devices in
+Defender for Business. This article describes how to get Microsoft
+Defender for Business servers and includes next steps and additional
+information.
+
+____
+[!IMPORTANT] - In order to add on Microsoft Defender for Business
+servers, you’ll need at least one paid license for
+link:../../business-premium/index.md[Microsoft 365 Business Premium] or
+link:mdb-overview.md[Defender for Business] (standalone). - You’ll need
+one Microsoft Defender for Business servers license per server instance,
+although you don’t assign it to any devices or users. - There’s a limit
+of 60 Microsoft Defender for Business servers licenses per subscription
+to Microsoft 365 Business Premium or Defender for Business. -
+Alternately, you could use
+link:/azure/defender-for-cloud/defender-for-servers-introduction[Microsoft
+Defender for Servers] to onboard your servers; however, your Defender
+for Business experience could change when you add an enterprise plan,
+such as Defender for Servers Plan 1 or Plan 2. To learn more, see
+link:mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions[What
+happens if I have a mix of Microsoft endpoint security subscriptions]?
+____
+
+=== Get Microsoft Defender for Business servers
+
+Use one of the following procedures to get Microsoft Defender for
+Business servers:
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Scenario |Procedure
+|You currently have link:mdb-overview.md[Defender for Business] or
+link:../../business-premium/index.md[Microsoft 365 Business Premium],
+and you want to add on Microsoft Defender for Business servers. |
+
+|You do not have either Defender for Business or Microsoft 365 Business
+Premium yet. |
+
+|You previously onboarded devices, such as servers, and now you want to
+remove (offboard) some of those devices. |See
+link:mdb-offboard-devices.md[Offboard a device from Microsoft Defender
+for Business].
+|===
+
+=== Next steps
+
+* link:mdb-onboard-devices.md[Onboard devices to Microsoft Defender for
+Business].
+* link:mdb-manage-devices.md[Manage devices in Microsoft Defender for
+Business].
+* link:mdb-offboard-devices.md[Offboard a device from Microsoft Defender
+for Business].

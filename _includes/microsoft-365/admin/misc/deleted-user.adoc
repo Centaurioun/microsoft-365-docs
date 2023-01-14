@@ -1,0 +1,70 @@
+= 
+kwekua
+
+== Quick help: Deleted user
+
+You may have to delete a link:../add-users/add-users.md[user] in your
+organization. You usually delete a user when the person leaves your
+organization.
+
+=== Delete a user
+
+::: moniker range=``o365-worldwide''
+
+[arabic]
+. In the admin center, go to the *Users* > Active users page.
+
+::: moniker-end
+
+::: moniker range=``o365-21vianet''
+
+[arabic]
+. In the admin center, go to the *Users* > Active users page.
+
+::: moniker-end
+
+[arabic, start=2]
+. Select a user, and then above the list of users select the three dots
+(more actions), and then choose *Delete user*.
+. In the deletion confirmation pane, select *Delete user*.
+link:../add-users/delete-a-user.md[Read full article.]
+
+=== Restore a user
+
+You can restore users by searching for *deleted* on the home page and
+choosing *Deleted users* in the results, or by going to the *Deleted
+users* page from the left navigation and choosing the user you want to
+restore. link:../add-users/delete-a-user.md[Read full article].
+
+=== What are deleted users?
+
+A deleted link:../add-users/add-users.md[user] is a work or school
+account that you’re deleting from your organization.
+
+=== Does deleting a user free up their Microsoft 365 license?
+
+Yes, deleting the user frees up the Microsoft 365 license assigned to
+that user. You can then assign that license to another user.
+link:../../commerce/licenses/buy-licenses.md[Read full article].
+
+=== I had a deleted user listed in Deleted users, and then it disappeared. What happened?
+
+The deleted user is kept in your organization for 30 days. After 30
+days, we permanently remove the user from your organization.
+
+=== How long do I have if I want to restore a user?
+
+After you delete a user, you have 30 days to restore that user.
+
+=== Do I lose all the user’s data when I delete them?
+
+When you delete a user, you don’t lose their data. The user’s data is
+stored for 30 days. When you restore the user within 30 days, the user
+all associated data is restored.
+
+=== How do I restore a user?
+
+You can restore users by searching for *deleted* on the home page and
+choosing *Deleted users* in the results, or by going to the *Deleted
+users* page from the left navigation and choosing the user you want to
+restore. link:../add-users/delete-a-user.md[Read full article].

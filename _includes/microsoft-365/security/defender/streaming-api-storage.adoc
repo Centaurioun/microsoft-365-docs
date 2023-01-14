@@ -1,0 +1,141 @@
+= 
+mjcaparas
+:keywords: raw data export, streaming API, API, Event Hubs, Azure
+storage, storage account, Advanced Hunting, raw data sharing
+
+== Configure Microsoft 365 Defender to stream Advanced Hunting events to your Storage account
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+[!NOTE] *Try our new APIs using MS Graph security API*. Find out more
+at: link:/graph/api/resources/security-api-overview[Use the Microsoft
+Graph security API - Microsoft Graph beta | Microsoft Learn].
+____
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+=== Before you begin
+
+[arabic]
+. Create a link:/azure/storage/common/storage-account-overview[Storage
+account] in your tenant.
+. Log in to your https://ms.portal.azure.com/[Azure tenant], go to
+*Subscriptions > Your subscription > Resource Providers > Register to
+Microsoft.Insights*.
+
+==== Add contributor permissions
+
+Once the Storage account is created you will need to:
+
+[arabic]
+. Define the user who will be logging into Microsoft 365 Defender as
+Contributor.
++
+Go to *Storage Account > Access control (IAM) > Add* and verify under
+*Role assignments*.
+
+=== Enable raw data streaming
+
+[arabic]
+. Log in to Microsoft 365 Defender as a *_Global Administrator_* or
+*_Security Administrator_*.
+. Go to *Settings* > *Microsoft 365 Defender* > *Streaming API*. To go
+directly to the *Streaming API* page, use
+https://security.microsoft.com/settings/mtp_settings/raw_data_export.
+. Click *Add*.
+. In the *Add new Streaming API settings* flyout that appears, configure
+the following settings:
+[arabic]
+.. *Name*: Choose a name for your new settings.
+.. Select *Forward events to Azure Storage*.
+. To display the Azure Resource Manager resource ID for a storage
+account in the Azure portal, follow these steps:
+[arabic]
+.. Navigate to your storage account in the Azure portal.
+.. On the *Overview* page, in the *Essentials* section, select the *JSON
+View* link.
+.. The resource ID for the storage account is displayed at the top of
+the page, copy the text under *Storage Account Resource ID*.
+.. Back on the *Add new Streaming API settings* flyout, choose the
+*Event types* that you want to stream.
++
+When you’re finished, click *Submit*.
+
+=== The schema of the events in the Storage account
+
+* A blob container will be created for each event type:
++
+:::image type=``content''
+source=``../defender-endpoint/images/storage-account-event-schema.png''
+alt-text=``Example of a blob container''
+lightbox=``../defender-endpoint/images/storage-account-event-schema.png'':::
+* The schema of each row in a blob is the following JSON:
++
+[source,json]
+----
+{
+        "time": "<The time Microsoft 365 Defender received the event>"
+        "tenantId": "<Your tenant ID>"
+        "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+        "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+}
+----
+* Each blob contains multiple rows.
+* Each row contains the event name, the time Defender for Endpoint
+received the event, the tenant it belongs (you will only get events from
+your tenant), and the event in JSON format in a property called
+``properties''.
+* For more information about the schema of Microsoft 365 Defender
+events, see link:../defender/advanced-hunting-overview.md[Advanced
+Hunting overview].
+
+=== Data types mapping
+
+In order to get the data types for our events properties do the
+following:
+
+[arabic]
+. Log in to Microsoft 365 Defender and go to *Hunting* > *Advanced
+hunting*. To go directly to the *Advanced hunting* page, use
+<security.microsoft.com/advanced-hunting>.
+. On the *Query* tab, run the following query to get the data types
+mapping for each event:
++
+[source,text]
+----
+{EventType}
+| getschema
+| project ColumnName, ColumnType
+----
+
+* Here is an example for Device Info event:
++
+:::image type=``content''
+source=``../defender-endpoint/images/machine-info-datatype-example.png''
+alt-text=``An example device info query''
+lightbox=``../defender-endpoint/images/machine-info-datatype-example.png'':::
+
+=== Monitoring created resources
+
+You can monitor the resources created by the streaming API using *Azure
+Monitor*. For more information, see
+link:/azure/azure-monitor/logs/logs-data-export?tabs=portal#monitor-destinations[Monitor
+destinations - Azure Monitor | Microsoft Docs].
+
+=== Related topics
+
+* link:/graph/api/resources/security-api-overview[Use the Microsoft
+Graph security API - Microsoft Graph beta | Microsoft Learn]
+* link:../defender/advanced-hunting-overview.md[Overview of Advanced
+Hunting]
+* link:streaming-api.md[Microsoft 365 Defender Streaming API]
+* link:streaming-api-storage.md[Stream Microsoft 365 Defender events to
+your Azure storage account]
+* link:/azure/storage/common/storage-account-overview[Azure Storage
+Account documentation]

@@ -1,0 +1,92 @@
+= 
+mjcaparas
+:keywords: api, apis, overview, incident, incidents, threat hunting,
+microsoft 365 defender
+
+== Overview of Microsoft 365 Defender APIs
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft 365 Defender
+
+____
+[!NOTE] *Try our new APIs using MS Graph security API*. Find out more
+at: link:/graph/api/resources/security-api-overview[Use the Microsoft
+Graph security API - Microsoft Graph beta | Microsoft Learn].
+____
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may
+be substantially modified before it’s commercially released. Microsoft
+makes no warranties, express or implied, with respect to the information
+provided here.
+____
+
+Microsoft 365 Defender is built on top of an integration-ready platform.
+
+Use the Microsoft 365 Defender APIs to automate workflows based on the
+shared incident and advanced hunting tables.
+
+* *link:api-incident.md[Combined incidents queue]* - Focus on what’s
+critical by grouping the full attack scope and all impacted assets
+together under the incident API.
+* *link:api-advanced-hunting.md[Cross-product threat hunting]* -
+Leverage your security team’s organizational knowledge to hunt for signs
+of compromise, by creating your own custom queries to sift over raw data
+collected across multiple protection products.
+* *link:streaming-api.md[Event streaming API]* - Ship real-time events
+and alerts in a single data stream as they occur.
+
+Along with these Microsoft 365 Defender-specific APIs, each of our other
+security products expose link:api-articles.md[additional APIs] to help
+you take advantage of their unique capabilities.
+
+____
+[!NOTE] The transition to the unified portal should not affect the
+PowerBi dashboards based on Microsoft Defender for Endpoint APIs. You
+can continue to work with the existing APIs regardless of the
+interactive portal transition.
+____
+
+Watch this short video to learn how you can use Microsoft 365 Defender
+to automate workflows and integrate apps. +
+> [!VIDEO
+https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M?rel=0]
+
+=== Learn more
+
+[width="100%",cols="100%",options="header",]
+|===
+|*Understand how to access the APIs*
+|[Use the Microsoft Graph security API - Microsoft Graph beta
+
+|link:api-terms.md[Learn about API quotas and licensing]
+
+|link:api-access.md[Access the Microsoft 365 Defender APIs]
+
+|*Build apps*
+
+|link:api-hello-world.md[Create a `Hello world' app]
+
+|link:api-create-app-user-context.md[Create an app to access Microsoft
+365 Defender APIs on behalf of a user]
+
+|link:api-create-app-web.md[Create an app to access Microsoft 365
+Defender without a user]
+
+|link:api-partner-access.md[Create an app with multi-tenant partner
+access to Microsoft 365 Defender APIs]
+
+|*Troubleshoot and maintain your apps*
+
+|link:api-error-codes.md[Understand API error codes]
+
+|link:/training/modules/manage-secrets-with-azure-key-vault/[Manage
+secrets in your apps with Azure Key Vault]
+
+|link:/azure/active-directory/develop/active-directory-v2-protocols-oauth-code[Implement
+OAuth 2.0 authorization for user sign in]
+|===

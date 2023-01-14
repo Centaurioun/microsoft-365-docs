@@ -1,0 +1,6 @@
+== Week of December 12, 2022
+
+[cols=",,",options="header",]
+|===
+|Published On |Topic title |Change
+|===

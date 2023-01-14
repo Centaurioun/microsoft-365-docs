@@ -1,0 +1,44 @@
+= 
+dansimp
+:keywords: microsoft, defender, Microsoft Defender for Endpoint, mac,
+installation, deploy, uninstallation, intune, jamfpro, macos, catalina,
+big sur, monterey, ventura, mde for mac
+
+== Log in to Jamf Pro
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink[Sign
+up for a free trial.]
+____
+
+[arabic]
+. Enter your credentials.
++
+:::image type=``content'' source=``images/jamf-pro-portal1.png''
+alt-text=``The Jamf Pro dashboard1''
+lightbox=``images/jamf-pro-portal1.png'':::
+. Select *Computers*.
++
+:::image type=``content'' source=``images/jamf-pro-dashboard.png''
+alt-text=``The Jamf Pro dashboard2''
+lightbox=``images/jamf-pro-dashboard.png'':::
+. You will see the settings that are available.
++
+:::image type=``content'' source=``images/jamfpro-settings.png''
+alt-text=``The Jamf Pro dashboard3''
+lightbox=``images/jamfpro-settings.png'':::
+
+=== Next step
+
+link:mac-jamfpro-device-groups.md[Setup the device groups in Jamf Pro]

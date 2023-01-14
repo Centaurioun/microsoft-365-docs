@@ -1,0 +1,139 @@
+= 
+denisebmsft
+:keywords: remediation, fix, remove, threats, quarantine, scan, restore
+
+== Configure remediation for Microsoft Defender Antivirus detections
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender
+for Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+When Microsoft Defender Antivirus runs a scan, it attempts to remediate
+or remove threats that are detected. You can configure how Microsoft
+Defender Antivirus should address certain threats, whether a restore
+point should be created before remediating, and when threats should be
+removed.
+
+This article describes how to configure these settings by using Group
+Policy, but you can also use
+link:/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings[Microsoft
+Endpoint Configuration Manager] and
+link:/intune/device-restrictions-configure[Microsoft Intune].
+
+You can also use the
+link:/powershell/module/defender/set-mppreference[`Set-MpPreference`
+PowerShell cmdlet] or
+link:/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal[`MSFT_MpPreference`
+WMI class] to configure these settings.
+
+=== Configure remediation options
+
+[arabic]
+. On your Group Policy management computer, open the
+link:/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)[Group
+Policy Management Console], right-click the Group Policy Object you want
+to configure and click *Edit*.
+. In the *Group Policy Management Editor* go to *Computer configuration*
+and select *Administrative templates*.
+. Expand the tree to *Windows components* > *Microsoft Defender
+Antivirus*.
+. Using the table below, select a location, and then edit the policy as
+needed.
+. Select *OK*.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Location |Setting |Description |Default setting (if not configured)
+|Scan |Create a system restore point |A system restore point will be
+created each day before cleaning or scanning is attempted |Disabled
+
+|Scan |Turn on removal of items from scan history folder |Specify how
+many days items should be kept in the scan history |30 days
+
+|Root |Turn off routine remediation |You can specify whether Microsoft
+Defender Antivirus automatically remediates threats, or if it should ask
+the endpoint user what to do. |Disabled (threats are remediated
+automatically)
+
+|Quarantine |Configure removal of items from Quarantine folder |Specify
+how many days items should be kept in quarantine before being removed
+|90 days
+
+|Threats |Specify threat alert levels at which default action should not
+be taken when detected |Every threat that is detected by Microsoft
+Defender Antivirus is assigned a threat level (low, medium, high, or
+severe). You can use this setting to define how all threats for each of
+the threat levels should be remediated (quarantined, removed, or
+ignored) |Not applicable
+
+|Threats |Specify threats upon which default action should not be taken
+when detected |Specify how specific threats (using their threat ID)
+should be remediated. You can specify whether the specific threat should
+be quarantined, removed, or ignored |Not applicable
+|===
+
+____
+[!IMPORTANT] Microsoft Defender Antivirus detects and remediates files
+based on many factors. Sometimes, completing a remediation requires a
+reboot. Even if the detection is later determined to be a false
+positive, the reboot must be completed to ensure all additional
+remediation steps have been completed.
+
+If you are certain Microsoft Defender Antivirus quarantined a file based
+on a false positive, you can restore the file from quarantine after the
+device reboots. See
+link:restore-quarantined-files-microsoft-defender-antivirus.md[Restore
+quarantined files in Microsoft Defender Antivirus].
+
+To avoid this problem in the future, you can exclude files from the
+scans. See
+link:configure-exclusions-microsoft-defender-antivirus.md[Configure and
+validate exclusions for Microsoft Defender Antivirus scans].
+____
+
+Also see
+link:scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed[Configure
+remediation-required scheduled full Microsoft Defender Antivirus scans]
+for more remediation-related settings.
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____
+
+=== See also
+
+* link:defender-endpoint-antivirus-exclusions.md[Exclusions for
+Microsoft Defender for Endpoint and Microsoft Defender Antivirus]
+* link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+Microsoft Defender Antivirus scanning options]
+* link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled Microsoft Defender Antivirus scans]
+* link:run-scan-microsoft-defender-antivirus.md[Configure and run
+on-demand Microsoft Defender Antivirus scans]
+* link:configure-notifications-microsoft-defender-antivirus.md[Configure
+the notifications that appear on endpoints]
+* link:configure-end-user-interaction-microsoft-defender-antivirus.md[Configure
+end-user Microsoft Defender Antivirus interaction]
+* link:customize-run-review-remediate-scans-microsoft-defender-antivirus.md[Customize&#44;
+initiate&#44; and review the results of Microsoft Defender Antivirus scans
+and remediation]
+* link:microsoft-defender-antivirus-in-windows-10.md[Microsoft Defender
+Antivirus in Windows 10]

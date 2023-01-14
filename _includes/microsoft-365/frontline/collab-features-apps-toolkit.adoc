@@ -1,0 +1,71 @@
+= 
+daisyfell
+
+== Help your frontline workers use collaboration apps and features
+
+Now that your organization has begun using Microsoft 365 for frontline
+workers and Microsoft Teams, you’ll need to make sure your workforce is
+comfortable using the apps and features available to them.
+
+Use your link:flw-corp-comms.md[corporate communications strategy] to
+share these video resources to help your frontline team make the most
+out of the tools available to them.
+
+=== Tags in Microsoft Teams
+
+Tagging users and teams in posts and chat helps your frontline workers
+reach the right people faster by finding team members by attributes such
+as role, location, or project.
+
+https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885[End
+user training for posts and messages in Teams]
+https://go.microsoft.com/fwlink/?linkid=2202727[View the Tags in
+Microsoft Teams video on YouTube] > [!VIDEO
+https://www.microsoft.com/videoplayer/embed/RE54jBN]
+
+=== Walkie Talkie
+
+Walkie Talkie provides instant push-to-talk communication so your
+frontline workers can communicate easily and securely across locations.
+
+https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69[End
+user training for Walkie Talkie]
+https://go.microsoft.com/fwlink/?linkid=2202710[View the Walkie Talkie
+video on YouTube] > [!VIDEO
+https://www.microsoft.com/videoplayer/embed/RE546Fv]
+
+=== Approvals
+
+Approvals helps frontline workers get approvals for tasks, documents and
+more.
+
+https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams[End
+user training for Approvals]
+https://go.microsoft.com/fwlink/?linkid=2202800[View the Approvals video
+on YouTube] > [!VIDEO
+https://www.microsoft.com/videoplayer/embed/RE54mcl]
+
+=== Tasks
+
+Frontline workers can use Tasks to view, track and complete important
+tasks throughout the day.
+
+https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070[End
+user training for Tasks]
+https://go.microsoft.com/fwlink/?linkid=2202616[View the Tasks video on
+YouTube] > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE54m8E]
+
+=== Updates
+
+See how Updates helps frontline workers create, submit and review all
+updates in the flow of work.
+
+https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a[End
+user training for Updates]
+https://go.microsoft.com/fwlink/?linkid=2202831[View the Updates video
+on YouTube] > [!VIDEO
+https://www.microsoft.com/videoplayer/embed/RE5443c]
+
+=== Shifts
+
+link:shifts-toolkit.md[Learn how to help your employees use Shifts.]

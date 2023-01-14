@@ -1,0 +1,75 @@
+= 
+Tinacyt
+
+== Clone an existing package
+
+In this section, you’ll learn how to create a new package by duplicating
+your previously published package as a starting point. There are
+multiple entrances on Test Base portal for you to start the clone
+package journey.
+
+____
+[!IMPORTANT] To use the clone package function, you need to have at
+least one successfully uploaded package on Test Base.
+____
+
+=== Starting from the New package page
+
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/clonepackage01_guidance.png#lightbox[image:Media/clonepackage01_guidance.png[Clone
+guidance]]
+____
+
+[arabic]
+. On the *New package* page, you can select on the *Clone existing
+package*. Then select one package from the existing package list and
+click on *`Clone'*.
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/clonepackage02_clone_package.png#lightbox[image:Media/clonepackage02_clone_package.png[Clone
+existing package]]
+____
+. You’ll be directed to the New package creation steps with all
+information and configuration pre-populated as same as the package you
+cloned. The only information you must have to change is the *Package
+version* under the *Basic information* section.
++
+____
+[!NOTE] The combination of package name and version must be unique
+within your Test Base account.
+____
++
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/clonepackage03_basic_information.png#lightbox[image:Media/clonepackage03_basic_information.png[Package
+basic information]]
+____
+. You’re able to:
+* preview all pre-populated package setting information duplicating from
+the clone package.
+* make any changes from step 1 to step 4 (See Uploading pre-built zip
+package for more detailed instruction).
+* review and publish to Test Base.
+
+=== Starting from the Manage packages page
+
+On the *Manage packages* page, you can clone a package by selecting on
+the *`Clone'* icon under the Quick actions column.
+
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/clonepackage04_manage_packages.png#lightbox[image:Media/clonepackage04_manage_packages.png[Manage
+packages page]]
+____
+
+Or you can go to the *Package overview* page of the specific package
+you’ve selected from the *Manage packages* page and select on the *Clone
+package* icon in the top action menu.
+
+____
+{empty}[!div class=``mx-imgBorder'']
+link:Media/clonepackage05_overview.png#lightbox[image:Media/clonepackage05_overview.png[Clone
+from overview page]]
+____

@@ -1,0 +1,44 @@
+= 
+dansimp
+:keywords: microsoft, defender, Microsoft Defender for Endpoint, mac,
+installation, deploy, uninstallation, intune, jamfpro, macos, catalina,
+big sur, monterey, ventura, mde for mac
+
+== Deploying Microsoft Defender for Endpoint on macOS with Jamf Pro
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink[Sign
+up for a free trial.]
+____
+
+Learn how to deploy Microsoft Defender for Endpoint on macOS with Jamf
+Pro.
+
+____
+[!NOTE] If you are using macOS Catalina (10.15.4) or newer versions of
+macOS, see
+link:/microsoft-365/security/defender-endpoint/mac-sysext-policies[New
+configuration profiles for macOS Catalina and newer versions of macOS].
+____
+
+This is a multi-step process. You’ll need to complete all of the
+following steps:
+
+* link:mac-install-jamfpro-login.md[Login to the Jamf Portal]
+* link:mac-jamfpro-device-groups.md[Setup the Microsoft Defender for
+Endpoint on macOS device groups in Jamf Pro]
+* link:mac-jamfpro-policies.md[Setup the Microsoft Defender for Endpoint
+on macOS policies in Jamf Pro]
+* link:mac-jamfpro-enroll-devices.md[Enroll the Microsoft Defender for
+Endpoint on macOS devices into Jamf Pro]

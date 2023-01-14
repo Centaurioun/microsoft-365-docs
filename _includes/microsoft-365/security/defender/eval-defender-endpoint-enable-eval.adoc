@@ -1,0 +1,131 @@
+= 
+mjcaparas
+
+== Enable Microsoft Defender for Endpoint evaluation environment
+
+This article will guide you through the steps on setting up the
+evaluation environment for Microsoft Defender for Endpoint using
+production devices.
+
+____
+[!TIP] Microsoft Defender for Endpoint also comes with an in-product
+evaluation lab where you can add pre-configured devices and run
+simulations to evaluate the capabilities of the platform. The lab comes
+with a simplified set-up experience that can help quickly demonstrate
+the value of Microsoft Defender for Endpoint including guidance for many
+features like advanced hunting and threat analytics. For more
+information, see link:../defender-endpoint/evaluation-lab.md[Evaluate
+capabilities]. The main difference between the guidance provided in this
+article and the evaluation lab is the evaluation environment uses
+production devices whereas the evaluation lab uses non-production
+devices.
+____
+
+Use the following steps to enable the evaluation for Microsoft Defender
+for Endpoint.
+
+:::image type=``content''
+source=``../../media/defender/m365-defender-endpoint-eval-enable-steps.png''
+alt-text=``The steps to enable Microsoft Defender for Endpoint in the
+Microsoft Defender evaluation environment''
+lightbox=``../../media/defender/m365-defender-endpoint-eval-enable-steps.png'':::
+
+* link:#step-1-check-license-state[Step 1. Check license state]
+* link:#step-2-onboard-endpoints-using-any-of-the-supported-management-tools[Step
+2. Onboard endpoints]
+
+=== Step 1. Check license state
+
+You’ll first need to check the license state to verify that it was
+properly provisioned. You can do this through the admin center or
+through the *Microsoft Azure portal*.
+
+[arabic]
+. To view your licenses, go to the *Microsoft Azure portal* and navigate
+to the
+https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products[Microsoft
+Azure portal license section].
++
+:::image type=``content''
+source=``../../media/defender/atp-licensing-azure-portal.png''
+alt-text=``The Azure Licensing page in the Microsoft 365 Defender
+portal''
+lightbox=``../../media/defender/atp-licensing-azure-portal.png'':::
+. Alternately, in the admin center, navigate to *Billing* >
+*Subscriptions*.
++
+On the screen, you’ll see all the provisioned licenses and their current
+*Status*.
++
+:::image type=``content''
+source=``../../media/defender/atp-billing-subscriptions.png''
+alt-text=``The Billing licenses page in the Microsoft Azure portal''
+lightbox=``../../media/defender/atp-billing-subscriptions.png'':::
+
+=== Step 2. Onboard endpoints using any of the supported management tools
+
+After verifying that the license state has been provisioned properly,
+you can start onboarding devices to the service.
+
+For the purpose of evaluating Microsoft Defender for Endpoint, we
+recommend choosing a couple of Windows devices to conduct the evaluation
+on.
+
+You can choose to use any of the supported management tools, but Intune
+provides optimal integration. For more information, see
+link:/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune[Configure
+Microsoft Defender for Endpoint in Microsoft Intune].
+
+The link:../defender-endpoint/deployment-strategy.md[Plan deployment]
+topic outlines the general steps you need to take to deploy Defender for
+Endpoint.
+
+Watch this video for a quick overview of the onboarding process and
+learn about the available tools and methods.
+
+____
+{empty}[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
+____
+
+==== Onboarding tool options
+
+The following table lists the available tools based on the endpoint that
+you need to onboard.
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Endpoint |Tool options
+|*Windows* |-
+link:../defender-endpoint/configure-endpoints-script.md[Local script (up
+to 10 devices)]-
+link:../defender-endpoint/configure-endpoints-gp.md[Group Policy]-
+link:../defender-endpoint/configure-endpoints-mdm.md[Microsoft Endpoint
+Manager/ Mobile Device Manager]-
+link:../defender-endpoint/configure-endpoints-sccm.md[Microsoft Endpoint
+Configuration Manager]-
+link:../defender-endpoint/configure-endpoints-vdi.md[VDI scripts]
+
+|*macOS* |- link:../defender-endpoint/mac-install-manually.md[Local
+scripts]- link:../defender-endpoint/mac-install-with-intune.md[Microsoft
+Endpoint Manager]-
+link:../defender-endpoint/mac-install-with-jamf.md[JAMF Pro]-
+link:../defender-endpoint/mac-install-with-other-mdm.md[Mobile Device
+Management]
+
+|*iOS* |link:../defender-endpoint/ios-install.md[App-based]
+
+|*Android* |link:../defender-endpoint/android-intune.md[Microsoft
+Endpoint Manager]
+|===
+
+=== Next step
+
+link:eval-defender-endpoint-pilot.md[Setup the pilot for Microsoft
+Defender for Endpoint]
+
+Return to the overview for
+link:eval-defender-endpoint-overview.md[Evaluate Microsoft Defender for
+Endpoint]
+
+Return to the overview for link:eval-overview.md[Evaluate and pilot
+Microsoft 365 Defender]

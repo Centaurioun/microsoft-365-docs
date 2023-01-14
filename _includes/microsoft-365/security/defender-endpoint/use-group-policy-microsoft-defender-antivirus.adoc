@@ -1,0 +1,529 @@
+= 
+denisebmsft
+:keywords: group policy, GPO, configuration, settings
+
+== Use Group Policy settings to configure and manage Microsoft Defender Antivirus
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+* Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+You can use link:/windows/win32/srvnodes/group-policy[Group Policy] to
+configure and manage Microsoft Defender Antivirus on your endpoints.
+
+=== Configure Microsoft Defender Antivirus using Group Policy
+
+In general, you can use the following procedure to configure or change
+Microsoft Defender Antivirus group policy settings:
+
+[arabic]
+. On your Group Policy management machine, open the
+link:/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)[Group
+Policy Management Console], right-click the Group Policy Object (GPO)
+you want to configure and click *Edit*.
+. Using the *Group Policy Management Editor* go to *Computer
+configuration*.
+. Click *Administrative templates*.
+. Expand the tree to *Windows components* > *Microsoft Defender
+Antivirus*.
+. Expand the section (referred to as *Location* in the table in this
+topic) that contains the setting you want to configure, double-click the
+setting to open it, and make configuration changes.
+. link:/windows/win32/srvnodes/group-policy[Deploy the updated GPO as
+you normally do].
+
+=== Group Policy settings and resources
+
+The following table lists commonly used Group Policy settings that are
+available in Windows 10.
+
+____
+{empty}[!TIP] Download the Group Policy Reference Spreadsheet, which
+lists the policy settings for computer and user configurations that are
+included in the Administrative template files delivered with for
+Windows. You can configure refer to the spreadsheet when you edit Group
+Policy Objects. Here are the most recent versions: -
+https://www.microsoft.com/download/details.aspx?id=101451[Group Policy
+Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)] -
+https://www.microsoft.com/download/details.aspx?id=103506[Group Policy
+Settings Reference Spreadsheet for Windows 11 October 2021 Update
+(21H2)]
+____
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Location |Setting |Article
+|Client interface |Enable headless UI mode
+|link:prevent-end-user-interaction-microsoft-defender-antivirus.md[Prevent
+users from seeing or interacting with the Microsoft Defender Antivirus
+user interface]
+
+|Client interface |Display additional text to clients when they need to
+perform an action
+|link:configure-notifications-microsoft-defender-antivirus.md[Configure
+the notifications that appear on endpoints]
+
+|Client interface |Suppress all notifications
+|link:configure-notifications-microsoft-defender-antivirus.md[Configure
+the notifications that appear on endpoints]
+
+|Client interface |Suppresses reboot notifications
+|link:configure-notifications-microsoft-defender-antivirus.md[Configure
+the notifications that appear on endpoints]
+
+|Exclusions |Extension Exclusions
+|link:configure-exclusions-microsoft-defender-antivirus.md[Configure and
+validate exclusions in Microsoft Defender Antivirus scans]
+
+|Exclusions |Path Exclusions
+|link:configure-exclusions-microsoft-defender-antivirus.md[Configure and
+validate exclusions in Microsoft Defender Antivirus scans]
+
+|Exclusions |Process Exclusions
+|link:configure-exclusions-microsoft-defender-antivirus.md[Configure and
+validate exclusions in Microsoft Defender Antivirus scans]
+
+|Exclusions |Turn off Auto Exclusions
+|link:configure-exclusions-microsoft-defender-antivirus.md[Configure and
+validate exclusions in Microsoft Defender Antivirus scans]
+
+|MAPS |Configure the `Block at First Sight' feature
+|link:configure-block-at-first-sight-microsoft-defender-antivirus.md[Enable
+block at first sight]
+
+|MAPS |Join Microsoft MAPS
+|link:enable-cloud-protection-microsoft-defender-antivirus.md[Enable
+cloud-delivered protection]
+
+|MAPS |Send file samples when further analysis is required
+|link:enable-cloud-protection-microsoft-defender-antivirus.md[Enable
+cloud-delivered protection]
+
+|MAPS |Configure local setting override for reporting to Microsoft MAPS
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|MpEngine |Configure extended cloud check
+|link:configure-cloud-block-timeout-period-microsoft-defender-antivirus.md[Configure
+the cloud block timeout period]
+
+|MpEngine |Select cloud protection level
+|link:specify-cloud-protection-level-microsoft-defender-antivirus.md[Specify
+the cloud-delivered protection level]
+
+|Network inspection system |Specify additional definition sets for
+network traffic inspection |Not used (deprecated)
+
+|Network inspection system |Turn on definition retirement |Not used
+(deprecated)
+
+|Network inspection system |Turn on protocol recognition |Not used
+(deprecated)
+
+|Quarantine |Configure local setting override for the removal of items
+from Quarantine folder
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Quarantine |Configure removal of items from Quarantine folder
+|link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation for Microsoft Defender Antivirus scans]
+
+|Real-time protection |Configure local setting override for monitoring
+file and program activity on your computer
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Real-time protection |Configure local setting override for monitoring
+for incoming and outgoing file activity
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Real-time protection |Configure local setting override for scanning all
+downloaded files and attachments
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Real-time protection |Configure local setting override for turn on
+behavior monitoring
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Real-time protection |Configure local setting override to turn on
+real-time protection
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Real-time protection |Define the maximum size of downloaded files and
+attachments to be scanned
+|link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable
+and configure Microsoft Defender Antivirus always-on protection and
+monitoring]
+
+|Real-time protection |Monitor file and program activity on your
+computer
+|link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable
+and configure Microsoft Defender Antivirus always-on protection and
+monitoring]
+
+|Real-time protection |Scan all downloaded files and attachments
+|link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable
+and configure Microsoft Defender Antivirus always-on protection and
+monitoring]
+
+|Real-time protection |Turn off real-time protection
+|link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable
+and configure Microsoft Defender Antivirus always-on protection and
+monitoring]
+
+|Real-time protection |Turn on behavior monitoring
+|link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable
+and configure Microsoft Defender Antivirus always-on protection and
+monitoring]
+
+|Real-time protection |Turn on process scanning whenever real-time
+protection is enabled
+|link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable
+and configure Microsoft Defender Antivirus always-on protection and
+monitoring]
+
+|Real-time protection |Turn on raw volume write notifications
+|link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable
+and configure Microsoft Defender Antivirus always-on protection and
+monitoring]
+
+|Real-time protection |Configure monitoring for incoming and outgoing
+file and program activity
+|link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable
+and configure Microsoft Defender Antivirus always-on protection and
+monitoring]
+
+|Remediation |Configure local setting override for the time of day to
+run a scheduled full scan to complete remediation
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Remediation |Specify the day of the week to run a scheduled full scan
+to complete remediation
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled Microsoft Defender Antivirus scans]
+
+|Remediation |Specify the time of day to run a scheduled full scan to
+complete remediation
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled Microsoft Defender Antivirus scans]
+
+|Reporting |Turn off enhanced notifications
+|link:configure-notifications-microsoft-defender-antivirus.md[Configure
+the notifications that appear on endpoints]
+
+|Root |Turn off Microsoft Defender Antivirus |Not used. If you’re using
+or planning to use a non-Microsoft antivirus product, see
+link:microsoft-defender-antivirus-compatibility.md[Microsoft Defender
+Antivirus compatibility with other security products].
+
+|Root |Define addresses to bypass proxy server
+|link:configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus[Configure
+device proxy and Internet connectivity settings]
+
+|Root |Define proxy autoconfig (.pac) for connecting to the network
+|link:configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus[Configure
+device proxy and Internet connectivity settings]
+
+|Root |Define proxy server for connecting to the network
+|link:configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus[Configure
+device proxy and Internet connectivity settings]
+
+|Root |Configure local administrator merge behavior for lists
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Root |Allow antimalware service to start up with normal priority
+|link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation for Microsoft Defender Antivirus scans]
+
+|Root |Allow antimalware service to remain running always
+|link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation for Microsoft Defender Antivirus scans]
+
+|Root |Turn off routine remediation
+|link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation for Microsoft Defender Antivirus scans]
+
+|Root |Randomize scheduled task times
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled scans for Microsoft Defender Antivirus]
+
+|Scan |Allow users to pause scan
+|link:prevent-end-user-interaction-microsoft-defender-antivirus.md[Prevent
+users from seeing or interacting with the Microsoft Defender Antivirus
+user interface] (Not supported on Windows 10)
+
+|Scan |Check for the latest virus and spyware definitions before running
+a scheduled scan
+|link:manage-event-based-updates-microsoft-defender-antivirus.md[Manage
+event-based forced updates]
+
+|Scan |Define the number of days after which a catch-up scan is forced
+|link:manage-outdated-endpoints-microsoft-defender-antivirus.md[Manage
+updates for endpoints that are out of date]
+
+|Scan |Turn on catch up full scan
+|link:manage-outdated-endpoints-microsoft-defender-antivirus.md[Manage
+updates for endpoints that are out of date]
+
+|Scan |Turn on catch up quick scan
+|link:manage-outdated-endpoints-microsoft-defender-antivirus.md[Manage
+updates for endpoints that are out of date]
+
+|Scan |Configure local setting override for maximum percentage of CPU
+utilization
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Scan |Configure local setting override for schedule scan day
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Scan |Configure local setting override for scheduled quick scan time
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Scan |Configure local setting override for scheduled scan time
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Scan |Configure local setting override for the scan type to use for a
+scheduled scan
+|link:configure-local-policy-overrides-microsoft-defender-antivirus.md[Prevent
+or allow users to locally modify policy settings]
+
+|Scan |Create a system restore point
+|link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation for Microsoft Defender Antivirus scans]
+
+|Scan |Turn on removal of items from scan history folder
+|link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation for Microsoft Defender Antivirus scans]
+
+|Scan |Turn on heuristics
+|link:configure-real-time-protection-microsoft-defender-antivirus.md[Enable
+and configure Microsoft Defender Antivirus always-on protection and
+monitoring]
+
+|Scan |Turn on e-mail scanning
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Turn on reparse point scanning
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Run full scan on mapped network drives
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Scan archive files
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Scan network files
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Scan packed executables
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Scan scripts
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Scan removable drives
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Specify the maximum depth to scan archive files
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Specify the maximum percentage of CPU utilization during a scan
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Specify the maximum size of archive files to be scanned
+|link:configure-advanced-scan-types-microsoft-defender-antivirus.md[Configure
+scanning options in Microsoft Defender Antivirus]
+
+|Scan |Specify the day of the week to run a scheduled scan
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled scans for Microsoft Defender Antivirus]
+
+|Scan |Specify the interval to run quick scans per day
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled scans for Microsoft Defender Antivirus]
+
+|Scan |Specify the scan type to use for a scheduled scan
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled scans for Microsoft Defender Antivirus]
+
+|Scan |Specify the time for a daily quick scan
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled scans for Microsoft Defender Antivirus]
+
+|Scan |Specify the time of day to run a scheduled scan
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled scans for Microsoft Defender Antivirus]
+
+|Scan |Start the scheduled scan only when computer is on but not in use
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled scans for Microsoft Defender Antivirus]
+
+|Security intelligence updates |Allow security intelligence updates from
+Microsoft Update
+|link:manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md[Manage
+updates for mobile devices and virtual machines (VMs)]
+
+|Security intelligence updates |Allow security intelligence updates when
+running on battery power
+|link:manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md[Manage
+updates for mobile devices and virtual machines (VMs)]
+
+|Security intelligence updates |Allow notifications to disable
+definitions-based reports to Microsoft MAPS
+|link:manage-event-based-updates-microsoft-defender-antivirus.md[Manage
+event-based forced updates]
+
+|Security intelligence updates |Allow real-time security intelligence
+updates based on reports to Microsoft MAPS
+|link:manage-event-based-updates-microsoft-defender-antivirus.md[Manage
+event-based forced updates]
+
+|Security intelligence updates |Check for the latest virus and spyware
+definitions on startup
+|link:manage-event-based-updates-microsoft-defender-antivirus.md[Manage
+event-based forced updates]
+
+|Security intelligence updates |Define file shares for downloading
+security intelligence updates
+|link:manage-protection-updates-microsoft-defender-antivirus.md[Manage
+Microsoft Defender Antivirus protection and security intelligence
+updates]
+
+|Security intelligence updates |Define the number of days after which a
+catch up security intelligence update is required
+|link:manage-outdated-endpoints-microsoft-defender-antivirus.md[Manage
+updates for endpoints that are out of date]
+
+|Security intelligence updates |Define the number of days before spyware
+definitions are considered out of date
+|link:manage-outdated-endpoints-microsoft-defender-antivirus.md[Manage
+updates for endpoints that are out of date]
+
+|Security intelligence updates |Define the number of days before virus
+definitions are considered out of date
+|link:manage-outdated-endpoints-microsoft-defender-antivirus.md[Manage
+updates for endpoints that are out of date]
+
+|Security intelligence updates |Define the order of sources for
+downloading security intelligence updates
+|link:manage-protection-updates-microsoft-defender-antivirus.md[Manage
+Microsoft Defender Antivirus protection and security intelligence
+updates]
+
+|Security intelligence updates |Initiate security intelligence update on
+startup
+|link:manage-event-based-updates-microsoft-defender-antivirus.md[Manage
+event-based forced updates]
+
+|Security intelligence updates |Specify the day of the week to check for
+security intelligence updates
+|link:manage-protection-update-schedule-microsoft-defender-antivirus.md[Manage
+when protection updates should be downloaded and applied]
+
+|Security intelligence updates |Specify the interval to check for
+security intelligence updates
+|link:manage-protection-update-schedule-microsoft-defender-antivirus.md[Manage
+when protection updates should be downloaded and applied]
+
+|Security intelligence updates |Specify the time to check for security
+intelligence updates
+|link:manage-protection-update-schedule-microsoft-defender-antivirus.md[Manage
+when protection updates should be downloaded and applied]
+
+|Security intelligence updates |Turn on scan after Security intelligence
+update
+|link:scheduled-catch-up-scans-microsoft-defender-antivirus.md[Configure
+scheduled scans for Microsoft Defender Antivirus]
+
+|Threats |Specify threat alert levels at which default action should not
+be taken when detected
+|link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation for Microsoft Defender Antivirus scans]
+
+|Threats |Specify threats upon which default action should not be taken
+when detected
+|link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation for Microsoft Defender Antivirus scans]
+|===
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____
+
+____
+[!TIP] *Performance tip* Due to a variety of factors (examples listed
+below) Microsoft Defender Antivirus, like other antivirus software, can
+cause performance issues on endpoint devices. In some cases, you might
+need to tune the performance of Microsoft Defender Antivirus to
+alleviate those performance issues. Microsoft’s *Performance analyzer*
+is a PowerShell command-line tool that helps determine which files, file
+paths, processes, and file extensions might be causing performance
+issues; some examples are:
+
+* Top paths that impact scan time
+* Top files that impact scan time
+* Top processes that impact scan time
+* Top file extensions that impact scan time
+* Combinations – for example:
+** top files per extension
+** top paths per extension
+** top processes per path
+** top scans per file
+** top scans per file per process
+
+You can use the information gathered using Performance analyzer to
+better assess performance issues and apply remediation actions. See:
+link:tune-performance-defender-antivirus.md[Performance analyzer for
+Microsoft Defender Antivirus].
+____
+
+=== See also
+
+* link:tune-performance-defender-antivirus.md[Performance analyzer for
+Microsoft Defender Antivirus]
+* link:configuration-management-reference-microsoft-defender-antivirus.md[Reference
+topics for management and configuration tools]
+* link:microsoft-defender-antivirus-in-windows-10.md[Microsoft Defender
+Antivirus in Windows 10]

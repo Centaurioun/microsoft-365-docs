@@ -1,0 +1,123 @@
+= 
+denisebmsft
+:keywords: scan, command line, mpcmdrun, defender
+
+== Use PowerShell cmdlets to configure and manage Microsoft Defender Antivirus
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] - Microsoft Defender Antivirus
+
+*Platforms* - Windows
+
+You can use PowerShell to perform various functions in Windows Defender.
+Similar to the command prompt or command line, PowerShell is a
+task-based command-line shell and scripting language designed especially
+for system administration. You can read more about it in the
+link:/powershell/scripting/overview[PowerShell documentation].
+
+For a list of the cmdlets and their functions and available parameters,
+see the link:/powershell/module/defender[Defender Antivirus cmdlets]
+topic.
+
+PowerShell cmdlets are most useful in Windows Server environments that
+don’t rely on a graphical user interface (GUI) to configure software.
+
+____
+[!NOTE] PowerShell cmdlets should not be used as a replacement for a
+full network policy management infrastructure, such as
+link:/configmgr[Microsoft Endpoint Configuration Manager],
+link:use-group-policy-microsoft-defender-antivirus.md[Group Policy
+Management Console], or
+https://www.microsoft.com/download/101445[Microsoft Defender Antivirus
+Group Policy ADMX templates].
+____
+
+Changes made with PowerShell will affect local settings on the endpoint
+where the changes are deployed or made. This means that deployments of
+policy with Group Policy, Microsoft Endpoint Configuration Manager, or
+Microsoft Intune can overwrite changes made with PowerShell.
+
+You can
+link:configure-local-policy-overrides-microsoft-defender-antivirus.md[configure
+which settings can be overridden locally with local policy overrides].
+
+PowerShell is typically installed under the folder
+`%SystemRoot%\system32\WindowsPowerShell`.
+
+=== Use Microsoft Defender Antivirus PowerShell cmdlets
+
+[arabic]
+. In the Windows search bar, type *powershell*.
+. Select *Windows PowerShell* from the results to open the interface.
+. Enter the PowerShell command and any parameters.
+
+____
+[!NOTE] You may need to open PowerShell in administrator mode.
+Right-click the item in the Start menu, click *Run as administrator* and
+click *Yes* at the permissions prompt.
+____
+
+To open online help for any of the cmdlets type the following:
+
+[source,powershell]
+----
+Get-Help <cmdlet> -Online
+----
+
+Omit the `-online` parameter to get locally cached help.
+
+____
+{empty}[!TIP] If you’re looking for Antivirus related information for
+other platforms, see: - link:mac-preferences.md[Set preferences for
+Microsoft Defender for Endpoint on macOS] -
+link:microsoft-defender-endpoint-mac.md[Microsoft Defender for Endpoint
+on Mac] -
+link:/mem/intune/protect/antivirus-microsoft-defender-settings-macos[macOS
+Antivirus policy settings for Microsoft Defender Antivirus for Intune] -
+link:linux-preferences.md[Set preferences for Microsoft Defender for
+Endpoint on Linux] - link:microsoft-defender-endpoint-linux.md[Microsoft
+Defender for Endpoint on Linux] - link:android-configure.md[Configure
+Defender for Endpoint on Android features] -
+link:ios-configure-features.md[Configure Microsoft Defender for Endpoint
+on iOS features]
+____
+
+____
+[!TIP] *Performance tip* Due to a variety of factors (examples listed
+below) Microsoft Defender Antivirus, like other antivirus software, can
+cause performance issues on endpoint devices. In some cases, you might
+need to tune the performance of Microsoft Defender Antivirus to
+alleviate those performance issues. Microsoft’s *Performance analyzer*
+is a PowerShell command-line tool that helps determine which files, file
+paths, processes, and file extensions might be causing performance
+issues; some examples are:
+
+* Top paths that impact scan time
+* Top files that impact scan time
+* Top processes that impact scan time
+* Top file extensions that impact scan time
+* Combinations – for example:
+** top files per extension
+** top paths per extension
+** top processes per path
+** top scans per file
+** top scans per file per process
+
+You can use the information gathered using Performance analyzer to
+better assess performance issues and apply remediation actions. See:
+link:tune-performance-defender-antivirus.md[Performance analyzer for
+Microsoft Defender Antivirus].
+____
+
+=== Related topics
+
+* link:tune-performance-defender-antivirus.md[Performance analyzer for
+Microsoft Defender Antivirus]
+* link:configuration-management-reference-microsoft-defender-antivirus.md[Reference
+topics for management and configuration tools]
+* link:microsoft-defender-antivirus-in-windows-10.md[Microsoft Defender
+Antivirus in Windows 10]
+* link:/powershell/module/defender[Microsoft Defender Antivirus Cmdlets]

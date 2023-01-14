@@ -1,0 +1,243 @@
+= 
+denisebmsft
+
+== Compare security features in Microsoft 365 plans for small and medium-sized businesses
+
+____
+{empty}[!IMPORTANT] This article provides a high-level overview of
+features and capabilities that are included in Microsoft Defender for
+Business (as a standalone plan) and Microsoft 365 Business Premium
+(which includes Defender for Business). It’s not intended to be a
+service description or licensing contract document. For more detailed
+information, see the following resources: -
+link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft
+365 licensing guidance for security & compliance] -
+link:/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education[Microsoft
+365 Education]
+____
+
+Microsoft offers a wide variety of cloud solutions and services,
+including plans for small and medium-sized businesses. For example,
+link:../../business/microsoft-365-business-overview.md[Microsoft 365
+Business Premium] includes security and device-management capabilities,
+along with productivity features such as Office apps. This article
+describes the security features in Microsoft 365 Business Premium,
+Microsoft Defender for Business, and
+link:../defender-endpoint/microsoft-defender-endpoint.md[Microsoft
+Defender for Endpoint].
+
+*Use this article to*:
+
+* link:#compare-microsoft-defender-for-business-to-microsoft-365-business-premium[Compare
+Microsoft Defender for Business to Microsoft 365 Business Premium].
+* link:#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2[Compare
+Defender for Business (standalone) to Defender for Endpoint enterprise
+offerings].
+
+____
+[!TIP] Defender for Business is available as a standalone security
+solution for small and medium-sized businesses. Defender for Business is
+now included in Microsoft 365 Business Premium. If you already have
+Microsoft 365 Business Basic or Standard, consider either upgrading to
+Microsoft 365 Business Premium or adding Defender for Business to your
+current subscription to get more threat protection capabilities for your
+devices.
+____
+
+=== Compare Microsoft Defender for Business to Microsoft 365 Business Premium
+
+Defender for Business provides advanced security protection for your
+devices, with next-generation protection, endpoint detection and
+response, and threat & vulnerability management. Microsoft 365 Business
+Premium includes Defender for Business plus additional cybersecurity and
+productivity capabilities.
+
+:::image type=``content'' source=``media/mdb-m365bp-comparison.png''
+alt-text=``Diagram comparing Defender for Business to Microsoft 365
+Business Premium.'':::
+
+The following table provides more information about what’s included in
+each plan:
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Plan |Description
+|*link:mdb-overview.md[Defender for Business]* (standalone) |*Antivirus,
+antimalware, and ransomware protection for devices*
+
+|*link:../../business-premium/index.md[Microsoft 365 Business Premium]*
+|*Defender for Business capabilities, together with productivity and
+additional security capabilities*
+|===
+
+{empty}(a) Microsoft Intune is required to modify or customize attack
+surface reduction rules. Intune can be added on to the standalone
+version of Defender for Business. Intune is included in Microsoft 365
+Business Premium.
+
+{empty}(b) Microsoft Intune is required to onboard iOS and Android
+devices. See link:mdb-onboard-devices.md[Onboard devices to Microsoft
+Defender for Business].
+
+=== Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2
+
+Defender for Business brings the enterprise-grade capabilities of
+Defender for Endpoint to small and medium-sized businesses. The
+following table compares security features and capabilities in Defender
+for Business to the enterprise offerings, Microsoft Defender for
+Endpoint Plans 1 and 2.
+
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|Feature/capability |link:mdb-overview.md[Defender for
+Business](standalone)
+|link:../defender-endpoint/defender-endpoint-plan-1.md[Defender for
+Endpoint Plan 1](for enterprise customers)
+|link:../defender-endpoint/microsoft-defender-endpoint.md[Defender for
+Endpoint Plan 2](for enterprise customers)
+|link:../defender-endpoint/manage-atp-post-migration.md[Centralized
+management] [link:#fn1[1]] |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:mdb-simplified-configuration.md[Simplified client configuration]
+|:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: | |
+
+|link:../defender-endpoint/next-gen-threat-and-vuln-mgt.md[Microsoft
+Defender Vulnerability Management] |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: | |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:../defender-endpoint/overview-attack-surface-reduction.md[Attack
+surface reduction capabilities] [link:#fn2[2]] |:::image
+type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:../defender-endpoint/next-generation-protection.md[Next-generation
+protection] |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:../defender-endpoint/overview-endpoint-detection-response.md[Endpoint
+detection and response] [link:#fn3[3]] |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: | |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:../defender-endpoint/automated-investigations.md[Automated
+investigation and response] [link:#fn4[4]] |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: | |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:../defender-endpoint/advanced-hunting-overview.md[Threat hunting]
+and six months of data retention [link:#fn5[5]] | | |:::image
+type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:../defender-endpoint/threat-analytics.md[Threat analytics]
+[link:#fn6[6]] |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: | |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:../defender-endpoint/minimum-requirements.md[Cross-platform
+support] (Windows, Mac, iOS, and Android OS) [link:#fn7[7]] |:::image
+type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:../defender-endpoint/microsoft-threat-experts.md[Microsoft Threat
+Experts] | | |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|Partner APIs |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+
+|link:../../lighthouse/m365-lighthouse-overview.md[Microsoft 365
+Lighthouse integration] (For viewing security incidents across customer
+tenants) [link:#fn8[8]] |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included''::: |:::image type=``content''
+source=``../../media/d238e041-6854-4a78-9141-049224df0795.png''
+alt-text=``Included'':::
+|===
+
+{empty}(1) Onboard and manage devices in the Microsoft 365 Defender
+portal (https://security.microsoft.com) or by using Microsoft Intune,
+managed in the Microsoft Endpoint Manager admin center
+(https://endpoint.microsoft.com).
+
+{empty}(2) Intune is required to configure and manage
+link:../defender-endpoint/attack-surface-reduction.md[ASR rules].
+
+{empty}(3) Endpoint detection and response (EDR) capabilities in
+Defender for Business include behavior-based detection and the following
+manual response actions: - Run antivirus scan - Isolate device - Add an
+indicator to block or allow a file
+
+{empty}(4) In Defender for Business, automated investigation and
+response is turned on by default, tenant wide. Turning off automated
+investigation and response affects real-time protection. See
+link:mdb-configure-security-settings.md#review-settings-for-advanced-features[Review
+settings for advanced features].
+
+{empty}(5) There’s no timeline view in Defender for Business.
+
+{empty}(6) In Defender for Business, threat analytics are optimized for
+small and medium-sized businesses.
+
+{empty}(7) See link:mdb-onboard-devices.md[Onboard devices to Microsoft
+Defender for Business].
+
+{empty}(8) The ability to view incidents across tenants using Defender
+for Endpoint is new!
+
+____
+[!TIP] Also see
+link:../defender-endpoint/defender-endpoint-plan-1-2.md[Compare
+Microsoft endpoint security plans] and
+link:/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance[Microsoft
+365 licensing guidance for security & compliance].
+____
+
+=== Next steps
+
+* link:mdb-requirements.md[See the requirements for Microsoft Defender
+for Business]
+* link:get-defender-business.md[Get Microsoft Defender for Business]
+* link:mdb-setup-configuration.md[Learn how to set up and configure
+Microsoft Defender for Business]

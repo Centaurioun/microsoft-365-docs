@@ -1,0 +1,59 @@
+= 
+schmurky
+:keywords: guided mode, advanced hunting, threat hunting, cyber threat
+hunting, Microsoft 365 Defender, microsoft 365, m365, search, query,
+telemetry, custom detections, schema, kusto
+
+== Work with query results in guided mode
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender
+
+____
+[!IMPORTANT] Some information relates to prereleased product which may
+be substantially modified before it’s commercially released. Microsoft
+makes no warranties, express or implied, with respect to the information
+provided here.
+____
+
+In hunting using guided mode, the results of the query appear in the
+*Results* tab.
+
+link:../../media/guided-hunting/results-view.png#lightbox[image:../../media/guided-hunting/results-view.png[Screenshot
+of results tab]]
+
+You can work on the results further by exporting them to a CSV file by
+selecting *Export*. This downloads the CSV file for your use.
+
+You can view other information in the Results view: - Number of records
+in the results list (beside the Search button) - Duration of the query
+run time - Resource usage of the query
+
+=== View more columns
+
+A few standard columns are included in the results for easy viewing.
+
+To view more columns: 1. Select *Customize columns* in the upper
+right-hand portion of the results view.
+
+[arabic, start=2]
+. From here, select the columns to include in the results view and
+deselect columns to hide.
+
+link:../../media/guided-hunting/results-view-customize-columns-tb.png#lightbox[image:../../media/guided-hunting/results-view-customize-columns.png[Screenshot
+of list of columns you can add to the results view]]
+
+[arabic, start=3]
+. Select *Apply* to view results with the added columns. Use the scroll
+bars if necessary.
+
+=== See also
+
+* link:advanced-hunting-limits.md[Advanced hunting quotas and usage
+parameters]
+* link:advanced-hunting-query-builder-details.md#switch-to-advanced-mode-after-building-a-query[Switch
+to advanced mode]
+* link:advanced-hunting-query-builder-details.md[Refine your query in
+guided mode]

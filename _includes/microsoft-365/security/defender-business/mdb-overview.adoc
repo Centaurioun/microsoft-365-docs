@@ -1,0 +1,90 @@
+= 
+denisebmsft
+
+== What is Microsoft Defender for Business?
+
+Defender for Business is a new endpoint security solution that was
+designed especially for the small- and medium-sized business (up to 300
+employees). With this endpoint security solution, your company’s devices
+are better protected from ransomware, malware, phishing, and other
+threats.
+
+This article describes what’s included in Defender for Business, with
+links to learn more about these features and capabilities.
+
+=== Video: Enterprise-grade protection for small- and medium-sized businesses
+
+Watch the following video to learn more about Defender for Business:
+
+____
+{empty}[!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
+____
+
+=== What’s included with Defender for Business
+
+:::image type=``content'' source=``media/mdb-offering-overview.png''
+alt-text=``Defender for Business features and capabilities.'':::
+
+With Defender for Business, you can help protect the devices and data
+your business uses with:
+
+* *Enterprise-grade security*. Defender for Business brings powerful
+endpoint security capabilities from our industry-leading
+link:../defender-endpoint/microsoft-defender-endpoint.md[Microsoft
+Defender for Endpoint] solution and optimizes those capabilities for IT
+administrators to support small- and medium-sized businesses.
+* *An easy-to-use security solution*. Defender for Business offers
+streamlined experiences that guide you to action with recommendations
+and insights into the security of your endpoints. No specialized
+knowledge is required, because Defender for Business offers
+wizard-driven configuration and default security policies that are
+designed to help protect your company’s devices from day one.
+* *Flexibility for your environment*. Defender for Business can work
+with your business environment, whether you’re using Microsoft Intune or
+you’re brand new to the Microsoft Cloud. Defender for Business works
+with components that are built into Windows, and with apps for Mac, iOS,
+and Android devices.
+* *Integration with Microsoft 365 Lighthouse, RMM tools, and PSA
+software*. If you’re a Microsoft cloud solution provider (CSP) using
+link:../../lighthouse/m365-lighthouse-overview.md[Microsoft 365
+Lighthouse], you can view security incidents and alerts across your
+customers’ tenants (see link:mdb-lighthouse-integration.md[Microsoft 365
+Lighthouse and Defender for Business]). If you’re a Microsoft managed
+service provider (MSP), you can integrate Defender for Business with
+your remote monitoring and management (RMM) tools and professional
+service automation (PSA) software (see link:mdb-partners.md[Defender for
+Business and MSP resources]).
+
+=== How to use this guide
+
+*This guide is intended to*:
+
+* *Provide you with an overview of Defender for Business* so you know
+what’s included and how it works. Use this article as a starting point.
+** link:compare-mdb-m365-plans.md[Compare security features in Defender
+for Business to other plans].
+** link:get-defender-business.md[Find out how to get Defender for
+Business].
+* *Learn how to set up your threat protection capabilities*.
+** link:trial-playbook-defender-business.md[See the trial user guide:
+Defender for Business].
+** link:mdb-simplified-configuration.md[Learn about the simplified
+configuration process].
+** link:mdb-setup-configuration.md[See how to set up and configure
+Defender for Business].
+* *Help you get started using Defender for Business*, starting with the
+Microsoft 365 Defender portal.
+** link:mdb-get-started.md[Navigate the Microsoft 365 Defender portal].
+** link:mdb-tutorials.md[Try scenarios&#44; tutorials&#44; and simulations].
+* *Provide guidance on managing devices and security policies*.
+** link:mdb-manage-devices.md[Monitor or manage devices].
+** link:mdb-view-edit-policies.md[View or edit security policies].
+
+=== Next steps
+
+* https://aka.ms/MDB-GetStartedGuide[Try the interactive guide: Get
+started with Defender for Business]
+* link:mdb-simplified-configuration.md[Learn more about the simplified
+configuration process in Defender for Business]
+* link:get-defender-business.md[Find out how to get Defender for
+Business]

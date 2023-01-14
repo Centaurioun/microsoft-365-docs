@@ -1,0 +1,63 @@
+= 
+kelleyvice-msft
+
+== Resources to help you upgrade from Office 2007 servers and clients
+
+_This article applies to both Microsoft 365 Enterprise and Office 365
+Enterprise._
+
+If you’re using Office 2007 products and services, be aware that support
+for these applications has ended. Consider moving to the Microsoft
+cloud, starting with Microsoft 365. Use this article as a starting point
+to review your options and plan your upgrade.
+
+=== Office 2007 planning roadmaps
+
+Support has ended for Office 2007 products and services. The following
+roadmaps can help you plan your upgrade now.
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|*Planning content* |*Date support ended*
+|link:/DeployOffice/office-2007-end-support-roadmap[Office 2007 end of
+support roadmap] |October 10, 2017
+
+|link:exchange-2007-end-of-support.md[Exchange 2007 end of support
+roadmap] |April 11, 2017
+
+|link:sharepoint-2007-end-of-support.md[SharePoint Server 2007 end of
+support roadmap] |October 10, 2017
+
+|link:project-server-2007-end-of-support.md[Project Server 2007 end of
+support roadmap] |October 10, 2017
+
+|link:/SkypeForBusiness/plan-your-deployment/upgrade[Upgrade from Office
+Communications Server] |January 8, 2018
+
+|link:pps-2007-end-of-support.md[PerformancePoint Server 2007 end of
+support roadmap] |January 9, 2018
+|===
+
+After support ends for a Microsoft product, there are no more: - New
+security updates - New non-security updates - Free or paid assisted
+support options available (including custom support agreements) - New
+online technical content updates
+
+Whether you’re an enterprise organization or an individual home user,
+you have several options to consider.
+
+=== I’m a home user. What do I do?
+
+If you’re using Office 2007 products and applications at home, see
+link:plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do[this
+information].
+
+=== Related topics
+
+https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx[Video:
+What is Microsoft 365?]
+
+link:/lifecycle/[Microsoft Lifecycle Policy]
+
+link:plan-upgrade-previous-versions-office.md[Plan your upgrade from
+Office 2007 or Office 2010 servers and clients]

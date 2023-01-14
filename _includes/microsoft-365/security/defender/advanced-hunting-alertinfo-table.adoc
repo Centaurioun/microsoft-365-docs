@@ -1,0 +1,75 @@
+= 
+schmurky
+:keywords: advanced hunting, threat hunting, cyber threat hunting,
+Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry,
+schema reference, kusto, table, column, data type, description,
+AlertInfo, alert, severity, category, MITRE, ATT&CK, Microsoft Defender
+for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for
+Cloud Apps, and Microsoft Defender for Identity
+
+== AlertInfo
+
+{empty}[!INCLUDE link:../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* - Microsoft 365 Defender
+
+=== Get access
+
+To use advanced hunting or other
+link:microsoft-365-defender.md[Microsoft 365 Defender] capabilities, you
+need an appropriate role in Azure Active Directory.
+link:custom-roles.md[Read about required roles and permissions for
+advanced hunting].
+
+Also, your access to endpoint data is determined by role-based access
+control (RBAC) settings in Microsoft Defender for Endpoint.
+link:m365d-permissions.md[Read about managing access to Microsoft 365
+Defender].
+
+=== AlertInfo
+
+The `AlertInfo` table in the link:advanced-hunting-overview.md[advanced
+hunting] schema contains information about alerts from Microsoft
+Defender for Endpoint, Microsoft Defender for Office 365, Microsoft
+Defender for Cloud Apps, and Microsoft Defender for Identity. Use this
+reference to construct queries that return information from this table.
+
+For information on other tables in the advanced hunting schema,
+link:advanced-hunting-schema-tables.md[see the advanced hunting
+reference].
+
+[width="100%",cols="36%,29%,35%",options="header",]
+|===
+|Column name |Data type |Description
+|`Timestamp` |`datetime` |Date and time when the event was recorded
+
+|`AlertId` |`string` |Unique identifier for the alert
+
+|`Title` |`string` |Title of the alert
+
+|`Category` |`string` |Type of threat indicator or breach activity
+identified by the alert
+
+|`Severity` |`string` |Indicates the potential impact (high, medium, or
+low) of the threat indicator or breach activity identified by the alert
+
+|`ServiceSource` |`string` |Product or service that provided the alert
+information
+
+|`DetectionSource` |`string` |Detection technology or sensor that
+identified the notable component or activity
+
+|`AttackTechniques` |`string` |MITRE ATT&CK techniques associated with
+the activity that triggered the alert
+|===
+
+=== Related topics
+
+* link:advanced-hunting-overview.md[Advanced hunting overview]
+* link:advanced-hunting-query-language.md[Learn the query language]
+* link:advanced-hunting-shared-queries.md[Use shared queries]
+* link:advanced-hunting-query-emails-devices.md[Hunt across devices&#44;
+emails&#44; apps&#44; and identities]
+* link:advanced-hunting-schema-tables.md[Understand the schema]
+* link:advanced-hunting-best-practices.md[Apply query best practices]

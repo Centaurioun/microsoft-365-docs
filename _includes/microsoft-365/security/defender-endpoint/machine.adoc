@@ -1,0 +1,147 @@
+= 
+mjcaparas
+:keywords: apis, supported apis, get, machines
+
+== Machine resource type
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+{empty}[!includelink:../../includes/microsoft-defender-api-usgov.md[Microsoft
+Defender for Endpoint API URIs for US Government]]
+
+{empty}[!includelink:../../includes/improve-request-performance.md[Improve
+request performance]]
+
+{empty}[!includelink:../../includes/prerelease.md[Prerelease
+information]]
+
+=== Methods
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Method |Return Type |Description
+|link:get-machines.md[List machines] |link:machine.md[machine]
+collection |List set of link:machine.md[machine] entities in the org.
+
+|link:get-machine-by-id.md[Get machine] |link:machine.md[machine] |Get a
+link:machine.md[machine] by its identity.
+
+|link:get-machine-log-on-users.md[Get logged on users]
+|link:user.md[user] collection |Get the set of link:user.md[User] that
+logged on to the link:machine.md[machine].
+
+|link:get-machine-related-alerts.md[Get related alerts]
+|link:alerts.md[alert] collection |Get the set of link:alerts.md[alert]
+entities that were raised on the link:machine.md[machine].
+
+|link:get-installed-software.md[Get installed software]
+|link:software.md[software] collection |Retrieves a collection of
+installed software related to a given machine ID.
+
+|link:get-discovered-vulnerabilities.md[Get discovered vulnerabilities]
+|link:vulnerability.md[vulnerability] collection |Retrieves a collection
+of discovered vulnerabilities related to a given machine ID.
+
+|link:get-security-recommendations.md[Get security recommendations]
+|link:recommendation.md[recommendation] collection |Retrieves a
+collection of security recommendations related to a given machine ID.
+
+|link:add-or-remove-machine-tags.md[Add or Remove machine tags]
+|link:machine.md[machine] |Add or Remove tag to a specific machine.
+
+|link:find-machines-by-ip.md[Find machines by IP]
+|link:machine.md[machine] collection |Find machines seen with IP.
+
+|link:find-machines-by-tag.md[Find machines by tag]
+|link:machine.md[machine] collection |Find machines by
+link:machine-tags.md[Tag].
+
+|link:get-missing-kbs-machine.md[Get missing KBs] |KB collection |Get a
+list of missing KBs associated with the machine ID
+
+|link:set-device-value.md[Set device value] |link:machine.md[machine]
+collection |Set the link:tvm-assign-device-value.md[value of a device].
+
+|link:update-machine-method.md[Update machine] |link:machine.md[machine]
+collection |Get the update status of a machine.
+|===
+
+=== Properties
+
+[width="100%",cols="34%,33%,33%",options="header",]
+|===
+|Property |Type |Description
+|id |String |link:machine.md[machine] identity.
+
+|computerDnsName |String |link:machine.md[machine] fully qualified name.
+
+|firstSeen |DateTimeOffset |First date and time where the
+link:machine.md[machine] was observed by Microsoft Defender for
+Endpoint.
+
+|lastSeen |DateTimeOffset |Time and date of the last received full
+device report. A device typically sends a full report every 24 hours.
+
+|osPlatform |String |Operating system platform.
+
+|onboardingstatus |String |Status of machine onboarding. Possible values
+are: ``onboarded'', ``CanBeOnboarded'', ``Unsupported'', and
+``InsufficientInfo''.
+
+|osProcessor |String |Operating system processor. Use osArchitecture
+property instead.
+
+|version |String |Operating system Version.
+
+|osBuild |Nullable long |Operating system build number.
+
+|lastIpAddress |String |Last IP on local NIC on the
+link:machine.md[machine].
+
+|lastExternalIpAddress |String |Last IP through which the
+link:machine.md[machine] accessed the internet.
+
+|healthStatus |Enum |link:machine.md[machine] health status. Possible
+values are: ``Active'', ``Inactive'', ``ImpairedCommunication'',
+``NoSensorData'', ``NoSensorDataImpairedCommunication'' and ``Unknown''.
+
+|rbacGroupName |String |Machine group Name.
+
+|rbacGroupId |String |Machine group ID.
+
+|riskScore |Nullable Enum |Risk score as evaluated by Microsoft Defender
+for Endpoint. Possible values are: `None', `Informational', `Low',
+`Medium' and `High'.
+
+|aadDeviceId |Nullable representation Guid |AAD Device ID (when
+link:machine.md[machine] is AAD Joined).
+
+|machineTags |String collection |Set of link:machine.md[machine] tags.
+
+|exposureLevel |Nullable Enum |Exposure level as evaluated by Microsoft
+Defender for Endpoint. Possible values are: `None', `Low', `Medium' and
+`High'.
+
+|deviceValue |Nullable Enum |The link:tvm-assign-device-value.md[value
+of the device]. Possible values are: `Normal', `Low' and `High'.
+
+|ipAddresses |IpAddress collection |Set of *_IpAddress_* objects. See
+link:get-machines.md[Get machines API].
+
+|osArchitecture |String |Operating system architecture. Possible values
+are: ``32-bit'', ``64-bit''. Use this property instead of osProcessor.
+|===

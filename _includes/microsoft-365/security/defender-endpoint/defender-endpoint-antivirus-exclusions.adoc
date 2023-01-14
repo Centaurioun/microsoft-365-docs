@@ -1,0 +1,486 @@
+= 
+denisebmsft
+
+== Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
+
+{empty}[!INCLUDE link:../../includes/microsoft-defender.md[Microsoft 365
+Defender rebranding]]
+
+*Applies to:*
+
+* Microsoft Defender Antivirus
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1]
+* https://go.microsoft.com/fwlink/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2]
+
+*Platforms*
+
+* Windows
+
+____
+[!NOTE] As a Microsoft MVP, https://cloudbrothers.info[Fabian Bader]
+contributed to and provided material feedback for this article.
+____
+
+link:microsoft-defender-endpoint.md[Microsoft Defender for Endpoint]
+includes a wide range of capabilities to prevent, detect, investigate,
+and respond to advanced cyberthreats. These capabilities include
+link:next-generation-protection.md[Next-generation protection] (which
+includes Microsoft Defender Antivirus). As with any endpoint protection
+or antivirus solution, sometimes files, folders, or processes that
+aren’t actually a threat can be detected as malicious by Defender for
+Endpoint or Microsoft Defender Antivirus. These entities can be blocked
+or sent to quarantine, even though they’re not really a threat.
+
+You can take certain actions to prevent false positives and similar
+issues from occurring. These actions include:
+
+* link:#submitting-files-for-analysis[Submitting a file to Microsoft for
+analysis]
+* link:#suppressing-alerts[Suppressing an alert]
+* link:#exclusions-and-indicators[Adding an exclusion or indicator]
+
+This article explains how these actions work, and describes the various
+types of exclusions that can be defined for Defender for Endpoint and
+Microsoft Defender Antivirus.
+
+____
+[!CAUTION] Defining exclusions reduces the level of protection offered
+by Defender for Endpoint and Microsoft Defender Antivirus. Use
+exclusions as a last resort, and make sure to define only the exclusions
+that are necessary. Make sure to review your exclusions periodically,
+and remove the ones you no longer need. See
+link:configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions[Recommendations
+for defining exclusions] and
+link:common-exclusion-mistakes-microsoft-defender-antivirus.md[Common
+mistakes to avoid].
+____
+
+____
+[!TIP] *Performance tip* Due to a variety of factors (examples listed
+below) Microsoft Defender Antivirus, like other antivirus software, can
+cause performance issues on endpoint devices. In some cases, you might
+need to tune the performance of Microsoft Defender Antivirus to
+alleviate those performance issues. Microsoft’s *Performance analyzer*
+is a PowerShell command-line tool that helps determine which files, file
+paths, processes, and file extensions might be causing performance
+issues; some examples are:
+
+* Top paths that impact scan time
+* Top files that impact scan time
+* Top processes that impact scan time
+* Top file extensions that impact scan time
+* Combinations – for example:
+** top files per extension
+** top paths per extension
+** top processes per path
+** top scans per file
+** top scans per file per process
+
+You can use the information gathered using Performance analyzer to
+better assess performance issues and apply remediation actions. See:
+link:tune-performance-defender-antivirus.md[Performance analyzer for
+Microsoft Defender Antivirus].
+____
+
+=== Submissions, suppressions, and exclusions
+
+When you’re dealing with false positives, or known entities that are
+generating alerts, you don’t necessarily need to add an exclusion.
+Sometimes classifying and suppressing an alert is enough. We recommend
+submitting false positives (and false negatives) to Microsoft for
+analysis as well. The following table describes some scenarios and what
+steps to take with respect to file submissions, alert suppressions, and
+exclusions.
+
+[width="100%",cols="<45%,<55%",options="header",]
+|===
+|Scenario |Steps to consider
+|link:defender-endpoint-false-positives-negatives.md[False positive]: An
+entity, such as a file or a process, was detected and identified as
+malicious, even though the entity isn’t a threat. |
+
+|link:troubleshoot-performance-issues.md[Performance issues] such as one
+of the following issues: |
+
+|link:microsoft-defender-antivirus-compatibility.md[Compatibility
+issues] with non-Microsoft antivirus products. Example: Defender for
+Endpoint relies on security intelligence updates for devices, whether
+they’re running Microsoft Defender Antivirus or a non-Microsoft
+antivirus solution. |
+|===
+
+____
+[!IMPORTANT] An ``allow'' indicator is the strongest type of exclusion
+you can define in Defender for Endpoint. Make sure to use indicators
+sparingly (only when necessary), and review all exclusions periodically.
+____
+
+=== Submitting files for analysis
+
+If you have a file that you think is wrongly detected as malware (a
+false positive), or a file that you suspect might be malware even though
+it wasn’t detected (a false negative), you can submit the file to
+Microsoft for analysis. Your submission will be scanned immediately, and
+will then be reviewed by Microsoft security analysts. You’ll be able to
+check the status of your submission on the
+https://www.microsoft.com/wdsi/submissionhistory[submission history
+page].
+
+Submitting files for analysis helps reduce false positives and false
+negatives for all customers. To learn more, see the following articles:
+
+* link:/microsoft-365/security/intelligence/submission-guide.md[Submit
+files for analysis] (available to all customers)
+* link:admin-submissions-mde.md[Submit files using the new unified
+submissions portal in Defender for Endpoint] (available to customers who
+have Defender for Endpoint Plan 2 or Microsoft 365 Defender)
+
+=== Suppressing alerts
+
+If you’re getting alerts in the Microsoft 365 Defender portal for tools
+or processes that you know aren’t actually a threat, you can suppress
+those alerts. To suppress an alert, you create a suppression rule, and
+specify what actions to take for that on other, identical alerts. You
+can create suppression rules for a specific alert on a single device, or
+for all alerts that have the same title across your organization.
+
+To learn more, see the following articles:
+
+* link:manage-alerts.md#suppress-alerts[Suppress alerts]
+* https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-the-new-alert-suppression-experience/ba-p/3562719[Introducing
+the new alert suppression experience] (for Defender for Endpoint)
+
+=== Exclusions and indicators
+
+Sometimes, the term _exclusions_ is used to refer to exceptions that
+apply across Defender for Endpoint and Microsoft Defender Antivirus. A
+more accurate way to describe these exceptions is as follows:
+
+* link:manage-indicators.md[Indicators for Defender for Endpoint];
+(which apply across Defender for Endpoint and Microsoft Defender
+Antivirus); and
+* link:configure-exclusions-microsoft-defender-antivirus.md[Exclusions
+for Microsoft Defender Antivirus].
+
+The following table summarizes exclusion types that can be defined for
+Defender for Endpoint and Microsoft Defender Antivirus.
+
+____
+{empty}[!TIP]
+
+* link:defender-endpoint-plan-1.md[Defender for Endpoint Plan 1] is
+available as a standalone plan, and is included in Microsoft 365 E3.
+* link:microsoft-defender-endpoint.md[Defender for Endpoint Plan 2] is
+available as a standalone plan, and is included in Microsoft 365 E5.
+* If you have Microsoft 365 E3 or E5, make sure to
+link:deployment-strategy.md[set up your Defender for Endpoint
+capabilities].
+____
+
+[width="100%",cols="<45%,<55%",options="header",]
+|===
+|Product/service |Exclusion types
+|link:microsoft-defender-antivirus-windows.md[Microsoft Defender
+Antivirus] link:defender-endpoint-plan-1-2.md[Defender for Endpoint Plan
+1 or Plan 2] |
+
+|link:defender-endpoint-plan-1-2.md[Defender for Endpoint Plan 1 or Plan
+2] |
+
+|link:microsoft-defender-endpoint.md[Defender for Endpoint Plan 2]
+|link:#automation-folder-exclusions[Automation folder exclusions] (for
+automated investigation and remediation)
+|===
+
+The following sections describe these exclusions in more detail:
+
+* link:#microsoft-defender-antivirus-exclusions[Microsoft Defender
+Antivirus exclusions]
+* link:#defender-for-endpoint-indicators[Defender for Endpoint
+indicators]
+* link:#attack-surface-reduction-exclusions[Attack surface reduction
+exclusions]
+* link:#controlled-folder-access-exclusions[Controlled folder access
+exclusions]
+* link:#automation-folder-exclusions[Automation folder exclusions] (for
+automated investigation and remediation)
+
+=== Microsoft Defender Antivirus exclusions
+
+Microsoft Defender Antivirus exclusions can apply to antivirus scans
+and/or to real-time protection. These exclusions include:
+
+* link:#automatic-exclusions[Automatic exclusions]
+* link:#custom-exclusions[Custom exclusions]
+* link:#custom-remediation-actions[Custom remediation actions]
+
+==== Automatic exclusions
+
+link:configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions[Automatic
+exclusions] include operating system files and server roles and
+features. These exclusions won’t be scanned by
+link:configure-protection-features-microsoft-defender-antivirus.md[real-time
+protection] but are still subject to
+link:schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan[quick&#44;
+full&#44; or on-demand antivirus scans]. The following table provides some
+examples and includes links to learn more.
+
+[width="100%",cols="<45%,<55%",options="header",]
+|===
+|Automatic exclusion type |Examples
+|Operating system files (See
+link:configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions[Automatic
+exclusions].) |`%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
+`%allusersprofile%\NTUser.pol` Windows Update files Windows Security
+files … and more
+
+|Server roles and features (See
+link:configure-server-exclusions-microsoft-defender-antivirus.md#default-exclusions-for-all-roles[Default
+exclusions for roles].) |File Replication Service (FRS) Hyper-V SYSVOL
+Active Directory DNS Server Print Server Web Server Windows Server
+Update Services
+|===
+
+==== Custom exclusions
+
+link:configure-exclusions-microsoft-defender-antivirus.md[Custom
+exclusions] include files and folders that you specify. Exclusions for
+files, folders, and processes will be skipped by scheduled scans,
+on-demand scans, and real-time protection. Exclusions for process-opened
+files won’t be scanned by
+link:configure-protection-features-microsoft-defender-antivirus.md[real-time
+protection] but are still subject to
+link:schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan[quick&#44;
+full&#44; or on-demand antivirus scans].
+
+==== Custom remediation actions
+
+When Microsoft Defender Antivirus detects a potential threat while
+running a scan, it attempts to remediate or remove the detected threat.
+You can define custom remediation actions to configure how Microsoft
+Defender Antivirus should address certain threats, whether a restore
+point should be created before remediating, and when threats should be
+removed.
+link:configure-remediation-microsoft-defender-antivirus.md[Configure
+remediation actions for Microsoft Defender Antivirus detections].
+
+=== Defender for Endpoint indicators
+
+You can define link:manage-indicators.md[indicators] with specific
+actions for entities, such as files, IP addresses, URLs/domains, and
+certificates. In Defender for Endpoint, indicators are referred to as
+Indicators of Compromise (IoCs), and less often, as custom indicators.
+When you define your indicators, you can specify one of the following
+actions:
+
+* *Allow* – Defender for Endpoint won’t block files, IP addresses,
+URLs/domains, or certificates that have Allow indicators. (_Use this
+action with caution._)
+* *Audit* – Files, IP addresses, and URLs/domains with Audit indicators
+are monitored, and when they’re accessed by users, informational alerts
+are generated in the Microsoft 365 Defender portal.
+* *Block and Remediate* – Files or certificates with Block and Remediate
+indicators are blocked and quarantined when detected.
+* *Block Execution* – IP addresses and URLs/domains with Block Execution
+indicators are completely blocked. Users can’t access those locations.
+* *Warn* – IP addresses and URLs/domains with Warn indicators cause a
+warning message to be displayed when a user attempts to access those
+locations. Users can choose to bypass the warning and proceed to the IP
+address or URL/domain.
+
+____
+[!IMPORTANT] You can have up to 15,000 indicators in your tenant.
+____
+
+The following table summarizes IoC types and available actions:
+
+[width="100%",cols="<50%,<50%",options="header",]
+|===
+|Indicator type |Available actions
+|link:indicator-file.md[Files] |- Allow - Audit - Warn - Block execution
+- Block and remediate
+
+|link:indicator-ip-domain.md[IP addresses and URLs/domains] |- Allow -
+Audit - Warn - Block execution
+
+|link:indicator-certificates.md[Certificates] |- Allow - Block and
+remediate
+|===
+
+____
+[!TIP] See the following resources to learn more about indicators:
+
+* link:manage-indicators.md[Create indicators]
+* link:indicator-file.md[Create indicators for files]
+* link:indicator-ip-domain.md[Create indicators for IP addresses and
+URLs/domains]
+* link:indicator-certificates.md[Create indicators based on
+certificates]
+* link:indicator-manage.md[Manage indicators]
+____
+
+=== Attack surface reduction exclusions
+
+link:attack-surface-reduction.md[Attack surface reduction rules] (also
+known as ASR rules) target certain software behaviors, such as:
+
+* Launching executable files and scripts that attempt to download or run
+files
+* Running scripts that seem to be obfuscated or otherwise suspicious
+* Performing behaviors that apps don’t usually initiate during normal
+day-to-day work
+
+Sometimes, legitimate applications exhibit software behaviors that could
+be blocked by attack surface reduction rules. If that’s occurring in
+your organization, you can define exclusions for certain files and
+folders. Such exclusions are applied to all attack surface reduction
+rules. See
+link:attack-surface-reduction-rules-deployment-implement.md#exclude-files-and-folders[Enable
+attack surface reduction (ASR) rules].
+
+Also note that while most ASR rules exclusions are independent from
+Microsoft Defender Antivirus exclusions, some ASR rules do honor some
+Microsoft Defender Antivirus exclusions. See
+link:attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules[Attack
+surface reduction rules reference - Microsoft Defender Antivirus
+exclusions and ASR rules].
+
+=== Controlled folder access exclusions
+
+link:controlled-folders.md[Controlled folder access] monitors apps for
+activities that are detected as malicious and protects the contents of
+certain (protected) folders on Windows devices. Controlled folder access
+allows only trusted apps to access protected folders, such as common
+system folders (including boot sectors) and other folders that you
+specify. You can allow certain apps or signed executables to access
+protected folders by defining exclusions. See
+link:customize-controlled-folders.md[Customize controlled folder
+access].
+
+=== Automation folder exclusions
+
+Automation folder exclusions apply to
+link:automated-investigations.md[automated investigation and
+remediation] in Defender for Endpoint, which is designed to examine
+alerts and take immediate action to resolve detected breaches. As alerts
+are triggered, and an automated investigation runs, a verdict
+(Malicious, Suspicious, or No threats found) is reached for each piece
+of evidence investigated. Depending on the
+link:automation-levels.md[automation level] and other security settings,
+remediation actions can occur automatically or only upon approval by
+your security operations team.
+
+You can specify folders, file extensions in a specific directory, and
+file names to be excluded from automated investigation and remediation
+capabilities. Such automation folder exclusions will apply to all
+devices onboarded to Defender for Endpoint. These exclusions are still
+subject to antivirus scans. See
+link:manage-automation-folder-exclusions.md[Manage automation folder
+exclusions].
+
+=== How exclusions and indicators are evaluated
+
+Most organizations have several different types of exclusions and
+indicators to determine whether users should be able to access and use a
+file or process. Exclusions and indicators are processed in a particular
+order so that link:indicator-file.md#policy-conflict-handling[policy
+conflicts are handled systematically].
+
+The following image summarizes how exclusions and indicators are handled
+across Defender for Endpoint and Microsoft Defender Antivirus:
+
+:::image type=``content'' source=``images/mdav-mde-flow.png''
+alt-text=``Screenshot that Shows the order in which exclusions and
+indicators are evaluated.'' lightbox=``images/mdav-mde-flow.png'':::
+
+Here’s how it works:
+
+[arabic]
+. If a detected file/process isn’t allowed by Windows Defender
+Application Control and AppLocker, it’s blocked. Otherwise, it proceeds
+to Microsoft Defender Antivirus.
+. If the detected file/process isn’t part of an exclusion for Microsoft
+Defender Antivirus, it’s blocked. Otherwise, Defender for Endpoint
+checks for a custom indicator for the file/process.
+. If the detected file/process has a Block or Warn indicator, that
+action is taken. Otherwise, the file/process is allowed, and proceeds to
+evaluation by attack surface reduction rules, controlled folder access,
+and SmartScreen protection.
+. If the detected file/process isn’t blocked by attack surface reduction
+rules, controlled folder access, or SmartScreen protection, it proceeds
+to Microsoft Defender Antivirus.
+. If the detected file/process isn’t allowed by Microsoft Defender
+Antivirus, it’s checked for an action based on its threat ID.
+
+=== How policy conflicts are handled
+
+In cases where Defender for Endpoint indicators conflict, here’s what to
+expect:
+
+* If there are conflicting file indicators, the indicator that uses the
+most secure hash is applied. For example, SHA256 takes precedence over
+SHA-1, which takes precedence over MD5.
+* If there are conflicting URL indicators, the more strict indicator is
+used. For
+link:/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview[Microsoft
+Defender SmartScreen], an indicator that uses the longest URL path is
+applied. For example, `www.dom.ain/admin/` takes precedence over
+`www.dom.ain`. (link:network-protection.md[Network protection] applies
+to domains, rather than subpages within a domain.)
+* If there are similar indicators for a file or process that have
+different actions, the indicator that is scoped to a specific device
+group takes precedence over an indicator that targets all devices.
+
+=== How automated investigation and remediation works with indicators
+
+link:automated-investigations.md[Automated investigation and remediation
+capabilities] in Defender for Endpoint first determine a verdict for
+each piece of evidence, and then take an action depending on Defender
+for Endpoint indicators. Thus, a file/process could get a verdict of
+``good'' (which means no threats were found) and still be blocked if
+there’s an indicator with that action. Similarly, an entity could get a
+verdict of ``bad'' (which means it’s determined to be malicious) and
+still be allowed if there’s an indicator with that action.
+
+The following diagram shows how
+link:manage-indicators.md#automated-investigation-and-remediation-engine[automated
+investigation and remediation works with indicators]:
+
+:::image type=``content'' source=``images/air-exclusions.png''
+alt-text=``Screenshot that Shows automated investigation and remediation
+and indicators.'' lightbox=``images/air-exclusions.png'':::
+
+=== Additional server workloads and exclusions
+
+If your organization is using other server workloads, such as Exchange
+Server, SharePoint Server, or SQL Server, be aware that only built-in
+server roles (that could be prerequisites for software you install
+later) on Windows Server are excluded by
+link:#automatic-exclusions[automatic exclusions] feature (and only when
+using their default installation location). You’ll likely need to define
+antivirus exclusions for these additional workloads, or for all
+workloads if you disable automatic exclusions.
+
+Here are some examples of technical documentation to identify and
+implement the exclusions you need:
+
+* link:/exchange/antispam-and-antimalware/windows-antivirus-software?view=exchserver-2019&preserve-view=true[Running
+antivirus software on Exchange Server]
+* https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9[Folders
+to exclude from antivirus scans on SharePoint Server]
+* https://support.microsoft.com/topic/how-to-choose-antivirus-software-to-run-on-computers-that-are-running-sql-server-feda079b-3e24-186b-945a-3051f6f3a95b[Choosing
+antivirus software for SQL Server]
+
+Depending on what you’re using, you might need to refer to the
+documentation for that server workload.
+
+=== See also
+
+* link:configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions[Recommendations
+for defining exclusions]
+* link:common-exclusion-mistakes-microsoft-defender-antivirus.md[Common
+mistakes to avoid when defining exclusions]
+* https://cloudbrothers.info/en/guide-to-defender-exclusions/[Blog post:
+The Hitchhiker’s Guide to Microsoft Defender for Endpoint exclusions]

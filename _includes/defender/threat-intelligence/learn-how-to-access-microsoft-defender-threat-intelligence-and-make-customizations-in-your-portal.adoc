@@ -1,0 +1,85 @@
+= 
+alexroland24
+
+== Quickstart: Learn how to access Microsoft Defender Threat Intelligence and make customizations in your portal
+
+Understanding how to adjust your theme in Microsoft Defender Threat
+Intelligence (Defender TI)’s Portal will make it easier on your eyes
+when using our platform. Additionally, this guide will walk you through
+how to enable sources for enrichment, so you can see more results when
+performing searches in our platform. You will also learn how to
+successfully login and logout of Defender TI.
+
+image::media/tiOverviewHomePageChromeScreenshot.png[Ti Overview HomePage
+Chrome Screenshot]
+
+=== Prerequisites
+
+* An Azure Active Directory or personal Microsoft account.
+https://signup.microsoft.com/[Login or create an account]
+* A Microsoft Defender Threat Intelligence (Defender TI) Premium
+license.
++
+____
+[!NOTE] Users without a Defender TI Premium license will still be able
+to log into the Defender Threat Intelligence Portal and access our free
+Defender TI offering.
+____
+
+=== Open Defender TI’s Threat Intelligence Home Page
+
+* Access the https://ti.defender.microsoft.com/[Defender Threat
+Intelligence Portal].
+* Complete Microsoft authentication to access portal.
+
+=== Access Defender TI’s `Profile and Preferences' to adjust your theme
+
+[arabic]
+. Click on the `Profile and Preferences' icon in the upper right-hand
+corner of the Defender Threat Intelligence Portal.
++
+image::media/accessingTiPortalUserProfileandPreferences.png[Accessing TI
+Portal User Profile and Preferences]
+. Select `Dark' theme. Notice how `Light' is your default theme.
++
+image::media/accessingTiPortalDarkTheme.png[Accessing TI Portal Dark
+Theme]
+. Repeat step 1 and select `High Contrast' theme.
++
+image::media/accessingTiPortalHighContrastTheme.png[Accessing TI Portal
+High Contrast Theme]
+. Repeat step 1 and select `Light' theme.
++
+image::media/accessingTiPortalLightTheme.png[Accessing TI Portal Light
+Theme]
+
+=== Access Defender TI’s `Help' icon to learn about your Defender TI Microsoft Support resources
+
+[arabic]
+. Click on the `Help' icon in the upper right-hand corner to the left of
+the `Profile and Preferences' icon.
++
+image::media/accessingTiPortalHelp.png[Accessing TI Portal Help]
+. Review your Defender TI Microsoft Support resources.
+* Here you will find Defender TI’s Support email address as well as a
+link to our Privacy Statement.
+
+=== Access Defender TI’s `Profile and Preferences' to logout of the Defender Threat Intelligence Portal
+
+[arabic]
+. Click on the `Profile and Preferences' icon in the upper right-hand
+corner of the Defender Threat Intelligence Portal.
+. Select `Logout'.
++
+image::media/accessingTiPortalLogout.png[Accessing TI Portal Logout]
+
+=== Clean up resources
+
+There are no resources to clean up in this section.
+
+=== Next steps
+
+For more information, see:
+
+link:index.md[`What is Microsoft Defender Threat Intelligence (Defender
+TI)?']

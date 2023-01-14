@@ -1,0 +1,67 @@
+= 
+denisebmsft
+
+== Move to Microsoft Defender for Endpoint
+
+*Applies to:* -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 1] -
+https://go.microsoft.com/fwlink/p/?linkid=2154037[Microsoft Defender for
+Endpoint Plan 2] -
+https://go.microsoft.com/fwlink/?linkid=2118804[Microsoft 365 Defender]
+
+____
+Want to experience Microsoft Defender for Endpoint?
+https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink[Sign
+up for a free trial.]
+____
+
+=== Migration and setup guides
+
+If you’re considering moving to Defender for Endpoint, we have guidance
+to help. In the following table, review the scenarios. Select the
+scenario that best represents your situation, and see the recommended
+guidance.
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Scenario |Guidance
+|You don’t have an endpoint protection solution in place yet, and you
+want to know more about Defender for Endpoint. You want to see how
+Defender for Endpoint works before rolling it out in your environment.
+|link:evaluation-lab.md[Microsoft Defender for Endpoint evaluation lab]
+
+|You already have Defender for Endpoint, and you want some help getting
+everything set up and configured. |link:deployment-phases.md[Microsoft
+Defender for Endpoint deployment guide]
+
+|You’re planning to switch from a non-Microsoft endpoint protection
+solution to Defender for Endpoint, which includes Microsoft Defender
+Antivirus. You want to get an overview of the migration process and how
+to make the switch. |link:switch-to-mde-overview.md[Make the switch to
+Microsoft Defender for Endpoint]
+
+|You’ve already migrated or onboarded to Defender for Endpoint. You want
+some help with next steps, such as managing your security settings,
+configuring more features, or fine-tuning your security policies.
+|link:manage-mde-post-migration.md[Manage Microsoft Defender for
+Endpoint&#44; post-migration]
+|===
+
+=== Do you have feedback for us?
+
+Let us know what you think! Submit your feedback at the bottom of the
+page. We’ll take your feedback into account as we continue to improve
+and add to our migration guidance.
+
+=== See also
+
+* link:/microsoft-365/security/defender/microsoft-365-defender[Microsoft
+365 Defender]
+* link:/windows/security/threat-protection[Microsoft Defender for
+Endpoint]
+* link:/microsoft-365/security/office-365-security/defender-for-office-365[Microsoft
+Defender for Office 365]
+* link:../../business-premium/index.md[Microsoft 365 Business Premium]
+* link:../defender-business/mdb-overview.md[Microsoft Defender for
+Business]

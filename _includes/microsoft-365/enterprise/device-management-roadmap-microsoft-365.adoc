@@ -1,0 +1,75 @@
+= 
+kelleyvice-msft
+:keywords: Microsoft 365, Microsoft 365 for enterprise, Microsoft 365
+documentation, mobile device management, Intune
+
+== Device management roadmap for Microsoft 365
+
+Microsoft 365 for enterprise includes features to help manage devices,
+and their apps, within your organization. Managing mobile devices helps
+you secure and protect your organization’s resources.
+
+There are two options for device management:
+
+* link:#microsoft-intune[Microsoft Intune]
+* link:#basic-mobility-and-security[Basic Mobility and Security]
+
+=== Microsoft Intune
+
+You can use Microsoft Intune to manage access to your organization using
+mobile device management or mobile application management. Mobile device
+management is when users ``enroll'' their devices in Intune. After a
+device is enrolled, it is a managed device; therefore, it can receive
+your organization’s policies, rules, and settings. For example, you can
+install specific apps, create a password policy, install a VPN
+connection, and more.
+
+Users with their own personal devices may not want to enroll their
+devices or be managed by Intune and your organization’s policies. But
+you still need to protect your organization’s resources and data. In
+this scenario, you can protect your apps using mobile application
+management. For example, you can use a mobile application management
+policy that requires a user to enter a PIN when accessing SharePoint
+Online on the device.
+
+You’ll also determine how you’re going to manage personal devices and
+organization-owned devices. You might want to treat devices differently,
+depending on their uses.
+
+=== Basic Mobility and Security
+
+This is built into Microsoft 365 and helps you secure and manage your
+users’ mobile devices like iPhones, iPads, Androids, and Windows phones.
+You can create and manage device security policies, remotely wipe a
+device, and view detailed device reports.
+
+=== Choose between the two options
+
+To help you better assess which device management option is best for
+you, see
+link:/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intunee[Choose
+between Basic Mobility Security and Intune].
+
+Based on your assessment, get started managing your devices with:
+
+* link:/microsoft-365/solutions/manage-devices-with-intune-overview[Intune]
+* https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd[Basic
+Mobility and Security]
+
+=== Identity and device access recommendations
+
+Microsoft provides a set of recommendations for
+link:../security/office-365-security/microsoft-365-policies-configurations.md[identity
+and device access] to ensure a secure and productive workforce. For
+device access, use the recommendations and settings in these articles:
+
+* link:../security/office-365-security/identity-access-prerequisites.md[Prerequisites]
+* link:../security/office-365-security/identity-access-policies.md[Common
+identity and device access policies]
+
+=== How Contoso did device management for Microsoft 365
+
+For information about how a fictional but representative multi-national
+business deployed their mobile device management infrastructure with
+Microsoft 365 cloud services, see link:contoso-mdm.md[Mobile device
+management for Contoso].
