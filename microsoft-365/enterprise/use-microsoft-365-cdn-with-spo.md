@@ -28,9 +28,6 @@ description: Learn how to use the Office 365 Content Delivery Network (CDN) to s
 
 You can use the built-in Office 365 Content Delivery Network (CDN) to host static assets to provide better performance for your SharePoint Online pages. The Office 365 CDN improves performance by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency. Also, the Office 365 CDN uses the [HTTP/2 protocol](https://en.wikipedia.org/wiki/HTTP/2) for improved compression and HTTP pipelining. The Office 365 CDN service is included as part of your SharePoint Online subscription.
 
-> [!CAUTION]
-> As images are now automatically managed in a SharePoint Online service-managed Private CDN, the manually configured Private CDN is in the process of being deprecated. This behavior means that customers no longer need to configure private CDN. The recommended practice remains unchanged as images are hosted via the service-managed Private CDN automatically. Public CDN continues to be available for all other file types (for example, CSS and JS). Customers using Private CDN for file types other than images, need to move those files into Public CDN. We recommend Public CDN for these file types to enhance performance.
-
 > [!NOTE]
 > The Office 365 CDN is only available to tenants in the **Production** (worldwide) cloud. Tenants in the US Government and China clouds do not currently support the Office 365 CDN.
 
@@ -141,29 +138,9 @@ You can read more about how CDN access to assets in a private origin works in [U
 
 - You can configure a policy to exclude assets based on specified site classifications. For example, you can exclude all assets that are marked as "confidential" or "restricted", even if they're an allowed file type and are located in a public origin.
 
-#### Attributes and advantages of hosting assets in private origins
-
-- Private origins can only be used for SharePoint Online assets.
-
-- Users can only access the assets from a private origin if they have permissions to access the container. Anonymous access to these assets is prevented.
-
-- Assets in private origins must be referred from the SharePoint Online tenant. Direct access to private CDN assets doesn't work.
-
-- If you remove an asset from the private origin, the asset might continue to be available for up to an hour from the cache. But, links to the asset in the CDN are invalid within 15 minutes of the removal of the asset.
-
-- The default file types that are included for private origins are .gif, .ico, .jpeg, .jpg, .js, and .png. You can specify additional file types.
-
-- Just like with public origins, you can configure a policy to exclude assets that are identified by site classifications that you specify even if you use wildcards to include all assets within a folder or document library.
-
-For more information about why to use the Office 365 CDN, general CDN concepts, and other Microsoft CDNs you can use with your Office 365 tenant, see [Content Delivery Networks](content-delivery-networks.md).
-
 ### Default CDN origins
 
 Unless you specify otherwise, Office 365 sets up some default origins for you when you enable the Office 365 CDN. If you initially opt not to provision them, you can add these origins after you complete setup. Unless you understand the consequences of skipping the setup of default origins and have a specific reason for doing so, you should allow them to be created when you enable the CDN.
-
-Default private CDN origins:
-
-- \*/siteassets
 
 Default public CDN origins:
 
@@ -186,7 +163,7 @@ Complete these steps to set up and configure the CDN to host your assets in Shar
 
 ### Enable your organization to use the Office 365 CDN
 
-Before you make changes to the tenant CDN settings, you should retrieve the current status of the private CDN configuration in your Office 365 tenant. Connect to your tenant using the SharePoint Online Management Shell:
+Before you make changes to the tenant CDN settings, you should retrieve the current status of the CDN configuration in your Office 365 tenant. Connect to your tenant using the SharePoint Online Management Shell:
 
 ```powershell
 Connect-SPOService -Url https://contoso-admin.sharepoint.com
@@ -195,7 +172,7 @@ Connect-SPOService -Url https://contoso-admin.sharepoint.com
 Now use the **Get-SPOTenantCdnEnabled** cmdlet to retrieve the CDN status settings from the tenant:
 
 ```powershell
-Get-SPOTenantCdnEnabled -CdnType <Public | Private>
+Get-SPOTenantCdnEnabled -CdnType Public
 ```
 
 The status of the CDN for the specified CdnType is shown on the screen.
@@ -205,19 +182,13 @@ Use the **Set-SPOTenantCdnEnabled** cmdlet to enable your organization to use th
 In Windows PowerShell for SharePoint Online:
 
 ```powershell
-Set-SPOTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
+Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
-For example, to enable your organization to use both public and private origins, type the following command:
+To enable your organization to use public origins but skip setting up the default origins, type the following command:
 
 ```powershell
-Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
-```
-
-To enable your organization to use both public and private origins but skip setting up the default origins, type the following command:
-
-```powershell
-Set-SPOTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
+Set-SPOTenantCdnEnabled -CdnType Public -Enable $true -NoDefaultOrigins
 ```
 
 See [Default CDN origins](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN, and the potential effect of skipping the setup of default origins.
@@ -226,12 +197,6 @@ To enable your organization to use public origins, type the following command:
 
 ```powershell
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
-```
-
-To enable your organization to use private origins, type the following command:
-
-```powershell
-Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
 For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](/powershell/module/sharepoint-online/Set-SPOTenantCdnEnabled).
@@ -481,7 +446,7 @@ Complete these steps to set up and configure the CDN to host your assets in Shar
 
 ### Enable your organization to use the Office 365 CDN
 
-Before you make changes to the tenant CDN settings, you should retrieve the current status of the private CDN configuration in your Office 365 tenant. Connect to your tenant using PnP PowerShell:
+Before you make changes to the tenant CDN settings, you should retrieve the current status of the CDN configuration in your Office 365 tenant. Connect to your tenant using PnP PowerShell:
 
 ```powershell
 Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
@@ -490,7 +455,7 @@ Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
 Now use the **Get-PnPTenantCdnEnabled** cmdlet to retrieve the CDN status settings from the tenant:
 
 ```powershell
-Get-PnPTenantCdnEnabled -CdnType <Public | Private>
+Get-PnPTenantCdnEnabled -CdnType Public
 ```
 
 The status of the CDN for the specified CdnType is shown on the screen.
@@ -500,19 +465,13 @@ Use the **Set-PnPTenantCdnEnabled** cmdlet to enable your organization to use th
 In PnP PowerShell:
 
 ```powershell
-Set-PnPTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
+Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
-For example, to enable your organization to use both public and private origins, type the following command:
+To enable your organization to use public origins but skip setting up the default origins, type the following command:
 
 ```powershell
-Set-PnPTenantCdnEnabled -CdnType Both -Enable $true
-```
-
-To enable your organization to use both public and private origins but skip setting up the default origins, type the following command:
-
-```powershell
-Set-PnPTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
+Set-PnPTenantCdnEnabled -CdnType Public -Enable $true -NoDefaultOrigins
 ```
 
 See [Default CDN origins](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) for information about the origins that are provisioned by default when you enable the Office 365 CDN, and the potential effect of skipping the setup of default origins.
@@ -521,12 +480,6 @@ To enable your organization to use public origins, type the following command:
 
 ```powershell
 Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
-```
-
-To enable your organization to use private origins, type the following command:
-
-```powershell
-Set-PnPTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
 For more information about this cmdlet, see [Set-PnPTenantCdnEnabled](https://pnp.github.io/powershell/cmdlets/Set-PnPTenantCdnEnabled.html).
@@ -538,24 +491,24 @@ For more information about this cmdlet, see [Set-PnPTenantCdnEnabled](https://pn
 > [!TIP]
 > When you define file types by using the **Set-PnPTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add additional file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.
 
-Use the **Set-PnPTenantCdnPolicy** cmdlet to define static file types that can be hosted by public and private origins in the CDN. By default, common asset types are allowed, for example .css, .gif, .jpg, and .js.
+Use the **Set-PnPTenantCdnPolicy** cmdlet to define static file types that can be hosted by public origins in the CDN. By default, common asset types are allowed, for example .css and .js.
 
 In PnP PowerShell:
 
 ```powershell
-Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
+Set-PnPTenantCdnPolicy -CdnType Public -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
 ```
 
 For example, to enable the CDN to host .css and .png files, you would enter the command:
 
 ```powershell
-Set-PnPTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
+Set-PnPTenantCdnPolicy -CdnType Public -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
 ```
 
 To see what file types are currently allowed by the CDN, use the **Get-PnPTenantCdnPolicies** cmdlet:
 
 ```powershell
-Get-PnPTenantCdnPolicies -CdnType <Public | Private>
+Get-PnPTenantCdnPolicies -CdnType Public
 ```
 
 For more information about these cmdlets, see [Set-PnPTenantCdnPolicy](https://pnp.github.io/powershell/cmdlets/Set-PnPTenantCdnPolicy.html) and [Get-PnPTenantCdnPolicies](https://pnp.github.io/powershell/cmdlets/Get-PnPTenantCdnPolicies.html).
@@ -899,12 +852,8 @@ This section helps you understand how to use CDN URLs in your SharePoint pages a
 
 - [Updating links to CDN assets](use-microsoft-365-cdn-with-spo.md#updating-links-to-cdn-assets)
 - [Using assets in public origins](use-microsoft-365-cdn-with-spo.md#using-assets-in-public-origins)
-- [Using assets in private origins](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins)
 
 For information on how to use the CDN for hosting client-side web parts, see the article [Host your client-side web part from Office 365 CDN (Hello World part 4)](/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).
-
-> [!NOTE]
-> If you add the _ClientSideAssets_ folder to the **private** CDN origins list, CDN-hosted custom web parts will fail to render. Files used by SPFX web parts can only utilize the public CDN and the ClientSideAssets folder is a default origin for public CDN.
 
 ### Updating links to CDN assets
 
