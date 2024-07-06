@@ -5,13 +5,13 @@ author: kwekuako
 manager: scotv
 ms.date: 06/18/2020
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
+- essentials-manage
 description: "Learn how to set scheduling policies for your business. Scheduling policies include the length of appointments, as well as acceptable lead and cancellation times."
 ---
 

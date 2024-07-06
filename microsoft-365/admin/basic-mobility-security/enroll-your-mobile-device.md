@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/26/2020
+ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,9 +16,11 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Before you can use Microsoft 365 services with your device, you might need to first enroll it in Basic Mobility and Security for Microsoft 365."
@@ -78,4 +80,4 @@ To connect and configure your Windows phone or PC with the Company portal to Mic
 
 ## Next steps
 
-After your device is enrolled in Basic Mobility and Security, you can start using Microsoft 365 apps on your device to work with email, calendar, contacts, and documents.
+After your device is enrolled in Basic Mobility and Security, you can start using Microsoft 365 productivity apps on your device to work with email, calendar, contacts, and documents.

@@ -5,12 +5,13 @@ author: kwekuako
 manager: scotv
 ms.date: 06/18/2020
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
+- essentials-manage
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: "Follow these instructions to create an appointment and assign an employee."
 ---

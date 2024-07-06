@@ -2,9 +2,9 @@
 title: Overview of model types in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 10/12/2022
+ms.date: 01/29/2024
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -21,19 +21,19 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-</br>
+<!---</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
 
-</br>
+</br>--->
 
-Content understanding in Microsoft Syntex starts with AI models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
+Content understanding in Microsoft Syntex starts with document processing models. Document processing models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
 When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
 Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
 
-![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-2.png)
+![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-4.png)
 
 Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).
 
@@ -49,7 +49,7 @@ Custom models include:
 
 To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
-When you create a custom model, you'll select the training method associated with the model type. For example, if you want to create an unstructured document processing model, on the **Options for model creation** page where you create a model, you will choose the **Teaching method** option. The following table shows the training method associated with each custom model type.
+When you create a custom model, you'll select the training method associated with the model type. For example, if you want to create an unstructured document processing model, on the **Options for model creation** page where you create a model, you'll choose the **Teaching method** option. The following table shows the training method associated with each custom model type.
 
 |Unstructured<br> document processing  |Freeform<br> document processing  |Structured<br> document processing  |
 |---------|---------|---------|
@@ -64,7 +64,7 @@ Use the unstructured document processing model to automatically classify documen
 
 For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string "Service start date of" followed by an actual date.
 
-This model type supports the widest range of file types and only works on files using the Latin alphabet (English characters).
+This model type supports the widest range of file types and supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
 
 When you create an unstructured document processing model, use the **Teaching method** option.
 
@@ -79,9 +79,9 @@ Freeform document processing models use Microsoft Power Apps [AI Builder](/ai-bu
 > [!NOTE]
 > The freeform document processing model is not yet available in some regions. For more information, see [Feature availability by region](/ai-builder/availability-region).
 
-Because your organization receives letters and documents in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text and other information from these documents, this model automates this process.
+Because your organization receives letters and documents in large quantities from various sources, such as mail, fax, and email, processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text and other information from these documents, this model automates this process.
 
-This model type is the best option for English documents in PDF or image files when you don't require automatic classification of the type of document.
+This model type is the best option for documents in PDF or image files when you don't require automatic classification of the type of document, and it supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
 
 When you create a freeform document processing model, use the **Freeform selection method** option.
 
@@ -93,7 +93,7 @@ Use the structured document processing model to automatically identify field and
 
 Structured document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create and train models within Syntex. 
 
-This model type supports the widest range of languages and is trained to understand the layout of your form from example documents, and then learns to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number on a tax form).
+This model type supports the [widest range of languages](/ai-builder/form-processing-model-requirements#model-for-structured-and-semi-structured-documents) and is trained to understand the layout of your form from example documents, and then learns to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number on a tax form).
 
 When you create a structured document processing model, use the **Layout method** option.
 
@@ -101,33 +101,39 @@ For more information, see [Overview of structured and freeform document processi
 
 ## Prebuilt models
 
-If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents.
+If you don't need to build a custom model, you can use a [prebuilt document processing model](prebuilt-overview.md) that has already been trained for specific structured documents.
 
 Prebuilt models include:
 
 - [Contract processing](#contract-processing)
 - [Invoice processing](#invoice-processing)
 - [Receipt processing](#receipt-processing)
+- [Sensitive information processing](#sensitive-information-processing)
 
-![Screenshot of the Options for model creation page showing the prebuilt model options.](../media/content-understanding/model-options-prebuilt.png)
+![Screenshot of the Options for model creation page showing the prebuilt model options.](../media/content-understanding/use-a-trained-model-section-2.png)
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
 ### Contract processing
 
-The contract processing model analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information such as client or party name, billing address, jurisdiction, and expiration date.
+The prebuilt contract processing model analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information such as client or party name, billing address, jurisdiction, and expiration date.
 
-For more information about prebuilt contract processing models, see [Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md).
+For more information about contract processing models, see [Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md).
 
 ### Invoice processing
 
-The invoice processing model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
+The prebuilt invoice processing model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
 
-For more information about prebuilt invoice processing models, see [Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md).
+For more information about invoice processing models, see [Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md).
 
 ### Receipt processing
 
 The prebuilt receipt processing model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
-For more information about prebuilt receipt processing models, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
+For more information about receipt processing models, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
 
+### Sensitive information processing
+
+The prebuilt sensitive information processing model analyzes, detects, and extracts key information from documents. The API analyzes contracts in various formats and extracts key sensitive information such as social security numbers, financial account numbers, driver license identification numbers, and other personal information.
+
+For more information about sensitive information processing models, see [Use a prebuilt model to detect sensitive information from documents](prebuilt-model-sensitive-info.md).

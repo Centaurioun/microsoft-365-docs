@@ -3,15 +3,16 @@ title: "Define your Bookings service offerings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/18/2020
+ms.date: 06/05/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
+- essentials-manage
+- must-keep
 description: "Instructions for entering service offerings information, including service name, description, location, duration, and pricing. You can also tag the employees who are qualified to provide the service."
 ---
 
@@ -27,17 +28,26 @@ You can also add customized information and URLs to the email confirmation and r
 
 ## Steps
 
+Here are the steps to add a new service.
+
+> [!NOTE]
+> Changes to business-related settings, like enabling or disabling one-time passwords (OTP) or sending meeting invites, may take up to 10 minutes to apply.
+
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-2. Go to **Your calendar** > **Services** and select **Add new service**.
+1. Under **Shared booking pages**, either select the page for which you want to create a new service, or create a new booking page and then select it from the available pages.
 
-3. On the **Basic details** page, add your selections.
+1. On the shared booking page, select **Services**, and then select **Add new service**.
+
+    The number of services should be limited to 50.
+
+1. On the **Basic details** page, add your selections.
 
    **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-service page.
 
    **Description**: The description you enter is what will appear when a user selects the information icon on the Self-service page.
 
-   **Default location**: This location is what will be displayed on confirmation and reminder emails for both staff and customers, and it will be displayed on the calendar event created for the booking.
+   **Location**: This location is what will be displayed on confirmation and reminder emails for both staff and customers, and it will be displayed on the calendar event created for the booking.
 
    **Add online meeting**: This setting enables or disables online meetings for each appointment, either via Teams or Skype, depending on which one you configure as the default client for the staff member.
 
@@ -51,13 +61,13 @@ You can also add customized information and URLs to the email confirmation and r
        > Teams meetings can be joined via the Teams mobile app, the Teams desktop app, in a Web browser, or via the phone dial-in. We strongly recommend enabling Teams as the default online meeting service for your tenant, for the best experience booking virtual appointments.
 
    - Disabled:
-     - Appointments will not contain a meeting option, and all of the meeting-related fields that appear when **Add online meeting** is enabled will not be shown.
+     - Appointments won't contain a meeting option, and all of the meeting-related fields that appear when **Add online meeting** is enabled won't be shown.
 
    **Duration**: This is how long all meetings will be booked for. The time is blocked beginning from the start time, which is selected during booking. The full appointment time will be blocked on the staff's calendars.
 
    **Buffer time**: Enabling this setting allows for the addition of extra time to the staff’s calendar every time an appointment is booked.
 
-   The time will be blocked on the staff’s calendar and impact free/busy information. This means if an appointment ends at 3:00 pm and 10 minutes of buffer time has been added to the end of the meeting, the staff’s calendar will show as busy and non-bookable until 3:10pm. This can be useful if your staff needs time before a meeting to prepare, such as a doctor reviewing a patient’s chart, or a financial advisor preparing relevant account information. It can also be useful after a meeting, such as when someone needs time to travel to another location.
+   The time will be blocked on the staff’s calendar and impact free/busy information. This means if an appointment ends at 3:00 pm and 10 minutes of buffer time has been added to the end of the meeting, the staff’s calendar will show as busy and nonbookable until 3:10pm. This can be useful if your staff needs time before a meeting to prepare, such as a doctor reviewing a patient’s chart, or a financial advisor preparing relevant account information. It can also be useful after a meeting, such as when someone needs time to travel to another location.
 
    **Price not set**: Select the price options that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
 
@@ -67,7 +77,7 @@ You can also add customized information and URLs to the email confirmation and r
 
    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
 
-   **Let the customer manage their booking**: This setting determines whether or not the customer can modify or cancel their booking, provided it was booked through the Calendar tab on the Bookings Web app.
+   **Let customers manage their appointment when it was booked by you or your staff on their behalf**: This setting determines whether or not the customer can modify or cancel their booking, provided it was booked through the Calendar tab on the Bookings Web app.
 
    - Enabled:
 
@@ -77,9 +87,9 @@ You can also add customized information and URLs to the email confirmation and r
      - **Cancel booking** This cancels the booking and removes it from the staff's calendar.
      - **New booking** This option brings the user to the Self-Service page with all services and staff listed, for scheduling a new booking.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings.":::
+       :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings.":::
 
-      We only recommend leaving this setting enabled if you're comfortable with customers accessing the Self-Service page.
+       We only recommend leaving this setting enabled if you're comfortable with customers accessing the Self-Service page.
 
    - Disabled:
 
@@ -87,39 +97,50 @@ You can also add customized information and URLs to the email confirmation and r
 
      We recommend disabling this setting if you want to limit access to the Self-Service page. Additionally, we suggest adding text to your confirmation and reminder emails that tells your customers how to make changes to their booking through other means, such as by calling the office or emailing the help desk.
 
-4. On the **Availability options** page, you can see the options you've selected from your **Booking page** for your scheduling policy and availability for your staff. For more information, see [Set your scheduling policies](set-scheduling-policies.md).
+   **Language**: Select the default language for the booking from the drop-down list.
 
-5. On the revamped **Assign staff** page, you can smoothly assign and remove assigned staff members from a service. There are two more controls added on this page:
+1. On the **Availability options** page, you can see the options you've selected from your **Booking page** for your scheduling policy and availability for your staff. For more information, see [Set your scheduling policies](set-scheduling-policies.md).
 
-    - **Single staff** When this option is selected, the booking will be scheduled with a single staff member.
-    - **Multiple staff** This feature allows you to create a service with multiple staff members. The booking will be scheduled with all of the assigned staff members of the service. You can refer to this service as N:1 booking service.
+1. On the revamped **Assign staff** page, you can smoothly assign and remove assigned staff members from a service. There are two more controls added on this page:
 
-> [!NOTE]
-> For Multiple staff, you can only create a booking when all assigned staff members are available to attend.
+    - **Assign any of your selected staff for an appointment**: When this option is selected, the booking will be scheduled with a single staff member.
+    - **Multiple staff**: This feature allows you to create a service with multiple staff members. The booking will be scheduled with all of the assigned staff members of the service. You can refer to this service as N:1 booking service.
 
-6. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
+    > [!NOTE]
+    > For Multiple staff, you can only create a booking when all assigned staff members are available to attend.
 
-    - Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
+    - **Allow customers to choose a particular staff for booking**: This setting enables customers to view and choose from among specific staff members for the booking.
+    - **Select staff**: You can choose specific staff members for bookings created using this service.
 
-7. On the **Notifications** page, you can send SMS messages, set up reminders, and send notifications.
+1. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
 
-    - **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
-    - **Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
+    Customer email, phone number, address, and notes are nonremovable fields, but you can make them optional by deselecting **Required** beside each field.
 
-   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="A confirmation email from Bookings.":::
+1. On the **Notifications** page, you can send SMS messages, set up reminders, and send notifications.
 
-   You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
+    > [!NOTE]
+    > Text message notifications in Bookings requires a Teams Premium license.
 
-   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email." lightbox="media/bookings-additional-info.jpg":::
+    **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
+
+    **Email confirmation, Email reminders, and Email follow-up**: These notifications are sent out to customers, staff members, or both, when the booking is created or changed, at a specified time before the appointment, and at a specified time after the appointment. Multiple reminder and follow-up messages can be created for each appointment, according to your preference.
+
+    :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="A confirmation email from Bookings.":::
+
+    You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
+
+    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email." lightbox="media/bookings-additional-info.jpg":::
   
-  Opt-in box on the manual booking and Self-Service Page:
+    Opt-in box on the manual booking and Self-Service Page:
 
-:::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
+    :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
 
-  Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
+    Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
 
-:::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
+    :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
 
-8. There are two more controls available to ease your Service creation journey:
-    - **Default scheduling options** is on by default. Turn the toggle off if you want to customize how customers book a particular staff member.
+1. There are two more controls available to ease your Service creation journey:
+    - **Default scheduling policy** is on by default. Turn the toggle off if you want to customize how customers book a particular staff member.
     - **Publishing options** Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
+
+1. Select **Save changes** to create the new service.

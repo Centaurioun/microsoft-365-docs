@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/27/2020
+ms.date: 10/10/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -27,10 +27,6 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-search.appverid:
-- MET150
-- MOE150
-- BEA160
 description: "When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up."
 ---
 
@@ -98,7 +94,7 @@ To set up services, you have to update records at your DNS host or domain regist
 
 2. Follow the steps in the wizard and email and other services will be set up for you.
 
-    When the signup process is complete, you'll be directed to the admin center, where you'll follow a wizard to install Microsoft 365 apps, add your domain, add users, and assign licenses. After you complete the initial setup, you can use the **Setup** page in the admin center to continue setting up and configuring the services that come with your subscriptions.
+    When the signup process is complete, you'll be directed to the admin center, where you'll follow a wizard to install apps in Microsoft 365, add your domain, add users, and assign licenses. After you complete the initial setup, you can use the **Setup** page in the admin center to continue setting up and configuring the services that come with your subscriptions.
 
     For more information about the setup wizard and the admin center **Setup** page, see [Difference between the setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
@@ -110,7 +106,7 @@ To set up services, you have to update records at your DNS host or domain regist
 
 1. From the **How you'll sign in** page on the Microsoft 365 Business Standard sign up, choose **Create a new business email account (advanced)**.
 
-2. Follow the steps to buy a new domain and enter the domain name you want to use (like contoso.com). After you've completed buying your domain, you can [add users and licenses](../add-users/add-users.md) and install your Microsoft 365 apps in the admin center.
+2. Follow the steps to buy a new domain and enter the domain name you want to use (like contoso.com). After you've completed buying your domain, you can [add users and licenses](../add-users/add-users.md) and install your Microsoft 365 productivity apps in the admin center.
 
 ## Finish setting up
 
@@ -163,18 +159,6 @@ You can also use <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" tar
 Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
 
 1. Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
-
-## Use a public website
-
-Microsoft 365 doesn't include a public website for your business. If you want to set one up, consider using a Microsoft partner, such as GoDaddy or WIX.
-  
-1. From the admin center, go to **Resources**, and then select **Public website**.
-
-2. Select **Learn more** under one of the options, and then sign up with a website partner and use their tools to set up and design your site.
-
-## Watch: Create your business website
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
 ## Invite users to join your subscription and organization
 

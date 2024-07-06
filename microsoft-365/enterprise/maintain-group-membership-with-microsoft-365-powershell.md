@@ -7,6 +7,7 @@ ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,10 +16,11 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
+ms.custom:
+  - PowerShell
+  - Ent_Office_Other
+  - O365ITProTrain
+  - has-azure-ad-ps-ref
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Learn how to use PowerShell to maintain membership in Microsoft 365 groups."
 ---
@@ -37,6 +39,8 @@ You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 ### Add or remove user accounts as members of a group
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 **To add a user account by its UPN**, fill in the user account User Principal Name (UPN) (example: belindan@contoso.com) and the security group display name, removing the “<” and “>” characters, and run these commands in the PowerShell window or the PowerShell Integrated Script Environment (ISE).
 
@@ -90,7 +94,7 @@ $groupName="<display name of the group that will contain the member group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 

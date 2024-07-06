@@ -5,16 +5,18 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
+ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 09/20/2022
-ms.reviewer: dmwmsft
+ms.date: 02/29/2024
+ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
+- must-keep
 ---
 
 # Data Residency for Viva Topics
@@ -31,17 +33,17 @@ Capability summary: Viva Topics uses Microsoft Artificial Intelligence technolog
 
 Required Conditions:
 
-1. _Tenant_ has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign-up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The Viva Topics subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
 **Commitment:**
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#viva-topics) for the specific customer data at rest commitment for Viva Topics.
+Refer to the [ADR Commitment page](m365-dr-commitments.md#viva-topics) for the specific customer data at rest commitment for Viva Topics.
 
 ## Migration
 
-Data stored is maintained within Exchange Online, SharePoint Online, and Microsoft Teams. Migration processes are handled by the applicable/relevant workloads.
+Data stored is maintained within Exchange Online, SharePoint, and Microsoft Teams. Migration processes are handled by the applicable/relevant workloads.
 
 ## How can I determine customer data location?
 
