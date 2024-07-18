@@ -32,7 +32,7 @@ This article only applies to commercial customers who buy or activate business p
 
 ## What is a registration number?  
 
-A registration number, sometimes referred to as a Tax Identification Number (TIN), is a number issued by the tax authority in your country/region to identify your organization for tax purposes. We use the registration number to review the details of your account. The review lets us determine if Microsoft can provide you with products and services. For information about what registration numbers are needed for a country/region, see [Tax Identification Numbers](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
+A registration number, sometimes referred to as a Tax Identification Number (TIN), is a number issued by the tax authority in your country/region to identify your organization for tax purposes. We use the registration number to review the details of your account. The review lets us determine if Microsoft can provide you with products and services.
 
 For countries/regions where the registration number is mandatory, the label above the text box indicates what type of number is required. For example, in the following screenshot, the label indicates that a CNPJ (Brazilian) registration number is needed.
 
@@ -42,7 +42,7 @@ For countries/regions where the registration number is optional, you can choose 
 
 :::image type="content" source="../media/macregnum-reg-screenshot_400.png" alt-text="Screenshot of the optional registration number field.":::
 
-To find out the format and type of registration number issued by your country/region, see [Tax Identification Numbers](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
+To find out the format and type of registration number issued by your country/region, contact your tax authority.
 
 ## How do I know if my account is under review?  
 
