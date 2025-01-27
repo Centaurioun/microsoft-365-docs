@@ -6,9 +6,9 @@ items:
       href: backup-overview.md
     - name: Admin setup 
       href: backup-setup.md
-    - name: Privacy, security, & compliance 
+    - name: Privacy, security, & compliance
       href: backup-privacy-security.md
-    - name: Billing & invoice management
+    - name: Invoice management
       href: backup-billing.md
     - name: Pricing model
       href: backup-pricing.md

@@ -1,11 +1,11 @@
 ---
-title: Manage billing and invoices for Microsoft 365 Backup
+title: Manage invoices for Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/10/2025
+ms.date: 01/27/2025
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -13,10 +13,10 @@ search.appverid:
 ms.collection:
     - essentials-get-started
 ms.localizationpriority:  medium
-description: Learn how to set up and manage pay-as-you-go billing and invoices in the Azure portal for Microsoft 365 Backup.
+description: Learn how to set up and manage usage and invoices in the Azure portal for Microsoft 365 Backup.
 ---
-
-# Manage billing and invoices for Microsoft 365 Backup
+<!---
+# Manage consumption and invoices for Microsoft 365 Backup
 
 As a first step to start using Microsoft 365 Backup, you should link an Azure subscription in Microsoft Syntex pay-as-you-go, if you haven't already done so. Although Microsoft 365 Backup isn't part of the Microsoft Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 
@@ -77,6 +77,7 @@ You have successfully set up billing. You can proceed to [Step 2: Turn on Micros
 
 > [!NOTE]
 > Any subsequent changes made to the billing for Microsoft 365 Backup in the Microsoft 365 admin center or the Azure portal can take up to 24 hours to become effective.
+--->
 
 ## Manage consumption and invoices in the Azure portal
 

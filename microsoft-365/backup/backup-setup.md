@@ -32,7 +32,7 @@ Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumpti
 > * **Region**. The region in which you want to register the service.
 > * **Owner or contributor**. Name of an owner or contributor role on the Azure subscription.
 
-Once you have the information on this list, you're ready to [set up pay-as-you-go billing for Microsoft 365 Backup](backup-billing.md).
+Once you have the information on this list, you're ready to [set up pay-as-you-go billing](#set-up-pay-as-you-go-billing).
 <!---
 </br>
 
@@ -45,6 +45,64 @@ Once you have the information on this list, you're ready to [set up pay-as-you-g
 You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
 
 [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
+
+### Set up pay-as-you-go billing
+
+Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
+
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Setup**.
+
+2. Under **Files and content**, select **Automate content processes with Syntex**.
+
+3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
+
+    ![Screenshot of the Set up billing option in the Microsoft 365 admin center.](../media/m365-backup/backup-setup-billing.png)
+
+    > [!NOTE]
+    > To set up pay-as-you-go billing for Microsoft 365 Backup, you must provide an owner or contribution role on the Azure subscription to be used.
+
+4. If you ***don't*** have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go directly to step 5.
+
+    To create a new Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
+
+    1. Sign in to the [Azure portal](https://portal.azure.com) with your Microsoft 365 admin, Microsoft Entra DC admin, or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) account.
+
+        [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
+
+    1. In the left navigation, select **Subscriptions**, and then select **Add**.
+
+    1. On the **Add subscription** page, select an offer and complete the payment information and agreement.
+
+    To create a new Azure resource group:
+
+    1. On the **Set up pay-as-you-go billing** panel, select **Learn more about Azure resource groups**.
+
+    1. Or, you can follow steps in [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group.
+
+    ![Screenshot of the Set up pay-as-you-go billing panel in the Microsoft 365 admin center.](../media/m365-backup/backup-billing-panel.png)
+
+    > [!NOTE]
+    > The resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
+
+5. If you ***have*** an Azure subscription, follow these steps:
+
+    1. On the **Set up pay-as-you-go billing** panel, under **Azure subscription**, select the subscription from the dropdown list.
+
+       > [!NOTE]
+       > The subscription dropdown list will not populate if you don't have an owner or contributor on the subscription.
+
+       ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../media/m365-backup/back-billing-subscription.png)
+
+    1. Under **Resource group**, select the resource group from the dropdown list.
+
+    1. Under **Region**, select the region from the dropdown list.
+
+    1. Review and accept the terms of service, and then select **Save**.
+
+You have successfully set up billing. You can proceed to [Step 2: Turn on Microsoft 365 Backup](backup-setup.md#step-2-turn-on-microsoft-365-backup).
+
+> [!NOTE]
+> Any subsequent changes made to the billing for Microsoft 365 Backup in the Microsoft 365 admin center or the Azure portal can take up to 24 hours to become effective.
 
 ## Step 2: Turn on Microsoft 365 Backup
 
