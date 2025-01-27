@@ -99,7 +99,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
     1. Review and accept the terms of service, and then select **Save**.
 
-You have successfully set up billing. You can proceed to [Step 2: Turn on Microsoft 365 Backup](backup-setup.md#step-2-turn-on-microsoft-365-backup).
+You have successfully set up billing. You can proceed to [turn on Microsoft 365 Backup](#step-2-turn-on-microsoft-365-backup).
 
 > [!NOTE]
 > Any subsequent changes made to the billing for Microsoft 365 Backup in the Microsoft 365 admin center or the Azure portal can take up to 24 hours to become effective.
