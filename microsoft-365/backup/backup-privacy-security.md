@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/10/2025
+ms.date: 01/29/2025
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 search.appverid: 
@@ -48,6 +48,37 @@ All data within Microsoft 365 Backup is stored within the customer tenant for an
 Microsoft 365 Backup works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such role-based access, identity and app management, and others—apply to Microsoft 365 Backup.
 
 ## Compliance
+
+### Special handling, compliance, and backup data deletion
+
+> [!IMPORTANT]
+> Given that compliance tooling actions might destroy primary data, we administratively isolate those destructive actions from flowing through to backed up data automatically. In other words, **compliance actions that automatically delete your primary data will not automatically delete data from your backups**.
+
+The core purpose of the backup and restore service is to provide you with a way to recover from common data deletion, overwrite, or encryption events.
+
+#### eDiscovery
+
+Data in the Exchange Online backups is not eDiscoverable via existing eDiscovery tooling.
+
+Data in the OneDrive account and SharePoint site backups that aren't currently part of your live latest version data in your tenant aren't eDiscoverable. An eDiscovery search won't discover data that exists solely in the OneDrive or SharePoint backups.
+
+#### General Data Protection Regulations (GDPR) workflow instructions
+
+GDPR workflows aren't directly executable on all data in Microsoft 365 Backup.
+
+GDPR data service request (DSR) data deletion actions operated on the tenant won't delete data in the backups. Those actions must be executed again after a Backup restoration to ensure the original DSR is honored.
+
+DSRs related to the discovery of data using eDiscovery is possible for Exchange Online backups, but the same isn't possible for OneDrive or SharePoint backups.
+
+#### Retention policies
+
+Retention and deletion policies don't “flow through” to the backups. This means that backup retention is governed solely by the backup policy. That policy currently has a nonvariable one year retention period. Once data is restored from the backups, that now-live data will be governed by applicable retention or deletion policies.
+
+#### Sensitivity labels
+
+Restoration of any data (such as sites or mailbox items) reverts the data's sensitivity labels to the state of that protected item at the prior point from which it's being restored. That is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time.
+
+## Compliance tools and resources
 
 Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
 
