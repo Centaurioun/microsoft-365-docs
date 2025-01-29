@@ -78,7 +78,7 @@ Retention and deletion policies don't “flow through” to the backups. This me
 
 Restoration of any data (such as sites or mailbox items) reverts the data's sensitivity labels to the state of that protected item at the prior point from which it's being restored. That is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time.
 
-## Compliance tools and resources
+### Compliance tools and resources
 
 Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
 
