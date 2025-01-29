@@ -62,7 +62,7 @@ Data in the Exchange Online backups is not eDiscoverable via existing eDiscovery
 
 Data in the OneDrive account and SharePoint site backups that aren't currently part of your live latest version data in your tenant aren't eDiscoverable. An eDiscovery search won't discover data that exists solely in the OneDrive or SharePoint backups.
 
-#### General Data Protection Regulations (GDPR) workflow instructions
+#### GDPR workflow instructions
 
 GDPR workflows aren't directly executable on all data in Microsoft 365 Backup.
 
