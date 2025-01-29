@@ -97,7 +97,7 @@ If you bought your subscription through an Enterprise volume licensing agreement
 | Open / Open Value | Subscription start date based on activation of token (not necessarily purchase date) | 30 days | 90 days | Terminal state |
 
 > [!NOTE]
-> Not all VL subscriptions have a 90 day grace period. Some products and services, like PowerBI Premium P plans and some Microsoft 365 Copilot subscriptions bought through VL only have a 30 day grace period.
+> Not all VL subscriptions have a 90 day grace period. Some products and services, like some Microsoft 365 Copilot subscriptions, bought through VL only have a 30 day grace period.
 
 ### Lifecycle status durations for Cloud Service Provider (CSP) customers
 

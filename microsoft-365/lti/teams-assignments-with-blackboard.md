@@ -32,18 +32,6 @@ For an overview of all of the Microsoft integrations for learning management sys
 1. Review the prepopulated settings and make sure the **Tool Status** is **Approved** and then select **Submit** to complete the registration. It's recommended that you verify the **Placements** created for the tool to ensure the **Allow students access** option is enabled for both placements.
 1. Teams Assignments is now installed and ready to be used as a tool in any course in your Blackboard environment.
 
-If your users access Blackboard through a custom domain (blackboard.myschool.edu and not myschool.blackboard.com), then a registration is required in the Microsoft LTI registration portal:
-
-> [!IMPORTANT]
-> A Microsoft 365 global admin account is needed to create a new registration in the LTI registration portal.
-
-1. In an in-private or incognito browser session, browse to the [Microsoft LTI Portal](https://lti.microsoft.com/registration) and authenticate with a Microsoft 365 Global Admin credential for your Microsoft 365 tenant.  
-1. Select the **Add new registration** button and choose the **Microsoft Teams Assignments** in the Select an LTI app selection.
-1. On the **Credential details** dialog, name your registration (can be any name you choose), and select **Blackboard** from the **LMS Platform** dropdown.
-1. The values listed on **Microsoft LTI app keys** dialog are already saved in your Blackboard tool installation, so you can select **Next** on this dialog.
-1. On the **LMS provided registration keys** dialog, enter the values from your Blackboard app registration and then select **Next.**
-1. Review the information on the Review and Save dialog and then select **Save and exit.**
-
 > [!IMPORTANT]
 > If prepopulated parameters or policies are edited, the app might not function properly. Double-check the enablement status of the app  and student access settings for each placement as your Blackboard configuration might disable them by default. Student settings on both the Teams Assignments and Link a Teams Assignment placement should have **Allow students access** enabled and **Launch in new window** disabled.
 > 

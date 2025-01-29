@@ -290,7 +290,7 @@ items:
         - name: Translate a file 
           href: content-processing-translate.md
 
-    - name: Taxonomy features
+    - name: Taxonomy tools
       items:
         - name: Import using SKOS
           href: import-term-set-skos.md

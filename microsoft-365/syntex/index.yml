@@ -100,7 +100,7 @@ landingContent:
             url: adoption-assessment-tool.md
 
 # Card 5
-  - title: Additional features
+  - title: Included features
     linkLists:
       - linkListType: overview
         links:
@@ -114,7 +114,7 @@ landingContent:
             url: content-processing-overview.md
           - text: Solution accelerators
             url: site-templates.md
-          - text: Taxonomy features
+          - text: Taxonomy tools
             url: import-term-set-skos.md
 
 # Card 6
