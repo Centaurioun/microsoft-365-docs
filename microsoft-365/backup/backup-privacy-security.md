@@ -49,7 +49,7 @@ Microsoft 365 Backup works with and integrates into Microsoft 365. This means th
 
 ## Compliance
 
-### Special handling, compliance, and backup data deletion
+### Data deletion and compliance handling
 
 > [!IMPORTANT]
 > To ensure the integrity of your backed-up data, we administratively isolate compliance actions that might delete primary data. This means that **any compliance actions that automatically delete your primary data will not affect your backed-up data**.
