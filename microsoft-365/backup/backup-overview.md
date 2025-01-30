@@ -124,6 +124,6 @@ We partner with many independent software vendors (ISVs) to provide differentiat
 
 For a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide more enhanced experiences or workflows.
 
-## General Data Protection Regulations (GDPR)
+## General Data Protection Regulations
 
-For information about GDPR and Microsoft 365 Backup, see [GDPR special handling, compliance, and backup data deletion](backup-offboarding.md#gdpr-special-handling-compliance-and-backup-data-deletion).
+For information about GDPR and Microsoft 365 Backup, see [Privacy, security, and compliance](backup-privacy-security.md).
