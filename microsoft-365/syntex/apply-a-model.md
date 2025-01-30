@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/28/2025
+ms.date: 01/30/2025
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -31,7 +31,7 @@ After you train an unstructured document processing model, train and publish a f
 This article applies to both *enterprise models* and *local models*. An enterprise model is created and trained in the [content center](create-a-content-center.md), and can be discovered by others to use. A [local model](create-local-model.md) is created and trained locally on your own SharePoint site.  
 
 > [!NOTE]
-> You can apply the model only to sites where the model type is enabled.
+> You can only apply models to sites where the model type is enabled. If the service is subsequently turned off, the model will no longer run.
 
 ## Apply your model to a document library
 
