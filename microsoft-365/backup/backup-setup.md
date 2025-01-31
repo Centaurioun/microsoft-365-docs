@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/24/2025
+ms.date: 01/31/2025
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -22,9 +22,15 @@ Get started with Microsoft 365 Backup by following these simple three steps in t
 
 ![Diagram showing the three-step setup process for Microsoft 365 Backup.](../media/m365-backup/backup-setup-diagram.png)
 
+### Permissions
+
+You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
+
 ## Step 1: Set up pay-as-you-go billing
 
-Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional user-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you need to have this information:
+To set up pay-as-you-go for Microsoft 365 Backup, you need to have this information:
 
 > [!div class="checklist"]
 > * **Valid Azure subscription**. An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
@@ -40,13 +46,9 @@ Once you have the information on this list, you're ready to [set up pay-as-you-g
 
 </br>
 --->
-### Permissions
+As a first step, you should link an Azure subscription in Microsoft Syntex pay-as-you-go, if you haven't already done so. Although Microsoft 365 Backup isn't part of the Microsoft Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 
-You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
-
-[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
-
-### Set up pay-as-you-go billing
+<!---### Set up pay-as-you-go billing--->
 
 Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
@@ -89,7 +91,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
     1. On the **Set up pay-as-you-go billing** panel, under **Azure subscription**, select the subscription from the dropdown list.
 
        > [!NOTE]
-       > The subscription dropdown list will not populate if you don't have an owner or contributor on the subscription.
+       > The subscription dropdown list won't populate if you don't have an owner or contributor on the subscription.
 
        ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../media/m365-backup/back-billing-subscription.png)
 
@@ -103,6 +105,9 @@ You have successfully set up billing. You can proceed to [turn on Microsoft 365 
 
 > [!NOTE]
 > Any subsequent changes made to the billing for Microsoft 365 Backup in the Microsoft 365 admin center or the Azure portal can take up to 24 hours to become effective.
+
+> [!NOTE]
+> There will be only one billing profile created. Microsoft 365 Backup currently doesn't support multiple billing profiles.
 
 ## Step 2: Turn on Microsoft 365 Backup
 
@@ -138,9 +143,11 @@ Now that Microsoft 365 Backup is enabled for your organization, follow through t
 
 4. [Create backup policies for OneDrive, SharePoint, or Exchange](backup-view-edit-policies.md#create-backup-policies).
 
+<!---
 ## Multi-geo environments
 
 Microsoft 365 Backup supports the backup of sites and user accounts from both the central and satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via the site picker, search, or filter rules doesn't currently support multi-geo. Those user interface experiences today only support addition of sites in the tenant's central location.
+--->
 
 ## Admin roles and backup management privileges
 
