@@ -50,7 +50,7 @@ As a first step, you should link an Azure subscription in Microsoft Syntex pay-a
 
 <!---### Set up pay-as-you-go billing--->
 
-Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
+To set up pay-as-you-go billing for Microsoft 365 Backup, follow these steps:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Setup**.
 
