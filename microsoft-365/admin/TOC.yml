@@ -266,6 +266,8 @@ items:
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
       items:
+         - name: Copilot in Microsoft 365 admin centers
+           href: /copilot/microsoft-365/copilot-for-microsoft-365-admin
          - name: Microsoft 365 Copilot extensibility
            items:
             - name: Manage agents for Copilot
