@@ -41,7 +41,6 @@ See the following links to understand how you can determine current data residen
 - Microsoft Defender for Office (MDO P1)  [Data Location](m365-dr-workload-mdo-p1.md#how-can-i-determine-customer-data-location)
 - Office for the Web (Office Online)  [Data Location](m365-dr-workload-office-for-web.md#how-can-i-determine-customer-data-location)
 - Viva Connections [Data Location](m365-dr-workload-viva-connections.md#how-can-i-determine-customer-data-location)
-- Viva Topics [Data Location](m365-dr-workload-viva-topics.md#how-can-i-determine-customer-data-location)
 - Microsoft Purview (select services)  [Data Location](m365-dr-workload-purview.md#how-can-i-determine-customer-data-location)
 
   - Data Loss Prevention
