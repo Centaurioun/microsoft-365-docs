@@ -38,12 +38,6 @@ description: "Learn how to set up your Microsoft 365 Business Basic subscription
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-## Watch: Set up Microsoft 365 Business Basic
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=af2891e6-92fd-4e0a-a502-3dcbdde4d81e]
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
-
 ## Add an existing domain to your Microsoft 365 Business Basic subscription
 
 When you purchase Microsoft 365 Business Basic, you have the option of using a domain you own, or buying one during the sign-up.
@@ -74,7 +68,7 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
     If your hosting provider is GoDaddy or another host enabled with [domain connect](/office365/admin/get-help-with-domains/domain-connect), the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
     ![On GoDaddy Confirm Access page, select Authorize.](../../media/godaddyauth.png)
-
+   
 ## Add users and assign licenses
 
 You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center.

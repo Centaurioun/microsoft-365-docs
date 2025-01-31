@@ -65,9 +65,9 @@ For Microsoft's SaaS cloud offerings, a license allows a specific user account t
 
 ![An example of multiple licenses within subscriptions for Microsoft's SaaS-based cloud offerings.](../media/Subscriptions/Subscriptions-Fig2.png)
 
->[!Note]
->A security best practice is to use separate user accounts that are assigned specific roles for administrative functions. These dedicated administrator accounts do not need to be assigned a license for the cloud services that they administer. For example, a SharePoint administrator account does not need to be assigned a Microsoft 365 license.
->
+> [!Note]
+> A security best practice is to use separate user accounts that are assigned specific roles for administrative functions. These dedicated administrator accounts do not need to be assigned a license for the cloud services that they administer. For example, a SharePoint administrator account does not need to be assigned a Microsoft 365 license.  This also applies to administrative accounts, one person, one license as outlined in the following Microsoft Entra Blog: 
+> [https://techcommunity.microsoft.com/blog/identity/microsoft-entra-id-governance-licensing-clarifications/4164499](https://techcommunity.microsoft.com/blog/identity/microsoft-entra-id-governance-licensing-clarifications/4164499)
 
 For Azure PaaS-based cloud services, software licenses are built into the service pricing.
   
