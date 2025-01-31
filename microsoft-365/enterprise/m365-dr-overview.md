@@ -124,30 +124,30 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 
 | Country/Region  | Exchange Online | SharePoint, OneDrive | Teams | Microsoft 365 Copilot | MDO P1 | Office for the web | Viva Connections | Purview |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Australia | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Brazil | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Canada | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| European Union | P-M | P-M | P-M | P-M | - | - | - | - | - |
-| France | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Germany | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| India | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Israel | M-A | M-A | M-A | M-A | A | A | A | A | A |
-| Italy | M-A | M-A | M-A | M-A | A | A | A | A | A |
-| Japan | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Mexico | M-A | M-A | M-A | M-A | A | A | A | A | A |
-| New Zealand | M-A | M-A | M-A | M-A | A | A | A | A | A |
-| Norway | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Poland | M-A | M-A | M-A | M-A | A | A | A | A | A |
-| Qatar | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| South Africa | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| South Korea | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Spain | M-A | M-A | M-A | M-A | A | A | A | A | A |
-| Sweden | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Switzerland | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Taiwan | M-A | M-A | M-A | M-A | A | A | A | A | A |
-| United Arab Emirates | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| United Kingdom | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| United States | P-M | P-M | P-M | P-M | - | - | - | - | - |
+| Australia | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Brazil | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Canada | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| European Union | P-M | P-M | P-M | P-M | - | - | - | - |
+| France | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Germany | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| India | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Israel | M-A | M-A | M-A | M-A | A | A | A | A |
+| Italy | M-A | M-A | M-A | M-A | A | A | A | A |
+| Japan | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Mexico | M-A | M-A | M-A | M-A | A | A | A | A |
+| New Zealand | M-A | M-A | M-A | M-A | A | A | A | A |
+| Norway | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Poland | M-A | M-A | M-A | M-A | A | A | A | A |
+| Qatar | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| South Africa | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| South Korea | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Spain | M-A | M-A | M-A | M-A | A | A | A | A |
+| Sweden | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Switzerland | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Taiwan | M-A | M-A | M-A | M-A | A | A | A | A |
+| United Arab Emirates | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| United Kingdom | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| United States | P-M | P-M | P-M | P-M | - | - | - | - |
 
 P: Product Terms Data Residency<br>
 M: Multi-Geo Data Residency<br>
