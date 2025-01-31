@@ -231,7 +231,7 @@ Follow these steps to view and edit backup policies in SharePoint.
     ![Screenshot of the updated SharePoint sites backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-sites.png)
 
     > [!NOTE]
-    > Removing sites from backup policy means no future backups will be taken for those removed sites. Existing backups for the removed sites will not be deleted.
+    > Removing sites from backup policy means no future backups will be taken for those removed sites. Existing backups for the removed sites will not be deleted and will be charged.
 
 # [Exchange](#tab/exchange)
 
@@ -258,7 +258,7 @@ Follow these steps to view and edit backup policies for Exchange.
     ![Screenshot of the updated Exchange mailbox backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-mailbox.png)
 
     > [!NOTE]
-    > Removing mailboxes from backup policy means no future backups will be taken for those removed mailboxes. Existing backups for those mailboxes will not be deleted.
+    > Removing mailboxes from backup policy means no future backups will be taken for those removed mailboxes. Existing backups for those mailboxes will not be deleted and will be charged.
 
 ---
 
