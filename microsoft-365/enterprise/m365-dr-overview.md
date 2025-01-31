@@ -71,7 +71,7 @@ Microsoft 365 services aren't deployed to all Microsoft data centers globally. T
 
 Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time. This doesn't necessarily cause customer data to move to a new _Geography_.
 
-You can use the Microsoft 365 admin center to understand where your data for a given service is stored. As a _Tenant_ administrator you can find the actual data location by navigating to **Admin > Settings > Org Settings > Organization Profile > Data Location**. Currently the data location is available for Exchange Online, SharePoint, OneDrive, Microsoft Teams, Microsoft 365 Copilot, Exchange Online Protection, Viva Connections and Viva Topics. In addition to this resource, see the [Data Maps page](o365-data-locations.md).
+You can use the Microsoft 365 admin center to understand where your data for a given service is stored. As a _Tenant_ administrator you can find the actual data location by navigating to **Admin > Settings > Org Settings > Organization Profile > Data Location**. Currently the data location is available for Exchange Online, SharePoint, OneDrive, Microsoft Teams, Microsoft 365 Copilot, Exchange Online Protection, and Viva Connections. In addition to this resource, see the [Data Maps page](o365-data-locations.md).
 
 Some examples:
 
@@ -90,7 +90,7 @@ Some examples:
 Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_, there are three ways that this data could move to another _Geography_:
 
 1. The Microsoft 365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
-1. If a _Tenant_ subscribes to the _Multi-Geo_ service, then _Tenants_ user's data for Exchange Online, SharePoint, OneDrive, Microsoft Teams and Microsoft 365 Copilot can be assigned to _Satellite Geographies_. 
+1. If a _Tenant_ subscribes to the _Multi-Geo_ service, then _Tenants_ user's data for Exchange Online, SharePoint, OneDrive, Microsoft Teams and Microsoft 365 Copilot can be assigned to _Satellite Geographies_.
 1. If a _Tenant_ has sign up country/region as a _Local Region Geography_ and has a subscription to the _Advanced Data Residency_ service add-on, then the _Tenant_ data for the included services will be migrated from the _Regional Geography_ to the relevant _Local Region Geography_.
 
 ### Durable commitments on data location
@@ -111,7 +111,6 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 | Microsoft Defender for Office P1 |- |- |X<sup>3</sup> |
 | Office for the Web |- |- |X<sup>3</sup> |
 | Viva Connections |- |- |X<sup>3</sup> |
-| Viva Topics |- |- |X<sup>3</sup> |
 | Microsoft Purview |- |- |X<sup>3</sup> |
 
 1. Only available in the following countries/regions: Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States.
@@ -123,8 +122,8 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 
 #### **Table 3: Available Data Residency by Country/Region**
 
-| Country/Region  | Exchange Online | SharePoint, OneDrive | Teams | Microsoft 365 Copilot | MDO P1 | Office for the web | Viva Connections | Viva Topics | Purview |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Country/Region  | Exchange Online | SharePoint, OneDrive | Teams | Microsoft 365 Copilot | MDO P1 | Office for the web | Viva Connections | Purview |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Australia | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
 | Brazil | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
 | Canada | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
