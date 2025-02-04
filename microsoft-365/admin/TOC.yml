@@ -266,6 +266,8 @@ items:
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
       items:
+         - name: Copilot in Microsoft 365 admin centers
+           href: /copilot/microsoft-365/copilot-for-microsoft-365-admin
          - name: Microsoft 365 Copilot extensibility
            items:
             - name: Manage agents for Copilot
@@ -388,7 +390,7 @@ items:
               href: manage/teams-apps-work-only-on-teams.md
             - name: SaaS Linked Apps
               href: manage/saas-linked-apps.md
-            - name: Manage Copilot agents
+            - name: Manage agents for Copilot
               href: manage/manage-copilot-agents-integrated-apps.md
          - name: Centralized deployment of add-ins
            items:

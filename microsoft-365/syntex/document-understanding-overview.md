@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 11/12/2024
+ms.date: 01/22/2025
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -58,4 +58,4 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## Requirements and limitations
 
-For information about requirements to consider when choosing this model, see the [requirements and limitations for unstructured document processing](requirements-and-limitations.md#unstructured-document-processing).
+For information about requirements to consider when choosing this model, see the [requirements and limitations for unstructured document processing](requirements-and-limitations.md).

@@ -61,7 +61,7 @@ The following pay-as-you-go services are currently available:
 
 More services will be added as they become available.
 
-### Additional features
+### Included features
 
 Pay-as-you-go licensing includes access to additional content management features. You won't be charged on a pay-as-you-go basis when you use these features. These features include:
 

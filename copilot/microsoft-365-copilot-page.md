@@ -43,7 +43,7 @@ You can manage Microsoft 365 Copilot through the Microsoft 365 admin center by g
 
 ### Licenses
 
-You can manage Copilot licenses, including assigning and unassigning licenses, for your users.
+You can manage Copilot licenses, including assigning and unassigning licenses, for your users. For more information, see [License plans for Microsoft 365 Copilot](microsoft-365-copilot-licensing.md).
 
 ### Manage how your organization interacts with Microsoft 365 Copilot Chat
 
@@ -87,7 +87,9 @@ To learn more, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell m
 
 ### Copilot Agent Consumption Meter Configuration
 
-You can reach Power Platform Licensing from the Copilot Settings page in the Microsoft 365 admin center. This setting allows for the creation of a billing plan that tracks and manages consumption for Microsoft 365 Copilot Chat. By setting up a new billing plan, selecting an Azure subscription, and linking the necessary environments, this configuration helps manage message capacity, monitor usage, and handle overages efficiently, ensuring cost-effective resource usage. To learn more, see [Set up a pay-as-you-go plan - Power Platform](/power-platform/admin/pay-as-you-go-set-up).
+You can reach Power Platform Licensing from the Copilot Settings page in the Microsoft 365 admin center. This setting allows for the creation of a billing plan that tracks and manages consumption for Microsoft 365 Copilot Chat. By setting up a new billing plan, selecting an Azure subscription, and linking the necessary environments, this configuration helps manage message capacity, monitor usage, and handle overages efficiently, ensuring cost-effective resource usage. 
+
+To learn more, see [Set up a pay-as-you-go plan - Power Platform](/power-platform/admin/pay-as-you-go-set-up).
 
 ### Copilot in Teams meetings
 
@@ -107,18 +109,20 @@ Copilot in Viva Goals helps people brainstorm new goals, refine and improve exis
 
 To learn more, see [Copilot in Viva Goals](/viva/copilot/viva-copilot-overview#copilot-in-viva-goals).
 
-### Copilot in Viva Insights 
+### Copilot in Viva Insights
 
-Copilot in Viva Insights simplifies the query building process for analysts by suggesting a template, metrics, filters, and attributes relevant to their analysis. Use a combination of org-wide setting and custom policies to refine access for the people in your organization. [Learn more](/viva/insights/advanced/analyst/copilot-query). 
+Copilot in Viva Insights simplifies the query building process for analysts by suggesting a template, metrics, filters, and attributes relevant to their analysis. Use a combination of org-wide setting and custom policies to refine access for the people in your organization. 
 
-### Copilot in Edge 
+To learn more, see [Set up your queries using Microsoft 365 Copilot in Viva Insights](/viva/insights/advanced/analyst/copilot-query).
 
-‎Copilot‎ in ‎Edge‎ gives your organization AI-powered chat for work with enterprise data protection. To configure AI features for ‎Copilot‎ in ‎Edge,‎ you'll need to add a configuration profile in the settings for ‎Microsoft Edge‎.
+### Copilot in Edge
 
-To learn more, see [Copilot in Viva Edge](/deployedge/microsoft-edge-management-service).
+Copilot in Edge gives your organization AI-powered chat for work with enterprise data protection. To configure AI features for Copilot in Edge, you'll need to add a configuration profile in the settings for Microsoft Edge.
 
-### Copilot in Power Platform and Dynamics 365 
+To learn more, see [Get started with configuration profiles](/deployedge/microsoft-edge-management-service).
 
-This links directs you to the Power Platform admin center to manage settings specific to ‎Microsoft Copilot‎, agents, and ‎Copilot‎ agents in ‎Power Platform‎ and ‎Dynamics 365‎ products.
+### Copilot in Power Platform and Dynamics 365
 
-To learn more, see [Copilot in Viva Edge](/power-platform/copilot).
+This links directs you to the Power Platform admin center to manage settings specific to Microsoft Copilot, agents, and agents in Power Platform and Dynamics 365 products.
+
+To learn more, see [Copilots and generative AI in Power Platform](/power-platform/copilot).

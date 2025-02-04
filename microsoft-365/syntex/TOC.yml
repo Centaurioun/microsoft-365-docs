@@ -55,6 +55,9 @@ items:
           href: translation-setup.md
         - name: Translate documents 
           href: translation.md
+        - name: Use a glossary 
+          href: translation-glossary.md
+
 
     - name: eSignature 
       items: 
@@ -93,12 +96,13 @@ items:
               items:
                     - name: Model types
                       href: model-types-overview.md 
-                    - name: Requirements and limitations 
-                      href: requirements-and-limitations.md
+
             - name: Overview 
               href: prebuilt-overview.md
             - name: Admin setup
               href: prebuilt-setup.md
+            - name: Requirements and limitations 
+              href: prebuilt-requirements.md
             - name: Set up a content center 
               href: create-a-content-center.md
             - name: Create an enterprise model
@@ -150,12 +154,13 @@ items:
                       href: model-types-overview.md 
                     - name: Compare custom models 
                       href: difference-between-document-understanding-and-form-processing-model.md  
-                    - name: Requirements and limitations 
-                      href: requirements-and-limitations.md
+
             - name: Overview 
               href: form-processing-overview.md
             - name: Admin setup
               href: structured-freeform-setup.md
+            - name: Requirements and limitations 
+              href: structured-freeform-requirements.md
             - name: Set up a content center 
               href: create-a-content-center.md
             - name: Create an enterprise model
@@ -208,12 +213,12 @@ items:
                       href: model-types-overview.md 
                     - name: Compare custom models 
                       href: difference-between-document-understanding-and-form-processing-model.md  
-                    - name: Requirements and limitations 
-                      href: requirements-and-limitations.md
             - name: Overview
               href: document-understanding-overview.md
             - name: Admin setup
               href: unstructured-setup.md
+            - name: Requirements and limitations 
+              href: requirements-and-limitations.md
             - name: Import a sample model 
               href: learn-about-document-understanding-models-through-the-sample-model.md
             - name: Set up a content center 
@@ -285,7 +290,7 @@ items:
         - name: Translate a file 
           href: content-processing-translate.md
 
-    - name: Taxonomy features
+    - name: Taxonomy tools
       items:
         - name: Import using SKOS
           href: import-term-set-skos.md

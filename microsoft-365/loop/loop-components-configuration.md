@@ -152,7 +152,7 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
                 - OneNote integration
                 - Whiteboard integration
             - this setting does **NOT** apply to:
-                - Loop workspaces (see [Manage Loop workspaces in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration))
+                - Loop workspaces
                 - Teams integration (see [Settings management for Loop components in Teams](#settings-management-for-loop-functionality-in-teams))
                 - Copilot Pages
         - **Enabled**: Creation of Loop components and integration is available to the users.

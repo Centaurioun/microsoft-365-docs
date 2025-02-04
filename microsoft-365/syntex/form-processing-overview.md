@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/11/2024
+ms.date: 01/22/2025
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -63,4 +63,4 @@ If you need it enabled on your document library, contact your Microsoft 365 admi
 
 ## Requirements and limitations
 
-For information about requirements to consider when choosing this model, see the [requirements and limitations for structured and freeform document processing](requirements-and-limitations.md#structured-and-freeform-document-processing).
+For information about requirements to consider when choosing this model, see the [requirements and limitations for structured and freeform document processing](structured-freeform-requirements.md).
