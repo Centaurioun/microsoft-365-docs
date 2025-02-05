@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 01/23/2025
+ms.date: 02/04/2025
 
 audience: Admin
 ms.reviewer: briandesouza
@@ -23,17 +23,53 @@ appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Microsoft 365 Copilot release notes (preview)
+# Microsoft 365 Copilot release notes
 
 This page lists the latest features and improvements for Microsoft 365 Copilot. It includes changes that are generally available (Current Channel for Microsoft 365 apps) and specific to each platform.
 
-This is our preview version of Microsoft 365 Copilot release notes. We will use your feedback to improve this content over time.
-
 ## [All features](#tab/all)
-
 <!--- All features regardless of platform go here  -->
+## February 4, 2025
+Updates released between January 24, 2025, and February 4, 2025. 
+### Microsoft 365 Copilot App
+- **Updates to the Microsoft 365 (Office) app** [Windows, Web, Android, iOS]  
+  The Microsoft 365 Copilot app (formerly Microsoft 365 app) has a new name and icon. <a href="https://support.microsoft.com/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5" target="_blank">Learn more.</a>
+### Microsoft 365 Copilot Chat
+- **Access support pages in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
+  View organizational support pages directly within Copilot Chat, for quick help and guidance in your workflow.
+- **Accommodate user’s time zones in Copilot** [Windows, Web, Android, iOS]  
+  Copilot now references your local time zone when responding helping to avoid confusion and scheduling errors.
+- **Charts, graphs, and data analysis in Copilot for Microsoft 365** [Windows, Web]  
+  Use natural language to create charts, graphs, and data analysis in Copilot Chat work mode.
+- **Get more Copilot value with Microsoft 365 Copilot** [Web]  
+  Easily add full Copilot Chat capabilities including grounding conversations in work data and accessing Copilot in your favorite Microsoft 365 apps by purchasing or requesting a Microsoft 365 Copilot license directly in Copilot Chat. <a href="https://www.microsoft.com/microsoft-365/blog/2024/12/02/three-new-ways-small-and-medium-sized-businesses-can-purchase-microsoft-365-copilot/" target="_blank">Learn more.</a>
+### Microsoft Teams
+- **Speaker recognition and attribution in BYOD rooms with Copilot** [Windows, Mac]  
+  Take advantage of speaker recognition and transcript attribution, unleashing new AI capabilities in any meeting space, whether or not it has a Teams Rooms system deployed. This feature identifies and attributes people in live transcripts, utilizing a unique voice profile for each participant enabling intelligent recaps and unlocking maximum value from Microsoft 365 Copilot in Teams meetings. Users can easily and securely enroll their voices via Teams Settings. This feature requires a Microsoft 365 Copilot or Teams Premium license for the user hosting the meeting for Copilot experiences and intelligent recaps, respectively. <a href="/microsoftteams/rooms/voice-recognition?branch=main&branchFallbackFrom=pr-en-us-14676" target="_blank">Learn more.</a>
+### PowerPoint
+- **Use Copilot to rewrite, trim, or formalize text** [Web, Mac]  
+  Transform your presentation text by letting Copilot fix grammar, shorten lengthy content, or adopt a more professional tone—perfect for crafting clear, polished slides.
+### Prompt Gallery
+- **Share a prompt with a co-worker** [Windows, Web]  
+  Easily create, save, and share your favorite prompts using Copilot Prompt Gallery, inspiring your co-workers to achieve more with Copilot. <a href="/copilot/microsoft-365/copilot-prompt-gallery-export-prompts?branch=main&branchFallbackFrom=danbrown-copilot-labdsr" target="_blank">Learn more.</a>
+### SharePoint
+- **Restricted Content Discovery** [Web]  
+  Prevent specific SharePoint sites from being discoverable in tenant-wide search and Copilot. <a href="/sharepoint/restricted-content-discovery" target="_blank">Learn more.</a>
+### Word
+- **Browse cloud files with the file picker** [Mac]  
+  Use a file picker to browse your cloud directory and include relevant files without searching by name, making it easy to add key references to your draft.
+- **Draft from selected text, lists, or tables** [iOS]  
+  Generate new content right where you work by selecting text, lists, or tables and tapping into Copilot’s on-canvas menu. Quickly refine drafts and collaborate more interactively. <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/draft-with-copilot-in-word-on-a-selection-of-text-a-list-or-a-table/4191926" target="_blank">Learn more.</a>
+- **Draft with Copilot** [iOS]  
+  Quickly produce paragraphs or entire sections for your documents, whether you’re creating a brand-new file or adding to existing text. <a href="https://support.microsoft.com/office/draft-and-add-content-with-copilot-in-word-069c91f0-9e42-4c9a-bbce-fddf5d581541" target="_blank">Learn more.</a>
+- **Reference cloud files when drafting** [Mac]  
+  Use a file picker to browse your cloud directory and include relevant files without searching by name, making it easy to add key references to your draft.
+- **Reference data from the Microsoft cloud when drafting with Copilot in Word** [Windows, Web, Mac]  
+  Draft with Copilot now supports attaching rich content from the Microsoft cloud—including emails and meetings—resulting in more contextually relevant content. <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot-in-word-at-ignite-2024/4303448?previewMessage=true#:~:text=Reference%20meetings%20and%20emails%20in%20addition%20to%20documents%20when%20creating%20a%20new%20document%20with%20Copilot%C2%A0" target="_blank">Learn more.</a>
+- **Reference plain text files in Copilot** [Windows, Web, Mac]  
+  Add .txt files as sources with Copilot in Word, streamlining your process when working with text-based research or background content.
 ## January 23, 2025
-
+Updates released between January 8, 2025, and January 23, 2025.
 ### Forms
 - **Smart reminders with Copilot in Forms** [Web]  
   Copilot in Forms now offers smart reminders to help you monitor response progress and get more engagement with your forms, delivered right to your email inbox. <a href="https://support.microsoft.com/topic/smart-reminders-in-copilot-in-forms-d41f412f-f64a-4bee-b745-eebf58b7e036" target="_blank">Learn more.</a>
@@ -643,8 +679,32 @@ This is our preview version of Microsoft 365 Copilot release notes. We will use 
 ## [Windows](#tab/win)
 
 <!--- All features that have 'Windows' tag  -->
-## January 23, 2025
 
+## February 4, 2025
+Updates released between January 24, 2025, and February 4, 2025.
+### Microsoft 365 Copilot App
+- **Updates to the Microsoft 365 (Office) app** [Windows, Web, Android, iOS]  
+  The Microsoft 365 Copilot app (formerly Microsoft 365 app) has a new name and icon. <a href="https://support.microsoft.com/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5" target="_blank">Learn more.</a>
+### Microsoft 365 Copilot Chat
+- **Access support pages in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
+  View organizational support pages directly within Copilot Chat, for quick help and guidance in your workflow.
+- **Accommodate user’s time zones in Copilot** [Windows, Web, Android, iOS]  
+  Copilot now references your local time zone when responding helping to avoid confusion and scheduling errors.
+- **Charts, graphs, and data analysis in Copilot for Microsoft 365** [Windows, Web]  
+  Use natural language to create charts, graphs, and data analysis in Copilot Chat work mode.
+### Microsoft Teams
+- **Speaker recognition and attribution in BYOD rooms with Copilot** [Windows, Mac]  
+  Take advantage of speaker recognition and transcript attribution, unleashing new AI capabilities in any meeting space, whether or not it has a Teams Rooms system deployed. This feature identifies and attributes people in live transcripts, utilizing a unique voice profile for each participant enabling intelligent recaps and unlocking maximum value from Microsoft 365 Copilot in Teams meetings. Users can easily and securely enroll their voices via Teams Settings. This feature requires a Microsoft 365 Copilot or Teams Premium license for the user hosting the meeting for Copilot experiences and intelligent recaps, respectively. <a href="/microsoftteams/rooms/voice-recognition?branch=main&branchFallbackFrom=pr-en-us-14676" target="_blank">Learn more.</a>
+### Prompt Gallery
+- **Share a prompt with a co-worker** [Windows, Web]  
+  Easily create, save, and share your favorite prompts using Copilot Prompt Gallery, inspiring your co-workers to achieve more with Copilot. <a href="/copilot/microsoft-365/copilot-prompt-gallery-export-prompts?branch=main&branchFallbackFrom=danbrown-copilot-labdsr" target="_blank">Learn more.</a>
+### Word
+- **Reference data from the Microsoft cloud when drafting with Copilot in Word** [Windows, Web, Mac]  
+  Draft with Copilot now supports attaching rich content from the Microsoft cloud—including emails and meetings—resulting in more contextually relevant content. <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot-in-word-at-ignite-2024/4303448?previewMessage=true#:~:text=Reference%20meetings%20and%20emails%20in%20addition%20to%20documents%20when%20creating%20a%20new%20document%20with%20Copilot%C2%A0" target="_blank">Learn more.</a>
+- **Reference plain text files in Copilot** [Windows, Web, Mac]  
+  Add .txt files as sources with Copilot in Word, streamlining your process when working with text-based research or background content.
+## January 23, 2025
+Updates released between January 8, 2025, and January 23, 2025.
 ### Microsoft 365 Copilot Chat
 - **Introducing Microsoft 365 Copilot Chat** [Windows, Web, Android, iOS]  
   Microsoft 365 Copilot Chat—free, secure AI chat powered by GPT-4o with agents accessible right in chat, and IT controls including enterprise data protection and agent management. Copilot Chat serves as a powerful new on-ramp for everyone in your organization to build an AI habit. Get started with Copilot Chat with the updated <a href="https://www.m365copilot.com/" target="_blank">Microsoft 365 Copilot app</a> (formerly Microsoft 365 app). <a href="https://www.microsoft.com/microsoft-365/blog/2025/01/15/copilot-for-all-introducing-microsoft-365-copilot-chat/?msockid=2a248c37898f66ad3da5997888a267ca?ocid=copilot_ongoingemail_jan25" target="_blank">Learn more.</a>
@@ -1013,8 +1073,36 @@ This is our preview version of Microsoft 365 Copilot release notes. We will use 
 ## [Web](#tab/web)
 
 <!--- All features that have 'Web' tag  -->
+## February 4, 2025
+Updates released between January 24, 2025, and February 4, 2025.
+### Microsoft 365 Copilot App
+- **Updates to the Microsoft 365 (Office) app** [Windows, Web, Android, iOS]  
+  The Microsoft 365 Copilot app (formerly Microsoft 365 app) has a new name and icon. <a href="https://support.microsoft.com/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5" target="_blank">Learn more.</a>
+### Microsoft 365 Copilot Chat
+- **Access support pages in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
+  View organizational support pages directly within Copilot Chat, for quick help and guidance in your workflow.
+- **Accommodate user’s time zones in Copilot** [Windows, Web, Android, iOS]  
+  Copilot now references your local time zone when responding helping to avoid confusion and scheduling errors.
+- **Charts, graphs, and data analysis in Copilot for Microsoft 365** [Windows, Web]  
+  Use natural language to create charts, graphs, and data analysis in Copilot Chat work mode.
+- **Get more Copilot value with Microsoft 365 Copilot** [Web]  
+  Easily add full Copilot Chat capabilities including grounding conversations in work data and accessing Copilot in your favorite Microsoft 365 apps by purchasing or requesting a Microsoft 365 Copilot license directly in Copilot Chat. <a href="https://www.microsoft.com/microsoft-365/blog/2024/12/02/three-new-ways-small-and-medium-sized-businesses-can-purchase-microsoft-365-copilot/" target="_blank">Learn more.</a>
+### PowerPoint
+- **Use Copilot to rewrite, trim, or formalize text** [Web, Mac]  
+  Transform your presentation text by letting Copilot fix grammar, shorten lengthy content, or adopt a more professional tone—perfect for crafting clear, polished slides.
+### Prompt Gallery
+- **Share a prompt with a co-worker** [Windows, Web]  
+  Easily create, save, and share your favorite prompts using Copilot Prompt Gallery, inspiring your co-workers to achieve more with Copilot. <a href="/copilot/microsoft-365/copilot-prompt-gallery-export-prompts?branch=main&branchFallbackFrom=danbrown-copilot-labdsr" target="_blank">Learn more.</a>
+### SharePoint
+- **Restricted Content Discovery** [Web]  
+  Prevent specific SharePoint sites from being discoverable in tenant-wide search and Copilot. <a href="/sharepoint/restricted-content-discovery" target="_blank">Learn more.</a>
+### Word
+- **Reference data from the Microsoft cloud when drafting with Copilot in Word** [Windows, Web, Mac]  
+  Draft with Copilot now supports attaching rich content from the Microsoft cloud—including emails and meetings—resulting in more contextually relevant content. <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot-in-word-at-ignite-2024/4303448?previewMessage=true#:~:text=Reference%20meetings%20and%20emails%20in%20addition%20to%20documents%20when%20creating%20a%20new%20document%20with%20Copilot%C2%A0" target="_blank">Learn more.</a>
+- **Reference plain text files in Copilot** [Windows, Web, Mac]  
+  Add .txt files as sources with Copilot in Word, streamlining your process when working with text-based research or background content.
 ## January 23, 2025
-
+Updates released between January 8, 2025, and January 23, 2025.
 ### Forms
 - **Smart reminders with Copilot in Forms** [Web]  
   Copilot in Forms now offers smart reminders to help you monitor response progress and get more engagement with your forms, delivered right to your email inbox. <a href="https://support.microsoft.com/topic/smart-reminders-in-copilot-in-forms-d41f412f-f64a-4bee-b745-eebf58b7e036" target="_blank">Learn more.</a>
@@ -1456,8 +1544,20 @@ This is our preview version of Microsoft 365 Copilot release notes. We will use 
 
 ## [Android](#tab/androidos)
 
+## February 4, 2025
+Updates released between January 24, 2025, and February 4, 2025.
+### Microsoft 365 Copilot App
+- **Updates to the Microsoft 365 (Office) app** [Windows, Web, Android, iOS]  
+  The Microsoft 365 Copilot app (formerly Microsoft 365 app) has a new name and icon. <a href="https://support.microsoft.com/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5" target="_blank">Learn more.</a>
+### Microsoft 365 Copilot Chat
+- **Access support pages in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
+  View organizational support pages directly within Copilot Chat, for quick help and guidance in your workflow.
+- **Accommodate user’s time zones in Copilot** [Windows, Web, Android, iOS]  
+  Copilot now references your local time zone when responding helping to avoid confusion and scheduling errors.
+
 <!--- All features that have 'Android' tag  -->
 ## January 23, 2025
+Updates released between January 8, 2025, and January 23, 2025.
 
 ### Microsoft 365 Copilot Chat
 - **Introducing Microsoft 365 Copilot Chat** [Windows, Web, Android, iOS]  
@@ -1573,8 +1673,24 @@ This is our preview version of Microsoft 365 Copilot release notes. We will use 
 ## [iOS](#tab/appleios)
 
 <!--- All features that have 'iOS' tag  -->
-## January 23, 2025
+## February 4, 2025
+Updates released between January 24, 2025, and February 4, 2025. 
+### Microsoft 365 Copilot App
+- **Updates to the Microsoft 365 (Office) app** [Windows, Web, Android, iOS]  
+  The Microsoft 365 Copilot app (formerly Microsoft 365 app) has a new name and icon. <a href="https://support.microsoft.com/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5" target="_blank">Learn more.</a>
+### Microsoft 365 Copilot Chat
+- **Access support pages in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
+  View organizational support pages directly within Copilot Chat, for quick help and guidance in your workflow.
+- **Accommodate user’s time zones in Copilot** [Windows, Web, Android, iOS]  
+  Copilot now references your local time zone when responding helping to avoid confusion and scheduling errors.
+### Word
+- **Draft from selected text, lists, or tables** [iOS]  
+  Generate new content right where you work by selecting text, lists, or tables and tapping into Copilot’s on-canvas menu. Quickly refine drafts and collaborate more interactively. <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/draft-with-copilot-in-word-on-a-selection-of-text-a-list-or-a-table/4191926" target="_blank">Learn more.</a>
+- **Draft with Copilot** [iOS]  
+  Quickly produce paragraphs or entire sections for your documents, whether you’re creating a brand-new file or adding to existing text. <a href="https://support.microsoft.com/office/draft-and-add-content-with-copilot-in-word-069c91f0-9e42-4c9a-bbce-fddf5d581541" target="_blank">Learn more.</a>
 
+## January 23, 2025
+Updates released between January 8, 2025, and January 23, 2025.
 ### Microsoft 365 Copilot Chat
 - **Introducing Microsoft 365 Copilot Chat** [Windows, Web, Android, iOS]  
   Microsoft 365 Copilot Chat—free, secure AI chat powered by GPT-4o with agents accessible right in chat, and IT controls including enterprise data protection and agent management. Copilot Chat serves as a powerful new on-ramp for everyone in your organization to build an AI habit. Get started with Copilot Chat with the updated <a href="https://www.m365copilot.com/" target="_blank">Microsoft 365 Copilot app</a> (formerly Microsoft 365 app). <a href="https://www.microsoft.com/microsoft-365/blog/2025/01/15/copilot-for-all-introducing-microsoft-365-copilot-chat/?msockid=2a248c37898f66ad3da5997888a267ca?ocid=copilot_ongoingemail_jan25" target="_blank">Learn more.</a>
@@ -1804,7 +1920,29 @@ This is our preview version of Microsoft 365 Copilot release notes. We will use 
 ## [Mac](#tab/mac)
 
 <!--- All features that have 'Mac' tag  -->
+## February 4, 2025
+Updates released between January 24, 2025, and February 4, 2025.
+### Microsoft 365 Copilot Chat
+- **Access support pages in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
+  View organizational support pages directly within Copilot Chat, for quick help and guidance in your workflow.
+### Microsoft Teams
+- **Speaker recognition and attribution in BYOD rooms with Copilot** [Windows, Mac]  
+  Take advantage of speaker recognition and transcript attribution, unleashing new AI capabilities in any meeting space, whether or not it has a Teams Rooms system deployed. This feature identifies and attributes people in live transcripts, utilizing a unique voice profile for each participant enabling intelligent recaps and unlocking maximum value from Microsoft 365 Copilot in Teams meetings. Users can easily and securely enroll their voices via Teams Settings. This feature requires a Microsoft 365 Copilot or Teams Premium license for the user hosting the meeting for Copilot experiences and intelligent recaps, respectively. <a href="/microsoftteams/rooms/voice-recognition?branch=main&branchFallbackFrom=pr-en-us-14676" target="_blank">Learn more.</a>
+### PowerPoint
+- **Use Copilot to rewrite, trim, or formalize text** [Web, Mac]  
+  Transform your presentation text by letting Copilot fix grammar, shorten lengthy content, or adopt a more professional tone—perfect for crafting clear, polished slides.
+### Word
+- **Browse cloud files with the file picker** [Mac]  
+  Use a file picker to browse your cloud directory and include relevant files without searching by name, making it easy to add key references to your draft.
+- **Reference cloud files when drafting** [Mac]  
+  Use a file picker to browse your cloud directory and include relevant files without searching by name, making it easy to add key references to your draft.
+- **Reference data from the Microsoft cloud when drafting with Copilot in Word** [Windows, Web, Mac]  
+  Draft with Copilot now supports attaching rich content from the Microsoft cloud—including emails and meetings—resulting in more contextually relevant content. <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot-in-word-at-ignite-2024/4303448?previewMessage=true#:~:text=Reference%20meetings%20and%20emails%20in%20addition%20to%20documents%20when%20creating%20a%20new%20document%20with%20Copilot%C2%A0" target="_blank">Learn more.</a>
+- **Reference plain text files in Copilot** [Windows, Web, Mac]  
+  Add .txt files as sources with Copilot in Word, streamlining your process when working with text-based research or background content.
+
 ## January 23, 2025
+Updates released between January 8, 2025, and January 23, 2025.
 
 ### PowerPoint
 - **Generate summaries for longer presentations** [Windows, Web, Mac]  
