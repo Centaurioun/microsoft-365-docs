@@ -5,7 +5,7 @@ author: maggierui
 manager: jtremper
 ms.date: 12/15/2023
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.collection: 
 - highpri
