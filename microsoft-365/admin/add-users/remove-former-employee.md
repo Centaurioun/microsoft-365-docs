@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+- m365solution-overview
 ms.custom:
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done
