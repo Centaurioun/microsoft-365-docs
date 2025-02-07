@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 10/16/2024
+ms.date: 02/06/2025
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -43,7 +43,7 @@ Only Microsoft Word documents (.docx/.doc extension) are currently supported for
 
 - Because content controls are used in Word to create fields for the modern template, make sure any text fields for images aren't text-wrapped. If the document already contains content controls, remove them before you use it to create a modern template.
 
-### Current release limitations
+### Current release notes
 
 - The template and the document are associated with one document library. To use the template in another document library, you'll need to create the template again in that document library.
 
