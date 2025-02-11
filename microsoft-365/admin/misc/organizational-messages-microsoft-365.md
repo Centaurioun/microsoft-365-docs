@@ -156,7 +156,7 @@ If you have the Organizational Messages Writer Microsoft Entra role as described
 ## Create a message
 
 > [!IMPORTANT]
-> Organizational messages delivers messages to end users within the time windows configured by admins via Microsoft 365 admin center experiences. However, occasionally, messages might not be delivered as expected due to system or user device conditions, such as urgent messages not being delivered to devices that are disconnected from the internet. In such instances, our system continues trying to deliver messages as possible and appropriate.
+> Organizational messages deliver messages to end users within the time windows configured by admins via Microsoft 365 admin center experiences. However, occasionally, messages might not be delivered as expected due to system or user device conditions, such as urgent messages not being delivered to devices that are disconnected from the internet. In such instances, our system continues trying to deliver messages as possible and appropriate.
 
 Users with the Organizational Messages Writer Microsoft Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button invokes the wizard, which includes these primary creation steps:
 
@@ -304,11 +304,11 @@ For general availability, the advanced features in Organizational messages in Mi
 >[!NOTE]
 > If you recently onboarded your tenant to Microsoft Entra ID, it can take 36 to 64 hours before you're able to use the organizational messages features.
 
-There are certain policies in [Microsoft Intune](https://intune.microsoft.com) that will block the delivery of organizational messages to your end users if not configured properly. This section describes how to adjust all policy settings for your tenant so that delivery is always allowed and works as intended.
+There are certain policies that will block the delivery of organizational messages to your end users if not configured properly, such as using [Microsoft Intune](https://intune.microsoft.com). This section describes some ways to adjust all policy settings for your tenant so that delivery is allowed and works as intended.
 
 ### General Instructions
 
-To make policy changes on your tenant, your Intune admin must:
+To make policy changes on your tenant using Intune, your admin should:
 
 1. Sign in to the Microsoft Endpoint Manager admin center for your tenant.
 1. Configure the policies described below using a Microsoft Intune device restrictions profile template or the settings catalog.
@@ -423,6 +423,8 @@ You can find more information in the following documents:
 - [Experience/ConfigureWindowsSpotlightOnLockScreen](/windows/client-management/mdm/policy-csp-experience#experience-configurewindowsspotlightonlockscreen)
 
 - [Experience/AllowSpotlightCollection](/windows/client-management/mdm/policy-csp-experience#experience-allowspotlightcollection)
+
+- [Experience/OrganizationalMessages](/windows/client-management/mdm/policy-csp-experience#enableorganizationalmessages)
 
 ### What do the different message states mean?
 
