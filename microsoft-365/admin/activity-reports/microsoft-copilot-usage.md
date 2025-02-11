@@ -37,7 +37,7 @@ You can use this report to see the usage of Microsoft 365 Copilot Chat in your o
 
 You can view aggregated numbers for Microsoft 365 Copilot Chat active users and average daily active users:
 
-:::image type="content" source="../../media/microsoft-copilot-users.png" alt-text="Screenshot showing the number of active users for Microsoft 365 Copilot Chat usage." lightbox="../../media/microsoft-copilot-users.png":::
+:::image type="content" source="../../media/copilot-chat-usage.png" alt-text="Screenshot showing the number of active users for Microsoft 365 Copilot Chat usage." lightbox="../../media/copilot-chat-usage.png":::
 
 - **Active users** shows the total number of users who sent at least one message to Microsoft 365 Copilot Chat during the selected period.
 - **Average daily active users** indicates the average number of people using Microsoft 365 Copilot Chat per day over the selected period.
@@ -55,7 +55,7 @@ You can see the following summary charts in this report as default view:
 
 You can switch between Summary view and Trend view. When switching to Trend view, you can select one or multiple entry points in the dropdown list to see daily usage or compare among entry points.
 
-:::image type="content" source="../../media/microsoft-copilot-usage-app.png" alt-text="Screenshot showing the chart in Trend view to analyze adoption by app for Microsoft 365 Copilot Chat." lightbox="../../media/microsoft-copilot-usage-app.png":::
+:::image type="content" source="../../media/copilot-chat-adoption.png" alt-text="Screenshot showing the chart in Trend view to analyze adoption by app for Microsoft 365 Copilot Chat." lightbox="../../media/copilot-chat-adoption.png":::
 
 Below is a table of app details for active Microsoft 365 Copilot Chat users:
 

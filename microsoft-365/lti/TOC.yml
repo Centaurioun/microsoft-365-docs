@@ -45,10 +45,12 @@ items:
         href: open-lms-teams-classes-and-meetings.md
     - name: D2L Brightspace integrations
       items:
-      - name: Use Microsoft Teams classes and meetings with Brightspace
-        href: teams-classes-meetings-with-brightspace.md
       - name: Use Microsoft OneDrive LTI with Brightspace
         href: onedrive-lti-brightspace.md
+      - name: Use Microsoft Teams Assignments with Brightspace  
+        href: teams-assignments-with-brightspace.md
+      - name: Use Microsoft Teams classes and meetings with Brightspace
+        href: teams-classes-meetings-with-brightspace.md
       - name: Use Microsoft Reflect LTI with D2L Brightspace
         href: reflect-lti-brightspace.md        
     - name: Schoology Learning integrations
