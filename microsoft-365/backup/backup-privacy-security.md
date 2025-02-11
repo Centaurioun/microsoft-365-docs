@@ -78,7 +78,7 @@ Microsoft 365 Backup is a Microsoft 365 service built on the same underlying inf
 
 The core purpose of the backup and restore service is to provide you with a way to recover from common data deletion, overwrite, or encryption events.
 
-### Compliance tools and resources
+### Compliance resources
 
 Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
 
