@@ -43,17 +43,17 @@ Microsoft 365 Backup supports compliance with [General Data Protection Regulatio
 
 - DSRs related to the discovery of data using eDiscovery are **not** possible for Exchange Online, OneDrive, or SharePoint backups.
 
-#### eDiscovery
+### eDiscovery
 
 Data in the Exchange Online backups isn't eDiscoverable via existing eDiscovery tooling.
 
 Data in the OneDrive account and SharePoint site backups that aren't currently part of your live latest version data in your tenant aren't eDiscoverable. An eDiscovery search doesn't discover data that exists solely in the OneDrive or SharePoint backups.
 
-#### Retention policies
+### Retention policies
 
 Retention and deletion policies don't "flow through" to the backups. This means that backup retention is governed solely by the backup policy. That policy currently has an invariable one-year retention period. Once data is restored from the backups, that now-live data will be governed by applicable retention or deletion policies.
 
-#### Sensitivity labels
+### Sensitivity labels
 
 Restoration of any data (such as sites or mailbox items) reverts the data's sensitivity labels to the state of that protected item at the prior point from which it's being restored. That is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time.
 
@@ -74,7 +74,7 @@ Microsoft offers a [comprehensive set of compliance offerings](/compliance) to h
 Microsoft 365 Backup is a Microsoft 365 service built on the same underlying infrastructure and follows the same compliance standards. Microsoft 365 Backup is covered by any or all of the standards (for example, ISO and SCO) and certifications listed on the [Service Trust Portal](https://servicetrust.microsoft.com/).
 
 > [!IMPORTANT]
-> To ensure the integrity of your backed-up data, we administratively isolate compliance actions that might delete primary data. This means that **any compliance actions that automatically delete your primary data will not affect your backed-up data**.
+> Given that compliance tooling actions might destroy primary data, we administratively isolate those destructive actions from flowing through to backed up data automatically. In other words, **compliance actions that automatically delete your primary data will not automatically delete data from your backups**.
 
 The core purpose of the backup and restore service is to provide you with a way to recover from common data deletion, overwrite, or encryption events.
 
