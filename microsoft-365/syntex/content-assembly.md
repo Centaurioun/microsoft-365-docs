@@ -33,15 +33,10 @@ You upload an existing document to create a modern template, and then use that t
 
 ## Requirements and limitations
 
-### Supported file types
-
-Only Microsoft Word documents (.docx/.doc extension) are currently supported for creating a template.
-
-### File limitations
-
-- The Word document you want to use as a modern template shouldn't include comments or have Track Changes enabled.
-
-- Because content controls are used in Word to create fields for the modern template, make sure any text fields for images aren't text-wrapped. If the document already contains content controls, remove them before you use it to create a modern template.
+| Icon          | Description   |
+| ------------- | ------------- |
+| ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This service supports only Microsoft Word documents (.docx/.doc extension) for creating a template. |
+| ![Checklist symbol.](/office/media/icons/task-checklist-planning-blue.png)  | **File limitations** <br>The Word document you want to use as a modern template shouldn't contain comments or have Track Changes enabled. <br>Because content controls are used in Word to create fields for the modern template, make sure any text fields for images aren't text-wrapped. If the document already contains content controls, remove them before you use it to create a modern template. |
 
 ### Current release notes
 
