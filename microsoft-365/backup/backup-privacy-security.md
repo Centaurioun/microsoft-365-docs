@@ -39,19 +39,19 @@ Microsoft 365 Backup supports compliance with [General Data Protection Regulatio
 
 - GDPR workflows aren't directly executable on all data in Microsoft 365 Backup.
 
-- GDPR data service request (DSR) data deletion actions operated on the tenant won't delete data in the backups. Those actions must be executed again after a Backup restoration to ensure the original DSR is honored.
+- GDPR data service request (DSR) data deletion actions operated on the tenant don't delete data in the backups. Those actions must be executed again after a Backup restoration to ensure the original DSR is honored.
 
 - DSRs related to the discovery of data using eDiscovery are **not** possible for Exchange Online, OneDrive, or SharePoint backups.
 
 #### eDiscovery
 
-Data in the Exchange Online backups is not eDiscoverable via existing eDiscovery tooling.
+Data in the Exchange Online backups isn't eDiscoverable via existing eDiscovery tooling.
 
-Data in the OneDrive account and SharePoint site backups that aren't currently part of your live latest version data in your tenant aren't eDiscoverable. An eDiscovery search won't discover data that exists solely in the OneDrive or SharePoint backups.
+Data in the OneDrive account and SharePoint site backups that aren't currently part of your live latest version data in your tenant aren't eDiscoverable. An eDiscovery search doesn't discover data that exists solely in the OneDrive or SharePoint backups.
 
 #### Retention policies
 
-Retention and deletion policies don't “flow through” to the backups. This means that backup retention is governed solely by the backup policy. That policy currently has an invariable one-year retention period. Once data is restored from the backups, that now-live data will be governed by applicable retention or deletion policies.
+Retention and deletion policies don't "flow through" to the backups. This means that backup retention is governed solely by the backup policy. That policy currently has an invariable one-year retention period. Once data is restored from the backups, that now-live data will be governed by applicable retention or deletion policies.
 
 #### Sensitivity labels
 
@@ -71,13 +71,12 @@ Microsoft 365 Backup works with and integrates into Microsoft 365. This means th
 
 Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
 
-Microsoft 365 Backup is a Microsoft 365 service built on the same underlying infrastructure and follows the same compliance standards. Microsoft 365 Backup is covered by any and all of the standards (for example, ISO and SCO) and certifications listed on the [Service Trust Portal](https://servicetrust.microsoft.com/).
+Microsoft 365 Backup is a Microsoft 365 service built on the same underlying infrastructure and follows the same compliance standards. Microsoft 365 Backup is covered by any or all of the standards (for example, ISO and SCO) and certifications listed on the [Service Trust Portal](https://servicetrust.microsoft.com/).
 
 > [!IMPORTANT]
 > To ensure the integrity of your backed-up data, we administratively isolate compliance actions that might delete primary data. This means that **any compliance actions that automatically delete your primary data will not affect your backed-up data**.
 
 The core purpose of the backup and restore service is to provide you with a way to recover from common data deletion, overwrite, or encryption events.
-
 
 ### Compliance tools and resources
 
@@ -98,4 +97,3 @@ For more detailed information, see the following resources:
 - **Microsoft Entra ID** – [Microsoft Entra security baseline for Microsoft Entra ID](/security/benchmark/azure/baselines/aad-security-baseline)
 
 - **Azure** – [Azure, Dynamics 365, Microsoft 365, and Power Platform compliance offerings](/azure/compliance/offerings/)
-
