@@ -1,12 +1,12 @@
 ---
 title: Microsoft 365 admin center scenarios that configure Copilot
-description: Learn about some of the Microsoft 365 Copilot scenarios and some settings that IT admins can configure in the Microsoft 365 admin center.
+description: Learn about some of the Microsoft 365 Copilot scenarios and some settings that IT admins can configure in the Microsoft 365 admin center. M365 Copilot scenarios in the admin center.
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 02/10/2025
+ms.date: 02/11/2025
 ms.reviewer: elvaf
 audience: Admin
 ms.topic: how-to
@@ -36,7 +36,7 @@ This article applies to:
 >
 > - If you're an end user on a work device, then it's possible your IT admin group turned on Copilot for you. The [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts) can help you get started.
 >
-> - If you're an end user on a Windows personal device, then you might automatically get Microsoft Copilot, which is the free consumer version. To learn how Copilot can help you, see [How can Copilot help you?](https://www.microsoft.com/microsoft-copilot/for-individuals).
+> - If you're an end user on a personal device, then you might automatically get Microsoft Copilot, which is the free consumer version. To learn more, see [How can Copilot help you?](https://www.microsoft.com/microsoft-copilot/for-individuals) and [Welcome to Copilot on Windows](https://support.microsoft.com/windows/welcome-to-copilot-on-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
 ## Before you begin
 
