@@ -1,6 +1,6 @@
 ---
 title: Integrate Teams Assignments with Brightspace
-description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Design2Learn Brightspace.
+description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Desire2Learn Brightspace.
 author: jennplatt
 ms.author: avering
 manager: mimast
@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ---
 
-# Use Teams Assignments LTI with Design2Learn Brightspace
+# Use Teams Assignments LTI with Desire2Learn Brightspace
 
 This guide provides steps for deploying the Microsoft Teams Assignments Learning Tools Interoperability (LTI®) app in Brightspace.
 
@@ -87,23 +87,24 @@ You now have a tool registration configured in the Microsoft registration portal
 1. Scroll down to select **View Links**.
 
 **To create a Basic Launch Link for course navbars:**
-1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
-1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
-1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
-1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
-1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
 
+1. Select **New Link**.
+1. Enter **Teams Assignments** as the **Name**.
+1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
+1. For the **Type**, select **Basic Launch**.
+1. Select **Save and Close** to create the link.
+
+**To create a Deep Linking Quicklink for content activities:**
+
+1. Select **New Link**.
+1. Enter **Teams Assignments** as the **Name**.
+1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
+1. Select **Deep Linking Quicklink** for the **Type**.
+1. Select **Save and Close** to create the link.
 
 **To create a Widget link to add to course homepage layouts:**
 
-1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
-1. For the **Type**, select **Widget**.
-1. For the **Type**, select **Widget**.
-
-**To create a Widget link to add to course homepage layouts:**
-
-1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
-1. For the **Type**, select **Widget**.
+1. Select **New Link**.
 1. Enter **Teams Assignments** as the **Name**.
 1. For the **URL**, enter: **`https://assignments.edu.cloud.microsoft/lti-ui`**.
 1. For the **Type**, select **Widget**.
@@ -163,9 +164,7 @@ Instructors can link a Teams Assignment into their course content list by select
 Instructors can review and grade Teams Assignment in their course content list.
 
 1. Select the course **Content** tab.
-
 1. Select a Teams Assignment in the content list.
-
 1. Review the assignment details, and select the **Open in Teams** button to [review, grade, and return student work](https://support.microsoft.com/topic/grade-return-and-reassign-assignments-63e5efdd-be09-47f0-87ea-e8e4bcb45aa4).
 
 Instructors can add the Teams Assignments course navbar link or widget to review sync status of grades from linked assignments, diagnose issues, and manage connected teams.
