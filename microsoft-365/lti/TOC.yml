@@ -33,6 +33,8 @@ items:
       items:
       - name: Set up and configure the Moodle plugin
         href: moodle-plugin-configuration.md
+      - name: Use Microsoft Teams Assignments with Moodle  
+        href: teams-assignments-with-moodle.md        
       - name: Use Microsoft Teams classes and meetings with Moodle
         href: teams-classes-meetings-with-moodle.md
       - name: Use Microsoft Reflect LTI with Moodle
