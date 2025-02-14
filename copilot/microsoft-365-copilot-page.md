@@ -51,9 +51,8 @@ This article applies to:
 
 - There are different role requirements, depending on your task.
 
-  To view and make changes to the Copilot scenarios in the Microsoft 365 admin center, sign in with one of the following accounts:
+  To view and make changes to the Copilot scenarios in the Microsoft 365 admin center, sign in with the following account:
 
-  - AI Administrator
   - Global Administrator
 
   To view the Copilot scenarios in the Microsoft 365 admin center, sign in with the following account:
@@ -81,9 +80,9 @@ This article applies to:
 
 This section lists the steps to open the Copilot page in the Microsoft 365 admin center.
 
-Make sure you sign in with the appropriate role needed for your task. In our example, we want to change the settings. So, we sign in with the AI Administrator role.
+Make sure you sign in with the appropriate role needed for your task. In our example, we want to change the settings. So, we sign in with the Global Administrator role.
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as the AI Administrator. For more information on this role, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as the Global Administrator. For more information on this role, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 2. In the left navigation, select **Copilot**.
 
