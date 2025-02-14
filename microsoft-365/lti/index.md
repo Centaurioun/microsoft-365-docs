@@ -6,7 +6,7 @@ manager: jacktremper
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
