@@ -6,7 +6,7 @@ manager: elizapo
 ms.reviewer: daisyfeller
 audience: admin
 ms.date: 01/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.collection:
   - m365initiative-viva-topics
   - Tier1

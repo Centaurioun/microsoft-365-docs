@@ -6,7 +6,7 @@ author: daisyfell
 manager: elizapo
 audience: admin
 ms.reviewer: daisyfeller
-ms.topic: article
+ms.topic: how-to
 ms.collection:
   - m365initiative-viva-topics
   - highpri
