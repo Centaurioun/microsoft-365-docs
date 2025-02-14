@@ -7,7 +7,7 @@ author: nataliekagole
 manager: scotv
 ms.date: 04/01/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
