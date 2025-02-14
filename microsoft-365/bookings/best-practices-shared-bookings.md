@@ -5,14 +5,13 @@ author: kwekuako
 manager: scotv
 ms.date: 07/24/2024
 audience: Admin
-ms.topic: article
+ms.topic: best-practice
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
 description: "Understand and implement best practices for using Shared Booking features."
-ms.topic: best-practice
 ---
 
 # Best practices for using Shared Bookings
