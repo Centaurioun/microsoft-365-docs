@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Learn about the best practices for sharing files and folders with unauthenticated users.
-mstopic: best-practices
+ms.topic: best-practice
 ---
 
 # Best practices for sharing files and folders with unauthenticated users
