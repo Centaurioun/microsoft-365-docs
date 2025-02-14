@@ -57,7 +57,7 @@ To view the attached files from with in the Agreements teams app, follow these s
 
 3. With the agreement viewer panel now open, select **Attachments** in the upper right of the panel.
 
-  ![A screenshot of the agreement viewer page.](../../media/content-understanding/placeholder.png)
+<!--->  ![A screenshot of the agreement viewer page.](../../media/content-understanding/placeholder.png)--->
 
 5. From the **Attachments** panel click on the attachment you wish to view and it will load in the viewer.
 
