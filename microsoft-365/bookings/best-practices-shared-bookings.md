@@ -12,7 +12,7 @@ ms.collection:
 - Tier1
 - scotvorg
 description: "Understand and implement best practices for using Shared Booking features."
-mstopic: best-practices
+mstopic: best-practice
 ---
 
 # Best practices for using Shared Bookings
