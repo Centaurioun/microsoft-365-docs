@@ -6,7 +6,7 @@ manager: elizapo
 ms.reviewer: daisyfeller
 ms.date: 01/01/2024
 audience: admin
-ms.topic: article
+ms.topic: get-started
 ms.custom: Adopt
 ms.collection:
   - m365initiative-viva-topics
