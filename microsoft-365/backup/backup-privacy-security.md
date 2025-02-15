@@ -6,7 +6,7 @@ manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
 ms.date: 01/10/2025
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-backup
 search.appverid: 
 ms.collection: 

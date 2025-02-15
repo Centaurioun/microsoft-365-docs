@@ -6,7 +6,7 @@ manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
 ms.date: 01/13/2025
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 ms.custom: admindeeplinkMAC, setup
