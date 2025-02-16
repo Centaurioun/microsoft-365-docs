@@ -24,7 +24,7 @@ Attachments are files related to the agreement and are also commonly referred to
 
 ## Add an attachment
 
-You can add one or more attachments to an existing agreement by uploading one or more files using the agreements viewer dialog in the SharePoint Agreements app.
+You can add one or more attachments to an existing agreement by uploading files using the agreements viewer dialog in the SharePoint Agreements app.
 
 To add an attachment, follow these steps:
 
@@ -34,17 +34,17 @@ To add an attachment, follow these steps:
 
 3. With the agreement viewer panel now open, select **Attachments** in the upper right of the panel.
 
-4. From the **Attachments** panel select **Add attachment** open the file picker.
+4. From the **Attachments** panel select **Add attachment** to open the file picker.
 
 5. Browse to the location of the attachment and choose one or more files to attach to the agreement.
 
 6. Select **Open** to upload the files and view them as attachments in the viewer panel.
 
-7. The agreement with attachments will now have an attachment icon with the attachment count in the Agreements list page in the Agreements Teams app.
+7. In the Agreements list page in the Agreements Teams app agreements with attachments will now have an attachment icon with the attachment count displyed next to the filename.
 
 > [!NOTE]
-> The supported filetypes for attachments are Adobe pdf, Microsoft Office files including Word, Excel and PowerPoint, and Email files in Outlook or Gmail format. Atttempting to add unsupported files will result in an error.
-> When adding a file to an attachment, only one instance of the same file can be attached. Duplicates will generate a warning.
+> The supported filetypes for attachments are Adobe pdf, Microsoft Office files including Word, Excel and PowerPoint, and email files in Outlook or Gmail format. Attempting to add unsupported files will result in an error.<br>
+> When adding a file to an attachment, only one instance of the same file can be attached. Duplicates will generate a warning.<br>
 > Attachments added to an agreement will have the same access permissions as the agreement to which they are attached.
 
 ## View or open an attachment
@@ -61,7 +61,7 @@ To view the attached files from with in the Agreements teams app, follow these s
 
 5. From the **Attachments** panel click on the attachment you wish to view and it will load in the viewer.
 
-6. With the attachment file visible in the viewer you can return to the original agreement using the breadcrumb in the upper left, the *Return to agreeemnt* button in the lower left or you can deselect the attachement from the attachments list.
+6. With the attachment file visible in the viewer you can return to the original agreement using the breadcrumb in the upper left, the *Return to agreement* button in the lower left or you can deselect the attachement from the attachments list.
 
 7. To open the attachment in the default client application, select the attachemnt from the list and click the vertical ellipsis next to the attachment name then select **Open**. For example if the attachment is a Microsoft Word document it will launch the Word client if installed.
 
