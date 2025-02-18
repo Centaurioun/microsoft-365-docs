@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/29/2025
-ms.topic: conceptual
+ms.date: 07/31/2024
+ms.topic: overview
 ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:

@@ -3,7 +3,7 @@ title: "Engineering Direct Portal in the Microsoft 365 Admin Center"
 author: kelleyvice-msft
 ms.author: kvice  
 manager: scotv
-ms.date: 12/03/2024
+ms.date: 02/13/2025
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
@@ -95,7 +95,7 @@ In this section:
 - [Remediate a Compromised Account](#remediate-a-compromised-account)
 - [Audit Log Summary](#audit-log-summary)
 - [Issues with Guest Access in Teams](#issues-with-guest-access-in-teams)
-
+- [Teams PSTN Calling Diagnostic](#teams-pstn-calling-diagnostic)
 
 ### Visual Mail Flow
 
@@ -384,6 +384,26 @@ In addition, this diagnostic also displays some settings that could affect your 
     ![Teams guest permissions in Teams app](../media/eng-direct-portal/eng-direct-portal-additional-settings-3.png) 
 
 We aim for this diagnostic to resolve your guest access issues and provide a seamless guest experience in Teams. If problems persist, please reach out to Microsoft support for assistance. 
+
+### Teams PSTN Calling Diagnostic
+
+Microsoft Teams Phone uses the Public Switched Telephone Network (PSTN) when a user places an external call outside of their organization. The PSTN is essential for connecting Teams with traditional telephone networks, and its functionality is critical for organizations relying on Teams for comprehensive communication, both domestically and internationally.  
+
+To place external calls, users have several PSTN connectivity options available under Microsoft Teams (more here: [Microsoft Teams add-on licenses - Microsoft Teams | Microsoft Learn](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)). One prevalent option is the Calling Plan, which accommodates both domestic and international PSTN calling. Understanding these PSTN connections is crucial because any issues can directly impact an organization's communication capabilities, potentially hindering business operations and external engagement. 
+
+This diagnostic tool assists administrators in identifying and resolving issues with PSTN calling through the Calling Plan feature in Teams. This comprehensive diagnostic process ensures that both the technical configuration and licensing prerequisites for PSTN connectivity via Microsoft Teams are thoroughly evaluated, helping organizations maintain reliable external communication. 
+
+#### Running the Diagnostic 
+
+The diagnostic requires the affected user’s organizational email address. With a simple selection of the ‘Troubleshoot’ option, the tool starts analyzing the configuration, with results available in approximately 30 seconds. 
+
+#### Interpreting Diagnostic Results 
+
+The diagnostic performs a series of configuration checks related to Teams Phone settings, with a particular focus on verifying whether the user has been assigned a domestic or international Calling Plan license. This verification is key in determining if the user can successfully make or receive PSTN calls outside the organization. By highlighting any discrepancies or license issues, the diagnostic assists administrators in pinpointing problems that might cause call failures or connectivity issues. 
+
+#### Investigating Further 
+
+If the troubleshooting process does not resolve the PSTN calling issue, administrators are advised to contact Microsoft Support for more specialized assistance.  
 
 ## More information
 

@@ -6,7 +6,7 @@ manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.date: 02/06/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid:
