@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 08/13/2024
 audience: ITPro
-ms.topic: article
+ms.topic: quickstart
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
