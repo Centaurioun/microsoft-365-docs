@@ -69,7 +69,7 @@ In Recommendations, the recommended action card highlights [Microsoft Copilot Da
 
 You can see the following summary charts in this report as default view:
 
-:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart." source="../../media/copilot-usage-adoption-chart2.png" lightbox="../../media/copilot-usage-adoption-chart2.png":::
+:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart." source="../../media/m365-copilot-chat-adoption.png" lightbox="../../media/m365-copilot-chat-adoption.png":::
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
@@ -83,7 +83,7 @@ When switching to Trend view, you can select one product in the dropdown list to
 
 **Copilot Chat adoption** shows enabled users and total usage of Copilot Chat and split usage between Copilot Chat (work) and Copilot Chat (web).
 
-:::image type="content" source="../../media/copilot-chat-usage.png" alt-text="Screenshot showing the business chat usage chart in the Microsoft 365 Copilot usage report." lightbox="../../media/copilot-chat-usage.png":::
+:::image type="content" source="../../media/m365-copilot-chat-adoption.png" alt-text="Screenshot showing the business chat usage chart in the Microsoft 365 Copilot usage report." lightbox="../../media/m365-copilot-chat-adoption.png":::
 
 **Agent adoption** shows active users of agents in Microsoft 365 Copilot for the selected period. As described earlier, only usage of agents that have been created by your org including both admin-approved agents and agents shared by users in your org.
 
