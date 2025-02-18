@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 02/11/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
