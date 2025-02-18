@@ -48,16 +48,16 @@ In **Recommendations**, the recommended action card highlights where admins can 
 
 You can see the following summary charts in this report as default view:
 
-:::image type="content" source="../../media/microsoft-copilot-adoption.png" alt-text="Screenshot showing the chart to evaluate adoption by app for Microsoft 365 Copilot Chat." lightbox="../../media/microsoft-copilot-adoption.png":::
+:::image type="content" source="../../media/copilot-chat-summary.png" alt-text="Screenshot showing the chart to evaluate adoption by app for Microsoft 365 Copilot Chat." lightbox="../../media/copilot-chat-summary.png":::
 
 - **Summary view** shows you the total usage of Microsoft 365 Copilot Chat of the time frame.
 - **Trend view** shows you the daily time trend of Microsoft 365 Copilot Chat of the time frame.
 
 You can switch between Summary view and Trend view. When switching to Trend view, you can select one or multiple entry points in the dropdown list to see daily usage or compare among entry points.
 
-:::image type="content" source="../../media/copilot-chat-adoption.png" alt-text="Screenshot showing the chart in Trend view to analyze adoption by app for Microsoft 365 Copilot Chat." lightbox="../../media/copilot-chat-adoption.png":::
+:::image type="content" source="../../media/copilot-chat-adoption.png" alt-text="Screenshot showing the chart in Trend view to analyze adoption by app for Microsoft 365 Copilot Chat." lightbox="../../media/copilot-chat-adoption":::
 
-Below is a table of app details for active Microsoft 365 Copilot Chat users:
+The following table shows app details for active Microsoft 365 Copilot Chat users:
 
 | App               | Details                                                                 | More information |
 |-------------------|-------------------------------------------------------------------------|------------------|
@@ -78,12 +78,12 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |-----------------------------|-----------------------------------------------------------------------------|
 | **Username**                | The user's principal name.                                                  |
 | **Display name**            | The full name of the user.                                                  |
-| **Last activity date (UTC)**| The most recent date on which the user sent a message to Microsoft 365 Copilot Chat in Microsoft Edge or the Microsoft 365 Copilot (app), dating back to September 15, 2024. This date will remain fixed even if the timeframe of the report is changed. |
+| **Last activity date (UTC)**| The most recent date on which the user sent a message to Microsoft 365 Copilot Chat in Microsoft Edge or the Microsoft 365 Copilot (app), dating back to September 15, 2024. This date remains fixed even if the timeframe of the report is changed. |
 
 ## User-specific data de-anonymous/anonymous setting
 
-By default, usernames and display names in tge Microsoft 365 Copilot Chat report are anonymous. Global administrators can update settings to un-conceal or conceal usernames and display names.
+By default, usernames and display names in the Microsoft 365 Copilot Chat report are anonymous. Global administrators can update settings to unconceal or conceal usernames and display names.
 
 1. In the Microsoft 365 admin center, go to the **Settings** > **Org Settings**, and under the **Services** tab, choose **Reports**.
-2. Select **Reports**, and update the setting to “Display Concealed user, group and site names in all reports”.
+2. Select **Reports**, and update the setting to “Display Concealed user, group, and site names in all reports”.
 3. Select **Save**.
