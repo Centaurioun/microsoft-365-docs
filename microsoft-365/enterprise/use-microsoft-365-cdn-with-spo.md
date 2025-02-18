@@ -6,7 +6,7 @@ manager: scotv
 ms.reviewer: shawndube
 ms.date: 12/05/2024
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ You can use the built-in Office 365 Content Delivery Network (CDN) to host stati
 > As images are now automatically managed in a SharePoint Online service-managed Private CDN, the manually configured Private CDN is in the process of being deprecated. This behavior means that customers no longer need to configure private CDN. The recommended practice remains unchanged as images are hosted via the service-managed Private CDN automatically. Public CDN continues to be available for all other file types (for example, CSS and JS). Customers using Private CDN for file types other than images, need to move those files into Public CDN. We recommend Public CDN for these file types to enhance performance.
 
 > [!NOTE]
-> The Office 365 CDN is only available to tenants in the **Production** (worldwide) cloud. Tenants in the US Government and China clouds do not currently support the Office 365 CDN.
+> The Office 365 CDN is only available to tenants in the **Production** (worldwide) cloud. Tenants in the US Government and China clouds don't currently support the Office 365 CDN.
 
 The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins or both. See [Choose whether each origin should be public or private](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) for more information on the difference between public and private origins.
 
@@ -43,7 +43,7 @@ The Office 365 CDN is composed of multiple CDNs that allow you to host static as
 If you're already familiar with the way that CDNs work, you only need to complete a few steps to enable the Office 365 CDN for your tenant. This article describes how. Read on for information about how to get started hosting your static assets.
 
 > [!TIP]
-> There are other Microsoft-hosted CDNs that can be used with Office 365 for specialized usage scenarios, but are not discussed in this topic because they fall outside the scope of the Office 365 CDN. For more information, see [Other Microsoft CDNs](content-delivery-networks.md#other-microsoft-cdns).
+> There are other Microsoft-hosted CDNs that can be used with Office 365 for specialized usage scenarios, but aren't discussed in this article because they fall outside the scope of the Office 365 CDN. For more information, see [Other Microsoft CDNs](content-delivery-networks.md#other-microsoft-cdns).
 
  **Head back to [Network planning and performance tuning for Office 365](./network-planning-and-performance.md).**
 
@@ -139,7 +139,7 @@ You can read more about how CDN access to assets in a private origin works in [U
 
 - While you can construct a public origin's URL, you should proceed with caution, use the page context property, and follow the guidance for doing so. If access to the CDN becomes unavailable, the URL doesn't automatically resolve to your organization in SharePoint Online and might result in broken links and other errors. The URL is also subject to change, so you shouldn't hard code it to the current value.
 
-- The default file types that are included for public origins are: `.css`, `.eot`, `.gif`, `.ico`, `.jpeg`, `.jpg`, `.js`, `.map`, `.png`, `.svg`, `.ttf`, `.woff` and `.woff2`. You can specify additional file types.
+- The default file types that are included for public origins are: `.css`, `.eot`, `.gif`, `.ico`, `.jpeg`, `.jpg`, `.js`, `.map`, `.png`, `.svg`, `.ttf`, `.woff` and `.woff2`. You can specify other file types.
 
 - You can configure a policy to exclude assets based on specified site classifications. For example, you can exclude all assets that are marked as "confidential" or "restricted", even if they're an allowed file type and are located in a public origin.
 
@@ -153,7 +153,7 @@ You can read more about how CDN access to assets in a private origin works in [U
 
 - If you remove an asset from the private origin, the asset might continue to be available for up to an hour from the cache. But, links to the asset in the CDN are invalid within 15 minutes of the removal of the asset.
 
-- The default file types that are included for private origins are .gif, .ico, .jpeg, .jpg, .js, and .png. You can specify additional file types.
+- The default file types that are included for private origins are .gif, .ico, .jpeg, .jpg, .js, and .png. You can specify other file types.
 
 - Just like with public origins, you can configure a policy to exclude assets that are identified by site classifications that you specify even if you use wildcards to include all assets within a folder or document library.
 
@@ -243,7 +243,7 @@ For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](/powershel
 ### Change the list of file types to include in the Office 365 CDN (Optional)
 
 > [!TIP]
-> When you define file types by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add additional file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.
+> When you define file types by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add other file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.
 
 Use the **Set-SPOTenantCdnPolicy** cmdlet to define static file types that can be hosted by public and private origins in the CDN. By default, common asset types are allowed, for example .css, .gif, .jpg, and .js.
 
@@ -272,7 +272,7 @@ For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](/powershe
 ### Change the list of site classifications you want to exclude from the Office 365 CDN (Optional)
 
 > [!TIP]
-> When you exclude site classifications by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to exclude additional site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.
+> When you exclude site classifications by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to exclude more site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.
 
 Use the **Set-SPOTenantCdnPolicy** cmdlet to exclude site classifications that you don't want to make available over the CDN. By default, no site classifications are excluded.
 
@@ -314,7 +314,7 @@ Use the **Add-SPOTenantCdnOrigin** cmdlet to define an origin. You can define mu
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-The value of _path_ is the relative path to the library or folder that contains the assets. You can use wildcards in addition to relative paths. Origins support wildcards prepended to the URL. This allows you to create origins that span multiple sites. For example, to include all of the assets in the masterpages folder for all of your sites as a public origin within the CDN, type the following command:
+The value of _path_ is the relative path to the library or folder that contains the assets. You can use wildcards in addition to relative paths. Origins support wildcards prepended to the URL. This allows you to create origins that span multiple sites. For example, to include all of the assets in the `master pages` folder for all of your sites as a public origin within the CDN, type the following command:
 
 ```powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -325,7 +325,7 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 
 You can add an origin with a specific relative path. You can't add an origin using the full path.
 
-This example adds a private origin of the siteassets library on a specific site:
+This example adds a private origin of the `siteassets` library on a specific site:
 
 ```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -538,7 +538,7 @@ For more information about this cmdlet, see [Set-PnPTenantCdnEnabled](https://pn
 ### Change the list of file types to include in the Office 365 CDN (Optional)
 
 > [!TIP]
-> When you define file types by using the **Set-PnPTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add additional file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.
+> When you define file types by using the **Set-PnPTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add more file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.
 
 Use the **Set-PnPTenantCdnPolicy** cmdlet to define static file types that can be hosted by public and private origins in the CDN. By default, common asset types are allowed, for example .css, .gif, .jpg, and .js.
 
@@ -567,7 +567,7 @@ For more information about these cmdlets, see [Set-PnPTenantCdnPolicy](https://p
 ### Change the list of site classifications you want to exclude from the Office 365 CDN (Optional)
 
 > [!TIP]
-> When you exclude site classifications by using the **Set-PnPTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to exclude additional site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.
+> When you exclude site classifications by using the **Set-PnPTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to exclude more site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.
 
 Use the **Set-PnPTenantCdnPolicy** cmdlet to exclude site classifications that you don't want to make available over the CDN. By default, no site classifications are excluded.
 
@@ -609,7 +609,7 @@ Use the **Add-PnPTenantCdnOrigin** cmdlet to define an origin. You can define mu
 Add-PnPTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-The value of _path_ is the relative path to the library or folder that contains the assets. You can use wildcards in addition to relative paths. Origins support wildcards prepended to the URL. This allows you to create origins that span multiple sites. For example, to include all of the assets in the masterpages folder for all of your sites as a public origin within the CDN, type the following command:
+The value of _path_ is the relative path to the library or folder that contains the assets. You can use wildcards in addition to relative paths. Origins support wildcards prepended to the URL. This allows you to create origins that span multiple sites. For example, to include all of the assets in the `master pages` folder for all of your sites as a public origin within the CDN, type the following command:
 
 ```powershell
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -851,7 +851,7 @@ m365 spo cdn origin remove --type Public --origin */masterpage
 ```
 
 > [!NOTE]
-> Removing a CDN origin doesn't effect the files stored in any document library that matches the origin. If these assets are referenced using their SharePoint URL, SharePoint automatically switches back to the original URL pointing to the document library. If the assets are referenced using a public CDN URL, removing the origin breaks the link, and you need to manually change them.
+> Removing a CDN origin doesn't affect the files stored in any document library that matches the origin. If these assets are referenced using their SharePoint URL, SharePoint automatically switches back to the original URL pointing to the document library. If the assets are referenced using a public CDN URL, removing the origin breaks the link, and you need to manually change them.
 
 ### Modify an Office 365 CDN origin
 
@@ -859,10 +859,10 @@ It's not possible to modify an existing CDN origin. Instead, you should remove t
 
 ### Change the types of files to include in the Office 365 CDN
 
-By default, the following file types are included in the CDN: `.css`, `.eot`, `.gif`, `.ico`, `.jpeg`, `.jpg`, `.js`, `.map`, `.png`, `.svg`, `.ttf`, `.woff`, and `.woff2`. If you need to include additional file types in the CDN, you can change the CDN configuration using the [spo cdn policy set](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-set/) command.
+By default, the following file types are included in the CDN: `.css`, `.eot`, `.gif`, `.ico`, `.jpeg`, `.jpg`, `.js`, `.map`, `.png`, `.svg`, `.ttf`, `.woff`, and `.woff2`. If you need to include more file types in the CDN, you can change the CDN configuration using the [spo cdn policy set](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-set/) command.
 
 > [!NOTE]
-> When changing the list of file types, you overwrite the currently defined list. If you want to include additional file types, first use the [spo cdn policy list](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-list/) command to find out which file types are currently configured.
+> When changing the list of file types, you overwrite the currently defined list. If you want to include more file types, first use the [spo cdn policy list](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-list/) command to find out which file types are currently configured.
 
 To add the _JSON_ file type to the default list of file types included in the public CDN, run the following command:
 
@@ -875,7 +875,7 @@ m365 spo cdn policy set --type Public --policy IncludeFileExtensions --value "CS
 Use the [spo cdn policy set](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-set/) command to exclude site classifications that you don't want to make available over the CDN. By default, no site classifications are excluded.
 
 > [!NOTE]
-> When changing the list of excluded site classifications, you overwrite the currently defined list. If you want to exclude additional classifications, first use the [spo cdn policy list](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-list/) command to find out which classifications are currently configured.
+> When changing the list of excluded site classifications, you overwrite the currently defined list. If you want to exclude other classifications, first use the [spo cdn policy list](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-list/) command to find out which classifications are currently configured.
 
 To exclude sites classified as _HBI_ from the public CDN, run the following command:
 
@@ -923,7 +923,7 @@ If you want to use the full URL to the asset instead of a relative path, constru
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> In general, you should not hardcode URLs directly to assets in the CDN. However, you can manually construct URLs for assets in public origins if needed. For more information, see [Hardcoding CDN URLs for public assets](use-microsoft-365-cdn-with-spo.md#constructing-cdn-urls-for-public-assets).
+> In general, you shouldn't hardcode URLs directly to assets in the CDN. However, you can manually construct URLs for assets in public origins if needed. For more information, see [Hardcoding CDN URLs for public assets](use-microsoft-365-cdn-with-spo.md#constructing-cdn-urls-for-public-assets).
 
 To learn about how to verify that assets are being served from the CDN, see [How do I confirm that assets are being served by the CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) in [Troubleshooting the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting).
 
@@ -937,9 +937,9 @@ The following example is an overview where links are automatically rewritten by 
 
 - IMG/LINK/CSS URLs in classic publishing page HTML responses.
   - This includes images added by authors within the HTML content of a page.
-- Picture Library SlideShow webpart image URLs.
+- Picture Library SlideShow web part image URLs.
 - Image fields in SPList REST API (RenderListDataAsStream) results.
-  - Use the new property _ImageFieldsToTryRewriteToCdnUrls_ to provide a comma separated list of fields.
+  - Use the new property _ImageFieldsToTryRewriteToCdnUrls_ to provide a comma-separated list of fields.
   - Supports hyperlink fields and PublishingImage fields.
 - SharePoint image renditions.
 
@@ -955,7 +955,7 @@ The following diagram illustrates the workflow when SharePoint receives a reques
 If the _Publishing_ feature isn't enabled for a public origin, or the asset isn't one of the link types supported by the auto-rewrite feature of the CDN service, you can manually construct URLs to the CDN location of the assets and use these URLs in your content.
 
 > [!NOTE]
-> You cannot hardcode or construct CDN URLs to assets in a private origin because the required access token that forms the last section of the URL is generated at the time the resource is requested. You can construct the URL for Public CDN and the URL should not be hard coded as it's subject to change.
+> You can't hardcode or construct CDN URLs to assets in a private origin because the required access token that forms the last section of the URL is generated at the time the resource is requested. You can construct the URL for Public CDN and the URL shouldn't be hard-coded as it's subject to change.
 
 For public CDN assets, the URL format looks like the following example:
 
@@ -976,7 +976,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 ### Using assets in private origins
 
-No additional configuration is required to use assets in private origins. SharePoint Online automatically rewrites URLs for assets in private origins so requests for those assets are always be served from the CDN. You can't manually build URLs to CDN assets in private origins because these URLs contain tokens that must be auto-generated by SharePoint Online at the time the asset is requested.
+No other configuration is required to use assets in private origins. SharePoint Online automatically rewrites URLs for assets in private origins so requests for those assets are always be served from the CDN. You can't manually build URLs to CDN assets in private origins because these URLs contain tokens that must be auto-generated by SharePoint Online at the time the asset is requested.
 
 Access to assets in private origins is protected by dynamically generated tokens based on user permissions to the origin, with the caveats described in the following sections. Users must have at least **read** access to the origins for the CDN to render content.
 
@@ -1016,7 +1016,7 @@ It's important to note that SharePoint Online doesn't support item-level permiss
 
 ### How do I confirm that assets are being served by the CDN?
 
-After you add links to CDN assets to a page, you can confirm that the asset is being served from the CDN by browsing to the page, right clicking on the image once it has rendered and reviewing the image URL.
+After you add links to CDN assets to a page, you can confirm that the asset is being served from the CDN by browsing to the page, right-clicking on the image once it has rendered and reviewing the image URL.
 
 You can also use your browser's developer tools to view the URL for each asset on a page, or use a third party network trace tool.
 
@@ -1041,7 +1041,7 @@ When you enable the Office 365 CDN for public origins, the CDN service automatic
 - */STYLE LIBRARY
 - */CLIENTSIDEASSETS
 
-If the */clientsideassets origin is missing, SharePoint Framework solutions fails, and no warning or error messages are generated. This origin might be missing either because the CDN was enabled with the _-NoDefaultOrigins_ parameter set to **$true**, or because the origin was manually deleted.
+If the */clientsideassets origin is missing, SharePoint Framework solutions fail, and no warning or error messages are generated. This origin might be missing either because the CDN was enabled with the _-NoDefaultOrigins_ parameter set to **$true**, or because the origin was manually deleted.
 
 You can check to see which origins are present with the following PowerShell command:
 
