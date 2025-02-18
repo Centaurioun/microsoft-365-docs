@@ -7,7 +7,7 @@ manager: aljerabe
 ms.reviewer: akshah
 ms.date: 06/14/2022
 audience: Admin
-ms.topic: install-set-up-deploy
+ms.topic: ui-reference
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
