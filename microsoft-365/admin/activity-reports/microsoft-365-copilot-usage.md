@@ -69,7 +69,7 @@ In Recommendations, the recommended action card highlights [Microsoft Copilot Da
 
 You can see the following summary charts in this report as default view:
 
-:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart." source="../../media/m365-copilot-chat-adoption.png" lightbox="../../media/m365-copilot-chat-adoption.png":::
+:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart." source="../../media/m365-copilot-adoption.png" lightbox="../../media/m365-copilot-adoption.png":::
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
