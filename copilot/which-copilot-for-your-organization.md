@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 02/03/2025
+ms.date: 02/11/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -65,7 +65,7 @@ To learn more, see:
 
 **Microsoft 365 Copilot** is licensed by your work organization. It includes all the features in Microsoft 365 Copilot Chat, and can be used for web-based (internet) and work-based ([Microsoft Graph](/graph/overview)) chat.
 
-When users sign in with their work or school account (`user@contoso.com`), they can use Microsoft 365 Copilot Chat **work** or **web** version:
+When users sign in with their Microsoft Entra work or school account (`user@contoso.com`), they can use Microsoft 365 Copilot Chat **work** or **web** version:
 
 :::image type="content" source="media/which-copilot-for-your-organization/copilot-work-web.png" alt-text="Screenshot that shows Microsoft Entra users can select work or web in Microsoft 365 Copilot Chat.":::
 
