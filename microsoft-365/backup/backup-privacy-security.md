@@ -65,7 +65,7 @@ All data within Microsoft 365 Backup is stored within the customer tenant for an
 
 ## Security
 
-Microsoft 365 Backup works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such role-based access, identity and app management, and others—apply to Microsoft 365 Backup.
+Microsoft 365 Backup works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such as identity and app management—apply to Microsoft 365 Backup.
 
 ## Compliance
 
