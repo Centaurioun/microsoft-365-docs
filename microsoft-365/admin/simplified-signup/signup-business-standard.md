@@ -79,6 +79,9 @@ The table below outlines each choice.
 
 Use these three factors to determine which of the two options is best for your business needs.
 
+> [!NOTE]
+> If you have a Microsoft Customer Agreement (MCA) billing account type with Microsoft, you automatically receive a product called Microsoft Entra ID Free. This product improves your tenant management and security by tracking new tenants created with the same billing account. There's no charge for this product, and there's no other action you need to take. To learn more about this product, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free). [Find out what type of billing account you have](../../commerce/manage-billing-accounts#view-my-billing-accounts).
+
 ### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
 Sign in to Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
