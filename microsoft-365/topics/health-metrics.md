@@ -1,6 +1,6 @@
 ---
 title: Adoption health metrics in Topics
-ms.author: mgrewal
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,10 +10,13 @@ ms.service: viva
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Learn about healthy topic metrics in Topics.
-ms.date: 11/20/2023
+ms.date: 01/01/2024
 ---
 
 # Adoption health metrics in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 Adoption health metrics help you create and maintain a healthy topic tenant environment in Viva Topics by measuring key areas.
 

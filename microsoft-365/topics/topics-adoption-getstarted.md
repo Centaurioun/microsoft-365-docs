@@ -1,18 +1,17 @@
 ---
 title: Get started driving adoption of Topics
-ms.author: jobadach
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
-ms.date: 07/13/2023 
+ms.date: 01/01/2024
 audience: admin
 ms.topic: article
 ms.custom: Adopt
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
@@ -20,6 +19,9 @@ description: Learn how to drive adoption of Topics in your organization.
 ---
 
 # Get started driving adoption of Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 Before you get started with adoption, you need to understand the concepts involved in knowledge management and Topics. The following diagram shows what happens during topic discovery and curation:
 

@@ -1,7 +1,7 @@
 ---
-ms.date: 11/15/2021
+ms.date: 01/01/2024
 title: Restrict access to topics in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority: medium
@@ -19,6 +18,9 @@ description: Learn how to exclude topics to prevent them from being discovered i
 ---
 
 # Restrict access to topics in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 In Topics, stakeholders in your organization might want to make sure that specific topics aren't discovered and exposed to your licensed users. For example, you might be working on a project that you don't want to expose any information about yet. While Microsoft 365 permissions on sites, files, and other resources will prevent users from viewing sensitive information in topics, there are additional safeguards to prevent specific topics from ever being discovered.
 

@@ -1,7 +1,7 @@
 ---
-ms.date: 11/15/2021
+ms.date: 01/01/2024
 title: Security trimming in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
@@ -19,6 +18,9 @@ description: Learn how security is used when viewing topics in Topics.
 ---
 
 # Security trimming in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 Topics users can't view information in topics that their existing Office 365 permissions prevent them from seeing. Everything a user sees on a topic page (for example, SharePoint sites, documents, files) will be information they're already allowed to see. Topics doesn't make changes to any existing permissions.
 

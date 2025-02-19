@@ -28,7 +28,7 @@ Organizations in many industries, such as retail, manufacturing, hospitality, an
 
 Microsoft 365 and Microsoft Teams have features and a licensing model to support both types of users for your organization. [Microsoft 365 for frontline workers](https://www.microsoft.com/microsoft-365/enterprise/frontline) is optimized for a frequently mobile workforce that primarily interacts with customers, but also needs to stay connected to the rest of your organization.
 
-<!-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRoBo] -->
+<!-- > [!VIDEO https://learn-video.azurefd.net/vod/player?id=d552631d-8ad4-46bd-b920-4f219f732593] -->
 
 ## Assign appropriate licenses to support frontline worker and information worker user types
 
@@ -41,7 +41,7 @@ With this example, you can mix license types for the two types of workers in you
 | Frontline workers need quick access to tools that help them work with customers: | Information workers need tools to support their tasks like: |
 | ----- | ----- |
 | Frontline workers need access to information on the go - they have Microsoft 365 apps on phones or tablets. | Information workers write, edit, and share documents and have Microsoft 365 apps on desktops or laptops, plus mobile apps on phones and tablets. |
-| Frontline workers communicate on the go with Teams chat, schedule work with Shifts, check off to-do items with Tasks, and track items in Lists, along with other Teams functionality.  | Information workers communicate over Teams with chat, meet, and call, and use other Teams apps (depending on the specific license). |
+| Frontline workers communicate on the go with Teams chat, schedule work with Shifts, check off tasks with Planner, and track items in Lists, along with other Teams functionality.  | Information workers communicate over Teams with chat, meet, and calls, and use other Teams apps (depending on the specific license). |
 | Frontline workers can find organization-wide resources, communications, or training with SharePoint, OneDrive, Viva Connections, and Viva Engage. | Information workers create or consume team or organization-wide resources and communications with included Microsoft 365 services (depending on the specific license). |
 
 For a detailed comparison of what's included in Microsoft 365 plans for enterprises, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.

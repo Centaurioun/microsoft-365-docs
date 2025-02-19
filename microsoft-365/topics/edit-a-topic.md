@@ -1,7 +1,7 @@
 ---
-ms.date: 09/27/2023
+ms.date: 01/01/2024
 title: Edit an existing topic in Topics
-ms.author: sunar
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
@@ -11,8 +11,7 @@ ms.collection:
   - m365initiative-viva-topics
   - highpri
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150   
 ms.localizationpriority:  medium
@@ -21,9 +20,12 @@ description: Learn how to edit an existing topic in Topics.
 
 # Edit an existing topic in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LA4n]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=06271f85-a711-4360-a8d6-add373de0c3b]  
 
 </br>
 

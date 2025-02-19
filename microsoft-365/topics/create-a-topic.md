@@ -1,7 +1,7 @@
 ---
-ms.date: 09/27/2023
+ms.date: 01/01/2024
 title: Create a new topic in Topics
-ms.author: ergradel
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
@@ -19,6 +18,9 @@ description: Learn how to create a new topic in Topics.
 ---
 
 # Create a new topic in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 In Topics, you can create a new topic if one is not discovered through indexing or if the AI technology did not find enough evidence to establish it as a topic.
 

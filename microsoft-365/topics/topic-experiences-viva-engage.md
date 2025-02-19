@@ -1,7 +1,7 @@
 ---
 ms.date: 01/16/2024
 title: Topics in Viva Engage
-ms.author: ergradel
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
@@ -11,8 +11,7 @@ ms.collection:
   - m365initiative-viva-topics
   - highpri
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150   
 ms.localizationpriority:  medium
@@ -20,6 +19,9 @@ description: Learn more about Topics in Viva Engage.
 ---
 
 # Topics in Viva Engage
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 The article covers the Topics migration in the Viva Engage app. You can now access information in Viva Engage through Topics features like the live topic card, highlighted topics, and the topic picker. 
 

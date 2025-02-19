@@ -5,8 +5,9 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 04/12/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 f1.keywords:
 - CSH

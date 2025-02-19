@@ -1,7 +1,7 @@
 ---
-ms.date: 11/21/2023
+ms.date: 01/01/2024
 title: Analytics for Topics
-ms.author: mithunas
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -16,6 +16,9 @@ description: Learn about analytics for Topics.
 ---
 
 # Analytics for Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 Insights are available for Topics in the Microsoft 365 admin center. You need to be a SharePoint admin and a Groups admin to see these reports.
 

@@ -5,10 +5,11 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/12/2024
+ms.date: 12/09/2024
 audience: ITPro
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg

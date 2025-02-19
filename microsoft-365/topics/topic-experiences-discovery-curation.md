@@ -1,7 +1,7 @@
 ---
-ms.date: 08/03/2023
+ms.date: 01/01/2024
 title: Topic discovery and curation in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
@@ -19,6 +18,9 @@ description: Overview of topic discovery and curation in Topics
 ---
 
 # Topic discovery and curation in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 Topics organizes information into knowledge in your Microsoft 365 environment. We have all experienced reading through documents and site pages where we encounter terms we're unfamiliar with. Many times we stop what we are doing to spend precious time searching for more information.
 

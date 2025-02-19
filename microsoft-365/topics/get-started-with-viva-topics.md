@@ -1,7 +1,7 @@
 ---
 ms.date: 1/12/2024
 title: Learn about topics in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -12,8 +12,7 @@ ms.collection:
   - m365initiative-viva-topics
   - highpri
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150   
 ms.localizationpriority:  medium
@@ -21,6 +20,9 @@ description: Learn about new ways to discover and explore information in Topics.
 ---
 
 # Learn about topics in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 How do you find the people and resources important to your work? When you share important files with others, are they able to find them again later, when they need them? Topics provides new ways to discover and explore information from your content in Microsoft 365.  
 

@@ -1,7 +1,7 @@
 ---
-ms.date: 08/23/2023
+ms.date: 01/01/2024
 title: Merge topics in Topics
-ms.author: ninay
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection: 
 - m365initiative-viva-topics
 - highpri
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150   
 ms.localizationpriority:  medium
@@ -21,6 +20,9 @@ ROBOTS: NOINDEX,NOFOLLOW
 ---
 
 # Merge topics in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 You can merge multiple topics into one if Topics identifies different topics that refer to the same thing.
 

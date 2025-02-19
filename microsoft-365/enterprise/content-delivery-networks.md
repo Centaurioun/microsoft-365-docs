@@ -3,10 +3,11 @@ title: "Content delivery networks"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/27/2023
+ms.date: 09/24/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -28,13 +29,14 @@ description: "Use this information to learn about how Microsoft 365 uses Content
 
 *This article applies to Microsoft 365 Enterprise.*
 
-CDNs help keep Microsoft 365 fast and reliable for end users. Cloud services like Microsoft 365 use CDNs to cache static assets closer to the browsers requesting them to speed up downloads and reduce perceived end user latency. The information in this topic will help you learn about Content Delivery Networks (CDNs) and how they're used by Microsoft 365.
+CDNs help keep Microsoft 365 fast and reliable for end users. Cloud services like Microsoft 365 use CDNs to cache static assets closer to the browsers requesting them to speed up downloads and reduce perceived end user latency. The information in this article will help you learn about Content Delivery Networks (CDNs) and how they're used by Microsoft 365.
 
 ## What exactly is a CDN?
 
 A CDN is a geographically distributed network consisting of proxy and file servers in datacenters connected by high-speed backbone networks. CDNs are used to reduce latency and load times for a specified set of files and objects in a web site or service. A CDN may have many thousands of endpoints for optimal servicing of incoming requests from any location.
 
 CDNs are commonly used to provide faster downloads of generic content for a web site or service such as Javascript files, icons and images.
+
 
 CDNs are used by most enterprise cloud services. Cloud services like Microsoft 365 have millions of customers downloading a mix of proprietary content (such as emails) and generic content (such as icons) at one time. It's more efficient to put images everyone uses, like icons, as close to the user's computer as possible. It isn't practical for every cloud service to build CDN datacenters that store this generic content in every metropolitan area, or even in every major Internet hub around the world, so some of these CDNs are shared.
 
@@ -50,7 +52,7 @@ CDNs help to improve cloud service performance in several ways:
 
 ## The Microsoft 365 CDN
 
-The built-in Microsoft 365 Content Delivery Network (CDN) allows Microsoft 365 administrators to provide better performance for their organization's SharePoint Online pages by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency. The Microsoft 365 CDN uses the [HTTP/2 protocol](https://en.wikipedia.org/wiki/HTTP/2) for improved compression and download speeds.
+The built-in Microsoft 365 Content Delivery Network (CDN) allows Microsoft 365 administrators to provide better performance for their organization's SharePoint in Microsoft 365 pages by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency. The Microsoft 365 CDN uses the [HTTP/2 protocol](https://en.wikipedia.org/wiki/HTTP/2) for improved compression and download speeds.
 
 > [!NOTE]
 > The Microsoft 365 CDN is only available to tenants in the **Production** (worldwide) cloud. Tenants in the US Government, China and Germany clouds do not currently support the Microsoft 365 CDN.
@@ -59,11 +61,11 @@ The Microsoft 365 CDN is composed of multiple CDNs that allow you to host static
 
 ![Microsoft 365 CDN conceptual diagram.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Microsoft 365 CDN conceptual diagram")
 
-Content in **public** origins within the Microsoft 365 CDN is accessible anonymously, and can be accessed by anyone who has URLs to hosted assets. Because access to content in public origins is anonymous, you should only use them to cache non-sensitive generic content such as Javascript files, scripts, icons and images. The Microsoft 365 CDN is used by default for downloading generic resource assets like the Microsoft 365 client applications from a public origin.
+Content in **public** origins within the Microsoft 365 CDN is accessible anonymously, and can be accessed by anyone who has URLs to hosted assets. Because access to content in public origins is anonymous, you should only use them to cache non-sensitive generic content such as JavaScript files, scripts, icons and images. The Microsoft 365 CDN is used by default for downloading generic resource assets like the Microsoft 365 client applications from a public origin.
 
 The Microsoft 365 CDN service is included as part of your SharePoint Online subscription.
 
-For more information about how to use the Microsoft 365 CDN, see [Use the Microsoft 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md).
+For more information about how to use the Microsoft 365 CDN, see [Use the Microsoft 365 content delivery network with SharePoint](use-microsoft-365-cdn-with-spo.md).
 
 To watch a series of short videos that provide conceptual and HOWTO information about using the Microsoft 365 CDN, visit the [SharePoint Developer Patterns and Practices YouTube channel](https://aka.ms/sppnp-videos).
 
@@ -74,7 +76,7 @@ Although not a part of the Microsoft 365 CDN, you can use these CDNs in your Mic
 ### Azure CDN
 
 >[!NOTE]
->Beginning in Q3 2020, SharePoint Online will begin caching videos on the Azure CDN to support improved video playback and reliability. Popular videos will be streamed from the CDN endpoint closest to the user. This data will remain within the Microsoft Purview boundary. This is a free service for all tenants and it does not require any customer action to configure.
+>Beginning in Q3 2020, SharePoint will begin caching videos on the Azure CDN to support improved video playback and reliability. Popular videos will be streamed from the CDN endpoint closest to the user. This data will remain within the Microsoft Purview boundary. This is a free service for all tenants and it does not require any customer action to configure.
 
 You can use the **Azure CDN** to deploy your own CDN instance for hosting custom web parts, libraries and other resource assets, which allows you to apply access keys to your CDN storage and exert greater control over your CDN configuration. Use of the Azure CDN isn't free, and requires an Azure subscription.
 
@@ -132,7 +134,7 @@ The following screenshots illustrate the difference in download speed between th
   
 ![Screenshot of F12 Network.](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
-This screenshot shows the library uploaded to the master page gallery on the SharePoint Online site itself. The time it took to upload the library is 1.51 seconds.
+This screenshot shows the library uploaded to the master page gallery on the SharePoint site itself. The time it took to upload the library is 1.51 seconds.
   
 ![Screenshot of load time 1.51s.](../media/64225c79-fa53-480f-81cd-0d351674320e.png)
   
@@ -179,7 +181,7 @@ Although it isn't a part of the Microsoft 365 CDN, you can also use the **Azure 
 
 ## Can I use CDNs with SharePoint Server on-premises?
 
-Using CDNs only makes sense in a SharePoint Online context and should be avoided with SharePoint Server. This is because all of the advantages around geographic location don't hold true if the server is located on-premises or geographically close anyway. Additionally, if there's a network connection to the servers where it's hosted, then the site may be used without an Internet connection and therefore can't retrieve the CDN files. Otherwise, you should use a CDN if there's one available and stable for the library and files you need for your site.
+Using CDNs only makes sense in a SharePoint in Microsoft 365 context and should be avoided with SharePoint Server. This is because all of the advantages around geographic location don't hold true if the server is located on-premises or geographically close anyway. Additionally, if there's a network connection to the servers where it's hosted, then the site may be used without an Internet connection and therefore can't retrieve the CDN files. Otherwise, you should use a CDN if there's one available and stable for the library and files you need for your site.
   
 ## See also
 
@@ -191,8 +193,6 @@ Using CDNs only makes sense in a SharePoint Online context and should be avoided
 
 [Microsoft 365 URLs and IP address ranges](./urls-and-ip-address-ranges.md)
 
-[Use the Microsoft 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+[Use the Microsoft 365 content delivery network with SharePoint](use-microsoft-365-cdn-with-spo.md)
 
 [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
-
-[Tune Microsoft 365 performance](tune-microsoft-365-performance.md)

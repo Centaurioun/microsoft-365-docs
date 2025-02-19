@@ -34,7 +34,7 @@ Use these scenario overviews to start envisioning what your organization can do 
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline worker scenarios.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated January 2024 |This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.|
+|[![Microsoft 365 for frontline worker scenarios.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated April 2024 |This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.|
 
 ## Communications
 
@@ -44,11 +44,11 @@ Communications solutions connect your frontline workers and allow them to collab
 
 <!-- Watch the following video to see an example of how you can help your frontline workers connect and collaborate in retail organizations:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]-->
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f6689716-5481-4414-b003-ad5c3a47ea0b]-->
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- |--- |
-| [Team communication and collaboration](flw-team-collaboration.md) | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Teams<br>Outlook<br>SharePoint<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Praise, Shifts, Tasks, Walkie Talkie, Viva Connections|
+| [Team communication and collaboration](flw-team-collaboration.md) | Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. | Teams<br>Outlook<br>SharePoint<br>Power Platform and Power Apps | Approvals, Chat, Files, Lists, Meet, Planner, Praise, Shifts, Walkie Talkie, Viva Connections|
 | [Corporate communications](flw-corp-comms.md) | Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, and Viva Engage. Bring it all together with Viva Connections. | Teams<br>Outlook<br>SharePoint | Meet, Viva Engage, Viva Connections |
 
 ## Wellbeing & engagement
@@ -90,11 +90,11 @@ Drive operational efficiency by digitizing paper-based processes and automating 
 
 <!--Watch the following video to see an example of how you can simplify business processes in retail environments:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]-->
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=229ffc24-44f6-4bfd-bac2-f1ac0df88dec]-->
 
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
-| [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Teams<br>Power Platform | Tasks, Lists, Approvals |
+| [Simplify business processes](simplify-business-processes.md) | Use [task publishing](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to create standard processes across sites, Lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Teams<br>Power Platform | Planner, Lists, Approvals |
 
 ## Virtual Appointments
 
@@ -104,7 +104,7 @@ Use the Virtual Appointments app and Microsoft Teams to schedule, manage, and ho
 
 Watch the following video for an overview of the virtual appointments experience in Teams:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fde6e589-e329-4737-8c2b-67dfe1315e35]
 
 More information: [Virtual Appointments with Microsoft Teams](virtual-appointments.md)
 

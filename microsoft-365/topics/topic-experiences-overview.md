@@ -1,19 +1,18 @@
 ---
-ms.date: 05/04/2023
+ms.date: 01/01/2024
 title: Topics overview
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
 audience: admin
-ms.topic: article
+ms.topic: overview
 search.appverid:
     - MET150  
 ms.custom: 
 - intro-overview
 - intro-get-started
-ms.service: viva
-ms.subservice: viva-topics
+ms.service: viva-topics
 ms.collection:
   - enabler-strategic
   - m365initiative-viva-topics
@@ -27,11 +26,14 @@ description: Learn about how to use Topics in your organization.
 
 # Topics overview
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 Topics uses Microsoft AI technology, Microsoft 365, Microsoft Graph, Search, and other components and services to bring knowledge to your users in the Microsoft 365 apps they use everyday, starting with SharePoint modern pages, Microsoft Search, and Search in Word, PowerPoint, Outlook, and Excel.
 
 <br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=25176252-071c-4b08-85c9-fb4289552526]  
 
 <br/>
 
@@ -74,7 +76,7 @@ When you use Topics in your Microsoft 365 environment, your users will have the 
 
 - Knowledge managers: Users who guide topics through the topic lifecycle. Knowledge managers use the **Manage topics** page in the topic center to confirm AI-suggested topics, remove topics that are no longer relevant, as well as edit existing topics or create new ones, and are the only users who have access to it. Knowledge admins assign knowledge manager permissions to users through the Topics admin settings in the Microsoft 365 admin center.
 
-- Knowledge admins: Admins set up Topics and manage it through the admin controls in the Microsoft 365 admin center. Currently, a Microsoft 365 global or SharePoint administrator can serve as a knowledge admin.
+- Knowledge admins: Admins set up Topics and manage it through the admin controls in the Microsoft 365 admin center. A SharePoint administrator can serve as a knowledge admin.
 
 For more information, see [Topics roles](topic-experiences-roles.md).
 
@@ -94,7 +96,7 @@ For more information, see [Manage topics in the topic center](manage-topics.md).
 
 ## Admin controls
 
-Admin controls in the Microsoft 365 admin center allow you to manage Topics. They allow a Microsoft 365 global or SharePoint administrator to:
+Admin controls in the Microsoft 365 admin center allow you to manage Topics. They allow a Microsoft 365 SharePoint administrator to:
 
 - Control which users in your organization are allowed to see topics in SharePoint modern pages or in SharePoint search results.
 - Control which SharePoint sites will be crawled to identify topics.
@@ -107,7 +109,7 @@ For more information about admin controls, see [assign user permissions](./plan-
 
 ## Topic curation and suggestions
 
-AI will continually work to provide you suggestions to improve your topics as changes occur in your environment.
+AI will continually work to provide you with suggestions to improve your topics as changes occur in your environment.
 
 Users with edit or create topics permissions can make updates to topic pages directly if they want to make corrections or add additional information. They can also add new topics that AI wasn't able to identify. If there's enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI might enhance these manually added topics.
 
@@ -115,7 +117,7 @@ Users that you allow access to see topics in their daily work might be asked if 
 
 For more information, see [Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
-## Provide us feedback
+## Provide us with feedback
 
 At Microsoft we take feedback from our customers very seriously. The feedback you provide for Topics will be used to troubleshoot, fix bugs, enhance existing features, and develop new ones.
 

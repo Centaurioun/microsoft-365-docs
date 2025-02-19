@@ -1,7 +1,7 @@
 ---
-ms.date: 04/20/2023
+ms.date: 01/01/2024
 title: Add the Topics app in the Teams Admin Center
-ms.author: mgrewal
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
@@ -19,6 +18,9 @@ description: Learn how to Add the Topics app in the Teams Admin Center.
 ---
 
 # Add the Topics app in the Teams Admin Center
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 Once your organization has a Viva Suite or Copilot license, you’ll automatically have access to the Topics app in the Microsoft Teams app store.
 

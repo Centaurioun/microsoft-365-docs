@@ -1,7 +1,7 @@
 ---
-ms.date: 10/17/2023
+ms.date: 01/01/2024
 title: Manage topics at scale in Topics
-ms.author: starscott
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
@@ -19,6 +18,9 @@ description: Learn about best practices to manage topics in your organization us
 ---
 
 # Manage topics at scale in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 When you index your SharePoint sites or your entire organization for Topics, many topics might be generated. When this happens and you see thousands of suggested topics on the **Manage topics** page, it can be challenging to know where to start. This article describes how Topics helps you optimize which topics and information are shown to users who are searching for information, even in large organizations with large numbers of topics.
 

@@ -1,7 +1,7 @@
 ---
-ms.date: 11/29/2023
+ms.date: 01/01/2024
 title: Manage topics in the topic center in Topics
-ms.author: starscott
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -11,8 +11,7 @@ ms.collection:
   - m365initiative-viva-topics,
   - highpri
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics
 search.appverid:
 - MET150  
 ms.localizationpriority:  medium
@@ -20,9 +19,12 @@ description: Learn how to manage topics in the topic center in Topics.
 ---
 # Manage topics in the topic center in Topics
 
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
+
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LxDx]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7c49b827-b6c3-483f-bc62-3577576496dc]  
 
 </br>
 

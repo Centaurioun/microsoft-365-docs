@@ -1,7 +1,7 @@
 ---
-ms.date: 09/12/2023
+ms.date: 01/01/2024
 title: Curate Multilingual topics in Topics
-ms.author: ninay
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150   
 ms.localizationpriority:  medium
@@ -19,6 +18,9 @@ description: Learn how to curate topics in multiple languages using the Multilin
 ---
 
 # Curate Multilingual topics in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 The Multilingual feature in Topics allows you to curate and edit a topic page in English, French, German, and Spanish.
 

@@ -1,7 +1,7 @@
 ---
-ms.date: 11/15/2021
+ms.date: 01/01/2024
 title: Plan for Topics
-ms.author: jobadach
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
@@ -19,6 +18,9 @@ description: Learn how to plan for Topics.
 ---
 
 # Plan for Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 You're in control of how topics are experienced in your organization. Your planning decisions for Topics ensure that high quality topics are shown to your users and they have the right permissions to consume and contribute knowledge.
 
@@ -42,7 +44,7 @@ Keep in mind that Topics needs access to the sites and files that your users use
 
 ## Requirements
 
-You must be [subscribed to Topics](https://www.microsoft.com/microsoft-viva/topics) and be either a global administrator or both SharePoint and Groups administrator to access the Microsoft 365 admin center and set up Topics.
+You must be [subscribed to Topics](https://www.microsoft.com/microsoft-viva/topics) and be both SharePoint and Groups administrator to access the Microsoft 365 admin center and set up Topics.
 
 Assigning licenses is covered in [Set up Topics](set-up-topic-experiences.md). If you plan to assign licenses programmatically, be sure the users already have licenses for Microsoft 365 (for example, E3 or E5).
 

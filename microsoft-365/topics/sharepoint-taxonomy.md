@@ -1,24 +1,26 @@
 ---
 title: Use SharePoint taxonomy terms to create topics in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
 audience: admin
-ms.date: 11/15/2021 
+ms.date: 01/01/2024
 ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
-localization_priority: medium
+ms.localizationpriority: medium
 description: Learn about how to find topics in Topics by using SharePoint taxonomy.
 ---
 
 # Use SharePoint taxonomy terms to create topics in Topics
+
+> [!NOTE]
+> Topics will be retired on February 22, 2025. [Learn more about the changes coming to Topics.](changes-coming-to-topics.md)
 
 You can use SharePoint taxonomy terms to help guide artificial intelligence (AI) to create topics in Topics. The SharePoint taxonomy service provides global terms that are available to all sites. Users can create topics that correspond with concepts that are represented as terms.
 
