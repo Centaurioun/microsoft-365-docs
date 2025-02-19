@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 02/06/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -18,6 +18,9 @@ description: Learn about the autofill columns service in SharePoint.
 ---
 
 # Overview of autofill columns in Microsoft Syntex
+
+> [!NOTE]
+> Beginning in March 2025, the pricing for autofill columns will be lowered from $0.05 per page to $0.005 per page. This change reflects our ongoing commitment to making advanced AI accessible to everyone.
 
 > [!NOTE]
 > Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of autofill columns and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).

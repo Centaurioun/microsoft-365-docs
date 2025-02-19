@@ -6,7 +6,7 @@ manager: jtremper
 audience: admin
 ms.reviewer: sharonyam
 ms.date: 11/01/2024
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
