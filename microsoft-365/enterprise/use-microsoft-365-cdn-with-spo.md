@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: shawndube
-ms.date: 12/05/2024
+ms.date: 02/19/2024
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-enterprise
@@ -34,8 +34,6 @@ You can use the built-in Office 365 Content Delivery Network (CDN) to host stati
 > The Office 365 CDN is only available to tenants in the **Production** (worldwide) cloud. Tenants in the US Government and China clouds don't currently support the Office 365 CDN.
 
 The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN such as you can add **public** origins.
-
-![Office 365 CDN conceptual diagram.](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN conceptual diagram")
 
 If you're already familiar with the way that CDNs work, you only need to complete a few steps to enable the Office 365 CDN for your tenant. This article describes how. Read on for information about how to get started hosting your static assets.
 
