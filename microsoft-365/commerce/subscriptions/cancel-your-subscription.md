@@ -53,7 +53,7 @@ If you have **Microsoft 365 Family** or **Microsoft 365 Personal**, see [Cancel 
 > If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 > [!IMPORTANT]
-> If you have an MCA billing account type, you automatically receive a product called Microsoft Entra ID Free. Because this product helps manage your billing account, you can't cancel it. However, you can cancel and then delete all subscriptions tied to the billing account. To learn more, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free).
+> If you have an MCA billing account type, you automatically receive a product called Microsoft Entra ID Free. Because this product helps manage your billing account, you can't cancel it. However, if you want to close your billing account, call Support and they can help cancel the subscription and close the account. To learn more, see [Microsoft Entra ID Free](/azure/cost-management-billing/manage/microsoft-entra-id-free).
 
 ## How do I cancel my free trial?
 
