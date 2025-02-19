@@ -2,8 +2,8 @@
 title: Overview of pay-as-you-go services in Microsoft 365
 ms.author: siruvanti
 author: tbd
-manager: jtremper
-ms.reviewer: ssquires
+manager: snaray
+ms.reviewer: 
 ms.date: 02/20/2025
 audience: admin
 ms.topic: overview
