@@ -225,7 +225,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   Select specific parts of your drafted email and ask Copilot in new Outlook to rewrite it or provide more information to rewrite it. Provide detailed instructions or adjust the tone and length to suit your needs.
 ### PowerPoint
 - **Create presentations with new slide types using Copilot** [Windows]  
-  When creating a presentation with Copilot, you will now see agenda, section, and conclusion slides, giving your presentations better structure.
+  When creating a presentation with Copilot, you'll now see agenda, section, and conclusion slides, giving your presentations better structure.
 - **Custom slideshow of key slides** [Windows]  
   Ask Copilot to show key slides, and you'll have one-click access to play a custom presentation of the most important slides.
 - **Enhanced creation and editing with Copilot** [Windows]  
@@ -274,7 +274,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   Improve your email writing with Coaching by Copilot in new Outlook. Request a full rewrite based on Copilot's feedback or apply the suggestions with a single click. <a href="https://support.microsoft.com/topic/91a3cd56-1586-4a31-85c7-2eb8cdb02405" target="_blank">Learn more.</a>
 ### PowerPoint
 - **Create presentations with new slide types using Copilot** [Web, Mac]  
-  When creating a presentation with Copilot, you will now see agenda, section, and conclusion slides, giving your presentations better structure.
+  When creating a presentation with Copilot, you'll now see agenda, section, and conclusion slides, giving your presentations better structure.
 - **Custom slideshow of key slides** [Mac]  
   Ask Copilot to show key slides, and you'll have one-click access to play a custom presentation of the most important slides.
 - **Improved template support with Copilot** [Windows, Web, Mac]  
@@ -317,7 +317,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Copilot summarizes content over specified time periods** [Windows, Android, iOS, Mac]  
   Copilot can now identify and summarize information over specific time periods, responding accurately to queries like "yesterday," "last month," or "last year." <a href="https://support.microsoft.com/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c" target="_blank">Learn more.</a>
 - **Linked files in Copilot replies** [Windows, Android, iOS, Mac]  
-  We've optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
+  We have optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
 ### Outlook
 - **Microsoft 365 Copilot Chat in Outlook Mobile** [Android, iOS]  
   The Microsoft 365 Copilot Chat experience is now available in Outlook for iOS and Android. Enhance your mobile email experience with AI-powered assistance on the go.
@@ -437,7 +437,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   People with a Copilot license can now leverage Copilot in Loop when they paste Loop components into Teams, Outlook, and Meeting Notes.
 ### Microsoft Teams
 - **Copilot notification in unrecorded meetings** [Windows, Android, iOS, Mac]  
-  When Copilot is started in a meeting that is not being recorded, every participant is notified that Copilot is active.
+  When Copilot is started in a meeting that isn't being recorded, every participant is notified that Copilot is active.
 ### Outlook
 - **Microsoft 365 Copilot Chat available in new Outlook for Windows and web** [Windows, Web, Android, iOS]  
   Access the power of Microsoft 365 Copilot Chat directly within Outlook  on the web and the new Outlook for Windows. Access Microsoft 365 Copilot Chat through the left app bar.
@@ -474,7 +474,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   We have added new commitments covering stored content of interactions with Microsoft 365 Copilot to existing data residency commitments, enhancing data compliance.
 ### Microsoft Loop
 - **Access Copilot in Loop easily from the right side of the page** [Web]  
-  We've added an entry point on the right side of the page to make Loop Copilot's Draft and Rewrite capabilities more accessible.
+  We have added an entry point on the right side of the page to make Loop Copilot's Draft and Rewrite capabilities more accessible.
 ### Microsoft Stream
 - **Quickly summarize videos with Copilot in Stream** [Web]  
   Copilot in Stream uses AI to help you get insights from videos, allowing you to summarize content or ask in-depth questions efficiently. <a href="https://support.microsoft.com/office/welcome-to-microsoft-copilot-in-stream-0b531ea9-2d9d-4830-97e4-2c1b2b8ca31d" target="_blank">Learn more.</a>
@@ -532,7 +532,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
   You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
-  We've improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
+  We have improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
 ### Viva Insights
 - **Analyze Copilot metrics with flexible queries in Analyst Workbench**  
   Use the Analyst Workbench to perform flexible Copilot queries on metrics, providing deeper insights into AI usage.
@@ -558,7 +558,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   Copilot in Excel now remembers the context of your chats, allowing for follow-up questions and clarifications for a smoother experience.
 ### Microsoft Purview
 - **Communication Compliance-Detect Microsoft 365 Copilot interactions template** [Web]  
-  Communication Compliance is introducing a new template dedicated to analyzing all Microsoft 365 Copilot  prompts and responses, to help ensure content prohibited by customers' policies, such as harassing or threatening language, is not being used Microsoft 365 interfaces. This scales Communication Compliance's reach, consistent with Microsoft 365's expanding interfaces. In addition, administrators are also able to select Copilot chats as a checked location in the policy creation wizard for any new or existing policies. This empowers administrators to fine-tune their management strategy precisely to their organization's needs, with a focus on user privacy protection. Whether it's setting specific conditions or deploying trainable classifiers, this feature provides flexibility and adaptability in compliance management, ensuring your organization's communications remain secure, compliant, and respectful of user privacy.
+  Communication Compliance is introducing a new template dedicated to analyzing all Microsoft 365 Copilot  prompts and responses, to help ensure content prohibited by customers' policies, such as harassing or threatening language, isn't being used Microsoft 365 interfaces. This scales Communication Compliance's reach, consistent with Microsoft 365's expanding interfaces. In addition, administrators are also able to select Copilot chats as a checked location in the policy creation wizard for any new or existing policies. This empowers administrators to fine-tune their management strategy precisely to their organization's needs, with a focus on user privacy protection. Whether it's setting specific conditions or deploying trainable classifiers, this feature provides flexibility and adaptability in compliance management, ensuring your organization's communications remain secure, compliant, and respectful of user privacy.
 ### Word
 - **Get answers and enhance content with chat in Word** [iOS]  
   Ask specific questions about your document or request additional details to enhance your content, making your writing process more efficient.
@@ -800,7 +800,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   Select specific parts of your drafted email and ask Copilot in new Outlook to rewrite it or provide more information to rewrite it. Provide detailed instructions or adjust the tone and length to suit your needs.
 ### PowerPoint
 - **Create presentations with new slide types using Copilot** [Windows]  
-  When creating a presentation with Copilot, you will now see agenda, section, and conclusion slides, giving your presentations better structure.
+  When creating a presentation with Copilot, you'll now see agenda, section, and conclusion slides, giving your presentations better structure.
 - **Custom slideshow of key slides** [Windows]  
   Ask Copilot to show key slides, and you'll have one-click access to play a custom presentation of the most important slides.
 - **Enhanced creation and editing with Copilot** [Windows]  
@@ -851,7 +851,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Copilot summarizes content over specified time periods** [Windows, Android, iOS, Mac]  
   Copilot can now identify and summarize information over specific time periods, responding accurately to queries like "yesterday," "last month," or "last year." <a href="https://support.microsoft.com/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c" target="_blank">Learn more.</a>
 - **Linked files in Copilot replies** [Windows, Android, iOS, Mac]  
-  We've optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
+  We have optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
 ### Outlook
 - **Schedule meetings from an email with Copilot in new Outlook** [Windows, Web]  
   Quickly shift from an email thread to a meeting invite by clicking "Schedule with Copilot." Copilot summarizes the conversation, drafts an agenda, and includes key context automatically.
@@ -927,7 +927,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   Discover and filter through a curated collection of Microsoft-authored prompts tailored for Marketing, HR, Finance, Retail, and Manufacturing roles. These prompts help you get the most out of Copilot with prompts tailored to your role or industry.
 ### Microsoft Teams
 - **Copilot notification in unrecorded meetings** [Windows, Android, iOS, Mac]  
-  When Copilot is started in a meeting that is not being recorded, every participant is notified that Copilot is active.
+  When Copilot is started in a meeting that isn't being recorded, every participant is notified that Copilot is active.
 ### Outlook
 - **Microsoft 365 Copilot Chat available in new Outlook for Windows and web** [Windows, Web, Android, iOS]  
   Access the power of Microsoft 365 Copilot Chat directly within Outlook  on the web and the new Outlook for Windows. Access Microsoft 365 Copilot Chat through the left app bar.
@@ -980,7 +980,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
   You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
-  We've improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
+  We have improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
 ## February, 2024
 ### Microsoft Teams
 - **Copilot side pane stays open across group chats** [Windows, Mac]  
@@ -1247,7 +1247,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   Improve your email writing with Coaching by Copilot in new Outlook. Request a full rewrite based on Copilot's feedback or apply the suggestions with a single click. <a href="https://support.microsoft.com/topic/91a3cd56-1586-4a31-85c7-2eb8cdb02405" target="_blank">Learn more.</a>
 ### PowerPoint
 - **Create presentations with new slide types using Copilot** [Web, Mac]  
-  When creating a presentation with Copilot, you will now see agenda, section, and conclusion slides, giving your presentations better structure.
+  When creating a presentation with Copilot, you'll now see agenda, section, and conclusion slides, giving your presentations better structure.
 - **Improved template support with Copilot** [Windows, Web, Mac]  
   Update your templates to PowerPoint's best practices, and Copilot will generate beautiful, on-brand slides every time you create a presentation. <a href="https://support.microsoft.com/topic/046c23d5-012e-49e0-8579-fe49302959fc" target="_blank">Learn more.</a>
 ### Viva Glint
@@ -1391,7 +1391,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   We have added new commitments covering stored content of interactions with Microsoft 365 Copilot to existing data residency commitments, enhancing data compliance.
 ### Microsoft Loop
 - **Access Copilot in Loop easily from the right side of the page** [Web]  
-  We've added an entry point on the right side of the page to make Loop Copilot's Draft and Rewrite capabilities more accessible.
+  We have added an entry point on the right side of the page to make Loop Copilot's Draft and Rewrite capabilities more accessible.
 ### Microsoft Stream
 - **Quickly summarize videos with Copilot in Stream** [Web]  
   Copilot in Stream uses AI to help you get insights from videos, allowing you to summarize content or ask in-depth questions efficiently. <a href="https://support.microsoft.com/office/welcome-to-microsoft-copilot-in-stream-0b531ea9-2d9d-4830-97e4-2c1b2b8ca31d" target="_blank">Learn more.</a>
@@ -1448,7 +1448,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   Copilot in Excel now remembers the context of your chats, allowing for follow-up questions and clarifications for a smoother experience.
 ### Microsoft Purview
 - **Communication Compliance-Detect Microsoft 365 Copilot interactions template** [Web]  
-  Communication Compliance is introducing a new template dedicated to analyzing all Microsoft 365 Copilot  prompts and responses, to help ensure content prohibited by customers' policies, such as harassing or threatening language, is not being used Microsoft 365 interfaces. This scales Communication Compliance's reach, consistent with Microsoft 365's expanding interfaces. In addition, administrators are also able to select Copilot chats as a checked location in the policy creation wizard for any new or existing policies. This empowers administrators to fine-tune their management strategy precisely to their organization's needs, with a focus on user privacy protection. Whether it's setting specific conditions or deploying trainable classifiers, this feature provides flexibility and adaptability in compliance management, ensuring your organization's communications remain secure, compliant, and respectful of user privacy.
+  Communication Compliance is introducing a new template dedicated to analyzing all Microsoft 365 Copilot  prompts and responses, to help ensure content prohibited by customers' policies, such as harassing or threatening language, isn't being used Microsoft 365 interfaces. This scales Communication Compliance's reach, consistent with Microsoft 365's expanding interfaces. In addition, administrators are also able to select Copilot chats as a checked location in the policy creation wizard for any new or existing policies. This empowers administrators to fine-tune their management strategy precisely to their organization's needs, with a focus on user privacy protection. Whether it's setting specific conditions or deploying trainable classifiers, this feature provides flexibility and adaptability in compliance management, ensuring your organization's communications remain secure, compliant, and respectful of user privacy.
 ## December, 2023
 ### Microsoft 365 admin center
 - **Track Copilot readiness and usage across Microsoft 365** [Web]  
@@ -1604,7 +1604,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Copilot summarizes content over specified time periods** [Windows, Android, iOS, Mac]  
   Copilot can now identify and summarize information over specific time periods, responding accurately to queries like "yesterday," "last month," or "last year." <a href="https://support.microsoft.com/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c" target="_blank">Learn more.</a>
 - **Linked files in Copilot replies** [Windows, Android, iOS, Mac]  
-  We've optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
+  We have optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
 ### Outlook
 - **Microsoft 365 Copilot Chat in Outlook Mobile** [Android, iOS]  
   The Microsoft 365 Copilot Chat experience is now available in Outlook for iOS and Android. Enhance your mobile email experience with AI-powered assistance on the go.
@@ -1624,7 +1624,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 ## May, 2024
 ### Microsoft Teams
 - **Copilot notification in unrecorded meetings** [Windows, Android, iOS, Mac]  
-  When Copilot is started in a meeting that is not being recorded, every participant is notified that Copilot is active.
+  When Copilot is started in a meeting that isn't being recorded, every participant is notified that Copilot is active.
 ### Outlook
 - **Microsoft 365 Copilot Chat available in new Outlook for Windows and web** [Windows, Web, Android, iOS]  
   Access the power of Microsoft 365 Copilot Chat directly within Outlook  on the web and the new Outlook for Windows. Access Microsoft 365 Copilot Chat through the left app bar.
@@ -1646,7 +1646,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
   You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
-  We've improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
+  We have improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
 ## November, 2023
 ### Microsoft Teams
 - **Copilot available in a channel post conversation** [Windows, Web, Android, iOS, Mac]  
@@ -1759,7 +1759,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Copilot summarizes content over specified time periods** [Windows, Android, iOS, Mac]  
   Copilot can now identify and summarize information over specific time periods, responding accurately to queries like "yesterday," "last month," or "last year." <a href="https://support.microsoft.com/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c" target="_blank">Learn more.</a>
 - **Linked files in Copilot replies** [Windows, Android, iOS, Mac]  
-  We've optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
+  We have optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
 ### Outlook
 - **Microsoft 365 Copilot Chat in Outlook Mobile** [Android, iOS]  
   The Microsoft 365 Copilot Chat experience is now available in Outlook for iOS and Android. Enhance your mobile email experience with AI-powered assistance on the go.
@@ -1851,7 +1851,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
   You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
-  We've improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
+  We have improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
 ## February, 2024
 ### Word
 - **Summarize your document using chat prompts** [iOS]  
@@ -2010,7 +2010,7 @@ Updates released between January 8, 2025, and January 23, 2025.
   Improve your email writing with Coaching by Copilot in new Outlook. Request a full rewrite based on Copilot's feedback or apply the suggestions with a single click. <a href="https://support.microsoft.com/topic/91a3cd56-1586-4a31-85c7-2eb8cdb02405" target="_blank">Learn more.</a>
 ### PowerPoint
 - **Create presentations with new slide types using Copilot** [Web, Mac]  
-  When creating a presentation with Copilot, you will now see agenda, section, and conclusion slides, giving your presentations better structure.
+  When creating a presentation with Copilot, you'll now see agenda, section, and conclusion slides, giving your presentations better structure.
 - **Custom slideshow of key slides** [Mac]  
   Ask Copilot to show key slides, and you'll have one-click access to play a custom presentation of the most important slides.
 - **Improved template support with Copilot** [Windows, Web, Mac]  
@@ -2032,7 +2032,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Copilot summarizes content over specified time periods** [Windows, Android, iOS, Mac]  
   Copilot can now identify and summarize information over specific time periods, responding accurately to queries like "yesterday," "last month," or "last year." <a href="https://support.microsoft.com/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c" target="_blank">Learn more.</a>
 - **Linked files in Copilot replies** [Windows, Android, iOS, Mac]  
-  We've optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
+  We have optimized Copilot in Microsoft Teams to include linked files in Copilot answers for quicker and more reliable retrieval of files and links, making your experience smoother and more efficient.
 ### PowerPoint
 - **Build your story with Narrative Builder** [Windows, Web, iOS, Mac]  
   Copilot helps you form your narrative and turns it into a fully designed presentation, streamlining the creative process.
@@ -2124,7 +2124,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
   You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
-  We've improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
+  We have improved the Copilot user interface with new date dividers for chats, channels, and meeting Copilot.
 ## February, 2024
 ### Microsoft Teams
 - **Copilot side pane stays open across group chats** [Windows, Mac]  
