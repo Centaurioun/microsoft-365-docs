@@ -59,8 +59,6 @@ You can choose public origins for your organization [Choose public origins](use-
 ## How to enable Public CDN with the default configuration
 Before you make changes to the tenant CDN settings, you should verify that it meets compliance, security and privacy policies of your organization.
 
-Before you make changes to the tenant CDN settings, you should verify that it meets compliance, security, and privacy policies of your organization.
-
 For more detailed configuration settings, or if you have already enabled CDN and want to add additional locations (origins), see the section [Set up and configure the Office 365 CDN by using the SharePoint Management Shell](use-microsoft-365-cdn-with-spo.md#set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell)
 
 Connect to your tenant using the SharePoint Management Shell:
