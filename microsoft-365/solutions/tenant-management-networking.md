@@ -28,7 +28,7 @@ Microsoft 365 for enterprise includes cloud productivity apps such as Teams and 
 To optimize network access for your tenant, you need to:
 
 - Optimize the path between your on-premises users and the closest location to the Microsoft Global Network.
-- Optimize access to the Microsoft Global Network for your remote users that are using a remote access VPN solution.
+- Optimize access to the Microsoft Global Network for your remote users who are using a remote access VPN solution.
 - Use Network Insights to design the network perimeter for your office locations.
 - Optimize access to specific assets hosted on SharePoint sites with the Office 365 CDN.
 - Configure proxy and network edge devices to bypass processing for Microsoft 365 trusted traffic with the list of endpoints and automate the updating of the list as changes are made.
@@ -64,7 +64,7 @@ If you implement these principles, you get an enterprise network optimized for M
 
 In this illustration, branch offices have their own Internet connection through a software-defined WAN device (SDWAN) device, which sends trusted Microsoft 365 traffic to the regionally closest front door. At the central office, trusted Microsoft 365 traffic bypasses the security or proxy device and intermediate devices are no longer used.
 
-Here's are how the optimized configuration solves the latency issues of a traditional enterprise network:
+Here's how the optimized configuration solves the latency issues of a traditional enterprise network:
 
 - Trusted Microsoft 365 traffic skips the WAN backbone and is sent to local front doors for all offices, decreasing latency.
 - Network hairpins that perform duplicate packet processing are skipped for Microsoft 365 trusted traffic, decreasing latency.
