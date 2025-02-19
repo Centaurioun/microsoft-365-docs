@@ -7,7 +7,7 @@ ms.reviewer:
 ms.date: 02/20/2025
 audience: admin
 ms.topic: overview
-ms.service: microsoft-365
+ms.service: microsoft-365-business
 ms.subservice:
 search.appverid: 
 ms.collection: 
