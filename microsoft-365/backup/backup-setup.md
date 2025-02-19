@@ -38,17 +38,7 @@ To set up pay-as-you-go for Microsoft 365 Backup, you need to have this informat
 > * **Region**. The region in which you want to register the service.
 > * **Owner or contributor**. Name of an owner or contributor role on the Azure subscription.
 
-Once you have the information on this list, you're ready to [set up pay-as-you-go billing](#set-up-pay-as-you-go-billing).
-<!---
-</br>
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0f61cfb9-425b-482a-aff2-7b21b3c5767d]
-
-</br>
---->
-As a first step, you should link an Azure subscription in Microsoft Syntex pay-as-you-go, if you haven't already done so. Although Microsoft 365 Backup isn't part of the Microsoft Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
-
-<!---### Set up pay-as-you-go billing--->
+Once you have the information on this list, you're ready to begin. As a first step, you should link an Azure subscription in Microsoft Syntex pay-as-you-go, if you haven't already done so. Although Microsoft 365 Backup isn't part of the Microsoft Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 
 To set up pay-as-you-go billing for Microsoft 365 Backup, follow these steps:
 
