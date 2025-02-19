@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/06/2025
+ms.date: 02/18/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -38,6 +38,7 @@ Autofill columns can work alongside other Microsoft Syntex models. You can link 
 | ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This service supports the following file types: .csv, .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx. |
 | ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This service is available for English language files. Other languages will be added in future releases. |
 | ![Usage report symbol.](/office/media/icons/usage-report-blue.png)  | **Supported column types** <br>This service is available for the following column data types: Text, Multiple lines of text, Number, Yes/No, Date and time, Choice, Hyperlink, and Currency.<br> Currently, this service isn't available for the following column data types: Person or Group, Location, Image, Lookup, and Managed metadata.|
+| ![Globe symbol.](/office/media/icons/globe-internet.png)  | **Multi-Geo environments** <br>When setting up Syntex in a [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) environment, you can only configure it to use the model type in the central location. If you want to use this model type in a satellite location, contact Microsoft support. |
 
 ### Current release notes
 
