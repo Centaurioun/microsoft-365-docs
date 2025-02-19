@@ -31,7 +31,7 @@ You can use the built-in **Office 365 Content Delivery Network (CDN)** to host s
 For more detailed information, see [Use the Office 365 Content Delivery Network (CDN) with SharePoint](use-microsoft-365-cdn-with-spo.md).
 
 >[!NOTE]
->The Office 365 CDN is only available to tenants in the production (worldwide) cloud. Tenants in the US Government, China and Germany clouds do not currently support the Office 365 CDN.
+>The Office 365 CDN is only available to tenants in the production (worldwide) cloud. Tenants in the US Government, China and Germany clouds don't currently support the Office 365 CDN.
 
 ## Use the Page Diagnostics for SharePoint tool to identify items not in CDN
 
@@ -44,7 +44,7 @@ When you run the Page Diagnostics for SharePoint tool on a SharePoint in Microso
 ![Page diagnostics.](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
 >[!NOTE]
->The Page Diagnostics tool only works for SharePoint in Microsoft 365, and cannot be used on a SharePoint system page.
+>The Page Diagnostics tool only works for SharePoint in Microsoft 365, and can't be used on a SharePoint system page.
 
 ## CDN Overview
 
