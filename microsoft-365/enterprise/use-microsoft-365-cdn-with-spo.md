@@ -103,7 +103,7 @@ You can create new container for your origins such as folders or document librar
 
 You can also configure an existing site collection, site, library or folder as an origin, which makes all eligible assets in the container available from the CDN. Before you add an existing container as an origin, it's important to make sure you're aware of its contents and permissions so you don't inadvertently expose assets to anonymous access or unauthorized users.
 
-You can define _CDN policies_ to exclude content in your origins from the CDN. CDN policies exclude assets in public origins by attributes such as _file type_ and _site classification_, and are applied to all origins of the CdnType (private or public) you specify in the policy. For example, if you add a origin consisting of a site that contains multiple subsites, you can define a policy to exclude sites marked as **Confidential** so content from sites with that classification applied aren't served from the CDN. The policy applies to content from _all_ origins that you added to the CDN.
+You can define _CDN policies_ to exclude content in your origins from the CDN. CDN policies exclude assets in public origins by attributes such as _file type_ and _site classification_, and are applied to all origins of the CdnType (private or public) you specify in the policy. For example, if you add an origin consisting of a site that contains multiple subsites, you can define a policy to exclude sites marked as **Confidential** so content from sites with that classification applied aren't served from the CDN. The policy applies to content from _all_ origins that you added to the CDN.
 
 Keep in mind that the greater the number of origins, the greater the effect on the time it takes the CDN service to process requests. We recommend that you limit the number of origins as much as possible.
 
@@ -653,7 +653,7 @@ For more information about this cmdlet, see [Set-PnPTenantCdnEnabled](https://pn
 
 ## Set up and configure the Office 365 CDN using the CLI for Microsoft 365
 
-The procedures in this section require the [CLI for Microsoft 365](https://aka.ms/cli-m365). The, connect to your Office 365 tenant using the [login](https://pnp.github.io/cli-microsoft365/cmd/login/) command.
+The procedures in this section require the [CLI for Microsoft 365](https://aka.ms/cli-m365). Then, connect to your Office 365 tenant using the [login](https://pnp.github.io/cli-microsoft365/cmd/login/) command.
 
 Complete these steps to set up and configure the CDN to host your assets in SharePoint Online using the CLI for Microsoft 365.
 
@@ -831,7 +831,7 @@ For public CDN assets, the URL format looks like the following example:
 https://publiccdn.sharepointonline.com/<TenantHostName>/sites/site/library/asset.png
 ```
 
-Replace **TenantHostName** with your tenant name. For example:
+Replace `TenantHostName` with your tenant name. For example:
 
 ```http
 https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png
