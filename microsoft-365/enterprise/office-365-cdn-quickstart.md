@@ -26,7 +26,7 @@ description: "Office 365 Content Delivery Network (CDN) Quickstart"
 
 # Office 365 Content Delivery Network (CDN) Quickstart
 
-You can use the built-in **Office 365 Content Delivery Network (CDN)** to host static assets (images, JavaScript, Stylesheets, WOFF files) to provide better performance for your SharePoint pages. The Office 365 CDN improves performance by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency. Also, the Office 365 CDN uses the HTTP/2 protocol for improved compression and HTTP pipelining. The Office 365 CDN service is included as part of your SharePoint subscription.
+You can use the built-in **Office 365 Content Delivery Network (CDN)** to host static assets (images, JavaScript, Style sheets, WOFF files) to provide better performance for your SharePoint pages. The Office 365 CDN improves performance by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency. Also, the Office 365 CDN uses the HTTP/2 protocol for improved compression and HTTP pipelining. The Office 365 CDN service is included as part of your SharePoint subscription.
 
 For more detailed information, see [Use the Office 365 Content Delivery Network (CDN) with SharePoint](use-microsoft-365-cdn-with-spo.md).
 
@@ -52,7 +52,7 @@ The Office 365 CDN is designed to optimize performance for users by distributing
 
 The Office 365 CDN supports:
 
-- **Public CDN**, which is designed to be used for JS (JavaScript), CSS (StyleSheets), Web Font File (WOFF, WOFF2) and non-proprietary images like company logos.
+- **Public CDN**, which is designed to be used for JS (JavaScript), CSS (Style Sheets), Web Font File (WOFF, WOFF2) and non-proprietary images like company logos.
 
 You can choose public origins for your organization [Choose public origins](use-microsoft-365-cdn-with-spo.md).
 
