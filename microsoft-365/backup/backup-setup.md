@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/24/2025
+ms.date: 02/19/2025
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -158,6 +158,7 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 |Global Administrator     | ✓        | ✓        | ✓       |
 |SharePoint Administrator     | ✓        | ✓        |         |
 |Exchange Administrator    |         |         | ✓        |
+|Microsoft 365 Backup Administrator     | ✓        | ✓        | ✓       |
 
 ## Glossary
 
