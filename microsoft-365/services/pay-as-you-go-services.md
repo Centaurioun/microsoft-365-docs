@@ -19,27 +19,27 @@ description: Learn about the pay-as-you-go services that are currently available
 
 Microsoft 365 pay-as-you-go services provide a wide range of solutions that let your organization scale usage based on actual needs. This article describes the Microsoft 365 pay-as-you-go services that are currently available.
 
-## Microsoft 365 Copilot pay-as-you-go services
+## Microsoft 365 Copilot
 <!---
 ### Copilot
 
-Microsoft 365 Copilot is an AI-powered assistant that integrates seamlessly with Microsoft 365 applications like Word, Excel, PowerPoint, Outlook, and Teams. Copilot helps users by providing intelligent suggestions, automating repetitive tasks, and enhancing productivity. With PAYG, enterprises can enable Copilot for their users and only pay for the actual usage.
+Microsoft 365 Copilot is an AI-powered assistant that integrates seamlessly with Microsoft 365 applications like Word, Excel, PowerPoint, Outlook, and Teams. Copilot helps users by providing intelligent suggestions, automating repetitive tasks, and enhancing productivity. With pay-as-you-go, organizations can enable Copilot for their users and only pay for the actual usage.
 --->
 ### SharePoint agents
 
 SharePoint Agents are AI-powered assistants that help users navigate and interact with SharePoint sites and document libraries. These agents can answer questions, summarize content, and perform specific tasks based on user permissions. Organizations can set up pay-as-you-go billing for SharePoint agents, allowing users to utilize these features without needing a full Copilot license.
-<!---
+
 ### Agents in Microsoft 365 Copilot Chat
 
-Agents in Microsoft 365 Copilot Chat provide a conversational interface for users to interact with their work data. These agents can answer questions, perform actions, and provide insights based on the data available in the organization's Microsoft Graph and third-party data sources. Pay-as-you-go billing allows enterprises to enable these agents and pay based on the number of messages used. 
-
+Agents in Microsoft 365 Copilot Chat provide a conversational interface for users to interact with their work data. These agents can answer questions, perform actions, and provide insights based on the data available in the organization's Microsoft Graph and third-party data sources. Pay-as-you-go billing allows organizations to enable these agents and pay based on the number of messages used.
+<!---
 ### Copilot Actions
 
-Copilot Actions are predefined tasks that Copilot can perform on behalf of the user. These actions can include sending emails, updating records, creating support tickets, and more. With pay-as-you-go, enterprises can enable Copilot Actions and only pay for the actions performed.
+Copilot Actions are predefined tasks that Copilot can perform on behalf of the user. These actions can include sending emails, updating records, creating support tickets, and more. With pay-as-you-go, organizations can enable Copilot Actions and only pay for the actions performed.
 --->
-## Microsoft Syntex pay-as-you-services
+## Microsoft Syntex
 <!---
-Microsoft Syntex uses AI to automate content processing and management. Syntex can classify documents, extract metadata, and apply labels to improve content organization and compliance. Enterprises can set up PAYG billing for Syntex services, allowing them to pay based on actual usage.
+Microsoft Syntex uses AI to automate content processing and management. Syntex can classify documents, extract metadata, and apply labels to improve content organization and compliance. Organizations can set up pay-as-you-go billing for Syntex services, allowing them to pay based on actual usage.
 --->
 
 ### Autofill columns
@@ -72,7 +72,7 @@ Prebuilt document processing provides AI models for processing common document t
 
 ### Structured and freeform document processing
 
-Structured and freeform document processing allows users to create custom AI models for processing specific document types. These models can handle both structured forms and unstructured documents. Pay-as-you-go billing enables enterprises to use these models and pay based on the number of documents processed.
+Structured and freeform document processing allows users to create custom AI models for processing specific document types. These models can handle both structured forms and unstructured documents. Pay-as-you-go billing enables organizations to use these models and pay based on the number of documents processed.
 
 ### Taxonomy tagging
 
@@ -81,6 +81,10 @@ Taxonomy tagging uses AI to apply standardized tags to documents based on a pred
 ### Unstructured document processing
 
 Unstructured document processing allows users to create AI models for processing unstructured documents, such as contracts and reports. These models extract relevant data and automate workflows. Pay-as-you-go billing enables organizations to use these models and pay based on the number of documents processed.
+
+### Video translation
+
+Video translation enables video editors to create translated versions of a video's transcript. Once the transcript has been translated, it becomes accessible to all viewers. The pay-as-you-go billing model allows organizations to use video translation services and pay based on the number of transcripts translated.
 
 ## Microsoft 365 Archive
 
