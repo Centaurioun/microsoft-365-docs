@@ -82,7 +82,7 @@ To ensure your shared mailboxes comply with Exchange storage limits, follow thes
     - Go to **License and Apps** for the selected user.
     - If the mailbox is assigned Exchange Online (Plan 1), it isn't in compliance. You need to either assign Exchange Online (Plan 2) or reduce the storage to less than 50 GB.
 
-### Identifying Non-Compliant Shared Mailboxes in Exchange Online through PowerShell
+## Identifying Non-Compliant Shared Mailboxes in Exchange Online through PowerShell
 
 You can use PowerShell to identify non-compliant shared mailboxes. Save the following script to your local hard drive and run it in PowerShell:
 
