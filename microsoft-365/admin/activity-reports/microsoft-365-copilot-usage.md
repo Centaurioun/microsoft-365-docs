@@ -79,7 +79,7 @@ The definitions for Enabled Users and Active Users metrics are the same as provi
 
 When switching to Trend view, you can select one product in the dropdown list to see daily usage.
 
-:::image type="content" alt-text="Screenshot showing the dropdown list of products for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-trend-view2.png":::
+:::image type="content" alt-text="Screenshot showing the dropdown list of products for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-trend-view2.png" lightbox="../../media/copilot-usage-trend-view2.png":::
 
 **Copilot Chat adoption** shows enabled users and total usage of Copilot Chat and split usage between Copilot Chat (work) and Copilot Chat (web).
 
