@@ -19,7 +19,7 @@ ms.collection:
 ms.custom: QuickDraft  
 ms.reviewer: amtro  
 search.appverid: MET150  
-f1.keywords:  
+f1.keywords: 
 audience: admin
 ai-usage:  
 - ai-assisted  
@@ -27,18 +27,18 @@ ai-usage:
 
 # Defederation Process for Microsoft 365 Admins Using GoDaddy
 
-As an admin, you may need to defederate your Microsoft 365 account from GoDaddy. This process involves several steps that must be followed carefully to avoid issues with services like SharePoint and other Microsoft 365 applications.
+As a Microsoft 365 admin, you might need to defederate your Microsoft 365 account from GoDaddy. This process involves several steps that must be followed carefully to avoid issues with services like SharePoint and other Microsoft 365 applications.
 
 ### Defederation Process Overview
 
-To defederate your Microsoft 365 account from GoDaddy, refer to the official GoDaddy documentation. GoDaddy provides a comprehensive guide on how to move your Microsoft 365 email away from their platform. Please follow the link below for detailed instructions:
+To defederate your Microsoft 365 account from GoDaddy, refer to the official GoDaddy documentation. GoDaddy provides a comprehensive guide on how to move your Microsoft 365 email away from their platform. See the following link for detailed instructions:
 
 [Move my Microsoft 365 email away from GoDaddy](https://www.godaddy.com/help/move-my-microsoft-365-email-away-from-godaddy-40094)
 
 ### Disclaimer
 
-Microsoft and GoDaddy do not support the use of unauthorized third-party sites or steps to complete the defederation process. Using unofficial resources can lead to issues with Microsoft 365 services such as SharePoint, and may cause further complications.
+Microsoft and GoDaddy don't support the use of unauthorized third-party sites or steps to complete the defederation process. Using unofficial resources can lead to issues with Microsoft 365 services such as SharePoint, and might cause further complications.
 
 ### Additional Support
 
-If you encounter issues during the defederation process, it is recommended to contact GoDaddy support for assistance. They can provide specific guidance and help ensure that the process is completed correctly.
+If you encounter issues during the defederation process, it's recommended to contact GoDaddy support for assistance. They can provide specific guidance and help ensure that the process is completed correctly.
