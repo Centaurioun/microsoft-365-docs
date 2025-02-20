@@ -57,7 +57,7 @@ landingContent:
           - text: Microsoft 365 Archive
             url: ../syntex/syntex-pay-as-you-go-services#storage-services
           - text: Microsoft 365 Backup
-            url: ../syntex/syntex-pay-as-you-go-services#storage-services.md
+            url: ../syntex/syntex-pay-as-you-go-services#storage-services
 
 # Card 4
   - title: Microsoft 365 Copilot services
