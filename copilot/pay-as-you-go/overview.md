@@ -20,7 +20,7 @@ ms.custom: [copilot-learning-hub]
 
 # Microsoft 365 Copilot pay-as-you-go overview
 
-The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and cost-effective way for organizations to access Copilot services. This plan allows administrators to enable consumption-based billing for specific Copilot scenarios, providing users with the ability to utilize Copilot features without committing to a full license. This article provides an overview of the pay-as-you-go plan, its benefits, and how to set it up in the Microsoft 365 admin center.
+The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and cost-effective way for organizations to access Copilot services. This plan allows administrators to enable consumption-based billing for specific Copilot scenarios, providing users with the ability to use Copilot features without committing to a full license. This article provides an overview of the pay-as-you-go plan, its benefits, and pricing details.
 
 ## Why pay-as-you-go?
 
@@ -73,4 +73,5 @@ The organization’s consumption of the pay-as-you-go service can be monitored a
 Billing for services is done through the Azure subscription that you associate to the service.
 
 ## Next step
+
 [Meters](meters.md) (article)
