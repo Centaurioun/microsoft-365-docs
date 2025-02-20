@@ -30,4 +30,4 @@ To learn more about meters, see [Pay-as-you-go-meters](/power-platform/admin/pay
 
 ## Next step
 
-[Set up pay-as-you-go](setup.md)(article)
+[Set up pay-as-you-go](setup.md) (article)

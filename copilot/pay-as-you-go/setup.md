@@ -25,9 +25,9 @@ Setting up the pay-as-you-go plan for Microsoft 365 Copilot Chat can be done dir
 ## Prerequisites
 
 - Azure subscription and resource group
-  - You must have an owner or contributor Azure role to an Azure subscription to set up the pay-as-you-go service(s).
-    - You must have an owner or contributor Azure role to an Azure resource group linked to the same Azure subscription to set up the pay-as-you-go service(s).
-    - To learn more, see [Use the Azure portal and Azure Resource Manager to Manage Resource Groups]().
+  - You must have an owner or contributor Azure role to an Azure subscription to set up the pay-as-you-go service.
+    - You must have an owner or contributor Azure role to an Azure resource group linked to the same Azure subscription to set up the pay-as-you-go service.
+    - To learn more, see [Use the Azure portal and Azure Resource Manager to Manage Resource Groups](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 - One of the following administrator roles:
   - Global administrator
   - Billing administrator
@@ -35,7 +35,7 @@ Setting up the pay-as-you-go plan for Microsoft 365 Copilot Chat can be done dir
 
 ## Steps to set up pay-as-you-go billing
 
-1. In the Microsoft 365 admin Center, go to Copilot > Settings.
+1. In the Microsoft 365 admin center, go to **Copilot** > **Settings**.
 1. If not already set up, create an Azure subscription and resource group.
 1. Select the Azure subscription, resource group, and region for the pay-as-you-go setup.
 1. Enable consumption-based billing for the desired Copilot scenarios.
@@ -50,4 +50,4 @@ As an admin, you can do the following to manage pay-as-you-billing for your orga
 
 ## Next step
 
-[View costs](view-cost.md)(article)
+[View costs](view-cost.md) (article)
