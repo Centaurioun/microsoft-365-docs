@@ -6,7 +6,7 @@ ms.author: kvice
 manager: scotv
 ms.date: 02/20/2025  
 ms.topic: article
-ms.service: microsoft-365-business, microsoft-365-admin, microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection:
