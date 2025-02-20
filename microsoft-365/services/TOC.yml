@@ -38,6 +38,8 @@ items:
                       href: /sharepoint/manage-trial-agents-sharepoint-powershell
                     - name: Use agents with pay-as-you-go billing 
                       href: /sharepoint/sharepoint-agents-azure-billing
+                - name: Agents in Microsoft 365 Copilot Chat
+                  href: pay-as-you-go-services.md
 
             - name: Microsoft Syntex
               items:
