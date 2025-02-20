@@ -6,7 +6,7 @@ items:
       items:
             - name: Overview
               href: pay-as-you-go-overview.md 
-            - name: Services
+            - name: Available services
               href: pay-as-you-go-services.md
             - name: What's new
               href: pay-as-you-go-whats-new.md
