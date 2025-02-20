@@ -55,9 +55,7 @@ The following table shows the relationship between VL roles in the retired Volum
 | Product keys reader             | Product Keys         | Can view contracts and contract keys, manage activation and redemption of online services, and view keys on the **Products and services** page. |
 | Benefits reader                 | Software Assurance Manager | Can view contracts and manage Workplace Discount Software Assurance entitlements. |
 | Online services manager         | Online Services Manager    | Can view contracts and orders, reserve online services, manage activation and redemption of online services, and manage subscriptions on the **Billing** > **Licenses** page. |
-| Invoice Reader                  | N/A                        | Can view contracts, the list of invoices, and can download invoices.\\
-
-This role is automatically assigned to the person listed on the licensing contact as the **Bill To** contact and can’t be assigned to the VL admin. |
+| Invoice Reader                  | N/A                        | Can view contracts, the list of invoices, and can download invoices.<br><br>This role is automatically assigned to the person listed on the licensing contact as the **Bill To** contact and can’t be assigned to the VL admin. |
 
 ## Understand the volume licensing administrator role
 
@@ -72,17 +70,17 @@ When these contacts sign in to the Microsoft 365 admin center, they can assign t
 
 ### If you already have a VL user profile in the Microsoft 365 admin center
 
-When you sign in to the Microsoft 365 admin center, you can view and manage the Agreements (License IDs)  
+When you sign in to the Microsoft 365 admin center, you can view and manage the Agreements (License IDs).
 
 If you no longer want to be a VL admin, you must first assign the VL admin role to another user. The new VL admin can then remove your VL admin permissions. You must repeat this process for each license ID.
 
 ### If you don’t have a volume licensing user profile in the Microsoft 365 admin center
 
-If you're named the contract as a Primary or Notice contact, you receive a welcome email inviting you to create your VL user profile in the Microsoft 365 admin center. Alternatively, you can choose to forward the email to someone else who can register and become the VL admin in the Microsoft 365 admin center, instead.
+If you're named the contract as a Primary or Notice contact, you receive a welcome email inviting you to create your VL user profile in the Microsoft 365 admin center.  Alternatively, you can choose to forward the email to someone else who can register and become the VL admin in the Microsoft 365 admin center, instead.
 
 ### Change the Primary or Notice contact information on the licensing contract
 
-If you want to change who is named on a VL contract with a role such as "Primary Contact" or "Notice Contact," contact your Microsoft partner or seller to process a Change of Contact Information Request to update the license IDs that list you with this role.
+If you want to change who is named on a VL contract with a role such as Primary Contact or Notice Contact, contact your Microsoft partner or seller to process a Change of Contact Information Request to update the license IDs that list you with this role.
 
 Updating the Notices Contact information on active VL contracts helps ensure that any Microsoft or Partner communications are received.
 
@@ -106,9 +104,7 @@ The **Manage Assignments** page contains a list of all the VL users that you inv
 | Status                 | Indicates the status of the user. For a list of explanations for the possible status, see the next table in this section. |
 | Actions                | Indicates the action you can take for the user. For example, **View access**, **Resend invite**, and **Reset invite**. |
 | Sign-in email          | The email address used to sign in to Microsoft 365 admin center. In most cases, this address is the user's work email, but formats like user\@userorg.onmicrosoft.com are also possible. The inclusion of this email is useful for organizations that don't have Microsoft Entra enabled. |
-| Business email         | The email address listed on the VL contract – typically the email address of the Primary Contact or Notices Correspondent.\\
-
-When you add new VL users, the invitation is sent to the **Business email** address so that the admin can then forward it to the new user. |
+| Business email         | The email address listed on the VL contract – typically the email address of the Primary Contact or Notices Correspondent.<br><br>When you add new VL users, the invitation is sent to the **Business email** address so that the admin can then forward it to the new user. |
 | Volume licensing roles | Lists the VL roles assigned to the user. |
 
 The following table lists the statuses that you might see in the **Status** column on the **Manage Assignments** page.
@@ -138,7 +134,7 @@ Add new users who don't already have VL permissions.
     - If you search for a user with an email address not managed by your organization, you see the message "No results found. Press enter to save." You can add the user as an "External user," which provides access only to VL information.
 6. If a user's business email is different from their sign-in email, enter the alternate email address.
 7. Select **Review   + Apply**.
-8. Continue to Step 2. Assign users to contracts.
+8. Continue to [Step 2. Assign users to contracts](#step-2-assign-users-to-contracts).
 
 ### Step 2. Assign users to contracts
 
@@ -149,7 +145,7 @@ Add new users who don't already have VL permissions.
     > [!TIP]
     > VL admins with inherited permissions can assign themselves an admin role on a particular Agreement (License ID) and then see any users they added to inherited contracts.
 4. When you return to the **Assign users to contracts** page, expand the user details again. You now see the list of license IDs that you assigned to that user.
-5. Continue to Step 3. Assign roles to users.
+5. Continue to [Step 3. Assign roles to users](#step-3-assign-roles-to-users).
 
 ### Step 3. Assign roles to users
 
