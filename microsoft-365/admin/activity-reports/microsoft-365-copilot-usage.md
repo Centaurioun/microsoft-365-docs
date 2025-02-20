@@ -54,7 +54,7 @@ You can view several numbers for Microsoft 365 Copilot usage, which highlight th
 **Active Users** shows the total number of enabled users in your organization who tried a user-initiated Microsoft 365 Copilot feature, in one or more apps in Microsoft 365 over the selected time period.
 
 > [!NOTE]
-> Active users now includes Copilot Chat (web) usage starting from August 20, 2024.
+> Active users now include Copilot Chat (web) usage starting from August 20, 2024.
 
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
 
