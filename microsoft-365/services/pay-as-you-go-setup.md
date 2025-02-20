@@ -35,17 +35,17 @@ Before setting up pay-as-you-go services, ensure you have the following informat
 
 a. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
-b. Go to the **Setup** section, and then select **Billing and licenses**.
+b. Go to the **Setup** section, and then go to **Billing and licenses**.
 
 #### Step 2: Activate pay-as-you-go services
 
 a. In the **Billing and licenses** section, select **Activate pay-as-you-go services**.
 
-b. Select **Get started** to begin the setup process.
+b. On the **Activate pay-as-you-go services** page, select **Get started** to begin the setup process.
 
 #### Step 3: Configure billing
 
-a. On the **Pay-as-you-go services** page, select the service you want to set up (for example, Copilot or Syntex).
+a. On the **Pay-as-you-go services** page, select the service you want to set up (for example, **Agents in SharePoint** or **Syntex services**).
 
 b. On the **Set up billing and turn on services** panel, choose your Azure subscription, resource group, and region.  
 
@@ -73,9 +73,11 @@ b. Go to the **Settings** section, and then select **Org settings**.
 
 #### Step 2: Manage billing
 
-a. On the **Pay-as-you-go services** page, select the service you want to disconnect (for example, Copilot or Syntex).
+a. On the **Org settings** page, select **Pay-as-you-go services**.
 
-b. On the **Manage billing** panel, select **Edit billing information**.
+b. On the **Pay-as-you-go services** page, select the service you want to disconnect (for example, **Agents in SharePoint** or **Syntex services**).
+
+c. On the **Manage billing** panel, select **Edit billing information**.
 
 #### Step 3: Disconnect Azure subscription
 
