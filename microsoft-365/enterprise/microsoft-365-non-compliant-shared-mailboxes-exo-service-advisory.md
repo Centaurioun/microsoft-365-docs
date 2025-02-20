@@ -28,7 +28,7 @@ description: "Learn about service advisories for non-compliant shared mailboxes 
 
 An Exchange Online service advisory informs you about shared mailboxes which are out of compliance. These service advisories provide visibility to the number of shared mailboxes in your organization that might require admin intervention. 
 
-These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, you can go to **Health > Service health > Overview** and then look for **Shared mailbox(es) have exceeded the 50 GB storage limit in your tenant**, or you can go **Health > Service health > Exchange Online** and select the **Active issues** tab. Here's an example of a non-compliant shared mailbox service advisory.
+These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, you can go to **Health > Service health > Overview** and then look for **Shared mailbox(es) have exceeded the 50 GB storage limit in your tenant**, or you can go **Health > Service health > Exchange Online** and select the **Active issues** tab. Here's an example of a non-compliant shared mailbox service advisory under Service Health.
 
 :::image type="content" source="../media/m365-non-compliant-shared-mailboxes-exo-service-advisory-1.png" alt-text="Service health - issues for your organization to act on":::
 
