@@ -2,8 +2,8 @@
 title: "Connect your DNS records at Cloudflare to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 06/13/2024
 audience: Admin
