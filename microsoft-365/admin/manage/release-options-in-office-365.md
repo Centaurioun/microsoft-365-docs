@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/11/2025
+ms.date: 11/18/2024
 audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
