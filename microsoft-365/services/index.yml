@@ -38,7 +38,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Pay-as-you-go services
+          - text: Available pay-as-you-go services
             url: pay-as-you-go-services.md
       - linkListType: how-to-guide
         links:
