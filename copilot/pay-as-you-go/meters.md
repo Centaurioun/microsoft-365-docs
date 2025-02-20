@@ -18,9 +18,13 @@ ms.collection:
 ms.custom: [copilot-learning-hub]
 ---
 
-# Microsoft 365 Copilot Chat pay-as-you-go meters
+# Meters for Microsoft 365 Copilot pay-as-you-go
 
-The pay-as-you-go meters provide detailed insights into the usage and costs associated with Microsoft 365 Copilot Chat. This article explains how the meters work and how administrators can use them to manage costs effectively.
+The pay-as-you-go meters provide detailed insights into the usage and costs associated with Microsoft 365 Copilot Chat. Pay-as-you-go meters track the consumption of Copilot services, allowing organizations to pay only for what they use.
+
+Meters provide a granular view of usage, helping administrators understand how different services are being used and the associated costs.
+
+## Meter details table
 
 | Meter            | What is counted?     | What is billed?       |
 |------------------|----------------------------------------------------------------------------------------------------------------------------|-----------------------|
