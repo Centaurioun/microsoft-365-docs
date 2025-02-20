@@ -24,19 +24,31 @@ The Microsoft 365 Backup service, offered through the Microsoft 365 admin center
 
 ### What’s counted towards protected backup storage?
 
-Microsoft 365 Backup charges you based on the size of the following content for 365 days from the time it's added to backup protection:
+Microsoft 365 Backup charges you based on the size of the following content once it's added to backup protection. That size is the result of the summation of the following two categories:
 
-- Cumulative back up size of the mailboxes, SharePoint sites, and OneDrive accounts being protected. Size of OneDrive accounts and SharePoint sites are the size of the live OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports. Mailboxes are the size of the user's primary mailbox plus their online archives plus deleted/versioned items held for backup.
+- Summation of the user-facing size of the protected content:
 
-- Deleted content in user’s Recycle Bin and second-stage Recycle Bin (also known as Site Collection Recycle Bin).
+    - Size of OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports, which includes the first stage recycle bin. If a site or OneDrive account is removed from the protection policy, the size of the site at the time it is removed from the policy will be used as the proxy for the site’s “live” size. In other words, your backup costs will never increase once the OneDrive account or site has been removed from the protection policy.
 
-> [!NOTE]
-> Restore points or size of restores will not be charged. Although Azure is being used to process the payments, there are no additional Azure API or storage costs beyond the Microsoft 365 Backup usage charges previously mentioned.
+    - Size of the live user or shared mailbox plus their associated online archives if those are being used. If the mailbox is removed from the protection policy, the size of the mailbox at the time it’s removed will be used as the ongoing proxy for its “live” size until all restore points expire from the backup. In other words, your backup costs will never increase once the mailbox has been removed from the protection policy.
 
-As an example, if you have a site under protection that is currently 1 GB for the first month, you are charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no longer be charged for backup.
+- Deleted and versioned data held for recovery in the backups, which is the summation of:
 
-> [!NOTE]
-> A partner application integrated with Microsoft 365 Backup storage might charge a different rate for their service.
+    - Deleted content in SharePoint sites’ and OneDrive accounts’ second-stage Recycle Bin (also known as Site Collection Recycle Bin).
+
+    - Deleted/ or versioned items in the protected mailboxes.
+
+    For example, if you protect a 1 GB site that has 0.5 GB of data in its second-stage Recycle Bin, and a 1 GB mailbox that has a 1 GB online archive, then you will be charged for 3.5 GB of Backup usage.
+
+#### Important considerations
+
+- The restore point frequency does not materially impact the cost of the backup storage, so reducing that frequency would not change your costs.
+
+- Although Azure is being used as a payment processor, there are no additional Azure API or storage costs beyond the Microsoft 365 Backup usage charges previously mentioned.
+
+- Deleted or versioned content held in the recycle bin or in the mailboxes will expire from the backups once the backup retention period lapses (for example, 365 days after the backup is taken). Once deletedor versioned content expires from the backups, they are no longer counted in the Backup consumption equation and therefore no longer contribute to the cost. For example, if you have a site under protection that is currently 1 GB for the first month, you are charged for 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no longer be charged for backup.
+
+- If you are using a partner (ISV) solution built on the Microsoft 365 Backup Storage platform, you will be charged solely by them for their application. You will not receive a separate bill or charge directly from Microsoft for the Backup Storage consumption.
 
 ## Pricing calculator
 
@@ -59,9 +71,25 @@ The Microsoft 365 Backup pricing calculator, when calculating the storage requir
 
 To use the Microsoft 365 Backup pricing calculator, you need to perform the following steps. Information about how to collect data from each of these steps is detailed later in this article.
 
-1. Download the latest version of the [Microsoft 365 Backup pricing calculator tool](https://aka.ms/M365BackupCalculator).
+1. Download the latest version of the [Microsoft 365 Backup pricing calculator tool](https://aka.ms/M365BackupCalculator) (an Excel spreadsheet).
 
-2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool. Content in the OneDrive and SharePoint recycle bins and data in archive mailboxes won't be reflected in these reports, but do affect the backup costs as previously described.
+2. Open the Excel spreadsheet. This sheet produces a simple model for cost calculations.
+
+3. Gather the information needed in the orange cells on the High-Level Estimates worksheet.
+
+    - The **Total Storage (GB)** input field should include the sum of sizes of live data and sizes of recycle bins and mailbox online archives in your tenant. You can get the live data plus the archives and recycle bin deleted content sizes using either PowerShell commands or the Microsoft 365 usage reports. More information on guidelines to get this data can be found in the following section.
+
+    - The **Percentage Storage to protect** input field should represent the percentage of your content you plan to protect in the Backup tool. You are only charged for what you protect in the tool.
+
+4. Once you have this information, enter it into the **High-Level Estimates** worksheet as shown in the following example.
+
+5. An estimate of the Microsoft 365 Backup costs for 1 month and 12 months will then be generated. 
+
+> [!NOTE]
+> The 12-month cumulative cost assumes no data growth or churn. Understanding your data's growth and churn is a more complex exercise, but can be estimated by looking at your primary storage growth trends in the Microsoft 365 admin center reports and the size of your second-stage recycle bin (which is a general heuristic for the amount of data your tenant churns over a three-month period of time).
+
+
+1. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool. Content in the OneDrive and SharePoint recycle bins and data in archive mailboxes won't be reflected in these reports, but do affect the backup costs as previously described.
 
 3. Open the Excel spreadsheet and select the **High-Level Estimates** worksheet. This sheet produces the simplest default model based on linear data growth assumptions.
 
