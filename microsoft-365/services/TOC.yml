@@ -18,9 +18,9 @@ items:
             - name: Microsoft 365 Copilot
               href: /sharepoint/microsoft-365-pay-as-you-go-pricing
             - name: Microsoft Syntex
-              href: /syntex/syntex-pay-as-you-go-services
+              href: /microsoft-365/syntex/syntex-pay-as-you-go-services
             - name: Microsoft 365 Archive
-              href: /syntex/syntex-pay-as-you-go-services#storage-services
+              href: ../syntex/syntex-pay-as-you-go-services#storage-services
             - name: Microsoft 365 Backup
               href: /syntex/syntex-pay-as-you-go-services#storage-services.md
  
@@ -35,7 +35,7 @@ items:
                     - name: Manage access 
                       href: /sharepoint/manage-access-agents-in-sharepoint
                     - name: Trial access to SharePoint agents with PowerShell
-                      href: /sharepoint/get-started-sharepoint-agents
+                      href: /sharepoint/manage-trial-agents-sharepoint-powershell
                     - name: Use agents with pay-as-you-go billing 
                       href: /sharepoint/sharepoint-agents-azure-billing
 
@@ -291,60 +291,59 @@ items:
                         - name: Analyze model usage
                           href: /syntex/model-usage-analytics.md
 
-                - name: Microsoft 365 Archive
+            - name: Microsoft 365 Archive
+              items:
+                - name: Overview 
+                  href: /archive/archive-overview.md
+                - name: Admin setup 
+                  href: /archive/archive-setup.md
+                - name: Privacy, security, & compliance 
+                  href: /archive/archive-privacy-security.md
+                - name: Pricing model 
+                  href: /archive/archive-pricing.md
+                - name: Education offering 
+                  href: /archive/archive-education-offering.md  
+                - name: Archive states 
+                  href: /archive/archive-states.md
+                - name: Manage 
+                  href: /archive/archive-manage.md
+                - name: Compliance 
+                  href: /archive/archive-compliance.md
+                - name: End user experience 
+                  href: /archive/archive-end-user.md
+                - name: FAQs
+                  href: /archive/archive-faq.md
+
+            - name: Microsoft 365 Backup
+              items:
+                - name: Overview 
+                  href: backup-overview.md
+                - name: Pricing model
+                  href: backup-pricing.md
+                - name: Initial setup 
+                  href: backup-setup.md
+                - name: Create, view, & edit policies 
+                  href: backup-view-edit-policies.md
+                - name: Restore data 
+                  href: backup-restore-data.md
+                - name: Invoice management
+                  href: backup-billing.md
+                - name: Offboarding
+                  href: backup-offboarding.md
+                - name: Privacy, security, & compliance
+                  href: backup-privacy-security.md
+                - name: FAQs
+                  href: backup-faq.md
+                - name: Microsoft 365 Backup Storage
                   items:
-                    - name: Overview 
-                      href: /archive/archive-overview.md
-                    - name: Admin setup 
-                      href: /archive/archive-setup.md
-                    - name: Privacy, security, & compliance 
-                      href: /archive/archive-privacy-security.md
-                    - name: Pricing model 
-                      href: /archive/archive-pricing.md
-                    - name: Education offering 
-                      href: /archive/archive-education-offering.md  
-                    - name: Archive states 
-                      href: /archive/archive-states.md
-                    - name: Manage 
-                      href: /archive/archive-manage.md
-                    - name: Compliance 
-                      href: /archive/archive-compliance.md
-                    - name: End user experience 
-                      href: /archive/archive-end-user.md
-                    - name: FAQs
-                      href: /archive/archive-faq.md
+                    - name: Overview
+                      href: storage/backup-3p-overview.md 
+                    - name: Billing
+                      href: storage/backup-3p-billing.md
+                    - name: Application lifecyle
+                      href: storage/backup-3p-lifecycle.md
 
-
-                - name: Microsoft 365 Backup
-                  items:
-                    - name: Overview 
-                      href: backup-overview.md
-                    - name: Pricing model
-                      href: backup-pricing.md
-                    - name: Initial setup 
-                      href: backup-setup.md
-                    - name: Create, view, & edit policies 
-                      href: backup-view-edit-policies.md
-                    - name: Restore data 
-                      href: backup-restore-data.md
-                    - name: Invoice management
-                      href: backup-billing.md
-                    - name: Offboarding
-                      href: backup-offboarding.md
-                    - name: Privacy, security, & compliance
-                      href: backup-privacy-security.md
-                    - name: FAQs
-                      href: backup-faq.md
-                    - name: Microsoft 365 Backup Storage
-                      items:
-                        - name: Overview
-                          href: storage/backup-3p-overview.md 
-                        - name: Billing
-                          href: storage/backup-3p-billing.md
-                        - name: Application lifecyle
-                          href: storage/backup-3p-lifecycle.md
-
-
+            
 
 
 
