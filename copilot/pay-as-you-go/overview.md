@@ -31,7 +31,8 @@ The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and scalable solu
 - **Cost control** You can enable pay-as-you-go for specific users or scenarios, allowing for better cost management.
 - **Establish usage patterns** Understand adoption patterns for new apps to determine whether prepaid licenses make financial sense for your business.
 - **Scalability** Organizations can scale their usage based on demand, paying only for the consumption.
-How does it work?
+
+## How does it work?
 
 The pay-as-you-go plan allows administrators to set up billing for Microsoft 365 Copilot Chat, enabling users to access declarative agents on a consumption basis. You can manage billing, view costs, and turn off services as needed.
 
@@ -41,7 +42,7 @@ The following administrator roles in the Microsoft 365 admin center can view and
 - AI administrator
 - Global reader (read-only access)
 
-## Billing process
+### Billing process
 
 When you link your Azure subscription to a service for pay-as-you-go billing in the Microsoft 365 admin center, you're billed on a pay-as-you-go basis for the service you set up.
 
