@@ -68,7 +68,7 @@ Your tenant is billed according to the details shown in the following table:
 
 ## Monitoring and billing
 
-The organization’s consumption of the pay-as-you-go service can be monitored at the Cost Management center for each of the Microsoft 365 pay-as-you-go services that you use.
+The organization’s consumption of the pay-as-you-go service can be monitored on the [Cost Management](/microsoft-365/commerce/use-cost-mgmt) page in the Microsoft 365 admin center for each of the Microsoft 365 pay-as-you-go services that you use.
 
 Billing for services is done through the Azure subscription that you associate to the service.
 
