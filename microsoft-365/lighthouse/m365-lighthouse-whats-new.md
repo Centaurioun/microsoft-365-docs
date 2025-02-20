@@ -4,8 +4,8 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: sharonchoi
-ms.date: 11/21/2024
+ms.reviewer: ebamoh
+ms.date: 02/19/2025
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,48 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## December 2024
+
+### View all commercial licenses for a customer tenant
+
+You can now access information about all of the licenses purchased by a customer across various Microsoft commercial subscriptions. Note that this product information is restricted to subscriptions acquired through the new commerce experience in the Cloud Solution Provider program (CSP) and does not include Microsoft Azure subscriptions.
+
+For each SKU purchased by the customer, you can see both the paid licenses and the unassigned licenses. You can use this comprehensive view of the customer tenant's license profile to help customers maximize the value of their Microsoft subscriptions.
+
+To access a customer tenant's license information, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page. From here, select the **Product details and usage** tab, and then select **Licenses** in the left pane.
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
+
+### Updated settings for "Require MFA for admins" deployment task
+
+As roles and permissions in Microsoft 365 Lighthouse have evolved to reduce security risk for you and your customers, we've updated the underlying settings of the "Require MFA for admins" deployment task in the default baseline to account for the following Microsoft Entra role assignments:
+
+- Application Administrator
+- Cloud Application Administrator
+- Password Administrator
+- Privileged Authentication Administrator
+- Privileged Role Administrator
+
+This update may change the compliance status of the "Create Conditional Access policy to require MFA for admins" sub-task to **Not compliant** for some customer tenants. To ensure tenants remain secure, we recommend that you re-deploy the sub-task to bring it back into compliance.
+
+To re-deploy the sub-task, go to the **Tenants** page, select the tenant, and then select the **Deployment plan** tab. Locate and expand the "Require MFA for admins" task, select the "Create Conditional Access policy to require MFA for admins" sub-task, and then select **Deploy**.
+
+If you previously cloned the "Require MFA for admins" deployment task as part of any custom baselines, you'll need to re-clone the updated task for each of those custom baselines.
+
+With this update, the **Detection history** tab displays data based on the updated sub-task. Detection history based on the pre-updated sub-task is no longer available.
+
+To learn more, see [Require MFA for administrators - Microsoft Entra ID](/entra/identity/conditional-access/policy-old-require-mfa-admin).
+
+### Tenant-specific opportunities for engagement
+
+Microsoft 365 Lighthouse now includes insights and recommendations for customer tenants on the tenant details page. You can view a list of available opportunities for the selected tenant, export the list of opportunities to a .CSV file, or view opportunities for all of your customer tenants via a convenient link.
+
+Seeing these opportunities&mdash;based on potential value, risk, and readiness&mdash;in context with other key data like apps and services usage and subscriptions makes it easier to review and prioritize actionable insights, which can help you engage with your customers.
+
+To access opportunities for a customer tenant, in the left navigation pane in Lighthouse, select **Tenants**, and then select a tenant from the list. On the tenant details page, select the **Product details and usage** tab, and then select **Opportunities** in the left pane.
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
 
 ## November 2024
 

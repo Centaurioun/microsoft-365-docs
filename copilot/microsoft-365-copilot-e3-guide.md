@@ -1,12 +1,12 @@
 ---
-title: Get your data ready for Microsoft 365 Copilot with E3 license
-description: The E3 deployment for Microsoft 365 Copilot uses a E3 license, SharePoint Advanced Management, and Microsoft Purview. These services help your organization get ready for Copilot. This IT admin guide helps you prevent oversharing, declutter data sources, and monitor site changes. Get your organization and data ready for Copilot by following the steps in this article.
+title: Get your data ready for Microsoft 365 Copilot with E3 + SAM licenses
+description: Get started with M365 Copilot. The E3 deployment for Microsoft 365 Copilot uses a E3 license, SharePoint Advanced Management, and Microsoft Purview. These services help your organization get ready for Copilot. This IT admin guide helps you prevent oversharing, declutter data sources, and monitor site changes. Get your organization and data ready for Copilot by following the steps in this article.
 f1.keywords:
 - NOCSH
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 11/20/2024
+ms.date: 01/15/2025
 ms.reviewer: cabailey, ruihu
 audience: Admin
 ms.topic: get-started
@@ -22,9 +22,9 @@ appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Microsoft 365 Copilot admin guide for E3 licenses
+# Microsoft 365 Copilot admin guide for E3 + SAM licenses
 
-When you're preparing your organization for [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) or you're ready to start using Copilot, there are features in your E3 license that can help get your data ready.
+When you're preparing your organization for [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) or you're ready to start using Copilot, there are features in your E3 + SAM licenses that can help get your data ready.
 
 When users enter a prompt, Copilot can respond with data that the user has permission to access. Overshared and outdated data can lead to inaccurate results from Copilot.
 
@@ -33,7 +33,7 @@ This article provides guidance for IT admins with **Microsoft 365 E3** and **Sha
 - Use SharePoint Advanced Management (SAM) to help prevent oversharing, declutter data sources, restrict SharePoint searches, and monitor SharePoint site changes.
 - Use Microsoft Purview to create sensitivity labels, identify and protect sensitive data, and delete the content you don't need.
 
-When you use the features described in this article, your organization is better prepared for Copilot, including getting more accurate results from Copilot.
+Use this article to get started with Microsoft 365 Copilot in your organization. When you use the features described in this article, your organization is better prepared for Copilot, including getting more accurate results from Copilot.
 
 This article applies to:
 
@@ -58,7 +58,7 @@ This article applies to:
 
   - **[Microsoft SharePoint Premium - SharePoint Advanced Management](/sharepoint/advanced-management#licensing)**
 
-    There are some features in SharePoint Advanced Management (SAM) that are included with your Microsoft 365 Copilot license. To get the full version of SAM and use all the features described in this article, you need the [Microsoft SharePoint Premium - SharePoint Advanced Management](/sharepoint/advanced-management#licensing) license.
+    Beginning in early 2025, Microsoft SharePoint Premium - SharePoint Advanced Management (SAM) will be included with your Microsoft 365 Copilot license. To learn more about SAM licensing, see [Microsoft SharePoint Premium - SharePoint Advanced Management](/sharepoint/advanced-management#licensing) license.
 
   - **[Microsoft 365 Copilot](microsoft-365-copilot-licensing.md)**
 
@@ -74,11 +74,11 @@ This article applies to:
     - [Permissions required to create and manage sensitivity labels](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels)
     - [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview](/defender-office-365/scc-permissions)
 
-## Step 1 - Use SharePoint Advanced Management (SAM) features
+## SharePoint admin task - Use SharePoint Advanced Management (SAM) features
 
 [!INCLUDE [copilot-e5-e3-sharepoint-advanced-management](./includes/copilot-e5-e3-sharepoint-advanced-management.md)]
 
-## Step 2 - Restrict SharePoint Search (RSS)
+## SharePoint admin task - Restrict SharePoint Search (RSS)
 
 ✅ **Copilot goal: Expand the RSS allowed list**
 
@@ -116,7 +116,7 @@ To learn more, see:
 
     To learn more about this cmdlet, see [Use PowerShell Scripts for Restricted SharePoint Search](/sharepoint/restricted-sharepoint-search-admin-scripts).
 
-## Step 3 - Use Microsoft Purview
+## Purview admin tasks - Use Microsoft Purview features
 
 There are features in Microsoft Purview that can help you get ready for Copilot.
 
@@ -133,10 +133,10 @@ To learn more about Microsoft Purview, see [Microsoft 365 Copilot in Microsoft P
 
 [!INCLUDE [copilot-e5-e3-create-apply-sensitivity-labels](./includes/copilot-e5-e3-create-apply-sensitivity-labels.md)]
 
-This section walks you through the steps to create and use sensitivity labels in Microsoft Purview. You create your own label names and configurations. To learn more about sensitivity labels, see:
+This section guides you through the steps to create and use sensitivity labels in Microsoft Purview. You create your own label names and configurations. To learn more about sensitivity labels, see:
 
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
-- [Microsoft Purview strengthens information protection for Copilot](/purview/ai-microsoft-purview#microsoft-purview-strengthens-information-protection-for-copilot)
+- [Use Microsoft Purview to strengthen information protection for Copilot](/purview/ai-microsoft-purview#microsoft-purview-strengthens-information-protection-for-copilot)
 
 #### 1. Create sensitivity labels
 
@@ -157,7 +157,7 @@ To learn more, see:
 
 2. Educate your users and provide guidance on when to apply the correct sensitivity label.
 
-    Users should change the label if needed, especially for more sensitive content.
+    Users should change a label if needed, especially for more sensitive content.
 
     To help you with this step, see [End-user documentation for sensitivity labels](/purview/get-started-with-sensitivity-labels#end-user-documentation-for-sensitivity-labels).
 
@@ -198,8 +198,8 @@ You can create DLP policies to protect sensitive information with your Microsoft
 This section introduces you to the DLP policy creation process. DLP policies are a powerful tool. Make sure you:
 
 - Understand the data you're protecting and the goals you want to achieve.
-- Take time to design a policy before you implement it. You want to avoid any unintended issues. It's not recommended to create a policy, and then only tune the policy by trial-and-error.
-- If you're new to Microsoft Purview DLP, it's helpful to work through [Data loss prevention - Before you begin](/purview/dlp-learn-about-dlp#before-you-begin) before you start designing a policy. This step helps you understand the concepts and the tools you use to create and manage DLP policies.
+- Take time to design a policy before you implement it. You want to avoid any unintended issues. We don't recommend you create a policy, and then only tune the policy by trial-and-error.
+- Work through [Data loss prevention - Before you begin](/purview/dlp-learn-about-dlp#before-you-begin) before you start designing a policy. This step helps you understand the concepts and the tools you use to create and manage DLP policies.
 
 #### 1. Open the Microsoft Purview portal
 
@@ -232,7 +232,9 @@ For example, your organization might have regulatory requirements that require y
 
 If you have stale data in your organization, then create and use retention policies. These policies help Copilot return more accurate information from your documents and emails.
 
-Settings in a retention policy apply at the container level, like a SharePoint site or an Exchange mailbox. These settings are automatically inherited by the data in that container. If you need [exceptions for individual emails or documents](/purview/create-retention-labels-data-lifecycle-management), then use retention labels. For example, you have a retention policy to delete data in OneDrive if the data is older than one year. But, users can apply retention labels to keep specific documents from automatic deletion.
+Settings in a retention policy apply at the container level, like a SharePoint site or an Exchange mailbox. Data in that container automatically inherits these settings.
+
+If you need [exceptions for individual emails or documents](/purview/create-retention-labels-data-lifecycle-management), then use retention labels. For example, you have a retention policy to delete data in OneDrive if the data is older than one year. But, users can apply retention labels to specific documents to keep these documents from automatic deletion.
 
 1. To create retention policies, sign into the [Microsoft Purview portal](https://purview.microsoft.com/) as a Compliance Administrator.
 
@@ -271,30 +273,12 @@ To learn more, see:
 
 ### Review and analyze Copilot prompts and responses
 
-✅ **Use [Data Security Posture Management (DSPM) for AI](/purview/ai-microsoft-purview) or [eDiscovery](/purview/edisc) to analyze Copilot user prompts and responses**
+✅ **Use [eDiscovery](/purview/edisc) to analyze Copilot user prompts and responses**
 
 When users enter a prompt and get a response from Copilot, you can view and search these interactions. Specifically, these features help you:
 
 - Find sensitive information or inappropriate content included in Copilot activities.
 - Respond to a data spillage incident when confidential or malicious information is released through Copilot-related activity.
-
-There are two ways to review and analyze Copilot prompts and responses - **Data Security Posture Management for AI** and **eDiscovery**.
-
-# [DSPM for AI](#tab/aihub)
-
-[Data Security Posture Management (DSPM) for AI](/purview/ai-microsoft-purview#microsoft-purview-ai-hub-provides-insights-policies-and-controls-for-ai-apps) (previously called AI Hub) is a central location in the Microsoft Purview portal that proactively monitors AI use. It includes eDiscovery and you can use it to analyze and review Copilot prompts and responses.
-
-1. Sign into the [Microsoft Purview portal](https://purview.microsoft.com/) as an admin in one of the groups listed at [Data Security Posture Management for AI - Permissions](/purview/ai-microsoft-purview-permissions).
-2. Select **Solutions** > **DSPM for AI** > **Activity explorer**.
-3. Select an existing activity in the list. For example, if there's a **Sensitive info types** activity, select it.
-4. Select **View related AI interaction activity**. In **Interaction details**, you can see the app and export an activity.
-
-To learn more, see:
-
-- [Microsoft Purview Data Security Posture Management for AI](/purview/ai-microsoft-purview-considerations)
-- [Data Security Posture Management for AI - Activity explorer events](/purview/ai-microsoft-purview-considerations#activity-explorer-events)
-
-# [eDiscovery](#tab/edisc)
 
 [eDiscovery](/purview/edisc) uses cases to identify, hold, export, and analyze content found in mailboxes and sites. You can this feature to analyze Copilot prompts and responses.
 
@@ -307,8 +291,6 @@ To learn more, see:
 4. The data returned is the Copilot prompts and responses. You can review and export this information. If the data contains sensitive information, you can also delete it.
 
 To learn more, see [Search for Copilot interactions in eDiscovery](/purview/edisc-search-copilot-data).
-
----
 
 ## Technical and deployment resources available to you
 
