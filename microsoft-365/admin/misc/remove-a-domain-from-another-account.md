@@ -2,10 +2,10 @@
 title: "Remove a domain from another account"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 01/18/2022
+ms.date: 08/28/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
