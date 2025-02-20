@@ -66,6 +66,8 @@ landingContent:
         links:
           - text: SharePoint agents
             url: /sharepoint/get-started-sharepoint-agents
+          - text: Agents in Microsoft 365 Copilot Chat
+            url: pay-as-you-go-services.md
 
 # Card 5
   - title: Document & image services
@@ -94,6 +96,14 @@ landingContent:
             url: ../syntex/document-understanding-overview.md
 
 # Card 6
+  - title: Video services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Video translation
+            url: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
+
+# Card 7
   - title: Storage services
     linkLists:
       - linkListType: overview
@@ -103,10 +113,3 @@ landingContent:
           - text: Microsoft 365 Backup
             url: ../backup/backup-overview
 
-# Card 7
-  - title: Video services
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Video translation
-            url: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
