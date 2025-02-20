@@ -21,7 +21,7 @@ ms.custom:
 - admindeeplinkEXCHANGE
 f1.keywords:
 - NOCSH
-description: "Learn about service advisories for OAB size limits in Exchange Online monitoring."
+description: "Learn about service advisories for non-compliant shared mailboxes in Exchange Online."
 ---
 
 # Service advisory for non-compliant shared mailboxes in Exchange Online
