@@ -46,32 +46,6 @@ landingContent:
             url: pay-as-you-go-setup.md
 
 # Card 3
-  - title: Document & image services
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Autofill columns
-            url: /syntex/autofill-overview.md
-          - text: Content assembly
-            url: /syntex/content-assembly.md
-          - text: Document translation
-            url: /syntex/translation-overview.md
-          - text: eSignature
-            url: /syntex/esignature-overview.md
-          - text: Image tagging
-            url: /syntex/image-tagging-overview.md
-          - text: Optical character recognition
-            url: /syntex/ocr-overview.md
-          - text: Prebuilt document processing
-            url: /syntex/prebuilt-overview.md
-          - text: Structured and freeform document processing
-            url: /syntex/form-processing-overview.md
-          - text: Taxonomy tagging
-            url: /syntex/taxonomy-tagging-overview.md
-          - text: Unstructured document processing
-            url: /syntex/document-understanding-overview.md
-
-# Card 4
   - title: Pay-as-you-go pricing
     linkLists:
       - linkListType: overview
@@ -79,13 +53,13 @@ landingContent:
           - text: Microsoft 365 Copilot
             url: /sharepoint/microsoft-365-pay-as-you-go-pricing
           - text: Microsoft Syntex
-            url: /syntex/syntex-pay-as-you-go-services
+            url: ../syntex/syntex-pay-as-you-go-services
           - text: Microsoft 365 Archive
-            url: /syntex/syntex-pay-as-you-go-services#storage-services
+            url: ../syntex/syntex-pay-as-you-go-services#storage-services
           - text: Microsoft 365 Backup
-            url: /syntex/syntex-pay-as-you-go-services#storage-services.md
+            url: ../syntex/syntex-pay-as-you-go-services#storage-services.md
 
-# Card 5
+# Card 4
   - title: Microsoft 365 Copilot services
     linkLists:
       - linkListType: overview
@@ -93,15 +67,41 @@ landingContent:
           - text: SharePoint agents
             url: /sharepoint/get-started-sharepoint-agents
 
+# Card 5
+  - title: Document & image services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Autofill columns
+            url: ../syntex/autofill-overview.md
+          - text: Content assembly
+            url: ../syntex/content-assembly.md
+          - text: Document translation
+            url: ../syntex/translation-overview.md
+          - text: eSignature
+            url: ../syntex/esignature-overview.md
+          - text: Image tagging
+            url: ../syntex/image-tagging-overview.md
+          - text: Optical character recognition
+            url: ../syntex/ocr-overview.md
+          - text: Prebuilt document processing
+            url: ../syntex/prebuilt-overview.md
+          - text: Structured and freeform document processing
+            url: ../syntex/form-processing-overview.md
+          - text: Taxonomy tagging
+            url: ../syntex/taxonomy-tagging-overview.md
+          - text: Unstructured document processing
+            url: ../syntex/document-understanding-overview.md
+
 # Card 6
   - title: Storage services
     linkLists:
       - linkListType: overview
         links:
           - text: Microsoft 365 Archive
-            url: /microsoft-365/archive/archive-overview
+            url: ../archive/archive-overview
           - text: Microsoft 365 Backup
-            url: /microsoft-365/backup/backup-overview
+            url: ../backup/backup-overview
 
 # Card 7
   - title: Video services
