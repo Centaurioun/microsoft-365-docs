@@ -17,45 +17,45 @@ description: Learn how to set up or disconnect billing for pay-as-you-go service
 
 # Set up or disconnect pay-as-you-go services in Microsoft 365
 
-## Set Up pay-as-you-go services
+## Set up pay-as-you-go services
 
 ### Prerequisites
 
-Before setting up pay-as-you-go services, ensure you have the following:
+Before setting up pay-as-you-go services, ensure you have the following information:
 
-An Azure subscription in the same tenant as Microsoft 365.
+- An Azure subscription in the same tenant as Microsoft 365.
 
-An Azure resource group in that subscription.
+- An Azure resource group in that subscription.
 
-Appropriate admin roles: Global Administrator for accessing the Microsoft 365 admin center, and Owner or Contributor rights to the Azure subscription and resource group.
+- Appropriate admin roles: Global Administrator for accessing the Microsoft 365 admin center, and Owner or Contributor rights to the Azure subscription and resource group.
 
 ### Step-by-step setup guide
 
-Access the Microsoft 365 Admin Center:
+#### Step 1: Access the Microsoft 365 admin center
 
-Sign in to the Microsoft 365 admin center.
+a. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
-Navigate to the Setup section and select Billing and licenses.
+b. Go to the **Setup** section, and then select **Billing and licenses**.
 
-Activate Pay-as-you-go Services:
+#### Step 2: Activate pay-as-you-go services
 
-In the Billing and licenses section, select Activate pay-as-you-go services.
+a. In the **Billing and licenses** section, select **Activate pay-as-you-go services**.
 
-Click on Get started to begin the setup process.
+b. Select **Get started** to begin the setup process.
 
-Configure Billing:
+#### Step 3: Configure billing
 
-On the Pay-as-you-go services page, select the service you want to set up (for example, Syntex, Copilot, or Microsoft 365 Backup).
+a. On the **Pay-as-you-go services** page, select the service you want to set up (for example, Copilot or Syntex).
 
-On the Set up billing and turn on services panel, choose your Azure subscription, resource group, and region.  
+b. On the **Set up billing and turn on services** panel, choose your Azure subscription, resource group, and region.  
 
-Read and accept the pay-as-you-go terms of service.
+c. Read and accept the pay-as-you-go terms of service.
 
-Click Save to complete the setup.
+d. Select **Save** to complete the setup.
 
-Monitor Usage and Costs:
+#### Step 4: Monitor usage and costs
 
-Once the setup is complete, you can monitor your PAYG usage and costs in Microsoft Cost Management for Azure. Ensure you have at least read access to the resource group specified for billing.
+Once the setup is complete, you can monitor your pay-as-you-go usage and costs in Microsoft Cost Management for Azure. Ensure you have at least read access to the resource group specified for billing.
 
 ## Disconnect pay-as-you-go services
 
@@ -65,27 +65,26 @@ Ensure you have the necessary admin roles (Global Administrator or SharePoint Ad
 
 ### Step-by-step disconnection guide
 
-Access the Microsoft 365 Admin Center:
+#### Step 1: Access the Microsoft 365 admin center
 
-Sign in to the Microsoft 365 admin center.
+a. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
-Navigate to Settings > Org settings.
+b. Go to the **Settings** section, and then select **Org settings**.
 
-Manage Billing:
+#### Step 2: Manage billing
 
-On the Pay-as-you-go services page, select the service you want to disconnect (e.g., Syntex, Copilot, SharePoint Agents). 
+a. On the **Pay-as-you-go services** page, select the service you want to disconnect (for example, Copilot or Syntex).
 
-On the Manage billing panel, select Edit billing information.
+b. On the **Manage billing** panel, select **Edit billing information**.
 
-Disconnect Azure Subscription:
+#### Step 3: Disconnect Azure subscription
 
-Under Manage billing, select Disconnect Azure subscription.
+a. Under **Manage billing**, select **Disconnect Azure subscription**.
 
-Confirm the disconnection by selecting Disconnect on the confirmation window.
+b. Confirm the disconnection by selecting **Disconnect** on the confirmation window.
 
-Review Billing and Usage:
+#### Step 4: Review billing and usage
 
 After disconnecting the service, review your billing and usage to ensure all charges are accurate and no further usage is being billed to the Azure subscription.
 
- 
-For detailed instructions on setting up and disconnecting specific Pay as you go services, please refer to the product-specific get started documentation.
+For detailed instructions on setting up and disconnecting specific pay-as-you-go services, see the product-specific get started documentation.
