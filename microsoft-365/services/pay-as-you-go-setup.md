@@ -33,29 +33,29 @@ Before setting up pay-as-you-go services, ensure you have the following informat
 
 #### Step 1: Access the Microsoft 365 admin center
 
-a. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+- Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
-b. Go to the **Setup** section, and then go to **Billing and licenses**.
+- Go to the **Setup** section, and then go to **Billing and licenses**.
 
 #### Step 2: Activate pay-as-you-go services
 
-a. In the **Billing and licenses** section, select **Activate pay-as-you-go services**.
+- In the **Billing and licenses** section, select **Activate pay-as-you-go services**.
 
-b. On the **Activate pay-as-you-go services** page, select **Get started** to begin the setup process.
+- On the **Activate pay-as-you-go services** page, select **Get started** to begin the setup process.
 
 #### Step 3: Configure billing
 
-a. On the **Pay-as-you-go services** page, select the service you want to set up (for example, **Agents in SharePoint** or **Syntex services**).
+- On the **Pay-as-you-go services** page, select the service you want to set up (for example, **Agents in SharePoint** or **Syntex services**).
 
-b. On the **Set up billing and turn on services** panel, choose your Azure subscription, resource group, and region.  
+- On the **Set up billing and turn on services** panel, choose your Azure subscription, resource group, and region.  
 
-c. Read and accept the pay-as-you-go terms of service.
+- Read and accept the pay-as-you-go terms of service.
 
-d. Select **Save** to complete the setup.
+- Select **Save** to complete the setup.
 
 #### Step 4: Monitor usage and costs
 
-Once the setup is complete, you can monitor your pay-as-you-go usage and costs in Microsoft Cost Management for Azure. Ensure you have at least read access to the resource group specified for billing.
+- Once the setup is complete, you can monitor your pay-as-you-go usage and costs in Microsoft Cost Management for Azure. Ensure you have at least read access to the resource group specified for billing.
 
 ## Disconnect pay-as-you-go services
 
@@ -67,26 +67,26 @@ Ensure you have the necessary admin roles (Global Administrator or SharePoint Ad
 
 #### Step 1: Access the Microsoft 365 admin center
 
-a. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+- Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
-b. Go to the **Settings** section, and then select **Org settings**.
+- Go to the **Settings** section, and then select **Org settings**.
 
 #### Step 2: Manage billing
 
-a. On the **Org settings** page, select **Pay-as-you-go services**.
+- On the **Org settings** page, select **Pay-as-you-go services**.
 
-b. On the **Pay-as-you-go services** page, select the service you want to disconnect (for example, **Agents in SharePoint** or **Syntex services**).
+- On the **Pay-as-you-go services** page, select the service you want to disconnect (for example, **Agents in SharePoint** or **Syntex services**).
 
-c. On the **Manage billing** panel, select **Edit billing information**.
+- On the **Manage billing** panel, select **Edit billing information**.
 
 #### Step 3: Disconnect Azure subscription
 
-a. Under **Manage billing**, select **Disconnect Azure subscription**.
+- Under **Manage billing**, select **Disconnect Azure subscription**.
 
-b. Confirm the disconnection by selecting **Disconnect** on the confirmation window.
+- Confirm the disconnection by selecting **Disconnect** on the confirmation window.
 
 #### Step 4: Review billing and usage
 
-After disconnecting the service, review your billing and usage to ensure all charges are accurate and no further usage is being billed to the Azure subscription.
+- After disconnecting the service, review your billing and usage to ensure all charges are accurate and no further usage is being billed to the Azure subscription.
 
-For detailed instructions on setting up and disconnecting specific pay-as-you-go services, see the product-specific get started documentation.
+For detailed instructions about how to set up and disconnect specific pay-as-you-go services, see the service-specific get started documentation.
