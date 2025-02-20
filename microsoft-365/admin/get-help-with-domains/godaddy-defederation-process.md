@@ -21,8 +21,7 @@ ms.reviewer: amtro
 search.appverid: MET150  
 f1.keywords: 
 audience: admin
-ai-usage:  
-- ai-assisted  
+ai-usage: ai-assisted  
 ---
 
 # Defederation Process for Microsoft 365 Admins Using GoDaddy
