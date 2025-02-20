@@ -291,6 +291,9 @@ items:
                         - name: Analyze model usage
                           href: /syntex/model-usage-analytics.md
 
+                - name: Video translation
+                  href: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
+
             - name: Microsoft 365 Archive
               items:
                 - name: Overview 
