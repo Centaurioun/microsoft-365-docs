@@ -56,7 +56,7 @@ items:
           href: licenses/vl-sign-in.md
         - name: Contracts FAQs
           href: licenses/contracts-faq.yml
-        - name: Manage volume licensing user 
+        - name: Manage volume licensing user roles
           href: licenses/manage-user-roles-vl.md
         - name: Download volume licensing products
           href: licenses/download-vl-products.md
