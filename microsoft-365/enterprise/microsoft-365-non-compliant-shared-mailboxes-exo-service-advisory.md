@@ -34,7 +34,7 @@ These service advisories are displayed in the Microsoft 365 admin center. To vie
 
 ## What does this service advisory indicate?
 
-The service advisories for non-compliant shared mailboxes inform admins about their tenants having shared mailboxes that exceed 50 GB storage and do not have a required license. These advisories provide awareness so that you can take these limits into consideration when managing and troubleshooting shared mailboxes.
+The service advisories for non-compliant shared mailboxes inform admins about their tenants having shared mailboxes that exceed 50 GB storage and don't have a required license. These advisories provide awareness so that you can take these limits into consideration when managing and troubleshooting shared mailboxes.
 
 Here’s an example of the advisory:
 
@@ -42,11 +42,11 @@ Here’s an example of the advisory:
 
 ## How often will I see these service advisories?
 
-You can expect to see this type of advisory until the time when shared mailbox storage and licensing are not within the defined limit.
+You can expect to see this type of advisory until the time when shared mailbox storage and licensing aren't within the defined limit.
 
 ## More information
 
-Identifying Non-compliant Shared Mailboxes is a 2-step process:
+Identifying Non-compliant Shared Mailboxes is a two-step process:
 
 1.	Identify Shared Mailboxes with > 50 GB storage
 2.	Check licensing for those Shared Mailboxes
@@ -60,10 +60,10 @@ To ensure your shared mailboxes comply with Exchange storage limits, follow thes
 1.	Access the Exchange Admin Center Portal.
 2.	Generate Usage Reports:
     - Go to **Reports -> Usage -> Exchange**.
-    - Click on **Mailbox Usage**.
+    - Select **Mailbox Usage**.
 3.	Export Mailbox Data:
     - Ensure the **Recipient type** column is checked.
-    - Click on **Export** to download the report.
+    - Select **Export** to download the report.
 4.	Filter Shared Mailboxes:
     - Open the downloaded CSV file.
     - Filter the **Recipient type** column to show only "**Shared**" mailboxes.
@@ -77,10 +77,10 @@ To ensure your shared mailboxes comply with Exchange storage limits, follow thes
 1.	Access Active Users:
     - Go to **Home -> Active Users**.
 2.	Locate Mailboxes with Storage > 50 GB:
-    - Click on the mailboxes identified in the previous step 6 that have more than 50 GB of storage.
+    - Select the mailboxes identified in the previous step 6 that have more than 50 GB of storage.
 3.	Verify Licensing:
     - Go to **License and Apps** for the selected user.
-    - If the mailbox is assigned Exchange Online (Plan 1), it is not in compliance. You need to either assign Exchange Online (Plan 2) or reduce the storage to less than 50 GB.
+    - If the mailbox is assigned Exchange Online (Plan 1), it isn't in compliance. You need to either assign Exchange Online (Plan 2) or reduce the storage to less than 50 GB.
 
 ### Identifying Non-Compliant Shared Mailboxes in Exchange Online through PowerShell
 
