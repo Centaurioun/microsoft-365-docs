@@ -15,8 +15,6 @@ items:
  
     - name: Pay-as-you-go pricing
       items:
-            - name: Overview
-              href: pay-as-you-go-overview.md 
             - name: Microsoft 365 Copilot
               href: /sharepoint/microsoft-365-pay-as-you-go-pricing
             - name: Microsoft Syntex
