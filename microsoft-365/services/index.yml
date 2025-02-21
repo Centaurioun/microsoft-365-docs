@@ -55,9 +55,9 @@ landingContent:
           - text: Microsoft Syntex
             url: ../syntex/syntex-pay-as-you-go-services.md
           - text: Microsoft 365 Archive
-            url: ../syntex/syntex-pay-as-you-go-services#storage-services.md
+            url: ../syntex/syntex-pay-as-you-go-services.md#storage-services
           - text: Microsoft 365 Backup
-            url: ../syntex/syntex-pay-as-you-go-services#storage-services.md
+            url: ../syntex/syntex-pay-as-you-go-services.md#storage-services.md
 
 # Card 4
   - title: Microsoft 365 Copilot services
@@ -70,6 +70,32 @@ landingContent:
             url: pay-as-you-go-services.md
 
 # Card 5
+  - title: Video services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Video translation
+            url: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
+
+# Card 6
+  - title: Storage services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft 365 Archive
+            url: ../archive/archive-overview.md
+          - text: Microsoft 365 Backup
+            url: ../backup/backup-overview.md
+
+# Card 7
+  - title: App services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: SharePoint Embedded
+            url: /sharepoint/dev/embedded/overview
+
+# Card 8
   - title: Document & image services
     linkLists:
       - linkListType: overview
@@ -94,29 +120,3 @@ landingContent:
             url: ../syntex/taxonomy-tagging-overview.md
           - text: Unstructured document processing
             url: ../syntex/document-understanding-overview.md
-
-# Card 6
-  - title: Video services
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Video translation
-            url: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
-
-# Card 7
-  - title: Storage services
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Microsoft 365 Archive
-            url: ../archive/archive-overview.md
-          - text: Microsoft 365 Backup
-            url: ../backup/backup-overview.md
-
-# Card 8
-  - title: App services
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: SharePoint Embedded
-            url: /sharepoint/dev/embedded/overview
