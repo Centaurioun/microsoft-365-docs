@@ -32,7 +32,7 @@ Microsoft 365 Backup charges you based on the size of the following content once
 
     - Size of the live user or shared mailbox plus their associated online archives if those are being used. If the mailbox is removed from the protection policy, the size of the mailbox at the time it’s removed will be used as the ongoing proxy for its "live" size until all restore points expire from the backup. In other words, your backup costs will never increase once the mailbox has been removed from the protection policy.
 
-- Deleted and versioned data held for recovery in the backups, which is the summation of:
+- Summation of the deleted and versioned data held for recovery in the backups:
 
     - Deleted content in SharePoint sites’ and OneDrive accounts’ second-stage recycle bin (also known as site collection recycle bin).
 
