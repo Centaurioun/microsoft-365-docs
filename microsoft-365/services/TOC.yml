@@ -348,6 +348,8 @@ items:
                     - name: Application lifecyle
                       href: ../backup/storage/backup-3p-lifecycle.md
 
+            - name: SharePoint Embedded
+              href: /sharepoint/dev/embedded/overview
             
 
 
