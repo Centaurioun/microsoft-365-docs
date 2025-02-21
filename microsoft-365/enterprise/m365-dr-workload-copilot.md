@@ -9,7 +9,7 @@ ms.subservice: advanced-data-residency
 ms.topic: concept-article
 f1.keywords:
 - NOCSH
-ms.date: 02/11/2025
+ms.date: 02/20/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
