@@ -94,4 +94,4 @@ You can also change the status of an archived site by using the PowerShell cmdle
 |68    |Communication Site  |
 
 > [!NOTE]
-> OneDrive accounts (site template 21) cannot be archived by admins.  Some accounts will be put into archive by the OneDrive service when they are unlicensed for 93 days or more.  When the service archives these accounts, admins can reactivate the accounts via PowerShell. [Learn more about unlicensed OneDrive accounts](https://learn.microsoft.com/SharePoint/unlicensed-onedrive-accounts).
+> OneDrive accounts (site template 21) cannot be archived by admins.  Some accounts will be put into archive by the OneDrive service when they are unlicensed for 93 days or more.  When the service archives these accounts, admins can reactivate the accounts via PowerShell. [Learn more about unlicensed OneDrive accounts](/SharePoint/unlicensed-onedrive-accounts).
