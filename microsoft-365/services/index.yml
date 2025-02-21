@@ -53,11 +53,11 @@ landingContent:
           - text: Microsoft 365 Copilot
             url: /sharepoint/microsoft-365-pay-as-you-go-pricing
           - text: Microsoft Syntex
-            url: ../syntex/syntex-pay-as-you-go-services
+            url: ../syntex/syntex-pay-as-you-go-services.md
           - text: Microsoft 365 Archive
-            url: ../syntex/syntex-pay-as-you-go-services#storage-services
+            url: ../syntex/syntex-pay-as-you-go-services#storage-services.md
           - text: Microsoft 365 Backup
-            url: ../syntex/syntex-pay-as-you-go-services#storage-services
+            url: ../syntex/syntex-pay-as-you-go-services#storage-services.md
 
 # Card 4
   - title: Microsoft 365 Copilot services
@@ -109,9 +109,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Microsoft 365 Archive
-            url: ../archive/archive-overview
+            url: ../archive/archive-overview.md
           - text: Microsoft 365 Backup
-            url: ../backup/backup-overview
+            url: ../backup/backup-overview.md
 
 # Card 8
   - title: App services
