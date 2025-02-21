@@ -61,7 +61,7 @@ Sign in as a global administrator, follow these steps to get a code at Microsoft
 
 9. After the transfer is complete, you'll renew your domain at the new domain registrar.
 
-10. To finish the process, go back to the **Domains** page in the admin center, and then select **Complete domain transfer**. This marks the domain as no longer purchased from Microsoft 365, and will disable the domain subscription. It will not remove the domain from the tenant, and won't affect existing users and mailboxes on the domain.
+10. To finish the process, go back to the **Domains** page in the admin center, and then select **Complete domain transfer**. This marks the domain not purchased from Microsoft 365, and will disable the domain subscription. It will not remove the domain from the tenant, and won't affect existing users and mailboxes on the domain.
 
 > [!NOTE]
-> Microsoft 365 purchased domains aren't eligible for nameserver changes or transferring the domain between Microsoft 365 organizations. If either of these are required, the domain registration must be transferred to another registrar.
+> Microsoft 365 purchased domains aren't eligible for nameserver changes or transferring the domain between Microsoft 365 organizations. If either of these procedures are required, the domain registration must be transferred to another registrar.
