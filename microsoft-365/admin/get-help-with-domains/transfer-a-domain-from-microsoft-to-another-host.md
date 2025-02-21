@@ -32,9 +32,9 @@ description: "In this article, you'll find the steps here to transfer a domain f
 You can't transfer a Microsoft 365 domain to another registrar for 60 days after you purchase the domain from Microsoft.
 
 > [!NOTE]
-> A _Whois_ query shows a Microsoft purchased domain registrar as Wild West Domains LLC. However, only Microsoft should be contacted regarding your Microsoft 365 purchased domain.
+> A _Whois_ query shows a Microsoft purchased domain registrar as Wild West Domains LLC. However, only Microsoft should be contacted about your Microsoft 365 purchased domain.
 
-Sign in as a global administrator, follow these steps to get a code at Microsoft 365, and then go to the other domain registrar website to set up transferring your domain name to the new registrar.
+Sign in as a global administrator, follow these steps to get a code at Microsoft 365, and then go to the other domain registrar website to transfer your domain name to the new registrar.
 
 ## Transfer a domain
 
@@ -50,9 +50,9 @@ Sign in as a global administrator, follow these steps to get a code at Microsoft
 
 6. Check your domain transfer contact information, and then select **Next**.
 
-7. Copy the authorization code and wait about 30 minutes for your domain transfer status to change to **Unlocked for transfer** on the **Registration** tab before you proceed with next steps.
+7. Copy the authorization code and wait about 30 minutes for your domain transfer status to change to **Unlocked for transfer** on the **Registration** tab before you continue with next steps.
 
-8. Go to the website of the domain registrar you want to manage your domain name going forward. Follow directions for transferring a domain (search for help on their website). This usually means paying transfer fees and giving the Authcode to the new registrar so they can initiate the transfer. Microsoft emails you to confirm we’ve received the transfer request, and the domain will transfer within five days.
+8. Go to the website of the domain registrar you want to manage your domain name going forward. Follow directions for transferring a domain (search for help on their website). This usually means paying transfer fees and giving the Authcode to the new registrar so they can start the transfer. Microsoft emails you to confirm we’ve received the transfer request, and the domain will transfer within five days.
 
     You can find the authorization code **Registration** tab on the **Domains** page in Microsoft 365.
 
