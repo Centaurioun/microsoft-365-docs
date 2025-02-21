@@ -139,7 +139,7 @@ If you don't see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144"
 
 ### My volume licensing welcome email is invalid
 
-The old Volume Licensing Service Center (VLSC) was retired in April 2024, and all existing customers were migrated to the Microsoft 365 admin center. If you received an invitation to the VLSC before April 2024 but haven't yet registered your account in the site, the invitation is now invalid. If you still need permissions to view and manage a VL agreement, ask a VL administrator in your organization to add you as a VL user. For more information, see [How do I manage users and roles?](user-roles-faq.yml#how-do-i-manage-users-and-roles-)
+The old Volume Licensing Service Center (VLSC) was retired in April 2024, and all existing customers were migrated to the Microsoft 365 admin center. If you received an invitation to the VLSC before April 2024 but haven't yet registered your account in the site, the invitation is now invalid. If you still need permissions to view and manage a VL agreement, ask a VL administrator in your organization to add you as a VL user. For more information, see [Manage volume licensing user roles](manage-user-roles-vl.md).
 
 If there's no administrator for that agreement, ask the VL support team to create a new VL profile for you. You must be able to confirm the following information:
 
