@@ -38,7 +38,7 @@ Microsoft 365 Backup charges you based on the size of the following content once
 
     - Deleted and versioned items in the protected mailboxes.
 
-    For example, if you protect a 1-GB site that has 0.5 GB of data in its second-stage recycle Bin, and a 1-GB mailbox that has a 1-GB online archive, then you'll be charged for 3.5 GB of Microsoft 365 Backup usage.
+    For example, if you protect a 1-GB site that has 0.5 GB of data in its second-stage recycle bin, and a 1-GB mailbox that has a 1-GB online archive, then you'll be charged for 3.5 GB of Microsoft 365 Backup usage.
 
 #### Important considerations
 
