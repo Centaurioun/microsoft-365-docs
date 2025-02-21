@@ -33,7 +33,7 @@ To view detailed reports on Copilot usage and the associated costs, follow these
     - AI administrator
 
 2. In the admin center, go to **Billing** > **Cost Management**.
-3. On the **Cost Management** page, you can see a service-level view of costs based on Copilot usage.
+3. On the **Cost Management** page, under **Service family**, you can see a service-level view of costs based on Copilot usage.
 4. Alternatively, you can view costs in the Azure portal using Azure Cost Management. Billed amounts are updated daily (and sometimes more frequently), but it can take up to 24 hours after usage of a service to show up in Azure Cost Management.
 
 ## Monitor costs

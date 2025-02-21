@@ -24,6 +24,8 @@ Setting up the pay-as-you-go plan for Microsoft 365 Copilot Chat can be done dir
 
 ## Prerequisites
 
+To set up pay-as-you-go, you must have the following prerequisites:
+
 - Azure subscription and resource group
   - You must have an owner or contributor Azure role to an Azure subscription to set up the pay-as-you-go service.
   - You must have an owner or contributor Azure role to an Azure resource group linked to the same Azure subscription to set up the pay-as-you-go service.
