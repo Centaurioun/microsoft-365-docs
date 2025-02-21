@@ -2,8 +2,8 @@
 title: "Transfer a domain from Microsoft to another host"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 08/07/2024
 audience: Admin
