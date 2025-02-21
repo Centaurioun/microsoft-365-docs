@@ -113,3 +113,10 @@ landingContent:
           - text: Microsoft 365 Backup
             url: ../backup/backup-overview
 
+# Card 8
+  - title: App services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: SharePoint Embedded
+            url: /sharepoint/dev/embedded/overview
