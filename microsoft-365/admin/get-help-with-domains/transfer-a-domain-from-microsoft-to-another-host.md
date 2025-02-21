@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: "Find the steps here to transfer a domain from Microsoft to another registrar. "
+description: "In this article, you'll find the steps here to transfer a domain from Microsoft to another registrar. "
 ---
 
 # Transfer a domain from Microsoft to another host
@@ -57,11 +57,11 @@ Sign in as a global administrator, follow these steps to get a code at Microsoft
     You can find the authorization code **Registration** tab on the **Domains** page in Microsoft 365.
 
     > [!TIP]
-    > .uk domains require a different procedure. Select an IPS tag from the drop-down menu of mostly-used registrars for UK domains to update your **IPS Tags** to match the registrar you want to manage your domain going forward. Once the tag changes, the domain immediately transfers to the new registrar. You will then need to work with the new registrar to complete the transfer, likely pay transfer fees and add the transferred domain to your account with your new registrar.
+    > .uk domains require a different procedure. Select an IPS tag from the drop-down menu of mostly used registrars for UK domains to update your **IPS Tags** to match the registrar you want to manage your domain going forward. Once the tag changes, the domain immediately transfers to the new registrar. You'll then need to work with the new registrar to complete the transfer, likely pay transfer fees and add the transferred domain to your account with your new registrar.
 
 9. After the transfer is complete, you'll renew your domain at the new domain registrar.
 
 10. To finish the process, go back to the **Domains** page in the admin center, and then select **Complete domain transfer**. This marks the domain as no longer purchased from Microsoft 365, and will disable the domain subscription. It will not remove the domain from the tenant, and won't affect existing users and mailboxes on the domain.
 
 > [!NOTE]
-> Microsoft 365 purchased domains are not eligible for nameserver changes or transferring the domain between Microsoft 365 organizations. If either of these are required, the domain registration must be transferred to another registrar.
+> Microsoft 365 purchased domains aren't eligible for nameserver changes or transferring the domain between Microsoft 365 organizations. If either of these are required, the domain registration must be transferred to another registrar.
