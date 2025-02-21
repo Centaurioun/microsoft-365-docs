@@ -2,8 +2,8 @@
 title: "Add DNS records to connect your domain"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 02/13/2025
 audience: Admin
