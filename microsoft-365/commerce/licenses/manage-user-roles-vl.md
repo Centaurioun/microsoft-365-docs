@@ -55,7 +55,7 @@ The following table shows the relationship between VL roles in the retired Volum
 | Product keys reader             | Product Keys         | Can view contracts and contract keys, manage activation and redemption of online services, and view keys on the **Products and services** page. |
 | Benefits reader                 | Software Assurance Manager | Can view contracts and manage Workplace Discount Software Assurance entitlements. |
 | Online services manager         | Online Services Manager    | Can view contracts and orders, reserve online services, manage activation and redemption of online services, and manage subscriptions on the **Billing** > **Licenses** page. |
-| Invoice Reader                  | N/A                        | Can view contracts, the list of invoices, and can download invoices.<br><br>This role is automatically assigned to the person listed on the licensing contact as the **Bill To** contact and can’t be assigned to the VL admin. |
+| Invoice Reader                  | N/A                        | Can view contracts, the list of invoices, and can download invoices.<br><br>This role is automatically assigned to the person listed on the licensing contact as the **Bill To** contract and can’t be assigned to the VL admin. |
 
 ## Understand the volume licensing administrator role
 
