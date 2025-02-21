@@ -2,8 +2,8 @@
 title: "Connect your DNS records at Amazon Web Services (AWS) to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 08/12/2024
 audience: Admin
