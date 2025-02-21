@@ -70,12 +70,14 @@ landingContent:
             url: pay-as-you-go-services.md
 
 # Card 5
-  - title: Video services
+  - title: Storage services
     linkLists:
       - linkListType: overview
         links:
-          - text: Video translation
-            url: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
+          - text: Microsoft 365 Archive
+            url: ../archive/archive-overview.md
+          - text: Microsoft 365 Backup
+            url: ../backup/backup-overview.md
 
 # Card 6
   - title: Document & image services
@@ -104,19 +106,17 @@ landingContent:
             url: ../syntex/document-understanding-overview.md
 
 # Card 7
-  - title: Storage services
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Microsoft 365 Archive
-            url: ../archive/archive-overview.md
-          - text: Microsoft 365 Backup
-            url: ../backup/backup-overview.md
-
-# Card 8
   - title: App services
     linkLists:
       - linkListType: overview
         links:
           - text: SharePoint Embedded
             url: /sharepoint/dev/embedded/overview
+
+# Card 8
+  - title: Video services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Video translation
+            url: https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de
