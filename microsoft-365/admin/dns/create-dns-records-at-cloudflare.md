@@ -2,8 +2,8 @@
 title: "Connect your DNS records at Cloudflare to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 06/13/2024
 audience: Admin
@@ -53,7 +53,7 @@ Follow these steps to automatically verify and set up your Cloudflare domain wit
 
 1. On the How do you want to connect your domain? page, select **Continue**.
 
-1. On the Add DNS records page, select **Add DNS records**.
+1. On the Add DNS record page, select **Add DNS records**.
 
 1. On the Cloudflare login page, sign in to your account, and select **Authorize**.
 
