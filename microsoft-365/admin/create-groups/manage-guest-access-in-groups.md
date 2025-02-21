@@ -20,7 +20,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-- has-azure-ad-ps-ref
+- no-azure-ad-ps-ref
 search.appverid:
 - MET150
 - MOE150
