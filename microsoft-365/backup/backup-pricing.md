@@ -79,13 +79,13 @@ To use the Microsoft 365 Backup pricing calculator, you need to perform the foll
 
 3. Gather the information needed in the orange cells on the **High-Level Estimates** worksheet.
 
-    - The **Total Storage (GB)** input field should include the sum of sizes of live data and sizes of recycle bins and mailbox online archives in your tenant. You can get the live data plus the archives and recycle bin deleted content sizes using either PowerShell commands or the Microsoft 365 usage reports. More information on guidelines to get this data can be found in the following section.
+    - The **Total Storage (GB)** input field should include the sum of sizes of live data and sizes of recycle bins and mailbox online archives in your tenant. You can get the live data plus the archives and recycle bin deleted content sizes using either PowerShell commands or the Microsoft 365 usage reports. For more information about how to get this data, see [Finding the sizes of stored data](#finding-the-sizes-of-stored-data) later in this article.
 
     - The **Percentage Storage to protect** input field should represent the percentage of your content you plan to protect in the Backup tool. You're only charged for what you protect in the tool.
 
 4. Once you have this information, enter it into the **High-Level Estimates** worksheet as shown in the following example.
 
-![Screenshot showing an example of the High-Level Estimates worksheet in Excel.](../media/m365-backup/backup-estimates-worksheet.png)
+    ![Screenshot showing an example of the High-Level Estimates worksheet in Excel.](../media/m365-backup/backup-estimates-worksheet.png)
 
 5. An estimate of the Microsoft 365 Backup costs for 1 month and 12 months will then be generated.
 
@@ -96,8 +96,8 @@ To use the Microsoft 365 Backup pricing calculator, you need to perform the foll
 
 Sizes of live data, and deleted data for your SharePoint sites, OneDrive accounts, and Exchange mailboxes can be calculated using two different methods:
 
-- PowerShell commands or scripts
-- Microsoft 365 admin center usage reports
+- [PowerShell commands or scripts](#powershell-commands-or-scripts)
+- [Microsoft 365 admin center usage reports](#microsoft-365-admin-center-usage-reports)
 
 PowerShell is the most powerful option because you can get the second-stage recycle bin sizes for SharePoint and OneDrive, and the online archive sizes for Exchange Online. The admin center provides better growth visualization, but doesn't include the second-stage recycle bin or online archive sizes, and is thus incomplete.
 
@@ -130,13 +130,13 @@ You can estimate size of online archives by running the following Exchange Onlin
 Get-MailboxStatistics -Identity "user@example.com" -Archive | Select DisplayName, TotalItemSize, ItemCount
 ```
 
-For live mailbox sizes, use the Microsoft 365 admin center usage reports.
+For live mailbox sizes, use the [Microsoft 365 admin center usage reports](#microsoft-365-admin-center-usage-reports).
 
 #### Microsoft 365 admin center usage reports
 
 This section describes how to use your Microsoft 365 admin center usage reports to populate the Microsoft 365 Backup pricing calculator. Note that content in the OneDrive and SharePoint second-stage recycle bins and data in a mailbox's online archives won't be reflected in these reports, and need to be calculated separately.
 
-### Use the Microsoft 365 usage reports as source data for the pricing calculator
+##### Using the Microsoft 365 usage reports
 
 To get information on current usage, go to [Usage - Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) and then review the [OneDrive - Usage](#onedrive---usage), [SharePoint - Site usage](#sharepoint---site-usage), or [Exchange - Mailbox usage](#exchange---mailbox-usage) reports.
 
@@ -204,6 +204,14 @@ Amount of storage used at the start of the period and at the end of the period. 
 
 When using the Microsoft 365 Backup pricing calculator, be aware of the following points:
 
+- Any cell that is colored orange can have data entered.
+
+- To modify how much storage you want to protect per service type, you can change the **Percentage of Storage to protect**. For example, if you only want to protect 20 percent of your SharePoint storage, you can set the **Percentage of Storage to protect** for SharePoint to 20%.
+
+- The **Price per GB** field can be modified if necessary. For the Microsoft 365 Backup solution, we recommend that you use the default value.
+
+<!---
+
 - In the Microsoft 365 Backup pricing calculator, any Excel spreadsheet cell that is colored orange can have data entered.
 
 - To modify how many protection units you want to protect per service type, you can change the **Percentage of Protection Units to protect**. For example, if you only want to protect 20 percent of your SharePoint sites, you can set the **Percentage of Protection Units to protect** for SharePoint to 20%.
@@ -233,3 +241,4 @@ The following variables are used to estimate the Microsoft 365 Backup costs and 
 - **Average protection unit storage growth per month (GB)**: The amount of storage that is typically added to each protection unit every month. Essentially protection unit storage growth per month.
 
 - **Average new protection unit storage added per month (GB)**: The average amount of storage that is required if a new protection unit is added during a month.
+--->
