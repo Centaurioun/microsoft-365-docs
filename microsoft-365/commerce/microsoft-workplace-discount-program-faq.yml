@@ -19,6 +19,7 @@ metadata:
   - commerce_subscriptions
   - okr_SMB
   - AdminSurgePortfolio
+  - campaignIDs-batch2
   search.appverid: MET150
   ROBOTS: NOINDEX NOFOLLOW
   description: "Frequently-asked questions (FAQ) about the Microsoft Workplace Discount Program."
