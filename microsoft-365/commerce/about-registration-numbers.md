@@ -23,6 +23,7 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 - campaignIDs-batch1
+- campaignIDs-batch2
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft business products or services."
 ms.date: 09/05/2024
 ---
