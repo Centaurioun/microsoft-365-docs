@@ -24,4 +24,4 @@ ms.collection:
 ## Data Residency Commitments
 
 > [!NOTE]
-> *Viva Topics was retired on February 22, 2025 and was removed from the supported workloads in ADR on October 31, 2024. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
