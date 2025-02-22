@@ -19,6 +19,7 @@ ms.collection:
 ms.custom: 
 - commerce_subscriptions
 - AdminTemplateSet
+- campaignIDs-batch2
 search.appverid: MET150
 ROBOTS: NOIINDEX, NOFOLLOW
 description: "Learn about end-of-sale products in the Microsoft 365 admin center."
