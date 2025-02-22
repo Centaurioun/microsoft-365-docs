@@ -26,6 +26,8 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 # Where your Microsoft 365 customer data is stored
 
 > [!NOTE]
+> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+> [!NOTE]
 > The **New Zealand** local data center region launched on December 1, 2024. If your organization requires the migration of your Microsoft 365 customer data to New Zealand, and data residency commitments for New Zealand, see [Advanced Data Residency](advanced-data-residency.md).
 > [!NOTE]
 > The **Taiwan** local data center region launched on November 1, 2024. If your organization requires the migration of your Microsoft 365 customer data to Taiwan, and data residency commitments for Taiwan, see [Advanced Data Residency](advanced-data-residency.md).
