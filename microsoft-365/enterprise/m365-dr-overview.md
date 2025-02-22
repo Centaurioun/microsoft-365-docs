@@ -102,6 +102,9 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 1. _Advanced Data Residency_ subscription provides data residency commitments for an expanded set of Microsoft 365 services in any _Local Region Geography_. For more information, see the [Advanced Data Residency page](advanced-data-residency.md).
 #### **Table 2: Available Data Residency by Workload**
 
+> [!NOTE]
+> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+
 | Service Name | Product Terms | Multi-Geo | ADR |
 |:-----|:-----|:-----|:-----|
 |Exchange Online |X<sup>1</sup> |X<sup>2</sup> |X<sup>3</sup> |
