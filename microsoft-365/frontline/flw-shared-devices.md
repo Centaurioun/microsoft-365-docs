@@ -80,9 +80,9 @@ You can also enable domain-less sign in for your custom line-of business (LOB) a
 
 ## QR code authentication 
 
-QR code authentication method enables frontline workers to sign in efficiently in apps on shared devices. Users can use a unique QR code provided to them and enter their PIN to sign in, eliminating the need to enter intricate usernames and passwords. Currently, QR code authentication is supported only on mobile devices that run iOS/iPadOS or Android.
+The QR code authentication method enables frontline workers to sign in efficiently in apps on shared devices. Users can use a unique QR code provided to them and enter their PIN to sign in, eliminating the need to enter intricate usernames and passwords. Currently, QR code authentication is supported only on mobile devices that run iOS/iPadOS or Android.
 
-[Learn more about QR code](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-qr-code).
+[Learn more about QR code](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-qr-code).
 
 ## Conditional Access
 
