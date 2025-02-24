@@ -13,13 +13,15 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 01/16/2025
+ms.date: 01/30/2025
 ---
 
 # Multiple account access to Copilot for work and school documents
 
 > [!NOTE]
-> Multiple account access to Copilot is currently disabled for all work and school documents. Multiple account access to Copilot will be enabled in March 2025 at the earliest, but a policy setting to turn it off ahead of time is expected to be available by the end of January 2025.
+> - Multiple account access to Copilot is currently disabled for all work and school documents. 
+> - Multiple account access to Copilot will be enabled in March 2025 at the earliest.
+> - In the meantime, there's a policy setting to turn it off ahead of time. For more information, see [Manage multiple account access to Copilot using Cloud Policy](#manage-multiple-account-access-to-copilot-using-cloud-policy).
 
 ## What is multiple account access to Copilot?
 
@@ -33,16 +35,21 @@ Copilot data protection is always based on the identity used to access the file.
 
 The setting for [web grounding in Copilot](manage-public-web-access.md) is also based on the identity used to access the file. If you disable web grounding in Copilot for a user in your organization, that user isn't able to use web grounding even when using Copilot access from another account.
 
-Users using multiple account access to Copilot on work and school documents also have limited access to Copilot as shown in the following table:
+Users using multiple account access to Copilot on work and school documents also have limited access to Copilot as shown in the following table.
+
+> [!NOTE]
+> - The following table shows the Copilot capabilities available to your users when multiple account access is enabled.
+> - As noted at the top of this article, multiple account access is currently disabled for all organizations for all work and school documents.
+> - When multiple account access is disabled, if your user only has access to Copilot through an account outside of your organization, such as from a personal Microsoft 365 subscription, they can’t use Copilot on work or school documents.
 
 
-| Copilot capability                                                                          | Multiple account access to Copilot | Internal Microsoft 365 Copilot license |
+| Copilot capability                                                                          | When multiple account access to Copilot is enabled | When the user has been assigned an internal Microsoft 365 Copilot license |
 |---------------------------------------------------------------------------------------------|------------------------------------|----------------------------------------|
 | Access the organization’s Microsoft Graph                                                   |No |Yes|
 | Ask Copilot questions about the current open document and make Copilot assisted edits       |Yes|Yes|
 | Ask Copilot questions about other documents that aren't the currently opened document      |No|Yes|
 | Ask Copilot questions that can be answered through web searches ([if web search is enabled](manage-public-web-access.md))|Yes|Yes|
-| Generate drafts about work and school documents the user has access to                      |Yes|Yes|
+| Generate drafts by referencing specific documents the active user has access to                     |Yes|Yes|
 
 ## Manage multiple account access to Copilot using Cloud Policy
 
@@ -51,7 +58,8 @@ You can use the "Multiple account access to Copilot for work documents" policy s
 To configure this policy setting, you can use [Cloud Policy service for Microsoft 365](/microsoft-365-apps/admin-center/overview-cloud-policy).
 
 > [!NOTE]
-> This policy setting is expected to be available in Cloud Policy by the end of January 2025.
+> - The policy setting is available in Cloud Policy as of January 30, 2025.
+> - Currently the policy setting is only available in English. But we’re working on making the localized versions available as soon as we can.
 
 If you enable or don't configure this policy setting, your users can use Copilot on work and school documents with a Copilot license that is from outside your organization.
 

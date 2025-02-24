@@ -4,9 +4,9 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/07/2025
+ms.date: 01/23/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -29,7 +29,7 @@ When a file is translated, the file name of the translated copy is appended to s
 
 To create a translated version of a document, follow these steps:
 
-1. From a SharePoint document library (or from your **My files** folder in OneDrive), select the file or files you want to translate. Then use either of the following methods to start the translation process.
+1. From a SharePoint document library ([or from OneDrive](/sharepoint/onedrive-document-translation)), select the file or files you want to translate. Then use either of the following methods to start the translation process.
 
    - From the ribbon, select **More options** (**...**), and then select **Translate**.
 

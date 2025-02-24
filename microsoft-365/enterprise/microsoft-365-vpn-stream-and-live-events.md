@@ -62,7 +62,7 @@ For the **Commercial** cloud:
 **\*.media.azure.net**, **\*.bmc.cdn.office.net** and **\*.ml.cdn.office.net** are used for Teams Town hall events.
 
 > [!NOTE]
-> Some of these endpoints are shared with other elements outside of Teams events. We don't recommend just using these namespaces to configure VPN offload even if technically possible in your VPN solution (for example, if it works with the namespace rather than IP).
+> Some of these endpoints are shared with other elements outside of Teams events.
 
 For the **Government** clouds **(GCC, GCC High, DoD)**:
 - \*.cdn.ml.gcc.teams.microsoft.com
@@ -75,7 +75,6 @@ For the **Government** clouds **(GCC, GCC High, DoD)**:
 
 **\*.cdn.ml.dod.teams.microsoft.us** is used for Teams Town hall events in the Microsoft 365 U.S. Government DoD Cloud (DoD).
 
-FQDNs aren't required in the VPN configuration, they're purely for use in PAC files in combination with the IPs to send the relevant traffic direct.
 
 ## 2. Implement PAC file changes (where required)
 
@@ -85,13 +84,11 @@ To solve this, we can provide the following IPs and use them in combination with
 
 ### Gathering the current lists of CDN Endpoints
 
-For the Commercial cloud, Teams events use multiple CDN providers to stream to customers, to provide the best coverage, quality, and resiliency. Currently, both Azure CDN from Microsoft and Akamai are used. Over time this could be changed due to situations such as regional availability. This article provides the required namespaces for Teams events and guidance for the corresponding IP address ranges used (where available). For the Microsoft 365 U.S. Government clouds (GCC, GCC High and DoD) only Azure CDN from Microsoft is used.
+For the Commercial cloud and Microsoft 365 U.S. Government clouds (GCC, GCC High and DoD) Teams events use Azure CDN from Microsoft. Over time this could be changed due to situations such as regional availability. This article provides the required namespaces for Teams events and guidance for the corresponding IP address ranges used (where available).
 
 For the **Commercial** cloud:
 
 - For Azure CDN from Microsoft, you can download the list from [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56519) - you'll need to look specifically for the service tag `AzureFrontdoor.Frontend` in the JSON; _addressPrefixes_ will show the IPv4/IPv6 subnets. Over time the IPs can change, but the service tag list is always updated before they're put in use.
-
-- Akamai currently doesn't provide a comprehensive list due to the dynamic nature of their network. Akamai endpoints would be covered under the *.ml.cdn.office.net namespace.
 
 For the **Government** clouds **(GCC, GCC High and DoD)**:
 
@@ -110,7 +107,7 @@ Here's an example of how to generate the PAC file for the Commercial cloud:
    .\Get-EventsPacFile.ps1 -Instance Worldwide -Type OptimizeAndAllow -FilePath .\Commercial.pac
    ```
 
-1. The Commercial.pac file will contain all the namespaces and IPs (IPv4/IPv6) available for Teams Events attendee traffic. While the namespaces are present, there won't be any IP address information related to Akamai.
+1. The Commercial.pac file will contain all the namespaces and IPs (IPv4/IPv6) available for Teams Events attendee traffic.
 
 #### Example PAC file generation for the Microsoft 365 U.S. Government Community Cloud (GCC)
 

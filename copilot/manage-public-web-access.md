@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 01/15/2025
+ms.date: 02/19/2025
 ---
 
 # Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat
@@ -120,7 +120,7 @@ If the IT admin doesn’t configure the **Allow web search in Copilot** policy, 
 
 > [!NOTE]
 > For Government Community Cloud (GCC) customers:
-> - Web search is available in GCC, except for Microsoft 365 Copilot Chat (previously named Business Chat) in Teams.
+> - Web search is available in GCC.
 > - The **Allow web search in Copilot** policy is available in GCC in Cloud Policy service for Microsoft 365.
 > - If the IT admin doesn’t configure the **Allow web search in Copilot** policy, web search will be turned off in GCC, regardless of how the **Allow the use of additional optional connected experiences in Office** policy is configured.
 
@@ -134,13 +134,13 @@ If a Microsoft 365 Copilot user turns off the **Web content** toggle in work cha
 
 Microsoft 365 Copilot users can manage web search in work chat by following these steps:
 
-1. Select the plugin menu at the bottom right of the chat input box in Microsoft 365 Copilot when using work chat.
+1. Select the menu in the top right corner of the screen in Microsoft 365 Copilot when using work chat.
 
-   :::image type="content" source="media/copilot-prompt-box.png" alt-text="Image showing a cursor pointing to the plugin menu in the chat input box in Microsoft 365 Copilot.":::
+   :::image type="content" source="media/copilot-work-tab-menu.png" alt-text="Screenshot of the Work tab in Microsoft 365 Copilot. The menu option in the top right corner is highlighted with a red box.":::
 
 2. Turn off the **Web content** toggle.
 
-   :::image type="content" source="media/copilot-web-toggle.png" alt-text="Image showing a cursor pointing to the web content plugin toggle enabled.":::
+   :::image type="content" source="media/copilot-web-content-toggle.png" alt-text="Screenshot of the Web content toggle enabled. The toggle is highlighted with a red box.":::
 
 > [!NOTE]
 > The privacy setting for optional connected experiences available to users in Microsoft 365 apps (for example, in Word, Excel, or Teams) has no effect on the availability of web search. For example, if a user turns off optional connected experiences, web search can still be available to the user.

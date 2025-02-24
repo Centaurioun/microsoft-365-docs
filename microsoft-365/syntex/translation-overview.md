@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/23/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -44,7 +44,7 @@ You can also use the translation feature for translating video transcripts and c
 - Encrypted files aren't translated.
 - Password-protected files aren't translated.
 - Text on images within documents isn't translated.
-- Document translation actions are available for files in your **My files** folder in OneDrive.
+- Document translation is also [available for files in OneDrive](/sharepoint/onedrive-document-translation).
 - On-demand translation on folders will be available in a future release.
 
 ## Frequently asked questions
