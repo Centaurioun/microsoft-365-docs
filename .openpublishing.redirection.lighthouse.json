@@ -19,6 +19,11 @@
          "source_path":"microsoft-365/lighthouse/m365-lighthouse-create-customer-report.md",
          "redirect_url":"/microsoft-365/lighthouse/m365-lighthouse-tenants-page-overview",
          "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/lighthouse/m365-lighthouse-get-access-to-sales-advisor.md",
+         "redirect_url":"/microsoft-365/lighthouse/m365-lighthouse-sales-advisor-overview",
+         "redirect_document_id":true
       }
    ]
 }
