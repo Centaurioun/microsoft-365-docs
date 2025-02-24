@@ -31,4 +31,4 @@ Pay-as-you-go services offer enhanced billing flexibility by allowing organizati
 
 ### Access to a wide range of services
 
-Microsoft 365 pay-as-you-go services encompass a wide range of Microsoft 365 products, including SharePoint, OneDrive, Exchange, Teams, and Copilot services.
+Microsoft 365 pay-as-you-go services encompass a wide range of Microsoft 365 products, including SharePoint, OneDrive, Microsoft Syntex, and Microsoft 365 Copilot services.
