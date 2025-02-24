@@ -24,6 +24,7 @@ ms.custom:
 - adminvideo
 - business_assist
 - campaignIDs-batch1
+- campaignIDs-batch2
 description: "Learn about admin roles, such as the global admin role, or the service admin role. Roles map to specific business functions and give permissions to do specific tasks in the Microsoft 365 admin center."
 ---
 
