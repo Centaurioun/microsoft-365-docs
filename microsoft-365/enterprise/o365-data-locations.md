@@ -20,10 +20,12 @@ ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: "Determine where your Microsoft 365 customer data is stored worldwide."
+description: "Determine where your Microsoft 365 customer data is stored worldwide. Links in the article show this information for each workload."
 ---
 
 # Where your Microsoft 365 customer data is stored
+
+This article helps you to understand how you can determine current data residency and data residency commitments.
 
 > [!NOTE]
 > Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
