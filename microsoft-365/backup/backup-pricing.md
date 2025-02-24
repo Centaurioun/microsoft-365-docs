@@ -117,7 +117,7 @@ Learn more about the *Get-SPOSite* cmdlet - [*Get-SPOSite* cmdlet](/powershell/m
 You can get the sizes of the second-stage recycle bin by running the following PowerShell cmdlet:
 
 ```
-Get-PnPRecycleBinItem - -SecondStage
+Get-PnPRecycleBinItem -SecondStage
 ```
 
 Learn more about [PnP PowerShell](https://pnp.github.io/powershell/).
