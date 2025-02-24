@@ -351,71 +351,71 @@ items:
             - name: SharePoint Embedded
               items:
                 - name: Overview
-                  href: /sharepoint/dev/embedded/overview.md
+                  href: /sharepoint/dev/embedded/overview
                 - name: Getting started
                   items:
                     - name: SharePoint Embedded for Visual Studio Code
-                      href: /sharepoint/dev/embedded/getting-started/spembedded-for-vscode.md
+                      href: /sharepoint/dev/embedded/getting-started/spembedded-for-vscode
                 - name: Scenarios and use cases
-                  href: /sharepoint/dev/embedded/scenarios-and-use-cases.md
+                  href: /sharepoint/dev/embedded/scenarios-and-use-cases
                 - name: Concepts
                   items:
                     - name: Application architecture
-                      href: /sharepoint/dev/embedded/concepts/app-concepts/app-architecture.md
+                      href: /sharepoint/dev/embedded/concepts/app-concepts/app-architecture
                     - name: Container types
-                      href: /sharepoint/dev/embedded/concepts/app-concepts/containertypes.md
+                      href: /sharepoint/dev/embedded/concepts/app-concepts/containertypes
                     - name: Register container type API
-                      href: /sharepoint/dev/embedded/concepts/app-concepts/register-api-documentation.md
+                      href: /sharepoint/dev/embedded/concepts/app-concepts/register-api-documentation
                     - name: Authentication
-                      href: /sharepoint/dev/embedded/concepts/app-concepts/auth.md
+                      href: /sharepoint/dev/embedded/concepts/app-concepts/auth
                     - name: Sharing and Permissions
-                      href: /sharepoint/dev/embedded/concepts/app-concepts/sharing-and-perm.md
+                      href: /sharepoint/dev/embedded/concepts/app-concepts/sharing-and-perm
                     - name: Limits and calling patterns
-                      href: /sharepoint/dev/embedded/concepts/app-concepts/limits-calling.md
+                      href: /sharepoint/dev/embedded/concepts/app-concepts/limits-calling
                     - name: Content experiences
                       items:
                         - name: Office experiences
-                          href: /sharepoint/dev/embedded/concepts/content-experiences/office-experience.md
+                          href: /sharepoint/dev/embedded/concepts/content-experiences/office-experience
                         - name: User experiences
-                          href: /sharepoint/dev/embedded/concepts/content-experiences/user-experiences-overview.md
+                          href: /sharepoint/dev/embedded/concepts/content-experiences/user-experiences-overview
                         - name: Search content
-                          href: /sharepoint/dev/embedded/concepts/content-experiences/search-content.md
+                          href: /sharepoint/dev/embedded/concepts/content-experiences/search-content
                     - name: Admin experiences
                       items:
                         - name: Billing
-                          href: /sharepoint/dev/embedded/concepts/admin-exp/billing/billing.md
+                          href: /sharepoint/dev/embedded/concepts/admin-exp/billing/billing
                         - name: Billing management
-                          href: /sharepoint/dev/embedded/concepts/admin-exp/billing/billingmanagement.md
+                          href: /sharepoint/dev/embedded/concepts/admin-exp/billing/billingmanagement
                         - name: SharePoint Embedded billing meters
-                          href: /sharepoint/dev/embedded/concepts/admin-exp/billing/meters.md
+                          href: /sharepoint/dev/embedded/concepts/admin-exp/billing/meters
                         - name: Consuming tenant admin
-                          href: /sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta.md
+                          href: /sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta
                         - name: Container management in PowerShell
-                          href: /sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell.md
+                          href: /sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell
                         - name: Consuming tenant admin UX
-                          href: /sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaUX.md
+                          href: /sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaUX
                         - name: Developer admin
-                          href: /sharepoint/dev/embedded/concepts/admin-exp/developer-admin/dev-admin.md
+                          href: /sharepoint/dev/embedded/concepts/admin-exp/developer-admin/dev-admin
                         - name: SharePoint Embedded admin
-                          href: /sharepoint/dev/embedded/concepts/admin-exp/adminrole.md
+                          href: /sharepoint/dev/embedded/concepts/admin-exp/adminrole
                     - name: Fluid framework
-                      href: /sharepoint/dev/embedded/concepts/fluid.md
+                      href: /sharepoint/dev/embedded/concepts/fluid
                     - name: Security and compliance
-                      href: /sharepoint/dev/embedded/concepts/security-and-compliance.md
+                      href: /sharepoint/dev/embedded/concepts/security-and-compliance
                 - name: Tutorials
                   items:
                     - name: Launch experience
-                      href: /sharepoint/dev/embedded/tutorials/launch-experience.md
+                      href: /sharepoint/dev/embedded/tutorials/launch-experience
                     - name: Using metadata with SharePoint Embedded containers
-                      href: /sharepoint/dev/embedded/tutorials/metadata.md
+                      href: /sharepoint/dev/embedded/tutorials/metadata
                     - name: Using file preview
-                      href: /sharepoint/dev/embedded/tutorials/using-file-preview.md
+                      href: /sharepoint/dev/embedded/tutorials/using-file-preview
                     - name: Using document processing with Azure Cognitive Services
-                      href: /sharepoint/dev/embedded/tutorials/doc-processing-acs.md
+                      href: /sharepoint/dev/embedded/tutorials/doc-processing-acs
                     - name: Using webhooks
-                      href: /sharepoint/dev/embedded/tutorials/using-webhooks.md
+                      href: /sharepoint/dev/embedded/tutorials/using-webhooks
                     - name: Migrate ABS to SPE
-                      href: /sharepoint/dev/embedded/tutorials/migrate-abs-to-spe.md
+                      href: /sharepoint/dev/embedded/tutorials/migrate-abs-to-spe
                 - name: SharePoint Embedded learning modules
                   items:
                     - name: SharePoint Embedded - overview & configuration
