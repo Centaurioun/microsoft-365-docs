@@ -9,7 +9,7 @@ ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 02/29/2024
+ms.date: 02/24/2025
 ms.reviewer: deanw
 ms.custom:
 - it-pro
@@ -23,6 +23,7 @@ ms.collection:
 
 > [!NOTE]
 > If you have purchased a Multi-Geo subscription, then Microsoft will store certain customer data at rest in more than one Geography based on your configuration even if you have purchased the Microsoft 365 Advanced Data Residency add-on ("ADR").
+
 > [!NOTE]
 > Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
 

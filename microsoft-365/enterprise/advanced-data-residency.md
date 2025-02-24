@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: deanw
-ms.date: 09/05/2024
+ms.date: 02/24/2025
 audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -45,6 +45,7 @@ The following workloads are included in ADR. For more information, see:
 
 > [!NOTE]
 > *The Microsoft Purview services list mentioned above includes all services covered as part of the Advanced Data Residency commitment as of November 2024. Additional Microsoft Purview services are not currently supported.
+
 > [!NOTE]
 > Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
 
