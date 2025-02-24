@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: amcdonnell
 ms.date: 01/16/2025
 audience: enabler
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
