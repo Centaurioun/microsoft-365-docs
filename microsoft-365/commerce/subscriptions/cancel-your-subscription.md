@@ -25,6 +25,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 - campaignIDs-batch1
+- campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to cancel your trial or paid subscriptions in the Microsoft 365 admin center."
 ms.date: 09/10/2024
