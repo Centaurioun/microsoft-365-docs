@@ -18,11 +18,11 @@ items:
             - name: Microsoft 365 Copilot
               href: /sharepoint/microsoft-365-pay-as-you-go-pricing
             - name: Microsoft Syntex
-              href: ../syntex/syntex-pay-as-you-go-services
+              href: ../syntex/syntex-pay-as-you-go-services.md
             - name: Microsoft 365 Archive
-              href: ../syntex/syntex-pay-as-you-go-services#storage-services
+              href: ../syntex/syntex-pay-as-you-go-services.md#storage-services
             - name: Microsoft 365 Backup
-              href: ../syntex/syntex-pay-as-you-go-services#storage-services.md
+              href: ../syntex/syntex-pay-as-you-go-services.md#storage-services
  
     - name: Start using pay-as-you-go services
       items:
