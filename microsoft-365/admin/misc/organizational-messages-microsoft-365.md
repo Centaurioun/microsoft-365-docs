@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: campaignIDs-batch2
 search.appverid:
 - MET150
 - MOE150
