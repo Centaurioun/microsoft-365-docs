@@ -1,7 +1,7 @@
 ---
 title: Overview of device management for frontline workers
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: aaglick
 ms.topic: conceptual
