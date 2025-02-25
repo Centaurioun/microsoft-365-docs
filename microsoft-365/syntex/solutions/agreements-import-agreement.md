@@ -1,5 +1,5 @@
 ---
-title: Organize your existing agreements in SharePoint Agreements
+title: Organize and import your in SharePoint Agreements
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to import and organize your agreements in the SharePoint Agreements solution.
 ---
 
-# Import agreements in SharePoint Agreements
+# Organize and import agreements in SharePoint Agreements
 
 SharePoint Agreements allows you to import your existing agreements effortlessly and gain immediate, valuable insights to help you stay on top of your contractual obligations.
 During the import process, important details about each agreement, such as the first party, second party, effective date, and expiry date, are automatically detected. This ensures that all relevant information is accurately captured and organized.
