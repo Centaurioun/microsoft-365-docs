@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection: 
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Set employee working hours and availability in Microsoft Bookings."
 ---
 
@@ -27,7 +26,7 @@ If you want to book time off for staff members so customers can't book them whil
 
 Watch this video or follow the steps below to set an employee's working hours.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ca0bbc83-0e1c-41cf-94dd-b75c648cc826]
 
 ## Steps
 

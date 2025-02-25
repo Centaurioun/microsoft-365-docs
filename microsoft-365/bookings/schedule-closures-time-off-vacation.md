@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Schedule office closures and employee time off from the Bookings calendar so that employees are marked as unavailable for bookings during the specified times."
 ---
 
@@ -21,7 +20,7 @@ Occasionally, you'll want to close your business for holidays or team events, or
 
 ## Watch: Enter business hours and time off for employees
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TxDC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=428984e2-bc66-4b17-bb3e-7466f5418cde]
 
 Schedule business closures or employee off.
 
