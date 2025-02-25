@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 09/26/2024
+ms.date: 12/20/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -19,12 +19,12 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to set up granular delegated admin privileges (GDAP) for the customer tenants that you manage."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to set up granular delegated administrative privileges (GDAP) for the customer tenants that you manage."
 ---
 
 # Set up GDAP in Microsoft 365 Lighthouse
 
-Granular delegated admin privileges (GDAP) are a prerequisite for customer tenants to be fully onboarded to Lighthouse. You can set up all your customers with GDAP through Microsoft 365 Lighthouse. By setting up GDAP for the customer tenants that you manage, you help keep your customers secure while ensuring users in your partner organization have the permissions necessary to do their work.
+Granular delegated administrative privileges (GDAP) are a prerequisite for customer tenants to be fully onboarded to Lighthouse. You can set up all your customers with GDAP through Microsoft 365 Lighthouse. By setting up GDAP for the customer tenants that you manage, you help keep your customers secure while ensuring users in your partner organization have the permissions necessary to do their work.
 
 To walk through how to set up GDAP in your partner organization, complete the [Secure Microsoft 365 Lighthouse interactive guide](https://go.microsoft.com/fwlink/p/?linkid=2281856).
 
@@ -35,6 +35,10 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
 - You must hold specific roles in Microsoft Entra ID and/or Partner Center, as outlined in the [Delegated Access Role Requirements table](m365-lighthouse-delegated-access-overview.md#role-requirements).
 
 - The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing GDAP relationship.
+
+## Watch: Set up GDAP
+> [!VIDEO 0c8acb10-8178-4dd5-b0e8-dddc74e83684]
+Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
 
 ## Set up GDAP
 
@@ -110,7 +114,7 @@ If you encounter any problems during GDAP setup and need guidance, see [Troubles
 
 ## Obtain customer approval to administer their products
 
-As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. You need to send the link to the appropriate customer contact so they can approve the GDAP relationship before you can administer their products for them.
+As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. Before you can administer products for them, you need to send the link to an administrator in the customer tenant so they can select the link to approve the GDAP relationship.
 
 1. On the **Delegated access** page, select the **Relationships** tab.
 
@@ -118,9 +122,9 @@ As part of the GDAP setup process, a GDAP relationship request link is generated
 
 3. Select the GDAP relationship that shows a **Pending** status to open the relationship details pane.
 
-4. Select either **Open in email** or **Copy email to clipboard**, edit the text if needed (but don't edit the link URL that they need to select to give you administration permission), and then send the GDAP relationship request to your customer.
+4. Select either **Open in email** or **Copy email to clipboard**, edit the text if needed (but don't edit the link URL that they need to select to give you administration permission), and then send the GDAP relationship request email to an administrator in the customer tenant.
 
-Once the GDAP relationship request is approved, the GDAP template settings are applied. It might take up to an hour after relationship approval for changes to appear in Lighthouse.
+Once the administrator in the customer tenant selects the link to approve the GDAP relationship, the GDAP template settings are applied. It might take up to an hour after relationship approval for changes to appear in Lighthouse.
  
 GDAP relationships are visible in Partner Center and the security groups are visible in Microsoft Entra ID.
 
@@ -140,7 +144,7 @@ Once you complete GDAP setup, you can update or change roles, security groups, o
 [Overview of the Delegated access page in Microsoft 365 Lighthouse](m365-lighthouse-delegated-access-overview.md) (article)\
 [Troubleshoot error messages and problems in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
-[Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) (article)\
+[Introduction to granular delegated admin privileges (GDAP) - Partner Center](/partner-center/gdap-introduction) (article)\
 [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Learn about groups and access rights in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)\
 [What is Microsoft Entra entitlement management?](/azure/active-directory/governance/entitlement-management-overview) (article)

@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: katmartin
+ms.reviewer: ebamoh
 ms.date: 09/20/2024
 audience: Admin
 ms.topic: how-to
@@ -30,7 +30,7 @@ If you can't sign in to Lighthouse, you can use the [Microsoft Service Health St
 
 ## Before you begin
 
-To view service health, you need a Microsoft Entra role in the partner tenant with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**. For a list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
+To view service health, you must have at least one Microsoft Entra role in the partner tenant with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**. For a list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## View service health status and issue details
 

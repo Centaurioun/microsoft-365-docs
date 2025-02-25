@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: brhamel, jobailey
+ms.reviewer: demorr, jobailey
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 - GAUpdates
+- campaignIDs-batch2
 search.appverid: MET150 
 description: "Learn about the proposal workflow used when you buy Microsoft business products and services. Discover how to review and approve proposals."
 ROBOTS: NOINDEX

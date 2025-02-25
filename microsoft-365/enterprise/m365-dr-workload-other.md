@@ -10,7 +10,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.reviewer: deanw
-ms.date: 09/24/2024
+ms.date: 02/20/2025
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
@@ -59,6 +59,15 @@ OneNote stores customer data in OneDrive. It does however have an API that can c
 ## Planner
 
 See the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
+
+>[!NOTE]
+>Premium plans are stored as described in Project for the Web.
+
+
+## Project for the web
+
+See [Power Apps for Data Residency](#power-apps-for-microsoft-365).
+
 
 ## Power Apps for Microsoft 365
 
