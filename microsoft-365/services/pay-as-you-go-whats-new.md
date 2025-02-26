@@ -12,7 +12,7 @@ ms.subservice:
 search.appverid: 
 ms.collection: 
 ms.localizationpriority:  medium
-description: Learn about pay-as-you-go services in Microsoft 365.
+description: Learn about what's new for pay-as-you-go services in Microsoft 365.
 ---
 
 # What's new with pay-as-you-go services in Microsoft 365
