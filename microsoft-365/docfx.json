@@ -165,6 +165,13 @@
     },
     "template": [],
     "dest": "microsoft-365-docs",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "rules": {
+      "sensitive-language-wl": {
+        "exclude": [
+          "microsoft-365/frontline/shifts-connector-ukg-prerequisites.md"
+        ]
+      }
+    }
   }
 }
