@@ -1,10 +1,10 @@
 ---
 title: Pay-as-you-go services available in Microsoft 365
-ms.author: siruvanti
-author: tbd
-manager: snaray
-ms.reviewer: 
-ms.date: 02/20/2025
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
+ms.reviewer: siruvanti
+ms.date: 02/26/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,10 +29,11 @@ Microsoft 365 Copilot is an AI-powered assistant that integrates seamlessly with
 
 SharePoint Agents are AI-powered assistants that help users navigate and interact with SharePoint sites and document libraries. These agents can answer questions, summarize content, and perform specific tasks based on user permissions. Organizations can set up pay-as-you-go billing for SharePoint agents, allowing users to utilize these features without needing a full Copilot license.
 
+<!---
 ### Agents in Microsoft 365 Copilot Chat
 
 Agents in Microsoft 365 Copilot Chat provide a conversational interface for users to interact with their work data. These agents can answer questions, perform actions, and provide insights based on the data available in the organization's Microsoft Graph and third-party data sources. Pay-as-you-go billing allows organizations to enable these agents and pay based on the number of messages used.
-<!---
+
 ### Copilot Actions
 
 Copilot Actions are predefined tasks that Copilot can perform on behalf of the user. These actions can include sending emails, updating records, creating support tickets, and more. With pay-as-you-go, organizations can enable Copilot Actions and only pay for the actions performed.

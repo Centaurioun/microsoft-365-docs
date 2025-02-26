@@ -1,10 +1,10 @@
 ---
 title: What's new with pay-as-you-go services in Microsoft 365
-ms.author: siruvanti
-author: tbd
-manager: snaray
-ms.reviewer: 
-ms.date: 02/20/2025
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
+ms.reviewer: siruvanti
+ms.date: 02/26/2025
 audience: admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -23,7 +23,7 @@ This article provides an overview of the latest updates and enhancements in Micr
 
 ### Streamlined setup and management  
 
-One of the most notable updates is the streamlined setup and management experience for pay-as-you-go services. The navigation within the Microsoft 365 admin center is revamped to make it easier for admins to configure and manage pay-as-you-go services. The entry point for "Activate pay-as-you-go-services" is relocated from the "Files and Content" section to the "Billing and Licenses" section in the setup navigation, offering a centralized location for managing billing and licenses.
+One of the most notable updates is the streamlined setup and management experience for pay-as-you-go services. The navigation within the Microsoft 365 admin center is revamped to make it easier for admins to configure and manage pay-as-you-go services. The entry point for **Activate pay-as-you-go-services** is relocated from the **Files and content** section to the **Billing and licenses** section in the setup navigation, offering a centralized location for managing billing and licenses.
 
 ### Improved billing flexibility  
 
