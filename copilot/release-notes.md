@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 02/19/2025
+ms.date: 02/25/2025
 
 audience: Admin
 ms.reviewer: briandesouza
@@ -31,7 +31,7 @@ This page lists the latest features and improvements for Microsoft 365 Copilot. 
 <!--- All features regardless of platform go here  -->
 ## February 19, 2025
 Updates released between February 5, 2025, and February 19, 2025. 
-### Copilot Chat
+### Microsoft 365 Copilot Chat
 - **Enhanced entity context card** [Web]  
   Enjoy smoother motion, improved reliability, and a more intuitive experience with the upgraded entity context card—making it easier to explore contextual details as you work. <a href="https://support.microsoft.com/topic/using-context-iq-to-refer-to-specific-files-people-and-more-in-microsoft-365-copilot-272ac2c1-c5f7-49c9-8a42-2a8a87846fa0" target="_blank">Learn more.</a>
 - **Increased results in Copilot Chat responses** [Web]  
@@ -1132,7 +1132,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 <!--- All features that have 'Web' tag  -->
 ## February 19, 2025
 Updates released between February 5, 2025, and February 19, 2025. 
-### Copilot Chat
+### Microsoft 365 Copilot Chat
 - **Enhanced entity context card** [Web]  
   Enjoy smoother motion, improved reliability, and a more intuitive experience with the upgraded entity context card—making it easier to explore contextual details as you work. <a href="https://support.microsoft.com/topic/using-context-iq-to-refer-to-specific-files-people-and-more-in-microsoft-365-copilot-272ac2c1-c5f7-49c9-8a42-2a8a87846fa0" target="_blank">Learn more.</a>
 - **Increased results in Copilot Chat responses** [Web]  
