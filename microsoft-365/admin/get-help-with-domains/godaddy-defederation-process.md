@@ -36,7 +36,7 @@ To defederate your Microsoft 365 account from GoDaddy, refer to the official GoD
 
 ### Disclaimer
 
-Microsoft and GoDaddy don't support the use of unauthorized third-party sites or steps to complete the defederation process. Using unofficial resources can affect your ability to sign in into Microsoft 365 services such as SharePoint or your mailbox, and might cause further complications.
+Microsoft and GoDaddy don't support the use of unauthorized third-party sites or steps to complete the defederation process. Using unofficial resources can affect your ability to sign in to Microsoft 365 services such as SharePoint or your mailbox, and might cause further complications.
 
 ### Additional Support
 
