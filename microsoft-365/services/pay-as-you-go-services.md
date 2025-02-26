@@ -94,7 +94,8 @@ Microsoft 365 Archive offers long-time storage solutions for Microsoft 365 data,
 ## Microsoft 365 Backup
 
 Microsoft 365 Backup provides comprehensive backup solutions for Microsoft 365 data, including email, documents, and other content. Organizations can set up pay-as-you-go billing for Microsoft 365 Backup and pay based on the amount of data backed up.
-
+<!---
 ## SharePoint Embedded
 
 SharePoint Embedded is a cloud-based file and document management system that allows app developers to integrate advanced Microsoft 365 features, such as collaboration, compliance, and generative AI, into their applications.
+--->
