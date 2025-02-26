@@ -54,7 +54,7 @@ Blocking shared agents is a critical feature for ensuring security and complianc
 1. Navigate to the Integrated apps page in the Microsoft 365 admin center.
 2. Select the Shared agents tab and locate the shared agent you want to block. You can select an agent from the list, or search for an agent using relevant attributes, such as the agent's name or the creator's name.
 
-:::image type="content" source="../../media/shared-agents-tab.png" alt-text="Screenshot showing the shared agents tab outlined in the Microsoft 365 admin center." lightbox="/media/shared-agents-tab.png":::
+:::image type="content" source="../../media/shared-agents-tab.png" alt-text="Screenshot showing the shared agents tab outlined in the Microsoft 365 admin center." lightbox="../../media/shared-agents-tab.png" :::
 
 3. Select the Block button to prevent further use of the agent within the tenant.
 
@@ -70,7 +70,7 @@ If you need to restore access to a previously blocked agent, you can unblock it 
 2. Select the Shared agents tab and locate the shared agent you want to unblock.
 3. Select the Unblock button to prevent further use of the agent within the tenant.
 
-:::image type="content" source="../../media/shared-agents-unblock.png" alt-text="Screenshot showing the pane to unblock a shared agent." lightbox="/media/shared-agents-unblock.png":::
+:::image type="content" source="../../media/shared-agents-unblock.png" alt-text="Screenshot showing the pane to unblock a shared agent." lightbox="../../media/shared-agents-unblock.png":::
 
 After the agent is unblocked, it’ll be restored to the most recent availability and deployment state.
 
