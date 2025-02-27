@@ -85,7 +85,7 @@ When a user submits feedback, app information is usually collected along with ap
 - **Attachments**   Were any attachments (that is, screenshots, files) collected as part of the feedback? (Yes/No).
 - **TenantId**   If feedback is submitted from a Microsoft Entra account, which TenantId was associated.
 - **App module** Information about app modules that might have caused a recent crash, where applicable.
-- **Optional Diagnostic data** If you're opted in, this data will be included with the feedback. [Learn more](/deployoffice/privacy/optional-diagnostic-data).
+- **Optional Diagnostic data** If you're opted in, this data will be included with the feedback. [Learn more about optional diagnostic data](/microsoft-365-apps/privacy/optional-diagnostic-data).
 
 If you've enabled the corresponding policies, we might allow users to submit screenshots, attachments, content samples, and logs to help us debug and resolve problems the user might be running into. Microsoft uses this data to debug and resolve problems that might be challenging or impossible to resolve without this additional information. Users choose whether or not this content and data is submitted to Microsoft.
 
