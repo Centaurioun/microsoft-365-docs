@@ -76,14 +76,17 @@ When you return to the **Requests** list, you see the message **You're using you
 1. In the admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
 2. On the **Licenses** page, select the **Requests** tab.
 3. Select the row that contains the request you want to review. The details pane shows details about which users want licenses to the product.
-4. You can assign licenses to each user through the default **Assign license to each of the approved people** option.
-   - To approve the entire request, select **Submit**.
-   - To approve some users and reject others, select the **X** next to the names of the users you want to remove. The names of the rejected users are moved to the **Reject for the following people** section.
-   - To deny the entire request, select the **X** next to the name under the **Approve for the following people** section. Users whose requests were denied appear under the **Reject for the following people** section.
+1. You can assign licenses to each user through the default **Approve the selected license requests** option.
+   - **Approve all users**: Select all the checkboxes and click the "Approved" button.
+      
+   - **Approve some users**: Select the checkboxes next to the names of the users you want to approve. The unselected users will be rejected. Then, click the button with "Approved/Rejected" that shows a combination of approved and rejected requests.
+      
+   - **Deny all users**: Clear all the checkboxes and click the "Rejected" button.
+      
 5. If you have more than one product, under **Select a product**, select the one that you want to use to assign licenses for.
    - To deny users access to certain apps and services, expand **Turn apps and services on or off**, then clear the check boxes for the ones that you want to exclude.
-6. To assign licenses based on group membership, select **Assign license by adding the approved individuals to the following security group**.
-   - A grayed-out option typically signifies that the security groups are either unlicensed or not yet configured.
+1. To assign licenses based on group membership, select **Assign license by adding people to the following security group**.
+- A grayed-out option typically signifies that the security groups are either unlicensed or not yet configured.
    - For more information about how to assign licenses to a security group, see [Assign licenses to users by group membership using the Microsoft 365 admin center](/entra/identity/users/licensing-admin-center)
    - When multiple security groups are available, select the one to which you want to assign licenses.
 7. In the text box at the bottom of the pane, type a message (optional). The user receives an email containing either the default message or your customized message.
