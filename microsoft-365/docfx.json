@@ -169,7 +169,7 @@
     "rules": {
       "sensitive-language-wl": {
         "exclude": [
-          "microsoft-365/frontline/shifts-connector-ukg-prerequisites.md"
+          "frontline/shifts-connector-ukg-prerequisites.md"
         ]
       }
     }
