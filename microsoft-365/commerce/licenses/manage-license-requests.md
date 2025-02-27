@@ -84,7 +84,7 @@ When you return to the **Requests** list, you see the message **You're using you
    - To deny users access to certain apps and services, expand **Turn apps and services on or off**, then clear the check boxes for the ones that you want to exclude.
 6. To assign licenses based on group membership, select **Assign license by adding people to the following security group**.
    - A grayed-out option typically signifies that the security groups are either unlicensed or not yet configured.
-   - For more information about how to assign licenses to a security group, see [Assign or unassign licenses to a group using the Microsoft 365 admin center](../../admin/manage/manage-group-licenses)
+   - For more information about how to assign licenses to a security group, see [Assign or unassign licenses to a group using the Microsoft 365 admin center](../../admin/manage/manage-group-licenses.md)
    - When multiple security groups are available, select the one to which you want to assign licenses.
 7. In the text box at the bottom of the pane, type a message (optional). The user receives an email containing either the default message or your customized message.
 8. When you're finished, select **Submit**. The details pane shows the details of the request.
