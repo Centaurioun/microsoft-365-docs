@@ -1,11 +1,11 @@
 ---
-title: "AI Adoption Score"
+title: "AI adoption score"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 01/22/2025
+ms.date: 02/27/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
@@ -22,10 +22,10 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Learn about the AI Adoption Score in the Microsoft 365 admin center."
+description: "Learn about the AI adoption score in the Microsoft 365 admin center."
 ---
 
-# AI Adoption Score
+# AI adoption score
 
 With AI rapidly entering the day-to-day experience of people in your organization, we introduced a new People Experiences category called AI adoption score.
 
@@ -100,8 +100,8 @@ This feature is only available for Global administrators. Users without this rol
 To access the Sentiment survey upload feature in the Microsoft 365 admin center, follow these steps:
 
 1. In the Microsoft 365 admin center, go to **Reports** > **Adoption Score**.
-1. Navigate to **AI Adoption Score** and select **View details**.
-1. On the AI Adoption Score page, navigate to **Assess Copilot sentiment for your org** and select **Record survey results**.
+1. Navigate to **AI adoption score** and select **View details**.
+1. On the AI adoption score page, navigate to **Assess Copilot sentiment for your org** and select **Record survey results**.
 
 :::image type="content" source="../../media/as-upload-survey.png" alt-text="Screenshot showing the dashboard to upload survey data for Copilot sentiment" lightbox="../../media/as-upload-survey.png":::
 
