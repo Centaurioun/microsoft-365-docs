@@ -76,18 +76,15 @@ When you return to the **Requests** list, you see the message **You're using you
 1. In the admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
 2. On the **Licenses** page, select the **Requests** tab.
 3. Select the row that contains the request you want to review. The details pane shows details about which users want licenses to the product.
-1. You can assign licenses to each user through the default **Approve the selected license requests** option.
-   - **Approve all users**: Select all the checkboxes and click the "Approved" button.
-      
-   - **Approve some users**: Select the checkboxes next to the names of the users you want to approve. The unselected users will be rejected. Then, click the button with "Approved/Rejected" that shows a combination of approved and rejected requests.
-      
-   - **Deny all users**: Clear all the checkboxes and click the "Rejected" button.
-      
+4. You can assign licenses to each user through the default **Approve the selected license requests** option.
+   - To approve all users, select all checkboxes and then select the **Approve** button.
+   - To approve some users but not others, select the checkboxes next to the names of the users you want to approve. Only those users are approved, and all unselected users are rejected. Next, select the **Approve x - Reject y** button that shows the number of approved and rejected requests.
+   - To deny all users, clear all the checkboxes and select the **Reject** button. 
 5. If you have more than one product, under **Select a product**, select the one that you want to use to assign licenses for.
    - To deny users access to certain apps and services, expand **Turn apps and services on or off**, then clear the check boxes for the ones that you want to exclude.
-1. To assign licenses based on group membership, select **Assign license by adding people to the following security group**.
-- A grayed-out option typically signifies that the security groups are either unlicensed or not yet configured.
-   - For more information about how to assign licenses to a security group, see [Assign licenses to users by group membership using the Microsoft 365 admin center](/entra/identity/users/licensing-admin-center)
+6. To assign licenses based on group membership, select **Assign license by adding people to the following security group**.
+   - A grayed-out option typically signifies that the security groups are either unlicensed or not yet configured.
+   - For more information about how to assign licenses to a security group, see [Assign or unassign licenses to a group using the Microsoft 365 admin center](../../admin/manage/manage-group-licenses)
    - When multiple security groups are available, select the one to which you want to assign licenses.
 7. In the text box at the bottom of the pane, type a message (optional). The user receives an email containing either the default message or your customized message.
 8. When you're finished, select **Submit**. The details pane shows the details of the request.
@@ -95,7 +92,7 @@ When you return to the **Requests** list, you see the message **You're using you
 
 ## Share a license request by email
 
-If you don’t have the authority within your organization to make decisions about who can receive a license for a particular product or service, you can share a license request via email with someone in your organization who does. You can only share one request at a time. The person who receives the license request email doesn’t need access to the Microsoft 365 admin center to review the request. They simply respond to the email and indicate whether the person should be given the license they requested, and then you [approve or deny the request](#approve-or-deny-a-license-request).
+If you don't have the authority within your organization to make decisions about who can receive a license for a particular product or service, you can share a license request via email with someone in your organization who does. You can only share one request at a time. The person who receives the license request email doesn't need access to the Microsoft 365 admin center to review the request. They simply respond to the email and indicate whether the person should be given the license they requested, and then you [approve or deny the request](#approve-or-deny-a-license-request).
 
 1. In the admin center, select the **Navigation menu**, then select **Billing** > **Licenses**.
 2. On the **Licenses** page, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2245727" target="_blank">Auto-claim policy</a> tab.
@@ -103,9 +100,9 @@ If you don’t have the authority within your organization to make decisions abo
 4. In the request pane, select **Share request**.
 5. In the **Share license request details** pane, type an email address, then select the recipient name.
    > [!NOTE]
-   > You can select more than one recipient, but if the email that you entered doesn’t resolve into a user name, you can’t share the request.
+   > You can select more than one recipient, but if the email that you entered doesn't resolve into a user name, you can't share the request.
 6. To personalize the email, select the **Include a personalized message** check box. Type a **Subject** and **Message** in the corresponding fields.
-7. When you’re finished, select **Share request**.
+7. When you're finished, select **Share request**.
 
 ## Related content
 
