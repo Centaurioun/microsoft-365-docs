@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 02/19/2025
+ms.date: 02/26/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 search.appverid: 
@@ -72,6 +72,8 @@ Microsoft 365 Backup works with and integrates into Microsoft 365. This means th
 Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
 
 Microsoft 365 Backup is a Microsoft 365 service built on the same underlying infrastructure and follows the same compliance standards. Microsoft 365 Backup is covered by any or all of the standards (for example, ISO and SCO) and certifications listed on the [Service Trust Portal](https://servicetrust.microsoft.com/).
+
+Microsoft 365 Backup directly supports the Digital Operational Resilience Act's (DORA) business continuity and recovery provisions, enhancing your organization’s overall operational resilience by enabling regulated entities to develop resilient operations and recover quickly from disruptions.
 
 > [!IMPORTANT]
 > Given that compliance tooling actions might destroy primary data, we administratively isolate those destructive actions from flowing through to backed up data automatically. In other words, **compliance actions that automatically delete your primary data will not automatically delete data from your backups**.
