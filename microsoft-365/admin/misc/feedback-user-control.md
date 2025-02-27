@@ -100,7 +100,9 @@ If you've enabled the corresponding policies, we might allow users to submit scr
 
 ## How can I see my user's feedback?
 
-In the Microsoft 365 admin center administrators can view, delete, and export the feedback data for their organizations. This functionality assists administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enables user feedback data to be provided as part of any Data Subject Request. The Compliance Administrator role (and the Global Administrator role) has the ability to view, export, and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
+Administrators can view, delete, and export the feedback data for their organizations in the Microsoft 365 admin center. This functionality assists administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enables user feedback data to be provided as part of any Data Subject Request. The Compliance Administrator role (and the Global Administrator role) has the ability to view, export, and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). 
+
+To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
 
 :::image type="content" source="../../media/manage-feedback-3.jpg" alt-text="Product feedback in the Microsoft 365 admin center":::
 
