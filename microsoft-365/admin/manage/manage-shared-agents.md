@@ -23,15 +23,15 @@ description: "Learn how to manage shared agents for Microsoft 365 Copilot in the
 
 # Manage shared agents in the Microsoft 365 admin center
 
-The Integrated apps page in the Microsoft 365 admin center provides administrators with the tools you need to manage applications integrated into your tenant. These include first-party, third-party, and line-of-business apps. You can use this page to review app usage, manage app lifecycles, and take actions to ensure compliance and security.
+You can manage shared agents for Microsoft 365 Copilot on the Integrated apps page in the Microsoft 365 admin center. The Integrated apps page provides administrators with the tools you need to manage applications integrated into your tenant. You can use this page to review app usage, manage app lifecycles, and take actions to ensure compliance and security.
 
 When managing shared agents for Copilot, you have visibility and control over agents that are shared within your organization, empowering you to monitor, govern, and act as needed.
 
 ## What is a shared agent?
 
-Shared agents are custom versions of Microsoft 365 Copilot that combine instructions, knowledge, and skills to perform specific tasks or scenarios. These agents can be created and shared by creators through multiple channels, such as Microsoft Cloud Solutions (MCS), Teams, Agent Builder, and more. Shared agents enhance the functionality of Copilot by adding search capabilities, custom actions, connectors, and APIs. To learn more, see [Share agents with other users](/microsoft-copilot-studio/admin-share-bots).
+Shared agents are custom versions of Microsoft 365 Copilot that combine instructions, knowledge, and skills to perform specific tasks or scenarios. These agents can be created and shared by creators through multiple channels, such as Microsoft Cloud Solutions (MCS), Microsoft Teams, Agent Builder, and more. Shared agents enhance the functionality of Copilot by adding search capabilities, custom actions, connectors, and APIs. To learn more, see [Share agents with other users](/microsoft-copilot-studio/admin-share-bots).
 
-As an admin, you can view shared agents on the Integrated apps page In the Microsoft 365 admin center. You can see a list of all shared agents, including details such as the agent's name, creator, creation date, host products, and availability status. You can search for specific agents and manage their lifecycle, including blocking agents that are deemed unsafe or non-compliant.
+As an admin, you can view shared agents on the Integrated apps page In the Microsoft 365 admin center. You can see a list of all shared agents, including details such as the agent's name, creator, creation date, host products, and availability status. You can search for specific agents and manage their lifecycle, including blocking agents that are deemed unsafe or noncompliant.
 
 For your users, shared agents are available through Copilot on different surfaces. Users can interact with these agents to perform specific tasks or get assistance based on the agent's capabilities.
 
