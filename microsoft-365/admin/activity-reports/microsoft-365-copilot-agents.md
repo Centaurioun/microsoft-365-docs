@@ -53,7 +53,7 @@ At the top, you can filter by different periods. The Microsoft 365 Copilot agent
 
 End-users interact with agents in two ways: either by at-mentioning the agent in a chat experience or by selecting the agent from the right-side panel in Copilot Chat or from the hamburger menu on the top left corner in Copilot in Word or PowerPoint. An active user of an agent is a user who sends a prompt request to an agent and receives a response.
 
-In Recommendations, the recommended action card suggests that admins visit the Integrated apps section of the Microsoft 365 admin center to explore and enable additional agents for users in their org.
+In Recommendations, the recommended action card suggests that admins visit the Integrated apps section of the Microsoft 365 admin center to explore and enable more agents for users in their org.
 
 :::image type="content" source="../../media/agents-recommendation.png" alt-text="Screenshot showing the recommendation card for the Microsoft 365 Copilot usage report." lightbox="../../media/agents-recommendation.png":::
 
@@ -106,11 +106,11 @@ No. Currently, the report does not include the usage of agents built by Microsof
 
 Due to system limitations, the information about the agent name for the agents created by users from [Agent Builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder) is not currently available. However, usage of these agents is included in the aggregated metrics above the table.
 
-If External app ID is visible but not the agent name, you can identify your organization’s agent name by looking up the External app ID in the Microsoft Teams admin center under the Manage apps. Admins also have the option to export the details table in the agent report and export the manage apps in Microsoft Teams admin center for a bulk lookup of agent name.
+If External app ID is visible but not the agent name, you can identify your organization’s agent name by looking up the External app ID in the Microsoft Teams admin center under the Manage apps. Admins also have the option to export the details table in the agent report and export the managed apps in Microsoft Teams admin center for a bulk lookup of agent name.
 
 ### How can I see which users actively used specific agents?
 
-This information is not available in the report at this time, but may be added at a later date.  
+This information is not available in the report at this time, but might be added at a later date.  
 
 ### How does agent usage impact overall Microsoft 365 Copilot usage?
 
