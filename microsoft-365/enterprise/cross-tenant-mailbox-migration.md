@@ -6,7 +6,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
 ms.subservice: multi-tenant
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 f1.keywords:
   - NOCSH
 ms.date: 02/01/2024
