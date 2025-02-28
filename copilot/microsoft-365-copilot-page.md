@@ -20,7 +20,7 @@ appliesto:
  - ✅ Microsoft 365 Copilot
 ---
 
-# Admins can manage some Microsoft 365 Copilot scenarios in the Microsoft 365 admin center
+# Manage Microsoft 365 Copilot scenarios in the Microsoft 365 admin center
 
 When [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is available in a tenant, there are some Copilot scenarios that admins can configure in the Microsoft 365 admin center.
 
