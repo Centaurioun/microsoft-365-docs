@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires, kkameth
-ms.date: 01/21/2025
+ms.date: 03/01/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -41,7 +41,7 @@ The following tables describe each meter, its pricing, and how it measures usage
 |**[Prebuilt document processing](prebuilt-overview.md)**|The number of pages processed for PDF or image files. Each of these counts as one transaction. You won't be charged for model training. You're charged for processing whether or not there's a positive classification, or any entities extracted.<br><br>Processing occurs on document upload and on subsequent updates. Processing is counted for each model applied. For example, if you have two models applied to a library and you upload or update a five-page document in that library, the total pages processed is 10.|$0.01/transaction|
 |**[Structured and freeform document processing](form-processing-overview.md)**|The number of pages processed for PDF or image files. Each of these counts as one transaction. You won't be charged for model training. You're charged for processing whether or not there's a positive classification, or any entities extracted.<br><br>Processing occurs on document upload and on subsequent updates. Processing is counted for each model applied. For example, if you have two models applied to a library and you upload or update a five-page document in that library, the total pages processed is 10.<br><br>If you have AI Builder credits allocated to the environment, these credits are used first. Once the credits are exhausted, the processing transactions are charged to the meter.|$0.05/transaction|
 |**[Taxonomy tagging](taxonomy-tagging-overview.md)** |The number of documents processed. Each processed document counts as one transaction. You won’t be charged if you only enable pay-as-you-go billing for taxonomy tagging. You're charged only when you [enable taxonomy tagging on a document library](taxonomy-tagging.md). |$0.05/transaction |
-|**[Unstructured document processing](document-understanding-overview.md)**|The number of pages processed for Word, PDF, or TIFF files; the number of sheets for Excel files; the number of slides for PowerPoint files; or the number of files for other file types. Each of these counts as one transaction. You won't be charged for model training. You're charged for processing whether or not there's a positive classification, or any entities extracted.<br><br>Processing occurs on document upload and on subsequent updates. Processing is counted for each model applied. For example, if you have two models applied to a library and you upload or update a five-page document in that library, the total pages processed is 10.|$0.05/transaction|
+|**[Unstructured document processing](document-understanding-overview.md)**|The number of pages processed for Word, PDF, or TIFF files; the number of sheets for Excel files; the number of slides for PowerPoint files; or the number of files for other file types. Each of these counts as one transaction. You won't be charged for model training. You're charged for processing whether or not there's a positive classification, or any entities extracted.<br><br>Processing occurs on document upload and on subsequent updates. Processing is counted for each model applied. For example, if you have two models applied to a library and you upload or update a five-page document in that library, the total pages processed is 10.|$0.005/transaction|
 
 ## Storage services
 
