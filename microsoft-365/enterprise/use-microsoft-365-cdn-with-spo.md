@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: shawndube
-ms.date: 02/19/2024
+ms.date: 02/28/2025
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-enterprise
