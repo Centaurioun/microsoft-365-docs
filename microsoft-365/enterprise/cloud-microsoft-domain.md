@@ -57,6 +57,7 @@ Since 2023, *.cloud.microsoft and other domains related to the domain unificatio
 |Microsoft Loop | [loop.cloud.microsoft](https://loop.cloud.microsoft)|
 |Microsoft Mesh | [mesh.cloud.microsoft](https://mesh.cloud.microsoft)|
 |Microsoft OneNote | [onenote.cloud.microsoft](https://onenote.cloud.microsoft)|
+|Microsoft Places | [places.cloud.microsoft](https://places.cloud.microsoft)|
 |Microsoft Planner | [planner.cloud.microsoft](https://planner.cloud.microsoft)|
 |Microsoft Setup | [setup.cloud.microsoft](https://setup.cloud.microsoft)|
 |Microsoft Sway | [sway.cloud.microsoft](https://sway.cloud.microsoft)|
