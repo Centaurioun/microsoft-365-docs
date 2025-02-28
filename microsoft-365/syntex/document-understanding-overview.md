@@ -53,7 +53,7 @@ Add [classifiers](create-a-classifier.md) and [extractors](create-an-extractor.m
 
 - Classifiers are used to identify and classify documents that are uploaded to the document library. For example, a classifier can be "trained" to identify all *contract renewal* documents that are uploaded to the library. The contract renewal content type is defined by you when you create your classifier.
 
-- Extractors pull information from these documents. For example, for each contract renewal document identified in your document library, columns will display that show the *Service Start Date* and *Client* for each document. 
+- Extractors pull information from these documents. For example, for each contract renewal document identified in your document library, columns display that show the *Service Start Date* and *Client* for each document.
 
 You can use example files to train and test your classifiers and extractors in your model. Example files provide your model examples of what to look for when trying to identify and extract data from files. For example, you would train your contract renewal classifiers and extractors with examples of contract renewal documents your company works with. You can also use example files to test the effectiveness of your model.
 
