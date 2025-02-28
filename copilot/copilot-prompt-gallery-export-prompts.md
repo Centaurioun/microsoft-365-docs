@@ -15,7 +15,7 @@ hideEdit: true
 ms.date: 03/06/2025
 ---
 
-# Export prompts that users saved or shared in Copilot Prompt Gallery
+# Export prompts that users saved, liked, or shared in Copilot Prompt Gallery
 
 In [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts), users can save or share prompts they created, including sharing prompts with a specific team (in Microsoft Teams) that they're a member of. Users can also like prompts created by others. As an IA Admin, you can use Windows PowerShell to export data to a file about either of the following types of prompts in Copilot Prompt Gallery:
 
@@ -135,8 +135,8 @@ The file name is prefixed with "User" and the Microsoft Entra ID of the user fol
 | Prompt.Title                                        | Title of the prompt given by user while saving or sharing the prompt.        |
 | Prompt.PromptText                                   | Prompt text                                                                  |
 | Prompt.Products                                     | A list containing the product in which user saved or shared the prompt.      |
-| Prompt.IsFavorite                                   | Boolean (true or false) indicating that a user has saved or liked the prompt |
-| Prompt.UserActivity.Favorite.IsFavorite             | Boolean (true or false) indicating that a user has saved or liked the prompt |
+| Prompt.IsFavorite                                   | Boolean (true or false) indicating that a user has saved or liked the prompt.|
+| Prompt.UserActivity.Favorite.IsFavorite             | Boolean (true or false) indicating that a user has saved or liked the prompt.|
 | Prompt.UserActivity.Favorite.ActivityDateTimeInUtc  | Time when user saved or liked the prompt.                                    |
 | Prompt.CreatedTime                                  | Time when the user saved the prompt.                                         |
 | Prompt.SharedTime                                   | Time when the user shared the prompt                                         |
