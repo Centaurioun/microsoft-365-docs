@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/06/2025
+ms.date: 03/01/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -20,7 +20,7 @@ description: Learn about the autofill columns service in SharePoint.
 # Overview of autofill columns in Microsoft Syntex
 
 > [!NOTE]
-> Beginning in March 2025, the pricing for autofill columns will be lowered from $0.05 per page to $0.005 per page. This change reflects our ongoing commitment to making advanced AI accessible to everyone.
+> As of March 1, 2025, the price for autofill columns is lowered from $0.05 per page to $0.005 per page. This change reflects our ongoing commitment to making advanced AI accessible to everyone.
 
 > [!NOTE]
 > Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of autofill columns and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
@@ -29,7 +29,7 @@ Autofill columns in Microsoft Syntex automatically extract, summarize, or genera
 
 For example, you can ask a question (a *prompt*) of a document in natural language, and the system saves the response directly to a designated library column. Or you can have more than one of these questions set to process any file uploaded to a library, with each response allocated to a specific column.
 
-Autofill columns can work alongside other Microsoft Syntex models. You can link various extractive prompts (which pull information from existing data) or generative prompts (which create new content) to multiple columns. This allows you to extract metadata that other models might miss or generate new insights.
+Autofill columns can work alongside other Microsoft Syntex models. You can link various extractive prompts (which pull information from existing data) or generative prompts (which create new content) to multiple columns. This feature allows you to extract metadata that other models might miss or generate new insights.
 
 ## Requirements and limitations
 
