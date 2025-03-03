@@ -1,5 +1,5 @@
 ---
-title: Add Microsoft 365 E5 Security to your Microsoft 365 Business Premium subscription
+title: Add the Microsoft 365 E5 Security add-on to your Microsoft 365 Business Premium subscription
 description: Get an overview of Microsoft 365 E5 Security and learn how to add it to your Microsoft 365 Business Premium subscription.
 search.appverid:
 - MET150
@@ -19,13 +19,13 @@ ms.reviewer: nehabha, efratka
 f1.keywords: NOCSH
 ---
 
-# Add Microsoft 365 E5 Security to your Microsoft 365 Business Premium subscription
+# Add the Microsoft 365 E5 Security add-on to your Microsoft 365 Business Premium subscription
 
 **Applies to:**
 
 - [Microsoft 365 Business Premium](m365bp-overview.md)
 
-As you probably already know, Microsoft 365 Business Premium is an excellent productivity and security solution for small and medium-sized businesses (1-300 employees). With this solution, you get:
+As you probably already know, [Microsoft 365 Business Premium](m365bp-overview.md) is an excellent productivity and security solution for small and medium-sized businesses (1-300 employees). With this solution, you get:
 
 - [Microsoft 365 Apps](/microsoft-365/admin/setup/install-applications) installed on your devices
 - Protection for your user accounts with [Microsoft Entra ID Plan 1](/entra/fundamentals/whatis)
@@ -35,9 +35,7 @@ As you probably already know, Microsoft 365 Business Premium is an excellent pro
 - Data loss prevention for email and files with [Microsoft Purview](/purview/dlp-learn-about-dlp)
 - Sensitivity labels and encryption with [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection)
 
-For more information about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](m365bp-overview.md).
-
-**Now, you can extend your security capabilities by adding Microsoft 365 E5 Security to your subscription**. Microsoft 365 E5 Security provides added protection for your organization in a cost-effective solution. 
+**Now, you can extend your security capabilities by adding Microsoft 365 E5 Security to your subscription**. The Microsoft 365 E5 Security add-on provides even more protection for your business in a cost-effective solution. 
 
 ## Microsoft 365 E5 Security at a glance
 
@@ -51,9 +49,9 @@ The Microsoft 365 E5 Security add-on uplevels your Microsoft 365 Business Premiu
 - Collaboration security with [Microsoft Defender for Office 365 Plan 2](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which adds automated investigation and response, attack simulation training, threat trackers, advanced hunting,incident and alert investigation, and threat explorer. 
 - SaaS security with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps), which enables IT teams to identify and manage shadow IT and ensure that only approved applications are used. 
 
-## How to get Microsoft 365 E5 Security
+## How to get the Microsoft 365 E5 Security add-on
 
-To get Microsoft 365 E5 Security, you have several options:
+To get the Microsoft 365 E5 Security add-on, you have several options:
 
 - [Work with a Microsoft Partner](/microsoft-365/admin/manage/find-your-partner-or-reseller)
 - Visit [Microsoft Security for Business](https://aka.ms/SMBSecurity) and purchase the add-on
