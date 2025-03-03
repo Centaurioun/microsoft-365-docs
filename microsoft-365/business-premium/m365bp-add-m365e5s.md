@@ -27,7 +27,7 @@ f1.keywords: NOCSH
 
 As you probably already know, Microsoft 365 Business Premium is an excellent productivity and security solution for small and medium-sized businesses (1-300 employees). With this solution, you get:
 
-- Microsoft 365 Apps installed on your devices
+- [Microsoft 365 Apps](/microsoft-365/admin/setup/install-applications) installed on your devices
 - Protection for your user accounts with [Microsoft Entra ID Plan 1](/entra/fundamentals/whatis)
 - Endpoint management, security, and mobile application management with [Microsoft Intune Plan 1](/mem/intune/fundamentals/what-is-intune)
 - Protection for your devices with [Microsoft Defender for Business](/defender-business/mdb-overview)
@@ -41,7 +41,9 @@ Now, you can extend these capabilities by adding Microsoft 365 E5 Security to yo
 
 ## Microsoft 365 E5 Security at a glance
 
-The Microsoft 365 E5 Security add-on includes:
+:::image type="content" source="media/m365e5s-components.png" alt-text="Diagram that shows the components of Microsoft 365 E5 Security.":::
+
+The Microsoft 365 E5 Security add-on i
 
 - 
 
