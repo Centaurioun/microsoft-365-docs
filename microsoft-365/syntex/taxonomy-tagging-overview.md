@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 01/16/2025
+ms.date: 03/03/2025
 ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -35,7 +35,7 @@ The taxonomy tagging feature offers an automated tagging solution for documents 
 
 ### Current release notes
 
-- A maximum of three columns in a library can be configured with taxonomy tagging.
+- A maximum of five columns in a library can be configured with taxonomy tagging.
 
 - Taxonomy tagging doesn't work on scanned PDF files at this time. It only works on regular (native) PDF files.
 
