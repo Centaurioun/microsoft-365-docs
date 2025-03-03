@@ -37,7 +37,7 @@ As you probably already know, Microsoft 365 Business Premium is an excellent pro
 
 For more information about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](m365bp-overview.md).
 
-Now, you can extend these capabilities by adding Microsoft 365 E5 Security to your subscription. Microsoft 365 E5 Security provides added protection for your organization in a cost-effective solution.
+**Now, you can extend your security capabilities by adding Microsoft 365 E5 Security to your subscription**. Microsoft 365 E5 Security provides added protection for your organization in a cost-effective solution.
 
 ## Microsoft 365 E5 Security at a glance
 
@@ -45,11 +45,11 @@ Now, you can extend these capabilities by adding Microsoft 365 E5 Security to yo
 
 The Microsoft 365 E5 Security add-on uplevels your Microsoft 365 Business Premium security capabilities with:
 
-- Enhanced identity and access controls with [Microsoft Entra ID Plan 2](/entra/fundamentals/licensing)
-- Identity protection with [Microsoft Defender for Identity](/defender-for-identity/what-is)
+- Enhanced identity and access controls with [Microsoft Entra ID Plan 2](/entra/fundamentals/licensing), which adds advanced security and governance features with ID Protection and ID Governance.
+- Identity protection with [Microsoft Defender for Identity](/defender-for-identity/what-is), which offers risk-based conditional access that helps block identity attacks in real time using behavioral analytics and signals from user risk and sign-in risk
 - Device security with [Microsoft Defender for Endpoint Plan 2](/defender-endpoint/microsoft-defender-endpoint), which adds threat hunting, six months of data retention, and endpoint security for IoT devices.
 - Collaboration security with [Microsoft Defender for Office 365 Plan 2](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which adds automated investigation and response, attack simulation training, threat trackers, advanced hunting,incident and alert investigation, and threat explorer. 
-- SaaS security with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
+- SaaS security with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps), which enables IT teams to identify and manage shadow IT and ensure that only approved applications are used. 
 
 ## How to get Microsoft 365 E5 Security
 
@@ -58,7 +58,7 @@ To get Microsoft 365 E5 Security, you have several options:
 - [Work with a Microsoft Partner](/microsoft-365/admin/manage/find-your-partner-or-reseller)
 - Visit [Microsoft Security for Business](https://aka.ms/SMBSecurity) and purchase the add-on
 
-
 ## See also
 
 - [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf)
+- [Microsoft 365 Business Premium Partner Playbook](https://aka.ms/M365BPPartnerPlaybook)
