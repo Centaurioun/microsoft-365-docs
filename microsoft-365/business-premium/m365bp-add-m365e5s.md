@@ -65,7 +65,7 @@ The upgraded features in Defender for Endpoint Plan 2 vs. Defender for Business 
 |&nbsp;&nbsp;Application control|✔|✔|
 |&nbsp;&nbsp;Network firewall|✔|✔|
 |&nbsp;&nbsp;Device control (for example, USB)|✔|✔|
-|&nbsp;&nbsp;Network protection|||
+|&nbsp;&nbsp;Network protection|✔|✔|
 |&nbsp;&nbsp;Device-based Conditional Access|✔|✔|
 |&nbsp;&nbsp;Web control / category-based URL blocking|✔|✔|
 |&nbsp;&nbsp;Ransomware mitigation|✔|✔|
