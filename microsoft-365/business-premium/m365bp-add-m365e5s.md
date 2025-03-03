@@ -35,7 +35,7 @@ As you probably already know, [Microsoft 365 Business Premium](m365bp-overview.m
 - Data loss prevention for email and files with [Microsoft Purview](/purview/dlp-learn-about-dlp)
 - Sensitivity labels and encryption with [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection)
 
-**Now, you can extend your security capabilities by adding Microsoft 365 E5 Security to your Microsoft 365 Business Premium subscription**. The Microsoft 365 E5 Security add-on provides even more protection for your business in a cost-effective solution. 
+**Now, you can extend your security capabilities by adding Microsoft 365 E5 Security to your Microsoft 365 Business Premium subscription**. The Microsoft 365 E5 Security add-on provides even more protection for your business in a cost-effective solution. [See the announcement](https://aka.ms/BusinessPremiumPlusE5SecurityBlog).
 
 ## The Microsoft 365 E5 Security add-on at a glance
 
