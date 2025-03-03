@@ -49,6 +49,8 @@ The Microsoft 365 E5 Security add-on uplevels your Microsoft 365 Business Premiu
 - Collaboration security with [Microsoft Defender for Office 365 Plan 2](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which adds automated investigation and response, attack simulation training, threat trackers, advanced hunting,incident and alert investigation, and threat explorer. 
 - SaaS security with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps), which enables IT teams to identify and manage shadow IT and ensure that only approved applications are used. 
 
+<!---Comparison table / section goes here--->
+
 ## How to get the Microsoft 365 E5 Security add-on
 
 To get the Microsoft 365 E5 Security add-on, you have several options:
