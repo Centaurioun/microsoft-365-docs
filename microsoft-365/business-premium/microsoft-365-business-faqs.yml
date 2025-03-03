@@ -45,6 +45,10 @@ sections:
         answer: |
           Yes, customers can combine their Microsoft 365 Business Premium subscriptions with plans and add-ons from Azure, Dynamics 365, Enterprise Mobility + Security, and Office 365.
 
+      - question: How do I add Microsoft 365 E5 Security to my Microsoft 365 Business Premium subscription?
+        answer: |
+          You can work with your [Microsoft partner](/microsoft-365/admin/manage/find-your-partner-or-reseller) or visit [Microsoft Security for Business](https://aka.ms/SMBSecurity).
+
       - question: Is everyone in my business required to have a Microsoft 365 Business Premium subscription?
         answer: |
           No, not everyone needs a Microsoft 365 Business Premium subscription, although the security and management benefits are available only to those users with devices managed with a Microsoft 365 Business Premium subscription.
@@ -93,8 +97,7 @@ sections:
 
           To learn more, see the following resources:
 
-          - [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=67386da73ec61354e1550985269d2a17:G:s&OCID=AIDcmmwf9kwzdj_SEM_67386da73ec61354e1550985269d2a17:G:s&lnkd=Bing_O365SMB_Brand&msclkid=67386da73ec61354e1550985269d2a17)
-          - [Compare security features in Microsoft 365 plans for small and medium-sized businesses](/microsoft-365/security/defender-business/mdb-overview)
+          - [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf)
           - [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview)
 
       - question: Can I switch my Microsoft 365 plan to Microsoft 365 Business Premium?
