@@ -37,16 +37,19 @@ As you probably already know, Microsoft 365 Business Premium is an excellent pro
 
 For more information about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](m365bp-overview.md).
 
-Now, you can extend these capabilities by adding Microsoft 365 E5 Security to your subscription. Microsoft 365 E5 Security provides added protection for your organization's identities, devices, email, files, and apps in a cost-effective solution.
+Now, you can extend these capabilities by adding Microsoft 365 E5 Security to your subscription. Microsoft 365 E5 Security provides added protection for your organization in a cost-effective solution.
 
 ## Microsoft 365 E5 Security at a glance
 
 :::image type="content" source="media/m365e5s-components.png" alt-text="Diagram that shows the components of Microsoft 365 E5 Security.":::
 
-The Microsoft 365 E5 Security add-on i
+The Microsoft 365 E5 Security add-on uplevels your Microsoft 365 Business Premium security capabilities with:
 
-- 
-
+- Enhanced identity and access controls with [Microsoft Entra ID Plan 2](/entra/fundamentals/licensing)
+- Identity protection with [Microsoft Defender for Identity](/defender-for-identity/what-is)
+- Device security with [Microsoft Defender for Endpoint Plan 2](/defender-endpoint/microsoft-defender-endpoint)
+- Collaboration security with [Microsoft Defender for Office 365 Plan 2](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)
+- SaaS security with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 
 
 
