@@ -55,7 +55,7 @@ The Microsoft 365 E5 Security add-on uplevels your Microsoft 365 Business Premiu
 
 To get Microsoft 365 E5 Security, you have several options:
 
-- Work with a Microsoft Partner
+- [Work with a Microsoft Partner](/microsoft-365/admin/manage/find-your-partner-or-reseller)
 - Visit [Microsoft Security for Business](https://aka.ms/SMBSecurity) and purchase the add-on
 
 
