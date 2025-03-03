@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 02/19/2025
+ms.date: 02/25/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -274,3 +274,5 @@ Follow these steps to view and edit backup policies for Exchange.
 ## Multi-geo environments
 
 Microsoft 365 Backup supports the backup of sites and user accounts from both the central and satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via the site picker, search, or filter rules doesn't currently support multi-geo. Those user interface experiences today only support addition of sites in the tenant's central location.
+
+Most importantly, data in the backups will honor the multi-geo residency requirements and keep data in the geo you've defined it to live.
