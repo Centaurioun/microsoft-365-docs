@@ -30,9 +30,7 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## March 2025
 
-- Microsoft 365 E5 Security can now be added onto Microsoft 365 Business Premium. Microsoft 365 E5 Security enhances your sebrings new security value on top of Business Premium with additional capabilities to protect identities, devices, email and files, and apps. For more information, see the following resources:
-   - Tech Community blog post:
-   - Add Microsoft 365 E5 to your Microsoft 365 Business Premium subscription
+- Microsoft 365 E5 Security can now be added onto Microsoft 365 Business Premium. Microsoft 365 E5 Security enhances your sebrings new security value on top of Business Premium with additional capabilities to protect identities, devices, email and files, and apps. For more information, see [Add Microsoft 365 E5 to your Microsoft 365 Business Premium subscription](m365bp-add-m365e5s.md).
 
 ## July 2024
 
