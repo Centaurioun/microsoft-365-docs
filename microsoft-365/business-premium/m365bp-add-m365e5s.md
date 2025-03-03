@@ -25,3 +25,14 @@ f1.keywords: NOCSH
 
 - [Microsoft 365 Business Premium](m365bp-overview.md)
 
+As you probably already know, Microsoft 365 Business Premium is an excellent productivity and security solution for small and medium-sized businesses (1-300 employees). With this solution, you get:
+
+- Microsoft 365 Apps installed on your devices
+- Protection for your user accounts with [Microsoft Entra ID Plan 1](/entra/fundamentals/whatis)
+- Device enrollment and management with Microsoft Intune Plan 1
+- Protection for your devices with [Microsoft Defender for Business](/defender-business/mdb-overview)
+- Protection for email and files with [Microsoft Defender for Office 365 Plan 1](/defender-office-365/mdo-about#defender-for-office-365-plan-1-capabilities)
+- Data loss prevention for email and files with [Microsoft Purview](/purview/dlp-learn-about-dlp)
+- Sensitivity labels and encryption with [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection)
+
+Now, you can extend these capabilities by adding Microsoft 365 E5 Security to your subscription.
