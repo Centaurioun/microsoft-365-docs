@@ -1,5 +1,5 @@
 ---
-title: Add the Microsoft 365 E5 Security add-on to your Microsoft 365 Business Premium subscription
+title: Add Microsoft 365 E5 Security to your Microsoft 365 Business Premium subscription
 description: Get an overview of Microsoft 365 E5 Security and learn how to add it to your Microsoft 365 Business Premium subscription.
 search.appverid:
 - MET150
@@ -19,7 +19,7 @@ ms.reviewer: nehabha, efratka
 f1.keywords: NOCSH
 ---
 
-# Add the Microsoft 365 E5 Security add-on to your Microsoft 365 Business Premium subscription
+# Add Microsoft 365 E5 Security to your Microsoft 365 Business Premium subscription
 
 **Applies to:**
 
@@ -35,9 +35,9 @@ As you probably already know, [Microsoft 365 Business Premium](m365bp-overview.m
 - Data loss prevention for email and files with [Microsoft Purview](/purview/dlp-learn-about-dlp)
 - Sensitivity labels and encryption with [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection)
 
-**Now, you can extend your security capabilities by adding Microsoft 365 E5 Security to your subscription**. The Microsoft 365 E5 Security add-on provides even more protection for your business in a cost-effective solution. 
+**Now, you can extend your security capabilities by adding Microsoft 365 E5 Security to your Microsoft 365 Business Premium subscription**. The Microsoft 365 E5 Security add-on provides even more protection for your business in a cost-effective solution. 
 
-## Microsoft 365 E5 Security at a glance
+## What's included in the Microsoft 365 E5 Security add-on
 
 :::image type="content" source="media/m365e5s-components.png" alt-text="Diagram that shows the components of Microsoft 365 E5 Security.":::
 
