@@ -35,6 +35,20 @@ As you probably already know, Microsoft 365 Business Premium is an excellent pro
 - Data loss prevention for email and files with [Microsoft Purview](/purview/dlp-learn-about-dlp)
 - Sensitivity labels and encryption with [Azure Information Protection Plan 1](/azure/information-protection/what-is-information-protection)
 
-For more details about what's included in Microsoft 365 Business Premium, see [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf).
+For more information about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](m365bp-overview.md).
 
-Now, you can extend these capabilities by adding Microsoft 365 E5 Security to your subscription.
+Now, you can extend these capabilities by adding Microsoft 365 E5 Security to your subscription. Microsoft 365 E5 Security provides added protection for your organization's identities, devices, email, files, and apps in a cost-effective solution.
+
+## Microsoft 365 E5 Security at a glance
+
+The Microsoft 365 E5 Security add-on includes:
+
+- 
+
+
+
+
+
+## See also
+
+- [Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf)
