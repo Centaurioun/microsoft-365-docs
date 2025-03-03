@@ -56,7 +56,7 @@ The upgraded features in Defender for Endpoint Plan 2 vs. Defender for Business 
 |Capabilities|Defender for<br/>Business|Defender for<br/>Endpoint Plan 2|
 |---|:---:|:---:|
 |**Vulnerability management**|||
-|&nbsp;&nbsp;&nbsp;&nbsp;Microsoft secure score|✔|✔|
+|&nbsp;&nbsp;Microsoft secure score|✔|✔|
 |&nbsp;&nbsp;Vulnerability management (visibility into software and vulnerabilities)|✔|✔|
 |&nbsp;&nbsp;Vulnerability remediation based on Intune integration|✔|✔|
 |&nbsp;&nbsp;Attack surface reduction|✔|✔|
