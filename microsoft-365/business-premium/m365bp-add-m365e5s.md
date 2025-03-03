@@ -37,7 +37,7 @@ As you probably already know, Microsoft 365 Business Premium is an excellent pro
 
 For more information about Microsoft 365 Business Premium, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](m365bp-overview.md).
 
-**Now, you can extend your security capabilities by adding Microsoft 365 E5 Security to your subscription**. Microsoft 365 E5 Security provides added protection for your organization in a cost-effective solution.
+**Now, you can extend your security capabilities by adding Microsoft 365 E5 Security to your subscription**. Microsoft 365 E5 Security provides added protection for your organization in a cost-effective solution. 
 
 ## Microsoft 365 E5 Security at a glance
 
