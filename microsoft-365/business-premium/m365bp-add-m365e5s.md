@@ -38,7 +38,7 @@ As you probably already know, [Microsoft 365 Business Premium](m365bp-overview.m
 
 You can now extend the security capabilities you have in Microsoft 365 Business Premium by adding Microsoft 365 E5 Security to your subscription. Adding Microsoft 365 E5 Security to Microsoft 365 Business Premium provides your business with even more protection in a cost-effective solution. [See the announcement](https://aka.ms/BusinessPremiumPlusE5SecurityBlog).
 
-## Microsoft 365 E5 Security at a glance
+### Microsoft 365 E5 Security at a glance
 
 :::image type="content" source="media/m365e5s-components.png" alt-text="Diagram that shows the components of Microsoft 365 E5 Security.":::
 
