@@ -5,7 +5,7 @@ author: jennplatt
 ms.author: avering
 manager: mimast
 ms.date: 02/05/2025
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ---
 
