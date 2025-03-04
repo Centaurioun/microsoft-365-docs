@@ -50,37 +50,7 @@ Microsoft 365 E5 Security up levels your Microsoft 365 Business Premium security
 
 ### Comparison of upgraded features in Microsoft 365 E5 Security
 
-The upgraded features in Defender for Endpoint Plan 2 vs. Defender for Business are described in the following table:
-
-|Capabilities|Defender for<br/>Business|Defender for<br/>Endpoint Plan 2|
-|---|:---:|:---:|
-|**Vulnerability management**|||
-|&nbsp;&nbsp;Microsoft secure score|✔|✔|
-|&nbsp;&nbsp;Vulnerability management (visibility into software and vulnerabilities)|✔|✔|
-|&nbsp;&nbsp;Vulnerability remediation based on Intune integration|✔|✔|
-|&nbsp;&nbsp;Attack surface reduction|✔|✔|
-|&nbsp;&nbsp;Advanced vulnerability and zero-day exploit mitigations|✔|✔|
-|&nbsp;&nbsp;Attack surface reduction rules|✔|✔|
-|&nbsp;&nbsp;Application control|✔|✔|
-|&nbsp;&nbsp;Network firewall|✔|✔|
-|&nbsp;&nbsp;Device control (for example, USB)|✔|✔|
-|&nbsp;&nbsp;Network protection|✔|✔|
-|&nbsp;&nbsp;Device-based Conditional Access|✔|✔|
-|&nbsp;&nbsp;Web control / category-based URL blocking|✔|✔|
-|&nbsp;&nbsp;Ransomware mitigation|✔|✔|
-|**Next generation protection**|✔|✔|
-|&nbsp;&nbsp;Advanced cloud protection (deep inspection and detonation) BAFS|✔|✔|
-|&nbsp;&nbsp;Monitoring, analytics and reporting for Next Generation Protection capabilities|✔|✔|
-|**Endpoint detection and response**|||
-|&nbsp;&nbsp;Automatic attack disruption|✔|✔|
-|&nbsp;&nbsp;Behavioral-based detection (post-breach)|✔|✔|
-|&nbsp;&nbsp;Rich investigation tools||✔|
-|&nbsp;&nbsp;Custom detections||✔|
-|&nbsp;&nbsp;6-month searchable data per endpoint||✔|
-|&nbsp;&nbsp;Advanced hunting||✔|
-|&nbsp;&nbsp;Evaluation lab||✔|
-|&nbsp;&nbsp;Manual response actions (run AV scan, machine isolation, file stop and quarantine)|✔|✔|
-|&nbsp;&nbsp;Live response|✔|✔|
+The upgraded features in Defender for Endpoint Plan 2 vs. Defender for Business are described in LINK NEEDED
 
 The upgraded features in Defender for Office 365 Plan 2 vs. Plan 1 are described at [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
