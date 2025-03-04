@@ -49,7 +49,7 @@ Administrators should notify the site owners and end users before a site is arch
 
 ## Limitations
 
-Publishing sites and a handful of legacy site template types are not available to archive with Microsoft 365 Archive. Teams channel sites are available for Archive only via PowerShell.
+Publishing sites and a handful of legacy site template types are not available to archive with Microsoft 365 Archive. Teams channel sites are available for Archive only via PowerShell. 
 
 ## Related articles
 
