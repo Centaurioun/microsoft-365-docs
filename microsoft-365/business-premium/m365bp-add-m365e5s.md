@@ -44,7 +44,7 @@ Microsoft 365 E5 Security up levels your Microsoft 365 Business Premium security
 
 - Enhanced identity and access controls with [Microsoft Entra ID Plan 2](/entra/fundamentals/licensing), which adds advanced security and governance features with Microsoft Entra ID Protection and Microsoft Entra ID Governance.
 - Identity protection with [Microsoft Defender for Identity](/defender-for-identity/what-is), which is an identity threat detection and response (ITDR) solution that helps secure identity monitoring across your organization.
-- Device security with [Microsoft Defender for Endpoint Plan 2](/defender-endpoint/microsoft-defender-endpoint), which adds threat hunting, six months of data retention, and endpoint security for IoT devices.
+- Device security with [Microsoft Defender for Endpoint Plan 2](/defender-endpoint/microsoft-defender-endpoint), which adds threat hunting, live response, six months of data retention, and endpoint security for IoT devices.
 - Collaboration security with [Microsoft Defender for Office 365 Plan 2](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which adds automated investigation and response, attack simulation training, threat trackers, advanced hunting, incident and alert investigation, and threat explorer.
 - SaaS security with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps), which enables IT teams to identify and manage shadow IT and ensure that only approved applications are used.
 
