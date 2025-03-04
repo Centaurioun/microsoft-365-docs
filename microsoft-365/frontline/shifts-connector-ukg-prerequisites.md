@@ -109,6 +109,9 @@ Configure the connector's redirection URL. This allows UKG Pro WFM to redirect t
 1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value, "aka.ms".
 1. Select **Save**.
 
+>[!NOTE]
+> This article contains references to the term *whitelist*, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
+
 ### Create at least one team in Teams
 
 Create at least one team in Teams, and add the following people and account to it:
