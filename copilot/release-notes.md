@@ -31,22 +31,18 @@ This page lists the latest features and improvements for Microsoft 365 Copilot. 
 <!--- All features regardless of platform go here  -->
 ## March 4, 2025
 Updates released between February 19, 2025, and March 4, 2025. 
-### Microsoft 365 Copilot Chat
-- **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
-  Leverage Copilot Chat to search emails across both primary and archived mailboxes by appending 'from my archives' or 'also look for emails in my archives' in your prompts to quickly locate key messages.
-
-Leverage Copilot Chat to search emails across both primary and archived mailboxes by appending 'from my archives' or 'also look for emails in my archives' in your prompts to quickly locate key messages.
-
+### Microsoft 365 Copilot Chat
+- **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
+  Leverage Copilot Chat to search emails across both primary and archived mailboxes by appending 'from my archives' or 'also look for emails in my archives' in your prompts to quickly locate key messages.
 ### Copilot Studio
 - **Add enterprise data with new graph connections** [Web]  
-  Navigate a refreshed admin interface featuring Overview, Health, Discover, and Settings—delivering key metrics, insights, and controls to tailor Copilot to your organization’s needs.
+  Connect your organization’s data seamlessly using pre-configured graph connectors like Stack Overflow, and Salesforce Knowledge. Build smarter agents with semantic search—no custom solution required. <a href="/microsoftsearch/salesforce-knowledge-connector" target="_blank">Learn more.</a>
 ### Microsoft 365 Admin Center
 - **Enhanced Copilot admin page with comprehensive tools** [Web]  
-### Microsoft 365 App
+  Navigate a refreshed admin interface featuring Overview, Health, Discover, and Settings—delivering key metrics, insights, and controls to tailor Copilot to your organization’s needs.
 - **Simplify Copilot license assignment** [Web]  
   Use a data-driven license optimizer to identify users who gain the most value from Copilot. Streamline assignments in the admin center for efficient adoption across your organization.
 ### Microsoft 365 App
-
 - **View, edit and share Copilot Pages on mobile** [iOS]  
   Stay productive no matter where you are. With mobile access to Copilot Pages, you can view, edit, and share content on the go, ensuring seamless collaboration with colleagues. <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
 ### Microsoft 365 Copilot extensibility
@@ -738,18 +734,16 @@ Updates released between January 8, 2025, and January 23, 2025.
   Access chat while in Viewing mode to ask questions about the document's content without switching to Editing mode, improving your reading experience. <a href="https://support.microsoft.com/topic/4482c688-a495-4571-bfcd-4a9fc6608090" target="_blank">Learn more.</a>
 - **Use voice prompts for assistance** [Windows, Web, Mac]  
   Use voice to dictate into the Copilot chat prompt field
-
-<!--- All features that have 'Windows' tag  -->
+- **Visualize as table** [Web]  
+  Easily turn plain text or lists into clear, organized tables for better readability and effortless data handling. <a href="https://support.microsoft.com/topic/923d9763-f896-4da7-8a3f-5b12c3bfc475" target="_blank">Learn more.</a>
 
 ## [Windows](#tab/win)
-### Microsoft 365 Copilot Chat
-- **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]    
+
+<!--- All features that have 'Windows' tag  -->
 ## March 4, 2025
 Updates released between February 19, 2025, and March 4, 2025. 
 ### Microsoft 365 Copilot Chat
-
 - **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]    
-
   Leverage Copilot to search emails across both primary and archived mailboxes by appending 'from my archives' or 'also look for emails in my archives' in your prompts to quickly locate key messages.
 ### PowerPoint
 - **Add speaker notes to all slides with one command** [Windows]  
@@ -1162,39 +1156,29 @@ Updates released between January 8, 2025, and January 23, 2025.
   Ask specific questions about your document or request additional details to enhance your content, making your writing process more efficient. <a href="https://support.microsoft.com/topic/4482c688-a495-4571-bfcd-4a9fc6608090" target="_blank">Learn more.</a>
 - **Rewrite with Copilot** [Windows, Web, iOS, Mac]  
   Get suggestions for how to rewrite any text in your document, enhancing clarity and effectiveness. <a href="https://support.microsoft.com/topic/923d9763-f896-4da7-8a3f-5b12c3bfc475" target="_blank">Learn more.</a>
+- **Summarize your document using chat prompts** [Windows, Web, Mac]  
+  Ask via chat to summarize your document, highlighting key points for quick understanding and review. <a href="https://support.microsoft.com/topic/4482c688-a495-4571-bfcd-4a9fc6608090" target="_blank">Learn more.</a>
 - **Use chat in Word's Viewing mode** [Windows, Mac]  
-## [Web](#tab/web)
+  Access chat while in Viewing mode to ask questions about the document's content without switching to Editing mode, improving your reading experience. <a href="https://support.microsoft.com/topic/4482c688-a495-4571-bfcd-4a9fc6608090" target="_blank">Learn more.</a>
+- **Use voice prompts for assistance** [Windows, Web, Mac]  
+  Use voice to dictate into the Copilot chat prompt field
 
-<!--- All features that have 'Web' tag  -->
-## March 4, 2025
-Updates released between February 19, 2025, and March 4, 2025. 
-### Microsoft 365 Copilot Chat
-- **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
-  Leverage Copilot to search emails across both primary and archived mailboxes by appending 'from my archives' or 'also look for emails in my archives' in your prompts to quickly locate key messages.
-### Copilot Studio
-- **Add enterprise data with new graph connections** [Web]  
-  Connect your organization’s data seamlessly using pre-configured graph connectors like Stack Overflow, and Salesforce Knowledge. Build smarter agents with semantic search—no custom solution required. <a href="/microsoftsearch/salesforce-knowledge-connector" target="_blank">Learn more.</a>
-### Microsoft 365 Admin Center
-- **Enhanced Copilot admin page with comprehensive tools** [Web]  
-  Navigate a refreshed admin interface featuring Overview, Health, Discover, and Settings—delivering key metrics, insights, and controls to tailor Copilot to your organization’s needs.
-- **Simplify Copilot license assignment** [Web]  
-  Use a data-driven license optimizer to identify users who gain the most value from Copilot. Streamline assignments in the admin center for efficient adoption across your organization.
+## [Web](#tab/web)
+
+<!--- All features that have 'Web' tag  -->
+## March 4, 2025
+Updates released between February 19, 2025, and March 4, 2025. 
+### Microsoft 365 Copilot Chat
+- **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
+  Leverage Copilot to search emails across both primary and archived mailboxes by appending 'from my archives' or 'also look for emails in my archives' in your prompts to quickly locate key messages.
 ### Copilot Studio
-
 - **Add enterprise data with new graph connections** [Web]  
-
-  Connect your organization’s data seamlessly using pre-configured graph connectors like Stack Overflow, and Salesforce Knowledge. Build smarter agents with semantic search—no custom solution required. <a href="https://learn.microsoft.com/microsoftsearch/salesforce-knowledge-connector" target="_blank">Learn more.</a>
-
+  Connect your organization’s data seamlessly using pre-configured graph connectors like Stack Overflow, and Salesforce Knowledge. Build smarter agents with semantic search—no custom solution required. <a href="/microsoftsearch/salesforce-knowledge-connector" target="_blank">Learn more.</a>
 ### Microsoft 365 Admin Center
-
 - **Enhanced Copilot admin page with comprehensive tools** [Web]  
-
   Navigate a refreshed admin interface featuring Overview, Health, Discover, and Settings—delivering key metrics, insights, and controls to tailor Copilot to your organization’s needs.
-
 - **Simplify Copilot license assignment** [Web]  
-
   Use a data-driven license optimizer to identify users who gain the most value from Copilot. Streamline assignments in the admin center for efficient adoption across your organization.
-
 ### PowerPoint
 - **Narrative builder creates slides with tables** [Windows, Web, Mac]  
   Convert grounded content from Word documents into dynamic slides with tables. Enhance your presentations with structured, data-driven visuals effortlessly.
@@ -1657,8 +1641,8 @@ Updates released between January 8, 2025, and January 23, 2025.
   Generate presentations that utilize your company's templates, ensuring consistency and alignment with your brand. <a href="https://support.microsoft.com/topic/3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
 - **Edit your presentation in Copilot chat** [Windows, Web, iOS, Mac]  
   Add slides, add animations, or organize your presentation in Copilot chat, streamlining your editing process. <a href="https://support.microsoft.com/topic/ae906e57-db71-4f46-8ed5-c1e2cebe6a80" target="_blank">Learn more.</a>
-- **Draft with Copilot** [Windows, Web, iOS, Mac]  
-  Draft new content for your blank or existing documents, helping you write faster and with ease. <a href="https://support.microsoft.com/topic/069c91f0-9e42-4c9a-bbce-fddf5d581541" target="_blank">Learn more.</a>
+- **Get answers about your presentation** [Windows, Web, iOS, Mac]  
+  Ask questions about your existing PowerPoint presentation to quickly retrieve information and insights.
 - **Organize your presentation's flow easily** [Windows, Web, iOS, Mac]  
   Structure your slides, add sections, and insert an agenda slide to improve the overall flow of your presentation. <a href="https://support.microsoft.com/topic/a207eea3-7a56-4225-88f1-54dd37cdcf6a" target="_blank">Learn more.</a>
 - **Summarize your presentation and identify key points** [Windows, Web, iOS, Mac]  
@@ -1673,8 +1657,8 @@ Updates released between January 8, 2025, and January 23, 2025.
 ### Word
 - **Apply highest sensitivity label to generated content** [Windows, Web, iOS, Mac]  
   Ensure your documents maintain appropriate confidentiality levels as labels are automatically updated when referencing files with higher sensitivity.
-### Microsoft 365 Copilot Chat
-- **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
+- **Draft with Copilot** [Windows, Web, iOS, Mac]  
+  Draft new content for your blank or existing documents, helping you write faster and with ease. <a href="https://support.microsoft.com/topic/069c91f0-9e42-4c9a-bbce-fddf5d581541" target="_blank">Learn more.</a>
 - **Get answers and enhance content with chat in Word** [Windows, Web, Mac]  
   Ask specific questions about your document or request additional details to enhance your content, making your writing process more efficient. <a href="https://support.microsoft.com/topic/4482c688-a495-4571-bfcd-4a9fc6608090" target="_blank">Learn more.</a>
 - **Rewrite with Copilot** [Windows, Web, iOS, Mac]  
@@ -1690,9 +1674,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 ## March 4, 2025
 Updates released between February 19, 2025, and March 4, 2025. 
 ### Microsoft 365 Copilot Chat
-
 - **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]  
-
   Leverage Copilot to search emails across both primary and archived mailboxes by appending 'from my archives' or 'also look for emails in my archives' in your prompts to quickly locate key messages.
 ## February 19, 2025
 Updates released between February 5, 2025, and February 19, 2025. 
@@ -1799,10 +1781,10 @@ Updates released between January 8, 2025, and January 23, 2025.
 ### Microsoft Teams
 - **Copilot understands previous conversations in chats and channels** [Windows, Android, iOS, Mac]  
   When you ask follow-up questions in chats or channels, Copilot now has context from past interactions to provide more accurate answers.
-### Outlook
-- **Compose emails effortlessly on Outlook for Android and iOS** [Android, iOS]  
+## March, 2024
+### Microsoft 365 Copilot Chat
 - **Rich entity representations in Copilot responses** [Windows, Web, Android, iOS, Mac]  
-- **Get Coaching from Copilot for an email draft in new Outlook** [Web, Android, iOS, Mac]  
+  Copilot now provides richer representations of entities like people, events, and files within responses, enhancing context and usability.
 ### Microsoft Teams
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
   You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
@@ -1817,10 +1799,10 @@ Updates released between January 8, 2025, and January 23, 2025.
   Copilot helps you catch up on conversations by providing summaries and answering questions in Teams chats.
 - **Use Copilot in meetings, 1:1 and group calls** [Windows, Web, Android, iOS, Mac]  
   Get summaries, action items, and more after meetings and calls through Copilot in the side panel.
-### Microsoft 365 Copilot Chat
-- **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]    
+### Outlook
+- **Compose emails effortlessly on Outlook for Android and iOS** [Android, iOS]  
   Provide a prompt and generate a full email. Customize the tone and length to suit your needs, streamlining your email writing process. <a href="https://support.microsoft.com/topic/3eb1d053-89b8-491c-8a6e-746015238d9b" target="_blank">Learn more.</a>
-### Microsoft 365 App
+- **Get Coaching from Copilot for an email draft in new Outlook** [Web, Android, iOS, Mac]  
   Copilot combines AI with your Outlook data to help you craft better emails, offering suggestions on tone and message effectiveness. <a href="https://support.microsoft.com/topic/3eb1d053-89b8-491c-8a6e-746015238d9b" target="_blank">Learn more.</a>
 - **Summarize email conversations on Outlook for Android and iOS** [Android, iOS]  
   Quickly get summaries of entire email threads, helping you catch up on conversations efficiently. <a href="https://support.microsoft.com/topic/a79873f2-396b-46dc-b852-7fe5947ab640" target="_blank">Learn more.</a>
@@ -1836,12 +1818,9 @@ Updates released between January 8, 2025, and January 23, 2025.
 ## March 4, 2025
 Updates released between February 19, 2025, and March 4, 2025. 
 ### Microsoft 365 Copilot Chat
-
 - **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]    
-
   Leverage Copilot to search emails across both primary and archived mailboxes by appending 'from my archives' or 'also look for emails in my archives' in your prompts to quickly locate key messages.
 ### Microsoft 365 App
-
 - **View, edit and share Copilot Pages on mobile** [iOS]  
   Stay productive no matter where you are. With mobile access to Copilot Pages, you can view, edit, and share content on the go, ensuring seamless collaboration with colleagues. <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
 ## February 19, 2025
@@ -2063,13 +2042,13 @@ Updates released between January 8, 2025, and January 23, 2025.
 - **Use Copilot in meetings, 1:1 and group calls** [Windows, Web, Android, iOS, Mac]  
   Get summaries, action items, and more after meetings and calls through Copilot in the side panel.
 ### Outlook
-- **Summarize your presentation and identify key points** [Windows, Web, iOS, Mac]  
-  Generate summaries, highlight key slides, and identify action items from your presentation, making it easier to review and share essential information. <a href="https://support.microsoft.com/topic/499e604c-4ab9-4f6a-9dbe-691cc87f2f69" target="_blank">Learn more.</a>
+- **Compose emails effortlessly on Outlook for Android and iOS** [Android, iOS]  
+  Provide a prompt and generate a full email. Customize the tone and length to suit your needs, streamlining your email writing process. <a href="https://support.microsoft.com/topic/3eb1d053-89b8-491c-8a6e-746015238d9b" target="_blank">Learn more.</a>
 - **Get Coaching from Copilot for an email draft in new Outlook** [Web, Android, iOS, Mac]  
   Copilot combines AI with your Outlook data to help you craft better emails, offering suggestions on tone and message effectiveness. <a href="https://support.microsoft.com/topic/3eb1d053-89b8-491c-8a6e-746015238d9b" target="_blank">Learn more.</a>
 - **Summarize email conversations on Outlook for Android and iOS** [Android, iOS]  
-- **Organize your ideas into themes** [Windows, Web, Android, iOS]  
-  Categorize and group your ideas into themes, helping you visualize and structure your brainstorming sessions.
+  Quickly get summaries of entire email threads, helping you catch up on conversations efficiently. <a href="https://support.microsoft.com/topic/a79873f2-396b-46dc-b852-7fe5947ab640" target="_blank">Learn more.</a>
+### PowerPoint
 - **Automatically add an agenda slide to your presentation** [Windows, Web, iOS, Mac]  
   Generate and insert an agenda slide based on your existing content, helping you prepare your audience for what's ahead.
 - **Convert Word documents into presentations** [Windows, iOS, Mac]  
@@ -2084,13 +2063,13 @@ Updates released between January 8, 2025, and January 23, 2025.
   Ask questions about your existing PowerPoint presentation to quickly retrieve information and insights.
 - **Organize your presentation's flow easily** [Windows, Web, iOS, Mac]  
   Structure your slides, add sections, and insert an agenda slide to improve the overall flow of your presentation. <a href="https://support.microsoft.com/topic/a207eea3-7a56-4225-88f1-54dd37cdcf6a" target="_blank">Learn more.</a>
-### Microsoft 365 Copilot Chat
-- **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]    
+- **Summarize your presentation and identify key points** [Windows, Web, iOS, Mac]  
+  Generate summaries, highlight key slides, and identify action items from your presentation, making it easier to review and share essential information. <a href="https://support.microsoft.com/topic/499e604c-4ab9-4f6a-9dbe-691cc87f2f69" target="_blank">Learn more.</a>
 ### Whiteboard
 - **Generate ideas effortlessly** [Windows, Web, Android, iOS]  
   Brainstorm by generating short text ideas, fueling your creativity during collaborative sessions.
-  Convert grounded content from Word documents into dynamic slides with tables. Enhance your presentations with structured, data-driven visuals effortlessly.
-## February 19, 2025
+- **Organize your ideas into themes** [Windows, Web, Android, iOS]  
+  Categorize and group your ideas into themes, helping you visualize and structure your brainstorming sessions.
 - **Summarize your Whiteboard sessions** [Windows, Web, Android, iOS]  
   Create summaries of your Whiteboard content, capturing key points from your collaborative work.
 ### Word
@@ -2106,16 +2085,12 @@ Updates released between January 8, 2025, and January 23, 2025.
 ## March 4, 2025
 Updates released between February 19, 2025, and March 4, 2025. 
 ### Microsoft 365 Copilot Chat
-
 - **Search archived mailboxes in Copilot Chat** [Windows, Web, Android, iOS, Mac]    
-
   Leverage Copilot to search emails across both primary and archived mailboxes by appending 'from my archives' or 'also look for emails in my archives' in your prompts to quickly locate key messages.
 ### PowerPoint
 - **Narrative builder creates slides with tables** [Windows, Web, Mac]  
   Convert grounded content from Word documents into dynamic slides with tables. Enhance your presentations with structured, data-driven visuals effortlessly.
-
 ## February 19, 2025
-
 Updates released between February 5, 2025, and February 19, 2025. 
 <!--- All features that have 'Mac' tag  -->
 ### Microsoft Teams
