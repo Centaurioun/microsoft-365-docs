@@ -50,7 +50,7 @@ Microsoft 365 E5 Security up levels your Microsoft 365 Business Premium security
 
 ### Comparison of upgraded features in Microsoft 365 E5 Security
 
-The upgraded features in Defender for Endpoint Plan 2 vs. Defender for Business are described in LINK NEEDED
+The upgraded features in Defender for Endpoint Plan 2 vs. Defender for Business are described in [What are the differences between Defender for Business and Defender for Endpoint Plan 2?](/defender-business/mdb-faq#what-are-the-differences-between-defender-for-business-and-defender-for-endpoint-plans-1-and-2).
 
 The upgraded features in Defender for Office 365 Plan 2 vs. Plan 1 are described at [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](/defender-office-365/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
