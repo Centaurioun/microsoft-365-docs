@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires, kkameth
-ms.date: 03/01/2025
+ms.date: 03/04/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -32,7 +32,7 @@ The following tables describe each meter, its pricing, and how it measures usage
 
 |Service|What's counted?|What's billed? (USD)|
 |:----|:--------------|:-------------|
-|**[Autofill columns](autofill-overview.md)** |The number of pages processed. Each processed page counts as one transaction. Cost is the same for one or more prompts per page. |$0.005/transaction |
+|**[Autofill columns](autofill-overview.md)** |The number of pages processed for Word, PDF, or TIFF files; the number of sheets for Excel files; the number of slides for PowerPoint files; or the number of files for other file types. Each of these counts as one transaction. Cost is the same for one or more prompts per page. |$0.005/transaction |
 |**[Content assembly](content-assembly.md)** |The number of documents (Word or PDF) created using Syntex templates. Each processed document counts as one transaction.<br><br>If you have an existing Syntex per-user license, you won't be charged for generating documents manually but will be charged for automated document generation using Power Automate. |$0.15/transaction |
 |**[Document translation](translation-overview.md)** |The number of characters processed. Character count includes letters, Unicode code points, punctuation, and white spaces. |$15.00/1M characters |
 |**[eSignature](esignature-overview.md)** |The number of electronic signature requests created. Up to 10 recipients can be included in each request. |$2.00/request |
