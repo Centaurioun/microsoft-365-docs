@@ -34,13 +34,13 @@ As you probably already know, [Microsoft 365 Business Premium](m365bp-overview.m
 - Protection for email and files with [Microsoft Defender for Office 365 Plan 1](/defender-office-365/mdo-about#defender-for-office-365-plan-1-capabilities)
 - [Microsoft Purview Information Protection](/azure/information-protection/what-is-information-protection) and [data loss prevention (DLP)](/purview/dlp-learn-about-dlp) for email and files with Microsoft Purview.
 
-## Extend your security capabilities with Microsoft 365 E5 Security
+## Extend your current security capabilities with Microsoft 365 E5 Security
 
 You can now extend the security capabilities you have in Microsoft 365 Business Premium by adding Microsoft 365 E5 Security to your subscription. Adding Microsoft 365 E5 Security to Microsoft 365 Business Premium provides your business with even more protection in a cost-effective solution. 
 
 **See the [Tech Community Blog: Microsoft 365 E5 Security is now available as an add-on to Microsoft 365 Business Premium](https://aka.ms/BusinessPremiumPlusE5SecurityBlog).**
 
-### Get a quick overview of Microsoft 365 E5 Security
+### Microsoft 365 E5 Security at a glance
 
 :::image type="content" source="media/m365e5s-components.png" alt-text="Diagram that shows the components of Microsoft 365 E5 Security.":::
 
