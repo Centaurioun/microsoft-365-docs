@@ -40,7 +40,7 @@ You can now extend the security capabilities you have in Microsoft 365 Business 
 
 **See the [Tech Community Blog: Microsoft 365 E5 Security is now available as an add-on to Microsoft 365 Business Premium](https://aka.ms/BusinessPremiumPlusE5SecurityBlog).**
 
-### Microsoft 365 E5 Security at a glance
+### Get a quick overview of Microsoft 365 E5 Security
 
 :::image type="content" source="media/m365e5s-components.png" alt-text="Diagram that shows the components of Microsoft 365 E5 Security.":::
 
