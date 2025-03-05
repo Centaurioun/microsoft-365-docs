@@ -65,7 +65,7 @@ All data within Microsoft 365 Backup is stored within the customer tenant for an
 
 ## Security
 
-Microsoft 365 Backup works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such as identity and app management—apply to Microsoft 365 Backup. The bring-your-own-key (BYOK) feature seamlessly integrates with Microsoft 365 Backup to enhance data security. Bring your own key (BYOK) seamlessly integrates with Microsoft 365 Backup.
+Microsoft 365 Backup works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such as identity and app management—apply to Microsoft 365 Backup. The bring-your-own-key (BYOK) feature seamlessly integrates with Microsoft 365 Backup to enhance data security.
 
 ## Compliance
 
