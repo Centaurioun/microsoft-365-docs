@@ -41,7 +41,7 @@ Users using multiple account access to Copilot on work and school documents also
 > - The following table shows the Copilot capabilities available to your users when multiple account access to Copilot is enabled.
 > - As noted at the top of this article, multiple account access to Copilot is currently disabled for all organizations for all work and school documents.
 > - When multiple account access to Copilot is disabled, if your user only has access to Copilot through an account outside of your organization, such as from a personal Microsoft 365 subscription, they can’t use Copilot on work or school documents.
-> - Multiple account access to Copilot is always disabled for Microsoft 365 GCC (Government Community Cloud) customers.
+> - Multiple account access to Copilot is always disabled for the following customers: Microsoft 365 GCC (Government Community Cloud), Microsoft 365 GCC High, Microsoft 365 DoD, and Microsoft 365 operated by 21Vianet.
 
 
 | Copilot capability                                                                          | When multiple account access to Copilot is enabled | When the user has been assigned an internal Microsoft 365 Copilot license |
