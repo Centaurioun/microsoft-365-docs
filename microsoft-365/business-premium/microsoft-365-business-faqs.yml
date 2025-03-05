@@ -50,7 +50,9 @@ sections:
         answer: |
           Microsoft Defender for Business does not support mixed licensing, so a tenant with Defender for Business (which is included in Microsoft 365 Business Premium) along with Defender for Endpoint Plan 2 (which is included in Microsoft 365 E5 Security) defaults to the Defender for Business experience. 
           
-          For example, if you have 80 users licensed for Microsoft 365 Business Premium, and you've added Microsoft 365 E5 Security for 30 of those users, the experience for all users defaults to Defender for Business. If you want to change that to the Defender for Endpoint Plan 2 experience, you should license all users for Defender for Endpoint Plan 2 (either through the standalone version of Defender for Endpoint Plan 2 or Microsoft 365 E5 Security), and then contact Microsoft Support to request the switch for your tenant. (Also see [Can I have a mix of Microsoft endpoint security subscriptions?](/defender-business/mdb-faq#can-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).) 
+          For example, if you have 80 users licensed for Microsoft 365 Business Premium, and you've added Microsoft 365 E5 Security for 30 of those users, the experience for all users defaults to Defender for Business. If you want to change that to the Defender for Endpoint Plan 2 experience, you should license all users for Defender for Endpoint Plan 2 (either through the standalone version of Defender for Endpoint Plan 2 or Microsoft 365 E5 Security), and then contact Microsoft Support to request the switch for your tenant. 
+
+          Also see [Change your endpoint security subscription](/defender-business/mdb-manage-subscription). 
 
       - question: Is everyone in my business required to have a Microsoft 365 Business Premium subscription?
         answer: |
