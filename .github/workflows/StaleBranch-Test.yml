@@ -43,7 +43,7 @@ jobs:
                 $AllowDataLoss = $False # This flag must be set to $True to allow branches with commits not in default branch to be deleted.
                 # !!! > 0 WILL RESULT IN DATA LOSS !!!
 
-                $MaxDaysBehind = 30
+                $MaxDaysBehind = 90
                 $DateLimit = (Get-Date).AddDays(-$MaxDaysBehind)
 
                 # Create github HTTP authentication header
@@ -123,7 +123,7 @@ jobs:
                             Write-Host "      Delete branch $BranchName"
 
                             $BranchDeleteUrl = $RepoData.url + "/git/refs/heads/$BranchName"
-                            #Invoke-RestMethod -Headers $GitHubHeaders -Uri $BranchDeleteUrl -Method DELETE -ResponseHeadersVariable ResponseHeaders | Out-Null
+                            Invoke-RestMethod -Headers $GitHubHeaders -Uri $BranchDeleteUrl -Method DELETE -ResponseHeadersVariable ResponseHeaders | Out-Null
 
                             $ReportBranchList += "$BranchName deleted. Branch protected: $ProtectedBranch. Ahead by: $AheadBy. Behind by $BehindBy. Days since last commit: $($($(Get-Date) - $LastCommitDate).Days). "
 
