@@ -2,10 +2,10 @@
 title: "What's new in the Microsoft 365 admin center?"
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekuako
+ms.author: camillepack
+author: camillepack
 manager: scotv
-ms.date: 02/05/2024
+ms.date: 03/04/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
