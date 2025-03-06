@@ -1,5 +1,5 @@
 ---
-ms.date: 10/16/2024
+ms.date: 03/06/2025
 title: "Summary of governance, lifecycle, and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
@@ -58,7 +58,8 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 |Legal Hold  |**Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).|**Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).|
 |***Microsoft 365 retention and deletion***|---|---|
 |Retention policies  |**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management are enforced for all .loop files.|**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all .loop files or alternatively can be configured per Loop workspace *.|
-|Retention labels  |**[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels.| **[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels. <br><br> **Not Yet Available**: <br> Records management isn't yet available to view or apply on a Loop component or page.|
+|Retention labels  |**[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels.| **[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels. <br><br> **Not Yet Available**: <br>Retention labels cannot be viewed or applied directly from a Loop component outside the Loop app, the user must navigate to the Loop component within the Loop app itself to view or apply a retention label on a Loop component or page. In addition, manually applying a record lock or regulatory record lock is not yet available.
+|
 |***Information Protection***|---|---|
 |Sensitivity labels  |**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components.|**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components, and admin configurable for individual Loop workspaces via PowerShell and rolling out in the Loop app for end users.|
 |Data Loss Prevention  |**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|
@@ -92,7 +93,8 @@ The following sections detail capabilities that are **not yet available** for Mi
 
 ### Microsoft 365 retention and deletion capabilities not available
 
-- Retention labels can be applied to Loop components and pages by opening them in a browser tab on loop.cloud.microsoft. However, using records management (such as a record or regulatory record) isn't yet available to view or apply on a component or page.
+- Retention labels cannot be viewed or applied directly from a Loop component outside the Loop app, the user must navigate to the Loop component within the Loop app itself to view or apply a retention label on a Loop component or page
+- Manually applying a record lock or regulatory record lock is not yet available.
 - For clarification only, not a limitation: retention labels have never been applied to containers like SharePoint sites or Loop workspaces; instead, use retention policies for these containers. See [retention](/purview/retention) to learn more.
 
 ## Managing Loop in your organization
