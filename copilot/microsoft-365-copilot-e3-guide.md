@@ -151,6 +151,8 @@ To learn more, see:
 
 #### 2. Enable and configure sensitivity labels for containers
 
+You can apply sensitivity labels to containers, like Microsoft Teams or SharePoint sites, and Microsoft Loop workspaces. Items in a container don't inherit the sensitivity label.
+
 [!INCLUDE [copilot-e5-e3-enable-sensitivity-labels-containers](./includes/copilot-e5-e3-enable-sensitivity-labels-containers.md)]
 
 #### 3. Publish your labels and educate your users

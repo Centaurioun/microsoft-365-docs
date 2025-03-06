@@ -6,14 +6,14 @@ ms.reviewer: cabailey
 ms.service: microsoft-365-copilot
 ms.topic: include
 description: Enable and configure sensitivity labels for containers that affect Microsoft 365 Copilot.
-ms.date: 03/05/2025
+ms.date: 03/06/2025
 ---
 
-The default sensitivity labels don't include settings for groups and sites, which let you apply a sensitivity label to a SharePoint or Teams site, or Microsoft Loop workspace. Items in the container don't inherit the sensitivity label. Instead, the label settings can restrict access to the container. This restriction provides an extra layer of security when you use Copilot. If a user can't access the site or workspace, Copilot can't access it on behalf of that user.
+Instead, the label settings can restrict access to the container. This restriction provides an extra layer of security when you use Copilot. If a user can't access the site or workspace, Copilot can't access it on behalf of that user.
 
 For example, you can set the privacy setting to **Private**, which restricts site access to only approved members in your organization. When the label is applied to the site, it replaces any previous setting and locks the site for as long as the label is applied. This feature is a more secure setting than letting anybody access the site and allowing users to change the setting. When only approved members can access the data, it helps prevent oversharing of data that Copilot might access.
 
-To configure any label settings for groups and sites, you must enable this capability for your tenant and then synchronize your labels. This configuration is a one-time configuration. To learn more, see [How to enable sensitivity labels for containers and synchronize labels](/purview/sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
+To configure any label settings for groups and sites, you must enable this feature in your tenant and then synchronize your labels. This configuration is a one-time configuration and uses PowerShell. To learn more, see [How to enable sensitivity labels for containers and synchronize labels](/purview/sensitivity-labels-teams-groups-sites#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
 
 You can then edit your sensitivity labels, or create new sensitivity labels specifically for groups and sites:
 
