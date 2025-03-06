@@ -73,3 +73,7 @@ Yes, you can directly delete an archived site without the need to reactivate.
 #### Can archived content in legal hold be deleted?
 
 Content under legal hold can't be deleted. If the legal hold is removed or the retention policy has expired, the content can be deleted.
+
+#### Does archiving a Teams-connected site also archive the Team?
+
+M365 Archive and Teams archive are two independent features.  Archiving a team does not automatically archive the corresponding site.  Likewise, archiving a Teams-connected site does not automatically archive the associated team.  Admins have to archive both the team and the site independently. 
