@@ -42,6 +42,13 @@ To set up pay-as-you-go, you must have the following prerequisites:
 1. Select the Azure subscription, resource group, and region for the pay-as-you-go setup.
 1. Enable consumption-based billing for the desired Copilot scenarios.
 
+### What if pay-as-you-go is already set up in the Power Platform admin center?
+
+If you already set up pay-as-you-go in the Power Platform admin center, the two setups can coexist. You can also create another setup in the Microsoft 365 admin center without being double billed. The billing system ensures that you're only billed once for your user's usage, regardless of the setup location.
+
+> [!NOTE]
+> Although the setups can coexist, it's recommended to turn off pay-as-you-go in the Power Platform admin center before enabling it in the Microsoft 365 admin center.
+
 ## Managing pay-as-you-go billing
 
 As an admin, you can do the following to manage pay-as-you-billing for your organization:
@@ -49,6 +56,9 @@ As an admin, you can do the following to manage pay-as-you-billing for your orga
 - **View usage and costs** You can view detailed reports on Copilot usage and the associated costs.
 - **Edit billing** Modify an unhealthy Azure subscription, resource group, and billing region.
 - **Turn off billing** You can turn off pay-as-you-go billing for any of the Copilot services, removing the service from the agent's view. Once the service has been turned off, users without a Copilot license won’t be able to use the service.
+
+> [!NOTE]
+> When turning off pay-as-you-go, it may take up to two hours for users to stop being able to use the agents. Additionally, if the agent hasn't been used, it will no longer be accessible once pay-as-you-go is turned off.
 
 ## Next step
 
