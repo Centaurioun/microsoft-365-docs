@@ -93,7 +93,7 @@ Microsoft Graph includes information on users, their activities, and the organiz
 
 To learn more, see [Overview of Microsoft Graph](/graph/overview) and [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
-✅ **Semantic indexing**
+✅ **Semantic indexing for Microsoft 365 Copilot**
 
 Microsoft 365 Copilot enhances search relevance and accuracy by using advanced lexical and semantic understanding of Microsoft Graph data, resulting in more contextually precise information retrieval. Copilot preserves security, compliance, and privacy, ensuring organizational boundaries are respected while offering seamless user experience.
 
