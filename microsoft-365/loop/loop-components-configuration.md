@@ -1,5 +1,5 @@
 ---
-ms.date: 11/18/2024
+ms.date: 03/06/2025
 title: "Manage Loop components in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
