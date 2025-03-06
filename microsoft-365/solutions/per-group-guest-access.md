@@ -55,45 +55,13 @@ $params = @{
 	values = @(
 		@{
 			name = "AllowToAddGuests"
-			value = "false"
+			value = "$false"
 		}
 	)
 }
 
-New-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params
+Update-MgBetaGroupSetting -GroupId $groudID -BodyParameter $params -DirectorySettingId $templateId
 
-```
-
-To verify your settings, run this command:
-
-```PowerShell
-(Invoke-GraphRequest -Uri https://graph.microsoft.com/beta/Groups/$groupId/settings -Method GET) | ConvertTo-Json | ConvertFrom-Json | fl Value
-```
-
-The verification looks like this:
-
-![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
-
-If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing ```<GroupName>``` to the name of the group where you want to allow guest access.
-
-```PowerShell
-Connect-MgGraph
-
-$GroupName = "<GroupName>"
-$templateId = (Get-MgBetaDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}).Id
-$groupID = (Get-MgBetaGroup -Filter "DisplayName eq '$GroupName'").Id
-
-$params = @{
-	templateId = "$templateId"
-	values = @(
-		@{
-			name = "AllowToAddGuests"
-			value = "true"
-		}
-	)
-}
-
-New-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params
 ```
 
 ## Allow or block guest access based on their domain
