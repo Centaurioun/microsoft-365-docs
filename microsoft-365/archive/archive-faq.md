@@ -76,4 +76,4 @@ Content under legal hold can't be deleted. If the legal hold is removed or the r
 
 #### Does archiving a Teams-connected site also archive the Team?
 
-M365 Archive and Teams archive are two independent features.  Archiving a team does not automatically archive the corresponding site.  Likewise, archiving a Teams-connected site does not automatically archive the associated team.  Admins have to archive both the team and the site independently. 
+Microsoft 365 Archive and Microsoft Teams archive are two independent features. Archiving a team doesn't automatically archive the corresponding site. Likewise, archiving a Teams-connected site doesn't automatically archive the associated team. Admins have to archive both the team and the site independently. 
