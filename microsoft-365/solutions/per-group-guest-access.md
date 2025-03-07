@@ -60,8 +60,41 @@ $params = @{
 	)
 }
 
-Update-MgBetaGroupSetting -GroupId $groudID -BodyParameter $params -DirectorySettingId $templateId
+New-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params
 
+```
+
+To verify your settings, run this command:
+
+
+```PowerShell
+(Invoke-GraphRequest -Uri https://graph.microsoft.com/beta/Groups/$groupId/settings -Method GET).values.values
+```
+
+:::image type="content" source="../media/command-to-verify-settings.png" alt-text="Screenshot that shows the example of a PowerShell command run to verify the group settings." lightbox="../media/command-to-verify-settings.png":::
+
+If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing <GroupName> to the name of the group where you want to allow guest access.
+
+```PowerShell
+Connect-MgGraph
+
+$GroupName = "<GroupName>"
+$templateId = (Get-MgBetaDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}).Id
+$groupID = (Get-MgBetaGroup -Filter "DisplayName eq '$GroupName'").Id
+
+$params = @{
+	templateId = "$templateId"
+	values = @(
+		@{
+			name = "AllowToAddGuests"
+			value = "true"
+			value = $true
+		}
+	)
+}
+
+
+Update-MgBetaGroupSetting -GroupId $groudID -BodyParameter $params -DirectorySettingId $templateId
 ```
 
 ## Allow or block guest access based on their domain
@@ -74,7 +107,7 @@ For more information, see [Allow or block invitations to B2B users from specific
 
 By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list.
 
-Find the guest's ObjectID by running:
+Find the guest's ObjectID by running the following command:
 
 ```PowerShell
 Get-MgBetaUser -All | ?{$_.CreationType -eq "Invitation"}
