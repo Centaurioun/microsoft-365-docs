@@ -73,7 +73,7 @@ To verify your settings, run this command:
 
 :::image type="content" source="../media/command-to-verify-settings.png" alt-text="Screenshot that shows the example of a PowerShell command run to verify the group settings." lightbox="../media/command-to-verify-settings.png":::
 
-If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing <GroupName> to the name of the group where you want to allow guest access.
+If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing "GroupName" to the name of the group where you want to allow guest access.
 
 ```PowerShell
 Connect-MgGraph
