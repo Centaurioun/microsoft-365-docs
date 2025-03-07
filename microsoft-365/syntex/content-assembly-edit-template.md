@@ -1,5 +1,5 @@
 ---
-title: Edit a modern template in Microsoft Syntex
+title: Edit a modern template in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to edit a modern template in Microsoft Syntex.
+description: Learn how to edit a modern template in SharePoint.
 ---
 
-# Edit a modern template in Microsoft Syntex
+# Edit a modern template in SharePoint
 
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 
