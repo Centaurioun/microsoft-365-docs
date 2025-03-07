@@ -195,7 +195,7 @@ There are two primary forms of message creation that are enabled in this experie
 
 2. You can select **Save and close** at any point to save the message as a new draft.
 
-3. Once saved, you'll see your message at the top of the Manage table.
+3. Once saved, you can see your message at the top of the Manage table.
 
 4. To go back to making your message, select the draft message’s name to invoke the message details panel.
 
@@ -234,7 +234,7 @@ This advanced targeting in organizational messages can be enabled using the foll
 >
 > - For the same channel (such as Windows Spotlight), images provided by your team for the last created message will be automatically provided for your next message. However, you can override that image with a new image upload.
 > - Once you select ‘Send for approval’ at the end of a fully customized message creation flow, anyone in your tenant that has the Organizational Messages Approver Microsoft Entra role described previously will be able to review and approve/reject your message.
-> - If you save your draft before the ‘Schedule’ step and thus don't provide a custom message name, the Draft will have a programmatically generated name based on the date-time when you saved the draft. You can edit this message name by modifying the draft message.
+> - If you save your draft before the ‘Schedule’ step and thus don't provide a custom message name, the draft will have a programmatically generated name based on the date-time when you saved the draft. You can edit this message name by modifying the draft message.
 > - Not all selections in the ‘Objective’ step might have premade messages available. However, all objectives will have the “create your own’ format available for full customization authoring.
 
 ### Urgent delivery
@@ -305,7 +305,7 @@ For general availability, the advanced features in Organizational messages in Mi
 >[!NOTE]
 > If you recently onboarded your tenant to Microsoft Entra ID, it can take 36 to 64 hours before you're able to use the organizational messages features.
 
-There are certain policies that will block the delivery of organizational messages to your end users if not configured properly, such as using [Microsoft Intune](https://intune.microsoft.com). This section describes some ways to adjust all policy settings for your tenant so that delivery is allowed and works as intended.
+There are certain policies that block the delivery of organizational messages to your end users if not configured properly, such as using [Microsoft Intune](https://intune.microsoft.com). This section describes some ways to adjust all policy settings for your tenant so that delivery is allowed and works as intended.
 
 ### General Instructions
 
@@ -369,6 +369,9 @@ Further, Windows buffers messages on a set period for each of the channels. (In 
 Once your message has been actively delivering for over 24 hours, you can return to the 'Manage' experience to review the latest delivery data for your message.
 
 For urgent messages, after your message has been scheduled by the Organizational Messages platform (for example, after approval from your Organizational Messages approvers is acquired as needed), the platform will try to send the message as soon as possible. However, as noted above, this is a best-effort mechanism subject to various conditions, with no guaranteed delivery times.
+
+> [!NOTE]
+> For Windows spotlight messages, users who select a message on the Windows lock screen won't see it again for 12 months. Users who do not select the message may see it multiple times.
 
 ### My team has made other organizational messages within Intune, Adoption Score, Usage reports, and others. How do they work with this?
 
