@@ -247,7 +247,7 @@ The message creation experience for an urgent message is similar to the flow for
 - Only Microsoft Entra (formerly Azure Active Directory) group targeting can be used.
 - No Start/End dates nor frequency configurations are available as urgent messages are sent once as soon as possible.
 
-:::image type="content" source="../../media/OM-urgentMessages_annotated.png" alt-text="Screenshot that highlights the button to send an urgent message.":::
+:::image type="content" source="../../media/OM-urgentMessages_annotated.png" alt-text="Screenshot that highlights the button to send an urgent message." lightbox="../../media/OM-urgentMessages_annotated.png":::
 
 ## Review activity
 
