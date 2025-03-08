@@ -87,7 +87,6 @@ $params = @{
 	values = @(
 		@{
 			name = "AllowToAddGuests"
-			value = "true"
 			value = $true
 		}
 	)
