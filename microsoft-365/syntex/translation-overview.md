@@ -1,5 +1,5 @@
 ---
-title: Overview of document translation in Microsoft Syntex
+title: Overview of document translation in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,15 +14,15 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about the document translation service in Microsoft Syntex.
+description: Learn about the document translation service in SharePoint.
 ---
 
-# Overview of document translation in Microsoft Syntex
+# Overview of document translation in SharePoint
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of document translation and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of document translation and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
-Microsoft Syntex lets you easily create a translated copy of a selected file or a set of files in a SharePoint document library. You can translate a file in one language or up to 10 language at a time, while preserving the original format and structure of the file. Translation is available for all supported languages and dialects.
+Document translation lets you easily create a translated copy of a selected file or a set of files in a SharePoint document library. You can translate a file in one language or up to 10 language at a time, while preserving the original format and structure of the file. Translation is available for all supported languages and dialects.
 
 ![Screenshot showing a document library with translated documents.](../media/content-understanding/translation-sample-library.png)
 
