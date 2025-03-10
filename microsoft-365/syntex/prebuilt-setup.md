@@ -1,5 +1,5 @@
 ---
-title: Set up and manage prebuilt document processing for SharePoint
+title: Set up and manage prebuilt document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,9 +18,9 @@ ms.localizationpriority:  medium
 description: Learn how to set up and manage prebuilt document processing in SharePoint.
 ---
 
-# Set up and manage prebuilt document processing for SharePoint
+# Set up and manage prebuilt document processing in SharePoint
 
-The prebuilt document processing service for SharePoint is set up in the Microsoft 365 admin center.
+Prebuilt document processing is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
