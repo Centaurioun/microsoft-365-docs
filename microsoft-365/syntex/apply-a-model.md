@@ -46,7 +46,7 @@ You can apply a model to different places, including the model home page or from
     ![Select a site.](../media/content-understanding/site-search.png)
 
     > [!NOTE]
-    > You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to.
+    > You must have Manage Lists permissions or Edit rights to the document library you are applying the model to.
 
 3. After selecting the site, select the document library to which you want to apply the model. In the sample, select the *Documents* document library from the *Contoso Case Tracking* site.
 
