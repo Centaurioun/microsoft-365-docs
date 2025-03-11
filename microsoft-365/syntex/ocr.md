@@ -20,7 +20,7 @@ description: Learn how to set up and manage optical character recognition in Sha
 
 # Set up and manage optical character recognition in SharePoint
 
-The optical character recognition (OCR) service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+Optical character recognition (OCR) is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
