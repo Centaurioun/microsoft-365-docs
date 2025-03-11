@@ -97,10 +97,6 @@ The following sections detail capabilities that are **not yet available** for Mi
 - Retention labels that mark the content as a record or regulatory record can't be manually applied in the Loop app and if content is automatically labeled as a record, locking and unlocking this record is not yet available.
 - For clarification only, not a limitation: retention labels have never been applied to containers like SharePoint sites or Loop workspaces; instead, use retention policies for these containers. See [retention](/purview/retention) to learn more.
 
-
-Retention labels cannot be viewed or applied directly from a Loop component outside the Loop app. Instead, the user must navigate to the Loop component within the Loop app itself to view or apply a retention label on a Loop component or page. Retention labels that mark the content as a record or regulatory record can't be manually applied in the Loop app. If a retention label that marks the content as a record has been automatically applied, locking and unlocking this record in the Loop app is not yet available in the Loop app
-
-
 ## Managing Loop in your organization
 
 By reviewing this information, you can make an informed decision on whether Microsoft Loop is ready for use as a software solution in your organization. As always, we continue to update this and other documentation to provide the compliance status of Microsoft Loop to help you make the best decisions for your organization.
