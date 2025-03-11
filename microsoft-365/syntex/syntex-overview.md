@@ -26,7 +26,7 @@ description: Learn about the capabilities, services, and features in Microsoft S
 
 </br>--->
 
-Microsoft Syntex provides a powerful suite of pay-as-you-go content management and productivity services that leverage AI and machine learning to intelligently discover, analyze, organize, classify, and process your organization's documents. With pay-as-you-go licensing, your organization can use these services without any license commitment or upfront purchasing.
+Microsoft Syntex provides a powerful suite of pay-as-you-go content management and productivity services that harnesses AI and machine learning to intelligently discover, analyze, organize, classify, and process your organization's documents. With pay-as-you-go licensing, your organization can use these services without any license commitment or upfront purchasing.
 
 By automating content workflows and enhancing understanding, these services transform your business documents into actionable knowledge. This streamlines everyday processes, provides valuable insights, and empowers people in your organization to make informed decisions.
 
