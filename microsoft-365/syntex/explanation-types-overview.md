@@ -1,5 +1,5 @@
 ---
-title: Explanation types in Microsoft Syntex
+title: Explanation types for document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn more about phrase list, regular expression, and proximity explanation types in Microsoft Syntex.
+description: Learn more about phrase list, regular expression, and proximity explanation types for document processing in SharePoint.
 ---
 
-# Explanation types in Microsoft Syntex
+# Explanation types for document processing in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
