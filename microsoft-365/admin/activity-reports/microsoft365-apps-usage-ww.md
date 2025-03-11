@@ -41,8 +41,7 @@ For example, you can understand the activity of each user licensed to use Micros
 
 You can get a view into your user's Microsoft 365 Apps activity by looking at the **Users** and **Platform** charts.
 
-> [!div class="mx-imgBorder"]
-> ![Microsoft 365 Apps usage report.](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+:::image type="content" source="../../media/microsoft365-apps-usage-ww/microsoft-365-apps-usage-report.png" alt-text="Diagram that shows the Microsoft 365 Apps usage report in the Microsoft 365 admin center." lightbox="../../media/microsoft365-apps-usage-ww/microsoft-365-apps-usage-report.png":::
 
 The **Microsoft 365 Apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
 
@@ -125,7 +124,7 @@ The table shows you a breakdown of data at the per-user level. You can add or re
 | Activity on Teams (web) | Indicates if the user was active on Teams for web during the specified time period.|
 
 > [!NOTE]
-> **Outlook for Windows migration process** view, and the columns ‘Activity in classic Outlook’ and ‘Activity in new Outlook’ in table are only available in the **Public** environment.
+> **Outlook for Windows migration process** view, and the columns 'Activity in classic Outlook' and 'Activity in new Outlook' in table are only available in the **Public** environment.
 
 The other columns identify if the user was active on that platform for that app (within Microsoft 365 Apps) in the period selected.
 
