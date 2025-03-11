@@ -54,7 +54,7 @@ Update-MgUser -UserId $userUPN -PasswordProfile @{ ForceChangePasswordNextSignIn
 
 ## Bulk password updates
 
-You can update password in bulk using PowerShell. The script in this section uses the `Set-ADAccountPassword` and `Set-ADUser` cmdlets, which are part of the Active Directory PowerShell module. This module is installed by default on domain controllers but can also be installed on other computers that have the [Remote Server Administration Tools (RSAT)](/troubleshoot/windows-server/system-management-components/remote-server-administration-tools) installed.
+You can update passwords in bulk using PowerShell. The script in this section uses the `Set-ADAccountPassword` and `Set-ADUser` cmdlets, which are part of the Active Directory PowerShell module. This module is installed by default on domain controllers but can also be installed on other computers that have the [Remote Server Administration Tools (RSAT)](/troubleshoot/windows-server/system-management-components/remote-server-administration-tools) installed.
 
 First, create a CSV file with the list of users whose password you want to reset. The CSV file should have two columns: **Username** and **Password**. In the **Username** column, enter the usernames of the users whose passwords you want to reset. In the **Password** column, enter the new password for each user.
  
@@ -68,7 +68,7 @@ user2,pass2
  
 Once you have entered the usernames and passwords in the appropriate columns, you can save the file as a CSV file.
  
-Next, open PowerShell and run the following command:
+Next, open PowerShell and run the following commands:
 
 ```powershell
 Connect-AzureAD
@@ -81,7 +81,7 @@ Import-Csv -Path C:\Path\To\YourFile.csv | ForEach-Object {
 }
 ```
 
-This command will import the data from your CSV file, reset the password for each user in the list, and set the `ChangePasswordAtLogon` property to **$false** so that the users will not be prompted to create their own passwords when they log in.
+This script will import the data from your CSV file, reset the password for each user in the list, and set the `ChangePasswordAtLogon` property to **$false** so that the users will not be prompted to create their own passwords when they log in.
 
 ## See also
 
