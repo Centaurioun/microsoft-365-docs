@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to create an extractor for document processing in SharePoint.
 ---
 
-# CCreate an extractor for document processing in SharePoint
+# Create an extractor for document processing in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
