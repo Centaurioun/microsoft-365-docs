@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 03/11/2025
+ms.date: 03/12/2025
 ---
 
 # Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat
@@ -57,7 +57,7 @@ In addition to prompts and responses, web search queries (different from Microso
 
 - The Bing search service operates separately from Microsoft 365 and has different data-handling practices covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement). The means that Microsoft acts as an independent data controller responsible for complying with all applicable laws and controller obligations. This approach is consistent with other [optional connected experiences that rely on Bing](/microsoft-365-apps/privacy/optional-connected-experiences#experiences-that-rely-on-bing).  
 
-- [Learn more about data, privacy, and security of web queries in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](manage-public-web-access.md)
+- The [Product Teams](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) provide additional commitments about the web queries sent to the Bing search service. For more information, see [Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](manage-public-web-access.md)
 
 ## Agents in Microsoft 365 Copilot
 
