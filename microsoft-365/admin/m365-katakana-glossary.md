@@ -131,7 +131,7 @@ Educational texts and videos to use and manage Microsoft 365, provided by Micros
 
 In Microsoft 365, it is the state of being viewable or editable by all users within an organization. E.g., Public Group: A group that all users within the organization can join.
 
-## Feedback
+## Give Feedback
 
 ![Feedback](../media/katanaglossary/009_feedback_en.png)
 
