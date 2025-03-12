@@ -1,6 +1,6 @@
 ---
 title: Meters for Microsoft 365 Copilot Chat pay-as-you-go
-description: Learn about the meters for the pay-as-you-go service for Microsoft 365 Copilot Chat..
+description: Learn about the meters for the pay-as-you-go service for Microsoft 365 Copilot Chat.
 ms.author: camillepack
 author: camillepack
 manager: scotv
