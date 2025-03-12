@@ -57,17 +57,17 @@ To view the attached files from with in the Agreements teams app, follow these s
 
 3. With the agreement viewer panel now open, select **Attachments** in the upper right of the panel.
 
-<!--->  ![A screenshot of the agreement viewer page.](../../media/content-understanding/placeholder.png)--->
+   ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-attachments.png)
 
-5. From the **Attachments** panel click on the attachment you wish to view and it will load in the viewer.
+4. From the **Attachments** panel click on the attachment you want to view and it will load in the viewer.
 
-6. With the attachment file visible in the viewer you can return to the original agreement using the breadcrumb in the upper left, the *Return to agreement* button in the lower left or you can deselect the attachement from the attachments list.
+5. With the attachment file visible in the viewer you can return to the original agreement using the breadcrumb in the upper left, the **Return to agreement** button in the lower left, or you can clear the attachment from the attachments list.
 
-7. To open the attachment in the default client application, select the attachemnt from the list and click the vertical ellipsis next to the attachment name then select **Open**. For example if the attachment is a Microsoft Word document it will launch the Word client if installed.
+6. To open the attachment in the default client application, select the attachment from the list, select **More options** (***...***) next to the attachment name, and then select **Open**. For example, if the attachment is a Microsoft Word document it will launch the Word client if installed.
 
 ## Delete an attachment
 
-Attachments can be added to agreements in any state within the Agreements Teams app, however they can only be removed for agreements that are in draft state.
+Attachments can be added to agreements in any state within the Agreements Teams app. However, they can only be removed for agreements that are in draft state.
 
 To delete an existing attachment from an agrement, follow these steps:
 
