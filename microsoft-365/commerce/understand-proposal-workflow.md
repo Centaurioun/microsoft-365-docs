@@ -5,9 +5,9 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: demorr, jobailey
+ms.reviewer: drjones, jobailey
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
@@ -17,7 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- commerce_subscriptions
+- commerce_purchase
 - AdminSurgePortfolio
 - admindeeplinkMAC
 - GAUpdates
