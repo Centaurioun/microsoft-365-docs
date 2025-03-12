@@ -4,7 +4,7 @@ description: Learn about the meters for the pay-as-you-go service for Microsoft 
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 02/20/2025
+ms.date: 03/12/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
