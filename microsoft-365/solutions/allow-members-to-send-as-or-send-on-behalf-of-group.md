@@ -66,6 +66,45 @@ This section explains how to allow users to send email on behalf of a group in t
 5. Select **Permission Type** as **Send on behalf** from the drop-down.
 6. Select **Save changes**.
 
+## Send email as a group
+
+Once permissions are assigned, user can follow send email as groups email address by following these steps: 
+
+1. Compose new email.
+
+2. On the Options tab, in the Show Fields group, select **From**. 
+
+3. In the From box, type the name or email address of the group on whose user's behalf will be sending the message. 
+
+From Monarch/OWA: 
+
+1. Click on **New email**.
+   :::image type="content" source="../media/new-mail.png" alt-text="Screenshot of the New email option in Outlook.":::
+2. Click on the **Arrow** to pop-out the email.
+   :::image type="content" source="../media/open-in-new-window-email-outlook.png" alt-text="Screenshot of the Arrow that opens in new window in Outlook.":::
+3. Click on Options and select **Show From**.
+    :::image type="content" source="../media/show-from-options-in-outlook.png" alt-text="Screenshot of the Options tab in outlook.":::
+4. Click on the drop-down and select **Other email address…**.
+    :::image type="content" source="../media/other-email-addresses-in-outlook.png" alt-text="Screenshot of the other email addresses in outlook.":::
+5. Type the email address of the Microsoft 365 Group on which the user has been assigned **Send As** permission. 
+    :::image type="content" source="../media/send-as-group-email.png" alt-text="Screenshot of the From dropdown in outlook.":::
+6. Compose and send the email. 
+
+From classic Outlook: 
+
+1. Click **New email** 
+
+2. Click on **Options** and select **From** 
+   :::image type="content" source="../media/classic-outlook-options.png" alt-text="Screenshot of Options tab in classic Outlook.":::
+3. Select the From drop down and select **Other Email Address…** 
+   :::image type="content" source="../media/classic-outlook-from-dropdown.png" alt-text="Screenshot of the From dropdown in classic Outlook.":::
+4. Type in Microsoft 365 group’s email address and select **OK**.
+    :::image type="content" source="../media/classic-outlook-from-dialog-box.png" alt-text="Screenshot of the From dialog box in classic outlook.":::
+     >[!NOTE] 
+     >Ensure the user has been assigned **Send As** permission on the group 
+
+5. Compose and send.
+
 ## Related articles
 
 [Send email from or on behalf of a Microsoft 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
