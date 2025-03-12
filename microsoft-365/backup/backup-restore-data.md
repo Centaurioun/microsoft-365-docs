@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 02/19/2025
+ms.date: 03/11/2025
 ms.topic: how-to
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -144,7 +144,7 @@ Follow these steps to restore data backed up for SharePoint.
 > [!NOTE]
 > Items moved to the Deleted Items folder won't be restored by Microsoft 365 Backup. Mailbox users can recover these items themselves by moving them back to the Inbox from the Deleted Items folder. Only mailbox items that were changed, deleted to the Recoverable Items folder, or purged can be restored.
 >
-> See the [Considerations when using restore](#considerations-when-using-restore) section below for more details.
+> For more information, see the [Considerations when using restore](#considerations-when-using-restore) section later in this article.
 
 Microsoft 365 Backup restores deleted or modified mailbox items from the selected prior point in time. Items that remain unchanged in the primary mailbox are compared to that prior point in time, and new items since that prior point in time aren't restored, reverted, or overwritten. This is true whether an in-place or new-folder restore is conducted and is done to prevent excessive operations that might overload your mailbox and its associated storage allocation.
 
@@ -274,11 +274,11 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     - The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points start being generated when you create the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10 minutes for the entire year. For OneDrive and SharePoint, the available restore points are available for 10 minutes for up to 2 weeks prior, and weekly for 2 to 52 weeks prior. Based on the defined and currently invariable backup frequency setting previously described, the following example highlights what is possible.
     
-        - Megan, the Backup admin, creates a policy for the SharePoint site "HR Hub" on February 1, 2024, at 8:00 AM PST. At 10:00 AM PST, she has the option of rolling back the state of the site to any 10-minute period between 8:00 AM and 10:00 AM PST.
+        - Megan, the Backup admin, creates a policy for the SharePoint site "HR Hub" on February 1, 2024, at 8:00 AM PST. At 10:00 AM PST, Megan has the option of rolling back the state of the site to any 10-minute period between 8:00 AM and 10:00 AM PST.
     
-        - On April 1, 2024, she has the option to roll back the site to any 10-minute period in the prior 14 days (that is, any 10-minute period between March 18 and the current date-time). If she wants to choose an earlier prior point in time, she would need to choose March 15, 8, or 1, and so on, back through February 1, or up to 52 weeks if the policy was created at least 52 weeks in the past.
+        - On April 1, 2024, Megan has the option to roll back the site to any 10-minute period in the prior 14 days (that is, any 10-minute period between March 18 and the current date-time). If Megan wants to choose an earlier prior point in time, she would need to choose March 15, 8, or 1, and so on, back through February 1, or up to 52 weeks if the policy was created at least 52 weeks in the past.
     
-        - Megan then adds a user’s mailbox to the policy on February 1, 2024, at 11:00 AM PST. She has the option of restoring modified or deleted items from that user's mailbox to any 10-minute period during the entire retention period.
+        - Megan then adds a user’s mailbox to the policy on February 1, 2024, at 11:00 AM PST. Megan has the option of restoring modified or deleted items from that user's mailbox to any 10-minute period during the entire retention period.
     
     - Users whose Microsoft Entra ID has been deleted will be displayed as blank lines in the restore picker experience for OneDrive and Exchange Online since those users no longer exist in the environment. Rest assured, their historical backups still exist in the Backup tool, but some [special handling is needed to restore them](backup-faq.md#what-is-the-service-recovery-point-objective).
     
