@@ -43,8 +43,8 @@ To add an attachment, follow these steps:
 7. On the Agreements list page in the Agreements Teams app, agreements with attachments have an attachment icon with the attachment count displayed next to the file name.
 
 > [!NOTE]
-> The supported filetypes for attachments are Adobe .pdf, Microsoft Office files including Word, Excel and PowerPoint, and email files in Outlook or Gmail format. Attempting to add unsupported files results in an error.<br>
-> When you add a file to an attachment, only one instance of the same file can be attached. Duplicates generate a warning.<br>
+> The supported file types for attachments are Adobe .pdf, Microsoft Office files including Word, Excel and PowerPoint, and email files in Outlook or Gmail format. Attempting to add unsupported files results in an error.<br><br>
+> When you add a file to an attachment, only one instance of the same file can be attached. Duplicates generate a warning.<br><br>
 > Attachments added to an agreement have the same access permissions as the agreement to which they're attached.
 
 ## View or open an attachment
