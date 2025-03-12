@@ -32,7 +32,7 @@ Management and deployment via Integrated Apps require that the users are using M
 
 ### Office Requirements
 
-Deployment Integrated Apps is supported for Outlook, Excel, Word, and PowerPoint add-ins. They run across multiple platforms, including Windows, Mac, iPad, and in a browser. Outlook add-ins are also supported on mobile (iOS and Android).
+Deployment via Integrated Apps is supported for Outlook, Excel, Word, and PowerPoint add-ins. They run across multiple platforms, including Windows, Mac, iPad, and in a browser. Outlook add-ins are also supported on mobile (iOS and Android).
 
 For Word, Excel, and PowerPoint add-ins, Integrated Apps deployment is only supported on Windows, Mac, and the web (not iPad). Additionally, your users must meet these version requirements.
 
