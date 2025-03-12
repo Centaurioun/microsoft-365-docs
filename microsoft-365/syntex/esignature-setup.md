@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: amcdonnell
 ms.date: 01/13/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -22,7 +22,7 @@ description: Learn how to set up and manage sites in SharePoint eSignature.
 > [!NOTE]
 > SharePoint eSignature is available in selected regions. If a tenant's location is a supported region, SharePoint eSignature is available for that tenant. For multi-geo enabled tenants in supported regions, eSignature will be available in the home geo only. SharePoint eSignature rolls out to [other regions](esignature-overview.md#regional-availability) later this year.
 
-The SharePoint eSignature service is set up in the Microsoft 365 admin center. Before you begin, determine whether this feature is appropriate for your needs by reading the [Before you begin section](esignature-overview.md#before-you-begin).
+SharePoint eSignature is a pay-as-you-go service that is set up in the Microsoft 365 admin center. Before you begin, determine whether this feature is appropriate for your needs by reading the [Before you begin section](esignature-overview.md#before-you-begin).
 
 ## Prerequisites
 
