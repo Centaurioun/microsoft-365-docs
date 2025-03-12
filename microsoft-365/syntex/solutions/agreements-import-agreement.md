@@ -20,7 +20,7 @@ description: Learn how to import and organize your agreements in the SharePoint 
 
 # Organize and import your existing agreements in SharePoint Agreements
 
-SharePoint Agreements allows you to import your existing agreements effortlessly and gain immediate, valuable insights to help you stay on top of your contractual obligations. During the import process, important details about each agreement, such as the first party, second party, effective date, and expiry date, are automatically detected. This ensures that all relevant information is accurately captured and organized. Once your agreements are imported, you can immediately gain valuable insights into your contracts such as a clear breakdown of your agreements by category, the key players in your agreements, insights and reminders for agreements that are about to expire.
+SharePoint Agreements allows you to import your existing agreements effortlessly and gain immediate, valuable insights to help you stay on top of your contractual obligations. During the import process, important details about each agreement, such as the first party, second party, effective date, and expiry date, are automatically detected. This ensures that all relevant information is accurately captured and organized. Once your agreements are imported, you can immediately gain valuable insights into your contracts such as a clear breakdown of your agreements by category, the key players in your agreements, insights, and reminders for agreements that are about to expire.
 
 You can add existing agreements by uploading signed documents. Details about the agreements will be automatically detected after you save.
 
@@ -47,7 +47,7 @@ To import agreements, follow these steps:
 
    [![A screenshot of Agreements app showing the pending imports page with one file.](../../media/content-understanding/agreements-pendingImport.png)](../../media/content-understanding/agreements-pendingImport.png#lightbox)
 
-6. The **Pending imports** page will open and show you the list of all imported agreements that are pending your review.
+6. The **Pending imports** page opens and shows you the list of all imported agreements that are pending your review.
 
 7. There are three possible states for each pending import:
 
@@ -59,12 +59,12 @@ To import agreements, follow these steps:
 
 8. For files that are ready to confirm, you can either preview the file by clicking on the file, or select the file and confirm the values with the Confirm button on the action bar. You can confirm multiple files in the ready to confirm status at once.
 
-9. For files that are in *Action needed* status, click on the file to preview the file and provide values for mandatory fields. Once all mandatory fields have been set, you can confirm the file.
+9. For files that are in *Action needed* status, select the file to preview the file and provide values for mandatory fields. Once all mandatory fields are set, you can confirm the file.
 
    > [!NOTE]
    > The values in the fields can't be changed later.
 
-10. You can also delete files from the pending imports page. Deleting a file will remove it from the workspace.
+10. You can also delete files from the pending imports page. Deleting a file removes it from the workspace.
 
    > [!NOTE]
    > It might take a few hours for the new agreement to be indexed and show up in the list of agreements.
@@ -83,7 +83,7 @@ If you're importing a single file, you can review the detected details immediate
    > [!NOTE]
    > The values in the fields can't be changed later.
 
-2. Select **Save** to confirm the import. The imported agreement will be visible in the list of agreements.
+2. Select **Save** to confirm the import. The imported agreement is visible in the list of agreements.
 
    > [!NOTE]
    > It might take a few hours for the new agreement to be indexed and show up in the list of agreements.
