@@ -7,7 +7,7 @@ author: efrene
 manager: scotv
 ms.date: 05/11/2023
 audience: Admin
-ms.topic: install-set-up-deploy
+ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -52,7 +52,7 @@ For Outlook, your users must be using one of the following versions:
 
 ### Exchange Online Requirements
 
-Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying  /pre-installing add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication.
+Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying or pre-installing add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication.
 
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the *Test-OAuthConnectivity* PowerShell cmdlet.
 
