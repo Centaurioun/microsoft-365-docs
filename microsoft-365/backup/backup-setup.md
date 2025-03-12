@@ -22,6 +22,17 @@ Get started with Microsoft 365 Backup by following these four steps. Select the 
 <!---
 ![Diagram showing the three-step setup process for Microsoft 365 Backup.](../media/m365-backup/backup-setup-diagram.png)
 --->
+Test 1
+
+[:::image type="content" source="../media/m365-backup/backup-setup-number1.png" alt-text="Clickable image that says Create an Azure subscription.":::](#step-1-create-an-azure-subscription)
+
+[:::image type="content" source="../media/m365-backup/backup-setup-number2.png" alt-text="Clickable image that says Set up pay-as-you-go billing.":::](#step-2-set-up-pay-as-you-go-billing)
+
+[:::image type="content" source="../media/m365-backup/backup-setup-number3.png" alt-text="Clickable image that says Turn on Microsoft 365 Backup.":::](#step-3-turn-on-microsoft-365-backup)
+
+[:::image type="content" source="../media/m365-backup/backup-setup-number4.png" alt-text="Clickable image that says Start backing up your data.":::](#step-4-create-backup-policies-to-protect-your-data)
+
+Test 2
 
 [:::image type="content" source="../media/m365-backup/backup-setup-step1.png" alt-text="Clickable image that says Create an Azure subscription.":::](#step-1-create-an-azure-subscription)
 
