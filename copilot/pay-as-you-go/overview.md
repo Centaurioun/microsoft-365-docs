@@ -53,6 +53,19 @@ You can cancel or delete your subscription at any time to stop processing and bi
 
 In the future, new features using pay-as-you-go billing will be announced via a message center post. When the features become available, users in your organization will be able to take advantage of those capabilities. Pay-as-you-go billing is disabled by default. A global admin or owner to the subscription can enable or disable Microsoft 365 pay-as-you-go features in the Microsoft 365 admin center.
 
+## Pricing details
+
+When you use a Microsoft Pay-as-you-go service linked to an Azure subscription, the service gets billed using the Azure subscription that you specified when you set up Pay-as-you-go billing. The Azure subscription uses the Azure meter set up for the service.
+
+To learn more about meters, see [Meters for Microsoft 365 Copilot Chat pay-as-you-go](meters.md).
+
+|Service  |Description  |What's Counted?  |What's billed? (USD)  |
+|---------|---------|---------|---------|
+|Agents in Microsoft 365 Copilot chat   | Use agents grounded in work data (work data in your tenant's Microsoft Graph and third-party data via Graph connectors)        | The number of messages used.        | $0.01/message        |
+
+> [!NOTE]
+> Each interaction includes a question and an answer. Successful integration uses 32 messages.
+
 ## Monitoring and billing
 
 The organization's consumption of the pay-as-you-go service can be monitored on the [Cost Management](/microsoft-365/commerce/use-cost-mgmt) page in the Microsoft 365 admin center for each of the Microsoft 365 pay-as-you-go services that you use.
