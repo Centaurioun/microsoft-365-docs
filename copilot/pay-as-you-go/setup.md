@@ -4,7 +4,7 @@ description: Learn how to set up pay-as-you-go billing for Microsoft 365 Copilot
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 02/20/2025
+ms.date: 03/12/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -55,7 +55,7 @@ As an admin, you can do the following to manage pay-as-you-billing for your orga
 
 - **View usage and costs** You can view detailed reports on Copilot usage and the associated costs.
 - **Edit billing** Modify an unhealthy Azure subscription, resource group, and billing region.
-- **Turn off billing** You can turn off pay-as-you-go billing for any of the Copilot services, removing the service from the agent's view. Once the service has been turned off, users without a Copilot license won’t be able to use the service.
+- **Turn off billing** You can turn off pay-as-you-go billing for any of the Copilot services, removing the service from the agent's view. Once the service has been turned off, users without a Copilot license won't be able to use the service.
 
 > [!NOTE]
 > When turning off pay-as-you-go, it may take up to two hours for users to stop being able to use the agents. Additionally, if the agent hasn't been used, it will no longer be accessible once pay-as-you-go is turned off.
