@@ -1,12 +1,12 @@
 ---
-title: Set up and manage unstructured document processing in Microsoft Syntex
+title: Set up and manage unstructured document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
 ms.date: 01/13/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.custom: setup
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -18,9 +18,9 @@ ms.localizationpriority:  medium
 description: Learn how to set up and manage unstructured document processing in SharePoint.
 ---
 
-# Set up and manage unstructured document processing in Microsoft Syntex
+# Set up and manage unstructured document processing in SharePoint
 
-The unstructured document processing service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+Unstructured document processing is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
