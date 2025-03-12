@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 12/10/2024
+ms.date: 03/11/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -58,7 +58,7 @@ With SharePoint Agreements, you can:
 |[Manage sections in a template](agreements-manage-sections.md)    |Publish a new section, insert a section into a template, edit a section, and configure section settings.         |
 |[Create an agreement](agreements-create-agreement.md)    |Create an agreement from a template in Microsoft Teams and in Microsoft Word.         |
 |[Analyze section revisions](agreements-analyze-sections.md)    |Use the **Analyze section revisions** feature to detect changes in embedded sections, summarize the changes, and offer suggestions.       |
-|[Manage attachments related to an agreement](agreements-attachments.md)    |Manage supporting documents related to an agreement.         |
+|[Manage attachments](agreements-attachments.md)    |Manage supporting documents related to an agreement.         |
 |[View reports](agreements-reports.md)    |Learn about the reports that are available to monitor all agreements, their statuses, and other essential metrics.         |
 |[Receive approval notifications](agreements-notifications.md)    |Learn about approval notifications in the Approvals app and in email.         |
 
