@@ -59,13 +59,6 @@ When you use a Microsoft Pay-as-you-go service linked to an Azure subscription, 
 
 To learn more about meters, see [Meters for Microsoft 365 Copilot Chat pay-as-you-go](meters.md).
 
-|Service  |Description  |What's Counted?  |What's billed? (USD)  |
-|---------|---------|---------|---------|
-|Agents in Microsoft 365 Copilot chat   | Use agents grounded in work data (work data in your tenant's Microsoft Graph and third-party data via Graph connectors)        | The number of messages used.        | $0.01/message        |
-
-> [!NOTE]
-> Each interaction includes a question and an answer. Successful integration uses 32 messages.
-
 ## Monitoring and billing
 
 The organization's consumption of the pay-as-you-go service can be monitored on the [Cost Management](/microsoft-365/commerce/use-cost-mgmt) page in the Microsoft 365 admin center for each of the Microsoft 365 pay-as-you-go services that you use.
