@@ -23,7 +23,7 @@ description: "Learn how to improve organization use of Microsoft 365 Copilot Cha
 
 # Pin Microsoft 365 Copilot Chat to the navigation bar
 
-As an administrator, you can pin Copilot to the navigation bar of Teams, Outlook, and the Microsoft 365 Copilot app, including [microsoft365.com](https://www.office.com/), Microsoft 365 desktop app, and the Microsoft 365 mobile app. When you pin Copilot Chat, it encourages your organization to use Microsoft 365 Copilot Chat.
+As an administrator, you can pin Copilot to the navigation bar of Teams, Outlook, and the Microsoft 365 Copilot app, including [M365Copilot.com](https://M365Copilot.com), Microsoft 365 desktop app, and the Microsoft 365 mobile app. When you pin Copilot Chat, it encourages your organization to use Microsoft 365 Copilot Chat.
 
 Admin pinning allows you to set Microsoft 365 Copilot Chat to appear on the navigation bar for the applications listed previously. This setting is only applicable for users who are signed in with a Microsoft Entra account for your tenant.
 
@@ -59,7 +59,7 @@ Global administrators can make changes to Microsoft 365 Copilot Chat pinning set
 
 ## User experience
 
-Users can personalize their navigation bar by choosing to pin or unpin Microsoft 365 Copilot Chat. Users can adjust the pinning settings within their application preferences, and these choices are specific to Teams, Outlook, the Microsoft 365 Copilot web app ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Copilot desktop app, and Microsoft 365 Copilot mobile app.
+Users can personalize their navigation bar by choosing to pin or unpin Microsoft 365 Copilot Chat. Users can adjust the pinning settings within their application preferences, and these choices are specific to Teams, Outlook, the Microsoft 365 Copilot web app ([microsoft365.com](https://M365Copilot.com) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Copilot desktop app, and Microsoft 365 Copilot mobile app.
 
 A message asking to pin Microsoft 365 Copilot Chat can appear if a user:
 
