@@ -29,7 +29,7 @@ Explanations have been added to the main Katakana terms used in Microsoft 365 Ad
 
 ## Account
 
-:::image type="content" source="../media/katanaglossary/001_account_en.png" alt-text="Screenshot of Create account for another user card on the admin center home page.":::
+:::image type="content" source="../media/katanaglossary/001-account-en.png" alt-text="Screenshot of Create account for another user card on the admin center home page.":::
 
 Refers to the name assigned to an individual within an organization for the purpose of using Microsoft 365. It is created for each organization/company, and a separate account is assigned to each individual. Use this account to access Microsoft 365 services.
 
@@ -37,7 +37,7 @@ Refers to the name assigned to an individual within an organization for the purp
 
 ## Add-on
 
-:::image type="content" source="../media/katanaglossary/002_1_addon_en.png" alt-text="Screenshot of a subscription details page.":::
+:::image type="content" source="../media/katanaglossary/002-1-addon-en.png" alt-text="Screenshot of a subscription details page.":::
 
 Not a standalone offering. It is an additional feature for services within a subscription. Detailed and new features are available.
 
@@ -49,7 +49,7 @@ Nickname for e-mails. It references nicknames assigned to email distribution lis
 
 ## Custom Domain
 
-:::image type="content" source="../media/katanaglossary/003_customdomain_en.png" alt-text="Screenshot of card showing the new domain name on the admin center home page.":::
+:::image type="content" source="../media/katanaglossary/003-customdomain-en.png" alt-text="Screenshot of card showing the new domain name on the admin center home page.":::
 
 Also known as the original domain. It is an Internet domain dedicated to organizations such as businesses and schools. Organizations can use their own names to create email addresses and websites. A domain identifies a location on the Internet, and used as a URL to specify e-mail destinations or find websites. Acquiring a name that is simple and easy to remember is effective for corporate branding.
 
@@ -57,13 +57,13 @@ Also known as the original domain. It is an Internet domain dedicated to organiz
 
 ## Cloud Storage
 
-:::image type="content" source="../media/katanaglossary/004_cloudstorage.png" alt-text="Diagram showing cloud storage options.":::
+:::image type="content" source="../media/katanaglossary/004-cloudstorage.png" alt-text="Diagram showing cloud storage options.":::
 
 A location or device to store files on the Internet. An individual user can access a file from multiple platforms or devices, and multiple users can collaborate on the same file. It is suitable to internally and remotely reference and edit files in various environments, such as on PCs or mobile devices.
 
 ## Groups
 
-:::image type="content" source="../media/katanaglossary/005_group_updated_en.png" alt-text="Screenshot of the Add Group workflow.":::
+:::image type="content" source="../media/katanaglossary/005-group-updated-en.png" alt-text="Screenshot of the Add Group workflow.":::
 
 By using Microsoft 365 Groups, easily select teammates for collaboration. Facilitate a smooth collaboration by sharing files and other information within the team.
 
@@ -75,7 +75,7 @@ Various Groups
 
 ## Global Administrator
 
-:::image type="content" source="../media/katanaglossary/006_globaladmin_en.png" alt-text="Screenshot that shows giving a user admin center access.":::
+:::image type="content" source="../media/katanaglossary/006-globaladmin-en.png" alt-text="Screenshot that shows giving a user admin center access.":::
 
 A global administrator has the authority to edit, delete, or configure new settings.
 
@@ -95,7 +95,7 @@ Users outside an organization/company who can view or edit specific authorized f
 
 Collaborate with multiple different organizations or users to achieve a common purpose or goal. In a modern work style, users from different organizations or workplaces collaborate by sharing information and files through Teams, SharePoint, or OneDrive, while communicating on Teams.
 
-:::image type="content" source="../media/katanaglossary/007_collabo-commu_en.png" alt-text="Diagram showing products used for collaboration and communication.":::
+:::image type="content" source="../media/katanaglossary/007-collabo-commu-en.png" alt-text="Diagram showing products used for collaboration and communication.":::
 
 ## Service (Online Service)
 
@@ -123,7 +123,7 @@ A part of the website and email address that corresponds to the internet address
 
 ## Training and guide
 
-:::image type="content" source="../media/katanaglossary/008_trainingguide_en.png" alt-text="Screenshot of the training card on the admin center home page.":::
+:::image type="content" source="../media/katanaglossary/008-trainingguide-en.png" alt-text="Screenshot of the training card on the admin center home page.":::
 
 Educational texts and videos to use and manage Microsoft 365, provided by Microsoft.
 
@@ -133,7 +133,7 @@ In Microsoft 365, it is the state of being viewable or editable by all users wit
 
 ## Give Feedback
 
-:::image type="content" source="../media/katanaglossary/009_feedback_en.png" alt-text="Screenshot of the Send Feedback button in the admin center.":::
+:::image type="content" source="../media/katanaglossary/009-feedback-en.png" alt-text="Screenshot of the Send Feedback button in the admin center.":::
 
 Comments and requests sent to Microsoft, by a service user.
 
@@ -141,7 +141,7 @@ For customer support included in your support agreement, use the "Help and Suppo
 
 ## Privacy
 
-:::image type="content" source="../media/katanaglossary/010_privacy_updated_en.png" alt-text="Screenshot of the Add Group workflow showing the Privacy settings for a group.":::
+:::image type="content" source="../media/katanaglossary/010-privacy-updated-en.png" alt-text="Screenshot of the Add Group workflow showing the Privacy settings for a group.":::
 
 Settings to restrict the disclosure of files and information related to the protection of personal data. Choose from various disclosure levels, such as to make files and information available to all users within the organization (public) or to only specified users (private).
 
@@ -153,7 +153,7 @@ A state where only specific users within the organization can view or make chang
 
 ## Billing Profile
 
-:::image type="content" source="../media/katanaglossary/011_billpayments_en.png" alt-text="Screenshot of the Billing and Payment page with the Billing Profile tab selected.":::
+:::image type="content" source="../media/katanaglossary/011-billpayments-en.png" alt-text="Screenshot of the Billing and Payment page with the Billing Profile tab selected.":::
 
 Stored information related to billing, such as payment details for Microsoft 365. It is used to pay for products and services purchased from Microsoft. Note: Billing profiles are not used for products and services purchased from Microsoft.com or the Admin Center.
 
@@ -161,13 +161,13 @@ Stored information related to billing, such as payment details for Microsoft 365
 
 ## Hosted Domains
 
-:::image type="content" source="../media/katanaglossary/012_domain_en.png" alt-text="Screenshot of how to verify your domain.":::
+:::image type="content" source="../media/katanaglossary/012-domain-en.png" alt-text="Screenshot of how to verify your domain.":::
 
 Refers to domain services used in Microsoft 365. It is used for website URLs and email addresses. It can be purchased from the Microsoft 365 Admin Center, or you can use an existing domain that you already own.
 
 ## License
 
-:::image type="content" source="../media/katanaglossary/013_licenses_en.png" alt-text="Screenshot showing the number of licenses bought and assigned for a subscription.":::
+:::image type="content" source="../media/katanaglossary/013-licenses-en.png" alt-text="Screenshot showing the number of licenses bought and assigned for a subscription.":::
 
 Usage and access rights assigned to individual employees of an organization that purchases Microsoft 365. To use Microsoft 365, purchase and assign a license for each user.
 
