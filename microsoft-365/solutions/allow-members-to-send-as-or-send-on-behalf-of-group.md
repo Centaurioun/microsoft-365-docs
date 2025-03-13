@@ -98,10 +98,13 @@ If you are using the classic Outlook, follow these steps to send an email as a g
 
 1. Click **New email**.
 2. Go to the **Options** tab and select **From**.
-   :::image type="content" source="../media/classic-outlook-options.png" alt-text="Screenshot of Options tab in classic Outlook.":::
+   
+    :::image type="content" source="../media/classic-outlook-options.png" alt-text="Screenshot of Options tab in classic Outlook.":::
 3. Click the From drop-down and select **Other Email Address…**.
+   
    :::image type="content" source="../media/classic-outlook-from-dropdown.png" alt-text="Screenshot of the From dropdown in classic Outlook.":::
 4. Type in the group's email address and select **OK**.
+    
     :::image type="content" source="../media/classic-outlook-from-dialog-box.png" alt-text="Screenshot of the From dialog box in classic outlook.":::
      >[!NOTE]
      >Ensure the user has been assigned **Send As** permission on the group.
