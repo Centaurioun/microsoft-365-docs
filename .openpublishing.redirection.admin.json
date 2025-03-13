@@ -2207,7 +2207,7 @@
                 },
                 {
                   "source_path": "microsoft-365/admin/manage/change-contact-preferences.md",
-                  "redirect_url": "/microsoft-365/admin/manage/change-address-contact-and-more.md",
+                  "redirect_url": "/microsoft-365/admin/manage/change-address-contact-and-more",
                   "redirect_document_id": false
                   }
    ]
