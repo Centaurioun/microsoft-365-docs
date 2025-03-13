@@ -57,7 +57,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Step 1: Create an Azure subscription
 
-If you already have an Azure subscription, you skip to Step 2. If you need to create an Azure subscription, follow the guidance in [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
+If you already have an Azure subscription, you can skip to [Step 2](#step-2-set-up-pay-as-you-go-billing). If you need to create an Azure subscription, follow the guidance in [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
 
 ## Step 2: Set up pay-as-you-go billing
 
