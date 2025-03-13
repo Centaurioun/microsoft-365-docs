@@ -28,7 +28,7 @@ description: "Learn how to make changes to your organization's profile, includin
 ms.date: 10/06/2024
 ---
 
-# CChange your organization's address, contact preferences, and technical contact in the Microsoft 365 admin center
+# Change your organization's address, contact preferences, and technical contact in the Microsoft 365 admin center
   
 As an admin, you can use the Microsoft 365 admin center to make changes to your organization profile, like your organization name, address, phone number, and technical contact.
   
