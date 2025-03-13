@@ -68,7 +68,7 @@ This section explains how to allow users to send email on behalf of a group in t
 
 ## Send email as a group
 
-After permissions are assigned, you can send an email using the group's email address by following these steps:
+After permissions are assigned, users can send an email using the group's email address by following these steps:
 
 1. Compose a new email.
 2. Go to the Options tab and in the Show Fields group, select From.
