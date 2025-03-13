@@ -66,7 +66,6 @@ New-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params
 
 To verify your settings, run this command:
 
-
 ```PowerShell
 (Invoke-GraphRequest -Uri https://graph.microsoft.com/beta/Groups/$groupId/settings -Method GET).values.values
 ```
@@ -92,8 +91,9 @@ $params = @{
 	)
 }
 
+$DirectorySettingId = (Invoke-GraphRequest -Uri https://graph.microsoft.com/beta/Groups/$groupId/settings -Method GET).value.id
 
-Update-MgBetaGroupSetting -GroupId $groudID -BodyParameter $params -DirectorySettingId $templateId
+Update-MgBetaGroupSetting -GroupId $groupID -BodyParameter $params -DirectorySettingId $DirectorySettingId
 ```
 
 ## Allow or block guest access based on their domain
