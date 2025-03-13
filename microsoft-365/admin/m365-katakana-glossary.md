@@ -141,7 +141,7 @@ For customer support included in your support agreement, use the "Help and Suppo
 
 ## Privacy
 
-:::image type="content" source="../media/katanaglossary/010_privacy_updated_en.png" alt-text="Screenshot of the Add Group workflow showing the note about restricting group settings.":::
+:::image type="content" source="../media/katanaglossary/010_privacy_updated_en.png" alt-text="Screenshot of the Add Group workflow showing the Privacy settings for a group.":::
 
 Settings to restrict the disclosure of files and information related to the protection of personal data. Choose from various disclosure levels, such as to make files and information available to all users within the organization (public) or to only specified users (private).
 
