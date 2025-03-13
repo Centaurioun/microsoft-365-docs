@@ -77,14 +77,20 @@ After permissions are assigned, you can send an email using the group's email ad
 If you are using Monarch or the new Outlook Web App, follow these steps to send an email as a group:
 
 1. Click **New email**.
-   :::image type="content" source="../media/new-mail.png" alt-text="Screenshot of the New email option in Outlook.":::
+
+    :::image type="content" source="../media/new-mail.png" alt-text="Screenshot of the New email option in Outlook.":::
+
 2. To open in new window, click the **Arrow** to pop out the email.
-   :::image type="content" source="../media/open-in-new-window-email-outlook.png" alt-text="Screenshot of the Arrow that opens in new window in Outlook.":::
+   
+    :::image type="content" source="../media/open-in-new-window-email-outlook.png" alt-text="Screenshot of the Arrow that opens in new window in Outlook.":::
 3. Go to the Options tab and select **Show From**.
+    
     :::image type="content" source="../media/show-from-options-in-outlook.png" alt-text="Screenshot of the Options tab in outlook.":::
 4. Click the drop-down menu and select **Other email address…**.
+    
     :::image type="content" source="../media/other-email-addresses-in-outlook.png" alt-text="Screenshot of the other email addresses in outlook.":::
 5. Enter the email address of the Microsoft 365 Group for which the user has been assigned **Send As** permission.
+    
     :::image type="content" source="../media/send-as-group-email.png" alt-text="Screenshot of the From dropdown in outlook.":::
 6. Compose and send the email.
 
