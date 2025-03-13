@@ -72,9 +72,9 @@ After permissions are assigned, you can send an email using the group's email ad
 
 1. Compose a new email.
 2. Go to the Options tab and in the Show Fields group, select From.
-3. In the From box, enter the name or email address of the group on whose behalf you are sending the email.
+3. In the From box, enter the name or email address of the group on whose behalf the user is sending the email.
 
-If you are using Monarch or the new Outlook Web App, follow these steps to send an email as a group:
+The following steps can be used to send an email as a group using Monarch or the new Outlook Web App:
 
 1. Click **New email**.
 
@@ -94,7 +94,7 @@ If you are using Monarch or the new Outlook Web App, follow these steps to send 
     :::image type="content" source="../media/send-as-group-email.png" alt-text="Screenshot of the From dropdown in outlook.":::
 6. Compose and send the email.
 
-If you are using the classic Outlook, follow these steps to send an email as a group:
+The following steps can be used to send an email as a group using the classic Outlook:
 
 1. Click **New email**.
 2. Go to the **Options** tab and select **From**.
