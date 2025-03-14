@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 03/12/2025
+ms.date: 03/14/2025
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -34,6 +34,7 @@ Get started with Microsoft 365 Backup by following these four steps. Select the 
 [:::image type="content" source="../media/m365-backup/backup-setup-number3.png" alt-text="Clickable image that says Turn on Microsoft 365 Backup.":::](#step-3-turn-on-microsoft-365-backup)
 
 [:::image type="content" source="../media/m365-backup/backup-setup-number4.png" alt-text="Clickable image that says Start backing up your data.":::](#step-4-create-backup-policies-to-protect-your-data)
+--->
 
 ---
 
