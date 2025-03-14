@@ -18,6 +18,7 @@ description: Learn how to turn on Microsoft 365 Backup, set up pay-as-you-go bil
 
 # Set up Microsoft 365 Backup
 
+<!---
 Get started with Microsoft 365 Backup by following these four steps. Select the step that you want to begin with and we'll guide you through the process.
 
 ---
@@ -47,7 +48,7 @@ Get started with Microsoft 365 Backup by following these four steps. Select the 
 |[:::image type="content" source="../media/m365-backup/button1.png" alt-text="Clickable image that says Turn on Microsoft 365 Backup.":::](#step-3-turn-on-microsoft-365-backup)     |[:::image type="content" source="../media/m365-backup/backup-setup-step1.png" alt-text="Clickable image that says Turn on Microsoft 365 Backup.":::](#step-3-turn-on-microsoft-365-backup)         |
 |[:::image type="content" source="../media/m365-backup/button1.png" alt-text="Clickable image that says Start backing up your data.":::](#step-4-create-backup-policies-to-protect-your-data)     |[:::image type="content" source="../media/m365-backup/step1.png" alt-text="Clickable image that says Start backing up your data.":::](#step-4-create-backup-policies-to-protect-your-data)         |
 
----
+
 
 
 <!---
@@ -67,6 +68,8 @@ Test 2
 ![Clickable image that says Turn on Microsoft 365 Backup.](../media/m365-backup/backup-setup-step3.png)
 ![Clickable image that says Start backing up your data.](../media/m365-backup/backup-setup-step4.png)
 --->
+
+---
 
 ## Permissions
 
