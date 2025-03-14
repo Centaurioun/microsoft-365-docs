@@ -38,6 +38,8 @@ Get started with Microsoft 365 Backup by following these four steps. Select the 
 
 ## Quick setup
 
+Get started with Microsoft 365 Backup by following these four steps. Select the step that you want to begin with and we'll guide you through the process.
+
 |Step     |Action  |
 |---------|---------|
 |[:::image type="content" source="../media/m365-backup/button1.png" alt-text="Clickable image that says Create an Azure subscription.":::](#step-1-create-an-azure-subscription)    |[:::image type="content" source="../media/m365-backup/step1.png" alt-text="Clickable image that says Create an Azure subscription.":::](#step-1-create-an-azure-subscription)         |
