@@ -78,9 +78,13 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
+---
+
 ## Step 1: Create an Azure subscription
 
 If you already have an Azure subscription, you can skip to [Step 2](#step-2-set-up-pay-as-you-go-billing). If you need to create an Azure subscription, follow the guidance in [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
+
+---
 
 ## Step 2: Set up pay-as-you-go billing
 
@@ -153,6 +157,8 @@ You have successfully set up billing. You can proceed to [turn on Microsoft 365 
 > [!NOTE]
 > There will be only one billing profile created. Microsoft 365 Backup currently doesn't support multiple billing profiles.
 
+---
+
 ## Step 3: Turn on Microsoft 365 Backup
 
 To turn on Microsoft 365 Backup, you need to go to the Microsoft 365 admin center.
@@ -170,9 +176,9 @@ To turn on Microsoft 365 Backup, you need to go to the Microsoft 365 admin cente
 6. On the **Backup** panel, select **Turn on**.
 
 7. On **Turn on Backup** panel, review the applicable [terms of service for Microsoft 365](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all), and then select **Save**.
-<!---
-    ![Screenshot of the Turn on Backup panel and the Confirm button.](../media/m365-backup/backup-setup-turn-on.png)
---->
+
+---
+
 ## Step 4: Create backup policies to protect your data
 
 Now that Microsoft 365 Backup is enabled for your organization, follow through to create policies and start protecting your content.
@@ -187,11 +193,7 @@ Now that Microsoft 365 Backup is enabled for your organization, follow through t
 
 4. [Create backup policies for OneDrive, SharePoint, or Exchange](backup-view-edit-policies.md#create-backup-policies).
 
-<!---
-## Multi-geo environments
-
-Microsoft 365 Backup supports the backup of sites and user accounts from both the central and satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via the site picker, search, or filter rules doesn't currently support multi-geo. Those user interface experiences today only support addition of sites in the tenant's central location.
---->
+---
 
 ## Admin roles and backup management privileges
 
@@ -203,6 +205,8 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 |SharePoint Administrator     | ✓        | ✓        |         |
 |Exchange Administrator    |         |         | ✓        |
 |Microsoft 365 Backup Administrator     | ✓        | ✓        | ✓       |
+
+---
 
 ## Glossary
 
