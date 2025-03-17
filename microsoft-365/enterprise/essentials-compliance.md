@@ -9,6 +9,7 @@ ms.date: 03/12/2025
 audience: ITPro
 ms.topic: concept-article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: high
 ms.collection: 
 - scotvorg
