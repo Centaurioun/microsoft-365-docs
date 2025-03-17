@@ -55,7 +55,7 @@ To set up pay-as-you-go billing for Microsoft 365 Backup, follow these steps:
 
 4. On the **Pay-as-you-go services** page, on the **Billing** tab, select **Syntex services**.
 
-5. If you ***don't*** have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go directly to step 5.
+5. If you ***don't*** have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go directly to step 6.
 
     To create a new Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
 
@@ -85,7 +85,7 @@ To set up pay-as-you-go billing for Microsoft 365 Backup, follow these steps:
        > [!NOTE]
        > The subscription dropdown list won't populate if you don't have an owner or contributor on the subscription.
 
-       ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../media/m365-backup/back-billing-subscription.png)
+<!---       ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../media/m365-backup/back-billing-subscription.png)--->
 
     1. Under **Resource group**, select the resource group from the dropdown list.
 
