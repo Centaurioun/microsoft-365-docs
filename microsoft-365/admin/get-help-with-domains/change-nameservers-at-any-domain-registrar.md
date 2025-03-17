@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/18/2024
+ms.date: 03/17/2025
 audience: Admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -44,6 +44,14 @@ Follow these instructions to add and set up your domain in Microsoft 365 so your
 - You have your own domain and want to set it up to work with Microsoft 365.
 
 - You want Microsoft 365 to manage your DNS records for you. (If you prefer, you can [manage your own DNS records](../setup/add-domain.md).)
+
+> [!TIP]
+> Configuring domains and DNS records can be a complex process. For technical support, follow these steps:
+> 1. Go to [admin.microsoft.com](https://admin.microsoft.com).
+> 2. Select **Help & Support** at the bottom right and type your question.
+> 3. Review the results and if you still have questions after checking out the help articles, **select the headset** to contact technical support.
+> 
+> Or, you can learn how to contact support by using [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
 
 ## Add a TXT or MX record for verification
 
