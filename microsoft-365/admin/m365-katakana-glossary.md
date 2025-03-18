@@ -37,7 +37,7 @@ Refers to the name assigned to an individual within an organization for the purp
 
 ## Add-on
 
-:::image type="content" source="../media/katanaglossary/002-1-addon-en.png" alt-text="Screenshot of a subscription details page.":::
+:::image type="content" source="../media/katanaglossary/002-1-addon-en.png" alt-text="Screenshot of a subscription details page." lightbox="../media/katanaglossary/002-1-addon-en.png":::
 
 Not a standalone offering. It is an additional feature for services within a subscription. Detailed and new features are available.
 
@@ -153,7 +153,7 @@ A state where only specific users within the organization can view or make chang
 
 ## Billing Profile
 
-:::image type="content" source="../media/katanaglossary/011-billpayments-en.png" alt-text="Screenshot of the Billing and Payment page with the Billing Profile tab selected.":::
+:::image type="content" source="../media/katanaglossary/011-billing-profiles-en.png" alt-text="Screenshot of the Billing and Payment page with the Billing Profile tab selected.":::
 
 Stored information related to billing, such as payment details for Microsoft 365. It is used to pay for products and services purchased from Microsoft. Note: Billing profiles are not used for products and services purchased from Microsoft.com or the Admin Center.
 
