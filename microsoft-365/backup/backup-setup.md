@@ -51,11 +51,8 @@ Get started with Microsoft 365 Backup by following these four steps. Select the 
 |[:::image type="content" source="../media/m365-backup/button4.png" alt-text="Clickable image that says Start backing up your data.":::](#step-4-create-backup-policies-to-protect-your-data)     |[:::image type="content" source="../media/m365-backup/step4.png" alt-text="Clickable image that says Start backing up your data.":::](#step-4-create-backup-policies-to-protect-your-data)         |
 --->
 
-
----
-
 > [!TIP]
-> **Quick setup**:Already have an Azure subscription? Follow these three steps to go directly to the Microsoft 365 admin center to set up Microsoft 365 Backup.<br><br>
+> **Already have an Azure subscription?** Follow these three steps to set up Microsoft 365 Backup in the admin center.<br><br>
 > [Step 1. Set up pay-as-you-go billing](https://admin.microsoft.com/#/orgsettings/payasyougo)<br>
 > [Step 2. Turn on Microsoft 365 Backup](https://admin.microsoft.com/#/orgsettings/payasyougo/storage)<br>
 > [Step 3. Start backing up your data by creating backup policies](https://admin.microsoft.com/#/Settings/enhancedRestore)<br>
@@ -104,10 +101,6 @@ Test 2
 > [Step 3. Start backing up your data by creating backup policies](https://admin.microsoft.com/#/Settings/enhancedRestore)<br>
 --->
 
----
-___
-
-***
 
 ## Permissions
 
@@ -115,15 +108,11 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
----
+## Create an Azure subscription
 
-## Step 1: Create an Azure subscription
+If you already have an Azure subscription, you can skip to [Set up pay-as-you-go billing](#set-up-pay-as-you-go-billing). If you need to create an Azure subscription, follow the guidance in [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
 
-If you already have an Azure subscription, you can skip to [Step 2](#step-2-set-up-pay-as-you-go-billing). If you need to create an Azure subscription, follow the guidance in [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
-
----
-
-## Step 2: Set up pay-as-you-go billing
+## Set up pay-as-you-go billing
 
 To set up pay-as-you-go billing, you need to have this information:
 
@@ -186,7 +175,7 @@ To set up pay-as-you-go billing for Microsoft 365 Backup, follow these steps:
 
     1. Review and accept the terms of service, and then select **Save**.
 
-You have successfully set up billing. You can proceed to [turn on Microsoft 365 Backup](#step-2-turn-on-microsoft-365-backup).
+You have successfully set up billing. You can proceed to [turn on Microsoft 365 Backup](#turn-on-microsoft-365-backup).
 
 > [!NOTE]
 > Any subsequent changes made to the billing for Microsoft 365 Backup in the Microsoft 365 admin center or the Azure portal can take up to 24 hours to become effective.
@@ -194,9 +183,7 @@ You have successfully set up billing. You can proceed to [turn on Microsoft 365 
 > [!NOTE]
 > There will be only one billing profile created. Microsoft 365 Backup currently doesn't support multiple billing profiles.
 
----
-
-## Step 3: Turn on Microsoft 365 Backup
+## Turn on Microsoft 365 Backup
 
 To turn on Microsoft 365 Backup, you need to go to the Microsoft 365 admin center.
 
@@ -214,9 +201,7 @@ To turn on Microsoft 365 Backup, you need to go to the Microsoft 365 admin cente
 
 7. On **Turn on Backup** panel, review the applicable [terms of service for Microsoft 365](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all), and then select **Save**.
 
----
-
-## Step 4: Create backup policies to protect your data
+## Create backup policies to protect your data
 
 Now that Microsoft 365 Backup is enabled for your organization, follow through to create policies and start protecting your content.
 
@@ -230,8 +215,6 @@ Now that Microsoft 365 Backup is enabled for your organization, follow through t
 
 4. [Create backup policies for OneDrive, SharePoint, or Exchange](backup-view-edit-policies.md#create-backup-policies).
 
----
-
 ## Admin roles and backup management privileges
 
 Only tenant-level admins can create and manage backups using Microsoft 365 Backup for their users. End users don't have the ability to enable backup or restores for their user account, distribution lists, mailboxes, or sites. It’s important to note that your admin role determines which products you can manage with Microsoft 365 Backup. We have also introduced a new dedicated role for this tool, the Microsoft 365 Backup Administrator, that can control the entire tool. For more information about this role, see [Microsoft 365 Backup Administrator](/entra/identity/role-based-access-control/permissions-reference#microsoft-365-backup-administrator).
@@ -242,8 +225,6 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 |SharePoint Administrator     | ✓        | ✓        |         |
 |Exchange Administrator    |         |         | ✓        |
 |Microsoft 365 Backup Administrator     | ✓        | ✓        | ✓       |
-
----
 
 ## Glossary
 
