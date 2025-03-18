@@ -36,6 +36,7 @@ Get started with Microsoft 365 Backup by following these four steps. Select the 
 [:::image type="content" source="../media/m365-backup/backup-setup-number4.png" alt-text="Clickable image that says Start backing up your data.":::](#step-4-create-backup-policies-to-protect-your-data)
 --->
 
+<!---
 ---
 
 ## Quick setup
@@ -48,6 +49,20 @@ Get started with Microsoft 365 Backup by following these four steps. Select the 
 |[:::image type="content" source="../media/m365-backup/button2.png" alt-text="Clickable image that says Set up pay-as-you-go billing.":::](#step-2-set-up-pay-as-you-go-billing)     |[:::image type="content" source="../media/m365-backup/step2.png" alt-text="Clickable image that says Set up pay-as-you-go billing.":::](#step-2-set-up-pay-as-you-go-billing)         |
 |[:::image type="content" source="../media/m365-backup/button3.png" alt-text="Clickable image that says Turn on Microsoft 365 Backup.":::](#step-3-turn-on-microsoft-365-backup)     |[:::image type="content" source="../media/m365-backup/step3.png" alt-text="Clickable image that says Turn on Microsoft 365 Backup.":::](#step-3-turn-on-microsoft-365-backup)         |
 |[:::image type="content" source="../media/m365-backup/button4.png" alt-text="Clickable image that says Start backing up your data.":::](#step-4-create-backup-policies-to-protect-your-data)     |[:::image type="content" source="../media/m365-backup/step4.png" alt-text="Clickable image that says Start backing up your data.":::](#step-4-create-backup-policies-to-protect-your-data)         |
+--->
+
+
+---
+
+## Quick setup
+
+Have an Azure subscription? Follow these three steps to go directly to the Microsoft 365 admin center to set up Microsoft 365 Backup.
+
+|Step     |Action   |
+|---------|---------|
+|[:::image type="content" source="../media/m365-backup/button1.png" alt-text="Clickable image that says Set up pay-as-you-go billing.":::](https://admin.microsoft.com/#/orgsettings/payasyougo)     |[:::image type="content" source="../media/m365-backup/step2.png" alt-text="Clickable image that says Set up pay-as-you-go billing.":::](https://admin.microsoft.com/#/orgsettings/payasyougo)         |
+|[:::image type="content" source="../media/m365-backup/button2.png" alt-text="Clickable image that says Turn on Microsoft 365 Backup.":::](https://admin.microsoft.com/#/orgsettings/payasyougo/storage)     |[:::image type="content" source="../media/m365-backup/step3.png" alt-text="Clickable image that says Turn on Microsoft 365 Backup.":::](https://admin.microsoft.com/#/orgsettings/payasyougo/storage)         |
+|[:::image type="content" source="../media/m365-backup/button3.png" alt-text="Clickable image that says Start backing up your data.":::](https://admin.microsoft.com/#/Settings/enhancedRestore)     |[:::image type="content" source="../media/m365-backup/step4.png" alt-text="Clickable image that says Start backing up your data.":::](https://admin.microsoft.com/#/Settings/enhancedRestore)         |
 
 
 
