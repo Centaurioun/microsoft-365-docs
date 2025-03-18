@@ -79,6 +79,8 @@ With Exchange Online priority account monitoring, you can view the health for th
 
 - Recoverable items
 
+- Mail Delivery
+
 The Exchange licensing scenario checks if the priority account isn't able to sign in due to invalid license issues, which can be addressed by the tenant admin.
 
 The remaining five scenarios check if your priority account’s mailbox is close to reaching or has reached the limits described in [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
