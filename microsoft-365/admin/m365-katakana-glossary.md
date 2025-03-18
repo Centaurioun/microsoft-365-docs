@@ -63,7 +63,7 @@ A location or device to store files on the Internet. An individual user can acce
 
 ## Groups
 
-:::image type="content" source="../media/katanaglossary/005-group-updated-en.png" alt-text="Screenshot of the Add Group workflow.":::
+:::image type="content" source="../media/katanaglossary/005-group-updated-en.png" alt-text="Screenshot of the Add Group workflow." lightbox="../media/katanaglossary/005-group-updated-en.png":::
 
 By using Microsoft 365 Groups, easily select teammates for collaboration. Facilitate a smooth collaboration by sharing files and other information within the team.
 
@@ -75,7 +75,7 @@ Various Groups
 
 ## Global Administrator
 
-:::image type="content" source="../media/katanaglossary/006-globaladmin-en.png" alt-text="Screenshot that shows giving a user admin center access.":::
+:::image type="content" source="../media/katanaglossary/006-globaladmin-en.png" alt-text="Screenshot that shows giving a user admin center access." lightbox="../media/katanaglossary/006-globaladmin-en.png":::
 
 A global administrator has the authority to edit, delete, or configure new settings.
 
@@ -141,7 +141,7 @@ For customer support included in your support agreement, use the "Help and Suppo
 
 ## Privacy
 
-:::image type="content" source="../media/katanaglossary/010-privacy-updated-en.png" alt-text="Screenshot of the Add Group workflow showing the Privacy settings for a group.":::
+:::image type="content" source="../media/katanaglossary/010-privacy-updated-en.png" alt-text="Screenshot of the Add Group workflow showing the Privacy settings for a group." lightbox="../media/katanaglossary/010-privacy-updated-en.png":::
 
 Settings to restrict the disclosure of files and information related to the protection of personal data. Choose from various disclosure levels, such as to make files and information available to all users within the organization (public) or to only specified users (private).
 
@@ -167,7 +167,7 @@ Refers to domain services used in Microsoft 365. It is used for website URLs and
 
 ## License
 
-:::image type="content" source="../media/katanaglossary/013-licenses-en.png" alt-text="Screenshot showing the number of licenses bought and assigned for a subscription.":::
+:::image type="content" source="../media/katanaglossary/013-licenses-en.png" alt-text="Screenshot showing the number of licenses bought and assigned for a subscription." lightbox="../media/katanaglossary/013-licenses-en.png":::
 
 Usage and access rights assigned to individual employees of an organization that purchases Microsoft 365. To use Microsoft 365, purchase and assign a license for each user.
 
