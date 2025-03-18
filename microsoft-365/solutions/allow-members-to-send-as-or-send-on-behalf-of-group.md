@@ -77,7 +77,7 @@ After permissions are assigned, users can send an email using the group's email 
 2. To open in new window, click the **Arrow** to pop out the email.
    
     :::image type="content" source="../media/open-in-new-window-email-outlook.png" alt-text="Screenshot of the Arrow that opens in new window in Outlook.":::
-3. Go to the Options tab and select **Show From**.
+3. Go to the **Options** tab and select **Show From**.
     
     :::image type="content" source="../media/show-from-options-in-outlook.png" alt-text="Screenshot of the Options tab in outlook.":::
 4. Click the drop-down menu and select **Other email address…**.
@@ -94,7 +94,7 @@ To send an email as a group using the classic Outlook, follow these steps:
 2. Go to the **Options** tab and select **From**.
    
     :::image type="content" source="../media/classic-outlook-options.png" alt-text="Screenshot of Options tab in classic Outlook.":::
-3. Click the From drop-down and select **Other Email Address…**.
+3. Click the **From** drop-down and select **Other Email Address…**.
    
    :::image type="content" source="../media/classic-outlook-from-dropdown.png" alt-text="Screenshot of the From dropdown in classic Outlook.":::
 4. Type in the group's email address and select **OK**.
