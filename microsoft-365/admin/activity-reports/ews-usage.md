@@ -3,7 +3,7 @@ title: "Microsoft 365 Reports in the admin center – EWS usage"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 03/14/2025
+ms.date: 03/18/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
@@ -37,7 +37,7 @@ To review the applications using EWS within your organization, examine the **Usa
 
 :::image type="content" source="../../media/exchange-web-usage-report.png" alt-text="Screenshot of the Exchange Web Services (EWS) report.":::
 
-The EWS Usage report can be filtered by the last 7, 30, 90, or 180 days.
+You can filter the EWS Usage report by the last 7, 30, 90, or 180 days.
 
 > [!NOTE]
 > Usage data is collected and aggregated weekly, not daily.
