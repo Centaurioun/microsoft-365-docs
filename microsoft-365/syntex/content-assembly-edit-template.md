@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 08/13/2024
+ms.date: 02/13/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
