@@ -76,7 +76,7 @@ After permissions are assigned, users can send an email using the group's email 
 
 The following steps can be used to send an email as a group using the new Outlook or the Outlook on the web:
 
-1. Click **New email**.
+1. Click **New mail**.
 
     :::image type="content" source="../media/new-mail.png" alt-text="Screenshot of the New email option in Outlook.":::
 
