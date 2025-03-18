@@ -11,4 +11,4 @@ ms.topic: include
 > 1. Go to [admin.microsoft.com](https://admin.microsoft.com), select **Help & Support** at the bottom right, and type your question.
 > 2. Review the results and if you still have questions, **select the headset** to contact technical support.
 > 
-> Or, learn about your options for contacting support at [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
+> To learn about your options for contacting support, see [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
