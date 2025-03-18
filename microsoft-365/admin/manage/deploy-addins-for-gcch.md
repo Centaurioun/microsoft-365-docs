@@ -38,4 +38,14 @@ Centralized deployment for Office Add-ins can be managed at an administrative le
 10. Select <b>I have a URL for the manifest file</b>, and then enter the URL you updated that includes your AssetID for your add-in.
 11. Select <b>Upload</b>.
 12. On the <b>Configure add-in</b> page, choose the users you want to have access to the add-in, then select <b>Deploy</b>.
+13. If the above steps fail to deploy the Add-in, it's possible your Tenant is blocking the store. If this is the case, please continue.
+14. Paste the URL built out from step 4 above into a browser. This is the raw xml.
+15. Copy the xml and paste into notepad.
+16. Name the file <b>Manifest.xml</b>.
+17. Instead of using the URL option, choose <b>I have the manifest file (.xml) on this device</b>.
+18. Click on <b>Choose File</b>.
+19. Browse to your <b>Manifest.xml</b> file and select it.
+20. Select <b>Upload</b>.
+21. On the <b>Configure add-in</b> page, choose the users you want to have access to the add-in, then select <b>Deploy</b>.
 
+<b>Important:</b> After selecting <b>Deploy</b>, if there is an error concerning Admin Consent, the Add-in is not GccH compatible and the Developer of the Add-in should be contacted to allow their Add-in to be GccH compliant.
