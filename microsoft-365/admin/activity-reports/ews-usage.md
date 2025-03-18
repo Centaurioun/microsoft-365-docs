@@ -35,7 +35,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 
 To review the applications using EWS within your organization, examine the **Usage Trend** and **Usage Details** sections. Additionally, summarized information at the top provides an overview of the overall usage.
 
-:::image type="content" source="../../media/exchange-web-usage-report.png" alt-text="Screenshot of the Exchange Web Services (EWS) report.":::
+:::image type="content" source="../../media/exchange-web-usage-report.png" alt-text="Screenshot of the Exchange Web Services (EWS) report." lightbox="../../media/exchange-web-usage-report.png":::
 
 You can filter the EWS Usage report by the last 7, 30, 90, or 180 days.
 
@@ -46,8 +46,8 @@ You can filter the EWS Usage report by the last 7, 30, 90, or 180 days.
 
 There are two summary headers on the top of the page:
 
-- **Active apps**: indicates the number of unique apps that sent at least one request to EWS during the selected period.
-- **Daily average call volume**: indicates the average number of daily requests from active apps during the selected period.
+- **Active apps** indicates the number of unique apps that sent at least one request to EWS during the selected period.
+- **Daily average call volume** indicates the average number of daily requests from active apps during the selected period.
 
 ## Usage trend chart
 
