@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 03/17/2025
+ms.date: 03/18/2025
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -57,8 +57,8 @@ Get started with Microsoft 365 Backup by following these four steps. Select the 
 > [Step 2. Turn on Microsoft 365 Backup](https://admin.microsoft.com/#/orgsettings/payasyougo/storage)<br>
 > [Step 3. Start backing up your data by creating backup policies](https://admin.microsoft.com/#/Settings/enhancedRestore)<br>
 
+<!---
 ---
-<div style="background-color: lightblue; padding: 10px;">
 
 ## Quick setup
 
@@ -71,7 +71,7 @@ Already have an Azure subscription? Follow these three steps to go directly to t
 |[:::image type="content" source="../media/m365-backup/button3.png" alt-text="Clickable image that says Start backing up your data.":::](https://admin.microsoft.com/#/Settings/enhancedRestore)     |[:::image type="content" source="../media/m365-backup/step4.png" alt-text="Clickable image that says Start backing up your data.":::](https://admin.microsoft.com/#/Settings/enhancedRestore)         |
 
 </div>
-
+--->
 
 <!---
 ## Quick setup
