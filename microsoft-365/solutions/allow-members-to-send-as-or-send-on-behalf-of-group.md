@@ -68,13 +68,7 @@ This section explains how to allow users to send email on behalf of a group in t
 
 ## Send email as a group
 
-After permissions are assigned, users can send an email using the group's email address by following these steps:
-
-1. Compose a new email.
-2. Go to the Options tab and in the Show Fields group, select From.
-3. In the From box, enter the name or email address of the group on whose behalf the user is sending the email.
-
-The following steps can be used to send an email as a group using the new Outlook or the Outlook on the web:
+After permissions are assigned, users can send an email using the group's email address by composing a new email. To send an email as a group using the new Outlook or the Outlook on the web, follow these steps:
 
 1. Click **New mail**.
 
@@ -94,9 +88,9 @@ The following steps can be used to send an email as a group using the new Outloo
     :::image type="content" source="../media/send-as-group-email.png" alt-text="Screenshot of the From dropdown in outlook.":::
 6. Compose and send the email.
 
-The following steps can be used to send an email as a group using the classic Outlook:
+To send an email as a group using the classic Outlook, follow these steps:
 
-1. Click **New email**.
+1. Click **New mail**.
 2. Go to the **Options** tab and select **From**.
    
     :::image type="content" source="../media/classic-outlook-options.png" alt-text="Screenshot of Options tab in classic Outlook.":::
