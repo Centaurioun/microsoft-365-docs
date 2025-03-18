@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 03/18/2025
+ms.date: 03/19/2025
 
 audience: Admin
 ms.reviewer: briandesouza
@@ -29,8 +29,8 @@ This page lists the latest features and improvements for Microsoft 365 Copilot. 
 
 ## [All features](#tab/all)
 <!--- All features regardless of platform go here  -->
-## March 18, 2025
-Updates released between March 5, 2025, and March 18, 2025.
+## March 19, 2025
+Updates released between March 5, 2025, and March 19, 2025.
 ### Copilot Studio
 - **Use generative actions** [Web]  
   Replace manual topic triggers with AI-powered orchestration. You can now configure an agent to use generative AI to dynamically select relevant topics or plugin actions, creating more fluid conversations while reducing manual topic configuration. <a href="/microsoft-copilot-studio/advanced-generative-actions" target="_blank">Learn more.</a>
@@ -777,8 +777,8 @@ Updates released between January 8, 2025, and January 23, 2025.
 ## [Windows](#tab/win)
 
 <!--- All features that have 'Windows' tag  -->
-## March 18, 2025
-Updates released between March 5, 2025, and March 18, 2025.
+## March 19, 2025
+Updates released between March 5, 2025, and March 19, 2025.
 ### Microsoft 365 Copilot Chat
 - **Prompt suggestions in Copilot chat** [Windows, Web, Mac]  
   Get started in Copilot chat quickly with automatic prompt suggestions that enhance your productivity by providing relevant and context-aware prompts based on your previous interactions.
@@ -1217,8 +1217,8 @@ Updates released between January 8, 2025, and January 23, 2025.
 
 ## [Web](#tab/web)
 <!--- All features that have 'Web' tag  -->
-## March 18, 2025
-Updates released between March 5, 2025, and March 18, 2025.
+## March 19, 2025
+Updates released between March 5, 2025, and March 19, 2025.
 ### Copilot Studio
 - **Use generative actions** [Web]  
   Replace manual topic triggers with AI-powered orchestration. You can now configure an agent to use generative AI to dynamically select relevant topics or plugin actions, creating more fluid conversations while reducing manual topic configuration. <a href="/microsoft-copilot-studio/advanced-generative-actions" target="_blank">Learn more.</a>
@@ -1751,8 +1751,8 @@ Updates released between January 8, 2025, and January 23, 2025.
 
 ## [Android](#tab/androidos)
 <!--- All features that have 'Android' tag  -->
-## March 18, 2025
-Updates released between March 5, 2025, and March 18, 2025.
+## March 19, 2025
+Updates released between March 5, 2025, and March 19, 2025.
 ### Microsoft 365 App
 - **View, edit and share Copilot Pages on mobile** [Android, iOS]  
   Stay productive while on the go—use the Microsoft 365 mobile app to view, edit, or share Copilot-generated pages instantly. Collaborate with colleagues in real time, whether you’re commuting or between meetings. <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
@@ -1901,8 +1901,8 @@ Updates released between January 8, 2025, and January 23, 2025.
 
 ## [iOS](#tab/appleios)
 <!--- All features that have 'iOS' tag  -->
-## March 18, 2025
-Updates released between March 5, 2025, and March 18, 2025.
+## March 19, 2025
+Updates released between March 5, 2025, and March 19, 2025.
 ### Microsoft 365 App
 - **View, edit and share Copilot Pages on mobile** [Android, iOS]  
   Stay productive while on the go—use the Microsoft 365 mobile app to view, edit, or share Copilot-generated pages instantly. Collaborate with colleagues in real time, whether you’re commuting or between meetings. <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
@@ -2173,8 +2173,8 @@ Updates released between January 8, 2025, and January 23, 2025.
 
 ## [Mac](#tab/mac)
 <!--- All features that have 'Mac' tag  -->
-## March 18, 2025
-Updates released between March 5, 2025, and March 18, 2025.
+## March 19, 2025
+Updates released between March 5, 2025, and March 19, 2025.
 ### Microsoft 365 Copilot Chat
 - **Prompt suggestions in Copilot chat** [Windows, Web, Mac]  
   Get started in Copilot chat quickly with automatic prompt suggestions that enhance your productivity by providing relevant and context-aware prompts based on your previous interactions.
