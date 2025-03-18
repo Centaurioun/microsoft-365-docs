@@ -85,7 +85,17 @@ Test 2
 ![Clickable image that says Start backing up your data.](../media/m365-backup/backup-setup-step4.png)
 --->
 
+OR
+
+> [!Quick Start]
+> Optional information to help a user be more successful
 ---
+
+
+> Quick Start
+> Optional information to help a user be more successful
+---
+
 
 ## Permissions
 
