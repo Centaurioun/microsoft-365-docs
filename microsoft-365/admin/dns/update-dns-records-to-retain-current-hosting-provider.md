@@ -35,7 +35,7 @@ description: "Learn how to route traffic to an existing public website hosted ou
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
  **If you manage your domain's Microsoft records at your DNS hosting provider**, you don't have to worry about the steps in this topic. Your website stays where it is and people can still get to it.
   

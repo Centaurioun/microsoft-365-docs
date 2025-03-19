@@ -38,7 +38,7 @@ Check out all of our small business content on [Small business help & learning](
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
   
 ### Step 1: Find the TXT record value and verify
 

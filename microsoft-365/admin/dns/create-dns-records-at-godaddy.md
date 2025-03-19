@@ -34,7 +34,7 @@ description: "Learn to verify your domain and set up DNS records for email, Micr
 
 If GoDaddy is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Teams, and so on.
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ## Before you begin
 

@@ -33,7 +33,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
 If IONOS is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ## Before you begin
 

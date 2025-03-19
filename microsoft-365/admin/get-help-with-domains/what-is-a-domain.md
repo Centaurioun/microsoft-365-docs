@@ -65,7 +65,7 @@ You can use a Microsoft domain like  *yourcompany.onmicrosoft.<span>com*  to sig
   
 ## Feeling stuck?
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ## Related content
 

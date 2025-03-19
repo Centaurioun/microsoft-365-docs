@@ -28,7 +28,7 @@ ai-usage: ai-assisted
 
 As a Microsoft 365 admin, you might need to defederate your Microsoft 365 account from GoDaddy. This process involves several steps that must be followed carefully to avoid issues with signing in to services like SharePoint and other Microsoft 365 applications.
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ### Defederation Process Overview
 

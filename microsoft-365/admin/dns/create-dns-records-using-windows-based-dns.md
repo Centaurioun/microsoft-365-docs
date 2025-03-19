@@ -39,7 +39,7 @@ To get started, you need to find your DNS records in Windows-based DNS so you ca
   
 Trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
   
 ## Find your DNS records in Windows-based DNS
 <a name="BKMK_find_your_dns_1"> </a>

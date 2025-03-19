@@ -35,7 +35,7 @@ You can't transfer a Microsoft 365 domain to another registrar for 60 days after
 > [!NOTE]
 > A _Whois_ query shows a Microsoft purchased domain registrar as Wild West Domains LLC. However, only Microsoft should be contacted about your Microsoft 365 purchased domain.
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 Sign in as a global administrator, follow these steps to get a code at Microsoft 365, and then go to the other domain registrar website to transfer your domain name to the new registrar.
 

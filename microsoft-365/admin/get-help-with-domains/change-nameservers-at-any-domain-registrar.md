@@ -46,7 +46,7 @@ Follow these instructions to add and set up your domain in Microsoft 365 so your
 
 - You want Microsoft 365 to manage your DNS records for you. (If you prefer, you can [manage your own DNS records](../setup/add-domain.md).)
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ## Add a TXT or MX record for verification
 
