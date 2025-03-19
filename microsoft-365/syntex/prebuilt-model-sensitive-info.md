@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 06/28/2024
+ms.date: 01/28/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
