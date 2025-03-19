@@ -45,7 +45,7 @@ If you want to change the email domain of existing user accounts, follow the ste
 
 [Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for in this article.
 
-[!INCLUDE [How to get tech support for SMB](../includes/smb-how-to-get-tech-support.md)]
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 > [!TIP]
 > If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, admins and users get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
