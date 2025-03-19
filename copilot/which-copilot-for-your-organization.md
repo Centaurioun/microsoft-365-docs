@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 03/18/2025
+ms.date: 03/19/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -51,7 +51,10 @@ When users sign in with their Microsoft Entra work or school account (`user@cont
 - When users select **work**, Copilot Chat is a work-based ([Microsoft Graph](/graph/overview)) chat experience. It shows results that their Microsoft Entra work or school account can access.
 - When users select **web**, Copilot Chat shows results that their Microsoft Entra work or school account can access and also shows results from the internet.
 
-  To learn more, see [Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](manage-public-web-access.md).
+  To learn about data privacy, see:
+
+  - [Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](manage-public-web-access.md)
+  - [Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](enterprise-data-protection.md)
 
 You can also create images and use [Copilot Pages](https://support.microsoft.com/en-us/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
 
