@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 01/13/2025
+ms.date: 03/19/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
@@ -22,7 +22,7 @@ description: Learn how to set up and manage sites in SharePoint eSignature.
 > [!NOTE]
 > SharePoint eSignature is available in selected regions. If a tenant's location is a supported region, SharePoint eSignature is available for that tenant. For multi-geo enabled tenants in supported regions, eSignature will be available in the home geo only. SharePoint eSignature rolls out to [other regions](esignature-overview.md#regional-availability) later this year.
 
-The SharePoint eSignature service is set up in the Microsoft 365 admin center. Before you begin, determine whether this feature is appropriate for your needs by reading the [Before you begin section](esignature-overview.md#before-you-begin).
+SharePoint eSignature is a pay-as-you-go service that is set up in the Microsoft 365 admin center. Before you begin, determine whether this feature is appropriate for your needs by reading the [Before you begin section](esignature-overview.md#before-you-begin).
 
 ## Prerequisites
 
@@ -52,6 +52,8 @@ To let people in your organization use SharePoint eSignature, follow these steps
 4. Under **Document & image services**, select **eSignature**.
 
 5. On the **eSignature** panel, select **Let people in your organization use eSignature**.
+
+Once configured, several background processes will automatically begin to integrate the feature seamlessly into your existing Microsoft 365 tenant and services. These processes include data synchronization, configuration updates, and performance optimizations. SharePoint eSignature will be fully operational within 24 hours of activation.
 
 ### Add other signature providers
 
