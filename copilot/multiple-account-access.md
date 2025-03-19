@@ -76,4 +76,4 @@ As of March 19, 2025, multiple account access is rolling out gradually in the fo
 
 ### On iOS devices
 
-- PowerPoint: Version 16.0.18623.20090
+- PowerPoint: Version 2.95.25030623
