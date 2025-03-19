@@ -3,7 +3,7 @@ title: "Microsoft 365 U.S. Government GCC High endpoints"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/30/2025
+ms.date: 03/31/2025
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -58,6 +58,17 @@ Data columns shown are:
 - **Addresses**: Lists the FQDNs or wildcard domain names and IP Address ranges for the endpoint set. Note that an IP Address range is in CIDR format and may include many individual IP Addresses in the specified network.
 
 - **Ports**: Lists the TCP or UDP ports that are combined with the Addresses to form the network endpoint. You may notice some duplication in IP Address ranges where there are different ports listed.
+
+> [!NOTE]
+> In response to customer feedback and to streamline endpoint management, Microsoft has initiated the process of consolidating Microsoft 365 apps and services into a select group of dedicated, secured, and purpose-managed domains within the **.microsoft** top level domain (TLD). 
+> 
+> To avoid connectivity issues for users, ensure that the following essential domains are included in your allowlist and that connectivity to these domains isn't blocked.
+
+| ID | Category | Domain name| Purpose | Ports |
+|---|---|---|---|---|
+|23|Required|`*.usgovcloud.microsoft`|Dedicated to authenticated user facing Microsoft SaaS product experiences.|**TCP:** 443,80<br>**UDP:** 443|
+|23|Required|`*.usgovcloud-static.microsoft`|Dedicated to static (not customer generated) content hosted on CDNs.|**TCP:** 443,80<br>**UDP:** 443|
+|23|Required|`*.usgovcloud-usercontent.microsoft`|Content used in Microsoft 365 experiences that requires domain isolation from applications.|**TCP:** 443,80<br>**UDP:** 443|
 
 [!INCLUDE [Microsoft 365 U.S. Government GCC High endpoints](../includes/office-365-u.s.-government-gcc-high-endpoints.md)]
 
