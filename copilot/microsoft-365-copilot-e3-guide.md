@@ -1,12 +1,12 @@
 ---
 title: Get your data ready for Microsoft 365 Copilot with E3 + SAM licenses
-description: The E3 deployment for Microsoft 365 Copilot uses a E3 license, SharePoint Advanced Management, and Microsoft Purview. These services help your organization get ready for Copilot. This IT admin guide helps you prevent oversharing, declutter data sources, and monitor site changes. Get your organization and data ready for Copilot by following the steps in this article.
+description: Get started with M365 Copilot. The E3 deployment for Microsoft 365 Copilot uses a E3 license, SharePoint Advanced Management, and Microsoft Purview. These services help your organization get ready for Copilot. This IT admin guide helps you prevent oversharing, declutter data sources, and monitor site changes. Get your organization and data ready for Copilot by following the steps in this article.
 f1.keywords:
 - NOCSH
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 12/11/2024
+ms.date: 03/18/2025
 ms.reviewer: cabailey, ruihu
 audience: Admin
 ms.topic: get-started
@@ -33,7 +33,7 @@ This article provides guidance for IT admins with **Microsoft 365 E3** and **Sha
 - Use SharePoint Advanced Management (SAM) to help prevent oversharing, declutter data sources, restrict SharePoint searches, and monitor SharePoint site changes.
 - Use Microsoft Purview to create sensitivity labels, identify and protect sensitive data, and delete the content you don't need.
 
-When you use the features described in this article, your organization is better prepared for Copilot, including getting more accurate results from Copilot.
+Use this article to get started with Microsoft 365 Copilot in your organization. When you use the features described in this article, your organization is better prepared for Copilot, including getting more accurate results from Copilot.
 
 This article applies to:
 
@@ -133,10 +133,10 @@ To learn more about Microsoft Purview, see [Microsoft 365 Copilot in Microsoft P
 
 [!INCLUDE [copilot-e5-e3-create-apply-sensitivity-labels](./includes/copilot-e5-e3-create-apply-sensitivity-labels.md)]
 
-This section walks you through the steps to create and use sensitivity labels in Microsoft Purview. You create your own label names and configurations. To learn more about sensitivity labels, see:
+This section guides you through the steps to create and use sensitivity labels in Microsoft Purview. You create your own label names and configurations. To learn more about sensitivity labels, see:
 
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
-- [Microsoft Purview strengthens information protection for Copilot](/purview/ai-microsoft-purview#microsoft-purview-strengthens-information-protection-for-copilot)
+- [Use Microsoft Purview to strengthen information protection for Copilot](/purview/ai-microsoft-purview#microsoft-purview-strengthens-information-protection-for-copilot)
 
 #### 1. Create sensitivity labels
 
@@ -149,7 +149,13 @@ To learn more, see:
 
 - [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels)
 
-#### 2. Publish your labels and educate your users
+#### 2. Enable and configure sensitivity labels for containers
+
+You can apply sensitivity labels to containers, like Microsoft Teams or SharePoint sites, and Microsoft Loop workspaces. Items in a container don't inherit the sensitivity label.
+
+[!INCLUDE [copilot-e5-e3-enable-sensitivity-labels-containers](./includes/copilot-e5-e3-enable-sensitivity-labels-containers.md)]
+
+#### 3. Publish your labels and educate your users
 
 1. Add your labels to a publishing policy. When they're published, users can manually apply the labels in their Office apps. The publishing policies also have settings that you need to consider, like a default label and requiring users to label their data.
 
@@ -157,35 +163,15 @@ To learn more, see:
 
 2. Educate your users and provide guidance on when to apply the correct sensitivity label.
 
-    Users should change the label if needed, especially for more sensitive content.
+    Users should change a label if needed, especially for more sensitive content.
 
     To help you with this step, see [End-user documentation for sensitivity labels](/purview/get-started-with-sensitivity-labels#end-user-documentation-for-sensitivity-labels).
 
 3. Monitor your labels. Select **Information protection** > **Reports**. You can see the usage of your labels.
 
-#### 3. Enable sensitivity labels for files in SharePoint and OneDrive
+#### 4. Enable sensitivity labels for files in SharePoint and OneDrive
 
 [!INCLUDE [copilot-e5-e3-enable-sensitivity-labels-sharepoint-onedrive](./includes/copilot-e5-e3-enable-sensitivity-labels-sharepoint-onedrive.md)]
-
-#### 4. Apply a sensitivity label to your SharePoint document libraries
-
-You can use a sensitivity label on your SharePoint document libraries, and make this label the default label that applies to all document libraries. This configuration is appropriate when your document libraries store files with the same level of sensitivity.
-
-The SharePoint site admin can do this task.
-
-1. In your SharePoint site, select **Documents** > **Settings** icon > **Library settings** > **More library settings**.
-2. In **Default sensitivity labels** (Apply label to items in this list or library), select your custom sensitivity label from the drop-down list.
-3. **Save** your changes.
-
-When set:
-
-- SharePoint automatically applies the label to the files, which can include [files with a lower sensitivity label](/purview/sensitivity-labels-sharepoint-default-label#will-an-existing-label-be-overridden).
-- It provides a baseline level of protection that's specific to the document library. It doesn't require content inspection and doesn't rely on end users.
-
-To learn more, see:
-
-- [Overview - Default sensitivity labels for SharePoint document libraries](/purview/sensitivity-labels-sharepoint-default-label)
-- [Steps - Add a sensitivity label to SharePoint document library](https://support.microsoft.com/office/add-a-sensitivity-label-to-sharepoint-document-library-54b1602b-db0a-4bcb-b9ac-5e20cbc28089)
 
 ### Detect sensitive information and protect it from unauthorized sharing or leakage
 
@@ -232,7 +218,9 @@ For example, your organization might have regulatory requirements that require y
 
 If you have stale data in your organization, then create and use retention policies. These policies help Copilot return more accurate information from your documents and emails.
 
-Settings in a retention policy apply at the container level, like a SharePoint site or an Exchange mailbox. Data in that container automatically inherits these settings. If you need [exceptions for individual emails or documents](/purview/create-retention-labels-data-lifecycle-management), then use retention labels. For example, you have a retention policy to delete data in OneDrive if the data is older than one year. But, users can apply retention labels to keep specific documents from automatic deletion.
+Settings in a retention policy apply at the container level, like a SharePoint site or an Exchange mailbox. Data in that container automatically inherits these settings.
+
+If you need [exceptions for individual emails or documents](/purview/create-retention-labels-data-lifecycle-management), then use retention labels. For example, you have a retention policy to delete data in OneDrive if the data is older than one year. But, users can apply retention labels to specific documents to keep these documents from automatic deletion.
 
 1. To create retention policies, sign into the [Microsoft Purview portal](https://purview.microsoft.com/) as a Compliance Administrator.
 

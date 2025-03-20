@@ -3,9 +3,9 @@ title: Managing Microsoft 365 endpoints
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/19/2024
+ms.date: 01/08/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.subservice: network
 ms.localizationpriority: medium

@@ -7,7 +7,7 @@ author: kwekuako
 manager: scotv
 ms.date: 06/25/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -47,7 +47,7 @@ You can assign users to a role in two different ways:
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198030).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a36dde8d-891d-422f-bb4d-7301df75fe4a]
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
