@@ -25,7 +25,7 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
-ms.date: 05/13/2024
+ms.date: 03/20/2025
 ---
 
 # Manage self-service license requests in the Microsoft 365 admin center
