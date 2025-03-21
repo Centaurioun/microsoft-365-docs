@@ -57,9 +57,9 @@ URLs in this category have the following characteristics:
 - Are able to have required security elements provided in the service rather than inline on the network
 - Account for around 70-80% of the volume of traffic to the Microsoft 365 service
 
-For more information about Microsoft 365 endpoints and how they are categorized and managed, see [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md).
+For more information about Microsoft 365 endpoints and how they're categorized and managed, see [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md).
 
-Under most circumstances, you should only need to use URL endpoints in a [browser PAC file](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-microsoft-365-traffic) where the endpoints are configured to be sent direct, rather than to the proxy. If you need just the URLs for the optimize category, use the first query, or use the second query for IP prefixes.
+Under most circumstances, you should only need to use URL endpoints in a [browser PAC file](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-microsoft-365-traffic) where the endpoints are configured to be sent direct, rather than to the proxy. If you need just the URLs for the Optimize category, use the first query, or use the second query for IP prefixes.
 
 **Optimize URLs**
 
@@ -75,7 +75,7 @@ Under most circumstances, you should only need to use URL endpoints in a [browse
 
 ### 2. Implementing split tunnel for Microsoft 365 endpoints
 
-Now that we have identified these critical endpoints, we need to divert them away from the VPN tunnel and allow them to use the user's local Internet connection to connect directly to the service. The manner in which this is accomplished will vary depending on the VPN product and machine platform used but most VPN solutions will allow some simple configuration of policy to apply this logic. For information VPN platform-specific split tunnel guidance, see [HOWTO guides for common VPN platforms](#howto-guides-for-common-vpn-platforms).
+Now that we have identified these critical endpoints, we need to divert them away from the VPN tunnel and allow them to use the user's local Internet connection to connect directly to the service. The manner in which this is accomplished will vary depending on the VPN product and machine platform used but most VPN solutions allow some configuration of policy to apply this logic. For information VPN platform-specific split tunnel guidance, see [HOWTO guides for common VPN platforms](#howto-guides-for-common-vpn-platforms).
 
 If you wish to test the solution manually, you can execute the following PowerShell example to emulate the solution at the route table level. This example adds a route for each of the Teams Media IP subnets into the route table. You can test Teams media performance before and after using the [Teams network assessment tool](https://www.microsoft.com/en-us/download/details.aspx?id=103017&lc=1033&msockid=2dc7410f01b361853273545c009060bb) and observe the difference in routes for the specified endpoints.
 
@@ -89,7 +89,7 @@ $destPrefix = " 52.112.0.0/14, 52.122.0.0/15, 2603:1063::/38" # Teams Media endp
 foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -InterfaceIndex $intIndex -NextHop $gateway}
 ```
 
-In the above script, _$intIndex_ is the index of the interface connected to the internet (find by running **get-netadapter** in PowerShell; look for the value of _ifIndex_) and _$gateway_ is the default gateway of that interface (find by running **ipconfig** in a command prompt or **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway).NextHop** in PowerShell).
+In the preceding script, _$intIndex_ is the index of the interface connected to the internet (find by running **get-netadapter** in PowerShell; look for the value of _ifIndex_) and _$gateway_ is the default gateway of that interface (find by running **ipconfig** in a command prompt or **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway).NextHop** in PowerShell).
 
 Once you have added the routes, you can confirm that the route table is correct by running **route print** in a command prompt or PowerShell.
 
@@ -131,7 +131,7 @@ The VPN client should be configured so that traffic to the **Optimize** IPs are 
 
 ## HOWTO guides for common VPN platforms
 
-This section provides links to detailed guides for implementing split tunneling for Microsoft 365 traffic from the most common partners in this space. We'll add additional guides as they become available.
+This section provides links to detailed guides for implementing split tunneling for Microsoft 365 traffic from the most common partners in this space. We'll add more guides as they become available.
 
 - **Windows 10 VPN client**: [Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco Anyconnect**: [Optimize Anyconnect Split Tunnel for Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
