@@ -66,9 +66,6 @@ By default, prebuilt document processing is turned on for libraries in all Share
     > You must be a member of any site that you want to include in the CSV file.
 
     > [!NOTE]
-    > Disabling a site after a model is made available to process files on that site doesn't disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created on that site or in a content center.
-
-    > [!NOTE]
     > For multi-geo environments, the **No sites** and **Selected sites** settings apply only to the primary geo of multi-geo tenants. If you want to restrict or add sites in nonprimary geos, contact Microsoft support.
 
 8. Select **Save**.
