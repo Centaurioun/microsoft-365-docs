@@ -56,7 +56,7 @@ By default, prebuilt document processing is turned on for libraries in all Share
 
 7. On the **Sites where models can be used** panel, change the setting from **All sites** to **Selected sites (up to 100)**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected. To allow model creation on content center sites, select **Enable prebuilt model creation in all content center sites (recommended)**.
 
-    ![Screenshot of the site scoping settings showing the option to enable prebuilt model creation in the content center.](../media/content-understanding/prebuilt-site-scoping.png)
+    ![Screenshot of the site scoping settings showing the option to enable prebuilt model creation in the content center.](../media/content-understanding/prebuilt-site-settings.png)
 
     > [!NOTE]
     > You must be a member of any site that you want to include in the CSV file.
