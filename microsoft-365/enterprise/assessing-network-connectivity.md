@@ -81,6 +81,7 @@ The browser-based tool displays the following information:
   - Microsoft 365 Exchange Online service front door location
   - Optimal Microsoft 365 Exchange Online service front door(s) for user location
   - Customers in your metro area with better performance
+
 The Advanced Tests downloadable application provides the following additional information:
 - Details and solutions tab (appended)
   - User's default gateway
@@ -98,7 +99,6 @@ The Advanced Tests downloadable application provides the following additional in
 - Network path diagnostics that include tracert and latency data for the Exchange Online, SharePoint Online and Teams services
 
 You can read about the Microsoft 365 connectivity test and provide feedback at this [Microsoft 365 Networking](https://techcommunity.microsoft.com/discussions/deploymentnetworking/announcing-microsoft-365-network-connectivity-test-for-microsoft-365-copilot-pub/4355778) blog post. 
-
 Information about future updates to this tool and other Microsoft 365 networking updates will be posted to the [Microsoft 365 Networking](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) blog.
 Here's a short link you can use to come back: [https://aka.ms/pnc](https://aka.ms/pnc)
 
