@@ -3,7 +3,7 @@ title: "Microsoft 365 Network Insights"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/05/2024
+ms.date: 03/24/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -21,45 +21,45 @@ description: "Microsoft 365 Network Insights"
 
 # Microsoft 365 Network Insights
 
-__Network insights__ are actionable issues that may impact user experience when using Microsoft 365 apps, we detect insights based on network optics received from Microsoft 365 apps for your tenant users. Insights are available to view only by administrative users in your tenant. Insights can be viewed from [Network Connectivity](https://admin.cloud.microsoft/#/networkperformance) in Microsoft 365 Admin Center. 
+Network insights are actionable issues that may impact user experience when using Microsoft 365 apps, we detect insights based on network optics received from Microsoft 365 apps for your tenant users. Insights are available to view only by administrative users in your tenant. Insights can be viewed from [Network Connectivity](https://admin.cloud.microsoft/#/networkperformance) in Microsoft 365 Admin Center. 
 
 Insights are intended to help address issues at your network perimeters for your office locations. Each insight provides live details about a specific issue for each geographic location where users are accessing your tenant.
 
 These are network insights that might be shown for each office location:
 
-#### __1.      Your connectivity to critical Microsoft 365 domains is failing__
+#### 1. Your connectivity to critical Microsoft 365 domains is failing
 
-We are detecting connectivity (HTTPS) failures to the following domains: *.cloud.microsoft, *.static.microsoft, *.usercontent.microsoft.
+We are detecting connectivity (HTTPS) failures to the following domains: `*.cloud.microsoft`, `*.static.microsoft`, `*.usercontent.microsoft`.
 
-- __1a What does this insight mean?__
+- 1a What does this insight mean?
 
   This means some or all your users cannot connect to subdomains or hosts within the above-mentioned wild card domains.
   
-- __1b What should I do?__
+- 1b What should I do?
 
-  Check your network perimeter devices or proxy to ensure HTTPS connectivity is allowed to hosts in the wildcard domains *.cloud.microsoft, *.static.microsoft, *.usercontent.microsoft or any of their subdomains. 
+  Check your network perimeter devices or proxy to ensure HTTPS connectivity is allowed to hosts in the wildcard domains `*.cloud.microsoft`, `*.static.microsoft`, `*.usercontent.microsoft` or any of their subdomains. 
   
-#### __2. WebSocket connection to critical Microsoft 365 domains is failing__
+#### 2. WebSocket connection to critical Microsoft 365 domains is failing
 
-We are detecting WebSocket (WSS) connection failures to the domain: *.cloud.microsoft. This will result in Copilot not working correctly for your users.
+We are detecting WebSocket (WSS) connection failures to the domain: `*.cloud.microsoft`. This will result in Copilot not working correctly for your users.
 
-- __2a What does this insight mean?__
+- 2a What does this insight mean?
 
-  This means some or all your users cannot connect using WebSocket protocol to hosts that are part of the wildcard domain *.cloud.microsoft or its subdomains.
+  This means some or all your users cannot connect using WebSocket protocol to hosts that are part of the wildcard domain `*.cloud.microsoft` or its subdomains.
   
-- __2b What should I do?__
+- 2b What should I do?
 
-  Check your network perimeter devices or proxy to ensure WebSocket protocol is allowed for connections to hosts in the wildcard domain *.cloud.microsoft or its subdomains. 
+  Check your network perimeter devices or proxy to ensure WebSocket protocol is allowed for connections to hosts in the wildcard domain `*.cloud.microsoft` or its subdomains. 
   
-#### __3 Network provider devices are affecting your network__
+#### 3 Network provider devices are affecting your network
 
-There is one or more cloud proxy like services that are affecting your connectivity to Microsoft 365 services. These services are causing ‎higher latency and lower throughput‎ for users in your network as compared to other users in your area.
+There is one or more cloud proxy like services that are affecting your connectivity to Microsoft 365 services. These services are causing higher latency and lower throughput for users in your network as compared to other users in your area.
 
-- __3a What does this insight mean?__
+- 3a What does this insight mean?
 
   For traffic coming from your tenant users, we detected devices in the network path that perform interception by decrypting the HTTPS traffic to Microsoft 365 services.
   
-- __3b What should I do?__
+- 3b What should I do?
 
   We recommend you bypass Microsoft 365 domains from TLS decryption, traffic interception, deep packet inspection, and network packet and content filtering.
   
