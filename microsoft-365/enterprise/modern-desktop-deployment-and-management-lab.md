@@ -118,5 +118,5 @@ The following sections describe the scenarios supported by the lab guides.
 
 - [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 for business](https://products.office.com/business/office)
-- [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+- [Introducing Enterprise Mobility + Security](https://www.microsoft.com/licensing/product-licensing/enterprise-mobility-security)
 - [Windows for business](https://www.microsoft.com/windows/business)
