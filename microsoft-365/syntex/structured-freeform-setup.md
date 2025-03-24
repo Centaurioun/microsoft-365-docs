@@ -15,7 +15,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set up and manage structured and freeform document processing in SharePoint.
+description: Learn how to set up and manage the structured and freeform document processing service in SharePoint.
 ---
 
 # Set up and manage structured and freeform document processing in SharePoint
