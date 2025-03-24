@@ -267,7 +267,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 ### Microsoft 365 Copilot Chat
 - **Audit copilot queries leaving the Microsoft 365 boundary**  
   Allow admins to track and review copilot-generated queries that access external data, ensuring robust compliance and oversight.
-  **Admin control over Copilot web search access** [Web]  
+- **Admin control over Copilot web search access** [Web]  
   Administrators can now manage user access to web search within Copilot using policies in config.office.com. This provides better control over how users interact with web content through Copilot. <a href="/copilot/microsoft-365/manage-public-web-access" target="_blank">Learn more.</a>
 - **Focus Copilot responses on specific emails in Microsoft 365 Copilot Chat** [Windows, Web, Android, iOS, Mac]  
   Narrow down Copilot responses by specifying a particular email folder, sub-folder, or subject line. Get more precise assistance by directing Copilot to the emails that matter most to you.
@@ -2403,7 +2403,7 @@ Updates released between January 8, 2025, and January 23, 2025.
 ### Microsoft 365 Copilot
 - **AI-generated Images with Copilot and Microsoft Designer** [Windows, Web, Mac]  
   Microsoft Designer integration in Copilot chat allows you to generate that perfect image, providing limitless creativity and bringing your presentations to life. <a href="https://support.microsoft.com/topic/6cd168f3-1cf0-478e-bd75-31d6526d2504" target="_blank">Learn more.</a>
-### PowerpPoint
+### PowerPoint
 - **Access your organization’s approved images** [Mac]  
   Seamlessly connect to your SharePoint asset library to find and add brand-approved images, keeping your presentations and documents consistently on brand.
 ### Microsoft Teams
