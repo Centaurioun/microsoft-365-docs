@@ -21,7 +21,7 @@ description: "Microsoft 365 Network Insights"
 
 # Microsoft 365 Network Insights
 
-Network insights are actionable issues that may impact user experience when using Microsoft 365 apps, we detect insights based on network optics received from Microsoft 365 apps for your tenant users. Insights are available to view only by administrative users in your tenant. Insights can be viewed from [Network Connectivity](https://admin.cloud.microsoft/#/networkperformance) in Microsoft 365 Admin Center. 
+Network insights are actionable issues that might affect user experience when using Microsoft 365 apps, we detect insights based on network optics received from Microsoft 365 apps for your tenant users. Insights are available to view only by administrative users in your tenant. Insights can be viewed from [Network Connectivity](https://admin.cloud.microsoft/#/networkperformance) in Microsoft 365 Admin Center. 
 
 Insights are intended to help address issues at your network perimeters for your office locations. Each insight provides live details about a specific issue for each geographic location where users are accessing your tenant.
 
@@ -33,7 +33,7 @@ We are detecting connectivity (HTTPS) failures to the following domains: `*.clou
 
 - 1a What does this insight mean?
 
-  This means some or all your users cannot connect to subdomains or hosts within the above-mentioned wild card domains.
+  This means some or all your users can't connect to subdomains or hosts within the above-mentioned wild card domains.
   
 - 1b What should I do?
 
@@ -45,15 +45,15 @@ We are detecting WebSocket (WSS) connection failures to the domain: `*.cloud.mic
 
 - 2a What does this insight mean?
 
-  This means some or all your users cannot connect using WebSocket protocol to hosts that are part of the wildcard domain `*.cloud.microsoft` or its subdomains.
+  This means some or all your users can't connect using WebSocket protocol to hosts that are part of the wildcard domain `*.cloud.microsoft` or its subdomains.
   
 - 2b What should I do?
 
   Check your network perimeter devices or proxy to ensure WebSocket protocol is allowed for connections to hosts in the wildcard domain `*.cloud.microsoft` or its subdomains. 
   
-#### 3 Network provider devices are affecting your network
+#### Three Network provider devices are affecting your network
 
-There is one or more cloud proxy like services that are affecting your connectivity to Microsoft 365 services. These services are causing higher latency and lower throughput for users in your network as compared to other users in your area.
+There is one or more cloud proxy-like services that are affecting your connectivity to Microsoft 365 services. These services are causing higher latency and lower throughput for users in your network as compared to other users in your area.
 
 - 3a What does this insight mean?
 
