@@ -48,7 +48,7 @@ When you buy Microsoft business products or services, you can use an existing pa
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
-- If you have a Microsoft Online Subscription Agreement (MOSA), you must be at least a Billing Administrator to do the tasks in this article. For more information, see [[About admin roles]](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA), you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - If you have an MCA billing account type and you're a Billing profile owner or contributor, you can use the billing profile that's backed by a credit or debit card or invoice payment to make purchases or pay bills. If you're a Billing invoice manager, you can only use a billing profile to pay bills. To learn more about billing profiles and roles, see [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
 
 > [!NOTE]
@@ -57,49 +57,38 @@ When you buy Microsoft business products or services, you can use an existing pa
 ## Add a payment method
 
 > [!IMPORTANT]
->
-> Adding a payment method doesn't associate it with any subscriptions or billing profiles you have. If you want to use the new payment method to pay for a subscription, you must move a subscription to it or replace an existing payment method in a billing profile.
+> Adding a payment method doesn't associate it with any subscriptions or billing profiles you have. If you want to use the new payment method to pay for a subscription, you must move a subscription to it or replace an existing payment method in a billing profile or subscription.
 
-If you have an MOSA billing account type, you can replace the payment method for all subscriptions that use another payment method as part of adding a new one. You can also [replace a payment method](#replace-a-payment-method) later on. To assign a single subscription to the payment method, see [Replace the payment method for a single subscription](#replace-the-payment-method-for-a-single-subscription).
+If you have an MOSA billing account type, you can replace the payment method for all subscriptions that use another payment method as part of adding a new one. You can also replace a payment method later on.
 
-### Add a payment methof for an MCA or MOSA account
+## Add a payment method for an MCA or MOSA account
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-   - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
+   - If you're using the **Simplified view**, select the **Products** tab, then select **View payment methods**.
+   - If you're using the **Dashboard view**, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 
 2. Select **Add a payment method**.
 3. If your country/region supports an alternate payment option, you see the selection in this step. Select the option you want to add and follow the **Add payment method** form.
 
-    - Some alternate payment types might redirect you to your bank for verification. Don't click out of the Microsoft 365 admin center tab. After the verification is complete, you're automatically redirected back to the admin center.
+   - Some alternate payment types might redirect you to your bank for verification. Don't click out of the Microsoft 365 admin center tab. After the verification is complete, you're automatically redirected back to the admin center.
 
 4. In the **Add a payment method** pane, enter the information for the new payment method, then select **Save**.
 5. To use the new payment method to pay for a subscription, you must move a subscription to it or replace an existing payment method in a billing profile.
-
-<!--
-## Watch: Update your payment method
-
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198207).
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ad949d04-8b23-425c-93f1-264ebed05738]
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
--->
 
 ## Replace a payment method
 
 When you replace an existing payment method, you can add a new one or use a payment method that's already in your account.
 
-If you have an MCA billing account type, you can replace the payment method that's linked with a billing profile. If you have an MOSA billing account type, you can replace the payment method that's associated with one or more subscription.
-
 > [!IMPORTANT]
 > Replacing a payment method doesn't delete the existing payment method. The old payment method is still available for you to select and use for other subscriptions and billing profiles. Learn how to delete a payment method.
 
+If you have an MCA billing account type, you can replace the payment method that's linked with a billing profile. If you have an MOSA billing account type, you can replace the payment method that's associated with one or more subscription.
+
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
-   - If you're using the **Simplified view**, select Billing from the navigation menu on the left, then select View payment methods.
-   - If you're using the **Dashboard view**, go to the **Billing** > **Bills & payments** page, and select the **Payment methods** tab.
+   - If you're using the **Simplified view**, select the **Products** tab, then select **View payment methods**.
+   - If you're using the **Dashboard view**, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 
 2. Select the **More actions** button (three dots) for the payment method you want to replace, then select **Replace**.
 3. The **Replace payment method** wizard opens and you see the details for the current payment method. The **Replace for** section indicates if you're replacing the payment method for subscriptions (MOSA) or a billing profile (MCA).
@@ -116,14 +105,14 @@ You can change the name, billing address, or expiration date for an existing cre
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
-   - If you're using the **Simplified view**, select Billing from the navigation menu on the left, then select **View payment methods**.
-   - If you're using the **Dashboard view**, go to the **Billing** > **Bills & payments** page, and select the **Payment methods** tab.
+   - If you're using the **Simplified view**, select the **Products** tab, then select **View payment methods**.
+   - If you're using the **Dashboard view**, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 
-2. Select the **More actions** button (three dots) for the payment method you want to update, then select **Edit**.
+2. Select the **More actions** button (three dots) for the payment method you want to update, then select Edit.
 3. In the **Edit payment method** pane, update your payment method information, including the name on the credit or debit card, billing address, or expiration date.
 
-    > [!IMPORTANT]
-    > If you update a credit or debit card, you must enter the security code before any changes are saved.
+   > [!IMPORTANT]
+   > If you update a credit or debit card, you must enter the security code before any changes are saved.
 
 4. Select **Save**.
 
@@ -137,28 +126,28 @@ If a payment method isn't associated with any subscriptions or billing profiles,
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
-   - If you're using the **Simplified view**, select Billing from the navigation menu on the left, then select **View payment methods**.
-   - If you're using the **Dashboard view**, go to the **Billing** > **Bills & payments** page, and select the **Payment methods** tab.
+   - If you're using the **Simplified view**, select the **Products** tab, then select **View payment methods**.
+   - If you're using the **Dashboard view**, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 
 2. Select the **More actions** button (three dots) for the payment method you want to delete, then select **Delete**.
-3. The **Delete payment method** wizard opens. If the payment method isn't associated with any billing profiles or subscriptions, you see the message "No subscriptions linked to this payment method."
+3. The **Delete payment method** wizard open. If the payment method isn't associated with any billing profiles or subscriptions, you see the message "No subscriptions linked to this payment method."
 4. Select **Delete payment method**. When you see the success message, select **Close**.
 
 ### Delete a payment method with subscriptions or billing profiles attached
 
-If a payment method is attached to any subscriptions or billing profiles, you must replace it with an existing payment method or add a new one, before deleting the payment method. This can be completed in the delete payment method flow.
+If a payment method is attached to any subscriptions or billing profiles, you must replace it with an existing payment method or add a new one before deleting the payment method. This can be completed in the delete payment method flow.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
-   - If you're using the **Simplified view**, select Billing from the navigation menu on the left, then select **View payment methods**.
-   - If you're using the **Dashboard view**, go to the **Billing** > **Bills & payments** page, and select the **Payment methods** tab.
+   - If you're using the **Simplified view**, select the **Products** tab, then select **View payment methods**.
+   - If you're using the **Dashboard view**, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 
-2. Select the **More actions** button (three dots) for the payment method you want to delete, then select **Delete**.
+2. Select the **More actions** button (three dots) for the payment method you want to delete then select **Delete**.
 3. The **Delete payment method** wizard opens and you see the payment method details of the payment method that's currently in use. The **Replace for** section shows the number of billing profiles or subscriptions associated with the payment method.
-4. Under **Choose payment method to move subscriptions**, select either **Use another payment method** or **Add a payment method**.
+4. Under **Choose payment method to move subscriptions**, select either **Select a payment method** or **Add a new payment method**.
 
-   - If you chose **Use another payment method**, select an alternate payment method from the drop-down list, then select **Next**.
-   - If you chose **Add a payment method**, select **Next**. On the **Add a new payment method** page, enter the payment method details, then select **Next**.
+   - If you chose **Select a payment method**, select an alternate payment method from the drop-down list, then select **Next**.
+   - If you chose **Add a new payment method**, select **Next**. On the **Add a new payment method** page, enter the payment method details, then select **Next**.
 
 5. On the **Review details and delete** page, you see the current payment method, the new payment method, and the associated subscriptions or billing profiles associated with the new payment method. Select **Replace and delete**, then select **Close**.
 
@@ -166,7 +155,7 @@ If a payment method is attached to any subscriptions or billing profiles, you mu
 
 | Issue                                    | Troubleshooting steps |
 |:-----------------------------------------|:----------------------|
-|**My credit or debit card was declined.** |If you pay by credit or debit card, and your card is declined, you receive an email that says Microsoft was unable to process the payment. Double-check that the card details&mdash;card number, expiration date, name on the card, and address, including city, state, and ZIP code&mdash;appear exactly as they do on the card and your statement. You can update your card information and resubmit the payment.</br></br>Also confirm you have sufficient funds in your account to support the payment.</br></br>For more information, see [What if I have an outstanding balance?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)</br></br>If you continue to see the “declined” message, contact your bank. It's possible that your card isn't active, or you might have insufficient funds. |
+|**My credit or debit card was declined.** |If you pay by credit or debit card, and your card is declined, you receive an email that says Microsoft was unable to process the payment. Double-check that the card details&mdash;card number, expiration date, name on the card, and address, including city, state, and ZIP code&mdash;appear exactly as they do on the card and your statement. You can update your card information and resubmit the payment.</br></br>Also confirm you have sufficient funds in your account to support the payment.</br></br>For more information, see [What if I have an outstanding balance?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)</br></br>If you continue to see the "declined" message, contact your bank. It's possible that your card isn't active, or you might have insufficient funds. |
 |**I want to update a credit or debit card number.** |You can't change the card on an existing payment method. If you want to replace a credit or debit card number, [replace it with a different payment method](#replace-a-payment-method), which moves all active subscriptions from the payment method to the new one. |
 |**I only have one credit or debit card on my account and I want to remove it.** |If you only have one payment method, follow the steps in [Delete a payment method](#delete-a-payment-method). |
 |**I can't add my credit or debit card.**  |You must use a payment method issued from the same country/region as your tenant. If you have trouble entering your credit or debit card information, you can  [contact support](../../admin/get-help-support.md). |
