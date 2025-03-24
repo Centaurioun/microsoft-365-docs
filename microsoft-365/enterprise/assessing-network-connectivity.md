@@ -30,7 +30,9 @@ description: "Microsoft 365 is designed to enable customers all over the world t
 
 *This article applies to Enterprise customers connecting to Microsoft 365 services.*
 
-![enterprisenetworklastmile3](media/assessing-network-connectivity/enterprisenetworklastmile3.jpg)Microsoft 365 is designed to enable customers all over the world to connect to the service using an internet connection. As the service evolves, the security, performance, and reliability of Microsoft 365 are improved based on customers using the internet to establish a connection to the service.
+![enterprisenetworklastmile3](media/assessing-network-connectivity/enterprisenetworklastmile3.jpg)
+
+Microsoft 365 is designed to enable customers all over the world to connect to the service using an internet connection. As the service evolves, the security, performance, and reliability of Microsoft 365 are improved based on customers using the internet to establish a connection to the service.
 
 Customers planning to use Microsoft 365 should assess their existing and forecasted internet connectivity needs as a part of the deployment project. For enterprise class deployments reliable and appropriately sized internet connectivity is a critical part of consuming Microsoft 365 features and scenarios.
   
@@ -38,7 +40,7 @@ Network evaluations can be performed by many different people and organizations 
   
 A comprehensive network assessment provides possible solutions to networking design challenges along with implementation details. Some network assessments show that optimal network connectivity to Microsoft 365 can be accommodated with minor configuration or design changes to the existing network and internet egress infrastructure.
 
-Some assessments indicate network connectivity to Microsoft 365 will require additional investments in networking components. For example, enterprise networks that span branch offices and multiple geographic regions might require investments in SD-WAN solutions or optimized routing infrastructure to support internet connectivity to Microsoft 365. Occasionally an assessment indicates network connectivity to Microsoft 365 is influenced by regulation or performance requirements for scenarios such as [Microsoft Teams media quality](https://learn.microsoft.com/en-us/microsoftteams/prepare-network). These additional requirements might lead to investments in internet connectivity infrastructure, routing optimization, and specialized direct connectivity.
+Some assessments indicate network connectivity to Microsoft 365 will require additional investments in networking components. For example, enterprise networks that span branch offices and multiple geographic regions might require investments in SD-WAN solutions or optimized routing infrastructure to support internet connectivity to Microsoft 365. Occasionally an assessment indicates network connectivity to Microsoft 365 is influenced by regulation or performance requirements for scenarios such as [Microsoft Teams media quality](/microsoftteams/prepare-network). These additional requirements might lead to investments in internet connectivity infrastructure, routing optimization, and specialized direct connectivity.
 
 Some resources to help you assess your network:
 
