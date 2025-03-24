@@ -7,7 +7,7 @@ ms.author: aaroncz
 author: cdmm12
 manager: aaroncz
 ms.reviewer: alainme
-ms.date: 12/06/2024
+ms.date: 03/24/2025
 ms.audience: ITPro
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-enterprise
