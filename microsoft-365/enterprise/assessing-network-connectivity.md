@@ -30,7 +30,7 @@ description: "Microsoft 365 is designed to enable customers all over the world t
 
 *This article applies to Enterprise customers connecting to Microsoft 365 services.*
 
-![enterprisenetworklastmile3](media/assessing-network-connectivity/enterprisenetworklastmile3.jpg)
+![Diagram showing enterprise network last mile](media/assessing-network-connectivity/enterprisenetworklastmile3.jpg)
 
 Microsoft 365 is designed to enable customers all over the world to connect to the service using an internet connection. As the service evolves, the security, performance, and reliability of Microsoft 365 are improved based on customers using the internet to establish a connection to the service.
 
