@@ -61,6 +61,8 @@ You can create a new request without needing to dismiss the notification.
 
 - Notification showing that the initial request has been sent, and a second request is processing.
 
+    ![Screenshot of notifications that a request has been sent and a second request is processing.](../media/content-understanding/esignature-notification-send-second-request.png)
+
 You can also track multiple requests with dismissible stacked notifications.
 
 - Each notification represents a distinct eSignature request.
