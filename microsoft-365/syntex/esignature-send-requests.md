@@ -47,7 +47,7 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
 #### Processing notifications
 
-When you create a request, notifications are displayed to inform you of the processing status.
+When you create a request, you receive notifications that update you on the processing status.
 
 - Notification that the request is processing
 
@@ -59,11 +59,11 @@ When you create a request, notifications are displayed to inform you of the proc
 
 You can create a new request without needing to dismiss the notification.
 
-- Notification showing that the initial request has been sent, and a second request is processing
+- Notifications that the initial request has been sent, and that a second request is processing
 
     ![Screenshot of notifications that a request has been sent and a second request is processing.](../media/content-understanding/esignature-notification-send-second-request.png)
 
-You can also track multiple requests with dismissible stacked notifications.
+You can also keep track of multiple requests with stacked notifications that can be dismissed.
 
 - Each notification represents a distinct eSignature request
 
