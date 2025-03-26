@@ -12,12 +12,12 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 03/06/2025
+ms.date: 04/02/2025
 ---
 
 # Export prompts that users saved, liked, or shared in Copilot Prompt Gallery
 
-In [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts), users can save or share prompts they created, including sharing prompts with a specific team (in Microsoft Teams) that they're a member of. Users can also like prompts created by others. As an IA Admin, you can use Windows PowerShell to export data to a file about either of the following types of prompts in Copilot Prompt Gallery:
+In [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts), users can save or share prompts they created, including sharing prompts with a specific team (in Microsoft Teams) that they're a member of. Users can also like prompts created by others. As an admin, you can use Windows PowerShell to export data to a file about either of the following types of prompts in Copilot Prompt Gallery:
 
 - The saved, liked, and shared prompts of a specific user.
 - The prompts shared with a specific team.
