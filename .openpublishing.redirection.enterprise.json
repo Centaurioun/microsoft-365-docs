@@ -1429,6 +1429,11 @@
       "source_path": "microsoft-365/enterprise/contoso-win10.md",
       "redirect_url": "/microsoft-365/enterprise/contoso-win11",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/office-365-network-mac-perf-nppux.md",
+      "redirect_url": "/microsoft-365/enterprise/office-365-network-mac-perf-nppdetails",
+      "redirect_document_id": false
    }
   ]
 }
