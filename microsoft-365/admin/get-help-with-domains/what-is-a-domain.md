@@ -2,7 +2,7 @@
 title: "What is a domain?"
 f1.keywords:
 - CSH
-ms.author: nkagole
+ms.author: scotv
 author: nataliekagole
 manager: scotv
 ms.date: 08/12/2024
