@@ -7,7 +7,7 @@ author: kwekuako
 manager: scotv
 ms.date: 10/01/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -55,7 +55,7 @@ To complete these steps, you must be a [password administrator](about-admin-role
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198214).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=97a8f9fb-6e3c-4432-beca-3f8233c3d6dc]
 
 ## Steps: Let people reset their own passwords
 

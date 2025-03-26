@@ -1,3 +1,4 @@
+items:
 - name: Microsoft 365 for enterprise documentation and resources
   href: index.yml
 - name: Microsoft 365 for enterprise overview
@@ -106,6 +107,8 @@
               href: office-365-network-mac-perf-nppdata.md
             - name: Microsoft 365 Network Provider Details
               href: office-365-network-mac-perf-nppdetails.md
+            - name: Microsoft 365 Connection Blockers 
+              href: office-365-network-mac-perf-connection-blockers.md
             - name: Microsoft 365 Network connectivity test tool
               href: office-365-network-mac-perf-onboarding-tool.md
     - name: Microsoft 365 Networking Partner Program
@@ -165,6 +168,8 @@
             - name: Exchange Online monitoring
               href: microsoft-365-exchange-monitoring.md
               items:
+                - name: Service advisories for non-compliant shared mailboxes
+                  href: microsoft-365-non-compliant-shared-mailboxes-exo-service-advisory.md
                 - name: Service advisories for messages pending delivery to external recipients
                   href: microsoft-365-external-recipient-service-alerts.md
                 - name: Service advisories for Mailbox utilization
@@ -458,7 +463,7 @@
             - name: Performance troubleshooting plan
               href: performance-troubleshooting-plan.md
 
-- name: Windows 10
+- name: Windows 11
   items:
     - name: How to check release health
       href: /windows/deployment/update/check-release-health
@@ -590,8 +595,8 @@
       href: contoso-networking.md
     - name: Identity
       href: contoso-identity.md
-    - name: Windows 10 Enterprise
-      href: contoso-win10.md
+    - name: Windows 11 Enterprise
+      href: contoso-win11.md
     - name: Microsoft 365 Apps for enterprise
       href: contoso-o365pp.md
     - name: Mobile device management

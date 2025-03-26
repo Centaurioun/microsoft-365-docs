@@ -18,7 +18,7 @@ ms.collection:
 - Adm_O365
 - SPO_Content
 ms.custom:
-- commerce_billing
+- commerce_subscriptions
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
@@ -29,7 +29,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to add extra SharePoint file storage in your Microsoft 365 subscription."
-ms.date: 08/28/2023
+ms.date: 12/12/2024
 ---
 
 # Add more SharePoint storage to your subscription

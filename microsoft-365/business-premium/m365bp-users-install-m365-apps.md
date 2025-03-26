@@ -35,11 +35,11 @@ Microsoft 365 Business Premium includes Microsoft 365 Apps, such as Word, PowerP
 
 ## Watch: Install Microsoft 365 Apps
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false title="Install Microsoft 365 Apps for your business"]
+> [!VIDEO dc089097-90e3-4e20-a10b-985e58240101]
 
 Here's how users can install their apps:
 
-1. Go to <https://office.com> and sign in.
+1. Go to <https://m365.cloud.microsoft/> and sign in.
 
 2. Select  **Install apps** \> **Premium Microsoft 365 Apps**. See [Install Microsoft 365 apps](../admin/setup/install-applications.md)
 

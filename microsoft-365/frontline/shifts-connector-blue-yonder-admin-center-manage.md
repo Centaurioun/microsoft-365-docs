@@ -1,7 +1,7 @@
 ---
 title: Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management
 author: lana-chin
-ms.author: v-chinlana
+ms.author: jtremper
 manager: jtremper
 ms.reviewer: harrywong
 ms.topic: how-to
@@ -17,7 +17,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/17/2023
+ms.date: 12/20/2024
 ---
 
 # Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management

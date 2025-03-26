@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 ms.date: 11/19/2024
 audience: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: intro-overview
 ms.service: microsoft-syntex
 search.appverid: 
@@ -23,7 +23,7 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 <!---</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2fdd05b9-cf37-40a8-b3e5-9cb9949a1a62] 
 
 </br>--->
 
