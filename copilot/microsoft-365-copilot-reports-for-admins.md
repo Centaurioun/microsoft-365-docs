@@ -18,8 +18,7 @@ ms.reviewer: alejanl, camillepack
 search.appverid: MET150
 f1.keywords: Copilot reporting options, Copilot usage reports, Microsoft 365 Copilot reports, Power BI templates, Purview audit logs
 audience: Admin
-ai-usage: 
-- ai-assisted
+ai-usage: ai-assisted
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---
@@ -134,11 +133,11 @@ The Microsoft Purview audit logs provide detailed logs of Copilot activities, co
 
 1. Select **Solutions** > **Audit**.
 
-    :::image type="content" source="media/microsoft-365-copilot-reports-for-admins/microsoft-purview-portal-solutions-audit.png" alt-text="In the Microsoft Purview portal, select selection and then select audit.":::
+    :::image type="content" source="media/microsoft-365-copilot-reports-for-admins/microsoft-purview-portal-solutions-audit.png" alt-text="In the Microsoft Purview portal, select solutions and then select audit.":::
 
 1. In **Search** > **Workloads**, select **AIApp** and **Copilot**. Select **Search**. This step searches the audit log search results to only show activities related to Microsoft 365 Copilot. You can also get granular and set a date range and more.
 
-   :::image type="content" source="media/microsoft-365-copilot-reports-for-admins/microsoft-purview-portal-audit-search.png" alt-text="In the Microsoft Purview portal, select selection and then select audit."lightbox="media/microsoft-365-copilot-reports-for-admins/microsoft-purview-portal-audit-search.png":::
+   :::image type="content" source="media/microsoft-365-copilot-reports-for-admins/microsoft-purview-portal-audit-search.png" alt-text="In the Microsoft Purview portal audit feature, go to workloads and select some search options."lightbox="media/microsoft-365-copilot-reports-for-admins/microsoft-purview-portal-audit-search.png":::
 
 To learn more, see:
 
@@ -148,5 +147,5 @@ To learn more, see:
 ## Related articles
 
 - [Microsoft 365 Copilot Setup](microsoft-365-copilot-setup.md)
-- [Activity Reports in Microsoft 365](../admin/activity-reports/activity-reports.md)
-- [Power Platform Admin Center Analytics](/power-platform/admin/analytics)
+- [Activity Reports in Microsoft 365](/microsoft-365/admin/activity-reports/activity-reports)
+- [Power Platform Admin Center Analytics](/power-platform/admin/analytics-powerapps) - ??
