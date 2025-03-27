@@ -5,7 +5,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: laurawi
 ms.date: 03/27/2025
-ms.topic: 
+ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.subservice: 
 ms.localizationpriority: medium
