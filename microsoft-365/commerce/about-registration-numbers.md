@@ -25,7 +25,7 @@ ms.custom:
 - campaignIDs-batch1
 - campaignIDs-batch2
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft business products or services."
-ms.date: 09/05/2024
+ms.date: 03/26/2025
 ---
 
 # About registration numbers and under-review notifications in the Microsoft 365 admin center
