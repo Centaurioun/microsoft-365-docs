@@ -52,7 +52,7 @@ Get started with Microsoft 365 Backup by following these four steps. Select the 
 --->
 
 > [!TIP]
-> **Already have an Azure subscription and the [required admin role](#admin-roles-and-backup-management-privileges)?** Follow these three steps to set up Microsoft 365 Backup in the admin center.<br><br>
+> **Already have an Azure subscription and a [required admin role](#admin-roles-and-backup-management-privileges)?** Follow these three steps to set up Microsoft 365 Backup in the admin center.<br><br>
 > [Step 1. Set up pay-as-you-go billing](https://admin.microsoft.com/#/orgsettings/payasyougo)<br>
 > [Step 2. Turn on Microsoft 365 Backup](https://admin.microsoft.com/#/orgsettings/payasyougo/storage)<br>
 > [Step 3. Start backing up your data by creating backup policies](https://admin.microsoft.com/#/Settings/enhancedRestore)<br>
