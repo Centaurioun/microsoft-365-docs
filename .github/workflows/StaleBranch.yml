@@ -13,7 +13,8 @@ on:
 jobs:
 
   stale-branch:
-    uses: MicrosoftDocs/max-cpub-test/.github/workflows/Shared-StaleBranch.yml@main
+    if: github.repository_owner == 'MicrosoftDocs'
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-StaleBranch.yml@workflows-prod
     with:
         PayloadJson: ${{ toJSON(github) }}
         RepoBranchSkipList: '[
