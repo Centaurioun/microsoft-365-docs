@@ -62,11 +62,17 @@ Here are some example scenarios for using the Microsoft 365 network connectivity
 
 A user complains about being unable to access Microsoft 365 Copilot, you suspect WebSocket protocol maybe blocked for the user. You need to quickly validate if WebSocket connection is successful for the user, you can ask the user to go to [https://connectivity.m365.cloud.microsoft/](https://connectivity.m365.cloud.microsoft/) and click on Run test. This triggers a set of basic tests including WebSocket connection test for Copilot, the user will find the results of the test in the details pane. If WebSocket was blocked for the user, you wouldn't see a green tick but instead a warning to show that WebSocket connection is blocked. 
 
-#### ![webSocketPass](media/office-365-network-mac-perf-onboarding-tool/websocketpass.jpg)
+![webSocketPass](media/office-365-network-mac-perf-onboarding-tool/websocketpass.jpg)
+
+Screenshot showing WebSocket connection being blocked for the user
+
+#### ![WssFail](media/office-365-network-mac-perf-onboarding-tool/wssfail.jpg)
 
 Scenario #2
 
-You receive complaints from users in a branch office that they experience slow connection to Microsoft 365 services, you suspect this could be due to some recent network infrastructure changes at the branch office that results in higher network latency for the users. You can ask the users at the branch office to go to [https://connectivity.m365.cloud.microsoft/](https://connectivity.m365.cloud.microsoft/) and click on Run test. This triggers a set of basic tests including tests to show the distance to network egress and network latency experienced by the user for Exchange online service. 
+You receive complaints from users in a branch office that they experience slow connection to Microsoft 365 services, you suspect this could be due to some recent network infrastructure changes at the branch office that results in higher network latency for the users. You can ask the users at the branch office to go to [https://connectivity.m365.cloud.microsoft/](https://connectivity.m365.cloud.microsoft/) and click on Run test. This triggers a set of basic tests including tests to show the distance to network egress and network latency experienced by the user for Exchange online service. In the screenshot below you will notice that the user is based in Washington state and the network egress is in Arizona, this increases the network latency for the user and the result also shows that 33% of users in Washington state have better a network connection. 
+
+![networkegressfaraway](media/office-365-network-mac-perf-onboarding-tool/networkegressfaraway.jpg)
 
 ## What happens at each test step
 
