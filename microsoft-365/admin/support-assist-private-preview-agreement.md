@@ -199,9 +199,9 @@ a. Processing Details. The parties acknowledge and agree that:
 
 b. Data Transfers.
 
-  > i. Data and Personal Data that Microsoft processes on Participant's behalf may be transferred to, and stored and processed in, the United States or any other country in which Microsoft or its Sub-processors operate. Participant appoints Microsoft to perform any such transfer of Participant Data and Personal Data to any such country and to store and process Data and Personal Data to provide the Pre-Release Technologies.
+  > i. Data and Personal Data that Microsoft processes on Participant's behalf may be transferred to, and stored and processed in, the United States or any other country/region in which Microsoft or its Sub-processors operate. Participant appoints Microsoft to perform any such transfer of Participant Data and Personal Data to any such country/region and to store and process Data and Personal Data to provide the Pre-Release Technologies.
   >
-  > ii. Microsoft will abide by the requirements of European Economic Area and Swiss data protection law regarding the collection, use, transfer, retention and other processing of Personal Data from the European Economic Area and Switzerland. All transfers of Personal Data to a third country or an international organization will be subject to appropriate safeguards as described in Article 46 of the GDPR and such transfers and safeguards will be documented according to Article 30(2) of the GDPR.
+  > ii. Microsoft will abide by the requirements of European Economic Area and Swiss data protection law regarding the collection, use, transfer, retention and other processing of Personal Data from the European Economic Area and Switzerland. All transfers of Personal Data to a third country/region or an international organization will be subject to appropriate safeguards as described in Article 46 of the GDPR and such transfers and safeguards will be documented according to Article 30(2) of the GDPR.
   >
   > iii. In addition, Microsoft is certified to meet the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks and the commitments they entail. Microsoft agrees to notify Participant in the event that it determines that it can no longer meet its obligation to provide the same level of protection as is required by the Privacy Shield principles.
 
@@ -337,7 +337,7 @@ For purposes of these GDPR Terms, Participant and Microsoft agree that Participa
 
 2. Processing by Microsoft shall be governed by these GDPR Terms under European Union (hereafter "Union") or Member State law and are binding on Microsoft with regard to Participant. The subject-matter and duration of the processing, the nature and purpose of the processing, the type of Personal Data, the categories of data subjects and the obligations and rights of the Participant are set forth in section 11 above, including these GDPR Terms. In particular, Microsoft shall:
 
-    > a. process the Personal Data only on documented instructions from Participant, including with regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform Participant of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;
+    > a. process the Personal Data only on documented instructions from Participant, including with regard to transfers of Personal Data to a third country/region or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform Participant of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;
     >
     > b. ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;
     >
