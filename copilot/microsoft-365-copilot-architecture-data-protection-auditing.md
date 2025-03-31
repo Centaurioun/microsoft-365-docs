@@ -67,6 +67,9 @@ Let's take a look:
 
   For example, there's a file with a sensitivity label saved outside of your Microsoft 365 tenant, like on a user's personal device, a network share, or in cloud storage. When this file is opened in an Office app, the protection settings go with the file.
 
+> [!NOTE]
+> Any user defined label blocks Copilot from extracting and interacting with the file content.
+
 To learn more, see:
 
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
