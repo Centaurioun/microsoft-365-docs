@@ -24,7 +24,12 @@ description: Learn how to turn on Microsoft 365 Backup, set up pay-as-you-go bil
 > [Step 2. Turn on Microsoft 365 Backup](https://admin.microsoft.com/#/orgsettings/payasyougo/storage)<br>
 > [Step 3. Start backing up your data by creating backup policies](https://admin.microsoft.com/#/Settings/enhancedRestore)<br>
 
+<!---
 
+Get started with Microsoft 365 Backup by following these simple three steps in the Microsoft 365 admin center.
+
+![Diagram showing the three-step setup process for Microsoft 365 Backup.](../media/m365-backup/backup-setup-diagram.png)
+--->
 
 ## Permissions
 
