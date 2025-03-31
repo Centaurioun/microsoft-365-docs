@@ -42,8 +42,8 @@ The following roles can access this setting in the Microsoft 365 admin center:
 To get to this setting:
 
 1. Sign in to the Microsoft 365 admin center.
-2. Go to **Copilot** > **Settings**.
-3.Select **Pin Microsoft 365 Copilot Chat**.
+1. Go to **Copilot** > **Settings**.
+1. Select **Pin Microsoft 365 Copilot Chat**.
 
 > [!NOTE]
 > Admin pinning is only applicable to users who are authenticated with a Microsoft Entra account.
@@ -66,9 +66,9 @@ Admins can change the pinning settings by selecting an option for pinning Copilo
 > If you previously selected Do not pin Copilot to the navigation bar and also unchecked the Allow users to be asked whether they want to pin it option, these selections won’t change even after Copilot Chat is pinned by default for most users.
 > If an admin switches the setting to Do not pin, Copilot honors that choice. If a user sees Copilot pinned in their navigation bar and chooses to unpin it, Copilot respects that choice in future sessions.  
 
-Global administrators and AI administrators can make changes to Microsoft 365 Copilot Chat pinning settings at any time. Changes take up to 48 hours to go into effect.
+Global Admins and AI Admins can make changes to Microsoft 365 Copilot Chat pinning settings at any time. Changes take up to 48 hours to go into effect.
 
-The Pinning policy can be set up at a group or user level in config.office.com. For larger enterprises with complex needs to configure other advanced settings, like pinning Copilot Chat for a specific group of users, go to the Microsoft 365 Apps admin center.
+The Pinning policy can be set up at a group or user level in [config.office.com](https://config.office.com/). For larger enterprises with complex needs to configure other advanced settings, like pinning Copilot Chat for a specific group of users, go to the [Microsoft 365 Apps admin center](https://config.office.com/).
 
 ## User experience
 
