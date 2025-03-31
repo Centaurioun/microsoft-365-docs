@@ -83,6 +83,15 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 
 ## Change your service usage address
 
+**If you have an MCA billing account type:**
+
+1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339""), go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895"") page.
+1. On the **Overview** tab, select a billing account.
+1. On the billing account details page, select the **Billing profiles** tab. The tab lists all billing profiles associated with the selected billing account.
+1. Select a billing profile name to view its details page.
+1. On the billing profile details page, under **Ship-to address** select **Edit**.
+1. In the **Edit ship-to address** pane, update your organization information, then select **Save**.
+
 If you have an MOSA billing account type, you can change the service usage address for a subscription. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
