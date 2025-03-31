@@ -2,12 +2,12 @@
 title: "Determine if Centralized Deployment of add-ins works for your organization"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
+ms.author: efrene
+author: efrene
 manager: scotv
 ms.date: 08/30/2023
 audience: Admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:

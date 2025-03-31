@@ -1,4 +1,4 @@
-name: Check max/live-compare-merge below
+name: PR can merge into branch
 
 permissions:
   pull-requests: write
@@ -12,11 +12,9 @@ on:
 jobs:
 
   live-merge:
+    if: github.repository_owner == 'MicrosoftDocs'
     uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-LiveMergeCheck.yml@workflows-prod
     with:
       PayloadJson: ${{ toJSON(github) }}
     secrets:
       AccessToken: ${{ secrets.GITHUB_TOKEN }}
-
-
-  

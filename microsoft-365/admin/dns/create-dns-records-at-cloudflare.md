@@ -2,13 +2,14 @@
 title: "Connect your DNS records at Cloudflare to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 06/13/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -33,6 +34,8 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
 If Cloudflare is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
 
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
+
 ## Before you begin
 
 You have two options for setting up DNS records for your domain:
@@ -53,7 +56,7 @@ Follow these steps to automatically verify and set up your Cloudflare domain wit
 
 1. On the How do you want to connect your domain? page, select **Continue**.
 
-1. On the Add DNS records page, select **Add DNS records**.
+1. On the Add DNS record page, select **Add DNS records**.
 
 1. On the Cloudflare login page, sign in to your account, and select **Authorize**.
 

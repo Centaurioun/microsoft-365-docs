@@ -2,13 +2,14 @@
 title: "Gather the information you need to create DNS records"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 11/07/2023
+ms.date: 03/18/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection: 
 - Tier2
@@ -36,6 +37,8 @@ description: "Gather the values/information you need to create DNS records to co
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
   
 ### Step 1: Find the TXT record value and verify
 
@@ -91,6 +94,6 @@ Check out all of our small business content on [Small business help & learning](
 
 ## Related content
 
-[Domains FAQ](../setup/domains-faq.yml) (article)\
-[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
-[Manage domains](/admin) (link page)
+- [Domains FAQ](../setup/domains-faq.yml) (article)\
+- [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
+- [Manage domains](/admin) (link page)
