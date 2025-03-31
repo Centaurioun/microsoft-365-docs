@@ -54,17 +54,15 @@ Starting May 1, 2025, Microsoft 365 Copilot Chat is pinned to the navigation bar
 
 Admins can change the pinning settings by selecting an option for pinning Copilot Chat to the navigation bar:
 
-1. **Pin Copilot to the navigation bar (recommended)**: Microsoft 365 Copilot Chat is automatically pinned for all users. Users aren't prompted.
+:::image type="content" source="media/pin-copilot.png" alt-text="Screenshot showing the option to pin Copilot to the navigation bar.":::
 
-    :::image type="content" source="media/pin-copilot.png" alt-text="Screenshot showing the option to pin Copilot to the navigation bar.":::
+1. **Pin Copilot to the navigation bar (recommended)**: Microsoft 365 Copilot Chat is automatically pinned for all users. Users aren't prompted.
 
 2. **Do not pin Copilot to the navigation bar**: Microsoft 365 Copilot Chat isn't automatically pinned to the navigation bar.
 
-    :::image type="content" source="media/do-not-pin-copilot-setting.png" alt-text="Screenshot showing the option to not pin Copilot to the navigation bar.":::
-
 > [!NOTE]
-> If you previously selected Do not pin Copilot to the navigation bar and also unchecked the Allow users to be asked whether they want to pin it option, these selections won’t change even after Copilot Chat is pinned by default for most users.
-> If an admin switches the setting to Do not pin, Copilot honors that choice. If a user sees Copilot pinned in their navigation bar and chooses to unpin it, Copilot respects that choice in future sessions.  
+> If you previously selected **Do not pin Copilot to the navigation bar** and also unchecked the 'Allow users to be asked whether they want to pin it' option, these selections won’t change even after Copilot Chat is pinned by default for most users.
+> If an admin switches the setting to **Do not pin**, Copilot honors that choice. If a user sees Copilot pinned in their navigation bar and chooses to unpin it, Copilot respects that choice in future sessions.  
 
 Global Admins and AI Admins can make changes to Microsoft 365 Copilot Chat pinning settings at any time. Changes take up to 48 hours to go into effect.
 
