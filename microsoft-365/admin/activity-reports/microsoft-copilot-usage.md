@@ -87,3 +87,9 @@ By default, usernames and display names in the Microsoft 365 Copilot Chat report
 1. In the Microsoft 365 admin center, go to the **Settings** > **Org Settings**, and under the **Services** tab, choose **Reports**.
 2. Select **Reports**, and update the setting to “Display Concealed user, group, and site names in all reports”.
 3. Select **Save**.
+
+## FAQ
+
+### Does this report include only the Copilot Chat usage for users without a Microsoft 365 Copilot license in the organization?
+
+Yes. To view Copilot Chat usage of Microsoft 365 Copilot licensed users in the organization, refer to the [Microsoft 365 Copilot usage report](microsoft-365-copilot-usage.md) in the Microsoft 365 admin center.
