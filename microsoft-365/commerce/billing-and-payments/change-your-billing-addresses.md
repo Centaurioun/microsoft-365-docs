@@ -108,4 +108,4 @@ You can change the service usage address for a subscription. [Find out what type
 [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
 [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
 [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)\
-[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)\
+[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)
