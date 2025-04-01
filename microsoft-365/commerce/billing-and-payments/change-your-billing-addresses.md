@@ -87,7 +87,7 @@ You can change the service usage address for a subscription. [Find out what type
 
 **If you have an MCA billing account type:**
 
-1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339"), go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895"") page.
+1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339""), go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895"") page.
 1. On the **Overview** tab, select a billing account.
 1. On the billing account details page, select the **Billing profiles** tab. The tab lists all billing profiles associated with the selected billing account.
 1. Select a billing profile name to view its details page.
