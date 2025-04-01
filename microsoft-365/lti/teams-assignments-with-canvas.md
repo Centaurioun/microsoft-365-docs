@@ -8,6 +8,7 @@ ms.date: 09/12/2024
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: teams-education
 ---
 
 # Use Microsoft Teams Assignments LTI® app with Canvas

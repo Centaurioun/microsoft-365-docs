@@ -7,6 +7,7 @@ manager: mimast
 ms.date: 03/20/2025
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: teams-education
 ---
 
 # Use Microsoft Teams Assignments with any LTI 1.3® Advantage compliant LMS/VLE

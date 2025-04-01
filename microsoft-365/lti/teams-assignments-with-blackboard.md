@@ -7,6 +7,7 @@ manager: mimast
 ms.date: 02/05/2025
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: teams-education
 ---
 
 # Use Microsoft Teams Assignments LTI® with Blackboard by Anthology

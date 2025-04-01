@@ -8,6 +8,7 @@ ms.date: 06/15/2021
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-365-enterprise
+ms.subservice: teams-education
 search.appverid: 
 ms.collection: 
 - M365-modern-desktop

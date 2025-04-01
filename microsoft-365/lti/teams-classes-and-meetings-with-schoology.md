@@ -8,6 +8,7 @@ ms.date: 08/08/2022
 audience: admin
 ms.topic: integration
 ms.service: microsoft-365-business
+ms.subservice: teams-education
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu

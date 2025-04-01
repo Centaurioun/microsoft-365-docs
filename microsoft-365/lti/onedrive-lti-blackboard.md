@@ -8,6 +8,7 @@ ms.date: 03/02/2022
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: teams-education
 ms.collection: 
 - m365initiative-edu
 - tier2

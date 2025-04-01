@@ -8,6 +8,7 @@ ms.date: 04/04/2022
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: teams-education
 f1.keywords:
 - CSH
 ms.collection: 

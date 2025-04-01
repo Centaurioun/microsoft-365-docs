@@ -7,6 +7,7 @@ manager: mimast
 ms.date: 02/12/2025
 ms.topic: article
 ms.service: microsoft-365-business
+ms.subservice: teams-education
 ---
 
 # Use Teams Assignments LTI with Moodle™

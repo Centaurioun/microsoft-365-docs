@@ -8,6 +8,7 @@ ms.date: 08/03/2022
 audience: admin
 ms.topic: integration
 ms.service: microsoft-365-business
+ms.subservice: teams-education
 ms.collection: 
 - m365initiative-edu
 - tier2

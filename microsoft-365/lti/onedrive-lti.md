@@ -8,6 +8,7 @@ ms.date: 06/21/2021
 audience: admin
 ms.topic: integration
 ms.service: microsoft-365-business
+ms.subservice: teams-education
 f1.keywords:
 - CSH
 ms.collection: 
