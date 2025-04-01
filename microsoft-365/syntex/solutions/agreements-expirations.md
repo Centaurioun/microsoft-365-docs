@@ -3,7 +3,7 @@ title: Manage expiring agreements in SharePoint Agreements
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
-ms.reviewer: neilh
+ms.reviewer: vbarla
 ms.date: 04/02/2025
 audience: admin
 ms.topic: conceptual
