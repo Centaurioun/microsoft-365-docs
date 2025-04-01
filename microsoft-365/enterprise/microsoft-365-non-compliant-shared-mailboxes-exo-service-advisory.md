@@ -57,7 +57,7 @@ To ensure your shared mailboxes comply with Exchange storage limits, follow thes
 
 ### Retrieve Shared Mailboxes Exceeding 50 GB
 
-1.	Access the Exchange Admin Center Portal.
+1.	Access the Microsoft 365 Admin Portal.
 2.	Generate Usage Reports:
     - Go to **Reports -> Usage -> Exchange**.
     - Select **Mailbox Usage**.
