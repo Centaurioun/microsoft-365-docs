@@ -26,7 +26,7 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to change your billing address for Microsoft 365 for business."
-ms.date: 02/16/2024
+ms.date: 04/01/2025
 ---
 
 # Change the billing addresses for your Microsoft business subscription
@@ -83,6 +83,8 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 
 ## Change your service usage address
 
+You can change the service usage address for a subscription. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+
 **If you have an MCA billing account type:**
 
 1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339""), go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895"") page.
@@ -92,11 +94,11 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 1. On the billing profile details page, under **Ship-to address** select **Edit**.
 1. In the **Edit ship-to address** pane, update your organization information, then select **Save**.
 
-If you have an MOSA billing account type, you can change the service usage address for a subscription. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+**If you have an MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you’re using the **Simplified view**, select **Billing**.
-   - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+   - If you're using the **Simplified view**, select **Billing**.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription to change.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
 4. In the **Edit service usage address** pane, update your address, then select **Save**.
