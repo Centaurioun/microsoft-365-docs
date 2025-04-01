@@ -20,29 +20,21 @@ description: Learn about the expiration process for agreements in the SharePoint
 
 # Manage expiring agreements in SharePoint Agreements
 
-Expiration of Agreements
-
 When managing agreements, it's important to keep track of their expiration dates to ensure timely renewals and avoid lapses.
 
-The Expiration Date field is a crucial component that records the date an agreement is set to expire. It's essential to include this field in any template designed for agreements that have an expiration date. Once the expiration date is specified in an agreement, the following actions will occur:
+The **Expiration date** is a standard field that records the date an agreement is set to expire. This field should be included in any template designed for agreements that have an expiration date. When the **Expiration date** field is filled in the agreement, the following actions occur:
 
-The **Expiration date** is a standard field that records the date an agreement is set to expire. This field should be included in any template designed for agreements that have an expiration date.
+**Two months before the expiration date:**
 
-> [!NOTE]
-> To ensure the expiration notification is sent to a specific person or group, include the **Owner** field in the template and designate the appropriate recipients during the document authoring stage.
-
-When the **Expiration date** field is filled in the agreement, the following actions occur:
-
-Two months before the expiration date:
-
-- A reminder notification is sent to the owner of the agreement, indicating the specific date the agreement will expire.
+- A reminder notification is sent to the appropriate recipients, indicating the specific date the agreement will expire.
 
 - This notification will be sent weekly for the two months leading up to the expiration date.
 
-On the expiration date:
+**On the expiration date:**
 
-- A notification is sent to the owner of the agreement, informing them that the agreement has expired.
+- A notification is sent to the appropriate recipients, informing them that the agreement has expired.
 
 - The status of the agreement is updated to **Expired**.
 
-
+> [!NOTE]
+> To ensure the expiration notification is sent to a specific person or group, include the **Owner** field in the template and designate the appropriate recipients during the document authoring stage.
