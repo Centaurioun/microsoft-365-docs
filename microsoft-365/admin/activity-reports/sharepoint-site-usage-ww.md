@@ -91,6 +91,6 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 | Site ID | The site ID of the site. |
 
 >[!NOTE]
->The SharePoint site URL might not be displayed if [BYOK](/azure/information-protection/byok-price-restrictions) or [Customer Lockbox](/azure/security/fundamentals/customer-lockbox-overview0) is enabled. If you meet the requirements, submit a request via [ODSP Site URLs Displaying Request](https://forms.office.com/r/16hLY6na5W). The site URL will be visible within one week. To follow the steps, see [Use PowerShell to resolve site URLs](resolve-site-urls.md).
+>The SharePoint site URL might not be displayed if [BYOK](/azure/information-protection/byok-price-restrictions) or [Customer Lockbox](/azure/security/fundamentals/customer-lockbox-overview) is enabled. If you meet the requirements, submit a request via [ODSP Site URLs Displaying Request](https://forms.office.com/r/16hLY6na5W). The site URL will be visible within one week. To follow the steps, see [Use PowerShell to resolve site URLs](resolve-site-urls.md).
 
 Note that you may see differences between the sites listed above and those listed on the [Active sites page](https://go.microsoft.com/fwlink/?linkid=2185220) in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), from Sites > Active sites because the certain site templates and URLs are not included as Active Sites. See [Manage sites in the SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) for more information.
