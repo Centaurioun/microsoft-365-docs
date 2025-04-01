@@ -454,7 +454,7 @@ All messages have a state that indicates their creation or delivery status, incl
 
 ### How does localization work in Organizational messages?
 
-**For premade messages**, your message is delivered to end users who have their related product language set to one of the following:
+For **premade messages**, your message is delivered to end users who have their related product language set to one of the following:
 
 - en-US
 - de-DE
@@ -479,7 +479,7 @@ For example, if the Organizational Messages Writer (admin) selects "Message A" t
 > - *Locale of the custom message writer selected*: Display language set in the Microsoft 365 admin center (MyAccount).
 > - *Locale of the message receiver selected*: First supported language listed under "Preferred Languages" in the user's Windows Settings menu. This is determined by the operating system on the user's device.
 
-For custom messages, delivery will be restricted to the language selected as the Microsoft 365 admin center (MyAccount) display language.
+For **custom messages**, delivery will be restricted to the language selected as the Microsoft 365 admin center (MyAccount) display language.
 
 For example, if the Organizational Messages Writer (admin) sets their Microsoft 365 admin center (MyAccount) display language to French while creating "Message B," only end users with French as the first option under "Preferred Languages" in their Windows Settings will receive "Message B." End users whose preferred language is any other language will not receive the message.
 
