@@ -38,3 +38,8 @@ When the **Expiration date** field is filled in the agreement, the following act
 
 > [!NOTE]
 > To ensure the expiration notification is sent to a specific person or group, include the **Owner** field in the template and designate the appropriate recipients during the document authoring stage.
+
+<br>
+
+> [!div class="nextstepaction"]
+> [See the complete list of help documentation.](agreements-overview.md#help-documentation)
