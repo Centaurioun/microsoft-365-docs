@@ -95,13 +95,13 @@ When you return to the **Requests** list, you see the message **You're using you
 If you don't have the authority within your organization to make decisions about who can receive a license for a particular product or service, you can share a license request via email with someone in your organization who does. You can only share one request at a time. The person who receives the license request email doesn't need access to the Microsoft 365 admin center to review the request. They simply respond to the email and indicate whether the person should be given the license they requested, and then you [approve or deny the request](#approve-or-deny-a-license-request).
 
 1. In the admin center, select the **Navigation menu**, then select **Billing** > **Licenses**.
-2. On the **Licenses** page, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2245727" target="_blank">Auto-claim policy</a> tab.
+1. On the **Licenses** page, select the **Requests** tab.
 3. Select the **Share request** tab, then select a request to share.
 4. In the request pane, select **Share request**.
 5. In the **Share license request details** pane, type an email address, then select the recipient name.
    > [!NOTE]
    > You can select more than one recipient, but if the email that you entered doesn't resolve into a user name, you can't share the request.
-6. To personalize the email, select the **Include a personalized message** check box. Type a **Subject** and **Message** in the corresponding fields.
+1. To personalize the email, select the **Include a personalized message** check box. Type a **Subject** and **Message** in the corresponding fields.
 7. When you're finished, select **Share request**.
 
 ## Related content
