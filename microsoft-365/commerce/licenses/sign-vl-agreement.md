@@ -179,11 +179,11 @@ Microsoft strongly encourages the use of Adobe Sign to provide electronic signat
 
 Customers who sign with an e-signature tool other than Adobe, such as DocuSign, might get the following error message:
 
-   "Unprocessed Error. We encountered an error while processing your request. We apologize for the inconvenience. Please reload the page and try again. If you continue to encounter this error, please contact our support team."
+> "Unprocessed Error. We encountered an error while processing your request. We apologize for the inconvenience. Please reload the page and try again. If you continue to encounter this error, please contact our support team."
 
 You can resolve the Unprocessed Error without contacting support by completing the following steps to flatten a PDF in Windows with Adobe Acrobat Pro.
 
-1. Open the Signed version DocuSign PDF in Adobe Acrobat Pro.
+1. Open the signed version DocuSign PDF in Adobe Acrobat Pro.
 2. Select **File** > **Print**, select **Adobe PDF** as the printer, then select **OK**.
 3. When you're prompted to save the new file, use a different file name.
 4. Don't touch anything while the document is printing, as doing so can cause errors.
