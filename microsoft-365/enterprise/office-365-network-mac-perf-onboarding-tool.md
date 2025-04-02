@@ -63,21 +63,21 @@ Here are some example scenarios for using the Microsoft 365 network connectivity
 
 A user complains about being unable to access Microsoft 365 Copilot, and you suspect WebSocket protocol may be blocked for the user. You need to quickly validate if the WebSocket connection is successful for the user. You can ask the user to go to [the network connectivity test tool](https://connectivity.m365.cloud.microsoft/) and select **Run test**. This triggers a set of basic tests including a WebSocket connection test for Copilot, and the user will find the results of the test in the details pane. If WebSocket was blocked for the user, you wouldn't see a green tick but instead a warning to show that the WebSocket connection is blocked. 
 
-![webSocketPass](media/office-365-network-mac-perf-onboarding-tool/websocketpass.jpg)
+![Connectivity test - web socket pass](media/office-365-network-mac-perf-onboarding-tool/websocketpass.jpg)
 
-![WssFail](media/office-365-network-mac-perf-onboarding-tool/wssfail.jpg)
+![Connectivity test - WSS fail](media/office-365-network-mac-perf-onboarding-tool/wssfail.jpg)
 
 #### Scenario 2
 
 You receive complaints from users in a branch office that they experience slow connection to Microsoft 365 services. You suspect this could be due to some recent network infrastructure changes at the branch office that results in higher network latency for the users. You can ask the users at the branch office to go to [the network connectivity test tool](https://connectivity.m365.cloud.microsoft/) and select **Run test**. This triggers a set of basic tests including tests to show the distance to network egress and network latency experienced by the user for Exchange online service. In the following screenshot you will notice that the user is based in Washington state and the network egress is in Arizona. This increases the network latency for the user and the result also shows that 33% of users in Washington state have better a network connection. 
 
-![networkegressfaraway](media/office-365-network-mac-perf-onboarding-tool/networkegressfaraway.jpg)
+![Connectivity test - network egress far away](media/office-365-network-mac-perf-onboarding-tool/networkegressfaraway.jpg)
 
 #### Scenario 3
 
 You receive complaints from users in an office location that they experience broken page load while visiting SharePoint sites or Outlook web access or Microsoft admin center web pages. You suspect this could be due to some recent network infrastructure changes at the office location that results in blocked network connections to unified domains like `*.static.microsoft` or `*.usercontent.microsoft` domains. You can ask the users at the branch office to go to [the network connectivity test tool](https://connectivity.m365.cloud.microsoft/) and run the advanced diagnostics test by downloading and running the exe. The results will show you if there are any network connections blocked for the required Microsoft 365 domains published in the article [Microsoft 365 URLs and IP address ranges](https://aka.ms/m365endpoints).
 
-![unifieddomainsblocked](media/office-365-network-mac-perf-onboarding-tool/unifieddomainsblocked.jpg)
+![Connectivity test - unified domains blocked](media/office-365-network-mac-perf-onboarding-tool/unifieddomainsblocked.jpg)
 
 ## What happens at each test step
 
