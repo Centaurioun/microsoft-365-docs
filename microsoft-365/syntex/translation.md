@@ -69,7 +69,9 @@ To create a translated version of a video transcript or closed captioning, see [
 
 ### Give feedback on translated documents
 
-You can now quickly provide feedback on translated files directly within your document library. When viewing a translated file in the library, hover over the file name to access the file card. Use the thumbs up (![Image of the thumbs up icon.](../media/content-understanding/icon-thumbs-up.png)) 👍 or thumbs down (![Image of the thumbs down icon.](../media/content-understanding/icon-thumbs-down.png)) 👎 icon to rate the translation quality.
+You can now quickly provide feedback on translated files directly within your document library. When viewing a translated file in the library, hover over the file name to access the file card. Use the thumbs up (👍) or thumbs down (👎) icon to rate the translation quality.
+
+
 
 After selecting an icon, you’ll be prompted to:
 
@@ -80,3 +82,6 @@ After selecting an icon, you’ll be prompted to:
 - Choose to allow Microsoft to follow up with you
 
 Your feedback helps us improve the translation experience.
+<!---
+Use the thumbs up (![Image of the thumbs up icon.](../media/content-understanding/icon-thumbs-up.png)) 👍 or thumbs down (![Image of the thumbs down icon.](../media/content-understanding/icon-thumbs-down.png)) 👎 icon to rate the translation quality.
+--->
