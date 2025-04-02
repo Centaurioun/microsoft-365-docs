@@ -50,6 +50,15 @@ You can also use the translation feature for translating video transcripts and c
 
 ## Frequently asked questions
 
+#### How can I provide feedback on a translated document?
+
+Hover over the translated file in the library, select the feedback icon, and follow the prompts. For more information, see [Give feedback on translated documents](translation.md#give-feedback-on-translated-documents).
+
+#### What are the best practices and limitations for translating documents with various formats and content types?
+
 For answers to frequently asked questions about document translation, see [Document Translation: FAQ](/azure/ai-services/translator/document-translation/faq#document-translation-faq).
+
+
+#### How does translation count characters and what are the implications for character consumption in various translation methods?
 
 For specific questions about character count, see [How does Translator count characters?](/azure/ai-services/translator/translator-faq#how-does-translator-count-characters).
