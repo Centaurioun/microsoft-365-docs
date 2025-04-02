@@ -82,7 +82,7 @@ There are a few standard fields that come with SharePoint Agreements AI. These f
 
 - **First party** – The first party on the agreement.
 - **Second party** – The second party on the agreement.
-- **Effective date**  –The date on which the agreement comes into effect.
+- **Effective date**  – The date on which the agreement comes into effect.
 - **Expiration date** – The date on which the [agreement expires](agreements-expirations.md).
 - **Expiration type** – This type can either be single date, where the agreement expires on a specific date, or evergreen, where the agreement never expires.
 
