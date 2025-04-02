@@ -64,6 +64,7 @@ The following table lists the terms shown on the billing profile details page.
 |Billing account       |The billing account associated with the billing profile. To view details about the billing account, select the link. For more information about billing accounts, see [Understand billing accounts](../manage-billing-accounts.md). |
 |My role               |A read-only field that shows your billing profile role. |
 |Bill-to address       |Contains the contact name, address, email address, and phone number for the billing profile. To make changes to the address details, select **Edit**. |
+|Ship-to address|Contains the contact name, address, email address, and phone number for the ship-to address. To make changes to the address details, select edit.|
 |Get invoices in email statements   |A setting you can turn on to receive the invoice as an email attachment. The default setting is **On**. To turn this setting on or off, select **Edit settings**. |
 |Additional recipients | The list of people who also receive a copy of the invoice by email. |
 |Billing notification settings |A link to the **Billing notifications** page where you can edit notification settings, edit the organization email address, and manage the list of admins who receive billing notifications. To make changes, select **Edit settings**. |
