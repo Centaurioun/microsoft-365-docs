@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Reflect LTI with Canvas
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: eladgr
 ms.date: 12/07/2023

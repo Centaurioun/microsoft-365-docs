@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Teams classes and meetings LTI apps with Desire2Learn Brightspace LMS
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremperger
 ms.reviewer: amitman 
 ms.date: 07/06/2022

@@ -1,8 +1,8 @@
 ---
 title: Use Microsoft Teams Assignments LTI app with Blackboard by Anthology
 description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Blackboard by Anthology.
-author: jennplatt
-ms.author: avering
+author: DaniEASmith
+ms.author: danismith
 manager: mimast
 ms.date: 02/05/2025
 ms.topic: how-to

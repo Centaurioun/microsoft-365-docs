@@ -1,8 +1,8 @@
 ---
 title: Use Microsoft Teams Assignments LTI app with Canvas
 description: Integrate and use the Microsoft Teams Assignments learning tool interoperability (LTI) app with Canvas
-author: jennplatt
-ms.author: avering
+author: DaniEASmith
+ms.author: danismith
 manager: mimast
 ms.date: 09/12/2024
 audience: admin

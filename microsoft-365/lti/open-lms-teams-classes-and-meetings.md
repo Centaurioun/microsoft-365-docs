@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Teams classes and meetings with Open LMS
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 04/04/2022

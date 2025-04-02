@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams Meetings LTI with any LTI 1.3 compliant LMS
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 10/31/2022

@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft OneDrive LTI with Schoology Learning
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 08/08/2022
