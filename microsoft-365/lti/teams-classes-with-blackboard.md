@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams classes with Blackboard Learn Ultra
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 05/06/2021

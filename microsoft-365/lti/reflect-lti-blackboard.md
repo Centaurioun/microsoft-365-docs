@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Reflect LTI with Blackboard Learn
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jacktremper
 ms.reviewer: eladgr
 ms.date: 11/28/2023
