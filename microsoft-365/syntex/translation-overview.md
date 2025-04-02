@@ -57,7 +57,7 @@ For answers to frequently asked questions about document translation, see [Docum
 
 #### How does translation count characters and what are the implications for character consumption in various translation methods?
 
-For answers to frequently asked questions character count, see [How does Translator count characters](/azure/ai-services/translator/translator-faq#how-does-translator-count-characters).
+For answers to frequently asked questions about character count, see [How does Translator count characters](/azure/ai-services/translator/translator-faq#how-does-translator-count-characters).
 
 
 #### How can I provide feedback on a translated document?
