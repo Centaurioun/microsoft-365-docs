@@ -32,7 +32,7 @@ When you sign a volume licensing (VL) agreement with Microsoft, there are three 
 
 You must have the authority to sign a VL agreement on behalf of your organization.
 
-Signing a VL agreement doesn't automatically result in access to the agreement in the Microsoft 365 admin center, unless you are assigned a VL role.
+Signing a VL agreement doesn't automatically result in access to the agreement in the Microsoft 365 admin center, unless you're assigned a VL role.
 
 ## Ensure you can receive the Agreement Signature email
 
@@ -41,7 +41,7 @@ As part of the VL agreement signature process, you receive one or more emails fr
 To ensure that you receive the email to your inbox, you might have to adjust your email settings or contact your IT administrator to ensure the email address and email domain are recognized as safe senders for your organization.
 
 - Check your Spam and Junk folders for email from Microsoft-noreply\@microsoft.com
-- In your email settings, under Safe Senders Settings, add "Microsoft-noreply\@microsoft"
+- In your email settings, under **Safe Senders Settings**, add "Microsoft-noreply\@microsoft"
 
 For more information, see [Add recipients to the Safe Senders List in Outlook - Microsoft Support](https://support.microsoft.com/office/add-recipients-to-the-safe-senders-list-in-outlook-be1baea0-beab-4a30-b968-9004332336ce).
 
@@ -62,13 +62,13 @@ Microsoft VL contracts are signed using Adobe Sign, Microsoft's preferred Electr
 - Campus
 - Service Provider Licensing Agreement (SPLA)
 
-To avoid unnecessary delays, we recommend that you consider your organization's signature requirements prior to the preparation of your agreement package.
+To avoid unnecessary delays, we recommend that you consider your organization's signature requirements before the preparation of your agreement package.
 
 ## Understand Volume License Agreement Contract signature methods
 
 ### Adobe Sign Electronic (Simple)
 
-This is the default signing method for both customer signature and for Microsoft counter-signature of VL agreement contracts.
+Adobe Sign Electronic (Simple) is the default signing method for both customer signature and for Microsoft counter-signature of VL agreement contracts.
 
 ### Adobe Sign Physical Signature
 
@@ -102,9 +102,9 @@ If an agreement sent for your signature has the wrong signature method, decline 
 2. In the body of the email, select the **Review and sign** button.
 
    > [!IMPORTANT]
-   > You must review the documents in their entirety to ensure correctness. Any changes required after this point might require a re-signature.
+   > To ensure correctness, you must review the documents in their entirety. Any changes required after this point might require a re-signature.
 
-3. Navigate through the Adobe Sign portal by following the Adobe prompts and sign on the signature placeholder(s). You can choose from the following signature options:
+3. In the Adobe Sign portal, follow the prompts and sign on the signature placeholder. You can choose from the following signature options:
 
    - **Type:** Type your name. The font is converted to the Adobe Sign standard font for electronic signatures.
    - **Draw:** Use your mouse, stylus, or finger to draw your signature. You must also type your name. The typewritten name appears under the drawn signature and is used as the recipient's name in the Adobe Sign portal.
@@ -114,7 +114,7 @@ If an agreement sent for your signature has the wrong signature method, decline 
    For every signature type, a date stamp is added next to **Signature Date**.
 
    > [!IMPORTANT]
-   > Customers in China who use an Adobe electronic signature where the designated signatory email address provided is a public or non-company domain email address, must complete a *Microsoft End User Email Authorization Letter*, affixed with official company stamp/chop, included by their partner in the agreement package.
+   > Customers in China who use an Adobe electronic signature where the designated signatory email address provided is a public or noncompany domain email address, must complete a *Microsoft End User Email Authorization Letter*, affixed with official company stamp/chop, included by their partner in the agreement package.
 
 4. To submit the agreement to Microsoft for processing, select the **Click to Sign** button. You see an on-screen confirmation of signing completion.
 
@@ -126,11 +126,11 @@ If an agreement sent for your signature has the wrong signature method, decline 
    > [!IMPORTANT]
    > You must review the documents in their entirety to ensure correctness. Any changes made after this point might require a re-signature.
 
-3. Navigate through the Adobe Sign portal and sign on the signature placeholder(s).
-4. in the signature field, you see a badge icon that indicates this is a digital/qualified signature.
+3. In the Adobe Sign portal, follow the prompts and sign on the signature placeholder.
+4. In the signature field, you see a badge icon that indicates it's a digital/qualified signature.
 
    > [!IMPORTANT]
-   > If you don't expect to see the digital/qualified signature badge, select the **Options** menu, then select **Decline to sign** and immediately inform your Microsoft partner. The partner can withdraw the package and re-send the documents via the simple electronic format.
+   > If you don't expect to see the digital/qualified signature badge, select the **Options** menu, then select **Decline to sign** and immediately inform your Microsoft partner. The partner can withdraw the package and resend the documents via the simple electronic format.
 
 5. Select the signature field. In the **Choose how to apply the digital signature** dialog,  select **Cloud Signature**, then select **Next**.
 6. Select the appropriate Digital ID Trusted Services Provider based on your company's requirements.
@@ -151,19 +151,19 @@ If an agreement sent for your signature has the wrong signature method, decline 
 10. Sign the agreement with a pen, then scan it and save it to your computer.
 
    > [!IMPORTANT]
-   > Customers in China who use the Print, sign, upload option in Adobe Sign,  must affix an official company stamp/chop on physical documents in place of a physical signature. Hand-written signatures are no longer accepted.
+   > Customers in China who use the **Print, sign, and upload** option in Adobe Sign,  must affix an official company stamp/chop on physical documents in place of a physical signature. Hand-written signatures are no longer accepted.
 
-11. To return to the Adobe Sign portal, go to the Adobe Sign email that you received, and select the **Upload to submit** button.
+11. To return to the Adobe Sign portal, open the Adobe Sign email that you received, and select the **Upload to submit** button.
 12. Locate and select the scanned agreement, then double-click the file to upload it.
 
    > [!IMPORTANT]
-   > The document package downloaded from, and uploaded to, the Adobe Sign portal must match. If the documents don't match, Adobe Sign displays an error that indicates you must upload the correct document. If an error occurs, you must correct the issue and re-upload the document.
+   > The document package downloaded from, and uploaded to, the Adobe Sign portal must match. If the documents don't match, Adobe Sign displays an error that indicates you must upload the correct document. If an error occurs, you must correct the issue and reupload the document.
 
 13. When the document is uploaded successfully, you receive an on-screen confirmation.
 
 ### Use another e-signature tool
 
-Microsoft strongly encourages the use of Adobe Sign to provide electronic signatures because it provides a seamless agreement signature process for customers, partners and Microsoft. If necessary, it's possible to sign your VL agreement by using another third-party electronic signature tool, like DocuSign.
+Microsoft strongly encourages the use of Adobe Sign to provide electronic signatures because it provides a seamless agreement signature process for customers, partners, and Microsoft. If necessary, it's possible to sign your VL agreement by using another third-party electronic signature tool, like DocuSign.
 
 1. You must submit the agreement package for signature by using the Adobe Sign Electronic (Simple) option.
 2. In the body of the email you received from microsoft-noreply\@microsoft.com, select the **Review and sign** button.
@@ -174,48 +174,37 @@ Microsoft strongly encourages the use of Adobe Sign to provide electronic signat
 
 ## Server error when uploading a document with another e-signature tool
 
-Customers who sign with an e-signature tool other than Adobe, such as DocuSign, may get the following error message:
+Customers who sign with an e-signature tool other than Adobe, such as DocuSign, might get the following error message:
 
-   Unprocessed Error. We encountered an error while processing your request. We apologize for the inconvenience. Please reload the page and try again. If you continue to encounter this error, please contact our support team.
+   "Unprocessed Error. We encountered an error while processing your request. We apologize for the inconvenience. Please reload the page and try again. If you continue to encounter this error, please contact our support team."
 
-You can resolve this error without contacting support by completing the following steps to flatten a PDF in Windows with Adobe Acrobat Pro.
+You can resolve the Unprocessed Error without contacting support by completing the following steps to flatten a PDF in Windows with Adobe Acrobat Pro.
 
 1. Open the Signed version DocuSign PDF in Adobe Acrobat Pro.
 2. Select **File** > **Print**, select **Adobe PDF** as the printer, then select **OK**.
 3. When you're prompted to save the new file, use a different file name.
-4. Don't touch anything while the document is printing, as this can cause errors.
+4. Don't touch anything while the document is printing, as doing so can cause errors.
 5. Upload the new file instead of the original PDF in Adobe Sign.
 
-When this process is finished, Adobe Sign retains the DocuSign signature while previewing and after all parties have signed the final document.
+When this process is finished, Adobe Sign retains the DocuSign signature while previewing and after all parties sign the final document.
 
 ## View agreements submitted for your signature
 
 An assigned signature contact who signed the agreement can sign in to the Adobe Sign portal to view a previously signed agreement up to 13 months after the signature takes place.
 
-To log in to the Adobe Sign portal, retrieve the original email from microsoft-noreply\@microsoft.com and select the **Click to sign** button again.
+To sign in to the Adobe Sign portal, retrieve the original email from microsoft-noreply\@microsoft.com and select the **Click to sign** button again.
 
 - An on-screen notification indicates that the document was already signed.
-- To view your agreements and their status (in progress, waiting for you, completed, cancelled, expired, and draft), select **Manage**.
+- To view your agreements and their status (in progress, waiting for you, completed, canceled, expired, and draft), select **Manage**.
 - Filter by completed status and find the agreement you want to view.
 - Hover over the agreement title to **Open**, **Download**, or **Add Notes**.
 
 > [!TIP]
 > Only the signatory contact can view the signed documents. Therefore, customers might want to download signed documents and store them in an accessible place.
 
-## Next steps
-
-After you electronically sign a VL agreement, you must wait for it to become active. Next, your reseller must submit an order to Microsoft for licenses under that agreement. After these two steps are finished, those licenses are available to view or manage in the volume licensing section of the Microsoft 365 admin center.
-
-> [!NOTE]
-> Resellers typically place orders soon after an agreement becomes active, but this isn't always the case.
-
-After the VL agreement is activated, the people named on the agreement receive a welcome email from Microsoft inviting them to register the VL agreement in the Microsoft 365 admin center to access and manage the agreements. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
-
-Remember, the person named on the VL agreement by the reseller to manage licenses in the admin center might or might not be the same person who signed the agreement!
-
 ## Use an existing Adobe Acrobat account
 
-If you already use Adobe Sign to sign other documents, you can use your existing Adobe account to sign in and view your Microsoft Agreements, or to sign an new agreement.
+If you already use Adobe Sign to sign other documents, you can use your existing Adobe account to sign in and view your Microsoft Agreements, or to sign a new agreement.
 
 To find your agreements, use the following steps:
 
@@ -226,9 +215,20 @@ To find your agreements, use the following steps:
 5. Select **Download PDF**.
 6. Download and print the agreement.
 
+## Next steps
+
+After you electronically sign a VL agreement, you must wait for it to become active. Next, your reseller must submit an order to Microsoft for licenses under that agreement. After these two steps are finished, those licenses are available to view or manage in the volume licensing section of the Microsoft 365 admin center.
+
+> [!NOTE]
+> Resellers typically place orders soon after an agreement becomes active, but this isn't always the case.
+
+After the VL agreement is activated, the people named on the agreement receive a welcome email from Microsoft inviting them to register the VL agreement in the Microsoft 365 admin center to access and manage the agreements. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
+
+Remember, the person named on the VL agreement by the reseller to manage licenses in the admin center might, or might not be the same person who signed the agreement!
+
 ## Contact support
 
-For support with volume licensing e-signature process customers may work with their Microsoft partner or seller, or by [Contacting Volume Licensing Support](/licensing/contact-us).
+For support with volume licensing e-signature process customers can work with their Microsoft partner or seller, or by [Contacting Volume Licensing Support](/licensing/contact-us).
 
 ## Related content
 
