@@ -20,9 +20,9 @@ description: Learn about the expiration process for agreements in the SharePoint
 
 # Manage expiring agreements in SharePoint Agreements
 
-When managing agreements, it's important to keep track of their expiration dates to ensure timely renewals and avoid lapses.
+It's important to keep track of their expiration dates of agreements to ensure timely renewals and avoid lapses. The **Expiration date** is a standard field that records the date an agreement is set to expire. This field should be included in any template designed for agreements that have an expiration date.
 
-The **Expiration date** is a standard field that records the date an agreement is set to expire. This field should be included in any template designed for agreements that have an expiration date. When the **Expiration date** field is filled in the agreement, the following actions occur:
+When the **Expiration date** field is filled in the agreement, the following actions occur:
 
 **Two months before the expiration date:**
 
