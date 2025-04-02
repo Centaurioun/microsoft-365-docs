@@ -1,5 +1,5 @@
 ---
-title: "Sign your Volume Licensing Agreement"
+title: "Sign your volume licensing agreement"
 f1.keywords: NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
@@ -26,13 +26,13 @@ ms.date: 04/03/2025
 When you sign a volume licensing (VL) agreement with Microsoft, there are three signature options available: Adobe Sign Electronic (Simple), Adobe Sign Digital, Adobe Sign Physical Signature, and Adobe Sign Digital.
 
 > [!NOTE]
-> The person who signs the contract doesn't have to be the same person who administers the agreement in the Microsoft 365 admin center volume licensing section.
+> The person who signs the contract doesn't have to be the same person who administers the VL agreement in the Microsoft 365 admin center volume licensing section.
 
 ## Before you begin
 
 You must have the authority to sign a VL agreement on behalf of your organization.
 
-Signing a VL agreement doesn't automatically result in access to the agreement in the Microsoft 365 admin center, unless you're assigned a VL role.
+Signing an agreement doesn't automatically result in access to the agreement in the Microsoft 365 admin center, unless you're assigned a VL role.
 
 ## Ensure you can receive the Agreement Signature email
 
@@ -47,7 +47,7 @@ For more information, see [Add recipients to the Safe Senders List in Outlook - 
 
 ## Microsoft's volume licensing signature policy
 
-Microsoft VL contracts are signed using Adobe Sign, Microsoft's preferred Electronic Signature Solution. This signature policy applies to the following agreement types:
+Microsoft VL contracts are signed using Adobe Sign, Microsoft's preferred Electronic Signature Solution. This signature policy applies to the following VL agreement types:
 
 - Enterprise
 - Enterprise Subscription
@@ -66,24 +66,27 @@ To avoid unnecessary delays, we recommend that you consider your organization's 
 
 ## Understand Volume License Agreement Contract signature methods
 
+This section describes the types of signature methods available to sign your VL agreement.
+
 ### Adobe Sign Electronic (Simple)
 
 Adobe Sign Electronic (Simple) is the default signing method for both customer signature and for Microsoft counter-signature of VL agreement contracts.
 
 ### Adobe Sign Physical Signature
 
-Adobe Sign lets you use a physical signature. If you choose this option, you still receive an electronic Adobe Sign envelope when your partner submits the agreement for your signature.
+Adobe Sign lets you use a physical signature. If you choose this option, you still receive an electronic Adobe Sign envelope when your partner submits the VL agreement for your signature.
 
 Within the Adobe Sign portal, you can download your agreement document, print and physically sign it, and then upload it for Microsoft's countersignature all via Adobe Sign.
 
 By default, Microsoft's counter-signature is a simple electronic signature via Adobe Sign. If this counter-signature is insufficient, notify Microsoft or your Microsoft partner (Software Advisor / Reseller / Distributor) via email before the agreement package is prepared that you require a physical (wet) Microsoft countersignature.
 
-### Adobe Sign Digital / Qualified Signature
+### Adobe Sign Digital Qualified Signature
 
-This signature option contains increased signer identity authentication and signature encryption, and is typically required in highly regulated industries/regions.
+The Adobe Sign Digital Qualified Signature option contains increased signer identity authentication and signature encryption, and is typically required in highly regulated industries/regions.
+
 If you opt for the digital/qualified method, be aware of the following requirements:
 
-- You must inform Microsoft or your Software Advisor or Reseller before they create the agreement package for your signature.
+- You must inform Microsoft or your Software Advisor or Reseller before they create the VL agreement package for your signature.
 - You must know who your Digital ID Trusted Services Provider is.
 - Microsoft's countersignature on the agreement isn't a digital/qualified signature.
 - Microsoft doesn't currently have the ability to sign via the digital / qualified method.
@@ -114,7 +117,7 @@ If an agreement sent for your signature has the wrong signature method, decline 
    For every signature type, a date stamp is added next to **Signature Date**.
 
    > [!IMPORTANT]
-   > Customers in China who use an Adobe electronic signature where the designated signatory email address provided is a public or noncompany domain email address, must complete a *Microsoft End User Email Authorization Letter*, affixed with official company stamp/chop, included by their partner in the agreement package.
+   > Customers in China who use an Adobe electronic signature where the designated signatory email address provided is a public or noncompany domain email address, must complete a *Microsoft End User Email Authorization Letter*, affixed with official company stamp/chop, included by their partner in the VL agreement package.
 
 4. To submit the agreement to Microsoft for processing, select the **Click to Sign** button. You see an on-screen confirmation of signing completion.
 
@@ -163,7 +166,7 @@ If an agreement sent for your signature has the wrong signature method, decline 
 
 ### Use another e-signature tool
 
-Microsoft strongly encourages the use of Adobe Sign to provide electronic signatures because it provides a seamless agreement signature process for customers, partners, and Microsoft. If necessary, it's possible to sign your VL agreement by using another third-party electronic signature tool, like DocuSign.
+Microsoft strongly encourages the use of Adobe Sign to provide electronic signatures because it provides a seamless VL agreement signature process for customers, partners, and Microsoft. If necessary, it's possible to sign your agreement by using another third-party electronic signature tool, like DocuSign.
 
 1. You must submit the agreement package for signature by using the Adobe Sign Electronic (Simple) option.
 2. In the body of the email you received from microsoft-noreply\@microsoft.com, select the **Review and sign** button.
@@ -188,9 +191,9 @@ You can resolve the Unprocessed Error without contacting support by completing t
 
 When this process is finished, Adobe Sign retains the DocuSign signature while previewing and after all parties sign the final document.
 
-## View agreements submitted for your signature
+## View volume licesnging agreements submitted for your signature
 
-An assigned signature contact who signed the agreement can sign in to the Adobe Sign portal to view a previously signed agreement up to 13 months after the signature takes place.
+An assigned signature contact who signed the VL agreement can sign in to the Adobe Sign portal to view a previously signed agreement up to 13 months after the signature takes place.
 
 To sign in to the Adobe Sign portal, retrieve the original email from microsoft-noreply\@microsoft.com and select the **Click to sign** button again.
 
@@ -204,7 +207,7 @@ To sign in to the Adobe Sign portal, retrieve the original email from microsoft-
 
 ## Use an existing Adobe Acrobat account
 
-If you already use Adobe Sign to sign other documents, you can use your existing Adobe account to sign in and view your Microsoft Agreements, or to sign a new agreement.
+If you already use Adobe Sign to sign other documents, you can use your existing Adobe account to sign in and view your Microsoft VL agreements, or to sign a new agreement.
 
 To find your agreements, use the following steps:
 
@@ -220,11 +223,11 @@ To find your agreements, use the following steps:
 After you electronically sign a VL agreement, you must wait for it to become active. Next, your reseller must submit an order to Microsoft for licenses under that agreement. After these two steps are finished, those licenses are available to view or manage in the volume licensing section of the Microsoft 365 admin center.
 
 > [!NOTE]
-> Resellers typically place orders soon after an agreement becomes active, but this isn't always the case.
+> Resellers typically place orders soon after a VL agreement becomes active, but this isn't always the case.
 
-After the VL agreement is activated, the people named on the agreement receive a welcome email from Microsoft inviting them to register the VL agreement in the Microsoft 365 admin center to access and manage the agreements. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
+After the agreement is activated, the people named on the agreement receive a welcome email from Microsoft inviting them to register the agreement in the Microsoft 365 admin center to access and manage the agreements. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
 
-Remember, the person named on the VL agreement by the reseller to manage licenses in the admin center might, or might not be the same person who signed the agreement!
+Remember, the person named on the agreement by the reseller to manage licenses in the admin center might, or might not be the same person who signed the agreement.
 
 ## Contact support
 
