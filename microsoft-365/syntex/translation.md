@@ -76,10 +76,10 @@ You can quickly provide feedback on translated files directly within your docume
 After selecting an icon, you’ll be prompted to:
 
 - Rate the feature
-- Add additional comments
-- Attach the translated document
-- Include diagnostic logs
-- Choose to allow Microsoft to follow up with you
+- Add comments
+- Optionally, attach the source or translated documents
+- Opt in to include diagnostic logs
+- Opt in to allow Microsoft to follow up with you
 
 ![Screenshot of the submit feedback to Microsoft screen.](../media/content-understanding/translation-feedback-2.png)
 
