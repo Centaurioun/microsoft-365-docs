@@ -43,8 +43,8 @@ There are different Copilots available.
 It's free to organizations that have a Microsoft 365 license. With Copilot Chat:
 
 - You can also create images and use [Copilot Pages](https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
-- Use for work and education, and know that you're protected with [enterprise data protection](enterprise-data-protection.md).
-- You can manage using [IT controls for admins](/copilot/manage).
+- You can use for work and education, and know that you're protected with [enterprise data protection](enterprise-data-protection.md).
+- You can manage it using [IT controls for admins](/copilot/manage).
 
 Microsoft 365 Copilot Chat is available on the web at [https://m365copilot.com](https://m365copilot.com), in the [Microsoft 365 Copilot app](https://apps.microsoft.com/detail/9wzdncrd29v9), and in Teams, Outlook, & Microsoft Edge.
 
@@ -82,7 +82,7 @@ When users sign in with their Microsoft Entra work or school account (`user@cont
 
 - When users select **work**, Copilot Chat is a work-based ([Microsoft Graph](/graph/overview)) chat experience. It shows results that their Microsoft Entra work or school account can access.
 
-- When users select **web**, Copilot Chat shows results that their Microsoft Entra work or school account can access and also shows results from the internet.
+- When users select **web**, Copilot Chat shows results that their Microsoft Entra work or school account can access, and also shows results from the internet.
 
   To learn about data privacy, see:
 
@@ -177,7 +177,7 @@ To learn more, see [What is Microsoft Security Copilot?](/copilot/security/micro
 ✅ Licensed by your work organization  
 ✅ Free for some people, like verified students and teachers
 
-**GitHub Copilot** is an AI coding assistant that can help you write code faster. This Copilot is typically licensed by your work organization and is also free for some people, like verified students and teachers.
+**GitHub Copilot** is an AI coding assistant that can help you write code faster. This Copilot is licensed by your work organization and is also free for some people, like verified students and teachers.
 
 You can use GitHub Copilot to:
 
