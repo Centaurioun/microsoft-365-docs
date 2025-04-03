@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 04/02/2025
+ms.date: 04/03/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -35,19 +35,21 @@ There are different Copilots available.
 ## Microsoft 365 Copilot Chat
 
 ✅ Secure with [enterprise data protection](enterprise-data-protection.md)  
-✅ Scalable with [pay-as-you-go](/pay-as-you-go/overview.md)  
+✅ Scalable with [pay-as-you-go](./pay-as-you-go/overview.md)  
 ✅ Free to organizations with a Microsoft 365 license
 
-**Microsoft 365 Copilot Chat** is free to organizations that have a Microsoft 365 license. Copilot Chat is an AI prompt and response experience that's grounded in the web and powered by large language models (LLMs). You can also create images and use [Copilot Pages](https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
+**Microsoft 365 Copilot Chat** is an AI prompt and response experience that's grounded in the web and powered by large language models (LLMs).
 
-Copilot Chat is designed for work and education, uses [enterprise data protection](enterprise-data-protection.md), and has IT controls for admins.
+It's free to organizations that have a Microsoft 365 license.
 
-You can use Copilot Chat for personal tasks, but be cautious. Never add sensitive or proprietary work information in a prompt.
+You can also create images and use [Copilot Pages](https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
 
-Microsoft 365 Copilot Chat is available on the web at [https://m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat), in the [Microsoft 365 Copilot app](https://apps.microsoft.com/detail/9wzdncrd29v9) that can be installed on devices, and in Teams, Outlook, and Microsoft Edge.
+Copilot Chat is designed for work and education, uses [enterprise data protection](enterprise-data-protection.md), and has [IT controls for admins](/copilot/manage).
+
+Microsoft 365 Copilot Chat is available on the web at [https://m365copilot.com](https://m365copilot.com), in the [Microsoft 365 Copilot app](https://apps.microsoft.com/detail/9wzdncrd29v9), and in Teams, Outlook, & Microsoft Edge.
 
 > [!TIP]
-> 
+> If you pin Copilot Chat in the Microsoft 365 Copilot app, when users go to `https://m365copilot.com`, then they're automatically redirected to `https://m365.cloud.microsoft/chat`.
 
 If you want users in your organization to have prompt and response interchanges with information on the internet and [enterprise data protection](enterprise-data-protection.md), then use Microsoft 365 Copilot Chat.
 
