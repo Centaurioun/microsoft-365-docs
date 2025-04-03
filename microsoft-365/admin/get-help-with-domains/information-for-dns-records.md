@@ -41,7 +41,7 @@ Check out all of our small business content on [Small business help & learning](
 [!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 > [!NOTE]
-> The procedures in this article assume that you have begun the process of [adding a domain](/admin/setup/add-domain?view=o365-worldwide#add-a-domain), but have not yet verified the domain.
+> The procedures in this article assume that you have begun the process of [adding a domain](/admin/setup/add-domain#add-a-domain), but have not yet verified the domain.
   
 ### Step 1: Find the TXT record value and verify
 

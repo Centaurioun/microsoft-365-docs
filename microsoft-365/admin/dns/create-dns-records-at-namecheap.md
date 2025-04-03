@@ -45,6 +45,9 @@ After you add these records at Namecheap, your domain will be set up to work wit
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
+> The procedures in this section assume that you have begun the process of [adding a domain](/admin/setup/add-domain#add-a-domain), but have not yet verified the domain.
+
+> [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 1. Make sure you have added a domain in the Microsoft 365 Admin Center using the steps in [Add a domain](/admin/setup/add-domain#add-a-domain), and that the domain has not already been verified. You'll need to copy the **TXT value** from the **Add a record to verify ownership** page for use later in this procedure.
