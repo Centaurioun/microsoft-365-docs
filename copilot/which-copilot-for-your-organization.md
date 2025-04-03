@@ -40,24 +40,23 @@ There are different Copilots available.
 
 **Microsoft 365 Copilot Chat** is an AI prompt and response experience that's grounded in the web and powered by large language models (LLMs).
 
-It's free to organizations that have a Microsoft 365 license.
+It's free to organizations that have a Microsoft 365 license. With Copilot Chat:
 
-You can also create images and use [Copilot Pages](https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
-
-Copilot Chat is designed for work and education, uses [enterprise data protection](enterprise-data-protection.md), and has [IT controls for admins](/copilot/manage).
+- You can also create images and use [Copilot Pages](https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
+- Use for work and education, and know that you're protected with [enterprise data protection](enterprise-data-protection.md).
+- You can manage using [IT controls for admins](/copilot/manage).
 
 Microsoft 365 Copilot Chat is available on the web at [https://m365copilot.com](https://m365copilot.com), in the [Microsoft 365 Copilot app](https://apps.microsoft.com/detail/9wzdncrd29v9), and in Teams, Outlook, & Microsoft Edge.
 
 > [!TIP]
-> If you pin Copilot Chat in the Microsoft 365 Copilot app, when users go to `https://m365copilot.com`, then they're automatically redirected to `https://m365.cloud.microsoft/chat`.
+> If you [pin Copilot Chat](pin-copilot.md) in the Microsoft 365 Copilot app, when users go to `https://m365copilot.com`, then they're automatically redirected to `https://m365.cloud.microsoft/chat`.
 
 If you want users in your organization to have prompt and response interchanges with information on the internet and [enterprise data protection](enterprise-data-protection.md), then use Microsoft 365 Copilot Chat.
 
 To learn more, see:
 
 - [Learn more about Microsoft 365 Copilot Chat](/copilot/overview)
-- [Read about Copilot for all: Introducing Microsoft 365 Copilot Chat](https://www.microsoft.com/microsoft-365/blog/2025/01/15/copilot-for-all-introducing-microsoft-365-copilot-chat)
-- [Add apps to Microsoft Intune](/mem/intune/apps/apps-add) and [assign apps to groups](/mem/intune/apps/apps-deploy)
+- [Read about Copilot for all: Introducing Microsoft 365 Copilot Chat - blog](https://www.microsoft.com/microsoft-365/blog/2025/01/15/copilot-for-all-introducing-microsoft-365-copilot-chat)
 
 ## Microsoft 365 Copilot
 
