@@ -134,18 +134,16 @@ Before the partner can assign these roles to users, you must add the partner as 
 
 ## Volume licensing roles
 
-Permissions to volume licensing information in Microsoft 365 admin center are controlled by the VL Agreement Administrators in Volume Licensing Service Center (VLSC), even for VL roles that predominantly use functionality in the Microsoft 365 admin center rather than VLSC.
+Volume licensing (VL) agreement administrators access their volume licenses in Microsoft 365 admin center.
 
-- Some volume licensing (VL) functionality is now available in Microsoft 365 admin center in a new volume licensing blade visible only to volume licensing users only.
+- VL administrators do not have permissions to any other admin center information or functionality outside the volume licensing section.
 
-- Volume licensing users see no other Microsoft 365 admin center information or functionality.
+- Global admins do not assign any VL roles and do not need to assign any admin role to a VL administrator for them to be able to access the volume licensing agreement.
 
-- Microsoft 365 admin center Global Admins have no role in assigning VL user permissions and do not need to assign any admin permissions to VL users for them to see the volume licensing blade.
+- Global admins don't have access to VL information or functionality in admin center, unless they are assigned a VL role by a VL administrator.
 
-- Volume licensing users must first register on the Volume Licensing Service Center (VLSC), where all roles and permissions for volume licensing functions is managed.
+- For more information, see [Manage volume licensing user roles](/microsoft-365/commerce/licenses/manage-user-roles-vl?view=o365-worldwide) or [contact the Volume Licensing Support team](/licensing/contact-us).
 
-- For more information about volume licensing in Microsoft 365 admin center, see [Frequently Asked Questions for the Volume Licensing Service Center](/licensing/vlsc-faqs-home-page) or [contact the Volume Licensing Service team](/licensing/contact-us).
-  
 ## Related content
 
 [Assign admin roles](assign-admin-roles.md) (article)\
