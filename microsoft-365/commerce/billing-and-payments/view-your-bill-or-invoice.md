@@ -37,14 +37,14 @@ ms.date: 04/04/2025
 # View your invoice in the Microsoft 365 admin center
 
 > [!NOTE]
-> This article only applies to Microsoft business subscriptions. If you have an app, game, or non-business subscription, see [View your Microsoft Store order history](https://support.microsoft.com/account-billing/view-your-microsoft-store-order-history-aafefe88-3ec2-ce28-e0b6-eff1d5cc8170).
+> This article only applies to Microsoft business subscriptions. If you have an app, game, or nonbusiness subscription, see [View your Microsoft Store order history](https://support.microsoft.com/account-billing/view-your-microsoft-store-order-history-aafefe88-3ec2-ce28-e0b6-eff1d5cc8170).
 
-You can view your invoice for your Microsoft business subscription in the Microsoft 365 admin center. If you need help with interpreting the charges that you see on your invoice, [find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts), then see either [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) or [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) for a detailed walkthrough of the billing statement.
+You can view your invoice for your Microsoft business subscription in the Microsoft 365 admin center. If you need help with interpreting the charges that you see on your invoice, [find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts). Then, for a detailed walkthrough of the billing statement, see either [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) or [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md).
 
 **Have a problem with your bill?** [Contact support for business products](../../admin/get-help-support.md).
 
 > [!IMPORTANT]
-> Microsoft 365 services doesn’t provide payment receipts. For credit or debit card payments, use the invoice and your credit or debit card billing statement to match your payment.
+> Microsoft 365 services don't provide payment receipts. For credit or debit card payments, use the invoice and your credit or debit card billing statement to match your payment.
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585), and our [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
@@ -80,16 +80,16 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 |Transaction type | Description |
 | -------- | -------- |
-|Purchase | This is for new purchases.  Your first invoice for a new purchase will have this transaction type   |
-|Monthly payment |Recurring cycle charges|
-|Renew |Your subscription has renewed to a new term|
-|Re-enable |If your subscription was disabled and re-enabled.|
-|Add quantity |Licenses added to an existing subscription|
-|Remove quantity |Licenses removed from an existing subscription|
-|Usage charges |If you have a consumption based subscription like Azure, charges will show as "usage charges"|
+|Purchase | This transaction is for new purchases. Your first invoice for a new purchase has this transaction type.  |
+|Monthly payment |Recurring cycle charges.|
+|Renew |Your subscription was renewed to a new term.|
+|Re-enable |Indicates your subscription was disabled and re-enabled.|
+|Add quantity |Licenses added to an existing subscription.|
+|Remove quantity |Licenses removed from an existing subscription.|
+|Usage charges |If you have a consumption based subscription like Azure, charges are displayed as "usage charges."|
 |Cancel |If you cancel and are eligible for a prorated refund.|
-|Convert |When you convert from one subscription to another|
-|Credit |If a credit has been applied to your account.|
+|Convert |When you convert from one subscription to another.|
+|Credit |Indicates a credit was applied to your account.|
 
 > [!NOTE]
 > The online version of your invoice looks different from the .PDF version that you download.
