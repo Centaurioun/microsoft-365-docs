@@ -51,7 +51,7 @@ Check out all of our small business content on [Small business help & learning](
 ## Before you begin
 
 - You must be at least a Billing Administrator to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
-- You must be able to sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. If you have trouble signing in, see [Microsoft 365 Administration troubleshooting](https://learn.microsoft.com/microsoft-365/troubleshoot/o365-admin-welcome).
+- You must be able to sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. If you have trouble signing in, see [Microsoft 365 Administration troubleshooting](../../../troubleshoot/o365-admin-welcome.md).
 
 ## Watch: View, download, or print your bill
   
