@@ -35,7 +35,7 @@ Use these steps:
 
 1. Sign in to Microsoft 365 with a [Compliance administrator](/entra/identity/role-based-access-control/permissions-reference) account.
 
-2. In your browser, type: <https://compliance.microsoft.com/basicmobilityandsecurity>.
+2. In your browser, type: <https://purview.microsoft.com/basicmobilityandsecurity>.
 
 3. Go to **Organization Setting** tab.
 

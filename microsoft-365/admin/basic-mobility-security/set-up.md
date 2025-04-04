@@ -38,7 +38,7 @@ Have questions? For a FAQ to help address common questions, see [Basic Mobility 
 
 1. Sign in to Microsoft 365 with a [Directory writers](/entra/identity/role-based-access-control/permissions-reference) admin account.
 
-1. Go to [Activate Basic Mobility and Security](https://compliance.microsoft.com/basicmobilityandsecurity).
+1. Go to [Activate Basic Mobility and Security](https://purview.microsoft.com/basicmobilityandsecurity).
 
 1. Select **Enable feature.**
 
