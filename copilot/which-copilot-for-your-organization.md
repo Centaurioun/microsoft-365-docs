@@ -38,7 +38,7 @@ There are different Copilots available.
 ✅ Scalable with [pay-as-you-go](./pay-as-you-go/overview.md)  
 ✅ Free to organizations with a Microsoft 365 license
 
-**Microsoft 365 Copilot Chat** is an AI prompt and response experience that's grounded in the web and powered by large language models (LLMs).
+**Microsoft 365 Copilot Chat** is an AI prompt and response experience that's [grounded in the web](/copilot/privacy-and-protections#privacy-and-security-of-generated-search-queries) and powered by [large language models (LLMs)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-are-large-language-models-llms).
 
 It's free to organizations that have a Microsoft 365 license. With Copilot Chat:
 
