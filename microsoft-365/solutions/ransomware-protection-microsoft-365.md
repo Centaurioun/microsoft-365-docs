@@ -90,6 +90,10 @@ Email is protected by:
 
 - [Retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) allow you to retain immutable copies of email for the configured retention period.
 
+### Enhanced Recovery Solutions
+
+In addition to these native built-in capabilities, Microsoft also recommends evaluating the use of [Microsoft 365 Backup](https://www.microsoft.com/en-us/microsoft-365/microsoft-365-backup) or a recognized partner solution built on top of the [M365 Backup Storage](https://adoption.microsoft.com/en-us/microsoft-365-backup-storage/#partners) platform. The Microsoft 365 Backup tool compliments and extends native capabilities with a focus on fast, secure, and efficient self-service bulk recovery to recover your content quickly to a healthy pre-attack prior point in time. The Backup Storage platform is architected and purpose built to provide enhanced restore capabilities for admins. Please be aware that purchasing a partner solution that does not leverage the Microsoft 365 Backup Storage platform (i.e. one that solely copies your data to another location) will likely not provide sufficiently performant restore to meet your ransomware recovery needs. Read more on how to select an appropriate backup and restore solution [here](https://adoption.microsoft.com/files/microsoft-365-backup/Microsoft-365-Backup_Best-practices-whitepaper.pdf).
+
 ### Encrypting files in place
 
 As previously described, files in SharePoint and OneDrive for Business are protected from malicious encryption with:
@@ -245,6 +249,9 @@ Microsoft 365:
 - [Ransomware incident response playbooks](/security/ransomware/)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protect your Windows 10 PC from ransomware](https://support.microsoft.com/windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+
+- [Microsoft 365 Backup for enhanced, efficient, and secure recovery](aka.ms/m365backup)
+
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 
