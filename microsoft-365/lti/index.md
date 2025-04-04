@@ -7,7 +7,7 @@ ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
 ms.topic: concept-article
-ms.service: microsoft-365-enterprise
+ms.service: msteams
 ms.subservice: teams-education
 search.appverid: 
 ms.collection: 

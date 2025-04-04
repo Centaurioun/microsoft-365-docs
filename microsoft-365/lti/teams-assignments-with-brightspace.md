@@ -6,7 +6,7 @@ ms.author: danismith
 manager: mimast
 ms.date: 02/10/2025
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: msteams
 ms.subservice: teams-education
 ---
 

@@ -7,7 +7,7 @@ ms.reviewer: sovaish
 ms.date: 05/26/2021
 audience: admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: msteams
 ms.subservice: teams-education
 f1.keywords:
 - CSH

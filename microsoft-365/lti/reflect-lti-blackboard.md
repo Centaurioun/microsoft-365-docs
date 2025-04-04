@@ -7,7 +7,7 @@ ms.reviewer: eladgr
 ms.date: 11/28/2023
 audience: admin
 ms.topic: integration
-ms.service: o365-administration
+ms.service: msteams
 ms.subservice: teams-education
 ms.collection: 
 - M365-modern-desktop

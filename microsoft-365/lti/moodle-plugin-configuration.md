@@ -7,7 +7,7 @@ ms.reviewer: amitman
 ms.date: 04/06/2022
 audience: admin
 ms.topic: install-set-up-deploy
-ms.service: microsoft-365-business
+ms.service: msteams
 ms.subservice: teams-education
 f1.keywords:
 - CSH

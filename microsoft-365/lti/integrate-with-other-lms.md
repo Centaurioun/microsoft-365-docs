@@ -7,7 +7,7 @@ ms.reviewer: amitman
 ms.date: 10/31/2022
 audience: admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: msteams
 ms.subservice: teams-education
 ms.collection: 
 - M365-modern-desktop

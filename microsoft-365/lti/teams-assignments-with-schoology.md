@@ -7,7 +7,7 @@ manager: mimast
 ms.date: 09/12/2024
 audience: admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: msteams
 ms.subservice: teams-education
 ---
 # Use Microsoft Teams Assignments with PowerSchool Schoology Learning
