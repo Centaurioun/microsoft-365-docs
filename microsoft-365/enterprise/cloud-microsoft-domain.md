@@ -27,7 +27,7 @@ The growth of Microsoft cloud services led to the expansion of the domain space 
 
 The `.microsoft` top-level domain is exclusive to Microsoft. The new domain doesn’t have traditional suffixes such as `.com` or `.net` in the end. This is by design. `cloud.microsoft` resides under the `.microsoft` top-level domain, for which Microsoft is a registry operator and the sole registrant. This domain allows for extra security, privacy, and protection against spoofing when you interact with apps within that domain. You can trust that any website or app that ends with `cloud.microsoft` is an official Microsoft product or service.
 
-Some Microsoft 365 products that use the `cloud.microsoft` domain include Microsoft 365, Microsoft 365 Copilot Chat, Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Outlook, Microsoft OneNote, Microsoft Planner, Microsoft Loop, Microsoft Mesh, Microsoft Viva Engage, Microsoft Viva Insights, Microsoft Viva Learning, Microsoft Viva Pulse, and more. This isn't a complete list.
+Some Microsoft 365 products that are already using the `cloud.microsoft` domain include Microsoft 365 Copilot Chat, Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Outlook, Microsoft OneNote, Microsoft Planner, Microsoft Loop, Microsoft Mesh, Microsoft Viva Engage, Microsoft Viva Insights, Microsoft Viva Learning, Microsoft Viva Pulse, and more. These are just some examples, and over time you will see even more Microsoft 365 product experiences to be delivered from the `cloud.microsoft` domain.
 
 ## Benefits of a unified domain
 
