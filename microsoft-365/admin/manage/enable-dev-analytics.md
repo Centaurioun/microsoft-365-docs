@@ -1,7 +1,7 @@
 ---
 title: "Enable developers to use app analytics in the Developer Portal for Teams"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -13,22 +13,16 @@ ms.subservice: administration
 ms.localizationpriority: medium
 ms.reviewer: luywang
 ms.collection: 
-- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
+- must-keep
 ms.custom: 
-- VSBFY23
-- AdminSurgePortfolio
-- AdminTemplateSet
 - admindeeplinkMAC
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- GEA150
 description: "Enable developers to view and use app analytics for company apps in the Developer Portal using the Developer Portal for Teams setting."
 ---
 
@@ -42,10 +36,6 @@ To enable the setting, under **Org settings**, select **Developer Portal for Tea
 
 :::image type="content" source="../../media/enable-dev-analytics/enable-dev-analytics-flyout.png" alt-text="Image of the flyout pane where you can enable the setting":::
 
-## When will this setting be available?
-
-General Availability (Worldwide): We began rolling out the setting in early April 2025 and expect to complete the process by mid-April 2025.
-
 ## How will this setting affect admins and their organization?
 
 When you enable this setting, enterprise developers are provided with better insights into the performance and user engagement of custom apps, helping them make informed decisions about app improvements. By default, this setting is disabled. Disabling this setting might prevent developers from accessing and understanding app usage and other insights, causing disruptive change to their workflow.
@@ -56,6 +46,6 @@ To enable enterprise developers to view app usage, enable the setting in **Micro
 
 ## Related articles
 
+- [Analyze App Usage in Developer Portal](/microsoftteams/platform/concepts/build-and-test/analyze-your-apps-usage-in-developer-portal?tabs=custom-apps-built-for-your-org)
 - [Microsoft Teams app usage report](/microsoftteams/teams-analytics-and-reports/app-usage-report)
-- [Microsoft Teams analytics and reporting](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)
-- [View analytics in Teams](/microsoftteams/teams-analytics-and-reports/view-analytics)
+
