@@ -26,7 +26,7 @@ ms.custom:
 - GAUpdates
 - campaignIDs-batch2
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
-ms.date: 09/30/2024
+ms.date: 04/06/2025
 ---
 
 # Buy and manage add-ons in the Microsoft 365 admin center
