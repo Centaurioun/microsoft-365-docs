@@ -33,7 +33,7 @@ ms.date: 09/30/2024
 
 Many Microsoft business plans have add-ons that you can buy for your subscriptions. Add-ons provide more features to enhance your subscription's capabilities. You buy and manage add-ons in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-This article only applies to customers with a Microsoft Online Subscription Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, you can buy add-ons the same as any other product on the **Products and services** page. To learn how to do this, see [Buy a different subscription](try-or-buy-microsoft-365.md#buy-a-different-subscription).  [Find out what type of billing account you have.](manage-billing-accounts.md#view-my-billing-accounts).
+This article only applies to customers with a Microsoft Online Subscription Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, you can buy add-ons the same as any other product on the **Products and services** page. To learn how to do this, see [Buy a different subscription](try-or-buy-microsoft-365.md#buy-a-different-subscription).  Find out what type of billing account you have..
 
 ## Before you begin
 
@@ -73,7 +73,8 @@ To manage a traditional add-on, you go to the subscription that contains it and 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center.</a>
     - If you’re using the **Simplified view**, select **Billing**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. Select the subscription that  contains the add-on that you want to update.
+1. Select the subscription that contains the add-on that you want to update.
+
 3. On the subscription details page, the **Add-ons** section lists the add-ons that you bought. Select **Manage add-ons**.
 4. In the **Manage add-ons** pane, from the **Add-on** drop-down list, select the add-on that you want to change.
 5. Make the changes that you want for the add-on, then select **Save**.
