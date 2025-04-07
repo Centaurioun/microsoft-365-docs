@@ -211,6 +211,10 @@ Whenever you delete a user's account, Microsoft will delete that user's usage da
 
 However, when you select a particular day, up to 28 days from the current date, the report show the user's usage for that day in the User Details table.
 
+## How do I interpret the last activity date in user, group, or site details in the usage reports?
+
+The "last activity date" in user, group, or site details represents the most recent date on which a user performed any intentional activity within the app, regardless of the selected time period of the past 7/30/90/180 days.
+
 ## Related content
 
 [Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)\
