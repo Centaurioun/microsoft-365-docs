@@ -213,7 +213,7 @@ However, when you select a particular day, up to 28 days from the current date, 
 
 ## How do I interpret the last activity date in user, group, or site details in the usage reports?
 
-The "last activity date" in user, group, or site details represents the most recent date on which a user performed any intentional activity within the app, regardless of the selected time period of the past 7/30/90/180 days.
+The last activity date in user, group, or site details represents the most recent date on which a user performed any intentional activity within the app, regardless of the selected time period of the past 7/30/90/180 days.
 
 ## Related content
 
