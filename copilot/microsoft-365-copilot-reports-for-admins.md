@@ -1,6 +1,6 @@
 ---  
-title: Microsoft 365 Copilot reports that help admins monitor usage.
-description: Learn about the different Microsoft 365 Copilot reporting options available for admins. Get an overview of the Copilot readiness and usage reports in the Microsoft 365 admin center, Copilot Dashboard, Power BI templates, and Microsoft Purview audit logs.
+title: Microsoft 365 Copilot reports for IT admins
+description: Learn about the different Microsoft 365 Copilot reporting options available for admins. Get an overview of the Copilot readiness and usage reports, enable the Copilot Dashboard in Viva Insights, get advanced insights and Power BI templates with Microsoft Viva, view agent reports in Power Platform and Copilot Studio, and access the Microsoft Purview audit logs.
 author: MandiOhlinger
 ms.author: mandia
 manager: laurawi
@@ -92,6 +92,9 @@ The Copilot Dashboard offers a comprehensive view of Copilot's usage metrics and
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) as the **Microsoft 365 Global Administrator**.
 1. [Enable the Copilot Dashboard](/viva/insights/advanced/admin/manage-settings-copilot-dashboard) and [delegate access](/viva/insights/org-team-insights/delegate-access) to the users who need it.
+
+    ??NEED SCREENSHOT??
+
 1. The users can start using the Copilot Dashboard:
 
     1. In Teams, in the left navigation, select the ellipses (...), and search for **Viva Insights**.
@@ -132,13 +135,13 @@ To learn more, see:
 - [Key concepts – Analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview)
 - [Set up your development environment for Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/ecosystem)
 
-The Power Platform admin center and Copilot Studio provide analytics data for your agents.
-
 Based on licensing, there are two approaches to consuming agents:
 
-- **Consumption-based agents** - You can [pay-as-you-go](./pay-as-you-go/overview.md) or purchase a message pack with a set number of messages (??need link to message pack info??). This approach is a consumption-based model, and is ideal for organizations that want a cost effective way to access Copilot services.
+- **Consumption-based agents** - You can [pay-as-you-go](./pay-as-you-go/overview.md) or purchase a message pack with a set number of messages (??NEED LINK TO MESSAGE PACK INFO??). This approach is a consumption-based model, and is ideal for organizations that want a cost effective way to access Copilot services.
 
 - **Licensed agents** - You can use the agents included in your Microsoft 365 Copilot license without any extra costs. This approach is a license-based model, and is ideal for organizations that want to use Copilot agents without worrying about usage limits or costs.
+
+The Power Platform admin center and Copilot Studio provide analytics data for your agents.
 
 ### Analytics reports for consumption-based agents
 
@@ -147,7 +150,7 @@ To view the analytics for consumption-based agents, use the Power Platform admin
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as the **System Administrator**.
 2. Select **Manage** > **Tenant settings**. Add users to the **Copilot Studio authors** role. Users with this role can create agents in Copilot Studio and view the analytics for the agents they create.
 
-    To view all reports of all agents, sign in as ??what's the least privileged role??
+    To view all reports of all agents, sign in as ??WHAT IS THE LEAST-PRIVILEGED ROLE??
 
     To learn more, see [Assign a security role to a user](/power-platform/admin/assign-security-roles).
 
@@ -156,7 +159,7 @@ To view the analytics for consumption-based agents, use the Power Platform admin
     1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as the **Copilot Studio author**.
     1. Select **Licensing** > **Copilot Studio** > **Summary**
 
-        ??screenshot??
+        ??NEED SCREENSHOT??
 
     1. View the reports:
 
@@ -171,7 +174,7 @@ To assign Copilot Studio licenses, use the Microsoft 365 admin center. To view t
 
     To learn more, see:
 
-    - [About admin roles in the Microsoft 365 admin center](../microsoft-365/admin/add-users/about-admin-roles.md)
+    - [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles)
     - [Assign licenses and manage access to Copilot Studio](/microsoft-copilot-studio/requirements-licensing)
 
 1. The Copilot Studio users can start using the reports:
