@@ -23,14 +23,15 @@ description: Learn about the expiration process for agreements in the SharePoint
 It's important to keep track of the expiration dates in agreements to ensure timely renewals and avoid lapses. The **Expiration date** is a standard field that records the date an agreement is set to expire. This field should be included by template creators in any template designed for agreements that have an expiration date and must be filled by agreement creators for the reports, notifications, and status changes to take effect.
 
 To ensure that imported agreements follow the expiration flow, ensure that the **Expiration date** field is filled in the Agreement details screen when importing signed agreements.
- 
+
+![A screenshot of an agreement showing an expiration date is added.](../../media/content-understanding/agreements-expiration-date-added.png)
 
 Once the agreement generated from the solution is signed and executed, or the imported agreement is successfully added after reviewing and confirming its details, the expiration date cannot be added or updated.
 
 If the **Expiration date** is not included in the agreement, it will be treated as an evergreen agreement.
 
 
-## Notifications of expiration
+## Expiration notifications
 
 When the **Expiration date** field is filled in the agreement, the following actions occur:
 
@@ -45,7 +46,6 @@ When the **Expiration date** field is filled in the agreement, the following act
 - A notification is sent to the [default recipients](#default-recipients-of-notifications), informing them that the agreement has expired.
 
 - The status of the agreement is updated to **Expired**.
-
 
    ![A screenshot of a notification sent to inform recipients than an agreement is expired.](../../media/content-understanding/agreements-expired-agreement-notification.png)
 
