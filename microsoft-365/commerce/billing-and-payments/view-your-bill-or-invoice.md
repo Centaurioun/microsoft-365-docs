@@ -31,7 +31,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150, GEA150
 description: "Learn how to find your invoice or billing statement for a Microsoft business subscription in the Microsoft 365 admin center."
-ms.date: 04/04/2025
+ms.date: 04/08/2025
 ---
 
 # View your invoice in the Microsoft 365 admin center
@@ -67,7 +67,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 2. If you have more than one billing account, select **Change billing account** to view invoices associated with each billing account.
-3. Select an invoice from the list to view the details online. If you don’t see any invoices, change the date range or select a different billing account from the **Billing account view** selector. The invoice details page provides information that includes:
+3. Select an invoice from the list to view the details online. If you don't see any invoices, change the date range or select a different billing account from the **Billing account view** selector. The invoice details page provides information that includes the following items:
 
    - The amount due and the date the invoice was paid.
    - Invoice details like the invoice date, billing period, billing profile, and billing account.
@@ -80,7 +80,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 |Transaction type | Description |
 | -------- | -------- |
-|Purchase | This transaction is for new purchases. Your first invoice for a new purchase has this transaction type.  |
+|Purchase | This transaction is for new purchases. Your first invoice for a new purchase has this transaction type.|
 |Monthly payment |Recurring cycle charges.|
 |Renew |Your subscription was renewed to a new term.|
 |Re-enable |Indicates your subscription was disabled and re-enabled.|
