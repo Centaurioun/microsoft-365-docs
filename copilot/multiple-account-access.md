@@ -72,7 +72,7 @@ The end-user experience for blocked users viewing work and school documents is a
 
 ## Apps where multiple account access to Copilot is available
 
-As of March 20, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
+As of April 8, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
 
 ### On Android devices
 
@@ -81,3 +81,8 @@ As of March 20, 2025, multiple account access is rolling out gradually in the fo
 ### On iOS devices
 
 - PowerPoint: Version 2.95.25030623
+- Word: Version 2.95.305.0
+
+### On Windows devices
+
+- Word: Version 16.0.18623.20018
