@@ -47,31 +47,23 @@ When the **Expiration date** field is filled in the agreement, the following act
 - The status of the agreement is updated to **Expired**.
 
 
+   ![A screenshot of a notification sent to inform recipients than an agreement is expired.](../../media/content-understanding/agreements-expired-agreement-notification.png)
+
 ### Default recipients of notifications
 
 For agreements generated using the solution, the recipient is the agreement author or creator. For imported agreements, the recipient is the uploader of the agreement.
 
-#### Notification considerations
+#### Considerations for manageing notifications
 
 - To ensure the expiration notification is sent to a specific person or group other than the default recipient, include the **Owner** field in the template and designate the appropriate recipients during the agreement authoring stage.
 
 - For the agreements in **Draft** status, the expiration notifications and status change will not be triggered.
 
 - If an agreement's Word document is under the status of **Published**, **Reviewed**, or **Approved**, and it is downloaded, signed, and converted into a PDF using a third-party electronic signature tool, the following occurs:
+
     - The PDF is imported into the Agreements solution with the status **Active**, while the Word document remains in its original status.
+
     - As a result, two different expiration notifications will be sent: one for the Word document and one for the PDF.
-
-
-> [!NOTE]
-> To ensure the expiration notification is sent to a specific person or group other than the default recipient, include the **Owner** field in the template and designate the appropriate recipients during the agreement authoring stage.
-
->For the agreements in **Draft** status, the expiration notifications and status change will not be triggered.
-
->If an agreement's Word document is under the status of **Published**, **Reviewed**, or **Approved**, and it is downloaded, signed, and converted into a PDF using a third-party electronic signature tool, the following occurs:
->- The PDF is imported into the Agreements solution with the status **Active**, while the Word document remains in its original status.
->- As a result, two different expiration notifications will be sent: one for the Word document and one for the PDF.
-
-
 
 
 <br>
