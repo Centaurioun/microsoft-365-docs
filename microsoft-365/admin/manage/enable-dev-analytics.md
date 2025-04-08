@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/07/2025
+ms.date: 04/08/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-enterprise
@@ -43,6 +43,10 @@ When you enable this setting, enterprise developers are provided with better ins
 ## What actions are needed from admins?
 
 To enable enterprise developers to view app usage, enable the setting in **Microsoft 365 admin center -> Settings -> Org settings -> Services -> Developer Portal for Teams**.
+
+## What do developers need to do?
+
+Developers can configure access to analytics for company apps by following the guidance in [Analyze app usage in Developer Portal](/microsoftteams/platform/concepts/build-and-test/analyze-your-apps-usage-in-developer-portal?tabs=custom-apps-built-for-your-org#tabpanel_1_custom-apps-built-for-your-org).
 
 ## Related articles
 
