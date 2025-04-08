@@ -140,6 +140,8 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     > [!NOTE]
     > Adding a mailbox to the backup policy will back up the primary and archive mailboxes.
+    >
+    > Adding a mailbox may temporarily fail if mailbox setup has not had time to complete.  For example, if you recently created the user, licensed the user, or migrated the mailbox from on premises, you may see a transient failure while the mailbox is still being setup. 
 
     ![Screenshot of the Choose selection method page for Exchange.](../media/m365-backup/backup-choose-selection-method-exchange.png)
 
