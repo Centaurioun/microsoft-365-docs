@@ -20,7 +20,17 @@ description: Learn about the expiration process for agreements in the SharePoint
 
 # Manage expirations of agreements in SharePoint Agreements
 
-It's important to keep track of the expiration dates in agreements to ensure timely renewals and avoid lapses. The **Expiration date** is a standard field that records the date an agreement is set to expire. This field should be included by template creators in any template designed for agreements that have an expiration date and must be filled by agreement creators for the reports, notifications, and status changes to take effect.
+It's crucial to keep track of the expiration dates in agreements to ensure timely renewals and avoid lapses. The Agreements solution provides timely notifications to the agreement owners to take appropriate action on the agreements before they expire.
+
+## Expiration date field
+
+The **Expiration date** is a standard field that records the date an agreement is set to expire. This field should be included by template creators in any template designed for agreements that have an expiration date. Template creators need to search for expiration date in the **Set up fields** panel and add it to the template. The field will be added to the template as shown in the following image.
+
+![A screenshot of the Set up fields panel showing the expiration date has been added.](../../media/content-understanding/agreements-setup-field-expiration-date.png)
+
+The agreements generated using the template should have the **Expiration date** field filled in with the appropriate value by agreement creators as shown in the following image. Only when this field value is filled, the reports, notifications, and status changes will take effect on corresponding expiration dates.
+
+![A screenshot of the Generate documents panel showing the expiration date has been added.](../../media/content-understanding/agreements-generate-documents-expiration-date.png)
 
 To ensure that imported agreements follow the expiration flow, ensure that the **Expiration date** field is filled in the Agreement details screen when importing signed agreements.
 
@@ -29,7 +39,6 @@ To ensure that imported agreements follow the expiration flow, ensure that the *
 Once the agreement generated from the solution is signed and executed, or the imported agreement is successfully added after reviewing and confirming its details, the expiration date cannot be added or updated.
 
 If the **Expiration date** is not included in the agreement, it will be treated as an evergreen agreement.
-
 
 ## Expiration notifications
 
