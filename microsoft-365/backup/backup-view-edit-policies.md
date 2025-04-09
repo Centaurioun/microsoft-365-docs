@@ -164,6 +164,9 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     The rule-based feature for bulk addition of mailboxes via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
 
+    > [!NOTE]
+    > The site last modified feature is in preview.
+
     d. Under **Select mailboxes individually**, you can search and select mailboxes you want to add to a backup policy.
 
     > [!NOTE]
@@ -190,25 +193,30 @@ Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to view a
 
 Follow these steps to view and edit backup policies for OneDrive.
 
-1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, in the **Scope** area, select **Edit**.
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **View details**.
+
 
     ![Screenshot showing the view and edit backup policy for OneDrive in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-onedrive.png)
 
-2. On the **OneDrive accounts backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
+2. You can either add new accounts to or remove accounts from an existing OneDrive backup policy.
 
-3. You can either add new accounts to or remove accounts from an existing OneDrive backup policy.
+    a. To add new accounts, use either one of these two methods:
 
-    a. To add new accounts, on the **Backed up accounts** tab, select **+ Add accounts**.
+    - On the **OneDrive accounts backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
 
-    b. Select the accounts from the list. Once you add accounts to the list, follow the prompts to update the policy.
+    - Or, on the **OneDrive accounts backup policy** panel, select **+ Add accounts**.
+
+    Select the accounts using any of the four available methods. Once you have added the accounts, follow the prompts to update the policy.
 
     ![Screenshot showing how to add user accounts to the existing OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-add-account.png)
 
-    c. To remove accounts from existing backup policy, on the **Backed up accounts** tab,  select the accounts from the list, and then select **Remove**. Once you have done your changes, follow the prompts to remove the accounts.
+    b. To remove accounts from existing backup policy, on the **Included accounts** tab, select the accounts from the list, and then select **Remove**. Once you have done your changes, follow the prompts to remove the accounts.
+
+    Accounts added to a backup policy through a dynamic rule cannot be individually removed. To exclude these accounts from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list will exclude them from the policy. Alternatively, removing the entire distribution list from the rule will remove all accounts that were added through that list from the backup policy.
 
     ![Screenshot showing how to remove user accounts from OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-account.png)
 
-4. Once you have done your changes, follow the prompts to update the policy.
+3. The removed accounts are moved to the **Removed accounts** tab.
 
     ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-account.png)
 
@@ -248,23 +256,29 @@ Follow these steps to view and edit backup policies in SharePoint.
 
 Follow these steps to view and edit backup policies for Exchange.
 
-1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **Exchange** section, in the **Scope** area, select **Edit**.
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **Exchange** section, select **View details**.
 
     ![Screenshot showing the view and edit backup policy for Exchange in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-exchange.png)
 
-2. On the **Exchange mailbox backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
+2. You can either add new mailboxes to or remove mailboxes from the existing Exchange backup policy.
 
-3. You can either add new user mailboxes to or remove user mailboxes from the existing Exchange backup policy.
+    a. To add new shared or user mailboxes, use either one of these two methods:
 
-    a. To add new shared or user mailboxes, select **+ Add user mailboxes**.
+    - On the **Exchange backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
+
+    -Or, on the **Exchange backup policy** panel, select **+ Add mailboxes**.
+
+    Select the mailboxes using any of the four available methods. Once you have added the mailboxes, follow the prompts to update the policy.
 
     ![Screenshot showing how to add mailboxes to the existing Exchange backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-exchange-add-mailbox.png)
 
-    b. To remove user mailboxes from existing backup policy, on the **Backed up sites** tab, select the user mailboxes from the list, and select **Remove**.
+    b. To remove user mailboxes from existing backup policy, on the **Included mailboxes** tab, select the user mailboxes from the list, and select **Remove**.
+
+    Mailboxes added to a backup policy through a dynamic rule cannot be individually removed. To exclude these mailboxes from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list will exclude them from the policy. Alternatively, removing the entire distribution list from the rule will remove all mailboxes that were added through that list from the backup policy.
 
     ![Screenshot showing how to remove user mailboxes from Exchange backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-mailbox.png)
 
-4. Once you have done your changes, follow the prompts to update the policy.
+3. The removed mailboxes are moved to the **Removed mailboxes** tab.
 
     ![Screenshot of the updated Exchange mailbox backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-mailbox.png)
 
@@ -272,6 +286,18 @@ Follow these steps to view and edit backup policies for Exchange.
     > Removing mailboxes from backup policy means no future backups will be taken for those removed mailboxes. Existing backups for those mailboxes will not be deleted and will be charged.
 
 ---
+
+## Delete a dynamic rule
+
+When deleting a dynamic rule, you have two options that determine how existing accounts are treated in the backup policy:
+
+- **Delete rule but continue backups**
+
+    The dynamic rule is converted into a static list. Backup continues for all user accounts that were included through the rule at the time of deletion. However, future changes to the original distribution lists or security groups—such as users being added or removed—will no longer be reflected in the backup policy. For example, if a user is added to a previously included group after the rule is deleted, they will not be automatically added to the backup policy.
+
+- **Delete rule and stop new backups**
+
+    The dynamic rule is removed, and no new backups will be taken for accounts previously included through the rule. Existing backups for these users remain restorable until they expire based on the configured retention period. You can re-enable backup for these users by manually adding them or by creating a new dynamic rule that includes them.
 
 ## States of backup
 
