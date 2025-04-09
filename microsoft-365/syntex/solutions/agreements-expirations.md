@@ -32,7 +32,7 @@ The agreements generated using the template should have the **Expiration date** 
 
 ![A screenshot of the Generate documents panel showing the expiration date has been added.](../../media/content-understanding/agreements-generate-documents-expiration-date.png)
 
-To ensure that imported agreements follow the expiration flow, ensure that the **Expiration date** field is filled in the Agreement details screen when importing signed agreements.
+To ensure that imported agreements follow the expiration flow, make sure that the **Expiration date** field is filled in the agreement's details screen when importing signed agreements.
 
 ![A screenshot of an agreement showing an expiration date is added.](../../media/content-understanding/agreements-expiration-date-added.png)
 
