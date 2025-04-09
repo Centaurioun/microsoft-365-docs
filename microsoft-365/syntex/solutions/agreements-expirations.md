@@ -24,11 +24,11 @@ It's essential to monitor the expiration dates of agreements to ensure they're r
 
 ## Expiration date field
 
-The **Expiration date** is a standard field that records when an agreement is set to expire. Template creators should include this field in any template designed for agreements that have an expiration date. To add this field, template creators need to search for *expiration date* in the **Set up fields** panel and then add it to the template. The field is added to the template as shown in the following image.
+The **Expiration date** is a standard field that records when an agreement is set to expire. Template creators should include this field in any template designed for agreements that have an expiration date. To add this field, template creators need to search for *expiration date* in the **Set up fields** panel and then add it to the template.
 
 ![A screenshot of the Set up fields panel showing the expiration date has been added.](../../media/content-understanding/agreements-setup-field-expiration-date.png)
 
-The agreements generated using the template should have the **Expiration date** field filled in with the appropriate value by agreement creators as shown in the following image. Only when this field value is filled, the reports, notifications, and status changes take effect on corresponding expiration dates.
+The agreements generated using the template should have the **Expiration date** field filled in with the appropriate value by agreement creators. Only when this field value is filled, the reports, notifications, and status changes take effect on corresponding expiration dates.
 
 ![A screenshot of the Generate documents panel showing the expiration date has been added.](../../media/content-understanding/agreements-generate-documents-expiration-date.png)
 
