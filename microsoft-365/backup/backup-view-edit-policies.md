@@ -40,11 +40,11 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the Microsoft 365 Backup page with OneDrive highlighted.](../media/m365-backup/backup-setup-backup-page-onedrive.png)
 
-5. On the **Overview** page, review the backup features for OneDrive, and then select **Next**.
+5. On the **Overview** page, review the backup policy attributes for OneDrive, and then select **Next**.
 
     ![Screenshot of the Overview page for OneDrive.](../media/m365-backup/backup-overview-page-onedrive.png)
 
-6. On the **Choose selection method** page, you can set up OneDrive user accounts using any or all three ways. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
+6. On the **Choose selection method** page, you can select OneDrive user accounts using any of four available methods. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
 
     ![Screenshot of the Choose selection method page for OneDrive.](../media/m365-backup/backup-choose-selection-method-onedrive.png)
 
@@ -52,14 +52,18 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
-    b. Under **Back up accounts that match specific filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
+    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
+
+    For example, if a user is added to a distribution list that is included in the dynamic rule, then that user will be included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they will be removed from the backup policy within 24 hours. That user’s existing backups will remain restorable for until they expire based on their retention period, but new backups will no longer be taken until that individual is re-added to the included distribution list, or until they are re-added manually in a static addition.
+
+    > [!NOTE]
+    > The dynamic rule feature is in preview.
+
+    c. Under **Using filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list members are updated later.
 
     The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example, groups or lists won't be dynamically updated in the system if users are added or removed from the original security group.
 
-    > [!NOTE]
-    > The site last modified feature is in preview.
-
-    c. Under **Select accounts individually**, you can search and select accounts you want to add to a backup policy.
+    d. Under **Select accounts individually**, you can search and select accounts you want to add to a backup policy.
 
 7. Once you've made the right selections, select **Next** to create the backup policy for OneDrive.
 
@@ -132,11 +136,11 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Microsoft 365 Backup page with Exchange highlighted.](../media/m365-backup/backup-setup-backup-page-exchange.png)
 
-5. On the **Overview** page, review and verify the backup policy attributes for Exchange, such as backup frequency, backup retention, cost details, and then select **Next**.
+5. On the **Overview** page, review the backup policy attributes for Exchange, and then select **Next**.
 
     ![Screenshot of the Overview page for Exchange.](../media/m365-backup/backup-overview-page-exchange.png)
 
-6. On the **Choose selection method** page, you can set up shared or user mailboxes using any or all three ways. Other Exchange recipient types, such as room mailboxes, are not supported at this time. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
+6. On the **Choose selection method** page, you can select shared or user mailboxes using any of four available methods. Other Exchange recipient types, such as room mailboxes, are not supported at this time. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
 
     > [!NOTE]
     > Adding a mailbox to the backup policy will back up the primary and archive mailboxes.
@@ -149,22 +153,27 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     The CSV upload feature for bulk addition of mailboxes in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
-    b. Under **Back up mailboxes that match specific filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
+    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
+
+    For example, if a user is added to a distribution list that is included in the dynamic rule, then that user will be included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they will be removed from the backup policy within 24 hours. That user’s existing backups will remain restorable until they expire based on their retention period, but new backups will no longer be taken until that individual is re-added to the included distribution list, or until they are re-added manually in a static addition.
+
+    > [!NOTE]
+    > The dynamic rule feature is in preview.
+
+    c. Under **Using filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
 
     The rule-based feature for bulk addition of mailboxes via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
 
-    c. Under **Select mailboxes individually**, you can search and select mailboxes you want to add to a backup policy.
+    d. Under **Select mailboxes individually**, you can search and select mailboxes you want to add to a backup policy.
 
     > [!NOTE]
     > Hybrid deployments, where a user's primary mailbox resides on premises while their archive has been migrated to Exchange Online, are not supported.
-    
+
 7. Once you've made the right selections, select **Next** to create the backup policy for Exchange.
 
 8. On the **Review Exchange backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
-    ![Screenshot of the Review Exchange backup policy page.](../media/m365-backup/backup-policy-review-policy-exchange.png)
-
-9. Wait for status of your policy to show as **Active** in the home screen. This might take between 15 and 60 minutes. The backup policy for Exchange is created. Select **View scope** at any time to verify the details.
+9. The backup policy for Exchange is created.
 
     ![Screenshot of the Exchange backup policy created page.](../media/m365-backup/backup-policy-created-exchange.png)
 
