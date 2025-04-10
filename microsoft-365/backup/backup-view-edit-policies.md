@@ -258,15 +258,17 @@ Follow these steps to view and edit backup policies for Exchange.
 
 1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **Exchange** section, select **View details**.
 
+<!---
     ![Screenshot showing the view and edit backup policy for Exchange in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-exchange.png)
+--->
 
 2. You can either add new mailboxes to or remove mailboxes from the existing Exchange backup policy.
 
     a. To add new shared or user mailboxes, use either one of these two methods:
 
-    - On the **Exchange backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
+    - On the **Exchange backup policy** panel, on the **Exchange backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
 
-    -Or, on the **Exchange backup policy** panel, select **+ Add mailboxes**.
+    - Or, on the **Exchange backup policy** panel, select **+ Add mailboxes**.
 
     Select the mailboxes using any of the four available methods. Once you have added the mailboxes, follow the prompts to update the policy.
 
