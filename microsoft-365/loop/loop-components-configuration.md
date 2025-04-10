@@ -56,6 +56,10 @@ You'll be able to use this group for the Cloud Policy setup procedure specified 
 
 If you prefer, you can also create other types of groups to use with Cloud Policy. For more information, see [learn more about creating groups in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) or [learn more about creating dynamic groups in AzureAD](/azure/active-directory/external-identities/use-dynamic-groups).
 
+### Exchange Online mailboxes
+
+To utilize all Loop app features, including workspace sharing and at mentions, it's necessary for all users to have an Exchange Online mailbox. Those with Exchange On-Premises mailboxes will not have access to the full range of Loop app capabilities.
+
 ## Available policy settings
 
 There are several IT Admin policy settings provided to enable creation of Loop content across Microsoft 365:
