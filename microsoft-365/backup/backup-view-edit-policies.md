@@ -44,7 +44,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the Overview page for OneDrive.](../media/m365-backup/backup-overview-page-onedrive.png)
 
-6. On the **Choose selection method** page, you can select OneDrive user accounts using any of four available methods. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
+6. On the **Choose selection method** page, you can select OneDrive user accounts using any of the four available methods. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
 
     ![Screenshot of the Choose selection method page for OneDrive.](../media/m365-backup/backup-choose-selection-method-onedrive.png)
 
@@ -140,7 +140,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Overview page for Exchange.](../media/m365-backup/backup-overview-page-exchange.png)
 
-6. On the **Choose selection method** page, you can select shared or user mailboxes using any of four available methods. Other Exchange recipient types, such as room mailboxes, are not supported at this time. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
+6. On the **Choose selection method** page, you can select shared or user mailboxes using any of the four available methods. Other Exchange recipient types, such as room mailboxes, are not supported at this time. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
 
     > [!NOTE]
     > Adding a mailbox to the backup policy will back up the primary and archive mailboxes.
@@ -195,8 +195,9 @@ Follow these steps to view and edit backup policies for OneDrive.
 
 1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **View details**.
 
-
+<!---
     ![Screenshot showing the view and edit backup policy for OneDrive in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-onedrive.png)
+--->
 
 2. You can either add new accounts to or remove accounts from an existing OneDrive backup policy.
 
