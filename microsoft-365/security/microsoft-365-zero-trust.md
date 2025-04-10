@@ -59,7 +59,7 @@ Microsoft 365 is built intentionally with many security and information protecti
 
 This illustration represents the work of deploying Zero Trust capabilities. This work is broken into units of work that can be configured together, starting from the bottom and working to the top to ensure that prerequisite work is complete.
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg" alt-text="Diagram that shows the Microsoft 365 Zero Trust deployment stack." lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.svg":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg" alt-text="Diagram that shows the Microsoft 365 Zero Trust deployment plan across five swim lanes." lightbox="../media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg":::
 
 In this illustration:
 
