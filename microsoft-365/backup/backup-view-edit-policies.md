@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/07/2025
+ms.date: 04/10/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -291,13 +291,13 @@ Follow these steps to view and edit backup policies for Exchange.
 
 When deleting a dynamic rule, you have two options that determine how existing accounts are treated in the backup policy:
 
-- **Delete rule but continue backups**
+### Delete rule but continue backups
 
-    The dynamic rule is converted into a static list. Backup continues for all user accounts that were included through the rule at the time of deletion. However, future changes to the original distribution lists or security groups—such as users being added or removed—will no longer be reflected in the backup policy. For example, if a user is added to a previously included group after the rule is deleted, they will not be automatically added to the backup policy.
+The dynamic rule is converted into a static list. Backup continues for all user accounts that were included through the rule at the time of deletion. However, future changes to the original distribution lists or security groups—such as users being added or removed—will no longer be reflected in the backup policy. For example, if a user is added to a previously included group after the rule is deleted, they will not be automatically added to the backup policy.
 
-- **Delete rule and stop new backups**
+### Delete rule and stop new backups
 
-    The dynamic rule is removed, and no new backups will be taken for accounts previously included through the rule. Existing backups for these users remain restorable until they expire based on the configured retention period. You can re-enable backup for these users by manually adding them or by creating a new dynamic rule that includes them.
+The dynamic rule is removed, and no new backups will be taken for accounts previously included through the rule. Existing backups for these users remain restorable until they expire based on the configured retention period. You can re-enable backup for these users by manually adding them or by creating a new dynamic rule that includes them.
 
 ## States of backup
 
