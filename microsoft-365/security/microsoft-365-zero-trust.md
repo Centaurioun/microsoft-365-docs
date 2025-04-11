@@ -189,18 +189,18 @@ The following table lists the Microsoft 365 capabilites with links to more infor
 
 |Capability|More information|
 |---------|---------|
-|SharePoint oversharing controls|    |
-|DSPM for AI     |[Gain visibility into AI usage with (DSPM) for AI](../security/security-for-ai/discover#step-1gain-visibility-into-ai-usage-with-data-security-posture-management-dspm-for-ai) <br> [Protect data through DSPM for AI(../security/security-for-ai/protect#step-2--protect-data-through-dspm-for-ai)|
-|Sensitivity labels and DLP policies     |     |
-|Insider Risk Management (IRM) — Risky AI usage policy template     |     |
-|Adaptive protection    |     |
-|Defender for Cloud Apps     |     |
-|Purview Compliance Manager     |     |
-|Purview Communication Compliance    |     |
-|Purview Data Lifecyle Management     |     |
-|eDiscovery     |     |
-|Audit logs for Copilot and AI activities     |     |
-|Priva Privacy Assessments     |     |
+|SharePoint oversharing controls, including SharePoint Advanced Management| [Apply SharePoint oversharing controls](../security/security-for-ai/protect#step-1--apply-sharepoint-oversharing-controls)   |
+|DSPM for AI     |[Gain visibility into AI usage with (DSPM) for AI](../security/security-for-ai/discover#step-1gain-visibility-into-ai-usage-with-data-security-posture-management-dspm-for-ai) <br> [Protect data through DSPM for AI](../security/security-for-ai/protect#step-2--protect-data-through-dspm-for-ai)|
+|Sensitivity labels and DLP policies     | [Continue to identify gaps in sensitivity labels and DLP policies](../security/security-for-ai/protect#step-3continue-to-identify-gaps-in-sensitivity-labels-and-dlp-policies)    |
+|Insider Risk Management (IRM) — Risky AI usage policy template     | [Apply the Risky AI template](../security/security-for-ai/protect#step-4apply-the-risky-ai-template-in-insider-risk-management-irm)    |
+|Adaptive protection    | [Configure Adaptive Protection for Insider Risk Management](../security/security-for-ai/protect#step-5configure-adaptive-protection-for-insider-risk-management)    |
+|Defender for Cloud Apps     | [Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps](../security/security-for-ai/discover#step-2discover-sanction-and-block-ai-apps-with-microsoft-defender-for-cloud-apps) <br> [Use Defender for Cloud Apps to triage and protect use of AI apps](../security/security-for-ai/protect#step-1use-defender-for-cloud-apps-to-triage-and-protect-use-of-ai-apps)  <br> [Use Defender for Cloud Apps to manage AI apps based on compliance risk](/security/security-for-ai/govern#step-2use-defender-for-cloud-apps)  |
+|Purview Compliance Manager     | [Build and manage assessments for AI-related regulations](../security/security-for-ai/govern#step-1build-and-manage-assessments-in-microsoft-purview-compliance-manager)    |
+|Purview Communication Compliance    | [Analyze prompts and responses entered into generative AI applications to help detect inappropriate or risky interactions or sharing of confidential information](../security/security-for-ai/govern#step-4configure-purview-communication-compliance)    |
+|Purview Data Lifecyle Management     | [Proactively delete content you’re no longer required to keep to reduce the risk of data overexposure in AI tools](../security/security-for-ai/govern#step-5configure-purview-data-lifecycle-management)    |
+|eDiscovery  | [Search for keywords in prompts and resonses, manage the results within eDiscovery cases](/security/security-for-ai/govern#step-6use-ediscovery-together-with-audit-logs-for-microsoft-365-copilot)    |
+|Audit logs for Copilot and AI activities     |[identify how, when, and where Copilot interactions occurred and which items were accessed, including any sensitivity labels on those items](../security/security-for-ai/govern#step-6use-ediscovery-together-with-audit-logs-for-microsoft-365-copilot)     |
+|Priva Privacy Assessments     | [Initiate privacy impact assessments for AI apps you build](../security/security-for-ai/govern#step-7use-priva-privacy-assessments)    |
 
 ## Swim lane 5 — Meet rgulatory and compliance requirements
 
