@@ -25,7 +25,7 @@ ms.date: 04/09/2025
 
 # Zero Trust deployment plan with Microsoft 365
 
-This article provides a deployment plan for building **Zero Trust** security with Microsoft 365. Zero Trust is a new security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
+This article provides a deployment plan for building **Zero Trust** security with Microsoft 365. Zero Trust is a security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
 Use this article together with this poster.
 
@@ -33,7 +33,17 @@ Use this article together with this poster.
 |:-----|:-----|
 |[![Illustration of the Microsoft 365 Zero Trust deployment plan.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated April 2025 | **Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md)</li><li>[Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md)</li><li>[Evaluate and pilot Microsoft Defender XDR](../security/defender/eval-overview.md)</li><li>[Deploy an information protection solution with Microsoft Purview](../compliance/information-protection-solution.md)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)</li></ul>
 
-## Zero Trust security architecture
+## Zero Trust principles and architecture
+
+Zero Trust is a security strategy. It isn't a product or a service, but an approach in designing and implementing the following set of security principles.
+
+|Principle|Description|
+|---|---|
+|Verify explicitly|Always authenticate and authorize based on all available data points.|
+|Use least privilege access|Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.|
+|Assume breach|Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.|
+
+The guidance in this article helps you apply these principles by implementing capabiltiies with Microsoft 365. 
 
 A Zero Trust approach extends throughout the entire digital estate and serves as an integrated security philosophy and end-to-end strategy.
 
@@ -73,11 +83,9 @@ This article assumes you are using cloud identity. If you need guidance for this
 > [!TIP]
 > When you understand the steps and the end-to-end deployment process, you can use the [Set up your Microsoft Zero Trust security model](https://go.microsoft.com/fwlink/?linkid=2224820) advanced deployment guide when signed in to the Microsoft 365 admin center. This guide steps you through applying Zero Trust principles for standard and advanced technology pillars. To step through the guide without signing in, go to the [Microsoft 365 Setup portal](https://go.microsoft.com/fwlink/?linkid=2222968).
 
-## Step 1: Configure Zero Trust identity and device access protection: Starting-point policies
+## Swim lane 1 — Secure remote and hybrid work
 
-The first step is to build your Zero Trust foundation by configuring identity and device access protection.
-
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-identities.png" alt-text="Diagram that shows the process to configure Zero Trust identity and device access protection." lightbox="../media/zero-trust/m365-zero-trust-architecture-identities.png":::
+Securing remote and hybrid work involves configuring identity and device access protection. These protections contribute to the zero trust principle **verify explicitly**.
 
 Go to [**_Zero Trust identity and device access protection_**](office-365-security/zero-trust-identity-device-access-policies-overview.md) for detailed prescriptive guidance. This series of articles describes a set of identity and device access prerequisite configurations and a set of Microsoft Entra Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Microsoft Entra application proxy.
 
@@ -85,25 +93,31 @@ Go to [**_Zero Trust identity and device access protection_**](office-365-securi
 |---------|---------|---------|
 |Recommended identity and device access policies for three levels of protection: <ul><li>Starting point</li><li>Enterprise (recommended)</li><li>Specialized</li></ul> <br> Additional recommendations for: <ul><li>External users (guests)</li><li>Microsoft Teams</li><li>SharePoint Online</li><li>Microsoft Defender for Cloud Apps</lu></ul>|Microsoft E3 or E5 <br><br> Microsoft Entra ID in either of these modes: <ul><li>Cloud-only</li><li>Hybrid with password hash sync (PHS) authentication</li><li>Hybrid with pass-through authentication (PTA)</li><li>Federated</li></ul>|Device enrollment for policies that require managed devices. See [Step 2. Manage endpoints with Intune](#step-2-manage-endpoints-with-intune) to enroll devices|
 
-Start by implementing the starting-point tier. These policies don't require enrolling devices into management.
-
-:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Starting-point tier" lightbox="../media/zero-trust/identity-access-starting-point-tier.svg":::
-
-## Step 2: Manage endpoints with Intune
-
-Next, enroll your devices into management and begin protecting them with more sophisticated controls.
-
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-endpoints.png" alt-text="Diagram that shows the Manage endpoints with Intune element." lightbox="../media/zero-trust/m365-zero-trust-architecture-endpoints.png":::
-
-See [**_Manage devices with Intune_**](../solutions/manage-devices-with-intune-overview.md) for detailed prescriptive guidance.
+Use this gudiance together with, [**_Manage devices with Intune_**](../solutions/manage-devices-with-intune-overview.md) for detailed prescriptive guidance on enrolling devices into management.
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
 |Enroll devices with Intune: <ul><li>Corporate-owned devices</li><li>Autopilot/automated</li><li>enrollment</li></ul> <br> Configure policies: <ul><li>App Protection policies</li><li>Compliance policies</li><li>Device profile policies</li></ul>|Register endpoints with Microsoft Entra ID|Configuring information protection capabilities, including: <ul><li>Sensitive information types</li><li>Labels</li><li>DLP policies</li></ul> <br> For these capabilities, see [Step 5. Protect and govern sensitive data](#step-5-protect-and-govern-sensitive-data) (later in this article).|
 
+Accomplish the work of securing remote and hybrid work in three phases. 
+
+### Phase 1 — Implement starting-point identity and device access policies
+
+The prescritpive guidance recommends a comprehensive set of identity and device access policies. In phase 1, start by implementing the starting-point tier. These policies don't require enrolling devices into management.
+
+:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Starting-point tier" lightbox="../media/zero-trust/identity-access-starting-point-tier.svg":::
+
+### Phase 2 — Enroll devices into management with Intune
+
+Next, enroll your devices into management and begin protecting them with more sophisticated controls.
+
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-endpoints.png" alt-text="Diagram that shows the Manage endpoints with Intune element." lightbox="../media/zero-trust/m365-zero-trust-architecture-endpoints.png":::
+
+
+
 For more information, see [Zero Trust for Microsoft Intune](/mem/intune/fundamentals/zero-trust-with-microsoft-intune).
 
-## Step 3: Add Zero Trust identity and device access protection: Enterprise policies
+### Phase 3 — Add Zero Trust identity and device access protection: Enterprise policies
 
 With devices enrolled into management, you can now implement the full set of recommended Zero Trust identity and device access policies, requiring compliant devices.
 
@@ -112,6 +126,30 @@ With devices enrolled into management, you can now implement the full set of rec
 Return to [**_Common identity and device access policies_**](office-365-security/zero-trust-identity-device-access-policies-common.md) and add the policies in the Enterprise tier.
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Enterprise (recommended) tier." lightbox="../media/zero-trust/identity-access-enterprise-tier.svg":::
+
+
+
+## Swim lane 2 — Prevent or reduce business damage from a breach
+
+## Swim lane 3 — Identify and protect sensitive business data
+
+## Swim lane 4 — Secure AI apps and data
+
+## Swim lane 5 — Meet rgulatory and compliance requirements
+
+
+
+
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-identities.png" alt-text="Diagram that shows the process to configure Zero Trust identity and device access protection." lightbox="../media/zero-trust/m365-zero-trust-architecture-identities.png":::
+
+
+
+
+
+
+## Step 3: 
+
+
 
 <a name='step-4-evaluate-pilot-and-deploy-microsoft-365-defender'></a>
 
