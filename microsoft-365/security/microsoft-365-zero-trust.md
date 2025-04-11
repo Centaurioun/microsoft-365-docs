@@ -113,9 +113,10 @@ Next, enroll your devices into management and begin protecting them with more so
 --->
 See [**_Manage devices with Intune_**](../solutions/manage-devices-with-intune-overview.md) for detailed prescriptive guidance on enrolling devices into management.
 
-|Includes|Prerequisites|Doesn't include|
+|Includes |Prerequisites |Doesn't include |
 |---------|---------|---------|
 |Enroll devices with Intune: <ul><li>Corporate-owned devices</li><li>Autopilot/automated</li><li>enrollment</li></ul> <br> Configure policies: <ul><li>App Protection policies</li><li>Compliance policies</li><li>Device profile policies</li></ul>|Register endpoints with Microsoft Entra ID|Configuring information protection capabilities, including: <ul><li>Sensitive information types</li><li>Labels</li><li>DLP policies</li></ul> <br> For these capabilities, see [Swim lane 3 — Identify and protect sensitive business data](#step-5-protect-and-govern-sensitive-data) (later in this article).|
+
 For more information, see [Zero Trust for Microsoft Intune](/mem/intune/fundamentals/zero-trust-with-microsoft-intune).
 
 #### Phase 3 — Add Zero Trust identity and device access protection: Enterprise policies
@@ -181,11 +182,11 @@ Use DSPM for AI to:
 
 Defender for Cloud Apps is another powerful tool to discover and govern SaaS GenAI apps and usage. Defender for Cloud Apps has added more than a thousand generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
 
-In addition to these tools, Microsoft 365 provides a comprehensive set of capabilities for securing and governing AI. See [**Discover, protect, and govern AI apps and data**](../security/security-for-ai/) to learn how to get started with these capabilities.
+In addition to these tools, Microsoft 365 provides a comprehensive set of capabilities for securing and governing AI. See [**Discover, protect, and govern AI apps and data**](../security/security-for-ai) to learn how to get started with these capabilities.
 
 :::image type="content" source="../media/zero-trust/security-for-ai-m365-composite.svg" alt-text="Microsoft 365 capabilities for protecting and governing AI" lightbox="../media/zero-trust/security-for-ai-m365-composite.svg":::
 
-The following table lists the Microsoft 365 capabilites with links to more information in the [Security for AI library](../security/security-for-ai/).
+The following table lists the Microsoft 365 capabilites with links to more information in the [Security for AI library](../security/security-for-ai).
 
 |Capability|More information|
 |---------|---------|
@@ -199,8 +200,8 @@ The following table lists the Microsoft 365 capabilites with links to more infor
 |Purview Communication Compliance    | [Analyze prompts and responses entered into generative AI applications to help detect inappropriate or risky interactions or sharing of confidential information](../security/security-for-ai/govern#step-4configure-purview-communication-compliance)    |
 |Purview Data Lifecyle Management     | [Proactively delete content you’re no longer required to keep to reduce the risk of data overexposure in AI tools](../security/security-for-ai/govern#step-5configure-purview-data-lifecycle-management)    |
 |eDiscovery  | [Search for keywords in prompts and resonses, manage the results within eDiscovery cases](/security/security-for-ai/govern#step-6use-ediscovery-together-with-audit-logs-for-microsoft-365-copilot)    |
-|Audit logs for Copilot and AI activities     |[identify how, when, and where Copilot interactions occurred and which items were accessed, including any sensitivity labels on those items](../security/security-for-ai/govern#step-6use-ediscovery-together-with-audit-logs-for-microsoft-365-copilot)     |
-|Priva Privacy Assessments     | [Initiate privacy impact assessments for AI apps you build](../security/security-for-ai/govern#step-7use-priva-privacy-assessments)    |
+|Audit logs for Copilot and AI activities     |[identify how, when, and where Copilot interactions occurred and which items were accessed, including any sensitivity labels on those items](/security/security-for-ai/govern#step-6use-ediscovery-together-with-audit-logs-for-microsoft-365-copilot)     |
+|Priva Privacy Assessments     | [Initiate privacy impact assessments for AI apps you build](/security/security-for-ai/govern#step-7use-priva-privacy-assessments)    |
 
 ## Swim lane 5 — Meet rgulatory and compliance requirements
 
