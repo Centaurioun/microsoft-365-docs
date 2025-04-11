@@ -1,5 +1,5 @@
 ---
-title: Organize and automate document libraries in SharePoint
+title: Organize and automate autofill columns in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,8 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to organiza and automate document libraries in SharePoint.
+description: Learn how to organize and automate autofill columns document in SharePoint.
 ---
 
-# Overview of autofill columns in SharePoint
+# Organize and automate autofill columns in SharePoint
+
+
 
