@@ -31,7 +31,7 @@ Use this article together with this poster.
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the Microsoft 365 Zero Trust deployment plan.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated April 2025 | **Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md)</li><li>[Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md)</li><li>[Pilot and deploye Microsoft Defender XDR](../security/defender/eval-overview.md)</li><li>[Deploy an information protection solution with Microsoft Purview](../compliance/information-protection-solution.md)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)</li></ul>
+|[![Illustration of the Microsoft 365 Zero Trust deployment plan.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated April 2025 | **Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md)</li><li>[Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md)</li><li>[Pilot and deploy Microsoft Defender XDR](../security/defender/eval-overview.md)</li><li>[Deploy an information protection solution with Microsoft Purview](../compliance/information-protection-solution.md)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)</li></ul>
 
 ## Zero Trust principles and architecture
 
@@ -43,7 +43,7 @@ Zero Trust is a security strategy. It isn't a product or a service, but an appro
 |Use least privilege access|Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.|
 |Assume breach|Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.|
 
-The guidance in this article helps you apply these principles by implementing capabiltiies with Microsoft 365. 
+The guidance in this article helps you apply these principles by implementing capabilities with Microsoft 365. 
 
 A Zero Trust approach extends throughout the entire digital estate and serves as an integrated security philosophy and end-to-end strategy.
 
@@ -75,7 +75,7 @@ In this illustration the deployment work is categorized into five swim lanes:
 - **Prevent or reduce business damage from a breach** — Threat protection provides real-time monitoring and remediation of security threats. Defender for Cloud Apps provides discovery of SaaS apps, including AI apps, and allows you to extend data protection to these apps.
 - **Identify and protect sensitive business data** — Data protection capabilities provide sophisticated controls targeted at specific types of data to protect your most valuable information.
 - **Secure AI apps and data** — Rapidly protect your organization's use of AI apps and the data these interact with.
-- **Meet regulatory and compliance requirements** — Understand and track your progress toward complying with regulations that affect your organzation.
+- **Meet regulatory and compliance requirements** — Understand and track your progress toward complying with regulations that affect your organization.
 
 This article assumes you are using cloud identity. If you need guidance for this objective, see [**Deploy your identity infrastructure for Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
 
@@ -91,7 +91,7 @@ Accomplish the work of securing remote and hybrid work in three phases.
 
 #### Phase 1 — Implement starting-point identity and device access policies
 
-The prescritpive guidance recommends a comprehensive set of identity and device access policies. In phase 1, start by implementing the starting-point tier. These policies don't require enrolling devices into management.
+The prescriptive guidance recommends a comprehensive set of identity and device access policies. In phase 1, start by implementing the starting-point tier. These policies don't require enrolling devices into management.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-identities.png" alt-text="Diagram that shows the process to configure Zero Trust identity and device access protection." lightbox="../media/zero-trust/m365-zero-trust-architecture-identities.png":::
 
@@ -169,7 +169,7 @@ For more information on how to plan and deploy information protection, see [**_D
 
 Microsoft 365 includes capabilities to help organizations rapidly secure AI apps and the data these use. 
 
-Start by using Purview Data Security Posture Managment (DSPM) for AI. This tool focuses on how AI is used in your organization, especially your sensitive data that interacts with AI tools. DSPM for AI provides deeper insights for Microsoft Copilots and third-party SaaS applications like ChatGPT Enterprise and Google Gemini.
+Start by using Purview Data Security Posture Management (DSPM) for AI. This tool focuses on how AI is used in your organization, especially your sensitive data that interacts with AI tools. DSPM for AI provides deeper insights for Microsoft Copilots and third-party SaaS applications like ChatGPT Enterprise and Google Gemini.
 
 The following diagram shows one of the aggregated views into the impact of AI use on your data—Sensitive interactions per generative AI app.
 
@@ -186,7 +186,7 @@ In addition to these tools, Microsoft 365 provides a comprehensive set of capabi
 
 :::image type="content" source="../media/zero-trust/security-for-ai-m365-composite.svg" alt-text="Microsoft 365 capabilities for protecting and governing AI" lightbox="../media/zero-trust/security-for-ai-m365-composite.svg":::
 
-The following table lists the Microsoft 365 capabilites with links to more information in the [Security for AI library](/security/security-for-ai).
+The following table lists the Microsoft 365 capabilities with links to more information in the [Security for AI library](/security/security-for-ai).
 
 |Capability|More information|
 |---------|---------|
@@ -198,12 +198,12 @@ The following table lists the Microsoft 365 capabilites with links to more infor
 |Defender for Cloud Apps     | [Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps](/security/security-for-ai/discover#step-2discover-sanction-and-block-ai-apps-with-microsoft-defender-for-cloud-apps) <br> [Use Defender for Cloud Apps to triage and protect use of AI apps](/security/security-for-ai/protect#step-1use-defender-for-cloud-apps-to-triage-and-protect-use-of-ai-apps)  <br> [Use Defender for Cloud Apps to manage AI apps based on compliance risk](/security/security-for-ai/govern#step-2use-defender-for-cloud-apps)  |
 |Purview Compliance Manager     | [Build and manage assessments for AI-related regulations](/security/security-for-ai/govern#step-1build-and-manage-assessments-in-microsoft-purview-compliance-manager)    |
 |Purview Communication Compliance    | [Analyze prompts and responses entered into generative AI applications to help detect inappropriate or risky interactions or sharing of confidential information](/security/security-for-ai/govern#step-4configure-purview-communication-compliance)    |
-|Purview Data Lifecyle Management     | [Proactively delete content you’re no longer required to keep to reduce the risk of data overexposure in AI tools](/security/security-for-ai/govern#step-5configure-purview-data-lifecycle-management)    |
-|eDiscovery  | [Search for keywords in prompts and resonses, manage the results within eDiscovery cases](/security/security-for-ai/govern#step-6use-ediscovery-together-with-audit-logs-for-microsoft-365-copilot)    |
+|Purview Data Lifecycle Management     | [Proactively delete content you’re no longer required to keep to reduce the risk of data overexposure in AI tools](/security/security-for-ai/govern#step-5configure-purview-data-lifecycle-management)    |
+|eDiscovery  | [Search for keywords in prompts and responses, manage the results within eDiscovery cases](/security/security-for-ai/govern#step-6use-ediscovery-together-with-audit-logs-for-microsoft-365-copilot)    |
 |Audit logs for Copilot and AI activities     |[identify how, when, and where Copilot interactions occurred and which items were accessed, including any sensitivity labels on those items](/security/security-for-ai/govern#step-6use-ediscovery-together-with-audit-logs-for-microsoft-365-copilot)     |
 |Priva Privacy Assessments     | [Initiate privacy impact assessments for AI apps you build](/security/security-for-ai/govern#step-7use-priva-privacy-assessments)    |
 
-## Swim lane 5 — Meet rgulatory and compliance requirements
+## Swim lane 5 — Meet regulatory and compliance requirements
 
 If you're deploying information protection for data privacy regulations, this solution guide provides a recommended framework for the entire process: [**_Deploy information protection for data privacy regulations with Microsoft 365_**](../solutions/information-protection-deploy.md).
 
