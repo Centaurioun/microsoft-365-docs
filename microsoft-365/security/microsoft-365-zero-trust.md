@@ -205,7 +205,25 @@ The following table lists the Microsoft 365 capabilities with links to more info
 
 ## Swim lane 5 — Meet regulatory and compliance requirements
 
-If you're deploying information protection for data privacy regulations, this solution guide provides a recommended framework for the entire process: [**_Deploy information protection for data privacy regulations with Microsoft 365_**](../solutions/information-protection-deploy.md).
+Regardless of the complexity of your organization’s IT environment or the size of your organization, new regulatory requirements that might affect your business are continually adding up. A Zero Trust approach often exceeds some types of requirements imposed by compliance regulations, for example, those controlling access to personal data. Organizations that have implemented a Zero Trust approach may find that they already meet some new conditions or can easily build upon their Zero Trust architecture to be compliant.
+
+Microsoft 365 includes capabilities to assist with regulatory compliance, including:
+- Compliance Manager
+- Content explorer
+- Retention policies, sensitivity labels, and DLP policies
+- Communication compliance
+- Data lifecycle management
+- Priva Privacy Risk Management
+
+Use the following resources to meet regulatory and compliance requirements.
+
+|Resource|More information|
+|---------|---------|
+| Zero Trust business scenario — [Meet regulatory and compliance requirements](/en-us/security/zero-trust/adopt/meet-regulatory-compliance-requirements) |Describes a methodical approach your organization can follow, including defining strategy, planning, adopting, and governing. |
+|[Govern AI apps and data for regulatory compliance](/security/security-for-ai/govern) |Addresses regulatory compliance for the emerging AI-related regulations, including specific capabilities that help.|
+| [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../solutions/data-privacy-protection.md)| Assess risks and take appropriate action to protect personal data in your organization's environment using Microsoft Priva and Microsoft Purview.|
+
+
 
 
 
