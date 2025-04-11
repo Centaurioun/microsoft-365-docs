@@ -49,23 +49,23 @@ In the illustration:
 
 For more information about Zero Trust, see Microsoft's [_**Zero Trust Guidance Center**_](/security/zero-trust).
 
-<!---
-For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](/security/zero-trust/zero-trust-ramp-overview).
--->
+
 
 ## Deploying Zero Trust for Microsoft 365
 
 Microsoft 365 is built intentionally with many security and information protection capabilities to help you build Zero Trust into your environment. Many of the capabilities can be extended to protect access to other SaaS apps your organization uses and the data within these apps.
 
-This illustration represents the work of deploying Zero Trust capabilities. This work is broken into units of work that can be configured together, starting from the bottom and working to the top to ensure that prerequisite work is complete.
+This illustration represents the work of deploying Zero Trust capabilities. This work is aligned to Zero Trust business scenarios.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg" alt-text="Diagram that shows the Microsoft 365 Zero Trust deployment plan across five swim lanes." lightbox="../media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg":::
 
-In this illustration:
+In this illustration the deployment work is categorized into five swim lanes:
 
-- Zero Trust begins with a foundation of identity and device protection.
-- Threat protection capabilities are built on top of this foundation to provide real-time monitoring and remediation of security threats.
-- Information protection and governance provide sophisticated controls targeted at specific types of data to protect your most valuable information and to help you comply with compliance standards, including protecting personal information.
+- **Secure remote and hybrid work** — This work builds a foundation of identity and device protection.
+- **Prevent or reduce business damage from a breach** — Threat protection provides real-time monitoring and remediation of security threats. Defender for Cloud Apps provides discovery of SaaS apps, including AI apps, and allows you to extend data protection to these apps.
+- **Identify and protect sensitive business data** — Data protection capabilities provide sophisticated controls targeted at specific types of data to protect your most valuable information.
+- **Secure AI apps and data** — Rapidly protect your organization's use of AI apps and the data these interact with.
+- **Meet regulatory and compliance requirements** — Understand and track your progress toward complying with regulations that affect your organzation.
 
 This article assumes you are using cloud identity. If you need guidance for this objective, see [**Deploy your identity infrastructure for Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
 
