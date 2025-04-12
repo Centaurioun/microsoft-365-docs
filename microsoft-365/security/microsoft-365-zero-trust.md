@@ -138,7 +138,7 @@ Return to [**_Common identity and device access policies_**](office-365-security
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Enterprise (recommended) tier." lightbox="../media/zero-trust/identity-access-enterprise-tier.svg":::
 
-
+Read more about how to secure remote and hybrid work in the **Zero Trust adoption framework** — [Secure remote and hybrid work](/security/zero-trust/adopt/secure-remote-hybrid-work).
 
 <a name='swim-lane-2'></a>
 
@@ -155,6 +155,9 @@ Go to [**_Pilot and deploy Microsoft Defender XDR_**](defender/eval-overview.md)
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
 |Set up the evaluation and pilot environment for all components: <ul><li>[Defender for Identity](/defender-for-identity/zero-trust)</li><li>[Defender for Office 365](./office-365-security/zero-trust-with-microsoft-365-defender-office-365.md)</li><li>[Defender for Endpoint](./defender-endpoint/zero-trust-with-microsoft-defender-endpoint.md)</li><li>[Defender for Cloud Apps](/defender-cloud-apps/zero-trust)</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats|See the guidance to read about the architecture requirements for each component of Microsoft Defender XDR.| Microsoft Entra ID Protection isn't included in this solution guide. It's included in [Swim lane 1 —  Secure remote and hybrid work](#swim-lane-1).|
+
+Read more about how to prevent or reduce business damage from a breach in the **Zero Trust adoption framework** — [Prevent or reduce business damage from a breach](/security/zero-trust/adopt/prevent-reduce-business-damage-breach).
+
 
 <a name='swim-lane-3'></a>
 ## Swim lane 3 — Identify and protect sensitive business data
@@ -174,7 +177,7 @@ Microsoft Purview Information Protection provides a framework, process, and capa
 
 For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Purview Information Protection solution_**](../compliance/information-protection-solution.md). 
 
-
+Read more about how to identify and protect sensitive business data in the **Zero Trust adoption framework** — [Identify and protect sensitive business data](/security/zero-trust/aidentify-protect-sensitive-business-data).
 
 ## Swim lane 4 — Secure AI apps and data
 
@@ -230,11 +233,13 @@ Use the following resources to meet regulatory and compliance requirements.
 
 |Resource|More information|
 |---------|---------|
-| Zero Trust business scenario — [Meet regulatory and compliance requirements](/security/zero-trust/adopt/meet-regulatory-compliance-requirements) |Describes a methodical approach your organization can follow, including defining strategy, planning, adopting, and governing. |
+| Zero Trust adoption framework — [Meet regulatory and compliance requirements](/security/zero-trust/adopt/meet-regulatory-compliance-requirements) |Describes a methodical approach your organization can follow, including defining strategy, planning, adopting, and governing. |
 |[Govern AI apps and data for regulatory compliance](/security/security-for-ai/govern) |Addresses regulatory compliance for the emerging AI-related regulations, including specific capabilities that help.|
 | [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../solutions/data-privacy-protection.md)| Assess risks and take appropriate action to protect personal data in your organization's environment using Microsoft Priva and Microsoft Purview.|
 
+## Next steps
 
+Learn more about Zero Trust by visiting the [Zero Trust guidance center](/security/zero-trust).
 
 
 
