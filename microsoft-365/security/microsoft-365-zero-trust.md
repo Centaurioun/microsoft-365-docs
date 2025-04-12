@@ -177,7 +177,7 @@ Microsoft Purview Information Protection provides a framework, process, and capa
 
 For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Purview Information Protection solution_**](../compliance/information-protection-solution.md). 
 
-Read more about how to identify and protect sensitive business data in the **Zero Trust adoption framework** — [Identify and protect sensitive business data](/security/zero-trust/aidentify-protect-sensitive-business-data).
+Read more about how to identify and protect sensitive business data in the **Zero Trust adoption framework** — [Identify and protect sensitive business data](/security/zero-trust/adopt/identify-protect-sensitive-business-data).
 
 ## Swim lane 4 — Secure AI apps and data
 
