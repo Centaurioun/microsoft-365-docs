@@ -122,7 +122,7 @@ See [**_Manage devices with Intune_**](../solutions/manage-devices-with-intune-o
 
 |Includes |Prerequisites |Doesn't include |
 |---------|---------|---------|
-|Enroll devices with Intune: <ul><li>Corporate-owned devices</li><li>Autopilot/automated</li><li>enrollment</li></ul> <br> Configure policies: <ul><li>App Protection policies</li><li>Compliance policies</li><li>Device profile policies</li></ul>|Register endpoints with Microsoft Entra ID|Configuring information protection capabilities, including: <ul><li>Sensitive information types</li><li>Labels</li><li>DLP policies</li></ul> <br> For these capabilities, see [Swim lane 3 — Identify and protect sensitive business data](#step-5-protect-and-govern-sensitive-data) (later in this article).|
+|Enroll devices with Intune: <ul><li>Corporate-owned devices</li><li>Autopilot/automated</li><li>enrollment</li></ul> <br> Configure policies: <ul><li>App Protection policies</li><li>Compliance policies</li><li>Device profile policies</li></ul>|Register endpoints with Microsoft Entra ID|Configuring information protection capabilities, including: <ul><li>Sensitive information types</li><li>Labels</li><li>DLP policies</li></ul> <br> For these capabilities, see [Swim lane 3 — Identify and protect sensitive business data](#swim-lane-3) (later in this article).|
 
 For more information, see [Zero Trust for Microsoft Intune](/mem/intune/fundamentals/zero-trust-with-microsoft-intune).
 
@@ -156,7 +156,7 @@ Go to [**_Pilot and deploy Microsoft Defender XDR_**](defender/eval-overview.md)
 |---------|---------|---------|
 |Set up the evaluation and pilot environment for all components: <ul><li>[Defender for Identity](/defender-for-identity/zero-trust)</li><li>[Defender for Office 365](./office-365-security/zero-trust-with-microsoft-365-defender-office-365.md)</li><li>[Defender for Endpoint](./defender-endpoint/zero-trust-with-microsoft-defender-endpoint.md)</li><li>[Defender for Cloud Apps](/defender-cloud-apps/zero-trust)</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats|See the guidance to read about the architecture requirements for each component of Microsoft Defender XDR.| Microsoft Entra ID Protection isn't included in this solution guide. It's included in [Swim lane 1 —  Secure remote and hybrid work](#swim-lane-1).|
 
-
+<a name='swim-lane-3'></a>
 ## Swim lane 3 — Identify and protect sensitive business data
 
 Implement Microsoft Purview Information Protection to help you discover, classify, and protect sensitive information wherever it lives or travels. 
@@ -184,14 +184,14 @@ Start by using Purview Data Security Posture Management (DSPM) for AI. This tool
 
 The following diagram shows one of the aggregated views into the impact of AI use on your data—Sensitive interactions per generative AI app.
 
-:::image type="content" source="../media/zero-trust/ai-hub-sensitive-interactions-report.png" alt-text="Microsoft 365 capabilities for protecting and governing AI" lightbox="../media/zero-trust/ai-hub-sensitive-interactions-report.png":::
+:::image type="content" source="../media/zero-trust/ai-hub-sensitive-interactions-report.png" alt-text="Sensitive interactions per generative AI app" lightbox="../media/zero-trust/ai-hub-sensitive-interactions-report.png":::
 
 Use DSPM for AI to:
 - Gain visibility into AI usage, including sensitive data.
 - Review data assessments to learn about gaps in oversharing that can be mitigated with SharePoint oversharing controls.
-- Find gaps in your policy coverage for sensitivity labels and DLP policies.
+- Find gaps in your policy coverage for sensitivity labels and data loss prevention (DLP) policies.
 
-Defender for Cloud Apps is another powerful tool to discover and govern SaaS GenAI apps and usage. Defender for Cloud Apps has added more than a thousand generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
+Defender for Cloud Apps is another powerful tool to discover and govern SaaS GenAI apps and usage. Defender for Cloud Apps includes more than a thousand generative AI-related apps in the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
 
 In addition to these tools, Microsoft 365 provides a comprehensive set of capabilities for securing and governing AI. See [**Discover, protect, and govern AI apps and data**](/security/security-for-ai) to learn how to get started with these capabilities.
 
@@ -230,8 +230,8 @@ Use the following resources to meet regulatory and compliance requirements.
 
 |Resource|More information|
 |---------|---------|
-| Zero Trust business scenario — [Meet regulatory and compliance requirements](/en-us/security/zero-trust/adopt/meet-regulatory-compliance-requirements) |Describes a methodical approach your organization can follow, including defining strategy, planning, adopting, and governing. |
-|[Govern AI apps and data for regulatory compliance](/security/security-for-ai/govern.md) |Addresses regulatory compliance for the emerging AI-related regulations, including specific capabilities that help.|
+| Zero Trust business scenario — [Meet regulatory and compliance requirements](/security/zero-trust/adopt/meet-regulatory-compliance-requirements) |Describes a methodical approach your organization can follow, including defining strategy, planning, adopting, and governing. |
+|[Govern AI apps and data for regulatory compliance](/security/security-for-ai/govern) |Addresses regulatory compliance for the emerging AI-related regulations, including specific capabilities that help.|
 | [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../solutions/data-privacy-protection.md)| Assess risks and take appropriate action to protect personal data in your organization's environment using Microsoft Priva and Microsoft Purview.|
 
 
