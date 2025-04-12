@@ -65,7 +65,7 @@ For more information about Zero Trust, see Microsoft's [_**Zero Trust Guidance C
 
 Microsoft 365 is built intentionally with many security and information protection capabilities to help you build Zero Trust into your environment. Many of the capabilities can be extended to protect access to other SaaS apps your organization uses and the data within these apps.
 
-This illustration represents the work of deploying Zero Trust capabilities. This work is aligned to Zero Trust business scenarios.
+This illustration represents the work of deploying Zero Trust capabilities. This work is aligned to Zero Trust business scenarios in the [Zero Trust adoption framework](/security/zero-trust/adopt/zero-trust-adoption-overview).
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg" alt-text="Diagram that shows the Microsoft 365 Zero Trust deployment plan across five swim lanes." lightbox="../media/zero-trust/m365-zero-trust-deployment-swim-lanes.svg":::
 
@@ -108,7 +108,7 @@ Go to [**_Zero Trust identity and device access protection_**](office-365-securi
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
-|Recommended identity and device access policies for three levels of protection: <ul><li>Starting point</li><li>Enterprise (recommended)</li><li>Specialized</li></ul> <br> Additional recommendations for: <ul><li>External users (guests)</li><li>Microsoft Teams</li><li>SharePoint</li></ul>|Microsoft E3 or E5 <br><br> Microsoft Entra ID in either of these modes: <ul><li>Cloud-only</li><li>Hybrid with password hash sync (PHS) authentication</li><li>Hybrid with pass-through authentication (PTA)</li><li>Federated</li></ul>|Device enrollment for policies that require managed devices. See [Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md) to enroll devices|
+|Recommended identity and device access policies for three levels of protection: <ul><li>Starting point</li><li>Enterprise (recommended)</li><li>Specialized</li></ul> <br> Additional recommendations for: <ul><li>External users (guests)</li><li>Microsoft Teams</li><li>SharePoint</li></ul>|Microsoft E3 or E5 <br><br> Microsoft Entra ID in either of these modes: <ul><li>Cloud-only</li><li>Hybrid with password hash sync (PHS) authentication</li><li>Hybrid with pass-through authentication (PTA)</li><li>Federated</li></ul>|Device enrollment for policies that require managed devices. See [Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md) to enroll devices.|
 
 #### Phase 2 — Enroll devices into management with Intune
 
@@ -209,7 +209,7 @@ The following table lists the Microsoft 365 capabilities with links to more info
 |Sensitivity labels and DLP policies     | [Continue to identify gaps in sensitivity labels and DLP policies](/security/security-for-ai/protect#step-3continue-to-identify-gaps-in-sensitivity-labels-and-dlp-policies)    |
 |Insider Risk Management (IRM) — Risky AI usage policy template     | [Apply the Risky AI template](/security/security-for-ai/protect#step-4apply-the-risky-ai-template-in-insider-risk-management-irm)    |
 |Adaptive protection    | [Configure Adaptive Protection for Insider Risk Management](/security/security-for-ai/protect#step-5configure-adaptive-protection-for-insider-risk-management)    |
-|Defender for Cloud Apps     | [Discover, sanction, and block AI apps with Microsoft Defender for Cloud Apps](/security/security-for-ai/discover#step-2discover-sanction-and-block-ai-apps-with-microsoft-defender-for-cloud-apps) <br> [Use Defender for Cloud Apps to triage and protect use of AI apps](/security/security-for-ai/protect#step-1use-defender-for-cloud-apps-to-triage-and-protect-use-of-ai-apps)  <br> [Use Defender for Cloud Apps to manage AI apps based on compliance risk](/security/security-for-ai/govern#step-2use-defender-for-cloud-apps)  |
+|Defender for Cloud Apps     | [Discover, sanction, and block AI apps](/security/security-for-ai/discover#step-2discover-sanction-and-block-ai-apps-with-microsoft-defender-for-cloud-apps) <br> [Triage and protect use of AI apps](/security/security-for-ai/protect#step-1use-defender-for-cloud-apps-to-triage-and-protect-use-of-ai-apps)  <br> [Manage AI apps based on compliance risk](/security/security-for-ai/govern#step-2use-defender-for-cloud-apps)  |
 |Purview Compliance Manager     | [Build and manage assessments for AI-related regulations](/security/security-for-ai/govern#step-1build-and-manage-assessments-in-microsoft-purview-compliance-manager)    |
 |Purview Communication Compliance    | [Analyze prompts and responses entered into generative AI applications to help detect inappropriate or risky interactions or sharing of confidential information](/security/security-for-ai/govern#step-4configure-purview-communication-compliance)    |
 |Purview Data Lifecycle Management     | [Proactively delete content you’re no longer required to keep to reduce the risk of data overexposure in AI tools](/security/security-for-ai/govern#step-5configure-purview-data-lifecycle-management)    |
