@@ -2,11 +2,12 @@
 title: "Turn off Basic Mobility and Security"
 f1.keywords: NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
-ms.service: microsoft-365-business
+ms.topic: how-to
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
@@ -14,13 +15,16 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+- basic-mobility-security
+ms.custom: 
+- AdminSurgePortfolio
+- basic-mobility-security
 description: "Remove groups or policies to turn off Basic Mobility and Security."
 ---
 
 # Turn off Basic Mobility and Security
 
-To effectively turn off Basic Mobility and Security, you remove groups of people defined by security groups from the device management policies, or remove the policies themselves.
+To effectively turn-off Basic Mobility and Security, you remove groups of people defined by security groups from the device management policies, or remove the policies themselves.
 
 - Remove groups of users by removing user security groups from the device policies you've created.
 
@@ -52,4 +56,4 @@ These options remove Basic Mobility and Security enforcement for devices in your
 3. In the Warning dialog box, select **Yes**.
 
 > [!NOTE]
-> For more steps to unblock devices if your organization devices are still in a blocked state, see the blog post [Removing Access Control from Mobile Device Management for Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).
+> For more steps to unblock devices if your organization devices are still in a blocked state, see the blog post [Removing access control from Basic Mobility and Security for Microsoft 365](https://techcommunity.microsoft.com/t5/intune-customer-success/removing-access-control-from-basic-mobility-and-security-for/ba-p/279934).

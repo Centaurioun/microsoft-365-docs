@@ -3,10 +3,11 @@ title: "Customize the theme for your organization"
 f1.keywords:
 - CSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 11/14/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -21,19 +22,16 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Learn to change the default theme for the top of the navigation bar in Microsoft 365 and customize it to match your company logo or color."
 ---
 
 # Customize the Microsoft 365 theme for your organization
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
 As the admin of your organization, you can create multiple themes for the people in your organization, and select which themes apply to different members of your organization. The organization theme is what appears in the top navigation bar for people in your organization.
 
-You can add or update a default theme that applies to everyone within your org. You can also create up to four additional group themes that can be assigned to multiple Microsoft 365 groups.
+You can add or update a default theme that applies to everyone in your organization. You can also create up to four additional group themes that can be assigned to multiple Microsoft 365 groups.
   
 ## Add or update your organization's theme
 
@@ -41,13 +39,15 @@ You can add or update a default theme that applies to everyone within your org. 
 
 2. On the **Organization profile** tab, select **Custom themes**.
 
-All organization themes can be customized using the following tabs.
+3. Choose **Add theme** and add the required info for the tabs.
 
-|Tab|What can you do?|
-|---|---|
-|[General](#general-modify-a-theme)|Modify a theme name and assign to up to five groups (if applicable).|
-|[Logos](#logos-specify-your-theme-logos)|Add your organization logo, including alternate logo for dark theme.|
-|[Colors](#colors-choose-theme-colors)|Customize a color scheme by specifying navigation bar, accent, text and icon colors.|
+    All organization themes can be customized using the following tabs.
+
+    |Tab|What can you do?|
+    |---|---|
+    |[General](#general-modify-a-theme)|Modify a theme name and assign to up to five groups (if applicable).|
+    |[Logos](#logos-specify-your-theme-logos)|Add your organization logo, including alternate logo for dark theme.|
+    |[Colors](#colors-choose-theme-colors)|Customize a color scheme by specifying navigation bar, accent, text and icon colors.|
 
 ## General: Modify a theme
 
@@ -76,32 +76,35 @@ You can create up to four additional group themes.
 
 3. Select **Save**.
 
-:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
+  :::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
 
 ## Logos: Specify your theme logos
 
 On the **Logos** page, you can add your logos, and specify the URL where users will navigate to when they select the logo.
 
-- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. Add a HTTPS image url that allows anonymous access and doesn't require authentication. For default theme, you also have an option to upload a logo image that is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels. Logo aspect ratio will always be preserved.
-- **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Office dark themes. Same requirements as the default logo.
-- **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website. If you don’t select a URL location for your logo, it’ll default to the Office home page.
+- **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. Add an HTTPS image url that allows anonymous access and doesn't require authentication. For default theme, you also have an option to upload a logo image that is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels. Logo aspect ratio will always be preserved.
+- **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Microsoft 365 dark themes. Same requirements as the default logo.
+- **On-click link**: Add a URL location that points to your logo. You can use your logo as a link to any company resource, for example, your company's website. If you don’t select a URL location for your logo, it’ll default to the Microsoft 365 home page.
 
 Select **Save** to save your changes.
 
 :::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot: Logos tab showing the logo options":::
 
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
-  
+
+> [!NOTE]
+> The Microsoft 365 suite header is designed to accommodate a variety of screen sizes, window sizes, and display settings. The responsive behavior of the suite header sometimes results in the logo not showing to give space to other capabilities shown on the suite header. To reduce the likelihood of this behavior a narrower image file is recommended.
+
 ## Colors: Choose theme colors
 
 On the **Colors** page, you can set the default colors and choose which logo should be used.
 
 - **Navigation bar color**: Select a color to use for the background of the navigation bar. The navigation bar appears at the top on every page.
 - **Text and icon color**: Select a color to use for the text and icons on the top navigation bar.
-- **Accent color**: Pick one that shows up well on a white or light background. The accent color is used to color some links and buttons that show up on a white or light background. For example, the accent color is used to color elements in a user's inbox and on their Office.com portal page.
+- **Accent color**: Pick one that shows up well on a white or light background. The accent color is used to color some links and buttons that show up on a white or light background. For example, the accent color is used to color elements in a user's inbox and on their microsoft365.com portal page.
 - **Reset color**: Select this link to reset colors to the default colors.
 
-:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
+  :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot: Colors tab showing default theme colors for your organization":::
 
 ## Frequently asked questions
 
@@ -121,9 +124,6 @@ Up to five themes can be created. A default theme and four group themes.
 
 No, new group themes must be mapped to one or more Microsoft 365 groups and not security groups or distribution groups.
 
-> [!NOTE]
-> You can convert [distribution groups to Microsoft 365 groups](../manage/upgrade-distribution-lists.md) in Outlook.
-
 ### Can I manually assign a theme independent of Microsoft 365 Groups?  
 
 No, new group themes must be mapped to one or more Microsoft 365 groups. Users who are members of the Microsoft 365 group will get the theme applied to their group. You can [create and add new members to a Microsoft 365 Group](../create-groups/create-groups.md) by going to the **Settings** > **Groups** in the admin center.
@@ -134,9 +134,9 @@ Users who are assigned to multiple group themes will be shown the default theme.
 
 ### Why can’t I delete the default theme?  
 
-The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the group theme.
+The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the default theme.
 
-### Why am I receiving an error message every time I upload a logo URL.  
+### Why am I receiving an error message every time I upload a logo URL?
 
 Make sure the logo you’re using is specified as a publicly addressable URL. Follow these steps for [uploading logos to Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) or the [Office 365 Content Delivery Network with SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
 
@@ -150,5 +150,5 @@ Any theme appears in the top navigation bar for everyone in the organization as 
   
 ## Related content
 
-[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md) (article)\
+[Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md) (article)
 [Overview of Microsoft 365 Groups for administrators](../create-groups/office-365-groups.md) (article)

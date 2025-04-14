@@ -2,9 +2,10 @@
 title: "ICANN verification of contact information"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
+ms.date: 08/28/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -30,10 +31,8 @@ When you purchase a domain or make changes to the contact information for a doma
 
 For validation, an email is sent to the registrant's address.
 
- **To verify your contact information, select the link in the verification email.** If the domain owners don't verify the the email address, the domain will be suspended. Then, go to the [Domains page](https://admin.microsoft.com/adminportal/home?ref=Domains) in the admin center and check your domain status.
+ **To verify your contact information, select the link in the verification email.** If the domain owners don't verify the email address, the domain will be suspended. Then, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains page</a> in the admin center and check your domain status.
 
 The email will look like this:
 
 ![Email example.](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
-
-

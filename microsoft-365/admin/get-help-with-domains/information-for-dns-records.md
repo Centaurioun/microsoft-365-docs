@@ -2,12 +2,14 @@
 title: "Gather the information you need to create DNS records"
 f1.keywords:
 - NOCSH
-ms.author: nkagole
-author: nataliekagole
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
+ms.date: 04/02/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection: 
 - Tier2
@@ -32,7 +34,14 @@ description: "Gather the values/information you need to create DNS records to co
 
 # Gather the information you need to create DNS records
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
+
+> [!NOTE]
+> The procedures in this article assume that you have begun the process of [adding a domain](/admin/setup/add-domain#add-a-domain), but have not yet verified the domain.
   
 ### Step 1: Find the TXT record value and verify
 
@@ -48,7 +57,7 @@ description: "Gather the values/information you need to create DNS records to co
 
 ::: moniker-end
     
-2. On the **Domains** page, select your domain, then select **Start setup**. You'll go back to the domains setup wizard to see the specific value you need to add.
+2. On the **Domains** page, select your domain, then select **Continue setup**. You'll go back to the domains setup wizard to see the specific value you need to add.
     
 3. On the **Domain Verification** page, select **Add a TXT record to the domain's DNS records**, then select **Continue**.
     
@@ -88,6 +97,6 @@ description: "Gather the values/information you need to create DNS records to co
 
 ## Related content
 
-[Domains FAQ](../setup/domains-faq.yml) (article)\
-[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
-[Manage domains](/admin) (link page)
+- [Domains FAQ](../setup/domains-faq.yml) (article)
+- [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)
+- [Manage domains](/admin) (link page)

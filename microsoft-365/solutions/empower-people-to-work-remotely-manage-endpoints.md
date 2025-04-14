@@ -2,11 +2,12 @@
 title: "Step 4. Deploy endpoint management for your devices, PCs, and other endpoints"
 f1.keywords:
 - NOCSH
-author: dansimp
-ms.author: dansimp
+author: brendacarter
+ms.author: bcarter
 manager: dansimp
+ms.date: 05/01/2020
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: 
@@ -17,14 +18,14 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: 
-description: Use Microsoft Endpoint Manager to manage your manage devices, PCs, and other endpoints.
+description: Use Microsoft Intune family of products to manage your manage devices, PCs, and other endpoints.
 ---
 
 # Step 4. Deploy endpoint management for your devices, PCs, and other endpoints
 
-With hybrid workers, you need to support a growing number of personal devices. Endpoint management is a policy-based approach to security that requires devices to comply with specific criteria before they are granted access to resources. Microsoft Endpoint Manager delivers modern management capabilities to keep your data secure in the cloud and on-premises. 
+With hybrid workers, you need to support a growing number of personal devices. Endpoint management is a policy-based approach to security that requires devices to comply with specific criteria before they are granted access to resources. The Microsoft Intune family of products delivers modern management capabilities to keep your data secure in the cloud and on-premises. 
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
+[Microsoft Intune family of products](/mem/endpoint-manager-overview) provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
 
 :::image type="content" source="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png" alt-text="The components of endpoint management for Microsoft 365" lightbox="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png":::
 
@@ -40,7 +41,7 @@ For more information, see the [Manage devices with Intune](manage-devices-with-i
 
 ## Configuration Manager
 
-Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or internet-based. Use Configuration Manager to deploy apps, software updates, and operating systems. You can also monitor compliance, query and act on clients in real time, and much more. You can cloud-enable it to integrate with Intune, Azure AD, Microsoft Defender for Endpoint, and other cloud services. 
+Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or internet-based. Use Configuration Manager to deploy apps, software updates, and operating systems. You can also monitor compliance, query and act on clients in real time, and much more. You can cloud-enable it to integrate with Intune, Microsoft Entra ID, Microsoft Defender for Endpoint, and other cloud services. 
 
 For more information, see this [overview of Configuration Manager](/mem/configmgr/core/understand/introduction).
 
@@ -77,7 +78,7 @@ For more information, see this [overview of Windows Autopilot](/windows/deployme
  
 ## Results of Step 4
 
-You are using the suite of Endpoint Manager features and capabilities to manage mobile devices, desktop computers, virtual machines, embedded devices, and servers.
+You are using the Microsoft Intune product family's features and capabilities to manage mobile devices, desktop computers, virtual machines, embedded devices, and servers.
 
 ## Next step
 

@@ -1,21 +1,23 @@
 ---
-title: Create a modern template in Microsoft Syntex
+title: Create a modern template in SharePoint
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.topic: article
+ms.date: 01/07/2025
+ms.topic: how-to
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a modern template in Microsoft Syntex.
+description: Learn how to create a modern template in SharePoint.
 ---
 
-# Create a modern template in Microsoft Syntex
+# Create a modern template in SharePoint
 
 ## Upload a document to create a modern template
 
@@ -204,6 +206,8 @@ When you have completed adding all relevant fields to the template and you want 
 2. To view, edit, or unpublish *published* templates from the **Published templates** dropdown menu in the **Modern templates** section, select **New** > **Edit New menu** from the document library. 
 
 ## See also
+
+[Map fields of a modern template to library columns](content-assembly-map-fields.md)
 
 [Edit a modern template](content-assembly-edit-template.md)
 

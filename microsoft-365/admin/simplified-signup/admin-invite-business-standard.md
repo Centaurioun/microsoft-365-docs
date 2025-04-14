@@ -3,10 +3,11 @@ title: "Invite users to a Microsoft 365 business subscription"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 01/06/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -25,14 +26,14 @@ description: "Invite users to join Microsoft 365 Business Standard organization"
 
 As the admin of a Microsoft 365 Business Standard subscription, you can invite your colleagues and coworkers to share and use your Microsoft 365 for business subscription. When you invite your colleagues and coworkers to your subscription, you share all the following features and services:
 
-- Get desktop versions of Office apps, including Outlook, Word, Excel, PowerPoint, and OneNote (plus Access and Publisher for PC only).
+- Get desktop versions of Microsoft 365 productivity apps, including Outlook, Word, Excel, PowerPoint, and OneNote (plus Access and Publisher for PC only).
 - Create a hub for teamwork to connect people using Microsoft Teams.
 - Store and share files with 1 TB of OneDrive cloud storage per user.
-- Use one license to cover fully installed Office apps on five mobile devices, five tablets, and five PCs or Macs per user.
+- Use one license to cover fully installed Microsoft 365 productivity apps on five mobile devices, five tablets, and five PCs or Macs per user.
 - Get help anytime with around-the-clock phone and web support from Microsoft.
 
-> [!Note]
-> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
+> [!NOTE]
+> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. For more information, see [Assign admin roles](../add-users/assign-admin-roles.md).
 
 ## Before you begin
 
@@ -69,20 +70,20 @@ There are a couple of options in this case:
     3. Select **View account** > **Manage organizations** > **Leave organization**
     4. Select **Leave** > **OK**.
 
-### How do I help someone install Microsoft Office?
+### How do I help someone install Microsoft 365?
 
-Send them this article to help them install Office: [Download and install Microsoft 365 Office or Office 2019 on a PC or a MAC](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658).
+Send them this article to help them install Microsoft 365: [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2021-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658).
 
 ### How do I meet common GDPR (General Data Protection Regulation) obligations for my organization?
 
 Under GDPR, an employee or customer may ask that you retrieve, or delete all information about them in your Microsoft cloud. For more info, check out, [Data Subject Requests](/compliance/regulatory/gdpr-data-subject-requests).
 
-To search data that's been saved in the Microsoft cloud as part of your Microsoft 365 Business subscription, you and each user you’ve invited will need to visit [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) to search data in locations such as OneDrive.  In addition, you (business or admin) may need to search for employee account data that's saved in the [Azure Active Directory portal](/compliance/regulatory/gdpr-dsr-office365).
+To search data that's been saved in the Microsoft cloud as part of your Microsoft 365 Business subscription, you and each user you’ve invited will need to visit [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) to search data in locations such as OneDrive.  In addition, you (business or admin) may need to search for employee account data that's saved in the [Microsoft Entra admin center](/compliance/regulatory/gdpr-dsr-office365).
 
-Depending on how you and other users save documents, you and every user you’ve invited may need to use built in search, and delete functionality to discover what is saved on your Windows PCs or Macs, on business apps on smartphones, and on non-Microsoft apps and sites.
+Depending on how you and other users save documents, you and every user you’ve invited may need to use built-in search, and delete functionality to discover what is saved on your Windows PCs or Macs, on business apps on smartphones, and on non-Microsoft apps and sites.
 
 > [!NOTE]
-> Once you attach a domain, and you and your users use business accounts to save data into the Microsoft cloud, you can conduct data subject requests on behalf of all users by following guidance in the [Office 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-office365) topic.
+> Once you attach a domain, and you and your users use business accounts to save data into the Microsoft cloud, you can conduct data subject requests on behalf of all users by following guidance in [Microsoft 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-office365).
 
 ## Related content
 

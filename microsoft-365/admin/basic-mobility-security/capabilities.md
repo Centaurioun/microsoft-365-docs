@@ -3,11 +3,12 @@ title: "Capabilities of Basic Mobility and Security"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 11/11/2024
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
@@ -15,9 +16,11 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Basic Mobility and Security helps you secure and manage mobile devices with policies that control access to organization Microsoft 365 email and documents."
@@ -41,7 +44,7 @@ You can use Basic Mobility and Security to secure and manage the following devic
 
 <sup>2</sup>Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
 
-<sup>3</sup>Access control for Windows 10 requires a subscription that includes Azure AD Premium and the device needs to be joined to Azure Active Directory.
+<sup>3</sup>Access control for Windows 10 requires a subscription that includes Microsoft Entra ID P1 or P2 and the device needs to be joined to Microsoft Entra ID.
 
 > [!NOTE]
 > Devices already enrolled with earlier OS versions continue to function although the capabilities might change without notice.
@@ -55,17 +58,17 @@ The supported apps for the different types of mobile devices in the following ta
 |Product|iOS|Android|
 |---|---|---|
 |**Exchange** Exchange ActiveSync includes built-in email and third-party apps, like TouchDown, that use Exchange ActiveSync Version 14.1 or later.|Mail|Email|
-|**Office** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Office Mobile|
+|**Apps in Microsoft 365** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Microsoft 365 mobile|
 
 > [!NOTE]
 >
 > - Support for iOS 10.0 and later versions includes iPhone and iPad devices.
 > - Management of BlackBerry OS devices isn’t supported by Basic Security and Mobility. Use BlackBerry Business Cloud Services (BBCS) from BlackBerry to manage BlackBerry OS devices. Blackberry devices running Android OS are supported as standard Android devices
-> - Users won’t be prompted to enroll and won’t be blocked or reported for policy violation if they use the mobile browser to access Microsoft 365 SharePoint sites, documents in Office Online, or email in Outlook Web App.
+> - Users won’t be prompted to enroll and won’t be blocked or reported for policy violation if they use the mobile browser to access Microsoft 365 SharePoint sites, documents in Microsoft 365 on the web, or email in Outlook Web App.
 
 The following diagram shows what happens when a user with a new device signs in to an app that supports access control with Basic Mobility and Security. The user is blocked from accessing Microsoft 365 resources in the app until they enroll their device.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Basic Mobility and Security access control.":::
+:::image type="content" source="../../media/microsoft-365-bsm-app-diagram.png" alt-text="Basic Mobility and Security access control":::
 
 > [!NOTE]
 > Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard will override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device will be ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
@@ -99,9 +102,12 @@ The following sections list the policy settings you can use to help secure and m
 |Require an alphanumeric password|Yes|No|No|
 |Minimum password length|Yes|Yes|Yes|
 |Number of sign-in failures before device is wiped|Yes|Yes|Yes|
-|Minutes of inactivity before device is locked|Yes|Yes|Yes|
+|Minutes of inactivity before device is locked|Yes|No|No|
 |Password expiration (days)|Yes|Yes|Yes|
 |Remember password history and prevent reuse|Yes|Yes|Yes|
+
+> [!IMPORTANT]
+> **Lock devices if they are inactive for this many minutes** is no longer supported for Android and Samsung Knox.
 
 ## Encryption settings
 
@@ -119,7 +125,7 @@ The following sections list the policy settings you can use to help secure and m
 
 ## Managed email profile option
 
-The following option can block users from accessing their Microsoft 365 email if they’re using a manually created email profile. Users on iOS devices must delete their manually created email profile before they can access their email. After they delete the profile, a new profile is automatically created on the device. For instructions on how end users can get compliant, see [An existing email account was found](/intune-user-help/existing-company-email-account-found).
+The following option can block users from accessing their Microsoft 365 email if they’re using a manually created email profile. Users on iOS devices must delete their manually created email profile before they can access their email. After they delete the profile, a new profile is automatically created on the device. For instructions on how end users can get compliant, see [Device already has an email profile installed](/troubleshoot/mem/intune/device-configuration/troubleshoot-email-profiles-in-microsoft-intune#device-already-has-an-email-profile-installed).
 
 |Setting name|iOS|Android|Samsung Knox|
 |---|---|---|---|
@@ -184,7 +190,7 @@ You can set the following additional policy settings by using Security & Complia
 
 ## Settings supported by Windows
 
-You can manage Windows 10 devices by enrolling them as mobile devices. After an applicable policy is deployed, users with Windows 10 devices will be required to enroll in Basic Mobility and Security the first time they use the built-in email app to access their Microsoft 365 email (requires Azure AD premium subscription).
+You can manage Windows 10 devices by enrolling them as mobile devices. After an applicable policy is deployed, users with Windows 10 devices will be required to enroll in Basic Mobility and Security the first time they use the built-in email app to access their Microsoft 365 email (requires Microsoft Entra ID P1 or P2 subscription).
 
 The following settings are supported for Windows 10 devices that are enrolled as mobile devices. These setting won’t block users from accessing Microsoft 365 resources.
 
@@ -203,7 +209,7 @@ The following settings are supported for Windows 10 devices that are enrolled as
 - Remember password history and prevent reuse
 
 > [!NOTE]
-> The following settings regulating passwords only control local Windows accounts. Windows accounts provided through join a domain or Azure Active Directory aren't affected by these settings.
+> The following settings regulating passwords only control local Windows accounts. Windows accounts provided through join a domain or Microsoft Entra ID aren't affected by these settings.
 
 ### System settings
 

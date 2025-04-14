@@ -11,6 +11,7 @@ ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
+ms.date: 01/28/2021
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
@@ -19,6 +20,8 @@ ms.topic: article
 > [!TIP]
 > For better performance, you can use server closer to your geo location:
 >
-> - api-us.securitycenter.microsoft.com
-> - api-eu.securitycenter.microsoft.com
-> - api-uk.securitycenter.microsoft.com
+> - us.api.security.microsoft.com
+> - eu.api.security.microsoft.com
+> - uk.api.security.microsoft.com
+> - au.api.security.microsoft.com
+> - swa.api.security.microsoft.com

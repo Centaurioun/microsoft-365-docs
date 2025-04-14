@@ -5,10 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, jmueller
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -21,8 +22,9 @@ ms.custom:
 - commerce_licensing
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 description: Learn how to download the software and product license keys for perpetual software bought through the Cloud Solution Provider (CSP) program.
-ms.date: 01/27/2021
+ms.date: 04/07/2025
 ---
 
 # Download perpetual software and product license keys in Microsoft 365
@@ -31,7 +33,13 @@ This article explains how to download software and product license keys for perp
 
 ## Before you begin
 
-You must be a Global admin to do the steps in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+- You must be a Global Administrator to do the steps in this article. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+- If you're a partner who's an admin on behalf of (AOBO) a customer, you must sign in to the customer's organization with an admin account created in the organization.
+- If there are multiple billing accounts, you must select the account that the product was purchased on.
+  For more information, see [Select a default billing account](../../commerce/manage-billing-accounts.md).
+- If you don't have access to the billing account, you must self elevate. For more information, see [No billing account found for buying products](../../commerce/no-billing-account-found.md).
+
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 ## Download software and product license keys
 
@@ -41,3 +49,14 @@ You must be a Global admin to do the steps in this article. For more information
 4. To download the key, select **Copy key to clipboard**.
 5. In the right pane, select **Copy**, then close the pane.
 6. Paste the key in a file in a secure location and then enter it as instructed during the software installation. The key is needed to activate the downloaded software.
+
+## Download Dual Use Rights keys
+
+Dual Use Rights keys are a benefit of some specific Dynamics 365 subscription licenses.
+
+1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. Choose the Dynamics 365 Service that has a Dual Use Right key.
+3. On the subscription details page, in the **Registration Keys** section, select the version to download.
+    > [!NOTE]
+    > If the product only has one version to download, you can't select other versions.
+4. To download the installation file, select **Download Software**. To download the activation file, select **Download License Key**.

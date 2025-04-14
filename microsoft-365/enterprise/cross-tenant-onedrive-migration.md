@@ -1,12 +1,13 @@
 ---
 title: Cross-tenant OneDrive migration overview
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: jtremper
+author: MicrosoftHeidi
+manager: pamgreen
+ms.date: 05/31/2024
 recommendations: true
 audience: ITPro
-ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.topic: upgrade-and-migration-article
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
@@ -28,20 +29,27 @@ SharePoint administrators of two separate tenants can use the *Set-SPOCrossTenan
 
 Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a given time. Once scheduled, migrations occur without the user's data ever leaving the Microsoft 365 cloud and with minimal disruption, requiring only a few minutes where a user's OneDrive will be read-only. When migrations are complete, a redirect is placed in the location of the user's original OneDrive, so any links to files and folders can continue working in the new location.
 
+>[!Important]
+>Cross-Tenant moves are a one and done migration activity. The content will be **moved** from the Source to Target, leaving behind a redirect link on Source. **Incremental and delta migration passes cannot be performed.**
+
 > [!NOTE]
 > This feature is not supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
 
 ## Licensing
 
-**Cross Tenant User Data Migration** is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers. User licenses are per migration (onetime fee). Please contact your Microsoft account team for details.
- 
-Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive for Business.
+>[!Important]
+>As of Nov. 2022, Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers, and is required for cross-tenant migrations. User licenses are per migration (one-time fee) and can be assigned either on the source or target user object. This license also covers Cross-tenant mailbox migration.  Contact your Microsoft account team for details.
+>
+>The Cross Tenant User Data Migration add-on is available as a separate purchase for Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; and OneDrive for Business.
+
+>[!Warning]
+>You must have purchased, or verified that you can purchase, cross tenant user data migration licenses prior to the next steps. Migrations fail if this step has not been completed. Microsoft does not offer exceptions for this licensing requirement.
 
 ## Prerequisites and settings
 
-- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from Official Microsoft Download Center](/download/details.aspx?id=35588)
+- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from the official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
 
-- **Turn off service encryption with Customer Key enabled.** Confirm that the source OneDrive tenant **doesn't** have Service encryption with Microsoft Purview Customer Key enabled. If enabled on Source tenant, the migration will fail. [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview)
+- **Confirm that the source OneDrive tenant does not have Service encryption with Microsoft Purview Customer Key enabled.** If enabled on the source tenant, the migration will fail. [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview).
 
 - Source OneDrive accounts must be set to Read/Write. If set to Read only, they'll fail.
 
@@ -62,7 +70,7 @@ Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A
 
 ## Path size limits
 
-Microsoft limits the number of characters in a path to not exceed 400 characters. This is the full path limit, not just the file name. In planning your migrations, review the length of OneDrive URL names in your target tenant. Failure often occurs when files or folder paths from the source, combined with the OneDrive URL on the target exceed the 400-character path limit. 
+Microsoft limits the number of characters in a path to not exceed 400 characters. This is the full path limit, not just the file name. In planning your migrations, review the length of OneDrive URL names in your target tenant. Failure often occurs when files or folder paths from the source, combined with the OneDrive URL on the target exceed the 400-character path limit.
 
 A migration will detect if you have exceeded the character limit. Work with the site owner to update the file/folder directory structure to reduce file path lengths.
 
@@ -73,7 +81,12 @@ Any legal URL will be accepted when creating your Identity Map from Source to Ta
 
 ## OneDrive account size limits
 
-Each OneDrive account can have a maximum of 2 TB of content or 1 million items.
+Each OneDrive account can have a maximum of 5 TB of content or 1 million items.
+
+> [!IMPORTANT]
+> The 1 million item limit can be any "item", including files (including versions), folders, and list line entries if it is a list or library.
+>
+>If you attempt to migrate any OneDrive site that exceeds the 5 TB quota, the transfer will fail.
 
 ## Permissions
 
@@ -86,7 +99,7 @@ To migrate these OneDrive accounts, remove the hold policy, migrate, then reappl
 
 ## Shared files
 
-After a OneDrive account is migrated, anyone clicking on a shared link to the old location will be redirected to the new one, provided they still have access to the destination. 
+After a OneDrive account is migrated, anyone clicking on a shared link to the old location will be redirected to the new one, provided they still have access to the destination.
 
 Those redirects remain until the source tenant is deprovisioned. The admin can also selectively remove redirects site-by-site.
 

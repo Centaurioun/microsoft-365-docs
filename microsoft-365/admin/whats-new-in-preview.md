@@ -2,9 +2,10 @@
 title: "What's new in the Microsoft 365 admin center?"
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
+ms.date: 03/04/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -15,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -31,28 +33,117 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Some of the information in this article might not apply to Office 365 operated by 21Vianet.
+> Some of the information in this article might not apply to Microsoft 365 operated by 21Vianet.
 
 ::: moniker-end
 
 We're continuously adding new features to [the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
-And if you'd like to know what's new with other Microsoft cloud services:
+And if you'd like to know what's new with other Microsoft cloud services, check out the following:
 
-- [What's new in Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
+- [What's new in Microsoft Entra ID](/azure/active-directory/fundamentals/whats-new)
 - [What's new in the Exchange admin center](/Exchange/whats-new)
 - [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft Purview compliance portal](/microsoft-365/compliance/whats-new)
-- [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
+- [What's new in Microsoft Defender XDR](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
-- [Office updates](/OfficeUpdates/)
+- [What's new for Teams admins](/OfficeUpdates/teams-admin)
+- [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
+
+## March 2025
+
+### Exchange Web Services usage report
+
+:::image type="content" source="../media/exchange-web-usage-report.png" alt-text="Screenshot showing the line chart for the Exchange web usage report." lightbox="../media/exchange-web-usage-report.png":::
+
+The Microsoft 365 admin center now includes a new Exchange Web Services (EWS) usage report that provides insights into the non-Microsoft (third-party) applications in your tenant that use EWS. The report provides detailed information on the specific actions performed by these applications and their call volumes over a selected period. The report enhances your ability to understand EWS activity prior to EWS deprecation in Microsoft Exchange Online.
+
+The report is available by default in the Microsoft 365 admin center under **Reports** > **Usage** > **Exchange** > **EWS usage**.
+
+To learn more, see [Microsoft 365 Reports in the admin center – EWS usage](/microsoft-365/admin/activity-reports/ews-usage).
+
+## February 2025
+
+### Provide admin-initiated feedback for Microsoft 365 Copilot
+
+> [!VIDEO c67f2b9c-8ba4-44b5-8713-00063e92ba54]
+
+You can provide feedback about Microsoft 365 Copilot on behalf of your users within the Microsoft 365 admin center, supplementing the user-initiated feedback process. This helps Microsoft receive comprehensive diagnostic data to aid in debugging and improving the quality and relevance of Copilot's responses. Recent enhancements to this feature include:
+
+- **Role expansion** The feature now includes the AI Admin role in addition to Global Admin role, ensuring that more administrators can access and manage Copilot diagnostics.
+- **Selecting chat log prompt-response pairs** You can review and select specific chat log prompt-response pairs for feedback, providing more control over the data being shared.
+- **Date range selection** You can select a specific date range for a feedback submission, up to the past 30 days, allowing you to focus on issues within a particular time-frame.
+- **Product selection** You can choose from a list of Copilot products when submitting feedback, ensuring that the feedback is relevant to the specific product.
+- **List of frequently occurring issues** You can select from a predefined list of frequently occurring issues or enter issue details in a text box, streamlining the feedback process.
+
+As an admin, you play a pivotal role in setting the tone for how your organization adopts and benefits from new technologies. Hence, with admin-initiated feedback, we're empowering administrators to harness this capability for Copilot's continual improvement, all while ensuring the security and ownership of your organization’s data. 
+
+These enhancements provide more control and flexibility, ensuring that feedback is accurate and relevant. To learn more, see [Submit admin-initiated Copilot feedback from the Microsoft 365 admin center](/copilot/microsoft-365/provide-feedback).
+
+## January 2025
+
+### AI Administrator role in Microsoft 365 admin center
+
+The AI administrator role is designed to manage all settings related to Copilot within the Microsoft 365 admin center. You can manage Copilot settings by using the Copilot page in the admin center, which serves as the central hub for all Copilot controls. To learn more about the Copilot page, see [Manage Microsoft 365 Copilot settings in the Microsoft 365 admin center](/copilot/microsoft-365/microsoft-365-copilot-page).
+
+With the AI administrator role, you can:
+
+- **Manage AI-related services and extensibility** This includes managing all aspects of Microsoft 365 Copilot, AI-related enterprise services, and agents from the Integrated apps page in the Microsoft 365 admin center.
+- **Oversee app installations and configurations** Users with this role can install apps or install apps for users in the organization and read and configure Azure and Microsoft 365 service health dashboards.
+- **Access insights and support** View usage reports, adoption insights, organizational insights, and create and manage support tickets in Azure and the Microsoft 365 admin center.
+
+This new role is designed to empower your organization by providing specialized administrative capabilities for managing AI-related enterprise services, starting with Microsoft 365 Copilot, and slowly extending to other AI-driven functionalities. For more information about the AI administrator role and other roles in the admin center, see [About admin roles in the Microsoft 365 admin center](/admin/add-users/about-admin-roles).
+
+>[!NOTE]
+> The AI Administrator role is currently limited. For full administrative capabilities, it's recommended to use the Global Admin role until the AI Administrator role is fully functional. We're continuously expanding support for more functionalities to enhance the AI Administrator role.
+
+## May 2023
+
+### Sign up for Windows release health email notifications
+
+You now have an option to sign up for email notifications about Windows known issues and informational updates. Notifications include changes in issue status, new workarounds, and issue resolutions. To subscribe to notifications:
+
+1. Go to the <a href="https://admin.cloud.microsoft/?#/windowsreleasehealth" target="_blank">Windows release health page</a>.
+2. Select **Preferences** > **Email**, then select **Send me email notifications about Windows release health**.
+3. Specify the following information:
+    - Email address for the notifications
+        - Each admin account can specify up to two email addresses under their email preferences
+    - Windows versions to be notified about
+       - When a single known issue affects multiple versions of Windows, you'll receive only one email notification, even if you've selected notifications for multiple versions. Duplicate emails won't be sent.
+4. Select **Save** when you're finished specifying email addresses and Windows versions. It might take up to 8 hours for these changes to take effect.
+
+For more information, see [How to check Windows release health](/windows/deployment/update/check-release-health).
+
+## April 2023
+
+The **Suggested training** feature is part of the Experience Insights dashboard and gives you deeper insights into the Microsoft 365 help and training articles being read by your signed-in users on support.microsoft.com and in-app help panels with these 3 insights:
+
+- **Top viewed articles** for your organization shows you help and training articles that have been getting the most views by people in your organization.
+
+- **Trending across organizations** shows you the help and training topics that are moving up the most in your organizations most viewed list.
+
+- **Commonly viewed together** gives you insights into the additional help articles users in all Microsoft 365 organizations are reading, along with the top viewed and top trending articles. You can use this info to put together and share training packages for your users.
+
+    :::image type="content" source="../media/exp-insights-dashboard.png" alt-text="Experience insights dashboard":::
+
+Use this data to decide which help articles and training resources to share with your users about these products and apps, or make sure your helpdesk is aware of these areas so they can answer any user questions. If your org doesn’t have enough views on help and training articles, you’ll see data from other Microsoft 365 organizations.
+
+There are a couple of ways to get the Experience insights dashboard page:
+
+- If you’re a member of the Global reader roles, when you sign in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
+
+- If you’re a member of the Reports reader role or the User Experience success manager roles, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
+
+    :::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard":::
+
+For more information, check out [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
 
 ## December 2022
 
 ### Advanced deployment guides for Microsoft 365
 
-To help you easily find guides for the services you’re deploying, we’ve updated the search tools, recommendations, and layouts for the [Advanced deployment guides & assistance](https://admin.microsoft.com/Adminportal/Home?Q=TechCommunity#/SetupGuidance) page in the Microsoft 365 admin center and at [setup.microsoft.com](https://setup.microsoft.com/).
+To help you easily find guides for the services you’re deploying, we’ve updated the search tools, recommendations, and layouts for the <a href="https://admin.cloud.microsoft/?#/setupguidance" target="_blank">Advanced deployment guides & assistance</a> page in the Microsoft 365 admin center and at <a href="https://setup.microsoft.com/" target="_blank">setup.microsoft.com</a>.
 
 In this update, you can now:
 
@@ -62,9 +153,9 @@ In this update, you can now:
 
 :::image type="content" source="../media/advanced-deployment-guides.png" alt-text="Advanced deployment guides page in the Microsoft 365 admin center" lightbox="../media/advanced-deployment-guides.png":::
 
-To get to Advanced deployment guides, sign in the Microsoft 365 admin center and go to **Setup** > **Advanced deployment guides & assistance**.
+To get to Advanced deployment guides, sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and go to **Setup** > **Advanced deployment guides & assistance**.
 
-You can now find all the same guides from the Microsoft 365 admin center on [setup.microsoft.com](https://setup.microsoft.com/). Key updates to this site include:  
+You can now find all the same guides from the Microsoft 365 admin center on <a href="https://setup.microsoft.com/" target="_blank">setup.microsoft.com</a>. Key updates to this site include:  
 
 - Expanded searchability to quickly find guides
 - Better page organization to help you navigate to the right view
@@ -80,9 +171,9 @@ To learn more, see [Simplify deployment of Microsoft 365 with new and updated de
 
 To empower IT Admins like you, the Net Promoter Score (NPS) survey insights dashboard released the new Sentiment per Topic feature under the sentiment section.
 
-With this new feature, you will be able to identify the sentiment that is associated with each topic available. The sentiment is calculated for each NPS feedback comment and tied to a specific topic. With this new addition, you can discover what trending topics your users are talking about and understand the feeling they're experiencing regarding that specific topic.
+With this new feature, you'll be able to identify the sentiment that is associated with each topic available. The sentiment is calculated for each NPS feedback comment and tied to a specific topic. With this new addition, you can discover what trending topics your users are talking about and understand the feeling they're experiencing regarding that specific topic.
 
-With the new sentiment per topic feature on the NPS survey insights dashboard, you will be able to:
+With the new sentiment per topic feature on the NPS survey insights dashboard, you'll be able to:
 
 - Identify the sentiment for each topic
 - Choose between three sentiments: Positive, Negative, Other
@@ -98,7 +189,7 @@ Here are the topics available:
 - User Education
 - Value
 
-To access the sentiment per topic insights, sign in to the M365 Admin Center and go to **Health** > **Product feedback** > **NPS survey insights tab**.
+To access the sentiment per topic insights, sign in to the Microsoft 365 Admin Center and go to **Health** > **Product feedback** > **NPS survey insights tab**.
 
 :::image type="content" source="../media/nps-sentimentpertopic.jpg" alt-text="Screenshot: Sentiment per topic feature in the NPS survey insights dashboard" lightbox="../media/nps-sentimentpertopic.jpg":::
 
@@ -108,9 +199,9 @@ For questions or feedback related to NPS survey insights, contact us at Prosight
 
 ### Date filter in the Net Promoter Score (NPS) survey insights dashboard
 
-Based on your feedback, we are introducing a new function in the NPS survey insights dashboard that allows Admins like you to filter the Net Promoter Score (NPS) data and insights per date, so that you can access details based on your date range preference.
+Based on your feedback, we're introducing a new function in the NPS survey insights dashboard that allows Admins like you to filter the Net Promoter Score (NPS) data and insights per date, so that you can access details based on your date range preference.
 
-With this change, you will be able to look at the NPS survey insights based on the following date ranges:
+With this change, you'll be able to look at the NPS survey insights based on the following date ranges:
 
 - Past 30 days
 - Past 90 days
@@ -123,7 +214,6 @@ To access, go to **Health** > **Product feedback** > **NPS survey insights tab**
 Learn more about [NPS survey insights](/microsoft-365/admin/manage/manage-feedback-product-insights).
 
 For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
-
 
 ## July 2022
 
@@ -185,7 +275,7 @@ With the sentiment feature on the NPS survey insights dashboard you'll be able t
 
 Three sentiments are available:
 
-:::image type="content" source="../media/sentiment-examples.png" alt-text="Screenshot: Sentiment examples and descriptions":::
+:::image type="content" source="../media/sentiment-examples.png" alt-text="Screenshot: Sentiment examples and descriptions. The sentiments available are positive, negative, and other. Each sentiment includes a description and an example. The description of positive is comments that contain satisfactory emotions or experiences. The example is I love how Word lets me check my grammar while drafting my documents." lightbox="../media/sentiment-examples.png":::
 
 To provide you with a better experience using the NPS survey insight dashboard, we suggest checking the following items:
 
@@ -204,105 +294,16 @@ You can now view all search results in a separate browser page by searching in g
 
 With our new separate page of search results, you can explore a more comprehensive list of results and easily return to the browser page for a more efficient search experience.
 
-:::image type="content" source="../media/whats-new-search-page.png" alt-text="Screenshot: New Microsoft 365 admin center browser search page":::
+:::image type="content" source="../media/whats-new-search-page.png" alt-text="Screenshot: New Microsoft 365 admin center browser search page showing sections All, Navigation, Actions, Settings, Roles, and Documentation." lightbox="../media/whats-new-search-page.png":::
 
 ### Search in distribution lists to add Priority Accounts
 
 Previously, you could only tag priority accounts by searching for them using the person's name, e-mail address or job title. With this update, you can now search for people to add to priority accounts in a distribution list. This allows you to bulk add people in an efficient way and reduces the time needed to tag individual people in your organization.
 
-:::image type="content" source="../media/search-by-distribution-list-priority-accounts.png" alt-text="Screenshot: Search for priority accounts to add using a distribution list":::
+:::image type="content" source="../media/search-by-distribution-list-priority-accounts.png" alt-text="This screenshot shows the interface in which users can search for priority accounts to add using a distribution list." lightbox="../media/search-by-distribution-list-priority-accounts.png":::
 
 - You can tag up to 50 users from a distribution list as priority accounts in a single action.
 
 - Additional information about the user like department and job title has been introduced on the Priority Accounts page.
 
 - You can only tag user accounts within distribution lists, and not the list itself. Users who have already been tagged won’t show up in your distribution list search.
-
-## March 2022
-
-### Microsoft 365 Lighthouse GA
-
-Small and medium businesses often rely on trusted IT partners to manage their IT environments. We’re making it easier for partners to secure customers at scale with the general availability of [Microsoft 365 Lighthouse](https://aka.ms/March1SMBPartnerBlog), a multi-tenant administration portal for Managed Service Providers (MSPs). Microsoft 365 Lighthouse provides a complete experience for customers by empowering their partners to quickly identify and act on threats, anomalous sign-ins, and device compliance alerts to keep them safe.
-
-:::image type="content" source="../media/lighthouse.png" alt-text="Screenshot: Microsoft 365 Lighthouse dashboard":::
-
-Microsoft 365 Lighthouse is an IT partner service only, and it’s available to partners who are enrolled in the Cloud Solution Provider (CSP) program and are managing customers who have up to 1000 licensed users with Microsoft 365 Business Premium, Microsoft 365 E3, or Microsoft Defender for Business (in preview) subscriptions. If you’re a Microsoft CSP-enrolled IT Partner, Microsoft 365 Lighthouse is available at no cost to your organization and is designed to help your business scale and grow. Check out the [Microsoft 365 Lighthouse help library](../lighthouse/m365-lighthouse-overview.md) for more information.
-
-To get started using Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-sign-up.md). To learn more about Microsoft 365 Lighthouse, Defender for Business, and Microsoft 365 Business Premium, [join us for our Partner webinar series](https://aka.ms/M365MDBSeries).
-
-## February 2022
-
-### Net promoter score (NPS) survey insights
-
-You can now view NPS survey data and insights from your users in the Microsoft 365 admin center. With this new feature you can obtain actionable insights from NPS survey responses from your end users, and achieve higher end user delight by addressing any issues and concerns.
-
-In the admin center, go to **Health** > **Product feedback** > **NPS survey insights**.
-
-:::image type="content" source="../media/feedback-whatsnew.png" alt-text="Screenshot: Showing the Feedback page in the Microsoft 365 admin center":::
-
-We've identified the common themes from user feedback. Then we used machine learning models techniques to train the data sets and automatically organize the feedback into Top Topics.
-
-There are nine topics available. Look out for more topics in future updates.
-
-:::image type="content" source="../media/feedback-nine-topics.png" alt-text="Screenshot: Showning the 9 new feedback topics":::
-
-The NPS survey insight dashboard also contains these three new reports and pivots:
-
-- NPS monthly NPS trend volume for the last 12 months
-- Able to identify passives, promoters, and detractors
-- NPS volume per platform and app
-
-To provide you with a better experience using the NPS survey insight dashboard:
-
-- Encourage your end users to submit feedback
-- Confirm in-product surveys policies are enabled
-- Improve diagnosis by turning on Windows Error Reporting
-
-Learn more at [Microsoft product NPS feedback and insights for your organization](manage/manage-feedback-product-insights.md).  
-
-> [!NOTE]
-> If you're interested in joining our design sessions, send us an email at: prosight@microsoft.com
-
-### Microsoft 365 admin center video training
-
-We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](https://go.microsoft.com/fwlink/?linkid=2197659) page to learn how to set up and manage Microsoft 365 for your business.
-
-:::image type="content" source="../media/admin-library-vid-training.png" alt-text="Screenshot: Showing the admin center video training library":::
-
-## July 2021
-
-### Microsoft 365 admin center search
-
-You can now search for incident IDs in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2091030" target="_blank">Microsoft 365 admin center</a>. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
-
-:::image type="content" source="../media/incident-id.png" alt-text="Screenshot: Searching for incident ID in the admin center":::
-
-### Support ticket insight for Premier organizations
-
-We've added 2 graphs called **Volume trend** and **Volume trend by product** to give you visual insights about your support volume.
-
-The liner graph under **Volume trend** tab highlights the trend if support cases are increasing or decreasing for your organization month over month. You can hover on the graph to check the number of support cases created in each month.
-
-:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Screenshot: Graph that highlights the trend if support cases are increasing or decreasing for your organization month over month":::
-
-The **Volume trend by product** graph shows the top 3 products of each month with the highest support cases. We've enabled filtering in the table and you can now filter the results by **Product**, **Severity**, and **Date**.
-
-:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="Screenshot: Graph shows the top 3 products of each month with the highest support cases":::
-
-We've also added 2 new fields, **Severity** and **Closed Date** in the **View Service Request** table to give you more insights about your tickets.
-
-:::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="Screenshot: Table that shows support ticket sorting by severity and date.":::
-
-To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>, go to **Support** > **View Service requests** in left navigation pane.
-
-## June 2021
-
-### Microsoft 365 admin center search
-
-We've added a couple of new categories to Search functionality.
-
-- You can now search for Microsoft 365 admin roles in global search and quickly view and manage role assignments from any page. For example, search for **Intune administrator**.
-
-- You can now find simplified setup experiences through global search. This can help you and your team quickly get started with how to use new features. For example, search for **set password to never expire**.
-
-To learn more about search in the admin center, see [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).

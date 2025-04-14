@@ -1,27 +1,27 @@
 ---
-title: Configure Microsoft Syntex for pay-as-you-go billing in Azure (Preview)
-ms.author: mikeplum
-author: MikePlumleyMSFT
+title: Set up Microsoft Syntex for pay-as-you-go billing
+ms.author: chucked
+author: chuckedmonson
 ms.reviewer: kkamath
-manager: serdars
+ms.date: 01/16/2025
+manager: jtremper
 audience: admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+- essentials-get-started
+- m365initiative-syntex
+- Tier1
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Learn about how to set up pay-as-you-go Azure billing for Microsoft Syntex and how to monitor your usage.
 ---
 
-# Configure Microsoft Syntex for pay-as-you-go billing in Azure (Preview)
+# Set up Microsoft Syntex for pay-as-you-go billing
 
-Some Microsoft Syntex features are billed through an Azure subscription. In this limited-time preview, you can use prebuilt and unstructured document processing (formerly document understanding) at no cost and see activity reports in Azure.
+Microsoft Syntex services are billed on a pay-as-you-go basis. These services use an Azure subscription for billing and track usage and cost with a Syntex meter. Read the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms) before you configure pay-as-you-go.
 
-After the preview ends, document processing will be charged on a pay-as-you-go basis. You will have the option to opt in at that time. For details about the preview, see [Microsoft Syntex pay-as-you-go preview](/legal/microsoft-365/microsoft-syntex-azure-billing-trial).
-
-This preview does not include structured or freeform document processing which use AI Builder credits.
+For a list of Microsoft Syntex services that use pay-as-you-go, see [Licensing for Microsoft Syntex](syntex-licensing.md).
 
 ## Prerequisites
 
@@ -29,91 +29,108 @@ To use Microsoft Syntex pay-as-you go, you need:
 
 - An Azure subscription in the same tenant as Microsoft Syntex
 - An Azure resource group in that subscription
-- An Azure storage account in that subscription if you want to create usage reports. (See [Azure Blob Storage pricing](https://azure.microsoft.com/pricing/details/storage) for pricing.)
 
 If you already have these resources for other purposes, you can also use them with Microsoft Syntex.
 
-For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
+For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
 
 For information about how to create an Azure resource group, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-For information about how to create an Azure storage account, see [Create a storage account](/azure/storage/common/storage-account-create). The storage account does not need to be public or connected to the internet.
+## Connect Syntex to an Azure subscription for billing
 
-## Set up Microsoft Syntex billing in Azure
-
-When you set up Microsoft Syntex billing in Azure, events will be sent to the Azure meter in your account and you will be able to view the pages processed for unstructured and prebuilt document processing models.
+When you set up Microsoft Syntex billing in Azure, events will be sent to the Azure meter in your account, and you'll be able to view the pages processed for unstructured and prebuilt document processing models.
 
 The following permissions are required to set up Microsoft Syntex billing:
 
-- You must have Global Administrator or SharePoint Administrator permissions to be able to access the Microsoft 365 admin center and set up Syntex.
+- You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Syntex.
+
+   [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
+
 - You must have owner or contributor rights to the Azure subscription that you want to use for Microsoft Syntex billing.
 
-To configure Microsoft Syntex billing
+To configure Microsoft Syntex billing, follow these steps:
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Billing and licenses** section.
 
-1. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
+2. In the **Billing and licenses** section, select **Activate pay-as-you-go services**.
 
-1. On the **Microsoft Syntex** page, select **Configure billing** to walk through the setup process.
-1. On the **Enter your Azure subscription** panel, choose an Azure subscription from the **Azure subscription** dropdown.
-1. Choose a resource group and region. (The region determines where your tenant ID and usage information such as site names will be stored.)
-1. Select **Save**.
+3. On the **Activate pay-as-you-go services** page, select **Get started**.
 
-If you need to change or disconnect your Azure subscription, you can select **Manage billing** on the **Use content AI with Microsoft Syntex**.
+4. On the **Pay-as-you-go services** page, on the **Billing** tab, select **Syntex services**.
 
-If you have not previously configured Microsoft Syntex, read [Set up Microsoft Syntex](set-up-content-understanding.md) to learn how.
+5. On the **Set up billing and turn on services** panel, in the **Set up billing** section, under **Azure subscription**, select the dropdown, and then follow the steps to select the Azure subscription, resource group, and region. (The region determines where your tenant ID and usage information such as site names will be stored.)
+
+6. Read and accept the [pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms).
+
+7. Select **Save**.
+
+To access the **Pay-as-you-go services** page, follow these steps:
+
+1. In the Microsoft 365 admin center, select **Settings** > **Org settings**.
+
+2. On the **Services** tab, select **Pay-as-you-go services**.
+
+## Disconnect Syntex from pay-as-you-go billing
+
+To disconnect Microsoft Syntex from pay-as-you-go billing, follow these steps:
+
+1. In the Microsoft 365 admin center, select **Settings** > **Org settings**.
+
+2. On the **Pay-as-you-go services** page, on the **Billing** tab, select **Syntex services**.
+
+3. On the **Manage billing** panel, under **Azure subscription**, select **Edit billing information**.
+
+4. Under **Manage billing**, select **Disconnect Azure subscription**.
+
+5. On the **Disconnect subscription?** confirmation window, select **Disconnect**.
+
+6. On the **Set up services and turn on services** panel, view the confirmation message that your Azure Subscription has been disconnected.
 
 ## Monitor your Microsoft Syntex pay-as-you-go usage
 
-You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management. (There's no charge for this usage during the preview and the cost analysis dashboard won't show any information.)
+You can monitor your Microsoft Syntex pay-as-you-go usage in Microsoft Cost Management for Azure. You must have at least *read* access to the resource group that you specified for Microsoft Syntex. Note that usage information might take up to 24 hours to appear in Cost Management.
 
-To run the report, the customer must have at least *read* access to the resource group and *contributor* access to the storage container.
+To see the charges applied to the Syntex meters, follow these steps:
 
-Pages processed are counted for every time the model runs against the document for all pages processed in the document regardless of whether there was a positive classification. This includes when a document is processed after being updated.
+1. Sign in to [Microsoft Cost Management for Azure](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview).
 
-Model training does not count toward pages processed.
+2. Under **Cost Management**, select **Cost analysis**.
 
-To create a report
-1. Sign in to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview).
-1. Under **Settings**, select **Exports**.
-1. Select **Add**.
-1. Type a name for the export.
-1. Select the **Metric** that you want to report on.
-1. Choose an **Export type** and the dates for the export.
-1. In the **Storage** section, choose the subscription that you're using for Microsoft Syntex billing.
-1. In the **Storage account** dropdown, choose a storage account to which you have contributor access.
-1. Type a name for the container where the report will be stored.
-1. Type the path within the container where you want to export the report.
-1. Select **Create**.
+3. Select **Add filter**, choose **Product** from the list, and then choose the product that you want to filter on.
 
-Once the report has been created, it will run on the date you specified. You can also run it manually.
+4. Select **Add filter**, choose **Tag** from the list, and then choose the tag that you want to filter on.
 
-To run a report
-1. In the Azure Cost Management Exports list, select the report that you want to run.
-1. Select **Run now**.
+The following pay-as-you-go services are currently available:
 
-The report may take up to an hour to run.
+**Document and image services**
+- Autofill columns
+- Content assembly
+- Document translation
+- eSignature
+- Image tagging
+- Optical character recognition
+- Prebuilt document processing
+- Structured and freeform document processing
+- Taxonomy tagging
+- Unstructured document processing
 
-To access the report
-1. In the Azure Cost Management Exports list, select the report.
-1. Select the storage account.
-1. Under **Data storage**, select **Containers**.
-1. Select the container where you stored the report.
-1. Navigate to the csv file for the report that you want to view.
-1. Select the csv, and then select **Download**.
+**Storage services**
+- Microsoft 365 Archive
+- Microsoft 365 Backup
 
-Filter the csv on **consumedService** = *Microsoft.Syntex*. The following columns include Microsoft Syntex transaction information:
+**Video services**
+- Video translation
 
-- meterName
-- meterCategory
-- meterSubCategory
-- ProductName
-- quantity
-- tags (site and library information)
+**Apps**
+- SharePoint Embedded
 
-## Related topics
+The following tags are available:
+- Site
+
+For more information about filter options in Cost Management, see [Group and filter options in Cost analysis](/azure/cost-management-billing/costs/group-filter).
+
+## Related articles
 
 [Overview of Microsoft Syntex](syntex-overview.md)
 
 [Licensing for Microsoft Syntex](syntex-licensing.md)
-

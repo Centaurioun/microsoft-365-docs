@@ -2,13 +2,14 @@
 title: "Connect your domain to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: nkagole
+ms.author: scotv
 author: nataliekagole
 manager: scotv
+ms.date: 08/01/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier2
 - scotvorg
@@ -26,6 +27,8 @@ ms.custom:
 ---
 
 # Connect your domain to Microsoft 365
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 > [!NOTE]
 > If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
@@ -58,6 +61,7 @@ On your hosting provider's website, add the following CNAME record. Make sure th
 - Points to address: Copy the value from the admin center and paste it here.
 - TTL: `3600` (or your provider default)
 
+Save the record.
 ## Add a TXT record to help prevent spam
 
 **Before you begin:** If you already have an SPF record for your domain, don't create a new one for Microsoft 365. Instead, add the required Microsoft 365 values to the current record on your hosting providers website so that you have a *single* SPF record that includes both sets of values.

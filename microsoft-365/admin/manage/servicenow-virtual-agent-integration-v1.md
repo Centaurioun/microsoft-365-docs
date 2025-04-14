@@ -5,8 +5,9 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 10/21/2022
 audience: Admin
-ms.topic: article
+ms.topic: integration
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
