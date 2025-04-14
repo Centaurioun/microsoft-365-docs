@@ -14,7 +14,7 @@ ms.collection:
 - M365-collaboration
 - m365initiative-migratetom365
 search.appverid: MET150
-description: "Cross-tenant OneDrive migration overview article. Information about migrating content from one tenant to another, including requirements, limitations, licensing, and government clouds, including GCC (government community cloud), GCC High and DoD."
+description: "Cross-tenant OneDrive migration overview article. Information about migrating content from one tenant to another, including requirements, limitations, licensing, and government clouds, including GCC (government community cloud), GCC High, and DoD."
 ---
 # Cross-tenant OneDrive migration
 
