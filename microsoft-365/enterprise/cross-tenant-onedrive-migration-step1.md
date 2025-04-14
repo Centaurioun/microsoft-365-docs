@@ -3,7 +3,7 @@ title: OneDrive Cross-tenant OneDrive migration Step 1
 ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
-ms.date: 10/13/2023
+ms.date: 04/14/2025
 recommendations: true
 audience: ITPro
 ms.topic: how-to
@@ -14,8 +14,9 @@ ms.collection:
 - M365-collaboration
 - m365initiative-migratetom365
 search.appverid: MET150
-description: "Step 1 of the OneDrive Cross-tenant migration feature"
+description: "Step 1 of the OneDrive Cross-tenant migration feature."
 ---
+
 # Step 1: Connect to the source and target tenants
 
 This article details Step 1 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
@@ -31,7 +32,7 @@ This article details Step 1 in a solution designed to complete a Cross-tenant On
 ## Before you begin
 
 - **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. If not, [Download SharePoint Online Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
-- Be a SharePoint Online admin or Microsoft 365 Global admin on both the source and target tenants
+- Be a SharePoint Online admin or Microsoft 365 Global admin on both the source and target tenants.
 
 >[!IMPORTANT]
 >Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
