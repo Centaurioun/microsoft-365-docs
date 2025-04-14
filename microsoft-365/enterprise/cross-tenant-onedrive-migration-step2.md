@@ -87,7 +87,7 @@ These commands send a request to the tenant with whom you want to establish trus
 
 The following screenshot is an example of the email sent to global admins:
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-trust-email.png" alt-text="A screenshot showing an xample of trust email from SharePoint to multiple test accounts.":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-trust-email.png" alt-text="A screenshot showing an example of a trust email from SharePoint to multiple test accounts.":::
 
 **Subject:**  SPO Tenant [https://a830edad9050849mnaus093022-my.sharepoint.com/] [setuporupdate] Organization Relation [Scenario=MnA, Role=Source] with us
 
