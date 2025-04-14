@@ -4,10 +4,10 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
-ms.date: 06/30/2023
+ms.reviewer: aakash
+ms.date: 10/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -28,13 +28,16 @@ Microsoft 365 Lighthouse allows you to manage multifactor authentication (MFA) s
 
 For small- and medium-sized business (SMB) customers, Microsoft recommends enabling [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) at a minimum. For more complex scenarios, you can use [Conditional Access](/azure/active-directory/conditional-access/overview) to configure specific policies.
 
+> [!NOTE]
+> This page provides insights around tenants for which data availability is limited.
+
 ## Before you begin
 
 The customer tenant must be active within Microsoft 365 Lighthouse. To determine if a tenant is active, see [Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md).
 
 ## Notify users who aren't registered for MFA
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **multifactor authentication**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **multifactor authentication**.
 
 2. Select the tenant that contains the user(s) that you want to notify.
 
@@ -55,12 +58,12 @@ The customer tenant must be active within Microsoft 365 Lighthouse. To determine
 
 > [!NOTE]
 > Lighthouse opens your default email client and prepopulates the email message with instructions to register for MFA. All the selected users will be included on the BCC line. If you prefer to individually email users, you can select the email icon next to the username.
-> 
+>
 > If you want to use a different email account, you can export the list of users to a file. You can also download sample email templates you can customize with your company branding.
 
 ## Exclude users from MFA registration
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users \> multifactor authentication**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users \> multifactor authentication**.
 
 2. Select the tenant containing the user(s) you want to exclude.
 
@@ -77,7 +80,7 @@ The customer tenant must be active within Microsoft 365 Lighthouse. To determine
 
 ## Block sign-in for users not registered for MFA
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **multifactor authentication**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **multifactor authentication**.
 2. Select the tenant that contains the user(s) you want to block.
 3. Select **Users not registered for MFA** tab.
 4. Select the user(s) that you want to block.
@@ -92,7 +95,7 @@ Blocking a user prevents anyone from signing in as this user and is a good idea 
 
 ## Remove a user from the Excluded users group
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **multifactor authentication**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **multifactor authentication**.
 2. Select the tenant that contains the user(s) you want to remove.
 3. Select **Exclude users** tab.
 4. Select the user(s) that you want to remove.
@@ -104,7 +107,7 @@ Blocking a user prevents anyone from signing in as this user and is a good idea 
 
 ## Next steps
 
-Once MFA is enabled, you can enable Microsoft Entra self-service password reset (SSPR). SSPR allows users to change or reset passwords without administrator or help desk involvement. For more information, see Manage self-service password reset in Microsoft 365 Lighthouse. For more information, see [Manage self-service password reset in Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
+Once MFA is enabled, you can enable Microsoft Entra self-service password reset (SSPR). SSPR allows users to change or reset passwords without administrator or help desk involvement. For more information, see [Manage self-service password reset in Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
 
 ## Related content
 

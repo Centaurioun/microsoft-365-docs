@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/20/2023
+ms.date: 10/02/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -124,7 +124,7 @@ For more information, see this [overview of Conditional Access](/azure/active-di
 
 ### Microsoft Entra ID Protection
 
-With Microsoft Entra ID Protection, you can create an additional Conditional Access policy to [require MFA when sign-in risk is medium or high](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk).
+With Microsoft Entra ID Protection, you can create an additional Conditional Access policy to [require MFA when sign-in risk is medium or high](../../security/office-365-security/zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk).
 
 You can use Microsoft Entra ID Protection and risk-based Conditional Access policies with:
 

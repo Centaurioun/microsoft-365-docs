@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center Teams usage activity reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 03/25/2022
+ms.date: 12/14/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -14,7 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- campaignIDs-batch1
 search.appverid:
 - BCS160
 - MST160
@@ -79,6 +81,9 @@ The Channel usage chart shows data on the following metrics.
 |Active channel users|This is the total of internal active users, active guests, and external active users.  <br/><br/> **Internal active users** - Users that have at least one panel action in the specified time period. This excludes guests.   <br/> **Active guests** - Guests that have at least one panel action in the specified time period. A guest is a person from outside your organization who accesses shared resources by signing in to a guest account in my directory.  <br/> **External active user** - External participants that have at least one panel action in the specified time period. An external participant is a person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.|
 |Active channels|Valid channels in active teams that have at least one active user in the specified time period. This includes public, private, or shared channels.|
 |Channel messages|The number of unique messages that the user posted in a private chat during the specified time period.|
+
+> [!NOTE]
+> Panel action refers to any action taken by the user in the panel within Microsoft Teams.
 
 ### Team usage metrics
 
