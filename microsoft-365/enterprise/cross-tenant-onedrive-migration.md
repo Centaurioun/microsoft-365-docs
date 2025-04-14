@@ -33,14 +33,14 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 >Cross-Tenant moves are a one and done migration activity. The content is **moved** from the Source to Target, leaving behind a redirect link on Source. **Incremental and delta migration passes cannot be performed.**
 
 > [!NOTE]
-> This feature is not supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
+> This feature isn't supported for users of the Government Cloud, including GCC, Consumer, GCC High, or DoD.
 
 ## Licensing
 
 >[!Important]
 >As of Nov. 2022, Cross Tenant User Data Migration is available as an add-on to the following Microsoft 365 subscription plans for Enterprise Agreement customers, and is required for cross-tenant migrations. User licenses are per migration (one-time fee) and can be assigned either on the source or target user object. This license also covers Cross-tenant mailbox migration.  Contact your Microsoft account team for details.
 >
->The Cross Tenant User Data Migration add-on is available as a separate purchase for Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; and OneDrive for Business.
+>The Cross Tenant User Data Migration add-on is available as a separate purchase for Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint in Microsoft 365; and OneDrive for Business.
 
 >[!Warning]
 >You must have purchased, or verified that you can purchase, cross tenant user data migration licenses prior to the next steps. Migrations fail if this step isn't completed. Microsoft doesn't offer exceptions for this licensing requirement.
@@ -53,9 +53,9 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 
 - **Source OneDrive accounts must be set to Read/Write**. If set to Read only, they fail.
 
-## Pre-create target accounts
+## Precreate target accounts
 
-- Ensure all users and groups identified for migration are pre-created on the target tenant.
+- Ensure all users and groups identified for migration are precreated on the target tenant.
 - Assign the appropriate licenses to each user on the target tenant.
 
 > [!IMPORTANT]
@@ -81,12 +81,12 @@ Any legal URL is accepted when creating your Identity Map from Source to Target 
 
 ## OneDrive account size limits
 
-Each OneDrive account can have a maximum of 5 TB of content or 1 million items.
+Each OneDrive account can have a maximum of 5 TB of content or one million items.
 
 > [!IMPORTANT]
 > The 1 million item limit can be any *item*, including files (and versions), folders, and list line entries if it's a list or library.
 >
->If you attempt to migrate any OneDrive site that exceeds the 5 TB quota, the transfer fails.
+>If you attempt to migrate any OneDrive site that exceeds the 5 terrabyte quota, the transfer fails.
 
 ## Permissions
 
@@ -106,8 +106,8 @@ Those redirects remain until the source tenant is deprovisioned. The admin can a
 
 - **Step 1:** [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md).  
 - **Step 2:** [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md)
-- **Step 3:** [Verify trust has been established](cross-tenant-onedrive-migration-step3.md)
-- **Step 4:** [Pre-create users and groups](cross-tenant-onedrive-migration-step4.md)  
+- **Step 3:** [Verify trust is established](cross-tenant-onedrive-migration-step3.md)
+- **Step 4:** [Precreate users and groups](cross-tenant-onedrive-migration-step4.md)  
 - **Step 5:** [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)
 - **Step 6:** [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)
 - **Step 7:** [Post migration steps](cross-tenant-onedrive-migration-step7.md)
