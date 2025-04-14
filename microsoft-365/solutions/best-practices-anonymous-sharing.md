@@ -1,11 +1,11 @@
 ---
 title: Best practices for unauthenticated sharing
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 01/03/2024
 audience: ITPro
-ms.topic: article
+ms.topic: best-practice
 ms.service: o365-solutions
 ms.collection: 
 - highpri

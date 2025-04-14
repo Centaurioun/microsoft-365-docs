@@ -3,10 +3,11 @@ title: "Microsoft 365 endpoints"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/19/2023
+ms.date: 10/10/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -44,15 +45,16 @@ There are currently five different Microsoft 365 clouds. This table takes you to
 | [Microsoft 365 operated by 21Vianet endpoints](urls-and-ip-address-ranges-21vianet.md) | The endpoints for Microsoft 365 operated by 21Vianet, which is designed to meet the needs for Microsoft 365 in China. |
 |||
 
-To automate getting the latest list of endpoints for your Microsoft 365 cloud, see the [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
+To automate getting the latest list of endpoints for your Microsoft 365 cloud, see the [Microsoft 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
 
 For more endpoints, see these articles:
 
 - [Additional endpoints not included in the Web service](additional-office365-ip-addresses-and-urls.md)
+- [Unified cloud.microsoft domain for Microsoft 365 apps](cloud-microsoft-domain.md)
 - [Network requests in Office 2016 for Mac](network-requests-in-office-2016-for-mac.md)
 
 If you're a network equipment vendor, join the [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Enroll in the program to build Microsoft 365 network connectivity principles into your products and solutions.
 
 ## See also
 
-[Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
+[Microsoft 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)

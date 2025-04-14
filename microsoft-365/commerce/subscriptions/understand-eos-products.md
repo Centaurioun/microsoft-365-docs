@@ -5,23 +5,25 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: emmasheridan, nicholak
+ms.reviewer: mijeffer, nicholak
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
-- Tier2
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
 - commerce_subscriptions
 - AdminTemplateSet
+- campaignIDs-batch2
 search.appverid: MET150
 ROBOTS: NOIINDEX, NOFOLLOW
 description: "Learn about end-of-sale products in the Microsoft 365 admin center."
-ms.date: 01/03/2024
+ms.date: 12/05/2024
 ---
 
 # Understand end-of-sale products in the Microsoft 365 admin center

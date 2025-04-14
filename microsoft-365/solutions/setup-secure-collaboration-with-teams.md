@@ -1,11 +1,11 @@
 ---
 title: Set up secure file and document sharing and collaboration with Teams in Microsoft 365
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 12/04/2023
 ms.audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
@@ -31,7 +31,7 @@ This guidance includes components to help you:
 - Deploy Teams with the right level of protection for each project
 - Configure external sharing with appropriate security settings for each project
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=22bcbb04-69a4-4dac-8f48-a0511cbcb384]
 
 If versatile and easy-to-use file collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing files too difficult, they could revert to using consumer products that aren't governed by IT. This can pose an even greater risk.
 
@@ -66,7 +66,7 @@ To configure secure collaboration, use these Microsoft 365 capabilities and feat
 |---|---|---|
 |Microsoft Defender for Office 365|Safe Attachments for SharePoint, OneDrive and Microsoft Teams; Safe Documents; Safe Links for Teams|Microsoft 365 E1, E3 and E5|
 |SharePoint|Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings|Microsoft 365 E1, E3 and E5|
-|Microsoft Teams|Guest access, private teams, private channels, shared channels|Microsoft 365 E1, E3 and E5|
+|Microsoft Teams|Guest access, private teams, private channels, shared channels|Microsoft 365 E3 and E5 with a Microsoft Teams Enterprise license|
 |Microsoft Purview|Sensitivity labels|Microsoft 365 E3 and E5|
 |Microsoft Syntex - SharePoint Advanced Management|Site access restrictions, conditional access policies for sites, default sensitivity labels for libraries|Microsoft Syntex - SharePoint Advanced Management|
 
