@@ -57,7 +57,7 @@ Here's a breakdown for the device details available to you.
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Basic Mobility and Security PowerShell parameters.":::
 
 > [!NOTE]
-> The commands and scripts that follow also return details about any devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
+> The commands and scripts that follow also return details about any devices managed by [Microsoft Intune](https://www.microsoft.com/security/business/Microsoft-Intune).
 
 Here are a few things you need to set up to run the commands and scripts that follow:
 
