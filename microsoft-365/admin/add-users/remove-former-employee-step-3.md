@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/21/2023
+ms.date: 01/06/2025
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -33,7 +33,7 @@ If your former employee had an organization phone, you can use the <a href="http
 
 ## Wipe mobile device using the Exchange admin center
 
-1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">Mailboxes</a>.
+1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2183135" target="_blank">Mailboxes</a>.
 1. Select the user, and under **Email apps & mobile devices**, select **Manage mobile devices**.
 1. On the **Mobile Device Details** page, under **Mobile devices**, select the mobile device, select **Wipe company data**![Wipe Device.](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), and then select **Block access**.
 1. Select **Save**.
