@@ -81,7 +81,7 @@ If you have an MOSA billing account type, the option to receive your invoice as 
 > [!NOTE]
 > Billing admins can also do the following steps.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212 target="_blank">Billing notifications</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 1. Under **Billing notification settings**, select **Edit notification settings**.
 1. In the **Billing notification settings** pane, under **Invoice PDF**, select the **Attach a PDF to your invoice emails** checkbox, then select **Save**.
 
