@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/08/2025
+ms.date: 04/14/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-enterprise
@@ -28,17 +28,17 @@ description: "Enable developers to view and use app analytics for company apps i
 
 # Enable developers to use app analytics in the Developer Portal for Teams
 
-We're introducing the new **Developer Portal for Teams** organizational setting in the Microsoft 365 admin center to allow enterprise app developers to view and use app analytics for company apps in the Developer Portal. Developer Portal is a tool for managing apps and agents built for Copilot and Microsoft 365 apps. By viewing custom app usage, enterprise developers can see the number of active users and get other insights. Admins can allow app usage for your custom apps to be shown in the Developer Portal.
+In the Microsoft 365 admin center, the **App usage for custom app** setting allows enterprise app developers to view and use app analytics for company apps in the Developer Portal. Developer Portal is a tool for managing apps and agents built for Copilot and Microsoft 365 apps. By viewing custom app usage, enterprise developers can see the number of active users and get other insights. Admins can allow app usage for your custom apps to be shown in the Developer Portal.
 
 :::image type="content" source="../../media/enable-dev-analytics/enable-dev-analytics.png" alt-text="Image of the UI for enabling dev analytics" lightbox="../../media/enable-dev-analytics/enable-dev-analytics.png":::
 
-To enable the setting, in the Microsoft 365 Admin Center, under **Org settings**, select **Developer Portal for Teams** and then enable the setting in the flyout pane as shown in the following image:
+To enable the setting, in the Microsoft 365 Admin Center, sign in with the **Teams admin** role, and under **Org settings**, select **Developer Portal for Teams** and then enable the setting in the flyout pane as shown in the following image:
 
 :::image type="content" source="../../media/enable-dev-analytics/enable-dev-analytics-flyout.png" alt-text="Image of the flyout pane where you can enable the setting":::
 
 ## How will this setting affect admins and their organization?
 
-When you enable this setting, enterprise developers are provided with better insights into the performance and user engagement of custom apps, helping them make informed decisions about app improvements. By default, this setting is disabled. Disabling this setting might prevent developers from accessing and understanding app usage and other insights, causing disruptive change to their workflow.
+By default, the **App usage for custom apps** setting is disabled. When you enable this setting, enterprise developers are provided with better insights into the performance and user engagement of custom apps, helping them make informed decisions about app improvements. If this setting is disabled, developers may be prevented from understanding app usage and other insights, causing disruptive change to their workflow.
 
 ## What actions are needed from admins?
 
