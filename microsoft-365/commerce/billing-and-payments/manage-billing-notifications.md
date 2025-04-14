@@ -52,13 +52,30 @@ You can choose to receive your organization's invoices as email attachments. How
 
 If you have an MCA billing account type, the option to receive your invoice as an attachment to your invoice notification emails is linked with your billing profile. To turn on the invoice email attachment setting for a specific billing profile, use the following steps.
 
-1. In the admin center, go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895"") page.
+1. In the admin center, go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895%22%22) page.
 1. On the **Overview** tab, select a billing account.
 1. On the billing account details page, select the **Billing profiles** tab. The tab lists all billing profiles associated with the selected billing account.
 1. Select a billing profile name to view its details page.
-1. In the **Invoice and Billing Notifications** section, select **Edit settings**.
-1. In the **Invoice email settings** pane, under **Get invoices in email attachments**, switch the toggle to **On**.
+1. In the **Invoice and Billing Notifications** section, select **Manage settings** under **Invoice and payment contact settings**.
+1. In the **Edit invoice and contacts settings** pane, under **Get invoices in email attachments**, switch the toggle to **On**.
 1. If needed, add any additional recipient email addresses, then select **Save Changes**.
+
+#### Manage accounts payable contacts
+
+If you have an MCA billing account type and the default payment instrument is check or wire transfer, at least one Accounts payable contact is required. This contact will receive copies of the invoice by email along with statements and payment inquiries.  These contacts are optional if default payment instrument is not check or wire transfer. 
+
+1. In the admin center, go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895%22%22) page.
+1. On the **Overview** tab, select a billing account.
+1. On the billing account details page, select the **Billing profiles** tab. The tab lists all billing profiles associated with the selected billing account.
+1. Select a billing profile name to view its details page.
+1. In the **Invoice and Billing Notifications** section, select **Manage settings** under **Invoice and payment contact settings**.
+1. Select **Add account payable contact** 
+
+1. Enter the required information and select **Save.** 
+
+1. The **Get invoices in email attachments** toggle will be on by default so contacts get copies of the invoice. 
+
+1. If needed, add any additional recipient email addresses, then select **Save Changes**. 
 
 ### Receive your invoice as an email attachment for MOSA billing account types
 
@@ -156,7 +173,7 @@ You can change the primary email address of other admins in your organization. H
 In addition to your Global and Billing admins, we send billing notifications to your organization's contact email address.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. Under **Organization contact receiving billing notifications**, select the organization contact.
+1. Under **Organization contact receiving billing notifications**, select the organization contact.
 1. In the organization details pane, type the email address that you want to use, then select **Save**.
 
 ## Related content
