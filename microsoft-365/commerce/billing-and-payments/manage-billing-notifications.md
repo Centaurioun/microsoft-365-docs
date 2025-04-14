@@ -62,7 +62,7 @@ If you have an MCA billing account type, the option to receive your invoice as a
 
 #### Manage accounts payable contacts
 
-If you have an MCA billing account type and the default payment instrument is check or wire transfer, at least one Accounts payable contact is required. This contact will receive copies of the invoice by email along with statements and payment inquiries.  These contacts are optional if default payment instrument is not check or wire transfer. 
+If you have an MCA billing account type and the default payment instrument is check or wire transfer, at least one Accounts payable contact is required. This contact will receive copies of the invoice by email along with statements and payment inquiries. You have full control to add, edit, and delete AP Contacts as needed. While the billing group owner, contributor, and invoice manager roles will continue to receive invoice-ready emails and access invoices in the portals, they will not receive statements and payment reminders. These contacts are optional if default payment instrument is not check or wire transfer.  
 
 1. In the admin center, go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895%22%22) page.
 1. On the **Overview** tab, select a billing account.
