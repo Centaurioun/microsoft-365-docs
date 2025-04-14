@@ -38,7 +38,7 @@ To establish trust, each SharePoint tenant administrator must run specific comma
 > Granting trust *doesn't* give the administrator any visibility, permission, or ability to collaborate between the source tenant and the target tenant.
 
 > [!IMPORTANT]
-> If you are Microsoft 365 Multi-Geo customer, you must establish trust between each geography involved in your migration project.
+> If you're a Microsoft 365 Multi-Geo customer, you must establish trust between each geography involved in your migration project.
 
 ## Before you begin
 
@@ -87,7 +87,7 @@ These commands send a request to the tenant with whom you want to establish trus
 
 The following screenshot is an example of the email sent to global admins:
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-trust-email.png" alt-text="A screenshot showing an xample of trust email from SharePoint Online to multiple test accounts.":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-trust-email.png" alt-text="A screenshot showing an xample of trust email from SharePoint to multiple test accounts.":::
 
 **Subject:**  SPO Tenant [https://a830edad9050849mnaus093022-my.sharepoint.com/] [setuporupdate] Organization Relation [Scenario=MnA, Role=Source] with us
 
