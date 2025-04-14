@@ -81,10 +81,10 @@ Any legal URL is accepted when creating your Identity Map from Source to Target 
 
 ## OneDrive account size limits
 
-Each OneDrive account can have a maximum of 5 TB of content or one million items.
+Each OneDrive account can have a maximum of 5 TB of content or 1 million items.
 
 > [!IMPORTANT]
-> The one million item limit can be any *item*, including files (and versions), folders, and list line entries if it's a list or library.
+> The 1 million item limit can be any *item*, including files (and versions), folders, and list line entries if it's a list or library.
 >
 >If you attempt to migrate any OneDrive site that exceeds the five-terabyte quota, the transfer fails.
 
