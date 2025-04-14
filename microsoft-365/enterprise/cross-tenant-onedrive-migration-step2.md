@@ -18,7 +18,7 @@ description: "Step 2 of the OneDrive Cross-tenant migration feature"
 ---
 # Step 2: Establishing trust between the source and target tenants
 
-This is Step 2 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
+This article is Step 2 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
 
 - Step 1: [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md)
 - **Step 2: [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md)**
@@ -80,12 +80,12 @@ These commands send a request to the tenant with whom you want to establish trus
 
 |Parameter                 |Definition |
 |--------------------------|-----------|
-|PartnerRole               |Roles of the partner tenant you're establishing trust with.  Use *source* if partner tenant is the source of the OneDrive migrations, and *target* if the partner tenant is the Destination. |
+|PartnerRole               |Roles of the partner tenant you're establishing trust with. Use *source* if partner tenant is the source of the OneDrive migrations, and *target* if the partner tenant is the Destination. |
 |PartnerCrossTenantHostURL |The cross-tenant host URL of the partner tenant. You can determine the URL by running: *Get-SPOCrossTenantHostURL* on each of the tenants.|
 
 ## Sample trust email
 
-The following in an example of the email sent to global admins:
+The following screenshot is an example of the email sent to global admins:
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-trust-email.png" alt-text="A screenshot showing an xample of trust email from SharePoint Online to multiple test accounts.":::
 
