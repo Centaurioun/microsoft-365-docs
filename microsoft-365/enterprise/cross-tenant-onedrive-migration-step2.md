@@ -28,7 +28,7 @@ This article is Step 2 in a solution designed to complete a Cross-tenant OneDriv
 - Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)
 - Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
 
-After connecting to the source and target tenant, the next step in performing a cross-tenant OneDrive migration is establishing trust between the tenants.
+After you connect to the source and target tenant, the next step in performing a cross-tenant OneDrive migration is establishing trust between the tenants.
 
 To establish trust, each SharePoint tenant administrator must run specific commands on both source and target tenants. Once the trust is requested, the administrator of the target tenant receives an email informing them that another tenant is trying to establish a trust relationship.
 
