@@ -46,11 +46,11 @@ To use the reporting features described in this article, you need to sign into d
 
 | Reporting option | Required roles & access |
 |------------------|-------------------------|
-| **[Microsoft 365 admin center](https://admin.microsoft.com)** | - **Microsoft 365 Global Administrator**: Assigns the **AI Administrator** role <br/> - **AI Administrator**: Accesses the Copilot reports |
-| **Copilot Analytics, powered by Viva Insights** | - **Microsoft 365 Global Administrator**: Enables the Copilot Dashboard and delegates access to the dashboard and organizational insights. Senior leaders [might automatically get access](/viva/insights/org-team-insights). <br/>- **Microsoft 365 Global Administrator**: Sets up Viva Insights and assigns the **Insights Analyst** and **Insights Administrator** roles. <br/>- **Insights Analyst**: Uses the Advanced Insights Analyst Workbench to build Copilot Power BI Templates. <br/> - **Insights Administrator**: Manages settings in the Advanced Insights Analyst Workbench, like security, privacy, and uploading organization data files. ?? |
+| **[Microsoft 365 admin center](https://admin.microsoft.com)** | - **Microsoft 365 Global Administrator**: Assigns the **AI Administrator** role. <br/> - **AI Administrator**: Accesses the Copilot reports. |
+| **Copilot Analytics, powered by Viva Insights** | - **Microsoft 365 Global Administrator**: Enables the Copilot Dashboard and delegates access to the dashboard and organizational insights. Senior leaders [might automatically get access](/viva/insights/org-team-insights/copilot-dashboard#how-automatic-access-to-the-copilot-dashboard-is-determined). <br/>- **Microsoft 365 Global Administrator**: Sets up Viva Insights and assigns the **Insights Analyst** and **Insights Administrator** roles. <br/>- **Insights Analyst**: Uses the Advanced Insights Analyst Workbench to build Copilot Power BI Templates. <br/> - **Insights Administrator**: Manages settings in the Advanced Insights Analyst Workbench, like security, privacy, and uploading organization data files. ?? |
 | **[Microsoft Purview portal](https://purview.microsoft.com)** | - **Audit Reader**: Searches the audit logs. |
 | **[Power Platform admin center](https://admin.powerplatform.microsoft.com)** | - **System Administrator**: Assigns the **Copilot Studio authors** role. <br/> - **License admin** in [Microsoft 365 admin center](https://admin.microsoft.com): Assigns Copilot Studio licenses. |
-| **[Copilot Studio](https://copilotstudio.microsoft.com)** | - **Copilot Studio Author**: Accesses analytics for agents they create and the Center of Excellence. |
+| **[Copilot Studio](https://copilotstudio.microsoft.com)** | - **Copilot Studio Author**: Accesses analytics for agents they create and access the Center of Excellence. |
 
 ## Microsoft 365 admin center reports
 
@@ -64,7 +64,7 @@ The Microsoft 365 admin center provides Copilot readiness and usage reports:
 
 - **[Usage report](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage)** - This report shows how Microsoft 365 Copilot is used in your organization, including:
 
-  - **Adoption metrics**: Shows the number of users who have accessed Copilot
+  - **Adoption metrics**: Shows the number of users who accessed Copilot
   - **User activity**: Displays active usage trends over time
   - **App integration**: Reveals the Microsoft 365 applications that are being used with Copilot
   - **Top agents**: Identifies the most frequently used Copilot agents
@@ -166,7 +166,7 @@ Microsoft Purview provides detailed audit logs of all Copilot activities, includ
 
 1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com) with a role that can search audit logs, like **Audit Reader**.
 
-    For a list of roles and what they can do, see [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview](/defender-office-365/scc-permissions).
+    There are other roles that can also search the audit logs. For a list of roles and what they can do, see [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview](/defender-office-365/scc-permissions).
 
 1. Select **Solutions** > **Audit**.
 
@@ -182,7 +182,7 @@ To learn more, see:
 - [Microsoft Purview audit logs for Copilot and AI activities](/purview/audit-copilot).
 - [Considerations for Data Security Posture Management (DSPM) for AI & data security and compliance protections for Copilot](/purview/ai-microsoft-purview-considerations)
 
-## Power Platform and Copilot Studio Analytics
+## Power Platform reports and Copilot Studio Analytics
 
 For organizations using Copilot agents, there are some options for specialized analytics:
 
@@ -217,7 +217,7 @@ To view the analytics for consumption-based agents, use the Power Platform admin
 
     To learn more, see [Assign a security role to a user](/power-platform/admin/assign-security-roles).
 
-    > [TIP]
+    > [!TIP]
     > Users with the **Power Platform Administrators** role can view the analytics for all agents in the tenant. To add users to this role, use the [Microsoft Azure portal](https://portal.azure.com) > **Microsoft Entra ID** > **Manage** > **Roles and administrators**.
 
 2. The **Copilot Studio authors** can start using the reports:
