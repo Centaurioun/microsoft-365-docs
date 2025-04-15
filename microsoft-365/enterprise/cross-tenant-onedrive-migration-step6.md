@@ -58,7 +58,7 @@ Example:
 Start-SPOCrossTenantUserContentMove -SourceUserPrincipalName DiegoS@M365x016651.OnMicrosoft.com -TargetUserPrincipalName Test-Diego@M365x946316.OnMicrosoft.com -TargetCrossTenantHostUrl https://m365x946316-my.sharepoint.com/ 
 ```
 
-To Schedule a migration for a later time, you can use and append the above command with the one of the following parameters. 
+To Schedule a migration for a later time, you can use and append the above command with the one of the following parameters.
 
 These commands can be useful when planning bulk batches of OneDrive migrations. You can queue/migrate up to 4,000 OneDrive migrations per batch. If your user count exceeds 4,000, create separate batches, and schedule them to run once the current batch is close to completion.
 
@@ -69,9 +69,9 @@ These commands can be useful when planning bulk batches of OneDrive migrations. 
 
 ## OneDrive status premigration
 
-Before you start the migration, the users current source OneDrive status is similar to the example below. This example is from the users source tenant, showing their current files and folders.
+Before you start the migration, the users' current source OneDrive status is similar to the following screenshot. This example is from the users' source tenant, showing their current files and folders.
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="pre-migration status":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="A screenshot showing a pre-migration status. There are files and folders displayed in a window, and a red box is drawn around the address of the OneDrive.":::
 
 ## Cancelling a OneDrive migration
 
