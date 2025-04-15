@@ -34,7 +34,7 @@ This article is Step 6 in a solution designed to complete a Cross-tenant OneDriv
 
 Now you're ready to start your OneDrive migration. Before starting any cross-tenant migration, do the following steps.
 
-1. Ensure you have verified the compatibility status. If you see a status of either **Compatible** or **Warning** on your source tenant, you can continue. Run:
+1. Make sure you verified the compatibility status. If you see a status of either **Compatible** or **Warning** on your source tenant, you can continue. Run:
 
    ```powershell
    Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
@@ -58,24 +58,24 @@ Example:
 Start-SPOCrossTenantUserContentMove -SourceUserPrincipalName DiegoS@M365x016651.OnMicrosoft.com -TargetUserPrincipalName Test-Diego@M365x946316.OnMicrosoft.com -TargetCrossTenantHostUrl https://m365x946316-my.sharepoint.com/ 
 ```
 
-To Schedule a migration for a later time, you can use and append the above command with the one of the following parameters.
-
-These commands can be useful when planning bulk batches of OneDrive migrations. You can queue/migrate up to 4,000 OneDrive migrations per batch. If your user count exceeds 4,000, create separate batches, and schedule them to run once the current batch is close to completion.
+To Schedule a migration for a later time, you can use and append the previous command with the one of the following parameters:
 
 |Parameter              |Description |
 |-----------------------|------------|
 |PreferredMoveBeginDate |The migration likely begins at this specified time. Time must be specified in Coordinated Universal Time (UTC). |
 |PreferredMoveEndDate   |The migration likely completes by this specified time, on a best effort basis. Time must be specified in Coordinated Universal Time (UTC). |
 
+These commands can be useful when planning bulk batches of OneDrive migrations. You can queue/migrate up to 4,000 OneDrive migrations per batch. If your user count exceeds 4,000, create separate batches, and schedule them to run once the current batch is close to completion.
+
 ## OneDrive status premigration
 
 Before you start the migration, the users' current source OneDrive status is similar to the following screenshot. This example is from the users' source tenant, showing their current files and folders.
 
-:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="A screenshot showing a pre-migration status. There are files and folders displayed in a window, and a red box is drawn around the address of the OneDrive.":::
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="A screenshot showing a premigration status. There are files and folders displayed in a window, and a red box is drawn around the address of the OneDrive.":::
 
 ## Cancelling a OneDrive migration
 
-You can stop the cross-tenant migration of a user's OneDrive by using the following command, provided the migration doesn't have a status of *In Progress*, *Rescheduled* or *Success*.
+You can stop the cross-tenant migration of a user's OneDrive by using the following command, provided the migration doesn't have a status of *In Progress*, *Rescheduled*, or *Success*.
 
 ```powershell
 Stop-SPOCrossTenantUserContentMove – SourceUserPrincipalName [UPN name of user who you wish to stop]
@@ -139,18 +139,18 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL https://ttestt
 
 |Status         |Description |
 |---------------|------------|
-|NotStarted     |The migration hasn't yet started.|
+|NotStarted     |The migration isn't started.|
 |Scheduled      |The migration is now in the queue and is scheduled to run when a slot becomes available.|
 |ReadytoTrigger |The Migration is in its preflight stage. The Migration starts shortly. |
 |InProgress     |The migration is in progress in one of the following states: </br>- Validation </br>- Backup </br>- Restore </br>- Cleanup |
 |Success        |The Migration completed successfully. |
-|Rescheduled    |The migration may not have completed and has been requeued for another pass. |
+|Rescheduled    |The migration may not be completed and is requeued for another pass. |
 |Failed         |The migration failed to complete. |
 
 ## Post-migration status checks
 
 **Target tenant**: After the migration successfully completes, check the status of the user on the target tenant by logging into their new OneDrive account.
 
-**Source tenant**: Since the user has successfully migrated to the target tenant, they no longer have an active OneDrive account on the source.
+**Source tenant**: Since the user was successfully migrated to the target tenant, they no longer have an active OneDrive account on the source.
 
 ## Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
