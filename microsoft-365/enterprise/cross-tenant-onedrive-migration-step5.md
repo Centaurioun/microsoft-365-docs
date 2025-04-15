@@ -149,7 +149,7 @@ Add-SPOTenantIdentityMap -IdentityMapPath <identitymap.csv>
 
 Uploading any new identity map overwrites the current one. Make sure that any revision or addition includes ALL users and groups for the full migration. Your identity map should always include everyone you're wanting to migrate.
 
-To look at the mapping entries in the identity mapping file for a particular user, use the command *Get-SPOTenantIdentityMappingUser* with Field as *SourceUserKey* and Value as the UPN of the user you're moving.
+You can look at the mapping entries in the identity mapping file for a particular user. Use the command *Get-SPOTenantIdentityMappingUser,* with Field as *SourceUserKey* and Value as the UPN of the user you're moving.
 
 **Example:**
 
