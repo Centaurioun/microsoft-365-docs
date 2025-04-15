@@ -122,7 +122,7 @@ To obtain Source Tenant Company ID:
 ### To obtain target group object ID:
 
 1. Sign in to Target tenant as Admin to [Azure Groups](https://ms.portal.azure.com)
-2. Search for your required group(s).
+2. Search for your required groups.
 3. Select the required group instance and then **Copy to clipboard**. Paste this value in the targetGroupObjectId column of your mapping CSV file.
 4. If you have multiple groups to map, then repeat this process to obtain those specific targetGroupObjectIds.
 5. For the GroupName, use the same ID as the *TargetGroupObjectId* you obtained.
