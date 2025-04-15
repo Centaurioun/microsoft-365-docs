@@ -24,7 +24,7 @@ description: "Set how long user's session lasts in Microsoft 365 before they're 
 
 Use idle session timeout to configure a policy on how long users are inactive in your organization before they're signed out of Microsoft 365 web apps. This helps protect sensitive company data and adds another layer of security for end users who work on noncompany or shared devices.
 
-When a user reaches the idle timeout session that has been set, they get a notification that they're about to be signed out. They have to select to stay signed in or they are automatically signed out of all Microsoft 365 web apps.
+When a user reaches the set idle timeout session, they get a notification that they're about to be signed out. They have to select to stay signed in or they're automatically signed out of all Microsoft 365 web apps.
 
 > [!IMPORTANT]
 > Idle session timeout doesn't affect your Microsoft 365 desktop and mobile apps.
@@ -38,13 +38,13 @@ You must be a member of the Security admin, Application admin, or Cloud Applicat
 2. On the **Idle Session Timeout**, select the toggle to turn it on. You can choose a default setting or choose your own custom time. It takes a few minutes before idle session is turned on in your organization.
 
 > [!NOTE]
-> If you set up idle session timeout policies for [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) and [SharePoint](/sharepoint/sign-out-inactive-users), turning on idle session timeout in the Microsoft 365 admin center will override the Outlook web app and SharePoint settings.
+> If you set up idle session timeout policies for [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) and [SharePoint](/sharepoint/sign-out-inactive-users), turning on idle session timeout in the Microsoft 365 admin center overrides the Outlook web app and SharePoint settings.
 
 Idle session timeout is one of the many security measures in Microsoft 365. To learn about other security tasks in Microsoft 365, see [Top security tasks in Microsoft 365](../../security/top-security-tasks-for-remote-work.md).  
 
 ## What users see
 
-When a user is inactive in Microsoft 365 web apps for the time period you chose, they see the following prompt. They have to select **Stay signed in** or they are signed out.
+When a user is inactive in Microsoft 365 web apps for the time period you chose, they see the following prompt. They have to select **Stay signed in** or they're signed out.
 
 :::image type="content" source="../../media/idle-session-timeout.png" lightbox="../../media/idle-session-timeout.png" alt-text="Screenshot: Prompt letting you know that your session is about to expire. Select Stay signed in so you don't get signed out of Microsoft 365 web apps":::
 
@@ -66,7 +66,7 @@ When a user is inactive in Microsoft 365 web apps for the time period you chose,
 
     - Microsoft 365 Admin Center
 
-    - M365 Defender Portal
+    - Microsoft 365 Defender Portal
 
     - Microsoft Purview portal
     
@@ -76,7 +76,7 @@ When a user is inactive in Microsoft 365 web apps for the time period you chose,
 
 - Once you turn on idle session timeout, it applies to your entire organization and can't be scoped to specific users, organizational units, or groups. Use [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/) policies for different users and groups to access SharePoint and Exchange Online.
 
-- Users must be inactive on all Microsoft 365 web app tabs for the configured duration. For example, if a user is active on a tab in Outlook web app, while inactive on another tab in SharePoint, they are considered active and won't be signed out.  
+- Users must be inactive on all Microsoft 365 web app tabs for the configured duration. For example, if a user is active on a tab in Outlook web app, while inactive on another tab in SharePoint, they're considered active and aren't signed out.  
 
 - Users don’t get signed out in these cases:
     - If they get single sign-on (SSO) into the web app from the device joined account.
@@ -137,7 +137,7 @@ The following Microsoft 365 web apps are supported.
 
 If you're working on a different web app with the same account, the activity in that web app isn't applied to the idle session timeout.
 
-### I'm active in Azure portal, but I'm logged out of other M365 Apps for inactivity. Why am I logged out?
+### I'm active in Azure portal, but I'm logged out of other Microsoft 365 Apps for inactivity. Why am I logged out?
 
 Azure portal supports a similar inactivity feature, but is tracked in the Azure portal. 
 
