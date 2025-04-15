@@ -35,7 +35,7 @@ In this step of the cross-tenant migration process, you're going to create a sin
 
 We recommend that you take the time to verify your mappings, ensuring they're accurate before starting any migrations to the target tenant.
 
-There's a one-to-one relationship in the identity mapping file. You can't map the same user to multiple users in the target tenant. For example, if you have instances where the admin is the owner of multiple OneDrive accounts, the ownership must be changed to match the corresponding user you wish to migrate from Source to Target. If you don't, those account files don't migrate.
+There's a one-to-one relationship in the identity mapping file. You can't map the same user to multiple users in the target tenant. For example, you may have instances where the admin is the owner of multiple OneDrive accounts. In this circumstance, the ownership must be changed to match the corresponding user you wish to migrate from Source to Target. If you don't, those account files don't migrate.
 
 **Example:** In this example, the admin owns multiple OneDrive accounts.
 
