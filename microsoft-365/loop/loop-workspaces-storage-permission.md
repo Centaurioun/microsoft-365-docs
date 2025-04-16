@@ -53,7 +53,7 @@ SharePoint Embedded also offers a platform for developers to build their own app
 
 ## Storage limits
 
-Loop workspaces and Copilot Pages have a maximum size of 25TB. This limit can't be increased or decreased. Learn more about [SharePoint Embedded container limits](/sharepoint/dev/embedded/concepts/app-concepts/limits-calling).
+Loop workspaces and Copilot Pages have a maximum size of 25 TB. This limit can't be increased or decreased. Learn more about [SharePoint Embedded container limits](/sharepoint/dev/embedded/concepts/app-concepts/limits-calling).
 
 ## Content permissions mechanism
 
@@ -88,11 +88,11 @@ Once conditions are met, share with guests by:
 1. Enter the guest's email address.
 1. Select **Send** or **Invite**.
 
-Sharing with external participants is done through "Share with specific people" links. You must designate the guest explicitly in the share dialog. External participants cannot be added to Company-wide share links.
+Sharing with external participants is done through "Share with specific people" links. You must designate the guest explicitly in the share dialog. External participants can't be added to Company-wide share links.
 
 When a guest accesses the Loop workspace, page, or component from the link from your organization, they sign in and access the shared content using their guest account. They'll need to utilize the share link again to access the Loop workspace, page, or component in the future, as the content from your organization isn't accessible via their standard account.
 
-### Additional sharing controls
+### More sharing controls
 
 If you would like to disable guest sharing of Loop workspaces independently of your organization-level OneDrive and SharePoint sharing setting, see [application external sharing override](/sharepoint/dev/embedded/concepts/app-concepts/sharing-and-perm#application-external-sharing-override) and the OwningApplicationID `a187e399-0c36-4b98-8f04-1edc167a0996`.
 
@@ -100,11 +100,11 @@ Unlike SharePoint sites, there's no admin setting to configure guest sharing of 
 
 ## Workspace membership and Microsoft 365 groups
 
-This section does not apply to My workspace or Copilot Pages, which are personal, have only one member, and are not shared.
+This section doesn't apply to My workspace or Copilot Pages, which are personal, have only one member, and aren't shared.
 
 Loop workspaces are managed within the Loop app by the workspace owners. Integration with Microsoft 365 groups is planned (Microsoft Roadmap ID 422728).
 
-Owners can assign existing and new members as additional owners. If all the owners leave the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted. Administrators can assign new owners to ownerless workspaces.
+Owners can assign more members as owners. If all the owners leave the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted. Administrators can assign new owners to ownerless workspaces.
 
 IT admins can use SharePoint Admin Center and PowerShell to find ownerless workspaces. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
@@ -113,7 +113,7 @@ IT admins can use SharePoint Admin Center and PowerShell to find ownerless works
 ### Shared Workspaces
 
 - Shared workspaces are permissioned with a roster. If all the owners leave the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted.
-- Deleting a workspace requires that you are an owner. If all the owners left the company, members can't delete the workspace until an IT administrator adds new owners.
+- You must be an owner to delete a workspace. If all the owners left the company, members can't delete the workspace until an IT administrator adds new owners.
 
 ### Personal Workspaces
 
@@ -122,25 +122,25 @@ IT admins can use SharePoint Admin Center and PowerShell to find ownerless works
 
 #### Copilot Pages
 
-- Copilot Pages are stored in a user-owned SharePoint Embedded container, created by Copilot, and is lifecycle managed with the user account, deleted when the user account is deleted from the organization.
+- Copilot Pages are stored in a user-owned SharePoint Embedded container, created by Copilot. The container is lifecycle managed with the user account, deleted when the user account is deleted from the organization.
 - Copilot Pages can't be permanently reassigned to a new owner. It follows the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
 - Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
 
 > [!NOTE]
-> A feature for IT admins to assign additional temporary custodians during the cleanup period of user-owned workspaces to make copies of content isn't yet available. Microsoft Roadmap ID 421612 addresses this.
+> A feature for IT admins to assign temporary custodians during the cleanup period of user-owned workspaces isn't yet available. This capability is planned (Microsoft Roadmap ID 421612).
 
 #### My workspace
 
-- My workspace is stored in a user-owned SharePoint Embedded container, created by Copilot, and is lifecycle managed with the user account, deleted when the user account is deleted from the organization.
+- My workspace is stored in a user-owned SharePoint Embedded container, created by Loop. The container is lifecycle managed with the user account, deleted when the user account is deleted from the organization.
 - My workspace can't be permanently reassigned to a new owner. It follows the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
 - Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
 
 #### Ideas
 
-- Ideas has been deprecated, is no longer created by default, and replaced with the My workspace personal workspace.
-- Ideas was the first default workspace, and was tenant-owned, permissioned with a single-person roster.
-- The Ideas workspace is not deleted by the Loop app, a user or an admin must delete it if desired.
-- When a user leaves the company, if they have not added multiple owners to their Ideas workspace, it becomes ownerless, remains in the tenant, and isn't automatically deleted.
+- The Ideas workspace is deprecated, no longer created by default, and replaced with the My workspace personal workspace.
+- Ideas was the first default workspace, was tenant-owned, permissioned with a single-person roster.
+- The Ideas workspace isn't deleted by the Loop app, a user or an admin must delete it if desired.
+- When a user leaves the company, if they haven't added multiple owners to their Ideas workspace, the Ideas workspaces becomes ownerless, remains in the tenant, and isn't automatically deleted.
 
 ### Loop components created in Microsoft 365 outside of the Loop app or Copilot Pages
 
