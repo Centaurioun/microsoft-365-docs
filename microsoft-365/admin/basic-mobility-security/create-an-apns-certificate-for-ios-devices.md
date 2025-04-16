@@ -6,7 +6,7 @@ author: kwekuako
 manager: scotv
 ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
@@ -54,4 +54,4 @@ To manage iOS devices like iPad and iPhones, you need to create an Apple Push No
 
 1. Select **Upload**.
 
-To complete setup, go back to [Basic Mobility and Security](https://compliance.microsoft.com/basicmobilityandsecurity).
+To complete setup, go back to [Basic Mobility and Security](https://purview.microsoft.com/basicmobilityandsecurity).

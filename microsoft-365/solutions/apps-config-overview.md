@@ -4,7 +4,7 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: solution-overview
+ms.topic: how-to
 ms.date: 03/29/2024
 description: Configure apps using Microsoft Intune.
 ms.service: o365-solutions

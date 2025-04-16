@@ -7,7 +7,7 @@ author: efrene
 manager: scotv
 ms.date: 09/16/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -103,7 +103,7 @@ Global administrators can revert this change for their tenant and show identifia
   
 3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.  
   
-It takes a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.   
+It takes a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft Purview portal audit log.   
 
 ## Related content
 

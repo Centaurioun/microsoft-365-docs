@@ -1,6 +1,6 @@
 ---
-ms.date: 10/16/2024
-title: "Summary of governance, lifecycle, and compliance capabilities for Loop experiences"
+ms.date: 03/06/2025
+title: "Summary of governance, lifecycle, and compliance capabilities for Copilot Pages and Loop experiences"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
 author: jenzamora
@@ -21,10 +21,10 @@ ms.collection:
 search.appverid:
 - SPO160
 - MET150
-description: "Learn about the governance, data lifecycle management, and compliance capabilities for Loop experiences."
+description: "Learn about the governance, data lifecycle management, and compliance capabilities for Copilot Pages and Loop experiences."
 ---
 
-# Summary of governance, lifecycle, and compliance capabilities for Loop
+# Summary of governance, lifecycle, and compliance capabilities for Copilot Pages and Loop
 
 As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on the latest governance, data lifecycle, and compliance posture for the software solutions being used in your organization. This article details the capabilities available and not available yet for [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop).
 
@@ -58,7 +58,8 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 |Legal Hold  |**Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).|**Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).|
 |***Microsoft 365 retention and deletion***|---|---|
 |Retention policies  |**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management are enforced for all .loop files.|**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all .loop files or alternatively can be configured per Loop workspace *.|
-|Retention labels  |**[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels.| **[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels. <br><br> **Not Yet Available**: <br> Records management isn't yet available to view or apply on a Loop component or page.|
+|Retention labels  |**[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels.| **[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for .loop files by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in SharePoint and [automatically applying](/purview/apply-retention-labels-automatically) the labels. There's limited support for [manually applying retention labels in the Loop app and to Loop components in apps](/purview/create-apply-retention-labels?tabs=loop%2Cdefault-label-for-sharepoint#manually-apply-retention-labels). <br><br> **Not Yet Available**: <br>Retention labels cannot be viewed or applied directly from a Loop component outside the Loop app. Instead, the user must navigate to the Loop component within the Loop app itself to view or apply a retention label on a Loop component or page. Retention labels that mark the content as a record or regulatory record can't be manually applied in the Loop app and if content is automatically labeled as a record, locking and unlocking this record is not yet available.
+|
 |***Information Protection***|---|---|
 |Sensitivity labels  |**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components.|**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components, and admin configurable for individual Loop workspaces via PowerShell and rolling out in the Loop app for end users.|
 |Data Loss Prevention  |**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|
@@ -84,7 +85,7 @@ The following sections detail capabilities that are **not yet available** for Mi
 - When an **admin deletes** a Loop workspace, it **will not be removed from the user's view** of Loop workspaces. When users click on the deleted Loop workspace, it displays an error. Microsoft Roadmap ID 421613 addresses this.
 - When an **admin modifies the list of owners or members** of a Loop workspace through the SharePoint Admin Center or via PowerShell, the **changes won't be visible to the users within that Loop workspace**. Changes to the workspace membership are only updated in the user's view of the Loop app if they're made directly within the Loop app itself. Microsoft Roadmap ID 421613 addresses this.
 - All shared Loop workspaces, including Ideas, are created as tenant-owned, in the tenant default geo like SharePoint Communication sites, not in the creator's preferred data location. Copilot Pages is created as user-owned, in the geo that matches the user's preferred data location. See [storage management after user departure](/microsoft-365/loop/loop-workspaces-storage-permission#storage-management-after-user-departure) for more information on managing workspaces. Microsoft Roadmap ID 422729 addresses Ideas functioning as a shared Loop workspace.
-- **Individual controls for guest or external sharing** of a specific Loop workspace isn't available. Microsoft Roadmap ID 421614 addresses this.
+- **Individual controls for guest or external sharing** of a specific Loop workspace isn't available.
 
 ### eDiscovery capabilities not yet available
 
@@ -92,7 +93,8 @@ The following sections detail capabilities that are **not yet available** for Mi
 
 ### Microsoft 365 retention and deletion capabilities not available
 
-- Retention labels can be applied to Loop components and pages by opening them in a browser tab on loop.cloud.microsoft. However, using records management (such as a record or regulatory record) isn't yet available to view or apply on a component or page.
+- Retention labels cannot be viewed or applied directly from a Loop component outside the Loop app. Instead, the user must navigate to the Loop component within the Loop app itself to view or apply a retention label on a Loop component or page.
+- Retention labels that mark the content as a record or regulatory record can't be manually applied in the Loop app and if content is automatically labeled as a record, locking and unlocking this record is not yet available.
 - For clarification only, not a limitation: retention labels have never been applied to containers like SharePoint sites or Loop workspaces; instead, use retention policies for these containers. See [retention](/purview/retention) to learn more.
 
 ## Managing Loop in your organization

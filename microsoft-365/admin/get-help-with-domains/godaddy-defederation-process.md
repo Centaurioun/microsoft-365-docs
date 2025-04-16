@@ -4,10 +4,10 @@ description: "Learn how to defederate Microsoft 365 email from Godaddy."
 author: kelleyvice-msft
 ms.author: kvice
 manager: scotv
-ms.date: 02/20/2025  
+ms.date: 03/18/2025
 ms.topic: article
-ms.service: microsoft-365-enterprise
-ms.subservice: administration
+ms.service: microsoft-365-business
+ms.subservice: m365-domains
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -26,7 +26,9 @@ ai-usage: ai-assisted
 
 # Defederation Process for Microsoft 365 Admins Using GoDaddy
 
-As a Microsoft 365 admin, you might need to defederate your Microsoft 365 account from GoDaddy. This process involves several steps that must be followed carefully to avoid issues with services like SharePoint and other Microsoft 365 applications.
+As a Microsoft 365 admin, you might need to defederate your Microsoft 365 account from GoDaddy. This process involves several steps that must be followed carefully to avoid issues with signing in to services like SharePoint and other Microsoft 365 applications.
+
+[!INCLUDE [How to get tech support for SMB](../../includes/smb-how-to-get-tech-support.md)]
 
 ### Defederation Process Overview
 
@@ -36,7 +38,7 @@ To defederate your Microsoft 365 account from GoDaddy, refer to the official GoD
 
 ### Disclaimer
 
-Microsoft and GoDaddy don't support the use of unauthorized third-party sites or steps to complete the defederation process. Using unofficial resources can lead to issues with Microsoft 365 services such as SharePoint, and might cause further complications.
+Microsoft and GoDaddy don't support the use of unauthorized third-party sites or steps to complete the defederation process. Using unofficial resources can affect your ability to sign in to Microsoft 365 services such as SharePoint or your mailbox, and might cause further complications.
 
 ### Additional Support
 

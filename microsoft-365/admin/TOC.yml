@@ -274,6 +274,8 @@ items:
            items:
             - name: Manage agents for Copilot
               href: manage/manage-copilot-agents-integrated-apps.md
+            - name: Manage shared agents
+              href: manage/manage-shared-agents.md
             - name: Microsoft Graph connectors for Microsoft Search
               href: /microsoftsearch/connectors-overview
          - name: Monitor Microsoft 365 activity by using reports
@@ -298,6 +300,10 @@ items:
               href: activity-reports/email-activity-ww.md
             - name: Email apps usage
               href: activity-reports/email-apps-usage-ww.md
+            - name: Enable app analytics in the Developer Portal
+              href: manage/enable-dev-analytics.md
+            - name: Exchange Web Services usage
+              href: activity-reports/ews-usage.md
             - name: Forms activity
               href: activity-reports/forms-activity-ww.md
             - name: Mailbox usage
@@ -555,7 +561,7 @@ items:
     - name: Contact support
       href: get-help-support.md
     - name: Find support phone numbers
-      href: support-contact-info.md
+      href: https://support.microsoft.com/topic/customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2#ID0EBBD=signinorgid
     - name: Navigation guide
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
       
