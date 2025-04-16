@@ -19,6 +19,9 @@ description: Learn how to organize and automate columns in a document library in
 
 # Organize and automate columns in a SharePoint document library
 
+> [!NOTE]
+> This article is in development.
+
 <!---
 Having useful columns and metadata in SharePoint document libraries enhances searchability, organization, and automation. It allows users to quickly find documents, group and filter files dynamically, and trigger workflows based on specific attributes. Additionally, it improves content discoverability and user experience by providing structured information and enabling efficient management of document libraries.
 --->
@@ -27,7 +30,7 @@ This feature integrates with the autofill columns service to streamline your wor
 
 ## Suggest and create columns
 
-1. In the lower-right corner of your document library, select **FAB** icon.
+1. In the lower-right corner of your document library, select the **FAB-name** icon.
 
 2. From the list of actions, select **Organize this library** to launch the process.
 
