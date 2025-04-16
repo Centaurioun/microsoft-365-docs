@@ -1,11 +1,9 @@
 ---
 title: "AI adoption category in Adoption Score"
-f1.keywords:
-- NOCSH
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 04/17/2025
+ms.date: 04/16/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
