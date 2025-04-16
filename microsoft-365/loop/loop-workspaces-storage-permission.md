@@ -148,7 +148,7 @@ See [Storage](#storage). When content is stored in OneDrive, if that user leaves
 
 ## Management of Loop and Copilot Pages content
 
-For more information, see [available admin capabilities](/microsoft-365/loop/loop-compliance-summary#available-admin-capabilities) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
+Refer to the [available admin capabilities](/microsoft-365/loop/loop-compliance-summary#available-admin-capabilities) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
 ## Pricing and licensing model for Loop app
 
