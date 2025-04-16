@@ -1,6 +1,6 @@
 ---
 ms.date: 03/06/2025
-title: "Manage Loop components in your organization"
+title: "Manage Copilot Pages and Loop components in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
 author: jenzamora
@@ -21,10 +21,10 @@ ms.collection:
 search.appverid:
 - SPO160
 - MET150
-description: "Learn how to manage Loop components in your organization."
+description: "Manage Copilot Pages and Loop in your organization"
 ---
 
-# Loop admin policies for Loop components and Loop workspaces
+# Loop admin policies for Copilot Pages, Loop components, and Loop workspaces
 
 Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Learn more about [Loop storage](/microsoft-365/loop/loop-workspaces-storage-permission#loop-storage), which is combined with SharePoint in your tenant. IT administrators need to manage creation of Loop content and integrations using **BOTH**:
 
@@ -55,6 +55,10 @@ If you want to scope the Cloud Policy settings to only some users in your tenant
 You'll be able to use this group for the Cloud Policy setup procedure specified in [Settings management in Cloud Policy](#settings-management-in-cloud-policy).
 
 If you prefer, you can also create other types of groups to use with Cloud Policy. For more information, see [learn more about creating groups in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) or [learn more about creating dynamic groups in AzureAD](/azure/active-directory/external-identities/use-dynamic-groups).
+
+### Exchange Online mailboxes
+
+To utilize all Loop app features, including workspace sharing and at mentions, it's necessary for all users to have an Exchange Online mailbox. Those with Exchange On-Premises mailboxes will not have access to the full range of Loop app capabilities.
 
 ## Available policy settings
 
