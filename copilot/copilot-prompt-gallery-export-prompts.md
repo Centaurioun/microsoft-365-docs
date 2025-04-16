@@ -12,7 +12,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 04/02/2025
+ms.date: 04/16/2025
 ---
 
 # Export prompts that users saved, liked, or shared in Copilot Prompt Gallery
@@ -35,11 +35,10 @@ Before you can export prompts that users saved, liked, or shared in Copilot Prom
 
 ### Download the CopilotLabDSR PowerShell script
 
-1. To get started, you need to [download the CopilotLabDSR PowerShell script](https://download.microsoft.com/download/b/a/b/babff430-cc1f-46e0-b98b-2997d79af5ae/tenant-admin-scripts.zip).
-2. Extract the CopilotLabDSR.psm1 file from the tenant-admin-scripts.zip file to a location you can access from PowerShell.
-3. In File Explorer, go to the location where you saved the CopilotLabDSR.psm1 file that you extracted.
-4. Right-click on the CopilotLabDSR.psm1 file and select **Properties**.
-5. On the **General** tab, select **Unblock** checkbox, and then select **Ok**.
+1. To get started, you need to [download the CopilotLabDSR PowerShell script](https://download.microsoft.com/download/a541f114-f315-4b2f-bc2c-e7e89bb3022f/CopilotLabDSR.psm1).
+2. In File Explorer, go to the location where you saved the CopilotLabDSR.psm1 file.
+3. Right-click on the CopilotLabDSR.psm1 file and select **Properties**.
+4. On the **General** tab, select **Unblock** checkbox, and then select **Ok**.
 
    You need to unblock the file because, by default, executing scripts downloaded from the internet isn't allowed.
 
@@ -64,7 +63,7 @@ Before you can export prompts that users saved, liked, or shared in Copilot Prom
 2. Run the following command to import the module with all available cmdlets.
 
    ```PowerShell
-   Import-module "<location where you saved the CopilotLabDSR.psm1 file that you extracted>"
+   Import-module "<location where you saved the CopilotLabDSR.psm1 file>"
    ```
 
    For example, if your file is saved in C:\AdminScripts, you would type:
