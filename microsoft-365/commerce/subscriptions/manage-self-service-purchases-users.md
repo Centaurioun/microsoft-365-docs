@@ -27,7 +27,7 @@ ms.date: 03/27/2024
 
 # Manage self-service purchases and trials (for users)
 
-As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You're responsible for paying for any self-service purchases you make. You can manage your subscriptions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+As a user, you can acquire free trials or buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You're responsible for paying for any self-service purchases you make. You can manage your subscriptions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 [!INCLUDE [O365 21Vianet admin center link](../../includes/office-365-operated-by-21vianet-admin-center-link.md)]
 
@@ -35,7 +35,7 @@ Your admin has a read-only view into any subscriptions that you buy. They can se
 
 ## View your subscriptions
 
-You can view a list of all self-service purchased subscriptions that you bought.
+You can view a list of all your self-service free trials and purchased subscriptions.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
