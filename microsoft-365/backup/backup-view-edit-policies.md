@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/10/2025
+ms.date: 04/16/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -24,56 +24,7 @@ To use Microsoft 365 Backup for OneDrive, SharePoint, or Exchange, you need to c
 
 A policy contains details of what data (OneDrive accounts, SharePoint sites, and Exchange mailboxes) to protect. Although you see the retention period and backup frequency (which defines the restore point objective), those settings aren't currently variable or modifiable.
 
-Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to create a backup policy for that product.
-
-# [OneDrive](#tab/onedrive)
-
-Follow these steps to set up a backup policy for OneDrive accounts using Microsoft 365 Backup.
-
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
-
-2. Select **Settings**.
-
-3. Select **Microsoft 365 Backup** from the list of products.
-
-4. On the **Microsoft 365 Backup** page, in the **OneDrive** section, select **Set up policy**.
-
-    ![Screenshot of the Microsoft 365 Backup page with OneDrive highlighted.](../media/m365-backup/backup-setup-backup-page-onedrive.png)
-
-5. On the **Overview** page, review the backup policy attributes for OneDrive, and then select **Next**.
-
-    ![Screenshot of the Overview page for OneDrive.](../media/m365-backup/backup-overview-page-onedrive.png)
-
-6. On the **Choose selection method** page, you can select OneDrive user accounts using any of the four available methods. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
-
-    ![Screenshot of the Choose selection method page for OneDrive.](../media/m365-backup/backup-choose-selection-method-onedrive.png)
-
-    a. Under **Upload a list of accounts in a CSV file**, you can upload a list of accounts to back up via a CSV file.
-
-    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
-
-    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
-
-    For example, if a user is added to a distribution list that is included in the dynamic rule, then that user will be included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they will be removed from the backup policy within 24 hours. That user’s existing backups will remain restorable for until they expire based on their retention period, but new backups will no longer be taken until that individual is re-added to the included distribution list, or until they are re-added manually in a static addition.
-
-    > [!NOTE]
-    > The dynamic rule feature is in preview.
-
-    c. Under **Using filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list members are updated later.
-
-    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example, groups or lists won't be dynamically updated in the system if users are added or removed from the original security group.
-
-    d. Under **Select accounts individually**, you can search and select accounts you want to add to a backup policy.
-
-7. Once you've made the right selections, select **Next** to create the backup policy for OneDrive.
-
-8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
-
-9. The backup policy for OneDrive is created.
-
-    ![Screenshot of the OneDrive backup policy created page.](../media/m365-backup/backup-policy-created-onedrive.png)
-
-    Once the sites are added to a backup policy, it might take 15 to 25 minutes per 1,000 sites for restore points to become available for restore.
+Select the **SharePoint**, **Exchange**, or **OneDrive** tab for steps to create a backup policy for that product.
 
 # [SharePoint](#tab/sharepoint)
 
@@ -181,48 +132,63 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
     ![Screenshot of the Exchange backup policy created page.](../media/m365-backup/backup-policy-created-exchange.png)
 
     Once the mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 mailboxes for restore points to become available for restore.
+
+# [OneDrive](#tab/onedrive)
+
+Follow these steps to set up a backup policy for OneDrive accounts using Microsoft 365 Backup.
+
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+
+2. Select **Settings**.
+
+3. Select **Microsoft 365 Backup** from the list of products.
+
+4. On the **Microsoft 365 Backup** page, in the **OneDrive** section, select **Set up policy**.
+
+    ![Screenshot of the Microsoft 365 Backup page with OneDrive highlighted.](../media/m365-backup/backup-setup-backup-page-onedrive.png)
+
+5. On the **Overview** page, review the backup policy attributes for OneDrive, and then select **Next**.
+
+    ![Screenshot of the Overview page for OneDrive.](../media/m365-backup/backup-overview-page-onedrive.png)
+
+6. On the **Choose selection method** page, you can select OneDrive user accounts using any of the four available methods. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
+
+    ![Screenshot of the Choose selection method page for OneDrive.](../media/m365-backup/backup-choose-selection-method-onedrive.png)
+
+    a. Under **Upload a list of accounts in a CSV file**, you can upload a list of accounts to back up via a CSV file.
+
+    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
+
+    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
+
+    For example, if a user is added to a distribution list that is included in the dynamic rule, then that user will be included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they will be removed from the backup policy within 24 hours. That user’s existing backups will remain restorable for until they expire based on their retention period, but new backups will no longer be taken until that individual is re-added to the included distribution list, or until they are re-added manually in a static addition.
+
+    > [!NOTE]
+    > The dynamic rule feature is in preview.
+
+    c. Under **Using filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list members are updated later.
+
+    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example, groups or lists won't be dynamically updated in the system if users are added or removed from the original security group.
+
+    d. Under **Select accounts individually**, you can search and select accounts you want to add to a backup policy.
+
+7. Once you've made the right selections, select **Next** to create the backup policy for OneDrive.
+
+8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
+
+9. The backup policy for OneDrive is created.
+
+    ![Screenshot of the OneDrive backup policy created page.](../media/m365-backup/backup-policy-created-onedrive.png)
+
+    Once the sites are added to a backup policy, it might take 15 to 25 minutes per 1,000 sites for restore points to become available for restore.
+
 ---
 
 ## View and edit backup policies
 
 You can edit the scope of OneDrive accounts, SharePoint sites, and Exchange mailboxes  associated with a backup policy. As part of edit, you can either add new accounts, sites, or mailboxes to or remove them from backup. Removing accounts, sites, and mailboxes from Microsoft 365 Backup doesn't mean existing backups will be deleted, rather it means additional backups won't be taken.
 
-Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to view and edit backup policies for that product.
-
-# [OneDrive](#tab/onedrive)
-
-Follow these steps to view and edit backup policies for OneDrive.
-
-1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **View details**.
-
-<!---
-    ![Screenshot showing the view and edit backup policy for OneDrive in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-onedrive.png)
---->
-
-2. You can either add new accounts to or remove accounts from an existing OneDrive backup policy.
-
-    a. To add new accounts, use either one of these two methods:
-
-    - On the **OneDrive accounts backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
-
-    - Or, on the **OneDrive accounts backup policy** panel, select **+ Add accounts**.
-
-    Select the accounts using any of the four available methods. Once you have added the accounts, follow the prompts to update the policy.
-
-    ![Screenshot showing how to add user accounts to the existing OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-add-account.png)
-
-    b. To remove accounts from existing backup policy, on the **Included accounts** tab, select the accounts from the list, and then select **Remove**. Once you have done your changes, follow the prompts to remove the accounts.
-
-    Accounts added to a backup policy through a dynamic rule cannot be individually removed. To exclude these accounts from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list will exclude them from the policy. Alternatively, removing the entire distribution list from the rule will remove all accounts that were added through that list from the backup policy.
-
-    ![Screenshot showing how to remove user accounts from OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-account.png)
-
-3. The removed accounts are moved to the **Removed accounts** tab.
-
-    ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-account.png)
-
-    > [!NOTE]
-    > Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups for those accounts will not be deleted and will be charged.
+Select the **SharePoint**, **Exchange**, or **OneDrive** tab for steps to view and edit backup policies for that product.
 
 # [SharePoint](#tab/sharepoint)
 
@@ -287,6 +253,41 @@ Follow these steps to view and edit backup policies for Exchange.
 
     > [!NOTE]
     > Removing mailboxes from backup policy means no future backups will be taken for those removed mailboxes. Existing backups for those mailboxes will not be deleted and will be charged.
+
+# [OneDrive](#tab/onedrive)
+
+Follow these steps to view and edit backup policies for OneDrive.
+
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **View details**.
+
+<!---
+    ![Screenshot showing the view and edit backup policy for OneDrive in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-onedrive.png)
+--->
+
+2. You can either add new accounts to or remove accounts from an existing OneDrive backup policy.
+
+    a. To add new accounts, use either one of these two methods:
+
+    - On the **OneDrive accounts backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
+
+    - Or, on the **OneDrive accounts backup policy** panel, select **+ Add accounts**.
+
+    Select the accounts using any of the four available methods. Once you have added the accounts, follow the prompts to update the policy.
+
+    ![Screenshot showing how to add user accounts to the existing OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-add-account.png)
+
+    b. To remove accounts from existing backup policy, on the **Included accounts** tab, select the accounts from the list, and then select **Remove**. Once you have done your changes, follow the prompts to remove the accounts.
+
+    Accounts added to a backup policy through a dynamic rule cannot be individually removed. To exclude these accounts from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list will exclude them from the policy. Alternatively, removing the entire distribution list from the rule will remove all accounts that were added through that list from the backup policy.
+
+    ![Screenshot showing how to remove user accounts from OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-account.png)
+
+3. The removed accounts are moved to the **Removed accounts** tab.
+
+    ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-account.png)
+
+    > [!NOTE]
+    > Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups for those accounts will not be deleted and will be charged.
 
 ---
 
