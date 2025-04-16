@@ -4,7 +4,7 @@ description: Learn about the different Microsoft 365 Copilot reporting options a
 author: MandiOhlinger
 ms.author: mandia
 manager: laurawi
-ms.date: 04/15/2025
+ms.date: 04/16/2025
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.subservice: 
@@ -31,10 +31,10 @@ Microsoft 365 Copilot offers four main sources for usage reports. Use these repo
 
 - **Microsoft 365 admin center**: Provides readiness and usage reports focused on license eligibility, adoption, and basic usage metrics.
 - **Viva Insights Copilot Analytics**: Offers comprehensive Copilot analytics through the Copilot Dashboard and Advanced Insights Analyst workbench for detailed metrics and custom reporting.
-- **Microsoft Purview Audit Logs**: Delivers detailed audit logs of all Copilot activities for compliance tracking and security auditing.
+- **Microsoft Purview audit logs**: Delivers detailed audit logs of all Copilot activities for compliance tracking and security auditing.
 - **Power Platform & Copilot Studio Analytics**: Provides consumption metrics for Copilot agents and detailed analytics on agent performance.
 
-This article provides an overview of the different Microsoft 365 Copilot reporting options available to IT administrators, including access requirements and the specific insights each report provides.
+This article provides an overview of the different Microsoft 365 Copilot reporting options available to IT administrators, including access requirements and the insights each report provides.
 
 This article applies to:
 
@@ -47,10 +47,10 @@ To use the reporting features described in this article, you need to sign into d
 | Reporting option | Required roles & access |
 |------------------|-------------------------|
 | **[Microsoft 365 admin center](https://admin.microsoft.com)** | - **Microsoft 365 Global Administrator**: Assigns the **AI Administrator** role. <br/> - **AI Administrator**: Accesses the Copilot reports. |
-| **Copilot Analytics, powered by Viva Insights** | - **Microsoft 365 Global Administrator**: Enables the Copilot Dashboard and delegates access to the dashboard and organizational insights. Senior leaders [might automatically get access](/viva/insights/org-team-insights/copilot-dashboard#how-automatic-access-to-the-copilot-dashboard-is-determined). <br/>- **Microsoft 365 Global Administrator**: Sets up Viva Insights and assigns the **Insights Analyst** and **Insights Administrator** roles. <br/>- **Insights Analyst**: Uses the Advanced Insights Analyst Workbench to build Copilot Power BI Templates. <br/> - **Insights Administrator**: Manages settings in the Advanced Insights Analyst Workbench, like security, privacy, and uploading organization data files. ?? |
+| **Copilot Analytics, powered by Viva Insights** | - **Microsoft 365 Global Administrator**: Enables the Copilot Dashboard and delegates access to the dashboard and organizational insights. Senior leaders [might automatically get access](/viva/insights/org-team-insights/copilot-dashboard#how-automatic-access-to-the-copilot-dashboard-is-determined). <br/>- **Microsoft 365 Global Administrator**: Sets up Viva Insights and assigns the **Insights Analyst** and **Insights Administrator** roles. <br/>- **Insights Analyst**: Uses the Advanced Insights Analyst Workbench to build Copilot Power BI Templates. <br/> - **Insights Administrator**: Manages settings in the Advanced Insights Analyst Workbench, like security, privacy, and uploading organization data files. |
 | **[Microsoft Purview portal](https://purview.microsoft.com)** | - **Audit Reader**: Searches the audit logs. |
 | **[Power Platform admin center](https://admin.powerplatform.microsoft.com)** | - **System Administrator**: Assigns the **Copilot Studio authors** role. <br/> - **License admin** in [Microsoft 365 admin center](https://admin.microsoft.com): Assigns Copilot Studio licenses. |
-| **[Copilot Studio](https://copilotstudio.microsoft.com)** | - **Copilot Studio Author**: Accesses analytics for agents they create and access the Center of Excellence. |
+| **[Copilot Studio](https://copilotstudio.microsoft.com)** | - **Copilot Studio Author**: Accesses analytics for agents they create. |
 
 ## Microsoft 365 admin center reports
 
@@ -94,7 +94,7 @@ Microsoft Viva Insights provides deeper analytical capabilities for Microsoft 36
 
 ### Copilot Dashboard
 
-The Copilot Dashboard offers a comprehensive view of Copilot's usage metrics and actionable insights, including:
+The **Copilot Dashboard** offers a comprehensive view of Copilot's usage metrics and actionable insights, including:
 
 - **Adoption metrics**: Tracks user adoption rates and growth trends
 - **Usage patterns**: Analyzes when and how users interact with Copilot
@@ -111,7 +111,7 @@ The Copilot Dashboard offers a comprehensive view of Copilot's usage metrics and
 
 1. The users can start using the Copilot Dashboard:
 
-    1. In Microsoft Teams, search for and open the **Viva Insights** app.
+    1. In Microsoft Teams, users search for and open the **Viva Insights** app.
     1. In **Viva Insights**, select **Copilot Dashboard**.
 
 To learn more, see:
@@ -125,7 +125,7 @@ To learn more, see:
 For organizations requiring deeper analysis, Viva Insights provides advanced analytical capabilities, including:
 
 - **Custom Copilot queries**: Create specialized queries focused on Copilot usage
-- **Power BI templates**: Use pre-built templates to visualize Copilot data
+- **Power BI templates**: Use prebuilt templates to visualize Copilot data
 - **Cross-data analysis**: Combine Copilot metrics with other workplace analytics
 - **Detailed reporting**: Generate comprehensive reports for executives and stakeholders
 
@@ -139,12 +139,14 @@ For organizations requiring deeper analysis, Viva Insights provides advanced ana
 
     For the complete steps, see [Viva Insights setup checklist](/viva/insights/advanced/setup-maint/setup-overview).
 
-1. The **Insights Analyst**:
+1. The **Insights Analyst** can go to **Viva Insights** > **Analysis**. Then, use the templates and [set up Copilot queries](/viva/insights/advanced/analyst/copilot-query).
 
-    - Must have the [Power BI Desktop app installed](https://www.microsoft.com/download/details.aspx?id=58494) on their devices.
-    - Go to **Viva Insights** > **Analysis**. Then, use the templates and [set up Copilot queries](/viva/insights/advanced/analyst/copilot-query).
+    To learn more about some of the reports and view any prerequisites, see:
 
-1. The **Insights Administrator** ??
+    - [Microsoft 365 Copilot adoption report](/viva/insights/advanced/analyst/templates/microsoft-365-copilot-adoption)
+    - [Microsoft 365 Copilot impact report](/viva/insights/advanced/analyst/templates/microsoft-365-copilot-impact)
+
+1. The **Insights Administrator** can sign into the [Analyst Workbench](https://analysis.insights.cloud.microsoft) > select **Copilot** to filter reports > select the report.
 
 To learn more, see:
 
@@ -188,7 +190,7 @@ For organizations using Copilot agents, there are some options for specialized a
 
 - Power Platform admin center for consumption-based agents
 - Copilot Studio Analytics for individual agents
-- Copilot Studio Center of Excellence for many agents
+- Copilot Studio Kit for testing and tracking custom agents
 
 To learn more, see:
 
@@ -228,7 +230,7 @@ To view the analytics for consumption-based agents, use the Power Platform admin
 
 ### Copilot Studio Analytics
 
-Copilot Studio Analytics is for individual agents that are included in your Microsoft 365 Copilot license.
+**Copilot Studio Analytics** is for individual agents that are included in your Microsoft 365 Copilot license.
 
 Copilot Studio includes the following analytics:
 
@@ -256,37 +258,14 @@ To assign Copilot Studio licenses, use the Microsoft 365 admin center. To view t
 
         To learn more, see [Review and improve agent effectiveness in Copilot Studio](/microsoft-copilot-studio/analytics-improve-agent-effectiveness).
 
-### Copilot Studio Center of Excellence
+### Copilot Studio Kit
 
-Copilot Studio Center of Excellence is for organizations with multiple agents included in your Microsoft 365 Copilot license.
+The **Copilot Studio Kit** is a set of tools and resources that helps you test custom agents, track key performance indicators of your custom agents, and more.
 
-The Center of Excellence includes:
+To learn more, see:
 
-- **Cross-agent metrics**: Compares performance across different agents
-- **Governance tools**: Helps maintain standards across all agents
-- **Best practices**: Identifies opportunities to implement best practices
-- **Usage trends**: Shows adoption and usage patterns across the organization
-
-#### Open Copilot Studio Center of Excellence
-
-1. Sign into [Copilot Studio](https://copilotstudio.microsoft.com) as a licensed Copilot Studio user.
-1. In the left navigation pane, select **Center of Excellence**.
-
-To learn more, see [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit).
-
-??Agents??
-
-## Next Steps
-
-??Does this guidance come from somewhere else??
-
-To maximize the value of Microsoft 365 Copilot in your organization:
-
-1. **Establish baseline metrics**: Use these reports to understand your current state
-2. **Set adoption goals**: Define clear objectives for Copilot usage and impact
-3. **Regular monitoring**: Review reports periodically to track progress
-4. **Address insights**: Take action on insights revealed in the reports
-5. **Refine deployment**: Adjust your Copilot strategy based on usage data
+- [Copilot Studio Kit - AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.copilotstudiokit2)
+- [Power CAT Copilot Studio Kit - GitHub](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit/blob/main/README.md)
 
 ## Related articles
 
