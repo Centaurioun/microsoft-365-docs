@@ -62,11 +62,11 @@ Updates released between April 2, 2025, and April 16, 2025.
 - **Discover agents for unlicensed and metered users** [Windows, Web]
 
   Empower more users with easy access to agents tailored to their needs—even if they are unlicensed or metered—broadening Copilot’s reach across your organization.
- <a href="microsoft-365-copilot/extensibility/debugging-copilot-agent" target="_blank">Learn more.</a>
+ <a href="/microsoft-365-copilot/extensibility/debugging-copilot-agent" target="_blank">Learn more.</a>
 - **Enable developer mode in Copilot Chat** [Developer]
 
   Leverage Microsoft 365 Copilot Chat developer mode directly within your development tools, simplifying the process to build and test custom integrations.
- <a href="microsoft-365-copilot/extensibility/debugging-copilot-agent" target="_blank">Learn more.</a>
+ <a href="/microsoft-365-copilot/extensibility/debugging-copilot-agent" target="_blank">Learn more.</a>
 ### OneNote
 - **Copilot-powered organization in OneNote** [Windows]
 
@@ -1473,7 +1473,7 @@ Updates released between December 18, 2024, and January 7, 2025.
 
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
 
-  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
+  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "/make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
 
@@ -1795,7 +1795,7 @@ Updates released between April 2, 2025, and April 16, 2025.
 - **Discover agents for unlicensed and metered users** [Windows, Web]
 
   Empower more users with easy access to agents tailored to their needs—even if they are unlicensed or metered—broadening Copilot’s reach across your organization.
- <a href="microsoft-365-copilot/extensibility/debugging-copilot-agent" target="_blank">Learn more.</a>
+ <a href="/microsoft-365-copilot/extensibility/debugging-copilot-agent" target="_blank">Learn more.</a>
 ### OneNote
 - **Copilot-powered organization in OneNote** [Windows]
 
@@ -2532,7 +2532,7 @@ Updates released between December 18, 2024, and January 7, 2025.
 
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
 
-  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
+  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "/make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
 
@@ -2746,7 +2746,7 @@ Updates released between April 2, 2025, and April 16, 2025.
 - **Discover agents for unlicensed and metered users** [Windows, Web]
 
   Empower more users with easy access to agents tailored to their needs—even if they are unlicensed or metered—broadening Copilot’s reach across your organization.
- <a href="microsoft-365-copilot/extensibility/debugging-copilot-agent" target="_blank">Learn more.</a>
+ <a href="/microsoft-365-copilot/extensibility/debugging-copilot-agent" target="_blank">Learn more.</a>
 ### PowerPoint
 - **Copilot in PowerPoint has improved performance when summarizing your presentation** [Web]
 
@@ -4195,7 +4195,7 @@ Updates released between December 18, 2024, and January 7, 2025.
 
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
 
-  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
+  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "/make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
 
@@ -4679,7 +4679,7 @@ Updates released between December 18, 2024, and January 7, 2025.
 
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
 
-  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
+  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "/make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
 
@@ -5317,7 +5317,7 @@ Updates released between December 18, 2024, and January 7, 2025.
 
 - **Customize your draft message when you compose with Copilot** [Windows, Android, iOS, Mac]  
 
-  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
+  You can now instruct Copilot to adjust your draft message however you'd like. Adjust the message with a custom prompt, like "add a call to action" or "/make it persuasive". <a href="https://support.microsoft.com/office/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams-53315d9c-93be-45ab-9004-2f8205725cc7" target="_blank">Learn more.</a>
 
 - **Enhanced Copilot UI with new date dividers** [Windows, Android, iOS, Mac]  
 
