@@ -123,9 +123,9 @@ sections:
         answer: |
           You need to change your server plan to Microsoft Defender for Endpoint for servers or Microsoft Defender for Servers.
 
-      - question: Is Microsoft 365 E5 Security available also available as an add-in for Microsoft 365 Business Premium for Nonprofits?
+      - question: Is Microsoft 365 E5 Security available as an add-in for Microsoft 365 Business Premium for Nonprofits?
         answer: |
-          Yes! Microsoft 365 E5 Security is available as an add-in in the commercial and non-profit offerings of Microsoft 365 Business Premium.
+          Yes! Microsoft 365 E5 Security is available as an add-in for the commercial and non-profit offerings of Microsoft 365 Business Premium.
 
   - name: Deployment
     questions:
