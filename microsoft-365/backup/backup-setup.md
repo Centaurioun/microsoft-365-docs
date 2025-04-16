@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/01/2025
+ms.date: 04/07/2025
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -20,7 +20,7 @@ description: Learn how to turn on Microsoft 365 Backup, set up pay-as-you-go bil
 
 > [!TIP]
 > **Already have an Azure subscription and the [necessary admin role](#admin-roles-and-backup-management-privileges)?** Follow these three steps to quickly set up Microsoft 365 Backup in the admin center.<br><br>
-> [Step 1. Set up pay-as-you-go billing](https://admin.microsoft.com/#/orgsettings/payasyougo)<br>
+> [Step 1. Set up pay-as-you-go billing for Syntex services](https://admin.microsoft.com/#/orgsettings/payasyougo)<br>
 > [Step 2. Turn on Microsoft 365 Backup](https://admin.microsoft.com/#/orgsettings/payasyougo/storage)<br>
 > [Step 3. Start backing up your data by creating backup policies](https://admin.microsoft.com/#/Settings/enhancedRestore)<br>
 
