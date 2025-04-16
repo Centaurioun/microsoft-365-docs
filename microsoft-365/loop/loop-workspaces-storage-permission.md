@@ -28,14 +28,15 @@ appliesto:
 
 ## Loop Storage
 
-Where Loop content is stored impacts the admin management, governance, data lifecycle, and compliance capabilities available. Microsoft Loop is built on top of SharePoint, OneDrive, and [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta), which means that most of these capabilities work just like existing files in your ecosystem. Because Loop pages and components are files, they can be managed in a familiar way, within your existing workflows. The table should help clarify how Loop content is stored in the Microsoft ecosystem.
+Where Loop content is stored impacts the admin management, governance, data lifecycle, and compliance capabilities available. Microsoft Loop is built on top of SharePoint, OneDrive, and [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta), which means that most of these capabilities work just like existing files in your ecosystem. Because Loop pages and components are files, they can be managed in a familiar way, within your existing workflows. The table should help clarify how Copilot Page and Loop content is stored in the Microsoft ecosystem.
 
-Where the Loop content was originally created determines its storage location:
+Where the content was originally created determines its storage location:
 
-|Loop content originally created in|️️️Loop content stored in SharePoint Embedded|Loop content stored in SharePoint Site|Loop content stored in User's OneDrive|
+|Content content originally created in|Content stored in SharePoint Embedded|Content stored in SharePoint Site|Content stored in User's OneDrive|
 |-----|-----|-----|-----|
-|Loop app|✔️in Loop workspace|||
-|Copilot Pages|✔️in Loop workspace|||
+|Copilot Pages|✔️in user-owned container|||
+|Loop app, My workspace|✔️in user-owned container|||
+|Loop app, shared workspace|✔️in shared container|||
 |Teams channel meeting||✔️in 📁`Meetings`||
 |Teams channel||✔️in Channel folder||
 |Teams private chat|||✔️in 📁`Microsoft Teams Chat files`|
@@ -44,19 +45,21 @@ Where the Loop content was originally created determines its storage location:
 |OneNote for Windows or for the web|||✔️in 📁`OneNote Loop files`|
 |Whiteboard|||✔️in 📁`Whiteboard\Components`|
 
-## Loop app's usage of organization's storage quota
+## Loop app and Copilot Pages usage of organization's storage quota
 
-Loop app workspaces are stored inside your tenant, within SharePoint Embedded. All Loop workspaces and pages, including Shared workspaces, Personal workspaces, Ideas, and Copilot Pages, count against your tenant's SharePoint storage quota.
+Loop app workspaces are stored within your tenant in SharePoint Embedded, with one shared workspace per container. The personal My workspace and the Copilot Pages container are both stored within the same user-owned SharePoint Embedded container named 'Pages' or 'My workspace' depending on which location the person visits first (Loop or Copilot Pages).
+
+All Loop workspaces and pages, including Shared workspaces, Personal workspaces, Ideas, and Copilot Pages, count against your tenant's SharePoint storage quota.
 
 SharePoint Embedded also offers a platform to build your own applications. This usage pattern which bills per use, is different from Loop, and should not be confused with Loop. As described above, Loop's storage in SharePoint Embedded is combined and measured with your tenant's SharePoint storage quota.
 
 ## Loop workspace storage limits
 
-Loop workspaces have a maximum size of 25TB per workspace. This limit can't be increased or decreased. Workspace content counts towards a user's storage quota, and since this per-user storage quota is always less than 25TB, the 25TB limit should never be reached, in practice. Loop workspaces are implemented as SharePoint Embedded containers. Learn more about [SharePoint Embedded container limits](/sharepoint/dev/embedded/concepts/app-concepts/limits-calling).
+Loop workspaces and Copilot Pages have a maximum size of 25TB per SharePoint Embedded container. This limit can't be increased or decreased. Content counts towards a user's storage quota, and since this per-user storage quota is always less than 25TB, the 25TB limit should never be reached, in practice. Learn more about [SharePoint Embedded container limits](/sharepoint/dev/embedded/concepts/app-concepts/limits-calling).
 
 ## Content permissions mechanism
 
-Each Loop app workspace uses storage for the workspace in [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Additionally, the Loop app creates a roster for that workspace to govern access to the full workspace. When pages are shared from the workspace, we create a sharing link using your company's default sharing link type as configured for OneDrive and SharePoint.
+Each Loop app workspace uses storage for the workspace in [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Additionally, the Loop app creates a roster for shared workspaces to govern access to the full workspace. When content is shared from the workspace, we create a sharing link using your company's default sharing link type as configured for OneDrive and SharePoint.
 
 Sharing the workspace in Loop adds the user to the workspace roster. All workspace roster members have access and "*editing*" permissions to all the Loop pages in that workspace.
 
@@ -96,11 +99,13 @@ Unlike SharePoint sites, there's no admin setting to configure guest sharing of 
 
 ## Loop workspace membership and Microsoft 365 groups
 
-Loop workspaces currently have one type, with membership visible and manageable within the Loop app by the workspace owner. However, there's no integration with Microsoft 365 groups or Security groups. Microsoft Roadmap ID 422728 addresses this for Microsoft 365 groups.
+This section does not apply to My workspace or Copilot Pages, which are personal, not shared with more than the single user owner.
 
-Currently, owners can't assign new members as owners. If the owner leaves the company, the workspace becomes ownerless, remain in the tenant, and isn't automatically deleted. Administrators can't assign new owners to ownerless workspaces. Microsoft Roadmap ID 362124 and 421613 address this.
+Loop workspaces are shared with membership visible and manageable within the Loop app by the workspace owner. Integration with Microsoft 365 groups is tracked with Microsoft Roadmap ID 422728.
 
-PowerShell support for number of owners on a SharePoint Embedded container isn't yet available. Once it is, to find ownerless workspaces, query Loop workspace containers in SharePoint Embedded. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
+Owners can assign existing and new members as additional owners. If all the owners leaves the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted. Administrators can assign new owners to ownerless workspaces.
+
+IT admins can use SharePoint Admin Center and PowerShell to find ownerless workspaces. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
 There are other types of groups and membership lists in the Microsoft ecosystem, such as Microsoft 365 groups and Security groups. Currently, Loop workspace membership doesn't use these groups or lists. Microsoft Roadmap ID 422728 addresses this for Microsoft 365 groups.
 
@@ -112,22 +117,18 @@ The Loop app is designed for both shared and personal workspaces.
 
 #### Shared Workspaces
 
-- Shared workspaces are permissioned with a roster. If the owner leaves the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted.
-- If the creator of the workspace is the person who left the company, others can't delete the workspace.
+- Shared workspaces are permissioned with a roster. If all the owners leave the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted.
+- Deleting a workspace requires that you are an owner. If all the owners left the company, members can't delete the workspace until an IT administrator adds new owners.
 
 #### Personal Workspaces
 
-- There are currently two types of personal workspaces: Ideas and Copilot Pages.
+- [My workspace](#my-workspace) and [Copilot Pages](#copilot-pages) both store content within the same user-owned SharePoint Embedded container named 'Pages' or 'My workspace' depending on which location the person visits first (Loop or Copilot Pages).
 - Personal content is private by default, allowing users to work without forced sharing or coauthoring, similar to OneDrive.
-
-##### Ideas
-
-- Ideas is a tenant-owned personal workspace, permissioned with a roster but designed for single-person use.
-- When a user leaves the company, like a shared workspace, their Ideas workspace becomes ownerless, remains in the tenant, and isn't automatically deleted.
+- Personal content is stored in a user-owned SharePoint Embedded container.
 
 ##### Copilot Pages
 
-- Copilot Pages is a user-owned workspace, created only by Copilot, and is lifecycle managed with the user account.
+- Copilot Pages is a user-owned workspace, created by Copilot, and is lifecycle managed with the user account.
 - Copilot Pages is deleted when the user account is deleted from the organization.
 - User-owned workspaces can't be permanently reassigned to a new owner. These workspaces follow the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
 - Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
@@ -135,11 +136,25 @@ The Loop app is designed for both shared and personal workspaces.
 > [!NOTE]
 > A feature for IT admins to assign additional temporary custodians during the cleanup period of user-owned workspaces to make copies of content isn't yet available. Microsoft Roadmap ID 421612 addresses this.
 
-### In Loop components created in Microsoft 365 outside of the Loop app
+##### My workspace
 
-Loop components created outside of Loop are stored in the OneDrive of the person who created the component, or if created in a place with shared storage like a Teams channel, they're stored in the SharePoint folder for that channel. When stored in OneDrive, if that user leaves the organization, the standard OneDrive IT policy is applied. When stored in SharePoint, the standard SharePoint IT policy is applied.
+- My workspace is a user-owned workspace, created by Loop, and is lifecycle managed with the user account.
+- My workspace is deleted when the user account is deleted from the organization.
+- User-owned workspaces can't be permanently reassigned to a new owner. These workspaces follow the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
+- Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
 
-## Management of Loop content
+##### Ideas
+
+- Ideas is no longer created by the Loop app. It was the first default workspace, and was tenant-owned, permissioned with a single-person roster.
+- Ideas has been deprecated and replaced with the My workspace personal workspace.
+- The Ideas workspace is not deleted by the Loop app, a user or an admin must delete it if desired.
+- When a user leaves the company, if they have not added multiple owners to their Ideas workspace, it becomes ownerless, remains in the tenant, and isn't automatically deleted.
+
+### In Loop components created in Microsoft 365 outside of the Loop app or Copilot Pages
+
+Loop components created outside of Loop or Copilot Pages are stored in the OneDrive of the person who created the component, or if created in a place with shared storage like a Teams channel, they're stored in the SharePoint folder for that channel. When stored in OneDrive, if that user leaves the organization, the standard OneDrive IT policy is applied. When stored in SharePoint, the standard SharePoint IT policy is applied.
+
+## Management of Loop and Copilot Pages content
 
 For more information, see [available admin capabilities](/microsoft-365/loop/loop-compliance-summary#available-admin-capabilities) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
