@@ -72,22 +72,22 @@ To complete the steps in this article, you must be a Global Administrator or a T
 > [!IMPORTANT]
 > Team owners must have a Teams license. Before you use these steps to deploy your teams, make sure that all teams owners have a license.
 
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose Frontline deployment > Manage frontline teams. 
-2. In the table, choose Set up.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**. 
+2. In the table, choose **Set up**.
 
 :::image type="content" source="media/flw-teams-admin-center.png" alt-text="Manage frontline teams in Teams admin center":::
 
-3. On the Overview page, review the setup and prerequisites information.
-4. On the Frontline workers page, select the Entra groups that include your frontline workers. You can choose up to 10 Entra groups. You can change these groups, as needed, after you submit your setup.
+3. On the **Overview** page, review the setup and prerequisites information.
+4. On the **Frontline workers** page, select the Entra groups that include your frontline workers. You can choose up to 10 Entra groups. You can change these groups, as needed, after you submit your setup.
 
 :::image type="content" source="media/dtas-add-frontline-groups.png" alt-text="Adding frontline groups to frontline teams settings":::
 
-5. On the Location page, select a Microsoft Entra attribute or a custom user attribute that defines the location your frontline employees work in. You can only choose one location attribute. You can change the attribute, as needed, after you submit your setup. For example, if you would like to create a team for each city, enter the “City” attribute and we will group frontline workers in the same city into teams.
+5. On the **Location** page, select a Microsoft Entra attribute or a custom user attribute that defines the location your frontline employees work in. You can only choose one location attribute. You can change the attribute, as needed, after you submit your setup. For example, if you would like to create a team for each city, enter the “City” attribute and we will group frontline workers in the same city into teams.
 All custom attributes are case sensitive and must start with an "extension_" prefix. Only custom attributes of the String data type are supported.
 
 :::image type="content" source="media/dtas-appoint-attr-for-location.png" alt-text="Choosing the Microsoft Entra attribute to define location in a organization":::
 
-6. On the Team settings page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format to all your teams.
+6. On the **Team settings** page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format to all your teams.
 
 :::image type="content" source="media/dtas-select-team-template-prefix.png" alt-text="Choosing a template for created team":::
 
@@ -102,19 +102,19 @@ You can change these groups, as needed, after you submit your setup.
 :::image type="content" source="media/dtas-review-summary.png" alt-text="Review selections and submit":::
 
 > [!NOTE]
-> Setup can take several hours to run. Refresh the Manage frontline teams page to get the latest status.
+> Setup can take several hours to run. Refresh the **Manage frontline teams** page to get the latest status.
 
 ## Deploy your frontline teams
-1. After setup is completed, go to the Manage frontline teams page, and then select the Deploy button.
+1. After setup is completed, go to the **Manage frontline teams** page, and then select the **Deploy** button.
 
 :::image type="content" source="media/dtas-frontline-teams-deploy.png" alt-text="Manage frontline teams for teams deployment":::
 
-2. On the Deploy frontline teams page, you can review your settings and view the list of locations that don't yet have a frontline team created.
+2. On the **Deploy frontline teams** page, you can review your settings and view the list of locations that don't yet have a frontline team created.
 3. In the table, select the locations that you want to create teams for.
 
 :::image type="content" source="media/dtas-frontline-teams-deploy.png" alt-text="Select locations for a deployment":::
 
-4. Select Deploy. This process can take several hours depending on how many teams you're creating.  
+4. Select **Deploy**. This process can take several hours depending on how many teams you're creating.  
 After deployment is completed, you'll see the number of deployed frontline teams in the Frontline teams card. You can also download a CSV file with a list of those teams.
 
 :::image type="content" source="media/dtas-manage-frontline-after-deploy.png" alt-text="Manage frontline teams after a teams deployment":::
@@ -126,18 +126,18 @@ If an error occurred during the deployment process, you can download the error C
 You can manage your teams when changes happen in your organization.
 
 Create new teams for newly opened locations:
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose Frontline deployment > Manage frontline teams.
-2. In the table, choose Deploy.
-3. Select the Refresh location button, and then proceed when prompted by the dialog box. This process can take several hours depending on the number of new locations.
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
+2. In the table, choose **Deploy**.
+3. Select the **Refresh location** button, and then proceed when prompted by the dialog box. This process can take several hours depending on the number of new locations.
 
 :::image type="content" source="media/dtas-refresh-frontline-teams.png" alt-text="Refesh locations in deploy frontline teams page":::
 
 4.	After the refresh is completed, your setup status shows as Complete. You can proceed to deploy your new teams. Deployment can take several hours depending on how many new teams you're deploying.
 
 ## Edit your frontline teams settings
-1.	In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose Frontline deployment > Manage frontline teams.
-2.	In the Deployment settings column, choose Deploy frontline teams.
-3.	On the Frontline teams settings page, edit your settings, and then select  Apply. Your settings might take several hours to update.
+1.	In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
+2.	In the Deployment settings column, choose **Deploy frontline teams**.
+3.	On the **Frontline teams **settings page, edit your settings, and then select  **Apply**. Your settings might take several hours to update.
 
 | Setting  | Effect on existing frontline teams  | Effect on new frontline teams |
 |---------|---------|---------|
