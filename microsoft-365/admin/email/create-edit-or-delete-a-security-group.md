@@ -83,7 +83,7 @@ If you want to create groups of users so you can send email to them all at the s
   
 - **Distribution group**: Used to distribute messages to a group of users. It's also called a  *mail-enabled distribution group*, or, a  *distribution list*. For more information, see [Manage distribution groups](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
 
-- **Security group**: Can be used to distribute messages to a group of users, or to grant access permissions to resources. This group is also called a *mail-enabled security group*. For more information, see [Manage mail-enabled security groups](/Exchange/recipients/mail-enabled-security-groups).
+- **Security group**: Can be used to distribute messages to a group of users, or to grant access permissions to resources. This group is also called a *mail-enabled security group*. For more information, see [Manage mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
 
 - **Dynamic distribution group**: A type of distribution group whose list of recipients is recalculated every time you send a message based on filters and conditions that you define. For more information, see [Manage dynamic distribution groups](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
 
