@@ -262,7 +262,7 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     - For calendar item restore, restoring organizer copy doesn't automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
 
-    - Only mailbox items that were changed, deleted to the Recoverable Items folder, or purged can be restored. Learn more about the [Recoverable Items folder in Exchange Online](https://learn.microsoft.com/en-us/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder).
+    - Only mailbox items that were changed, deleted to the Recoverable Items folder, or purged can be restored. Learn more about the [Recoverable Items folder in Exchange Online](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder).
 
     - Items moved to the Deleted Items folder won't be restored by Microsoft 365 Backup. Mailbox users can recover these items themselves by moving them back to the Inbox from the Deleted Items folder.
 
