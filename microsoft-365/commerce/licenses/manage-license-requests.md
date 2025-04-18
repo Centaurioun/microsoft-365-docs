@@ -26,6 +26,7 @@ ms.custom:
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
 ms.date: 04/07/2025
+'ROBOTS:': NOINDEX, NOFOLLOW
 ---
 
 # Manage self-service license requests in the Microsoft 365 admin center
