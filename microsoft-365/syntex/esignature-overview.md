@@ -46,6 +46,21 @@ Before you can use SharePoint eSignature, you must first link your Azure subscri
 
 SharePoint eSignature enables binding agreements between parties. External parties are allowed guests access to SharePoint via Microsoft Entra ID in order to electronically sign a document. Certain external sharing settings must be enabled at a tenant and site level to allow this access. For more information, see [Set up SharePoint eSignature for external recipients](esignature-setup.md#external-recipients). Consider whether this meets your compliance and security requirements when enabling eSignature.
 
+### Purview integration
+
+SharePoint eSignature enables logging of eSignature activities in the Purview Audit log. Activities can be viewed by opening the audit log and searching for eSignature* in the 'Activities - operation names' field. The activities logged are: 
+
+- Request was created
+- Request was sent
+- Request was canceled
+- Request was declined
+- Request has expired
+- Request was completed
+- Document was viewed by recipient
+- Document was signed by the recipient
+- Signed document link was sent to the recipient
+- Signed document was downloaded by recipient
+
 ## Using other signature providers
 
 SharePoint eSignature is now integrated with other electronic signature providers, such as Adobe Acrobat Sign and DocuSign. You can initiate requests using these other providers from PDF documents in SharePoint, while ensuring the secure and automatic storage of signed documents in Microsoft 365. Other electronic signature providers will be added in the future.
