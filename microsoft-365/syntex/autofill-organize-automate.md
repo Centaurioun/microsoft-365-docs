@@ -30,6 +30,8 @@ This feature integrates with the autofill columns service to streamline your wor
 
 ## Suggest and create columns
 
+To get suggested columns in your document library, follow these steps.
+
 1. In the lower-right corner of your document library, select the **FAB-name** icon.
 
 2. From the list of actions, select **Organize this library** to launch the process.
