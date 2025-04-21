@@ -4,7 +4,7 @@ description: Learn about the pay-as-you-go service for Microsoft 365 Copilot Cha
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 03/12/2025
+ms.date: 04/21/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -25,6 +25,10 @@ appliesto:
 The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and cost-effective way for organizations to access Copilot services. This plan allows administrators to enable consumption-based billing for specific Copilot scenarios, providing users with the ability to use Copilot features without committing to a full license.
 
 This article provides an overview of the pay-as-you-go plan, its benefits, and pricing details.
+
+This article applies to:
+
+- Microsoft 365 Copilot
 
 ## Why pay-as-you-go?
 
@@ -52,7 +56,7 @@ The billing process requires two steps:
 1. Add a billing policy
 2. Connect billing policy to Copilot services  
 
-### Billing policy
+### Step 1 - Add a billing policy
 
 The billing policy acts as a distinct billing identifier that can be associated with a group responsible for the incurred cost. The main objectives of a pay-as-you-go billing policy are:
 
@@ -61,13 +65,13 @@ The billing policy acts as a distinct billing identifier that can be associated 
 - To enable administrators to enforce governance
 - To link users to a policy, establishing billing rules for a group of users
 
-### Add or delete a billing policy
+#### Add or delete a billing policy
 
 **Creating a billing policy** defines the billing infrastructure for pay-as-you-go that consists of an Azure subscription and a set of users. Creating a billing policy alone doesn't complete the billing setup. The billing policy needs to be connected to Microsoft 365 Copilot Chat to complete the setup.
 
 **Deleting a billing policy** removes the billing infrastructure. Any connected services are disconnected from pay-as-you-go billing.
 
-### Connect billing policy to Copilot services
+### Step 2 - Connect billing policy to Copilot services
 
 After establishing a billing policy, the admin must link it to a Copilot service, such as Microsoft 365 Copilot Chat. This connection enables all users covered by the billing policy to access Copilot Chat.  
 
@@ -96,6 +100,6 @@ Additionally, administrators have the option to view the cost breakdown and anal
 
 :::image type="content" source="../media/copilot-pay-azure.png" alt-text="Screenshot showing the Cost Management page in Azure with Copilot costs.":::
 
-## Next step
+## Related content
 
-[Meters](meters.md) (article)
+[Meters for Microsoft 365 Copilot Chat pay-as-you-go](meters.md)
