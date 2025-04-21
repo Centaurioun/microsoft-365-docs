@@ -25,7 +25,7 @@ You can create a device based wipe request for an end-user. Sometimes end-users 
 
 ## User based wipe
 
-You can also create a user based wipe request. This wipe request removes organizational data from all managed apps on all the user's devices. You can also see the state of the wipe request in Intune. For more information, see [Create a user based wipe request](/mem/intune/apps/apps-selective-wipe.md#create-a-user-based-wipe-request).
+You can also create a user based wipe request. This wipe request removes organizational data from all managed apps on all the user's devices. You can also see the state of the wipe request in Intune. For more information, see [Create a user based wipe request](/mem/intune/apps/apps-selective-wipe#create-a-user-based-wipe-request).
 
 ## Additional actions
 
