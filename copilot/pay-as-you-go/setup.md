@@ -61,7 +61,7 @@ The first step is to add a billing policy.
 
 After the billing policy is created, the next step is to connect the policy to the Copilot pay-as-you-go service.
 
-1. In the admin center, go to the **Pay-as-upi-go services** tab.
+1. In the admin center, go to the **Pay-as-you-go services** tab.
 2. Select **Microsoft 365 Copilot Chat** and select the billing policy you created.
 
 ## Disable pay-as-you-go
@@ -70,9 +70,9 @@ Disabling pay-as-you-go for a Copilot service involves disconnecting the billing
 
 1. In the admin center, go to the **Pay-as-you-go services** tab, and select the Copilot service, like Microsoft 365 Copilot Chat.
 2. Unselect the billing policy, one at a time to disconnect the billing policy.
-3. Read and accept the confirmation to complete the disconnection.
+3. Read and accept the confirmation. This step completes the disconnection.
 
-When you turn off pay-as-you-go, it can take up to two hours for users to stop being able to use the agents. Also, if the agent hasn't been used, it's no longer available once pay-as-you-go is turned off.
+When you turn off pay-as-you-go, it can take up to two hours for users to stop being able to use the agents. If the agent hasn't been used, then it stops being available when pay-as-you-go is turned off.
 
 ## Delete a billing policy
 
@@ -85,7 +85,7 @@ After you disable pay-as-you-go, you can also delete the billing policy.
 
 If you already set up pay-as-you-go in the Power Platform admin center, the two setups can coexist. You can create another setup in the Microsoft 365 admin center without being double billed. The billing system ensures that you're only billed once for your user's usage, regardless of the setup location.
 
-Although the setups can coexist, it's recommended to turn off pay-as-you-go in the Power Platform admin center before enabling it in the Microsoft 365 admin center.
+Although the setups can coexist, we recommend you turn off pay-as-you-go in the Power Platform admin center before you enable it in the Microsoft 365 admin center.
 
 ## Related articles
 
