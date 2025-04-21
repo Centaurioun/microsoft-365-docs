@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: concept-article
-ms.date: 09/12/2024
+ms.date:s04/21/2025
 description: Understand app assignments using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
