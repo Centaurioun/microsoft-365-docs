@@ -80,6 +80,11 @@ Before working with organizational messages, make sure your team satisfies the f
 
   - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 10/11 Enterprise**.
 
+To ensure users can communicate with organizational messages, the following endpoints must be opened:
+
+- fd.api.orgmsg.microsoft.com
+- ris.prod.api.personalization.ideas.microsoft.com
+
 > [!IMPORTANT]
 > During our preview period, Organizational messages preview experiences weren't restricted based on the licenses held by participating tenants, authors, approvers, or message recipients. However, now that the product is in general availability, some organizational messages experiences are restricted to particular Microsoft licenses. To learn more, see [Advanced features](#advanced-features).
 
