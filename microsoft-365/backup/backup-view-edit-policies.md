@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/16/2025
+ms.date: 04/21/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -54,14 +54,14 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     b. Under **Back up sites that match specific filters**, you can select **Site name or URL contains** or **Site last modified**, or both.
 
-    The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
+    The rule-based feature for bulk addition of sites in the backup policy creation workflow allows you to add up to 10 site names or URLs at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
 
     > [!NOTE]
     > The site last modified feature is in preview.
 
     c. Under **Select sites individually**, you can search and select sites you want to add to a backup policy.
 
-7. Once you've made the right selections, select **Next** to create the backup policy for SharePoint.
+7. Once you make the right selections, select **Next** to create the backup policy for SharePoint.
 
 8. On the **Review SharePoint backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
@@ -91,12 +91,12 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Overview page for Exchange.](../media/m365-backup/backup-overview-page-exchange.png)
 
-6. On the **Choose selection method** page, you can select shared or user mailboxes using any of the four available methods. Other Exchange recipient types, such as room mailboxes, are not supported at this time. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
+6. On the **Choose selection method** page, you can select shared or user mailboxes using any of the four available methods. Other Exchange recipient types, such as room mailboxes, aren't supported at this time. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
 
     > [!NOTE]
-    > Adding a mailbox to the backup policy will back up the primary and archive mailboxes.
+    > Adding a mailbox to the backup policy backs up the primary and archive mailboxes.
     >
-    > Adding a mailbox might temporarily fail if mailbox setup has not had time to complete. For example, if you recently created the user, licensed the user, or migrated the mailbox from on premises, you might see a transient failure while the mailbox is still being set up.
+    > Adding a mailbox might temporarily fail if the mailbox setup isn't yet complete. For example, if you recently created the user, licensed the user, or migrated the mailbox from on premises, you might see a transient failure while the mailbox is still being set up.
 
     ![Screenshot of the Choose selection method page for Exchange.](../media/m365-backup/backup-choose-selection-method-exchange.png)
 
@@ -106,14 +106,14 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
 
-    For example, if a user is added to a distribution list that is included in the dynamic rule, then that user will be included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they will be removed from the backup policy within 24 hours. That user’s existing backups will remain restorable until they expire based on their retention period, but new backups will no longer be taken until that individual is re-added to the included distribution list, or until they are re-added manually in a static addition.
+    For example, if a user is added to a distribution list included in the dynamic rule, that user is included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they're removed from the backup policy within 24 hours. The user's existing backups remain restorable until they expire based on their retention period. However, new backups aren't taken until the user is re-added to the included distribution list or manually re-added through a static addition.
 
     > [!NOTE]
     > The dynamic rule feature is in preview.
 
-    c. Under **Using filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
+    c. Under **Using filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy doesn't update dynamically if the groups or distribution list are updated later.
 
-    The rule-based feature for bulk addition of mailboxes via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or lists won't be dynamically updated in the system if users are added or removed from the original security group.
+    The rule-based feature for bulk addition of mailboxes via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example, groups or lists don't dynamically update in the system if users are added or removed from the original security group.
 
     > [!NOTE]
     > The site last modified feature is in preview.
@@ -121,9 +121,9 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
     d. Under **Select mailboxes individually**, you can search and select mailboxes you want to add to a backup policy.
 
     > [!NOTE]
-    > Hybrid deployments, where a user's primary mailbox resides on premises while their archive has been migrated to Exchange Online, are not supported.
+    > Hybrid deployments, where a user's primary mailbox resides on premises while their archive is migrated to Exchange Online, aren't supported.
 
-7. Once you've made the right selections, select **Next** to create the backup policy for Exchange.
+7. Once you make the right selections, select **Next** to create the backup policy for Exchange.
 
 8. On the **Review Exchange backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
@@ -161,18 +161,18 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
 
-    For example, if a user is added to a distribution list that is included in the dynamic rule, then that user will be included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they will be removed from the backup policy within 24 hours. That user’s existing backups will remain restorable for until they expire based on their retention period, but new backups will no longer be taken until that individual is re-added to the included distribution list, or until they are re-added manually in a static addition.
+    For example, if a user is added to a distribution list included in the dynamic rule, that user is included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they're removed from the backup policy within 24 hours. The user's existing backups remain restorable until they expire based on their retention period. However, new backups aren't taken until the user is re-added to the included distribution list or manually re-added through a static addition.
 
     > [!NOTE]
     > The dynamic rule feature is in preview.
 
-    c. Under **Using filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list members are updated later.
+    c. Under **Using filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy doesn't update dynamically if the groups or distribution list members are updated later.
 
-    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example, groups or lists won't be dynamically updated in the system if users are added or removed from the original security group.
+    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example, groups or lists aren't dynamically updated in the system if users are added or removed from the original security group.
 
     d. Under **Select accounts individually**, you can search and select accounts you want to add to a backup policy.
 
-7. Once you've made the right selections, select **Next** to create the backup policy for OneDrive.
+7. Once you make the right selections, select **Next** to create the backup policy for OneDrive.
 
 8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
@@ -186,7 +186,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
 ## View and edit backup policies
 
-You can edit the scope of OneDrive accounts, SharePoint sites, and Exchange mailboxes  associated with a backup policy. As part of edit, you can either add new accounts, sites, or mailboxes to or remove them from backup. Removing accounts, sites, and mailboxes from Microsoft 365 Backup doesn't mean existing backups will be deleted, rather it means additional backups won't be taken.
+You can edit the scope of OneDrive accounts, SharePoint sites, and Exchange mailboxes  associated with a backup policy. As part of edit, you can either add new accounts, sites, or mailboxes to or remove them from backup. Removing accounts, sites, and mailboxes from Microsoft 365 Backup doesn't mean existing backups aren't deleted, rather it means additional backups aren't taken.
 
 Select the **SharePoint**, **Exchange**, or **OneDrive** tab for steps to view and edit backup policies for that product.
 
@@ -204,20 +204,20 @@ Follow these steps to view and edit backup policies in SharePoint.
 
     a. To add new sites, on the **Backed up sites** tab, select **+ Add sites**.
 
-    b. Select sites by any method as discussed in the creation section. Once you have added sites to the list, follow the prompts to update the policy.
+    b. Select sites by any method as discussed in the creation section. Once you add sites to the list, follow the prompts to update the policy.
 
     ![Screenshot showing how to add sites to the existing SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-sharepoint-add-site.png)
 
-    c. To remove sites from existing SharePoint backup policy, on the **Backed up sites** tab, select the relevant sites, and then select **Remove**. Once you have done your changes, follow the prompts to remove the sites.
+    c. To remove sites from existing SharePoint backup policy, on the **Backed up sites** tab, select the relevant sites, and then select **Remove**. Once you're done with your changes, follow the prompts to remove the sites.
 
     ![Screenshot showing how to remove sites from SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-site.png)
 
-4. Once you have done your changes, follow the prompts to update the policy.
+4. Once you make your changes, follow the prompts to update the policy.
 
     ![Screenshot of the updated SharePoint sites backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-sites.png)
 
     > [!NOTE]
-    > Removing sites from backup policy means no future backups will be taken for those removed sites. Existing backups for the removed sites will not be deleted and will be charged.
+    > Removing sites from backup policy means no future backups are taken for those removed sites. Existing backups for the removed sites aren't deleted and will be charged.
 
 # [Exchange](#tab/exchange)
 
@@ -237,13 +237,13 @@ Follow these steps to view and edit backup policies for Exchange.
 
     - Or, on the **Exchange backup policy** panel, select **+ Add mailboxes**.
 
-    Select the mailboxes using any of the four available methods. Once you have added the mailboxes, follow the prompts to update the policy.
+    Select the mailboxes using any of the four available methods. Once you add the mailboxes, follow the prompts to update the policy.
 
     ![Screenshot showing how to add mailboxes to the existing Exchange backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-exchange-add-mailbox.png)
 
     b. To remove user mailboxes from existing backup policy, on the **Included mailboxes** tab, select the user mailboxes from the list, and select **Remove**.
 
-    Mailboxes added to a backup policy through a dynamic rule cannot be individually removed. To exclude these mailboxes from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list will exclude them from the policy. Alternatively, removing the entire distribution list from the rule will remove all mailboxes that were added through that list from the backup policy.
+    Mailboxes added to a backup policy through a dynamic rule can't be individually removed. To exclude these mailboxes from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list excludes them from the policy. Alternatively, removing the entire distribution list from the rule removes all mailboxes that were added through that list from the backup policy.
 
     ![Screenshot showing how to remove user mailboxes from Exchange backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-mailbox.png)
 
@@ -252,7 +252,7 @@ Follow these steps to view and edit backup policies for Exchange.
     ![Screenshot of the updated Exchange mailbox backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-mailbox.png)
 
     > [!NOTE]
-    > Removing mailboxes from backup policy means no future backups will be taken for those removed mailboxes. Existing backups for those mailboxes will not be deleted and will be charged.
+    > Removing mailboxes from backup policy means no future backups are taken for those removed mailboxes. Existing backups for those mailboxes aren't deleted and will be charged.
 
 # [OneDrive](#tab/onedrive)
 
@@ -272,13 +272,13 @@ Follow these steps to view and edit backup policies for OneDrive.
 
     - Or, on the **OneDrive accounts backup policy** panel, select **+ Add accounts**.
 
-    Select the accounts using any of the four available methods. Once you have added the accounts, follow the prompts to update the policy.
+    Select the accounts using any of the four available methods. Once you add the accounts, follow the prompts to update the policy.
 
     ![Screenshot showing how to add user accounts to the existing OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-add-account.png)
 
-    b. To remove accounts from existing backup policy, on the **Included accounts** tab, select the accounts from the list, and then select **Remove**. Once you have done your changes, follow the prompts to remove the accounts.
+    b. To remove accounts from existing backup policy, on the **Included accounts** tab, select the accounts from the list, and then select **Remove**. Once you make your changes, follow the prompts to remove the accounts.
 
-    Accounts added to a backup policy through a dynamic rule cannot be individually removed. To exclude these accounts from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list will exclude them from the policy. Alternatively, removing the entire distribution list from the rule will remove all accounts that were added through that list from the backup policy.
+    Accounts added to a backup policy through a dynamic rule can't be individually removed. To exclude these accounts from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list excludes them from the policy. Alternatively, removing the entire distribution list from the rule removes all accounts that were added through that list from the backup policy.
 
     ![Screenshot showing how to remove user accounts from OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-account.png)
 
@@ -287,7 +287,7 @@ Follow these steps to view and edit backup policies for OneDrive.
     ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-account.png)
 
     > [!NOTE]
-    > Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups for those accounts will not be deleted and will be charged.
+    > Removing accounts from backup policy means no future backups are taken for those removed accounts. Existing backups for those accounts aren't deleted and will be charged.
 
 ---
 
@@ -297,23 +297,23 @@ When deleting a dynamic rule, you have two options that determine how existing a
 
 #### Delete rule but continue backups
 
-The dynamic rule is converted into a static list. Backup continues for all user accounts that were included through the rule at the time of deletion. However, future changes to the original distribution lists or security groups—such as users being added or removed—will no longer be reflected in the backup policy. For example, if a user is added to a previously included group after the rule is deleted, they will not be automatically added to the backup policy.
+The dynamic rule is converted into a static list. Backup continues for all user accounts that were included through the rule at the time of deletion. However, future changes to the original distribution lists or security groups—such as users being added or removed—are no longer reflected in the backup policy. For example, if a user is added to a previously included group after the rule is deleted, they aren't automatically added to the backup policy.
 
 #### Delete rule and stop new backups
 
-The dynamic rule is removed, and no new backups will be taken for accounts previously included through the rule. Existing backups for these users remain restorable until they expire based on the configured retention period. You can re-enable backup for these users by manually adding them or by creating a new dynamic rule that includes them.
+The dynamic rule is removed, and no new backups are taken for accounts previously included through the rule. Existing backups for these users remain restorable until they expire based on the configured retention period. You can re-enable backup for these users by manually adding them or by creating a new dynamic rule that includes them.
 
 ## States of backup
 
 |States  |Definition  |
 |---------|---------|
 |Active     | Protection scope selected under backup policy is being actively backed up. |
-|Paused     | No further backups will be taken but already taken backups will be preserved. |
+|Paused     | No further backups are taken but already taken backups are preserved. |
 |Not set up | No backup policy is set up for this scope.  |
 |Processing | A change to backup policy or a restore is in progress.  |
 
 ## Multi-geo environments
 
-Microsoft 365 Backup supports the backup of sites and user accounts from both the central and satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via the site picker, search, or filter rules doesn't currently support multi-geo. Those user interface experiences today only support addition of sites in the tenant's central location.
+Microsoft 365 Backup supports the backup of sites and user accounts from both the central and satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via the site picker, search, or filter rules don't currently support multi-geo. The user interface experiences today only support addition of sites in the tenant's central location.
 
-Most importantly, data in the backups will honor the multi-geo residency requirements and keep data in the geo you've defined it to live.
+Most importantly, data in the backups honor the multi-geo residency requirements and keep data in the geo you define for it to live.
