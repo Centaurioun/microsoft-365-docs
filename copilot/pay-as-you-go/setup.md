@@ -4,8 +4,8 @@ description: Learn how to set up pay-as-you-go billing for Microsoft 365 Copilot
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 03/12/2025
-ms.reviewer: 
+ms.date: 04/21/2025
+ms.reviewer: nishanair
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -37,11 +37,32 @@ To set up pay-as-you-go, you must have the following prerequisites:
 
 ## Steps to set up pay-as-you-go billing
 
-1. In the Microsoft 365 admin center, go to **Copilot** > **Settings**.
-1. If not already set up, create an Azure subscription and resource group.
-1. Select the Azure subscription, resource group, and region for the pay-as-you-go setup.
-1. Enable consumption-based billing for the desired Copilot scenarios.
+### Add a Billing Policy
+1. In the Microsoft 365 admin center, go to **Copilot** > **Billing & usage**.
+2. On the "Billing policies" tab, select "Add a billing policy"
+3. Select the Azure subscription, resource group, and region for the pay-as-you-go setup.
+4. Select the user scope for the billing policy.
+    - All Users: All users that are part of teh tenant will be part of billing policy
+    - Specific group: Assign a specific security group to be part of the billing policy
+5. Review details and click on the "Create policy" button to complete the creation on billing policy.
 
+### Connect a Billing Policy to M365 Copilot Chat
+1. Navigate to the "Pay-as-upi-go services" tab.
+2. Select "M365 Copilot Chat" and choose the billing policy to connect to the Copilot service.
+
+### Disable pay-as-you-go
+Disabling pay-as-you-go for a Copilot service involves disconnecting the billing policies associated with the service such as "M365 Copilot Chat".
+1. Navigate to the "Pay-as-you-go services" tab, and select the Copilot service such as "M365 Copilot Chat".
+2. Unselect the billing policy, one at a time to disconnect the billing policy.
+3. Read and accept the confirmation to complete the disconnection of the billing policy.
+
+### Delete a Billing Policy
+1. Select a billing policy and click on the "Delete billing policy" button.
+2. Accept the confirmation dialogue. Any services connected to the billing policy will be disconnected.
+
+> [!NOTE]
+> When turning off pay-as-you-go, it may take up to two hours for users to stop being able to use the agents. Additionally, if the agent hasn't been used, it will no longer be accessible once pay-as-you-go is turned off.
+   
 ### What if pay-as-you-go is already set up in the Power Platform admin center?
 
 If you already set up pay-as-you-go in the Power Platform admin center, the two setups can coexist. You can also create another setup in the Microsoft 365 admin center without being double billed. The billing system ensures that you're only billed once for your user's usage, regardless of the setup location.
@@ -49,16 +70,9 @@ If you already set up pay-as-you-go in the Power Platform admin center, the two 
 > [!NOTE]
 > Although the setups can coexist, it's recommended to turn off pay-as-you-go in the Power Platform admin center before enabling it in the Microsoft 365 admin center.
 
-## Managing pay-as-you-go billing
 
-As an admin, you can do the following to manage pay-as-you-billing for your organization:
 
-- **View usage and costs** You can view detailed reports on Copilot usage and the associated costs.
-- **Edit billing** Modify an unhealthy Azure subscription, resource group, and billing region.
-- **Turn off billing** You can turn off pay-as-you-go billing for any of the Copilot services, removing the service from the agent's view. Once the service has been turned off, users without a Copilot license won't be able to use the service.
 
-> [!NOTE]
-> When turning off pay-as-you-go, it may take up to two hours for users to stop being able to use the agents. Additionally, if the agent hasn't been used, it will no longer be accessible once pay-as-you-go is turned off.
 
 ## Next step
 
