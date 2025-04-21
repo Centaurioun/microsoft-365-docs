@@ -2,8 +2,8 @@
 title: "Add a new employee to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 06/03/2024
 audience: Admin
