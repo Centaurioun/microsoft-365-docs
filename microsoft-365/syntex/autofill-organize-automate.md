@@ -25,9 +25,13 @@ description: Learn how to organize and automate columns in a document library in
 
 <!---
 Having useful columns and metadata in SharePoint document libraries enhances searchability, organization, and automation. It allows users to quickly find documents, group and filter files dynamically, and trigger workflows based on specific attributes. Additionally, it improves content discoverability and user experience by providing structured information and enabling efficient management of document libraries.
---->
 
 This feature integrates with the autofill columns service to streamline your workflows using content from your SharePoint document libraries. It recommends and creates new columns and metadata, unlocks advanced automations, and enhances search capabilities, understanding, and information protection. This helps ensure that the information in your document libraries remains easily accessible, relevant, well-organized, and up-to-date.
+--->
+
+You can use the SharePoint Agent Librarian Skill to create richer, more powerful document libraries to manage your content.
+
+Building on the autofill columns feature, this agent skill simplifies the process of configuring a document library and ensures consistent and accurate data capture. Recommended metadata columns enhance library-scoped agent Q&A and will soon be used to suggest rule-based flows to streamline business processes. This approach to automating document management keeps your SharePoint libraries organized, relevant, and up-to-date.
 
 ## Suggest and create columns
 
