@@ -55,11 +55,11 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/autofill-librarian-edit-column.png)
 
-7. On the **Edit column** panel, you can edit the column name or edit the prompt that generates the metadata. After you edit the prompt, test the prompt to make sure it gives you the information you want. When you are done, select **Save**.
+7. On the **Edit column** panel, you can edit the column name or edit the prompt that generates the metadata. After you edit the prompt, test the prompt to make sure it gives you the information you want. When you're done, select **Save**.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
 
-8. If you want to apply the suggested columns, select **Save changes**.
+8. If you want to apply the suggested columns to the document library, select **Save changes**.
 
 ## Planned capabilities coming soon
 
