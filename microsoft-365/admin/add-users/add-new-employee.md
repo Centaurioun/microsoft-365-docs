@@ -31,11 +31,11 @@ description: "Admins can learn how to add new employees to Microsoft 365 for bus
 
 # Add a new employee to Microsoft 365
 
-This article helps you onboard a new employee to Microsoft 365 for business. We assume you're an Admin and you've already [completed Microsoft 365 set up](../setup/setup.md), and now you have someone new joining your company.
+This article is for Microsoft 365 for business admins to help you onboard a new employee to your organization. We assume you've already [completed Microsoft 365 set up](../setup/setup.md), and now you have someone new joining your company.
   
 You're in the right place if your new employee needs Microsoft 365, and you're using a [Microsoft 365 plan]( https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products?rtc=1) that lets you install apps in Microsoft 365, like Word and Excel, on a computer.
   
- **Not an admin?** [Learn your way around Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) helps business and home users with setup.
+ **Not an admin?** [Learn about Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb).
   
  **No Microsoft 365 productivity apps in your plan?** Follow these steps, but skip the sections for installing apps. Instead, use the [Get started at Microsoft365.com](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804).
   
@@ -44,7 +44,7 @@ Here's a quick overview:
 |**Step**|**Why do this?**|
 |:-----|:-----|
 |[Step 1: Create a Microsoft 365 account for the employee](#step-1-create-a-microsoft-365-account-for-the-employee) <br/> |Each time a new employee joins your business, create an account for them so they can start using Microsoft 365.  <br/> |
-|[Step 2: Give the employee their user ID and password](#step-2-give-the-employee-their-user-id-and-password) <br/> |When you create an account, you get an ID and password that you can pass to your employee so they can sign in.  <br/> |
+|[Step 2: Give the employee their username and password](#step-2-give-the-employee-their-user-id-and-password) <br/> |When you create an account, you get an ID and password that you can pass to your employee so they can sign in.  <br/> |
 |[Step 3: Explain where to sign in](#step-3-explain-where-to-sign-in) <br/> |The sign in location is [https://www.office.com](https://www.office.com) <br/> |
 |[Step 4: Help your employee get started](#step-4-help-your-employee-get-started) <br/> |Let your employee know how to use OneDrive or any team sites in your organization.  <br/> |
 
@@ -52,19 +52,19 @@ Here's a quick overview:
 
 For instructions, see [Add users and assign licenses at the same time](add-users.md). When you set up your new employee, you can choose to send sign-in details to the employee's personal account. This way, they receive an email from Microsoft Online Service Team that tells them how to sign in to Microsoft 365.
   
-## Step 2: Give the employee their user ID and password
+## Step 2: Give the employee their username and password
 
-Unless you sent it to their personal email address, print the employee's sign in name and password, and hand it to them. Or tell them the information over the phone.
-  
-Because they won't yet have access to their email, don't send the information to that email address.
+To get the user their username and password, select Print to create a hard copy or a pdf of their credentials that you can securely share with them. Or tell them the information over the phone.
+
+Because they won't yet have access to their email, don't send the information to their new email address.
   
 ## Step 3: Explain where to sign in
 
 Just like Facebook, Amazon, or Gmail, your employee signs in to use Microsoft 365. Give them the following sign in information:
   
-- Sign in at [https://www.office.com](https://www.office.com).
+- Sign in at [https://www.microsoft.com](https://www.microsoft.com.com).
 
-- Select **Sign in**, then type the user ID and password.
+- Select **Sign in**, then enter the username and password.
 
 ## Step 4: Help your employee get started
 
@@ -74,7 +74,7 @@ And here's a quick reference to help get them started:
   
 |**Task**|**Find the details**|
 |:-----|:-----|
-|Sign in to Microsoft 365  <br/> |Go to [https://www.microsoft365.com](https://www.microsoft365.com), select **Sign in**, and then enter your user ID and password.  <br/> |
+|Sign in to Microsoft 365  <br/> |Go to [https://www.microsoft365.com](https://www.microsoft365.com), select **Sign in**, and then enter your username and password.  <br/> |
 |Install Microsoft 365 productivity apps onto your computer.  <br/><br/> |When you sign in, the home page has a link to download and install apps like Word and Outlook. Select **Install Microsoft 365**.         For instructions, see [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).  <br/> |
 |Set up your email in Outlook 2016 .  <br/> |Once Microsoft 365 productivity apps are installed on your computer, set up your email. For instructions, see [How to set up Outlook](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).  <br/> |
 |Set up Skype for Business so you can connect with coworkers or business partners in your company or around the world. You can start conversations with IM, voice, or video calls.  <br/> |[Install Skype for Business on your computer](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb).  <br/> <br/>To learn how to use Skype for Business, [watch a video.](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>Have you set up Skype for Business so your employees can contact people external to your business who are using the free Skype app? If not, tell your new employee so they know what to expect when using Skype for Business.  <br/> |
