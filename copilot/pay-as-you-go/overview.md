@@ -26,10 +26,6 @@ The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and cost-effectiv
 
 This article provides an overview of the pay-as-you-go plan, its benefits, and pricing details.
 
-This article applies to:
-
-- Microsoft 365 Copilot
-
 ## Why pay-as-you-go?
 
 The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and scalable solution for organizations looking to use AI capabilities without the commitment of a full license. When you enable consumption-based billing, administrators can better manage costs and provide users with access to Copilot features as needed.
