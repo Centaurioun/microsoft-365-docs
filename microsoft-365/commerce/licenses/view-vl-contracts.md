@@ -150,7 +150,6 @@ The **Contract details** panel displays information about your License ID contra
 
 The tabs on **Contract details** panel contain detailed information for the following areas:
 
-
 |Tab name  |Description  |
 |---------|---------|
 |Offerings     |Lists the types of products and services, including SA, available for purchase under the specific contract. |
@@ -230,7 +229,7 @@ If you have more upgrade license than underlying base licenses displayed in the 
 
 ### Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contacting volume licensing support](/licensing/contactd-us).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contacting volume licensing support](licensing/contactd-us).
 
 ## Related content
 
