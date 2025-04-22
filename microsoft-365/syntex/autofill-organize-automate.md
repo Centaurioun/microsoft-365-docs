@@ -33,17 +33,27 @@ This feature integrates with the autofill columns service to streamline your wor
 
 To get suggested columns in your document library, follow these steps.
 
-1. In the lower-right corner of your document library, select the **FAB-name** icon.
+1. In the lower-right corner of your document library, select the **Open agent quick actions** icon.
 
-2. From the list of actions, select **Organize this library** to launch the process.
+   ![Screenshot of a document library with the icon highlighted.](../media/content-understanding/autofill-librarian-open-actions-icon.png)
 
-3. Up to five new columns are suggested based on the content of the library. Suggested columns are indicated by a light bulb icon and a blue highlight. Evaluate whether the suggested columns are appropriate for your content.
+2. From the **Agents in SharePoint** menu, select **Organize this library** to launch the process.
+
+   ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/autofill-librarian-agents-in-sharepoint-menu.png)
+
+3. It takes a few moments for the suggested new columns to appear based on the content of your library. Suggested columns are highlighted and shown as **Suggested**.
+
+   ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/autofill-librarian-suggested-columns-added.png)
+
+4. Evaluate whether the suggested columns are appropriate for your content. If you want to apply the suggested columns, select **Save changes**.
 
 4. The new columns are populated with metadata. Evaluate whether the metadata is appropriate for your content.
 
 5. The metadata is based on suggested prompts. To edit or refine a prompt, select **Edit column**. On the **Edit column** panel, under **Prompt**, refresh the prompt to try other suggested prompts. You can also edit and reapply the prompt.
 
 6. To remove a suggested column, in the column heading, select **Remove**. You can also remove or add a column by using the column options menu.
+
+If you want to apply the suggested columns, select **Save changes**.
 
 ## Planned capabilities coming soon
 
