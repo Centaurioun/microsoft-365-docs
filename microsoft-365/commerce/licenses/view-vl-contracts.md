@@ -153,8 +153,7 @@ The tabs on **Contract details** panel contain detailed information for the foll
 |Tab name  |Description  |
 |---------|---------|
 |Offerings     |Lists the types of products and services, including SA, available for purchase under the specific contract. |
-|Contacts     |The agreement participants (sometimes referred to as legal participants) submitted by your Microsoft Partner or seller at the time of contract creation. To make any changes to these contacts, contact your Microsoft Partner or seller.<br/><br/>
-**NOTE**<br/>VL users who are given access after the contract creation aren't included in the contacts list. For more information, see [Manage volume licensing user roles | Microsoft Learn](manage-user-roles-vl.md). |
+|Contacts     |The agreement participants (sometimes referred to as legal participants) submitted by your Microsoft Partner or seller at the time of contract creation. To make any changes to these contacts, contact your Microsoft Partner or seller.<br/><br/>**NOTE**<br/>VL users who are given access after the contract creation aren't included in the contacts list. For more information, see [Manage volume licensing user roles | Microsoft Learn](manage-user-roles-vl.md). |
 |Tenants     |The list of tenants where online services are activated or if the services need to be activated This only applies to Enterprise, Enterprise Subscription, Campus, Schools, and US Gov (USG). |
 
 ## Find the Licensing Solution Partner for a volume licensing contract
@@ -187,12 +186,11 @@ The **License summary** page displays the list of software your organization is 
 |Column name  |Description  |
 |---------|---------|
 |Product family     |A group of related Microsoft products categorized together based on their functionality or purpose. |
-|Version     |The product version refers to a specific iteration or release of a product within a product family. For example, the Windows product family includes different versions like Windows 10, Windows 11, and Windows Server 2022.<br/><br/>
-The version is distinct from the term *edition*, which refers to different functional offerings within a product family that are usually released at the same time. For example, Windows Server 2022 has different editions like Standard, Datacenter, and Datacenter: Azure Edition. |
-|Product pool    |Microsoft organizes products purchased via VL into three pools. These pools are used to determine volume discounts, help with VL key assignment, and activation rules and processes. These rules and processes can vary by product pool. A product pool can be one of the following:<br/><br/><ul><li>Applications, like editions of Microsoft 365</li><li>Systems, like versions of the Windows operating system</li><li>Servers, like Exchange Server, Microsoft SQL Server, and Windows Server</li></ul> |
-|Type    |License types include the following:<br/><br/><ul><li>On-premise software</li>Online services and subscriptions<li></li><li>Subscriptions such as Visual Studio</li></ul> |
+|Version     |The product version refers to a specific iteration or release of a product within a product family. For example, the Windows product family includes different versions like Windows 10, Windows 11, and Windows Server 2022.<br/><br/>The version is distinct from the term *edition*, which refers to different functional offerings within a product family that are usually released at the same time. For example, Windows Server 2022 has different editions like Standard, Datacenter, and Datacenter: Azure Edition. |
+|Product pool    |Microsoft organizes products purchased via VL into three pools. These pools are used to determine volume discounts, help with VL key assignment, and activation rules and processes. These rules and processes can vary by product pool. A product pool can be one of the following:<br/><ul><li>Applications, like editions of Microsoft 365</li><li>Systems, like versions of the Windows operating system</li><li>Servers, like Exchange Server, Microsoft SQL Server, and Windows Server</li></ul> |
+|Type    |License types include the following:<br/><ul><li>On-premise software</li><li>Online services and subscriptions</li><li>Subscriptions such as Visual Studio</li></ul> |
 |Effective quantity    |The number of license entitlements per product and version with upgrades. This number is used to determine whether your organization has license shortfalls or surpluses by product and version. |
-|Active SA quantity    |The number of licenses covered by all types of SA (version upgrade protection) across all Microsoft VL programs, including:<br/><br/><ul><li>License and Software Assurance (L&SA)</li><li>Software Assurance (SA)</li><li>SA Step-Up</li></ul> |
+|Active SA quantity    |The number of licenses covered by all types of SA (version upgrade protection) across all Microsoft VL programs, including:<br/><ul><li>License and Software Assurance (L&SA)</li><li>Software Assurance (SA)</li><li>SA Step-Up</li></ul> |
 
 ## Troubleshooting
 
