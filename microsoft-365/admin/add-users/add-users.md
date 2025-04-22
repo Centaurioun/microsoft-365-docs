@@ -220,14 +220,14 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>.
 
 ::: moniker-end
     
-2. On the **Active users** page, select **Filter**, select the filter you want to change, and then select **Edit filter**. 
+2. On the **Active users** page, select **Filter**, select the filter you want to change, and then select **Edit filter**.
     
     > [!TIP]
-    > You can edit only custom views. 
+    > You can edit only custom views.
   
 3. On the **Custom filter** page, edit the information as needed, and then select **Save**. Or, to delete the filter, at the bottom of the page select **Delete**.
 
@@ -237,7 +237,6 @@ After you add a user, you get an email notification from Microsoft. The email co
 
 ## Related content
 
-[Add a new employee to Microsoft 365](add-new-employee.md) (article)\
 [Add several users at the same time to Microsoft 365](../../enterprise/add-several-users-at-the-same-time.md) (article)\
 [Restore a user in Microsoft 365](restore-user.md) (article)\
 [Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
