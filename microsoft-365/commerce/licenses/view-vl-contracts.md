@@ -154,8 +154,7 @@ The tabs on **Contract details** panel contain detailed information for the foll
 |---------|---------|
 |Offerings     |Lists the types of products and services, including SA, available for purchase under the specific contract. |
 |Contacts     |The agreement participants (sometimes referred to as legal participants) submitted by your Microsoft Partner or seller at the time of contract creation. To make any changes to these contacts, contact your Microsoft Partner or seller.<br/><br/>
-**NOTE**<br/>
-VL users who are given access after the contract creation aren't included in the contacts list. For more information, see [Manage volume licensing user roles | Microsoft Learn](manage-user-roles-vl.md). |
+**NOTE**<br/>VL users who are given access after the contract creation aren't included in the contacts list. For more information, see [Manage volume licensing user roles | Microsoft Learn](manage-user-roles-vl.md). |
 |Tenants     |The list of tenants where online services are activated or if the services need to be activated This only applies to Enterprise, Enterprise Subscription, Campus, Schools, and US Gov (USG). |
 
 ## Find the Licensing Solution Partner for a volume licensing contract
@@ -229,7 +228,7 @@ If you have more upgrade license than underlying base licenses displayed in the 
 
 ### Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contacting volume licensing support](licensing/contactd-us).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contacting volume licensing support](licensing/contact-us).
 
 ## Related content
 
