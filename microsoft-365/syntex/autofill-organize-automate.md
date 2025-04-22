@@ -47,17 +47,19 @@ To get suggested columns in your document library, follow these steps.
 
 4. Evaluate whether the suggested columns and the associated metadata are appropriate for your content.
 
-   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/autofill-librarian-dismiss-suggestion.png)
-
 5. If you want to remove a suggested column, select the column name, and then select **Dismiss suggestion**.
 
-4. The new columns are populated with metadata. Evaluate whether the metadata is appropriate for your content.
+   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/autofill-librarian-dismiss-suggestion.png)
 
-5. The metadata is based on suggested prompts. To edit or refine a prompt, select **Edit column**. On the **Edit column** panel, under **Prompt**, refresh the prompt to try other suggested prompts. You can also edit and reapply the prompt.
+6. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the prompt. To do so, select the column name, and then select **Edit column**.
 
-6. To remove a suggested column, in the column heading, select **Remove**. You can also remove or add a column by using the column options menu.
+   ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/autofill-librarian-edit-column.png)
 
-If you want to apply the suggested columns, select **Save changes**.
+7. On the **Edit column** panel, you can edit the column name or edit the prompt that generates the metadata. After you edit the prompt, test the prompt to make sure it gives you the information you want. When you are done, select **Save**.
+
+   ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
+
+8. If you want to apply the suggested columns, select **Save changes**.
 
 ## Planned capabilities coming soon
 
