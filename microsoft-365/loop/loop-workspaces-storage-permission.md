@@ -144,11 +144,11 @@ IT admins can use SharePoint Admin Center and PowerShell to find ownerless works
 
 ### Loop components created in Microsoft 365 outside of the Loop app or Copilot Pages
 
-See [Storage](#storage). When content is stored in OneDrive, if that user leaves the organization, the standard OneDrive IT policy is applied. When content is stored in SharePoint, the standard SharePoint IT policy is applied.
+See [Storage](#storage). When content is stored in OneDrive, if that user leaves the organization, the standard OneDrive IT policy is applied. When content is stored in SharePoint, the standard SharePoint IT policy is applied. Learn more about [OneDrive and SharePoint Retention and Deletion](/sharepoint/retention-and-deletion).
 
 ## Management of Loop and Copilot Pages content
 
-Refer to the [available admin capabilities](/microsoft-365/loop/loop-compliance-summary#available-admin-capabilities) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
+Refer to [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
 ## Pricing and licensing model for Loop app
 
