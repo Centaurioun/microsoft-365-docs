@@ -2229,6 +2229,16 @@
       "source_path": "/microsoft-365/admin/add-users/add-new-employee.md",
       "redirect_url": "https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "/microsoft-365/bookings/hide-service-on-booking-page.md",
+      "redirect_url": "/microsoft-365/bookings/define-service-offerings.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "/microsoft-365/bookings/set-buffer-time.md",
+      "redirect_url": "/microsoft-365/bookings/set-buffer-time.md",
+      "redirect_document_id": true
     }
   ]
 }
