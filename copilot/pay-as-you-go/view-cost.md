@@ -1,10 +1,10 @@
 ---
 title: View costs for Microsoft 365 Copilot pay-as-you-go
-description: Learn about how to view billing and costs for pay-as-you-go for Microsoft 365 Copilot services in the Microsoft 365 admin center, including Microsoft 365 Copilot Chat.
+description: Enterprise and company IT administrators can learn how to view billing and costs for pay-as-you-go for Microsoft 365 Copilot services in the Microsoft 365 admin center, including Microsoft 365 Copilot Chat.
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 04/21/2025
+ms.date: 04/22/2025
 ms.reviewer: nishanair
 audience: Admin
 ms.topic: get-started
@@ -16,6 +16,8 @@ ms.collection:
 - magic-ai-copilot
 - essentials-overview
 ms.custom: [copilot-learning-hub]
+appliesto:
+  - ✅ Microsoft 365 Copilot
 ---
 
 # View costs and billing for Microsoft 365 Copilot pay-as-you-go
@@ -26,9 +28,13 @@ Your organization's consumption of the pay-as-you-go service can be monitored in
 
 This article explains how administrators can view cost and billing details for pay-as-you-go.
 
+This article applies to:
+
+- Microsoft 365 Copilot
+
 ## Access usage and billing information
 
-To view detailed reports on Copilot usage and the associated costs, follow these steps:
+To view detailed reports on Copilot usage and the associated costs, use the following steps:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with one of the following administrator roles:
 
@@ -42,10 +48,10 @@ You can also view costs in the Azure portal using [Microsoft Cost Management](/a
 
 :::image type="content" source="../media/copilot-pay-azure.png" alt-text="Screenshot of the Azure portal that shows the Cost Management page filtered on the Microsoft 365 Copilot Chat cost.":::
 
-Billed amounts are updated daily (and sometimes more frequently). But, it can take up to 24 hours after usage of a service to show up in Azure Cost Management.
+Billed amounts are updated daily and sometimes more frequently. It can take 24 hours after usage of a service to show in Microsoft Cost Management.
 
 ## Related articles
 
-- [Microsoft 365 Copilot pay-as-you-go service](overview.md)
+- [Microsoft 365 Copilot pay-as-you-go service](overview.md) (article)
 - [Set up pay-as-you-go for Microsoft 365 Copilot](setup.md) (article)
 - [Meters for Microsoft 365 Copilot pay-as-you-go](meters.md) (article)

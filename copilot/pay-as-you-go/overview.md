@@ -1,11 +1,11 @@
 ---
 title: Microsoft 365 Copilot pay-as-you-go overview
-description: Learn about the pay-as-you-go service for Microsoft 365 Copilot Chat and how you can enable consumption-based billing for Copilot.
+description: Enterprise and company IT admins can learn about the pay-as-you-go service for Microsoft 365 Copilot services, including Copilot Chat. Get an overview of the consumption-based billing process, connecting the billing to a Copilot service, and monitoring costs.
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 04/21/2025
-ms.reviewer: 
+ms.date: 04/22/2025
+ms.reviewer: nishanair
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -20,7 +20,7 @@ appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Microsoft 365 Copilot pay-as-you-go overview
+# Microsoft 365 Copilot pay-as-you-go overview for IT admins
 
 The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and cost-effective way for organizations to access Copilot services. This plan allows administrators to enable consumption-based billing for specific Copilot scenarios, providing users with the ability to use Copilot features without committing to a full license.
 
@@ -34,6 +34,12 @@ This article applies to:
 
 The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and scalable solution for organizations looking to use AI capabilities without the commitment of a full license. When you enable consumption-based billing, administrators can better manage costs and provide users with access to Copilot features as needed.
 
+The following services are available for pay-as-you-go billing:
+
+- Microsoft 365 Copilot Chat
+
+More services will be added in the future. No ETA.
+
 ### Common use cases
 
 - **Establish usage patterns** - Understand adoption patterns for new apps to determine if prepaid licenses make financial sense for your business.
@@ -41,7 +47,7 @@ The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and scalable solu
 
 ## How does it work?
 
-The pay-as-you-go plan allows administrators to set up billing for Microsoft 365 Copilot Chat, enabling users to access declarative agents on a consumption basis. You can manage billing, view costs, and turn off services as needed.
+The pay-as-you-go plan allows administrators to set up billing and enable users to access declarative agents on a consumption basis. You can manage billing, view costs, and turn off services as needed.
 
 The following administrator roles in the [Microsoft 365 admin center](https://admin.microsoft.com) can view and manage pay-as-you-go:
 
@@ -65,19 +71,19 @@ The billing policy acts as a distinct billing identifier that can be associated 
 - To enable administrators to enforce governance
 - To link users to a policy, establishing billing rules for a group of users
 
-For the steps to add or update a billing policy, see [Set up pay-as-you-go for Microsoft 365 Copilot Chat](setup.md).
+For the steps to add or update a billing policy, see [Set up pay-as-you-go for Microsoft 365 Copilot](setup.md).
 
 #### What you need to know
 
-- **Creating a billing policy** defines the billing infrastructure for pay-as-you-go that consists of an Azure subscription and a set of users. Creating a billing policy doesn't complete the billing setup. The billing policy must be connected to Microsoft 365 Copilot Chat to complete the setup.
+- **Creating a billing policy** defines the billing infrastructure for pay-as-you-go that consists of an Azure subscription and a set of users. Creating a billing policy doesn't complete the billing setup. The billing policy must be connected to the Copilot service to complete the setup.
 
 - **Deleting a billing policy** removes the billing infrastructure. Any connected services are disconnected from pay-as-you-go billing.
 
 ### Connect billing policy to Copilot services
 
-After you create a billing policy, the admin must link it to a Copilot service, such as Microsoft 365 Copilot Chat. This connection enables all users covered by the billing policy to access Copilot Chat.  
+After you create a billing policy, the admin must link it to a Copilot service, such as Microsoft 365 Copilot Chat. This connection enables all users covered by the billing policy to access the Copilot service.  
 
-Admins can disconnect a billing policy when it's no longer needed for the service. Upon disconnection, users linked to that billing policy lose access to the metered agents in Copilot Chat.  
+Admins can disconnect a billing policy when it's no longer needed for the service. Upon disconnection, users linked to that billing policy lose access to the metered agents in the Copilot service.  
 
 The following conditions apply when managing billing policies:
 
@@ -92,7 +98,7 @@ In the future, new features using pay-as-you-go billing are announced in a [mess
 
 When you use a Microsoft pay-as-you-go service linked to an Azure subscription, the service gets billed using the Azure subscription that you specified when you set up pay-as-you-go billing. The Azure subscription uses the Azure meter set up for the service.
 
-To learn more about meters, see [Meters for Microsoft 365 Copilot Chat pay-as-you-go](meters.md).
+To learn more about meters, see [Meters for Microsoft 365 pay-as-you-go](meters.md).
 
 ## Monitoring and billing
 

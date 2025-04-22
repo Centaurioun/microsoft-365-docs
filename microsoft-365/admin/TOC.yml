@@ -559,7 +559,11 @@ items:
     - name: Troubleshoot
       href: /office/troubleshoot/  
     - name: Contact support
-      href: get-help-support.md
+      items:
+        - name: Get support for Microsoft 365 for business
+          href: get-help-support.md
+        - name: Case creation and diagnostic data
+          href: support-diagnostic-information-collection.md
     - name: Find support phone numbers
       href: https://support.microsoft.com/topic/customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2#ID0EBBD=signinorgid
     - name: Navigation guide

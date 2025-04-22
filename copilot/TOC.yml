@@ -44,13 +44,13 @@ items:
       href: microsoft-365-copilot-enablement-resources.md
 - name: Pay-as-you-go for Microsoft 365 Copilot
   items:
-    - name: Microsoft 365 Copilot pay-as-you-go overview
+    - name: Pay-as-you-go overview
       href: pay-as-you-go/overview.md
-    - name: Set up pay-as-you-go for Microsoft 365 Copilot Chat
+    - name: Set up pay-as-you-go
       href: pay-as-you-go/setup.md
-    - name: Meters for Microsoft 365 Copilot Chat pay-as-you-go
+    - name: Meters for pay-as-you-go
       href: pay-as-you-go/meters.md
-    - name: View costs and billing for Microsoft 365 Copilot Chat pay-as-you-go
+    - name: View costs and billing for pay-as-you-go
       href: pay-as-you-go/view-cost.md
 - name: Manage Microsoft 365 Copilot
   items:
