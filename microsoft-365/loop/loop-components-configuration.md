@@ -26,16 +26,16 @@ description: "Manage Copilot Pages and Loop in your organization"
 
 # Loop admin policies for Copilot Pages, Loop components, and Loop workspaces
 
-Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Learn more about [Loop storage](/microsoft-365/loop/loop-workspaces-storage-permission#loop-storage), which is combined with SharePoint in your tenant. IT administrators need to manage creation of Loop content and integrations using **BOTH**:
+Copilot Pages, Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Learn more about [Loop storage](/microsoft-365/loop/loop-workspaces-storage-permission#loop-storage), which is combined with SharePoint in your tenant. IT administrators need to manage creation of Loop content and integrations using **BOTH**:
 
 1. Cloud Policy
 1. SharePoint PowerShell command (Teams only)
 
-Loop workspaces, Copilot Pages, and the `.loop` files and content created in Loop workspaces are stored in SharePoint Embedded containers. IT admins can manage creation of Loop workspaces using Cloud Policy.
+Copilot Pages, Loop workspaces, and the `.loop` files and content created in Loop workspaces are stored in SharePoint Embedded containers. IT admins can manage creation of Loop workspaces using Cloud Policy.
 
 ## Requirements
 
-Just like other Microsoft 365 experiences, Loop and Copilot Pages also leverage core services across SharePoint and Microsoft 365. To effectively enable creation of Loop content and Loop integration experiences, Copilot Pages, or OneDrive and SharePoint files-backed experiences powered by Fluid Framework, follow the instructions in the [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services are available and enabled.
+Just like other Microsoft 365 experiences, Copilot Pages and Loop also leverage core services across SharePoint and Microsoft 365. To effectively enable creation of Loop content and Loop integration experiences, Copilot Pages, or OneDrive and SharePoint files-backed experiences powered by Fluid Framework, follow the instructions in the [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services are available and enabled.
 
 ### WebSocket connections
 
@@ -66,7 +66,7 @@ There are several IT Admin policy settings provided to enable creation of Loop c
 
 |Configure  |Setting Type  |Specific Policy  |Notes  |
 |---------|---------|---------|---------|
-|Copilot Pages creation and integration  |  Cloud Policy  |  **Create and view Copilot Pages**  |  Applies to: Copilot Pages in a Copilot chat experience  |
+|Copilot Pages creation  |  Cloud Policy  |  **Create and view Copilot Pages**  |  Applies to: Copilot Pages in a Copilot chat experience  |
 |Loop workspaces creation  |  Cloud Policy  |  **Create Loop workspaces in Loop**  |  Applies to: Loop workspaces (previously titled Create and view Loop workspaces in Loop)  |
 |Loop component creation and integration across Microsoft 365  |  Cloud Policy  | **Create and view Loop files in Microsoft apps that support Loop**  |  Applies to: <br/> - Outlook integration<br> - [Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5) integration<br> - OneNote integration<br> - Whiteboard integration<br> Does **NOT** apply to:<br> - Loop workspaces<br> - Teams integration<br> - Copilot Pages  |
 |Outlook creation and integration of Loop experiences  |  Cloud Policy  |  **Create and view Loop files in Outlook**  |  First checks **Create and view Loop files in Microsoft apps that support Loop**; then applies **Create and view Loop files in Outlook**, if applicable.<br/><br/>Applies to: <br/> - Outlook<br/> - [Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5)  |
