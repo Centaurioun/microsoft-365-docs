@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 01/16/2025
+ms.date: 04/23/2025
 audience: enabler
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -48,7 +48,7 @@ SharePoint eSignature enables binding agreements between parties. External parti
 
 ### Purview integration
 
-SharePoint eSignature enables logging of eSignature activities in the Purview Audit log. Activities can be viewed by opening the audit log and searching for eSignature* in the 'Activities - operation names' field. The activities logged are: 
+SharePoint eSignature enables logging of eSignature activities in the Purview Audit log. Activities can be viewed by opening the audit log and searching for *eSignature* in the **Activities - operation names** field. The activities logged are:
 
 - Request was created
 - Request was sent
