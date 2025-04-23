@@ -104,8 +104,6 @@ items:
           items:
            - name: Add users
              href: add-users/add-users.md
-           - name: Add a new employee
-             href: add-users/add-new-employee.md
            - name: Assign or unassign licenses for users
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
