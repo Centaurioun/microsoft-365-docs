@@ -60,7 +60,7 @@ Buffer time defaults are set on the **Service details** page in Bookings. Like a
 
 The buffer time setting can be found on the **Service details** page. Before it can be set for a given service, you must enable the buffer time setting by selecting the buffer time toggle. This causes the **Before** and **After** drop-downs to appear, which are used to pick the default amount of time to hold before and after each booking, as shown here:
 
-   ![Screenshot: image of Bookings with buffer time enabled.](../media/bookings-buffertime.png)
+   ![Screenshot showing Bookings with buffer time enabled.](../media/bookings-buffertime.png)
 
 ### Buffer time and availability
 
