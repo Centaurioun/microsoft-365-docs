@@ -60,8 +60,8 @@ Follow these steps to use SharePoint eSignature for Microsoft Word.
     ![Screenshot of the eSignature side panel in Word with the Add recipient option.](../media/content-understanding/esignature-add-recipient-option-word.png)
 
 4. Add one or more recipients to sign the document.
- 
 
+    ![Screenshot of the Recipient panel in Word.](../media/content-understanding/esignature-recipient-fields-word.png)
 
 5. Select the document location where you want to add an eSignature field. From the side panel, select **Insert** to add signature fields to the document.
 
@@ -69,12 +69,16 @@ Follow these steps to use SharePoint eSignature for Microsoft Word.
 
 7. Repeat step 5 for all fields you want to be inserted into the document.
 
+    ![Screenshot of the Recipient panel to add more fields in Word.](../media/content-understanding/esignature-recipient-more-fields-word.png)
+
 8. Optionally, you can add a message to the recipient.
 
     ![Screenshot of the Optional message option in Word.](../media/content-understanding/esignature-optional-message-word.png)
 
 9. Select **Create request**.
- 
+
+    ![Screenshot of the Create request button in Word.](../media/content-understanding/esignature-create-request-button-word.png)
+
 10. A PDF of the Word document is automatically created for recipients to sign.
 
 ## Tips (TBD)
