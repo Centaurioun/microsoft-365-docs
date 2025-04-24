@@ -50,7 +50,7 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/autofill-librarian-suggested-columns-added.png)
 
-4. Evaluate whether the suggested columns and the associated metadata are appropriate for your content.
+4. Review the suggested columns and the associated metadata to make they are appropriate for your content.
 
 5. If you want to remove a suggested column, select the column name, and then select **Dismiss suggestion**.
 
