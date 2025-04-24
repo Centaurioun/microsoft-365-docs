@@ -94,12 +94,15 @@ To let users use SharePoint eSignature in Word, you need to turn on the Word fea
 
 The **Allow the use of SharePoint eSignature for Microsoft Word** group policy setting allows you to control whether users can request eSignatures directly from Word in tenants that have enabled the Microsoft native eSignature service. If the policy is inactive or not applied, the eSignature action is not visible and invokable on the **Insert** ribbon in Word.
 
-You can acquire and deploy the **Allow the use of SharePoint eSignature for Microsoft Word** group policy via the standard methods of the Cloud Policy service or Microsoft 365, Microsoft Intune, and Group Policy Manager.
+You can acquire and deploy the **Allow the use of SharePoint eSignature for Microsoft Word** group policy via the standard methods of:
 
-You can acquire **Allow the use of SharePoint eSignature for Microsoft Word** group policy the policy via the Microsoft Download Center: [Administrative Template files (ADMX/ADML) for Microsoft Office](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
+- Cloud Policy service for Microsoft 365
+- Microsoft Intune
+- Group Policy Manager
 
+Or, you can acquire the policy via the Microsoft Download Center: [Administrative Template files (ADMX/ADML) for Microsoft Office](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
 
-4.	Include guidance on PowerShell or regkey application?
+[Include guidance on PowerShell or regkey application?]
 
 
 ### Manage sites
