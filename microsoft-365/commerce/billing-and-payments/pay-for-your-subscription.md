@@ -125,7 +125,7 @@ If you have an MOSA billing account type, and you personally added the payment m
 
 ### Bank details used to send wire transfer payments
 
-If your default payment method is wire transfer, check your invoice for payment instructions. Find payment instructions for your country/region in the following list:
+Find payment instructions for your country/region in the following list:
 
 > [!div class="op_single_selector"]
 > - **Choose your country or region**
