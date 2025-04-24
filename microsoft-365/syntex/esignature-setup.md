@@ -78,7 +78,7 @@ To select which signature providers to use, follow these steps.
 
 ### Allow signature requests in Microsoft Word
 
-To let users use SharePoint eSignature in Word, you need to turn on the Word feature and apply the group policy.
+To let users use SharePoint eSignature in Word, you need to [turn on the Word feature](#turn-on-the-word-feature) and [apply the group policy](#apply-the-group-policy).
 
 #### Turn on the Word feature
 
