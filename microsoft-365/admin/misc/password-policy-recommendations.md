@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/28/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -62,7 +62,7 @@ Good password practices fall into a few broad categories:
 
 The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
 
-- Maintain an eight-character minimum length requirement
+- Maintain an fourteen-character minimum length requirement
 
 - Don't require character composition requirements. For example, \*&amp;(^%$
 

@@ -1,12 +1,12 @@
 ---
-title: Use a prebuilt model to extract information from contracts in Microsoft Syntex
+title: Use a prebuilt model to extract information from contracts in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/11/2024
+ms.date: 02/11/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -14,11 +14,11 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use a prebuilt contracts model in Microsoft Syntex.
+description: Learn how to use a prebuilt document processing model for contracts in SharePoint.
 
 ---
 
-# Use a prebuilt model to extract information from contracts in Microsoft Syntex
+# Use a prebuilt model to extract information from contracts in SharePoint
 
 The *contracts prebuilt model* analyzes and extracts key information from contract documents. The model recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
 
@@ -34,7 +34,7 @@ To use a contracts model, follow these steps:
 
 ## Step 1: Create a contracts model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a contracts prebuilt model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md#create-a-prebuilt-model) to create a contracts prebuilt model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
@@ -115,3 +115,4 @@ To rename an extractor from the **Extractors** panel:
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
 
+For information about file types, languages, optical character recognition, and other considerations for this prebuilt model, see [Requirements and limitations for prebuilt document processing in SharePoint](prebuilt-requirements.md).

@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 admin center Teams app usage reports"
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 ms.date: 1/25/2024
 audience: Admin
@@ -14,7 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- campaignIDs-batch1
 search.appverid:
 - BCS160
 - MST160

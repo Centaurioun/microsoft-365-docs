@@ -4,14 +4,12 @@ ms.author: pritikar
 author: kwekuako
 manager: scotv
 ms.date: 07/11/2024  
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-overview
-- essentials-get-started
 - essentials-manage
 ms.custom: QuickDraft
 AI_Usage:  

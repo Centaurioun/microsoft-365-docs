@@ -5,8 +5,8 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/30/2024
-ms.topic: conceptual
+ms.date: 04/12/2025
+ms.topic: article
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:

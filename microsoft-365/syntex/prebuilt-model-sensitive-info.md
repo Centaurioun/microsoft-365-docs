@@ -1,12 +1,12 @@
 ---
-title: Use a prebuilt model to detect sensitive information from documents in Microsoft Syntex
+title: Use a prebuilt model to detect sensitive information from documents in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 06/28/2024
+ms.date: 01/28/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
 search.appverid: 
@@ -14,11 +14,11 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use a prebuilt sensitive information model in Microsoft Syntex.
+description: Learn how to use a prebuilt document processing model to detect sensitive information in SharePoint.
 
 ---
 
-# Use a prebuilt model to detect sensitive information from documents in Microsoft Syntex
+# Use a prebuilt model to detect sensitive information from documents in SharePoint
 
 The *sensitive information prebuilt model* analyzes and detects key information from documents, and then optionally extracts the information. The model recognizes documents in various formats and [detects sensitive information](prebuilt-model-sensitive-info-entities.md), such as personal and financial identification numbers, physical and email addresses, and phone numbers.
 
@@ -67,7 +67,7 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the library showing entities detected.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
 
-For information about file types, languages, optical character recognition, and other considerations for this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#sensitive-information-processing).
+For information about file types, languages, optical character recognition, and other considerations for this prebuilt model, see [Requirements and limitations for prebuilt document processing in SharePoint](prebuilt-requirements.md).
 <!---
 ## Create a rule to apply a sensitivity label
 

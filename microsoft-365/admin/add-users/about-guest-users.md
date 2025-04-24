@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/30/2024
+ms.date: 04/02/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -39,11 +39,11 @@ You must be a global administrator to perform this task.
 
 ## Watch: Add guests to Teams
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=573823a3-19cf-4b2e-932f-7be1896b2821]
 
 ## Watch: Join a team as a guest
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b7af266b-0507-4922-b11d-8258865f44dd]
 
 ## Understanding guest accounts in Microsoft 365
 

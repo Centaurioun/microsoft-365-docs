@@ -24,9 +24,10 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - GAUpdates
+- campaignIDs-batch1
 search.appverid: MET150 
 description: "Learn how to reactivate a subscription in the Microsoft 365 admin center."
-ms.date: 07/22/2024
+ms.date: 03/27/2025
 ---
 
 # Reactivate your subscription in the Microsoft 365 admin center

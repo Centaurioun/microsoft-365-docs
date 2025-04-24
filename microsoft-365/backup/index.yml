@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/31/2024 #Required; mm/dd/yyyy format
+  ms.date: 04/08/2025 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
   titleSuffix: Microsoft 365 Backup
 
@@ -56,6 +56,14 @@ landingContent:
             url: backup-offboarding.md
 
 # Card 4
+  - title: Data privacy & protection
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Privacy, security, & compliance
+            url: backup-privacy-security.md
+
+# Card 5
   - title: More solutions
     linkLists:
       - linkListType: overview

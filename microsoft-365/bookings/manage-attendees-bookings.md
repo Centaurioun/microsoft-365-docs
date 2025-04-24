@@ -3,7 +3,7 @@ title: "Manage group attendees in Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/17/2024
+ms.date: 04/10/2025
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Manage your group attendees in Microsoft. Add or remove customers from a booking."
 ---
 
