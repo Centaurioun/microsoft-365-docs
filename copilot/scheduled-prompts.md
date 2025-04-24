@@ -21,9 +21,6 @@ description: "Learn about managing Scheduled prompts for Microsoft 365 Copilot, 
 
 Scheduled prompts in Microsoft 365 Copilot allow users to automate Copilot prompts to run at set times and frequencies in Microsoft Teams, Office.com/chat, and Microsoft Outlook for the web and Desktop. As an admin, you can manage this feature for your organization.
 
->[!NOTE]
-> This feature is in preview. As an admin, you can opt in to making this feature available to your organization. To learn more, see [Opt in or out of preview](#opt-in-or-out-of-preview).
-
 ## Before you begin
 
 You must have both of the following licenses to manage scheduled prompts:
