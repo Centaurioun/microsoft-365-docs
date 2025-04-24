@@ -87,7 +87,7 @@ To complete the steps in this article, you must be a Global Administrator or a T
 5. On the **Location** page, select a Microsoft Entra attribute or a custom user attribute that defines the location your frontline employees work in. You can only choose one location attribute. You can change the attribute, as needed, after you submit your setup. For example, if you would like to create a team for each city, enter the “City” attribute and we will group frontline workers in the same city into teams.
 All custom attributes are case sensitive and must start with an "extension_" prefix. Only custom attributes of the String data type are supported.
 
-:::image type="content" source="media/dtas-appoint-attr-for-location.png" alt-text="Screenshot showing how to choose the Microsoft Entra attribute to define location in a organization." lightbox="media/dtas-appoint-attr-for-location.png":::
+:::image type="content" source="media/dtas-appoint-attr-for-location.png" alt-text="Screenshot showing how to choose the Microsoft Entra attribute to define location in an organization." lightbox="media/dtas-appoint-attr-for-location.png":::
 
 6. On the **Team settings** page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format to all your teams.
 
@@ -164,7 +164,7 @@ Why am I seeing 0 users while trying to deploy?
 Seeing zero users next to a location name (ex. “Redmond”) in the deploy teams table indicates that there is a user in the provided owner groups with the specified location value (ex. Manager_A with city attribute equal to “Redmond”) but no users in the provided frontline worker groups has that same location value (i.e. no users with the city attribute equal to “Redmond”). The admin should reexamine their selected frontline groups or investigate if this is a data hygiene issue.
 
 ### Why am I not seeing some locations?
-The locations displayed in the deploy teams table are the list of unique location values from the users in the selected owner groups. This is to ensure the team deploys successfully as owners are mandatory. This means that an admin can create a team with only owners and no members as well(please see “Why am I seeing 0 users while trying to deploy?” FAQ for more information on this scenario).  
+The locations displayed in the deploy teams table are the list of unique location values from the users in the selected owner groups. This is to ensure the team deploys successfully as owners are mandatory. This means that an admin can create a team with only owners and no members as well (please see “Why am I seeing 0 users while trying to deploy?” FAQ for more information on this scenario).  
 
 ## Related articles
 - [Learn where to start with a frontline deployment](flw-deploy-overview.md)
