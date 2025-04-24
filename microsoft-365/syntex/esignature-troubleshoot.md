@@ -32,7 +32,7 @@ The PDF viewer is opened by selecting a PDF file from a SharePoint library. The 
 
 ### Collaboration settings
 
-SharePoint eSignature is an extension of SharePoint document storage and management service. Existing access, sharing, and data loss prevention policies at the tenant, SharePoint site, library, folder, or file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
+SharePoint eSignature is an extension of SharePoint document storage and management service. Existing access, sharing, and data loss prevention policies at various levels (tenant, SharePoint site, library, folder, or file) might impact whether a request can be initiated from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
 
 - If encryption is applied (for example, sensitivity labeling applied to the file), the ability to view the document wouldn't be available from SharePoint and therefore can't start a Signature request from there. Read more about [sensitivity labels](/purview/sensitivity-labels).
 
@@ -83,7 +83,7 @@ To avoid potential issues, you should check the status and settings of the docum
 
 ## Unable to create a signature request in Word
 
-#### I do not have the eSignature ribbon action in Word
+#### I don't have the eSignature ribbon action in Word
 
 - The ribbon action is available for Word Desktop on the Beta and Current channels.
 - To change your channel, in Word, go to **File** > **Account** > **Update Channel**.
@@ -91,23 +91,23 @@ To avoid potential issues, you should check the status and settings of the docum
     ![Screenshot showing the Update Channel button in Word.](../media/content-understanding/esignature-word-update-channel.png)
 
 - Select the **Beta** channel.
-- If you don't have the **Update Channel** option, your admin has disabled it, or you do not have local administrator permissions. Learn more about the [Update Channel option](/microsoft-365-apps/insider/deploy/user-choice).
+- If you don't have the **Update Channel** option, your admin has disabled it, or you don't have local administrator permissions. Learn more about the [Update Channel option](/microsoft-365-apps/insider/deploy/user-choice).
 
-#### When selecting the ribbon action in Word, I receive a message that SharePoint eSignature is not enabled
+#### When I select the ribbon action in Word, I receive a message that SharePoint eSignature isn't enabled
 
 - The Word document must be located on a SharePoint-enabled site.  
-- Word has not been enabled in the Microsoft 365 admin center.
+- Word hasn't been enabled in the Microsoft 365 admin center.
 
     ![Screenshot showing that eSignature is turned off.](../media/content-understanding/esignature-turned-off-message.png)
 
 #### I got a message to change the sensitivity label
 
-- SharePoint eSignature supports unencrypted documents such as General, non-Business, Public, Confidential (Any user/No protection), High Confidential (Any user/No protection), and non-encrypted labelled documents.
+- SharePoint eSignature supports unencrypted documents such as General, non-Business, Public, Confidential (Any user/No protection), High Confidential (Any user/No protection), and non-encrypted labeled documents.
 
-#### I cannot send a request in Word to new external signers
+#### I can't send a request in Word to new external signers
 
-- Your admin hasn't configured SharePoint eSignature to send requests to external senders who are not existing guests on your tenant. *[More info.]*
+- Your admin hasn't configured SharePoint eSignature to send requests to external senders who aren't existing guests on your tenant. *[More info.]*
 
-#### As an admin, I do not have a toggle to disable requesting signatures from PDFs
+#### As an admin, I don't have a toggle to disable requesting signatures from PDFs
 
-- The PDF eSignature capability is enabled by default and cannot be disabled if SharePoint eSignature is enabled as a provider.
+- The PDF eSignature capability is enabled by default and can't be disabled if SharePoint eSignature is enabled as a provider.
