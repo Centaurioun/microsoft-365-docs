@@ -61,7 +61,7 @@ To complete the steps in this article, you must be a Global Administrator or a T
 
 ### Prerequisites
 - Admin using the Frontline Deployment tool must have a Microsoft 365 F1, F3, E3 or E5 license. 
-- Teams owners and uUsers must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they need a Microsoft Entra ID P1 add-on license. [Learn more](flw-licensing-options.md) about frontline licensing.
+- Teams owners and users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they need a Microsoft Entra ID P1 add-on license. [Learn more](flw-licensing-options.md) about frontline licensing.
 - Ensure you can define your frontline workers and managers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a human capital management (HCM) connector or use [the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale. 
     - All your frontline workers should be added to up to 32 groups in Microsoft Entra. 
     - All your frontline managers at each of your frontline locations should be added to up to 20 groups on Microsoft Entra. 
@@ -130,7 +130,7 @@ Create new teams for newly opened locations:
 2. In the table, choose **Deploy**.
 3. Select the **Refresh location** button, and then proceed when prompted by the dialog box. This process can take several hours depending on the number of new locations.
 
-:::image type="content" source="media/dtas-refresh-frontline-teams.png" alt-text="Screenshot showing the refesh locations in deploy frontline teams page." lightbox="media/dtas-refresh-frontline-teams.png":::
+:::image type="content" source="media/dtas-refresh-frontline-teams.png" alt-text="Screenshot showing the refresh locations in deploy frontline teams page." lightbox="media/dtas-refresh-frontline-teams.png":::
 
 4.	After the refresh is completed, your setup status shows as Complete. You can proceed to deploy your new teams. Deployment can take several hours depending on how many new teams you're deploying.
 
