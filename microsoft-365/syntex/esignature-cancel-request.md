@@ -1,5 +1,5 @@
 ---
-title: Cancel a signature request from PDF or Word in SharePoint eSignature
+title: Cancel a signature request from Word or PDF in SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 description: Learn how to cancel a signature request in SharePoint eSignature. 
 ---
 
-# Cancel a signature request from PDF or Word in SharePoint eSignature
+# Cancel a signature request from Word or PDF in SharePoint eSignature
 
 If you create a signature request and want to cancel it, follow these steps.
 
