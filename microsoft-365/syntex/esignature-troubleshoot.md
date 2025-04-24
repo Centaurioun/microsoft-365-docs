@@ -80,3 +80,32 @@ To avoid potential issues, you should check the status and settings of the docum
 - Microsoft Entra ID collaboration settings
 - SharePoint sharing settings and policies
 - User permissions and document access
+
+## Unable to create a signature request in Word
+
+#### I do not have the eSignature ribbon action in Word.
+
+- The ribbon action is available for Word Desktop on the Beta and Current channels.
+- To change your channel, in Word, go to **File** > **Account** > **Update Channel**.
+
+    ![Screenshot showing the eSignature panel with Word selected.](../media/content-understanding/esignature-word-turn-on.png)
+
+- Select the **Beta** channel.
+- If you don't have the **Update Channel** option, your admin has disabled it, or you do not have local administrator permissions. Learn more about the [Update Channel option](/microsoft-365-apps/insider/deploy/user-choice).
+
+#### When selecting the ribbon action in Word, I receive a message that SharePoint eSignature is not enabled.
+
+- The Word document must be located on a SharePoint-enabled site.  
+- Word has not been enabled in the Microsoft 365 admin center.
+ 
+#### I got a message to change the sensitivity label.
+
+- SharePoint eSignature supports unencrypted documents such as General, non-Business, Public, Confidential (Any user/No protection), High Confidential (Any user/No protection), and non-encrypted labelled documents.
+
+#### I cannot send a request in Word to new external signers.
+
+- Your admin hasn't configured SharePoint eSignature to send requests to external senders who are not existing guests on your tenant. *[More info.]*
+
+#### As an admin, I do not have a toggle to disable requesting signatures from PDFs.
+
+- The PDF eSignature capability is enabled by default and cannot be disabled if SharePoint eSignature is enabled as a provider.
