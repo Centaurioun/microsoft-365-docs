@@ -29,6 +29,7 @@ Create and manage frontline teams in bulk to drive collaboration for every locat
 > [!NOTE]
 > If you would like to provide feedback and help improve this feature, fill out this [form](https://forms.office.com/r/MPfxrGG9h4).
 
+
  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=da722184-92a5-4775-8585-d354a5c174c1] 
 
 ## How it works
