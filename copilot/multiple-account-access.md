@@ -84,16 +84,16 @@ As of April 24, 2025, multiple account access is rolling out gradually in the fo
 - PowerPoint: Version 2.95.25030623
 - Word: Version 2.95.305.0
 
+### On iPad devices
+
+- Excel: Version 2.95.224.0
+- PowerPoint: Version 2.95.224.0
+
 ### On Mac devices
 
 - OneNote: Version 16.96
 - PowerPoint: Version 16.95
 - Word: Version 16.95.3
-
-### On iPad devices
-
-- Excel: Version 2.95.224.0
-- PowerPoint: Version 2.95.224.0
 
 ### On Windows devices
 
