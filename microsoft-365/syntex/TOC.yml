@@ -68,11 +68,9 @@ items:
         - name: Create a signature request
           items:
                 - name: Create a request from Word
-                  href: esignature-send-requests.md
-                - name: Create a request from a PDF
                   href: esignature-create-request-word.md
-        - name: Create a signature request 
-          href: esignature-send-requests.md
+                - name: Create a request from PDF
+                  href: esignature-send-requests.md
         - name: Cancel a signature request 
           href: esignature-cancel-request.md
         - name: Review and sign a request 
