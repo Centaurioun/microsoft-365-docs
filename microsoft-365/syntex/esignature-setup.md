@@ -20,7 +20,7 @@ description: Learn how to set up and manage sites in SharePoint eSignature.
 # Set up SharePoint eSignature
 
 > [!NOTE]
-> SharePoint eSignature is available in selected regions. If a tenant's location is a supported region, SharePoint eSignature is available for that tenant. For multi-geo enabled tenants in supported regions, eSignature will be available in the home geo only. SharePoint eSignature rolls out to [other regions](esignature-overview.md#regional-availability) later this year.
+> SharePoint eSignature is available in selected regions. If a tenant's location is a supported region, SharePoint eSignature is available for that tenant. For multi-geo enabled tenants in supported regions, eSignature is available in the home geo only. SharePoint eSignature rolls out to [other regions](esignature-overview.md#regional-availability) later this year.
 
 SharePoint eSignature is a pay-as-you-go service that is set up in the Microsoft 365 admin center. Before you begin, determine whether this feature is appropriate for your needs by reading the [Before you begin section](esignature-overview.md#before-you-begin).
 
@@ -45,7 +45,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 > [!NOTE]
-> If you are requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests. For more information, see [External recipients](#external-recipients) later in this article.
+> If you're requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests. For more information, see [External recipients](#external-recipients) later in this article.
 
 ## Set up SharePoint eSignature
 
@@ -61,7 +61,7 @@ To let people in your organization use SharePoint eSignature, follow these steps
 
 5. On the **eSignature** panel, select **Let people in your organization use eSignature**.
 
-Once configured, several background processes will automatically begin to integrate the feature seamlessly into your existing Microsoft 365 tenant and services. These processes include data synchronization, configuration updates, and performance optimizations. SharePoint eSignature will be fully operational within 24 hours of activation.
+Once configured, several background processes automatically begin to integrate the feature seamlessly into your existing Microsoft 365 tenant and services. These processes include data synchronization, configuration updates, and performance optimizations. SharePoint eSignature will be fully operational within 24 hours of activation.
 
 ### Add other signature providers
 
@@ -75,8 +75,6 @@ To select which signature providers to use, follow these steps.
 
 > [!NOTE]
 > Although [pay-as-you-go billing](syntex-azure-billing.md) must be set up to use eSignature, you aren't charged for using other signature providers.
-
-
 
 ### Allow signature requests in Microsoft Word
 
@@ -92,18 +90,19 @@ To let users use SharePoint eSignature in Word, you need to turn on the Word fea
 
 #### Apply the group policy
 
-The **Allow the use of SharePoint eSignature for Microsoft Word** group policy setting allows you to control whether users can request eSignatures directly from Word in tenants that have enabled the Microsoft native eSignature service. If the policy is inactive or not applied, the eSignature action is not visible and invokable on the **Insert** ribbon in Word.
+The **Allow the use of SharePoint eSignature for Microsoft Word** group policy setting controls whether users can request eSignatures directly from Word in tenants that have enabled the Microsoft native eSignature service. If the policy is inactive or not applied, the eSignature action isn't visible and invokable on the **Insert** ribbon in Word.
 
-You can acquire and deploy the **Allow the use of SharePoint eSignature for Microsoft Word** group policy via the standard methods of:
+1. Acquire and deploy the **Allow the use of SharePoint eSignature for Microsoft Word** group policy via the standard methods of:
 
-- Cloud Policy service for Microsoft 365
-- Microsoft Intune
-- Group Policy Manager
+    - Cloud Policy service for Microsoft 365
+    - Microsoft Intune
+    - Group Policy Manager
 
-Or, you can acquire the policy via the Microsoft Download Center: [Administrative Template files (ADMX/ADML) for Microsoft Office](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
+    Or, acquire the policy via the Microsoft Download Center: [Administrative Template files (ADMX/ADML) for Microsoft Office](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
 
-[Include guidance on PowerShell or regkey application?]
+2. Apply the policy setting.
 
+3. *[Include guidance on PowerShell or regkey application?]*
 
 ### Manage sites
 
@@ -130,7 +129,7 @@ To specify the sites where users can use eSignature, follow these steps.
 
 Microsoft Entra B2B provides authentication and management of **new guests**. External signers or recipients are considered as guests within your tenant. To be able to send requests to **new signers** outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration). Consider whether this meets your compliance and security requirements when enabling eSignature.
 
-If a guest is deleted from the tenant while the request is ongoing, they can no longer access the request document or the final signed document. In such cases, you need to resend the eSignature request. Before deleting a guest, ensure they aren't involved in any ongoing requests. This setting doesn't affect your existing Azure Active Directory guests.
+If a guest is deleted from the tenant while the request is ongoing, they can no longer access the request document or the final signed document. In such cases, you need to resend the eSignature request. Before deleting a guest, ensure they aren't involved in any ongoing requests. This setting doesn't affect your existing Microsoft Entra ID guests.
 
 ### Authentication
 
@@ -138,10 +137,10 @@ External recipients might need to authenticate before they're able to access a d
 
 ### Conditional access
 
-Certain [conditional access](/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) are able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation is unsuccessful. One common way to resolve this is to add **SharePoint eSignature** (formally called **Microsoft eSignature Service**) to the list of approved apps via the Microsoft Entra admin center.
+Certain [conditional access](/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) are able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation is unsuccessful. One common way to resolve this issue is to add **SharePoint eSignature** (formally called **Microsoft eSignature Service**) to the list of approved apps via the Microsoft Entra admin center.
 
 > [!NOTE]
-> When using other electronic signature providers, settings within Microsoft 365 don't impact whether you can send requests outside to external recipients.
+> When you use other electronic signature providers, settings within Microsoft 365 don't affect whether you can send requests outside to external recipients.
 
 ## Document storage and retention
 
@@ -151,7 +150,7 @@ SharePoint eSignature lets a requester start a signature request from a PDF docu
 
 Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the permission changes when the signature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This event can happen when:
 
-- The sender of the request no longer has access to the originating folder. For example, the sender’s access has been revoked by the owner of the originating folder or a SharePoint admin.
+- The sender of the request no longer has access to the originating folder. For example, the owner of the originating folder or a SharePoint admin has revoked the sender's access.
 
 - Initial write permission of the sender to the originating folder was downgraded to view only.
 
