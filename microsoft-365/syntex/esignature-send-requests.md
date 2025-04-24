@@ -45,7 +45,6 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
     Once sent, the status of the request is set to **In progress**.  An email notification is sent to the creator and the recipients. If **Recipients must sign in order** is toggled on, recipients will be able to add their signature in the order specified, otherwise they can add their signature in any order.  
 
-<!---
 #### Processing notifications
 
 When you create a request, you receive notifications that update you on the processing status.
@@ -69,7 +68,6 @@ You can also keep track of multiple requests with stacked notifications that can
 - Each notification represents a distinct eSignature request
 
     ![Screenshot of notifications showing that two requests have been sent.](../media/content-understanding/esignature-notification-two-requests-sent.png)
---->
 
 #### Track and manage other provider requests
 
