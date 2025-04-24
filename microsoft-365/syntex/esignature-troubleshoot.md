@@ -21,7 +21,7 @@ description: Learn how to troubleshoot issues with sending, receiving, or viewin
 
 ## Unable to create a request
 
-If you can't create a signature request, ensure you have edit rights to the folder containing the document and that the PDF is under 10 MB. If the document is stored in a private group, the signers must be members of the private group to receive the request. You can also check the PDF viewer settings, the collaboration settings, or the access policies. Refer to the [setup page](/microsoft-365/syntex/esignature-setup) to ensure the correct settings are done. Also, check that the PDF you're attempting to sign isn't already electronically signed using SharePoint eSignature or any other electronic signature provider.
+If you can't create a signature request, ensure you have edit rights to the folder containing the document and that the PDF is under 10 MB. If the document is stored in a private group, the signers must be members of the private group to receive the request. You can also check the PDF viewer settings, the collaboration settings, or the access policies. Refer to [Admin setup](esignature-setup.md) to ensure the correct settings are done. Also, check that the PDF you're attempting to sign isn't already electronically signed using SharePoint eSignature or any other electronic signature provider.
 
 > [!NOTE]
 > New eSignature requests can't be started from documents that were previously signed. You need to choose another document to create the request.
