@@ -69,8 +69,9 @@ Follow these steps to use SharePoint eSignature for Microsoft Word.
 
 7. Repeat step 5 for all fields you want to be inserted into the document.
 
-8. Optionally, you can add a note.
+8. Optionally, you can add a message to the recipient.
 
+    ![Screenshot of the Optional message option in Word.](../media/content-understanding/esignature-optional-message-word.png)
 
 9. Select **Create request**.
  
