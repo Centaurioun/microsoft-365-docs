@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot a signature request for SharePoint eSignature
+title: Troubleshoot a signature request in SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 description: Learn how to troubleshoot issues with sending, receiving, or viewing requests in SharePoint eSignature. 
 ---
 
-# Troubleshoot a signature request for SharePoint eSignature
+# Troubleshoot a signature request in SharePoint eSignature
 
 ## Unable to create a request
 

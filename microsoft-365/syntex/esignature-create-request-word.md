@@ -86,3 +86,8 @@ Follow these steps to use SharePoint eSignature for Microsoft Word.
 - Delete a placeholder
 - Add a placeholder
 - Create a text box, insert placeholder. Don't move placeholder.
+
+<br>
+
+> [!div class="nextstepaction"]
+> [Review and sign a request](esignature-review-sign-requests.md)
