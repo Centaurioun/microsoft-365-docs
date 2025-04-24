@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 04/18/2025
+ms.date: 04/23/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -64,7 +64,7 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
 
-8. If you want to apply the suggested columns to the document library, select **Save changes**.
+8. When you are ready to apply all of the changes to the document library, select **Save changes**.
 
 ## Planned capabilities coming soon
 
