@@ -19,22 +19,20 @@ description: Learn how to use SharePoint eSignature to create and send electroni
 
 # Create a signature request from Word in SharePoint eSignature
 
-## Process considerations for Word
+When you request electronic signatures from Word, the recipients sign a PDF copy of the Word document.
 
-When you request electronic signatures from Word, the recipients will sign a PDF copy of the Word document.
-
-- Recipients do not access the source Word document during the signing process.
-- Recipient information, such as an email address, is not stored in the Word document.
-- When signing is complete, the signed PDF will be stored in the same location as the Word document.
-- Requests can be sent from editable Word documents and read-only Word documents that have pre-positioned eSignature fields placeholders.
+- Recipients don't access the source Word document during the signing process.
+- Recipient information, such as an email address, isn't stored in the Word document.
+- Upon completion of signing, the signed PDF is stored in the same location as the Word document.
+- Requests can be sent from editable Word documents and read-only Word documents that have prepositioned eSignature fields placeholders.
 
 ## SharePoint eSignature for Word scenarios
 
 - Create a request directly from a Word document. 
-- Re-use the same document to create multiple requests.
-- Create a template with pre-positioned eSignature fields.
-- Create a request from an eSign template.
-- Multiple users can create requests in parallel.
+- Reuse the same document to create multiple requests.
+- Create a template with prepositioned eSignature fields.
+- Create a request from an eSignature template.
+- Allow multiple users to create requests in parallel.
 
 ## Prerequisites
 
@@ -79,7 +77,7 @@ Follow these steps to use SharePoint eSignature for Microsoft Word.
 
     ![Screenshot of the Create request button in Word.](../media/content-understanding/esignature-create-request-button-word.png)
 
-10. A PDF of the Word document is automatically created for recipients to sign.
+10. A PDF of the Word document is created for recipients to sign.
 
 ## Tips (TBD)
 
@@ -87,4 +85,4 @@ Follow these steps to use SharePoint eSignature for Microsoft Word.
 - Move a placeholder
 - Delete a placeholder
 - Add a placeholder
-- Create a text box, insert placeholder. Do not move placeholder.
+- Create a text box, insert placeholder. Don't move placeholder.
