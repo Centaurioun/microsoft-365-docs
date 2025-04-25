@@ -111,9 +111,9 @@ This experience includes a default dashboard with relevant frontline cards such 
 
 Engage is part of the tailored apps experience. Frontline users who see the tailored app experience have Engage pinned after Chat (Chat and Teams) app on both mobile and desktop.
 
-This experience brings employees together across the organization to connect with leaders, coworkers, and communities. It provides an experience where frontline workers can stay informed with leadership and corporate communicator updates, ask and answer questions within their communities of practice, share their work and knowledge with others, and participate in company events. This experience includes a default All Company community with relevant frontline cards such as Shifts, Planner, Approvals, and Top News that can be customized to fit the needs of your organization. If your organization already set up a Viva Connections home site, it takes precedence over the default experience.
+This experience brings employees together across the organization to connect with leaders, coworkers, and communities. It provides an experience where frontline workers can stay informed with leadership and corporate updates, ask and answer questions within their communities of practice, share their work and knowledge with others, and participate in company events.
 
-[ Learn more about Engage.](/viva/engage/overview)
+[ Learn more about setting up Engage.](/viva/engage/setup)
 
 ## Related articles
 
