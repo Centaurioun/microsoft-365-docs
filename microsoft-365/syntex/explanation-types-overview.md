@@ -215,7 +215,7 @@ You can choose the following options for this setting:
 When training a classifier, there a few things to keep in mind that will produce more predictable results:
 
 - The more documents you train with, the more accurate the classifier will be.  When possible, use more than five good documents and use more than one bad document. If the libraries you're working with have several different document types in it, several of each type lead to more predictable results.
-- Labeling the document plays an important role in the training process. They're used together with explanations to train the model. You might see some anomalies when training a classifier with documents that don't have much content in them. The explanation might not match anything in the document but since it was labeled as a "good" document you may see it be a match during training.
+- Labeling the document plays an important role in the training process. They're used together with explanations to train the model. You might see some anomalies when training a classifier with documents that don't have much content in them. The explanation might not match anything in the document but since it was labeled as a "good" document you might see it be a match during training.
 - When creating explanations, it uses OR logic in combination with the label to determine if it's a match. Regular expression that uses AND logic might be more predictable. Here's a sample regular expression to use on real documents as your training them. Note the text highlighted in red is the phrase or phrases you would be looking for.
 
     <pre>(?=.*network provider)(?=.*participating providers).*</pre>
