@@ -68,6 +68,8 @@ To get suggested columns in your document library, follow these steps.
 
 9. On the **Save and apply your changes?** confirmation screen, select **Apply changes**.
 
+   ![Screenshot of the Save and apply your changes? confirmation screen.](../media/content-understanding/autofill-librarian-confirmation-screen.png)
+
 ## Planned capabilities coming soon
 
 - Chat with column creation support​
