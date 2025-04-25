@@ -1,7 +1,7 @@
 ---
 title: "Create a new meeting type in Bookings"  
-ms.author: pritikar
-author: kwekuako
+ms.author: kwekua
+author: pritikar
 manager: scotv
 ms.date: 07/11/2024  
 ms.topic: how-to
