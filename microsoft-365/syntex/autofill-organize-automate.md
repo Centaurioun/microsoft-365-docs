@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 04/23/2025
+ms.date: 04/25/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -60,11 +60,13 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/autofill-librarian-edit-column.png)
 
-7. On the **Edit column** panel, you can edit the column name or edit the prompt that generates the metadata. After you edit the prompt, test the prompt to make sure it gives you the information you want. When you're done, select **Save**.
+7. On the **Edit column** panel, you can edit the column name or edit the prompt that generates the metadata. After you edit the prompt, test the prompt to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
 
-8. When you are ready to apply all of the changes to the document library, select **Save changes**.
+8. When you are ready to save all of the column changes, select **Save changes**.
+
+9. On the **Save and apply your changes?** confirmation screen, select **Apply changes**.
 
 ## Planned capabilities coming soon
 
