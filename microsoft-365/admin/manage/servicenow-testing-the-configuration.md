@@ -25,7 +25,7 @@ description: "Scoped Certified application installation and configuration guide 
 # Testing the ServiceNow configuration
 
 > [!IMPORTANT]
-> Microsoft 365 support integration with ServiceNow has been retired, and the service will be completely shutdown on May 30, 2025. If you have installed the integration, please take necessary steps to remove it before May 30, 2025.
+> Microsoft 365 support integration with ServiceNow is retired, and the service will be completely shut down on May 30, 2025. If you installed the integration, take necessary steps to remove it before May 30, 2025.
 
 If your application requires successful communication with external systems, outline how to test the connection to ensure a successful configuration.
 

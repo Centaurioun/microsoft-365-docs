@@ -25,7 +25,7 @@ description: "Configure support integration to test and provide the Microsoft 36
 # Integrate Microsoft 365 with ServiceNow Virtual Agent
 
 > [!IMPORTANT]
-> Microsoft 365 support integration with ServiceNow has been retired, and the service will be completely shutdown on May 30, 2025. If you have installed the integration, please take necessary steps to remove it before May 30, 2025.
+> Microsoft 365 support integration with ServiceNow is retired, and the service will be completely shut down on May 30, 2025. If you installed the integration, take necessary steps to remove it before May 30, 2025.
 
 When you configure the Microsoft 365 support integration app to work with ServiceNow Virtual Agent, you access the self-help created by Microsoft 365 product teams through two different user experiences:
 
