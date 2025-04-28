@@ -42,11 +42,13 @@ On the Link existing teams tab, click on “Get started”.![A screenshot of a c
 
 1. In the “Team ID” column, please enter the team IDs for each frontline location you wish to associate with a team. Leave the Team ID field blank for any locations where you do not wish to link teams. You can always come back and link teams to more locations.
 
-__IMPORTANT:__ Ensure all Team IDs are for static groups. Convert dynamic groups to static before uploading the CSV to avoid errors.
+> [!IMPORTANT]
+> Ensure all Team IDs are for static groups. Convert dynamic groups to static before uploading the CSV to avoid errors.
 
 1. To take advantage of flexible membership, where the membership of frontline teams is synced to the frontline workers' Entra attributes and frontline managers can manually add or remove team members, enter TRUE under the “FlexibleMembership” column next to each team ID. Existing team members will not be removed if you opt in for flexible membership.
 
-__IMPORTANT:__ If you set "FlexibleMembership" to FALSE, no membership changes will occur on your behalf. However, you can still track your frontline teams' usage on the Usage tab of the Manage Frontline Teams page.
+> [!IMPORTANT]
+> If you set "FlexibleMembership" to FALSE, no membership changes will occur on your behalf. However, you can still track your frontline teams' usage on the Usage tab of the Manage Frontline Teams page.
 
 Upload your CSV and click “Link”.
 
