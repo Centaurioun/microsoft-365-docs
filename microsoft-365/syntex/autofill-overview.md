@@ -37,9 +37,11 @@ Autofill columns can work alongside other docyment models. You can link various 
 | ------------- | ------------- |
 | ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This service supports the following file types: .csv, .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx. |
 | ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This service is available for all [languages supported in Microsoft 365 Copilot](https://support.microsoft.com/en-us/office/94518d61-644b-4118-9492-617eea4801d8). |
-| ![Usage report symbol.](/office/media/icons/usage-report-blue.png)  | **Supported column types** <br>This service is available for the following column data types: Text, Multiple lines of text, Number, Yes/No, Date and time, Choice, Hyperlink, and Currency.<br> Currently, this service isn't available for the following column data types: Person or Group, Location, Image, Lookup, and Managed metadata.|
+| ![Usage report symbol.](/office/media/icons/usage-report-blue.png)  | **Supported column types** <br>This service is available for the following column data types: Text, Multiple lines of text, Number, Yes/No, Date and time, Choice, Hyperlink, Currency, and Managed metadata.<br> Currently, this service isn't available for the following column data types: Person or Group, Location, Image, and Lookup.|
 
 ### Current release notes
+
+- Autofill columns now support managed metadata with term sets containing up to 100 terms. If a preferred term or synonym matches, autofill responds with the preferred term.
 
 - Encrypted files aren't analyzed or included in the results.
 

@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/06/2025
+ms.date: 04/28/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -20,6 +20,9 @@ description: Learn how to use autofill columns extract specific information in S
 # Create an autofill column in SharePoint
 
 Autofill columns is a new setting in the **Create a column** panel that lets you use natural language prompts to extract specific information or generate information from files within a SharePoint library. The information is then displayed in the columns of the library. You can set up multiple autofill columns in the same library.
+
+> [!NOTE]
+> For optimal performance, we recommend limiting autofill to no more than 10 columns and processing files no larger than 64 pages due to the constraints of the large language model (LLM).
 
 ## Create a new autofill column
 
