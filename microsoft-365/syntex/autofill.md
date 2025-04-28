@@ -22,7 +22,8 @@ description: Learn how to use autofill columns extract specific information in S
 Autofill columns is a new setting in the **Create a column** panel that lets you use natural language prompts to extract specific information or generate information from files within a SharePoint library. The information is then displayed in the columns of the library. You can set up multiple autofill columns in the same library.
 
 > [!NOTE]
-> For optimal performance, we recommend limiting autofill to no more than 10 columns and processing files no larger than 64 pages due to the constraints of the large language model (LLM).
+> For optimal performance, we recommend limiting autofill to no more than 10 columns and processing files no larger than 65 pages due to the constraints of the large language model (LLM).
+>One important consideration for the page limit is that while you are charged for up to 65 pages, there are factors such as the number of words on a page that might cause this limit to be exceeded. Essentially, the service processes up to the model's token limit, but will only charge for 65 pages. This means that even if the content exceeds 65 pages, the processing will continue up to the token limit of the LLM.
 
 ## Create a new autofill column
 
