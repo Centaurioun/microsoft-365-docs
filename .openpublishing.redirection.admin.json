@@ -1,24 +1,24 @@
 {
   "redirections": [
-    {
+        {
       "source_path": "microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps.md",
       "redirect_url": "/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/manage/servicenow-aad-oauth-token.md",
+      "source_path": "microsoft-365/admin/manage/servicenow-aad-oauth-token-v1.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/admin/manage/servicenow-basic-authentication.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/admin/manage/servicenow-support-integration.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-virtual-agent-integration",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/admin/admin-overview/index.md",
