@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/01/2025
+ms.date: 04/28/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -36,7 +36,7 @@ Autofill columns can work alongside other docyment models. You can link various 
 | Icon          | Description   |
 | ------------- | ------------- |
 | ![Files symbol.](/office/media/icons/files-blue.png)  | **Supported file types** <br>This service supports the following file types: .csv, .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx. |
-| ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This service is available for English language files. Other languages will be added in future releases. |
+| ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This service is available for all [languages supported in Microsoft 365 Copilot](https://support.microsoft.com/en-us/office/94518d61-644b-4118-9492-617eea4801d8). |
 | ![Usage report symbol.](/office/media/icons/usage-report-blue.png)  | **Supported column types** <br>This service is available for the following column data types: Text, Multiple lines of text, Number, Yes/No, Date and time, Choice, Hyperlink, and Currency.<br> Currently, this service isn't available for the following column data types: Person or Group, Location, Image, Lookup, and Managed metadata.|
 
 ### Current release notes
