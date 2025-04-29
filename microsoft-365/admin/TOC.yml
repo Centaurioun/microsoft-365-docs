@@ -104,8 +104,6 @@ items:
           items:
            - name: Add users
              href: add-users/add-users.md
-           - name: Add a new employee
-             href: add-users/add-new-employee.md
            - name: Assign or unassign licenses for users
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
@@ -456,20 +454,6 @@ items:
              href: manage/servicenow-troubleshooting.md
            - name: Integrate Microsoft 365 with ServiceNow Virtual Agent
              href: manage/servicenow-virtual-agent-integration.md
-           - name: Microsoft 365 support integration guide for version 1.0.11 and earlier 
-             items:
-              - name: Configuration overview
-                href: manage/servicenow-overview-v1.md
-              - name: Configure basic authentication
-                href: manage/servicenow-basic-authentication-v1.md
-              - name: Configure Microsoft 365 support integration with Microsoft Entra auth Token
-                href: manage/servicenow-aad-oauth-token-v1.md
-              - name: Testing the configuration
-                href: manage/servicenow-testing-the-configuration-v1.md
-              - name: Troubleshooting
-                href: manage/servicenow-troubleshooting-v1.md
-              - name: Integrate Microsoft 365 with ServiceNow Virtual Agent
-                href: manage/servicenow-virtual-agent-integration-v1.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
     - name: Secure your organization

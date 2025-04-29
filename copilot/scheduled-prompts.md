@@ -21,9 +21,6 @@ description: "Learn about managing Scheduled prompts for Microsoft 365 Copilot, 
 
 Scheduled prompts in Microsoft 365 Copilot allow users to automate Copilot prompts to run at set times and frequencies in Microsoft Teams, Office.com/chat, and Microsoft Outlook for the web and Desktop. As an admin, you can manage this feature for your organization.
 
->[!NOTE]
-> This feature is in preview. As an admin, you can opt in to making this feature available to your organization. To learn more, see [Opt in or out of preview](#opt-in-or-out-of-preview).
-
 ## Before you begin
 
 You must have both of the following licenses to manage scheduled prompts:
@@ -85,15 +82,3 @@ To manage their scheduled prompts, users can follow these steps:
 Users can schedule up to 10 prompts to run at specific times, with responses delivered to the right rail of their Microsoft 365 Copilot Chat experience. These prompts can be set to run on a recurring basis, ensuring users receive necessary information aligned with their workflow. Responses from scheduled prompts are bolded and have a recurring icon to help users identify them easily.
 
 To learn more about prompts for your users, see [Learn about Copilot prompts](https://support.microsoft.com/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5).
-
-## Opt in or out of preview
-
-If you’re interested in joining the preview, you must opt in. To be eligible, you must have:
-
-- Copilot license
-- Optional connected experiences admin toggle enabled
-- DLP policies configured to allow the Microsoft 365 Copilot connector in your default Power Platform environment
-
-You can start the opt-in process by submitting a support ticket and stating that you'd like to join the scheduled prompts preview. Our engineers can help validate eligibility criteria and enroll you into the preview program.
-
-To opt out of the preview, you can similarly submit a customer support ticket requesting to opt out. To learn more about how to do this, see [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).

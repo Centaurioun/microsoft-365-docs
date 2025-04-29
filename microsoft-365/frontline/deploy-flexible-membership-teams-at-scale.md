@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 04/10/2025
+ms.date: 04/24/2025
 ---
 
 # Deploy frontline teams with flexible membership 
@@ -30,6 +30,8 @@ Create and manage frontline teams in bulk to drive collaboration for every locat
 > If you would like to provide feedback and help improve this feature, fill out this [form](https://forms.office.com/r/MPfxrGG9h4).
 
 ## How it works
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=da722184-92a5-4775-8585-d354a5c174c1]
 
 In the setup process, you: 
 
@@ -61,7 +63,7 @@ To complete the steps in this article, you must be a Global Administrator or a T
 
 ### Prerequisites
 - Admin using the Frontline Deployment tool must have a Microsoft 365 F1, F3, E3 or E5 license. 
-- Teams owners and uUsers must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they need a Microsoft Entra ID P1 add-on license. [Learn more](flw-licensing-options.md) about frontline licensing.
+- Teams owners and users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they need a Microsoft Entra ID P1 add-on license. [Learn more](flw-licensing-options.md) about frontline licensing.
 - Ensure you can define your frontline workers and managers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a human capital management (HCM) connector or use [the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale. 
     - All your frontline workers should be added to up to 32 groups in Microsoft Entra. 
     - All your frontline managers at each of your frontline locations should be added to up to 20 groups on Microsoft Entra. 
@@ -74,11 +76,23 @@ To complete the steps in this article, you must be a Global Administrator or a T
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**. 
 2. In the table, choose **Set up**.
+
+:::image type="content" source="media/flw-teams-admin-center.png" alt-text="Screenshot showing how to manage frontline teams in Teams admin center." lightbox="media/flw-teams-admin-center.png":::
+
 3. On the **Overview** page, review the setup and prerequisites information.
 4. On the **Frontline workers** page, select the Entra groups that include your frontline workers. You can choose up to 10 Entra groups. You can change these groups, as needed, after you submit your setup.
+
+:::image type="content" source="media/dtas-add-frontline-groups.png" alt-text="Screenshot showing how to add frontline groups to frontline teams settings." lightbox="media/dtas-add-frontline-groups.png":::
+
 5. On the **Location** page, select a Microsoft Entra attribute or a custom user attribute that defines the location your frontline employees work in. You can only choose one location attribute. You can change the attribute, as needed, after you submit your setup. For example, if you would like to create a team for each city, enter the “City” attribute and we will group frontline workers in the same city into teams.
 All custom attributes are case sensitive and must start with an "extension_" prefix. Only custom attributes of the String data type are supported.
+
+:::image type="content" source="media/dtas-appoint-attr-for-location.png" alt-text="Screenshot showing how to choose the Microsoft Entra attribute to define location in an organization." lightbox="media/dtas-appoint-attr-for-location.png":::
+
 6. On the **Team settings** page, define a naming pattern for your teams by choosing a prefix. The prefix is applied using the "prefix-location" format to all your teams.
+
+:::image type="content" source="media/dtas-select-team-template-prefix.png" alt-text="Screenshot showing how to choose a template for created team." lightbox="media/dtas-select-team-template-prefix.png":::
+
 7. Choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more](/microsoftteams/get-started-with-teams-templates-in-the-admin-console) about team templates.
 > [!NOTE]
 > Currently, only team templates that are set to the English (United States) locale are supported. Keep in mind that the locale doesn't affect translation of the template or data residency. The locale setting is used only to distinguish between templates that have the same name that are created in different languages.
@@ -87,16 +101,27 @@ Every location you want to deploy must have at least one frontline worker set as
 You can change these groups, as needed, after you submit your setup.
 9.	Review your settings, and then choose **Submit**.
 
+:::image type="content" source="media/dtas-review-summary.png" alt-text="Screenshot showing where you review selections and submit." lightbox="media/dtas-review-summary.png":::
+
 > [!NOTE]
 > Setup can take several hours to run. Refresh the **Manage frontline teams** page to get the latest status.
 
 ## Deploy your frontline teams
 1. After setup is completed, go to the **Manage frontline teams** page, and then select the **Deploy** button.
+
+:::image type="content" source="media/dtas-frontline-teams-deploy.png" alt-text="Screenshot for how to manage frontline teams for teams deployment." lightbox="media/dtas-frontline-teams-deploy.png":::
+
 2. On the **Deploy frontline teams** page, you can review your settings and view the list of locations that don't yet have a frontline team created.
 3. In the table, select the locations that you want to create teams for.
+
+:::image type="content" source="media/dtas-frontline-teams-for-deployment.png" alt-text="Screenshot selecting locations for a deployment." lightbox="media/dtas-frontline-teams-for-deployment.png":::
+
 4. Select **Deploy**. This process can take several hours depending on how many teams you're creating.  
 After deployment is completed, you'll see the number of deployed frontline teams in the Frontline teams card. You can also download a CSV file with a list of those teams.
 If an error occurred during the deployment process, you can download the error CSV file on the Deployment health card. Use the information in it to help resolve the errors, and then rerun the deployment experience.
+
+:::image type="content" source="media/dtas-manage-frontline-after-deploy.png" alt-text="Screenshot showing how to manage frontline teams after a teams deployment." lightbox="media/dtas-manage-frontline-after-deploy.png":::
+
 5. You can repeat this process for any frontline locations that don't have a team.
 
 ## Manage your frontline teams
@@ -106,12 +131,17 @@ Create new teams for newly opened locations:
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
 2. In the table, choose **Deploy**.
 3. Select the **Refresh location** button, and then proceed when prompted by the dialog box. This process can take several hours depending on the number of new locations.
+
+:::image type="content" source="media/dtas-refresh-frontline-teams.png" alt-text="Screenshot showing the refresh locations in deploy frontline teams page." lightbox="media/dtas-refresh-frontline-teams.png":::
+
 4.	After the refresh is completed, your setup status shows as Complete. You can proceed to deploy your new teams. Deployment can take several hours depending on how many new teams you're deploying.
 
 ## Edit your frontline teams settings
 1.	In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline teams**.
 2.	In the Deployment settings column, choose **Deploy frontline teams**.
-3.	On the **Frontline teams **settings page, edit your settings, and then select  **Apply**. Your settings might take several hours to update.
+3.	On the **Frontline teams** settings page, edit your settings, and then select  **Apply**. Your settings might take several hours to update.
+
+See the following table for the effects of updating your settings.
 
 | Setting  | Effect on existing frontline teams  | Effect on new frontline teams |
 |---------|---------|---------|
@@ -122,6 +152,7 @@ Create new teams for newly opened locations:
 | Team settings - team template | No updates to the team structure will occur. | All new teams will have the updated naming convention. |
 | Identify your team owners | Frontline managers that were already assigned team owner won't be removed or reprieved of their team owner role. New team owners from the new groups you selected will be added as team owners to their respective teams. | All new teams will have team owners that are part of the new groups you selected. There must be at least one team owner for every new team. |
 
+:::image type="content" source="media/dtas-edit-frontline-settings.png" alt-text="Screenshot showing how to edit frontline teams settings." lightbox="media/dtas-edit-frontline-settings.png":::
 
 ## Get analytics on frontline teams usage
 The [Teams frontline usage report](frontline-usage-report.md) on the usage dashboard of the Manage frontline teams page gives you an overview of usage activity in Teams for each of your frontline locations. You can view data, such as the number of active users and last activity date, to quickly see how many users at your frontline locations are using Teams to communicate and collaborate.
@@ -133,7 +164,7 @@ Why am I seeing 0 users while trying to deploy?
 Seeing zero users next to a location name (ex. “Redmond”) in the deploy teams table indicates that there is a user in the provided owner groups with the specified location value (ex. Manager_A with city attribute equal to “Redmond”) but no users in the provided frontline worker groups has that same location value (i.e. no users with the city attribute equal to “Redmond”). The admin should reexamine their selected frontline groups or investigate if this is a data hygiene issue.
 
 ### Why am I not seeing some locations?
-The locations displayed in the deploy teams table are the list of unique location values from the users in the selected owner groups. This is to ensure the team deploys successfully as owners are mandatory. This means that an admin can create a team with only owners and no members as well(please see “Why am I seeing 0 users while trying to deploy?” FAQ for more information on this scenario).  
+The locations displayed in the deploy teams table are the list of unique location values from the users in the selected owner groups. This is to ensure the team deploys successfully as owners are mandatory. This means that an admin can create a team with only owners and no members as well (please see “Why am I seeing 0 users while trying to deploy?” FAQ for more information on this scenario).  
 
 ## Related articles
 - [Learn where to start with a frontline deployment](flw-deploy-overview.md)

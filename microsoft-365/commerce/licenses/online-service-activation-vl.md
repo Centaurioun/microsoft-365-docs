@@ -70,7 +70,7 @@ Every organization with a VL agreement with Microsoft has at least one Public Cu
 
 If there are no licenses for any Microsoft online services under your License ID, ask your Microsoft seller or partner to order the services for you.
 
-Alternatively, Enterprise, Enterprise Subscription, and US Government (USG) customers can get started immediately for many online services by placing a VL reservation. To learn more about VL reservations, see[Manage License Reservations for volume licensing](manage-license-reservations-vl.md).
+Alternatively, Enterprise, Enterprise Subscription, and US Government (USG) customers can get started immediately for many online services by placing a VL reservation. To learn more about VL reservations, see [Manage License Reservations for volume licensing](manage-license-reservations-vl.md).
 
 After the first online services order or a reservation is processed for a License ID, Microsoft either automatically assigns the services to your organization's tenant or invites the OSM to sign up for an online services account profile.  
 
@@ -96,7 +96,7 @@ If no Microsoft Entra tenant is detected and automatic assignment isn't possible
 You're presented with two options:
 
 1. Create a new online services profile (Microsoft Entra tenant) to assign the services to.\
-OR\
+OR
 2. Sign into an existing tenant and assign the services there.
 
 For troubleshooting help, see [Common reasons why you might not receive an activation email](#common-reasons-why-you-might-not-receive-an-activation-email).
