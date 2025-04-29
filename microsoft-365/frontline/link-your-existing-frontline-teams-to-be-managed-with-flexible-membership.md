@@ -30,15 +30,15 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 1. After you follow the instructions to set up your frontline team settings, click on **Deploy** on the Manage frontline teams page.
 
-![Click Deploy on the Manage frontline teams page on the Teams admin center to get started.](media/frontline/manage-frontline-teams-page.png)![]()
+![Click Deploy on the Manage frontline teams page on the Teams admin center to get started.](microsoft-365/frontline/media/manage-frontline-teams-page.png)![]()
 
 1. View your discovered frontline locations on the **Deploy or link frontline teams** page. Start linking your teams to these locations by clicking the **Link existing teams** tab.
 
-![View your discovered locations on the Deploy or link frontline teams page and click Link existing teams to learn more about linking teams.](media/frontline/deploy-or-link-frontline-teams-discovered-locations.png)
+![View your discovered locations on the Deploy or link frontline teams page and click Link existing teams to learn more about linking teams.](microsoft-365/frontline/media/deploy-or-link-frontline-teams-discovered-locations.png)
 
 1. On the Link existing teams tab, click on **Get started**.
 
-![Click Get started on the Link existing teams tab to start linking.](media/frontline/deploy-or-link-frontline-teams-linking-teams.png)
+![Click Get started on the Link existing teams tab to start linking.](microsoft-365/frontline/media/deploy-or-link-frontline-teams-linking-teams.png)
 
 
 
@@ -46,7 +46,7 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 1. Begin by downloading the CSV template, which have all your identified frontline locations already populated in the first column under **Locations**.
 
-![Upload your CSV of team IDs of the teams you want to link.](media/frontline/linking-teams.png)
+![Upload your CSV of team IDs of the teams you want to link.](microsoft-365/frontline/media/linking-teams.png)
 
 1. Enter the team IDs for each frontline location you wish to associate with a team in the **Team ID** column. Leave the Team ID field blank for any locations where you do not wish to link teams. You can always come back and link teams to more locations.
 
