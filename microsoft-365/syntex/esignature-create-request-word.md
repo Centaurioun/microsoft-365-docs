@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use SharePoint eSignature to create and send electronic signature requests from a PDF file to people inside and outside of your organization. 
+description: Learn how to use SharePoint eSignature to create and send electronic signature requests from a Word file to people inside and outside of your organization. 
 ---
 
 # Create a signature request from Word in SharePoint eSignature
@@ -43,7 +43,7 @@ When you request electronic signatures from Word, the recipients sign a PDF copy
 - The document is in .docx format.
 - The document is unencrypted.
 
-# Create a signature request from Word
+## Create a signature request from Word
 
 Follow these steps to use SharePoint eSignature for Microsoft Word.
 
