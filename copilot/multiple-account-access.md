@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 04/24/2025
+ms.date: 04/29/2025
 ---
 
 # Multiple account access to Copilot for work and school documents
@@ -57,7 +57,6 @@ To configure this policy setting, you need to use [Cloud Policy service for Micr
 
 > [!NOTE]
 > - The policy setting is available in Cloud Policy as of January 30, 2025.
-> - Currently the policy setting is only available in English. But we’re working on making the localized versions available as soon as we can.
 > - Microsoft 365 GCC customers can see the policy setting in Cloud Policy, but the policy has no effect on them because multiple account access to Copilot is always disabled for Microsoft 365 GCC customers.
 
 If you enable or don't configure this policy setting, your users can use Copilot on work and school documents with a Copilot license that is from outside your organization.
