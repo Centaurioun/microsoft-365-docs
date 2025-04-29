@@ -66,6 +66,6 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 ## Get analytics on frontline teams usage
 
-The [Teams frontline usage report](/microsoft-365/frontline/frontline-usage-report?view=o365-worldwide) on the usage dashboard of the Manage frontline teams page gives you an overview of usage activity in Teams for each of your frontline locations. You can view data, such as the number of active users, last activity date, active users on Walkie Talkie, etc. to quickly see how many users at your frontline locations are using Teams to communicate and collaborate.
+The [Teams frontline usage report](/microsoft-365/frontline/frontline-usage-report) on the usage dashboard of the Manage frontline teams page gives you an overview of usage activity in Teams for each of your frontline locations. You can view data, such as the number of active users, last activity date, active users on Walkie Talkie, etc. to quickly see how many users at your frontline locations are using Teams to communicate and collaborate.
 
  
