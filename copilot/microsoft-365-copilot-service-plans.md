@@ -73,14 +73,14 @@ If one of the following service plans isn't listed in the diagnostic output, the
 
 | Feature & Service Plan name| Learn more |
 | --- | --- |
-| Microsoft Copilot Studio <br/><br/> **Service plan name**: Copilot Studio in Copilot for M365| [Copilot Studio overview](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) <br/><br/> [Get access to Copilot Studio](/microsoft-copilot-studio/requirements-licensing-subscriptions) |
-| Microsoft Graph Connectors <br/><br/> **Service plan name**: Graph Connectors in Microsoft 365 Copilot| [Build Microsoft Graph connectors for Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/overview-graph-connector) <br/><br/> [Custom Microsoft Graph connectors for Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/publish) |
+| Microsoft Copilot Studio <br/><br/> **Service plan name**: Copilot Studio in Copilot for M365| - [Copilot Studio overview](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) <br/>- [Get access to Copilot Studio](/microsoft-copilot-studio/requirements-licensing-subscriptions) |
+| Microsoft Graph Connectors <br/><br/> **Service plan name**: Graph Connectors in Microsoft 365 Copilot| - [Build Microsoft Graph connectors for Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/overview-graph-connector) <br/>- [Custom Microsoft Graph connectors for Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/publish) |
 | Intelligent Search <br/><br/> **Service plan name**: Intelligent Search | [Microsoft 365 Copilot feature availability](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot#feature-availability) |
-| Copilot in SharePoint - Includes SharePoint agents and a [rich text editor](/power-apps/maker/model-driven-apps/rich-text-editor-control). <br/><br/> **Service plan name**: Microsoft 365 Copilot for SharePoint | [Get started with SharePoint agents](https://support.microsoft.com/office/get-started-with-sharepoint-agents-69e2faf9-2c1e-4baa-8305-23e625021bcf) <br/><br/>  [Authoring with Copilot in SharePoint: An overview](https://support.microsoft.com/topic/authoring-with-copilot-in-sharepoint-an-overview-a22514c9-7bc5-4c04-a599-455d573a1800) <br/><br/> [Copilot in SharePoint FAQ](https://support.microsoft.com/office/frequently-asked-questions-about-copilot-in-sharepoint-eb1b7668-3d98-4a93-98ef-f0c6dfc694f0) |
+| Copilot in SharePoint - Includes SharePoint agents and a [rich text editor](/power-apps/maker/model-driven-apps/rich-text-editor-control). <br/><br/> **Service plan name**: Microsoft 365 Copilot for SharePoint | - [Get started with SharePoint agents](https://support.microsoft.com/office/get-started-with-sharepoint-agents-69e2faf9-2c1e-4baa-8305-23e625021bcf) <br/>- [Authoring with Copilot in SharePoint: An overview](https://support.microsoft.com/topic/authoring-with-copilot-in-sharepoint-an-overview-a22514c9-7bc5-4c04-a599-455d573a1800) <br/>- [Copilot in SharePoint FAQ](https://support.microsoft.com/office/frequently-asked-questions-about-copilot-in-sharepoint-eb1b7668-3d98-4a93-98ef-f0c6dfc694f0) |
 | Copilot in Microsoft Teams <br/><br/> **Service plan name**: Microsoft 365 Copilot in Microsoft Teams | [Overview of AI in Microsoft Teams for IT admins](/microsoftteams/copilot-ai-agents-overview) <br/><br/> |
 | Copilot in Microsoft 365 apps <br/><br/> **Service plan name**: Microsoft 365 Copilot in Productivity Apps | [Copilot features in Microsoft 365 apps](microsoft-365-copilot-overview.md#copilot-features-in-microsoft-365-apps) |
-| Microsoft 365 Copilot Chat - work <br/><br/> **Service plan name**: Microsoft Copilot with Graph-grounded chat | [Manage Microsoft 365 Copilot Chat](/copilot/manage) <br/><br/> [Which Copilot is right for me or my organization?](which-copilot-for-your-organization.md) |
-| Microsoft 365 Copilot Power Platform connectors <br/><br/> **Service plan name**: Power Platform Connectors in Microsoft 365 Copilot | [Connectors overview](/connectors/overview) <br/><br/>[Use Power Platform connectors in Copilot Studio](/microsoft-copilot-studio/advanced-connectors) |
+| Microsoft 365 Copilot Chat - work <br/><br/> **Service plan name**: Microsoft Copilot with Graph-grounded chat | - [Manage Microsoft 365 Copilot Chat](/copilot/manage) <br/>- [Which Copilot is right for me or my organization?](which-copilot-for-your-organization.md) |
+| Microsoft 365 Copilot Power Platform connectors <br/><br/> **Service plan name**: Power Platform Connectors in Microsoft 365 Copilot | - [Connectors overview](/connectors/overview) <br/>- [Use Power Platform connectors in Copilot Studio](/microsoft-copilot-studio/advanced-connectors) |
 
 ## Common issues
 
@@ -95,7 +95,7 @@ If one of the following service plans isn't listed in the diagnostic output, the
   1. Re-enable the service plan and save the changes.
   1. Rerun the diagnostic tool and verify that the service plan information is successfully synced.
 
-- If the diagnostic output is missing a service plan (listed in [## Step 2 - Review the Microsoft 365 Copilot service plan names](#step-2---review-the-microsoft-365-copilot-service-plan-names)), then review the [Microsoft 365 Copilot feature availability](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot#feature-availability) list.
+- If the diagnostic output is missing a service plan (listed in [Step 2 - Review the Microsoft 365 Copilot service plan names](#step-2---review-the-microsoft-365-copilot-service-plan-names)), then review the [Microsoft 365 Copilot feature availability](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot#feature-availability) list.
 
   Then:
 
