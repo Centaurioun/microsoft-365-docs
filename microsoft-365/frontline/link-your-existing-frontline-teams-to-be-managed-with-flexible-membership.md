@@ -38,11 +38,15 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 1. On the Link existing teams tab, click on **Get started**.
 
-1. ![]()
+![Deploy or link frontline teams. Click Get started on the Link existing teams tab to start linking.](media/link-your-existing-frontline-teams-to-be-managed-with-flexible-membership/deploy-or-link-frontline-teams---linking-teams.png)
+
+
 
 ## Uploading your CSV
 
 1. Begin by downloading the CSV template, which have all your identified frontline locations already populated in the first column under **Locations**.
+
+![Upload your CSV of team IDs of the teams you want to link.](media/link-your-existing-frontline-teams-to-be-managed-with-flexible-membership/linking-teams.png)
 
 1. Enter the team IDs for each frontline location you wish to associate with a team in the **Team ID** column. Leave the Team ID field blank for any locations where you do not wish to link teams. You can always come back and link teams to more locations.
 
@@ -56,7 +60,9 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 1. Upload your CSV and click **Link**.
 ![]()
 
-1. Refresh the Manage frontline teams page to check if linking is complete. The Link status shows the last linked date. Click **Deploy** again to link more teams, following the same steps.![]()
+1. Refresh the Manage frontline teams page to check if linking is complete. The Link status shows the last linked date. Click **Deploy** again to link more teams, following the same steps.
+
+![Link Complete](media/link-your-existing-frontline-teams-to-be-managed-with-flexible-membership/link-complete.png)
 
 ## Get analytics on frontline teams usage
 
