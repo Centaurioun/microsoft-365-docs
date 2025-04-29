@@ -28,9 +28,13 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 ## Linking your existing frontline teams
 
-1. After you follow the instructions to set up your frontline team settings, click on **Deploy** on the Manage frontline teams page.![]()
+1. After you follow the instructions to set up your frontline team settings, click on **Deploy** on the Manage frontline teams page.
 
-1. View your discovered frontline locations on the **Deploy or link frontline teams** page. Start linking your teams to these locations by clicking the **Link existing teams** tab.![]()
+![Manage frontline teams page on Teams admin center. Click Deploy to begin.](media/link-your-existing-frontline-teams-to-be-managed-with-flexible-membership/manage-frontline-teams-page.png)![]()
+
+1. View your discovered frontline locations on the **Deploy or link frontline teams** page. Start linking your teams to these locations by clicking the **Link existing teams** tab.
+
+1. ![]()
 
 1. On the Link existing teams tab, click on **Get started**.![]()
 
