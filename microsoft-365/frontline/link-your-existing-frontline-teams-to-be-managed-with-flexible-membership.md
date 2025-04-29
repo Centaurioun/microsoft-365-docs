@@ -7,6 +7,7 @@ title: Link your existing frontline teams to be managed with flexible membership
 description: Take advantage of flexible membership by linking your existing teams to the frontline workforce management tool on the Manage frontline teams page.
 author:      arnavgupta49 # GitHub alias
 ms.author: arnavgupta
+manager: prkoduku
 ms.service: microsoft-365-frontline
 ms.topic: how-to
 ms.date:     04/28/2025
@@ -28,19 +29,17 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 ## Linking your existing frontline teams
 
-1. After you follow the instructions to set up your frontline team settings, click on **Deploy** on the Manage frontline teams page.
+1. After you follow the instructions to set up your frontline team settings, select on **Deploy** on the Manage frontline teams page.
 
-![Click Deploy on the Manage frontline teams page on the Teams admin center to get started.](microsoft-365/frontline/media/manage-frontline-teams-page.png)![]()
+![Select Deploy on the Manage frontline teams page on the Teams admin center to get started.](microsoft-365/frontline/media/manage-frontline-teams-page.png)!
 
-1. View your discovered frontline locations on the **Deploy or link frontline teams** page. Start linking your teams to these locations by clicking the **Link existing teams** tab.
+1. View your discovered frontline locations on the **Deploy or link frontline teams** page. Start linking your teams to these locations by selecting the **Link existing teams** tab.
 
-![View your discovered locations on the Deploy or link frontline teams page and click Link existing teams to learn more about linking teams.](microsoft-365/frontline/media/deploy-or-link-frontline-teams-discovered-locations.png)
+![View your discovered locations on the Deploy or link frontline teams page and select Link existing teams to learn more about linking teams.](microsoft-365/frontline/media/deploy-or-link-frontline-teams-discovered-locations.png)
 
-1. On the Link existing teams tab, click on **Get started**.
+1. On the Link existing teams tab, select on **Get started**.
 
-![Click Get started on the Link existing teams tab to start linking.](microsoft-365/frontline/media/deploy-or-link-frontline-teams-linking-teams.png)
-
-
+![Select Get started on the Link existing teams tab to start linking.](microsoft-365/frontline/media/deploy-or-link-frontline-teams-linking-teams.png)
 
 ## Uploading your CSV
 
@@ -57,12 +56,11 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 > [!IMPORTANT]
 > If you set **FlexibleMembership** to FALSE, no membership changes occur on your behalf. However, you can still track your frontline teams' usage on the Usage tab of the Manage Frontline Teams page.
-1. Upload your CSV and click **Link**.
-![]()
+1. Upload your CSV and select **Link**.
 
-1. Refresh the Manage frontline teams page to check if linking is complete. The Link status shows the last linked date. Click **Deploy** again to link more teams, following the same steps.
+1. Refresh the Manage frontline teams page to check if linking is complete. The Link status shows the last linked date. Select **Deploy** again to link more teams, following the same steps.
 
-![Link status shows the last linked date and you can click Deploy to link more teams.](media/frontline/link-complete.png)
+![Link status shows the last linked date and you can select Deploy to link more teams.](media/frontline/link-complete.png)
 
 ## Get analytics on frontline teams usage
 
