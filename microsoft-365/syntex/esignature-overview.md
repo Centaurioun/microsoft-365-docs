@@ -30,7 +30,7 @@ With SharePoint eSignature, you can quickly and securely send documents for sign
 
 ## Regional availability
 
-SharePoint eSignature is currently available in the US, UK, Canada, the EU, and Australia Pacific. It will be available worldwide later in 2025. Furthermore, the use of other eSignature providers as an integration with the SharePoint eSignature platform is available globally.
+SharePoint eSignature is currently available in the US, UK, Canada, the EU, and Australia Pacific. It will be available worldwide later in 2025. The ability to use SharePoint eSignature with other electronic signature providers is available globally.
 
 ## Before you begin
 
