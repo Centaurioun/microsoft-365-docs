@@ -34,9 +34,11 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 1. View your discovered frontline locations on the **Deploy or link frontline teams** page. Start linking your teams to these locations by clicking the **Link existing teams** tab.
 
-1. ![]()
+![Deploy or link frontline teams. View your discovered locations and click the Link existing teams tab.](media/link-your-existing-frontline-teams-to-be-managed-with-flexible-membership/deploy-or-link-frontline-teams---discovered-locations.png)
 
-1. On the Link existing teams tab, click on **Get started**.![]()
+1. On the Link existing teams tab, click on **Get started**.
+
+1. ![]()
 
 ## Uploading your CSV
 
