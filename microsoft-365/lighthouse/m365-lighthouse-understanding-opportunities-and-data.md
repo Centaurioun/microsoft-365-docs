@@ -1,11 +1,11 @@
 ---
-title: "Understand opportunities and data in Sales Advisor in Microsoft 365 Lighthouse"
+title: "Understand opportunities and data in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: stutisingh
-ms.date: 07/17/2023
+ms.reviewer: avaishnav
+ms.date: 04/30/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
@@ -19,11 +19,11 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn more about sales opportunities using Sales Advisor."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how Lighthouse uses machine learning models (formerly under Sales Advisor) to recommend growth, retention, and acquisition opportunites."
 ---
 
 
-# Understand opportunities and data in Sales Advisor in Microsoft 365 Lighthouse
+# Understand opportunities and data in Microsoft 365 Lighthouse
 
 Sales Advisor focuses on producing recommendations that help drive the conversations partners have with customers throughout the customer lifecycle. It uses machine learning (ML) models to provide recommended actions and the reasoning behind each recommendation. The data used in the models combine insights about the customer, the current subscriptions, and the usage and engagement of each product.
 
