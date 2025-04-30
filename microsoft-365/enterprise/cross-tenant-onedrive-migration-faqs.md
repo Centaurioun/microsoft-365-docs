@@ -19,10 +19,10 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 
 # Cross-tenant OneDrive migration FAQs
 
-## Pre-migration FAQs
+## Premigration FAQs
 
 **Question**: Can a OneDrive account have any content in the **target tenant** before migration?</br>
-**Answer:** No. The tool doesn't support Merge functionality with existing content. The user being migrated must not have a pre-existing OneDrive on the target tenant.
+**Answer:** No. The tool doesn't support Merge functionality with existing content. The user being migrated must not have a preexisting OneDrive on the target tenant.
 
 **Question**: Can users be precreated on the target tenant?</br>
 **Answer:** Yes, all Users/Groups that are identified for migration should be precreated on the target tenant and appropriate licenses assigned prior to staring any migrations. Also:
@@ -48,7 +48,7 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 **Answer:** We do NOT currently support government environments (GCC & GCC-High) but we plan to support them in the future.
 
 **Question:** What is the current size limit for each OneDrive migration?</br>
-**Answer:**  Each individual OneDrive site/account being migrated must have no more than 2 TB of storage, or 1 million items. The 1,000,000 item limit can be any "item", including files (including versions), folders, and list line entries if it's a list or library.
+**Answer:**  Each individual OneDrive site/account being migrated must have no more than 2 TB of storage, or 1 million items. The 1,000,000 item limit can be any item, including files (including versions), folders, and list line entries if it's a list or library.
 
 > [!IMPORTANT]
 > If you attempt to migrate any OneDrive site that exceeds the 2-TB quota, the transfer fails.
@@ -62,7 +62,7 @@ OneDrive accounts currently under a Hold policy are blocked from migration. To m
 **Question:** Are OneDrive accounts with Customer Key Encryption supported for migration?</br>
 **Answer:**  No. We do NOT support migration if the source tenant has Service encryption with Microsoft Purview Customer Key enabled.
 
-**Question:**  What do I need to consider for migrating users/sites between Multi-Geo tenants? </br>
+**Question:**  What do I need to consider for migrating users/sites between Multi-Geo tenants?</br>
 **Answer:**  If you're a OneDrive Multi-Geo or MNC customer, you must treat each geography as a separate tenant and supply the correct geography-specific URLs throughout the process. You must also establish trust between each geography involved in your migration project.
 
 ## Post-migration FAQs
@@ -73,17 +73,17 @@ OneDrive accounts currently under a Hold policy are blocked from migration. To m
 **Question:** What happens to permissions on OneDrive content?</br>
 **Answer:** Users with permissions to OneDrive content continue to have access to their content upon completion on the new target tenant. If those users/groups were included as part of the Identity Map and mapped accordingly.
 
-**Question:** What do I need to do to sync my content via OneDrive Sync Client? </br>
+**Question:** What do I need to do to sync my content via OneDrive Sync Client?</br>
 **Answer:**  After the migration is complete, the user needs to sign in to their OneDrive Sync client using their new identity and to the new OneDrive location. Once this step is done, files and folders begin resyncing to the device.
 
-**Question:** What happens to sharing links? </br>
+**Question:** What happens to sharing links?</br>
 **Answer:** After a user’s OneDrive cross-tenant migration is completed, existing shared links for files that were migrated automatically redirect to the new target location.
 
 **Question:** How are shared files handled?</br>
 **Answer:**  When a OneDrive account is migrated, we place a redirect at the old location; anyone clicking on a sharing link to the old location is redirected to the new one, provided they still have access on the destination. Those redirects remain until the original/source tenant is deprovisioned or is removed by the admin site-by-site.
 
 **Question:** Do external Shared Files continue to work?</br>
-**Answer:**  As part of the migration process, Admins must precreate the appropriate users on the destination tenant, including guest/external users,  and provide the tool with an "Identity Map". The identify map tells us how to adjust file/site ownership and permissions.
+**Answer:**  As part of the migration process, Admins must precreate the appropriate users on the destination tenant, including guest/external users,  and provide the tool with an "Identity Map". The Identify Map tells us how to adjust file/site ownership and permissions.
 
 **Question:** Can the shared file map to new internal users?</br>
 **Answer:** See the question above. The identity map informs how files are shared.
