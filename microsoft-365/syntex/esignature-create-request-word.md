@@ -19,6 +19,9 @@ description: Learn how to use SharePoint eSignature to create and send electroni
 
 # Create a signature request from Word in SharePoint eSignature
 
+> [!NOTE]
+> This feature will begin rolling out to users on the Microsoft 365 Beta and Current Channels at the end of May. To get access to the feature, ensure your admin has completed [these steps to allow signature requests in Microsoft Word](esignature-setup.md#allow-signature-requests-in-microsoft-word).
+
 When you request electronic signatures from Word, the recipients sign a PDF copy of the Word document.
 
 - Recipients don't access the source Word document during the signing process.
