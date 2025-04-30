@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how Lighthouse uses machine learning (ML) models to recommend growth, retention, and acquisition opportunites (formerly under Sales Advisor) to help drive ongoing conversations with customers."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how Lighthouse uses machine learning (ML) models to recommend growth, retention, and acquisition opportunities (formerly under Sales Advisor) to help drive ongoing conversations with customers."
 ---
 
 # Understand opportunities and data in Microsoft 365 Lighthouse
@@ -64,7 +64,7 @@ This tab shows opportunities to acquire new users via converting trial subscript
 
 ### Customer retention tab
 
-This tab shows opportunities to increase adoption and mitigate churn. Direct engagement may help to retain these customers. The following opportunity types are associate with this customer lifecycle phase: Engagement and Retention.
+This tab shows opportunities to increase adoption and mitigate churn. Direct engagement might help to retain these customers. The following opportunity types are associate with this customer lifecycle phase: Engagement and Retention.
 
 ### Customer growth tab
 
@@ -79,7 +79,7 @@ The following table lists the opportunity data models currently available as rec
 | Microsoft 365 Business plans   | Customer growth      | Machine Learning | Standalone, Business Basic, Business Standard, Business Premium        |
 | Microsoft 365 Enterprise plans | Customer growth      | Machine Learning | Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, Enterprise Mobility + Security E5              |
 | Churn Risk                           | Customer retention   | Machine Learning | Core Apps, Teams, SMB Tenants                                          |
-| SMB Tenant Engagement                | Customer retention   | Business rule    | Email, Core Apps, Teams, SharePoint, OneDrive for Business             |
+| SMB Tenant Engagement                | Customer retention   | Business rule    | Email, Core Apps, Teams, SharePoint, OneDrive             |
 | MDO Growth Recommendation            | Customer growth      | Decision Tree    | Microsoft 365 Business Premium or Microsoft Defender for Office 365 P2 |
 | MFA Engagement Recommendation        | Customer engagement  | Decision Tree    | Multifactor authentication in Microsoft Entra ID                                |
 | MDB Growth Recommendation            | Customer growth      | Decision Tree    | Microsoft Defender for Business (MDB)                                  |
@@ -94,12 +94,12 @@ The following table provides important terms and definitions used on the **Oppor
 |--------------------------------------|----------------------|
 | Active usage                 | Aggregate number of active users or devices based on intentional actions, which varies with each application. Use active usage data to calculate usage metrics such as Daily Active Users (DAU) and Monthly Active Users (MAU).  |
 | Active users                 | Number of users actively using a product or service.  |
-| Assigned users               | Number of seats containing the product or service assigned to a user.       |
-| Customer acquisition         | The first phase in the customer lifecyle. The following opportunity type is associate with this customer lifecycle phase: Trial.  |
-| Customer growth              | The third phase in the customer lifecyle. The following opportunity types are associated with this customer lifecycle phase: Upsell and Expansion. |
+| Assigned users               | Number of users licensed to use a product or service.       |
+| Customer acquisition         | The first phase in the customer lifecycle. The following opportunity type is associate with this customer lifecycle phase: Trial.  |
+| Customer growth              | The third phase in the customer lifecycle. The following opportunity types are associated with this customer lifecycle phase: Upsell and Expansion. |
 | Customer insights            | Characteristics of the selected customer based on historical data, and an explanation of why Lighthouse suggests the specific recommendation.        |
 | Customer lifecycle phases    | The different phases an MSP goes through in their relationship with a customer. To categorize opportunities, Lighthouse uses three phases: customer acquisition, customer retention, and customer growth. 
-| Customer retention           | The second phase in the customer lifecyle. The following opportunity types are associated with this customer lifecycle phase: Engagement and Retention.   |
+| Customer retention           | The second phase in the customer lifecycle. The following opportunity types are associated with this customer lifecycle phase: Engagement and Retention.   |
 | Customer usage information   | Information about how users are using Microsoft 365 services within the products they own. Includes a graph showing usage per user, number of assigned users, active users, and trends. |
 | Customers with opportunities | Customers who have one or more opportunities.  |
 | Opportunity                  | Opportunities are generated by machine learning (ML) models. Each opportunity contains a recommendation for a particular customer, insights, suggested actions, resources, subscriptions, and usage data. |
