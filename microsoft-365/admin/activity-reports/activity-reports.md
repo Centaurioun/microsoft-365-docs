@@ -109,9 +109,9 @@ Depending on your subscription, here are the available reports in all environmen
 |[SharePoint site usage](sharepoint-site-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint activity](sharepoint-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 
-N/A<sup>1</sup>: The report is planned to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
+<sup>1</sup>: The report is planned to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 
-N/A<sup>2</sup>: The service is not available in the environment, so there's no plan to release the report.
+<sup>2</sup>: The service isn't available in the environment, so there's no plan to release the report.
 
 ## How to view licensing information
 
