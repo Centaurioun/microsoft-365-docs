@@ -24,7 +24,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Get the SharePoint site usage report to know how many files users store in SharePoint sites, how many are actively used, and the total storage consumed."
+description: "Learn how to access and interpret the SharePoint storage report ."
 ---
 
 # Microsoft 365 Reports in the admin center – SharePoint storage
