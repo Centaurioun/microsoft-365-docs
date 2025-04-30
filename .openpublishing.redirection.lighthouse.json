@@ -17,12 +17,12 @@
       },
       {
          "source_path":"microsoft-365/lighthouse/m365-lighthouse-get-access-to-sales-advisor.md",
-         "redirect_url":"/microsoft-365/lighthouse/m365-understanding-opportunities-and-data",
+         "redirect_url":"/microsoft-365/lighthouse/m365-lighthouse-understanding-opportunities-and-data",
          "redirect_document_id":true
       },
       {
          "source_path":"microsoft-365/lighthouse/m365-lighthouse-sales-advisor-overview.md",
-         "redirect_url":"/microsoft-365/lighthouse/m365-understanding-opportunities-and-data",
+         "redirect_url":"/microsoft-365/lighthouse/m365-lighthouse-understanding-opportunities-and-data",
          "redirect_document_id":false
       }      
    ]
