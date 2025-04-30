@@ -83,10 +83,10 @@ OneDrive accounts currently under a Hold policy are blocked from migration. To m
 **Answer:**  When a OneDrive account is migrated, we place a redirect at the old location; anyone clicking on a sharing link to the old location is redirected to the new one, provided they still have access on the destination. Those redirects remain until the original/source tenant is deprovisioned or is removed by the admin site-by-site.
 
 **Question:** Do external Shared Files continue to work?</br>
-**Answer:**  As part of the migration process, Admins must precreate the appropriate users on the destination tenant, including guest/external users,  and provide the tool with an "Identity Map". The Identify Map tells us how to adjust file/site ownership and permissions.
+**Answer:**  As part of the migration process, Admins must precreate the appropriate users on the destination tenant, including guest/external users,  and provide the tool with an **Identity Map**. The identity map tells us how to adjust file/site ownership and permissions.
 
 **Question:** Can the shared file map to new internal users?</br>
-**Answer:** See the question above. The identity map informs how files are shared.
+**Answer:** See the previous question. The identity map informs how files are shared.
 
 **Question:** If a file is shared in a Teams chat, can those files still be accessible after migration?</br>
-**Answer:**  See the question above. The identity map informs how files are shared. If a user selects the link, it attempts to redirect to the new location. The file is accessible as long as the user has permissions to access the file on the destination.
+**Answer:**  See the previous question. The identity map informs how files are shared. If a user selects the link, it attempts to redirect to the new location. The file is accessible as long as the user has permissions to access the file on the destination.
