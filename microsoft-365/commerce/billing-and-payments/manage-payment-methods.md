@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: lishepar, ramagane
+ms.reviewer: lishepar, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -20,6 +20,7 @@ ms.custom:
 - commerce_billing
 - TopSMBIssues
 - okr_SMB
+- OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
@@ -29,12 +30,15 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to manage your payment methods for Microsoft business products or services in the Microsoft 365 admin center."
-ms.date: 03/24/2025
+ms.date: 04/29/2025
 ---
 
 # Manage payment methods for Microsoft business accounts
 
-When you buy Microsoft business products or services, you can use an existing payment method to pay for them, or add a new one. You can use a credit or debit card to pay for the things you buy. Depending on your country/region, alternative payment methods might be supported.
+> [!NOTE]
+> This article only applies to Microsoft business accounts. If you have an app, game, or nonbusiness subscriptions, see [Change your Microsoft subscription payment method and options - Microsoft Support](https://support.microsoft.com/account-billing/39ab4bc1-01f9-fc28-c3a5-49e87b6e7611).
+
+When you buy Microsoft business products or services, you can use an existing payment method to pay for them or add a new one. You can use a credit card or debit card to pay for the things you buy. Depending on your country/region, alternative payment methods might be supported.
 
 > [!IMPORTANT]
 >
@@ -53,6 +57,12 @@ When you buy Microsoft business products or services, you can use an existing pa
 
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a Billing account owner.
+
+## Watch: Update your payment method
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198016).
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ad949d04-8b23-425c-93f1-264ebed05738]
 
 ## Add a payment method
 
@@ -155,13 +165,17 @@ If a payment method is attached to any subscriptions or billing profiles, you mu
 
 | Issue                                    | Troubleshooting steps |
 |:-----------------------------------------|:----------------------|
-|**My credit or debit card was declined.** |If you pay by credit or debit card, and your card is declined, you receive an email that says Microsoft was unable to process the payment. Double-check that the card details&mdash;card number, expiration date, name on the card, and address, including city, state, and ZIP code&mdash;appear exactly as they do on the card and your statement. You can update your card information and resubmit the payment.</br></br>Also confirm you have sufficient funds in your account to support the payment.</br></br>For more information, see [What if I have an outstanding balance?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)</br></br>If you continue to see the "declined" message, contact your bank. It's possible that your card isn't active, or you might have insufficient funds. |
+|**My credit or debit card was declined.** |If you pay by credit or debit card, and your card is declined, you receive an email that says Microsoft was unable to process the payment. Double-check that the card details&mdash;card number, expiration date, name on the card, and address, including city, state, and ZIP code&mdash;appear exactly as they do on the card and your statement. You can update your card information and resubmit the payment.<br/><br/>Also confirm you have sufficient funds in your account to support the payment.<br/><br/>For more information, see [What if I have an outstanding balance?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)<br/><br/>If you continue to see the "declined" message, contact your bank. It's possible that your card isn't active, or you might have insufficient funds. |
 |**I want to update a credit or debit card number.** |You can't change the card on an existing payment method. If you want to replace a credit or debit card number, [replace it with a different payment method](#replace-a-payment-method), which moves all active subscriptions from the payment method to the new one. |
 |**I only have one credit or debit card on my account and I want to remove it.** |If you only have one payment method, follow the steps in [Delete a payment method](#delete-a-payment-method). |
-|**I can't add my credit or debit card.**  |You must use a payment method issued from the same country/region as your tenant. If you have trouble entering your credit or debit card information, you can  [contact support](../../admin/get-help-support.md). |
+|**I can't add my credit or debit card.**  |You must use a payment method issued from the same country/region as your tenant. If you have trouble entering your credit or debit card information, you can [contact support](../../admin/get-help-support.md). |
 
 ## Related content
 
-[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article) \
-[Manage your Microsoft business billing profiles](manage-billing-profiles.md) (article) \
-[Change your billing frequency](change-payment-frequency.md) (article)
+[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article) <br/>
+[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)<br/>
+[Manage your Microsoft business billing profiles](manage-billing-profiles.md) (article)<br/>
+[Change your billing frequency](change-payment-frequency.md) (article)<br/>
+[Upgrade or change to a different Microsoft 365 for business plan](../subscriptions/upgrade-to-different-plan.md) (article)<br/>
+[Cancel your subscription in the Microsoft 365 admin center](../subscriptions/cancel-your-subscription.md) (article) <br/>
+[Get support for Microsoft 365 for business](../../admin/get-help-support.md) (article)

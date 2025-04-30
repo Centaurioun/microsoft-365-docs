@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 03/20/2025
+ms.date: 04/29/2025
 ---
 
 # Multiple account access to Copilot for work and school documents
@@ -57,7 +57,6 @@ To configure this policy setting, you need to use [Cloud Policy service for Micr
 
 > [!NOTE]
 > - The policy setting is available in Cloud Policy as of January 30, 2025.
-> - Currently the policy setting is only available in English. But we’re working on making the localized versions available as soon as we can.
 > - Microsoft 365 GCC customers can see the policy setting in Cloud Policy, but the policy has no effect on them because multiple account access to Copilot is always disabled for Microsoft 365 GCC customers.
 
 If you enable or don't configure this policy setting, your users can use Copilot on work and school documents with a Copilot license that is from outside your organization.
@@ -72,7 +71,7 @@ The end-user experience for blocked users viewing work and school documents is a
 
 ## Apps where multiple account access to Copilot is available
 
-As of March 20, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
+As of April 24, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
 
 ### On Android devices
 
@@ -80,4 +79,23 @@ As of March 20, 2025, multiple account access is rolling out gradually in the fo
 
 ### On iOS devices
 
+- OneNote: Version 16.96 (25040710)
 - PowerPoint: Version 2.95.25030623
+- Word: Version 2.95.305.0
+
+### On iPad devices
+
+- Excel: Version 2.95.224.0
+- PowerPoint: Version 2.95.224.0
+
+### On Mac devices
+
+- OneNote: Version 16.96
+- PowerPoint: Version 16.95
+- Word: Version 16.95.3
+
+### On Windows devices
+
+- Excel: Version 2503
+- PowerPoint: Version 2503
+- Word: Version 2503

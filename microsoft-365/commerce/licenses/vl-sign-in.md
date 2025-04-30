@@ -134,7 +134,8 @@ If you don't see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144"
 - **Use the correct role:** You might have access to the admin center because of a different role.
 
   - If you're a VL user, verify that you completed the license registration by selecting the link in the welcome email that you received.  
-  - If you don't have a V role assigned to you, you can't access VL information in the admin center. Contact a VL administrator for your organization and ask them to grant you VL permissions. For more information, see [Who can view VL information in Microsoft 365 admin center?](/licensing/vlsc-faqs-home-page#who-can-view-vl-information-in-microsoft-365-admin-center-)
+  - If you don't have a VL role assigned to you, you can't access VL information in the admin center. Contact a VL administrator for your organization and ask them to grant you VL permissions. For more information, see [Who can view VL information in Microsoft 365 admin center?](/licensing/vlsc-faqs-home-page#who-can-view-vl-information-in-microsoft-365-admin-center-)
+    
 - **Use the correct user ID:** Verify that the user ID you used to register VL licenses in the admin center is the same as the user ID that you're using to sign in.
 
 ### My volume licensing welcome email is invalid

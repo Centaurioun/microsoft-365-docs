@@ -24,6 +24,14 @@ description: Learn how to set up and manage sites in SharePoint eSignature.
 
 SharePoint eSignature is a pay-as-you-go service that is set up in the Microsoft 365 admin center. Before you begin, determine whether this feature is appropriate for your needs by reading the [Before you begin section](esignature-overview.md#before-you-begin).
 
+## SharePoint eSignature admin checklist
+
+- Review prerequisites
+- Set up SharePoint eSignature
+- Add other signature providers
+- Manage sites
+- Enable new external guests or default to existing guests only 
+
 ## Prerequisites
 
 ### Licensing
@@ -91,7 +99,7 @@ To specify the sites where users can use eSignature, follow these steps.
 
 ### Microsoft Entra B2B
 
-Microsoft Entra B2B provides authentication and management of new guests. External signers or recipients are considered as guests within your tenant. To be able to send requests to new signers outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration). Consider whether this meets your compliance and security requirements when enabling eSignature.
+Microsoft Entra B2B provides authentication and management of **new guests**. External signers or recipients are considered as guests within your tenant. To be able to send requests to **new signers** outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration). Consider whether this meets your compliance and security requirements when enabling eSignature.
 
 If a guest is deleted from the tenant while the request is ongoing, they can no longer access the request document or the final signed document. In such cases, you need to resend the eSignature request. Before deleting a guest, ensure they aren't involved in any ongoing requests. This setting doesn't affect your existing Azure Active Directory guests.
 
