@@ -28,7 +28,7 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 **Answer:** Yes, all Users/Groups that are identified for migration should be precreated on the target tenant and appropriate licenses assigned before staring any migrations. Also:
 
 - OneDrive site creation should be restricted in the target tenant to prevent users creating OneDrive sites.
-- If a OneDrive site already exists for the user on the target tenant the migration fails.
+- If a OneDrive site already exists for the user on the target tenant, the migration fails.
 - You can't overwrite an existing site.
 - OneDrive sites should **not** be created during a migration.
 
