@@ -23,6 +23,9 @@ description: Learn how to use SharePoint eSignature to create and send electroni
 
 Use the following steps to start the SharePoint eSignature process. You must be signed in to SharePoint by using your work email address.
 
+> [!NOTE]
+> Only PDF documents are supported at this time. 
+
 1. From a SharePoint document library, open the document for which you want to start the eSignature process.
 
 2. In the document viewer, select the pen icon.
