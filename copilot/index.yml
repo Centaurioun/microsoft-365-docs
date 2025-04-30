@@ -212,7 +212,7 @@ sections:
             url: /microsoft-copilot-studio/
             text: Explore Copilot Studio
       - componentType: card
-        title: Learning path: Extend Microsoft 365 Copilot
+        title: "Learning path: Extend Microsoft 365 Copilot"
         summary: Microsoft Learn path for extensibility.
         imageUrl: /office/media/icons/education-tutorial-blue.png
         links:
