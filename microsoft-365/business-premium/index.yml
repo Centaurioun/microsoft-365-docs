@@ -29,7 +29,7 @@ productDirectory:
     - title: Watch
       imageSrc: /office/media/icons/video-play.svg
       summary: Top five benefits of Microsoft 365 Business Premium.
-      url: https://aka.ms/M365BPvideo
+      url: https://youtu.be/njXOcmncBcg
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
