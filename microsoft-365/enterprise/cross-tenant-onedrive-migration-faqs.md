@@ -80,7 +80,7 @@ OneDrive accounts currently under a Hold policy are blocked from migration. To m
 **Answer:** After a user’s OneDrive cross-tenant migration is completed, existing shared links for files that were migrated automatically redirect to the new target location.
 
 **Question:** How are shared files handled?</br>
-**Answer:**  When a OneDrive account is migrated, we place a redirect at the old location; anyone clicking on a sharing link to the old location is redirected to the new one, provided they still have access on the destination. Those redirects remain until the original/source tenant is deprovisioned or is removed by the admin site-by-site.
+**Answer:**  When a OneDrive account is migrated, we place a redirect at the old location; anyone clicking on a sharing link to the old location is redirected to the new one, provided they still have access on the destination. Those redirects remain until the original/source tenant is deprovisioned or the admin removes it site-by-site.
 
 **Question:** Do external Shared Files continue to work?</br>
 **Answer:**  As part of the migration process, Admins must precreate the appropriate users on the destination tenant, including guest/external users,  and provide the tool with an **Identity Map**. The identity map tells us how to adjust file/site ownership and permissions.
