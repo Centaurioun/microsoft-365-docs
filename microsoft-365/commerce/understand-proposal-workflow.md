@@ -25,7 +25,7 @@ ms.custom:
 search.appverid: MET150 
 description: "Learn about the proposal workflow used when you buy Microsoft business products and services. Discover how to review and approve proposals."
 ROBOTS: NOINDEX
-ms.date: 03/26/2025
+ms.date: 04/29/2025
 ---
 
 # Understand the Microsoft proposal workflow
