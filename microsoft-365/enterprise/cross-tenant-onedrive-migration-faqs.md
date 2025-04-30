@@ -44,8 +44,8 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 **Question**: Can anyone access their OneDrive account while the migration process is running?</br>
 **Answer:** No. During the migration, the user’s OneDrive is set to Read-Only in source.
 
-**Question**: Does the tool support GCC and GCC-High tenants?</br>
-**Answer:** We do NOT currently support government environments (GCC & GCC-High) but we plan to support them in the future.
+**Question**: Does the tool support Government Community Cloud (GCC) and GCC-High tenants?</br>
+**Answer:** We do **not** currently support government environments (GCC & GCC-High) but we plan to support them in the future.
 
 **Question:** What is the current size limit for each OneDrive migration?</br>
 **Answer:**  Each individual OneDrive site/account being migrated must have no more than 2 TB of storage, or 1 million items. The 1,000,000 item limit can be any item, including files (including versions), folders, and list line entries if it's a list or library.
