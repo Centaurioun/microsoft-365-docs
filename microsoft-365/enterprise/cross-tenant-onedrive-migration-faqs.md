@@ -54,7 +54,7 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 > If you attempt to migrate any OneDrive site that exceeds the 2-TB quota, the transfer fails.
 
 **Question:** How long does the migration take?</br>
-Like most migrations, it's difficult to assign an exact length of time for how long a migration might take. Many things factor into the length of time it takes to migrate, including the number of users/sites, number of files/folders, when you're running your migrations, etc. However, you'll find our process is substantially faster than existing third party migration tools. Bulk migrations complete faster than using standard migration tools.
+Like most migrations, it's difficult to assign an exact length of time for how long a migration might take. Many things factor into the length of time it takes to migrate, including the number of users/sites, number of files/folders, when you're running your migrations, and so on. However, you should find our process is substantially faster than existing third party migration tools. Bulk migrations complete faster than using standard migration tools.
 
 **Question:** Are OneDrive accounts with Legal hold supported for migrations?</br>
 OneDrive accounts currently under a Hold policy are blocked from migration. To migrate these OneDrive accounts, remove the hold policy, migrate, then reapply the hold as needed on the target tenant.
