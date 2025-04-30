@@ -63,7 +63,7 @@ OneDrive accounts currently under a Hold policy are blocked from migration. To m
 **Answer:**  No. We do NOT support migration if the source tenant has Service encryption with Microsoft Purview Customer Key enabled.
 
 **Question:**  What do I need to consider for migrating users/sites between Multi-Geo tenants?</br>
-**Answer:**  If you're a OneDrive Multi-Geo or MNC customer, you must treat each geography as a separate tenant and supply the correct geography-specific URLs throughout the process. You must also establish trust between each geography involved in your migration project.
+**Answer:**  If you're a OneDrive multi-geo or multinational customer, you must treat each geography as a separate tenant and supply the correct geography-specific URLs throughout the process. You must also establish trust between each geography involved in your migration project.
 
 ## Post-migration FAQs
 
