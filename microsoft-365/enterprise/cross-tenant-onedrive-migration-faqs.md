@@ -25,20 +25,20 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 **Answer:** No. The tool doesn't support Merge functionality with existing content. The user being migrated must not have a preexisting OneDrive on the target tenant.
 
 **Question**: Can users be precreated on the target tenant?</br>
-**Answer:** Yes, all Users/Groups that are identified for migration should be precreated on the target tenant and appropriate licenses assigned prior to staring any migrations. Also:
+**Answer:** Yes, all Users/Groups that are identified for migration should be precreated on the target tenant and appropriate licenses assigned before staring any migrations. Also:
 
 - OneDrive site creation should be restricted in the target tenant to prevent users creating OneDrive sites.
 - If a OneDrive site already exists for the user on the target tenant the migration fails.
 - You can't overwrite an existing site.
 - OneDrive sites should **not** be created during a migration.
 
-**Question**: Can my OneDrive accounts be in Read-only mode prior to starting any cross-tenant migrations?</br>
+**Question**: Can my OneDrive accounts be in Read-only mode before starting any cross-tenant migrations?</br>
 **Answer:** No. Before starting any migration, you need to ensure that your Source OneDrive accounts are NOT set to Read-Only, otherwise the migration fails.
 
 **Question**: Can anyone access the OneDrive while the migration process is running?</br>
 **Answer:** During the migration, the user’s OneDrive is set to Read-only in Source.
 
-**Question**: Can my OneDrive accounts be in **Read-only** mode prior to starting any cross-tenant migrations?</br>
+**Question**: Can my OneDrive accounts be in **Read-only** mode before starting any cross-tenant migrations?</br>
 **Answer:** No, before starting any migrations, ensure that your source OneDrive accounts are NOT set to Read-only. Otherwise, the migration fails.
 
 **Question**: Can anyone access their OneDrive account while the migration process is running?</br>
