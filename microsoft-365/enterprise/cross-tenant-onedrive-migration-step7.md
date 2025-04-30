@@ -72,7 +72,7 @@ Keep track of any user or site you migrate back to the source from the target. A
 
 Once the migration completes, OneDrive users must sign in using their new identity and resync their files to their devices on the target tenant.
 
-### OneDrive for Business
+### OneDrive
 
 With their new credentials, have users sign in to OneDrive using the Microsoft 365 app launcher or a web browser.
 
