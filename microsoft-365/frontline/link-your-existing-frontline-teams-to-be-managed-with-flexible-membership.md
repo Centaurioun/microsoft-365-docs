@@ -35,6 +35,10 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 2. View your discovered frontline locations on the **Deploy or link frontline teams** page. Start linking your teams to these locations by selecting the **Link existing teams** tab.
 
+![View your discovered locations on the Deploy or link frontline teams page and select Link existing teams to learn more about linking teams.](/microsoft-365/frontline/media/deploy-or-link-frontline-teams1.png)
+
+
+
 ![View your discovered locations on the Deploy or link frontline teams page and select Link existing teams to learn more about linking teams.](/microsoft-365/frontline/media/deploy-or-link-frontline-teams-discovered-locations.png)
 
 3. On the Link existing teams tab, select on **Get started**.
