@@ -28,7 +28,7 @@ You can set up the pay-as-you-go plan directly in the Microsoft 365 admin center
 
 This article applies to:
 
-- Microsoft 365 Copilot
+- Microsoft 365 Copilot Chat
 
 ## Prerequisites
 
