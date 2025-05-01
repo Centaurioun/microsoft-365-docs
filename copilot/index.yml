@@ -60,12 +60,12 @@ sections:
   - componentType: bifold
     blocks:
       - componentType: text
-        title: What’s new in Microsoft 365 Copilot
-        summary: Stay current with new features, improvements, and innovations for Microsoft 365 Copilot and Copilot Chat.
+        title: Compare Microsoft 365 Copilot and Copilot Chat
+        summary: Learn the differences between Microsoft 365 Copilot Chat and Microsoft 365 Copilot—how they're grounded, what data they use, and what capabilities are included. Understand which experience your organization supports, and how to get started.
         links:
-          - componentType: link
-            text: Explore what’s new
-            url: /microsoft-365-copilot/whats-new
+        - componentType: link
+          text: Learn more about the differences
+          url: https://support.microsoft.com/en-us/topic/what-s-the-difference-between-microsoft-365-copilot-chat-and-microsoft-365-copilot-5810b659-fbe0-48ee-9fe6-d731fe86cdeb
       - componentType: video
         src: "https://learn-video.azurefd.net/vod/player?id=6ba0f4d6-fffc-479a-9698-a90e6e57e80f&embedUrl=https://learn.microsoft.com/microsoft-365-copilot"
 
