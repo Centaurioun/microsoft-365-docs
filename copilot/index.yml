@@ -1,221 +1,100 @@
-### YamlMime:Marketing
-title: Microsoft 365 Copilot hub
+### YamlMime:Hub
+
+title: Microsoft 365 Copilot documentation
+summary: Explore technical documentation, setup guides, and adoption resources for Microsoft 365 Copilot. Learn how to deploy, extend, and manage Copilot securely within your organization.
+brand: m365
+
 metadata:
-  title: 'Microsoft 365 Copilot hub | Microsoft Learn'
-  description: Learn how your organization can deploy, secure, extend, and optimize Microsoft 365 Copilot.
+  title: Microsoft 365 Copilot documentation
+  description: Get started with Microsoft 365 Copilot. Find technical guidance, adoption strategies, and security insights for deploying and managing Copilot in your organization.
   ms.service: microsoft-365-copilot
-  keywords: copilot, microsoft 365, copilot chat, copilot agents, microsoft 365 documentation
-  ms.topic: marketing-hub
-  ms.author: samanro
-  author: samanro
-  ms.date: 04/29/2025
-  brand: m365
+  ms.topic: hub-page
+  author: nicholasswhite
+  ms.author: nicholasswhite
+  ms.date: 05/01/2025
 
-sections:
-  - componentType: hero-learn
-    supertitle: Microsoft Learn
-    title: Microsoft 365 Copilot
-    summary: "Microsoft 365 Copilot transforms productivity by combining the power of large language models with your data in Microsoft 365. Access resources to deploy, secure, manage, and extend Copilot in your organization."
+highlightedContent:
+  items:
+    - title: Get started with Microsoft 365 Copilot
+      itemType: get-started
+      url: /copilot/microsoft-365/overview.md
+    - title: What’s new in Microsoft 365 Copilot
+      itemType: whats-new
+      url: /copilot/microsoft-365/whats-new.md
+    - title: E3 implementation guide
+      itemType: deploy
+      url: /copilot/microsoft-365/e3-guide.md
+    - title: E5 implementation guide
+      itemType: deploy
+      url: /copilot/microsoft-365/e5-guide.md
 
-  - componentType: testimonials-section
-    title: Discover top picks
-    cards:
-      - avatarUrl: /office/media/icons/chat.png
-        componentType: testimonial-card
-        name: Introduction to Microsoft 365 Copilot
-        role: Overview
-        feedback: Understand how Copilot works, integrates with Microsoft 365, and drives productivity with AI.
-        link:
-          componentType: link
-          url: microsoft-365-copilot-overview.md
-          text: Learn more
-      - avatarUrl: /office/media/icons/structure-blue.png
-        componentType: testimonial-card
-        name: Microsoft 365 Copilot architecture
-        role: Architecture
-        feedback: Dive into Copilot's technical architecture, including how it protects and uses organizational data.
-        link:
-          componentType: link
-          url: microsoft-365-copilot-architecture.md
-          text: View architecture
-      - avatarUrl: /office/media/icons/lock-protected-blue.png
-        componentType: testimonial-card
-        name: Protect your data with Copilot
-        role: Security
-        feedback: Explore Microsoft’s security measures, auditing capabilities, and responsible AI commitments for Copilot.
-        link:
-          componentType: link
-          url: microsoft-365-copilot-privacy.md
-          text: Explore security
-      - avatarUrl: /office/media/icons/tasks-blue.png
-        componentType: testimonial-card
-        name: Start using Microsoft 365 Copilot
-        role: Deployment
-        feedback: Access guides and setup information to implement Copilot in your environment.
-        link:
-          componentType: link
-          url: microsoft-365-copilot-e3-guide.md
-          text: Start deployment
+productDirectory:
+  title: Products and Capabilities
+  summary: Explore core Microsoft 365 Copilot services and how they work together.
+  items:
+    - title: Microsoft 365 Copilot Chat
+      imageSrc: /media/logos/copilot-chat.svg
+      summary: Use Copilot Chat for productivity across Microsoft 365.
+      url: /copilot/microsoft-365/copilot-chat.md
+    - title: Agents
+      imageSrc: /media/logos/agents.svg
+      summary: Ground Copilot experiences on web and work data using agents.
+      url: /copilot/microsoft-365/agents.md
+    - title: Customize and extend
+      imageSrc: /media/logos/customize.svg
+      summary: Add your own knowledge, flows, and connections to Copilot.
+      url: /copilot/microsoft-365/customize.md
 
-  - componentType: bifold
-    blocks:
-      - componentType: text
-        title: "What's new in Microsoft 365 Copilot"
-        summary: Discover recent updates and features to get the most out of Microsoft 365 Copilot.
-        links:
-          - componentType: link
-            text: See what's new
-            url: /microsoft-365-copilot/whats-new
-      - componentType: video
-        src: "https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78"
+conceptualContent:
+  sections:
+    - title: Get started
+      summary: Prepare your organization and users to use Microsoft 365 Copilot effectively.
+      items:
+        - title: Get ready
+          links:
+            - itemType: get-started
+              text: Readiness checklist
+              url: /copilot/microsoft-365/get-ready.md
+            - itemType: get-started
+              text: Licensing overview
+              url: /copilot/microsoft-365/licensing.md
+        - title: Drive adoption
+          links:
+            - itemType: how-to-guide
+              text: Adoption site
+              url: https://adoption.microsoft.com/copilot/
+        - title: Deliver impact
+          links:
+            - itemType: how-to-guide
+              text: Usage report
+              url: /copilot/microsoft-365/usage-report.md
+            - itemType: how-to-guide
+              text: Agent usage report
+              url: /copilot/microsoft-365/agent-usage.md
 
-  - componentType: cards
-    title: Get ready to deploy
-    summary: Prepare your organization to use Copilot effectively with our step-by-step guides.
-    blocks:
-      - componentType: card
-        title: E3 implementation guide
-        summary: Step-by-step deployment guide for Microsoft 365 E3 customers.
-        imageUrl: /office/media/icons/get-started-blue.png
-        links:
-          - componentType: link
-            url: microsoft-365-copilot-e3-guide.md
-            text: Open guide
-      - componentType: card
-        title: E5 implementation guide
-        summary: Deployment steps tailored for Microsoft 365 E5 environments.
-        imageUrl: /office/media/icons/get-started-blue.png
-        links:
-          - componentType: link
-            url: microsoft-365-copilot-e5-guide.md
-            text: Open guide
-      - componentType: card
-        title: Licensing options
-        summary: Review the licensing requirements and options for enabling Microsoft 365 Copilot.
-        imageUrl: /office/media/icons/bill-blue.png
-        links:
-          - componentType: link
-            url: microsoft-365-copilot-licensing.md
-            text: View licensing information
-      - componentType: card
-        title: Optimization Assessment
-        summary: Use the Microsoft 365 Copilot Optimization Assessment to validate readiness.
-        imageUrl: /office/media/icons/usage-report-blue.png
-        links:
-          - componentType: link
-            url: https://www.microsoft.com/en-us/solutionassessments/safeedbackform
-            text: Learn more
-
-  - componentType: cards
-    title: Onboard and drive adoption
-    summary: Set up licenses and drive engagement with proven strategies and tools.
-    blocks:
-      - componentType: card
-        title: Set up Copilot licenses
-        summary: Learn how to set up and assign licenses for Microsoft 365 Copilot.
-        imageUrl: /office/media/icons/tasks-blue.png
-        links:
-          - componentType: link
-            url: microsoft-365-copilot-setup.md
-            text: Setup guide
-      - componentType: card
-        title: Setup guide (cloud.microsoft)
-        summary: Use the Copilot setup guide on setup.cloud.microsoft.
-        imageUrl: /office/media/icons/tasks-blue.png
-        links:
-          - componentType: link
-            url: https://setup.cloud.microsoft/copilot-for-microsoft-365/setup-guide
-            text: Open guide
-      - componentType: card
-        title: Employee adoption toolkit
-        summary: Best practices, templates, and resources for employee engagement.
-        imageUrl: /office/media/icons/share-blue.png
-        links:
-          - componentType: link
-            url: https://adoption.microsoft.com/copilot/
-            text: Access toolkit
-      - componentType: card
-        title: Copilot Scenario Library
-        summary: Explore real-world Copilot use cases to drive adoption.
-        imageUrl: /office/media/icons/tasks-blue.png
-        links:
-          - componentType: link
-            url: https://adoption.microsoft.com/copilot-scenario-library/
-            text: View library
-      - componentType: card
-        title: Copilot Prompt Gallery
-        summary: Explore recommended prompts and tutorials for Copilot users.
-        imageUrl: /office/media/icons/education-tutorial-blue.png
-        links:
-          - componentType: link
-            url: https://copilot.cloud.microsoft/prompts
-            text: Explore gallery
-
-  - componentType: cards
-    title: Monitor and measure success
-    summary: Understand how Copilot adoption is progressing across your organization.
-    blocks:
-      - componentType: card
-        title: Microsoft 365 Copilot usage report
-        summary: Learn how to use the usage report to track adoption.
-        imageUrl: /office/media/icons/usage-report-blue.png
-        links:
-          - componentType: link
-            url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage?bc=/microsoft-365/copilot/breadcrumb/toc.json&toc=/microsoft-365/copilot/toc.json
-            text: View usage report
-      - componentType: card
-        title: Copilot Dashboard in Viva Insights
-        summary: Visualize Copilot usage insights with Viva.
-        imageUrl: /office/media/icons/graph-3-blue.png
-        links:
-          - componentType: link
-            url: /viva/insights/org-team-insights/copilot-dashboard?bc=/microsoft-365/copilot/breadcrumb/toc.json&toc=/microsoft-365/copilot/toc.json
-            text: Explore dashboard
-      - componentType: card
-        title: Drive organizational change with Viva
-        summary: Use Copilot with Viva Engage and Goals to accelerate change.
-        imageUrl: /office/media/icons/tasks-blue.png
-        links:
-          - componentType: link
-            url: /viva/engage/configure-copilot-for-engage?bc=/microsoft-365/copilot/breadcrumb/toc.json&toc=/microsoft-365/copilot/toc.json
-            text: Engage with Viva
-          - componentType: link
-            url: /viva/goals/copilot-intro?bc=/microsoft-365/copilot/breadcrumb/toc.json&toc=/microsoft-365/copilot/toc.json
-            text: Goals with Copilot
-
-  - componentType: cards
-    title: Extend and build solutions
-    summary: Extend Copilot with custom solutions, agents, and connectors.
-    blocks:
-      - componentType: card
-        title: Build plugins and connectors
-        summary: Extend Copilot with your own plugins and APIs.
-        imageUrl: /office/media/icons/developer-blue.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/extensibility/
-            text: Get started
-      - componentType: card
-        title: Build a custom Copilot agent
-        summary: Learn how to build agents tailored to your organization’s needs.
-        imageUrl: /office/media/icons/developer-blue.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/extensibility/build-or-extend#build-your-own-copilot
-            text: Build agent
-      - componentType: card
-        title: Get started with Copilot Studio
-        summary: Use Copilot Studio to create and manage custom copilots.
-        imageUrl: /office/media/icons/developer-blue.png
-        links:
-          - componentType: link
-            url: /microsoft-copilot-studio/
-            text: Explore Copilot Studio
-      - componentType: card
-        title: "Learning path: Extend Microsoft 365 Copilot"
-        summary: Microsoft Learn path for extensibility.
-        imageUrl: /office/media/icons/education-tutorial-blue.png
-        links:
-          - componentType: link
-            url: /training/paths/copilot-m365-extensibility/
-            text: Start learning
+additionalContent:
+  sections:
+    - title: Security and compliance
+      summary: Learn how Microsoft 365 Copilot protects data and adheres to compliance standards.
+      items:
+        - title: Data protection overview
+          summary: Understand Microsoft's security posture for AI.
+          url: /copilot/microsoft-365/data-protection.md
+        - title: Audit logging and eDiscovery
+          summary: Review how auditing and legal hold support compliance.
+          url: /copilot/microsoft-365/audit-logging.md
+        - title: Responsible AI commitments
+          summary: Explore how Microsoft applies Responsible AI principles.
+          url: /copilot/microsoft-365/responsible-ai.md
+    - title: Skilling and training
+      summary: Grow your Copilot admin skills with technical training and support resources.
+      items:
+        - title: Help & learning
+          summary: Access how-to guides, videos, and admin courses.
+          url: /copilot/microsoft-365/help-and-learning.md
+        - title: Official Microsoft Docs
+          summary: Browse full documentation for setup and management.
+          url: /copilot/microsoft-365/index.md
+        - title: Community
+          summary: Join the Microsoft Tech Community to discuss Copilot.
+          url: https://techcommunity.microsoft.com/t5/microsoft-365-copilot/bg-p/Microsoft365Copilot
