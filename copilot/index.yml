@@ -67,7 +67,7 @@ sections:
             text: Explore what’s new
             url: /microsoft-365-copilot/whats-new
       - componentType: video
-        src: "https://www.youtube.com/embed/your-video-id" # Placeholder for the AI and Copilot at Microsoft video
+        src: "https://learn-video.azurefd.net/vod/player?id=6ba0f4d6-fffc-479a-9698-a90e6e57e80f&embedUrl=https://learn.microsoft.com/microsoft-365-copilot"
 
   - componentType: cards
     title: Get started with Microsoft 365 Copilot
