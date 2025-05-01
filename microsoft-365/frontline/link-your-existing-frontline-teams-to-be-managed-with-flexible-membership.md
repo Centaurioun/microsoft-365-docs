@@ -35,17 +35,17 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 2. View your discovered frontline locations on the **Deploy or link frontline teams** page. Start linking your teams to these locations by selecting the **Link existing teams** tab.
 
-![View your discovered locations on the Deploy or link frontline teams page and select Link existing teams to learn more about linking teams.](/microsoft-365/frontline/media/deploy-or-link-frontline-teams1.png)
+![View your discovered locations on the Deploy or link frontline teams page and select Link existing teams to learn more about linking teams.](/microsoft-365/frontline/media/deploy-or-link-frontline-teams-discovered-locations.png)
 
 3. On the Link existing teams tab, select on **Get started**.
 
-![Select Get started on the Link existing teams tab to start linking.](/microsoft-365/frontline/media/link-existing-teams1.png)
+![Select Get started on the Link existing teams tab to start linking.](/microsoft-365/frontline/media/deploy-or-link-frontline-teams-linking-teams.png)
 
 ## Uploading your CSV
 
 1. Begin by downloading the CSV template, which have all your identified frontline locations already populated in the first column under **Locations**.
 
-![Upload your CSV of team IDs of the teams you want to link.](/microsoft-365/frontline/media/link-existing-teams-upload1.png)
+![Upload your CSV of team IDs of the teams you want to link.](/microsoft-365/frontline/media/linking-teams.png)
 
 2. Enter the team IDs for each frontline location you wish to associate with a team in the **Team ID** column. Leave the Team ID field blank for any locations where you do not wish to link teams. You can always come back and link teams to more locations.
 
@@ -60,7 +60,7 @@ Existing team members are not removed when you link teams. Monitor usage of Team
 
 5. Refresh the Manage frontline teams page to check if linking is complete. The Link status shows the last linked date. Select **Deploy** again to link more teams, following the same steps.
 
-![Link status shows the last linked date and you can select Deploy to link more teams.](/microsoft-365/frontline/media/link-complete1.png)
+![Link status shows the last linked date and you can select Deploy to link more teams.](/microsoft-365/frontline/media/link-complete.png)
 
 ## Get analytics on frontline teams usage
 
