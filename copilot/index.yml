@@ -1,17 +1,15 @@
 ### YamlMime:Marketing
+title: Microsoft 365 Copilot hub
+metadata:
   title: 'Microsoft 365 Copilot hub | Microsoft Learn'
-  description: Learn how your organization can deploy, secure, extend, and optimize Microsoft 365 Copilot.
+  description: Discover documentation, resources, training, and support for Microsoft 365 Copilot, including Copilot Chat, agents, and integration guidance.
   ms.service: microsoft-365-copilot
-  keywords: copilot, microsoft 365, copilot chat, copilot agents, microsoft 365 documentation
+  keywords: copilot, microsoft 365, copilot chat, agents, AI, microsoft 365 documentation
   ms.topic: marketing-hub
-  ms.author: samanro
-  author: samanro
+  ms.author: youralias
+  author: yourgithub
+  ms.date: 04/29/2025
   brand: m365
-  ms.collection:
-    - essentials-navigation
-    - m365copilot
-    - magic-ai-copilot
-  ms.date: 04/29/2025  
    
 ---
 sections:
