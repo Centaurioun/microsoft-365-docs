@@ -1,6 +1,4 @@
 ### YamlMime:Marketing
-title: Microsoft 365 Copilot hub
-metadata:
   title: 'Microsoft 365 Copilot hub | Microsoft Learn'
   description: Learn how your organization can deploy, secure, extend, and optimize Microsoft 365 Copilot.
   ms.service: microsoft-365-copilot
@@ -10,6 +8,11 @@ metadata:
   author: samanro
   ms.date: 04/29/2025
   brand: m365
+  ms.collection:
+    - essentials-navigation
+    - m365copilot
+    - magic-ai-copilot
+  ms.custom: copilot-learning-hub
 
 sections:
   - componentType: hero-learn
