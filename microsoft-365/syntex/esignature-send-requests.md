@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 04/25/2025
+ms.date: 05/06/2025
 audience: enabler
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -19,12 +19,12 @@ description: Learn how to use SharePoint eSignature to create and send electroni
 
 # Create a signature request from a PDF in SharePoint eSignature
 
-## Create a signature request
+## Create a signature request from a PDF
 
 Use the following steps to start the SharePoint eSignature process. You must be signed in to SharePoint by using your work email address.
 
 > [!NOTE]
-> Only PDF documents are supported at this time. 
+> Only PDF documents are supported at this time.
 
 1. From a SharePoint document library, open the document for which you want to start the eSignature process.
 
@@ -97,10 +97,10 @@ Use the following steps to start an electronic signature in SharePoint using ano
 6. The provider's website opens in another browser tab.
 
 7. On the new tab, proceed with the request creation process as you normally would.
-   
-9. Once completed, you can close all document tabs.
-    
-10. To cancel or track a request from other providers, you can do this in the Approvals app in Teams or via the provider's website.
+
+8. Once completed, you can close all document tabs.
+
+9. To cancel or track a request from other providers, you can do this in the Approvals app in Teams or via the provider's website.
 
 <br>
 
