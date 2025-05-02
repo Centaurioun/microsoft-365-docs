@@ -155,7 +155,7 @@ In this section:
 [What type of invoices can I see?](#what-type-of-invoices-can-i-see)<br/>
 [Who receives volume licensing invoices by email?](#who-receives-volume-licensing-invoices-by-email)<br/>
 [What is the difference between invoice PDF and invoice recon file?](#what-is-the-difference-between-invoice-pdf-and-invoice-recon-file)<br/>
-[Why can't I see volue licensing invoices in the Microsoft 365 admin center?](#why-cant-i-see-volume-licensing-invoices-in-the-microsoft-365-admin-center)<br/>
+[Why can't I see volume licensing invoices in the Microsoft 365 admin center?](#why-cant-i-see-volume-licensing-invoices-in-the-microsoft-365-admin-center)<br/>
 [How do I request permission to view volume licensing invoices?](#how-do-i-request-permission-to-view-volume-licensing-invoices)<br/>
 [How often and when am I billed?](#how-often-and-when-am-i-billed)<br/>
 [Why is my total due different from last billing period?](#why-is-my-total-due-different-from-last-billing-period)<br/>
