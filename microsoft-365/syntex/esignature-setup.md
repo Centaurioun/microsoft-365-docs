@@ -45,7 +45,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 > [!NOTE]
-> If you're requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests. For more information, see [External recipients](#external-recipients) later in this article.
+> If you're requesting signatures from external recipients who are not existing guests on your tenant, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests. For more information, see [External recipients](#external-recipients) later in this article.
 
 ## Set up SharePoint eSignature
 
@@ -63,11 +63,11 @@ To let people in your organization use SharePoint eSignature, follow these steps
 
 Once configured, several background processes automatically begin to integrate the feature seamlessly into your existing Microsoft 365 tenant and services. These processes include data synchronization, configuration updates, and performance optimizations. SharePoint eSignature will be fully operational within 24 hours of activation.
 
-### Add other signature providers
+### Add signature providers
 
 To select which signature providers to use, follow these steps.
 
-1. On the **eSignature** panel, in the **Which signature providers can be used?** section, select the providers you want to use.
+1. On the **eSignature** panel, in the **Which signature providers can be used?** section, select the providers you want to use. You can choose 1 provider, all providers or a combination of providers. 
 
     ![Screenshot showing the Edit signature providers panel.](../media/content-understanding/esignature-edit-providers-panel.png)
 
@@ -78,7 +78,7 @@ To select which signature providers to use, follow these steps.
 
 ### Allow signature requests in Microsoft Word
 
-To let users use SharePoint eSignature in Word, you need to [turn on the Word feature](#turn-on-the-word-feature) and [apply the group policy](#apply-the-group-policy).
+To let users use SharePoint eSignature in Word, you need to [turn on the Word feature](#turn-on-the-word-feature) and [apply the Office group policy](#apply-the-office-group-policy).
 
 #### Turn on the Word feature
 
@@ -88,7 +88,7 @@ To let users use SharePoint eSignature in Word, you need to [turn on the Word fe
 
 2. Select **Save**.
 
-#### Apply the group policy
+#### Apply the Office group policy
 
 The **Allow the use of SharePoint eSignature for Microsoft Word** group policy setting controls whether users can request eSignatures directly from Word in tenants that have enabled the Microsoft native eSignature service. If the policy is inactive or not applied, the eSignature action isn't visible and invokable on the **Insert** ribbon in Word.
 
@@ -101,8 +101,6 @@ The **Allow the use of SharePoint eSignature for Microsoft Word** group policy s
     Or, acquire the policy via the Microsoft Download Center: [Administrative Template files (ADMX/ADML) for Microsoft Office](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
 
 2. Apply the policy setting.
-
-3. *[Include guidance on PowerShell or regkey application?]*
 
 ### Manage sites
 
@@ -122,6 +120,8 @@ To specify the sites where users can use eSignature, follow these steps.
 2. Under **Document & image services**, select **eSignature**.
 
 3. On the **eSignature** panel, clear the **Let people in your organization use eSignature** check box.
+
+4. Disable the policy **Allow the use of SharePoint eSignature for Microsoft Word** to remove the eSignature action from Word 
 
 ## External recipients
 
