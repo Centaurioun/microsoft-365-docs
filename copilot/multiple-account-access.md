@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 04/30/2025
+ms.date: 05/02/2025
 ---
 
 # Multiple account access to Copilot for work and school documents
@@ -90,6 +90,7 @@ As of April 30, 2025, multiple account access is rolling out gradually in the fo
 
 ### On Mac devices
 
+- Excel: Version 16.95
 - OneNote: Version 16.96
 - PowerPoint: Version 16.95
 - Word: Version 16.95.3
