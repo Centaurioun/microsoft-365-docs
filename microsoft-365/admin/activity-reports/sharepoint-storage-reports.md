@@ -59,7 +59,7 @@ The SharePoint storage report contains the following sections:
 
 Explore ways to manage your storage through setting file history limits, archiving inactive sites<sup>1</sup>, and creating site lifecycle management policies<sup>1</sup>. To increase SharePoint storage capacity, buy more storage in one-gigabyte increments. For more information about planning for SharePoint storage, see [SharePoint storage planning](/sharepoint/sharepoint-storage-planning).
 
-<sup>1</sup> Additional licensing charges might apply.
+<sup>1</sup> Additional licensing/charges might apply.
 
 ### Total usage
 
