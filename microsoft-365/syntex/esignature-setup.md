@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 03/19/2025
+ms.date: 05/06/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
@@ -28,7 +28,7 @@ SharePoint eSignature is a pay-as-you-go service that is set up in the Microsoft
 
 > [!div class="checklist"]
 > * [Review prerequisites.](#prerequisites)
-> * [Set up Microsoft 365 eSignature.](#set-up-microsoft-365-esignature)
+> * [Set up SharePoint eSignature.](#set-up-sharepoint-esignature)
 > * [Add signature providers.](#add-signature-providers)
 > * [Manage sites.](#manage-sites)
 > * [Enable new external guests or default to existing guests only.](#external-recipients)
