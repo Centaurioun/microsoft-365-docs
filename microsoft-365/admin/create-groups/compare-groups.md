@@ -22,6 +22,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - campaignIDs-batch2
+- m365-groups
 search.appverid:
 - BCS160
 - MET150
