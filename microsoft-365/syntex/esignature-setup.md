@@ -26,11 +26,12 @@ SharePoint eSignature is a pay-as-you-go service that is set up in the Microsoft
 
 ## SharePoint eSignature admin checklist
 
-- Review prerequisites
-- Set up SharePoint eSignature
-- Add other signature providers
-- Manage sites
-- Enable new external guests or default to existing guests only 
+> [!div class="checklist"]
+> * [Review prerequisites.](#prerequisites)
+> * [Set up Microsoft 365 eSignature.](#set-up-microsoft-365-esignature)
+> * [Add signature providers.](#add-signature-providers)
+> * [Manage sites.](#manage-sites)
+> * [Enable new external guests or default to existing guests only.](#external-recipients)
 
 ## Prerequisites
 
