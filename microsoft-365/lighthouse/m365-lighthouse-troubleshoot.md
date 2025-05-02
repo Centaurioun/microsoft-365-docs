@@ -164,7 +164,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 ### Message when viewing the Opportunities page in Lighthouse: "You don't have permission to view the information on this page"
 
-**Cause:** You don't have the correct permissions in Partner Center to view the Opportunities page in Lighthouse.
+**Cause:** You don't have the correct permissions to view the Opportunities page in Lighthouse.
 
 **Resolution:** Verify that you hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 

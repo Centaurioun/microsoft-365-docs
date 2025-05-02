@@ -294,7 +294,9 @@ sections:
           Opportunities are specific to Microsoft 365 services and solutions.  
       - question: How do I view opportunities? 
         answer: |
-          To view opportunities, you must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. To view opportunities in Lighthouse, in the left navigation pane, select **Opportunities**. For more information about permissions, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). To learn more about opportunities, see [Understand opportunities and data in Microsoft 365 Lighthouse](m365-lighthouse-understanding-opportunities-and-data.md) and [View opportunities in Microsoft 365 Lighthouse](m365-lighthouse-view-opportunities.md).
+          To view opportunities, you must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. To view opportunities in Lighthouse, in the left navigation pane, select **Opportunities**.
+          
+          For more information about permissions, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). To learn more about opportunities, see [Understand opportunities and data in Microsoft 365 Lighthouse](m365-lighthouse-understanding-opportunities-and-data.md) and [View opportunities in Microsoft 365 Lighthouse](m365-lighthouse-view-opportunities.md).
       - question: What is the difference between opportunities in Lighthouse and Cloud Ascent? Are they complimentary? 
         answer: |
           The two offerings serve different purposes and use different signals to generate information shared with MSPs. 
