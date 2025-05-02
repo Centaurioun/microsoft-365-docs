@@ -42,7 +42,7 @@ To view the SharePoint storage report, perform the following steps:
 
    :::image type="content" source="../../media/usage-page.png" alt-text="Screenshot that shows the Usage page." lightbox="../../media/usage-page.png":::
 
-1. From the left navigation pane, select **SharePoint**.
+1. From the left navigation pane, select **SharePoint**.
 1. Select the **Storage** tab.
 
 > [!NOTE]
@@ -57,7 +57,7 @@ The SharePoint storage report contains the following sections:
 
 ### Optimize your organization’s SharePoint storage
 
-Explore ways to manage your storage through setting file history limits, archiving inactive sites<sup>1</sup>, and creating site lifecycle management policies<sup>1</sup>. To increase SharePoint storage capacity, buy more storage in one-gigabyte increments. For more information about planning for SharePoint storage.
+Explore ways to manage your storage through setting file history limits, archiving inactive sites<sup>1</sup>, and creating site lifecycle management policies<sup>1</sup>. To increase SharePoint storage capacity, buy more storage in one-gigabyte increments. For more information about planning for SharePoint storage, see [SharePoint storage planning](/sharepoint/sharepoint-storage-planning).
 
 <sup>1</sup> Additional licensing charges might apply.
 
