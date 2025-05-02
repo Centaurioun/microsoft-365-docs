@@ -79,7 +79,7 @@ Follow these steps to use SharePoint eSignature for Microsoft Word.
 
     ![Screenshot of the Create request button in Word.](../media/content-understanding/esignature-create-request-button-word.png)
 
-10. Recipient receives a link in mail to sign a PDF of the Word document.
+10. You will recieve a mail confirmation the request was sent and recipients will receive a link in mail to sign a PDF of the Word document.
 
 11. You can now close the eSignature panel in Word or select **Start new request** to create another eSignature request.
 
