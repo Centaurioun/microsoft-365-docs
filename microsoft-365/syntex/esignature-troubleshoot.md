@@ -90,23 +90,23 @@ To avoid potential issues, you should check the status and settings of the docum
 
     ![Screenshot showing the Update Channel button in Word.](../media/content-understanding/esignature-word-update-channel.png)
 
-- Select the **Beta** channel.
+- Select the **Beta** or **Current** channel.
 - If you don't have the **Update Channel** option, your admin has disabled it, or you don't have local administrator permissions. Learn more about the [Update Channel option](/microsoft-365-apps/insider/deploy/user-choice).
 
 #### When I select the ribbon action in Word, I receive a message that SharePoint eSignature isn't enabled
 
-- The Word document must be located on a SharePoint-enabled site.  
+- The Word document must be located on a SharePoint eSignature enabled site.  
 - Word hasn't been enabled in the Microsoft 365 admin center.
 
     ![Screenshot showing that eSignature is turned off.](../media/content-understanding/esignature-turned-off-message.png)
 
-#### I got a message to change the sensitivity label
+#### I get a message to change the sensitivity label
 
 - SharePoint eSignature supports unencrypted documents such as General, non-Business, Public, Confidential (Any user/No protection), High Confidential (Any user/No protection), and non-encrypted labeled documents.
 
 #### I can't send a request in Word to new external signers
 
-- Your admin hasn't configured SharePoint eSignature to send requests to external senders who aren't existing guests on your tenant. *[More info.]*
+- Your admin hasn't configured SharePoint eSignature to send requests to external senders who aren't existing guests on your tenant. 
 
 #### As an admin, I don't have a toggle to disable requesting signatures from PDFs
 
