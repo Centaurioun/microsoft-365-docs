@@ -20,14 +20,14 @@ description: Learn how to use SharePoint eSignature to create and send electroni
 # Create a signature request from Word in SharePoint eSignature
 
 > [!NOTE]
-> This feature begins rolling out to users on the Microsoft 365 Beta and Current Channels at the end of May. To get access to the feature, ensure your admin has completed [these steps to allow signature requests in Microsoft Word](esignature-setup.md#allow-signature-requests-in-microsoft-word).
+> This feature begins rolling out to users on the Microsoft 365 Beta and Current Channels at the end of May. To get access to the feature, your admin must [complete these steps to allow signature requests in Microsoft Word](esignature-setup.md#allow-signature-requests-in-microsoft-word).
 
 When you request electronic signatures from Word, the recipients sign a PDF copy of the Word document.
 
 - Recipients don't access the source Word document during the signing process.
 - Recipient information, such as an email address, isn't stored in the Word document.
 - Upon completion of signing, the signed PDF is stored in the same location as the Word document.
-- Requests can be sent from editable Word documents and read-only Word documents that have prepositioned eSignature fields placeholders.
+- Requests can be sent from editable Word documents and read-only Word documents with prepositioned eSignature fields placeholders.
 
 ## SharePoint eSignature for Word scenarios
 
@@ -79,7 +79,7 @@ Follow these steps to use SharePoint eSignature for Microsoft Word.
 
     ![Screenshot of the Create request button in Word.](../media/content-understanding/esignature-create-request-button-word.png)
 
-10. You will recieve a mail confirmation the request was sent and recipients will receive a link in mail to sign a PDF of the Word document.
+10. You receive a mail confirmation the request was sent and recipients receive a link in mail to sign a PDF of the Word document.
 
 11. You can now close the eSignature panel in Word or select **Start new request** to create another eSignature request.
 
