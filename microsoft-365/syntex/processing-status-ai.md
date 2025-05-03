@@ -1,5 +1,5 @@
 ---
-title: Monitor file processing for autofill and document in SharePoint
+title: Monitor the status of files processed for autofill and translation in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about processing status columns in a SharePoint document library.
 ---
 
-# Monitor file processing for autofill and translation in SharePoint
+# Monitor the status of files processed for autofill and translation in SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Autofill columns &ensp; | &ensp; &#10003; Document translation</sup>
 
