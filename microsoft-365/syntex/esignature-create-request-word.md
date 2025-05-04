@@ -37,11 +37,11 @@ When you request electronic signatures from Word, the recipients sign a PDF copy
 - Create a request from an eSignature template.
 - Allow multiple users to create requests in parallel.
 
-## Prerequisites
+## Usage Prerequisites
 
 - A subscription version of Word desktop.
 - User is on the Microsoft 365 Beta Channel or Current Channel.
-- The document is stored in a SharePoint library.
+- The document is stored in a SharePoint site that has been enabled for SharePoint eSignture.
 - The document is in the .docx format.
 - The document is unencrypted.
 
@@ -79,7 +79,7 @@ Follow these steps to use SharePoint eSignature for Microsoft Word.
 
     ![Screenshot of the Create request button in Word.](../media/content-understanding/esignature-create-request-button-word.png)
 
-10. You receive a mail confirmation the request was sent and recipients receive a link in mail to sign a PDF of the Word document.
+10. You will receive a mail confirmation when the request was sent and recipients receive a link in mail to sign a PDF copy of the Word document.
 
 11. You can now close the eSignature panel in Word or select **Start new request** to create another eSignature request.
 
