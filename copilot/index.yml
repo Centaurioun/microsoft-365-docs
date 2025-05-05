@@ -35,7 +35,7 @@ sections:
         imageUrl: https://msblogs.thesourcemediaassets.com/2024/01/Copilot_Pro_Hero_Static_IconOnly_16x9.png
         links:
           - componentType: link
-            url: /microsoft-365/microsoft-365-copilot-overview
+            url: /copilot/microsoft-365-copilot-overview
             text: Learn more
       - componentType: card
         title: Agents
