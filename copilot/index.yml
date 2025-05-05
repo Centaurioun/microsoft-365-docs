@@ -16,7 +16,10 @@ sections:
     supertitle: Microsoft Learn
     title: Microsoft 365 Copilot
     summary: Technical documentation and other resources for Microsoft 365 Copilot, including Copilot Chat and agents.
-
+    heroImage:
+      componentType: hero-image
+      imageUrl: https://msblogs.thesourcemediaassets.com/2024/01/Copilot_Pro_Hero_Static_IconOnly_16x9.png
+      
   - componentType: cards
     title: Products
     summary: Learn about the different Copilot experiences.
