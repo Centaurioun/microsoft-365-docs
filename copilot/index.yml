@@ -1,22 +1,3 @@
-### YamlMime:Marketing
-title: Microsoft 365 Copilot hub
-metadata:
-  title: 'Microsoft 365 Copilot hub | Microsoft Learn'
-  description: Technical documentation and other resources for Microsoft 365 Copilot, including Copilot Chat and agents.
-  ms.service: microsoft-365-copilot
-  keywords: copilot, microsoft 365, copilot chat, agents, microsoft copilot documentation
-  ms.topic: marketing-hub
-  ms.author: samanro
-  author: samanro
-  ms.date: 04/29/2025
-  brand: m365
-
-sections:
-  - componentType: hero-learn
-    supertitle: Microsoft Learn
-    title: Microsoft 365 Copilot
-    summary: Technical documentation and other resources for Microsoft 365 Copilot, including Copilot Chat and agents.
-
   - componentType: cards
     title: Products
     summary: Learn about the different Copilot experiences.
@@ -53,27 +34,6 @@ sections:
           - componentType: link
             url: /microsoft-365-copilot/security/data-protection
             text: Learn more
-                  
-  - componentType: cards
-    title: Highlights
-    summary: Explore what's new and how to get started.
-    blocks:
-      - componentType: card
-        title: What’s new in Microsoft 365 Copilot
-        summary: See recent updates and improvements to Copilot.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/whats-new
-            text: View updates
-      - componentType: card
-        title: Compare Copilot Chat and Microsoft 365 Copilot
-        summary: Understand the key differences in grounding and features.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
-        links:
-          - componentType: link
-            url: https://support.microsoft.com/topic/what-s-the-difference-between-microsoft-365-copilot-chat-and-microsoft-365-copilot-5810b659-fbe0-48ee-9fe6-d731fe86cdeb
-            text: Read comparison
 
   - componentType: bifold
     blocks:
@@ -91,6 +51,14 @@ sections:
     title: Let’s go
     summary: Start your deployment and engagement journey.
     blocks:
+      - componentType: card
+        title: What’s new in Microsoft 365 Copilot
+        summary: See recent updates and improvements to Copilot.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
+        links:
+          - componentType: link
+            url: /microsoft-365-copilot/whats-new
+            text: View updates
       - componentType: card
         title: Get ready
         summary: Step-by-step guidance to get started with Microsoft 365 Copilot.
@@ -124,53 +92,3 @@ sections:
           - componentType: link
             url: /microsoft-365-copilot/manage/usage-reports
             text: Agent usage report
-
-  - componentType: cards
-    title: Security and compliance
-    summary: Learn how Microsoft protects your organization's data.
-    blocks:
-      - componentType: card
-        title: Data protection and security posture
-        summary: Overview of Microsoft's AI security posture and protection for organizational data.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/4-secure-your-data.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/security/data-protection
-            text: Learn more
-      - componentType: card
-        title: Audit logging and retention
-        summary: Learn about auditing, eDiscovery, legal hold, and data retention controls.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/security.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/security/audit-logging
-            text: Learn more
-      - componentType: card
-        title: Responsible AI
-        summary: Microsoft's commitment to ethical AI principles in Copilot.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/step-1.png
-        links:
-          - componentType: link
-            url: https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92
-            text: Learn more
-
-  - componentType: cards
-    title: Learn
-    summary: Explore documentation and skilling resources.
-    blocks:
-      - componentType: card
-        title: Skilling and training
-        summary: Videos, tutorials, and courses to help your organization get started with Copilot.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/training
-            text: Browse training
-      - componentType: card
-        title: Documentation
-        summary: Setup guides, best practices, and admin documentation for Microsoft 365 Copilot.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/2-ai-learning-hub.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/
-            text: View documentation
