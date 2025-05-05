@@ -24,7 +24,7 @@ sections:
       - componentType: card
         title: Microsoft 365 Copilot Chat
         summary: Grounded on web data. Free to organizations with a Microsoft 365 license.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/module-icon.png
+        imageUrl: https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/1043147-hero-image
         links:
           - componentType: link
             url: /microsoft-365-copilot/copilot-chat/overview
@@ -45,7 +45,15 @@ sections:
           - componentType: link
             url: /microsoft-365-copilot/extensibility/
             text: Learn more
-
+      - componentType: card
+        title: Security
+        summary: Learn how Microsoft 365 Copilot protects your organization's data with enterprise-grade security, auditing, and compliance.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/4-secure-your-data.png
+        links:
+          - componentType: link
+            url: /microsoft-365-copilot/security/data-protection
+            text: Learn more
+                  
   - componentType: cards
     title: Highlights
     summary: Explore what's new and how to get started.
