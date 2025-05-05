@@ -45,14 +45,6 @@ sections:
           - componentType: link
             url: /microsoft-365-copilot/extensibility/
             text: Learn more
-      - componentType: card
-        title: Security
-        summary: Learn how Microsoft 365 Copilot protects your organization's data with enterprise-grade security, auditing, and compliance.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/4-secure-your-data.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/security/data-protection
-            text: Learn more
 
   - componentType: bifold
     blocks:
@@ -70,14 +62,6 @@ sections:
     title: Let’s go
     summary: Start your deployment and engagement journey.
     blocks:
-      - componentType: card
-        title: What’s new in Microsoft 365 Copilot
-        summary: See recent updates and improvements to Copilot.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/release-notes
-            text: View updates
       - componentType: card
         title: Get ready
         summary: Step-by-step guidance to get started with Microsoft 365 Copilot.
