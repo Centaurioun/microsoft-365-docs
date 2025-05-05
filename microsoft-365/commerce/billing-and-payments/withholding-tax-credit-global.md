@@ -26,10 +26,6 @@ ms.date: 10/06/2024
 
 # Request a credit for Withholding Tax on your account (Global customers)
 
-> [!NOTE]
->
-> If your organization is based in India, some of the information in this article is slightly different.
-
 Some customers receive Web Direct (Azure and Microsoft 365) invoices billed by a Microsoft entity located in a foreign country/region. If your organization makes cross-border payments to that entity, the Tax Authority in your country/region might require you to withhold part of the cross-border payment as withholding tax (WHT). If you withheld taxes as required by your Tax Authority when remitting  payments to Microsoft, this article explains the process for claiming a credit for the tax withheld.
 
 Customers in India receive Web Direct (Azure and Microsoft 365) invoices billed by Microsoft Regional Sales Pte Ltd. Singapore (MRS) and make cross-border payments to Singapore to settle the invoice. If you withheld taxes when remitting the payment, this article explains the process for claiming a credit for the Withholding Tax (WHT) in your account with MRS.
