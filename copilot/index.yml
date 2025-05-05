@@ -35,12 +35,12 @@ sections:
         imageUrl: https://msblogs.thesourcemediaassets.com/2024/01/Copilot_Pro_Hero_Static_IconOnly_16x9.png
         links:
           - componentType: link
-            url: /copilot/microsoft-365-copilot-overview
+            url: microsoft-365-copilot-overview
             text: Learn more
       - componentType: card
         title: Agents
         summary: Customize and extend Microsoft 365 Copilot with agents that can perform tasks, use tools, and connect to other systems.
-        imageUrl: /copilot/media/microsoft-365-copilot-marketing-hub/copilot-agent-card.png
+        imageUrl: media/microsoft-365-copilot-marketing-hub/copilot-agent-card.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/extensibility/
@@ -68,10 +68,10 @@ sections:
         imageUrl: /office/media/icons/tasks-blue.png
         links:
           - componentType: link
-            url: /copilot/microsoft-365-copilot-e3-guide
+            url: microsoft-365-copilot-e3-guide
             text: E3 implementation guide
           - componentType: link
-            url: /copilot/microsoft-365-copilot-e5-guide
+            url: microsoft-365-copilot-e5-guide
             text: E5 implementation guide
       - componentType: card
         title: Drive adoption
@@ -93,7 +93,7 @@ sections:
             url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage
             text: Usage report
           - componentType: link
-            url: /copilot/microsoft-365-copilot-reports-for-admins
+            url: microsoft-365-copilot-reports-for-admins
             text: Agent usage report
 
   - componentType: cards
@@ -106,7 +106,7 @@ sections:
         imageUrl: /copilot/media/copilot/copilot-learning-hub/4-secure-your-data.png
         links:
           - componentType: link
-            url: /copilot/enterprise-data-protection
+            url: enterprise-data-protection
             text: Learn more
       - componentType: card
         title: Audit logging and retention
@@ -114,7 +114,7 @@ sections:
         imageUrl: /copilot/media/copilot/copilot-learning-hub/security.png
         links:
           - componentType: link
-            url: /copilot/microsoft-365-copilot-architecture-data-protection-auditing
+            url: microsoft-365-copilot-architecture-data-protection-auditing
             text: Learn more
       - componentType: card
         title: Responsible AI
@@ -135,7 +135,7 @@ sections:
         imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
         links:
           - componentType: link
-            url: /copilot/microsoft-365-copilot-enablement-resources
+            url: microsoft-365-copilot-enablement-resources
             text: Browse training
       - componentType: card
         title: Documentation
