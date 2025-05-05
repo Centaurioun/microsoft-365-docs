@@ -21,6 +21,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- m365-groups
 search.appverid:
 - BCS160
 - MET150
