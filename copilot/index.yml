@@ -32,7 +32,7 @@ sections:
       - componentType: card
         title: Microsoft 365 Copilot
         summary: Grounded on web and work data. Licensed by your organization.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+        imageUrl: https://msblogs.thesourcemediaassets.com/2024/01/Copilot_Pro_Hero_Static_IconOnly_16x9.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/
@@ -40,7 +40,7 @@ sections:
       - componentType: card
         title: Agents
         summary: Customize and extend Microsoft 365 Copilot with agents that can perform tasks, use tools, and connect to other systems.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/step-3.png
+        imageUrl: https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2024/12/Microsoft365-Copilot-KeyArt-Data-Prompt-6K-02_1260-1024x576.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/extensibility/
@@ -76,7 +76,7 @@ sections:
         imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
         links:
           - componentType: link
-            url: /microsoft-365-copilot/whats-new
+            url: release-notes
             text: View updates
       - componentType: card
         title: Get ready
