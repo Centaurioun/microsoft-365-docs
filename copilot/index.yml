@@ -2,12 +2,12 @@
 title: Microsoft 365 Copilot hub
 metadata:
   title: 'Microsoft 365 Copilot hub | Microsoft Learn'
-  description: Discover documentation, resources, training, and support for Microsoft 365 Copilot, including Copilot Chat, agents, and integration guidance.
+  description: Technical documentation and other resources for Microsoft 365 Copilot, including Copilot Chat and agents.
   ms.service: microsoft-365-copilot
-  keywords: copilot, microsoft 365, copilot chat, agents, AI, microsoft 365 documentation
+  keywords: copilot, microsoft 365, copilot chat, agents, microsoft copilot documentation
   ms.topic: marketing-hub
-  ms.author: youralias
-  author: yourgithub
+  ms.author: samanro
+  author: samanro
   ms.date: 04/29/2025
   brand: m365
 
@@ -15,134 +15,153 @@ sections:
   - componentType: hero-learn
     supertitle: Microsoft Learn
     title: Microsoft 365 Copilot
-    summary: "Explore resources to deploy, manage, and customize Microsoft 365 Copilot across your organization. Access technical guidance, implementation plans, security practices, and extensibility options for Copilot, including Chat and agent-based solutions."
+    summary: Technical documentation and other resources for Microsoft 365 Copilot, including Copilot Chat and agents.
 
-  - componentType: testimonials-section
-    title: Discover top picks
-    cards:
-      - avatarUrl: /office/media/icons/chat.png
-        componentType: testimonial-card
-        name: Microsoft 365 Copilot Chat
-        role: Product
-        feedback: Explore documentation and tools for using Copilot Chat with Microsoft 365 to boost productivity and streamline tasks.
-        link:
-          componentType: link
-          url: /microsoft-365-copilot/copilot-chat/overview
-          text: Learn more
-      - avatarUrl: /office/media/icons/structure-blue.png
-        componentType: testimonial-card
-        name: Grounded on web and work data
-        role: Architecture
-        feedback: Learn how Microsoft 365 Copilot uses your organization's data and public web content to generate AI-powered insights.
-        link:
-          componentType: link
-          url: /microsoft-365-copilot/foundation/architecture
-          text: Explore architecture
-      - avatarUrl: /office/media/icons/process-flow-blue.png
-        componentType: testimonial-card
-        name: Customize and extend Copilot
-        role: Extensibility
-        feedback: Add plugins, APIs, and connectors to tailor Copilot to your business processes and workflows.
-        link:
-          componentType: link
-          url: /microsoft-365-copilot/extensibility/overview
-          text: Start customizing
-      - avatarUrl: /office/media/icons/usage-report-blue.png
-        componentType: testimonial-card
-        name: View usage and adoption
-        role: Insights
-        feedback: Track Copilot adoption and usage across your organization with built-in reports and analytics.
-        link:
-          componentType: link
-          url: /microsoft-365-copilot/manage/usage-reports
-          text: View reports
+  - componentType: cards
+    title: Products
+    summary: Learn about the different Copilot experiences.
+    blocks:
+      - componentType: card
+        title: Microsoft 365 Copilot Chat
+        summary: Grounded on web data. Free to organizations with a Microsoft 365 license.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/module-icon.png
+        links:
+          - componentType: link
+            url: /microsoft-365-copilot/copilot-chat/overview
+            text: Learn more
+      - componentType: card
+        title: Microsoft 365 Copilot
+        summary: Grounded on web and work data. Licensed by your organization.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+        links:
+          - componentType: link
+            url: /microsoft-365-copilot/
+            text: Learn more
+      - componentType: card
+        title: Agents
+        summary: Customize and extend Microsoft 365 Copilot with agents that can perform tasks, use tools, and connect to other systems.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/step-3.png
+        links:
+          - componentType: link
+            url: /microsoft-365-copilot/extensibility/
+            text: Learn more
+
+  - componentType: cards
+    title: Highlights
+    summary: Explore what's new and how to get started.
+    blocks:
+      - componentType: card
+        title: What’s new in Microsoft 365 Copilot
+        summary: See recent updates and improvements to Copilot.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
+        links:
+          - componentType: link
+            url: /microsoft-365-copilot/whats-new
+            text: View updates
+      - componentType: card
+        title: Compare Copilot Chat and Microsoft 365 Copilot
+        summary: Understand the key differences in grounding and features.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+        links:
+          - componentType: link
+            url: https://support.microsoft.com/topic/what-s-the-difference-between-microsoft-365-copilot-chat-and-microsoft-365-copilot-5810b659-fbe0-48ee-9fe6-d731fe86cdeb
+            text: Read comparison
 
   - componentType: bifold
     blocks:
       - componentType: text
-        title: Compare Microsoft 365 Copilot and Copilot Chat
-        summary: Learn the differences between Microsoft 365 Copilot Chat and Microsoft 365 Copilot—how they're grounded, what data they use, and what capabilities are included. Understand which experience your organization supports, and how to get started.
+        title: Compare Copilot Chat and Microsoft 365 Copilot
+        summary: Learn the differences between Microsoft 365 Copilot Chat and Microsoft 365 Copilot—how they're grounded, what data they use, and what capabilities are included.
         links:
-        - componentType: link
-          text: Learn more about the differences
-          url: https://support.microsoft.com/en-us/topic/what-s-the-difference-between-microsoft-365-copilot-chat-and-microsoft-365-copilot-5810b659-fbe0-48ee-9fe6-d731fe86cdeb
+          - componentType: link
+            text: Learn more about the differences
+            url: https://support.microsoft.com/topic/what-s-the-difference-between-microsoft-365-copilot-chat-and-microsoft-365-copilot-5810b659-fbe0-48ee-9fe6-d731fe86cdeb
       - componentType: video
-        src: "https://learn-video.azurefd.net/vod/player?id=6ba0f4d6-fffc-479a-9698-a90e6e57e80f&embedUrl=https://learn.microsoft.com/microsoft-365-copilot"
+        src: https://learn-video.azurefd.net/vod/player?id=6ba0f4d6-fffc-479a-9698-a90e6e57e80f&embedUrl=https://learn.microsoft.com/microsoft-365-copilot
 
   - componentType: cards
-    title: Get started with Microsoft 365 Copilot
-    summary: Begin your deployment and adoption journey with step-by-step guidance tailored to your Microsoft 365 license.
+    title: Let’s go
+    summary: Start your deployment and engagement journey.
     blocks:
       - componentType: card
-        title: E3 implementation guide
-        summary: Deploy Microsoft 365 Copilot in organizations using the E3 license.
+        title: Get ready
+        summary: Step-by-step guidance to get started with Microsoft 365 Copilot.
         imageUrl: /office/media/icons/tasks-blue.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/deploy/e3-guide
-            text: Open guide
-      - componentType: card
-        title: E5 implementation guide
-        summary: Follow this guide to roll out Microsoft 365 Copilot in E5 environments with added security and analytics.
-        imageUrl: /office/media/icons/tasks-blue.png
-        links:
+            text: E3 implementation guide
           - componentType: link
             url: /microsoft-365-copilot/deploy/e5-guide
-            text: Open guide
+            text: E5 implementation guide
       - componentType: card
-        title: Drive adoption and deliver impact
-        summary: Use our adoption toolkit to increase Copilot usage and realize business value.
-        imageUrl: /office/media/icons/task-checklist-planning-blue.png
+        title: Drive adoption
+        summary: Use the adoption kit and scenario library to increase usage.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/3-microsoft-copilot-adoption-kit.png
         links:
           - componentType: link
-            url: /microsoft-365-copilot/adoption/adoption-kit
+            url: https://adoption.microsoft.com/copilot/
             text: Adoption site
+          - componentType: link
+            url: https://adoption.microsoft.com/copilot-scenario-library/
+            text: Scenario library
+      - componentType: card
+        title: Deliver impact
+        summary: Measure usage and performance of Copilot and agents.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/4-secure-your-data.png
+        links:
+          - componentType: link
+            url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage
+            text: Usage report
+          - componentType: link
+            url: /microsoft-365-copilot/manage/usage-reports
+            text: Agent usage report
 
   - componentType: cards
     title: Security and compliance
-    summary: Understand how Copilot safeguards your organization's data and aligns with Microsoft's responsible AI principles.
+    summary: Learn how Microsoft protects your organization's data.
     blocks:
       - componentType: card
         title: Data protection and security posture
-        summary: Learn about encryption, tenant boundaries, and AI protections used by Microsoft 365 Copilot.
-        imageUrl: /office/media/icons/lock-protected-blue.png
+        summary: Overview of Microsoft's AI security posture and protection for organizational data.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/4-secure-your-data.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/security/data-protection
             text: Learn more
       - componentType: card
-        title: Responsible AI
-        summary: Review Microsoft's commitment to building and using AI responsibly in enterprise settings.
-        imageUrl: /office/media/icons/security-blue.png
-        links:
-          - componentType: link
-            url: /microsoft-365-copilot/security/responsible-ai
-            text: Learn more
-      - componentType: card
         title: Audit logging and retention
-        summary: Explore how to audit Copilot usage and comply with legal holds and data retention policies.
-        imageUrl: /office/media/icons/compliance-blue.png
+        summary: Learn about auditing, eDiscovery, legal hold, and data retention controls.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/security.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/security/audit-logging
             text: Learn more
+      - componentType: card
+        title: Responsible AI
+        summary: Microsoft's commitment to ethical AI principles in Copilot.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/step-1.png
+        links:
+          - componentType: link
+            url: https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92
+            text: Learn more
 
   - componentType: cards
-    title: Learn more
-    summary: Explore additional resources to build your skills and enhance how your organization uses Copilot.
+    title: Learn
+    summary: Explore documentation and skilling resources.
     blocks:
       - componentType: card
         title: Skilling and training
-        summary: Access videos, tutorials, and courses for admins and users to maximize value from Copilot.
-        imageUrl: /office/media/icons/education-tutorial-blue.png
+        summary: Videos, tutorials, and courses to help your organization get started with Copilot.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/training
             text: Browse training
       - componentType: card
         title: Documentation
-        summary: Visit our full documentation library for setup, management, and troubleshooting guidance.
-        imageUrl: /office/media/icons/document-blue.png
+        summary: Setup guides, best practices, and admin documentation for Microsoft 365 Copilot.
+        imageUrl: /copilot/media/copilot/copilot-learning-hub/2-ai-learning-hub.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/
