@@ -76,7 +76,7 @@ sections:
         imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
         links:
           - componentType: link
-            url: release-notes
+            url: /microsoft-365-copilot/release-notes
             text: View updates
       - componentType: card
         title: Get ready
