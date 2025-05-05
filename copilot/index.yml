@@ -40,7 +40,7 @@ sections:
       - componentType: card
         title: Agents
         summary: Customize and extend Microsoft 365 Copilot with agents that can perform tasks, use tools, and connect to other systems.
-        imageUrl: https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2024/12/Microsoft365-Copilot-KeyArt-Data-Prompt-6K-02_1260-1024x576.png
+        imageUrl: /media/microsoft-365-copilot-marketing-hub/copilot-agent-card.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/extensibility/
