@@ -41,7 +41,7 @@ When you request electronic signatures from Word, the recipients sign a PDF copy
 
 - A subscription version of Word desktop.
 - User is on the Microsoft 365 Beta Channel or Current Channel.
-- The document is stored in a SharePoint site that has been enabled for SharePoint eSignture.
+- The document is stored in a SharePoint site that has been enabled for SharePoint eSignature.
 - The document is in the .docx format.
 - The document is unencrypted.
 
