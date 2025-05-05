@@ -2239,6 +2239,11 @@
       "source_path": "microsoft-365/bookings/set-buffer-time.md",
       "redirect_url": "/microsoft-365/bookings/set-buffer-time.md",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/m365-feature-descriptions.md",
+      "redirect_url": "/office365/servicedescriptions/office-365-service-descriptions-technet-library",
+      "redirect_document_id": false
     }
   ]
 }
