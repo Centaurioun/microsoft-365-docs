@@ -65,7 +65,7 @@ The test includes:
 
 Admins and users can go to [Microsoft 365 network connectivity test](https://connectivity.m365.cloud.microsoft/) to run the test.
 
-To learn more, see [Microsoft 365 network connectivity test tool](enterprise/office-365-network-mac-perf-onboarding-tool).
+To learn more, see [Microsoft 365 network connectivity test tool](/microsoft-365//enterprise/office-365-network-mac-perf-onboarding-tool).
 
 ## March 2025
 
