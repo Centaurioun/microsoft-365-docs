@@ -18,8 +18,7 @@ sections:
     summary: Technical documentation and other resources for Microsoft 365 Copilot, including Copilot Chat and agents.
     heroImage:
      componentType: hero-image
-     lightImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hero.png
-     darkImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hero.png
+     ImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hero.png
 
   - componentType: cards
     title: Products
