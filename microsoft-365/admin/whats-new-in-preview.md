@@ -51,6 +51,22 @@ And if you'd like to know what's new with other Microsoft cloud services, check 
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## April 2025
+
+### Microsoft 365 Copilot network connectivity test
+
+A new addition to the Microsoft 365 network connectivity test tool enables users to run diagnostics specifically for Microsoft 365 Copilot. The tool helps users evaluate the network performance between their device and Microsoft 365 endpoints, specifically for Microsoft 365 Copilot. It runs a series of tests from the user’s location and generates a detailed report that can be shared with others or Microsoft support to help troubleshoot connectivity issues.
+
+The test includes:
+
+- **Latency** measures the time it takes for data to travel between the device and Microsoft 365 services
+- **Throughput** evaluates the data transfer rate
+- **Service reachability** checks whether required Microsoft 365 services are accessible
+
+Admins and users can go to [Microsoft 365 network connectivity test](https://connectivity.m365.cloud.microsoft/) to run the test.
+
+To learn more, see [Microsoft 365 network connectivity test tool](/microsoft-365//enterprise/office-365-network-mac-perf-onboarding-tool).
+
 ## March 2025
 
 ### Exchange Web Services usage report

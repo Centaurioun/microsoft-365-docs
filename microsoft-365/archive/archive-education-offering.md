@@ -46,12 +46,16 @@ If the storage report isn't available, then it’s possible that your tenant isn
 
 Microsoft 365 Archive charges you for storage.
 
-- **Storage consumption** is charged at a per-GB monthly rate. For SharePoint sites, this meter is charged only when archived storage in SharePoint plus active pooled storage exceeds the included or licensed allocated pooled storage capacity limit of the tenant. In other words, there's no additional storage cost for archived sites if the tenant hasn't consumed its already licensed storage quota. For unlicensed OneDrive accounts, this meter is charged for every OneDrive account that is archived. For more information on unlicensed OneDrive accounts, see [Manage unlicensed OneDrive user accounts.](/sharepoint/unlicensed-onedrive-accounts)  
+- **Storage consumption** is charged at a per-GB monthly rate. For SharePoint sites, this meter is charged only when archived storage in SharePoint plus active pooled storage exceeds the included or licensed allocated pooled storage capacity limit of the tenant. In other words, there's no additional storage cost for archived sites if the tenant hasn't consumed its already licensed storage quota. 
+
 - **Site reactivation** is free as of April 2025.  Reactivations will still take up to 24 hours to complete but have no fee.
 
 Monthly archive usage is calculated as the sum of the usage of all currently archived sites. Each site’s usage can be seen on the site itself or from the Active sites page in the SharePoint admin center. The size of an archived site, and therefore the storage for which it’s billed, changes only if the content in the site changes. For example, content naturally expiring in the recycle bin or a retention policy deleting content within the site directly from archive to the recycle bin.
 
 For more information on the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex.](../syntex/syntex-pay-as-you-go-services.md).
+
+> [!NOTE]
+> SharePoint storage is calculated in binary Gigabytes (GB), where 1 GB = 2<sup>30</sup> bytes.
 
 ## Billing scenarios
 
