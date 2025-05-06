@@ -27,12 +27,12 @@ ms.date: 03/22/2024
 
 ## What is Microsoft 365 for frontline workers?
 
-Frontline workers are employees whose primary function is to work directly with customers or the general public providing services, support, and selling products, or employees directly involved in the manufacturing and distribution of products and services. Microsoft 365 for frontline workers helps support employee experiences in the following areas so that your frontline workers can do their best work and help your customers:
+Microsoft 365 for frontline workers is a unified, AI-powered platform that helps support employee experiences in the following areas so your frontline workers can do their best work and deliver exceptional customer outcomes:
 
 - [Enhance communications and collaboration](#enhance-communications-and-collaboration)
 - [Transform employee experiences](#transform-employee-experiences)
 - [Increase frontline operational efficiency](#increase-frontline-operational-efficiency)
-- Helps [safeguard your business](#safeguard-your-business) with security and compliance offerings, including providing support for modern devices
+- Help [safeguard your business](#safeguard-your-business) with enterprise-grade security and compliance, including support for modern and shared devices
 
 The following image shows the employee experiences that are key to frontline workers, and common areas where Microsoft 365 can improve experiences for frontline workers:
 
