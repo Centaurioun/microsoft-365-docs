@@ -40,7 +40,7 @@ Streamline team and one-on-one communication across your entire organization wit
 
 ### Increase frontline operational efficiency
 
-Microsoft 365 includes apps like Lists, Planner, and Approvals to streamline operations and digitize paper-based processes. Enhance efficiency with automation and AI-powered workflows using Power Automate, Power Apps, and Microsoft Power BI from the Power Platform-reducing repetitive tasks so frontline workers can focus on what matters most. Copilot and SharePoint agents provide instant answers and automate routine processes in the flow of work. Workforce management is simplified with Shifts in Teams, which integrates with major WFM systems and supports open shifts, swap requests, and compliance tracking across locations.
+Microsoft 365 includes apps like Lists, Planner, and Approvals to streamline operations and digitize paper-based processes. Enhance efficiency with automation and AI-powered workflows using Power Automate, Power Apps, and Microsoft Power BI from the Power Platform. Reduce repetitive tasks so frontline workers can focus on what matters most. Copilot and SharePoint agents provide instant answers and automate routine processes in the flow of work. Workforce management is simplified with Shifts in Teams, which integrates with major WFM systems and supports open shifts, swap requests, and compliance tracking across locations.
 
 The following image shows the employee experiences that are key to frontline workers, and common areas where Microsoft 365 can improve experiences for frontline workers:
 
