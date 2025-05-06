@@ -9,8 +9,9 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 search.appverid: 
+ms.custom: m365-groups
 ms.reviewer: rahulnayak
-ms.date: 08/03/2022
+ms.date: 06/01/2024
 ---
 
 # Microsoft 365 group mailbox size management 
