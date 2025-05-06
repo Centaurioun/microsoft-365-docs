@@ -50,7 +50,7 @@ Microsoft 365 Archive charges you for storage.
 
 - **Storage consumption** is charged at a per-GB monthly rate. For SharePoint sites, this charge applies only when the combined size of archived and active pooled storage exceeds your tenant’s included or licensed storage limit. In other words, there's no additional storage cost for archived sites if the tenant hasn't consumed its already licensed storage quota.
 
-- **Site reactivation** is available at no cost as of April 2025.  Reactivations will still take up to 24 hours to complete but have no fee.
+- **Site reactivation** is available at no cost as of April 2025. Reactivations will still take up to 24 hours to complete but have no fee.
 
 Monthly archive usage is calculated as the sum of the usage of all currently archived sites. Each site’s usage can be seen on the site itself or from the Active sites page in the SharePoint admin center. The size of an archived site, and therefore the storage for which it’s billed, changes only if the content in the site changes. For example, content naturally expiring in the recycle bin or a retention policy deleting content within the site directly from archive to the recycle bin.
 
@@ -72,6 +72,6 @@ Your charges for Microsoft 365 Archive depend on your tenant’s pooled storage 
 |D     | Tenant has archived some, but not all, of the data that exceeds their standard storage quota.        | Purchase one additional standard storage pack for 10 TB and pay $0.02/GB/month for 10 TB of archived data.        |
 |E     |Tenant’s total data (standard + archive) is less than their standard storage quota.         |  No additional cost.       |
 
-:::image type="content" source="../media/archive/billing-scenarios.png" alt-text="Screenshot of billing scenarios.":::
+:::image type="content" source="../media/m365-archive/billing-scenarios.png" alt-text="Screenshot of billing scenarios comparing charges for storage.":::
 
-:::image type="content" source="../media/archive/billing-scenarios-table.png" alt-text="Screenshot of billing scenarios table.":::
+:::image type="content" source="../media/m365-archive/billing-scenarios-table.png" alt-text="Screenshot of billing scenarios table showing more detail.":::
