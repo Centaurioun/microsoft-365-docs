@@ -1,5 +1,5 @@
 ---
-title: "Message consumption - Microsoft 365 activity reports in the admin center"
+title: "Microsoft 365 reports in the admin center - Message consumption"
 ms.author: camillepack
 author: camillepack
 manager: scotv
@@ -21,13 +21,13 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn about the Message consumption report in the Microsoft 365 admin center and how it helps to manage costs associated with Microsoft 365 Copilot Chat."
 ---
 
-# Message consumption - Microsoft 365 activity reports in the admin center
+# Microsoft 365 reports in the admin center – Message consumption
 
 The Message consumption report helps you manage metered consumption costs for Microsoft 365 Copilot Chat. This report gives you visibility into billed messages associated with your Microsoft 365 Copilot pay-as-you-go billing policies and includes key metrics such as:
 
 - Total messages consumed
 - Cumulative and daily time series
-- Messages per user, per agent, and per agent-user pair.  
+- Messages per user, per agent, and per agent-user pair
 
 ## How do I get to the message consumption report?  
 
