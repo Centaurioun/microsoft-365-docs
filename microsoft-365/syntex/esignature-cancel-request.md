@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to cancel a signature request in SharePoint eSignature. 
+description: Learn how to cancel an electronic signature request in SharePoint eSignature. 
 ---
 
 # Cancel a signature request from Word or PDF in SharePoint eSignature
