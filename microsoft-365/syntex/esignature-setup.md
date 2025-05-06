@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to set up and manage sites in SharePoint eSignature. 
+description: Learn how to set up the service and manage sites in SharePoint eSignature. 
 ---
 
 # Set up SharePoint eSignature
