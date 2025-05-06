@@ -67,7 +67,7 @@ Microsoft Defender Antivirus is part of the Windows operating system and is enab
 > [!NOTE]
 > If you're using a non-Microsoft antivirus solution and not Microsoft Defender Antivirus, Microsoft Defender Antivirus is disabled automatically. When you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus is activated automatically to protect your Windows devices from threats.
 
-## Requirements for enabling Opportunities
+## Requirements for enabling opportunities
 
 To view opportunities, you must hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you.
 
