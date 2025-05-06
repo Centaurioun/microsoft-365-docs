@@ -34,6 +34,14 @@ Microsoft 365 for frontline workers is a unified, AI-powered platform that helps
 - [Increase frontline operational efficiency](#increase-frontline-operational-efficiency)
 - Help [safeguard your business](#safeguard-your-business) with enterprise-grade security and compliance, including support for modern and shared devices
 
+### Enhance communications and collaboration
+
+Streamline team and one-on-one communication across your entire organization with Microsoft 365 for frontline workers capabilities. Enrich and expand corporate communications with Viva Connections and targeted announcements to ensure every worker feels connected to your organization. Empower your workforce to seamlessly communicate with Teams chats, notifications, walkie talkie, and AI-powered translation and Copilot chat-enabling real-time, inclusive communication across locations and languages.
+
+### Increase frontline operational efficiency
+
+Microsoft 365 includes apps like Lists, Planner, and Approvals to streamline operations and digitize paper-based processes. Enhance efficiency with automation and AI-powered workflows using Power Automate, Power Apps, and Microaoft Power BI from the Power Platform-reducing repetitive tasks so frontline workers can focus on what matters most. Copilot and SharePoint agents provide instant answers and automate routine processes in the flow of work. Workforce management is simplified with Shifts in Teams, which integrates with major WFM systems and supports open shifts, swap requests, and compliance tracking across locations.
+
 The following image shows the employee experiences that are key to frontline workers, and common areas where Microsoft 365 can improve experiences for frontline workers:
 
 :::image type="content" source="media/flw-pillars.png" alt-text="Diagram of employee experience wheel with methods to connect & engage with frontline workers, enhance workforce management, and increase operational efficiency.":::
