@@ -22,7 +22,7 @@ This article provides an overview of Microsoft 365 Archive for Education, includ
 
 ## Pooled storage eligibility
 
-Education customers that are subject to the pooled storage limit are eligible for the Microsoft 365 Archive for Education offering. If your tenant has more than 50% Education (EDU) licenses assigned—or has purchased more EDU licenses than non-EDU licenses—it is considered an EDU tenant and will use Education Pooled Storage. For more information, see [Education Pooled Storage limits](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#education-pooled-storage-limits).
+Education customers that are subject to the pooled storage limit are eligible for the Microsoft 365 Archive for Education offering. If your tenant has more than 50% Education (EDU) licenses assigned—or has purchased more EDU licenses than non-EDU licenses—it's considered an EDU tenant and will use Education Pooled Storage. For more information, see [Education Pooled Storage limits](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#education-pooled-storage-limits).
 
 > [!NOTE]
 > Any changes to the license assignment or purchases that change the pooled storage eligibility can take 24-48 hours to reflect.
@@ -33,7 +33,7 @@ When you [turn on Microsoft 365 Archive](archive-setup.md#set-up-microsoft-365-a
 
 :::image type="content" source="../media/m365-archive/m365-archive-1.png" alt-text="Screenshot of the Microsoft 365 Archive panel showing this tenant is an education tenant." :::
 
-If at any time your tenant status changes (that is, moves to less than 50% education licenses) and is no longer subject to pooled storage, the status message will no longer appear. It's important to note that you are eligible for education pricing for Microsoft 365 Archive only when you meet the eligibility for education tenant status.
+If at any time your tenant status changes (that is, moves to less than 50% education licenses) and is no longer subject to pooled storage, the status message will no longer appear. It's important to note that you're eligible for education pricing for Microsoft 365 Archive only when you meet the eligibility for education tenant status.
 
 For customers that are subject to the pooled storage policy, they'll have access to the storage report in the Microsoft 365 admin center under **Reports** > **[Storage](https://admin.microsoft.com/Adminportal/Home#/storagemanagement)**. The user must be logged in as a Global Admin or SharePoint Admin to access the storage report.
 
@@ -42,7 +42,7 @@ If the storage report isn't available, then it’s possible that your tenant isn
 :::image type="content" source="../media/m365-archive/storage.png" alt-text="Screenshot of an example view of a storage report." lightbox="../media/archive/storage.png":::
 
 > [!NOTE]
-> If your tenant is no longer eligible for the Microsoft 365 Archive for Education offering, your tenant's archive content will be charged according to the Microsoft 365 Archive standard rate.
+> If your tenant is no longer eligible for the Microsoft 365 Archive for Education offering, your tenant's archive content is charged according to the Microsoft 365 Archive standard rate.
 
 ## Pricing model
 
