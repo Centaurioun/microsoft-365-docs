@@ -27,7 +27,7 @@ ms.date: 03/22/2024
 
 ## What is Microsoft 365 for frontline workers?
 
-Microsoft 365 for frontline workers is a unified, AI-powered platform that helps support employee experiences in the following areas so your frontline workers can do their best work and deliver exceptional customer outcomes:
+Microsoft 365 for frontline workers is a unified, AI-powered platform that supports employee experiences in the following areas so your frontline workers can do their best work and deliver exceptional customer outcomes:
 
 - [Enhance communications and collaboration](#enhance-communications-and-collaboration)
 - [Transform employee experiences](#transform-employee-experiences)
@@ -36,7 +36,7 @@ Microsoft 365 for frontline workers is a unified, AI-powered platform that helps
 
 ### Enhance communications and collaboration
 
-Streamline team and one-on-one communication across your entire organization with Microsoft 365 for frontline workers capabilities. Enrich and expand corporate communications with Viva Connections and targeted announcements to ensure every worker feels connected to your organization. Empower your workforce to seamlessly communicate with Teams chats, notifications, walkie talkie, and AI-powered translation and Copilot chat-enabling real-time, inclusive communication across locations and languages.
+Streamline team and one-on-one communication across your entire organization with Microsoft 365 for frontline workers capabilities. To ensure every worker feels connected to your organization, you can enrich and expand corporate communications with Viva Connections and targeted announcements. Empower your workforce to seamlessly communicate with Teams chats, notifications, walkie talkie, and AI-powered translation and Copilot chat-enabling real-time, inclusive communication across locations and languages.
 
 ### Increase frontline operational efficiency
 
@@ -52,7 +52,7 @@ The following image shows the employee experiences that are key to frontline wor
 
 Microsoft 365 for frontline workers refers to the Microsoft 365 F3 and F1 licenses, but you can also use an Enterprise license (E3, E5) to implement any of the frontline scenarios. Learn more about [licensing options for frontline workers](flw-licensing-options.md) and which license types you should use for different types of users in your organization.
 
-Some features are available for F3 licenses, but not F1, such as Power Apps and Power Automate. For a detailed comparison of what's included in Microsoft 365  plans for enterprises, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
+Some features are available for F3 licenses, but not F1, such as Power Apps and Power Automate. For a detailed comparison of Microsoft 365 plans for enterprises, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
 
 ## Enhance communications and collaboration
 
