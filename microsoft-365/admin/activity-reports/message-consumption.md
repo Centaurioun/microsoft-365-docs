@@ -31,7 +31,7 @@ The Message consumption report helps you manage metered consumption costs for Mi
 
 To learn more about meters, see [Meters for Microsoft 365 Copilot pay-as-you-go for IT admins](/copilot/microsoft-365/pay-as-you-go/meters).
 
-## How do I get to the message consumption report?  
+## How do I get to the Message consumption report?  
 
 1. In the admin center, go to **Reports** > **Usage**.
 1. Select **Microsoft 365 Copilot** to view the list of reports.
@@ -48,7 +48,7 @@ You can filter the report by different periods. The Message consumption report c
 :::image type="content" source="../../media/mc-hero-metric.png" alt-text="Screenshot showing the Message consumption report page in the Microsoft 365 admin center." lightbox="../../media/mc-hero-metric.png":::
 
 >[!NOTE]
-> During the preview stage, the report displays a maximum of 30 days of message consumption history. In addition, usage information from before May 3, 2025 won't be available in the report.  
+> During the preview, the report displays a maximum of 30 days of message consumption history. In addition, usage information from before May 3, 2025 won't be available in the report.  
 
 ### Messages consumed
 
@@ -60,7 +60,7 @@ The number of messages consumed depends on the design of the agent, how often en
 
 The **Alert** card is visible in the report when one or more users consumed more than 3,000 messages in the past 30 days.
 
-Select **View message consumption details** to see the user list and export it to CSV. If users have consumed 2000-3000 messages, a similar alert will appear.
+Select **View message consumption details** to see the user list and export it to CSV. If users have consumed 2000-3000 messages, a similar alert appears.
 
 :::image type="content" source="../../media/mc-alert.png" alt-text="Screenshot showing the alert box that informs admins about high message consumption." lightbox="../../media/mc-alert.png":::
 
@@ -79,9 +79,13 @@ You can switch between the **Cumulative view** and **Daily view**.
 
 **Cumulative view** shows you the total number of messages consumed over the selected time frame.  
 
-**Daily view** shows you the messages consumed on a daily basis over the selected time frame.  
+**Daily view** shows you the messages consumed on a daily basis over the selected time frame.
 
-#### User details
+## Message consumption details table
+
+You can view user details, agent details, and user & agent details in the Message consumption report.
+
+### User details
 
 :::image type="content" source="../../media/mc-user-details.png" alt-text="Screenshot showing a table for user details in the Message consumption report." lightbox="../../media/mc-user-details.png":::
 
@@ -89,11 +93,11 @@ You can switch between the **Cumulative view** and **Daily view**.
 |-------------------------|--------------------------------------------------------------------------------------------------|
 | Username                | The user's principal name.                                                                       |
 | Display name            | The full name of the user.                                                                       |
-| Past 7 days             | The number of messages consumed in the past 7 days including today. The total messages consumed over the past 7 days, including today. |
+| Past 7 days             | The number of messages consumed in the past seven days including today. The total messages consumed over the past seven days, including today. |
 | Past 30 days            | The number of messages consumed in the past 30 days including today. The total messages consumed over the past 30 days, including today. |
 | Last activity date (UTC)| The latest date the user had activity with a metered agent in Copilot chat.           |
 
-#### Agent details
+### Agent details
 
 :::image type="content" source="../../media/mc-agent-details.png" alt-text="Screenshot showing a table for agent details in the Message consumption report." lightbox="../../media/mc-agent-details.png":::
 
@@ -105,7 +109,7 @@ You can switch between the **Cumulative view** and **Daily view**.
 | Past 30 days            | The total messages consumed by users who used this agent over the past 30 days including today. |
 | Last activity date (UTC)| The date when the agent was last used by users in your org who do not have Microsoft 365 Copilot license. |
 
-#### User and agent details
+### User and agent details
 
 :::image type="content" source="../../media/mc-user-agent.png" alt-text="Screenshot showing the table for user and agent details in the Message consumption report." lightbox="../../media/mc-user-agent.png":::
 
@@ -123,10 +127,10 @@ You can switch between the **Cumulative view** and **Daily view**.
 
 ## FAQ
 
-## Will I see consumption in this report if I configured billing policy in Power platform admin center?  
+### Will I see consumption in this report if I configured billing policy in Power Platform admin center?  
 
 Yes. You can set up the pay-as-you-go billing policy in the Microsoft 365 admin center or Power Platform admin center. If pay-as-you-go is configured, and users without a Microsoft 365 Copilot license use metered agents in Copilot Chat, data will appear in the report.
 
-## What is “Last activity detected”?  
+### What is “Last activity detected”?  
 
-This is the date and timestamp of the most recent prompt or user activity that generated the messages consumed.
+**Last activity detected** is the date and timestamp of the most recent prompt or user activity that generated the messages consumed.
