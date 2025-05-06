@@ -47,7 +47,7 @@ The following table provides an overview of each Lighthouse RBAC role. For a lis
 
 | Lighthouse&nbsp;RBAC&nbsp;role | Overview |
 |---|---|
-| Account Manager | Account Managers have full access to Opportunities and data across the entire partner tenant.<br><br>Account Managers can export Opportunities data. |
+| Account Manager | Account Managers have full access to opportunities and data across the entire partner tenant.<br><br>Account Managers can export opportunities data. |
 | Administrator | Administrators have full administrative permissions in Lighthouse. <br><br>Administrators can manage RBAC and GDAP permissions, view audit logs, and create baselines, tags, and alerts.<br><br>Administrators are automatically assigned the Privileged Role Administrator, User Administrator, and Group Administrator roles in Microsoft Entra ID and the Admin Agent role in Partner Center. |
 | Author | Authors can manage tenants, tags, alert rules, and baselines to deploy tenant configurations. |
 | Operator | Operators manage customer tenants in Lighthouse based on the GDAP permissions assigned to them for each customer tenant that they manage.<br><br>Operators can view high-level customer tenant status and manage alerts.<br><br>Lighthouse users who hold at least one Microsoft Entra role are automatically assigned the Operator role.<br><br>**Note:** Lighthouse Administrators can use templates on the **Delegated access** page to assign GDAP permissions to Lighthouse users. |
