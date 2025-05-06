@@ -32,7 +32,7 @@ Microsoft 365 for frontline workers is a unified, AI-powered platform that suppo
 - [Enhance communications and collaboration](#enhance-communications-and-collaboration)
 - [Transform employee experiences](#transform-employee-experiences)
 - [Increase frontline operational efficiency](#increase-frontline-operational-efficiency)
-- Help [safeguard your business](#safeguard-your-business) with enterprise-grade security and compliance, including support for modern and shared devices
+- [Safeguard your business](#safeguard-your-business) with enterprise-grade security and compliance, including support for modern and shared devices
 
 ### Enhance communications and collaboration
 
