@@ -27,7 +27,7 @@ The Message consumption report helps you manage metered consumption costs for Mi
 
 - Total messages consumed
 - Cumulative and daily time series
-- Messages per user, per agent, and per agent-user pair
+- Messages consumed per user, per agent, and per agent-user pair
 
 To learn more about meters, see [Meters for Microsoft 365 Copilot pay-as-you-go for IT admins](/copilot/microsoft-365/pay-as-you-go/meters).
 
