@@ -12,14 +12,18 @@ metadata:
   brand: m365
 
 sections:
+  # Intro
+  # Hero with background image
   - componentType: hero-learn
     supertitle: Microsoft Learn
     title: Microsoft 365 Copilot
     summary: Technical documentation and other resources for Microsoft 365 Copilot, including Copilot Chat and agents.
     heroImage:
      componentType: hero-image
-     ImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hero.png
+     lightImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-light-copilot-learning-hub-2x.png
+     darkImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-dark-copilot-learning-hub-2x.png
 
+  # Products (3 cards)
   - componentType: cards
     title: Products
     summary: Learn about the different Copilot experiences.
@@ -49,6 +53,7 @@ sections:
             url: /microsoft-365-copilot/extensibility/
             text: Learn more
 
+  # Video - Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
   - componentType: bifold
     blocks:
       - componentType: text
@@ -61,6 +66,7 @@ sections:
       - componentType: video
         src: https://learn-video.azurefd.net/vod/player?id=6ba0f4d6-fffc-479a-9698-a90e6e57e80f&embedUrl=https://learn.microsoft.com/microsoft-365-copilot
 
+  # Let's go section (3 cards)
   - componentType: cards
     title: Let’s go
     summary: Start your deployment and engagement journey.
@@ -99,6 +105,7 @@ sections:
             url: microsoft-365-copilot-reports-for-admins.md
             text: Agent usage report
 
+  # Security and compliance section (3 cards)
   - componentType: cards
     title: Security and compliance
     summary: Learn how Microsoft protects your organization's data.
@@ -127,7 +134,8 @@ sections:
           - componentType: link
             url: https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92
             text: Learn more
-
+  
+  # Learn and resources section (4 cards)
   - componentType: cards
     title: Learn and resources
     summary: Explore training, tutorials, and documentation to help your organization get started with Microsoft 365 Copilot.
