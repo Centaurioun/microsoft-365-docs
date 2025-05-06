@@ -3,7 +3,7 @@ title: Publish custom models with PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-ms.date: 07/06/2023
+ms.date: 04/06/2025
 manager: ssquires
 audience: admin
 ms.topic: reference
