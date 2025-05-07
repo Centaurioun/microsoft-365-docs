@@ -31,6 +31,8 @@ Education customers that are subject to the pooled storage limit are eligible fo
 
 When you [turn on Microsoft 365 Archive](archive-setup.md#set-up-microsoft-365-archive-1) for your tenant, and if your tenant meets the pooled storage eligibility, on the **Microsoft 365 Archive** panel, under the **Learn more about Microsoft 365 Archive** link, you'll see a status message saying **This tenant is an education tenant**.
 
+![Screenshot of the Microsoft 365 Archive panel showing this tenant is an education tenant.](../media/m365-archive/m365-archive-1.png)
+
 :::image type="content" source="../media/m365-archive/m365-archive-1.png" alt-text="Screenshot of the Microsoft 365 Archive panel showing this tenant is an education tenant." :::
 
 If at any time your tenant status changes (that is, moves to less than 50% education licenses) and is no longer subject to pooled storage, the status message will no longer appear. It's important to note that you're eligible for education pricing for Microsoft 365 Archive only when you meet the eligibility for education tenant status.
