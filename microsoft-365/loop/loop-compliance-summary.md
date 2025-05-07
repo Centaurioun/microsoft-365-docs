@@ -70,6 +70,8 @@ All SharePoint Embedded containers are targeted using the "All SharePoint Sites"
 <a name="loop-workspace-url"></a>
 <sup>\*</sup> If you need to specify an individual Loop workspace or the Copilot Pages and Copilot Notebooks container for a retention policy or another compliance feature, specify the workspace as you would a SharePoint site, by its URL. To locate this URL, sign in to the SharePoint admin center with the [SharePoint Embedded administrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). Then navigate to **Containers** > **Active containers** or **Deleted containers** where you can view the details of a selected Loop workspace or Copilot Pages and Copilot Notebooks container. From the flyout pane, **General** tab, copy the container URL.
 
+Note: When a user selects the Copilot Pages module in the Microsoft 365 Copilot app, a SharePoint Embedded container is currently created automatically—even if the user does not go on to create a Copilot Page. If no files are added to the container, the system will later delete it automatically. *This behavior is temporary.* An update is in progress to ensure that a Copilot Pages container is only created when a user actually creates a Copilot Page. Until that update is deployed, IT administrators and compliance officers can safely disregard these system-initiated deletions. These containers do not contain any user-generated content when they are removed.
+
 ## Summary of governance, data lifecycle, and compliance capabilities **not yet available**
 
 The following sections detail capabilities that are **not yet available** to make it easier to evaluate the smaller list of capabilities your organization might require.
