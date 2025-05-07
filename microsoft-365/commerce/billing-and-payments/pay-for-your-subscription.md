@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: lishepar, ramagane
+ms.reviewer: lishepar, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -30,7 +30,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 01/07/2025
+ms.date: 04/30/2025
 ---
 
 # Payment options for Microsoft business subscriptions
