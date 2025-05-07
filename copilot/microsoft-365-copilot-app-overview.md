@@ -30,9 +30,9 @@ appliesto:
 
 The Microsoft 365 Copilot app is an everyday AI productivity app for work or school.
 
-The app is available as a website ([M365Copilot.com](https://www.M365Copilot.com)), as a desktop app that can be installed on [Windows](https://apps.microsoft.com/detail/9wzdncrd29v9), and a mobile app for [Android](https://support.microsoft.com/office/microsoft-365-copilot-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b) and [iOS](https://support.microsoft.com/office/microsoft-365-copilot-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0) devices.
-
 The app is designed as a single place to access Microsoft 365 Copilot features and capabilities. It's available to Microsoft Entra accounts (work and school) and personal Microsoft user accounts with a Microsoft 365 subscription or a Microsoft 365 Copilot license.
+
+The app is available as a website ([M365Copilot.com](https://www.M365Copilot.com)), as a desktop app that can be installed on [Windows](https://apps.microsoft.com/detail/9wzdncrd29v9), and a mobile app for [Android](https://support.microsoft.com/office/microsoft-365-copilot-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b) and [iOS](https://support.microsoft.com/office/microsoft-365-copilot-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0) devices.
 
 This article lists the app's features and benefits, and compares the features available with a Microsoft 365 subscription and a Microsoft 365 Copilot license.
 
@@ -42,7 +42,7 @@ This article applies to:
 
 ## App features and benefits
 
-When you sign in to the app, users get a personalized experience:
+When you sign in to the app, you get a personalized experience:
 
 :::image type="content" source="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-app-screenshot.png" alt-text="Screenshot that shows the Microsoft 365 Copilot app left navigation and its features." lightbox="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-app-screenshot.png":::
 
@@ -55,7 +55,7 @@ Users can use the app to:
 - **Create** content, like images and videos
 - Access your **Apps**, including Microsoft 365 apps like Teams, Excel, and SharePoint
 
-End users can learn more about the app at [Get started with the Microsoft 365 Copilot app](https://support.microsoft.com/topic/get-started-with-the-microsoft-365-copilot-app-092599f1-5917-4bd6-bd59-58af628bbc39).
+End users can learn more about the Copilot app at [Get started with the Microsoft 365 Copilot app](https://support.microsoft.com/topic/get-started-with-the-microsoft-365-copilot-app-092599f1-5917-4bd6-bd59-58af628bbc39).
 
 ## Microsoft 365 Copilot license vs. Microsoft 365 subscription
 
