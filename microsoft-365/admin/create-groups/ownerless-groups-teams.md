@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- m365-groups
 search.appverid:
 - MET150
 - MOE150
