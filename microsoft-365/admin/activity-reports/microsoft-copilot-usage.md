@@ -28,7 +28,7 @@ The Microsoft 365 Copilot Chat usage dashboard provides insights into active usa
 ## How do I get to the Microsoft 365 Copilot Chat usage report?
 
 1. In the admin center, go to **Reports** > **Usage**.
-2. Select the **Microsoft 365 Copilot Chat** page.
+2. Select **Microsoft 365 Copilot** > **Copilot Chat**.
 
 ## Interpret the Microsoft 365 Copilot Chat usage report
 
