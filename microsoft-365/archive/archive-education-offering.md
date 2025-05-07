@@ -31,13 +31,11 @@ Education customers that are subject to the pooled storage limit are eligible fo
 
 When you [turn on Microsoft 365 Archive](archive-setup.md#set-up-microsoft-365-archive-1) for your tenant, and if your tenant meets the pooled storage eligibility, on the **Microsoft 365 Archive** panel, under the **Learn more about Microsoft 365 Archive** link, you'll see a status message saying **This tenant is an education tenant**.
 
-![Screenshot of the Microsoft 365 Archive panel showing this tenant is an education tenant.](../media/m365-archive/m365-archive-1.png)
-
 :::image type="content" source="../media/m365-archive/m365-archive-1.png" alt-text="Screenshot of the Microsoft 365 Archive panel showing this tenant is an education tenant." :::
 
 If at any time your tenant status changes (that is, moves to less than 50% education licenses) and is no longer subject to pooled storage, the status message will no longer appear. It's important to note that you're eligible for education pricing for Microsoft 365 Archive only when you meet the eligibility for education tenant status.
 
-For customers that are subject to the pooled storage policy, they'll have access to the storage report in the Microsoft 365 admin center under **Reports** > **[Storage](https://admin.microsoft.com/Adminportal/Home#/storagemanagement)**. The user must be logged in as a Global Admin or SharePoint Admin to access the storage report.
+For customers that are subject to the pooled storage policy, they'll have access to the storage report in the Microsoft 365 admin center under **Reports** > **[Storage](https://admin.microsoft.com/Adminportal/Home#/storagemanagement)**. The user must be logged in as a Global Administrator or SharePoint Administrator to access the storage report.
 
 If the storage report isn't available, then it’s possible that your tenant isn't subject to the pooled storage policy. To check if your tenant is subject to the pooled storage policy, see whether more than 50% of assigned licenses are EDU, or if more EDU licenses have been purchased than non-EDU licenses.
 
