@@ -1,9 +1,9 @@
 ---
 title: "Export prompts that users saved, liked, or shared in Copilot Prompt Gallery"
 description: "Provides admins the steps to take to export prompts that users saved, liked, or shared in Copilot Prompt Gallery"
-ms.author: danbrown
-author: DHB-MSFT
-manager: laurawi
+ms.author: camillepack
+author: camillepack
+manager: scotv
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
