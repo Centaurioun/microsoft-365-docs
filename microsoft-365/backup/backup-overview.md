@@ -43,11 +43,11 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 
 - Fast backup within hours.
 
-- Fast restore within hours (see [performance expectations](#performance-expectations) later in this article).
+- Fast restore (see [performance expectations](#performance-expectations) later in this article).
 
 - Full SharePoint site and OneDrive account restore fidelity, meaning the site and OneDrive are restored to their exact state (excluding, for example, taxonomy mastered outside the site scope) at specific prior points in time via a rollback operation.
 
-- Full Exchange mailbox item restores or granular item restores using search, for modified or deleted items.
+- Full Exchange mailbox item restores or granular item restores using search, for modified or fully deleted items.
 
 - Consolidated security and compliance domain management.
 
@@ -77,7 +77,7 @@ Our backups are protected from malicious overwrites because OneDrive, SharePoint
 
 Key architectural takeaways:
 
-- Data never leaves the Microsoft 365 data trust boundary or the geographic locations of your current data residency.
+- Data never leaves the Microsoft 365 data trust boundary and honors the geographic locations of your current data residency. Limited metadata (e.g. tenantID, siteIDs) sent to Azure for billing purposes only.
 
 - The backups are immutable unless expressly deleted by the Backup tool admin via product offboarding.
 
