@@ -62,6 +62,10 @@ items:
       href: scheduled-prompts.md
     - name: Copilot in Microsoft 365 admin centers
       href: copilot-for-microsoft-365-admin.md
+    - name: Multiple account access for work and school documents
+      href: multiple-account-access.md  
+    - name: Export prompts from Copilot Prompt Gallery
+      href: copilot-prompt-gallery-export-prompts.md
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
     - name: Overview of AI in Microsoft Teams
