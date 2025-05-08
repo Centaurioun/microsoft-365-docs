@@ -4,7 +4,7 @@ description: The Microsoft 365 Copilot app has features and settings that Enterp
 author: MandiOhlinger
 ms.author: mandia
 manager: laurawi
-ms.date: 05/07/2025
+ms.date: 05/08/2025
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.subservice: 
@@ -43,13 +43,10 @@ This article applies to:
 
 To use the features in this article, you need the following role-based access control (RBAC) roles:
 
-- **AI administrator** - This role can deploy the Microsoft 365 Copilot app to users and user groups.
+- **Global administrator** - This role can deploy the Microsoft 365 Copilot app to users and user groups.
 - **Office Apps admin** - This role can create the Cloud policies for the Microsoft 365 Copilot app.
 
 To learn more, see [Admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
-
-> [!TIP]
-> Microsoft recommends you sign in with the least privileged role that you need to complete your task. Typically, the Global Administrator role is too powerful for most tasks, including managing the features described in this article.
 
 ## Step 1 - Make the app available to users
 
@@ -64,13 +61,14 @@ Admins can manage the Copilot app installation on user devices. There are two wa
 
   By default, all users in your organization can install the Microsoft 365 Copilot app. You can use the Microsoft 365 admin center to change this setting.
 
-  1. Sign into the **[Microsoft 365 admin center](https://admin.microsoft.com)** as the AI Administrator.
-  1. Select **Settings** > **Integrated Apps** > **Available apps** tab, search for Copilot and select the Copilot app (??Is this the Copilot app, or the Copilot Chat app? What is the M365 Copilot app??):
+  1. Sign into the **[Microsoft 365 admin center](https://admin.microsoft.com)** as the Global Administrator.
+  1. Select **Settings** > **Integrated Apps** > **Available apps** tab, search for Copilot and select the Copilot app:
 
       :::image type="content" source="media/microsoft-365-copilot-app-admin-settings/microsoft-365-admin-center-add-copilot-app.png" alt-text="Screenshot that shows the Microsoft 365 admin center, integrated apps, and selecting the Copilot app." lightbox="media/microsoft-365-copilot-app-admin-settings/microsoft-365-admin-center-add-copilot-app.png":::
 
-  1. In the **User** tab, select one of the following options:
+  1. In the **Users** tab, select one of the following options:
 
+      - **No users in the organization can install**
       - **All users in the organization can install** (default)
       - **Specific users/group in the organization can install**
 
@@ -78,9 +76,9 @@ Admins can manage the Copilot app installation on user devices. There are two wa
 
 - **Option 2: Deploy the app to users or user groups**
 
-  1. Sign into the **[Microsoft 365 admin center](https://admin.microsoft.com)** as the AI Administrator.
-  1. Select **Settings** > **Integrated Apps** > **Available apps** tab, search for Copilot and select the Copilot app (??Is this the Copilot app, or the Copilot Chat app? What is the M365 Copilot app??).
-  1. In the **Overview** tab, select **Deploy app** ??Need a screenshot with it not grayed out??.
+  1. Sign into the **[Microsoft 365 admin center](https://admin.microsoft.com)** as the Global Administrator.
+  1. Select **Settings** > **Integrated Apps** > **Available apps** tab, search for Copilot and select the Copilot app.
+  1. In the **Overview** tab, select **Deploy app**.
 
       :::image type="content" source="media/microsoft-365-copilot-app-admin-settings/microsoft-365-admin-center-deploy-copilot-app.png" alt-text="Screenshot that shows the Microsoft 365 admin center, integrated apps, and deploying the Copilot app.":::
 
