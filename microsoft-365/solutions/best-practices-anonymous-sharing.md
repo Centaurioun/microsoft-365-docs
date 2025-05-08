@@ -69,7 +69,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 By default, *Anyone* links for a file allow people to edit the file, and *Anyone* links for a folder allow people to edit and view files, and upload new files to the folder. You can change these permissions for files and for folders, independently, to view-only.
 
-If you want to allow unauthenticated sharing, but are concerned about unauthenticated people modifying your organization's content, consider setting the file and folder permissions to **View**.
+If you want to allow unauthenticated sharing, but are concerned about unauthenticated people modifying your organization's content, consider setting the file to **View** and folder permissions to **View** or **View and upload** (which restricts *Anyone* links to *View* while enabling the *Request Files* feature).
 
 To set permissions for Anyone links across the organization
 
@@ -77,7 +77,7 @@ To set permissions for Anyone links across the organization
 1. Under **Choose expiration and permissions options for Anyone links**, select the file and folder permissions that you want to use.</br>
    ![Screenshot of SharePoint organization-level Anyone link permissions settings.](../media/sharepoint-organization-anyone-link-permissions.png)
 
-With *Anyone* links set to **View**, users can still share files and folders with guests and give them edit permissions by using *Specific people* links. *Specific people* links require people outside your organization to authenticate as guests, and you can track and audit guest activity on files and folders shared with these links.
+With *Anyone* links set to **View** or **View and Upload**, users can still share files and folders with guests and give them edit permissions by using *Specific people* links. *Specific people* links require people outside your organization to authenticate as guests, and you can track and audit guest activity on files and folders shared with these links.
 
 ## Set default link type to a link that only work for people in your organization
 
