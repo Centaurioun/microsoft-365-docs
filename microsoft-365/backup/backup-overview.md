@@ -77,7 +77,7 @@ Our backups are protected from malicious overwrites because OneDrive, SharePoint
 
 Key architectural takeaways:
 
-- Data never leaves the Microsoft 365 data trust boundary and honors the geographic locations of your current data residency. Limited metadata (e.g. tenantID, siteIDs) sent to Azure for billing purposes only.
+- Data never leaves the Microsoft 365 data trust boundary and honors the geographic locations of your current data residency. Limited metadata (for example, tenantID and siteIDs) sent to Azure for billing purposes only.
 
 - The backups are immutable unless expressly deleted by the Backup tool admin via product offboarding.
 
