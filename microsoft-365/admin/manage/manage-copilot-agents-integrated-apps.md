@@ -58,7 +58,7 @@ The following administrator roles can manage agents in the Microsoft 365 admin c
 - Global Admin
 - Global Reader (view-only, no edit)
 
-You can manage agents in the Microsoft 365 admin center by using the Agents & connectors page under the Copilot Control System. This page allows you to view the list of available, deployed, or blocked apps for your organization. You can:
+You can manage agents in the Microsoft 365 admin center by using the **Agents & connectors** page under the [Copilot Control System](/copilot/microsoft-365/microsoft-365-copilot-page). This page allows you to view the list of available, deployed, or blocked apps for your organization. You can:
 
 - Make an agent available to specific users or groups.
 - Block or unblock agents for the complete organization.
@@ -66,7 +66,7 @@ You can manage agents in the Microsoft 365 admin center by using the Agents & co
 
 As the management of agents transitions to the Copilot Control System, which will become the central hub for all Copilot extensibility management, certain features will still be managed on the Integrated Apps page.
 
-You can view agents from the list of available, deployed, or blocked apps by going to **Copilot** < **Agents & connectors**, or by using the filter option of **Host products** > **Copilot** on the Integrated apps page.
+You can view agents from the list of available, deployed, or blocked apps by going to **Copilot** > **Agents & connectors**, or by using the filter option of **Host products** > **Copilot** on the Integrated apps page.
 
 You can also check if a specific app has Copilot support by selecting it from apps list and checking if the app overview mentions **Copilot** as a host product.
 
