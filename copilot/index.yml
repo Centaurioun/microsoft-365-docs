@@ -8,7 +8,7 @@ metadata:
   ms.topic: marketing-hub
   ms.author: samanro
   author: samanro
-  ms.date: 04/29/2025
+  ms.date: 05/20/2025
   brand: m365
 
 sections:
@@ -23,33 +23,32 @@ sections:
 
   # Products (3 cards)
   - componentType: cards
-    title: Products
+    title: MIcrosoft 365 Copilot
     summary: Learn about the different Copilot experiences.
     blocks:
       - componentType: card
         title: Microsoft 365 Copilot Chat
-        summary: Grounded on web data. Available to organizations with a Microsoft 365 license.
+        summary: Grounded on web data. <BR>Available to organizations with a Microsoft 365 license.
         imageUrl: https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/image-try-copilot-chat-1037837?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=664&hei=536&qlt=100&fit=constrain
         links:
           - componentType: link
             url: /copilot/overview
             text: Learn more
+          - componentType: link
+            url: /microsoft-365-copilot/extensibility/decision-guide
+            text: Extend and customize
       - componentType: card
         title: Microsoft 365 Copilot
-        summary: Grounded on web and work data. Licensed by your organization.
+        summary: Grounded on web and work data. <BR>Licensed by your organization.
         imageUrl: media/microsoft-365-copilot-marketing-hub/copilot-hero-light.png
         links:
           - componentType: link
             url: microsoft-365-copilot-overview.md
             text: Learn more
-      - componentType: card
-        title: Agents
-        summary: Customize and extend Microsoft 365 Copilot with agents that can perform tasks, use tools, and connect to other systems.
-        imageUrl: media/microsoft-365-copilot-marketing-hub/copilot-agent-card.png
-        links:
           - componentType: link
-            url: /microsoft-365-copilot/extensibility/
-            text: Learn more
+            url: /microsoft-365-copilot/extensibility/decision-guide
+            text: Extend and customize 
+
 
   # Video - Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
   - componentType: bifold
@@ -66,7 +65,7 @@ sections:
 
   - componentType: cards
     title: Let’s go
-    summary: Start your deployment and engagement journey.
+    summary: Start your deployment and adoption journey.
     blocks:
       - componentType: card
         title: Get ready
