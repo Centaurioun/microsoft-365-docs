@@ -306,7 +306,7 @@ Currently, some credit card transactions, especially transactions exceeding 5,00
 
 [Learn more about the Reserve Bank of India directive for recurring payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-As of September 30, 2022, Microsoft and other online merchants no longer store credit card information. Microsoft has removed all stored card details from the admin center. To avoid service interruption, you must add and verify a payment method for all subscriptions.
+As of September 30, 2022, Microsoft and other online merchants no longer store credit card information. Microsoft has removed all stored card details from the admin center.
 
 [Learn about the Reserve Bank of India directive for card storage](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
