@@ -19,8 +19,8 @@ sections:
     summary: Your AI assistant for work. Microsoft 365 Copilot is embedded in the apps you already use every day, connected to your work data, and backed with enterprise-grade security, privacy, and compliance.
     heroImage:
      componentType: hero-image
-     lightImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hub-conference.jpg
-     darkImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hub-worker.jpg
+     lightImageSrc: media/microsoft-365-copilot-hub/copilot-hero-light.png
+     darkImageSrc: media/microsoft-365-copilot-hub/copilot-hub-worker.jpg
 
   # Products (3 cards)
   - componentType: cards
@@ -38,7 +38,7 @@ sections:
       - componentType: card
         title: Microsoft 365 Copilot
         summary: Secure AI experience that transforms productivity. Grounded on web and work data.  
-        imageUrl: media/microsoft-365-copilot-marketing-hub/copilot-hero-light.png
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-worker.png
         links:
           - componentType: link
             url: microsoft-365-copilot-overview.md
@@ -46,7 +46,7 @@ sections:
       - componentType: card
         title: Extend and customize
         summary: Extend Microsoft 365 Copilot with customizations and agents that can perform tasks, use tools, and connect to other systems.
-        imageUrl: media/microsoft-365-copilot-marketing-hub/copilot-agent-card.png
+        imageUrl: media/microsoft-365-copilot-hub/copilot-agent-card.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/extensibility/
