@@ -139,15 +139,15 @@ sections:
         imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
         links:
           - componentType: link
-            url: microsoft-365-copilot-enablement-resources.md
+            url: /training/paths/prepare-your-organization-microsoft-365-copilot
             text: Browse training
       - componentType: card
-        title: Documentation
-        summary: Learn how to deploy, manage, and get the most from Microsoft 365 Copilot.
+        title: Setup guides for Microsoft 365 Copilot
+        summary: Tenant-connected guidance to help accelerate Microsoft 365 Copilot.
         imageUrl: /copilot/media/copilot/copilot-learning-hub/2-ai-learning-hub.png
-        links:
+        links: 
           - componentType: link
-            url: /microsoft-365-copilot/
+            url: https://setup.cloud.microsoft/all-microsoft-365-guides
             text: View documentation
       - componentType: card
         title: Prompt gallery
