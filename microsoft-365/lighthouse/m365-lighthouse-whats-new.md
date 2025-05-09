@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ebamoh
-ms.date: 04/06/2025
+ms.date: 05/07/2025
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,18 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## April 2025
+
+### Pin subscriptions to prioritize key renewals
+
+You can now pin subscriptions on the **Subscription renewals** page in Microsoft 365 Lighthouse to keep high-priority renewals front and center. This gives you more control over your workflow and helps align renewal efforts with your strategy.
+
+Pinned subscriptions appear at the top of the subscriptions list on the **High Priority** tab, and you'll also see a pin next to the subscription on the appropriate **Upcoming** or **Expired** tab, making them easy to access and manage. The pins remain until you manually remove them.
+
+To check out the new pinning feature, in the left navigation pane in Lighthouse, select **Subscription renewals**. On any tab, click in the **Pin** column next to a subscription to pin it.
+
+[Go to the Subscription renewals page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/UpcomingRenewals.ReactView)
 
 ## March 2025
 
