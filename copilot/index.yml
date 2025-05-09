@@ -16,11 +16,11 @@ sections:
   - componentType: hero-learn
     supertitle: Microsoft Learn
     title: Microsoft 365 Copilot
-    summary: Transform work with AI that's secure and integrated across Microsoft 365 apps and services.
+    summary: Your AI assistant for work. Microsoft 365 Copilot is embedded in the apps you already use every day, connected to your work data, and backed with enterprise-grade security, privacy, and compliance.
     heroImage:
      componentType: hero-image
-     lightImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hero-light.png
-     darkImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hero-dark.png
+     lightImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hub-conference.jpg
+     darkImageSrc: media/microsoft-365-copilot-marketing-hub/copilot-hub-worker.jpg
 
   # Products (3 cards)
   - componentType: cards
