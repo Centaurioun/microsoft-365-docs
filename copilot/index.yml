@@ -40,7 +40,7 @@ sections:
         imageUrl: media/microsoft-365-copilot-marketing-hub/copilot-hero-light.png
         links:
           - componentType: link
-            url: microsoft-365-copilot-overview
+            url: copilot/microsoft-365-copilot-overview
             text: Learn more
       - componentType: card
         title: Agents
@@ -74,10 +74,10 @@ sections:
         imageUrl: /office/media/icons/tasks-blue.png
         links:
           - componentType: link
-            url: microsoft-365-copilot-e3-guide
+            url: copilot/microsoft-365-copilot-e3-guide
             text: E3 implementation guide
           - componentType: link
-            url: microsoft-365-copilot-e5-guide
+            url: copilot/microsoft-365-copilot-e5-guide
             text: E5 implementation guide
       - componentType: card
         title: Drive adoption
@@ -99,7 +99,7 @@ sections:
             url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage
             text: Usage report
           - componentType: link
-            url: microsoft-365-copilot-reports-for-admins
+            url: copilot/microsoft-365-copilot-reports-for-admins
             text: Agent usage report
 
   - componentType: cards
@@ -112,7 +112,7 @@ sections:
         imageUrl: /copilot/media/copilot/copilot-learning-hub/4-secure-your-data.png
         links:
           - componentType: link
-            url: enterprise-data-protection
+            url: copilot/enterprise-data-protection
             text: Learn more
       - componentType: card
         title: Audit logging and retention
@@ -120,7 +120,7 @@ sections:
         imageUrl: /copilot/media/copilot/copilot-learning-hub/security.png
         links:
           - componentType: link
-            url: microsoft-365-copilot-architecture-data-protection-auditing
+            url: copilot/microsoft-365-copilot-architecture-data-protection-auditing
             text: Learn more
       - componentType: card
         title: Responsible AI
@@ -141,7 +141,7 @@ sections:
         imageUrl: /copilot/media/copilot/copilot-learning-hub/1-copilot-for-everyone.png
         links:
           - componentType: link
-            url: microsoft-365-copilot-enablement-resources
+            url: copilot/microsoft-365-copilot-enablement-resources
             text: Browse training
       - componentType: card
         title: Documentation
