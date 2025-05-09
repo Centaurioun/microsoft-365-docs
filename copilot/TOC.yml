@@ -82,6 +82,8 @@ items:
       href: microsoft-365-copilot-reports-for-admins.md
     - name: Copilot Prompt Gallery
       href: copilot-prompt-gallery.md
+    - name: Service plan diagnostic tool
+      href: microsoft-365-copilot-service-plans.md
 - name: "Trust: Data, Privacy, and Security"
   items:
     - name: Data, privacy, and security for Microsoft 365 Copilot
