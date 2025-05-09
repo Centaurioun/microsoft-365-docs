@@ -25,7 +25,7 @@ sections:
   # Products (3 cards)
   - componentType: cards
     title: Microsoft 365 Copilot options
-    summary: Learn about the different Microsoft 365 Copilot options for your organization
+    summary: Learn about the different Microsoft 365 Copilot options for your organization.
     blocks:
       - componentType: card
         title: Microsoft 365 Copilot Chat
@@ -75,10 +75,7 @@ sections:
         imageUrl: /office/media/icons/tasks-blue.png
         links:
           - componentType: link
-            url: microsoft-365-copilot-architecture-data-protection-auditing.md
-            text: Data, Privacy, and Security for Microsoft 365 Copilot
-          - componentType: link
-            url: microsoft-365-copilot-privacy.md
+            url: microsoft-365-copilot-setup.md
             text: Deploy and enable Microsoft 365 Copilot
       - componentType: card
         title: Drive adoption
@@ -87,7 +84,7 @@ sections:
         links:
           - componentType: link
             url: https://adoption.microsoft.com/copilot/
-            text: Microsoft 365 Copilot adoption website and resources
+            text: Microsoft 365 Copilot adoption website
       - componentType: card
         title: Deliver impact
         summary: Measure usage and performance of Copilot and agents.
@@ -105,12 +102,16 @@ sections:
     summary: Learn how Microsoft protects your organization's data.
     blocks:
       - componentType: card
-        title: Data protection and security posture
-        summary: Overview of Microsoft's AI security posture and protection for organizational data.
+        title: Data protection and security
+        summary: Overview of Microsoft's AI security protections for your organizational data.
         imageUrl: /copilot/media/copilot/copilot-learning-hub/4-secure-your-data.png
         links:
           - componentType: link
-            url: enterprise-data-protection.md
+            url: manage-public-web-access.md
+            text: Security for web search
+          - componentType: link
+            url: microsoft-365-copilot-privacy.md
+            url: Security for Microsoft 365 Copilot
             text: Learn more
       - componentType: card
         title: Audit logging and retention
@@ -119,7 +120,7 @@ sections:
         links:
           - componentType: link
             url: microsoft-365-copilot-architecture-data-protection-auditing.md
-            text: Learn more
+            text: Audit capabilities in Microsoft 365 Copilot
       - componentType: card
         title: Responsible AI
         summary: Microsoft's commitment to ethical AI principles in Copilot.
@@ -127,7 +128,7 @@ sections:
         links:
           - componentType: link
             url: https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92
-            text: Learn more
+            text: Microsoft's responsible AI principles
 
   - componentType: cards
     title: Learn and resources
