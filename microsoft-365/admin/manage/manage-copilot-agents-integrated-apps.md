@@ -102,6 +102,13 @@ The setting has three options:
 > [!NOTE]
 > Once extensibility is disabled, the Microsoft pinned Visual Creator agent and entry point for Agent Builder will no longer be visible in BizChat.  Once extensibility is disabled in the tenant, it can take up to 24 hours for agents to disappear for users and for Agent Builder and Visual Creator to disappear.
 
+### Manage how users can install agents
+
+You can assign or unassign agents to specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. You can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and select the **Assign** or **Unassign** option. You can also choose to assign or unassign the app to everyone or specific users or groups. Assigning or unassigning an agent affects its availability and functionality in Copilot and in the other host products, such as Outlook, Teams, or Microsoft 365.
+
+> [!IMPORTANT]
+> Developers can [update the existing apps](/microsoft-365-copilot/extensibility/) to work with Microsoft 365 Copilot. If the updated app was pre-approved or pre-installed by an admin, then it'll update for the assigned users and starts working with Copilot. If a developer updates a previously blocked app to work with Microsoft 365 Copilot and then the admins make the app available to the users, then such an app also works with Copilot.
+
 ## Actions for agents
 
 The following table describes the actions you can take to manage an agent for your organization:
@@ -110,8 +117,8 @@ The following table describes the actions you can take to manage an agent for yo
 |------------|-----------------|
 | **Publish** | Make an agent available to specific users or groups. This means the agent is listed in the store and can be installed by those users. |
 | **Deploy** | Install an agent on behalf of a user by accepting Microsoft Entra permissions for them. This action makes the agent active and usable for specific users or groups. |
-| **Block** | Prevent any users in the tenant from accessing the agent. This action ensures that the agent cannot be used by anyone in the organization. |
 | **Remove** | Remove the agent from the inventory. This action is applicable only for first-party or third-party agents. The agent can be re-added to the inventory by acquiring it from the store. |
+| **Block** | Prevent any users in the tenant from accessing the agent. This action ensures that the agent cannot be used by anyone in the organization. |
 
 ### Publish agents
 
@@ -163,13 +170,6 @@ You can block or unblock agents for the complete organization or specific users 
 1. Decide whether to block or unblock the agent for everyone or for specific users or groups.
 
 Blocking or unblocking an agent affects its availability and functionality in Copilot and other host products, such as Outlook, Teams, or Microsoft 365.
-
-## Manage how users can install agents
-
-You can assign or unassign agents to specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. You can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and select the **Assign** or **Unassign** option. You can also choose to assign or unassign the app to everyone or specific users or groups. Assigning or unassigning an agent affects its availability and functionality in Copilot and in the other host products, such as Outlook, Teams, or Microsoft 365.
-
-> [!IMPORTANT]
-> Developers can [update the existing apps](/microsoft-365-copilot/extensibility/) to work with Microsoft 365 Copilot. If the updated app was pre-approved or pre-installed by an admin, then it'll update for the assigned users and starts working with Copilot. If a developer updates a previously blocked app to work with Microsoft 365 Copilot and then the admins make the app available to the users, then such an app also works with Copilot.
 
 ## View and consent to permissions and data access
 
