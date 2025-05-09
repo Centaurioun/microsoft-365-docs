@@ -111,8 +111,7 @@ sections:
             text: Security for web search
           - componentType: link
             url: microsoft-365-copilot-privacy.md
-            url: Security for Microsoft 365 Copilot
-            text: Learn more
+            text: Security for Microsoft 365 Copilot
       - componentType: card
         title: Audit logging and retention
         summary: Learn about auditing, eDiscovery, legal hold, and data retention controls.
