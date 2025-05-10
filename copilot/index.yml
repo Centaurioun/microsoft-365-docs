@@ -30,7 +30,7 @@ sections:
       - componentType: card
         title: Microsoft 365 Copilot Chat
         summary: Secure AI chat experience for work that's grounded on the web.
-        imageUrl: /media/microsoft-365-copilot-hub/copilot-hub-card-1.png
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-card-1.png
         links:
           - componentType: link
             url: /copilot/overview
@@ -46,7 +46,7 @@ sections:
       - componentType: card
         title: Extend and customize
         summary: Extend Microsoft 365 Copilot with customizations and agents that can perform tasks, use tools, and connect to other systems.
-        imageUrl: /media/microsoft-365-copilot-hub/copilot-hub-card-2.png
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-card-2.png
         links:
           - componentType: link
             url: /microsoft-365-copilot/extensibility/
@@ -104,7 +104,7 @@ sections:
       - componentType: card
         title: Data protection and security
         summary: Overview of Microsoft's AI security protections for your organizational data.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/copilot-hub-security-1.jpg
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-security-1.jpg
         links:
           - componentType: link
             url: manage-public-web-access.md
@@ -115,7 +115,7 @@ sections:
       - componentType: card
         title: Audit logging and retention
         summary: Learn about auditing, eDiscovery, legal hold, and data retention controls.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/copilot-hub-security-2.jpg
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-security-2.jpg
         links:
           - componentType: link
             url: microsoft-365-copilot-architecture-data-protection-auditing.md
@@ -123,7 +123,7 @@ sections:
       - componentType: card
         title: Responsible AI
         summary: Microsoft's commitment to ethical AI principles in Copilot.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/copilot-hub-security-3.jpg
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-security-3.jpg
         links:
           - componentType: link
             url: https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92
@@ -136,7 +136,7 @@ sections:
       - componentType: card
         title: Skilling and training
         summary: Access videos, tutorials, and learning paths for Microsoft 365 Copilot.
-        imageUrl: /copilot/media/copilot/copilot-learning-hub/copilot-hub-card-1.jpg
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-card-1.png
         links:
           - componentType: link
             url: /training/paths/prepare-your-organization-microsoft-365-copilot
@@ -144,7 +144,7 @@ sections:
       - componentType: card
         title: Setup guides for Microsoft 365 Copilot
         summary: Tenant-connected guidance to help accelerate Microsoft 365 Copilot.
-        imageUrl:  /copilot/media/copilot/copilot-learning-hub/copilot-hub-card-2.jpg
+        imageUrl:  media/microsoft-365-copilot-hub/copilot-hub-card-2.png
         links: 
           - componentType: link
             url: https://setup.cloud.microsoft/all-microsoft-365-guides
@@ -152,7 +152,7 @@ sections:
       - componentType: card
         title: Prompt gallery
         summary: Explore examples of how to interact with Copilot across apps using natural language prompts.
-        imageUrl:  /copilot/media/copilot/copilot-learning-hub/copilot-hub-card-3.jpg
+        imageUrl:  media/microsoft-365-copilot-hub/copilot-hub-card-3.png
         links:
           - componentType: link
             url: https://copilot.cloud.microsoft/prompts
@@ -160,7 +160,7 @@ sections:
       - componentType: card
         title: Scenario library
         summary: See real-world scenarios that demonstrate how Copilot can deliver business value.
-        imageUrl:  /copilot/media/copilot/copilot-learning-hub/copilot-hub-card-4.jpg
+        imageUrl:  media/microsoft-365-copilot-hub/copilot-hub-card-4.png
         links:
           - componentType: link
             url: https://adoption.microsoft.com/copilot-scenario-library/
