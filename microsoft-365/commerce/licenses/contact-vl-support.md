@@ -59,7 +59,7 @@ ms.date: 05/12/2025
 Depending on your location, you might be able to call the VL support team.
 
 - Be ready to provide your case number and VL agreement number.
-- You might have to provide extra user information to help triage technical issues, particularly those related to user profiles and agreement permissions.
+- You might have to provide extra user information to help triage technical issues, particularly issues related to user profiles and agreement permissions.
 - If you don't have an existing case, it's faster to create an [online support request](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f) and avoid the need for support advocates to gather your contact details.
 - Depending on your contact preference, support responds via phone or email  within 24 business hours.
 
@@ -95,7 +95,7 @@ Use the information in the following tables to find the support number for your 
 
 ### Asia
 
-|Country/Region |Toll Number(s) |Hour of Operation |Languages Supported |
+|Country/Region |Toll Numbers |Hour of Operation |Languages Supported |
 |---------|---------|---------|---------|
 |China |800 819 0567 (Toll Free)<br/>400 620 0567 (Mobile.Toll Free) |09:00 - 18:00 GMT+8 |Mandarin, English |
 |Hong Kong SAR |85230022897 (Toll Free)	|09:00 - 18:00 GMT+8 |Cantonese, Mandarin, English |
@@ -115,7 +115,7 @@ Use the information in the following tables to find the support number for your 
 
 ### Europe
 
-|Country/Region |Toll Number(s) |Hour of Operation |Languages Supported |
+|Country/Region |Toll Numbers |Hour of Operation |Languages Supported |
 |---------|---------|---------|---------|
 |All locations |International tolls to Germany might apply.<br/>+49 8924445143 (English)<br/>+49 8924445094 (German)<br/>+49 8924445246 (French) |09:00 - 18:00 Monday to Friday |English, German, French |
 |Austria |438 0006 8810 (Toll Free) |09:00 - 18:00 Monday to Friday |German |
@@ -142,7 +142,7 @@ Use the information in the following tables to find the support number for your 
 
 ### Middle East and Africa
 
-|Country/Region |Toll Number(s) |Hour of Operation |Languages Supported |
+|Country/Region |Toll Numbers |Hour of Operation |Languages Supported |
 |---------|---------|---------|---------|
 |All locations |International tolls to Germany might apply.<br/>+49 8924445143 (English)<br/>+49 8924445246 (French) |09:00 - 18:00 Monday to Friday |English, French |
 |Israel |180 9454040 (Toll Free) |08:00 - 18:00 Sunday to Thursday |Hebrew |
@@ -150,14 +150,14 @@ Use the information in the following tables to find the support number for your 
 
 ### Americas
 
-|Country/Region |Toll Number(s) |Hour of Operation |Languages Supported |
+|Country/Region |Toll Numbers |Hour of Operation |Languages Supported |
 |---------|---------|---------|---------|
 |Canada |(866) 230-0560 (English) (Toll Free) |5 AM - 5 PM PST Mon - Fri |English and French |
 |United States |(866) 230-0560 (Toll Free) |5 AM - 5 PM PST Mon - Fri |English |
 
 ### South Pacific
 
-|Country/Region |Toll Number(s) |Hour of Operation |Languages Supported |
+|Country/Region |Toll Numbers |Hour of Operation |Languages Supported |
 |---------|---------|---------|---------|
 |Australia |1800 002 691 (Toll Free)<br/>+61 2 8223 9202 |08:30 - 18:00 AEST |English |
 |New Zealand |0800 444 647 (Toll Free)<br/>+64 09 912 8073 |08:30 - 18:00 NEST |English |
