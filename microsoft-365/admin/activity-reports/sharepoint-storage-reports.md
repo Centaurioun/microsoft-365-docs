@@ -24,7 +24,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Learn how to access and interpret the SharePoint storage report ."
+description: "Learn how to access and interpret the SharePoint storage report."
 ---
 
 # Microsoft 365 Reports in the admin center – SharePoint storage
@@ -70,7 +70,7 @@ Review the total storage used by your tenant, total storage quota, and available
 
 ### Usage trend
 
-Understand your tenant’s storage growth trend and use the estimated future storage usage based on past usage to make informed decisions on when to buy more storage or clean up usage.
+Understand your tenant’s storage growth trend and use the estimated future storage usage based on past usage to make informed decisions on when to buy more storage or whether to clean up usage.
 
 ### Featured resources
 
