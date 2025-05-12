@@ -439,8 +439,6 @@ To see the insights, go to any of these pages in Lighthouse.
 
 The **Windows event logs** page in Microsoft 365 Lighthouse uses artificial intelligence (AI) to generate suggestions for mitigating issues found in Windows event logs. The "Collect Windows event logs" baseline enables collection of managed device event logs. After records have been ingested, you can view them by selecting **Devices** > **Windows event logs** in the left navigation pane in Lighthouse. To see additional details, select any log entry.
 
-[Go to the Windows event logs page now](https://lighthouse.microsoft.com/view/Microsoft_Intune_MTM/WindowsEventLogs.ReactView)
-
 ### Quick actions on the Home page
 
 You can now perform common actions like adding a new user, tagging your tenants, accessing other admin centers, and more from the Microsoft 365 Lighthouse Home page. The new command bar at the top of the Home page helps you find and perform these actions whenever you need them.
