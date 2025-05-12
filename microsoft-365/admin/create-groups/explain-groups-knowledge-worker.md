@@ -46,7 +46,7 @@ Your inner loop includes people you work with regularly. With your inner loop, y
 
 ### Outer loop - Viva Engage
 
-Your outer loop includes people that you connect with across your org, but don't necessarily work closely with. With your outer loop, you'll need to **inform and engage employees and coworkers**. Viva Engage provides public communities where you can share best practices, share files, and crowd source ideas.
+Your outer loop includes people that you connect with across your org, but don't necessarily work closely with. With your outer loop, you'll need to **inform and engage employees and coworkers**. Viva Engage provides public communities where you can share best practices, share files, and crowdsource ideas.
 
 ### Outlook, SharePoint, and Stream
 
