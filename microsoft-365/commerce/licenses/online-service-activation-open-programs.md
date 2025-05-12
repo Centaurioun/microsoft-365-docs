@@ -36,16 +36,12 @@ Microsoft Open Value and Open Value Subscription offer the ability to add online
 - You must have a volume licensing (VL) role to access the VL pages in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 - You must have the Global Administrator role on the organization's online services tenant to activate online service activation (OSA) keys.
 
-## Activate online services
-
-Customers can activate OSA product keys in one of two ways: by using the link in the online service activation email, or by going directly to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-
-### Activate services from the online service activation email
+## Activate services from the online service activation email
 
 After you order your online services through an Open program, the Online Services Manager (OSM) receives an email titled "Sign in and activate your online services" that contains a link and instructions to activate your services. The OSM can choose to complete the service activation themselves or can forward the email to an individual who has global administrator permissions.
 
 1. Go to [https://microsoft365.com/setupbusiness](https://microsoft365.com/setupbusiness).
-2. On the **Let's Redeem Your Product Key** page, input your OSA product key, then select **Next**.
+2. On the **Let's Redeem Your Product Key** page, enter your OSA product key, then select **Next**.
 3. Enter your name, work email address, business phone number, company name, and country/region, then select **Next**.
 4. Enter a phone number to receive either a text or call to verify your identity.
 5. You can use a domain name you already own, get a new domain, or add a domain later. The steps can vary, depending on which option you choose.
@@ -68,11 +64,11 @@ You can also activate your online services directly in the Microsoft 365 admin c
 9. To complete the OSA activation process, select **Next**.
 
 > [!NOTE]
-> Any newly added licenses are immediately available to the Global Administrator to assign to users by going to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>. However, it can take up to 24 hours for the OSA activation status to update in the VL pages in the Microsoft 365 admin center.
+> Any newly added licenses are immediately available to the Global Administrator to assign to users by going to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>. However, it can take up to 24 hours for the OSA status to update in the VL pages in the Microsoft 365 admin center.
 
 ## Activate Azure prepayment credits in the Microsoft 365 admin center
 
-Azure prepayment credits bought via an Open Licensing program are also activated in the Microsoft 365 admin center by using Online Service Activation (OSA) product keys.
+Azure prepayment credits bought via an Open Licensing program are also activated by using OSA product keys in the Microsoft 365 admin center.
 
 To view the Azure in Open OSA keys, use the following steps:
 
