@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 04/23/2025
+ms.date: 05/06/2025
 audience: enabler
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -30,7 +30,7 @@ With SharePoint eSignature, you can quickly and securely send documents for sign
 
 ## Regional availability
 
-SharePoint eSignature is currently available in the US, UK, Canada, the EU, and Australia Pacific. It will be available worldwide later in 2025. Furthermore, the use of other eSignature providers as an integration with the SharePoint eSignature platform is available globally.
+SharePoint eSignature is currently available in the US, UK, Canada, the EU, and Australia Pacific. It will be available worldwide later in 2025. The ability to use SharePoint eSignature with other electronic signature providers is available worldwide.
 
 ## Before you begin
 
@@ -65,17 +65,15 @@ SharePoint eSignature enables logging of eSignature activities in the Purview Au
 
 SharePoint eSignature is now integrated with other electronic signature providers, such as Adobe Acrobat Sign and DocuSign. You can initiate requests using these other providers from PDF documents in SharePoint, while ensuring the secure and automatic storage of signed documents in Microsoft 365. Other electronic signature providers will be added in the future.
 
-The providers facilitate the signing process and send out all relevant notifications. When signing is complete, a copy of the fully signed document is automatically saved in SharePoint for easy access. For more information, see [how to add other signature providers](esignature-setup.md#add-other-signature-providers) and [how to create a signature request using another provider](esignature-send-requests.md#create-a-signature-request-using-another-provider).
+The providers facilitate the signing process and send out all relevant notifications. When signing is complete, a copy of the fully signed document is automatically saved in SharePoint for easy access. For more information, see [how to add signature providers](esignature-setup.md#add-signature-providers) and [how to create a signature request using another provider](esignature-send-requests.md#create-a-signature-request-using-another-provider).
 
 ## Current release notes
 
-- SharePoint eSignature is available for only PDF documents at this time.
+- The feature to use SharePoint eSignature in Word will begin rolling out to users on the Microsoft 365 Beta and Current channels at the end of May. Until then, SharePoint eSignature is available for only PDF documents.
 
 - Tracking of SharePoint eSignature requests through the Approvals app in Microsoft Teams is now available.
 
-- Support for Adobe Acrobat Sign and Docusign is now available. In the future, there will be potential integration with other electronic signature providers.
-
-- Support for Adobe Acrobat sign and Docusign is now available globally.
+- Support for Adobe Acrobat Sign and Docusign is now available worldwide. In the future, there will be potential integration with other electronic signature providers.
 
 <br>
 

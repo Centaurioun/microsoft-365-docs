@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 04/03/2025
+ms.date: 05/01/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -36,11 +36,11 @@ There are different Copilots available.
 
 ✅ Secure with [enterprise data protection](enterprise-data-protection.md)  
 ✅ Scalable with [pay-as-you-go](./pay-as-you-go/overview.md)  
-✅ Free to organizations with a Microsoft 365 license
+✅ Included with a Microsoft 365 subscription
 
 **Microsoft 365 Copilot Chat** is an AI prompt and response experience that's [grounded in the web](/copilot/privacy-and-protections#privacy-and-security-of-generated-search-queries) and powered by [large language models (LLMs)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-are-large-language-models-llms).
 
-It's free to organizations that have a Microsoft 365 license. With Copilot Chat:
+Copilot Chat is automatically included and available to organizations that have a Microsoft 365 subscription. With Copilot Chat:
 
 - You can also create images and use [Copilot Pages](https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
 - You can use for work and education, and know that you're protected with [enterprise data protection](enterprise-data-protection.md).
