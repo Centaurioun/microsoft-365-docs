@@ -1,9 +1,9 @@
 ---
 title: "Multiple account access to Copilot for work and school documents"
 description: "Learn about multiple account access to Copilot for work and school documents."
-ms.author: danbrown
-author: DHB-MSFT
-manager: laurawi
+ms.author: camillepack
+author: camillepack
+manager: scotv
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
@@ -12,6 +12,7 @@ ms.collection:
 - privacy-copilot
 - m365copilot
 - magic-ai-copilot
+- must-keep
 hideEdit: true
 ms.date: 05/02/2025
 ---
