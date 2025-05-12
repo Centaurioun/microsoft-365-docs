@@ -22,8 +22,8 @@ sections:
     summary: Your AI assistant for work. Microsoft 365 Copilot is embedded in the apps you already use every day, connected to your work data, and backed with enterprise-grade security, privacy, and compliance.
     heroImage:
      componentType: hero-image
-     lightImageSrc: /copilot/media/microsoft-365-copilot-hub/copilot-ribbon.png
-     darkImageSrc: /copilot/media/microsoft-365-copilot-hub/copilot-ribbon.png
+     lightImageSrc: media/microsoft-365-copilot-hub/copilot-ribbon.png
+     darkImageSrc: media/microsoft-365-copilot-hub/copilot-ribbon.png
 
   # Products (3 cards)
   - componentType: cards
@@ -86,20 +86,16 @@ sections:
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-2.jpg
         links:
           - componentType: link
-            url: https://adoption.microsoft.com/copilot/
-            text: Microsoft 365 Copilot adoption website
+            url: microsoft-365-copilot-enablement-resources
+            text: Adoption and enablement resources for Microsoft 365 Copilot
       - componentType: card
         title: Deliver impact
         summary: Measure usage and performance of Copilot and agents.
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-3.jpg
         links:
           - componentType: link
-            url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage
-            text: Usage report
-          - componentType: link
             url: microsoft-365-copilot-reports-for-admins.md
-            text: Agent usage report
-
+            text: Usage report
   - componentType: cards
     title: Security and compliance
     summary: Learn how Microsoft protects your organization's data.
@@ -143,15 +139,7 @@ sections:
         links:
           - componentType: link
             url: /training/paths/prepare-your-organization-microsoft-365-copilot
-            text: Browse training
-      - componentType: card
-        title: Setup guides for Microsoft 365 Copilot
-        summary: Tenant-connected guidance to help accelerate Microsoft 365 Copilot.
-        imageUrl:  media/microsoft-365-copilot-hub/copilot-hub-card-2.png
-        links: 
-          - componentType: link
-            url: https://setup.cloud.microsoft/all-microsoft-365-guides
-            text: View documentation
+            text: Browse training 
       - componentType: card
         title: Prompt gallery
         summary: Explore examples of how to interact with Copilot across apps using natural language prompts.
