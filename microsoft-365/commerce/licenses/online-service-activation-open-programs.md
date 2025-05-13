@@ -74,8 +74,12 @@ To view the Azure in Open OSA keys, use the following steps:
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 2. In the **Navigation** pane, go to the **Billing** > <a href="" target="_blank">Your products</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
-3. In the **Product and services** or **Contracts** modules under **Keys**, select the License ID where Azure was ordered, select the **Manage activation** link, then select **Start Activation**.
-4. You're taken to where you can use the Azure OSA key to either **Activate a New Subscription** or **Add more Azure credits** to an existing subscription.
+3. In the **Product and services** section, select **View downloads and keys**.
+4. On the **Products and services** page, select the Azure product name.
+5. In the details panel, select the **Keys** tab.
+6. Find the License ID you want to activate, then select **Manage activations**.
+7. On the **Volume Licensing Online Service Activation** page, find the order you want to activate, then select **Start Activation**.
+8. A new page opens where you can use the Azure OSA key to either **Activate a New Subscription** or **Add more Azure credits** to an existing subscription.
 
 The credits can be used against any pay-as-you-go (PAYG) Azure service for 12 months from the OSA activation date. Azure pricing is specific to the services consumed.
 
