@@ -55,6 +55,21 @@ sections:
             url: /microsoft-365-copilot/extensibility/
             text: Learn more
 
+  - componentType: text
+    title: Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
+    summary: |
+     | Capability | Microsoft 365 Copilot Chat | Microsoft 365 Copilot |
+     |------------|---------------------------|-----------------------|
+     | Requires a work or school account | Yes | Yes |
+     | Responses are web-grounded\* | Yes | Yes |
+     | Responses are work-grounded\* | No | Yes |
+     | Includes Copilot Pages | Yes | Yes |
+     | Upload files to prompts | Yes (limited) | Yes |
+     | Create images and data visualizations | Yes (limited) | Yes |
+     | Includes Copilot capabilities in Microsoft 365 apps | No | Yes |
+      \* **Web-grounded** responses cite public web sources.  
+      \* **Work-grounded** responses can incorporate data from your Microsoft 365 tenant.
+ 
   # Video - Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
   - componentType: bifold
     blocks:
