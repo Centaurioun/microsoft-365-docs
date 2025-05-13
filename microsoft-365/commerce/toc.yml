@@ -52,6 +52,8 @@ items:
           href: licenses/subscriptions-and-licenses.md
     - name: Manage volume licensing
       items:
+        - name: Manage volume licensing agreements
+          href: licenses/manage-volume-licensing.md
         - name: Sign in to the Microsoft 365 admin center
           href: licenses/vl-sign-in.md
         - name: Sign your volume licensing agreement
