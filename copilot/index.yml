@@ -32,7 +32,7 @@ sections:
     blocks:
       - componentType: card
         title: Microsoft 365 Copilot Chat
-        summary: Secure AI chat experience that's grounded on the web and can leverage your work files.
+        summary: Secure AI chat experience that's grounded on the web and can use your work files.
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-work-1.jpg
         links:
           - componentType: link
@@ -40,7 +40,7 @@ sections:
             text: Learn more
       - componentType: card
         title: Microsoft 365 Copilot
-        summary: AI experience found in chat and your Microsoft 365 applications that transforms productivity.  Grounded on web and work data. 
+        summary: Transform productivity with AI chat that's amplified with Microsoft 365 data. Grounded on web and work data. 
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-work-2.jpg
         links:
           - componentType: link
@@ -135,7 +135,7 @@ sections:
     blocks:
       - componentType: summary-card
         title: Copilot training
-        summary: Access videos, tutorials, and learning paths for Microsoft 365 Copilot..
+        summary: Access videos, tutorials, and learning paths for Microsoft 365 Copilot.
         url: /training/paths/prepare-your-organization-microsoft-365-copilot
       - componentType: summary-card
         title: Explore scenarios
