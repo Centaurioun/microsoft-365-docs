@@ -55,7 +55,7 @@ sections:
             url: /microsoft-365-copilot/extensibility/
             text: Learn more
 
-# Video - Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
+  # Video - Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
   - componentType: bifold
     blocks:
       - componentType: text
@@ -86,7 +86,7 @@ sections:
       - componentType: card
         title: Get ready
         summary: Get started deploying Microsoft 365 Copilot.
-        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-1.jpg
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-get-ready-1.png
         links:
           - componentType: link
             url: microsoft-365-copilot-setup.md
@@ -94,7 +94,7 @@ sections:
       - componentType: card
         title: Drive adoption
         summary: Prepare your workforce for Microsoft 365 Copilot.
-        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-2.jpg
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-drive-adoption-2.png
         links:
           - componentType: link
             url: microsoft-365-copilot-enablement-resources.md
@@ -102,7 +102,7 @@ sections:
       - componentType: card
         title: Deliver impact
         summary: Measure usage and performance of Copilot and agents.
-        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-3.jpg
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-deliver-impact-3.png
         links:
           - componentType: link
             url: microsoft-365-copilot-reports-for-admins.md
