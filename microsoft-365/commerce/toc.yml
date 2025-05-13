@@ -72,6 +72,8 @@ items:
           href: licenses/online-service-activation-faq.yml
         - name: Volume licensing invoices
           href: licenses/volume-licensing-invoices.md
+        - name: Contact volume licensing support
+          href: licenses/contact-vl-support.md
     - name: Bills and payments
       items:
         - name: View your invoice
