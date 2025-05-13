@@ -23,12 +23,12 @@ appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Microsoft 365 Copilot app overview
+# Get started with the Microsoft 365 Copilot app
 
 > [!NOTE]
 > The updated Microsoft 365 Copilot app is rolling out to Microsoft 365 Copilot users. If you don't see the feature, it might not be available in your organization yet. The feature should be fully rolled out in June 2025.
 
-The Microsoft 365 Copilot app is an everyday AI productivity app for work or school. It helps Microsoft 365 users be more productive by providing a single place to access Microsoft 365 Copilot features and capabilities, including search, chat, agents, and more.
+The Microsoft 365 Copilot app is an everyday AI productivity app for work or school. It helps Microsoft 365 users be more productive by providing a single place to access [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) features and capabilities, including search, chat, agents, and more.
 
 The app is available as a website ([M365Copilot.com](https://www.M365Copilot.com)), as a desktop app that can be installed on [Windows](https://apps.microsoft.com/detail/9wzdncrd29v9), and a mobile app for [Android](https://support.microsoft.com/office/microsoft-365-copilot-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b) and [iOS](https://support.microsoft.com/office/microsoft-365-copilot-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0) devices.
 
@@ -69,11 +69,11 @@ The following table shows the feature differences with a Microsoft 365 Copilot l
 | Feature | Copilot license | Microsoft 365 subscription |
 |---|---|---|
 | Search | ✅ <br/><br/>AI-powered search| Classic search only; No AI-powered search |
-| Chat | ✅ <br><br> Work-based and web-grounded chat <br/><br/>Automatically enabled in the app and is the app's default landing page | Web-grounded chat only; No work-based chat <br/><br/>Can pin the Chat app to the Copilot app. |
+| Chat | ✅ <br><br> Work-based and web-grounded chat <br/><br/>Automatically enabled in the Copilot app and is the Copilot app's default landing page | Web-grounded chat only; No work-based chat <br/><br/>Can pin the Chat app to the Copilot app. |
 | Agents | ✅ | ✅ <br/><br/> Agents are metered. |
 | Pages | ✅ | ✅ |
 | Notebooks | ✅ | ❌ |
-| Create | ✅ <br/><br/> Use AI to create and edit images, posters, banners, videos, and more. | Use templates to create and edit images, posters, banners, videos, and more. |
+| Create | ✅ <br/><br/> Use AI and template to create and edit images, posters, banners, videos, and more. | Use templates to create and edit images, posters, banners, videos, and more. |
 | Apps | ✅ <br/><br/>Users can get and pin apps. | ✅ <br/><br/>Users can get and pin apps. |
 
 When users with a Microsoft 365 Copilot license open and sign in to the Copilot app, the app looks similar to the following image:
@@ -90,5 +90,6 @@ The Microsoft 365 Copilot app has some settings and features that IT admins can 
 
 ## Related articles
 
+- [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md)
 - [Microsoft 365 Copilot app features that admins can control](microsoft-365-copilot-app-admin-settings.md)
 - [End users can get started with the Microsoft 365 Copilot app](https://support.microsoft.com/topic/get-started-with-the-microsoft-365-copilot-app-092599f1-5917-4bd6-bd59-58af628bbc39)
