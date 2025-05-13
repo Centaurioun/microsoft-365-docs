@@ -71,7 +71,7 @@ items:
         - name: Activate online services
           href: licenses/online-service-activation-vl.md
         - name: Online service activation for Open programs
-          href: licenses/online-service-activation-faq.yml
+          href: licenses/online-service-activation-open-programs.md
         - name: Volume licensing invoices
           href: licenses/volume-licensing-invoices.md
         - name: Contact volume licensing support
