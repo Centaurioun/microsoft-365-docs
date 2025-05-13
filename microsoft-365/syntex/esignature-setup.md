@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 05/06/2025
+ms.date: 05/13/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
@@ -83,12 +83,12 @@ To let users use SharePoint eSignature in Word, you need to [turn on the Word fe
 
 #### Turn on the Word feature
 
+> [!NOTE]
+> This feature begins rolling out to users on the Microsoft 365 Beta and Current channels at the end of May.
+
 1. On the **eSignature** panel, in the **Which apps can use SharePoint eSignature?** section, select **Word (Desktop)**.
 
-> [!NOTE]
-> This feature begins rolling out to users on the Microsoft 365 Beta and Current Channels at the end of May. 
-
->     ![Screenshot showing the eSignature panel with Word selected.](../media/content-understanding/esignature-word-turn-on.png)
+![Screenshot showing the eSignature panel with Word selected.](../media/content-understanding/esignature-word-turn-on.png)
 
 2. Select **Save**.
 
