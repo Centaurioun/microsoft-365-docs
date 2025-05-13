@@ -62,7 +62,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 - **AI adoption score** [Web]
 
   A new people experiences category in Adoption Score in the Microsoft 365 admin center introduces AI adoption metrics, helping organizations understand how Microsoft Copilot features are being used across Microsoft 365.
- <a href="/microsoft-365/admin/adoption/ai-adoption-score?view=o365-worldwide#organizational-messages-in-ai-adoption-score" target="_blank">Learn more.</a>
+ <a href="/microsoft-365/admin/adoption/ai-adoption-score#organizational-messages-in-ai-adoption-score" target="_blank">Learn more.</a>
 - **Manage pay-as-you-go billing for Copilot** [Windows, Web]
 
   Admins can manage pay-as-you-go billing directly within Copilot settings in the Microsoft 365 admin center. This capability is available to users with Global admin, AI admin, and Global reader roles.
@@ -83,7 +83,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 - **Copilot pages in Government Clouds** [Windows]
 
   Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
- <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f#:~:text=Copilot%20Pages%20is%20an%20interactive,refining%20content%20in%20real%2Dtime." target="_blank">Learn more.</a>
+ <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
 - **Create web-aware agents in Agent Builder**
 
   Build declarative agents that draw knowledge from up to four public websites, delivering more precise, source-linked answers inside Microsoft 365 chat experiences.
@@ -1981,7 +1981,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 - **Copilot pages in Government Clouds** [Windows]
 
   Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
- <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f#:~:text=Copilot%20Pages%20is%20an%20interactive,refining%20content%20in%20real%2Dtime." target="_blank">Learn more.</a>
+ <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
 - **Unified prompt box across web and work chats** [Windows, Web]
 
   Enjoy a consistent prompting experience across Copilot Chat with an input box that looks and behaves the same in both work and web chat modes.
@@ -3013,7 +3013,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 - **AI adoption score** [Web]
 
   A new people experiences category in Adoption Score in the Microsoft 365 admin center introduces AI adoption metrics, helping organizations understand how Microsoft Copilot features are being used across Microsoft 365.
- <a href="/microsoft-365/admin/adoption/ai-adoption-score?view=o365-worldwide#organizational-messages-in-ai-adoption-score" target="_blank">Learn more.</a>
+ <a href="/microsoft-365/admin/adoption/ai-adoption-score#organizational-messages-in-ai-adoption-score" target="_blank">Learn more.</a>
 
 - **Manage pay-as-you-go billing for Copilot** [Windows, Web]
 
