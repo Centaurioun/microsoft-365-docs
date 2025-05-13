@@ -251,13 +251,11 @@ After creating or editing a template, you can set up a SharePoint eSignature flo
 
 To set up a mandatory signature workflow, follow these steps:
 
-1. In the **Configure workflow** section, select **Configure required signatures**.
-
-2. On the **Manage templates** panel, in the **Configure workflows** section, and then select **Configure required signatures**.
+1. On the **Manage templates** panel, in the **Configure workflows** section, and then select **Configure required signatures**.
 
    ![A screenshot of the Manage templates panel showing the Configure required signatures option.](../../media/content-understanding/agreements-esignature-configure-required-signatures.png)
 
-3. Select the signature provider you want to use. Signature providers that are available for the Agreements solution can be enabled in the Microsoft 365 admin center. For more information, see [Set up SharePoint eSignature](/microsoft-365/syntex/esignature-setup).
+2. Select the signature provider you want to use. Signature providers that are available for the Agreements solution can be enabled in the Microsoft 365 admin center. For more information, see [Set up SharePoint eSignature](/microsoft-365/syntex/esignature-setup#add-signature-providers).
 
 #### For SharePoint eSignature
 
