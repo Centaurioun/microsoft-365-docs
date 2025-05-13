@@ -68,7 +68,7 @@ The following table shows the feature differences with a Microsoft 365 Copilot l
 
 | Feature | Copilot license | Microsoft 365 subscription |
 |---|---|---|
-| Search | ✅ <br/><br/>AI-powered search| Classic search only; No AI-powered search |
+| Search | ✅ | ✅ |
 | Chat | ✅ <br><br> Work-based and web-grounded chat <br/><br/>Automatically enabled in the Copilot app and is the Copilot app's default landing page | Web-grounded chat only; No work-based chat <br/><br/>Can pin the Chat app to the Copilot app. |
 | Agents | ✅ | ✅ <br/><br/> Agents are metered. |
 | Pages | ✅ | ✅ |
