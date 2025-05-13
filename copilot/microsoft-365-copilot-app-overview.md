@@ -4,7 +4,7 @@ description: Enterprise and company IT admins can use the Microsoft 365 Copilot 
 author: MandiOhlinger
 ms.author: mandia
 manager: laurawi
-ms.date: 05/07/2025
+ms.date: 05/13/2025
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.subservice: 
@@ -28,9 +28,7 @@ appliesto:
 > [!NOTE]
 > The updated Microsoft 365 Copilot app is rolling out to Microsoft 365 Copilot users. If you don't see the feature, it might not be available in your organization yet. The feature should be fully rolled out in June 2025.
 
-The Microsoft 365 Copilot app is an everyday AI productivity app for work or school.
-
-The app is designed as a single place to access Microsoft 365 Copilot features and capabilities. It's available to Microsoft Entra accounts (work and school) and personal Microsoft user accounts with a Microsoft 365 subscription or a Microsoft 365 Copilot license.
+The Microsoft 365 Copilot app is an everyday AI productivity app for work or school. It helps Microsoft 365 users be more productive by providing a single place to access Microsoft 365 Copilot features and capabilities, including search, chat, agents, and more.
 
 The app is available as a website ([M365Copilot.com](https://www.M365Copilot.com)), as a desktop app that can be installed on [Windows](https://apps.microsoft.com/detail/9wzdncrd29v9), and a mobile app for [Android](https://support.microsoft.com/office/microsoft-365-copilot-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b) and [iOS](https://support.microsoft.com/office/microsoft-365-copilot-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0) devices.
 
@@ -59,10 +57,10 @@ End users can learn more about the Copilot app at [Get started with the Microsof
 
 ## Microsoft 365 Copilot license vs. Microsoft 365 subscription
 
-The Microsoft 365 Copilot app is available to:
+The Copilot app is available to Microsoft Entra accounts (work and school) and personal Microsoft user accounts with a:
 
-- Users with a Microsoft 365 Copilot license
-- Users with a Microsoft 365 subscription
+- Microsoft 365 Copilot license
+- Microsoft 365 subscription
 
 The available app features depend on the license. Users with a Copilot license get the full Microsoft 365 Copilot app experience.
 
@@ -77,6 +75,14 @@ The following table shows the feature differences with a Microsoft 365 Copilot l
 | Notebooks | ✅ | ❌ |
 | Create | ✅ <br/><br/> Use AI to create and edit images, posters, banners, videos, and more. | Use templates to create and edit images, posters, banners, videos, and more. |
 | Apps | ✅ <br/><br/>Users can get and pin apps. | ✅ <br/><br/>Users can get and pin apps. |
+
+When users with a Microsoft 365 Copilot license open and sign in to the Copilot app, the app looks similar to the following image:
+
+:::image type="content" source="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-license.png" alt-text="Screenshot that shows the Microsoft 365 Copilot app with a Microsoft 365 Copilit license." lightbox="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-license.png":::
+
+When users with a Microsoft 365 subscription (no Copilot license) open and sign in to the Copilot app, the app looks similar to the following image:
+
+:::image type="content" source="media/microsoft-365-copilot-app-overview/microsoft-365-no-copilot-license.png" alt-text="Screenshot that shows the Microsoft 365 Copilot app with only a Microsoft 365 subscription and not a Microsoft 365 Copilot license." lightbox="media/microsoft-365-copilot-app-overview/microsoft-365-no-copilot-license.png":::
 
 ## Customizable app settings for IT admins
 
