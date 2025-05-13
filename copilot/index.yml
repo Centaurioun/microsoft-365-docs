@@ -18,7 +18,7 @@ sections:
   - componentType: hero-product
     supertitle: Microsoft Learn
     title: Microsoft 365 Copilot hub 
-    size: small
+    # size: small
     summary: Your AI assistant for work. Microsoft 365 Copilot is embedded in the apps you already use every day, connected to your work data, and backed with enterprise-grade security, privacy, and compliance.
     heroImage:
      componentType: hero-image
