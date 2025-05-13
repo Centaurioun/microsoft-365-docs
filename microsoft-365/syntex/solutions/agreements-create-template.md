@@ -257,7 +257,7 @@ To set up a mandatory signature workflow, follow these steps:
 
 2. Select the signature provider you want to use. Signature providers that are available for SharePoint Agreements are enabled in the Microsoft 365 admin center. For more information, see [Set up SharePoint eSignature](/microsoft-365/syntex/esignature-setup#add-signature-providers).
 
-#### For SharePoint eSignature
+#### Use SharePoint eSignature
 
 1. Set up signature fields in the template by first adding a signer label, such as first party or vendor.
 
@@ -274,7 +274,7 @@ To set up a mandatory signature workflow, follow these steps:
 
 5. Once set up, you can also choose to later modify the signature request before publishing the template.
 
-#### For other signature providers
+#### Use other signature providers
 
 1. On the **Manage templates** panel, in the **Select a provider** section, select the signature provider you want to use.
 
