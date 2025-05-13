@@ -977,7 +977,7 @@
       },
       {
          "source_path": "microsoft-365/commerce/licenses/online-service-activation-faq.yml",
-         "redirect_url": "/microsoft-365/commerce/licenses/online-service-activation-open-program",
+         "redirect_url": "/microsoft-365/commerce/licenses/online-service-activation-open-programs",
          "redirect_document_id": false
       }
   ]
