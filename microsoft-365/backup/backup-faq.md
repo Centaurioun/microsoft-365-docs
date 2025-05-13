@@ -72,7 +72,7 @@ The recovery point objective (RPO) is the maximum amount of time between the mos
 
 - For OneDrive and SharePoint, the RPO for the trailing two weeks is 10 minutes. This means if it's Monday at 8:00 AM, you can go back in time to any 10-minute period up to two weeks in the past. Beyond that, you can go to any one week period of time in past from 2 to 52 weeks in the past.
 
-- For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’s worth of data.
+- For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’ worth of data.
 
 Let's start with what it doesn't mean: We are *not* taking snapshots every 10 minutes.
 
