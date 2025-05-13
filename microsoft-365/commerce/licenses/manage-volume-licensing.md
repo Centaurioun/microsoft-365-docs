@@ -33,7 +33,7 @@ You must have a VL role to access VL agreements. These roles are assigned either
 
 ## Classic volume licensing
 
-If you're a Commercial or Government Community Cloud customer, you can access the following VL agreement types in the Microsoft 365 admin center:
+If you're a Commercial or Government Community Cloud customer, you can access the following VL agreement types in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>:
 
 - Microsoft Enterprise and Enterprise Subscription
 - Select and Select Plus
