@@ -40,7 +40,7 @@ sections:
             text: Learn more
       - componentType: card
         title: Microsoft 365 Copilot
-        summary: Transform productivity with AI chat that's amplified with Microsoft 365 data. Grounded on web and work data. 
+        summary: Transform productivity with AI chat, amplified with Microsoft 365 data. Grounded on web and work data. 
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-work-2.jpg
         links:
           - componentType: link
@@ -55,29 +55,18 @@ sections:
             url: /microsoft-365-copilot/extensibility/
             text: Learn more
 
-  - componentType: callout-grid
-    title: Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
-    blocks:
-      - componentType: callout
-        title: Microsoft 365 Copilot Chat
-        description: |-
-          **Requires work or school account:** Yes  
-          **Web-grounded responses:** Yes  
-          **Work-grounded responses:** No  
-          **Includes Copilot Pages:** Yes  
-          **File upload:** Yes (limited)  
-          **Create images / data viz:** Yes (limited)  
-          **Copilot features in Microsoft 365 apps:** No
-      - componentType: callout
-        title: Microsoft 365 Copilot
-        description: |-
-          **Requires work or school account:** Yes  
-          **Web-grounded responses:** Yes  
-          **Work-grounded responses:** Yes  
-          **Includes Copilot Pages:** Yes  
-          **File upload:** Yes  
-          **Create images / data viz:** Yes  
-          **Copilot features in Microsoft 365 apps:** Yes
+    content: |
+      | Feature | Microsoft 365 Copilot Chat | Microsoft 365 Copilot |
+      |---------|---------------------------|-----------------------|
+      | License requirement | Included with your Microsoft 365 business subscription | Requires a license from your Microsoft 365 admin |
+      | Requires a work or school account | Yes | Yes |
+      | Responses are web-grounded* | Yes | Yes |
+      | Responses are work-grounded* | No | Yes |
+      | Includes Copilot Pages | Yes | Yes |
+      | Upload files to prompts | Yes (limited) | Yes |
+      | Create images and data visualizations | Yes (limited) | Yes |
+      | Includes Copilot capabilities in Microsoft 365 apps | No | Yes |
+
  
   # Video - Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
   - componentType: bifold
