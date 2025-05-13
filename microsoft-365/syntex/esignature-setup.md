@@ -79,12 +79,12 @@ To select which signature providers to use, follow these steps.
 
 ### Allow signature requests in Microsoft Word
 
+> [!NOTE]
+> This feature begins rolling out to users on the Microsoft 365 Beta and Current channels at the end of May.
+
 To let users use SharePoint eSignature in Word, you need to [turn on the Word feature](#turn-on-the-word-feature) and [apply the Office group policy](#apply-the-office-group-policy).
 
 #### Turn on the Word feature
-
-> [!NOTE]
-> This feature begins rolling out to users on the Microsoft 365 Beta and Current channels at the end of May.
 
 1. On the **eSignature** panel, in the **Which apps can use SharePoint eSignature?** section, select **Word (Desktop)**.
 
