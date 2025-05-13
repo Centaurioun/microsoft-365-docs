@@ -32,7 +32,7 @@ sections:
     blocks:
       - componentType: card
         title: Microsoft 365 Copilot Chat
-        summary: Secure AI chat experience for work that's grounded on the web.
+        summary: Secure AI chat experience that's grounded on the web and can leverage your work files.
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-work-1.jpg
         links:
           - componentType: link
@@ -40,7 +40,7 @@ sections:
             text: Learn more
       - componentType: card
         title: Microsoft 365 Copilot
-        summary: Secure AI experience that transforms productivity. Grounded on web and work data.  
+        summary: AI experience found in chat and your Microsoft 365 applications that transforms productivity.  Grounded on web and work data. 
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-work-2.jpg
         links:
           - componentType: link
@@ -69,12 +69,12 @@ sections:
         src: https://learn-video.azurefd.net/vod/player?id=6ba0f4d6-fffc-479a-9698-a90e6e57e80f&embedUrl=https://learn.microsoft.com/microsoft-365-copilot
 
   - componentType: cards
-    title: Let's go
-    summary: Start your Microsoft 365 Copilot journey.
+    title: Start your Microsoft 365 Copilot journey
+    summary: Step-by-step guidance to deploy Microsoft 365 Copilot
     blocks:
       - componentType: card
         title: Get ready
-        summary: Step-by-step guidance to get started with Microsoft 365 Copilot.
+        summary: Get started deploying Microsoft 365 Copilot.
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-1.jpg
         links:
           - componentType: link
@@ -87,7 +87,7 @@ sections:
         links:
           - componentType: link
             url: microsoft-365-copilot-enablement-resources.md
-            text: Adoption and enablement resources for Microsoft 365 Copilot
+            text: Adoption resources for Microsoft 365 Copilot
       - componentType: card
         title: Deliver impact
         summary: Measure usage and performance of Copilot and agents.
@@ -128,31 +128,24 @@ sections:
             url: https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92
             text: Microsoft's responsible AI principles
 
-  - componentType: cards
-    title: Learn and resources
-    summary: Explore training, tutorials, and documentation, helping your organization get started with Microsoft 365 Copilot.
+
+  - componentType: grid
+    title: Keep exploring
+    summary: Continue your Copilot and agents learning with these Microsoft resources.
     blocks:
-      - componentType: card
-        title: Skilling and training
-        summary: Access videos, tutorials, and learning paths for Microsoft 365 Copilot.
-        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-card-1.png
-        links:
-          - componentType: link
-            url: /training/paths/prepare-your-organization-microsoft-365-copilot
-            text: Browse training 
-      - componentType: card
-        title: Prompt gallery
-        summary: Explore examples of how to interact with Copilot across apps using natural language prompts.
-        imageUrl:  media/microsoft-365-copilot-hub/copilot-hub-card-3.png
-        links:
-          - componentType: link
-            url: https://copilot.cloud.microsoft/prompts
-            text: Visit gallery
-      - componentType: card
-        title: Scenario library
+      - componentType: summary-card
+        title: Copilot training
+        summary: Access videos, tutorials, and learning paths for Microsoft 365 Copilot..
+        url: /training/paths/prepare-your-organization-microsoft-365-copilot
+      - componentType: summary-card
+        title: Explore scenarios
         summary: See real-world scenarios that demonstrate how Copilot can deliver business value.
-        imageUrl:  media/microsoft-365-copilot-hub/copilot-hub-card-4.png
-        links:
-          - componentType: link
-            url: https://adoption.microsoft.com/copilot-scenario-library/
-            text: Explore scenarios
+        url: https://adoption.microsoft.com/copilot-scenario-library/
+      - componentType: summary-card
+        title: Copilot glossary
+        summary: Find common terms and definitions to help you better understand Copilot.
+        url: /copilot/glossary
+      - componentType: summary-card
+        title: Copilot Prompt Gallery
+        summary: Explore examples of how to interact with Copilot across apps using natural language prompts.
+        url: https://copilot.cloud.microsoft/prompts
