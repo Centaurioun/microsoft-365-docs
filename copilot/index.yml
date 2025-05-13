@@ -75,7 +75,7 @@ sections:
       - componentType: card
         title: Get ready
         summary: Get started deploying Microsoft 365 Copilot.
-        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-get-ready-1.png
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-1.jpg
         links:
           - componentType: link
             url: microsoft-365-copilot-setup.md
@@ -83,7 +83,7 @@ sections:
       - componentType: card
         title: Drive adoption
         summary: Prepare your workforce for Microsoft 365 Copilot.
-        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-drive-adoption-2.png
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-2.jpg
         links:
           - componentType: link
             url: microsoft-365-copilot-enablement-resources.md
@@ -91,11 +91,13 @@ sections:
       - componentType: card
         title: Deliver impact
         summary: Measure usage and performance of Copilot and agents.
-        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-deliver-impact-3.png
+        imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-3.jpg
         links:
           - componentType: link
             url: microsoft-365-copilot-reports-for-admins.md
             text: Usage report
+
+
   - componentType: cards
     title: Security and compliance
     summary: Learn how Microsoft protects your organization's data.
