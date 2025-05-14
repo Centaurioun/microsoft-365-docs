@@ -160,4 +160,4 @@ Use the information in the following tables to find the support number for your 
 |Country/Region |Toll Numbers |Hour of Operation |Languages Supported |
 |---------|---------|---------|---------|
 |Australia |1800 002 691 (Toll Free)<br/>+61 2 8223 9202 |08:30 - 18:00 AEST |English |
-|New Zealand |0800 444 647 (Toll Free)<br/>+64 09 912 8073 |08:30 - 18:00 NEST |English |
+|New Zealand |0800 444 647 (Toll Free)<br/>+64 09 912 8073 |08:30 - 18:00 NZST |English |
