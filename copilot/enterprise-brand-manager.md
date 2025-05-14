@@ -23,15 +23,15 @@ description: "Learn about enabling brand kits and asset libraries in the Microso
 
 # Enterprise brand manager policy and organizational asset library (OAL) access
 
-Your organization can enable their brand managers to set up and publish organization or official brand kits via [create.microsoft.com](https://create.microsoft.com). These brand kits can contain multiple logos, color palettes, fonts, images, and templates pertaining to a certain brand. Once published, the brand kit will be available to all users in the organization on create.microsoft.com. They can use these brand kits to generate branded artifacts or manually add brand content to existing designs and images.
+Your organization can enable their brand managers to set up and publish organization or official brand kits via [create.microsoft.com](https://create.microsoft.com). These brand kits can contain multiple logos, color palettes, fonts, images, and templates pertaining to a certain brand. Once published, the brand kit is available to all users in the organization on create.microsoft.com. They can use these brand kits to generate branded artifacts or manually add brand content to existing designs and images.
 
-For this to happen, admins need to configure the Enterprise Brand Manager policy defining their group of brand managers who will be responsible for creating, managing, and publishing the official or organizational brand kits.
+For this to happen, admins need to configure the Enterprise Brand Manager policy defining their group of brand managers who are responsible for creating, managing, and publishing the official or organizational brand kits.
 
 Beyond brand kits, Copilot also supports access to an organization’s designated [organizational asset library (OAL)](/sharepoint/organization-assets-library). OALs provide broad, centralized access to brand content and support images, logos and illustrations. OALs need to be configured as searchable by an admin.
 
 ## Setting up Enterprise Brand Manager Policy
 
-**Prerequisite** Create a security group with identified brand managers who will have access and permission to create, publish and manage brand kits available to all users within the tenant.
+**Prerequisite** Create a security group with identified brand managers who will have access and permission to create, publish, and manage brand kits available to all users within the organization.
 
 **Policy setup** Follow these steps to create and enable the Enterprise Brand Manager policy for your organization:
 
@@ -40,7 +40,7 @@ Beyond brand kits, Copilot also supports access to an organization’s designate
 3. Select your existing tenant level policy with scope set to **Apply to all users** or create a new tenant policy with scope set to **Apply to all users**.
 4. Go to the **Policies** tab.
 5. Use the search box to search for **Brand Manager**. Select the **Elevated role for Brand Managers** policy.
-6. Set the policy to **Enabled**. By default, it will be set as **Not configured**.
+6. Set the policy to **Enabled**. By default, it's set as **Not configured**.
 7. In the Security group email address field, provide the email address for the brand managers security group for your tenant.
 8. Select **Apply**.
 
