@@ -36,13 +36,13 @@ Beyond brand kits, Copilot also supports access to an organization’s designate
 **Policy setup** Follow these steps to create and enable the Enterprise Brand Manager policy for your organization:
 
 1. Navigate to [Config.office.com](https://config.office.com/) and sign in using an Administrator account.
-2. Under Customization, select **Policy Management**.
-3. Select your existing tenant level policy with scope set to **Apply to all users** or create a new tenant policy with scope set to **Apply to all users**.
-4. Go to the **Policies** tab.
-5. Use the search box to search for **Brand Manager**. Select the **Elevated role for Brand Managers** policy.
-6. Set the policy to **Enabled**. By default, it's set as **Not configured**.
-7. In the Security group email address field, provide the email address for the brand managers security group for your tenant.
-8. Select **Apply**.
+1. Under Customization, select **Policy Management**.
+1. Select your existing tenant level policy with scope set to **Apply to all users** or create a new tenant policy with scope set to **Apply to all users**.
+1. Go to the **Policies** tab.
+1. Use the search box to search for **Brand Manager**. Select the **Elevated role for Brand Managers** policy.
+1. Set the policy to **Enabled**. By default, it's set as **Not configured**.
+1. In the Security group email address field, provide the email address for the brand managers security group for your tenant.
+1. Select **Apply**.
 
 ## Setting up an OAL to be accessible in the Create experience of the Microsoft 365 Copilot app
 
