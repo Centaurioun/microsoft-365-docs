@@ -21,19 +21,21 @@ Microsoft 365 Copilot Tuning allows organizations to fine-tune AI models using t
 
 This overview explains how organizations can use Copilot Tuning to fine-tune their AI model and describes the admin center settings that are used to govern the feature. It also provides information about how users in the organization can use agents tuned on the AI model.
 
-## Key capabilities and scenarios
+## Key capabilities
 
-Copilot Tuning allows for fine-tuning of large language models (LLMs) through an **intuitive no-code Microsoft Copilot Studio interface**. Business analysts or subject-matter experts can use their domain knowledge to fine-tune AI models on relevant tenant data, allowing the model to learn the unique voice and procedures that are custom to the organization. 
+Copilot Tuning allows for fine-tuning of large language models (LLMs) through an intuitive UI interface. Business analysts or subject-matter experts can use their domain knowledge to fine-tune AI models on relevant tenant data, allowing the model to learn the unique voice and procedures that are custom to the organization. For example, a legal department analyst can fine-tune a model using the firm's past case briefs and templates to create a contract drafting agent that writes documents that use the firm's style and terminology.
 
-For example, a legal department analyst can fine-tune a model using the firm's past case briefs and templates to create a contract drafting agent that writes documents that use the firm's style and terminology.
+Copilot Tuning provides the following key capabilities and benefits:
 
-Copilot Tuning can use the rich content already in your Microsoft 365 ecosystem. You can select knowledge sources like SharePoint libraries for fine-tuning. The model then learns from this tenant data (and even approved external data via Microsoft 365 Copilot connectors) to ensure the AI's responses are grounded in the organization's actual information. Because Copilot is integrated with Microsoft Graph, the agent can also reason over live enterprise data if needed, giving you a powerful tool to query and summarize up-to-date information.
+- **No code model fine tuning** - Fine-tune LLMs on internal data by using an intuitive interface in Microsoft Copilot Studio.
 
-The fine-tuned models are served as **specialized Copilot agents** tailored to business tasks. This means analysts can create agents for scenarios like Q&A, report generation, or policy checklists that behave like an expert in that domain. The AI produces results with the appropriate tone, vocabulary, and level of detail for the organization. For example, an HR analyst can train a model on HR policy documents to produce an HR Q&A Copilot agent that answers employee questions about benefits or relocation policies in line with official guidelines. 
+- **Domain-specific AI agents** - Build specialized Copilot agents based on your fine-tuned models that are tailored to business tasks. You can create agents for scenarios like Q&A, report generation, or policy checklists that behave like an expert in that domain. The AI produces results with the appropriate tone, vocabulary, and level of detail for the organization. For example, an HR analyst can train a model on HR policy documents to produce an HR Q&A Copilot agent that answers employee questions about benefits or relocation policies in line with official guidelines.
 
-Encoding business know-how into Copilot enables faster analysis and content creation. Tasks that might take days of manual effort (searching documents, compiling data, writing drafts) can be done in minutes by the AI agent. This allows your analysts and subject-matter experts to focus on higher-value work while Copilot handles routine or information-heavy tasks.
+- **Faster insights and automation** - Encoding business know-how into Copilot enables faster analysis and content creation. Tasks that might take days of manual effort (searching documents, compiling data, writing drafts) can be done in minutes by the AI agent. This allows your analysts and subject-matter experts to focus on higher-value work while Copilot handles routine or information-heavy tasks.
 
-### Common scenarios
+- **Seamless integration with data sources** - Copilot Tuning can use the rich content already in your Microsoft 365 ecosystem. You can select knowledge sources like SharePoint libraries for fine-tuning. The model then learns from this tenant data to ensure the AI's responses are grounded in the organization's actual information. Because Copilot is integrated with Microsoft Graph, the agent can also reason over live enterprise data, giving you a powerful tool to query and summarize up-to-date information.
+
+### Scenarios
 
 Your organization can use Copilot Tuning for the following scenarios:
 
@@ -58,8 +60,6 @@ To successfully produce a custom AI model that captures your organization's expe
 - **Iterate with feedback** - Treat fine-tuning as an iterative process. Monitor how the agent performs in use. Regularly update the model with new data or corrections to keep it accurate. For example, if policies change or the model made mistakes, incorporate those updates and run another fine-tuning round.
 
 - **Know when to use retrieval vs. fine-tuning** - If your scenario is broad or the information changes daily, using Copilot's retrieval augmented generation (searching your content at query time) might be sufficient. Fine-tuning works best for well-defined, repetitive tasks where the model needs a deep understanding of static content or a particular style. If you're not sure which to use, start with Copilot's built-in capabilities; if you find the answers to be too generic, consider a Copilot Tuning project.
-
-By following these practices, can successfully produce a custom AI model that captures your organization's expertise. 
 
 ## Manage settings and governance
 
