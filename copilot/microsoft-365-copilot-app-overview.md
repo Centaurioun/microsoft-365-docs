@@ -4,7 +4,7 @@ description: Enterprise and company IT admins can use the Microsoft 365 Copilot 
 author: MandiOhlinger
 ms.author: mandia
 manager: laurawi
-ms.date: 05/13/2025
+ms.date: 05/14/2025
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.subservice: 
@@ -37,6 +37,9 @@ This article lists the app's features and benefits, and compares the features av
 This article applies to:
 
 - Microsoft 365 Copilot
+
+> [!TIP]
+> You can use a mobile device management (MDM) service like [Microsoft Intune](/intune/intune-service/fundamentals/what-is-intune) to deploy apps to devices in your organization. To learn more, see [add apps to Intune](/intune/intune-service/apps/apps-add) and [assign apps using Intune](/intune/intune-service/apps/apps-deploy).
 
 ## App features and benefits
 
