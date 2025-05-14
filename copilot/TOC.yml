@@ -58,10 +58,16 @@ items:
       href: microsoft-365-copilot-page.md
     - name: Pin Copilot Chat to the navigation bar
       href: pin-copilot.md
-    - name: Manage scheduled prompts
-      href: scheduled-prompts.md
     - name: Copilot in Microsoft 365 admin centers
       href: copilot-for-microsoft-365-admin.md
+    - name: Multiple account access for work and school documents
+      href: multiple-account-access.md  
+    - name: Manage prompts
+      items:
+      - name: Export prompts from Copilot Prompt Gallery
+        href: copilot-prompt-gallery-export-prompts.md
+      - name: Scheduled prompts
+        href: scheduled-prompts.md
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
     - name: Overview of AI in Microsoft Teams
@@ -82,6 +88,8 @@ items:
       href: microsoft-365-copilot-reports-for-admins.md
     - name: Copilot Prompt Gallery
       href: copilot-prompt-gallery.md
+    - name: Service plan diagnostic tool
+      href: microsoft-365-copilot-service-plans.md
 - name: "Trust: Data, Privacy, and Security"
   items:
     - name: Data, privacy, and security for Microsoft 365 Copilot
