@@ -1,5 +1,5 @@
 ---
-ms.date: 04/22/2025
+ms.date: 05/14/2025
 title: "Manage Copilot Pages, Copilot Notebooks, and Loop components in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
