@@ -19,7 +19,7 @@ sections:
     supertitle: Microsoft Learn
     title: Microsoft 365 Copilot hub 
     # size: small
-    summary: Your AI assistant for work. Microsoft 365 Copilot is embedded in the apps you already use every day, connected to your work data, and backed with enterprise-grade security, privacy, and compliance.
+    summary: Your AI assistant for work and school. Microsoft 365 Copilot is embedded in the apps you already use every day, connected to your work data, and backed with enterprise-grade security, privacy, and compliance.
     heroImage:
      componentType: hero-image
      lightImageSrc: /copilot/microsoft-365/media/microsoft-365-copilot-hub/hero-light-copilot-learning-hub-2x.png
@@ -32,7 +32,7 @@ sections:
     blocks:
       - componentType: card
         title: Microsoft 365 Copilot Chat
-        summary: Secure AI chat experience that's grounded on the web and can use your work files.
+        summary: Secure AI chat experience that's grounded in the web and can use your work files.
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-work-1.jpg
         links:
           - componentType: link
@@ -40,19 +40,19 @@ sections:
             text: Learn more
       - componentType: card
         title: Microsoft 365 Copilot
-        summary: Transform productivity with AI chat, amplified with Microsoft 365 data. Grounded on web and work data. 
+        summary: Transform productivity with AI chat, amplified with Microsoft 365 data. grounded in web and organizational data. 
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-work-2.jpg
         links:
           - componentType: link
             url: microsoft-365-copilot-overview.md
             text: Learn more
       - componentType: card
-        title: Extend Microsoft 365 Copilot
+        title: Agents
         summary: Customize Microsoft 365 Copilot with agents that can perform tasks, use tools, and connect to other systems.
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-work-3.jpg
         links:
           - componentType: link
-            url: /microsoft-365-copilot/extensibility/
+            url: /microsoft-365-copilot/extensibility/agents-overview
             text: Learn more
 
   # Video - Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
@@ -61,10 +61,6 @@ sections:
       - componentType: text
         title: Compare Microsoft 365 Copilot Chat and Microsoft 365 Copilot
         summary: Learn about the differences between Microsoft 365 Copilot Chat and Microsoft 365 Copilot—how they're grounded, what data they use, and what capabilities are included.
-        links:
-          - componentType: link
-            text: Learn more about the differences
-            url: https://support.microsoft.com/topic/what-s-the-difference-between-microsoft-365-copilot-chat-and-microsoft-365-copilot-5810b659-fbe0-48ee-9fe6-d731fe86cdeb
       - componentType: video
         src: https://learn-video.azurefd.net/vod/player?id=6ba0f4d6-fffc-479a-9698-a90e6e57e80f&embedUrl=https://learn.microsoft.com/microsoft-365-copilot
 
@@ -86,7 +82,7 @@ sections:
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-framework-2.jpg
         links:
           - componentType: link
-            url: microsoft-365-copilot-enablement-resources.md
+            url: https://adoption.microsoft.com/en-us/copilot/
             text: Adoption resources for Microsoft 365 Copilot
       - componentType: card
         title: Deliver impact
@@ -108,7 +104,7 @@ sections:
         imageUrl: media/microsoft-365-copilot-hub/copilot-hub-security-1.jpg
         links:
           - componentType: link
-            url: manage-public-web-access.md
+            url: /copilot/privacy-and-protections
             text: Security for Microsoft 365 Copilot Chat
           - componentType: link
             url: microsoft-365-copilot-privacy.md
@@ -144,9 +140,9 @@ sections:
         summary: See real-world scenarios that demonstrate how Copilot can deliver business value.
         url: https://adoption.microsoft.com/copilot-scenario-library/
       - componentType: summary-card
-        title: Copilot glossary
-        summary: Find common terms and definitions to help you better understand Copilot.
-        url: /copilot/glossary
+        title: AI and Copilot at Microsoft
+        summary: Learn from videos that show how Microsoft uses AI and Copilot to improve productivity.
+        url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78
       - componentType: summary-card
         title: Copilot Prompt Gallery
         summary: Explore examples of how to interact with Copilot across apps using natural language prompts.
