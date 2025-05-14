@@ -39,7 +39,9 @@ This article applies to:
 - Microsoft 365 Copilot
 
 > [!TIP]
-> You can use a mobile device management (MDM) service like [Microsoft Intune](/intune/intune-service/fundamentals/what-is-intune) to deploy apps to devices in your organization. To learn more, see [add apps to Intune](/intune/intune-service/apps/apps-add) and [assign apps using Intune](/intune/intune-service/apps/apps-deploy).
+> Microsoft 365 subscribers in your organization might get the Copilot app automatically.
+>
+> You can also use a mobile device management (MDM) service like [Microsoft Intune](/intune/intune-service/fundamentals/what-is-intune) to deploy apps to devices in your organization. To learn more, see [add apps to Intune](/intune/intune-service/apps/apps-add) and [assign apps using Intune](/intune/intune-service/apps/apps-deploy).
 
 ## App features and benefits
 
