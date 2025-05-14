@@ -14,7 +14,7 @@ ms.collection:
 - magic-ai-copilot
 - must-keep
 hideEdit: true
-ms.date: 05/13/2025
+ms.date: 05/14/2025
 ---
 
 # Multiple account access to Copilot for work and school documents
@@ -72,7 +72,7 @@ The end-user experience for blocked users viewing work and school documents is a
 
 ## Apps where multiple account access to Copilot is available
 
-As of May 13, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
+As of May 14, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
 
 ### On Android devices
 
