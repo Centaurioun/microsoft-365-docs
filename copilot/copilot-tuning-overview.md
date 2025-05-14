@@ -21,9 +21,11 @@ Microsoft 365 Copilot Tuning allows organizations to fine-tune AI models using t
 
 This overview explains how organizations can use Copilot Tuning to fine-tune their AI model and describes the admin center settings that are used to govern the feature. It also provides information about how users in the organization can use agents tuned on the AI model.
 
-## Key capabilities and scenarios for Copilot Tuning
+## Key capabilities and scenarios
 
-Copilot Tuning allows for fine-tuning of large language models (LLMs) through an **intuitive no-code Microsoft Copilot Studio interface**. Business analysts or subject-matter experts can use their domain knowledge to fine-tune AI models on relevant tenant data, allowing the model to learn the unique voice and procedures that are custom to the organization. For example, a legal department analyst can fine-tune a model using the firm's past case briefs and templates to create a contract drafting agent that writes documents that use the firm's style and terminology.
+Copilot Tuning allows for fine-tuning of large language models (LLMs) through an **intuitive no-code Microsoft Copilot Studio interface**. Business analysts or subject-matter experts can use their domain knowledge to fine-tune AI models on relevant tenant data, allowing the model to learn the unique voice and procedures that are custom to the organization. 
+
+For example, a legal department analyst can fine-tune a model using the firm's past case briefs and templates to create a contract drafting agent that writes documents that use the firm's style and terminology.
 
 Copilot Tuning can use the rich content already in your Microsoft 365 ecosystem. You can select knowledge sources like SharePoint libraries for fine-tuning. The model then learns from this tenant data (and even approved external data via Microsoft 365 Copilot connectors) to ensure the AI's responses are grounded in the organization's actual information. Because Copilot is integrated with Microsoft Graph, the agent can also reason over live enterprise data if needed, giving you a powerful tool to query and summarize up-to-date information.
 
@@ -31,29 +33,31 @@ The fine-tuned models are served as **specialized Copilot agents** tailored to b
 
 Encoding business know-how into Copilot enables faster analysis and content creation. Tasks that might take days of manual effort (searching documents, compiling data, writing drafts) can be done in minutes by the AI agent. This allows your analysts and subject-matter experts to focus on higher-value work while Copilot handles routine or information-heavy tasks.
 
+### Common scenarios
+
 Your organization can use Copilot Tuning for the following scenarios:
 
-- Q&A agents - Fine-tune a model on your internal knowledge bases (manuals, FAQs, procedure docs) to create a Q&A assistant. For example, you can create a Customer Service Knowledge Agent that instantly answers reps' questions using your company's product sharepoint.
+- **Q&A agents** - Fine-tune a model on your internal knowledge bases (manuals, FAQs, procedure docs) to create a Q&A assistant. For example, you can create a Customer Service Knowledge Agent that instantly answers reps' questions using your company's product sharepoint.
 
-- Document generation - Train Copilot on document templates and past reports to generate first drafts of complex documents. For example, you can create a Proposal Writer Agent that assembles sales proposals or legal contracts in the company-approved format and tone.
+- **Document generation** - Train Copilot on document templates and past reports to generate first drafts of complex documents. For example, you can create a Proposal Writer Agent that assembles sales proposals or legal contracts in the company-approved format and tone.
 
-- Summarization and analysis - Use Copilot Tuning to summarize large volumes of text (research papers, project reports, meeting transcripts) in context. For example, you can create a Project Analyst Agent that digests project documentation and produces status summaries or extracts key insights specific to your business metrics.
+- **Summarization and analysis** - Use Copilot Tuning to summarize large volumes of text (research papers, project reports, meeting transcripts) in context. For example, you can create a Project Analyst Agent that digests project documentation and produces status summaries or extracts key insights specific to your business metrics.
 
 ## Fine-tune your AI model
 
-To fine-tune your AI model:
+To successfully produce a custom AI model that captures your organization's expertise, you need to fine-tune your AI model. Apply the following best practices to tune your LLM:
 
-- Start with clear objectives - Identify the high-value task that the Copilot agent must perform (such as answering IT support questions or generating monthly finance reports). Copilot Tuning currently supports three primary task types: expert Q&A, document generation, and summarization.
+- **Start with clear objectives** - Identify the high-value task that the Copilot agent must perform (such as answering IT support questions or generating monthly finance reports). Copilot Tuning currently supports three primary task types: expert Q&A, document generation, and summarization.
 
-- Curate quality training data - Gather the most relevant and up-to-date documents for the task. The effectiveness of fine-tuning depends on good data. Use authoritative sources (policy docs, well-edited past work, and so on) and ensure that they represent the style or truth you want the AI to learn. Copilot Tuning provides tools to select SharePoint sites or specific document sets as knowledge sources. For Q&A tasks, you might prepare high-quality Q&A pairs or FAQs for training.
+- **Curate quality training data** - Gather the most relevant and up-to-date documents for the task. The effectiveness of fine-tuning depends on good data. Use authoritative sources (policy docs, well-edited past work, and so on) and ensure that they represent the style or truth you want the AI to learn. Copilot Tuning provides tools to select SharePoint sites or specific document sets as knowledge sources. For Q&A tasks, you might prepare high-quality Q&A pairs or FAQs for training.
 
-- Define clear instructions and constraints - When configuring the model in Copilot Studio, you can input instructions for the AI's tone and behavior. Provide clear guidelines - for example, "Use a professional and friendly tone" or "Only use information from official 2023 policy manual". You can also supply starter prompts or example questions to steer the model's responses. These help the AI understand context and style.
+- **Define clear instructions and constraints** - When configuring the model in Copilot Studio, you can input instructions for the AI's tone and behavior. Provide clear guidelines - for example, "Use a professional and friendly tone" or "Only use information from official 2023 policy manual". You can also supply starter prompts or example questions to steer the model's responses. These help the AI understand context and style.
 
-- Use preview and evaluation tools - Copilot Tuning includes evaluation steps. After you train the model, test it with sample queries or tasks. Copilot Studio allows you to compare your results against baseline answers. Review the outputs to ensure that they meet your expectations for accuracy and tone. If they don't, refine your training data or instructions and retrain.
+- **Use preview and evaluation tools** - Copilot Tuning includes evaluation steps. After you train the model, test it with sample queries or tasks. Copilot Studio allows you to compare your results against baseline answers. Review the outputs to ensure that they meet your expectations for accuracy and tone. If they don't, refine your training data or instructions and retrain.
 
-- Iterate with feedback: Treat fine-tuning as an iterative process. Monitor how the agent performs in use. Regularly update the model with new data or corrections to keep it accurate. For example, if policies change or the model made mistakes, incorporate those updates and run another fine-tuning round.
+- **Iterate with feedback** - Treat fine-tuning as an iterative process. Monitor how the agent performs in use. Regularly update the model with new data or corrections to keep it accurate. For example, if policies change or the model made mistakes, incorporate those updates and run another fine-tuning round.
 
-- Know when to use retrieval vs. fine-tuning: If your scenario is broad or the information changes daily, using Copilot's retrieval augmented generation (searching your content at query time) might be sufficient. Fine-tuning works best for well-defined, repetitive tasks where the model needs a deep understanding of static content or a particular style. If you're not sure which to use, start with Copilot's built-in capabilities; if you find the answers to be too generic, consider a Copilot Tuning project.
+- **Know when to use retrieval vs. fine-tuning** - If your scenario is broad or the information changes daily, using Copilot's retrieval augmented generation (searching your content at query time) might be sufficient. Fine-tuning works best for well-defined, repetitive tasks where the model needs a deep understanding of static content or a particular style. If you're not sure which to use, start with Copilot's built-in capabilities; if you find the answers to be too generic, consider a Copilot Tuning project.
 
 By following these practices, can successfully produce a custom AI model that captures your organization's expertise. 
 
