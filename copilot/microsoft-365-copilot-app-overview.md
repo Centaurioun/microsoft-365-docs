@@ -69,18 +69,18 @@ The following table shows the feature differences with a Microsoft 365 Copilot l
 | Feature | Copilot license | Microsoft 365 subscription |
 |---|---|---|
 | Search | ✅ | ✅ |
-| Chat | ✅ <br><br> Work-based and web-grounded chat <br/><br/>Automatically enabled in the Copilot app and is the Copilot app's default landing page | Web-grounded chat only; No work-based chat <br/><br/>Can pin the Chat app to the Copilot app. |
+| Chat | ✅ <br><br> Work-based and web-grounded chat <br/><br/>Automatically enabled in the Copilot app and is the Copilot app's default landing page | ✅ <br><br> Web-grounded chat only; No work-based chat <br/><br/>Can pin the Chat app to the Copilot app. |
 | Agents | ✅ | ✅ <br/><br/> Agents are metered. |
 | Pages | ✅ | ✅ |
 | Notebooks | ✅ | ❌ |
-| Create | ✅ <br/><br/> Use AI and template to create and edit images, posters, banners, videos, and more. | Use templates to create and edit images, posters, banners, videos, and more. |
+| Create | ✅ <br/><br/> Use AI and templates to create and edit images, posters, banners, videos, and more. | ✅ <br><br> Use templates to create and edit images, posters, banners, videos, and more. |
 | Apps | ✅ <br/><br/>Users can get and pin apps. | ✅ <br/><br/>Users can get and pin apps. |
 
 When users with a Microsoft 365 Copilot license open and sign in to the Copilot app, the app looks similar to the following image:
 
 :::image type="content" source="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-license.png" alt-text="Screenshot that shows the Microsoft 365 Copilot app with a Microsoft 365 Copilit license." lightbox="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-license.png":::
 
-When users with a Microsoft 365 subscription (no Copilot license) open and sign in to the Copilot app, the app looks similar to the following image:
+When users with a only a Microsoft 365 subscription (no Copilot license) open and sign in to the Copilot app, the app looks similar to the following image:
 
 :::image type="content" source="media/microsoft-365-copilot-app-overview/microsoft-365-no-copilot-license.png" alt-text="Screenshot that shows the Microsoft 365 Copilot app with only a Microsoft 365 subscription and not a Microsoft 365 Copilot license." lightbox="media/microsoft-365-copilot-app-overview/microsoft-365-no-copilot-license.png":::
 
