@@ -105,8 +105,6 @@ The following key admin features are available for Copilot Tuning:
 
 - **Deployment and monitoring** - When a model is fine-tuned and ready, it's deployed as an agent to users in the organization. Admins can control who has access to the agent via security groups, and can monitor agent usage via Copilot usage analytics dashboards.
 
-- **Auditing and logging** - Microsoft provides auditing and logging for Copilot interactions to help admins ensure that Copilot Tuning is used in a secure and compliant way. Admins can configure communication compliance policies to detect whether sensitive information is asked for or shared via Copilot.
-
 ## Related content
 
 - [Agents for Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/agents-overview)
