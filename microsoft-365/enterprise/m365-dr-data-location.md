@@ -1,5 +1,5 @@
 ---
-title: Data location card
+title: Learn More about The Data Location Card
 description: Learn More about The Data Location Card
 ms.author: fahasen
 author: fhasen-msft
@@ -19,4 +19,4 @@ ms.collection:
 - must-keep
 ---
 
-# Data Location
+# Learn More about The Data Location Card
