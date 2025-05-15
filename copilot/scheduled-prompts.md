@@ -68,7 +68,7 @@ If you disable this feature after someone in your organization has already used 
 
 ## Inventory scheduled prompts
 
-For admins with Global Administrator and Power Platform Administrator roles, you can use a PowerShell script to inventory the scheduled prompts created by users in your organization. For instructions on how to do this, see [Copilot Actions admin scripts guide](/includes/copilot-admin-actions-scripts).
+For admins with Global Administrator and Power Platform Administrator roles, you can use a PowerShell script to inventory the scheduled prompts created by users in your organization. For instructions on how to do this, see [Copilot Actions admin scripts guide](./includes/copilot-admin-actions-scripts.md).
 
 ## User controls
 
