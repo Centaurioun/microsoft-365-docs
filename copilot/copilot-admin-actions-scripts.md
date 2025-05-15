@@ -1,4 +1,5 @@
 ---
+title: "Copilot Actions admin scripts guide"
 author: camillepack
 ms.author: camillepack
 manager: dansimp
@@ -6,7 +7,7 @@ ms.service: microsoft-365-copilot
 ms.topic: include
 description: Learn about using Copilot Actions admin scripts and the prerequisites and steps for various operations.
 ms.date: 05/15/2025
-ROBOTS: NOINDEX, NOFOLLOW 
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Copilot Actions admin scripts guide
