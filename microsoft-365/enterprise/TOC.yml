@@ -328,7 +328,7 @@ items:
               href: m365-dr-workload-other.md
         - name: Data Location
           items:
-            - name: Learn More about The Data Location Card
+            - name: Data location card
               href: m365-dr-data-location.md
             - name: Legacy Move Program
               href: m365-dr-legacy-move-program.md
