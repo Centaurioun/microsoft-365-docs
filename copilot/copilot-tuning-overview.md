@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Copilot Tuning Overview"
+title: "Microsoft 365 Copilot Tuning Overview (preview)"
 f1.keywords:
 ms.author: lauragra
 author: lauragra
@@ -15,11 +15,14 @@ ms.collection:
 description: "Learn about Microsoft 365 Copilot Tuning."
 ---
 
-# Microsoft 365 Copilot Tuning overview
+# Microsoft 365 Copilot Tuning overview (preview)
 
 Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) by using their own tenant data. These fine-tuned models power [declarative agents](/microsoft-365-copilot/extensibility/overview-declarative-agent) that can perform domain-specific tasks based on the organization's unique knowledge. All training and AI processing happen within your Microsoft 365 tenant, so your data remains secure and governed by your existing compliance controls. The result is an AI assistant that behaves like an expert team member, providing tailored assistance in line with your organization's content and rules.
 
 This article explains how organizations can use Copilot Tuning to create task-specific fine-tuned LLMs, how users can build agents on these fine-tuned models, and how admins can govern the feature.
+
+> [!NOTE]
+> Copilot Tuning is currently in prerelease and is not yet available for public preview.
 
 ## Key capabilities and scenarios
 
@@ -97,11 +100,11 @@ Copilot Tuning provides tenant-wide settings, security, and governance features 
 
 The following key admin features are available for Copilot Tuning:
 
-- **Access control** - AI admins can enable Copilot Tuning for their organization or for a specific subset of users. For example, an admin might enable Copilot Tuning only for the R&D and Legal departments initially, and designate certain users in those teams to create fine-tuned models and specialized agents. After a model is trained and deployed, the AI admin controls who has access to the trained model.
+- **Access control** - AI admins can enable Copilot Tuning for their organization or for a specific subset of users. For example, an admin might enable Copilot Tuning only for the R&D and Legal departments, and designate certain users in those teams to create fine-tuned models and specialized agents. After a model is trained and deployed, the AI admin controls who has access to the trained model.
 
 - **Microsoft 365 admin center governance** - Admins can monitor fine-tuning projects and agents via the Copilot management section in the Microsoft 365 admin center. They can view which custom models are deployed and approve or revoke agents, for example if a model becomes obsolete.
 
-- **Security and compliance** - Copilot Tuning is built with enterprise-grade security. Model training occurs in a tenant-isolated environment, and the resulting model inherits the access permissions of the underlying data. No customer data is transmitted to external services during training; the fine-tuning happens within the secure cloud that's associated with your tenant. Copilot Tuning excludes any files that users of the tuned model don't have access to and suggests security groups to add to its training data to maximize its knowledge.
+- **Security and compliance** - Copilot Tuning is built with enterprise-grade security. Model training occurs in a tenant-isolated environment, and the resulting model inherits the access permissions of the underlying data. No customer data is transmitted to external services during training; the fine-tuning happens within the secure cloud that's associated with your tenant. Copilot Tuning excludes any files that the security group or groups applied to the model don't have permissions to access. It also suggests security groups to add to its training data to maximize its knowledge.
 
 - **Deployment and monitoring** - When a model is fine-tuned and ready, it's deployed as an agent to users in the organization. Admins can control who has access to the agent via security groups, and can monitor agent usage via Copilot usage analytics dashboards.
 
