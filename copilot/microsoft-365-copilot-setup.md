@@ -26,7 +26,7 @@ appliesto:
 
 Copilot works alongside popular Microsoft 365 Apps, like Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 
-✅ As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), use this article to enable security features, configure the update channel, and assign Copilot licenses to users.
+As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), use this article to enable some security features, configure the update channel, and assign Copilot licenses to users.
 
 This article provides guidance for administrators on preparing their organization for Microsoft 365 Copilot. It covers foundational implementation and readiness activities, licensing, and steps to ensure a secure and compliant deployment.
 
@@ -230,7 +230,7 @@ To enhance data security, enable Microsoft 365 Copilot Chat for all users in you
 ## More resources
 
 - [Microsoft 365 Copilot setup guide in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide)
-- [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot)
+- [Microsoft 365 Copilot help and learning](https://support.microsoft.com/copilot-skilling)
 - [Microsoft 365 Copilot – Microsoft Adoption](https://adoption.microsoft.com/Copilot/)
 - [Microsoft 365 Copilot - Microsoft Community Hub](https://techcommunity.microsoft.com/category/Microsoft365Copilot)
 - [Microsoft 365 Copilot technical documentation hub](index.yml)
