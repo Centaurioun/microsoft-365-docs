@@ -326,10 +326,14 @@ items:
               href: m365-dr-workload-purview.md
             - name: Other Services
               href: m365-dr-workload-other.md
-        - name: Legacy Move Program
-          href: m365-dr-legacy-move-program.md
-        - name: Where is my data stored? 
-          href: o365-data-locations.md
+        - name: Data Location
+          items:
+            - name: Learn More about The Data Location Card
+              href: m365-dr-data-location.md
+            - name: Legacy Move Program
+              href: m365-dr-legacy-move-program.md
+            - name: Where is my data stored? 
+              href: o365-data-locations.md
 
 - name: Identity
   items: 
