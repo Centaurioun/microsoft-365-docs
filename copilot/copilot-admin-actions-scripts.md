@@ -17,7 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 ### General Prerequisites
 
 - Have the Global Administrator and Power Platform Administrator roles assigned to your user in Azure portal for the tenant on which you want to do operations.
-- Use [PowerShell v7.0+](powershell/scripting/install/installing-powershell)
+- Use [PowerShell v7.0+](/powershell/scripting/install/installing-powershell)
 - Have `Az.Accounts` and `Microsoft.PowerApps.Administration.PowerShell` [modules installed](/powershell/module/powershellget/install-module).
 - Have all scripts in the same folder and run the scripts while being in that folder.
 
