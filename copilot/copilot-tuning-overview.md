@@ -17,15 +17,13 @@ description: "Learn about Microsoft 365 Copilot Tuning."
 
 # Microsoft 365 Copilot Tuning overview
 
-Microsoft 365 Copilot Tuning allows organizations to fine-tune AI models by using their own tenant data. These fine-tuned models power [declarative agents](/microsoft-365-copilot/extensibility/overview-declarative-agent) that can perform domain-specific tasks based on the organization's unique knowledge. All training and AI processing happen within your Microsoft 365 tenant, so your data remains secure and governed by your existing compliance controls. The result is an AI assistant that behaves like an expert team member, providing tailored assistance in line with your organization's content and rules.
+Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) by using their own tenant data. These fine-tuned models power [declarative agents](/microsoft-365-copilot/extensibility/overview-declarative-agent) that can perform domain-specific tasks based on the organization's unique knowledge. All training and AI processing happen within your Microsoft 365 tenant, so your data remains secure and governed by your existing compliance controls. The result is an AI assistant that behaves like an expert team member, providing tailored assistance in line with your organization's content and rules.
 
-Copilot Tuning trains Copilot to talk, think, and work like your organization - using your content, terminology, and processes.
-
-This article explains how organizations can use Copilot Tuning to fine-tune their AI model, how admins can govern the feature, and how users can take advantage of agents built on fine-tuned models.
+This article explains how organizations can use Copilot Tuning to create task-specific fine-tuned LLMs, how users can build agents on these fine-tuned models, and how admins can govern the feature.
 
 ## Key capabilities and scenarios
 
-Copilot Tuning allows for fine-tuning of large language models (LLMs) through an intuitive UI interface. Business analysts or subject-matter experts can use their domain knowledge to fine-tune AI models on relevant tenant data, allowing the model to learn the unique voice and procedures that are custom to the organization. For example, a legal department analyst can fine-tune a model using the firm's past case briefs and templates to create a contract drafting agent that writes documents that use the firm's style and terminology.
+Copilot Tuning allows for fine-tuning of large language models (LLMs) through an intuitive UI interface. Business analysts or subject-matter experts can use their domain knowledge to fine-tune LLMs on relevant tenant data, allowing the model to learn the unique voice and procedures that are custom to the organization. For example, a legal department analyst can fine-tune a model using the firm's past case briefs and templates to create a contract drafting agent that writes documents that use the firm's style and terminology.
 
 Copilot Tuning provides the following key capabilities and benefits:
 
@@ -45,47 +43,15 @@ Your organization can use Copilot Tuning for the following scenarios:
 
 - **Summarization and analysis** - Use Copilot Tuning to summarize large volumes of text (research papers, project reports, meeting transcripts) in context. For example, you can create a Project Analyst Agent that digests project documentation and produces status summaries or extracts key insights specific to your business metrics.
 
-## Admin settings and governance
+## Fine-tune your LLM
 
-Copilot Tuning provides tenant-wide settings, security, and governance features to enable admins to set up the environment with the appropriate guardrails in place.
-
-The following key admin features are available for Copilot Tuning:
-
-- **Access control** - Admins can enable Copilot Tuning for their organization or for a specific subsets of users. For example, an admin might enable Copilot Tuning only for the R&D and Legal departments initially, and designate certain users in those teams to create fine-tuned models and specialized agents. Admins can also configure which data sources are available for fine-tuning - for example, specific SharePoint repositories or Microsoft 365 Copilot connectors to specific external systems.
-
-- **Microsoft 365 admin center governance** - Admins can monitor fine-tuning projects and agents via the Copilot management section in the Microsoft 365 admin center. They can view which custom models are deployed and approve or revoke agents, for example if a model becomes obsolete.
-
-- **Security and compliance** - Copilot Tuning is built with enterprise-grade security. Model training occurs in a tenant-isolated environment, and the resulting model inherits the access permissions of the underlying data. No customer data is transmitted to external services during training; the fine-tuning happens within the secure cloud that's associated with your tenant. Copilot also honors document permissions; responses won't include information a user doesn't have access to. Responsible AI (RAI) principles are applied via standard validation checks that admins can also customize in the admin center. Any data output by an agent can inherit sensitivity labels set via Microsoft Purview, and retention policies can also apply to content generated by Copilot.
-
-- **Deployment and monitoring** - When a model is fine-tuned and ready, it is deployed as an agent to users in the organization. Admins can control who has access to the agent via security groups, and can monitor agent usage via Copilot usage analytics dashboards.
-
-- **Auditing and logging** - Microsoft provides auditing and logging for Copilot interactions to help admins ensure that Copilot Tuning is used in a secure and compliant way. Admins can configure communication compliance policies to detect whether sensitive information is asked for or shared via Copilot.
-
-<!--
-Tips and best practices for Administrators: 
-
-Check License and Eligibility: Copilot Tuning is an add-on for organizations with Microsoft 365 Copilot. Ensure your tenant meets any preview or program requirements (for early access programs, Microsoft may require a certain number of Copilot licenses, etc.)[2]. Only enable Copilot Tuning for users who are properly licensed and trained in its use. 
-
-Configure Roles Carefully: When you enable Copilot Tuning, thoughtfully assign the "Model Maker" (Business Analyst) role to those who will fine-tune models, and limit it to the right people. Likewise, determine which users can create agents from those models (in many cases, the same people or a subset). By using Azure security groups or a similar mechanism, you can manage these permissions at scale[6]. For example, a group "Copilot Tuning Users" for those allowed to consume or deploy the agents. 
-
-Start Small and Expand: It's wise to pilot Copilot Tuning with a specific department or scenario first. Enable the feature for a small group of users and closely monitor the process. Evaluate the outcomes and gather feedback from the Business Analyst and a sample of end-users. Once you're confident in the governance and value, you can scale up to more teams or enterprise-wide. 
-
-Review Data Sources: As an admin, you might need to assist in connecting data sources. Ensure that the content needed for fine-tuning is available and accessible. For instance, if an analyst needs to fine-tune using a file share outside of M365, consider ingesting that data into SharePoint or using a Graph Connector if available. Also, put guardrails: maybe exclude highly confidential libraries from being used in training if that's a concern. You have control to allow or restrict what data can be mined for AI training. 
-
-Educate and Support: Provide training to Business Analysts and Information Workers on your company's AI policies. Make sure they know what types of data are approved for use, and how to handle any sensitive information. Encourage them to come to you if they are unsure about a dataset. Also, stay informed via Microsoft's documentation on any new admin controls for Copilot - Microsoft may release updates that allow even finer control (for example, to set cost budgets, or to review training content before it's processed). 
-
-By following these practices, Administrators can maintain a secure and well-governed Copilot Tuning environment. In effect, the Administrator's role is to empower the business to get the most out of AI, while ensuring that all usage aligns with IT policies and regulatory obligations. With the admin's oversight, Business Analysts and Information Workers can confidently innovate, knowing the necessary safety nets are in place. The collaboration between IT and business here is key - Admins provide the platform and guardrails, and the business provides the knowledge to train the AI. Together, they bring about trustworthy, enterprise-ready Copilot agents.
--->
-
-## Fine-tune your AI model
-
-To successfully produce a custom AI model that captures your organization's expertise, you need to fine-tune your AI model.
+To successfully produce a task-specific agent that captures your organization's expertise, you need to fine-tune your LLM.
 
 Apply the following best practices to tune your LLM:
 
-- **Start with clear objectives** - Identify the high-value task that the Copilot agent must perform (such as answering IT support questions or generating monthly finance reports). Copilot Tuning currently supports three primary task types: expert Q&A, document generation, and summarization.
+- **Start with clear objectives** - Identify the high-value task that the Copilot agent must perform (such as answering IT support questions or generating monthly finance reports). Copilot Tuning currently supports three primary task types: expert Q&A, document generation, and document summarization.
 
-- **Curate quality training data** - Gather the most relevant and up-to-date documents for the task. The effectiveness of fine-tuning depends on good data. Use authoritative sources (policy docs, well-edited past work, and so on) and ensure that they represent the style or truth you want the AI to learn. Copilot Tuning provides tools to select SharePoint sites or specific document sets as knowledge sources. For Q&A tasks, you might prepare high-quality Q&A pairs or FAQs for training.
+- **Curate quality training data** - Gather the most relevant and up-to-date documents for the task. The effectiveness of fine-tuning depends on good data. Use authoritative sources (policy docs, well-edited past work, and so on) and ensure that they represent the style or truth you want the AI to learn. Copilot Tuning provides tools to select SharePoint sites or specific document sets as knowledge sources. For example, for document generation and summarization tasks, you need to provide a mapping of high-quality documents and summaries to train the LLM.
 
 - **Define clear instructions and constraints** - When configuring the model in Copilot Studio, you can input instructions for the AI's tone and behavior. Provide clear guidelines - for example, "Use a professional and friendly tone" or "Only use information from official 2023 policy manual". You can also supply starter prompts or example questions to steer the model's responses. These help the AI understand context and style.
 
@@ -95,13 +61,11 @@ Apply the following best practices to tune your LLM:
 
 - **Know when to use retrieval vs. fine-tuning** - If your scenario is broad or the information changes daily, using Copilot's retrieval augmented generation (searching your content at query time) might be sufficient. Fine-tuning works best for well-defined, repetitive tasks where the model needs a deep understanding of static content or a particular style. If you're not sure which to use, start with Copilot's built-in capabilities; if you find the answers to be too generic, consider a Copilot Tuning project.
 
-## Use agents tuned on AI models
+## Use agents tuned on LLMs
 
-After you've fine tuned your model, users can create and deploy an agent based on that model by using [Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder).
+After you've fine-tuned your model, users can create and deploy an agent based on that model by using Copilot Studio agent builder.
 
-Users interact with agents based on fine-tuned models just like they interact with Copilot - either via the Microsoft 365 Copilot app or Copilot Chat in Teams or another app. They can ask natural language questions and the agent responds with fine-tuned intelligence. 
-
-Agents can also automate tasks for users. You can combine the fine-tuned model with Power Automate flows or other [actions in Copilot Studio](/microsoft-365-copilot/extensibility/overview-business-applications) to orchestrate multi-step workflows.
+Users interact with agents based on fine-tuned models just like they interact with Copilot - either via the Microsoft 365 Copilot app or Copilot Chat in Teams or another app. They can ask natural language questions, and the agent responds based on its fine-tuned knowledge.
 
 Agents based on fine-tuned models provide the following benefits to your organization:
 
@@ -125,7 +89,23 @@ Apply the following best practices when creating agents based on fine-tuned mode
 
 - **Apply security best practices** - Don't ask fine-tuned agents to provide information that should be confidential, and handle agent responses in accordance with your organization's policies.
 
-- **Provide feedback to further tune agents** - Use the feedback mechanism to train or tweak the fine-tuned agent to improve its performance. The feedback can be made available to the owner of the fine-tuned model in Copilot Studio. Providing regular feedback will help the agent to continuously improve.
+- **Provide feedback to further tune agents** - Use the feedback mechanism to train or tweak the fine-tuned agent to improve its performance. Providing regular feedback will help the agent to continuously improve.
+
+## Admin settings and governance
+
+Copilot Tuning provides tenant-wide settings, security, and governance features to enable admins to set up the environment with the appropriate guardrails in place.
+
+The following key admin features are available for Copilot Tuning:
+
+- **Access control** - AI admins can enable Copilot Tuning for their organization or for a specific subset of users. For example, an admin might enable Copilot Tuning only for the R&D and Legal departments initially, and designate certain users in those teams to create fine-tuned models and specialized agents. After a model is trained and deployed, the AI admin controls who has access to the trained model.
+
+- **Microsoft 365 admin center governance** - Admins can monitor fine-tuning projects and agents via the Copilot management section in the Microsoft 365 admin center. They can view which custom models are deployed and approve or revoke agents, for example if a model becomes obsolete.
+
+- **Security and compliance** - Copilot Tuning is built with enterprise-grade security. Model training occurs in a tenant-isolated environment, and the resulting model inherits the access permissions of the underlying data. No customer data is transmitted to external services during training; the fine-tuning happens within the secure cloud that's associated with your tenant. Copilot Tuning also honors document permissions; responses won't include information a user doesn't have access to. Responsible AI (RAI) principles are applied via standard validation checks that admins can also customize in the admin center. Any data output by an agent can inherit sensitivity labels set via Microsoft Purview, and retention policies can also apply to content generated by Copilot.
+
+- **Deployment and monitoring** - When a model is fine-tuned and ready, it is deployed as an agent to users in the organization. Admins can control who has access to the agent via security groups, and can monitor agent usage via Copilot usage analytics dashboards.
+
+- **Auditing and logging** - Microsoft provides auditing and logging for Copilot interactions to help admins ensure that Copilot Tuning is used in a secure and compliant way. Admins can configure communication compliance policies to detect whether sensitive information is asked for or shared via Copilot.
 
 ## Related content
 
