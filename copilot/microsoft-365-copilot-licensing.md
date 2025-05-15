@@ -21,7 +21,9 @@ appliesto:
 
 # License plans for Microsoft 365 Copilot
 
-[Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that helps users with everyday tasks. As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), make sure you have the right subscription plan.
+[Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that helps users with everyday tasks.
+
+✅ As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), make sure you have the right Microsoft 365 subscription plan.
 
 Microsoft 365 Copilot is available as an [add-on plan](https://www.microsoft.com/microsoft-365/microsoft-copilot) with one of the licensing prerequisites listed in this article. The [Microsoft 365 Copilot service description guide](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) is also a good resource.
 

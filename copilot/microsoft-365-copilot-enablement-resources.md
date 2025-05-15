@@ -33,7 +33,7 @@ This article applies to:
 
 ✅ **Use the Microsoft 365 Copilot Optimization Assessment**
 
-The [Microsoft 365 Copilot Optimization Assessment](https://www.microsoft.com/solutionassessments/) is a free assessment that helps you understand your organization's readiness for Microsoft 365 Copilot. It evaluates your data governance maturity and data security controls.
+The [Microsoft 365 Copilot Optimization Assessment](https://www.microsoft.com/solutionassessments/) can help you understand your organization's readiness for Microsoft 365 Copilot. It evaluates your data governance maturity and data security controls.
 
 Microsoft recommends you complete the assessment before deploying Microsoft 365 Copilot in your organization. Based on the outcomes of the assessment, you can determine your path forward so your organization is ready for Copilot.
 
