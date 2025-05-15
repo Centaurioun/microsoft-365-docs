@@ -17,9 +17,11 @@ description: "Learn about Microsoft 365 Copilot Tuning."
 
 # Microsoft 365 Copilot Tuning overview
 
-Microsoft 365 Copilot Tuning allows organizations to fine-tune AI models using their own tenant data and use these models to create custom  agents for their business. Copilot Tuning trains Copilot to talk, think, and work like your organization - using your content, terminology, and processes. These fine-tuned models power [declarative agents](/microsoft-365-copilot/extensibility/overview-declarative-agent) that can perform domain-specific tasks with accuracy and context that reflect your business's unique knowledge. All training and AI processing happen entirely within your Microsoft 365 tenant, so your data remains secure and governed by your existing compliance controls. The result is an AI assistant that behaves like an expert team member, providing tailored assistance in line with your organization's content and rules.
+Microsoft 365 Copilot Tuning allows organizations to fine-tune AI models by using their own tenant data. These fine-tuned models power [declarative agents](/microsoft-365-copilot/extensibility/overview-declarative-agent) that can perform domain-specific tasks based on the organization's unique knowledge. All training and AI processing happen within your Microsoft 365 tenant, so your data remains secure and governed by your existing compliance controls. The result is an AI assistant that behaves like an expert team member, providing tailored assistance in line with your organization's content and rules.
 
-This overview explains how organizations can use Copilot Tuning to fine-tune their AI model and describes the admin center settings that are used to govern the feature. It also provides information about how users in the organization can use agents tuned on the AI model.
+Copilot Tuning trains Copilot to talk, think, and work like your organization - using your content, terminology, and processes.
+
+This article explains how organizations can use Copilot Tuning to fine-tune their AI model, and how admins can govern the feature and users can take advantage of agents built on fine-tuned models.
 
 ## Key capabilities
 
