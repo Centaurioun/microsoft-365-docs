@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 02/11/2025
+ms.date: 05/15/2025
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -14,14 +14,18 @@ ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
-description: "See the Microsoft 365 subscription plans that let you add-on Microsoft 365 Copilot licenses."
+description: Enterprise and company IT admins can add Microsoft 365 Copilot to their  Microsoft 365 subscription plans. This article describes the Microsoft 365 Copilot license plans that let you add Copilot and how to add them to your subscription.
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
 # License plans for Microsoft 365 Copilot
 
-Microsoft 365 Copilot is available as an [add-on plan](https://www.microsoft.com/microsoft-365/microsoft-copilot) with one of the licensing prerequisites listed in this article. To learn more about Microsoft 365 Copilot, see [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md) and [Microsoft 365 Copilot architecture and how it works](microsoft-365-copilot-architecture.md).
+[Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that helps users with everyday tasks.
+
+As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), make sure you have the right Microsoft 365 subscription plan.
+
+Microsoft 365 Copilot is available as an [add-on plan](https://www.microsoft.com/microsoft-365/microsoft-copilot) with one of the licensing prerequisites listed in this article. The [Microsoft 365 Copilot service description guide](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) is also a good resource.
 
 Use the information in this article to determine if your organization has the correct Microsoft 365 subscription plan to add Microsoft 365 Copilot. If you or your account doesn't have the right plan, you can purchase a new plan or possibly upgrade your existing plan.
 
@@ -37,6 +41,9 @@ To learn more, see:
 This article applies to:
 
 - Microsoft 365 Copilot
+
+> [!TIP]
+> To learn more about Microsoft 365 Copilot, see [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md) and [Microsoft 365 Copilot architecture and how it works](microsoft-365-copilot-architecture.md).
 
 ## Microsoft 365 Copilot license
 
@@ -140,6 +147,6 @@ For more information, see:
 
 ## Related articles
 
+- [Microsoft 365 Copilot adoption guide and overview for IT admins](microsoft-365-copilot-reports-for-admins.md)
 - [Which Copilot is right for my organization?](which-copilot-for-your-organization.md)
-- [Microsoft 365 Copilot requirements](microsoft-365-copilot-requirements.md)
 - [Start using Copilot in your Microsoft 365 apps](https://copilot.cloud.microsoft/prompts)
