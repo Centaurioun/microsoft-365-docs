@@ -140,7 +140,7 @@ sections:
         summary: See real-world scenarios that demonstrate how Copilot can deliver business value.
         url: https://adoption.microsoft.com/copilot-scenario-library/
       - componentType: summary-card
-        title: AI and Copilot at Microsoft
+        title: AI and Copilot videos
         summary: Learn from videos that show how Microsoft uses AI and Copilot to improve productivity.
         url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78
       - componentType: summary-card
