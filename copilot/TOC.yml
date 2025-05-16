@@ -32,16 +32,17 @@ items:
       href: microsoft-365-copilot-blueprint-oversharing.md
 - name: Deploy and enable Microsoft 365 Copilot
   items: 
-    - name: Set up and assign licenses
-      href: microsoft-365-copilot-setup.md
-    - name: Requirements and prerequisites
-      href: microsoft-365-copilot-requirements.md
+    - name: Adoption guide and overview
+      href: microsoft-365-copilot-enablement-resources.md
     - name: License options
       href: microsoft-365-copilot-licensing.md
-    - name: Enable users and welcome email
+    - name: App and network requirements
+      href: microsoft-365-copilot-requirements.md
+    - name: Set up Copilot and assign licenses
+      href: microsoft-365-copilot-setup.md
+    - name: Welcome email for users
       href: microsoft-365-copilot-enable-users.md  
-    - name: Adoption resources
-      href: microsoft-365-copilot-enablement-resources.md
+
 - name: Pay-as-you-go for Microsoft 365 Copilot
   items:
     - name: Pay-as-you-go overview
