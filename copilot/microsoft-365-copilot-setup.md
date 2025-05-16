@@ -155,9 +155,11 @@ To learn more, see:
 
 ✅ **Configure more Copilot features**
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com) > **Copilot**, there are more Copilot features that benefit admins and settings you can configure that benefit your organization.
+You can manage settings using the Copilot Control System, which provides centralized access to admin features and controls that benefit your organization.
 
-You can:
+To access it, go to the [Microsoft 365 admin center](https://admin.microsoft.com)> **Copilot**.
+
+With the Copilot Control System, you can:
 
 - View the status of Copilot license assignments
 - Access the latest information on Copilot
