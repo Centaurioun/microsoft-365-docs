@@ -24,6 +24,8 @@ Microsoft 365 Copilot Tuning allows organizations to fine-tune large language mo
 
 This article explains how organizations can use Copilot Tuning to create task-specific fine-tuned LLMs, how users can build agents on these fine-tuned models, and how IT administrators can govern the feature.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=72aaa9a5-9d49-4373-8356-bb55a5208ac3]
+
 ## Key capabilities and scenarios
 
 Copilot Tuning allows for fine-tuning of LLMs through an intuitive no-code UI. Business analysts or subject-matter experts can use their domain knowledge to fine-tune LLMs on relevant tenant data, allowing the model to learn their unique voice and procedures that are custom to the organization. For example, a legal department analyst can fine-tune a model using the firm's past case briefs and templates to create a contract drafting agent that writes documents using the firm's unique style and terminology.
@@ -113,6 +115,24 @@ The following key admin features are available for Copilot Tuning:
     Any Microsoft Graph data returned in Copilot responses also honors document permissions; responses don't include information a user doesn't have access to.
 
 - **Deployment and monitoring** - When a model is fine-tuned and ready, it's deployed as an agent to users in the organization. Admins can control who has access to the agent via security groups and can monitor agent usage via Copilot usage analytics dashboards.
+
+## Disclaimer
+
+The tenant administrator is responsible for ensuring that your use of this product complies with all applicable data protection, privacy, and intellectual property laws. This includes meeting your obligations as a Data Controller under regulations such as the GDPR or CCPA.
+
+### Data Controller Obligations
+
+- You are responsible for how data is collected, stored, and used within your tenant environment.
+- You must ensure that your data practices meet legal requirements for transparency, consent, access, and deletion.
+- Any outputs generated from this system are your responsibility. You are expected to verify their accuracy, appropriateness, and compliance before use.
+
+### Copyright and Model Training
+
+- If you choose to train a custom model using your own data, you must ensure that you have the appropriate rights or licenses for any copyrighted materials included in the training set.
+- Copyright protection will not apply to models trained using unauthorized copyrighted content. You assume full responsibility for any such use.
+Data Deletion
+- If a user whose data has been used in training a model submits a valid deletion request under GDPR (or similar regulations), you will be required to retrain the model.
+- Selectively removing individual user data from a trained model is not technically possible.
 
 ## Related content
 
