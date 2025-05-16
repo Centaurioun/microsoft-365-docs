@@ -20,19 +20,19 @@ description: "Learn how to use Microsoft 365 Copilot Tuning to create task-speci
 > [!NOTE]
 > Copilot Tuning is in prerelease and is not yet publicly available. The features described in this content are subject to change.
 
-Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) by using their own tenant data. These fine-tuned models power [declarative agents](/microsoft-365-copilot/extensibility/overview-declarative-agent) that can perform domain-specific tasks based on the organization's unique knowledge. All training and AI processing happens within your Microsoft 365 tenant, so your data remains secure and governed by your existing compliance controls. The result is an AI assistant that behaves like an expert team member, providing tailored assistance in line with your organization's content and rules.
+Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) by using their own tenant data. These fine-tuned models power [agents](/microsoft-365-copilot/extensibility/overview-declarative-agent) that can perform domain-specific tasks based on the organization's unique knowledge. All training and AI processing happens within your Microsoft 365 tenant, so your data remains secure and governed by your existing compliance controls. The result is an AI assistant that behaves like an expert team member, providing tailored assistance in line with your organization's content and rules.
 
-This article explains how organizations can use Copilot Tuning to create task-specific fine-tuned LLMs, how users can build agents on these fine-tuned models, and how admins can govern the feature.
+This article explains how organizations can use Copilot Tuning to create task-specific fine-tuned LLMs, how users can build agents on these fine-tuned models, and how IT administrators can govern the feature.
 
 ## Key capabilities and scenarios
 
-Copilot Tuning allows for fine-tuning of LLMs through an intuitive UI interface. Business analysts or subject-matter experts can use their domain knowledge to fine-tune LLMs on relevant tenant data, allowing the model to learn their unique voice and procedures that are custom to the organization. For example, a legal department analyst can fine-tune a model using the firm's past case briefs and templates to create a contract drafting agent that writes documents using the firm's unique style and terminology.
+Copilot Tuning allows for fine-tuning of LLMs through an intuitive no-code UI. Business analysts or subject-matter experts can use their domain knowledge to fine-tune LLMs on relevant tenant data, allowing the model to learn their unique voice and procedures that are custom to the organization. For example, a legal department analyst can fine-tune a model using the firm's past case briefs and templates to create a contract drafting agent that writes documents using the firm's unique style and terminology.
 
 Copilot Tuning provides the following key capabilities and benefits:
 
 - **No-code model fine-tuning** - Fine-tune LLMs on internal data by using an intuitive interface in Microsoft Copilot Studio.
 
-- **Domain-specific agents** - Build specialized Copilot agents based on your fine-tuned models that are tailored to business tasks. You can create agents for scenarios like expert Q&A, proposal generation, or report summarization that behave like an expert in that domain. The agent produces results with the appropriate tone, vocabulary, and level of detail for the organization. 
+- **Domain-specific agents** - Build specialized Copilot agents based on your fine-tuned models that are tailored to business tasks. You can create agents for scenarios like expert Q&A, proposal generation, or report summarization that behave like an expert in that domain. The agent produces results with the appropriate tone, vocabulary, and level of detail for the organization.
 
 - **More intuitive insights and automation** - Encoding your organization's business know-how into Copilot enables analysis and content creation tuned to your organization. Tasks that might take days of manual effort (searching documents, compiling data, writing drafts) can be done in minutes by the agent. This allows your analysts and subject-matter experts to focus on higher-value work while Copilot handles routine or information-heavy tasks.
 
