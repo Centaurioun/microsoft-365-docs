@@ -114,9 +114,9 @@ The following plans are only available using [Enrollment for Education Solutions
 > [!NOTE]
 > Customers with Education or Business subscriptions that don't include Teams can purchase Microsoft 365 Copilot licenses.
 
-## Microsoft 365 Copilot Chat license
+## Microsoft 365 Copilot Chat
 
-[Copilot Chat](/copilot/overview) is the popular prompt and response experience. There are two Copilot Chat options available: web-based chat and work-based chat.
+[Copilot Chat](/copilot/overview) is an AI prompt and response experience that's automatically included and available to organizations that have a Microsoft 365 subscription. There are two Copilot Chat options available: web-based chat and work-based chat.
 
 - Web-based chat:
 
