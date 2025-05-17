@@ -112,7 +112,9 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
     > The dynamic rule feature is in preview.
 
     c. Under **Using filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy doesn't update dynamically if the groups or distribution list are updated later.
-
+    > [!NOTE]
+    > Members of security groups that are shared mailboxes are currently not added. You'll need to add shared mailboxes manually.
+   
     The rule-based feature for bulk addition of mailboxes via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example, groups or lists don't dynamically update in the system if users are added or removed from the original security group.
 
     > [!NOTE]

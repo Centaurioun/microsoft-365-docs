@@ -137,7 +137,9 @@ Next, assign Copilot licenses so users can start using it. You can manage Micros
 3. In the product details page, assign licenses to users and manage their access to Copilot and other apps and services.
 4. To check if a user is added, go to **Users** and then **Active Users**. The user and any active licenses are shown.
 
-When licenses are assigned, Copilot shows up in your Microsoft 365 apps, like Word and Excel. To use Copilot, users sign into the app with their work or school account and the file must be editable (not read only). In some experiences, like Word, a Copilot dialog shows when you create a new document. In other experiences, Copilot is accessible on the Ribbon.
+When licenses are assigned, Copilot shows up in your Microsoft 365 apps, like Word and Excel. For some apps, users might need to wait up to 24 hours for Copilot to appear, and they may need to restart or refresh the app. Once enabled, Copilot appears across the apps.
+
+To use Copilot, users sign into the app with their work or school account and the file must be editable (not read-only). In some experiences, like Word, a Copilot dialog shows when you create a new document. In other experiences, Copilot is accessible on the Ribbon.
 
 > [!NOTE]
 >
@@ -153,9 +155,11 @@ To learn more, see:
 
 ✅ **Configure more Copilot features**
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com) > **Copilot**, there are more Copilot features that benefit admins and settings you can configure that benefit your organization.
+You can manage settings using the Copilot Control System, which provides centralized access to admin features and controls that benefit your organization.
 
-You can:
+To access it, go to the [Microsoft 365 admin center](https://admin.microsoft.com)> **Copilot**.
+
+With the Copilot Control System, you can:
 
 - View the status of Copilot license assignments
 - Access the latest information on Copilot
