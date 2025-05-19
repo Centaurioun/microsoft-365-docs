@@ -63,7 +63,7 @@ Apply the following best practices to tune the LLM:
 
 - **Define clear instructions and constraints** - When configuring the model in Copilot Studio, you can input instructions for the agent's tone and behavior. Provide clear guidelines; for example, "Use a professional and friendly tone" or "Only use information from official 2023 policy manual." You can also supply starter prompts or example questions to steer the model's responses. These help the agent understand context and style.
 
-- **Use preview and evaluation tools** - Copilot Tuning includes evaluation steps. After your model is trained, test it with sample queries or tasks. Copilot Studio allows you to tcompare est results against baseline answers. Review the outputs to ensure that they meet your expectations for accuracy and tone. If they don't, refine your training data or instructions and retrain.
+- **Use preview and evaluation tools** - Copilot Tuning includes evaluation steps. After your model is trained, test it with sample queries or tasks. Copilot Studio allows you to compare test results against baseline answers. Review the outputs to ensure that they meet your expectations for accuracy and tone. If they don't, refine your training data or instructions and retrain.
 
 - **Iterate with feedback** - Treat fine-tuning as an iterative process. Monitor how the agent performs in use. Regularly update the model with new data or corrections to keep it accurate. For example, if policies change or you notice opportunities for further refinement, incorporate those updates and run another fine-tuning round.
 
