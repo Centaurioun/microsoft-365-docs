@@ -57,6 +57,12 @@ items:
   items:
     - name: Manage Microsoft 365 Copilot scenarios 
       href: microsoft-365-copilot-page.md
+    - name: Set up the Microsoft 365 Copilot app
+      items:
+        - name: Overview and availability
+          href: microsoft-365-copilot-app-overview.md
+        - name: Admin settings
+          href: microsoft-365-copilot-app-admin-settings.md
     - name: Pin Copilot Chat to the navigation bar
       href: pin-copilot.md
     - name: Copilot in Microsoft 365 admin centers
