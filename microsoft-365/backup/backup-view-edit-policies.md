@@ -24,6 +24,8 @@ To use Microsoft 365 Backup for SharePoint, Exchange, or OneDrive, you need to c
 
 A policy contains details of what data (SharePoint sites, Exchange mailboxes, and OneDrive accounts) to protect. Although you see the retention period and backup frequency (which defines the restore point objective), those settings aren't currently variable or modifiable.
 
+You can create more than one backup policy for each product (SharePoint, Exchange, OneDrive) with a limit of 100 policies per product. This allows you to segregate your data by logical partitions like department, geography etc. for ease of management & administration. Please note that any SharePoint site, Exchange mailbox, or OneDrive account can be part of one backup policy only.
+
 Select the **SharePoint**, **Exchange**, or **OneDrive** tab for steps to create a backup policy for that product.
 
 # [SharePoint](#tab/sharepoint)
@@ -188,7 +190,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
 ## View and edit backup policies
 
-You can edit the scope of OneDrive accounts, SharePoint sites, and Exchange mailboxes  associated with a backup policy. As part of edit, you can either add new accounts, sites, or mailboxes to or remove them from backup. Removing accounts, sites, and mailboxes from Microsoft 365 Backup doesn't mean existing backups aren't deleted, rather it means additional backups aren't taken.
+You can edit the scope of OneDrive accounts, SharePoint sites, and Exchange mailboxes associated with a backup policy. As part of edit, you can either add new accounts, sites, or mailboxes to or remove them from backup. Removing accounts, sites, and mailboxes from Microsoft 365 Backup doesn't mean existing backups aren't deleted, rather it means additional backups aren't taken.
 
 Select the **SharePoint**, **Exchange**, or **OneDrive** tab for steps to view and edit backup policies for that product.
 
@@ -196,23 +198,23 @@ Select the **SharePoint**, **Exchange**, or **OneDrive** tab for steps to view a
 
 Follow these steps to view and edit backup policies in SharePoint.
 
-1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **SharePoint** section, in the **Scope** area, select **Edit**.
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, click on the **Backup policies** tab to view the list of all backup policies created in your organization. You may filter the list of policies by SharePoint **Service** to view the list of all SharePoint backup policies created in your organization. To edit any specific policy, select that policy and click on **View details.**
 
     ![Screenshot showing the view and edit backup policy for SharePoint in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-sharepoint.png)
 
-2. On the **SharePoint sites backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
+1. On the policy specific panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
 
-3. You can either add new sites to or remove sites from an existing SharePoint backup policy.
+1. You can either add new sites to or remove sites from an existing SharePoint backup policy.
 
-    a. To add new sites, on the **Backed up sites** tab, select **+ Add sites**.
+    a. To add new sites, on the **Included sites** tab, select **+ Add sites**.
+   
+       b. Select sites by any method as discussed in the creation section. Once you add sites to the list, follow the prompts to update the policy.
 
-    b. Select sites by any method as discussed in the creation section. Once you add sites to the list, follow the prompts to update the policy.
+       ![Screenshot showing how to add sites to the existing SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-sharepoint-add-site.png)
 
-    ![Screenshot showing how to add sites to the existing SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-sharepoint-add-site.png)
-
-    c. To remove sites from existing SharePoint backup policy, on the **Backed up sites** tab, select the relevant sites, and then select **Remove**. Once you're done with your changes, follow the prompts to remove the sites.
-
-    ![Screenshot showing how to remove sites from SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-site.png)
+    c. To remove sites from existing SharePoint backup policy, on the **Included sites** tab, select the relevant sites, and then select **Remove**. Once you're done with your changes, follow the prompts to remove the sites.
+   
+       ![Screenshot showing how to remove sites from SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-site.png)
 
 4. Once you make your changes, follow the prompts to update the policy.
 
@@ -266,31 +268,31 @@ Follow these steps to view and edit backup policies for OneDrive.
     ![Screenshot showing the view and edit backup policy for OneDrive in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-onedrive.png)
 --->
 
-2. You can either add new accounts to or remove accounts from an existing OneDrive backup policy.
+1. You can either add new accounts to or remove accounts from an existing OneDrive backup policy.
 
     a. To add new accounts, use either one of these two methods:
-
-    - On the **OneDrive accounts backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
-
-    - Or, on the **OneDrive accounts backup policy** panel, select **+ Add accounts**.
-
+   
+   - On the **OneDrive accounts backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
+      
+   - Or, on the **OneDrive accounts backup policy** panel, select **+ Add accounts**.
+      
     Select the accounts using any of the four available methods. Once you add the accounts, follow the prompts to update the policy.
-
+   
     ![Screenshot showing how to add user accounts to the existing OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-add-account.png)
-
+   
     b. To remove accounts from existing backup policy, on the **Included accounts** tab, select the accounts from the list, and then select **Remove**. Once you make your changes, follow the prompts to remove the accounts.
-
+   
     Accounts added to a backup policy through a dynamic rule can't be individually removed. To exclude these accounts from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list excludes them from the policy. Alternatively, removing the entire distribution list from the rule removes all accounts that were added through that list from the backup policy.
-
+   
     ![Screenshot showing how to remove user accounts from OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-account.png)
-
-3. The removed accounts are moved to the **Removed accounts** tab.
+   
+1. The removed accounts are moved to the **Removed accounts** tab.
 
     ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-account.png)
-
-    > [!NOTE]
-    > Removing accounts from backup policy means no future backups are taken for those removed accounts. Existing backups for those accounts aren't deleted and will be charged.
-
+   
+   > [!NOTE]
+   > Removing accounts from backup policy means no future backups are taken for those removed accounts. Existing backups for those accounts aren't deleted and will be charged.
+   
 ---
 
 ## Delete a dynamic rule
