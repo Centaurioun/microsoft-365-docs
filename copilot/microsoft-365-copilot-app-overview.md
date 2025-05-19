@@ -4,7 +4,7 @@ description: Enterprise and company IT admins can use the Microsoft 365 Copilot 
 author: MandiOhlinger
 ms.author: mandia
 manager: laurawi
-ms.date: 05/14/2025
+ms.date: 05/19/2025
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.subservice: 
@@ -83,9 +83,9 @@ The following table shows the feature differences with a Microsoft 365 Copilot l
 
 When users with a Microsoft 365 Copilot license open and sign in to the Copilot app, the app looks similar to the following image:
 
-:::image type="content" source="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-license.png" alt-text="Screenshot that shows the Microsoft 365 Copilot app with a Microsoft 365 Copilit license." lightbox="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-license.png":::
+:::image type="content" source="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-license.png" alt-text="Screenshot that shows the Microsoft 365 Copilot app with a Microsoft 365 Copilot license." lightbox="media/microsoft-365-copilot-app-overview/microsoft-365-copilot-license.png":::
 
-When users with a only a Microsoft 365 subscription (no Copilot license) open and sign in to the Copilot app, the app looks similar to the following image:
+When users with only a Microsoft 365 subscription (no Copilot license) open and sign in to the Copilot app, the app looks similar to the following image:
 
 :::image type="content" source="media/microsoft-365-copilot-app-overview/microsoft-365-no-copilot-license.png" alt-text="Screenshot that shows the Microsoft 365 Copilot app with only a Microsoft 365 subscription and not a Microsoft 365 Copilot license." lightbox="media/microsoft-365-copilot-app-overview/microsoft-365-no-copilot-license.png":::
 

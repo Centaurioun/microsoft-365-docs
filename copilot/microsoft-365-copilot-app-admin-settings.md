@@ -4,7 +4,7 @@ description: The Microsoft 365 Copilot app has features and settings that Enterp
 author: MandiOhlinger
 ms.author: mandia
 manager: laurawi
-ms.date: 05/13/2025
+ms.date: 05/19/2025
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.subservice: 
@@ -62,7 +62,7 @@ The following table lists the Copilot app settings that you can configure.
 | Agents | ✅ Built-in agents turned on by default <br/><br/>In the **[Microsoft 365 admin center](https://admin.microsoft.com)** > **Settings** > **Integrated Apps**, admins can deploy or block agents from showing in the Copilot app. End users can also add agents to their Copilot app experience. | [Manage agents for Microsoft 365 Copilot](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) |
 | Pages | ✅ Allowed by default <br/><br/>Use Cloud Policy to allow users to create and view Copilot Pages in the Copilot app. | [Admin policies for Copilot Pages, Copilot Notebooks, Loop components, and Loop workspaces](/microsoft-365/loop/loop-components-configuration) |
 | Notebooks | ✅ Allowed by default <br/><br/>Use Cloud Policy to allow users to create and view Copilot Notebooks in the Copilot app. | [Admin policies for Copilot Pages, Copilot Notebooks, Loop components, and Loop workspaces](/microsoft-365/loop/loop-components-configuration) |
-| Create | ✅ Allowed by default <br/><br/>Pending https://office.visualstudio.com/MAX/_workitems/edit/10046002. ?? | |
+| Create | ✅ Built-in <br/><br/> This feature isn't configurable. | n/a |
 | Copilot Key and Windows + C shortcut | ✅ Configured by default <br/><br/>Admins can map the Copilot key to the Microsoft 365 Copilot app. End users can also manually configure. | [Policy CSPs to manage the Copilot key](/windows/client-management/manage-windows-copilot#policies-to-manage-the-copilot-key) <br/><br/>You can also use the [Microsoft Intune settings catalog](/intune/intune-service/configuration/settings-catalog) (Windows AI category) to configure the hardware key on the keyboard. |
 
 ## Related articles
