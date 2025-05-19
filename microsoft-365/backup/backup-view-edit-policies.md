@@ -212,7 +212,7 @@ Follow these steps to view and edit backup policies in SharePoint.
 
        ![Screenshot showing how to add sites to the existing SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-sharepoint-add-site.png)
 
-    c. To remove sites from existing SharePoint backup policy, on the **Included sites** tab, select the relevant sites, and then select **Remove**. Once you're done with your changes, follow the prompts to remove the sites.
+    c. To remove sites from existing SharePoint backup policy, on the **Included sites** tab, select the relevant sites, and then select **Remove**. Once you're done with your changes, follow the prompts to remove the sites. The removed sites are moved to the **Removed Items** tab under the **Backup policies** tab.
    
        ![Screenshot showing how to remove sites from SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-site.png)
 
@@ -227,29 +227,29 @@ Follow these steps to view and edit backup policies in SharePoint.
 
 Follow these steps to view and edit backup policies for Exchange.
 
-1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **Exchange** section, select **View details**.
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, click on the **Backup policies** tab to view the list of all backup policies created in your organization. You may filter the list of policies by Exchange **Service** to view the list of all Exchange Online backup policies created in your organization. To edit any specific policy, select that policy and click on **View details**.
 
 <!---
     ![Screenshot showing the view and edit backup policy for Exchange in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-exchange.png)
 --->
 
-2. You can either add new mailboxes to or remove mailboxes from the existing Exchange backup policy.
+1. You can either add new mailboxes to or remove mailboxes from the existing Exchange backup policy.
 
-    a. To add new shared or user mailboxes, use either one of these two methods:
-
-    - On the **Exchange backup policy** panel, on the **Exchange backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
-
-    - Or, on the **Exchange backup policy** panel, select **+ Add mailboxes**.
-
-    Select the mailboxes using any of the four available methods. Once you add the mailboxes, follow the prompts to update the policy.
-
+    a. To add new shared or user mailboxes, use the following method:
+   
+   - On the policy specific panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
+      
+   - To add new sites, on the **Included sites** tab, select **+ Add sites**.
+      
+   - Select the mailboxes by using any of the four available methods as discussed in the creation section. Once you add mailboxes to the list, follow the prompts to update the policy.
+   
     ![Screenshot showing how to add mailboxes to the existing Exchange backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-exchange-add-mailbox.png)
+   
+       b. To remove user mailboxes from existing backup policy, on the **Included mailboxes** tab, select the user mailboxes from the list, and select **Remove**.
 
-    b. To remove user mailboxes from existing backup policy, on the **Included mailboxes** tab, select the user mailboxes from the list, and select **Remove**.
+       Mailboxes added to a backup policy through a dynamic rule can't be individually removed. To exclude these mailboxes from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list excludes them from the policy. Alternatively, removing the entire distribution list from the rule removes all mailboxes that were added through that list from the backup policy.
 
-    Mailboxes added to a backup policy through a dynamic rule can't be individually removed. To exclude these mailboxes from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list excludes them from the policy. Alternatively, removing the entire distribution list from the rule removes all mailboxes that were added through that list from the backup policy.
-
-    ![Screenshot showing how to remove user mailboxes from Exchange backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-mailbox.png)
+       ![Screenshot showing how to remove user mailboxes from Exchange backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-mailbox.png)
 
 3. The removed mailboxes are moved to the **Removed mailboxes** tab.
 
