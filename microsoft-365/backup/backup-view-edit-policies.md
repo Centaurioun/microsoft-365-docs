@@ -63,7 +63,7 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     c. Under **Select sites individually**, you can search and select sites you want to add to a backup policy.
 
-7. Once you make the right selections, select **Next** to create the backup policy for SharePoint.
+1. Click **Next** to move to the **Backup Settings** page, where you can provide a name for your policy.
 
 8. On the **Review SharePoint backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
@@ -127,7 +127,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
     > [!NOTE]
     > Hybrid deployments, where a user's primary mailbox resides on premises while their archive is migrated to Exchange Online, aren't supported.
 
-7. Once you make the right selections, select **Next** to create the backup policy for Exchange.
+1. Click **Next** to move to the **Backup Settings** page, where you can provide a name for your policy.
 
 8. On the **Review Exchange backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
@@ -176,7 +176,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     d. Under **Select accounts individually**, you can search and select accounts you want to add to a backup policy.
 
-7. Once you make the right selections, select **Next** to create the backup policy for OneDrive.
+1. Click **Next** to move to the **Backup Settings** page, where you can provide a name for your policy.
 
 8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
