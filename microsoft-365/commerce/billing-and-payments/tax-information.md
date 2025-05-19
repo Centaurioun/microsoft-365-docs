@@ -122,7 +122,7 @@ You can add your VAT ID in the Microsoft 365 admin center. However, the steps to
 1. Enter your Tax id, then select **Save**.
 
 > [!NOTE]
-> Not all regions support self-serve tax id management. For these countries, **Add tax id** isn't available on the billing account details page.
+> Not all regions support self-serve tax id management. For these countries/regions, **Add tax id** isn't available on the billing account details page.
 
 ### Add your VAT ID, GSTIN, or PAN for your MOSA billing account
 
