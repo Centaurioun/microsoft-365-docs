@@ -239,7 +239,7 @@ Follow these steps to view and edit backup policies for Exchange.
    
    - On the policy specific panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
       
-   - To add new sites, on the **Included sites** tab, select **+ Add sites**.
+   - To add new mailboxes, on the **Included sites** tab, select **+ Add mailboxes**.
       
    - Select the mailboxes by using any of the four available methods as discussed in the creation section. Once you add mailboxes to the list, follow the prompts to update the policy.
    
@@ -251,18 +251,18 @@ Follow these steps to view and edit backup policies for Exchange.
 
        ![Screenshot showing how to remove user mailboxes from Exchange backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-mailbox.png)
 
-3. The removed mailboxes are moved to the **Removed mailboxes** tab.
+1. The removed mailboxes are moved to the **Removed Items** tab under the **Backup policies** tab.
 
     ![Screenshot of the updated Exchange mailbox backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-mailbox.png)
 
-    > [!NOTE]
+       > [!NOTE]
     > Removing mailboxes from backup policy means no future backups are taken for those removed mailboxes. Existing backups for those mailboxes aren't deleted and will be charged.
 
 # [OneDrive](#tab/onedrive)
 
 Follow these steps to view and edit backup policies for OneDrive.
 
-1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **View details**.
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, click on the **Backup policies** tab to view the list of all backup policies created in your organization. You may filter the list of policies by OneDrive **Service** to view the list of all OneDrive backup policies created in your organization. To edit any specific policy, select that policy and click on **View details**.
 
 <!---
     ![Screenshot showing the view and edit backup policy for OneDrive in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-onedrive.png)
@@ -270,23 +270,23 @@ Follow these steps to view and edit backup policies for OneDrive.
 
 1. You can either add new accounts to or remove accounts from an existing OneDrive backup policy.
 
-    a. To add new accounts, use either one of these two methods:
+    a. To add new accounts, use the following method:
    
-   - On the **OneDrive accounts backup policy** panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
+   - On the policy specific panel, on the **Policy details** tab, in the **Scope** area, select **Edit**.
       
-   - Or, on the **OneDrive accounts backup policy** panel, select **+ Add accounts**.
+   - To add new accounts, on the **Included accounts** tab, select **+ Add accounts**.
       
-    Select the accounts using any of the four available methods. Once you add the accounts, follow the prompts to update the policy.
-   
+   - Select the accounts by using any of the four available methods as discussed in the creation section. Once you add accounts to the list, follow the prompts to update the policy.
+      
     ![Screenshot showing how to add user accounts to the existing OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-add-account.png)
    
     b. To remove accounts from existing backup policy, on the **Included accounts** tab, select the accounts from the list, and then select **Remove**. Once you make your changes, follow the prompts to remove the accounts.
    
-    Accounts added to a backup policy through a dynamic rule can't be individually removed. To exclude these accounts from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list excludes them from the policy. Alternatively, removing the entire distribution list from the rule removes all accounts that were added through that list from the backup policy.
+   Accounts added to a backup policy through a dynamic rule can't be individually removed. To exclude these accounts from the backup policy, you must modify the rule conditions. For example, if User A is part of Distribution List P, removing User A from the list excludes them from the policy. Alternatively, removing the entire distribution list from the rule removes all accounts that were added through that list from the backup policy.
    
     ![Screenshot showing how to remove user accounts from OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-account.png)
    
-1. The removed accounts are moved to the **Removed accounts** tab.
+1. The removed accounts are moved to the **Removed Items** tab under the **Backup policies** tab.
 
     ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-account.png)
    
