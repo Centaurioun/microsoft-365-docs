@@ -295,6 +295,16 @@ Follow these steps to view and edit backup policies for OneDrive.
    
 ---
 
+## Rename a Policy
+
+- To rename an existing policy, select the specific policy from the list of policies under the Backup policies tab. 
+
+- Click on **Rename.** This will open up a new panel where you can specify the new policy name. 
+
+- Please note that policy name can have a maximum of 20 characters only and policy names must be unique.
+
+- Click on **Rename** button and the new policy name will take effect instantly.
+
 ## Delete a dynamic rule
 
 When deleting a dynamic rule, you have two options that determine how existing accounts are treated in the backup policy.
