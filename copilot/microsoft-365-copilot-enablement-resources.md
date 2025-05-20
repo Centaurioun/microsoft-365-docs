@@ -33,7 +33,7 @@ This article applies to:
 
 ## Step 1 - Get your organization ready and use the Microsoft Adoption site
 
-:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-get-organization-ready.svg" alt-text="Diagram that shows the steps to adopt and enable Microsoft 365 Copilot, including getting your organization ready, licensing, enabling Microsoft 365 apps, setup, and sending a welcome email." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-get-organization-ready.svg":::
+:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-get-organization-ready.svg" alt-text="Diagram that shows the get your organization ready step to adopt and enable Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-get-organization-ready.svg":::
 
 ✅ **Use the Microsoft 365 Copilot Optimization Assessment**
 
