@@ -139,7 +139,7 @@ Automatic field detection for templates uses AI to help template creators quickl
 
 ### Detect potential fields
 
-On the **Manage templates** panel, select **Set up fields** > **Detect potential fields**. Agreements AI analyzes your template and suggest relevant fields for your review and insertion.
+On the **Manage templates** panel, select **Set up fields** > **Detect potential fields**. Agreements AI analyzes your template and suggests relevant fields for your review and insertion.
 
 ![A screenshot showing the Manage templates panel with the Detect potential field option highlighted.](../../media/content-understanding/agreements-detect-potential-fields.png)
 
@@ -147,22 +147,22 @@ On the **Manage templates** panel, select **Set up fields** > **Detect potential
 
 The feature detects the following fields from the template.
 
-Standard field from the library
+##### Standard fields from the library
 
 - First party (Single line of text) – The first party on the agreement.
 - Second party (Single line of text) – The second party on the agreement.
 - Effective date (Date) – The date on which the agreement comes into effect.
 - Expiration date (Date) – The date on which the agreement expires.
 
-#### New field suggestions
+##### New field suggestions
 
-The following new fields are detected. These fields are not part of the field library and will get added once you accept the suggestion and add them to the template.
+These fields are not part of the field library and will get added once you accept the suggestion and add them to the template.
 
 - Governing law (Single line of text) – State, country, or region’s law that governs the interpretation of the agreement.
 - Renewal term (Single line of text) – Renewal term after the initial term of the agreement expires.
 - Notice to terminate renewal (Single line of text) – Notice period required to terminate renewal or notice period required to prevent the automatic renewal of the agreement.
 
-![A screenshot showing the Manage templates panel to review the potential detected fields.](../../media/content-understanding/agreements-review-detected-fields.png)
+    ![A screenshot showing the Manage templates panel to review the potential detected fields.](../../media/content-understanding/agreements-review-detected-fields.png)
 
 #### Review suggestions
 
@@ -180,7 +180,7 @@ To apply a field to all detected occurrences and replace them with a placeholder
 
 #### Edit new field suggestions
 
-For new field suggestions, you’ll see an **Edit** (![Image of the edit icon.](../media/content-understanding/agreements-edit-icon.png)) option.
+For new field suggestions, you’ll see the **Edit** (![Image of the edit icon.](../media/content-understanding/agreements-edit-icon.png)) option.
 
 ![A screenshot showing the option to edit new suggested fields.](../../media/content-understanding/agreements-edit-suggested-fields.png)
 
@@ -194,7 +194,7 @@ Once done, select **Save** to return to the previous panel, and then select **In
 
 ![A screenshot showing the Manage templates panel showing the Save button.](../../media/content-understanding/agreements-save-suggested-fields.png)
 
-After reviewing and taking appropriate action (insert or ignore) on all suggestions, you will be able to see **Go back** button. Select **Go back** to return to the **Set up fields** panel. From there, you can continue adding any additional fields needed for your template.
+After reviewing and taking appropriate action (insert or ignore) on all suggestions, you will be able to see the **Go back** button. Select **Go back** to return to the **Set up fields** panel. From there, you can continue adding any additional fields needed for your template.
 
 ![A screenshot showing the Go back button to review the potential detected fields.](../../media/content-understanding/agreements-review-fields-go-back.png)
 
