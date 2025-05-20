@@ -145,18 +145,16 @@ On the **Manage templates** panel, select **Set up fields** > **Detect potential
 
 #### Currently supported fields
 
-The feature detects the following fields from the template.
-
-##### Standard fields from the library
+The following standard fields from the library are detected.
 
 - First party (Single line of text) – The first party on the agreement.
 - Second party (Single line of text) – The second party on the agreement.
 - Effective date (Date) – The date on which the agreement comes into effect.
 - Expiration date (Date) – The date on which the agreement expires.
 
-##### New field suggestions
+#### New field suggestions
 
-These fields are not part of the field library and will get added once you accept the suggestion and add them to the template.
+The following new fields are detected. These fields are not part of the field library and will get added once you accept the suggestion and add them to the template.
 
 - Governing law (Single line of text) – State, country, or region’s law that governs the interpretation of the agreement.
 - Renewal term (Single line of text) – Renewal term after the initial term of the agreement expires.
@@ -164,7 +162,7 @@ These fields are not part of the field library and will get added once you accep
 
     ![A screenshot showing the Manage templates panel to review the potential detected fields.](../../media/content-understanding/agreements-review-detected-fields.png)
 
-##### Review suggestions
+#### Review suggestions
 
 Each suggested field card displays the following information.
 
@@ -178,7 +176,7 @@ To apply a field to all detected occurrences and replace them with a placeholder
 
 ![A screenshot showing the Manage templates panel to apply the detected fields.](../../media/content-understanding/agreements-apply-detected-fields.png)
 
-##### Edit new field suggestions
+#### Edit new field suggestions
 
 For new field suggestions, you’ll see the **Edit** (![Image of the edit icon.](../media/content-understanding/agreements-edit-icon.png)) option.
 
