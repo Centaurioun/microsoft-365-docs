@@ -40,12 +40,20 @@ Beyond brand kits, Copilot also supports access to an organization’s designate
 1. Select your existing tenant level policy with scope set to **Apply to all users** or create a new tenant policy with scope set to **Apply to all users**.
 1. Go to the **Policies** tab.
 1. Use the search box to search for **Brand Manager**. Select the **Elevated role for Brand Managers** policy.
-1. Set the policy to **Enabled**. By default, it's set as **Not configured**.
-1. In the Security group email address field, provide the email address for the brand managers security group for your tenant.
-1. Select **Apply**.
+
+    :::image type="content" source="media/brand-manager/brand-manager-policy.png" alt-text="Screenshot showing the Policy Management page to configure settings." lightbox="media/brand-manager/brand-manager-policy.png":::
+
+6. Set the policy to **Enabled**. By default, it's set as **Not configured**.
+7. In the Security group email address field, provide the email address for the brand managers security group for your tenant.
+
+    :::image type="content" source="media/brand-manager/brand-manager-role.png" alt-text="Screenshot showing the Security group email address text box filled with an email." lightbox="media/brand-manager/brand-manager-role.png":::
+
+8. Select **Apply**.
 
 ## Setting up an OAL to be accessible in the Create experience of the Microsoft 365 Copilot app
 
-Connecting an OAL to Copilot enables brand content access in the Create experience of the Microsoft 365 Copilot app, while also enabling Copilot Chat access in PowerPoint and Word. To learn more, see [Connect organizational asset libraries to Copilot for an on-brand experience](/sharepoint/connect-organizational-asset-libraries-to-copilot)
+Connecting an OAL to Copilot enables brand content access in the Create experience of the Microsoft 365 Copilot app, while also enabling Copilot Chat access in PowerPoint and Word. To learn more, see [Connect organizational asset libraries to Copilot for an on-brand experience](/sharepoint/connect-organizational-asset-libraries-to-copilot).
+
+:::image type="content" source="media/brand-manager/brand-manager-create.png" alt-text="Screenshot showing the Microsoft 365 Copilot Create tab with an image generated.":::
 
 Once the OAL has been provisioned, your entire organization will have access to the brand content from the designated OAL. This content can be found in Create in the Microsoft 365 Copilot app. You can edit an existing image and select the visuals pane to see `<tenant name>` assets.
