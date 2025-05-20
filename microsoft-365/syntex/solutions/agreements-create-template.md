@@ -164,7 +164,7 @@ These fields are not part of the field library and will get added once you accep
 
     ![A screenshot showing the Manage templates panel to review the potential detected fields.](../../media/content-understanding/agreements-review-detected-fields.png)
 
-#### Review suggestions
+##### Review suggestions
 
 Each suggested field card displays the following information.
 
@@ -178,7 +178,7 @@ To apply a field to all detected occurrences and replace them with a placeholder
 
 ![A screenshot showing the Manage templates panel to apply the detected fields.](../../media/content-understanding/agreements-apply-detected-fields.png)
 
-#### Edit new field suggestions
+##### Edit new field suggestions
 
 For new field suggestions, you’ll see the **Edit** (![Image of the edit icon.](../media/content-understanding/agreements-edit-icon.png)) option.
 
@@ -201,8 +201,6 @@ After reviewing and taking appropriate action (insert or ignore) on all suggesti
 > [!NOTE]
 > - You can return to the fields panel at any time by selecting the back button in the upper-left corner of the panel. If you re-run the detection process, any previously ignored suggestions will reappear. This allows you to update the template content and detect fields again as needed.
 > - You cannot edit the standard field suggestions that are already in the field library. Only new field suggestions are editable.
-
-
 
 ## Add sections to a template
 
