@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 05/13/2025
+ms.date: 05/20/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -128,25 +128,27 @@ To request eSignature for a document, follow these steps:
 
     ![A screenshot of a Word document and the Generate documents panel to request signatures.](../../media/content-understanding/agreements-generate-documents-request-signatures.png)
 
-4. After all the details are entered, select **Send**. The PDF version of the Word document is created and is sent for signature to the names and email addresses you entered.
+2. After all the details are entered, select **Send**. The PDF version of the Word document is created and is sent for signature to the names and email addresses you entered.
 
     ![A screenshot showing that the signature request has been sent.](../../media/content-understanding/agreements-generate-documents-signature-request-sent.png)
 
-5. Once the signature request is sent, you can track its status (**Signature in progress**, **Signature completed**) through the Word pane by reloading the document management pane or by  selecting **Refresh**.
+3. Once the signature request is sent, you can track its status (**Signature in progress**, **Signature completed**) through the Word pane by reloading the document management pane or by  selecting **Refresh**.
 
     ![A screenshot of the Generate documents panel showing the request status.](../../media/content-understanding/agreements-generate-documents-signature-request-status.png)
 
-6. You can view the signature in progress and view the final signed PDF document in SharePoint by selecting **Open PDF**.
+4. You can view the signature in progress and view the final signed PDF document in SharePoint by selecting **Open PDF**.
 
-7. If you want to cancel the sent signature request, select **Cancel request** or select the **Edit** section. This will cancel all running flows, unlock the section for further edits, and return the document to the **Draft** state.
+5. If you want to cancel the sent signature request, select **Cancel request** or select the **Edit** section. This will cancel all running flows, unlock the section for further edits, and return the document to the **Draft** state.
 
-    ![A screenshot showing that the Can signature request confirmation screen.](../../media/content-understanding/agreements-generate-documents-cancel-signature-request.png)
+    ![A screenshot showing that the Cancel signature request confirmation screen.](../../media/content-understanding/agreements-generate-documents-cancel-signature-request.png)
 
 #### Use other signature providers
 
 1. After you select **Request signatures**, you'll be prompted to sign in to the provider using your sign-in credentials the first time. For subsequent requests, you might not need to sign in again.
 
 2. After you sign in, you'll be prompted to continue on the provider's website.
+
+    ![A screenshot showing that the prompt to continue to the signature provider's website.](../../media/content-understanding/agreements-generate-documents-send-request-to-provider.png)
 
 3. The document is automatically transferred to the provider service.
 
