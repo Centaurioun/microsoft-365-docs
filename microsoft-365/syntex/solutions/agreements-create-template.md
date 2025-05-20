@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 05/13/2025
+ms.date: 05/21/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -180,7 +180,7 @@ To apply a field to all detected occurrences and replace them with a placeholder
 
 #### Edit new field suggestions
 
-For new field suggestions, you’ll see an **Edit** (image) option.
+For new field suggestions, you’ll see an **Edit** (![Image of the edit icon.](../media/content-understanding/agreements-edit-icon.png)) option.
 
 ![A screenshot showing the option to edit new suggested fields.](../../media/content-understanding/agreements-edit-suggested-fields.png)
 
