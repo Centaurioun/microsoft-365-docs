@@ -151,6 +151,7 @@ After all recipients have signed the document, the signatures are added and an a
 ### Documents signed with other signature providers
 
 All parties will receive an email notification from the provider when document signing is complete. The email typically contains a link to the signed document or as an attachment. Additionally, a copy of the signed document is automatically stored in SharePoint. Once stored, the creator of the request receives an email from SharePoint eSignature with a link to the SharePoint location. The signed document is stored in a provider specific folder within the SharePoint document library of the original document (the original document is the PDF with which the request was initiated from). The signed document can be found using this folder path: **[Document library] > Apps\Signed documents\provider** (for example, Contoso Documents > Apps > Signed documents > Docusign). The retention policy of the saved document will inherit the retention policy set up by the SharePoint or tenant admin.
+The file name of the signed document will be the original file name with the name of the provider, "signed" and the date and time appended to it.
 
 > [!NOTE]
 > A copy of the signed document will not be saved if the request is declined or canceled. Any additional document uploaded via a provider outside of SharePoint while creating a request will also not be saved back to SharePoint. Only documents initiated from SharePoint are saved back to SharePoint.  
