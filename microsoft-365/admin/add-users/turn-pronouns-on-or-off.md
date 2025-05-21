@@ -20,7 +20,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to turn the pronouns feature on or off in the Microsoft 365 admin center."
-ms.date: 03/13/2025
+ms.date: 05/21/2025
 ---
 
 # Turn pronouns on or off for your organization in the Microsoft 365 admin center
