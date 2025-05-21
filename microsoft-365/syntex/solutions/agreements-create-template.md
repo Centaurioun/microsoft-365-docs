@@ -178,7 +178,7 @@ To apply a field to all detected occurrences and replace them with a placeholder
 
 #### Edit new field suggestions
 
-For new field suggestions, you’ll see the **Edit** (![Image of the edit icon.](../media/content-understanding/agreements-edit-icon.png)) option.
+For new field suggestions, you’ll see the **Edit** (![Image of the edit icon.](../../media/content-understanding/agreements-edit-icon.png)) option.
 
 ![A screenshot showing the option to edit new suggested fields.](../../media/content-understanding/agreements-edit-suggested-fields.png)
 
