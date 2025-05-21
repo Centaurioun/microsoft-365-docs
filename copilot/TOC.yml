@@ -65,12 +65,12 @@ items:
       href: multiple-account-access.md  
     - name: Manage prompts
       items:
-      - name: Export prompts from Copilot Prompt Gallery
-        href: copilot-prompt-gallery-export-prompts.md
       - name: Scheduled prompts
         href: scheduled-prompts.md
-      - name: Microsoft 365 environment for Scheduled Prompts
+      - name: Microsoft 365 environment for scheduled prompts
         href: scheduled-prompts-environment.md
+      - name: Export prompts from Copilot Prompt Gallery
+        href: copilot-prompt-gallery-export-prompts.md     
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
     - name: Overview of AI in Microsoft Teams
