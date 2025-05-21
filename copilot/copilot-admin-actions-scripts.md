@@ -1,5 +1,5 @@
 ---
-title: "Copilot Actions admin scripts guide"
+title: "Inventory for Scheduled Prompts"
 author: camillepack
 ms.author: camillepack
 manager: dansimp
@@ -7,21 +7,22 @@ ms.service: microsoft-365-copilot
 ms.topic: include
 description: Learn about using Copilot Actions admin scripts and the prerequisites and steps for various operations.
 ms.date: 05/15/2025
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Copilot Actions admin scripts guide
 
+Admins can take inventory of scheduled prompts created in their tenant by running PowerShell scripts. The instructions below enable admins to connect to their accounts and view, list, or delete scheduled prompts.
+
 ## Prerequisites
 
-### General Prerequisites
+To take inventory of scheduled prompts created by users in your organization, you’ll need the following prerequisites:  
 
 - Have the Global Administrator and Power Platform Administrator roles assigned to your user in Azure portal for the tenant on which you want to do operations.
-- Use [PowerShell v7.0+](/powershell/scripting/install/installing-powershell)
+- Use [PowerShell v7.0+](/powershell/scripting/install/installing-powershell).
 - Have `Az.Accounts` and `Microsoft.PowerApps.Administration.PowerShell` [modules installed](/powershell/module/powershellget/install-module).
 - Have all scripts in the same folder and run the scripts while being in that folder.
 
-### Getting System Administrator role on Copilot Actions environment
+To get the System Administrator role on the Copilot scheduled prompts environment, follow these steps:
 
 - Go to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
 - Find the **Microsoft 365** environment and select it. (This is the default name for Copilot Actions environment; some tenants might use a different name).
@@ -30,131 +31,89 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 More details and options, see [Manage High-Privileged Admin Roles](/power-platform/admin/manage-high-privileged-admin-roles).
 
-### Connect to your Azure Account
+## Connect to your Azure Account
 
-Before running any of the scripts below, log into your administrator account. You don't need to complete this step again if you keep the PowerShell console open.
-
-1. Run the following script:
+Before running any of the scripts below, you must log into your administrator account. To log in, run the following script:
 
 ```powershell
 Connect-AzAccount
 ```
 
-1. Connect with your administrator account.
-1. Run any of the scripts listed later.
-
 ## General operations
 
-Some operations are required in multiple scripts, this section explains how to accomplish those.
-
-### Getting the Copilot Actions environment ID
-
-1. Determine what the environment name is for the Copilot Actions. It is “Microsoft 365” by default.
-1. Run
+1. To get the environment name for Copilot scheduled prompts, run the following script and connect with the admin account if requested:
 
 ```powershell
 Get-AdminPowerAppEnvironment 'Microsoft 365'
 ```
 
-Connect with admin account if requested.
+Enter your display name (`Microsoft 365` by default). Note the `EnvironmentName` value will indicate your environment name.
 
-1. Note the **EnvironmentName** value.
-
-### Getting the Microsoft Entra user object ID
-
-1. Run  
+2. You can also identify a user ID by running this script, using the appropriate user email (<user@domain.com> in the example below). Note the `Id` field value in the output and that will indicate the user’s ID:
 
 ```powershell
-Connect-Entra
+Connect-Entra  
+
+Get-EntraUser -UserId 'user@domain.com'
 ```
 
-Connect with admin account.
+## List Copilot scheduled prompts
 
-2. Run the following script, using the appropriate UserId
+There are different ways to run a script to list scheduled prompts created in your tenant.
+
+### Get a list of Copilot scheduled prompts for the whole tenant
+
+1. Get the `EnvironmentId` using the script provided earlier.
+2. Run the following script, replacing the placeholder with your actual `EnvironmentId`, and connect with the admin account if prompted:
+
+   ```powershell
+   .\Get-CopilotActions.ps1 -EnvironmentId abc123-a100-xyz000-12345
+   ```
+
+   The list of Copilot scheduled prompts should display in the console.
+
+### Get a list of Copilot scheduled prompts for a single user
+
+1. Get the `EnvironmentId` and `UserId` using the scripts provided earlier.
+2. Run the following script using the appropriate `EnvironmentId` and `UserId` to replace the placeholders below and connecting with admin account if requested:
+
+   ```powershell
+   .\Get-CopilotActions.ps1 -EnvironmentId abc123-a100-xyz000-12345 -UserId abc123-a100-xyz000-12345
+   ```
+
+   The list of Copilot scheduled prompts belonging to that user should display in the console.
+
+### Export the list to an Excel/CSV file
+
+Add the following to the end of the command:
 
 ```powershell
-Get-EntraUser -UserId '<user@domain.com>'
+| Export-Csv -Path C:\temp\resultFile.csv
 ```
 
-Note the value from the **Id** field.
-
-## List Copilot Actions
-
-There are different ways to run the script:
-
-1. Get the list of Copilot Actions for the whole tenant:
-
-    a. Complete Getting the Copilot Actions environment ID
-    b. Run the following script, using the appropriate EnvironmentId
-
-    ```powershell
-    .\Get-CopilotActions.ps1 -EnvironmentId ecd91bb5-a790-4db6-8021-0c21c483269f
-    ```
-
-    Connect with admin account if requested.
-    c. The list of Copilot Actions should display in the console.
-
-2. Get the list of Copilot Actions for a single user:
-
-    a. Complete Getting the Copilot Actions environment ID.
-    b. Complete Getting the Microsoft Entra user object ID.
-    c. Open a PowerShell shell.
-    d. Run the following script, using the appropriate EnvironmentId and UserId.
-
-   ```powershell
-   .\Get-CopilotActions.ps1 -EnvironmentId ecd91bb5-a790-4db6-8021-0c21c483269f -UserId 1a8031b4-ba57-4ee7-bed2-99fea3081d9d
-   ```
-    Connect with admin account if requested.
-    e. The list of Copilot Actions belonging to that user should be displayed in the console
-
-3. Get the list of Copilot Actions output to an Excel/CSV file:
-
-    a. Follow 1. or 2. listed previously depending on the scenario you’re interested in, but adding
-
-    ```powershell
-        | Export-Csv -Path C:\temp\resultFile.csv
-    ```
-
-    at the end of the `.\Get-CopilotActions.ps1` command.
-
-    b.For example, the command from 1. would become  
-
-    ```powershell
-    .\Get-CopilotActions.ps1 -EnvironmentId ecd91bb5-a790-4db6-8021-0c21c483269f | Export-Csv -Path C:\temp\resultFile.csv
-    ```
-
-## Delete a single Copilot Action
-
-1. Complete `Getting the Copilot Actions environment ID`.
-1. Follow List Copilot Actions and note the `DataverseId` of the Action you want to delete.
-1. Run the following script, using the appropriate `EnvironmentId` and `DataverseId`
-
-    ```powershell
-    .\Remove-CopilotAction.ps1 -EnvironmentId ecd91bb5-a790-4db6-8021-0c21c483269f -DataverseId 18ebd469-6747-409b-8f10-1299e7294074
-    ```
-
-    Connect with admin account if requested.
-
-## Delete multiple Copilot Actions from a single user
-
-1. Complete `Getting the Copilot Actions environment ID`.
-1. Complete `Getting the Microsoft Entra user object ID`
-1. Run the following script, using the appropriate `EnvironmentId` and `UserId`.
-
-    ```powershell
-    .\Clear-CopilotActions.ps1 -EnvironmentId ecd91bb5-a790-4db6-8021-0c21c483269f -UserId 1a8031b4-ba57-4ee7-bed2-99fea3081d9d
-    ```
-
-    Connect with admin account if requested.
-
-## Delete Copilot Actions (advanced)
-
-Note that the output of `Get-CopilotActions.ps1` can be used as the input to `Remove-CopilotAction.ps1`, resulting in the deletion of all Actions reaching `Remove-CopilotAction.ps1`. This allows for custom filtering. For example, to only consider action of a certain type:
+Example:
 
 ```powershell
-.\Get-CopilotActions.ps1 -EnvironmentId ecd91bb5-a790-4db6-8021-0c21c483269f `
-
-| Where-Object { $_.BotType -eq "Prepare" } `
-
-|.\Remove-CopilotAction.ps1
+.\Get-CopilotActions.ps1 -EnvironmentId abc123-a100-xyz000-12345 | Export-Csv -Path C:\temp\resultFile.csv
 ```
+
+## Delete Copilot scheduled prompts
+
+### Delete a single Copilot Action
+
+1. Get the `EnvironmentId` and the `DataverseId` of the action you wish to delete.
+2. Run the following script:
+
+   ```powershell
+   .\Remove-CopilotAction.ps1 -EnvironmentId abc123-a100-xyz000-12345 -DataverseId abc123-a100-xyz000-12345
+   ```
+
+## Delete multiple Copilot Scheduled Prompts from a single user
+
+1. Complete Getting the Copilot Scheduled Prompts environment ID.
+1. Complete Getting the Entra user object ID.
+1. Run the following script using the appropriate `EnvironmentId` and `UserId` and connecting with admin account if requested:
+
+   ```powershell
+   .\Clear-CopilotActions.ps1 -EnvironmentId abc123-a100-xyz000-12345 -UserId abc123-a100-xyz000-12345
+   ```
