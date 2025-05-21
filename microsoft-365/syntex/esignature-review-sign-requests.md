@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 05/06/2025
+ms.date: 05/19/2025
 audience: enabler
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -134,8 +134,12 @@ When the status of a request is **Completed**, **Canceled**, or **Declined**, th
 > For requests sent via other electronic signature providers, the status reflected is determined by the signature provider and might differ from the status described above.  
 
 ## Access the signed document
+
 ### Documents signed with Microsoft SharePoint eSignature
-All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View signed document** to access the signed document and the request history. Signers can continue to access and download the signed document from the email notification for 30 days after receiving the email. Additionally, request senders will be able to access the originating folder in which the signed document was saved directly from the email.  
+
+All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View signed document** to access the signed document and the request history.
+
+Signers can continue to access and download the signed document from the email notification for 30 days after receiving the email. Additionally, request senders will be able to access the originating folder in which the signed document was saved directly from the email. The file name of the signed document will be the original file name with "signed" and the date and time appended to it.
 
 > [!NOTE]
 > When you open a PDF document on a SharePoint site, you won't see the details of the request if your default PDF viewer is set to Adobe. You'll need to set PDF viewer as your default viewer.
@@ -145,7 +149,8 @@ All parties involved in the request receive an email notification saying that th
 After all recipients have signed the document, the signatures are added and an audit trail is appended to the signed PDF. Details of the request, including activities and timestamps of when they occurred throughout the signing process, are included. The details include the date and time the request created, date and time when the recipients signed, and so on. These details provide evidence of the integrity of the signing process. The signed document is then digitally signed by a Microsoft certificate to ensure that it can't be tampered with.  
 
 ### Documents signed with other signature providers
-All parties will receive an email notification from the provider when document signing is complete. The email typically contains a link to the signed document or as an attachment. Additionally, a copy of the signed document is automatically stored in SharePoint. Once stored, the creator of the request receives an email from SharePoint eSignature with a link to the SharePoint location. The signed document is stored in a provider specific folder within the SharePoint document library of the original document (the original document is the PDF with which the request was initiated from). The signed document can be found using this folder path: **[Document library] > Apps\Signed documents\provider** (for example, Contoso Documents > Apps > Signed documents > Docusign. The retention policy of the saved document will inherit the retention policy set up by the SharePoint or tenant admin.
+
+All parties will receive an email notification from the provider when document signing is complete. The email typically contains a link to the signed document or as an attachment. Additionally, a copy of the signed document is automatically stored in SharePoint. Once stored, the creator of the request receives an email from SharePoint eSignature with a link to the SharePoint location. The signed document is stored in a provider specific folder within the SharePoint document library of the original document (the original document is the PDF with which the request was initiated from). The signed document can be found using this folder path: **[Document library] > Apps\Signed documents\provider** (for example, Contoso Documents > Apps > Signed documents > Docusign). The retention policy of the saved document will inherit the retention policy set up by the SharePoint or tenant admin.
 
 > [!NOTE]
-> A copy of the signed document will not be saved if the request is declined or canceled. Any additional document uploaded via the third party platform (i.e. outside of sharePoint) while creating a request will also not be saved back to sharePoint. Only documents initiated from SharePoint are saved back to SharePoint.  
+> A copy of the signed document will not be saved if the request is declined or canceled. Any additional document uploaded via a provider outside of SharePoint while creating a request will also not be saved back to SharePoint. Only documents initiated from SharePoint are saved back to SharePoint.  
