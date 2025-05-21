@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to activate online services obtained via volume licensing."
-ms.date: 04/10/2025
+ms.date: 05/22/2025
 ---
 
 # Activate online services in volume licensing
@@ -46,7 +46,7 @@ Each signed VL agreement has a unique License ID associated with it. Microsoft u
 
 Every organization that subscribes to Microsoft online services must have a Microsoft Entra tenant. For more information, see [Quickstart - Access and create new tenant - Microsoft Entra | Microsoft Learn](/entra/fundamentals/create-new-tenant).
 
-### Global administrator
+### Global Administrator
 
 By default, the person who sets up the Microsoft Entra tenant becomes the Global Administrator and can add other Global Administrators. The Global Administrator assigns subscription licenses to users and administers Microsoft online services in the tenant.
 
@@ -201,7 +201,7 @@ After a VL contract is renewed, the Global Administrator must sign in to the adm
 
 The renewal process can cause temporary discrepancies between the number of licenses ordered and the number of licenses available to assign in the Microsoft 365 admin center.
 
-When online subscriptions ordered under one License ID are renewed on another License ID, subscriptions ordered on the original License ID display with a status of **In Grace**, while the subscriptions ordered under the new license ID display with a status of **Active**. Only licenses with the **Active** status are relevant to your licensed quantity.
+When online subscriptions ordered under one License ID are renewed on another License ID, subscriptions ordered on the original License ID display with a status of **In Grace**, while the subscriptions ordered under the new License ID display with a status of **Active**. Only licenses with the **Active** status are relevant to your licensed quantity.
 
 After a certain period, subscriptions with the **In Grace** status are automatically removed from the account and the data is deleted. For detailed information about status durations, see "Lifecycle status durations for volume licensing customers" in [Lifecycle status durations for volume licensing customers](../subscriptions/what-if-my-subscription-expires.md#lifecycle-status-durations-for-volume-licensing-customers).
 
@@ -234,7 +234,7 @@ To ensure that support can quickly solve the incorrect activation issue, when yo
 
 ## Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](/licensing/contact-us).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 ## Other resources
 

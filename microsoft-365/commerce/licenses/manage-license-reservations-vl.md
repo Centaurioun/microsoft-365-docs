@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to manage License Reservations in the Microsoft 365 admin center."
-ms.date: 03/28/2025
+ms.date: 05/22/2025
 ---
 
 # Manage License Reservations for volume licensing
@@ -31,7 +31,7 @@ This article explains reservation restrictions, the online services available fo
 
 - You must have the Administrator or the Online Service Manager volume licensing (VL) role for the corresponding volume licensing ID to create and manage online reservations in the Microsoft 365 admin center.
 - You must have an agreement type of Enterprise, Enterprise Subscription, or Enterprise Agreement (EA) for Government Partners.
-- If you're a Licensing Solution Partner, you must be added as a VL external user and be granted the Online Service Manager role by a customer VL administrator before you can make reservations on behalf of that customer.
+- If you're a Licensing Solution Partner, you must be added as a VL external user and be granted the Online Service Manager role by a customer VL Administrator before you can make reservations on behalf of that customer.
 
 > [!NOTE]
 > Placing a volume licensing reservation is a different action from assigning the licenses to users. You must contact your Global Administrator for seat assignment.
@@ -116,4 +116,4 @@ You can cancel a previously submitted reservation within 72 hours of the usage d
 
 ## Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you’re unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).

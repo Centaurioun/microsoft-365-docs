@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to manage volume licensing user roles in the Microsoft 365 admin center."
-ms.date: 03/28/2025
+ms.date: 05/22/2025
 ---
 
 # Manage volume licensing user roles
@@ -27,7 +27,7 @@ Volume licensing (VL) roles grant users access to VL pages in the Microsoft 365 
 
 VL roles are assigned by one of the following people:
 
-- A VL administrator of the agreement who adds you as a user and invites you to sign in to register.
+- A VL Administrator of the agreement who adds you as a user and invites you to sign in to register.
 - A partner or seller who assigns you a role during the contract creation process.
 
 > [!NOTE]
@@ -36,7 +36,7 @@ VL roles are assigned by one of the following people:
 ## Before you begin
 
 - You must have a volume licensing (VL) role to access the VL pages in the Microsoft 365 admin center.
-- VL roles are managed by the VL administrator and don't provide visibility or permissions to other areas of the admin center beyond the volume licensing section.  
+- VL roles are managed by the VL Administrator and don't provide visibility or permissions to other areas of the admin center beyond the volume licensing section.  
 
 > [!NOTE]
 > Global administrators in the Microsoft 365 admin center don't have access to VL features. It's up to the VL agreement administrator to add any users, including global administrators, who might want access to specific Agreements (License IDs). For more information, see [Commonly used Microsoft 365 admin center roles](../../admin/add-users/about-admin-roles.md#commonly-used-microsoft-365-admin-center-roles), and [Volume licensing roles](../../admin/add-users/about-admin-roles.md#volume-licensing-roles).
@@ -59,7 +59,7 @@ The following table shows the relationship between VL roles in the retired Volum
 
 ## Understand the volume licensing administrator role
 
-By default, the VL administrator role is assigned to the Notices Contact, or the Primary Contact provided by your Microsoft partner or seller when they set up your volume licensing contract.
+By default, the VL Administrator role is assigned to the Notices Contact, or the Primary Contact provided by your Microsoft partner or seller when they set up your volume licensing contract.
 
 When these contacts sign in to the Microsoft 365 admin center, they can assign the VL admin role to other users. Those users can then access the Agreement (License ID) in the admin center without being listed on the original VL contract.
 
@@ -72,7 +72,7 @@ When these contacts sign in to the Microsoft 365 admin center, they can assign t
 
 When you sign in to the Microsoft 365 admin center, you can view and manage the Agreements (License IDs).
 
-If you no longer want to be a VL admin, you must first assign the VL admin role to another user. The new VL admin can then remove your VL admin permissions. You must repeat this process for each license ID.
+If you no longer want to be a VL admin, you must first assign the VL admin role to another user. The new VL admin can then remove your VL admin permissions. You must repeat this process for each License ID.
 
 ### If you don’t have a volume licensing user profile in the Microsoft 365 admin center
 
@@ -85,7 +85,7 @@ If you want to change who is named on a VL contract with a role such as Primary 
 Updating the Notices Contact information on active VL contracts helps ensure that any Microsoft or Partner communications are received.
 
 > [!NOTE]
-> You don’t have to continually update legal participant roles on VL contracts that are no longer active. After there's at least one active VL administrator for each license ID, the licenses remain accessible to your organization, and you can add or remove administrators.  
+> You don’t have to continually update legal participant roles on VL contracts that are no longer active. After there's at least one active VL Administrator for each License ID, the licenses remain accessible to your organization, and you can add or remove administrators.  
 
 ## View existing volume licensing users
 
@@ -139,7 +139,7 @@ Add new users who don't already have VL permissions.
 ### Step 2. Assign users to contracts
 
 1. On the **Assign users to contracts** page, select the expand button next to a user, then select **Add contracts** to see a list of all license IDs for which you're an administrator.
-2. Select the license ID contracts you want to assign to the selected user, then select **Add**.
+2. Select the License ID contracts you want to assign to the selected user, then select **Add**.
 3. If you're an admin for a parent agreement or a Microsoft Business and Services Agreement (MBSA), you can expand the list to all Agreements (License IDs) under that parent contract by selecting **Show inherited contracts**. As an "inherited admin" you can assign users to any Agreement (License ID) under the parent agreement. However, if you aren't an agreement administrator for the specific Agreement (License ID), these users aren't listed on the **Assigned** tab on the **Manage Assignments** page.
 
     > [!TIP]
@@ -174,7 +174,7 @@ Access to VL information in the Microsoft 365 admin center is removed as soon as
 2. In the **Navigation** menu, select **Billing** > **Your products**, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume Licensing</a> tab.
 3. In the **Role assignments** section, select **Manage VL role assignments**.
 4. Find the user you want to manage and select **View access**.
-5. In the details pane, select the **Volume licensing roles** drop-down list for the license ID that you want to change, then either select or clear the check boxes for the roles you want to add or remove.
+5. In the details pane, select the **Volume licensing roles** drop-down list for the License ID that you want to change, then either select or clear the check boxes for the roles you want to add or remove.
 6. Select **Verify and save changes**.
 
 An email is sent to notify the user of the changes with the subject line "Permission changes for Microsoft Volume Licensing contracts."
@@ -182,7 +182,7 @@ An email is sent to notify the user of the changes with the subject line "Permis
 It can take up to two hours for the role change to be reflected on the **Manage assignments** page. For newly processed agreements, it can take up to 10 hours for contract changes to take effect.
 
 > [!NOTE]
-> A VL admin can't edit or remove permissions of a user whose permissions on a license ID are inherited from the higher-level agreement (the parent agreement or MBSA).
+> A VL admin can't edit or remove permissions of a user whose permissions on a License ID are inherited from the higher-level agreement (the parent agreement or MBSA).
 
 ## Apply admin permissions to all license IDs under a parent program
 
@@ -195,6 +195,6 @@ To view or change your opt-in preferences, use the following steps.
 3. In the **Preferences** section, select **Edit preferences**.
 4. To opt in to get inherited admin permissions on all license IDs tied to the parent level contract you're the admin for, select **Yes**.
 
-## Contact support
+## Contact volume licensing support
 
-Submit a case in the admin center by going to <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).

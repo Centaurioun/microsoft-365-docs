@@ -1,5 +1,5 @@
 ---
-title: "Sign in to the Microsoft 365 admin center (volume licensing)  "
+title: "Sign in to the Microsoft 365 admin center (volume licensing)"
 f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to sign in to the Microsoft 365 admin center for volume licensing products."
-ms.date: 03/28/2025
+ms.date: 05/22/2025
 ---
 
 # Sign in to the Microsoft 365 admin center (volume licensing)  
@@ -35,7 +35,7 @@ VL roles are assigned by one of the following people:
 - An administrator of the VL agreement who adds you as a user and invites you to sign in to register.
 
 > [!NOTE]
-> Global administrators in the Microsoft 365 admin center don't have access to VL features. It's up to the VL agreement administrator to add any users, including global administrators, who might want access to specific license IDs. For more information, see [Commonly used Microsoft 365 admin center roles](../../admin/add-users/about-admin-roles.md#commonly-used-microsoft-365-admin-center-roles), and [Volume licensing roles](../../admin/add-users/about-admin-roles.md#volume-licensing-roles).
+> Global Administrators in the Microsoft 365 admin center don't have access to VL features. It's up to the VL agreement administrator to add any users, including global administrators, who might want access to specific license IDs. For more information, see [Commonly used Microsoft 365 admin center roles](../../admin/add-users/about-admin-roles.md#commonly-used-microsoft-365-admin-center-roles), and [Volume licensing roles](../../admin/add-users/about-admin-roles.md#volume-licensing-roles).
 
 ## Where to sign in to view and manage your volume licenses
 
@@ -62,7 +62,7 @@ The first time that you register a VL agreement, use the following steps:
 4. Select **Get Started** to go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then select **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a>.
 
 > [!NOTE]
-> We highly recommend that you select **Role Assignments** and immediately add another VL administrator for each contract ID.
+> We highly recommend that you select **Role Assignments** and immediately add another VL Administrator for each contract ID.
 
 ### If you previously registered a volume licensing agreement
 
@@ -134,20 +134,20 @@ If you don't see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144"
 - **Use the correct role:** You might have access to the admin center because of a different role.
 
   - If you're a VL user, verify that you completed the license registration by selecting the link in the welcome email that you received.  
-  - If you don't have a VL role assigned to you, you can't access VL information in the admin center. Contact a VL administrator for your organization and ask them to grant you VL permissions. For more information, see [Who can view VL information in Microsoft 365 admin center?](/licensing/vlsc-faqs-home-page#who-can-view-vl-information-in-microsoft-365-admin-center-)
-    
+  - If you don't have a VL role assigned to you, you can't access VL information in the admin center. Contact a VL Administrator for your organization and ask them to grant you VL permissions.
+
 - **Use the correct user ID:** Verify that the user ID you used to register VL licenses in the admin center is the same as the user ID that you're using to sign in.
 
 ### My volume licensing welcome email is invalid
 
-The old Volume Licensing Service Center (VLSC) was retired in April 2024, and all existing customers were migrated to the Microsoft 365 admin center. If you received an invitation to the VLSC before April 2024 but haven't yet registered your account in the site, the invitation is now invalid. If you still need permissions to view and manage a VL agreement, ask a VL administrator in your organization to add you as a VL user. For more information, see [Manage volume licensing user roles](manage-user-roles-vl.md).
+The old Volume Licensing Service Center (VLSC) was retired in April 2024, and all existing customers were migrated to the Microsoft 365 admin center. If you received an invitation to the VLSC before April 2024 but haven't yet registered your account in the site, the invitation is now invalid. If you still need permissions to view and manage a VL agreement, ask a VL Administrator in your organization to add you as a VL user. For more information, see [Manage volume licensing user roles](manage-user-roles-vl.md).
 
 If there's no administrator for that agreement, ask the VL support team to create a new VL profile for you. You must be able to confirm the following information:
 
-- VL agreement (license ID) number
+- VL agreement (License ID) number
 - Business email address listed in the VL agreement
 - The sign-in ID that you use to sign in to the Microsoft 365 admin center
 
 ## Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you’re unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).

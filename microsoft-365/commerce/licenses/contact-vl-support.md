@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to contact Microsoft support for volume licensing products."
-ms.date: 05/12/2025
+ms.date: 05/22/2025
 ---
 
 # Contact volume licensing support

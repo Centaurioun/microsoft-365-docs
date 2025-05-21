@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to activate online services for Open and Open Value Subscription programs for volume licensing."
-ms.date: 05/13/2025
+ms.date: 05/22/2025
 ---
 
 # Online service activation for Open programs (volume licensing)
@@ -87,6 +87,6 @@ For information about activating Microsoft Azure, see [Get Started with Azure in
 
 ## Contact volume licensing support
 
-For assistance locating or activating OSA keys, submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
+For assistance locating or activating OSA keys, submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 For assistance with Azure OSA, sign in to the <a href="https://portal.azure.com" target="_blank">Microsoft Azure portal</a> and submit a support case online.

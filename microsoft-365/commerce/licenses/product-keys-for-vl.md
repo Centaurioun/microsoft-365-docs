@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to find and use product keys for volume licensing products in the Microsoft 365 admin center."
-ms.date: 03/28/2025
+ms.date: 05/22/2025
 ---
 
 # Find and use product keys for volume licensing
@@ -224,14 +224,14 @@ Reimaging rights are granted to all Microsoft Volume Licensing customers. Under 
 > [!NOTE]
 > If you're an Open License customer, you must buy at least one unit of the product that you want to reimage to get access to the product media and receive a product key.
 
-## Contact support
+## Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you’re unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 ## Related content
 
-[Download volume licensing products](download-vl-products.md) (article)  
-[Online service activation for Open programs FAQ](online-service-activation-faq.yml) (article)  
-[Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool) (article)  
-[Tools to manage volume activation of Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office) (article)  
+[Download volume licensing products](download-vl-products.md) (article)<br/>
+[Online service activation for Open programs FAQ](online-service-activation-faq.yml) (article)<br/>
+[Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool) (article)<br/>
+[Tools to manage volume activation of Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office) (article)<br/>
 [Volume Activation for Windows](/windows/deployment/volume-activation/volume-activation-windows-10) (article)

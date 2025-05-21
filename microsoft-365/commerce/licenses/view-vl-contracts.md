@@ -19,7 +19,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to find and get detailed information about your volume licensing contracts in the Microsoft 365 admin center."
-ms.date: 04/22/2025
+ms.date: 05/22/2025
 ---
 
 # View volume licensing contracts in the Microsoft 365 admin center
@@ -226,7 +226,7 @@ If you have more upgrade license than underlying base licenses displayed in the 
 
 ### Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 ## Related content
 

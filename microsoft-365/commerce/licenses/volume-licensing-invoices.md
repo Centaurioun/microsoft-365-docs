@@ -21,7 +21,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access your non-Azure volume licensing invoices in the Microsoft 365 admin center."
-ms.date: 05/02/2025
+ms.date: 05/22/2025
 ---
 
 # Microsoft volume licensing invoices
@@ -224,14 +224,14 @@ For more information, contact your Microsoft partner or seller.
 > Microsoft Volume Licensing Support teams don't make changes to volume licensing orders or invoices.
 
 For assistance to sign in to the Microsoft 365 admin center and locating volume licensing invoices, Bill to Contacts and Invoice Readers, submit a case in the admin center > <a href=
-"https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you're unable to access the admin center, see [Contact volume licensing support](contact-vl-support.md).
+"https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 Customers should contact their Microsoft partner or seller for questions relating to the following issues:
 
 - The accuracy of invoice or pricing applied to products
 - The billing frequency or billing coverage periods
 - The application of tax rates on invoices
-- Changing the legal participant Bill to Contact on a license ID
+- Changing the legal participant Bill to Contact on a License ID
 - Submitting or canceling a new order or a renewal order
 
 > [!TIP]

@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to sign your volume licensing agreement."
-ms.date: 04/03/2025
+ms.date: 05/22/2025
 ---
 
 # Sign your volume licensing agreement
@@ -229,9 +229,9 @@ After the agreement is activated, the people named on the agreement receive a we
 
 Remember, the person named on the agreement by the reseller to manage licenses in the admin center might, or might not be the same person who signed the agreement.
 
-## Contact support
+## Contact volume licensing support
 
-For support with volume licensing e-signature process customers can work with their Microsoft partner or seller, or by [Contact volume licensing support](contact-vl-support.md).
+For support with volume licensing e-signature process work with your Microsoft partner or seller, or [Contact volume licensing support](contact-vl-support.md).
 
 ## Related content
 
