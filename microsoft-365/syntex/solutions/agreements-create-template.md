@@ -25,7 +25,7 @@ Templates serve as a predefined structure that standardizes the creation of docu
 Once you create and publish a template, users with access to the template can start [generating agreements](agreements-create-agreement.md) from it. Users are asked to [input values for fields](#add-fields-to-a-template), and send it for approval or eSignature based on the [workflow configured](#configure-a-workflow) with the template.
 
 > [!NOTE]
-> You can always edit a published template. However, you need to republish the template for the changes to take effect. Documents will be created based of the last published version of the template.
+> You can always edit a published template. However, you need to republish the template for the changes to take effect. Documents are created based of the last published version of the template.
 
 ## Create a new template from the Agreements app
 
@@ -154,7 +154,7 @@ The following standard fields from the library are detected.
 
 #### New field suggestions
 
-The following new fields are detected. These fields are not part of the field library and will get added once you accept the suggestion and add them to the template.
+The following new fields are detected. These fields aren't part of the field library and will get added once you accept the suggestion and add them to the template.
 
 - Governing law (Single line of text) – State, country, or region’s law that governs the interpretation of the agreement.
 - Renewal term (Single line of text) – Renewal term after the initial term of the agreement expires.
@@ -192,13 +192,13 @@ Once done, select **Save** to return to the previous panel, and then select **In
 
 ![A screenshot showing the Manage templates panel showing the Save button.](../../media/content-understanding/agreements-save-suggested-fields.png)
 
-After reviewing and taking appropriate action (insert or ignore) on all suggestions, you will be able to see the **Go back** button. Select **Go back** to return to the **Set up fields** panel. From there, you can continue adding any additional fields needed for your template.
+After reviewing and taking appropriate action (insert or ignore) on all suggestions, you'll be able to see the **Go back** button. Select **Go back** to return to the **Set up fields** panel. From there, you can continue adding any other fields needed for your template.
 
 ![A screenshot showing the Go back button to review the potential detected fields.](../../media/content-understanding/agreements-review-fields-go-back.png)
 
 > [!NOTE]
 > - You can return to the fields panel at any time by selecting the back button in the upper-left corner of the panel. If you re-run the detection process, any previously ignored suggestions will reappear. This allows you to update the template content and detect fields again as needed.
-> - You cannot edit the standard field suggestions that are already in the field library. Only new field suggestions are editable.
+> - You can't edit the standard field suggestions that are already in the field library. Only new field suggestions are editable.
 
 ## Add sections to a template
 
@@ -331,7 +331,7 @@ To set up a mandatory signature workflow, follow these steps:
 2. Place your cursor where you want the signature to appear in the document, then insert the fields for signature, initials, and date.
 
    > [!NOTE]
-   > You only need to insert the signature field locations in the template. During document generation, authors will have to assign signatory email addresses to the fields and send the PDF version of this document for signing.
+   > You only need to insert the signature field locations in the template. During document generation, authors have to assign signatory email addresses to the fields and send the PDF version of this document for signing.
 
 3. You can add multiple instances of the same signature field throughout the template and then navigate through each occurrence.
 
@@ -350,7 +350,7 @@ To set up a mandatory signature workflow, follow these steps:
 2. Select **Save**.
 
     > [!NOTE]
-    > During document generation, authors will be directed to the provider platform to assign the signature fields, add signatory email addresses, and send the PDF version of the document for signing.
+    > During document generation, authors are directed to the provider platform to assign the signature fields, add signatory email addresses, and send the PDF version of the document for signing.
 
 ## Publish the template
 
