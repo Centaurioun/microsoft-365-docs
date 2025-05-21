@@ -1,5 +1,5 @@
 ---
-title: "Inventory for Scheduled Prompts"
+title: "Inventory for scheduled prompts"
 author: camillepack
 ms.author: camillepack
 manager: dansimp
@@ -9,7 +9,7 @@ description: Learn about using Copilot Actions admin scripts and the prerequisit
 ms.date: 05/15/2025
 ---
 
-# Copilot Actions admin scripts guide
+# Inventory for scheduled prompts
 
 Admins can take inventory of scheduled prompts created in their tenant by running PowerShell scripts. The instructions below enable admins to connect to their accounts and view, list, or delete scheduled prompts.
 
