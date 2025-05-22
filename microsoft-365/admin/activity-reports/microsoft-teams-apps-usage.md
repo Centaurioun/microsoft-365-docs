@@ -197,9 +197,9 @@ The report is accurate, but it is intentionally inclusive. It reflects a wider s
 
 ### Does blocking an app in Teams admin center stop all usage across Microsoft 365?
 
-No. Blocking an app in the Teams admin center prevents users from installing or launching it in Teams. It does not block passive exposure, such as cards shared by others, or usage in other Microsoft 365 surfaces like Outlook or the Microsoft 365 app.
+No. Blocking an app in the Teams admin center prevents users from installing or launching it in Teams. It does not block passive exposure or usage in other Microsoft 365 surfaces like Outlook or the Microsoft 365 app.
 
-To fully restrict the app, it must be blocked in both the Teams admin center and the Microsoft 365 admin center. If your organization uses [Unified app management](/microsoftteams/manage-apps-across-m365#what-is-unified-app-management), settings made in one admin center will sync with the other. This synchronization does not prevent passive usage.
+The app must be blocked in the Teams admin center and the Microsoft 365 admin center. If your organization uses [Unified app management](/microsoftteams/manage-apps-across-m365#what-is-unified-app-management), settings made in one admin center will sync with the other. This synchronization does not prevent passive usage.
 
 ### Will the report differentiate between "passive" usage vs “actual” usage in the report, so I can be certain there is no app usage occurring?
 
