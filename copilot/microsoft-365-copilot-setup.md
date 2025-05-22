@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/19/2025
+ms.date: 05/20/2025
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -27,6 +27,8 @@ appliesto:
 Copilot works alongside popular Microsoft 365 Apps, like Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 
 As part of your [Microsoft 365 Copilot adoption](microsoft-365-copilot-enablement-resources.md), use this article to enable some security features, configure the update channel, and assign Copilot licenses to users.
+
+:::image type="content" source="media/microsoft-365-copilot-enablement-resources/adopt-copilot-setup-assign-license.svg" alt-text="Diagram that shows the setup and assign license step to adopt and enable Microsoft 365 Copilot." lightbox="media/microsoft-365-copilot-enablement-resources/adopt-copilot-setup-assign-license.svg":::
 
 This article provides guidance for administrators on preparing their organization for Microsoft 365 Copilot. It covers foundational implementation and readiness activities, licensing, and steps to ensure a secure and compliant deployment.
 
