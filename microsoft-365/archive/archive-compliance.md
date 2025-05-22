@@ -45,4 +45,4 @@ Microsoft 365 Archive also affects various compliance offerings, ensuring that y
 
 - **Permissions and access policies** – These settings and policies are retained on the site throughout the archive and reactivation lifecycle. Archiving the site and then reactivating it doesn't change the application of permissions or related access policies.
 
-- **Audit** – Archiving, reactivation and deletion of archived sites are recorded in the Audit Log. For more information, see [Audit log activities](https://learn.microsoft.com/en-us/purview/audit-log-activities?view=o365-worldwide).
+- **Audit** – Archiving, reactivation and deletion of archived sites are recorded in the Audit Log. For more information, see [Audit log activities](https://learn.microsoft.com/purview/audit-log-activities).
