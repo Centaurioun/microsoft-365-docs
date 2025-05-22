@@ -62,7 +62,7 @@ Admins can view details of the site, such as the URL, Archive Status, or Storage
 
 ## Reactivate a site
 
-If there's a need to access the site content again, the sites need to be reactivated. The activation time depends on the archive state of the site ("recently archived" or "archived"). For more information, see the [Archive states in Microsoft 365 Archive](archive-states.md).
+If there's a need to access the site content again, the sites need to be reactivated. The activation time depends on the archive state of the site ("Recently archived" or "Archived"). For more information, see the [Archive states in Microsoft 365 Archive](archive-states.md).
 
 After reactivation, the site moves back to the **Active sites** page. The site resumes its normal function, and the users have the same access rights to the site and its content as they did before the site was archived. After reactivation is complete, the storage consumed by the site will accrue to your storage quota consumption.
 
@@ -98,7 +98,7 @@ You can archive and reactivate sites by using the PowerShell cmdlet [**Set-SPOSi
 
 ## Change the archive status of a site via Graph API
 
-You can archive a site by using the Graph API **beta** endpoint [**site: archive**](https://learn.microsoft.com/graph/api/site-archive) or reactivate it by using the Graph API **beta** endpoint [**site: unarchive**](https://learn.microsoft.com/graph/api/site-unarchive).
+You can archive a site by using the Graph API **beta** endpoint [**site: archive**](/graph/api/site-archive) or reactivate it by using the Graph API **beta** endpoint [**site: unarchive**](/graph/api/site-unarchive).
 
 ## Site templates supported
 
