@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 05/21/2025
+ms.date: 05/22/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -197,7 +197,7 @@ After reviewing and taking appropriate action (insert or ignore) on all suggesti
 ![A screenshot showing the Go back button to review the potential detected fields.](../../media/content-understanding/agreements-review-fields-go-back.png)
 
 > [!NOTE]
-> - You can return to the fields panel at any time by selecting the back button in the upper-left corner of the panel. If you re-run the detection process, any previously ignored suggestions will reappear. This allows you to update the template content and detect fields again as needed.
+> - You can return to the fields panel at any time by selecting the back button in the upper-left corner of the panel. If you rerun the detection process, any previously ignored suggestions will reappear. This allows you to update the template content and detect fields again as needed.
 > - You can't edit the standard field suggestions that are already in the field library. Only new field suggestions are editable.
 
 ## Add sections to a template
