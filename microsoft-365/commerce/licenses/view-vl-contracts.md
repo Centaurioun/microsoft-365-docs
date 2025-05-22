@@ -64,7 +64,7 @@ The following table describes the columns displayed on the **Contracts** page:
 |Status     |The status of the License ID and any SA benefits or subscriptions.         |
 |Volume licensing roles     |The VL roles with access to the contracts. |
 
-## View the license summary
+## View the License summary page
 
 The **License summary** page displays real-time VL entitlements grouped by Microsoft product family and version for all License IDs you have permission to view. The page includes purchase information related to traditional Microsoft VL programs including Open License, Open Value, Open Value Subscription, Select, Select Plus, Enterprise, and Enterprise Subscription.
 
@@ -224,7 +224,7 @@ If you have more upgrade license than underlying base licenses displayed in the 
 - You might not have a complete list of License IDs. You might have acquired full licenses under License IDs you don't have permission to view.
 - Licenses purchased in a recent order with your Microsoft partner might not yet be processed by the Microsoft Partner.
 
-### Contact volume licensing support
+## Contact volume licensing support
 
 Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 

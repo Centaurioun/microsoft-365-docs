@@ -29,7 +29,7 @@ ms.date: 05/22/2025
 > [!IMPORTANT]
 > This article applies only to volume licensing (VL) invoices for non-Azure products bought under a direct VL agreement type, except for Microsoft Products & Services Agreements (MPSA), Federal Government, Special agreements, and Select Plus agreements.
 
-The invoice for your VL subscription provides a summary of charges and instructions for how to pay your invoice. You can view the invoice online in the Microsoft 365 admin center. You can also download a copy of your invoice in the Portable Document Format (PDF) to send via email.
+The invoice for your VL subscription provides a summary of charges and instructions for how to pay your invoice. You can view the invoice online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a>. You can also download a copy of your invoice in the Portable Document Format (PDF) to send via email.
 
 ## Before you begin
 
@@ -40,18 +40,17 @@ To access VL invoices in the Microsoft 365 admin center, you must satisfy both o
 
 ## View or download your invoice
 
-1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a>, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page.
 2. Select the **Volume licensing** tab, then select **Contracts**.
 3. Find the contract you want to see invoices for, select the three dots (more actions), then select **View Invoices**.
 4. On the **Invoices** page, you see the list of invoices generated for that contract. You can download the invoice PDF and invoice recon file. For information about the invoice recon file, see [Overview of the invoice recon file](#overview-of-the-invoice-recon-file) later in this article.
 
 ## Overview of the invoice PDF
 
-Your invoice is a PDF that contains at least two pages.
+Your invoice is a PDF that contains at least two pages:
 
-Page one is the billing **Summary**, and contains general information about the invoice, amount due, and payment instructions, if applicable. It also contains address information for your organization and high-level details about your order.
-
-Page two and beyond lists the individual products in your order. The last page contains the **Net Amount**, **Sales Tax**, and **Total**, which correspond with the amounts shown in the **Summary** section on page 1.
+- Page one is the billing **Summary**, and contains general information about the invoice, amount due, and payment instructions, if applicable. It also contains address information for your organization and high-level details about your order.
+- Page two and beyond lists the individual products in your order. The last page contains the **Net Amount**, **Sales Tax**, and **Total**, which correspond with the amounts shown in the **Summary** section on page one.
 
 ### Understanding your invoice
 
@@ -159,7 +158,7 @@ In this section:
 [How do I request permission to view volume licensing invoices?](#how-do-i-request-permission-to-view-volume-licensing-invoices)<br/>
 [How often and when am I billed?](#how-often-and-when-am-i-billed)<br/>
 [Why is my total due different from last billing period?](#why-is-my-total-due-different-from-last-billing-period)<br/>
-[What is the tax rate applied to my invoice?](#what-is-the-tax-rate-applied-to-my-invoice)<br/>
+[What is the tax rate applied to my invoice?](#what-is-the-tax-rate-applied-to-my-invoice)
 
 ### What type of invoices can I see?
 
@@ -223,7 +222,7 @@ For more information, contact your Microsoft partner or seller.
 > [!IMPORTANT]
 > Microsoft Volume Licensing Support teams don't make changes to volume licensing orders or invoices.
 
-For assistance to sign in to the Microsoft 365 admin center and locating volume licensing invoices, Bill to Contacts and Invoice Readers, submit a case in the admin center > <a href=
+For help signing in to the Microsoft 365 admin center and locating VL invoices, Bill to Contacts and Invoice Readers, submit a case in the admin center > <a href=
 "https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 Customers should contact their Microsoft partner or seller for questions relating to the following issues:

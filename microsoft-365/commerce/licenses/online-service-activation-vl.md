@@ -149,7 +149,7 @@ This section contains information about why you might not receive an activation 
 
 - The OSM contact information isn't configured to receive emails. For example, user\@contoso.onmicrosoft.com has no email subscription.  
 - The OSM email address is in a public domain like outlook.com or gmail.com, not an organization's email domain.  
-- It's more than 48 hours before the licensed usage period start date. To see the usage date, in the Microsoft 365 admin center, go to the **Billing** > **Your products** > **Volume licensing** > **Contracts** > **View order details** page.
+- It's more than 48 hours before the licensed usage period start date. To see the usage date, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a>, go to the **Billing** > **Your products** > **Volume licensing** > **Contracts** > **View order details** page.
 - Your Microsoft partner or seller hasn't yet placed an order. To check the order status, in the Microsoft 365 admin center, go to **Billing** > **Your products** > **Volume licensing** > **Contracts** > **View Orders** or **View license summary**.
 - Your OSM hasn't yet placed a License Reservation. To check reservations, in the Microsoft 365 admin center, go to **Billing** > **Your products** > **Volume licensing** > **View reservations**.
 
@@ -182,7 +182,7 @@ The following list contains some common reasons why you might not see licenses a
 
 This section contains information about what happens when you renew online services.
 
-### Activating services after volume licensing renewal
+### Activate services after volume licensing renewal
 
 For most renewals, online services are automatically assigned to the Microsoft Entra tenant, and no service activation email is sent.  
 

@@ -101,7 +101,7 @@ This section provides information about how to download VL software for PC and M
 
 ### Download volume licensing versions of Office for PC
 
-There are no full ISO Download files for the 2019, 2021 or 2024 versions of Office in the Microsoft 365 admin center under **Volume licensing**. Only Office Online Server has an ISO download. Instead, the installation files are available on the Office Content Delivery Network (CDN).
+There are no full ISO Download files for the 2019, 2021 or 2024 versions of Office in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a> under **Volume licensing**. Only Office Online Server has an ISO download. Instead, the installation files are available on the Office Content Delivery Network (CDN).
 
 The VL download catalog includes the [Office Deployment Tool (ODT)](https://www.microsoft.com/download/details.aspx?id=49117) which you can download. The ODT provides more information about installation procedures.
 
@@ -146,11 +146,7 @@ Before you attempt to upgrade, make sure to back up your existing version and re
 
 If you need assistance with troubleshooting technical issues during product installation, you can reach the appropriate Microsoft Technical Support by [creating a technical support case](https://support.serviceshub.microsoft.com/supportforbusiness/create).
 
-## Get support
-
-This section provides information about support options for downloaded products and how to get VL support.
-
-### Technical support for downloaded products
+## Get technical support for downloaded products
 
 Microsoft doesn't provide technical support as part of VL purchases. For technical support specific to the activation or installation of products bought through VL, customers must use other support options.
 
@@ -158,14 +154,14 @@ Customers can often resolve issues without assistance by using [Microsoft techni
 
 Alternatively, you can [create a Microsoft technical support case](https://support.microsoft.com/oas). If your organization didn't buy a support plan, a fee might apply.
 
-### Volume licensing support
+## Contact volume licensing support
 
 Volume Licensing Services can help you navigate the VL experience in Microsoft 365 admin center, and confirm the availability of specific download files in the VL catalog.
 
 Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 > [!TIP]
-> Creating your support case online before your phone support is faster, because your contact information is captured upfront and you immediately receive a case number to give to our support team when you call.
+> Creating your support case online before you phone support is faster, because your contact information is captured upfront and you immediately receive a case number to give to our support team when you call.
 
 ## Related content
 

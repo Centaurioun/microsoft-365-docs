@@ -23,18 +23,18 @@ ms.date: 05/22/2025
 
 # Find and use product keys for volume licensing
 
-A product key lets you use a software product that you licensed under a specific volume licensing program. The volume licensing product keys listed in the Microsoft 365 admin center are only for use with volume license products and are intended only for use by your organization. This article describes the different types of product keys, where to find them, and how to use them.
+A product key lets you use a software product that you licensed under a specific volume licensing (VL) program. The VL product keys listed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a> are only for use with VL products and are intended only for use by your organization. This article describes the different types of product keys, where to find them, and how to use them.
 
 ## Before you begin
 
-You must have one of the following volume licensing roles to view volume licensing product keys for a specific licensing ID:
+You must have one of the following VL roles to view VL product keys for a specific License ID:
 
 - Administrator
 - Product keys reader
 
 ## Find your volume licensing product keys
 
-This section describes the steps to find volume licensing product keys in the admin center. You can copy individual keys to the clipboard and download a CSV file that contains one or more keys in a tab-delimited format. To view and sort keys, open the product key file in Excel or a text editor.
+This section describes the steps to find VL product keys in the admin center. You can copy individual keys to the clipboard and download a CSV file that contains one or more keys in a tab-delimited format. To view and sort keys, open the product key file in Excel or a text editor.
 
 > [!NOTE]
 > Some products don't require a product key. You can verify whether a specific product requires a product key in the product description provided for each product listed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2297371" target="_blank">Products and services</a> page.

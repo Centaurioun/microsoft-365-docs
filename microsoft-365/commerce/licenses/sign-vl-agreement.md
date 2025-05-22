@@ -26,7 +26,7 @@ ms.date: 05/22/2025
 When you sign a volume licensing (VL) agreement with Microsoft, there are three signature options available: Adobe Sign Electronic (Simple), Adobe Sign Digital, Adobe Sign Physical Signature, and Adobe Sign Digital.
 
 > [!NOTE]
-> The person who signs the contract doesn't have to be the same person who administers the VL agreement in the Microsoft 365 admin center volume licensing section.
+> The person who signs the contract doesn't have to be the same person who administers the VL agreement in the volume licensing section of the Microsoft 365 admin center.
 
 ## Before you begin
 
@@ -175,7 +175,7 @@ Microsoft strongly encourages the use of Adobe Sign to provide electronic signat
 5. To return to the Adobe Sign portal, select the **Upload to submit** button in the Adobe Sign email.
 6. To continue processing, upload the signed document back into Adobe Sign.
 
-## Server error when uploading a document with another e-signature tool
+## Troubleshoot server errors when uploading a document with another e-signature tool
 
 Customers who sign with an e-signature tool other than Adobe, such as DocuSign, might get the following error message:
 
@@ -191,7 +191,7 @@ You can resolve the Unprocessed Error without contacting support by completing t
 
 When this process is finished, Adobe Sign retains the DocuSign signature while previewing and after all parties sign the final document.
 
-## View volume licesnging agreements submitted for your signature
+## View volume licensing agreements submitted for your signature
 
 An assigned signature contact who signed the VL agreement can sign in to the Adobe Sign portal to view a previously signed agreement up to 13 months after the signature takes place.
 

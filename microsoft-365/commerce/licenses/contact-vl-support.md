@@ -47,7 +47,7 @@ ms.date: 05/22/2025
 - The person who submits the case is the **Primary Contact** for the support case.
 - To add any other contacts who require visibility to the support case, select **Add a new contact**. Enter a new email address, then select **Save**.
 
-### Step 4. Submit support case
+### Step 4. Submit the support case
 
 - After you provide all the required information, select **Submit**.
 - After you submit the support case, you see your case number and you also receive a confirmation email  from support\@mail.support.microsoft.com. If you don't see the email in your inbox, check your junk folder.

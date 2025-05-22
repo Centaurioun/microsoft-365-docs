@@ -45,7 +45,7 @@ After you order your online services through an Open program, the Online Service
 3. Enter your name, work email address, business phone number, company name, and country/region, then select **Next**.
 4. Enter a phone number to receive either a text or call to verify your identity.
 5. You can use a domain name you already own, get a new domain, or add a domain later. The steps can vary, depending on which option you choose.
-6. When you're finished, go to the admin center to manage your subscription.
+6. When you're finished, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">admin center</a> to manage your subscription.
 
 ## Activate services in the Microsoft 365 admin center
 

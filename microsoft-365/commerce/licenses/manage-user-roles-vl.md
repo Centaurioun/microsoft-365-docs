@@ -23,7 +23,7 @@ ms.date: 05/22/2025
 
 # Manage volume licensing user roles
 
-Volume licensing (VL) roles grant users access to VL pages in the Microsoft 365 admin center. Users who only have a VL role but don't have another admin center role can only access VL pages and can't access other pages in the admin center.
+Volume licensing (VL) roles grant users access to VL pages in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a>. Users who only have a VL role but don't have another admin center role can only access VL pages and can't access other pages in the admin center.
 
 VL roles are assigned by one of the following people:
 
@@ -61,7 +61,7 @@ The following table shows the relationship between VL roles in the retired Volum
 
 By default, the VL Administrator role is assigned to the Notices Contact, or the Primary Contact provided by your Microsoft partner or seller when they set up your volume licensing contract.
 
-When these contacts sign in to the Microsoft 365 admin center, they can assign the VL admin role to other users. Those users can then access the Agreement (License ID) in the admin center without being listed on the original VL contract.
+When these contacts sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a>, they can assign the VL admin role to other users. Those users can then access the Agreement (License ID) in the admin center without being listed on the original VL contract.
 
 > [!NOTE]
 > For privacy reasons, we don’t provide names of VL admins associated with your organization. Ask your organization's partner or seller what contact information they provided to Microsoft for your VL contract. If necessary, your organization's purchasing, finance, or IT departments might be able to identify your Microsoft Reseller from your organization's purchasing records.
@@ -70,7 +70,7 @@ When these contacts sign in to the Microsoft 365 admin center, they can assign t
 
 ### If you already have a VL user profile in the Microsoft 365 admin center
 
-When you sign in to the Microsoft 365 admin center, you can view and manage the Agreements (License IDs).
+When you sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a>, you can view and manage the Agreements (License IDs).
 
 If you no longer want to be a VL admin, you must first assign the VL admin role to another user. The new VL admin can then remove your VL admin permissions. You must repeat this process for each License ID.
 
