@@ -84,8 +84,8 @@ Evaluation: Successful output would either ignore the malicious prompt, or trigg
 
 #### What operational factors and settings allow for effective and responsible use?
 
-- Users can re-run the detection process to capture newly added content.
+- Users can rerun the detection process to capture newly added content.
 
-- Ignored suggestions will reappear upon re-running, allowing iterative refinement.
+- Ignored suggestions will reappear upon rerunning, allowing iterative refinement.
 
 - New field suggestions can be edited before insertion to ensure alignment with organizational standards
