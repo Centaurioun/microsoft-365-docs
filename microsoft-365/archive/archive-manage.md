@@ -42,7 +42,7 @@ When a site is archived, compliance features such as eDiscovery and retention la
     ![Screenshot of the Archived sites page in the SharePoint admin center.](../media/m365-archive/archived-sites-page.png)
 
     > [!NOTE]
-    > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites is only partially supported. For more information, see [Archive a site connected to Teams](archive-manage.md#archive-a-site-connected-to-Teams).
+    > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites is only partially supported. For more information, see [Archive a site connected to Teams](archive-manage.md#archive-a-site-connected-to-teams).
 
 ### Archive a site connected to Teams
 
