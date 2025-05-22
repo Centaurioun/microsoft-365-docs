@@ -55,6 +55,11 @@ The Microsoft 365 Archive pricing calculator, when calculating the potential cos
 
 To use the Microsoft 365 Archive pricing calculator, you need to perform the following steps. Information about how to collect data from each of these steps is detailed later in this article.
 
+<!---
+Update needed:
+ The pricing calculator still includes reactivation fees.
+--->
+
 1. Download the latest version of the [Microsoft 365 Archive pricing calculator tool](https://aka.ms/Microsoft365ArchiveCostCalculator).
 
 2. Launch the tool and provide inputs in the cells indicated in the 'Input' column.
