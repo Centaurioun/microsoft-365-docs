@@ -82,13 +82,13 @@ When you reactivate a site, its permissions, lists, pages, files, folder-structu
 
 Other than these two exceptions, you can expect the site to be unchanged.  
 
-## Change the archive status of site via PowerShell
+## Change the archive status of a site via PowerShell
 
-You can also change the status of an archived site by using the PowerShell cmdlet [**Set-SPOSiteArchiveState**](/powershell/module/sharepoint-online/set-spositearchivestate?view=sharepoint-ps&preserve-view=true).
+You can archive and reactivate sites by using the PowerShell cmdlet [**Set-SPOSiteArchiveState**](/powershell/module/sharepoint-online/set-spositearchivestate?view=sharepoint-ps&preserve-view=true).
 
-													
+## Change the archive status of a site via Graph API
 
-																																																																						  
+You can archive a site by using the Graph API **beta** endpoint [**site: archive**](https://learn.microsoft.com/en-us/graph/api/site-archive) or reactivate it by using the Graph API **beta** endpoint [**site: unarchive**](https://learn.microsoft.com/en-us/graph/api/site-unarchive).
 
 ## Site templates supported
 
