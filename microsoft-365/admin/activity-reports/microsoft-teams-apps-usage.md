@@ -185,7 +185,7 @@ External App IDs are equivalent to the ID in the Manage apps page for Store apps
 
 ### I’ve blocked the Teams app in the Teams admin center. Why does it still show usage in the apps usage report in Teams admin center?  
 
-Even if an app is blocked in the Teams admin center, usage signals might still appear in the Teams app usage report or in the Microsoft 365 Teams app usage report. This can happen due to passive user interactions, such as viewing a card posted by the app in a chat or channel. These interactions can generate telemetry without the user actively launching or interacting with the app.
+Even if an app is blocked in the Teams admin center, usage signals might still appear in the [Teams app usage report](/microsoftteams/teams-analytics-and-reports/app-usage-report) or in the [Microsoft 365 Teams app usage report](microsoft-teams-apps-usage.md). This can happen due to passive user interactions, such as viewing a card posted by the app in a chat or channel. These interactions can generate telemetry without the user actively launching or interacting with the app.
 
 ### If I’ve blocked a Teams app in the Teams admin center, is it still being used?
 
@@ -197,9 +197,9 @@ The report is accurate, but it is intentionally inclusive. It reflects a wider s
 
 ### Does blocking an app in Teams admin center stop all usage across Microsoft 365?
 
-No. Blocking an app in the Teams admin center prevents users from installing or launching it in Teams. It does not block passive exposure, such as cards shared by others, or usage in other Microsoft 365 surfaces like Outlook or the Microsoft 365 app. 
+No. Blocking an app in the Teams admin center prevents users from installing or launching it in Teams. It does not block passive exposure, such as cards shared by others, or usage in other Microsoft 365 surfaces like Outlook or the Microsoft 365 app.
 
-To fully restrict the app, it must be blocked in both the Teams admin center and the Microsoft 365 admin center. If your organization uses Unified app management, settings made in one admin center will sync with the other. This synchronization does not prevent passive usage.
+To fully restrict the app, it must be blocked in both the Teams admin center and the Microsoft 365 admin center. If your organization uses [Unified app management](/microsoftteams/manage-apps-across-m365#what-is-unified-app-management), settings made in one admin center will sync with the other. This synchronization does not prevent passive usage.
 
 ### Will the report differentiate between "passive" usage vs “actual” usage in the report, so I can be certain there is no app usage occurring?
 
