@@ -3,7 +3,7 @@ title: Responsible AI FAQs for SharePoint Agreements
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
-ms.reviewer: ssathyamoort, neilh, shrganguly
+ms.reviewer: vbarla
 ms.date: 05/22/2025
 audience: admin
 ms.topic: how-to
@@ -24,7 +24,13 @@ An AI system includes not only the technology, but also the people who use it, t
 
 Responsible AI FAQs are part of a broader effort to put Microsoft's AI principles into practice. To find out more, see [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).
 
-## Responsible AI FAQs for automatic field detection in templates
+## AI-driven features in this app
+
+This app includes an AI-driven feature designed to enhance your experience. To explore its capabilities and understand its impact, select the feature name to learn more.
+
+- [FAQs for automatic field detection in templates](#faqs-for-automatic-field-detection-in-templates)
+
+## FAQs for automatic field detection in templates
 
 What is automatic field detection in templates?
 
@@ -38,7 +44,7 @@ Automatic field detection analyzes the content of a document and automatically s
 
 - New field suggestions: Governing law, Renewal term, and Notice to terminate renewal.
 
-Users can review these suggestions and insert them into the template with a single click.
+Users can review these suggestions and insert them into the template with a single selection.
 
 #### What are the intended uses of automatic field detection?
 
@@ -52,7 +58,7 @@ Automatic field detection is designed to streamline the template creation proces
 
 #### How was automatic field detection evaluated? What metrics were used to measure performance?
 
-Performance factors such as precision, recall and accuracy relied on the base model’s performance (in this case, GPT-4o).
+Performance factors such as precision, recall, and accuracy relied on the base model’s performance (in this case, GPT-4o).
 
 To evaluate feature specific performance, testing was done on the open-source dataset CUAD v1:
 
@@ -62,7 +68,7 @@ To evaluate feature specific performance, testing was done on the open-source da
 
 Evaluated risk and safety metrics.
 
-Setup: Used custom evaluation flows on Azure Prompt Flow to send similar requests as the feature does in the real world, combining metadata prompts, system prompts, and user question or document content, run on the same base model (in this case, GPT-4o) with same configuration.
+Setup: We used custom evaluation flows in Azure Prompt Flow to simulate real-world usage of the feature. These flows combined metadata prompts, system prompts, and user inputs—such as questions or document content—and were executed on the same base model (GPT-4o) with identical configuration settings.
 
 Assessment: Evaluated test cases with standard legal contracts which included jail break prompts and injection attacks, over 100 test cases for both.
 
@@ -70,11 +76,11 @@ Evaluation: Successful output would either ignore the malicious prompt, or trigg
 
 #### What are the limitations of automatic field detection?
 
-- The feature is limited to detecting fields based on textual content only and the scope of the prompt for a particular template where fields are detected is limited to the content of that template.
+- The feature can only detect fields based on the text content within a template. Its detection scope is limited to the content of the specific template being processed. It does not consider information outside that template.
 
-- The potential image, person/group, and choice fields will not be captured.
+- The potential image, person/group, and choice fields won't be captured.
 
-- Users must manually review and confirm field suggestions to ensure accuracy of the detected content, its occurrence and also its corresponding field suggestion.
+- Users must manually review and confirm field suggestions to ensure accuracy of the detected content, its occurrence, and also its corresponding field suggestion.
 
 #### What operational factors and settings allow for effective and responsible use?
 
