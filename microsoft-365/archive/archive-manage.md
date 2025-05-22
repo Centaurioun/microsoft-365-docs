@@ -42,7 +42,14 @@ When a site is archived, compliance features such as eDiscovery and retention la
     ![Screenshot of the Archived sites page in the SharePoint admin center.](../media/m365-archive/archived-sites-page.png)
 
     > [!NOTE]
-    > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites with private or shared channel sites isn't supported. Teams sites with standard channels are supported.
+    > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites is only partially supported. For more information, see [Archive a site connected to Teams](/archive-manage.md#Archive a site connected to Teams).
+
+### Archive a site connected to Teams
+Sites associated with Teams with exclusively standard channels are supported for archiving.
+
+Sites associated with Teams that include private or shared channels are only partially supported:
+- SharePoint Admin Center: Archiving a site with channel sites is not possible. (Message: "The group connected site with channel sites associated can't be archived.")
+- PowerShell & Graph API: Archiving a site with channel sites is not blocked. Only the main site associated to the Team (and its standard channels) is archived; the private and shared channel sites remain active. Archiving the channel sites directly is not possible, as these sites use unsupported site templates.
 
 ## Manage archived sites
 
