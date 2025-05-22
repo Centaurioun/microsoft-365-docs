@@ -62,7 +62,7 @@ With SharePoint Agreements, you can:
 |[Manage attachments](agreements-attachments.md)    |Manage supporting documents related to an agreement.         |
 |[View reports](agreements-reports.md)    |Learn about the reports that are available to monitor all agreements, their statuses, and other essential metrics.         |
 |[Receive approval notifications](agreements-notifications.md)    |Learn about approval notifications in the Approvals app and in email.         |
-|[Responsible AI FAQs](agreements-responsible-ai.md)    |Read about Microsoft’s commitment to responsible AI and the AI features in the SharePoint Agreements app.        |
+|[Responsible AI FAQs](agreements-responsible-ai.md)    |Learn more about the AI features in the SharePoint Agreements app.        |
 
 > [!NOTE]
 > SharePoint Agreements is not yet available for Government Community Cloud (GCC) organizations. However, it is planned and will be available in the future.
