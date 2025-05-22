@@ -1,4 +1,4 @@
---
+---
 title: Responsible AI FAQs for SharePoint Agreements
 ms.author: chucked
 author: chuckedmonson
