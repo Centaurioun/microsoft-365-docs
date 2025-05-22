@@ -80,7 +80,7 @@ After reactivation, the site moves back to the **Active sites** page. The site r
     Update needed: Screenshot still mentions reactivation cost and does not match current message in SPO Admin Center 
 --->
 
-    ![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../media/m365-archive/reactivate-site-example.png)
+![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../media/m365-archive/reactivate-site-example.png)
 
 When you reactivate a site, its permissions, lists, pages, files, folder-structure, site-level policies, and other metadata will revert to the prearchival state, except if files are deleted from archived sites. The only two exceptions are when files are deleted while the site is archived:
 
@@ -95,7 +95,7 @@ You can archive and reactivate sites by using the PowerShell cmdlet [**Set-SPOSi
 
 ## Change the archive status of a site via Graph API
 
-You can archive a site by using the Graph API **beta** endpoint [**site: archive**](https://learn.microsoft.com/en-us/graph/api/site-archive) or reactivate it by using the Graph API **beta** endpoint [**site: unarchive**](https://learn.microsoft.com/en-us/graph/api/site-unarchive).
+You can archive a site by using the Graph API **beta** endpoint [**site: archive**](https://learn.microsoft.com/graph/api/site-archive) or reactivate it by using the Graph API **beta** endpoint [**site: unarchive**](https://learn.microsoft.com/graph/api/site-unarchive).
 
 ## Site templates supported
 
