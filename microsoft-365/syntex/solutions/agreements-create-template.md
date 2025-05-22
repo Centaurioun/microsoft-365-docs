@@ -135,7 +135,7 @@ You can also allow users to manually input values with the **Document authors ca
 
 ## Automatically detect potential fields for templates
 
-Automatic field detection for templates uses AI to help template creators quickly identify and insert relevant fields into their templates. It scans the document, detects key content, and suggests fields for review and insertion—reducing manual effort and saving time.
+Automatic field detection for templates uses AI to help template creators quickly identify and insert relevant fields into their templates. It scans the document, detects key content, and suggests fields for review and insertion—reducing manual effort and saving time. To learn more about the AI used in the automatic field detection feature, see [Responsible AI FAQs for SharePoint Agreements](agreements-responsible-ai.md).
 
 ### Detect potential fields
 
