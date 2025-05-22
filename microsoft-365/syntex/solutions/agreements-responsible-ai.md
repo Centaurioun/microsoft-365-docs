@@ -32,7 +32,7 @@ This app includes an AI-driven feature designed to enhance your experience. To e
 
 ## FAQs for automatic field detection in templates
 
-What is automatic field detection in templates?
+#### What is automatic field detection in templates?
 
 Automatic field detection helps template creators quickly identify and insert relevant fields into their templates using AI. It scans documents, detects key content, and suggests fields for review and insertion—minimizing manual effort and saving time.
 
@@ -89,3 +89,9 @@ Evaluation: Successful output would either ignore the malicious prompt, or trigg
 - Ignored suggestions will reappear upon rerunning, allowing iterative refinement.
 
 - New field suggestions can be edited before insertion to ensure alignment with organizational standards
+
+
+<br>
+
+> [!div class="nextstepaction"]
+> [See the complete list of help documentation.](agreements-overview.md#help-documentation)
