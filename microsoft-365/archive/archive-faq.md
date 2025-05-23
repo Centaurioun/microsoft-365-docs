@@ -60,9 +60,9 @@ No, if you purchase additional storage packs you won't get reimbursed for any un
 
 #### If I am under my tenant storage quota for Archive and Standard storage combined, will I be charged?
 
-In an EDU tenant, you won't be charged for archive storage as long as your combined storage (standard storage plus archive storage) does not exceed your pooled storage quota. For more information, see [Education offering for Microsoft 365 Archive](archive-education-offering.md).
+You won't be charged for archive storage as long as your combined storage (standard storage plus archive storage) does not exceed your standard storage quota. For more information, see [Pricing model for Microsoft 365 Archive](archive-pricing.md).
 
-In any other tenant you pay for archive storage according to the pricing model independent of your standard storage consumption. For more information, see [Pricing model for Microsoft 365 Archive](archive-pricing.md).
+In eligible EDU tenants, the pooled storage quota is applied. For more information, see [Education offering for Microsoft 365 Archive](archive-education-offering.md#pooled-storage-eligibility).
 
 #### Does archived content get returned in Copilot for Microsoft 365 queries?
 
