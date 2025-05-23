@@ -29,20 +29,21 @@ ms.date: 05/22/2025
 > [!IMPORTANT]
 > This article applies only to volume licensing (VL) invoices for non-Azure products bought under a direct VL agreement type, except for Microsoft Products & Services Agreements (MPSA), Federal Government, Special agreements, and Select Plus agreements.
 
-The invoice for your VL subscription provides a summary of charges and instructions for how to pay your invoice. You can view the invoice online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a>. You can also download a copy of your invoice in the Portable Document Format (PDF) to send via email.
+The invoice for your VL subscription provides a summary of charges and instructions for how to pay your invoice. You can view the invoice online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. You can also download a copy of your invoice in the Portable Document Format (PDF) to send via email.
 
 ## Before you begin
 
-To access VL invoices in the Microsoft 365 admin center, you must satisfy both of the following conditions:
+To access VL invoices in the admin center, you must satisfy both of the following conditions:
 
 1. You must be the **Bill To contact** for the corresponding contracts.
-2. You must have signed in to the Microsoft 365 admin center and become an Invoice Reader.
+2. You must have signed in to the admin center and become an Invoice Reader.
 
 ## View or download your invoice
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_)blank">Microsoft 365 admin center</a>, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page.
-2. Select the **Volume licensing** tab, then select **Contracts**.
-3. Find the contract you want to see invoices for, select the three dots (more actions), then select **View Invoices**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page.
+2. Select the **Volume licensing** tab, then select <a href="
+https://go.microsoft.com/fwlink/p/?linkid=2297440" target="_blank">Contracts</a>.
+3. Find the contract you want to see invoices for, select the three dots (More actions), then select **View Invoices**.
 4. On the **Invoices** page, you see the list of invoices generated for that contract. You can download the invoice PDF and invoice recon file. For information about the invoice recon file, see [Overview of the invoice recon file](#overview-of-the-invoice-recon-file) later in this article.
 
 ## Overview of the invoice PDF
@@ -158,13 +159,13 @@ In this section:
 [How do I request permission to view volume licensing invoices?](#how-do-i-request-permission-to-view-volume-licensing-invoices)<br/>
 [How often and when am I billed?](#how-often-and-when-am-i-billed)<br/>
 [Why is my total due different from last billing period?](#why-is-my-total-due-different-from-last-billing-period)<br/>
-[What is the tax rate applied to my invoice?](#what-is-the-tax-rate-applied-to-my-invoice)
+[What is the tax rate applied to my invoice?](#what-is-the-tax-rate-applied-to-my-invoice)<br/>
 
 ### What type of invoices can I see?
 
 You can see two types of invoice documents issued by Microsoft: debit invoices and credit memos.
 
-The Microsoft 365 admin center doesn't display invoices for volume licenses purchased via Microsoft License Solution Partners or for orders relating to Microsoft Product and Services Agreement (MPSA), Federal Government, Special Agreements, and Select Plus agreement types.
+The admin center doesn't display invoices for volume licenses purchased via Microsoft License Solution Partners or for orders relating to Microsoft Product and Services Agreement (MPSA), Federal Government, Special Agreements, and Select Plus agreement types.
 
 ### Who receives volume licensing invoices by email?
 
@@ -195,9 +196,9 @@ There are several reasons that you might not see an invoice:
 
 ### How do I request permission to view volume licensing invoices?
 
-The invoice reader role is automatically assigned in Microsoft 365 admin center to the **Bill To Contact** named in the agreement contract submitted by your Microsoft Partner or seller at the time of contract creation.
+The invoice reader role is automatically assigned in the admin center to the **Bill To Contact** named in the agreement contract submitted by your Microsoft partner or seller at the time of contract creation.
 
-The role can't be assigned / removed by another volume licensing administrator. To change the contact Bill To requires your Microsoft Partner or seller to complete a Change of Contact Information Request to update the legal participants, or contacts. Contact your Microsoft partner or seller for more information.
+The role can't be assigned or removed by another VL Administrator. To change the contact Bill To requires your Microsoft partner or seller to complete a Change of Contact Information Request to update the legal participants, or contacts. Contact your Microsoft partner or seller for more information.
 
 ### How often and when am I billed?
 
@@ -222,7 +223,7 @@ For more information, contact your Microsoft partner or seller.
 > [!IMPORTANT]
 > Microsoft Volume Licensing Support teams don't make changes to volume licensing orders or invoices.
 
-For help signing in to the Microsoft 365 admin center and locating VL invoices, Bill to Contacts and Invoice Readers, submit a case in the admin center > <a href=
+For help finding VL invoices, Bill to Contacts and Invoice Readers, submit a case in the admin center > <a href=
 "https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](contact-vl-support.md).
 
 Customers should contact their Microsoft partner or seller for questions relating to the following issues:

@@ -27,7 +27,7 @@ Customers can view and manage their Microsoft volume licensing (VL) agreements w
 
 ## Before you begin
 
-You must have a VL role to access the VL pages in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.  
+You must have a VL role to access the VL pages in the Microsoft 365 admin center.  
 
 VL roles are assigned by one of the following people:
 
@@ -35,7 +35,7 @@ VL roles are assigned by one of the following people:
 - An administrator of the VL agreement who adds you as a user and invites you to sign in to register.
 
 > [!NOTE]
-> Global Administrators in the Microsoft 365 admin center don't have access to VL features. It's up to the VL agreement administrator to add any users, including global administrators, who might want access to specific license IDs. For more information, see [Commonly used Microsoft 365 admin center roles](../../admin/add-users/about-admin-roles.md#commonly-used-microsoft-365-admin-center-roles), and [Volume licensing roles](../../admin/add-users/about-admin-roles.md#volume-licensing-roles).
+> Global Administrators in the admin center don't have access to VL features. It's up to the VL agreement administrator to add any users, including Global Administrators, who might want access to specific license IDs. For more information, see [Commonly used Microsoft 365 admin center roles](../../admin/add-users/about-admin-roles.md#commonly-used-microsoft-365-admin-center-roles), and [Volume licensing roles](../../admin/add-users/about-admin-roles.md#volume-licensing-roles).
 
 ## Where to sign in to view and manage your volume licenses
 
@@ -59,14 +59,15 @@ The first time that you register a VL agreement, use the following steps:
     > Users with existing VL permissions, or who manage online services, should use the sign in with the same ID so that all their licensing contracts and online services are accessed with one ID.
 
 3. Go to the business email mentioned in the welcome email and find an email with the subject line "Registration successful: Welcome to Microsoft admin center."
-4. Select **Get Started** to go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then select **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a>.
+4. Select **Get Started** to go to Microsoft 365 admin center.
+5. Go to the **Billing** > **Your products** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
 
 > [!NOTE]
 > We highly recommend that you select **Role Assignments** and immediately add another VL Administrator for each contract ID.
 
 ### If you previously registered a volume licensing agreement
 
-After you register a VL agreement in the Microsoft 365 admin center, no new welcome emails are sent for subsequent agreements or license IDs that list you as a VL contact with the same business email address. More licenses are automatically available in the Microsoft 365 admin center on the **Billing** > **Your Products** > **Volume Licensing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2297440" target="_blank">Contracts</a> page.
+After you register a VL agreement in the admin center, no new welcome emails are sent for subsequent agreements or license IDs that list you as a VL contact with the same business email address. More licenses are automatically available in the admin center on the **Billing** > **Your Products** > **Volume Licensing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2297440" target="_blank">Contracts</a> page.
 
 ## Who receives the volume licensing welcome email?
 
@@ -96,11 +97,11 @@ This section explains how to resolve issues that you might encounter when you tr
 
 ### You’re redirected to the Azure portal when you sign in
 
-When you try to sign in to the Microsoft 365 admin center, you might be redirected to the Azure portal (azure.microsoft.com) instead, and are unable to access your VL information. This redirect happens because of your organization’s Outlook settings and isn’t something that Microsoft’s VL support team can resolve. Ask your IT administrators to check the safe links list in their Microsoft Defender policy settings. For more information, see [Set up Safe Links policies in Microsoft Defender for Office 365](/defender-office-365/safe-links-policies-configure). If you need help with configuring Outlook safe settings, you can open a [technical support request](https://support.serviceshub.microsoft.com/supportforbusiness/create).
+When you try to sign in to the admin center, you might be redirected to the Azure portal (azure.microsoft.com) instead, and are unable to access your VL information. This redirect happens because of your organization’s Outlook settings and isn’t something that Microsoft’s VL support team can resolve. Ask your IT administrators to check the safe links list in their Microsoft Defender policy settings. For more information, see [Set up Safe Links policies in Microsoft Defender for Office 365](/defender-office-365/safe-links-policies-configure). If you need help with configuring Outlook safe settings, you can open a [technical support request](https://support.serviceshub.microsoft.com/supportforbusiness/create).
 
 ### An error occurred while setting up your profile
 
-If you can't sign in to the Microsoft 365 admin center, and repeatedly see the message "An error occurred while setting up your profile. Please refresh the page to try again," you might be trying to sign in with an invalid account type. Invalid account types include the following accounts:
+If you can't sign in to the admin center, and repeatedly see the message "An error occurred while setting up your profile. Please refresh the page to try again," you might be trying to sign in with an invalid account type. Invalid account types include the following accounts:
 
 - A Microsoft account (MSA). This account type is personal to you and isn't manged by your work organization. For example, you might sign in to a Microsoft service like email or Xbox with a log In ID like \<user>\@gmail.com or \<user>\@outlook.com. You must sign in with a Microsoft Entra ID instead.
 - A self-service Microsoft Entra ID created when signing up for a cloud service. This account might look like it belongs to your work organization, but your organization has yet to take over or become the admin of the email domain to convert it into a Microsoft Entra ID.
@@ -126,11 +127,12 @@ After your organization converts your account to a managed Microsoft Entra ID, o
 
 ### I don’t see the volume licensing page in the Microsoft 365 admin center
 
-If you don't see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> page after you sign in to the Microsoft 365 admin center, you can try the following actions to resolve it:
+If you don't see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> page after you sign in to the admin center, you can try the following actions to resolve it:
 
-- **Use the correct URL:** Verify that you're going to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then select **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a>.
+- **Use the correct URL:** Verify that you're going to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, then go to the **Billing** > **Your products** page and select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
 
   - If you don't see **Billing**, go to the bottom of the navigation menu, select **View all**, and then pin the **Billing** option to the navigation menu.
+
 - **Use the correct role:** You might have access to the admin center because of a different role.
 
   - If you're a VL user, verify that you completed the license registration by selecting the link in the welcome email that you received.  
@@ -140,7 +142,7 @@ If you don't see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144"
 
 ### My volume licensing welcome email is invalid
 
-The old Volume Licensing Service Center (VLSC) was retired in April 2024, and all existing customers were migrated to the Microsoft 365 admin center. If you received an invitation to the VLSC before April 2024 but haven't yet registered your account in the site, the invitation is now invalid. If you still need permissions to view and manage a VL agreement, ask a VL Administrator in your organization to add you as a VL user. For more information, see [Manage volume licensing user roles](manage-user-roles-vl.md).
+The old Volume Licensing Service Center (VLSC) was retired in April 2024, and all existing customers were migrated to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. If you received an invitation to the VLSC before April 2024 but haven't yet registered your account in the site, the invitation is now invalid. If you still need permissions to view and manage a VL agreement, ask a VL Administrator in your organization to add you as a VL user. For more information, see [Manage volume licensing user roles](manage-user-roles-vl.md).
 
 If there's no administrator for that agreement, ask the VL support team to create a new VL profile for you. You must be able to confirm the following information:
 

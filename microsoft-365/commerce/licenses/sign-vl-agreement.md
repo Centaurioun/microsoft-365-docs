@@ -26,13 +26,12 @@ ms.date: 05/22/2025
 When you sign a volume licensing (VL) agreement with Microsoft, there are three signature options available: Adobe Sign Electronic (Simple), Adobe Sign Digital, Adobe Sign Physical Signature, and Adobe Sign Digital.
 
 > [!NOTE]
-> The person who signs the contract doesn't have to be the same person who administers the VL agreement in the volume licensing section of the Microsoft 365 admin center.
+> The person who signs the contract doesn't have to be the same person who administers the VL agreement in the VL section of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ## Before you begin
 
-You must have the authority to sign a VL agreement on behalf of your organization.
-
-Signing an agreement doesn't automatically result in access to the agreement in the Microsoft 365 admin center, unless you're assigned a VL role.
+- You must have the authority to sign a VL agreement on behalf of your organization.
+- Signing an agreement doesn't automatically result in access to the agreement in the Microsoft 365 admin center, unless you're assigned a VL role.
 
 ## Ensure you can receive the Agreement Signature email
 
@@ -225,7 +224,7 @@ After you electronically sign a VL agreement, you must wait for it to become act
 > [!NOTE]
 > Resellers typically place orders soon after a VL agreement becomes active, but this isn't always the case.
 
-After the agreement is activated, the people named on the agreement receive a welcome email from Microsoft inviting them to register the agreement in the Microsoft 365 admin center to access and manage the agreements. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
+After the agreement is activated, the people named on the agreement receive a welcome email from Microsoft inviting them to register the agreement in the admin center to access and manage the agreements. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
 
 Remember, the person named on the agreement by the reseller to manage licenses in the admin center might, or might not be the same person who signed the agreement.
 

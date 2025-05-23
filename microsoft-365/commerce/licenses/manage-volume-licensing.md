@@ -61,13 +61,13 @@ The Microsoft licensing offers listed in this section are managed separately fro
 
 Licenses purchased via the Microsoft Product Services Agreement (MPSA) are registered and managed in the [Microsoft Business Center](https://businessaccount.microsoft.com/customer).
 
-If you see an **MPSA products** tab in **Microsoft 365 admin center** > **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, those licenses are administered separately from the VL contracts available on the **Volume licensing** tab.
+If you see an **MPSA products** tab in the admin center on the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, those licenses are administered separately from the VL contracts available on the **Volume licensing** tab.
 
 For more information about administering MPSA Purchase Accounts, see [Business Center Training & Resources | Microsoft Volume Licensing](https://www.microsoft.com/licensing/existing-customer/business-center-training-and-resources).
 
 ### Microsoft Customer Agreement for Enterprise
 
-Licenses purchased under a Microsoft Customer Agreement for Enterprise (MCA-E) are invoiced and administered separately from licenses displayed in the VL pages of the Microsoft 365 admin center. For more information, see [Set up billing for Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-setup-account).
+Licenses purchased under a Microsoft Customer Agreement for Enterprise (MCA-E) are invoiced and administered separately from licenses displayed in the VL pages of the admin center. For more information, see [Set up billing for Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-setup-account).
 
 ## Contact volume licensing support
 
