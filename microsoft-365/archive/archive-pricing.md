@@ -18,9 +18,9 @@ description: Learn about the pricing model for storage consumption and site reac
 
 # Pricing model for Microsoft 365 Archive
 
-Microsoft 365 Archive charges you for storage and reactivation.
+Microsoft 365 Archive charges you for storage.
 
-- **Storage consumption** that is charged at a per-GB monthly rate. This meter is charged only when archived storage plus active storage in SharePoint exceeds the included or licensed allocated SharePoint storage capacity limit of the tenant. In other words, there's no additional storage cost for archived sites if the tenant has not consumed its already licensed storage quota. For more information about storage capacity limits, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
+Storage consumption is charged at a per-GB monthly rate. This meter is charged only when archived storage plus active storage in SharePoint exceeds the included or licensed allocated SharePoint storage capacity limit of the tenant. In other words, there's no additional storage cost for archived sites if the tenant has not consumed its already licensed storage quota. For more information about storage capacity limits, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
 
 > [!NOTE]
 > The reactivation fee for archived sites or content in SharePoint was eliminated on March 31, 2025. After that date, reactivating archived sites became free of charge, but re-archiving any newly reactivated content is restricted for a four-month period. This change doesn't apply to OneDrive accounts. For more information, see the [Microsoft 365 Archive blog](https://techcommunity.microsoft.com/blog/microsoft_365_archive_blog/microsoft-365-archive-eliminates-reactivation-fees-by-march-31-2025/4383215).
@@ -49,15 +49,16 @@ The Microsoft 365 Archive pricing calculator, when calculating the potential cos
 
 - The average archive storage expected to be consumed annually, in terabytes (TB)
 
-- The percentage of archived content expected to be reactivated annually, in percentage (%)
-
-- The annual frequency of reactivations for expected percentage reactivation, expressed as a count (number of times per year)
-
-- The storage, archive, and reactivation costs per gigabyte/per gigabyte per month, as applicable
+- The storage cost per gigabyte/per gigabyte per month, as applicable
 
 ### Using the pricing calculator
 
 To use the Microsoft 365 Archive pricing calculator, you need to perform the following steps. Information about how to collect data from each of these steps is detailed later in this article.
+
+<!---
+Update needed:
+ The pricing calculator still includes reactivation fees.
+--->
 
 1. Download the latest version of the [Microsoft 365 Archive pricing calculator tool](https://aka.ms/Microsoft365ArchiveCostCalculator).
 
@@ -72,12 +73,6 @@ To use the Microsoft 365 Archive pricing calculator, you need to perform the fol
 When using the Microsoft 365 Archive pricing calculator, be aware of the following points:
 
 - In the Microsoft 365 Archive pricing calculator, any Excel spreadsheet cell that is colored orange can have data entered.
-
-### Cost savings using Microsoft 365 Archive
-
-The following table helps visualize the savings you realize by archiving content based on the frequency and percent of all archived content you're restoring. The key takeaway is that if you aren't reactivating more than 30% of your data more than twice a year, you achieve most of the savings offered by the product.
-
-![Table showing the COGS savings if you archive with Microsoft 365 Archive.](../media/m365-archive/archive-cogs-savings.png)
 
 ## Billing scenarios
 
