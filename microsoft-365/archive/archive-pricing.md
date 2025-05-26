@@ -87,3 +87,7 @@ Your charges for Microsoft 365 Archive depend on your tenant’s standard storag
 |**E**     |Tenant’s total data (standard + archive) is less than their standard storage quota.         |No additional costs.         |
 
 ![Diagram showing comparisons for five archive billing scenarios.](../media/m365-archive/archive-billing-scenarios-diagram2.png)
+
+## Pricing for unlicensed OneDrives
+
+ Archive storage for unlicensed OneDrives is billed per GB of archived data per month. Reactivation of archived OneDrives is billed per GB of reactivated data per reactivation. For more information, see [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services#storage-services).
