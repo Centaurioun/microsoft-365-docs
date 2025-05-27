@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ebamoh
-ms.date: 03/17/2025
+ms.date: 05/12/2025
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,48 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## May 2025
+
+### Updated settings for "Configure Microsoft Edge profile for Windows 10 and later" deployment sub-task
+
+We've updated the existing "Configure Microsoft Edge profile for Windows 10 and later" sub-task by adding two new underlying settings&mdash;AutoFill Credit Card and Enhance Security&mdash;that deploy a Microsoft Intune device configuration profile to optimize user security in Microsoft Edge. These new settings offer better protection of tenant devices when browsing and working online, which helps strengthen your security posture while ensuring a seamless user experience.
+
+This update may change the compliance status of the "Configure Microsoft Edge profile for Windows 10 and later" sub-task to **Not compliant** for some customer tenants. To bring the sub-task back into compliance, go to the **Tenants** page, select a "Not compliant" tenant, and then select the **Deployment plan** tab. Locate and expand the "Configure Microsoft Edge" task, select the "Configure Microsoft Edge profile for Windows 10 and later" sub-task, and then select **Deploy**.
+
+If you previously cloned the "Configure Microsoft Edge" deployment task as part of any custom baselines, you'll need to re-clone the updated task from the default baseline for each of those custom baselines.
+
+With this update to the existing "Configure Microsoft Edge profile for Windows 10 and later" sub-task, the **Detection history** tab displays data based on the updated sub-task. Detection history based on the pre-updated sub-task is no longer available.
+
+To learn more, see [Microsoft Edge security for your business](/deployedge/ms-edge-security-for-business).
+
+## April 2025
+
+### Pin subscriptions to prioritize key renewals
+
+You can now pin subscriptions on the **Subscription renewals** page in Microsoft 365 Lighthouse to keep high-priority renewals front and center. This gives you more control over your workflow and helps align renewal efforts with your strategy.
+
+Pinned subscriptions appear at the top of the subscriptions list on the **High Priority** tab, and you'll also see a pin next to the subscription on the appropriate **Upcoming** or **Expired** tab, making them easy to access and manage. The pins remain until you manually remove them.
+
+To check out the new pinning feature, in the left navigation pane in Lighthouse, select **Subscription renewals**. On any tab, click in the **Pin** column next to a subscription to pin it.
+
+[Go to the Subscription renewals page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/UpcomingRenewals.ReactView)
+
+## March 2025
+
+### Updated Assigned roles page
+
+We've updated the **Assigned roles** page in Microsoft 365 Lighthouse. This page shows your assigned roles and helps you understand the actions you can perform in Lighthouse:
+
+- **Lighthouse RBAC roles:** Determine the data you can access and change within your partner tenant. Lighthouse roles don't provide access to customer data.
+
+- **Microsoft Entra roles:** Provide access to customer data based on the granular delegated administrative privileges (GDAP) relationships you set up with your customers.
+
+To view your assigned roles, in the left navigation pane in Lighthouse, select **Roles** > **Assigned roles**.
+
+[Go to the Assigned roles page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/AssignedRoles.ReactView)
+
+To learn more, see [View your assigned roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).
 
 ## February 2025
 
@@ -396,8 +438,6 @@ To see the insights, go to any of these pages in Lighthouse.
 ### Windows event logs
 
 The **Windows event logs** page in Microsoft 365 Lighthouse uses artificial intelligence (AI) to generate suggestions for mitigating issues found in Windows event logs. The "Collect Windows event logs" baseline enables collection of managed device event logs. After records have been ingested, you can view them by selecting **Devices** > **Windows event logs** in the left navigation pane in Lighthouse. To see additional details, select any log entry.
-
-[Go to the Windows event logs page now](https://lighthouse.microsoft.com/view/Microsoft_Intune_MTM/WindowsEventLogs.ReactView)
 
 ### Quick actions on the Home page
 

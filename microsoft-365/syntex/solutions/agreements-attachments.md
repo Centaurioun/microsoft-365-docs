@@ -20,7 +20,7 @@ description: Learn how to manage attachments in the SharePoint Agreements soluti
 
 # Manage attachments in SharePoint Agreements
 
-Attachments are files related to the agreement and are also commonly referred to as supporting documents. Typically attachments might be meeting minutes, financial documents, emails, or other types that contribute the agreement package.
+Attachments are files related to the agreement and are also commonly referred to as supporting documents. Typically attachments might be meeting minutes, financial documents, emails, or other types that contribute the agreement package. 
 
 ## Add an attachment
 
@@ -32,9 +32,9 @@ To add an attachment, follow these steps:
 
 2. From the **Agreements** tab, select the agreement to which you wish to add an attachment.
 
-3. With the agreement viewer panel now open, select **Attachments** in the upper right of the panel.
+3. With the agreement viewer panel now open, select **Details** > **Attachments**.
 
-4. From the **Attachments** panel, select **Add attachment** to open the file picker.
+4. From the **Attachments** panel, select **Add attachments** to open the file picker.
 
 5. Browse to the location of the attachment, and then choose one or more files to attach to the agreement.
 
@@ -46,6 +46,7 @@ To add an attachment, follow these steps:
 > The supported file types for attachments are Adobe .pdf, Microsoft Office files including Word, Excel and PowerPoint, and email files in Outlook or Gmail format. Attempting to add unsupported files results in an error.<br><br>
 > When you add a file to an attachment, only one instance of the same file can be attached. Duplicates generate a warning.<br><br>
 > Attachments added to an agreement have the same access permissions as the agreement to which they're attached.
+> Attachments can be added to an agreement in any state, before or after they have been signed. 
 
 ## View or open an attachment
 
@@ -55,9 +56,10 @@ To view the attached files from with in the Agreements teams app, follow these s
 
 2. From the **Agreements** tab, select an agreement which has the attachment icon next to the filename.
 
-3. With the agreement viewer panel now open, select **Attachments** in the upper right of the panel.
+3. With the agreement viewer panel now open, select **Details** > **Attachments**.
 
    ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-attachments.png)
+
 
 4. From the **Attachments** panel, select the attachment you want to view and it loads in the viewer.
 
@@ -75,7 +77,7 @@ To delete an existing attachment from an agreement, follow these steps:
 
 2. From the **Agreements** tab, select an agreement which has the attachment icon next to the filename.
 
-3. With the agreement viewer panel now open, select **Attachments** in the upper right of the panel.
+3. With the agreement viewer panel now open, select **Attachments** from the **Details** dropdown.
 
 4. From the **Attachments** panel, select **More options** (***...***) next to the name of the attachment you want to remove, and then select **Delete**.
 

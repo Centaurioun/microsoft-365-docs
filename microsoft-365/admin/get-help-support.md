@@ -9,12 +9,13 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
 - Adm_O365
 - Adm_TOC
+- ContentEnagagementFY25
 ms.custom: 
 - VSBFY23
 - AdminSurgePortfolio
@@ -62,6 +63,9 @@ Save time by starting your service request online. We can help you find a soluti
 3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
 4. If the results don't help, at the bottom, select **Contact Support**.
 5. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Contact support** pane.
+
+> [!NOTE]
+> For a smoother support experience, we recommend that you open separate support requests for each issue.
 
 ## Phone support
 
