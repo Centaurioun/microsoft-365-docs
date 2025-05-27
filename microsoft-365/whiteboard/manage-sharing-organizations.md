@@ -94,6 +94,12 @@ When you share whiteboards from the web, desktop, or mobile clients, you can cho
 |Create the whiteboard from a Surface Hub running [Windows 10 Team edition](/surface-hub/surface-hub-3-faq)|Storage: Local<br><br>Owner: None (Unless user sign ins to save and share the board, which saves to OneDrive for Business)|Not applicable (only applies to meetings)|In-tenant users: User must sign in to save and share the board<br><br>External users: Sharing with external users isn't supported at this time outside of a Teams meeting|
 |Create the whiteboard from Microsoft Teams Rooms|Storage: Temporary local storage. A local whiteboard will be removed if it isn't saved<br><br>Owner: None (unless the Whiteboard is escalated to start a meeting or Save and a non-MTR in-tenant user joins the meeting, at which point the whiteboard is saved to their OneDrive for Business)|Not applicable (only applies to meetings)|In-tenant users: Can initiate and view, as well as collaborate if the Whiteboard is escalated to start a meeting or Save<br><br>External users: Can view and collaborate during the meeting only if the Whiteboard is escalated to start a meeting or Save<br><br>Shared device accounts: Can initiate and view, as well as collaborate (as long as the Whiteboard is escalated to start a meeting or Save, and a non-Teams Rooms participant has joined, thereby causing the Whiteboard to be saved to the OneDrive for Business and thereby become collaborative)|
 
+## Enabling Sharing for Microsoft Teams Room Devices in SharePoint.
+
+To enable sharing for Microsoft Teams Room device, ensure the relevant sharing setting are configured in SharePoint.
+
+[Manage sharing settings for SharePoint and OneDrive in Microsoft 365](/sharepoint/turn-external-sharing-on-or-off)
+
 ## See also
 
 [Manage access to Whiteboard](manage-whiteboard-access-organizations.md)
