@@ -60,9 +60,9 @@ No, if you purchase additional storage packs you won't get reimbursed for any un
 
 #### If I am under my tenant storage quota for Archive and Standard storage combined, will I be charged?
 
-In an EDU tenant, you won't be charged for archive storage as long as your combined storage (standard storage plus archive storage) does not exceed your pooled storage quota. For more information, see [Education offering for Microsoft 365 Archive](archive-education-offering.md).
+You won't be charged for archive storage as long as your combined storage (standard storage plus archive storage) does not exceed your standard storage quota. For more information, see [Pricing model for Microsoft 365 Archive](archive-pricing.md).
 
-In any other tenant you pay for archive storage according to the pricing model independent of your standard storage consumption. For more information, see [Pricing model for Microsoft 365 Archive](archive-pricing.md).
+In eligible EDU tenants, the pooled storage quota is applied. For more information, see [Education offering for Microsoft 365 Archive](archive-education-offering.md#pooled-storage-eligibility).
 
 #### Does archived content get returned in Copilot for Microsoft 365 queries?
 
@@ -70,7 +70,11 @@ No, archived content isn't used by Copilot for Microsoft 365.
 
 #### Can you delete an archived site, should you no longer need it?  
 
-Yes, you can directly delete an archived site without the need to reactivate. 
+You can directly delete an archived site without the need to reactivate, if it is a **group connected site**.
+- In SharePoint Admin Center: Delete the site, the associated M365 Group is automatically deleted as well.
+- Using PowerShell and Graph API: Delete the M365 Group, the associated sites ist automatically deleted as well. Deleting only the site (but not the group) is not possible.
+
+Deleting **sites that are not connected to a group** (e.g. STS#0) from archived state is not possible. These sites require reactivation to be deleted.
 
 #### Can archived content in legal hold be deleted?
 
