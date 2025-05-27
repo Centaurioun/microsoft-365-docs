@@ -20,24 +20,21 @@ description: Learn about the pricing model for storage consumption and site reac
 
 Microsoft 365 Archive charges you for storage.
 
-Storage consumption is charged at a per-GB monthly rate. This meter is charged only when archived storage plus active storage in SharePoint exceeds the included or licensed allocated SharePoint storage capacity limit of the tenant. In other words, there's no additional storage cost for archived sites if the tenant has not consumed its already licensed storage quota. For more information about storage capacity limits, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
+Storage consumption is charged at a per-GB monthly rate. This meter is charged only when archived storage plus active storage in SharePoint exceeds the included or licensed allocated SharePoint storage capacity limit of the tenant. In other words, there's no additional storage cost for archived sites if the tenant hasn't consumed its already licensed storage quota. For more information about storage capacity limits, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
 
 > [!NOTE]
 > The reactivation fee for archived sites or content in SharePoint was eliminated on March 31, 2025. After that date, reactivating archived sites became free of charge, but re-archiving any newly reactivated content is restricted for a four-month period. This change doesn't apply to OneDrive accounts. For more information, see the [Microsoft 365 Archive blog](https://techcommunity.microsoft.com/blog/microsoft_365_archive_blog/microsoft-365-archive-eliminates-reactivation-fees-by-march-31-2025/4383215).
 
 Monthly archive usage is calculated as the sum of the usage of all currently archived sites. Each site’s usage is equal to the site storage usage of that site, which can be seen on the site itself or from the Active sites page in the SharePoint admin center. The size of an archived site, and therefore the storage for which it’s billed, changes only if the content in the site changes. For example, content naturally expiring in the recycle bin or a retention policy deleting content within the site directly from archive to the recycle bin.
 
-To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services).
-
-> [!NOTE]
-> Unlicensed archived OneDrive sites cannot use additional SharePoint storage to bypass archive costs. For more information, see [Manage unlicensed OneDrive user accounts](/SharePoint/unlicensed-onedrive-accounts#frequently-asked-questions).
+To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services#storage-services).
 
 ## Pricing calculator
 
 The Microsoft 365 Archive pricing calculator is a tool that helps you estimate the costs that you incur to archive your Microsoft 365 data.
 
 > [!NOTE]
-> The tool is not intended to provide an exact prediction of your archive costs, but rather to give you an estimate based estimated usage data provided by you.
+> The tool isn't intended to provide an exact prediction of your archive costs, but rather to give you an estimate based estimated usage data provided by you.
 
 ### Pricing calculator overview
 
@@ -88,3 +85,11 @@ Your charges for Microsoft 365 Archive depend on your tenant’s standard storag
 
 ![Diagram showing comparisons for five archive billing scenarios.](../media/m365-archive/archive-billing-scenarios-diagram2.png)
 
+## Pricing for unlicensed OneDrives
+
+ Archive storage for unlicensed OneDrives is billed per GB of archived data per month. Reactivation of archived OneDrives is billed per GB of reactivated data per reactivation. For more information, see [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services#storage-services).
+
+ > [!NOTE]
+> Unlicensed archived OneDrive sites can't use additional SharePoint storage to bypass archive costs. For more information, see [Manage unlicensed OneDrive user accounts](/SharePoint/unlicensed-onedrive-accounts#frequently-asked-questions).
+
+ For EDU tenants, pooled storage is applied. For more information, see [Education offering for Microsoft 365 Archive](./archive-education-offering.md).
