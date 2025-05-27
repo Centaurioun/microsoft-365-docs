@@ -37,7 +37,7 @@ If you disable optional connected experiences, this action prevents anyone in yo
 > [!NOTE]
 > Your users can individually turn off optional connected experiences by changing their account privacy settings, even if you have enabled optional connected experiences for your users. For more information, see [Your privacy settings](/microsoft-365-apps/privacy/optional-connected-experiences#your-privacy-settings).
 
-Scheduled prompts are supported by the Microsoft 365 environment in Power Platform. This environment is automatically created when a user creates a scheduled prompt for the first time. To learn more about permissions, access, and data policies, see [Power Platform security roles and privileges](/power-platform/admin/security-roles-privileges) 
+Scheduled prompts are supported by the Microsoft 365 environment in Power Platform. This environment is automatically created when a user creates a scheduled prompt for the first time. To learn more, see [Microsoft 365 environment for Scheduled Prompts](scheduled-prompts-environment.md)
 
 ## Disabling scheduled prompts
 
@@ -56,7 +56,7 @@ For admins with Global Administrator and Power Platform Administrator roles, you
 
 :::image type="content" source="media/scheduled-prompts-save.png" alt-text="Screenshot showing the setup text for a new scheduled prompt in Copilot." lightbox="media/scheduled-prompts-save.png":::
 
-Your users can find the scheduled prompts feature by hovering over a prompt they've submitted to Copilot. When a user selects the `Save and activate` button to confirm the scheduled prompt, a user's prompt information is sent to the Power Automate and Power Platform system, and the [Power Automate terms of service and privacy policy](/power-platform/admin/wp-compliance-data-privacy) apply.
+Your users can find the scheduled prompts feature by hovering over a prompt they've submitted to Copilot. When a user selects the `Save` button to confirm the scheduled prompt, a user's prompt information is sent to the Power Automate and Power Platform system, and the [Power Automate terms of service and privacy policy](/power-platform/admin/wp-compliance-data-privacy) apply.
 
 To manage their scheduled prompts, users can follow these steps:
 
@@ -71,3 +71,9 @@ Users signed in with their work/school account can also turn off optional connec
 Users can schedule up to 10 prompts to run at specific times, with responses delivered to the Chat pane of their Microsoft 365 Copilot Chat experience. These prompts can be set to run on a recurring basis, ensuring users receive necessary information aligned with their workflow. Responses from scheduled prompts are bolded and have a recurring icon to help users identify them easily.
 
 To learn more about prompts for your users, see [Learn about Copilot prompts](https://support.microsoft.com/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5).
+
+## Legacy prompts
+
+With the general availability of the new Scheduled Prompts feature, we’ve transitioned to a new backend that no longer relies on Power Automate flows.
+
+As a result, Scheduled Prompts created during the public preview will continue to run until their set expiration but will not appear in the new management pane. To view or manage these legacy prompts, use Power Automate directly.
