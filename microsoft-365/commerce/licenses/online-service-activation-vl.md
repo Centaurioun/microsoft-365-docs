@@ -70,7 +70,7 @@ Every organization with a VL agreement with Microsoft has at least one Public Cu
 
 If there are no licenses for any Microsoft online services under your License ID, ask your Microsoft seller or partner to order the services for you.
 
-Alternatively, Enterprise, Enterprise Subscription, and US Government (USG) customers can get started immediately for many online services by placing a VL reservation. To learn more about VL reservations, see[Manage License Reservations for volume licensing](manage-license-reservations-vl.md).
+Alternatively, Enterprise, Enterprise Subscription, and US Government (USG) customers can get started immediately for many online services by placing a VL reservation. To learn more about VL reservations, see [Manage License Reservations for volume licensing](manage-license-reservations-vl.md).
 
 After the first online services order or a reservation is processed for a License ID, Microsoft either automatically assigns the services to your organization's tenant or invites the OSM to sign up for an online services account profile.  
 
@@ -96,7 +96,7 @@ If no Microsoft Entra tenant is detected and automatic assignment isn't possible
 You're presented with two options:
 
 1. Create a new online services profile (Microsoft Entra tenant) to assign the services to.\
-OR\
+OR
 2. Sign into an existing tenant and assign the services there.
 
 For troubleshooting help, see [Common reasons why you might not receive an activation email](#common-reasons-why-you-might-not-receive-an-activation-email).
@@ -174,8 +174,8 @@ The following list contains some common reasons why you might not see licenses a
 
 - It can take up to 24 hours from the start of the licensed usage date on the order or license reservation for services to become available.
 - Add-on subscriptions don't display if they aren't ordered on the same License ID as the base subscription. To resolve this scenario, contact your Microsoft partner or seller.
-- There are subscriptions on the existing account which aren't compatible with the subscriptions you now want to activate. For assistance, [contact volume licensing support](/licensing/contact-us).
-- The licenses were activated on the wrong Microsoft Entra tenant account. For assistance, [contact volume licensing support](/licensing/contact-us).
+- There are subscriptions on the existing account which aren't compatible with the subscriptions you now want to activate. For assistance, [contact volume licensing support](contact-vl-support.md).
+- The licenses were activated on the wrong Microsoft Entra tenant account. For assistance, [contact volume licensing support](contact-vl-support.md).
 - The service isn't available in the location where the Microsoft Entra ID account is set up. To resolve this scenario, contact your Microsoft partner or seller.
 
 ## Renew online services via volume licensing
@@ -223,7 +223,7 @@ To determine if the necessary VL agreement structure is in place, contact your M
 
 If you clicked an activation link in the service activation email while signed in to an existing Microsoft service, the licenses might be activated on the wrong tenant. This activation can also happen if you didn't realize the licenses would meet the criteria for automatic licenses assignment.
 
-Global Administrators can't move licenses from one Microsoft Entra tenant to another. [Contact support](/licensing/contact-us) to get help with a *tenant remap*. A tenant remap involves moving all subscriptions and License IDs associated with a PCN to a new organizational account that you provide. When a tenant remap occurs, no user data is migrated. Global Administrators might have to complete subscription management tasks after the licenses become available on the correct tenant.
+Global Administrators can't move licenses from one Microsoft Entra tenant to another. [Contact volume licensing support](contact-vl-support.md) to get help with a *tenant remap*. A tenant remap involves moving all subscriptions and License IDs associated with a PCN to a new organizational account that you provide. When a tenant remap occurs, no user data is migrated. Global Administrators might have to complete subscription management tasks after the licenses become available on the correct tenant.
 
 To ensure that support can quickly solve the incorrect activation issue, when you open the case, you must provide the following information:
 
@@ -234,7 +234,7 @@ To ensure that support can quickly solve the incorrect activation issue, when yo
 
 ## Contact volume licensing support
 
-Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contacting volume licensing support](/licensing/contact-us).
+Submit a case in the admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Help & Support</a>. If you can't access the admin center, see [Contact volume licensing support](/licensing/contact-us).
 
 ## Other resources
 

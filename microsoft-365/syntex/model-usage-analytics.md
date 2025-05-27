@@ -50,7 +50,7 @@ Regarding model usage analytics, note that:
 
 The **Classification by model** pie chart displays which models have classified the most files. It shows each published model as a percentage of the total files processed by all published models on the content center.
 
-Each model also shows the **Completeness Rate**, the percentage of uploaded files that were successfully analyzed by the model. A low completeness rate may mean that there are issues with either the model or the files that are being analyzed.
+Each model also shows the **Completeness Rate**, the percentage of uploaded files that were successfully analyzed by the model. A low completeness rate might mean that there are issues with either the model or the files that are being analyzed.
 
 ## Classification by library
 

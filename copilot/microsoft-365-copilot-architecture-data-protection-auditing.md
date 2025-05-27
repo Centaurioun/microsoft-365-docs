@@ -1,11 +1,11 @@
 ---
-title: Microsoft 365 Copilot data protection and auditing architecture
+title: Microsoft 365 Copilot data protection architecture
 f1.keywords:
 - NOCSH
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 02/13/2025
+ms.date: 05/27/2025
 audience: Admin
 ms.reviewer: mandia, bcarter, ruihu, cabailey
 ms.topic: overview
@@ -22,9 +22,9 @@ appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Architecture diagrams of licensed Microsoft 365 data protection, oversharing, and auditing features that affect Microsoft 365 Copilot
+# Architecture diagrams of Microsoft 365 data protection features that affect Microsoft 365 Copilot
 
-Microsoft 365 includes features that help you protect your data and audit usage, including Microsoft Purview sensitivity labels & encryption, and SharePoint oversharing controls. These features affect [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) and how Copilot interacts with your data.
+Your Microsoft 365 subscription includes features that help you protect your data, including Microsoft Purview sensitivity labels & encryption, and SharePoint oversharing controls. These features affect [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) and how Copilot interacts with your data.
 
 First and foremost, [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) honors your security & data protection controls. There are also features you can use to audit Copilot usage data.
 
@@ -65,7 +65,10 @@ Let's take a look:
 
 - Protection extends to data stored outside of your Microsoft 365 tenant when the file is opened in an Office app.
 
-  For example, there's a file with a sensitivity label saved outside of your Microsoft 365 tenant, like on a user's personal device, a network share, or in cloud storage. When this file is opened in an Office app, the protection settings go with the file.
+  For example, there's a file using a sensitivity label you and your admin team created. An end user saves this file outside of your Microsoft 365 tenant, like on their personal device, a network share, or in cloud storage. When this file is opened in an Office app, the protection settings go with the file.
+
+  > [!NOTE]
+  > User-defined sensitivity label permissions can block Copilot from extracting and interacting with the file content. For example, Copilot agents can't read files that have user-defined sensitivity label permissions.
 
 To learn more, see:
 
