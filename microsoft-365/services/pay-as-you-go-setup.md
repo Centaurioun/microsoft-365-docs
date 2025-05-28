@@ -77,7 +77,7 @@ To set up a pay-as-you-go service for Microsoft Syntex, follow the [steps for Mi
 
 8. On the **Review and finish** page, review all the information. If it looks good, select **Create policy**.
 
-Your billing policy is now created.
+    Your billing policy is now created.
 
 #### Step 2: Connect the billing policy to a pay-as-you-go service
 
