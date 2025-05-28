@@ -60,7 +60,7 @@ With SharePoint Agreements, you can:
 |[Create an agreement](agreements-create-agreement.md)    |Create an agreement from a template in Microsoft Teams and in Microsoft Word.         |
 |[Analyze section revisions](agreements-analyze-sections.md)    |Use the **Analyze section revisions** feature to detect changes in embedded sections, summarize the changes, and offer suggestions.       |
 |[Manage attachments](agreements-attachments.md)    |Manage supporting documents related to an agreement.         |
-|[Manage amendments](agreements-attachments.md)    |Learn how to add an amendment to an agreement.         |
+|[Manage amendments](agreements-amendments.md)    |Learn how to add an amendment to an agreement.         |
 |[View reports](agreements-reports.md)    |Learn about the reports that are available to monitor all agreements, their statuses, and other essential metrics.         |
 |[Receive approval notifications](agreements-notifications.md)    |Learn about approval notifications in the Approvals app and in email.         |
 |[Responsible AI FAQs](agreements-responsible-ai.md)    |Learn more about the AI features in the SharePoint Agreements app.        |
