@@ -31,7 +31,7 @@ Before setting up pay-as-you-go services, ensure you have the following informat
 
 - Appropriate admin roles: Global Administrator for accessing the Microsoft 365 admin center, and Owner or Contributor rights to the Azure subscription and resource group.
 
-To set up a pay-as-you-go service for Microsoft Syntex, follow the [setup guide for Microsoft Syntex](#setup-guide-for-microsoft-syntex). To set up a pay-as-you-go service for Microsoft 365 Copilot, follow the [setup guide for Microsoft 365 Copilot](#set-guide-for-microsoft-365-copilot).
+To set up a pay-as-you-go service for Microsoft Syntex, follow the [steps for Microsoft Syntex](#setup-guide-for-microsoft-syntex). To set up a pay-as-you-go service for Microsoft 365 Copilot, follow the [steps for Microsoft 365 Copilot](#set-guide-for-microsoft-365-copilot).
 
 ### Setup guide for Microsoft Syntex
 
