@@ -32,7 +32,7 @@ To add an attachment, follow these steps:
 
 2. From the **Agreements** tab, select the agreement to which you wish to add an attachment.
 
-3. With the agreement viewer panel now open, select **Details** > **Attachments**.
+3. With the agreement viewer panel now open, select **Attachments** from the **Details** dropdown.
 
 4. From the **Attachments** panel, select **Add attachments** to open the file picker.
 
@@ -56,9 +56,9 @@ To view the attached files from with in the Agreements teams app, follow these s
 
 2. From the **Agreements** tab, select an agreement which has the attachment icon next to the filename.
 
-3. With the agreement viewer panel now open, select **Details** > **Attachments**.
+3. With the agreement viewer panel now open, select **Attachments** from the **Details** dropdown.
 
-   ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-attachments.png)
+   ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-attachmentsdropdown.png)
 
 
 4. From the **Attachments** panel, select the attachment you want to view and it loads in the viewer.
