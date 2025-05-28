@@ -57,7 +57,7 @@ To set up a pay-as-you-go service for Microsoft Syntex, follow the [steps for Mi
 
 4. Select **Save** to complete the setup.
 
-### Set guide for Microsoft 365 Copilot
+### Setup guide for Microsoft 365 Copilot
 
 #### Step 1: Set up a billing policy
 
