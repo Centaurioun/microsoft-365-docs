@@ -36,21 +36,21 @@ To add an attachment, follow these steps:
 
 2.	From the **Agreements** tab, select the agreement to which you wish to add an amendment.
 
-3.	With the agreement viewer panel now open, select select **Details** > **Amendments**.
+3.	With the agreement viewer panel now open, select **Details** > **Amendments**.
 
 4.	From the Attachments panel, select **+ Signed amendment** to open the file picker.
 
-5.	Browse to the location of the amendment, and then select the file you’d like to add to the agreement
+5.	Browse to the location of the amendment, and then select the file you'd like to add to the agreement.
 
 6.	**Select** to upload the file and view in the viewer panel.
 
 7.	Input the required amendment effective date field value.
 
-8.	Modify any agreement details that have been altered by the uploaded amendment
+8.	Modify any agreement details that have been altered by the uploaded amendment.
 
-9.	**Save** to add the amendment to the selected agreement
+9.	**Save** to add the amendment to the selected agreement.
 
-![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-detailsdropdown.png)
+    ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-detailsdropdown.png)
 
 > [!NOTE]
 > Amendments can only be added to agreements that are both active and signed.
@@ -69,11 +69,11 @@ To view the attached files from with in the Agreements teams app, follow these s
    ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-amendmentsPanel.png)
 
 
-4. From the **Amendmnents** panel, select the amendments you want to view and it loads in the viewer.
+4. From the **Amendments** panel, select the amendments you want to view and it loads in the viewer.
 
 5. With the attachment file visible in the viewer you can return to the original agreement using the breadcrumb in the upper left, the **Return to agreement** button in the lower left, or you can clear the attachment from the attachments list.
 
-6. To open the attachment in the default client application, select the attachment from the list, select **More options** (***...***) next to the attachment name, and then select **Open**. For example, if the attachment is a Microsoft Word document it launches the Word client if installed.
+6. To open the attachment in the default client application, select the attachment from the list, select **More options** (***...***) next to the attachment name, and then select **Open**. For example, if the attachment is a Microsoft Word document, it launches the Word client if installed.
 
 
 
