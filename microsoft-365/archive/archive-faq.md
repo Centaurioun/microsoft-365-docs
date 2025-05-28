@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/04/2025
+ms.date: 05/27/2025
 ms.topic: faq
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -71,10 +71,12 @@ No, archived content isn't used by Copilot for Microsoft 365.
 #### Can you delete an archived site, should you no longer need it?  
 
 You can directly delete an archived site without the need to reactivate, if it's a **group connected site**.
-- In SharePoint Admin Center: Delete the site, the associated M365 Group is automatically deleted as well.
-- Using PowerShell and Graph API: Delete the M365 Group, the associated sites is automatically deleted as well. Deleting only the site (but not the group) isn't possible.
 
-Deleting **sites that are not connected to a group** (e.g. STS#0) from archived state isn't possible. These sites require reactivation to be deleted.
+- In SharePoint admin center: Delete the site, and the associated Microsoft 365 Group is automatically deleted as well.
+- 
+- Using PowerShell and Graph API: Delete the Microsoft 365 Group, and the associated sites are automatically deleted as well. Deleting only the site (but not the group) isn't possible.
+
+Deleting **sites that are not connected to a group** (for example, STS#0) from an archived state isn't possible. These sites require reactivation to be deleted.
 
 #### Can archived content in legal hold be deleted?
 
