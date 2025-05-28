@@ -1,6 +1,6 @@
 ---
 title: Manage amendments in SharePoint Agreements
-ms.author: julia-esp
+ms.author: jespinosa
 author: julia-esp
 manager: vijay sharma
 ms.reviewer: julia-esp
