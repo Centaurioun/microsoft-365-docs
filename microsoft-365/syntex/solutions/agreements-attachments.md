@@ -20,7 +20,7 @@ description: Learn how to manage attachments in the SharePoint Agreements soluti
 
 # Manage attachments in SharePoint Agreements
 
-Attachments are files related to the agreement and are also commonly referred to as supporting documents. Typically attachments might be meeting minutes, financial documents, emails, or other types that contribute the agreement package. 
+Attachments are files related to the agreement and are also commonly referred to as supporting documents. Typically attachments might be meeting minutes, financial documents, emails, or other types that contribute the agreement package.
 
 ## Add an attachment
 
@@ -30,9 +30,9 @@ To add an attachment, follow these steps:
 
 1. From the Agreements app in Microsoft Teams, on the **Home** tab, select the **Agreements** tab.
 
-2. From the **Agreements** tab, select the agreement to which you wish to add an attachment.
+2. From the **Agreements** tab, select the agreement to which you want to add an attachment.
 
-3. With the agreement viewer panel now open, select **Attachments** from the **Details** dropdown.
+3. With the agreement viewer panel now open, select **Details** > **Attachments**.
 
 4. From the **Attachments** panel, select **Add attachments** to open the file picker.
 
@@ -50,22 +50,21 @@ To add an attachment, follow these steps:
 
 ## View or open an attachment
 
-To view the attached files from with in the Agreements teams app, follow these steps:
+To view the attached files from with in the Agreements app, follow these steps:
 
 1. From the Agreements app in Microsoft Teams, on the **Home** tab, select the **Agreements** tab.
 
-2. From the **Agreements** tab, select an agreement which has the attachment icon next to the filename.
+2. From the **Agreements** tab, select an agreement which has the attachment icon next to the file name.
 
-3. With the agreement viewer panel now open, select **Attachments** from the **Details** dropdown.
+3. With the agreement viewer panel now open, select **Details** > **Attachments**.
 
    ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-attachmentsdropdown.png)
 
+4. From the **Attachments** panel, select the attachment you want to view. It opens automatically in the viewer.
 
-4. From the **Attachments** panel, select the attachment you want to view and it loads in the viewer.
+5. With the attachment file visible in the viewer, you can return to the original agreement using the breadcrumb in the upper-left corner, the **Return to agreement** button in the lower-left corner, or you can clear the attachment from the attachments list.
 
-5. With the attachment file visible in the viewer you can return to the original agreement using the breadcrumb in the upper left, the **Return to agreement** button in the lower left, or you can clear the attachment from the attachments list.
-
-6. To open the attachment in the default client application, select the attachment from the list, select **More options** (***...***) next to the attachment name, and then select **Open**. For example, if the attachment is a Microsoft Word document it launches the Word client if installed.
+6. To open the attachment in the default client application, select the attachment from the list, select **More options** (***...***) next to the attachment name, and then select **Open**. For example, if the attachment is a Microsoft Word document, it launches the Word client if installed.
 
 ## Delete an attachment
 
