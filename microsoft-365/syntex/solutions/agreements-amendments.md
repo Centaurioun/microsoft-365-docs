@@ -22,9 +22,9 @@ description: Learn how to manage attachments in the SharePoint Agreements soluti
 
 Amendments are documents added to signed, active agreements that modify the original parent agreement. Amendments can be used to alter content or field values of the signed agreement, including updating contact owners, changing payment terms, adding additional clauses, or extending the duration of the agreement. Users can amend an agreement by uploading a signed amendment PDF to the original agreement.
 
-On the Agreements list page in the Agreements Teams app, agreements with amendments will have a populated Amended column with its most recent amendment effective date. Additionally, in the Details pane, field values that have been altered by amendments will have a tooltip indicator containing the effective date of the amendment that has altered them. 
+From the Agreements app in Microsoft Teams, on the **Agreements list** page, you can see that agreements with amendments have a populated **Amended** column with its most recent amendment effective date. Additionally, in the **Details** pane, field values that have been altered by amendments will have a tooltip indicator containing the effective date of the amendment that has altered the values.
 
-![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-amendments1.png)
+![A screenshot of the agreement viewer page showing the effective date tooltip.](../../media/content-understanding/agreements-amendments1.png)
 
 ## Add an amendment
 
@@ -34,21 +34,21 @@ To add an attachment, follow these steps:
 
 1. From the Agreements app in Microsoft Teams, on the **Home** tab, select the **Agreements** tab.
 
-2. From the **Agreements** tab, select the agreement to which you wish to add an amendment.
+2. From the **Agreements** tab, select the agreement to which you want to add an amendment.
 
 3. With the agreement viewer panel now open, select **Details** > **Amendments**.
 
-4. From the Attachments panel, select **+ Signed amendment** to open the file picker.
+4. From the **Amendments** panel, select **+ Signed amendment** to open the file picker.
 
-5. Browse to the location of the amendment, and then select the file you'd like to add to the agreement.
+5. Browse to the location of the amendment, and then select the file you want to add to the agreement.
 
-6. **Select** to upload the file and view in the viewer panel.
+6. Choose **Select** to upload the file and view in the viewer panel.
 
 7. Input the required amendment effective date field value.
 
 8. Modify any agreement details that have been altered by the uploaded amendment.
 
-9. **Save** to add the amendment to the selected agreement.
+9. Select**Save** to add the amendment to the selected agreement.
 
     ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-detailsdropdown.png)
 
@@ -58,7 +58,7 @@ To add an attachment, follow these steps:
 
 ## View or open an attachment
 
-To view the attached files from with in the Agreements teams app, follow these steps:
+To view the attached files in the Agreements app, follow these steps:
 
 1. From the Agreements app in Microsoft Teams, on the **Home** tab, select the **Agreements** tab.
 
@@ -66,11 +66,11 @@ To view the attached files from with in the Agreements teams app, follow these s
 
 3. With the agreement viewer panel now open, select **Details** > **Amendments**.
 
-   ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-amendmentspanel.png)
+   ![A screenshot of the agreement viewer page showing amendments.](../../media/content-understanding/agreements-amendmentspanel.png)
 
-4. From the **Amendments** panel, select the amendments you want to view and it loads in the viewer.
+4. From the **Amendments** panel, select the amendment you want to view. It opens automatically in the viewer.
 
-5. With the attachment file visible in the viewer you can return to the original agreement using the breadcrumb in the upper- left corner, the **Return to agreement** button in the lower-left corner, or you can clear the attachment from the attachments list.
+5. With the attachment file visible in the viewer, you can return to the original agreement using the breadcrumb in the upper-left corner, the **Return to agreement** button in the lower-left corner, or you can clear the attachment from the attachments list.
 
 6. To open the attachment in the default client application, select the attachment from the list, select **More options** (***...***) next to the attachment name, and then select **Open**. For example, if the attachment is a Microsoft Word document, it launches the Word client if installed.
 
