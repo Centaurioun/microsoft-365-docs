@@ -1,6 +1,6 @@
 ---
 title: Manage amendments in SharePoint Agreements
-ms.author: julia-esp
+ms.author: jespinosa
 author: julia-esp
 manager: vijay sharma
 ms.reviewer: julia-esp
@@ -66,7 +66,7 @@ To view the attached files from with in the Agreements teams app, follow these s
 
 3. With the agreement viewer panel now open, select **Details** > **Amendments**.
 
-   ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-amendmentsPanel.png)
+   ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-amendmentspanel.png)
 
 
 4. From the **Amendments** panel, select the amendments you want to view and it loads in the viewer.
