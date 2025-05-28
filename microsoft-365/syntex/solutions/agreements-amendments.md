@@ -56,9 +56,9 @@ To add an attachment, follow these steps:
 > Amendments can only be added to agreements that are both active and signed.
 > The only supported file type to upload an amendment is PDF.
 
-## View or open an attachment
+## View or open an amendment
 
-To view the attached files in the Agreements app, follow these steps:
+To view the amendment files in the Agreements app, follow these steps:
 
 1. From the Agreements app in Microsoft Teams, on the **Home** tab, select the **Agreements** tab.
 

@@ -20,7 +20,7 @@ description: Learn how to manage attachments in the SharePoint Agreements soluti
 
 # Manage attachments in SharePoint Agreements
 
-Attachments are files related to the agreement and are also commonly referred to as supporting documents. Typically attachments might be meeting minutes, financial documents, emails, or other types that contribute the agreement package. 
+Attachments are files related to the agreement and are also commonly referred to as supporting documents. Typically attachments might be meeting minutes, financial documents, emails, or other types that contribute the agreement package.
 
 ## Add an attachment
 
@@ -50,7 +50,7 @@ To add an attachment, follow these steps:
 
 ## View or open an attachment
 
-To view the attached files from with in the Agreements teams app, follow these steps:
+To view the attached files from with in the Agreements app, follow these steps:
 
 1. From the Agreements app in Microsoft Teams, on the **Home** tab, select the **Agreements** tab.
 
@@ -59,7 +59,6 @@ To view the attached files from with in the Agreements teams app, follow these s
 3. With the agreement viewer panel now open, select **Attachments** from the **Details** dropdown.
 
    ![A screenshot of the agreement viewer page.](../../media/content-understanding/agreements-attachmentsdropdown.png)
-
 
 4. From the **Attachments** panel, select the attachment you want to view and it loads in the viewer.
 
