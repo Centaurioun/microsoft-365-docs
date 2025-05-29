@@ -1,3 +1,4 @@
+
 ---
 title: Release Notes for Microsoft 365 Copilot
 description: Lists the features that have reached General Availability in each release of Microsoft 365 Copilot.
@@ -189,7 +190,7 @@ Updates released between April 29, 2025, and May 13, 2025.
   Copilot Chat now clusters past sessions into daily and weekly views, making it easier to scan, revisit, and manage your conversations.
 - **Copilot pages in Government Clouds** [Windows]
 
-  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
+  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
  <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
 - **Create web-aware agents in Agent Builder**
 
@@ -209,7 +210,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 ### Microsoft Viva
 - **AI Administrator can manage Microsoft Copilot Dashboard settings** [Web]
 
-  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
+  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
  <a href="/viva/insights/advanced/admin/manage-settings-copilot-dashboard" target="_blank">Learn more.</a>
 ### OneDrive
 - **Ask Copilot questions about images** [Web]
@@ -2148,7 +2149,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 ### Microsoft 365 Copilot Chat
 - **Copilot pages in Government Clouds** [Windows]
 
-  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
+  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
  <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
 - **Unified prompt box across web and work chats** [Windows, Web]
 
@@ -2224,7 +2225,7 @@ Updates released between April 2, 2025, and April 16, 2025.
 
   Speed up tasks with AI-driven prompts for next steps in Copilot Chat. See real-time suggestions to refine queries, dive deeper into topics, or resolve issues faster during agent interactions.
  
-- **Support  for longer prompts** [Windows, Web]
+- **Support  for longer prompts** [Windows, Web]
 
   Copilot Chat now supports larger inputs for smoother handling of extensive documents and data.
  
@@ -3274,7 +3275,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 ### Microsoft Viva
 - **AI Administrator can manage Microsoft Copilot Dashboard settings** [Web]
 
-  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
+  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
  <a href="/viva/insights/advanced/admin/manage-settings-copilot-dashboard" target="_blank">Learn more.</a>
 ### OneDrive
 - **Ask Copilot questions about images** [Web]
@@ -3391,7 +3392,7 @@ Updates released between April 2, 2025, and April 16, 2025.
 
   Speed up tasks with AI-driven prompts for next steps in Copilot Chat. See real-time suggestions to refine queries, dive deeper into topics, or resolve issues faster during agent interactions.
  
-- **Support  for longer prompts** [Windows, Web]
+- **Support  for longer prompts** [Windows, Web]
 
   Copilot Chat now supports larger inputs for smoother handling of extensive documents and data.
  
