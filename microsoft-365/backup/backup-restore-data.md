@@ -250,8 +250,10 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     - A OneDrive account or SharePoint site that is under the strict SEC 17a-4(f) hold policy will fail any in-place restores so as to honor that immutability promise. For sites under that type of hold, you have to restore to a new URL or remove the hold. Any other type of preservation hold that doesn't have a strict admin lockout allows an in-place restore. Restoring these types of sites as the preservation hold library will be reverted to the prior point in time. A new URL restore is recommended for that type of site as the cleanest option.
  
-    - OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.
- 
+  - OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.
+    
+  - SharePoint sites that utilize Term Store term sets will restore, but the terms will not restore to their previous states.  Terms will retain their current state when the site itself is restored by Microsoft 365 Backup.
+    
     - OneDrive accounts and SharePoint sites being restored to a new URL have a read-only lock on that new URL. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can download documents or remove the read-only lock manually.
 
         [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
