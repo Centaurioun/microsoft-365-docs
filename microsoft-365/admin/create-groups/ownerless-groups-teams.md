@@ -126,7 +126,7 @@ Use the following steps to search for the **Updated the ownerless group policy**
 
 Once the search is complete, you can see the following result. 
 
-:::image type="content" source="../../media/result-audit-ownerless-group.png" alt-text="Screenshot of result of audit log search." lightbox="../../media/result-audit-ownerless-group.png":::
+:::image type="content" source="../../media/result-audit-ownerless-group1.png" alt-text="Screenshot of result of audit log search." lightbox="../../media/result-audit-ownerless-group1.png":::
 
 The following is an example of an audit log entry showing changes made:
 
