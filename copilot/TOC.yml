@@ -57,6 +57,11 @@ items:
   items:
     - name: Manage Microsoft 365 Copilot scenarios 
       href: microsoft-365-copilot-page.md
+    - name: People Skills
+      items:
+        - name: People Skills Overview
+          href: peopleskillsoverview.md
+          displayName: People Skills overview
     - name: Set up the Microsoft 365 Copilot app
       items:
         - name: Overview and availability
