@@ -122,7 +122,7 @@ Use the following steps to search for the **Updated the ownerless group policy**
 1. Under **Activities – friendly names**, type **ownerless group**, and select the **Updated the ownerless group policy** activity. 
 1. Specify the start and end dates for which the audit log needs to be searched.
 
-:::image type="content" source="../../media/audit-ownerless-group1.png" alt-text="Screenshot of audit log." lightbox="../../media/audit-ownerless-group1.png":::
+    :::image type="content" source="../../media/audit-ownerless-group1.png" alt-text="Screenshot of audit log." lightbox="../../media/audit-ownerless-group1.png":::
 
 Once the search is complete, you can see the following result. 
 
