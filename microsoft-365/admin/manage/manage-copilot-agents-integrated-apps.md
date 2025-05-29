@@ -38,7 +38,7 @@ description: "Learn how to manage agents for Microsoft 365 Copilot in the Micros
 
 Microsoft 365 Copilot is a new experience in Microsoft 365 that combines the power of large language models with your data and apps in Microsoft 365 to capture natural language commands to produce content and analyze data. It enables access to and use of third-party apps, such as Jira, [Dynamics 365](/microsoft-365-copilot/extensibility/overview-business-applications), or Bing Web Search.
 
-You can manage agents for Copilot using the Copilot Control System in the Microsoft 365 admin center. You can enable, disable, assign, block, or remove agents for your organization, and manage Copilot capabilities and data privacy.
+You can manage agents for Copilot using the Copilot Control System in the Microsoft 365 admin center. You can enable, disable, assign, block, or remove agents for your organization, and manage Copilot capabilities.
 
 ## Overview
 
@@ -50,7 +50,17 @@ However, before these agents can become available to users, the agents must unde
 
 The hub Copilot experience shows the list of agents that are available and deployed for the user. Users can toggle it on or off to restrict access of Copilot to any specific agents during the interaction. Users can also add or remove agents in their Copilot experience by right-clicking on the agents and selecting the appropriate option. Users can only access the agents that are allowed by the admin and that they have installed or been assigned to.
 
-## Manage agents in the Microsoft 365 admin center
+## Agent types you can manage
+
+You can manage several types of agents in Microsoft 365 Copilot, each serving different purposes:
+
+- **Declarative agents** Built with predefined instructions and actions. These agents follow structured logic and are best for predictable, rule-based tasks.
+- **Shared agents** Configured for use by multiple users or groups. Useful for common workflows across teams.
+- **First-party agents** Developed by Microsoft and integrated with Microsoft 365 services.
+- **Third-party agents** Created by external developers or vendors. You can control their availability and permissions.
+- **Frontier agents** Experimental or advanced agents that use new capabilities or integrations. These may be in early stages of development or testing and could require more oversight or limited rollout.
+
+## Get started
 
 The following administrator roles can manage agents in the Microsoft 365 admin center:
 
@@ -58,15 +68,16 @@ The following administrator roles can manage agents in the Microsoft 365 admin c
 - Global Admin
 - Global Reader (view-only, no edit)
 
-You can manage agents in the Microsoft 365 admin center by using the **Agents & connectors** page under the [Copilot Control System](/copilot/microsoft-365/microsoft-365-copilot-page). This page allows you to view the list of available, deployed, or blocked apps for your organization. You can:
+You can manage agents in the Microsoft 365 admin center by using the **Agents & connectors** page under the [Copilot Control System](/copilot/microsoft-365/microsoft-365-copilot-page). On this page, you can:
 
-- Make an agent available to specific users or groups.
-- Block or unblock agents for the complete organization.
-- Deploy or remove agents for the complete organization or specific users or groups.
+- View available, deployed, or blocked agents.
+- Configure agent availability and access.
+- Perform actions such as deploying, blocking, or removing agents.
 
-As the management of agents transitions to the Copilot Control System, which will become the central hub for all Copilot extensibility management, certain features will still be managed on the Integrated Apps page.
+>[!NOTE]
+> As the management of agents transitions to the Copilot Control System, which will become the central hub for all Copilot extensibility management, certain features will still be managed on the Integrated Apps page.
 
-You can view agents from the list of available, deployed, or blocked apps by going to **Copilot** > **Agents & connectors**, or by using the filter option of **Host products** > **Copilot** on the Integrated apps page.
+You can view agents by going to **Copilot** > **Agents & connectors**, or by using the filter option of **Host products** > **Copilot** on the Integrated apps page.
 
 You can also check if a specific app has Copilot support by selecting it from apps list and checking if the app overview mentions **Copilot** as a host product.
 
@@ -74,14 +85,23 @@ You can also check if a specific app has Copilot support by selecting it from ap
 
 You can also manage shared agents, which are agents that are configured to be used by multiple users or groups within the organization. To learn more, see [Manage shared agents for Microsoft 365 Copilot](manage-shared-agents.md).
 
-## Settings
+## Settings for agents
 
 The following settings are available to manage agents for Copilot:
 
-- Enable or disable agents
-- Advanced agent settings
-
-More settings will be added in the future.
+- **Enable or disable agents** Control whether agents are available in your organization.
+- **Advanced agent settings**  Configure additional controls for agent behavior (more options coming).
+- **Agent inventory** View and manage all agents, including first-party, third-party, shared, and custom agents.
+- **Metadata** View key details for each agent, such as capabilities, data sources (e.g., OneDrive, SharePoint, Graph connectors), and custom actions.
+- **Shared agents** Manage agents configured for use by multiple users or groups. You can:
+  - Change availability (Edit users)
+  - Deploy
+  - Block
+  - Unblock
+  - Export all
+- **Requested agents** Review user-submitted agent requests. You can:
+  - View all pending requests
+  - Act on requests (for example, Publish pending, Update pending)
 
 ### Enable or disable Copilot extensibility
 
@@ -100,7 +120,7 @@ The setting has three options:
 - **Specific Users** This option lets you select specific users or groups in your organization to have access to agents. So while all or specific users in your organization might have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use agents.
 
 > [!NOTE]
-> Once extensibility is disabled, the Microsoft pinned Visual Creator agent and entry point for Agent Builder will no longer be visible in BizChat.  Once extensibility is disabled in the tenant, it can take up to 24 hours for agents to disappear for users and for Agent Builder and Visual Creator to disappear.
+> Once extensibility is disabled, the Microsoft pinned Visual Creator agent and entry point for Agent Builder will no longer be visible in Copilot Chat. Once extensibility is disabled in the tenant, it can take up to 24 hours for agents to disappear for users and for Agent Builder and Visual Creator to disappear.
 
 ### Manage how users can install agents
 
@@ -173,7 +193,7 @@ Blocking or unblocking an agent affects its availability and functionality in Co
 
 ## Agent metadata in admin center
 
-You can access key metadata for Copilot agents directly within the publish flow on the Integrated apps page. This metadata includes details such as the agent’s capabilities, data sources (for example, OneDrive and Sharepoint files and sites, or Graph connectors), and custom actions. It’s important to note that agents are only for declarative agents, meaning they're designed to perform specific tasks based on predefined rules and configurations.
+You can access key metadata for Copilot agents directly within the publish flow on the Integrated apps page. This metadata includes details such as the agent’s capabilities, data sources (for example, OneDrive and SharePoint files and sites, or Graph connectors), and custom actions. It’s important to note that agents are only for declarative agents, meaning they're designed to perform specific tasks based on predefined rules and configurations.
 
 ## View and consent to permissions and data access
 
