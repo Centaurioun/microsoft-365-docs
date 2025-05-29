@@ -116,8 +116,8 @@ Use the following steps to search for the **Updated the ownerless group policy**
 
 1. Login to [Purview](https://purview.microsoft.com) portal and start a new Audit log search.
 
-  > [!NOTE]
-  > For help with Purview login, see [Purview Portal](/purview/purview-portal).
+      > [!NOTE]
+      > For help with Purview login, see [Purview Portal](/purview/purview-portal).
 
 1. Under **Activities – friendly names**, type **ownerless group**, and select the **Updated the ownerless group policy** activity. 
 1. Specify the start and end dates for which the audit log needs to be searched.
