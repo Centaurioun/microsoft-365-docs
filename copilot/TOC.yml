@@ -62,6 +62,9 @@ items:
         - name: People Skills Overview
           href: peopleskillsoverview.md
           displayName: People Skills overview
+        - name: Privacy and sharing controls
+          href: skills-sharing-inferencing-controls.md
+          displayName: data privacy sharing controls for inferencing and visibility
         - name: AI inference engine
           href: people-skills-ai-inferencing.md
           displayName: People Skills AI inference engine
