@@ -65,6 +65,9 @@ items:
         - name: AI inference engine
           href: people-skills-ai-inferencing.md
           displayName: People Skills AI inference engine
+        - name: Set up People Skills
+          href: people-skills-setup.md
+          displayName: setup people skills
     - name: Set up the Microsoft 365 Copilot app
       items:
         - name: Overview and availability
