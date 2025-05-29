@@ -114,11 +114,15 @@ Admins can see which Microsoft 365 groups remain ownerless by searching the [a
 
 Use the following steps to search for the **Updated the ownerless group policy** activity to find out details about changes made to the ownerless group policy. 
 
-1. Login to purview portal and start a new Audit log search.
+1. Login to [Purview](https://purview.microsoft.com) portal and start a new Audit log search.
+
+  > [!NOTE]
+  > For help with Purview login, see [Purview Portal](/purview/purview-portal).
+
 1. Under **Activities – friendly names**, type **ownerless group**, and select the **Updated the ownerless group policy** activity. 
 1. Specify the start and end dates for which the audit log needs to be searched.
 
-:::image type="content" source="../../media/audit-ownerless-group.png" alt-text="Screenshot of audit log." lightbox="../../media/audit-ownerless-group.png":::
+:::image type="content" source="../../media/audit-ownerless-group1.png" alt-text="Screenshot of audit log." lightbox="../../media/audit-ownerless-group1.png":::
 
 Once the search is complete, you can see the following result. 
 
@@ -126,7 +130,7 @@ Once the search is complete, you can see the following result.
 
 The following is an example of an audit log entry showing changes made:
 
-:::image type="content" source="../../media/audit-log.png" alt-text="Screenshot of an audit log." lightbox="../../media/audit-log.png":::
+:::image type="content" source="../../media/audit-log1.png" alt-text="Screenshot of an audit log." lightbox="../../media/audit-log1.png":::
 
 ## Common issues with the ownerless group policy
 
