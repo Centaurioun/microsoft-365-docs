@@ -144,9 +144,9 @@ FeatureId: SkillsProfileVisibility
 
 You have the following options while creating an access control policy:
 
-- Enable profile visibility (Default): When visibility is enabled, users skills profile is shared across M365. Users have the option to turn it off for themselves in their skill settings.
+- **Enable profile visibility (Default):** When visibility is enabled, users skills profile is shared across M365. Users have the option to turn it off for themselves in their skill settings.
 
-- Keep profile visibility default off:  Users in this access policy will be “opted-out”, and their skills will not be shared across M365. Users have the option to turn it on for themselves in their skill settings. Please use the following settings in PowerShell to create this policy:
+- **Keep profile visibility default off:**  Users in this access policy will be “opted-out”, and their skills will not be shared across M365. Users have the option to turn it on for themselves in their skill settings. Please use the following settings in PowerShell to create this policy:
 
    
   
@@ -163,7 +163,10 @@ For more information on how to create and manage policies, see [control access 
 
 AI-generated skills are provided to users based on their role and Microsoft 365 activity.
 
-By default, a user’s AI-generated skills are shown to others in their organizations and shared with other Microsoft 365 experiences. Note: These skills are only shared if the parent control (Skills Profile visibility) is also enabled/shared. If sharing is disabled, AI suggested skills will not be shown to other users or shared with any M365 experiences.
+By default, a user’s AI-generated skills are shown to others in their organizations and shared with other Microsoft 365 experiences. If sharing is disabled, AI suggested skills will not be shown to other users or shared with any M365 experiences.
+
+> [!IMPORTANT]
+> These skills are only shared if the parent control (Skills profile visibility) is also enabled/shared. 
 
  If you need to disable sharing for specific users, groups, or your entire tenant, create an access control policy. For more information, see [control access to features in Viva](/viva/feature-access-management).
 
@@ -177,67 +180,62 @@ FeatureId: ShowAISkills
 
 You will have the following options while creating an access control policy:
 
- Enable sharing of AI-generated skills (Default): When visibility is enabled, AI-generated skills are shared in skills-driven experiences for users, leaders, and analysts in your organization. Note: These skills can only be shared if parent control (Skills Profile visibility) is also enabled/shared. Users can also manage sharing of AI-generated skills for themselves in the Microsoft 365 __profile editor__ on the __Data and privacy tab__.
+-  **Enable sharing of AI-generated skills (Default):** When visibility is enabled, AI-generated skills are shared in skills-driven experiences for users, leaders, and analysts in your organization. Note: These skills can only be shared if parent control (Skills Profile visibility) is also enabled/shared. Users can also manage sharing of AI-generated skills for themselves in the Microsoft 365 __profile editor__ on the __Data and privacy tab__.
 
  
 
- Default sharing off for AI-generated skills:  Users in this access policy will be “opted-out”, and their AI-suggested skills will not be shared across M365. Users have the option to turn it on for themselves in their skill settings.
+-  **Default sharing off for AI-generated skills:**  Users in this access policy will be “opted-out”, and their AI-suggested skills will not be shared across M365. Users have the option to turn it on for themselves in their skill settings. Please use the following settings in PowerShell to create this policy:
 
-Please use the following settings in PowerShell to create this policy:
+   
+  
 
- 
-
+```powershell
 Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowAISkills -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false
+```
 
- 
+-  **Completely disable sharing of AI-generated skills:** AI-generated skills are not shared with anyone but the user themselves and users cannot opt-in to sharing their AI-generated skills before confirming them those skills. Please use the following settings in PowerShell to create this policy:
 
- Completely disable sharing of AI-generated skills: AI-generated skills are not shared with anyone but the user themselves and users cannot opt-in to sharing their AI-generated skills before confirming them those skills. Please use the following settings in PowerShell to create this policy:
-
- 
-
-Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowAISkills -Name  HardDisable -IsFeatureEnabled $false
-
- 
-
+  ```powershell
+  Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowAISkills -Name  HardDisable -IsFeatureEnabled $false
+  ```
+  
  <ins>Read more about </ins>[control access to features in Viva](/viva/feature-access-management).
 
-Control Visibility of third-party imported skills
+## Control Visibility of third-party imported skills
 
-Imported skills added by an admin in your organization from external systems display in a user's skills profile alongside AI-generated skills. Like AI-generated skills, these skills are available for the user to confirm in the Microsoft 365 profile editor.
+Imported skills added by an admin in your organization from external systems display in a user's skills profile alongside AI-generated skills. Like AI-generated skills, these skills are available for the user to confirm in the Microsoft 365 profile editor. Imported skills are shared by default with others in the organization.  If sharing is disabled, imported skills won't display to others in the organization.
 
-Imported skills are shared by default with others in the organization. Note: These skills can only be shared if the parent control (Skills Profile visibility) is also enabled. If sharing is disabled, imported skills won't display to others in the organization.
+> [!IMPORTANT]
+> These skills can only be shared if the parent control (Skills Profile visibility) is also enabled/shared.
 
-If you need to disable sharing for specific users, groups, or your entire tenant, create an access control policy.  Read more about [control](/viva/feature-access-management)ing  feature access.
+If you need to disable sharing for specific users, groups, or your entire tenant, create an access control policy.  Read more about [controlling feature access](/viva/feature-access-management)
 
-Note: Policies for People Skills can only be created by PowerShell at this time and cannot be created or managed through the Admin Center.
+> [!NOTE]
+> Policies for People Skills can only be created by PowerShell at this time and cannot be created or managed through the Admin Center.
 
-__Details required to create access policy in PowerShell__
+#### Details required to create access policy in Feature Access Management 
 
 ModuleId:PeopleSkills
 
 FeatureId: ShowOrgAddedSkills
 
-You can  createan access control policy with the following options:
+You can create an access control policy with the following options:
 
-·         Enable third-party skill visibility (Default): When visibility is enabled, third-party skills are shared across M365. Note: These skills are only shared if if Skills Profile visibility is also enabledor shared. Users have the option to turn it off for themselves in their settings.
+- **Enable imported skill visibility (Default):** When visibility is enabled, third-party skills are shared across M365. Note: These skills are only shared if if Skills Profile visibility is also enabledor shared. Users have the option to turn it off for themselves in their settings.
 
- 
+- **Keep imported skill sharing default off:**  Users in this access policy will be “opted-out”, and their third-party skills will not be shared across M365. Users have the option to turn it on for themselves in their skill settings. Please use the following settings in PowerShell to create this policy:
 
-·         Keep third-party skill sharing default off:  Users in this access policy will be “opted-out”, and their third-party skills will not be shared across M365. Users have the option to turn it on for themselves in their skill settings.
 
-Please use the following settings in PowerShell to create this policy:
-
- 
-
+```powershell
 Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowOrgAddedSkills -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false
+```
 
- 
+-  **Completely disable imported skill sharing:** Third-party skills are not shared with M365 experience in your tenant and users cannot opt-in to sharing their third-party skills. Please use the following settings in PowerShell to create this policy: 
 
-·         Completely third-party skill sharing: Third-party skills are not shared with M365 experience in your tenant and users cannot opt-in to sharing their third-party skills. Please use the following settings in PowerShell to create this policy:
 
- 
-
+```powershell
 Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowOrgAddedSkills -Name  HardDisable -IsFeatureEnabled $false
+```
 
  
 
