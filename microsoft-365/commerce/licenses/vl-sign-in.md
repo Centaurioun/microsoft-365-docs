@@ -86,7 +86,7 @@ Organizations with no online presence with Microsoft must [sign up](https://sign
 
 To create a Microsoft Entra ID using your organization's email domain (like aminata\@fourthcoffee.com), you must provide proof that the organization owns that domain. This proof might be something that your organization’s IT administrator prefers to complete, rather than the VL user.
 
-Alternatively, if you need a Microsoft Entra ID format that isn't linked to the organization’s email domain (like aminata\@fourthcoffee.onmicrosoft.com), you can create one independently from an IT administrator. Before you deploy any online services like Microsoft 365, we highly recommend that your organization takes over such a Microsoft Entra ID tenant and link it to the organization's own domain.
+Alternatively, if you need a Microsoft Entra ID format that isn't linked to the organization’s email domain (like aminata\@fourthcoffee.onmicrosoft.com), you can create one independently from an IT administrator. Before you deploy any online services like Microsoft 365, we highly recommend that your organization takes over such a Microsoft Entra tenant and link it to the organization's own domain.
 
 > [!TIP]
 > Make sure to write down your user ID because you need it later.

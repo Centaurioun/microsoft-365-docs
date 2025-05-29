@@ -68,7 +68,7 @@ When these contacts sign in to the <a href="https://go.microsoft.com/fwlink/p/?l
 
 ## Change the volume licensing admin for the Microsoft 365 admin center
 
-### If you already have a VL user profile in the Microsoft 365 admin center
+### If you already have a volume licensing user profile in the Microsoft 365 admin center
 
 When you sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, you can view and manage the Agreements (License IDs).
 

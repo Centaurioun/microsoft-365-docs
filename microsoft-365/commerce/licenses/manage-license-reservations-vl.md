@@ -81,7 +81,7 @@ If you have any questions that relate to invoices resulting from the reconciliat
 > A License Reservation order is a financial commitment to purchase reserved items. If you don't have the authority to accept this commitment, work with the person in your organization who is authorized to do so.
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
-2. Select **Make reservations**.
+2. In the **Reservations** section, select **Make reservations**.
 3. From your list of Enterprise Agreement **contracts available for reservation**, select an active agreement, then select **Confirm** to proceed with the online reservation.
 4. For **Usage Date**, select the first date when the reserved licenses will be used and then select **View services**.
 
