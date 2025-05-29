@@ -59,6 +59,11 @@ items:
       href: microsoft-365-copilot-page.md
     - name: People Skills
       items:
+        - name: Manage skills library
+          items:
+            - name: Manage skills library
+              href: manage-skills-library.md
+              displayName: manage skills library and custom skills
         - name: People Skills Overview
           href: peopleskillsoverview.md
           displayName: People Skills overview
