@@ -116,7 +116,7 @@ Updates released between May 13, 2025, and May 29, 2025.
 - **Safe Links validates redacted URLs** [Windows]
 
   When Copilot masks a link, Safe Links now scans it instantly and alerts users to malicious sites, adding an extra layer of protection before anyone clicks. 
- <a href="https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/safelinks-protection-for-links-generated-by-m365-copilot-chat-and-office-apps/4396828)" target="_blank">Learn more.</a>
+ <a href="https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/safelinks-protection-for-links-generated-by-m365-copilot-chat-and-office-apps/4396828" target="_blank">Learn more.</a>
 ### PowerPoint
 - **Ask Copilot to rewrite text as a list** [Web, Mac, Windows]
 
@@ -162,7 +162,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 
   Find a dedicated Copilot icon in your web spreadsheet, allowing you to tap into AI-powered insights and streamline tasks without breaking your workflow.
  <a href="https://support.microsoft.com/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a" target="_blank">Learn more.</a>
-- **Visual cue for Copilot’s data context** [Web]
+- **Visual cue for Copilot’s data context** [Web, Windows, Mac]
 
   A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
 ### Microsoft 365 admin center
@@ -2137,6 +2137,9 @@ Updates released between April 29, 2025, and May 13, 2025.
 - **Ask Copilot about any part of your sheet** [Web, Mac, Windows, iOS]
 
   When you ask questions about your worksheet, Copilot can look at the content of your sheet and use it to inform an answer to your question. This will include understanding worksheet data on your selected area, beyond tables and ranges, and provide Copilot answers in chat.
+- **Visual cue for Copilot’s data context** [Web, Windows, Mac]
+
+  A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
 ### Microsoft 365 admin center
 - **Manage pay-as-you-go billing for Copilot** [Windows, Web]
 
@@ -3247,7 +3250,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 
   Find a dedicated Copilot icon in your web spreadsheet, allowing you to tap into AI-powered insights and streamline tasks without breaking your workflow.
  <a href="https://support.microsoft.com/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a" target="_blank">Learn more.</a>
-- **Visual cue for Copilot’s data context** [Web]
+- **Visual cue for Copilot’s data context** [Web, Mac, Windows]
 
   A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
 ### Microsoft 365 Admin center
@@ -5496,7 +5499,10 @@ Updates released between May 13, 2025, and May 29, 2025.
 - **Visual outline confirms Copilot's data range** [Mac]
 
   When you call on Copilot, Excel now draws a clear border around the table or cell range in focus. Instantly see exactly what data will be summarized, cleaned, or chart-ready—so you can adjust the selection before Copilot gets to work.
-### PowerPoint
+- **Visual cue for Copilot’s data context** [Web, Windows, Mac]
+
+  A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
+  ### PowerPoint
 - **Ask Copilot to rewrite text as a list** [Web, Mac, Windows]
 
   Transform paragraphs into clear bullet points or lists with a single command—ideal for quickly organizing content when preparing your presentation.
