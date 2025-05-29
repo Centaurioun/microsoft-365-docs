@@ -44,14 +44,15 @@ When you buy a Microsoft 365 for business subscription, you select a billing fre
 
 ### If you have an MCA billing account type
 
-Note: You can only schedule a change to billing frequency at renewal.
+> [!NOTE]
+> You can only schedule a change to billing frequency at renewal.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
   - If you're using the **Simplified view**, select **Subscriptions**.
   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 1. Select the subscription that you want to manage.
-1. On the subscription details page, in the **Billings** section, under **Subscription length & billing frequency** select **Edit settings**.
-1. In the **Edit subscription length & billing frequency settings** panel, choose how you’d like to pay for the subscription, then select **Save**.
+1. On the subscription details page, in the **Billings** section, under **Subscription length & billing frequency**, select **Edit settings**.
+1. In the **Edit subscription length & billing frequency settings** panel, choose how you'd like to pay for the subscription, then select **Save**.
 1. Changes are reflected in the **Scheduled changes** section and go into effect at renewal.
 
 ### If you have a MOSA billing account type
