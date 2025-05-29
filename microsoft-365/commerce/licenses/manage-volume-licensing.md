@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn where to manage your volume licensing agreement, based on which agreement program type you have."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Manage volume licensing agreements

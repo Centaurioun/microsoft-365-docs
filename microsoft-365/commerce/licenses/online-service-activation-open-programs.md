@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to activate online services for Open and Open Value Subscription programs for volume licensing."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Online service activation for Open programs (volume licensing)

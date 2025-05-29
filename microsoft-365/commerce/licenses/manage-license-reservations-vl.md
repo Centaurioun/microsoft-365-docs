@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to manage License Reservations in the Microsoft 365 admin center."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Manage License Reservations for volume licensing
@@ -60,7 +60,7 @@ To reduce the risk that customers unintentionally order incorrect or incompatibl
 If you want to use a Microsoft online service not listed on the **Reservations** page, contact your Microsoft seller or Licensing Solution Partner for help with placing the necessary purchase order.
 
 > [!IMPORTANT]
-> If you want to subscribe to the Microsoft Azure cloud platform, contact your Microsoft seller or Licensing Solution Partner. You can't reserve seats for Azure in the VL section of the Microsoft 365 admin center.
+> If you want to subscribe to the Microsoft Azure cloud platform, contact your Microsoft seller or Licensing Solution Partner. You can't reserve seats for Azure in the VL pages of the Microsoft 365 admin center.
 
 ## Invoicing License Reservation orders
 
@@ -102,7 +102,7 @@ If you have any questions that relate to invoices resulting from the reconciliat
 You can cancel a previously submitted reservation within 72 hours of the usage date.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
-2. Select **View Reservation**.
+2. In the **Reservations** section, select **View Reservations**.
 3. In the search bar, search for the reservation order that you want to cancel. You can search by Reservation ID, Licensing Contract ID, or organization.
 4. **Copy** the reservation ID and then select the **Cancel** button under the **Action** column.
 5. A side panel titled **Cancel Reservation** opens. Select the text box to confirm the reservation number and paste it in the **Reservation ID** field. Enter the reason for cancellation.
@@ -110,8 +110,8 @@ You can cancel a previously submitted reservation within 72 hours of the usage d
 
 ## View your License Reservation history
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the **Volume licensing** tab.
-2. Select **View Reservation**.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+2. In the **Reservations** section, select **View Reservations**.
 3. In the search bar, search for the reservation order that you want to view details for. You can search by Reservation ID, Licensing Contract ID, or organization.
 4. In the **Action** column, select the **Details** button to the view details.
 

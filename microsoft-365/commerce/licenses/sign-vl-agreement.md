@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to sign your volume licensing agreement."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Sign your volume licensing agreement
@@ -219,7 +219,7 @@ To find your agreements, use the following steps:
 
 ## Next steps
 
-After you electronically sign a VL agreement, you must wait for it to become active. Next, your reseller must submit an order to Microsoft for licenses under that agreement. After these two steps are finished, those licenses are available to view or manage in the volume licensing section of the Microsoft 365 admin center.
+After you electronically sign a VL agreement, you must wait for it to become active. Next, your reseller must submit an order to Microsoft for licenses under that agreement. After these two steps are finished, those licenses are available to view or manage in the VL pages of the Microsoft 365 admin center.
 
 > [!NOTE]
 > Resellers typically place orders soon after a VL agreement becomes active, but this isn't always the case.

@@ -21,7 +21,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access your non-Azure volume licensing invoices in the Microsoft 365 admin center."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Microsoft volume licensing invoices
@@ -40,10 +40,9 @@ To access VL invoices in the admin center, you must satisfy both of the followin
 
 ## View or download your invoice
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page.
-2. Select the **Volume licensing** tab, then select <a href="
-https://go.microsoft.com/fwlink/p/?linkid=2297440" target="_blank">Contracts</a>.
-3. Find the contract you want to see invoices for, select the three dots (More actions), then select **View Invoices**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+2. In the **Contracts** section, select **View contracts**.
+3. Find the contract you want to see invoices for, select the three dots (**More actions** button), then select **View Invoices**.
 4. On the **Invoices** page, you see the list of invoices generated for that contract. You can download the invoice PDF and invoice recon file. For information about the invoice recon file, see [Overview of the invoice recon file](#overview-of-the-invoice-recon-file) later in this article.
 
 ## Overview of the invoice PDF
@@ -196,9 +195,9 @@ There are several reasons that you might not see an invoice:
 
 ### How do I request permission to view volume licensing invoices?
 
-The invoice reader role is automatically assigned in the admin center to the **Bill To Contact** named in the agreement contract submitted by your Microsoft partner or seller at the time of contract creation.
+The Invoice Reader VL role is automatically assigned in the admin center to the **Bill To Contact** named in the agreement contract submitted by your Microsoft partner or seller at the time of contract creation.
 
-The role can't be assigned or removed by another VL Administrator. To change the contact Bill To requires your Microsoft partner or seller to complete a Change of Contact Information Request to update the legal participants, or contacts. Contact your Microsoft partner or seller for more information.
+The Invoice Reader role can't be assigned or removed by another VL Administrator. To change the contact Bill To requires your Microsoft partner or seller to complete a Change of Contact Information Request to update the legal participants, or contacts. Contact your Microsoft partner or seller for more information.
 
 ### How often and when am I billed?
 

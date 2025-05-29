@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to find and use product keys for volume licensing products in the Microsoft 365 admin center."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Find and use product keys for volume licensing
@@ -27,9 +27,9 @@ A product key lets you use a software product that you licensed under a specific
 
 ## Before you begin
 
-You must have one of the following VL roles to view VL product keys for a specific License ID:
+To view VL product keys for a specific License ID, you must have one of the following VL roles:
 
-- Administrator
+- VL Administrator
 - Product keys reader
 
 ## Find your volume licensing product keys
@@ -145,7 +145,7 @@ There are minimum activation thresholds that must be met. The activation thresho
 A Multiple Activation Key (MAK) is the recommended activation method for licenses bought under the Open Value or Open Value Subscription volume licensing agreement.
 However, in some limited exceptions, KMS keys might be assigned to Open Value or Open Value Subscription licenses for customers who meet the minimum KMS activation threshold for Windows Server, Windows Operating System, and Microsoft 365.
 
-To request an exception, you must have the Administrator or Product Key Reader volume license role. To submit the request, provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
+To request an exception, you must have the VL Administrator or Product keys reader role. To submit the request, provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
 
 - Agreement / Enrollment Number or License ID
 - Product Name (including version and edition)
@@ -157,7 +157,7 @@ To request an exception, you must have the Administrator or Product Key Reader v
 
 ### Request more KMS host keys
 
-To request more KMS activations to activate more than six KMS hosts, you must have the Administrator or Product Key Reader volume license role. To submit the request, provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
+To request more KMS activations to activate more than six KMS hosts, you must have the VL Administrator or Product keys reader role. To submit the request, provide the following information on [this web form](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f):
 
 - Agreement / Enrollment Number or License ID
 - Product Name (including version and edition)

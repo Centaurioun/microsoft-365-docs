@@ -19,7 +19,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to find and get detailed information about your volume licensing contracts in the Microsoft 365 admin center."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # View volume licensing contracts in the Microsoft 365 admin center
@@ -87,10 +87,9 @@ Licenses display in the license summary at the start of the licensed coverage pe
 
 The **Order details** page displays a list of purchase orders for the selected License IDs. The orders list can be exported to a CSV downloadable file, sorted by clicking column headers, or filtered using predefined filters to narrow your search.
 
-1. Go to the admin center.
-2. In the **Navigation** pane, select **Billing** > **Your products**, then select the **Volume licensing** tab.
-3. In the **Contracts** section, select **View contracts**.
-4. On the **Contracts** page, next to a License ID, select the three dots (**More actions** button), then select **View orders**.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+2. In the **Contracts** section, select **View contracts**.
+3. On the **Contracts** page, next to a License ID, select the three dots (**More actions** button), then select **View orders**.
 
 The following table describes the columns displayed on the **Orders details** page:
 
@@ -158,11 +157,10 @@ You can find your Licensing Solution Partner on the **Contacts** tab of the **Co
 
 If you want to find a new partner, go to [https://aka.ms/pinpoint](https://aka.ms/pinpoint), provide your location and organization size, and then search for either "volume licensing" or for a service or product you want a solution for.
 
-1. Go to the admin center.
-2. In the **Navigation** pane, select **Billing** > ****Your products**, then select the Volume licensing** tab.
-3. In the **Contracts** section, select **View contracts**.
-4. On the **Contracts** page, select a specific License ID.
-5. In the **Contract details** panel, select the **Contacts** tab. Your partner or seller is displayed in the list of contacts.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a> page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+2. In the **Contracts** section, select **View contracts**.
+3. On the **Contracts** page, select a specific License ID.
+4. In the **Contract details** panel, select the **Contacts** tab. Your partner or seller is displayed in the list of contacts.
 
 > [!NOTE]
 > The contact details displayed might only include the partner's organization name, so you might need to search for the organization's "contact us" details. Alternatively, your IT or Procurement departments might have specific contacts you can work with.
@@ -195,7 +193,7 @@ This section contains information about how to resolve common issues with VL con
 ### The License ID for your organization isn't displayed on the Contracts page
 
 - You might not be the VL Administrator on all your organization's License IDs. VL contracts might have been in place before you took on your VL Administrator role, or a different part of your organization might have its own License IDs under the one parent agreement. Ask an active VL Administrator of any such License IDs to add you as a VL Administrator.
-- You might have registered under a different account for some License IDs. For example, your work email address changed, or you previously signed in to the VL area of the admin center with a different account used just for volume licensing. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
+- You might have registered under a different account for some License IDs. For example, your work email address changed, or you previously signed in to the VL pages of the admin center with a different account used just for VL. For more information, see [Sign in to the Microsoft 365 admin center (volume licensing)](vl-sign-in.md).
 - The **Show inherited contracts** toggle in your preferences is set to not include all License IDs under a Parent agreement you administer. For more information, see [Manage volume licensing user roles | Microsoft Learn](manage-user-roles-vl.md).
 - Licenses purchased via a Microsoft Product and Services Agreement (MPSA), Cloud Service Provider (CSP), Modern Customer Agreement (MCA), Original Equipment Manufacturer (OEM), or retail purchases aren't included in VL contracts.
 

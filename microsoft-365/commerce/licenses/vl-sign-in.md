@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to sign in to the Microsoft 365 admin center for volume licensing products."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Sign in to the Microsoft 365 admin center (volume licensing)  
@@ -129,7 +129,7 @@ After your organization converts your account to a managed Microsoft Entra ID, o
 
 If you don't see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> page after you sign in to the admin center, you can try the following actions to resolve it:
 
-- **Use the correct URL:** Verify that you're going to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, then go to the **Billing** > **Your products** page and select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
+- **Use the correct URL:** Verify that you're going to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then go to the **Billing** > **Your products** page and select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
 
   - If you don't see **Billing**, go to the bottom of the navigation menu, select **View all**, and then pin the **Billing** option to the navigation menu.
 

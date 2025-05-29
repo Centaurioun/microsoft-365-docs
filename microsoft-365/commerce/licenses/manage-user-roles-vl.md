@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to manage volume licensing user roles in the Microsoft 365 admin center."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Manage volume licensing user roles
@@ -35,8 +35,8 @@ VL roles are assigned by one of the following people:
 
 ## Before you begin
 
-- You must have a volume licensing (VL) role to access the VL pages in the Microsoft 365 admin center.
-- VL roles are managed by the VL Administrator and don't provide visibility or permissions to other areas of the admin center beyond the volume licensing section.  
+- You must have a VL role to access the VL pages in the Microsoft 365 admin center.
+- VL roles are managed by the VL Administrator and don't provide visibility or permissions to other areas of the admin center beyond the VL pages.  
 
 > [!NOTE]
 > Global Administrators in the admin center don't have access to VL features. It's up to the VL agreement administrator to add any users, including Global Administrators, who might want access to specific Agreements (License IDs). For more information, see [Commonly used Microsoft 365 admin center roles](../../admin/add-users/about-admin-roles.md#commonly-used-microsoft-365-admin-center-roles), and [Volume licensing roles](../../admin/add-users/about-admin-roles.md#volume-licensing-roles).
@@ -61,7 +61,7 @@ The following table shows the relationship between VL roles in the retired Volum
 
 By default, the VL Administrator role is assigned to the Notices Contact, or the Primary Contact provided by your Microsoft partner or seller when they set up your VL contract.
 
-When these contacts sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, they can assign the VL Admin role to other users. Those users can then access the Agreement (License ID) in the admin center without being listed on the original VL contract.
+When these contacts sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, they can assign the VL Administrator role to other users. Those users can then access the Agreement (License ID) in the admin center without being listed on the original VL contract.
 
 > [!NOTE]
 > For privacy reasons, we don’t provide names of VL admins associated with your organization. Ask your organization's partner or seller what contact information they provided to Microsoft for your VL contract. If necessary, your organization's purchasing, finance, or IT departments might be able to identify your Microsoft Reseller from your organization's purchasing records.
@@ -72,11 +72,11 @@ When these contacts sign in to the <a href="https://go.microsoft.com/fwlink/p/?l
 
 When you sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, you can view and manage the Agreements (License IDs).
 
-If you no longer want to be a VL Administrator, you must first assign the VL Admin role to another user. The new VL Admin can then remove your VL Admin permissions. You must repeat this process for each License ID.
+If you no longer want to be a VL Administrator, you must first assign the VL Administrator role to another user. The new VL Administrator can then remove your VL Administrator permissions. You must repeat this process for each License ID.
 
 ### If you don’t have a volume licensing user profile in the Microsoft 365 admin center
 
-If you're named as a Primary or Notice contact for a contract, you receive a welcome email inviting you to create your VL user profile in the admin center. Alternatively, you can choose to forward the email to someone else who can register and become the VL Admin in the admin center, instead.
+If you're named as a Primary or Notice contact for a contract, you receive a welcome email inviting you to create your VL user profile in the admin center. Alternatively, you can choose to forward the email to someone else who can register and become the VL Administrator in the admin center, instead.
 
 ### Change the Primary or Notice contact information on the licensing contract
 
@@ -110,7 +110,7 @@ The following table lists the statuses that you might see in the **Status** colu
 
 | Status                 | Description       |
 |------------------------|-------------------|
-| Active                 | The user profile is active. The user can use their Microsoft Entra ID to sign into the admin center to view and manage their VL agreements. |
+| Active                 | The user profile is active. The user can use their Microsoft Entra ID to sign in to the admin center to view and manage their VL agreements. |
 | Assignment in Progress | A VL Administrator assigned the permissions, and no further edits can be made until the status is active. The status update might take up to two hours during peak processing periods. |
 | Failed                 | The permissions assignment failed. VL Admins should assign permissions to the user again. If role assignment continues to fail, contact support to help investigate the problem. |
 | Invitation sent        | The user has yet to register their assigned permissions and create their VL user profile by accepting the invitation email. |
@@ -142,7 +142,7 @@ Add new users who don't already have VL permissions.
 3. If you're an admin for a parent agreement or a Microsoft Business and Services Agreement (MBSA), you can expand the list to all Agreements (License IDs) under that parent contract by selecting **Show inherited contracts**. As an "inherited admin" you can assign users to any Agreement (License ID) under the parent agreement. However, if you aren't an agreement administrator for the specific Agreement (License ID), these users aren't listed on the **Assigned** tab on the **Manage Assignments** page.
 
     > [!TIP]
-    > VL admins with inherited permissions can assign themselves an admin role on a particular Agreement (License ID) and then see any users they added to inherited contracts.
+    > VL Administrators with inherited permissions can assign themselves an admin role on a particular Agreement (License ID) and then see any users they added to inherited contracts.
 4. When you return to the **Assign users to contracts** page, expand the user details again. You now see the list of License IDs that you assigned to that user.
 5. Continue to [Step 3. Assign roles to users](#step-3-assign-roles-to-users).
 

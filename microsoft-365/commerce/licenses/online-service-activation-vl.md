@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to activate online services obtained via volume licensing."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Activate online services in volume licensing
@@ -57,7 +57,7 @@ By default, the person who sets up the Microsoft Entra tenant becomes the Global
 
 The Online Services Manager (OSM) is a VL user with permission to view orders for online services. The OSM is the person invited to assign those services to a Microsoft Entra tenant.
 
-When you assign the OSM role to someone who also has the Global Administrator role, you enable them to see what online services were ordered. This view is in addition to their Global Admin view of end user subscription assignment.
+When you assign the OSM role to someone who also has the Global Administrator role, you enable them to see what online services were ordered. This view is in addition to their Global Administrator view of end user subscription assignment.
 
 > [!IMPORTANT]
 > Microsoft Entra tenant roles are separate from VL roles in the Microsoft 365 admin center. By default, Global Administrators don't have VL access or roles. For more information, see [Assign roles to volume licensing users](manage-user-roles-vl.md#understand-volume-licensing-roles).

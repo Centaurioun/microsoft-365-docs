@@ -18,7 +18,7 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: "Learn how to contact Microsoft support for volume licensing products."
-ms.date: 05/22/2025
+ms.date: 05/30/2025
 ---
 
 # Contact volume licensing support
@@ -103,7 +103,7 @@ Use the information in the following tables to find the support number for your 
 |Indian subcontinent |+1 (212) 444.0497 |09:00 - 18:00 GMT+5.30 |English |
 |Indonesia |0018030160575 (Toll Free) |09:00 - 18:00 GMT+7 |English, Bahasa Indonesia |
 |Japan |0120-737-565 (Toll Free) |09:00 - 17:30（土日、祝日を除く）|日本語 |
-|Macau SAR |800 969 800 (Toll Free) |09:00 - 18:00 GMT+8 |Cantonese, Mandarin, English |
+|Macao SAR |800 969 800 (Toll Free) |09:00 - 18:00 GMT+8 |Cantonese, Mandarin, English |
 |Malaysia |1 800 80 7456 (Toll Free) |01:00 - 10:00 GMT |English |
 |Philippines |1800 1441 0123 (Toll Free) |09:00 - 18:00 |English |
 |Singapore |1800 820 9963 (Toll Free)<br/>+65 6622 1235 |09:00 - 18:00 GMT+8 |English |
@@ -137,7 +137,7 @@ Use the information in the following tables to find the support number for your 
 |Spain |900 994910 (Toll Free) |09:00 - 18:00 Monday to Friday |Spanish |
 |Sweden |020 797079 (Toll Free) |08:30 - 17:00 Monday to Friday |Swedish |
 |Switzerland |0800 563564 (Toll Free) |08:00-17:00 Monday to Friday |French, German, Italian |
-|Turkey |8503902777 |09:00 - 18:00 Monday to Friday |Turkish |
+|Türkiye |8503902777 |09:00 - 18:00 Monday to Friday |Turkish |
 |United Kingdom |0800 9179016 (Toll Free) |08:00 - 18:00 Monday to Friday |English |
 
 ### Middle East and Africa
