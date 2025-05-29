@@ -61,6 +61,9 @@ items:
       items:
         - name: Manage skills library
           items:
+- name: Manage out-of-the-box skills library
+  href: manage-default-skills.md
+  displayName: Manage out-of-the-box default skills library
             - name: Manage skills library
               href: manage-skills-library.md
               displayName: manage skills library and custom skills
