@@ -17,7 +17,8 @@ ms.date:     05/29/2025
 
  You can import skills for a user from third-party platforms and export a user’s confirmed skills using the Graph API.
 
-
+> [!NOTE]
+> To export your entire skills library, please see export your skills library 
 
 ### Importing user skills
 
@@ -47,13 +48,11 @@ Review the below guideline on how you can use the tool to import user skills:  
 
 ### Exporting user skills
 
-Admins can export a user’s confirmed skills via the Profile endpoint in MS Graph API.  <ins>Read our [profile list skills] documentation for https://learn.microsoft.com/en-us/graph/api/profile-list-skills?view=graph-rest-beta&tabs=http </ins>more details on the skills endpoint and specific GET requests to access this data from the Graph API.
+Admins can export a user’s confirmed skills via the Profile endpoint in MS Graph API. [ Read our documentation ](/graph/api/profile-list-skills?view=graph-rest-beta&tabs=http)for more details on the skills endpoint and specific GET requests to access this data from the Graph API.
 
-Learn about [exporting your entire skills library](#_Export_your_custom).  
-
- __Note__
-
-Only a user’s confirmed skills can be exported. AI-suggested skills cannot be exported.
+> [!NOTE]
+> To export your entire skills library, see [exporting your entire skills library](#_Export_your_custom).  
+>  Only a user’s confirmed skills can be exported. AI-generated skills cannot be exported.
 
  
 
