@@ -97,7 +97,7 @@ The setting has three options:
 
 - **All Users** This is the default option and it means that all users in the organization can access agents, subject to the existing app policies and user assignments.
 - **No Users** This option means that no users in the organization can access agents, and the third-party agents are disabled in the agents flyout. This option also hides agents from the list of Available and Deployed apps on the Integrated apps page.
-- **Specific Users** This option lets you select specific users or groups in your organization to have access to agents. So while all or specific users in your organization may have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use agents.
+- **Specific Users** This option lets you select specific users or groups in your organization to have access to agents. So while all or specific users in your organization might have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use agents.
 
 > [!NOTE]
 > Once extensibility is disabled, the Microsoft pinned Visual Creator agent and entry point for Agent Builder will no longer be visible in BizChat.  Once extensibility is disabled in the tenant, it can take up to 24 hours for agents to disappear for users and for Agent Builder and Visual Creator to disappear.
@@ -118,7 +118,7 @@ The following table describes the actions you can take to manage an agent for yo
 | **Publish** | Make an agent available to specific users or groups. This means the agent is listed in the store and can be installed by those users. |
 | **Deploy** | Install an agent on behalf of a user by accepting Microsoft Entra permissions for them. This action makes the agent active and usable for specific users or groups. |
 | **Remove** | Remove the agent from the inventory. This action is applicable only for first-party or third-party agents. The agent can be re-added to the inventory by acquiring it from the store. |
-| **Block** | Prevent any users in the tenant from accessing the agent. This action ensures that the agent cannot be used by anyone in the organization. |
+| **Block** | Prevent any users in the tenant from accessing the agent. This action ensures that the agent can't be used by anyone in the organization. |
 
 ### Publish agents
 
@@ -134,9 +134,9 @@ The publishing process involves the following steps:
 
    1. If the application is approved, it becomes available to the org users based on the org default settings for custom apps. The application also becomes part of the `Available apps` list in the admin center, where admins can manage user assignments and other settings as any other app.
 
-   1. If the application is disapproved, it is removed from the `Pending approval` list in the admin center, and the status is shared with Copilot Studio. The developer can make changes and resubmit the application for approval.
+   1. If the application is disapproved, it's removed from the `Pending approval` list in the admin center, and the status is shared with Copilot Studio. The developer can make changes and resubmit the application for approval.
 
-1. If the developer publishes an update to an existing application, the update is also submitted for approval and follows the same workflow as a new application. The update is shown in the ‘Pending approval’ list with the status `Update pending`. Until the update is approved, the previous version of the application remains available to the users.
+1. If the developer publishes an update to an existing application, the update is also submitted for approval and follows the same workflow as a new application. The update is shown in the `Pending approval` list with the status `Update pending`. Until the update is approved, the previous version of the application remains available to the users.
 
 ### Deploy agents
 
@@ -153,7 +153,7 @@ Deploying an agent affects its availability and functionality in Copilot and in 
 
 You can remove first-party and third-party agents across the whole organization or for specific users or groups by using the same controls that work for any other app in the Microsoft 365 admin center. To do this, follow these steps:
 
-1. In the admin center, go to the Integrate apps page.
+1. In the admin center, go to the Integrated apps page.
 1. Select an agent from the list of Deployed apps.
 1. Select **Remove**.
 1. Decide whether to remove the agents for everyone or specific users or groups.
@@ -171,10 +171,10 @@ You can block or unblock agents for the complete organization or specific users 
 
 Blocking or unblocking an agent affects its availability and functionality in Copilot and other host products, such as Outlook, Teams, or Microsoft 365.
 
+## Agent metadata in admin center
+
+You can access key metadata for Copilot agents directly within the publish flow on the Integrated apps page. This metadata includes details such as the agent’s capabilities, data sources (for example, OneDrive and Sharepoint files and sites, or Graph connectors), and custom actions. It’s important to note that agents are only for declarative agents, meaning they're designed to perform specific tasks based on predefined rules and configurations.
+
 ## View and consent to permissions and data access
 
 For detailed information about how Microsoft 365 Copilot uses, protects, and shares organizational information to power extensibility, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy).
-
-## Agent metadata in admin center
-
-You can access key metadata for Copilot agents directly within the publish flow on the Integrated Apps page. This metadata includes details such as the agent’s capabilities, data sources (for example, OneDrive and Sharepoint files and sites, or Graph connectors), and custom actions. It’s important to note that agents are only for declarative agents, meaning they are designed to perform specific tasks based on predefined rules and configurations.
