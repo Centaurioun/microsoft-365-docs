@@ -63,6 +63,8 @@ items:
           href: microsoft-365-copilot-app-overview.md
         - name: Admin settings
           href: microsoft-365-copilot-app-admin-settings.md
+        - name: Set up Organizational Asset Library
+          href: enterprise-brand-manager.md
     - name: Pin Copilot Chat to the navigation bar
       href: pin-copilot.md
     - name: Copilot in Microsoft 365 admin centers
