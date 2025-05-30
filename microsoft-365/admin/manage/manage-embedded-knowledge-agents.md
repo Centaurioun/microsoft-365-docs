@@ -22,7 +22,7 @@ ms.custom:
 description: "Learn how to manage embedded knowledge agents in the Microsoft 365 admin center, including file uploads, container handling, and sensitivity labels."
 ---
 
-# Manage agents with files uploaded as knowledge source in the Microsoft 365 admin center
+# Manage agents with files uploaded as a knowledge source in the Microsoft 365 admin center
 
 Embedded knowledge agents allow users to upload files as knowledge sources to an agent using Agent Builder. These files are stored in tenant-owned [SharePoint Embedded](/sharepoint/dev/embedded/overview) (SPE) containers, and only the text content is used for grounding the agent’s responses.  
 
@@ -65,9 +65,13 @@ When a file is uploaded to an agent, it's stored in a SharePoint Embedded (SPE) 
 
 Container management is handled separately from agent management. While agents can be managed in the Microsoft 365 admin center, SPE containers must be managed through the SharePoint admin center or via PowerShell.
 
-## Viewing agent metadata
+## View agent metadata
 
-Admins can filter the agent inventory to view only agents that use embedded files as knowledge sources. For each agent, the following metadata is available:
+Admins can filter the agent inventory to view only agents that use embedded files as knowledge sources. 
+
+:::image type="content" source="../../media/knowledge-agent-filter.png" alt-text="Screenshot showing the agents and connectors page in the Microsoft 365 admin center with the filters highlighted.":::
+
+For each agent, the following metadata is available:
 
 - **File name** – The name of the uploaded file.  
 - **File sensitivity** – The sensitivity label applied to the file.  
@@ -75,7 +79,7 @@ Admins can filter the agent inventory to view only agents that use embedded file
 
 This metadata helps admins track and audit the use of embedded content across agents.
 
-## Deleting agents
+## Delete agents
 
 :::image type="content" source="../../media/knowledge-agent-delete.png" alt-text="Screenshot showing the pop-up window that appears when deleting an agent." lightbox="../../media/knowledge-agent-delete.png":::
 
