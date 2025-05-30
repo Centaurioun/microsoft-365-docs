@@ -1,5 +1,5 @@
 ---
-title: "Manage agents with files uploaded as knowledge source in the Microsoft 365 admin center"
+title: "Manage agents with files uploaded as a knowledge source in the Microsoft 365 admin center"
 ms.author: camillepack
 author: camillepack
 manager: scotv
@@ -30,7 +30,7 @@ This article explains how embedded files are handled, how admins can manage agen
 
 ## Supported file types and limits
 
-:::image type="content" source="../../media/knowledge-agent-studio.png" alt-text="Screenshot showing the configuration screen for an agent in Copilot Studio.":::
+:::image type="content" source="../../media/knowledge-agent-studio.png" alt-text="Screenshot showing the configuration screen for an agent in Copilot Studio." lightbox="../../media/knowledge-agent-studio.png":::
 
 Embedded knowledge agents support uploading files as knowledge sources. Only the text content of these files is used for grounding.
 
@@ -77,7 +77,7 @@ This metadata helps admins track and audit the use of embedded content across ag
 
 ## Deleting agents
 
-:::image type="content" source="../../media/knowledge-agent-delete.png" alt-text="Screenshot showing the pop-up window that appears when deleting an agent.":::
+:::image type="content" source="../../media/knowledge-agent-delete.png" alt-text="Screenshot showing the pop-up window that appears when deleting an agent." lightbox="../../media/knowledge-agent-delete.png":::
 
 Agents can be deleted directly from the Microsoft 365 admin center. When an agent is deleted, the following actions occur:
 
@@ -103,7 +103,7 @@ Sensitivity labels are applied at the agent level based on the labels of the upl
 
 Admins can view the sensitivity label for each agent in the **Overview** tab of the Microsoft 365 admin center.
 
-:::image type="content" source="../../media/knowledge-agent-idea.png" alt-text="Screenshot showing the overview details of an agent.":::
+:::image type="content" source="../../media/knowledge-agent-idea.png" alt-text="Screenshot showing the overview details of an agent." lightbox="../../media/knowledge-agent-idea.png":::
 
 ### User access and visibility
 
