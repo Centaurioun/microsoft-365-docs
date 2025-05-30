@@ -1,5 +1,5 @@
 ---
-title: Set up or disconnect pay-as-you-go services in Microsoft 365
+title: Set up or disconnect pay-as-you-go billing for Microsoft Syntex services, Microsoft 365 Archive, or Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -12,14 +12,12 @@ ms.subservice:
 search.appverid: 
 ms.collection: 
 ms.localizationpriority:  medium
-description: Learn how to set up or disconnect billing for pay-as-you-go services in Microsoft 365.
+description: Learn how to set up or disconnect billing for pay-as-you-go services in Microsoft Syntex, Microsoft 365 Archive, and Microsoft 365 Backup.
 ---
 
-# Set up or disconnect pay-as-you-go services in Microsoft 365
+# Set up or disconnect pay-as-you-go billing for Microsoft Syntex services, Microsoft 365 Archive, or Microsoft 365 Backup
 
-## Set up pay-as-you-go services
-
-Setting up pay-as-you-go services for Microsoft Syntex and Microsoft Copilot involves different processes but shares the same prerequisites.
+This article applies to setting up pay-as-you-go billing for Microsoft Syntex services, Microsoft 365 Archive, or Microsoft 365 Backup.
 
 ### Prerequisites
 

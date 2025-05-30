@@ -1,5 +1,5 @@
 ---
-title: Set up or disconnect agents in Microsoft 365 Copilot
+title: Set up or disconnect agents for Microsoft 365 Copilot
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
