@@ -124,13 +124,13 @@ Use the following steps to search for the **Updated the ownerless group policy**
 
     :::image type="content" source="../../media/audit-ownerless-group1.png" alt-text="Screenshot of audit log." lightbox="../../media/audit-ownerless-group1.png":::
 
-Once the search is complete, you can see the following result. 
-
-:::image type="content" source="../../media/result-audit-ownerless-group1.png" alt-text="Screenshot of result of audit log search." lightbox="../../media/result-audit-ownerless-group1.png":::
-
-The following is an example of an audit log entry showing changes made:
-
-:::image type="content" source="../../media/audit-log1.png" alt-text="Screenshot of an audit log." lightbox="../../media/audit-log1.png":::
+    Once the search is complete, you can see the following result. 
+    
+    :::image type="content" source="../../media/result-audit-ownerless-group1.png" alt-text="Screenshot of result of audit log search." lightbox="../../media/result-audit-ownerless-group1.png":::
+    
+    The following is an example of an audit log entry showing changes made:
+    
+    :::image type="content" source="../../media/audit-log1.png" alt-text="Screenshot of an audit log." lightbox="../../media/audit-log1.png":::
 
 ## Common issues with the ownerless group policy
 
