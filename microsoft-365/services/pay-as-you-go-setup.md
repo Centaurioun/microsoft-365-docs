@@ -55,6 +55,7 @@ To set up a pay-as-you-go service for Microsoft Syntex, follow the [steps for Mi
 
 4. Select **Save** to complete the setup.
 
+<!---
 ### Setup guide for Microsoft 365 Copilot
 
 #### Step 1: Set up a billing policy
@@ -80,7 +81,7 @@ To set up a pay-as-you-go service for Microsoft Syntex, follow the [steps for Mi
 #### Step 2: Connect the billing policy to a pay-as-you-go service
 
 You can then connect this new billing policy to a pay-as-you-to service by selecting the **Connect a service** link on the **Billing & usage** page.
-
+--->
 ## Monitor usage and costs
 
 Once the setup is complete, you can monitor your pay-as-you-go usage and costs in Microsoft Cost Management for Azure. Ensure you have at least read access to the resource group specified for billing.
