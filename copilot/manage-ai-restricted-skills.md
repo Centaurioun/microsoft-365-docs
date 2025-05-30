@@ -15,7 +15,7 @@ ms.date:     05/29/2025
 
 # Manage AI-restricted skills
 
-Admins can mark certain skills as AI-restricted, such as those that might be considered confidential or sensitive in nature. These could include skills related to specific projects, proprietary technologies, or other areas that an organization might want to keep private or enable your users to keep private
+Admins can mark certain skills as AI-restricted, such as those that might be considered confidential or sensitive in nature. These could include skills related to specific projects, proprietary technologies, or other areas that an organization might want to to exclude from being used in AI based skill inferencing.
 
 AI restricted skills will not be suggested to users in your tenant. Our inference engine will ensure that any AI restricted skills identified by the admin will be updated and removed from user profiles within 24 hours. However, a user is able to manually add any skill from taxonomy to their profile, including AI restricted skills.
 
