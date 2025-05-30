@@ -3,7 +3,7 @@ title: Data, privacy, and security for web search in Microsoft 365 Copilot and M
 description: "Learn how to manage Microsoft 365 Copilot and Microsoft 365 access to web content for your organization."
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dansimp
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
@@ -12,8 +12,9 @@ ms.collection:
 - privacy-copilot 
 - m365copilot
 - magic-ai-copilot
+- must-keep
 hideEdit: true
-ms.date: 03/13/2025
+ms.date: 05/05/2025
 ---
 
 # Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat
@@ -127,7 +128,7 @@ If the IT admin enables the **Allow web search in Copilot** policy, they have th
 
 If the IT admin turns on web search for Microsoft 365 Copilot users, those users still have the option to turn off web search by using the [Web content toggle](#web-content-toggle-for-users-only-for-microsoft-365-copilot). The **Web content** toggle isn’t available as part of the Microsoft 365 Copilot Chat experience.
 
-If the IT admin turns off web search, the **Web content** toggle can longer be used and there isn’t a way for users to turn web search back on. For example, even if a Microsoft 365 Copilot user has turned on the **Web content** toggle, they still won’t be able to use web search.
+If the IT admin turns off web search, the **Web content** toggle isn’t available to users. The toggle is turned off and appears dimmed. Users can’t turn on the toggle to use web search.
 
 If the IT admin doesn’t configure the **Allow web search in Copilot** policy, web search will be available to users in both Microsoft 365 Copilot and Microsoft 365 Copilot Chat, unless the IT admin has set the **Allow the use of additional optional connected experiences in Office** policy to **Disabled**. But turning off optional connected experiences restricts Microsoft 365 Copilot Chat, Microsoft 365 Copilot, and multiple experiences across Microsoft 365.
 
