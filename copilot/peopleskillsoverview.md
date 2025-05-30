@@ -32,9 +32,11 @@ People Skills:
 
 People Skills comes with your Microsoft 365 Copilot or Viva licenses and doesn't need a separate license. People Skills AI inferencing and experiences are based on a user's Microsoft 365 Copilot, Microsoft 365, Office 365, and Viva plans.
 
-- People Skills AI inferencing is available to all users in your organization with assigned Microsoft 365 Copilot or select Viva licenses.
+- __People Skills - Foundation service plan__: Customers with the “People Skills – Foundation" service plan (Microsoft 365 commercial customers without a Microsoft 365 Copilot SKU, excluding education and government) will have access to the People Skills service excluding AI inferencing and Microsoft 365 Copilot capabilities. Users with this service plan can search to add skills from your taxonomy or imported skills to create a skills profile using the Microsoft 365 profile editor.
 
-- Users with other Microsoft 365 commercial licenses in the worldwide cloud (excluding student and faculty SKUs) also get access to improved skills experience. They can search to add skills from your taxonomy or imported skills to create a skills profile using the Microsoft 365 profile editor.
+- __People Skills – Advanced service plan__: Customers with the “People Skills – Advanced" service plan (including Microsoft Viva Suite, Viva Insights (including Workplace Analytics and Feedback customers), and Viva Learning customers) will have access to the People Skills service with AI inferencing, excluding Microsoft 365 Copilot capabilities.
+
+- __Microsoft 365 Copilot in Productivity Apps service plan__: Customers with the “Microsoft 365 Copilot in Productivity Apps service plan,” excluding education and government SKUs, will now have People Skills available, including AI-inferencing and related Copilot experiences.
 
 For a detailed list of People Skills experiences and their corresponding license requirements, please see below.
 
