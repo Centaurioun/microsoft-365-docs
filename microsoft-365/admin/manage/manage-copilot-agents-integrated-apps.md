@@ -58,7 +58,7 @@ You can manage several types of agents in Microsoft 365 Copilot, each serving di
 - **Shared agents** Configured for use by multiple users or groups. These agents are individually shared by their creators with other users.
 - **First-party agents** Developed by Microsoft and integrated with Microsoft 365 services.
 - **External agents** Created by external developers or vendors. You can control their availability and permissions.
-- **Frontier agents** Experimental or advanced agents that use new capabilities or integrations. These may be in early stages of development or testing and could require more oversight or limited rollout.
+- **Frontier agents** Experimental or advanced agents that use new capabilities or integrations. These might be in early stages of development or testing and could require more oversight or limited rollout.
 
 ## Get started
 
@@ -90,9 +90,9 @@ You can also manage shared agents, which are agents that are configured to be us
 The following settings are available to manage agents for Copilot:
 
 - **Enable or disable agents** Control whether agents are available in your organization.
-- **Advanced agent settings**  Configure additional controls for agent behavior (more options coming).
+- **Advanced agent settings**  Configure more controls for agent behavior (more options coming).
 - **Agent inventory** View and manage all agents, including first-party, external, shared, and custom agents.
-- **Metadata** View key details for each agent, such as capabilities, data sources (e.g., OneDrive, SharePoint, Graph connectors), and custom actions.
+- **Metadata** View key details for each agent, such as capabilities, data sources (for example, OneDrive, SharePoint, Graph connectors), and custom actions.
 - **Shared agents** Manage agents configured for use by multiple users or groups. You can:
   - Change availability (Edit users)
   - Deploy
@@ -127,7 +127,7 @@ The setting has three options:
 You can assign or unassign agents to specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. You can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and select the **Assign** or **Unassign** option. You can also choose to assign or unassign the app to everyone or specific users or groups. Assigning or unassigning an agent affects its availability and functionality in Copilot and in the other host products, such as Outlook, Teams, or Microsoft 365.
 
 > [!IMPORTANT]
-> Developers can [update the existing apps](/microsoft-365-copilot/extensibility/) to work with Microsoft 365 Copilot. If the updated app was pre-approved or pre-installed by an admin, then it'll update for the assigned users and starts working with Copilot. If a developer updates a previously blocked app to work with Microsoft 365 Copilot and then the admins make the app available to the users, then such an app also works with Copilot.
+> Developers can [update the existing apps](/microsoft-365-copilot/extensibility/) to work with Microsoft 365 Copilot. If the updated app was pre-approved or pre-installed by an admin, then it updates for the assigned users and starts working with Copilot. If a developer updates a previously blocked app to work with Microsoft 365 Copilot and then the admins make the app available to the users, then such an app also works with Copilot.
 
 ## Actions for agents
 
