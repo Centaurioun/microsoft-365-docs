@@ -135,13 +135,13 @@ Before the partner can assign these roles to users, you must add the partner as 
 
 ## Volume licensing roles
 
-Volume licensing (VL) agreement administrators access their volume licenses in Microsoft 365 admin center.
+Volume licensing (VL) agreement administrators access their volume licenses in the Microsoft 365 admin center.
 
-- VL administrators don't have permissions to any other admin center information or functionality outside the VL section.
+- VL Administrators don't have permissions to any other admin center information or functionality outside the VL section.
 
-- Global admins don't assign any VL roles and don't need to assign any admin role to a VL administrator for them to be able to access the VL agreement.
+- Global admins don't assign any VL roles and don't need to assign any admin role to a VL Administrator for them to be able to access the VL agreement.
 
-- Global admins don't have access to VL information or functionality in admin center, unless they are assigned a VL role by a VL administrator.
+- Global admins don't have access to VL information or functionality in the admin center, unless they are assigned a VL role by a VL Administrator.
 
 - For more information, see [Manage volume licensing user roles](../../commerce/licenses/manage-user-roles-vl.md) or [contact the Volume Licensing Support team](../../commerce/licenses/contact-vl-support.md).
 
