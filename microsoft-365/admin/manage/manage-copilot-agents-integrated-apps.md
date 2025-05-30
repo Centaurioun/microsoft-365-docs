@@ -34,7 +34,7 @@ description: "Learn how to manage agents for Microsoft 365 Copilot in the Micros
 >
 > - This article is intended for IT administrators.
 > - The capability is enabled by default in all Microsoft 365 Copilot licensed tenants.
-> - The management of agents is currently transitioning to the Copilot Control System. During this transition phase, certain features will still be managed on the Integrated Apps page.
+> - The management of agents is currently transitioning to the Copilot Control System. During this transition phase, certain features will still be [managed on the Integrated Apps page](#manage-agents-using-integrated-apps).
 
 Microsoft 365 Copilot is a new experience in Microsoft 365 that combines the power of large language models with your data and apps in Microsoft 365 to capture natural language commands to produce content and analyze data. It enables access to and use of third-party apps, such as Jira, [Dynamics 365](/microsoft-365-copilot/extensibility/overview-business-applications), or Bing Web Search.
 
@@ -75,7 +75,7 @@ You can manage agents in the Microsoft 365 admin center by using the **Agents & 
 - Perform actions such as deploying, blocking, or removing agents.
 
 >[!NOTE]
-> As the management of agents transitions to the Copilot Control System, which will become the central hub for all Copilot extensibility management, certain features will still be managed on the Integrated Apps page.
+> As the management of agents transitions to the Copilot Control System, which will become the central hub for all Copilot extensibility management, certain features will still be [managed on the Integrated Apps page](#manage-agents-using-integrated-apps).
 
 You can view agents by going to **Copilot** > **Agents & connectors**, or by using the filter option of **Host products** > **Copilot** on the Integrated apps page.
 
@@ -198,3 +198,24 @@ You can access key metadata for Copilot agents directly within the publish flow 
 ## View and consent to permissions and data access
 
 For detailed information about how Microsoft 365 Copilot uses, protects, and shares organizational information to power extensibility, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy).
+
+## Manage agents using Integrated Apps
+
+During the transition to the Copilot Control System, some agent management features are still available on the **Integrated Apps** page in the Microsoft 365 admin center. This section helps admins manage agents from that location.
+
+To manage agents using Integrated Apps:
+
+1. Sign in to the Microsoft 365 admin center.
+1. Go to **Settings** > **Integrated apps**.
+1. Use the Host products filter and select **Copilot** to view apps that support agents.
+1. Select an app to:
+    - Assign or unassign agents to users or groups
+    - Deploy agents on behalf of users
+    - Block or unblock agents for specific users or the entire organization
+    - Remove agents from the deployed list
+
+You can also configure who in the organization can access agents by adjusting the **Allow users access to agents** setting. This setting supports three options:
+
+- All users (default)
+- No users
+- Specific users or groups
