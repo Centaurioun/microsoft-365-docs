@@ -36,11 +36,37 @@ You can manage your skills library in the following ways:
 - [Manage skills import or export:](https://)
 
   - Import user skills from third-party platforms
-  
+    
   - Export your custom skills library* or confirmed user skills for each individual user in your tenant
-  
+    
+     
+
+
+### Manage out-of-the-box skills library
+
+View, add, or delete the skills you selected from the out-of-the-box library. The more skills you include from the out-of-the-box library, the more specific AI-generated skill profiles are for users. Our recommendation is to use all 16,000 skills, with a minimum of 500 skills.
+
  
 
-> [!NOTE]
-> *Some of these functionalities may require Microsoft 365 Copilot or Viva licenses. Review __[licensing requirements](#_Licensing)__.
+
+
+ 
+
+Navigate to the People Skills setup page and select __Skills__ to manage your skills library.
+
+1.      Under __Skills,__ select __People Skills Library__.
+
+2.      Review the list. You can filter by domain and search by skill name.
+
+3.      To add skills, select __Add Skills__. Select the skills you want to add. You can filter by domain and search by skill name. Select __Add__.
+
+4.      To delete skills, select the skills you want to delete. You can filter by domain and search by skill name. Select __Delete skills__. Select __Delete__ again to confirm you want to delete the selected skills.
+
+Deleting skills removes the skills and associated skills data from your organization and from your users' experience.
+
+5.      Select __Done__.
+
+ 
+
+
 
