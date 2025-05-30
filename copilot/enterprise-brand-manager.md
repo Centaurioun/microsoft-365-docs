@@ -23,16 +23,18 @@ description: "Learn about enabling brand kits and asset libraries in the Microso
 
 # Enterprise brand manager policy and organizational asset library (OAL) access
 
-Your organization can enable their brand managers to set up and publish organization or official brand kits via [create.microsoft.com](https://create.microsoft.com). These brand kits can contain multiple logos, color palettes, fonts, images, and templates pertaining to a certain brand. Once published, the brand kit is available to all users in the organization on create.microsoft.com. They can use these brand kits to generate branded artifacts or manually add brand content to existing designs and images.
+Your organization can enable their brand managers to set up and publish organization or official brand kits via [create.microsoft.com](https://create.microsoft.com). These brand kits can contain multiple logos, color palettes, fonts, images, and templates pertaining to a certain brand.
 
-To enable this functionality, admins must configure the Enterprise Brand Manager policy. This involves:
+Once published, the brand kit is available to all users in the organization on create.microsoft.com. They can use these brand kits to generate branded artifacts or manually add brand content to existing designs and images.
+
+To enable this functionality, admins must configure the Enterprise Brand Manager policy, which involves:
 
 - Defining a security group that includes the brand managers.
 - Assigning responsibility to these brand managers for creating, managing, and publishing the official or organizational brand kits.
 
 Beyond brand kits, Copilot also supports access to an organization’s designated [organizational asset library (OAL)](/sharepoint/organization-assets-library). OALs provide broad, centralized access to brand content and support images, logos and illustrations. OALs need to be configured as searchable by an admin.
 
-## Setting up Enterprise Brand Manager Policy
+## Setting up Enterprise Brand Manager policy
 
 **Prerequisite** Create a security group with identified brand managers who have access and permission to create, publish, and manage brand kits available to all users within the organization.
 
