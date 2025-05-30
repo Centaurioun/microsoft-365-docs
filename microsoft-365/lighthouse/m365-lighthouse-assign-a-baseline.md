@@ -35,8 +35,8 @@ Additionally, each partner tenant user must be a Microsoft 365 Lighthouse admin.
 ## Assign a baseline to a tenant
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
-2. Select a tenant to which you want to assign a new baseline.
-3. Select **Assign baseline**.
+2. Using the checkboxes, select the tenant(s) to which you want to assign a new baseline.
+3. Select **Assign baseline** button at the top of the table.
 4. Select the baseline you want to assign to the selected tenants.
 
 > [!NOTE]
