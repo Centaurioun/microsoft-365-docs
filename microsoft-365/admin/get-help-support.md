@@ -9,12 +9,13 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - highpri
 - Adm_O365
 - Adm_TOC
+- ContentEnagagementFY25
 ms.custom: 
 - VSBFY23
 - AdminSurgePortfolio
@@ -93,7 +94,7 @@ There's a dedicated support team for users who access volume licensing (VL) cont
 1. In the Microsoft 365 admin center, select **Help & support**.
 2. In the query box, type "manage volume licensing" together with your question to help target your query more accurately. If you see a drop-down list, select the item closest to your question, or continue typing your question, then press **Enter**.
 3. If the results don't help, at the bottom, select **Contact Support**.
-4. Enter a description of your issue, specify the license ID or VL agreement number your issue relates to, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**.
+4. Enter a description of your issue, specify the License ID or VL agreement number your issue relates to, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**.
 
 If you're a volume licensing admin but are unable to access the admin center, you can create an [online support request](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=2afa6f15-b710-db46-909a-8346017c802f).
 
