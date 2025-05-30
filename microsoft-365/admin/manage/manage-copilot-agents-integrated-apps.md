@@ -54,10 +54,10 @@ The hub Copilot experience shows the list of agents that are available and deplo
 
 You can manage several types of agents in Microsoft 365 Copilot, each serving different purposes:
 
-- **Declarative agents** Built with predefined instructions and actions. These agents follow structured logic and are best for predictable, rule-based tasks.
-- **Shared agents** Configured for use by multiple users or groups. Useful for common workflows across teams.
+- **Custom agents** Built with predefined instructions and actions. These agents follow structured logic and are best for predictable, rule-based tasks. Before becoming available to users, custom agents go through an admin approval and publishing process to ensure compliance and readiness
+- **Shared agents** Configured for use by multiple users or groups. These agents are individually shared by their creators with other users and are useful for enabling common workflows across teams.
 - **First-party agents** Developed by Microsoft and integrated with Microsoft 365 services.
-- **Third-party agents** Created by external developers or vendors. You can control their availability and permissions.
+- **External agents** Created by external developers or vendors. You can control their availability and permissions.
 - **Frontier agents** Experimental or advanced agents that use new capabilities or integrations. These may be in early stages of development or testing and could require more oversight or limited rollout.
 
 ## Get started
@@ -91,7 +91,7 @@ The following settings are available to manage agents for Copilot:
 
 - **Enable or disable agents** Control whether agents are available in your organization.
 - **Advanced agent settings**  Configure additional controls for agent behavior (more options coming).
-- **Agent inventory** View and manage all agents, including first-party, third-party, shared, and custom agents.
+- **Agent inventory** View and manage all agents, including first-party, external, shared, and custom agents.
 - **Metadata** View key details for each agent, such as capabilities, data sources (e.g., OneDrive, SharePoint, Graph connectors), and custom actions.
 - **Shared agents** Manage agents configured for use by multiple users or groups. You can:
   - Change availability (Edit users)
@@ -116,7 +116,7 @@ To do this, follow these steps:
 The setting has three options:
 
 - **All Users** This is the default option and it means that all users in the organization can access agents, subject to the existing app policies and user assignments.
-- **No Users** This option means that no users in the organization can access agents, and the third-party agents are disabled in the agents flyout. This option also hides agents from the list of Available and Deployed apps on the Integrated apps page.
+- **No Users** This option means that no users in the organization can access agents, and the external agents are disabled in the agents flyout. This option also hides agents from the list of Available and Deployed apps on the Integrated apps page.
 - **Specific Users** This option lets you select specific users or groups in your organization to have access to agents. So while all or specific users in your organization might have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use agents.
 
 > [!NOTE]
@@ -137,7 +137,7 @@ The following table describes the actions you can take to manage an agent for yo
 |------------|-----------------|
 | **Publish** | Make an agent available to specific users or groups. This means the agent is listed in the store and can be installed by those users. |
 | **Deploy** | Install an agent on behalf of a user by accepting Microsoft Entra permissions for them. This action makes the agent active and usable for specific users or groups. |
-| **Remove** | Remove the agent from the inventory. This action is applicable only for first-party or third-party agents. The agent can be re-added to the inventory by acquiring it from the store. |
+| **Remove** | Remove the agent from the inventory. This action is applicable only for first-party or external agents. The agent can be re-added to the inventory by acquiring it from the store. |
 | **Block** | Prevent any users in the tenant from accessing the agent. This action ensures that the agent can't be used by anyone in the organization. |
 
 ### Publish agents
@@ -171,7 +171,7 @@ Deploying an agent affects its availability and functionality in Copilot and in 
 
 ### Remove agents
 
-You can remove first-party and third-party agents across the whole organization or for specific users or groups by using the same controls that work for any other app in the Microsoft 365 admin center. To do this, follow these steps:
+You can remove first-party and external agents across the whole organization or for specific users or groups by using the same controls that work for any other app in the Microsoft 365 admin center. To do this, follow these steps:
 
 1. In the admin center, go to the Integrated apps page.
 1. Select an agent from the list of Deployed apps.
