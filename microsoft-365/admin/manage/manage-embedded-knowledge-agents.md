@@ -69,7 +69,7 @@ Container management is handled separately from agent management. While agents c
 
 Admins can filter the agent inventory to view only agents that use embedded files as knowledge sources. 
 
-:::image type="content" source="../../media/knowledge-agent-filter.png" alt-text="Screenshot showing the agents and connectors page in the Microsoft 365 admin center with the filters highlighted.":::
+:::image type="content" source="../../media/knowledge-agent-filter.png" alt-text="Screenshot showing the agents and connectors page in the Microsoft 365 admin center with the filters highlighted." lightbox="../../media/knowledge-agent-filter.png":::
 
 For each agent, the following metadata is available:
 
