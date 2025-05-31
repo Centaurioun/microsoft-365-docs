@@ -14,7 +14,7 @@ ms.collection:
 - magic-ai-copilot
 - must-keep
 hideEdit: true
-ms.date: 02/06/2025
+ms.date: 05/29/2025
 ---
 
 # Transparency Note for Microsoft 365 Copilot
@@ -70,6 +70,9 @@ For additional, detailed information about the LLMs provided to Microsoft by Ope
 |Microsoft 365 Copilot in Whiteboard|Microsoft 365 Copilot in Whiteboard helps kickstart the ideation process to generate, categorize, and summarize ideas. <br/><br/> For more information, see [Frequently Asked Questions about Copilot in Whiteboard](https://support.microsoft.com/topic/cbe05878-d68d-4d9d-83c1-5b47d6b76792).  |
 |Microsoft 365 Copilot in OneNote|Microsoft 365 Copilot in OneNote enables users to draft plans, generate ideas, create lists, and organize information to help them find what they need in the OneNote app.<br/><br/> For more information, see [Frequently asked questions about Copilot in OneNote](https://support.microsoft.com/office/2d9136e0-132a-4d4c-ab0e-39cf3ed914cc).  |
 |Microsoft 365 Copilot Chat|Microsoft 365 Copilot Chat (previously named Business Chat) combines the power of Large Language Models with the Internet, work content and context, and other apps, to help users draft content, catch up on what’s missed, and get answers to questions via prompts.  |
+|Microsoft 365 Copilot in SharePoint rich text editor|Microsoft 365 Copilot in Microsoft SharePoint rich text editor simplifies content creation on SharePoint pages and posts. With Copilot, you can rewrite text, adjust the tone, condense information, and elaborate ideas. For more information, see [Frequently asked questions about Copilot in SharePoint](https://support.microsoft.com/office/eb1b7668-3d98-4a93-98ef-f0c6dfc694f0#faq-copilot-rte).|
+|Microsoft 365 Copilot in OneDrive|Microsoft 365 Copilot in OneDrive is an innovative AI-powered assistant designed to help you interact with your documents by extracting information, comparing the key differences, summarizing files and generating insights. For more information, see [Frequently asked questions about Copilot in OneDrive](https://support.microsoft.com/office/1bd55d10-7c46-417c-ab3d-e9c7be346947). |
+|Microsoft 365 Copilot glance cards|Glance cards offer a quick preview of work entities, such as documents, to help assess relevance or recall. They're accessed by hovering over files in the Search tab of the [Microsoft 365 Copilot app](https://m365.cloud.microsoft/).|
 |Intelligent Search|Intelligent Search enables search in Dataverse applications such as Dynamics 365 Sales, Service, and Finance & Operations using natural language.|
 |Power Platform Connectors|Power Platform Connectors allow customers to access real time data from a collection of business and personal productivity applications in the Microsoft 365 Copilot experience.|
 |Microsoft Graph Connectors|Microsoft Graph Connectors enable connections to external data sources, including up to 500 items per Microsoft 365 Copilot license. |
@@ -213,7 +216,7 @@ Our approach to mapping, measuring and managing risks will continue to evolve as
 
 Microsoft provides tools like the Microsoft Copilot Dashboard for Microsoft 365 customers and reports in the Microsoft 365 admin center. These tools are designed to help organizations measure usage, adoption, and the impact of Microsoft 365 Copilot. For example:
 
-- **Microsoft 365 Copilot usage report** enables administrators to view a summary of how users’ adoption, retention, and engagement are with Microsoft 365 Copilot, and the activity of every user in an organization
+- **Microsoft 365 Copilot usage report** enables administrators to view a summary of how users’ adoption, retention, and engagement are with Microsoft 365 Copilot. For more information, see [Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
 
 - **Adoption Score** offers administrators insights into how their organization works with Microsoft 365 Copilot. It provides a score on a 100-point scale, a dashboard view of adoption data & trends, and a tool for creating user surveys to gather feedback.
 
