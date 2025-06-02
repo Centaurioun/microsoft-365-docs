@@ -3,17 +3,16 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
-author:      anibajaj # GitHub alias
-ms.author:   anirudhbajaj # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
+title:       Manage privacy and sharing controls in People Skills
+description: How to set privacy and skill sharing controls for users, groups, or the entire tenant to meet your organization's needs and comply with local or business requirements
+author:      anibajaj 
+ms.author:   anirudhbajaj
+ms.service:  ms.service: microsoft-365-copilot
+ms.topic:    how-to
 ms.date:     05/29/2025
 ---
 
-# Manage privacy and sharing controls
+# Manage privacy and sharing controls in People Skills
 
 As an admin, you can set privacy and skill sharing controls for users, groups, or the entire tenant to meet your organization's needs and comply with local or business requirements. These settings can also be used to selectively deploy People Skills to a small group of pilot users, while restricting functionality to the rest of your tenant.
 
