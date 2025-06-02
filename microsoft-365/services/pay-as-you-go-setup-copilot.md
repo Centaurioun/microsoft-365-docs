@@ -52,7 +52,7 @@ Before you begin, ensure the following:
 
 7. On the **Users** page, choose **All users** or a **Specific group** (search and add a single group). Select **Next**.
 
-8. On the **Review and finish** page, review all the information. If it looks good, select **Create policy**.
+8. On the **Review and finish** page, double-check all the details you’ve entered. If everything is correct, select **Create policy**.
 
     Your billing policy is now created but not yet connected to a service.
 
@@ -91,4 +91,4 @@ Ensure you have the following roles:
 
 5. View the disconnection message to confirm that your Azure subscription is successfully disconnected.
 
-If multiple services are connected to a single policy, repeat the steps for each service.
+    If multiple services are connected to a single policy, repeat the steps for each service.
