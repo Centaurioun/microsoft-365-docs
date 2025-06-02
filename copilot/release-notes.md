@@ -39,9 +39,9 @@ Updates released between May 13, 2025, and May 29, 2025.
 
   Make your adaptive cards more dynamic by adding images—perfect for illustrating ideas, sharing visual data, or engaging users with eye-catching content. This feature helps teams communicate clearly, support diverse learning styles, and create more memorable interactions in everyday workflows.
  <a href="/microsoft-copilot-studio/guidance/adaptive-card-summarize-responses" target="_blank">Learn more.</a>
-- **Unified Agent Management for Admins in Microsoft admin center** [Windows, Web]
+- **Unified Agent Management for admins in Microsoft 365 admin center** [Windows, Web]
 
-  Admins can consistently manage Copilot agents in the Microsoft admin center, regardless of how they were built, simplifying deployment and governance.
+  Admins can consistently manage Copilot agents in the Microsoft 365 admin center, regardless of how they were built, simplifying deployment and governance.
  <a href="/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps" target="_blank">Learn more.</a>
 ### Copilot Studio
 - **Reuse connector and API actions across multiple copilots** [Web]
