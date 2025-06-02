@@ -14,7 +14,7 @@ ms.date:     05/29/2025
 
 # Manage your skills library in People Skills
 
-After completing the initial setup, you can return to the People Skills page in Admin Center to manage the skills library and admin settings.
+After completing the initial setup, you can return to the People Skills page in the Microsoft 365 Admin Center to manage the skills library and admin settings.
 
 **How to find People Skills setup page**: 
 
