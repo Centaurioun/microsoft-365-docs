@@ -69,7 +69,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 By default, *Anyone* links for a file allow people to edit the file, and *Anyone* links for a folder allow people to edit and view files, and upload new files to the folder. You can change these permissions for files and for folders, independently, to view-only.
 
-If you want to allow unauthenticated sharing, but are concerned about unauthenticated people modifying your organization's content, consider setting the file to **View** and folder permissions to **View** or **View and upload** (which restricts *Anyone* links to **View** while enabling the *Request Files* feature).
+If you want to allow unauthenticated sharing, but are concerned about unauthenticated people modifying your organization's content, consider setting the file permissions to **View** and folder permissions to **View** or **View and upload** (which restricts *Anyone* links to **View** while enabling the *Request Files* feature).
 
 To set permissions for Anyone links across the organization
 
