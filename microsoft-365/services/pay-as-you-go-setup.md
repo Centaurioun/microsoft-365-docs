@@ -19,7 +19,7 @@ description: Learn how to set up or disconnect billing for pay-as-you-go service
 
 This article explains how to set up or disconnect pay-as-you-go billing for Microsoft Syntex services, Microsoft 365 Archive, or Microsoft 365 Backup.
 
-### Prerequisites
+## Prerequisites
 
 Before you begin, ensure the following:
 
@@ -31,7 +31,7 @@ Before you begin, ensure the following:
     - Global Administrator or SharePoint Administrator for accessing the Microsoft 365 admin center.
     - Owner or Contributor rights to the Azure subscription and resource group.
 
-### Set up pay-as-you-go billing
+## Set up pay-as-you-go billing
 
 #### Step 1: Access the Microsoft 365 admin center
 
@@ -59,7 +59,7 @@ Before you begin, ensure the following:
 
 After setup, monitor your pay-as-you-go usage and costs in [Microsoft Cost Management for Azure](https://portal.azure.com/#blade/Microsoft_Azure_CostManagement/Menu/costanalysis). Ensure you have at least read access to the billing resource group.
 
-## Disconnect pay-as-you-go services
+## Disconnect pay-as-you-go billing
 
 ### Prerequisites
 
@@ -87,12 +87,13 @@ Ensure you have the appropriate admin roles:
 
 2. Confirm by selecting **Disconnect** in the confirmation window.
 
+If multiple services are connected to a single policy, repeat the steps for each service.
+
 #### Step 4: Review billing and usage
 
 After disconnection, review your billing and usage to ensure no further charges are applied.
 
 For detailed instructions about how to set up and disconnect specific pay-as-you-go services, see the service-specific get started documentation.
-
 
 <!---
 ### Setup guide for Microsoft 365 Copilot
