@@ -1,5 +1,5 @@
 ---
-title: Set up or disconnect agents for Microsoft 365 Copilot
+title: Set up or disconnect pay-as-you-go billing for Microsoft 365 Copilot
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -15,7 +15,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up or disconnect billing for pay-as-you-go services in Microsoft 365 Copilot.
 ---
 
-# Set up or disconnect agents for Microsoft 365 Copilot
+# Set up or disconnect pay-as-you-go billing for Microsoft 365 Copilot
 
 This article explains how to set up or disconnect pay-as-you-go billing for agents in Microsoft 365 Copilot.
 
