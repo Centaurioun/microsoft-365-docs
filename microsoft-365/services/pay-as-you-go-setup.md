@@ -28,7 +28,7 @@ Before you begin, ensure the following:
 - You have an Azure resource group in that subscription.
 
 - You have the appropriate admin roles:
-    - Global Administrator for accessing the Microsoft 365 admin center.
+    - Global Administrator or SharePoint Administrator for accessing the Microsoft 365 admin center.
     - Owner or Contributor rights to the Azure subscription and resource group.
 
 ### Set up pay-as-you-go billing
@@ -57,14 +57,15 @@ Before you begin, ensure the following:
 
 ## Monitor usage and costs
 
-Aftr setup, monitor your pay-as-you-go usage and costs in [Microsoft Cost Management for Azure](https://portal.azure.com/#blade/Microsoft_Azure_CostManagement/Menu/costanalysis). Ensure you have at least read access to the billing resource group.
+After setup, monitor your pay-as-you-go usage and costs in [Microsoft Cost Management for Azure](https://portal.azure.com/#blade/Microsoft_Azure_CostManagement/Menu/costanalysis). Ensure you have at least read access to the billing resource group.
 
 ## Disconnect pay-as-you-go services
 
 ### Prerequisites
 
-- You must have Global Administrator or SharePoint Administratorroles.
-- You must have Owner or Contributor rights to the Azure subscription and resource group.
+Ensure you have the appropriate admin roles:
+    - Global Administrator or SharePoint Administrator for accessing the Microsoft 365 admin center.
+    - Owner or Contributor rights to the Azure subscription and resource group.
 
 #### Step 1: Access the Microsoft 365 admin center
 
