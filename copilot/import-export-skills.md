@@ -3,7 +3,7 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       Import or export skills
+title:       Import or export People Skills
 description: You can import skills for a user from third-party platforms and export a user’s confirmed skills using the Graph API.
 author:      anibajaj 
 ms.author:   anirudhbajaj
@@ -12,7 +12,7 @@ ms.topic:    how-to
 ms.date:     05/29/2025
 ---
 
-# Import or export skills
+# Import or export People Skills
 
  You can import skills for a user from third-party platforms and export a user’s confirmed skills using the Graph API.
 
