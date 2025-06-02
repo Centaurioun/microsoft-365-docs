@@ -35,17 +35,13 @@ Updates released between May 13, 2025, and May 29, 2025.
 - **Create agents that learn from a Teams channel**
 
   Build custom Copilot agents that pull knowledge directly from a chosen Teams channel, letting them answer FAQs or surface project updates without extra coding.
-- **Insert Image as an Form.Action from Adaptive cards** [Windows, Web]
-
-  Make your adaptive cards more dynamic by adding images—perfect for illustrating ideas, sharing visual data, or engaging users with eye-catching content. This feature helps teams communicate clearly, support diverse learning styles, and create more memorable interactions in everyday workflows.
- <a href="https://adaptivecards.microsoft.com/?topic=Action.InsertImage" target="_blank">Learn more.</a>
 - **Insert images in adaptive cards for richer interactions** [Windows, Web]
 
   Make your adaptive cards more dynamic by adding images—perfect for illustrating ideas, sharing visual data, or engaging users with eye-catching content. This feature helps teams communicate clearly, support diverse learning styles, and create more memorable interactions in everyday workflows.
  <a href="/microsoft-copilot-studio/guidance/adaptive-card-summarize-responses" target="_blank">Learn more.</a>
-- **Unified Agent Management for Admins in Microsoft admin center** [Windows, Web]
+- **Unified Agent Management for admins in Microsoft 365 admin center** [Windows, Web]
 
-  Admins can consistently manage Copilot agents in the Microsoft admin center, regardless of how they were built, simplifying deployment and governance.
+  Admins can consistently manage Copilot agents in the Microsoft 365 admin center, regardless of how they were built, simplifying deployment and governance.
  <a href="/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps" target="_blank">Learn more.</a>
 ### Copilot Studio
 - **Reuse connector and API actions across multiple copilots** [Web]
@@ -116,7 +112,7 @@ Updates released between May 13, 2025, and May 29, 2025.
 - **Safe Links validates redacted URLs** [Windows]
 
   When Copilot masks a link, Safe Links now scans it instantly and alerts users to malicious sites, adding an extra layer of protection before anyone clicks. 
- <a href="https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/safelinks-protection-for-links-generated-by-m365-copilot-chat-and-office-apps/4396828" target="_blank">Learn more.</a>
+ <a href="https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/safelinks-protection-for-links-generated-by-m365-copilot-chat-and-office-apps/4396828" target="_blank">Learn more.</a> 
 ### PowerPoint
 - **Ask Copilot to rewrite text as a list** [Web, Mac, Windows]
 
@@ -162,7 +158,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 
   Find a dedicated Copilot icon in your web spreadsheet, allowing you to tap into AI-powered insights and streamline tasks without breaking your workflow.
  <a href="https://support.microsoft.com/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a" target="_blank">Learn more.</a>
-- **Visual cue for Copilot’s data context** [Web, Windows, Mac]
+- **Visual cue for Copilot’s data context** [Web]
 
   A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
 ### Microsoft 365 admin center
@@ -189,7 +185,7 @@ Updates released between April 29, 2025, and May 13, 2025.
   Copilot Chat now clusters past sessions into daily and weekly views, making it easier to scan, revisit, and manage your conversations.
 - **Copilot pages in Government Clouds** [Windows]
 
-  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
+  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
  <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
 - **Create web-aware agents in Agent Builder**
 
@@ -205,11 +201,11 @@ Updates released between April 29, 2025, and May 13, 2025.
 - **Agent plugins for Semantic Kernel :** [Developer]
 
   Accelerate Copilot solutions by adding ready-made plugins that tap Microsoft 365 data and actions through Semantic Kernel—so you can build smarter agents with far less code.
- <a href="/dotnet/api/microsoft.semantickernel.declarativeagentextensions?view=semantic-kernel-dotnet&preserve-view=true" target="_blank">Learn more.</a>
+ <a href="/dotnet/api/microsoft.semantickernel.declarativeagentextensions" target="_blank">Learn more.</a>
 ### Microsoft Viva
 - **AI Administrator can manage Microsoft Copilot Dashboard settings** [Web]
 
-  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
+  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
  <a href="/viva/insights/advanced/admin/manage-settings-copilot-dashboard" target="_blank">Learn more.</a>
 ### OneDrive
 - **Ask Copilot questions about images** [Web]
@@ -2072,10 +2068,6 @@ Updates released between December 18, 2024, and January 7, 2025.
 ## May 29, 2025
 Updates released between May 13, 2025, and May 29, 2025.
 ### Copilot extensibility
-- **Insert Image as an Form.Action from Adaptive cards** [Windows, Web]
-
-  Make your adaptive cards more dynamic by adding images—perfect for illustrating ideas, sharing visual data, or engaging users with eye-catching content. This feature helps teams communicate clearly, support diverse learning styles, and create more memorable interactions in everyday workflows.
- <a href="https://adaptivecards.microsoft.com/?topic=Action.InsertImage" target="_blank">Learn more.</a>
 - **Insert images in adaptive cards for richer interactions** [Windows, Web]
 
   Make your adaptive cards more dynamic by adding images—perfect for illustrating ideas, sharing visual data, or engaging users with eye-catching content. This feature helps teams communicate clearly, support diverse learning styles, and create more memorable interactions in everyday workflows.
@@ -2137,9 +2129,6 @@ Updates released between April 29, 2025, and May 13, 2025.
 - **Ask Copilot about any part of your sheet** [Web, Mac, Windows, iOS]
 
   When you ask questions about your worksheet, Copilot can look at the content of your sheet and use it to inform an answer to your question. This will include understanding worksheet data on your selected area, beyond tables and ranges, and provide Copilot answers in chat.
-- **Visual cue for Copilot’s data context** [Web, Windows, Mac]
-
-  A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
 ### Microsoft 365 admin center
 - **Manage pay-as-you-go billing for Copilot** [Windows, Web]
 
@@ -2148,7 +2137,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 ### Microsoft 365 Copilot Chat
 - **Copilot pages in Government Clouds** [Windows]
 
-  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
+  Copilot Pages is an interactive, shareable canvas in Microsoft 365 Copilot Chat designed for multiplayer AI collaboration. With Pages, users can turn Copilot responses into something durable with a side-by-side page where users can edit and share with others to collaborate. Now available for Government Cloud users.
  <a href="https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f" target="_blank">Learn more.</a>
 - **Unified prompt box across web and work chats** [Windows, Web]
 
@@ -2224,7 +2213,7 @@ Updates released between April 2, 2025, and April 16, 2025.
 
   Speed up tasks with AI-driven prompts for next steps in Copilot Chat. See real-time suggestions to refine queries, dive deeper into topics, or resolve issues faster during agent interactions.
  
-- **Support  for longer prompts** [Windows, Web]
+- **Support  for longer prompts** [Windows, Web]
 
   Copilot Chat now supports larger inputs for smoother handling of extensive documents and data.
  
@@ -3159,10 +3148,6 @@ Updates released between December 18, 2024, and January 7, 2025.
 ## May 29, 2025
 Updates released between May 13, 2025, and May 29, 2025.
 ### Copilot extensibility
-- **Insert Image as an Form.Action from Adaptive cards** [Windows, Web]
-
-  Make your adaptive cards more dynamic by adding images—perfect for illustrating ideas, sharing visual data, or engaging users with eye-catching content. This feature helps teams communicate clearly, support diverse learning styles, and create more memorable interactions in everyday workflows.
- <a href="https://adaptivecards.microsoft.com/?topic=Action.InsertImage" target="_blank">Learn more.</a>
 - **Insert images in adaptive cards for richer interactions** [Windows, Web]
 
   Make your adaptive cards more dynamic by adding images—perfect for illustrating ideas, sharing visual data, or engaging users with eye-catching content. This feature helps teams communicate clearly, support diverse learning styles, and create more memorable interactions in everyday workflows.
@@ -3250,7 +3235,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 
   Find a dedicated Copilot icon in your web spreadsheet, allowing you to tap into AI-powered insights and streamline tasks without breaking your workflow.
  <a href="https://support.microsoft.com/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a" target="_blank">Learn more.</a>
-- **Visual cue for Copilot’s data context** [Web, Mac, Windows]
+- **Visual cue for Copilot’s data context** [Web]
 
   A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
 ### Microsoft 365 Admin center
@@ -3274,7 +3259,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 ### Microsoft Viva
 - **AI Administrator can manage Microsoft Copilot Dashboard settings** [Web]
 
-  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
+  Delegate Copilot Dashboard control to the new Entra AI Administrator role, giving admins the  permissions they need without granting AI admin privileges.
  <a href="/viva/insights/advanced/admin/manage-settings-copilot-dashboard" target="_blank">Learn more.</a>
 ### OneDrive
 - **Ask Copilot questions about images** [Web]
@@ -3391,7 +3376,7 @@ Updates released between April 2, 2025, and April 16, 2025.
 
   Speed up tasks with AI-driven prompts for next steps in Copilot Chat. See real-time suggestions to refine queries, dive deeper into topics, or resolve issues faster during agent interactions.
  
-- **Support  for longer prompts** [Windows, Web]
+- **Support  for longer prompts** [Windows, Web]
 
   Copilot Chat now supports larger inputs for smoother handling of extensive documents and data.
  
@@ -5499,10 +5484,7 @@ Updates released between May 13, 2025, and May 29, 2025.
 - **Visual outline confirms Copilot's data range** [Mac]
 
   When you call on Copilot, Excel now draws a clear border around the table or cell range in focus. Instantly see exactly what data will be summarized, cleaned, or chart-ready—so you can adjust the selection before Copilot gets to work.
-- **Visual cue for Copilot’s data context** [Web, Windows, Mac]
-
-  A subtle outline now highlights the exact cells or table Copilot is working with, so you can confirm the right data is selected before insights or edits are generated.
-  ### PowerPoint
+### PowerPoint
 - **Ask Copilot to rewrite text as a list** [Web, Mac, Windows]
 
   Transform paragraphs into clear bullet points or lists with a single command—ideal for quickly organizing content when preparing your presentation.
