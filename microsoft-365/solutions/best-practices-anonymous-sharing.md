@@ -133,7 +133,7 @@ To create a DLP rule:
 
 When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. You can use the *Safe Attachments* feature to check email attachments in a virtual environment before they're delivered to recipients and quarantine files that are found to be unsafe. For more information, see [Safe Attachments in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-attachments-about).
 
-You can also use the *Safe Documents* feature to scan opened Office documents in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) or [Application Guard for Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46). For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-documents-in-e5-plus-security-about.md).
+You can also use the *Safe Documents* feature to scan opened Office documents in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653). For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-documents-in-e5-plus-security-about.md).
 
 ## Add copyright information to your files
 
