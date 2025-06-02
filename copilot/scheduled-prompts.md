@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/15/2025
+ms.date: 06/02/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -45,18 +45,18 @@ If you disable this feature after someone in your organization has already used 
 
 - Users will no longer be able to manage previously scheduled prompts.
 - Sessions for previously run scheduled prompts continue to exist.
-- Previously scheduled prompts will continue to execute until their schedule finishes.
+- Previously scheduled prompts continue to execute until their schedule finishes.
 - Users will no longer see the scheduled prompts icon or the prompt management menu if optional connected experiences are disabled.
 
 ## Inventory scheduled prompts
 
-For admins with Global Administrator and Power Platform Administrator roles, you can use a PowerShell script to inventory the scheduled prompts created by users in your organization. For instructions on how to do this, see [Copilot Actions admin scripts guide](copilot-admin-actions-scripts.md).
+For admins with Global Administrator and Power Platform Administrator roles, you can use a PowerShell script to inventory the scheduled prompts created by users in your organization. For instructions on how to do this, see [Inventory for scheduled prompts](scheduled-prompts-inventory.md).
 
 ## User controls
 
 :::image type="content" source="media/scheduled-prompts-save.png" alt-text="Screenshot showing the setup text for a new scheduled prompt in Copilot." lightbox="media/scheduled-prompts-save.png":::
 
-Your users can find the scheduled prompts feature by hovering over a prompt they've submitted to Copilot. When a user selects the `Save` button to confirm the scheduled prompt, a user's prompt information is sent to the Power Automate and Power Platform system, and the [Power Automate terms of service and privacy policy](/power-platform/admin/wp-compliance-data-privacy) apply.
+Your users can find the scheduled prompts feature by hovering over a prompt they submit to Copilot. When a user selects the `Save` button to confirm the scheduled prompt, a user's prompt information is sent to the Power Automate and Power Platform system, and the [Power Automate terms of service and privacy policy](/power-platform/admin/wp-compliance-data-privacy) apply.
 
 To manage their scheduled prompts, users can follow these steps:
 
@@ -74,6 +74,6 @@ To learn more about prompts for your users, see [Learn about Copilot prompts](ht
 
 ## Legacy prompts
 
-With the general availability of the new Scheduled Prompts feature, we’ve transitioned to a new backend that no longer relies on Power Automate flows.
+With the general availability of the new scheduled prompts feature, we transitioned to a new backend that no longer relies on Power Automate flows.
 
-As a result, Scheduled Prompts created during the public preview will continue to run until their set expiration but will not appear in the new management pane. To view or manage these legacy prompts, use Power Automate directly.
+As a result, scheduled prompts created during the public preview continue to run until their set expiration, but won't appear in the new management pane. To view or manage these legacy prompts, use Power Automate directly.
