@@ -34,7 +34,7 @@ Before you begin, ensure the following:
 
 ## Set up pay-as-you-go billing
 
-#### Step 1: Activate pay-as-you-go services
+### Step 1: Activate pay-as-you-go services
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
@@ -44,7 +44,7 @@ Before you begin, ensure the following:
 
 4. On the **Activate pay-as-you-go services** page, select **Get started**.
 
-#### Step 2: Configure billing
+### Step 2: Configure billing
 
 1. On the **Pay-as-you-go services** page, select the service you want to set up (for example, **SharePoint Agents** or **Syntex services**).
 
@@ -67,7 +67,7 @@ Ensure you have the following roles:
 - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center
 - Owner or Contributor rights to the Azure subscription and resource group
 
-#### Step 1: Access manage billing
+### Step 1: Access manage billing
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
@@ -79,7 +79,7 @@ Ensure you have the following roles:
 
 5. On the **Manage billing** panel, select **Edit billing information**.
 
-#### Step 2: Disconnect Azure subscription
+### Step 2: Disconnect Azure subscription
 
 1. Under **Manage billing**, select **Disconnect Azure subscription**.
 
@@ -87,7 +87,7 @@ Ensure you have the following roles:
 
 If multiple services are connected to a single policy, repeat the steps for each service.
 
-#### Step 3: Review billing and usage
+### Step 3: Review billing and usage
 
 After disconnection, review your billing and usage to ensure no further charges are applied.
 
