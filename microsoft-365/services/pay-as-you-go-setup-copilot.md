@@ -34,7 +34,7 @@ Before you begin, ensure the following:
 
 ## Set up pay-as-you-go billing
 
-#### Step 1: Set up a billing policy
+### Step 1: Set up a billing policy
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
@@ -56,7 +56,7 @@ Before you begin, ensure the following:
 
     Your billing policy is now created but not yet connected to a service.
 
-#### Step 2: Connect the billing policy to a service
+### Step 2: Connect the billing policy to a service
 
 1. On the **Billing & usage** page, select the **Connect a service**.
 
