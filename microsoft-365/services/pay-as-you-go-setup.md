@@ -28,7 +28,8 @@ Before you begin, ensure the following:
 - You have an Azure resource group in that subscription.
 
 - You have the following roles:
-    - Global Administrator or SharePoint Administrator for accessing the Microsoft 365 admin center
+
+    - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center
     - Owner or Contributor rights to the Azure subscription and resource group
 
 ## Set up pay-as-you-go billing
@@ -63,9 +64,10 @@ After setup, monitor your pay-as-you-go usage and costs in [Microsoft Cost Manag
 
 ### Prerequisites
 
-Ensure you have the appropriate admin roles:
-    - Global Administrator or SharePoint Administrator for accessing the Microsoft 365 admin center.
-    - Owner or Contributor rights to the Azure subscription and resource group.
+Ensure you have the following roles:
+
+- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center
+- Owner or Contributor rights to the Azure subscription and resource group
 
 #### Step 1: Access the Microsoft 365 admin center
 
