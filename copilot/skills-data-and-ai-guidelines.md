@@ -3,13 +3,12 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
-author:      anibajaj # GitHub alias
-ms.author:   anirudhbajaj # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
+title:       Our Commitment to Responsible AI
+description: Data privacy control resources and information
+author:      anibajaj 
+ms.author:   anirudhbajaj
+ms.service:  ms.service: microsoft-365-copilot
+ms.topic:    how-to
 ms.date:     05/29/2025
 ---
 
