@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: siruvanti
-ms.date: 05/30/2025
+ms.date: 06/03/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -12,182 +12,80 @@ ms.subservice:
 search.appverid: 
 ms.collection: 
 ms.localizationpriority:  medium
-description: Learn how to set up or disconnect billing for pay-as-you-go services in Microsoft 365.
+description: Learn how to set up or disconnect billing for pay-as-you-go services in Microsoft 365 Copilot.
 ---
 
-# Set up or disconnect agents in Microsoft 365 Copilot
+# Set up or disconnect agents for Microsoft 365 Copilot
 
-Use this article to set up pay-as-you-go billing for Microsoft 365 Copilot.
+This article explains how to set up or disconnect pay-as-you-go billing for agents in Microsoft 365 Copilot.
 
 ## Prerequisites
 
-Before setting up pay-as-you-go services, ensure you have the following information:
+Before you begin, ensure the following:
 
-- An Azure subscription in the same tenant as Microsoft 365.
+- You have an Azure subscription in the same tenant as Microsoft 365.
 
-- An Azure resource group in that subscription.
+- You have an Azure resource group in that subscription.
 
-- Appropriate admin roles: Global Administrator for accessing the Microsoft 365 admin center, and Owner or Contributor rights to the Azure subscription and resource group.
+- You have the following roles:
+    - Global Administrator or SharePoint Administrator for accessing the Microsoft 365 admin center
+    - Owner or Contributor rights to the Azure subscription and resource group
 
-## Setup guide for Microsoft 365 Copilot
-
-#### Step 1: Set up a billing policy
-
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Copilot**, and then select **Billing & usage**.
-
-2. On the **Billing & usage** page, select **Add a billing policy**.
-
-3. On the **Billing details** page, fill in required information, including the policy name, the Azure subscription name, resource group, and region. (The region determines where your tenant ID and usage information such as site names are stored.)
-
-4. Read and accept the pay-as-you-go billing terms of service.
-
-5. Check the box to accept the pay-as-you-go billing terms of service. Then select **Next**.
-
-6. On the **Users** page, choose to apply this policy to either **All users** or a **Specific group**. If you select **Specific group**, you can then search and add a single group for the policy.
-
-7. Select **Next**.
-
-8. On the **Review and finish** page, review all the information. If it looks good, select **Create policy**.
-
-    Your billing policy is now created.
-
-#### Step 2: Connect the billing policy to a pay-as-you-go service
-
-You can then connect this new billing policy to a pay-as-you-to service by selecting the **Connect a service** link on the **Billing & usage** page.
-
-## Monitor usage and costs
-
-Once the setup is complete, you can monitor your pay-as-you-go usage and costs in Microsoft Cost Management for Azure. Ensure you have at least read access to the resource group specified for billing.
-
-## Disconnect pay-as-you-go services
-
-### Prerequisites
-
-You must have the necessary admin roles (Global Administrator or SharePoint Administrator) and Owner or Contributor rights to the Azure subscription and resource group.
-
-### Disconnect agents from pay-as-you-go billing for Copilot Agents
-
-To disconnect agents from pay-as-you-go billing, follow these steps:
-
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Copilot**, and then select **Billing & usage**.
-
-2. On the **Billing & usage** page, select the **Pay-as-you-go services** tab, and then select the agent you want to disconnect (for example, **Microsoft 365 Copilot Chat** or **SharePoint Agents**).
-
-3. On the **Manage billing policy connections** panel, select the checkbox next to the policy you want to disconnect.
-
-4. Select **Save**.
-
-5. View the confirmation message to ensure that your Azure subscription has been successfully disconnected.
-
-Pay-as-you-go services will discontinue for this Azure subscription. If multiple services are connected to a single policy, each service can be disconnected by going through the same steps.
-
-
-<!---
-
-### Setup guide for Microsoft Syntex
-
-#### Step 1: Access the Microsoft 365 admin center
-
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
-
-2. Go to the **Setup** section, and then go to **Billing and licenses**.
-
-#### Step 2: Activate pay-as-you-go services
-
-1. In the **Billing and licenses** section, select **Activate pay-as-you-go services**.
-
-2. On the **Activate pay-as-you-go services** page, select **Get started** to begin the setup process.
-
-#### Step 3: Configure billing
-
-1. On the **Pay-as-you-go services** page, select the service you want to set up (for example, **SharePoint Agents** or **Syntex services**).
-
-2. On the **Set up billing and turn on services** panel, choose your Azure subscription, resource group, and region.  
-
-3. Read and accept the pay-as-you-go terms of service.
-
-4. Select **Save** to complete the setup.
-
-### Setup guide for Microsoft 365 Copilot
+## Set up pay-as-you-go billing
 
 #### Step 1: Set up a billing policy
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Copilot**, and then select **Billing & usage**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
-2. On the **Billing & usage** page, select **Add a billing policy**.
+2. Go to **Copilot** > **Billing & usage**.
 
-3. On the **Billing details** page, fill in required information, including the policy name, the Azure subscription name, resource group, and region. (The region determines where your tenant ID and usage information such as site names are stored.)
+3. Select **Add a billing policy**.
 
-4. Read and accept the pay-as-you-go billing terms of service.
+4. On the **Billing details** page, fill in required information, including:
+    - Policy name
+    - Azure subscription
+    - Resource group
+    - Region (determines where tenant ID and usage data are stored)
 
-5. Check the box to accept the pay-as-you-go billing terms of service. Then select **Next**.
+5. Read and accept the pay-as-you-go terms of service. Select **Next**.
 
-6. On the **Users** page, choose to apply this policy to either **All users** or a **Specific group**. If you select **Specific group**, you can then search and add a single group for the policy.
-
-7. Select **Next**.
+7. On the **Users** page, choose **All users** or a **Specific group** (search and add a single group). Select **Next**.
 
 8. On the **Review and finish** page, review all the information. If it looks good, select **Create policy**.
 
-    Your billing policy is now created.
+    Your billing policy is now created but not yet connected to a service.
 
-#### Step 2: Connect the billing policy to a pay-as-you-go service
+#### Step 2: Connect the billing policy to a service
 
-You can then connect this new billing policy to a pay-as-you-to service by selecting the **Connect a service** link on the **Billing & usage** page.
+1. On the **Billing & usage** page, select the **Connect a service**.
+
+2. Choose the newly created billing policy and link it to a pay-as-you-go service (for example, Microsoft 365 Copilot Chat or SharePoint Agents).
 
 ## Monitor usage and costs
 
-Once the setup is complete, you can monitor your pay-as-you-go usage and costs in Microsoft Cost Management for Azure. Ensure you have at least read access to the resource group specified for billing.
+After setup, monitor your pay-as-you-go usage and costs in [Microsoft Cost Management for Azure](https://portal.azure.com/#blade/Microsoft_Azure_CostManagement/Menu/costanalysis). Ensure you have at least read access to the billing resource group.
 
-## Disconnect pay-as-you-go services
+## Disconnect pay-as-you-go billing
 
 ### Prerequisites
 
-You must have the necessary admin roles (Global Administrator or SharePoint Administrator) and Owner or Contributor rights to the Azure subscription and resource group.
+Ensure you have the following roles:
+    - Global Administrator or SharePoint Administrator for accessing the Microsoft 365 admin center
+    - Owner or Contributor rights to the Azure subscription and resource group
 
-### Disconnect services for Microsoft Syntex
+### Disconnect agents from pay-as-you-go billing
 
-To disconnect pay-as-you-go services, follow these steps:
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), go to **Copilot** > **Billing & usage**.
 
-#### Step 1: Access the Microsoft 365 admin center
+2. Select the **Pay-as-you-go services** tab.
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+3. Choose the agent to disconnect (for example, **Microsoft 365 Copilot Chat** or **SharePoint Agents**).
 
-2. Go to the **Settings** section, and then select **Org settings**.
+4. On the **Manage billing policy connections** panel:
 
-#### Step 2: Manage billing
+    a. Select the checkbox next to the policy to disconnect.
+    b. Select **Save**.
 
-1. On the **Org settings** page, select **Pay-as-you-go services**.
+5. View the disconnection message to confirm that your Azure subscription is successfully disconnected.
 
-2. On the **Pay-as-you-go services** page, select the service you want to disconnect (for example, **SharePoint Agents** or **Syntex services**).
-
-3. On the **Manage billing** panel, select **Edit billing information**.
-
-#### Step 3: Disconnect Azure subscription
-
-1. Under **Manage billing**, select **Disconnect Azure subscription**.
-
-2. Confirm the disconnection by selecting **Disconnect** on the confirmation window.
-
-#### Step 4: Review billing and usage
-
-After disconnecting the service, review your billing and usage to ensure all charges are accurate and no further usage is being billed to the Azure subscription.
-
-For detailed instructions about how to set up and disconnect specific pay-as-you-go services, see the service-specific get started documentation.
-
-### Disconnect agents from pay-as-you-go billing for Copilot Agents
-
-To disconnect agents from pay-as-you-go billing, follow these steps:
-
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Copilot**, and then select **Billing & usage**.
-
-2. On the **Billing & usage** page, select the **Pay-as-you-go services** tab, and then select the agent you want to disconnect (for example, **Microsoft 365 Copilot Chat** or **SharePoint Agents**).
-
-3. On the **Manage billing policy connections** panel, select the checkbox next to the policy you want to disconnect.
-
-4. Select **Save**.
-
-5. View the confirmation message to ensure that your Azure subscription has been successfully disconnected.
-
-Pay-as-you-go services will discontinue for this Azure subscription. If multiple services are connected to a single policy, each service can be disconnected by going through the same steps.
-
->
+If multiple services are connected to a single policy, repeat the steps for each service.

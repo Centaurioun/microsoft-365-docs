@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: siruvanti
-ms.date: 05/30/2025
+ms.date: 06/03/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -27,9 +27,9 @@ Before you begin, ensure the following:
 
 - You have an Azure resource group in that subscription.
 
-- You have the appropriate admin roles:
-    - Global Administrator or SharePoint Administrator for accessing the Microsoft 365 admin center.
-    - Owner or Contributor rights to the Azure subscription and resource group.
+- You have the following roles:
+    - Global Administrator or SharePoint Administrator for accessing the Microsoft 365 admin center
+    - Owner or Contributor rights to the Azure subscription and resource group
 
 ## Set up pay-as-you-go billing
 
@@ -37,7 +37,7 @@ Before you begin, ensure the following:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
-2. Go to the **Setup** > **Billing and licenses**.
+2. Go to **Setup** > **Billing and licenses**.
 
 #### Step 2: Activate pay-as-you-go services
 
