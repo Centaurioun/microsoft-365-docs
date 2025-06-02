@@ -29,24 +29,22 @@ Before you begin, ensure the following:
 
 - You have the following roles:
 
-    - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center
-    - Owner or Contributor rights to the Azure subscription and resource group
+    - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center.
+    - Owner or Contributor rights to the Azure subscription and resource group.
 
 ## Set up pay-as-you-go billing
 
-#### Step 1: Access the Microsoft 365 admin center
+#### Step 1: Activate pay-as-you-go services
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
 2. Go to **Setup** > **Billing and licenses**.
 
-#### Step 2: Activate pay-as-you-go services
+3. In the **Billing and licenses** section, select **Activate pay-as-you-go services**.
 
-1. In the **Billing and licenses** section, select **Activate pay-as-you-go services**.
+4. On the **Activate pay-as-you-go services** page, select **Get started**.
 
-2. On the **Activate pay-as-you-go services** page, select **Get started**.
-
-#### Step 3: Configure billing
+#### Step 2: Configure billing
 
 1. On the **Pay-as-you-go services** page, select the service you want to set up (for example, **SharePoint Agents** or **Syntex services**).
 
@@ -69,21 +67,19 @@ Ensure you have the following roles:
 - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center
 - Owner or Contributor rights to the Azure subscription and resource group
 
-#### Step 1: Access the Microsoft 365 admin center
+#### Step 1: Access manage billing
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
 2. Go to **Settings** > **Org settings**.
 
-#### Step 2: Manage billing
+3. Select **Pay-as-you-go services**.
 
-1. Select **Pay-as-you-go services**.
+4. Choose the service to disconnect (for example, **SharePoint Agents** or **Syntex services**).
 
-2. Choose the service to disconnect (for example, **SharePoint Agents** or **Syntex services**).
+5. On the **Manage billing** panel, select **Edit billing information**.
 
-3. On the **Manage billing** panel, select **Edit billing information**.
-
-#### Step 3: Disconnect Azure subscription
+#### Step 2: Disconnect Azure subscription
 
 1. Under **Manage billing**, select **Disconnect Azure subscription**.
 
@@ -91,11 +87,9 @@ Ensure you have the following roles:
 
 If multiple services are connected to a single policy, repeat the steps for each service.
 
-#### Step 4: Review billing and usage
+#### Step 3: Review billing and usage
 
 After disconnection, review your billing and usage to ensure no further charges are applied.
-
-For detailed instructions about how to set up and disconnect specific pay-as-you-go services, see the service-specific get started documentation.
 
 <!---
 ### Setup guide for Microsoft 365 Copilot

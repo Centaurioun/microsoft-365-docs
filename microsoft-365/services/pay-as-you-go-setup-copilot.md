@@ -29,8 +29,8 @@ Before you begin, ensure the following:
 
 - You have the following roles:
 
-    - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center
-    - Owner or Contributor rights to the Azure subscription and resource group
+    - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center.
+    - Owner or Contributor rights to the Azure subscription and resource group.
 
 ## Set up pay-as-you-go billing
 
@@ -86,6 +86,7 @@ Ensure you have the following roles:
 4. On the **Manage billing policy connections** panel:
 
     a. Select the checkbox next to the policy to disconnect.
+
     b. Select **Save**.
 
 5. View the disconnection message to confirm that your Azure subscription is successfully disconnected.
