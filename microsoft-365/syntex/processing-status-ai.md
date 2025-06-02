@@ -27,7 +27,7 @@ Gain full visibility into your file processing workflows with real-time updates 
 
 Designed to address common challenges such as limited transparency, insufficient detail, and administrative uncertainties, this enhancement replaces the traditional single-status column with a more granular view. You can now see which services have succeeded, failed, or are still in progress—along with detailed error messages and direct links to relevant documentation.
 
-## Monitor file processing activity
+## Monitor the status of file processing activity
 
 ### Prerequisites
 
@@ -35,9 +35,9 @@ Designed to address common challenges such as limited transparency, insufficient
 
 - Ensure you have permission to view or manage the library.
 
-### View status for a single file
+### Monitor the status for a single file
 
-1. elect a file in your SharePoint document library.
+1. Select a file in your SharePoint document library.
 
 2. Select the **Status Pane** entry point (usually in the command bar or file context menu).
 
@@ -55,7 +55,7 @@ Designed to address common challenges such as limited transparency, insufficient
 
 5. Use filters to show only failed statuses for easier triage.
 
-### Monitor statuses across the library
+### Monitor the statuses across the library
 
 1. Without selecting a file, open the **Status Pane** from the library view.
 
