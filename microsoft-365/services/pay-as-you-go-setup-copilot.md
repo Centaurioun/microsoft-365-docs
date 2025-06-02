@@ -60,7 +60,7 @@ Before you begin, ensure the following:
 
 1. On the **Billing & usage** page, select the **Connect a service**.
 
-2. Choose the newly created billing policy and link it to a pay-as-you-go service (for example, Microsoft 365 Copilot Chat or SharePoint Agents).
+2. Choose the newly created billing policy and link it to a pay-as-you-go service (for example, **Microsoft 365 Copilot Chat** or **SharePoint Agents**).
 
 ## Monitor usage and costs
 
