@@ -80,7 +80,7 @@ Updates released between May 13, 2025, and May 29, 2025.
 - **Usage reports – monitor Copilot.cloud.microsoft/Teams/Outlook activity in Microsoft 365 Copilot Chat usage report** [Web]
 
   Track active users and last activity dates for Copilot.cloud.microsoft, Teams, and Outlook—even for employees without a Copilot license—to gauge grassroots adoption and fine-tune rollout plans in Microsoft 365 Copilot Chat usage report.
- <a href="/microsoft-365/admin/activity-reports/microsoft-copilot-usage?view=o365-worldwide" target="_blank">Learn more.</a>
+ <a href="/microsoft-365/admin/activity-reports/microsoft-copilot-usage" target="_blank">Learn more.</a>
 ### Microsoft 365 Copilot Chat
 - **Analyze usage of declarative agent in Developer Portal**
 
@@ -201,7 +201,7 @@ Updates released between April 29, 2025, and May 13, 2025.
 - **Agent plugins for Semantic Kernel :** [Developer]
 
   Accelerate Copilot solutions by adding ready-made plugins that tap Microsoft 365 data and actions through Semantic Kernel—so you can build smarter agents with far less code.
- <a href="/dotnet/api/microsoft.semantickernel.declarativeagentextensions?view=semantic-kernel-dotnet" target="_blank">Learn more.</a>
+ <a href="/dotnet/api/microsoft.semantickernel.declarativeagentextensions" target="_blank">Learn more.</a>
 ### Microsoft Viva
 - **AI Administrator can manage Microsoft Copilot Dashboard settings** [Web]
 
@@ -3186,7 +3186,7 @@ Updates released between May 13, 2025, and May 29, 2025.
 - **Usage reports – monitor Copilot.cloud.microsoft/Teams/Outlook activity in Microsoft 365 Copilot Chat usage report** [Web]
 
   Track active users and last activity dates for Copilot.cloud.microsoft, Teams, and Outlook—even for employees without a Copilot license—to gauge grassroots adoption and fine-tune rollout plans in Microsoft 365 Copilot Chat usage report.
- <a href="/microsoft-365/admin/activity-reports/microsoft-copilot-usage?view=o365-worldwide" target="_blank">Learn more.</a>
+ <a href="/microsoft-365/admin/activity-reports/microsoft-copilot-usage" target="_blank">Learn more.</a>
 ### Microsoft 365 Copilot Chat
 - **Bring Azure AI Search indexes into Copilot Studio knowledge** [Web]
 
