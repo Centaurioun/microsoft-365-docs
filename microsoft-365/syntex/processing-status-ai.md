@@ -13,7 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about processing status columns in a SharePoint document library.
+description: Learn how to monitor the processing status of files in a SharePoint document library.
 ---
 
 # Monitor the status of files processed for autofill and translation in SharePoint
@@ -25,7 +25,7 @@ description: Learn about processing status columns in a SharePoint document libr
 
 Gain full visibility into your file processing workflows with real-time updates on autofill columns and document translation. This feature provides continuous status tracking for each file, allowing you to monitor progress, identify issues early, and take action as needed.
 
-Designed to address common challenges such as limited transparency, insufficient detail, and administrative blind spots, this enhancement replaces the traditional single-status column with a more granular view. You can now see which services have succeeded, failed, or are still in progress—along with detailed error messages and direct links to relevant documentation.
+Designed to address common challenges such as limited transparency, insufficient detail, and administrative uncertainties, this enhancement replaces the traditional single-status column with a more granular view. You can now see which services have succeeded, failed, or are still in progress—along with detailed error messages and direct links to relevant documentation.
 
 ## Monitor file processing activity
 
@@ -33,23 +33,23 @@ Designed to address common challenges such as limited transparency, insufficient
 
 - Ensure your SharePoint library has the [autofill columns service](autofill-overview.md) or the [document translation service](translation-overview.md) enabled.
 
-- You must have permission to view or manage the library.
+- Ensure you have permission to view or manage the library.
 
 ### View status for a single file
 
-1. **Select a file** in your SharePoint document library.
+1. elect a file in your SharePoint document library.
 
-2. Click the **Status Pane** entry point (usually in the command bar or file context menu).
+2. Select the **Status Pane** entry point (usually in the command bar or file context menu).
 
-3. The pane will display:
+3. The pane shows:
    - File name
-   - A timeline of processing events (grouped by Today, Last Week, etc.)
-   - Each service that ran (e.g., Autofill, Document Translation)
-   - Status: In Progress, Completed, or Failed
+   - A timeline of processing events (grouped by Today, Last week, and so on)
+   - Each service that ran (for example, autofill columns or document translation)
+   - Status: In progress, Completed, or Failed
    - Timestamp of the last update
 
-4. If a process **failed**, click the status to view:
-   - The failure reason (e.g., “File encrypted” or “Unsupported format”)
+4. If a process failed, select the status to view:
+   - The failure reason (for example, "File encrypted" or "Unsupported format")
    - Suggested actions
    - A link to troubleshooting documentation (if available)
 
@@ -65,8 +65,8 @@ Designed to address common challenges such as limited transparency, insufficient
    - Grouped by time (Today, Last Week, etc.)
 
 3. Use the **graphical summary** at the top to see:
-   - Number of files per status (Completed, In Progress, Failed)
-   - Click on any status count to drill into the relevant files
+   - Number of files per status (In progress, Completed, or Failed)
+   - Select any status count to drill into the relevant files
 
 4. Apply filters to focus on failed jobs or specific services.
 
@@ -74,6 +74,6 @@ Designed to address common challenges such as limited transparency, insufficient
 
 | Status       | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
-| In Progress  | The service has started processing the file. Timestamp is shown.           |
-| Completed    | The service finished successfully. May include extracted metadata or translated files. |
-| Failed       | The service encountered an error. Click to view the reason and resolution. |
+| In progress  | The service has started processing the file. Timestamp is shown.           |
+| Completed    | The service finished successfully. Might include extracted metadata or translated files. |
+| Failed       | The service encountered an error. Select to view the reason and resolution. |
