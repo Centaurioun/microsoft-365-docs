@@ -3,7 +3,7 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       # Manage your skills library
+title:       # Manage your skills library in People Skills
 description: # How to manage the skills library settings
 author:      anibajaj 
 ms.author:   anirudhbajaj
@@ -12,7 +12,7 @@ ms.topic:    how-to
 ms.date:     05/29/2025
 ---
 
-# Manage your skills library
+# Manage your skills library in People Skills
 
 After completing the initial setup, you can return to the People Skills page in Admin Center to manage the skills library and admin settings.
 
