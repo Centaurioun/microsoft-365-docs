@@ -84,7 +84,7 @@ The sign-up process might take several minutes to complete. After it's complete,
 
 When you start a free trial, we automatically create a billing account for you. You use your billing account to manage your account settings, invoices, payment methods, and purchases. For more information about billing accounts, see [Understand billing accounts](manage-billing-accounts.md).
 
-At the end of your trial period, your subscription will be renewed to an annual term subscription by default, unless you turn off "recurring billing" from inside of Billing > Your products.
+At the end of your trial period, your subscription will be renewed to an annual term subscription by default, unless you turn off **recurring billing** from inside of **Billing** > **Your products**.
 
 ## Extend your trial
 
