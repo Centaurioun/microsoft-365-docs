@@ -61,24 +61,18 @@ items:
       items:
         - name: Manage skills library
           items:
-- name: Manage out-of-the-box skills library
-  href: manage-default-skills.md
-  displayName: Manage out-of-the-box default skills library
-    - name: Manage skills library
-      href: manage-skills-library.md
-      displayName: manage skills library and custom skills
-    - name: People Skills Overview
-      href: peopleskillsoverview.md
-      displayName: People Skills overview
-    - name: Privacy and sharing controls
-      href: skills-sharing-inferencing-controls.md
-      displayName: data privacy sharing controls for inferencing and visibility
-    - name: AI inference engine
-      href: people-skills-ai-inferencing.md
-      displayName: People Skills AI inference engine
-    - name: Set up People Skills
-      href: people-skills-setup.md
-      displayName: setup people skills
+            - name: Manage out-of-the-box skills library
+              href: manage-default-skills.md
+            - name: Manage skills library
+              href: manage-skills-library.md
+            - name: People Skills Overview
+              href: peopleskillsoverview.md
+            - name: Privacy and sharing controls
+              href: skills-sharing-inferencing-controls.md
+            - name: AI inference engine
+              href: people-skills-ai-inferencing.md
+            - name: Set up People Skills
+              href: people-skills-setup.md
     - name: Set up the Microsoft 365 Copilot app
       items:
         - name: Overview and availability
