@@ -1,13 +1,9 @@
 ---
-# Required metadata
-# For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
-# For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
-
 title:       Manage AI-restricted skills
 description: Admins can note confidential or sensitive skills as AI-restricted
 author:      anibajaj 
-ms.author:   anirudhbajaj 
-ms.service:  microsoft-365-copilot
+ms.author:   anirudhbajaj
+ms.service: microsoft-365-copilot
 ms.topic:    how-to
 ms.date:     05/29/2025
 ---

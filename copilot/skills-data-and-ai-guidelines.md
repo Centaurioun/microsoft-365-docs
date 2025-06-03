@@ -7,14 +7,14 @@ title:       Our Commitment to Responsible AI
 description: Data privacy control resources and information
 author:      anibajaj 
 ms.author:   anirudhbajaj
-ms.service:  ms.service: microsoft-365-copilot
 ms.topic:    how-to
 ms.date:     05/29/2025
+ms.service: microsoft-365-copilot
 ---
 
 # Our Commitment to Responsible AI
 
-### User data privacy controls 
+## User data privacy controls 
 
 Please [review the data privacy controls we offer for admins](https://) to control default AI inferencing and skill visibility settings for their tenant or groups of users.  
 

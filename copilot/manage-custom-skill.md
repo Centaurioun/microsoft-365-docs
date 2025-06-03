@@ -7,7 +7,7 @@ title:       Manage Custom Skills
 description: How to modify and import or export custom skills
 author:      anibajaj 
 ms.author:   anirudhbajaj
-ms.service:  ms.service: microsoft-365-copilot
+ms.service: microsoft-365-copilot
 ms.topic:    how-to
 ms.date:     05/29/2025
 ---

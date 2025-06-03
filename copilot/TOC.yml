@@ -57,22 +57,6 @@ items:
   items:
     - name: Manage Microsoft 365 Copilot scenarios 
       href: microsoft-365-copilot-page.md
-    - name: People Skills
-      items:
-        - name: Manage skills library
-          items:
-            - name: Manage out-of-the-box skills library
-              href: manage-default-skills.md
-            - name: Manage skills library
-              href: manage-skills-library.md
-            - name: People Skills Overview
-              href: peopleskillsoverview.md
-            - name: Privacy and sharing controls
-              href: skills-sharing-inferencing-controls.md
-            - name: AI inference engine
-              href: people-skills-ai-inferencing.md
-            - name: Set up People Skills
-              href: people-skills-setup.md
     - name: Set up the Microsoft 365 Copilot app
       items:
         - name: Overview and availability
@@ -91,6 +75,22 @@ items:
         href: copilot-prompt-gallery-export-prompts.md
       - name: Scheduled prompts
         href: scheduled-prompts.md
+    - name: People Skills
+      items:
+        - name: Manage skills library
+          items:
+            - name: Manage out-of-the-box skills library
+              href: manage-default-skills.md
+            - name: Manage skills library
+              href: manage-skills-library.md
+            - name: People Skills Overview
+              href: people-skills-overview.md
+            - name: Privacy and sharing controls
+              href: skills-sharing-inferencing-controls.md
+            - name: AI inference engine
+              href: people-skills-ai-inferencing.md
+            - name: Setup People Skills
+              href: people-skills-setup.md
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
     - name: Overview of AI in Microsoft Teams
