@@ -3,8 +3,8 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       # Manage your skills library in People Skills
-description: # How to manage the skills library settings
+title:       Manage your skills library in People Skills
+description: How to manage the skills library settings
 author:      anibajaj 
 ms.author:   anirudhbajaj
 ms.service:  ms.service: microsoft-365-copilot
