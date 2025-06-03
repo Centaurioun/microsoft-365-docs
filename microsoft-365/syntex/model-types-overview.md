@@ -112,34 +112,71 @@ Prebuilt models include:
 <!---
 ![Screenshot of the Options for model creation page showing the prebuilt model options.](../media/content-understanding/build-a-prebuilt-model-section.png)
 --->
-Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
+
+In addition to custom models, Microsoft Syntex offers a set of prebuilt models that provide out-of-the-box capabilities for extracting structured information from common business documents. These models are designed to save time and effort by eliminating the need for manual training or configuration.
 
 ### Contract processing
 
-The prebuilt contract processing model analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information such as client or party name, billing address, jurisdiction, and expiration date.
+The contract processing model is designed to analyze and extract key information from contract documents. It works across various formats and identifies important contract details such as:
 
-For more information about contract processing models, see [Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md).
+- Client or party name
+- Billing address
+- Jurisdiction
+- Expiration date
+
+This model is ideal for legal, procurement, or operations teams that manage large volumes of contracts.
+
+For more information, see [Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md).
 
 ### Invoice processing
 
-The prebuilt invoice processing model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
+The invoice processing model extracts essential data from sales invoices, helping streamline accounts payable workflows. It can identify information such as:
 
-For more information about invoice processing models, see [Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md).
+- Customer name
+- Billing address
+- Due date
+- Amount due
+
+This model is especially useful for finance teams looking to automate invoice intake and reduce manual data entry.
+
+For more information, see [Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md).
 
 ### Receipt processing
 
-The prebuilt receipt processing model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+The receipt processing model handles both printed and handwritten receipts, extracting key transaction details such as:
 
-For more information about receipt processing models, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
+- Merchant name
+- Merchant phone number
+- Transaction date
+- Tax and total amount
+
+This model is well-suited for expense reporting and reimbursement workflows.
+
+For more information, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
 
 ### Sensitive information processing
 
-The prebuilt sensitive information processing model analyzes, detects, and extracts key information from documents. The API analyzes contracts in various formats and extracts key sensitive information such as social security numbers, financial account numbers, driver license identification numbers, and other personal information.
+The sensitive information processing model helps identify and extract personal and confidential data from documents. It can detect information such as:
 
-For more information about sensitive information processing models, see [Use a prebuilt model to detect sensitive information from documents](prebuilt-model-sensitive-info.md).
+- Social Security numbers
+- Financial account numbers
+- Driver’s license IDs
+- Other personally identifiable information (PII)
+
+This model supports compliance and data protection efforts across your organization.
+
+For more information, see [Use a prebuilt model to detect sensitive information from documents](prebuilt-model-sensitive-info.md).
 
 ### Simple document processing
 
-The prebuilt simple document processing model offers a flexible, pretrained solution for extracting key-value pairs, selection marks, and named entities from basic structured documents. Unlike other prebuilt models with fixed schemas, this model can identify keys that others might miss, providing a valuable alternative to custom model labeling and training. This model also supports barcodes and language detection.
+The simple document processing model offers a flexible, pretrained solution for extracting information such as:
 
-For more information about simple document processing models, see [Use a prebuilt model to detect sensitive information from documents](prebuilt-model-simple.md).
+- Key-value pairs
+- Selection marks (for example, checkboxes)
+- Named entities
+- Barcodes
+- Language detection
+
+Unlike other prebuilt models with fixed schemas, this model adapts to a wider variety of structured documents and is a great alternative when custom labeling isn’t feasible.
+
+For more information, see [Use a prebuilt model to detect sensitive information from documents](prebuilt-model-simple.md).
