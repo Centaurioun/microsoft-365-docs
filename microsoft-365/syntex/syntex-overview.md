@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/28/2025
+ms.date: 02/28/2025
 audience: admin
 ms.topic: overview
 ms.custom: intro-overview
@@ -20,16 +20,21 @@ description: Learn about the capabilities, services, and features in Microsoft S
 
 # Overview of Microsoft Syntex
 
+Microsoft Syntex is a powerful suite of AI-powered content management and productivity services designed to help your organization transform how you handle documents and information. A flexible pay-as-you-go model gives you access to advanced capabilities—such as intelligent document discovery, classification, analysis, and processing—without the need for upfront licensing commitments.
+
+By automating content workflows and enhancing document understanding, your everyday business content is turned into actionable knowledge. This not only streamlines operations and reduces manual effort, but also empowers people in your organization to make faster, more informed decisions based on insights extracted from their content.
+
 <!---</br>
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=2d175508-cfa8-4258-b595-3af948bb7559] 
 
 </br>--->
 
+<!---
 Microsoft Syntex provides a powerful suite of pay-as-you-go content management and productivity services that harnesses AI and machine learning to intelligently discover, analyze, organize, classify, and process your organization's documents. With pay-as-you-go licensing, your organization can use these services without any license commitment or upfront purchasing.
 
 By automating content workflows and enhancing understanding, these services transform your business documents into actionable knowledge. This streamlines everyday processes, provides valuable insights, and empowers people in your organization to make informed decisions.
-
+--->
 <!---
 
 This flexible model allows any user in your organization to access Syntex services and only pay for what they use, making it a cost-effective solution for managing your content."
