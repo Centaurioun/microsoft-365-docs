@@ -30,7 +30,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: GEA150 
 description: "Learn how to sign up for a free 30-day trial or buy a subscription for Microsoft 365 for business products and services."
-ms.date: 03/26/2025
+ms.date: 06/02/2025
 ---
 
 # Try or buy a Microsoft 365 for business subscription
