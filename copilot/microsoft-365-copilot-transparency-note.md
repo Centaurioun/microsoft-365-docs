@@ -14,7 +14,7 @@ ms.collection:
 - magic-ai-copilot
 - must-keep
 hideEdit: true
-ms.date: 05/28/2025
+ms.date: 05/29/2025
 ---
 
 # Transparency Note for Microsoft 365 Copilot
@@ -216,7 +216,7 @@ Our approach to mapping, measuring and managing risks will continue to evolve as
 
 Microsoft provides tools like the Microsoft Copilot Dashboard for Microsoft 365 customers and reports in the Microsoft 365 admin center. These tools are designed to help organizations measure usage, adoption, and the impact of Microsoft 365 Copilot. For example:
 
-- **Microsoft 365 Copilot usage report** enables administrators to view a summary of how users’ adoption, retention, and engagement are with Microsoft 365 Copilot, and the activity of every user in an organization
+- **Microsoft 365 Copilot usage report** enables administrators to view a summary of how users’ adoption, retention, and engagement are with Microsoft 365 Copilot. For more information, see [Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
 
 - **Adoption Score** offers administrators insights into how their organization works with Microsoft 365 Copilot. It provides a score on a 100-point scale, a dashboard view of adoption data & trends, and a tool for creating user surveys to gather feedback.
 
