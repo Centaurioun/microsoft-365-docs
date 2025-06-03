@@ -1,5 +1,5 @@
 ---
-ms.date: 05/14/2025
+ms.date: 06/03/2025
 title: "Manage Copilot Pages, Copilot Notebooks, and Loop components in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
@@ -74,10 +74,10 @@ There are several IT Admin policy settings provided to enable creation of Copilo
 
 |Configure  |Setting Type  |Specific Policy  |Notes  |
 |---------|---------|---------|---------|
-|Copilot Pages & Copilot Notebooks creation  |  Cloud Policy  |  **Create and view Copilot Pages**  |  Applies to: Copilot Pages and Copilot Notebooks (cloud policy will be retitled soon)  |
-|Loop workspaces creation  |  Cloud Policy  |  **Create Loop workspaces in Loop**  |  Applies to: Loop workspaces (previously titled Create and view Loop workspaces in Loop)  |
-|Loop component creation and integration across Microsoft 365  |  Cloud Policy  | **Create and view Loop files in Microsoft apps that support Loop**  |  Applies to: <br/> - Outlook integration<br> - [Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5) integration<br> - OneNote integration<br> - Whiteboard integration<br> Does **NOT** apply to:<br> - Loop workspaces<br> - Teams integration<br> - Copilot Pages  |
-|Outlook creation and integration of Loop experiences  |  Cloud Policy  |  **Create and view Loop files in Outlook**  |  First checks **Create and view Loop files in Microsoft apps that support Loop**; then applies **Create and view Loop files in Outlook**, if applicable.<br/><br/>Applies to: <br/> - Outlook<br/> - [Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5)  |
+|Copilot Pages & Copilot Notebooks creation  |  Cloud Policy  |  **Create and view Copilot Pages and Copilot Notebooks**  |  Applies to: Copilot Pages and Copilot Notebooks  |
+|Loop workspaces creation  |  Cloud Policy  |  **Create Loop workspaces in Loop**  |  Applies to: Loop workspaces, including Teams channel workspaces  |
+|Loop component creation and integration across Microsoft 365  |  Cloud Policy  | **Create and view Loop files in Microsoft apps that support Loop**  |  Applies to: <br/> - Outlook integration<br> - [Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5) integration<br> - OneNote integration<br> - Whiteboard integration<br><br> Does **NOT** apply to:<br> - Loop workspaces<br> - Teams integration<br> - Copilot Pages<br> - Copilot Notebooks  |
+|Outlook creation and integration of Loop experiences  |  Cloud Policy  |  **Create and view Loop files in Outlook**  |  First checks **Create and view Loop files in Microsoft apps that support Loop**; then applies **Create and view Loop files in Outlook**, if applicable.<br/><br/>Applies to: <br/> - Outlook<br/> - [Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5)  |
 |Teams creation and integration  |  SharePoint property  |  See [Settings management for Loop components in Teams](#settings-management-for-loop-functionality-in-teams)  |  Teams only checks the settings in this row.  |
 
 ## Storage based view of the admin policy settings
@@ -86,16 +86,16 @@ Configure the creation of content in these locations by using the appropriate po
 
 |Loop content originally created in|️️️Manage with this policy|Loop content storage|
 |-----|-----|-----|
-|Copilot Pages|Cloud Policy: **Create and view Copilot Pages**|SharePoint Embedded: ✔️in user-owned container|
-|Copilot Notebooks|Cloud Policy: **Create and view Copilot Pages**|SharePoint Embedded: ✔️in user-owned container|
+|Copilot Pages|Cloud Policy: **Create and view Copilot Pages and Copilot Notebooks**|SharePoint Embedded: ✔️in user-owned container|
+|Copilot Notebooks|Cloud Policy: **Create and view Copilot Pages and Copilot Notebooks**|SharePoint Embedded: ✔️in user-owned container|
 |Loop app, My workspace|Cloud Policy: **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in user-owned container|
 |Loop app, shared workspace|Cloud Policy: **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in shared container|
 |Teams channel meeting (Teams Classic Calendar)|SharePoint property `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`|SharePoint Site: 📁`Meetings`|
-|Teams channel meeting ([Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5))|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop** -or- **Create and view Loop files in Outlook**|SharePoint Site: 📁`Meetings`|
+|Teams channel meeting ([Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5))|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop** -or- **Create and view Loop files in Outlook**|SharePoint Site: 📁`Meetings`|
 |Teams channel|SharePoint property `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`|SharePoint Site: ✔️in Channel folder|
 |Teams private chat|SharePoint property `Set-SPOTenant -IsLoopEnabled $true`|User's OneDrive: 📁`Microsoft Teams Chat files`|
 |Teams private meeting (Teams Classic Calendar)|SharePoint property `Set-SPOTenant -IsLoopEnabled $true`|User's OneDrive: 📁`Meetings`|
-|Teams private meeting ([Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5))|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop** -or- **Create and view Loop files in Outlook**|User's OneDrive: 📁`Meetings`|
+|Teams private meeting ([Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5))|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop** -or- **Create and view Loop files in Outlook**|User's OneDrive: 📁`Meetings`|
 |Outlook email message|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop** -or- **Create and view Loop files in Outlook**|User's OneDrive: 📁`Attachments`|
 |OneNote for Windows or for the web|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop**|User's OneDrive: 📁`OneNote Loop files`|
 |Whiteboard|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop**|User's OneDrive: 📁`Whiteboard\Components`|
@@ -104,15 +104,15 @@ Configure the creation of content in these locations by using the appropriate po
 
 |Scenario  |  Policies Configured  |
 |---------|---------|
-|✅Enable Copilot Pages, Copilot Notebooks, Loop workspaces creation and Loop component creation and integration everywhere  |  ✅ **Create and view Copilot Pages** = Enabled (or Not Configured)<br/>✅ **Create Loop workspaces in Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft apps that support Loop** = Enabled (or Not Configured)<br/>✅ [Teams-only] `Set-SPOTenant -IsLoopEnabled $true`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`  |
-|✅Enable Copilot Pages, Copilot Notebooks, Loop workspaces creation and Loop component creation and integration everywhere, but ⛔Disable Loop component creation and integration in Communication apps (Outlook, Teams)  |  ✅ **Create and view Copilot Pages** = Enabled (or Not Configured)<br/>✅ **Create Loop workspaces in Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft apps that support Loop** = Enabled (or Not Configured)<br/>⛔ **Create and view Loop files in Outlook** = Disabled<br/>⛔ [Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`  |
-|✅Enable Copilot Pages and Copilot Notebooks, but⛔Disable Loop workspace creation and Loop component creation and integration everywhere  |  ✅ **Create and view Copilot Pages** = Enabled (or Not Configured)<br/>⛔ **Create Loop workspaces in Loop** = Disabled<br/>⛔ **Create and view Loop files in Microsoft apps that support Loop** = Disabled<br/>⛔ [Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`  |
+|✅Enable Copilot Pages, Copilot Notebooks, Loop workspaces creation and Loop component creation and integration everywhere  |  ✅ **Create and view Copilot Pages and Copilot Notebooks** = Enabled (or Not Configured)<br/>✅ **Create Loop workspaces in Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft apps that support Loop** = Enabled (or Not Configured)<br/>✅ [Teams-only] `Set-SPOTenant -IsLoopEnabled $true`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`  |
+|✅Enable Copilot Pages, Copilot Notebooks, Loop workspaces creation and Loop component creation and integration everywhere, but ⛔Disable Loop component creation and integration in Communication apps (Outlook, Teams)  |  ✅ **Create and view Copilot Pages and Copilot Notebooks** = Enabled (or Not Configured)<br/>✅ **Create Loop workspaces in Loop** = Enabled (or Not Configured)<br/>✅ **Create and view Loop files in Microsoft apps that support Loop** = Enabled (or Not Configured)<br/>⛔ **Create and view Loop files in Outlook** = Disabled<br/>⛔ [Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`  |
+|✅Enable Copilot Pages and Copilot Notebooks, but⛔Disable Loop workspace creation and Loop component creation and integration everywhere  |  ✅ **Create and view Copilot Pages and Copilot Notebooks** = Enabled (or Not Configured)<br/>⛔ **Create Loop workspaces in Loop** = Disabled<br/>⛔ **Create and view Loop files in Microsoft apps that support Loop** = Disabled<br/>⛔ [Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`  |
 
 ## User experience expectations when admin settings are configured
 
 As described in this topic, you can control the ability for users in your environment to create new Copilot Pages, Copilot Notebooks, and Loop content. **You cannot prevent access to existing content using the admin controls.** You can configure the admin controls via select groups or for your entire tenant (except for the Teams controls, which apply to the entire tenant only).
 
-- To prevent collaboration between certain groups in your organization, refer to [Information Barriers](/en-us/purview/information-barriers-sharepoint).
+- To prevent collaboration between certain groups in your organization, refer to [Information Barriers](/purview/information-barriers-sharepoint).
 - To prevent access to existing content and the Loop app with workspaces, refer to [Conditional Access policies](/sharepoint/control-access-from-unmanaged-devices).
 
 ### Here's what you should expect when using the IT admin controls configured to Disabled
@@ -144,7 +144,7 @@ This same approach is not available for Copilot Pages or Copilot Notebooks. Refe
 
 Copilot Pages, Copilot Notebooks, and the Loop experiences (except for Microsoft Teams) check the following [Cloud Policy](/deployoffice/admincenter/overview-cloud-policy) settings. See [Available policy settings](#available-policy-settings) to understand how each app checks these settings:
 
-- **Create and view Copilot Pages** (which also applies to Copilot Notebooks)
+- **Create and view Copilot Pages and Copilot Notebooks**
 - **Create Loop workspaces in Loop**
 - **Create and view Loop files in Microsoft apps that support Loop**
 - **Create and view Loop files in Outlook**
@@ -155,12 +155,12 @@ Copilot Pages, Copilot Notebooks, and the Loop experiences (except for Microsoft
 1. Create a new policy configuration or edit an existing one.
 1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, see [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
 1. In **Configure Settings**, choose one of the following settings:
-    - For **Create and view Copilot Pages** (which also applies to Copilot Notebooks)
+    - For **Create and view Copilot Pages and Copilot Notebooks**
         - **Enabled**: Copilot Pages and Copilot Notebooks creation and integration are available to the users.
         - **Disabled**: Copilot Pages and Copilot Notebooks creation and integration aren't available to the users.
         - **Not configured**: Copilot Pages and Copilot Notebooks creation and integration are available to the users.
           >[!NOTE]
-          >If your organization has [disabled the creation of OneDrive](/sharepoint/manage-user-profiles#disable-onedrive-creation-for-some-users), regardless of the setting noted here, these people in your organization won't be able to create Copilot Pages or Copilot Notebooks. 
+          >If your organization has [disabled the creation of OneDrive](/sharepoint/manage-user-profiles#disable-onedrive-creation-for-some-users), regardless of the setting noted here, these people in your organization won't be able to create Copilot Pages or Copilot Notebooks.
     - For **Create Loop workspaces in Loop**:
         - **Disabled**: Creation of Loop workspaces isn't available to the users.
         - Loop app will open Loop components when workspaces is disabled.
@@ -170,7 +170,7 @@ Copilot Pages, Copilot Notebooks, and the Loop experiences (except for Microsoft
         - recall:
             - this setting applies to:
                 - Outlook integration
-                - [Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5) integration
+                - [Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5) integration
                 - OneNote integration
                 - Whiteboard integration
             - this setting does **NOT** apply to:
@@ -181,7 +181,7 @@ Copilot Pages, Copilot Notebooks, and the Loop experiences (except for Microsoft
         - **Enabled**: Creation of Loop components and integration is available to the users.
         - **Disabled**: Creation of Loop components and integration isn't available to the users.
         - **Not configured**: Creation of Loop components and integration is available to the users.
-    - For **Create and view Loop files in Outlook** (includes Outlook and [Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5)):
+    - For **Create and view Loop files in Outlook** (includes Outlook and [Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5)):
         - **Enabled**: Creation of Loop components and integration is available to the users.
         - **Disabled**: Creation of Loop components and integration isn't available to the users.
         - **Not configured**: Creation of Loop components and integration is available to the users.
@@ -203,7 +203,7 @@ You'll need the [latest version of SharePoint PowerShell module](/powershell/sha
 |Experience  |SharePoint organization properties  |Notes  |
 |---------|---------|---------|
 |Loop components in Teams  | `IsLoopEnabled` (boolean)  |  This property controls Loop component creation and integration in Microsoft Teams. It applies to the entire tenant and can't be configured at the user level.  |
-|Collaborative meeting notes  |  `IsCollabMeetingNotesFluidEnabled` (boolean)  |  This property controls the collaborative meeting notes creation and integration in Microsoft Teams. It applies to the entire tenant and can't be configured at the user level. <br/><br/>The SharePoint organization property doesn't apply to collaborative meeting notes in [Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5), see [Settings management in Cloud Policy](#settings-management-in-cloud-policy).   |
+|Collaborative meeting notes  |  `IsCollabMeetingNotesFluidEnabled` (boolean)  |  This property controls the collaborative meeting notes creation and integration in Microsoft Teams. It applies to the entire tenant and can't be configured at the user level. <br/><br/>The SharePoint organization property doesn't apply to collaborative meeting notes in [Teams New Calendar](https://support.microsoft.com/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5), see [Settings management in Cloud Policy](#settings-management-in-cloud-policy).   |
 
 To check your tenant's default file permissions, perform the following steps:
 
