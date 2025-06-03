@@ -64,10 +64,10 @@ Use the unstructured document processing model when working with documents like 
 
 For example, a contract renewal letter might vary in format but consistently include a phrase like “Service start date of” followed by a date. The model uses such patterns to determine both the document type (classification) and the data to extract (extractors).
 
-**Best for**: Unstructured documents with recognizable text patterns.
-**File support**: Broadest range of file types.
-**Language support**: More than [40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
-**Setup**: Use the **Single class model** option.
+- **Best for**: Unstructured documents with recognizable text patterns.
+- **File support**: Broadest range of file types.
+- **Language support**: More than [40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
+- **Setup**: Use the **Single class model** option.
 
 For more information, see [Overview of unstructured document processing](document-understanding-overview.md).
 
@@ -77,11 +77,11 @@ The freeform document processing model is ideal for extracting information from 
 
 These models are built using Microsoft Power Apps AI Builder and are especially useful when processing large volumes of incoming documents from various sources.
 
-**Best for**: PDFs or image files where classification isn’t required.
-**File support**: PDF and image formats.
-**Language support**: More than [40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
-**Setup**: Use the **Freeform extraction model** option.
-**Availability**: [Varies by region](/ai-builder/availability-region).
+- **Best for**: PDFs or image files where classification isn’t required.
+- **File support**: PDF and image formats.
+- **Language support**: More than [40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
+- **Setup**: Use the **Freeform extraction model** option.
+- **Availability**: [Varies by region](/ai-builder/availability-region).
 
 For more information, see [Overview of structured and freeform document processing](form-processing-overview.md).
 
@@ -91,16 +91,16 @@ Choose the structured document processing model for documents with a consistent 
 
 Built with Microsoft Power Apps AI Builder, structured models learn from example documents and extract data from similar locations in future files. For instance, a tax form might always place the social security number in the same spot.
 
-**Best for**: Structured or semi-structured documents like forms.
-**File support**: Forms with consistent layouts.
-**Language support**: Widest [range of supported languages](/ai-builder/form-processing-model-requirements#model-for-structured-and-semi-structured-documents).
-**Setup**: Use the **Structured extraction model** option.
+- **Best for**: Structured or semi-structured documents like forms.
+- **File support**: Forms with consistent layouts.
+- **Language support**: Widest [range of supported languages](/ai-builder/form-processing-model-requirements#model-for-structured-and-semi-structured-documents).
+- **Setup**: Use the **Structured extraction model** option.
 
 For more information, see [Overview of structured and freeform document processing](form-processing-overview.md).
 
 ## Prebuilt models
 
-If you don't need to build a custom model, you can use a [prebuilt document processing model](prebuilt-overview.md) that has already been trained for specific structured documents.
+In addition to custom models, Microsoft Syntex offers a set of [prebuilt models](prebuilt-overview.md) that provide out-of-the-box capabilities for extracting structured information from common business documents. These models are designed to save time and effort by eliminating the need for manual training or configuration.
 
 Prebuilt models include:
 
@@ -112,8 +112,6 @@ Prebuilt models include:
 <!---
 ![Screenshot of the Options for model creation page showing the prebuilt model options.](../media/content-understanding/build-a-prebuilt-model-section.png)
 --->
-
-In addition to custom models, Microsoft Syntex offers a set of prebuilt models that provide out-of-the-box capabilities for extracting structured information from common business documents. These models are designed to save time and effort by eliminating the need for manual training or configuration.
 
 ### Contract processing
 
