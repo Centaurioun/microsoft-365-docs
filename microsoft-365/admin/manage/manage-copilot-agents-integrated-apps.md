@@ -182,14 +182,17 @@ Removing an agent affects its availability and functionality in Copilot and in t
 
 ### Block or unblock agents
 
-You can block or unblock agents for the complete organization or specific users or groups by using the same controls that work for any other app in the Microsoft 365 admin center. To do this, follow these steps:
+You can block or unblock agents for the entire organization by using the same controls that work for any other app in the Microsoft 365 admin center. To do this, follow these steps:
 
-1. In the admin center, go to the Integrated apps page.
-1. Choose an agent from the list of Available or Deployed apps.
+1. In the admin center, go to **Copilot** > **Agents & connectors**, or the Integrated apps page.
+1. Choose an agent from the list of agents.
 1. Select **Block** or **Unblock**.
-1. Decide whether to block or unblock the agent for everyone or for specific users or groups.
+1. Decide whether to block or unblock the agent for everyone.
 
 Blocking or unblocking an agent affects its availability and functionality in Copilot and other host products, such as Outlook, Teams, or Microsoft 365.
+
+>[!NOTE]
+> For Frontier agents, such as Researcher and Analyst, the **Edit users** panel is disabled. To manage their availability, you must block the agent for the entire tenant using the **Block** action in the admin center.
 
 ## Agent metadata in admin center
 
