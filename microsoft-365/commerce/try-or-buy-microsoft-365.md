@@ -84,6 +84,8 @@ The sign-up process might take several minutes to complete. After it's complete,
 
 When you start a free trial, we automatically create a billing account for you. You use your billing account to manage your account settings, invoices, payment methods, and purchases. For more information about billing accounts, see [Understand billing accounts](manage-billing-accounts.md).
 
+At the end of your trial period, your subscription will be renewed to an annual term subscription by default, unless you turn off "recurring billing" from inside of Billing > Your products.
+
 ## Extend your trial
 
 Do you need more time to try out the features of Microsoft 365 for business before buying? If your trial subscription is within 15 days of expiring and hasn't been extended yet, you can extend your trial for another 30-day period. You can only do this one time.
