@@ -18,7 +18,7 @@ The People Skills inference engine uses Microsoft 365 profile and activity signa
 
 ![Updated_SkillsLibrary_Ecosystem42125](media/people-skills-ai-inferencing/updated-skillslibrary-ecosystem42125.png)
 
-We use a variety of data sources to infer skills accurately. The following are representative sources and may change as the model evolves:
+We use various data sources to infer skills accurately. The following are representative sources and may change as the model evolves:
 
 -  __[Microsoft Graph](/graph/overview) and AI Graph__: Includes data from user profiles, job titles, collaboration signals, and documents; and key phrases from emails, meetings, and documents.
 
@@ -42,7 +42,7 @@ The skill inferencing engine operates under the following constraints:
 
 People Skills inferencing follows a refresh cycle, typically every 30 days, to ensure that recent changes in a user’s Microsoft 365 work activity are reflected in their inferred skills. 
 
-For the initial computation, we expect most users will receive AI-generated skill inferences in 48 hours, although this may take up to a maximum of 5 days.
+For the initial computation, we expect most users receive AI-generated skill inferences in 48 hours, although this may take up to a maximum of five days.
 
 After this initial computation, the system will refresh the skills inferencing every 30 days to keep the skills data up-to-date.
 
@@ -60,19 +60,19 @@ Our inference engine ensures that any AI restricted skills identified by the adm
 
 An organization can turn off People Skills AI inferencing for all or a group of users by using Feature Access Management. <u>Learn more about how to turn off skills AI inferencing</u>
 
-Individual users can also opt-out of using AI to generate skills within their Microsoft 365 profile editor settings.
+Individual users can also opt out of using AI to generate skills within their Microsoft 365 profile editor settings.
 
 ### Improving AI inferencing performance
 
 Customers can understand/improve the quality of their organization’s AI-generated skills by reviewing the below guide.
 
-- **Manage m**__**i**ssing or incomplete job titles:__ Job titles play a crucial role in skills inferencing because they provide context about an employee's role and responsibilities within an organization. This context helps the inferencing system accurately match and suggest relevant skills. 
+- __**Manage missing or incomplete** job titles:__ Job titles play a crucial role in skills inferencing because they provide context about an employee's role and responsibilities within an organization. This context helps the inferencing system accurately match and suggest relevant skills. 
 
 If a user has empty primary and secondary job titles, the system uses advanced AI algorithms to infer the most appropriate job title based on the user’s collaboration signals, and documents job title at runtime. The system also has fallback mechanisms to handle cases where job titles are missing or of poor quality. This ensures that every user has a relevant job title that accurately reflects their role. However, the accuracy of skill inferences in this situation could be lower than when we have good quality job title information.
 
- If your organization has incomplete or missing job title data, you can use the organization upload tool to upload a secondary job title which our system will use instead of the Entra job titles. To do this, use the Org. data upload tool and upload a .csv file with users matched to their secondary job title. [Learn more about uploading org data](/viva/import-orgdata) 
+ If your organization has incomplete or missing job title data, you can use the organization upload tool to upload a secondary job title which our system will use instead of the Microsoft Entra job titles. To do this, use the Org. data upload tool and upload a .csv file with users matched to their secondary job title. [Learn more about uploading org data](/viva/import-orgdata) 
 
-- **Review** **user** __Microsoft 365 activity:__ We rely on M365 user activity to generate signals for AI inferencing. Performance may be limited for users who do not spend considerable time in the Microsoft 365 ecosystem (e.g. front line, field workers). Performance may also be limited for soft skills, whereby activity about a skill may not be a clear indication of skill application.
+- **Review** **user** __Microsoft 365 activity:__ We rely on Microsoft 365 user activity to generate signals for AI inferencing. Performance may be limited for users who don't spend considerable time in the Microsoft 365 ecosystem (for example, frontline, field workers). Performance may also be limited for soft skills, whereby activity about a skill may not be a clear indication of skill application.
 
 - __Review AI restricted skills:__ Microsoft restricts certain skills from being returned by AI to comply with responsible AI best practices. AI-generated skills may be limited for customers in industries which inherently deal with skills that could be sensitive when associated with users.   [Learn more about our commitment to Responsible AI.](https://support.microsoft.com/office/ai-transparency-in-skills-c54f3ded-58bf-44dd-9fa1-6cbe49fba106)
 

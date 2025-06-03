@@ -14,10 +14,7 @@ ms.date:     05/29/2025
 
 # Import or export People Skills
 
- You can import skills for a user from third-party platforms and export a user’s confirmed skills using the Graph API.
-
-> [!NOTE]
-> To export your entire skills library, please see export your skills library 
+ You can import skills for a user from third-party platforms and export a user’s confirmed skills using the Microsoft Graph API. You can also export a user's confirmed skills.
 
 ### Importing user skills
 
@@ -27,11 +24,11 @@ You can import user skills from third party systems. The imported skills display
 
 
 
-User skills from external systems can be imported as an attribute while uploading organizational data into Microsoft 365. <u>Please review the detailed instructions about how to upload your org. data here.</u>
+User skills from external systems can be imported as an attribute while uploading organizational data into Microsoft 365.
 
 Review the below guideline on how you can use the tool to import user skills:   
 
-1.      Open the [Org. data ingestion tool ](/viva/import-orgdata)in Admin center and download the .csv template.  In admin center, you will find this under __Setup > Migration and imports__
+1.      Open the [Org. data ingestion tool ](/viva/import-orgdata)in Admin center and download the .csv template.  In admin center, see __Setup > Migration and imports__
 
 2.      In the org. data ingestion tool template, list all the users for whom you need skills to be imported, and list each user’s skills under the attribute __Microsoft_UserSkillNames__
 
@@ -47,11 +44,11 @@ Review the below guideline on how you can use the tool to import user skills:  
 
 ### Exporting user skills
 
-Admins can export a user’s confirmed skills via the Profile endpoint in MS Graph API. [Read our documentation ](/graph/api/profile-list-skills?view=graph-rest-beta&tabs=http)for more details on the skills endpoint and specific GET requests to access this data from the Graph API.
+Admins can export a user’s confirmed skills via the Profile endpoint in Microsoft Graph API. [Read our documentation ](/graph/api/profile-list-skills?view=graph-rest-beta&tabs=http)for more details on the skills endpoint and specific GET requests to access this data from the Graph API.
 
 > [!NOTE]
 > To export your entire skills library, see [exporting your entire skills library](#_Export_your_custom).  
->  Only a user’s confirmed skills can be exported. AI-generated skills cannot be exported.
+>  Only a user’s confirmed skills can be exported. AI-generated skills can't be exported.
 
  
 

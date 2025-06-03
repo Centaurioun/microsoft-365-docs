@@ -25,21 +25,21 @@ People Skills:
 
 - Empowers employees with personalized skill profiles and experiences to help them connect with others and discover opportunities.
 
-[Learn more about how skills AI inferencing works.](/editor/MicrosoftDocs/microsoft-365-docs-pr/copilot%2Fpeopleskillsoverview.md/pr/28574/docs-editor%2Fpeopleskillsoverview-1748550104?branch=main)
+[Learn more about how skills AI inferencing works.](people-skills-ai-inferencing.md)
 
 ## Licensing
 
 People Skills comes with your Microsoft 365 Copilot or Viva licenses and doesn't need a separate license. People Skills AI inferencing and experiences are based on a user's Microsoft 365 Copilot, Microsoft 365, Office 365, and Viva plans.
 
-- __People Skills - Foundation service plan__: Customers with the “People Skills – Foundation" service plan (Microsoft 365 commercial customers without a Microsoft 365 Copilot SKU, excluding education and government) will have access to the People Skills service excluding AI inferencing and Microsoft 365 Copilot capabilities. Users with this service plan can search to add skills from your taxonomy or imported skills to create a skills profile using the Microsoft 365 profile editor.
+- __People Skills - Foundation service plan__: Customers with the “People Skills – Foundation" service plan (Microsoft 365 commercial customers without a Microsoft 365 Copilot license, excluding education and government) can access the People Skills service excluding AI inferencing and Microsoft 365 Copilot capabilities. Users with this service plan can search to add skills from your taxonomy or imported skills to create a skills profile using the Microsoft 365 profile editor.
 
-- __People Skills – Advanced service plan__: Customers with the “People Skills – Advanced" service plan (including Microsoft Viva Suite, Viva Insights (including Workplace Analytics and Feedback customers), and Viva Learning customers) will have access to the People Skills service with AI inferencing, excluding Microsoft 365 Copilot capabilities.
+- __People Skills – Advanced service plan__: Customers with the “People Skills – Advanced" service plan (including Microsoft Viva Suite, Viva Insights (including Workplace Analytics and Feedback customers), and Viva Learning customers) can access the People Skills service with AI inferencing, excluding Microsoft 365 Copilot capabilities.
 
-- __Microsoft 365 Copilot in Productivity Apps service plan__: Customers with the “Microsoft 365 Copilot in Productivity Apps service plan,” excluding education and government SKUs, will now have People Skills available, including AI-inferencing and related Copilot experiences.
+- __Microsoft 365 Copilot in Productivity Apps service plan__: Customers with the “Microsoft 365 Copilot in Productivity Apps service plan,” excluding education and government licenses, can use People Skills, including AI-inferencing and related Copilot experiences.
 
-For a detailed list of People Skills experiences and their corresponding license requirements, please see below.
+For a detailed list of People Skills experiences and their corresponding license requirements, see the following section.
 
-![People Skills 101](https://review.learn.microsoft.com/en-us/editor/MicrosoftDocs/microsoft-365-docs-pr/copilot%2Fpeopleskillsoverview.md/pr/28574/media/peopleskillsoverview/people-skills-101.png)
+![People Skills](people-skills-overview.md)
 
 Contact your Microsoft representative if you have questions on licensing or access.
 
@@ -47,7 +47,7 @@ Contact your Microsoft representative if you have questions on licensing or acce
 
 - **[Skills in the Microsoft 365 profile card](https://support.microsoft.com/en-us/office/overview-of-people-skills-988029ce-f749-4f99-a6f3-f2e4cef450ae)**[:](https://support.microsoft.com/en-us/office/overview-of-people-skills-988029ce-f749-4f99-a6f3-f2e4cef450ae) Users can view and manage their skills profiles right from the Microsoft 365 profile card and profile editor. All users can also view the shared skills of others in the organization on their profile card, to help facilitate connection.
 
-People Skills is available today on the profile card in the new Outlook desktop for Windows, Outlook Web App, Microsoft 365 Copilot, Office.com, SharePoint, and People Companion, and will expand to additional applications where you see the profile card in future releases.
+People Skills is available today on the profile card in the new Outlook desktop for Windows, Outlook Web App, Microsoft 365 Copilot, Office.com, SharePoint, and People Companion, and will expand to other applications where you see the profile card in future releases.
 
 
 
@@ -69,7 +69,7 @@ People Skills AI inferencing and experiences are based on a user's Microsoft 365
 
 Users can now manage and share their skills directly from the profile card in Microsoft 365. [Learn more about People Skills capabilities for users](https://go.microsoft.com/fwlink/?linkid=2313228)
 
-Admins can view [Set up Skills](/viva/skills/skills-get-started) and [Manage your skills library](/viva/skills/manage-skills-library) for information about how to setup People Skills, and control how People Skills data is shared and managed.
+Admins can view [Set up Skills](/viva/skills/skills-get-started) and [Manage your skills library](/viva/skills/manage-skills-library) for information about how to set up People Skills, and control how People Skills data is shared and managed.
 
  
 
@@ -85,5 +85,5 @@ When you deploy People Skills, skills from these other sources continue to be ac
 
  
 
-If you have an existing dependency on UPA skills or other solutions for ingesting skills into Microsoft 365 experiences, [please let us know using this form](https://go.microsoft.com/fwlink/?linkid=2320998). We will to follow-up with you to understand your requirements and discuss options.
+If you have an existing dependency on UPA skills or other solutions for ingesting skills into Microsoft 365 experiences, [please let us know using this form](https://go.microsoft.com/fwlink/?linkid=2320998). We'll to follow up with you to understand your requirements and discuss options.
 
