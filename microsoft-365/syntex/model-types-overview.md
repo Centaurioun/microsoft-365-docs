@@ -29,17 +29,20 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 In Microsoft Syntex, document processing begins with models—powerful tools that help you identify, classify, and extract information from documents stored in SharePoint document libraries. These models are the foundation for turning unstructured content into structured, usable data.
 
-When you apply a model to a SharePoint library, it’s linked to a content type that defines the structure of the information being extracted. This content type, which includes columns for storing extracted data, is saved in the SharePoint content type gallery. You can create a new content type tailored to your needs or leverage existing ones to reuse their schema and maintain consistency across your organization.
+When you apply a model to a SharePoint library, it’s linked to a content type that defines the structure of the information being extracted. This content type, which includes columns for storing extracted data, is saved in the SharePoint content type gallery. You can create a new content type tailored to your needs or use existing ones to reuse their schema and maintain consistency across your organization.
 
 Microsoft Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models).
 
 ![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-5.png)
 
-Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).
+Models can be created in two ways depending on your needs and where you want to manage them. Enterprise models are created and managed in a [content center](create-a-content-center.md), making them reusable across multiple SharePoint sites. Local models, on the other hand, are created directly within a SharePoint document library on your site and are scoped to that specific library. This gives you flexibility to choose the right model type based on whether you need centralized control or localized customization.
+
+<!---
+Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).--->
 
 ## Custom models
 
-The type of custom model you choose will depend on the types of files you use, the format and structure of the files, and where you want to apply the model.
+The type of custom model you choose depends on the types of files you work with, the structure and format of those files, and the SharePoint locations where you plan to apply the model.
 
 Custom models include:
 
@@ -62,7 +65,7 @@ When you create a custom model, you'll select the training method associated wit
 
 Use the unstructured document processing model when working with documents like letters or contracts that don’t follow a consistent layout but contain identifiable phrases or patterns. This model automatically classifies documents and extracts relevant information based on text patterns.
 
-For example, a contract renewal letter might vary in format but consistently include a phrase like “Service start date of” followed by a date. The model uses such patterns to determine both the document type (classification) and the data to extract (extractors).
+For example, a contract renewal letter might vary in format but consistently include a phrase like "Service start date of" followed by a date. The model uses such patterns to determine both the document type (classification) and the data to extract (extractors).
 
 - **Best for**: Unstructured documents with recognizable text patterns.
 - **File support**: Broadest range of file types.
