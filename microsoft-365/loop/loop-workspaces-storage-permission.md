@@ -36,6 +36,7 @@ Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/share
 |Copilot Notebooks|✔️in user-owned container|||user account|
 |Loop app, My workspace|✔️in user-owned container|||user account|
 |Loop app, shared workspace|✔️in shared container|||workspace owners|
+|Teams [channel workspace](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/collaborate-in-real-time-with-workspaces-in-teams/4414334)|✔️in shared container|||M365 Group|
 |Teams channel meeting||✔️in 📁`Meetings`||M365 Group|
 |Teams channel||✔️in Channel folder||M365 Group|
 |Teams private chat|||✔️in 📁`Microsoft Teams Chat files`|user account|
