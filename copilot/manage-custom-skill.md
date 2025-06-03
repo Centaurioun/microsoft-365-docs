@@ -4,7 +4,7 @@
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
 title:       Manage Custom Skills
-description: # How to modify, export custom skills
+description: How to modify and import or export custom skills
 author:      anibajaj 
 ms.author:   anirudhbajaj
 ms.service:  ms.service: microsoft-365-copilot
