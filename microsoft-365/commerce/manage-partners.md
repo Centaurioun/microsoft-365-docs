@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
-manager: ewagner
+manager: scotv
 ms.reviewer: prlachhw, ramagane
 audience: Admin
 ms.topic: how-to
