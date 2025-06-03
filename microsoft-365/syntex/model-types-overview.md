@@ -27,11 +27,11 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 </br>--->
 
-Understanding your content in Microsoft Syntex starts with document processing models. Document processing models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
+In Microsoft Syntex, document processing begins with models—powerful tools that help you identify, classify, and extract information from documents stored in SharePoint document libraries. These models are the foundation for turning unstructured content into structured, usable data.
 
-When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
+When you apply a model to a SharePoint library, it’s linked to a content type that defines the structure of the information being extracted. This content type, which includes columns for storing extracted data, is saved in the SharePoint content type gallery. You can create a new content type tailored to your needs or leverage existing ones to reuse their schema and maintain consistency across your organization.
 
-Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models).
+Microsoft Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models).
 
 ![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-5.png)
 
@@ -60,42 +60,41 @@ When you create a custom model, you'll select the training method associated wit
 --->
 ### Unstructured document processing
 
-Use the unstructured document processing model to automatically classify documents and extract information from them. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
+Use the unstructured document processing model when working with documents like letters or contracts that don’t follow a consistent layout but contain identifiable phrases or patterns. This model automatically classifies documents and extracts relevant information based on text patterns.
 
-For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string "Service start date of" followed by an actual date.
+For example, a contract renewal letter might vary in format but consistently include a phrase like “Service start date of” followed by a date. The model uses such patterns to determine both the document type (classification) and the data to extract (extractors).
 
-This model type supports the widest range of file types and supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
-
-When you create an unstructured document processing model, use the **Single class model** option.
+**Best for**: Unstructured documents with recognizable text patterns.
+**File support**: Broadest range of file types.
+**Language support**: More than [40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
+**Setup**: Use the **Single class model** option.
 
 For more information, see [Overview of unstructured document processing](document-understanding-overview.md).
 
 ### Freeform document processing
 
-Use the freeform document processing model to automatically extract information from unstructured and freeform documents such as letters and contracts where the information can appear anywhere in the document.
+The freeform document processing model is ideal for extracting information from documents where data can appear anywhere—such as scanned letters, faxes, or PDFs. Unlike unstructured models, freeform models don’t classify the document type; they focus solely on extracting data.
 
-Freeform document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) to create and train models within Syntex. 
+These models are built using Microsoft Power Apps AI Builder and are especially useful when processing large volumes of incoming documents from various sources.
 
-> [!NOTE]
-> The freeform document processing model is not yet available in some regions. For more information, see [Feature availability by region](/ai-builder/availability-region).
-
-Because your organization receives letters and documents in large quantities from various sources, such as mail, fax, and email, processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text and other information from these documents, this model automates this process.
-
-This model type is the best option for documents in PDF or image files when you don't require automatic classification of the type of document, and it supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
-
-When you create a freeform document processing model, use the **Freeform extraction model** option.
+**Best for**: PDFs or image files where classification isn’t required.
+**File support**: PDF and image formats.
+**Language support**: More than [40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents).
+**Setup**: Use the **Freeform extraction model** option.
+**Availability**: [Varies by region](/ai-builder/availability-region).
 
 For more information, see [Overview of structured and freeform document processing](form-processing-overview.md).
 
 ### Structured document processing
 
-Use the structured document processing model to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
+Choose the structured document processing model for documents with a consistent layout, such as forms or invoices. This model identifies field and table values based on their fixed positions in the document.
 
-Structured document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create and train models within Syntex. 
+Built with Microsoft Power Apps AI Builder, structured models learn from example documents and extract data from similar locations in future files. For instance, a tax form might always place the social security number in the same spot.
 
-This model type supports the [widest range of languages](/ai-builder/form-processing-model-requirements#model-for-structured-and-semi-structured-documents) and is trained to understand the layout of your form from example documents, and then learns to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number on a tax form).
-
-When you create a structured document processing model, use the **Structured extraction model** option.
+**Best for**: Structured or semi-structured documents like forms.
+**File support**: Forms with consistent layouts.
+**Language support**: Widest [range of supported languages](/ai-builder/form-processing-model-requirements#model-for-structured-and-semi-structured-documents).
+**Setup**: Use the **Structured extraction model** option.
 
 For more information, see [Overview of structured and freeform document processing](form-processing-overview.md).
 
