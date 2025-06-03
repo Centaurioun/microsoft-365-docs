@@ -79,14 +79,14 @@ items:
       items:
         - name: Manage skills library
           items:
-            - name: Manage out-of-the-box skills library
-              href: manage-default-skills.md
-            - name: Manage skills library
-              href: manage-skills-library.md
             - name: People Skills Overview
               href: people-skills-overview.md
+            - name: Manage skills library
+              href: people-skills-manage-skills-library.md
+            - name: People skills data and AI guidelines
+              href: people-skills-data-and-ai-guidelines.md
             - name: Privacy and sharing controls
-              href: skills-sharing-inferencing-controls.md
+              href: people-skills-sharing-inferencing-controls.md
             - name: AI inference engine
               href: people-skills-ai-inferencing.md
             - name: Setup People Skills
