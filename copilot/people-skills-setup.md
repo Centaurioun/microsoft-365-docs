@@ -25,7 +25,7 @@ The following roles have permission to set up People Skills. Review the document
 
 ## Quick setup with out-of-the-box skill library
 
-Most organizations can quickly set up skills using our out-of-the-box People Skills library of over 16,000+ skills. If you prefer to curate your own library by importing custom skills, please see the next section [Advanced setup](#Advanced-setup-using-a-custom-skills-library).
+Most organizations can quickly set up skills using our out-of-the-box People Skills library of over 16,000+ skills. If you prefer to curate your own library by importing custom skills, please see the next section [Advanced setup](#advanced-setup-using-a-custom-skills-library).
 
 1. In the Copilot page in the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/featureexplorer), select **People Skills in Microsoft 365 Copilot** 
 
