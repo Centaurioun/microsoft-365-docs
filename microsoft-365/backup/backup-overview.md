@@ -71,9 +71,9 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 
 Microsoft 365 Backup provides ultra-fast backup and restore capabilities by creating backups within the protected services’ data boundaries.
 
-Microsoft 365 Backup not only provides uniquely fast recovery from common business continuity and disaster recovery (BCDR) scenarios like ransomware or accidental/malicious employee content overwrite/deletion. More BCDR scenario protections are also built directly into the service. For example, OneDrive, SharePoint, and Exchange Online have a proprietary architecture design for resiliency with replicated copies of customer data to failover to live active copies seamlessly without the need for end customer intervention.
+Microsoft 365 Backup not only provides uniquely fast recovery from common business continuity and disaster recovery (BCDR) scenarios like ransomware or accidental or malicious employee content overwrite or deletion. More BCDR scenario protections are also built directly into the service. For example, OneDrive, SharePoint, and Exchange Online have a proprietary architecture design for resiliency with replicated copies of customer data to failover to live active copies seamlessly without the need for end customer intervention.
 
-Our backups are protected from malicious overwrites because OneDrive, SharePoint, and Exchange use Append-Only backup storage. This means that SharePoint can only add new content blobs and can never change old ones until they're permanently deleted. The Exchange items are backed up in an similar append-only manner and can't be accessed by a client process (such as Outlook, OWA, or MFCMAPI). This process ensures that items can't be changed after an initial save, protecting against attackers that try to corrupt old versions. For more information about the built-in service and data resiliency, see [SharePoint and OneDrive data resiliency in Microsoft 365](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency) and [Exchange Online data resiliency in Microsoft 365](/compliance/assurance/assurance-exchange-data-resiliency).
+Our backups are protected from malicious overwrites because OneDrive, SharePoint, and Exchange use Append-Only backup storage. This means that SharePoint can only add new content blobs and can never change old ones until they're permanently deleted. The Exchange items are backed up in a similar append-only manner and can't be accessed by a client process (such as Outlook, OWA, or MFCMAPI). This process ensures that items can't be changed after an initial save, protecting against attackers that try to corrupt old versions. For more information about the built-in service and data resiliency, see [SharePoint and OneDrive data resiliency in Microsoft 365](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency) and [Exchange Online data resiliency in Microsoft 365](/compliance/assurance/assurance-exchange-data-resiliency).
 
 Key architectural takeaways:
 
@@ -96,6 +96,7 @@ Restore points are physically created in the service as soon as the policy is co
 #### Restoration performance
 
 Restoration performance correlates with your recovery time objective, or the time it takes for you to restore a healthy state of your data and recover from a data destruction event.
+
 For full OneDrive account and SharePoint site restores, the fastest recovery happens when choosing in-place restore rather a new URL restore. Additionally, choosing one of the recommended express restore points presented in the restore workflow user interface yields the quickest recovery results.
 
 All restore points and restores to new URLs are relatively fast, but same URL restores using a recommended express restore point will typically yield better results. The Exchange Online restore workflow doesn't have or require the "faster" restore points.
@@ -114,7 +115,7 @@ The following table summarizes expected performance for a normally distributed t
 
 <sup>*Single protection unit OneDrive and SharePoint restores using express restore points can take on average between 10 minutes and 120 minutes, depending on site size.</sup> <sup>For mailboxes, restore times typically fall in the 200 - 300 item/minute range.</sup>
 
-<sup>*1,000+ protection unit restore speeds published here are based on internal benchmarking where SharePoint sites have an average of 12GB of stored content per site, Exchange Online mailboxes have an average of 26K items and an aggregate size of 10 GB.  Those bulk recoveries use the in-place restore option, which is typical for large scale attack recovery scenarios. Actual times will depend on the number and size of the items in each site/mailbox.</sup> 
+<sup>*1,000+ protection unit restore speeds published here are based on internal benchmarking where SharePoint sites have an average of 12GB of stored content per site, Exchange Online mailboxes have an average of 26K items and an aggregate size of 10 GB.  Those bulk recoveries use the in-place restore option, which is typical for large scale attack recovery scenarios. Actual times will depend on the number and size of the items in each site/mailbox.</sup>
 
 ## Pay-as-you-go billing
 
@@ -122,48 +123,49 @@ Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumpti
 
 ## Integrated partner solutions
 
-We partner with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
+We partner with many independent software publishers to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
 For a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide more enhanced experiences or workflows.
 
 ## Multi-geo environments
 
 Microsoft 365 Backup supports the backup of sites and user accounts from both the central and satellite locations.
-## Append-only vs Immutable Storage Overview
 
-#### Key Points:
+## Append-only vs. immutable storage overview
 
-1. Immutability is formally defined as storage that cannot be altered, deleted, or overwritten for a specified period of time.
+### Key points
 
-1. Microsoft 365 Backup follows that definition except for disallowing deletion. Backup uses append-only storage to prevent non-deletion modifications or alterations of existing restore point data. This protects against service or malware overwrites of the backup data.
+1. Immutability is formally defined as storage that can't be altered, deleted, or overwritten for a specified period of time.
 
-1. Deletion of the backups is not blocked, giving customers the option to offboard if needed or desired. There are a couple of defenses against undesired deletions built into the tool to approximate full immutability without some of the related drawbacks (e.g. forced payment, lack of GDPR control, etc.). These additional features include:
+2. Microsoft 365 Backup follows that definition except for disallowing deletion. Backup uses append-only storage to prevent nondeletion modifications or alterations of existing restore point data. This protects against service or malware overwrites of the backup data.
 
-   1. A fixed 90-day existing backup recovery [grace period](/microsoft-365/backup/backup-offboarding?view=o365-worldwide), similar to a soft-delete recycle bin within the Backup tool, that allows the customer to recover their backups up to 90 days after offboarding.
-   
-   1. Retention/deletion policies (e.g. from Purview) do not impact the Backup retention period, which remains fully isolated from those policies.
-   
-   1. A multi-admin email notification feature (coming in H2CY25) that will automatically notify a preset group of admins if a potentially harmful action is taken on the Backup tool.
-   
-#### Deeper Storage Architectural Look
+3. Deletion of the backups isn't blocked, giving customers the option to offboard if needed or desired. There are a couple of defenses against undesired deletions built into the tool to approximate full immutability without some of the related drawbacks (for example, lack of GDPR control). These additional features include:
+
+    a. A fixed 90-day existing backup recovery [grace period](/microsoft-365/backup/backup-offboarding), similar to a soft-delete recycle bin within the Backup tool, that allows the customer to recover their backups up to 90 days after offboarding.
+
+    b. Retention and deletion policies (for example, from Purview) don't affect the backup retention period, which remains fully isolated from those policies.
+
+    c. A multi-admin email notification feature (coming later this year) that will automatically notify a preset group of admins if a potentially harmful action is taken on the Backup tool.
+
+### Deeper storage architectural Look
 
 Microsoft 365 Backup Storage is built on top of standard OneDrive and SharePoint infrastructure; and on top of standard Exchange Online infrastructure. Given that, Microsoft 365 Backup Storage inherits some useful implementation benefits.
 
 One of those benefits is built in append-only storage of the backups.
 
-**OneDrive SharePoint Content Modification Protection**
+#### OneDrive SharePoint content modification protection
 
-The service is not capable of modifying existing copies of the backups because content backups are stored on append-only Azure blobs (read more about append-only resiliency [here](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency)). As a result, our service can only create new copies of the primary data in the backups, aligning to a new restore point corresponding to a new point in time. This is at the core of our append-only functionality.
+The service isn't capable of modifying existing copies of the backups because content backups are stored on append-only Azure blobs. Read more about [append-only resiliency](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency). As a result, our service can only create new copies of the primary data in the backups, aligning to a new restore point corresponding to a new point in time. This is at the core of our append-only functionality.
 
-**OneDrive SharePoint Metadata Modification Protection**
+#### OneDrive SharePoint metadata modification protection
 
-Metadata for OneDrive and SharePoint is stored in Azure SQL databases. The M365 Backup tool leverages a combination of the built-in Azure SQL point-in-time restore functionality and Azure Blob, to which serialized copies of the SQL DBs are periodically snapshotted.
+Metadata for OneDrive and SharePoint is stored in Azure SQL databases. The Microsoft 365 Backup tool uses a combination of the built-in Azure SQL point-in-time restore functionality and Azure Blob, to which serialized copies of the SQL DBs are periodically snapshotted.
 
-In both cases, modifications to the database result in new and non-modifiable point in time copies of the data. Once copied to blob, the immutability explanation from the prior section applies to those Blob-stored DB copies as well. More information about OneDrive SharePoint Metadata resiliency can be found [here](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency).
+In both cases, modifications to the database result in new and nonmodifiable point in time copies of the data. Once copied to blob, the immutability explanation from the prior section applies to those Blob-stored DB copies as well. Read more about [OneDrive and SharePoint metadata resiliency](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency).
 
-**Exchange Online Item Modification Protection**
+#### Exchange Online item modification protection
 
-Exchange Online Backup technology creates point in time copies of modified and deleted mailbox items. These backup copies, once created, are not modifiable by the service. A new copy is taken based on changes to the primary data at scheduled restore point frequency targets.
+Exchange Online Backup technology creates point-in-time copies of modified and deleted mailbox items. These backup copies, once created, aren't modifiable by the service. A new copy is taken based on changes to the primary data at scheduled restore point frequency targets.
 
-Please review the Microsoft 365 service terms [here](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+Review the [Microsoft 365 service terms](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
