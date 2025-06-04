@@ -37,7 +37,7 @@ For a detailed list of People Skills experiences and their corresponding license
 
 :::image type="content" source="media/people-skills-inferencing/people-skills-licensing.png" alt-text="Diagram that shows the list of People Skills experiences and their corresponding license requirements." lightbox="media/people-skills-inferencing/people-skills-licensing.png":::
 
-Contact your Microsoft representative if you have questions on licensing or access.
+If you have questions on licensing or access, contact your Microsoft representative.
 
 ## Where does People Skills data appear?
 
