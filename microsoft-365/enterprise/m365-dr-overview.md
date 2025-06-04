@@ -33,8 +33,8 @@ In order to promote clarity in the capability descriptions on data residency fun
 |Macro Region Geography 1 - EMEA |Data centers in Austria, Finland, France, Ireland, Italy, Netherlands, Poland, Spain, Sweden <br/> <br/> **Note:** For tenants with a default geography of Israel; data can be stored in Macro Region Geography 1 – EMEA or additional datacenters located in their default geography (i.e., Israel). |
 |Macro Region Geography 2 - Asia Pacific |Data centers in Australia, Hong Kong Special Administrative Region, Indonesia, Japan, Malaysia, New Zealand, Singapore, South Korea <br/> <br/> **Note:** For tenants with a default geography of Taiwan; data can be stored in Macro Region Geography 2 – Asia Pacific or additional datacenters located in their default geography (i.e., Taiwan). |
 |Macro Region Geography 3 - Americas |Data centers in Brazil, Chile, Mexico, United States |
-|Local Region Geography |Australia, Brazil, Canada, France, Germany, India, Indonesia, Israel, Italy, Japan, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, United Kingdom |
-|Future Local Region Geography | Future planned data center regions: Malaysia, Austria, Chile, Denmark, Greece, Saudi Arabia |
+|Local Region Geography |Australia, Brazil, Canada, France, Germany, India, Indonesia, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, United Kingdom |
+|Future Local Region Geography | Future planned data center regions: Austria, Chile, Denmark, Greece, Saudi Arabia |
 |Geography |_Local Region Geography, Future Local Region Geography_, or _Macro Region Geography_ |
 |Satellite Geography |If a customer subscribes to the Multi Geo service, then they can set policy at a user level to store customer data in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_ |
 |Microsoft Entra ID |Microsoft Entra ID is the new name for [Azure Active Directory](/entra/fundamentals/new-name) |
@@ -134,9 +134,11 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 | France | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
 | Germany | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
 | India | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Indonesia | M-A | M-A | M-A | M-A | A | A | A | A |
 | Israel | M-A | M-A | M-A | M-A | A | A | A | A |
 | Italy | M-A | M-A | M-A | M-A | A | A | A | A |
 | Japan | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Malaysia | M-A | M-A | M-A | M-A | A | A | A | A |
 | Mexico | M-A | M-A | M-A | M-A | A | A | A | A |
 | New Zealand | M-A | M-A | M-A | M-A | A | A | A | A |
 | Norway | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
@@ -171,11 +173,13 @@ The following Regional Geographies can store data at rest.
 |France   |Paris, Marseille   |
 |Germany   |Frankfurt, Berlin    |
 |India  |Chennai, Mumbai, Pune    |
+|Indonesia  |Jakarta    |
 |Israel  |Tel Aviv    |
 |Italy  |Milan    |
 |Japan   |Osaka, Tokyo   |
 |South Korea  |Busan, Seoul    |
 |Spain   |Madrid    |
+|Malaysia  |Kuala Lumpur    |
 |Mexico   |Queretaro    |
 |New Zealand    |Auckland   |
 |Norway   |Oslo, Stavanger    |

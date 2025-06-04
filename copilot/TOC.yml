@@ -63,6 +63,8 @@ items:
           href: microsoft-365-copilot-app-overview.md
         - name: Admin settings
           href: microsoft-365-copilot-app-admin-settings.md
+        - name: Set up Organizational Asset Library
+          href: enterprise-brand-manager.md
     - name: Pin Copilot Chat to the navigation bar
       href: pin-copilot.md
     - name: Copilot in Microsoft 365 admin centers
@@ -71,10 +73,14 @@ items:
       href: multiple-account-access.md  
     - name: Manage prompts
       items:
-      - name: Export prompts from Copilot Prompt Gallery
-        href: copilot-prompt-gallery-export-prompts.md
       - name: Scheduled prompts
         href: scheduled-prompts.md
+      - name: Microsoft 365 environment for scheduled prompts
+        href: scheduled-prompts-environment.md
+      - name: Export prompts from Copilot Prompt Gallery
+        href: copilot-prompt-gallery-export-prompts.md
+      - name: Inventory scheduled prompts
+        href: scheduled-prompts-inventory.md     
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
     - name: Overview of AI in Microsoft Teams

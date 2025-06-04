@@ -63,7 +63,7 @@ Update needed:
 
 3. Observe the estimated results in the 'Results' column.
 
-4. Modify the inputs in the 'Input' column if you wish to model a range of scenarios across input variables.
+4. Modify the inputs in the 'Input' column if you want to model a range of scenarios across input variables.
 
 ### Pricing calculator notes
 
