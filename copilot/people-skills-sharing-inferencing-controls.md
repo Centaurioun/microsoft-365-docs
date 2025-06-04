@@ -38,9 +38,9 @@ We offer three levels of controls to control skill visibility. Each of these con
 
 - **(Child control) Visibility of AI-generated skills:** AI-generated skills are skills based on AI inferencing that are relevant to a user’s role. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to allow them to share skills, even if the user’s profile is set to visible.
 
-- **(Child control) Visibility of imported skills:** User skills from third-party applications can be imported by your organization. Skills from these apps might need to be confirmed by users before they are shown in experiences as skills. A user might need to confirm these skills, similar to AI-generated skills. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to share skills, even if the user’s profile is set to visible.
+- **(Child control) Visibility of imported skills:** User skills from third-party applications can be imported by your organization. Skills from these apps might need to be confirmed by users before they're shown in experiences as skills. A user might need to confirm these skills, similar to AI-generated skills. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to share skills, even if the user’s profile is set to visible.
 
-The following sections will walk you through on how-to setup each of the controls in detail, and the expected functionality when they're enabled or disabled.
+The following sections will walk you through on how to set up each of the controls in detail, and the expected functionality when they're enabled or disabled.
 
 ## Manage skills data sharing with Viva Insights
 
@@ -50,7 +50,7 @@ You can stop skills data from being shared with **Viva Insights** by unchecking 
 
 ## Manage skills AI inferencing
 
-Select **Skill inferencing by AI** under **Settings** to see details about the AI inferencing settings.  People Skills provides access controls using [Feature Access Management](/viva/feature-access-management) to ensure you comply with user privacy and local regulations.
+Select **Skill inferencing by AI** under **Settings** to see details about the AI inferencing settings. People Skills provides access controls using [Feature Access Management](/viva/feature-access-management) to ensure you comply with user privacy and local regulations.
 
 When inferencing is enabled, users receive AI-generated skills relevant to their role. When skills AI inferencing is turned off, no AI computation is processed for that user. The user can still create a skill profile by manually searching to add skills from your taxonomy. They can also confirm any imported skills that an admin in your organization adds for them.
 

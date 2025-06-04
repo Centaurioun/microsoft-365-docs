@@ -33,7 +33,7 @@ Follow these steps to either import your custom skills library for the first tim
 
 4. Paste the file paths for both files into the **Skills library file path** and **Skill mapping file path** fields.
 
-5. Select **Next** to begin file validation. If there's a problem with the file, you will see an error message at this step.
+5. Select **Next** to begin file validation. If there's a problem with the file, you'll see an error message at this step.
 
 6. Review your custom skills data.
 

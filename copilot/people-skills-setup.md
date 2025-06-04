@@ -5,13 +5,13 @@ author: anibajaj
 ms.author: anirudhbajaj 
 manager: dansimp
 ms.service: microsoft-365-copilot
-ms.topic: how-to
+ms.topic: article
 ms.date: 05/29/2025
 ---
 
 # Set up People Skills
 
-This section walks you through setting up People Skills for the first time in your organization. After initial set up is complete, admins can edit their skill library or share settings using the steps in the [Manage your skills library](people-skills-manage-skills-library.md) page.
+This section walks you through setting up People Skills for the first time in your organization. After initial setup is complete, admins can edit their skill library or share settings using the steps in the [Manage your skills library](people-skills-manage-skills-library.md) page.
 
 ## Admin roles required for setup
 
@@ -34,7 +34,7 @@ Most organizations can quickly set up skills using our out-of-the-box People Ski
 
 3. Choose the skills you want to use from the out-of-the-box library. 
    > [!TIP]
-   > The more skills you include from the default library, the more specific AI-generated skills will be for users. All skills in the library, including all 16,000 skills are pre-selected by default.
+   > The more skills you include from the default library, the more specific AI-generated skills will be for users. All skills in the library, including all 16,000 skills are preselected by default.
 
     - If you want to remove skills from your library, you can select **View and edit People Skills**.
     - You may add or remove skills later after setting up People Skills. For more information, see [Manage your skills library](people-skills-manage-skills-library.md).
@@ -44,7 +44,7 @@ Most organizations can quickly set up skills using our out-of-the-box People Ski
 5. Select **Confirm** to finish quick setup.
 
 > [!NOTE]
-> People Skills initial AI-inferences should start showing up for users within 48 hours and may take up to 5 days to complete for all users in your tenant.
+> People Skills initial AI-inferences should start showing up for users within 48 hours and may take up to five days to complete for all users in your tenant.
 
 You can change the settings confirmed during this setup [by Managing your skills library](people-skills-manage-skills-library.md) in the settings page. Learn more about [sharing controls](people-skills-sharing-inferencing-controls.md) to manage which skills are shared across your organization.
 
@@ -59,13 +59,13 @@ Organizations can build their own custom skills library with a combination of sk
 
 3. To use a custom skills library, download the template files. Select **Download library template** and **Download mapping template**.
 
-    This step is optional if you are only using skills from the out-of-the-box People Skills library. You can skip this step by selecting **Next**.
+    This step is optional if you're only using skills from the out-of-the-box People Skills library. You can skip this step by selecting **Next**.
 
      :::image type="content" source="media/people-skills-inferencing/import-custom-setup-skills-library.png" alt-text="Screenshot displaying the imports options of the Download library template and the Download mapping template." lightbox="media/people-skills-inferencing/import-custom-setup-skills-library.png":::
 
 4. Fill out the templates as described in [Create the custom skills files](/viva/skills/skills-get-started) to create the library and mapping files. Then, get the paths to those completed files.
 
-   1. Paste the file paths for both files into the **Skills library file path**and **Skill mapping file path** fields. 
+   1. Paste the file paths for both files into the **Skills library file path and **Skill mapping file path** fields. 
    2. Select **Next** to begin file validation. 
    3. If there's a problem with the file, you see an error message at this step.
 
@@ -73,7 +73,7 @@ Organizations can build their own custom skills library with a combination of sk
 
    - The number of skills from the out-of-the-box library. 
     > [!NOTE]
-    > You can select which skills you want to include from our default library of 16,000 skills by clicking "Edit People Skills". You can also do this later after the initial setup, see [Manage your skills library](people-skills-manage-skills-library.md)
+    > You can select which skills you want to include from our default library of 16,000 skills by clicking "Edit People Skills." You can also do this later after the initial setup, see [Manage your skills library](people-skills-manage-skills-library.md)
    - The number of skills and number of roles/job titles from your custom import.
    - The number of duplicate skills identified in your selection. If you have duplicates, your organization's custom data is prioritized over data from the out-of-the-box library.
 
@@ -89,7 +89,7 @@ Organizations can build their own custom skills library with a combination of sk
 
 10. When you're ready, select **Done**.
 
-    Your skills library is created, and your settings are saved. Initial AI-inferences display to users within 48 hours for up to a maximum of 5 days. You can change the setting confirmed during this setup [by Managing your skills library](people-skills-manage-skills-library.md) in the settings page. 
+    Your skills library is created, and your settings are saved. Initial AI-inferences display to users within 48 hours for up to a maximum of five days. You can change the setting confirmed during this setup [by Managing your skills library](people-skills-manage-skills-library.md) in the settings page. 
 
 Learn more about [sharing controls](people-skills-sharing-inferencing-controls.md) to manage which skills are shared across your organization.
 
@@ -119,7 +119,7 @@ To create your custom skills files:
 
    - *Skill ID*: SN0001
    - *Skill Name*: Customer Insights
-   - *Skill Description*:The ability to understand customer needs and validate that their needs are being met.
+   - *Skill Description*: The ability to understand customer needs and validate that their needs are being met.
    - *Restricted Skill*: Yes
 
    [Learn more about restricted skills](people-skills-manage-ai-restricted-skills.md).

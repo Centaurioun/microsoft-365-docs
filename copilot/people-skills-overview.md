@@ -21,7 +21,7 @@ People Skills:
 - Equips leaders with critical workforce skill insights to prepare and accelerate their AI transformation.
 - Empowers employees with personalized skill profiles and experiences to help them connect with others and discover opportunities.
 
-For more informatin, see [how skills AI inferencing works](people-skills-ai-inferencing.md).
+For more information, see [how skills AI inferencing works](people-skills-ai-inferencing.md).
 
 ## Licensing
 
@@ -31,7 +31,7 @@ People Skills comes with your Microsoft 365 Copilot or Viva licenses and doesn't
 
 - **People Skills - Advanced service plan**: Customers with the "People Skills – Advanced" service plan (including Microsoft Viva Suite, Viva Insights, Workplace Analytics and Feedback customers, and Viva Learning customers) can access the People Skills service with AI inferencing, excluding Microsoft 365 Copilot capabilities.
 
-- **Microsoft 365 Copilot in Productivity Aapps service plan**: Customers with the "Microsoft 365 Copilot in Productivity Apps service plan" can use People Skills, including AI-inferencing and related Copilot experiences, excluding education and government licenses.
+- **Microsoft 365 Copilot in Productivity Apps service plan**: Customers with the "Microsoft 365 Copilot in Productivity Apps service plan" can use People Skills, including AI-inferencing and related Copilot experiences, excluding education and government licenses.
 
 For a detailed list of People Skills experiences and their corresponding license requirements, see the following section.
 
@@ -67,5 +67,5 @@ When you deploy People Skills, skills from these other sources continue to be ac
 
 We'll update this article with more information on handing your requirements for existing dependencies.
 
-If you have an existing dependency on UPA skills or other solutions for ingesting skills into Microsoft 365 experiences, [please let us know using this form](https://go.microsoft.com/fwlink/?linkid=2320998). We'll follow up with you to understand your requirements and discuss options.
+If you have an existing dependency on UPA skills or other solutions for ingesting skills into Microsoft 365 experiences, [let us know using this form](https://go.microsoft.com/fwlink/?linkid=2320998). We'll follow up with you to understand your requirements and discuss options.
 

@@ -15,7 +15,7 @@ After completing the [initial setup](people-skills-setup.md), you can return to 
 
 You can find People Skills setup page by visiting the Copilot page in the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/featureexplorer) and selecting **People Skills in Microsoft 365 Copilot**. Alternatively, you can find People Skills page under **Settings** > **Viva** > **Data Management**.
 
-If you are looking for how to setup People Skills for the first time, see [Set up People Skills](people-skills-setup.md). 
+If you're looking for how to set up People Skills for the first time, see [Set up People Skills](people-skills-setup.md). 
 
 ## Options to manage your skills library
 
