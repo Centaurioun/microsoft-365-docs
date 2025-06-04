@@ -127,8 +127,8 @@ To create your custom skills files:
 
 4. Get the file paths for your .csv files.
 
-    1. Select the file, and then select the ellipsis (**...**).
-    1. Select **Details**, and then scroll to find the *Path*.
+    1. Select the file, and then select the ellipsis (...).
+    1. Select **Details**, and then scroll to find the Path.
     1. Select the option to copy the selected file's path to the Clipboard. The file path should be formatted like this: `https://contoso.sharepoint.com/TeamAdmin/Shared%20Documents/Skills_Library.csv`.
 
 ### Create role to skill mapping file (Optional)
@@ -137,7 +137,7 @@ Admins can upload a file to map your custom skills to specific roles or jobs in 
 
 Before you get started, review the following information:
 
-- Skill ID (externalCode) in the library file must map to **Skill ID (SkillExternalCode)**in the role to skill mapping file.
+- Skill ID (externalCode) in the library file must map to *Skill ID (SkillExternalCode)* in the role to skill mapping file.
 - Certain characters can't be used as a prefix in any imported field, such as '+', '-', '@', '=', '\t', '\r'.
 - Save your template files as .csv files (comma separated), with no spaces in the file name.
 - Use comma as the delimiter. Your system might default to a different separator. In European countries, for example, it's often set to a semicolon.
@@ -160,6 +160,6 @@ To create your role to skill mapping file:
 3. Save the templates as .csv files in a secure SharePoint location.
 
 4. Get the file paths for your .csv files.
-   1. Select the file, and then select the ellipsis (**...**).
-   2. Select **Details**, and then scroll to find the *Path*.
+   1. Select the file, and then select the ellipsis (...).
+   2. Select **Details**, and then scroll to find the Path.
    3. Select the option to copy the selected file's path to the Clipboard. The file path should be formatted like this `https://contoso.sharepoint.com/TeamAdmin/Shared%20Documents/Skill_Mapping.csv`.

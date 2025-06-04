@@ -44,9 +44,9 @@ The following sections will walk you through on how to set up each of the contro
 
 ## Manage skills data sharing with Viva Insights
 
-When checked, skills data is passed on to **Viva Insights**. Skills in **Viva Insights** allows organizations and leaders to discover skills within their workforce and assess skill distribution across groups. Learn more about People Skills in **Viva Insights**.
+When checked, skills data is passed on to Viva Insights. Skills in Viva Insights allows organizations and leaders to discover skills within their workforce and assess skill distribution across groups. Learn more about [People Skills in Viva Insights](/viva/insights/advanced/analyst/templates/skills-landscape).
 
-You can stop skills data from being shared with **Viva Insights** by unchecking this setting.
+You can stop skills data from being shared with Viva Insights by unchecking this setting.
 
 ## Manage skills AI inferencing
 
