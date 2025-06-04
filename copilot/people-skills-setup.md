@@ -28,7 +28,7 @@ Most organizations can quickly set up skills using our out-of-the-box People Ski
 
 1. Go to the Copilot page in the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/featureexplorer) and select **People Skills in Microsoft 365 Copilot**. Alternatively, you can find People Skills page under **Settings** > **Viva** > **Data Management**.
 
-   :::image type="content" source="media/people-skills-inferencing/quick-setup-with-out-of-the-box-library.png" alt-text="Screenshot displaying the People Skills in Microsoft 365 Copilot option in the Copilot page.":::
+   :::image type="content" source="media/people-skills-inferencing/quick-setup-with-out-of-the-box-library.png" alt-text="Screenshot displaying the People Skills in Microsoft 365 Copilot option in the Copilot page." lightbox="media/people-skills-inferencing/quick-setup-with-out-of-the-box-library.png":::
 
 2. Select **Being quick setup**.
 
@@ -55,13 +55,13 @@ Organizations can build their own custom skills library with a combination of sk
 1. Got to the Copilot page in the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/featureexplorer) and select **People Skills in Microsoft 365 Copilot**. Alternatively, you can find People Skills page under **Settings** > **Viva** > **Data Management**.
 
 2. Under **Custom Setup**, select **Begin custom setup**. 
-   :::image type="content" source="media/people-skills-inferencing/custom-setup-selection.png" alt-text="Screenshot of the People Skills in organization page that displays selection of custom setup.":::
+   :::image type="content" source="media/people-skills-inferencing/custom-setup-selection.png" alt-text="Screenshot of the People Skills in organization page that displays selection of custom setup." lightbox="media/people-skills-inferencing/custom-setup-selection.png":::
 
 3. To use a custom skills library, download the template files. Select **Download library template** and **Download mapping template**.
 
     This step is optional if you are only using skills from the out-of-the-box People Skills library. You can skip this step by selecting **Next**.
 
-     :::image type="content" source="media/people-skills-inferencing/import-custom-setup-skills-library.png" alt-text="Screenshot displaying the imports options of Download library template and Download mapping template.":::
+     :::image type="content" source="media/people-skills-inferencing/import-custom-setup-skills-library.png" alt-text="Screenshot displaying the imports options of the Download library template and the Download mapping template." lightbox="media/people-skills-inferencing/import-custom-setup-skills-library.png":::
 
 4. Fill out the templates as described in [Create the custom skills files](/viva/skills/skills-get-started) to create the library and mapping files. Then, get the paths to those completed files.
 
@@ -77,7 +77,7 @@ Organizations can build their own custom skills library with a combination of sk
    - The number of skills and number of roles/job titles from your custom import.
    - The number of duplicate skills identified in your selection. If you have duplicates, your organization's custom data is prioritized over data from the out-of-the-box library.
 
-     :::image type="content" source="media/people-skills-inferencing/review-and-confirm-setup-details.png" alt-text="Screenshot displaying the review and confirm details before completing the setup of People Skills.":::
+     :::image type="content" source="media/people-skills-inferencing/review-and-confirm-setup-details.png" alt-text="Screenshot displaying the review and confirm details before completing the setup of People Skills." lightbox="media/people-skills-inferencing/review-and-confirm-setup-details.png":::
 
 6. Select **Turn on People Skills in Viva Insights**, if it's available for your tenant. Skills in Viva Insights allows organizations and leaders to discover skills within their workforce and assess skill distribution across groups. Learn more about the [skills landscape report in Viva Insights](/viva/insights/advanced/introduction-to-advanced-insights).
 

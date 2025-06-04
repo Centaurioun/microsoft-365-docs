@@ -23,9 +23,9 @@ To mark skills in the default library as AI-restricted, follow these steps:
 
 3. On the window pop-up, select **Add AI restricted tag**.
 
-    :::image type="content" source="media/people-skills-inferencing/ai-restricted-tag-selection.png" alt-text="Screenshot of the People Skills library displaying the selection of AI restricted tag.":::
+    :::image type="content" source="media/people-skills-inferencing/ai-restricted-tag-selection.png" alt-text="Screenshot of the People Skills library displaying the selection of AI restricted tag." lightbox="media/people-skills-inferencing/ai-restricted-tag-selection.png":::
 
-     - To view all skills tagged as AI restricted in your skills library, you can use the **AI restricted filter**.
-     :::image type="content" source="media/people-skills-inferencing/all-ai-restricted-skills.png" alt-text="Screenshot displaying all AI restricted tags and filter options.":::
-     - To remove a skill as AI-restricted, select the skill and select the **Remove AI-restricted tag**.
-     :::image type="content" source="media/people-skills-inferencing/remove-ai-restricted-skills.png" alt-text="Screenshot displying how to remove AI restricted tag from the pane.":::
+    - To view all skills tagged as AI restricted in your skills library, you can use the **AI restricted** filter.
+     :::image type="content" source="media/people-skills-inferencing/all-ai-restricted-skills.png" alt-text="Screenshot displaying all AI restricted tags and filter options." lightbox="media/people-skills-inferencing/all-ai-restricted-skills.png":::
+    - To remove a skill as AI-restricted, select the skill and select the **Remove AI-restricted tag**.
+     :::image type="content" source="media/people-skills-inferencing/remove-ai-restricted-skills.png" alt-text="Screenshot displaying how to remove AI restricted tag from the pane." lightbox="media/people-skills-inferencing/remove-ai-restricted-skills.png":::

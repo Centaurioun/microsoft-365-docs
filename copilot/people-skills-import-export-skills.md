@@ -21,7 +21,7 @@ User skills from external systems can be imported as an attribute while uploadin
 
 Review the below guideline on how you can use the tool to import user skills:
 
-1. Open the [Organization data ingestion tool ](/viva/import-orgdata)in the admin center and download the .csv template. In the admin center, click **Setup** > **Migration and imports**.
+1. Open the [Organization data ingestion tool](/viva/import-orgdata) in the admin center and download the .csv template. In the admin center, click **Setup** > **Migration and imports**.
 
 2. In the organization data ingestion tool template, list all the users for whom you need skills to be imported, and list each user's skills under the attribute **Microsoft_UserSkillNames**. For more information, see [organization data field in the template](/viva/orgdata-attributes).
 
