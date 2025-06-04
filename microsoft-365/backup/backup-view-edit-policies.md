@@ -26,6 +26,13 @@ A policy contains details of what data (SharePoint sites, Exchange mailboxes, an
 
 You can create more than one backup policy for each product (SharePoint, Exchange, and OneDrive) with a limit of 100 policies per product. This allows you to segregate your data by logical partitions such as department, geography, and so on for ease of management and administration. Note that any SharePoint site, Exchange mailbox, or OneDrive account can be part of one backup policy only.
 
+> [!NOTE]
+> You can also use PowerShell cmdlets to perform these operations by following the steps below:
+> 1. Go to the [Microsoft 365 Backup Storage Graph APIs](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-post-exchangeprotectionpolicies?view=graph-rest-1.0&tabs=powershell) documentation for the specific action you want to perform—for example, creating a SharePoint policy.
+> 2. Scroll to the "Example Request" section and select the "PowerShell" tab.
+> 3. Install the Microsoft.Graph.BackupRestore module as shown in the example.
+> 4. Run the provided PowerShell command in an Admin PowerShell session to execute the desired action.
+
 Select the **SharePoint**, **Exchange**, or **OneDrive** tab for steps to create a backup policy for that product.
 
 # [SharePoint](#tab/sharepoint)
