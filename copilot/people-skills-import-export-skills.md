@@ -1,6 +1,6 @@
 ---
 title: Import or export People Skills
-description: You can import skills for a user from third-party platforms and export a user's confirmed skills using the Graph API.
+description: You can import skills for a user from third-party platforms and export a user's confirmed skills using the Microsoft Graph API.
 author: anibajaj 
 ms.author:   anirudhbajaj
 manager: dansimp
@@ -31,7 +31,7 @@ Review the below guideline on how you can use the tool to import user skills:
 
 ## Export user skills
 
-Admins can export a user's confirmed skills by using the Profile endpoint in the Microsoft Graph API. For more information, see [List skills](/graph/api/profile-list-skills?view=graph-rest-beta&tabs=http&preserve-view=true) about the skills endpoint and specific GET requests to access this data from the Graph API.
+Admins can export a user's confirmed skills by using the Profile endpoint in the Microsoft Graph API. For more information, see [List skills](/graph/api/profile-list-skills?view=graph-rest-beta&tabs=http&preserve-view=true) about the skills endpoint and specific GET requests to access this data from the Microsoft Graph API.
 
 > [!NOTE]
 > Only a user's confirmed skills can be exported. AI-generated skills can't be exported.
