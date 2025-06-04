@@ -1,5 +1,5 @@
 ---
-title: Overview of Copilot Pages and Loop workspaces storage and permissions
+title: Overview of Copilot Pages, Copilot Notebooks, and Loop workspaces storage and permissions
 ms.author: jenz
 author: jenzamora
 manager: jtremper
@@ -7,14 +7,14 @@ audience: Admin
 ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
-ms.date: 05/14/2025
+ms.date: 06/03/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
 - M365-collaboration
 - essentials-compliance
 - magic-ai-copilot
-description: Learn about Copilot Pages and Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
+description: Learn about Copilot Pages, Copilot Notebooks, and Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
 ms.custom: 
@@ -36,6 +36,7 @@ Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/share
 |Copilot Notebooks|✔️in user-owned container|||user account|
 |Loop app, My workspace|✔️in user-owned container|||user account|
 |Loop app, shared workspace|✔️in shared container|||workspace owners|
+|Teams [channel workspace](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/collaborate-in-real-time-with-workspaces-in-teams/4414334)|✔️in shared container|||M365 Group|
 |Teams channel meeting||✔️in 📁`Meetings`||M365 Group|
 |Teams channel||✔️in Channel folder||M365 Group|
 |Teams private chat|||✔️in 📁`Microsoft Teams Chat files`|user account|
