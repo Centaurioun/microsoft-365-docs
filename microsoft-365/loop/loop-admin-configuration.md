@@ -90,6 +90,7 @@ Configure the creation of content in these locations by using the appropriate po
 |Copilot Notebooks|Cloud Policy: **Create and view Copilot Pages and Copilot Notebooks**|SharePoint Embedded: ✔️in user-owned container|
 |Loop app, My workspace|Cloud Policy: **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in user-owned container|
 |Loop app, shared workspace|Cloud Policy: **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in shared container|
+|[Teams channel, shared workspace](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/collaborate-in-real-time-with-workspaces-in-teams/4414334)|Cloud Policy:  **Create Loop workspaces in Loop**|SharePoint Embedded: ✔️in shared container|
 |Teams channel meeting (Teams Classic Calendar)|SharePoint property `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`|SharePoint Site: 📁`Meetings`|
 |Teams channel meeting ([Teams New Calendar](https://support.microsoft.com/en-us/office/get-started-with-the-new-calendar-in-microsoft-teams-98f3b637-5da2-43e2-91b3-f312ab3e4dc5))|Cloud Policy: **Create and view Loop files in Microsoft apps that support Loop** -or- **Create and view Loop files in Outlook**|SharePoint Site: 📁`Meetings`|
 |Teams channel|SharePoint property `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`|SharePoint Site: ✔️in Channel folder|
