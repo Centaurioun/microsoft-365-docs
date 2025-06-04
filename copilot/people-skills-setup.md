@@ -76,7 +76,7 @@ Organizations can build their own custom skills library with a combination of sk
 
 (This step is optional if you are only using skills from the out-of-the-box People Skills library. Select __Next__ to skip this step.)
 
-TBD-A screenshot of a computerAI-generated content may be incorrect.
+TBD-Screenshot
 
 4.      Fill out the templates as described in [Create the custom skills files](/viva/skills/skills-get-started) to create the library and mapping files and then get the paths to those completed files.
 
@@ -98,7 +98,7 @@ TBD-A screenshot of a computerAI-generated content may be incorrect.
 
 - The number of duplicate skills identified in your selection. If you have duplicates, your organization's custom data is prioritized over data from the out-of-the-box library.
 
-TBD-A screenshot of a computerAI-generated content may be incorrect.
+TBD-Screenshot
 
 6.        Select __Turn on People Skills in Viva Insights__, if it's available for your tenant. Skills in Viva Insights allows organizations and leaders to discover skills within their workforce and assess skill distribution across groups. Learn more about the [skills landscape report in Viva Insights](/viva/insights/advanced/introduction-to-advanced-insights). 
 
