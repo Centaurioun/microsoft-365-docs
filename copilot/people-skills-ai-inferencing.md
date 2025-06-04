@@ -20,11 +20,11 @@ The People Skills inference engine uses Microsoft 365 profile and activity signa
 
 We use various data sources to infer skills accurately. The following are representative sources and may change as the model evolves:
 
--  __[Microsoft Graph](/graph/overview) and AI Graph__: Includes data from user profiles, job titles, collaboration signals, and documents; and key phrases from emails, meetings, and documents.
+- [Microsoft Graph](/graph/overview) and AI Graph: Includes data from user profiles, job titles, collaboration signals, and documents; and key phrases from emails, meetings, and documents.
 
--  __[Microsoft Skills Graph](https://engineering.linkedin.com/blog/2022/building-linkedin-s-skills-graph-to-power-a-skills-first-world)__: Provides a base skills taxonomy and semantic descriptions for skills.
+- [Microsoft Skills Graph](https://engineering.linkedin.com/blog/2022/building-linkedin-s-skills-graph-to-power-a-skills-first-world): Provides a base skills taxonomy and semantic descriptions for skills.
 
-- __M365 User Profiles__: Offers information on job titles and top contacts.
+- Microsoft 365 User Profiles: Offers information on job titles and top contacts.
 
 The inference engine uses advanced OpenAI LLM models and a proprietary inferencing approach with relevant Microsoft Graph data. The skill inferencing engine associates users with a representative set of skill names based on the above-referenced sources available to People Skills to keep user skill profiles fresh and relevant. They aren't intended to be a comprehensive reflection of a person’s capabilities.
 

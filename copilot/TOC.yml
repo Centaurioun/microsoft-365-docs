@@ -91,12 +91,12 @@ items:
               href: people-skills-ai-inferencing.md
             - name: Setup People Skills
               href: people-skills-setup.md
-      - name: Microsoft 365 environment for scheduled prompts
-        href: scheduled-prompts-environment.md
-      - name: Export prompts from Copilot Prompt Gallery
-        href: copilot-prompt-gallery-export-prompts.md
-      - name: Inventory scheduled prompts
-        href: scheduled-prompts-inventory.md     
+    - name: Microsoft 365 environment for scheduled prompts
+      href: scheduled-prompts-environment.md
+    - name: Export prompts from Copilot Prompt Gallery
+      href: copilot-prompt-gallery-export-prompts.md
+    - name: Inventory scheduled prompts
+      href: scheduled-prompts-inventory.md     
 
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
