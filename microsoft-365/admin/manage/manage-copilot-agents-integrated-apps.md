@@ -109,15 +109,15 @@ You can enable or disable Copilot extensibility for your organization by using a
 
 To do this, follow these steps:
 
-1. Go to **Integrated apps** in the Microsoft 365 admin center.
-1. Select **Available apps**, and then the settings icon.
-1. Find **Allow the following users access to Copilot agents** and choose your preferred setting.
+1. Go to **Copilot** > **Settings** in the Microsoft 365 admin center.
+1. Select **Agents**.
+1. Choose your preferred setting.
 
 The setting has three options:
 
-- **All Users** This is the default option and it means that all users in the organization can access agents, subject to the existing app policies and user assignments.
-- **No Users** This option means that no users in the organization can access agents, and the external agents are disabled in the agents flyout. This option also hides agents from the list of Available and Deployed apps on the Integrated apps page.
-- **Specific Users** This option lets you select specific users or groups in your organization to have access to agents. So while all or specific users in your organization might have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use agents.
+- **All users** This is the default option and it means that all users in the organization can access agents, subject to the existing app policies and user assignments.
+- **No users** This option means that no users in the organization can access agents, and the external agents are disabled in the agents flyout. This option also hides agents from the list of Available and Deployed apps on the Integrated apps page.
+- **Specific users/groups** This option lets you select specific users or groups in your organization to have access to agents. So while all or specific users in your organization might have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use agents.
 
 > [!NOTE]
 > Once extensibility is disabled, the Microsoft pinned Visual Creator agent and entry point for Agent Builder will no longer be visible in Copilot Chat. Once extensibility is disabled in the tenant, it can take up to 24 hours for agents to disappear for users and for Agent Builder and Visual Creator to disappear.
