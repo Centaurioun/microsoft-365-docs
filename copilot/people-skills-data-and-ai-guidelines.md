@@ -16,7 +16,7 @@ ms.service: microsoft-365-copilot
 
 ## User data privacy controls 
 
-Please [review the data privacy controls we offer for admins](https://) to control default AI inferencing and skill visibility settings for their tenant or groups of users.  
+Please [review the data privacy controls we offer for admins](people-skills-data-and-ai-guidelines.md) to control default AI inferencing and skill visibility settings for their tenant or groups of users.  
 
 Users are also able to opt-out of AI inferencing or skill sharing on their profile. [Read more](https://support.microsoft.com/en-us/office/manage-ai-and-sharing-options-90c09758-c877-4940-bc2c-f7e4caea6ae4)
 

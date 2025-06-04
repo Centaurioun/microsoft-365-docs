@@ -20,19 +20,19 @@ After completing the initial setup, you can return to the People Skills page in 
 
 - In the Copilot page in the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/featureexplorer), select **People Skills in Microsoft 365 Copilot** 
 
-- OR you can also find People Skills under __Settings__, then __Viva__, under the **Data Management** tab
+- OR you can also find People Skills under _Settings_, then _Viva_, under the **Data Management** tab
 
-If you are looking for how to setup People Skills for the first time, please see [Set up People Skills](https://). 
+If you are looking for how to setup People Skills for the first time, see [Set up People Skills](people-skills-setup.md). 
 
 You can manage your skills library in the following ways:
 
-- [Manage out-of-the-box library: ](https://)Add and delete skills from a previously selected list of skills from the out-of-the-box library*
+- [Manage out-of-the-box library:](people-skills-manage-skills-library.md) Add and delete skills from a previously selected list of skills from the out-of-the-box library*
 
-- [Manage custom skills:](https://) Add custom skills if you haven’t previously added them during the initial setup. You can also reimport custom skills, add new ones, or delete custom skills
+- [Manage custom skills:](people-skills-manage-custom-skill.md) Add custom skills if you haven’t previously added them during the initial setup. You can also reimport custom skills, add new ones, or delete custom skills
 
-- [Manage AI-restricted skills:](https://) Mark certain skills as sensitive to restrict them from being returned by skills AI inferencing
+- [Manage AI-restricted skills:](people-skills-manage-custom-skill.md) Mark certain skills as sensitive to restrict them from being returned by skills AI inferencing
 
-- [Manage skills import or export:](https://)
+- [Manage skills import or export:](people-skills-import-export-skills.md)
 
   - Import user skills from third-party platforms
     
@@ -51,19 +51,19 @@ View, add, or delete the skills you selected from the out-of-the-box library. Th
 
  
 
-Navigate to the People Skills setup page and select __Skills__ to manage your skills library.
+Navigate to the People Skills setup page and select _Skills_ to manage your skills library.
 
-1.      Under __Skills,__ select __People Skills Library__.
+1.      Under _Skills,_ select _People Skills Library_.
 
 2.      Review the list. You can filter by domain and search by skill name.
 
-3.      To add skills, select __Add Skills__. Select the skills you want to add. You can filter by domain and search by skill name. Select __Add__.
+3.      To add skills, select _Add Skills_. Select the skills you want to add. You can filter by domain and search by skill name. Select _Add_.
 
-4.      To delete skills, select the skills you want to delete. You can filter by domain and search by skill name. Select __Delete skills__. Select __Delete__ again to confirm you want to delete the selected skills.
+4.      To delete skills, select the skills you want to delete. You can filter by domain and search by skill name. Select _Delete skills_. Select _Delete_ again to confirm you want to delete the selected skills.
 
 Deleting skills removes the skills and associated skills data from your organization and from your users' experience.
 
-5.      Select __Done__.
+5.      Select _Done_.
 
  
 

@@ -20,7 +20,7 @@ People Skills provides access controls using <u>Feature Access Management</u>.
 
 ## Overview of controls offered
 
-Navigate to the People Skills setup page and select __Settings__ to view your skills sharing and privacy settings. 
+Navigate to the People Skills setup page and select _Settings_ to view your skills sharing and privacy settings. 
 
 These access controls can be created before, during or after People Skills setup. 
 
@@ -58,11 +58,11 @@ Options available:
 
 We offer three levels of controls to control skill visibility. Each of these controls can be enabled or disabled using their own access policy.   
 
-- __(Parent control) Visibility of entire skills profile:__ An individual's skills profile consists of AI-generated skills, user-confirmed skills, and imported skills (if applicable). If sharing is disabled, all user skills are private and not shared in any user, leader, or organizational analyst experiences.
+- _(Parent control) Visibility of entire skills profile:_ An individual's skills profile consists of AI-generated skills, user-confirmed skills, and imported skills (if applicable). If sharing is disabled, all user skills are private and not shared in any user, leader, or organizational analyst experiences.
 
-- __(Child control) Visibility of AI-generated skills:__ AI-generated skills are skills based on AI inferencing that are relevant to a user’s role. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to allow them to share skills, even if the user’s profile is set to visible.
+- _(Child control) Visibility of AI-generated skills:_ AI-generated skills are skills based on AI inferencing that are relevant to a user’s role. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to allow them to share skills, even if the user’s profile is set to visible.
 
-- __(Child control)__ __Visibility of imported skills:__ User skills from third-party applications can be imported by your organization. Skills from these apps might need to be confirmed by users before they are shown in experiences as skills. A user might need to confirm these skills, similar to AI-generated skills. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to share skills, even if the user’s profile is set to visible.
+- _(Child control)_ _Visibility of imported skills:_ User skills from third-party applications can be imported by your organization. Skills from these apps might need to be confirmed by users before they are shown in experiences as skills. A user might need to confirm these skills, similar to AI-generated skills. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to share skills, even if the user’s profile is set to visible.
 
 The following sections walk-through how-to setup each of the controls in detail, and expected functionality when they're enabled or disabled.
 
@@ -72,22 +72,16 @@ When checked, skills data is passed on to **Viva Insights**. Skills in **Viva In
 
 You can stop skills data from being shared with **Viva Insights** by unchecking this setting.
 
- 
-
-
-
- 
-
 ## Manage skills AI inferencing
 
-Select __Skill inferencing by AI__ under __Settings__ to see details about the AI inferencing settings.
+Select _Skill inferencing by AI_ under _Settings_ to see details about the AI inferencing settings.
 
 When inferencing is enabled, users receive AI-generated skills relevant to their role. When skills AI inferencing is turned off, no AI computation is processed for that user. The user can still create a skill profile by manually searching to add skills from your taxonomy. They can also confirm any imported skills that an admin in your organization adds for them.
 
 Create an access control policy if you need to disable skills AI inferencing for specific users, groups, or your entire tenant, For more information, see [control access to features in Viva](/viva/feature-access-management).
 
 > [!NOTE]
-> __You can only create policies for People Skills using PowerShell at this time.  You can’t create or manage policies through the interface in Microsoft 365 admin center__
+> You can only create policies for People Skills using PowerShell at this time.  You can’t create or manage policies through the interface in Microsoft 365 admin center.
 
 #### Details required to create access policy in Feature Access Management 
 
@@ -97,11 +91,11 @@ FeatureId: SkillsInferencing
 
 Use the following options when creating an access control policy to manage Skills AI inferencing:
 
-- __Enable skills inferencing (Default):__ When inferencing is enabled, users receive an AI-generated skill profile relevant to their role. Users have the option to turn off skills AI inferencing for themselves in the __Microsoft 365__ __profile editor__, on the __Data and privacy tab__.
+- _Enable skills inferencing (Default):_ When inferencing is enabled, users receive an AI-generated skill profile relevant to their role. Users have the option to turn off skills AI inferencing for themselves in the _Microsoft 365_ _profile editor_, on the _Data and privacy tab_.
 
  
 
-- __Keep skills inferencing enabled but default off:__  Skills inferencing is available in your tenant, but users in this access policy will be “opted-out” and won't receive AI-generated skills. Users have the option to turn it on for themselves in the __Microsoft 365__ __profile editor__, on the __Data and privacy tab__.
+- _Keep skills inferencing enabled but default off:_  Skills inferencing is available in your tenant, but users in this access policy will be “opted-out” and won't receive AI-generated skills. Users have the option to turn it on for themselves in the _Microsoft 365_ _profile editor_, on the _Data and privacy tab_.
 
 Admins can use the following settings in PowerShell to create this policy: 
 
@@ -112,7 +106,7 @@ Admins can use the following settings in PowerShell to create this policy: 
 
  
 
--  __Completely Disable skills inferencing:__ Skills inferencing is disabled for your tenant and users can't opt in to receiving AI-generated skills. Use the following settings in PowerShell to create this policy:
+-  _Completely Disable skills inferencing:_ Skills inferencing is disabled for your tenant and users can't opt in to receiving AI-generated skills. Use the following settings in PowerShell to create this policy:
 
 
 ```powershell
@@ -179,7 +173,7 @@ FeatureId: ShowAISkills
 
 You'll have the following options while creating an access control policy:
 
--  **Enable sharing of AI-generated skills (Default):** When visibility is enabled, AI-generated skills are shared in skills-driven experiences for users, leaders, and analysts in your organization. Note: These skills can only be shared if parent control (Skills Profile visibility) is also enabled/shared. Users can also manage how they can share AI-generated skills for themselves in the Microsoft 365 __profile editor__ on the __Data and privacy tab__.
+-  **Enable sharing of AI-generated skills (Default):** When visibility is enabled, AI-generated skills are shared in skills-driven experiences for users, leaders, and analysts in your organization. Note: These skills can only be shared if parent control (Skills Profile visibility) is also enabled/shared. Users can also manage how they can share AI-generated skills for themselves in the Microsoft 365 _profile editor_ on the _Data and privacy tab_.
 
  
 

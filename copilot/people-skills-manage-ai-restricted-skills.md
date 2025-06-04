@@ -16,18 +16,18 @@ AI restricted skills won't be suggested to users in your tenant. Our inference e
 
 To mark skills as AI restricted, refer to the below steps:
 
-1. To mark skills in the default library as AI-restricted, under __Skills,__ select __People Skills Library__.
+1. To mark skills in the default library as AI-restricted, under _Skills,_ select _People Skills Library_.
 
 1.  Select one or more skills that need to be tagged as AI-restricted using the check box
 
-1. On the window pop-up, select __Add AI restricted__ tag
+1. On the window pop-up, select _Add AI restricted_ tag
 
 TBD-SCREENSHOT
 
-To view all skills tagged as AI restricted in your skills library, you can use the __AI restricted__ filter.
+To view all skills tagged as AI restricted in your skills library, you can use the _AI restricted_ filter.
 
 TBD-SCREENSHOT
 
-To remove a skill as AI-restricted, select the skill and select the __Remove AI-restricted tag__ from the window popup
+To remove a skill as AI-restricted, select the skill and select the _Remove AI-restricted tag_ from the window popup
 
  TBD-SCREENSHOT
