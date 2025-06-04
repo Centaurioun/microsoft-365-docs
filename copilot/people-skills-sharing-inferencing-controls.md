@@ -177,4 +177,4 @@ You have the following options for creating an access control policy in PowerShe
   
    For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *ShowOrgAddedSkills*.
 
-For more information on how to create and manage policies, see [control access to features](../feature-access-management.md).  
+For more information on how to create and manage policies, see [control access to features](/viva/feature-access-management).  

@@ -3,6 +3,7 @@ title: Manage AI-restricted skills
 description: Learn about the type of skills that admins can note as AI-restricted.
 author: anibajaj 
 ms.author:   anirudhbajaj
+manager: dansimp
 ms.service: microsoft-365-copilot
 ms.topic: article
 ms.date: 05/29/2025
