@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires, kkameth
-ms.date: 03/04/2025
+ms.date: 06/04/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -25,6 +25,9 @@ description: Learn about pay-as-you-go services and pricing for Microsoft Syntex
 When you use pay-as-you-go services, you're billed using Syntex meters in the Azure subscription that you specified when you [set up Microsoft Syntex](syntex-azure-billing.md#connect-syntex-to-an-azure-subscription-for-billing).
 
 To help your organization in planning for pay-as-you-go services, you can use the [SharePoint cost calculator](https://aka.ms/SharePoint/PAYG-Calculator). This tool gives you a better understanding of your organization’s usage patterns and estimated costs so you can make more informed decisions.
+
+> [!NOTE]
+> While these services leverage an Azure subscription for billing purposes, they do not apply to the [Microsoft Azure Consumption Commitment (MACC)](/marketplace/azure-consumption-commitment-benefit) that your organization might have.
 
 The following tables describe each meter, its pricing, and how it measures usage. When you connect your Azure subscription to Microsoft Syntex, users in your organization are able to take advantage of Syntex services right away. Your tenant is billed according to the details shown in this article.
 
