@@ -239,7 +239,6 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 > After a multi-geo move, a OneDrive account and SharePoint site will only be able to restore to the weekly restore points until an enhancement is deployed (enhancement coming soon).
 
 ## Considerations when using restore
-
 - OneDrive and Sharepoint
 
     - Site search is case-sensitive and is a prefix-type search.
@@ -273,7 +272,7 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
     - If the parent folder of an item has been deleted, the item will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
  
 - All
-
+    - Restore session history is retained for 366 days.
     - Abusive restore actions aren't permitted. You should limit restores for testing purposes to no more than twice a month per protection unit. Restores for real recovery purposes aren't limited.
 
     - The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points start being generated when you create the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10 minutes for the entire year. For OneDrive and SharePoint, the available restore points are available for 10 minutes for up to 2 weeks prior, and weekly for 2 to 52 weeks prior. Based on the defined and currently invariable backup frequency setting previously described, the following example highlights what is possible.
