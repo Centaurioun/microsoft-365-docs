@@ -29,7 +29,7 @@ Review the below guideline on how you can use the tool to import user skills:
 
 4. Import the user skills data into Microsoft 365 using the .csv upload.
 
-### Export user skills
+## Export user skills
 
 Admins can export a user's confirmed skills by using the Profile endpoint in the Microsoft Graph API. For more information, see [List skills](/graph/api/profile-list-skills?view=graph-rest-beta&tabs=http&preserve-view=true) about the skills endpoint and specific GET requests to access this data from the Graph API.
 

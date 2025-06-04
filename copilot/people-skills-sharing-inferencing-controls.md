@@ -61,9 +61,9 @@ Create an access control policy if you need to disable skill suggestions for spe
 
 You have the following options for creating an access control policy in PowerShell to manage skills inferencing:  
 
-- **Enable skills inferencing (Default):** When inferencing is enabled, users receive skill suggestions relevant to their role. Users have the option to turn it off for themselves in **Microsoft 365 profile editor**, on the **Data and privacy** tab.
+- **Enable skills inferencing (Default):** When inferencing is enabled, users receive skill suggestions relevant to their role. Users have the option to turn it off for themselves in the Microsoft 365 profile editor, on the Data and privacy tab.
 
-- **Keep skills inferencing enabled but default off:** Skills inferencing is available in your tenant, but users in this access policy will be "opted-out," and won't receive inferencing suggestions. Users have the option to turn it on for themselves in in **Microsoft 365 profile editor**, on the **Data and privacy** tab.
+- **Keep skills inferencing enabled but default off:** Skills inferencing is available in your tenant, but users in this access policy will be "opted-out," and won't receive inferencing suggestions. Users have the option to turn it on for themselves in the Microsoft 365 profile editor, on the Data and privacy tab.
 
    To create this policy, run the following PowerShell cmdlet. 
 
@@ -109,7 +109,7 @@ You have the following options for creating an access control policy in PowerShe
 > [!NOTE]
 > We don't offer the option to completely disable skills profile visibility. A user can always opt in to sharing their skills profile from their personal skills settings in Profile Editor. Admins can disable sharing of some skills such as AI-generated, or org. added skills 
 
-### Control Visibility of AI-generated skills
+### Control visibility of AI-generated skills
 
 AI-generated skills are provided to users based on their role and Microsoft 365 activity.
 
@@ -122,7 +122,7 @@ If you need to disable sharing for specific users, groups, or your entire tenant
 
 You have the following options for creating an access control policy in PowerShell to manage the visibility of AI-generated skill:  
 
-- **Enable sharing of AI-generated skills (Default):**: When visibility is enabled, AI-generated skills are shared across Microsoft 365. Users have the option to turn it off for themselves in their settings. Users can also manage how they can share AI-generated skills for themselves in the *Microsoft 365 profile editor* on the *Data and privacy* tab.
+- **Enable sharing of AI-generated skills (Default):**: When visibility is enabled, AI-generated skills are shared across Microsoft 365. Users have the option to turn it off for themselves in their settings. Users can also manage how they can share AI-generated skills for themselves in the Microsoft 365 profile editor on the Data and privacy tab.
 
 - **Keep the default sharing off for AI-generated skills**: Users in this access policy will be "opted-out," and their AI-generated skills won't be shared across Microsoft 365. Users have the option to turn it on for themselves in their skill settings.
 
@@ -144,7 +144,7 @@ You have the following options for creating an access control policy in PowerShe
 
    For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *ShowAISkills*.
 
-### Control Visibility of third-party imported skills
+### Control visibility of third-party imported skills
 
 Imported skills added by an admin in your organization from external systems display in a user's skills profile alongside AI-generated skills. Like AI-generated skills, these skills are available for the user to confirm in the Microsoft 365 profile editor. By default, third-party skills are displayed to others in their organizations and shared with other Microsoft 365 experiences. If sharing is disabled, imported skills won't display to others in the organization.
 
