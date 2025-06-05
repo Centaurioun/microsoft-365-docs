@@ -103,4 +103,4 @@ Currently, you can only transfer control from the first-party Microsoft 365 appl
 --->
 #### Can I use PowerShell cmdlets to manage my backups and restore using Microsoft 365 Backup?
 
-Yes, you can. Microsoft 365 Backup supports PowerShell cmdlets.  You can find the associated PowerShell cmdlets in the [Microsoft 365 Backup Storage Graph APIs](/graph/api/resources/backuprestoreroot) reference guide.
+Yes, you can. Microsoft 365 Backup supports PowerShell cmdlets. You can find the associated PowerShell cmdlets in the [Microsoft 365 Backup Storage Graph APIs](/graph/api/resources/backuprestoreroot) reference guide.
