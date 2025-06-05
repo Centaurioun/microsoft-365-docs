@@ -1,5 +1,5 @@
 ---
-title: Manage Custom skills
+title: Manage custom skills
 description: Learn how to modify and import or export custom skills.
 author: anibajaj 
 ms.author:  anirudhbajaj
@@ -9,7 +9,7 @@ ms.topic:  article
 ms.date:  05/29/2025
 ---
 
-# Manage Custom skills
+# Manage custom skills
 
 If you didn't import custom skills as a part of your initial setup, you can add it later by following the steps mentioned in this article. You can also delete or export custom skills.
 
