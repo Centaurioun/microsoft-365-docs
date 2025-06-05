@@ -80,6 +80,10 @@ Microsoft 365 Backup directly supports the Digital Operational Resilience Act's 
 
 The core purpose of the backup and restore service is to provide you with a way to recover from common data deletion, overwrite, or encryption events.
 
+## Audit logs
+
+[Microsoft Purview auditing solutions](/purview/audit-get-started) provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. You can [search for audit events](/purview/audit-search) for [Backup activities](/purview/audit-log-activities) such as create policy or restore using PowerShell or Microsoft Purview Audit.
+
 ### Compliance resources
 
 Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
@@ -99,8 +103,3 @@ For more detailed information, see the following resources:
 - **Microsoft Entra ID** – [Microsoft Entra security baseline for Microsoft Entra ID](/security/benchmark/azure/baselines/aad-security-baseline)
 
 - **Azure** – [Azure, Dynamics 365, Microsoft 365, and Power Platform compliance offerings](/azure/compliance/offerings/)
-
-## Audit Logs
-
-[Microsoft Purview auditing solutions](/purview/audit-get-started) provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. You can [search for Audit events](/purview/audit-search) for [Backup activities](/purview/audit-log-activities) such as create policy or restore using PowerShell or Microsoft Purview Audit.
-
