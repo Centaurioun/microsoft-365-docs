@@ -3,8 +3,8 @@ title: "Microsoft 365 Copilot Search"
 author: kwekuako
 ms.author: kwekua  
 manager: dansimp
-ms.date: 06/05/2025  
-ms.topic: Overview
+ms.date: 06/05/2025
+ms.topic: overview
 ms.service: microsoft-365-admin
 ms.localizationpriority: medium
 ms.collection: CopilotSearch

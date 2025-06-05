@@ -1,10 +1,10 @@
 ---  
-title: "Microsoft 365 Copilot Search"  
+title: "Manage Copilot Search"  
 author: kwekuako
 ms.author: kwekua  
 manager: dansimp
 ms.date: 06/05/2025  
-ms.topic: Overview
+ms.topic: overview
 ms.service: microsoft-365-admin
 ms.localizationpriority: medium
 ms.collection: CopilotSearch
@@ -26,7 +26,7 @@ No action is required by admins to set up Microsoft 365 Copilot Search. If a use
 
 Copilot Search can access and reason over data in third-party systems as well as Microsoft 365 apps and other systems in the Microsoft Graph. This is achieved through Microsoft 365 Copilot connectors, which allow organizations to bring in data from external platforms like Salesforce, ServiceNow, Confluence, and more. Additionally, plugin extensibility enables Copilot Search to interact with third-party apps during runtime, making it possible to search and act on data across a wide range of systems, all within the Microsoft 365 experience.
 
-[Learn more about Microsoft 365 Copilot connectors](/microsoft-365/copilot/connectors).
+Learn more about [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector).
 
 ## Microsoft 365 Copilot Extension
 

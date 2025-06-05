@@ -1,10 +1,10 @@
 ---  
-title: "Microsoft 365 Copilot Search"  
+title: "Microsoft 365 Copilot Search privacy"  
 author: kwekuako
 ms.author: kwekua  
 manager: dansimp
 ms.date: 06/05/2025  
-ms.topic: Overview
+ms.topic: overview
 ms.service: microsoft-365-admin
 ms.localizationpriority: medium
 ms.collection: CopilotSearch
@@ -39,4 +39,3 @@ If you're a SharePoint Administrator in Microsoft 365, the Restricted SharePoint
 
 Restricted SharePoint Search allows you to restrict both organization-wide search and Copilot experiences to a curated set of SharePoint sites of your choice. Even if you enable Restricted SharePoint Search, users in your organization are still able to interact with files and content they own or that they have previously accessed in Copilot. For more information, see [Restricted SharePoint Search](/sharepoint/restricted-sharepoint-search).
 
-(https://learn.microsoft.com/microsoft-365/security/office-365-security/restricted-sharepoint-search).
