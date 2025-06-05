@@ -81,24 +81,28 @@ items:
         href: copilot-prompt-gallery-export-prompts.md
       - name: Inventory scheduled prompts
         href: scheduled-prompts-inventory.md     
-    - name: People Skills
+    - name: People Skills 
       items:
-      - name: Manage skills library
+      - name: People Skills Overview
+        href: people-skills-overview.md
+      - name: AI inference engine
+        href: people-skills-ai-inferencing.md
+      - name: Setup People Skills
+        href: people-skills-setup.md
+      - name: Privacy and sharing controls
+        href: people-skills-sharing-inferencing-controls.md
+      - name: Manage People Skills library
         items:
-        - name: People Skills Overview
-          href: people-skills-overview.md
-        - name: Setup People Skills
-          href: people-skills-setup.md
-        - name: Manage skills library
+        - name: Manage People Skills 
           href: people-skills-manage-skills-library.md
-        - name: People skills data and AI guidelines
-          href: people-skills-data-and-ai-guidelines.md
+        - name: Manage Custom Skills
+          href: people-skills-manage-custom-skill.md
+        - name: Manage AI restricted skills 
+          href: people-skills-manage-ai-restricted-skills.md
         - name: People Skills import and export
           href: people-skills-import-export-skills.md
-        - name: Privacy and sharing controls
-          href: people-skills-sharing-inferencing-controls.md
-        - name: AI inference engine
-          href: people-skills-ai-inferencing.md
+      - name: People skills data and AI guidelines
+        href: people-skills-data-and-ai-guidelines.md
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
     - name: Overview of AI in Microsoft Teams
