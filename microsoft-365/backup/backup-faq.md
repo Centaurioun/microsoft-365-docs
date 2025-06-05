@@ -101,3 +101,6 @@ Currently, you can only transfer control from the first-party Microsoft 365 appl
 <!---
 - For Exchange, a user account will be in a soft-deleted state for 30 days after it's deleted. To restore the user, see [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once you restore the user, you can use the restore feature in Microsoft 365 Backup to restore as usual.
 --->
+#### Can I use PowerShell cmdlets to manage my backups and restore using Microsoft 365 Backup?
+
+Yes, you can. Microsoft 365 Backup supports PowerShell cmdlets. You can find the associated PowerShell cmdlets in the [Microsoft 365 Backup Storage Graph APIs](/graph/api/resources/backuprestoreroot) reference guide.
