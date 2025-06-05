@@ -31,7 +31,7 @@ Key features include:
 - **Partner ecosystem**: Leverage additional features and workflows through integrated partner applications to manage all your backups in one place.
 --->
 > [!Note]
-> Microsoft 365 Backup is currently not available for Government Community Cloud (GCC) organizations. 
+> Microsoft 365 Backup is currently not available for Government Community Cloud (GCC) organizations. Microsoft 365 Backup also supports PowerShell cmdlets.  You can find the associated PowerShell cmdlets in the [Microsoft 365 Backup Storage Graph APIs](/graph/api/resources/backuprestoreroot) reference guide.
 
 ## Scenarios and value proposition
 
