@@ -102,5 +102,5 @@ For more detailed information, see the following resources:
 
 ## Audit Logs
 
-[Microsoft Purview auditing solutions](/purview/audit-get-started) provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. You can [search for Audit events](/purview/audit-search) for [Backup activities](/purview/audit-log-activities) as create policy, restore, etc, using PowerShell or Microsoft Purview Audit.
+[Microsoft Purview auditing solutions](/purview/audit-get-started) provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. You can [search for Audit events](/purview/audit-search) for [Backup activities](/purview/audit-log-activities) such as create policy or restore using PowerShell or Microsoft Purview Audit.
 
