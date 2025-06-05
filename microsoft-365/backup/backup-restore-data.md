@@ -33,6 +33,13 @@ The restore point frequency, also known as the [recovery point objective](backup
 |Full OneDrive account and full SharePoint site restore    |10 minutes     |One week     |
 |Exchange Online   |10 minutes         |10 minutes         |
 
+> [!NOTE]
+> You can also use PowerShell cmdlets to perform these operations by following these steps:
+> 1. Go to the [Microsoft 365 Backup Storage Graph APIs](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions) documentation for the specific action you want to perform—for example, restoring data for Onedrive.
+> 2. Scroll to the **Example request** section and select the **PowerShell** tab.
+> 3. Install the Microsoft.Graph.BackupRestore module as shown in the example.
+> 4. Run the provided PowerShell command in an Admin PowerShell session to execute the desired action.
+
 ## Restore data from backup for OneDrive, SharePoint, and Exchange
 
 Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to restore data from backup for that product.
