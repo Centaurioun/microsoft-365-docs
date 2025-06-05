@@ -20,7 +20,7 @@ description: Information on how to manage Microsoft 365 Copilot Search.
 No action is required by admins to set up Microsoft 365 Copilot Search. If a user has a Microsoft 365 Copilot license, they can access Copilot Search from the **Search** tab in the Microsoft 365 Copilot app. Users who don't have the Microsoft 365 Copilot app will receive the Microsoft Search experience when clicking the **Search** tab in the Microsoft 365 app.
 
 > [!NOTE]
-> Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365) of Microsoft 365 updates.
+> Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
 ## Copilot Search and Third-Party Systems
 

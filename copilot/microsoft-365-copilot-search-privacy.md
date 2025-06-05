@@ -21,7 +21,7 @@ description: Information on privacy controls for Microsoft 365 Copilot Search.
 Microsoft 365 Copilot Search is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the [General Data Protection Regulation](/compliance/regulatory/gdpr) (GDPR) and [European Union (EU) Data Boundary](/privacy/eudb/eu-data-boundary-learn).
 
 > [!NOTE]
-> Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365) of Microsoft 365 updates.
+> Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
 Microsoft 365 Copilot Search can access and reason over the data it has permission to see within a user's Microsoft 365 environment. This includes:
 

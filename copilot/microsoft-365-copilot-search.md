@@ -24,7 +24,7 @@ Copilot Search indexes content across Microsoft 365 and third-party applications
 Because it's integrated with Microsoft 365 Copilot, users can find the results they need with search, then seamlessly transition to chat for deeper exploration or follow-up task completion.
 
 > [!NOTE]
-> Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365) of Microsoft 365 updates.
+> Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
 ## Access and Eligibility
 
