@@ -32,7 +32,6 @@ The restore point frequency, also known as the [recovery point objective](backup
 |---------|---------|---------|
 |Full OneDrive account and full SharePoint site restore    |10 minutes     |One week     |
 |Exchange Online   |10 minutes         |10 minutes         |
-</br>
 
 > [!NOTE]
 > You can also use PowerShell cmdlets to perform these operations by following these steps:
