@@ -83,7 +83,7 @@ items:
         href: scheduled-prompts-inventory.md     
     - name: People Skills 
       items:
-      - name: People Skills Overview
+      - name: People Skills overview
         href: people-skills-overview.md
       - name: AI inference engine
         href: people-skills-ai-inferencing.md
@@ -95,7 +95,7 @@ items:
         items:
         - name: Manage People Skills 
           href: people-skills-manage-skills-library.md
-        - name: Manage Custom Skills
+        - name: Manage custom skills
           href: people-skills-manage-custom-skill.md
         - name: Manage AI restricted skills 
           href: people-skills-manage-ai-restricted-skills.md
