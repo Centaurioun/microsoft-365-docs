@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 03/13/2025
+ms.date: 04/13/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -20,14 +20,14 @@ description: Learn how to use taxonomy tagging to search, sort, filter, and mana
 
 # Find and manage terms using taxonomy tagging in SharePoint
 
-Before you can use taxonomy tagging, you need to enable it in a document library. There are two methods you can use to do this:
+Before you can use taxonomy tagging, you need to turn it on in a document library. There are two methods you can use to do this:
 
 - [Use an existing taxonomy column](#use-an-existing-taxonomy-column)
 - [Create a new taxonomy column](#create-a-new-taxonomy-column)
 
 ## Use an existing taxonomy column
 
-If a taxonomy column already exists in your library, use these steps to enable taxonomy tagging:
+If a taxonomy column already exists in your library, use these steps to turn on taxonomy tagging:
 
 1. On the **Taxonomy** column, select **Column settings** > **Edit**.
 
@@ -35,7 +35,7 @@ If a taxonomy column already exists in your library, use these steps to enable t
 
    ![Screenshot showing the Column settings panel for the taxonomy column.](../media/content-understanding/taxonomy-tagging-edit-column-toggle.png)  
  
-3. Once enabled, any new documents uploaded to the library or existing documents edited in the library are processed to tag the configured term set.
+3. Once turned on, any new documents uploaded to the library or existing documents edited in the library are processed to tag the configured term set.
 
 ## Create a new taxonomy column
 
