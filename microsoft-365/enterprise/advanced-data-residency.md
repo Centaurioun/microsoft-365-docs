@@ -46,12 +46,9 @@ The following workloads are included in ADR. For more information, see:
 > [!NOTE]
 > *The Microsoft Purview services list mentioned above includes all services covered as part of the Advanced Data Residency commitment as of November 2024. Additional Microsoft Purview services are not currently supported.
 
-> [!NOTE]
-> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
-
 ## Licensing and Purchase
 
-### Eligibility
+### Eligibility for Advanced Data Residency
 
 The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterprise customers who have comprehensive data residency requirements. To be eligible to purchase ADR, customers must meet the following prerequisites:
 
@@ -67,7 +64,9 @@ The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterpr
 
 Geographic availability is updated as available.
 
-Customers must cover 100% of paid licenses in the tenant with ADR add-on license for tenant to receive data residency for ADR workloads. See the table for an example.
+### Licensing Requirements
+
+Customers must cover 100% of paid licenses in the tenant with ADR add-on license for the tenant to receive data residency for ADR workloads. See the table directly below for an example.
 
 | ADR-related SKU | Available Licenses | Allocated Licenses | ADR Required Licenses |
 | --- | --- | --- | --- |
@@ -76,11 +75,14 @@ Customers must cover 100% of paid licenses in the tenant with ADR add-on license
 | Exchange Online Plan 2 | 25 | 22 | 25 |
 | Totals | 1645 | 1247 | 1645 <sup>1</sup> |
 
-If you have 1,645 licenses purchased for ADR, then you have a data residency commitment for your _Local Region Geography_. If you have fewer than 1,645 licenses, then you do NOT have a data residency commitment, and your tenant is subject to being moved out of the _Local Region Geography_.
+<sup>1</sup> If you have 1,645 licenses purchased for ADR, then you have a data residency commitment for your _Local Region Geography_. If you have fewer than 1,645 licenses, then you do NOT have a data residency commitment, and your tenant is subject to being moved out of the _Local Region Geography_.
 
 Customers who purchase Multi-Geo licenses for their tenant don't have to also pay for ADR for the same licenses. You avoid 'double licensing' a single seat for two different data residency programs. For example, if a customer would normally require 15,000 ADR licenses to satisfy the program requirements, but they also have 4,000 Multi-Geo licenses, then they're only required to purchase 11,000 ADR licenses. The two programs combined would cover the normal ADR program requirement of 100% user coverage.
 
-To find out how many ADR licenses, you need go to the Microsoft 365 admin center under **Billing > Your Products** within your tenant and add up the total Purchased Quantity for all ADR-eligible SKUs to get the proper total of ADR licenses required.
+To discover how many ADR licenses a tenant has assigned, you can access the _Data Location Card_ in the Microsoft 365 admin center under **Admin > Settings > Org Settings > Organization Profile > Data Location**. This page will display the Required License Count, Current ADR License Count, and License Expiration date.
+
+> [!NOTE]
+> Recent changes made to a tenant’s licensing count may require 24-48 hours to reflect in the Data Location Card.
 
 ### Tenants with a mix of Commercial and Education subscriptions
 
@@ -96,7 +98,9 @@ If any customer tenant data covered by the Advanced Data Residency feature is no
 
 ### Starting Data Migration
 
-After receiving the Advanced Data Residency licenses and applying them to the customer's tenant, the customer administrator must select the option to initiate the data migration process for ADR workloads that do not currently reside in their _Local Region Geography_. To initiate data migration for a tenant, the customer administrator should visit the "Data location" section in the Microsoft 365 admin center by navigating to **Settings > Org settings > Organization profile > Data location**. From here, the customer administrator can see the current location of the customer's data-at-rest and what _Local Region Geography_ their customer data currently resides in or is eligible to be migrated to upon selection.
+To determine if a tenant needs to perform a data migration the customer administrator should visit the "Data location" section in the Microsoft 365 admin center by navigating to  **Admin > Settings > Org settings > Organization profile > Data location**. From here, the customer administrator can see the current location of the customer's data-at-rest.
+
+After receiving the Advanced Data Residency licenses and applying them to the customer's tenant, the customer administrator must select the option displayed on the Data Location page to initiate the data migration process for ADR workloads that do not currently reside in their _Local Region Geography_.
 
 #### Microsoft 365 Admin Center Data Location
 
@@ -129,7 +133,7 @@ Data moves are a back-end service operation with minimal impact to a customer's 
 
 No action is needed from the customer while Microsoft moves each ADR workload and associated customer tenant data to the customer's eligible _Local Region Geography_.
 
-Customer administrators can visit the Message center or “Data location” section within the Microsoft 365 admin center throughout the migration process to review any migration notices and see when each workload service completes migration. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Settings > Org settings > Organization profile > Data location**.
+Customer administrators can visit the Message center or “Data location” section within the Microsoft 365 admin center throughout the migration process to review any migration notices and see when each workload service completes migration. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Admin > Settings > Org settings > Organization profile > Data location**.
 
 The following screenshots are examples of the Microsoft 365 admin center Data location view that an ADR customer can expect to see during and after their migration.
 
@@ -153,7 +157,7 @@ Given the complex nature of services included in an E3 or E5 license, the migrat
 
 Microsoft does not provide a granular status to indicate progress toward migration completion for individual customer scenarios.
 
-Customer administrators can stay informed of migration updates through Message center notifications and by reviewing the “Data location” section within the Microsoft 365 admin center to see when a workload completes migration to their _Local Region Geography_. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Settings > Org settings > Organization profile > Data location**.
+Customer administrators can stay informed of migration updates through Message center notifications and by reviewing the “Data location” section within the Microsoft 365 admin center to see when a workload completes migration to their _Local Region Geography_. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Admin > Settings > Org settings > Organization profile > Data location**.
 
 For more information on Migration, customer administrators can refer to the following pages:
 
@@ -161,12 +165,40 @@ For more information on Migration, customer administrators can refer to the foll
 
 [Where your Microsoft 365 customer data is stored - Microsoft 365 Enterprise](o365-data-locations.md)
 
-## Related articles
+### What does the Advanced Data Residency (ADR) License Information display?
 
-[Legacy Move Program](m365-dr-legacy-move-program.md)
+The _Data Location Card_ has been updated for tenants who have purchased license for Advanced Data Residency (ADR).  Tenants who have active, or recently active ADR subscriptions will see a new field called “Advanced Data Residency (ADR) License Information”.  This section will display three fields related to your tenant’s licensing:
 
-[New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions?branch=main)
+**Required Seat Count**: This field will display the number of M365 seats that require ADR coverage.
 
-[Azure services by region](https://azure.microsoft.com/regions/)
+**License Count**: This field will display the number of active ADR/ADR-E licenses assigned to the tenant.
 
-[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](/microsoftteams/teams-experience-o365odb-spo-multi-geo?branch=main)
+**License Expiration**: This field will display the expiration date of the ADR license assigned to the tenant.
+
+### What happens if I have insufficient seat coverage for ADR?
+
+The _Data Location Card_ will now display warnings and notifications related to Seat Coverage.
+
+In the event that a tenant may have fallen below the required number of licenses required for ADR coverage, a notification message is displayed with text “The Advanced Data Residency (ADR) license may not have sufficient seat coverage. Without full seat coverage, the tenant's data may be relocated outside the _Local Region Geography_. Please consult with your Microsoft representatives to understand the requirements on sufficient seat coverage. Please procure additional ADR licenses promptly to ensure continued data residency within the _Local Regional Geography_.” A link to the Marketplace will also be provided to assist in procurement of ADR licenses.
+
+<Insert screenshot>
+
+If you see this warning message, please reach out to your Microsoft Representatives to understand if your current agreements are properly reflected and what steps, if any, are required to bring the tenant back into compliance.
+
+In the event of a substantial discrepancy between the Required Seat Count and ADR License Count, the _Data Location Card_ will update the _Committed Geography location_ to display the most current and accurate commitments in place (if any) after ADR has been removed.  At this point, data may be relocated, without notification or additional warning, subject to the constraints displayed in the updated _Committed Geography_.
+
+### ADR License Warnings & Notifications Related to License Expiry
+
+The _Data Location Card_ is designed to help tenant administrators track when ADR licenses are nearing expiry. The _Data Location Card_ experience will now display the following warnings and alerts in relation to license expiry:
+
+**90 Days before license expiration**: A warning statement will appear indicating that “The Advanced Data Residency (ADR) licenses are about to expire.  Please renew the licenses to maintain ADR coverage and ensure the data remains protected within your _Local Regional Geography_”. A link to _Marketplace_ will also be provided to assist in procurement of ADR licenses.
+
+<Insert screeenshot>
+
+**On Expiration**: Starting on the day a tenant’s licenses expired, the DLC card will display a message indicating “The Advanced Data Residency (ADR) licenses have expired. Without a valid ADR license, the tenant’s data may be relocated outside the _Local Region Geography_. Please renew promptly to ensure continued data residency within the _Local Region Geography_.” A link to the Marketplace will also be provided to assist in procurement of ADR licenses. It is important to note that while your ADR license has expired, Microsoft will provide a grace period to bring the tenant into compliance. During this grace period, you will not see changes to the _Committed Geography_ and the tenant’s data will not be relocated.
+
+<Insert screeenshot>
+
+If the tenant had not yet opted into migration by this point, the option to migrate will become unavailable until a valid ADR license is procured.  In these use cases, the DLC will also display an error message that states “The Advanced Data Residency (ADR) license has expired and\or does not have sufficient seats to enable migration. Please renew or procure the necessary ADR licenses to enable migration and ensure data residency within the _Local Regional Geography_.”
+
+**After Grace Period**: After the grace period provided, Microsoft will remove the durable commitment on data location provided by ADR. At this point the DLC card will update the _Committed Geography_ location to display the most current and accurate commitments in place (if any) after ADR has been removed. At this point, data may be relocated, without notification or additional warning, subject to the constraints displayed in the updated _Committed Geography_.  
