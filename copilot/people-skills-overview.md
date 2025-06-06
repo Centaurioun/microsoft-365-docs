@@ -52,7 +52,7 @@ People Skills AI inferencing and experiences are based on a user's Microsoft 365
 
 ## Sharing and management of skills data
 
-Users can now manage and share their skills directly from the profile card in Microsoft 365. [Learn more about People Skills capabilities for users](https://support.microsoft.com/en-us/office/overview-of-people-skills-988029ce-f749-4f99-a6f3-f2e4cef450ae)
+Users can now manage and share their skills directly from the profile card in Microsoft 365. [Learn more about People Skills capabilities for users](https://support.microsoft.com/office/overview-of-people-skills-988029ce-f749-4f99-a6f3-f2e4cef450ae)
 
 For more information on how to set up People Skills, and control how People Skills data is shared and managed, see [Set up skills](people-skills-setup.md) and [Manage your skills library](people-skills-manage-skills-library.md).
 
