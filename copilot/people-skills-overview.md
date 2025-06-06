@@ -11,9 +11,6 @@ ms.date:  05/29/2025
 
 # Overview of People Skills
 
-> [!NOTE]
-> This feature is currently in preview. Preview features or services are in development, may not be available to all customers, and are made available on a "preview" basis so you can get early access and send us feedback.
-
 People Skills is an AI-driven service that uses state-of-the-art AI to generate personalized skill profiles for your users mapped to a customizable, built-in taxonomy. This service provides a data layer that fuels the Skills agent, and enhances Microsoft 365 Copilot, Microsoft 365, and Viva services with contextualized data and skills-driven experiences. 
 
 People Skills:
@@ -46,7 +43,7 @@ People Skills data appears in Microsoft 365 for employees, leaders, and organiza
 - [Skills in the Microsoft 365 profile card](https://support.microsoft.com/office/explore-what-you-can-do-with-your-skills-0e8dd61c-89b9-42de-8e4d-7c606806cf40): Users can view and manage their skills with others directly from the profile card in Microsoft 365 to share their skills and learn more about others. People Skills is available today on the profile card in the new Outlook desktop for Windows, Outlook Web App, Microsoft 365 Copilot, Office.com, SharePoint, and People Companion, and will expand to other applications where you see the profile card in future releases.
 - [Skills in Microsoft 365 Copilot](https://support.microsoft.com/office/overview-of-people-skills-988029ce-f749-4f99-a6f3-f2e4cef450ae): If you use Microsoft 365 Copilot, shared skills surface in people related queries in Copilot to help form connections and find people with the skills you need.
 - **Skills in Org Explorer and People Companion**:  Tools like [Org Explorer](https://support.microsoft.com/topic/org-explorer-40c65909-b12d-4ab9-8d6c-a1592789dc8e) and [People Companion](/microsoft-365-apps/companions/people) help users quickly find the right person based on their shared skills data.
-- **Skills in Viva Learning:** Users can now manage skills they want to develop within Viva Learning, and receive personalized course recommendations based on those skills.
+- [Skills in Viva Learning: ](https://aka.ms/Admindocupdate)Users can now manage skills they want to develop within Viva Learning, and receive personalized course recommendations based on those skills.
 - [Skills in Copilot Analytics (Viva Insights)](/viva/insights/advanced/analyst/templates/skills-landscape): The Skills landscape report allows organizational analysts to discover top skills in their workforce, assess their distribution across groups, identify potential gaps, and explore related skill insights.
 - **Skills for Leaders in Microsoft 365 Copilot** (coming soon): Copilot enables leaders to ask targeted or broad questions about their team’s skills and receive instant, data-driven answers.  
 - **Skills Agent** (coming soon): The Skills agent helps employees and leaders explore, manage, and use organizational skills for personal growth and strategic planning. 
@@ -55,9 +52,9 @@ People Skills AI inferencing and experiences are based on a user's Microsoft 365
 
 ## Sharing and management of skills data
 
-Users can now manage and share their skills directly from the profile card in Microsoft 365. [Learn more about People Skills capabilities for users](https://go.microsoft.com/fwlink/?linkid=2313228)
+Users can now manage and share their skills directly from the profile card in Microsoft 365. [Learn more about People Skills capabilities for users](https://support.microsoft.com/en-us/office/overview-of-people-skills-988029ce-f749-4f99-a6f3-f2e4cef450ae)
 
-For more information on how to set up People Skills, and control how People Skills data is shared and managed, see [Set up skills](/viva/skills/skills-get-started) and [Manage your skills library](/viva/skills/manage-skills-library).
+For more information on how to set up People Skills, and control how People Skills data is shared and managed, see [Set up skills](people-skills-setup.md) and [Manage your skills library](people-skills-manage-skills-library.md).
 
 ## User Profile Application (UPA) Skills
 
