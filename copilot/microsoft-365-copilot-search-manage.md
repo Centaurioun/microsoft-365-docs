@@ -22,13 +22,13 @@ No action is required by admins to set up Microsoft 365 Copilot Search. If a use
 > [!NOTE]
 > Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
-## Copilot Search and Third-Party Systems
+## Copilot Search and third party systems
 
 Copilot Search can access and reason over data in third-party systems as well as Microsoft 365 apps and other systems in the Microsoft Graph. This is achieved through Microsoft 365 Copilot connectors, which allow organizations to bring in data from external platforms like Salesforce, ServiceNow, Confluence, and more. Additionally, plugin extensibility enables Copilot Search to interact with third-party apps during runtime, making it possible to search and act on data across a wide range of systems, all within the Microsoft 365 experience.
 
 Learn more about [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector).
 
-## Microsoft 365 Copilot Extension
+## Microsoft 365 Copilot extension
 
 The Microsoft 365 Copilot Extension is a cross-browser add-on that enhances your Copilot Search results. This extension brings together information from tickets, files, documents, and tasks across multiple work-related third-party sites, providing highly relevant and personalized search results.
 
@@ -36,9 +36,9 @@ The Microsoft 365 Copilot Extension works in the background without any manual s
 
 For the preview program, we support the following third-party apps or connectors: ADO, ServiceNow KB, ServiceNow Catalog, ServiceNow Tickets, Jira, Google Drive, Confluence, and GitHub.
 
-[Learn more about the Microsoft 365 Copilot Extension](/microsoftsearch/crossover-browser).
+Learn more about [Microsoft 365 Copilot Extension](/microsoftsearch/crossover-browser).
 
-## Bookmarks and Acronyms
+## Bookmarks and acronyms
 
 As the admin, you can curate bookmarks and acronyms for Copilot Search just as you can for Microsoft Search. Curating bookmarks and acronyms helps surface authoritative, organization-specific answers directly in search results. These features are designed to:
 
@@ -46,7 +46,7 @@ As the admin, you can curate bookmarks and acronyms for Copilot Search just as y
 - Define internal terminology - [Acronyms](/microsoftsearch/manage-acronyms)
 - Improve discoverability and reduce confusion across teams and departments
 
-## Manage Access to Files and Sites
+## Manage access to files and sites
 
 Organizations can restrict end users from searching for files in certain SharePoint sites by enabling Restricted Content Discovery. This setting prevents the sites from appearing in organization-wide search results and Microsoft 365 Copilot answers unless a user owns or has recently interacted with content on those sites.
 

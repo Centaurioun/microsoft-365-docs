@@ -26,7 +26,7 @@ Because it's integrated with Microsoft 365 Copilot, users can find the results t
 > [!NOTE]
 > Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
-## Access and Eligibility
+## Access and eligibility
 
 Copilot Search is available to users with an eligible Microsoft 365 Copilot license at no additional cost. It can be accessed through the Microsoft 365 Copilot app on desktop, web, and mobile platforms. The app is available to users with Entra accounts (work or school) and personal Microsoft accounts.
 
@@ -56,14 +56,14 @@ This design positions search as the organizing layer for AI, while chat remains 
 
 Copilot Search supports natural language queries, allowing users to type questions or requests in everyday language. For example, you can search for, **show me the latest updates from the marketing team** or **find the presentation Rachel shared last week**, and Copilot Search will understand your intent and return relevant results from across Microsoft 365, including emails, files, chats, meetings, and more.
 
-Copilot Search goes beyond keyword matching by using AI to interpret context, relationships, and meaning, helping you find what you need faster and more intuitively. It also supports traditional keyword queries for specific words or short phrases, relying on exact or partial matches. a natural language query can engage AI to better interpret the context of the query, leading to more relevant results.
+Copilot Search goes beyond keyword matching by using AI to interpret context, relationships, and meaning, helping you find what you need faster and more intuitively. It also supports traditional keyword queries for specific words or short phrases, relying on exact or partial matches. But a natural language query can engage AI to better interpret the context of the query, leading to more relevant results.
 
 ## Answer Types
 
 Depending on the query, Copilot Search can provide concise, authoritative answers that are relevant to your organization. These answers are delivered directly in search results and deliver information about your organization's acronyms, bookmarks, and people.
 
-- **Acronym Answers:** Define terminology used in the workplace.
-- **Bookmarks:** Promote key resources in your organization.
+- **Acronym answers:** Define terminology used in the workplace.
+- **Bookmark answers:** Promote key resources in your organization.
 - **People Answers:** Surface coworkers' roles and show how they fit into the organization.
 
-Learn how admins can curate bookmarks and acronyms for Copilot Search.
+For more information, see [how to curate bookmarks and acronyms for Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search-manage?view=o365-worldwide).
