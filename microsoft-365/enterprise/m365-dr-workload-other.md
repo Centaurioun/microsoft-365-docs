@@ -34,7 +34,7 @@ Refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
 
 ## Forms
 
-Tenants in EU/EFTA member Countries/regions maintain data in Macro Region Geography 4 – EU/EFTA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data is stored at rest in Australia for all new tenants using Forms and existing tenants that haven't previously used Forms.
+Tenants in EU/EFTA member Countries/regions maintain data in Macro Region Geography 4 – European Union/EFTA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data is stored at rest in Australia for all new tenants using Forms and existing tenants that haven't previously used Forms.
 
 ## Intune
 
@@ -125,8 +125,8 @@ Refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/manage-se
 
 1. Macro Region Geography 1 – Europe
 1. Macro Region Geography 2 - Asia Pacific
-1. Macro Region Geography 3 – North America
-1. Macro Region Geography 4 – EU/EFTA
+1. Macro Region Geography 3 – Americas
+1. Macro Region Geography 4 – European Union/EFTA
 1. Australia
 1. Canada
 1. Japan
