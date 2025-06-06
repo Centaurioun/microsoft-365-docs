@@ -23,9 +23,15 @@ description: Learn how to monitor the processing status of files in a SharePoint
 > [!NOTE]
 > This article is currently in development.
 
-Gain full visibility into your file processing workflows with real-time updates on autofill columns and document translation. This feature provides continuous status tracking for each file, allowing you to monitor progress, identify issues early, and take action as needed.
+The processing status pane gives you full visibility into your file processing workflows with real-time updates on autofill columns and document translation. It helps you:
 
-Designed to address common challenges such as limited transparency, insufficient detail, and administrative uncertainties, this enhancement replaces the traditional single-status column with a more granular view. You can now see which services have succeeded, failed, or are still in progress—along with detailed error messages and direct links to relevant documentation.
+- Track when a file is being processed.
+- See whether it’s **In progress**, **Completed**, or **Failed**.
+- Understand both successful outcomes and failure reasons.
+
+This feature helps you keep track of what’s happening with each file—every step of the way. You can see when a file starts processing, when it finishes, and if something goes wrong.
+
+Instead of just showing one status, you now get a detailed view. You’ll know which services worked, which didn’t, and why. If there’s an issue, you’ll see a clear error message and a link to helpful documentation so you can fix it quickly.
 
 ## Monitor the status of file processing activity
 
