@@ -15,9 +15,9 @@ Microsoft is committed to responsibly designing, building, and releasing AI tech
 
 ## User data privacy controls
 
-[Review the data privacy controls we offer for admins](people-skills-data-and-ai-guidelines.md) to control default AI inferencing and skill visibility settings for their tenant or groups of users.  
+[Review the data privacy controls we offer for admins](people-skills-sharing-inferencing-controls.md) to control default AI inferencing and skill visibility settings for their tenant or groups of users.  
 
-Users can also opt out of AI inferencing or skill sharing on their profile. For more information, see [Manage AI and sharing options](https://support.microsoft.com/office/manage-ai-and-sharing-options-90c09758-c877-4940-bc2c-f7e4caea6ae4).
+Users can also opt out of AI inferencing or skill sharing on their profile. For more information, see [Manage AI and sharing options](https://support.microsoft.com/en-us/office/manage-ai-and-sharing-options-90c09758-c877-4940-bc2c-f7e4caea6ae4).
 
 ### Data location
 
