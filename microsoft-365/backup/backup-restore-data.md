@@ -33,6 +33,13 @@ The restore point frequency, also known as the [recovery point objective](backup
 |Full OneDrive account and full SharePoint site restore    |10 minutes     |One week     |
 |Exchange Online   |10 minutes         |10 minutes         |
 
+> [!NOTE]
+> You can also use PowerShell cmdlets to perform these operations by following these steps:
+> 1. Go to the [Microsoft 365 Backup Storage Graph APIs](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions) documentation for the specific action you want to perform—for example, restoring data for Onedrive.
+> 2. Scroll to the **Example request** section and select the **PowerShell** tab.
+> 3. Install the Microsoft.Graph.BackupRestore module as shown in the example.
+> 4. Run the provided PowerShell command in an Admin PowerShell session to execute the desired action.
+
 ## Restore data from backup for OneDrive, SharePoint, and Exchange
 
 Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to restore data from backup for that product.
@@ -239,7 +246,6 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 > After a multi-geo move, a OneDrive account and SharePoint site will only be able to restore to the weekly restore points until an enhancement is deployed (enhancement coming soon).
 
 ## Considerations when using restore
-
 - OneDrive and Sharepoint
 
     - Site search is case-sensitive and is a prefix-type search.
@@ -250,8 +256,10 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     - A OneDrive account or SharePoint site that is under the strict SEC 17a-4(f) hold policy will fail any in-place restores so as to honor that immutability promise. For sites under that type of hold, you have to restore to a new URL or remove the hold. Any other type of preservation hold that doesn't have a strict admin lockout allows an in-place restore. Restoring these types of sites as the preservation hold library will be reverted to the prior point in time. A new URL restore is recommended for that type of site as the cleanest option.
  
-    - OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.
- 
+  - OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.
+    
+  - SharePoint sites that utilize Term Store term sets will restore, but the terms will not restore to their previous states.  Terms will retain their current state when the site itself is restored by Microsoft 365 Backup.
+    
     - OneDrive accounts and SharePoint sites being restored to a new URL have a read-only lock on that new URL. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can download documents or remove the read-only lock manually.
 
         [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
@@ -271,7 +279,7 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
     - If the parent folder of an item has been deleted, the item will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
  
 - All
-
+    - Restore session history is retained for 366 days.
     - Abusive restore actions aren't permitted. You should limit restores for testing purposes to no more than twice a month per protection unit. Restores for real recovery purposes aren't limited.
 
     - The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points start being generated when you create the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10 minutes for the entire year. For OneDrive and SharePoint, the available restore points are available for 10 minutes for up to 2 weeks prior, and weekly for 2 to 52 weeks prior. Based on the defined and currently invariable backup frequency setting previously described, the following example highlights what is possible.

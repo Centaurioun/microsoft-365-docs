@@ -148,9 +148,11 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 | France | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
 | Germany | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
 | India | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Indonesia | M-A | M-A | M-A | M-A | A | A | A | A |
 | Israel | M-A | M-A | M-A | M-A | A | A | A | A |
 | Italy | M-A | M-A | M-A | M-A | A | A | A | A |
 | Japan | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Malaysia | M-A | M-A | M-A | M-A | A | A | A | A |
 | Mexico | M-A | M-A | M-A | M-A | A | A | A | A |
 | New Zealand | M-A | M-A | M-A | M-A | A | A | A | A |
 | Norway | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
@@ -185,11 +187,13 @@ The following Regional Geographies can store data at rest.
 |France   |Paris, Marseille   |
 |Germany   |Frankfurt, Berlin    |
 |India  |Chennai, Mumbai, Pune    |
+|Indonesia  |Jakarta    |
 |Israel  |Tel Aviv    |
 |Italy  |Milan    |
 |Japan   |Osaka, Tokyo   |
 |South Korea  |Busan, Seoul    |
 |Spain   |Madrid    |
+|Malaysia  |Kuala Lumpur    |
 |Mexico   |Queretaro    |
 |New Zealand    |Auckland   |
 |Norway   |Oslo, Stavanger    |

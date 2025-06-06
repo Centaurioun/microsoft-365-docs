@@ -69,7 +69,7 @@ The providers facilitate the signing process and send out all relevant notificat
 
 ## Current release notes
 
-- The feature to use SharePoint eSignature in Word will begin rolling out to users on the Microsoft 365 Beta and Current channels at the end of May. Until then, SharePoint eSignature is available for only PDF documents.
+- The feature to use SharePoint eSignature in Word will begin rolling out to users on the Microsoft 365 Beta and Current channels in June. Until then, SharePoint eSignature is available for only PDF documents.
 
 - Tracking of SharePoint eSignature requests through the Approvals app in Microsoft Teams is now available.
 
