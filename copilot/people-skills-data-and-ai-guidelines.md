@@ -27,5 +27,5 @@ You can find the actual location of your data in Microsoft 365 Admin Center. As 
 
 - [AI transparency in People Skills](https://go.microsoft.com/fwlink/?linkid=2321446)
 - [Microsoft’s commitment to Responsible AI](https://www.microsoft.com/ai/responsible-ai?msockid=154ce9bde0236a9e239afb72e4236c97) 
-- [Microsoft Responsible AI standard](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Responsible-AI-Standard-General-Requirements.pdf?culture=en-us&country=us)
+- [Microsoft Responsible AI standard](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/microsoft-brand/documents/Microsoft-Responsible-AI-Standard-General-Requirements.pdf?culture=en-us&country=us)
 
