@@ -32,17 +32,17 @@ The Employee Self-Service agent is built on top of Microsoft 365 Copilot and Cop
 
 Before you deploy the Employee Self-Service agent, read through the documentation and familiarize yourself with the areas of deployment and configuration. The ESS agent inherits the Copilot stack, which needs to be considered for initial installation and for operational policies. You can refer to the [Copilot hub](/copilot/microsoft-365) for documentation on architecture, trust, security, compliance, and best practices in Microsoft 365 Copilot.
 
-- [Microsoft 365 Copilot hub](/copilot/microsoft-365/)
-- [Overview of Microsoft 365 Copilot.](/microsoft-365-copilot-overview)
-- [Microsoft 365 Copilot architecture](/microsoft-365-copilot-architecture)
-- [Address oversharing concerns in Microsoft 365 Copilot deployment blueprint](/microsoft-365-copilot-blueprint-oversharing)
-- [Microsoft 365 Copilot privacy](/microsoft-365-copilot-privacy)
+- [Microsoft 365 Copilot hub](../copilot/microsoft-365.md)
+- [Overview of Microsoft 365 Copilot.](../microsoft-365-copilot-overview.md)
+- [Microsoft 365 Copilot architecture](../microsoft-365-copilot-architecture.md)
+- [Address oversharing concerns in Microsoft 365 Copilot deployment blueprint](../microsoft-365-copilot-blueprint-oversharing.md)
+- [Microsoft 365 Copilot privacy](../microsoft-365-copilot-privacy.md)
 - [Microsoft 365 Copilot service description](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot)
 - [What is responsible AI?](https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92)
 
 ### Microsoft Copilot Studio resources
 
-- [Copilot Studio documentation home](/microsoft-copilot-studio/)
+- [Copilot Studio documentation home](/microsoft-copilot-studio)
 - [Topics in Copilot Studio](/microsoft-copilot-studio/guidance/topics-overview)
 - [Analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview)
 - [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance)
@@ -53,11 +53,17 @@ Before you deploy the Employee Self-Service agent, read through the documentatio
 
 The ESS Agent involves multiple roles across different service areas. Operators in each of these should understand the configuration entirely for better operational efficiency.
 
-<!--- infographic----->
+The **Admin** works in the Microsoft admin center to assign roles.
+
+The **Maker** works in Microsoft Copilot Studio to configure the agent. The maker sets up user context, knowledge sources (including M365 data and ISV connectors), topics, and ISV packages. All of this goes through orchestration to reach the end user.
+
+The **End user** accesses the Employee Self-Service agent in Microsoft 365 Chat or through Microsoft Teams.
 
 ## Structure of the Employee Self-Service agent
 
-<!--- infographic----->
+The Employee Self-Service agent consists of three main parts: the agent itself, domain topic packages, and Power Platform connectors and actions.
+
+<!-- infographic-->
 
 [Learn more about how Copilot architecture works](/microsoft-365-copilot-architecture)
 
