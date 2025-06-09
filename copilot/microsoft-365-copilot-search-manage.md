@@ -22,7 +22,7 @@ No action is required by admins to set up Microsoft 365 Copilot Search. If a use
 > [!NOTE]
 > Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
-## Copilot Search and third party systems
+## Copilot Search and third-party systems
 
 Copilot Search can access and reason over data in third-party systems as well as Microsoft 365 apps and other systems in the Microsoft Graph. This is achieved through Microsoft 365 Copilot connectors, which allow organizations to bring in data from external platforms like Salesforce, ServiceNow, Confluence, and more. Additionally, plugin extensibility enables Copilot Search to interact with third-party apps, making it possible to search and act on data across a wide range of systems, all within the Microsoft 365 experience.
 
