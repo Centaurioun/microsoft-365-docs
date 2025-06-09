@@ -73,7 +73,7 @@ The Microsoft 365 admin center now includes the Copilot Search admin experienc
 
 These features help ensure that users find the right information faster, especially when navigating internal terminology or frequently accessed content.
 
-To learn more, see [Microsoft 365 Copilot Search](../../copilot/microsoft-365-copilot-search.md).
+To learn more, see [Microsoft 365 Copilot Search](../../copilot/microsoft-365/microsoft-365-copilot-search).
 
 ## April 2025
 
