@@ -1,11 +1,11 @@
 ---
-title: Set up and manage enhanced image tagging in Microsoft Syntex
+title: Set up and manage enhanced image tagging in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 01/13/2025
+ms.date: 04/13/2025
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -18,9 +18,9 @@ ms.localizationpriority:  medium
 description: Learn how to set and configure enhanced image tagging in SharePoint.
 ---
 
-# Set up and manage enhanced image tagging in Microsoft Syntex
+# Set up and manage enhanced image tagging in SharePoint
 
-The image tagging service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+Image tagging is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), image tagging is automatically set up and enabled for all SharePoint sites.
 
-Although you enable pay-as-you-go billing for image tagging, you are charged only when [image tagging is enabled on a document library](image-tagging.md).
+Although you enable pay-as-you-go billing for image tagging, you're charged only when [image tagging is enabled on a document library](image-tagging.md).
 
 ## Manage sites
 

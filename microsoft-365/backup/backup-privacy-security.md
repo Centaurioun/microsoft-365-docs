@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 02/26/2025
+ms.date: 06/05/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 search.appverid: 
@@ -63,9 +63,13 @@ Data residency refers to the geographic location where data is stored at rest. T
 
 All data within Microsoft 365 Backup is stored within the customer tenant for any given service and follows the standard Microsoft 365 data storage guidelines by available geography. The metadata used for billing purposes is sent to Azure and includes: entitlement_id, event_id, usage_date_time, metered_resource_id, quantity, resourceUri, location, tags.isinternaltenant, tags.protectionunitid, tags.servicetype, tags.tenants, tags.applications, and azure_cloud.
 
+## Audit logs
+
+[Microsoft Purview auditing solutions](/purview/audit-get-started) provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. You can [search for audit events](/purview/audit-search) for [Backup activities](/purview/audit-log-activities) such as create policy or restore using PowerShell or Microsoft Purview Audit.
+
 ## Security
 
-Microsoft 365 Backup works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such as identity and app management—apply to Microsoft 365 Backup.
+Microsoft 365 Backup works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such as identity and app management—apply to Microsoft 365 Backup. The bring-your-own-key (BYOK) feature seamlessly integrates with Microsoft 365 Backup to enhance data security.
 
 ## Compliance
 

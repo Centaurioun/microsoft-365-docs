@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires, kkameth
-ms.date: 03/01/2025
+ms.date: 06/04/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -26,13 +26,16 @@ When you use pay-as-you-go services, you're billed using Syntex meters in the Az
 
 To help your organization in planning for pay-as-you-go services, you can use the [SharePoint cost calculator](https://aka.ms/SharePoint/PAYG-Calculator). This tool gives you a better understanding of your organization’s usage patterns and estimated costs so you can make more informed decisions.
 
+> [!NOTE]
+> While these services leverage an Azure subscription for billing purposes, they do not apply to the [Microsoft Azure Consumption Commitment (MACC)](/marketplace/azure-consumption-commitment-benefit) that your organization might have.
+
 The following tables describe each meter, its pricing, and how it measures usage. When you connect your Azure subscription to Microsoft Syntex, users in your organization are able to take advantage of Syntex services right away. Your tenant is billed according to the details shown in this article.
 
 ## Document & image services
 
 |Service|What's counted?|What's billed? (USD)|
 |:----|:--------------|:-------------|
-|**[Autofill columns](autofill-overview.md)** |The number of pages processed. Each processed page counts as one transaction. Cost is the same for one or more prompts per page. |$0.005/transaction |
+|**[Autofill columns](autofill-overview.md)** |The number of pages processed for Word, PDF, or TIFF files; the number of sheets for Excel files; the number of slides for PowerPoint files; or the number of files for other file types. Each of these counts as one transaction. Cost is the same for one or more prompts per page. |$0.005/transaction |
 |**[Content assembly](content-assembly.md)** |The number of documents (Word or PDF) created using Syntex templates. Each processed document counts as one transaction.<br><br>If you have an existing Syntex per-user license, you won't be charged for generating documents manually but will be charged for automated document generation using Power Automate. |$0.15/transaction |
 |**[Document translation](translation-overview.md)** |The number of characters processed. Character count includes letters, Unicode code points, punctuation, and white spaces. |$15.00/1M characters |
 |**[eSignature](esignature-overview.md)** |The number of electronic signature requests created. Up to 10 recipients can be included in each request. |$2.00/request |
@@ -47,7 +50,7 @@ The following tables describe each meter, its pricing, and how it measures usage
 
 |Service|What's counted?|What's billed? (USD)|
 |:----|:--------------|:-------------|
-|**[Microsoft 365 Archive](/microsoft-365/archive/archive-overview)**  |The number of gigabytes (GB) of data archived. (This meter is only charged when archived storage plus active storage in SharePoint exceeds a tenant’s included or licensed allocated SharePoint storage capacity limit.) <br>Reactivation of archived data after seven days. <br><br><sup>**NOTE**: Education organizations are billed at $0.02/GB/month for the data archived. This meter is only charged when archived storage in SharePoint plus active pooled storage usage exceeds a tenant’s pooled storage capacity limit. For more information, see [Education offering](../archive/archive-education-offering.md).</sup>    |$0.05/GB/month (shows on invoice as $0.00167/GB/day)<br><br>$0.60/GB|
+|**[Microsoft 365 Archive](/microsoft-365/archive/archive-overview)**  |The number of gigabytes (GB) of data archived. (This meter is only charged when archived storage plus active storage in SharePoint exceeds a tenant’s included or licensed allocated SharePoint storage capacity limit.) <br>**For OneDrive only**, the number of GBs of archived data reactivated. <br><br><sup>**NOTE**: Education organizations are billed at $0.02/GB/month for the data archived. This meter is only charged when archived storage in SharePoint plus active pooled storage usage exceeds a tenant’s pooled storage capacity limit. For more information, see [Education offering](../archive/archive-education-offering.md).</sup>    |$0.05/GB/month (shows on invoice as $0.00167/GB/day)<br><br>$0.60/GB|
 |**[Microsoft 365 Backup](/microsoft-365/backup/backup-overview)**  |The number of gigabytes (GB) of data backed up. |$0.15/GB/month (shows on invoice as $0.005/GB/day)|
 
 ## Video services
