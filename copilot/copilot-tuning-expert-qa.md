@@ -16,7 +16,7 @@ search.appverid: [placeholder-metadata]
 
 [!INCLUDE [metadata-learn-get-started-article-pattern](placeholder-md-file)]
 
-*This article is part of the solution.*
+Test
 
 ## Capabilities
 
