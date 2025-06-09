@@ -1,5 +1,5 @@
 ---
-title: Prerequisites to deploy the Employee Self-Service agent
+title: Prepare to deploy the Employee Self-Service agent
 f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
@@ -11,53 +11,65 @@ ms.service: microsoft-365-copilot
 ms.custom: ess-agent
 ms.localizationpriority: medium
 ms.collection: m365copilot
-description: Learn about the prerequisites you need to meet before deploying the Employee Self-Service agent.
+description: Learn about the first stage in the deployment process for the Employee Self-Service agent.
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Prerequisites to deploy the Employee Self-Service agent
+# Prepare to deploy the Employee Self-Service agent
 
-You'll need to confirm the following prerequisites have been met before deploying the Employee Self-Service agent (ESS) to your organization.
+Preparation is the first step to deploying the Employee Self-Service (ESS) agent. First, you need to meet the [prerequisites](ess-prerequisites.md) The following roles are required to prepare the agent for deployment.
 
-## Licensing
+|Role |Activities to perform |Configuration areas |
+|-----|----------------------|--------------------|
+|Global admin |Assign the Power Platform Administrator role. |Microsoft admin center |
+|Power Platform Administrator |Assign the Environment Maker role. |Power Platform admin center |
+|Environment Maker |Create environments required for customizing and testing the ESS agent. |Power Platform admin center and Microsoft Copilot Studio |
+|InfoSec/ IT Infrastructure/ Change control board |Configure infrastructure requirements for third-party ISV integration. |Network firewall policies and single sign-on |
 
-The ESS Agent is built on top of Microsoft 365 Copilot. Users will therefore need the following licenses depending on the tools they use at work.
+## Assign the Power Platform administrator role
 
-|Role   |Workload/tools   |Licensing and access|
-|----------|-----------|------------|
-|Users  |Microsoft 365 Copilot    |[Microsoft 365 Copilot](../microsoft-365-copilot-licensing.md)       |
-|Users |Microsoft Power Platform*  |[Licensing overview for Power Platform](/power-platform/admin/pricing-billing-skus) </br>[Request limits and allocations](/power-platform/admin/api-request-limits-allocations)|
-|Users |Microsoft Teams |[Manage user access to Microsoft Teams](/microsoftteams/user-access) |
-|Environment admins and makers |Copilot Studio |[Copilot Studio licensing and subscriptions](/microsoft-copilot-studio/requirements-licensing-subscriptions) |
+1. Sign in as a Global admin to your [admin center](hhtps://admin.microsoft.com).
+1. Select **Roles**, then choose **Role assignments**.
+1. In the **Microsoft Entra ID** section, find the **Power Platform Administrator** role.
+1. Add the users you've chosen as service owners for the ESS agent in the **Assigned** section.
 
-*Premium licenses are required for some third-party connectors.
+## Set up your Power Platform environment and assign the Environment Maker role
 
-## Required roles
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Power Platform administrator.
+1. Create a new environment, or select an existing environment to install the ESS agent.
+1. Select **+New** in the ribbon to create a new environment. Configure the following features:
+    1. **Make this a Managed Environment**: Enable or disable based on your governance.
+    1. **Get new features early**: Not required.
+    1. Add a **Dataverse data store**.
+1. Under **Access**, select **Security roles**.
+1. From the list of security roles, select **Environment Maker**. Choose **Members** in the top ribbon.
+1. Select **Add people** in the ribbon to add the designated person who can configure and publish the ESS agent. This person is typically the service owner in your organization.
 
-The ESS Agent includes several different technical components and configuration areas, which require different Microsoft 365 roles for deployment. It's recommended to use the least privileged role possible to perform each necessary activity. For roles with elevated privileges, use just-in-time access.
+>[!NOTE]
+>Environment Makers can't install new agents. Only the environment administrators can install new agents.
 
-|Role |Description |Activities performed |Configuration areas|
-|-----|------------|---------------------|-------------------|
-|Global admin |User who has permissions to configure and delegate other roles |Assign user roles |Microsoft admin center |
-|Power Platform administrator |User who has power to configure Power Platform environments and assign roles within Power Platform |- Create environments </br> - Assign user roles </br> - Install ESS agent |- Power Platform </br> - Microsoft Copilot Studio |
-|Power Platform maker |User who has permission to make changes in a specific Power Platform environment. It’s recommended to have the service owner for this agent perform this role. |Configure ESS agent |- Power Platform </br> - Microsoft Copilot Studio |
-|ISV administrators |Users who manage third-party solutions |Provide configuration inputs for ISV applications |ISV application's administration and configuration interface |
-|Information security |Infrastructure team who manage and control enterprise application security policies |- Whitelist inbound requests for ISV endpoints </br> - Manage single sign-on configurations |- Network firewall policies </br> - Signle sign-on applications |
-|Change control board |Team that manages changes in an organization relating to deploying an enterprise application |- Approve technical architecture </br> - Approve data security, compliance, and governance policies </br> - Approve responsible AI polices |N/A |
+>[!IMPORTANT]
+>Important: Familiarize yourself with the Power Platform subscription plans and billing policies for your tenant. It’s recommended to perform initial capacity planning before enabling and configuring the ESS agent to make sure you won’t incur additional billing.
 
-[Learn more about role-based security roles for Power Platform](/power-platform/admin/database-security)
+## Infrastructure setup for third-party ISV integration
 
-### Non-configuration required roles
+Most organizations have secured their third-party HR systems and knowledge sources from external networks to protect sensitive information about employees, organizations, knowledge assets, and other data.
 
-These roles don't need to work in the technical configuration areas, but they're crucial to the success of the agent.
+You’ll need to make these systems accessible to the Power Platform environment where the ESS agent is hosted in order to integrate them into the agent.
 
-- Human resources representatives
-- Information technology representatives
-- Legal and privacy representatives
+These systems must be configured with allowlists for the source IP addresses from the Power Platform environment where the ESS agent is hosted and executed.
 
-All of these roles are responsible for:
+[Learn about Power Platform URLs and IP address ranges](/power-platform/admin/online-requirements).
 
-- Identifying knowledge sources relating to their area of specialty
-- Providing frequent queries
-- Identifying sensitive topics
+[Learn about Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
+
+## Preparation checklist
+
+Use the following checklist to make sure you’re ready to move on to the next stage of deployment. If any of these checks fail, you’ll need to repeat the steps in this article.
+
+|Role |Verification steps |Result |
+|-----|-------------------|-------|
+|Environment administrator |1. Sign into the Power Platform admin center. </br>2. Select Environments to confirm your newly created environment is listed. </br>3. Confirm the following for your new environment: Dataverse= yes, release cycle = standard. |Pass/Fail |
+|Environment administrator |Confirm you have the ability to install agents from Copilot Studio. |Pass/Fail |
+|Environment maker |Access your newly created environment from Copilot Studio. |Pass/Fail |
