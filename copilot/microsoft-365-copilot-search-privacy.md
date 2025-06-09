@@ -25,13 +25,13 @@ Microsoft 365 Copilot Search is compliant with our existing privacy, security, a
 
 Microsoft 365 Copilot Search can access and reason over the data it has permission to see within a user's Microsoft 365 environment. This includes:
 
-- **Microsoft Graph** - Emails, chats, calendar events, files in OneDrive and SharePoint, and meetings.
-- **Microsoft 365 apps** - Word, Excel, PowerPoint, Outlook, Teams, OneNote, and Loop.
-- **Third-party apps** - Salesforce, ServiceNow, Confluence and more, via Microsoft 365 Copilot connectors.
+- **Microsoft Graph** - Emails, chats, calendar events, files in OneDrive and SharePoint, and meetings
+- **Microsoft 365 apps** - Word, Excel, PowerPoint, Outlook, Teams, OneNote, and Loop
+- **Third-party apps** - Salesforce, ServiceNow, Confluence and more, via Microsoft 365 Copilot connectors
 
 Copilot Search only returns information that the user already has access to, respecting existing permissions and security boundaries. For guidelines on how to restrict access to information, see [Manage access to files and sites](/microsoftsearch/manage-access-files-sites).
 
-## Restrict content discovery in SharePoint
+## Restricted Content Discovery in SharePoint
 
 With Restricted Content Discovery, organizations can limit the ability of end users to search for files in specific SharePoint sites. When you enable Restricted Content Discovery for each site, it prevents the sites from surfacing content in organization-wide search results and Microsoft 365 Copilot answers, unless a user owns or recently interacted with content on those sites. For more information, see [Restrict discovery of SharePoint sites and content](/sharepoint/restricted-content-discovery).
 

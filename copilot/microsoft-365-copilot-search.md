@@ -36,34 +36,34 @@ Users without an assigned and eligible Microsoft 365 Copilot license will see th
 
 Copilot Search isn't included with [Microsoft 365 Copilot Chat](/copilot/overview). While both are part of the broader Microsoft Copilot ecosystem, Copilot Search requires a Microsoft 365 Copilot license, while Copilot Chat does not.
 
-## Differences Between Copilot Search and Microsoft Search
+## Differences between Copilot Search and Microsoft Search
 
 Microsoft 365 Copilot Search is designed as an AI-powered, enterprise-grade search assistant. It’s a universal work-search experience, helping you find the content you need in Microsoft 365 as well as third-party applications. It understands natural language, context, relationships, and user behavior to deliver personalized, relevant results. It goes beyond keyword matching to interpret user intent and provide AI-generated answers with references and options to follow up using Copilot Chat.
 
 [Microsoft Search](/microsoftsearch/overview-microsoft-search), by contrast, is a more traditional search experience. It relies on keyword-based queries and returns a list of links or documents. While it integrates with Microsoft 365, it lacks the conversational and contextual depth of Copilot Search.
 
-## How Copilot Search Works with Microsoft 365 Copilot
+## How Copilot Search works with Microsoft 365 Copilot
 
 Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated **Search** tab. This integration allows users to:
 
-- Use natural language to find information across Microsoft 365 and connected third-party systems.
-- Seamlessly transition from a search query to a Copilot-generated answer when intent detection anticipates a multiturn interaction.
-- Expand a Copilot Search answer and continue the conversation in Copilot Chat, enabling a fluid handoff between search and chat experiences.
+- Use natural language to find information across Microsoft 365 and connected third-party systems
+- Seamlessly transition from a search query to a Copilot-generated answer when intent detection anticipates a multiturn interaction
+- Expand a Copilot Search answer and continue the conversation in Copilot Chat, enabling a fluid handoff between search and chat experiences
 
 This design positions search as the organizing layer for AI, while chat remains the workspace for task execution and deeper interactions. For example, if a user searches for **what's the status of the Q2 report**, Copilot Search may return a summarized answer and offer to continue the conversation in chat for more nuanced exploration or follow-up actions.
 
-## Natural Language Search
+## Natural language search
 
 Copilot Search supports natural language queries, allowing users to type questions or requests in everyday language. For example, you can search for, **show me the latest updates from the marketing team** or **find the presentation Rachel shared last week**, and Copilot Search will understand your intent and return relevant results from across Microsoft 365, including emails, files, chats, meetings, and more.
 
 Copilot Search goes beyond keyword matching by using AI to interpret context, relationships, and meaning, helping you find what you need faster and more intuitively. It also supports traditional keyword queries for specific words or short phrases, relying on exact or partial matches. But a natural language query can engage AI to better interpret the context of the query, leading to more relevant results.
 
-## Answer Types
+## Answer types
 
 Depending on the query, Copilot Search can provide concise, authoritative answers that are relevant to your organization. These answers are delivered directly in search results and deliver information about your organization's acronyms, bookmarks, and people.
 
 - **Acronym answers:** Define terminology used in the workplace.
 - **Bookmark answers:** Promote key resources in your organization.
-- **People Answers:** Surface coworkers' roles and show how they fit into the organization.
+- **People answers:** Surface coworkers' roles and show how they fit into the organization.
 
 For more information, see [how to curate bookmarks and acronyms for Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search-manage?view=o365-worldwide).

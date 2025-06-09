@@ -24,19 +24,19 @@ No action is required by admins to set up Microsoft 365 Copilot Search. If a use
 
 ## Copilot Search and third party systems
 
-Copilot Search can access and reason over data in third-party systems as well as Microsoft 365 apps and other systems in the Microsoft Graph. This is achieved through Microsoft 365 Copilot connectors, which allow organizations to bring in data from external platforms like Salesforce, ServiceNow, Confluence, and more. Additionally, plugin extensibility enables Copilot Search to interact with third-party apps during runtime, making it possible to search and act on data across a wide range of systems, all within the Microsoft 365 experience.
+Copilot Search can access and reason over data in third-party systems as well as Microsoft 365 apps and other systems in the Microsoft Graph. This is achieved through Microsoft 365 Copilot connectors, which allow organizations to bring in data from external platforms like Salesforce, ServiceNow, Confluence, and more. Additionally, plugin extensibility enables Copilot Search to interact with third-party apps, making it possible to search and act on data across a wide range of systems, all within the Microsoft 365 experience.
 
 Learn more about [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector).
 
 ## Microsoft 365 Copilot extension
 
-The Microsoft 365 Copilot Extension is a cross-browser add-on that enhances your Copilot Search results. This extension brings together information from tickets, files, documents, and tasks across multiple work-related third-party sites, providing highly relevant and personalized search results.
+The Microsoft 365 Copilot extension is a cross-browser add-on that enhances your Copilot Search results. This extension brings together information from tickets, files, documents, and tasks across multiple work-related third-party sites, providing highly relevant and personalized search results.
 
-The Microsoft 365 Copilot Extension works in the background without any manual steps after installation. It is enabled by your organization through the Microsoft Edge Add-Ons website or the Chrome Web store (extensions). The extension only uses activity from third-party apps or sites configured by your organization and doesn't track your general web browsing. Data captured is stored securely and used only to improve your Copilot Search experience and is not shared with others.
+The Microsoft 365 Copilot extension works in the background without any manual steps after installation. It is enabled by your organization through the Microsoft Edge Add-Ons website or the Chrome Web store (extensions). The extension only uses activity from third-party apps or sites configured by your organization and doesn't track your general web browsing. Data captured is stored securely and used only to improve your Copilot Search experience and is not shared with others.
 
 For the preview program, we support the following third-party apps or connectors: ADO, ServiceNow KB, ServiceNow Catalog, ServiceNow Tickets, Jira, Google Drive, Confluence, and GitHub.
 
-Learn more about [Microsoft 365 Copilot Extension](/microsoftsearch/crossover-browser).
+Learn more about [Microsoft 365 Copilot extension](/microsoftsearch/crossover-browser).
 
 ## Bookmarks and acronyms
 
@@ -50,7 +50,7 @@ As the admin, you can curate bookmarks and acronyms for Copilot Search just as y
 
 Organizations can restrict end users from searching for files in certain SharePoint sites by enabling Restricted Content Discovery. This setting prevents the sites from appearing in organization-wide search results and Microsoft 365 Copilot answers unless a user owns or has recently interacted with content on those sites.
 
-Learn more about [restricting content discovery in SharePoint](/sharepoint/restricted-content-discovery).
+Learn more about [Restricted Content Discovery in SharePoint](/sharepoint/restricted-content-discovery).
 
 Admins can also manage access to other sensitive organizational data using tools, policies, and techniques tailored to their needs. Microsoft offers solutions to prevent the oversharing of sensitive data and identify sites with the most sensitive documents.
 
