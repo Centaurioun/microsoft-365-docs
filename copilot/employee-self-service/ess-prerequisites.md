@@ -1,0 +1,73 @@
+---
+title: Overview of the Employee Self-Service agent
+f1.keywords: NOCSH
+ms.author: daisyfeller
+author: daisyfell
+manager: triciagill
+ms.date: 6/20/2025
+audience: Admin
+ms.topic: article
+ms.service: microsoft-365-copilot
+ms.custom: ess-agent
+ms.localizationpriority: medium
+ms.collection: m365copilot
+description: Learn about the Employee Self-Service agent and the steps you need to follow to deploy it to your organization.
+appliesto:
+  - ✅ Microsoft 365 Copilot
+---
+
+# Overview of the Employee Self-Service agent
+
+The Employee Self-Service (ESS) agent helps your employees by answering policy related questions, simplifying HR tasks, and assisting with IT help. The agent makes it easier to:
+
+- Retrieve the right information at the right time in the flow of work. Users can access the agent in the environments they already work, including Teams and Microsoft 365 Copilot Chat.
+- Take action on essential HR and IT tasks without navigating to multiple tools and workspaces. ESS can even help run diagnostics on Microsoft 365 products and services.
+- Complete other tasks important for your organization. The ESS agent includes preconfigured templates, but IT admins can also customize it for their employee workflows. You can even connect it to third-party HR and IT systems.
+
+## Get started with the Employee Self-Service agent
+
+The Employee Self-Service agent is built on top of Microsoft 365 Copilot and Copilot Studio. The following articles can help you understand governance, security, privacy, and Responsible AI terms for both Microsoft 365 Copilot and Microsoft Copilot Studio.
+
+### Microsoft 365 Copilot resources
+
+Before you deploy the Employee Self-Service agent, read through the documentation and familiarize yourself with the areas of deployment and configuration. The ESS agent inherits the Copilot stack, which needs to be considered for initial installation and for operational policies. You can refer to the [Copilot hub](/copilot/microsoft-365) for documentation on architecture, trust, security, compliance, and best practices in Microsoft 365 Copilot.
+
+- [Microsoft 365 Copilot hub](/copilot/microsoft-365/)
+- [Overview of Microsoft 365 Copilot.](/microsoft-365-copilot-overview)
+- [Microsoft 365 Copilot architecture](/microsoft-365-copilot-architecture)
+- [Address oversharing concerns in Microsoft 365 Copilot deployment blueprint](/microsoft-365-copilot-blueprint-oversharing)
+- [Microsoft 365 Copilot privacy](/microsoft-365-copilot-privacy)
+- [Microsoft 365 Copilot service description](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot)
+- [What is responsible AI?](https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92)
+
+### Microsoft Copilot Studio resources
+
+- [Copilot Studio documentation home](/microsoft-copilot-studio/)
+- [Topics in Copilot Studio](/microsoft-copilot-studio/guidance/topics-overview)
+- [Analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview)
+- [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance)
+- [Personal data requests for Copilot Studio](/microsoft-copilot-studio/personal-data-summary)
+- [Responsible AI in Copilot Studio](/microsoft-copilot-studio/responsible-ai-overview)
+
+## Roles and responsibilities
+
+The ESS Agent involves multiple roles across different service areas. Operators in each of these should understand the configuration entirely for better operational efficiency.
+
+<!--- infographic----->
+
+## Structure of the Employee Self-Service agent
+
+<!--- infographic----->
+
+[Learn more about how Copilot architecture works](/microsoft-365-copilot-architecture)
+
+## Limitations and known issues
+
+- The ESS Agent is currently only available in English. More languages will be available after the agent reaches general availabality.
+- The ESS Agent currently doesn’t support on-premises data gateways, even if only used for authentication.
+- The following file size limits apply to knowledge sources. For files exceeding the size limits, consider alternative architectures such as [Microsoft 365 Semantic Indexing](/microsoftsearch/semantic-index-for-copilot) or [connecting your data to Azure OpenAI for Generative answers.](/microsoft-copilot-studio/nlu-generative-answers-azure-openai)
+  - SharePoint sources for users with no Copilot license: up to 7 MB
+  - SharePoint sources for users with a Copilot license: Up to 200 MB
+  - Files uploaded as a knowledge source: Up to 512 MB
+- Pages with multiple links that lead to the relevant information aren't included in the generative answers. Consider adding relevant information for each link in a page that has multiple links.
+- Customizations aren’t stored automatically in the preferred solution for exporting and importing to different environments.
