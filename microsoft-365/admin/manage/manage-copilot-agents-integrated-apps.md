@@ -216,7 +216,9 @@ Blocking or unblocking an agent affects its availability and functionality in Co
 
 :::image type="content" source="../../media/agents/details.png" alt-text="Screenshot showing the details tab for an agent." lightbox="../../media/agents/details.png":::
 
-You can access key metadata for Copilot agents directly within the publish flow on the Integrated apps page. This metadata includes details such as the agent’s capabilities, data sources (for example, OneDrive and SharePoint files and sites, or Graph connectors), and custom actions. It’s important to note that metadata is only for custom agents, which are designed to perform specific tasks based on predefined rules and configurations.
+You can access key metadata for Copilot agents in **Agents & connectors** > **Agent inventory**. When you select an agent, the metadata is available in the **Details** tab. 
+
+The metadata includes details such as the agent’s capabilities, data sources (for example, OneDrive and SharePoint files and sites, or Graph connectors), and custom actions. It’s important to note that metadata is only for custom agents, which are designed to perform specific tasks based on predefined rules and configurations.
 
 ## View and consent to permissions and data access
 
