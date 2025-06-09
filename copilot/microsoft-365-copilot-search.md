@@ -66,4 +66,4 @@ Depending on the query, Copilot Search can provide concise, authoritative answer
 - **Bookmark answers:** Promote key resources in your organization.
 - **People answers:** Surface coworkers' roles and show how they fit into the organization.
 
-For more information, see [how to curate bookmarks and acronyms for Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search-manage?view=o365-worldwide).
+For more information, see [how to curate bookmarks and acronyms for Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-page).
