@@ -1,5 +1,5 @@
 ---
-title: Prepare to deploy the Employee Self-Service agent
+title: Customize the Employee Self-Service agent
 f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
@@ -11,65 +11,150 @@ ms.service: microsoft-365-copilot
 ms.custom: ess-agent
 ms.localizationpriority: medium
 ms.collection: m365copilot
-description: Learn about the first stage in the deployment process for the Employee Self-Service agent.
+description: Learn about the customization stage in the deployment process for the Employee Self-Service agent.
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Prepare to deploy the Employee Self-Service agent
+# Customize the Employee Self-Service agent
 
-Preparation is the first step to deploying the Employee Self-Service (ESS) agent. First, you need to meet the [prerequisites](ess-prerequisites.md) The following roles are required to prepare the agent for deployment.
+Customization is how you make the Employee Self-Service (ESS) agent work in the best way to suit your organization's needs.
 
-|Role |Activities to perform |Configuration areas |
-|-----|----------------------|--------------------|
-|Global admin |Assign the Power Platform Administrator role. |Microsoft admin center |
-|Power Platform Administrator |Assign the Environment Maker role. |Power Platform admin center |
-|Environment Maker |Create environments required for customizing and testing the ESS agent. |Power Platform admin center and Microsoft Copilot Studio |
-|InfoSec/ IT Infrastructure/ Change control board |Configure infrastructure requirements for third-party ISV integration. |Network firewall policies and single sign-on |
+|Role |Activities to perform |Configuration area |
+|-----|----------------------|-------------------|
+|Environment Maker </br>Service owner of ESS agent |- Set up user context </br>- Customize ESS agent |Microsoft Copilot Studio |
+|ISV Administrators </br>Service owners of specific applications |Provide configuration inputs such as URLs, OAUTH tokens, and more |ISV configuration |
+|HR </br>IT </br>Legal </br>Privacy |-Identify knowledge sources </br>-Provide frequent queries </Identify sensitive queries> | N/A |
 
-## Assign the Power Platform administrator role
+## Understanding components
 
-1. Sign in as a Global admin to your [admin center](https://admin.microsoft.com).
-1. Select **Roles**, then choose **Role assignments**.
-1. In the **Microsoft Entra ID** section, find the **Power Platform Administrator** role.
-1. Add the users you've chosen as service owners for the ESS agent in the **Assigned** section.
+Before continuing with configuring the ESS Agent, the service owner who will manage the ESS agent going forward must have a thorough understanding of its architecture.  
+The ESS agent is built with the following components:
 
-## Set up your Power Platform environment and assign the Environment Maker role
+### Topics
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Power Platform administrator.
-1. Create a new environment, or select an existing environment to install the ESS agent.
-1. Select **+New** in the ribbon to create a new environment. Configure the following features:
-    1. **Make this a Managed Environment**: Enable or disable based on your governance.
-    1. **Get new features early**: Not required.
-    1. Add a **Dataverse data store**.
-1. Under **Access**, select **Security roles**.
-1. From the list of security roles, select **Environment Maker**. Choose **Members** in the top ribbon.
-1. Select **Add people** in the ribbon to add the designated person who can configure and publish the ESS agent. This person is typically the service owner in your organization.
+[Topics](/microsoft-copilot-studio/guidance/topics-overview) are core building blocks of an agent, which are seen as the agent competencies; they define how a conversational dialog plays out. Topics are discrete conversation paths that, when used together, allow for users to have a conversation that feels natural and flows appropriately.
 
->[!NOTE]
->Environment Makers can't install new agents. Only the environment administrators can install new agents.
+### Actions
 
->[!IMPORTANT]
->Important: Familiarize yourself with the Power Platform subscription plans and billing policies for your tenant. It’s recommended to perform initial capacity planning before enabling and configuring the ESS agent to make sure you won’t incur additional billing.
+[Actions](/microsoft-copilot-studio/advanced-plugin-actions) extend agent capabilities. Agents use Actions to respond to users. The agent can respond automatically using [generative orchestration](/microsoft-copilot-studio/advanced-generative-actions), or can call actions explicitly from within a topic.
 
-## Infrastructure setup for third-party ISV integration
+### Knowledge sources
 
-Most organizations have secured their third-party HR systems and knowledge sources from external networks to protect sensitive information about employees, organizations, knowledge assets, and other data.
+[Knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio) act in concert with generative answers. When knowledge sources are added, agents can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. Knowledge sources allow your agents to provide relevant information and insights for your customers. Published agents that contain knowledge use the configured knowledge sources to ground the published agent. Knowledge can be incorporated at the agent level, in the Knowledge page, or at the topic level, with a generative answers node in an agent topic. Knowledge sources can be incorporated into agents during their initial creation, added after the agent is created, or added to a generative answers topic node.
 
-You’ll need to make these systems accessible to the Power Platform environment where the ESS agent is hosted in order to integrate them into the agent.
+### ISV packages
 
-These systems must be configured with allowlists for the source IP addresses from the Power Platform environment where the ESS agent is hosted and executed.
+Packages are reusable components within Copilot Studio to configure certain third-party sources.
 
-[Learn about Power Platform URLs and IP address ranges](/power-platform/admin/online-requirements).
+### Agent instructions (global)
 
-[Learn about Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
+Agent instructions are a high-quality description for each of its topics, actions, and knowledge sources.  Good descriptions ensure the agent selects the right topics, actions, and knowledge sources to respond to users.
 
-## Preparation checklist
+The ESS Agent Instructions are:
 
-Use the following checklist to make sure you’re ready to move on to the next stage of deployment. If any of these checks fail, you’ll need to repeat the steps in this article.
+You are an agent that represents an enterprise organization to help employees find workplace related information and services. You empower them to quickly and easily complete tasks, retrieve information, and get back to their workday. You provide authoritative and succinct answers in an empathetic and kind way. Your tone and voice are warm and relaxed, crisp, and clear, and ready to lend a hand. You can answer questions about various employee policies that are internal to the user's organization. Your responses encourage scanning first, reading second. Ensure content in responses follows the following principles: content is scannable, understandable, concise, coherent. Users trust you to provide them with relevant information from configured knowledge sources, which helps them make the best decision for themselves. While formatting your response
 
-|Role |Verification steps |Result |
-|-----|-------------------|-------|
-|Environment administrator |1. Sign into the Power Platform admin center. </br>2. Select Environments to confirm your newly created environment is listed. </br>3. Confirm the following for your new environment: Dataverse= yes, release cycle = standard. |Pass/Fail |
-|Environment administrator |Confirm you have the ability to install agents from Copilot Studio. |Pass/Fail |
-|Environment maker |Access your newly created environment from Copilot Studio. |Pass/Fail |
+- Always provide citations for each knowledge source you pull from.
+- Response Content that builds confidence is actionable, and conversational.
+- Response Content is customer centric by always being empathetic, accessible, inclusive.
+- Use headers and paragraphs to organize your answer when the response is long.
+- Place the most relevant response on the top and least important at the bottom of the response.
+- Use numbers when listing steps and options. Use bullets when referencing content related to steps and options.
+
+Do not try to provide answers when you don’t have enough information. You must not generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content. You must not generate content that is hateful, racist, sexist, lewd or violent. You must not answer any questions comparing the user's organization with other enterprises. You must not provide pros and cons comparing the user's organization with other enterprises. You must not use your own general knowledge. Handle sensitive subjects like mental health with extra empathy and attention.
+
+For more information about agent instructions, refer to the [documentation and best practices on authoring descriptions](/microsoft-copilot-studio/advanced-generative-actions#authoring-descriptions).
+
+### Knowledge source instructions
+
+Clarify how each source should be used. Custom instructions for knowledge sources are important because they helps the agent understand how to interpret and apply the information accurately when generating answers so responses are relevant, trustworthy, and aligned with the user’s intent. [Learn more about knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio).
+
+### Topic trigger phrases and instructions
+
+Fine-tune how the agent detects user intent and delivers task-focused responses.
+
+## Response quality
+
+A great response is accurate, actionable, and engaging to ensure we earn trust, provide useful responses, and help the user take the next step using self-service tools. The ESS agent requires a blend of design elements, agent instructions, and conversational design techniques to craft great responses.
+
+- Responses need to be **engaging** by using personal data, balanced formatting, and natural language.
+- Responses need to be **accurate** by using instructions for intent matching and using certain UI elements.
+- Responses need to be **actionable** by reliably mobilizing users to the best next step or resource.
+
+## Branding
+
+You can brand the ESS agent based on your branding guidelines. The following branding elements are available:
+
+- Name
+- Description
+- Logo
+- Instructions
+
+You can customize most of these in Copilot Studio by selecting the **Edit** button in the **Overview** section of the agent.
+
+To customize the logo, go to your **Settings** page in Copilot Studio and select **Agent details.**.
+
+## Customize Topics
+
+The Employee Self-Service agent comes with several out-of-the-box Topics to get you started. Each of these topics can be customized by the maker and tested before publishing it to the broader set of users. These customizations reflect in all surfaces where the agent is published.
+
+The following Topics are available:
+
+|Topic |Type |Trigger |Enabled (default) |When to use |
+|------|-----|--------|------------------|------------|
+|[Admin] - User Context - Setup |Topic |On redirect |On |Set user context for retrieval topics from different sources including ISV extension packs. This Topics is required. |
+|[Example] - Crafted Response |Topic |By agent |Off |Display a verbatim message that includes an **Official Answer** for more control over certain situations. |
+|[Example] - Sensitive Topics |Topic |By agent |Off |Edit responses for sensitive topics to help users navigate potentially harmful conversations. |
+|[System] - Log Telemetry Event |Topic |On redirect |On |Log events and other details for internal debugging and agent management purposes. |
+|[System] - On Error |System Topic |On error |On |Edit general error messages for common scenarios to improve engagement and task completion. |
+|[System] - Reset Converation |Topic |Activity received |Off |Conversation cache times out to help improve engagement. |
+|[System] - Response Preparation |Topic |On generated response |On |Add an official source badge with a custom disclaimer message for authoratative responses. </br>Known issue: This badge shows only in Copilot chat and can't be tested in Copilot Studio. |
+|[System] - User Context - Init variables |Topic |On redirect |On |Improve peformance by updating and caching user context attributes to default values. </br>*No customizations available*. |
+|[System] - User Context - Validate |Topic |Activity received |On |User context attributes refreshed. </br>*No customizations available*. |
+|Agent handoff - [Scenario name] |Topic |By agent |Off | |
+|Conversation Start |System Topic |On conversation start |On |Initializes the user context attributes with default values. The maker can customize the welcome message. |
+
+### Customize the Topics as an Environment Maker
+
+Refer to these instructions to customize the Topics as an Environment Maker.
+
+Terms to know:
+
+**JTBD** - Jobs to be done.
+
+#### [Admin] User Context - Setup
+
+|  |   |
+|--|---|
+|Default |On |
+|Topic JTBD |Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another non-authoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy". |
+|Maker JTBD |Maker needs to add redirection of the User Context retrieval topics from different ESS agent ISV packages. Or, if Makers configure other Topics to retrieve User Context attributes from other systems, then they should also be added as Topic redirections in this Topic. |
+|Maker - What to customize |**Requirement to use:** None. </br>1. After message disclaimer (blank). Add message or delete it if you don't want the disclaimer to appear. </br>2. Official source badge - no configuration required. You can use this in its default state. |
+
+|Step |Action |Expected result |
+|-----|-------|----------------|
+|1 |Open the ESS agent in Copilot Studio. |ESS agent available to customize |
+|2 |Navigate to **Topics** to see the list of Topics. |Shows Custom Topics |
+|3 |Select **[Admin] User Context - Setup** |Opens custom topic in the design canvas |
+|4 |Add a redirect to another Topic where it sets the user context, such as one from an ISV. |Maker able to add a custom disclaimer message |
+|5| Save the changes. |Your changes are saved |
+
+#### [System] Response Preparation
+
+|   |    |
+|---|----|
+|Default |On |
+|Topic JTBD |Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another non-authoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy". |
+|Maker JTBD |1. Configure a single disclaimer that applies for all UST responses across all verticals (**After-message disclaimer**). </br>2. Configure responses with the **official source** badge in the UX to give users confidence that the response is from legitimate sources. |
+|Maker - What to customize |**Requirement to use:** None. </br>1. After message disclaimer (blank). Add message or delete it if you don't want the disclaimer to appear. </br>2. Official source badge - no configuration required. You can use this in its default state. |
+
+|Step |Action |Expected result |
+|1 |Open the ESS agent in Copilot Studio. |ESS agent available to customize |
+|2 |Navigate to **Topics** to see the list of Topics. |Shows Custom Topics |
+|3 |Select **[System] -2: Response Preparation** |Opens custom Topic in the design canvas |
+|4 |Customize the **Disclaimer** message in the third node. |Maker able to add a custom disclaimer message |
+|5 |Save the changes. |Changes are saved |
+|6 |Test the changed **Disclaimer** message using the Copilot Studio test pane to confirm the desired results. |Disclaimer messages are being shown, but the **Official Source** badge is not visible in the Test pane. This is a known issue, and this badge will only be visible in Copilot chat. |
+
+In the Maker experience in Copilot Studio, you won't see the **Official Source** badge above a generated answer. However, you can see the disclaimer message below the answer. Even though you can't see it in the Maker experience, users will see the **Official Source** badge above a generated answer in Microsoft 365 Copilot Chat and Copilot Chat in Teams.
