@@ -139,6 +139,33 @@ sections:
           How do I roll out an agent that used a fine-tuned model to users?
         answer: |
           We recommend that you pilot the agent with few users first and iterate. Roll the agent out to a set of test users or the relevant department. Gather feedback: Do the answers meet expectations? You can continue to improve the model by adding more training data or adjusting the agent's instructions. After that, plan a wider deployment. Integrate the agent into workflows - for example, pin it in a Teams channel or advertise it internally. Because it's integrated with Microsoft 365 Copilot, users invoke it by calling Copilot in the relevant context and selecting the custom agent or by using a trigger phrase if provided.
+  
+  - name: Support and feedback
+    questions:
+      - question: |
+          Can I get help through my Microsoft account team?
+        answer: |
+          Yes. During the EAP, if you're qualified to participate, your account team can help coordinate support with internal Microsoft resources.
+      - question: |
+          How can I provide feedback or request features for Copilot Tuning?
+        answer: |
+          Microsoft values your feedback. You can submit feedback through Copilot Studio or via your Microsoft account team.
+      - question: |
+          How can agent users get support?
+        answer:
+          Users should contact the organization's help desk for support with agents. Make sure that the help desk is aware of the agent's capabilities. If the help desk can't assist, they can escalate the issue to IT, who can then engage Microsoft support.
+      - question: |
+          How can agent users provide feedback?
+        answer: |
+          In Copilot Chat, users can select the thumbs-up or thumbs-down icon on responses and provide verbatim feedback. This feedback is sent to Microsoft and helps the product team identify common issues and improve model performance over time.
+      - question: |
+          Can admins or creators submit feedback through Copilot Studio?
+        answer: |
+          Yes. Copilot Studio and admin interfaces include a feedback link. Admins can use this to submit suggestions or report issues. This feedback is sent to Microsoft and considered for future planning.
+      - question: |
+          Can I share feedback through my Microsoft account team?
+        answer: |
+          Absolutely. Your Customer Success Manager or Microsoft customer engineers can collect feedback and schedule dedicated calls to hear your input. These sessions sometimes include product managers or engineers and provide opportunities to share feature requests or pain points.
 
 additionalContent: |
     ## Related content
