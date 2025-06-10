@@ -99,6 +99,6 @@ To show only files that have the status of **Failed**, select **Filter** > **Fai
 
 | Status       | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
-| In progress  | The service has started processing the file. A timestamp is displayed.           |
+| In&nbsp;progress  | The service has started processing the file. A timestamp is displayed.           |
 | Completed    | The service has finished processing successfully. A description of the completed actions is provided. |
 | Failed       | The service has encountered an error. A description of the cause of the failure is provided. |
