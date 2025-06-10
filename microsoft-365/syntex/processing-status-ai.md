@@ -69,7 +69,7 @@ Instead of just showing one status, you now get a detailed view. You’ll know w
 1. In a SharePoint document library, on the command bar:
 
     - For autofill columns, select **More options** (**...**) > **Autofill columns** > **View recent activity**.
-    
+
     - For translation, select **Translate** > **View recent activity**.
 
 <!---
@@ -99,6 +99,6 @@ To show only files that have the status of **Failed**, select **Filter** > **Fai
 
 | Status       | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
-| In progress  | The service has started processing the file. Timestamp is shown.           |
-| Completed    | The service finished successfully. Provides a description of the actions completed. |
-| Failed       | The service encountered an error. Provides a description of the cause of the failure. |
+| In progress  | The service has started processing the file. A timestamp is displayed.           |
+| Completed    | The service has finished processing successfully. A description of the completed actions is provided. |
+| Failed       | The service has encountered an error. A description of the cause of the failure is provided. |
