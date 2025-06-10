@@ -60,7 +60,7 @@ To activate the Copilot Tuning service and scope its availability:
     > [!NOTE]
     > The **Copilot Tuning** setting is only available if your tenant meets the criteria described in the [Prerequisites](#prerequisites) section.
 
-    [image placeholder]
+    :::image type="content" source="media/copilot-tuning/copilot-settings.png" alt-text="Copilot settings in the admin center" lightbox="media/copilot-tuning/copilot-settings.png" border="false":::
 
 4. Choose **Specific users in your organization** and add the users in your organization who can create task-specific models. For more information, see [Scope access and permissions](#scope-access-and-permissions).
 
@@ -74,18 +74,24 @@ Designate users who are authorized to use Copilot Tuning to fine-tune task-speci
 
 You can designate up to 10 users to be model makers. If you need more than 10 model makers in your organization, reach out to Copilot Tuning support or your Microsoft account team.
 
+:::image type="content" source="media/copilot-tuning/copilot-tuning-settings.png" alt-text="Copilot Tuning settings in the admin center" lightbox="media/copilot-tuning/copilot-tuning-settings.png" border="false":::
+
 When you add a user to Copilot Tuning, they receive an email with instructions to get started. You can also use the **Copilot Tuning** control in the admin center to remove users from Copilot Tuning.
 
 ### Manage tuned task-specific models
 
 You can review and manage the set of models that model makers create and publish via the **Copilot Tuning** control in the admin center.
 
-[image placeholder]
+:::image type="content" source="media/copilot-tuning/manage-models.png" alt-text="Copilot Tuning settings in the admin center with Manage task-specific models selected" lightbox="media/copilot-tuning/manage-models.png" border="false":::
 
 Choose any published model to review the associated security groups and update them as needed.
 
-[image placeholder]
+:::image type="content" source="media/copilot-tuning/manage-models.png" alt-text="Copilot Tuning model settings in the admin center" lightbox="media/copilot-tuning/manage-models.png" border="false":::
 
 You can also remove a published model by choosing **Remove this model**.
 
+:::image type="content" source="media/copilot-tuning/remove-model.png" alt-text="Copilot Tuning model settings in the admin center with Remove this model highlighted" lightbox="media/copilot-tuning/remove-model.png" border="false":::
+
 ## Related content
+
+- [Copilot Tuning overview](copilot-tuning-overview.md)
