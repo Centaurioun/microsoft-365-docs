@@ -89,7 +89,7 @@ The activity panel shows you a list of file processing events, including:
 - The processing status: **In progress**, **Completed**, or **Failed**
 - The date and time of the event
 
-![Screenshot of the activity panel in a SharePoint library.](../media/content-understanding/processing-status-activity-panel.png)
+    ![Screenshot of the activity panel in a SharePoint library.](../media/content-understanding/processing-status-activity-panel.png)
 
 By default, the panel shows activity for the last 60 days. To choose a specific date range, select **Filter** > **Date range**.
 
