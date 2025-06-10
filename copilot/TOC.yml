@@ -32,16 +32,17 @@ items:
       href: microsoft-365-copilot-blueprint-oversharing.md
 - name: Deploy and enable Microsoft 365 Copilot
   items: 
-    - name: Set up and assign licenses
-      href: microsoft-365-copilot-setup.md
-    - name: Requirements and prerequisites
-      href: microsoft-365-copilot-requirements.md
+    - name: Adoption guide and overview
+      href: microsoft-365-copilot-enablement-resources.md
     - name: License options
       href: microsoft-365-copilot-licensing.md
-    - name: Enable users and welcome email
+    - name: App and network requirements
+      href: microsoft-365-copilot-requirements.md
+    - name: Set up Copilot and assign licenses
+      href: microsoft-365-copilot-setup.md
+    - name: Welcome email for users
       href: microsoft-365-copilot-enable-users.md  
-    - name: Adoption resources
-      href: microsoft-365-copilot-enablement-resources.md
+
 - name: Pay-as-you-go for Microsoft 365 Copilot
   items:
     - name: Pay-as-you-go overview
@@ -56,16 +57,60 @@ items:
   items:
     - name: Manage Microsoft 365 Copilot scenarios 
       href: microsoft-365-copilot-page.md
+    - name: Set up the Microsoft 365 Copilot app
+      items:
+        - name: Overview and availability
+          href: microsoft-365-copilot-app-overview.md
+        - name: Admin settings
+          href: microsoft-365-copilot-app-admin-settings.md
+        - name: Set up Organizational Asset Library
+          href: enterprise-brand-manager.md
     - name: Pin Copilot Chat to the navigation bar
       href: pin-copilot.md
-    - name: Manage scheduled prompts
-      href: scheduled-prompts.md
-    - name: Enable Facilitator in Microsoft Teams
+    - name: Copilot in Microsoft 365 admin centers
+      href: copilot-for-microsoft-365-admin.md
+    - name: Multiple account access for work and school documents
+      href: multiple-account-access.md  
+    - name: Manage prompts
+      items:
+      - name: Scheduled prompts
+        href: scheduled-prompts.md
+      - name: Microsoft 365 environment for scheduled prompts
+        href: scheduled-prompts-environment.md
+      - name: Export prompts from Copilot Prompt Gallery
+        href: copilot-prompt-gallery-export-prompts.md
+      - name: Inventory scheduled prompts
+        href: scheduled-prompts-inventory.md     
+    - name: People Skills 
+      items:
+      - name: People Skills overview
+        href: people-skills-overview.md
+      - name: AI inference engine
+        href: people-skills-ai-inferencing.md
+      - name: Setup People Skills
+        href: people-skills-setup.md
+      - name: Privacy and sharing controls
+        href: people-skills-sharing-inferencing-controls.md
+      - name: Manage People Skills library
+        items:
+        - name: Manage People Skills 
+          href: people-skills-manage-skills-library.md
+        - name: Manage custom skills
+          href: people-skills-manage-custom-skill.md
+        - name: Manage AI restricted skills 
+          href: people-skills-manage-ai-restricted-skills.md
+        - name: People Skills import and export
+          href: people-skills-import-export-skills.md
+      - name: People skills data and AI guidelines
+        href: people-skills-data-and-ai-guidelines.md
+- name: Microsoft 365 Copilot in Microsoft Teams
+  items:
+    - name: Overview of AI in Microsoft Teams
+      href: /microsoftteams/copilot-ai-agents-overview?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+    - name: Set up Facilitator in Microsoft Teams
       href: /microsoftteams/facilitator-teams?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
     - name: Manage Copilot for Microsoft Teams meetings and events
       href: /microsoftteams/copilot-teams-transcription?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fmicrosoft-365-copilot%2Fbreadcrumb%2Ftoc.json
-    - name: Copilot in Microsoft 365 admin centers
-      href: copilot-for-microsoft-365-admin.md
 - name: Microsoft 365 Copilot in Microsoft Viva
   items:
     - name: Introduction to Microsoft 365 Copilot in Viva
@@ -78,6 +123,8 @@ items:
       href: microsoft-365-copilot-reports-for-admins.md
     - name: Copilot Prompt Gallery
       href: copilot-prompt-gallery.md
+    - name: Service plan diagnostic tool
+      href: microsoft-365-copilot-service-plans.md
 - name: "Trust: Data, Privacy, and Security"
   items:
     - name: Data, privacy, and security for Microsoft 365 Copilot
@@ -96,6 +143,8 @@ items:
   items:
     - name: Extend Microsoft 365 Copilot
       href: /microsoft-365-copilot/extensibility?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+    - name: Microsoft 365 Copilot Tuning
+      href: copilot-tuning-overview.md
 - name: Service description and training for Microsoft 365 Copilot
   items:
     - name: Service description

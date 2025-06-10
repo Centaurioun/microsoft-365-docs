@@ -51,6 +51,46 @@ And if you'd like to know what's new with other Microsoft cloud services, check 
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## June 2025
+
+### Copilot Search admin experience
+
+The Microsoft 365 admin center now includes the Copilot Search admin experience. This gives you powerful tools to manage and optimize search across your organization. This release introduces enhanced support for **Acronyms** and **Bookmarks**, enabling you to deliver more relevant and contextual search results to users.
+
+### Key Highlights
+
+- **Acronyms**
+
+    - Define and manage organization-specific acronyms to improve search clarity.
+    - Upload acronyms in bulk via CSV or add them individually.
+    - Acronyms are discoverable across Microsoft Search endpoints including like SharePoint as well.  
+
+- **Bookmarks**
+
+    - Create quick-access links to frequently used resources.
+    - Boost visibility of important tools, sites, or documents in search results.
+    - Customize bookmark meta data including title, URL, description, and audience targeting.
+
+These features help ensure that users find the right information faster, especially when navigating internal terminology or frequently accessed content.
+
+To learn more, see [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-overview).
+
+## April 2025
+
+### Microsoft 365 Copilot network connectivity test
+
+A new addition to the Microsoft 365 network connectivity test tool enables users to run diagnostics specifically for Microsoft 365 Copilot. The tool helps users evaluate the network performance between their device and Microsoft 365 endpoints, specifically for Microsoft 365 Copilot. It runs a series of tests from the user’s location and generates a detailed report that can be shared with others or Microsoft support to help troubleshoot connectivity issues.
+
+The test includes:
+
+- **Latency** measures the time it takes for data to travel between the device and Microsoft 365 services
+- **Throughput** evaluates the data transfer rate
+- **Service reachability** checks whether required Microsoft 365 services are accessible
+
+Admins and users can go to [Microsoft 365 network connectivity test](https://connectivity.m365.cloud.microsoft/) to run the test.
+
+To learn more, see [Microsoft 365 network connectivity test tool](/microsoft-365//enterprise/office-365-network-mac-perf-onboarding-tool).
+
 ## March 2025
 
 ### Exchange Web Services usage report

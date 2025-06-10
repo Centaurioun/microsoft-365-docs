@@ -1,5 +1,5 @@
 ---
-title: Overview of Copilot Pages and Loop workspaces storage and permissions
+title: Overview of Copilot Pages, Copilot Notebooks, and Loop workspaces storage and permissions
 ms.author: jenz
 author: jenzamora
 manager: jtremper
@@ -7,14 +7,14 @@ audience: Admin
 ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
-ms.date: 04/22/2025
+ms.date: 06/03/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
 - M365-collaboration
 - essentials-compliance
 - magic-ai-copilot
-description: Learn about Copilot Pages and Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
+description: Learn about Copilot Pages, Copilot Notebooks, and Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
 ms.custom: 
@@ -30,19 +30,19 @@ appliesto:
 
 Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta), allowing familiar management within existing file management workflows. Where the content was originally created determines its storage location:
 
-|Content content originally created in|Content stored in SharePoint Embedded|Content stored in SharePoint Site|Content stored in User's OneDrive|
-|-----|-----|-----|-----|
-|Copilot Pages|✔️in user-owned container|||
-|Copilot Notebooks|✔️in user-owned container|||
-|Loop app, My workspace|✔️in user-owned container|||
-|Loop app, shared workspace|✔️in shared container|||
-|Teams channel meeting||✔️in 📁`Meetings`||
-|Teams channel||✔️in Channel folder||
-|Teams private chat|||✔️in 📁`Microsoft Teams Chat files`|
-|Teams private meeting|||✔️in 📁`Meetings`|
-|Outlook email message|||✔️in 📁`Attachments`|
-|OneNote for Windows or for the web|||✔️in 📁`OneNote Loop files`|
-|Whiteboard|||✔️in 📁`Whiteboard\Components`|
+|Content content originally created in|Content stored in SharePoint Embedded|Content stored in SharePoint Site|Content stored in User's OneDrive|Lifetime Management|
+|-----|-----|-----|-----|-----|
+|Copilot Pages|✔️in user-owned container|||user account|
+|Copilot Notebooks|✔️in user-owned container|||user account|
+|Loop app, My workspace|✔️in user-owned container|||user account|
+|Loop app, shared workspace|✔️in shared container|||workspace owners|
+|Teams [channel workspace](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/collaborate-in-real-time-with-workspaces-in-teams/4414334)|✔️in shared container|||M365 Group|
+|Teams channel meeting||✔️in 📁`Meetings`||M365 Group|
+|Teams channel||✔️in Channel folder||M365 Group|
+|Teams private chat|||✔️in 📁`Microsoft Teams Chat files`|user account|
+|Teams private meeting|||✔️in 📁`Meetings`|user account|
+|OneNote for Windows or for the web|||✔️in 📁`OneNote Loop files`|user account|
+|Whiteboard|||✔️in 📁`Whiteboard\Components`|user account|
 
 ## Storage quota
 
@@ -62,8 +62,8 @@ Copilot Pages, Copilot Notebooks, and Loop workspace are stored in [SharePoint E
 
 ### Sharing Mechanism
 
-- **Page Sharing**: Grants access to a specific page (not the whole workspace) with options for edit or read-only access. The user can choose to use a company share link or people-specific share link, based on your organizational sharing settings.
 - **Workspace Sharing**: ONLY applies to shared Loop workspaces: Invites users to the entire workspace by adding owners and members to the SharePoint Embedded container, and sends an email invite. All members have access and *editing* permissions to all the Loop pages in that workspace.
+- **Page Sharing**: Grants access to a specific page (not the whole workspace) with options for edit or read-only access. The user can choose to use a company share link or people-specific share link, based on your organizational sharing settings.
 
 :::image type="content" source="media/share-workspace-in-loop.png" alt-text="Screenshot showing the Share workspace option in Loop":::
 
@@ -127,6 +127,12 @@ IT admins can use SharePoint Admin Center and PowerShell to find ownerless works
 - Copilot Pages can't be permanently reassigned to a new owner. It follows the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
 - Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
 
+> [!NOTE]
+> When a user selects the Copilot Pages module in the Microsoft 365 Copilot app, a SharePoint Embedded container is currently created automatically—even if the user does not go on to create a Copilot Page. If no files are added to the container, the system will later delete it automatically. *This behavior is temporary.* An update is in progress to ensure that a Copilot Pages container is only created when a user actually creates a Copilot Page. Until that update is deployed, IT administrators and compliance officers can safely disregard these system-initiated deletions. These containers do not contain any user-generated content when they are removed.
+
+> [!NOTE]
+> A feature for IT admins to assign temporary custodians during the cleanup period of user-owned workspaces isn't yet available. This capability for Copilot Pages, Copilot Notebooks, and My workspace is planned (Microsoft Roadmap ID 421612).
+
 #### Copilot Notebooks
 
 - Copilot Notebooks are stored in a user-owned SharePoint Embedded container, created by Copilot. The container is lifecycle managed with the user account, deleted when the user account is deleted from the organization.
@@ -134,13 +140,16 @@ IT admins can use SharePoint Admin Center and PowerShell to find ownerless works
 - Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
 
 > [!NOTE]
-> A feature for IT admins to assign temporary custodians during the cleanup period of user-owned workspaces isn't yet available. This capability for Copilot Pages, Copilote Notebooks, and My workspace is planned (Microsoft Roadmap ID 421612).
+> A feature for IT admins to assign temporary custodians during the cleanup period of user-owned workspaces isn't yet available. This capability for Copilot Pages, Copilot Notebooks, and My workspace is planned (Microsoft Roadmap ID 421612).
 
 #### My workspace
 
 - My workspace is stored in a user-owned SharePoint Embedded container, created by Loop. The container is lifecycle managed with the user account, deleted when the user account is deleted from the organization.
 - My workspace can't be permanently reassigned to a new owner. It follows the same cleanup schedule as OneDrive: 30 days active, then soft deleted, and permanently purged 93 days after soft deletion.
 - Admins can recover content during the soft delete period using the SharePoint Admin Center or PowerShell.
+
+> [!NOTE]
+> A feature for IT admins to assign temporary custodians during the cleanup period of user-owned workspaces isn't yet available. This capability for Copilot Pages, Copilot Notebooks, and My workspace is planned (Microsoft Roadmap ID 421612).
 
 #### Ideas
 
