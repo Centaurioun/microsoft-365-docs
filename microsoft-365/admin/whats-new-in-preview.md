@@ -177,7 +177,7 @@ There are a couple of ways to get the Experience insights dashboard page:
 
     :::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard":::
 
-For more information, check out [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
+For more information, see [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
 
 ## December 2022
 
