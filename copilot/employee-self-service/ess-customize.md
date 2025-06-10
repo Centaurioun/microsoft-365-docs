@@ -150,6 +150,7 @@ Terms to know:
 |Maker - What to customize |**Requirement to use:** None. </br>1. After message disclaimer (blank). Add message or delete it if you don't want the disclaimer to appear. </br>2. Official source badge - no configuration required. You can use this in its default state. |
 
 |Step |Action |Expected result |
+|-----|-------|----------------|
 |1 |Open the ESS agent in Copilot Studio. |ESS agent available to customize |
 |2 |Navigate to **Topics** to see the list of Topics. |Shows Custom Topics |
 |3 |Select **[System] -2: Response Preparation** |Opens custom Topic in the design canvas |
@@ -158,3 +159,70 @@ Terms to know:
 |6 |Test the changed **Disclaimer** message using the Copilot Studio test pane to confirm the desired results. |Disclaimer messages are being shown, but the **Official Source** badge is not visible in the Test pane. This is a known issue, and this badge will only be visible in Copilot chat. |
 
 In the Maker experience in Copilot Studio, you won't see the **Official Source** badge above a generated answer. However, you can see the disclaimer message below the answer. Even though you can't see it in the Maker experience, users will see the **Official Source** badge above a generated answer in Microsoft 365 Copilot Chat and Copilot Chat in Teams.
+
+#### [Example] Crafted Response
+
+|   |    |
+|---|----|
+|Default |Off |
+|Topic JTBD |Configure topics with an **Official answer** badge in the UX to give users confidence that the response is coming directly from an official source. Note that verbatim responses don't have citations and references, so this badge assures the user that the answer is legitimate. You also have the option to add Actions to the response such as "Click here to create an HR ticket." |
+|Maker JTBD |Update the **Set Official Answer Response** variable with the message that you want to display as an official answer. When you test this in the Maker experience, you should see your crafted response. |
+|Maker - What to customize |Enable the Topic if you want to have crafted responses. Update the trigger phrases and sample response. |
+
+|Step |Action |Expected result |
+|-----|-------|----------------|
+|1 |Open the ESS agent in Copilot Studio. |ESS agent available to customize |
+|2 |Navigate to **Topics** to see the list of Topics. |Shows Custom Topics |
+|3 |Select **[Example] - Crafted Response** |Opens custom Topic in the design canvas |
+|4 |Select the first node **Triggered by agent (preview)** |Topic node expands to show the description of what the Topic does |
+|5 |Customize the Topic description to include specific keywords that shouldn't be responded to by the agent and instead redirected elsewhere. |Topic description updates |
+|6 |Select the second node **Set Official Answer Response** |Topic node expands to show the value that can be customized |
+|7 |Customize the **To value** field with a message. This message will display for your chosen queries instead of generated AI output. |Topic value updates |
+|8 |Save the changes. |Changes are saved |
+|9 |Test the configured trigger word using the test pane within Copilot Studio. |Results generate with the **Official Answer** badge |
+
+#### [Example] Sensitive Topics
+
+|   |    |
+|---|----|
+|Default |Off |
+|Topic JTBD |Customizing responses for topics that are sensitive and triggered by the ESS agent triggers HR sensitivity. The current generic Copilot Chat response is "I'm really sorry that you're feeling this way, but I'm not able to help. It's important to talk to a mental health professional or someone you trust about what you're going through." |
+
+**Maker JTBD:**
+
+The ESS agent template is "Consulting with a professional is the best way to get assistance with this request. Please contact a representative for further support." Action: ends conversation.
+
+The triggers are:
+
+**This topic should only trigger ** when users mention **explicitly sensitive, confidential, or legal concerns ** such as **harassment **, **abuse **, **discrimination **, **unethical behavior **, or **retaliation ** in the work place. It activates in situations involving:
+
+- Requests for **HR consultation ** relating to sensitive maters
+- **Privacy concerns **
+- **Hostile work environments **
+- **Workplace violence **
+- **Legal action **
+- Reporting of **severe misconduct **
+
+**Important: **
+
+This topic **must not ** trigger for **general HR-related inquiries ** such as:
+
+- Accessing **benefits information ** such as W2 forms and health benefits
+- **Routine workplace questions **
+- **Performance concerns
+- Other **non-sensitive ** matters
+
+**It should only activate ** when explicit terms like **harassment **, **discrimination **, **retaliation **, **workplace violence **, or **legal support ** are mentioned.
+
+**Maker - What to customize**
+
+Enable the Topic if your organization wants to use it. Update the trigger phrases and sample response text.
+
+|Step |Action |Expected result |
+|-----|-------|----------------|
+|1 |Open the ESS agent in Copilot Studio. |ESS agent available to customize |
+|2 |Navigate to **Topics** to see the list of Topics. |Shows Custom Topics |
+|3 |Select **[Example] - Sensitive Topics** |Topic opens in the design canvas |
+|4 |Select the first node **Triggered by agent (preview)** |Topic node expands to show the description of what the Topic does |
+|5 |Customize the Topic description to include specific keywords that shouldn't be responded to by the agent and instead redirected elsewhere. |Topic description updates |
+<!-- page 45>
