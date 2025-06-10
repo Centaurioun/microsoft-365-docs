@@ -17,7 +17,7 @@ description: "Find admin guidance for enabling Copilot Tuning in your organizati
 
 # Microsoft 365 Copilot Tuning admin guide (preview)
 
-Microsoft 365 Copilot Tuning enables organizations to securely fine-tune large language models (LLMs) using tenant-specific data, and to deploy those fine-tuned models as declarative agents within Microsoft 365 Copilot. As an AI Admin, you retain full control over who can fine-tune models, how they are published, and how they are governed throughout their lifecycle.
+Microsoft 365 Copilot Tuning enables organizations to securely fine-tune large language models (LLMs) using tenant-specific data, and to deploy declarative agents based on those fine-tuned models to Microsoft 365 Copilot. Administrators retain full control over who can fine-tune models, how they are published, and how they are governed throughout their lifecycle.
 
 This article provides information about the governance controls that are available for Copilot Tuning in the Microsoft 365 admin center.
 
@@ -32,16 +32,18 @@ To manage Copilot Tuning governance controls, make sure that you meet the follow
     - Your tenant must have at least 5,000 active Microsoft 365 Copilot licenses.
     - An AI Admin must accept the EAP terms on behalf of the organization.
     > [!NOTE]
-    > If your tenant doesn't show Copilot Tuning, contact Microsoft support or your account team to request EAP provisioning.
+    > If Copilot Tuning isn't available in your tenant, contact Microsoft support or your account team to request EAP provisioning.
 - You must have one of the following roles:
     - Global Administrator
     - AI Administrator (if defined as a custom role in your organization)
-- Copilot extensibility is enabled via Copilot Settings in your organization. For more information, see [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide#enable-or-disable-copilot-extensibility).
-- Power Platform
+- Copilot extensibility is enabled via **Copilot settings** in the admin center. For more information, see [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide#enable-or-disable-copilot-extensibility).
+- Power Platform [TBD]
 
 ## What is Copilot Tuning?
 
-Copilot Tuning is a self-serve, secure Microsoft 365 offering for fine-tuning LLMs using your organization's own data. It allows for a self-service workflow where model makers select datasets and Copilot Studio seamlessly handles data preparation, model training, and evaluation. This is suited for low-code domain adaptation tasks with minimal engineering overhead. After a model is fine-tuned, it can be published as a declarative agent in Microsoft 365 Copilot. These agents surface in Word, Teams, Outlook, and other Microsoft 365 apps to perform tasks such as legal clause generation, incident report summarization, or contract drafting.
+Copilot Tuning is a self-serve, secure Microsoft 365 offering for fine-tuning LLMs using your organization's own data. It allows for a self-service workflow where model makers select datasets and Copilot Studio seamlessly handles data preparation, model training, and evaluation. This is suited for low-code domain adaptation tasks with minimal engineering overhead. 
+
+After a model is fine-tuned, users can create and deploy declarative agents based on the model to Microsoft 365 Copilot. These agents surface in Word, Teams, Outlook, and other Microsoft 365 apps to perform tasks such as legal clause generation, incident report summarization, or contract drafting.
 
 For more information, see [Copilot Tuning overview](copilot-tuning-overview.md).
 
@@ -50,7 +52,8 @@ For more information, see [Copilot Tuning overview](copilot-tuning-overview.md).
 To activate the Copilot Tuning service and scope its availability:
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with your Global Administrator or AI Administrator account.
-2. Go to **Copilot** > **Copilot settings**. The settings for Copilot Tuning are in this section.
+2. Go to **Copilot** > **Copilot settings**. 
+
     [image placeholder]
 3. Choose **Copilot Tuning**, and choose **Accept** to accept the EAP terms.
     
@@ -59,7 +62,7 @@ To activate the Copilot Tuning service and scope its availability:
 
     [image placeholder]
 
-4. Choose **Specific users in your organization** and add the who in your organization who can create task-specific models. For more information, see [Scope access and permissions](#scope-access-and-permissions).
+4. Choose **Specific users in your organization** and add the users in your organization who can create task-specific models. For more information, see [Scope access and permissions](#scope-access-and-permissions).
 
 ## Scope access and permissions
 
@@ -67,7 +70,7 @@ Fine-grained access controls ensure that only authorized users within the tenant
 
 ### Configure model makers
 
-Designate users who are authorized to use Copilot Tuning to fine tune task-specific models. These model makers are generally SMEs within a particular part of the organization like marketing, finance, or legal. The users that you designate at model makers are then able to access the Copilot Tuning workflow in Copilot Studio.
+Designate users who are authorized to use Copilot Tuning to fine-tune task-specific models. These model makers are generally SMEs within a particular part of the organization like marketing, finance, or legal. The users that you designate as model makers are then able to access the Copilot Tuning workflow in Copilot Studio.
 
 You can designate up to 10 users to be model makers. If you need more than 10 model makers in your organization, reach out to Copilot Tuning support or your Microsoft account team.
 
