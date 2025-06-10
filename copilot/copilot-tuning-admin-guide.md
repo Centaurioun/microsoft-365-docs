@@ -36,7 +36,7 @@ To manage Copilot Tuning governance controls, make sure that you meet the follow
 - You must have one of the following roles:
     - Global Administrator
     - AI Administrator (if defined as a custom role in your organization)
-- Copilot extensibility is enabled via **Copilot settings** in the admin center. For more information, see [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide#enable-or-disable-copilot-extensibility).
+- Copilot extensibility is enabled via **Copilot settings** in the admin center. For more information, see [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps#enable-or-disable-copilot-extensibility).
 - Power Platform [TBD]
 
 ## What is Copilot Tuning?
@@ -54,14 +54,14 @@ To activate the Copilot Tuning service and scope its availability:
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with your Global Administrator or AI Administrator account.
 2. Go to **Copilot** > **Copilot settings**. 
 
-    :::image type="content" source="media/copilot-tuning/copilot-settings.png" alt-text="Copilot settings in the admin center" lightbox="media/copilot-tuning/copilot-settings.png" border="false":::
+    :::image type="content" source="/media/copilot-tuning/copilot-settings.png" alt-text="Copilot settings in the admin center" lightbox="/media/copilot-tuning/copilot-settings.png" border="false":::
 
 3. Choose **Copilot Tuning**, and choose **Accept** to accept the EAP terms.
     
     > [!NOTE]
     > The **Copilot Tuning** setting is only available if your tenant meets the criteria described in the [Prerequisites](#prerequisites) section.
 
-    :::image type="content" source="media/copilot-tuning/copilot-tuning-settings.png" alt-text="Copilot Tuning settings in the admin center" lightbox="media/copilot-tuning/copilot-tuning-settings.png" border="false":::
+    :::image type="content" source="/media/copilot-tuning/copilot-tuning-settings.png" alt-text="Copilot Tuning settings in the admin center" lightbox="/media/copilot-tuning/copilot-tuning-settings.png" border="false":::
 
 4. Choose **Specific users in your organization** and add the users in your organization who can create task-specific models. For more information, see [Manage Copilot Tuning settings](#manage-copilot-tuning-settings).
 
@@ -83,15 +83,15 @@ When you add a user to Copilot Tuning, they receive an email with instructions t
 
 You can review and manage the set of models that model makers create and publish via the **Copilot Tuning** control in the admin center.
 
-:::image type="content" source="media/copilot-tuning/manage-models.png" alt-text="Copilot Tuning settings in the admin center with Manage task-specific models selected" lightbox="media/copilot-tuning/manage-models.png" border="false":::
+:::image type="content" source="/media/copilot-tuning/manage-models.png" alt-text="Copilot Tuning settings in the admin center with Manage task-specific models selected" lightbox="/media/copilot-tuning/manage-models.png" border="false":::
 
 Choose any published model to review the associated security groups and update them as needed.
 
-:::image type="content" source="media/copilot-tuning/manage-models.png" alt-text="Copilot Tuning model settings in the admin center" lightbox="media/copilot-tuning/manage-models.png" border="false":::
+:::image type="content" source="/media/copilot-tuning/manage-models.png" alt-text="Copilot Tuning model settings in the admin center" lightbox="/media/copilot-tuning/manage-models.png" border="false":::
 
 You can also remove a published model by choosing **Remove this model**.
 
-:::image type="content" source="media/copilot-tuning/remove-model.png" alt-text="Copilot Tuning model settings in the admin center with Remove this model highlighted" lightbox="media/copilot-tuning/remove-model.png" border="false":::
+:::image type="content" source="/media/copilot-tuning/remove-model.png" alt-text="Copilot Tuning model settings in the admin center with Remove this model highlighted" lightbox="/media/copilot-tuning/remove-model.png" border="false":::
 
 ## Related content
 
