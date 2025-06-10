@@ -17,15 +17,15 @@ description: "Learn how to use Microsoft 365 Copilot Tuning to create task-speci
 
 # Microsoft 365 Copilot Tuning overview (preview)
 
-> [!NOTE]
-> Copilot Tuning is in prerelease and is not yet publicly available. The features described in this content are subject to change.
-
 Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) by using their own tenant data. These fine-tuned models power [agents](/microsoft-365-copilot/extensibility/overview-declarative-agent) that can perform domain-specific tasks based on the organization's unique knowledge. All training and AI processing happens within your Microsoft 365 tenant, so your data remains secure and governed by your existing compliance controls. The result is an AI assistant that behaves like an expert team member, providing tailored assistance in line with your organization's content and rules.
 
 This article explains how organizations can use Copilot Tuning to create task-specific fine-tuned LLMs, how users can build agents on these fine-tuned models, and how IT administrators can govern the feature.
 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=7b2cdaf2-fb86-421d-9932-8a2b02cbdbc5]
+
+> [!NOTE]
+> Copilot Tuning is  is currently available for Early Access Preview (EAP).
 
 ## Key capabilities and scenarios
 
