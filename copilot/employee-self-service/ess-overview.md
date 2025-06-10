@@ -32,7 +32,7 @@ The Employee Self-Service agent is built on top of Microsoft 365 Copilot and Cop
 
 Before you deploy the Employee Self-Service agent, read through the documentation and familiarize yourself with the areas of deployment and configuration. The ESS agent inherits the Copilot stack, which needs to be considered for initial installation and for operational policies. You can refer to the [Copilot hub](/copilot/microsoft-365) for documentation on architecture, trust, security, compliance, and best practices in Microsoft 365 Copilot.
 
-- [Microsoft 365 Copilot hub](/copilot/microsoft-365.md)
+- [Microsoft 365 Copilot hub](../index.yml)
 - [Overview of Microsoft 365 Copilot.](../microsoft-365-copilot-overview.md)
 - [Microsoft 365 Copilot architecture](../microsoft-365-copilot-architecture.md)
 - [Address oversharing concerns in Microsoft 365 Copilot deployment blueprint](../microsoft-365-copilot-blueprint-oversharing.md)
@@ -65,7 +65,7 @@ The Employee Self-Service agent consists of three main parts: the agent itself, 
 
 <!-- infographic-->
 
-[Learn more about how Copilot architecture works](/microsoft-365-copilot-architecture)
+[Learn more about how Copilot architecture works](../microsoft-365-copilot-architecture.md)
 
 ## Limitations and known issues
 

@@ -21,6 +21,7 @@ appliesto:
 There are several steps necessary to deploy the Employee Self-Service (ESS) Agent. Refer to the table for an overview of the deployment process.
 
 |Role |Development environment |Production environment |
+|-----|------------------------|-----------------------|
 |Power Platform administrator |- Create environment for development and testing.</br> - Create a preferred custom solution. |Create an environment for production rollout. |
 |Copilot Studio maker |- Install the ESS agent.</br> - Install ISV extension packs and set up connectors.</br> - Customize and test.</br> - Export as a managed solution. |-Install the ESS agent.</br> - Import customization solution.</br> - Test.</br> - Publish. |
 

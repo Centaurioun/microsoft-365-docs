@@ -29,7 +29,7 @@ Preparation is the first step to deploying the Employee Self-Service (ESS) agent
 
 ## Assign the Power Platform administrator role
 
-1. Sign in as a Global admin to your [admin center](hhtps://admin.microsoft.com).
+1. Sign in as a Global admin to your [admin center](https://admin.microsoft.com).
 1. Select **Roles**, then choose **Role assignments**.
 1. In the **Microsoft Entra ID** section, find the **Power Platform Administrator** role.
 1. Add the users you've chosen as service owners for the ESS agent in the **Assigned** section.
