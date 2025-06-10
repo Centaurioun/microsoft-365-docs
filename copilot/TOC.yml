@@ -31,7 +31,7 @@ items:
     - name: Blueprint to prevent oversharing
       href: microsoft-365-copilot-blueprint-oversharing.md
 - name: Deploy and enable Microsoft 365 Copilot
-  items: 
+  items:
     - name: Adoption guide and overview
       href: microsoft-365-copilot-enablement-resources.md
     - name: License options
@@ -41,7 +41,7 @@ items:
     - name: Set up Copilot and assign licenses
       href: microsoft-365-copilot-setup.md
     - name: Welcome email for users
-      href: microsoft-365-copilot-enable-users.md  
+      href: microsoft-365-copilot-enable-users.md
 
 - name: Pay-as-you-go for Microsoft 365 Copilot
   items:
@@ -55,7 +55,7 @@ items:
       href: pay-as-you-go/view-cost.md
 - name: Manage Microsoft 365 Copilot
   items:
-    - name: Manage Microsoft 365 Copilot scenarios 
+    - name: Manage Microsoft 365 Copilot scenarios
       href: microsoft-365-copilot-page.md
     - name: Set up the Microsoft 365 Copilot app
       items:
@@ -70,7 +70,7 @@ items:
     - name: Copilot in Microsoft 365 admin centers
       href: copilot-for-microsoft-365-admin.md
     - name: Multiple account access for work and school documents
-      href: multiple-account-access.md  
+      href: multiple-account-access.md
     - name: Manage prompts
       items:
       - name: Scheduled prompts
@@ -80,8 +80,8 @@ items:
       - name: Export prompts from Copilot Prompt Gallery
         href: copilot-prompt-gallery-export-prompts.md
       - name: Inventory scheduled prompts
-        href: scheduled-prompts-inventory.md     
-    - name: People Skills 
+        href: scheduled-prompts-inventory.md
+    - name: People Skills
       items:
       - name: People Skills overview
         href: people-skills-overview.md
@@ -93,11 +93,11 @@ items:
         href: people-skills-sharing-inferencing-controls.md
       - name: Manage People Skills library
         items:
-        - name: Manage People Skills 
+        - name: Manage People Skills
           href: people-skills-manage-skills-library.md
         - name: Manage custom skills
           href: people-skills-manage-custom-skill.md
-        - name: Manage AI restricted skills 
+        - name: Manage AI restricted skills
           href: people-skills-manage-ai-restricted-skills.md
         - name: People Skills import and export
           href: people-skills-import-export-skills.md
@@ -138,13 +138,37 @@ items:
     - name: Enterprise data protection
       href: enterprise-data-protection.md
     - name: Transparency Note
-      href: microsoft-365-copilot-transparency-note.md    
+      href: microsoft-365-copilot-transparency-note.md
 - name: Extensibility and building agents
   items:
     - name: Extend Microsoft 365 Copilot
       href: /microsoft-365-copilot/extensibility?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
     - name: Microsoft 365 Copilot Tuning
-      href: copilot-tuning-overview.md
+      items:
+        - name: Overview
+          href: copilot-tuning-overview.md
+        - name: Copilot Tuning foundations
+          href: copilot-tuning-foundations.md
+        - name: Task-specific guides
+          items:
+          - name: Document generation
+            href: copilot-tuning-docgen.md
+          - name: Expert Q&A
+            href: copilot-tuning-expert-qa.md
+          - name: Summarization
+            href: copilot-tuning-summarization.md
+        - name: Troubleshooting
+          items:
+          - name: Document generation
+            href: copilot-tuning-troubleshooting-docgen.md
+          - name: Expert Q&A
+            href: copilot-tuning-troubleshooting-expert-qa.md
+          - name: Guardrails
+            href: copilot-tuning-troubleshooting-guardrails.md
+          - name: MAC
+            href: copilot-tuning-troubleshooting-mac.md
+        - name: Responsible AI FAQ
+          href: copilot-tuning-responsible-ai-faq.md
 - name: Service description and training for Microsoft 365 Copilot
   items:
     - name: Service description
