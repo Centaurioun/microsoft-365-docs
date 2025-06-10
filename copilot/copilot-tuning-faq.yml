@@ -91,7 +91,7 @@ sections:
       - question: |
           What tools do I use to create fine-tuned models?
         answer: |
-          Use [Copilot Studio](https://copilot.cloud.microsoft.com/copilot-studio) to create fine-tuned models. Copilot Studio provides a user-friendly interface for model makers to select training data, configure model parameters, and run the training job. It abstracts the complexity of AI tuning into a guided, turnkey process.
+          Use [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) to create fine-tuned models. Copilot Studio provides a user-friendly interface for model makers to select training data, configure model parameters, and run the training job. It abstracts the complexity of AI tuning into a guided, turnkey process.
       - question: |
           What are the data requirements for using Copilot Tuning?
         answer: |
