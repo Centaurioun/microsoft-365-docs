@@ -31,7 +31,7 @@ Use the **View recent activity** panel to:
 - Check the status of the file: In progress, Completed, or Failed.
 - Understand what worked, what didn’t, and why.
 
-You can view the status for a single or for files in the entire document library.
+You can view and monitor the processing status for a [single file](#monitor-the-processing-status-for-a-single-file) or for [all files](#monitor-the-processing-status-for-all-files-in-the-library) in a document library.
 
 <!---
 The detailed view in the **View recent activity** pane If something goes wrong, you’ll get a clear error message and a link to helpful guidance—so you can fix issues quickly and keep things moving.
