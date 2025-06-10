@@ -25,7 +25,7 @@ This article explains how organizations can use Copilot Tuning to create task-sp
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=7b2cdaf2-fb86-421d-9932-8a2b02cbdbc5]
 
 > [!NOTE]
-> Copilot Tuning is  is currently available for Early Access Preview (EAP).
+> Copilot Tuning is currently available for Early Access Preview (EAP).
 
 ## Key capabilities and scenarios
 

@@ -17,7 +17,7 @@ description: "Find admin guidance for enabling Copilot Tuning in your organizati
 
 # Microsoft 365 Copilot Tuning admin guide (preview)
 
-Microsoft 365 Copilot Tuning enables organizations to securely fine-tune large language models (LLMs) using tenant-specific data, and to deploy declarative agents based on those fine-tuned models to Microsoft 365 Copilot. Administrators retain full control over who can fine-tune models, how they are published, and how they are governed throughout their lifecycle.
+Microsoft 365 Copilot Tuning enables organizations to securely fine-tune large language models (LLMs) using tenant-specific data, and to deploy declarative agents based on those fine-tuned models to Microsoft 365 Copilot. Administrators retain full control over who can fine-tune models, how they're published, and how they're governed throughout their lifecycle.
 
 This article provides information about the governance controls that are available for Copilot Tuning in the Microsoft 365 admin center.
 
@@ -29,7 +29,7 @@ This article provides information about the governance controls that are availab
 To manage Copilot Tuning governance controls, make sure that you meet the following prerequisites:
 
 - Copilot Tuning Early Access Preview (EAP) enrollment. To enroll in the EAP:
-    - Your tenant must have at least 5,000 active Microsoft 365 Copilot licenses.
+    - Your tenant must have at least 5,000 active Microsoft 365 Copilot add-on licenses.
     - An AI Admin must accept the EAP terms on behalf of the organization.
     > [!NOTE]
     > If Copilot Tuning isn't available in your tenant, contact Microsoft support or your account team to request EAP provisioning.
@@ -71,7 +71,7 @@ Fine-grained access controls ensure that only authorized users within the tenant
 
 ### Configure model makers
 
-Designate users who are authorized to use Copilot Tuning to fine-tune task-specific models. These model makers are generally SMEs within a particular part of the organization like marketing, finance, or legal. The users that you designate as model makers are then able to access the Copilot Tuning workflow in Copilot Studio.
+Designate users who are authorized to use Copilot Tuning to fine-tune task-specific models. These model makers are generally subject matter experts (SMEs) within a particular part of the organization like marketing, finance, or legal. The users that you designate as model makers are then able to access the Copilot Tuning workflow in Copilot Studio.
 
 You can designate up to 10 users to be model makers. If you need more than 10 model makers in your organization, reach out to Copilot Tuning support or your Microsoft account team.
 

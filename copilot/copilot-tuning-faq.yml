@@ -1,0 +1,85 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft 365 Copilot Tuning FAQ
+  description: Find answers to questions related to Copilot Tuning.
+  author: lauragra
+  ms.author: lauragra
+  ms.service: microsoft-365-copilot
+  ms.topic: faq 
+  ms.date: 06/17/2025
+
+title: Microsoft 365 Copilot Tuning FAQ
+summary: Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) by using their own tenant data. This article provides answers to frequently asked questions(FAQs) related to Copilot Tuning.
+
+sections:
+  - name: Copilot Tuning features and capabilities
+    questions:
+      - question: | 
+          What are the key features of Copilot Tuning?
+        answer: |
+          Copilot Tuning allows organizations to create custom AI models based on their tenant data by enabling model makers to tune large language models (like GPT-4) with the organization's documents and knowledge bases in Copilot Studio. This produces a model that understands the organization's terminology, style, and processes. Agent builders can then build agents based on the fine-tuned model that perform tasks like Q&A, document generation, and summarization.
+      - question: |
+          Does Copilot Tuning help customize Microsoft 365 Copilot?
+        answer: |
+          Copilot Tuning is designed to help customers customize Microsoft 365 Copilot for specific tasks. The following tasks are currently supported:
+
+          - Document generation
+          - Expert Q&A
+          - Summarization
+
+          For more information, see [Key capabilities and scenarios](/copilot/microsoft-365/copilot-tuning-overview#key-capabilities-and-scenarios). To request support for more tasks, send mail to [CopilotTuningFeedback@service.microsoft.com](mailto:CopilotTuningFeedback@service.microsoft.com).
+
+          After the model is fine-tuned, organizations can create domain-specific declarative agents that respond to user queries using organizational knowledge.
+
+      - question: |
+          What's the difference between Azure AI Foundry and Copilot Tuning?
+        answer: |
+          Azure AI Foundry is a developer-first, code-centric platform designed to support full lifecycle AI development — from model selection and customization to deployment and monitoring. Azure AI Foundry is ideal for engineering teams who build scalable, production-grade AI systems in Azure. 
+
+          Copilot Tuning is a maker-first, low-code feature tailored for enterprise customers —who want to fine-tune models for specific business scenarios without deep machine learning expertise. It runs in the Microsoft 365 tenant boundary.
+  - name: Security, privacy, and data governance
+    questions:
+      - question: | 
+         Does my data stay safe and secure during training?
+        answer: |
+          Copilot Tuning uses a secure process during data ingestion and training. Data ingestion takes place within your Microsoft 365 tenant, which preserves privacy and security. Copilot Tuning provides a self-serve, turnkey fine-tuning pipeline that does not require any engineers to see your data. Your content is used to train the model in a tenant-isolated environment.
+      - question: |
+          Do my data governance policies persist through the ingestion and training process?
+        answer: |
+          Yes. Copilot Tuning automatically excludes from training any files that can't be accessed by the security groups configured for the tuned model. It automatically suggests additional security groups to maximize the breadth of knowledge that can be securely incorporated into the model. Although this provides an extra layer of security for the model, we recommend that you treat each model as a copy of the trained data. If the original data is deleted or changed, the model remains the same unless the admin adjusted the permission on the model. 
+
+          For more information about model governance, see the [Admin guide](copilot-tuning-admin-guide.md).
+      - question: |
+          Where is the data stored and processed?
+        answer: |
+          Copilot Tuning adheres to the data residency commitments of Microsoft 365. The model training and inference occur in the geography tied to your tenant (for example, a European tenant's fine-tuning jobs and storage take place in EU datacenters).
+      - question: |
+          How does Copilot Tuning manage data governance?
+        answer: |
+          Copilot Tuning is integrated into Microsoft 365. It automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions are consistent, and users can only search the information that they have access to. For more information, see [Data, Privacy, and Security for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-privacy).
+  - name: Prerequisites and getting started
+    questions:
+      - question: |
+          What are the prerequisites for using Copilot Tuning?
+        answer: |
+          Your organization must enable Microsoft 365 Copilot and purchase a minimum of 5,000 Microsoft 365 Copilot add-on license. Copilot Tuning is an advanced capability and is currently offered to customers in the Copilot Early Access Program (EAP). Your tenant must also have an active Copilot Studio subscription. Contact your Microsoft account team to help confirm your eligibility.
+      - question: |
+          What are the system requirements for using Copilot Tuning?
+        answer: |
+          Copilot Tuning does not require any on-premises hardware - it runs entirely as a cloud service within Microsoft 365. However, there are licensing and data prerequisites.
+      - question: |
+          How do admins enable Copilot Tuning?
+        answer: |
+          An AI Admin (or designated Copilot admin role) enables Copilot Tuning via the Microsoft 365 admin center. Microsoft provides a setting in the **Copilot settings** section of the admin portal to activate Copilot Studio and task-specific fine-tuning features. When a tenant admin enables Copilot Tuning, the Copilot Studio interface is available to model makers to allow them to tune models for a specific task.
+      - question: |
+          How should organizations use Copilot Tuning?
+        answer: |
+          Use Copilot Tuning to handle repetitive, information-heavy tasks and to generate initial drafts. Let your experts focus on strategic thinking, decision-making, and final reviews. Understanding the feature's strengths (speed, scale, consistency) and weaknesses (contextual nuance, up-to-date knowledge) will help you best take advantage of it.
+
+additionalContent: |
+    ## Related content
+
+    - [Copilot Tuning overview](copilot-tuning-overview.md)
+
+
+
