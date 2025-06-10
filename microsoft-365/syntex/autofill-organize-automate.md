@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 04/25/2025
+ms.date: 06/11/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -38,11 +38,11 @@ Building on the autofill columns feature, this agent skill simplifies the proces
 
 To get suggested columns in your document library, follow these steps.
 
-1. In the lower-right corner of your document library, select the **Open agent quick actions** icon.
+1. In the lower-right corner of your document library, select the **Open AI quick actions** icon.
 
    ![Screenshot of a document library with the icon highlighted.](../media/content-understanding/autofill-librarian-open-actions-icon.png)
 
-2. From the **Agents in SharePoint** menu, select **Organize this library** to launch the process.
+2. From the **AI quick actions** menu, select **Organize this library** to launch the process.
 
    ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/autofill-librarian-agents-in-sharepoint-menu.png)
 
