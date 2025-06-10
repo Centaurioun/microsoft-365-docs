@@ -17,7 +17,7 @@ description: An overview of the Microsoft 365 Copilot search feature.
 
 # Microsoft 365 Copilot Search
 
-Microsoft 365 Copilot Search is an AI-powered, enterprise-grade search experience optimized for work and school. It provides a familiar search experience that helps users find relevant results from your organization and the web.
+Microsoft 365 Copilot Search is an AI-powered, enterprise-grade search experience optimized for your organization. It provides a familiar search experience that helps users find relevant results from your organization and the web.
 
 Copilot Search indexes content across Microsoft 365 and third-party applications, leveraging the Microsoft Graph to interpret user context, natural language, behavioral signals, and organizational relationships. This gives Copilot Search unique insights into a user's work data, enabling it to return highly personalized answers to a user's queries.
 
