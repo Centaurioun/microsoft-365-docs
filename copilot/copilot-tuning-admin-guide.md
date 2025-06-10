@@ -54,13 +54,14 @@ To activate the Copilot Tuning service and scope its availability:
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with your Global Administrator or AI Administrator account.
 2. Go to **Copilot** > **Copilot settings**. 
 
-    [image placeholder]
+    :::image type="content" source="media/copilot-tuning/copilot-settings.png" alt-text="Copilot settings in the admin center" lightbox="media/copilot-tuning/copilot-settings.png" border="false":::
+
 3. Choose **Copilot Tuning**, and choose **Accept** to accept the EAP terms.
     
     > [!NOTE]
     > The **Copilot Tuning** setting is only available if your tenant meets the criteria described in the [Prerequisites](#prerequisites) section.
 
-    :::image type="content" source="media/copilot-tuning/copilot-settings.png" alt-text="Copilot settings in the admin center" lightbox="media/copilot-tuning/copilot-settings.png" border="false":::
+    :::image type="content" source="media/copilot-tuning/copilot-tuning-settings.png" alt-text="Copilot Tuning settings in the admin center" lightbox="media/copilot-tuning/copilot-tuning-settings.png" border="false":::
 
 4. Choose **Specific users in your organization** and add the users in your organization who can create task-specific models. For more information, see [Scope access and permissions](#scope-access-and-permissions).
 
@@ -74,7 +75,7 @@ Designate users who are authorized to use Copilot Tuning to fine-tune task-speci
 
 You can designate up to 10 users to be model makers. If you need more than 10 model makers in your organization, reach out to Copilot Tuning support or your Microsoft account team.
 
-:::image type="content" source="media/copilot-tuning/copilot-tuning-settings.png" alt-text="Copilot Tuning settings in the admin center" lightbox="media/copilot-tuning/copilot-tuning-settings.png" border="false":::
+:::image type="content" source="media/copilot-tuning/manage-users.png" alt-text="Copilot Tuning settings in the admin center with specific users in the organization specified" lightbox="media/copilot-tuning/manage-users.png" border="false":::
 
 When you add a user to Copilot Tuning, they receive an email with instructions to get started. You can also use the **Copilot Tuning** control in the admin center to remove users from Copilot Tuning.
 
