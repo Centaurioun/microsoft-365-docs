@@ -31,7 +31,7 @@ This feature lets you:
 - Check the status of the file: **In progress**, **Completed**, or **Failed**.
 - Understand what worked, what didn’t, and why.
 
-You can view and monitor the processing status for a [single file](#monitor-the-processing-status-for-a-single-file) or for [all files](#monitor-the-processing-status-for-all-files-in-the-library) in a document library.
+You can view and monitor the processing status for a [selected file](#monitor-the-processing-status-for-a-selected-file) or for [all files](#monitor-the-processing-status-for-all-files-in-a-library) in a document library.
 
 <!---
 The detailed view in the **View recent activity** pane If something goes wrong, you’ll get a clear error message and a link to helpful guidance—so you can fix issues quickly and keep things moving.
@@ -57,51 +57,51 @@ Instead of just showing one status, you now get a detailed view. You’ll know w
 
 - Ensure you have permission to view or manage the library.
 
-## Monitor the processing status for a single file
+## Monitor the processing status for a selected file
 
-1. In a SharePoint document library, select a file.
+1. In a SharePoint document library, select the file or files you want for which you want to view the status.
 
 2. From the **More options** (**...**) menu either next to the file name or on the command bar, select **Autofill columns** > **View recent activity** or **Translate** > **View recent activity**.
 
     ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
 
-3. Depending on the service you selected, The **Autofill activity** panel or the **Translation activity** panel opens. The activity panel shows:
+3. Depending on the service you selected, the **Autofill activity** panel or the **Translation activity** panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
 
-   - The file name
-   - A brief summary of the action that was performed
-   - The processing status: **In progress**, **Completed**, or **Failed**
-   - The date of the update
+## Monitor the processing status for all files in a library
 
-4. Select **Filter** to choose a date range or to show only files that have the status of **Failed**.
+1. In a SharePoint document library, on the command bar:
 
-### Monitor the processing status for all files in the library
+    - For autofill columns, select **More options** (**...**) > **Autofill columns** > **View recent activity**.
+    
+    - For translation, select **Translate** > **View recent activity**.
 
+<!---
 1. In a SharePoint document library, on the command bar, select **Autofill columns** > **View recent activity** or **Translate** > **View recent activity**.
 
     ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
+--->
 
-2. Depending on the service you selected, The **Autofill activity** panel or the **Translation activity** panel opens. The activity panel shows:
+2. Depending on the service you selected, The **Autofill activity** panel or the **Translation activity** panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
 
-   - The file name
-   - A brief summary of the action that was performed
-   - The processing status: **In progress**, **Completed**, or **Failed**
-   - The date of the update
+## View the activity panel
 
-1. The pane shows:
-   - A chronological list of all file processing events
-   - File name, service name, status, and timestamp
-   - Grouped by time (Today, Last Week, etc.)
+![Screenshot of the activity panel in a SharePoint library.](../media/content-understanding/processing-status-activity-panel.png)
 
-3. Use the **graphical summary** at the top to see:
-   - Number of files per status (In progress, Completed, or Failed)
-   - Select any status count to drill into the relevant files
+The activity panel shows you a list of file processing events, including:
 
-4. Apply filters to focus on failed jobs or specific services.
+- The file name
+- A brief summary of the action that was performed, or information about why it failed
+- The processing status: **In progress**, **Completed**, or **Failed**
+- The date of the update
+
+By default, the panel shows activity for the last 60 days. To choose a specific date range, select **Filter** > **Date range**.
+
+To show only files that have the status of **Failed**, select **Filter** > **Failed status**.
 
 ### Status definitions
 
 | Status       | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
 | In progress  | The service has started processing the file. Timestamp is shown.           |
-| Completed    | The service finished successfully. Might include extracted metadata or translated files. |
-| Failed       | The service encountered an error. Select to view the reason and resolution. |
+| Completed    | The service finished successfully. Includes a description of the actions completed. |
+| Failed       | The service encountered an error. Includes a description of the cause of the failure. |
