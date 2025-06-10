@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/29/2025
+ms.date: 06/09/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -210,13 +210,15 @@ You can block or unblock agents for the entire organization by using the same co
 Blocking or unblocking an agent affects its availability and functionality in Copilot and other host products, such as Outlook, Teams, or Microsoft 365.
 
 >[!NOTE]
-> For Frontier agents, such as Researcher and Analyst, the **Edit users** panel is disabled. To manage their availability, you must block the agent for the entire tenant using the **Block** action in the admin center.
+> For the Researcher and Analyst agents, the **Edit users** panel is disabled. To manage their availability, you must block the agent for the entire tenant using the **Block** action in the admin center.
 
 ## Agent metadata in admin center
 
 :::image type="content" source="../../media/agents/details.png" alt-text="Screenshot showing the details tab for an agent." lightbox="../../media/agents/details.png":::
 
-You can access key metadata for Copilot agents directly within the publish flow on the Integrated apps page. This metadata includes details such as the agent’s capabilities, data sources (for example, OneDrive and SharePoint files and sites, or Graph connectors), and custom actions. It’s important to note that metadata is only for custom agents, which are designed to perform specific tasks based on predefined rules and configurations.
+You can access key metadata for Copilot agents in **Agents & connectors** > **Agent inventory**. When you select an agent, the metadata is available in the **Details** tab. 
+
+The metadata includes details such as the agent’s capabilities, data sources (for example, OneDrive and SharePoint files and sites, or Graph connectors), and custom actions. It’s important to note that metadata is only for custom agents, which are designed to perform specific tasks based on predefined rules and configurations.
 
 ## View and consent to permissions and data access
 
