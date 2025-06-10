@@ -34,7 +34,7 @@ You can also use the translation feature for translating video transcripts and c
 
 | Icon          | Description   |
 | ------------- | ------------- |
-| ![Files symbol.](/office/media/icons/files-blue.png)   |This model supports the following file types: [see supported document formats](/azure/ai-services/translator/document-translation/overview#batch-supported-document-formats).  |
+| ![Files symbol.](/office/media/icons/files-blue.png)   | **Supported file types** <br>This service supports the following file types: [see supported document formats](/azure/ai-services/translator/document-translation/overview#batch-supported-document-formats).  |
 | ![Check mark in a circle symbol.](/office/media/icons/success-blue.png)  | **Supported file sizes** <br>The maximum file size for documents to be translated is limited to 40 MB. |
 | ![Conversation symbol.](/office/media/icons/chat-room-conversation-blue.png)  | **Supported languages** <br>This service is available for [all supported languages and dialects](/azure/ai-services/translator/language-support?source=recommendations#translation). |
 | ![Security symbol.](/office/media/icons/security-blue.png)  | **Manage Lists permission** <br>To create translated file copies, a user must be a site member and have the Manage Lists permission on the document library. |
