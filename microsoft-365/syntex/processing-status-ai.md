@@ -78,18 +78,18 @@ Instead of just showing one status, you now get a detailed view. You’ll know w
     ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
 --->
 
-2. Depending on the service you selected, The **Autofill activity** panel or the **Translation activity** panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
+2. Depending on the service you selected, the **Autofill activity** panel or the **Translation activity** panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
 
 ## View the activity panel
-
-![Screenshot of the activity panel in a SharePoint library.](../media/content-understanding/processing-status-activity-panel.png)
 
 The activity panel shows you a list of file processing events, including:
 
 - The file name
 - A brief summary of the action that was performed, or information about why it failed
 - The processing status: **In progress**, **Completed**, or **Failed**
-- The date of the update
+- The date and time of the event
+
+![Screenshot of the activity panel in a SharePoint library.](../media/content-understanding/processing-status-activity-panel.png)
 
 By default, the panel shows activity for the last 60 days. To choose a specific date range, select **Filter** > **Date range**.
 
