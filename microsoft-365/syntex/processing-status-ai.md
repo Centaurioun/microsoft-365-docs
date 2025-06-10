@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 05/02/2025
+ms.date: 06/10/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -59,32 +59,35 @@ Instead of just showing one status, you now get a detailed view. You’ll know w
 
 ## Monitor the processing status for a single file
 
-1. In the SharePoint document library, select a file.
+1. In a SharePoint document library, select a file.
 
 2. From the **More options** (**...**) menu either next to the file name or on the command bar, select **Autofill columns** > **View recent activity** or **Translate** > **View recent activity**.
 
     ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
 
-3. The **View recent activity** pane opens to show:
+3. Depending on the service you selected, The **Autofill activity** panel or the **Translation activity** panel opens. The activity panel shows:
 
    - The file name
-   - A timeline of processing events (grouped by Today, Last week, and so on)
-   - Each service that ran (for example, autofill columns or document translation)
-   - Status: In progress, Completed, or Failed
-   - Timestamp of the last update
+   - A brief summary of the action that was performed
+   - The processing status: **In progress**, **Completed**, or **Failed**
+   - The date of the update
 
-4. If a process failed, select the status to view:
-   - The failure reason (for example, "File encrypted" or "Unsupported format")
-   - Suggested actions
-   - A link to troubleshooting documentation (if available)
-
-5. Use filters to show only failed statuses for easier triage.
+4. Select **Filter** to choose a date range or to show only files that have the status of **Failed**.
 
 ### Monitor the processing status for all files in the library
 
-1. Without selecting a file, open the **Status Pane** from the library view.
+1. In a SharePoint document library, on the command bar, select **Autofill columns** > **View recent activity** or **Translate** > **View recent activity**.
 
-2. The pane shows:
+    ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
+
+2. Depending on the service you selected, The **Autofill activity** panel or the **Translation activity** panel opens. The activity panel shows:
+
+   - The file name
+   - A brief summary of the action that was performed
+   - The processing status: **In progress**, **Completed**, or **Failed**
+   - The date of the update
+
+1. The pane shows:
    - A chronological list of all file processing events
    - File name, service name, status, and timestamp
    - Grouped by time (Today, Last Week, etc.)
