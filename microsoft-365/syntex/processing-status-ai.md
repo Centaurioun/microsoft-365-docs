@@ -20,9 +20,6 @@ description: Learn how to monitor the processing status of files in a SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Autofill columns &ensp; | &ensp; &#10003; Document translation</sup>
 
-> [!NOTE]
-> This article is currently in development.
-
 You can now view real-time updates on files processed for autofill columns and document translation.
 
 This feature lets you:
@@ -103,5 +100,5 @@ To show only files that have the status of **Failed**, select **Filter** > **Fai
 | Status       | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
 | In progress  | The service has started processing the file. Timestamp is shown.           |
-| Completed    | The service finished successfully. Includes a description of the actions completed. |
-| Failed       | The service encountered an error. Includes a description of the cause of the failure. |
+| Completed    | The service finished successfully. Provides a description of the actions completed. |
+| Failed       | The service encountered an error. Provides a description of the cause of the failure. |
