@@ -48,7 +48,7 @@ As the admin, you can curate bookmarks and acronyms for Copilot Search just as y
 
 ## Manage access to files and sites
 
-Organizations can restrict end users from searching for files in certain SharePoint sites by enabling Restricted Content Discovery. This setting prevents the sites from appearing in organization-wide search results and Microsoft 365 Copilot answers unless a user owns or has recently interacted with content on those sites.
+Organizations can restrict end users from searching for files in certain SharePoint sites by enabling Restricted Content Discovery. This setting prevents these sites from appearing in organization-wide search results and Microsoft 365 Copilot answers unless a user owns or has recently interacted with content on those sites.
 
 Learn more about [Restricted Content Discovery in SharePoint](/sharepoint/restricted-content-discovery).
 
