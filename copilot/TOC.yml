@@ -149,6 +149,8 @@ items:
           href: copilot-tuning-overview.md
         - name: Copilot Tuning foundations
           href: copilot-tuning-foundations.md
+        - name: faq
+          href: copilot-tuning-faq.yml
         - name: Admin guide
           href: copilot-tuning-admin-guide.md
         - name: Task-specific guides
