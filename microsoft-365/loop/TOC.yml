@@ -12,7 +12,7 @@ items:
 - name: Common References
   items:
     - name: Requirements
-      href: cpcn-requirements.md
+      href: cpcn-loop-requirements.md
     - name: SharePoint Embedded management
       href: cpcn-loop-spe-management.md
     - name: Permissions
