@@ -73,7 +73,7 @@ The Microsoft 365 admin center now includes the Copilot Search admin experienc
 
 These features help ensure that users find the right information faster, especially when navigating internal terminology or frequently accessed content.
 
-To learn more, see [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-overview).
+To learn more, see [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search?branch=pr-28653).
 
 ## April 2025
 
@@ -177,7 +177,7 @@ There are a couple of ways to get the Experience insights dashboard page:
 
     :::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard":::
 
-For more information, check out [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
+For more information, see [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
 
 ## December 2022
 
