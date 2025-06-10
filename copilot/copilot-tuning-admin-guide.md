@@ -63,9 +63,9 @@ To activate the Copilot Tuning service and scope its availability:
 
     :::image type="content" source="media/copilot-tuning/copilot-tuning-settings.png" alt-text="Copilot Tuning settings in the admin center" lightbox="media/copilot-tuning/copilot-tuning-settings.png" border="false":::
 
-4. Choose **Specific users in your organization** and add the users in your organization who can create task-specific models. For more information, see [Scope access and permissions](#scope-access-and-permissions).
+4. Choose **Specific users in your organization** and add the users in your organization who can create task-specific models. For more information, see [Manage Copilot Tuning settings](#manage-copilot-tuning-settings).
 
-## Scope access and permissions
+## Manage Copilot Tuning settings
 
 Fine-grained access controls ensure that only authorized users within the tenant can initiate fine-tuning or publishing models. You can manage this access by specifying users and security groups for these controls.
 
