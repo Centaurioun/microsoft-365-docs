@@ -7,8 +7,6 @@ items:
       href: cpcn-admin-configuration.md
     - name: Storage
       href: cpcn-storage.md
-    - name: Copilot Pages and Notebooks in Microsoft Teams
-      href: copilot-pages-notebooks-teams.md
 - name: Common References
   items:
     - name: Requirements

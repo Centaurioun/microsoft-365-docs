@@ -128,7 +128,7 @@ Copilot Pages, Copilot Notebooks, and the Loop experiences (except for Microsoft
 1. Select **Customization** from the left pane.
 1. Select **Policy Management**.
 1. Create a new policy configuration or edit an existing one.
-1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, see [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
+1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, see [Microsoft 365 Groups for Cloud Policy](#scoping-cloud-policy-with-microsoft-365-groups).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Create Loop workspaces in Loop**:
         - **Disabled**: Creation of Loop workspaces isn't available to the users.
