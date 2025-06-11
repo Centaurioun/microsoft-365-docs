@@ -22,7 +22,7 @@ description: Learn how to organize and automate columns in a document library in
 
 You can use the SharePoint Agent Librarian Skill to create richer, more powerful document libraries to manage your content.
 
-Building on the autofill columns feature, this agent skill simplifies the process of configuring a document library and ensures consistent and accurate data capture. Recommended metadata columns enhance library-scoped agent Q&A and will soon be used to suggest rule-based flows to streamline business processes. This approach to automating document management keeps your SharePoint libraries organized, relevant, and up-to-date.
+Building on the autofill columns feature, this agent skill simplifies the process of configuring a document library and ensures consistent and accurate data capture. Recommended metadata columns enhance library-scoped agent chat and are also used to suggest rule-based flows that streamline business processes. This approach to automating document management keeps your SharePoint libraries organized, relevant, and up-to-date.
 
 ## Suggest and create columns
 
@@ -40,7 +40,7 @@ To get suggested columns in your document library, follow these steps.
 
 3. The chat panel opens and displays a list of suggested actions related to columns that you can try.
 
-   ![Screenshot of the chat panel showing the prompt for column actions.](../media/content-understanding/autofill-librarian-agents-chat-panel.png)
+   ![Screenshot of the chat panel showing the instruction for column actions.](../media/content-understanding/autofill-librarian-agents-chat-panel.png)
 
 ### Use a suggested action
 
@@ -56,11 +56,11 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/autofill-librarian-dismiss-suggestion.png)
 
-5. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the prompt. To do so, select the column name, and then select **Edit column**.
+5. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the instruction. To do so, select the column name, and then select **Edit column**.
 
    ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/autofill-librarian-edit-column.png)
 
-6. On the **Edit column** panel, you can edit the column name or edit the prompt that generates the metadata. After you edit the prompt, test the prompt to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
+6. On the **Edit column** panel, you can edit the column name or edit the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
 
@@ -68,7 +68,7 @@ To get suggested columns in your document library, follow these steps.
 
 1. In the text box in the lower portion of the chat window, enter your own instructions.
 
-   ![Screenshot of the prompt box showing a custom prompt has been entered.](../media/content-understanding/autofill-librarian-custom-prompt.png)
+   ![Screenshot of the text box showing a custom instruction has been entered.](../media/content-understanding/autofill-librarian-custom-prompt.png)
 
 2. Press **Enter** to submit the action and initiate the suggestion flow based on your custom request.
 
