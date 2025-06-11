@@ -18,7 +18,7 @@ appliesto:
 
 # Prepare to deploy the Employee Self-Service agent
 
-Preparation is the first step to deploying the Employee Self-Service (ESS) agent. First, you need to meet the [prerequisites](ess-prerequisites.md) The following roles are required to prepare the agent for deployment.
+Preparation is the first step to deploying the Employee Self-Service (ESS) agent. First, you need to meet the [prerequisites](prerequisites.md) The following roles are required to prepare the agent for deployment.
 
 |Role |Activities to perform |Configuration areas |
 |-----|----------------------|--------------------|

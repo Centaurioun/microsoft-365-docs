@@ -18,7 +18,7 @@ appliesto:
 
 # Install the Employee Self-Service agent
 
-After completing the required steps in the [preparation](ess-prepare.md) stage, you can install the Employee Self-Service (ESS) agent in a specific Power Platform environment.
+After completing the required steps in the [preparation](prepare.md) stage, you can install the Employee Self-Service (ESS) agent in a specific Power Platform environment.
 
 ## Activities summary
 
