@@ -9,7 +9,7 @@ metadata:
   ms.date: 06/17/2025
 
 title: Microsoft 365 Copilot Tuning FAQ
-summary: Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) by using their own tenant data. This article provides answers to frequently asked questions(FAQs) related to Copilot Tuning.
+summary: Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) for specific tasks by using their own tenant data. This article provides answers to frequently asked questions(FAQs) related to Copilot Tuning.
 
 sections:
   - name: Copilot Tuning features and capabilities
@@ -17,7 +17,7 @@ sections:
       - question: | 
           What are the key features of Copilot Tuning?
         answer: |
-          Copilot Tuning allows organizations to create custom AI models based on their tenant data by enabling model makers to tune large language models (like GPT-4) with the organization's documents and knowledge bases in Copilot Studio. This produces a model that understands the organization's terminology, style, and processes. Agent builders can then build agents based on the fine-tuned model that perform tasks like Q&A, document generation, and summarization.
+          Copilot Tuning allows organizations to create task-specific custom AI models based on their tenant data by enabling model makers to tune large language models (like GPT-4) with the organization's documents and knowledge bases in Copilot Studio. This produces a model that understands the organization's terminology, style, and processes. Agent builders can then build agents based on the fine-tuned model that perform tasks like Q&A, document generation, and summarization.
       - question: |
           Does Copilot Tuning help customize Microsoft 365 Copilot?
         answer: |
@@ -87,7 +87,7 @@ sections:
       - question: |
           Who in my organization can make models using Copilot Tuning?
         answer: |
-          You decide who in your organization can create and manage models. Model makers might be business analysts or IT specialists who are familiar with the content. Assign those users a Copilot Studio user license (a $0 license that grants access to Copilot Studio authoring tools) that they can use to build agents. Admins can assign Copilot Studio user licenses to user accounts in the Microsoft 365 admin center or by adding users to a security group that has Copilot Studio access.
+          You decide who in your organization can create and manage models. Model makers might be business analysts or IT specialists who are familiar with the content. We recommend that you assign one or two model makers to start; you're limited to a total of 10 model makers in the organization. Assign the model makers a Copilot Studio user license (a $0 license that grants access to Copilot Studio authoring tools) that they can use to build agents. Admins can assign Copilot Studio user licenses to user accounts in the Microsoft 365 admin center or by adding users to a security group that has Copilot Studio access.
       - question: |
           What tools do I use to create fine-tuned models?
         answer: |
@@ -99,7 +99,7 @@ sections:
       - question: |
           How long does it take to fine-tune a model?
         answer: |
-          The time it takes to fine-tune a model depends on several factors, including the size of the training data and the complexity of the model. Generally, fine-tuning can take anywhere from a few minutes to several hours.
+          The time it takes to fine-tune a model depends on several factors, including the size of the training data and the complexity of the model. Generally, fine-tuning can take anywhere from a few hours to several days.
       - question: |
           How can I customize the knowledge domain for Copilot Tuning?
         answer: |
