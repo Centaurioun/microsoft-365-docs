@@ -26,32 +26,32 @@ description: "Manage Copilot Pages and Copilot Notebooks in your organization"
 
 # Admin policies for Copilot Pages and Copilot Notebooks
 
-Copilot Pages and Copilot Notebooks and their integrations are backed by `.loop` files, stored in user-owned SharePoint Embedded containers. Learn more about [storage and lifecycle](/microsoft-365/loop/cpcn-storage), which is quota combined with SharePoint in your tenant. IT admins can manage creation of Copilot Pages and Copilot Notebooks using Cloud Policy.
+Copilot Pages and Copilot Notebooks are powered by `.loop` files, which are stored in user-owned SharePoint Embedded containers. Storage for these files counts toward your organization's overall SharePoint quota. For details, see [storage and lifecycle](/microsoft-365/loop/cpcn-storage). IT administrators can control the creation and use of Copilot Pages and Copilot Notebooks through Cloud Policy settings.
 
 ## Requirements
 
 Copilot Pages and Copilot Notebooks are a core service integrated into SharePoint and Microsoft 365. See [requirements](/microsoft-365/loop/cpcn-loop-requirements) to learn more about configuration requirements, service connections, and license requirements.
 
-### Microsoft 365 Groups for Cloud Policy
+### Scoping Cloud Policy with Microsoft 365 Groups
 
-If you want to scope the Cloud Policy settings to only some users in your tenant, you can create or use an existing Microsoft 365 group to define which users in your organization this policy will apply to. To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
+To apply Cloud Policy settings to specific users, assign the policy to a Microsoft 365 group. For steps to create a group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
+
+You can also use security or dynamic groups. For details, see [Create, edit, or delete a security group](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) and [Create dynamic groups in Azure AD](/azure/active-directory/external-identities/use-dynamic-groups).
 
 > [!NOTE]
-> This section isn't required if you choose to apply the Cloud Policy settings to all the users in your tenant.
-
-You'll be able to use this group for the Cloud Policy setup procedure specified in [Settings management in Cloud Policy](#settings-management-in-cloud-policy).
-
-If you prefer, you can also create other types of groups to use with Cloud Policy. For more information, see [learn more about creating groups in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) or [learn more about creating dynamic groups in AzureAD](/azure/active-directory/external-identities/use-dynamic-groups).
+> If you apply the policy to all users in the tenant, group setup isn't required.
 
 ## Relation to Loop components
 
-Copilot Pages can be shared as a component. This mechanism relies on Loop components to be enabled in your organization for integrations like Teams, Outlook, Whiteboard, OneNote, or the Loop app to function. If Loop components are not enabled in your organization, Copilot Pages will only be interactive within the M365 Copilot app and Chat experiences that support Copilot Pages. See [Loop admin policies](/microsoft-365/loop/loop-admin-configuration) for information on configuring **Create and view Loop files in Microsoft apps that support Loop**.
+Copilot Pages and Copilot Notebooks are independent of Loop. You can enable or disable them separately from Loop in your organization.
 
-## User experience expectations when Copilot Pages and Copilot Notebooks are Disabled
+To share Copilot Pages as interactive components (instead of just hyperlinks) in Teams, Outlook, Whiteboard, OneNote, or the Loop app, Loop components must be enabled. Without Loop components, Copilot Pages are only interactive within the M365 Copilot app and supported chat experiences. For details on enabling Loop components, see [Loop admin policies](/microsoft-365/loop/loop-admin-configuration).
 
-When the IT admin control for creation of Copilot Pages and Copilot Notebooks is set to Disabled, the creation of new Copilot Pages and creation of new SharePoint Embedded containers is prevented. The Pages module in the M365 Copilot app will still be visible. The Notebooks module in the M365 Copilot app will be hidden.
+## User experience when Copilot Pages and Copilot Notebooks are disabled
 
-Existing user data isn't deleted, and users can still find, see, and access existing Copilot Pages and Copilot Notebooks in the M365 Copilot app, via shared hyperlinks, and in searches. Access to these files is determined by their permissions, so users with edit access can still open and edit them. The files will still be discoverable using Purview and are exportable by admins.
+When creation is disabled, users can't create new Copilot Pages or new SharePoint Embedded containers. The Pages module remains visible in the M365 Copilot app, but the Notebooks module is hidden.
+
+Existing Copilot Pages and Notebooks are not deleted. Users can still view and edit existing items if they have permission. These files remain accessible via the app, shared links, search, and are discoverable by Purview and exportable by admins.
 
 ## Settings management in Cloud Policy
 
@@ -63,7 +63,7 @@ Copilot Pages and Copilot Notebooks check the following [Cloud Policy](/deployof
 1. Select **Customization** from the left pane.
 1. Select **Policy Management**.
 1. Create a new policy configuration or edit an existing one.
-1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, see [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
+1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, see [Microsoft 365 Groups for Cloud Policy](#scoping-cloud-policy-with-microsoft-365-groups).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Create and view Copilot Pages and Copilot Notebooks**
         - **Enabled**: Copilot Pages and Copilot Notebooks creation and integration are available to the users.
@@ -80,13 +80,19 @@ In case you create a new policy configuration or change the configuration for an
 - If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
 
 > [!NOTE]
-> In order to target only a subset of users in your organization as Enabled for one of these Cloud Policies, create a Group A to target these users, set the Cloud Policy to Enabled in this group. Then create a Group B that targets All users, set the Cloud Policy to Disabled in this group. Then, configure Group A with a priority that evaluates *before* Group B. In Cloud Policy, priority 0 evaluates first, followed by priority 1, then 2, and so on. So for example, Group A with priority 0 will Enable your subset of users, and Group B with priority 1 will only evaluate for users not in Group A, and Disable for the remainder of your users.
+> To enable a Cloud Policy for only a specific subset of users:
+>
+> 1. Create **Group A** containing the users you want to enable the policy for. Assign the Cloud Policy to this group and set it to **Enabled**.
+> 1. Create **Group B** that includes **All users**. Assign the same Cloud Policy to this group and set it to **Disabled**.
+> 1. Set the priority for **Group A** to a lower number (for example, priority 0) so it is evaluated before **Group B** (for example, priority 1).
+>
+> In Cloud Policy, lower priority numbers are evaluated first. This ensures users in **Group A** have the policy **Enabled**, while all other users in **Group B** have it **Disabled**.
 
 ## Related topics
 
-- [Overview of Loop components in Teams](/microsoftteams/live-components-in-teams)
-- [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
-- [Use Loop components in OneNote](https://support.microsoft.com/office/use-loop-components-in-onenote-ed8a43d9-f6fd-4ad6-bc9d-8841db4da459)
-- [Loop components in Whiteboard](https://support.microsoft.com/office/loop-components-in-whiteboard-c5f08f54-995e-473e-be6e-7f92555da347)
-- [Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)
-- [Summary of governance, lifecycle and compliance capabilities for Loop](/microsoft-365/loop/loop-compliance-summary)
+- [Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
+- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
+- [Storage](/microsoft-365/loop/cpcn-storage)
+- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
+- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
+- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)

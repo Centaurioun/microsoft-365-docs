@@ -32,7 +32,7 @@ Copilot Pages and Copilot Notebooks are stored within your tenant in SharePoint 
 
 ## Container name
 
-This Copilot Pages, Copilot Notebooks and Loop My workspace user-owned container is named 'Pages' if the person visits the M365 Copilot app first. It is named 'My workspace' if the person visits the Loop app first. To get a list of all of these user-owned containers in your organization, regardless of the container name, update the following sample PowerShell to your needs:
+The Copilot Pages, Copilot Notebooks and Loop My workspace are shared, all use the same container. This user-owned container is named 'Pages' if the person visits the M365 Copilot app first. It is named 'My workspace' if the person visits the Loop app first. To get a list of all of these user-owned containers in your organization, regardless of the container name, update the following sample PowerShell to your needs:
 
 ```PowerShell
 Get-SPOContainer -OwningApplicationId 'a187e399-0c36-4b98-8f04-1edc167a0996' | WHERE OwnershipType -EQ 'UserOwned' | FT
@@ -76,5 +76,9 @@ Copilot Pages + Copilot Notebooks container has a maximum size of 25 TB. This li
 
 ## Related topics
 
-- [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary)
-- [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/92915461-4b14-49a4-9cd4-d1c259292afa)
+- [Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
+- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
+- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
+- [Admin toggles](/microsoft-365/loop/cpcn-admin-configuration)
+- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
+- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)

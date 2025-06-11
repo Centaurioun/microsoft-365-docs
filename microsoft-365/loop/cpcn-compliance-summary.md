@@ -30,7 +30,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## Foundations
 
-- An **[Admin Toggle](/microsoft-365/loop/loop-admin-configuration#available-policy-settings)** exists to turn on or off creation of both Copilot Pages and Copilot Notebooks. If Loop components are enabled, Copilot Pages can be shared and used like a Loop component in all the applications that support Loop components.
+- An **[Admin Toggle](/microsoft-365/loop/cpcn-admin-configuration)** exists to turn on or off creation of both Copilot Pages and Copilot Notebooks. If Loop components are enabled, Copilot Pages can be shared and used like a Loop component in all the applications that support Loop components.
 
 - **GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery).
 
@@ -51,12 +51,12 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## Data Lifecycle
 
-- Copilot Pages and Copilot Notebooks create a single user-owned SharePoint Embedded container, identified by Loop application. Loop SharePoint Embedded containers have no default storage limit. They accrue to the overall storage limits for SharePoint [storage quota](/microsoft-365/loop/loop-workspaces-storage-permission#storage-quota) in the tenant. There's no admin setting available to set storage quotas per SharePoint Embedded container.
+- Copilot Pages and Copilot Notebooks are stored together in a single, user-owned SharePoint Embedded container, identified and owned by Loop. These containers do not have individual storage limits; instead, their storage usage counts toward your organization's overall SharePoint storage quota. Currently, there is no admin control to set storage limits for individual SharePoint Embedded containers.
 
 - See [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management) for information and workflows within SharePoint Admin center or PowerShell.
 
 > [!IMPORTANT]
-> Unlike OneDrive, for Copilot Pages and Copilot Notebooks, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](/microsoft-365/loop/loop-workspaces-storage-permission#copilot-pages) for detailed information.
+> Unlike OneDrive, for Copilot Pages and Copilot Notebooks, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](/microsoft-365/loop/cpcn-storage#storage-management-after-user-departure) for detailed information.
 
 - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for Copilot Pages and Copilot Notebooks are supported. Copilot Pages and Copilot Notebooks are both stored in the same user-owned SharePoint Embedded container. This container is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). Like OneDrive, admins have the ability to manually move the user's Copilot Pages and Copilot Notebooks container to a new geo when their preferred data location changes.
 
@@ -75,7 +75,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## eDiscovery
 
-- Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** supports search and collection, review (premium license required for admin), and export as HTML (premium license required for admin) or original. You can also download and reupload the files to any OneDrive to view them in their native format.
+- Microsoft **[Purview eDiscovery](/purview/ediscovery-premium-get-started)** supports search and collection, review (premium license required for admin), and export as HTML (premium license required for admin) or original. You can also download and reupload the files to any OneDrive to view them in their native format.
 
 > [!IMPORTANT]
 > Full text search of content within .loop files in Purview review sets isn't available. All other Purview search and collection capabilities are supported.
@@ -105,6 +105,9 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## Related articles
 
+- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
+- [Storage](/microsoft-365/loop/cpcn-storage)
+- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
+- [Admin toggles](/microsoft-365/loop/cpcn-admin-configuration)
+- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
 - [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
-- [Overview of Loop workspaces storage and permissions](/microsoft-365/loop/loop-workspaces-storage-permission)
-- [Loop admin policies for Loop components and Loop workspaces](/microsoft-365/loop/loop-admin-configuration)

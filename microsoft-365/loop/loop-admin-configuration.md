@@ -26,7 +26,7 @@ description: "Manage Loop in your organization"
 
 # Admin policies for Loop components and Loop workspaces
 
-Loop components and their integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Learn more about [storage](/microsoft-365/loop/loop-workspaces-storage-permission#storage), which is quota combined with SharePoint in your tenant.
+Loop components and their integrations are powered by `.loop` files (earlier releases of Loop created these as `.fluid` files), which are stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Storage for these files counts toward your organization's overall SharePOint quota. For details about where the content is stored, see [storage and lifecycle](/microsoft-365/loop/loop-storage#storage). IT administrators can control the creation and use of Loop content through settings discussed in this article.
 
 ## Two Admin Policy Tools
 
@@ -38,6 +38,15 @@ IT administrators must manage the creation of Loop components in the Microsoft 3
 ## Requirements
 
 Loop components and Loop workspaces are a core service integrated into SharePoint and Microsoft 365. See [requirements](/microsoft-365/loop/cpcn-loop-requirements) to learn more about configuration requirements, service connections, and license requirements.
+
+### Scoping Cloud Policy with Microsoft 365 Groups
+
+To apply Cloud Policy settings to specific users, assign the policy to a Microsoft 365 group. For steps to create a group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
+
+You can also use security or dynamic groups. For details, see [Create, edit, or delete a security group](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) and [Create dynamic groups in Azure AD](/azure/active-directory/external-identities/use-dynamic-groups).
+
+> [!NOTE]
+> If you apply the policy to all users in the tenant, group setup isn't required.
 
 ## Available policy settings
 
@@ -79,18 +88,18 @@ Configure the creation of content in these locations by using the appropriate po
 
 ## User experience expectations when admin settings are configured
 
-As described in this topic, you can control the ability for users in your environment to create new Loop content. **You cannot prevent access to existing content using the admin controls.** You can configure the admin controls via select groups or for your entire tenant (except for the Teams controls, which apply to the entire tenant only).
+IT administrators can control whether users in their organization can create new Loop content. **However, these admin controls do not restrict access to existing Loop files or workspaces.** Admin controls can be applied to specific groups or the entire tenant, except for Teams-related settings, which always apply tenant-wide.
 
-- To prevent collaboration between certain groups in your organization, refer to [Information Barriers](/purview/information-barriers-sharepoint).
-- To prevent access to existing content and the Loop app with workspaces, refer to [Conditional Access policies](/sharepoint/control-access-from-unmanaged-devices).
+- To restrict collaboration between specific groups, use [Information Barriers](/purview/information-barriers-sharepoint) where supported.
+- To block access to existing Loop content or the Loop app, use [Conditional Access policies](/sharepoint/control-access-from-unmanaged-devices).
 
-### Here's what you should expect when using the IT admin controls configured to Disabled
+### Expected user experience when Loop creation is disabled
 
-When the IT admin controls in this article are set to Disabled, the creation of new Loop files and creation of new SharePoint Embedded containers is prevented. Existing user data isn't deleted, and users can still find, see, and access existing Loop files and Loop workspaces in both application experiences and in searches.
+When admin controls are set to Disabled, users cannot create new Loop files or new SharePoint Embedded containers. Existing Loop files and workspaces remain accessible; users can still find, open, and edit them if they have the appropriate permissions. No existing data is deleted.
 
-Even with the admin policies disabled, Loop content and icons may still appear in certain places. Files created before disabling new creation can still be found in Microsoft365.com, the Loop component viewer and editor (loop.cloud.microsoft). Links shared in messages or documents are also unaffected by disabling creation of new content. Access to these files is determined by their permissions, so users with edit access can still open and edit them.
+Loop content and icons may still appear in Microsoft 365 apps, including Microsoft365.com and the Loop component viewer/editor (loop.cloud.microsoft). Previously created files remain visible and accessible, and shared links continue to work as permitted by file permissions.
 
-There are no separate licensing requirements for the Loop component viewer and editor, only the need for OneDrive access. Users can still access the Loop component viewer and editor via loop.cloud.microsoft and the All apps view in Microsoft365.com. To prevent users from seeing the Loop icon in the All apps view, disable their access to OneDrive or configure a conditional access policy for loop.cloud.microsoft to block navigation to Loop.
+There are no additional licensing requirements for the Loop component viewer/editor beyond OneDrive access. Users can access Loop content via loop.cloud.microsoft or the All apps view in Microsoft365.com. To hide the Loop icon in the All apps view, disable OneDrive access for those users or use a conditional access policy to block access to loop.cloud.microsoft.
 
 ## Settings management in the Microsoft Admin Center
 
@@ -154,7 +163,13 @@ In case you create a new policy configuration or change the configuration for an
 - If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
 
 > [!NOTE]
-> In order to target only a subset of users in your organization as Enabled for one of these Cloud Policies, create a Group A to target these users, set the Cloud Policy to Enabled in this group. Then create a Group B that targets All users, set the Cloud Policy to Disabled in this group. Then, configure Group A with a priority that evaluates *before* Group B. In Cloud Policy, priority 0 evaluates first, followed by priority 1, then 2, and so on. So for example, Group A with priority 0 will Enable your subset of users, and Group B with priority 1 will only evaluate for users not in Group A, and Disable for the remainder of your users.
+> To enable a Cloud Policy for only a specific subset of users:
+>
+> 1. Create **Group A** containing the users you want to enable the policy for. Assign the Cloud Policy to this group and set it to **Enabled**.
+> 1. Create **Group B** that includes **All users**. Assign the same Cloud Policy to this group and set it to **Disabled**.
+> 1. Set the priority for **Group A** to a lower number (for example, priority 0) so it is evaluated before **Group B** (for example, priority 1).
+>
+> In Cloud Policy, lower priority numbers are evaluated first. This ensures users in **Group A** have the policy **Enabled**, while all other users in **Group B** have it **Disabled**.
 
 ## Settings management for Loop functionality in Teams
 
@@ -179,9 +194,13 @@ To disable Loop components in Teams, run `Set-SPOTenant -IsLoopEnabled $false`. 
 
 ## Related topics
 
-- [Overview of Loop components in Teams](/microsoftteams/live-components-in-teams)
+- [Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/loop-compliance-summary)
+- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
+- [Storage](/microsoft-365/loop/loop-storage)
+- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
+- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
+- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
 - [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
 - [Use Loop components in OneNote](https://support.microsoft.com/office/use-loop-components-in-onenote-ed8a43d9-f6fd-4ad6-bc9d-8841db4da459)
 - [Loop components in Whiteboard](https://support.microsoft.com/office/loop-components-in-whiteboard-c5f08f54-995e-473e-be6e-7f92555da347)
 - [Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)
-- [Summary of governance, lifecycle and compliance capabilities for Loop](/microsoft-365/loop/loop-compliance-summary)

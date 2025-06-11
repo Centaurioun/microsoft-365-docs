@@ -32,8 +32,6 @@ Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/share
 
 |Content content originally created in|Content stored in SharePoint Embedded|Content stored in SharePoint Site|Content stored in User's OneDrive|Lifetime Management|
 |-----|-----|-----|-----|-----|
-|Copilot Pages|✔️in user-owned container|||user account|
-|Copilot Notebooks|✔️in user-owned container|||user account|
 |Loop app, My workspace|✔️in user-owned container|||user account|
 |Loop app, shared workspace|✔️in shared container|||workspace owners|
 |Teams [channel workspace](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/collaborate-in-real-time-with-workspaces-in-teams/4414334)|✔️in shared container|||M365 Group|
@@ -66,7 +64,7 @@ Loop workspaces have a maximum size of 25 TB. This limit can't be increased or d
 
 ### Types of Loop workspaces
 
-There is one personal workspace per user in your organization. All other Loop workspaces are shared. See [workspace membership and Microsoft 365 groups](/microsoft-365/loop/cpcn-loop-permission#workspace-membership-and-microsoft-365-groups) for more information on the two shared workspace types.
+There is one personal workspace per user in your organization, created on demand by the person when accessed. All other created Loop workspaces are shared. See [workspace membership and Microsoft 365 groups](/microsoft-365/loop/cpcn-loop-permission#workspace-membership-and-microsoft-365-groups) for more information on the two shared workspace types.
 
 ### Shared Workspaces
 
@@ -106,4 +104,9 @@ See [Storage](#storage). When content is stored in OneDrive, if that user leaves
 
 ## Related topics
 
-[Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary)
+- [Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/loop-compliance-summary)
+- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
+- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
+- [Admin toggles](/microsoft-365/loop/loop-admin-configuration)
+- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
+- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)

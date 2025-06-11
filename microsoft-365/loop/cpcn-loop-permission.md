@@ -85,4 +85,12 @@ Microsoft 365 group-owned Loop workspaces, which are [created within a Teams cha
 
 ## Related topics
 
-[Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary)
+- [Copilot Pages and Notebooks, Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
+- [Configuration Requirements](/microsoft-365/loop/cpcn-loop-requirements)
+- [Copilot Pages and Notebooks Storage](/microsoft-365/loop/cpcn-storage)
+- [Copilot Pages and Notebooks Admin toggles](/microsoft-365/loop/cpcn-admin-configuration)
+- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
+- [Loop, Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
+- [Loop Storage](/microsoft-365/loop/cpcn-storage)
+- [Loop Admin toggles](/microsoft-365/loop/loop-admin-configuration)
+- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
