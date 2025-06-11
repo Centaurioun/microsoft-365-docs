@@ -12,7 +12,7 @@ This article describes some of the most common issues with Tenant Guardrails and
 
 ## The system crashed, froze, or became unresponsive
 
-Contact Microsoft support or your IT administrator—this is a technical problem that cannot be fixed by the user.
+Contact Microsoft support or your IT administrator—this is a technical problem that the user cannot fix.
 
 ## I see an error message when processing guardrails in Tenant Guardrails (guardrails analysis)
 
@@ -44,16 +44,13 @@ To broaden the criteria, follow these steps:
 
 ## I need to handle duplicates
 
+To handle duplicates effectively, follow these steps:
+
   1. Identify overlapping conditions across rules.
   2. Consolidate rules where possible to minimize overlap.
   3. Configure threshold to control sensitivity of flags or alerts when available (editing capability to threshold coming soon).
 
-If issues persist after troubleshooting, escalate to Microsoft support or the Tenant Copilot product team.
+## Related content
+- [Placeholder for related articles and resources content.]
 
-## Related Content
-- **Escalate**:
-  - Contact Microsoft support or your IT administrator if you're unable to resolve the issues.
-
-
-
-[Placeholder for related articles and resources content.]
+If you have any issues or want to provide feedback, contact *** Where are we sending users to get help?
