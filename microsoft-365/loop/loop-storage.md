@@ -44,7 +44,7 @@ Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/share
 
 ## My workspace container name
 
-The Loop My workspace container is shared by Copilot Pages and Copilot Notebooks. This user-owned container is named 'Pages' if the person visits the M365 Copilot app first. It is named 'My workspace' if the person visits the Loop app first. To get a list of all of these user-owned containers in your organization, regardless of the container name, update the following sample PowerShell to your needs:
+Copilot Pages and Copilot Notebooks share the Loop My workspace container. This user-owned container appears as 'Pages' if the person first visits the M365 Copilot app, or as 'My workspace' if they first visit the Loop app. To list all user-owned containers in your organization, regardless of their name, use and adapt the following sample PowerShell:
 
 ```PowerShell
 Get-SPOContainer -OwningApplicationId 'a187e399-0c36-4b98-8f04-1edc167a0996' | WHERE OwnershipType -EQ 'UserOwned' | FT
@@ -64,13 +64,13 @@ Loop workspaces have a maximum size of 25 TB. This limit can't be increased or d
 
 ### Types of Loop workspaces
 
-There is one personal workspace per user in your organization, created on demand by the person when accessed. All other created Loop workspaces are shared. See [workspace membership and Microsoft 365 groups](/microsoft-365/loop/cpcn-loop-permission#workspace-membership-and-microsoft-365-groups) for more information on the two shared workspace types.
+There's one personal workspace per user in your organization, created on demand by the person when accessed. All other created Loop workspaces are shared. See [workspace membership and Microsoft 365 groups](/microsoft-365/loop/cpcn-loop-permission#workspace-membership-and-microsoft-365-groups) for more information on the two shared workspace types.
 
 ### Shared Workspaces
 
 #### Tenant-owned
 
-- Tenant-owned shared Loop workspaces are permissioned with a roster. If all the owners leave the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted.
+- A roster permissions tenant-owned shared Loop workspaces. If all owners leave the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted.
 - You must be an owner to delete a workspace. If all the owners left the company, members can't delete the workspace until an IT administrator adds new owners.
 
 #### Microsoft 365 Group-owned
@@ -96,7 +96,7 @@ There is one personal workspace per user in your organization, created on demand
 - The Ideas workspace is deprecated, no longer created by default, and replaced with the My workspace personal workspace.
 - Ideas was the first default workspace, was tenant-owned, permissioned with a single-person roster.
 - The Ideas workspace isn't deleted by the Loop app, a user or an admin must delete it if desired.
-- When a user leaves the company, if they haven't added multiple owners to their Ideas workspace, the Ideas workspaces becomes ownerless, remains in the tenant, and isn't automatically deleted.
+- If a user hasn't added multiple owners to their Ideas workspace, When they leave the company the Ideas workspaces becomes ownerless, remains in the tenant, and isn't automatically deleted.
 
 ### Loop components created in Microsoft 365 outside of the Loop app or Copilot Pages
 
