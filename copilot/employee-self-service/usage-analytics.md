@@ -1,5 +1,5 @@
 ---
-title: Publish the Employee Self-Service agent to your organization
+title: Usage analytics for the Employee Self-Service agent
 f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
@@ -11,92 +11,37 @@ ms.service: microsoft-365-copilot
 ms.custom: ess-agent
 ms.localizationpriority: medium
 ms.collection: m365copilot
-description: Learn about the last step in the deployment process for the Employee Self-Service agent.
+description: Learn how to access usage analytics for the Employee Self-Service agent.
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Publish the Employee Self-Service agent to your organization
+# Usage analytics for the Employee Self-Service agent
 
-Publishing the Employee Self-Service (ESS) agent makes it available to your users. Currently, the ESS agent supports publishing to Copilot Business Chat.
+You can use different intefaces to monitor ESS agent usage depending on the role in your organization that is in charge of monitoring analytics.
 
-|Role |Activities to perform |Configuration area |
-|-----|----------------------|-------------------|
-|Environment Maker/ Service owner of the ESS agent |- Deploy customization solution to target environment</br> - Set up authentication</br> - Publish ESS agent |Microsoft Copilot Studio |
-|Administrator |- Approve the ESS publish request</br> - Deploy it to selected users |Microsoft admin center |
-|Business stakeholders/ champions |Identify test users |N/A |
+As an application or service owner with the Environment Maker role, you can view analytics in Copilot Studio by navigating to the **Analytics** tab.
 
-## Deploy customization solution to TEST / UAT / PROD as Managed Solution
+For advanced reporting requirements, you can integrate Azure Application Insights with Copilot Studio to gather more telemetry.
 
-Terms to know:
+## Auditing and logging
 
-**UAT** - User acceptance testing
-**PROD** - Production
+The ESS agent is built on Copilot and Power Platform. You can therefore use auditing capabilities from these platforms to log and monitor usage.
 
-1. Go to the **Solutions** page in Copilot Studio.
-1. Select the ellipsis (**...**) and choose **Export Solution** for the preferred solution that you set when preparing environments.
-1. Before you export the solution, it needs to be published or deployed using the Azure DevOps CI/CD pipelines. This article covers the manual publishing option. See [the Power Platform documentation](/power-platform/alm/pipelines) to understand the Azure DevOps CI/CD pipeline deployment.
-1. Select **Publish** to publish all customizations.
-1. Select **Next** to export the solution.
-1. Specify the version number. It's recommended to export as **Managed** if the solution will deploy to another nondev environment.
-1. You can see the export status on the **Solutions** page. The status banner will update when the export is complete.
-1. Select **Download** to download the exported solution and save it in a preferred folder.
-1. Choose the desired Power Platform environment to deploy and test this exported solution.
-1. Ensure all the dependencies required for customization are already available in the target environment. If the dependencies aren't available, imports will fail. The following dependencies need to be installed in the desired environment:
-    1. ESS agent
-    1. Any third-party ISV packages used in customization
-1. Select **Solutions** options from the left navigation pane within the Power Platform environment you selected.
-1. Select the **Import Solution** option to import the file you downloaded in step nine.
-1. Select the downloaded file using the **Browse** button in the right pane.
+### Audit with Microsoft Purview
 
-## Set up authentication
+Microsoft Purview provides features for a comprehensive audit record of end-user activities when interacting with agents. [Learn how to audit user interactions with agents in Microsoft Purview.](/power-platform/release-plan/2024wave2/microsoft-copilot-studio/audit-user-interactions-agents-purview)
 
-The ESS agent is designed to run on Teams channels and Microsoft 365 Copilot channels.
+[Audit logs for Copilot and AI activities](/purview/audit-copilot).
 
->[!IMPORTANT]
->Microsoft 365 Copilot channel isn't available for the ESS agent while using options other than **Authenticate with Microsoft**.
+### Audit with Azure Application Insights
 
-By default, the ESS agent uses Microsoft Entra authentication. Therefore, the default option is **Authenticate with Microsoft**.
+You can [use Azure Application Insights to capture telemetry for custom Copilot Agents.](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry?tabs=webApp)
 
-If your organization needs to use a different identity provider than Microsoft Entra, then you'll need to choose the **Authenticate manually** option and provide the following information:
+### Security information and event management (SIEM)
 
-- Service provider
-- Client ID
-- Client secret
-- Token exchange URL (required for single sign-on)
-- Tenant ID
+For any SIEM integrations, use Application Insights or the Power Platform Dataverse auditing capabilities.
 
-## Publish the ESS agent
+[Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 
->[!NOTE]
->If your organization's Teams app deployment has its own application lifecycle management/ DevOps process in place for deploying and testing new apps, you have the option to side-load apps into the Teams app store using the **Download.zip** option. Consult your organization's Teams app deployment policies and work with your Teams administrators.
-
-1. Open the **Employee Self-Service** agent in Copilot Studio.
-1. Verify the customizations from the imported solution are in place.
-1. Select **Channels** in the top navigation bar.
-1. Choose **Microsoft Teams**.
-1. Select **Edit details** in the details pane for Microsoft Teams. Then check **Make agent available in Microsoft 365 Copilot.**
-1. Select the **Availability options** button. Then choose whether to share the agent to everyone in your organization or only to a specific set of users. It's recommended to start with a small group of pilot users who can test and provide feedback on the configurations.
-1. Choose whether to send email invitations to selected users. You can also choose to show users that this agent is built within Power Platform.
-1. Select **Submit for admin approval** to send the ESS Agent Teams app to your administrator.
-1. Confirm your submission.
-
-## Approve the ESS agent in Integrated apps as an admin
-
-Approval is the final step to deploy the ESS agent to your users through Integrated apps.
-
-1. Sign in to the Microsoft admin center as an administrator with access to Integrated apps.
-1. Select **Integrated apps** under **Settings**. You'll see a notification to approve the published agent.
-1. Select **Review request**.
-1. Select the appropriate actions to publish the ESS agent.
-1. Confirm publish or update for the app.
-1. Select the **Employee Self-Service agent** from the list of Integrated apps.
-1. Select **Deploy app**. Then choose the set of users you want to deploy the app to.
-
-## Publishing checklist
-
-|Role |Verification steps |Result |
-|-----|-------------------|-------|
-|Environment Maker |1. Use the **Copy link** option to get the link to the ESS agent.</br> 2. Paste the link into a browser.</br> 3. This link redirects to the Teams interface for the ESS agent, which provides a link for Microsoft 365 Copilot Chat.</br> This is an option to mitigate any publishing lags. |Pass/Fail|
-
-You'll need to follow the publishing steps again if any of these steps fail.
+[Integrate Microsoft Sentinel and Power Platform to better monitor and protect your low-code solutions.](/power-platform/blog/power-apps/integrating-microsoft-sentinel-and-power-platform-to-better-monitor-and-protect-your-low-code-solutions/?msockid=28f06f3913456b75279c7a3712dc6a44)
