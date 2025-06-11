@@ -42,8 +42,8 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 - **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** is supported.
 
-> [!IMPORTANT]
-> **[Information Barriers](/purview/information-barriers-sharepoint)** are not supported. See [admin settings](/microsoft-365/loop/cpcn-admin-configuration) to configure these integrations.
+    > [!IMPORTANT]
+    > **[Information Barriers](/purview/information-barriers-sharepoint)** are not supported. See [admin settings](/microsoft-365/loop/cpcn-admin-configuration) to configure these integrations.
 
 - **[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.
 
@@ -55,13 +55,13 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 - See [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management) for information and workflows within SharePoint Admin center or PowerShell.
 
-> [!IMPORTANT]
-> Unlike OneDrive, for Copilot Pages and Copilot Notebooks, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](/microsoft-365/loop/cpcn-storage#storage-management-after-user-departure) for detailed information.
+    > [!IMPORTANT]
+    > Unlike OneDrive, for Copilot Pages and Copilot Notebooks, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](/microsoft-365/loop/cpcn-storage#storage-management-after-user-departure) for detailed information.
 
 - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for Copilot Pages and Copilot Notebooks are supported. Copilot Pages and Copilot Notebooks are both stored in the same user-owned SharePoint Embedded container. This container is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). Like OneDrive, admins have the ability to manually move the user's Copilot Pages and Copilot Notebooks container to a new geo when their preferred data location changes.
 
-> [!IMPORTANT]
-> There is no end user recycle bin for Copilot Pages or Copilot Notebooks.
+    > [!IMPORTANT]
+    > There is no end user recycle bin for Copilot Pages or Copilot Notebooks.
 
 - **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Copilot Pages and Copilot Notebooks version history is configured to save 50 versions per file and no admin setting is available to change this configuration.
 
@@ -77,15 +77,15 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 - Microsoft **[Purview eDiscovery](/purview/ediscovery-premium-get-started)** supports search and collection, review (premium license required for admin), and export as HTML (premium license required for admin) or original. You can also download and reupload the files to any OneDrive to view them in their native format.
 
-> [!IMPORTANT]
-> Full text search of content within .loop files in Purview review sets isn't available. All other Purview search and collection capabilities are supported.
+    > [!IMPORTANT]
+    > Full text search of content within .loop files in Purview review sets isn't available. All other Purview search and collection capabilities are supported.
 
 - Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export for third party tools is supported. Use PowerShell to [Get](/powershell/module/sharepoint-online/get-spoapplication) and [Set](/powershell/module/sharepoint-online/set-spoapplicationpermission) guest application permissions.
 
 - **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).
 
-> [!IMPORTANT]
-> Unlike OneDrive, Copilot Pages and Copilot Notebooks are not automatically included when a user is placed on Litigation Hold, the Copilot Pages and Copilot Notebooks container must be manually added for that user.
+    > [!IMPORTANT]
+    > Unlike OneDrive, Copilot Pages and Copilot Notebooks are not automatically included when a user is placed on Litigation Hold, the Copilot Pages and Copilot Notebooks container must be manually added for that user.
 
 ## Microsoft 365 retention and deletion
 
