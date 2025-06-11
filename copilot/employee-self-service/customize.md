@@ -125,12 +125,17 @@ Terms to know:
 
 #### [Admin] User Context - Setup
 
-|  |   |
-|--|---|
-|Default |On |
-|Topic JTBD |Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another non-authoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy". |
-|Maker JTBD |Maker needs to add redirection of the User Context retrieval topics from different ESS agent ISV packages. Or, if Makers configure other Topics to retrieve User Context attributes from other systems, then they should also be added as Topic redirections in this Topic. |
-|Maker - What to customize |**Requirement to use:** None. </br>1. After message disclaimer (blank). Add message or delete it if you don't want the disclaimer to appear. </br>2. Official source badge - no configuration required. You can use this in its default state. |
+**Default:** On
+
+**Topic JTBD:** Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another non-authoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy".
+
+**Maker JTBD:** Maker needs to add redirection of the User Context retrieval topics from different ESS agent ISV packages. Or, if Makers configure other Topics to retrieve User Context attributes from other systems, then they should also be added as Topic redirections in this Topic.
+
+**Maker - What to customize:** </br>
+**Requirement to use:** None.
+
+1. After message disclaimer (blank). Add message or delete it if you don't want the disclaimer to appear.
+1. Official source badge - no configuration required. You can use this in its default state.
 
 |Step |Action |Expected result |
 |-----|-------|----------------|
@@ -142,12 +147,22 @@ Terms to know:
 
 #### [System] Response Preparation
 
-|   |    |
-|---|----|
-|Default |On |
-|Topic JTBD |Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another non-authoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy". |
-|Maker JTBD |1. Configure a single disclaimer that applies for all UST responses across all verticals (**After-message disclaimer**). </br>2. Configure responses with the **official source** badge in the UX to give users confidence that the response is from legitimate sources. |
-|Maker - What to customize |**Requirement to use:** None. </br>1. After message disclaimer (blank). Add message or delete it if you don't want the disclaimer to appear. </br>2. Official source badge - no configuration required. You can use this in its default state. |
+**Solution:** < m-official > and < m-disclaimer > solution in the Topic
+
+**Default:** On
+
+**Topic JTBD:** Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another non-authoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy".
+
+**Maker JTBD:**
+
+1. Configure a single disclaimer that applies for all UST responses across all verticals (**After-message disclaimer**).
+1. Configure responses with the **official source** badge in the UX to give users confidence that the response is from legitimate sources.
+
+**Maker - What to customize** </br>
+**Requirement to use:** None.
+
+1. After message disclaimer (blank). Add message or delete it if you don't want the disclaimer to appear.
+1. Official source badge - no configuration required. You can use this in its default state. |
 
 |Step |Action |Expected result |
 |-----|-------|----------------|
@@ -162,12 +177,13 @@ In the Maker experience in Copilot Studio, you won't see the **Official Source**
 
 #### [Example] Crafted Response
 
-|   |    |
-|---|----|
-|Default |Off |
-|Topic JTBD |Configure topics with an **Official answer** badge in the UX to give users confidence that the response is coming directly from an official source. Note that verbatim responses don't have citations and references, so this badge assures the user that the answer is legitimate. You also have the option to add Actions to the response such as "Click here to create an HR ticket." |
-|Maker JTBD |Update the **Set Official Answer Response** variable with the message that you want to display as an official answer. When you test this in the Maker experience, you should see your crafted response. |
-|Maker - What to customize |Enable the Topic if you want to have crafted responses. Update the trigger phrases and sample response. |
+**Default:** Off
+
+**Topic JTBD:** Configure topics with an **Official answer** badge in the UX to give users confidence that the response is coming directly from an official source. Note that verbatim responses don't have citations and references, so this badge assures the user that the answer is legitimate. You also have the option to add Actions to the response such as "Click here to create an HR ticket."
+
+**Maker JTBD:** Update the **Set Official Answer Response** variable with the message that you want to display as an official answer. When you test this in the Maker experience, you should see your crafted response.
+
+**Maker - What to customize:** Enable the Topic if you want to have crafted responses. Update the trigger phrases and sample response.
 
 |Step |Action |Expected result |
 |-----|-------|----------------|
@@ -183,10 +199,9 @@ In the Maker experience in Copilot Studio, you won't see the **Official Source**
 
 #### [Example] Sensitive Topics
 
-|   |    |
-|---|----|
-|Default |Off |
-|Topic JTBD |Customizing responses for topics that are sensitive and triggered by the ESS agent triggers HR sensitivity. The current generic Copilot Chat response is "I'm really sorry that you're feeling this way, but I'm not able to help. It's important to talk to a mental health professional or someone you trust about what you're going through." |
+**Default:** Off
+
+**Topic JTBD:** Customizing responses for topics that are sensitive and triggered by the ESS agent triggers HR sensitivity. The current generic Copilot Chat response is "I'm really sorry that you're feeling this way, but I'm not able to help. It's important to talk to a mental health professional or someone you trust about what you're going through."
 
 **Maker JTBD:**
 
@@ -225,4 +240,96 @@ Enable the Topic if your organization wants to use it. Update the trigger phrase
 |3 |Select **[Example] - Sensitive Topics** |Topic opens in the design canvas |
 |4 |Select the first node **Triggered by agent (preview)** |Topic node expands to show the description of what the Topic does |
 |5 |Customize the Topic description to include specific keywords that shouldn't be responded to by the agent and instead redirected elsewhere. |Topic description updates |
-<!-- page 45>
+|6 |Select the second node **Message** |Topic node expands to show the value that can be customized |
+|7 |Customize the **Text** field with a message that will display when the agent returns an official answer rather than AI-generated output. |Topic value updates |
+|8 |**Save** your changes |Changes are saved |
+|9 |Test the configured trigger word using hte test pane in Copilot Studio. |The customized message shows instead of an AI-generated message. |
+
+#### [System] On Error
+
+**Solution:** These three templates are provided in this Topic:
+
+1. LLM capacity
+1. Responsible AI (RAI) customization
+1. Error out bug
+
+**Default:** On
+
+**Topic JTBD:** Customized error messages instead of the default Copilot Chat error messages to help users better understand why they receive an error.
+
+**Maker JTBD:** Configure each error. You can also add a call to action.
+
+- **OpenAIratelimit reached** triggered when the LLM is at capacity.
+- **ESS template** We are working on increasing the capacity for usage. Please wait for a couple of minutes before retrying the Employee Self-Service agent. We regret the inconvenience.
+- **ContentFiltered** triggered the same as RAI questions. You can set what you want instead of the generic RAI.
+  - **Generic message:** I'm really sorry that you're feeling this way, but I'm not able to help. It's important to talk to a mental health professional or someone you trust about what you're going through.
+  - **ESS template:** Sorry, I can't chat about this. Start a fresh one by selecting **New chat.**
+  - **ESS template:** Consulting with a professional is the best way to get assistance with this request. Please contact a representative for further support.
+- **Topicvarshowdebuginfo:** Gives the conversation ID and time to help an engineer debug.
+  - **ESS template:** Users see the conversation ID and time.
+
+**Maker- What to customize:** </br>
+**Requirement to use:** None </br>
+Edit the default template for each error message that you want to change to a custom response. Delete the Topic if you don't want any custom messages.
+
+#### [System] Log Telemetry Event (Advanced)
+
+**Default:** On
+
+**Topic JTBD:** View telemetry in Application Insights to help the Maker with debugging tickets for any event. Example: A user gets an error from an ISV when trying to create a ticket.
+
+**Maker JTBD:** Install App Insights and configure the event and redirect message.
+
+**Maker- What to customize:**</br>
+Customization is optional.
+**Requirements to use:**
+
+1. Application Insights installed
+1. Don't edit "On redirect". Keep the default.
+1. Edit EventName.
+1. Edit Message.
+
+## Customize data retrieval Topics to prevent hallucinations
+
+Data retrieved from data sources can cause the LLM to hallucinate. You can prevent these inaccurate responses by providing additional context to the data retrieval Topics.
+
+### Example scenario
+
+Asking "What's my company code?" Might cause Copilot to hallucinate that the current user's company code is the same as their manager's.
+
+You can prevent this by adding more context in each of the data retrieval Topics. The following examples could be added as instructions to the Topic that's responsible for retrieving the company code.
+
+*Example invalid requests*
+
+- What is my manager's company code?
+- What is my director's company code?
+
+*Example valid requests*
+
+- What is my company code?
+
+## Configure knowledge sources
+
+Within Copilot Studio, knowledge sources act in concert with generative answers. When you add knowledge sources, agents can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. Knowledge sources allow your agents to provide relevant information and insights for your customers.
+
+Published agents that contain knowledge use the configured knowledge sources to ground the published agent. Knowledge can be incorporated at the agent level, in the Knowledge page, or at the topic level with a generative answers node in an agent topic.
+
+You can incorporate knowledge sources into agents during initial creation, after the agent is created, or in a generative answers topic node.
+
+[Learn more about knowledge sources and supported types in Copilot Studio.](/microsoft-copilot-studio/knowledge-copilot-studio)
+
+>[!NOTE]
+>The ESS agent currently only has agent-level knowledge sources and no Topic-level knowledge sources included.
+
+### Configure SharePoint as a knowledge source
+
+[Learn how to add SharePoint as a knowledge source in Copilot Studio](/microsoft-copilot-studio/knowledge-add-sharepoint).
+
+1. Open the **Employee Self-Service** agent in Copilot Studio.
+1. Select **Knowledge** in the top navigation bar.
+1. Select **+Add knowledge** and choose **SharePoint** from the Add knowledge pane.
+1. You can choose to add a set of files from SharePoint or add a site. If you add a site, all the files in the site are used as a knowledge source.
+1. Provide a meaningful name and description, then choose **Add**.
+1. The site or set of files you chose appear in your **Knowledge** page.
+
+<!--52>
