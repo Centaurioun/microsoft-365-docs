@@ -49,7 +49,7 @@ Packages are reusable components within Copilot Studio to configure certain thir
 
 ### Agent instructions (global)
 
-Agent instructions are a high-quality description for each of its topics, actions, and knowledge sources.  Good descriptions ensure the agent selects the right topics, actions, and knowledge sources to respond to users.
+Agent instructions are a high-quality description for each of its topics, actions, and knowledge sources. Good descriptions ensure the agent selects the right topics, actions, and knowledge sources to respond to users.
 
 The ESS Agent Instructions are:
 
@@ -64,11 +64,11 @@ You are an agent that represents an enterprise organization to help employees fi
 
 Do not try to provide answers when you don’t have enough information. You must not generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content. You must not generate content that is hateful, racist, sexist, lewd or violent. You must not answer any questions comparing the user's organization with other enterprises. You must not provide pros and cons comparing the user's organization with other enterprises. You must not use your own general knowledge. Handle sensitive subjects like mental health with extra empathy and attention.
 
-For more information about agent instructions, refer to the [documentation and best practices on authoring descriptions](/microsoft-copilot-studio/advanced-generative-actions#authoring-descriptions).
+For more information about agent instructions, see the [documentation and best practices on authoring descriptions](/microsoft-copilot-studio/advanced-generative-actions#authoring-descriptions).
 
 ### Knowledge source instructions
 
-Clarify how each source should be used. Custom instructions for knowledge sources are important because they helps the agent understand how to interpret and apply the information accurately when generating answers so responses are relevant, trustworthy, and aligned with the user’s intent. [Learn more about knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio).
+Clarify how each source should be used. Custom instructions for knowledge sources are important because they help the agent understand how to interpret and apply the information accurately when generating answers so responses are relevant, trustworthy, and aligned with the user’s intent. [Learn more about knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio).
 
 ### Topic trigger phrases and instructions
 
@@ -108,9 +108,9 @@ The following Topics are available:
 |[Example] - Sensitive Topics |Topic |By agent |Off |Edit responses for sensitive topics to help users navigate potentially harmful conversations. |
 |[System] - Log Telemetry Event |Topic |On redirect |On |Log events and other details for internal debugging and agent management purposes. |
 |[System] - On Error |System Topic |On error |On |Edit general error messages for common scenarios to improve engagement and task completion. |
-|[System] - Reset Converation |Topic |Activity received |Off |Conversation cache times out to help improve engagement. |
-|[System] - Response Preparation |Topic |On generated response |On |Add an official source badge with a custom disclaimer message for authoratative responses. </br>Known issue: This badge shows only in Copilot chat and can't be tested in Copilot Studio. |
-|[System] - User Context - Init variables |Topic |On redirect |On |Improve peformance by updating and caching user context attributes to default values. </br>*No customizations available*. |
+|[System] - Reset Conversation |Topic |Activity received |Off |Conversation cache times out to help improve engagement. |
+|[System] - Response Preparation |Topic |On generated response |On |Add an official source badge with a custom disclaimer message for authoritative responses. </br>Known issue: This badge shows only in Copilot chat and can't be tested in Copilot Studio. |
+|[System] - User Context - Init variables |Topic |On redirect |On |Improve performance by updating and caching user context attributes to default values. </br>*No customizations available*. |
 |[System] - User Context - Validate |Topic |Activity received |On |User context attributes refreshed. </br>*No customizations available*. |
 |Agent handoff - [Scenario name] |Topic |By agent |Off | |
 |Conversation Start |System Topic |On conversation start |On |Initializes the user context attributes with default values. The maker can customize the welcome message. |
@@ -127,7 +127,7 @@ Terms to know:
 
 **Default:** On
 
-**Topic JTBD:** Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another non-authoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy".
+**Topic JTBD:** Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another nonauthoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy."
 
 **Maker JTBD:** Maker needs to add redirection of the User Context retrieval topics from different ESS agent ISV packages. Or, if Makers configure other Topics to retrieve User Context attributes from other systems, then they should also be added as Topic redirections in this Topic.
 
@@ -151,7 +151,7 @@ Terms to know:
 
 **Default:** On
 
-**Topic JTBD:** Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another non-authoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy".
+**Topic JTBD:** Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another nonauthoritative source. The Maker can also add an after-message disclaimer to the responses such as "Please check sources for accuracy".
 
 **Maker JTBD:**
 
@@ -171,7 +171,7 @@ Terms to know:
 |3 |Select **[System] -2: Response Preparation** |Opens custom Topic in the design canvas |
 |4 |Customize the **Disclaimer** message in the third node. |Maker able to add a custom disclaimer message |
 |5 |Save the changes. |Changes are saved |
-|6 |Test the changed **Disclaimer** message using the Copilot Studio test pane to confirm the desired results. |Disclaimer messages are being shown, but the **Official Source** badge is not visible in the Test pane. This is a known issue, and this badge will only be visible in Copilot chat. |
+|6 |Test the changed **Disclaimer** message using the Copilot Studio test pane to confirm the desired results. |Disclaimer messages are being shown, but the **Official Source** badge isn't visible in the Test pane. This is a known issue, and this badge will only be visible in Copilot chat. |
 
 In the Maker experience in Copilot Studio, you won't see the **Official Source** badge above a generated answer. However, you can see the disclaimer message below the answer. Even though you can't see it in the Maker experience, users will see the **Official Source** badge above a generated answer in Microsoft 365 Copilot Chat and Copilot Chat in Teams.
 
@@ -179,7 +179,7 @@ In the Maker experience in Copilot Studio, you won't see the **Official Source**
 
 **Default:** Off
 
-**Topic JTBD:** Configure topics with an **Official answer** badge in the UX to give users confidence that the response is coming directly from an official source. Note that verbatim responses don't have citations and references, so this badge assures the user that the answer is legitimate. You also have the option to add Actions to the response such as "Click here to create an HR ticket."
+**Topic JTBD:** Configure topics with an **Official answer** badge in the UX to give users confidence that the response is coming directly from an official source. Verbatim responses don't have citations and references, so this badge assures the user that the answer is legitimate. You can also add Actions to the response such as "Click here to create an HR ticket."
 
 **Maker JTBD:** Update the **Set Official Answer Response** variable with the message that you want to display as an official answer. When you test this in the Maker experience, you should see your crafted response.
 
@@ -193,7 +193,7 @@ In the Maker experience in Copilot Studio, you won't see the **Official Source**
 |4 |Select the first node **Triggered by agent (preview)** |Topic node expands to show the description of what the Topic does |
 |5 |Customize the Topic description to include specific keywords that shouldn't be responded to by the agent and instead redirected elsewhere. |Topic description updates |
 |6 |Select the second node **Set Official Answer Response** |Topic node expands to show the value that can be customized |
-|7 |Customize the **To value** field with a message. This message will display for your chosen queries instead of generated AI output. |Topic value updates |
+|7 |Customize the **To value** field with a message. This message displays for your chosen queries instead of generated AI output. |Topic value updates |
 |8 |Save the changes. |Changes are saved |
 |9 |Test the configured trigger word using the test pane within Copilot Studio. |Results generate with the **Official Answer** badge |
 
@@ -211,7 +211,7 @@ The triggers are:
 
 **This topic should only trigger ** when users mention **explicitly sensitive, confidential, or legal concerns ** such as **harassment **, **abuse **, **discrimination **, **unethical behavior **, or **retaliation ** in the work place. It activates in situations involving:
 
-- Requests for **HR consultation ** relating to sensitive maters
+- Requests for **HR consultation ** relating to sensitive matters
 - **Privacy concerns **
 - **Hostile work environments **
 - **Workplace violence **
@@ -243,7 +243,7 @@ Enable the Topic if your organization wants to use it. Update the trigger phrase
 |6 |Select the second node **Message** |Topic node expands to show the value that can be customized |
 |7 |Customize the **Text** field with a message that will display when the agent returns an official answer rather than AI-generated output. |Topic value updates |
 |8 |**Save** your changes |Changes are saved |
-|9 |Test the configured trigger word using hte test pane in Copilot Studio. |The customized message shows instead of an AI-generated message. |
+|9 |Test the configured trigger word using the test pane in Copilot Studio. |The customized message shows instead of an AI-generated message. |
 
 #### [System] On Error
 
@@ -289,13 +289,13 @@ Customization is optional.
 1. Edit EventName.
 1. Edit Message.
 
-## Customize data retrieval Topics to prevent hallucinations
+## Customize data retrieval Topics to prevent incorrect responses
 
-Data retrieved from data sources can cause the LLM to hallucinate. You can prevent these inaccurate responses by providing additional context to the data retrieval Topics.
+Data retrieved from data sources can cause the LLM to return incorrect information. You can prevent these inaccurate responses by providing additional context to the data retrieval Topics.
 
 ### Example scenario
 
-Asking "What's my company code?" Might cause Copilot to hallucinate that the current user's company code is the same as their manager's.
+Asking "What's my company code?" Might cause Copilot to incorrectly determine that the current user's company code is the same as their manager's.
 
 You can prevent this by adding more context in each of the data retrieval Topics. The following examples could be added as instructions to the Topic that's responsible for retrieving the company code.
 
@@ -332,4 +332,26 @@ You can incorporate knowledge sources into agents during initial creation, after
 1. Provide a meaningful name and description, then choose **Add**.
 1. The site or set of files you chose appear in your **Knowledge** page.
 
-<!--52>
+>[!TIP]
+>The ESS agent begins using the **Description** field to identify the right knowledge source for user queries when the total number of knowledge sources exceeds 25. Therefore, plan to provide detailed and relevant information for the description. [Learn more about best practices for creating a description.](/microsoft-copilot-studio/advanced-generative-actions#best-practices)
+
+## Customize Starter prompts
+
+**Starter prompts** help you roll out the ESS agent efficiently to your organization. With starter prompts, users already have a few ready-to-go prompts to use. Creating starter prompts helps your organization decrease the time to value.
+
+>[!TIP]
+>Identify the most asked questions by your users to form the base of your starter prompts.
+
+1. Open the **Employee Self-Service** agent in Copilot Studio and navigate to the **Overview** page.
+1. Select the **Edit** button in **Starter prompts.**
+1. Add prompts categorized by **Title**.
+1. **Save** your changes.
+1. The starter prompts you created display in the **Starter prompts** section.
+
+## Customization checklist
+
+|Role |Verification steps |Result |
+|-----|-------------------|-------|
+|Environment Maker |1. Access the ESS agent from Copilot Studio.</br> 2. Test all the customizations using the Copilot Studio test panel. Make sure to refresh the test panel for each change. |Pass/Fail |
+
+You'll need to repeat the steps to customize the agent if any of the verification steps fail.
