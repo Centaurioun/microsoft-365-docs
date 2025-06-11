@@ -1,7 +1,8 @@
 
 ---
-title: Get started with Tenant Copilot models
-description: Tenant Copilot models are designed to provide complex, domain-specific answers for user queries within your organization. These models require structured domain content and integrate with Copilot agents for interactive query processing. Explore best practices, scenarios, limitations, and requirements for effective implementation.
+
+title: Get started with Copilot Tuning models
+description: Copilot Tuning models are designed to provide complex, domain-specific answers for user queries within your organization. These models require structured domain content and integrate with Copilot agents for interactive query processing. Explore best practices, scenarios, limitations, and requirements for effective implementation.
 manager: [placeholder-metadata]
 ms.reviewer: [placeholder-metadata]
 ms.topic: get-started
@@ -11,134 +12,114 @@ ms.custom: [placeholder-metadata]
 search.appverid: [placeholder-metadata]
 ---
 
+# Get started with Copilot Tuning models
 
-# Get started with Tenant Copilot models
+> [!INCLUDE metadata-learn-get-started-article-pattern]
 
-[!INCLUDE [metadata-learn-get-started-article-pattern](placeholder-md-file)]
-
-Test
+Copilot Tuning models are designed to provide complex, domain-specific answers for user queries within your organization. These models require structured domain content and integrate with Copilot agents for interactive query processing. Explore best practices, scenarios, limitations, and requirements for effective implementation.
 
 ## Capabilities
 
-You can use Tenant Copilot Studio model maker to fine-tune a model that can complete the following capabilities.
+You can use the model maker to fine-tune a model that can complete the following capabilities:
 
-The AI language model is designed to address complex, domain-specific queries that require interpretation, contextual understanding, and multi-turn interaction. For example, Copilot agents powered by the model can accomplish the following:
-
-- **Provide citation-based responses**: This model generates responses that are synthesized from multiple domain-specific content sources such as legal, HR, or technical documentation--where each response is accompanied by citations that validate the accuracy of the information provided.
-- **Multi-document reasoning**: This capability is crucial for handling content that is distributed across multiple documents, directories, or folders associated with a common topic of interest, where questions can't be answered from a single source.
-
+- Provide significant value when evaluating content collections that involve specialized and proprietary tenant knowledge, such as internal legal contracts, HR policies, and industry-specific data (e.g., oil and gas), which are not easily accessible online.
+- Handle multi-document reasoning to manage content distributed across multiple documents, directories, or folders associated with a common topic of interest, where questions can't be answered from a single source.
 
 ## Limitations
 
-The model can work with structured domain content, when the content can be accepted by the following:
+The model supports various document formats, but there are specific limitations to consider when using your content.
 
-- Content file must be in the following file types: .docx, .pdf, .aspx, and other file types listed in this article: [Enterprise Prompting file-type support](placeholder-md-file)
-- Content must be stored on a SharePoint repository or any other storage option in this article: [Enterprise Prompting storage support](placeholder-url)
-- Content that is scanned or unstructured is not supported.
+- Supported file types: `.docx`, `.pdf`, and `.aspx`.
+- Content must be stored in SharePoint.
+- Certain types of content are not supported, including embedded images or tables.
 
-All language models have certain, inherent technical limitations related to information retrieval, language understanding, reasoning, and problem-solving.
-
+While there is no lower limit to the number of documents that can be used, you can experience better results with a larger document base and it is recommended that you have at least 20 documents before training.
 
 ## Prerequisites
 
-Before starting, you should make sure you have the following requirements and content:
+Before starting, ensure the following:
 
-1. **Domain-specific content**: You must have the content or documentation related to your specific domain that the model can use to answer questions. For example, legal playbooks, HR guidelines, technical documentation, policy manuals, departmental procedures etc.
-2. **Supported file types**: For the various content source types supported, see the latest list of Enterprise Prompting supported [file types](placeholder-md-file).
-3. **Model agent security settings**: Models can be integrated with an Azure Active Directory (AAD) [security group or distribution lists](placeholder-url). This configuration is commonly used in the Harmonization of Neural Network (HNN) mechanism [agent solution](nant://placeholders), where a list is automatically created and added to the model. This allows anyone with access to the solution to also be able to utilize the model. To achieve this, you can create your own Azure Active Directory (AAD) groups to be added to the model.
-4. **Content storage**: You must know where your content is stored. For example, a SharePoint repository or any other storage options supported within the Enterprise Prompting storage [locations](placeholder-md-file).
-
-When these are completed, continue to learn more about the Getting Started process for the solution.
+1. You must have domain-specific content or documentation, such as legal playbooks, HR guidelines, technical documentation, policy manuals, or departmental procedures, that the model can use to answer questions.
+2. Configure the model agent with an Azure Active Directory (AAD) security group or distribution list and create your own AAD groups to be added to the model.
+3. Identify where your content is stored in SharePoint.
 
 :::image type="content" source="placeholder-media" alt-text="Illustration of prerequisites needed for a fine-tuned model":::
 
-
 ## Get started
 
-Embark on setting up an Expert Q&A model that provides precise, citation-backed responses using the Tenant Copilot Studio Model Maker. This guide covers creation, configuration, training, and integration, ensuring accurate outputs.
+Set up an **Expert Q&A model** using Copilot tuning model maker. This guide covers creation, configuration, training, and integration.
 
 ### Model maker workflow
 
-To initiate an Expert Q&A model, follow these steps:
+Model Maker serves as the entry point for selecting the content collection, with Copilot Studio verifying access control by comparing permissions on the content with those of the fine-tuned model.
 
-1. **Create a New Model**: In Copilot Studio, select "Create a new model" and provide essential details including the model name, task type, and a brief description of the intended use case.
+Model Maker also prompts you to fill out a questionnaire that describes the content and purpose of the Tenant Copilot Declarative Agent. Tenant Copilot uses this information to guide the training data generation, filtering, and behavior adjustment of the Declarative Agent.
 
-2. **Set Up Expert Content**: Incorporate domain-specific documentation that the model will rely upon. Ensure this content meets the required file formats and storage specifications for seamless integration.
+To set up an Expert Q&A model, follow these steps to ensure a smooth configuration.
 
-3. **Configure Model Details**: Input relevant settings that guide how the model handles queries, including the extent of multi-turn interactions and the level of detail in citation-backed responses.
+1. In Copilot Studio, select **Create a new model**, and provide the model name, task type, and description.
+1. Set up expert content by adding domain-specific documentation.
+1. Complete the model maker questionnaire, which helps describe the content, domain expertise, and intended functionality of the Tenant Copilot Declarative Agent. This information is used to guide the training data generation and behavior of the model.
+1. Configure model details by defining query handling, multi-turn interaction, and citation depth.
+
+Copilot Studio checks the permissions for the selected content to ensure the security group(s) have appropriate access. Any inaccessible content isn't used during the training process.
 
 ### Declarative agent maker workflow
 
-The following steps outline how to enhance your Expert Q&A model:
+To create an advanced Copilot Declarative Agent specialized for answering questions based on domain-specific knowledge, follow these steps.
 
-1. **Add Knowledge Sources**: Designate the repositories or databases where the structured content is stored, ensuring coverage of all necessary domain-specific material.
+1. Define and designate the repositories or databases where your structured content is stored, ensuring that it covers all necessary domain-specific material.
+1. Integrate necessary security details by linking the model to the appropriate Azure Active Directory groups, ensuring controlled access and security compliance.
+1. Provide domain expertise through a configuration questionnaire, detailing typical questions, key answer points, and the preferred response style and tone.
+1. Utilize the system’s capability to automatically draft initial Q&A pairs based on your domain content, forming the foundational training dataset for the agent.
+1. Fine-tune the model and, once the training data is prepared, publish it and integrate it with the Copilot agent to initiate user interactions.
+1. In Copilot Studio, create a new agent by selecting the “Task-specific” option and choosing the appropriate Copilot Tuning model as the knowledge source for your Expert Q&A Agent.
+1. Customize the agent's behavior by providing detailed instructions that guide its responses in terms of tone, style, and length, ensuring alignment with the desired scenario and audience.
 
-2. **Configure Security Parameters**: Integrate necessary security details, linking the model to the appropriate Azure Active Directory (AAD) security groups for controlled access.
+## Scenarios ** Waiting for feedback to delete this section**
 
-3. **Use the Configuration Questionnaire**: Provide domain expertise through a survey detailing typical questions, key points in answers, and preferred response style and tone.
+Organizations fine-tuning models typically want domain-specific, citation-backed, multi-turn dialogue capabilities.
 
-4. **Automatic Q&A Pair Generation**: Utilize the system's capability to automatically draft initial Q&A pairs from your domain content, forming the basis of the training dataset.
+### General Workflow
 
-5. **Fine-Tune and Deploy the Model**: Once the training data is prepared, engage in the fine-tuning process. Afterward, publish the model, subsequently integrating it with a Copilot agent to commence user interactions.
-
-Through this detailed walkthrough, you ensure the development of an advanced Expert Q&A model that delivers discerning, authoritative responses tailored to your domain.
-
-
-## Scenarios
-
-Tenants that are looking to fine-tune a model within Copilot Studio are typically looking for an answer capability that is connected with domain-specific content, incorporating key capabilities such as multi-document reasoning, multi-turn dialogue, and contextual citations.
-
-The general workflow to fine-tune a model is the following steps:
-
-- Initiate the model creation
+- Initiate model creation
 - Add knowledge sources
 - Configure security settings
-- Use the configuration questionnaire
-- Wait for system generation of questions & answers (Q&A) pairs
-- Wait for training completion
-- Validate success, troubleshoot failure
-- Publish the model
-- Add copilot agent to agent catalog
+- Use configuration questionnaire
+- Wait for Q&A generation
+- Validate and troubleshoot
+- Publish model
+- Add Copilot agent
 
-The following scenarios can help you get started with setting up a fine-tuned model related to your structured content knowledge base:
+### Scenario 1: Fine-tune for knowledge base queries
 
-### Scenario 1
+**Steps:**
 
-Create a model fine-tuned to respond accurately to queries related to your key knowledge base.
+1. Select task type and initiate model
+2. Enter model info, select knowledge base, configure security
+3. Answer prompt questions
+4. Validate and fine-tune Q&A
+5. Publish model
+6. Add model to agent
 
-**Scenario Steps**
+### Scenario 2: Deploy agent by domain
 
-1. Initiate Model creation by selecting task type
-2. Enter model information, select knowledge bases, configure security settings for model
-3. Answer prompt questions to provide domain expertise
-4. Wait for generated questions and answers (Q&A)
-5. Validate Q&A responses, fine-tune model within prompt based on feedback, Update model with brakes provided including identifying unintelligible answers
-6. Publish model
-7. Add model to an agent
+**Steps:**
 
-### Scenario 2
+1. Add agent to domain or department
+2. Configure user deployment settings
+3. Add to shared platform catalog
+4. Share within organization
 
-Add copilot agent and deploy agent by categorizing within specific domain or "department" and publishing to catalog for use within organization.
+## Best practices
 
-**Scenario Steps**
-
-1. Add agent to specific domain or department
-2. Deployer user optic setting
-3. Add shared platform within catalog
-4. Share and amplify within your organization
-
-**Best practices**
-
-To avoid common mistakes and iterate quickly, consider the following best practices:
-
-- Provide clear, specific guidance on the types of questions the model should answer
-- Focus on relevant and structured content to provide effective, accurate results
-- Schedule content updates for changes and newly-added information
-- Customise the model's response style
-- Incorporate important details and useful advice for meeting accuracy requirements
-- Involve subject matter experts (SMEs) in the configuration process
-- Prepare for iterative improvements and troubleshooting
+- Provide clear guidance on question types
+- Use relevant, structured content
+- Schedule regular content updates
+- Customize response style
+- Include SMEs in configuration
+- Prepare for iterative improvements
 
 ## Related content
 
-_Main content for related resources and articles will be included here._
+**Placeholder: TO DO** Main content for related resources and articles will be included here.
