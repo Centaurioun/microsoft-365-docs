@@ -38,6 +38,8 @@ Building on the autofill columns feature, this agent skill simplifies the proces
 
 To get suggested columns in your document library, follow these steps.
 
+### Launch the process
+
 1. In the lower-right corner of your document library, select the **Open AI quick actions** icon.
 
    ![Screenshot of a document library with the icon highlighted.](../media/content-understanding/autofill-librarian-open-actions-icon.png)
@@ -72,10 +74,17 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
 
+### Enter a custom prompt
+
+1. In the prompt box in the lower portion of the chat window, enter your own instructions. For example, type:
+
+"Create a column to extract the invoice ID number. Name the column 'Invoice ID'."
+
+Then press Enter to submit the prompt and initiate the suggestion flow based on your custom request.
+
+### Save your changes
+
 10. When you are ready to save all of the column changes, select **Save changes**.
-
-### Create a custom prompt
-
 
 11. On the **Save and apply your changes?** confirmation screen, select **Apply changes**.
 
