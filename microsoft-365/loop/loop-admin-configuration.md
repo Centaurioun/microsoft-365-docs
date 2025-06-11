@@ -29,7 +29,7 @@ description: "Manage Loop in your organization"
 > [!NOTE]
 > The Copilot Pages and Copilot Notebooks content has moved to a [dedicated article](/microsoft-365/loop/cpcn-admin-configuration).
 
-Loop components and their integrations are powered by `.loop` files (earlier releases of Loop created these as `.fluid` files), which are stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Storage for these files counts toward your organization's overall SharePOint quota. For details about where the content is stored, see [storage and lifecycle](/microsoft-365/loop/loop-storage#storage). IT administrators can control the creation and use of Loop content through settings discussed in this article.
+Loop components and their integrations are powered by `.loop` files (earlier releases of Loop created these as `.fluid` files), which are stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Storage for these files counts toward your organization's overall SharePoint quota. For details about where the content is stored, see [storage and lifecycle](/microsoft-365/loop/loop-storage#storage). IT administrators can control the creation and use of Loop content through settings discussed in this article.
 
 ## Two Admin Policy Tools
 
