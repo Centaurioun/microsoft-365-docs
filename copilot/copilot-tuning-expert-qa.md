@@ -76,7 +76,7 @@ To create an advanced Copilot Declarative Agent specialized for answering questi
 1. In Copilot Studio, create a new agent by selecting the “Task-specific” option and choosing the appropriate Copilot Tuning model as the knowledge source for your Expert Q&A Agent.
 1. Customize the agent's behavior by providing detailed instructions that guide its responses in terms of tone, style, and length, ensuring alignment with the desired scenario and audience.
 
-## Scenarios ** Waiting for feedback to delete this section**
+## Scenarios ** [Waiting for feedback to delete this section]**
 
 Organizations fine-tuning models typically want domain-specific, citation-backed, multi-turn dialogue capabilities.
 
