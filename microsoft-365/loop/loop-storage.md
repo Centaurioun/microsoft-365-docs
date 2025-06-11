@@ -47,7 +47,7 @@ Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/share
 
 ## My workspace container name
 
-Copilot Pages and Copilot Notebooks share the Loop My workspace container. This user-owned container appears as 'Pages' if the person first visits the M365 Copilot app, or as 'My workspace' if they first visit the Loop app. To list all user-owned containers in your organization, regardless of their name, use, and adapt the following sample PowerShell:
+Copilot Pages and Copilot Notebooks all use the Loop My workspace container. This user-owned container appears as 'Pages' if the person first visits the M365 Copilot app, or as 'My workspace' if they first visit the Loop app. To list all user-owned containers in your organization, regardless of their name, use, and adapt the following sample PowerShell:
 
 ```PowerShell
 Get-SPOContainer -OwningApplicationId 'a187e399-0c36-4b98-8f04-1edc167a0996' | WHERE OwnershipType -EQ 'UserOwned' | FT

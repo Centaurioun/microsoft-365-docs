@@ -71,7 +71,7 @@ Unlike SharePoint sites, there's no admin setting to configure guest sharing of 
 
 ## Workspace membership and Microsoft 365 groups
 
-This section doesn't apply to Copilot Pages, Copilot Notebooks, or My workspace, which are personal, have only one member, and aren't shared.
+This section applies to shared workspaces. It doesn't apply to Copilot Pages, Copilot Notebooks, or My workspace, which are personal, have only one member, and aren't shared.
 
 ### Tenant-owned workspaces
 
