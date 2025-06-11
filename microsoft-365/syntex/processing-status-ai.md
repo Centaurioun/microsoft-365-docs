@@ -74,7 +74,7 @@ To view the processing status of one or more files:
 
     - For translation: Select **Translate** > **View recent activity**.
 
-    ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
+        ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
 
 3. Depending on the service you selected, the corresponding [activity panel](#view-the-activity-panel) opens.
 
