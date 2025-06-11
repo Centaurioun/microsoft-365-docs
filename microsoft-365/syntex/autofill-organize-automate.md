@@ -28,7 +28,7 @@ Building on the autofill columns feature, this agent skill simplifies the proces
 
 To get suggested columns in your document library, follow these steps.
 
-### Launch the process
+### Launch the quick action
 
 1. In the lower-right corner of your document library, select the **Open AI quick actions** icon.
 
