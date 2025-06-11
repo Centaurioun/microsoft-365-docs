@@ -42,9 +42,17 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of a document library with the icon highlighted.](../media/content-understanding/autofill-librarian-open-actions-icon.png)
 
-2. From the **AI quick actions** menu, select **Organize this library** to launch the process.
+2. From the **AI quick actions** menu, select **Organize this library**.
 
    ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/autofill-librarian-agents-in-sharepoint-menu.png)
+
+3. The chat panel opens and displays a list of prompts related to column actions that you can try.
+
+   ![Screenshot of the chat panel showing the prompt for column actions.](../media/content-understanding/autofill-librarian-agents-chat-panel.png)
+
+4. Select one of the prompts to —such as Create Columns—from the displayed chat interface.
+
+
 
 3. It takes a few moments for the suggested new columns to appear based on the content of your library. Suggested columns are highlighted and shown as **Suggested**.
 
@@ -72,7 +80,6 @@ To get suggested columns in your document library, follow these steps.
 
 ## Planned capabilities coming soon
 
-- Chat with column creation support​
 - Select rule automation support via chat​
 - Classification support
 - New library flow​
