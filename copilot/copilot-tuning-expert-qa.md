@@ -45,7 +45,7 @@ Before starting, ensure the following:
 
 :::image type="content" source="placeholder-media" alt-text="Illustration of prerequisites needed for a fine-tuned model":::
 
-## Get started
+## Set up
 
 Set up an **Expert Q&A model** using Copilot tuning model maker. This guide covers creation, configuration, training, and integration.
 
