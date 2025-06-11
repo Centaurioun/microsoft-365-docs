@@ -1,5 +1,5 @@
 ---
-ms.date: 03/06/2025
+ms.date: 06/11/2025
 title: "Configuring external data integrations for Loop experiences"
 ms.reviewer: dancost, dimple
 ms.author: jenz
@@ -69,7 +69,7 @@ The Loop experiences check the following [Cloud Policy](/deployoffice/admincente
 1. Select **Customization** from the left pane.
 1. Select **Policy Management**.
 1. Create a new policy configuration or edit an existing one.
-1. From the **Choose the scope** dropdown list, choose either **All users**, or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](/microsoft-365/loop/loop-components-configuration#microsoft-365-groups-for-cloud-policy).
+1. From the **Choose the scope** dropdown list, choose either **All users**, or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](loop-admin-configuration.md#scoping-cloud-policy-with-microsoft-365-groups).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Import, view, and edit, items from apps integrated with Loop**:
         - first, recall:

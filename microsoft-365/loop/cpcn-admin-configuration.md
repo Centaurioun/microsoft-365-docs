@@ -26,11 +26,11 @@ description: "Manage Copilot Pages and Copilot Notebooks in your organization"
 
 # Admin policies for Copilot Pages and Copilot Notebooks
 
-Copilot Pages and Copilot Notebooks are powered by `.loop` files, which are stored in user-owned SharePoint Embedded containers. Storage for these files counts toward your organization's overall SharePoint quota. For details, see [storage and lifecycle](/microsoft-365/loop/cpcn-storage). IT administrators can control the creation and use of Copilot Pages and Copilot Notebooks through Cloud Policy settings.
+Copilot Pages and Copilot Notebooks are powered by `.loop` files, which are stored in user-owned SharePoint Embedded containers. Storage for these files counts toward your organization's overall SharePoint quota. For details, see [storage and lifecycle](cpcn-storage.md). IT administrators can control the creation and use of Copilot Pages and Copilot Notebooks through Cloud Policy settings.
 
 ## Requirements
 
-Copilot Pages and Copilot Notebooks are a core service integrated into SharePoint and Microsoft 365. See [requirements](/microsoft-365/loop/cpcn-loop-requirements) to learn more about configuration requirements, service connections, and license requirements.
+Copilot Pages and Copilot Notebooks are a core service integrated into SharePoint and Microsoft 365. See [requirements](cpcn-loop-requirements.md) to learn more about configuration requirements, service connections, and license requirements.
 
 ### Scoping Cloud Policy with Microsoft 365 Groups
 
@@ -45,7 +45,7 @@ You can also use security or dynamic groups. For details, see [Create, edit, or 
 
 Copilot Pages and Copilot Notebooks are independent of Loop. You can enable or disable them separately from Loop in your organization.
 
-To share Copilot Pages as interactive components (instead of just hyperlinks) in Teams, Outlook, Whiteboard, OneNote, or the Loop app, Loop components must be enabled. Without Loop components, Copilot Pages are only interactive within the M365 Copilot app and supported chat experiences. For details on enabling Loop components, see [Loop admin policies](/microsoft-365/loop/loop-admin-configuration).
+To share Copilot Pages as interactive components (instead of just hyperlinks) in Teams, Outlook, Whiteboard, OneNote, or the Loop app, Loop components must be enabled. Without Loop components, Copilot Pages are only interactive within the M365 Copilot app and supported chat experiences. For details on enabling Loop components, see [Loop admin policies](loop-admin-configuration.md).
 
 ## User experience when Copilot Pages and Copilot Notebooks are disabled
 
@@ -90,9 +90,9 @@ In case you create a new policy configuration or change the configuration for an
 
 ## Related topics
 
-- [Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
-- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
-- [Storage](/microsoft-365/loop/cpcn-storage)
-- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
-- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
-- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
+- [Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
+- [Requirements](cpcn-loop-requirements.md)
+- [Storage](cpcn-storage.md)
+- [Permissions](cpcn-loop-permission.md)
+- [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Overview of Loop components in Microsoft 365](loop-components-teams.md)

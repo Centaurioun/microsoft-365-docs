@@ -24,11 +24,11 @@ appliesto:
 - Microsoft Teams
 ---
 
-# Overview of Copilot Pages, Copilot Notebooks, and Loop workspaces storage and permissions
+# Overview of Copilot Pages and Copilot Notebooks storage
 
 ## Storage
 
-Copilot Pages and Copilot Notebooks are stored within your tenant in SharePoint Embedded. Copilot Pages, Copilot Notebooks and the Loop My workspace all use the same container. The container is lifetime managed with the user account and can be [managed using SharePoint Embedded admin tools](/microsoft-365/loop/cpcn-loop-spe-management).
+Copilot Pages and Copilot Notebooks are stored within your tenant in SharePoint Embedded. Copilot Pages, Copilot Notebooks and the Loop My workspace all use the same container. The container is lifetime managed with the user account and can be [managed using SharePoint Embedded admin tools](cpcn-loop-spe-management.md).
 
 ## Container name
 
@@ -76,9 +76,9 @@ Copilot Pages + Copilot Notebooks container has a maximum size of 25 TB. This li
 
 ## Related topics
 
-- [Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
-- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
-- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
-- [Admin toggles](/microsoft-365/loop/cpcn-admin-configuration)
-- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
-- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
+- [Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
+- [Requirements](cpcn-loop-requirements.md)
+- [Permissions](cpcn-loop-permission.md)
+- [Admin toggles](cpcn-admin-configuration.md)
+- [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Overview of Loop components in Microsoft 365](loop-components-teams.md)

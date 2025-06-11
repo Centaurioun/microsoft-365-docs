@@ -27,9 +27,9 @@ description: "Manage Loop in your organization"
 # Admin policies for Loop components and Loop workspaces
 
 > [!NOTE]
-> The Copilot Pages and Copilot Notebooks content has moved to a [dedicated article](/microsoft-365/loop/cpcn-admin-configuration).
+> The Copilot Pages and Copilot Notebooks content has moved to a [dedicated article](cpcn-admin-configuration.md).
 
-Loop components and their integrations are powered by `.loop` files (earlier releases of Loop created these as `.fluid` files), which are stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Storage for these files counts toward your organization's overall SharePoint quota. For details about where the content is stored, see [storage and lifecycle](/microsoft-365/loop/loop-storage#storage). IT administrators can control the creation and use of Loop content through settings discussed in this article.
+Loop components and their integrations are powered by `.loop` files (earlier releases of Loop created these as `.fluid` files), which are stored in OneDrive, SharePoint, or [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta). Storage for these files counts toward your organization's overall SharePoint quota. For details about where the content is stored, see [storage and lifecycle](loop-storage.md#storage). IT administrators can control the creation and use of Loop content through settings discussed in this article.
 
 ## Two Admin Policy Tools
 
@@ -40,7 +40,7 @@ IT administrators must manage the creation of Loop components in the Microsoft 3
 
 ## Requirements
 
-Loop components and Loop workspaces are a core service integrated into SharePoint and Microsoft 365. See [requirements](/microsoft-365/loop/cpcn-loop-requirements) to learn more about configuration requirements, service connections, and license requirements.
+Loop components and Loop workspaces are a core service integrated into SharePoint and Microsoft 365. See [requirements](cpcn-loop-requirements.md) to learn more about configuration requirements, service connections, and license requirements.
 
 ### Scoping Cloud Policy with Microsoft 365 Groups
 
@@ -197,12 +197,12 @@ To disable Loop components in Teams, run `Set-SPOTenant -IsLoopEnabled $false`. 
 
 ## Related topics
 
-- [Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/loop-compliance-summary)
-- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
-- [Storage](/microsoft-365/loop/loop-storage)
-- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
-- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
-- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
+- [Summary of Compliance, Lifecycle, Governance](loop-compliance-summary.md)
+- [Requirements](cpcn-loop-requirements.md)
+- [Storage](loop-storage.md)
+- [Permissions](cpcn-loop-permission.md)
+- [Managing SharePoint Embedded containers](cpcn-loop-spe-managemen.md)
+- [Overview of Loop components in Microsoft 365](loop-components-teams.md)
 - [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
 - [Use Loop components in OneNote](https://support.microsoft.com/office/use-loop-components-in-onenote-ed8a43d9-f6fd-4ad6-bc9d-8841db4da459)
 - [Loop components in Whiteboard](https://support.microsoft.com/office/loop-components-in-whiteboard-c5f08f54-995e-473e-be6e-7f92555da347)
