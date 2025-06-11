@@ -41,6 +41,17 @@ You can view and monitor the processing status for a [selected file](#monitor-th
 
 ## Monitor the status of a file being processed
 
+When you submit an on-demand request for autofill or translation:
+
+1. A message bar appears at the top of the library, indicating the action is in progress.
+
+2. Select **View activity feed** on the message bar to open the corresponding activity panel.
+
+3. The panel shows the current action being processed.
+
+4. The message bar disappears once the request is completed or failed.
+
+<!---
 When you submit on-demand request for autofill or translation, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button.
 
 1. Select **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
@@ -48,21 +59,26 @@ When you submit on-demand request for autofill or translation, a message bar app
 2. At the top of the panel, you’ll see the current action being processed.
 
 The message bar remains visible while requests are being processed. It disappears once the request is either completed or failed.
+--->
 
 ## Monitor the status of any file
 
-To view the processing of one or more files:
+To view the processing status of one or more files:
 
-1. In a SharePoint document library, select the file or files you want for which you want to view the status.
+1. In a SharePoint document library, select the file or files.
 
     > [!NOTE]
-    > If no files or more than 30 files are selected, the activity pane displays the processing status for the entire library, rather than for individual files.
+    > If no files or more than 30 files are selected, the activity panel shows the status for the entire library.
 
-2. From the **More options** (**...**) menu either next to the file name or on the command bar, select **Autofill columns** > **View recent activity** or **Translate** > **View recent activity**.
+2. From the **More options** (**...**) menu either next to the file name or on the command bar:
+
+    - For autofill columns: Select **Autofill columns** > **View recent activity**.
+
+    - For translation: Select **Translate** > **View recent activity**.
 
     ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
 
-3. Depending on the service you selected, the corresponding activity panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
+3. Depending on the service you selected, the corresponding [activity panel](#view-the-activity-panel) opens. [Learn more about the activity panel.](#view-the-activity-panel)
 
 ## Monitor the status of all files
 
@@ -70,15 +86,9 @@ To view the processing status of all files in the library:
 
 1. In a SharePoint document library, on the command bar:
 
-    - For autofill columns, select **More options** (**...**) > **Autofill columns** > **View recent activity**.
+    - For autofill columns: Select **More options** (**...**) > **Autofill columns** > **View recent activity**.
 
-    - For translation, select **Translate** > **View recent activity**.
-
-<!---
-1. In a SharePoint document library, on the command bar, select **Autofill columns** > **View recent activity** or **Translate** > **View recent activity**.
-
-    ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
---->
+    - For translation: Select **Translate** > **View recent activity**.
 
 2. Depending on the service you selected, the corresponding activity panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
 
