@@ -51,6 +51,8 @@ The message bar remains visible while requests are being processed. It disappear
 
 ## Monitor the status of any file
 
+To view the processing of one or more files:
+
 1. In a SharePoint document library, select the file or files you want for which you want to view the status.
 
     > [!NOTE]
@@ -60,9 +62,11 @@ The message bar remains visible while requests are being processed. It disappear
 
     ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
 
-3. Depending on the service you selected, the **Autofill activity** panel or the **Translation activity** panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
+3. Depending on the service you selected, the corresponding activity panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
 
 ## Monitor the status of all files
+
+To view the processing status of all files in the library:
 
 1. In a SharePoint document library, on the command bar:
 
@@ -76,20 +80,29 @@ The message bar remains visible while requests are being processed. It disappear
     ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
 --->
 
-2. Depending on the service you selected, the **Autofill activity** panel or the **Translation activity** panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
+2. Depending on the service you selected, the corresponding activity panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
 
 ## View the activity panel
 
-The activity panel shows you a list of file processing events, including:
+The activity panel displays a list of file processing events, including:
 
-- The file name
-- A brief summary of the action that was performed, or information about why it failed
-- The processing status: **In progress**, **Completed**, or **Failed**
-- The date and time of the event
+- File name
+- Summary of the action that was performed, or information about why it failed
+- Processing status: **In progress**, **Completed**, or **Failed**
+- Date and time of the event
 
     ![Screenshot of the activity panel in a SharePoint library.](../media/content-understanding/processing-status-activity-panel.png)
 
-If no files or more than 30 files are selected, the activity pane displays the processing status for the entire library, rather than for individual files.
+> [!NOTE]
+> If no files or more than 30 files are selected, the activity pane displays the processing status for the entire library, rather than for individual files.
+
+### Filter activity options
+
+By default, the panel shows activity for the last 60 days.
+
+- To filter by date: **Filter** > **Date range**
+
+- To show only failed files: **Filter** > **Failed status**
 
 By default, the panel shows activity for the last 60 days.
 
