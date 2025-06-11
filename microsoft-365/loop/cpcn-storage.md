@@ -32,7 +32,7 @@ Copilot Pages and Copilot Notebooks are stored within your tenant in SharePoint 
 
 ## Container name
 
-The Copilot Pages, Copilot Notebooks and Loop My workspace are shared, all use the same container. This user-owned container is named 'Pages' if the person visits the M365 Copilot app first. It is named 'My workspace' if the person visits the Loop app first. To get a list of all of these user-owned containers in your organization, regardless of the container name, update the following sample PowerShell to your needs:
+The Copilot Pages, Copilot Notebooks and Loop My workspace all use the same container. This user-owned container is named 'Pages' if the person visits the M365 Copilot app first. It is named 'My workspace' if the person visits the Loop app first. To get a list of all of these user-owned containers in your organization, regardless of the container name, update the following sample PowerShell to your needs:
 
 ```PowerShell
 Get-SPOContainer -OwningApplicationId 'a187e399-0c36-4b98-8f04-1edc167a0996' | WHERE OwnershipType -EQ 'UserOwned' | FT
