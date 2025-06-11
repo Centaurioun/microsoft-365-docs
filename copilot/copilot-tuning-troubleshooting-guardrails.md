@@ -8,7 +8,7 @@ description: Troubleshooting guide for Tenant Guardrail FAQ issues, including fa
 
 # Troubleshoot Tenant Guardrails FAQ
 
-This article describes some of the most common issues with Tenant Guardrails and how to troubleshoot them.
+This article describes some of the most common issues with Tenant Guardrails FAQ and how to troubleshoot them.
 
 ## The system crashed, froze, or became unresponsive
 
