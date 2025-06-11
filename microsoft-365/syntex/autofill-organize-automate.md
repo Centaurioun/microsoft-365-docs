@@ -20,16 +20,6 @@ description: Learn how to organize and automate columns in a document library in
 
 # Organize and automate columns in a SharePoint document library
 
-<!---
-> [!NOTE]
-> This article is in development.
-
-
-Having useful columns and metadata in SharePoint document libraries enhances searchability, organization, and automation. It allows users to quickly find documents, group and filter files dynamically, and trigger workflows based on specific attributes. Additionally, it improves content discoverability and user experience by providing structured information and enabling efficient management of document libraries.
-
-This feature integrates with the autofill columns service to streamline your workflows using content from your SharePoint document libraries. It recommends and creates new columns and metadata, unlocks advanced automations, and enhances search capabilities, understanding, and information protection. This helps ensure that the information in your document libraries remains easily accessible, relevant, well-organized, and up-to-date.
---->
-
 You can use the SharePoint Agent Librarian Skill to create richer, more powerful document libraries to manage your content.
 
 Building on the autofill columns feature, this agent skill simplifies the process of configuring a document library and ensures consistent and accurate data capture. Recommended metadata columns enhance library-scoped agent Q&A and will soon be used to suggest rule-based flows to streamline business processes. This approach to automating document management keeps your SharePoint libraries organized, relevant, and up-to-date.
@@ -48,13 +38,13 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/autofill-librarian-agents-in-sharepoint-menu.png)
 
-3. The chat panel opens and displays a list of prompt suggestions related to column actions that you can try.
+3. The chat panel opens and displays a list of suggested actions related to columns that you can try.
 
    ![Screenshot of the chat panel showing the prompt for column actions.](../media/content-understanding/autofill-librarian-agents-chat-panel.png)
 
-### Use a prompt suggestion
+### Use a suggested action
 
-1. From the chat panel, select one of the prompt suggestions. For this example, we selected **Create columns**.
+1. From the chat panel, select one of the suggested actions. For this example, we selected **Create columns**.
 
 2. It takes a few moments for the suggested new columns to appear based on the content of your library. Suggested columns are highlighted and shown as **Suggested**.
 
@@ -74,13 +64,13 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
 
-### Create a custom prompt
+### Enter a custom action
 
-1. In the prompt box in the lower portion of the chat window, enter your own instructions. For example, type:
+1. In the text box in the lower portion of the chat window, enter your own instructions.
 
    ![Screenshot of the prompt box showing a custom prompt has been entered.](../media/content-understanding/autofill-librarian-custom-prompt.png)
 
-2. Press **Enter** to submit the prompt and initiate the suggestion flow based on your custom request.
+2. Press **Enter** to submit the action and initiate the suggestion flow based on your custom request.
 
 ### Save your changes
 
