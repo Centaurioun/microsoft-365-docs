@@ -26,17 +26,17 @@ description: "Manage Copilot Pages, Copilot Notebooks, and Loop in your organiza
 
 # Requirements for Copilot Pages, Copilot Notebooks, Loop components, and Loop workspaces
 
-Copilot Pages and Copilot Notebooks and their integrations are backed by `.loop` files, stored in user-owned SharePoint Embedded containers. Learn more about [storage and lifecycle](/microsoft-365/loop/cpcn-storage), which is quota combined with SharePoint in your tenant. IT admins can [manage creation of Copilot Pages and Copilot Notebooks](/microsoft-365/loop/cpcn-admin-configuration) using Cloud Policy.
+Copilot Pages and Copilot Notebooks and their integrations create `.loop` files, stored in user-owned SharePoint Embedded containers. Learn more about [storage and lifecycle](/microsoft-365/loop/cpcn-storage), which is quota combined with SharePoint in your tenant. IT admins can [manage creation of Copilot Pages and Copilot Notebooks](/microsoft-365/loop/cpcn-admin-configuration) using Cloud Policy.
 
-Loop components and integrations are backed by `.loop` files (earlier releases of Loop created these as `.fluid` files), stored in OneDrive, SharePoint, or SharePoint Embedded. Learn more about [storage](/microsoft-365/loop/loop-storage), which is quota combined with SharePoint in your tenant. IT admins can manage creation of Loop components and Loop workspaces by following instructions in this [admin configuration](/microsoft-365/loop/loop-admin-configuration) article.
+Loop components and integrations create `.loop` files (earlier releases of Loop created `.fluid` files), stored in OneDrive, SharePoint, or SharePoint Embedded. Learn more about [storage](/microsoft-365/loop/loop-storage), which is quota combined with SharePoint in your tenant. IT admins can manage creation of Loop components and Loop workspaces by following instructions in this [admin configuration](/microsoft-365/loop/loop-admin-configuration) article.
 
 ## URLs and IP address ranges
 
-Just like other Microsoft 365 experiences, Copilot Pages, Copilot Notebooks, and Loop also leverage core services across SharePoint and Microsoft 365. To effectively enable creation of Copilot Pages, Copilot Notebooks, Loop content and Loop integration experiences, follow the instructions in the [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services (also used by Copilot Pages and Copilot Notebooks) are available and enabled.
+To ensure Copilot Pages, Copilot Notebooks, and Loop work correctly in your organization, verify that required network connections are allowed. These services rely on core Microsoft 365 and SharePoint infrastructure. Review and configure your firewall or proxy settings according to the [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) documentation to enable access to all necessary endpoints for Copilot Pages, Copilot Notebooks, and Loop experiences.
 
 ## WebSocket connections
 
-Copilot Pages, Copilot Notebooks, and Loop's near real-time communications are enabled by the core services that run a WebSocket server. Coauthors in the same session need to establish secure WebSocket connections to this service to send and receive collaborative data such as changes made by others, live cursors, presence, and so on. Allow list WebSocket traffic to the `*.svc.ms` and `*.office.com` endpoints.
+Copilot Pages, Copilot Notebooks, and Loop rely on secure WebSocket connections to enable real-time collaboration features such as live editing, presence indicators, and shared cursors. To ensure these features work correctly, allow WebSocket traffic to the `*.svc.ms` and `*.office.com` endpoints in your network configuration.
 
 ## License requirements
 
@@ -54,7 +54,7 @@ Licensing through the Loop with workspaces service plan covers the creation of n
 
 ## Exchange Online mailboxes
 
-To utilize all features, including at mentions and Loop workspace sharing, it's necessary for all users to have an Exchange Online mailbox. Those with Exchange On-Premises mailboxes will not have access to the full range of capabilities.
+To utilize all features, including at mentions and Loop workspace sharing, it's necessary for all users to have an Exchange Online mailbox. Those with Exchange On-Premises mailboxes won't have access to the full range of capabilities.
 
 ## Related topics
 
