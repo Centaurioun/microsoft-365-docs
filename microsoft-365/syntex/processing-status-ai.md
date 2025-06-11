@@ -47,7 +47,7 @@ Select **View activity feed** to open the activity panel. [Learn more about the 
 
 The message bar remains visible while requests are being processed. It disappears once the request is either completed or failed.
 
-## Monitor the processing status for a selected file
+## Monitor the status of any file
 
 1. In a SharePoint document library, select the file or files you want for which you want to view the status.
 
@@ -60,7 +60,7 @@ The message bar remains visible while requests are being processed. It disappear
 
 3. Depending on the service you selected, the **Autofill activity** panel or the **Translation activity** panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
 
-## Monitor the processing status for all files in a library
+## Monitor the status of all files
 
 1. In a SharePoint document library, on the command bar:
 
