@@ -78,9 +78,9 @@ To get suggested columns in your document library, follow these steps.
 
 1. In the prompt box in the lower portion of the chat window, enter your own instructions. For example, type:
 
-"Create a column to extract the invoice ID number. Name the column 'Invoice ID'."
+   ![Screenshot of the prompt box showing a custom prompt has been entered.](../media/content-understanding/autofill-librarian-custom-prompt.png)
 
-Then press Enter to submit the prompt and initiate the suggestion flow based on your custom request.
+2. Press **Enter** to submit the prompt and initiate the suggestion flow based on your custom request.
 
 ### Save your changes
 
