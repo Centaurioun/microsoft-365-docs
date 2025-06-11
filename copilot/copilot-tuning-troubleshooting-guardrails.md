@@ -1,22 +1,24 @@
 
 ---
-recommendations: false
+title: " Troubleshoot Tenant Guardrails"
 ms.topic: troubleshooting-general
 description: FAQ and troubleshooting guide for Tenant Guardrail issues, including false positives, negatives, duplicate alerts, and overall system response issues.
 ---
 
 
-# FAQ for Tenant Guardrails
+# Troubleshoot Tenant Guardrails
 
-Use the following FAQ approach when addressing issues with Tenant Guardrails.
+This article describes some of the most common issues with Tenant Guardrails and how to troubleshoot them.
 
-- **The system crashed, froze, or became unresponsive:**
-  - Contact Microsoft support or your IT administrator—this is a technical problem that cannot be fixed by the user.
-- **I see an error message when processing guardrails in Tenant Guardrails (guardrails analysis):**
-  - If it's an AI model error (for example Language Model API error), retry the analysis.
-  - If the error persists, retry and then escalate—Contact Microsoft support or your IT administrator.
-- **The guardrails are not flagging the issues I am concerned about (misses critical errors):**
-  - Broaden the criteria in the guardrails rules. Add additional rules for key issues.
+## The system crashed, froze, or became unresponsive
+Contact Microsoft support or your IT administrator—this is a technical problem that cannot be fixed by the user.
+
+## I see an error message when processing guardrails in Tenant Guardrails (guardrails analysis)
+If it's an AI model error (for example, Language Model API error), retry the analysis. If the error persists, retry and then escalate—Contact Microsoft support or your IT administrator.
+
+## The guardrails are not flagging the issues I am concerned about (misses critical errors)
+Broaden the criteria in the guardrails rules. Add additional rules for key issues.
+
 - **The guardrails are flagging things that are not of concern (emits false positives):**
   - Refine the criteria in the guardrails rules.
 - **I am seeing duplicate alerts for the same issue:**
