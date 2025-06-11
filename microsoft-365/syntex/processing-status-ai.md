@@ -43,7 +43,9 @@ You can view and monitor the processing status for a [selected file](#monitor-th
 
 When you submit on-demand request for autofill or translation, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button.
 
-Select **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
+1. Select **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
+
+2. At the top of the panel, you’ll see the current action being processed.
 
 The message bar remains visible while requests are being processed. It disappears once the request is either completed or failed.
 
