@@ -50,31 +50,34 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of the chat panel showing the prompt for column actions.](../media/content-understanding/autofill-librarian-agents-chat-panel.png)
 
-4. Select one of the prompts to —such as Create Columns—from the displayed chat interface.
+### Select a prompt
 
+4. Select one of the prompts from the chat panel. For this example, we selected **Create columns**.
 
-
-3. It takes a few moments for the suggested new columns to appear based on the content of your library. Suggested columns are highlighted and shown as **Suggested**.
+5. It takes a few moments for the suggested new columns to appear based on the content of your library. Suggested columns are highlighted and shown as **Suggested**.
 
    ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/autofill-librarian-suggested-columns-added.png)
 
-4. Review the suggested columns and the associated metadata to make they are appropriate for your content.
+6. Review the suggested columns and the associated metadata to make they are appropriate for your content.
 
-5. If you want to remove a suggested column, select the column name, and then select **Dismiss suggestion**.
+7. If you want to remove a suggested column, select the column name, and then select **Dismiss suggestion**.
 
    ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/autofill-librarian-dismiss-suggestion.png)
 
-6. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the prompt. To do so, select the column name, and then select **Edit column**.
+8. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the prompt. To do so, select the column name, and then select **Edit column**.
 
    ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/autofill-librarian-edit-column.png)
 
-7. On the **Edit column** panel, you can edit the column name or edit the prompt that generates the metadata. After you edit the prompt, test the prompt to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
+9. On the **Edit column** panel, you can edit the column name or edit the prompt that generates the metadata. After you edit the prompt, test the prompt to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
 
-8. When you are ready to save all of the column changes, select **Save changes**.
+10. When you are ready to save all of the column changes, select **Save changes**.
 
-9. On the **Save and apply your changes?** confirmation screen, select **Apply changes**.
+### Create a custom prompt
+
+
+11. On the **Save and apply your changes?** confirmation screen, select **Apply changes**.
 
    ![Screenshot of the Save and apply your changes? confirmation screen.](../media/content-understanding/autofill-librarian-confirmation-screen.png)
 
