@@ -23,25 +23,14 @@ Use the following FAQ approach when addressing issues with Tenant Guardrails.
   - Adjust frequency and sensitivity. Test guardrails rules thoroughly before deploying to end users. Consider using initial testing in test environments.
 
 
-## Prerequisites
-
-Before attempting to resolve any issues, make sure that you have the proper configurations and conditions. This includes ensuring that your guardrail rules are correctly set up and that your system meets the necessary requirements for running guardrails. If you are experiencing a system crash, freeze, or unresponsiveness, check if your tenant is correctly set up.
-
-
-## Potential Quick Workarounds
-
-For transient issues, like temporary system freezes and AI-related error messages during guardrails analysis, the first step is to retry the action. If the problem persists, it's recommended to follow the troubleshooting checklist or escalate the issue by contacting Microsoft support or your IT administrator.
-
-
-## Troubleshooting Guidance
+## Troubleshooting
 
 Use the following guidance when attempting to resolve issues related to Tenant Guardrails:
 
 - **Verify the symptoms**:
-  - Is the system crashed, frozen, or unresponsive?
   - Is there an error message displayed while processing guardrails in Tenant Guardrails (guardrails analysis)?
 - **Initial steps**:
-  - Review any related documentation, guides or common troubleshooting tips to ensure steps and configurations are correctly followed.
+  - Review any related documentation, guides, or common troubleshooting tips to ensure steps and configurations are correctly followed.
 - **Escalate**:
   - Contact Microsoft support or your IT administrator if you're unable to resolve the issues.
 
@@ -49,8 +38,6 @@ Use the following guidance when attempting to resolve issues related to Tenant G
 ## Causes and/or solutions
 
 Causes can vary based on observed symptoms. For example, false positives and negatives can occur because the guardrail rules have been misconfigured. Duplicate alerts can appear if overlapping rules have been set. Identifying the causes of issues often centers around refining the criteria for your guardrail rules and adjusting the configurations.
-
-If you're unable to resolve your problems, you can escalate issues to Microsoft Support or the Tenant Copilot product team.
 
 For issues where the guardrails don't flag specific types of content or flag too much, evaluate if the guardrail rules are correctly designed. Frequently, refining the criteria or broadening it can rectify these problems.
 
@@ -71,12 +58,6 @@ For issues where the guardrails don't flag specific types of content or flag too
   - Configure threshold to control sensitivity of flags or alerts when available (editing capability to threshold coming soon).
 
 If issues persist after troubleshooting, escalate to Microsoft support or the Tenant Copilot product team.
-
-
-## In-Depth Analysis and Data Collection
-
-For issues that don't resolve through initial troubleshooting, thorough analysis or extra data collection may be required. This might involve diving deeper into error messages or logs to figure out the underlying problem. In persistent cases, consider contacting Microsoft support or your IT administrator.
-
 
 ## Related Content
 
