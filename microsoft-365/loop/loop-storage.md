@@ -44,7 +44,7 @@ Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/share
 
 ## My workspace container name
 
-Copilot Pages and Copilot Notebooks share the Loop My workspace container. This user-owned container appears as 'Pages' if the person first visits the M365 Copilot app, or as 'My workspace' if they first visit the Loop app. To list all user-owned containers in your organization, regardless of their name, use and adapt the following sample PowerShell:
+Copilot Pages and Copilot Notebooks share the Loop My workspace container. This user-owned container appears as 'Pages' if the person first visits the M365 Copilot app, or as 'My workspace' if they first visit the Loop app. To list all user-owned containers in your organization, regardless of their name, use, and adapt the following sample PowerShell:
 
 ```PowerShell
 Get-SPOContainer -OwningApplicationId 'a187e399-0c36-4b98-8f04-1edc167a0996' | WHERE OwnershipType -EQ 'UserOwned' | FT
@@ -64,7 +64,7 @@ Loop workspaces have a maximum size of 25 TB. This limit can't be increased or d
 
 ### Types of Loop workspaces
 
-There's one personal workspace per user in your organization, created on demand by the person when accessed. All other created Loop workspaces are shared. See [workspace membership and Microsoft 365 groups](/microsoft-365/loop/cpcn-loop-permission#workspace-membership-and-microsoft-365-groups) for more information on the two shared workspace types.
+There's one personal workspace per user in your organization, created on demand by the person when accessed. All other created Loop workspaces are shared. For more information, see [workspace membership and Microsoft 365 groups](/microsoft-365/loop/cpcn-loop-permission#workspace-membership-and-microsoft-365-groups) on the two shared workspace types.
 
 ### Shared Workspaces
 
@@ -75,7 +75,7 @@ There's one personal workspace per user in your organization, created on demand 
 
 #### Microsoft 365 Group-owned
 
-- Microsoft 365 Group-owned shared Loop workspaces are permissioned by the Microsoft 365 group, and lifetime managed with the Microsoft 365 group, like SharePoint Team sites.
+- The Microsoft 365 group permissions and manages the lifetime of group-owned shared Loop workspaces, similar to the management of SharePoint Team sites.
 
 ### Personal Workspaces
 
@@ -94,9 +94,9 @@ There's one personal workspace per user in your organization, created on demand 
 #### Ideas
 
 - The Ideas workspace is deprecated, no longer created by default, and replaced with the My workspace personal workspace.
-- Ideas was the first default workspace, was tenant-owned, permissioned with a single-person roster.
-- The Ideas workspace isn't deleted by the Loop app, a user or an admin must delete it if desired.
-- If a user hasn't added multiple owners to their Ideas workspace, When they leave the company the Ideas workspaces becomes ownerless, remains in the tenant, and isn't automatically deleted.
+- Ideas were the first default workspace, was tenant-owned, permissioned with a single-person roster.
+- The Loop app doesn't delete the deprecated Ideas workspace; a user or an admin must delete it if needed.
+- If a user hasn't added multiple owners to their Ideas workspace, the workspace becomes ownerless when they leave the company. It remains in the tenant and isn't automatically deleted.
 
 ### Loop components created in Microsoft 365 outside of the Loop app or Copilot Pages
 
