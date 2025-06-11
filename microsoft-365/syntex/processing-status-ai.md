@@ -30,6 +30,9 @@ This feature lets you:
 
 You can view and monitor the processing status for a [selected file](#monitor-the-processing-status-for-a-selected-file) or for [all files](#monitor-the-processing-status-for-all-files-in-a-library) in a document library.
 
+> [!NOTE]
+> For autofill and translation, the **Status** column is hidden by default in the document library view. If you don’t see it, you can unhide it by customizing the library view.
+
 ## Prerequisites
 
 - Ensure your SharePoint library has the [autofill columns service](autofill-overview.md) or the [document translation service](translation-overview.md) enabled.
@@ -38,7 +41,7 @@ You can view and monitor the processing status for a [selected file](#monitor-th
 
 ## Monitor the status of a file being processed
 
-When an on-demand request is triggered for autofill or translation, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button.
+When you submit on-demand request for autofill or translation, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button.
 
 Select **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
 
