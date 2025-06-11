@@ -30,7 +30,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## Foundations
 
-- An **[Admin Toggle](/microsoft-365/loop/cpcn-admin-configuration)** exists to turn on or off creation of both Copilot Pages and Copilot Notebooks. If Loop components are enabled, Copilot Pages can be shared and used like a Loop component in all the applications that support Loop components.
+- An **[Admin Toggle](cpcn-admin-configuration.md)** exists to turn on or off creation of both Copilot Pages and Copilot Notebooks. If Loop components are enabled, Copilot Pages can be shared and used like a Loop component in all the applications that support Loop components.
 
 - **GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery).
 
@@ -43,7 +43,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 - **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** is supported.
 
     > [!IMPORTANT]
-    > **[Information Barriers](/purview/information-barriers-sharepoint)** are not supported. See [admin settings](/microsoft-365/loop/cpcn-admin-configuration) to configure these integrations.
+    > **[Information Barriers](/purview/information-barriers-sharepoint)** are not supported. See [admin settings](cpcn-admin-configuration.md) to configure these integrations.
 
 - **[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.
 
@@ -53,10 +53,10 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 - Copilot Pages and Copilot Notebooks are stored together in a single, user-owned SharePoint Embedded container, identified and owned by Loop. These containers do not have individual storage limits; instead, their storage usage counts toward your organization's overall SharePoint storage quota. Currently, there is no admin control to set storage limits for individual SharePoint Embedded containers.
 
-- See [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management) for information and workflows within SharePoint Admin center or PowerShell.
+- See [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md) for information and workflows within SharePoint Admin center or PowerShell.
 
     > [!IMPORTANT]
-    > Unlike OneDrive, for Copilot Pages and Copilot Notebooks, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](/microsoft-365/loop/cpcn-storage#storage-management-after-user-departure) for detailed information.
+    > Unlike OneDrive, for Copilot Pages and Copilot Notebooks, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](cpcn-storage.md#storage-management-after-user-departure) for detailed information.
 
 - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for Copilot Pages and Copilot Notebooks are supported. Copilot Pages and Copilot Notebooks are both stored in the same user-owned SharePoint Embedded container. This container is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). Like OneDrive, admins have the ability to manually move the user's Copilot Pages and Copilot Notebooks container to a new geo when their preferred data location changes.
 
@@ -90,6 +90,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 ## Microsoft 365 retention and deletion
 
 - **[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all Copilot Pages and Copilot Notebooks.
+  - For more information on how to configure specific Copilot Notebooks, see [Purview and SharePoint Embedded](cpcn-loop-spe-management.md#purview-and-sharepoint-embedded)
 
 - **[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for Copilot Pages (.loop files) and Copilot Pages in Copilot Notebooks by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels. There's limited support for manually applying retention labels.
   - Retention labels cannot be viewed or applied directly from a Copilot Page. Instead, the user must [navigate to the Copilot Page within the Loop app](/purview/create-apply-retention-labels?tabs=loop%2Cdefault-label-for-sharepoint#manually-apply-retention-labels) to view or apply a retention label on a Copilot Page.
@@ -105,9 +106,9 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## Related articles
 
-- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
-- [Storage](/microsoft-365/loop/cpcn-storage)
-- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
-- [Admin toggles](/microsoft-365/loop/cpcn-admin-configuration)
-- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
-- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
+- [Requirements](cpcn-loop-requirements.md)
+- [Storage](cpcn-storage.md)
+- [Permissions](cpcn-loop-permission.md)
+- [Admin toggles](cpcn-admin-configuration.md)
+- [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Overview of Loop components in Microsoft 365](loop-components-teams.md)

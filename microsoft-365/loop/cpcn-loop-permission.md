@@ -33,6 +33,7 @@ Copilot Pages, Copilot Notebooks, and Loop workspace are stored in [SharePoint E
 ### Sharing Mechanism
 
 - **Workspace Sharing**: ONLY applies to shared Loop workspaces: Invites users to the entire workspace by adding owners and members to the SharePoint Embedded container, and sends an email invite. All members have access and *editing* permissions to all the Loop pages in that workspace.
+  - **Copilot Notebooks** cannot yet be shared, only individual pages within them can be shared.
 - **Page Sharing**: Grants access to a specific page (not the whole workspace) with options for edit or read-only access. The user can choose to use a company share link or people-specific share link, based on your organizational sharing settings.
 
   :::image type="content" source="media/share-workspace-in-loop.png" alt-text="Screenshot showing the Share workspace option in Loop":::
@@ -85,12 +86,12 @@ Microsoft 365 group-owned Loop workspaces, which are [created within a Teams cha
 
 ## Related topics
 
-- [Copilot Pages and Notebooks, Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
-- [Configuration Requirements](/microsoft-365/loop/cpcn-loop-requirements)
-- [Copilot Pages and Notebooks Storage](/microsoft-365/loop/cpcn-storage)
-- [Copilot Pages and Notebooks Admin toggles](/microsoft-365/loop/cpcn-admin-configuration)
-- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
-- [Loop, Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
-- [Loop Storage](/microsoft-365/loop/cpcn-storage)
-- [Loop Admin toggles](/microsoft-365/loop/loop-admin-configuration)
-- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
+- [Copilot Pages and Notebooks, Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
+- [Configuration Requirements](cpcn-loop-requirements.md)
+- [Copilot Pages and Notebooks Storage](cpcn-storage.md)
+- [Copilot Pages and Notebooks Admin toggles](cpcn-admin-configuration.md)
+- [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Loop, Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
+- [Loop Storage](cpcn-storage.md)
+- [Loop Admin toggles](loop-admin-configuration.md)
+- [Overview of Loop components in Microsoft 365](loop-components-teams.md)
