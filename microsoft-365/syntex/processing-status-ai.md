@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 06/10/2025
+ms.date: 06/11/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -26,7 +26,7 @@ You can now view real-time updates on files processed for autofill columns and d
 - Check the status of the file: **In progress**, **Completed**, or **Failed**.
 - Understand what worked, what didn’t, and why.
 
-You can view and monitor the processing status for a [selected file](#monitor-the-processing-status-for-a-selected-file) or for [all files](#monitor-the-processing-status-for-all-files-in-a-library) in a document library.
+You can view the processing status for a [file that is being processed](#monitor-the-status-of-a-file-being-processed), for a [selected file](#monitor-the-status-of-any-file) or for [all files](#monitor-the-status-of-all-files) in a document library.
 
 > [!NOTE]
 > For autofill and translation, the **Status** column is hidden by default in the document library view. If you don’t see it, you can unhide it by customizing the library view.
