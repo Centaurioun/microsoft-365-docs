@@ -1,28 +1,27 @@
 ---
-title: Microsoft Copilot Tuning Overview
-description: Learn how Microsoft Copilot is trained for specific tenants, including a free service to help train common doc-gen, question-answer, and summarization models.
-author: jasonjoh
-ms.author: jasonjoh
+title: Microsoft 365 Copilot Tuning Concepts
+description: Find information.
+author: lauragra
+ms.author: lauragra
 manager: calvind
-ms.date: 06/04/2025
+ms.date: 06/17/2025
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: calvind
 ---
 
-# Microsoft Copilot Tuning Overview
-
-Sell an idea by providing information to support it—such as definitions, how something works, and application of a concept to new scenarios—and building trust in that information by accurately citing sources to research studies or other trustworthy content.
-
----
+# Microsoft 365 Copilot Tuning concepts
 
 The power of Microsoft Copilot lies in being able to customize and train your enterprise AI in the enterprise data you trust. This enables you to transform your organization's existing content into an enterprise AI model or brain that becomes a "learn-it-all," understanding and adapting to your data, your specific terminology, your communication style, and your business processes.
 
-Copilot Tuning is a set of technologies and experiences that enables enterprises to enhance tenant-specific models with their own data, improving precision and enabling Copilot behavior to mimic the organization's style in executing tasks. It allows you to start with a foundation model like GPT and shape it into the organization's learn-it-all brain through training based on your organization's data.
+Copilot Tuning allows organizations to enhance tenant-specific AI models with their own data by creating fine-tuned models that understand and adapt to an organization's data, terminology, communication style, and business processes. Fine-tuned models improve precision and enable Copilot to apply the organization's style in its responses. With Copilot Tuning, you start with a foundation model like GPT and shape it into the organization's knowledge center by training based on your organization's data.
 
-Copilot Tuning goes beyond retention and retrieval to train tenant-specific large language models (LLMs), optimizing them for your organization's data while maintaining robust enterprise security, compliance, governance, and management controls.
+Copilot Tuning goes beyond retention and retrieval to train tenant-specific large language models (LLMs), optimizing them for your organization's data while maintaining robust enterprise security, compliance, governance, and management controls. The LLMs are tuned for specific tasks like summarization, document generation, and expert Q&A.
 
-This document begins by covering general concepts of training for enterprise use, and then introduces the Copilot Fine-Tuning service for assisting you in training doc-gen, question-answer, and summarization models. Read through the fine-tuning introduction first to help establish ideas of training for your own use at your organization.
+This article introduces you to important concepts about how Copilot Tuning works and how you can use it in your organization.
+
+> [!NOTE]
+> Copilot Tuning is currently available for Early Access Preview (EAP). For details about requirements and how to enroll, see the [Admin guide](copilot-tuning-admin-guide.md).
 
 ## Prerequisites
 

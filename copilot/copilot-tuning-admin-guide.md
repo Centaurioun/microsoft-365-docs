@@ -22,7 +22,7 @@ Microsoft 365 Copilot Tuning enables organizations to securely fine-tune large l
 This article provides information about the governance controls that are available for Copilot Tuning in the Microsoft 365 admin center.
 
 > [!NOTE]
-> Copilot Tuning is currently available for Early Access Preview (EAP).
+> Copilot Tuning is currently available for Early Access Preview (EAP). For details about how to enroll, see [Prerequisites](#prerequisites).
 
 ## Prerequisites
 
