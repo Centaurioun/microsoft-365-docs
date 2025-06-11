@@ -38,11 +38,11 @@ You can view and monitor the processing status for a [selected file](#monitor-th
 
 ## Monitor the status of a file being processed
 
-When an on-demand request is triggered, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button.
+When an on-demand request is triggered for autofill or translation, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button.
 
-Select the **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
+Select **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
 
-The message bar remains visible while requests are being processed. It automatically disappears once all requests are either completed or failed.
+The message bar remains visible while requests are being processed. It disappears once the request is either completed or failed.
 
 ## Monitor the processing status for a selected file
 
