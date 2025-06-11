@@ -17,9 +17,9 @@ description: An overview of the Microsoft 365 Copilot search feature.
 
 # Microsoft 365 Copilot Search
 
-Microsoft 365 Copilot Search is an AI-powered, enterprise-grade search experience optimized for your organization. It provides a familiar search experience that helps users find relevant results from your organization and the web.
+Microsoft 365 Copilot Search is an AI-powered, enterprise-grade, universal search experience optimized for your organization. It provides a familiar search experience that helps users quickly find relevant results from your organization and the web.
 
-Copilot Search indexes content across Microsoft 365 and third-party applications, leveraging the Microsoft Graph to interpret user context, natural language, behavioral signals, and organizational relationships. This gives Copilot Search unique insights into a user's work data, enabling it to return highly personalized answers to a user's queries.
+Copilot Search unlocks semantic understanding of content across Microsoft 365 apps as well as third-party apps that are ingested by Microsoft 365 connectors. In this way, it leverages rich signals in the Microsoft Graph to interpret user context, behavioral signals, and organizational relationships. This gives Copilot Search unique insights into a user's work data, enabling it to return highly personalized answers.
 
 Because it's integrated with Microsoft 365 Copilot, users can find the results they need with search, then seamlessly transition to chat for deeper exploration or follow-up task completion.
 
@@ -54,7 +54,7 @@ This design positions search as the organizing layer for AI, while chat remains 
 
 ## Natural language search
 
-Copilot Search supports natural language queries, allowing users to type questions or requests in everyday language. For example, you can search for, **show me the latest updates from the marketing team** or **find the presentation Rachel shared last week**, and Copilot Search will understand your intent and return relevant results from across Microsoft 365, including emails, files, chats, meetings, and more.
+Copilot Search supports natural language queries, allowing users to type questions or requests in everyday language. For example, you can search for, **show me emails from John about Q4 forecasting sent last week** or **where is the spreadsheet that breaks down marketing ROI by region?**, and Copilot Search will understand your intent and return relevant results from across Microsoft 365, including emails, files, chats, meetings, and more.
 
 Copilot Search goes beyond keyword matching by using AI to interpret context, relationships, and meaning, helping you find what you need faster and more intuitively. It also supports traditional keyword queries for specific words or short phrases, relying on exact or partial matches. But a natural language query can engage AI to better interpret the context of the query, leading to more relevant results.
 
