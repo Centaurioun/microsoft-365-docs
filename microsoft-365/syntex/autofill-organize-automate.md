@@ -48,19 +48,19 @@ To get suggested columns in your document library, follow these steps.
 
    ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/autofill-librarian-agents-in-sharepoint-menu.png)
 
-3. The chat panel opens and displays a list of prompts related to column actions that you can try.
+3. The chat panel opens and displays a list of prompt suggestions related to column actions that you can try.
 
    ![Screenshot of the chat panel showing the prompt for column actions.](../media/content-understanding/autofill-librarian-agents-chat-panel.png)
 
-### Use a provided prompt
+### Use a prompt suggestion
 
-1. From the chat panel, select one of the prompts. For this example, we selected **Create columns**.
+1. From the chat panel, select one of the prompt suggestions. For this example, we selected **Create columns**.
 
 2. It takes a few moments for the suggested new columns to appear based on the content of your library. Suggested columns are highlighted and shown as **Suggested**.
 
    ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/autofill-librarian-suggested-columns-added.png)
 
-3. Review the suggested columns and the associated metadata to make they are appropriate for your content.
+3. Review the suggested columns and the associated metadata to make they're appropriate for your content.
 
 4. If you want to remove a suggested column, select the column name, and then select **Dismiss suggestion**.
 
@@ -84,7 +84,7 @@ To get suggested columns in your document library, follow these steps.
 
 ### Save your changes
 
-1. When you are ready to save all of the column changes, select **Save changes**.
+1. When you're ready to save all of the column changes, select **Save changes**.
 
 2. On the **Save and apply your changes?** confirmation screen, select **Apply changes**.
 
