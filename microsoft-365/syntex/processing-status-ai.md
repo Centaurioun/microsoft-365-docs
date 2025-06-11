@@ -45,7 +45,7 @@ When you submit an on-demand request for autofill or translation:
 
 1. A message bar appears at the top of the library, indicating the action is in progress.
 
-2. Select **View activity feed** on the message bar to open the corresponding activity panel.
+2. Select **View activity feed** on the message bar to open the corresponding [activity panel](#view-the-activity-panel).
 
 3. The panel shows the current action being processed.
 
@@ -78,7 +78,7 @@ To view the processing status of one or more files:
 
     ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
 
-3. Depending on the service you selected, the corresponding [activity panel](#view-the-activity-panel) opens. [Learn more about the activity panel.](#view-the-activity-panel)
+3. Depending on the service you selected, the corresponding [activity panel](#view-the-activity-panel) opens.
 
 ## Monitor the status of all files
 
@@ -90,7 +90,7 @@ To view the processing status of all files in the library:
 
     - For translation: Select **Translate** > **View recent activity**.
 
-2. Depending on the service you selected, the corresponding activity panel opens. [Learn more about the activity panel.](#view-the-activity-panel)
+2. Depending on the service you selected, the corresponding [activity panel](#view-the-activity-panel) opens.
 
 ## View the activity panel
 
@@ -113,12 +113,6 @@ By default, the panel shows activity for the last 60 days.
 - To filter by date: **Filter** > **Date range**
 
 - To show only failed files: **Filter** > **Failed status**
-
-By default, the panel shows activity for the last 60 days.
-
-To choose a specific date range, select **Filter** > **Date range**.
-
-To show only files that have the status of **Failed**, select **Filter** > **Failed status**.
 
 ### Status definitions
 
