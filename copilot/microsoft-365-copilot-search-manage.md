@@ -52,6 +52,6 @@ Organizations can restrict end users from searching for files in certain SharePo
 
 Learn more about [Restricted Content Discovery in SharePoint](/sharepoint/restricted-content-discovery).
 
-Admins can also manage access to other sensitive organizational data using tools, policies, and techniques tailored to their needs. Microsoft offers solutions to prevent the oversharing of sensitive data and identify sites with the most sensitive documents.
+Admins can also manage access to other sensitive organizational data using tools and policies tailored to their needs. Microsoft offers solutions to prevent the oversharing of sensitive data and identify sites with the most sensitive documents.
 
 Learn more about [managing access to files and sites](/microsoftsearch/manage-access-files-sites).
