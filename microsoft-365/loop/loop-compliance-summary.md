@@ -26,6 +26,9 @@ description: "Learn about the governance, data lifecycle management, and complia
 
 # Summary of governance, lifecycle, and compliance capabilities for Loop
 
+> [!NOTE]
+> The Copilot Pages and Copilot Notebooks content has moved to a [dedicated article](/microsoft-365/loop/cpcn-compliance-summary).
+
 As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on the latest governance, data lifecycle, and compliance posture for the software solutions being used in your organization. This article details the capabilities available and not available yet for [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop).
 
 ## Foundations
