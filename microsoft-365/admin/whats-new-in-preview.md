@@ -55,7 +55,7 @@ And if you'd like to know what's new with other Microsoft cloud services, check 
 
 ### Copilot Search admin experience
 
-The Microsoft 365 admin center now includes the Copilot Search admin experience. This gives you powerful tools to manage and optimize search across your organization. This release introduces enhanced support for **Acronyms** and **Bookmarks**, enabling you to deliver more relevant and contextual search results to users.
+The Microsoft 365 Admin center now includes the **Copilot Search Admin experience**, giving you powerful tools to manage and optimize search across your organization. This release introduces enhanced support for **Acronyms** and **Bookmarks**, enabling you to deliver more relevant and contextual search results to users.
 
 ### Key Highlights
 
@@ -63,11 +63,11 @@ The Microsoft 365 admin center now includes the Copilot Search admin experienc
 
     - Define and manage organization-specific acronyms to improve search clarity.
     - Upload acronyms in bulk via CSV or add them individually.
-    - Acronyms are discoverable across Microsoft Search endpoints including like SharePoint as well.  
+    - Acronyms are discoverable across Microsoft Search endpoints like SharePoint.  
 
 - **Bookmarks**
 
-    - Create quick-access links to frequently used resources.
+    - Create quick access links to frequently used resources.
     - Boost visibility of important tools, sites, or documents in search results.
     - Customize bookmark meta data including title, URL, description, and audience targeting.
 
