@@ -63,7 +63,7 @@ The **End user** accesses the Employee Self-Service agent in Microsoft 365 Chat 
 
 The Employee Self-Service agent consists of three main parts: the agent itself, domain topic packages, and Power Platform connectors and actions.
 
-<!-- infographic-->
+[![Infographic showing the structure of the Employee Self-Service agent.](../media/ess/structure-big.png)](../media/ess/structure-big.png#lightbox)
 
 [Learn more about how Copilot architecture works](../microsoft-365-copilot-architecture.md)
 
