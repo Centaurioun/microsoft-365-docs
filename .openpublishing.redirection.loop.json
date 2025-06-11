@@ -14,6 +14,11 @@
         "source_path": "microsoft-365/loop/loop-components-configuration.md",
         "redirect_url": "/microsoft-365/loop/loop-admin-configuration",
         "redirect_document_id": true 
+       },
+       {
+        "source_path": "microsoft-365/loop/loop-workspaces-storage-permission.md",
+        "redirect_url": "/microsoft-365/loop/loop-storage",
+        "redirect_document_id": true 
        }
     ]
  }

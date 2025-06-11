@@ -1,6 +1,6 @@
 ---
-ms.date: 04/22/2025
-title: "Summary of governance, lifecycle, and compliance capabilities for Copilot Pages and Loop experiences"
+ms.date: 06/10/2025
+title: "Summary of governance, lifecycle, and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
 author: jenzamora
@@ -21,96 +21,107 @@ ms.collection:
 search.appverid:
 - SPO160
 - MET150
-description: "Learn about the governance, data lifecycle management, and compliance capabilities for Copilot Pages and Loop experiences."
+description: "Learn about the governance, data lifecycle management, and compliance capabilities for Loop experiences."
 ---
 
-# Summary of governance, lifecycle, and compliance capabilities for Copilot Pages, Copilot Notebooks, and Loop
+# Summary of governance, lifecycle, and compliance capabilities for Loop
+
+> [!NOTE]
+> The Copilot Pages and Copilot Notebooks content has moved to a [dedicated article](/microsoft-365/loop/cpcn-compliance-summary).
 
 As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on the latest governance, data lifecycle, and compliance posture for the software solutions being used in your organization. This article details the capabilities available and not available yet for [Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop).
 
-## Summary table of admin management, governance, lifecycle, and compliance capabilities based on experience
+## Foundations
 
-|Category|Copilot Pages and Notebooks support|Loop content support|Notes|
-|-----|-----|-----|-----|
-|  |This column applies to Copilot Pages and Copilot Notebooks, which create .loop files and are stored in user-owned SharePoint Embedded containers. Learn more about [storage](/microsoft-365/loop/loop-workspaces-storage-permission#storage)|This column applies to Loop content stored in OneDrive, SharePoint, and SharePoint Embedded. Learn more about [storage](/microsoft-365/loop/loop-workspaces-storage-permission#storage)||
-|***Foundations***|---|---|---|
-|Admin toggles  |**[Admin Toggle](/microsoft-365/loop/loop-admin-configuration#available-policy-settings)** exists to turn on or off creation of both Copilot Pages and Copilot Notebooks.<br><br>If Loop components are enabled, Copilot Pages can be shared and used like a Loop component in all the applications that support Loop components.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** exist to turn on or off creation of Loop components, pages, and workspaces. When switching Loop component creation on or off in the Microsoft 365 ecosystem, it also controls rendering as a hyperlink vs. a live and interactive experience.<br><br>If you enable Loop components in the Microsoft 365 ecosystem via the primary toggle, there are secondary toggles to turn on or off Loop components in Outlook or Teams chats and channels. There's also a secondary toggle to turn on or off Loop components for collaborative meeting notes.||
-|GDPR  |**GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|⬅️ same as Copilot Pages & Copilot Notebooks.||
-|EUDB  |**EUDB** compliant - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|⬅️ same as Copilot Pages & Copilot Notebooks.||
-|***Data Security, Devices***|---|---|---|
-|Intune  |**Intune** [Device Management Support](/mem/intune/remote-actions/device-management) exists for Microsoft 365 app, Teams app, and Loop app, on iOS and Android.|⬅️ same as Copilot Pages & Copilot Notebooks.||
-|Conditional Access  |**[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** is supported.|⬅️ same as Copilot Pages & Copilot Notebooks.||
-|Information Barriers  |**[Information Barriers](/purview/information-barriers-sharepoint)** are not supported.|Information Barriers are enforced for content stored in SharePoint sites or OneDrive.<br><br>Information Barriers are not supported for Loop content stored in SharePoint Embedded.|**Not Yet Available**:  <br><br>**Copilot Pages & Copilot Notebooks**: Information Barriers are not supported.<br><br>**Loop**: Information Barriers are not supported for Loop content stored in SharePoint Embedded.|
-|User leaves organization  |
-|Customer Key  |**[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.|⬅️ same as Copilot Pages & Copilot Notebooks.||
-|Programmatic APIs for Loop content  |Guest app access to Copilot Pages and Copilot Notebooks containers is available. Guest app access enables third party export and eDiscovery tools, migration tools, tools used to evaluate compliance requirements, and developer APIs. Use PowerShell to [Get](/powershell/module/sharepoint-online/get-spoapplication) and [Set](/powershell/module/sharepoint-online/set-spoapplicationpermission) guest app permissions.|Loop stores content as files in OneDrive or SharePoint, so all current file functionality applies.<br><br>Guest app access to Loop workspace containers is available. Guest app access enables third party export and eDiscovery tools, migration tools, tools used to evaluate compliance requirements, and developer APIs. Use PowerShell to [Get](/powershell/module/sharepoint-online/get-spoapplication) and [Set](/powershell/module/sharepoint-online/set-spoapplicationpermission) guest app permissions.||
-|***Data Lifecycle***|---|---|---|
-|Multi-Geo  |**[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for Copilot Pages and Copilot Notebooks are supported. Copilot Pages and Copilot Notebooks are both stored in the same user-owned SharePoint Embedded container. This container is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). Like OneDrive, admins have the ability to manually move the user's Copilot Pages and Copilot Notebooks container to a new geo when their preferred data location changes.|**[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for My workspace are supported. My workspace is a user-owned SharePoint Embedded container and is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices).<br><br>Loop content created in OneDrive and SharePoint follow the multi-geo capabilities of OneDrive and SharePoint.<br><br>Multi-Geo capabilities for Loop workspaces are supported using the [same mechanism as SharePoint Communication sites](/microsoft-365/enterprise/m365-dr-workload-spo#move-a-sharepoint-site-or-sharepoint-embedded-container-site), including rehome and creation in the tenant's default geo. Manage the location of shared Loop workspaces like you would other collaboration artifacts, like SharePoint Communication sites.|**Not Yet Available**:  <br><br>**Loop**: Shared workspaces aren't created in the user's preferred data location, they're instead created in the tenant's default geo, like SharePoint Communication sites.|
-|User leaves organization  |See [Storage management after user departure](/microsoft-365/loop/loop-workspaces-storage-permission#copilot-pages) for detailed information on Copilot Pages and Copilot Notebooks.|See [Storage management after user departure](/microsoft-365/loop/loop-workspaces-storage-permission#copilot-pages) for detailed information on Loop content based on the storage location.<br><br>See [storage](/microsoft-365/loop/loop-workspaces-storage-permission#storage) for more information on where Loop content is stored.|**Not Yet Available**:  <br><br>**Copilot Pages & Copilot Notebooks**: Unlike OneDrive, for Copilot Pages and Copilot Notebooks, there is no workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](/microsoft-365/loop/loop-workspaces-storage-permission#copilot-pages) for detailed information.<br><br>**Loop**: The same limits apply to My workspace|
-|Storage containers  |See [Managing SharePoint Embedded containers](#managing-sharepoint-embedded-containers).|⬅️ same as Copilot Pages & Copilot Notebooks.||
-|Recycle bin  |There is no end user recycle bin for Copilot Pages or Copilot Notebooks.|End user Recycle bin for deleted Loop components and pages is available within the Loop workspace, OneDrive, or SharePoint site.|**Not Yet Available**:  <br><br>**Copilot Pages**: End user Recycle bin<br><br>**Copilot Notebooks**: End user Recycle bin<br><br>**Loop**: End user Recycle bin for deleted Loop workspaces.|
-|Version history  |**Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Copilot Pages and Copilot Notebooks version history is configured to save 50 versions per file and no admin setting is available to change this configuration.|**Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Loop workspace content stored in SharePoint Embedded (See [storage](/microsoft-365/loop/loop-workspaces-storage-permission#storage) for more information), version history is configured to save 50 versions and no admin setting is available to change this configuration. Loop files in OneDrive or SharePoint follow the same file versioning settings as other files.||
-|Quota  |Copilot Pages and Copilot Notebooks create a single user-owned SharePoint Embedded container, identified by Loop application. Loop SharePoint Embedded containers have no default storage limit. They accrue to the overall storage limits for SharePoint [storage quota](/microsoft-365/loop/loop-workspaces-storage-permission#storage-quota) in the tenant. There's no admin setting available to set storage quotas per SharePoint Embedded container.|Loop workspaces create a SharePoint Embedded container. Loop SharePoint Embedded containers have no default storage limit. They accrue to the overall storage limits for SharePoint [storage quota](/microsoft-365/loop/loop-workspaces-storage-permission#storage-quota) in the tenant. There's no admin setting available to set storage quotas per SharePoint Embedded container.<br><br>Loop files in their OneDrive and SharePoint locations follow the quotas of those storage containers.||
-|Audit logs and events  |**Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations  <ol><li>Use the [Microsoft Purview portal](https://purview.microsoft.com/auditlogsearch)<li>Search audit logs for "loop"<li>Further filter exported results by "SourceFileExtension":"loop"</ol>Copilot Notebooks create and update .pod files to manage content in the notebook.|**Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations  <ol><li>Use the [Microsoft Purview portal](https://purview.microsoft.com/auditlogsearch)<li>Search audit logs for "loop" or "loot" or "fluid" or for the Loop Application ID (listed [below](#managing-sharepoint-embedded-containers))<li>Further filter exported results by "SourceFileExtension":"loop" or "SourceFileExtension":"loot" (templates) or "SourceFileExtension":"fluid" (deprecated)</ol>Loop workspaces create and update .pod files to manage content in the workspace.|
-|Audit log access  |**Audit** logs are retained, can be exported, and can be streamed to third party tools|⬅️ same as Copilot Pages & Copilot Notebooks.||
-|***eDiscovery***|---|---|---|
-|Search, Collection, Review, Export (Purview)  |Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** supports search and collection, review (premium license required for admin), and export (premium license required for admin) as HTML or original. You can also download and reupload the files to any OneDrive to view them in their native format.|⬅️ same as Copilot Pages & Copilot Notebooks.|**Not Yet Available**:  <br><br>**Copilot Pages & Copilot Notebooks**: Full text search of content within .loop files in Purview review sets is not available.<br><br>**Loop**: Full text search of content within .loop files in Purview review sets is not available.|
-|Export (Third Party Tools)  |Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export support. Use PowerShell to [Get](/powershell/module/sharepoint-online/get-spoapplication) and [Set](/powershell/module/sharepoint-online/set-spoapplicationpermission) guest application permissions.|⬅️ same as Copilot Pages & Copilot Notebooks.||
-|Legal Hold  |**Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).|⬅️ same as Copilot Pages & Copilot Notebooks.|**Not Yet Available**:  <br><br>**Copilot Pages & Copilot Notebooks**: Unlike OneDrive, Copilot Pages and Copilot Notebooks are not automatically included when a user is placed on Litigation Hold, the Copilot Pages and Copilot Notebooks container must be manually added for that user.<br><br>**Loop**: The same conditions apply to the My workspace.|
-|***Microsoft 365 retention and deletion***|---|---|---|
-|Retention policies  |**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all Copilot Pages and Copilot Notebooks.|**[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all .loop files or alternatively can be configured per Loop workspace *.||
-|Retention labels  |**[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for Copilot Pages (.loop files) and Copilot Pages in Copilot Notebooks by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels. There's limited support for [manually applying retention labels](/purview/create-apply-retention-labels?tabs=loop%2Cdefault-label-for-sharepoint#manually-apply-retention-labels).|⬅️ same as Copilot Pages & Copilot Notebooks.|**Not Yet Available**: <br><br>**Copilot Pages**: Retention labels cannot be viewed or applied directly from a Copilot Page. Instead, the user must navigate to the Copilot Page within the Loop app itself to view or apply a retention label on a Loop component or page.<br><br>**Copilot Pages & Copilot Notebooks**: Retention labels that mark the content as a record or regulatory record can't be manually applied in either the Copilot Page or when the content is opened in the Loop app. If content is automatically labeled as a record, locking and unlocking this record is not yet available.<br><br>**Loop**: The same limits apply to Loop components and pages.|
-|***Information Protection***|---|---|---|
-|Sensitivity labels  |**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Copilot Pages.<br><br>Because Copilot Notebooks are stored in the same container as all Copilot Pages, not one Copilot Notebook per unique container, Copilot Notebooks do not have container sensitivity labels.|**[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components. Workspace sensitivity labels are available for Loop workspaces. They are configurable per Loop workspaces (at the container level) via SharePoint Admin Center and PowerShell.||
-|Data Loss Prevention  |**[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|⬅️ same as Copilot Pages & Copilot Notebooks.||
+- **[Admin Toggle](/microsoft-365/loop/loop-admin-configuration)** exist to turn on or off creation of Loop components, pages, and workspaces. When switching Loop component creation on or off in the Microsoft 365 ecosystem, it also controls rendering as a hyperlink vs. a live and interactive experience.
+  - If you enable Loop components in the Microsoft 365 ecosystem via the primary toggle, there are secondary toggles to turn on or off Loop components in Outlook or Teams chats and channels. There's also a secondary toggle to turn on or off Loop components for collaborative meeting notes.
 
-## Managing SharePoint Embedded containers
+- **GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery).
 
-IT admins can manage SharePoint Embedded containers like they manage SharePoint sites using either [SharePoint Admin Center](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaux) or [PowerShell](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell), with the appropriate [SharePoint Embedded administrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). [Storage](/microsoft-365/loop/loop-workspaces-storage-permission#storage-quota) is combined with SharePoint in your tenant. You'll need the Loop application IDs for PowerShell and Audit Logs:
+- **EUDB** compliance is supported. [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
-- Loop Web Application ID: `a187e399-0c36-4b98-8f04-1edc167a0996`
-- Loop Mobile Application ID: `0922ef46-e1b9-4f7e-9134-9ad00547eb41`
-- Copilot Pages and Copilot Notebooks containers are created using the Loop application IDs.
+## Data Security, Devices
 
-## Purview and SharePoint Embedded
+- **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) exists for Microsoft 365 app, Teams app, and Loop app, on iOS and Android.
 
-All SharePoint Embedded containers are targeted using the "All SharePoint Sites" scope in Microsoft Purview. For example, if configuring Retention Policies, the configuration you specify that targets All SharePoint Sites will apply to every Copilot Pages and Copilot Notebooks container in SharePoint Embedded, and every Loop workspace in SharePoint Embedded. This includes all ownership types: user, group, and tenant owned SharePoint Embedded containers.
+- **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** is supported.
 
-<a name="loop-workspace-url"></a>
-<sup>\*</sup> If you need to specify an individual Loop workspace or the Copilot Pages and Copilot Notebooks container for a retention policy or another compliance feature, specify the workspace as you would a SharePoint site, by its URL. To locate this URL, sign in to the SharePoint admin center with the [SharePoint Embedded administrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). Then navigate to **Containers** > **Active containers** or **Deleted containers** where you can view the details of a selected Loop workspace or Copilot Pages and Copilot Notebooks container. From the flyout pane, **General** tab, copy the container URL.
+- **[Information Barriers](/purview/information-barriers-sharepoint)** are enforced for content stored in SharePoint sites or OneDrive.
 
-## Summary of governance, data lifecycle, and compliance capabilities **not yet available**
+  > [!IMPORTANT]
+  > **[Information Barriers](/purview/information-barriers-sharepoint)** are not supported on content stored in SharePoint Embedded containers. See [storage](/microsoft-365/loop/loop-storage#storage) for more information on what content this includes, and [admin settings](/microsoft-365/loop/loop-admin-configuration#storage-based-view-of-the-admin-policy-settings) to configure these integrations.
 
-The following sections detail capabilities that are **not yet available** to make it easier to evaluate the smaller list of capabilities your organization might require.
+- **[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.
 
-### Admin Management not yet available
+- **Guest app access** to Loop workspace containers is available. Guest app access enables third party export and eDiscovery tools, migration tools, tools used to evaluate compliance requirements, and developer APIs. Use PowerShell to [Get](/powershell/module/sharepoint-online/get-spoapplication) and [Set](/powershell/module/sharepoint-online/set-spoapplicationpermission) guest app permissions.
 
-- **Copilot Pages, Copilot Notebooks, My workspace**: Unlike OneDrive, for Copilot Pages, Copilot Notebooks, and the My workspace, there is no workflow for content stored in the user-owned SharePoint Embedded container after user departure. It is deleted on the same schedule as the default OneDrive settings. See [storage management after user departure](/microsoft-365/loop/loop-workspaces-storage-permission#storage-management-after-user-departure) for detailed information.
-- **Copilot Pages, Copilot Notebooks**: An end-user recycle bin for deleted Copilot Pages or Copilot Notebooks isn't available.
-- **Loop**: When users delete an entire Loop workspace, that Loop workspace isn't available in an **end-user visible Recycle bin**. Furthermore, restoring the Loop workspace using admin tooling doesn't update in the Loop app user experience. The user would need to visit a saved page link for a restored workspace in order to see it again. Microsoft Roadmap ID 421615 addresses this.
-- **Loop**: All shared Loop workspaces are created as tenant-owned, in the tenant default geo. This behavior is consistent with SharePoint Communication sites created in the SharePoint UX, where the creator's preferred data location is not used. See [storage management after user departure](/microsoft-365/loop/loop-workspaces-storage-permission#storage-management-after-user-departure) for more information on managing workspaces.
-- **Loop**: **Individual controls for guest or external sharing** of a specific Loop workspace isn't available.
+## Data Lifecycle
 
-### Data Security capabilities not yet available
+- Loop's My workspace, Copilot Pages, and Copilot Notebooks are stored together in a single, user-owned SharePoint Embedded container, identified and owned by Loop. Shared Loop workspaces create one SharePoint Embedded container per workspace. These containers do not have individual storage limits; instead, their storage usage counts toward your organization's overall SharePoint storage quota. Currently, there is no admin control to set storage limits for individual SharePoint Embedded containers. Loop files in their OneDrive and SharePoint locations follow the quotas of these storage locations.
 
-- **Copilot Pages, Copilot Notebooks, Loop**: Information Barriers are not enforced on content that is stored within SharePoint Embedded containers. See [storage](/microsoft-365/loop/loop-workspaces-storage-permission#storage) for more information on what content this includes, and [admin settings](/microsoft-365/loop/loop-admin-configuration#storage-based-view-of-the-admin-policy-settings) to configure these integrations.
+- See [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management) for information and workflows within SharePoint Admin center or PowerShell.
 
-### eDiscovery capabilities not yet available
+  > [!IMPORTANT]
+  > Unlike OneDrive, for the Loop My workspace, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](/microsoft-365/loop/loop-storage) for detailed information.
 
-- **Copilot Pages, Copilot Notebooks, Loop**: Full text search of content within .loop files in review sets isn't available.
+- **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for My workspace are supported.
+  - My workspace is a user-owned SharePoint Embedded container and is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices).
+  - Loop content created in OneDrive and SharePoint follow the multi-geo capabilities of OneDrive and SharePoint.
+  - Multi-Geo capabilities for Loop workspaces are supported using the [same mechanism as SharePoint Communication sites](/microsoft-365/enterprise/m365-dr-workload-spo#move-a-sharepoint-site-or-sharepoint-embedded-container-site), including rehome and creation in the tenant's default geo. Manage the location of shared Loop workspaces like you would other collaboration artifacts, like SharePoint Communication sites.
 
-### Microsoft 365 retention and deletion capabilities not available
+  > [!IMPORTANT]
+  > Shared workspaces aren't created in the user's preferred data location, they're instead created in the tenant's default geo, like SharePoint Communication sites.
 
-- **Copilot Pages, Loop**: Retention labels cannot be viewed or applied directly from a Copilot Page or Loop component outside the Loop app. Instead, the user must navigate to the Copilot Page or Loop component within the Loop app itself to view or apply a retention label on a Loop component or page.
-- **Copilot Pages, Copilot Notebooks, My workspace**: Retention labels that mark the content as a record or regulatory record can't be manually applied in the Loop app. If content is automatically labeled as a record, locking and unlocking this record is not yet available.
-- For clarification only, not a limitation: retention labels do not apply to containers like SharePoint sites or Loop workspaces; instead, use retention policies for these containers. See [retention](/purview/retention) to learn more.
+- End-user **Recycle bin** for deleted Loop components and pages is available within the Loop workspace, OneDrive, or SharePoint site.
 
-## Managing Copilot Pages, Copilot Notebooks, and Loop in your organization
+  > [!IMPORTANT]
+  > There is no end user recycle bin for Loop workspaces. Furthermore, restoring the Loop workspace using admin tooling doesn't update in the Loop app user experience. The user would need to visit a saved page link for a restored workspace in order to see it again. Microsoft Roadmap ID 421615 addresses this.
 
-By reviewing this information, you can make an informed decision on whether Microsoft Loop is ready for use as a software solution in your organization. As always, we continue to update this and other documentation to provide the compliance status of Microsoft Loop to help you make the best decisions for your organization.
+- **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Loop workspace content stored in SharePoint Embedded (See [storage](/microsoft-365/loop/loop-storage) for more information), version history is configured to save 50 versions and no admin setting is available to change this configuration. Loop files in OneDrive or SharePoint follow the same file versioning settings as other files.
+
+- **Audit** logs exist for all events. They are retained, can be exported, and can be streamed to third party tools. To search and export Microsoft 365 service events for security and compliance investigations:
+
+    1. Use the [Microsoft Purview portal](https://purview.microsoft.com/auditlogsearch)
+    1. Search audit logs for "loop" or "loot" or "fluid" or for the Loop Application ID (listed in [Manage SPE containers](/microsoft-365/loop/cpcn-loop-spe-management))
+    1. Further filter exported results by "SourceFileExtension":"loop" or "SourceFileExtension":"loot" (templates) or "SourceFileExtension":"fluid" (deprecated)
+
+- Loop workspaces create and update .pod files to manage content in the workspace.
+
+## eDiscovery
+
+- Microsoft **[Purview eDiscovery](/purview/ediscovery-premium-get-started)** supports search and collection, review (premium license required for admin), and export as HTML (premium license required for admin) or original. You can also download and reupload the files to any OneDrive to view them in their native format.
+
+  > [!IMPORTANT]
+  > Full text search of content within .loop files in Purview review sets isn't available. All other Purview search and collection capabilities are supported.
+
+- Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export for third party tools is supported. Use PowerShell to [Get](/powershell/module/sharepoint-online/get-spoapplication) and [Set](/powershell/module/sharepoint-online/set-spoapplicationpermission) guest application permissions.
+
+- **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).
+
+  > [!IMPORTANT]
+  > Unlike OneDrive, Loop's My workspace is not automatically included when a user is placed on Litigation Hold, the My workspace container must be manually added for that user.
+
+## Microsoft 365 retention and deletion
+
+- **[Retention policies](/purview/create-retention-policies?tabs=other-retention)** from Microsoft Purview Data Lifecycle Management configured for all SharePoint sites are enforced for all .loop files or alternatively can be [configured per Loop workspace](/microsoft-365/loop/cpcn-loop-spe-management#retrieving-the-container-url-for-purview).
+
+- **[Retention labels](/purview/retention#retention-labels)** from Microsoft Purview Data Lifecycle Management and Microsoft Purview Records Management are supported for Loop components by [applying published labels](/purview/create-apply-retention-labels?tabs=spo-onedrive) in OneDrive or SharePoint, or [automatically applying](/purview/apply-retention-labels-automatically) the labels. There's limited support for manually applying retention labels.
+  - Retention labels cannot be viewed or applied directly from a Loop component. Instead, the user must [navigate to the Loop file within the Loop app](/purview/create-apply-retention-labels?tabs=loop%2Cdefault-label-for-sharepoint#manually-apply-retention-labels) to view or apply a retention label on a Loop component.
+  - Retention labels that mark the content as a record or regulatory record can't be manually applied in either the Loop component or when the content is opened in the Loop app. If content is automatically labeled as a record, locking and unlocking this record is not yet available.
+  - For clarification only, not a limitation: retention labels do not apply to containers like SharePoint sites or Loop workspaces; instead, use retention policies for these containers. See [retention](/purview/retention) to learn more.
+
+## Information Protection
+
+- **[Sensitivity labeling](/purview/sensitivity-labels-loop)** is available for Loop pages and components. Workspace sensitivity labels are available for Loop workspaces. They are configurable per Loop workspaces (at the container level) via SharePoint Admin Center and PowerShell.
+  - **Individual controls for guest or external sharing** of a specific Loop workspace isn't available. Use container Sensitivity labeling instead.
+
+- **[Data Loss Prevention](/purview/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.
 
 ## Related articles
 
+- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
+- [Storage](/microsoft-365/loop/loop-storage)
+- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
+- [Admin toggles](/microsoft-365/loop/loop-admin-configuration)
+- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
 - [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
-- [Overview of Loop workspaces storage and permissions](/microsoft-365/loop/loop-workspaces-storage-permission)
-- [Loop admin policies for Loop components and Loop workspaces](/microsoft-365/loop/loop-admin-configuration)
