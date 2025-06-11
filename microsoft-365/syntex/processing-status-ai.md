@@ -20,9 +20,7 @@ description: Learn how to monitor the processing status of files in a SharePoint
 
 <sup>**Applies to:**  &ensp; &#10003; Autofill columns &ensp; | &ensp; &#10003; Document translation</sup>
 
-You can now view real-time updates on files processed for autofill columns and document translation.
-
-This feature lets you:
+You can now view real-time updates on files processed for autofill columns and document translation. This feature lets you:
 
 - See when a file is being processed.
 - Check the status of the file: **In progress**, **Completed**, or **Failed**.
