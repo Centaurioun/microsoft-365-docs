@@ -54,9 +54,18 @@ Instead of just showing one status, you now get a detailed view. You’ll know w
 
 - Ensure you have permission to view or manage the library.
 
+## Monitor the status of a file being processed
+
+When an on-demand request is triggered, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button. Select the **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
+
+The message bar remains visible while requests are being processed. It automatically disappears once all requests are either completed or failed.
+
 ## Monitor the processing status for a selected file
 
 1. In a SharePoint document library, select the file or files you want for which you want to view the status.
+
+    > [!NOTE]
+    > If no files or more than 30 files are selected, the activity pane displays the processing status for the entire library, rather than for individual files.
 
 2. From the **More options** (**...**) menu either next to the file name or on the command bar, select **Autofill columns** > **View recent activity** or **Translate** > **View recent activity**.
 
@@ -90,6 +99,8 @@ The activity panel shows you a list of file processing events, including:
 - The date and time of the event
 
     ![Screenshot of the activity panel in a SharePoint library.](../media/content-understanding/processing-status-activity-panel.png)
+
+If no files or more than 30 files are selected, the activity pane displays the processing status for the entire library, rather than for individual files.
 
 By default, the panel shows activity for the last 60 days.
 
