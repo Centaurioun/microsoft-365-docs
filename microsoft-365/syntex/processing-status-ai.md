@@ -30,24 +30,6 @@ This feature lets you:
 
 You can view and monitor the processing status for a [selected file](#monitor-the-processing-status-for-a-selected-file) or for [all files](#monitor-the-processing-status-for-all-files-in-a-library) in a document library.
 
-<!---
-The detailed view in the **View recent activity** pane If something goes wrong, you’ll get a clear error message and a link to helpful guidance—so you can fix issues quickly and keep things moving.
-
-
-
-
-
-The processing status pane gives you full visibility into your file processing workflows with real-time updates on autofill columns and document translation. It helps you:
-
-- Track when a file is being processed.
-- See whether it’s **In progress**, **Completed**, or **Failed**.
-- Understand both successful outcomes and failure reasons.
-
-This feature helps you keep track of what’s happening with each file—every step of the way. You can see when a file starts processing, when it finishes, and if something goes wrong.
-
-Instead of just showing one status, you now get a detailed view. You’ll know which services worked, which didn’t, and why. If there’s an issue, you’ll see a clear error message and a link to helpful documentation so you can fix it quickly.
---->
-
 ## Prerequisites
 
 - Ensure your SharePoint library has the [autofill columns service](autofill-overview.md) or the [document translation service](translation-overview.md) enabled.
@@ -56,7 +38,9 @@ Instead of just showing one status, you now get a detailed view. You’ll know w
 
 ## Monitor the status of a file being processed
 
-When an on-demand request is triggered, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button. Select the **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
+When an on-demand request is triggered, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button.
+
+Select the **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
 
 The message bar remains visible while requests are being processed. It automatically disappears once all requests are either completed or failed.
 
