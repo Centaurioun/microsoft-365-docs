@@ -70,7 +70,7 @@ To view the processing status of one or more files:
 
 2. From the **More options** (**...**) menu either next to the file name or on the command bar:
 
-    - For autofill columns: Select **Autofill columns** > **View recent activity**.
+    - For autofill: Select **Autofill columns** > **View recent activity**.
 
     - For translation: Select **Translate** > **View recent activity**.
 
@@ -84,7 +84,7 @@ To view the processing status of all files in the library:
 
 1. In a SharePoint document library, on the command bar:
 
-    - For autofill columns: Select **More options** (**...**) > **Autofill columns** > **View recent activity**.
+    - For autofill: Select **More options** (**...**) > **Autofill columns** > **View recent activity**.
 
     - For translation: Select **Translate** > **View recent activity**.
 
