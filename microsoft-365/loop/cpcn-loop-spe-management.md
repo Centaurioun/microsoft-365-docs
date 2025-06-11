@@ -26,7 +26,7 @@ description: "Learn about managing SharePoint Embedded containers for Copilot No
 
 # Managing SharePoint Embedded containers for Copilot Notebooks, Copilot Pages, or Loop workspaces
 
-IT admins can manage SharePoint Embedded containers like they manage SharePoint sites using either [SharePoint Admin Center](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaux) or [PowerShell](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell), with the appropriate [SharePoint Embedded administrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). Storage and quota is combined with SharePoint in your tenant. You'll need the Loop application IDs for PowerShell and Audit Logs:
+IT admins can manage SharePoint Embedded containers like they manage SharePoint sites using either [SharePoint Admin Center](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaux) or [PowerShell](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell), with the appropriate [SharePoint Embedded administrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). Storage and quota are combined with SharePoint in your tenant. You'll need the Loop application IDs for PowerShell and Audit Logs:
 
 - Loop Web Application ID: `a187e399-0c36-4b98-8f04-1edc167a0996`
 - Loop Mobile Application ID: `0922ef46-e1b9-4f7e-9134-9ad00547eb41`

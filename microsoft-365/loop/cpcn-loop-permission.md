@@ -35,7 +35,7 @@ Copilot Pages, Copilot Notebooks, and Loop workspace are stored in [SharePoint E
 - **Workspace Sharing**: ONLY applies to shared Loop workspaces: Invites users to the entire workspace by adding owners and members to the SharePoint Embedded container, and sends an email invite. All members have access and *editing* permissions to all the Loop pages in that workspace.
 - **Page Sharing**: Grants access to a specific page (not the whole workspace) with options for edit or read-only access. The user can choose to use a company share link or people-specific share link, based on your organizational sharing settings.
 
-:::image type="content" source="media/share-workspace-in-loop.png" alt-text="Screenshot showing the Share workspace option in Loop":::
+  :::image type="content" source="media/share-workspace-in-loop.png" alt-text="Screenshot showing the Share workspace option in Loop":::
 
 ## Guest/External sharing
 

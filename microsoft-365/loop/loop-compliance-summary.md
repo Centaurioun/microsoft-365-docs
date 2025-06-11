@@ -48,8 +48,8 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 - **[Information Barriers](/purview/information-barriers-sharepoint)** are enforced for content stored in SharePoint sites or OneDrive.
 
-> [!IMPORTANT]
-> **[Information Barriers](/purview/information-barriers-sharepoint)** are not supported on content stored in SharePoint Embedded containers. See [storage](/microsoft-365/loop/loop-storage#storage) for more information on what content this includes, and [admin settings](/microsoft-365/loop/loop-admin-configuration#storage-based-view-of-the-admin-policy-settings) to configure these integrations.
+  > [!IMPORTANT]
+  > **[Information Barriers](/purview/information-barriers-sharepoint)** are not supported on content stored in SharePoint Embedded containers. See [storage](/microsoft-365/loop/loop-storage#storage) for more information on what content this includes, and [admin settings](/microsoft-365/loop/loop-admin-configuration#storage-based-view-of-the-admin-policy-settings) to configure these integrations.
 
 - **[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.
 
@@ -61,21 +61,21 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 - See [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management) for information and workflows within SharePoint Admin center or PowerShell.
 
-> [!IMPORTANT]
-> Unlike OneDrive, for the Loop My workspace, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](/microsoft-365/loop/loop-storage) for detailed information.
+  > [!IMPORTANT]
+  > Unlike OneDrive, for the Loop My workspace, there is no user workflow for content stored in the user-owned SharePoint Embedded container after user departure. The container is deleted on the same schedule as the default OneDrive settings. See [Storage management after user departure](/microsoft-365/loop/loop-storage) for detailed information.
 
 - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for My workspace are supported.
   - My workspace is a user-owned SharePoint Embedded container and is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices).
   - Loop content created in OneDrive and SharePoint follow the multi-geo capabilities of OneDrive and SharePoint.
   - Multi-Geo capabilities for Loop workspaces are supported using the [same mechanism as SharePoint Communication sites](/microsoft-365/enterprise/m365-dr-workload-spo#move-a-sharepoint-site-or-sharepoint-embedded-container-site), including rehome and creation in the tenant's default geo. Manage the location of shared Loop workspaces like you would other collaboration artifacts, like SharePoint Communication sites.
 
-> [!IMPORTANT]
-> Shared workspaces aren't created in the user's preferred data location, they're instead created in the tenant's default geo, like SharePoint Communication sites.
+  > [!IMPORTANT]
+  > Shared workspaces aren't created in the user's preferred data location, they're instead created in the tenant's default geo, like SharePoint Communication sites.
 
--End-user **Recycle bin** for deleted Loop components and pages is available within the Loop workspace, OneDrive, or SharePoint site.
+- End-user **Recycle bin** for deleted Loop components and pages is available within the Loop workspace, OneDrive, or SharePoint site.
 
-> [!IMPORTANT]
-> There is no end user recycle bin for Loop workspaces. Furthermore, restoring the Loop workspace using admin tooling doesn't update in the Loop app user experience. The user would need to visit a saved page link for a restored workspace in order to see it again. Microsoft Roadmap ID 421615 addresses this.
+  > [!IMPORTANT]
+  > There is no end user recycle bin for Loop workspaces. Furthermore, restoring the Loop workspace using admin tooling doesn't update in the Loop app user experience. The user would need to visit a saved page link for a restored workspace in order to see it again. Microsoft Roadmap ID 421615 addresses this.
 
 - **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Loop workspace content stored in SharePoint Embedded (See [storage](/microsoft-365/loop/loop-storage) for more information), version history is configured to save 50 versions and no admin setting is available to change this configuration. Loop files in OneDrive or SharePoint follow the same file versioning settings as other files.
 
@@ -91,15 +91,15 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 - Microsoft **[Purview eDiscovery](/purview/ediscovery-premium-get-started)** supports search and collection, review (premium license required for admin), and export as HTML (premium license required for admin) or original. You can also download and reupload the files to any OneDrive to view them in their native format.
 
-> [!IMPORTANT]
-> Full text search of content within .loop files in Purview review sets isn't available. All other Purview search and collection capabilities are supported.
+  > [!IMPORTANT]
+  > Full text search of content within .loop files in Purview review sets isn't available. All other Purview search and collection capabilities are supported.
 
 - Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export for third party tools is supported. Use PowerShell to [Get](/powershell/module/sharepoint-online/get-spoapplication) and [Set](/powershell/module/sharepoint-online/set-spoapplicationpermission) guest application permissions.
 
 - **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server).
 
-> [!IMPORTANT]
-> Unlike OneDrive, Loop's My workspace is not automatically included when a user is placed on Litigation Hold, the My workspace container must be manually added for that user.
+  > [!IMPORTANT]
+  > Unlike OneDrive, Loop's My workspace is not automatically included when a user is placed on Litigation Hold, the My workspace container must be manually added for that user.
 
 ## Microsoft 365 retention and deletion
 
