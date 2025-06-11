@@ -103,6 +103,14 @@ items:
           href: people-skills-import-export-skills.md
       - name: People skills data and AI guidelines
         href: people-skills-data-and-ai-guidelines.md
+- name: Microsoft 365 Copilot Search
+  items:
+    - name: Overview of Microsoft 365 Copilot Search
+      href: microsoft-365-copilot-search.md
+    - name: Manage Microsoft 365 Copilot Search
+      href: microsoft-365-copilot-search-manage.md
+    - name: Security and privacy in Microsoft 365 Copilot Search
+      href: microsoft-365-copilot-search-privacy.md
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
     - name: Overview of AI in Microsoft Teams
