@@ -80,7 +80,7 @@ When users access the Loop app in this configuration and select the **Create** b
 
 In this scenario, workspace creation was initially enabled for the user, allowing them to create workspaces and content. After the administrator disabled workspace creation, the user lost the ability to create new workspaces or content. However, all previously created workspaces and files remain visible and accessible, subject to existing permissions. IT administrators should note that disabling workspace creation doesn't remove or restrict access to existing content; users retain access based on their current permissions for each workspace and file.
 
-:::image type="content" source=./media/loop-app-workspace-create-disabled-with-content.png" alt-text="Screenshot showing the Loop app Create menu clicked, with workspace creation turned off by the administrator, and previously created content visible":::
+:::image type="content" source="media/loop-app-workspace-create-disabled-with-content.png" alt-text="Screenshot showing the Loop app Create menu clicked, with workspace creation turned off by the administrator, and previously created content visible":::
 *Loop app Create menu clicked, showing previously created content, and workspace creation turned off by the administrator*<br><br>
 
 ## Related topics
