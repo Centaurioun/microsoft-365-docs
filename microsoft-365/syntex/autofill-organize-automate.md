@@ -26,7 +26,7 @@ Building on the autofill columns feature, this agent skill simplifies the proces
 
 ## Suggest and create columns
 
-To get suggested columns in your document library, follow these steps.
+To get suggested columns and metabase based on the content in your document library, follow these steps.
 
 ### Launch the quick action
 
