@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- m365-groups
 search.appverid:
 - MET150
 - MOE150
@@ -34,7 +35,7 @@ This article teaches you how to handle ownerless Microsoft 365 groups in the Mic
 
 An Exchange administrator or Groups administrator can create a policy that automatically asks the members who are the most active in the group if they accept ownership.
 
-When a member accepts the invitation to become an owner, the action is logged in the compliance portal audit log.
+When a member accepts the invitation to become an owner, the action is logged in the Microsoft Purview portal audit log.
 
 If there's no group activity, the policy asks random group members to accept ownership.
 
@@ -109,6 +110,28 @@ Admins can see which Microsoft 365 groups remain ownerless by searching the [a
 1. On the **Search** page, in the **Activities - friendly names** field, select **Unattended ownerless group** from the dropdown list.
 1. Select the **Search** button.
 
+## Auditing changes made to ownerless group policy
+
+Use the following steps to search for the **Updated the ownerless group policy** activity to find out details about changes made to the ownerless group policy. 
+
+1. Login to [Purview](https://sip.purview.microsoft.com/audit/auditsearch) portal and start a new Audit log search.
+
+      > [!NOTE]
+      > For help with Purview login, see [Purview Portal](/purview/purview-portal).
+
+1. Under **Activities – friendly names**, type **ownerless group**, and select the **Updated the ownerless group policy** activity. 
+1. Specify the start and end dates for which the audit log needs to be searched.
+
+    :::image type="content" source="../../media/audit-ownerless-group1.png" alt-text="Screenshot of audit log." lightbox="../../media/audit-ownerless-group1.png":::
+
+    Once the search is complete, you can see the following result. 
+    
+    :::image type="content" source="../../media/result-audit-ownerless-group1.png" alt-text="Screenshot of result of audit log search." lightbox="../../media/result-audit-ownerless-group1.png":::
+    
+    The following is an example of an audit log entry showing changes made:
+    
+    :::image type="content" source="../../media/audit-log1.png" alt-text="Screenshot of an audit log." lightbox="../../media/audit-log1.png":::
+
 ## Common issues with the ownerless group policy
 
 - **Exchange Online throttles policy notifications.**
@@ -129,4 +152,4 @@ Admins can see which Microsoft 365 groups remain ownerless by searching the [a
 
 - [Overview of Microsoft 365 Groups for administrators](office-365-groups.md).
 - [Compare types of groups in Microsoft 365](compare-groups.md).
-- [Search the audit log in the compliance portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Search the audit log in the Microsoft Purview portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)

@@ -30,7 +30,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: GEA150 
 description: "Learn how to sign up for a free 30-day trial or buy a subscription for Microsoft 365 for business products and services."
-ms.date: 09/05/2024
+ms.date: 06/02/2025
 ---
 
 # Try or buy a Microsoft 365 for business subscription
@@ -83,6 +83,8 @@ To create an account and sign up for a free trial subscription of Microsoft 365 
 The sign-up process might take several minutes to complete. After it's complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
 When you start a free trial, we automatically create a billing account for you. You use your billing account to manage your account settings, invoices, payment methods, and purchases. For more information about billing accounts, see [Understand billing accounts](manage-billing-accounts.md).
+
+At the end of your trial period, your subscription will be renewed to an annual term subscription by default, unless you turn off **recurring billing** from inside of **Billing** > **Your products**.
 
 ## Extend your trial
 

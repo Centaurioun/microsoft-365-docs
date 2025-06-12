@@ -11,8 +11,12 @@ items:
             - name: What's new
               href: pay-as-you-go-whats-new.md
             - name: Set up pay-as-you-go billing
-              href: pay-as-you-go-setup.md
- 
+              items:
+                - name: Microsoft 365 Copilot 
+                  href: pay-as-you-go-setup-copilot.md
+                - name: Microsoft Syntex 
+                  href: pay-as-you-go-setup.md
+
     - name: Pay-as-you-go pricing
       items:
             - name: Microsoft 365 Copilot

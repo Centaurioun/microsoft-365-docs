@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 03/19/2025
+ms.date: 05/01/2025
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started
@@ -34,39 +34,29 @@ There are different Copilots available.
 
 ## Microsoft 365 Copilot Chat
 
-✅ Use for work tasks  
-✅ Free to organizations with a Microsoft 365 license  
-✅ Use for personal tasks, with caution. This Copilot can access work data.  
+✅ Secure with [enterprise data protection](enterprise-data-protection.md)  
+✅ Scalable with [pay-as-you-go](./pay-as-you-go/overview.md)  
+✅ Included with a Microsoft 365 subscription
 
-**Microsoft 365 Copilot Chat** is a prompt and response experience, and is available free to organizations that have a Microsoft 365 license.
+**Microsoft 365 Copilot Chat** is an AI prompt and response experience that's [grounded in the web](/copilot/privacy-and-protections#privacy-and-security-of-generated-search-queries) and powered by [large language models (LLMs)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-are-large-language-models-llms).
 
-When you open Copilot Chat, it looks similar to the following image:
+Copilot Chat is automatically included and available to organizations that have a Microsoft 365 subscription. With Copilot Chat:
 
-:::image type="content" source="media/which-copilot-for-your-organization/microsoft-365-copilot-chat.png" alt-text="Screenshot that shows Microsoft 365 Copilot Chat and sample prompts that get information from the internet with web-based chat.":::
+- You can also create images and use [Copilot Pages](https://support.microsoft.com/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
+- You can use for work and education, and know that you're protected with [enterprise data protection](enterprise-data-protection.md).
+- You can manage it using [IT controls for admins](/copilot/manage).
 
-When users sign in with their Microsoft Entra work or school account (`user@contoso.com`), they can use Copilot Chat **work** or **web** version:
+Microsoft 365 Copilot Chat is available on the web at [https://m365copilot.com](https://m365copilot.com), in the [Microsoft 365 Copilot app](https://apps.microsoft.com/detail/9wzdncrd29v9), and in Teams, Outlook, & Microsoft Edge.
 
-:::image type="content" source="media/which-copilot-for-your-organization/copilot-work-web.png" alt-text="Screenshot that shows Microsoft Entra users can select work or web in Microsoft 365 Copilot Chat.":::
+> [!TIP]
+> If you [pin Copilot Chat](pin-copilot.md) in the Microsoft 365 Copilot app, when users go to `https://m365copilot.com`, then they're automatically redirected to `https://m365.cloud.microsoft/chat`.
 
-- When users select **work**, Copilot Chat is a work-based ([Microsoft Graph](/graph/overview)) chat experience. It shows results that their Microsoft Entra work or school account can access.
-- When users select **web**, Copilot Chat shows results that their Microsoft Entra work or school account can access and also shows results from the internet.
-
-  To learn about data privacy, see:
-
-  - [Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](manage-public-web-access.md)
-  - [Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](enterprise-data-protection.md)
-
-You can also create images and use [Copilot Pages](https://support.microsoft.com/en-us/topic/introducing-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f) to save, edit, and share AI-generated content.
-
-Microsoft 365 Copilot Chat is available at [https://m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat), in the [Microsoft 365 Copilot app](https://apps.microsoft.com/detail/9wzdncrd29v9) that can be installed on devices, in Microsoft Edge, and when you use [Microsoft Bing](https://www.bing.com).
-
-If you want users in your organization to have prompt and response interchanges with work-based and internet-based information, then use Microsoft 365 Copilot Chat.
+If you want users in your organization to have prompt and response interchanges with information on the internet and [enterprise data protection](enterprise-data-protection.md), then use Microsoft 365 Copilot Chat.
 
 To learn more, see:
 
 - [Learn more about Microsoft 365 Copilot Chat](/copilot/overview)
-- [Read about Copilot for all: Introducing Microsoft 365 Copilot Chat](https://www.microsoft.com/microsoft-365/blog/2025/01/15/copilot-for-all-introducing-microsoft-365-copilot-chat)
-- [Add apps to Microsoft Intune](/mem/intune/apps/apps-add) and [assign apps to groups](/mem/intune/apps/apps-deploy)
+- [Read about Copilot for all: Introducing Microsoft 365 Copilot Chat - blog](https://www.microsoft.com/microsoft-365/blog/2025/01/15/copilot-for-all-introducing-microsoft-365-copilot-chat)
 
 ## Microsoft 365 Copilot
 
@@ -81,6 +71,23 @@ To learn more, see:
 - Get in-app experiences in your Microsoft 365 apps, like Teams, Word, Excel, PowerPoint, and Outlook.
 - Create [Copilot Agents](/microsoft-365-copilot/extensibility/overview-declarative-agent).
 - Measure insights with [Copilot Analytics](https://techcommunity.microsoft.com/blog/microsoftvivablog/introducing-copilot-analytics-to-measure-ai-impact-on-your-business/4301717).
+
+With a Microsoft 365 Copilot license, when you open Copilot Chat, it looks similar to the following image:
+
+:::image type="content" source="media/which-copilot-for-your-organization/microsoft-365-copilot-chat.png" alt-text="Screenshot that shows Microsoft 365 Copilot Chat and sample prompts that get information from the internet with web-based chat.":::
+
+When users sign in with their Microsoft Entra work or school account (`user@contoso.com`), they can use Microsoft 365 Copilot Chat **work** or **web** version:
+
+:::image type="content" source="media/which-copilot-for-your-organization/copilot-work-web.png" alt-text="Screenshot that shows Microsoft Entra users can select work or web in Microsoft 365 Copilot Chat.":::
+
+- When users select **work**, Copilot Chat is a work-based ([Microsoft Graph](/graph/overview)) chat experience. It shows results that their Microsoft Entra work or school account can access.
+
+- When users select **web**, Copilot Chat shows results that their Microsoft Entra work or school account can access, and also shows results from the internet.
+
+  To learn about data privacy, see:
+
+  - [Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](manage-public-web-access.md)
+  - [Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](enterprise-data-protection.md)
 
 Copilot accesses data that your Microsoft Entra account has access to, like your emails and files. So, you can use Microsoft 365 Copilot to:
 
@@ -170,7 +177,7 @@ To learn more, see [What is Microsoft Security Copilot?](/copilot/security/micro
 ✅ Licensed by your work organization  
 ✅ Free for some people, like verified students and teachers
 
-**GitHub Copilot** is an AI coding assistant that can help you write code faster. This Copilot is typically licensed by your work organization and is also free for some people, like verified students and teachers.
+**GitHub Copilot** is an AI coding assistant that can help you write code faster. This Copilot is licensed by your work organization and is also free for some people, like verified students and teachers.
 
 You can use GitHub Copilot to:
 
