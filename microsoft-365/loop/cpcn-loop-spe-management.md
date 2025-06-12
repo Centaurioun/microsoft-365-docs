@@ -51,12 +51,12 @@ If you need to specify an individual Copilot Notebook, the Copilot Pages contain
 
 ## Related articles
 
-- [Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
-- [Configuration Requirements](/microsoft-365/loop/cpcn-loop-requirements)
-- [Copilot Pages and Notebooks Storage](/microsoft-365/loop/cpcn-storage)
-- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
-- [Copilot Pages and Notebooks Admin toggles](/microsoft-365/loop/cpcn-admin-configuration)
-- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
-- [Loop Storage](/microsoft-365/loop/cpcn-storage)
-- [Loop Admin toggles](/microsoft-365/loop/loop-admin-configuration)
-- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
+- [Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
+- [Configuration Requirements](cpcn-loop-requirements.md)
+- [Copilot Pages and Notebooks Storage](cpcn-storage.md)
+- [Permissions](cpcn-loop-permission.md)
+- [Copilot Pages and Notebooks Admin toggles](cpcn-admin-configuration.md)
+- [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Loop Storage](cpcn-storage.md)
+- [Loop Admin toggles](loop-admin-configuration.md)
+- [Overview of Loop components in Microsoft 365](loop-components-teams.md)
