@@ -60,7 +60,7 @@ There are no extra licensing requirements for the Loop component viewer/editor b
 
 ## Loop workspace creation Disabled, Loop component creation Enabled
 
-When Loop admin settings are configured to permit the creation of Loop components but restrict the creation of Loop workspaces, users experience a limited set of features in the Loop app. Specifically, users can continue to create and collaborate on Loop components within Teams and Outlook, but they are unable to create new workspaces in the Loop app. This configuration helps IT administrators prevent workspace while still enabling collaborative component functionality across Microsoft 365 apps, and editing the components full screen in the Loop component viewer/editor experience.
+When Loop admin settings are configured to permit the creation of Loop components but restrict the creation of Loop workspaces, users experience a limited set of features in the Loop app. Specifically, users can continue to create and collaborate on Loop components within Teams and Outlook, but they are unable to create new workspaces in the Loop app. This configuration helps IT administrators prevent workspace creation while still enabling collaborative component functionality across Microsoft 365 apps, and editing the components full screen in the Loop component viewer/editor experience.
 
 ### Loop components in Teams and Outlook, unchanged
 
