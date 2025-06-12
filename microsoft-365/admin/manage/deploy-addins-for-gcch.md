@@ -40,7 +40,7 @@ Centralized deployment for Office Add-ins can be managed at an administrative le
 12. On the <b>Configure add-in</b> page, choose the users you want to have access to the add-in, then select <b>Deploy</b>.
 13. If the above steps fail to deploy the Add-in, it's possible your Tenant is blocking the store. If this is the case, please continue.
 14. Paste the URL built out from step 4 above into a browser. This is the raw xml.
-15. <b>Righ-Click</b> on the page.
+15. <b>Right-click</b> on the page.
 16. Select <b>Save As</b> and save as an <b>.xml</b>. 
 17. Name the file <b>Manifest.xml</b> or another descriptive name.
 18. Instead of using the URL option, choose <b>I have the manifest file (.xml) on this device</b>.
