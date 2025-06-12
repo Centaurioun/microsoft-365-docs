@@ -34,18 +34,18 @@ The screenshots in this article illustrate the typical user experience when [Loo
 
 Users can create and share Loop components directly within Teams and Outlook messages. When creating a new Loop component or when a Loop component link is pasted into a message, it renders as an interactive component, allowing recipients to collaborate in real time without leaving the message context.
 
-:::image type="content" source="media/outlook-web-draft.png" alt-text="Screenshot showing an Outlook draft message containing an interactive Loop component":::
+:::image type="content" source="./media/outlook-web-draft.png" alt-text="Screenshot showing an Outlook draft message containing an interactive Loop component":::
 *Outlook draft message with Loop component*<br><br>
 
-:::image type="content" source="media/teams-web-message.png" alt-text="Screenshot showing a Teams sent message containing an interactive Loop component":::
+:::image type="content" source="./media/teams-web-message.png" alt-text="Screenshot showing a Teams sent message containing an interactive Loop component":::
 *Teams sent message with same Loop component*<br><br>
 
 ### Loop components in the Loop app
 
-:::image type="content" source="media/loop-spv-full.png" alt-text="Screenshot showing the Loop component editor and viewer for a Loop component":::
+:::image type="content" source="./media/loop-component-editor-full.png" alt-text="Screenshot showing the Loop component editor and viewer for a Loop component":::
 *Loop component editor/viewer enabling full screen interaction with the same Loop component*<br><br>
 
-:::image type="content" source="media/loop-createnew-full.png" alt-text="Screenshot showing the Loop app user interface for creating new components or workspaces":::
+:::image type="content" source="./media/loop-can-create-full.png" alt-text="Screenshot showing the Loop app user interface for creating new components or workspaces":::
 *Loop app user experience for creating new components or new workspaces*<br><br>
 
 ## Expected user experience when Loop creation is disabled
@@ -66,19 +66,19 @@ Refer to [Loop components in Teams and Outlook](#loop-components-in-teams-and-ou
 
 In this scenario, workspace creation is not enabled for the user at any point. As a result, no workspaces appear, including the "My workspace" personal workspace, and users can't create new workspaces. The Loop component editor/viewer remains available, so users can open and interact with Loop components created in other Microsoft 365 apps such as Teams or Outlook.
 
-:::image type="content" source="media/loop-spv.png" alt-text="Screenshot showing the Loop component editor and viewer for a Loop component, with workspace creation turned off by the administrator":::
+:::image type="content" source="./media/loop-component-editor.png" alt-text="Screenshot showing the Loop component editor and viewer for a Loop component, with workspace creation turned off by the administrator":::
 *Loop component editor/viewer enabling full screen interaction with a Loop component*<br><br>
 
 When users access the Loop app in this configuration and select the **Create** button, no creation options are presented. This is because the admin setting for workspace creation is disabled. Users can't create new workspaces or components from the Loop app under this policy.
 
-:::image type="content" source="media/loop-app-workspace-create-disabled.png" alt-text="Screenshot showing the Loop app Create menu clicked, with workspace creation turned off by the administrator":::
+:::image type="content" source="./media/loop-app-workspace-create-disabled.png" alt-text="Screenshot showing the Loop app Create menu clicked, with workspace creation turned off by the administrator":::
 *Loop app Create menu clicked, with workspace creation turned off by the administrator*<br><br>
 
 ### Loop workspace experience when workspace creation is Disabled after initial Enablement
 
 In this scenario, workspace creation was initially enabled for the user, allowing them to create workspaces and content. After the administrator disabled workspace creation, the user lost the ability to create new workspaces or content. However, all previously created workspaces and files remain visible and accessible, subject to existing permissions. IT administrators should note that disabling workspace creation doesn't remove or restrict access to existing content; users retain access based on their current permissions for each workspace and file.
 
-:::image type="content" source="media/loop-app-workspace-create-disabled-withcontent.png" alt-text="Screenshot showing the Loop app Create menu clicked, with workspace creation turned off by the administrator, and previously created content visible":::
+:::image type="content" source=./media/loop-app-workspace-create-disabled-with-content.png" alt-text="Screenshot showing the Loop app Create menu clicked, with workspace creation turned off by the administrator, and previously created content visible":::
 *Loop app Create menu clicked, showing previously created content, and workspace creation turned off by the administrator*<br><br>
 
 ## Related topics
