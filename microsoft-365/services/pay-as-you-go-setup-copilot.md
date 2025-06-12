@@ -51,7 +51,9 @@ Before you begin, ensure the following:
 5. Read and accept the pay-as-you-go terms of service. Select **Next**.
 
 7. On the **Users** page, choose **All users** or a **Specific group** (search and add a single group). Select **Next**.
-    Note that when selecting the group, only the first thousand groups are shown alphabetically.
+
+    > [!NOTE]
+    > When selecting a group, only the first 1,000 groups are displayed in alphabetical order.
 
 8. On the **Review and finish** page, double-check all the details you’ve entered. If everything is correct, select **Create policy**.
 
