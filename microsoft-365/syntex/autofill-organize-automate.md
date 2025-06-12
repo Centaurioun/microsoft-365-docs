@@ -38,9 +38,11 @@ To get suggested columns and metabase based on the content in your document libr
 
    ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/autofill-librarian-agents-in-sharepoint-menu.png)
 
-3. The chat panel opens and displays a list of suggested actions related to columns that you can try.
+3. The chat panel opens and displays a list of [suggested actions](#use-a-suggested-action) related to columns that you can try.
 
    ![Screenshot of the chat panel showing the instruction for column actions.](../media/content-understanding/autofill-librarian-agents-chat-panel.png)
+
+    You can also enter a [custom action](#enter-a-custom-action) with your own instruction.
 
 ### Use a suggested action
 
