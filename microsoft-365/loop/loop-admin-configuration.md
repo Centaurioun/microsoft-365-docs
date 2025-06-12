@@ -98,11 +98,7 @@ IT administrators can control whether users in their organization can create new
 
 ### Expected user experience when Loop creation is disabled
 
-When admin controls are set to Disabled, users cannot create new Loop files or new SharePoint Embedded containers. Existing Loop files and workspaces remain accessible; users can still find, open, and edit them if they have the appropriate permissions. No existing data is deleted.
-
-Loop content and icons may still appear in Microsoft 365 apps, including Microsoft365.com and the Loop component viewer/editor (loop.cloud.microsoft). Previously created files remain visible and accessible, and shared links continue to work as permitted by file permissions.
-
-There are no additional licensing requirements for the Loop component viewer/editor beyond OneDrive access. Users can access Loop content via loop.cloud.microsoft or the All apps view in Microsoft365.com. To hide the Loop icon in the All apps view, disable OneDrive access for those users or use a conditional access policy to block access to loop.cloud.microsoft.
+Refer to the [Loop experience examples based on admin settings](loop-ux-examples.md) article for details and screenshots.
 
 ## Settings management in the Microsoft Admin Center
 
@@ -201,6 +197,7 @@ To disable Loop components in Teams, run `Set-SPOTenant -IsLoopEnabled $false`. 
 - [Requirements](cpcn-loop-requirements.md)
 - [Storage](loop-storage.md)
 - [Permissions](cpcn-loop-permission.md)
+- [UX examples for admin toggle states](loop-ux-examples.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)
 - [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
