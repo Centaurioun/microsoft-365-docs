@@ -36,13 +36,13 @@ No action is required by admins or users to set up Copilot Search. If a user has
 
 Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated **Search** module. This integration makes Copilot Search:
 
-- Comprehensive: A universal search experience that allows users to search across all their Microsoft 365 and third-party data sources to find what they need quickly
-- Fast: Delivers fast responses at scale across your organizational content
-- Relevant: Uses semantic understanding for highly contextual and precise results
-- Simple: Features an intuitive, modern user experience
-- Connected: Copilot answers and summaries link Search to Chat
-- Personalized: Tailored to individual users and tenants
-- Secure: Offers enterprise-grade security and privacy
+- **Comprehensive**: A universal search experience that allows users to search across all their Microsoft 365 and third-party data sources to find what they need quickly
+- **Fast**: Delivers fast responses at scale across your organizational content
+- **Relevant**: Uses semantic understanding for highly contextual and precise results
+- **Simple**: Features an intuitive, modern user experience
+- **Connected**: Copilot answers and summaries link Search to Chat
+- **Personalized**: Tailored to individual users and tenants
+- **Secure**: Offers enterprise-grade security and privacy
 
 This design positions search as the organizing layer for AI, while chat remains the workspace for task execution and deeper interactions. For example, if a user searches for **what's the status of the Q2 report**, Copilot Search may return a summarized answer and offer to continue the conversation in chat for more nuanced exploration or follow-up actions.
 
