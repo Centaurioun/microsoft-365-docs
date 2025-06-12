@@ -28,11 +28,11 @@ appliesto:
 
 ## Default configuration
 
-The screenshots below illustrate the typical user experience when [Loop admin settings](loop-admin-configuration.md) are left in their default Enabled state. These examples help IT administrators understand what users will see and be able to do when no custom restrictions are applied.
+The screenshots in this article illustrate the typical user experience when [Loop admin settings](loop-admin-configuration.md) are left in their default Enabled state. These examples help IT administrators understand what users see and can do when no custom restrictions are applied.
 
 ### Loop components in Teams and Outlook
 
-IT administrators should note that users can create and share Loop components directly within Teams and Outlook messages. When creating a new Loop component or when a Loop component link is pasted into a message, it renders as an interactive component, allowing recipients to collaborate in real time without leaving the message context.
+Users can create and share Loop components directly within Teams and Outlook messages. When creating a new Loop component or when a Loop component link is pasted into a message, it renders as an interactive component, allowing recipients to collaborate in real time without leaving the message context.
 
 :::image type="content" source="media/outlook-web-draft.png" alt-text="Screenshot showing an Outlook draft message containing an interactive Loop component":::
 Outlook draft message with Loop component
@@ -50,11 +50,11 @@ Loop app user experience for creating new components or new workspaces
 
 ## Expected user experience when Loop creation is disabled
 
-When admin controls are set to Disabled, users cannot create new Loop files or new SharePoint Embedded containers. Existing Loop files and workspaces remain accessible; users can still find, open, and edit them if they have the appropriate permissions. No existing data is deleted.
+When admin controls are set to Disabled, users can't create new Loop files or new SharePoint Embedded containers. Existing Loop files and workspaces remain accessible; users can still find, open, and edit them if they have the appropriate permissions. No existing data is deleted.
 
 Loop content and icons may still appear in Microsoft 365 apps, including Microsoft365.com and the Loop component viewer/editor (loop.cloud.microsoft). Previously created files remain visible and accessible, and shared links continue to work as permitted by file permissions.
 
-There are no additional licensing requirements for the Loop component viewer/editor beyond OneDrive access. Users can access Loop content via loop.cloud.microsoft or the All apps view in Microsoft365.com. To hide the Loop icon in the All apps view, disable OneDrive access for those users or use a conditional access policy to block access to loop.cloud.microsoft.
+There are no extra licensing requirements for the Loop component viewer/editor beyond OneDrive access. Users can access Loop content via loop.cloud.microsoft or the All apps view in Microsoft365.com. To hide the Loop icon in the All apps view, disable OneDrive access for those users or use a conditional access policy to block access to loop.cloud.microsoft.
 
 ## Loop workspace creation Disabled, Loop component creation Enabled
 
@@ -64,19 +64,19 @@ Refer to the above [Loop components in Teams and Outlook](#loop-components-in-te
 
 ### Loop components in the Loop app, Loop workspace creation Disabled
 
-In this scenario, the user has never had workspace creation enabled. As a result, they do not see any workspaces, including the "My workspace" personal workspace, and cannot create new workspaces. However, the Loop component editor/viewer remains available, allowing users to open and interact with Loop components that were created in other Microsoft 365 apps such as Teams or Outlook.
+In this scenario, workspace creation is not enabled for the user at any point. As a result, no workspaces appear, including the "My workspace" personal workspace, and users can't create new workspaces. The Loop component editor/viewer remains available, so users can open and interact with Loop components created in other Microsoft 365 apps such as Teams or Outlook.
 
 :::image type="content" source="media/loop-spv.png" alt-text="Screenshot showing the Loop component editor and viewer for a Loop component, with workspace creation turned off by the administrator":::
 Loop component editor/viewer enabling full screen interaction with a Loop component
 
-When users access the Loop app in this configuration and select the **Create** button, no creation options are presented. This is because the admin setting for workspace creation is disabled. IT administrators should be aware that users will not be able to create new workspaces or components from the Loop app under this policy.
+When users access the Loop app in this configuration and select the **Create** button, no creation options are presented. This is because the admin setting for workspace creation is disabled. Users can't create new workspaces or components from the Loop app under this policy.
 
 :::image type="content" source="media/loop-app-workspace-create-disabled.png" alt-text="Screenshot showing the Loop app Create menu clicked, with workspace creation turned off by the administrator":::
 Loop app Create menu clicked, with workspace creation turned off by the administrator
 
 ### Loop workspace experience when workspace creation is Disabled after initial Enablement
 
-In this scenario, workspace creation was initially enabled for the user, allowing them to create workspaces and content. After the administrator disabled workspace creation, the user lost the ability to create new workspaces or content. However, all previously created workspaces and files remain visible and accessible, subject to existing permissions. IT administrators should note that disabling workspace creation does not remove or restrict access to existing content; users retain access based on their current permissions for each workspace and file.
+In this scenario, workspace creation was initially enabled for the user, allowing them to create workspaces and content. After the administrator disabled workspace creation, the user lost the ability to create new workspaces or content. However, all previously created workspaces and files remain visible and accessible, subject to existing permissions. IT administrators should note that disabling workspace creation doesn't remove or restrict access to existing content; users retain access based on their current permissions for each workspace and file.
 
 :::image type="content" source="media/loop-app-workspace-create-disabled-withcontent.png" alt-text="Screenshot showing the Loop app Create menu clicked, with workspace creation turned off by the administrator, and previously created content visible":::
 Loop app Create menu clicked, showing previously created content, and workspace creation turned off by the administrator
