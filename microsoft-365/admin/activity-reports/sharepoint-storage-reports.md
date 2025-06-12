@@ -73,7 +73,7 @@ Review the total storage used by your tenant, total storage quota, and available
 Understand your tenant’s storage growth trend and use the estimated future storage usage based on past usage to make informed decisions on when to buy more storage or whether to clean up usage.
 
 > [!NOTE]
-> The usage trend chart includes fundamental sites (template ID: 10043) and may show a different value than the total usage bar. 
+> The historical trend represents usage across all sites and may slightly differ from the storage bar, which indicates tenant-level quota consumption.
 
 ### Featured resources
 
