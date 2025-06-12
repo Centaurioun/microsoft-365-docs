@@ -1,59 +1,61 @@
 ---
-title: Configure Tenant Copilot for Document Generation
+title: Configure Copilot Tuning for Document Generation
 author: jasonjoh
 ms.author: jasonjoh
 manager: calvind
 ms.audience: ITPro
-ms.reviewer: calvind
+ms.reviewer: jwolk
 ms.date: 06/04/2025
 ms.topic: how-to
 ms.localizationpriority: medium
-description: This article describes how to configure and deploy Tenant Copilot.
+description: This article describes how to build an AI model for document generation on organizational knowledge through Copilot Studio.
 ---
 
-# Configure Tenant Copilot for Document Generation
+# Configure Copilot Tuning for Document Generation
 
-Documents can be generated based on existing templates using Tenant Copilot. With this capability, changes to documents can be automated using a custom Copilot model tailored specifically for the document generation use-case.
+Initial drafts of new documents can be automatically generated using a custom model trained through the Copilot Tuning document generation task. Document generation models leverage a reference document and specified changes to create a draft of a new document.
 
-Document Copilot is particularly valuable when the legal tone, style, and formatting of existing template documents must be retained, while generating new versions based on those templates. Document generation is suitable for high-volume document creation use-cases across legal work (for example, contracts) compliance, procurement, and other scenarios where the precedence, or the final version of the document is based on standardized template documents. It is also applicable for any use-case where regular updates to documents are necessary based on change specifications or logs and template documents.
+A model created with the document generation task is particularly valuable when the tone, style, and formatting of existing reference documents must be retained, while generating drafts of new documents based on those reference documents. Document generation is suitable for document creation use-cases such as contracts, compliance, procurement, and other scenarios where a  draft of a document can be based on a reference document such as a sample document or a template document.. It is also applicable for any use case where regular updates to documents are necessary based on change specifications and the previous version of a document.
 
 Use-case fit:
 
+- HR
 - Legal
 - Compliance
 - Procurement
+- Documentation
 
 Specific examples include, but are not limited to:
 
 - Recurring contracts
-- Precedent based documentation creation
+- Sample-based documentation creation
 - Documents requiring regular updates to language or content based on change specifications
 
 ## Prerequisites
 
-- Must have permission granted in settings to use Copilot Studio.
-- Have precedent base template documents (text-based .pdf, .docx file formats) and final target documents that are stored in either SharePoint, or on a supported connector.
-- Have change logs or specifications stored on SharePoint or on a supported connector.
-- Must provide a structured version of required changes in the supplementary field within Tenant Copilot.
+- Must have permission granted in settings to use Copilot Tuning in Copilot Studio.
+- Have a collection of reference documents, ( and target documents that are stored in either SharePoint, or on a supported connector.
+- Have a collection of change logs or specifications stored on SharePoint or on a supported connector.
+- Must provide a structured version of required changes in the supplementary field within Copilot Tuning.
 
 > [!NOTE]
-> Document Generation supports working with the following file formats: .docx or text-based PDFs. Scanned images or unstructured content in PDFs isn't supported.
+> Document Generation supports working with the following file formats: .doc, .docx, .html, .md, or .pdf.. Currently Copilot Tuning only uses information found text so if there is critical information in images and/or tables in your documents Copilot Tuning document generation will not work well for your task.
 
-## How to configure Tenant Copilot for Document Generation
+## How to configure Copilot Tuning for Document Generation
 
-Document generation offers a solution to efficiently address high volume requests for document creation based on existing template contracts, or updating documents based on change specifications.
+Document generation offers a solution to efficiently address high volume requests for document creation based on existing reference documents or templates.
 
-This capability is suitable for scenarios where users need new versions of documents that require specific changes made to existing documents and precedent templates.
+This capability is suitable for scenarios where users need to draft new documents that require specific changes starting from an existing original reference document
 
-To start, obtain permissions to use the Tenant Copilot interface.
+To start, obtain permission to use the Copilot Tuning interface. [Placeholder: See XXX page about permissions.]
 
-To configure a custom Document Generation model using Model Maker:
+The following are the high-level steps to  configure a custom document generation model using Copilot Tuning:
 
-1. Prepare the training data (base template and final version of the document, along with any changelog or specifications)
+1. Prepare the a mapping.csv file training data (pairs of reference documents to drafts of new versions of documents, along with the applied specified changes)
 
-2. Connect to Data Sources (SharePoint)
+2. Customize your model for your task
 
-3. Use Model Maker to fine-tune the model
+3. Select security groups
 
 4. Train the Document Generation model
 
@@ -61,123 +63,67 @@ To configure a custom Document Generation model using Model Maker:
 
 6. Publish the model
 
-The training process begins with inputting "precedent documents" and resulting versions of these "target documents" into Tenant Copilot to train the model. Instructions give directions for the specific changes to be made from the precedent to the target documents. During training, Target Copilot learns how to apply these changes to generate target documents. Once trained, users can input future change instructions to generate new versions of documents.
+The training process begins with inputting original reference documents", specified changes to the original documents and final versions "draft documents" into Copilot Tuning to train the model. During training, Copilot Tuning learns how to apply these changes to generate draft documents.
 
-To configure the Document Generation model:
+To create a Document Generation model:
 
-Prepare the training data.
+## Prepare you mapping.csv file..
 
-1. Obtain permission to access the Copilot Studio Model Maker app to use the interface. This must be granted in the Settings page to unlock the app.
+Before using Copilot Studio Copilot Tuning, you need to ensure your data is in a knowledge source Copilot Tuning has access to (i.e. Sharepoint or another supported connector). In your knowledge sources, you should have at least 100 or more example pairs of reference documents, specified changes, and target draft documents. In this step, you will prepare a mapping.csv file that explicitly provides a couple dozen examples of reference documents to final draft documents. Copilot Tuning uses these examples to learn how to find more examples for training from your knowledge source without you having to manually curate them.
 
-2. Ensure training data is available in either SharePoint, or stored within a supported connector.
+1. Ensure training data is available in either ShaSharePoint orwithin a supported connector.
+2. Prepare a mapping.csv file and store it in the root directory of your knowledge source. mapping.csv should have two columns.
+    1. The first column of mapping.csv should be named "precedent" and should contain the path to the reference documents (see Note above about supported formats) to provide the paths in the data source to the original files.
 
-   a. Precedent base template documents (either .pdf or .docx file formats) to provide starting contexts.
+    1. The second column should be named "target" and should contain the path to the corresponding final draft of the new document.
 
-   b. Target final versions of the document (.docx or text-based .pdf file formats).
+After you have created a mapping.csv, proceed to customizing your model.
 
-   c. Change logs or specifications (either .pdf or .docx file formats).
+## Customize your model.
 
-With the training data prepared, proceed to modeling.
+1. Obtain permission to access the Copilot Studio Copilot Tuning. This must be granted in the Settings page to unlock the app [placeholder to link to MAC documentation]
+2. In Copilot Studio Copilot Studio, click the "Create new" button to start creating a new model.
+    1. Specify a name to give your model and provide a description of what the model does Ensure that the model name and description are user-friendly and clearly describe the purpose of the model. This will help users in your organization understand the model's purpose once it is published in a later step.
+    1. Choose your knowledge source by clicking "Add knowledge" to select the SharePoint instance or custom connector where training data resides. See Note [placeholder to note above] about supported file types and [placeholder] for more information about knowledge sources.
+    1. [Optional] In **Permissions** grant permissions for who can use the model by entering security groups or email addresses of the people in your organization that should be able to use this model. Copilot Tuning will ensure that any knowledge that is not accessible by these selected security groups will be automatically filtered out. [Placeholder: Link to page that describes how security works.] If you don't explicitly give permissions, the model will only be accessible to you.
+    1. Set the task type to **Document generation**.
+    1. Provide **Model Instructions** about your scenario. Instructions ensure Copilot Tuning is using the terminology your organization uses and evaluates your models output using the criteria one of your users would use to evaluate the document. It is important to accurately answer these questions because this information cues the system how to interpret the underlying data.
 
-Connect to data sources:
+Once you are finished providing model instructions, click "Prepare labeling data" to allow Copilot Tuning to prepare your data for training and learn how to find additional examples with which to train your model. Based on your dataset size this step may take up to 24 hours. When it is complete, you will receive an email letting you know that Copilot Tuning is ready for you to go to the next step in the model creation process. In the meanwhile, you can check the status of the model from the Copilot Tuning landing page.
 
-1. In Copilot Studio Model Maker interface, create a new model, as shown here:
+## Review Security Groups and Knowledge Selection after Copilot Tuning ACL Analysis.
 
-  :::image type="content" source="placeholder-media" border="false" alt-text="On the Model Maker page, select + Add and give the Model a Name.":::
+Copilot Tuning analyzes the document ACLs of the training corpus you selected and then filters out any knowledge that is not accessible to the security groups selected in the previous step. Please refer to the [placeholder link to ACL documentation page] for more information about ACL analysis and how to select appropriate security groups for your task.
 
-   a. Specify the name and provide a description.
+Based on your dataset size this step may take up to 24 hours. When it is complete, you will receive an email letting you know that Copilot Tuning is ready for you to go to the next step in the model creation process. In the meanwhile, you can check the status of the model from the Copilot Tuning landing page.
 
-   b. Set the task type to **Document Generation**.
+## Prepare Labeling Data during Automatic Data Preparation.
 
-   c. Provide **Model Instructions** about the use-case, tone, and style (specifying if this should be legal tone, organization specific constraints). Instructions allow for Copilot to learn the style and tone of your documents to ensure relevancy.
+Starting by learning from the example pairs you provided in mapping.csv, Copilot Tuning starts to learn how to select more samples to finetune with. This is an iterative process whereby at certain points Copilot Tuning may ask you to label data to ensure that the system is doing a good job of identifying more pairs to use to create your finetuned model. When you receive an email letting you know that data is ready for labeling, use the following steps to label the data.
 
-  :::image type="content" source="placeholder-media" border="false" alt-text="Screenshot showing Create New Model page with model instructions applied.":::
+1. Go to the Copilot Studio landing page. Click on a model that has a status indicating that the task has data ready for labeling to bring up the labeling form.
 
-2. Go to the Copilot Studio **Permissions** page and grant permissions for who can use the Model.
+1. The labeling form provides a few sample documents that Copilot Tuning thinks are high quality documents to use as example final draft documents. In this form, examine each document and label whether or not you think the document is a high quality final draft document that this system should use to tune your model.  Once you have determined which documents are good examples of final documents, submit the labeling form.
 
-3. In the **Data Sources** tab, select the SharePoint instance or custom connector where training data resides.
+At this point, you can return to the Copilot Tuning landing page and see the status of your model configuration. Your model configuration may ask you to label more data, may be further processing the data in your knowledge source, or may be ready to finetune the model.
 
-4. Ensure uploaded files are in .pdf or .docx file format.
+## Train and Evaluate the Document Generation model:
 
-   a. Supported file types are .pdf or .docx.
+10. Once sufficient data has been prepared by the system, you can proceed with training the model. At this point, finetuning of your model will begin in Azure AI Foundry.
 
-   b. Each document must include the necessary training data tab that consists of both the template used for the training, the resulting document or target versions of the document, and any change logs or specifications.
+12. O Once the model has been finetuned, Copilot Tuning will generates results that the user can review to evaluate if the model is of sufficient quality to deploy.
 
-Label the data:
-
-5. Select which documents from the uploaded files to use, and begin labeling.
-
-6. The AI will identify potential document pairs by first identifying unique identifiers and common document elements.
-
-   a. Providing training data helps Tenant Copilot learn the context of the documents and the style and tone used across the different versions.
-
-7. View the identified pairs in **View all candidates** section.
-
-  :::image type="content" source="placeholder-media" border="false" alt-text="Screenshot showing View all candidates section.":::
-
-8. Review the pairs provided by Copilot and determine if you approve or reject the doc pairs.
-
-   a. When approving doc pairs, verify the precedent document (left) and target document (right) match and approve accordingly.
-
-  :::image type="content" source="placeholder-media" border="false" alt-text="Screenshot showing document pairs and how to reject or approve them.":::
-
-   b. When rejecting a pair of documents as unrelated, adjust **View all candidates** section and approve more pairs for training data.
-
-9. Evaluate the **Document Generation** model.
-
-Train the Document Generation model:
-
-10. Once sufficient data pairs have been provided (minimum of 10 pairs), the **Train Model** button will light up, and proceed by clicking.
-
-11. Tenant Copilot will train the current model by analyzing changes made from the precedent base template documents, with any provided change logs in the supplementary field, to the target versions of the documents.
-
-12. Once training has been completed, click **View Trained Model**.
-
-13. Evaluate a sample of generated documents based on training supplied.
-
-14. Reject the generated sample results and if model training evaluation doesn't meet desired standards.
-
-15. Continue refining model based on sample evaluation results, by providing more document pairs or narrowing training scope.
+15. If the model does not meet your quality bar, you can go to the previous steps in the flow to add more data sources, adjusting the model instructions, or providing more samples in your mapping.csv.
 
 16. Re-train model until document generation results meet expectations.
 
-17. Evaluate the model and insure compliance with legal standards, style tones, tone context.
+17. Evaluate the model and ensure compliance with legal standards, style tones, tone context.
 
-Publish the model:
+## Publish the model:
 
-18. Make the model available in the tenant by publishing under the tenant-wide permissions.
+Once the model meets your quality standards, you can publish the model through the Copilot Tuning interface. Deploy model by selecting Publish Model button. Once the model is published it gets deployed to an isolated and secured catalog that is only accessible to the security groups that were selected during the previous steps.
 
-   a. **Publish Model** button will light up once training quality constraints are met.
-
-  :::image type="content" source="placeholder-media" border="false" alt-text="Screenshot showing Publish Model button.":::
-
-19. Deploy model by selecting Publish Model button.
-
-20. Once successful deployment has been made, go to the Permissions tab on the Model Maker page.
-
-21. Use the Share with users button to ensure that the trained model is applied within the tenant environment.
-
-   a. Instruct end users—you—on how to effectively use the model in future iterations to prevent training drift.
-
-  :::image type="content" source="placeholder-media" border="false" alt-text="Screenshot showing Share with users page.":::
-
-22. Develop a Copilot Agent based off the output model results.
-
-   a. End user only sees final output documents.
-
-   b. Copilot Agents can be deployed through Microsoft 365 application interfaces, like Teams.
-
-Further refinement and evaluation of specific data pairs can be done to narrow the context for the document generation model, providing better document specific results based on industry specific document generation use-cases. Evaluate the model regularly to ensure compliance with legal standards, style tones, tone context, and revise instructions accordingly.
-
-Tenant Copilot avoids hallucination by working from industry specific rules derived from training data. It can only apply legal specific context already learned from training and instructions given to train model. With regular re-training, document generation capabilities can be refined for specific document legal standards. Once trained, a Copilot agent feature can be built to effectively support document creation workflows for legal specific industries similar to other models created in [Copilot Studio](placeholder-url).
-
-For further learning about how fine-tuning models works, see [Fine tuning learnings](placeholder-md-file).
-
-## Clean up Resources
-
-No clean up resources is necessary, although certain connectors may present opportunities for cleaning up stored data. Ensure you follow your organization's data clean up policies to delete documents where model is trained from in certain scenarios.
-
-## Next Steps or Related Content
+## Related Content
 
 Once a model is configured for document generation, deploy an Agent to streamline document generation workflows.
 
@@ -185,7 +131,4 @@ For more information, see [How to deploy document generation Copilot capabilitie
 
 If the document generation model doesn't work, refine the model by re-training using further documents or narrow the focus of training scope.
 
-For more information, see [Refine Document Generation Models](placeholder-md-file).
-
-> [!IMPORTANT]
-> How To articles provide step-by-step instructions for completing a task. How To articles should be extremely task-focused and procedural. The outcome is job-based, so the steps lead the user to an outcom
+For more information, see [Toubleshooting: Doc Gen Models](placeholder-md-file).
