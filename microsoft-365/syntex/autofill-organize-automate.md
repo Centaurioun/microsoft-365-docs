@@ -46,7 +46,7 @@ To get suggested columns in your document library, follow these steps.
 
 1. From the chat panel, select one of the suggested actions. For this example, we selected **Create columns**.
 
-2. It takes a few moments for the suggested new columns to appear based on the content of your library. Suggested columns are highlighted and shown as **Suggested**.
+2. The system analyzes your library and suggests new columns, which appear highlighted and marked as **Suggested**. This might take a few moments.
 
    ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/autofill-librarian-suggested-columns-added.png)
 
@@ -81,6 +81,8 @@ To get suggested columns in your document library, follow these steps.
    ![Screenshot of the Save and apply your changes? confirmation screen.](../media/content-understanding/autofill-librarian-confirmation-screen.png)
 
 ## Planned capabilities coming soon
+
+We’re actively working on expanding this feature. Upcoming enhancements include:
 
 - Select rule automation support via chat​
 - Classification support
