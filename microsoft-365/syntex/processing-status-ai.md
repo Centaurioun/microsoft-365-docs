@@ -29,7 +29,7 @@ You can now view real-time updates on files processed for autofill columns and d
 You can view the processing status for a [file that is being processed](#monitor-the-status-of-a-file-being-processed), for a [selected file](#monitor-the-status-of-any-file) or for [all files](#monitor-the-status-of-all-files) in a document library.
 
 > [!NOTE]
-> For autofill and translation, the **Status** column is hidden by default in the document library view. If you don’t see it, you can unhide it by customizing the library view.
+> For autofill, the **Status** column is hidden by default in the document library view. If you don’t see it, you can unhide it by customizing the library view.
 
 ## Prerequisites
 
@@ -42,6 +42,8 @@ You can view the processing status for a [file that is being processed](#monitor
 When you submit an on-demand request for autofill or translation:
 
 1. A message bar appears at the top of the library, indicating the action is in progress.
+
+    ![Screenshot of the message bar showing that the action is in progress.](../media/content-understanding/processing-status-message-bar.png)
 
 2. Select **View activity feed** on the message bar to open the corresponding [activity panel](#view-the-activity-panel).
 
