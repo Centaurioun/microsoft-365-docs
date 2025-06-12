@@ -81,7 +81,7 @@ For the Commercial cloud Teams events use Azure CDN from Microsoft and Akamai CD
 For the **Commercial** cloud:
 
 - For Azure CDN from Microsoft, you can download the list from [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56519) - you'll need to look specifically for the service tag `AzureFrontdoor.Frontend` in the JSON; _addressPrefixes_ will show the IPv4/IPv6 subnets. Over time the IPs can change, but the service tag list is always updated before they're put in use.
-- For Akamai CDN, we use the following IP addresses:
+- For Akamai CDN, the following IP addresses are used (these are only used for Teams traffic):
    * 23.11.32.10/32
    * 23.11.33.10/32
    * 23.11.34.10/32
@@ -541,7 +541,7 @@ else {
 
 The script will automatically parse the appropriate Azure CDN list based on the **Instance** parameter value and keys off of **AzureFrontDoor.Frontend**, so there's no need to get that manually. The Akamai CDN information will be incorporated if you supplied the AkamaiCDN.txt file.
 
-Performing VPN offloading utilizing **both** the FQDNs and the IP addresses in the function helps scope the use of this offload to a limited set of endpoints including Teams Events. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly, that is, DNS resolution of the remaining namespaces remains unchanged. In the case of the Commercial cloud, not all IP addresses are provided; VPN offloading would need to rely on matching the namespaces defined earlier in this article.
+Performing VPN offloading utilizing **both** the FQDNs and the IP addresses in the function helps scope the use of this offload to a limited set of endpoints including Teams Events. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly, that is, DNS resolution of the remaining namespaces remains unchanged.
 
 
 ## 3. Configure routing on the VPN to enable direct egress
