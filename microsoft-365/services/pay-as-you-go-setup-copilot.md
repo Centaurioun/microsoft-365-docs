@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: siruvanti
-ms.date: 06/09/2025
+ms.date: 06/12/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -50,7 +50,7 @@ Before you begin, ensure the following:
 
 5. Read and accept the pay-as-you-go terms of service. Select **Next**.
 
-7. On the **Users** page, choose **All users** or a **Specific group** (search and add a single group). Select **Next**.
+7. On the **Users** page, choose **All users** or a **Specific group** (search and add a single group). Select **Next**. Note that when selecting the group, only the first thousand groups are shown alphabetically.
 
 8. On the **Review and finish** page, double-check all the details you’ve entered. If everything is correct, select **Create policy**.
 
