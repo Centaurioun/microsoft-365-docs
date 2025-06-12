@@ -32,23 +32,17 @@ Copilot Search is available to users with an eligible Microsoft 365 Copilot lice
 
 No action is required by admins or users to set up Copilot Search. If a user has an eligible Microsoft 365 Copilot license, Copilot Search appears as a tab in the Microsoft 365 Copilot app.
 
-Users without an assigned and eligible Microsoft 365 Copilot license will see the classic search experience in Microsoft 365, known as [Microsoft Search](/microsoftsearch/overview-microsoft-search).
-
-Copilot Search isn't included with [Microsoft 365 Copilot Chat](/copilot/overview). While both are part of the broader Microsoft Copilot ecosystem, Copilot Search requires a Microsoft 365 Copilot license, while Copilot Chat does not.
-
-## Differences between Copilot Search and Microsoft Search
-
-Microsoft 365 Copilot Search is designed as an AI-powered, enterprise-grade search assistant. It’s a universal work-search experience, helping you find the content you need in Microsoft 365 as well as third-party applications. It understands natural language, context, relationships, and user behavior to deliver personalized, relevant results. It goes beyond keyword matching to interpret user intent and provide AI-generated answers with references and options to follow up using Copilot Chat.
-
-[Microsoft Search](/microsoftsearch/overview-microsoft-search), by contrast, is a more traditional search experience. It relies on keyword-based queries and returns a list of links or documents. While it integrates with Microsoft 365, it lacks the conversational and contextual depth of Copilot Search.
-
 ## How Copilot Search works with Microsoft 365 Copilot
 
-Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated **Search** tab. This integration allows users to:
+Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated **Search** module. This integration makes Copilot Search:
 
-- Use natural language to find information across Microsoft 365 and connected third-party systems
-- Seamlessly transition from a search query to a Copilot-generated answer when intent detection anticipates a multiturn interaction
-- Expand a Copilot Search answer and continue the conversation in Copilot Chat, enabling a fluid handoff between search and chat experiences
+- Comprehensive: A universal search experience that allows users to search across all their Microsoft 365 and third-party data sources to find what they need quickly
+- Fast: Delivers fast responses at scale across your organizational content
+- Relevant: Uses semantic understanding for highly contextual and precise results
+- Simple: Features an intuitive, modern user experience
+- Connected: Copilot answers and summaries link Search to Chat
+- Personalized: Tailored to individual users and tenants
+- Secure: Offers enterprise-grade security and privacy
 
 This design positions search as the organizing layer for AI, while chat remains the workspace for task execution and deeper interactions. For example, if a user searches for **what's the status of the Q2 report**, Copilot Search may return a summarized answer and offer to continue the conversation in chat for more nuanced exploration or follow-up actions.
 
@@ -60,10 +54,10 @@ Copilot Search goes beyond keyword matching by using AI to interpret context, re
 
 ## Answer types
 
-Depending on the query, Copilot Search can provide concise, authoritative answers that are relevant to your organization. These answers are delivered directly in search results and deliver information about your organization's acronyms, bookmarks, and people.
+Copilot Search allows admins to curate answers that provide concise, authoritative results that are especially relevant to your organization. These answers are delivered directly in search results and convey information about your organization's acronyms, bookmarks, and people.
 
-- **Acronym answers:** Define terminology used in the workplace.
-- **Bookmark answers:** Promote key resources in your organization.
-- **People answers:** Surface coworkers' roles and show how they fit into the organization.
+- **Acronyms:** Define terminology used in the workplace.
+- **Bookmarks:** Promote key resources in your organization.
+- **People:** Surface coworkers' roles and show how they fit into the organization.
 
-For more information, see [how to curate bookmarks and acronyms for Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search-manage#bookmarks-and-acronyms).
+For more information, see [how to curate answers for Copilot Search](/microsoftsearch/setup-microsoft-search#step-2-create-answers).
