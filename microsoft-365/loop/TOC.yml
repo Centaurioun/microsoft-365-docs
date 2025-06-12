@@ -21,6 +21,8 @@ items:
       href: loop-compliance-summary.md
     - name: Admin policies
       href: loop-admin-configuration.md
+    - name: Example user experiences
+      href: loop-ux-examples.md
     - name: Storage
       href: loop-storage.md
     - name: Data integrations

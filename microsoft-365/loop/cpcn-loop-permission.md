@@ -94,4 +94,5 @@ Microsoft 365 group-owned Loop workspaces, which are [created within a Teams cha
 - [Loop, Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
 - [Loop Storage](cpcn-storage.md)
 - [Loop Admin toggles](loop-admin-configuration.md)
+- [UX examples for admin toggle states](loop-ux-examples.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)
