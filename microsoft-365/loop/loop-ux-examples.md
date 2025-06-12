@@ -30,7 +30,7 @@ This article provides example screenshots and descriptions for the most common M
 
 ## Default configuration
 
-The screenshots in this article illustrate the typical user experience when Loop admin settings are left in their default Enabled state. These examples help IT administrators understand what users see and can do when no custom restrictions are applied.
+The screenshots in this section illustrate the typical user experience when Loop admin settings are left in their default Enabled state. These examples help IT administrators understand what users see and can do when no custom restrictions are applied.
 
 ### Loop components in Teams and Outlook
 
@@ -50,9 +50,9 @@ Users can create and share Loop components directly within Teams and Outlook mes
 :::image type="content" source="media/loop-can-create-full.png" alt-text="Screenshot showing the Loop app user interface for creating new components or workspaces":::
 *Loop app user experience for creating new components or new workspaces*<br><br>
 
-## Expected user experience when Loop creation is disabled
+## Expected user experience when all Loop creations are Disabled
 
-When admin controls are set to Disabled, users can't create new Loop files or new SharePoint Embedded containers. Existing Loop files and workspaces remain accessible; users can still find, open, and edit them if they have the appropriate permissions. No existing data is deleted.
+When admin controls are all set to Disabled, users can't create new Loop files or new SharePoint Embedded containers. Existing Loop files and workspaces remain accessible; users can still find, open, and edit them if they have the appropriate permissions. No existing data is deleted.
 
 Loop content and icons may still appear in Microsoft 365 apps, including Microsoft365.com and the Loop component viewer/editor (loop.cloud.microsoft). Previously created files remain visible and accessible, and shared links continue to work as permitted by file permissions.
 
@@ -60,18 +60,20 @@ There are no extra licensing requirements for the Loop component viewer/editor b
 
 ## Loop workspace creation Disabled, Loop component creation Enabled
 
+When Loop admin settings are configured to permit the creation of Loop components but restrict the creation of Loop workspaces, users experience a limited set of features in the Loop app. Specifically, users can continue to create and collaborate on Loop components within Teams and Outlook, but they are unable to create new workspaces in the Loop app. This configuration helps IT administrators prevent workspace while still enabling collaborative component functionality across Microsoft 365 apps, and editing the components full screen in the Loop component viewer/editor experience.
+
 ### Loop components in Teams and Outlook, unchanged
 
 Refer to [Loop components in Teams and Outlook](#loop-components-in-teams-and-outlook) as the configuration and experience is the same in this example.
 
 ### Loop components in the Loop app, Loop workspace creation Disabled
 
-In this scenario, workspace creation is not enabled for the user at any point. As a result, no workspaces appear, including the "My workspace" personal workspace, and users can't create new workspaces. The Loop component editor/viewer remains available, so users can open and interact with Loop components created in other Microsoft 365 apps such as Teams or Outlook.
+In this scenario, workspace creation is not enabled for the user at any point. As a result, no workspaces appear, including the "My workspace" personal workspace, and users can't create new workspaces. The Loop component viewer/editor remains available, so users can open and interact with Loop components created in other Microsoft 365 apps such as Teams or Outlook.
 
 :::image type="content" source="media/loop-component-editor.png" alt-text="Screenshot showing the Loop component editor and viewer for a Loop component, with workspace creation turned off by the administrator":::
-*Loop component editor/viewer enabling full screen interaction with a Loop component*<br><br>
+*Loop component viewer/editor enabling full screen interaction with a Loop component*<br><br>
 
-When users access the Loop app in this configuration and select the **Create** button, no creation options are presented. This is because the admin setting for workspace creation is disabled. Users can't create new workspaces or components from the Loop app under this policy.
+When users access the Loop app in this configuration and select the **Create** button, no creation options are presented. This is because the admin setting for workspace creation is disabled. Users can't create new workspaces from the Loop app under this policy configuration.
 
 :::image type="content" source="media/loop-app-workspace-create-disabled.png" alt-text="Screenshot showing the Loop app Create menu clicked, with workspace creation turned off by the administrator":::
 *Loop app Create menu clicked, with workspace creation turned off by the administrator*<br><br>
