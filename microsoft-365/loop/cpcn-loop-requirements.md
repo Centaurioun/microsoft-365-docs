@@ -26,9 +26,9 @@ description: "Manage Copilot Pages, Copilot Notebooks, and Loop in your organiza
 
 # Requirements for Copilot Pages, Copilot Notebooks, Loop components, and Loop workspaces
 
-Copilot Pages and Copilot Notebooks and their integrations create `.loop` files, stored in user-owned SharePoint Embedded containers. Learn more about [storage and lifecycle](/microsoft-365/loop/cpcn-storage), which is quota combined with SharePoint in your tenant. IT admins can [manage creation of Copilot Pages and Copilot Notebooks](/microsoft-365/loop/cpcn-admin-configuration) using Cloud Policy.
+Copilot Pages and Copilot Notebooks and their integrations create `.loop` files, stored in user-owned SharePoint Embedded containers. Learn more about [storage and lifecycle](cpcn-storage.md), which is quota combined with SharePoint in your tenant. IT admins can [manage creation of Copilot Pages and Copilot Notebooks](cpcn-admin-configuration.md) using Cloud Policy.
 
-Loop components and integrations create `.loop` files (earlier releases of Loop created `.fluid` files), stored in OneDrive, SharePoint, or SharePoint Embedded. Learn more about [storage](/microsoft-365/loop/loop-storage), which is quota combined with SharePoint in your tenant. IT admins can manage creation of Loop components and Loop workspaces by following instructions in this [admin configuration](/microsoft-365/loop/loop-admin-configuration) article.
+Loop components and integrations create `.loop` files (earlier releases of Loop created `.fluid` files), stored in OneDrive, SharePoint, or SharePoint Embedded. Learn more about [storage](loop-storage.md), which is quota combined with SharePoint in your tenant. IT admins can manage creation of Loop components and Loop workspaces by following instructions in this [admin configuration](loop-admin-configuration.md) article.
 
 ## URLs and IP address ranges
 
@@ -58,16 +58,17 @@ To utilize all features, including at mentions and Loop workspace sharing, it's 
 
 ## Related topics
 
-- [Copilot Pages and Notebooks, Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
-- [Copilot Pages and Notebooks Storage](/microsoft-365/loop/cpcn-storage)
-- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
-- [Copilot Pages and Notebooks Admin toggles](/microsoft-365/loop/cpcn-admin-configuration)
-- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
-- [Loop Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/cpcn-compliance-summary)
-- [Loop Storage](/microsoft-365/loop/cpcn-storage)
-- [Loop Admin toggles](/microsoft-365/loop/loop-admin-configuration)
+- [Copilot Pages and Notebooks, Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
+- [Copilot Pages and Notebooks Storage](cpcn-storage.md)
+- [Permissions](cpcn-loop-permission.md)
+- [Copilot Pages and Notebooks Admin toggles](cpcn-admin-configuration.md)
+- [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Loop Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
+- [Loop Storage](cpcn-storage.md)
+- [Loop Admin toggles](loop-admin-configuration.md)
+- [UX examples for admin toggle states](loop-ux-examples.md)
 - [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/loop-access-via-microsoft-365-subscriptions-92915461-4b14-49a4-9cd4-d1c259292afa)
-- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
+- [Overview of Loop components in Microsoft 365](loop-components-teams.md)
 - [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
 - [Use Loop components in OneNote](https://support.microsoft.com/office/use-loop-components-in-onenote-ed8a43d9-f6fd-4ad6-bc9d-8841db4da459)
 - [Loop components in Whiteboard](https://support.microsoft.com/office/loop-components-in-whiteboard-c5f08f54-995e-473e-be6e-7f92555da347)

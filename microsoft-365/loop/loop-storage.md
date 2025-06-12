@@ -29,7 +29,7 @@ appliesto:
 ## Storage
 
 > [!NOTE]
-> The Copilot Pages and Copilot Notebooks content has moved to a [dedicated article](/microsoft-365/loop/cpcn-storage).
+> The Copilot Pages and Copilot Notebooks content has moved to a [dedicated article](cpcn-storage.md).
 
 Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta), allowing familiar management within existing file management workflows. Where the content was originally created determines its storage location:
 
@@ -67,7 +67,7 @@ Loop workspaces have a maximum size of 25 TB. This limit can't be increased or d
 
 ### Types of Loop workspaces
 
-There's one personal workspace per user in your organization, created on demand by the person when accessed. All other created Loop workspaces are shared. For more information, see [workspace membership and Microsoft 365 groups](/microsoft-365/loop/cpcn-loop-permission#workspace-membership-and-microsoft-365-groups) on the two shared workspace types.
+Storage behaviors after user departure depends on the type of Loop workspace. There's one **personal workspace** per user in your organization, created on demand by the person when accessed. All other created Loop workspaces are **shared workspaces**. For more information, see [workspace membership and Microsoft 365 groups](cpcn-loop-permission.md#workspace-membership-and-microsoft-365-groups) on the two shared workspace types.
 
 ### Shared Workspaces
 
@@ -107,9 +107,10 @@ See [Storage](#storage). When content is stored in OneDrive, if that user leaves
 
 ## Related topics
 
-- [Summary of Compliance, Lifecycle, Governance](/microsoft-365/loop/loop-compliance-summary)
-- [Requirements](/microsoft-365/loop/cpcn-loop-requirements)
-- [Permissions](/microsoft-365/loop/cpcn-loop-permission)
-- [Admin toggles](/microsoft-365/loop/loop-admin-configuration)
-- [Managing SharePoint Embedded containers](/microsoft-365/loop/cpcn-loop-spe-management)
-- [Overview of Loop components in Microsoft 365](/microsoft-365/loop/loop-components-teams)
+- [Summary of Compliance, Lifecycle, Governance](loop-compliance-summary.md)
+- [Requirements](cpcn-loop-requirements.md)
+- [Permissions](cpcn-loop-permission.md)
+- [Admin toggles](loop-admin-configuration.md)
+- [UX examples for admin toggle states](loop-ux-examples.md)
+- [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Overview of Loop components in Microsoft 365](loop-components-teams.md)
