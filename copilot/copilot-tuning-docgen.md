@@ -15,17 +15,17 @@ description: This article describes how to use Copilot Tuning to build an AI mod
 
 <!-- cSpell:ignore calvind jwolk -->
 
-Initial drafts of new documents can be generated using a custom model trained for document generation through with Copilot Tuning. Document generation models use a reference document and specified changes to create a draft of a new document.
+Initial drafts of new documents can be generated using a custom document generation model trained with Copilot Tuning. Copilot Tuning document generation models use a reference document and specified changes to create a draft of a new document. It is particularly useful when the drafting process follows recognizable patterns and requires incorporating consistent modifications across similar types of documents. This approach streamlines the creation of first drafts, reducing manual editing time and promoting consistency across your documents.
 
-A model tuned for document generation is valuable when the tone, style, and formatting of existing documents must be used when generating drafts of new documents. Document generation is suitable for generating draft documents that can be based on a reference document, such as a sample document or template. It's also applicable for any use case where regular updates to documents are necessary based on change specifications and the previous version of a document.
+A model tuned for document generation is valuable when the tone, style, and formatting of existing documents must be used when generating drafts of new documents. Document generation is suitable for generating draft documents that can be based on a reference document, such as a sample document, a previous work product, or template. It's also applicable for any use case where regular updates to documents are necessary based on change specifications and the previous version of a document.
 
 Some example use-cases include:
 
-- Human resources - ???
-- Legal - for creating recurring contracts
-- Compliance - ???
-- Procurement - for creating purchase orders
-- Documentation - for generating documentation for new products or features based on documentation for existing products
+- HR – Generate job listings that match your organization’s tone and structure.
+- Legal – Draft recurring contracts quickly and consistently.
+- Compliance – Create forms tailored to new clients, deals, or jurisdictions.
+- Procurement – Produce standardized purchase orders.
+- Documentation – Build new product or feature docs based on existing templates.
 
 ## Prerequisites
 
@@ -33,9 +33,10 @@ Some example use-cases include:
 - A collection of reference documents and target documents that are stored in SharePoint or a supported Copilot connector.
 - A collection of change logs or specifications stored in SharePoint or a supported Copilot connector.
 - A structured version of required changes to provide in the supplementary field within Copilot Tuning.
+- A minimum of 20 well-aligned pairs of reference documents to target pairs that reflect a representative range of changes you expect the system to handle.
 
 > [!IMPORTANT]
-> Document generation supports working with the following file formats: .doc, .docx, .html, .md, or .pdf. Copilot Tuning only uses information found in text. Copilot Tuning document generation doesn't use information in images or tables in your documents.
+> Document generation supports working with the following file formats: .doc, .docx, .html, .md, or .pdf. Copilot Tuning only uses information found in text. Copilot Tuning document generation doesn't use information in images, tables, or unstructured web content in your documents.
 
 ## Create a document generation model
 
@@ -51,7 +52,7 @@ The following are the high-level steps to configure a custom document generation
 
 ### Prepare a mapping file
 
-Your knowledge source should have at least 100 example pairs of reference documents, specified changes, and target draft documents. In this step, you prepare a CSV file that provides a couple dozen examples of reference documents to final draft documents. Copilot Tuning uses these examples to learn how to find more examples for training from your knowledge source without you having to manually curate them.
+Your knowledge source should have at least 20 example pairs of reference documents and target draft documents. In this step, you prepare a CSV file that provides at least 20 examples of reference documents to final draft documents. Copilot Tuning uses these examples to fine-tune the generation logic, helping the model learn how your organization typically edits or adapts documents.
 
 Create a file named **mapping.csv** and store it in the root directory of your knowledge source. This file should have two columns.
 
@@ -68,13 +69,13 @@ precedent,target
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com) in your browser. In the left-hand navigation bar, select the ellipses (**...**), and then select **Copilot Tuning**.
 1. Select **Create new**.
 1. Enter a name for your model and provide a description of what the model does. Ensure that the model name and description are user-friendly and clearly describe the purpose of the model.
-1. Select **Add knowledge** to select the SharePoint instance or custom connector that contains your training data. For more information about knowledge sources, see [placeholder](#).
+1. Select **Add knowledge** to select the SharePoint instance that contains your training data. For more information about knowledge sources, see [placeholder](#).
 1. Under **Permissions** you can enter security groups or email addresses of the individuals who should be able to use this model. Copilot Tuning ensures that any knowledge that isn't accessible by these selected security groups is filtered out. [Placeholder: Link to page that describes how security works.](#) If you don't explicitly give permissions, the model is only accessible to you.
 1. Set the task type to **Document generation**.
 1. Provide **Model Instructions** about your scenario. Instructions ensure Copilot Tuning is using the terminology your organization uses and evaluates your models output using the criteria one of your users would use to evaluate the document. It's important to accurately answer these questions because this information cues the system how to interpret the underlying data.
 1. Select **Prepare labeling data**.
 
-Copilot Tuning begins preparing your data for training and learning how to find more examples with which to train your model. Based on the size of your dataset, this step might take up to 24 hours. Copilot Tuning sends you an email when it's ready for you to go to the next step in the model creation process. In the meanwhile, you can check the status of the model from the Copilot Tuning landing page.
+Copilot Tuning begins analyzing the ACLs of the training documents. Based on the size of your dataset, this step might take up to 24 hours. Copilot Tuning sends you an email when it's ready for you to go to the next step in the model creation process. In the meanwhile, you can check the status of the model from the Copilot Tuning landing page.
 
 ### Review Copilot Tuning ACL analysis
 
@@ -84,7 +85,7 @@ Based on the size of your dataset, this step might take up to 24 hours. Copilot 
 
 ### Prepare labeling data
 
-Copilot Tuning learns how to select pairs of reference documents to final documents in your training data by analyzing example pairs in the mapping file. This learning phase is an iterative process. At certain points, Copilot Tuning might ask you to label data to ensure that it's correctly identifying pairs to use to create your fine-tuned model. When you receive an email letting you know that data is ready for labeling, use the following steps to label the data.
+Preparing high-quality datasets for fine-tuning can be time-consuming and often requires multiple iterations and input from data scientists. Copilot Tuning simplifies this by automatically identifying which of your provided input-target pairs are most effective for fine-tuning. This learning process is iterative, and at times, Copilot Tuning may prompt you to label data to improve its understanding of what constitutes a high-quality target. When you receive an email indicating that data is ready for labeling, follow the steps below to complete the process.
 
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com) in your browser. In the left-hand navigation bar, select the ellipses (**...**), and then select **Copilot Tuning**.
 1. Select the model that is ready for labeling to open the labeling form.
