@@ -147,8 +147,8 @@ items:
       items:
         - name: Overview
           href: copilot-tuning-overview.md
-        - name: Concepts
-          href: copilot-tuning-concepts.md
+        - name: Tuning process
+          href: copilot-tuning-process.md
         - name: FAQ
           href: copilot-tuning-faq.yml
         - name: Admin guide

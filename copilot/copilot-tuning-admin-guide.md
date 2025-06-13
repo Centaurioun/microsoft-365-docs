@@ -37,7 +37,28 @@ To manage Copilot Tuning governance controls, make sure that you meet the follow
     - Global Administrator
     - AI Administrator (if defined as a custom role in your organization)
 - Copilot extensibility is enabled via **Copilot settings** in the admin center. For more information, see [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps#enable-or-disable-copilot-extensibility).
-- Power Platform [TBD]
+- If you block new Power Platform connectors by default via Data Loss Prevention (DLP) policies, run one of the following command to reclassify the connector.
+
+    ```powershell
+    $connectorsToReclassify = @([pscustomobject]@{ 
+     id = "/providers/Microsoft.PowerApps/apis/shared_tenantcopilot" 
+     name = "Tenant Copilot" 
+     type = "providers/Microsoft.PowerApps/apis" 
+    }) 
+    Add-ConnectorsToPolicy -PolicyName {TENANT_DLP_POLICY_GUID} -Connectors $connectorsToReclassify -Classification {'Confidential'}
+    ```
+
+    ```powershell
+    $connectorsToReclassify = @([pscustomobject]@{ 
+     id = "/providers/Microsoft.PowerApps/apis/shared_tenantcopilot" 
+     name = "Tenant Copilot" 
+     type = "providers/Microsoft.PowerApps/apis" 
+    }) 
+    Add-ConnectorsToPolicy -PolicyName {TENANT_DLP_POLICY_GUID} -Connectors $connectorsToReclassify -Classification {'General'} 
+    ```
+
+    For more information, see [Add-ConnectorsToPolicy](/powershell/module/microsoft.powerapps.administration.powershell/add-connectorstopolicy?view=pa-ps-latest).
+
 
 ## What is Copilot Tuning?
 
