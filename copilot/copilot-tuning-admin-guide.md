@@ -57,7 +57,7 @@ To manage Copilot Tuning governance controls, make sure that you meet the follow
     Add-ConnectorsToPolicy -PolicyName {TENANT_DLP_POLICY_GUID} -Connectors $connectorsToReclassify -Classification {'General'} 
     ```
 
-    For more information, see [Add-ConnectorsToPolicy](/powershell/module/microsoft.powerapps.administration.powershell/add-connectorstopolicy?view=pa-ps-latest).
+    For more information, see [Add-ConnectorsToPolicy](/powershell/module/microsoft.powerapps.administration.powershell/add-connectorstopolicy).
 
 
 ## What is Copilot Tuning?
