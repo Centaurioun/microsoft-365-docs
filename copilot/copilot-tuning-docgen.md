@@ -91,17 +91,23 @@ Preparing high-quality datasets for fine-tuning can be time-consuming and often 
 1. Select the model that is ready for labeling to open the labeling form.
 1. The labeling form provides sample documents that Copilot Tuning identified as example final draft documents. Examine each document and label whether or not you think the document is a good example draft document. Once you label all of the documents, submit the labeling form.
 
-Copilot Tuning continues prepare the training data based on your input. Based on the size of your dataset, this step might take up to 24 hours. You can return to the Copilot Tuning landing page and see the status of your model configuration. Your model configuration might ask you to label more data, might be processing the data in your knowledge source, or it might be ready to fine-tune the model. Copilot Tuning sends you an email when it's ready for you to go to the next step in the model creation process.
+Copilot Tuning continues preparing the training data based on your input. Based on the size of your dataset, this step might take up to 24 hours. You can return to the Copilot Tuning landing page and see the status of your model configuration. Your model configuration might ask you to label more data, might be processing the data in your knowledge source, or it might be ready to fine-tune the model. Copilot Tuning sends you an email when it's ready for you to go to the next step in the model creation process.
 
 ### Train and evaluate results
 
 Once sufficient data is prepared by Copilot Tuning, you can proceed with training the model. Fine-tuning of your model begins in Azure AI Foundry. After the model is fine-tuned, Copilot Tuning generates results that you can review to evaluate if the model is of sufficient quality to deploy.
 
+1. Open [Copilot Studio](https://copilotstudio.microsoft.com) in your browser. In the left-hand navigation bar, select the ellipses (**...**), and then select **Copilot Tuning**.
+1. Select the model that is ready for training to open the model configuration dialog form.
+1. Click "Start model training" to begin finetuning of your custom model.
+
+Based on the size of your dataset, the finetuning step might take up to 24 hours. You can return to the Copilot Tuning landing page and see the status of your model.
+
 If the results don't meet your expectations, you can go to the previous steps in the flow to add more data sources, adjust the model instructions, or provide more samples in your mapping file. Retrain the model until document generation results meet expectations.
 
 ### Publish the model
 
-Once the model generates results that meet your quality standards, you can publish the model through the Copilot Tuning interface. Publish the model by selecting the **Publish model** button. The model is deployed to an isolated and secured catalog that is only accessible to the security groups or users that were selected during the model customization.
+Once the model generates results that meet your quality standards, you can publish the model through the Copilot Tuning interface. Publish the model by selecting the **Publish model** button. The model is deployed to an isolated and secured environment and is only accessible to the security groups or users that were selected during the model customization.
 
 ## Related content
 
