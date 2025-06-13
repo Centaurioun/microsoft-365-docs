@@ -231,7 +231,7 @@ Here's a quick overview of the information in each column.
 
 In the Message center, you can select a message to see details.
 
-If a Message Center post is not relevant for your organization, please provide us with feedback. After you click thumbs up/down on the MC post, select **This change isn't relevant to my org**.
+If a Message Center post is not relevant for your organization, please provide us with feedback. Select thumbs up or thumbs down on the MC post and select **This change isn't relevant to my org**.
 
 > [!NOTE]
 > If you're using Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
