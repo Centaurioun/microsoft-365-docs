@@ -42,6 +42,9 @@ You can use the Microsoft Entra deployment advisors for a guided setup and confi
 - [AD FS deployment advisor](https://aka.ms/adfsguidance)
 - [Microsoft Entra setup guide](https://aka.ms/aadpguidance)
   
+> [!NOTE]
+> Microsoft 365 Local – run productivity and collaboration solutions on Azure Local through a specific reference architecture validated by Microsoft and supported by a network of partners. [Learn more](https://aka.ms/MSFTSovereignCloudBlog).
+
 <a name='azure-ad-editions-and-microsoft-365-identity-management'></a>
 
 ## Microsoft Entra editions and Microsoft 365 identity management
