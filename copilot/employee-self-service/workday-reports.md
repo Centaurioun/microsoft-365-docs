@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-ms.custom: ess-copilot
+ms.custom: ess-agent
 description: "Learn how to create the reports for your Workday integration with the Employee Self-Service agent."
 ---
 
