@@ -2,7 +2,7 @@
 ---
 title: "Troubleshoot Tenant Guardrails FAQ"
 ms.topic: troubleshooting-general
-description: Troubleshooting guide for Tenant Guardrail FAQ issues, including false positives, negatives, duplicate alerts, and overall system response issues.
+description: Troubleshooting guide for Tenant Guardrail FAQ issues.
 ---
 
 
