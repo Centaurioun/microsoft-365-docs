@@ -21,19 +21,34 @@ description: Watch videos to learn about some of the different features in Micro
 
 # Microsoft 365 Backup video library
 
-|Overview of Microsoft Syntex  |Overview of model types  |
+
+|Set up Microsoft 365 Backup  |Manage billing in Azure  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-syntex-overview.png" alt-text="Thumbnail image of Syntex overview video.":::](https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2)<br>[Learn more about Syntex](syntex-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2)<br>[Learn more about Syntex models](model-types-overview.md)          |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://learn-video.azurefd.net/vod/player?id=d4f5a898-3d35-42aa-ae3f-6639b59943f9)<br>[Learn more about content centers](create-a-content-center.md)     |[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956)<br>[Learn more about Syntex models](model-types-overview.md)          |
 
-
-|Unstructured models  |Freeform and structured models  |
+|Manage backup policies  |Manage backup with dynamic rules  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://learn-video.azurefd.net/vod/player?id=0362ab91-3b79-47f4-9930-9a706d55b97d)<br>[Learn more about unstructured models](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://learn-video.azurefd.net/vod/player?id=43234179-fd0c-47c0-96a9-0fd6bc76163b)<br>[Learn about freeform and structured models](form-processing-overview.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-syntex-overview.png" alt-text="Thumbnail image of Syntex overview video.":::](https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2)<br>[Learn more about Syntex](syntex-overview.md)    ||[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://learn-video.azurefd.net/vod/player?id=7604db2b-5099-4b87-b94d-d36436b3ac18)<br>[Learn more about unstructured models](document-understanding-overview.md)           |
 
 
-|Create a content center  |Apply a model to a document library  |
+|Restore backup data  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://learn-video.azurefd.net/vod/player?id=b5dd658f-4416-4e80-9e56-a9c57902945d)<br>[Learn more about content centers](create-a-content-center.md)     |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-a-model.png" alt-text="Thumbnail image of apply a model video.":::](https://learn-video.azurefd.net/vod/player?id=60288944-7a6c-4331-a1ae-4b05113f4dd0)<br>[Learn more about applying a model](apply-a-model.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://learn-video.azurefd.net/vod/player?id=c9a4ced2-7ce3-4bc9-b42f-876b05497e1b)<br>[Learn about freeform and structured models](form-processing-overview.md)    |
+
+
+---------------------------------------
+
+
+|Restore backup data  |Restore backup data  |
+|---------|---------|
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://learn-video.azurefd.net/vod/player?id=c9a4ced2-7ce3-4bc9-b42f-876b05497e1b)<br>[Learn about freeform and structured models](form-processing-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://learn-video.azurefd.net/vod/player?id=c9a4ced2-7ce3-4bc9-b42f-876b05497e1b)<br>[Learn about freeform and structured models](form-processing-overview.md)         |
+
+
+
+
+|Set up pay-as-you-go and Microsoft 365 Backup  |Apply a model to a document library  |
+|---------|---------|
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://learn-video.azurefd.net/vod/player?id=d4f5a898-3d35-42aa-ae3f-6639b59943f9)<br>[Learn more about content centers](create-a-content-center.md)     |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-a-model.png" alt-text="Thumbnail image of apply a model video.":::](https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956)<br>[Learn more about applying a model](apply-a-model.md)         |
 
 |Create and train a classifier  |Import a training set  |
 |---------|---------|
