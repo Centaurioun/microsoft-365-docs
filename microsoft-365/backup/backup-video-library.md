@@ -23,7 +23,7 @@ description: Watch videos to learn about some of the different features in Micro
 
 |Overview of Microsoft Syntex  |Overview of model types  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-syntex-overview.png" alt-text="Thumbnail image of Syntex overview video.":::](https://learn-video.azurefd.net/vod/player?id=2d175508-cfa8-4258-b595-3af948bb7559)<br>[Learn more about Syntex](syntex-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://learn-video.azurefd.net/vod/player?id=2fdd05b9-cf37-40a8-b3e5-9cb9949a1a62)<br>[Learn more about Syntex models](model-types-overview.md)          |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-syntex-overview.png" alt-text="Thumbnail image of Syntex overview video.":::](https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2)<br>[Learn more about Syntex](syntex-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2)<br>[Learn more about Syntex models](model-types-overview.md)          |
 
 
 |Unstructured models  |Freeform and structured models  |
