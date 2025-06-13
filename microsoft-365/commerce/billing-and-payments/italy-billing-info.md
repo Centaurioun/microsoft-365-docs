@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, ramagane
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-365-business
 ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.custom:
 - commerce_billing
 - admindeeplinkMAC
 monikerRange: 'o365-worldwide'
-ms.date: 03/27/2024
+ms.date: 03/30/2025
 ---
 
 # Billing information for Microsoft 365 for business in Italy

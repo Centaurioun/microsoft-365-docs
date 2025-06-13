@@ -4,8 +4,8 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.date: 03/29/2024
+ms.topic: how-to
+ms.date: 04/21/2025
 description: Purchase apps in-volume for Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high

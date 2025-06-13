@@ -83,6 +83,9 @@ conceptualContent:
             - url: /office/troubleshoot
               itemType: reference
               text: Troubleshooting and support
+            - url: /microsoft-365/services/
+              itemType: overview
+              text: Microsoft 365 pay-as-you-go services
         # Card
         - title: Products
           links:
@@ -107,6 +110,9 @@ conceptualContent:
             - url: /office365/planner
               itemType: overview
               text: Planner
+            - url: /microsoft-365/places
+              itemType: overview
+              text: Microsoft Places
         # Card
         - title: Microsoft 365 Apps and Office
           links:

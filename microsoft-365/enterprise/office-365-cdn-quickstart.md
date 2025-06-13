@@ -3,7 +3,7 @@ title: "Office 365 Content Delivery Network (CDN) Quickstart"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/19/2025
+ms.date: 02/28/2025
 audience: ITPro
 ms.topic: quickstart
 ms.service: microsoft-365-enterprise

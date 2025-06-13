@@ -4,7 +4,7 @@ f1.keywords: CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, ramagame
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -23,7 +23,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to assign yourself or others the billing account roles needed to buy and edit products in the Microsoft 365 admin center."
-ms.date: 10/10/2024
+ms.date: 04/30/2025
 ---
 
 # No billing account found for buying products

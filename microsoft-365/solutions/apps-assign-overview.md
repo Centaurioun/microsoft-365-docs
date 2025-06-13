@@ -4,8 +4,8 @@ ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.date: 09/12/2024
+ms.topic: install-set-up-deploy
+ms.date: 04/21/2025
 description: Assign and deploy apps using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high

@@ -7,7 +7,7 @@ author: kwekuako
 manager: scotv
 ms.date: 10/02/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -60,6 +60,5 @@ For answers to billing questions, see:
 ## Related content
 
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)\
-[Add a new employee](../add-users/add-new-employee.md) (video)\
 [Remove a former employee](../add-users/remove-former-employee.md) (video)\
 [Access and back up a former user's data](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (article)

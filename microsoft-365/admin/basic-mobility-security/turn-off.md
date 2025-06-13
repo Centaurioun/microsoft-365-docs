@@ -6,7 +6,7 @@ author: kwekuako
 manager: scotv
 ms.date: 11/11/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
@@ -37,7 +37,7 @@ These options remove Basic Mobility and Security enforcement for devices in your
 
 ## Remove user security groups from Basic Mobility and Security device policies
 
-1. In your browser type: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
+1. In your browser type: [https://purview.microsoft.com/basicmobilityandsecurity](https://purview.microsoft.com/basicmobilityandsecurity).
 
 2. Select a device policy, and select **Edit policy**.
 
@@ -49,7 +49,7 @@ These options remove Basic Mobility and Security enforcement for devices in your
 
 ## Remove Basic Mobility and Security device policies
 
-1. In your browser type: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
+1. In your browser type: [https://purview.microsoft.com/basicmobilityandsecurity](https://purview.microsoft.com/basicmobilityandsecurity).
 
 2. Select a device policy, and then select **Delete policy**.
 

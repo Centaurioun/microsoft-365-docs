@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 11/08/2022
+ms.date: 04/28/2025
 audience: Admin
-ms.topic: article
+ms.topic: integration
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -23,6 +23,9 @@ description: "Scoped Certified application installation and configuration guide 
 ---
 
 # Configure authentication for Microsoft 365 support integration with ServiceNow
+
+> [!IMPORTANT]
+> Microsoft 365 support integration with ServiceNow is retired, and the service will be completely shut down on May 30, 2025. If you installed the integration, take necessary steps to remove it before May 30, 2025.
 
 ## Prerequisites
 

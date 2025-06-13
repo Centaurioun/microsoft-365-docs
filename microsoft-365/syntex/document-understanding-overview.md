@@ -1,10 +1,10 @@
 ---
-title: Overview of unstructured document processing in Microsoft Syntex
+title: Overview of unstructured document processing in SharePoint
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/22/2025
+ms.date: 03/01/2025
 audience: admin
 ms.topic: concept-article
 ms.custom: intro-overview
@@ -15,16 +15,16 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about the unstructured document processing model in Microsoft Syntex.
+description: Learn about the unstructured document processing model in SharePoint.
 ---
 
-# Overview of unstructured document processing in Microsoft Syntex
+# Overview of unstructured document processing in SharePoint
 
 > [!NOTE]
-> Beginning in March 2025, the pricing for unstructured document processing will be lowered from $0.05 per page to $0.005 per page.
+> As of March 1, 2025, the price for unstructured document processing is lowered from $0.05 per page to $0.005 per page.
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of unstructured document processing and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of unstructured document processing and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 <!---</br>
 
@@ -39,12 +39,12 @@ Use the unstructured document processing model ([teaching method](create-syntex-
 
 ## Introduction to unstructured models
 
-The unstructured document processing model (formerly known as *document understanding model*) uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
+Unstructured document processing models use artificial intelligence (AI) to analyze and extract information from documents. These models rely on identifiable text—based on phrases or patterns—to determine both the document’s classification and the data to extract.
 
 > [!NOTE]
 > For more information about how to use Syntex and scenario examples, see [Get started driving adoption of Microsoft Syntex](./adoption-getstarted.md) and [Scenarios and use cases for Microsoft Syntex](./adoption-scenarios.md).
 
-Unstructured document processing models are created and managed in a type of SharePoint site called a [content center](create-a-content-center.md). When applied to a SharePoint document library, the model is associated with a content type has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
+You create and manage unstructured document processing models in a SharePoint content center. When you apply a model to a SharePoint document library, it’s associated with a content type that includes columns for storing extracted information. You can create a new content type or use an existing one from the SharePoint content type gallery.
 
 > [!NOTE]
 > Read-only or sealed content types can't be updated, so they can't be used in a model.
@@ -53,9 +53,9 @@ Add [classifiers](create-a-classifier.md) and [extractors](create-an-extractor.m
 
 - Classifiers are used to identify and classify documents that are uploaded to the document library. For example, a classifier can be "trained" to identify all *contract renewal* documents that are uploaded to the library. The contract renewal content type is defined by you when you create your classifier.
 
-- Extractors pull information from these documents. For example, for each contract renewal document identified in your document library, columns will display that show the *Service Start Date* and *Client* for each document. 
+- Extractors pull information from these documents. For example, for each contract renewal document identified in your document library, columns display that show the *Service Start Date* and *Client* for each document.
 
-You can use example files to train and test your classifiers and extractors in your model. Example files provide your model examples of what to look for when trying to identify and extract data from files. For example, you would train your contract renewal classifiers and extractors with examples of contract renewal documents your company works with. You can also use example files to test the effectiveness of your model.
+Use example files to train and test your classifiers and extractors. These files help the model learn what to look for when identifying and extracting data. For example, train your contract renewal model using real contract renewal documents from your organization. You can also use these files to validate your model’s accuracy.
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
