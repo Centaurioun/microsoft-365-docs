@@ -27,11 +27,11 @@ Admins can manage access to the task-specific models by adding specific users to
 
 ## What should I do if I accidentally delete a model?
 
-If a model is deleted, it cannot be recovered. Ensure you have the correct permissions and take necessary precautions to avoid accidental deletions.
+If a model is deleted, it can't be recovered. Ensure you have the correct permissions and take necessary precautions to avoid accidental deletions.
 
-## What happens if there is insufficient training data?
+## There's insufficient training data
 
-If there is insufficient training data, you see an error message. Ensure you have enough training data after filtering.
+If there's insufficient training data, you see an error message. Ensure you have enough training data after filtering.
 
 ## What should I do if I see an error message during the configuration?
 
