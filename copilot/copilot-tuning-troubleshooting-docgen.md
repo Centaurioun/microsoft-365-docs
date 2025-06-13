@@ -40,7 +40,11 @@ I recommend improving the model instructions iteratively to prevent common error
 
 ## I'm encountering issues when trying to upload my labels
 
-First, download a clean Excel file from the current application state. Correct the sheet and retry uploading the file. 
+To resolve this issue, follow these steps
+
+1.  Download a clean Excel file from the current application state.
+2.  Correct the sheet.
+3.  Retry uploading the file. 
 
 ## There's a formatting or validity issue with the final Word document
 
