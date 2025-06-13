@@ -23,13 +23,14 @@ This article describes the process for training and tuning models to customize M
 
 ## Tuning process overview
 
-Using Copilot Tuning to create a fine-tuned AI model for your organization involves training and post-training processes:
+Using Copilot Tuning to create fine-tuned AI models for your organization involves the following training and tuning steps:
 
 - **Domain-specific adaptation** trains your LLM by processing the organizational data you ingest into Copilot.
 - **Supervised fine-tuning** adapts your model to specific tasks by training it on input-output pairs.
-- **Reinforcement learning** helps your model to adopt your organization's style, tone, and preferences to further tune the model and optimize Copilot responses.
+- **Reinforcement learning** helps your model to adopt your organization's style, tone, and preferences to further optimize Copilot responses.
 
-The models that you tune are private. Your data is not used to train general models for other tenants. All processing of your data is done in a tenant that only authorized users have access to, and specific individuals, typically administrators, have control over the training process.
+> [!NOTE]
+> The models that you tune are private. Your data is not used to train general models for other tenants. All processing of your data is done in a tenant that only authorized users have access to, and specific individuals, typically administrators, have control over the training process.
 
 ### Domain-specific adaptation
 
@@ -79,7 +80,7 @@ Supervised fine-tuning can also help to ensure that responses are accurate and a
 
 ### Reinforcement learning
 
-Reinforcement learning fine-tuning is a post-training technique that helps tailor LLMs to your organization's unique communication style, tone, and tool usage preferences. Unlike supervised fine-tuning, which teaches the model to produce correct outputs from labeled examples, reinforcement learning optimizes for subjective qualities by learning from feedback signals.
+Reinforcement learning is a post-training technique that helps tailor LLMs to your organization's unique communication style, tone, and tool usage preferences. Unlike supervised fine-tuning, which teaches the model to produce correct outputs from labeled examples, reinforcement learning optimizes for subjective qualities by learning from feedback signals.
 
 Reinforcement learning is helpful when you want your model to:
 
@@ -99,12 +100,9 @@ By combining supervised and reinforcement learning fine-tuning, you can create m
 - Respect access controls and data classification policies during training and inference.
 - Generate accurate responses aligned with your internal standards and user expectations.
 
-You might encounter some challenges when tuning your model, such as:
+You might encounter some challenges when tuning your model. For example, finding sufficient, high-quality labeled data for training can pose a challenge. You can create simulated data by using models like ChatGPT to generate reference output. You also want to ensure that your training data is sufficiently diverse. Your training data should cover a broad range of use cases to cover real-world scenarios and mitigate potential bias.
 
-- Finding sufficient, high-quality labeled data for training. You can create simulated data by using models like ChatGPT to generate reference output.
-- Sufficient diversity of training data. Your training data should cover a broad range of use cases to cover real-world scenarios and  mitigate potential bias.
-
-To ensure model quality and compliance:
+To best ensure model quality and compliance:
 
 - Conduct evaluations using manual review or automated tools like Azure OpenAI Service.
 - Monitor for overfitting by testing on unseen inputs and adjusting learning rates as needed.
@@ -116,7 +114,7 @@ You can continue to evolve your model by:
 
 - Uploading new data between reinforcement cycles for continual fine-tuning.
 - Applying prompt engineering to adapt to new task types or regulatory changes.
-- Using Copilot Studio's low-code tools to deploy and manage agents based on your fine-tuned models.
+- Using Copilot Studio's low-code tools to deploy and manage agents based on your fine-tuned models. 
 
 ## Related content
 

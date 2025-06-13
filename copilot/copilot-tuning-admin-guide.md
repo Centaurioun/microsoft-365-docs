@@ -37,7 +37,7 @@ To manage Copilot Tuning governance controls, make sure that you meet the follow
     - Global Administrator
     - AI Administrator (if defined as a custom role in your organization)
 - Copilot extensibility is enabled via **Copilot settings** in the admin center. For more information, see [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps#enable-or-disable-copilot-extensibility).
-- If you block new Power Platform connectors by default via Data Loss Prevention (DLP) policies, run one of the following command to reclassify the connector.
+- If you block new Power Platform connectors by default via Data Loss Prevention (DLP) policies, run one of the following commands to reclassify the connector.
 
     ```powershell
     $connectorsToReclassify = @([pscustomobject]@{ 
