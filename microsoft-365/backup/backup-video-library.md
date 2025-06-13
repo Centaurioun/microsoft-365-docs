@@ -27,7 +27,7 @@ description: Watch videos to learn about some of the different features in Micro
 
 |Manage backup policies  |Manage billing with dynamic rules  |
 |---------|---------|
-|[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-policies.png" alt-text="Thumbnail image of manage backup policies.":::](https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2)<br>[Learn more about managing backup policies](backup-view-edit-policies.md)    |[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-dynamic-rules.png" alt-text="Thumbnail image of manage backup with dynamic rules video.":::](https://learn-video.azurefd.net/vod/player?id=7604db2b-5099-4b87-b94d-d36436b3ac18)<br>[Learn more about managing backup with dynamic rules](backup-view-edit-policies.md)           |
+|[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-policies.png" alt-text="Thumbnail image of manage backup policies.":::](https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2)<br>[Learn more about managing backup policies](backup-view-edit-policies.md)    |[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-dynamic-rules.png" alt-text="Thumbnail image of manage backup with dynamic rules video.":::](https://learn-video.azurefd.net/vod/player?id=7604db2b-5099-4b87-b94d-d36436b3ac18)<br>[Learn more about dynamic rules](backup-view-edit-policies.md)           |
 
 
 |Restore backup data  |
