@@ -38,7 +38,7 @@ Microsoft Teams Live events **attendee** traffic (this includes attendees to Tea
 
 Many customers have asked for URL/IP data needed to connect their attendees in Teams events directly from their local internet connection, rather than route the high-volume and latency-sensitive traffic via the VPN infrastructure. Typically, this isn't possible without both dedicated namespaces and accurate IP information for the endpoints, which isn't provided for Microsoft 365 endpoints categorized as **Default**.
 
-Use the following steps to identify and enable direct connectivity for attendee traffic for Teams Events from clients that are using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid routing attendee traffic over VPN while there's high network traffic due to work-from-home scenarios. If possible, we recommend accessing the service through an inspecting proxy.
+Use the following steps to identify and enable direct connectivity for attendee traffic for Teams Events from clients that are using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid routing attendee traffic over VPN while there's high network traffic due to work-from-home scenarios. If possible, we recommend accessing the service through an inspecting proxy. Attendee traffic will connect to the CDN over TCP/UDP 443.
 
 > [!NOTE]
 > Using this solution, there might be service elements that don't resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There might be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
@@ -76,7 +76,7 @@ To solve this, we can provide the following IPs and use them in combination with
 
 ### Gathering the current lists of CDN Endpoints
 
-For the Commercial cloud Teams events use Azure CDN from Microsoft and Akamai CDN; Microsoft 365 U.S. Government clouds (GCC, GCC High and DoD) only use Azure CDN from Microsoft. Over time this could be changed due to situations such as regional availability. This article provides the required namespaces for Teams events and guidance for the corresponding IP address ranges used (where available).
+For the Commercial cloud Teams events use Azure CDN from Microsoft and Akamai CDN; Microsoft 365 U.S. Government clouds (GCC, GCC High and DoD) use Azure CDN from Microsoft along with the existing IP ranges defined in the respective Optimize category for their environment. Over time this could be changed due to situations such as regional availability. This article provides the required namespaces for Teams events and guidance for the corresponding IP address ranges used (where available).
 
 For the **Commercial** cloud:
 
@@ -571,16 +571,16 @@ The **Default** endpoint category has no IP information provided for numerous re
 
 ### Do I only need to allow access to these IPs/namespaces?
 
-No, access to all of the **Required** marked endpoints for the appropriate environment is essential for the service to operate.
+No, access to all of the **Required** marked endpoints for the appropriate environment is essential for the service to operate. Government clouds can also leverage the Optimize endpoint ranges.
 - Worldwide including GCC: [Endpoints for Worldwide](urls-and-ip-address-ranges.md)
 - Microsoft 365 U.S. Government GCC High: [Endpoints for GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)
 - Microsoft 365 U.S. Government DoD: [Endpoints for DoD](microsoft-365-u-s-government-dod-endpoints.md)
 
 ### What scenarios will this advice cover?
 
-1. Live events produced within the Teams App
-2. Teams encoder produced live events
-3. Teams Town hall
+1. Attending Live events produced within the Teams App
+2. Attending Teams encoder produced live events
+3. Attending Teams Town hall
 
 ### Does this advice cover presenter traffic?
 
@@ -608,7 +608,5 @@ It doesn't; the preceding advice is purely for those attending the event. Presen
 [Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios (Microsoft Security Team blog)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 [Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
-
-[Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Microsoft global network](/azure/networking/microsoft-global-network)
