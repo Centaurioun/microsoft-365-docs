@@ -23,7 +23,7 @@ If the setup takes more than 5 minutes, it might be due to service failures or o
 
 ## Managing access to the task-specific models
 
-Admins can manage access to the task-specific models by adding specific users to the organization. Once added, users will receive an email with a link to the model.
+Admins can manage access to the task-specific models by adding specific users to the organization. Once added, users receive an email with a link to the model.
 
 ## What should I do if I accidentally delete a model?
 
@@ -31,7 +31,7 @@ If a model is deleted, it cannot be recovered. Ensure you have the correct permi
 
 ## What happens if there is insufficient training data?
 
-If there is insufficient training data, you will see an error message. Ensure you have enough training data after filtering.
+If there is insufficient training data, you see an error message. Ensure you have enough training data after filtering.
 
 ## What should I do if I see an error message during the configuration?
 
@@ -39,7 +39,7 @@ If you see an error message during the configuration, retry the process after so
 
 ## How do I handle errors related to knowledge sources?
 
-If you enter a link to a knowledge source you don't have access to, you will see an error message. Ensure you have access to the required knowledge sources.
+If you enter a link to a knowledge source you don't have access to, you see an error message. Ensure you have access to the required knowledge sources.
 
 ## What should I do if the validation fails during the training process?
 
