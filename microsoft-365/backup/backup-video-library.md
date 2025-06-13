@@ -24,16 +24,16 @@ description: Watch videos to learn about some of the different features in Micro
 
 |Set up Microsoft 365 Backup  |Manage billing in Azure  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://learn-video.azurefd.net/vod/player?id=d4f5a898-3d35-42aa-ae3f-6639b59943f9)<br>[Learn more about content centers](create-a-content-center.md)     |[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956)<br>[Learn more about Syntex models](model-types-overview.md)          |
+|[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-set-up-service.png" alt-text="Thumbnail image of set up Microsoft 365 Backup video.":::](https://learn-video.azurefd.net/vod/player?id=d4f5a898-3d35-42aa-ae3f-6639b59943f9)<br>[Learn more about setting up Microsoft 365](backup-setup.md)     |[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-billing.png" alt-text="Thumbnail image of manage billing in Azure video.":::](https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956)<br>[Learn more about managing billing in Azure](/en-us/azure/cost-management-billing/understand/mca-overview)          |
 
 |Manage backup policies  |Manage backup with dynamic rules  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-syntex-overview.png" alt-text="Thumbnail image of Syntex overview video.":::](https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2)<br>[Learn more about Syntex](syntex-overview.md)    ||[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://learn-video.azurefd.net/vod/player?id=7604db2b-5099-4b87-b94d-d36436b3ac18)<br>[Learn more about unstructured models](document-understanding-overview.md)           |
+|[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-policies.png" alt-text="Thumbnail image of manage backup policies.":::](https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2)<br>[Learn more about managing backup policies](backup-view-edit-policies.md)    ||[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-dynamic-rules.png" alt-text="Thumbnail image of manage backup with dynamic rules video.":::](https://learn-video.azurefd.net/vod/player?id=7604db2b-5099-4b87-b94d-d36436b3ac18)<br>[Learn more about managing backup with dynamic rules](backup-view-edit-policies.md)           |
 
 
 |Restore backup data  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://learn-video.azurefd.net/vod/player?id=c9a4ced2-7ce3-4bc9-b42f-876b05497e1b)<br>[Learn about freeform and structured models](form-processing-overview.md)    |
+|[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-restore-backup.png" alt-text="Thumbnail image of restore backup data video.":::](https://learn-video.azurefd.net/vod/player?id=c9a4ced2-7ce3-4bc9-b42f-876b05497e1b)<br>[Learn more about restoring backup data](backup-restore-data.md)    |
 
 
 ---------------------------------------
