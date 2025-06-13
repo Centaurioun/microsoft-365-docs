@@ -30,8 +30,6 @@ description: Learn how to turn on Microsoft 365 Backup, set up pay-as-you-go bil
 
 </br>
 
-
-
 ## Permissions
 
 You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Microsoft 365 Backup.

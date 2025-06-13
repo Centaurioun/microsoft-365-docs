@@ -22,7 +22,7 @@ description: Watch videos to learn how to set up and use different features in M
 
 |Set up pay-as-you-go billing  |Manage billing in Azure  |
 |---------|---------|
-|[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-set-up-service.png" alt-text="Thumbnail image of set up Microsoft 365 Backup video.":::](https://learn-video.azurefd.net/vod/player?id=d4f5a898-3d35-42aa-ae3f-6639b59943f9)<br>[Learn more about setting up billing](backup-setup.md)     |[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-billing.png" alt-text="Thumbnail image of manage billing in Azure video.":::](https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956)<br>[Learn more about managing billing](/en-us/azure/cost-management-billing/understand/mca-overview)          |
+|[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-set-up-service.png" alt-text="Thumbnail image of set up Microsoft 365 Backup video.":::](https://learn-video.azurefd.net/vod/player?id=d4f5a898-3d35-42aa-ae3f-6639b59943f9)<br>[Learn more about setting up billing](backup-setup.md)     |[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-billing.png" alt-text="Thumbnail image of manage billing in Azure video.":::](https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956)<br>[Learn more about managing billing](backup-billing.md)          |
 
 |Manage backup policies  |Manage billing with dynamic rules  |
 |---------|---------|
