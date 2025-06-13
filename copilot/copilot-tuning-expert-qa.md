@@ -53,13 +53,13 @@ Set up an **Expert Q&A model** using Copilot tuning model maker. This guide cove
 
 Model Maker serves as the entry point for selecting the content collection, with Copilot Studio verifying access control by comparing permissions on the content with those of the fine-tuned model.
 
-Model Maker also prompts you to fill out a questionnaire that describes the content and purpose of the Tenant Copilot Declarative Agent. Tenant Copilot uses this information to guide the training data generation, filtering, and behavior adjustment of the Declarative Agent.
+Model Maker also prompts you to fill out a questionnaire that describes the content and purpose of the Copilot  Tuning declarative agent. Copilot Tuning uses this information to guide the training data generation, filtering, and behavior adjustment of the declarative agent.
 
 To set up an Expert Q&A model, follow these steps to ensure a smooth configuration.
 
 1. In Copilot Studio, select **Create a new model**, and provide the model name, task type, and description.
 1. Set up expert content by adding domain-specific documentation.
-1. Complete the model maker questionnaire, which helps describe the content, domain expertise, and intended functionality of the Tenant Copilot Declarative Agent. This information is used to guide the training data generation and behavior of the model.
+1. Complete the model maker questionnaire, which helps describe the content, domain expertise, and intended functionality of the Copilot Tuning declarative agent. This information is used to guide the training data generation and behavior of the model.
 1. Configure model details by defining query handling, multi-turn interaction, and citation depth.
 
 Copilot Studio checks the permissions for the selected content to ensure the security group(s) have appropriate access. Any inaccessible content isn't used during the training process.
