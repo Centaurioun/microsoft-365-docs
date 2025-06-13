@@ -50,16 +50,6 @@ Microsoft 365 Backup charges you based on the size of the following content once
 
 - If you're using a partner (ISV) solution built on the Microsoft 365 Backup Storage platform, you'll be charged solely by them for their application. You won't receive a separate bill or charge directly from Microsoft for the Backup Storage consumption.
 
-## Cost management and billing
-
-You can manage cost and billing using the **Cost Management + Billing** dashboard in Azure.
-
-</br>
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956]
-
-</br>
-
 ## Pricing calculator
 
 The Microsoft 365 Backup pricing calculator is a tool that helps you estimate the amount of backup storage and the costs that you incur to protect and back up your Microsoft 365 data.
