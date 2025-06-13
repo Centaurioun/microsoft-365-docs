@@ -5,8 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 07/25/2024
-audience: admin
+ms.date: 06/16/2025
 ms.topic: article
 ms.custom: 
 ms.service: microsoft-syntex
@@ -22,7 +21,7 @@ description: Watch videos to learn about some of the different features in Micro
 # Microsoft 365 Backup video library
 
 
-|Set up Microsoft 365 Backup  |Manage billing in Azure  |
+|Set up pay-as-you-go billing  |Manage billing in Azure  |
 |---------|---------|
 |[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-set-up-service.png" alt-text="Thumbnail image of set up Microsoft 365 Backup video.":::](https://learn-video.azurefd.net/vod/player?id=d4f5a898-3d35-42aa-ae3f-6639b59943f9)<br>[Learn more about setting up Microsoft 365](backup-setup.md)     |[:::image type="content" source="../media/m365-backup/backup-video-thumbnail-manage-billing.png" alt-text="Thumbnail image of manage billing in Azure video.":::](https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956)<br>[Learn more about managing billing in Azure](/en-us/azure/cost-management-billing/understand/mca-overview)          |
 
