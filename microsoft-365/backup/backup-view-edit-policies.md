@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 05/19/2025
+ms.date: 06/16/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -32,6 +32,12 @@ You can create more than one backup policy for each product (SharePoint, Exchang
 > 2. Scroll to the **Example request** section and select the **PowerShell** tab.
 > 3. Install the Microsoft.Graph.BackupRestore module as shown in the example.
 > 4. Run the provided PowerShell command in an Admin PowerShell session to execute the desired action.
+
+</br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2]
+
+</br>
 
 Select the **SharePoint**, **Exchange**, or **OneDrive** tab for steps to create a backup policy for that product.
 
