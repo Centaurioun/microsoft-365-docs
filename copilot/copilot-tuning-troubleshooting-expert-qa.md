@@ -15,16 +15,13 @@ recommendations: false
 
 This article describes some of the most common issues with the Microsoft Admin Center task fine-tuning FAQ and how to troubleshoot them.
 
+## I get a permission or access error when connecting to my content source (e.g., a SharePoint site)
 
-Setup and Access Issues
-
-## I get a permission or access error when connecting to my content source (e.g. a SharePoint site)
-
-An access or permission denied" error usually means your account doesn't have the rights to that data source. Make sure you have the appropriate permissions to the content repository[1]. For example, if adding a SharePoint site, confirm with your SharePoint administrator that your account (or a group you belong to) has access to that site or document library. If the fine-tuning process uses a Security Group for access control, ensure that the correct security group is set up and that your user account is included in it[1] before retrying the operation.
+An access or permission denied" error usually means your account doesn't have the rights to that data source. Make sure you have the appropriate permissions for the content repository. For example, if adding a SharePoint site, confirm with your SharePoint administrator that your account (or a group you belong to) has access to that site or document library. If the fine-tuning process uses a Security Group for access control, ensure that the correct security group is set up and that your user account is included in it[1] before retrying the operation.
 
 ## I created a fine-tuned Q&A model, but it isn't showing up when I try to add it to my Copilot agent
 
-If your newly trained model isn't listed in the selection dropdown while configuring the agent, it's likely a permissions issue. The model is associated with a security group or access policy, and your account might not be included. Ensure that the security group used during the model creation includes your account (the person building the agent)[1]. You may need to ask your IT admin to add you to that group or re-create the model with a group that you are part of. Once your permissions are fixed, the fine-tuned model should appear for selection.
+If your newly trained model isn't listed in the selection dropdown while configuring the agent, it's likely a permissions issue. The model is associated with a security group or access policy, and your account might not be included. Ensure that the security group used during the model creation includes your account (the person building the agent). You may need to ask your IT admin to add you to that group or re-create the model with a group that you are part of. Once your permissions are fixed, the fine-tuned model should appear for selection.
 
 ## I clicked "Prepare data for training," but no labeling interface or data appeared
 
@@ -32,11 +29,11 @@ Not necessarily. Some fine-tuning scenarios do not require manual labeling of da
 
 ## The "Processing data" stage is taking a very long time
 
-The data preparation or training phase can take quite a while, depending on the size of your content. It's normal for this stage to take several hours[1], especially if you provided a large document collection. You should have received a notification (for example, an email) when the processing is complete. If you haven't received a notification yet, please be patient -- it likely means the process is still running. If it's been more than a few hours, check your spam or junk email folder to ensure the notification didn't get misfiled[1]. You can also manually refresh or revisit the fine-tuning page; once processing is done (even if an email was missed), the status on the site will indicate that the data is ready or the next step is available.
+The data preparation or training phase can take quite a while, depending on the size of your content. It's normal for this stage to take several hours[1], especially if you provided a large document collection. You should have received a notification (for example, an email) when the processing is complete. If you haven't received a notification yet, please be patient -- it likely means the process is still running. If it's been more than a few hours, check your spam or junk email folder to ensure the notification didn't get misfiled. You can also manually refresh or revisit the fine-tuning page; once processing is done (even if an email was missed), the status on the site will indicate that the data is ready or the next step is available.
 
 ## I never got the email notification that my data processing is finished
 
-First, double-check your email spam or junk folder for a message about the fine-tuning process being completed[1]. Sometimes automated notifications can be filtered out. If you don't find an email, don't worry --- you do not strictly need the email to proceed[1]. Go back to the fine-tuning interface and check the status of your model there. If the preparation step is completed, the interface will show that your data is ready for the next step (for example, ready for evaluation or ready to train). At that point, you can continue with the fine-tuning workflow even without having clicked an email link.
+First, double-check your email spam or junk folder for a message about the fine-tuning process being completed[1]. Sometimes, automated notifications can be filtered out. If you don't find an email, don't worry --- you do not strictly need the email to proceed[1]. Go back to the fine-tuning interface and check the status of your model there. If the preparation step is completed, the interface will show that your data is ready for the next step (for example, ready for evaluation or ready to train). At that point, you can continue with the fine-tuning workflow even without having clicked an email link.
 
 ## The fine-tuning process *stalled or failed* partway through (I see an error status, or it stopped with no message)
 
@@ -52,11 +49,11 @@ Contact support if the issue persists: If you consistently get a failure with no
 
 An empty evaluation file usually indicates that the system could not generate any Q&A samples from your content. One common reason is that the content collection you provided was too small or had no usable data[1]. In other words, the model didn't have enough material to create Q&A examples. To address this:
 
-Verify your knowledge source content: Double-check that the documents or data source you selected actually contain the information you expect. If the content repository was empty or too limited, add more relevant documents and then rerun the fine-tuning process.
+Verify your knowledge source content: Double-check that the documents or data source you selected contain the information you expect. If the content repository was empty or too limited, add more relevant documents and then rerun the fine-tuning process.
 
 Run the process again: Once you've ensured the content is in place, try the "prepare data" or fine-tuning step again. This time, it may produce a set of Q&A pairs for evaluation.
 
-If it's still empty, seek help: If, after adding content and retrying, you still get an empty evaluation or an empty training set, there might be an underlying issue. At that point, contact support for further assistance[1]. They might check if there were any filtering rules or errors that caused your data to be discarded. In rare cases, extremely strict filtering or all content being out-of-scope could result in no data; support can help identify if that happened.
+If it's still empty, seek help: If, after adding content and retrying, you still get an empty evaluation or an empty training set, there might be an underlying issue. At that point, contact support for further assistance[1]. They might check if any filtering rules or errors caused your data to be discarded. In rare cases, extremely strict filtering or all content being out of scope could result in no data; support can help identify if that happened.
 
 ## The model training finished, but the *answers it gives seem strange or irrelevant* ("weird")
 
@@ -74,7 +71,7 @@ This is a known behavior. The fine-tuned model might perform well in the isolate
 
 1. Compare evaluation vs. agent outputs: Identify what's missing or different. For example, maybe the evaluation answers had a friendly, empathetic tone that you liked, but the agent's answers feel more generic or terse.
 2. Adjust the agent's instructions: In Copilot Studio (or wherever you configure the agent), add or refine the system instructions/prompts for the agent. Reinforce the qualities you want that you saw in the evaluation stage[1]. For instance, "Ensure responses are in an empathetic tone," or "Include the detailed steps if available," etc. This guides the agent to preserve those aspects.
-3. Test again: After updating instructions, test the agent with the same questions. You should see the answers align more closely with the fine-tuned model's expected behavior. This iterative tuning of the agent is sometimes necessary to get the best results. (Essentially, the fine-tuned model provides the knowledge, and the agent's instructions shape how that knowledge is expressed. Both need to be in harmony.)
+3. Test again: After updating the instructions, test the agent with the same questions. You should see the answers align more closely with the fine-tuned model's expected behavior. This iterative tuning of the agent is sometimes necessary to get the best results. (Essentially, the fine-tuned model provides the knowledge, and the agent's instructions shape how that knowledge is expressed. Both need to be in harmony.)
 
 # The answers from my Q&A bot are still not what I expected -- some are inaccurate or not on point. How can I improve the results?\ A: If you find the overall answer quality unsatisfactory, you may need to refine your fine-tuning setup further. Consider these steps:
 
@@ -93,6 +90,6 @@ If you believe an answer should have a citation (for instance, it seems to be qu
 
 As the product evolves, citation features may be improved. For now, remember that an answer without a citation isn't unusual in some cases[1]. You can always verify critical information by manually searching your source content, and if you feel something is missing a citation or is incorrect, use the feedback mechanisms in the tool to let the developers know (for example, by reporting a bad answer through the interface).
 
-## Related Content
+## Related content
 
 [Placeholder for related content and resources.]
