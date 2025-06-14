@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 recommendations: false
 ---
 
-# Troubleshoot issues for the Copilot Tuning EXpert Q&A model FAQ
+# Troubleshoot issues for the Copilot Tuning Expert Q&A model FAQ
 
 This article describes some of the most common issues with the Microsoft Admin Center task fine-tuning FAQ and how to troubleshoot them.
 
@@ -20,7 +20,7 @@ Setup and Access Issues
 
 ## I get a permission or access error when connecting to my content source (e.g. a SharePoint site)
 
-An access or "permission denied" error usually means your account doesn't have rights to that data source. Make sure you have the appropriate permissions to the content repository[1]. For example, if adding a SharePoint site, confirm with your SharePoint administrator that your account (or a group you belong to) has access to that site or document library. If the fine-tuning process uses a Security Group for access control, ensure that the correct security group is set up and that your user account is included in it[1] before retrying the operation.
+An access or permission denied" error usually means your account doesn't have the rights to that data source. Make sure you have the appropriate permissions to the content repository[1]. For example, if adding a SharePoint site, confirm with your SharePoint administrator that your account (or a group you belong to) has access to that site or document library. If the fine-tuning process uses a Security Group for access control, ensure that the correct security group is set up and that your user account is included in it[1] before retrying the operation.
 
 ## I created a fine-tuned Q&A model, but it isn't showing up when I try to add it to my Copilot agent
 
@@ -56,13 +56,13 @@ Verify your knowledge source content: Double-check that the documents or data so
 
 Run the process again: Once you've ensured the content is in place, try the "prepare data" or fine-tuning step again. This time, it may produce a set of Q&A pairs for evaluation.
 
-If it's still empty, seek help: If after adding content and retrying you still get an empty evaluation or an empty training set, there might be an underlying issue. At that point, contact support for further assistance[1]. They might check if there were any filtering rules or errors that caused your data to be discarded. In rare cases, extremely strict filtering or all content being out-of-scope could result in no data; support can help identify if that happened.
+If it's still empty, seek help: If, after adding content and retrying, you still get an empty evaluation or an empty training set, there might be an underlying issue. At that point, contact support for further assistance[1]. They might check if there were any filtering rules or errors that caused your data to be discarded. In rare cases, extremely strict filtering or all content being out-of-scope could result in no data; support can help identify if that happened.
 
 ## The model training finished, but the *answers it gives seem strange or irrelevant* ("weird")
 
 If your fine-tuned Q&A model's responses are not making sense or seem unrelated to your domain, the culprit is often the training data quality or quantity. A model can only perform as well as the data it was trained on. Here are steps to troubleshoot a \"weird\" or low-quality model output:
 
-1. Ensure sufficient training data: Check that the knowledge source you provided had enough useful content. If your content collection was very small or empty, the model may have essentially trained on nothing, resulting in effectively a "vanilla" or nonsense model[1]. Make sure you include enough documents or Q&A pairs covering the subject matter you expect the model to handle.
+1. Ensure sufficient training data: Check that the knowledge source you provided has enough useful content. If your content collection was very small or empty, the model may have essentially trained on nothing, resulting in effectively a "vanilla" or nonsense model[1]. Make sure you include enough documents or Q&A pairs covering the subject matter you expect the model to handle.
 2. Provide relevant data: If the model's answers are off-topic, some of your training documents might not match the intended domain. For example, if you're building a finance Q&A bot but the content fed in was mostly generic or unrelated, the model won't have the right knowledge. Refine your content set to be more relevant to the expected questions.
 3. Retrain after improvements: After adding more or better data, run the fine-tuning process again. Improving the dataset often leads to a direct improvement in answer quality.
 
@@ -87,23 +87,11 @@ This is a known behavior. The fine-tuned model might perform well in the isolate
 
 In the current version of the system, not every answer will include a citation, even if it's pulling information from your content. The Q&A fine-tuning pipeline works in tandem with retrieval: when the answer comes directly from retrieved documents (using the RAG retrieval component), the system will show citation links. However, if the answer is coming from the fine-tuned model's own knowledge (for example, something it learned during training that isn't a direct quote from a document), it may respond without attaching a source citation[1]. This behavior is expected.
 
-Keep in mind:
-
 The presence of citations is generally a good sign that the answer used the documents you provided at runtime. Lack of a citation doesn't necessarily mean the answer is wrong; it might just mean the answer was generated from the model's internal knowledge or the question didn't require retrieving a document.
 
 If you believe an answer should have a citation (for instance, it seems to be quoting a document you provided) but no citation is shown, double-check that your knowledge sources were properly connected during the agent's run. It's possible the agent answered from the fine-tuned model rather than the real document.
 
 As the product evolves, citation features may be improved. For now, remember that an answer without a citation isn't unusual in some cases[1]. You can always verify critical information by manually searching your source content, and if you feel something is missing a citation or is incorrect, use the feedback mechanisms in the tool to let the developers know (for example, by reporting a bad answer through the interface).
-
-Additional Tips
-
-Review documentation and guides: Besides this FAQ, ensure you've read the official how-to guides (if available) for the Q&A fine-tuning feature. They might contain setup steps and best practices that prevent many issues. For example, guidance on preparing your data and writing good instructions can save a lot of troubleshooting later on.
-
-Keep your tool updated: If this Q&A system is in preview or under active development, updates might introduce fixes to common problems. Stay up-to-date with the latest version or releases, and review release notes for any changes that could affect your fine-tuning process.
-
-Contact support for unaddressed issues: If you encounter a problem that isn't covered in this document, or if the suggested solutions do not resolve your issue, do not hesitate to reach out to Microsoft support or your technical account representative. Provide as many details as possible (screenshots of error messages, timestamps, steps to reproduce the issue) so they can assist you efficiently. Many issues can be environment-specific, and support can work with you to troubleshoot more deeply.
-
-Accessibility & Updates: We have written this guide in plain language to be accessible to all users. If any part of the troubleshooting steps is unclear, or if you have suggestions to improve the documentation, please let us know through the documentation feedback channels. This FAQ will be updated regularly as new common issues are identified or as the product changes, so you always have the most current solutions.
 
 ## Related Content
 
