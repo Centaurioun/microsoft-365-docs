@@ -1,5 +1,5 @@
 ---
-title: "Assess personal data and privacy risks – Microsoft Priva and Purview"
+title: "Assess personal data and privacy risks – Microsoft Priva and Microsoft Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
