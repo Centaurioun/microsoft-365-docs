@@ -55,9 +55,9 @@ Set up an **Expert Q&A model** using Copilot Tuning model maker in Microsoft Cop
 To set up an Expert Q&A model:
 
 1. In Copilot Studio, select **Create a new model**, and provide the model name and description.
-1. Set up expert content by adding domain-specific documentation.
-1. Complete the fields to describe the content, domain expertise, and intended functionality of the Copilot Tuning declarative agent. This information is used to guide the training data generation and behavior of the model.
-1. Configure model details by defining query handling, multi-turn interaction, and citation depth.
+1. Click **Add knowledge** to add the sources your model will be trained on.
+1. Choose permissions.
+1. Select the task type.
 
 Copilot Studio checks the permissions for the selected content to ensure the security group or groups have appropriate access. Any inaccessible content isn't used during the training process.
 
