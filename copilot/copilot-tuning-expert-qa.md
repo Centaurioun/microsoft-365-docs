@@ -1,20 +1,14 @@
 
 ---
-
-title: Get started with Copilot Tuning models
-description: Copilot Tuning models are designed to provide complex, domain-specific answers for user queries within your organization. These models require structured domain content and integrate with Copilot agents for interactive query processing. Explore best practices, scenarios, limitations, and requirements for effective implementation.
-manager: [placeholder-metadata]
-ms.reviewer: [placeholder-metadata]
-ms.topic: get-started
-ms.localizationpriority: [placeholder-metadata]
-ms.collection: [placeholder-metadata]
-ms.custom: [placeholder-metadata]
-search.appverid: [placeholder-metadata]
+title:  Configure Copilot Tuning for Expert Q&A
+description: This article describes how to use Copilot Tuning to build an AI model for expert Q&A.
+manager: calvind
+ms.reviewer: jwolk
+ms.topic: how-to
+ms.localizationpriority: medium
 ---
 
-# Get started with Copilot Tuning models
-
-> [!INCLUDE metadata-learn-get-started-article-pattern]
+# Configure Copilot Tuning for Expert Q&A
 
 Copilot Tuning models are designed to provide complex, domain-specific answers for user queries within your organization. These models require structured domain content and integrate with Copilot agents for interactive query processing. Explore best practices, scenarios, limitations, and requirements for effective implementation.
 
