@@ -27,7 +27,7 @@ Task-specific models should always be available. If you don't see them, make sur
 
 ## Admin doesn't see the task-specific models
 
-If an admin doesn't see the task-specific models, they might have eligibility issues. Make sure you have the necessary licenses and permissions. If if the admin istn't eligible, an error is displayed with possible causes.
+If an admin doesn't see the task-specific models, they might have eligibility issues. Make sure you have the necessary licenses and permissions. If if the admin isn't eligible, an error is displayed with possible causes.
 
 ## Setup is taking more than 5 minutes
 
