@@ -18,19 +18,21 @@ description: Contains reference transcript and how to write troubleshooting arti
 
 This article describes some of the most common issues with the Copilot Tuning document generation tool FAQ and how to troubleshoot them.
 
+[!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
+
 ## I'm unable to locate the correct SharePoint site for my knowledge sources
 
-If you can't find the SharePoint site containing the files you need in Step 4, please contact your IT administrator. You might need permission to view those files. 
+If you can't find the SharePoint site containing the files you need in Step 4, please contact your IT administrator. You might need permission to view those files.
 
 ## The preparation steps are taking too long
 
 Sometimes, service queues might experience delays, impacting document processing times. In addition, resume processing might delay in updating the UI, making the issue appear unresolved. If the preparation process has taken over 10 minutes to complete, try refreshing the page, as it might be a bug in the UI platform. Otherwise, check for potential errors in the processing logs.
 
-## I'm seeing an error during the data extraction process 
+## I'm seeing an error during the data extraction process
 
-If an error occurs during knowledge source extraction, click the **Models** link on the left side navigation panel to view the list of files in your model. Check the status in the right-side column to identify errors in copying SharePoint data into Heron. 
+If an error occurs during knowledge source extraction, click the **Models** link on the left side navigation panel to view the list of files in your model. Check the status in the right-side column to identify errors in copying SharePoint data into Heron.
 
-## The Excel file is empty, and I can't label any data 
+## The Excel file is empty, and I can't label any data
 
 I recommend verifying whether you are configuring the knowledge sources correctly and uploading a clean Excel file again. If the problem persists, contact the team for assistance.
 
@@ -44,7 +46,7 @@ To resolve this issue, follow these steps
 
 1.  Download a clean Excel file from the current application state.
 2.  Correct the sheet.
-3.  Retry uploading the file. 
+3.  Retry uploading the file.
 
 ## There's a formatting or validity issue with the final Word document
 

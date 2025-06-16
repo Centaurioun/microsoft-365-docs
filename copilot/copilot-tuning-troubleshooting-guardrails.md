@@ -10,6 +10,8 @@ description: Troubleshooting guide for Tenant Guardrail FAQ issues.
 
 This article describes some of the most common issues with Tenant Guardrails FAQ and how to troubleshoot them.
 
+[!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
+
 ## The system crashed, froze, or became unresponsive
 
 Contact Microsoft support or your IT administrator—this is a technical problem that the user cannot fix.
@@ -26,7 +28,7 @@ Broaden the criteria in the guardrails rules. Add additional rules for key issue
 
 Refine the criteria in the guardrails rules. To refine the guardrails criteria effectively, follow these steps:
 
-1. Ensure you use precise language and detailed conditions in your rules. 
+1. Ensure you use precise language and detailed conditions in your rules.
 2. Include examples and illustrative content for clarity.
 3. Use AND and OR grouping for conditions within rules to make them more relevant to different types of audiences.
 

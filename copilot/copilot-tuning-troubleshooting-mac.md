@@ -20,6 +20,8 @@ description: Troubleshooting guide for the Microsoft Admin Center task fine-tuni
 
 This article describes some of the most common issues with the Microsoft Admin Center task fine-tuning FAQ and how to troubleshoot them.
 
+[!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
+
 ## I don't see the task-specific models in the settings
 
 Task-specific models should always be available. If you don't see them, make sure you have the required licenses and permissions. You need at least 5,000 Copilot licenses for this feature to be available.
