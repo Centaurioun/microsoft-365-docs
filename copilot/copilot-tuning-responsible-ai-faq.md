@@ -72,7 +72,7 @@ Preparing high-quality and comprehensive training data is critical for improving
 
 ## How should model makers evaluate Copilot Tuning for specific use cases?
 
-After using Copilot Tuning to create a task-specific, organization-specific agent, we recommend customers perform an evaluation of the agent to validate that its results are effective and appropriate for the task. If the results don't meet expectations, customers can adjust their training data or modify the instructions given to Copilot Tuning and repeat the fine-tuning process. It might take multiple iterations of this process to achieve the desired results.
+After using Copilot Tuning to create a task-specific, organization-specific agent, we recommend customers perform an evaluation of the agent to validate that its results are effective and appropriate for the task. If the results don't meet expectations, customers can adjust their training data or modify the instructions given to Copilot Tuning and repeat the fine-tuning process to achieve the desired results.
 
 ## Related content
 
