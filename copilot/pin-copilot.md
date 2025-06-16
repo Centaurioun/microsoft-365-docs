@@ -81,9 +81,6 @@ For large enterprises with complex needs, you can set up the Pinning policy to a
 
 ## User experience
 
->[!NOTE]
-> Beginning on May 1, 2025, and rolling out over time, most users will have Copilot Chat pinned by default, and they won't see any pinning messages.
-
 Users can personalize their navigation bar by choosing to pin or unpin Copilot Chat. Users can also adjust the pinning settings within their application preferences, and these choices are specific to Teams, Outlook, the Microsoft 365 Copilot web app ([microsoft365.com](https://M365Copilot.com) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Copilot desktop app, and Microsoft 365 Copilot mobile app.
 
 A message asking to pin Microsoft 365 Copilot Chat can appear if a user:
