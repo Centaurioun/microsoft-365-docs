@@ -58,8 +58,9 @@ To set up an Expert Q&A model:
 1. Click **Add knowledge** to add the sources your model is trained on.
 1. Choose permissions. Copilot Studio checks the permissions for the selected content to ensure the security group or groups have appropriate access. Any inaccessible content isn't used during the training process.
 1. Select the task type.
-1. Continue to **Model instructions** to customize the behavior of your agent like its tone, how it responds, and its primary objective. These instructions help shape how the model responds to users, so be clear and specific. For example, for legal content, you might ask for concise, professional replies.
+1. Continue to **Model instructions** to customize the behavior of your agent, like its tone, how it responds, and its primary objective. These instructions help shape how the model responds to users, so be clear and specific. For example, for legal content, you might ask for concise, professional replies.
 1. Click **Prepare labeling data**. Your model is now available in the Copilot Tuning dashboard.
+Once your model starts processing the knowledge sources, you'll receive an email notification within 24 hours confirming that your model is ready for training.
 
 ## Related content
 
