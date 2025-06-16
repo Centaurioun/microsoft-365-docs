@@ -55,22 +55,11 @@ Set up an **Expert Q&A model** using the Copilot Tuning model maker in Microsoft
 To set up an Expert Q&A model:
 
 1. In Copilot Studio, select **Create a new model**, and provide the model name and description.
-1. Click **Add knowledge** to add the sources your model will be trained on.
-1. Choose permissions.
+1. Click **Add knowledge** to add the sources your model is trained on.
+1. Choose permissions. Copilot Studio checks the permissions for the selected content to ensure the security group or groups have appropriate access. Any inaccessible content isn't used during the training process.
 1. Select the task type.
-
-Copilot Studio checks the permissions for the selected content to ensure the security group or groups have appropriate access. Any inaccessible content isn't used during the training process.
-
-### Declarative agent maker workflow
-
-You can create a Copilot Declarative Agent specialized as an Expert Q&A Agent to answer questions over the content collection you used to train the model in the Model Maker workflow above.
-
-To create a declarative agent for Microsoft 365 Copilot that answers questions based on domain-specific knowledge:
-
-1. In Copilot Studio, select **Create a task-specific agent**.
-1. Select **Task-specific** and click on **Continue** to see a list of available Copilot Tuning models that can serve as the Expert Q&A knowledge source for your agent.
-   A full list of set of configuration options is displayed. You can now customize the behavior of your agent, including instructions.
-1. Add instructions to guide the agent’s tone, length, and style based on your scenario and audience. These instructions help shape how the model responds to users, so be clear and specific. For example, for legal content, you might ask for concise, professional replies.
+1. Continue to **Model instructions** to customize the behavior of your agent like its tone, how it responds, and its primary objective. These instructions help shape how the model responds to users, so be clear and specific. For example, for legal content, you might ask for concise, professional replies.
+1. Click **Prepare labeling data**.
 
 ## Related content
 
