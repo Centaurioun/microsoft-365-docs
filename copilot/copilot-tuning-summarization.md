@@ -61,7 +61,7 @@ Copilot Tuning summarization has a straightforward model training process:
 
 This training aims to reduce discrepancies between current predictions and desired outputs based on the training examples. The model is trained on the document and summary pairs using a single pass. The retrieved data is processed using an LLM to create a customized summarization model that aligns closely with the user's existing output style, allowing fast and accurate inference.
 
-The supervised fine-tuning step considers real-word training samples, allowing it to recognize key sections of a document and produce summaries efficiently and effectively.
+The supervised fine-tuning step considers real-world training samples, allowing it to recognize key sections of a document and produce summaries efficiently and effectively.
 
 ## Model inference
 

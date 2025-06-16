@@ -84,7 +84,7 @@ Copilot Tuning begins analyzing the ACLs of the training documents. Based on the
 
 ### Review Copilot Tuning ACL analysis
 
-Copilot Tuning analyzes the document access control lists (ACLs) of the training documents and then filters out any knowledge that isn't accessible to the security groups selected in the previous step. For more information about ACL analysis and how to select appropriate security groups for your task, see [placeholder link to ACL documentation page](#).
+Copilot Tuning analyzes the document access control lists (ACLs) of the training documents and then filters out any knowledge that isn't accessible to the security groups selected in the previous step. Copilot Tuning might suggest more security groups based on its analysis to ensure access to the training data.
 
 Based on the size of your dataset, this step might take up to 24 hours. Copilot Tuning sends you an email when it's ready for you to go to the next step in the model creation process. In the meanwhile, you can check the status of the model from the Copilot Tuning landing page.
 
