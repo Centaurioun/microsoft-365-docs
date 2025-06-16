@@ -179,7 +179,7 @@ items:
         href: copilot-tuning-troubleshooting-expert-qa.md
       - name: Guardrails
         href: copilot-tuning-troubleshooting-guardrails.md
-      - name: MAC
+      - name: Microsoft 365 admin center
         href: copilot-tuning-troubleshooting-mac.md
     - name: Responsible AI FAQ
       href: copilot-tuning-responsible-ai-faq.md
