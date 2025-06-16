@@ -1,5 +1,5 @@
 ---
-title: "Manage data privacy and protection - Microsoft Priva and Purview"
+title: "Manage data privacy and protection - Microsoft Priva and Microsoft Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
