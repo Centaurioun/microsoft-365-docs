@@ -119,4 +119,4 @@ When the model generates results that meet your quality standards, you can publi
 - [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
 - [Microsoft 365 Copilot Tuning FAQ](copilot-tuning-faq.yml)
 - [Create declarative agents with Copilot Studio agent builder and Microsoft 365 Copilot Tuning models](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-tuned-models).
-- [Troubleshooting document generation models](copilot-tuning-troubleshooting-docgen.md).
+- [Troubleshooting document generation models](copilot-tuning-troubleshooting-doc-generation.md).

@@ -72,10 +72,10 @@ If outputs are still poor: If you've done the above and the model's answers are 
 This is a known behavior. The fine-tuned model might perform well in the isolated evaluation, but the deployed agent's behavior can differ if the agent configuration doesn't fully carry over the model's nuances. In particular, the agent might need additional instructions to use the model effectively. To resolve this:
 
 1. Compare evaluation vs. agent outputs - Identify what's missing or different. For example, maybe the evaluation answers had a friendly, empathetic tone that you liked, but the agent's answers feel more generic or terse.
-2. Adjust the agent's instructions - In the agent builder, add or refine the system instructions or prompts for the agent. Reinforce the qualities you want that you saw in the evaluation stage. For example, add the instructions "Respond in an empathetic tone," or "Include the detailed steps if available.". 
-3. Test again - After you update the instructions, test the agent with the same questions. The answers should align more closely with the fine-tuned model's expected behavior. This iterative tuning of the agent is sometimes necessary to get the best results. The fine-tuned model provides the knowledge, and the agent's instructions shape how that knowledge is expressed. 
+2. Adjust the agent's instructions - In the agent builder, add or refine the system instructions or prompts for the agent. Reinforce the qualities you want that you saw in the evaluation stage. For example, add the instructions "Respond in an empathetic tone," or "Include the detailed steps if available.".
+3. Test again - After you update the instructions, test the agent with the same questions. The answers should align more closely with the fine-tuned model's expected behavior. This iterative tuning of the agent is sometimes necessary to get the best results. The fine-tuned model provides the knowledge, and the agent's instructions shape how that knowledge is expressed.
 
-# The answers from my Q&A agent are still not what I expected 
+## The answers from my Q&A agent are still not what I expected
 
 If you find the overall answer quality unsatisfactory, you might need to refine your fine-tuning setup further. Consider these steps:
 
