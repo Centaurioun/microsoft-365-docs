@@ -1,40 +1,50 @@
 
 ---
-title: "Troubleshoot Tenant Guardrails FAQ"
-ms.topic: troubleshooting-general
-description: Troubleshooting guide for Tenant Guardrail FAQ issues.
+title: "Troubleshoot Copilot Tuning guardrails"
+f1.keywords:
+ms.author: danielabo
+author: danielabom
+manager: calvind
+ms.date: 06/17/2025
+ms.topic: troubleshooting
+ms.service: microsoft-365-copilot
+ms.localizationpriority: medium
+ms.collection:
+- m365copilot
+- magic-ai-copilot
+description: Find information about how to troubleshoot Copilot Tuning guardrails.
 ---
 
 
-# Troubleshoot Tenant Guardrails FAQ
+# Troubleshoot Copilot Tuning guardrails
 
-This article describes some of the most common issues with Tenant Guardrails FAQ and how to troubleshoot them.
+This article describes some of the most common issues with Copilot Tuning guardrails and how to troubleshoot them.
 
 [!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
 
-## The system crashed, froze, or became unresponsive
+## System crashed, froze, or became unresponsive
 
-Contact Microsoft support or your IT administrator—this is a technical problem that the user cannot fix.
+Contact Microsoft support or your IT administrator—this is a technical problem that the user can't fix.
 
-## I see an error message when processing guardrails in Tenant Guardrails (guardrails analysis)
+## I get an error message when processing guardrails 
 
-If it's an AI model error (for example, Language Model API error), retry the analysis. If the error persists, retry and then escalate—Contact Microsoft support or your IT administrator.
+If it's an AI model error (for example, Language Model API error), retry the analysis. If the error persists, retry and if that fails, contact Microsoft support or your IT administrator.
 
-## The guardrails are not flagging the issues I am concerned about (misses critical errors)
+## Guardrails are not flagging critical errors
 
 Broaden the criteria in the guardrails rules. Add additional rules for key issues.
 
-## The guardrails are flagging things that are not of concern (emits false positives)
+## Guardrails are flagging false positives
 
-Refine the criteria in the guardrails rules. To refine the guardrails criteria effectively, follow these steps:
+Refine the criteria in the guardrails rules by following these steps:
 
-1. Ensure you use precise language and detailed conditions in your rules.
+1. Make sure that you use precise language and detailed conditions in your rules.
 2. Include examples and illustrative content for clarity.
 3. Use AND and OR grouping for conditions within rules to make them more relevant to different types of audiences.
 
-## I am seeing duplicate alerts for the same issue
+## Duplicate alerts for the same issue
 
-Adjust frequency and sensitivity. Test guardrails rules thoroughly before deploying to end users. Consider using initial testing in test environments.
+Adjust the frequency and sensitivity. Test guardrails rules thoroughly before you deploy them. Consider testing the guardrails in test environments.
 
 ## I need to broaden the criteria
 
@@ -50,9 +60,9 @@ To handle duplicates effectively, follow these steps:
 
   1. Identify overlapping conditions across rules.
   2. Consolidate rules where possible to minimize overlap.
-  3. Configure threshold to control sensitivity of flags or alerts when available (editing capability to threshold coming soon).
+  3. Configure threshold to control the sensitivity of flags or alerts when available.
 
 ## Related content
-- [Placeholder for related articles and resources content.]
 
-If you have any issues or want to provide feedback, contact *** Where are we sending users to get help?
+- [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
+
