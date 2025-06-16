@@ -37,18 +37,18 @@ ESS Agent continues to serve as unified assistants for employees to provide HR r
 
 ESS Agent will act as a front-end for consuming information from SAP SuccessFactors. The following are the scenarios currently supported by ESS Agent for SAP SuccessFactors integration:
 
-- Get Base Compensation
-- Get Company Code
-- Get Cost Center
-- Get Hire Date
-- Get Service Anniversary
-- Get Employee ID
-- Get Job Info
-- Get Position Number
+- [Get Base Compensation](#get-base-compensation)
+- [Get Company Code](#get-company-code)
+- [Get Cost Center](#get-cost-center)
+- [Get Hire Date](#get-hire-date)
+- [Get Service Anniversary](#get-service-anniversary)
+- [Get Employee ID](#get-employee-id)
+- [Get Job Info](#get-job-info)
+- [Get Position Number](#get-position-number)
 
 ## Technical Synopsis
 
-:::image type="content" source="media/ess-agent-and-successfactors-integration.png" alt-text="Diagram of the high-level components comprising overall solution for ESS Agent and SuccessFactors integration.":::
+:::image type="content" source="media/agent-and-successfactors-integration.png" alt-text="Diagram of the high-level components comprising overall solution for ESS Agent and SuccessFactors integration.":::
 
 The above diagram outlines the high-level components comprising overall solution for ESS Agent and SuccessFactors integration. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components and bring in the right stakeholders to set up an environment to deploy and test ESS Agent.
 
@@ -90,7 +90,7 @@ For SAP SuccessFactors (SF) integration, as ESS Agent uses OData v2.0, it’s re
 
 The following diagram is a high-level overview of the OAuth Authentication process in SAP SuccessFactors:
 
-:::image type="content" source="media/ess-agent-oauth-authentication-process.png" alt-text="Diagram of high-level overview of the OAuth Authentication process in SAP SuccessFactors.":::
+:::image type="content" source="media/agent-authentication-process.png" alt-text="Diagram of high-level overview of the OAuth Authentication process in SAP SuccessFactors.":::
 
 You can ignore this step if SSO is already established for SAP SuccessFactors with Microsoft Entra.
 
@@ -352,7 +352,7 @@ value
 }
 ```
 
-:::image type="content" source="media/ess-agent-oauth-flow.png" alt-text="Diagram that shows Permissions flow.":::
+:::image type="content" source="media/agent-authentication-flow.png" alt-text="Diagram that shows Permissions flow.":::
 
 ### Role Based Permissions Config
 
@@ -374,7 +374,7 @@ check for in role id
 } 
 ```
 
-:::image type="content" source="media/ess-agent-oauth-flow-context.png" alt-text="Diagram that shows the Role based permissions.":::
+:::image type="content" source="media/agent-authentication-flow-context.png" alt-text="Diagram that shows the Role based permissions.":::
 
 ### User Context Flow – High-level logic
 
@@ -399,23 +399,23 @@ check for in role id
 - **filter:** {"personIdExternalVal": "123456"}
 - **userRoles:** \["123", "345"\]
 
-:::image type="content" source="media/ess-agent-oauth-flow-scenario.png" alt-text="Diagram that shows the Read Flow.":::
+:::image type="content" source="media/agent-authentication-flow-scenario.png" alt-text="Diagram that shows the Read Flow.":::
 
 1. The flow retrieves the config using the *scenarioName* variable and in parallel preps the filter query.
 2. The flow retrieves the data and label entities from the config using Dataverse plugin.
 3. Flow calls child flow to check permissions by passing the *userRoles*, alias, and config.
 4. If Permission flow returns *false*, then the flow will terminate and respond to copilot that user doesn't have permissions.
 
-   :::image type="content" source="media/ess-agent-oauth-flow-condition.png" alt-text="Diagram that shows the Read Flow termination.":::
+   :::image type="content" source="media/agent-authentication-flow-condition.png" alt-text="Diagram that shows the Read Flow termination.":::
 
 5. Flow then in parallel makes OData calls for the entity data and the labels.
 6. To get the labels first the flow checks if there are any labels to query in the config and then preps the variables that are needed.
 
-   :::image type="content" source="media/ess-agent-oauth-flow-query.png" alt-text="Diagram that shows flow checks if there are any labels to query in the config.":::
+   :::image type="content" source="media/agent-authentication-flow-query.png" alt-text="Diagram that shows flow checks if there are any labels to query in the config.":::
 
 7. Flow will Query SF OData Metadata entity using the values collected earlier from the config. Due to the response being metadata the flow does some manipulation to get the data into key value pairs.
 
-    :::image type="content" source="media/ess-agent-oauth-flow-variable.png" alt-text="Diagram that shows Query SF OData Metadata entity.":::
+    :::image type="content" source="media/agent-authentication-flow-variable.png" alt-text="Diagram that shows Query SF OData Metadata entity.":::
 
 8. Lastly it returns three variables, such as *labelResponse*, *modelResponse*, and *isSucceeded*.
 
