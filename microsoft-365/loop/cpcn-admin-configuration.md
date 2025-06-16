@@ -45,6 +45,8 @@ You can also use security or dynamic groups. For details, see [Create, edit, or 
 
 Copilot Pages and Copilot Notebooks are independent of Loop. You can enable or disable them separately from Loop in your organization.
 
+Copilot Pages and Copilot Notebooks all use the same Loop My workspace container. Refer to [storage](cpcn-storage.md) for more information.
+
 To share Copilot Pages as interactive components (instead of just hyperlinks) in Teams, Outlook, Whiteboard, OneNote, or the Loop app, Loop components must be enabled. Without Loop components enabled in the Microsoft 365 ecosystem, Copilot Pages are only interactive within the M365 Copilot app and supported chat experiences. For details on enabling Loop components in the Microsoft 365 ecosystem, see [Loop admin policies](loop-admin-configuration.md).
 
 ## User experience when Copilot Pages and Copilot Notebooks are disabled
