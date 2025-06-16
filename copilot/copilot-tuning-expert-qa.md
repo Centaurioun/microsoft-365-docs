@@ -1,6 +1,5 @@
-
 ---
-title:  Configure Copilot Tuning for Expert Q&A
+title: Configure Copilot Tuning for Expert Q&A
 author: danielabom
 ms.author: danielabo
 manager: calvind
