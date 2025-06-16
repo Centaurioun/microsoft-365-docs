@@ -91,8 +91,6 @@ Designate users who are authorized to use Copilot Tuning to fine-tune task-speci
 
 You can designate up to 10 users to be model makers. If you need more than 10 model makers in your organization, reach out to Copilot Tuning support or your Microsoft account team.
 
-:::image type="content" source="media/copilot-tuning-admin-guide/manage-users.png" alt-text="Copilot Tuning settings in the admin center with specific users in the organization specified" border="false":::
-
 When you add a user to Copilot Tuning, they receive an email with instructions to get started. You can also use the **Copilot Tuning** control in the admin center to remove users from Copilot Tuning.
 
 ### Manage tuned task-specific models
