@@ -17,6 +17,8 @@ description: Get answers to frequently asked questions about responsible AI and 
 
 # Responsible AI FAQ for Microsoft 365 Copilot Tuning
 
+<!-- cSpell:ignore calvind emrek emrekiciman pretrained -->
+
 This FAQ article helps answer questions about the responsible use of AI in [Microsoft 365 Copilot Tuning](copilot-tuning-overview.md).
 
 ## What is Microsoft 365 Copilot Tuning?
@@ -31,7 +33,7 @@ The purpose of Copilot Tuning is to extend the capabilities of Microsoft 365 Cop
 
 ## What are the intended uses of Copilot Tuning?
 
-Copilot Tuning and the adaptation and fine-tuning it provides to Microsoft 365 Copilot scenarios can be used for multiple purposes. The system’s intended uses include:
+Copilot Tuning and the adaptation and fine-tuning it provides to Microsoft 365 Copilot scenarios can be used for multiple purposes. The system's intended uses include:
 
 - To enhance question answering quality. This use case includes improving response fluency, formatting, length, organization, multi-document reasoning, and domain-specific reasoning. For example, ensuring responses follow style guidelines and incorporate relevant domain-specific logic.
 - To create drafts of specialized documents in accordance with standardized workflows. This use case includes merging various precedent documents and contextual information into a draft contract or report, while adhering to preferred style, organization, and other relevant specifications.
@@ -39,7 +41,7 @@ Copilot Tuning and the adaptation and fine-tuning it provides to Microsoft 365 C
 
 ## What should model makers consider when applying capabilities to specific tasks?
 
-Copilot Tuning’s fine-tuning and adaptation improves AI quality, but it can still occasionally make mistakes. When applying Copilot Tuning within a specific setting, customers should evaluate the quality of Copilot Tuning and its reliability for their scenario.
+Copilot Tuning's fine-tuning and adaptation improves AI quality, but it can still occasionally make mistakes. When applying Copilot Tuning within a specific setting, customers should evaluate the quality of Copilot Tuning and its reliability for their scenario.
 
 When using Copilot Tuning to improve question & answer scenarios, fine-tuning data should be used to tailor responses to be understandable and useful to the specific audience. In service scenarios, such as customer service or HR scenarios, we recommend that there be an escalation path to address potential mistakes.
 
@@ -68,7 +70,7 @@ Preparing high-quality and comprehensive training data is critical for improving
 
 ## How should model makers evaluate Copilot Tuning for specific use cases?
 
-After using Copilot Tuning to create a task-specific, organization-specific agent, we recommend customers perform an evaluation of the agent to validate that its results are effective and appropriate for the task.
+After using Copilot Tuning to create a task-specific, organization-specific agent, we recommend customers perform an evaluation of the agent to validate that its results are effective and appropriate for the task. If the results don't meet expectations, customers can adjust their training data or modify the instructions given to Copilot Tuning and repeat the fine-tuning process. It might take multiple iterations of this process to achieve the desired results.
 
 ## Related content
 
