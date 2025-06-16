@@ -56,7 +56,7 @@ Improve the model instructions to prevent common errors in tenant document gener
 
 Check the format of the input data to ensure that it matches the data used during model training.
 
-If you need support or want to provide feedback, see [Copilot Tuning FAQ][/copilot/copilot-tuning-faq.yml).
+If you need support or want to provide feedback, see [Copilot Tuning FAQ](/copilot/copilot-tuning-faq.yml).
 
 ## Related Content
 
