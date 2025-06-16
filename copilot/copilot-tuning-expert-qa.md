@@ -1,6 +1,6 @@
 
 ---
-title:  Configure Copilot Tuning for Expert Q&A
+title: Configure Copilot Tuning for expert Q&A
 author: danielabom
 ms.author: danielabo
 manager: calvind
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 description: This article describes how to use Copilot Tuning to build an AI model for expert Q&A.
 ---
 
-# Configure Copilot Tuning for Expert Q&A
+# Configure Copilot Tuning for expert Q&A
 
 Copilot Tuning models are designed to provide complex, domain-specific answers for user queries within your organization. These models require structured domain content and integrate with Copilot agents for interactive query processing. Explore best practices, scenarios, limitations, and requirements for effective implementation.
 
