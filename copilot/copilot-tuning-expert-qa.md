@@ -61,7 +61,7 @@ Model Maker also prompts you to fill out a questionnaire that describes the cont
 
 To set up an Expert Q&A model, follow these steps to ensure a smooth configuration.
 
-1. In Copilot Studio, select **Create a new model**, and provide the model name, task type, and description.
+1. In Copilot Studio, select **Create a new model**, and provide the model name and description.
 1. Set up expert content by adding domain-specific documentation.
 1. Complete the model maker questionnaire, which helps describe the content, domain expertise, and intended functionality of the Copilot Tuning declarative agent. This information is used to guide the training data generation and behavior of the model.
 1. Configure model details by defining query handling, multi-turn interaction, and citation depth.
