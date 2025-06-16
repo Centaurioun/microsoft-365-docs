@@ -21,17 +21,17 @@ appliesto:
 > [!IMPORTANT]
 > This is a Copilot agent built by Microsoft that's still in preview and subject to changes.
 >
-> Previews may not work correctly or in the manner that a commercial service may function. Unless otherwise noted in a separate agreement, previews are not included in the Service Level Agreement for the corresponding Online Service and may not be covered by customer support. We may change or discontinue previews at any time without notice. We may also choose not to make a preview generally commercially available. We may update previews at any time and for any reason, which may result in the deletion of Participant Data.
+> Previews might not work correctly or in the manner that a commercial service might function. Unless otherwise noted in a separate agreement, previews aren't included in the Service Level Agreement for the corresponding Online Service and might not be covered by customer support. We might change or discontinue previews at any time without notice. We might also choose not to make a preview commercially available. We might update previews at any time and for any reason, which might result in the deletion of Participant Data.
 >
-> Participant’s use of previews in a live production environment is at Participant’s sole discretion and own risk. Participant acknowledges that Previews may contain bugs or other errors that could cause Previews, any system they run on, and any applications running on them to malfunction or experience impaired performance, including the loss of Participant Data.
+> Participant’s use of previews in a live production environment is at Participant’s sole discretion and own risk. Participant acknowledges that Previews might contain bugs or other errors that could cause Previews, any system they run on, and any applications running on them to malfunction or experience impaired performance, including the loss of Participant Data.
 
 ## Overview
 
-ESS Agent is a new capability built by Microsoft that runs on top of Copilot leveraging Artificial Intelligence (AI) in providing relevant information to employees and taking actions on their HR data.
+ESS Agent is a new capability built by Microsoft that runs on top of Copilot using Artificial Intelligence (AI) in providing relevant information to employees and taking actions on their HR data.
 
-As most organizations manage HR data in a HRIS/HCM systems, ESS Agent should have access to HR data on behalf of users. SAP SuccessFactors is one of the HCM systems, this document will guide through the process required to integrate ESS Agent with SAP SuccessFactors.
+As most organizations manage HR data in a HRIS/HCM system, ESS Agent should have access to HR data on behalf of users. SAP SuccessFactors is one of the HCM systems, this article guides through the process required to integrate ESS Agent with SAP SuccessFactors.
 
-ESS Agent will continue to serve as unified assistants for employees to provide HR related services and connecting with SAP SuccessFactors makes it truly an enterprise HR assistant.
+ESS Agent continues to serve as unified assistants for employees to provide HR related services and connecting with SAP SuccessFactors makes it truly an enterprise HR assistant.
 
 ## Functional Synopsis
 
@@ -42,7 +42,7 @@ ESS Agent will act as a front-end for consuming information from SAP SuccessFact
 - Get Cost Center
 - Get Hire Date
 - Get Service Anniversary
-- Get Employee Id
+- Get Employee ID
 - Get Job Info
 - Get Position Number
 
@@ -59,7 +59,7 @@ The above diagram outlines the high-level components comprising overall solution
 
 - [Setup SAP OData connector](/power-platform/sap/connect/sap-odata-connector)
 - Admin access to SAP SuccessFactors
-- Admin access within the Azure Portal
+- Admin access within the Azure portal
 
 You can refer to the ESS Agent deployment guide for subscription requirements required for the ESS Agent itself.
 
@@ -68,29 +68,29 @@ You can refer to the ESS Agent deployment guide for subscription requirements re
 | **Roles / Persona**    | **Description** | **Activities performed** | **Configuration Areas**   |
 | --------- | ----------------------------- | ---------------------------------------- | ------------------------- |
 | **SAP SF Administrator** | User who can perform administrative tasks  |  1. Create an OAuth 2.0 Client Application in SuccessFactors <br> 2. Upload the SAML certificate to OAuth 2.0 Client Application within SuccessFactors <br>3. Determine the API server where SF is hosted <br> 4. Confirm the maker account mapped in SAP SF have OData API access | SAP SuccessFactors |
-| **Application Administrator (or) Cloud Application Administrator (or) Application Owner** | User who can configure Single SignOn (SSO) integration   | 1. Establish a Microsoft Enterprise Application <br> 2. Configure SAML settings within the Enterprise Application <br> 3. Obtain the Enterprise Application’s SAML certificate <br> 4. Establish trust | Azure Admin Portal  |
-| **Environment Maker** | User who can customize ESS Agent  | 1. Install and configure SAP SF Extension Pack <br> 2. Manage SAP SF Topics <br> 3. Setup User Context  | Microsoft Copilot Studio  |
-| **InfoSec/IT Infra/Change Control Board**  | User committee who are responsible for security infrastructure changes | 1. Configure IT platform services such as network and firewall rules| Network firewall policies |
+| **Application Administrator (or) Cloud Application Administrator (or) Application Owner** | User who can configure single sign-on (SSO) integration   | 1. Establish a Microsoft Enterprise Application <br> 2. Configure SAML settings within the Enterprise Application <br> 3. Obtain the Enterprise Application’s SAML certificate <br> 4. Establish trust | Azure Admin Portal  |
+| **Environment Maker** | User who can customize ESS Agent  | 1. Install and configure SAP SF Extension Pack <br> 2. Manage SAP SF <br> 3. Setup User Context  | Microsoft Copilot Studio  |
+| **InfoSec/IT Infra/Change Control Board**  | User committee who is responsible for security infrastructure changes | 1. Configure IT platform services such as network and firewall rules| Network firewall policies |
 
-### Infra setup for 3P ISV integration
+### Infra set up for 3P ISV integration
 
 Most enterprise organizations have secured their 3P HCMs/Knowledge Sources, etc. from external networks, as it’s critical for the line of business to protect sensitive information about employees, organizations, knowledge assets, etc.
 
 When there’s a need to integrate these enterprise systems into ESS Agent to use it as a source for providing relevant information to the end users, these systems should be accessible to the Power Platform environment where these ESS Agents are hosted.
 
-These systems must be configured with allow lists for the source IP addresses from where the ESS Agent is hosted and executed, i.e. Power Platform environment. 
+These systems must be configured with allowlists for the source IP addresses from where the ESS Agent is hosted and executed, that is, Power Platform environment. 
 
 For overall Power Platform URLs and IP address ranges, see [Power Platform URLs and IP address ranges - Power Platform](/power-platform/admin/online-requirements).
 
 For 3P ISV connectors, see [Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
 
-For SAP SuccessFactors (SF) integration, as ESS Agent uses OData v2.0, it’s required to work with InfoSec to allowlist Power Platform connectors to communicate with this endpoint. If any additional data security requirements are to be met esp. for OData exchange, work with your security specialists to harden the security for data in transit.
+For SAP SuccessFactors (SF) integration, as ESS Agent uses OData v2.0, it’s required to work with InfoSec to allowlist Power Platform connectors to communicate with this endpoint. If any extra data security requirements are to be met especially for OData exchange, work with your security specialists to harden the security for data in transit.
 
-### Setup SSO for SAP SuccessFactors with Entra
+### Set up SSO for SAP SuccessFactors with Microsoft Entra
 
-You can ignore this step if SSO is already established for SAP SuccessFactors with Entra.
+You can ignore this step if SSO is already established for SAP SuccessFactors with Microsoft Entra.
 
-Below is a high-level overview of the OAuth Authentication process in SAP SuccessFactors:
+The following section is a high-level overview of the OAuth Authentication process in SAP SuccessFactors:
 
 #### Parameters for SuccessFactors connection
 
@@ -98,14 +98,14 @@ Below is a high-level overview of the OAuth Authentication process in SAP Succes
 - **SuccessFactors Client ID**
 - **App Resource URI** (`format: api://<App-ID>`)
 - **SuccessFactors OData Base URI**
-- **Company ID** - Represents the specific SuccessFactors environment for login
+- **Company ID** - Represents the specific SuccessFactors environment for sign in
 
 #### Key configuration notes
 
 - **User mapping**: Ensure that the Unique User Identifier claim of the Microsoft Entra ID user aligns precisely with the **user alias** in SuccessFactors (*one-to-one matching*).
 - **User access control**: Only users or groups listed in the Enterprise Application will be allowed to authenticate SuccessFactors.
 - **Resource URI**: Found in the Enterprise App settings under Expose an API as the Application ID URI.
-- **Company ID**: It is based on the enabled SuccessFactors modules.
+- **Company ID**: It's based on the enabled SuccessFactors modules.
 
 #### High-level overview
 
@@ -118,18 +118,18 @@ Below is a high-level overview of the OAuth Authentication process in SAP Succes
 
 ### Create a Microsoft Entra ID Enterprise Application
 
-1. Open the Azure Portal and go to **Microsoft Entra ID > Enterprise Applications**.
+1. Open the Azure portal and go to **Microsoft Entra ID > Enterprise Applications**.
 2. Select **New application**.
 3. Search for and select **SAP SuccessFactors**
 4. Assign a name for the application and select **Create**
 5. Go to **Single sign-on** and select **SAML**
 6. Follow specific guidelines in the **SuccessFactors SSO Configuration Guide** 
 7. Configure the following:
-   1. **Identifier (Entity ID)**: Set to `api://<Enterprise App ID>` (e.g., `api://33135bc6be6a-4cdc-9c96-af918e367425`)
+   1. **Identifier (Entity ID)**: Set to `api://<Enterprise App ID>` (for example, `api://33135bc6be6a-4cdc-9c96-af918e367425`)
      > [!NOTE]
      > Recommended to use the SF instance URL `https://<sfinstance>.successfactors.com`
 
-   2. **Reply URL**: Used in the SAML token as the Recipient field (e.g., `https://<apiserver>/oauth/token`)
+   2. **Reply URL**: Used in the SAML token as the Recipient field (for example, `https://<apiserver>/oauth/token`)
 
      > [!NOTE]
      > This is important for the claims process to which the API server where SF instance is hosted must be provided, for example if the SF instance is hosted in one of the API servers `api68sales.successfactors.com`, then the URL should be `https://api68sales.successfactors/oauth/token`.
@@ -137,25 +137,25 @@ Below is a high-level overview of the OAuth Authentication process in SAP Succes
 
    3. **Sign-On URL**: Advisable to set as `https://<your-sfurl>/sf/start?company=<CompanyID>&logonMethod=SSO`.
      > [!NOTE]
-     > If SF instance for Contoso Corporation is "Contoso" and company ID is "CNTPART000100", then the URL will look as below: `<https://contoso.successfactors.com/sf/start?company=CNTPART000100&loginMethod=SSO`.
+     > If SF instance for Contoso Corporation is "Contoso" and company ID is "CNTPART000100," then the URL will look as below: `<https://contoso.successfactors.com/sf/start?company=CNTPART000100&loginMethod=SSO`.
 
 8. Edit the Attributes and Claims section: (come to this section after completing the creation of OAUTH 2.0 Client application in SuccessFactors)
     1. Add a claim for api_key with the value of the API Key from SuccessFactors
     2. Update the *Unique User Identifier* claim to match the unique ID for each SuccessFactors user
 
      > [!NOTE]
-     > Choose the correct name identifier format based on the user mapping between Entra and SAP SuccessFactors. For example, if "Employee ID" is used as a login user ID for SAP SuccessFactors, then the mapping of source attribute should be the correct attribute from Entra and since this is just an Employee ID without any email format, the **Name identifier format** should be set as **Unspecified**.
+     > Choose the correct name identifier format based on the user mapping between Microsoft Entra and SAP SuccessFactors. For example, if "Employee ID" is used as a sign in user ID for SAP SuccessFactors, then the mapping of source attribute should be the correct attribute from Microsoft Entra and since this is just an Employee ID without any email format, the **Name identifier format** should be set as **Unspecified**.
 
-9. Download the **Certificate (Base64 format)** from this application – this is required for completing the next step of creating an OAuth 2.0 Client Application in SuccessFactors. A certificate can be downloaded without completing the step #8 above and complete the OAuth 2.0 Client application setup in SuccessFactors to obtain the "api_key", which is required to complete the previous step.
-10. Assign users and groups – add all the users and/or groups required to access SAP SF via the ESS Agent under “Users and groups" section within Enterprise applications configuration for SAP SuccessFactors application created in Entra.
+9. Download the **Certificate (Base64 format)** from this application – this is required for completing the next step of creating an OAuth 2.0 Client Application in SuccessFactors. A certificate can be downloaded without completing the step #8 above and complete the OAuth 2.0 Client application setup in SuccessFactors to obtain the "api_key," which is required to complete the previous step.
+10. Assign users and groups – add all the users and/or groups required to access SAP SF via the ESS Agent under “Users and groups" section within Enterprise applications configuration for SAP SuccessFactors application created in Microsoft Entra.
 
 ### Create an OAuth 2.0 Client Application in SuccessFactors
 
-1. Log in to the *SuccessFactors Web UI* with an admin account.
-2. Go to Manage OAuth2 Client Applications.
-3. Select Register Client Application.
+1. Sign-in to the **SuccessFactors Web UI** with an admin account.
+2. Go to **Manage OAuth2 Client Applications**.
+3. Select **Register Client Application**.
 4. Fill out the required fields:
-    1. **Company:** Auto-populated
+    1. **Company:** Autopopulated
     2. **Application Name:** Any descriptive name
     3. **Description:** Any descriptive text
     4. **Application URL:** Can be any random URL
@@ -167,7 +167,7 @@ Below is a high-level overview of the OAuth Authentication process in SAP Succes
 
 ### Configure Enterprise Application
 
-1. In the **Azure Portal**, go to **App Registrations,** select **SAP SuccessFactors** application created in the previous section.
+1. In the **Azure Portal**, go to **App Registrations** and select **SAP SuccessFactors** application created in the previous section.
 2. Under **Expose an API**, locate **Resource URI** (Application ID URI).
 3. Select **Add a client application**.
 4. Enter the Client ID for SAP OData: `6bee4d13-fd19-43de-b82c-4b6401d174c3`.
@@ -177,7 +177,7 @@ Below is a high-level overview of the OAuth Authentication process in SAP Succes
 
 ### Configure SuccessFactors to trust Microsoft Entra ID
 
-1. Log in to the SuccessFactors Web UI with an admin account.
+1. Sign-in to the SuccessFactors Web UI with an admin account.
 2. Go to **Manage OAuth2 Client Applications**.
 3. Select the client application that’s been created earlier.
 4. Update the certificate to the one downloaded from Microsoft Entra ID and paste only the certificate body content without the header and footer.
@@ -194,7 +194,7 @@ Below is a high-level overview of the OAuth Authentication process in SAP Succes
 8. Run the flow to test the connection.
 9. Verify the run history for successful authentication and data retrieval.
 
-For more information on setting up SSO for SAP SuccessFactors with Entra, see [Set up Microsoft Entra ID using SuccessFactors](power-platform/sap/connect/entra-id-using-successfactors).
+For more information on setting up SSO for SAP SuccessFactors with Microsoft Entra, see [Set up Microsoft Entra ID using SuccessFactors](power-platform/sap/connect/entra-id-using-successfactors).
 
 ## Install SuccessFactors Extension Pack for ESS Agent
 
@@ -211,10 +211,10 @@ The following are the steps required to install & enable the SuccessFactors Exte
    1. Open the ESS Agent in Copilot Studio.
    2. Navigate to **Settings**.
    3. Select **Customize** from the left navigation under the Settings.
-   4. Select **Employee Self Service HR SuccessFactors** and click **Install**.
-   5. When prompted, update the connections as described by clicking **...** buttons on the righthand side for each connection.
-   6. The first connection is the user account which should be automatically signed in
-   7. The second connection is for the OData API which requires the following parameters to be configured.
+   4. Select **Employee Self Service HR SuccessFactors** and select **Install**.
+   5. When prompted, update the connections as described by clicking **...** buttons on the right-hand side for each connection.
+   6. The first connection is the user account, which should be automatically signed in.
+   7. The second connection is for the OData API, which requires the following parameters to be configured.
 
 **Parameters to configure:**
 
@@ -227,20 +227,20 @@ The following are the steps required to install & enable the SuccessFactors Exte
 |**Company ID** |Company ID|
 
 > [!NOTE]
-> SAP SF OData Connector uses maker connection in all flows which should use SF API user credentials to establish connection.
+> SAP SF OData Connector uses maker connection in all flows, which should use SF API user credentials to establish connection.
 
-## Setup SuccessFactors Extension Pack for ESS Agent
+## Set up SuccessFactors Extension Pack for ESS Agent
 
 The SuccessFactors extension pack requires few initial setups for the agent flows and templates. The following sections are required to configure the required components:
 
 ### Setup User Context
 
-This step is required to set the user context for the ESS Agent, which primarily does the user mapping for Entra and pass it on to SAP SuccessFactors.
+This step is required to set the user context for the ESS Agent, which primarily does the user mapping for Microsoft Entra and pass it on to SAP SuccessFactors.
 
 1. Open the ESS Agent in Copilot Studio
 2. Go to **Topics**
 3. Select **\[Admin\] – User Context – Setup**
-4. In the canvas, click on **… More** and select **</> Open code editor**
+4. In the canvas, select **… More** and select **</> Open code editor**
 5. Replace the existing code with the following code snippet:
 
    ```YAML
@@ -259,22 +259,22 @@ This step is required to set the user context for the ESS Agent, which primarily
    ```
 
    > [!NOTE]
-   > The highlighted section in the code transforms username from the logged in users’ principal name to SAP SuccessFactors user ID, so please use this based on your environment setup between Entra and SAP SuccessFactors. Currently the agent supports only User Principal Name (UPN) as a key identifier, if there are other attributes to be used as a key identifier then a custom logic should be implemented to get the correct username for SAP SuccessFactors.
-6. Click **Save** for changes.
+   > The highlighted section in the code transforms username from the logged in users’ principal name to SAP SuccessFactors user ID, so use this based on your environment setup between Microsoft Entra and SAP SuccessFactors. Currently the agent supports only User Principal Name (UPN) as a key identifier, if there are other attributes to be used as a key identifier then a custom logic should be implemented to get the correct username for SAP SuccessFactors.
+6. Select **Save** for changes.
 
 #### Setup Templates
 
-ESS Agent comes with few pre-defined templates that are being used for each Topics. These templates are shipped with the default data attribute paths, if there are custom entities and paths being used in SAP SuccessFactors, then these templates must be customized matching the SAP SuccessFactors entities.
+ESS Agent comes with few predefined templates that are being used for each scenario. These templates are shipped with the default data attribute paths, if there are custom entities and paths being used in SAP SuccessFactors, then these templates must be customized matching the SAP SuccessFactors entities.
 
-Please follow the steps below to set up templates:
+Follow the steps below to set up templates:
 
 1. Open ESS Agent in Copilot Studio.
-2. Click **Settings** in the top right corner of agent ribbon.
+2. Select **Settings** in the top right corner of agent ribbon.
 3. Select **Customize** from the agent settings left navigation pane.
 4. Select **Employee Self Service HR SuccessFactors** extension pack.
-5. Click **Open** from the dialog popup.
+5. Select **Open** from the dialog popup.
 6. Select **Manage** in the Configuration section.
-7. All the template configurations available will be listed in Power Apps, please select each of the "Get" templates to configure the right entities and paths.
+7. All the template configurations available will be listed in Power Apps, so select each of the "Get" templates to configure the right entities and paths.
 8. Following is an example of the Get configuration template
 
    ```json
@@ -329,11 +329,11 @@ _`"{""personIdExternalVal"": """ & Global.ESS_UserContext_Employee_Id & """,""us
 
 ## Permissions and Role based permissions configuration
 
-There are two permissions configs which can be used. The permissions flow will check if **RoleBased** permissions are provided in the config and choose that over permissions metadata otherwise it will always use permissions metadata.
+There are two permissions configurations that can be used. The permissions flow will check if **RoleBased** permissions are provided in the config and choose that over permissions metadata otherwise it will always use permissions metadata.
 
 ### Permissions Config
 
-The Permissions flow calls the OData Connector with _CheckUserPermission_ as its relative path and _permissionMetadata_ in the config as the queryString. OData connector then returns a true or false value dictating if the user has permission or not and that is returned to the Get Flow.
+The Permissions flow calls the OData Connector with *CheckUserPermission* as its relative path and *permissionMetadata* in the config as the queryString. OData connector then returns a true or false value dictating if the user has permission or not and that is returned to the Get Flow.
 
 ```json
 { 
@@ -352,7 +352,7 @@ value
 
 ### Role Based Permissions Config
 
-Role based permissions uses the _roleId_ provided in the config to check against _UserRoles_ variable that is part of the user context. The flow queries _RBPRole_ with _roleId_ given in config which returns all the _permissionStringValues_ linked to the _roleId_. Then it matches the _permStringValue_ in the config to what the OData connector returned. Manager Scenarios are required to use RBP role because we are checking if the manager has permissions for multiple users at the same time and therefore using _PermissionsMetadata_ would have been slower. In this case, we can check that the user has 115 role which gives him permission to make changes their directs. Role Id must be created by the maker if current SF implementation does not have it.
+Role based permissions use the *roleId* provided in the config to check against *UserRoles* variable that is part of the user context. The flow queries *RBPRole* with *roleId* given in configuration, which returns all the *permissionStringValues* linked to the *roleId*. Then it matches the *permStringValue* in the config to what the OData connector returned. Manager Scenarios are required to use RBP role because we're checking if the manager has permissions for multiple users at the same time and therefore using *PermissionsMetadata* would have been slower. In this case, we can check that the user has 115 role, which gives them permission to make changes for directs. Role ID must be created by the maker if current SF implementation doesn't have it.
 
 ```json
 { 
@@ -372,100 +372,376 @@ check for in role id
 
 ### User Context Flow – High-level logic
 
-1. Setting a variable with the filter parameters which in this case is the alias of the user the context is retrieved for
+1. Setting a variable with the filter parameters, which in this case is the alias of the user the context is retrieved for.
 2. Next split into parallel calls to reduce time:
-    1. Left side retrieves the user context config in the first Dataverse call and 2nd Dataverse call retrieves the filter and request entities which we are going to query for in the OData connector at the end. After Left side is complete the flow will have retrieved all the requested entities from the config for the user.
-    2. Right side retrieves Config to check if user _isManager_ in the first Dataverse call and in the 2nd Dataverse call flow retrieves the filter and request entities to query for. With that config the flow queries for directs under the user and retrieves necessary information such as in this case _userId_ of Directs.
-3. If SF call for user data doesn't return anything we terminate the flow and respond to copilot user not found
-4. Split into parallel calls to check if the user has multiple records on the left
-5. The left side checks if there are multiple records and then runs a child flow that gets the active user Id and updates the context. Then the flow makes an OData call to get the user's roles by their user id
-6. The right-side checks for open positions if the user is a manager and
+    1. Left side retrieves the user context config in the first Dataverse call and second Dataverse call retrieves the filter and request entities, which we're going to query for in the OData connector at the end. After Left side is complete the flow will have retrieved all the requested entities from the config for the user.
+    2. Right side retrieves Config to check if user *isManager* in the first Dataverse call and in the second Dataverse call flow retrieves the filter and request entities to query for. With that config the flow queries for directs under the user and retrieves necessary information such as in this case *userId* of Directs.
+3. If SF call for user data doesn't return anything, we terminate the flow and respond to copilot user not found.
+4. Split into parallel calls to check if the user has multiple records on the left.
+5. The left side checks if there are multiple records and then runs a child flow that gets the active user ID and updates the context. Then the flow makes an OData call to get the user's roles by their user ID.
+6. The right-side checks for open positions if the user is a manager and **IsManagerCheckVacantPositions** is set to True. It makes Dataverse calls to get the necessary configs to make the SF OData Request then updates *IsManager* variable.
+7. Lastly Flow composes an object with all the required user context fields and returns it to Copilot Studio (CPS).
 
-**IsManagerCheckVacantPositions** is set to True. It makes Dataverse calls to get the necessary configs to make the SF OData Request then updates _IsManager_ variable
-
-1. Lastly Flow composes an object with all the required user context fields and returns it to CoPilot Studio (CPS) Read Flow – High-level logic
+### Read Flow – High-level logic
 
 **Input Variables:**
 
 - **loggedInUserId:** alias
-- **scenarioName:** Config Name Ex:
-
-"msdyn_HRSAPSuccessFactorsHCMEmployeeGetNationalId"
-
+- **scenarioName:** Config Name, example:"msdyn_HRSAPSuccessFactorsHCMEmployeeGetNationalId"
 - **userLocale:** en_US
 - **targetUserId:** alias
 - **filter:** {"personIdExternalVal": "123456"}
 - **userRoles:** \["123", "345"\]
 
-1. The flow retrieves the config using the _scenarioName_ variable and in parallel preps the filter query
-2. The flow retrieves the data and label entities from the config using Dataverse plugin
-3. Flow calls child flow to check permissions by passing the _userRoles_, alias, and config
-4. If Permission flow returns _false_ then the flow will terminate and respond to copilot that user does not have permissions
+1. The flow retrieves the config using the *scenarioName* variable and in parallel preps the filter query.
+2. The flow retrieves the data and label entities from the config using Dataverse plugin.
+3. Flow calls child flow to check permissions by passing the *userRoles*, alias, and config.
+4. If Permission flow returns *false*, then the flow will terminate and respond to copilot that user doesn't have permissions.
 5. Flow then in parallel makes OData calls for the entity data and the labels.
-6. To get the labels first the flow checks if there are any labels to query in the config and then preps the variables which will be needed
+6. To get the labels first the flow checks if there are any labels to query in the config and then preps the variables that are needed.
 7. Flow will Query SF OData Metadata entity using the values collected earlier from the config. Due to the response being metadata the flow does some manipulation to get the data into key value pairs.
-8. Lastly it returns 3 variables _labelResponse_, _modelResponse_, and _isSucceeded_
+8. Lastly it returns three variables, such as *labelResponse*, *modelResponse*, and *isSucceeded*.
 
-Employee Read Scenarios – Configuration
+### Employee Read Scenarios – Configuration
 
-The Topics that are shipped with ESS Agent preview are limited only for “Read” scenarios and the “Update” scenarios are not supported yet, even thought they are available for the current version (please refer the version history on top of this document) of agent.
+The scenarios that are shipped with ESS Agent preview are limited only for "Read" scenarios and the “Update” scenarios aren't supported yet, even thought they're available for the current version of agent.
 
-Each of the Read scenario Topic have its own prompts, configurations, etc., but the actual execution of SAP SuccessFactors are encapsulated in the **SuccessFactors System Get Common Execution** Topic expecting the following inputs:
+Each of the Read scenario has its own prompts, configurations, etc., but the actual execution of SAP SuccessFactors is encapsulated in the **SuccessFactors System Get Common Execution** scenario expecting the following inputs:
 
-- - Filter parameters: Generally passing _Employee ID_ and _User ID_ for filtering query for Employee Read Topics
-    - ScenarioName: Config Name which is used by Dataverse call to get scenario configuration
-    - userIdentifier: User ID
+- **Filter parameters**: Generally passing *Employee ID* and *User ID* for filtering query for Employee Read scenarios
+- **ScenarioName**: Config Name, which is used by Dataverse call to get scenario configuration
+- **userIdentifier**: User ID
 
-Common orchestrator then returns a ModelResponse and LabelResponse which is then parsed by the LLM following the below instructions and generates answer for user:
+Common orchestrator then returns a ModelResponse and LabelResponse, which is then parsed by the LLM following the below instructions and generates answer for user:
 
-Extract the input from the below response (map the Label response \*value\* as key in model response attribute then provide model value)
+```yml
+Extract the input from the below response (map the Label response *value* as key in model 
+response attribute then provide model value) 
+Provide response to the user in a human readable form  
+Format it properly so it looks clean and readable 
+Use **only** data values from variable named as "successfactorsModelResponse" and use 
+variable named as "successfactorsLabelResponse" for labeling the data 
+Response Example: 
+Label Response: key":"company","value":"company" 
+Model Response: 
+"company":"12345" 
+Example Output: 
+Your company is 12345 (Contoso Germany) 
+```
 
-Provide response to the user in a human readable form
+The *Get Employee ID* and *Get Service Anniversary* scenario are exception to this common execution method, which is further explained in their respective sections.
 
-Format it properly so it looks clean and readable
+Authorization for all the scenarios is as follows:
 
-Use \*\*only\*\* data values from variable named as "successfactorsModelResponse" and use variable named as "successfactorsLabelResponse" for labeling the data
+- Authorization is done using the *permissionsMetadata* that is part of the Template configuration. The *permissionsMetadata* and *User ID* are used to create the query string for OData Connector in SuccessFactors Check User Permissions flow.
+- It's important to include *permissionMetadata* or *rolePermission* in template config file as there's no other authorization check if both of those fields are missing.
 
-Response Example:
+### Get Base Compensation
 
-Label Response: key":"company","value":"company"
+|Get Base Compensation| Definition|
+| ------------------ | --------------|
+| **Description**  | Returns the users’ compensation data such as compensation ratio and salary |
+| **Prompts**  | <li>>How much can I expect to earn annually, what is my salary? <li>Show me only my base salary details  |
+|**Response** |   Result |
+| **Scenario name**|`msdyn_HRSAPSuccessFactorsHCMEmployeeGetBaseCompensationAndCompaRatio`  |
+| **Filter** | Filters on *personIdExternal* using *ESS _UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"` |
+| **Values queried** | CompaRatio <br> Currency<br>AnnualBaseSalary |
 
-Model Response: "company":"12345"
+**Configuration:**
 
-Example Output:
+```json
+{ 
+    "scenario": "HRSAPSuccessFactorsHCMEmployeeGetBaseCompensationAndCompaRatio", 
+    "rootEntity": "EmpEmployment", 
+    "filter": "personIdExternal eq '{personIdExternalVal}' and userId eq 
+'{userIdVal}'", 
+    "requestEntities": [ 
+        { 
+            "key": "CompaRatio", 
+            "valuePath": "compInfoNav/empCompensationCalculatedNav/compaRatio", 
+            "labelPath": "EmpCompensationCalculated/compaRatio" 
+        }, 
+        { 
+            "key": "Currency", 
+            "valuePath": "compInfoNav/empCompensationCalculatedNav/currency", 
+            "labelPath": "EmpCompensationCalculated/currency" 
+        }, 
+        { 
+            "key": "AnnualBaseSalary", 
+            "valuePath": 
+"compInfoNav/empCompensationCalculatedNav/yearlyBaseSalary", 
+            "labelPath": "EmpCompensationCalculated/yearlyBaseSalary" 
+        } 
+    ], 
+    "permissionsMetadata": [ 
+        { 
+            "permType": "DATA_MODEL", 
+            "permLongValue": -1, 
+            "permStringValue": "$_payCompGroup_AnnualizedSalary_read" 
+        } 
+```
 
-Your company is 12345 (Contoso Germany)
+### Get Company Code 
 
-The *Get Employee Id* and *Get Service Anniversary* Topics are exception to this common execution method, which are further explained in their respective sections.
+|Get Company Code| Definition|
+| ------------------ | --------------|
+| **Description**    | Returns users’ company code information |
+| **Prompts**        | <li> What is my company code <li> get employee view on company code <li> display my company code <li> give me my company code, what is my company code? <li> Show me only my company code details |
+| **Response** | Result|
+| **Scenario name**  |`msdyn_HRSAPSuccessFactorsHCMEmployeeGetCompanyCode` |
+| **Filter** | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id* <br>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq'{userIdVal}'"`|
+| **Values queried** | CompanyCode <br> CompanyName (*No label is retrieved for company name as it is*) |
 
-Authorization for all the Topics are as follows:
+**Configuration**:
 
-- Authorization is done using the _permissionsMetadata_ that is part of the Template configuration. The _permissionsMetadata_ and _User Id_ are used to create the query string for OData Connector in SuccessFactors Check User Permissions flow
-- It is important to include _permissionMetadata_ or _rolePermission_ in template config file as there is no other authorization check if both of those fields are missing
+```json
+{ 
+    "scenario": "HRSAPSuccessFactorsHCMEmployeeGetCompanyCode", 
+"rootEntity": "EmpEmployment", 
+"filter": "personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'", 
+"requestEntities": [ 
+{ 
+"key": "CompanyCode", 
+"valuePath": "jobInfoNav/company", 
+"labelPath": "EmpJob/company" 
+}, 
+{ 
+"key": "CompanyName", 
+"valuePath": "jobInfoNav/companyNav/name", 
+"labelPath": "" 
+} 
+], 
+"permissionsMetadata": [ 
+{ 
+"permType": "DATA_MODEL", 
+"permLongValue": -1, 
+"permStringValue": "$_jobInfo_company_read" 
+} 
+] 
+} 
+```
 
-Get Base Compensation
+### Get Cost Center
 
-APPENDIX
+|Get Cost Center| Definition|
+| ------------------ | --------------|
+| **Description**    | Returns users’ current cost center |
+| **Prompts** |<li>What is my Cost Center<li>Can you show me the cost center I'm assigned to<li>Can you show me my cost center?<li>Show me only my cost center details|
+| **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetCostCenter`|
+| **Filter** | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p> Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`|
+| **Values queried** | CostCenterCode <br> CostCenterName (*CostCenterName label isn't retrieved as it isn't necessary for scenario*) |
 
-Troubleshooting:
+**Configuration**:
 
-SAP SF Single Sign-on issues with Entra Pre-requisites for troubleshooting:
+```json
+{ 
+    "scenario": "HRSAPSuccessFactorsHCMEmployeeGetCostCenter", 
+"rootEntity": "EmpEmployment", 
+"filter": "personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'", 
+"requestEntities": [ 
+{ 
+"key": "CostCenterCode", 
+"valuePath": "jobInfoNav/costCenter", 
+"labelPath": "EmpJob/costCenter" 
+}, 
+{ 
+"key": "CostCenterName", 
+"valuePath": "jobInfoNav/costCenterNav/name", 
+"labelPath": "" 
+} 
+], 
+"permissionsMetadata": [ 
+{ 
+"permType": "DATA_MODEL", 
+"permLongValue": -1, 
+"permStringValue": "$_jobInfo_cost-center_read" 
+} 
+] 
+} 
+```
+
+### Get Hire Date 
+
+|Get Hire Data| Definition|
+| ------------------ | --------------|
+| **Description**    | Returns the users’ hire date |
+| **Prompts**        | <li>  When is my original start date<li> Get my hire date<li> Get my start date<li> Show me only my hire date details   |
+| **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetHireDate`|
+| **Filter**  | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq'{userIdVal}'"`|
+| **Values queried** | HireDate   |
+
+**Configuration**:
+
+```json
+{ 
+    "scenario": "HRSAPSuccessFactorsHCMEmployeeGetHireDate", 
+"rootEntity": "EmpEmployment", 
+"filter": "personIdExternal eq '{personIdExternalVal}' and userId eq 
+'{userIdVal}'", 
+"requestEntities": [ 
+{ 
+"key": "HireDate", 
+"valuePath": "originalStartDate", 
+"labelPath": "EmpEmployment/originalStartDate" 
+} 
+], 
+"permissionsMetadata": [ 
+{ 
+"permType": "DATA_MODEL", 
+"permLongValue": -1, 
+"permStringValue": "$_employmentInfo_seniorityDate_read" 
+} 
+] 
+} 
+```
+
+### Get Service Anniversary
+
+|Get Service Anniversary| Definition|
+| ------------------ | --------------|
+|Description |This scenario performs a calculated functionality using the “HireDate” value with some PowerFx functions as follows:<p>**Years worked**<p><li>`RoundDown(DateDiff(Topic.startDate, Now(), TimeUnit.Years), 0)` <br>The formula calculates the number of complete years the employee has worked by finding the difference between current date and employee's start date and then rounding down to the nearest whole number<li>`DateDiff(Topic.startDate, Now(), TimeUnit.Years)` <br>This part of the formula calculates the difference in years between the employee's start date (`Topic.startDate`) and the current date (\`Now()\`).<li>`RoundDown(..., 0)`<br>This function takes the result of DateDiff and rounds it down to the nearest whole number. The 0 indicates the number of decimal places to round to, which in this case is zero, meaning it returns an integer value representing the complete years worked <p>**Service Anniversary Intervals in Years** <p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)`<br> This calculates how many complete intervals of the service anniversary duration the employee has worked. It divides the total years worked by the service anniversary duration and rounds down to the nearest whole number<p>**Upcoming Service Anniversary Count** <li>`Topic.serviceAnniversaryDuration \* (Topic.serviceAnniversaryIntervalsInYears + 1)`<br>This formula calculates the upcoming service anniversary count by multiplying the service anniversary duration by one more than the complete intervals already worked<p>**Calculated Service Anniversary Date**<br>`DateAdd(Topic.startDate, Topic.serviceAnniversaryDuration \*(RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0) + 1), TimeUnit.Years)`<p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)`<br> This part of the formula calculates how many complete intervals of the service anniversary duration the employee has worked by dividing the total years worked by the service anniversary duration and rounding down to the nearest whole number<li>`Topic.serviceAnniversaryDuration \* (RoundDown(Topic.yearsWorked /Topic.serviceAnniversaryDuration, 0) + 1)`<br>This calculates the total service anniversary intervals (plus one) to be added to the start date<li>`DateAdd(Topic.startDate, ..., TimeUnit.Years)`<br>Finally, this function adds the calculated intervals to the start date to determine the upcoming service anniversary date |
+| **Prompts**  | <li>When is my next service anniversary?<li>Next anniversary<li>Service anniversary<li>Show my service anniversary date <li>What is my service anniversary date |
+| **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetHireDate`  |
+| **Filter** | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`|
+| **Values queried** | HireDate |
+
+**Configuration**:
+
+```json
+{ 
+    "scenario": "HRSAPSuccessFactorsHCMEmployeeGetHireDate", 
+"rootEntity": "EmpEmployment", 
+"filter": "personIdExternal eq '{personIdExternalVal}' and userId eq 
+'{userIdVal}'", 
+"requestEntities": [ 
+{ 
+"key": "HireDate", 
+"valuePath": "originalStartDate", 
+"labelPath": "EmpEmployment/originalStartDate" 
+} 
+], 
+"permissionsMetadata": [ 
+{ 
+"permType": "DATA_MODEL", 
+"permLongValue": -1, 
+"permStringValue": "$_employmentInfo_seniorityDate_read" 
+} 
+] 
+} 
+```
+
+### Get Employee ID
+
+|Get Employee ID| Definition|
+| ------------------ | --------------|
+| **Description** | Reads *ESS_UsetContext_Employee_Id* and returns it to the user. There's no config required for this scenario. |
+| **Prompts**     | <li>What is my employee ID?<li>Show my employee ID?<li>What is my employee number? |
+
+### Get Job Info
+
+|Get Job Info| Definition|
+| ------------------ | --------------|
+| **Description** | Returns job information to the user, this includes Job Code, Job Title, Job Function, and Job Function Type |
+| **Prompts**     | <li>What is my job code<li>What is job code<li>What is my role<li>What is my job info • What is my job title? <li>Show me only my job details |
+| **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetJobInfo` |
+| **Filter**| Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"` |
+| **Values queried** | JobCode<br>JobTitle<br>JobFunction<br>JobFunctionType |
+
+**Configuration**:
+
+```json
+{ 
+    "scenario": "HRSAPSuccessFactorsHCMEmployeeGetJobInfo", 
+"rootEntity": "EmpEmployment", 
+"filter": "personIdExternal eq '{personIdExternalVal}' and userId eq 
+'{userIdVal}'", 
+"requestEntities": [ 
+        { 
+            "key": "JobCode", 
+            "valuePath": "jobInfoNav/jobCodeNav/name", 
+            "labelPath": "EmpJob/jobCode" 
+        }, 
+        { 
+            "key": "JobTitle", 
+            "valuePath": "jobInfoNav/jobTitle", 
+            "labelPath": "EmpJob/jobTitle" 
+        }, 
+        { 
+            "key": "JobFunction", 
+            "valuePath": "jobInfoNav/jobCodeNav/jobFunction", 
+            "labelPath": "FOJobCode/jobFunction" 
+        }, 
+        { 
+            "key": "JobFunctionType", 
+            "valuePath": "jobInfoNav/jobCodeNav/jobFunctionNav/jobFunctionType", 
+            "labelPath": "FOJobFunction/jobFunctionType" 
+        } 
+    ], 
+    "permissionsMetadata": [ 
+        { 
+            "permType": "DATA_MODEL", 
+            "permLongValue": -1, 
+            "permStringValue": "$_jobInfo_job-code_read" 
+        } 
+    ] 
+} 
+```
+
+### Get Position Number
+
+|Get Job Info| Definition|
+| ------------------ | --------------|
+| **Description**    | Returns position number acquired from SuccessFactors |
+| **Prompts**        |<li>What is my position ID <li> Get my position number <li> Show me only my position details  |
+| **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetPositionNumber` |
+| **Filter**   | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`|
+| **Values queried** |JobCode  |
+
+**Configuration**:
+
+```json
+{ 
+    "scenario": "HRSAPSuccessFactorsHCMEmployeeGetPositionNumber", 
+"rootEntity": "EmpEmployment", 
+"filter": "personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}' 
+and tolower(jobInfoNav/positionNav/effectiveStatus) eq 'a'", 
+"requestEntities": [ 
+{ 
+"key": "JobCode", 
+"valuePath": "jobInfoNav/position", 
+"labelPath": "EmpJob/position" 
+} 
+], 
+"permissionsMetadata": [ 
+{ 
+"permType": "DATA_MODEL", 
+"permLongValue": -1, 
+"permStringValue": "$_jobInfo_position_read" 
+} 
+] 
+} 
+```
+
+## Troubleshooting
+
+### SAP SF Single Sign-on issues with Microsoft Entra 
+
+**Pre-requisites for troubleshooting:**
 
 - Client tool for testing and managing APIs like Postman, Bruno, etc.
-- Access to <https://samltool.io>
+- Access to `<https://samltool.io>`
 - Basic knowledge in how the authentication flow works especially with SAML
 
-Please use the API client tool for testing, validating and confirming the assertion being generated and passed to SF. Refer the SAP support article for more instructions [3462403 - SuccessFactors OData API: OAuth 2.0 Authentication](https://userapps.support.sap.com/sap/support/knowledge/en/3462403)
+Use the API client tool for testing, validating, and confirming the assertion being generated and passed to SF. For more instructions, see [3462403 - SuccessFactors OData API: OAuth 2.0 Authentication](https://userapps.support.sap.com/sap/support/knowledge/en/3462403).
 
 The following highlighted are the critical pieces of information to be validated as part of claims authentication:
 
-1. _<NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">_ - please ensure that the correct NameID format is used for user mapping between Entra and SAP SF
-2. _<Attribute Name="api_key">_ - please ensure that the claims token have the correct api_key from SAP SF OAuth 2.0 client application created References:
+1. `<NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">` - Ensure that the correct NameID format is used for user mapping between Microsoft Entra and SAP SF.
+2. `<Attribute Name="api_key">` - Ensure that the claims token have the correct api_key from SAP SF OAuth 2.0 client application created.
 
-[SAP SuccessFactors API Reference Guide](https://help.sap.com/doc/2d1d6fcc4eae4db8b9bbd3103baee1c7/2411/en-US/HXMSuiteODataAPIRefGuideV4.pdf)
+## Related articles
 
-[SAP OData Connector Reference](https://learn.microsoft.com/en-us/connectors/sapodata/)
-
-[Set up Microsoft Entra ID using SuccessFactors (Preview)](https://learn.microsoft.com/en-us/power-platform/sap/connect/entra-id-using-successfactors)
-
-[Get started with the SAP OData connector](https://learn.microsoft.com/en-us/power-platform/sap/connect/sap-odata-connector)
+- [SAP SuccessFactors API Reference Guide](https://help.sap.com/doc/2d1d6fcc4eae4db8b9bbd3103baee1c7/2411/HXMSuiteODataAPIRefGuideV4.pdf)
+- [SAP OData Connector Reference](/connectors/sapodata/)
+- [Set up Microsoft Entra ID using SuccessFactors (Preview)](/power-platform/sap/connect/entra-id-using-successfactors)
+- [Get started with the SAP OData connector](/power-platform/sap/connect/sap-odata-connector)
