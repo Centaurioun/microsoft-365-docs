@@ -1,7 +1,8 @@
 ---
-title: "Troubleshoot issues withthe Copilot Tuning EXpert Q&A model"
-author: jasonjoh
-ms.author: jasonjoh
+title: Troubleshoot issues with the Copilot Tuning expert Q&A model
+description: This article describes some of the most common issues with the Microsoft 365 Copilot Tuning expert Q&A task fine-tuning and how to troubleshoot them.
+author: danielabom
+ms.author: danielabo
 manager: calvind
 ms.date: 06/17/2025
 audience: Admin
@@ -67,7 +68,7 @@ If your fine-tuned Q&A model's responses are not making sense or seem unrelated 
 
 If outputs are still poor: If you've done the above and the model's answers are still incorrect or incoherent, consider reaching out to support. There could be an edge-case issue with the fine-tuning pipeline itself. But in most cases, bolstering your training data (or adjusting the task instructions) should greatly improve the model's responses.
 
-##  The model's evaluation answers looked good, but the agent's answers aren't good
+## The model's evaluation answers looked good, but the agent's answers aren't good
 
 This is a known behavior. The fine-tuned model might perform well in the isolated evaluation, but the deployed agent's behavior can differ if the agent configuration doesn't fully carry over the model's nuances. In particular, the agent might need additional instructions to use the model effectively. To resolve this:
 

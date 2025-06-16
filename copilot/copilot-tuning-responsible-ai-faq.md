@@ -4,7 +4,7 @@ f1.keywords:
 ms.author: emrek
 author: emrekiciman
 manager: calvind
-ms.date: 06/10/2025
+ms.date: 06/17/2025
 audience: Admin
 ms.topic: faq
 ms.service: microsoft-365-copilot
