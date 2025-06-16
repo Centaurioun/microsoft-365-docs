@@ -33,7 +33,7 @@ The model supports various document formats, but there are specific limitations 
 
 - Content must be stored in SharePoint and be in supported formats (.docx, .pdf, .aspx); elements like embedded images or tables aren't supported.
 - Not intended for general productivity or web-wide knowledge queries; it's limited to tenant-specific content and not suitable for tasks like managing meetings or browsing general internet data.
-- Dependent on the snapshot time of training data, newer content must be enriched via Search.
+- Depending on the snapshot time of training data, newer content must be enriched via Search.
 - Response formatting might differ from standard Copilot Declarative Agents due to being on an older platform version (FluxV2 vs FluxV3), though migration to FluxV3 is in progress.
 
 While there's no minimum document count, better results are achieved with larger content sets; at least 20 documents are recommended for training.
@@ -48,30 +48,29 @@ Before you start, make sure that you have the following prerequisites in place:
 
 ## Set up an expert Q&A model
 
-Set up an **Expert Q&A model** using Copilot Tuning model maker in Microsoft Copilot Studio.
+Set up an **Expert Q&A model** using the Copilot Tuning model maker in Microsoft Copilot Studio.
 
 ### Model maker workflow
 
 To set up an Expert Q&A model:
 
 1. In Copilot Studio, select **Create a new model**, and provide the model name and description.
-1. Set up expert content by adding domain-specific documentation.
-1. Complete the fields to describe the content, domain expertise, and intended functionality of the Copilot Tuning declarative agent. This information is used to guide the training data generation and behavior of the model.
-1. Configure model details by defining query handling, multi-turn interaction, and citation depth.
+1. Click **Add knowledge** to add the sources your model will be trained on.
+1. Choose permissions.
+1. Select the task type.
 
 Copilot Studio checks the permissions for the selected content to ensure the security group or groups have appropriate access. Any inaccessible content isn't used during the training process.
 
 ### Declarative agent maker workflow
 
+You can create a Copilot Declarative Agent specialized as an Expert Q&A Agent to answer questions over the content collection you used to train the model in the Model Maker workflow above.
+
 To create a declarative agent for Microsoft 365 Copilot that answers questions based on domain-specific knowledge:
 
-1. Define and designate the repositories or databases where your structured content is stored and ensure that it covers all necessary domain-specific material.
-1. Integrate necessary security details by linking the model to the appropriate Entra ID groups, ensuring controlled access and security compliance.
-1. Provide domain expertise through a configuration questionnaire, including typical questions, key answer points, and the preferred response style and tone.
-1. Use the system's capability to automatically draft initial Q&A pairs based on your domain content, forming the foundational training dataset for the agent.
-1. Fine-tune the model and, when the training data is prepared, publish it and integrate it with the agent to initiate user interactions.
-1. In Copilot Studio, create a new agent by selecting the "Task-specific" option and choosing the appropriate Copilot Tuning model as the knowledge source for your Expert Q&A agent.
-1. Customize the agent's behavior by providing detailed instructions that guide its responses in terms of tone, style, and length to ensure that it aligns with your scenario and audience.
+1. In Copilot Studio, select **Create a task-specific agent**.
+1. Select **Task-specific** and click on **Continue** to see a list of available Copilot Tuning models that can serve as the Expert Q&A knowledge source for your agent.
+   A full list of set of configuration options is displayed. You can now customize the behavior of your agent, including instructions.
+1. Add instructions to guide the agent’s tone, length, and style based on your scenario and audience. These instructions help shape how the model responds to users, so be clear and specific. For example, for legal content, you might ask for concise, professional replies.
 
 ## Related content
 
