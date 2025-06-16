@@ -1,4 +1,3 @@
-
 ---
 title: "Troubleshoot Copilot Tuning guardrails"
 f1.keywords:
@@ -15,10 +14,9 @@ ms.collection:
 description: Find information about how to troubleshoot Copilot Tuning guardrails.
 ---
 
-
 # Troubleshoot Copilot Tuning guardrails
 
-This article describes some of the most common issues with Copilot Tuning guardrails and how to troubleshoot them.
+This article describes some of the most common issues with Microsoft 365 Copilot Tuning guardrails and how to troubleshoot them.
 
 [!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
 
