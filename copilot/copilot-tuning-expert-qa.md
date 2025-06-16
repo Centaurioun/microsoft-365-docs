@@ -1,5 +1,5 @@
 ---
-title:  Configure Copilot Tuning for Expert Q&A
+title: Configure Copilot Tuning for expert Q&A
 author: danielabom
 ms.author: danielabo
 manager: calvind
@@ -20,18 +20,23 @@ Copilot Tuning models are designed to provide complex, domain-specific answers f
 
 You can use the model maker to fine-tune a model that can complete the following capabilities:
 
-- Provide significant value when evaluating content collections that involve specialized and proprietary tenant knowledge, such as internal legal contracts, HR policies, and industry-specific data (e.g., oil and gas), which are not easily accessible online.
-- Handle multi-document reasoning to manage content distributed across multiple documents, directories, or folders associated with a common topic of interest, where questions can't be answered from a single source.
+- Acts as a special-purpose Declarative Agent trained on proprietary tenant knowledge in specialized domains (e.g., telecom, tax, HR, oil and gas) that are not available on the open web.
+- Answers complex, domain-specific questions by reasoning across multiple documents and making sense of distributed content (e.g., comparing regulatory implications across regions).
+- Delivers context-rich, nuanced answers using a fine-tuned LLM trained to correlate domain-specific content across documents.
+- Maintains scenario-appropriate tone, such as using an empathetic tone for HR-related responses.
+- Leverages the M365 Copilot Search stack for real-time enrichment, especially for recently added or updated content.
+- Preserves security and access controls by using M365 security groups to gate model training and access.
 
 ## Limitations
 
 The model supports various document formats, but there are specific limitations to consider when using your content.
 
-- Supported file types: `.docx`, `.pdf`, and `.aspx`.
-- Content must be stored in SharePoint.
-- Certain types of content are not supported, including embedded images or tables.
+- Content must be stored in SharePoint and be in supported formats (.docx, .pdf, .aspx); elements like embedded images or tables are not supported.
+- Not intended for general productivity or web-wide knowledge queries; it is limited to tenant-specific content and not suitable for tasks like managing meetings or browsing general internet data.
+- Dependent on the snapshot time of training data, newer content must be enriched via Search.
+- Response formatting may differ from standard Copilot Declarative Agents due to being on an older platform version (FluxV2 vs FluxV3), though migration to FluxV3 is in progress.
 
-While there is no lower limit to the number of documents that can be used, you can experience better results with a larger document base and it is recommended that you have at least 20 documents before training.
+While there's no minimum document count, better results are achieved with larger content sets; at least 20 documents are recommended for training.
 
 ## Prerequisites
 
@@ -43,13 +48,13 @@ Before you start, make sure that you have the following prerequisites in place:
 
 ## Set up an expert Q&A model
 
-Set up an **Expert Q&A model** using Copilot Tuning model maker in Microsoft Copilot Studio. 
+Set up an **Expert Q&A model** using Copilot Tuning model maker in Microsoft Copilot Studio.
 
 ### Model maker workflow
 
 To set up an Expert Q&A model:
 
-1. In Copilot Studio, select **Create a new model**, and provide the model name, task type, and description.
+1. In Copilot Studio, select **Create a new model**, and provide the model name and description.
 1. Set up expert content by adding domain-specific documentation.
 1. Complete the fields to describe the content, domain expertise, and intended functionality of the Copilot Tuning declarative agent. This information is used to guide the training data generation and behavior of the model.
 1. Configure model details by defining query handling, multi-turn interaction, and citation depth.
