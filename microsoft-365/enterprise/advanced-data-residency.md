@@ -46,16 +46,13 @@ The following workloads are included in ADR. For more information, see:
 > [!NOTE]
 > *The Microsoft Purview services list mentioned above includes all services covered as part of the Advanced Data Residency commitment as of November 2024. Additional Microsoft Purview services are not currently supported.
 
-> [!NOTE]
-> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
-
 ## Licensing and Purchase
 
 ### Eligibility
 
 The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterprise customers who have comprehensive data residency requirements. To be eligible to purchase ADR, customers must meet the following prerequisites:
 
-- The _Tenant_ _Default Geography_ must be one of the countries or regions included in the _Local Region Geography_: Australia, Brazil, Canada, France, Germany, India, Indonesia, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, and United Kingdom.
+- The _Tenant_ _Default Geography_ must be one of the countries or regions included in the _Local Region Geography_: Australia, Brazil, Canada, Chile, France, Germany, India, Indonesia, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, and United Kingdom.
 - Customers must have licenses for one or more of the following products:
   - Microsoft 365 F1, F3, E3, or E5 (including SKUs without Microsoft Teams)
   - Office 365 F3, E1, E3, or E5 (including SKUs without Microsoft Teams)
