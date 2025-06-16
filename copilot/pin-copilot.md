@@ -24,7 +24,7 @@ description: "Learn how to improve the use of Microsoft 365 Copilot Chat across 
 # Pin Microsoft 365 Copilot Chat to the navigation bar
 
 > [!NOTE]
-> Starting in July 2025 and rolling out over time, Microsoft 365 Copilot Chat will be available in other Microsoft 365 apps like Word, Excel, PowerPoint, and more. The Pin Microsoft Copilot Chat setting will also expand to govern Copilot Chat across all Microsoft 365 apps where available.
+> Starting in July 2025 and rolling out over time, Microsoft 365 Copilot Chat will be available in other Microsoft 365 apps like Word, Excel, PowerPoint, and more. The Pin Microsoft 365 Copilot Chat setting will also expand to govern Copilot Chat across all Microsoft 365 apps where available.
 
 As an admin, you can pin Microsoft 365 Copilot Chat to the navigation bar of Teams, Outlook, and the Microsoft 365 Copilot app across the web, desktop, and mobile. Pinning makes it easy for users to access Copilot Chat as the secure and compliant generative AI chat solution that's available to them on their work identity (signed in with a Microsoft Entra account).
 
