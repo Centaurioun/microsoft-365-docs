@@ -22,7 +22,7 @@ You can view actual and accumulated cost breakdown by tenants and service type f
 
 </br>
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c9a4ced2-7ce3-4bc9-b42f-876b05497e1b]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a87d77a7-2c88-43fc-ae8c-5ba42765f956]
 
 </br>
 
