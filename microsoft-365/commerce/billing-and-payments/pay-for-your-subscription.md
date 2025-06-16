@@ -329,7 +329,7 @@ The admin center supports two alternate payment options for customers in India w
 2. You're redirected to the payment partner, BillDesk, where you choose UPI or NetBanking for your payment method.
 3. Follow the instructions in BillDesk to complete the transaction.
 
-After you submit the payment, allow time for the payment to appear in the admin center.
+    After you submit the payment, allow time for the payment to appear in the admin center.
 
 #### How am I refunded if I made a payment with UPI or NetBanking?
 
