@@ -59,11 +59,11 @@ Admin is can change this behavior by selecting an option for pinning Copilot Cha
 
 - **Pin Copilot to the navigation bar (recommended)**: Copilot Chat is automatically pinned for all users. Users aren't prompted.
 
-:::image type="content" source="media/pin-copilot.png" alt-text="Screenshot showing the option to pin Copilot to the navigation bar.":::
+    :::image type="content" source="media/pin-copilot.png" alt-text="Screenshot showing the option to pin Copilot to the navigation bar.":::
 
-- **Do not pin Copilot Chat to the navigation bar**: Copilot Chat is NOT automatically pinned to the navigation bar. Copilot Chat also no longer appears in the app launcher. In addition, users are blocked from acquiring or installing the Microsoft 365 Copilot app from the MetaOS store (this restriction doesn't apply to Teams or Outlook).
+- **Do not pin Copilot Chat to the navigation bar**: Copilot Chat is not automatically pinned to the navigation bar. Copilot Chat also no longer appears in the app launcher. In addition, users are blocked from acquiring or installing the Microsoft 365 Copilot app from the MetaOS store (this restriction doesn't apply to Teams or Outlook).
 
-:::image type="content" source="media/do-not-pin-copilot-setting.png" alt-text="Screenshot showing the option to not pin Copilot for users.":::
+    :::image type="content" source="media/do-not-pin-copilot-setting.png" alt-text="Screenshot showing the option to not pin Copilot for users.":::
 
 Global Admins and AI Admins can make changes to Copilot Chat pinning settings at any time. Changes take up to 48 hours to go into effect.
 
