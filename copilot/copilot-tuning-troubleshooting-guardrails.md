@@ -24,7 +24,7 @@ This article describes some of the most common issues with Microsoft 365 Copilot
 
 Contact Microsoft support or your IT administrator—this is a technical problem that the user can't fix.
 
-## I get an error message when processing guardrails 
+## I get an error message when processing guardrails
 
 If it's an AI model error (for example, Language Model API error), retry the analysis. If the error persists, retry and if that fails, contact Microsoft support or your IT administrator.
 
@@ -64,4 +64,4 @@ To handle duplicates effectively, follow these steps:
 
 - [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
 
-If you need support or want to provide feedback, see [Copilot Tuning FAQ](/copilot/copilot-tuning-faq.yml).
+If you need support or want to provide feedback, see [Copilot Tuning FAQ](copilot-tuning-faq.yml).

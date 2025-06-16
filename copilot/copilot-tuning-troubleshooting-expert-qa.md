@@ -40,18 +40,18 @@ Double-check your email spam or junk folder for a message about the fine-tuning 
 
 ## The fine-tuning process stalled or failed partway through (with or without an error status)
 
-If the training/fine-tuning process fails or hangs without a clear error message, the system might not have provided feedback. The current system has limited error handling, so occasionally it might just stop without a specific error code or explanation. 
+If the training/fine-tuning process fails or hangs without a clear error message, the system might not have provided feedback. The current system has limited error handling, so occasionally it might just stop without a specific error code or explanation.
 
 To troubleshoot:
 1. Retry the process - In some cases, rerunning the fine-tuning process or restarting from the last step can resolve a transient issue.
 2. Make sure any configurations are set correctly and try again.
 3. Check for known issues - See if any error message was logged or displayed. If you find an error code, follow the guidance associated with that error code. Documentation or forums might have additional information for specific errors.
 
-Contact support if the issue persists. 
+Contact support if the issue persists.
 
 ## My evaluation (test) dataset came back empty, or I see 0 Q&A pairs generated for evaluation
 
-An empty evaluation file usually indicates that the system could not generate any Q&A samples from your content. One common reason is that the content collection you provided was too small or had no usable data. The model didn't have enough material to create Q&A examples. 
+An empty evaluation file usually indicates that the system could not generate any Q&A samples from your content. One common reason is that the content collection you provided was too small or had no usable data. The model didn't have enough material to create Q&A examples.
 
 To address this:
 
@@ -100,4 +100,4 @@ Keep in mind that an answer without a citation isn't unusual in some cases. You 
 
 - [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
 
-If you need support or want to provide feedback, see [Copilot Tuning FAQ](/copilot/copilot-tuning-faq.yml).
+If you need support or want to provide feedback, see [Copilot Tuning FAQ](copilot-tuning-faq.yml).
