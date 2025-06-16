@@ -302,7 +302,7 @@ If you have an MOSA billing account type, you can't automatically change from pa
 
 ## Directives from the Reserve Bank of India
 
-Currently, some credit card transactions, especially transactions exceeding 5,000 INR, are blocked due to a directive by the Reserve Bank of India. This might affect automatic payments, which means that you might have to make payments manually in the Microsoft 365 admin center. This directive doesn't affect usage charges.
+Currently, some credit card transactions, especially transactions exceeding 15,000 INR, are blocked due to a directive by the Reserve Bank of India. This might affect automatic payments, which means that you might have to make payments manually in the Microsoft 365 admin center. This directive doesn't affect usage charges.
 
 [Learn more about the Reserve Bank of India directive for recurring payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
