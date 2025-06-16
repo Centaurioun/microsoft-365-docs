@@ -119,7 +119,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     The CSV upload feature for bulk addition of mailboxes in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
-    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
+    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With [dynamic rules](#dynamic-rules), any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
 
     For example, if a user is added to a distribution list included in the dynamic rule, that user is included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they're removed from the backup policy within 24 hours. The user's existing backups remain restorable until they expire based on their retention period. However, new backups aren't taken until the user is re-added to the included distribution list or manually re-added through a static addition.
 
@@ -176,7 +176,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
-    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
+    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With [dynamic rules](#dynamic-rules), any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
 
     For example, if a user is added to a distribution list included in the dynamic rule, that user is included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they're removed from the backup policy within 24 hours. The user's existing backups remain restorable until they expire based on their retention period. However, new backups aren't taken until the user is re-added to the included distribution list or manually re-added through a static addition.
 
@@ -318,15 +318,28 @@ Follow these steps to view and edit backup policies for OneDrive.
 
 - Select **Rename** and the new policy name takes effect instantly.
 
-## Delete a dynamic rule
+## Dynamic rules
+
+Dynamic rules in Microsoft 365 Archive allow administrators to define backup policies based on distribution lists and security group memberships—eliminating the need for manual updates when group memberships change.
+
+</br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7604db2b-5099-4b87-b94d-d36436b3ac18]
+
+</br>
+
+> [!NOTE]
+> The dynamic rule feature is in preview.
+
+### Delete a dynamic rule
 
 When deleting a dynamic rule, you have two options that determine how existing accounts are treated in the backup policy.
 
-#### Delete rule but continue backups
+##### Delete rule but continue backups
 
 The dynamic rule is converted into a static list. Backup continues for all user accounts that were included through the rule at the time of deletion. However, future changes to the original distribution lists or security groups—such as users being added or removed—are no longer reflected in the backup policy. For example, if a user is added to a previously included group after the rule is deleted, they aren't automatically added to the backup policy.
 
-#### Delete rule and stop new backups
+##### Delete rule and stop new backups
 
 The dynamic rule is removed, and no new backups are taken for accounts previously included through the rule. Existing backups for these users remain restorable until they expire based on the configured retention period. You can re-enable backup for these users by manually adding them or by creating a new dynamic rule that includes them.
 
