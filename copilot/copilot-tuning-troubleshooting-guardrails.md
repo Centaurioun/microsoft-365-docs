@@ -64,4 +64,4 @@ To handle duplicates effectively, follow these steps:
 
 - [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
 
-If you need support or want to provide feedback, see [Copilot Tuning FAQ][/copilot/copilot-tuning-faq.yml)
+If you need support or want to provide feedback, see [Copilot Tuning FAQ][/copilot/copilot-tuning-faq.yml).
