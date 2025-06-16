@@ -48,7 +48,7 @@ ESS Agent will act as a front-end for consuming information from SAP SuccessFact
 
 ## Technical Synopsis
 
-:::image type="content" source="media/agent-and-successfactors-integration.png" alt-text="Diagram of the high-level components comprising overall solution for ESS Agent and SuccessFactors integration.":::
+:::image type="content" source="media/agent-and-success-factors-integration.png" alt-text="Diagram of the high-level components comprising overall solution for ESS Agent and SuccessFactors integration.":::
 
 The above diagram outlines the high-level components comprising overall solution for ESS Agent and SuccessFactors integration. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components and bring in the right stakeholders to set up an environment to deploy and test ESS Agent.
 
