@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.collection:
 - m365copilot
 - magic-ai-copilot
-description: Troubleshooting guide for the Microsoft Admin Center task fine-tuning FAQ.
+description: Find information about how to troubleshoot the Microsoft 365 admin center when using Copilot Tuning to fine-tune models.
 ---
 
 # Troubleshoot the Microsoft 365 admin center task fine-tuning
 
-This article describes some of the most common issues with the Microsoft Admin Center task fine-tuning FAQ and how to troubleshoot them.
+This article describes some of the most common issues with the Microsoft 365 admin center when using Microsoft 365 Copilot Tuning to fine-tune models how to troubleshoot them.
 
 [!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
 
@@ -25,25 +25,25 @@ This article describes some of the most common issues with the Microsoft Admin C
 
 Task-specific models should always be available. If you don't see them, make sure you have the required licenses and permissions. You need at least 5,000 Copilot licenses for this feature to be available.
 
-## An admin doesn't see the task-specific models
+## Admin doesn't see the task-specific models
 
-If an admin doesn't see the task-specific models, it could be due to eligibility issues. Make sure you have the necessary licenses and permissions. If you're not eligible, an error is displayed with possible causes.
+If an admin doesn't see the task-specific models, they might have eligibility issues. Make sure you have the necessary licenses and permissions. If if the admin istn't eligible, an error is displayed with possible causes.
 
-## The setup is taking more than 5 minutes
+## Setup is taking more than 5 minutes
 
 If the setup takes more than 5 minutes, it might be due to service failures or other issues. If the setup is not completed within an hour, reach out to support.
 
 ## Managing access to the task-specific models
 
-Admins can manage access to the task-specific models by adding specific users to the organization. Once added, users receive an email with a link to the model.
+Admins can manage access to the task-specific models by adding specific users to the organization. When added, users receive an email with a link to the model.
 
 ## I accidentally deleted a model
 
 If a model is deleted, it can't be recovered. Make sure you have the correct permissions and take necessary precautions to avoid accidental deletions.
 
-## There's insufficient training data
+## Insufficient training data
 
-If there's insufficient training data, you get an error message. Make sure you have enough training data after filtering.
+If the training data is insufficient, you get an error message. Make sure you have enough training data after filtering.
 
 ## While completing the configuration, I get an error message
 
@@ -53,9 +53,9 @@ If you see an error message during the configuration, retry the process after so
 
 If you enter a link to a knowledge source you don't have access to, an error message is displayed. Make sure you have access to the required knowledge sources.
 
-## The validation fails during the training process
+## Validation fails during the training process
 
-If the validation fails, make sure all required fields are correctly filled. If you ask 7 questions, all 7 must be answered.
+If the validation fails, make sure all required fields are filled. If you ask seven questions, all seven must be answered.
 
 ## Security group coverage issues
 
@@ -63,7 +63,7 @@ If the selected security groups don't have access to the required knowledge sour
 
 ### Related content
 
-[Placeholder for related articles and additional resources]
+- [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
 
 
 
