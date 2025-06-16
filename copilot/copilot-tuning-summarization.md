@@ -5,10 +5,10 @@ ms.author: routlaw
 manager: calvind
 ms.audience: ITPro
 ms.reviewer: robertode
-ms.date: 06/04/2025
+ms.date: 06/17/2025
 ms.topic: how-to
 ms.localizationpriority: medium
-description: This article describes how to use Copilot Tuning to build an AI model for document summarization based on organizational knowledge.
+description: Learn how to use Copilot Tuning to build an AI model for document summarization based on organizational knowledge.
 ---
 
 # Get started with Copilot Tuning summarization
@@ -21,7 +21,7 @@ Copilot Tuning summarization generates high-quality summaries from complex docum
 - Business contract abstracts
 - Regulatory and internal documentation
 
-It's ideal when an organization has a high volume of documents that require consistent summaries in a particular style.
+Summarization is ideal when an organization has a high volume of documents that require consistent summaries in a particular style.
 
 You customize Copilot Tuning summarization for your enterprise through fine tuning. Copilot Tuning maintains a consistent communication style for your organization, using text-based documents and summary pairs provided as training input. It operates in a tenant-specific, isolated environment within Microsoft 365, respecting the privacy commitments for your business. User data remains isolated within your tenant, safeguarding access by other entities.
 
@@ -81,4 +81,4 @@ Copilot Tuning summarization embraces existing user workflows within the applica
 
 - [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
 - [Microsoft 365 Copilot Tuning FAQ](copilot-tuning-faq.yml)
-- You can create an agent to use the tuned model to streamline document summarization workflows. For more information, see [Create declarative agents with Copilot Studio agent builder and Microsoft 365 Copilot Tuning models](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-tuned-models).
+- [Create declarative agents with Copilot Studio agent builder and Microsoft 365 Copilot Tuning models](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-tuned-models).
