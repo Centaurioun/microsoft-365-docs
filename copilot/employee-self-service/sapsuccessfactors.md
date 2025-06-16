@@ -48,7 +48,7 @@ ESS Agent will act as a front-end for consuming information from SAP SuccessFact
 
 ## Technical Synopsis
 
-<image 1>
+:::image type="content" source="media/ess-agent-and-successfactors-integration.png" alt-text="Diagram of the high-level components comprising overall solution for ESS Agent and SuccessFactors integration.":::
 
 The above diagram outlines the high-level components comprising overall solution for ESS Agent and SuccessFactors integration. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components and bring in the right stakeholders to set up an environment to deploy and test ESS Agent.
 
@@ -88,9 +88,11 @@ For SAP SuccessFactors (SF) integration, as ESS Agent uses OData v2.0, it’s re
 
 ### Set up SSO for SAP SuccessFactors with Microsoft Entra
 
-You can ignore this step if SSO is already established for SAP SuccessFactors with Microsoft Entra.
+The following diagram is a high-level overview of the OAuth Authentication process in SAP SuccessFactors:
 
-The following section is a high-level overview of the OAuth Authentication process in SAP SuccessFactors:
+:::image type="content" source="media/ess-agent-oauth-authentication-process.png" alt-text="Diagram of high-level overview of the OAuth Authentication process in SAP SuccessFactors.":::
+
+You can ignore this step if SSO is already established for SAP SuccessFactors with Microsoft Entra.
 
 #### Parameters for SuccessFactors connection
 
@@ -229,7 +231,7 @@ The following are the steps required to install & enable the SuccessFactors Exte
 > [!NOTE]
 > SAP SF OData Connector uses maker connection in all flows, which should use SF API user credentials to establish connection.
 
-## Set up SuccessFactors Extension Pack for ESS Agent
+## Setup SuccessFactors Extension Pack for ESS Agent
 
 The SuccessFactors extension pack requires few initial setups for the agent flows and templates. The following sections are required to configure the required components:
 
@@ -350,6 +352,8 @@ value
 }
 ```
 
+:::image type="content" source="media/ess-agent-oauth-flow.png" alt-text="Diagram that shows Permissions flow.":::
+
 ### Role Based Permissions Config
 
 Role based permissions use the *roleId* provided in the config to check against *UserRoles* variable that is part of the user context. The flow queries *RBPRole* with *roleId* given in configuration, which returns all the *permissionStringValues* linked to the *roleId*. Then it matches the *permStringValue* in the config to what the OData connector returned. Manager Scenarios are required to use RBP role because we're checking if the manager has permissions for multiple users at the same time and therefore using *PermissionsMetadata* would have been slower. In this case, we can check that the user has 115 role, which gives them permission to make changes for directs. Role ID must be created by the maker if current SF implementation doesn't have it.
@@ -369,6 +373,8 @@ check for in role id
 .. 
 } 
 ```
+
+:::image type="content" source="media/ess-agent-oauth-flow-context.png" alt-text="Diagram that shows the Role based permissions.":::
 
 ### User Context Flow – High-level logic
 
@@ -393,13 +399,24 @@ check for in role id
 - **filter:** {"personIdExternalVal": "123456"}
 - **userRoles:** \["123", "345"\]
 
+:::image type="content" source="media/ess-agent-oauth-flow-scenario.png" alt-text="Diagram that shows the Read Flow.":::
+
 1. The flow retrieves the config using the *scenarioName* variable and in parallel preps the filter query.
 2. The flow retrieves the data and label entities from the config using Dataverse plugin.
 3. Flow calls child flow to check permissions by passing the *userRoles*, alias, and config.
 4. If Permission flow returns *false*, then the flow will terminate and respond to copilot that user doesn't have permissions.
+
+   :::image type="content" source="media/ess-agent-oauth-flow-condition.png" alt-text="Diagram that shows the Read Flow termination.":::
+
 5. Flow then in parallel makes OData calls for the entity data and the labels.
 6. To get the labels first the flow checks if there are any labels to query in the config and then preps the variables that are needed.
+
+   :::image type="content" source="media/ess-agent-oauth-flow-query.png" alt-text="Diagram that shows flow checks if there are any labels to query in the config.":::
+
 7. Flow will Query SF OData Metadata entity using the values collected earlier from the config. Due to the response being metadata the flow does some manipulation to get the data into key value pairs.
+
+    :::image type="content" source="media/ess-agent-oauth-flow-variable.png" alt-text="Diagram that shows Query SF OData Metadata entity.":::
+
 8. Lastly it returns three variables, such as *labelResponse*, *modelResponse*, and *isSucceeded*.
 
 ### Employee Read Scenarios – Configuration
