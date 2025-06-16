@@ -65,5 +65,7 @@ If the selected security groups don't have access to the required knowledge sour
 
 - [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
 
+If you need support or want to provide feedback, see [Copilot Tuning FAQ][/copilot/copilot-tuning-faq.yml)
+
 
 
