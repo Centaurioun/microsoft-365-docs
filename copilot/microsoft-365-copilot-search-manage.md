@@ -30,6 +30,10 @@ Copilot Search can access data in third-party systems as well as Microsoft 365 a
 
 Learn more about [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector).
 
+## Privacy and security
+
+Microsoft 365 Copilot Search adheres to the same data protection, privacy standards, and security configurations as Microsoft 365 Copilot. Learn more about [data, privacy, and security in Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-privacy). 
+
 ## Microsoft 365 Copilot extension
 
 The Microsoft 365 Copilot extension is a cross-browser add-on that enhances your Copilot Search results. This extension brings together information from tickets, files, documents, and tasks across multiple work-related third-party sites, providing highly relevant and personalized search results.
