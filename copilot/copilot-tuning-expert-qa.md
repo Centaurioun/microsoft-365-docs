@@ -77,4 +77,4 @@ To create an advanced Copilot Declarative Agent specialized for answering questi
 
 ## Related content
 
-**Placeholder: TO DO** Main content for related resources and articles will be included here.
+- [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
