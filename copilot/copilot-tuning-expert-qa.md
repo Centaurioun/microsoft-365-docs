@@ -4,10 +4,10 @@ author: danielabom
 ms.author: danielabo
 manager: calvind
 ms.reviewer: jwolk
-ms.date: 06/04/2025
+ms.date: 06/17/2025
 ms.topic: how-to
 ms.localizationpriority: medium
-description: This article describes how to use Copilot Tuning to build an AI model for expert Q&A.
+description: Learn how to use Copilot Tuning to build an AI model for expert Q&A.
 ---
 
 # Configure Copilot Tuning for expert Q&A
@@ -40,44 +40,38 @@ While there's no minimum document count, better results are achieved with larger
 
 ## Prerequisites
 
-Before starting, ensure the following:
+Before you start, make sure that you have the following prerequisites in place:
 
 1. You must have domain-specific content or documentation, such as legal playbooks, HR guidelines, technical documentation, policy manuals, or departmental procedures, that the model can use to answer questions.
-2. Configure the model agent with an Azure Active Directory (AAD) security group or distribution list and create your own AAD groups to be added to the model.
+2. Configure the model agent with a Microsoft Entra ID security group or distribution list and create your own Entra ID groups to be added to the model.
 3. Identify where your content is stored in SharePoint.
 
-:::image type="content" source="placeholder-media" alt-text="Illustration of prerequisites needed for a fine-tuned model":::
+## Set up an expert Q&A model
 
-## Set up
-
-Set up an **Expert Q&A model** using the Copilot tuning model maker. This guide covers creation, configuration, training, and integration.
+Set up an **Expert Q&A model** using Copilot Tuning model maker in Microsoft Copilot Studio.
 
 ### Model maker workflow
 
-Model Maker serves as the entry point for selecting the content collection, with Copilot Studio verifying access control by comparing permissions on the content with those of the fine-tuned model.
-
-Model Maker also prompts you to fill out a questionnaire that describes the content and purpose of the Copilot  Tuning declarative agent. Copilot Tuning uses this information to guide the training data generation, filtering, and behavior adjustment of the declarative agent.
-
-To set up an Expert Q&A model, follow these steps to ensure a smooth configuration.
+To set up an Expert Q&A model:
 
 1. In Copilot Studio, select **Create a new model**, and provide the model name and description.
 1. Set up expert content by adding domain-specific documentation.
-1. Complete the model maker questionnaire, which helps describe the content, domain expertise, and intended functionality of the Copilot Tuning declarative agent. This information is used to guide the training data generation and behavior of the model.
+1. Complete the fields to describe the content, domain expertise, and intended functionality of the Copilot Tuning declarative agent. This information is used to guide the training data generation and behavior of the model.
 1. Configure model details by defining query handling, multi-turn interaction, and citation depth.
 
-Copilot Studio checks the permissions for the selected content to ensure the security group(s) have appropriate access. Any inaccessible content isn't used during the training process.
+Copilot Studio checks the permissions for the selected content to ensure the security group or groups have appropriate access. Any inaccessible content isn't used during the training process.
 
 ### Declarative agent maker workflow
 
-To create an advanced Copilot Declarative Agent specialized for answering questions based on domain-specific knowledge, follow these steps.
+To create a declarative agent for Microsoft 365 Copilot that answers questions based on domain-specific knowledge:
 
-1. Define and designate the repositories or databases where your structured content is stored, ensuring that it covers all necessary domain-specific material.
-1. Integrate necessary security details by linking the model to the appropriate Azure Active Directory groups, ensuring controlled access and security compliance.
-1. Provide domain expertise through a configuration questionnaire, detailing typical questions, key answer points, and the preferred response style and tone.
-1. Utilize the system's capability to automatically draft initial Q&A pairs based on your domain content, forming the foundational training dataset for the agent.
-1. Fine-tune the model and, once the training data is prepared, publish it and integrate it with the Copilot agent to initiate user interactions.
-1. In Copilot Studio, create a new agent by selecting the "Task-specific" option and choosing the appropriate Copilot Tuning model as the knowledge source for your Expert Q&A Agent.
-1. Customize the agent's behavior by providing detailed instructions that guide its responses in terms of tone, style, and length, ensuring alignment with the desired scenario and audience.
+1. Define and designate the repositories or databases where your structured content is stored and ensure that it covers all necessary domain-specific material.
+1. Integrate necessary security details by linking the model to the appropriate Entra ID groups, ensuring controlled access and security compliance.
+1. Provide domain expertise through a configuration questionnaire, including typical questions, key answer points, and the preferred response style and tone.
+1. Use the system's capability to automatically draft initial Q&A pairs based on your domain content, forming the foundational training dataset for the agent.
+1. Fine-tune the model and, when the training data is prepared, publish it and integrate it with the agent to initiate user interactions.
+1. In Copilot Studio, create a new agent by selecting the "Task-specific" option and choosing the appropriate Copilot Tuning model as the knowledge source for your Expert Q&A agent.
+1. Customize the agent's behavior by providing detailed instructions that guide its responses in terms of tone, style, and length to ensure that is aligns with your scenario and audience.
 
 ## Related content
 

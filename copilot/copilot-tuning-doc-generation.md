@@ -5,10 +5,10 @@ ms.author: jasonjoh
 manager: calvind
 ms.audience: ITPro
 ms.reviewer: jwolk
-ms.date: 06/04/2025
+ms.date: 06/17/2025
 ms.topic: how-to
 ms.localizationpriority: medium
-description: This article describes how to use Copilot Tuning to build an AI model for document generation based on organizational knowledge.
+description: Learn how to use Copilot Tuning to build an AI model for document generation based on organizational knowledge.
 ---
 
 # Configure Copilot Tuning for document generation
@@ -21,7 +21,7 @@ Document generation works best when the drafting process follows recognizable pa
 
 [!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
 
-Some example use-cases include:
+Some example use cases include:
 
 - Human resources – Generate new job listings matching your organization's tone and structure based on existing job listing templates and information about new jobs.
 - Legal – Draft recurring contracts quickly and consistently based on previous contracts and new or updated contract terms.
@@ -57,7 +57,7 @@ The following are the high-level steps to configure a custom document generation
 
 Your knowledge source should have at least 20 example pairs of original files and corresponding final (draft) files. In this step, you prepare a CSV file that provides at least 20 examples of original files to final (draft) documents. Copilot Tuning uses these examples to fine-tune the generation logic, helping the model learn how your organization typically edits or adapts documents.
 
-Create a file named **mapping.csv** and store it in the root directory of your knowledge source. This file should have two columns.
+Create a file named **mapping.csv** and store it in the root directory of your knowledge source. This file should have two columns:
 
 - The first column is named `precedent` and contains the path to an original file in the data source.
 - The second column is named `target` and contains the path to the final draft file in the data source that was created using the original file as a basis.
@@ -68,6 +68,8 @@ precedent,target
 ```
 
 ### Customize the model
+
+To customize the model:
 
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com) in your browser. In the left-hand navigation bar, select the ellipses (**...**), and then select **Copilot Tuning**.
 1. Select **Create new**.
@@ -98,7 +100,7 @@ Copilot Tuning continues preparing the training data based on your input. Based 
 
 ### Train and evaluate results
 
-Once sufficient data is prepared by Copilot Tuning, you can proceed with training the model. Fine-tuning of your model occurs in Azure AI Foundry. After the model is fine-tuned, Copilot Tuning generates results that you can review to evaluate if the model is of sufficient quality to deploy.
+When sufficient data is prepared by Copilot Tuning, you can proceed with training the model. Fine-tuning of your model occurs in Azure AI Foundry. After the model is fine-tuned, Copilot Tuning generates results that you can review to evaluate if the model is of sufficient quality to deploy.
 
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com) in your browser. In the left-hand navigation bar, select the ellipses (**...**), and then select **Copilot Tuning**.
 1. Select the model that is ready for training to open the model configuration dialog form.
@@ -110,11 +112,11 @@ If the results don't meet your expectations, you can go to the previous steps in
 
 ### Publish the model
 
-Once the model generates results that meet your quality standards, you can publish the model through the Copilot Tuning interface. Publish the model by selecting the **Publish model** button. The model is deployed to an isolated and secured environment. It's only accessible to the security groups or users that were selected during model customization.
+When the model generates results that meet your quality standards, you can publish the model through the Copilot Tuning interface. Publish the model by selecting the **Publish model** button. The model is deployed to an isolated and secured environment. It's only accessible to the security groups or users that were selected during model customization.
 
 ## Related content
 
 - [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
 - [Microsoft 365 Copilot Tuning FAQ](copilot-tuning-faq.yml)
-- You can create an agent to use the tuned model to streamline document generation workflows. For more information, see [Create declarative agents with Copilot Studio agent builder and Microsoft 365 Copilot Tuning models](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-tuned-models).
-- [Troubleshooting: Doc Gen Models](copilot-tuning-troubleshooting-docgen.md).
+- [Create declarative agents with Copilot Studio agent builder and Microsoft 365 Copilot Tuning models](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-tuned-models).
+- [Troubleshooting document generation models](copilot-tuning-troubleshooting-doc-generation.md).
