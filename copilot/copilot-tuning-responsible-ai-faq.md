@@ -21,6 +21,8 @@ description: Get answers to frequently asked questions about responsible AI and 
 
 This FAQ article helps answer questions about the responsible use of AI in [Microsoft 365 Copilot Tuning](copilot-tuning-overview.md).
 
+[!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
+
 ## What is Microsoft 365 Copilot Tuning?
 
 Copilot Tuning is a service that enhances the customization of Microsoft 365 Copilot and agents by fine-tuning models on tenant-specific data. With the capabilities provided by Copilot Tuning, organizations can use their proprietary data to improve the relevance and accuracy of AI-generated outputs. This fine-tuning ensures that the models understand and adhere to the unique terminology, workflows, and business processes of the organization.

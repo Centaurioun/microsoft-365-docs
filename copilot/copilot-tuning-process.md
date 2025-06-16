@@ -18,8 +18,7 @@ Copilot Tuning goes beyond retention and retrieval to train tenant-specific LLMs
 
 This article describes the process for training and tuning models to customize Microsoft 365 Copilot for your organization.
 
-> [!NOTE]
-> Copilot Tuning is currently available for Early Access Preview (EAP). For details about requirements and how to enroll, see the [Admin guide](copilot-tuning-admin-guide.md).
+[!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
 
 ## Tuning process overview
 
@@ -114,7 +113,7 @@ You can continue to evolve your model by:
 
 - Uploading new data between reinforcement cycles for continual fine-tuning.
 - Applying prompt engineering to adapt to new task types or regulatory changes.
-- Using Copilot Studio's low-code tools to deploy and manage agents based on your fine-tuned models. 
+- Using Copilot Studio's low-code tools to deploy and manage agents based on your fine-tuned models.
 
 ## Related content
 

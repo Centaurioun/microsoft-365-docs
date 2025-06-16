@@ -15,6 +15,8 @@ recommendations: false
 
 This article describes some of the most common issues with the Microsoft Admin Center task fine-tuning FAQ and how to troubleshoot them.
 
+[!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
+
 ## I get a permission or access error when connecting to my content source (e.g., a SharePoint site)
 
 An access or permission denied" error usually means your account doesn't have the rights to that data source. Make sure you have the appropriate permissions for the content repository. For example, if adding a SharePoint site, confirm with your SharePoint administrator that your account (or a group you belong to) has access to that site or document library. If the fine-tuning process uses a Security Group for access control, ensure that the correct security group is set up and that your user account is included in it[1] before retrying the operation.

@@ -15,6 +15,8 @@ It is ideal when an organization has a high volume of documents that require con
 
 You customize Tenant Copilot Summarization for your enterprise through fine tuning. This maintains a consistent communication style for your organization, using text-based documents and summary pairs provided as training input. It operates in a tenant-specific, isolated environment within Microsoft 365, respecting th privacy commitments for your business. Working in your Microsoft 365 ecosystem, user data remains isolated within your tenant, safeguarding access by other entities.
 
+[!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
+
 ## Key capabilities
 
 Tenant Copilot Summarization creates structured summaries with the following properties:

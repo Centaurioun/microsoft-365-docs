@@ -18,6 +18,8 @@ search.appverid: [placeholder-metadata]
 
 Copilot Tuning models are designed to provide complex, domain-specific answers for user queries within your organization. These models require structured domain content and integrate with Copilot agents for interactive query processing. Explore best practices, scenarios, limitations, and requirements for effective implementation.
 
+[!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
+
 ## Capabilities
 
 You can use the model maker to fine-tune a model that can complete the following capabilities:
@@ -71,9 +73,9 @@ To create an advanced Copilot Declarative Agent specialized for answering questi
 1. Define and designate the repositories or databases where your structured content is stored, ensuring that it covers all necessary domain-specific material.
 1. Integrate necessary security details by linking the model to the appropriate Azure Active Directory groups, ensuring controlled access and security compliance.
 1. Provide domain expertise through a configuration questionnaire, detailing typical questions, key answer points, and the preferred response style and tone.
-1. Utilize the system’s capability to automatically draft initial Q&A pairs based on your domain content, forming the foundational training dataset for the agent.
+1. Utilize the system's capability to automatically draft initial Q&A pairs based on your domain content, forming the foundational training dataset for the agent.
 1. Fine-tune the model and, once the training data is prepared, publish it and integrate it with the Copilot agent to initiate user interactions.
-1. In Copilot Studio, create a new agent by selecting the “Task-specific” option and choosing the appropriate Copilot Tuning model as the knowledge source for your Expert Q&A Agent.
+1. In Copilot Studio, create a new agent by selecting the "Task-specific" option and choosing the appropriate Copilot Tuning model as the knowledge source for your Expert Q&A Agent.
 1. Customize the agent's behavior by providing detailed instructions that guide its responses in terms of tone, style, and length, ensuring alignment with the desired scenario and audience.
 
 ## Related content

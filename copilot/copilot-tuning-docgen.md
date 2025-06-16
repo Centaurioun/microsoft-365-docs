@@ -17,11 +17,13 @@ description: This article describes how to use Copilot Tuning to build an AI mod
 
 Initial drafts of new documents can be generated using a custom document generation model trained with Copilot Tuning. Copilot Tuning document generation models use an original input files document and specified changes to create a draft of output file. It is particularly useful when the drafting process follows recognizable patterns and requires incorporating consistent modifications across similar types of documents. This approach streamlines the creation of first drafts, reducing manual editing time and promoting consistency across your documents.
 
+[!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
+
 A model tuned for document generation is valuable when the tone, style, and formatting of existing documents must be used when generating drafts of new documents. Document generation is suitable for generating draft documents that can be based on an original input file, such as an example document, a previous work product, or template. It's also applicable for any use case where regular updates to documents are necessary based on change specifications and the previous version of a document.
 
 Some example use-cases include:
 
-- HR – Generate new job listings matching your organization’s tone and structure based on an existing job listing templates and information about new jobs.
+- HR – Generate new job listings matching your organization's tone and structure based on an existing job listing templates and information about new jobs.
 - Legal – Draft a recurring contracts quickly and consistently based on a previous vetted contract and new or updated contract terms.
 - Compliance – Create new compliance forms based on a company vetted form template and information tailored to new clients, deals, or jurisdictions.
 - Procurement – Create draft purchase orders using previous purchase orders and information about new purchases.
