@@ -16,7 +16,7 @@ description: Find information about how to troubleshoot Copilot Tuning document 
 
 # Troubleshoot Copilot Tuning document generation
 
-This article describes some of the most common issues with the Copilot Tuning document generation tool and how to troubleshoot them.
+This article describes some of the most common issues with the Microsoft 365 Copilot Tuning document generation process and how to troubleshoot them.
 
 [!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
 
