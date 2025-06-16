@@ -194,7 +194,7 @@ The following section is a high-level overview of the OAuth Authentication proce
 8. Run the flow to test the connection.
 9. Verify the run history for successful authentication and data retrieval.
 
-For more information on setting up SSO for SAP SuccessFactors with Microsoft Entra, see [Set up Microsoft Entra ID using SuccessFactors](power-platform/sap/connect/entra-id-using-successfactors).
+For more information on setting up SSO for SAP SuccessFactors with Microsoft Entra, see [Set up Microsoft Entra ID using SuccessFactors](/power-platform/sap/connect/entra-id-using-successfactors).
 
 ## Install SuccessFactors Extension Pack for ESS Agent
 
