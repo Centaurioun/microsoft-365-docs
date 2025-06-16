@@ -67,7 +67,7 @@ The supervised fine-tuning step considers real-word training samples, allowing i
 
 The inference for Copilot Tuning summarization enables users to submit documents through platforms like Word, SharePoint, or Teams to obtain summaries in familiar environments. When a user provides a source document, the fine-tuned model efficiently creates a concise summary in short processing time while maintaining tone and document structure.
 
-Summary generation is single pass and is prioritized to extract key sections, clauses, and the document's core meaning, reflecting what's deemed most important according to the training examples. These summaries allow users to focus on value-add activities rather than manually reviewing documents to create summaries from scratch.
+Summary generation is prioritized to extract key sections, clauses, and the document's core meaning, reflecting what's deemed most important according to the training examples. These summaries allow users to focus on value-add activities rather than manually reviewing documents to create summaries from scratch.
 
 Feedback from users plays a pivotal role in maintaining summary quality and allowing for continuous improvement of the model's performance.
 

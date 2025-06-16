@@ -114,5 +114,7 @@ Once the model generates results that meet your quality standards, you can publi
 
 ## Related content
 
+- [Microsoft 365 Copilot Tuning overview (preview)](copilot-tuning-overview.md)
+- [Microsoft 365 Copilot Tuning FAQ](copilot-tuning-faq.yml)
 - You can create an agent to use the tuned model to streamline document generation workflows. For more information, see [Create declarative agents with Copilot Studio agent builder and Microsoft 365 Copilot Tuning models](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-tuned-models).
 - [Troubleshooting: Doc Gen Models](copilot-tuning-troubleshooting-docgen.md).
