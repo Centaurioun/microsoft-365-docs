@@ -99,7 +99,7 @@ When you add a user to Copilot Tuning, they receive an email with instructions t
 
 You can review and manage the set of models that model makers create and publish via the **Copilot Tuning** control in the admin center.
 
-:::image type="content" source="media/copilot-tuning-admin-guide/manage-models.png" alt-text="Screenshot of Copilot Tuning settings in the admin center with Manage task-specific models selected" border="false":::
+:::image type="content" source="media/copilot-tuning-admin-guide/manage-models.png" alt-text="Screenshot of Copilot Tuning settings in the admin center with Manage task-specific models selected" lightbox="media/copilot-tuning-admin-guide/manage-models.png" border="false":::
 
 Choose any published model to review the associated security groups and update them as needed.
 
