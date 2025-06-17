@@ -1,5 +1,5 @@
 ---  
-title: "Manage Copilot Search"  
+title: "Manage Microsoft 365 Copilot Search"  
 author: kwekuako
 ms.author: kwekua  
 manager: dansimp
