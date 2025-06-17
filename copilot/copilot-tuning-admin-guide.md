@@ -74,6 +74,7 @@ To activate the Copilot Tuning service and scope its availability:
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with your Global Administrator or AI Administrator account.
 2. Go to **Copilot** > **Copilot settings**.
+   :::image type="content" source="media/copilot-tuning-admin-guide/copilot-settings.png" alt-text="Screenshot of Copilot settings in the admin center" lightbox="media/copilot-tuning-admin-guide/copilot-settings.png" border="false":::
 3. Choose **Copilot Tuning**, and choose **Accept** to accept the [EAP terms](https://go.microsoft.com/fwlink/?linkid=2312708).
     
     > [!NOTE]
