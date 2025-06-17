@@ -47,4 +47,4 @@ For any SIEM integrations, use Application Insights or the Power Platform Datave
 
 [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 
-[Integrate Microsoft Sentinel and Power Platform to better monitor and protect your low-code solutions.](/power-platform/blog/power-apps/integrating-microsoft-sentinel-and-power-platform-to-better-monitor-and-protect-your-low-code-solutions/?msockid=28f06f3913456b75279c7a3712dc6a44)
+[Integrate Microsoft Sentinel and Power Platform to better monitor and protect your low-code solutions.](https://www.microsoft.com/power-platform/blog/power-apps/integrating-microsoft-sentinel-and-power-platform-to-better-monitor-and-protect-your-low-code-solutions/?msockid=1614e9ffd18265002a76fcabd0016456)
