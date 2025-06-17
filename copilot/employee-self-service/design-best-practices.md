@@ -30,9 +30,8 @@ In this article:
 •	See how you can test your agent to establish benchmarks for certain scenarios
 
 ## About response quality
-A great response is **accurate, actionable, and engaging** to ensure we earn trust, provide useful responses, and help the user take the next step using self-service tools. ESS requires a blend of design elements, agent instructions, and conversational design techniques to craft great responses.
 
-<add image>
+A great response is **accurate, actionable, and engaging** to ensure we earn trust, provide useful responses, and help the user take the next step using self-service tools. ESS requires a blend of design elements, agent instructions, and conversational design techniques to craft great responses.
 
 To build trust with users and make ESS a reliable resource:
 
@@ -40,11 +39,9 @@ To build trust with users and make ESS a reliable resource:
 •	Responses need to be accurate by using instructions for intent matching and using UI certain elements 
 •	Responses need to be actionable by reliably mobilizing users to the best next step or resource
 
-
 ## How responses are formed
-Responses are a combination of **instructions, knowledge, and UI elements** built on top of the Copilot language model. Knowledge and data ensure factual accuracy, instructions refine how responses are structured and communicated, and UI elements enhance usability and trust—together shaping responses.
 
-<add image>
+Responses are a combination of **instructions, knowledge, and UI elements** built on top of the Copilot language model. Knowledge and data ensure factual accuracy, instructions refine how responses are structured and communicated, and UI elements enhance usability and trust—together shaping responses.
 
 Response quality relies on a handful of factors like the design elements provided by the platform, and conversational design decisions made by the maker:
 
@@ -52,24 +49,21 @@ Response quality relies on a handful of factors like the design elements provide
 •	Responses need certain UI elements like disclaimers, references, and Adaptive Cards that help the user build trust and complete tasks
 •	Responses need knowledge and data to return accurate and personalized responses that are complete, actionable, and generally useful based on the original intent
 
-
 ## About writing instructions for your ESS agent
-Often referred to as a meta prompt or system prompts, instructions guide the agent with context, examples, and other information relevant to a specific use case. 
-Instructions inform the agent’s behavior, drive response quality, and can impact agent performance. 
+
+Often referred to as a meta prompt or system prompts, instructions guide the agent with context, examples, and other information relevant to a specific use case.
+Instructions inform the agent’s behavior, drive response quality, and can impact agent performance.
 
 There are different kinds of instructions that work together to form responses:
 
 1. **Agent instructions (global)**:These drive the behavior across conversations and shape the agent’s personality. Agent instructions can be added on the Overview tab.
- 
 
 2. **Knowledge source instructions**: Clarify how each source should be used.
 Custom instructions for knowledge sources are important because they helps the agent understand how to interpret and apply the information accurately when generating answers, so responses are relevant, trustworthy, and aligned with the user’s intent. Learn more about knowledge sources.
- 
 
 3. **Topic trigger phrases and instructions**: Fine-tune how the agent detects user intent and delivers task-focused responses.
 
 A topic contains one or more conversation nodes that defines more structured conversational paths. Each node performs an action, such as sending a message or asking a question. A topic is triggered using a specified set of trigger phrases, keywords, and questions that a user is likely to use for specific intents and can be customized using tools, actions, and variables. Learn more about topics.
- 
 
 4. **Channel description**: Give instruction on intent recognition between domains and similar scenarios.
 Channel instruction ensure accurate intent routing, consistent user experience across domain agents, and drive actionable responses for a multi-domain deployment. Learn more about channel instructions for Microsoft Teams.
@@ -80,11 +74,12 @@ Channel instruction ensure accurate intent routing, consistent user experience a
 2. **Provide guidance for ambiguous cross-domain queries**: Provide examples on where intents may be ambiguous, how they can be navigated, and the fallback plan to move the task forward. 
 3. **Emphasize how to behave when uncertain**: Instruct the agent to ask clarifying questions when intent is unclear or could span domains.
 
-
 ## Using instructions and system prompts to craft conversations
+
 These prompts are behind-the-scenes instructions that shape how the agent responds to users in real time. Think of system prompts as the bridge between your business goals and the user experience. Use them to encode your values, protect users, and shape trustworthy, useful interactions.
 
 ### Getting started
+
 When designing global system prompts for an AI agent, especially one deployed across various domains, languages, and use cases, it’s crucial to define clear, consistent instructions that shape the agent’s behavior, tone, boundaries, and adaptability. These prompts act as the backbone of how the agent interprets and responds across all interactions. 
 
 Start by thinking through:
@@ -98,13 +93,14 @@ Start by thinking through:
 •	Add adaptive instructions
   *“Use a more direct tone during troubleshooting. Be warmer and more supportive when helping with HR questions.”*
 
-
 ## Developing agent personality to define content strategy
+
 An agent's role and identity shape every interaction it has with users. When well-defined, the agent feels purposeful, trustworthy, and aligned with your product or service. When vague or inconsistent, it can create confusion, damage credibility, and lead to misaligned responses. Users need to understand who they’re talking to, why that agent exists, and what they can expect from the conversation.
 
 This is especially critical in enterprise and productivity settings, where users rely on agents to act with clarity, accuracy, and consistency. A strong sense of role and identity reduces ambiguity for both the user and the underlying model.
 
 ### Persona definition and context
+
 When supporting sensitive areas like HR and IT, it’s especially important that the agent reflects the company’s tone of professionalism, respects user privacy, and provides help that feels dependable and grounded in internal policies.
 Start by establishing a clear role that helps shape how the agent communicates and interacts with users. Then, align the agent’s personality with the expectations of the intended audience. 
 
@@ -114,6 +110,7 @@ When developing the agent's personality and writing system prompts, make sure to
 2. Ensure alignment with brand voice and tone: Match the agent’s communication style to how your organization speaks with employees in internal documentation, help centers, and service desks. Whether your tone is warm and conversational or more direct and businesslike, the agent should feel consistent with the rest of the employee experience. Include sample responses in the prompt to guide tone and phrasing.
 
 ### Tips to define personality attributes
+
 1.	Use clear frameworks: Ground your agent’s personality in frameworks like brand archetypes (e.g., The Guide, The Caregiver) or voice-and-tone sliders (e.g., formal ↔ informal, serious ↔ playful). Keep it simple, actionable, and easy for writers and developers to apply.
 2.	Choose 3–5 key attributes: Define a small set of core traits that capture the agent’s personality. These should reflect your organization’s internal culture, and the expectations employees have when seeking help with HR or IT topics.
 3.	Avoid extreme traits: The ESS agent should be helpful and approachable without becoming too informal or emotionally reactive. For example:
@@ -160,6 +157,7 @@ Don’t say
 - “Your performance is below average.”
 
 ### Voice and tone guidelines
+
 Define how the agent speaks and adapts based on context. Developing voice and tone guidance for agent instructions is essential because it ensures that the agent communicates consistently, appropriately, and effectively across various user scenarios. 
 
 - **Establishes trust and credibility**: Voice and tone set the emotional and professional tone of the interaction. Inconsistent or mismatched tone (e.g., too casual in a sensitive HR context) can confuse or alienate users. Clear guidance helps the agent sound conversational yet dependable.
@@ -174,7 +172,7 @@ Considerations to help you define voice and tone:
 •	Adapt tone for different contexts (e.g., apology vs. instruction).
 •	Consider localization: tone norms differ by culture/language.
 
-<Add MD> Voice & tone prompt examples:
+Voice & tone prompt examples:
 
 •	Be clear and concise – Use simple, direct language that is easy to understand. Avoid jargon, technical terms, or unnecessary complexity.
 
@@ -186,14 +184,14 @@ Considerations to help you define voice and tone:
 
 •	Be inclusive and respectful – Use language that is welcoming to all users, avoiding assumptions about identity, ability, or background.
 
-
 ## Write instructions that influence response structure and quality
+
 Writing clear instructions that shape the agent’s response format is essential for ensuring readability and comprehension, especially in the workplace where users need quick, actionable answers. 
 
 1. Be explicit about the output format
 If you don't explicitly instruct the agent, it will default to general-purpose formatting which might not be as engaging or understandable. To ensure users get quick, clear answers, specify exactly how the response should be structured like when to use bullets, steps, summaries, and character limits.
 
-<Add MD> Examples
+Examples
 
 •	Use a numbered list to describe steps that need to be completed in sequential order. 
 •	Only use tables when the numbered list is longer than 6 items or when the information is easier to understand in a table.
@@ -208,7 +206,7 @@ If you don't explicitly instruct the agent, it will default to general-purpose f
 2. Provide examples of what to do and what to avoid
 Guide the agent by pairing clear instructions with positive examples (what to do) and negative examples (what to avoid).  
 
-<Add MD> Examples
+Examples
 
 Format answers as short, scannable summaries in plain language.
 
@@ -237,7 +235,7 @@ When crafting system prompts, you're guiding how the agent behaves in different 
 •	Being transparent about sources, uncertainty, or AI-generated content
 •	Adapting responses based on user role, urgency, or metadata
 
-<Add MD> Examples
+Examples
 
 •	If a request is outside your scope, reply courteously. Explain what you can help with and redirect to a different support channel or known resource.
 •	Do not speculate or make up responses when unsure. Say you don’t know and suggest a next step or escalation path.
@@ -248,7 +246,7 @@ When crafting system prompts, you're guiding how the agent behaves in different 
 4.Include instructions on handling unsupported requests
 Instruct the agent to help the user understand what can be answered using this agent. Guide the agent to respond helpfully when it can't fulfill a request, by explaining its limitations and pointing users to the right next step.
 
-<Add MD> Examples
+Examples
 
 •	If you receive a request outside your scope, respond clearly and courteously.
 •	If a request falls outside of supported HR or IT tasks, say something like:
@@ -260,7 +258,7 @@ Instruct the agent to help the user understand what can be answered using this a
 5. Consider ethical and company compliance rules
 Think through areas that may be sensitive and shouldn’t be answered by the agent. Write prompts that prevent the agent from offering advice in sensitive or regulated areas, and make sure it respects company and legal policies.
 
-<Add MD> Examples
+Examples
 
 •	Do not offer medical, legal, or financial advice. Clearly state that the user should consult a qualified professional.
 •	Apply company-specific compliance rules (e.g., data handling, privacy).  
@@ -270,7 +268,7 @@ Think through areas that may be sensitive and shouldn’t be answered by the age
 6.Plan to write instructions for sensitive topics and risky actions
 For topics that could be emotionally charged or could cause harm to the user or the organization, prompt the agent to de-escalate, avoid speculation, and redirect users to trusted human support.
 
-<Add MD> Examples
+Examples
 
 •	Avoid giving guidance on sensitive topics like harassment, mental health, or discrimination. Recommend speaking with HR or using a dedicated support channel.
 •	If a topic appears sensitive (e.g., mental health, harassment), avoid offering guidance. Recommend talking to HR or another appropriate support channel."_
@@ -280,7 +278,7 @@ For topics that could be emotionally charged or could cause harm to the user or 
 7. Get more specific about context handling
 Instructions for context handling help the agent maintain coherent, relevant conversations by guiding when to reference past interactions, ask clarifying questions, or reset the dialogue.
 
-<Add MD> Examples
+Examples
 
 •	Use prior messages to maintain context and continuity but keep summaries concise.
 •	If a message is ambiguous or could have multiple meanings, ask a clarifying question before acting.
@@ -290,7 +288,7 @@ Instructions for context handling help the agent maintain coherent, relevant con
 8. Emphasize how the agent should respond with transparency
 Encourage the agent to admit uncertainty, cite sources when possible, and never guess, so users know when to trust or verify an answer.
 
-<Add MD> Examples
+Examples
 
 •	Clearly state when you are uncertain or unable to help. Do not guess or fabricate information.
 •	Acknowledge when an answer is uncertain or AI-generated. Use phrases like 'I'm not sure' or 'Based on available information…'
@@ -305,7 +303,7 @@ Encourage the agent to admit uncertainty, cite sources when possible, and never 
 9. Specify how responses should adapt depending on user information
 Instruct the agent to adjust tone, length, and detail based on user role, urgency, or context to make responses more relevant and effective.
 
-<Add MD> Examples
+Examples
 
 •	Tailor responses based on user roles (e.g., manager vs. new hire). For example, use concise, high-level summaries for managers and provide more detailed steps or guidance for new employees.
 •	Adapt based on scenario type (e.g., urgent request vs. casual question).
@@ -313,7 +311,9 @@ Instruct the agent to adjust tone, length, and detail based on user role, urgenc
 
 
 ### Specific prompt writing techniques 
+
 #### In-context learning (ICL)
+
 In-context learning (ICL), also known as few-shot learning, refers to an LLMs ability to learn from a few examples or scenarios provided within the prompt. 
 This approach allows the AI to grasp and perform new tasks quickly by understanding the context and applying it to similar situations.
 
@@ -323,6 +323,7 @@ When to use this method:
 •	Teach content style: Use the following example to mirror the style of a product update: [Insert example post].
 
 #### Chain-of-thought (CoT) prompting
+
 Chain-of-thought (CoT) prompting is about leading the AI through a step-by-step reasoning process to solve a problem or answer a question. 
 This approach mirrors human problem-solving, where each step builds on the previous one. It helps the AI break down the task into logical sequences that leads to improved response.
 When to use this method:
@@ -332,6 +333,7 @@ When to use this method:
 
 
 ## Create a test plan to measure the quality of your ESS agent’s responses
+
 This testing guide helps you evaluate the quality of your customized agent experience using standard quality frameworks. Whether your agent supports HR, IT, or other employee experience scenarios, this guide provides a consistent way to assess the helpfulness and trustworthiness of responses.
 This guide is especially useful during pilot phases, as you update instructions, tune knowledge sources, or refine your agent’s behavior across different business units or geographies.
 
@@ -343,21 +345,18 @@ Response quality principles:
 - **Exceptional**: It goes above and beyond. The response is more helpful than websites or chat tools.
 
 ### How UI elements, knowledge, data, and topics reinforce response quality
+
 Different elements like formatting, personalized responses, authoritative sources, and clear calls to action work together to support response quality metrics. The more these elements are used effectively, the more accurate, complete, relevant, useful, and exceptional the response becomes.
 
-<add table>
-
 ### How to approach establishing benchmarks 
+
 Testing response quality and setting clear benchmarks helps teams identify what’s working well and where improvements are needed. Over time, this leads to more accurate, helpful, and personalized conversations that build trust and deliver better results for users.
 Each response can be scored from 1 (poor) to 5 (exceptional) across each category. Total score per response = 5 (poor) to 25 (exceptional).
 
-<add table>
-
 Use benchmark scores to understand how well the agent is meeting user expectations. A score of around 15 means the response is good because it's functional, accurate, and meets the basic need. A higher score, like 20 or above, means the response is great or exceptional, offering more value, personalization, and ease of use.
 
-<add table>
-
 ### Tips for benchmark testing
+
 1. Track quality using consistent prompts: Re-test them after updates to knowledge sources, instructions, or workflows to compare improvements.
 2. Vary the input styles: Try different prompt formats for the same intent:
   •	Keywords: “benefits enrollment”
@@ -370,8 +369,8 @@ The agent should respond well to all or ask for clarification when needed.
   •	Topics outside the current scope
   •	System errors or unavailable data
 
-
 ## More design resources
+
 Watch: Videos on how to use Copilot Studio
 More prompt engineering frameworks
 Browse system prompts from other models
