@@ -1,9 +1,9 @@
 ---
 title: Learn More about The Data Location Card
 description: Learn More about The Data Location Card
-ms.author: fahasen
+ms.author: scotv
 author: fhasen-msft
-manager: scotv
+manager: bpardi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
