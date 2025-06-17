@@ -48,7 +48,7 @@ Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated *
 
 This design positions search as the organizing layer for AI, while chat remains the workspace for task execution and deeper interactions. For example, if a user searches for **what's the status of the Q2 report**, Copilot Search may return a summarized answer and offer to continue the conversation in chat for more nuanced exploration or follow-up actions.
 
-:::image type="content" source="media/copilot-search-landing-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search." lightbox="media/copilot-search-landing-raw.png":::
+:::image type="content" source="media/copilot-search-landing-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search results." lightbox="media/copilot-search-landing-raw.png":::
 
 ## Privacy and security
 
