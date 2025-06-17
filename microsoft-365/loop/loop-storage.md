@@ -29,7 +29,7 @@ appliesto:
 ## Storage
 
 > [!NOTE]
-> The Copilot Pages and Copilot Notebooks content has moved to a [dedicated article](cpcn-storage.md).
+> The Copilot Pages and Copilot Notebooks content moved to a [dedicated article](cpcn-storage.md).
 
 Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/cta), allowing familiar management within existing file management workflows. Where the content was originally created determines its storage location:
 
@@ -37,9 +37,9 @@ Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/share
 |-----|-----|-----|-----|-----|
 |Loop app, My workspace *|✔️in user-owned container|||user account|
 |Loop app, shared workspace|✔️in shared container|||workspace owners|
-|Teams [channel workspace](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/collaborate-in-real-time-with-workspaces-in-teams/4414334)|✔️in shared container|||M365 Group|
-|Teams channel meeting||✔️in 📁`Meetings`||M365 Group|
-|Teams channel||✔️in Channel folder||M365 Group|
+|Teams [channel workspace](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/collaborate-in-real-time-with-workspaces-in-teams/4414334)|✔️in shared container|||Microsoft 365 Group|
+|Teams channel meeting||✔️in 📁`Meetings`||Microsoft 365 Group|
+|Teams channel||✔️in Channel folder||Microsoft 365 Group|
 |Teams private chat|||✔️in 📁`Microsoft Teams Chat files`|user account|
 |Teams private meeting|||✔️in 📁`Meetings`|user account|
 |OneNote for Windows or for the web|||✔️in 📁`OneNote Loop files`|user account|
@@ -49,17 +49,11 @@ Loop content is stored in SharePoint, OneDrive, and [SharePoint Embedded](/share
 
 ## My workspace container name
 
-Copilot Pages and Copilot Notebooks all use the Loop My workspace container. This user-owned container appears as 'Pages' if the person first visits the M365 Copilot app, or as 'My workspace' if they first visit the Loop app. To list all user-owned containers in your organization, regardless of their name, use, and adapt the following sample PowerShell:
-
-```PowerShell
-Get-SPOContainer -OwningApplicationId 'a187e399-0c36-4b98-8f04-1edc167a0996' | WHERE OwnershipType -EQ 'UserOwned' | FT
-```
-
-Refer to the article [Managing SharePoint Embedded containers for Copilot Notebooks, Copilot Pages, or Loop workspaces](cpcn-loop-spe-management.md) for more information.
+Copilot Pages and Copilot Notebooks all use the Loop My workspace container. This user-owned container is named 'Pages' if the person visits the Microsoft 365 Copilot app first. It is named 'My workspace' if the person visits the Loop app first. Refer to [listing all user-owned containers](cpcn-loop-spe-management.md#listing-all-the-user-owned-containers) to get a list, regardless of the container name.
 
 ## Storage quota
 
-All Loop workspaces count against your tenant's SharePoint storage quota.
+All Loop workspaces count against your organization's SharePoint storage quota.
 
 SharePoint Embedded also offers a platform for developers to build their own applications. This alternate usage pattern which bills per use is different from Loop and Copilot Pages storage quota management.
 
@@ -71,7 +65,7 @@ Loop workspaces have a maximum size of 25 TB. This limit can't be increased or d
 
 ### Types of Loop workspaces
 
-Storage behaviors after user departure depends on the type of Loop workspace. There's one **personal workspace** per user in your organization, created on demand by the person when accessed. All other created Loop workspaces are **shared workspaces**. For more information, see [workspace membership and Microsoft 365 groups](cpcn-loop-permission.md#workspace-membership-and-microsoft-365-groups) on the two shared workspace types.
+Storage behaviors after user departure depends on the type of Loop workspace. There's one **personal workspace** per user in your organization, created on demand by the person when accessed. All other created Loop workspaces are **shared workspaces**. For more information, see [workspace membership and Microsoft 365 Groups](cpcn-loop-permission.md#workspace-membership-and-microsoft-365-groups) on the two shared workspace types.
 
 ### Shared Workspaces
 
@@ -82,7 +76,7 @@ Storage behaviors after user departure depends on the type of Loop workspace. Th
 
 #### Microsoft 365 Group-owned
 
-- The Microsoft 365 group permissions and manages the lifetime of group-owned shared Loop workspaces, similar to the management of SharePoint Team sites.
+- The Microsoft 365 Group permissions and manages the lifetime of group-owned shared Loop workspaces, similar to the management of SharePoint Team sites.
 
 ### Personal Workspaces
 
@@ -103,7 +97,7 @@ Storage behaviors after user departure depends on the type of Loop workspace. Th
 - The Ideas workspace is deprecated, no longer created by default, and replaced with the My workspace personal workspace.
 - Ideas were the first default workspace, was tenant-owned, permissioned with a single-person roster.
 - The Loop app doesn't delete the deprecated Ideas workspace; a user or an admin must delete it if needed.
-- If a user hasn't added multiple owners to their Ideas workspace, the workspace becomes ownerless when they leave the company. It remains in the tenant and isn't automatically deleted.
+- If a user doesn't have multiple owners on their Ideas workspace, the workspace becomes ownerless when they leave the company. It remains in the tenant and isn't automatically deleted.
 
 ### Loop components created in Microsoft 365 outside of the Loop app or Copilot Pages
 
