@@ -18,18 +18,7 @@ appliesto:
 
 # Integrate SAP SuccessFactors with your Employee Self-Service deployment
 
-> [!IMPORTANT]
-> This is a Copilot agent built by Microsoft that's still in preview and subject to changes.
->
-> Previews might not work correctly or in the manner that a commercial service might function. Unless otherwise noted in a separate agreement, previews aren't included in the Service Level Agreement for the corresponding Online Service and might not be covered by customer support. We might change or discontinue previews at any time without notice. We might also choose not to make a preview commercially available. We might update previews at any time and for any reason, which might result in the deletion of Participant Data.
->
-> Participant’s use of previews in a live production environment is at Participant’s sole discretion and own risk. Participant acknowledges that Previews might contain bugs or other errors that could cause Previews, any system they run on, and any applications running on them to malfunction or experience impaired performance, including the loss of Participant Data.
-
-## Overview
-
-ESS agent is a new capability built by Microsoft that runs on top of Copilot using artificial intelligence (AI) in providing relevant information to employees and taking actions on their HR data.
-
-As most organizations manage HR data in an HRIS/HCM system, ESS agent should have access to HR data on behalf of users. SAP SuccessFactors is one of the HCM systems and this article guides you through the process required to integrate ESS agent with SAP SuccessFactors.
+The Employee Self-Service agent is a new capability built by Microsoft on Copilot and uses artificial intelligence (AI) in providing relevant information to employees and taking actions on their HR data. Most organizations manage HR data in an HRIS/HCM system and ESS agent requires access to HR data on behalf of users. SAP SuccessFactors being one of the HCM systems, this article guides you through the process required to integrate ESS agent with SAP SuccessFactors.
 
 ESS agent continues to serve as unified assistants for employees to provide HR related services and connecting with SAP SuccessFactors makes it truly an enterprise HR assistant.
 
@@ -50,7 +39,7 @@ ESS agent will act as a front-end for consuming information from SAP SuccessFact
 
 :::image type="content" source="media/agent-and-success-factors-integration.png" alt-text="Diagram of the high-level components comprising overall solution for ESS agent and SuccessFactors integration." lightbox="media/agent-and-success-factors-integration.png":::
 
-The above diagram outlines the high-level components comprising overall solution for ESS agent and SuccessFactors integration. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components and bring in the right stakeholders to set up an environment to deploy and test ESS agent.
+The diagram outlines the high-level components comprising overall solution for ESS agent and SuccessFactors integration. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components and bring in the right stakeholders to set up an environment to deploy and test ESS agent.
 
 > [!NOTE]
 > SuccessFactors integration is currently based on OData V2.0, but the latest supported version is V4.0. Microsoft Entra ID using SuccessFactors is still a prerelease version and is subject to change.
