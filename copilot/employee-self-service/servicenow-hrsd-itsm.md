@@ -264,7 +264,7 @@ Users can easily add attachments to the ticket enabling them to provide more con
 
 ### ServiceNow ITSM Topics
 
-:::image type="content" source="media/service-now-topics.png" alt-text="Diagram that shows the ServiceNow ITSM topics.":::
+:::image type="content" source="media/service-now-topics.png" alt-text="Diagram that shows the ServiceNow ITSM topics." lightbox="media/service-now-topics.png":::
 
 ### ServiceNow ITSM Template Configurations
 
