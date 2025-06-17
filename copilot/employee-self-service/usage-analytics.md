@@ -18,6 +18,9 @@ appliesto:
 
 # Usage analytics for the Employee Self-Service agent
 
+>[!NOTE]
+>The Employee Self-Service agent is currently in public preview. Deployment processes are subject to change before this product becomes generally available.
+
 You can use different intefaces to monitor ESS agent usage depending on the role in your organization that is in charge of monitoring analytics.
 
 As an application or service owner with the Environment Maker role, you can view analytics in Copilot Studio by navigating to the **Analytics** tab.

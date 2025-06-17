@@ -18,6 +18,9 @@ appliesto:
 
 # Customize the Employee Self-Service agent
 
+>[!NOTE]
+>The Employee Self-Service agent is currently in public preview. Deployment processes are subject to change before this product becomes generally available.
+
 Customization is how you make the Employee Self-Service (ESS) agent work in the best way to suit your organization's needs.
 
 |Role |Activities to perform |Configuration area |
@@ -94,6 +97,28 @@ You can brand the ESS agent based on your branding guidelines. The following bra
 You can customize most of these in Copilot Studio by selecting the **Edit** button in the **Overview** section of the agent.
 
 To customize the logo, go to your **Settings** page in Copilot Studio and select **Agent details.**.
+
+## Add a disclaimer to the landing page
+
+Employee Self-Service supports two types of configurable disclaimers in Copilot Studio:
+
+1. A landing page disclaimer that is seen first, and explains the company’s privacy statement.
+2. A topic-level disclaimer for specific kinds of responses in conversations.
+
+The landing page disclaimer is configured once for the agent and is meant to bring awareness to the organization’s data and privacy policies.
+
+To add a landing page disclaimer:
+
+1. Go to the Microsoft Admin Center.
+2. Select an ESS instance and go to the **Customize** tab.
+3. Write a custom message and preview it. Once you are satisfied, turn the toggle to **On.**
+
+Tips on writing this disclaimer:
+
+- It’s recommended to keep disclaimers under 150 characters.
+- Legal alignment: Ensure it aligns with your organization’s legal, privacy, and compliance requirements, especially when handling sensitive domains like HR or legal.
+- Company voice: Match the disclaimer’s tone to your company’s voice using natural language.
+- Link to more information: Optionally, include a link to more detailed terms, policies, or support channels.
 
 ## Customize Topics
 

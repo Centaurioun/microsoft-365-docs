@@ -25,5 +25,8 @@ items:
       href: servicenow-hrsd-itsm.md
     - name: Workday
       href: workday.md
+      items:
+        - name: Workday reports
+          href: workday-reports.md
 - name: Usage analytics for the Employee Self-Service agent
   href: usage-analytics.md
