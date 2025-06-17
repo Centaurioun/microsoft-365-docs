@@ -145,7 +145,7 @@ This report is used for retrieving the required user context attributes from Wor
 
 |Filter on Aggregations |  |  |  |  |  |  |  |
 |---------------------------|--|--|--|--|--|--|--|
-|**Filter condition for filtering on aggregated values |  |  |  |  |  |  |  |
+|**Filter condition for filtering on aggregated values** |  |  |  |  |  |  |  |
 |And/Or | ( |Aggregation function |Field |Operator |Comparison type |Comparison value | ) |
 
 ## Workday User Context Custom Report - SUB-FILTER
