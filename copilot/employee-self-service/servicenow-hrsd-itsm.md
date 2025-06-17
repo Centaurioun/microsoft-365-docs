@@ -18,9 +18,10 @@ appliesto:
 
 # Integrate ServiceNow HRSD and ITSM with your Employee Self-Service deployment
 
-ESS Agent being a new capability built by Microsoft that runs on top of Copilot using Artificial Intelligence (AI) in providing relevant information to employees and taking actions on their HR data.
-As most organizations manage HR data in HCM and employee-related IT services in ITSM, ESS Agent should have access to this data on behalf of users. ServiceNow being one of the HCMs & ITSMs, this document helps set up the ESS Agent integration with ServiceNow HRSD + ITSM.
-ESS Agent continues to serve as unified assistants for employees to provide HR + IT information and connecting with ServiceNow makes it truly an enterprise assistant.
+>[!IMPORTANT]
+>You need to complete the steps to deploy the Employee Self-Service (ESS) agent before you can configure this supplemental extension pack.
+
+The Employee Self-Service agent is built on Copilot and uses AI to provide relevant information to employees and take actions on their HR data. If your organization uses a human resource management system, the ESS agent requires access to that system to function most effectively.
 
 ## Functional Synopsis
 

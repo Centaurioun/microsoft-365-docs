@@ -18,11 +18,10 @@ appliesto:
 
 # Integrate ServiceNow with your Employee Self-Service deployment
 
-ESS Agent being a new capability built by Microsoft that runs on top of Copilot applying Artificial Intelligence (AI) in providing relevant information to employees and taking actions on their HR data.
+>[!IMPORTANT]
+>You need to complete the steps to deploy the Employee Self-Service (ESS) agent before you can configure this supplemental extension pack.
 
-As most organizations manage HR data in an HCM & Knowledge base system, ESS Agent should have access to this data on behalf of users. With ServiceNow being one of the Knowledge base systems, this document helps set up the ESS Agent integration with ServiceNow Knowledge base using Knowledge Graph Connector.
-
-ESS Agent continues to serve as unified assistants for employees to provide knowledge services and connecting with ServiceNow makes it truly an enterprise HR/IT assistant.
+The Employee Self-Service agent is built on Copilot and uses AI to provide relevant information to employees and take actions on their HR data. If your organization uses a human resource management system, the ESS agent requires access to that system to function most effectively.
 
 ## Functional Synopsis 
 

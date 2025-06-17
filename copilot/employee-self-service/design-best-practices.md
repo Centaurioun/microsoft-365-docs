@@ -11,7 +11,7 @@ ms.service: microsoft-365-copilot
 ms.custom: ess-agent
 ms.localizationpriority: medium
 ms.collection: m365copilot
-description: Learn about the first stage in the deployment process for the Employee Self-Service agent.
+description: Learn how to craft agent instructions for the Employee Self-Service agent that align with your organization's needs.
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---

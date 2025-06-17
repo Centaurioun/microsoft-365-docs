@@ -18,9 +18,10 @@ appliesto:
 
 # Integrate SAP SuccessFactors with your Employee Self-Service deployment
 
-The Employee Self-Service agent is a new capability built by Microsoft on Copilot and uses artificial intelligence (AI) in providing relevant information to employees and taking actions on their HR data. Most organizations manage HR data in an HRIS/HCM system and ESS agent requires access to HR data on behalf of users. SAP SuccessFactors being one of the HCM systems, this article guides you through the process required to integrate ESS agent with SAP SuccessFactors.
+>[!IMPORTANT]
+>You need to complete the steps to deploy the Employee Self-Service (ESS) agent before you can configure this supplemental extension pack.
 
-ESS agent continues to serve as unified assistants for employees to provide HR related services and connecting with SAP SuccessFactors makes it truly an enterprise HR assistant.
+The Employee Self-Service agent is built on Copilot and uses AI to provide relevant information to employees and take actions on their HR data. If your organization uses a human resource management system, the ESS agent requires access to that system to function most effectively.
 
 ## Functional synopsis
 
@@ -252,7 +253,7 @@ This step is required to set the user context for the ESS agent that primarily d
    > The highlighted section in the code transforms username from the logged in users’ principal name to SAP SuccessFactors user ID. Use this based on your environment setup between Microsoft Entra and SAP SuccessFactors. Currently the agent supports only User Principal Name (UPN) as a key identifier, if there are other attributes to be used as key identifier then a custom logic should be implemented to get the correct username for SAP SuccessFactors.
 6. Select **Save** for changes.
 
-### Setup Templates
+### Set up Templates
 
 ESS agent comes with few predefined templates that are being used for each topic. These templates are shipped with the default data attribute paths, if there are custom entities and paths being used in SAP SuccessFactors, then these templates must be customized to match the SAP SuccessFactors entities.
 
