@@ -1,5 +1,5 @@
 ---
-title: Deployment Guide for ServiceNow Knowledge integration with ESS Agent using Microsoft Graph Connector
+title: Integrate ServiceNow with your Employee Self-Service deployment
 f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
@@ -11,12 +11,12 @@ ms.service: microsoft-365-copilot
 ms.custom: ess-agent
 ms.localizationpriority: medium
 ms.collection: m365copilot
-description: This article serves as a deployment Guide for ServiceNow Knowledge integration with ESS Agent using Microsoft Graph Connector.
+description: Learn about integrating ServiceNow in the deployment process for the Employee Self-Service agent.
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---
 
-# Deployment Guide for ServiceNow Knowledge integration with ESS Agent using Microsoft Graph Connector
+# Integrate ServiceNow with your Employee Self-Service deployment
 
 ESS Agent being a new capability built by Microsoft that runs on top of Copilot applying Artificial Intelligence (AI) in providing relevant information to employees and taking actions on their HR data.
 
