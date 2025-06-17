@@ -76,6 +76,7 @@ To activate the Copilot Tuning service and scope its availability:
 2. Go to **Copilot** > **Copilot settings**.
    :::image type="content" source="media/copilot-tuning-admin-guide/copilot-settings.png" alt-text="Screenshot of Copilot settings in the admin center" lightbox="media/copilot-tuning-admin-guide/copilot-settings.png" border="false":::
 3. Choose **Copilot Tuning**, and choose **Accept** to accept the [EAP terms](https://go.microsoft.com/fwlink/?linkid=2312708).
+    :::image type="content" source="media/copilot-tuning-admin-guide/copilot-tuning-settings.png" alt-text="Screenshot of Copilot Tuning settings in the admin center" lightbox="media/copilot-tuning-admin-guide/copilot-tuning-settings.png" border="false":::
     
     > [!NOTE]
     > The **Copilot Tuning** setting is only available if your tenant meets the criteria described in the [Prerequisites](#prerequisites) section.
@@ -97,6 +98,8 @@ When you add a user to Copilot Tuning, they receive an email with instructions t
 ### Manage tuned task-specific models
 
 You can review and manage the set of models that model makers create and publish via the **Copilot Tuning** control in the admin center.
+
+:::image type="content" source="media/copilot-tuning-admin-guide/manage-models.png" alt-text="Screenshot of Copilot Tuning settings in the admin center with Manage task-specific models selected" border="false":::
 
 Choose any published model to review the associated security groups and update them as needed.
 
