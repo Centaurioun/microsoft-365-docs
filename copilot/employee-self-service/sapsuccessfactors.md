@@ -63,7 +63,7 @@ The above diagram outlines the high-level components comprising overall solution
 
 You can refer to the ESS agent deployment guide for subscription requisites required for the ESS agent itself.
 
-## Deployment role requirements
+### Deployment role requirements
 
 | **Roles / Persona**    | **Description** | **Activities performed** | **Configuration Areas**   |
 | --------- | ----------------------------- | ---------------------------------------- | ------------------------- |
@@ -111,10 +111,10 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
 
 1. [Establish a *Microsoft Enterprise application*.](#create-a-microsoft-entra-id-enterprise-application)
 2. [Create an *OAuth 2.0 Client Application* in SuccessFactors.](#create-an-oauth-20-client-application-in-successfactors)
-3. Configure *SAML* settings within the Enterprise application.
+3. [Configure *SAML* settings within the Enterprise application.](#configure-enterprise-application)
 4. Obtain the Enterprise application's *SAML Certificate*.
 5. Upload the SAML certificate to your OAuth 2.0 client application within SuccessFactors.
-6. Establish trust.
+6. [Establish trust](#configure-successfactors-to-trust-microsoft-entra-id).
 
 ### Create a Microsoft Entra ID Enterprise application
 
@@ -182,7 +182,7 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
 3. Select the client application that’s been created earlier.
 4. Update the certificate to the one downloaded from Microsoft Entra ID and paste only the certificate body content without the header and footer.
 
-#### Test the connection
+### Test the connection
 
 1. Open **Power Automate** in your browser.
 2. Create a new flow (manual trigger type).
@@ -196,7 +196,7 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
 
 For more information on setting up SSO for SAP SuccessFactors with Microsoft Entra, see [Set up Microsoft Entra ID using SuccessFactors](/power-platform/sap/connect/entra-id-using-successfactors).
 
-## Install SuccessFactors extension pack for ESS agent
+### Install SuccessFactors extension pack for ESS agent
 
 ESS agent is designed to have separate extension packs for each third party ISVs like SuccessFactors. Hence, these extension packs must be installed before starting any configurations or customizations.
 
@@ -230,7 +230,7 @@ The following are the steps required to install & enable the SuccessFactors exte
 > [!NOTE]
 > SAP SF OData connector uses maker connection, which is the SF API user credentials, in all flows to establish connection.
 
-## Setup SuccessFactors Extension Pack for ESS agent
+### Setup SuccessFactors extension pack for ESS agent
 
 The SuccessFactors extension pack requires few initial setups for the agent flows and templates. The following sections will walk you through the process for configuring the required components.
 
@@ -374,7 +374,7 @@ check for in role id
 
 :::image type="content" source="media/agent-authentication-flow-context.png" alt-text="Diagram that shows the Role based permissions." lightbox="media/agent-authentication-flow-context.png":::
 
-### User Context flow – High-level logic
+## User Context flow – High-level logic
 
 1. Setting a variable with the filter parameters, which in this case is the alias of the user the context is retrieved for.
 2. Next split into parallel calls to reduce time:
@@ -386,7 +386,7 @@ check for in role id
 6. The right-side checks for open positions if the user is a manager and *IsManagerCheckVacantPositions* is set to "True". It makes Dataverse calls to get the necessary configs to make the SF OData request and then updates *IsManager* variable.
 7. Lastly the flow composes an object with all the required user context fields and returns it to Copilot Studio (CPS).
 
-### Read flow – High-level logic
+## Read flow – High-level logic
 
 **Input variables required:**
 
@@ -417,7 +417,7 @@ check for in role id
 
 8. Lastly it returns three variables, such as *labelResponse*, *modelResponse*, and *isSucceeded*.
 
-### Employee Read scenarios – configuration
+## Employee Read scenarios – configuration
 
 The scenarios that are shipped with ESS agent preview are limited only for "Read" scenarios and the "Update" scenarios aren't supported yet, even thought they're available for the current version of agent.
 
@@ -575,7 +575,7 @@ Authorization for all the scenarios is as follows:
 } 
 ```
 
-### Get Hire Date 
+### Get Hire Date
 
 |Get Hire Data| Type |
 | ------------------ | --------------|
