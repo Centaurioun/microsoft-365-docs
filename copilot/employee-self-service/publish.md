@@ -18,6 +18,9 @@ appliesto:
 
 # Publish the Employee Self-Service agent to your organization
 
+>[!NOTE]
+>The Employee Self-Service agent is currently in public preview. Deployment processes are subject to change before this product becomes generally available.
+
 Publishing the Employee Self-Service (ESS) agent makes it available to your users. Currently, the ESS agent supports publishing to Copilot Business Chat.
 
 |Role |Activities to perform |Configuration area |
