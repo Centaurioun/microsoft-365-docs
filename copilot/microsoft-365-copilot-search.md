@@ -26,6 +26,8 @@ Because it's integrated with Microsoft 365 Copilot, users can find the results t
 > [!NOTE]
 > Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
+:::image type="content" source="media/copilot-search-home-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search." lightbox="media/copilot-search-home-raw.png":::
+
 ## Access and eligibility
 
 Copilot Search is available to users with an eligible Microsoft 365 Copilot license at no additional cost. It can be accessed through the Microsoft 365 Copilot app on desktop, web, and mobile platforms. The app is available to users with Entra accounts (work or school).
@@ -45,6 +47,8 @@ Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated *
 - **Secure**: Offers enterprise-grade security and privacy
 
 This design positions search as the organizing layer for AI, while chat remains the workspace for task execution and deeper interactions. For example, if a user searches for **what's the status of the Q2 report**, Copilot Search may return a summarized answer and offer to continue the conversation in chat for more nuanced exploration or follow-up actions.
+
+:::image type="content" source="media/copilot-search-landing-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search." lightbox="media/copilot-search-landing-raw.png":::
 
 ## Privacy and security
 
