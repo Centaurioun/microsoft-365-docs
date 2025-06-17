@@ -35,6 +35,7 @@ CLRV= Calculation Lookup related value
 Add.= additional info
 
 |Field name |Business object |CLRV Lookup field |CLRV Related business object |CLRV return value |add. Category |add. Authorized usage |
+|-----------|----|---|---|----|--------|---------|
 |CF – ISO 2 Country Code LRV |Worker |Location Address - Country |Country |Alpha-2 Code |Uncategorized |Default areas |
 |CF – EE Level LRV |Worker |Supervisory Organization - Primary Position |Supervisory Organization |Organization on Level from Top |Uncategorized |Default Areas |
 |CF – LRV Worker Type |Workday Account |Worker |Worker |Worker Type |  |  |
@@ -143,7 +144,7 @@ This report is used for retrieving the required user context attributes from Wor
 **Condition as Text:** User Name equal to from user input And CF LRV Worker Type in the selection list Employee
 
 |Filter on Aggregations |  |  |  |  |  |  |  |
-|---------------------------|  |  |  |  |  |  |  |
+|---------------------------|--|--|--|--|--|--|--|
 |**Filter condition for filtering on aggregated values |  |  |  |  |  |  |  |
 |And/Or | ( |Aggregation function |Field |Operator |Comparison type |Comparison value | ) |
 
@@ -189,14 +190,14 @@ This report is used for retrieving the required user context attributes from Wor
 
 **Prompt Defaults**
 
-|Field |Prompt qualifier |Label for prompt |label for prompt XML alias |Default type |Required |Do not prompt at runtime |Do not include in subtitle |
-|------|-----------------|-----------------|--------------------------|-------------|---------|-------------------------|---------------------------|
-|User Name |Default prompt |  |User_Name |No default value  |  |Yes |  |  |
-|Employee Type |  |  |Employee_Type |No default value |  |  |Yes |  |
-|Non-Employee Type |  |  |Employee_Type |No default value |  |  |Yes |  |
-|Include managers of employees |  |  |Include_managers_of_employees |Specialty default value |Yes |  |Yes |  |
-|Include managers of nonemployees |  |  |Include_managers_of_non_employees |No default value |  |  |Yes |  |
-|Include managers of unfilled positions only |  |  |Include_managers_of_unfilled_positions_only |No default value |  |  |Yes |  |
+|Field |Prompt qualifier |Label for prompt |label for prompt XML alias |Default type |Default value |Required |Do not prompt at runtime |Do not include in subtitle |
+|------|-----------------|-----------------|--------------------------|-------------|---------|-------------------------|---------------------------|---------------|
+|User Name                                   |Default prompt |  |User_Name                                   |No default value        |    |Yes |  |  |
+|Employee Type                               |               |  |Employee_Type                               |No default value        |    |    |Yes |  |
+|Non-Employee Type                           |               |  |Employee_Type                               |No default value        |    |    |Yes |  |
+|Include managers of employees               |               |  |Include_managers_of_employees               |Specialty default value |Yes |    |Yes |  |
+|Include managers of nonemployees            |               |  |Include_managers_of_non_employees           |No default value        |    |    |Yes |  |
+|Include managers of unfilled positions only |               |  |Include_managers_of_unfilled_positions_only |No default value        |    |    |Yes |  |
 
 ## Workday User Context Custom Report - OUTPUT
 
