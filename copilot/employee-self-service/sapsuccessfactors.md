@@ -29,7 +29,7 @@ appliesto:
 
 ESS agent is a new capability built by Microsoft that runs on top of Copilot using artificial intelligence (AI) in providing relevant information to employees and taking actions on their HR data.
 
-As most organizations manage HR data in a HRIS/HCM system, ESS agent should have access to HR data on behalf of users and SAP SuccessFactors is one of the HCM systems. This article guides you through the process required to integrate ESS agent with SAP SuccessFactors.
+As most organizations manage HR data in an HRIS/HCM system, ESS agent should have access to HR data on behalf of users. SAP SuccessFactors is one of the HCM systems and this article guides you through the process required to integrate ESS agent with SAP SuccessFactors.
 
 ESS agent continues to serve as unified assistants for employees to provide HR related services and connecting with SAP SuccessFactors makes it truly an enterprise HR assistant.
 
@@ -58,10 +58,10 @@ The above diagram outlines the high-level components comprising overall solution
 ## Prerequisites
 
 - [Setup SAP OData connector](/power-platform/sap/connect/sap-odata-connector)
-- Admin access to SAP SuccessFactors
+- Admin access to SAP SuccessFactors (SF)
 - Admin access within the Azure portal
 
-You can refer to the ESS agent deployment guide for subscription requisites required for the ESS agent itself.
+You can refer to the ESS agent deployment guide for subscription requirements for the ESS agent.
 
 ### Deployment role requirements
 
@@ -69,7 +69,7 @@ You can refer to the ESS agent deployment guide for subscription requisites requ
 | --------- | ----------------------------- | ---------------------------------------- | ------------------------- |
 | **SAP SF Administrator** | User who can perform administrative tasks.  |  1. Create an OAuth 2.0 client application in SuccessFactors. <br> 2. Upload the SAML certificate to OAuth 2.0 client application within SuccessFactors (SF). <br>3. Determine the API server where SF is hosted. <br> 4. Confirm that maker account mapped in SAP SuccessFactors have OData API access. | SAP SuccessFactors |
 | **Application Administrator (or) Cloud Application Administrator (or) Application Owner** | User who can configure single sign-on (SSO) integration.   | 1. Establish a Microsoft Enterprise application. <br> 2. Configure SAML settings within the Enterprise application. <br> 3. Obtain the Enterprise application’s SAML certificate. <br> 4. Establish trust. | Azure Admin portal  |
-| **Environment Maker** | User who can customize ESS agent.  | 1. Install and configure SAP SF extension pack. <br> 2. Manage SAP SF scenarios. <br> 3. Setup User Context.  | Microsoft Copilot Studio  |
+| **Environment Maker** | User who can customize ESS agent.  | 1. Install and configure SAP SF extension pack. <br> 2. Manage SAP SF topics. <br> 3. Setup User Context.  | Microsoft Copilot Studio  |
 | **InfoSec/IT Infra/Change Control Board**  | User committee who is responsible for security infrastructure changes. | 1. Configure IT platform services such as network and firewall rules.| Network firewall policies |
 
 ### Infra set up for 3P ISV integration
@@ -127,7 +127,7 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
 7. Configure the following:
    1. **Identifier (Entity ID)**: Set to `api://<Enterprise App ID>` (for example, `api://33135bc6be6a-4cdc-9c96-af918e367425`).
      > [!NOTE]
-     > Recommended to use the SF instance URL `https://<sfinstance>.successfactors.com`.
+     > It is recommended to use the SF instance URL `https://<sfinstance>.successfactors.com`.
 
    2. **Reply URL**: Used in the SAML token as the Recipient field (for example, `https://<apiserver>/oauth/token`).
 
@@ -230,7 +230,7 @@ The following are the steps required to install & enable the SuccessFactors exte
 > [!NOTE]
 > SAP SF OData connector uses maker connection, which is the SF API user credentials, in all flows to establish connection.
 
-### Setup SuccessFactors extension pack for ESS agent
+### Set up SuccessFactors extension pack for ESS agent
 
 The SuccessFactors extension pack requires few initial setups for the agent flows and templates. The following sections will walk you through the process for configuring the required components.
 
@@ -265,7 +265,7 @@ This step is required to set the user context for the ESS agent that primarily d
 
 ### Setup Templates
 
-ESS agent comes with few predefined templates that are being used for each scenario. These templates are shipped with the default data attribute paths, if there are custom entities and paths being used in SAP SuccessFactors, then these templates must be customized to match the SAP SuccessFactors entities.
+ESS agent comes with few predefined templates that are being used for each topic. These templates are shipped with the default data attribute paths, if there are custom entities and paths being used in SAP SuccessFactors, then these templates must be customized to match the SAP SuccessFactors entities.
 
 Follow the steps below to set up templates:
 
@@ -275,7 +275,7 @@ Follow the steps below to set up templates:
 4. Select **Employee Self Service HR SuccessFactors** extension pack.
 5. Select **Open** from the dialog popup.
 6. Select **Manage** in the Configuration section.
-7. All the template configurations available will be listed in the Power Apps, so select each of the "Get" templates to configure the right entities and paths. The following is an example of the Get configuration template:
+7. All the template configurations available will be listed in the Power Apps, so select each of the "Get" templates to configure the right entities and paths. The following is an example of the "Get" configuration template:
 
    ```json
    { 
@@ -316,7 +316,7 @@ Follow the steps below to set up templates:
 
 The highlighted **filter** parameter keys must match with what is expected in the Template configuration. In the following example, *personIdExternalVal* would be used as a key to insert *Global.ESS.UserContext.Employee_Id* into the filter expression.
 
-**Example format used in topic:**
+**Example format used in Topic:**
 
 _`"{""personIdExternalVal"": """ & Global.ESS_UserContext_Employee_Id & """,""userIdVal"": """ & Global.ESS_UserContext_User_Id & """}"`
 
@@ -333,7 +333,7 @@ There are two permissions configurations that can be used. The permissions flow 
 
 ### Permissions config
 
-The Permissions flow calls the OData connector with *CheckUserPermission* as its relative path and *permissionMetadata* in the config as the queryString. OData connector then returns a true or false value dictating if the user has permission or not to the Get Flow.
+The Permissions flow calls the OData connector with *CheckUserPermission* as its relative path and *permissionMetadata* in the config as the queryString. OData connector then returns a true or false value dictating if the user has permission or not to the "Get" flow.
 
 ```json
 { 
@@ -379,7 +379,7 @@ check for in role id
 1. Setting a variable with the filter parameters, which in this case is the alias of the user the context is retrieved for.
 2. Next split into parallel calls to reduce time:
     1. Left side retrieves the user context config in the first Dataverse call and second Dataverse call retrieves the filter and request entities, which we're going to query for in the OData connector at the end. After Left side is complete the flow will have retrieved all the requested entities from the config for the user.
-    2. Right side retrieves config to check if user *isManager* in the first Dataverse call and in the second Dataverse call flow retrieves the filter and request entities to query for. With that config the flow queries for directs under the user and retrieves necessary information such as in this case *userId* of directs.
+    2. Right side retrieves config to check if user *isManager* in the first Dataverse call and in the second Dataverse call flow retrieves the filter and request entities to query for. With that config, the flow queries for directs that are under the user and retrieves necessary information such as in this case *userId* of directs.
 3. If SF call for user data doesn't return anything, we terminate the flow and respond to copilot user not found.
 4. Split into parallel calls to check if the user has multiple records on the left.
 5. The left side checks if there are multiple records and then runs a child flow that gets the active user ID and updates the context. Then the flow makes an OData call to get the user's roles by their user ID.
@@ -407,7 +407,7 @@ check for in role id
    :::image type="content" source="media/agent-authentication-flow-condition.png" alt-text="Diagram that shows the Read Flow termination." lightbox="media/agent-authentication-flow-condition.png":::
 
 5. Flow then in parallel makes OData calls for the entity data and the labels.
-6. To get the labels first, the flow checks if there are any labels to query in the config and then prepares the variables that are needed.
+6. To get the labels first, the flow checks if there are any labels to query in the config, and then prepares the variables that are needed.
 
    :::image type="content" source="media/agent-authentication-flow-query.png" alt-text="Diagram that shows flow checks if there are any labels to query in the config." lightbox="media/agent-authentication-flow-query.png":::
 
@@ -419,41 +419,36 @@ check for in role id
 
 ## Employee Read scenarios – configuration
 
-The scenarios that are shipped with ESS agent preview are limited only for "Read" scenarios and the "Update" scenarios aren't supported yet, even thought they're available for the current version of agent.
+The topics that are shipped with ESS agent preview are limited only for "Read" scenarios and the "Update" scenarios aren't supported yet, even thought they're available for the current version of agent.
 
-Each of the Read scenario has its own prompts, configurations, etc., but the actual execution of SAP SuccessFactors is encapsulated in the **SuccessFactors System Get Common Execution** scenario expecting the following inputs:
+Each of the Read topic has its own prompts, configurations, etc., but the actual execution of SAP SuccessFactors is encapsulated in the **SuccessFactors System Get Common Execution** topic expecting the following inputs:
 
-- **Filter parameters**: Generally passing *Employee ID* and *User ID* for filtering query for Employee Read scenarios.
+- **Filter parameters**: Generally passing *Employee ID* and *User ID* for filtering query for Employee Read topics.
 - **ScenarioName**: Config Name, which is used by Dataverse call to get scenario configuration.
 - **userIdentifier**: User ID
 
-Common orchestrator then returns a ModelResponse and LabelResponse, which is then parsed by the LLM following the below instructions and generates answer for user:
+Common orchestrator then returns a ModelResponse and LabelResponse, which is then parsed by the LLM using the following instructions to generate answer for user:
 
-```yml
-Extract the input from the below response (map the Label response *value* as key in model 
-response attribute then provide model value) 
-Provide response to the user in a human readable form  
-Format it properly so it looks clean and readable 
-Use **only** data values from variable named as "successfactorsModelResponse" and use 
-variable named as "successfactorsLabelResponse" for labeling the data 
-Response Example: 
-Label Response: key":"company","value":"company" 
-Model Response: 
-"company":"12345" 
-Example Output: 
-Your company is 12345 (Contoso Germany) 
-```
+- Extract the input from the below response (map the Label response *value* as key in model response attribute then provide model value).
+- Provide response to the user in a human readable form.
+- Format properly so it looks clean and readable.
+- Use only data values from variable named as "successfactorsModelResponse" and use variable named as "successfactorsLabelResponse" for labeling the data.
+- **Response example:**
+  - Label Response:"key":"company","value":"company"
+  - Model Response: "company":"12345"
+  - Example Output: Your company is 12345 (Contoso Germany)
 
-The *Get Employee ID* and *Get Service Anniversary* scenarios are exception to this common execution method, which is further explained in their respective sections.
 
-Authorization for all the scenarios is as follows:
+The "Get Employee ID" and "Get Service Anniversary" topics are exception to this common execution method, which is further explained in their respective sections.
+
+Authorization for all the topics is as follows:
 
 - Authorization is done using the *permissionsMetadata* that is part of the Template configuration. The *permissionsMetadata* and *User ID* are used to create the query string for OData connector in *SuccessFactors Check User Permissions* flow.
 - It's important to include *permissionMetadata* or *rolePermission* in the Template config file as there's no other authorization check if both of those fields are missing.
 
 ### Get Base Compensation
 
-|Get Base Compensation| Type |
+|Get Base Compensation| Details |
 | ------------------ | --------------|
 | **Description**  | Returns the users’ compensation data such as compensation ratio and salary. |
 | **Prompts**  | <li>>How much can I expect to earn annually, what is my salary? <li>Show me only my base salary details |
@@ -499,7 +494,7 @@ Authorization for all the scenarios is as follows:
 
 ### Get Company Code 
 
-|Get Company Code| Type |
+|Get Company Code  | Details |
 | ------------------ | --------------|
 | **Description**    | Returns users’ company code information. |
 | **Prompts**        | <li> What is my company code? <li> Get employee view on company code <li> Display my company code <li> Give me my company code, what is my company code? <li> Show me only my company code details |
@@ -538,13 +533,13 @@ Authorization for all the scenarios is as follows:
 
 ### Get Cost Center
 
-|Get Cost Center| Type |
+|Get Cost Center| Details |
 | ------------------ | --------------|
 | **Description**    | Returns users’ current cost center. |
 | **Prompts** |<li>What is my Cost Center?<li>Can you show me the cost center I'm assigned to?<li>Can you show me my cost center?<li>Show me only my cost center details|
 | **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetCostCenter`|
 | **Filter** | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p> Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`|
-| **Values queried** | CostCenterCode <br> CostCenterName (*CostCenterName label isn't retrieved as it isn't necessary for scenario*) |
+| **Values queried** | CostCenterCode <br> CostCenterName (*CostCenterName label isn't retrieved as it isn't necessary for topic*) |
 
 **Configuration**:
 
@@ -577,7 +572,7 @@ Authorization for all the scenarios is as follows:
 
 ### Get Hire Date
 
-|Get Hire Data| Type |
+|Get Hire Data| Details |
 | ------------------ | --------------|
 | **Description**    | Returns the users’ hire date. |
 | **Prompts**        | <li>  When is my original start date?<li> Get my hire date<li> Get my start date<li> Show me only my hire date details   |
@@ -612,9 +607,9 @@ Authorization for all the scenarios is as follows:
 
 ### Get Service Anniversary
 
-|Get Service Anniversary| Type |
+|Get Service Anniversary| Details |
 | ------------------ | --------------|
-|Description |This scenario performs a calculated functionality using the "HireDate" value with some PowerFx functions as follows:<p>**Years worked**<p><li>`RoundDown(DateDiff(Topic.startDate, Now(), TimeUnit.Years), 0)` <br>This formula calculates the number of complete years the employee has worked by finding the difference between current date and employee's start date and then rounding down to the nearest whole number<li>`DateDiff(Topic.startDate, Now(), TimeUnit.Years)` <br>This part of the formula calculates the difference in years between the employee's start date (`Topic.startDate`) and the current date (\`Now()\`).<li>`RoundDown(..., 0)`<br>This function takes the result of DateDiff and rounds it down to the nearest whole number. The 0 indicates the number of decimal places to round to, which in this case is zero, meaning it returns an integer value representing the complete years worked. <p>**Service Anniversary Intervals in Years** <p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)`<br> This calculates how many complete intervals of the service anniversary duration the employee has worked. It divides the total years worked by the service anniversary duration and rounds down to the nearest whole number. <p>**Upcoming Service Anniversary Count** <li>`Topic.serviceAnniversaryDuration \* (Topic.serviceAnniversaryIntervalsInYears + 1)`<br>This formula calculates the upcoming service anniversary count by multiplying the service anniversary duration by one more than the complete intervals already worked.<p>**Calculated Service Anniversary Date**<br>`DateAdd(Topic.startDate, Topic.serviceAnniversaryDuration \*(RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0) + 1), TimeUnit.Years)`<p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)`<br> This part of the formula calculates how many complete intervals of the service anniversary duration the employee has worked by dividing the total years worked by the service anniversary duration and rounding down to the nearest whole number.<li>`Topic.serviceAnniversaryDuration \* (RoundDown(Topic.yearsWorked /Topic.serviceAnniversaryDuration, 0) + 1)`<br>This calculates the total service anniversary intervals (plus one) to be added to the start date.<li>`DateAdd(Topic.startDate, ..., TimeUnit.Years)`<br>Finally, this function adds the calculated intervals to the start date to determine the upcoming service anniversary date. |
+|Description |This topic performs a calculated functionality using the "HireDate" value with some PowerFx functions as follows:<p>**Years worked**<p><li>`RoundDown(DateDiff(Topic.startDate, Now(), TimeUnit.Years), 0)` <br>This formula calculates the number of complete years the employee has worked by finding the difference between current date and employee's start date and then rounding down to the nearest whole number<li>`DateDiff(Topic.startDate, Now(), TimeUnit.Years)` <br>This part of the formula calculates the difference in years between the employee's start date (`Topic.startDate`) and the current date (\`Now()\`).<li>`RoundDown(..., 0)`<br>This function takes the result of DateDiff and rounds it down to the nearest whole number. The 0 indicates the number of decimal places to round to, which in this case is zero, meaning it returns an integer value representing the complete years worked. <p>**Service Anniversary Intervals in Years** <p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)`<br> This calculates how many complete intervals of the service anniversary duration the employee has worked. It divides the total years worked by the service anniversary duration and rounds down to the nearest whole number. <p>**Upcoming Service Anniversary Count** <li>`Topic.serviceAnniversaryDuration \* (Topic.serviceAnniversaryIntervalsInYears + 1)`<br>This formula calculates the upcoming service anniversary count by multiplying the service anniversary duration by one more than the complete intervals already worked.<p>**Calculated Service Anniversary Date**<br>`DateAdd(Topic.startDate, Topic.serviceAnniversaryDuration \*(RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0) + 1), TimeUnit.Years)`<p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)`<br> This part of the formula calculates how many complete intervals of the service anniversary duration the employee has worked by dividing the total years worked by the service anniversary duration and rounding down to the nearest whole number.<li>`Topic.serviceAnniversaryDuration \* (RoundDown(Topic.yearsWorked /Topic.serviceAnniversaryDuration, 0) + 1)`<br>This calculates the total service anniversary intervals (plus one) to be added to the start date.<li>`DateAdd(Topic.startDate, ..., TimeUnit.Years)`<br>Finally, this function adds the calculated intervals to the start date to determine the upcoming service anniversary date. |
 | **Prompts**  | <li>When is my next service anniversary?<li>Next anniversary<li>Service anniversary<li>Show my service anniversary date <li>What is my service anniversary date? |
 | **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetHireDate`  |
 | **Filter** | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`|
@@ -647,14 +642,14 @@ Authorization for all the scenarios is as follows:
 
 ### Get Employee ID
 
-|Get Employee ID| Type |
+|Get Employee ID| Details |
 | ------------------ | --------------|
-| **Description** | Reads *ESS_UsetContext_Employee_Id* and returns it to the user. There's no config required for this scenario. |
+| **Description** | Reads *ESS_UsetContext_Employee_Id* and returns it to the user. There's no config required for this topic. |
 | **Prompts**     | <li>What is my employee ID?<li>Show my employee ID?<li>What is my employee number? |
 
 ### Get Job Info
 
-|Get Job Info| Type |
+|Get Job Info| Details |
 | ------------------ | --------------|
 | **Description** | Returns job information to the user, this includes Job Code, Job Title, Job Function, and Job Function Type. |
 | **Prompts**     | <li>What is my job code<li>What is job code<li>What is my role?<li>What is my job info? <li> What is my job title? <li>Show me only my job details |
@@ -704,7 +699,7 @@ Authorization for all the scenarios is as follows:
 
 ### Get Position Number
 
-|Get Position Number| Type |
+|Get Position Number| Details |
 | ------------------ | --------------|
 | **Description**    | Returns position number acquired from SuccessFactors. |
 | **Prompts**        |<li>What is my position ID? <li> Get my position number <li> Show me only my position details  |
