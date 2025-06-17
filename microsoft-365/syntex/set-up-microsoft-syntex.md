@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
 manager: jtremper
-ms.date: 01/07/2025
+ms.date: 04/07/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
@@ -26,7 +26,9 @@ This article describes how to set up pay-as-you-go services for SharePoint conte
 
 ## Requirements
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Microsoft Syntex.
+You must have [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) permissions to be able to access the Microsoft 365 admin center and set up pay-as-you-go services.
+
+   [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 As an admin, you can also make changes to your selected settings anytime in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
@@ -46,7 +48,7 @@ As an admin, you can also make changes to your selected settings anytime in the 
 
 ### Setup instructions by service
 
-The following tables provides links to the specific setup instructions for each service.
+The following tables provide links to the specific setup instructions for each service.
 
 #### Document and image services
 
@@ -80,7 +82,7 @@ The following tables provides links to the specific setup instructions for each 
 
 |Service |Instructions to set up service |
 |:-------|:----------------------|
-|SharePoint Embedded     | [Set up SharePoint Enbedded](/sharepoint/dev/embedded/concepts/admin-exp/billing/billing) |
+|SharePoint Embedded     | [Set up SharePoint Embedded](/sharepoint/dev/embedded/concepts/admin-exp/billing/billing) |
 
 > [!Note]
 > For information about how to set up SharePoint Advanced Management, see [Microsoft Syntex - SharePoint Advanced Management overview](/sharepoint/advanced-management).
