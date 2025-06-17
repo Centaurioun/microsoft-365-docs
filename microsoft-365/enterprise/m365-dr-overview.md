@@ -72,8 +72,6 @@ Microsoft makes decisions on where to persistently store customer data based on 
 1. The _Default Geography_ of the _Tenant_
 1. Available _Geographies_ for a given service
 
-<a name='default-geography-of-the-aad-tenant'></a>
-
 ### _Default Geography_ of the Microsoft Entra ID _Tenant_
 
 When a customer creates a new Microsoft Entra ID _Tenant_, the customer enters a country/region during the creation process. This country/region is what defines the _Default Geography_ for the _Tenant_. There are multiple paths to creating _Tenants_. They can be created through Microsoft Entra ID forms, they can be created when trying out new Microsoft 365 services (trials), etc. Once a _Tenant_ is created, the _Default Geography_ can't be changed.
@@ -84,7 +82,7 @@ Microsoft 365 services aren't deployed to all Microsoft data centers globally. T
 
 Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time. This doesn't necessarily cause customer data to move to a new _Geography_.
 
-You can use the Data Location Card via the Microsoft 365 admin center to understand where your data for a given service is stored. As a _Tenant_ administrator you can find the actual data location by navigating to **Admin > Settings > Org Settings > Organization Profile > Data Location**. Currently, the data location details are available for Exchange Online, SharePoint, OneDrive, Microsoft Teams, Microsoft 365 Copilot, Exchange Online Protection, and Viva Connections. In addition to this resource, see the [Data Maps page](o365-data-locations.md).
+You can use the Data Location Card via the Microsoft 365 admin center to understand where your data for a given service is stored. As a _Tenant_ administrator you can find the actual data location by navigating to **Admin > Settings > Org settings > Organization profile > Data location**. Currently, data location details are available for Exchange Online, SharePoint, OneDrive, Microsoft Teams, Microsoft 365 Copilot, Exchange Online Protection, and Viva Connections. Additional data location details can be found on the [Data Maps page](o365-data-locations.md).
 
 Some examples:
 
