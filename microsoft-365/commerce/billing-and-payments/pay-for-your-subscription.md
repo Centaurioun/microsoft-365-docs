@@ -30,7 +30,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 05/08/2025
+ms.date: 06/15/2025
 ---
 
 # Payment options for Microsoft business subscriptions
@@ -302,7 +302,7 @@ If you have an MOSA billing account type, you can't automatically change from pa
 
 ## Directives from the Reserve Bank of India
 
-Currently, some credit card transactions, especially transactions exceeding 5,000 INR, are blocked due to a directive by the Reserve Bank of India. This might affect automatic payments, which means that you might have to make payments manually in the Microsoft 365 admin center. This directive doesn't affect usage charges.
+Currently, some credit card transactions, especially transactions exceeding 15,000 INR, are blocked due to a directive by the Reserve Bank of India. This might affect automatic payments, which means that you might have to make payments manually in the Microsoft 365 admin center. This directive doesn't affect usage charges.
 
 [Learn more about the Reserve Bank of India directive for recurring payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
@@ -329,7 +329,7 @@ The admin center supports two alternate payment options for customers in India w
 2. You're redirected to the payment partner, BillDesk, where you choose UPI or NetBanking for your payment method.
 3. Follow the instructions in BillDesk to complete the transaction.
 
-After you submit the payment, allow time for the payment to appear in the admin center.
+    After you submit the payment, allow time for the payment to appear in the admin center.
 
 #### How am I refunded if I made a payment with UPI or NetBanking?
 

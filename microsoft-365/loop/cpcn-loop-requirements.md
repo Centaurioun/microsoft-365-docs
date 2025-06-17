@@ -66,6 +66,7 @@ To utilize all features, including at mentions and Loop workspace sharing, it's 
 - [Loop Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
 - [Loop Storage](cpcn-storage.md)
 - [Loop Admin toggles](loop-admin-configuration.md)
+- [UX examples for admin toggle states](loop-ux-examples.md)
 - [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/loop-access-via-microsoft-365-subscriptions-92915461-4b14-49a4-9cd4-d1c259292afa)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)
 - [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
