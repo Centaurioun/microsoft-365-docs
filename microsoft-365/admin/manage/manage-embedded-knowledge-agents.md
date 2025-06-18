@@ -26,13 +26,11 @@ description: "Learn how to manage embedded knowledge agents in the Microsoft 365
 
 Embedded knowledge agents allow users to upload files as knowledge sources to an agent using Agent Builder. These files are stored in tenant-owned [SharePoint Embedded](/sharepoint/dev/embedded/overview) (SPE) containers, and only the text content is used for grounding the agent’s responses.  
 
-:::image type="content" source="../../media/knowledge-agent-studio.png" alt-text="Screenshot showing the configuration screen for an agent in Copilot Studio." lightbox="../../media/knowledge-agent-studio.png":::
-
 This article explains how embedded files are handled, how admins can manage agents and containers, and what to expect when working with sensitivity labels and deletion workflows.
 
 ## Supported file types and limits
 
-:::image type="content" source="../../media/knowledge-agent-configure.png" alt-text="Screenshot showing the configuration tab to create a new agent in Copilot Studio with the upload symbol outlined.":::
+:::image type="content" source="../../media/knowledge-agent-configure.png" alt-text="Screenshot showing the configuration tab to create a new agent in Copilot Studio with the upload symbol outlined." lightbox="../../media/knowledge-agent-configure.png":::
 
 Embedded knowledge agents support uploading files as knowledge sources. Only the text content of these files is used for grounding.
 
@@ -52,7 +50,7 @@ You can upload the following file types:
 - 150 MB for `.doc`, `.ppt`, `.xls`, `.xlsx`, `.txt`, and `.csv`
 - 512 MB for `.docx`, `.pptx`, and `.pdf`  
 
-Files that exceed these limits won't be accepted.
+Files that exceed these limits aren't accepted.
 
 ### Maximum number of files
 
@@ -60,7 +58,7 @@ You can upload up to **20 files per agent**.
 
 ## SharePoint Embedded containers
 
-When a file is uploaded to an agent, it's stored in a SharePoint Embedded (SPE) container that is provisioned and owned by the tenant. These containers are automatically created and appear in the SharePoint admin center and PowerShell under the application name `Declarative Agent`.
+When a file is uploaded to an agent, it's stored in a SharePoint Embedded (SPE) container that's provisioned and owned by the tenant. These containers are automatically created and appear in the SharePoint admin center and PowerShell under the application name `Declarative Agent`.
 
 >[!IMPORTANT]
 > Admins shouldn't delete these containers. Doing so might break the functionality of agents that rely on them.
