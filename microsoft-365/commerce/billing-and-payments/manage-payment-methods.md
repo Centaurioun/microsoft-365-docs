@@ -30,7 +30,7 @@ ms.custom:
 - campaignIDs-batch1
 search.appverid: MET150
 description: "Learn how to manage your payment methods for Microsoft business products or services in the Microsoft 365 admin center."
-ms.date: 04/29/2025
+ms.date: 06/17/2025
 ---
 
 # Manage payment methods for Microsoft business accounts
