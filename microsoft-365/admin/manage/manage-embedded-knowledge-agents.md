@@ -3,7 +3,7 @@ title: "Manage agents with files uploaded as a knowledge source in the Microsoft
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 05/30/2025
+ms.date: 06/18/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -26,11 +26,13 @@ description: "Learn how to manage embedded knowledge agents in the Microsoft 365
 
 Embedded knowledge agents allow users to upload files as knowledge sources to an agent using Agent Builder. These files are stored in tenant-owned [SharePoint Embedded](/sharepoint/dev/embedded/overview) (SPE) containers, and only the text content is used for grounding the agent’s responses.  
 
+:::image type="content" source="../../media/knowledge-agent-studio.png" alt-text="Screenshot showing the configuration screen for an agent in Copilot Studio." lightbox="../../media/knowledge-agent-studio.png":::
+
 This article explains how embedded files are handled, how admins can manage agents and containers, and what to expect when working with sensitivity labels and deletion workflows.
 
 ## Supported file types and limits
 
-:::image type="content" source="../../media/knowledge-agent-studio.png" alt-text="Screenshot showing the configuration screen for an agent in Copilot Studio." lightbox="../../media/knowledge-agent-studio.png":::
+:::image type="content" source="../../media/knowledge-agent-configure.png" alt-text="Screenshot showing the configuration tab to create a new agent in Copilot Studio with the upload symbol outlined.":::
 
 Embedded knowledge agents support uploading files as knowledge sources. Only the text content of these files is used for grounding.
 
@@ -74,7 +76,7 @@ Admins can filter the agent inventory to view only agents that use embedded file
 For each agent, the following metadata is available:
 
 - **File name** – The name of the uploaded file.  
-- **File sensitivity** – The sensitivity label applied to the file.  
+- **File sensitivity** – The sensitivity label applied to the file. (Coming in July 2025)
 - **SharePoint container ID** – The unique identifier for the container storing the file.  
 
 This metadata helps admins track and audit the use of embedded content across agents.
@@ -98,6 +100,9 @@ This deletion process is **irreversible**. Once an agent is deleted, it might ta
 > - Agents created using Microsoft Copilot Studio must be managed and deleted from the Power Platform admin center.
 
 ## Sensitivity labels and access control
+
+>[!IMPORTANT]
+> This feature is expected to roll out in July 2025.
 
 Sensitivity labels are applied at the agent level based on the labels of the uploaded files. The following rules apply:
 
