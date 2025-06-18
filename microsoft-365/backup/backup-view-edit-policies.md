@@ -308,7 +308,7 @@ Follow these steps to view and edit backup policies for OneDrive.
 
 ---
 
-## Rename a Policy
+## Rename a policy
 
 - To rename an existing policy, on the **Backup policies** tab, select the specific policy from the list of policies.
 
@@ -335,11 +335,11 @@ Dynamic rules in Microsoft 365 Archive allow administrators to define backup pol
 
 When deleting a dynamic rule, you have two options that determine how existing accounts are treated in the backup policy.
 
-##### Delete rule but continue backups
+#### Delete rule but continue backups
 
 The dynamic rule is converted into a static list. Backup continues for all user accounts that were included through the rule at the time of deletion. However, future changes to the original distribution lists or security groups—such as users being added or removed—are no longer reflected in the backup policy. For example, if a user is added to a previously included group after the rule is deleted, they aren't automatically added to the backup policy.
 
-##### Delete rule and stop new backups
+#### Delete rule and stop new backups
 
 The dynamic rule is removed, and no new backups are taken for accounts previously included through the rule. Existing backups for these users remain restorable until they expire based on the configured retention period. You can re-enable backup for these users by manually adding them or by creating a new dynamic rule that includes them.
 
