@@ -23,7 +23,7 @@ appliesto:
 
 The Employee Self-Service agent is built on Copilot and uses AI to provide relevant information to employees and take actions on their HR data. If your organization uses a human resource management system, the ESS agent requires access to that system to function most effectively.
 
-## Functional Synopsis
+## Functional synopsis
 
 ESS Agent acts as a front-end for consuming information from ServiceNow HRSD + ITSM using the Power Platform connector and following are the capabilities that’s enabled for this integration:
 
@@ -37,7 +37,7 @@ ESS Agent acts as a front-end for consuming information from ServiceNow HRSD + I
 - Create ticket
 - Update ticket
 
-## Technical Synopsis
+## Technical synopsis
 
 :::image type="content" source="media/agent-service-now-integration.png" alt-text="Diagram the high-level components comprising overall solution for ESS agent and ServiceNow HRSD integration." lightbox="media/agent-service-now-integration.png":::
 
@@ -69,7 +69,7 @@ Refer to the ESS Agent deployment guide for installation of the agent and subscr
 | **Application Developer** (*minimum privileged role*)  | User who can register an application | Create an App registration - *if using Microsoft Entra OAuth for ServiceNow connector* | Microsoft 365 Admin Center |
 | **Environment Maker** | User who can customize ESS Agent | Configure & Customize ESS Agent | Microsoft Copilot Studio |
 
-### ServiceNow Configuration
+### ServiceNow configuration
 
 This section outlines the tasks required to be configured in ServiceNow by an administrator.  ServiceNow integration supports three types of authentications as follows:
 
@@ -111,10 +111,10 @@ This section outlines the tasks required to be configured in ServiceNow by an ad
 
 9. Select **Submit** or **Update** button to save the changes.
 
-### Install ServiceNow HRSD Extension Pack
+### Install ServiceNow HRSD extension pack
 
-ESS Agent is designed to have separate extension packs for each third party ISVs like ServiceNow, etc. Hence, these extension packs must be installed first before starting any configurations or customizations.</br>
-The following steps are required to install & enable the ServiceNow HRSD Extension Pack:
+ESS Agent is designed to have separate extension packs for each third party ISVs like ServiceNow, etc. Hence, these extension packs must be installed first before starting any configurations or customizations.
+The following steps are required to install & enable the ServiceNow HRSD extension pack:
 
 1. **Entitlement**
     Work with your ESS Agent private preview product managers for the entitlement process. Once the entitlement process is complete for your tenant, the ServiceNow HRSD extension pack shows up under "Customize" section of ESS Agent.
@@ -141,10 +141,10 @@ The following steps are required to install & enable the ServiceNow HRSD Extensi
     8. Confirm the consent by selecting **Allow**.
     9. The **Microsoft Dataverse** connection is the user account that should be automatically signed in, if not, select **Sign in**.
 
-### Install ServiceNow ITSM Extension Pack
+### Install ServiceNow ITSM extension pack
 
-ESS Agent is designed to have separate extension packs for each third party ISVs like ServiceNow, etc. Hence, these extension packs must be installed first before starting any configurations or customizations.</br>
-Following are the steps required to install & enable the ServiceNow HRSD Extension Pack:
+ESS Agent is designed to have separate extension packs for each third party ISVs like ServiceNow, etc. Hence, these extension packs must be installed first before starting any configurations or customizations.
+Following are the steps required to install & enable the ServiceNow HRSD extension pack:
 
 1. **Entitlement**
     Please work with your ESS Agent private preview product managers for the entitlement process. Once the entitlement process is complete for your tenant, the ServiceNow HRSD extension pack shows up under "Customize" section of ESS Agent.
@@ -152,7 +152,7 @@ Following are the steps required to install & enable the ServiceNow HRSD Extensi
     > [!NOTE]
     > "Entitlement" process is a preview workaround until the extension pack installation is streamlined in Microsoft Copilot Studio.
 
-2. I**nstall the extension**
+2. **Install the extension**
 
     1. Open the ESS Agent in Copilot Studio.
     2. Navigate to **Settings**.
@@ -221,7 +221,7 @@ The following Topics are available from the ServiceNow ITSM extension pack:
 | **ServiceNow ITSM Update Ticket** | This topic gets the *sysID* and other necessary input required for the update call. Also validates if the user has necessary permission to update that ticket. |
 | **ServiceNow ITSM Get Ticket Updates** | This topic retrieves the latest update of IT support tickets for the user. It fetches the list of tickets and then provides the update related to the latest one. |
 
-### Modify Template configurations
+### Modify template configurations
 
 For any required modifications to the backend ServiceNow Incident APIs, the template configurations for each scenario can be adjusted in coordination with updates to the frontend topics.
 
@@ -233,9 +233,9 @@ To access the template configurations:
 4. By selecting the manage button, you're directed to the Dataverse Template Configurations table, which lists all available template configurations.
 5. Select the specific scenario template configuration, and it opens the actual value in the Dynamics 365 webpage in a new tab, which can edit the JSON as needed and save your changes
 
-### Capabilities for the ServiceNow Extension Pack
+### Capabilities for the ServiceNow extension pack
 
-Based on the SNOW connector and public APIs, the Service NOW Extension Pack includes several capabilities. **The initial version focuses on Incident Management**. Specifically, it offers Create, Read, and Update (CRU) functionalities for managing ServiceNow incidents.
+Based on the SNOW connector and public APIs, the Service NOW extension pack includes several capabilities. **The initial version focuses on Incident Management**. Specifically, it offers Create, Read, and Update (CRU) functionalities for managing ServiceNow incidents.
 
 #### Get Ticket Status
 
@@ -251,9 +251,9 @@ and status, facilitating more effective issue resolution and communication.
 
 The Get Ticket List feature allows users to retrieve a history of tickets of the user. This functionality provides essential details about each ticket, including its unique number, a brief description, the status, and the date of the last update.
 
-#### Create ticket
+#### Create Ticket
 
-Provides user the ability to create a ticket for IT Helpdesk support.
+Provides user the ability to create a ticket for IT helpdesk support.
 
 Users can easily add attachments to the ticket enabling them to provide more context for easier resolution. (Post Private Preview)
 
@@ -263,16 +263,12 @@ The Update Ticket feature allows users to modify existing helpdesk tickets by ad
 
 Users can easily add attachments to the ticket enabling them to provide more context for easier resolution. (Post Private Preview)
 
-### ServiceNow ITSM Topics
+### ServiceNow ITSM template configurations
 
-:::image type="content" source="media/service-now-topics.png" alt-text="Diagram that shows the ServiceNow ITSM topics." lightbox="media/service-now-topics.png":::
-
-### ServiceNow ITSM Template Configurations
-
-These JSON configurations are intended for the ServiceNow APIs within the backend, facilitating the linkage between input and output variables from and to the bot. Each scenario has a corresponding JSON configuration, enabling extension pack users to adjust the parameters utilized in the APIs without altering anything in the backend workflows. The way the backend interacts with bot topics regarding input and output variables is defined within these configurations.</br>
+These JSON configurations are intended for the ServiceNow APIs within the backend, facilitating the linkage between input and output variables from and to the bot. Each scenario has a corresponding JSON configuration, enabling extension pack users to adjust the parameters utilized in the APIs without altering anything in the backend workflows. The way the backend interacts with bot topics regarding input and output variables is defined within these configurations.
 The template configurations reside within a custom Dataverse table, created through the ESS base package upon installation in an environment. Extension packs contribute extra rows to this table, each containing a stringified JSON configuration for a specific scenario. These configurations are retrieved at runtime using the Dataverse connectors within Power Automate flows.
 
-### Understanding Configurations Naming
+### Understanding configurations naming
 
 - **Scenario**: The name of the scenario used as the identifier of the operation. This is the primary key for the template configuration and shouldn't be changed.
 - **FilterCriteria**: This criterion is used to filter the ServiceNow table by applying the "Operator" on a specific "FieldName". "VariableName" refers to the name of the variable passed from the bot topics containing the actual value. If this variable isn't mandatory, the bot author may choose not to send it.

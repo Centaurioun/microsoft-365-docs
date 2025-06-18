@@ -71,7 +71,7 @@ The following concepts are important for understanding ALM using Microsoft Power
 
 **Source control** is your source of truth for storing and collaborating on your components. [Learn more about source control](/power-platform/alm/git-integration/overview).
 
-**Continuous integration and continuous delivery platforms** such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops) allows you to automate your build, test, and deployment pipeline. These platforms can also be used with in-product pipelines.
+**Continuous integration and continuous delivery platforms** such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops&preserve-view=true) allows you to automate your build, test, and deployment pipeline. These platforms can also be used with in-product pipelines.
 
 Every organization has their own ALM process to deploy and test enterprise applications. The ESS Agent is published using Microsoft Copilot Studio, which brings Power Platform ALM directly into the Copilot Studio app.
 Makers and developers work in development environments using unmanaged solutions, then import them to other downstream environments, such as tests, as managed solutions.

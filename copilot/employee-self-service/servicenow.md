@@ -23,7 +23,7 @@ appliesto:
 
 The Employee Self-Service agent is built on Copilot and uses AI to provide relevant information to employees and take actions on their HR data. If your organization uses a human resource management system, the ESS agent requires access to that system to function most effectively.
 
-## Functional Synopsis 
+## Functional synopsis
 
 ESS Agent acts as a front-end for consuming information from ServiceNow Knowledge using the Microsoft Graph Connector and following are the capabilities that’s enabled for this integration:
 
@@ -34,7 +34,7 @@ ESS Agent acts as a front-end for consuming information from ServiceNow Knowledg
 - Use Semantic search in ESS Agent to enable employees to find relevant content based on keywords, personal preferences and social connections
 - Employees can search for knowledge-based articles in ESS Agent after it’s indexed and visible to all users or restricted with user criteria permissions
 
-## Technical Synopsis
+## Technical synopsis
 
 :::image type="content" source="media/service-now-integration.png" alt-text="Diagram that shows the high-level components comprising overall solution for ESS Agent and ServiceNow Knowledge integration." lightbox="media/service-now-integration.png":::
 
@@ -51,7 +51,7 @@ up an environment to deploy and test ESS Agent.
 
 For information on subscription requirements required for the ESS Agent itself, see the ESS Agent deployment guide.
 
-## Limitations
+### Limitations
 
 The current version of ServiceNow Knowledge Microsoft Graph Connector is a prerelease version and have the following limitations:
 
@@ -59,7 +59,7 @@ The current version of ServiceNow Knowledge Microsoft Graph Connector is a prere
 - If both Knowledge base and Knowledge article level permissions are defined, then only article-level permissions are honored (no support for hierarchical permissions).
 - Attachments aren't indexed.
 
-## Deployment role requirements
+### Deployment role requirements
 
 |Roles/Persona  |Description  |Activities performed  |Configuration areas  |
 |---------|---------|---------|---------|
@@ -68,7 +68,7 @@ The current version of ServiceNow Knowledge Microsoft Graph Connector is a prere
 |Global Administrator (or) Search Administrator     |User who can configure the Microsoft Graph Connector for ServiceNow Knowledge.         |`1. Establish a Microsoft Enterprise Application.<br>2. Configure SAML settings within the Enterprise Application.<br>3. Obtain the Enterprise Application’s SAML certificate.<br>4. Establish trust.         |Microsoft 365 Admin Center         |
 |Environment Maker     |User who can customize ESS Agent.         |Configure knowledge source using ServiceNow Knowledge Microsoft Graph Connector.         |Microsoft Copilot Studio         |
 
-## ServiceNow Configuration
+## ServiceNow configuration
 
 This section outlines the tasks required to be configured in ServiceNow by an administrator. ServiceNow integration supports 3 types of authentications as follows:
 
@@ -81,7 +81,7 @@ This section outlines the tasks required to be configured in ServiceNow by an ad
 
 Without elevating access, the new security objects can't be created. If **New** button in the top right of configuration pane is missing, then the role isn't elevated to "*security_admin*".
 
-## Task 1: Create an OAuth Application Registry (recommended)
+### Task 1: Create an OAuth Application Registry (recommended)
 
 1. Sign in to the ServiceNow instance that needs to be integrated with ESS Agent.
 1. Elevate access permissions using **Elevate role**.
@@ -111,7 +111,7 @@ This is the only configuration needed on ServiceNow for integrating with Microso
 
 The following tasks are required ONLY if Advanced Scripts are used in ServiceNow for controlling access to knowledge bases and articles using user criteria:
 
-## Task 2: Configure Access Control for REST endpoint
+### Task 2: Configure Access Control for REST endpoint
 
 This task is required to ensure only the crawling account can access the REST API.
 
@@ -137,7 +137,7 @@ This task is required to ensure only the crawling account can access the REST AP
 
 1. Select **Submit** to save changes.
 
-## Task 3: Create scripted REST API
+### Task 3: Create scripted REST API
 
 This task is required to define a custom script processing for user criteria.
 
@@ -160,7 +160,7 @@ This task is required to define a custom script processing for user criteria.
 1. Remove the default value and add/look up the ACL that’s created in [Task 2: Configure Access Control for REST endpoint](#task-2-configure-access-control-for-rest-endpoint).
 1. Add the ACL and update the changes.
 
-## Task 4: Define the API resource
+### Task 4: Define the API resource
 
 This task is required to define the custom script as a resource for the REST API that’s created in the previous task
 
@@ -180,7 +180,7 @@ This task is required to define the custom script as a resource for the REST API
 
 This wraps up all the configuration required on the ServiceNow side, now the next set of tasks are on Microsoft 365 side.
 
-## Microsoft Graph Connector Configuration
+## Microsoft Graph Connector configuration
 
 This section covers the tasks required for configuring Microsoft Graph Connector in Microsoft Admin Center (MAC). These set of tasks requires a Global Admin role or a Security Admin role in Microsoft 365 tenant.
 
@@ -210,7 +210,7 @@ This section covers the tasks required for configuring Microsoft Graph Connector
 14. Provide a description for the Connector which will serve as an instruction to Copilot and select **Save**.
 15. Select **Done** and wait for the connection state to be **Ready** after the sync is completed.
 
-## ESS Agent Configuration
+## ESS agent configuration
 
 This section outlines the steps to configure the newly created Microsoft Graph Connector above within ESS Agent as a knowledge source.
 
@@ -225,11 +225,11 @@ This section outlines the steps to configure the newly created Microsoft Graph C
 9. Once the connector is ready, validate the connection by asking relevant queries in the Copilot Studio maker experience in the **Test** panel.
 10. See the *Troubleshooting* section in the Appendix below for any issues encountered.
 
-## APPENDIX
+## Troubleshooting
 
-### Troubleshooting
+[ServiceNow Knowledge Microsoft Graph connector](/microsoftsearch/servicenow-knowledge-connector) – Troubleshooting section
 
-[ServiceNow Knowledge Microsoft Graph connector](/microsoftsearch/servicenow-knowledge-connector) – Troubleshooting section References
+## References
 
 For Custom Setup and complete configuration documentation, see:
 
