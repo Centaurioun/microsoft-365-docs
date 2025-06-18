@@ -30,7 +30,7 @@ This article explains how embedded files are handled, how admins can manage agen
 
 ## Supported file types and limits
 
-:::image type="content" source="../../media/knowledge-agent-configure.png" alt-text="Screenshot showing the configuration tab to create a new agent in Copilot Studio with the upload symbol outlined." lightbox="../../media/knowledge-agent-configure.png":::
+:::image type="content" source="../../media/knowledge-agent-configure-small.png" alt-text="Screenshot showing the configuration tab to create a new agent in Copilot Studio with the upload symbol outlined." lightbox="../../media/knowledge-agent-configure.png":::
 
 Embedded knowledge agents support uploading files as knowledge sources. Only the text content of these files is used for grounding.
 
