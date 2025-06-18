@@ -104,8 +104,8 @@ If you have an MCA billing account type, you can replace the payment method curr
 3. The **Replace payment method** wizard opens and you see the details for the current payment method. The **Replace for** section indicates if you're replacing the payment method for subscriptions (MOSA) or a billing profile (MCA).
 4. Under **Choose payment method to move subscriptions**, select either **Use another payment method** or **Add a payment method**.
 
-   - If you chose **Use another payment method**, select an alternate payment method from the drop-down list, then select **Next**.
-   - If you chose **Add a payment method**, select **Next**. On the **Add a new payment method** page, enter the payment method details, then select **Next**.
+   - If you chose **Use another payment method**, select an alternate payment method from the drop-down list, and then select **Next**.
+   - If you chose **Add a payment method**, select **Next**. On the **Add a new payment method** page, enter the payment method details, and then select **Next**.
 
 5. On the **Review details and replace** page, you see the current payment method, the new payment method, and the associated subscriptions or billing profiles associated with the new payment method. Select **Replace payment method**, then select **Close**.
 
@@ -140,7 +140,7 @@ If a payment method isn't associated with any subscriptions or billing profiles,
    - If you're using the **Dashboard view**, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 
 2. Select the **More actions** button (three dots) for the payment method you want to delete, then select **Delete**.
-3. The **Delete payment method** wizard open. If the payment method isn't associated with any billing profiles or subscriptions, you see the message "No subscriptions linked to this payment method."
+3. The **Delete payment method** wizard opens. If the payment method isn't associated with any billing profiles or subscriptions, you see the message "No subscriptions linked to this payment method."
 4. Select **Delete payment method**. When you see the success message, select **Close**.
 
 ### Delete a payment method with subscriptions or billing profiles attached
@@ -156,10 +156,10 @@ If a payment method is attached to any subscriptions or billing profiles, you mu
 3. The **Delete payment method** wizard opens and you see the payment method details of the payment method that's currently in use. The **Replace for** section shows the number of billing profiles or subscriptions associated with the payment method.
 4. Under **Choose payment method to move subscriptions**, select either **Select a payment method** or **Add a new payment method**.
 
-   - If you chose **Select a payment method**, select an alternate payment method from the drop-down list, then select **Next**.
-   - If you chose **Add a new payment method**, select **Next**. On the **Add a new payment method** page, enter the payment method details, then select **Next**.
+   - If you chose **Select a payment method**, select an alternate payment method from the drop-down list, and then select **Next**.
+   - If you chose **Add a new payment method**, select **Next**. On the **Add a new payment method** page, enter the payment method details, and then select **Next**.
 
-5. On the **Review details and delete** page, you see the current payment method, the new payment method, and the associated subscriptions or billing profiles associated with the new payment method. Select **Replace and delete**, then select **Close**.
+5. On the **Review details and delete** page, you see the current payment method, the new payment method, and the associated subscriptions or billing profiles associated with the new payment method. Select **Replace and delete**, and then select **Close**.
 
 ## Troubleshoot payment methods
 
