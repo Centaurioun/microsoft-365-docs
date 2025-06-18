@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 03/11/2025
+ms.date: 04/16/2025
 ms.topic: how-to
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -23,6 +23,12 @@ Once you back up your data, you might need to restore the data if there was an a
 As part of restoring data from backup, admin needs to choose a *restore point* manually or from a tool-recommended OneDrive or SharePoint *express restore point*. A restore point is a prior point in time from which you can restore a healthy version of your content or metadata. For Exchange Online, if the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including Restore to a new folder.
 
 Currently, you can restore OneDrive accounts, SharePoint sites, and Exchange mailbox content from specific prior points in time from the backups.
+
+</br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c9a4ced2-7ce3-4bc9-b42f-876b05497e1b]
+
+</br>
 
 ## Restore point frequency
 

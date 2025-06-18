@@ -1,5 +1,5 @@
 ---  
-title: "Manage Copilot Search"  
+title: "Manage Microsoft 365 Copilot Search"  
 author: kwekuako
 ms.author: kwekua  
 manager: dansimp
@@ -29,6 +29,10 @@ Learn more about [setting up Microsoft 365 Copilot](/copilot/microsoft-365/micro
 Copilot Search can access data in third-party systems as well as Microsoft 365 apps and other systems in the Microsoft Graph. This is achieved through Microsoft 365 Copilot connectors, which allow organizations to ingest data from external platforms like Salesforce, ServiceNow, Confluence, and more. 
 
 Learn more about [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector).
+
+## Privacy and security
+
+Microsoft 365 Copilot Search adheres to the same data protection, privacy standards, and security configurations as Microsoft 365 Copilot. Learn more about [data, privacy, and security in Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-privacy). 
 
 ## Microsoft 365 Copilot extension
 

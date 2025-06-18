@@ -124,5 +124,6 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 - [Storage](loop-storage.md)
 - [Permissions](cpcn-loop-permission.md)
 - [Admin toggles](loop-admin-configuration.md)
+- [UX examples for admin toggle states](loop-ux-examples.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)

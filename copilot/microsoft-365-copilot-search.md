@@ -17,7 +17,7 @@ description: An overview of the Microsoft 365 Copilot search feature.
 
 # Microsoft 365 Copilot Search
 
-Microsoft 365 Copilot Search is an AI-powered, enterprise-grade, universal search experience optimized for your organization. It provides a familiar search experience that helps users quickly find relevant results from your organization and the web.
+Microsoft 365 Copilot Search is an AI-powered universal search experience optimized for your organization. It provides a familiar search experience that helps users quickly find relevant results from your organization and the web.
 
 Copilot Search unlocks semantic understanding of content across Microsoft 365 apps as well as third-party apps that are ingested by Microsoft 365 connectors. In this way, it leverages rich signals in the Microsoft Graph to interpret user context, behavioral signals, and organizational relationships. This gives Copilot Search unique insights into a user's work data, enabling it to return highly personalized answers.
 
@@ -25,6 +25,8 @@ Because it's integrated with Microsoft 365 Copilot, users can find the results t
 
 > [!NOTE]
 > Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
+
+:::image type="content" source="media/copilot-search-home-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search." lightbox="media/copilot-search-home-raw.png":::
 
 ## Access and eligibility
 
@@ -45,6 +47,12 @@ Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated *
 - **Secure**: Offers enterprise-grade security and privacy
 
 This design positions search as the organizing layer for AI, while chat remains the workspace for task execution and deeper interactions. For example, if a user searches for **what's the status of the Q2 report**, Copilot Search may return a summarized answer and offer to continue the conversation in chat for more nuanced exploration or follow-up actions.
+
+:::image type="content" source="media/copilot-search-landing-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search results." lightbox="media/copilot-search-landing-raw.png":::
+
+## Privacy and security
+
+Microsoft 365 Copilot Search adheres to the same data protection, privacy standards, and security configurations as Microsoft 365 Copilot. Learn more about [data, privacy, and security in Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-privacy).
 
 ## Natural language search
 
