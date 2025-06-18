@@ -43,7 +43,7 @@ When you buy Microsoft business products or services, you can use an existing pa
 > [!IMPORTANT]
 > - You must use a payment method issued from the same country/region as your tenant.
 > - The option to pay with a bank account is no longer available.
-> - Prepaid cards (aka stored value cards, Visa gift cards, MasterCard gift cards, etc) are not accepted as valid payment instruments.
+> - Prepaid cards like stored value cards, Visa gift cards, and MasterCard gift cards aren't accepted as valid payment methods.
 
 > [!TIP]
 > If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
