@@ -30,7 +30,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 06/15/2025
+ms.date: 06/17/2025
 ---
 
 # Payment options for Microsoft business subscriptions
@@ -58,6 +58,9 @@ You can manage payment methods whenever you need to. To learn how to add, change
 ## Paying with a credit card or debit card
 
 If you have an MOSA billing account type, you can pay for your subscription with a credit card or debit card. By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term. Microsoft might use information provided by the issuing bank or payment network for your payment method to ensure connected payment method information remains current.
+
+> [!NOTE]
+> Prepaid cards like stored value cards, Visa gift cards, or MasterCard gift cards, aren't accepted as valid payment instruments.
 
 ## Paying by wire transfer
 
