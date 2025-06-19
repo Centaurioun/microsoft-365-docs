@@ -140,7 +140,7 @@ Ensure that each office location where you wish to enable informed network routi
 
 ## Disabling informed network routing
 
-The informed network routing feature could be disabled for the entire tenant by resetting your SD-WAN solution settings. While this will stop all processing of data within Microsoft 365, you should also disable informed network routing within the admin center.
+The informed network routing feature could be disabled for the entire tenant by resetting your SD-WAN solution settings. While this stops all processing of data within Microsoft 365, you should also disable informed network routing within the Microsoft 365 admin center.
 
 ### Step 1: Open SD-WAN solution configuration options
 
