@@ -18,8 +18,8 @@ description: "Step 1 of the SharePoint Cross-tenant migration feature"
 ---
 # Step 1: Connect to the source and target tenants (preview)
 
->[!Note]
->Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+> [!NOTE]
+> Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
 This is Step 1 in a solution designed to complete a **Cross-tenant SharePoint migration**. To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
 
@@ -35,6 +35,9 @@ This is Step 1 in a solution designed to complete a **Cross-tenant SharePoint mi
 
 - **Microsoft SharePoint Powershell**. Confirm you have the most recent version installed. If not, [Download SharePoint Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
 - Be a SharePoint admin or Microsoft 365 Global admin on both the source and target tenants
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 
 ### Connect to both tenants
@@ -56,7 +59,7 @@ This is Step 1 in a solution designed to complete a **Cross-tenant SharePoint mi
 
 5. When prompted, sign in to the **target** tenant using your Admin username and password.
 
->[!Important]
->**Microsoft 365 Multi-Geo customers:** You must treat each geography as a separate tenant. Provide the correct geography-specific URLs throughout the migration process.
+> [!IMPORTANT]
+> **Microsoft 365 Multi-Geo customers:** You must treat each geography as a separate tenant. Provide the correct geography-specific URLs throughout the migration process.
 
 ## Step 2: [Establish trust between the source and target tenants](cross-tenant-SharePoint-migration-step2.md)
