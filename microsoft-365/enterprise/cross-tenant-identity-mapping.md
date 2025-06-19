@@ -25,17 +25,17 @@ With Cross-Tenant Identity Mapping, data remains within the Microsoft security b
 
 Using Cross-Tenant Identity Mapping reduces mistakes when configuring target objects for a migration by automatically configuring values such as _ExchangeGuid_, _ArchiveGuid_, and all necessary _X500 proxy addresses_.
 
-Some additional benefits of using Cross-Tenant Identity Mapping:
+Some other benefits of using Cross-Tenant Identity Mapping:
 
-- Reduces the number of manual processes where a mistake may result in failed migrations
+- Reduces the number of manual processes where a mistake could result in failed migrations
 - Automates identification of objects within scope to migrate from the source organization to the target organization
-- Establishes a 1:1 map of a Mailbox User object in the source organization to a pre-existing Mail Enabled User object in the target organization
+- Establishes a 1:1 map of a Mailbox User object in the source organization to a preexisting Mail Enabled User object in the target organization
 - Automates population of required attributes from the source organization Mailbox User to the target organization Mail Enabled User
 - Provides a list of objects prepared and ready for [cross-tenant mailbox migration](cross-tenant-mailbox-migration.md) based on the source organization users' primarySMTPAddress value
 
 ## FAQ about Cross-Tenant Identity Mapping
 
-We would like to provide information commonly asked so you may evaluate if you would like to participate in the private preview.
+We would like to provide information commonly asked so that you can decide whether you want to participate in the private preview.
 
 - The feature is only intended to be used with [Cross-tenant mailbox migration](cross-tenant-mailbox-migration.md), and not with any third-party non-Microsoft migration solutions.
 - Data processing (storage, compute, transfer, etc.) is currently within the European Union, and within the Exchange Online home region of the organizations participating in the migration.
