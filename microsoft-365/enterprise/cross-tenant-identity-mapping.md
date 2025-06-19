@@ -37,14 +37,14 @@ Some other benefits of using Cross-Tenant Identity Mapping:
 
 We would like to provide information commonly asked so that you can decide whether you want to participate in the private preview.
 
-- The feature is only intended to be used with [Cross-tenant mailbox migration](cross-tenant-mailbox-migration.md), and not with any third-party non-Microsoft migration solutions.
+- The feature is only intended to be used with [Cross-tenant mailbox migration](cross-tenant-mailbox-migration.md), and not with any non-Microsoft migration solutions.
 - Data processing (storage, compute, transfer, etc.) is currently within the European Union, and within the Exchange Online home region of the organizations participating in the migration.
-  - For Multi-Geo enabled organizations, the organization's home geo for Exchange Online will be used.
+  - For Multi-Geo enabled organizations, the organization's home geo for Exchange Online is used.
 - This feature can currently only be enabled in the worldwide Microsoft 365 offering. It doesn't work in GCC, GCC High, DoD, Office 365 by 21 Vianet, etc.
 - Cross-Tenant Identity Mapping does **not** create the Mail Enabled User objects in the target tenant for you. These objects must still be created with a minimal attribute set. Once created, then Cross-Tenant Identity Mapping decorates their attributes correctly for a mailbox migration to proceed.
 - Some familiarity with PowerShell is currently required as the feature is PowerShell-based
 - The feature communicates over an encrypted connection to a REST endpoint.
-- The feature currently requires the Global Administrator role for initial setup. This behavior may change in a future update.
+- The feature currently requires the Global Administrator role for initial setup. This behavior might change in a future update.
    > [!IMPORTANT]
    > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 - Organizational Relationships are used as a dual handshake approach to ensure both organizations have authorized this transaction type to take place.
@@ -57,7 +57,7 @@ We're looking for customers willing to both try Cross-Tenant Identity Mapping an
 
 ## How to participate
 
-The Cross-Tenant User Content Migration feature and licenses are currently only available to Enterprise Agreement customers. If you are an Enterprise Agreement customer who will be purchasing Cross-Tenant User Content Migration licenses, and you would like to evaluate Cross-Tenant Identity Mapping to improve your migration experience, then please email [CTIMPreview@service.microsoft.com](mailto:CTIMPreview@service.microsoft.com) and provide some basic information about the migration you are performing. The team will respond to you within a couple business days with some additional questions. For more information on licensing, please see [Cross-Tenant User Content Migration Licensing](cross-tenant-mailbox-migration.md?#licensing) and contact your Microsoft account team.
+The Cross-Tenant User Content Migration feature and licenses are currently only available to Enterprise Agreement customers. If you're an Enterprise Agreement customer who's purchasing Cross-Tenant User Content Migration licenses, and you want to evaluate Cross-Tenant Identity Mapping to improve your migration experience, then send email to [CTIMPreview@service.microsoft.com](mailto:CTIMPreview@service.microsoft.com). Include some basic information about the migration you are performing. The team will respond to you within a couple business days with some additional questions. For more information on licensing, please see [Cross-Tenant User Content Migration Licensing](cross-tenant-mailbox-migration.md?#licensing) and contact your Microsoft account team.
 
 ## Next steps
 
