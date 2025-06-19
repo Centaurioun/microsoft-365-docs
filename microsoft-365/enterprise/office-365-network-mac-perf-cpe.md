@@ -33,8 +33,8 @@ The feedback and recovery mechanism within informed network routing seeks to dyn
 
 The data sharing channel is also used to periodically receive network-level optics data from the SD-WAN solution, including configuration information and usage statistics associated with the device and attached circuits. No personal information is collected or stored. All collected information is aggregated to office locations and connected Internet circuits. This information can help Microsoft more efficiently and effectively resolve reported issues with your use of Microsoft 365 services and applications.
 
->[!NOTE]
->Microsoft 365 informed network routing supports tenants in WW Commercial cloud but not the GCC Moderate, GCC High, DoD, Germany, or China clouds.
+> [!NOTE]
+> Microsoft 365 informed network routing supports tenants in WW Commercial cloud but not the GCC Moderate, GCC High, DoD, Germany, or China clouds.
 
 ## Requirements
 
@@ -63,45 +63,47 @@ Enabling informed network routing requires multiple steps, some of which need to
 Once you're ready to enable informed network routing in the Microsoft 365 admin center, ensure you have the necessary **User Admin**, or **Global admin** permissions.
 
 >[!IMPORTANT]
->In order to provide the necessary tenant-level applications permissions consent for the selected SD-WAN solution to access the informed network routing data sharing channel, you must perform the following steps as a global administrator.
+> In order to provide the necessary tenant-level applications permissions consent for the selected SD-WAN solution to access the informed network routing data sharing channel, you must perform the following steps as a global administrator.
+>
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ### Step 1: Open SD-WAN solution configuration options
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com/), select **Health > Network connectivity** in the left-hand navigation pane.
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), select **Health > Network connectivity** in the left-hand navigation pane.
 
-This section of the admin center provides aggregated network connectivity metrics for your organization and guidance on how to improve your connectivity. See [Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md) for additional information on these features available within the admin center.
+   This section of the admin center provides aggregated network connectivity metrics for your organization and guidance on how to improve your connectivity. See [Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md) for additional information on these features available within the admin center.
 
-Select **Settings > SD-WAN solution** to open the informed network routing configuration pane. The other options that appear under **Settings** are applicable to the general network connectivity guidance in the admin center and aren't required to enable informed network routing.
+2. Select **Settings > SD-WAN solution** to open the informed network routing configuration pane. The other options that appear under **Settings** are applicable to the general network connectivity guidance in the admin center and aren't required to enable informed network routing.
 
-In the configuration pane, select **Add your SD-WAN solution**.
+3. In the configuration pane, select **Add your SD-WAN solution**.
 
 ### Step 2: Select your SD-WAN solution and data storage location
 
-In the drop-down boxes, select the SD-WAN solution you've deployed and the location where you wish to have the data associated with informed network routing stored. See the [data storage](#data-storage) section for additional information.
+1. In the drop-down boxes, select the SD-WAN solution you've deployed and the location where you wish to have the data associated with informed network routing stored. See the [data storage](#data-storage) section for additional information.
 
-Select **Next**.
+2. Select **Next**.
 
 ### Step 3: Accept terms for sharing of data
 
-Carefully read and acknowledge the provided terms associated with sharing data between Microsoft and your selected SD-WAN solution, and then select the indicated checkbox.
+1. Carefully read and acknowledge the provided terms associated with sharing data between Microsoft and your selected SD-WAN solution, and then select the indicated checkbox.
 
-Select **Next**.
+2. Select **Next**.
 
 ### Step 4: Grant permissions to the SD-WAN solution
 
 This step will initiate a permissions grant request with Microsoft Entra ID. You'll be requested to grant tenant-level permissions that allow your selected SD-WAN solution access to the informed network routing data storage and the service health information associated with your tenant. This action requires **Microsoft Entra DC admin**, or **Global admin** role permissions.
 
-Select the **Give permission to this application** link and follow the Microsoft Entra ID requests.
+1. Select the **Give permission to this application** link and follow the Microsoft Entra ID requests.
 
-Once you've completed the permissions grant, select **Next**.
+2. Once you've completed the permissions grant, select **Next**.
 
 ### Step 5: Confirm your configuration settings
 
-The final step in enabling informed network routing for your tenant is a confirmation page that displays the settings you've provided.
+1. Review the confirmation page that displays the settings you've provided.
 
-Informed network routing is now enabled for your tenant.
+   Informed network routing is now enabled for your tenant.
 
-Select **Done** and then close the SD-WAN solution configuration pane.
+2. Select **Done** and then close the SD-WAN solution configuration pane.
 
 ## Configuring informed network routing
 
@@ -121,8 +123,8 @@ Locations for your tenant can be found under the **Locations** tab. Locations ma
 
 Ensure that each office location where you wish to enable informed network routing is present in this list.
 
->[!NOTE]
->The columns in the **Locations** list for samples collected and other assessment-related information are not related to the informed network routing feature.
+> [!NOTE]
+> The columns in the **Locations** list for samples collected and other assessment-related information are not related to the informed network routing feature.
 
 ### Enabling a location for informed network routing
 
@@ -140,11 +142,11 @@ The informed network routing feature may be disabled for the entire tenant by re
 
 ### Step 1: Open SD-WAN solution configuration options
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com/) select **Health > Network connectivity** in the left-hand navigation pane.
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/) select **Health > Network connectivity** in the left-hand navigation pane.
 
-Select **Settings > SD-WAN solution** to open the informed network routing configuration pane.
+2. Select **Settings > SD-WAN solution** to open the informed network routing configuration pane.
 
-The configuration pane shows a summary of your currently configured SD-WAN solution.
+   The configuration pane shows a summary of your currently configured SD-WAN solution.
 
 ### Step 2: Reset your configuration
 
