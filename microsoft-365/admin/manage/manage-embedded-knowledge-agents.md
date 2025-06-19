@@ -24,7 +24,7 @@ description: "Learn how to manage embedded knowledge agents in the Microsoft 365
 
 # Manage agents with files uploaded as a knowledge source in the Microsoft 365 admin center
 
-Embedded knowledge agents allow users to upload files as knowledge sources to an agent using Agent Builder. These files are stored in tenant-owned [SharePoint Embedded](/sharepoint/dev/embedded/overview) (SPE) containers, and only the text content is used for grounding the agent’s responses.  
+Agent builders can use [Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build) to upload files for the agent to use as knowledge. The uploaded files are stored in tenant-owned [SharePoint Embedded](/sharepoint/dev/embedded/overview) (SPE) containers, and the file content is embedded as knowledge for the agent to use in responses.  
 
 This article explains how embedded files are handled, how admins can manage agents and containers, and what to expect when working with sensitivity labels and deletion workflows.
 
