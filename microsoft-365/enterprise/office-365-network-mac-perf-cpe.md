@@ -21,7 +21,7 @@ description: "Microsoft 365 informed network routing"
 
 # Microsoft 365 informed network routing
 
-Informed network routing is a feature that integrates various Microsoft 365 applications with third party software defined network (SD-WAN) solutions in order to optimize and improve your network connectivity to Microsoft service endpoints. Optimized SD-WAN connectivity might result in improved user experiences and performance.
+Informed network routing is a feature that integrates various Microsoft 365 applications with non-Microsoft software defined network (SD-WAN) solutions in order to optimize and improve your network connectivity to Microsoft service endpoints. Optimized SD-WAN connectivity might result in improved user experiences and performance.
 
 ## Overview
 
@@ -40,7 +40,7 @@ The data sharing channel is also used to periodically receive network-level opti
 
 ### Integrated SD-WAN solutions
 
-Microsoft is working with various partners to enable integration with Microsoft 365 informed network routing. Currently enabled solutions include the following:
+Microsoft is working with various partners to enable integration with Microsoft 365 informed network routing. Currently enabled solutions include the following information:
 
 | Device Maker | Solution Name | Minimum Version |
 | --- | --- | --- |
