@@ -39,14 +39,18 @@ After [creating an agreement from a template](agreements-create-agreement.md), y
 1. In the Agreements workspace, create your agreement using a published template.
 
 2. Once the document is generated, select **Download for redlining** in the action menu. You can also fill in the field values in Step 1, and then download the document for redlining.
- 
-image: Download for redlining option in the home pane
- 
-image: Download for redlining option after fields are filled in
+
+    **Download for redlining option in the home pane**
+    ![A screenshot of download for redlining option in the home pane.](../../media/content-understanding/agreements-download-redlining-option-blank.png)
+
+    **Download for redlining option after fields are filled in**
+    ![A screenshot of download for redlining option after fields are filled in.](../../media/content-understanding/agreements-download-redlining-option-filled.png)
 
 3. Selecting this action downloads a Word document with **Reviewing mode** enabled. The file is saved to your local **Downloads** folder.
- 
-image: File downloaded in reviewing mode
+
+    ![A screenshot of File downloaded in reviewing mode.](../../media/content-understanding/agreements-download-file-in-reviewing-mode.png)
+
+    <!---image: File downloaded in reviewing mode--->
 
 > [!TIP]
 > This option is only available while the document is in **Draft** state. You can download the agreement multiple times at this stage, but it’s best to track and share a single offline copy with stakeholders to avoid versioning issues.
@@ -65,8 +69,8 @@ Once you receive the edited or redlined agreement from an external party, follow
 3. Select **Generate document** to open the pane.
 
 4. Select the **Analyze redlines** option.
- 
-image: Analyze redlines option when the offline document is opened
+
+    ![A screenshot of Analyze redlines option when the offline document is opened.](../../media/content-understanding/agreements-analyze-redlines-option.png)
 
 5. A modal dialog appears, showing:
 
@@ -75,8 +79,8 @@ image: Analyze redlines option when the offline document is opened
     - The associated Agreements workspace and category
 
 6. Select **Upload** to reimport the redlined version. This version is added as a new version to the original agreement, maintaining version history for auditing.
- 
-image: Upload modal
+
+    ![A screenshot of Upload to analyze revisions dialog.](../../media/content-understanding/agreements-upload-analyze-revisions-option.png)
 
 After upload, the AI-powered section revision analysis runs automatically. The system semantically summarizes all the changes made to each clause, allowing you to do any or all of the following actions:
 
@@ -88,7 +92,7 @@ After upload, the AI-powered section revision analysis runs automatically. The s
 
 Use the **Refresh results** option to rerun the analysis if you continue to update the document or receive other feedback.
 
-image: Section revision analysis pane opened
+![A screenshot of the section revision analysis pane opened.](../../media/content-understanding/agreements-upload-section-revision-analysis-pane.png)
 
 > [!NOTE]
 > Only files originally generated using the **Download for redlining** action can be uploaded back for redline analysis. Documents downloaded using other methods might not retain required metadata or structure.
