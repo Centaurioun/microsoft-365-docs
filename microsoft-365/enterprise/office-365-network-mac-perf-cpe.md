@@ -144,7 +144,7 @@ The informed network routing feature could be disabled for the entire tenant by 
 
 ### Step 1: Open SD-WAN solution configuration options
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/) select **Health > Network connectivity** in the left-hand navigation pane.
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to **Health** > **Network connectivity** in the left-hand navigation pane.
 
 2. Select **Settings > SD-WAN solution** to open the informed network routing configuration pane.
 
