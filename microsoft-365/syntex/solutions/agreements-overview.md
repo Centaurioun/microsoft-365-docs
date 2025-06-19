@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 05/28/2025
+ms.date: 06/19/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -58,6 +58,7 @@ With SharePoint Agreements, you can:
 |[Update a template](agreements-update-template.md)    |Find and edit existing templates, and publish updates to a template.         |
 |[Manage sections in a template](agreements-manage-sections.md)    |Publish a new section, insert a section into a template, edit a section, and configure section settings.         |
 |[Create an agreement](agreements-create-agreement.md)    |Create an agreement from a template in Microsoft Teams and in Microsoft Word.         |
+|[Download an agreement for redlining and upload it for AI-powered analysis](agreements-ai-analysis.md)    |Download a draft agreement for offline negotiation and upload the redlined version to analyze proposed changes using AI.      |
 |[Analyze section revisions](agreements-analyze-sections.md)    |Detect changes in embedded sections, summarize the changes, and offer suggestions.       |
 |[Manage attachments](agreements-attachments.md)    |Manage supporting documents related to an agreement.         |
 |[Manage amendments](agreements-amendments.md)    |Learn how to add an amendment to an agreement.         |
