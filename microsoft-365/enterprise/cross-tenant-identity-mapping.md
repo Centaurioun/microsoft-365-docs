@@ -15,7 +15,7 @@ ms.custom: template-overview
 Cross-Tenant Identity Mapping is a feature that can be used during Cross-Tenant User Data Migrations from one Microsoft 365 organization to another. It provides a secure method of establishing one-to-one object relationships across organization boundaries, and automatically prepares the target objects for a successful migration.
 
 > [!NOTE]
-> Cross-Tenant Identity Mapping is in a private preview stage of development. As an unfinished project any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant Identity Mapping is covered by the **preview terms** of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+> Cross-Tenant Identity Mapping is in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers is handled via email. Cross-Tenant Identity Mapping is covered by the **preview terms** of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
 ## Benefits of using Cross-Tenant Identity Mapping
 
