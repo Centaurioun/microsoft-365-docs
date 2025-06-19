@@ -14,8 +14,8 @@ ms.custom: template-overview
 
 Cross-Tenant Identity Mapping is a feature that can be used during Cross-Tenant User Data Migrations from one Microsoft 365 organization to another. It provides a secure method of establishing one-to-one object relationships across organization boundaries, and automatically prepares the target objects for a successful migration.
 
->[!NOTE]
->Cross-Tenant Identity Mapping is in a private preview stage of development. As an unfinished project any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant Identity Mapping is covered by the **preview terms** of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+> [!NOTE]
+> Cross-Tenant Identity Mapping is in a private preview stage of development. As an unfinished project any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant Identity Mapping is covered by the **preview terms** of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
 ## Benefits of using Cross-Tenant Identity Mapping
 
@@ -45,6 +45,8 @@ We would like to provide information commonly asked so you may evaluate if you w
 - Some familiarity with PowerShell is currently required as the feature is PowerShell-based
 - The feature communicates over an encrypted connection to a REST endpoint.
 - The feature currently requires the Global Administrator role for initial setup. This behavior may change in a future update.
+   > [!IMPORTANT]
+   > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 - Organizational Relationships are used as a dual handshake approach to ensure both organizations have authorized this transaction type to take place.
 - It works with cloud-only or hybrid organizations.
 - Target organizations in a hybrid configuration require Microsoft supported on-premises object management tools to modify any Mail Enabled User objects synchronized from the on-premises directory.
