@@ -37,7 +37,7 @@ GCC High and DOD customers planning to use federated identities or hybrid coexis
 To permit the service to communicate with your on-premises endpoints, you **must** send an email to Office 365 engineering for network changes.
 
 > [!WARNING]
-> All requests have a **three-week** SLA and cannot be expedited due to the required security and compliance controls and deployment pipelines.  This includes initial onboarding network requests as well as any changes after you have migrated to the service.  Make sure that your network teams are aware of this timeline and include it in their planning cycles.
+> All requests have a **three-week** SLA and can't be expedited due to the required security and compliance controls and deployment pipelines. This SLA includes initial onboarding network requests as well as any changes after you have migrated to the service. Make sure that your network teams are aware of this timeline and include it in their planning cycles.
 
 Send an email to [Office 365 Government Allow-List Requests](mailto:o365gwlt@microsoft.com) with the following information:
 
