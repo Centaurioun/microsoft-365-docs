@@ -37,7 +37,7 @@ Microsoft 365 Copilot currently provides the following deployment and governance
 
 Microsoft may install a small number of agents and features that augment Microsoft 365 Copilot with highly valuable skills. These agents and features, built by Microsoft, are preinstalled and/or pre-pinned in Microsoft 365 Copilot for all licensed users. Currently, only the Researcher and Analyst agents are deployed this way.
 
-Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. There, administrators can block these agents in their tenant, making them inaccessible to all users. Granular controls allowing assignment of these agents to specific users and groups are therefore grayed-out. Alternately, administrators can [disable or restrict Copilot extensibility](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide) for their organization, however this will apply to all agents, not just Microsoft-deployed agents. Individual users can share and unpin these agents as well.
+Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. There, administrators can block these agents in their tenant, making them inaccessible to all users. Granular controls allowing assignment of these agents to specific users and groups are therefore grayed-out. Alternately, administrators can [disable or restrict Copilot extensibility](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) for their organization, however this will apply to all agents, not just Microsoft-deployed agents. Individual users can share and unpin these agents as well.
 
 ### Admin-installed agents
 
@@ -48,7 +48,7 @@ Organizations can govern these agents in the Copilot Control System section of t
 > [!NOTE]
 > Admins can only remove shared agents and custom LOB agents.
 
-For more information, see [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide).
+For more information, see [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps).
 
 ### User-installed agents
 
@@ -58,7 +58,7 @@ Organizations can govern these agents in the Copilot Control System section of t
 
 ## Related content
 
-- [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide)
+- [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps)
 - [Agent Store in Microsoft 365 Copilot](https://devblogs.microsoft.com/microsoft365dev/introducing-the-agent-store-build-publish-and-discover-agents-in-microsoft-365-copilot/)
 - [Agents for Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/agents-overview)
 - [Build agents with Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build)
