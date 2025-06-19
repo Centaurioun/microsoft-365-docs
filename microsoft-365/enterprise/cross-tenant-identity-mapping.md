@@ -57,7 +57,7 @@ We're looking for customers willing to both try Cross-Tenant Identity Mapping an
 
 ## How to participate
 
-The Cross-Tenant User Content Migration feature and licenses are currently only available to Enterprise Agreement customers. If you're an Enterprise Agreement customer who's purchasing Cross-Tenant User Content Migration licenses, and you want to evaluate Cross-Tenant Identity Mapping to improve your migration experience, then send email to [CTIMPreview@service.microsoft.com](mailto:CTIMPreview@service.microsoft.com). Include some basic information about the migration you are performing. The team will respond to you within a couple business days with some additional questions. For more information on licensing, please see [Cross-Tenant User Content Migration Licensing](cross-tenant-mailbox-migration.md?#licensing) and contact your Microsoft account team.
+The Cross-Tenant User Content Migration feature and licenses are currently only available to Enterprise Agreement customers. If you're an Enterprise Agreement customer who's purchasing Cross-Tenant User Content Migration licenses, and you want to evaluate Cross-Tenant Identity Mapping to improve your migration experience, then send email to [CTIMPreview@service.microsoft.com](mailto:CTIMPreview@service.microsoft.com). Include some basic information about the migration you're performing. The team typically responds to you within a couple business days with some more questions. For more information on licensing, see [Cross-Tenant User Content Migration Licensing](cross-tenant-mailbox-migration.md?#licensing) and contact your Microsoft account team.
 
 ## Next steps
 
