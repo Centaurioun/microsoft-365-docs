@@ -9,7 +9,7 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.date: 03/05/2025
+ms.date: 06/18/2025
 ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
 ms.collection:
@@ -25,7 +25,7 @@ f1.keywords: NOCSH
 
 - [Microsoft 365 Business Premium](m365bp-overview.md)
 
-As you probably already know, [Microsoft 365 Business Premium](m365bp-overview.md) is an excellent productivity and security solution for small and medium-sized businesses (1-300 employees). With this solution, you get:
+As you probably already know, [Microsoft 365 Business Premium](m365bp-overview.md) is an excellent productivity and security solution for small and medium-sized businesses (1-300 user accounts). With this solution, you get:
 
 - [Microsoft 365 Apps](/microsoft-365/admin/setup/install-applications) installed on your devices
 - Protection for your user accounts with [Microsoft Entra ID Plan 1](/entra/fundamentals/whatis)
