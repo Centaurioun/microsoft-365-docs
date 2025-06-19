@@ -37,12 +37,12 @@ GCC High and DOD customers planning to use federated identities or hybrid coexis
 To permit the service to communicate with your on-premises endpoints, you **must** send an email to Office 365 engineering for network changes.
 
 > [!WARNING]
-> All requests have a **three-week** SLA and can't be expedited due to the required security and compliance controls and deployment pipelines. This SLA includes initial onboarding network requests as well as any changes after you have migrated to the service. Make sure that your network teams are aware of this timeline and include it in their planning cycles.
+> All requests have a **three-week** SLA and can't be expedited due to the required security and compliance controls and deployment pipelines. This SLA includes initial onboarding network requests and any changes after you have migrated to the service. Make sure that your network teams are aware of this timeline and include it in their planning cycles.
 
-Send an email to [Office 365 Government Allow-List Requests](mailto:o365gwlt@microsoft.com) with the following information:
+Send an email to [Office 365 Government allowlist requests](mailto:o365gwlt@microsoft.com) with the following information:
 
-* **To**: [Office 365 Government Allow-List Requests](mailto:o365gwlt@microsoft.com)
-* **From**: A tenant administrator - the send email **must** match a Global Administrator contact in your tenant
+* **To**: [Office 365 Government allowlist requests](mailto:o365gwlt@microsoft.com)
+* **From**: A tenant administrator - the sent email **must** match a Global Administrator contact in your tenant
 * **Email subject**: Office 365 GCC High Network Request - contoso.onmicrosoft.us (replace with your tenant name)
 
 > [!IMPORTANT]
@@ -51,10 +51,10 @@ Send an email to [Office 365 Government Allow-List Requests](mailto:o365gwlt@mic
 The body of your message should include the following data:
 
 * Your Microsoft Online Services tenant name (for example, contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
-* An email distribution list that Microsoft communicates with for on-going communications related to network changes and/or follow up for invalid subnets
+* An email distribution list that Microsoft communicates with for ongoing communications related to network changes and/or follow up for invalid subnets
 * Indicate whether you plan to use Microsoft Teams hybrid coexistence with your on-premises deployments
 * Federated identity system externally accessible URL (for example, sts.contoso.com) and IP address range in CIDR (Classless Inter-Domain Routing) notation (for example, 10.1.1.0/28)
-* On-Premises public key infrastructure (PKI) Certificate Revocation List URL and IP address range in CIDR notation
+* On-premises public key infrastructure (PKI) Certificate Revocation List URL and IP address range in CIDR notation
 * Externally accessible URL and IP address range for Exchange Server on-premises deployment in CIDR notation
 * Externally accessible URL and IP address range for Skype for Business on-premises deployment in CIDR notation
 
