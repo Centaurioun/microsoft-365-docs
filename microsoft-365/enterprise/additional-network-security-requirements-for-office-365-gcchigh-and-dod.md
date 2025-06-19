@@ -3,7 +3,7 @@ title: "Additional network security requirements for Office 365 Government Commu
 ms.author: dzazzo
 author: dzazzo-msft
 manager: dzazzo
-ms.date: 05/19/2020
+ms.date: 06/19/2025
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -45,6 +45,9 @@ Send an email to [Office 365 Government Allow-List Requests](mailto:o365gwlt@mic
 * **From**: A tenant administrator - the send email **must** match a Global Administrator contact in your tenant
 * **Email subject**: Office 365 GCC High Network Request - contoso.onmicrosoft.us (replace with your tenant name)
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 The body of your message should include the following data:
 
 * Your Microsoft Online Services tenant name (for example, contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
@@ -59,8 +62,8 @@ For security and compliance reasons, keep in mind the following restrictions on 
 
 * There's a four subnet limitation per tenant
 * Subnets must be in CIDR Notation (for example, 10.1.1.0/28)
-* Subnet ranges can’t be larger than /24
+* Subnet ranges can't be larger than /24
 * We **cannot** accommodate requests to allow access to commercial cloud services (commercial Office 365, Google G-Suite, Amazon Web Services, etc.)
 
-Once Microsoft receives and approves your request, there's a three-week service-level agreement (SLA) for implementation and can’t be expedited. You receive an initial acknowledgment when we receive your request and a final acknowledgment once it's complete.
+Once Microsoft receives and approves your request, there's a three-week service-level agreement (SLA) for implementation and can't be expedited. You receive an initial acknowledgment when we receive your request and a final acknowledgment once it's complete.
 
