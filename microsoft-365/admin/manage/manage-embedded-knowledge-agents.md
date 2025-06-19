@@ -30,6 +30,8 @@ This article explains how embedded files are handled, how admins can manage agen
 
 ## Supported file types and limits
 
+:::image type="content" source="../../media/knowledge-agent-upload.png" alt-text="Screenshot showing the screen to upload a file as a knowledge source for an agent." lightbox="../../media/knowledge-agent-upload.png":::
+
 Embedded knowledge agents support uploading files as knowledge sources. Only the text content of these files is used for grounding.
 
 ### Supported file types
@@ -39,11 +41,10 @@ Embedded knowledge agents support uploading files as knowledge sources. Only the
 - `.xls`, `.xlsx`  
 - `.pdf`  
 - `.txt`  
-- `.csv`
 
 ### Maximum file size
 
-- 150 MB for `.doc`, `.ppt`, `.xls`, `.xlsx`, `.txt`, and `.csv`
+- 150 MB for `.doc`, `.ppt`, `.xls`, `.xlsx`, and `.txt`
 - 512 MB for `.docx`, `.pptx`, and `.pdf`  
 
 Files that exceed these limits aren't accepted.
@@ -112,4 +113,3 @@ You can view the sensitivity label for each agent in the **Overview** tab of the
 
 - If a user doesn't have access to any of the sensitivity labels applied to the uploaded files, they won't be able to access the agent.  
 - If a user does have access, they're able to view the agent’s sensitivity label in the agent details pane.  
-- Starting **May 31, 2025**, sensitivity labels will appear in the agent details pane when users select the agent link.
