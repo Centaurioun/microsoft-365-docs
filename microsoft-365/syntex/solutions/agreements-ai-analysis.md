@@ -50,8 +50,6 @@ After [creating an agreement from a template](agreements-create-agreement.md), y
 
     ![A screenshot of File downloaded in reviewing mode.](../../media/content-understanding/agreements-download-file-in-reviewing-mode.png)
 
-    <!---image: File downloaded in reviewing mode--->
-
 > [!TIP]
 > This option is only available while the document is in **Draft** state. You can download the agreement multiple times at this stage, but it’s best to track and share a single offline copy with stakeholders to avoid versioning issues.
 
