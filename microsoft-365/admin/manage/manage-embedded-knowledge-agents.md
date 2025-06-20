@@ -24,7 +24,7 @@ description: "Learn how to manage agents with embedded file content as knowledge
 
 # Manage agents with embedded file content as a knowledge source in the Microsoft 365 admin center
 
-Agent builders can use [Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build) to upload files for the agent to use as knowledge. The uploaded files are stored in tenant-owned [SharePoint Embedded](/sharepoint/dev/embedded/overview) containers, and the file content is embedded as knowledge for the agent to use in responses.
+Agent builders can use [Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build) to upload files for the agent to use as knowledge. The uploaded files are stored in tenant-owned [SharePoint Embedded](/sharepoint/dev/embedded/overview) containers, and the file content is embedded as knowledge for the agent to use in responses. To learn about how your users build agents, see [Build agents with Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build#embedded-file-content).
 
 This article explains how embedded files are handled, how admins can manage agents and containers, and what to expect when working with sensitivity labels and deletion workflows.
 
@@ -51,7 +51,7 @@ Files that exceed these limits aren't accepted.
 
 ### Maximum number of files
 
-You can upload up to **20 files per agent**.
+Users can upload up to **20 files per agent**.
 
 ## SharePoint Embedded containers
 
@@ -72,7 +72,7 @@ For each agent, the following metadata is available:
 - **File sensitivity** – The sensitivity label applied to the file. (Coming in July 2025)
 - **SharePoint container ID** – The unique identifier for the container storing the file.  
 
-This metadata helps admins track and audit the use of embedded content across agents.
+This metadata helps you track and audit the use of embedded content across agents.
 
 ## Delete agents
 
@@ -97,11 +97,11 @@ This deletion process is **irreversible**. Once an agent is deleted, it might ta
 >[!IMPORTANT]
 > This feature is expected to roll out in July 2025.
 
-Sensitivity labels are applied at the agent level based on the labels of the uploaded files. The assignment of the embedded content label is as follows:
+Sensitivity labels are applied to the embedded content in the agent based on the most restrictive label from the uploaded files. The following rules determine how the sensitivity label is applied:
 
 - The label applied to the agent is determined by whichever of the following is more restrictive:
   - Most restrictive sensitivity label of all filed uploaded (for example, the highest priority of the labels on the uploaded files).
-  - The tenant’s default sensitivity label for document entities, if one is configured.
+  - The [default sensitivity label policy](/purview/default-sensitivity-labels-policies#default-sensitivity-label-policy) applied by the organization, if one is configured.
 - If a default sensitivity labeling policy is in place, a label is automatically assigned.  
 - Sensitivity labels are only applied if the agent is created using Microsoft Copilot Studio Agent Builder, and if the agent has embedded files in it.
 
@@ -111,5 +111,7 @@ You can view the sensitivity label for each agent in the **Overview** tab of the
 
 ### User access and visibility
 
-- If a user doesn't have access to any of the sensitivity labels applied to the uploaded files, they won't be able to access the agent.  
-- If a user does have access, they're able to view the agent’s sensitivity label in the agent details pane.  
+- If a user doesn't have extract rights to any of the sensitivity labels applied to the uploaded files, they won't be able to access the agent.  
+- If a user does have extract rights, they're able to view the agent’s sensitivity label in the agent details pane.  
+
+To learn more, see [Sensitivity labels for agent embedded content](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build#sensitivity-labels-for-agent-embedded-content).
