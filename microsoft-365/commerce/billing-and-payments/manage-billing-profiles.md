@@ -138,5 +138,5 @@ To export the information shown in the **Related billing role assignments** pane
 ## Related content
 
 [Understand billing accounts](../manage-billing-accounts.md) (article) \
-[Paying with a billing profile](pay-for-your-subscription.md#paying-with-a-billing-profile) (article)\
+[Payment options for Microsoft business subscriptions](pay-for-your-subscription.md) (article)\
 [Manage payment methods](manage-payment-methods.md) (article)
