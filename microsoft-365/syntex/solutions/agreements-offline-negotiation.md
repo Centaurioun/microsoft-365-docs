@@ -68,7 +68,7 @@ Once you receive the edited or redlined agreement from an external party, follow
 
 4. Select the **Analyze redlines** option.
 
-    ![A screenshot of Analyze redlines option when the offline document is opened.](../../media/content-understanding/agreements-analyze-redlines-option.png)
+    ![A screenshot of Analyze redlines option when the offline document is opened.](../../media/content-understanding/agreements-analyze-offline-option.png)
 
 5. A modal dialog appears, showing:
 
