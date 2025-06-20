@@ -32,7 +32,7 @@ To manage Copilot Tuning governance controls, make sure that you meet the follow
     - Your tenant must have at least 5,000 active Microsoft 365 Copilot add-on licenses.
     - An AI Admin must accept the EAP terms on behalf of the organization.
     > [!NOTE]
-    > If Copilot Tuning isn't available in your tenant, contact Microsoft support or your account team to request EAP provisioning.
+    > If Copilot Tuning isn't available in your tenant, contact your Microsoft Customer Success Account Manager (CSAM) to request EAP provisioning.
 - You must have one of the following roles:
     - Global Administrator
     - AI Administrator (if defined as a custom role in your organization)
