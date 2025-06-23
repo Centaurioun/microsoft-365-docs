@@ -36,7 +36,8 @@ For example, you enable the OCR service and then add image files to your documen
 |Endpoint  |Supported file types  |
 |---------|---------|
 |SharePoint and OneDrive     |`.bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, .dng, .tiff, and .pdf (scanned and hybrid)`  Embedded images in ` docx, pptx, xlsx ` are extracted and scanned |
-|Teams, Exchange, and Windows devices     |`.bmp, .png, .jpeg, .jpg, .tiff, and .pdf (scanned and hybrid)`  Embedded images in ` docx, pptx, xlsx, RAR, TAR,ZIP and 7z` are extracted and scanned|
+|Exchange     |`.jpeg, .jpg, .png, .bmp, .tiff, and PDFs (scanned and hybrid) `. Embedded images in `docx, pptx, xlsx, rar, tar, zip, 7z`|
+|Teams, Windows, and macOS endpoint     |`.jpeg, .jpg, .png, .bmp, .tiff, and PDF (image only)` |
 
 In addition to image-based PDF, SharePoint OCR supports hybrid PDF (text plus image PDF). Newly uploaded hybrid PDFs will be processed by the OCR service.
 

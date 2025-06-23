@@ -71,9 +71,7 @@ These three release statuses are updated on each applicable message over the lif
 
 - **Launched**: The feature is generally available to all the applicable users in your organization.
 
-Updates to feature release status are provided on the original Message center post. Filtering capability on **“Status for your org.”** allows easier visibility on the updated release status.
-
-:::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices.":::
+Updates to feature release status are provided on the original Message center post. Filtering capability on **“Status for your org”** allows easier visibility on the updated release status.
 
 The release status is **ONLY** available for new and updated features that are also announced on Microsoft 365 Public Roadmap and have reached general availability status (production ready). If you do not see release status on a message, it means the release status is not available for that feature.
 
@@ -114,8 +112,6 @@ The Archive tab shows the messages you have archived. To archive a message, in t
 Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a filtered view of messages. For example, in this diagram, the messages are tagged with the **Admin impact** tag.
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
-
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact.":::
 
 ::: moniker-end
 
@@ -235,9 +231,7 @@ Here's a quick overview of the information in each column.
 
 In the Message center, you can select a message to see details.
 
-If a Message Center post is not relevant for your organization, please provide us with feedback using the options demonstrated in the image below. After you click thumbs up/down on the MC post, select "this change isn't relevant to my org."
-
-:::image type="content" source="../../media/message-center-feedbacksection.jpg" alt-text="Message center view of feedback section.":::
+If a Message Center post is not relevant for your organization, please provide us with feedback. Select thumbs up or thumbs down on the MC post and select **This change isn't relevant to my org**.
 
 > [!NOTE]
 > If you're using Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.

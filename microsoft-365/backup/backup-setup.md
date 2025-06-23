@@ -24,12 +24,11 @@ description: Learn how to turn on Microsoft 365 Backup, set up pay-as-you-go bil
 > [Step 2. Turn on Microsoft 365 Backup](https://admin.microsoft.com/#/orgsettings/payasyougo/storage)<br>
 > [Step 3. Start backing up your data by creating backup policies](https://admin.microsoft.com/#/Settings/enhancedRestore)<br>
 
-<!---
+</br>
 
-Get started with Microsoft 365 Backup by following these simple three steps in the Microsoft 365 admin center.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d4f5a898-3d35-42aa-ae3f-6639b59943f9]
 
-![Diagram showing the three-step setup process for Microsoft 365 Backup.](../media/m365-backup/backup-setup-diagram.png)
---->
+</br>
 
 ## Permissions
 
@@ -39,7 +38,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Create an Azure subscription
 
-If you already have an Azure subscription, you can skip to [Set up pay-as-you-go billing](#set-up-pay-as-you-go-billing). If you need to create an Azure subscription, follow the guidance in [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
+If you already have an Azure subscription, you can skip to [Set up pay-as-you-go billing](#set-up-pay-as-you-go-billing). If you need to create an Azure subscription, follow the guidance in [Create your Azure subscriptions](/azure/cost-management-billing/manage/create-subscription) or [start creating a subscription on Azure](https://portal.azure.com/#view/Microsoft_Azure_Billing/CatalogBlade/appId/AddSubscriptionButton).
 
 ## Set up pay-as-you-go billing
 
