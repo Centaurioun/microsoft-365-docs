@@ -171,7 +171,7 @@ This permission is required to gather details regarding the multitenant organiza
 
 If a tenant has enabled external tags in Outlook to help users identify content from external tenants, MTO group admins can now choose to suppress these tags for members of the multitenant organization. This setting allows for a more seamless collaboration experience and admins can enable this setting in the MAC MTO portal. 
 
-![Edit external tag setting](media/manage-multitenant-org-settings/external-tag-setting.png)
+![Edit external tag setting](media/manage-multitenant-org-settings/edit-external-tag-setting.png)
 
 If the tenant hasn't enabled external tags in Outlook, checking the **External tag removal** option will automatically create a remote domain for the partner tenant and mark it as internal (i.e., IsInternal = true), but it won't have effect in end user experience.  In this case, external tags are not displayed to members in MTO. 
 
