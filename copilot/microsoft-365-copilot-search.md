@@ -17,12 +17,12 @@ description: An overview of the Microsoft 365 Copilot search feature.
 
 # Microsoft 365 Copilot Search
 
-Microsoft 365 Copilot Search is an AI-powered universal search experience optimized for your organization. It provides a familiar search experience that helps users quickly find relevant results from your organization and the web.
+Microsoft 365 Copilot Search is an AI-powered universal search experience optimized for your organization. It provides a familiar search experience that helps users quickly find relevant results from your organization. It offers a simple user experience that helps you find what you need, when you need it in a fast and secure universal search.
 
 > [!NOTE]
 > Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
-**Unified search across all applications:** Copilot Search delivers comprehensive insights into your organization's data by interpreting content across Microsoft 365 applications and beyond. With over 100 connectors available, it offers a single source for quick answers from all your apps. It understands user context, behavior, and organizational relationships, enabling it to return highly personalized answers to your queries. Learn more about the Microsoft 365 Copilot connectors gallery.
+**Unified search across all applications:** Copilot Search delivers comprehensive insights into your organization's data by interpreting content across Microsoft 365 applications and beyond. With over 100 connectors available, it offers a single source for quick answers from *all* your apps. It understands user context, behavior, and organizational relationships, enabling it to return highly personalized answers to your queries. Learn more about the [Microsoft 365 Copilot connectors gallery](/microsoftsearch/connectors-gallery).
 
 **What to use when:** Because it's integrated with Microsoft 365 Copilot, users can find the results they need with search, then seamlessly transition to chat for deeper exploration or follow-up task completion.
 
