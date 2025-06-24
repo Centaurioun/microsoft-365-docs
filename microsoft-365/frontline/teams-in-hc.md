@@ -36,7 +36,7 @@ ms.date: 02/29/2024
 
 Microsoft 365 and Microsoft Teams offer a number of telemedicine features useful for hospitals and other healthcare organizations.
 
-- Virtual Appointments and Electronic Healthcare Record (EHR) integration
+- Virtual appointments and Electronic Healthcare Record (EHR) integration
 - Teams policy packages for healthcare
 - Messaging
 - Team templates for healthcare
@@ -87,9 +87,9 @@ Use the following poster to start envisioning what your organization can do with
 Use the complete meetings platform in Teams to schedule, manage, and conduct virtual appointments with patients and other providers.
 
 - If your organization already uses an EHR system, you can integrate Teams for a more seamless experience. Teams EHR connector makes it easy for clinicians to launch a virtual appointment with a patient or a consultation with another provider in Teams directly from the EHR system. To learn more, see [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
-- If you aren't using a supported EHR system, you can use the Virtual Appointments app in Teams. To learn more, see [Virtual Appointments with Teams](virtual-appointments.md).
+- If you aren't using a supported EHR system, you can use the Bookings app in Teams. To learn more, see [Virtual Appointments with Teams](virtual-appointments.md).
 
-:::image type="content" source="media/virtual-appointments-teams-healthcare.png" alt-text="Diagram showing Virtual Appointments options in Teams through integration with an EHR system and through the Virtual Appointments app." lightbox="media/virtual-appointments-teams-healthcare.png":::
+:::image type="content" source="microsoft-365/frontline/media/va-healthcare-bookings-expand.png" alt-text="Diagram showing Virtual Appointments options in Teams through integration with an EHR system and through the Bookings app." lightbox="microsoft-365/frontline/media/va-healthcare-bookings-small.png":::
 
 ## Connect and engage the healthcare workforce
 
@@ -180,4 +180,4 @@ To learn more, see [Shifts for frontline workers](shifts-for-teams-landing-page.
 There are many resources available to help all of the users in your organization get comfortable with using Teams:
 
 - Check out the [Teams adoption center](https://adoption.microsoft.com/microsoft-teams/) for advice on rolling out Teams if you're just starting your organization's journey with Teams, or expanding Teams to more areas of your organization.
-- Get help and training for your users on how to perform basic tasks in Teams on the [Teams help & learning site](https://support.microsoft.com/teams), including [quick training videos](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7). This site also has help and training for the Teams apps, including [Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f), [Lists](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db), [Planner](https://support.microsoft.com/office/getting-started-with-planner-in-teams-7a5e58f1-2cee-41b0-a41d-55d512c4a59c), [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3), and [Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).
+- Get help and training for your users on how to perform basic tasks in Teams on the [Teams help & learning site](https://support.microsoft.com/teams), including [quick training videos](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7). This site also has help and training for the Teams apps, including [Bookings and virtual appointments](/microsoft-365/bookings/bookings-overview), [Lists](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db), [Planner](https://support.microsoft.com/office/getting-started-with-planner-in-teams-7a5e58f1-2cee-41b0-a41d-55d512c4a59c), [Approvals](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3), and [Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).
