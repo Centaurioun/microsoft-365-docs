@@ -157,7 +157,7 @@ You can add bookmarks individually or bulk import them in a .csv file. Upload a 
 
 | Title  | Url                              | Keywords                       | Match Similar Keywords        | State                                                     | Description                                              | Reserved Keywords                        | Categories                     | Last Modified By | ID  |
 |--------|----------------------------------|--------------------------------|-------------------------------|-----------------------------------------------------------|----------------------------------------------------------|------------------------------------------|--------------------------------|------------------|-----|
-| Yammer | https://www.yammer.com/office365 | Yammer Online; Yammer login... | Automatic or can manually add | Published, Draft, Scheduled, Excluded, Expired, Suggested | Yammer is a collaboration tool that helps you connect... | Microsoft Suggests, Microsoft Recommends | Name of the admin who modified | Unique ID        |     |
+| Yammer | https://www.yammer.com/office365 | Yammer Online, Yammer login | Automatic or can manually add | Published, Draft, Scheduled, Excluded, Expired, Suggested | Yammer is a collaboration tool that helps you connect with colleagues. | Microsoft Suggests, Microsoft Recommends | Name of the admin | Unique ID        |     |
 
 ### Prevent import errors
 
