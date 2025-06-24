@@ -55,6 +55,26 @@ Before you begin, ensure you have the following roles:
 
     d. Under **Send email alerts**, you can add recipients to receive budget notifications and set the budget percentage that will trigger an alert.
 
+
+    > [!NOTE]
+    > • You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
+    > 
+    > • There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
+    > 
+    > • Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
+
+
+    > [!NOTE]
+    > You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
+    > 
+    > There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
+    > 
+    > Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
+
+
+
+
+
     > [!NOTE]
     > You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
 
