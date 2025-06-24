@@ -1,10 +1,10 @@
 ---
-title: Create a budget for pay-as-you-go services in Microsoft 365
+title: Create a budget for pay-as-you-go billing in Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ivchenya
-ms.date: 06/12/2025
+ms.date: 06/25/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -12,15 +12,15 @@ ms.subservice:
 search.appverid: 
 ms.collection: 
 ms.localizationpriority:  medium
-description: Learn how to set up or disconnect billing for pay-as-you-go services in Microsoft 365 Copilot.
+description: Learn how to set up a billing budget for pay-as-you-go services in Microsoft 365.
 ---
 
-# Create a budget for pay-as-you-go services in Microsoft 365
+# Create a budget for pay-as-you-go billing in Microsoft 365
 
 > [!NOTE]
 > This feature is currently available only for Microsoft 365 Copilot services. Other services will be added in future releases.
 
-This article explains how to set up a budget for pay-as-you-go services in Microsoft 365.
+This article explains how to set up a budget for pay-as-you-go billing in Microsoft 365.
 
 ## Prerequisites
 
