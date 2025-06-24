@@ -22,7 +22,7 @@ description: Learn how to set up a billing budget for pay-as-you-go services in 
 
 This article explains how to set up a budget for pay-as-you-go billing in Microsoft 365.
 
-Budgets are configured at the billing policy level—not at the agent, site, or user level. This means that spending limits and alerts apply to the entire billing policy, which might include multiple users or services, rather than being scoped to individual users or locations.
+Budgets are configured at the billing policy level—not at the agent, site, or user level. This means spending limits and alerts apply to the entire policy, which might include multiple users or services.
 
 ## Prerequisites
 
@@ -55,7 +55,7 @@ Before you begin, ensure you have:
 
     c. Under **Reset the budget**, select when you want the budget to reset.
 
-    - Monthly
+    - Monthly (resets on the first day of each month)
     - Quarterly (resets on January 1, April 1, July 1, and October 1)
     - Yearly (resets on January 1)
 
@@ -69,11 +69,11 @@ Before you begin, ensure you have:
 
         - Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
 
-    - Set the budget percentage that will trigger an alert.
+    - Set the budget percentage that triggers an alert.
 
         - If selected, 100% of the budget is enabled by default.
 
-        - You can add up to four additional thresholds (between 0–99%).
+        - You can add up to four other thresholds (between 0–99%).
 
 7. Select **Save** to apply your budget settings.
 
