@@ -1,5 +1,5 @@
 ---
-title: Set up a budget for pay-as-you-go billing in Microsoft 365
+title: Set a budget for pay-as-you-go billing in Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -15,7 +15,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up a billing budget for pay-as-you-go services in Microsoft 365.
 ---
 
-# Set up a budget for pay-as-you-go billing in Microsoft 365
+# Set a budget for pay-as-you-go billing in Microsoft 365
 
 > [!NOTE]
 > This feature is currently available only for Microsoft 365 Copilot services. Other services will be added in future releases.
@@ -24,77 +24,47 @@ This article explains how to set up a budget for pay-as-you-go billing in Micros
 
 ## Prerequisites
 
-Before you begin, ensure the following:
+Before you begin, ensure you have the following roles:
 
-- You have an Azure subscription in the same tenant as Microsoft 365.
+- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center.
 
-- You have an Azure resource group in that subscription.
+- Contributor access to view and edit budget settings. Users with reader access can view billing policies but not spending data or budget details. [Learn more about admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
-- You have the following roles:
-
-    - [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center.
-    - Owner or Contributor rights to the Azure subscription and resource group.
-
-## Set up pay-as-you-go billing
-
-### Step 1: Set up a billing policy
+## Set up a budget
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
 2. Go to **Copilot** > **Billing & usage**.
 
-3. Select **Add a billing policy**.
+3. On the **Billing policies** tab, select the policy for which you want to set a budget.
 
-4. On the **Billing details** page, fill in required information, including:
-    - Policy name
-    - Azure subscription
-    - Resource group
-    - Region (determines where tenant ID and usage data are stored)
+4. On the policy panel, select the **Budget** tab.
 
-5. Read and accept the pay-as-you-go terms of service. Select **Next**.
-
-7. On the **Users** page, choose **All users** or a **Specific group** (search and add a single group). Select **Next**.
+5. Select **Spending** to view and monitor your expenses for the services linked to the billing policy.
 
     > [!NOTE]
-    > When selecting a group, only the first 1,000 groups are displayed in alphabetical order.
+    > There might be up to a four-hour delay before consumption data appears in the graph.
 
-8. On the **Review and finish** page, double-check all the details you’ve entered. If everything is correct, select **Create policy**.
+6. Select **Settings** to set a budget and specify who to notify when the cost of the services using the policy reaches the specified percentage of your budget.
 
-    Your billing policy is now created but not yet connected to a service.
+    a. Select the **Set limits for this billing policy** checkbox.
 
-### Step 2: Connect the billing policy to a service
+    b. Under **Budget**, enter the dollar amount you want to be the limit.
 
-1. On the **Billing & usage** page, select the **Connect a service**.
+    c. Under **Reset the budget**, select when you want the budget to reset.
 
-2. Choose the newly created billing policy and link it to a pay-as-you-go service (for example, **Microsoft 365 Copilot Chat** or **SharePoint Agents**).
+    d. Under **Send email alerts**, you can add recipients to receive budget notifications and set the budget percentage that will trigger an alert.
 
-## Monitor usage and costs
+    > [!NOTE]
+    > You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
 
-After setup, monitor your pay-as-you-go usage and costs in [Microsoft Cost Management for Azure](https://portal.azure.com/#blade/Microsoft_Azure_CostManagement/Menu/costanalysis). Ensure you have at least read access to the billing resource group.
+    > [!NOTE]
+    > There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
 
-## Disconnect pay-as-you-go billing
+    > [!NOTE]
+    > Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
 
-### Prerequisites
+7. Select **Save** to apply your budget settings.
 
-Ensure you have the following roles:
-
-- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center
-- Owner or Contributor rights to the Azure subscription and resource group
-
-### Disconnect agents from pay-as-you-go billing
-
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), go to **Copilot** > **Billing & usage**.
-
-2. Select the **Pay-as-you-go services** tab.
-
-3. Choose the agent to disconnect (for example, **Microsoft 365 Copilot Chat** or **SharePoint Agents**).
-
-4. On the **Manage billing policy connections** panel:
-
-    a. Select the checkbox next to the policy to disconnect.
-
-    b. Select **Save**.
-
-5. View the disconnection message to confirm that your Azure subscription is successfully disconnected.
-
-    If multiple services are connected to a single policy, repeat the steps for each service.
+    > [!IMPORTANT]
+    > The only way to stop billing is to [disconnect the payment method](pay-as-you-go-setup-copilot#disconnect-pay-as-you-go-billing). Reaching 100% of your budget doesn't stop the service or billing.
