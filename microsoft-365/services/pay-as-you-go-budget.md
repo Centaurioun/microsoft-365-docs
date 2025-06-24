@@ -26,9 +26,22 @@ Budgets are set at the billing policy level, not for individual users, agents, o
 
 ## Prerequisites
 
+Before you begin, you need to have the following:
+
+- **Role requirements**:
+
+    - You must have either the [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role to access the Microsoft 365 admin center.
+
+- **Permission levels**:
+
+    - Users with Contributor access can view and edit budget settings.
+
+    - Users with Reader access can view billing policies, but cannot see spending data or budget details.
+
+
 Before you begin, ensure you have:
 
-- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role for accessing the Microsoft 365 admin center.
+- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role to access the Microsoft 365 admin center.
 
 - Contributor access to view and edit budget settings. Users with reader access can view billing policies but not spending data or budget details. [Learn more about admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
