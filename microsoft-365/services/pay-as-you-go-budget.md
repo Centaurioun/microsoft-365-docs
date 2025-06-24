@@ -26,9 +26,9 @@ Budgets are set at the billing policy level, not for individual users, agents, o
 
 ## Prerequisites
 
-Before you begin, you need to have the following:
+Before you begin, ensure you meet the following requirements:
 
-- **Role requirements**:
+- **Admin role**:
 
     - You must have either the [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role to access the Microsoft 365 admin center.
 
