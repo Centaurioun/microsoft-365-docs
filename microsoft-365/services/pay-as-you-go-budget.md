@@ -43,10 +43,7 @@ Before you begin, ensure you meet the following requirements:
 
 4. On the policy panel, select the **Budget** tab.
 
-5. Select **Spending** to view current expenses for services linked to the policy.
-
-    > [!NOTE]
-    > There can be up to a four-hour delay before consumption data appears in the graph.
+5. Select **Spending** to view current expenses for services linked to the policy. There can be up to a four-hour delay before consumption data appears in the graph.
 
 6. Select **Settings** to configure your budget and alert preferences.
 
