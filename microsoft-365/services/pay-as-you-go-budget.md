@@ -26,20 +26,12 @@ Budgets are set at the billing policy level, not for individual users, agents, o
 Before you begin, ensure you meet the following requirements:
 
 - **Admin role**:
-
     - You must have either the [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role to access the Microsoft 365 admin center.
 
 - **Permission levels**:
-    - Users with Contributor access can view and edit budget settings.
+    - Users with contributor access can view and edit budget settings.
+    - Users with reader access can view billing policies, but cannot see spending data or budget details.
 
-    - Users with Reader access can view billing policies, but cannot see spending data or budget details.
-
-
-Before you begin, ensure you have:
-
-- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role to access the Microsoft 365 admin center.
-
-- Contributor access to view and edit budget settings. Users with reader access can view billing policies but not spending data or budget details. [Learn more about admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Set up a budget
 
@@ -126,6 +118,15 @@ Before you begin, ensure you have:
         - There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
 
         - Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
+
+
+
+Before you begin, ensure you have:
+
+- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role to access the Microsoft 365 admin center.
+
+- Contributor access to view and edit budget settings. Users with reader access can view billing policies but not spending data or budget details. [Learn more about admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+
 
 
 
