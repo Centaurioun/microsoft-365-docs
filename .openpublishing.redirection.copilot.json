@@ -1,7 +1,7 @@
 {
    "redirections": [
       {
-         "source_path": "copilot/multiple-account-access.md",
+         "source_path": "copilot/mutliple-account-access.md",
          "redirect_url": "/copilot/microsoft-365/multiple-account-access",
          "redirect_document_id": true
       },
