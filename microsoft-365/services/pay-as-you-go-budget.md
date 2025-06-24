@@ -57,10 +57,28 @@ Before you begin, ensure you have the following roles:
     - Quarterly (resets on January 1, April 1, July 1, and October 1)
     - Yearly (resets on January 1)
 
+    d. Under **Send email alerts**, you can optionally:
+
+    - Add recipients to receive budget notifications.
+
+        - You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
+
+        - There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
+
+        - Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
+
+    - Set the budget percentage that will trigger an alert.
+
+        - If selected, 100% of the budget is enabled by default.
+        - You can add up to five thresholds.
+
+<!---
     > [!NOTE]
-    > Reset on the first of the quarter refers to January 1, April 1, July 1, and October 1.
-    >
-    > Reset on the first of the year refers to January 1.
+    > You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
+    > 
+    > There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
+    > 
+    > Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
 
     d. Under **Send email alerts**, you can add recipients to receive budget notifications and set the budget percentage that will trigger an alert.
 
@@ -70,6 +88,8 @@ Before you begin, ensure you have the following roles:
     > There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
     > 
     > Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
+--->
+
 
 <!---
 
