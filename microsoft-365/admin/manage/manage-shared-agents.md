@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 02/26/2025
+ms.date: 06/24/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -79,7 +79,12 @@ After the agent is unblocked, it’ll be restored to the most recent availabilit
 
 ## Export to Excel
 
-You can export the list of shared agents to an Excel file. This is essential for detailed analysis and reporting. The exported file includes comprehensive information about each shared agent, such as:
+You can export the list of shared agents to an Excel file. This is essential for detailed analysis and reporting. 
+
+> [!NOTE]
+> If the export process reaches one minute, only the data up to that point will be included in the exported file.
+
+The exported file includes comprehensive information about each shared agent, such as:
 
 - Name
 - Host products
