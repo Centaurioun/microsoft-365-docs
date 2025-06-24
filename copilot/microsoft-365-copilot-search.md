@@ -22,17 +22,11 @@ Microsoft 365 Copilot Search is an AI-powered universal search experience optimi
 > [!NOTE]
 > Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
-**Unified search across all applications:** Copilot Search delivers comprehensive insights into your organization's data by interpreting content across Microsoft 365 applications and beyond. With over 100 connectors available, it offers a single source for quick answers from *all* your apps. It understands user context, behavior, and organizational relationships, enabling it to return highly personalized answers to your queries. Learn more about the [Microsoft 365 Copilot connectors gallery](/microsoftsearch/connectors-gallery).
+**Unified search across all applications:** Copilot Search delivers comprehensive insights into your organization's data by interpreting content across Microsoft 365 applications and beyond. With over 100 connectors now in the Microsoft Catalog, support for custom connectors, and hundreds of connectors from integrated software vendors (ISVs), Copilot Search is the single place for quick information across all your Microsoft and non-Microsoft data sources. Learn more about the [Microsoft 365 Copilot connectors gallery](/microsoftsearch/connectors-gallery).
 
 **What to use when:** Because it's integrated with Microsoft 365 Copilot, users can find the results they need with search, then seamlessly transition to chat for deeper exploration or follow-up task completion.
 
 :::image type="content" source="media/copilot-search-home-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search." lightbox="media/copilot-search-home-raw.png":::
-
-## Access and eligibility
-
-Copilot Search is available to users with an eligible Microsoft 365 Copilot license at no additional cost. It can be accessed through the Microsoft 365 Copilot app on desktop, web, and mobile platforms. The app is available to users with Entra accounts (work or school).
-
-No action is required by admins or users to set up Copilot Search. If a user has an eligible Microsoft 365 Copilot license, Copilot Search appears as a tab in the Microsoft 365 Copilot app.
 
 ## How Copilot Search works with Microsoft 365 Copilot
 
@@ -49,6 +43,12 @@ Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated *
 This design positions search as the organizing layer for AI, while chat remains the workspace for task execution and deeper interactions. For example, if a user searches for **what's the status of the Q2 report**, Copilot Search may return a summarized answer and offer to continue the conversation in chat for more nuanced exploration or follow-up actions.
 
 :::image type="content" source="media/copilot-search-landing-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search results." lightbox="media/copilot-search-landing-raw.png":::
+
+## Access and eligibility
+
+Copilot Search is available to users with an eligible Microsoft 365 Copilot license at no additional cost. It can be accessed through the Microsoft 365 Copilot app on desktop, web, and mobile platforms. The app is available to users with Entra accounts (work or school).
+
+No action is required by admins or users to set up Copilot Search. If a user has an eligible Microsoft 365 Copilot license, Copilot Search appears as a tab in the Microsoft 365 Copilot app.
 
 ## Privacy and security
 
