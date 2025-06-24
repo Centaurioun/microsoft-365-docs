@@ -33,7 +33,6 @@ Before you begin, you need to have the following:
     - You must have either the [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role to access the Microsoft 365 admin center.
 
 - **Permission levels**:
-
     - Users with Contributor access can view and edit budget settings.
 
     - Users with Reader access can view billing policies, but cannot see spending data or budget details.
