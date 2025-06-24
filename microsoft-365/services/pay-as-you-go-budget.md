@@ -24,9 +24,9 @@ This article explains how to set up a budget for pay-as-you-go billing in Micros
 
 ## Prerequisites
 
-Before you begin, ensure you have the following roles:
+Before you begin, ensure you have:
 
-- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center.
+- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) role for accessing the Microsoft 365 admin center.
 
 - Contributor access to view and edit budget settings. Users with reader access can view billing policies but not spending data or budget details. [Learn more about admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
@@ -68,9 +68,9 @@ Before you begin, ensure you have the following roles:
         - Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
 
     - Set the budget percentage that will trigger an alert.
-
+    
         - If selected, 100% of the budget is enabled by default.
-        - You can add up to five thresholds.
+        - You can add up to four additional thresholds (between 0–99%).
 
 <!---
     > [!NOTE]
