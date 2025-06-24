@@ -20,7 +20,9 @@ description: Learn how to set up a billing budget for pay-as-you-go services in 
 > [!NOTE]
 > This feature is currently available only for Microsoft 365 Copilot services. Other services will be added in future releases.
 
-This article explains how to set up a budget for pay-as-you-go billing in Microsoft 365. Budgets are set at the billing policy level, not at the agent, site, or user level. [Learn more about billing policies](/microsoft-365/admin/billing/billing-policies).
+This article explains how to set up a budget for pay-as-you-go billing in Microsoft 365.
+
+Budgets are configured at the billing policy level—not at the agent, site, or user level. This means that spending limits and alerts apply to the entire billing policy, which might include multiple users or services, rather than being scoped to individual users or locations.
 
 ## Prerequisites
 
@@ -68,9 +70,17 @@ Before you begin, ensure you have:
         - Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
 
     - Set the budget percentage that will trigger an alert.
-    
+
         - If selected, 100% of the budget is enabled by default.
+
         - You can add up to four additional thresholds (between 0–99%).
+
+7. Select **Save** to apply your budget settings.
+
+    > [!IMPORTANT]
+    > The only way to stop billing is to [disconnect the payment method](pay-as-you-go-setup-copilot#disconnect-pay-as-you-go-billing). Reaching 100% of your budget doesn't stop the service or billing.
+
+
 
 <!---
     > [!NOTE]
@@ -102,8 +112,3 @@ Before you begin, ensure you have:
     > [!NOTE]
     > Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
 --->
-
-7. Select **Save** to apply your budget settings.
-
-    > [!IMPORTANT]
-    > The only way to stop billing is to [disconnect the payment method](pay-as-you-go-setup-copilot#disconnect-pay-as-you-go-billing). Reaching 100% of your budget doesn't stop the service or billing.
