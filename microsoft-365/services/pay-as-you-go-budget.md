@@ -53,9 +53,9 @@ Before you begin, ensure you have the following roles:
 
     c. Under **Reset the budget**, select when you want the budget to reset.
 
-        - Monthly
-        - Quarterly (resets on January 1, April 1, July 1, and October 1)
-        - Yearly (resets on January 1)
+    - Monthly
+    - Quarterly (resets on January 1, April 1, July 1, and October 1)
+    - Yearly (resets on January 1)
 
     > [!NOTE]
     > Reset on the first of the quarter refers to January 1, April 1, July 1, and October 1.
