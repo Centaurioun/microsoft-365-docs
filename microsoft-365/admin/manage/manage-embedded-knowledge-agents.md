@@ -100,10 +100,10 @@ This deletion process is **irreversible**. Once an agent is deleted, it might ta
 Sensitivity labels are applied to the embedded content in the agent based on the most restrictive label from the uploaded files. The following rules determine how the sensitivity label is applied:
 
 - The label applied to the agent is determined by whichever of the following is more restrictive:
-  - Most restrictive sensitivity label of all filed uploaded (for example, the highest priority of the labels on the uploaded files).
+  - Most restrictive sensitivity label of all files uploaded (for example, the highest priority of the labels on the uploaded files).
   - The [default sensitivity label policy](/purview/default-sensitivity-labels-policies#default-sensitivity-label-policy) applied by the organization, if one is configured.
 - If a default sensitivity labeling policy is in place, a label is automatically assigned.  
-- Sensitivity labels are only applied if the agent is created using Microsoft Copilot Studio Agent Builder, and if the agent has embedded files in it.
+- Sensitivity labels are only applied if the agent is created using Copilot Studio Agent Builder, and if the agent has embedded files in it.
 
 You can view the sensitivity label for each agent in the **Overview** tab of the Microsoft 365 admin center.
 
