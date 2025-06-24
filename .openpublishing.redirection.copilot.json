@@ -1,9 +1,14 @@
 {
-    "redirections":[
-       {
+   "redirections": [
+      {
          "source_path": "copilot/mutliple-account-access.md",
          "redirect_url": "/copilot/microsoft-365/multiple-account-access",
          "redirect_document_id": true
-       }
-    ]
- }
+      },
+      {
+         "source_path": "copilot/microsoft-365-copilot-search-privacy.md",
+         "redirect_url": "/copilot/microsoft-365-copilot-search",
+         "redirect_document_id": false
+      }
+   ]
+}

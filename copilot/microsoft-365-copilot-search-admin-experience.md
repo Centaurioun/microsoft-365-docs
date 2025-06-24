@@ -19,11 +19,11 @@ description: Information on the admin experience in Microsoft 365 Copilot Search
 
 The Microsoft 365 Copilot Search admin experience is a new capability in the Microsoft 365 admin center designed to empower you to manage, customize, and optimize the Copilot Search experience across your organization.
 
-## Accessing Copilot Search in Microsoft 365 admin center
+## Accessing Copilot Search in the Microsoft 365 admin center
 
-No action is required to set up Microsoft 365 Copilot Search. If a user has an eligible Microsoft 365 Copilot license, they can access Copilot Search from the **Search** module in the Microsoft 365 Copilot app. Users who don't have an eligible Microsoft 365 Copilot license will receive the Microsoft Search experience when selecting the **Search** module in the Microsoft 365 Copilot app.
+No action is required to set up Microsoft 365 Copilot Search. If a user has an eligible Microsoft 365 Copilot license, they can access Copilot Search from the **Search** module in the Microsoft 365 Copilot app. Users who don't have an eligible Microsoft 365 Copilot license will receive the Microsoft Search experience when selecting the **Search** module in the Microsoft 365 app.
 
-## Configure Copilot Search for your Organization
+## Configure Copilot Search for your organization
 
 You can create a customized Copilot Search experience that delivers more relevant results for your users. For example, you can manage bookmarks and acronyms for Copilot Search, just like you can for Microsoft Search. If you've already configured bookmarks and acronyms for Microsoft Search, no further action is required to enable curated bookmarks and acronyms for Copilot Search.
 
@@ -66,7 +66,7 @@ If KPI has been curated by the organization's admin, Copilot Search results incl
 > [!NOTE]
 > Acronym queries are not case sensitive.
 
-### Set Up acronym answers
+### Set up acronym answers
 
 In the Microsoft 365 admin center:
 
@@ -74,7 +74,7 @@ In the Microsoft 365 admin center:
 2. Select **Search** and then **Acronyms**.
 3. Select **Add Acronyms**.
 
-### Set Up Admin-Curated Acronyms
+### Set up admin curated acronyms
 
 Search administrators can add acronyms on the **Acronyms** tab in the Copilot Search admin experience. You can add acronyms from any internal site or repository to the admin center. These acronyms can be added to the **Published** state or **Draft** state.
 
@@ -82,7 +82,7 @@ Search administrators can add acronyms on the **Acronyms** tab in the Copilot Se
 - **Draft state:** If you want to review an acronym before making it available in Copilot Search, you can add the acronym in a Draft state. Acronyms in the Draft state don't appear in search results. You'll need to move the acronym to the **Published** state to make it appear in search results.
 - **Excluded state:** If you want to prevent an acronym from appearing in Microsoft Search, use **Exclude an acronym** to do so. To stop an acronym from being excluded, you'll need to delete the excluded acronym and add it or verify it's in your published list.
 
-### Import Acronyms
+## Import acronyms
 
 You can add acronyms individually or bulk import them in a .csv file. Upload a .csv file with the fields shown in the following table:
 
@@ -90,7 +90,7 @@ You can add acronyms individually or bulk import them in a .csv file. Upload a .
 |---------------------|---------------------------|----------------------------|--------------------------------------------------------------------|-------------------------------|---------------|------------------|-----|
 | KPI                 | Key Performance Indicator | Source of this information | Key performance indicators (KPIs) are quantifiable measurements... | Published, Draft, or Excluded |               |                  |     |
 
-### CSV Fields
+### CSV fields
 
 - **Acronym:** Contains the actual short form or acronym. An example is KPI.
 
@@ -116,7 +116,7 @@ You can add acronyms individually or bulk import them in a .csv file. Upload a .
 
 Bookmarks help people find sites and tools that are especially important in an organization with just a quick search. Each bookmark includes a title, URL, a set of user-friendly keywords to trigger the bookmark, and a category.
 
-### What Makes a Great Bookmark
+### What makes a great bookmark
 
 A great bookmark has four key elements:
 
@@ -132,7 +132,7 @@ A great bookmark has four key elements:
 
 - **A helpful set of categories:** That makes it easier to sort and filter bookmarks in the admin center. Your users never see the assigned categories.
 
-### Create Bookmark Answers
+### Create bookmark answers
 
 In the Microsoft 365 admin center:
 
@@ -142,7 +142,7 @@ In the Microsoft 365 admin center:
     - **Import SharePoint results**
     - **Import bookmarks**
 
-### Add Bookmarks
+### Add bookmarks
 
 Admins can add bookmarks in the Microsoft 365 admin center and either publish or save them to a draft state. Publishing a bookmark immediately refreshes the search index, making it discoverable to users right away. You can also schedule a bookmark by specifying the date and time it will be published.
 
@@ -150,7 +150,7 @@ Admins can add bookmarks in the Microsoft 365 admin center and either publish or
 - **Draft:** Bookmarks saved as drafts aren't available to your users. Use this status if you or other stakeholders want to review or update bookmarks before publishing.
 - **Scheduled:** Bookmarks to be published on the specified date and time.
 
-### Import Bookmarks
+### Import bookmarks
 
 You can add bookmarks individually or bulk import them in a .csv file. Upload a .csv file with the fields shown in the following table:
 
@@ -158,7 +158,7 @@ You can add bookmarks individually or bulk import them in a .csv file. Upload a 
 |--------|----------------------------------|--------------------------------|-------------------------------|-----------------------------------------------------------|----------------------------------------------------------|------------------------------------------|--------------------------------|------------------|-----|
 | Yammer | https://www.yammer.com/office365 | Yammer Online; Yammer login... | Automatic or can manually add | Published, Draft, Scheduled, Excluded, Expired, Suggested | Yammer is a collaboration tool that helps you connect... | Microsoft Suggests, Microsoft Recommends | Name of the admin who modified | Unique ID        |     |
 
-### Prevent Import Errors
+### Prevent import errors
 
 You'll get an error if any required data is missing or invalid. Also, a log file is generated with more information about the rows and columns to be corrected. Make necessary edits and try importing the file again. You can't import or save any bookmarks until all errors are resolved.
 
