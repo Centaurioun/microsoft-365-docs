@@ -38,42 +38,39 @@ Before you begin, ensure you have:
 
 2. Go to **Copilot** > **Billing & usage**.
 
-3. On the **Billing policies** tab, select the policy for which you want to set a budget.
+3. On the **Billing policies** tab, select the policy you want to manage.
 
 4. On the policy panel, select the **Budget** tab.
 
-5. Select **Spending** to view and monitor your expenses for the services linked to the billing policy.
+5. Select **Spending** to view current expenses for services linked to the policy.
 
     > [!NOTE]
-    > There might be up to a four-hour delay before consumption data appears in the graph.
+    > There can be up to a four-hour delay before consumption data appears in the graph.
 
-6. Select **Settings** to set a budget and specify who to notify when the cost of the services using the policy reaches the specified percentage of your budget.
+6. Select **Settings** to configure your budget and alert preferences.
 
     a. Select the **Set limits for this billing policy** checkbox.
 
-    b. Under **Budget**, enter the dollar amount you want to be the limit.
+    b. Under **Budget**, enter the dollar amount for your spending limit.
 
-    c. Under **Reset the budget**, select when you want the budget to reset.
+    c. Under **Reset the budget**, select when you want to reset he budget.
 
     - Monthly (resets on the first day of each month)
     - Quarterly (resets on January 1, April 1, July 1, and October 1)
     - Yearly (resets on January 1)
 
-    d. Under **Send email alerts**, you can optionally:
+    d. Under **Send email alerts** (optional):
 
-    - Add recipients to receive budget notifications.
+    - Add recipients (only [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups) are currently supported).
 
-        - You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
+    - Set the budget percentage that triggers alerts.
 
-        - There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
+        - If selected, 100% is enabled by default.
 
-        - Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
+        - You can add up to four additional thresholds (0–99%).
 
-    - Set the budget percentage that triggers an alert.
-
-        - If selected, 100% of the budget is enabled by default.
-
-        - You can add up to four other thresholds (between 0–99%).
+    > [!NOTE]
+    > Email alerts can be delayed by up to 24 hours. Alerts are currently sent from Azure but will transition to the Microsoft 365 admin center in a future release.
 
 7. Select **Save** to apply your budget settings.
 
@@ -111,4 +108,16 @@ Before you begin, ensure you have:
 
     > [!NOTE]
     > Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
+
+
+    - Add recipients to receive budget notifications.
+
+        - You can currently select only mail-enabled security groups to receive alerts. [Learn how to create a mail-enabled security group](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
+
+        - There can be up to a 24-hour delay before email alerts are sent after a budget threshold is reached.
+
+        - Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
+
+
+
 --->
