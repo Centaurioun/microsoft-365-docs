@@ -17,9 +17,6 @@ description: Learn how to set up a billing budget for pay-as-you-go services in 
 
 # Set up a budget for pay-as-you-go billing in Microsoft 365
 
-> [!NOTE]
-> This feature is currently available only for Microsoft 365 Copilot services. Other services will be added in future releases.
-
 This article explains how to set spending limits for pay-as-you-go billing—currently available for Microsoft 365 Copilot services. This feature helps you monitor usage, receive alerts as costs approach budget thresholds, and plan more effectively.
 
 Budgets are set at the billing policy level, not for individual users, agents, or sites. This means any limits or alerts apply to all services and users under that policy.
@@ -131,5 +128,8 @@ Before you begin, ensure you have:
         - Budget email alerts are currently sent from Azure. However, you can still view and manage your budget in the Microsoft 365 admin center. This behavior will be updated in a future release so that alerts are sent directly from the admin center.
 
 
+
+> [!NOTE]
+> This feature is currently available only for Microsoft 365 Copilot services. Other services will be added in future releases.
 
 --->
