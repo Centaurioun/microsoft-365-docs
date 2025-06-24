@@ -110,9 +110,7 @@ items:
   - name: Manage Microsoft 365 Copilot Search
     href: microsoft-365-copilot-search-manage.md
   - name: Microsoft 365 Copilot Search admin experience
-    href: microsoft-365-copilot-search-admin-experience.md    
-  - name: Security and privacy in Microsoft 365 Copilot Search
-    href: microsoft-365-copilot-search-privacy.md
+    href: microsoft-365-copilot-search-admin-experience.md
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
   - name: Overview of AI in Microsoft Teams

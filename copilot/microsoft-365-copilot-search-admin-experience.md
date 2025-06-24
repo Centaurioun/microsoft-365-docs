@@ -25,13 +25,14 @@ No action is required to set up Microsoft 365 Copilot Search. If a user has an e
 
 ## Configure Copilot Search for your organization
 
-You can create a customized Copilot Search experience that delivers more relevant results for your users. For example, you can manage bookmarks and acronyms for Copilot Search, just like you can for Microsoft Search. If you've already configured bookmarks and acronyms for Microsoft Search, no further action is required to enable curated bookmarks and acronyms for Copilot Search.
+You can create a customized Copilot Search experience that delivers more relevant results for your users. For example, you can manage connectors, bookmarks and acronyms for Copilot Search just as you can for Microsoft Search. If you’ve already configured bookmarks and acronyms for Microsoft Search, no further action is required to enable curated bookmarks and acronyms for Copilot Search.
 
 The Copilot Search admin experience enables admins to:
 
 - Configure frequently searched content within your organization like bookmarks and acronyms.
 - Customize search results and filters.
 - Monitor usage, adoption, and performance metrics.
+- Manage all your data sources with over 100 connectors within the Microsoft Catalog, custom connectors and hundreds of connectors from integrated software vendors (ISVs). For more information, see [Microsoft 365 Copilot connectors gallery](/microsoftsearch/connectors-gallery).
 
 ## Manage acronyms in Copilot Search
 
