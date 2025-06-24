@@ -35,7 +35,7 @@ Your admin has a read-only view into any subscriptions that you buy. They can se
 
 ## View your subscriptions
 
-You can view a list of all your self-service free trials and purchased subscriptions.
+You can view a list of all self-service acquired subscriptions.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Self-service**.

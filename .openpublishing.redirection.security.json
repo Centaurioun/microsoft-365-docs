@@ -9349,6 +9349,11 @@
           "source_path": "Microsoft-365/security/defender/zero-trust-with-microsoft-365-defender.md",
           "redirect_url": "/defender-xdr/zero-trust-with-microsoft-365-defender",
           "redirect_document_id": false
+        },
+        {
+          "source_path": "Microsoft-365/security/microsoft-365-zero-trust.md",
+          "redirect_url": "/security/zero-trust/microsoft-365-zero-trust",
+          "redirect_document_id": false
         }
    ]
  }

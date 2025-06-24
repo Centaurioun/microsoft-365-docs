@@ -51,6 +51,30 @@ And if you'd like to know what's new with other Microsoft cloud services, check 
 - [Microsoft 365 updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## June 2025
+
+### Copilot Search admin experience
+
+The Microsoft 365 Admin center now includes the **Copilot Search Admin experience**, giving you powerful tools to manage and optimize search across your organization. This release introduces enhanced support for **Acronyms** and **Bookmarks**, enabling you to deliver more relevant and contextual search results to users.
+
+### Key Highlights
+
+- **Acronyms**
+
+    - Define and manage organization-specific acronyms to improve search clarity.
+    - Upload acronyms in bulk via CSV or add them individually.
+    - Acronyms are discoverable across Microsoft Search endpoints like SharePoint.  
+
+- **Bookmarks**
+
+    - Create quick access links to frequently used resources.
+    - Boost visibility of important tools, sites, or documents in search results.
+    - Customize bookmark meta data including title, URL, description, and audience targeting.
+
+These features help ensure that users find the right information faster, especially when navigating internal terminology or frequently accessed content.
+
+To learn more, see [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search?branch=pr-28653).
+
 ## April 2025
 
 ### Microsoft 365 Copilot network connectivity test
@@ -153,7 +177,7 @@ There are a couple of ways to get the Experience insights dashboard page:
 
     :::image type="content" source="../media/exp-insights-dashboard2.png" alt-text="Screenshot: How to get to the insights dashboard":::
 
-For more information, check out [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
+For more information, see [Microsoft 365 Experience insights dashboard](misc/experience-insights-dashboard.md).
 
 ## December 2022
 
