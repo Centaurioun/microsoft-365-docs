@@ -16,6 +16,8 @@ items:
                   href: pay-as-you-go-setup-copilot.md
                 - name: Microsoft Syntex 
                   href: pay-as-you-go-setup.md
+            - name: Budget pay-as-you-go billing
+              href: pay-as-you-go-budget.md
 
     - name: Pay-as-you-go pricing
       items:
