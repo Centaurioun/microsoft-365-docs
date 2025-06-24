@@ -20,7 +20,7 @@ description: Learn how to set up a billing budget for pay-as-you-go services in 
 > [!NOTE]
 > This feature is currently available only for Microsoft 365 Copilot services. Other services will be added in future releases.
 
-This article explains how to set up a budget for pay-as-you-go billing in Microsoft 365.
+This article explains how to set up a budget for pay-as-you-go billing in Microsoft 365. Budgets are set at the billing policy level, not at the agent, site, or user level. [Learn more about billing policies](/microsoft-365/admin/billing/billing-policies).
 
 ## Prerequisites
 
@@ -52,6 +52,15 @@ Before you begin, ensure you have the following roles:
     b. Under **Budget**, enter the dollar amount you want to be the limit.
 
     c. Under **Reset the budget**, select when you want the budget to reset.
+
+        - Monthly
+        - Quarterly (resets on January 1, April 1, July 1, and October 1)
+        - Yearly (resets on January 1)
+
+    > [!NOTE]
+    > Reset on the first of the quarter refers to January 1, April 1, July 1, and October 1.
+    >
+    > Reset on the first of the year refers to January 1.
 
     d. Under **Send email alerts**, you can add recipients to receive budget notifications and set the budget percentage that will trigger an alert.
 
