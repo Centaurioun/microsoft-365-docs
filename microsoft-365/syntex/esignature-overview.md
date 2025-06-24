@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 05/06/2025
+ms.date: 06/23/2025
 audience: enabler
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -20,7 +20,7 @@ description: Learn about SharePoint eSignature and how to send electronic signat
 # Overview of SharePoint eSignature
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of eSignature by sending up to five requests at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
+> Through December 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of eSignature by sending up to five requests at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 SharePoint eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
 
