@@ -34,7 +34,6 @@ The model supports various document formats, but there are specific limitations 
 - Content must be stored in SharePoint and be in supported formats (.docx, .pdf, .aspx); elements like embedded images or tables aren't supported.
 - Not intended for general productivity or web-wide knowledge queries; it's limited to tenant-specific content and not suitable for tasks like managing meetings or browsing general internet data.
 - Depending on the snapshot time of training data, newer content must be enriched via Search.
-- Response formatting might differ from standard Copilot Declarative Agents due to being on an older platform version (FluxV2 vs FluxV3), though migration to FluxV3 is in progress.
 
 While there's no minimum document count, better results are achieved with larger content sets; at least 20 documents are recommended for training.
 

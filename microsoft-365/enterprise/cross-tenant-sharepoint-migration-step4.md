@@ -43,7 +43,7 @@ To ensure that SharePoint permissions are retained as part of the migration, a m
 
 ## Pre-create users, groups, and Microsoft 365 groups on the target tenant
 
-- Pre-create users and groups as needed in the target tenant’s directory.
+- Pre-create users and groups as needed in the target tenant's directory.
 - All users who are migrating to the target tenant must have new user identities created for them in the target tenant.
 
 >[!Note]
@@ -66,18 +66,21 @@ These commands send a request to the tenant with whom you want to establish trus
 
 1. Sign in to the Exchange Online Management Shell as an Exchange Online Admin or Microsoft 365 Global admin. Enter the password for target tenant when prompted.
 
-```powershell
-Connect-ExchangeOnline –UserPrincipalName <UserPrincipalName>
-```
+   > [!IMPORTANT]
+   > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+   ```powershell
+   Connect-ExchangeOnline –UserPrincipalName <UserPrincipalName>
+   ```
 
 2. Create the appropriate Microsoft 365 groups, where *AccessType* matches the access type of the corresponding Microsoft 365 group on the source tenant.
 
-```powershell
-New-UnifiedGroup -DisplayName <TargetGroupDisplayName> -Alias <TargetGroupAlias> -AccessType <Private|Public> 
-
+   ```powershell
+   New-UnifiedGroup -DisplayName <TargetGroupDisplayName> -Alias <TargetGroupAlias> -AccessType <Private|Public> 
    ```
->[!Important]
->Microsoft 365 Groups connected to SharePoint sites **MUST be pre-created using this method**. Pre-creating Microsoft 365 groups using any other methods will cause SharePoint site migrations to fail.
+
+> [!Important]
+> Microsoft 365 Groups connected to SharePoint sites **MUST be pre-created using this method**. Pre-creating Microsoft 365 groups using any other methods will cause SharePoint site migrations to fail.
 
 > [!WARNING]
 > If the Microsoft 365 Group name contains a period character (.), the migration fails with an **Invalid character** error.

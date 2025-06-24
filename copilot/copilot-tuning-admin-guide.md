@@ -32,7 +32,7 @@ To manage Copilot Tuning governance controls, make sure that you meet the follow
     - Your tenant must have at least 5,000 active Microsoft 365 Copilot add-on licenses.
     - An AI Admin must accept the EAP terms on behalf of the organization.
     > [!NOTE]
-    > If Copilot Tuning isn't available in your tenant, contact Microsoft support or your account team to request EAP provisioning.
+    > If Copilot Tuning isn't available in your tenant, contact your Microsoft Customer Success Account Manager (CSAM) to request EAP provisioning.
 - You must have one of the following roles:
     - Global Administrator
     - AI Administrator (if defined as a custom role in your organization)
@@ -74,7 +74,9 @@ To activate the Copilot Tuning service and scope its availability:
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with your Global Administrator or AI Administrator account.
 2. Go to **Copilot** > **Copilot settings**.
+   :::image type="content" source="media/copilot-tuning-admin-guide/copilot-settings.png" alt-text="Screenshot of Copilot settings in the admin center." lightbox="media/copilot-tuning-admin-guide/copilot-settings.png" border="false":::
 3. Choose **Copilot Tuning**, and choose **Accept** to accept the [EAP terms](https://go.microsoft.com/fwlink/?linkid=2312708).
+    :::image type="content" source="media/copilot-tuning-admin-guide/copilot-tuning-settings.png" alt-text="Screenshot of Copilot Tuning settings in the admin center." lightbox="media/copilot-tuning-admin-guide/copilot-tuning-settings.png" border="false":::
     
     > [!NOTE]
     > The **Copilot Tuning** setting is only available if your tenant meets the criteria described in the [Prerequisites](#prerequisites) section.
@@ -96,6 +98,8 @@ When you add a user to Copilot Tuning, they receive an email with instructions t
 ### Manage tuned task-specific models
 
 You can review and manage the set of models that model makers create and publish via the **Copilot Tuning** control in the admin center.
+
+:::image type="content" source="media/copilot-tuning-admin-guide/manage-models.png" alt-text="Screenshot of Copilot Tuning settings in the admin center with Manage task-specific models selected." lightbox="media/copilot-tuning-admin-guide/manage-models.png" border="false":::
 
 Choose any published model to review the associated security groups and update them as needed.
 
