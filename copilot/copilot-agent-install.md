@@ -4,7 +4,7 @@ f1.keywords:
 ms.author: erikre
 author: ErikRe
 manager: dansimp
-ms.date: 06/18/2025
+ms.date: 06/25/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -43,7 +43,7 @@ Organizations can govern these agents in the Copilot Control System section of t
 
 Administrators can install their own custom-built, Microsoft-built, or partner-built agents to augment Microsoft 365 Copilot. Administrators can install a limited number of agents to the Copilot rail or make them available to users through the [Agent Store in Microsoft 365 Copilot](https://devblogs.microsoft.com/microsoft365dev/introducing-the-agent-store-build-publish-and-discover-agents-in-microsoft-365-copilot/).
 
-Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. Administrators have a full set of lifecycle management tools for these apps. Microsoft offers granular controls that enable administrators to install, block, and remove these agents for some or all of the users in their tenant. 
+Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. Administrators have a full set of lifecycle management tools for these agents. Microsoft offers granular controls that enable administrators to install, block, and remove these agents for some or all of the users in their tenant. 
 
 > [!NOTE]
 > Admins can only remove shared agents and custom LOB agents.
@@ -54,7 +54,7 @@ For more information, see [Manage agents for Microsoft 365 Copilot in the Micros
 
 Users can install agents that are available in Agent Store based on the policies set by their tenant administrators. Users can also install their own custom-built agents. For example, these custom-built agents could be built with Agent Builder, SharePoint or Microsoft Copilot Studio, to augment Microsoft 365 Copilot. These agents are used by individuals, and optionally shareable within the user’s organization.
 
-Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. Administrators have a full set of lifecycle management tools for these apps. Microsoft offers granular controls that enable administrators to install and block agents. Additionally, administrators can remove shared and custom agents for some or all of the users in their tenant.
+Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. Administrators have a full set of lifecycle management tools for these agents. Microsoft offers granular controls that enable administrators to install and block agents. Additionally, administrators can remove shared and custom agents for some or all of the users in their tenant.
 
 ## Related content
 
