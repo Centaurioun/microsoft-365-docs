@@ -74,7 +74,7 @@ To learn more, see [Manage the Virtual appointment meeting template in Teams](/m
 
 With the virtual appointment Graph API, virtual appointment join links can be embedded in any app, with features that include a waiting room and browser join experience for external attendees.
 
-To learn more, see [virtualAppointment: getVirtualAppointmentJoinWebUrl](/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta&tabs=http).
+To learn more, see [virtualAppointment: getVirtualAppointmentJoinWebUrl](/graph/api/virtualappointment-getvirtualappointmentjoinweburl).
 
 ## Related articles
 
