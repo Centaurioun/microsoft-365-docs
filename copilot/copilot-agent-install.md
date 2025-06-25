@@ -19,8 +19,6 @@ description: Learn about deployment and governance methods for agents in Microso
 
 Microsoft 365 Copilot can be extended by installing agents. [Agents](/microsoft-365-copilot/extensibility/agents-overview) provide additional knowledge, skills, and automated workflows to address your unique business needs and enhance workflows within Microsoft 365 Copilot. In addition, Microsoft 365 Copilot can deliver highly skilled expertise on demand.
 
-Two featured agents that are used with Microsoft 365 Copilot are Microsoft's Researcher and Analyst agents. These agents are AI-powered productivity tools that enhance workflows within Microsoft 365 Copilot. Individual users can share and unpin these agents. In addition, these agents, as well as non-Microsoft agents, help you analyze vast amounts of information with secure, compliant access to your work data. 
-
 > [!NOTE]
 > Microsoft deployed the Researcher and Analyst agents to existing users with Microsoft 365 Copilot licenses.
 
@@ -37,7 +35,7 @@ Microsoft 365 Copilot currently provides the following deployment and governance
 
 Microsoft may install a small number of agents and features that augment Microsoft 365 Copilot with highly valuable skills. These agents and features, built by Microsoft, are preinstalled and/or pre-pinned in Microsoft 365 Copilot for all licensed users. Currently, only the Researcher and Analyst agents are deployed this way.
 
-Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. There, administrators can block these agents in their tenant, making them inaccessible to all users. Granular controls allowing assignment of these agents to specific users and groups are therefore grayed-out. Alternately, administrators can [disable or restrict Copilot extensibility](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) for their organization, however this will apply to all agents, not just Microsoft-deployed agents. Individual users can share and unpin these agents as well.
+Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. There, administrators can block these agents in their tenant, making them inaccessible to all users. Granular controls allowing assignment of these agents to specific users and groups are therefore grayed-out. Alternately, administrators can [disable or restrict Copilot extensibility](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) for their organization, however this will apply to non-Microsoft deployed agents, as well as Microsoft-deployed agents. Individual users can share and unpin these agents as well.
 
 ### Admin-installed agents
 
