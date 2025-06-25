@@ -31,7 +31,7 @@ This page lists the latest features and improvements for Microsoft 365 Copilot. 
 <!-- 84447,98006,96078,95296,95230,83646,81354,97565,95267,76606,97885,97810,97309,97034,95597,94574,94070,83213,99889,95904,95903,79335,96243,84996,97832,97496,98196,97305,95679,95290,96368,84987,84440 -->
 ## June 24, 2025
 Updates released between June 10, 2025, and June 24, 2025.
-### Copilot Extensibility
+### Copilot extensibility
 - **Admins can manage Copilot extensibility under Copilot tab in Microsoft 365 admin center** [Windows, Web]
 
   Admins have options to manage Copilot extensibility under Copilot tab including agent management for IT published agents and shared agents.
@@ -59,7 +59,7 @@ Updates released between June 10, 2025, and June 24, 2025.
  <a href="https://devblogs.microsoft.com/microsoft365dev/office-addins-at-build-2025/#modernized-store-for-office-add-ins-and-copilot-agents" target="_blank">Learn more.</a>
 - **Manage custom Copilot agents in Agent Center** [Windows, Web]
 
-  Organize, store, and update your declarative BizChat agents in one place. Agent Center lets developers register in-context actions, fine-tune prompts, and test behavior faster—so IT admins can roll out reliable, task-specific Copilot experiences at scale.
+  Organize, store, and update your declarative Copilot agents in one place. Agent Center lets developers register in-context actions, fine-tune prompts, and test behavior faster—so IT admins can roll out reliable, task-specific Copilot experiences at scale.
  <a href="https://devblogs.microsoft.com/microsoft365dev/introducing-the-agent-store-build-publish-and-discover-agents-in-microsoft-365-copilot/" target="_blank">Learn more.</a>
 - **Microsoft 365 Agents Toolkit uses Kiota as the API plugin generation tool**
 
@@ -2324,7 +2324,7 @@ Updates released between December 18, 2024, and January 7, 2025.
 <!-- 98006,95296,83646,81354,97565,95267,97885,97034,83213,99889,95904,95903,79335,84996,97832,98196,97305,95679,96368 -->
 ## June 24, 2025
 Updates released between June 10, 2025, and June 24, 2025.
-### Copilot Extensibility
+### Copilot extensibility
 - **Admins can manage Copilot extensibility under Copilot tab in Microsoft 365 admin center** [Windows, Web]
 
   Admins have options to manage Copilot extensibility under Copilot tab including agent management for IT published agents and shared agents.
@@ -2342,7 +2342,7 @@ Updates released between June 10, 2025, and June 24, 2025.
  <a href="https://devblogs.microsoft.com/microsoft365dev/office-addins-at-build-2025/#modernized-store-for-office-add-ins-and-copilot-agents" target="_blank">Learn more.</a>
 - **Manage custom Copilot agents in Agent Center** [Windows, Web]
 
-  Organize, store, and update your declarative BizChat agents in one place. Agent Center lets developers register in-context actions, fine-tune prompts, and test behavior faster—so IT admins can roll out reliable, task-specific Copilot experiences at scale.
+  Organize, store, and update your declarative Copilot agents in one place. Agent Center lets developers register in-context actions, fine-tune prompts, and test behavior faster—so IT admins can roll out reliable, task-specific Copilot experiences at scale.
  <a href="https://devblogs.microsoft.com/microsoft365dev/introducing-the-agent-store-build-publish-and-discover-agents-in-microsoft-365-copilot/" target="_blank">Learn more.</a>
 - **Non-citation links remain visible in custom actions** [Windows, Web]
 
@@ -3547,7 +3547,7 @@ Updates released between December 18, 2024, and January 7, 2025.
 <!-- 98006,96078,95296,95230,83646,97565,95267,76606,97885,97810,97309,97034,95904,95903,79335,96243,84996,97832,98196,97305,95679,96368 -->
 ## June 24, 2025
 Updates released between June 10, 2025, and June 24, 2025.
-### Copilot Extensibility
+### Copilot extensibility
 - **Admins can manage Copilot extensibility under Copilot tab in Microsoft 365 admin center** [Windows, Web]
 
   Admins have options to manage Copilot extensibility under Copilot tab including agent management for IT published agents and shared agents.
@@ -3565,7 +3565,7 @@ Updates released between June 10, 2025, and June 24, 2025.
  <a href="https://devblogs.microsoft.com/microsoft365dev/office-addins-at-build-2025/#modernized-store-for-office-add-ins-and-copilot-agents" target="_blank">Learn more.</a>
 - **Manage custom Copilot agents in Agent Center** [Windows, Web]
 
-  Organize, store, and update your declarative BizChat agents in one place. Agent Center lets developers register in-context actions, fine-tune prompts, and test behavior faster—so IT admins can roll out reliable, task-specific Copilot experiences at scale.
+  Organize, store, and update your declarative Copilot agents in one place. Agent Center lets developers register in-context actions, fine-tune prompts, and test behavior faster—so IT admins can roll out reliable, task-specific Copilot experiences at scale.
  <a href="https://devblogs.microsoft.com/microsoft365dev/introducing-the-agent-store-build-publish-and-discover-agents-in-microsoft-365-copilot/" target="_blank">Learn more.</a>
 - **Non-citation links remain visible in custom actions** [Windows, Web]
 
