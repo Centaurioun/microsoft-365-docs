@@ -30,7 +30,7 @@ Before you begin, ensure you meet the following requirements:
 
 - **Permission levels**:
     - Users with contributor access can view and edit budget settings.
-    - Users with reader access can view billing policies, but cannot see spending data or budget details.
+    - Users with reader access can view billing policies, but can't see spending data or budget details.
 
 
 ## Set up a budget
@@ -51,7 +51,7 @@ Before you begin, ensure you meet the following requirements:
 
     b. Under **Budget**, enter the dollar amount for your spending limit.
 
-    c. Under **Reset the budget**, select when you want to reset he budget.
+    c. Under **Reset the budget**, select when you want to reset the budget.
 
     - Monthly (resets on the first day of each month)
     - Quarterly (resets on January 1, April 1, July 1, and October 1)
