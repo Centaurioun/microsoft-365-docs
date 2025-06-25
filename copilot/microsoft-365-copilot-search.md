@@ -30,7 +30,7 @@ Microsoft 365 Copilot Search is an AI-powered universal search experience optimi
 
 ## How Copilot Search works with Microsoft 365 Copilot
 
-Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated **Search** module. This integration makes Copilot Search: 
+Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated **Search** module. This integration makes Copilot Search:
 
 - **Comprehensive**: A universal search experience that allows users to search across all their Microsoft 365 and third-party data sources to find what they need quickly
 - **Fast**: Delivers fast responses at scale across your organizational content
