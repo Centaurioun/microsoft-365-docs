@@ -17,9 +17,9 @@ description: Learn about deployment and governance methods for agents in Microso
 
 # Agent installation in Microsoft 365 Copilot
 
-Microsoft 365 Copilot can be extended by installing agents. [Agents](/microsoft-365-copilot/extensibility/agents-overview) provide additional knowledge, skills, and automated workflows to address your unique business needs.
+Microsoft 365 Copilot can be extended by installing agents. [Agents](/microsoft-365-copilot/extensibility/agents-overview) provide additional knowledge, skills, and automated workflows to address your unique business needs and enhance workflows within Microsoft 365 Copilot. In addition, Microsoft 365 Copilot can deliver highly skilled expertise on demand.
 
-Two featured agents that are used with Microsoft 365 Copilot are Microsoft's Researcher and Analyst agents. These agents are AI-powered productivity tools that enhance workflows within Microsoft 365 Copilot. These agents help you analyze vast amounts of information with secure, compliant access to your work data, and deliver highly skilled expertise on demand.
+Two featured agents that are used with Microsoft 365 Copilot are Microsoft's Researcher and Analyst agents. These agents are AI-powered productivity tools that enhance workflows within Microsoft 365 Copilot. Individual users can share and unpin these agents. In addition, these agents, as well as non-Microsoft agents, help you analyze vast amounts of information with secure, compliant access to your work data. 
 
 > [!NOTE]
 > Microsoft deployed the Researcher and Analyst agents to existing users with Microsoft 365 Copilot licenses.
@@ -54,7 +54,7 @@ For more information, see [Manage agents for Microsoft 365 Copilot in the Micros
 
 Users can install agents that are available in Agent Store based on the policies set by their tenant administrators. Users can also install their own custom-built agents. For example, these custom-built agents could be built with Agent Builder, SharePoint or Microsoft Copilot Studio, to augment Microsoft 365 Copilot. These agents are used by individuals, and optionally shareable within the user’s organization.
 
-Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. Administrators focused on agent management have granular controls to install and/or block agents from the Agent Store catalog for the users in their tenant. Additionally, administrators focused on agents built in Microsoft Copilot Studio have granular controls to help determine who can use that toolset to build and distribute agents within an organization.
+Organizations can govern these agents in the Copilot Control System section of the Microsoft 365 admin center. Administrators have a full set of lifecycle management tools for these apps. Microsoft offers granular controls that enable administrators to install and block agents. Additionally, administrators can remove shared and custom agents for some or all of the users in their tenant.
 
 ## Related content
 
