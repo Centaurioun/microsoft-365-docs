@@ -17,14 +17,16 @@ description: An overview of the Microsoft 365 Copilot search feature.
 
 # Microsoft 365 Copilot Search
 
-Microsoft 365 Copilot Search is an AI-powered universal search experience optimized for your organization. It provides a familiar search experience that helps users quickly find relevant results from your organization and the web.
-
-Copilot Search unlocks semantic understanding of content across Microsoft 365 apps as well as third-party apps that are ingested by Microsoft 365 connectors. In this way, it leverages rich signals in the Microsoft Graph to interpret user context, behavioral signals, and organizational relationships. This gives Copilot Search unique insights into a user's work data, enabling it to return highly personalized answers.
-
-Because it's integrated with Microsoft 365 Copilot, users can find the results they need with search, then seamlessly transition to chat for deeper exploration or follow-up task completion.
+Microsoft 365 Copilot Search is an AI-powered universal search experience optimized for your organization. It provides a familiar search experience that helps users quickly find relevant results from your organization. It offers a simple user experience that helps you find what you need, when you need it in a fast and secure universal search.
 
 > [!NOTE]
 > Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
+
+**Unified search across all applications:** Copilot Search delivers comprehensive insights into your organization's data by interpreting content across Microsoft 365 applications and beyond. With over 100 connectors available, it offers a single source for quick answers from *all* your apps. It understands user context, behavior, and organizational relationships, enabling it to return highly personalized answers to your queries. Learn more about the [Microsoft 365 Copilot connectors gallery](/microsoftsearch/connectors-gallery).
+
+**What to use when:** Because it's integrated with Microsoft 365 Copilot, users can find the results they need with search, then seamlessly transition to chat for deeper exploration or follow-up task completion.
+
+:::image type="content" source="media/copilot-search-home-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search." lightbox="media/copilot-search-home-raw.png":::
 
 ## Access and eligibility
 
@@ -34,7 +36,7 @@ No action is required by admins or users to set up Copilot Search. If a user has
 
 ## How Copilot Search works with Microsoft 365 Copilot
 
-Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated **Search** module. This integration makes Copilot Search:
+Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated **Search** module. This integration makes Copilot Search: 
 
 - **Comprehensive**: A universal search experience that allows users to search across all their Microsoft 365 and third-party data sources to find what they need quickly
 - **Fast**: Delivers fast responses at scale across your organizational content
@@ -45,6 +47,8 @@ Copilot Search is integrated into the Microsoft 365 Copilot app as a dedicated *
 - **Secure**: Offers enterprise-grade security and privacy
 
 This design positions search as the organizing layer for AI, while chat remains the workspace for task execution and deeper interactions. For example, if a user searches for **what's the status of the Q2 report**, Copilot Search may return a summarized answer and offer to continue the conversation in chat for more nuanced exploration or follow-up actions.
+
+:::image type="content" source="media/copilot-search-landing-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search results." lightbox="media/copilot-search-landing-raw.png":::
 
 ## Privacy and security
 

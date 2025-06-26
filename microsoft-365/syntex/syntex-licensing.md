@@ -3,7 +3,7 @@ title: Licensing for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
-ms.date: 01/07/2025
+ms.date: 04/07/2025
 manager: jtremper
 audience: admin
 ms.topic: article
@@ -19,21 +19,19 @@ description: Learn about pay-as-you-go licensing for Microsoft Syntex.
 
 # Licensing for Microsoft Syntex
 
-Microsoft Syntex uses pay-as-you-go licensing for new and renewing customers. With pay-as-you-go, you can use Syntex without any license commitment or upfront purchasing. Any user in your organization can use Syntex services and only pay if and when services are used.
+Microsoft Syntex services use pay-as-you-go licensing for new and renewing customers. With pay-as-you-go, you can use the services without any license commitment or upfront purchasing. Any user in your organization can use the services and only pay if and when services are used.
 
 Pay-as-you-go requires an Azure subscription. Pay-as-you-go services are billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). For information about how to set up pay-as-you-go, see [Configure Microsoft Syntex for pay-as-you-go billing](syntex-azure-billing.md).
 
 Before you configure pay-as-you-go, read the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms).
 
-<!--The features available for each license type are described in this article.  You can use both licenses if you need to.-->
-
 > [!NOTE]
 > Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
 
 > [!NOTE]
-> For Government Community Cloud (GCC) organizations, pay-as-you-go licensing—and the services that require pay-as-you-go licensing—are not yet available. GCC organizations can continue to purchase and use per-user licenses until pay-as-you-go becomes available.
+> For Government Community Cloud (GCC) organizations, pay-as-you-go licensing—and the services that require pay-as-you-go licensing—aren't yet available. GCC organizations can continue to purchase and use per-user licenses until pay-as-you-go becomes available.
 
-## Microsoft Syntex pay-as-you-go
+## Pay-as-you-go services
 
 The following pay-as-you-go services are currently available:
 
@@ -75,13 +73,13 @@ Pay-as-you-go licensing includes access to additional content management feature
 
 ## If you still have active per-user licenses
 
-As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased prior to that date can still be assigned to new users. After existing per-user licenses expire, you'll need to opt in to [pay-as-you-go billing](syntex-azure-billing.md) to continue using Microsoft Syntex services.
+As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased before that date can still be assigned to new users. After existing per-user licenses expire, you'll need to opt in to [pay-as-you-go billing](syntex-azure-billing.md) to continue using Microsoft Syntex services.
 
 Users with active per-user licenses can perform the following tasks:
 
 - Apply an unstructured document processing model to a library. (Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.)
 - Create a prebuilt, structured, or freeform document processing model via the entry point in a library.
-- Upload content to a library where a custom model has been applied.
+- Upload content to a library where a custom model is applied.
 - Run an unstructured document processing model on-demand.
 - Create a modern template with content assembly.
 - Generate a document from a modern template.
