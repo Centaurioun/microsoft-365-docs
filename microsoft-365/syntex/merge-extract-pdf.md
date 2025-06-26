@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: spodeanu
-ms.date: 03/13/2025
+ms.date: 06/25/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 ms.custom: 
@@ -26,7 +26,13 @@ The **Merge** option lets you quickly combine PDF files into a new PDF file stor
 The **Extract** option lets you divide a PDF file into multiple PDF files. You can quickly share individual pages from a larger PDF file into multiple smaller files that let you tailor the information you want to view or share with others.
 
 > [!NOTE]
-> This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
+> This feature is available for users who have a Syntex [per-user](set-up-content-understanding.md) license or a [pay-as-you-go](syntex-azure-billing.md) license, or for users who have SharePoint in their subscription plan.
+
+<!---
+> [!NOTE]
+> This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing. This feature is also available for OneDrive users whose subscription includes SharePoint, and for OneDrive users who have Microsoft 365 Basic, Personal, or Family subscriptions.
+--->
+
 
 ## Merge PDF files
 
