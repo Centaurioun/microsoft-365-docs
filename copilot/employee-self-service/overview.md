@@ -80,3 +80,4 @@ The Employee Self-Service agent consists of three main parts: the agent itself, 
   - Files uploaded as a knowledge source: Up to 512 MB
 - Pages with multiple links that lead to the relevant information aren't included in the generative answers. Consider adding relevant information for each link in a page that has multiple links.
 - Customizations aren’t stored automatically in the preferred solution for exporting and importing to different environments.
+- Agent names have length constraints of 42 characters maximum. Names exceeding this limit cause erroneous rendering.

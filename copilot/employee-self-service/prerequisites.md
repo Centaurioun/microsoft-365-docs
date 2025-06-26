@@ -36,6 +36,18 @@ The ESS Agent is built on top of Microsoft 365 Copilot. Users will therefore nee
 
 *Premium licenses are required for some third-party connectors.
 
+## Set up Copilot Studio capacity
+
+The ESS agent uses agent flows. You therefore need to set up the Copilot Studio capacity. [Learn about Copilot Studio capacity](/microsoft-copilot-studio/requirements-messages-management).
+
+### Capacity planning
+
+The ESS Agent operates on Copilot, requiring Copilot licenses. Users without assigned licenses will be automatically billed on a "Pay-as-you-go" basis.  Please refer to  
+
+If ESS Agent is going to be consumed by users without Copilot licenses, then it requires proactive capacity planning ensuring that the consumption cost is optimized for the usage. 
+
+The following are few sample benchmarks to get an idea of capacity plan for ESS Agent deployment: 
+
 ## Required roles
 
 The ESS Agent includes several different technical components and configuration areas, which require different Microsoft 365 roles for deployment. It's recommended to use the least privileged role possible to perform each necessary activity. For roles with elevated privileges, use just-in-time access.
