@@ -21,8 +21,7 @@ ms.custom:
 - admindeeplinkMAC
 - QuickDraft
 search.appverid: MET150
-ai-usage:
-- ai-assisted
+ai-usage: ai-assisted
 description: "Learn about scheduled subscription changes made through a Microsoft representative and how to view them in the Microsoft 365 admin center."
 ms.date: 07/07/2025
 ---
