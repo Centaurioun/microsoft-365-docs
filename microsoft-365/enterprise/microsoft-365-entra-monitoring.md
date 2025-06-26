@@ -1,8 +1,8 @@
 ---
 title: "Microsoft 365 Entra monitoring"
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: Na-ho-m
+author: Na-ho-m
+manager: dansimp
 ms.date: 05/05/2025
 audience: Admin
 ms.topic: article
