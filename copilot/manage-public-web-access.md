@@ -14,7 +14,7 @@ ms.collection:
 - magic-ai-copilot
 - must-keep
 hideEdit: true
-ms.date: 06/04/2025
+ms.date: 06/26/2025
 ---
 
 # Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat
@@ -84,7 +84,7 @@ Generated search queries are sent to the Bing search service with user and tenan
 - Answers or features like Rich Captions
 - Social features like Auto Suggest, Trending, and Zero Input
 
-The [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) provide the following additional commitments about the generated search queries sent to the Bing search service:
+The [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/EAEAS%23:~:text=Microsoft%2520365%2520Copilot%2520and,technical%2520and%2520organizational%2520measures.#:~:text=any%20other%20methods.-,Microsoft%20365%20Copilot%20and%20Microsoft%20365%20Copilot%20Chat%C2%A0,-Data%20Handling) provide the following additional commitments about the generated search queries sent to the Bing search service:
 
 - Microsoft has no rights to them other than as needed to provide the service.
 - They aren’t used to improve Bing.
