@@ -21,6 +21,15 @@ This article explains how to set spending limits for pay-as-you-go billing—cur
 
 Budgets are set at the billing policy level, not for individual users, agents, or sites. This means any limits or alerts apply to all services and users under that policy.
 
+
+## Prerequisites
+
+- Users with the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator), [AI Administrator](/entra/identity/role-based-access-control/permissions-reference?#ai-administrator), or [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role can access the Microsoft 365 admin center.
+
+- Users with the [Global Reader](/entra/identity/role-based-access-control/permissions-reference#global-reader) role can view billing policies and budgets, but can't see spending data.
+
+
+<!---
 ## Prerequisites
 
 Before you begin, ensure you meet the following requirements:
@@ -31,7 +40,7 @@ Before you begin, ensure you meet the following requirements:
 - **Permission levels**:
     - Users with contributor access can view and edit budget settings.
     - Users with reader access can view billing policies, but can't see spending data or budget details.
-
+--->
 
 ## Set up a budget
 
@@ -59,7 +68,7 @@ Before you begin, ensure you meet the following requirements:
 
     d. Under **Send email alerts** (optional):
 
-    - Add recipients (only [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups) are currently supported).
+    - Add recipients (only [mail-enabled security groups](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) are currently supported).
 
     - Set the budget percentage that triggers alerts.
 
