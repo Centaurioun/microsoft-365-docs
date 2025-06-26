@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Entra monitoring"
-ms.author: Na-ho-m
+ms.author: nahomagize
 author: Na-ho-m
 manager: dansimp
 ms.date: 05/05/2025
