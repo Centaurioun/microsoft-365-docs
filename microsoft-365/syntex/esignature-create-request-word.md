@@ -22,6 +22,17 @@ description: Learn how to use SharePoint eSignature to create and send electroni
 > [!NOTE]
 > This feature is currently rolling out to users on the Microsoft 365 Beta and Current channels. To get access to the feature, your admin must [complete these steps to allow signature requests in Microsoft Word](esignature-setup.md#allow-signature-requests-in-microsoft-word).
 
+SharePoint’s native eSignature service is now integrated with Microsoft Word. This new capability allows you to request electronic signatures directly from Word documents, without the need to manually create PDFs.
+By bringing eSignatures into the flow of Word, you can create eSignature templates, accelerate document approvals, eliminate physical signing steps, and maintain compliance and security within the Microsoft 365 environment.
+
+## Key features
+
+- Seamless Word integration: You can insert signature fields into Word documents and request signatures without leaving the familiar Word interface. The eSignature functionality is accessed from the Word Insert ribbon and eliminates toggling between applications or converting files to PDFs before sending for signature.
+- Automatic PDF creation & storage: When you send a signature request from Word, recipients will sign an automatically generated PDF copy of the Word document. The signed PDF is saved in the same SharePoint location as the original Word file. Your document never leaves the Microsoft 365 trust boundary during this process, ensuring end-to-end security and compliance.
+- Word documents as eSignature templates: You can reuse your Word files as eSignature templates, streamlining repetitive signing processes.
+- Integrated audit trail and notifications: SharePoint eSignature provides built-in tracking. Both senders and signers get email notifications throughout the signing process, and you can view the activity history (audit trail) in the signed PDF to verify when and by whom it was signed.
+- Security and compliance controls: Administrators have control over how eSignature for Word is used in the organization – it can be enabled for specific users via an Office group policy and even limited to certain SharePoint sites. And SharePoint eSignature enables logging of eSignature activities in the Purview Audit log.
+
 When you request electronic signatures from Word, the recipients sign a PDF copy of the Word document.
 
 - Recipients don't access the source Word document during the signing process.
