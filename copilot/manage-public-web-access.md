@@ -84,7 +84,7 @@ Generated search queries are sent to the Bing search service with user and tenan
 - Answers or features like Rich Captions
 - Social features like Auto Suggest, Trending, and Zero Input
 
-The "Microsoft 365 Copilot and Microsoft 365 Copilot Chat" section of the [Product Terms](https://aka.ms/product-terms-copilot) provides the following additional commitments about the generated search queries sent to the Bing search service:
+The "Microsoft 365 Copilot and Microsoft 365 Copilot Chat" section of the [Product Terms](https://aka.ms/copilot/web-query-terms) provides the following additional commitments about the generated search queries sent to the Bing search service:
 
 - Microsoft has no rights to them other than as needed to provide the service.
 - They aren’t used to improve Bing.

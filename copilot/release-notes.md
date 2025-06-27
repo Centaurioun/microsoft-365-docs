@@ -160,7 +160,7 @@ Updates released between June 10, 2025, and June 24, 2025.
 - **Reference a PDF file when creating a presentation with Microsoft 365 Copilot** [Mac, Windows, Web]
 
   You can now reference a PDF file when you create a presentation with Copilot within the PowerPoint application.
- <a href="/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
+ <a href="https://support.microsoft.com/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
 ### Teams
 - **Copilot generated summaries for call transfers on Teams phone devices** [Android]
 
@@ -2404,7 +2404,7 @@ Updates released between June 10, 2025, and June 24, 2025.
 - **Reference a PDF file when creating a presentation with Microsoft 365 Copilot** [Mac, Windows, Web]
 
   You can now reference a PDF file when you create a presentation with Copilot within the PowerPoint application.
- <a href="/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
+ <a href="https://support.microsoft.com/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
 
 
 <!-- 97166,95275,99896,99890,99009,97921,97372,97288,96951,81005,80339,77194,72079 -->
@@ -3642,7 +3642,7 @@ Updates released between June 10, 2025, and June 24, 2025.
 - **Reference a PDF file when creating a presentation with Microsoft 365 Copilot** [Mac, Windows, Web]
 
   You can now reference a PDF file when you create a presentation with Copilot within the PowerPoint application.
- <a href="/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
+ <a href="https://support.microsoft.com/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
 
 
 <!-- 83163,93511,99006,75354,97166,95275,99009,97921,97603,97372,97288,96951,96241,96065,72079,97492 -->
@@ -6158,7 +6158,7 @@ Updates released between June 10, 2025, and June 24, 2025.
 - **Reference a PDF file when creating a presentation with Microsoft 365 Copilot** [Mac, Windows, Web]
 
   You can now reference a PDF file when you create a presentation with Copilot within the PowerPoint application.
- <a href="/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
+ <a href="https://support.microsoft.com/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
 
 <!-- 97166,97372,97288,96951,81005,77194,72079,80341 -->
 ## June 10, 2025
