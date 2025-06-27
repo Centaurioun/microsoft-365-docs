@@ -151,38 +151,38 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/solutions/manage-devices-with-intune-app-protection",
-      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-app-protection.md",
+      "source_path": "microsoft-365/solutions/manage-devices-with-intune-app-protection.md",
+      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-app-protection",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/solutions/manage-devices-with-intune-enroll",
-      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-enroll.md",
+      "source_path": "microsoft-365/solutions/manage-devices-with-intune-enroll.md",
+      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-enroll",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/solutions/manage-devices-with-intune-compliance-policies",
-      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-compliance-policies.md",
+      "source_path": "microsoft-365/solutions/manage-devices-with-intune-compliance-policies.md",
+      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-compliance-policies",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/solutions/manage-devices-with-intune-require-compliance",
-      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-require-compliance.md",
+      "source_path": "microsoft-365/solutions/manage-devices-with-intune-require-compliance.md",
+      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-require-compliance",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/solutions/manage-devices-with-intune-configuration-profiles",
-      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-configuration-profiles.md",
+      "source_path": "microsoft-365/solutions/manage-devices-with-intune-configuration-profiles.md",
+      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-configuration-profiles",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/solutions/manage-devices-with-intune-monitor-risk",
-      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-monitor-risk.md",
+      "source_path": "microsoft-365/solutions/manage-devices-with-intune-monitor-risk.md",
+      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-monitor-risk",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/solutions/manage-devices-with-intune-dlp-mip",
-      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-dlp-mip.md",
+      "source_path": "microsoft-365/solutions/manage-devices-with-intune-dlp-mip.md",
+      "redirect_url": "/security/zero-trust/microsoft-365/solutions/manage-devices-with-intune-dlp-mip",
       "redirect_document_id": false
     }
   ]
