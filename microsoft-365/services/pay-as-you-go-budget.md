@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ivchenya
-ms.date: 06/26/2025
+ms.date: 06/27/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -87,7 +87,7 @@ Before you begin, ensure you meet the following requirements:
 
         - If selected, 100% is enabled by default.
 
-        - You can add up to four additional thresholds (0–99%).
+        - You can add up to four additional thresholds (1–99%).
 
     > [!NOTE]
     > Email alerts can be delayed by up to 24 hours. Alerts are currently sent from Azure but will transition to the Microsoft 365 admin center in a future release.
