@@ -18,8 +18,8 @@ description: "Step 6 of the SharePoint site Cross-tenant migration feature"
 ---
 # Step 6: Start a SharePoint site cross-tenant migration (preview)
 
->[!Note]
->Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
+> [!NOTE]
+> Cross-Tenant SharePoint migration is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Support for private-preview customers will be handled via email. Cross-Tenant SharePoint migration is covered by the preview terms of the [Microsoft Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
 This is Step 6 in a solution designed to complete a Cross-tenant SharePoint migration. To learn more, see [Cross-tenant SharePoint migration overview](cross-tenant-SharePoint-migration.md).
 
@@ -52,6 +52,9 @@ Now you're ready to start your SharePoint migration. Before starting any cross-t
    |SourceSiteUrl|Full URL of the SharePoint Site of the Source tenant, for example: `https://sourcetenant.sharepoint.com/sites/sitename`.|
    |TargetSiteUrl |Full URL of the SharePoint Site of the Target tenant, for example: `https://targettenant.sharepoint.com/sites/newsitename`.|
    |TargetCrossTenantHostUrl|The Cross-tenant host URL of the target tenant. The target tenant Admin can determine the TargetCrossTenantHostUrl by running *Get-SPOCrossTenantHostUrl* on their tenant.|
+   
+   > [!IMPORTANT]
+   > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ### Start a SharePoint Microsoft 365 Group connected site cross-tenant migration
 
@@ -151,7 +154,7 @@ Example:
 Get-SPOUserAndContentMoveState -PartnerCrossTenantHostURL https://m365x946316-my.sharepoint.com -SourceUserPrincipalName DiegoS@M365x016651.OnMicrosoft.com
 ```
 
-To get the status of the move based on a particular user’s UPN but with more information, use the *-Verbose* parameter.
+To get the status of the move based on a particular user's UPN but with more information, use the *-Verbose* parameter.
 
 Example:
 

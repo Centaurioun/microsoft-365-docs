@@ -30,6 +30,9 @@ description: "Use the Centralized Deployment PowerShell cmdlets to help you depl
 
 As a Microsoft 365 global admin, you can deploy Office Add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md). In addition to deploying Office Add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell.
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 Open a regular Windows PowerShell window and run the following cmdlet to install the module:
 
 ```powershell

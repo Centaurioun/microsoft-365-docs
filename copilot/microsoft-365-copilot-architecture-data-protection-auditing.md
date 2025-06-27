@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 05/12/2025
+ms.date: 05/27/2025
 audience: Admin
 ms.reviewer: mandia, bcarter, ruihu, cabailey
 ms.topic: overview
@@ -65,7 +65,10 @@ Let's take a look:
 
 - Protection extends to data stored outside of your Microsoft 365 tenant when the file is opened in an Office app.
 
-  For example, there's a file with a sensitivity label saved outside of your Microsoft 365 tenant, like on a user's personal device, a network share, or in cloud storage. When this file is opened in an Office app, the protection settings go with the file.
+  For example, there's a file using a sensitivity label you and your admin team created. An end user saves this file outside of your Microsoft 365 tenant, like on their personal device, a network share, or in cloud storage. When this file is opened in an Office app, the protection settings go with the file.
+
+  > [!NOTE]
+  > User-defined sensitivity label permissions can block Copilot from extracting and interacting with the file content. For example, Copilot agents can't read files that have user-defined sensitivity label permissions.
 
 To learn more, see:
 

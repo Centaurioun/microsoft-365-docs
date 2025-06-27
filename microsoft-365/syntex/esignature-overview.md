@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 05/06/2025
+ms.date: 06/23/2025
 audience: enabler
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -20,7 +20,7 @@ description: Learn about SharePoint eSignature and how to send electronic signat
 # Overview of SharePoint eSignature
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of eSignature by sending up to five requests at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
+> Through December 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of eSignature by sending up to five requests at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 SharePoint eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
 
@@ -69,11 +69,11 @@ The providers facilitate the signing process and send out all relevant notificat
 
 ## Current release notes
 
-- The feature to use SharePoint eSignature in Word will begin rolling out to users on the Microsoft 365 Beta and Current channels at the end of May. Until then, SharePoint eSignature is available for only PDF documents.
+- The feature to use SharePoint eSignature in Word will begin rolling out to users on the Microsoft 365 Beta and Current channels in June. Until then, SharePoint eSignature is available for only PDF documents.
 
 - Tracking of SharePoint eSignature requests through the Approvals app in Microsoft Teams is now available.
 
-- Support for Adobe Acrobat Sign and Docusign is now available worldwide. In the future, there will be potential integration with other electronic signature providers.
+- Support for Adobe Acrobat Sign and DocuSign is now available worldwide. In the future, there will be potential integration with other electronic signature providers.
 
 <br>
 
