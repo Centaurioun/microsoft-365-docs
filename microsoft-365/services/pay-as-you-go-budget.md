@@ -95,7 +95,7 @@ Before you begin, ensure you meet the following requirements:
 7. Select **Save** to apply your budget settings.
 
     > [!IMPORTANT]
-    > The only way to stop billing is to [disconnect the payment method](pay-as-you-go-setup-copilot#disconnect-pay-as-you-go-billing). Reaching 100% of your budget doesn't stop the service or billing.
+    > The only way to stop billing is to [disconnect the payment method](pay-as-you-go-setup-copilot.md#disconnect-pay-as-you-go-billing). Reaching 100% of your budget doesn't stop the service or billing.
 
 
 
