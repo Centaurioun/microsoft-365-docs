@@ -55,7 +55,7 @@ To get the most benefit for your healthcare organization, first choose which sce
 
 Facilitate and centralize collaboration among care teams and across your entire healthcare organization.
 
-- [Provide seamless virtual visits](#provide-seamless-virtual-visits)
+- [Provide seamless visits](#provide-seamless-visits)
 - [Connect and engage the healthcare workforce](#connect-and-engage-the-healthcare-workforce)
 - [Efficiently manage and motivate care teams](#efficiently-manage-and-motivate-care-teams)
 
@@ -86,7 +86,7 @@ Use the following poster to start envisioning what your organization can do with
 
 Use the complete meetings platform in Teams to schedule, manage, and conduct appointments with patients and other providers.
 
-- If your organization already uses an EHR system, you can integrate Teams for a more seamless experience. Teams EHR connector makes it easy for clinicians to launch an appointment with a patient or a consultation with another provider in Teams directly from the EHR system. To learn more, see [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
+- If your organization already uses an EHR system, you can integrate Teams for a more seamless experience. Teams EHR connector makes it easy for clinicians to launch an appointment with a patient or a consultation with another provider in Teams directly from the EHR system. To learn more, see [Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
 - If you aren't using a supported EHR system, you can use Bookings. To learn more, see [Appointments with Teams](virtual-appointments.md).
 
 :::image type="content" source="media/va-healthcare-bookings-expand.png" alt-text="Diagram showing Appointments options in Teams through integration with an EHR system and through Bookings." lightbox="media/va-healthcare-bookings-small.png":::
