@@ -27,6 +27,9 @@ ms.date: 10/26/2023
 
 # Appointments with Microsoft Teams
 
+> [!NOTE]
+> The Virtual Appointments app is no longer available. Use Bookings to create, schedule, and manage appointments.
+
 With Bookings in Microsoft Teams, you have a complete platform to schedule, manage, and conduct business-to-customer engagements. For example:
 
 - Financial advisors, claims adjusters, and other financial professionals can meet with clients remotely.
