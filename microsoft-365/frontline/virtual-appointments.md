@@ -49,7 +49,7 @@ Use Bookings for all your appointment needs. The app enables a seamless end-to-e
 
 You can schedule, view, and manage appointments, get real-time status updates in a queue view, send appointment reminders, configure calendar, staff, and booking page settings.
 
-In Bookings, you can use basic capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the Bookings calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Bookings and virtual appointments capabilities that your organization can use to manage and customize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, custom waiting rooms through meeting themes, and usage reports for admins.
+In Bookings, you can use basic capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the Bookings calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Bookings and virtual appointments capabilities that your organization can use to manage and customize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, and usage reports for admins.
 
 To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
 
