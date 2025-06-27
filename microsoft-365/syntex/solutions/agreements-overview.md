@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 04/02/2025
+ms.date: 06/20/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -58,10 +58,13 @@ With SharePoint Agreements, you can:
 |[Update a template](agreements-update-template.md)    |Find and edit existing templates, and publish updates to a template.         |
 |[Manage sections in a template](agreements-manage-sections.md)    |Publish a new section, insert a section into a template, edit a section, and configure section settings.         |
 |[Create an agreement](agreements-create-agreement.md)    |Create an agreement from a template in Microsoft Teams and in Microsoft Word.         |
-|[Analyze section revisions](agreements-analyze-sections.md)    |Use the **Analyze section revisions** feature to detect changes in embedded sections, summarize the changes, and offer suggestions.       |
+|[Download an agreement for redlining and upload it for AI-powered analysis](agreements-offline-negotiation.md)    |Download a draft agreement for offline negotiation and upload the redlined version to analyze proposed changes using AI.      |
+|[Analyze section revisions](agreements-analyze-sections.md)    |Detect changes in embedded sections, summarize the changes, and offer suggestions.       |
 |[Manage attachments](agreements-attachments.md)    |Manage supporting documents related to an agreement.         |
+|[Manage amendments](agreements-amendments.md)    |Learn how to add an amendment to an agreement.         |
 |[View reports](agreements-reports.md)    |Learn about the reports that are available to monitor all agreements, their statuses, and other essential metrics.         |
 |[Receive approval notifications](agreements-notifications.md)    |Learn about approval notifications in the Approvals app and in email.         |
+|[Responsible AI FAQs](agreements-responsible-ai.md)    |Learn more about the AI features in the SharePoint Agreements app.        |
 
 > [!NOTE]
 > SharePoint Agreements is not yet available for Government Community Cloud (GCC) organizations. However, it is planned and will be available in the future.

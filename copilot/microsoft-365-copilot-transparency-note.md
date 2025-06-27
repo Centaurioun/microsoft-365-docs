@@ -3,18 +3,18 @@ title: "Transparency Note for Microsoft 365 Copilot"
 description: "Transparency Note for Microsoft 365 Copilot"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dansimp
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - privacy-microsoft365
 - privacy-copilot
 - m365copilot
 - magic-ai-copilot
 - must-keep
 hideEdit: true
-ms.date: 02/06/2025
+ms.date: 05/29/2025
 ---
 
 # Transparency Note for Microsoft 365 Copilot
@@ -70,10 +70,14 @@ For additional, detailed information about the LLMs provided to Microsoft by Ope
 |Microsoft 365 Copilot in Whiteboard|Microsoft 365 Copilot in Whiteboard helps kickstart the ideation process to generate, categorize, and summarize ideas. <br/><br/> For more information, see [Frequently Asked Questions about Copilot in Whiteboard](https://support.microsoft.com/topic/cbe05878-d68d-4d9d-83c1-5b47d6b76792).  |
 |Microsoft 365 Copilot in OneNote|Microsoft 365 Copilot in OneNote enables users to draft plans, generate ideas, create lists, and organize information to help them find what they need in the OneNote app.<br/><br/> For more information, see [Frequently asked questions about Copilot in OneNote](https://support.microsoft.com/office/2d9136e0-132a-4d4c-ab0e-39cf3ed914cc).  |
 |Microsoft 365 Copilot Chat|Microsoft 365 Copilot Chat (previously named Business Chat) combines the power of Large Language Models with the Internet, work content and context, and other apps, to help users draft content, catch up on what’s missed, and get answers to questions via prompts.  |
+|Microsoft 365 Copilot in SharePoint rich text editor|Microsoft 365 Copilot in Microsoft SharePoint rich text editor simplifies content creation on SharePoint pages and posts. With Copilot, you can rewrite text, adjust the tone, condense information, and elaborate ideas. For more information, see [Frequently asked questions about Copilot in SharePoint](https://support.microsoft.com/office/eb1b7668-3d98-4a93-98ef-f0c6dfc694f0#faq-copilot-rte).|
+|Microsoft 365 Copilot in OneDrive|Microsoft 365 Copilot in OneDrive is an innovative AI-powered assistant designed to help you interact with your documents by extracting information, comparing the key differences, summarizing files and generating insights. For more information, see [Frequently asked questions about Copilot in OneDrive](https://support.microsoft.com/office/1bd55d10-7c46-417c-ab3d-e9c7be346947). |
+|Microsoft 365 Copilot glance cards|Glance cards offer a quick preview of work entities, such as documents, to help assess relevance or recall. They're accessed by hovering over files in the Search tab of the [Microsoft 365 Copilot app](https://m365.cloud.microsoft/).|
 |Intelligent Search|Intelligent Search enables search in Dataverse applications such as Dynamics 365 Sales, Service, and Finance & Operations using natural language.|
 |Power Platform Connectors|Power Platform Connectors allow customers to access real time data from a collection of business and personal productivity applications in the Microsoft 365 Copilot experience.|
 |Microsoft Graph Connectors|Microsoft Graph Connectors enable connections to external data sources, including up to 500 items per Microsoft 365 Copilot license. |
 |Microsoft Purview|Microsoft Purview is a solution that helps organizations manage and protect their data. It provides a unified platform for data governance, information protection, risk management, and compliance. Customers can extend Microsoft Purview capabilities provided by customers’ Microsoft subscriptions (for example, Microsoft 365 E3 or E5 subscriptions) to Microsoft 365 Copilot data and interactions.|
+| Microsoft 365 Copilot Tuning | Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) by using their own tenant data. These models can be used to perform domain-specific tasks based on the organization's unique knowledge.<br/><br/>For more information, see [Responsible AI FAQ for Microsoft 365 Copilot Tuning](copilot-tuning-responsible-ai-faq.md) |
 
 ### System Behavior
 
@@ -181,7 +185,7 @@ In addition to model-level red team testing, a multidisciplinary team of experts
 
 Red team testing can surface instances of specific risks, but in production users will have millions of different kinds of interactions with Microsoft 365 Copilot. Moreover, interactions are contextual and often multi-turn, and identifying harmful content within an interaction is a complex task. To better understand and address the potential for risks for our generative AI services, including Microsoft 365 Copilot experiences, we developed responsible AI evaluations specific to those new AI experiences for measuring potential risks like jailbreaks, harmful content, and ungrounded content.
 
-As an illustrative example, the updated partially automated measurement pipeline for harmful content includes two major innovations: conversation simulation and automated, human-verified conversation annotation. First, responsible AI experts built templates to capture the structure and content of conversations that could result in different types of harmful content. These templates were then given to a conversational agent, which interacted as a hypothetical user with Microsoft 365 Copilot, generating simulated conversations. To identify whether these simulated conversations contained harmful content, we took guidelines that are typically used by expert linguists to label data and modified them for use by LLMs to label conversations at scale, refining the guidelines until there was significant agreement between model-labeled conversations and human-labeled conversations. Finally, we used the model-labeled conversations to understand the effectiveness of Microsoft 365 Copilot at mitigating harmful content.  
+As an illustrative example, the updated partially automated measurement pipeline for harmful content includes two major innovations: conversation simulation and automated, human-verified conversation annotation. First, responsible AI experts built templates to capture the structure and content of conversations that could result in different types of harmful content. These templates were then given to a conversational agent, which interacted as a hypothetical user with Microsoft 365 Copilot, generating simulated conversations. To identify whether these simulated conversations contained harmful content, we took guidelines that are typically used by expert linguists to label data and modified them for use by LLMs to label conversations at scale, refining the guidelines until there was significant agreement between model-labeled conversations and human-labeled conversations. Finally, we used the model-labeled conversations to understand the effectiveness of Microsoft 365 Copilot at mitigating harmful content.
 
 Our measurement pipelines enable us to rapidly perform measurement for potential risks at scale. As we identify new issues through the preview period and ongoing red team testing, we continue to expand and improve the measurement sets to assess additional risks.
 
@@ -197,7 +201,7 @@ As we identified potential risks and misuse through processes like red team test
 
 - **Prompt enrichment.** In some cases, a user's prompt may be ambiguous. When this happens, Microsoft 365 Copilot may use the LLM to help build out more details in the prompt to help ensure users get the response they're seeking. Such prompt enrichment doesn't rely on any knowledge of the user or their prior searches, but instead on the LLM.
 
-- **User-centered design and user experience interventions.** User-centered design and user experiences are an essential aspect of Microsoft’s approach to responsible AI. The goal is to root product design in the needs and expectations of users. As users interact with Microsoft 365 Copilot for the first time, we offer various touchpoints designed to help them understand the capabilities of the system, disclose to them that Microsoft 365 Copilot is powered by AI, and communicate limitations.  
+- **User-centered design and user experience interventions.** User-centered design and user experiences are an essential aspect of Microsoft’s approach to responsible AI. The goal is to root product design in the needs and expectations of users. As users interact with Microsoft 365 Copilot for the first time, we offer various touchpoints designed to help them understand the capabilities of the system, disclose to them that Microsoft 365 Copilot is powered by AI, and communicate limitations.
 
 - **AI disclosure.** Microsoft 365 Copilot provides several touchpoints for meaningful AI disclosure where users are notified that they're interacting with an AI system as well as opportunities to learn more about Microsoft 365 Copilot. For example, when using Microsoft 365 Copilot in the Word app, AI-generated content is given alongside notice that AI-generated content may contain errors. Empowering users with this knowledge can help them avoid over-relying on AI-generated outputs and learn about the system’s strengths and limitations.
 
@@ -213,7 +217,7 @@ Our approach to mapping, measuring and managing risks will continue to evolve as
 
 Microsoft provides tools like the Microsoft Copilot Dashboard for Microsoft 365 customers and reports in the Microsoft 365 admin center. These tools are designed to help organizations measure usage, adoption, and the impact of Microsoft 365 Copilot. For example:
 
-- **Microsoft 365 Copilot usage report** enables administrators to view a summary of how users’ adoption, retention, and engagement are with Microsoft 365 Copilot, and the activity of every user in an organization
+- **Microsoft 365 Copilot usage report** enables administrators to view a summary of how users’ adoption, retention, and engagement are with Microsoft 365 Copilot. For more information, see [Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
 
 - **Adoption Score** offers administrators insights into how their organization works with Microsoft 365 Copilot. It provides a score on a 100-point scale, a dashboard view of adoption data & trends, and a tool for creating user surveys to gather feedback.
 

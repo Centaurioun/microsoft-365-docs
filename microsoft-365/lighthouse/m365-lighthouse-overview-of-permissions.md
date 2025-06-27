@@ -96,7 +96,6 @@ The following table describes the actions that each Lighthouse RBAC role can per
 |  | View threat management data | | | | | | Yes |
 |  | View device health data | | | | | | Yes |
 |  | View Windows 365 data | | | | | | Yes |
-|  | View Windows event logs | | | | | | Yes |
 | **Apps** | View app performance and app management data | | | | | | Yes |
 | **Quarantined messages** | View and manage quarantined messages | | | | | | Yes | 
 | **Baselines** | View baselines (default, custom) and task details |  | &check; |  &check; | &check; | &check; | No |
