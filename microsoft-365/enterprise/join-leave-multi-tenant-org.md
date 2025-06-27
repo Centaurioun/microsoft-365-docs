@@ -22,6 +22,9 @@ To join a multitenant organization, a global administrator in the owner organiza
 
 Once you've joined, you can leave a multitenant organization at any time.
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 <a name='related-settings-in-azure-ad'></a>
 
 ## Related settings in Microsoft Entra ID

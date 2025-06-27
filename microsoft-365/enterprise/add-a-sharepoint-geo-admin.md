@@ -1,7 +1,7 @@
 ---
 title: "Add or remove a geo administrator"
 ms.reviewer: anfra
-ms.date: 09/27/2024
+ms.date: 06/19/2025
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -28,6 +28,9 @@ You can configure separate administrators for each _Geography_ location that you
 Some services - such as the term store - are administered from the _Primary Provisioned Geography_ location and replicated to _Satellite Geography_ locations. The _Geography_ admin for the _Primary Provisioned Geography_ location has access to these, whereas _Geography_ admins for _Satellite Geography_ locations don't.
 
 Global administrators and SharePoint administrators continue to have access to settings in the _Primary Provisioned Geography_ location and all _Satellite Geography_ locations.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ## Configuring _Geography_ administrators
 

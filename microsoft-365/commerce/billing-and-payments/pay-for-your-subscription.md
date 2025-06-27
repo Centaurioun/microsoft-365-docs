@@ -30,7 +30,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 06/15/2025
+ms.date: 06/17/2025
 ---
 
 # Payment options for Microsoft business subscriptions
@@ -55,9 +55,18 @@ You can manage payment methods whenever you need to. To learn how to add, change
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
-## Paying with a credit card or debit card
+## Paying with a credit card, debit card, or billing profile
 
-If you have an MOSA billing account type, you can pay for your subscription with a credit card or debit card. By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term. Microsoft might use information provided by the issuing bank or payment network for your payment method to ensure connected payment method information remains current.
+If you have an MOSA billing account type, you can pay for your subscription with a credit card or debit card. If you have an MCA billing account type, you can use a credit card or debit card to back the billing profile that pays for your subscriptions. We use the associated billing profile to pay for all subscriptions that use that billing profile.
+
+> [!NOTE]
+> Prepaid cards like stored value cards, Visa gift cards, or MasterCard gift cards, aren't accepted as valid payment instruments.
+
+By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions and billing profiles. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the payment method expires or the subscription is disabled. 
+
+If recurring billing is turned off for a subscription that is paid for directly by a credit card or debit card, we continue to charge the payment method on file until the end of the subscription term. Microsoft might use information provided by the issuing bank or payment network for your payment method to ensure connected payment method information remains current.
+
+If recurring billing is turned off for a subscription that is paid for by a billing profile, you can use the **Pay now** button on the invoice summary in the admin center to pay for it every billing period, regardless of what payment method is linked with the billing profile.
 
 ## Paying by wire transfer
 
@@ -79,12 +88,6 @@ If you have an MCA billing account type, and you have a billing profile that's p
 
 > [!NOTE]
 > It can take up to 10 business days to process a wire transfer payment.
-
-## Paying with a billing profile
-
-If you have an MCA billing account type, you can use a credit card or debit card to back the billing profile that pays for your subscriptions. We use the associated billing profile to pay for all subscriptions that use that billing profile.
-
-By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. If recurring billing is turned off for a subscription that is paid for by a billing profile, you can use the **Pay now** button on the invoice summary in the admin center to pay for it every billing period, regardless of what payment method is linked with the billing profile.
 
 ## Paying by Boleto Bancario in Brazil
 
