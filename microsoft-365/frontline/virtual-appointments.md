@@ -1,5 +1,5 @@
 ---
-title: Virtual Appointments with Microsoft Teams
+title: Appointments with Microsoft Teams
 author: lana-chin
 ms.author: jtremper
 manager: jtremper
@@ -25,9 +25,9 @@ appliesto:
 ms.date: 10/26/2023
 ---
 
-# Virtual Appointments with Microsoft Teams
+# Appointments with Microsoft Teams
 
-With virtual appointments from the Bookings app in Microsoft Teams, you have a complete meeting platform to schedule, manage, and conduct business-to-customer engagements. For example:
+With Bookings in Microsoft Teams, you have a complete platform to schedule, manage, and conduct business-to-customer engagements. For example:
 
 - Financial advisors, claims adjusters, and other financial professionals can meet with clients remotely.
 - Sales associates, product experts, and design consultants can conduct virtual fittings and consultations.
@@ -36,20 +36,20 @@ With virtual appointments from the Bookings app in Microsoft Teams, you have a c
 
 > [!VIDEO https://www.youtube.com/embed/-tBAeWXutoM?si=a_T0UEE8EuIZov4k]
 
-This article gives you an overview of the capabilities available in Teams for scheduling and managing virtual appointments.
+This article gives you an overview of the capabilities available in Teams for scheduling and managing appointments.
 
-- [The Bookings app](#the-bookings-app), for every organization
+- [Bookings](#bookings), for every organization
 - [The Teams Electronic Health Record (EHR) connector](#teams-electronic-health-record-ehr-connector), for healthcare organizations who use an EHR system
 - [Virtual appointment meeting template](#virtual-appointment-meeting-template), for every organization
 - [Virtual Appointment Graph API](#virtual-appointment-graph-api), for developers in your organization
 
-## The Bookings app
+## Bookings
 
-Use the Bookings app for all your virtual appointment needs. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating schedules, analytics, and management options, all in one place.
+Use Bookings for all your appointment needs. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating schedules, analytics, and management options, all in one place.
 
-You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, configure calendar, staff, and booking page settings.
+You can schedule, view, and manage appointments, get real-time status updates in a queue view, send appointment reminders, configure calendar, staff, and booking page settings.
 
-In the Bookings app, you can use basic capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the Bookings calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Bookings and virtual appointments capabilities that your organization can use to manage and customize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, custom waiting rooms through meeting themes, and usage reports for admins.
+In Bookings, you can use basic capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the Bookings calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Bookings and virtual appointments capabilities that your organization can use to manage and customize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, custom waiting rooms through meeting themes, and usage reports for admins.
 
 To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
 
