@@ -3,13 +3,12 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
+title: Manage people data and related experinces from the microsoft 365 admin center
+description: The People settings section in the Microsoft 365 admin center is a unified single location for IT admins to manage all people-related settings in their organization.
 author:      Sameergupta-2019 # GitHub alias
 ms.author:   samegupt # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
+ms.service: microsoft-365-admin
+ms.topic: overview
 ms.date:     06/29/2025
 ---
 
