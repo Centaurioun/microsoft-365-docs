@@ -42,5 +42,4 @@ Once assigned, that user can navigate to __Settings > Org settings > People set
 
 __Release and future updates__
 
-The People settings section is part of an ongoing effort to improve administrative control over Microsoft 365's people-centric features. Initially (in the first release), it includes the settings for <link to support article of this feature> __profile card enrichment__. Looking forward, Microsoft plans to expand this section to include other people-centric experiences related settings as well.
-
+The People settings section is part of an ongoing effort to improve administrative control over Microsoft 365's people-centric features. Initially (in the first release), it includes the settings for __profile card enrichment__ (add link). Looking forward, Microsoft plans to expand this section to include other people-centric experiences and data management related settings as well.
