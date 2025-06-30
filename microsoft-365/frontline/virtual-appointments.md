@@ -32,7 +32,7 @@ ms.date: 10/26/2023
 >
 > To schedule and manage appointments, your users can use Microsoft Bookings. As part of Microsoft 365, Microsoft Bookings is an online scheduling tool that enables users to create customizable booking pages where customers, clients, and colleagues can easily schedule appointments.
 >
-> - For advanced scheduling features in Microsoft Bookings, like SMS notifications and the queue for scheduled appointments, users also need a [Teams Premium license](/microsoftteams/enhanced-teams-experience/enhanced-teams-experience).
+> - For advanced scheduling features in Microsoft Bookings, like SMS notifications and the queue for scheduled appointments, users also need a [Teams Premium license](/microsoftteams/enhanced-teams-experience).
 >
 > For existing Virtual Appointment app users, we recommend using Microsoft Bookings, licensed through a Microsoft 365 subscription plan, together with a Teams Premium license for a more comprehensive solution.
 >
