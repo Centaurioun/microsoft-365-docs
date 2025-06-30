@@ -39,7 +39,7 @@ The file upload control is available only in [Cloud Policy service for Microsoft
  
 :::image type="content" source="media/copilot-file-upload-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot file upload control." lightbox="media/copilot-file-upload-raw.png":::
  
-If you don't configure the **File upload control in Copilot policy**, the file upload feature will be available to users in both Microsoft 365 Copilot and Microsoft 365 Copilot Chat.  
+If you don't configure the **File upload control in Copilot policy**, the file upload feature remains available by default to users in both Microsoft 365 Copilot and Microsoft 365 Copilot Chat.  
 
 > [!NOTE]
-> The file upload control is currently available only for Microsoft 365 Copilot and Copilot Chat on desktop (Windows), and web. The control will be available for Microsoft 365 apps in late 2025. 
+> The file upload control only manages the feature in Chat for the Microsoft 365 Copilot app (Windows, web). The control will be available to manage the feature for Microsoft 365 apps in late 2025. 
