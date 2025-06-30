@@ -203,11 +203,11 @@ You have the following options for creating an access control policy in PowerShe
 
    To create this policy, run the following PowerShell cmdlet:
 
-  ```
+    ```
    ```powershell
   ```
-     Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowOrgAddedSkills -Name HardDisable -IsFeatureEnabled $false 
-     ```
+       Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowOrgAddedSkills -Name HardDisable -IsFeatureEnabled $false 
+       ```
   
        For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *ShowOrgAddedSkills*.
 
