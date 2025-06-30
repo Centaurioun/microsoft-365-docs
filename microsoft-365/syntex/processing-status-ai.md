@@ -43,6 +43,31 @@ When you submit an on-demand request for autofill or translation:
 
 1. A message bar appears at the top of the library, indicating the action is in progress.
 
+    - For autofill:
+
+    ![Screenshot of the message bar showing that the action is in progress for autofill.](../media/content-understanding/processing-status-message-bar-autofill.png)
+
+    - For translation:
+
+    ![Screenshot of the message bar showing that the action is in progress for translation.](../media/content-understanding/processing-status-message-bar-translation.png)
+
+2. On the right side of the message bar, select the view status button to open the corresponding [activity panel](#view-the-activity-panel).
+
+    - For autofill: Select **View autofill status** to open the **Autofill activity** panel.
+
+    - For translation: Select **View translation status** to open the **Translation activity** panel.
+
+3. The [activity panel](#view-the-activity-panel) shows the current action being processed.
+
+4. The message bar disappears once the request is completed or failed.
+
+
+## Monitor the status of a file being processed
+
+When you submit an on-demand request for autofill or translation:
+
+1. A message bar appears at the top of the library, indicating the action is in progress.
+
     ![Screenshot of the message bar showing that the action is in progress for autofill.](../media/content-understanding/processing-status-message-bar-autofill.png)
 
     ![Screenshot of the message bar showing that the action is in progress for translation.](../media/content-understanding/processing-status-message-bar-translation.png)
@@ -52,6 +77,7 @@ When you submit an on-demand request for autofill or translation:
 3. The activity panel shows the current action being processed.
 
 4. The message bar disappears once the request is completed or failed.
+
 
 <!---
 When you submit on-demand request for autofill or translation, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button.
