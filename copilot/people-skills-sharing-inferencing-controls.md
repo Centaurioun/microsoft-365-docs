@@ -80,13 +80,6 @@ You have the following options for creating an access control policy in PowerShe
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false -Everyone
    ```
    
-> [!NOTE]
-> In the PowerShell script, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsInferencing*. Replace `-Everyone` with your desired scope:
-> - `-Everyone` (entire organization)
-> - `-GroupIds "group1@contoso.com","group2@contoso.com"` (specific groups)
-> - `-UserIds "user1@contoso.com","user2@contoso.com"` (specific users)
->   For more details on PowerShell syntax, refer to [our Feature Access Management documentation](/viva/manage-access-policies). 
-> 
 - **Enable skills inferencing (Default):** When inferencing is enabled, users receive skill suggestions relevant to their role. Users have the option to turn it off for themselves in the Microsoft 365 profile editor, on the Data and privacy tab.
 
 - **Keep skills inferencing enabled but default off:** Skills inferencing is available in your tenant, but users in this access policy will be "opted-out," and won't receive inferencing suggestions. Users have the option to turn it on for themselves in the Microsoft 365 profile editor, on the Data and privacy tab.
@@ -105,16 +98,16 @@ You have the following options for creating an access control policy in PowerShe
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name HardDisable -IsFeatureEnabled $false -Everyone
      ```
      
-  In the PowerShell script, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsInferencing*. Replace `-Everyone` with your desired scope:
-  
-  - `-Everyone` (entire organization)
-  
-  - `-GroupIds "group1@contoso.com","group2@contoso.com"` (specific groups)
-  
-  - `-UserIds "user1@contoso.com","user2@contoso.com"` (specific users)
-  
+  > [!NOTE]
+  > In the PowerShell script, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsInferencing*. Replace `-Everyone` with your desired scope:
+  > - `-Everyone` (entire organization)
+  > 
+  > - `-GroupIds "group1@contoso.com","group2@contoso.com"` (specific groups)
+  > 
+  > - `-UserIds "user1@contoso.com","user2@contoso.com"` (specific users)
+  > 
     For more details on PowerShell syntax, refer to **[our Feature Access Management documentation](/viva/manage-access-policies)**.
-    
+  
 ### Control visibility of entire user skills profile (Parent control)
 
 This control can be used to control visibility of a user’s entire skills profile. An individual's skills profile consists of AI-generated skills, user-confirmed skills, and imported skills.
