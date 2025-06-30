@@ -34,6 +34,9 @@ ms.date: 09/18/2023
 
 # Use the Virtual Appointments app in Microsoft Teams
 
+> [!NOTE]
+> The Virtual Appointments app is no longer available. Use Bookings to create, schedule, and manage appointments. To learn more about creating appointments in Bookings, see [Appointments with Microsoft Teams](virtual-appointments.md).
+
 ![Information icon](media/info.png) **Some features described in this article require [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)**.
 
 ## Before you begin
