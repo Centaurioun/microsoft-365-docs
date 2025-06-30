@@ -27,8 +27,18 @@ ms.date: 10/26/2023
 
 # Appointments with Microsoft Teams
 
-> [!NOTE]
-> The Virtual Appointments app is no longer available. Use Bookings to create, schedule, and manage appointments. To learn more about Bookings, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
+> [!IMPORTANT]
+> The Virtual Appointments app in Microsoft Teams is no longer available.
+>
+> To schedule and manage appointments, your users can use Microsoft Bookings. As part of Microsoft 365, Microsoft Bookings is an online scheduling tool that enables users to create customizable booking pages where customers, clients, and colleagues can easily schedule appointments.
+>
+> - For advanced scheduling features in Microsoft Bookings, like SMS notifications and the queue for scheduled appointments, users also need a [Teams Premium license](/microsoftteams/enhanced-teams-experience/enhanced-teams-experience).
+>
+> For existing Virtual Appointment app users, we recommend using Microsoft Bookings, licensed through a Microsoft 365 subscription plan, together with a Teams Premium license for a more comprehensive solution.
+>
+> To prepare for this change, notify your users, update relevant documentation as appropriate, and share details on Microsoft Bookings.
+>
+> [Learn more about Microsoft Bookings](/microsoft-365/bookings/bookings-overview) and the [advanced experience in Bookings with Teams Premium](https://techcommunity.microsoft.com/blog/microsoftteamsblog/teams-premium-enhances-scheduling-in-microsoft-bookings/4292193).
 
 With Bookings in Microsoft Teams, you have a complete platform to schedule, manage, and conduct business-to-customer engagements. For example:
 
