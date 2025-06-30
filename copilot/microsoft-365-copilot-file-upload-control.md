@@ -28,9 +28,9 @@ File upload is enabled by default in both Microsoft 365 Copilot and Microsoft 36
 To manage the file upload feature so it aligns with organizational policies, user preferences, and security considerations, an admin control is available. This control allows admins to determine whether users can upload local files or attach cloud files when using Copilot or Copilot Chat. 
 
 > [!NOTE]
-> The file upload control will be available [notes on release date(s)]
+> The file upload control will be available in July 2025.
 
-## IT admin file upload control 
+## IT admin file upload control
 
 The file upload control is available only in [Cloud Policy service for Microsoft 365](/microsoft-365-apps/admin-center/overview-cloud-policy). If you enable this policy setting, you can choose one of the following options for file uploads in Copilot and Copilot Chat:  
 - **Allow file uploads in both Microsoft 365 Copilot and Microsoft 365 Copilot Chat**—allows users to upload files in both experiences. This is the default setting.
@@ -40,4 +40,4 @@ The file upload control is available only in [Cloud Policy service for Microsoft
 If you don't configure the **File upload control in Copilot policy**, the file upload feature will be available to users in both Microsoft 365 Copilot and Microsoft 365 Copilot Chat.  
 
 > [!NOTE]
-> The file upload control is currently available only for Microsoft 365 Copilot and Copilot Chat on desktop (Windows), and web. The control will be available for Microsoft 365 apps in [broad date]. 
+> The file upload control is currently available only for Microsoft 365 Copilot and Copilot Chat on desktop (Windows), and web. The control will be available for Microsoft 365 apps in late 2025. 
