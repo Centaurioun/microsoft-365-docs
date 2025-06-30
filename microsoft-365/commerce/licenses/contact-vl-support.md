@@ -133,7 +133,7 @@ Use the information in the following tables to find the support number for your 
 |Ireland |1800 555035 (Toll Free) |08:00 - 17:00 Monday to Friday |English |
 |Italy |800 785768 (Toll Free) |09:00 - 18:00 Monday to Friday |Italian |
 |Luxembourg |8002 4248 (Toll Free) |08:00-17:00 Monday to Friday |French, German |
-|Netherlands |0800 0221871 (Toll Free) |08:30 - 18:00 Monday to Friday |Dutch |
+|Netherlands |0800 0221871 (Toll Free) |08:30 - 18:00 Monday to Friday |English |
 |Norway |800 14956 (Toll Free) |08:30 - 17:00 Monday to Friday |English |
 |Poland |00 800 112 46 99 (Toll Free) |08:30 - 18:00 Monday to Friday |Polish |
 |Portugal |800 849101 (Toll Free) |09:00 - 18:00 Monday to Friday |Portuguese |
