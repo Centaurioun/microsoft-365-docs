@@ -30,3 +30,5 @@ items:
           href: workday-reports.md
 - name: Usage analytics for the Employee Self-Service agent
   href: usage-analytics.md
+- name: Known issues and limitations
+  href: known-issues-limitations.md

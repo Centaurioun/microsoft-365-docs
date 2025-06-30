@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
 manager: triciagill
-ms.date: 6/20/2025
+ms.date: 7/3/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
@@ -53,7 +53,7 @@ Preparation is the first step to deploying the Employee Self-Service (ESS) agent
 >Environment Makers can't install new agents. Only the environment administrators can install new agents.
 
 >[!IMPORTANT]
->Important: Familiarize yourself with the Power Platform subscription plans and billing policies for your tenant. It’s recommended to perform initial capacity planning before enabling and configuring the ESS agent to make sure you won’t incur additional billing.
+>Important: Familiarize yourself with the Power Platform subscription plans and billing policies for your tenant. It’s recommended to perform initial [capacity planning](prerequisites.md#capacity-planning) before enabling and configuring the ESS agent to make sure you won’t incur additional billing.
 
 ## Infrastructure setup for third-party ISV integration
 

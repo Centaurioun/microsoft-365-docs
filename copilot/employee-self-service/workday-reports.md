@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: daisyfeller
 author: daisyfell
 manager: triciag
-ms.date: 06/20/2025
+ms.date: 7/3/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot

@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
 manager: triciagill
-ms.date: 6/20/2025
+ms.date: 7/3/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
@@ -95,6 +95,13 @@ Approval is the final step to deploy the ESS agent to your users through Integra
 1. Confirm publish or update for the app.
 1. Select the **Employee Self-Service agent** from the list of Integrated apps.
 1. Select **Deploy app**. Then choose the set of users you want to deploy the app to.
+
+## Workaround if publishing takes more than 48 hours
+
+1. Follow the steps until #6 in the [Publish the ESS agent](#publish-the-ess-agent) section.
+1. Use the **Download.zip** option to download the agent manifest.
+1. Follow the steps until #2 in the [Approve the ESS agent in Integrated apps section](#approve-the-ess-agent-in-integrated-apps-as-an-admin).
+1. Upload the download manifest file from the previous step and follow the rest of the process in the Approve the ESS agent in Integrated apps as an admin section.
 
 ## Publishing checklist
 

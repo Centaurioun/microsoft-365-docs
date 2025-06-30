@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
 manager: triciagill
-ms.date: 6/20/2025
+ms.date: 7/3/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
@@ -345,6 +345,9 @@ You can incorporate knowledge sources into agents during initial creation, after
 
 >[!NOTE]
 >The ESS agent currently only has agent-level knowledge sources and no Topic-level knowledge sources included.
+
+>[!TIP]
+>There is an **Official source** option within Copilot studio. It's recommended *not* to use this when configuring ESS knowledge sources. The ESS agent applies the official source badge as part of response preparation. Enabling this option in Copilot Studio won't have any effect in the ESS agent.
 
 ### Configure SharePoint as a knowledge source
 
