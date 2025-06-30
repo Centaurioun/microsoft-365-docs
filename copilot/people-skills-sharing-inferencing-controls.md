@@ -75,6 +75,18 @@ You have the following options for creating an access control policy in PowerShe
 - **Keep skills inferencing enabled but default off:** Skills inferencing is available in your tenant, but users in this access policy will be "opted-out," and won't receive inferencing suggestions. Users have the option to turn it on for themselves in the Microsoft 365 profile editor, on the Data and privacy tab.
 
    To create this policy, run the following PowerShell cmdlet. 
+  
+   ```powershell
+  Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false 
+   ```
+   
+For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsInferencing*.
+
+- **Enable skills inferencing (Default):** When inferencing is enabled, users receive skill suggestions relevant to their role. Users have the option to turn it off for themselves in the Microsoft 365 profile editor, on the Data and privacy tab.
+
+- **Keep skills inferencing enabled but default off:** Skills inferencing is available in your tenant, but users in this access policy will be "opted-out," and won't receive inferencing suggestions. Users have the option to turn it on for themselves in the Microsoft 365 profile editor, on the Data and privacy tab.
+
+   To create this policy, run the following PowerShell cmdlet. 
 
    ```powershell
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false 
@@ -180,10 +192,10 @@ You have the following options for creating an access control policy in PowerShe
 
    To create this policy, run the following PowerShell cmdlet:
   
-     ```powershell
+       ```powershell
    Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowOrgAddedSkills -Name HardDisable -IsFeatureEnabled $false 
    ```
   
-     For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *ShowOrgAddedSkills*.
+       For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *ShowOrgAddedSkills*.
 
 For more information on how to create and manage policies, see [control access to features](/viva/feature-access-management).  
