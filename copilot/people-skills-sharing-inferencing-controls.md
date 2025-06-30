@@ -77,10 +77,10 @@ You have the following options for creating an access control policy in PowerShe
    To create this policy, run the following PowerShell cmdlet. 
 
    ```powershell
-  Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false -everyone
+  Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false 
    ```
    
-     For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsInferencing*.
+       For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsInferencing*.
 
 - **Completely disable skills inferencing:** With this policy, skills inferencing is disabled for your tenant and users can't opt in to receiving skill inferencing suggestions.
 
@@ -179,11 +179,11 @@ You have the following options for creating an access control policy in PowerShe
 - **Completely disable imported skill sharing:** With this policy, third-party skills aren't shared with Microsoft 365 experience in your tenant and users can't opt in to sharing their third-party skills. 
 
    To create this policy, run the following PowerShell cmdlet:
-
-   ```powershell
+  
+     ```powershell
    Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowOrgAddedSkills -Name HardDisable -IsFeatureEnabled $false 
    ```
   
-   For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *ShowOrgAddedSkills*.
+     For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *ShowOrgAddedSkills*.
 
 For more information on how to create and manage policies, see [control access to features](/viva/feature-access-management).  
