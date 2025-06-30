@@ -47,6 +47,9 @@ items:
 
             - name: Microsoft Syntex
               items:
+                - name: Try out Syntex services
+                  href: ../syntex/promo-syntex.md
+
                 - name: Autofill columns
                   items: 
                     - name: Overview 
