@@ -126,12 +126,19 @@ You have the following options for creating an access control policy in PowerShe
    To create this policy, run the following PowerShell cmdlet:
 
    ```powershell
-   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsProfileVisibility -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false
+  Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsProfileVisibility -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false -Everyone
+  
    ```
-
-   For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsProfileVisibility*.
-
+   
 > [!NOTE]
+> In the PowerShell script, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsProfileVisibility*. Replace `-Everyone` with your desired scope:
+> - `-Everyone` (entire organization)
+> 
+> - `-GroupIds "group1@contoso.com","group2@contoso.com"` (specific groups)
+> 
+> - `-UserIds "user1@contoso.com","user2@contoso.com"` (specific users)
+> 
+> For more details on PowerShell syntax, refer to **[our Feature Access Management documentation](/viva/manage-access-policies)**.
 > We don't offer the option to completely disable skills profile visibility. A user can always opt in to sharing their skills profile from their personal skills settings in Profile Editor. Admins can disable sharing of some skills such as AI-generated, or org. added skills 
 
 ### Control visibility of AI-generated skills
