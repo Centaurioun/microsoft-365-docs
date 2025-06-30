@@ -47,8 +47,7 @@ When you submit an on-demand request for autofill or translation:
 
     ![Screenshot of the message bar showing that the action is in progress for translation.](../media/content-understanding/processing-status-message-bar-translation.png)
 
-
-2. On the right side of the message bar, select **View status** to open the corresponding [activity panel](#view-the-activity-panel).
+2. On the right side of the message bar, select **View [service] status** to open the corresponding [activity panel](#view-the-activity-panel).
 
 3. The activity panel shows the current action being processed.
 
