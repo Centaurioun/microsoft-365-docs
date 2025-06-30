@@ -1,6 +1,6 @@
 ---
 ms.date: 06/10/2025
-title: "Managing SharePoint Embedded containers for Copilot Notebooks, Copilot Pages, or Loop workspaces"
+title: "Manage SharePoint Embedded containers for Copilot Notebooks, Copilot Pages, or Loop workspaces"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
 author: jenzamora
@@ -24,9 +24,9 @@ search.appverid:
 description: "Learn about managing SharePoint Embedded containers for Copilot Notebooks, Copilot Pages, or Loop workspaces."
 ---
 
-# Managing SharePoint Embedded containers for Copilot Notebooks, Copilot Pages, or Loop workspaces
+# Manage SharePoint Embedded containers for Copilot Notebooks, Copilot Pages, or Loop workspaces
 
-IT admins can manage SharePoint Embedded containers like they manage SharePoint sites using either [SharePoint Admin Center](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaux) or [PowerShell](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell), with the appropriate [SharePoint Embedded administrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). Storage and quota are combined with SharePoint in your tenant. You'll need the Loop application IDs for PowerShell and Audit Logs:
+IT admins can manage SharePoint Embedded containers like they manage SharePoint sites using either [SharePoint Admin Center](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaux) or [PowerShell](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell), with the appropriate [SharePoint Embedded administrator role](/sharepoint/dev/embedded/concepts/admin-exp/adminrole). Install the [latest version of SharePoint PowerShell module](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online). Storage and quota are combined with SharePoint in your organization. Use the Loop application IDs to filter to Loop in PowerShell and Audit Logs:
 
 - Loop Web Application ID: `a187e399-0c36-4b98-8f04-1edc167a0996`
 - Loop Mobile Application ID: `0922ef46-e1b9-4f7e-9134-9ad00547eb41`
@@ -34,11 +34,19 @@ IT admins can manage SharePoint Embedded containers like they manage SharePoint 
 
 ## Ownerless workspaces
 
-IT admins can use SharePoint Admin Center and PowerShell to find ownerless tenant-owned Loop workspaces. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application IDs are listed in this article.
+IT admins can use SharePoint Admin Center and PowerShell to find ownerless tenant-owned Loop workspaces. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application IDs are listed [in this article](#manage-sharepoint-embedded-containers-for-copilot-notebooks-copilot-pages-or-loop-workspaces).
+
+## Listing all the user-owned containers
+
+To get a list of all of user-owned containers in your organization, regardless of the container name, update the following sample PowerShell to your needs:
+
+```PowerShell
+Get-SPOContainer -OwningApplicationId 'a187e399-0c36-4b98-8f04-1edc167a0996' | WHERE OwnershipType -EQ 'UserOwned' | FT
+```
 
 ## Purview and SharePoint Embedded
 
-All SharePoint Embedded containers are targeted using the "All SharePoint Sites" scope in Microsoft Purview. For example, if configuring Retention Policies, the configuration you specify that targets All SharePoint Sites will apply to every Copilot Pages and Copilot Notebooks container in SharePoint Embedded, and every Loop workspace in SharePoint Embedded. This includes all ownership types: user, group, and tenant owned SharePoint Embedded containers.
+All SharePoint Embedded containers are targeted using the "All SharePoint Sites" scope in Microsoft Purview. For example, if configuring Retention Policies, the configuration you specify that targets All SharePoint Sites applies to every Copilot Pages and Copilot Notebooks container in SharePoint Embedded, and every Loop workspace in SharePoint Embedded. All SharePoint Sites includes all SharePoint Embedded container ownership types: user, group, and tenant-owned.
 
 ### Retrieving the Container URL for Purview
 

@@ -53,6 +53,9 @@ Required Conditions:
 1. For existing _Tenant_ that has data stored in a _Macro Region Geography_, the _Tenant_ Global Admin must opt in to move the _Tenant_ data into the _Local Region Geography_.
 1. The Microsoft 365 Copilot subscription customer data is provisioned in _Local Region Geography_.
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 **Commitment:**
 
 Refer to the [ADR Commitment page](m365-dr-commitments.md#microsoft-365-copilot) to understand the specific data at rest commitments for Microsoft 365 Copilot. Examples of the committed data include:

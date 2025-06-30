@@ -7,7 +7,7 @@ manager: dansimp
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: high
-ms.collection: 
+ms.collection:
 - privacy-microsoft365
 - privacy-copilot
 - m365copilot
@@ -77,6 +77,7 @@ For additional, detailed information about the LLMs provided to Microsoft by Ope
 |Power Platform Connectors|Power Platform Connectors allow customers to access real time data from a collection of business and personal productivity applications in the Microsoft 365 Copilot experience.|
 |Microsoft Graph Connectors|Microsoft Graph Connectors enable connections to external data sources, including up to 500 items per Microsoft 365 Copilot license. |
 |Microsoft Purview|Microsoft Purview is a solution that helps organizations manage and protect their data. It provides a unified platform for data governance, information protection, risk management, and compliance. Customers can extend Microsoft Purview capabilities provided by customers’ Microsoft subscriptions (for example, Microsoft 365 E3 or E5 subscriptions) to Microsoft 365 Copilot data and interactions.|
+| Microsoft 365 Copilot Tuning | Microsoft 365 Copilot Tuning allows organizations to fine-tune large language models (LLMs) by using their own tenant data. These models can be used to perform domain-specific tasks based on the organization's unique knowledge.<br/><br/>For more information, see [Responsible AI FAQ for Microsoft 365 Copilot Tuning](copilot-tuning-responsible-ai-faq.md) |
 
 ### System Behavior
 
@@ -184,7 +185,7 @@ In addition to model-level red team testing, a multidisciplinary team of experts
 
 Red team testing can surface instances of specific risks, but in production users will have millions of different kinds of interactions with Microsoft 365 Copilot. Moreover, interactions are contextual and often multi-turn, and identifying harmful content within an interaction is a complex task. To better understand and address the potential for risks for our generative AI services, including Microsoft 365 Copilot experiences, we developed responsible AI evaluations specific to those new AI experiences for measuring potential risks like jailbreaks, harmful content, and ungrounded content.
 
-As an illustrative example, the updated partially automated measurement pipeline for harmful content includes two major innovations: conversation simulation and automated, human-verified conversation annotation. First, responsible AI experts built templates to capture the structure and content of conversations that could result in different types of harmful content. These templates were then given to a conversational agent, which interacted as a hypothetical user with Microsoft 365 Copilot, generating simulated conversations. To identify whether these simulated conversations contained harmful content, we took guidelines that are typically used by expert linguists to label data and modified them for use by LLMs to label conversations at scale, refining the guidelines until there was significant agreement between model-labeled conversations and human-labeled conversations. Finally, we used the model-labeled conversations to understand the effectiveness of Microsoft 365 Copilot at mitigating harmful content.  
+As an illustrative example, the updated partially automated measurement pipeline for harmful content includes two major innovations: conversation simulation and automated, human-verified conversation annotation. First, responsible AI experts built templates to capture the structure and content of conversations that could result in different types of harmful content. These templates were then given to a conversational agent, which interacted as a hypothetical user with Microsoft 365 Copilot, generating simulated conversations. To identify whether these simulated conversations contained harmful content, we took guidelines that are typically used by expert linguists to label data and modified them for use by LLMs to label conversations at scale, refining the guidelines until there was significant agreement between model-labeled conversations and human-labeled conversations. Finally, we used the model-labeled conversations to understand the effectiveness of Microsoft 365 Copilot at mitigating harmful content.
 
 Our measurement pipelines enable us to rapidly perform measurement for potential risks at scale. As we identify new issues through the preview period and ongoing red team testing, we continue to expand and improve the measurement sets to assess additional risks.
 
@@ -200,7 +201,7 @@ As we identified potential risks and misuse through processes like red team test
 
 - **Prompt enrichment.** In some cases, a user's prompt may be ambiguous. When this happens, Microsoft 365 Copilot may use the LLM to help build out more details in the prompt to help ensure users get the response they're seeking. Such prompt enrichment doesn't rely on any knowledge of the user or their prior searches, but instead on the LLM.
 
-- **User-centered design and user experience interventions.** User-centered design and user experiences are an essential aspect of Microsoft’s approach to responsible AI. The goal is to root product design in the needs and expectations of users. As users interact with Microsoft 365 Copilot for the first time, we offer various touchpoints designed to help them understand the capabilities of the system, disclose to them that Microsoft 365 Copilot is powered by AI, and communicate limitations.  
+- **User-centered design and user experience interventions.** User-centered design and user experiences are an essential aspect of Microsoft’s approach to responsible AI. The goal is to root product design in the needs and expectations of users. As users interact with Microsoft 365 Copilot for the first time, we offer various touchpoints designed to help them understand the capabilities of the system, disclose to them that Microsoft 365 Copilot is powered by AI, and communicate limitations.
 
 - **AI disclosure.** Microsoft 365 Copilot provides several touchpoints for meaningful AI disclosure where users are notified that they're interacting with an AI system as well as opportunities to learn more about Microsoft 365 Copilot. For example, when using Microsoft 365 Copilot in the Word app, AI-generated content is given alongside notice that AI-generated content may contain errors. Empowering users with this knowledge can help them avoid over-relying on AI-generated outputs and learn about the system’s strengths and limitations.
 

@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: siruvanti
-ms.date: 06/09/2025
+ms.date: 06/25/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -52,6 +52,9 @@ Before you begin, ensure the following:
 
 7. On the **Users** page, choose **All users** or a **Specific group** (search and add a single group). Select **Next**.
 
+    > [!NOTE]
+    > When selecting a group, only the first 1,000 groups are displayed in alphabetical order.
+
 8. On the **Review and finish** page, double-check all the details you’ve entered. If everything is correct, select **Create policy**.
 
     Your billing policy is now created but not yet connected to a service.
@@ -62,9 +65,9 @@ Before you begin, ensure the following:
 
 2. Choose the newly created billing policy and link it to a pay-as-you-go service (for example, **Microsoft 365 Copilot Chat** or **SharePoint Agents**).
 
-## Monitor usage and costs
+## Set up a budget and monitor usage
 
-After setup, monitor your pay-as-you-go usage and costs in [Microsoft Cost Management for Azure](https://portal.azure.com/#blade/Microsoft_Azure_CostManagement/Menu/costanalysis). Ensure you have at least read access to the billing resource group.
+After setting up billing, you can [set up a budget and monitor your usage in the Microsoft 365 admin center](pay-as-you-go-budget.md). You can also monitor your pay-as-you-go usage and costs in [Microsoft Cost Management for Azure](https://portal.azure.com/#blade/Microsoft_Azure_CostManagement/Menu/costanalysis). Ensure you have at least read access to the billing resource group.
 
 ## Disconnect pay-as-you-go billing
 
