@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 06/11/2025
+ms.date: 07/01/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -77,9 +77,11 @@ To view the processing status of one or more files:
 
     - For autofill: Select **Autofill columns** > **View recent activity**.
 
+        ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity-autofill.png)
+
     - For translation: Select **Translate** > **View recent activity**.
 
-        ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity.png)
+        ![Screenshot of the More options menu showing Translation and View recent activity.](../media/content-understanding/processing-status-view-recent-activity-translation.png)
 
 3. Depending on the service you selected, the corresponding [activity panel](#view-the-activity-panel) opens.
 
