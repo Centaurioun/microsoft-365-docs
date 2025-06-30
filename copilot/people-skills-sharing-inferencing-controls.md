@@ -15,6 +15,11 @@ As an admin, you can set privacy and skill sharing controls for users, groups, o
 
 To view your skills sharing and privacy settings, you can navigate to the People Skills setup page and select **Settings**. Access controls can be created before, during or after People Skills setup. 
 
+> [!IMPORTANT]
+> Privacy controls detailed here can be used to set up access policies to meet Works Council requirements and to pilot People Skills with small groups. Admins can configure inferencing and visibility controls (individually or in combination) to restrict skills inferencing or skills sharing for users outside the pilot or in restricted regions. For more details on piloting People Skills, review our [deployment guide](http://aka.ms/peopleskills-deployment-guide).
+> 
+![People Skills deployment guide v3](media/people-skills-sharing-inferencing-controls/people-skills-deployment-guide-v3.png)
+
 ## Skills AI inferencing control overview
 
 Skills inferencing controls are enabled by default, but you can let users opt in or out or disable inferencing entirely either before or after setting up People Skills.
@@ -39,6 +44,10 @@ We offer three levels of controls to control skill visibility. Each of these con
 - **(Child control) Visibility of AI-generated skills:** AI-generated skills are skills based on AI inferencing that are relevant to a user’s role. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to allow them to share skills, even if the user’s profile is set to visible.
 
 - **(Child control) Visibility of imported skills:** User skills from third-party applications can be imported by your organization. Skills from these apps might need to be confirmed by users before they're shown in experiences as skills. A user might need to confirm these skills, similar to AI-generated skills. These skills can only be shown if the skills profile (parent) is also set to visible. Separate controls for both admins and for users to share skills, even if the user’s profile is set to visible.
+
+> [!IMPORTANT]
+> When multiple policies apply to the same user, the most specific policy takes precedence. User-specific policies override group policies, which override organization-wide policies.
+> **Example:** If you create two policies - one that disables a feature for everyone in your organization, and another that enables the feature for people in a specific group - the feature will be enabled for group members because the group policy takes precedence over the organization-wide policy.
 
 The following sections will walk you through on how to set up each of the controls in detail, and the expected functionality when they're enabled or disabled.
 
