@@ -68,10 +68,10 @@ You have the following options for creating an access control policy in PowerShe
    To create this policy, run the following PowerShell cmdlet. 
 
    ```powershell
-   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false 
+  Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false -everyone
    ```
-
-   For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsInferencing*.
+   
+     For this example, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsInferencing*.
 
 - **Completely disable skills inferencing:** With this policy, skills inferencing is disabled for your tenant and users can't opt in to receiving skill inferencing suggestions.
 
