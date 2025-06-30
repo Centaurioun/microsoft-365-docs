@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
 manager: triciagill
-ms.date: 6/20/2025
+ms.date: 7/7/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
@@ -69,15 +69,3 @@ The Employee Self-Service agent consists of three main parts: the agent itself, 
 [![Infographic showing the structure of the Employee Self-Service agent.](../media/ess/structure-big.png)](../media/ess/structure-big.png#lightbox)
 
 [Learn more about how Copilot architecture works](../microsoft-365-copilot-architecture.md)
-
-## Limitations and known issues
-
-- The ESS Agent is currently only available in English. More languages will be available after the agent reaches general availabality.
-- The ESS Agent currently doesn’t support on-premises data gateways, even if only used for authentication.
-- The following file size limits apply to knowledge sources. For files exceeding the size limits, consider alternative architectures such as [Microsoft 365 Semantic Indexing](/microsoftsearch/semantic-index-for-copilot) or [connecting your data to Azure OpenAI for Generative answers.](/microsoft-copilot-studio/nlu-generative-answers-azure-openai)
-  - SharePoint sources for users with no Copilot license: up to 7 MB
-  - SharePoint sources for users with a Copilot license: Up to 200 MB
-  - Files uploaded as a knowledge source: Up to 512 MB
-- Pages with multiple links that lead to the relevant information aren't included in the generative answers. Consider adding relevant information for each link in a page that has multiple links.
-- Customizations aren’t stored automatically in the preferred solution for exporting and importing to different environments.
-- Agent names have length constraints of 42 characters maximum. Names exceeding this limit cause erroneous rendering.
