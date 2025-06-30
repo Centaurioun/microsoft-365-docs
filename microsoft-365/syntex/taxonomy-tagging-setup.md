@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 01/13/2025
+ms.date: 04/13/2025
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -55,6 +55,6 @@ By default, taxonomy tagging is available for libraries on all SharePoint sites.
 6. On the **Taxonomy tagging** panel, change the setting from **All sites** to **Selected sites (up to 100)** or **No sites**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     > [!NOTE]
-    > You can enable taxonomy tagging only at the site level, and it will work for any subsites under the site. Enabling only for a particular subsite isn't supported.
+    > You can turn on taxonomy tagging only at the site level. When it's turned on for a site, it also applies to all subsites. It's not possible to turn it on for just a specific subsite.
 
 7. Select **Save**.

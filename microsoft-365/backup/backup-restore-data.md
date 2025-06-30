@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 03/11/2025
+ms.date: 04/16/2025
 ms.topic: how-to
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -24,6 +24,12 @@ As part of restoring data from backup, admin needs to choose a *restore point* m
 
 Currently, you can restore OneDrive accounts, SharePoint sites, and Exchange mailbox content from specific prior points in time from the backups.
 
+</br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c9a4ced2-7ce3-4bc9-b42f-876b05497e1b]
+
+</br>
+
 ## Restore point frequency
 
 The restore point frequency, also known as the [recovery point objective](backup-faq.md#what-is-the-service-recovery-point-objective) (RPO), defines the maximum amount of time during which data is lost after an attack. Stated differently, it’s the time between the most recent backup of the healthy state of data and the time of the attack. The RPOs for each of the protected services are summarized in the following table.
@@ -32,6 +38,13 @@ The restore point frequency, also known as the [recovery point objective](backup
 |---------|---------|---------|
 |Full OneDrive account and full SharePoint site restore    |10 minutes     |One week     |
 |Exchange Online   |10 minutes         |10 minutes         |
+
+> [!NOTE]
+> You can also use PowerShell cmdlets to perform these operations by following these steps:
+> 1. Go to the [Microsoft 365 Backup Storage Graph APIs](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions) documentation for the specific action you want to perform—for example, restoring data for Onedrive.
+> 2. Scroll to the **Example request** section and select the **PowerShell** tab.
+> 3. Install the Microsoft.Graph.BackupRestore module as shown in the example.
+> 4. Run the provided PowerShell command in an Admin PowerShell session to execute the desired action.
 
 ## Restore data from backup for OneDrive, SharePoint, and Exchange
 
@@ -239,7 +252,6 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 > After a multi-geo move, a OneDrive account and SharePoint site will only be able to restore to the weekly restore points until an enhancement is deployed (enhancement coming soon).
 
 ## Considerations when using restore
-
 - OneDrive and Sharepoint
 
     - Site search is case-sensitive and is a prefix-type search.
@@ -273,7 +285,7 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
     - If the parent folder of an item has been deleted, the item will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
  
 - All
-
+    - Restore session history is retained for 366 days.
     - Abusive restore actions aren't permitted. You should limit restores for testing purposes to no more than twice a month per protection unit. Restores for real recovery purposes aren't limited.
 
     - The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points start being generated when you create the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10 minutes for the entire year. For OneDrive and SharePoint, the available restore points are available for 10 minutes for up to 2 weeks prior, and weekly for 2 to 52 weeks prior. Based on the defined and currently invariable backup frequency setting previously described, the following example highlights what is possible.

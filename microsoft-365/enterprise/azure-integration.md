@@ -42,6 +42,9 @@ You can use the Microsoft Entra deployment advisors for a guided setup and confi
 - [AD FS deployment advisor](https://aka.ms/adfsguidance)
 - [Microsoft Entra setup guide](https://aka.ms/aadpguidance)
   
+> [!NOTE]
+> Microsoft 365 Local – run productivity and collaboration solutions on Azure Local through a specific reference architecture validated by Microsoft and supported by a network of partners. [Learn more](https://aka.ms/MSFTSovereignCloudBlog).
+
 <a name='azure-ad-editions-and-microsoft-365-identity-management'></a>
 
 ## Microsoft Entra editions and Microsoft 365 identity management
@@ -50,7 +53,7 @@ If you have a paid subscription to Microsoft 365, you also have a free Microsoft
 
 For instructions to register your free Microsoft Entra subscription, see [use your free Microsoft Entra subscription](../compliance/use-your-free-azure-ad-subscription-in-office-365.md). Don't go directly to azure.microsoft.com to sign up because you'll get a trial or paid subscription to Microsoft Azure that is separate from your free Microsoft Entra subscription with Microsoft 365.
   
-With the free subscription you can synchronize with on-premises directories, set up single sign-on, and synchronize with many SaaS applications, such as Salesforce, DropBox, and many more.
+With the free subscription you can synchronize with on-premises directories, set up single sign-on, and synchronize with many SaaS applications, such as Salesforce, Dropbox, and many more.
   
 If you want enhanced AD DS functionality, bi-directional synchronization, and other management capabilities, you can upgrade your free subscription to a paid premium subscription. For the details, see [Microsoft Entra editions](https://azure.microsoft.com/pricing/details/active-directory/).
   
