@@ -18,7 +18,8 @@ To view your skills sharing and privacy settings, you can navigate to the People
 > [!IMPORTANT]
 > Privacy controls detailed here can be used to set up access policies to meet Works Council requirements and to pilot People Skills with small groups. Admins can configure inferencing and visibility controls (individually or in combination) to restrict skills inferencing or skills sharing for users outside the pilot or in restricted regions. For more details on piloting People Skills, review our [deployment guide](https://aka.ms/peopleskills-deployment-guide).
 > 
-![Diagram showing the People Skills Deployment Guide v3](media/people-skills-sharing-inferencing-controls/people-skills-deployment-guide-v3.png)
+
+![Diagram showing the People Skills Deployment Guide v3.](media/people-skills-sharing-inferencing-controls/people-skills-deployment-guide-v3.png)
 
 ## Skills AI inferencing control overview
 
@@ -47,6 +48,7 @@ We offer three levels of controls to control skill visibility. Each of these con
 
 > [!IMPORTANT]
 > When multiple policies apply to the same user, the most specific policy takes precedence. User-specific policies override group policies, which override organization-wide policies.
+>
 > **Example:** If you create two policies - one that disables a feature for everyone in your organization, and another that enables the feature for people in a specific group - the feature will be enabled for group members because the group policy takes precedence over the organization-wide policy.
 
 The following sections will walk you through on how to set up each of the controls in detail, and the expected functionality when they're enabled or disabled.
@@ -74,19 +76,19 @@ You have the following options for creating an access control policy in PowerShe
 
 - **Keep skills inferencing enabled but default off:** Skills inferencing is available in your tenant, but users in this access policy will be "opted-out," and won't receive inferencing suggestions. Users have the option to turn it on for themselves in the Microsoft 365 profile editor, on the Data and privacy tab.
 
-   To create this policy, run the following PowerShell cmdlet. 
+  To create this policy, run the following PowerShell cmdlet. 
 
-   ```powershell
+  ```powershell
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false -Everyone
-   ```
+  ```
    
 - **Completely disable skills inferencing:** With this policy, skills inferencing is disabled for your tenant and users can't opt in to receiving skill inferencing suggestions.
 
-   To create this policy, run the following PowerShell cmdlet:
+  To create this policy, run the following PowerShell cmdlet:
   
-     ```powershell
+  ```powershell
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsInferencing -Name HardDisable -IsFeatureEnabled $false -Everyone
-     ```
+  ```
      
   > [!NOTE]
   > In the PowerShell script, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsInferencing*. Replace `-Everyone` with your desired scope:
@@ -95,8 +97,8 @@ You have the following options for creating an access control policy in PowerShe
   > - `-GroupIds "group1@contoso.com","group2@contoso.com"` (specific groups)
   > 
   > - `-UserIds "user1@contoso.com","user2@contoso.com"` (specific users)
-  > 
-    For more details on PowerShell syntax, refer to **[our Feature Access Management documentation](/viva/manage-access-policies)**.
+ 
+For more details on PowerShell syntax, refer to **[our Feature Access Management documentation](/viva/manage-access-policies)**.
   
 ### Control visibility of entire user skills profile (Parent control)
 
@@ -113,12 +115,12 @@ You have the following options for creating an access control policy in PowerShe
 
 - **Keep profile visibility default off:** Users in this access policy will be "opted-out,” and their skills won't be shared across Microsoft 365. Users have the option to turn it on for themselves in their skill settings.
 
-   To create this policy, run the following PowerShell cmdlet:
+  To create this policy, run the following PowerShell cmdlet:
 
-   ```powershell
+  ```powershell
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId SkillsProfileVisibility -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false -Everyone
   
-   ```
+  ```
    
 > [!NOTE]
 > In the PowerShell script, the **ModuleId** is *PeopleSkills*, and the **featureId** is *SkillsProfileVisibility*. Replace `-Everyone` with your desired scope:
@@ -129,6 +131,7 @@ You have the following options for creating an access control policy in PowerShe
 > - `-UserIds "user1@contoso.com","user2@contoso.com"` (specific users)
 > 
 > For more details on PowerShell syntax, refer to **[our Feature Access Management documentation](/viva/manage-access-policies)**.
+>
 > We don't offer the option to completely disable skills profile visibility. A user can always opt in to sharing their skills profile from their personal skills settings in Profile Editor. Admins can disable sharing of some skills such as AI-generated, or org. added skills 
 
 ### Control visibility of AI-generated skills
@@ -148,19 +151,19 @@ You have the following options for creating an access control policy in PowerShe
 
 - **Keep the default sharing off for AI-generated skills**: Users in this access policy will be "opted-out," and their AI-generated skills won't be shared across Microsoft 365. Users have the option to turn it on for themselves in their skill settings.
 
-   To create this policy, run the following PowerShell cmdlet:
+  To create this policy, run the following PowerShell cmdlet:
 
-   ```powershell
+  ```powershell
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowAISkills -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false -Everyone
-   ```
+  ```
    
 - **Completely disable sharing of AI-generated skills**: With this policy, AI-generated skills aren't shared with anyone but themselves and users can't opt in to sharing their AI skill suggestions before confirming them those skills.  
 
-   To create this policy, run the following PowerShell cmdlet:
+  To create this policy, run the following PowerShell cmdlet:
 
-   ```powershell
+  ```powershell
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowAISkills -Name  HardDisable -IsFeatureEnabled $false -Everyone
-   ```
+  ```
    
   > [!NOTE]
   > In the PowerShell script, the **ModuleId** is *PeopleSkills*, and the **featureId** is *ShowAISkills*. Replace `-Everyone` with your desired scope:
@@ -171,7 +174,7 @@ You have the following options for creating an access control policy in PowerShe
   > - `-UserIds "user1@contoso.com","user2@contoso.com"` (specific users)
   > 
   > For more details on PowerShell syntax, refer to **[our Feature Access Management documentation](/viva/manage-access-policies)**.
-  > 
+   
 ### Control visibility of third-party imported skills
 
 Imported skills added by an admin in your organization from external systems display in a user's skills profile alongside AI-generated skills. Like AI-generated skills, these skills are available for the user to confirm in the Microsoft 365 profile editor. By default, third-party skills are displayed to others in their organizations and shared with other Microsoft 365 experiences. If sharing is disabled, imported skills won't display to others in the organization.
@@ -187,20 +190,18 @@ You have the following options for creating an access control policy in PowerShe
 
 - **Keep imported skill sharing default off:** Users in this access policy will be "opted-out,” and their third-party skills won't be shared across Microsoft 365. Users have the option to turn it on for themselves in their skill settings.
 
-   To create this policy, run the following PowerShell cmdlet:
+  To create this policy, run the following PowerShell cmdlet:
   
-   ```powershell
+  ```powershell
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowOrgAddedSkills -Name SoftDisable -IsFeatureEnabled $true -IsUserControlEnabled $true -IsUserOptedInByDefault $false -Everyone
-   ```
+  ```
    
 - **Completely disable imported skill sharing:** With this policy, third-party skills aren't shared with Microsoft 365 experience in your tenant and users can't opt in to sharing their third-party skills. 
 
-   To create this policy, run the following PowerShell cmdlet:
+  To create this policy, run the following PowerShell cmdlet:
   
   ```powershell
   Add-VivaModuleFeaturePolicy -ModuleId PeopleSkills -FeatureId ShowOrgAddedSkills -Name HardDisable -IsFeatureEnabled $false -Everyone
-  
-  
   ```
   
   > [!NOTE]
