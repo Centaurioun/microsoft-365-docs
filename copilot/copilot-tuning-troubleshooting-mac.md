@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
 - m365copilot
 - magic-ai-copilot
-description: Find information about how to troubleshoot the Microsoft 365 admin center when using Copilot Tuning to fine-tune models.
+description: Find information about how to troubleshoot issues with the Microsoft 365 admin center when using Copilot Tuning to fine-tune models.
 ---
 
 # Troubleshoot the Microsoft 365 admin center task fine-tuning
