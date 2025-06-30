@@ -41,6 +41,8 @@ People Skills inferencing follows a refresh cycle, typically every 30 days, to e
 
 For the initial computation, we expect most users receive AI-generated skill inferences in 48 hours, although this may take up to a maximum of five days. After this initial computation, the system will refresh the skills inferencing every 30 days to keep the skills data up-to-date.
 
+The AI inferencing engine does not consider user activity older than 90 days. 
+
 ###  AI restricted skills
 
 You can mark confidential, sensitive, or proprietary skills as AI-restricted. Use the Microsoft 365 admin center to mark specific skills as AI restricted. For more information, see [how to mark skills as AI restricted](people-skills-manage-ai-restricted-skills.md).
