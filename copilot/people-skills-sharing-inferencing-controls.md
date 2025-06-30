@@ -16,7 +16,7 @@ As an admin, you can set privacy and skill sharing controls for users, groups, o
 To view your skills sharing and privacy settings, you can navigate to the People Skills setup page and select **Settings**. Access controls can be created before, during or after People Skills setup. 
 
 > [!IMPORTANT]
-> Privacy controls detailed here can be used to set up access policies to meet Works Council requirements and to pilot People Skills with small groups. Admins can configure inferencing and visibility controls (individually or in combination) to restrict skills inferencing or skills sharing for users outside the pilot or in restricted regions. For more details on piloting People Skills, review our [deployment guide](http://aka.ms/peopleskills-deployment-guide).
+> Privacy controls detailed here can be used to set up access policies to meet Works Council requirements and to pilot People Skills with small groups. Admins can configure inferencing and visibility controls (individually or in combination) to restrict skills inferencing or skills sharing for users outside the pilot or in restricted regions. For more details on piloting People Skills, review our [deployment guide](https://aka.ms/peopleskills-deployment-guide).
 > 
 ![People Skills deployment guide v3](media/people-skills-sharing-inferencing-controls/people-skills-deployment-guide-v3.png)
 
