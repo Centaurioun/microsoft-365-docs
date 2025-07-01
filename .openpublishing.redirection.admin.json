@@ -2247,7 +2247,7 @@
     },
     {
       "source_path": "microsoft-365/admin/misc/welcome-business-assist.md",
-      "redirect_url": "/microsoft-365/admin/get-help-support.md",
+      "redirect_url": "/microsoft-365/admin/get-help-support",
       "redirect_document_id": false
     }
   ]
