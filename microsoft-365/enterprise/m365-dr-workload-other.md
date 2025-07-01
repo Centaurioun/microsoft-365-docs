@@ -22,7 +22,7 @@ ms.collection:
 # Data Residency for Other Microsoft 365 Services
 
 >[!NOTE]
->Unless otherwise stated in the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), the following Microsoft 365 services do not have specific commitments for data residency. You can use the following guidance to determine where your data may be provisioned at this time. 
+>Unless otherwise stated in the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), the following Microsoft 365 services don't have specific commitments for data residency. You can use the following guidance to determine where your data may be provisioned at this time. 
 
 Use the following guidance to determine where your data is located. Reference your _tenant Default Geography_.
 
@@ -43,13 +43,13 @@ Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for exist
 - It's necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
 - The customer configures an account to enable such storage of customer data, including by using the following:
   - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
-  - If you are using Intune's enrollment and compliance notification features to send emails to end-users, the emails will be processed within the respective country for sovereign cloud customers, in EMEA for customers located in EMEA, and in North America for all other customers.
+  - If you're using Intune's enrollment and compliance notification features to send emails to end-users, the emails are processed within the respective country for sovereign cloud customers, in EMEA for customers located in EMEA, and in North America for all other customers.
 - For Microsoft Entra ID: Refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
 - Preview, beta, or other prerelease services, which typically store customer data in the United States but might store it globally. Regardless, Microsoft doesn't control or limit the Geo from which customers or their end users might access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
 
 ## Office for Mobile
 
-Customer data for this service comes from other services, like Exchange Online and SharePoint Online. There's no customer data stored outside of those services with the exception of the mobile device.
+Customer data for this service comes from other services, like Exchange Online and SharePoint Online. There's no customer data stored outside of those services except for the mobile device.
 
 ## OneNote Services
 
