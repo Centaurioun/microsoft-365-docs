@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 04/02/2025
+ms.date: 07/01/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -33,7 +33,7 @@ As the admin of an organization, you might have company requirements to set up e
 > [!IMPORTANT]
 > You can use outbound spam filter policies to control automatic forwarding to external recipients. For more information, see [Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 > 
-> Email forwarding to recipients outside the organization doesn't prevent messages identified as spam, phishing, or malware from being forwarded. The recipient needs their own email security filter to identify and block these messages.
+> Email forwarding to recipients outside the organization doesn't prevent messages identified as spam or phishing from being forwarded. The recipient needs their own email security filter to identify and block these messages.
 
 ## Before you begin
 
