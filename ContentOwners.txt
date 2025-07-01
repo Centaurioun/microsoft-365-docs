@@ -2,3 +2,7 @@
 /microsoft-365/admin/ @cmcatee-MSFT
 /microsoft-365/security/ @dansimp
 /microsoft-365/solutions/ @denisebmsft
+microsoft-365/enterprise/advanced-data-residency.md  @fhasen-msft
+microsoft-365/enterprise/m365-dr-*  @fhasen-msft
+microsoft-365/enterprise/microsoft-365-multi-geo.md  @fhasen-msft
+microsoft-365/enterprise/o365-data-locations.md  @fhasen-msft 
