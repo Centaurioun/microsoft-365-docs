@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
 ms.custom: ess-agent
+robots: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ms.collection: m365copilot
 description: Learn about the known issues and limitations affecting the Employee Self-Service agent and the workarounds you can employ.
@@ -17,6 +18,9 @@ appliesto:
 ---
 
 # Known issues and limitations for the Employee Self-Service agent
+
+>[!NOTE]
+>The Employee Self-Service agent is currently in preview. Deployment processes are subject to change before this product becomes generally available.
 
 The following known issues and limitations affect the Employee Self-Service (ESS) agent.
 

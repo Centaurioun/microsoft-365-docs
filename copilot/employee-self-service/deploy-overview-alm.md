@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
 ms.custom: ess-agent
+robots: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ms.collection: m365copilot
 description: Learn about the deployment process and application lifecycle management for the Employee Self-Service agent
@@ -19,7 +20,7 @@ appliesto:
 # Employee Self-Service agent deployment overview
 
 >[!NOTE]
->The Employee Self-Service agent is currently in public preview. Deployment processes are subject to change before this product becomes generally available.
+>The Employee Self-Service agent is currently in preview. Deployment processes are subject to change before this product becomes generally available.
 
 There are several steps necessary to deploy the Employee Self-Service (ESS) Agent. Refer to the table for an overview of the deployment process.
 
