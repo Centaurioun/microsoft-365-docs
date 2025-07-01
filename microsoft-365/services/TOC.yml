@@ -98,11 +98,11 @@ items:
                     - name: Create a signature request
                       items:
                         - name: Create a request from Word
-                          href: ../esignature-create-request-word.md
+                          href: ../syntex/esignature-create-request-word.md
                         - name: Create a request from PDF
-                          href: ../esignature-send-requests.md
+                          href: ../syntex/esignature-send-requests.md
                     - name: Cancel a signature request 
-                      href: ../esignature-cancel-request.md
+                      href: ../syntex/esignature-cancel-request.md
                     - name: Review and sign a request 
                       href: ../syntex/esignature-review-sign-requests.md
                     - name: Track and manage using Approvals 
