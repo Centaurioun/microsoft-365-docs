@@ -34,7 +34,7 @@ __To assign the People Administrator role to a user:__
 
 1. Search for __People Administrator__ in the list of roles, and select it.
 
-1. In the role details pane, choose __Assigned admins__, then __Add__ and select the users you want to assign.
+1. In the role details pane, choose __Assigned admins__, then __Add__ and select the user(s) you want to assign.
 
 1. Save your changes.
 
