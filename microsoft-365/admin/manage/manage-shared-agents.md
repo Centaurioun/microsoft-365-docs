@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 02/26/2025
+ms.date: 06/24/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -31,7 +31,7 @@ When managing shared agents for Copilot, you have visibility and control over ag
 
 Shared agents are custom versions of Microsoft 365 Copilot that combine instructions, knowledge, and skills to perform specific tasks or scenarios. These agents can be created and shared by creators through multiple channels, such as Microsoft Cloud Solutions (MCS), Microsoft Teams, Agent Builder, and more. Shared agents enhance the functionality of Copilot by adding search capabilities, custom actions, connectors, and APIs. To learn more, see [Share agents with other users](/microsoft-copilot-studio/admin-share-bots).
 
-As an admin, you can view shared agents on the Integrated apps page In the Microsoft 365 admin center. You can see a list of all shared agents, including details such as the agent's name, creator, creation date, host products, and availability status. You can search for specific agents and manage their lifecycle, including blocking agents that are deemed unsafe or noncompliant.
+As an admin, you can view shared agents on the Integrated apps page in the Microsoft 365 admin center. You can see a list of all shared agents, including details such as the agent's name, creator, creation date, host products, and availability status. You can search for specific agents and manage their lifecycle, including blocking agents that are deemed unsafe or noncompliant.
 
 For your users, shared agents are available through Copilot on different surfaces. Users can interact with these agents to perform specific tasks or get assistance based on the agent's capabilities.
 
@@ -79,7 +79,12 @@ After the agent is unblocked, it’ll be restored to the most recent availabilit
 
 ## Export to Excel
 
-You can export the list of shared agents to an Excel file. This is essential for detailed analysis and reporting. The exported file includes comprehensive information about each shared agent, such as:
+You can export the list of shared agents to an Excel file. This is essential for detailed analysis and reporting. 
+
+> [!NOTE]
+> If the export process reaches one minute, only the data up to that point will be included in the exported file.
+
+The exported file includes comprehensive information about each shared agent, such as:
 
 - Name
 - Host products
