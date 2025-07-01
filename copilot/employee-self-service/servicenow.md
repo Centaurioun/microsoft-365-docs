@@ -11,7 +11,7 @@ ms.service: microsoft-365-copilot
 ms.custom: ess-agent
 ms.localizationpriority: medium
 ms.collection: m365copilot
-description: Learn about integrating ServiceNow in the deployment process for the Employee Self-Service agent.
+description: Learn about integrating ServiceNow in the deployment process for the Employee Self-Service agent using Microsoft 365 Copilot Connector.
 appliesto:
   - ✅ Microsoft 365 Copilot
 ---
@@ -25,7 +25,7 @@ The Employee Self-Service agent is built on Copilot and uses AI to provide relev
 
 ## Functional synopsis
 
-ESS Agent acts as a front-end for consuming information from ServiceNow Knowledge using the Microsoft Graph Connector and following are the capabilities that’s enabled for this integration:
+ESS Agent acts as a front-end for consuming information from ServiceNow Knowledge using the Microsoft 365 Copilot Connector and following are the capabilities that’s enabled for this integration:
 
 - Employees can ask questions related to IT/HR workflows
     - How do I request a new device? 
@@ -38,11 +38,11 @@ ESS Agent acts as a front-end for consuming information from ServiceNow Knowledg
 
 :::image type="content" source="media/service-now-integration.png" alt-text="Diagram that shows the high-level components comprising overall solution for ESS Agent and ServiceNow Knowledge integration." lightbox="media/service-now-integration.png":::
 
-The preceding diagram outlines the high-level components comprising overall solution for ESS Agent and ServiceNow Knowledge integration using Microsoft Graph Connector. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components and bring in the right stakeholders to set 
+The preceding diagram outlines the high-level components comprising overall solution for ESS Agent and ServiceNow Knowledge integration using Microsoft 365 Copilot Connector. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components and bring in the right stakeholders to set 
 up an environment to deploy and test ESS Agent.
 
 > [!NOTE]
-> ServiceNow Knowledge Microsoft Graph Connector (GC) is still a preview version, which means the current implementation that’s documented here might have few limitations, known issues and change in the future release targeted for General Availability (GA).
+> ServiceNow Knowledge Microsoft 365 Copilot Connector is still a preview version, which means the current implementation that’s documented here might have few limitations, known issues and change in the future release targeted for General Availability (GA).
 
 ## Prerequisites
 
@@ -53,10 +53,9 @@ For information on subscription requirements required for the ESS Agent itself, 
 
 ### Limitations
 
-The current version of ServiceNow Knowledge Microsoft Graph Connector is a prerelease version and have the following limitations:
+The current version of ServiceNow Knowledge Microsoft 365 Copilot Connector is a prerelease version and have the following limitations:
 
-- No support for “Advanced Scripts”. For more information, see [ServiceNow documentation](https://www.servicenow.com/docs/bundle/xanadu-servicenow-platform/page/product/knowledge-management/task/create-user-criteria-record-in-knowledge-management.html) for Advanced Scripts – the current version have a workaround via scripted APIs, work with your Microsoft Product/Program Manager for further support on this.
-- If both Knowledge base and Knowledge article level permissions are defined, then only article-level permissions are honored (no support for hierarchical permissions).
+- If both Knowledge base and Knowledge article level permissions are defined, then only article-level permissions are honored (no support for hierarchical permissions). If you have a requirement to support hierarchical permissions, work with your Microsoft product or program manager for further support.
 - Attachments aren't indexed.
 
 ### Deployment role requirements
@@ -65,23 +64,30 @@ The current version of ServiceNow Knowledge Microsoft Graph Connector is a prere
 |---------|---------|---------|---------|
 |ServiceNow Administrator     |User who can perform administrative tasks         |Create a service account and assign a role to provide read access to specific table records         |ServiceNow         |
 |ServiceNow     |User who can configure access control         |1. Create OAuth Application Registry<br> Following steps are required only if “Advanced Scripts” are in place:<br> 2. Configure Access Control (ACL) for REST endpoint.<br>3. Create scripted REST API.<br>4. Define the API Resource.         |ServiceNow         |
-|Global Administrator (or) Search Administrator     |User who can configure the Microsoft Graph Connector for ServiceNow Knowledge.         |`1. Establish a Microsoft Enterprise Application.<br>2. Configure SAML settings within the Enterprise Application.<br>3. Obtain the Enterprise Application’s SAML certificate.<br>4. Establish trust.         |Microsoft 365 Admin Center         |
-|Environment Maker     |User who can customize ESS Agent.         |Configure knowledge source using ServiceNow Knowledge Microsoft Graph Connector.         |Microsoft Copilot Studio         |
+|Global Administrator (or) Search Administrator     |User who can configure the Microsoft 365 Copilot Connector for ServiceNow Knowledge.         |`1. Establish a Microsoft Enterprise Application.<br>2. Configure SAML settings within the Enterprise Application.<br>3. Obtain the Enterprise Application’s SAML certificate.<br>4. Establish trust.         |Microsoft 365 Admin Center         |
+|Global Administrator (or) Cloud App Administrator |User who can configure OAuth in Microsoft Entra |1. Create App registration. |Entra Admin Portal |
+|Environment Maker     |User who can customize ESS Agent.         |Configure knowledge source using ServiceNow Knowledge Microsoft 365 Copilot Connector.         |Microsoft Copilot Studio         |
 
 ## ServiceNow configuration
 
-This section outlines the tasks required to be configured in ServiceNow by an administrator. ServiceNow integration supports 3 types of authentications as follows:
+This section outlines the tasks required to be configured in ServiceNow integration by an administrator. ServiceNow integration supports 3 types of authentications as follows:
 
-1. Basic authentication – recommended if Advanced Script is used
-1. ServiceNow OAuth (recommended) – this is covered in this article
-1. Microsoft Entra ID OpenID Connect
+1. [Basic authentication](#basic-authentication)
+1. [ServiceNow OAuth](#servicenow-oauth-configuration)
+1. [Microsoft Entra ID OpenID Connect (OIDC)](#microsoft-entra-open-id-connect)
+
+The following sections cover configuration for different authentication methods. Use the authentication method that's most appropriate for your deployment.
+
+## Basic authentication
+
+This method of authentication involves a ServiceNow username and password to authenticate API requests. This method is simple to use and is primarily suggested for testing purposes, as it offers lower security compared with other authentication methods.
+
+## ServiceNow OAuth configuration
 
 > [!NOTE]
-> For all security related tasks in ServiceNow, the signed-in user with admin or security_admin role must elevate their access using “Elevate role” option from the profile menu in the top-right of navigation bar.
+> For all security related tasks in ServiceNow, the signed-in user with admin or security_admin role must elevate their access using “Elevate role” option from the profile menu in the top-right of navigation bar. Without elevating access, the new security objects can't be created. If **New** button in the top right of configuration pane is missing, then the role isn't elevated to "*security_admin*".
 
-Without elevating access, the new security objects can't be created. If **New** button in the top right of configuration pane is missing, then the role isn't elevated to "*security_admin*".
-
-### Task 1: Create an OAuth Application Registry (recommended)
+### Task 1: Create an OAuth Application Registry
 
 1. Sign in to the ServiceNow instance that needs to be integrated with ESS Agent.
 1. Elevate access permissions using **Elevate role**.
@@ -95,9 +101,10 @@ Without elevating access, the new security objects can't be created. If **New** 
    |Configuration  |Description  |
    |---------|---------|
    |Name    |A meaningful name to identify that this application registry is created for ESS Agent.          |
-   |Client ID      |Autogenerated code.<br> **Note**: This value is used in Microsoft Graph Connector configuration if no Advanced Scripting is used.         |
-   |Client Secret      |Leave it blank for a string to be automatically generated.<br> **Note**: This value is used in Microsoft Graph Connector configuration if no Advanced Scripting is used.          |
-   |Row4Redirect URL     |A required callback URL that the authorization server redirects to:<br> **For M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`<br> **For M365 Government**: `https://gcsgcc.office.com v1.0/admin/oauth/callback`         |
+   |Client ID      |Autogenerated code.<br> **Note**: This value is used in Microsoft 365 Copilot Connector configuration if no Advanced Scripting is used.         |
+   |Client Secret      |Leave it blank for a string to be automatically generated.<br> **Note**: This value is used in Microsoft 365 Copilot Connector configuration if no Advanced Scripting is used.          |
+   |Row4Redirect URL     |A required callback URL that the authorization server redirects to:<br> **For M365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`<br> **For M365 Government**: `https://gcsgcc.office.com v1.0/admin/oauth/callback`  It's important to use the actual callback URL from the sign-in popup window during connection configuration. Follow the steps below when the URL redirection fails with the error "Invalid redirect_url".</br> 1. Copy/pase the complete URL from the authorization popup window.</br> 2. Extract the redirect_url parameter. (example:redirect_uri=https%3a%2f%2ftip1-shared.consent.azure-apim.net%2fredirect).</br> 3. Decode the URL, replacing %3a with : and %2f with /</br> 4. Update the Redirect URL field.|
+   |Logo URL |A URL that contains the image for the application logo |
    |Active      |Set to active.         |
    |Refresh token lifespan       |The number of seconds that a refresh token is valid. By default, refresh tokens expire in 100 days (8,640,000 seconds).  Recommended value is 31,536,000 (one year).          |
    |Access token lifespan       |The number of seconds that an access token is valid. Recommended value is 43,200 (12 hours).         |
@@ -107,7 +114,7 @@ Without elevating access, the new security objects can't be created. If **New** 
 
 1. Select **Submit** or **Update** button to save the changes.
 
-This is the only configuration needed on ServiceNow for integrating with Microsoft Graph Connector without Advanced Scripts.
+This is the only configuration needed on ServiceNow for integrating with Microsoft 365 Copilot Connector without Advanced Scripts.
 
 The following tasks are required ONLY if Advanced Scripts are used in ServiceNow for controlling access to knowledge bases and articles using user criteria:
 
@@ -133,7 +140,7 @@ This task is required to ensure only the crawling account can access the REST AP
    |Name     |Provide a meaningful name to identify the purpose of this ACL, for example, “Microsoft Copilot”.          |
    |Description     |Provide a relevant description         |
    |Active     |Checked         |
-   |Role     |An account which is used to crawl the content.<br> **Note**: This is the account that should be used for Microsoft Graph Connector configuration with Basic authentication.         |
+   |Role     |An account which is used to crawl the content.<br> **Note**: This is the account that should be used for Microsoft 365 Copilot Connector configuration with Basic authentication.         |
 
 1. Select **Submit** to save changes.
 
@@ -152,7 +159,7 @@ This task is required to define a custom script processing for user criteria.
    |---------|---------|
    |Name     |Provide a name that identifies the purpose.         |
    |API ID    |Auto generated         |
-   |API namespace     |Auto generated<br> **Note**: This value is used in Microsoft Graph Connector configuration.         |
+   |API namespace     |Auto generated<br> **Note**: This value is used in Microsoft 365 Copilot Connector configuration.         |
 
 1. Select **Submit** to save changes.
 1. Click on the newly created Scripted REST API from the list.
@@ -180,14 +187,18 @@ This task is required to define the custom script as a resource for the REST API
 
 This wraps up all the configuration required on the ServiceNow side, now the next set of tasks are on Microsoft 365 side.
 
-## Microsoft Graph Connector configuration
+## Microsoft Entra Open ID Connect
 
-This section covers the tasks required for configuring Microsoft Graph Connector in Microsoft Admin Center (MAC). These set of tasks requires a Global Admin role or a Security Admin role in Microsoft 365 tenant.
+Refer to the [ServiceNow Copilot Connector configurations documentation](/microsoftsearch/servicenow-knowledge-connector#4-authentication-type) to learn about Microsoft Entra Open ID Connect.
+
+## Microsoft 365 Copilot Connector configuration
+
+This section covers the tasks required for configuring Microsoft 365 Copilot Connector in Microsoft Admin Center (MAC). These set of tasks requires a Global Admin role or a Security Admin role in Microsoft 365 tenant.
 
 1. Sign in to the **Microsoft Admin Center**.
 2. Select **Settings** → **Search & intelligence** in the left navigation pane.
 3. In the **Search & intelligence** page, select **Data sources**.
-4. Click **+ Add Connection** to add a new Graph connection.
+4. Click **+ Add Connection** to add a new Copilot connection.
 5. In the **Connect to data source** page, from the list of connectors, search for **ServiceNow Knowledge**”
 6. Select **ServiceNow Knowledge** connector and select**Next**.
 7. Fill in the following configuration information:
@@ -201,9 +212,9 @@ This section covers the tasks required for configuring Microsoft Graph Connector
    |API namespace     |Enter the API namespace for Scripted REST API created in [Task 3: Create scripted REST API](#task-3-create-scripted-rest-api).         |
 
 8. Select **Authorize** once a desired authentication type is chosen based on the guidance provided in the table in [Deployment role requirements](#deployment-role-requirements) and the respective values are given.
-9. Microsoft Graph Connector connects to the ServiceNow REST API to get authorized and ask for a consent to allow the authorization; select **Allow** for it. 
+9. Microsoft 365 Copilot Connector connects to the ServiceNow REST API to get authorized and ask for a consent to allow the authorization; select **Allow** for it. 
    When the authorization is successfully completed, the authorization fields will have a green check
-10. Choose to enable or disable **_rollout to limited audience_** for staged rollout of this graph connector so that it can be tested with limited set of users before it’s rolled out to the whole organization.
+10. Choose to enable or disable **_rollout to limited audience_** for staged rollout of this connector so that it can be tested with limited set of users before it’s rolled out to the whole organization.
 11. Check **Notice** checkbox to authorize Microsoft to create an index of third-party data in Microsoft 365 tenant subject to the configurations.
 12. Create **Create** to create the connector.
 13. In the status page, it’ll show the connection status as either a **Success** or **Failure** message. A sync will be triggered in the background and its status will also be indicated.
@@ -212,14 +223,14 @@ This section covers the tasks required for configuring Microsoft Graph Connector
 
 ## ESS agent configuration
 
-This section outlines the steps to configure the newly created Microsoft Graph Connector above within ESS Agent as a knowledge source.
+This section outlines the steps to configure the newly created Microsoft 365 Copilot Connector above within ESS Agent as a knowledge source.
 
 1. Sign in to Copilot Studio as an Environment Maker (https://copilotstudio.microsoft.com).
 2. Open **ESS Agent**.
 3. Select **Knowledge** from the top-navigation pane and select **+ Add Knowledge**.
 4. Select **ServiceNow** from the list of connector options shown in the **Add knowledge** dialog box.
-5. In the **Select ServiceNow connection** dialog box, it will list all the ServiceNow connections available within the current Copilot Studio environment, including the ones created by the tenant admins, which should show the Microsoft Graph Connection created in the previous section, under **Created by your admin** section.
-6. Select the connector what has been created in [Microsoft Graph Connector Configuration](#microsoft-graph-connector-configuration)
+5. In the **Select ServiceNow connection** dialog box, it will list all the ServiceNow connections available within the current Copilot Studio environment, including the ones created by the tenant admins, which should show the Microsoft 365 Copilot Connection created in the previous section, under **Created by your admin** section.
+6. Select the connector what has been created in [the previous section](#microsoft-365-copilot-connector-configuration).
 7. Select **Add** to complete the configuration.
 8. Confirm the newly created connector is in **Ready** state in the Microsoft Admin Center before the connector is being used in the agent.
 9. Once the connector is ready, validate the connection by asking relevant queries in the Copilot Studio maker experience in the **Test** panel.
@@ -227,17 +238,17 @@ This section outlines the steps to configure the newly created Microsoft Graph C
 
 ## Troubleshooting
 
-[ServiceNow Knowledge Microsoft Graph connector](/microsoftsearch/servicenow-knowledge-connector) – Troubleshooting section
+[ServiceNow Knowledge Microsoft 365 Copilot connector](/microsoftsearch/servicenow-knowledge-connector) – Troubleshooting section
 
 ## References
 
 For Custom Setup and complete configuration documentation, see:
 
-- [ServiceNow Knowledge Microsoft Graph connector](/microsoftsearch/servicenow-knowledge-connector)
+- [ServiceNow Knowledge Microsoft 365 Copilot connector](/microsoftsearch/servicenow-knowledge-connector)
 
 - [Semantic indexing for Microsoft 365 Copilot](/microsoftsearch/semantic-index-for-copilot)
 
-- [Staged rollout for Microsoft Graph connectors](/MicrosoftSearch/staged-rollout-for-graph-connectors)
+- [Staged rollout for Microsoft 365 Copilot connectors](/MicrosoftSearch/staged-rollout-for-graph-connectors)
 
 - [Map your non-Azure AD Identities](/MicrosoftSearch/map-non-aad)
 
