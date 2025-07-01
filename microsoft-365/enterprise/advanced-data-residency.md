@@ -33,7 +33,7 @@ The following workloads are included in ADR. For more information, see:
 - [Microsoft Teams](m365-dr-workload-teams.md)
 - [Microsoft 365 Copilot](m365-dr-workload-copilot.md)
 - [Microsoft Defender for Office P1 and Exchange Online Protection](m365-dr-workload-mdo-p1.md)
-- [Office for the Web](m365-dr-workload-office-for-web.md)
+- [Microsoft 365 web apps (formerly "Office for the Web")](m365-dr-workload-office-for-web.md)
 - [Viva Connections](m365-dr-workload-viva-connections.md)
 - [Microsoft Purview](m365-dr-workload-purview.md)*
   - [Data Loss Prevention](m365-dr-workload-purview.md#data-security---data-loss-prevention-dlp)
@@ -44,7 +44,7 @@ The following workloads are included in ADR. For more information, see:
   - [Data Lifecycle Management (DLM)](m365-dr-workload-purview.md#risk--compliance---data-lifecycle-management-dlm)
 
 > [!NOTE]
-> *The Microsoft Purview services list mentioned above includes all services covered as part of the Advanced Data Residency commitment as of November 2024. Additional Microsoft Purview services are not currently supported.
+> *The Microsoft Purview services list mentioned above includes all services covered as part of the Advanced Data Residency commitment as of July 2025. Additional Microsoft Purview services are not currently supported.
 
 ## Licensing and Purchase
 
@@ -62,11 +62,9 @@ The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterpr
   - Microsoft 365 Business Basic, Standard, or Premium (including SKUs without Microsoft Teams)
   - Microsoft Teams Enterprise, EEA, or Essentials
 
-Geographic availability is updated as available.
-
 ### Licensing Requirements
 
-Customers must cover 100% of paid licenses in the tenant with ADR add-on license for the tenant to receive data residency for ADR workloads. See the table directly below for an example.
+Customers must cover 100% of paid licenses in the _Tenant_ with ADR add-on license for the _Tenant_ to receive data residency for ADR workloads. See the table directly below for an example.
 
 | ADR-related SKU | Available Licenses | Allocated Licenses | ADR Required Licenses |
 | --- | --- | --- | --- |
@@ -79,10 +77,10 @@ Customers must cover 100% of paid licenses in the tenant with ADR add-on license
 
 Customers who purchase Multi-Geo licenses for their tenant don't have to also pay for ADR for the same licenses. You avoid 'double licensing' a single seat for two different data residency programs. For example, if a customer would normally require 15,000 ADR licenses to satisfy the program requirements, but they also have 4,000 Multi-Geo licenses, then they're only required to purchase 11,000 ADR licenses. The two programs combined would cover the normal ADR program requirement of 100% user coverage.
 
-To discover how many ADR licenses a tenant has assigned, you can access the _Data Location Card_ in the Microsoft 365 admin center under **Admin > Settings > Org Settings > Organization Profile > Data Location**. This page will display the Required License Count, Current ADR License Count, and License Expiration date.
+To view/determine the number of assigned ADR licenses for your _Tenant_, you can access the _Data Location Card_ in the Microsoft 365 admin center under **Admin > Settings > Org settings > Organization profile > Data location**. This page will display the _Required License Count_, _Current ADR License Count_, and _License Expiration date_.
 
 > [!NOTE]
-> Recent changes made to a tenant’s licensing count may require 24-48 hours to reflect in the Data Location Card.
+> This information may be delayed by 24-48 hours when changes are made to a _Tenant's_ licensing count.
 
 ### Tenants with a mix of Commercial and Education subscriptions
 
@@ -100,7 +98,7 @@ If any customer tenant data covered by the Advanced Data Residency feature is no
 
 To determine if a tenant needs to perform a data migration the customer administrator should visit the "Data location" section in the Microsoft 365 admin center by navigating to  **Admin > Settings > Org settings > Organization profile > Data location**. From here, the customer administrator can see the current location of the customer's data-at-rest.
 
-After receiving the Advanced Data Residency licenses and applying them to the customer's tenant, the customer administrator must select the option displayed on the Data Location page to initiate the data migration process for ADR workloads that do not currently reside in their _Local Region Geography_.
+After receiving the Advanced Data Residency licenses and applying them to the customer's _Tenant_, the customer administrator must select the option displayed on the Data Location page to initiate the data migration process for ADR workloads that do not currently reside in their _Local Region Geography_.
 
 #### Microsoft 365 Admin Center Data Location
 
@@ -127,13 +125,13 @@ The "Data location" section in the Microsoft 365 admin center (referenced in the
 
 Microsoft adheres to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for service availability and uses reasonable efforts to complete an Advanced Data Residency add-on customer data migration within 12 months from the time the customer administrator selects the option to initiate migration. However, large, complex customers, and situations outside of Microsoft's control, may require more time for migration to complete.
 
-Data moves are a back-end service operation with minimal impact to a customer's operations. For information related to specific workloads, customer administrators can refer to the "Migration" sections in the following Workload Data Residency Capabilities pages: [Exchange Online](m365-dr-workload-exo.md#migration), [SharePoint and OneDrive](m365-dr-workload-spo.md#migration-with-advanced-data-residency), [Microsoft Teams](m365-dr-workload-teams.md#migration), [Microsoft 365 Copilot](m365-dr-workload-copilot.md#migration-and-user-experience), [Microsoft Defender for Office P1](m365-dr-workload-mdo-p1.md#migration), [Office for the Web](m365-dr-workload-office-for-web.md#migration), [Viva Connections](m365-dr-workload-viva-connections.md#migration), [Microsoft Purview](m365-dr-workload-purview.md#migration), and [Other Services](m365-dr-workload-other.md).
+Data moves are a back-end service operation with minimal impact to a customer's operations. For information related to specific workloads, customer administrators can refer to the "Migration" sections in the following Workload Data Residency Capabilities pages: [Exchange Online](m365-dr-workload-exo.md#migration), [SharePoint and OneDrive](m365-dr-workload-spo.md#migration-with-advanced-data-residency), [Microsoft Teams](m365-dr-workload-teams.md#migration), [Microsoft 365 Copilot](m365-dr-workload-copilot.md#migration-and-user-experience), [Microsoft Defender for Office P1](m365-dr-workload-mdo-p1.md#migration), [Microsoft 365 web apps (formerly known as "Office for the Web"](m365-dr-workload-office-for-web.md#migration), [Viva Connections](m365-dr-workload-viva-connections.md#migration), [Microsoft Purview](m365-dr-workload-purview.md#migration), and [Other Services](m365-dr-workload-other.md).
 
 ### During and After your Migration
 
 No action is needed from the customer while Microsoft moves each ADR workload and associated customer tenant data to the customer's eligible _Local Region Geography_.
 
-Customer administrators can visit the Message center or "Data location" section within the Microsoft 365 admin center throughout the migration process to review any migration notices and see when each workload service completes migration. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Settings > Org settings > Organization profile > Data location**.
+Customer administrators can visit the Message center or "Data location" section within the Microsoft 365 admin center throughout the migration process to review any migration notices and see when each workload service completes migration. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Admin > Settings > Org settings > Organization profile > Data location**.
 
 The following screenshots are examples of the Microsoft 365 admin center Data location view that an ADR customer can expect to see during and after their migration.
 
@@ -164,6 +162,8 @@ For more information on Migration, customer administrators can refer to the foll
 [Overview and Definitions - Microsoft 365 Enterprise](m365-dr-overview.md#migrationsmoves)
 
 [Where your Microsoft 365 customer data is stored - Microsoft 365 Enterprise](o365-data-locations.md)
+
+[Learn More about the Data Location Card - Microsoft 365 Enterprise](m365-dr-data-location.md)
 
 ### What does the Advanced Data Residency (ADR) License Information display?
 
