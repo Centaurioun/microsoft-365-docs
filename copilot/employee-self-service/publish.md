@@ -44,13 +44,17 @@ Terms to know:
 1. Specify the version number. It's recommended to export as **Managed** if the solution will deploy to another nondev environment.
 1. You can see the export status on the **Solutions** page. The status banner will update when the export is complete.
 1. Select **Download** to download the exported solution and save it in a preferred folder.
-1. Choose the desired Power Platform environment to deploy and test this exported solution.
-1. Ensure all the dependencies required for customization are already available in the target environment. If the dependencies aren't available, imports will fail. The following dependencies need to be installed in the desired environment:
+
+>[!IMPORTANT]
+>[No edits are allowed in the downloaded package, as they will cause the upload to fail.]
+
+9. Choose the desired Power Platform environment to deploy and test this exported solution.
+10. Ensure all the dependencies required for customization are already available in the target environment. If the dependencies aren't available, imports will fail. The following dependencies need to be installed in the desired environment:
     1. ESS agent
     1. Any third-party ISV packages used in customization
-1. Select **Solutions** options from the left navigation pane within the Power Platform environment you selected.
-1. Select the **Import Solution** option to import the file you downloaded in step nine.
-1. Select the downloaded file using the **Browse** button in the right pane.
+11. Select **Solutions** options from the left navigation pane within the Power Platform environment you selected.
+12. Select the **Import Solution** option to import the file you downloaded in step nine.
+13. Select the downloaded file using the **Browse** button in the right pane.
 
 ## Set up authentication
 

@@ -360,15 +360,12 @@ You can incorporate knowledge sources into agents during initial creation, after
 1. Provide a meaningful name and description, then choose **Add**.
 1. The site or set of files you chose appear in your **Knowledge** page.
 
->[!TIP]
->The ESS agent begins using the **Description** field to identify the right knowledge source for user queries when the total number of knowledge sources exceeds 25. Therefore, plan to provide detailed and relevant information for the description. [Learn more about best practices for creating a description.](/microsoft-copilot-studio/advanced-generative-actions#best-practices)
-
 ## Customize Starter prompts
 
 **Starter prompts** help you roll out the ESS agent efficiently to your organization. With starter prompts, users already have a few ready-to-go prompts to use. Creating starter prompts helps your organization decrease the time to value.
 
 >[!TIP]
->Identify the most asked questions by your users to form the base of your starter prompts.
+>Identify the most asked questions by your users to form the base of your starter prompts. Identifying the most accurate answers to these questions helps build trust with your users.
 
 1. Open the **Employee Self-Service** agent in Copilot Studio and navigate to the **Overview** page.
 1. Select the **Edit** button in **Starter prompts.**
