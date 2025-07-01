@@ -14,7 +14,8 @@ ms.date:     06/29/2025
 
 # Manage people data and related experiences from the Microsoft 365 admin center
 
-The _People settings_ section in the Microsoft 365 admin center is a unified single location for IT admins to manage all people-related settings in their organization.
+The _People settings_ section in the Microsoft 365 admin center is a unified single location for IT admins to manage all people data and experiences related settings in their organization.
+
 > __How to access the People settings section__
 
 1. __Sign in to the Microsoft 365 admin center__ with an account that has the necessary admin role.
