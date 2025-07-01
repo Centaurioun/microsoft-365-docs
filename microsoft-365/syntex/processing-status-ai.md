@@ -131,7 +131,7 @@ The activity panel displays a list of file processing events, including:
 - Processing status: **In progress**, **Completed**, or **Failed**
 - Date and time of the event
 
-    ![Screenshot of the activity panel in a SharePoint library.](../media/content-understanding/processing-status-activity-panel.png)
+    ![Screenshot of the activity panel in a SharePoint library.](../media/content-understanding/processing-status-activity-panel-autofill.png)
 
 > [!NOTE]
 > If no files or more than 30 files are selected, the activity pane displays the processing status for the entire library, rather than for individual files.
