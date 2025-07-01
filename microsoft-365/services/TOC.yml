@@ -47,6 +47,9 @@ items:
 
             - name: Microsoft Syntex
               items:
+                - name: Try out Syntex services
+                  href: ../syntex/promo-syntex.md
+
                 - name: Autofill columns
                   items: 
                     - name: Overview 
@@ -92,8 +95,14 @@ items:
                       href: ../syntex/esignature-overview.md
                     - name: Admin setup 
                       href: ../syntex/esignature-setup.md
-                    - name: Create a signature request 
-                      href: ../syntex/esignature-send-requests.md
+                    - name: Create a signature request
+                      items:
+                        - name: Create a request from Word
+                          href: ../syntex/esignature-create-request-word.md
+                        - name: Create a request from PDF
+                          href: ../syntex/esignature-send-requests.md
+                    - name: Cancel a signature request 
+                      href: ../syntex/esignature-cancel-request.md
                     - name: Review and sign a request 
                       href: ../syntex/esignature-review-sign-requests.md
                     - name: Track and manage using Approvals 
@@ -343,6 +352,8 @@ items:
                   href: ../backup/backup-privacy-security.md
                 - name: FAQs
                   href: ../backup/backup-faq.md
+                - name: Video library
+                  href: ../backup/backup-video-library.md
                 - name: Microsoft 365 Backup Storage
                   items:
                     - name: Overview
