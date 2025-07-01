@@ -38,7 +38,7 @@ __To assign the People Administrator role to a user:__
 
 1. Save your changes.
 
-Once the role has been assigned, that user can navigate to __Settings > Org settings > People settings__ and will have full access to configure those settings (just like a Global Admin would).
+Once the role is assigned, that user can navigate to __Settings > Org settings > People settings__ and have full access to configure those settings (just like a Global Admin would).
 
 __Release and future updates__
 
