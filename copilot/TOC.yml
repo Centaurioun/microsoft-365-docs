@@ -157,8 +157,6 @@ items:
     items:
     - name: Overview
       href: copilot-tuning-overview.md
-    - name: Employee Self-Service agent
-      href: /employee-self-service/overview.md
     - name: Tuning process
       href: copilot-tuning-process.md
     - name: FAQ
