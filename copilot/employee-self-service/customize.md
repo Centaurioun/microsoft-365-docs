@@ -125,7 +125,7 @@ Tips on writing this disclaimer:
 
 The Employee Self-Service agent comes with several out-of-the-box Topics to get you started. Each of these topics can be customized by the maker and tested before publishing it to the broader set of users. These customizations reflect in all surfaces where the agent is published.
 
-The following Topics are available:
+The following Topics are available in the current package version 1.0.0.69:
 
 |Topic |Type |Trigger |Enabled (default) |When to use |
 |------|-----|--------|------------------|------------|
@@ -138,8 +138,9 @@ The following Topics are available:
 |[System] - Response Preparation |Topic |On generated response |On |Add an official source badge with a custom disclaimer message for authoritative responses. </br>Known issue: This badge shows only in Copilot chat and can't be tested in Copilot Studio. |
 |[System] - User Context - Init variables |Topic |On redirect |On |Improve performance by updating and caching user context attributes to default values. </br>*No customizations available*. |
 |[System] - User Context - Validate |Topic |Activity received |On |User context attributes refreshed. </br>*No customizations available*. |
-|Agent handoff - [Scenario name] |Topic |By agent |Off | |
+|Agent handoff - [Scenario name] |Topic |By agent |Off |Handing off to another live agent without passing context |
 |Conversation Start |System Topic |On conversation start |On |Initializes the user context attributes with default values. The maker can customize the welcome message. |
+|Microsoft Self Help |System Topic |Unknown topic |Off | |
 
 ### Customize the Topics as an Environment Maker
 
@@ -298,7 +299,7 @@ Enable the Topic if your organization wants to use it. Update the trigger phrase
 **Requirement to use:** None </br>
 Edit the default template for each error message that you want to change to a custom response. Delete the Topic if you don't want any custom messages.
 
-#### [System] Log Telemetry Event (Advanced)
+#### [System] Log Telemetry Event
 
 **Default:** On
 
@@ -314,6 +315,52 @@ Customization is optional.
 1. Don't edit "On redirect". Keep the default.
 1. Edit EventName.
 1. Edit Message.
+
+#### [System] Microsoft Self Help
+
+**Default:** Off
+
+**Topic JTBD:** Enables first-party connector that provides Microsoft 365 IT self help for employees.
+
+>[!NOTE]
+>This Topic is turned off by default so that your organization can use its own specific knowledge base for employee self help. Even if this Topic is enabled, it's designed to trigger only unknown intents. This means that a query doesn't match the configured knowledge sources and/or other custom Topics in the agent.
+
+**Maker JTBD:** Enable or disable based on organizational needs.
+
+**Maker - what to customize:** None.
+
+#### Agent handoff - [scenario name]
+
+**Default:** Off
+
+**Topic JTBD:** Hand off template for other live agents without passing context.
+
+**Maker JTBD:** Trigger statements redirect to the configured agent.
+
+![Screenshot of this Topic in use.](media/agent-handoff-scenario-name.png)
+
+**Maker - what to customize:**
+
+Requirement to use:
+
+1. Enable the Topic.
+1. Update trigger statements.
+1. Configure agent name, description, and the URL for the target agent.
+
+**Instructions:**
+
+|Step |Action |Expected result |
+|-----|-------|----------------|
+|1 |Open the ESS agent in Copilot Studio. |ESS agent available to customize |
+|2 |Navigate to **Topics** to see the list of Topics. |Shows custom Topics |
+|3 |Select **Agent handoff - [scenario name]** |Topic opens in the design canvas |
+|4 |Select the first node **Trigger**. |Topic node expands to show the description of what the Topic does. |
+|5 |Customize the Topic description to include specific keywords that should redirect users to the target agent. |Topic description updates |
+|6 |Select the second node **Message**. Choose the adaptive card titled **Media**. |Shows **Edit adaptive card** |
+|7 |Edit adaptive card shows designer popup window where you can configure three text blocks. |TextBlock - [continue with agent name] - specify a caption.</br> TextBlock - [This agent specializes in requests like [task] and can help you with the next steps.] - add a description for the target agent.</br> Action.OpenURL:</br> Title = set to any title for the target agent.</br>URL = provide the target agent URL. |
+|8 |**Save** the changes in the designer popup window. |Changes are saved |
+|9 |Save the changes with the **Save** button in Topics. |Changes are saved |
+|10 |Test the configured trigger word using the test pane in Copilot Studio. |The target agent is invoked. |
 
 ## Customize data retrieval Topics to prevent incorrect responses
 
@@ -360,6 +407,18 @@ You can incorporate knowledge sources into agents during initial creation, after
 1. You can choose to add a set of files from SharePoint or add a site. If you add a site, all the files in the site are used as a knowledge source.
 1. Provide a meaningful name and description, then choose **Add**.
 1. The site or set of files you chose appear in your **Knowledge** page.
+
+#### SharePoint knowledge filtering
+
+At times there’s a requirement to filter knowledge content from SharePoint personalized to the employee based on some of their profile attributes such as “country/location”, “project code”, “department”, and more.
+
+The ESS Agent using SharePoint knowledge source relies on search index and metadata to identify the profile attributes applied while performing the search query.  So, to apply the knowledge filters a Keyword Query Language (KQL) should be updated in the configuration.
+
+Note that the KQL for SharePoint Search recognizes profile attributes mapped to metadata of a content as “managed properties”, which are managed by SharePoint/Search Administrators.  The exact “managed property” should be identified and used in the KQL.
+
+For example, to retrieve the knowledge content based on an employee’s “company code”, this profile attribute should be available during the runtime to have it substituted in KQL query.  If the “managed property” for this profile attribute is “RefinableString100”, then the following KQL query should be added under “Advanced settings” of SharePoint knowledge source, where the profile attribute value is set in the variable “ESS_UserContext_Company_Code”:
+
+additionalSearchTerms: (NOT HIDEFROMSEARCH:1) AND (RefinableString100:All OR RefinableString100:{Global.ESS_UserContext_Company_Code})
 
 ## Customize Starter prompts
 
