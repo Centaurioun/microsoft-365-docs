@@ -1,7 +1,7 @@
 ---
 ms.date: 07/02/2025
 title: "Manage SharePoint Embedded containers in Purview for Copilot Notebooks, Copilot Pages, or Loop workspaces"
-ms.reviewer: dancost, tonchan
+ms.reviewer: dancost, tonchan, abisuresh
 ms.author: jenz
 author: jenzamora
 manager: jtremper
