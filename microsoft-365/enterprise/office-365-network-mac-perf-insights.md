@@ -56,7 +56,7 @@ We are detecting WebSocket (WSS) connection failures to the domain: `*.cloud.mic
   
 #### 3. Network provider devices are affecting your network
 
-There is one or more cloud proxy-like services that are affecting your connectivity to Microsoft 365 services. These services are causing higher latency and lower throughput for users in your network as compared to other users in your area.
+There is one or more network intermediary services that are affecting your connectivity to Microsoft 365 services. These services are decrypting traffic to Microsoft 365 and maybe doing some inspection or manipulation which may result in an unsupported configuration state.
 
 - 3a What does this insight mean?
 
