@@ -22,7 +22,7 @@ description: Learn how to try Microsoft Syntex services during a limited offerin
 
 Microsoft Syntex provides powerful content management and productivity services that let you do more with your documents. You can process, analyze, create, sign, manage, and enhance them with ease.
 
-Through December 2025, your organization can use included monthly capacity for some of these services when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out Syntex capabilities, such as document processing, document tagging, and content assembly, to see how you can use them to streamline processes in your organization.
+Through December 2025, your organization can use [included monthly capacity](#included-monthly-capacity) for some of these services when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out Syntex capabilities, such as document processing, document tagging, and content assembly, to see how you can use them to streamline processes in your organization.
 
 ## Get started
 
@@ -34,7 +34,7 @@ If you want to try some of these services, here are the steps to follow:
 
 3. [Start using the Syntex services](syntex-overview.md#document-and-image-services).
 
-## Monthly included capacity
+## Included monthly capacity
 
 You'll get a limited amount of usage each month during the offering period. The following table shows the units of service and capacity limits your organization can use at no charge for each month. Capacity limits shown are per tenant, not per user.
 
