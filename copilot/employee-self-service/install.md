@@ -20,7 +20,7 @@ appliesto:
 # Install the Employee Self-Service agent
 
 >[!NOTE]
->The Employee Self-Service agent is currently in preview. Deployment processes are subject to change before this product becomes generally available.
+>The Employee Self-Service agent is currently in on-demand preview. Deployment processes are subject to change before this product becomes generally available.
 
 After completing the required steps in the [preparation](prepare.md) stage, you can install the Employee Self-Service (ESS) agent in a specific Power Platform environment.
 

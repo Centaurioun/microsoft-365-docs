@@ -20,7 +20,7 @@ appliesto:
 # Prepare to deploy the Employee Self-Service agent
 
 >[!NOTE]
->The Employee Self-Service agent is currently in preview. Deployment processes are subject to change before this product becomes generally available.
+>The Employee Self-Service agent is currently in on-demand preview. Deployment processes are subject to change before this product becomes generally available.
 
 Preparation is the first step to deploying the Employee Self-Service (ESS) agent. First, you need to meet the [prerequisites](prerequisites.md) The following roles are required to prepare the agent for deployment.
 
