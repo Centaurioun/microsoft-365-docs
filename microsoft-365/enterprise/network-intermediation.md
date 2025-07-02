@@ -42,7 +42,7 @@ The provisions of this article are focused on Microsoft 365 cloud applications a
 
 ### __Why You Should Not decrypt or manipulate Microsoft 365 Traffic at the network layer__
 
-#### ![Network decryption being performed for Microsoft 365 traffic by a network intermediation device, this isn't a supported scenario.](media/network-intermediation/tls-intermediation.png)
+#### ![Diagram showing network decryption being performed for Microsoft 365 traffic by a network intermediation device. This isn't a supported scenario.](media/network-intermediation/tls-intermediation.png)
 
 Manipulating Microsoft 365 traffic typically means using a proxy or firewall to decrypt SSL/TLS, scan the data to perform some inspection tasks, then re-encrypt it. Microsoft strongly advises against this for its cloud services. Here’s why:
 
