@@ -322,6 +322,9 @@ You need the following permissions to retrieve Template data from Dataverse.
 
 |Microsoft Dataverse |ISSG_WQL_COPILOT |Dataflow Maker, Environment Maker, System Admin for the environment  |
 
+>[!NOTE]
+>If the least privileged principles need to be followed for this account on Dataverse environment, the permission required for this account is **Read Organization** in Power Platform. Follow the instructions for creating a custom role with least privileged access and assign it to this account.
+
 ### Templates included in the solution
 
 The following Templates and their associated Copilot Topics are listed here:
