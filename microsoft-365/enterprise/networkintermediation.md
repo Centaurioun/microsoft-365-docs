@@ -15,7 +15,7 @@ ms.subservice: network
 
 # Understanding implications when using network intermediation to decrypt or manipulate Microsoft 365 traffic at the network layer.
 
-### __Summary__
+#### __Summary__
 
 Microsoft 365 is Software-as-a-Service that provides productivity and collaboration opportunities through a distributed set of cloud-hosted applications and services.
 
@@ -39,11 +39,9 @@ This article outlines Microsoft recommendations and support position for Microso
 
 The provisions of this article are focused on Microsoft 365 cloud applications and services, and these provisions do not apply to on-premises based versions of Microsoft products. Microsoft 365 users may see different effects if these provisions are not followed, depending on the kind of Microsoft 365 service.
 
-<IMAGE>
-
 ### __Why You Should Not decrypt or manipulate Microsoft 365 Traffic at the network layer__
 
-__Why You Should Not decrypt or manipulate Microsoft 365 Traffic at the network layer__
+#### ![Network decryption being performed for Microsoft 365 traffic by a network intermediation device, this is not a supported scenario.](media/networkintermediation/tlsintermediation.png)
 
 Manipulating Microsoft 365 traffic typically means using a proxy or firewall to decrypt SSL/TLS, scan the data to perform some inspection tasks, then re-encrypt it. Microsoft strongly advises against this for its cloud services. Here’s why:
 
@@ -57,7 +55,7 @@ Manipulating Microsoft 365 traffic typically means using a proxy or firewall to
 
 In summary, decrypting Microsoft 365 traffic harms more than helps: It breaks things, slows performance, and wastes effort on already-secure traffic.
 
-__Impact Examples: Copilot and QUIC _(Why It Matters to Users)___
+#### __Impact Examples: Copilot and QUIC _(Why It Matters to Users)___
 
 Real-world examples show how inspecting Microsoft 365 can directly hurt user experience:
 
@@ -67,9 +65,7 @@ Real-world examples show how inspecting Microsoft 365 can directly hurt user ex
 
 These examples illustrate a broader point: Microsoft designs its cloud and clients to work together optimally. A proxy in the middle is not part of that design – it’s an element that tends to muck things up__.__
 
- 
-
-__Microsoft’s Network Insights: Detecting Problematic patterns like decryption of Microsoft 365 traffic at the network layer__
+#### __Network Insights in admin center: Detecting Problematic patterns like decryption of Microsoft 365 traffic at the network layer__
 
 Microsoft provides tools to help admins discover if their network is misconfigured for Microsoft 365. Network Insights in the Microsoft 365 Admin Center surfaces telemetry about your users’ connectivity. Two relevant insights are:
 
@@ -81,11 +77,9 @@ These insights appear on the __[Microsoft 365 connectivity dashboard](https://a
 
 _(See reference: [Microsoft 365 Network Insights - Microsoft 365 Enterprise | Microsoft Learn](/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-worldwide))_
 
-__Conclusion and Key Takeaways__
+#### __Conclusion and Key Takeaways__
 
 Invest in a network path that trusts Microsoft 365’s security and optimizes performance, instead of trying to inspect it yourself. Microsoft has made it clear: the best way to secure Microsoft 365 is to use Microsoft 365’s built-in capabilities, and the best way to deliver Microsoft 365 is via direct, unfiltered connectivity. Organizations that continue to funnel Microsoft traffic through legacy SSL break-and-inspect systems will pay a price in user experience – slower performance, broken features, and more complaints – all for negligible security benefit.
-
-__Key takeaways:__
 
 - _Treat Microsoft 365 traffic as trusted._ Use Microsoft’s published endpoints to identify it, and allow it to bypass your generic internet filters. This doesn’t mean no security – it means relying on Microsoft 365’s security (which is very robust) instead of yours for that traffic.
 
