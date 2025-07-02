@@ -40,9 +40,6 @@ If you start to run out of storage for your SharePoint sites, you can use the Of
 > If you bought your subscription through Volume Licensing or a Cloud Solution Provider (CSP), you can't buy **Office 365 Extra File Storage** directly from Microsoft. Contact your representative or partner for help.
 > For information about OneDrive storage, see [Set the default storage space for OneDrive users](/onedrive/set-default-storage-space).
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
 
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).

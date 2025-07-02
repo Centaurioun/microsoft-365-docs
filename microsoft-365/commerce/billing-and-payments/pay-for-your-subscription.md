@@ -43,9 +43,6 @@ You can manage payment methods whenever you need to. To learn how to add, change
 
 **Just want to find out where to send your invoice payment?** If you currently pay your invoice by wire transfer, see [Where do I send my wire transfer payment?](#where-do-i-send-my-wire-transfer-payment)
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/p/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
