@@ -21,7 +21,7 @@ description: Learn how to configure the Multi-Geo In-Region Routing.
 
 # Configure Multi-Geo In-Region Routing
 
-This article describes the process of configuring multi-geo in-region routing.
+This article describes the process of configuring Multi-Geo In-Region Routing (IRR).
 
 ## Overview
 
@@ -131,6 +131,6 @@ The types of errors are:
 
 The following SMTP errors indicate a temporary system error. An email server is expected to retry message delivery in such cases:
 
-- 451 4.4.3 Temporary server error. Please try again later ATTR3.4
-- 451 4.3.2 Temporary server error. Please try again later ATTR55
-- 451 4.4.3 Temporary server error. Please try again later ATTR55.1
+- **451 4.4.3 Temporary server error. Please try again later ATTR3.4**
+- **451 4.3.2 Temporary server error. Please try again later ATTR55**
+- **451 4.4.3 Temporary server error. Please try again later ATTR55.1**
