@@ -23,7 +23,7 @@ Microsoft 365 Copilot and [Microsoft 365 Copilot Chat](/copilot/overview) have a
 
 ## Web search
 
-When web search is enabled, Microsoft 365 Copilot and Microsoft 365 Copilot Chat may fetch information from the Bing search service when information from the web will help provide a better, more grounded response. Admin controls and a user-level **Web content** toggle (only for Microsoft 365 Copilot) are available to [manage whether web search is enabled](#controls-available-to-manage-web-search) in your environment.
+When web search is enabled, Microsoft 365 Copilot and Microsoft 365 Copilot Chat may fetch information from the Bing search service when information from the web helps to provide a better, more grounded response. Admin controls and a user-level **Web content** toggle (only for Microsoft 365 Copilot) are available to [manage whether web search is enabled](#controls-available-to-manage-web-search) in your environment.
 
 ### How web search works
 
