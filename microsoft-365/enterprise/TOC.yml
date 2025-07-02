@@ -12,7 +12,7 @@ items:
       items: 
         - name: "Implications when using network intermediation to decrypt or manipulate
             Microsoft 365 traffic "
-          href: networkintermediation.md
+          href: network-intermediation.md
           displayName: TLS, SSL, inspection, break and inspect, decrypt, inspect, network inspection
         - name: Microsoft 365 networking connectivity overview
           href: microsoft-365-networking-overview.md
