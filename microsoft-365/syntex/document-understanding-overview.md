@@ -21,7 +21,7 @@ description: Learn about the unstructured document processing model in SharePoin
 # Overview of unstructured document processing in SharePoint
 
 > [!NOTE]
-> Through December 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of unstructured document processing and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
+> Through December 2025, you can try out a [limited amount](promo-syntex.md#included-monthly-capacity) of unstructured document processing and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 <!---</br>
 
