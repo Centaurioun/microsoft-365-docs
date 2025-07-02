@@ -7,6 +7,7 @@ title: Understanding implications when using network Intermediation to decrypt o
 description: Understanding implications when using network intermediation to decrypt or manipulate Microsoft 365 traffic at the network layer.
 author:      roshansabapaty # GitHub alias
 ms.author:   roshanp # Microsoft alias
+manager: pandrew
 ms.service: microsoft-365-enterprise
 ms.topic: article
 ms.date:     07/01/2025
@@ -41,7 +42,7 @@ The provisions of this article are focused on Microsoft 365 cloud applications a
 
 ### __Why You Should Not decrypt or manipulate Microsoft 365 Traffic at the network layer__
 
-#### ![Network decryption being performed for Microsoft 365 traffic by a network intermediation device, this is not a supported scenario.](media/networkintermediation/tlsintermediation.png)
+#### ![Network decryption being performed for Microsoft 365 traffic by a network intermediation device, this is not a supported scenario.](media/network-intermediation/tls-intermediation.png)
 
 Manipulating Microsoft 365 traffic typically means using a proxy or firewall to decrypt SSL/TLS, scan the data to perform some inspection tasks, then re-encrypt it. Microsoft strongly advises against this for its cloud services. Here’s why:
 
