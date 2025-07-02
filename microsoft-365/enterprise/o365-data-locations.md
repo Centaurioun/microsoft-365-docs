@@ -1,8 +1,7 @@
 ---
 title: "Microsoft 365 data locations"
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
 ms.reviewer: deanw
 ms.date: 02/24/2025
 audience: ITPro
@@ -29,6 +28,7 @@ This article helps you to understand how you can determine current data residenc
 
 > [!NOTE]
 > The **Indonesia**, **Malaysia**, and **Chile** local data center regions launched in June 2025. See [Advanced Data Residency](advanced-data-residency.md) if your organization requires the migration of your Microsoft 365 customer data to Indonesia, Malaysia, or Chile and data residency commitments for these countries.
+
 > [!NOTE]
 > For tenants in Australia, Brazil, Canada, Chile, France, Germany, India, Indonesia, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, and United Kingdom, more workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
 

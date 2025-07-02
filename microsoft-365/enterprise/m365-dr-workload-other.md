@@ -1,9 +1,8 @@
 ---
 title: Data Residency for Other Microsoft 365 Services
 description: Learn about Data Residency for Other Microsoft 365 Services
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
