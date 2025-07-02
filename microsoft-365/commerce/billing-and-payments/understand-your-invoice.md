@@ -55,17 +55,17 @@ Changes you make to an existing subscription appear on the monthly invoice aroun
 
 If you acquire multiple new subscriptions on different days within a month (excluding additions to current subscriptions), you receive separate invoices for each.
 
-> ### Example using Microsoft 365 Business Premium
+> **Example using Microsoft 365 Business Premium**
 >
 > Let's say a Microsoft 365 Business Premium subscription is purchased on **May 2, 2025**.
 >  
-> #### Monthly Billing
+> **Monthly Billing**
 >
 > - **First invoice**: Received by **May 3, 2024**, covering **May 2-June 1, 2025**.
 > - **Recurring invoices**: Issued by the **3rd of each month**, starting **in June**, for that month's service.
 > - **Mid-term changes**: If the customer adds seats on **June 15th**, the prorated charge appears on an invoice with a different cadence around July 5th. These prorated changes don't appear on recurring charges invoices, but the recurring invoices will show the new seat total.
 >
-> #### Annual Billing
+> **Annual Billing**
 >
 > - **First invoice**: Received by **May 3, 2024**, covering **May 2-June 1, 2025**.
 > - **Renewal invoice**: Issued by **May 3, 2026**, for the next annual term.
