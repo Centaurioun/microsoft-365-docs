@@ -1,5 +1,5 @@
 ---
-ms.date: 06/10/2025
+ms.date: 07/02/2025
 title: "Manage Copilot Pages, Copilot Notebooks, and Loop components in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
@@ -63,6 +63,7 @@ To utilize all features, including at mentions and Loop workspace sharing, it's 
 - [Permissions](cpcn-loop-permission.md)
 - [Copilot Pages and Notebooks Admin toggles](cpcn-admin-configuration.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
 - [Loop Summary of Compliance, Lifecycle, Governance](cpcn-compliance-summary.md)
 - [Loop Storage](cpcn-storage.md)
 - [Loop Admin toggles](loop-admin-configuration.md)
