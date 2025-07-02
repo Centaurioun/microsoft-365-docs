@@ -32,3 +32,5 @@ items:
   href: usage-analytics.md
 - name: Known issues and limitations
   href: known-issues-limitations.md
+- name: Responsible AI FAQ
+  href: rai-faq.md
