@@ -2,6 +2,7 @@
 title: "Advanced data residency in Microsoft 365"
 ms.author: v-fahasen
 author: fhasen-msft
+manager: v-nihmi
 ms.reviewer: deanw
 ms.date: 02/24/2025
 audience: ITPro
