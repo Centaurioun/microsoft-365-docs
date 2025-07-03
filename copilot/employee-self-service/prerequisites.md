@@ -20,7 +20,7 @@ appliesto:
 # Prerequisites to deploy the Employee Self-Service agent
 
 >[!NOTE]
->The Employee Self-Service agent is currently in on-demand preview. Deployment processes are subject to change before this product becomes generally available.
+>The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
 You'll need to confirm the following prerequisites have been met before deploying the Employee Self-Service agent (ESS) to your organization.
 
@@ -49,7 +49,7 @@ If ESS Agent is going to be consumed by users without Copilot licenses, it requi
 
 The ESS agent performs LLM compute for the following scenarios in addition to the included Topics:
 
-- Enabling Alchemy incurs LLM compute for determining the type of user query.
+- Enabling Microsoft 365 Self-Help incurs LLM compute for determining the type of user query.
 - Live agent hand-off package invokes LLM compute for summarizing the chat history and handing off to the live agent.
 
 Use the following sample benchmarks to understand capacity planning for ESS agent deployment:

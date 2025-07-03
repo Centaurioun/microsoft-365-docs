@@ -20,7 +20,7 @@ appliesto:
 # Customize the Employee Self-Service agent
 
 >[!NOTE]
->The Employee Self-Service agent is currently in on-demand preview. Deployment processes are subject to change before this product becomes generally available.
+>The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
 Customization is how you make the Employee Self-Service (ESS) agent work in the best way to suit your organization's needs.
 

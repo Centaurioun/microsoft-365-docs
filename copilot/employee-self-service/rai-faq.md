@@ -20,7 +20,7 @@ appliesto:
 # Responsible AI FAQ for the Employee Self-Service agent
 
 >[!NOTE]
->The Employee Self-Service agent is currently in on-demand preview. Deployment processes are subject to change before this product becomes generally available.
+>The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
 ## What is Employee Self-Service? 
 

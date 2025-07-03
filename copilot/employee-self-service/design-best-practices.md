@@ -20,7 +20,7 @@ appliesto:
 # How to craft agent instructions for high-quality responses in Employee Self-Service
 
 >[!NOTE]
->The Employee Self-Service agent is currently in on-demand preview. Deployment processes are subject to change before this product becomes generally available.
+>The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
 The Employee Self-Service (ESS) agent is a template in Microsoft Copilot studio that can be infinitely customized to assist users in your organization with HR and IT tasks. Use guidance here to learn more about how to craft high-quality responses using a mix of techniques to fit your business needs. Learn more about agents in Copilot Studio.
 
