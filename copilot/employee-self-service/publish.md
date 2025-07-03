@@ -115,3 +115,19 @@ Approval is the final step to deploy the ESS agent to your users through Integra
 |Environment Maker |1. Use the **Copy link** option to get the link to the ESS agent.</br> 2. Paste the link into a browser.</br> 3. This link redirects to the Teams interface for the ESS agent, which provides a link for Microsoft 365 Copilot Chat.</br> This is an option to mitigate any publishing lags. |Pass/Fail|
 
 You'll need to follow the publishing steps again if any of these steps fail.
+
+## Uninstall the ESS agent
+
+Follow these steps in case you need to delete the ESS agent.
+
+1. Sign in to Copilot Studio.
+1. Select the environment where ESS is installed and needs to be uninstalled.
+1. Select **Agents** from the left navigation.
+1. Select **Employee Self Service (Preview)**.
+1. In the ESS agent page, select the ellipsis (**...**) in the upper right pane adjacent to **Test**.
+1. Select the **Delete** option from the dropdown.
+1. A popup window appears directing you to Power Apps Solutions.
+1. Select **Go to Power Apps Solutions**.
+1. Identify the **Preferred solution** that you set up during the [installation](install.md) stage for saving customizations in the agent.
+1. In the solutions page, select the vertical ellipsis in the context menu and choose **Delete**.
+1. Choose **Delete** in the confirmation dialog.

@@ -28,6 +28,19 @@ The Employee Self-Service (ESS) agent helps your employees by answering policy r
 - Take action on essential HR and IT tasks without navigating to multiple tools and workspaces. ESS can even help run diagnostics on Microsoft 365 products and services.
 - Complete other tasks important for your organization. The ESS agent includes preconfigured templates, but IT admins can also customize it for their employee workflows. You can even connect it to third-party HR and IT systems.
 
+## What's new
+
+|Version |Changes |
+|--------|--------|
+|1.0.0.64 |Hard agent handoff base template without context passing (Topic is disabled by default). |
+|1.0.0.66 |Internal licensing validation |
+|1.0.0.62 |ESS package name to Employee Self-Service Agent |
+|1.0.0.61 |No functional changes |
+|1.0.0.60 |Added default starter prompts |
+|1.0.0.59 |Internal naming standards fix |
+|1.0.0.58 |Supported back the UserContext flow among ESS Core package and ISV packages.</br> The UserContext setup is the same as existing way of adding ISV specific user context topics as redirected topics in the topic "[Admin] - User Context - Setup" |
+|1.0.0.71 |  |
+
 ## Get started with the Employee Self-Service agent
 
 The Employee Self-Service agent is built on top of Microsoft 365 Copilot and Copilot Studio. The following articles can help you understand governance, security, privacy, and Responsible AI terms for both Microsoft 365 Copilot and Microsoft Copilot Studio.
