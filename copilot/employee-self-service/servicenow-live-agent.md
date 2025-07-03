@@ -155,7 +155,7 @@ Search for **Conversation interfaces** and choose **Virtual Agent** > **Designer
 
 The following is the format for the URL:
 
-https://<base-url>/sn_va_web_client_app_embed.do?sysparm_skip_load_history=true&sysparm_topic=<topic-id>&sysparm_vasource=ESS
+https://base-url/sn_va_web_client_app_embed.do?sysparm_skip_load_history=true&sysparm_topic=topic-id&sysparm_vasource=ESS
 
 base-url: base URL of the ServiceNow PDI
 
