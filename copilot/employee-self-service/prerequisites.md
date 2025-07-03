@@ -20,7 +20,7 @@ appliesto:
 # Prerequisites to deploy the Employee Self-Service agent
 
 >[!NOTE]
->The Employee Self-Service agent is currently in on-demand preview. Deployment processes are subject to change before this product becomes generally available.
+>The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
 You'll need to confirm the following prerequisites have been met before deploying the Employee Self-Service agent (ESS) to your organization.
 

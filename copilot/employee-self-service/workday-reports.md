@@ -18,7 +18,7 @@ description: "Learn how to create the reports for your Workday integration with 
 # Create reports for your Workday integration
 
 >[!NOTE]
->The Employee Self-Service agent is currently in on-demand preview. Deployment processes are subject to change before this product becomes generally available.
+>The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
 The ESS agent for Workday requires a few user context attributes including **Employee ID**, **First Name**, **Last Name**, **Is Manager**, and more to be passed to execute a scenario. These attributes are retrieved from the user mapping with matching usernames from both Microsoft Entra and Workday.
 
