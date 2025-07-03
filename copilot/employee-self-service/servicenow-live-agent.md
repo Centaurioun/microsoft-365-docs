@@ -73,7 +73,7 @@ Now select the **Submit** button.
 
 ### Step 3: Virtual Topic creation
 
-Search for **Converstaion interfaces** and choose **Virtual Agent** > **Designer**.
+Search for **Conversation interfaces** and choose **Virtual Agent** > **Designer**.
 
 1. Name: ESS Copilot Summary
 1. Ignore other input boxes
@@ -159,8 +159,29 @@ https://<base-url>/sn_va_web_client_app_embed.do?sysparm_skip_load_history=true&
 
 base-url: base URL of the ServiceNow PDI
 
-topic-id: To get the Topic ID, search for "sys_cs_topic.list". Locate the flow that you created. Select the name and copy "sysId."
+topic-id: To get the Topic ID, search for "sys_cs_topic.list." Locate the flow that you created. Select the name and copy "sysId."
 
 #### Changes on the ESS agent
 
-1. 
+1. Install the ServiceNow Live Agent ISV package.
+1. You may not have been asked to put the ServiceNow Live Agent URL. In this case, visit the solutions page. You'll likely see **One environment variable needs to be updated.** Select that message and put the URL.
+1. Enable topic ServiceNow Live Agent IT Escalate.
+
+## Validate the integration of ESS and ServiceNow
+
+This flow operates on the expectation that the user used to sign into CPS is already created in ServiceNow PDI.
+
+1. Open the ESS agent and go to the **Test** window.
+1. Type **Talk to Live Agent** then select **Chat now.**
+1. The summary review box appears. You can modify the message as required.
+1. Select **Submit**.
+1. The **Issue summary submitted** message shows with a **Start chat** link.
+![Screenshot of the validation flow in the ESS agent.](media/snow-live-5.png)
+1. Select **Start chat.** In the new tab that opens, sign in with your ServiceNow credentials.
+1. You should see the summary shown in step four.
+
+If you successfully completed these validation steps, the integration is successful.
+
+## Agent orchestration
+
+Agent orchestration is out of scope for this guide.
