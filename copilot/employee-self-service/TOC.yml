@@ -23,6 +23,8 @@ items:
       href: servicenow.md
     - name: ServiceNow HRSD and ITSM
       href: servicenow-hrsd-itsm.md
+    - name: ServiceNow Live agent
+      href: servicenow-live-agent.md
     - name: Workday
       href: workday.md
       items:
