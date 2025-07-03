@@ -167,38 +167,44 @@ For more information on Migration, customer administrators can refer to the foll
 
 ### What does the Advanced Data Residency (ADR) License Information display?
 
-The _Data Location Card_ has been updated for tenants who have purchased license for Advanced Data Residency (ADR).  Tenants who have active, or recently active ADR subscriptions will see a new field called “Advanced Data Residency (ADR) License Information”.  This section will display three fields related to your tenant’s licensing:
+The _Data Location Card_ has been updated for _Tenants_ who have purchased licenses for Advanced Data Residency (ADR). _Tenants_ who have active or recently active ADR subscriptions will see a new field called “Advanced Data Residency (ADR) License Information”. This section will display three fields related to a _Tenant’s_ licensing:
 
-**Required Seat Count**: This field will display the number of M365 seats that require ADR coverage.
+**Required Seat Count**: This field will display the number of Microsoft 365 seats that require ADR coverage.
 
-**License Count**: This field will display the number of active ADR/ADR-E licenses assigned to the tenant.
+**License Count**: This field will display the number of active ADR/ADR-E licenses assigned to the _Tenant_.
 
-**License Expiration**: This field will display the expiration date of the ADR license assigned to the tenant.
+**License Expiration**: This field will display the expiration date of the ADR license assigned to the _Tenant_.
 
-### What happens if I have insufficient seat coverage for ADR?
+### What happens if a _Tenant_ has insufficient seat coverage for ADR?
 
 The _Data Location Card_ will now display warnings and notifications related to Seat Coverage.
 
-In the event that a tenant may have fallen below the required number of licenses required for ADR coverage, a notification message is displayed with text “The Advanced Data Residency (ADR) license may not have sufficient seat coverage. Without full seat coverage, the tenant's data may be relocated outside the _Local Region Geography_. Please consult with your Microsoft representatives to understand the requirements on sufficient seat coverage. Please procure additional ADR licenses promptly to ensure continued data residency within the _Local Regional Geography_.” A link to the Marketplace will also be provided to assist in procurement of ADR licenses.
+In the event that a _Tenant_ falls below the required number of licenses required for ADR coverage, a notification message is displayed with the text, “The Advanced Data Residency (ADR) license may not have sufficient seat coverage. Without full seat coverage, the tenant's data may be relocated outside the _Local Region Geography_. Please consult with your Microsoft representatives to understand the requirements on sufficient seat coverage. Please procure additional ADR licenses promptly to ensure continued data residency within the _Local Regional Geography_.” A link to _Marketplace_ will also be provided to assist in procurement of ADR licenses.
 
 <Insert screenshot>
 
 If you see this warning message, please reach out to your Microsoft Representatives to understand if your current agreements are properly reflected and what steps, if any, are required to bring the tenant back into compliance.
 
-In the event of a substantial discrepancy between the Required Seat Count and ADR License Count, the _Data Location Card_ will update the _Committed Geography location_ to display the most current and accurate commitments in place (if any) after ADR has been removed.  At this point, data may be relocated, without notification or additional warning, subject to the constraints displayed in the updated _Committed Geography_.
+In the event of a substantial discrepancy between the Required Seat Count and ADR License Count, the _Data Location Card_ will update the _Committed Geography_ location to display the most current and accurate commitments in place (if any) after ADR has been removed. At this point, data may be relocated, without notification or additional warning, subject to the constraints displayed in the updated _Committed Geography_.
 
-### ADR License Warnings & Notifications Related to License Expiry
+### ADR License Warnings and Notifications Related to License Expiry
 
-The _Data Location Card_ is designed to help tenant administrators track when ADR licenses are nearing expiry. The _Data Location Card_ experience will now display the following warnings and alerts in relation to license expiry:
+The new _Data Location Card_ is designed to help tenant administrators track when ADR licenses are nearing expiry and will display the following warnings and alerts in relation to license expiry:
 
-**90 Days before license expiration**: A warning statement will appear indicating that “The Advanced Data Residency (ADR) licenses are about to expire.  Please renew the licenses to maintain ADR coverage and ensure the data remains protected within your _Local Regional Geography_”. A link to _Marketplace_ will also be provided to assist in procurement of ADR licenses.
-
-<Insert screeenshot>
-
-**On Expiration**: Starting on the day a tenant’s licenses expired, the DLC card will display a message indicating “The Advanced Data Residency (ADR) licenses have expired. Without a valid ADR license, the tenant’s data may be relocated outside the _Local Region Geography_. Please renew promptly to ensure continued data residency within the _Local Region Geography_.” A link to the Marketplace will also be provided to assist in procurement of ADR licenses. It is important to note that while your ADR license has expired, Microsoft will provide a grace period to bring the tenant into compliance. During this grace period, you will not see changes to the _Committed Geography_ and the tenant’s data will not be relocated.
+**Appproaching License Expiration**: A warning statement will appear on the DLC indicating that “The Advanced Data Residency (ADR) licenses are about to expire. Please renew the licenses to maintain ADR coverage and ensure the data remains protected within your _Local Regional Geography_”. A link to _Marketplace_ will also be provided to assist in procurement of ADR licenses.
 
 <Insert screeenshot>
 
-If the tenant had not yet opted into migration by this point, the option to migrate will become unavailable until a valid ADR license is procured.  In these use cases, the DLC will also display an error message that states “The Advanced Data Residency (ADR) license has expired and\or does not have sufficient seats to enable migration. Please renew or procure the necessary ADR licenses to enable migration and ensure data residency within the _Local Regional Geography_.”
+**On License Expiration**: Starting on the day a _Tenant’s_ licenses expire, the DLC will display a message indicating “The Advanced Data Residency (ADR) licenses have expired. Without a valid ADR license, the tenant’s data may be relocated outside the _Local Region Geography_. Please renew promptly to ensure continued data residency within the _Local Region Geography_.” A link to _Marketplace_ will also be provided to assist in procurement of ADR licenses.
 
-**After Grace Period**: After the grace period provided, Microsoft will remove the durable commitment on data location provided by ADR. At this point the DLC card will update the _Committed Geography_ location to display the most current and accurate commitments in place (if any) after ADR has been removed. At this point, data may be relocated, without notification or additional warning, subject to the constraints displayed in the updated _Committed Geography_.  
+<Insert screeenshot>
+
+It is important to note that if a _Tenant's_ ADR licenses have expired, Microsoft will provide a grace period to bring the _Tenant_ into compliance. During this grace period, the DLC will not reflect any changes to the _Committed Geography_ and the _Tenant’s_ data will not be relocated.
+
+<Insert screeenshot>
+
+If a _Tenant_ has not opted-in to migration by the end of the grace period, the option to migrate will become unavailable until valid ADR licenses are procured. In these use cases, the DLC will also display an error message that states “The Advanced Data Residency (ADR) license has expired and\or does not have sufficient seats to enable migration. Please renew or procure the necessary ADR licenses to enable migration and ensure data residency within the _Local Regional Geography_.”
+
+<Insert screenshot>
+
+**After Grace Period**: After the grace period provided, Microsoft will remove the durable commitment on data location provided by ADR and the _Committed Georaphy_ location in the DLC will update to display the most current and accurate commitments in place (if any) after ADR has been removed. At this point, data may be relocated, without notification or additional warning, subject to the constraints displayed in the updated _Committed Geography_.
