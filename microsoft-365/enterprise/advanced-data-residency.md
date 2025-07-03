@@ -1,8 +1,8 @@
 ---
 title: "Advanced data residency in Microsoft 365"
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.reviewer: deanw
 ms.date: 02/24/2025
 audience: ITPro
@@ -92,7 +92,7 @@ When a customer has a mix of commercial and education license types including bo
 
 ## Data Migration Management
 
-If any customer tenant data covered by the Advanced Data Residency feature is not stored at rest within the customer's eligible _Local Region Geography_, then a data migration is needed to address customer data residency compliance and tenant location requirements fulfilled by ADR.
+If any customer tenant data covered by the Advanced Data Residency feature isn't stored at rest within the customer's eligible _Local Region Geography_, then a data migration is needed to address customer data residency compliance and tenant location requirements fulfilled by ADR.
 
 ### Starting Data Migration
 
@@ -105,7 +105,7 @@ After receiving the Advanced Data Residency licenses and applying them to the cu
 :::image type="content" alt-text="Screenshot of Microsoft 365 Admin Center Data location View." source="media\data-residency\1-adr-microsoft-365-data-location-card_0225.png" lightbox="media\data-residency\1-adr-microsoft-365-data-location-card_0225.png":::
 
 > [!NOTE]
-> The data migration process described in the sections below will not initiate until the customer administrator completes this task.
+> The data migration process described in the sections below won't initiate until the customer administrator completes this task.
 
 The following screenshot is an example of the Microsoft 365 admin center Data location view that an ADR customer can expect to see before opting for migration to their _Local Region Geography_.
 
@@ -113,7 +113,7 @@ The following screenshot is an example of the Microsoft 365 admin center Data lo
 
 :::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move_0225.png" alt-text="Screenshot of Data Location View Before Migration.":::
 
-Once a customer administrator chooses the option to initiate migration, they are provided with confirmation of their opt-in date and migration initiation as shown in the screenshot below.
+Once a customer administrator chooses the option to initiate migration, they're provided with confirmation of their opt-in date and migration initiation as shown in the screenshot below.
 
 #### After Migration Opt-in
 
@@ -153,7 +153,7 @@ Given the complex nature of services included in an E3 or E5 license, the migrat
 
 ### Status Notification
 
-Microsoft does not provide a granular status to indicate progress toward migration completion for individual customer scenarios.
+Microsoft doesn't provide a granular status to indicate progress toward migration completion for individual customer scenarios.
 
 Customer administrators can stay informed of migration updates through Message center notifications and by reviewing the "Data location" section within the Microsoft 365 admin center to see when a workload completes migration to their _Local Region Geography_. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Admin > Settings > Org settings > Organization profile > Data location**.
 

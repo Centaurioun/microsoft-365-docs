@@ -1,9 +1,9 @@
 ---
 title: Overview of Product Terms Data Residency
 description: Learn about Product Terms Data Residency
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
