@@ -5,6 +5,8 @@ items:
   items:
     - name: Overview of the deployment process
       href: deploy-overview-alm.md
+    - name: Prerequisites
+      href: prerequisites.md
     - name: Prepare for deployment
       href: prepare.md
     - name: Install the Employee Self-Service agent
