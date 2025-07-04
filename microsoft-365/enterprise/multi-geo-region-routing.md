@@ -69,18 +69,16 @@ To adopt an MX target in mx.microsoft, follow these steps:
 
    If you're using a third-party email gateway (for example, Proofpoint), leave the MX record value so that it stays pointing to the third party. Instead, change the smarthost name that the third party uses to relay your mail to Exchange Online after the third party completes the processing on their side. The smarthost name for the domain enabled with IRR needs to be changed so that this changed smarthost name is set to be the "DnssecMxValue." This changing of the smarthost name ensures that inbound email to Exchange Online for domains using third-party email gateways are processed by Exchange Online using IRR.
 
-1. Verify that the new MX is working via the Inbound SMTP Email test by performing the following step: 
-    1. Expand the **Test Steps** dropdown in the **Microsoft Remote Connectivity Analyzer** page (https://testconnectivity.microsoft.com/tests/O365InboundSmtp/input).
-    1. Verify that the Mail Exchanger ending in mx.microsoft was tested successfully.
+1. Verify that the new MX is working via the Inbound SMTP Email test by expanding the **Test Steps** dropdown in the **Microsoft Remote Connectivity Analyzer** page (https://testconnectivity.microsoft.com/tests/O365InboundSmtp/input) and choosing the precise values.
 
-       > [!NOTE]
-       > You may have to retry these steps under the **Test Steps** dropdown depending on DNS caching.
+   > [!NOTE]
+   > You may have to retry these steps under the **Test Steps** dropdown depending on DNS caching.
 
-    Once you implement the preceding two steps, the following screenshot is displayed:
+    Once you complete verifying whether the new MX is working via the Inbound SMTP Email test, the following screenshot is displayed:
 
     :::image type="content" source="../media/connectivity-test-results.png" alt-text="Screenshot that shows the results of the Connectivity Test process." lightbox="../media/connectivity-test-results.png":::
 
-    This resultant screen denotes that the Mail Exchanger ending in mx.microsoft was successfully tested and that the new MX is working as expected.
+    This resultant screen denotes that "the Mail Exchanger ending in mx.microsoft was successfully tested" and that "the new MX is working as expected".
 
 1. Change the priority of the legacy MX pointing to mail.protection.outlook.com to **30**; change the priority of the MX record with the value **contosotest-com.o-v1.mx.microsoft** to priority **0** (highest priority).
 1. Delete the legacy MX record ending with "mail.protection.outlook.com," "mail.eo.outlook.com," or "mail.protection.outlook.de." Then, update the TTL for the MX record ending with "mx.microsoft" to **3600 seconds**.
