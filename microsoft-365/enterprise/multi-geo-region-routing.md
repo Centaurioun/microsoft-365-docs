@@ -87,7 +87,7 @@ To adopt an MX target in mx.microsoft, follow these steps:
 
 ## Testing IRR
 
-Once you comply with the [Prerequisites](#prerequisites), test whether the IRR feature is working as expected by performing the following steps:
+Once you comply with the [Prerequisites](#prerequisites) and the steps in [Adopting an MX target](#adopting-an-mx-target), test whether the IRR feature is working as expected by performing the following steps:
 
 1. Connect to an Admin account for your test tenant using Exchange Online PowerShell by running the following command:
   
