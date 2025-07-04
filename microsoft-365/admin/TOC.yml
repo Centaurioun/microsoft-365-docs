@@ -274,6 +274,8 @@ items:
               href: manage/manage-copilot-agents-integrated-apps.md
             - name: Manage shared agents
               href: manage/manage-shared-agents.md
+            - name: Manage embedded knowledge agents
+              href: manage/manage-embedded-knowledge-agents.md
             - name: Microsoft Graph connectors for Microsoft Search
               href: /microsoftsearch/connectors-overview
          - name: Monitor Microsoft 365 activity by using reports
@@ -419,7 +421,7 @@ items:
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
          - name: Manage Microsoft feedback for your organization
-           href: /admin/manage/manage-feedback-ms-org.md
+           href: manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
          - name: Power BI usage analytics

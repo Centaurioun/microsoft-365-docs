@@ -1,9 +1,9 @@
 ---
 title: Data Residency for Microsoft 365 Copilot
 description: Learn about data residency for Microsoft 365 Copilot.
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: concept-article
@@ -52,6 +52,9 @@ Required Conditions:
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_
 1. For existing _Tenant_ that has data stored in a _Macro Region Geography_, the _Tenant_ Global Admin must opt in to move the _Tenant_ data into the _Local Region Geography_.
 1. The Microsoft 365 Copilot subscription customer data is provisioned in _Local Region Geography_.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 **Commitment:**
 

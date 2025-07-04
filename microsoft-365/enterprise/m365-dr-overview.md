@@ -1,9 +1,9 @@
 ---
 title: Overview and Definitions
 description: Learn about Data Residency feature Overview and Definitions
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
@@ -33,8 +33,8 @@ In order to promote clarity in the capability descriptions on data residency fun
 |Macro Region Geography 1 - EMEA |Data centers in Austria, Finland, France, Ireland, Italy, Netherlands, Poland, Spain, Sweden <br/> <br/> **Note:** For tenants with a default geography of Israel; data can be stored in Macro Region Geography 1 – EMEA or additional datacenters located in their default geography (i.e., Israel). |
 |Macro Region Geography 2 - Asia Pacific |Data centers in Australia, Hong Kong Special Administrative Region, Indonesia, Japan, Malaysia, New Zealand, Singapore, South Korea <br/> <br/> **Note:** For tenants with a default geography of Taiwan; data can be stored in Macro Region Geography 2 – Asia Pacific or additional datacenters located in their default geography (i.e., Taiwan). |
 |Macro Region Geography 3 - Americas |Data centers in Brazil, Chile, Mexico, United States |
-|Local Region Geography |Australia, Brazil, Canada, France, Germany, India, Indonesia, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, United Kingdom |
-|Future Local Region Geography | Future planned data center regions: Austria, Chile, Denmark, Greece, Saudi Arabia |
+|Local Region Geography |Australia, Brazil, Canada, Chile, France, Germany, India, Indonesia, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, United Arab Emirates, United Kingdom |
+|Future Local Region Geography | Future planned data center regions: Austria, Denmark, Greece, Saudi Arabia |
 |Geography |_Local Region Geography, Future Local Region Geography_, or _Macro Region Geography_ |
 |Satellite Geography |If a customer subscribes to the Multi Geo service, then they can set policy at a user level to store customer data in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_ |
 |Microsoft Entra ID |Microsoft Entra ID is the new name for [Azure Active Directory](/entra/fundamentals/new-name) |
@@ -100,10 +100,8 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 1. Product Terms: Exchange Online, SharePoint, OneDrive, Microsoft Teams and Microsoft 365 Copilot provisioned in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States have a commitment for customer data residency expressed in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all). For more information, see the [Product Terms Data Residency page](m365-dr-product-terms-dr.md).
 1. _Multi Geo_ subscription: allows customers to assign data location for Exchange Online, SharePoint, OneDrive, Microsoft Teams and Microsoft 365 Copilot to any supported _Geography_. For more information, see [Multi Geo Data Residency](microsoft-365-multi-geo.md).
 1. _Advanced Data Residency_ subscription provides data residency commitments for an expanded set of Microsoft 365 services in any _Local Region Geography_. For more information, see the [Advanced Data Residency page](advanced-data-residency.md).
-#### **Table 2: Available Data Residency by Workload**
 
-> [!NOTE]
-> Viva Topics has been retired as of February 22, 2025. Therefore, Viva Topics is no longer a supported workload in ADR. For more details, please visit [aka.ms/TopicsFebSupport](https://aka.ms/TopicsFebSupport).
+#### **Table 2: Available Data Residency by Workload**
 
 | Service Name | Product Terms | Multi-Geo | ADR |
 |:-----|:-----|:-----|:-----|
@@ -130,6 +128,7 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 | Australia | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
 | Brazil | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
 | Canada | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
+| Chile | M-A | M-A | M-A | M-A | A | A | A | A |
 | European Union | P-M | P-M | P-M | P-M | - | - | - | - |
 | France | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
 | Germany | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A |
@@ -169,6 +168,7 @@ The following Regional Geographies can store data at rest.
 |Australia  |Sydney, Melbourne  |
 |Brazil  |Rio, Campinas  |
 |Canada   |Quebec City, Toronto  |
+|Chile   |Santiago  |
 |European Union   |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Italy (Milan), Netherlands (Amsterdam), Poland (Warsaw), Spain (Madrid), Sweden (Gävle, Sandviken, Staffanstorp)   |
 |France   |Paris, Marseille   |
 |Germany   |Frankfurt, Berlin    |

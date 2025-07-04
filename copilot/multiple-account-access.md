@@ -1,9 +1,9 @@
 ---
 title: "Multiple account access to Copilot for work and school documents"
 description: "Learn about multiple account access to Copilot for work and school documents."
-ms.author: camillepack
-author: camillepack
-manager: scotv
+ms.author: danbrown
+author: DHB-MSFT
+manager: dansimp
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ ms.collection:
 - magic-ai-copilot
 - must-keep
 hideEdit: true
-ms.date: 05/14/2025
+ms.date: 06/30/2025
 ---
 
 # Multiple account access to Copilot for work and school documents
@@ -72,12 +72,13 @@ The end-user experience for blocked users viewing work and school documents is a
 
 ## Apps where multiple account access to Copilot is available
 
-As of May 14, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
+As of June 30, 2025, multiple account access is rolling out gradually in the following apps, starting with the version listed.
 
 ### On Android devices
 
 - Outlook: Version 4.2511.0
 - PowerPoint: Version 16.0.18623.20090
+- Word: Version 16.0.18920.20000
 
 ### On iOS devices
 
