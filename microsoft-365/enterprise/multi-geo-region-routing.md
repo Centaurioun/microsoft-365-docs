@@ -76,7 +76,7 @@ To adopt an MX target in mx.microsoft, follow these steps:
        > [!NOTE]
        > You may have to retry these steps under the **Test Steps** dropdown depending on DNS caching.
 
-    Once you complete the verification process, you view the resultant screen as depicted in the following screenshot:
+    Once you implement the preceding two steps, the following screenshot is displayed:
 
     :::image type="content" source="../media/connectivity-test-results.png" alt-text="Screenshot that shows the results of the Connectivity Test process." lightbox="../media/connectivity-test-results.png":::
 
