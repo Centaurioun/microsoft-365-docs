@@ -65,15 +65,16 @@ To adopt an MX target in mx.microsoft, follow these steps:
 
    The output (indicating the successful execution of the command) provides the MX value for the domain. This value—**contosotest-com.o-v1.mx.microsoft**—is the name that the new MX record points to for the domain you're enabling with IRR.
 
-1. Take the "DnssecMxValue" value, navigate to the DNS registrar hosting the domain, add a new MX record using the value **contosotest-com.o-v1.mx.microsoft**, set the TTL to the lowest possible value (but not lower than 30 seconds), and set the priority of the new MX record to **20**.
+1. Take the "DnssecMxValue" value, navigate to the DNS registrar hosting the domain; add a new MX record using the value **contosotest-com.o-v1.mx.microsoft**; set the TTL to the lowest possible value (but not lower than 30 seconds); and set the priority of the new MX record to **20**.
 
    If you're using a third-party email gateway (for example, Proofpoint), leave the MX record value so that it stays pointing to the third party. Instead, change the smarthost name that the third party uses to relay your mail to Exchange Online after the third party completes the processing on their side. The smarthost name for the domain enabled with IRR needs to be changed so that this changed smarthost name is set to be the "DnssecMxValue." This changing of the smarthost name ensures that inbound email to Exchange Online for domains using third-party email gateways are processed by Exchange Online using IRR.
 
 1. Verify that the new MX is working via the Inbound SMTP Email test by performing the following step: 
-    1. Execute the test steps in https://testconnectivity.microsoft.com/tests/O365InboundSmtp/input.
+    1. Expand the **Test Steps** dropdown in the **Microsoft Remote Connectivity Analyzer** page (https://testconnectivity.microsoft.com/tests/O365InboundSmtp/input).
+    1. Verify that the Mail Exchanger ending in mx.microsoft was tested successfully.
 
        > [!NOTE]
-       > You may have to retry this test, depending on DNS caching.
+       > You may have to retry these steps under the **Test Steps** dropdown depending on DNS caching.
 
     Once you complete the verification process, you view the resultant screen as depicted in the following screenshot:
 
@@ -84,9 +85,9 @@ To adopt an MX target in mx.microsoft, follow these steps:
 1. Change the priority of the legacy MX pointing to mail.protection.outlook.com to **30**; change the priority of the MX record with the value **contosotest-com.o-v1.mx.microsoft** to priority **0** (highest priority).
 1. Delete the legacy MX record ending with "mail.protection.outlook.com," "mail.eo.outlook.com," or "mail.protection.outlook.de." Then, update the TTL for the MX record ending with "mx.microsoft" to **3600 seconds**.
 
-## Configuring IRR
+## Testing IRR
 
-Once you comply with the [Prerequisites](#prerequisites), configure the IRR by performing the following steps:
+Once you comply with the [Prerequisites](#prerequisites), test whether the IRR feature is working as expected by performing the following steps:
 
 1. Connect to an Admin account for your test tenant using Exchange Online PowerShell by running the following command:
   
@@ -125,7 +126,7 @@ The types of errors are:
 
 |Error message |Description  |
 |---------|---------|
-|451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information please go to https://go.microsoft.com/fwlink/?linkid=865268     |This SsMTP error is returned when an email server tries to deliver a message to a tenant’s wrong M365 endpoint. However, tenants for whom multi-geo SKU and IRR are enabled shouldn't get this error if the message is being delivered to one of the tenant’s [AllowedMailboxRegions](administering-exchange-online-multi-geo.md).         |
+|451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information please go to https://go.microsoft.com/fwlink/?linkid=865268     |This SMTP error is returned when an email server tries to deliver a message to a tenant’s wrong M365 endpoint. However, tenants for whom multi-geo SKU and IRR are enabled shouldn't get this error if the message is being delivered to one of the tenant’s [AllowedMailboxRegions](administering-exchange-online-multi-geo.md).         |
 
 #### System errors
 
