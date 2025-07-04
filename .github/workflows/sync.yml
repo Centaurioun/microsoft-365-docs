@@ -1,5 +1,8 @@
 name: 'Upstream Sync'
 
+permissions:
+  contents: read
+
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
@@ -14,6 +17,8 @@ on:
 jobs:
   sync_latest_from_upstream:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     name: Sync latest commits from upstream repo
     if: ${{ github.event.repository.fork }}
 
