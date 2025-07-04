@@ -4,7 +4,7 @@ f1.keywords:
 ms.author: lauragra
 author: lauragra
 manager: calvind
-ms.date: 06/17/2025
+ms.date: 07/03/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-copilot
