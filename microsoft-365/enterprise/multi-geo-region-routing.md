@@ -69,7 +69,7 @@ To adopt an MX target in mx.microsoft, follow these steps:
 
    If you're using a third-party email gateway (for example, Proofpoint), leave the MX record value so that it stays pointing to the third party. Instead, change the smarthost name that the third party uses to relay your mail to Exchange Online after the third party completes the processing on their side. The smarthost name for the domain enabled with IRR needs to be changed so that this changed smarthost name is set to be the "DnssecMxValue." This changing of the smarthost name ensures that inbound email to Exchange Online for domains using third-party email gateways are processed by Exchange Online using IRR.
 
-1. Verify that the new MX is working via the Inbound SMTP Email test by expanding the **Test Steps** dropdown in the **Microsoft Remote Connectivity Analyzer** page (https://testconnectivity.microsoft.com/tests/O365InboundSmtp/input) and choosing the precise values.
+1. Verify that the new MX is working via the Inbound SMTP Email test by expanding the **Test Steps** dropdown in the **Microsoft Remote Connectivity Analyzer** page (https://testconnectivity.microsoft.com/tests/O365InboundSmtp/input) and choosing the appropriate values.
 
    > [!NOTE]
    > You may have to retry these steps under the **Test Steps** dropdown depending on DNS caching.
