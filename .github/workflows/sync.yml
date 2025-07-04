@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     name: Sync latest commits from upstream repo
     if: ${{ github.event.repository.fork }}
 
