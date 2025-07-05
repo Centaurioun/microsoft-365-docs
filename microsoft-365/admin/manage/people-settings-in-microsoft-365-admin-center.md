@@ -40,6 +40,7 @@ __To assign the People Administrator role to a user:__
 
 Once the role is assigned, that user can navigate to __Settings > Org settings > People settings__ and have full access to configure those settings (just like a Global Admin would).
 
-__Release and future updates__
+The People settings section includes the settings for 
 
-The People settings section is part of an ongoing effort to improve administrative control over Microsoft 365's people-centric features. Initially (in the first release), it includes the settings for __profile card enrichment__ (add link). More controls will be included in future releases.
+- __Profile card enrichment__ (add link)
+
