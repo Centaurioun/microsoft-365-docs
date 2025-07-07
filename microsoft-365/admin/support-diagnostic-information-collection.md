@@ -52,16 +52,16 @@ Depending on the nature of your support request, the data that Microsoft can acc
 
 - **Organization Identifiable Information (OII)**: Data that can be used to identify a particular tenant, deployment, or organization (generally config or usage data). Here are some examples:
    - Tenant ID (non-GUID)
-   - TenantID (GUID) – due to the existence of many out of boundary TenantID to name mapping tables
+   - TenantID (GUID) – due to the existence of many out of boundary `TenantID` to name mapping tables
    - Tenant usage data
    - Tenant IP Addresses (IPv4) such as tenant's firewall IP address
    - Global Prefix and Subnet ID (first 64 bits of IPv6 address)
-   - Tenant Domain name in e-mail address (joe@**contoso.com**)
+   - Tenant Domain name in e-mail address (such as `joe@contoso.com`)
    - Mapping of organizational GUID to organization
 
 - **End User Identifiable Information (EUII)**: Data that directly identifies or could be used to identify the authenticated user of a Microsoft service. Here are some examples:
    - User-specific IP address (IPv4)
-   - User Principal Name (joe@company.com)
+   - User Principal Name (`joe@company.com`)
    - Address Book Data
    - User's machine Name
    - SIP URI
