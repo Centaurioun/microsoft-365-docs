@@ -45,9 +45,6 @@ When you buy Microsoft business products or services, you can use an existing pa
 > - The option to pay with a bank account is no longer available.
 > - Prepaid cards like stored value cards, Visa gift cards, and MasterCard gift cards aren't accepted as valid payment methods.
 
-> [!TIP]
-> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
