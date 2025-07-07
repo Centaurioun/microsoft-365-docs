@@ -4,7 +4,7 @@ f1.keywords:
 ms.author: emrek
 author: emrekiciman
 manager: calvind
-ms.date: 07/03/2025
+ms.date: 07/08/2025
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-copilot
@@ -23,7 +23,11 @@ This article describes some of the most common issues with Copilot Tuning in the
 
 ## I don't see Copilot Tuning in the admin center settings
 
-If you don't see Copilot tuning in the admin center, make sure you have the required licenses and permissions. You must have an AI Admin role, your tenant must have at least 5,000 Microsoft 365 Copilot add-on licenses, and you must accept the Early Access Preview (EAP) terms to enable the feature.
+If you don't see Copilot tuning in the admin center, make sure you have the required prerequisites in place:
+
+- You must have an AI Admin role.
+- Your tenant must have at least 5,000 Microsoft 365 Copilot add-on licenses.
+- You must accept the Early Access Preview (EAP) terms to enable the feature.
 
 ## Setup is taking more than 5 minutes
 
