@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/22/2025
+ms.date: 06/23/2025
 audience: admin
 ms.topic: concept-article
 ms.custom: intro-overview
@@ -21,7 +21,7 @@ description: Learn how to use AI Builder to create structured or freeform docume
 # Overview of structured and freeform document processing in SharePoint
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of structured and freeform document processing and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
+> Through December 2025, you can try out a [limited amount](promo-syntex.md#included-monthly-capacity) of structured and freeform document processing and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 <!---</br>
 

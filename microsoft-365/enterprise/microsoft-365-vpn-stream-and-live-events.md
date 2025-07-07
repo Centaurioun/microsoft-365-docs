@@ -38,7 +38,7 @@ Microsoft Teams Live events **attendee** traffic (this includes attendees to Tea
 
 Many customers have asked for URL/IP data needed to connect their attendees in Teams events directly from their local internet connection, rather than route the high-volume and latency-sensitive traffic via the VPN infrastructure. Typically, this isn't possible without both dedicated namespaces and accurate IP information for the endpoints, which isn't provided for Microsoft 365 endpoints categorized as **Default**.
 
-Use the following steps to identify and enable direct connectivity for attendee traffic for Teams Events from clients that are using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid routing attendee traffic over VPN while there's high network traffic due to work-from-home scenarios. If possible, we recommend accessing the service through an inspecting proxy. Attendee traffic will connect to the CDN over TCP/UDP 443.
+Use the following steps to identify and enable direct connectivity for attendee traffic for Teams Events from clients that are using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid routing attendee traffic over VPN while there's high network traffic due to work-from-home scenarios. Attendee traffic will connect to the CDN over TCP/UDP 443.
 
 > [!NOTE]
 > Using this solution, there might be service elements that don't resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There might be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
