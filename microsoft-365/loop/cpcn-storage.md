@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
-ms.date: 06/10/2025
+ms.date: 07/02/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -77,4 +77,5 @@ Copilot Pages + Copilot Notebooks container has a maximum size of 25 TB. This li
 - [Permissions](cpcn-loop-permission.md)
 - [Admin toggles](cpcn-admin-configuration.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
+- [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)
