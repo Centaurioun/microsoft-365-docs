@@ -69,7 +69,7 @@ These changes should take approximately 60 minutes to apply across your tenancy.
 > If a Whiteboard is stored in OneDrive and already attached to a meeting, it can't be initiated on a Surface Hub or Microsoft Teams Rooms device. An authenticated user on another device must do so. We plan to enable this functionality in a future release.
 
 > [!NOTE]
-> To enable sharing for Microsoft Teams Room devices, ensure the relevant sharing settings are configured in SharePoint. To learn more, see [Manage sharing settings for SharePoint and OneDrive in Microsoft 365](/sharepoint/turn-external-sharing-on-or-off).
+> If the organization have multiple sites, make sure to **AllowAnonymousMeetingParticipantsToAccessWhiteboards** is enabled for all the sites. This is necessary to ensure proper functionality for meetings involving shared devices across multiple sites.
 
 ## Share in Teams calls
 

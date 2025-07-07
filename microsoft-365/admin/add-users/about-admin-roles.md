@@ -34,9 +34,6 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 
 Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers.
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Watch: What is an admin?
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198028).
