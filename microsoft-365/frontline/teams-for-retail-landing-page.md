@@ -86,7 +86,7 @@ More information: [Frontline team collaboration](flw-team-collaboration.md)
 
 ### Fittings and consultations
 
-Use Bookingsto schedule and manage appointments such as shopping experiences for associates and customers.
+Use Bookings to schedule and manage appointments such as shopping experiences for associates and customers.
 
 **Key apps and capabilities:** Appointments, meetings
 
