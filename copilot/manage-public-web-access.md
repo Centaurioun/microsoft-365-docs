@@ -14,7 +14,7 @@ ms.collection:
 - magic-ai-copilot
 - must-keep
 hideEdit: true
-ms.date: 06/04/2025
+ms.date: 06/27/2025
 ---
 
 # Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat
@@ -23,7 +23,7 @@ Microsoft 365 Copilot and [Microsoft 365 Copilot Chat](/copilot/overview) have a
 
 ## Web search
 
-When web search is enabled, Microsoft 365 Copilot and Microsoft 365 Copilot Chat may fetch information from the Bing search service when information from the web will help provide a better, more grounded response. Admin controls and a user-level **Web content** toggle (only for Microsoft 365 Copilot) are available to [manage whether web search is enabled](#controls-available-to-manage-web-search) in your environment.
+When web search is enabled, Microsoft 365 Copilot and Microsoft 365 Copilot Chat may fetch information from the Bing search service when information from the web helps to provide a better, more grounded response. Admin controls and a user-level **Web content** toggle (only for Microsoft 365 Copilot) are available to [manage whether web search is enabled](#controls-available-to-manage-web-search) in your environment.
 
 ### How web search works
 
@@ -84,7 +84,7 @@ Generated search queries are sent to the Bing search service with user and tenan
 - Answers or features like Rich Captions
 - Social features like Auto Suggest, Trending, and Zero Input
 
-The [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) provide the following additional commitments about the generated search queries sent to the Bing search service:
+The "Microsoft 365 Copilot and Microsoft 365 Copilot Chat" section of the [Product Terms](https://aka.ms/copilot/web-query-terms) provides the following additional commitments about the generated search queries sent to the Bing search service:
 
 - Microsoft has no rights to them other than as needed to provide the service.
 - They aren’t used to improve Bing.
