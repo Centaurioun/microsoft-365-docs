@@ -30,51 +30,45 @@ Access is removed automatically when your support request is closed. If your req
 
 Depending on the nature of your support request, the data that Microsoft can access would belong under one or more of the following categories:
 
-- **Support Data** – All data provided to Microsoft by the customer as part of a customer engagement to obtain support services.
-  - Examples
-    - Support requests from customers and phone conversations, online chat sessions, or remote assistance sessions between support professionals and customers
-    - Case notes and/or records related to support requests from customers
-    - Data provided to Microsoft by the customer as part of support activities
+- **Support Data**: All data provided to Microsoft by the customer as part of a customer engagement to obtain support services. Here are some examples:
+   - Support requests from customers and phone conversations, online chat sessions, or remote assistance sessions between support professionals and customers
+   - Case notes and/or records related to support requests from customers
+   - Data provided to Microsoft by the customer as part of support activities
 
-- **Account Data** – Contact and billing/purchase/payment/license information.
-  - Examples
-    - Customer's provisioning information
-    - Account configuration and billing data
-    - Tenant administrator contact information (for example, tenant administrator's name, address, e-mail address, phone number)
-    - This also includes Licensing and Purchase Information.
+- **Account Data**: Contact, billing, purchase, payment, and/or license information. Here are some examples:
+   - Customer's provisioning information
+   - Account configuration and billing data
+   - Tenant administrator contact information (such as tenant administrator's name, address, e-mail address, phone number)
+   - Licensing and Purchase information
 
-- **System Metadata** – Data generated in the course of running the service.
-  - Examples
-    - Event Logs
-    - Access Control Logs
-    - Account information belonging to Microsoft operations personnel
-    - Microsoft server names/server IPs
-    - Server patching and vulnerability data
-    - Service configuration data
-    - Telemetry (on-prem or cloud)
+- **System Metadata**: Data generated in the course of running the service. Here are some examples:
+   - Event Logs
+   - Access Control Logs
+   - Account information belonging to Microsoft operations personnel
+   - Microsoft server names/server IPs
+   - Server patching and vulnerability data
+   - Service configuration data
+   - Telemetry (on-premises or cloud)
 
-- **Organization Identifiable Information (OII)** – Data that can be used to identify a particular tenant/deployment/organization (generally config or usage data)
-  - Examples
-    - Tenant ID (non-GUID)
-    - TenantID (GUID) – due to the existence of many out of boundary TenantID to name mapping tables
-    - Tenant usage data
-    - Tenant IP Addresses (IPv4) such as tenant's firewall IP address
-    - Global Prefix and Subnet ID (first 64 bits of IPv6 address)
-    - Tenant Domain name in e-mail address (joe@**contoso.com**)
-    - Mapping of organizational GUID to organization
+- **Organization Identifiable Information (OII)**: Data that can be used to identify a particular tenant, deployment, or organization (generally config or usage data). Here are some examples:
+   - Tenant ID (non-GUID)
+   - TenantID (GUID) – due to the existence of many out of boundary TenantID to name mapping tables
+   - Tenant usage data
+   - Tenant IP Addresses (IPv4) such as tenant's firewall IP address
+   - Global Prefix and Subnet ID (first 64 bits of IPv6 address)
+   - Tenant Domain name in e-mail address (joe@**contoso.com**)
+   - Mapping of organizational GUID to organization
 
-- **End User Identifiable Information (EUII)** – Data that directly identifies or could be used to identify the authenticated user of a Microsoft service.
-  - Examples
-    - User-specific IP address (IPv4)
-    - User Principal Name (joe@company.com)
-    - Address Book Data
-    - User's machine Name
-    - SIP URI
+- **End User Identifiable Information (EUII)**: Data that directly identifies or could be used to identify the authenticated user of a Microsoft service. Here are some examples:
+   - User-specific IP address (IPv4)
+   - User Principal Name (joe@company.com)
+   - Address Book Data
+   - User's machine Name
+   - SIP URI
 
-- **End User Pseudonymous Identifiers (EUPI)** – An identifier created by Microsoft tied to the user of a Microsoft service.
-  - Examples
-    - User GUIDs or PUIDs
-    - Session IDs
+- **End User Pseudonymous Identifiers (EUPI)**: An identifier created by Microsoft tied to the user of a Microsoft service. Here are some examples:
+   - User GUIDs or PUIDs
+   - Session IDs
 
 ## How long is diagnostic data retained in Microsoft systems?
 
