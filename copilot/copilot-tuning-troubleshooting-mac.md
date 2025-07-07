@@ -17,7 +17,7 @@ description: Find information about how to troubleshoot issues with the Microsof
 
 # Troubleshoot the Microsoft 365 admin center task fine-tuning
 
-This article describes some of the most common issues with Copilot Tuning in the Microsoft 365 admin center and how to troubleshoot them.
+This article describes some of the most common issues with Copilot Tuning in the Microsoft 365 admin center and how to troubleshoot those issues.
 
 [!INCLUDE [copilot-tuning-preview](includes/copilot-tuning-preview.md)]
 
@@ -31,7 +31,7 @@ If you don't see Copilot tuning in the admin center, make sure you have the requ
 
 ## Setup is taking more than 5 minutes
 
-If the setup takes more than 5 minutes, it might be due to service failures or other issues. If the setup is not completed within an hour, reach out to your Microsoft EAP contact.
+If the setup takes more than 5 minutes, it might be due to service failures or other issues. If the setup isn't completed within an hour, reach out to your Microsoft EAP contact.
 
 ## I accidentally deleted a model
 
