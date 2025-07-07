@@ -1,9 +1,9 @@
 ---
 title: "Understanding Microsoft 365 case creation and diagnostic data access"
-ms.author: camillepack
-author: camillepack
-manager: scotv
-ms.date: 04/07/2025
+ms.author: deniseb
+author: denisembsft
+manager: dansimp
+ms.date: 07/07/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
@@ -38,9 +38,9 @@ Depending on the nature of your support request, the data that Microsoft can acc
 
 - **Account Data** – Contact and billing/purchase/payment/license information.
   - Examples
-    - Customer’s provisioning information
+    - Customer's provisioning information
     - Account configuration and billing data
-    - Tenant administrator contact information (for example, tenant administrator’s name, address, e-mail address, phone number)
+    - Tenant administrator contact information (for example, tenant administrator's name, address, e-mail address, phone number)
     - This also includes Licensing and Purchase Information.
 
 - **System Metadata** – Data generated in the course of running the service.
@@ -58,7 +58,7 @@ Depending on the nature of your support request, the data that Microsoft can acc
     - Tenant ID (non-GUID)
     - TenantID (GUID) – due to the existence of many out of boundary TenantID to name mapping tables
     - Tenant usage data
-    - Tenant IP Addresses (IPv4) such as tenant’s firewall IP address
+    - Tenant IP Addresses (IPv4) such as tenant's firewall IP address
     - Global Prefix and Subnet ID (first 64 bits of IPv6 address)
     - Tenant Domain name in e-mail address (joe@**contoso.com**)
     - Mapping of organizational GUID to organization
@@ -68,7 +68,7 @@ Depending on the nature of your support request, the data that Microsoft can acc
     - User-specific IP address (IPv4)
     - User Principal Name (joe@company.com)
     - Address Book Data
-    - User’s machine Name
+    - User's machine Name
     - SIP URI
 
 - **End User Pseudonymous Identifiers (EUPI)** – An identifier created by Microsoft tied to the user of a Microsoft service.
@@ -83,3 +83,9 @@ Microsoft retains diagnostic data for up to 28 days after it is collected. After
 ## Where is support activity on a customer tenant logged?
 
 Activity performed on a customer tenant is available under Microsoft Entra Audit logs.
+
+When you create a support request and you grant advanced diagnostic consent, the Microsoft Support tenant (`Office365ConciergeSupport.onmicrosoft.com - b4c546a4-7dac-46a6-a7dd-ed822a11efd3`) is added as a service provider for the duration of the support request. Expect to see audit logs in these categories: 
+
+- `Policy`
+- `CrossTenantAccessSettings`
+- `DelegatedAdminServiceProviderConstraints`
