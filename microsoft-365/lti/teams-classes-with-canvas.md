@@ -1,10 +1,12 @@
 ---
 title: Use Microsoft Teams classes with Canvas
-author: DaniEASmith
-ms.author: danismith
-manager: jacktremper
+author: jennplatt
+ms.author: avering
+manager: michal.gideoni
 ms.reviewer: sovaish
-ms.date: 05/26/2021
+last.review.by: avering
+last.review.date: 07/07/2025
+ms.date: 07/07/2025
 audience: admin
 ms.topic: how-to
 ms.service: msteams
@@ -72,29 +74,3 @@ To begin the integration, you need to enable the app in Canvas by enabling the d
    > This step must be performed by a Microsoft tenant admin that can approve apps.
 
 10. Select **Accept**.
-
-## Integrate Teams classes LTI in Canvas
-
-After enabling the sync and approving the Azure app, the Canvas admin can now add the Teams classes LTI app to the Canvas environment so it will appear in the navigation of the Canvas user interface.
-
-**To add the Teams classes LTI app to the Canvas environment**:
-
-1. On the **Apps** tab in **Admin settings**, select **+ App** to add the Teams LTI apps.
-
-   ![external-apps.](media/external-apps.png)
-
-2. For **Configuration Type**, select **By Client ID**.
-
-   ![add app.](media/add-app.png)
-
-3. For **Client ID**, enter **170000000000570** for the Microsoft Teams classes LTI, and then select **Submit**.
-
-4. In the confirmation that appears, verify the app name (Microsoft Teams classes), and then select **Install**.
-
-   The Microsoft Teams classes LTI app is now added to the list of external apps.
-
-## Enabling the LTI app for Canvas courses
-
-To use the LTI app within a course, an instructor of the Canvas course must enable integrations sync. Each course must be enabled by an instructor for a corresponding team to be created; there is no global mechanism for teams creation. This is designed as a precautionary measure to prevent unwanted teams from being created.
-
-Refer your instructors to the [educator documentation](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) for enabling the LTI app for each course and completing the integration setup.
