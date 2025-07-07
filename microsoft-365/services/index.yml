@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/20/2025 #Required; mm/dd/yyyy format
+  ms.date: 06/27/2025 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
   titleSuffix: Microsoft 365
 
@@ -30,7 +30,7 @@ landingContent:
             url: pay-as-you-go-overview.md
       - linkListType: whats-new
         links:
-          - text: What's new
+          - text: Available new services
             url: pay-as-you-go-whats-new.md
 
 # Card 2
@@ -44,6 +44,8 @@ landingContent:
         links:
           - text: Set up pay-as-you-go billing
             url: pay-as-you-go-setup.md
+          - text: Set up a pay-as-you-go budget
+            url: pay-as-you-go-budget.md
 
 # Card 3
   - title: Pay-as-you-go pricing
