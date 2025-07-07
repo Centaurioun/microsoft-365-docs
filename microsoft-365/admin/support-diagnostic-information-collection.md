@@ -1,7 +1,7 @@
 ---
 title: "Understanding Microsoft 365 case creation and diagnostic data access"
 ms.author: deniseb
-author: denisembsft
+author: denisebmsft
 manager: dansimp
 ms.date: 07/07/2025
 audience: Admin
