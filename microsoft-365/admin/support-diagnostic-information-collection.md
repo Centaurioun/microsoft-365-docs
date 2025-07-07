@@ -84,7 +84,7 @@ Microsoft retains diagnostic data for up to 28 days after it is collected. After
 
 Activity performed on a customer tenant is available under Microsoft Entra Audit logs.
 
-When you create a support request and you grant advanced diagnostic consent, the Microsoft Support tenant (`Office365ConciergeSupport.onmicrosoft.com - b4c546a4-7dac-46a6-a7dd-ed822a11efd3`) is added as a service provider for the duration of the support request. Expect to see audit logs in these categories: 
+When you create a support request and you grant advanced diagnostic consent, you see a notification that cross-tenant access settings were updated due to a partner addition. The notification occurs because the Microsoft Support tenant (`Office365ConciergeSupport.onmicrosoft.com - b4c546a4-7dac-46a6-a7dd-ed822a11efd3`) is added as a service provider for the duration of your support request. Expect to see audit logs in these categories:
 
 - `Policy`
 - `CrossTenantAccessSettings`
