@@ -65,7 +65,7 @@ To adopt an MX target in mx.microsoft, follow these steps:
 
    The output (indicating the successful execution of the command) provides the MX value for the domain. This value—**contosotest-com.o-v1.mx.microsoft**—is the name that the new MX record points to for the domain you're enabling with IRR.
 
-1. Take the "DnssecMxValue" value, navigate to the DNS registrar hosting the domain; add a new MX record using the "DnssecMxValue" value returned in Step 3 (for example, contosotest-com.o-v1.mx.microsoft); set the TTL to the lowest possible value (but not lower than 30 seconds); and set the priority of the new MX record to **20**.
+1. Take the "DnssecMxValue" value, navigate to the DNS registrar hosting the domain; add a new MX record using the "DnssecMxValue" value returned in Step 3 (for example, **contosotest-com.o-v1.mx.microsoft**); set the TTL to the lowest possible value (but not lower than 30 seconds); and set the priority of the new MX record to **20**.
 
    > [!WARNING]
    > If you're using a third-party email gateway (for example, Proofpoint), leave the MX record value so that it stays pointing to the third party. Instead, change the smarthost name that the third party uses to relay your mail to Exchange Online after the third party completes the processing on their side. The smarthost name for the domain enabled with IRR needs to be changed so that this changed smarthost name is set to be the "DnssecMxValue." This changing of the smarthost name ensures that inbound email to Exchange Online for domains using third-party email gateways are processed by Exchange Online using IRR.
