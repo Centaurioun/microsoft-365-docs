@@ -32,7 +32,7 @@ To enable IRR for Exchange Online, you need to use PowerShell cmdlets to configu
 ## Prerequisites
 
 1. The domain you want to enable with IRR must be added to the Exchange Admin Center (EAC) as an accepted domain.
-1. For IRR to apply to specific users, you need to make the IRR-enabled domain be the user’s primary domain. Additionally, the user’s PDL must align with the domain’s mail flow region. This alignment ensures that the mail is processed in the same region as the region in which the email is stored. You must use one of the 3-letter codes specified in [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability)as the **PreferredDataLocation** value for the user, as these are the regions that support IRR.
+1. For IRR to apply to specific users, you need to make the IRR-enabled domain be the user’s primary domain. Additionally, the user’s PDL must align with the domain’s mail flow region. This alignment ensures that the mail is processed in the same region as the region in which the email is stored. You must use one of the 3-letter codes specified in [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) as the **PreferredDataLocation** value for the user, as these are the regions that support IRR.
 1. IRR requires the user to have a Microsoft 365 Multi-Geo license and a second license of any SKU type that grants email capabilities.
 1. IRR requires the usage of an MX target in mx.microsoft, a domain that is DNSSEC enabled. If your contosotest.com domain isn't DNSSEC enabled, mail flow continues to work as expected but DNSSEC-validations don't occur. If your contosotest.com domain is DNSSEC enabled, mail flow continues to work and you benefit from the extra security of DNSSEC.
 
@@ -65,9 +65,10 @@ To adopt an MX target in mx.microsoft, follow these steps:
 
    The output (indicating the successful execution of the command) provides the MX value for the domain. This value—**contosotest-com.o-v1.mx.microsoft**—is the name that the new MX record points to for the domain you're enabling with IRR.
 
-1. Take the "DnssecMxValue" value, navigate to the DNS registrar hosting the domain; add a new MX record using the value **contosotest-com.o-v1.mx.microsoft**; set the TTL to the lowest possible value (but not lower than 30 seconds); and set the priority of the new MX record to **20**.
+1. Take the "DnssecMxValue" value, navigate to the DNS registrar hosting the domain; add a new MX record using the "DnssecMxValue" value returned in Step 3 (for example, contosotest-com.o-v1.mx.microsoft); set the TTL to the lowest possible value (but not lower than 30 seconds); and set the priority of the new MX record to **20**.
 
-   If you're using a third-party email gateway (for example, Proofpoint), leave the MX record value so that it stays pointing to the third party. Instead, change the smarthost name that the third party uses to relay your mail to Exchange Online after the third party completes the processing on their side. The smarthost name for the domain enabled with IRR needs to be changed so that this changed smarthost name is set to be the "DnssecMxValue." This changing of the smarthost name ensures that inbound email to Exchange Online for domains using third-party email gateways are processed by Exchange Online using IRR.
+   > [!WARNING]
+   > If you're using a third-party email gateway (for example, Proofpoint), leave the MX record value so that it stays pointing to the third party. Instead, change the smarthost name that the third party uses to relay your mail to Exchange Online after the third party completes the processing on their side. The smarthost name for the domain enabled with IRR needs to be changed so that this changed smarthost name is set to be the "DnssecMxValue." This changing of the smarthost name ensures that inbound email to Exchange Online for domains using third-party email gateways are processed by Exchange Online using IRR.
 
 1. Verify that the new MX is working via the Inbound SMTP Email test by expanding the **Test Steps** dropdown in the **Microsoft Remote Connectivity Analyzer** page (https://testconnectivity.microsoft.com/tests/O365InboundSmtp/input) and choosing the appropriate values.
 
@@ -78,16 +79,16 @@ To adopt an MX target in mx.microsoft, follow these steps:
 
     :::image type="content" source="../media/connectivity-test-results.png" alt-text="Screenshot that shows the results of the Connectivity Test process." lightbox="../media/connectivity-test-results.png":::
 
-    This resultant screen denotes that "the Mail Exchanger ending in mx.microsoft was successfully tested" and that "the new MX is working as expected".
+    This resultant screen denotes that "the Mail Exchanger ending in mx.microsoft was successfully tested" and that the new MX is working as expected.
 
-1. Change the priority of the legacy MX pointing to mail.protection.outlook.com to **30**; change the priority of the MX record with the value **contosotest-com.o-v1.mx.microsoft** to priority **0** (highest priority).
+1. Change the priority of the legacy MX from current priority to **30**; change the priority of the MX record created in Step 3 so that it's set to priority **0** (highest priority).
 1. Delete the legacy MX record ending with "mail.protection.outlook.com," "mail.eo.outlook.com," or "mail.protection.outlook.de." Then, update the TTL for the MX record ending with "mx.microsoft" to **3600 seconds**.
 
-## Testing IRR
+## Enabling IRR
 
-Once you comply with the [Prerequisites](#prerequisites) and the steps in [Adopting an MX target](#adopting-an-mx-target), test whether the IRR feature is working as expected by performing the following steps:
+Once you comply with the [Prerequisites](#prerequisites) and the steps in [Adopting an MX target](#adopting-an-mx-target), perform the following steps to enable IRR:
 
-1. Connect to an Admin account for your test tenant using Exchange Online PowerShell by running the following command:
+1. Connect to an Admin account for your tenant using Exchange Online PowerShell by running the following command:
   
    ```PowerShell
    Connect-ExchangeOnline -UserPrincipalName <username>
@@ -103,7 +104,7 @@ Once you comply with the [Prerequisites](#prerequisites) and the steps in [Adopt
    ```
 
    > [!NOTE]
-   > You must use one of the 3-letter codes specified in [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability)as the **PreferredDataLocation** value for the user, as these are the regions that support IRR.
+   > You must use one of the 3-letter codes specified in [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) as the **PreferredDataLocation** value for the user, as these are the regions that support IRR.
 
    The IRR is configured and enabled.
 
