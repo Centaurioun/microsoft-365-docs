@@ -47,6 +47,8 @@ As an admin, you can pin the Microsoft 365 Copilot app to the Windows taskbar of
 
 ## Configure settings
 
+:::image type="content" source="media/pin-copilot-taskbar/pin-copilot-taskbar-admin-center-1200.png" alt-text="A screenshot of the Microsoft 365 admin center showing the Copilot setting to Pin Microsoft 365 Copilot app to Windows taskbar." lightbox="media/pin-copilot-taskbar/pin-copilot-taskbar-admin-center-1920.png":::
+
 To configure this setting:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
