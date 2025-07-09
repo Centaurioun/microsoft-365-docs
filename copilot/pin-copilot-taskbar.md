@@ -27,7 +27,7 @@ ms.collection:
 > [!IMPORTANT]
 > This information is currently provided as a preview. The feature is expected to be available at the end of July 2025.
 
-As an admin, you can pin the Microsoft 365 Copilot app to the Windows taskbar of managed devices. This behavior gives users quick access to the Copilot app, which includes chat, agents, and more. If your organization has an active Intune license, use the Microsoft 365 admin center to automatically pin the app on all Windows 10 and Windows 11 Intune-managed devices with the app installed. This single toggle simplifies the pinning process instead of manually creating and deploying a StartLayout.xml policy.
+As an admin, you can pin the Microsoft 365 Copilot app to the Windows taskbar of managed devices. This behavior gives users quick access to the Copilot app, which includes Chat, Search, Agents (if enabled), Notebooks, and Create. If your organization has an active Intune license, use the Microsoft 365 admin center to automatically pin the app on all Windows 10 and Windows 11 Intune-managed devices with the app installed. This single toggle simplifies the pinning process instead of manually creating and deploying a StartLayout policy.
 
 > [!NOTE]
 > This information is specific to the Microsoft 365 Copilot app and the Windows taskbar. You can also pin the Copilot Chat experience to the navigation bar in Microsoft 365 apps. For more information, see [Pin Microsoft 365 Copilot Chat to the navigation bar](pin-copilot-chat-navbar.md). To understand the difference between the Copilot app and Copilot Chat, see [Decide which Copilot is right for you](which-copilot-for-your-organization.md).
@@ -39,7 +39,7 @@ As an admin, you can pin the Microsoft 365 Copilot app to the Windows taskbar of
 - To configure this setting in the Microsoft 365 admin center, your organization must have an active Intune license.
 
   > [!TIP]
-  > If you don't have an Intune license, you can pin the app by directly using the StartLayout.xml configuration. For more information, see [Configure the Windows Taskbar Pinned Apps with Policy Settings](/windows/configuration/taskbar/pinned-apps?tabs=intune&pivots=windows-11).
+  > If you don't have an Intune license, you can pin the app by directly using the StartLayout configuration. For more information, see [Configure the Windows Taskbar Pinned Apps with Policy Settings](/windows/configuration/taskbar/pinned-apps?tabs=intune&pivots=windows-11).
 
 - Install the Microsoft 365 Copilot app before you configure this policy. For more information, see the [Microsoft 365 Copilot adoption guide and overview for IT admins](microsoft-365-copilot-enablement-resources.md).
 
@@ -56,7 +56,7 @@ To configure this setting:
 1. Select the setting to **Pin Microsoft 365 Copilot app to the Windows taskbar**.
 
     > [!NOTE]
-    > If you already configured an Intune policy for StartLayout, you can't configure this setting in the Microsoft 365 admin center. For more information on how to add the Microsoft 365 Copilot app to your existing policy, see [Create a policy using settings catalog in Microsoft Intune](/intune/intune-service/configuration/settings-catalog).
+    > If you already configured an Intune policy for StartLayout, you can't configure this setting in the Microsoft 365 admin center. For more information on how to add the Microsoft 365 Copilot app to your existing policy, see [Deploy the taskbar configuration](/windows/configuration/taskbar/pinned-apps?tabs=intune&pivots=windows-11#deploy-the-taskbar-configuration).
     >
     > If you don't have an active Intune license, this setting isn't available.
 
