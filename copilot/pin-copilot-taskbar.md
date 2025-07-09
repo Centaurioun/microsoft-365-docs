@@ -39,7 +39,7 @@ As an admin, you can pin the Microsoft 365 Copilot app to the Windows taskbar of
 - To configure this setting in the Microsoft 365 admin center, your organization must have an active Intune license.
 
   > [!TIP]
-  > : If you don't have an Intune license, you can pin the app by directly using the StartLayout.xml configuration. For more information, see [Configure the Windows Taskbar Pinned Apps with Policy Settings](/windows/configuration/taskbar/pinned-apps?tabs=intune&pivots=windows-11).
+  > If you don't have an Intune license, you can pin the app by directly using the StartLayout.xml configuration. For more information, see [Configure the Windows Taskbar Pinned Apps with Policy Settings](/windows/configuration/taskbar/pinned-apps?tabs=intune&pivots=windows-11).
 
 - Install the Microsoft 365 Copilot app before you configure this policy. For more information, see the [Microsoft 365 Copilot adoption guide and overview for IT admins](microsoft-365-copilot-enablement-resources.md).
 
@@ -55,10 +55,10 @@ To configure this setting:
 1. Go to **Copilot** > **Settings** > **User access**.
 1. Select the setting to **Pin Microsoft 365 Copilot app to the Windows taskbar**.
 
-  > [!NOTE]
-  > If you already configured an Intune policy for StartLayout, you can't configure this setting in the Microsoft 365 admin center. For more information on how to add the Microsoft 365 Copilot app to your existing policy, see [Create a policy using settings catalog in Microsoft Intune](/intune/intune-service/configuration/settings-catalog).
-  >
-  > If you don't have an active Intune license, this setting isn't available.
+    > [!NOTE]
+    > If you already configured an Intune policy for StartLayout, you can't configure this setting in the Microsoft 365 admin center. For more information on how to add the Microsoft 365 Copilot app to your existing policy, see [Create a policy using settings catalog in Microsoft Intune](/intune/intune-service/configuration/settings-catalog).
+    >
+    > If you don't have an active Intune license, this setting isn't available.
 
 1. Choose one of the following options and then select **Save**:
 
