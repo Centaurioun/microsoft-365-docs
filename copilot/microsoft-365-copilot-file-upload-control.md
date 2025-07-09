@@ -35,7 +35,7 @@ To manage the file upload feature so it aligns with organizational policies, use
 The file upload control is available only in [Cloud Policy service for Microsoft 365](/microsoft-365-apps/admin-center/overview-cloud-policy). If you enable this policy setting, you can choose one of the following options for file uploads in Copilot and Copilot Chat:  
 - **Allow file uploads in both Microsoft 365 Copilot and Microsoft 365 Copilot Chat**—allows users to upload files in both experiences. This is the default setting.
 - **Prevent file uploads in both Microsoft 365 Copilot and Microsoft 365 Copilot Chat**—disables file upload in both experiences.
-- **Disable file uploads in Microsoft 365 Copilot Web mode and Microsoft 365 Copilot Chat while allowing them in Microsoft 365 Copilot Work mode**—enables file upload in Microsoft 365 Copilot Chat *Work mode only* and disables file upload in Microsoft 365 Copilot Web mode and Microsoft 365 Copilot Chat.
+- **Disable file uploads in Microsoft 365 Copilot Web mode and Microsoft 365 Copilot Chat while allowing file uploads in Microsoft 365 Copilot Work mode**—enables file upload in Microsoft 365 Copilot Chat *Work mode only* and disables file upload in Microsoft 365 Copilot Web mode and Microsoft 365 Copilot Chat.
  
 :::image type="content" source="media/copilot-file-upload-800.png" alt-text="Screenshot that shows Microsoft 365 Copilot file upload control." lightbox="media/copilot-file-upload-raw.png":::
  
