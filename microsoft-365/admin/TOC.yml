@@ -421,7 +421,7 @@ items:
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
          - name: Manage Microsoft feedback for your organization
-           href: /admin/manage/manage-feedback-ms-org.md
+           href: manage/manage-feedback-ms-org.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
          - name: Power BI usage analytics
