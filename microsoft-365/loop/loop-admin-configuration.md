@@ -207,7 +207,7 @@ To enable Loops on **Public** defined sessions, the following policies need to b
 
 - WacViewingOnPublicComputersEnabled 
 
-You should also review the configuration of your [ConditionalAccessPolicy](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps). By design, user sessions that meet the criteria for conditional access will have limited functionality and will not be able to use Loop experiences.
+You should also review the configuration of your [ConditionalAccessPolicy](/powershell/module/exchange/set-owamailboxpolicy). By design, user sessions that meet the criteria for conditional access will have limited functionality and will not be able to use Loop experiences.
 
 ## Related topics
 
