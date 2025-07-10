@@ -183,9 +183,24 @@ This task is required to define the custom script as a resource for the REST API
    |---------|---------|
    |Name     |GetAllUserCriteria          |
    |Relative path     |/user_criteria         |
-   |Script     |Copy and paste the following script AS IS:<br> (function execute (/*RESTAPIRequest*/ request,<br>/*RESTAPIResponse*/ response)<br>{<br>var queryParams = request.queryParams;<br>var user = new String(queryParams.user);<br>return (new<br>sn_uc.UserCriteriaLoader()).getAllUserCriteria(user);<br>}<br>)(request, response);         |
+   |Script     |Copy and paste the script (noted after this table) exactly as is. |
    |Requires authentication     |Checked         |
    |Requires ACL authorization     |Checked<br>Ensure that the ACL created in Task 2 is set correctly and remove any other default values.          |
+
+#### Script to copy
+
+```javascript
+(function execute (/*RESTAPIRequest*/ request,
+/*RESTAPIResponse*/ response )
+{
+    var queryParams = request.queryParams;
+    var user = new String(queryParams.user);
+    return (new
+    sn_uc.UserCriteriaLoader()).getAllUserCriteria(user);
+}
+) (request, response);
+```
+
 
 4. Select **Submit** to save changes.
 
