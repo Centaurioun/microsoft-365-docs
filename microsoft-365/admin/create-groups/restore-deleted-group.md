@@ -71,6 +71,9 @@ If you're a groups administrator, you can restore a deleted group in the Microso
 > In some cases, it may take as long as 24 hours for the group and all of its data to be restored. 
 
 ---
+# [PowerShell](#tab/PowerShell)
+
+Please follow steps on [this article](https://learn.microsoft.com/entra/identity/users/groups-restore-deleted#view-the-deleted-microsoft-365-groups-that-are-available-to-restore-by-using-powershell) to restore the group using PowerShell.
 
 ## Got questions about Microsoft 365 Groups?
 

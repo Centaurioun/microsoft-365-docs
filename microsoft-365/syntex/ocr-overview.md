@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 01/13/2025
+ms.date: 06/23/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -21,7 +21,7 @@ description: Learn about optical character recognition in SharePoint.
 # Overview of optical character recognition in SharePoint
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of optical character recognition and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
+> Through December 2025, you can try out a [limited amount](promo-syntex.md#included-monthly-capacity) of optical character recognition and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 The optical character recognition (OCR) service in SharePoint lets you extract printed or handwritten text from images and documents. Examples of images include posters, drawings, and product labels. Examples of documents include articles, reports, forms, and invoices.
 
@@ -36,7 +36,8 @@ For example, you enable the OCR service and then add image files to your documen
 |Endpoint  |Supported file types  |
 |---------|---------|
 |SharePoint and OneDrive     |`.bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, .dng, .tiff, and .pdf (scanned and hybrid)`  Embedded images in ` docx, pptx, xlsx ` are extracted and scanned |
-|Teams, Exchange, and Windows devices     |`.bmp, .png, .jpeg, .jpg, .tiff, and .pdf (scanned and hybrid)`  Embedded images in ` docx, pptx, xlsx, RAR, TAR,ZIP and 7z` are extracted and scanned|
+|Exchange     |`.jpeg, .jpg, .png, .bmp, .tiff, and PDFs (scanned and hybrid) `. Embedded images in `docx, pptx, xlsx, rar, tar, zip, 7z`|
+|Teams, Windows, and macOS endpoint     |`.jpeg, .jpg, .png, .bmp, .tiff, and PDF (image only)` |
 
 In addition to image-based PDF, SharePoint OCR supports hybrid PDF (text plus image PDF). Newly uploaded hybrid PDFs will be processed by the OCR service.
 

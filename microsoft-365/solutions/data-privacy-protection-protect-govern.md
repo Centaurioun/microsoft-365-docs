@@ -1,5 +1,5 @@
 ---
-title: "Protect and govern personal data – Microsoft Priva and Purview"
+title: "Protect and govern personal data – Microsoft Priva and Microsoft Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
