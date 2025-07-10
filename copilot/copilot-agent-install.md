@@ -56,7 +56,7 @@ Organizations can govern these agents in the Copilot Control System section of t
 
 ### Microsoft-built agent licensing 
 
-Some agents built by Microsoft, including Researcher and Analyst, are governed by [Supplementary Terms of Service](https://support.microsoft.com/office/supplementary-terms-of-service-for-teams-apps-powered-by-microsoft-365-services-and-applications-bc6027fe-68c3-4758-a70d-cfe97c43b4e2) which refers to the Microsoft 365 [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/all), and by reference, includes the DPA. The same Product Terms and DPA also govern the Microsoft 365 Copilot service. 
+Some agents built by Microsoft, including Researcher and Analyst, are governed by [Supplementary Terms of Service](https://support.microsoft.com/office/supplementary-terms-of-service-for-teams-apps-powered-by-microsoft-365-services-and-applications-bc6027fe-68c3-4758-a70d-cfe97c43b4e2) which refers to the Microsoft 365 [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/all), and by reference, includes the Data Protection Addendum (DPA). The same Product Terms and DPA also govern the Microsoft 365 Copilot service. 
 
 ## Related content
 
