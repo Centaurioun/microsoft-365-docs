@@ -25,7 +25,7 @@ For an overview of the Microsoft 356 LTI integration for learning management sys
 > The person who deploys this integration should be an Administrator role in the LMS. A person in your organization who is a Microsoft 365 Global Administrator is also needed to help complete the configuration of the app before first time use.
 
 > [!IMPORTANT]
-> By installing and using the Microsoft Education LTI app, educators and students can transmit grades to the LMS where the terms of use and privacy policy of that application apply.
+> By installing and using the Microsoft 365 LTI app, educators and students can transmit grades to the LMS where the terms of use and privacy policy of that application apply.
 
 ## LMS requirements for the integration
 
@@ -33,7 +33,7 @@ For an overview of the Microsoft 356 LTI integration for learning management sys
 
 To fully integrate with your LMS environment and perform tasks on behalf of users like populating students and co-teachers into OneNote Class Notebooks, setting file permissions, or sending grades from Assignments to the LMS gradebook, the Microsoft 365 LTI app must be able to map Student and Teacher identities between the LMS and the Microsoft Entra ID directory services. It's required to populate the LMS user Email field with the matching Microsoft 365/Microsoft Entra User UPN or Primary Email address. Verify this for people in every course that uses the integration to ensure the Microsoft apps can match LMS users.
 
-## One-time setup by an LMS administrator**
+## One-time setup by an LMS administrator
 
 Canvas supports multiple tool deployment for the same tool through two different methods in the LMS. You can use either or both deployment methods to control which courses the tool is available in.
 
@@ -96,9 +96,10 @@ You must launch the app for the first time as a user with the **Canvas Administr
 
 1. Select the **Microsoft Education** link in the left side navigation to launch the admin setup experience.
 
-  :::image type="content" source="./media/microsoft-education-navigation.png" alt-text="Screenshot of Microsoft Education in the navigation pane." border="true":::
+    :::image type="content" source="./media/microsoft-education-navigation.png" alt-text="Screenshot of Microsoft Education in the navigation pane." border="true":::
 
-<!-- --> 1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
+1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
+<!-- -->
 
 The Microsoft Education app is now deployed, configured, and ready to use in your Canvas courses!
 
@@ -106,7 +107,8 @@ The Microsoft Education app is now deployed, configured, and ready to use in you
 
 On first access, users must sign in using their Microsoft 365 (Microsoft Entra) account.
 
-<!-- --> Learn more about Microsoft 365 LTI application scenarios for Instructors and Students.
+Learn more about Microsoft 365 LTI application scenarios for Instructors and Students.
+<!-- -->
 
 ## **Browser settings**
 
