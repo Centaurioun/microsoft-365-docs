@@ -7,7 +7,7 @@ ms.author: aaroncz
 author: aczechowski
 manager: dansimp
 ms.reviewer: christin,vmirapur
-ms.date: 07/08/2025
+ms.date: 07/10/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -43,7 +43,12 @@ As an admin, you can pin the Microsoft 365 Copilot app to the Windows taskbar of
 
 - Install the Microsoft 365 Copilot app before you configure this policy. For more information, see the [Microsoft 365 Copilot adoption guide and overview for IT admins](microsoft-365-copilot-enablement-resources.md).
 
-- To allow users to keep their preference to unpin the app, their device must be running Windows 11 with at least the [servicing update for May 2025 (KB5058499)](https://support.microsoft.com/help/5058499). For more information, see [Windows 11 - release information](/windows/release-health/windows11-release-information).
+- To allow users to keep their preference to unpin the app, their device must be running one of the following versions of Windows 11 or later:
+
+  - Windows 11, version 24H2 with [KB5058499](https://support.microsoft.com/topic/d4c2f1ee-8138-4038-b705-546945076f92)
+  - Windows 11, version 23H2 with [KB5058502](https://support.microsoft.com/topic/6291789c-1eea-4227-9740-a701af6de688)
+
+  For more information, see [Windows 11 - release information](/windows/release-health/windows11-release-information).
 
 ## Configure settings
 
@@ -70,7 +75,10 @@ To configure this setting:
 
         If the user previously pinned the app to their taskbar, this policy doesn't change their configuration.
 
-        The user can manually unpin the app from the taskbar. On Windows 11 devices with at least the [servicing update for May 2025 (KB5058499)](https://support.microsoft.com/help/5058499), the user's preference is respected during future policy refreshes.
+        The user can manually unpin the app from the taskbar. Their preference is respected during future policy refreshes on the following versions of Windows 11 or later:
+
+        - Windows 11, version 24H2 with [KB5058499](https://support.microsoft.com/topic/d4c2f1ee-8138-4038-b705-546945076f92)
+        - Windows 11, version 23H2 with [KB5058502](https://support.microsoft.com/topic/6291789c-1eea-4227-9740-a701af6de688)
 
     - **Do not pin Copilot app to the Windows taskbar**
 
