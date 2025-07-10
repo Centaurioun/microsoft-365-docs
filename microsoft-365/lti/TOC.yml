@@ -7,6 +7,8 @@ items:
       href: browser-cookies.md
     - name: Canvas integrations
       items:
+      - name: Deploy Microsoft 365 LTI in Canvas
+        href: microsoft-365-lti-canvas.md
       - name: Use Microsoft OneDrive LTI with Canvas 
         href: onedrive-lti.md
       - name: Use Microsoft Teams Assignments with Canvas

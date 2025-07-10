@@ -41,7 +41,7 @@ Canvas supports multiple tool deployment for the same tool through two different
 
 1. Sign into your Canvas instance as an administrator.
 
-1. Select the **Admin** icon in the left side global navigation, and then select your root account in Canvas.
+1. Select the **Admin** icon in the left side global navigation, and then select the organization account in Canvas that you wish to deploy into.
 
 1. In the left-side navigation, select the **Developer Key** link, and then choose the **Inherited** tab.
 
@@ -96,7 +96,7 @@ You must launch the app for the first time as a user with the **Canvas Administr
 
 1. Select the **Microsoft Education** link in the left side navigation to launch the admin setup experience.
 
-  ![A close-up of a logo  AI-generated content may be incorrect.](media/image1.png)
+  :::image type="content" source="./media/microsoft-education-navigation.png" alt-text="Screenshot of Microsoft Education in the navigation pane." border="true":::
 
 <!-- --> 1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
 
