@@ -324,7 +324,7 @@ When Copilot Chat is pinned, it makes it easier for people in your organization 
 
 To learn more, see:
 
-- [Pin Microsoft 365 Copilot Chat to the navigation bar](pin-copilot.md)
+- [Pin Microsoft 365 Copilot Chat to the navigation bar](pin-copilot-chat-navbar.md)
 - [Pin apps to the taskbar](/windows/configuration/taskbar/pinned-apps)
 
 ### Web search for Microsoft 365 Copilot and Microsoft Copilot
