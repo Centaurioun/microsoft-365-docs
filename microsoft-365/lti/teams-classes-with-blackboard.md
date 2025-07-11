@@ -98,7 +98,7 @@ The Microsoft Teams integration is available for **Ultra Course View courses onl
 
 2. Select **Create Configuration**.
 
-3. In the **Origin** field, type of copy and paste this URL:
+3. In the **Origin** field, type or copy and paste this URL:
 
    `https://bb-ms-teams-ultra-ext.api.blackboard.com`
 
