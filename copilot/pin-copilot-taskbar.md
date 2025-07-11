@@ -7,7 +7,7 @@ ms.author: aaroncz
 author: aczechowski
 manager: dansimp
 ms.reviewer: christin,vmirapur
-ms.date: 07/10/2025
+ms.date: 07/11/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -45,8 +45,8 @@ As an admin, you can pin the Microsoft 365 Copilot app to the Windows taskbar of
 
 - To allow users to keep their preference to unpin the app, their device must be running one of the following versions of Windows 11 or later:
 
-  - Windows 11, version 24H2 with [KB5058499](https://support.microsoft.com/topic/d4c2f1ee-8138-4038-b705-546945076f92)
-  - Windows 11, version 23H2 with [KB5058502](https://support.microsoft.com/topic/6291789c-1eea-4227-9740-a701af6de688)
+  - Windows 11, version 24H2 with [KB5058499][KB-24]
+  - Windows 11, version 23H2 with [KB5058502][KB-23]
 
   For more information, see [Windows 11 - release information](/windows/release-health/windows11-release-information).
 
@@ -77,8 +77,8 @@ To configure this setting:
 
         The user can manually unpin the app from the taskbar. Their preference is respected during future policy refreshes on the following versions of Windows 11 or later:
 
-        - Windows 11, version 24H2 with [KB5058499](https://support.microsoft.com/topic/d4c2f1ee-8138-4038-b705-546945076f92)
-        - Windows 11, version 23H2 with [KB5058502](https://support.microsoft.com/topic/6291789c-1eea-4227-9740-a701af6de688)
+        - Windows 11, version 24H2 with [KB5058499][KB-24]
+        - Windows 11, version 23H2 with [KB5058502][KB-23]
 
     - **Do not pin Copilot app to the Windows taskbar**
 
@@ -91,3 +91,8 @@ You can change these settings at any time. Changes take up to 48 hours to apply 
 - [Pin Microsoft 365 Copilot Chat to the navigation bar](pin-copilot-chat-navbar.md)
 - [Configure the Windows Taskbar Pinned Apps with Policy Settings](/windows/configuration/taskbar/pinned-apps?tabs=intune&pivots=windows-11)
 - [Create a policy using settings catalog in Microsoft Intune](/intune/intune-service/configuration/settings-catalog)
+
+<!--links-->
+
+[KB-24]: https://support.microsoft.com/topic/e31ba7c2-ff65-4863-a462-a66e30840b1a
+[KB-23]: https://support.microsoft.com/topic/65d38dd2-e149-4462-9699-e2482f60b16b
