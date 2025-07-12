@@ -57,6 +57,8 @@ Microsoft 365 Copilot:
 
 - Uses content in [Microsoft Graph](/graph/overview) to personalize the responses with a user's work emails, chats, and documents. Copilot only shows the data that users have permission to access.
 
+- Includes [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search), a universal search experience that allows users to search across all their Microsoft 365 and third-party data sources to find what they need quickly.
+
 - Coordinates large language models (LLMs). LLMs are a type of artificial intelligence (AI) algorithms. These algorithms use deep learning techniques and data sets to understand, summarize, predict, and generate content.
 
   The LLMs include pretrained models, like Generative Pre-Trained Transformers, like GPT-4, that are designed for these tasks. To learn more about Generative Pre-Trained Transformers (GPT), ask [Copilot](https://copilot.microsoft.com).
@@ -65,6 +67,7 @@ To learn more, see:
 
 - [Microsoft 365 Copilot architecture and how it works](microsoft-365-copilot-architecture.md)
 - [Microsoft 365 Copilot service description](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot)
+- [Microsoft 365 Copilot Search overview](/copilot/microsoft-365/microsoft-365-copilot-search)
 - Video: [Copilot system explained by Microsoft](https://www.youtube.com/watch?v=E5g20qmeKpg)
 - Video: [Microsoft 365 Copilot, LLMs, and your apps](https://www.youtube.com/watch?v=B2-8wrF9Okc)
 - Video: [How to get ready for Microsoft 365 Copilot](https://aka.ms/M365CopilotAdmin)
@@ -86,6 +89,12 @@ For more features, see [Copilot features in Microsoft 365 apps](#copilot-feature
 With Microsoft 365 Copilot Chat, you can draft content, review what you missed, and get answers to questions using open-ended prompts. This information is securely grounded in your work data.
 
 You can use Microsoft 365 Copilot Chat in Microsoft Teams, in the Microsoft 365 Copilot Chat app, at [Microsoft365.com](https://www.microsoft365.com/), and at [copilot.microsoft.com](https://copilot.microsoft.com/).
+
+✅ **Microsoft 365 Copilot Search**
+
+Copilot Search is an AI-powered universal search experience across all your Microsoft 365 applications and non-Microsoft data sources. It's integrated with Microsoft 365 Copilot, so users can find the results they need with search, then seamlessly transition to chat for deeper exploration or follow-up task completion.
+
+Learn more about [Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search).
 
 ✅ **Microsoft Graph**
 

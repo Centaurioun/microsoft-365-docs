@@ -1,5 +1,5 @@
 ---
-title: Use Microsoft Teams classes with Canvas
+title: Use Microsoft Teams with Canvas
 author: jennplatt
 ms.author: avering
 manager: michal.gideoni
@@ -18,26 +18,26 @@ ms.collection:
 - tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Integrate Microsoft Teams classes with Canvas"
+description: "Integrate Microsoft Teams with Canvas"
 ---
 
-# Use Microsoft Teams classes with Canvas
+# Use Microsoft Teams with Canvas
 
-Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
+Microsoft Teams is a Learning Tools Interoperability (LTI) app that helps educators and students easily navigate between their Learning Management System (LMS) and Teams. Users can access their class teams associated with their course directly from within their LMS.
 
 ## Prerequisites Before Deployment
 
 > [!NOTE]
-> The current Teams classes LTI only supports syncing Canvas users with Microsoft Entra ID in a limited scope.
+> The current Teams only supports syncing Canvas users with Microsoft Entra ID in a limited scope.
 >
 > - Your tenant must have a Microsoft Education license (A1 or higher).
 > - A single Microsoft tenant only can be used for mapping users between Canvas and Microsoft.
-> - Your tenant must have an exact match between a Canvas field (email, Unique User ID, SIS ID, or Integration ID) and a field in Microsoft Entra ID (User Principal Name (UPN), Primary Email Address (Mail), or Email Alias (mailNickname)).
+> - Your tenant must have an exact match between a Canvas field (email, Unique User ID, SIS ID, or Integration ID) and a field in Microsoft Entra ID (User Principal Name (UPN), Primary Email Address (Mail), or Email Alias (mailNickname).
 > - You must disable the Team Creation Option in School Data Sync (SDS) and perform a [Group Cleanup](/schooldatasync/group-cleanup) to avoid duplication of classes, if you use SDS to create classes and groups. SDS can still be used to sync organization and user data.
 
 ## Enable the Microsoft Teams app in Canvas
 
-To begin the integration, you need to enable the app in Canvas by enabling the developer keys, enabling the Microsoft Teams Sync, and approving the Microsoft-Teams-Sync-for-Canvas app. Note that approving the app can only be performed by a Microsoft tenant admin that can approve apps.
+To begin the integration, you need to enable the app in Canvas by enabling the developer keys, enabling the Microsoft Teams Sync, and approving the Microsoft-Teams-Sync-for-Canvas app. Approving the app can only be performed by a Microsoft tenant admin that can approve apps.
 
 **To enable Microsoft Teams Sync and approve access for the app**:
 
@@ -45,7 +45,7 @@ To begin the integration, you need to enable the app in Canvas by enabling the d
 
 2. Select the **Admin** link in the global navigation, and then select your account.
 3. In the admin navigation, select the **Developer Keys** link, and then select the **Inherited** tab.
-4. Enable the LTI apps you are going to deploy by selecting the **ON** state for each of the appropriate apps.
+4. Enable the LTI apps you're going to deploy by selecting the **ON** state for each of the appropriate apps.
 
 5. In the admin navigation, select the **Settings** link, and then the **Integrations** tab.
 

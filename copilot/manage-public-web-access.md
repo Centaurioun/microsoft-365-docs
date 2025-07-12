@@ -21,6 +21,9 @@ ms.date: 06/27/2025
 
 Microsoft 365 Copilot and [Microsoft 365 Copilot Chat](/copilot/overview) have an optional feature that allows Copilot to reference web content when responding to user prompts. Allowing Microsoft 365 Copilot and Microsoft 365 Copilot Chat to reference web content improves the quality of Copilot responses by grounding them in the latest information from the web.
 
+> [!NOTE]
+> This article concerns the web search functionality in Microsoft 365 Copilot and Microsoft 365 Copilot Chat. Microsoft 365 **Copilot Search** is an additional, universal search experience that allows users with a Microsoft 365 Copilot license to search across all their Microsoft 365 and third-party data sources. Learn more about [Microsoft 365 Copilot Search]( /copilot/microsoft-365/microsoft-365-copilot-search).
+
 ## Web search
 
 When web search is enabled, Microsoft 365 Copilot and Microsoft 365 Copilot Chat may fetch information from the Bing search service when information from the web helps to provide a better, more grounded response. Admin controls and a user-level **Web content** toggle (only for Microsoft 365 Copilot) are available to [manage whether web search is enabled](#controls-available-to-manage-web-search) in your environment.
