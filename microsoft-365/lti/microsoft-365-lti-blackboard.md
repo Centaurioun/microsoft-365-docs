@@ -43,7 +43,8 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 1. In the **Client ID** field, type or copy and paste this ID: **7aaa046f-50d4-4dc3-aac5-ac22e6d4339e**
 
 1. Review the prepopulated settings and make sure the **Tool Status** is **Approved** and everything is enabled in the Institution Polices section:
-  :::image type="content" source="./media/blackboard-institution-policies.png" alt-text="Screenshot of Blackboard institution policies." border="true":::
+
+    :::image type="content" source="./media/blackboard-institution-policies.png" alt-text="Screenshot of Blackboard institution policies." border="true":::
 
 1. Then select **Submit** to complete the registration. It's recommended that you verify the **Placements** created for the tool to ensure the **Allow students access** option is enabled for all placements that include that setting.
 
