@@ -1,5 +1,5 @@
 ---
-title: "Configure Multi-Geo In-Region Routing"
+title: "Configure Multi-Geo In-Region Routing (In Preview)"
 ms.reviewer:
 ms.date: 07/02/2025
 ms.author: kvice
@@ -19,7 +19,7 @@ ms.collection:
 description: Learn how to configure the Multi-Geo In-Region Routing.
 ---
 
-# Configure Multi-Geo In-Region Routing
+# Configure Multi-Geo In-Region Routing (In Preview)
 
 This article describes the process of configuring Multi-Geo In-Region Routing (IRR).
 
