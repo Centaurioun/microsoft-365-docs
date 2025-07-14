@@ -176,5 +176,5 @@ If a tenant has enabled external tags in Outlook to help users identify content 
 
 ![Suppress Outlook external tag for MTO members](media/manage-multitenant-org-settings/edit-external-tag-setting.png)
 
-If the tenant hasn't enabled external tags in Outlook, checking the **External tag removal** option will automatically create a remote domain for the partner tenant and mark it as internal (i.e., IsInternal = true), but it won't have effect in end user experience.  In this case, external tags are not displayed to members in MTO. 
+If the tenant hasn't enabled external tags in Outlook, checking the **External tag suppression** option will automatically create a remote domain for the partner tenant and mark it as internal (i.e., IsInternal = true), but it won't have effect in end user experience.  In this case, external tags are not displayed to members in MTO. 
 
