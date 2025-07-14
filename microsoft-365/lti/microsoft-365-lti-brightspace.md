@@ -98,10 +98,10 @@ You now have a tool registration configured in the Microsoft registration portal
 
 1. Select ***all*** Security Settings ***except*** **Anonymous** (including Org Unit information, User Information, Link Information).
   
-  :::image type="content" source="./media/brightspace-security-settings.png" alt-text="Screenshot of security settings." border="true":::
+    :::image type="content" source="./media/brightspace-security-settings.png" alt-text="Screenshot of security settings." border="true":::
 
 1. In Configuration Settings, select **Grades created by LTI will be included in Final Grade** and **Auto Create Grade Items**. Make sure that **Open as External Resource** is **not** checked.
-  :::image type="content" source="./media/brightspace-configuration-settings.png" alt-text="Screenshot of configuration settings." border="true":::
+    :::image type="content" source="./media/brightspace-configuration-settings.png" alt-text="Screenshot of configuration settings." border="true":::
 
 1. Select **Add Org Units**. Select the orgs you wish to deploy to, or the **root org** or **all** units to deploy the app for all orgs.
 

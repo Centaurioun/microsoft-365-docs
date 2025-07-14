@@ -52,7 +52,6 @@ The Microsoft 365 LTI is now installed and ready to be used in any course in you
 
 > [!IMPORTANT]
 > If prepopulated parameters or policies are edited, the app might not function properly. Double-check the enablement status of the app and student access settings for each placement as your Blackboard configuration might disable them by default. Student settings on both the Teams Assignments and Link a Teams Assignment placement should have **Allow students access** enabled and **Launch in new window** disabled.
-> ![Screenshot of Teams Assignment settings.](media/blackboard-allow.png)
 > :::image type="content" source="./media/blackboard-allow.png" alt-text="Screenshot of Blackboard allow students access property." border="true":::
 
 ## First-time configuration by an LMS administrator
