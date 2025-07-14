@@ -3,7 +3,7 @@ title: "Microsoft 365 reports in the admin center - Message consumption"
 ms.author: camillepack
 author: efrene
 manager: scotv
-ms.date: 07/07/2025
+ms.date: 07/16/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
@@ -148,7 +148,16 @@ Yes. You can set up the pay-as-you-go billing policy in the Microsoft 365 admin 
 
 **Last activity detected** is the date and timestamp of the most recent prompt or user activity that generated the messages consumed.
 
+You will see the Policy name and Billing Policy ID.  
+
 ### How do I find a Billing policy name from the Billing policy ID? 
+
 1. In the Microsoft 365 admin center, go to **Copilot > Billing & usage**. 
 2. On the **Billing policies** tab, select a **Billing policy** and go to **Details**.
 3. You will see **Policy name** and **Billing Policy ID**.  
+
+### How do I view the Billing policy ID if it is concealed?  
+
+By default, the Billing Policy ID in the Message consumption report is anonymized, similar to the username and display name. Global administrators have the ability to modify settings to either reveal or conceal the Billing Policy ID. 
+1. In the Microsoft 365 admin center, go to **Settings > Org Settings**, and under the **Services** tab, choose **Reports**. 
+2. Select **Reports**, and un-check **Display Concealed user, group, and site names in all reports** to view the **Billing policy ID**. Then select **Save**. To conceal the Billing policy ID, simply check the setting, and save your changes. 
