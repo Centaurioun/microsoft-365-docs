@@ -127,6 +127,9 @@ You can change the name, billing address, or expiration date for an existing cre
 
 You can only delete a payment method that isn't attached to a subscription or billing profile. This applies to all subscriptions, regardless of their status.
 
+> [!NOTE]
+> If you have an [Entra Free subscription](/azure/cost-management-billing/manage/microsoft-entra-id-free) inside your billing account you cannot delete or detach the last payment method on file. To remove the last payment method, you must delete the tenant. For more information about deleting a tenant, see [Delete the organization](/entra/identity/users/directory-delete-howto#delete-the-organization).
+
 ### Delete a payment method with no subscriptions or billing profiles attached
 
 If a payment method isn't associated with any subscriptions or billing profiles, you can immediately delete it.
