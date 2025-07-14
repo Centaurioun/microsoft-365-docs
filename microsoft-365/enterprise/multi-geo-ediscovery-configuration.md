@@ -21,7 +21,7 @@ description: Learn how to use the Region parameter to configure eDiscovery for u
 
 # Microsoft 365 Multi-Geo eDiscovery configuration
 
-[eDiscovery (Premium) capabilities](../compliance/overview-ediscovery-20.md) allow a Multi-Geo eDiscovery administrator to search all of the _Geographies_ without needing to utilize a "Region" security filter. Data is exported to the Azure instance of the _Primary Provisioned Geography_ location of the multi-geo _Tenant_.
+[eDiscovery premium features](/purview/edisc) allow a Multi-Geo eDiscovery administrator to search all of the _Geographies_ without needing to utilize a "Region" security filter. Data is exported to the Azure instance of the _Primary Provisioned Geography_ location of the multi-geo _Tenant_.
 
 Without eDiscovery premium features enabled, an eDiscovery manager or administrator of a Multi-Geo _Tenant_ will be able to conduct eDiscovery only in the _Primary Provisioned Geography_ location of that _Tenant_. To support the ability to conduct eDiscovery for _Satellite Geography_ locations, a new compliance security filter parameter named "Region" is available via PowerShell. This parameter can be used by _Tenants_ whose _Primary Provisioned Geography_ location is in North America, Europe, or Asia Pacific. eDiscovery with premium features is required for _Tenants_ whose _Primary Provisioned Geography_ location isn't in North America, Europe, or Asia Pacific and who need to perform eDiscovery across _Satellite Geography_ locations.
 
