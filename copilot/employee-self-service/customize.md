@@ -26,13 +26,13 @@ Customization is how you make the Employee Self-Service (ESS) agent work in the 
 
 |Role |Activities to perform |Configuration area |
 |-----|----------------------|-------------------|
-|Environment Maker </br>Service owner of ESS agent |- Set up user context </br>- Customize ESS agent |Microsoft Copilot Studio |
+|Environment Maker </br>Owner of ESS agent |- Set up user context </br>- Customize ESS agent |Microsoft Copilot Studio |
 |ISV Administrators </br>Service owners of specific applications |Provide configuration inputs such as URLs, OAUTH tokens, and more |ISV configuration |
 |HR </br>IT </br>Legal </br>Privacy |-Identify knowledge sources </br>-Provide frequent queries </Identify sensitive queries> | N/A |
 
 ## Understanding components
 
-Before continuing with configuring the ESS Agent, the service owner who will manage the ESS agent going forward must have a thorough understanding of its architecture.  
+Before continuing with configuring the ESS Agent, the agent owner who will manage the ESS agent going forward must have a thorough understanding of its architecture.  
 The ESS agent is built with the following components:
 
 ### Topics
