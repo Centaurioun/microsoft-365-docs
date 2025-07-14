@@ -26,7 +26,7 @@ Publishing the Employee Self-Service (ESS) agent makes it available to your user
 
 |Role |Activities to perform |Configuration area |
 |-----|----------------------|-------------------|
-|Environment Maker/ Service owner of the ESS agent |- Deploy customization solution to target environment</br> - Set up authentication</br> - Publish ESS agent |Microsoft Copilot Studio |
+|Environment Maker/ Owner of the ESS agent |- Deploy customization solution to target environment</br> - Set up authentication</br> - Publish ESS agent |Microsoft Copilot Studio |
 |Administrator |- Approve the ESS publish request</br> - Deploy it to selected users |Microsoft admin center |
 |Business stakeholders/ champions |Identify test users |N/A |
 
