@@ -17,16 +17,16 @@ ms.localizationpriority: medium
 ---
 # Deploy the Microsoft 365 LTI® app in Blackboard by Anthology
 
-This guide provides steps for deploying the Microsoft 365 Learning Tool Interoperability® (LTI®) app in Blackboard.
+This guide provides steps for deploying the Microsoft 365 Learning Tool Interoperability® (LTI) app in Blackboard.
 
   :::image type="content" source="./media/blackboard.png" alt-text="Screenshot of Blackboard." border="true":::
 
 > [!IMPORTANT]
-> The person who deploys this integration should be an Administrator role in the learning management system (LMS). A person in your organization who is a Microsoft 365 Global Administrator is also be needed to help complete the configuration of the app before first time use.
+> The person who deploys this integration should be an Administrator role in the learning management system (LMS). A person in your organization who is a Microsoft 365 Global Administrator is also needed to help complete the configuration of the app before first time use.
 >
 > By installing and using the Microsoft Education LTI app, educators and students can transmit grades to the LMS where the terms of use and privacy policy of that application apply.
 
-## LMS Requirements for the Integration
+## LMS requirements for the integration
 
 ### User matching between Microsoft 365/Entra ID and the LMS
 
@@ -55,15 +55,16 @@ The Microsoft 365 LTI is now installed and ready to be used in any course in you
 > ![Screenshot of Teams Assignment settings.](media/blackboard-allow.png)
 > :::image type="content" source="./media/blackboard-allow.png" alt-text="Screenshot of Blackboard allow students access property." border="true":::
 
-## First-time Configuration by an LMS Administrator
+## First-time configuration by an LMS administrator
 
 You must launch the app for the first time as a user with the **Blackboard System Administrator** role to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step!
 
 1. As a Blackboard System Administrator, select the **Admin** icon on the left side navigation of Blackboard to launch the **Administrator Tools**.
 
 1. In the **Tools and Utilities** section, select the **Microsoft Education Admin Settings**.
-  :::image type="content" source="./media/blackboard-tools.png" alt-text="Screenshot of Blackboard tools and utilities." border="true":::
-  :::image type="content" source="./media/blackboard-admin-settings.png" alt-text="Screenshot of Blackboard admin settings." border="true":::
+
+    :::image type="content" source="./media/blackboard-tools.png" alt-text="Screenshot of Blackboard tools and utilities." border="true":::
+    :::image type="content" source="./media/blackboard-admin-settings.png" alt-text="Screenshot of Blackboard admin settings." border="true":::
 
 1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
 <!-- -->

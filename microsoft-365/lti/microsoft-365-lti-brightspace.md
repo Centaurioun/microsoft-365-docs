@@ -17,16 +17,16 @@ ms.localizationpriority: medium
 ---
 # Deploy the Microsoft 365 LTI® app in Brightspace by D2L
 
-This guide provides steps for deploying the Microsoft 365 Learning Tool Interoperability® (LTI®) app in Brightspace.
+This guide provides steps for deploying the Microsoft 365 Learning Tool Interoperability® (LTI) app in Brightspace.
 
   :::image type="content" source="./media/brightspace.png" alt-text="Screenshot of Brightspace." border="true":::
 
 > [!IMPORTANT]
-> The person who deploys this integration should be an Administrator role in the learning management system (LMS). A person in your organization who is a Microsoft 365 Global Administrator is also be needed to help complete the configuration of the app before first time use.
+> The person who deploys this integration should be an Administrator role in the learning management system (LMS). A person in your organization who is a Microsoft 365 Global Administrator is also needed to help complete the configuration of the app before first time use.
 >
 > By installing and using the Microsoft Education LTI app, educators and students can transmit grades to the LMS where the terms of use and privacy policy of that application apply.
 
-## LMS Requirements for the Integration
+## LMS requirements for the integration
 
 ### User matching between Microsoft 365/Entra ID and the LMS
 
@@ -42,11 +42,11 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 1. Select **Microsoft 365 LTI** and then select **Next**.
 
-1. Enter a friendly **Registration** name (ex: "Microsoft 365 for Brightspace") and select **D2L/Brightspace** as the LMS platform (during Preview, ‘Other' can be selected). Select **Next**.
+1. Enter a friendly **Registration** name (for example: "Microsoft 365 for Brightspace") and select **D2L/Brightspace** as the LMS platform (during Preview, ‘Other' can be selected). Select **Next**.
 
 1. You're given a list of keys that need to be added to a registration you'll do in Brightspace. Copy these names and values; they're needed to complete the next few steps.
 
-1. Leave your browser window open while you complete the tool registration steps. The Microsoft tool registration is completed late when the LMS Client ID and Deployment ID are available.
+1. Leave your browser window open while you complete the tool registration steps. The Microsoft tool registration is completed later when the LMS Client ID and Deployment ID are available.
 
 **To register the new extensibility tool, add a deployment, and add links to the tool to your courses in Brightspace:**
 
@@ -56,13 +56,13 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 1. Select the **Standard** registration radio button and enter the values listed in the table:
 
-  | **Field in Brightspace** | **Value** |
-  |---|---|
-  | **Name** | Microsoft Education |
-  | **Domain** | Copy the **Target Link URL** value from the Microsoft registration. |
-  | **Redirect URLs** | Copy the **Redirect URL** value from the Microsoft registration. |
-  | **OpenID Connect Login URL** | Copy the **Open ID connection URL** value from the Microsoft registration. |
-  | **Target Link URI** | Copy the **Target Link URL** value from the Microsoft registration. |
+    | **Field in Brightspace** | **Value** |
+    |---|---|
+    | **Name** | Microsoft Education |
+    | **Domain** | Copy the **Target Link URL** value from the Microsoft registration. |
+    | **Redirect URLs** | Copy the **Redirect URL** value from the Microsoft registration. |
+    | **OpenID Connect Login URL** | Copy the **Open ID connection URL** value from the Microsoft registration. |
+    | **Target Link URI** | Copy the **Target Link URL** value from the Microsoft registration. |
 
 1. Check the following **Extensions** options, and add the following **Substitution Parameters** to the registration:
   :::image type="content" source="./media/brightspace-extensions-2.png" alt-text="Screenshot of Brightspace extensions." border="true":::
@@ -75,14 +75,14 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 1. On the **LMS provided registration keys** tab, select **Next** to navigate to **LMS provided registration keys**. Enter the values listed in the table that were copied from Brightspace in the previous steps.
 
-  | **Microsoft registration field** | **Brightspace registration value** |
-  |---|---|
-  | **Issuer ID URL** | Issuer |
-  | **Client ID** | Client ID |
-  | **Keyset URL** | Brightspace Keyset URL |
-  | **Platform authentication URL** | OpenID Connect Authentication Endpoint |
-  | **Deployment ID** | Deployment ID |
-  | **Access Token URL** | Brightspace OAuth2 Access Token URL |
+    | **Microsoft registration field** | **Brightspace registration value** |
+    |---|---|
+    | **Issuer ID URL** | Issuer |
+    | **Client ID** | Client ID |
+    | **Keyset URL** | Brightspace Keyset URL |
+    | **Platform authentication URL** | OpenID Connect Authentication Endpoint |
+    | **Deployment ID** | Deployment ID |
+    | **Access Token URL** | Brightspace OAuth2 Access Token URL |
 
 1. Select **Next**, review the **Review and save** page, and then select **Save and exit** to complete the update.
 
@@ -98,7 +98,7 @@ You now have a tool registration configured in the Microsoft registration portal
 
 1. Select ***all*** Security Settings ***except*** **Anonymous** (including Org Unit information, User Information, Link Information).
   
-:::image type="content" source="./media/brightspace-security-settings.png" alt-text="Screenshot of security settings." border="true":::
+  :::image type="content" source="./media/brightspace-security-settings.png" alt-text="Screenshot of security settings." border="true":::
 
 1. In Configuration Settings, select **Grades created by LTI will be included in Final Grade** and **Auto Create Grade Items**. Make sure that **Open as External Resource** is **not** checked.
   :::image type="content" source="./media/brightspace-configuration-settings.png" alt-text="Screenshot of configuration settings." border="true":::
@@ -123,7 +123,7 @@ You now have a tool registration configured in the Microsoft registration portal
 
 1. Enter **Microsoft Education** as the **Name**.
 
-1. For the **URL**, enter: `**https://assignments.edu.cloud.microsoft/lti-ui**`.
+1. For the **URL**, enter: `https://assignments.edu.cloud.microsoft/lti-ui`.
 
 1. For the **Type**, select **Basic Launch**.
 
@@ -135,7 +135,7 @@ You now have a tool registration configured in the Microsoft registration portal
 
 1. Enter **Microsoft Education** as the **Name**.
 
-1. For the **URL**, enter: `**https://assignments.edu.cloud.microsoft/lti-ui**`.
+1. For the **URL**, enter: `https://assignments.edu.cloud.microsoft/lti-ui`.
 
 1. Select **Deep Linking Quicklink** for the **Type**.
 
@@ -147,7 +147,7 @@ You now have a tool registration configured in the Microsoft registration portal
 
 1. Enter **Microsoft Education** as the **Name**.
 
-1. For the **URL**, enter: `**https://assignments.edu.cloud.microsoft/lti-ui**`.
+1. For the **URL**, enter: `https://assignments.edu.cloud.microsoft/lti-ui`.
 
 1. For the **Type**, select **Widget**.
 
@@ -175,7 +175,7 @@ You now have a tool registration configured in the Microsoft registration portal
 
 1. Select **Save and Close**.
 
-## First-time Configuration by an LMS Administrator
+## First-time configuration by an LMS administrator
 
 You must launch the app for the first time as a user with the **Brightspace System Administrator** role to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step!
 
