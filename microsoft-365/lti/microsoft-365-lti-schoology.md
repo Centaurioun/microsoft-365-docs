@@ -1,6 +1,6 @@
 ---
-title: Deploy the Microsoft 365 LTI App in Canvas
-description: Learn how to deploy the Microsoft 365 Learning Tool Interoperability (LTI) app in Canvas.
+title: Deploy the Microsoft 365 LTI App in Schoology
+description: Learn how to deploy the Microsoft 365 Learning Tool Interoperability (LTI) app in PowerSchool Schoology Learning.
 author: jennplatt
 ms.author: avering
 manager: michal.gideoni

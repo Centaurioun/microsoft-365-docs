@@ -47,7 +47,7 @@ Canvas supports multiple tool deployment for the same tool through two different
 1. In the apps list, search for **Microsoft Education.** If the ***Nothing Here Yet*** message is displayed after typing your search, select the **Show All Keys** button.
 
 1. There are three Developer Keys for the Microsoft Education API app: two LTI keys and one API key.
-    :::image type="content" source="./media/canvas-developer-keys.png" alt-text="Screenshot of link to send feedback for Microsoft Teams Assignments." border="true":::
+    :::image type="content" source="./media/canvas-developer-keys.png" alt-text="Screenshot of developer keys." border="true":::
     1. Enable the API key **170000000001941** by toggling the **State** switch to **On** and then selecting the **Switch to On** button in the pop up to confirm.
     1. Decide which version of the LTI key you would like to deploy and toggle the **State** switch to **On** and then select the **Switch to On** button in the pop up to confirm. You will need to know which Client ID listed in the Details column for the developer key you chose to enable for a later step.
   
