@@ -43,9 +43,6 @@ This article explains how to reset passwords for yourself and for your users whe
 > [!IMPORTANT]
 > To support increased security, as of August 30, 2024, Microsoft will remove the ability to send user account details and passwords in email from within the Microsoft 365 admin center. We recommend that you print the account information to a PDF file, then share it with your users in a secure manner.
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
 
 This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [Overview in the Microsoft 365 admin center](../admin-overview/admin-center-overview.md).

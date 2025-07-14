@@ -38,9 +38,6 @@ Multifactor authentication means you and your employees must provide more than o
 
 Multifactor authentication (MFA) is an important first step in securing your organization. Microsoft 365 for business gives you the option to use security defaults or Conditional Access policies to turn on MFA for your admins and user accounts. For most organizations, **Security defaults** offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use [Conditional Access policies](https://go.microsoft.com/fwlink/?linkid=2261708).
 
-> [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
 
 - You must be a Global admin to manage MFA. For more information, see [About admin roles](../add-users/about-admin-roles.md).
