@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: siruvanti
-ms.date: 07/10/2025
+ms.date: 07/11/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-business
@@ -81,10 +81,13 @@ After setting up billing, you can [set up a budget and monitor your usage in the
 
 ### Prerequisites
 
-Ensure you have the following roles:
+- Ensure you have one of the following Microsoft 365 administrator roles:
 
-- [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) for accessing the Microsoft 365 admin center
-- Owner or Contributor rights to the Azure subscription and resource group
+    - Global administrator
+    - Billing administrator
+    - AI administrator
+
+To learn more about these roles, see [Microsoft 365 admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 ### Disconnect agents from pay-as-you-go billing
 
