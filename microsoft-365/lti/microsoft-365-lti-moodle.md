@@ -52,7 +52,7 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 1. Navigate to **Site administration > Plugins** and select **External tool** and then **Manage tools**.
 
-1. Select Configure a tool manually and enter the values listed in the table:
+1. Select **Configure a tool manually** and enter the values listed in the table:
 
     | **Field in Moodle** | **Value** |
     |---|---|
@@ -74,24 +74,24 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 1. On the **Microsoft registration portal** tab, select **Next** to navigate to LMS provided registration keys. Enter the values listed in the table:
 
-| **Field in Microsoft registration portal** | **Value** |
-|---|---|
-| **Issuer ID URL** | Copy the Platform ID value from Moodle tool configuration details. |
-| **Client ID** | Copy the Client ID value from Moodle tool configuration details. |
-| **Keyset URL** | Copy the Public keyset URL value from Moodle tool configuration details. |
-| **Platform authentication URL** | Copy the Authentication request URL value from Moodle tool configuration details. |
-| **Deployment ID** | Copy the Deployment ID value from Moodle tool configuration details. |
-| **Access token URL** | Copy the Access token URL value from Moodle tool configuration details. |
+    | **Field in Microsoft registration portal** | **Value** |
+    |---|---|
+    | **Issuer ID URL** | Copy the Platform ID value from Moodle tool configuration details. |
+    | **Client ID** | Copy the Client ID value from Moodle tool configuration details. |
+    | **Keyset URL** | Copy the Public keyset URL value from Moodle tool configuration details. |
+    | **Platform authentication URL** | Copy the Authentication request URL value from Moodle tool configuration details. |
+    | **Deployment ID** | Copy the Deployment ID value from Moodle tool configuration details. |
+    | **Access token URL** | Copy the Access token URL value from Moodle tool configuration details. |
 
-1. elect **Next** in the **Microsoft registration portal** tab.
+1. Select **Next** in the **Microsoft registration portal** tab.
 
 1. Review the **Review and save** page. If there are no errors, select **Save** and **Exit**. You should see a message indicating successful registration.
 
-1. The Microsoft 365 LTI is now installed and ready for teachers to add to their courses.
+The Microsoft 365 LTI is now installed and ready for teachers to add to their courses.
 
 **To add a static resource launch to a course for access to all Microsoft Education resource apps:**
 
-1. Toggle your course to **Edit mode** and **select More > LTI External tools**.
+1. Toggle your course to **Edit mode** and select **More > LTI External tools**.
 
 1. Find Microsoft Education and turn on the **Show in activity chooser** toggle.
 
@@ -105,11 +105,11 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 The Teams Education resources are now available and ready to use in your course by both teachers and students.
 
-**Add Microsoft Education resources to your courses:**
+**To add Microsoft Education resources to your courses:**
 
 After the initial setup of the Microsoft Education external tool app, course teachers will need to add it to their courses to use it with their students.
 
-1. With your course toggled to **Edit Mode**, select +**Add an activity** **or resource** at the bottom of the section you wish to add the activity.
+1. With your course toggled to **Edit Mode**, select **+ Add an activity or resource** at the bottom of the section you wish to add the activity.
 
 1. In the Activity chooser, select **Microsoft Education** as the activity type.
 
@@ -118,7 +118,7 @@ After the initial setup of the Microsoft Education external tool app, course tea
 1. Select **Save** to add the activity to the course.
 
 > [!TIP]
->If you select the star icon and favorite the activity, it appears in your **starred*** list for quick access.
+>If you select the star icon and favorite the activity, it appears in your **starred** list for quick access.
 
 **To connect a Microsoft Team to your course:**
 
@@ -128,9 +128,9 @@ It's recommended to [install the Microsoft 365 Moodle plugins](/microsoft-365/lt
 
 ## First-time configuration by an LMS administrator
 
-You must launch the app for the first time as a user with the **Brightspace System Administrator** role to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step!
+You must launch the app for the first time as a user with the **Moodle System Administrator** role to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step!
 
-1. As a Brightspace System Administrator, access any Course that has the Microsoft Education link added
+1. As a Moodle System Administrator, access any course that has the Microsoft Education link added.
 
 1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
 <!-- -->
