@@ -248,17 +248,16 @@ To assign Copilot Studio licenses, use the Microsoft 365 admin center. To view t
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com/) as the **License admin**. Assign Copilot Studio licenses to the users who need to create agents.
 
-    To learn more, see:
+   To learn more, see the following articles:
 
-    - [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles)
-    - [Assign licenses and manage access to Copilot Studio](/microsoft-copilot-studio/requirements-licensing)
+      - [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles)
+      - [Assign licenses and manage access to Copilot Studio](/microsoft-copilot-studio/requirements-licensing)
 
-1. The Copilot Studio users can start using the reports:
+1. As a licensed Copilot Studio user, sign into [Copilot Studio](https://copilotstudio.microsoft.com).
 
-    1. Sign into [Copilot Studio](https://copilotstudio.microsoft.com) as a licensed Copilot Studio user.
-    1. Select **Agents** > select your agent > **Analytics** tab.
+2. Select **Agents**, select your agent, and then select the **Analytics** tab.
 
-        To learn more, see [Review and improve agent effectiveness in Copilot Studio](/microsoft-copilot-studio/analytics-improve-agent-effectiveness).
+   For more information, see [Review and improve agent effectiveness in Copilot Studio](/microsoft-copilot-studio/analytics-improve-agent-effectiveness).
 
 ### Copilot Studio Kit
 
