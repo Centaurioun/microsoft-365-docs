@@ -129,11 +129,11 @@ This flow completes the Microsoft Entra piece of configuration.
 
 #### Task 2: Register OIDC provider in ServiceNow
 
-1. Login to the ServiceNow instance that needs to be integrated with ESS Agent.
+1. Sign in to the ServiceNow instance that needs to be integrated with ESS Agent.
 
 1. Elevate access permissions using **Elevate role**. Refer to the section **Error! Reference source not found.** – only the first part and not the tasks.
 
-1. Click **All** in the top navigation bar.
+1. Select **All** in the top navigation bar.
 
 1. Search for “OAuth” in the search box within dropdown navigation menu.
 
@@ -149,12 +149,12 @@ This flow completes the Microsoft Entra piece of configuration.
    |--------------|------------|
    |Name |a meaningful name to identify that this OIDC provider was created for ESS Agent |
    |Client ID |The client ID of Microsoft Entra Application created in Task 1 above |
-   |Client secret |This value will not be used; can be any value |
+   |Client secret |This value isn't used; can be any value |
    |OAuth OIDC provider configuration |Add a new OIDC provider configuration by selecting the search icon and choosing **New** in the search popup. Fill in the fields as follows:</br> **OIDC Provider:** A name that represents the Microsoft Entra tenant from task 1 above.</br> **OIDC Metadata URL:** `login.microsoftonline.com/<tenant ID>/.well-known/openid-configuration`</br> Replace < tenant ID > with the Microsoft Entra tenant ID from task 1 above.</br> **OIDC Configuration Cache Life Span:** 120</br> **Application:** Global</br> **User Claim:** oid</br> **User Field:** User ID</br> **Enable JTI claim verification:** disabled</br> Select **Submit** and update the OIDC Entity form. |
 
 #### Task 3: Register an Application in Microsoft Entra ID for connector usage
 
-This is the application which plays the role of a user with elevated permissions in the ServiceNow instance.
+This is the application that plays the role of a user with elevated permissions in the ServiceNow instance.
 
 1. Sign into the Microsoft Entra admin center as a Global Administrator or Cloud App Administrator.
 
@@ -169,7 +169,7 @@ This is the application which plays the role of a user with elevated permissions
 
 1. Select **Register** to complete the creation of new app registration.
 
-1. Select **Certificates & secrets** then upload the `.cer` file of the certificate. In case of SNI certificate, just add `trustedCertificateSubjects` in the manifest of the application with the relevant `authorityId` and `subjectName`.
+1. Select **Certificates & secrets** then upload the `.cer` file of the certificate. If there's an SNI certificate, just add `trustedCertificateSubjects` in the manifest of the application with the relevant `authorityId` and `subjectName`.
 
 #### Task 4: Create a System User in ServiceNow
 
