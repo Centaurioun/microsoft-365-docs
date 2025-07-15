@@ -70,7 +70,7 @@ The following table lists what automatically happens when you assign a license t
 |Microsoft Teams|The person has access to the features associated with the license.|
 |Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business|The person can download Microsoft 365 Apps on up to five Macs or PCs, five tablets, and five smartphones.|
 
-## Understand licenses for nonuser mailboxes
+## Understand licenses for non-user mailboxes
 
 You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about nonuser mailboxes, see the following articles:
   
