@@ -30,7 +30,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 06/17/2025
+ms.date: 07/13/2025
 ---
 
 # Payment options for Microsoft business subscriptions
@@ -65,6 +65,27 @@ If recurring billing is turned off for a subscription that is paid for directly 
 
 If recurring billing is turned off for a subscription that is paid for by a billing profile, you can use the **Pay now** button on the invoice summary in the admin center to pay for it every billing period, regardless of what payment method is linked with the billing profile.
 
+## Pay now and partial payments
+
+Partial payment is available in the Microsoft 365 admin center for customers who experience a payment failure during the one-time payment **Pay now** flow. If you accrue usage higher than your credit card limit, you can use the following self-serve process to split the invoice amount across multiple credit cards. 
+ 
+A minimum payment has a minimum value that you can pay, which varies by country/region. 
+
+> [!NOTE] 
+> To avoid service interruption, pay the full invoice amount by the due date on the invoice. 
+ 
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. 
+
+   - If you're using the **Simplified view**, select the **Products** tab, then select **View invoices**. 
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Invoices** tab. 
+1. If any of your eligible invoices are due or past due, you see a blue **Pay now** link for the invoice. Select **Pay now**. 
+1. In the **Pay now** window, select **Select a payment method** to choose an existing credit card or add a new one.
+1. Select **Pay now**.
+1. If the payment fails, the partial payment feature appears in the **Pay now** section. There's a minimum partial payment amount. You must enter an amount greater than the minimum. 
+1. Select the **Select a payment method** option to choose an existing credit card or add a new one. 
+1. Select **Pay now**. 
+1. Repeat steps 6 and 7 until you fully pay the invoice amount. 
+ 
 ## Paying by wire transfer
 
 If you're a new customer, paying by wire transfer isn't available as a payment method.
