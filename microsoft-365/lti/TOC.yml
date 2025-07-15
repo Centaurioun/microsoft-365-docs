@@ -19,6 +19,8 @@ items:
         href: reflect-lti-canvas.md
     - name: Blackboard integrations
       items:
+      - name: Deploy Microsoft 365 LTI in Blackboard
+        href: microsoft-365-lti-blackboard.md
       - name: Use Microsoft OneDrive LTI with Blackboard
         href: onedrive-lti-blackboard.md
       - name: Use Microsoft Teams Assignments with Blackboard  
@@ -29,6 +31,8 @@ items:
         href: reflect-lti-blackboard.md        
     - name: Moodle integrations
       items:
+      - name: Deploy Microsoft 365 LTI in Moodle
+        href: microsoft-365-lti-moodle.md
       - name: Set up and configure the Moodle plugin
         href: moodle-plugin-configuration.md
       - name: Use Microsoft Teams Assignments with Moodle  
@@ -41,6 +45,8 @@ items:
         href: open-lms-plugin-configuration.md
     - name: D2L Brightspace integrations
       items:
+      - name: Deploy Microsoft 365 LTI in Brightspace
+        href: microsoft-365-lti-brightspace.md
       - name: Use Microsoft OneDrive LTI with Brightspace
         href: onedrive-lti-brightspace.md
       - name: Use Microsoft Teams Assignments with Brightspace  
@@ -49,6 +55,8 @@ items:
         href: reflect-lti-brightspace.md        
     - name: Schoology Learning integrations
       items:
+      - name: Deploy Microsoft 365 LTI in Schoology Learning
+        href: microsoft-365-lti-schoology.md
       - name: Use Microsoft OneDrive LTI with Schoology Learning
         href: onedrive-lti-schoology.md
       - name: Use Microsoft Teams Assignments with Schoology Learning
