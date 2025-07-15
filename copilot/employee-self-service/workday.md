@@ -228,10 +228,8 @@ In this article, you learn how to set up the **Microsoft Entra ID Integrated** a
 When installing the Workday connector, the first step is to set up connections using the form. Fill out the following fields:
 
 **Microsoft Entra resource URL (Application ID URI)**
-This is Microsoft Entra's app registration created for Workday SSO.
+This is Microsoft Entra's app registration created for Workday SSO. [Learn how to access app registrations](/entra/identity-platform/quickstart-register-app).
 
-1. Sign into the [Azure portal](https://portal.azure.com)
-1. In the search bar, search for **App registrations**.
 1. Select **All applications**.
 1. Choose the correct application created for Workday SSO.
 1. In the **Overview** section, use the **Application ID URI** under the **Essentials** tab.
@@ -266,6 +264,9 @@ Workday report configuration provides the SOAP base URL.
 |ISUAccount |PP environment variable |EmployeeContextRequestAccountName |ISU_WQL_COPILOT@< domain >.com |
 |ReportName |PP environment variable |EmployeeContextRequestReportName |WD_User_Context |
 
+>[!NOTE]
+>[If the ISUAccount name gets encoded in the report XML output, substitute %40 with @ character to make it a qualified UPN.]
+
 >[!IMPORTANT]
 >If the custom report name is different from the default name (**WD_User_Context**), follow these steps:
 
@@ -275,28 +276,34 @@ Workday report configuration provides the SOAP base URL.
 1. Select **Objects** > **Employee Self-Service Template Configuration** > **HRWorkdayHCMEmployeeGetContext**.
 1. Update the value with the correct name in the **Value** section.
 
+>[!NOTE]
+>[The ESS agent uses a new Workday connector, which is not the same as the one published in the Power Platfrom connectors list (Workday HCM - Connectors). The current connector used in the agent is Workday SOAP. Plan for any DLP policies to allowlist this connector in the environment where the agent is being deployed and tested.]
+
 #### Step four: Configure connections
 
 During the Workday Extension Pack installation process, you'll be prompted for the following connection configurations:
 
-|Connection reference name |Connection reference ID |Expected connection |
+|Connection reference name |Connection reference ID |Expected connection user account |
 |--------------------------|------------------------|--------------------|
-|OAuthUser |new_sharedworkdaysoap_ff0df |the signed-in user |
+|OAuthUser |new_sharedworkdaysoap_ff0df |Maker/the signed-in user |
 |Context Generic User |new_sharedworkdaysoap_d6081 |ISSG_WQL_COPILOT |
 |Generic User |new_sharedworkdaysoap_0786a |ISSG_Generic_COPILOT |
 |Microsoft Dataverse |msviess_sharedcommondataserviceforapps_92b66 |ISSG_WQL_COPILOT |
+
+Note that all the above user accounts mentioned in the table under "Expected connection user account" should be available in Entra for SSO and use the respective accounts in UPN format (example: `ISSG_WQL_COPILOT@contoso.com`). Ensure that each connection is explicitly set up with its own account even though the connection status turned green after the first connection setup.
 
 #### Step five: Update the environment variables
 
 1. After you install the Workday extension, select **Solutions** in the left navigation in Copilot Studio.
 1. A banner on the solutions page prompts you to fill in the environment variables.
-1. Update the following environment variables:
+1. Update the following environment variables. Refer to the following inputs from the **SOAP Base URL** section.
 
 |Environment variable |Description |
 |---------------------|------------|
-|EmployeeContextRequestAccountName |Should contain the account that has access to the RaaS report. Reference from connection table: ISUAccount |
-|EmployeeContextRequestReportName |Should be the name of the report that contains the required information. Reference from connection table: Report Instance |
 |WorkdayWebsiteRedirectMessage |This is the message shown to users in success/failure scenarios for update email/phone number actions |
+|EmployeeContextRequestAccountName |Should contain the account that has access to the RaaS report. Reference from connection table: ISUAccount |
+|EmployeeContextRequestReportName |should be the name of the report that contains the required information reference from above connection table: ReportName |
+|EmployeeContextRequestReportInstanceName |should be the instance name that the report belongs to reference from above connection table: Report Instance |
 
 #### Step 6: Confirm the Workday flows are turned on
 

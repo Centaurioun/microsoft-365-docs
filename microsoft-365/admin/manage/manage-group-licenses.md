@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sinakassaw, nicholak
+ms.reviewer: nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -21,7 +21,7 @@ ms.custom:
 - m365-groups
 search.appverid: MET150
 description: "Learn how to assign or unassign licenses to groups in the Microsoft 365 admin center."
-ms.date: 04/07/2025
+ms.date: 07/08/2025
 ---
 
 # Assign or unassign licenses to a group in the Microsoft 365 admin center

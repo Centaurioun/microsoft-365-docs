@@ -29,7 +29,7 @@ description: "Learn how to improve the use of Microsoft 365 Copilot Chat across 
 As an admin, you can pin Microsoft 365 Copilot Chat to the navigation bar of Teams, Outlook, and the Microsoft 365 Copilot app across the web, desktop, and mobile. Pinning makes it easy for users to access Copilot Chat as the secure and compliant generative AI chat solution that's available to them on their work identity (signed in with a Microsoft Entra account).
 
 > [!NOTE]
-> This information is specific to the Copilot Chat experience in the navigation bar of Microsoft 365 apps. You can also pin the Copilot app to the Windows taskbar. For more information, see [Pin Microsoft 365 Copilot to the Windows taskbar](pin-copilot-taskbar.md). To understand the difference between Copilot Chat and the Copilot app, see [Decide which Copilot is right for you](which-copilot-for-your-organization.md).
+> The information in this article is specific to the Copilot Chat experience in the navigation bar of Microsoft 365 apps. You can also [pin the Microsoft 365 Copilot app to the Windows taskbar](pin-copilot-taskbar.md). **Copilot Chat** is an integrated chat experience available within Microsoft 365 apps. The **Copilot app** is a standalone application that provides access to Chat, Search, Agents (if enabled), Notebooks, and Create. To understand the difference between the Copilot app and Copilot Chat, see [Decide which Copilot is right for you](which-copilot-for-your-organization.md).
 
 ## Before you begin
 

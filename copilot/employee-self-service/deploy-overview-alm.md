@@ -80,7 +80,7 @@ You need to work with your organization’s Power Platform administrator to esta
 
 The ESS Agent has three distinct persona experiences:
 
-1. Administrator: Prepare the tenant to deploy, configure, and operate the ESS agent with the correct roles assigned to identified service owners.
+1. Administrator: Prepare the tenant to deploy, configure, and operate the ESS agent with the correct roles assigned to identified administrators.
 
 2. Environment maker: Install, configure, and publish the agent, including third-party ISV packages.
 

@@ -36,7 +36,7 @@ Preparation is the first step to deploying the Employee Self-Service (ESS) agent
 1. Sign in as a Global admin to your [admin center](https://admin.microsoft.com).
 1. Select **Roles**, then choose **Role assignments**.
 1. In the **Microsoft Entra ID** section, find the **Power Platform Administrator** role.
-1. Add the users you've chosen as service owners for the ESS agent in the **Assigned** section.
+1. Add identified users in the **Assigned** section.
 
 ## Set up your Power Platform environment and assign the Environment Maker role
 
@@ -48,7 +48,7 @@ Preparation is the first step to deploying the Employee Self-Service (ESS) agent
     1. Add a **Dataverse data store**.
 1. Under **Access**, select **Security roles**.
 1. From the list of security roles, select **Environment Maker**. Choose **Members** in the top ribbon.
-1. Select **Add people** in the ribbon to add the designated person who can configure and publish the ESS agent. This person is typically the service owner in your organization.
+1. Select **Add people** in the ribbon to add the designated person who can configure and publish the ESS agent. This person is typically the agent owner in your organization.
 
 >[!NOTE]
 >Environment Makers can't install new agents. Only the environment administrators can install new agents.
