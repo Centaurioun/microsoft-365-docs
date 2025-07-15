@@ -78,13 +78,13 @@ A minimum payment has a minimum value that you can pay, which varies by country/
 
    - If you're using the **Simplified view**, select the **Products** tab, then select **View invoices**. 
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Invoices** tab. 
-1. If any of your eligible invoices are due or past due, a blue **Pay now** link for the invoice is available. Select **Pay now**. 
+1. If any of your eligible invoices are due or past due, you see a blue **Pay now** link for the invoice. Select **Pay now**. 
 1. In the **Pay now** window, select **Select a payment method** to choose an existing credit card or add a new one.
 1. Select **Pay now**.
 1. If the payment fails, the partial payment feature appears in the **Pay now** section. There's a minimum partial payment amount. You must enter an amount greater than the minimum. 
 1. Select the **Select a payment method** option to choose an existing credit card or add a new one. 
 1. Select **Pay now**. 
-1. Repeat steps 7 and 8 until you fully pay the invoice amount. 
+1. Repeat steps 6 and 5 until you fully pay the invoice amount. 
  
 ## Paying by wire transfer
 
