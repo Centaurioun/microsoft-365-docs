@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
 manager: triciagill
-ms.date: 07/03/2025
+ms.date: 07/15/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
@@ -52,7 +52,7 @@ The previous diagram outlines the high-level components comprising overall solut
 The following are known issues & limitations of the Power Platform connector for ServiceNow:
 
 - When using the Create Record action, it's not possible to specify the full record description. The field value is ignored due to ServiceNow REST API limitations.
-- The Get Records action may return an "Invalid Table" or other error in Power Apps. For Power Apps implementations the suggested work-around is to utilize the Get Records action in Power Automate and pass the data back to Power Apps.
+- The Get Records action might return an "Invalid Table" or other error in Power Apps. For Power Apps implementations the suggested work-around is to utilize the Get Records action in Power Automate and pass the data back to Power Apps.
 
 For detailed documentation about the connector, see [ServiceNow - Connectors](/connectors/service-now/#known-issues-and-limitations).
 
@@ -75,7 +75,7 @@ Refer to the ESS Agent deployment guide for installation of the agent and subscr
 
 ## ServiceNow configuration
 
-This section outlines the tasks required to be configured in ServiceNow by an administrator.  ServiceNow integration supports several types of authentications:
+This section outlines the tasks required to be configured in ServiceNow by an administrator. ServiceNow integration supports several types of authentications:
 
 - Basic authentication
 - Microsoft Entra ID OAuth using certificates
@@ -90,11 +90,11 @@ This section outlines the tasks required to be configured in ServiceNow by an ad
 
 ### Basic authentication
 
-This method of authentication involves a ServiceNow username and password to authenticate API requests.  This method is simple to use and is primarily suggested for testing purposes, as it offers lower security compared to other authentication methods.
+This method of authentication involves a ServiceNow username and password to authenticate API requests. This method is simple to use and is primarily suggested for testing purposes, as it offers lower security compared to other authentication methods.
 
-### Microsoft EntraID OAuth using Certificate
+### Microsoft Entra ID OAuth using Certificate
 
-This authentication uses app tokens, allowing a registered Microsoft Entra ID application to access ServiceNow with a token specifying the ServiceNow Entra ID app as the resource.
+This authentication uses app tokens, allowing a registered Microsoft Entra ID application to access ServiceNow with a token specifying the ServiceNow Microsoft Entra ID app as the resource.
 
 #### Task 1: Register an application in Microsoft Entra ID for OIDC integration with ServiceNow
 
@@ -123,7 +123,7 @@ This authentication uses app tokens, allowing a registered Microsoft Entra ID ap
 
 1. Select **Add** to complete adding the claims.
 
-1. If this is the first time OpenId Connect being setup using claims like email, upn, there’ll be a confirmation to turn on the Microsoft Graph permissions, please check the box and select **Add**.
+1. If this is the first time OpenId Connect being setup using claims like email, upn, there’s a confirmation screen to turn on the Microsoft Graph permissions. If you see the confirmation, check the box, and then select **Add**.
 
 This flow completes the Microsoft Entra piece of configuration.
 
