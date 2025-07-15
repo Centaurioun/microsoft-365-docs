@@ -173,7 +173,7 @@ This is the application that plays the role of a user with elevated permissions 
 
 #### Task 4: Create a System User in ServiceNow
 
-This is the Application created in the previous task 3 which is a user in ServiceNow instance.
+In this task, you add a user to the Application created in task 3 (earlier in this article).
 
 1. Go to **User Administration** > **Users** to create a new user.
 
