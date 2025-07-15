@@ -97,7 +97,7 @@ If you prefer, you can pay by electronic transfer between accounts. The Agency a
 
 ## What if I have an outstanding balance?
 
-If we're unable to charge the payment method on file, we send an email that lets you know there's a problem. The email briefly states what the problem is and includes a link where you can check the outstanding balance. We continue to retry the transaction every few days for 30 days, during which time the subscription is in a grace period. Every time a transaction fails, you receive an email alert about the failure.
+If we're unable to charge the payment method on file, we send an email that lets you know there's a problem. The email briefly states what the problem is and includes a link where you can check the outstanding balance. We will retry the transaction every few days, up to the point of sending the unpaid debt to collections. Every time a transaction fails, you receive an email alert about the failure.
 
 If you have an MCA billing account type, and your payment method is declined, you can use the **Pay now** button on the invoice summary in the Microsoft 365 admin center to make a one-time payment.
 
