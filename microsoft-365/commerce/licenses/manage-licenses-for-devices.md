@@ -25,7 +25,7 @@ ms.custom:
 - campaignIDs-batch2
 search.appverid: MET150
 description: "Learn how to assign Microsoft 365 Apps licenses to groups for use with devices."
-ms.date: 03/11/2025
+ms.date: 07/13/2025
 ---
 # Manage Microsoft 365 Apps licenses for devices
 
