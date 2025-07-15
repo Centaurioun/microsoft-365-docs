@@ -84,7 +84,7 @@ A minimum payment has a minimum value that you can pay, which varies by country/
 1. If the payment fails, the partial payment feature appears in the **Pay now** section. There's a minimum partial payment amount. You must enter an amount greater than the minimum. 
 1. Select the **Select a payment method** option to choose an existing credit card or add a new one. 
 1. Select **Pay now**. 
-1. Repeat steps 6 and 5 until you fully pay the invoice amount. 
+1. Repeat steps 6 and 7 until you fully pay the invoice amount. 
  
 ## Paying by wire transfer
 
