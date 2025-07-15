@@ -67,29 +67,24 @@ If recurring billing is turned off for a subscription that is paid for by a bill
 
 ## Pay now and partial payments
 
-Partial payment is available for M365 admin center for customers who experience a payment failure during the one-time payment, Pay now flow. If you accrue usage higher than your credit card limit, you can use the following self-serve process to split the invoice amount across multiple credit cards. 
+Partial payment is available in the Microsoft 365 admin center for customers who experience a payment failure during the one-time payment **Pay now** flow. If you accrue usage higher than your credit card limit, you can use the following self-serve process to split the invoice amount across multiple credit cards. 
  
 A minimum payment has a minimum value that you can pay, which varies by country/region. 
 
 > [!NOTE] 
 > To avoid service interruption, pay the full invoice amount by the due date on the invoice. 
  
-Pay now and partial payment: 
-
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. 
 
    - If you're using the **Simplified view**, select the **Products** tab, then select **View invoices**. 
-   - If you're using the **Dashboard view**, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Invoices** tab. 
-1. If any of your eligible invoices are due or past due, a blue **Pay now** link for the invoice is available. Click the link. 
-
-1. In the **Pay now** window, click **Select a payment method** to choose an existing credit card or add a new one.
-
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Invoices** tab. 
+1. If any of your eligible invoices are due or past due, a blue **Pay now** link for the invoice is available. Select **Pay now**. 
+1. In the **Pay now** window, select **Select a payment method** to choose an existing credit card or add a new one.
 1. Select **Pay now**.
-
-3. If the payment fails, the partial payment feature appears in the **Pay now** experience. There's a minimum partial payment amount. You must enter an amount greater than the minimum. 
-8. Select the **Select a payment method** option to choose an existing credit card or add a new one. 
-9. Select **Pay now**. 
-10. Repeat steps 8 to 9 until you fully pay the invoice amount. 
+1. If the payment fails, the partial payment feature appears in the **Pay now** section. There's a minimum partial payment amount. You must enter an amount greater than the minimum. 
+1. Select the **Select a payment method** option to choose an existing credit card or add a new one. 
+1. Select **Pay now**. 
+1. Repeat steps 7 and 8 until you fully pay the invoice amount. 
  
 ## Paying by wire transfer
 
