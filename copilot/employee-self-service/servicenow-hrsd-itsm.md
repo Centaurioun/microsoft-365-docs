@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
 manager: triciagill
-ms.date: 7/3/2025
+ms.date: 07/03/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
@@ -70,17 +70,17 @@ Refer to the ESS Agent deployment guide for installation of the agent and subscr
 |---------|---------|---------|---------|
 | **ServiceNow Administrator** | User who can perform administrative tasks | Create a service account and assign a role to provide read access to specific table records | ServiceNow |
 | **ServiceNow Security Administrator** | User who can configure OAuth | Create OAuth Application Registry – *if using OAuth for ServiceNow connector* | ServiceNow |
-| **Application Developer** (*minimum privileged role*)  | User who can register an application | Create an App registration - *if using Microsoft Entra OAuth for ServiceNow connector* | Microsoft 365 Admin Center |
+| **Application Developer** (*minimum privileged role*)  | User who can register an application | Create an App registration - *if using Microsoft Entra OAuth for ServiceNow connector* | Microsoft 365 admin center |
 | **Environment Maker** | User who can customize ESS Agent | Configure & Customize ESS Agent | Microsoft Copilot Studio |
 
 ## ServiceNow configuration
 
-This section outlines the tasks required to be configured in ServiceNow by an administrator.  ServiceNow integration supports three types of authentications as follows:
+This section outlines the tasks required to be configured in ServiceNow by an administrator.  ServiceNow integration supports several types of authentications:
 
-1. Basic authentication
-2. Microsoft Entra ID OAuth using certificate
-3. Microsoft Entra ID User sign in
-4. User Oauth2
+- Basic authentication
+- Microsoft Entra ID OAuth using certificates
+- Microsoft Entra ID User sign in
+- User Oauth2
 
 > [!NOTE]
 > For all security related tasks in ServiceNow, the logged in user with `admin` or `security_admin` role must elevate their access using "Elevate role" option from the profile menu in the top right of navigation bar.
@@ -94,26 +94,37 @@ This method of authentication involves a ServiceNow username and password to aut
 
 ### Microsoft EntraID OAuth using Certificate
 
-This authentication uses app tokens, allowing a registered Entra ID application to access ServiceNow with a token specifying the ServiceNow Entra ID app as the resource.
+This authentication uses app tokens, allowing a registered Microsoft Entra ID application to access ServiceNow with a token specifying the ServiceNow Entra ID app as the resource.
 
 #### Task 1: Register an application in Microsoft Entra ID for OIDC integration with ServiceNow
 
 [Learn how to register an app in Microsoft Entra ID.](/entra/identity-platform/quickstart-register-app)
 
-1. Sign into the Microsoft Entra admin portal as a global administrator or cloud app administrator.
+1. Sign into the Microsoft Entra admin center as a Global Administrator or Cloud App Administrator.
+
 1. Go to **Applications** then **App registrations**.
+
 1. Select **New registration.**
+
 1. In the new registration form, fill in the following fields:
-    1. **Name:** Any name that represents the purpose of app registratio
-    1. **Redirect URL:** Not needed
+
+   - **Name:** Any name that represents the purpose of app registration
+   - **Redirect URL:** Not needed
+
 1. Choose **Register** to complete the creation of the new app registration.
+
 1. Select **Token configuration** then **Add optional claim** for adding claims setting.
+
 1. Select **Token type** as **Access** and choose the following claims:
-    1. *aud* - for audience validation
-    1. *email* - addressable email for user
-    1. *upn* - an identifier for the user
+
+   - *aud* - for audience validation
+   - *email* - addressable email for user
+   - *upn* - an identifier for the user
+
 1. Select **Add** to complete adding the claims.
+
 1. If this is the first time OpenId Connect being setup using claims like email, upn, there’ll be a confirmation to turn on the Microsoft Graph permissions, please check the box and select **Add**.
+
 1. This flow completes the Microsoft Entra piece of configuration.
 
 #### Task 2: Register OIDC provider in ServiceNow

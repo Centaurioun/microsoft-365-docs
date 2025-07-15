@@ -42,7 +42,7 @@ This article applies to:
 
 To use the features in this article, you need the following role-based access control (RBAC) roles:
 
-- **Global administrator** - This role can configure the Microsoft 365 admin center features.
+- **Global Administrator** - This role can configure the Microsoft 365 admin center features.
 - **Office Apps admin** - This role can create the Cloud policies for the Microsoft 365 Copilot app.
 
 To learn more, see [Admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
@@ -65,7 +65,7 @@ The following table lists the Copilot app settings that you can configure.
 | Create | ✅ Built-in. <br/><br/>The built-in features aren't configurable. <br/><br/>You can use Cloud Policy to set up and publish organization brand kits that are shown when users select **Create**. | [Create enterprise brand manager policy and allow organizational asset library (OAL) access](enterprise-brand-manager.md) |
 | Copilot Key and Windows + C shortcut | ✅ Configured by default <br/><br/>Admins can map the Copilot key to the Microsoft 365 Copilot app. End users can also manually configure. | [Policy CSPs to manage the Copilot key](/windows/client-management/manage-windows-copilot#policies-to-manage-the-copilot-key) <br/><br/>You can also use the [Microsoft Intune settings catalog](/intune/intune-service/configuration/settings-catalog) (Windows AI category) to configure the hardware key on the keyboard. |
 
-## Related articles
+## Related content
 
 - [What is the Microsoft 365 Copilot app?](microsoft-365-copilot-app-overview.md)
 - [Updated Windows and Microsoft 365 Copilot Chat experience](/windows/client-management/manage-windows-copilot)
