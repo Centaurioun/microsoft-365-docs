@@ -263,12 +263,12 @@ To assign Copilot Studio licenses, use the Microsoft 365 admin center. To view t
 
 The **Copilot Studio Kit** is a set of tools and resources that helps you test custom agents, track key performance indicators of your custom agents, and more.
 
-To learn more, see:
+To learn more, see the following articles:
 
 - [Copilot Studio Kit - AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.copilotstudiokit2)
 - [Power CAT Copilot Studio Kit - GitHub](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit/blob/main/README.md)
 
-## Related articles
+## Related content
 
 - [Microsoft 365 Copilot license plans](microsoft-365-copilot-licensing.md)
 - [Microsoft 365 Copilot setup](microsoft-365-copilot-setup.md)
