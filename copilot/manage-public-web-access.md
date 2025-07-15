@@ -56,6 +56,8 @@ After Microsoft 365 Copilot and Microsoft 365 Copilot Chat receive additional in
 
 To provide greater visibility into the generated search queries, web search query citations are shown to users in the linked citation section of the Copilot response. The section shows the exact web search queries (derived from the user’s prompt) that were sent to the Bing search service. Showing the exact web search queries helps users understand what search queries, along with the sites searched, were used to enhance Copilot’s response to their prompt. This information can help users improve their prompts and use Copilot more effectively.
 
+ :::image type="content" source="media/copilot-web-search-citations-raw.png" alt-text="Screenshot of web search query citations in Microsoft 365 Copilot.":::
+
 Web search query citations are available only in Microsoft 365 Copilot Chat (previously named Business Chat). Citations aren’t available in the Copilot pane within a Microsoft 365 app, such as Word or PowerPoint. Also, the web search queries are only available in the chat thread for 24 hours.
 
 ### Web search query logging
