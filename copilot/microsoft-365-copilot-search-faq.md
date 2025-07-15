@@ -98,3 +98,106 @@ Microsoft 365 Copilot and Microsoft 365 Copilot Search are both AI-powered tools
 - **Copilot Search** helps you find the right information across your organization quickly and intelligently.
 - **Copilot (Chat)** helps you get work done by generating content and assisting with tasks in context.
 
+**What are data source filters in Copilot Search?**
+
+The data source filter is in the right rail in of Copilot Search. It enables users to filter the search results, narrowing results to specific data sources in Microsoft 365 or those ingested with connectors, like Outlook, Teams, and Confluence, and Salesforce.
+
+## Licensing and access
+
+**Where can I access Microsoft 365 Copilot Search?**
+
+Microsoft 365 Copilot Search is available through the Microsoft 365 Copilot app. The Microsoft 365 Copilot app is available to users with Entra accounts (work or school) and personal Microsoft accounts. 
+
+The Microsoft 365 Copilot app is available across web, mobile (iOS, Android), and Windows.
+
+**Who can use Microsoft 365 Copilot Search?**
+
+Users with an eligible Microsoft 365 Copilot license see the Copilot Search experience in the Microsoft 365 Copilot app on desktop, web, and mobile. Users who don't have an assigned and eligible Microsoft 365 Copilot license will continue to see the classic search experience in Microsoft 365 (also known as [Microsoft Search](/microsoftsearch/overview-microsoft-search)).
+
+**Is there an additional cost for Microsoft 365 Copilot Search?**
+
+No, there's no additional cost for Microsoft 365 Copilot Search itself. It's included as part of the Microsoft 365 Copilot license.
+
+However, some advanced features that enhance Copilot Search—such as Microsoft Graph connectors—may incur additional costs. These connectors allow organizations to index and search content from third-party systems (like ServiceNow, Salesforce, or Confluence) within the Microsoft 365 ecosystem.
+
+**Microsoft 365 Copilot connectors** are licensed separately and may require Microsoft 365 E5, Microsoft Viva, or additional capacity units depending on the volume and type of data being indexed. Learn more about [Microsoft 365 Copilot connectors](/microsoftsearch/connectors-overview).
+
+Microsoft 365 enterprise customers with eligible licenses (for example, Microsoft 365 E5) are entitled to unlimited index quota for ingesting content through Microsoft 365 Copilot connectors.
+
+**Is Microsoft 365 Copilot Search available with Microsoft 365 Copilot Chat?**
+
+No, Microsoft 365 Copilot Search is not included with Copilot Chat. While both are part of the broader Microsoft Copilot ecosystem, they are licensed and delivered differently.
+
+**Is Microsoft 365 Copilot Search available in SharePoint or other Microsoft 365 apps?**
+
+Microsoft 365 Copilot Search is limited to the Microsoft 365 Copilot app.
+
+## Connectors
+
+**What are Microsoft 365 Copilot connectors?**
+
+Microsoft 365 Copilot connectors increase the discoverability and engagement of your enterprise data by deeply integrating your data into the Microsoft 365 Copilot experience, including Microsoft 365 Copilot Search. With over 100 Copilot connectors available, organizations can ingest and unify data from platforms like Salesforce, ServiceNow, Confluence, Jira, GitHub, and Google Drive into Microsoft Graph. Connectors give Copilot the ability to find, access, and summarize your diverse datasets from different sources, enabling more comprehensive insights.
+
+See this overview of [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector).
+
+**How do I set up a Microsoft 365 Copilot connector?**
+
+There are three main steps to set up a Copilot connector:
+1.	Create a connection.
+2.	Register your schema.
+3.	Ingest your content to the Microsoft Graph. Each item is sent with properties that match the schema you registered to power your content as discoverable in the Microsoft 365 App. For more information, see [Set up Microsoft 365 Copilot connectors in the Microsoft 365 admin center](/microsoftsearch/configure-connector).
+
+**What are Copilot-offered connectors?**
+
+Copilot-offered connectors are prebuilt connectors provided by Microsoft that allow you to integrate various third-party content sources into Microsoft 365. These connectors help you bring external data into Microsoft 365, making it searchable and accessible within your organization. Learn more about the [Copilot connectors gallery](/microsoftsearch/connectors-gallery).
+
+**Can I build custom connectors?**
+
+Microsoft 365 Copilot custom connectors allow you to integrate your own data sources into Microsoft Graph, enabling you to bring external data into Microsoft 365 experiences. It helps in making your data searchable and accessible within your organization. 
+
+To get started building your first custom connector, see [these instructions](/microsoft-365-copilot/extensibility/build-your-first-connector?context=graph%2Fcontext). For more detailed instructions about building a custom connector using graph APIs, see these guidelines on working with the [Copilot connectors API](/graph/connecting-external-content-connectors-api-overview).
+
+## Data handling, privacy, and security
+
+**Does Microsoft 365 Copilot Search follow the same data, privacy, and security commitments as Microsoft 365 Copilot?**
+
+Microsoft 365 Copilot Search is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary.
+
+For additional information refer to [Data, Privacy, and Security for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-privacy).
+
+**What information does Microsoft 365 Copilot Search have access to?**
+
+Microsoft 365 Copilot accesses and reasons over the data you already have permission to see within your Microsoft 365 environment. This includes:
+
+| Data source | Examples |
+|---|---|---|---|
+| **Microsoft Graph** | Emails, chats, calendar events, files in OneDrive and SharePoint, meetings |
+| **Microsoft 365 apps** | Word, Excel, PowerPoint, Outlook, Teams, OneNote, Loop |
+| **Third-party systems** (optional) | Salesforce, ServiceNow, Confluence, etc. via [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector) |
+| **Web content** | N/A | 
+
+Copilot only returns information that the user already has access to—respecting existing permissions and security boundaries.
+
+**How can I manage what information Microsoft 365 Copilot Search can find?**
+
+With Restricted Content Discovery, organizations can limit the ability of end users to search for files from specific SharePoint sites. Enabling Restricted Content Discovery for each site prevents the sites from surfacing in organization-wide search and Microsoft 365 Copilot Business Chat, unless a user had a recent interaction.
+
+Learn more at [Restrict discovery of SharePoint sites and content](/sharepoint/restricted-content-discovery).
+
+In addition, Restricted SharePoint Search is a setting that helps you as a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) or [above](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365 to maintain a list of SharePoint sites ("allowed list") that you have checked the permissions and applied data governance for. The allowed list defines which SharePoint sites can participate in organization-wide search and Copilot experiences. By default, the Restricted SharePoint Search setting is turned off and the allowed list is empty.
+
+Restricted SharePoint Search allows you to restrict both organization-wide search and Copilot experiences to a curated set of SharePoint sites of your choice. Additionally, whether you have enabled Restricted SharePoint Search, users in your organization are still able to interact with files and content they own or that they have previously accessed in Copilot.
+
+Learn more at [Restricted SharePoint Search](/sharepoint/restricted-sharepoint-search).
+
+## Miscellaneous
+
+**What is the Microsoft 365 Copilot extension and how does it work with Microsoft 365 Copilot Search?**
+
+The Microsoft 365 Copilot extension is a cross-browser add-on that enhances your Microsoft 365 Copilot search results. This extension brings together information from tickets, files, documents, and tasks across multiple work-related third-party sites, providing you with highly relevant and personalized search results.
+
+**How does the Microsoft 365 Copilot extension work?**
+
+The Microsoft 365 Copilot extension works in the background without any manual steps after installation. It is enabled by your organization through the Microsoft Edge Add-Ons website or the Chrome Web store (extensions). The extension only uses activity from third-party apps or sites configured by your organization and does not track your general web browsing. Data captured is stored securely and used only to improve your own Copilot Search experience. It is not shared with others. 
+
+Learn more about the [Microsoft 365 Copilot extension](/microsoftsearch/crossover-browser).
