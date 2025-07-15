@@ -10,16 +10,16 @@ items:
       href: networking-roadmap-microsoft-365.md
     - name: Plan
       items: 
-        - name: Implications when using network intermediation to decrypt or manipulate
-            Microsoft 365 traffic
-          href: network-intermediation.md
-          displayName: TLS, SSL, inspection, break and inspect, decrypt, inspect, network inspection
         - name: Microsoft 365 networking connectivity overview
           href: microsoft-365-networking-overview.md
         - name: Microsoft 365 network connectivity principles
           href: microsoft-365-network-connectivity-principles.md
         - name: Assessing Microsoft 365 network connectivity
           href: assessing-network-connectivity.md
+        - name: Implications when using network intermediation to decrypt or manipulate
+            Microsoft 365 traffic
+          href: network-intermediation.md
+          displayName: TLS, SSL, inspection, break and inspect, decrypt, inspect, network inspection
         - name: Plan for network devices that connect to Microsoft 365 services
           href: plan-for-network-devices.md
         - name: Network and migration planning for Microsoft 365
