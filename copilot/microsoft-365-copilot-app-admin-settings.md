@@ -3,8 +3,8 @@ title: Microsoft 365 Copilot app settings for IT admins
 description: The Microsoft 365 Copilot app has features and settings that Enterprise and organization admins can configure. Admins can turn on search, pin Microsoft 365 Copilot Chat, allow or block agents, allow pages and notices, and map the Copilot key to the Microsoft 365 Copilot app.
 author: MandiOhlinger
 ms.author: mandia
-manager: laurawi
-ms.date: 05/19/2025
+manager: dansimp
+ms.date: 07/15/2025
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.subservice: 
