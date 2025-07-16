@@ -23,7 +23,7 @@ description: "Learn about the Microsoft 365 Copilot Chat usage report and gain i
 The Microsoft 365 Copilot Chat usage dashboard provides insights into active usage of Microsoft 365 Copilot Chat. The report includes total active users, average daily active users, and active users per app. Usage insights can be viewed as totals and trends for the past 7, 30, 90, or 180-day periods. The report also shows the last activity date per user, anonymized by default. To view all reports, check out [Microsoft 365 Reports in the admin center overview](activity-reports.md).
 
 > [!NOTE]
-> The report is currently limited to users without a Microsoft 365 Copilot license that interact with Copilot Chat in Teams, Outlook, Copilot.cloud.microsoft, Microsoft 365 Copilot (app), Microsoft Edge, Word, Excel and PowerPoint. The all-up Copilot Chat user count as well as the ‘last activity date’ for each user will reflect usage of Copilot Chat in all of these host apps. Initially the report will not provide a breakout of usage in Word, Excel and PowerPoint, but this update is planned and will be available soon.
+> The report is currently limited to users without a Microsoft 365 Copilot license that interact with Copilot Chat in Teams, Outlook, Copilot.cloud.microsoft, Microsoft 365 Copilot (app), Microsoft Edge, Word, Excel, and PowerPoint. The all-up Copilot Chat user count as well as the ‘last activity date’ for each user will reflect usage of Copilot Chat in all of these host apps. Initially the report will not provide a breakout of usage in Word, Excel, and PowerPoint, but this update is planned and will be available soon.
 
 ## How do I get to the Microsoft 365 Copilot Chat usage report?
 
