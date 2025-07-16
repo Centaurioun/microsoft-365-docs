@@ -31,7 +31,7 @@ Microsoft 365 Copilot Search is designed as an AI-powered, enterprise-grade sear
 
 **What are the differences between Microsoft 365 Copilot Search and Copilot Search in Bing?**
 
-Microsoft 365 Copilot Search is an AI-powered universal search experience optimized for work and school. It's available to users with a Microsoft 365 Copilot license and is accessed through the Microsoft 365 app. It helps you quickly find relevant results from your organization, searching across all your Microsoft 365 apps and any third-party apps integrated via Microsoft Graph connectors. It also adheres to the same data protection, privacy standards, and security configurations as Microsoft 365 Copilot. 
+Microsoft 365 Copilot Search is an AI-powered universal search experience optimized for work and school. It's available to users with a Microsoft 365 Copilot license and is accessed through the Microsoft 365 app. It helps you quickly find relevant results from your organization, searching across all your Microsoft 365 apps and any third-party apps integrated via Microsoft 365 Copilot connectors. It also adheres to the same data protection, privacy standards, and security configurations as Microsoft 365 Copilot. 
 
 [Copilot Search in Bing](https://www.microsoft.com/en-us/bing/copilot-search/), by contrast, is an AI-powered search engine designed for individual users who aren't necessarily using it for work or school. It's accessed through a web browser and doesn't require a Microsoft 365 Copilot license.
 
@@ -64,11 +64,11 @@ This design positions Search as the organizing layer for AI, while Chat remains 
 
 **What types of content can Microsoft 365 Copilot Search access?**
 
-It can search across emails, chats, files, meetings, calendars, and third-party systems integrated via Microsoft Graph connectors.
+It can search across emails, chats, files, meetings, calendars, and third-party systems integrated via Microsoft 365 Copilot connectors.
 
 **Can I use Copilot Search to find information from third-party systems?** 
 
-Yes, Microsoft 365 Copilot Search integrates with third-party systems. This is primarily achieved through [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector), which allow organizations to bring in data from external platforms like Salesforce, ServiceNow, Confluence, and more. 
+Yes, Microsoft 365 Copilot Search integrates with third-party systems. This is primarily achieved through [Microsoft 365 Copilot connectors](/microsoftsearch/connectors-copilot-search), which allow organizations to bring in data from external platforms like Salesforce, ServiceNow, Confluence, and more. 
 
 Additionally, plugin extensibility enables Copilot to interact with third-party apps during runtime, making it possible to search and act on data across a wide range of systems—all within the Microsoft 365 experience.
 
@@ -118,9 +118,9 @@ Users with an eligible Microsoft 365 Copilot license see the Copilot Search expe
 
 No, there's no additional cost for Microsoft 365 Copilot Search itself. It's included as part of the Microsoft 365 Copilot license.
 
-However, some advanced features that enhance Copilot Search—such as Microsoft Graph connectors—may incur additional costs. These connectors allow organizations to index and search content from third-party systems (like ServiceNow, Salesforce, or Confluence) within the Microsoft 365 ecosystem.
+However, some advanced features that enhance Copilot Search—such as Microsoft 365 Copilot connectors—may incur additional costs. These connectors allow organizations to index and search content from third-party systems (like ServiceNow, Salesforce, or Confluence) within the Microsoft 365 ecosystem.
 
-**Microsoft 365 Copilot connectors** are licensed separately and may require Microsoft 365 E5, Microsoft Viva, or additional capacity units depending on the volume and type of data being indexed. Learn more about [Microsoft 365 Copilot connectors](/microsoftsearch/connectors-overview).
+**Microsoft 365 Copilot connectors** are licensed separately and may require Microsoft 365 E5, Microsoft Viva, or additional capacity units depending on the volume and type of data being indexed. Learn more about [Microsoft 365 Copilot connectors](/microsoftsearch/connectors-copilot-search).
 
 Microsoft 365 enterprise customers with eligible licenses (for example, Microsoft 365 E5) are entitled to unlimited index quota for ingesting content through Microsoft 365 Copilot connectors.
 
@@ -138,7 +138,7 @@ Microsoft 365 Copilot Search is limited to the Microsoft 365 Copilot app.
 
 Microsoft 365 Copilot connectors increase the discoverability and engagement of your enterprise data by deeply integrating your data into the Microsoft 365 Copilot experience, including Microsoft 365 Copilot Search. With over 100 Copilot connectors available, organizations can ingest and unify data from platforms like Salesforce, ServiceNow, Confluence, Jira, GitHub, and Google Drive into Microsoft Graph. Connectors give Copilot the ability to find, access, and summarize your diverse datasets from different sources, enabling more comprehensive insights.
 
-See this overview of [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector).
+See this overview of [Copilot connectors and Copilot Search](/microsoftsearch/connectors-copilot-search).
 
 **How do I set up a Microsoft 365 Copilot connector?**
 
