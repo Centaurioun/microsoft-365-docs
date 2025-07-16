@@ -296,7 +296,7 @@ items:
                   href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
                 - name: Configure search
                   href: configure-search-for-multi-geo.md
-                - name: Configure multi-geo in-region routing
+                - name: Configure multi-geo in-region routing (In Preview)
                   href: multi-geo-region-routing.md
                 - name: User Testing in Multi-Geo
                   href: m365-multi-geo-user-testing.md
