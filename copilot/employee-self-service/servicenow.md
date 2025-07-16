@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
 manager: triciagill
-ms.date: 7/3/2025
+ms.date: 07/03/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
@@ -32,9 +32,9 @@ The Employee Self-Service agent is built on Copilot and uses AI to provide relev
 ESS Agent acts as a front-end for consuming information from ServiceNow Knowledge using the Microsoft 365 Copilot Connector and following are the capabilities that’s enabled for this integration:
 
 - Employees can ask questions related to IT/HR workflows
-    - How do I request a new device? 
-    - How to create a new VPN connection?
-    - How do I apply for leave? 
+   - How do I request a new device? 
+   - How to create a new VPN connection?
+   - How do I apply for leave? 
 - Use Semantic search in ESS Agent to enable employees to find relevant content based on keywords, personal preferences and social connections
 - Employees can search for knowledge-based articles in ESS Agent after it’s indexed and visible to all users or restricted with user criteria permissions
 
@@ -68,9 +68,12 @@ The current version of ServiceNow Knowledge Microsoft 365 Copilot Connector is a
 |---------|---------|---------|---------|
 |ServiceNow Administrator     |User who can perform administrative tasks         |Create a service account and assign a role to provide read access to specific table records         |ServiceNow         |
 |ServiceNow     |User who can configure access control         |1. Create OAuth Application Registry<br> Following steps are required only if “Advanced Scripts” are in place:<br> 2. Configure Access Control (ACL) for REST endpoint.<br>3. Create scripted REST API.<br>4. Define the API Resource.         |ServiceNow         |
-|Global Administrator (or) Search Administrator     |User who can configure the Microsoft 365 Copilot Connector for ServiceNow Knowledge.         |`1. Establish a Microsoft Enterprise Application.<br>2. Configure SAML settings within the Enterprise Application.<br>3. Obtain the Enterprise Application’s SAML certificate.<br>4. Establish trust.         |Microsoft 365 Admin Center         |
-|Global Administrator (or) Cloud App Administrator |User who can configure OAuth in Microsoft Entra |1. Create App registration. |Entra Admin Portal |
+|Global Administrator or Search Administrator     |User who can configure the Microsoft 365 Copilot Connector for ServiceNow Knowledge.         |1. Establish a Microsoft Enterprise Application.<br>2. Configure SAML settings within the Enterprise Application.<br>3. Obtain the Enterprise Application’s SAML certificate.<br>4. Establish trust.         |Microsoft 365 Admin Center         |
+|Global Administrator or Cloud App Administrator |User who can configure OAuth in Microsoft Entra |1. Create App registration. |Microsoft Entra admin center |
 |Environment Maker     |User who can customize ESS Agent.         |Configure knowledge source using ServiceNow Knowledge Microsoft 365 Copilot Connector.         |Microsoft Copilot Studio         |
+
+> [!TIP]
+> Microsoft recommends you sign in with the least privileged role that you need to complete your task. Typically, the Global Administrator role is too powerful for most tasks.
 
 ## ServiceNow configuration
 
@@ -94,12 +97,19 @@ This method of authentication involves a ServiceNow username and password to aut
 ### Task 1: Create an OAuth Application Registry
 
 1. Sign in to the ServiceNow instance that needs to be integrated with ESS Agent.
+
 1. Elevate access permissions using **Elevate role**.
+
 1. Select **All** in the top navigation bar.
+
 1. Search for **OAuth** in the search box within dropdown navigation menu.
+
 1. Select “System OAuth → Application Registry” from the search results (if you don’t see this option, then you don’t have sufficient privileges).
+
 1. Select **New** in the top right-corner of the configuration section pane.
+
 1. Select **Create an OAuth API endpoint for external clients**.
+
 1. Fill in the following information for the new application registry:
 
    |Configuration  |Description  |
@@ -127,11 +137,17 @@ The following tasks are required ONLY if Advanced Scripts are used in ServiceNow
 This task is required to ensure only the crawling account can access the REST API.
 
 1. Sign in to the ServiceNow instance that needs to be integrated with ESS Agent.
+
 1. Elevate access permissions using **Elevate role**.
+
 1. Select **All** in the top navigation bar.
+
 1. Search for **Access Control** in the search box within dropdown navigation menu.
+
 1. Select **System Security** → **Access Control (ACL)**” from the search results.
+
 1. Select **New** in the top-right corner of configuration section pane 
+
 1. In the new form, fill in the following information.
 
    |Configuration  |Description/Value  |
@@ -153,22 +169,31 @@ This task is required to ensure only the crawling account can access the REST AP
 This task is required to define a custom script processing for user criteria.
 
 1. Sign in to the ServiceNow instance that needs to be integrated with ESS Agent.
+
 1. Elevate access permissions using **Elevate role**.
+
 1. Select **All** in the top navigation bar.
+
 1. Search for **Scripted REST** in the search box within dropdown navigation menu.
+
 1. Select **System Web Services** → **Scripted Web Services** → **Scripted REST APIs** from the search results.
+
 1. Fill in the following configuration information.
 
    |Configuration  |Description/Value  |
    |---------|---------|
    |Name     |Provide a name that identifies the purpose.         |
    |API ID    |Auto generated         |
-   |API namespace     |Auto generated<br> **Note**: This value is used in Microsoft 365 Copilot Connector configuration.         |
+   |API namespace     |Auto generated<br/> This value is used in Microsoft 365 Copilot Connector configuration.         |
 
 1. Select **Submit** to save changes.
+
 1. Click on the newly created Scripted REST API from the list.
+
 1. Under the **Security** tab, select **Default ACLs**.
+
 1. Remove the default value and add/look up the ACL that’s created in [Task 2: Configure Access Control for REST endpoint](#task-2-configure-access-control-for-rest-endpoint).
+
 1. Add the ACL and update the changes.
 
 ### Task 4: Define the API resource
@@ -176,7 +201,9 @@ This task is required to define a custom script processing for user criteria.
 This task is required to define the custom script as a resource for the REST API that’s created in the previous task
 
 1. From the **Scripted REST API** list, select the one that’s created in [Task 3](#task-2-configure-access-control-for-rest-endpoint).
+
 2. At the bottom of the page, select the **Resources** tab and select **New**. 
+
 3. Fill in the following configuration.
 
    |Configuration  |Description/Value  |
@@ -201,10 +228,9 @@ This task is required to define the custom script as a resource for the REST API
 ) (request, response);
 ```
 
-
 4. Select **Submit** to save changes.
 
-This wraps up all the configuration required on the ServiceNow side, now the next set of tasks are on Microsoft 365 side.
+This wraps up all the configuration required on the ServiceNow side. At this point the next set of tasks are on the Microsoft 365 side.
 
 ## Microsoft Entra Open ID Connect
 
@@ -212,14 +238,20 @@ Refer to the [ServiceNow Copilot Connector configurations documentation](/micros
 
 ## Microsoft 365 Copilot Connector configuration
 
-This section covers the tasks required for configuring Microsoft 365 Copilot Connector in Microsoft Admin Center (MAC). These set of tasks requires a Global Admin role or a Security Admin role in Microsoft 365 tenant.
+This section covers the tasks required for configuring Microsoft 365 Copilot Connector in Microsoft Admin Center (MAC). These set of tasks requires a Global Administrator role or a Security Administrator role in the Microsoft 365 tenant.
 
 1. Sign in to the **Microsoft Admin Center**.
+
 2. Select **Settings** → **Search & intelligence** in the left navigation pane.
+
 3. In the **Search & intelligence** page, select **Data sources**.
+
 4. Click **+ Add Connection** to add a new Copilot connection.
+
 5. In the **Connect to data source** page, from the list of connectors, search for **ServiceNow Knowledge**”
+
 6. Select **ServiceNow Knowledge** connector and select**Next**.
+
 7. Fill in the following configuration information:
 
    |Configuration  |Description/Value  |
@@ -231,13 +263,20 @@ This section covers the tasks required for configuring Microsoft 365 Copilot Con
    |API namespace     |Enter the API namespace for Scripted REST API created in [Task 3: Create scripted REST API](#task-3-create-scripted-rest-api).         |
 
 8. Select **Authorize** once a desired authentication type is chosen based on the guidance provided in the table in [Deployment role requirements](#deployment-role-requirements) and the respective values are given.
+
 9. Microsoft 365 Copilot Connector connects to the ServiceNow REST API to get authorized and ask for a consent to allow the authorization; select **Allow** for it. 
    When the authorization is successfully completed, the authorization fields will have a green check
+
 10. Choose to enable or disable **_rollout to limited audience_** for staged rollout of this connector so that it can be tested with limited set of users before it’s rolled out to the whole organization.
+
 11. Check **Notice** checkbox to authorize Microsoft to create an index of third-party data in Microsoft 365 tenant subject to the configurations.
+
 12. Create **Create** to create the connector.
+
 13. In the status page, it’ll show the connection status as either a **Success** or **Failure** message. A sync will be triggered in the background and its status will also be indicated.
+
 14. Provide a description for the Connector which will serve as an instruction to Copilot and select **Save**.
+
 15. Select **Done** and wait for the connection state to be **Ready** after the sync is completed.
 
 ## ESS agent configuration
@@ -245,14 +284,23 @@ This section covers the tasks required for configuring Microsoft 365 Copilot Con
 This section outlines the steps to configure the newly created Microsoft 365 Copilot Connector above within ESS Agent as a knowledge source.
 
 1. Sign in to Copilot Studio as an Environment Maker (https://copilotstudio.microsoft.com).
+
 2. Open **ESS Agent**.
+
 3. Select **Knowledge** from the top-navigation pane and select **+ Add Knowledge**.
+
 4. Select **ServiceNow** from the list of connector options shown in the **Add knowledge** dialog box.
+
 5. In the **Select ServiceNow connection** dialog box, it will list all the ServiceNow connections available within the current Copilot Studio environment, including the ones created by the tenant admins, which should show the Microsoft 365 Copilot Connection created in the previous section, under **Created by your admin** section.
+
 6. Select the connector what has been created in [the previous section](#microsoft-365-copilot-connector-configuration).
+
 7. Select **Add** to complete the configuration.
+
 8. Confirm the newly created connector is in **Ready** state in the Microsoft Admin Center before the connector is being used in the agent.
+
 9. Once the connector is ready, validate the connection by asking relevant queries in the Copilot Studio maker experience in the **Test** panel.
+
 10. See the *Troubleshooting* section in the Appendix below for any issues encountered.
 
 ## Troubleshooting
@@ -264,22 +312,14 @@ This section outlines the steps to configure the newly created Microsoft 365 Cop
 For Custom Setup and complete configuration documentation, see:
 
 - [ServiceNow Knowledge Microsoft 365 Copilot connector](/microsoftsearch/servicenow-knowledge-connector)
-
 - [Semantic indexing for Microsoft 365 Copilot](/microsoftsearch/semantic-index-for-copilot)
-
 - [Staged rollout for Microsoft 365 Copilot connectors](/MicrosoftSearch/staged-rollout-for-graph-connectors)
-
 - [Map your non-Azure AD Identities](/MicrosoftSearch/map-non-aad)
-
 - [Guidelines for Sync settings](/MicrosoftSearch/configure-connector)
 
 For ServiceNow Knowledge documentation, see the following resources which require ServiceNow sign ins:
 
 - [ServiceNow Knowledge – Advanced Scripts](https://docs.servicenow.com/bundle/xanadu-servicenow-platform/page/product/knowledge-management/task/create-user-criteria-record-in-knowledge-management.html)
-
 - [Assign a role to a user](https://www.servicenow.com/docs/bundle/xanadu-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)
-
 - [Creating and Editing Access Controls](https://developer.servicenow.com/dev.do#!/learn/learning-plans/xanadu/new_to_servicenow/app_store_learnv2_securingapps_xanadu_creating_and_editing_access_controls)
-
 - [Generate an encoded query string through a filter](https://www.servicenow.com/docs/bundle/xanadu-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html?state=seamless)
-

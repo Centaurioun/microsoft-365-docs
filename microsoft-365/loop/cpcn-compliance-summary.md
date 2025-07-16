@@ -61,7 +61,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities for Copilot Pages and Copilot Notebooks are supported. Copilot Pages and Copilot Notebooks are both stored in the same user-owned SharePoint Embedded container. This container is created in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). Like OneDrive, admins have the ability to manually move the user's Copilot Pages and Copilot Notebooks container to a new geo when their preferred data location changes.
 
     > [!IMPORTANT]
-    > There is no end user recycle bin for Copilot Pages or Copilot Notebooks.
+    > There is no end user recycle bin for Copilot Pages or Copilot Notebooks. Neither Administrators nor end users can recover individually deleted Copilot Notebooks.
 
 - **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format) is available. Copilot Pages and Copilot Notebooks version history is configured to save 50 versions per file and no admin setting is available to change this configuration.
 
