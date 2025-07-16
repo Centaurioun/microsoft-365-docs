@@ -15,6 +15,7 @@ ms.collection:
 - must-keep
 hideEdit: true
 ms.date: 06/27/2025
+ms.update-cycle: 180-days
 ---
 
 # Data, privacy, and security for web search in Microsoft 365 Copilot and Microsoft 365 Copilot Chat

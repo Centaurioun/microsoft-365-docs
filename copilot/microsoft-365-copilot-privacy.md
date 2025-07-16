@@ -15,6 +15,7 @@ ms.collection:
 - must-keep
 hideEdit: true
 ms.date: 05/02/2025
+ms.update-cycle: 180-days
 ms.custom: [copilot-learning-hub]
 ---
 

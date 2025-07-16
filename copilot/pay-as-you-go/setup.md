@@ -5,6 +5,7 @@ author: cmcatee-MSFT
 ms.author: cmcatee
 manager: dansimp
 ms.date: 06/16/2025
+ms.update-cycle: 180-days
 ms.reviewer: nishanair
 audience: Admin
 ms.topic: get-started

@@ -8,6 +8,7 @@ author: aczechowski
 manager: dansimp
 ms.reviewer: christin,vmirapur
 ms.date: 07/14/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot

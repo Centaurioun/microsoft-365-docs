@@ -5,6 +5,7 @@ ms.author: erikre
 author: ErikRe
 manager: dansimp
 ms.date: 07/10/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot

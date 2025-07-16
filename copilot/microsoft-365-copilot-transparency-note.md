@@ -15,6 +15,7 @@ ms.collection:
 - must-keep
 hideEdit: true
 ms.date: 05/29/2025
+ms.update-cycle: 180-days
 ---
 
 # Transparency Note for Microsoft 365 Copilot

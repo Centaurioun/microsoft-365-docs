@@ -1,5 +1,6 @@
 ---
 ms.date: 07/02/2025
+ms.update-cycle: 180-days
 title: "Manage Loop in your organization"
 ms.reviewer: dancost, tonchan
 ms.author: jenz

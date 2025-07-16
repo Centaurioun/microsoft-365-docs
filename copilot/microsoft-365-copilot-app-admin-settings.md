@@ -5,6 +5,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dansimp
 ms.date: 07/15/2025
+ms.update-cycle: 180-days
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.subservice: 

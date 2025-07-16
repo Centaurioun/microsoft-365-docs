@@ -4,6 +4,7 @@ ms.author: camillepack
 author: camillepack
 manager: scotv
 ms.date: 12/13/2024
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot

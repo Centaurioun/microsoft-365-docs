@@ -6,6 +6,7 @@ author: SKjerland
 manager: scotv
 ms.reviewer: viratsingh
 ms.date: 11/08/2024
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse

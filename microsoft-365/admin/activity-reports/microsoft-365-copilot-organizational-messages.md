@@ -4,6 +4,7 @@ ms.author: camillepack
 author: camillepack
 manager: scotv
 ms.date: 03/18/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business

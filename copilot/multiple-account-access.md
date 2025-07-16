@@ -15,6 +15,7 @@ ms.collection:
 - must-keep
 hideEdit: true
 ms.date: 07/09/2025
+ms.update-cycle: 180-days
 ---
 
 # Multiple account access to Copilot for work and school documents

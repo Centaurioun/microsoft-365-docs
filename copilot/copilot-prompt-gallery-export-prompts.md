@@ -14,6 +14,7 @@ ms.collection:
 - must-keep
 hideEdit: true
 ms.date: 04/16/2025
+ms.update-cycle: 180-days
 ---
 
 # Export prompts that users saved, liked, or shared in Copilot Prompt Gallery

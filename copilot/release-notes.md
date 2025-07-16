@@ -7,6 +7,7 @@ ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
 ms.date: 07/08/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.reviewer: briandesouza
 ms.topic: get-started
