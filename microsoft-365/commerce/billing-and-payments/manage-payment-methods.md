@@ -45,9 +45,6 @@ When you buy Microsoft business products or services, you can use an existing pa
 > - The option to pay with a bank account is no longer available.
 > - Prepaid cards like stored value cards, Visa gift cards, and MasterCard gift cards aren't accepted as valid payment methods.
 
-> [!TIP]
-> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
-
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
@@ -129,6 +126,9 @@ You can change the name, billing address, or expiration date for an existing cre
 ## Delete a payment method
 
 You can only delete a payment method that isn't attached to a subscription or billing profile. This applies to all subscriptions, regardless of their status.
+
+> [!NOTE]
+> If you have an [Entra Free subscription](/azure/cost-management-billing/manage/microsoft-entra-id-free) inside your billing account you cannot delete or detach the last payment method on file. To remove the last payment method, you must delete the tenant. For more information about deleting a tenant, see [Delete the organization](/entra/identity/users/directory-delete-howto#delete-the-organization).
 
 ### Delete a payment method with no subscriptions or billing profiles attached
 
