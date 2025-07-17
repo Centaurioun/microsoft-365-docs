@@ -5,7 +5,7 @@ ms.author: jasonjoh
 manager: calvind
 ms.audience: ITPro
 ms.reviewer: jwolk
-ms.date: 06/17/2025
+ms.date: 07/17/2025
 ms.topic: how-to
 ms.localizationpriority: medium
 description: Learn how to use Copilot Tuning to build an AI model for document generation based on organizational knowledge.
