@@ -148,8 +148,6 @@ Yes. You can set up the pay-as-you-go billing policy in the Microsoft 365 admin 
 
 **Last activity detected** is the date and timestamp of the most recent prompt or user activity that generated the messages consumed.
 
-You will see the Policy name and Billing Policy ID.  
-
 ### How do I find a Billing policy name from the Billing policy ID? 
 
 1. In the Microsoft 365 admin center, go to **Copilot > Billing & usage**. 
