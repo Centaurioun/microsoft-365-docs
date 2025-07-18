@@ -1,10 +1,10 @@
 ---
-title: Review and sign a signature request in SharePoint eSignature
+title: Review and sign a signature request in eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 05/21/2025
+ms.date: 08/01/2025
 audience: enabler
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to review and sign electronic signature requests using SharePoint eSignature. 
+description: Learn how to review and sign electronic signature requests using eSignature. 
 ---
 
-# Review and sign a signature request in SharePoint eSignature
+# Review and sign a signature request in eSignature
 
 When a signature request is created, an email notification is sent to the recipients. (In some cases, recipients might also receive notifications in [Teams via the Approvals app](esignature-approvals.md).) The notification contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a SharePoint license or a Microsoft account to sign the request.
 
@@ -29,11 +29,11 @@ When you receive the email notification, select **View request** in the email to
 
 ## Consent to use your electronic signature
 
-To continue the electronic signing process, you must consent to the terms and conditions and agree to use your electronic signature for signing. On the **SharePoint eSignature Terms and Conditions** screen:
+To continue the electronic signing process, you must consent to the terms and conditions and agree to use your electronic signature for signing. On the **eSignature terms and conditions** screen:
 
 - Select **Agree** to use your electronic signature and continue with the signing process.  
 - Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
-- If you close the **SharePoint eSignature Terms and Conditions** screen without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
+- If you close the **eSignature terms and conditions** screen without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
 
     ![Screenshot of the terms and conditions screen.](../media/content-understanding/esignature-terms-dark.png)
 
@@ -119,7 +119,7 @@ Whether you're a requester or a recipient, you can select **View request** from 
 
 ## Monitor the status of a request
 
-When you create a signature request with SharePoint eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning.
+When you create a signature request with eSignature, it goes through different stages that are reflected in the request statuses. You can view the status of a request by selecting **View request** in any of the email notifications you received about the signature request. The following table shows the request statuses and their meaning.
 
 |Status  |Description  |
 |---------|---------|
@@ -135,7 +135,7 @@ When the status of a request is **Completed**, **Canceled**, or **Declined**, th
 
 ## Access the signed document
 
-### Documents signed with Microsoft SharePoint eSignature
+### Documents signed with eSignature
 
 All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View signed document** to access the signed document and the request history.
 
@@ -150,7 +150,7 @@ After all recipients sign the document, the signatures are added and an audit tr
 
 ### Documents signed with other signature providers
 
-All parties receive an email notification from the provider when document signing is complete. The email typically contains a link to the signed document or as an attachment. Additionally, a copy of the signed document is automatically stored in SharePoint. Once stored, the creator of the request receives an email from SharePoint eSignature with a link to the SharePoint location.
+All parties receive an email notification from the provider when document signing is complete. The email typically contains a link to the signed document or as an attachment. Additionally, a copy of the signed document is automatically stored in SharePoint. Once stored, the creator of the request receives an email from eSignature with a link to the SharePoint location.
 
 The signed document is stored in a provider specific folder within the SharePoint document library of the original document (the original document is the PDF with which the request was initiated from). The signed document can be found using this folder path: **[Document library] > Apps\Signed documents\provider** (for example, Contoso Documents > Apps > Signed documents > DocuSign). The retention policy of the saved document inherits the retention policy set up by the SharePoint or tenant admin.
 
