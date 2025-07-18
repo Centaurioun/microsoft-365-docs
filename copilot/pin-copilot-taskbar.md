@@ -92,7 +92,7 @@ This behavior assigns a Start layout policy to Intune-managed devices. Intune is
 
 There are several instances where you can't change the configuration of the setting in the Microsoft 365 admin center:
 
-- Manage this policy in Intune. You used the the Intune admin center to configure a policy for Start layout, so you can't now manage it in the Microsoft 365 admin center. To configure this policy, go to the [Intune admin center](https://intune.microsoft.com). For more information on how to add or edit the Microsoft 365 Copilot app to your existing policy, see [Deploy the taskbar configuration](/windows/configuration/taskbar/pinned-apps?tabs=intune&pivots=windows-11#deploy-the-taskbar-configuration).
+- Manage this policy in Intune. You used the Intune admin center to configure a policy for Start layout, so you can't now manage it in the Microsoft 365 admin center. To configure this policy, go to the [Intune admin center](https://intune.microsoft.com). For more information on how to add or edit the Microsoft 365 Copilot app to your existing policy, see [Deploy the taskbar configuration](/windows/configuration/taskbar/pinned-apps?tabs=intune&pivots=windows-11#deploy-the-taskbar-configuration).
 
 - The policy's filter was removed and you can't make changes.
 
