@@ -1,9 +1,9 @@
 ---
-title: Licensing for Microsoft Syntex
+title: Licensing for document processing for Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
-ms.date: 04/07/2025
+ms.date: 08/01/2025
 manager: jtremper
 audience: admin
 ms.topic: article
@@ -14,39 +14,40 @@ ms.collection:
     - Tier1
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn about pay-as-you-go licensing for Microsoft Syntex.
+description: Learn about pay-as-you-go licensing for document processing for Microsoft 365.
 ---
 
-# Licensing for Microsoft Syntex
+# Licensing for document processing for Microsoft 365
 
-Microsoft Syntex services use pay-as-you-go licensing for new and renewing customers. With pay-as-you-go, you can use the services without any license commitment or upfront purchasing. Any user in your organization can use the services and only pay if and when services are used.
-
-Pay-as-you-go requires an Azure subscription. Pay-as-you-go services are billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). For information about how to set up pay-as-you-go, see [Configure Microsoft Syntex for pay-as-you-go billing](syntex-azure-billing.md).
-
-Before you configure pay-as-you-go, read the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms).
+Microsoft 365 offers flexible, scalable document processing services through a pay-as-you-go licensing model. This model is ideal for organizations seeking agility without upfront commitments.
 
 > [!NOTE]
-> Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
+> For Government Community Cloud (GCC) organizations, pay-as-you-go licensing—and the services that require pay-as-you-go licensing—aren't yet available. GCC organizations can continue to purchase and use [per-user licenses](#if-you-still-have-active-per-user-licenses) until pay-as-you-go becomes available.
 
-> [!NOTE]
-> For Government Community Cloud (GCC) organizations, pay-as-you-go licensing—and the services that require pay-as-you-go licensing—aren't yet available. GCC organizations can continue to purchase and use per-user licenses until pay-as-you-go becomes available.
+## Benefits of pay-as-you-go licensing
 
-## Pay-as-you-go services
+- **No upfront license purchase**: Use services as needed—only pay when services are used. Learn more about [pay-as-you-go pricing](syntex-pay-as-you-go-services.md).
 
-The following pay-as-you-go services are currently available:
+- **Organization-wide access**: Any user in your tenant can use the services, provided they have a Microsoft 365 license.
 
-**Document and image services**
-- Autofill columns
-- Content assembly
-- Document translation
-- eSignature
-- Image tagging
-- Optical character recognition
-- Prebuilt document processing
-- Structured and freeform document processing
-- Taxonomy tagging
-- Unstructured document processing
+- **Azure-based billing**: Use your active Azure subscription for billing. Learn more about [setting up billing](/microsoft-365/services/pay-as-you-go-setup) and the [terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms).
 
+## Document processing services
+
+The following pay-as-you-go services are currently available for document processing:
+
+- [Autofill columns](autofill-overview.md)
+- [Document translation](translation-overview.md)
+- [eSignature](esignature-overview.md)
+- [Optical character recognition](ocr-overview.md)
+- [Content assembly](content-assembly.md)
+- [Image tagging](image-tagging-overview.md)
+- [Taxonomy tagging](taxonomy-tagging-overview.md)
+- [Prebuilt document processing](prebuilt-overview.md)
+- [Structured and freeform document processing](form-processing-overview.md)
+- [Unstructured document processing](document-understanding-overview.md)
+
+<!---
 **Video services**
 - Video translation
 
@@ -57,36 +58,34 @@ The following pay-as-you-go services are currently available:
 **Apps**
 - SharePoint Embedded
 
-More services will be added as they become available.
+--->
 
 ### Included features
 
-Pay-as-you-go licensing includes access to additional content management features. You won't be charged on a pay-as-you-go basis when you use these features. These features include:
+The following content management features are available (at no cost) once you set up a pay-as-you-go service:
 
-- Content query
-- Universal annotations
-- Contracts management accelerator
-- Accounts payable accelerator
-- Taxonomy features (including import using SKOS, SKOS formatting reference, push content type to hub, and term store reports)
-- PDF merge and extract pages
-- Content processing rules (including rules to move or copy a file and to set a content type)
+- [Content query](metadata-search.md)
+- [Annotations](annotations.md)
+- [Content processing rules](content-processing-overview.md)
+- [Solution accelerators](site-templates.md)
+- [Taxonomy tools](import-term-set-skos.md)
 
 ## If you still have active per-user licenses
 
-As of July 1, 2023, per-user licenses are no longer available for purchase. Per-user licenses purchased before that date can still be assigned to new users. After existing per-user licenses expire, you'll need to opt in to [pay-as-you-go billing](syntex-azure-billing.md) to continue using Microsoft Syntex services.
+Per-user licenses for these services are no longer available for purchase. However:
 
-Users with active per-user licenses can perform the following tasks:
+- Existing licenses can still be assigned to new users.
 
-- Apply an unstructured document processing model to a library. (Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.)
-- Create a prebuilt, structured, or freeform document processing model via the entry point in a library.
-- Upload content to a library where a custom model is applied.
-- Run an unstructured document processing model on-demand.
-- Create a modern template with content assembly.
-- Generate a document from a modern template.
-- Use of content query to search for metadata.
-- Use of annotations to add notes and comments.
-- Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
-- Use the document library rules to move or copy content.
-- Merge and extract PDFs
+- Once expired, you must switch to [pay-as-you-go](syntex-azure-billing.md) to continue using services.
 
-If you plan to use a custom Power Platform environment for structured or freeform document processing, see [Set up a custom Power Platform environment](structured-freeform-setup.md#set-up-a-custom-power-platform-environment).
+If you still have an active per-user license, you can continue to:
+
+- Apply unstructured models to libraries.
+- Create prebuilt, structured, and freeform models.
+- Upload content to libraries with applied models.
+- Run models on demand.
+- Use content assembly and taxonomy services.
+- Use content query and annotations.
+- Use document library rules for automation.
+
+For structured or freeform models in a custom Power Platform environment, see [Set up a custom Power Platform environment](structured-freeform-setup.md#set-up-a-custom-power-platform-environment).
