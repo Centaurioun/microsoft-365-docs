@@ -36,6 +36,22 @@ For a detailed list of People Skills experiences and their corresponding license
 
 If you have questions on licensing or access, contact your Microsoft representative.
 
+## People Skills functionality access by license
+
+| Release | Functionality | Base SKU (ME3/ME5) | M365 Copilot | Viva Suite | Viva Insights | Viva Learning |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: |
+| GA | Skills on M365 profile card | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Skills editor in M365 profile editor | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Skills in Traditional People Search (SharePoint people search) | ✓ | ✓ | ✓ | ✓ | ✓ | 
+| GA | Skills in Org Explorer | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Skills in People Companion | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Ingress and egress of confirmed user skills | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Taxonomy ingress | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | People Skills taxonomy (powered by LinkedIn) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GA | Skills inferencing | ✕ | ✓ | ✓ | ✓ | ✓ |
+| GA | Taxonomy egress | ✕ | ✓ | ✓ | ✓ | ✓ |
+
+
 ## Where does People Skills data appear?
 
 People Skills data appears in Microsoft 365 for employees, leaders, and organizations:  
