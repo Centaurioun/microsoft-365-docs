@@ -16,6 +16,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Set up Microsoft Syntex per-user licensing.
 ---
 
