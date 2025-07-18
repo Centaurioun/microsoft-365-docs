@@ -159,3 +159,5 @@ Yes. You can set up the pay-as-you-go billing policy in the Microsoft 365 admin 
 By default, the Billing Policy ID in the Message consumption report is anonymized, similar to the username and display name. Global administrators have the ability to modify settings to either reveal or conceal the Billing Policy ID. 
 1. In the Microsoft 365 admin center, go to **Settings > Org Settings**, and under the **Services** tab, choose **Reports**. 
 2. Select **Reports**, and un-check **Display Concealed user, group, and site names in all reports** to view the **Billing policy ID**. Then select **Save**. To conceal the Billing policy ID, simply check the setting, and save your changes. 
+> [!NOTE]
+> Changes to this setting affects both username, display name and Billing Policy ID.
