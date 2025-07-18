@@ -1,10 +1,10 @@
 ---
-title: Apply a document processing model to a document library in SharePoint
+title: Apply a document processing model to a document library
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/30/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to apply a published a document processing model to a SharePoint document library.
 ---
 
-# Apply a document processing model to a document library in SharePoint
+# Apply a document processing model to a document library
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -100,7 +100,7 @@ To sync changes to one or only selected libraries:
 An applied model processes all files and folder content uploaded to the document library after it's applied. You can also do the following steps to run the model on files and folder content that already exist in the document library prior to the model being applied.
 
 > [!NOTE]
-> To see custom Syntex commands like **Classify and extract** when you add a document library web part to a SharePoint site page, you must have a Syntex subscription.
+> To see custom commands like **Classify and extract** when you add a document library web part to a SharePoint site page, you must have a pay-as-you-go subscription.
 
 1. In your document library, select the files and folders that you want to be processed by your model.
 

@@ -1,10 +1,10 @@
 ---
-title: Overview of autofill columns in SharePoint
+title: Overview of autofill columns
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/23/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -17,10 +17,7 @@ ms.localizationpriority:  medium
 description: Learn about the autofill columns service in SharePoint.
 ---
 
-# Overview of autofill columns in SharePoint
-
-> [!NOTE]
-> The price for autofill columns has been lowered from $0.05 per page to $0.005 per page. This change reflects our ongoing commitment to making advanced AI accessible to everyone.
+# Overview of autofill columns
 
 > [!NOTE]
 > Through December 2025, you can try out a [limited amount](promo-syntex.md#included-monthly-capacity) of autofill columns and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
