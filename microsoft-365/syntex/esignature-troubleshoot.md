@@ -1,10 +1,10 @@
 ---
-title: Troubleshoot a signature request in SharePoint eSignature
+title: Troubleshoot a signature request in eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 05/06/2025
+ms.date: 08/01/2025
 audience: enabler
 ms.topic: troubleshooting-general
 ms.service: microsoft-syntex
@@ -14,17 +14,17 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to troubleshoot issues with sending, receiving, or viewing requests in SharePoint eSignature. 
+description: Learn how to troubleshoot issues with sending, receiving, or viewing requests in eSignature. 
 ---
 
-# Troubleshoot a signature request in SharePoint eSignature
+# Troubleshoot a signature request in eSignature
 
 ## Unable to create a request
 
-If you can't create a signature request, ensure you have edit rights to the folder containing the document and that the PDF is under 10 MB. If the document is stored in a private group, the signers must be members of the private group to receive the request. You can also check the PDF viewer settings, the collaboration settings, or the access policies. Refer to [Admin setup](esignature-setup.md) to ensure the correct settings are done. Also, check that the PDF you're attempting to sign isn't already electronically signed using SharePoint eSignature or any other electronic signature provider.
+If you can't create a signature request, ensure you have edit rights to the folder containing the document and that the PDF is under 10 MB. If the document is stored in a private group, the signers must be members of the private group to receive the request. You can also check the PDF viewer settings, the collaboration settings, or the access policies. Refer to [Admin setup](esignature-setup.md) to ensure the correct settings are done. Also, check that the PDF you're attempting to sign isn't already electronically signed using eSignature or any other electronic signature provider.
 
 > [!NOTE]
-> New eSignature requests can't be started from documents that were previously signed. You need to choose another document to create the request.
+> New electronic signature requests can't be started from documents that were previously signed. You need to choose another document to create the request.
 
 ### Default program for PDF viewing
 
@@ -32,7 +32,7 @@ The PDF viewer is opened by selecting a PDF file from a SharePoint library. The 
 
 ### Collaboration settings
 
-SharePoint eSignature is an extension of SharePoint document storage and management service. Existing access, sharing, and data loss prevention policies at various levels (tenant, SharePoint site, library, folder, or file) might impact whether a request can be initiated from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
+The eSignature service is an extension of SharePoint document storage and management service. Existing access, sharing, and data loss prevention policies at various levels (tenant, SharePoint site, library, folder, or file) might impact whether a request can be initiated from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
 
 - If encryption is applied (for example, sensitivity labeling applied to the file), the ability to view the document wouldn't be available from SharePoint and therefore can't start a Signature request from there. Read more about [sensitivity labels](/purview/sensitivity-labels).
 
@@ -52,9 +52,9 @@ Get-SPOSite -Limit All | Select-Object Url, SharingCapability
 
 Your IT admin might not have configured Microsoft Entra B2B to allow new external guests. Review the [External recipients](esignature-setup.md#external-recipients) section in [Admin setup](esignature-setup.md) to determine if this meets your compliance and security requirements when enabling eSignature.
 
-Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) is able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation is unsuccessful. One common way to resolve this is to contact your IT admin who can add the SharePoint eSignature app to the list of approved apps via the Microsoft Entra admin center.
+Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) is able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation is unsuccessful. One common way to resolve this is to contact your IT admin who can add the eSignature app to the list of approved apps via the Microsoft Entra admin center.
 
-In some cases, the admin might need to add the SharePoint eSignature app (formally called Microsoft eSign service) to the **Excluded Apps** list in the **Conditional Access policy** > **Target resources** section so that the policy doesn't apply to the SharePoint eSignature app. The admin can verify the changes using the WhatIf tool with the policy.
+In some cases, the admin might need to add the eSignature app (formally called Microsoft eSign service) to the **Excluded Apps** list in the **Conditional Access policy** > **Target resources** section so that the policy doesn't apply to the eSignature app. The admin can verify the changes using the WhatIf tool with the policy.
 
 ## Unable to create a request from another signature provider
 
@@ -93,21 +93,21 @@ To avoid potential issues, you should check the status and settings of the docum
 - Select the **Beta** or **Current** channel.
 - If you don't have the **Update Channel** option, your admin has disabled it, or you don't have local administrator permissions. Learn more about the [Update Channel option](/microsoft-365-apps/insider/deploy/user-choice).
 
-#### When I select the ribbon action in Word, I receive a message that SharePoint eSignature isn't enabled
+#### When I select the ribbon action in Word, I receive a message that eSignature isn't enabled
 
-- The Word document must be located on a SharePoint eSignature enabled site.  
+- The Word document must be located on a eSignature-enabled site.  
 - Word hasn't been enabled in the Microsoft 365 admin center.
 
     ![Screenshot showing that eSignature is turned off.](../media/content-understanding/esignature-turned-off-message.png)
 
 #### I get a message to change the sensitivity label
 
-- SharePoint eSignature supports unencrypted documents such as General, non-Business, Public, Confidential (Any user/No protection), High Confidential (Any user/No protection), and non-encrypted labeled documents.
+- The eSignature service supports unencrypted documents such as General, non-Business, Public, Confidential (Any user/No protection), High Confidential (Any user/No protection), and non-encrypted labeled documents.
 
 #### I can't send a request in Word to new external signers
 
-- Your admin hasn't configured SharePoint eSignature to send requests to external senders who aren't existing guests on your tenant. 
+- Your admin hasn't configured eSignature to send requests to external senders who aren't existing guests on your tenant. 
 
 #### As an admin, I don't have a toggle to disable requesting signatures from PDFs
 
-- The PDF eSignature capability is enabled by default and can't be disabled if SharePoint eSignature is enabled as a provider.
+- The PDF eSignature capability is enabled by default and can't be disabled if eSignature is enabled as a provider.

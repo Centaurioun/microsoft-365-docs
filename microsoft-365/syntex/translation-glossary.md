@@ -1,10 +1,10 @@
 ---
-title: Create and use a custom glossary for document translation in SharePoint
+title: Create and use a custom glossary for document translation
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha, ssquires
-ms.date: 01/23/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to create, use, update, share, and link to a glossary file for document translation.
 ---
 
-# Create and use a custom glossary for document translation in SharePoint
+# Create and use a custom glossary for document translation
 
 You can use a custom glossary file to ensure that the specific terminology is consistently and accurately translated. The glossary file contains a list of terms in the source language along with their corresponding translations in the target language.
 

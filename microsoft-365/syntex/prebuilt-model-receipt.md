@@ -1,10 +1,10 @@
 ---
-title: Use a prebuilt model to extract information from receipts in SharePoint
+title: Use a prebuilt model to extract information from receipts
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/16/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -17,9 +17,9 @@ ms.localizationpriority:  medium
 description: Learn how to use a prebuilt document processing model for receipts in SharePoint.
 ---
 
-# Use a prebuilt model to extract information from receipts in SharePoint
+# Use a prebuilt model to extract information from receipts
 
-The *receipts prebuilt model* in Microsoft Syntex analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total. Receipts can be of various formats and quality including printed and handwritten receipts.
+The *receipts prebuilt model* analyzes and extracts key information from sales receipts. The API recognizes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction), such as merchant name, merchant phone number, transaction date, tax, and transaction total. Receipts can be of various formats and quality including printed and handwritten receipts.
 
 To use a receipts model, follow these steps:
 
@@ -30,7 +30,7 @@ To use a receipts model, follow these steps:
 
 ## Step 1: Create a receipts model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md#create-a-prebuilt-model) to create a receipts prebuilt model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a prebuilt model](create-syntex-model.md#create-a-prebuilt-model) to create a receipts prebuilt model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
