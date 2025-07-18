@@ -3,7 +3,7 @@ title: Import a term set using a SKOS-based format
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
-ms.date: 01/10/2025
+ms.date: 08/01/2025
 audience: admin
 ms.service: microsoft-syntex
 ms.topic: how-to
@@ -18,7 +18,7 @@ description: Learn how to import a term set using a SKOS-based format.
 
 # Import a term set using a SKOS-based format
 
-You can import a term set using a SKOS-based format. For details about the format, see [SharePoint taxonomy SKOS format reference](skos-format-reference.md). This feature requires a [Microsoft Syntex license](syntex-licensing.md).
+You can import a term set using a SKOS-based format. For details about the format, see [SharePoint taxonomy SKOS format reference](skos-format-reference.md). This feature requires a [pay-as-you-go license](syntex-licensing.md).
 
 We recommend keeping your import files to less than 20,000 terms. Larger files can increase the time taken for validation and import.
 
