@@ -1,10 +1,10 @@
 ---
-title: Generate documents in bulk with Microsoft Syntex
+title: Generate documents in bulk with document processing for Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris
-ms.date: 01/09/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -14,10 +14,10 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: 
 ms.localizationpriority:  medium
-description: Learn how to use Microsoft Syntex for generating documents in bulk.
+description: Learn how to use document processing for Microsoft 365 for generating documents in bulk.
 ---
 
-# Scenario: Generate documents in bulk with Microsoft Syntex
+# Scenario: Generate documents in bulk with document processing for Microsoft 365
 
 :::row:::
    :::column span="":::      
@@ -36,9 +36,9 @@ description: Learn how to use Microsoft Syntex for generating documents in bulk.
 
 You can use content assembly to generate documents in bulk using a template. You need to send correspondence to all of your vendors to remind them about upcoming contract renewals.
 
-To implement a Syntex solution:
+To implement a document processing solution:
 
-   ![Diagram showing the steps to generate documents in bulk using Syntex.](../media/content-understanding/scenario-generate-documents-bulk.png)
+   ![Diagram showing the steps to generate documents in bulk using document processing](../media/content-understanding/scenario-generate-documents-bulk.png)
 
 1. Set up a SharePoint document library where you want to store the reminder letters.  
 
@@ -54,4 +54,4 @@ To implement a Syntex solution:
 <br>
 
 > [!div class="nextstepaction"]
-> [See more scenarios and use cases for Syntex](adoption-scenarios.md)
+> [See more scenarios and use cases for document processing](adoption-scenarios.md)
