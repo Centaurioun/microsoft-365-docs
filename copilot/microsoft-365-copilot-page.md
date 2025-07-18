@@ -26,6 +26,8 @@ When [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is available in 
 
 The admin center also gives shortcuts to other services that can affect how Copilot is used in your organization.
 
+> [!VIDEO 4ad48e80-9329-41fd-8d63-0b443281ec92]
+
 This article is for IT administrators, and lists some of the Copilot scenarios you can control in the Microsoft 365 admin center.
 
 > [!NOTE]
@@ -33,8 +35,6 @@ This article is for IT administrators, and lists some of the Copilot scenarios y
 > - If you're an end user on a work device, then it's possible your IT admin group turned on Copilot for you. The [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts) can help you get started.
 >
 > - If you're an end user on a personal device, then you might automatically get Microsoft Copilot, which is the free consumer version. To learn more, see [How can Copilot help you?](https://www.microsoft.com/microsoft-copilot/for-individuals) and [Welcome to Copilot on Windows](https://support.microsoft.com/windows/welcome-to-copilot-on-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
-
-> [!VIDEO 4ad48e80-9329-41fd-8d63-0b443281ec92]
 
 ## Before you begin
 
