@@ -1,10 +1,10 @@
 ---
-title: Track and manage SharePoint eSignature requests using Approvals in Microsoft Teams
+title: Track and manage eSignature requests using Approvals in Microsoft Teams
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: oadeyemo
-ms.date: 03/06/2025
+ms.date: 08/01/2025
 audience: enabler
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -14,15 +14,15 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to track your SharePoint eSignature requests using the Approvals app in Microsoft Teams. 
+description: Learn how to track your eSignature requests using the Approvals app in Microsoft Teams. 
 
 ---
 
-# Track and manage SharePoint eSignature requests using Approvals in Microsoft Teams
+# Track and manage eSignature requests using Approvals in Microsoft Teams
 
-You can now track your SharePoint eSignature requests in Microsoft Teams. Whenever you send or receive an eSignature request, in addition to an email notification, you'll also receive notifications from Microsoft Teams via the Approvals app. You can see the latest status of eSignature requests, initiate signing, and get access to the SharePoint location where the signed document was saved to.
+You can now track your eSignature requests in Microsoft Teams. Whenever you send or receive a request, in addition to an email notification, you'll also receive notifications from Microsoft Teams via the Approvals app. You can see the latest status of requests, initiate signing, and get access to the SharePoint location where the signed document was saved to.
 
-To view a list of your SharePoint eSignature requests, follow these steps:
+To view a list of your requests, follow these steps:
 
 1. In Microsoft Teams, select **Approvals**, and then select the **SharePoint** tab.
 
@@ -45,4 +45,4 @@ To view a list of your SharePoint eSignature requests, follow these steps:
 
 ## Tracking requests from other providers
 
-You can track requests from other providers using similar steps previously described. While you will be able to see the status of the request and cancel it, you won't be able to access the signed document location from the Approvals app at this time.
+You can track requests from other providers using similar steps previously described. While you'll be able to see the status of the request and cancel it, you won't be able to access the signed document location from the Approvals app at this time.

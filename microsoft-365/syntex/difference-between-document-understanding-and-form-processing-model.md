@@ -1,10 +1,10 @@
 ---
-title: Compare custom models in Microsoft Syntex
+title: Compare custom models for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris
-ms.date: 03/29/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: product-comparison
 ms.service: microsoft-syntex
@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about key differences between custom models in Microsoft Syntex.
+description: Learn about key differences between custom models for document processing for Microsoft 365.
 ---
 
-# Compare custom models in Microsoft Syntex 
+# Compare custom models for document processing 
 
 Use the following table to see differences in custom models to help identify the most appropriate model to use for your needs.
 
@@ -31,7 +31,7 @@ Use the following table to see differences in custom models to help identify the
 | Integrate with managed metadata | Yes, by training entity extractor referencing a configured managed metadata field. | No | No |
 | Compliance feature integration with Microsoft Purview Information Protection | Set published retention labels.<br>Set published sensitivity labels. | Set published retention labels. <br>Set published sensitivity labels. | Set published retention labels. <br>Set published sensitivity labels. |
 | Supported regions| Available in all regions. | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). |
-| Transactional cost | For pay-as-you-go licensing, see [pricing](syntex-pay-as-you-go-services.md). <br>For per-user licensing, not applicable. | For pay-as-you-go licensing, not applicable. <br>For per-user licensing, uses AI Builder credits. 3,500 credits are included for each Syntex license per month. One million credits allow processing of 10,000 file pages. | For pay-as-you-go licensing, not applicable. <br>For per-user licensing, uses AI Builder credits. 3,500 credits are included for each Syntex license per month. One million credits allow processing of 10,000 file pages.|
+| Transactional cost | For pay-as-you-go licensing, see [pricing](syntex-pay-as-you-go-services.md). <br>For per-user licensing, not applicable. | For pay-as-you-go licensing, not applicable. <br>For per-user licensing, uses AI Builder credits. 3,500 credits are included for each license per month. One million credits allow processing of 10,000 file pages. | For pay-as-you-go licensing, not applicable. <br>For per-user licensing, uses AI Builder credits. 3,500 credits are included for each license per month. One million credits allow processing of 10,000 file pages.|
 | Capacity | No capacity restrictions. | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Uses the default Power Platform environment (custom environments with Dataverse database supported). |
 | Supported languages| Supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents). | Supports [more than 40 languages](/ai-builder/form-processing-model-requirements#model-for-unstructured-and-free-form-documents). | Supports [more than 100 languages](/ai-builder/form-processing-model-requirements#model-for-structured-and-semi-structured-documents). |
 

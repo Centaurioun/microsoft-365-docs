@@ -1,10 +1,10 @@
 ---
-title: Leverage term store taxonomy when creating an extractor for document processing in SharePoint
+title: Leverage term store taxonomy when creating an extractor for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/10/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Use term store taxonomy when creating an extractor for document processing in SharePoint.
 ---
 
-# Leverage term store taxonomy when creating an extractor for document processing in SharePoint
+# Leverage term store taxonomy when creating an extractor for document processing
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 

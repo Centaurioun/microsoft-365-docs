@@ -1,10 +1,10 @@
 ---
-title: Create an extractor for document processing in SharePoint
+title: Create an extractor for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/10/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to create an extractor for document processing in SharePoint.
 ---
 
-# Create an extractor for document processing in SharePoint
+# Create an extractor for document processing
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
@@ -174,13 +174,3 @@ If you have duplicate entities and want to extract only one value or a certain n
     ![Test Files list showing the Refinement result column.](../media/content-understanding/test-filies-extractor-2.png)
 
 6. If you want to delete a refinement rule on an extractor, select the extractor from which you want to remove the rule, select **Refine extracted info**, and then select **Delete**.
-
-## See also
-
-[Create a classifier](create-a-classifier.md)
-
-[Explanation types](explanation-types-overview.md)
-
-[Leverage term store taxonomy when creating an extractor](leverage-term-store-taxonomy.md)
-
-[Syntex accessibility mode](accessibility-mode.md)

@@ -1,11 +1,11 @@
 ---
-title: Edit a modern template in SharePoint
+title: Edit a modern template
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 02/13/2025
+ms.date: 08/01/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to edit a modern template in SharePoint.
 ---
 
-# Edit a modern template in SharePoint
+# Edit a modern template
 
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 

@@ -48,6 +48,8 @@ The pay-as-you-go plan allows administrators to set up billing and enable users 
 The following administrator roles in the [Microsoft 365 admin center](https://admin.microsoft.com) can view and manage pay-as-you-go:
 
 - Global administrator
+- Billing administrator
+
 - AI administrator
 - Global reader (read-only access)
 

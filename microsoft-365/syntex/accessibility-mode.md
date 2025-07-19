@@ -1,10 +1,10 @@
 ---
-title: Accessibility mode for document processing in SharePoint
+title: Accessibility mode for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/26/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -13,10 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use accessibility features mode when training and working with document processing models in SharePoint.
+description: Learn how to use accessibility features mode when training and working with document processing models for Microsoft 365.
 ---
 
-# Accessibility mode for document processing in SharePoint
+# Accessibility mode for document processing
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 

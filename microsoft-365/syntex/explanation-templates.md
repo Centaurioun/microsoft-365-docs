@@ -1,10 +1,10 @@
 ---
-title: Use explanation templates for document processing in SharePoint
+title: Use explanation templates for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/13/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn more about how to use and save explanation templates for document processing in SharePoint.
 ---
 
-# Use explanation templates for document processing in SharePoint
+# Use explanation templates for document processing
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
@@ -116,4 +116,4 @@ You can save an explanation as a template to make it available in the explanatio
 
 ### See also
 
-[Explanation types in Microsoft Syntex](explanation-types-overview.md)
+[Explanation types for document processing](explanation-types-overview.md)

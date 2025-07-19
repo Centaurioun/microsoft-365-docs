@@ -1,5 +1,5 @@
 ---
-title: Manage library settings for document processing in SharePoint
+title: Manage library settings for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to manage settings for document processing on a SharePoint document library.
 ---
 
-# Manage library settings for document processing in SharePoint
+# Manage library settings for document processing
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -28,18 +28,18 @@ To access library settings from a SharePoint document library, select **Settings
 
 ## Automatic classification and extraction
 
-When you apply a model to a library, Syntex automatically adds the content type and updates the default view with the labels you extracted showing as columns. Then, every time you add or edit a document in the library, Syntex processes the document again, classifying the document and extracting text from it.
+When you apply a model to a library, the service automatically adds the content type and updates the default view with the labels you extracted showing as columns. Then, every time you add or edit a document in the library, the service processes the document again, classifying the document and extracting text from it.
 
-By default, Syntex processes a file every time the file is uploaded or edited. If you want Syntex to process new files only and not every time a file is modified, you can change the setting.
+By default, the service processes a file every time the file is uploaded or edited. If you want to process new files only and not every time a file is modified, you can change the setting.
 
 ### To process new files only
 
-Follow these steps if you want Syntex to process new files only.
+Follow these steps if you want the service to process new files only.
 
 1. On the **Library settings** panel, under **Automatic classification and extraction**, select **New files only**.
 
     ![Screenshot of the Library settings panel with the Automatic classification and extraction option highlighted.](../media/content-understanding/automatic-classification-setting.png)
 
-2. Select **Save**. Syntex will now automatically process new files only.
+2. Select **Save**. Now only new files will be processed.
 
    Even with this setting selected, you can still select updated files and manually process them using the **Classify and extract** option in the document library.

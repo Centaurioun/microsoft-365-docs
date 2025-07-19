@@ -1,10 +1,10 @@
 ---
-title: Train an unstructured document processing model in SharePoint
+title: Train an unstructured document processing model
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/07/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -17,11 +17,11 @@ ms.localizationpriority:  medium
 description: Learn how to create a classifier to train an unstructured document processing model in SharePoint.
 ---
 
-# Train an unstructured document processing model in SharePoint
+# Train an unstructured document processing model
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create an unstructured document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then start with this article to begin training your model.
+Follow the instructions in [Create an enterprise model for document processing](create-syntex-model.md) to create an unstructured document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then start with this article to begin training your model.
 
 ## Create a classifier
 
@@ -155,13 +155,3 @@ If you received a match on your labeled sample files, you can now test your mode
 2. In the **Test files** list, your example files display and shows if the model predicted them to be positive or negative. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
     ![Test of unlabeled files.](../media/content-understanding/test-on-files.png) 
-
-## See also
-
-[Create an extractor](create-an-extractor.md)
-
-[Explanation types](explanation-types-overview.md)
-
-[Apply a model](apply-a-model.md) 
-
-[Syntex accessibility mode](accessibility-mode.md)

@@ -1,10 +1,10 @@
 ---
-title: Explanation types for document processing in SharePoint
+title: Explanation types for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 04/09/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -16,11 +16,11 @@ ms.localizationpriority:  medium
 description: Learn more about phrase list, regular expression, and proximity explanation types for document processing in SharePoint.
 ---
 
-# Explanation types for document processing in SharePoint
+# Explanation types for document processing
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
-Explanations are used to help to define the information you want to label and extract in your unstructured document processing models in Microsoft Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they're used.
+Explanations are used to help to define the information you want to label and extract in your unstructured document processing models. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they're used.
 
 ![Screenshot of the Create an explanation panel showing the three explanation types.](../media/content-understanding/explanation-types.png)
 
@@ -224,4 +224,4 @@ When training a classifier, there a few things to keep in mind that will produce
 
 ### See also
 
-[Use explanation templates in Microsoft Syntex](explanation-templates.md)
+[Use explanation templates for document processing](explanation-templates.md)

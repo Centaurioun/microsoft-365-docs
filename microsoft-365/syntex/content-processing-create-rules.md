@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/11/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: upgrade-and-migration-article
 ms.service: microsoft-syntex

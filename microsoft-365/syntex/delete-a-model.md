@@ -1,11 +1,11 @@
 ---
-title: Delete a document processing model in SharePoint
+title: Delete a document processing model
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 01/10/2025
+ms.date: 08/01/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to delete a document processing model in SharePoint.
 ---
 
-# Delete a document processing model in SharePoint
+# Delete a document processing model
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -42,7 +42,7 @@ This procedure is the easiest method to use to delete a model. It deletes the mo
     ![Screenshot of the Delete model confirmation page.](../media/content-understanding/delete-model-confirmation.png)
 
    > [!NOTE]
-   > For freeform and structured models, this action doesn't delete the model in AI Builder. It only deletes it from the SharePoint document library in Syntex.
+   > For freeform and structured models, this action doesn't delete the model in AI Builder. It only deletes it from the SharePoint document library.
 
 ## Delete a model from the Models library
 

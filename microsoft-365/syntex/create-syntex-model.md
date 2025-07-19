@@ -1,10 +1,10 @@
 ---
-title: Create an enterprise model for document processing in SharePoint
+title: Create an enterprise model for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/07/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -16,17 +16,17 @@ ms.localizationpriority:  medium
 description: Learn how to create an enterprise document processing model in SharePoint.
 ---
 
-# Create an enterprise model for document processing in SharePoint
+# Create an enterprise model for document processing
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-An enterprise model is created and trained in the [content center](create-a-content-center.md). It can be used across multiple SharePoint sites within your organization, and it can be discovered by others to use. Whether you want to create a custom model or use a prebuilt model, you can do so from any of these places in Microsoft Syntex:
+An enterprise model is created and trained in the [content center](create-a-content-center.md). It can be used across multiple SharePoint sites within your organization, and it can be discovered by others to use. Whether you want to create a custom model or use a prebuilt model, you can do so from any of these places:
 
 - From the **Models** library
 - From the [content center](create-a-content-center.md) home page
-- From any document library in a site where Syntex has been activated
+- From any document library in a site where document processing has been activated
 
-For this article, we start in the **Models** library. For information about the different model types, see [Overview of model types in Syntex](model-types-overview.md).
+For this article, we start in the **Models** library. For information about the different model types, see [Overview of document processing model types](model-types-overview.md).
 
 If you want to create a local model, see [Create a model on a local SharePoint site](create-local-model.md).
 

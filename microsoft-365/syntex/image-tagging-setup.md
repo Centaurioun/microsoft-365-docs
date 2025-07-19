@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 04/13/2025
+ms.date: 08/01/2025
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -26,7 +26,7 @@ Image tagging is a pay-as-you-go service that is set up in the Microsoft 365 adm
 
 ### Licensing
 
-Before you can use image tagging, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Image tagging is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use image tagging, you must first link an Azure subscription in [pay-as-you-go](syntex-azure-billing.md). Image tagging is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -36,7 +36,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up image tagging
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), image tagging is automatically set up and enabled for all SharePoint sites.
+After an [Azure subscription is linked to pay-as-you-go](syntex-azure-billing.md), image tagging is automatically set up and enabled for all SharePoint sites.
 
 Although you enable pay-as-you-go billing for image tagging, you're charged only when [image tagging is enabled on a document library](image-tagging.md).
 

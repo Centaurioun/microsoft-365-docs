@@ -1,10 +1,10 @@
 ---
-title: Analyze how your document processing models are used in SharePoint
+title: Analyze how your document processing models are used
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/10/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to find more information about how your document processing models are performing in SharePoint.
 ---
 
-# Analyze how your document processing models are used in SharePoint
+# Analyze how your document processing models are used
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -36,7 +36,7 @@ Your content center provides you model usage analytics to provide more informati
 
 ### Roll up of model usage data in the default content center
 
-In Syntex, the default content center is created during setup. More content centers can also be created as needed. For example, departments might create their own content centers to create and manage their models. 
+The default content center is created during setup. More content centers can also be created as needed. For example, departments might create their own content centers to create and manage their models. 
 
 Regarding model usage analytics, note that:
 

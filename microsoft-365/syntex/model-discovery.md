@@ -1,11 +1,11 @@
 ---
-title: Share an enterprise model for document processing in SharePoint
+title: Share an enterprise model for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 02/16/2025
+ms.date: 08/10/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
@@ -16,11 +16,11 @@ ms.localizationpriority:  medium
 description: Learn how to make trained models available to other users and how to apply other trained models in SharePoint.
 ---
 
-# Share an enterprise model for document processing in SharePoint
+# Share an enterprise model for document processing
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-You can make your trained enterprise models available for others to view and use directly from a SharePoint document library. Enterprise models are created and trained in the [content center](create-a-content-center.md). 
+You can make your trained enterprise models available for others to view and use directly from a SharePoint document library. Enterprise models are created and trained in the [content center](create-a-content-center.md).
 
 ## Share your model with others
 
