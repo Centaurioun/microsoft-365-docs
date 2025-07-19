@@ -75,7 +75,6 @@ The following content management features are available (at no cost) once you se
 Per-user licenses for these services are no longer available for purchase. However:
 
 - Existing licenses can still be assigned to new users.
-
 - Once expired, you must switch to [pay-as-you-go](syntex-azure-billing.md) to continue using services.
 
 If you still have an active per-user license, you can continue to:
