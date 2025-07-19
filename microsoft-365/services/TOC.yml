@@ -45,7 +45,7 @@ items:
                     - name: Use agents with pay-as-you-go billing 
                       href: /sharepoint/sharepoint-agents-azure-billing
 
-            - name: Document processing services
+            - name: Document processing
               items:
                 - name: Try out Syntex services
                   href: ../syntex/promo-syntex.md
