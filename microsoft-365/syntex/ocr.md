@@ -1,10 +1,10 @@
 ---
-title: Set up and manage optical character recognition in SharePoint
+title: Set up and manage optical character recognition
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 01/13/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 description: Learn how to set up and manage optical character recognition in SharePoint.
 ---
 
-# Set up and manage optical character recognition in SharePoint
+# Set up and manage optical character recognition
 
 Optical character recognition (OCR) is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
@@ -26,7 +26,7 @@ Optical character recognition (OCR) is a pay-as-you-go service that is set up in
 
 ### Licensing
 
-Before you can use the OCR service, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). OCR is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use the OCR service, you must first link an Azure subscription in [pay-as-you-go](syntex-azure-billing.md). OCR is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -36,17 +36,17 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up optical character recognition
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), OCR will be automatically set up and enabled for all SharePoint sites for Microsoft Syntex.
+After an [Azure subscription is linked to pay-as-you-go](syntex-azure-billing.md), OCR will be automatically set up and enabled for all SharePoint sites.
 
 ### Set up data loss prevention policies using OCR
 
 The compliance admin for your organization can also [configure the OCR settings for your tenant](../compliance/ocr-learn-about.md?#phase-3-configure-your-ocr-settings) for [data loss prevention policies](../compliance/dlp-learn-about-dlp.md) in the Microsoft Purview portal.
 
-The compliance admin can specify which SharePoint sites to include for data loss prevention. If there are different sites specified for Syntex and data loss prevention, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing.
+The compliance admin can specify which SharePoint sites to include for data loss prevention. If there are different sites specified for the service and data loss prevention, the maximum number of sites will be enabled for OCR. You won't be charged twice for processing.
 
 For more information, see [Learn about optical character recognition in Microsoft Purview](../compliance/ocr-learn-about.md).
 
-## Manage sites enabled for Syntex
+## Manage sites enabled for OCR
 
 By default, the OCR service is turned on for libraries in all SharePoint sites. To limit which sites users can use OCR, follow these steps.
 
