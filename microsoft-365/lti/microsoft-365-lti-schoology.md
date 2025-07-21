@@ -56,9 +56,9 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 ## First-time Configuration by an LMS Administrator
 
-You must launch the app for the first time as a user with the **Brightspace System Administrator** role to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step!
+You must launch the app for the first time as a user with the **System Admin** role to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step!
 
-1. As a Brightspace System Administrator, access any Course that has the Microsoft Education link added
+1. As a System Admin, access any Course that has the Microsoft Education link added
 
 1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
 <!-- -->
