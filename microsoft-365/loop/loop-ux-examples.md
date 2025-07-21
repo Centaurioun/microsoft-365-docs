@@ -94,6 +94,7 @@ In this scenario, workspace creation was initially enabled for the user, allowin
 - [Storage](loop-storage.md)
 - [Permissions](cpcn-loop-permission.md)
 - [Admin toggles](loop-admin-configuration.md)
+- [Data Integrations Admin Settings](loop-data-integrations-configuration.md)
 
 ### End-User Experience
 
