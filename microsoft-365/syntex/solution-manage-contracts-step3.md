@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: how-to
-ms.date: 01/08/2025
+ms.date: 07/15/2025
 ms.service: microsoft-syntex
 search.appverid: 
 ms.localizationpriority:  medium
@@ -16,11 +16,11 @@ description: Learn how to use Power Automate to create your flow to process your
 
 # Step 3. Use Power Automate to create the flow to process your contracts
 
-You've created your Contract Management channel and have attached your SharePoint document library. The next step is to create a Power Automate flow to process your contracts that your Microsoft Syntex model identifies and classifies. You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+You've created your Contract Management channel and have attached your SharePoint document library. The next step is to create a Power Automate flow to process your contracts that your document processing model identifies and classifies. You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
 For your contracts management solution, you want to create a Power Automate flow to do the following actions:
 
--  After a contract has been classified by your Microsoft Syntex model, change the contract status to **In review**.
+- After a contract has been classified by your model, change the contract status to **In review**.
 - The contract is then reviewed and is either approved or rejected.
 - For approved contracts, the contract information is posted to a tab for payment processing.
 - For rejected contracts, the team is notified for further analysis. 

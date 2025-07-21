@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: solution-overview
-ms.date: 01/08/2025
+ms.date: 07/15/2025
 ms.service: microsoft-syntex
 ms.collection:
 - m365solution-managecontracts
@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: 
 ms.localizationpriority:  medium
 ROBOTS: 
-description: Learn how to manage contracts using a Microsoft 365 solution of Microsoft Syntex, SharePoint lists, Microsoft Teams, and Power Automate.
+description: Learn how to manage contracts using a Microsoft 365 solution of document processing, SharePoint lists, Microsoft Teams, and Power Automate.
 ---
 
 # Manage contracts using a Microsoft 365 solution
 
-This article describes how to create a contracts management solution for your organization by using Microsoft Syntex and components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even though this solution talks about contract management, you can adapt it to create other document management solutions, such as for statements of work or invoices.
+This article describes how to create a contracts management solution for your organization by using document processing services and other components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even though this solution talks about contract management, you can adapt it to create other document management solutions, such as for statements of work or invoices.
 
 </br>
 
@@ -43,11 +43,11 @@ The first step in planning your contract management system is to understand the 
 
 ## Overview of the solution
 
-  ![Diagram of the solution using Syntex, SharePoint lists, Teams, and Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+  ![Diagram of the solution using document processing, SharePoint lists, Teams, and Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
 
 This contract management solution guidance includes four components of Microsoft 365:
 
-- **Microsoft Syntex**: Create models to identify and classify your contract files and then extract the appropriate data from them.
+- **Document processing**: Create models to identify and classify your contract files and then extract the appropriate data from them.
 
 - **Microsoft SharePoint lists**: Use the formatting available in modern SharePoint lists to present contracts in a business-friendly format.
 
@@ -57,9 +57,12 @@ This contract management solution guidance includes four components of Microsoft
 
 ### How it all works
 
+<!---
   ![Diagram of the solution showing the workflow to upload documents, extract data, notify stakeholders, and approve or reject the contract.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
+--->
 
-1. Documents are uploaded to a SharePoint document library. A Microsoft Syntex unstructured document processing model has been applied to the document library. It checks each file to see if any match a "contract" content type it's trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
+
+1. Documents are uploaded to a SharePoint document library. An unstructured document processing model has been applied to the document library. It checks each file to see if any match a "contract" content type it's trained to look for. If it finds a match, it classifies the file as a "contract" and updates the content type for the document.
 
 2. The model also pulls out specific data from each contract file that stakeholders are interested in seeing, such as the *Client*, *Contractor*, and *Fee amount*.
 
@@ -81,20 +84,22 @@ This contract management solution guidance includes four components of Microsoft
 
 This solution relies on the following functionality, all available as part of a Microsoft 365 Enterprise (E1, E3, E5, F3) or Business (Basic, Standard, or Premium) license:
 
-- Microsoft Syntex
+- SharePoint
 - Microsoft Teams
 - Power Automate
 
+<!---
 ### Learn how to use Microsoft Syntex
 
 New to Microsoft Syntex? Learn how to use Microsoft Syntex to manage content using AI.
 
 The [Introduction to Microsoft Syntex](/training/modules/syntex-intro) learning path teaches how you can use unstructured, freeform, and unstructured document processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
+--->
 
 ## Create the solution
 
 The next sections will go into detail about how to configure your contracts management solution. It's divided into three steps:
 
-- [Step 1. Use Microsoft Syntex to identify contract files and extract data](solution-manage-contracts-step1.md)
+- [Step 1. Use a document processing model to identify contract files and extract data](solution-manage-contracts-step1.md)
 - [Step 2. Use Microsoft Teams to create your contract management channel](solution-manage-contracts-step2.md)
 - [Step 3. Use Power Automate to create the flow to process your contracts](solution-manage-contracts-step3.md)
