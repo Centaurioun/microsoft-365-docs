@@ -36,11 +36,12 @@ Once the Microsoft 365 tool is installed, an LMS Administrator must complete the
     - If you're an Microsoft 365 Global Administrator, then you are able to provide consent for the app by clicking the **Admin Consent** button.
     - If you aren't an Microsoft 365 Administrator, then you can copy and paste the Admin consent URL for the app and sent it to a Microsoft 365 Global Administrator to complete this step.
 
-  The button and messaging will change to "Reconsent" after this step is completed.
+    The button and messaging will change to "Reconsent" after this step is completed.
 
-   :::image type="content" source="./media/consent.png" alt-text="Screenshot of admin setting consent." border="true":::
+    :::image type="content" source="./media/consent.png" alt-text="Screenshot of admin setting consent." border="true":::
+
     > [!NOTE]
-    > You can share the following instructions with your Microsoft admin to complete this step. The URL they'll need is: `https://m365lti.edu.cloud.microsoft/Consent`
+    > You can share the following instructions with your Microsoft admin to complete this step. The URL they'll need is: https://m365lti.edu.cloud.microsoft/Consent
 
     Selecting the **Admin Consent** button or visiting the consent link will trigger a login and then the **Permissions requested** dialog. Login with a Microsoft 365 Global Administrator user role, and then select **Accept** on the dialog to complete this step.
     :::image type="content" source="./media/pick-account.png" alt-text="Screenshot of the account dialog box." border="true":::
