@@ -1,10 +1,10 @@
 ---
-title: Overview of model types in Microsoft Syntex
+title: Overview of document processing model types
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/19/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: concept-article
 ms.custom: intro-overview
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about custom models and prebuilt models in Microsoft Syntex.
+description: Learn about custom models and prebuilt models in document processing for Microsoft 365.
 ---
 
-# Overview of model types in Microsoft Syntex
+# Overview of document processing model types
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
@@ -27,18 +27,15 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 </br>--->
 
-In Microsoft Syntex, document processing begins with models—powerful tools that help you identify, classify, and extract information from documents stored in SharePoint document libraries. These models are the foundation for turning unstructured content into structured, usable data.
+Document processing models are powerful tools that help you identify, classify, and extract information from documents stored in SharePoint document libraries.
 
 When you apply a model to a SharePoint library, it’s linked to a content type that defines the structure of the information being extracted. This content type, which includes columns for storing extracted data, is saved in the SharePoint content type gallery. You can create a new content type tailored to your needs or use existing ones to reuse their schema and maintain consistency across your organization.
 
-Microsoft Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models).
+Document processing uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models).
 
-![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-5.png)
+![Diagram showing the types of custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-5.png)
 
-Models can be created in two ways depending on your needs and where you want to manage them. Enterprise models are created and managed in a [content center](create-a-content-center.md), making them reusable across multiple SharePoint sites. Local models, on the other hand, are created directly within a SharePoint document library on your site and are scoped to that specific library. This gives you flexibility to choose the right model type based on whether you need centralized control or localized customization.
-
-<!---
-Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).--->
+Models can be created in two ways depending on your needs and where you want to manage them. Enterprise models are created and managed in a [content center](create-a-content-center.md), making them reusable across multiple SharePoint sites. Local models, on the other hand, are created directly within a SharePoint document library [on your site and are scoped to that specific library](create-local-model.md). This gives you flexibility to choose the right model type based on whether you need centralized control or localized customization.
 
 ## Custom models
 
@@ -103,7 +100,7 @@ For more information, see [Overview of structured and freeform document processi
 
 ## Prebuilt models
 
-In addition to custom models, Microsoft Syntex offers a set of [prebuilt models](prebuilt-overview.md) that provide out-of-the-box capabilities for extracting structured information from common business documents. These models are designed to save time and effort by eliminating the need for manual training or configuration.
+In addition to custom models, document processing offers a set of [prebuilt models](prebuilt-overview.md) that provide out-of-the-box capabilities for extracting structured information from common business documents. These models are designed to save time and effort by eliminating the need for manual training or configuration.
 
 Prebuilt models include:
 
