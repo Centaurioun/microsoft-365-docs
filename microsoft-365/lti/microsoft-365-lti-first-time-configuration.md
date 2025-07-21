@@ -44,7 +44,9 @@ Once the Microsoft 365 tool is installed, an LMS Administrator must complete the
     > You can share the following instructions with your Microsoft admin to complete this step. The URL they'll need is: https://m365lti.edu.cloud.microsoft/Consent
 
     Selecting the **Admin Consent** button or visiting the consent link will trigger a login and then the **Permissions requested** dialog. Login with a Microsoft 365 Global Administrator user role, and then select **Accept** on the dialog to complete this step.
+
     :::image type="content" source="./media/pick-account.png" alt-text="Screenshot of the account dialog box." border="true":::
+
     :::image type="content" source="./media/permissions-requested.png" alt-text="Screenshot of permissions requested." border="true":::
 
 1. As the LMS Administrator, you can choose to enable or disable the Microsoft Education experiences available to your instructors. The **Enabled** toggle switch controls the enabled state of the application for the deployment, and the **On by default** toggle switch controls the default state of visibility for the app in a course. Instructors can change the visibility of any enabled app in their course.
