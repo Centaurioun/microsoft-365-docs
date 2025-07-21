@@ -3,7 +3,7 @@ title: Publish custom models with PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-ms.date: 04/06/2025
+ms.date: 08/01/2025
 manager: ssquires
 audience: admin
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn how to publish Microsoft Syntex custom models by using PowerShell.
+description: Learn how to publish custom document processing models by using PowerShell.
 ---
 
 # Publish custom models with PowerShell
@@ -21,13 +21,13 @@ description: Learn how to publish Microsoft Syntex custom models by using PowerS
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 > [!IMPORTANT]
-> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There's no service-level agreement (SLA) for open-source tool support from official Microsoft support channels.
+> The PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There's no service-level agreement (SLA) for open-source tool support from official Microsoft support channels.
 
-Microsoft Syntex models typically are deployed to document libraries across your tenant. This action can be done by using the content center site, but it can also be done using [PnP PowerShell](https://pnp.github.io/powershell/) as explained in this article.
+Document processing models typically are deployed to document libraries across your tenant. This action can be done by using the content center site, but it can also be done using [PnP PowerShell](https://pnp.github.io/powershell/) as explained in this article.
 
 ## Listing the available models in a content center
 
-To get an overview of the models added to the current Microsoft Syntex content center site, use the [Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) cmdlet:
+To get an overview of the models added to the current content center site, use the [Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) cmdlet:
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
