@@ -1,10 +1,10 @@
 ---
-title: Automatically generate routine documents with Microsoft Syntex
+title: Automatically generate routine documents with document processing for Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris
-ms.date: 01/09/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -14,14 +14,14 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: 
 ms.localizationpriority:  medium
-description: Learn how to use Microsoft Syntex to automatically generate routine business documents.
+description: Learn how to use document processing for Microsoft 365 to automatically generate routine business documents.
 ---
 
-# Scenario: Automatically generate routine documents with Microsoft Syntex
+# Scenario: Automatically generate routine documents with document processing for Microsoft 365
 
 :::row:::
    :::column span="":::      
-      Use the content assembly feature in Microsoft Syntex to create modern templates for files that need to be created regularly. Files can then be generated based on these templates, either through manual request or through an automation.
+      Use the content assembly service to create modern templates for files that need to be created regularly. Files can then be generated based on these templates, either through manual request or through an automation.
 
       Features used:
       - Content assembly
@@ -39,9 +39,9 @@ You can use content assembly to automate the generation of daily inspection or m
 
 Today, users physically inspect parts and then fill in a list or a form or physical paper reports. This leads to more work in transforming this data into digital content that can be used further.
 
-To implement a Microsoft Syntex solution:
+To implement a document processing solution:
 
-   ![Diagram showing the steps to generate routine documents using Syntex.](../media/content-understanding/scenario-automatically-generate-documents.png)
+   ![Diagram showing the steps to generate routine documents using document processing.](../media/content-understanding/scenario-automatically-generate-documents.png)
 
 1. Set up a document library where you want to store the reports.  
 
@@ -61,5 +61,5 @@ You can now review all daily reports as they get created based on values that fr
 <br>
 
 > [!div class="nextstepaction"]
-> [See more scenarios and use cases for Syntex](adoption-scenarios.md)
+> [See more scenarios and use cases for document processing](adoption-scenarios.md)
 

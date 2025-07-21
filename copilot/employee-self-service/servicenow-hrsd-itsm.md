@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: daisyfeller
 author: daisyfell
 manager: triciagill
-ms.date: 7/3/2025
+ms.date: 07/15/2025
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
@@ -52,7 +52,7 @@ The previous diagram outlines the high-level components comprising overall solut
 The following are known issues & limitations of the Power Platform connector for ServiceNow:
 
 - When using the Create Record action, it's not possible to specify the full record description. The field value is ignored due to ServiceNow REST API limitations.
-- The Get Records action may return an "Invalid Table" or other error in Power Apps. For Power Apps implementations the suggested work-around is to utilize the Get Records action in Power Automate and pass the data back to Power Apps.
+- The Get Records action might return an "Invalid Table" or other error in Power Apps. For Power Apps implementations the suggested work-around is to utilize the Get Records action in Power Automate and pass the data back to Power Apps.
 
 For detailed documentation about the connector, see [ServiceNow - Connectors](/connectors/service-now/#known-issues-and-limitations).
 
@@ -70,17 +70,17 @@ Refer to the ESS Agent deployment guide for installation of the agent and subscr
 |---------|---------|---------|---------|
 | **ServiceNow Administrator** | User who can perform administrative tasks | Create a service account and assign a role to provide read access to specific table records | ServiceNow |
 | **ServiceNow Security Administrator** | User who can configure OAuth | Create OAuth Application Registry – *if using OAuth for ServiceNow connector* | ServiceNow |
-| **Application Developer** (*minimum privileged role*)  | User who can register an application | Create an App registration - *if using Microsoft Entra OAuth for ServiceNow connector* | Microsoft 365 Admin Center |
+| **Application Developer** (*minimum privileged role*)  | User who can register an application | Create an App registration - *if using Microsoft Entra OAuth for ServiceNow connector* | Microsoft 365 admin center |
 | **Environment Maker** | User who can customize ESS Agent | Configure & Customize ESS Agent | Microsoft Copilot Studio |
 
-### ServiceNow configuration
+## ServiceNow configuration
 
-This section outlines the tasks required to be configured in ServiceNow by an administrator.  ServiceNow integration supports three types of authentications as follows:
+This section outlines the tasks required to be configured in ServiceNow by an administrator. ServiceNow integration supports several types of authentications:
 
-1. Basic authentication
-2. Microsoft Entra ID OAuth using certificate
-3. Microsoft Entra ID User sign in
-4. User Oauth2
+- Basic authentication
+- Microsoft Entra ID OAuth using certificates
+- Microsoft Entra ID User sign in
+- User Oauth2
 
 > [!NOTE]
 > For all security related tasks in ServiceNow, the logged in user with `admin` or `security_admin` role must elevate their access using "Elevate role" option from the profile menu in the top right of navigation bar.
@@ -88,30 +88,149 @@ This section outlines the tasks required to be configured in ServiceNow by an ad
 > [!TIP]
 > Without elevating access, the new security objects can't be created. If **New** button in the top right of configuration pane is missing, then the role isn't elevated to "`security_admin`”.
 
-#### Option 1: Using OAuth2 authentication - Create an OAuth Application Registry
+### Basic authentication
 
-1. Log in to the ServiceNow instance that needs to be integrated with ESS Agent.
+This method of authentication involves a ServiceNow username and password to authenticate API requests. This method is simple to use and is primarily suggested for testing purposes, as it offers lower security compared to other authentication methods.
+
+### Microsoft Entra ID OAuth using Certificate
+
+This authentication uses app tokens, allowing a registered Microsoft Entra ID application to access ServiceNow with a token specifying the ServiceNow Microsoft Entra ID app as the resource.
+
+#### Task 1: Register an application in Microsoft Entra ID for OIDC integration with ServiceNow
+
+[Learn how to register an app in Microsoft Entra ID.](/entra/identity-platform/quickstart-register-app)
+
+1. Sign into the Microsoft Entra admin center as a Global Administrator or Cloud App Administrator.
+
+1. Go to **Applications** then **App registrations**.
+
+1. Select **New registration.**
+
+1. In the new registration form, fill in the following fields:
+
+   - **Name:** Any name that represents the purpose of app registration
+   - **Redirect URL:** Not needed
+
+1. Choose **Register** to complete the creation of the new app registration.
+
+1. Select **Token configuration** then **Add optional claim** for adding claims setting.
+
+1. Select **Token type** as **Access** and choose the following claims:
+
+   - *aud* - for audience validation
+   - *email* - addressable email for user
+   - *upn* - an identifier for the user
+
+1. Select **Add** to complete adding the claims.
+
+1. If this is the first time OpenId Connect being setup using claims like email, upn, there’s a confirmation screen to turn on the Microsoft Graph permissions. If you see the confirmation, check the box, and then select **Add**.
+
+This flow completes the Microsoft Entra piece of configuration.
+
+#### Task 2: Register OIDC provider in ServiceNow
+
+1. Sign in to the ServiceNow instance that needs to be integrated with ESS Agent.
+
+1. Elevate access permissions using **Elevate role**. Refer to the section **Error! Reference source not found.** – only the first part and not the tasks.
+
+1. Select **All** in the top navigation bar.
+
+1. Search for “OAuth” in the search box within dropdown navigation menu.
+
+1. Select **System OAuth à Application Registry** from the search results (if you don’t see this option, then you don’t have sufficient privileges).
+
+1. Select **New** in the configuration section pane.
+
+1. Select **Configure an OIDC provider to verify ID tokens**.
+
+1. Fill in the following information for the new application registry:
+
+   |Configuration |Description |
+   |--------------|------------|
+   |Name |a meaningful name to identify that this OIDC provider was created for ESS Agent |
+   |Client ID |The client ID of Microsoft Entra Application created in Task 1 above |
+   |Client secret |This value isn't used; can be any value |
+   |OAuth OIDC provider configuration |Add a new OIDC provider configuration by selecting the search icon and choosing **New** in the search popup. Fill in the fields as follows:</br> **OIDC Provider:** A name that represents the Microsoft Entra tenant from task 1 above.</br> **OIDC Metadata URL:** `login.microsoftonline.com/<tenant ID>/.well-known/openid-configuration`</br> Replace < tenant ID > with the Microsoft Entra tenant ID from task 1 above.</br> **OIDC Configuration Cache Life Span:** 120</br> **Application:** Global</br> **User Claim:** oid</br> **User Field:** User ID</br> **Enable JTI claim verification:** disabled</br> Select **Submit** and update the OIDC Entity form. |
+
+#### Task 3: Register an Application in Microsoft Entra ID for connector usage
+
+This is the application that plays the role of a user with elevated permissions in the ServiceNow instance.
+
+1. Sign into the Microsoft Entra admin center as a Global Administrator or Cloud App Administrator.
+
+1. Go to **Applications** > **App registrations**.
+
+1. Select **New registration**.
+
+1. In the new registration form, fill in the following fields:
+
+   - **Name:** any name that represents the purpose of app registration.
+   - **Redirect URI:** Not needed.
+
+1. Select **Register** to complete the creation of new app registration.
+
+1. Select **Certificates & secrets** then upload the `.cer` file of the certificate. If there's an SNI certificate, just add `trustedCertificateSubjects` in the manifest of the application with the relevant `authorityId` and `subjectName`.
+
+#### Task 4: Create a System User in ServiceNow
+
+In this task, you add a user to the Application created in task 3 (earlier in this article).
+
+1. Go to **User Administration** > **Users** to create a new user.
+
+2. For **User ID**, use the object ID of the service principal of the application that was created in the previous task.
+
+3. Check **Web service access only**.
+
+### Microsoft Entra ID OAuth User sign in
+
+This is user-token based authentication where the end user can sign into Microsoft Entra ID using the ServiceNow connector, and get an access token with scope for the ServiceNow representative Microsoft Entra ID app.
+
+Perform tasks 1 and 2 from the previous sections for Microsoft Entra ID OAuth using Certificate.
+
+In task 1, you add the application using the ServiceNow connector to the permission scope with Client ID = `c26b24aa-7874-4e06-ad55-7d06b1f79b63`.
+
+In task 2, you update the user claim to upn or any other custom claim property from the token in ServiceNow.  The user field should match the ServiceNow system user table field containing the upn or user ID.
+
+### Using OAuth2 authentication - Create an OAuth Application Registry
+
+1. Sign in to the ServiceNow instance that needs to be integrated with ESS Agent.
+
 2. Elevate access permissions using **Elevate role**.
+
 3. Select **All** in the top navigation bar.
+
 4. Search for **OAuth** in the search box within dropdown navigation menu.
+
 5. Select **System OAuth → Application Registry** from the search results (if you don’t see this option, then you don’t have sufficient privileges).
+
 6. Select **New** button in the top right corner of the configuration section pane.
+
 7. Select **Create an OAuth API endpoint for external clients**.
+
 8. Fill in the following information for the new application registry:
 
-    | Configuration | Description |
-    |---------|---------|
-    | **Name** | a meaningful name to identify that this application registry is created for ESS Agent |
-    | **Client ID** | autogenerated code <br><div class="alert">**Note**</br>This value is used in Microsoft 365 Copilot Connector configuration, if no Advanced Scripting is used. |
-    | **Client Secret** | leave it blank to automatically generate a string <br><div class="alert">**Note**</br>This value is used in Microsoft 365 Copilot Connector configuration, if no Advanced Scripting is used. |
-    | **Redirect URL** | a required callback URL that the authorization server redirects to </br>For Microsoft 365 Enterprise:</br>`https://gcs.office.com/v1.0/admin/oauth/callback`</br>For Microsoft 365 Government:</br>`https://gcsgcc.office.com/v1.0/admin/oauth/callback`|
-    | **Logo URL** | A URL that contains the image for the application logo |
-    | **Active** | Set to active |
-    | **Refresh token lifespan** | The number of seconds that a refresh token is valid. </br>By default, refresh tokens expire in 100 days (8,640,000 seconds). Recommended value is 31,536,000 (one year) |
-    | **Access token lifespan** | The number of seconds that an access token is valid.</br> Recommended value is 43,200 (12 hours) |
-    | **Application** | Global |
-    | **Accessible from** | All application scopes |
-    | **Client Type** | Integration as a Service |
+   | Configuration | Description |
+   |---------|---------|
+   | **Name** | a meaningful name to identify that this application registry is created for ESS Agent |
+   | **Client ID** | autogenerated code <br><div class="alert">**Note**</br>This value is used in Microsoft 365 Copilot Connector configuration, if no Advanced Scripting is used. |
+   | **Client Secret** | leave it blank to automatically generate a string <br><div class="alert">**Note**</br>This value is used in Microsoft 365 Copilot Connector configuration, if no Advanced Scripting is used. |
+   | **Redirect URL** | a required callback URL that the authorization server redirects to </br>For Microsoft 365 Enterprise:</br>`https://gcs.office.com/v1.0/admin/oauth/callback`</br>For Microsoft 365 Government:</br>`https://gcsgcc.office.com/v1.0/admin/oauth/callback` Refer to the note after this table for more information.|
+   | **Logo URL** | A URL that contains the image for the application logo |
+   | **Active** | Set to active |
+   | **Refresh token lifespan** | The number of seconds that a refresh token is valid. </br>By default, refresh tokens expire in 100 days (8,640,000 seconds). Recommended value is 31,536,000 (one year) |
+   | **Access token lifespan** | The number of seconds that an access token is valid.</br> Recommended value is 43,200 (12 hours) |
+   | **Application** | Global |
+   | **Accessible from** | All application scopes |
+   | **Client Type** | Integration as a Service |
+
+   > [!NOTE]
+   > For the Redirect URL, use the actual callback URL from the sign-in popup window during connection configuration by following these steps:
+   >    
+   > 1. When the URL redirection fails with the error **Invalid redirect_uri**, copy complete URL from the authorization popup window and paste it into an app, such as Notepad.
+   >       
+   > 2. Extract the `redirect_uri parameter`. Here's an example: `redirect_uri=https%3a%2f%2ftip1-shared.consent.azure-apim.net%2fredirect`.
+   >       
+   > 3. After decoding the URL, by replacing `%3a` with `:` and `%2f` with `/`, update the Redirect URL field.
 
 9. Select **Submit** or **Update** button to save the changes.
 
@@ -120,60 +239,76 @@ This section outlines the tasks required to be configured in ServiceNow by an ad
 ESS Agent is designed to have separate extension packs for each third party ISVs like ServiceNow, etc. Hence, these extension packs must be installed first before starting any configurations or customizations.
 The following steps are required to install & enable the ServiceNow HRSD extension pack:
 
-1. **Entitlement**
-    Work with your ESS Agent private preview product managers for the entitlement process. Once the entitlement process is complete for your tenant, the ServiceNow HRSD extension pack shows up under "Customize" section of ESS Agent.
+1. **Entitlement**:
 
-    > [!NOTE]
-    > "Entitlement" process is a preview workaround until the extension pack installation is streamlined in Microsoft Copilot Studio.
+   Work with your ESS Agent private preview product managers for the entitlement process. Once the entitlement process is complete for your tenant, the ServiceNow HRSD extension pack shows up under "Customize" section of ESS Agent.
 
-2. **Open the ESS Agent in Copilot Studio**
-    1. Open the ESS Agent in Copilot Studio.
-    2. Navigate to **Settings**.
-    3. Select **Customize** from the left navigation under **Settings**.
-    4. Select **Employee Self-Service Agent in Microsoft 365 Copilot – ServiceNow HR Service Delivery** and select **Install**.
-    5. When prompted, update the connections as described by selecting " ..." or **sign in** buttons on the right hand side for ServiceNow connection.
-    6. Use the following parameters to complete the configuration (**if using OAuth2**):
+   > [!NOTE]
+   > "Entitlement" process is a preview workaround until the extension pack installation is streamlined in Microsoft Copilot Studio.
 
-        | Feature | Description |
-        |---------|---------|
-        | **Authentication Type** | Use Oauth2 |
-        | **Instance Name** | The instance name used to identify the ServiceNow Site URl <br>For example:</br>**contoso** – *don't use the full url or domain name like contoso.service-now.com* |
-        | **Client Id** | Client ID created in Task 1 |
-        | **Client Secret** | Client ID created in Task 1 |
+2. **Open the ESS Agent in Copilot Studio**:
 
-    7. ServiceNow asks for sign-in again. Use the same account used previously for ServiceNow configuration.
-    8. Confirm the consent by selecting **Allow**.
-    9. The **Microsoft Dataverse** connection is the user account that should be automatically signed in, if not, select **Sign in**.
+   1. Open the ESS Agent in Copilot Studio.
+   
+   2. Navigate to **Settings**.
+   
+   3. Select **Customize** from the left navigation under **Settings**.
+   
+   4. Select **Employee Self-Service Agent in Microsoft 365 Copilot – ServiceNow HR Service Delivery** and select **Install**.
+   
+   5. When prompted, update the connections as described by selecting " ..." or **sign in** buttons on the right hand side for ServiceNow connection.
+   
+   6. Use the following parameters to complete the configuration (**if using OAuth2**):
+
+      | Feature | Description |
+      |---------|---------|
+      | **Authentication Type** | Use Oauth2 |
+      | **Instance Name** | The instance name used to identify the ServiceNow Site URl <br>For example:</br>**contoso** – *don't use the full url or domain name like contoso.service-now.com* |
+      | **Client Id** | Client ID created in Task 1 |
+      | **Client Secret** | Client ID created in Task 1 |
+
+   7. ServiceNow asks for sign-in again. Use the same account used previously for ServiceNow configuration.
+
+   8. Confirm the consent by selecting **Allow**.
+
+   9. The **Microsoft Dataverse** connection is the user account that should be automatically signed in, if not, select **Sign in**.
 
 ### Install ServiceNow ITSM extension pack
 
 ESS Agent is designed to have separate extension packs for each third party ISVs like ServiceNow, etc. Hence, these extension packs must be installed first before starting any configurations or customizations.
 Following are the steps required to install & enable the ServiceNow HRSD extension pack:
 
-1. **Entitlement**
-    Please work with your ESS Agent private preview product managers for the entitlement process. Once the entitlement process is complete for your tenant, the ServiceNow HRSD extension pack shows up under "Customize" section of ESS Agent.
+1. **Entitlement**:
 
-    > [!NOTE]
-    > "Entitlement" process is a preview workaround until the extension pack installation is streamlined in Microsoft Copilot Studio.
+   Work with your ESS Agent private preview product managers for the entitlement process. Once the entitlement process is complete for your tenant, the ServiceNow HRSD extension pack shows up under "Customize" section of ESS Agent.
 
-2. **Install the extension**
+   > [!NOTE]
+   > "Entitlement" process is a preview workaround until the extension pack installation is streamlined in Microsoft Copilot Studio.
 
-    1. Open the ESS Agent in Copilot Studio.
-    2. Navigate to **Settings**.
-    3. Select **Customize** from the left navigation under **Settings**.
-    4. Select **Employee Self-Service Agent in Microsoft 365 Copilot – ServiceNow IT Service Management** and select **Install**.
-    5. When prompted, update the connections as described by selecting " ..." or **sign in** buttons on the right hand side for ServiceNow connection.
-    6. Use the following parameters to complete the configuration (if using OAuth2):
+2. **Install the extension**:
 
-        | Feature | Description |
-        |---------|---------|
-        | **Authentication Type** | Use Oauth2 |
-        | **Instance Name** | The instance name used to identify the ServiceNow Site URl <br>For example:</br>**contoso** – *don't use the full url or domain name like contoso.service-now.com* |
-        | **Client Id** | Client ID created in Task 1 |
-        | **Client Secret** | Client ID created in Task 1 |
+   1. Open the ESS Agent in Copilot Studio.
+   
+   2. Navigate to **Settings**.
+   
+   3. Select **Customize** from the left navigation under **Settings**.
+   
+   4. Select **Employee Self-Service Agent in Microsoft 365 Copilot – ServiceNow IT Service Management** and select **Install**.
+   
+   5. When prompted, update the connections as described by selecting " ..." or **sign in** buttons on the right hand side for ServiceNow connection.
+   
+   6. Use the following parameters to complete the configuration (if using OAuth2):
 
-    7. ServiceNow asks for sign-in again. Use the same account used previously for ServiceNow configuration.
-    8. Confirm the consent by selecting **Allow**.
+      | Feature | Description |
+      |---------|---------|
+      | **Authentication Type** | Use Oauth2 |
+      | **Instance Name** | The instance name used to identify the ServiceNow Site URl <br>For example:</br>**contoso** – *don't use the full url or domain name like contoso.service-now.com* |
+      | **Client Id** | Client ID created in Task 1 |
+      | **Client Secret** | Client ID created in Task 1 |
+
+   7. ServiceNow asks for sign-in again. Use the same account used previously for ServiceNow configuration.
+   
+   8. Confirm the consent by selecting **Allow**.
 
 ## ServiceNow - HRSD
 
@@ -232,9 +367,13 @@ For any required modifications to the backend ServiceNow Incident APIs, the temp
 To access the template configurations:
 
 1. Navigate to the overview tab within the ESS Agent and scroll down to the ***Customize*** tab
+
 2. Select the installed customization titled ***Employee Self Service IT Helpdesk ServiceNow ITSM***
+
 3. This action redirects you to the installed customization details page, where you can view all the Topics and Flows included in the customization package. Additionally, there's a ***Configuration*** option at the top with a manage button
+
 4. By selecting the manage button, you're directed to the Dataverse Template Configurations table, which lists all available template configurations.
+
 5. Select the specific scenario template configuration, and it opens the actual value in the Dynamics 365 webpage in a new tab, which can edit the JSON as needed and save your changes
 
 ### Capabilities for the ServiceNow extension pack
