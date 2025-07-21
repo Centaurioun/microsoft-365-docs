@@ -1,11 +1,11 @@
 ---
-title: Create a modern template in SharePoint
+title: Create a modern template
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 01/07/2025
+ms.date: 08/01/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to create a modern template in SharePoint.
 ---
 
-# Create a modern template in SharePoint
+# Create a modern template
 
 ## Upload a document to create a modern template
 

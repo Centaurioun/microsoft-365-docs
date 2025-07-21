@@ -1,10 +1,10 @@
 ---
-title: Comment and collaborate using annotations in SharePoint
+title: Comment and collaborate using annotations
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 03/18/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 description: Learn how to use universal annotations to mark and collaborate on items in SharePoint document libraries.
 ---
 
-# Comment and collaborate using annotations in SharePoint
+# Comment and collaborate using annotations
 
 
 :::row:::
    :::column span="":::
-      Use the annotations feature in Microsoft Syntex to add notes and comments to your content in document libraries—either for yourself or for collaborating with others. You can use the annotations feature without modifying the original files, so the original records are preserved.
+      Use the annotations feature to add notes and comments to your content in document libraries—either for yourself or for collaborating with others. You can use the annotations feature without modifying the original files, so the original records are preserved.
 
       Annotation tools currently include pen and highlighter, where can choose the colors you want to use, and an eraser for removing ink strokes and previous annotations.
    :::column-end:::
@@ -35,7 +35,7 @@ The feature is currently available for the following file types: .ai, .dwg, .epu
 More annotation tools and file types will be added in future releases.
 
 > [!NOTE]
-> This feature is available for users who have Microsoft Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
+> This feature is available for users who have [per-user](syntex-licensing.md#if-you-still-have-active-per-user-licenses) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## To use annotations
 
