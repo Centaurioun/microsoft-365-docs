@@ -90,7 +90,7 @@ The following tools are all still fully supported and don't have scheduled retir
 - [OneNote Class Notebooks LTI](https://onenote.com/LTI)
 - [Microsoft OneDrive LTI with Canvas](onedrive-lti.md)
 - [Microsoft OneDrive LTI with Blackboard](onedrive-lti-blackboard.md)
-- [Microsoft OneDrive LTI with Schoology Learning](onedrive-lti-schoology.md
+- [Microsoft OneDrive LTI with Schoology Learning](onedrive-lti-schoology.md)
 - [Microsoft OneDrive LTI with D2L Brightspace](onedrive-lti-brightspace.md)
 - [Microsoft Assignments integration with Canvas](teams-assignments-with-canvas.md)
 - [Microsoft Assignments integration with Moodle](teams-assignments-with-moodle.md)
