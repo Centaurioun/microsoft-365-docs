@@ -23,11 +23,13 @@ description: Learn how to manage contracts using a Microsoft 365 solution of doc
 
 This article describes how to create a contracts management solution for your organization by using document processing services and other components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even though this solution talks about contract management, you can adapt it to create other document management solutions, such as for statements of work or invoices.
 
+<!---
 </br>
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=04c084c9-5419-408a-9e6e-92d01bb3ddee]
 
 </br>
+--->
 
 ## Identify the business problem
 
@@ -43,7 +45,9 @@ The first step in planning your contract management system is to understand the 
 
 ## Overview of the solution
 
+<!---
   ![Diagram of the solution using document processing, SharePoint lists, Teams, and Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+--->
 
 This contract management solution guidance includes four components of Microsoft 365:
 
