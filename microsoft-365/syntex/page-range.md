@@ -1,10 +1,10 @@
 ---
-title: Extract information from specific pages for document processing in SharePoint
+title: Extract information from specific pages for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/19/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to specify a page range for extracting information from documents in a SharePoint document library.
 ---
 
-# Extract information from specific pages for document processing in SharePoint
+# Extract information from specific pages for document processing
 
 <sup>**Applies to:**  &ensp; &#10003; Structured and freeform models &ensp; | &ensp; &#10003; Contracts, Invoices, and Receipts prebuilt models</sup>
 
@@ -24,11 +24,6 @@ You can set a page range to specify which pages in a document you want to extrac
 
 > [!NOTE]
 > By default, the page range setting is empty. If no page range is provided, the entire document will be processed.
-
-<!---
-> [!NOTE]
-> This setting is not available for unstructured document processing models or sensitive information prebuilt models.
---->
 
 ## Set a page range when you train a prebuilt model
 
