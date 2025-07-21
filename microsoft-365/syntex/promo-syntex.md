@@ -1,10 +1,10 @@
 ---
-title: Try out pay-as-you-go services in Microsoft Syntex
+title: Try out pay-as-you-go services for document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris; jaeccles
-ms.date: 06/23/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -15,24 +15,24 @@ ms.custom:
 - Adopt
 search.appverid:
 ms.localizationpriority: medium
-description: Learn how to try Microsoft Syntex services during a limited offering.
+description: Learn how to try out document processing services in Microsoft 365 during a limited offering.
 ---
 
-# Try out pay-as-you-go services in Microsoft Syntex
+# Try out pay-as-you-go services for document processing
 
-Microsoft Syntex provides powerful content management and productivity services that let you do more with your documents. You can process, analyze, create, sign, manage, and enhance them with ease.
+Document processing for Microsoft 365 provides powerful content management and productivity services that let you do more with your documents. You can process, analyze, create, sign, manage, and enhance them with ease.
 
-Through December 2025, your organization can use [included monthly capacity](#included-monthly-capacity) for some of these services when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out Syntex capabilities, such as document processing, document tagging, and content assembly, to see how you can use them to streamline processes in your organization.
+Through December 2025, your organization can use [included monthly capacity](#included-monthly-capacity) for some of these services when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out document processing capabilities, such as autofill columns, document translation, electronic signatures, and optical character recognition, to see how you can use them to streamline processes in your organization.
 
 ## Get started
 
 If you want to try some of these services, here are the steps to follow:
 
-1. [Set up pay-as-you-go billing](syntex-azure-billing.md).
+1. [Set up pay-as-you-go billing](/microsoft-365/services/pay-as-you-go-setup).
 
-2. [Turn on the Syntex services you want to try](set-up-microsoft-syntex.md).
+2. [Turn on the document processing services you want to try](set-up-microsoft-syntex.md).
 
-3. [Start using the Syntex services](syntex-overview.md#document-and-image-services).
+3. [Start using the document processing services](syntex-overview.md#document-processing-services).
 
 ## Included monthly capacity
 
@@ -55,4 +55,4 @@ You'll get a limited amount of usage each month during the offering period. The 
 
 Monthly usage over the limitations will be billed as described in [Pay-as-you-go services and pricing](syntex-pay-as-you-go-services.md). This offering doesn't include capacity for Microsoft 365 Archive and Microsoft 365 Backup.
 
-For ideas about how you might use Syntex services in your organization, see [Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md) and [Get started driving adoption of Microsoft Syntex](adoption-getstarted.md).
+For ideas about how you might use document processing services in your organization, see [Scenarios and use cases for document processing for Microsoft 365](adoption-scenarios.md) and [Drive adoption of document processing for Microsoft 365](adoption-getstarted.md).
