@@ -193,6 +193,9 @@ To disable Loop components in Teams, run `Set-SPOTenant -IsLoopEnabled $false`. 
 
 ## Related topics
 
+### Admin
+
+- [Data Integrations Admin Settings](loop-data-integrations-configuration.md)
 - [Summary of Compliance, Lifecycle, Governance](loop-compliance-summary.md)
 - [Requirements](cpcn-loop-requirements.md)
 - [Storage](loop-storage.md)
@@ -200,6 +203,9 @@ To disable Loop components in Teams, run `Set-SPOTenant -IsLoopEnabled $false`. 
 - [UX examples for admin toggle states](loop-ux-examples.md)
 - [Managing SharePoint Embedded containers](cpcn-loop-spe-management.md)
 - [Purview and SharePoint Embedded containers](cpcn-loop-purview-management.md)
+
+### End-User Experience
+
 - [Overview of Loop components in Microsoft 365](loop-components-teams.md)
 - [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
 - [Use Loop components in OneNote](https://support.microsoft.com/office/use-loop-components-in-onenote-ed8a43d9-f6fd-4ad6-bc9d-8841db4da459)
