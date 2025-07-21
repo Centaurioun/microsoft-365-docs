@@ -24,6 +24,9 @@ Document processing for Microsoft 365 provides a powerful suite of AI-powered co
 
 By automating content workflows and enhancing document understanding, your everyday business content is turned into actionable knowledge. This advancement not only streamlines operations and reduces manual effort, but also empowers people in your organization to make faster, more informed decisions based on insights extracted from their content.
 
+> [!NOTE]
+> The pay-as-you-go services previously offered under Microsoft Syntex are now referred to as document processing services. The features and functionality of these services remain unchanged.
+
 <!---</br>
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=2d175508-cfa8-4258-b595-3af948bb7559] 
