@@ -20,13 +20,18 @@ description: Learn how to organize and automate columns in a document library in
 
 # Organize and automate columns in a SharePoint document library
 
-You can use the SharePoint Agent Librarian Skill to create richer, more powerful document libraries to manage your content.
+Use the SharePoint Agent Librarian Skill to create richer, more powerful document libraries to manage your content.
 
 Building on the autofill columns feature, this agent skill simplifies the process of configuring a document library and ensures consistent and accurate data capture. Recommended metadata columns enhance library-scoped agent chat and are also used to suggest rule-based flows that streamline business processes. This approach to automating document management keeps your SharePoint libraries organized, relevant, and up-to-date.
 
 ## Suggest and create columns
 
 To get suggested columns and metabase based on the content in your document library, follow these steps.
+
+[Launch the quick action](#launch-the-quick-action)
+[Use a suggested action](#use-a-suggested-action)
+[Enter a custom action](#enter-a-custom-action)
+[Save your changes](#save-your-changes)
 
 ### Launch the quick action
 
