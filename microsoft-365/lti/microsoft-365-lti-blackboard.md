@@ -42,7 +42,7 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 1. In the **Client ID** field, type or copy and paste this ID: **7aaa046f-50d4-4dc3-aac5-ac22e6d4339e**
 
-1. Review the prepopulated settings and make sure the **Tool Status** is **Approved** and everything is enabled in the Institution Polices section:
+1. Review the prepopulated settings and make sure the **Tool Status** is **Approved** and everything is enabled in the Institution Policies section:
 
     :::image type="content" source="./media/blackboard-institution-policies.png" alt-text="Screenshot of Blackboard institution policies." border="true":::
 
