@@ -1,17 +1,16 @@
 ---
 title: Microsoft 365 Copilot pay-as-you-go overview
 description: Enterprise and company IT admins can learn about the pay-as-you-go service for Microsoft 365 Copilot services, including Copilot Chat. Get an overview of the consumption-based billing process, connecting the billing to a Copilot service, and monitoring costs.
-ms.author: camillepack
-author: camillepack
-manager: scotv
-ms.date: 04/22/2025
+author: cmcatee-MSFT
+ms.author: cmcatee
+manager: dansimp
+ms.date: 06/16/2025
 ms.reviewer: nishanair
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
-- scotvorg
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
@@ -33,6 +32,7 @@ The Microsoft 365 Copilot pay-as-you-go plan offers a flexible and scalable solu
 The following services are available for pay-as-you-go billing:
 
 - Microsoft 365 Copilot Chat
+- SharePoint agents
 
 More services will be added in the future. No ETA.
 
@@ -48,6 +48,8 @@ The pay-as-you-go plan allows administrators to set up billing and enable users 
 The following administrator roles in the [Microsoft 365 admin center](https://admin.microsoft.com) can view and manage pay-as-you-go:
 
 - Global administrator
+- Billing administrator
+
 - AI administrator
 - Global reader (read-only access)
 
@@ -77,7 +79,7 @@ For the steps to add or update a billing policy, see [Set up pay-as-you-go for M
 
 ### Connect billing policy to Copilot services
 
-After you create a billing policy, the admin must link it to a Copilot service, such as Microsoft 365 Copilot Chat. This connection enables all users covered by the billing policy to access the Copilot service.  
+After you create a billing policy, the admin must link it to a Copilot service, such as Microsoft 365 Copilot Chat or SharePoint agents. This connection enables all users covered by the billing policy to access the Copilot service.  
 
 Admins can disconnect a billing policy when it's no longer needed for the service. Upon disconnection, users linked to that billing policy lose access to the metered agents in the Copilot service.  
 

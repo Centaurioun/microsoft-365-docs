@@ -1,11 +1,11 @@
 ---
-title: Privacy, security, and compliance in Microsoft Syntex
+title: Privacy, security, and compliance in document processing for Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 01/14/2025
+ms.date: 08/01/2025
 ms.topic: article
 ms.service: microsoft-syntex
 search.appverid: 
@@ -15,14 +15,14 @@ ms.collection:
     - essentials-security
     - essentials-compliance
 ms.localizationpriority:  medium
-description: Learn about privacy, security, and compliance in Microsoft Syntex.
+description: Learn about privacy, security, and compliance in document processing for Microsoft 365.
 ---
 
-# Privacy, security, and compliance in Microsoft Syntex
+# Privacy, security, and compliance in document processing for Microsoft 365
 
-Microsoft is transparent about the specific policies, operational practices, and technologies that help you ensure the privacy, security, and compliance of your data across Microsoft Syntex.
+Microsoft is transparent about the specific policies, operational practices, and technologies that help you ensure the privacy, security, and compliance of your data across document processing pay-as-you-go services.
 
-- Microsoft respects the privacy and ownership of data you use to train and process models in Microsoft Syntex.
+- Microsoft respects the privacy and ownership of data you use to train and process document processing models.
 
 - None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models.
 
@@ -30,29 +30,29 @@ Microsoft is transparent about the specific policies, operational practices, and
 
 ## Privacy
 
-Privacy is built into all Microsoft Syntex experiences. Microsoft Syntex services adhere to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and follow Microsoft's compliance with [General Data Protection Regulation](/compliance/regulatory/gdpr) and the [Microsoft EU Data Boundary](https://www.microsoft.com/trust-center/privacy/european-data-boundary-eudb).
+Privacy is built into all document processing experiences. Pay-as-you-go services adhere to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and follow Microsoft's compliance with [General Data Protection Regulation](/compliance/regulatory/gdpr) and the [Microsoft EU Data Boundary](https://www.microsoft.com/trust-center/privacy/european-data-boundary-eudb).
 
-Microsoft Syntex inherits privacy features and settings from Microsoft 365 and SharePoint, where applicable.
+Document processing services inherit privacy features and settings from Microsoft 365 and SharePoint, where applicable.
 
 ### GDPR compliance
 
-Microsoft Syntex supports compliance with [General Data Protection Regulation](/compliance/regulatory/gdpr) (GDPR) requirements.
+Document processing services support compliance with [General Data Protection Regulation](/compliance/regulatory/gdpr) (GDPR) requirements.
 
 ### Data residency
 
-Data residency refers to the geographic location where data is stored at rest. The way that data is transferred and stored in Microsoft Syntex is defined in the [Microsoft Products and Services Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) (DPA).
+Data residency refers to the geographic location where data is stored at rest. The way that data is transferred and stored for document processing services is defined in the [Microsoft Products and Services Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) (DPA).
 
-All data within Microsoft Syntex is stored within the customer tenant for any given service and follows the standard Microsoft 365 data storage guidelines by available geography.
+All data within document processing services is stored within the customer tenant for any given service and follows the standard Microsoft 365 data storage guidelines by available geography.
 
 ## Security
 
-Microsoft Syntex works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such role-based access, identity and app management, and others—apply to Microsoft Syntex.
+Document processing services works with and integrates into Microsoft 365. This means that the Microsoft 365 security capabilities—such role-based access, identity and app management, and others—apply to the services.
 
 ## Compliance
 
 Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
 
-Microsoft Syntex is also covered under the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms) and [Data Protection Agreement](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?year=2021#:%7E:text=Microsoft%20Products%20and%20Services%20Data%20Protection%20Addendum%20%28DPA%29,to%20the%20Product%20Terms%20site%20%28and%20formerly%20OST%29) (DPA). Learn more on the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+Document processing services are also covered under the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms) and [Data Protection Agreement](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?year=2021#:%7E:text=Microsoft%20Products%20and%20Services%20Data%20Protection%20Addendum%20%28DPA%29,to%20the%20Product%20Terms%20site%20%28and%20formerly%20OST%29) (DPA). Learn more on the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
 
 For more detailed information, see the following resources:
 

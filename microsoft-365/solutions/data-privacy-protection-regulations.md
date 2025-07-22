@@ -1,5 +1,5 @@
 ---
-title: "Stay on track with data privacy regulations – Microsoft Priva and Purview"
+title: "Stay on track with data privacy regulations – Microsoft Priva and Microsoft Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:

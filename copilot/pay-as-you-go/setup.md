@@ -1,17 +1,16 @@
 ---
 title: Set up Microsoft 365 Copilot pay-as-you-go for IT admins
 description: Enterprise and company IT administrators can use the Microsoft 365 admin center to set up the Microsoft 365 Copilot pay-as-you-go feature. Get step-by-step instructions on setting up a billing policy, connecting the billing policy to the pay-as-you-go Copilot service, and removing pay-as-you-go.
-ms.author: camillepack
-author: camillepack
-manager: scotv
-ms.date: 04/22/2025
+author: cmcatee-MSFT
+ms.author: cmcatee
+manager: dansimp
+ms.date: 06/16/2025
 ms.reviewer: nishanair
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
-- scotvorg
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
@@ -29,6 +28,7 @@ You can set up the pay-as-you-go plan directly in the Microsoft 365 admin center
 This article applies to:
 
 - Microsoft 365 Copilot Chat
+- SharePoint agents
 
 ## Prerequisites
 
@@ -64,17 +64,17 @@ The first step is to add a billing policy.
 After the billing policy is created, the next step is to connect the policy to the Copilot pay-as-you-go service.
 
 1. In the admin center, go to the **Pay-as-you-go services** tab.
-2. Select **Microsoft 365 Copilot Chat** and select the billing policy you created.
+2. Select **Microsoft 365 Copilot Chat** or **SharePoint agents** and select the billing policy you created. To learn more about how to set up a billing policy for SharePoint agents, see [Use agents with pay-as-you-go billing](/sharepoint/sharepoint-agents-azure-billing).
 
 ## Disable pay-as-you-go
 
-Disabling pay-as-you-go for a Copilot service involves disconnecting the billing policies associated with the service, like Microsoft 365 Copilot Chat.
+Disabling pay-as-you-go for a Copilot service involves disconnecting the billing policies associated with the service, like Microsoft 365 Copilot Chat or SharePoint agent.
 
-1. In the admin center, go to the **Pay-as-you-go services** tab, and select the Copilot service, like Microsoft 365 Copilot Chat.
+1. In the admin center, go to the **Pay-as-you-go services** tab, and select the Copilot service, like Microsoft 365 Copilot Chat or SharePoint agent.
 2. Unselect the billing policy, one at a time to disconnect the billing policy.
 3. Read and accept the confirmation. This step completes the disconnection.
 
-When you turn off pay-as-you-go, it can take up to two hours for users to stop being able to use the agents. If the agent hasn't been used, then it stops being available when pay-as-you-go is turned off.
+When you turn off pay-as-you-go, it can take up to two hours for users to stop being able to use the agents. If the agent is unused, it stops being available when pay-as-you-go is turned off.
 
 ## Delete a billing policy
 

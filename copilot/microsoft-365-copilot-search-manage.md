@@ -1,5 +1,5 @@
 ---  
-title: "Manage Copilot Search"  
+title: "Manage Microsoft 365 Copilot Search"  
 author: kwekuako
 ms.author: kwekua  
 manager: dansimp
@@ -21,14 +21,20 @@ No action is required by admins to set up Microsoft 365 Copilot Search. If a use
 
 Learn more about [setting up Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-setup) for your users.
 
+For more details on how to manage, customize, and optimize Copilot Search across your organization, learn about the [Microsoft 365 Copilot Search admin experience](/copilot/microsoft-365/microsoft-365-copilot-search-admin-experience).
+
 > [!NOTE]
 > Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release in Q3 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
 
 ## Copilot Search and third-party systems
 
-Copilot Search can access data in third-party systems as well as Microsoft 365 apps and other systems in the Microsoft Graph. This is achieved through Microsoft 365 Copilot connectors, which allow organizations to ingest data from external platforms like Salesforce, ServiceNow, Confluence, and more. 
+Copilot Search can access data in third-party systems as well as Microsoft 365 apps and other systems in the Microsoft Graph. This is achieved through Microsoft 365 Copilot connectors, which allow organizations to ingest data from external platforms like Salesforce, ServiceNow, Confluence, and more.
 
 Learn more about [Microsoft 365 Copilot connectors](/microsoft-365-copilot/extensibility/overview-copilot-connector).
+
+## Privacy and security
+
+Microsoft 365 Copilot Search adheres to the same data protection, privacy standards, and security configurations as Microsoft 365 Copilot. Learn more about [data, privacy, and security in Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-privacy).
 
 ## Microsoft 365 Copilot extension
 

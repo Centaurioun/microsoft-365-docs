@@ -1,11 +1,11 @@
 ---
-title: Overview of content assembly in SharePoint
+title: Overview of content assembly
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 02/06/2025
+ms.date: 08/01/2025
 ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -17,10 +17,10 @@ ms.localizationpriority:  medium
 description: Learn about how to create documents and other content using a modern template in SharePoint.
 ---
 
-# Overview of content assembly in SharePoint
+# Overview of content assembly
 
 > [!NOTE]
-> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of content assembly and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
+> Through December 2025, you can try out a [limited amount](promo-syntex.md#included-monthly-capacity) of content assembly and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
 Content assembly lets you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all these actions quicker, more consistently, and with fewer errors by creating modern templates and using those templates to generate documents.
 
@@ -29,7 +29,7 @@ Content assembly lets you automatically generate standard repetitive business do
 You upload an existing document to create a modern template, and then use that template to automatically generate new content using SharePoint lists or manual entries as a data source.
 
 > [!NOTE]
-> You must be a licensed Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
+> You must have pay-as-you-go billing set up to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
 
 ## Requirements and limitations
 
@@ -52,7 +52,7 @@ You upload an existing document to create a modern template, and then use that t
 
 |Feature  |Modern templates  |Other templates  |
 |---------|---------|---------|
-|Licensing		|Syntex license needed to access this offering.  |Offered as a part of Microsoft E3 or E5 license.  |
+|Licensing		|Pay-as-you-go license needed to access this offering.  |Offered as a part of Microsoft E3 or E5 license.  |
 |When to use each		     | You should use for generating standard transactional documents such as service agreements and statements of work when only specific parts of the document changes. Documents generated from modern templates ensure consistency and fewer chances of manual error and typos that occur when users change sections of the document in free flow.  |You should use this method when you want to set a document as a sample for other users to refer. You can consider using regular templates for non-transactional documents such as sales pitches or executive summaries.  |
 |Standardizing content generation |You can add fields and then associate with various data sources for only specific sections of the content to make it easy for users to generate documents once template is published.  |Once uploaded, the file is kept as-is in the template. Any user using the template have to change the content accordingly.   |
 |Data sources supported		|You can associate fields with SharePoint lists and term store while creating templates.   |Not applicable   |

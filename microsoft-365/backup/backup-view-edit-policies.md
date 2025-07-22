@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 05/19/2025
+ms.date: 06/16/2025
 ms.topic: article
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -32,6 +32,12 @@ You can create more than one backup policy for each product (SharePoint, Exchang
 > 2. Scroll to the **Example request** section and select the **PowerShell** tab.
 > 3. Install the Microsoft.Graph.BackupRestore module as shown in the example.
 > 4. Run the provided PowerShell command in an Admin PowerShell session to execute the desired action.
+
+</br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2cdeb3f7-2565-414c-9afe-e2deb5dc77c2]
+
+</br>
 
 Select the **SharePoint**, **Exchange**, or **OneDrive** tab for steps to create a backup policy for that product.
 
@@ -113,7 +119,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     The CSV upload feature for bulk addition of mailboxes in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
-    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
+    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With [dynamic rules](#dynamic-rules), any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
 
     For example, if a user is added to a distribution list included in the dynamic rule, that user is included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they're removed from the backup policy within 24 hours. The user's existing backups remain restorable until they expire based on their retention period. However, new backups aren't taken until the user is re-added to the included distribution list or manually re-added through a static addition.
 
@@ -170,7 +176,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
-    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With dynamic rules, any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
+    b. Under **Using a dynamic rule**, you can select **Distribution lists** or **Security groups**, or both. With [dynamic rules](#dynamic-rules), any changes to membership in the selected distribution lists and security groups are automatically reevaluated daily, ensuring the backup policy reflects those membership changes regularly.
 
     For example, if a user is added to a distribution list included in the dynamic rule, that user is included in the backup policy within a day. After that, Microsoft 365 Backup will create restore points for that user. If a user that was previously in the included distribution list is removed from that list, then they're removed from the backup policy within 24 hours. The user's existing backups remain restorable until they expire based on their retention period. However, new backups aren't taken until the user is re-added to the included distribution list or manually re-added through a static addition.
 
@@ -302,7 +308,7 @@ Follow these steps to view and edit backup policies for OneDrive.
 
 ---
 
-## Rename a Policy
+## Rename a policy
 
 - To rename an existing policy, on the **Backup policies** tab, select the specific policy from the list of policies.
 
@@ -312,7 +318,20 @@ Follow these steps to view and edit backup policies for OneDrive.
 
 - Select **Rename** and the new policy name takes effect instantly.
 
-## Delete a dynamic rule
+## Dynamic rules
+
+Dynamic rules in Microsoft 365 Archive allow administrators to define backup policies based on distribution lists and security group memberships—eliminating the need for manual updates when group memberships change.
+
+</br>
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7604db2b-5099-4b87-b94d-d36436b3ac18]
+
+</br>
+
+> [!NOTE]
+> The dynamic rule feature is in preview.
+
+### Delete a dynamic rule
 
 When deleting a dynamic rule, you have two options that determine how existing accounts are treated in the backup policy.
 
