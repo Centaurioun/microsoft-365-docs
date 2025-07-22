@@ -79,7 +79,7 @@ There are a couple of reasons that calendar sharing enablement might not work as
 
 1. "Failed to edit or create an organization relationship with [tenant]. Please try again later"
 
-   1. This error typically only requires a refresh after some time. If error persists, review the setting in [Exchange Online](https://admin.exchange.microsoft.com/#/organizationsharing) to see if there is an existing organization relationship with this tenant.
+   1. This error typically only requires a refresh after some time. If error persists, review the setting in [Exchange Online](https://admin.exchange.microsoft.com/#/organizationsharing) to see if there's an existing organization relationship with this tenant.
    
 1. "Failed to get all domain names for [tenant]. This is an issue with how [tenant] has their primary domain name configured."
 
@@ -87,7 +87,7 @@ There are a couple of reasons that calendar sharing enablement might not work as
    
 1. "Failed to create a new organization relationship with [tenant]. This could be due to a duplicate organization relationship." 
 
-   1. Review existing organization relationships in [Exchange Online](https://admin.exchange.microsoft.com/#/organizationsharing) to see if one already exists with this tenant. If organization relationship already exists with [tenant], review settings to ensure it is set up as desired.
+   1. Review existing organization relationships in [Exchange Online](https://admin.exchange.microsoft.com/#/organizationsharing) to see if one already exists with this tenant. If organization relationship already exists with [tenant], review settings to ensure it's set up as desired.
    
 ## Set up MTO user labels in Teams for tenants in your MTO
 
@@ -117,7 +117,7 @@ To manage MTO user labels for tenants in your MTO:
 
    1. No label.
    1. Use the multitenant organization name for all tenants.
-   1. Custom (assign a label for each tenant, which cannot be blank).
+   1. Custom (assign a label for each tenant, which can't be blank).
    
 1. Select **Save changes**.
 
@@ -174,7 +174,7 @@ This permission is required to gather details regarding the multitenant organiza
 
 If a tenant has enabled external tags in Outlook to help users identify content from external tenants, MTO group admins can now choose to suppress these tags for members of the multitenant organization. This setting allows for a more seamless collaboration experience and admins can enable this setting in the MAC MTO portal. 
 
-![Suppress Outlook external tag for MTO members](media/manage-multitenant-org-settings/edit-external-tag-setting.png)
+![Screenshot that shows suppression of Outlook external tag for MTO members.](media/manage-multitenant-org-settings/edit-external-tag-setting.png)
 
-If the tenant hasn't enabled external tags in Outlook, checking the **External tag suppression** option will automatically create a remote domain for the partner tenant and mark it as internal (i.e., IsInternal = true), but it won't have effect in end user experience.  In this case, external tags are not displayed to members in MTO. 
+If the tenant hasn't enabled external tags in Outlook, checking the **External tag suppression** option will automatically create a remote domain for the partner tenant and mark it as internal (i.e., IsInternal = true), but it won't have effect in end user experience.  In this case, external tags aren't displayed to members in MTO. 
 
