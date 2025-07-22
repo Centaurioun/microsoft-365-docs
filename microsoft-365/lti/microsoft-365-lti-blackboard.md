@@ -42,7 +42,7 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 1. In the **Client ID** field, type or copy and paste this ID: **7aaa046f-50d4-4dc3-aac5-ac22e6d4339e**
 
-1. Review the prepopulated settings and make sure the **Tool Status** is **Approved** and everything is enabled in the Institution Polices section:
+1. Review the prepopulated settings and make sure the **Tool Status** is **Approved** and everything is enabled in the Institution Policies section:
 
     :::image type="content" source="./media/blackboard-institution-policies.png" alt-text="Screenshot of Blackboard institution policies." border="true":::
 
@@ -65,8 +65,7 @@ You must launch the app for the first time as a user with the **Blackboard Syste
     :::image type="content" source="./media/blackboard-tools.png" alt-text="Screenshot of Blackboard tools and utilities." border="true":::
     :::image type="content" source="./media/blackboard-admin-settings.png" alt-text="Screenshot of Blackboard admin settings." border="true":::
 
-1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
-<!-- -->
+1. Continue with the [**Microsoft 365 LTI first-time configuration steps**](microsoft-365-lti-first-time-configuration.md) to complete the configuration for your organization.
 
 ## Ongoing use by instructors and students in a course
 
@@ -89,6 +88,6 @@ If you receive an error message regarding cookies being blocked, check your brow
 
 - Educators and Learners can contact support or give feedback directly from the app through the help and feedback menu.
 
-:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI ." border="true":::
+:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI." border="true":::
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. (**[**1edtech.org**](https://1edtech.org)**)
