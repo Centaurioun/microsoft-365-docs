@@ -28,13 +28,9 @@ Building on the autofill columns feature, this agent skill simplifies the proces
 
 To get suggested columns and metabase based on the content in your document library, follow these steps.
 
-[Launch the quick action](#launch-the-quick-action)
-
-[Use a suggested action](#use-a-suggested-action)
-
-[Enter a custom action](#enter-a-custom-action)
-
-[Save your changes](#save-your-changes)
+1. [Launch the quick action](#launch-the-quick-action).
+2. [Use a suggested action](#use-a-suggested-action) or [enter a custom action](#enter-a-custom-action).
+3. [Save your changes](#save-your-changes).
 
 ### Launch the quick action
 
