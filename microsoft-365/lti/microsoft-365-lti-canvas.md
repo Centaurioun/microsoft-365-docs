@@ -19,13 +19,14 @@ ms.localizationpriority: medium
 
 This guide provides steps for deploying the Microsoft 365 Learning Tool Interoperability® (LTI) app in Canvas.
 
+:::image type="content" source="./media/canvas.png" alt-text="Screenshot of Canvas." border="true":::
+
 For an overview of the Microsoft 365 LTI integration for learning management systems (LMS), see [Integrating Microsoft products with your Learning Management System](/microsoft-365/lti/).
 
 > [!IMPORTANT]
 > The person who deploys this integration should be an Administrator role in the LMS. A person in your organization who is a Microsoft 365 Global Administrator is also needed to help complete the configuration of the app before first time use.
 
-> [!IMPORTANT]
-> By installing and using the Microsoft 365 LTI app, educators and students can transmit grades to the LMS where the terms of use and privacy policy of that application apply.
+By installing and using the Microsoft 365 LTI app, educators and students can transmit grades to the LMS where the terms of use and privacy policy of that application apply.
 
 ## LMS requirements for the integration
 
@@ -47,11 +48,11 @@ Canvas supports multiple tool deployment for the same tool through two different
 
 1. In the apps list, search for **Microsoft Education.** If the ***Nothing Here Yet*** message is displayed after typing your search, select the **Show All Keys** button.
 
-1. There are two Developer Keys for Microsoft education:
-    - **Microsoft Education**
-    - **Microsoft Education (course nav disabled)**
-
-    Decide which version of the app you would like to deploy and toggle the **State** switch to **On,** and then select the **Switch to On** button in the pop up to confirm. You'll need to know the Client ID listed in the Details column for the developer key you chose to enable in a later step.
+1. There are three Developer Keys for the Microsoft Education API app: two LTI keys and one API key.
+    :::image type="content" source="./media/canvas-developer-keys.png" alt-text="Screenshot of developer keys." border="true":::
+    1. Enable the API key **170000000001941** by toggling the **State** switch to **On** and then selecting the **Switch to On** button in the pop up to confirm.
+    1. Decide which version of the LTI key you would like to deploy and toggle the **State** switch to **On** and then select the **Switch to On** button in the pop up to confirm. You will need to know which Client ID listed in the Details column for the developer key you chose to enable for a later step.
+  
     > [!NOTE]
     > The apps are identical. However the "(Course Nav Disabled)" app has the course navigation placement disabled by default, which might be useful for testing but is less discoverable by instructors since they must locate and enable it in their course menu to leverage the apps and make visible to their students. If you decide to change this default after testing, you can disable the version you have chosen currently, and repeat these instructions for the other app. We strongly recommend using the first key with course nav enabled to help with discoverability and to drive awareness with your instructors.
 
@@ -98,8 +99,7 @@ You must launch the app for the first time as a user with the **Canvas Administr
 
     :::image type="content" source="./media/microsoft-education-navigation.png" alt-text="Screenshot of Microsoft Education in the navigation pane." border="true":::
 
-1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
-<!-- -->
+1. Continue with the [**Microsoft 365 LTI first-time configuration steps**](microsoft-365-lti-first-time-configuration.md) to complete the configuration for your organization.
 
 The Microsoft Education app is now deployed, configured, and ready to use in your Canvas courses!
 
@@ -110,7 +110,7 @@ On first access, users must sign in using their Microsoft 365 (Microsoft Entra) 
 Learn more about Microsoft 365 LTI application scenarios for Instructors and Students.
 <!-- -->
 
-## **Browser settings**
+## Browser settings
 
 - Cookies should be allowed for Microsoft apps.
 
@@ -118,12 +118,12 @@ Learn more about Microsoft 365 LTI application scenarios for Instructors and Stu
 
 If you receive an error message regarding cookies being blocked, check your browser's address bar for an icon to allow third-party cookies and popups. If this issue persists, review your settings related to cookies and popups to make sure they're allowed for this app.
 
-## **Getting help for admins and educators**
+## Getting help and giving feedback
 
 - LMS and Microsoft 365 admins can contact Microsoft [Education Support](https://aka.ms/edusupport) to help resolve configuration and deployment issues, for themselves or on behalf of users.
 
 - Educators and Learners can contact support or give feedback directly from the app through the help and feedback menu.
 
-:::image type="content" source="./media/feedback.png" alt-text="Screenshot of link to send feedback for Microsoft Teams Assignments." border="true":::
+:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI." border="true":::
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. (**[**1edtech.org**](https://1edtech.org)**).
