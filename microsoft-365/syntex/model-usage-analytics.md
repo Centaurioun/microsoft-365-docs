@@ -20,11 +20,13 @@ description: Learn how to find more information about how your document processi
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
+<!---
 </br>
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=3ce39756-8da7-4cdd-a2e3-a7a4104648da]  
 
 </br>
+--->
 
 Your content center provides you model usage analytics to provide more information about how your models that have been published from the content center are being used. The **How your models are performing in the last 30 days** section of the content center includes a 30 day roll-up of usage analytics data provided in the following charts and lists:
 
