@@ -61,8 +61,8 @@ The **Payment methods** page lists the payment methods associated with your acco
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-  -  you're using the **Simplified view**, select **Products**, then select **View payment methods**.
-  - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
+   - If you're using the **Simplified view**, select **Products**, then select **View payment methods**.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 
 2. If you have more than one billing account, under **Billing account view**, select **Change billing account** to view payment methods associated with each billing account.
 
