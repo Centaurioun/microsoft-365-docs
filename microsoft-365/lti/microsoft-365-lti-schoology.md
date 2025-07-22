@@ -60,8 +60,8 @@ You must launch the app for the first time as a user with the **System Admin** r
 
 1. As a System Admin, access any Course that has the Microsoft Education link added
 
-1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
-<!-- -->
+1. Continue with the [**Microsoft 365 LTI first-time configuration steps**](microsoft-365-lti-first-time-configuration.md) to complete the configuration for your organization.
+
 ## Ongoing use by instructors and students in a course
 
 On first access, users must sign in using their Microsoft 365 (Microsoft Entra) account.

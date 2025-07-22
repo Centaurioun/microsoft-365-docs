@@ -99,8 +99,7 @@ You must launch the app for the first time as a user with the **Canvas Administr
 
     :::image type="content" source="./media/microsoft-education-navigation.png" alt-text="Screenshot of Microsoft Education in the navigation pane." border="true":::
 
-1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
-<!-- -->
+1. Continue with the [**Microsoft 365 LTI first-time configuration steps**](microsoft-365-lti-first-time-configuration.md) to complete the configuration for your organization.
 
 The Microsoft Education app is now deployed, configured, and ready to use in your Canvas courses!
 

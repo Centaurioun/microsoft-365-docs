@@ -65,8 +65,7 @@ You must launch the app for the first time as a user with the **Blackboard Syste
     :::image type="content" source="./media/blackboard-tools.png" alt-text="Screenshot of Blackboard tools and utilities." border="true":::
     :::image type="content" source="./media/blackboard-admin-settings.png" alt-text="Screenshot of Blackboard admin settings." border="true":::
 
-1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
-<!-- -->
+1. Continue with the [**Microsoft 365 LTI first-time configuration steps**](microsoft-365-lti-first-time-configuration.md) to complete the configuration for your organization.
 
 ## Ongoing use by instructors and students in a course
 
