@@ -153,7 +153,7 @@ The Teams Assignments LTI® tool implements several launches that can be leverag
 
 In the following list, select the feature/launches available to view their expected behaviors. Not every platform has to implement every launch.
 
-
+&nbsp;&nbsp;
 <details>
 
 <summary>Microsoft 365 Navigation
@@ -218,7 +218,7 @@ launchType = link-selection
 **Tool Response:**  
 DeepLinkResponse with launch url
 
-LtiLinkItem contentItem = new LtiLinkItem  
+<!-- LtiLinkItem contentItem = new LtiLinkItem  
 {  
 &nbsp;&nbsp;Title = \<Name>,  
 &nbsp;&nbsp;Url = \<Url>,  
@@ -241,7 +241,8 @@ LtiLinkItem contentItem = new LtiLinkItem
 &nbsp;&nbsp;&nbsp;&nbsp;"sharedItemId", \<ItemId> // guid  
 &nbsp;&nbsp;},  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};
-
+-->
+```
 LtiLinkItem contentItem = new LtiLinkItem
             {
                 Title = <Name>,
@@ -253,6 +254,7 @@ LtiLinkItem contentItem = new LtiLinkItem
 "sharedItemId", <ItemId> // guid
 },
             };
+```
 
 **Advantage Service Calls:**  
 N/A
@@ -267,7 +269,7 @@ All File Types allowed
 </details>
 
 <details>
-<summary>Link + embed OneDrive Files</summary>
+<summary>Link and embed OneDrive Files</summary>
 
 **Feature/Launch:**  
 Link + embed OneDrive Files
@@ -287,6 +289,20 @@ launchType = shared-item
 **Tool Response:**  
 DeepLinkResponse with launch url
 
+```
+LtiLinkItem contentItem = new LtiLinkItem
+            {
+                Title = <Name>,
+                Url = <Url>,
+                Custom = {
+"LtiUserId", <LtiUserId>,
+"Type", <type>, // Link/Embed
+                    "ltiContextId", <ContextId>
+"sharedItemId", <ItemId> // guid
+},
+            };
+```
+<!--
 LtiLinkItem contentItem = new LtiLinkItem  
 {  
 &nbsp;&nbsp;Title = \<Name>,  
@@ -298,7 +314,7 @@ LtiLinkItem contentItem = new LtiLinkItem
 &nbsp;&nbsp;&nbsp;&nbsp;"sharedItemId", \<ItemId> // guid  
 &nbsp;&nbsp;}  
 };
-
+-->
 **Advantage Service Calls:**  
 N/A
 
@@ -367,7 +383,23 @@ launchType=assignments
 **Tool Response:**  
 DeepLink Response with launch url
 
-LtiLinkItem contentItem = new LtiLinkItem  
+```
+LtiLinkItem contentItem = new LtiLinkItem
+            {
+                Title = <Name>,
+                Url = <Url>,
+                Custom = {
+"LtiUserId":<LtiUserId>,
+"Type":<type>, // Link/Embed
+                    "ltiContextId":<ContextId>
+"sharedItemId":<ItemId> // guid,
+"launchType":"assignments",
+"icon: " : <iconurl>
+},
+            };
+```
+
+<!-- LtiLinkItem contentItem = new LtiLinkItem  
 {  
 &nbsp;&nbsp;Title = \<Name>,  
 &nbsp;&nbsp;Url = \<Url>,  
@@ -380,7 +412,7 @@ LtiLinkItem contentItem = new LtiLinkItem
 &nbsp;&nbsp;&nbsp;&nbsp;"icon: " : \<iconurl>  
 &nbsp;&nbsp;}  
 };
-
+-->
 **Advantage Service Calls:**  
 N/A
 
@@ -419,12 +451,13 @@ Render the assignment
 **Advantage Service Calls:**  
 N/A
 
-**Additional Details:**  
+**Additional Details:**
+
 - Custom parameters set by the deep link request must be sent in the corresponding resource link launch.  
 - The launch should have a AssignmentGradeService LineItemUrl  
 - In canvas the two custom claims are  
-&nbsp;&nbsp;"AllowedAttempts": "$Canvas.assignment.allowedAttempts",  
-&nbsp;&nbsp;"StudentAttempts": "$Canvas.assignment.submission.studentAttempts"
+  - "AllowedAttempts": "$Canvas.assignment.allowedAttempts",  
+  - "StudentAttempts": "$Canvas.assignment.submission.studentAttempts"
 
 **Allowed file type:**  
 PPTX, XLSX, DOCX
@@ -454,7 +487,22 @@ launchType=courseAssignments
 **Tool Response:**  
 DeepLink Response with launch url
 
-LtiLinkItem contentItem = new LtiLinkItem  
+```LtiLinkItem contentItem = new LtiLinkItem
+            {
+                Title = <Name>,
+                Url = <Url>,
+                Custom = {
+"LtiUserId":<LtiUserId>,
+"Type":<type>, // Link/Embed
+                    "ltiContextId":<ContextId>
+"sharedItemId":<ItemId> // guid,
+"launchType":"assignments",
+"icon: " : <iconurl>
+},
+            };
+```
+
+<!-- LtiLinkItem contentItem = new LtiLinkItem  
 {  
 &nbsp;&nbsp;Title = \<Name>,  
 &nbsp;&nbsp;Url = \<Url>,  
@@ -467,7 +515,7 @@ LtiLinkItem contentItem = new LtiLinkItem
 &nbsp;&nbsp;&nbsp;&nbsp;"icon: " : \<iconurl>  
 &nbsp;&nbsp;}  
 };
-
+-->
 **Advantage Service Calls:**  
 
 **Additional Details:**  
@@ -504,11 +552,12 @@ Render the assignment
 N/A
 
 **Additional Details:**  
+
 - Custom parameters set by the deep link request must be sent in the corresponding resource link launch.  
 - The launch should have a AssignmentGradeService LineItemUrl  
 - In canvas the two custom claims are  
-&nbsp;&nbsp;"AllowedAttempts": "$Canvas.assignment.allowedAttempts",  
-&nbsp;&nbsp;"StudentAttempts": "$Canvas.assignment.submission.studentAttempts"
+  - "AllowedAttempts": "$Canvas.assignment.allowedAttempts",  
+  -"StudentAttempts": "$Canvas.assignment.submission.studentAttempts"
 
 **Allowed file type:**  
 PPTX, XLSX, DOCX
@@ -540,6 +589,35 @@ Call is from within the OneDrive UX.
 **Advantage Service Calls:**  
 AGS Call to upload the score.
 
+```dotnetcli
+LtiContentItem[] contentItems = new[]
+                {
+                    new LtiContentItem
+                    {
+                        Url = driveItemWithDownloadUrl.DownloadUrl,
+                        Title = driveItemWithDownloadUrl.Name,
+                        Text = driveItemWithDownloadUrl.Name,
+                        Type = "file",
+                    },
+                };
+                LtiSubmission ltiSubmission = new LtiSubmission
+                {
+                    SubmittedAt = DateTime.UtcNow,
+                    ContentItems = contentItems,
+                };
+
+                var score = new LtiScore
+                {
+                    UserId = ltiUser.LtiUserId,
+                    ActivityProgress = ActivityProgress.Completed,
+                    GradingProgress = GradingProgess.PendingManual,
+                    TimeStamp = DateTime.UtcNow,
+                    Submission = ltiSubmission,
+                };
+
+Post Call - <LineItemUrl>/Scores
+```
+<!--
 LtiContentItem[] contentItems = new[]  
 {  
 &nbsp;&nbsp;new LtiContentItem  
@@ -566,7 +644,7 @@ var score = new LtiScore
 };  
 
 Post Call - \<LineItemUrl>/Scores
-
+-->
 **Additional Details:**  
 
 **Allowed file type:**  
@@ -597,7 +675,21 @@ launchType=assignments
 **Tool Response:**  
 DeepLink response
 
-LtiFileItem contentItem = new LtiFileItem  
+```dotnetcli
+LtiFileItem contentItem = new LtiFileItem
+            {
+                Title = <name>,
+                Url = driveItem.DownloadUrl,
+                CopyAdvice = true,
+                Text = <filename>,
+                Custom = new Dictionary<string, string>
+                {
+                    { "LtiUserId", sharedItem.LtiUserId },
+                    { "Type", sharedItem.ItemType },
+                },
+            };
+```
+<!-- LtiFileItem contentItem = new LtiFileItem  
 {  
 &nbsp;&nbsp;Title = \<name>,  
 &nbsp;&nbsp;Url = driveItem.DownloadUrl,  
@@ -609,7 +701,7 @@ LtiFileItem contentItem = new LtiFileItem
 &nbsp;&nbsp;&nbsp;&nbsp;{ "Type", sharedItem.ItemType },  
 &nbsp;&nbsp;}  
 };
-
+-->
 **Advantage Service Calls:**  
 N/A
 
@@ -645,7 +737,45 @@ launchType=collaborations
 **Tool Response:**  
 DeepLink Response with launch url
 
-LtiLinkItem contentItem = new LtiLinkItem  
+```
+LtiLinkItem contentItem = new LtiLinkItem
+            {
+                Title = <Name>,
+                Url = <Url>,
+                Custom = {
+"LtiUserId", <LtiUserId>,
+"Type", <type>, // Link/Embed
+                    "ltiContextId", <ContextId>
+"sharedItemId", <ItemId> // guid
+},
+            };
+
+LtiDeepLinkingResponse response = new LtiDeepLinkingResponse
+            {
+                Data = ltiDeepLinkingRequest?.DeepLinkingSettings?.Data,
+                DeploymentId = ltiDeepLinkingRequest?.DeploymentId,
+ContentItem = {
+Title = collaborationFileRequest.DocumentName,
+Url = documentLink,
+Text = collaborationFileRequest.DocumentDescription,
+Type = "ltiResourceLink",
+Custom = new Dictionary<string, string>()
+{
+{ "launchType", "collaborations" },
+{ "sharedItemId", sharedItem.ItemId },
+},
+"https://canvas.instructure.com/lti/collaboration" = {
+Users = [],
+Groups = []
+}
+
+}
+}
+            };
+
+```
+
+<!-- LtiLinkItem contentItem = new LtiLinkItem  
 {  
 &nbsp;&nbsp;Title = \<Name>,  
 &nbsp;&nbsp;Url = \<Url>,  
@@ -677,7 +807,7 @@ LtiDeepLinkingResponse response = new LtiDeepLinkingResponse
 &nbsp;&nbsp;&nbsp;&nbsp;}  
 &nbsp;&nbsp;}  
 };
-
+-->
 **Advantage Service Calls:**  
 NRPS
 
@@ -791,7 +921,7 @@ Renders admin settings UX
 
 ## First-time Configuration by an LMS Administrator
 
-You must launch the app for the first time as a user with an **LMS** **Administrator** role (http://purl.imsglobal.org/vocab/lis/v2/system/person#Administrator or http://purl.imsglobal.org/vocab/lis/v2/institution/person#Administrator) to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step.
+You must launch the app for the first time as a user with an **LMS** **Administrator** role (`http://purl.imsglobal.org/vocab/lis/v2/system/person#Administrator` or `http://purl.imsglobal.org/vocab/lis/v2/institution/person#Administrator`) to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step.
 
 1. As an LMS Administrator, access any course that has the tool deployed with a Resource or DeepLinking launch.
 
