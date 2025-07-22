@@ -64,7 +64,7 @@ Once the Microsoft 365 tool is installed, an LMS Administrator must complete the
 
 ## Considerations for Teams Sync Options
 
-As mentioned, if you choose to allow your instructors to create teams for your use by your LMS courses, or automatically create them, you'll want to insure that only one primary Teams sync mechanism is enabled per LMS course. Here are some considerations in choosing the right mechanism for your organizations:
+As mentioned, if you choose to allow your instructors to create teams for your use by your LMS courses, or automatically create them, you'll want to ensure that only one primary Teams sync mechanism is enabled per LMS course. Here are some considerations in choosing the right mechanism for your organizations:
 
 **LMS Integrated Teams sync:**
 
