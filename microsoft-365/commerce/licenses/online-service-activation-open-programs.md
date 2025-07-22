@@ -38,7 +38,7 @@ Microsoft Open Value and Open Value Subscription offer the ability to add online
 
 ## Activate services from the online service activation email
 
-After you order your online services through an Open program, the *Primary Contact* listed on the licensing contract receives an email titled "Sign in and activate your online services" that contains a link and instructions to activate your services. The PRI can choose to complete the service activation themselves or can forward the email to an individual who has global administrator permissions.
+After you order your online services through an Open program, the *Primary Contact* listed on the licensing contract receives an email titled "Sign in and activate your online services" that contains a link and instructions to activate your services. The primary contact can choose to complete the service activation themselves or can forward the email to an individual who has global administrator permissions.
 
 1. Go to [https://microsoft365.com/setupbusiness](https://microsoft365.com/setupbusiness).
 2. On the **Let's Redeem Your Product Key** page, enter your OSA product key, then select **Next**.
