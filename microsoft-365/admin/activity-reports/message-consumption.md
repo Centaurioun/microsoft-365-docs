@@ -87,7 +87,7 @@ You can view user details, agent details, and user & agent details in the Messag
 
 ### User details
 
-:::image type="content" source="../../media/mc-user-details.png" alt-text="Screenshot showing a table for user details in the Message consumption report." lightbox="../../media/mc-user-details.png":::
+:::image type="content" source="../../media/message-consumption-user-details.png" alt-text="Screenshot showing a table for user details in the Message consumption report." lightbox="../../media/message-consumption-user-details.png":::
 
 | Item                    | Description                                                                                      |
 |-------------------------|--------------------------------------------------------------------------------------------------|
@@ -99,7 +99,7 @@ You can view user details, agent details, and user & agent details in the Messag
 
 ### Agent details
 
-:::image type="content" source="../../media/mc-agent-details.png" alt-text="Screenshot showing a table for agent details in the Message consumption report." lightbox="../../media/mc-agent-details.png":::
+:::image type="content" source="../../media/message-consumption-agent-details.png" alt-text="Screenshot showing a table for agent details in the Message consumption report." lightbox="../../media/message-consumption-agent-details.png":::
 
 | Item                    | Description                                                                                      |
 |-------------------------|--------------------------------------------------------------------------------------------------|
@@ -111,7 +111,7 @@ You can view user details, agent details, and user & agent details in the Messag
 
 ### Billing Policies
 
-:::image type="content" source="../../media/mc-billing-policies.png" alt-text="Screenshot showing a table for billing policies in the Message consumption report." lightbox="../../media/mc-billing-policies.png":::
+:::image type="content" source="../../media/message-consumption-billing-policies.png" alt-text="Screenshot showing a table for billing policies in the Message consumption report." lightbox="../../media/mmessage-consumption-billing-policies.png":::
 
 | Item                    | Description                                                                                      |
 |-------------------------|--------------------------------------------------------------------------------------------------|
@@ -123,7 +123,7 @@ You can view user details, agent details, and user & agent details in the Messag
 
 ### User and agent details
 
-:::image type="content" source="../../media/mc-user-agent.png" alt-text="Screenshot showing the table for user and agent details in the Message consumption report." lightbox="../../media/mc-user-agent.png":::
+:::image type="content" source="../../media/message-consumption-user-agent.png" alt-text="Screenshot showing the table for user and agent details in the Message consumption report." lightbox="../../media/message-consumption-user-agent.png":::
 
 | Item                    | Description                                                                                      |
 |-------------------------|--------------------------------------------------------------------------------------------------|
