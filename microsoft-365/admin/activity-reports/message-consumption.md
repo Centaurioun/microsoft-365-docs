@@ -111,7 +111,7 @@ You can view user details, agent details, and user & agent details in the Messag
 
 ### Billing Policies
 
-:::image type="content" source="../../media/message-consumption-billing-policies.png" alt-text="Screenshot showing a table for billing policies in the Message consumption report." lightbox="../../media/mmessage-consumption-billing-policies.png":::
+:::image type="content" source="../../media/message-consumption-billing-policies.png" alt-text="Screenshot showing a table for billing policies in the Message consumption report." lightbox="../../media/message-consumption-billing-policies.png":::
 
 | Item                    | Description                                                                                      |
 |-------------------------|--------------------------------------------------------------------------------------------------|
