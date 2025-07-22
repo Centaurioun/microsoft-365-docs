@@ -178,7 +178,7 @@ Updates released between June 24, 2025, and July 8, 2025.
 - **See performance metrics for every knowledge source** [Web]
 
   Review usage frequency, answer rate, and error rate for each knowledge source to spot high-value content and quickly fix low-performing links, keeping your agents accurate and helpful.
- <a href="/power-platform/release-plan/2024wave2/microsoft-copilot-studio/analyze-knowledge-source-usage-custom-agents" target="_blank">Learn more.</a>
+ <a href="/power-platform/release-plan/2025wave2/microsoft-copilot-studio/analyze-action-usage-agents" target="_blank">Learn more.</a>
 ### Excel
 - **Copilot in Excel with Python | Reasoning Model Integration (Think Deeper)** [Mac, Windows, Web]
 
