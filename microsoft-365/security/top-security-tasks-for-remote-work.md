@@ -15,6 +15,7 @@ ms.collection:
 - m365-security
 - remotework
 - tier2
+- trust-pod
 ms.custom: admindeeplinkDEFENDER
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
 ms.date: 9/18/2023
