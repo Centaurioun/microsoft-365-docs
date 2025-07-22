@@ -99,7 +99,7 @@ Updates released between July 8, 2025, and July 22, 2025.
  <a href="https://support.microsoft.com/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
 - **Microsoft 365 Copilot generates the new presentation in a new file when starting from an existing presentation** [Mac, Windows]
 
-  Now, when creating a presentation using Microsoft 365 Copilot from an existing presentation using , it will create the new presentation in a new file without affecting the original presentation
+  Now, when creating a presentation using Microsoft 365 Copilot from an existing presentation using, it will create the new presentation in a new file without affecting the original presentation
  <a href="https://support.microsoft.com/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d" target="_blank">Learn more.</a>
 - **Reference multiple files in your presentation creation using Microsoft 365 Copilot** [Windows, Mac, Web]
 
@@ -411,7 +411,7 @@ Key capabilities include hosting with Azure Key Vault to manage your keys, lifet
 ### Microsoft 365 Copilot Chat
 - **Advanced email filtering in Copilot chat** [Windows]
 
-  Quickly surface exactly the emails you need—ask Microsoft 365 Copilot Chat for “last week’s external emails,” “threads I haven’t replied to,” “purple-category mail,” or “summarise German emails" "emails where I’m on the To line”—and focus on what matters most.
+  Quickly surface exactly the emails you need—ask Microsoft 365 Copilot Chat for “last week’s external emails,” “threads I haven’t replied to,” “purple-category mail,” or “summarize German emails" "emails where I’m on the To line”—and focus on what matters most.
 - **Find emails awaiting your reply** [Windows]
 
   Tell Microsoft 365 Copilot Chat “show me emails that I need to reply” and instantly see unread, read, @mentioned emails or emails with some question, task that you haven’t answered—while hiding threads you’ve already closed—so you can clear your inbox with confidence.
