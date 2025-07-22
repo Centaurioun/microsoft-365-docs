@@ -38,7 +38,7 @@ For an overview of the Microsoft 356 LTI integration for learning management sys
     - [Request to join the Microsoft Global Training Partner program](https://m365edupartnerportal.powerappsportals.com/MSGTPSignup/) as a Training Partner who delivers training and support to customers on Microsoft products and services.
 
 > [!IMPORTANT]
-> The person who deploys this integration should be an **Administrator role in the LMS**. A person in your organization who is a **M365 Global Administrator** is also needed to help complete the configuration of the app before first time use.
+> The person who deploys this integration should be an **Administrator role in the LMS**. A person in your organization who is a **Microsoft 365 Global Administrator** is also needed to help complete the configuration of the app before first time use.
 >
 > By installing and using the Microsoft Education LTI app, educators and students can transmit grades to the LMS where the terms of use and privacy policy of that application apply.
 
@@ -60,7 +60,7 @@ The following LTI specifications should be implemented by the platform:
 
 ### User matching between Microsoft 365/Entra ID and the LMS
 
-To fully integrate with your LMS environment and perform tasks on behalf of users (like populating students and co-teachers into OneNote Class Notebooks, setting file permissions, or sending grades from Assignments to the LMS gradebook), the Microsoft 365 LTI app must be able to map Student and Teacher identities between the LMS and the Microsoft Entra ID directory services. It's required to populate the LMS user Email field (which is the same email value returned from the LTI Names and Roles Provisioning Service) with the user's M365/Entra User UPN or Primary Email address. Verify this for people in every course that will use the integration to ensure the Microsoft apps can match LMS users.
+To fully integrate with your LMS environment and perform tasks on behalf of users (like populating students and co-teachers into OneNote Class Notebooks, setting file permissions, or sending grades from Assignments to the LMS gradebook), the Microsoft 365 LTI app must be able to map Student and Teacher identities between the LMS and the Microsoft Entra ID directory services. It's required to populate the LMS user Email field (which is the same email value returned from the LTI Names and Roles Provisioning Service) with the user's Microsoft 365/Entra User UPN or Primary Email address. Verify this for people in every course that will use the integration to ensure the Microsoft apps can match LMS users.
 
 ## Deploy the Teams Assignments LTI® tool for your LMS
 
@@ -132,11 +132,11 @@ The Teams Assignments LTI® tool implements several launches that can be leverag
 
 - Deep Linking Launch placement - best used in a new assignment or content activity placement (external tool type of assignment/content) where the tool, when launched by an instructor, creates a resource link that can be launched from the assignments or content activity list by instructors and teachers. The tool also creates a lineItem and sends scores back to the LMS to sync into its gradebook as Teams Assignments are graded by the instructor.
 
-The following table documents the launches available and their expected behaviors. Not every platform has to implement every launch.
+<!-- The following table documents the launches available and their expected behaviors. Not every platform has to implement every launch.
 
 | **Feature/Launch** | **Description** | **Role** | **LTI Launch Message Type** | **Custom claim params** | **Tool Response** | **Advantage Service Calls** | **Additional Details** | **Allowed file type** | **Pre-Viewable file types** |
 |---|---|---|---|---|---|---|---|---|---|
-| **M365 Navigation** | Instructors and students can navigate to all of the Microsoft Education experiences enabled in the Microsoft 365 LTI. | membership#Instructor<br>membership#Student | LtiResourceLinkRequest | N/A | Renders the OneDrive Explorer | N/A | | All File Types allowed | [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4) |
+| **Microsoft 365 Navigation** | Instructors and students can navigate to all of the Microsoft Education experiences enabled in the Microsoft 365 LTI. | membership#Instructor<br>membership#Student | LtiResourceLinkRequest | N/A | Renders the OneDrive Explorer | N/A | | All File Types allowed | [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4) |
 | **Linking OneDrive File** | An instructor can link a OneDrive File inside a course. The File is accessible as readonly to all students in the class. | membership#Instructor | LtiDeepLinkingRequest | launchType = link-selection | DeepLinkResponse with launch url<br><br>LtiLinkItem contentItem = new LtiLinkItem<br>            {<br>                Title = \<Name>,<br>                Url = \<Url>,<br>                Custom = {<br>"LtiUserId", \<LtiUserId>,<br>"Type", \<type>, // Link/Embed<br>                    "ltiContextId", \<ContextId><br>"sharedItemId", \<ItemId> // guid<br>},<br>            }; | N/A | | All File Types allowed | [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4) |
 | **Link + embed OneDrive Files** | An instructor can link or embed a OneDrive File inside a course. The File is accessible as readonly to all students and teacher in the class. | membership#Instructor | LtiDeepLinkingRequest | launchType = shared-item | DeepLinkResponse with launch url<br>LtiLinkItem contentItem = new LtiLinkItem<br>            {<br>                Title = \<Name>,<br>                Url = \<Url>,<br>                Custom = {<br>"LtiUserId", \<LtiUserId>,<br>"Type", \<type>, // Link/Embed<br>                    "ltiContextId", \<ContextId><br>"sharedItemId", \<ItemId> // guid<br>},<br>            }; | N/A | Need mechanism to pass custom parameters in deep links https://www.imsglobal.org/spec/lti-dl/v2p0#custom-properties | All File Types allowed | [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4) |
 | **View Linked/Embedded Files** | View the embedded files with a deep links | membership#Instructor<br>membership#Student | LtiResourceLinkRequest | | Renders the embedded file. | N/A | Custom parameters set by the deep link request must be sent in the corresponding resource link launch. | All File Types allowed | [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4) |
@@ -149,54 +149,64 @@ The following table documents the launches available and their expected behavior
 | **Create a Collaboration Document** | Instructors or students can create a collaboration where all members in a course can collaborate with option to use an existing file or create a blank file. | membership#Instructor<br>membership#Student | LtiDeepLinkingRequest | launchType=collaborations | DeepLink Response with launch url<br><br>LtiLinkItem contentItem = new LtiLinkItem<br>            {<br>                Title = \<Name>,<br>                Url = \<Url>,<br>                Custom = {<br>"LtiUserId", \<LtiUserId>,<br>"Type", \<type>, // Link/Embed<br>                    "ltiContextId", \<ContextId><br>"sharedItemId", \<ItemId> // guid<br>},<br>            };<br><br>LtiDeepLinkingResponse response = new LtiDeepLinkingResponse<br>            {<br>                Data = ltiDeepLinkingRequest?.DeepLinkingSettings?.Data,<br>                DeploymentId = ltiDeepLinkingRequest?.DeploymentId,<br>ContentItem = {<br>Title = collaborationFileRequest.DocumentName,<br>Url = documentLink,<br>Text = collaborationFileRequest.DocumentDescription,<br>Type = "ltiResourceLink",<br>Custom = new Dictionary<string, string>()<br>{<br>{ "launchType", "collaborations" },<br>{ "sharedItemId", sharedItem.ItemId },<br>},<br>"https://canvas.instructure.com/lti/collaboration" = {<br>Users = [],<br>Groups = []<br>}<br><br>}<br>}<br>            }; | NRPS | 1. Max 250 members allowed in collaboration.<br>2. | PPTX, XLSX, DOCX | PPTX, XLSX, DOCX |
 | **View a Collaboration Document - Jatin** | Opening a collaboration document | membership#Instructor<br>membership#Student | LtiResourceLinkRequest | launchType = collaborations<br>sharedItemId = \<itemId> | Renders the collaboration document | | | PPTX, XLSX, DOCX | PPTX, XLSX, DOCX |
 | **Copy Assignments from One Course to another** | Copy assignments that contain OneDrive LTI resources; allows educators to import existing assignments to new courses | membership#Instructor<br>membership#Student | LtiResourceLinkRequest | **ContextHistory=$Context.id.history** (irrespective of placement; as in canvas) | Copies over the resource and renders it when launched | | Prerequisite: Context.id.history LTI parameter must be implemented http://www.imsglobal.org/spec/lti/v1p3/#lti-context-variable | | |
-| **Admin settings UX launch** | | System/person#Administrator<br>Institution/person#Administrator | LtiResourceLinkRequest | launchType=account | Renders admin settings UX | | | | |
+| **Admin settings UX launch** | | System/person#Administrator<br>Institution/person#Administrator | LtiResourceLinkRequest | launchType=account | Renders admin settings UX | | | | | -->
 
 In the following list, select the feature/launches available to view their expected behaviors. Not every platform has to implement every launch.
 
+
 <details>
-<summary>M365 Navigation</summary>
 
-**Feature/Launch:**  
-M365 Navigation
+<summary>Microsoft 365 Navigation
 
-**Description:**  
-Instructors and students can navigate to all of the Microsoft Education experiences enabled in the Microsoft 365 LTI.
+</summary>
+
+  **Feature/Launch:**  
+    Microsoft 365 Navigation
+
+  **Description:**  
+    Instructors and students can navigate to all of the Microsoft Education experiences enabled in the Microsoft 365 LTI.
 
 **Role:**  
-membership#Instructor  
-membership#Student
+  membership#Instructor  
+  membership#Student
 
 **LTI Launch Message Type:**  
-LtiResourceLinkRequest
+    LtiResourceLinkRequest
 
 **Custom claim params:**  
-N/A
+    N/A
 
 **Tool Response:**  
-Renders the OneDrive Explorer
+  Renders the OneDrive Explorer
 
 **Advantage Service Calls:**  
-N/A
+  N/A
 
 **Additional Details:**  
 
 **Allowed file type:**  
-All File Types allowed
+  All File Types allowed
 
 **Pre-Viewable file types:**  
-[As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+  [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+
 </details>
 
 <details>
-<summary> Linking OneDrive File</summary>
+<summary> Linking OneDrive File
+
+</summary>
 
 **Feature/Launch:**  
+
 Linking OneDrive File
 
 **Description:**  
+
 An instructor can link a OneDrive File inside a course. The File is accessible as readonly to all students in the class.
 
 **Role:**  
+
 membership#Instructor
 
 **LTI Launch Message Type:**  
@@ -219,6 +229,30 @@ LtiLinkItem contentItem = new LtiLinkItem
 &nbsp;&nbsp;&nbsp;&nbsp;"sharedItemId", \<ItemId> // guid  
 &nbsp;&nbsp;}  
 };
+
+LtiLinkItem contentItem = new LtiLinkItem  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Title = \<Name>,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Url = \<Url>,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Custom = {  
+&nbsp;&nbsp;&nbsp;&nbsp;"Type", \<type>, // Link/Embed  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"LtiUserId", \<LtiUserId>,  
+&nbsp;&nbsp;&nbsp;&nbsp;"ltiContextId", \<ContextId>  
+&nbsp;&nbsp;&nbsp;&nbsp;"sharedItemId", \<ItemId> // guid  
+&nbsp;&nbsp;},  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};
+
+LtiLinkItem contentItem = new LtiLinkItem
+            {
+                Title = <Name>,
+                Url = <Url>,
+                Custom = {
+"LtiUserId", <LtiUserId>,
+"Type", <type>, // Link/Embed
+                    "ltiContextId", <ContextId>
+"sharedItemId", <ItemId> // guid
+},
+            };
 
 **Advantage Service Calls:**  
 N/A
@@ -545,16 +579,16 @@ PPTX, XLSX, DOCX
 <details>
 <summary>Submit a Assignment using One Drive(Templateless)</summary>
 
-**Feature/Launch:**  
+**Feature/Launch:**
 Submit a Assignment using One Drive(Templateless)
 
-**Description:**  
+**Description:**
 For a submission, student can upload a file using OneDrive
 
-**Role:**  
+**Role:**
 membership#Student
 
-**LTI Launch Message Type:**  
+**LTI Launch Message Type:**
 LtiDeepLinkingRequest
 
 **Custom claim params:**  
