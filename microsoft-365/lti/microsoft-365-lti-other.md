@@ -157,66 +157,86 @@ In the following list, select the feature/launches available to view their expec
 <details>
 
 <summary>Microsoft 365 Navigation
+&nbsp;&nbsp;
 
+&nbsp;&nbsp;
 </summary>
 
-  **Feature/Launch:**  
-    Microsoft 365 Navigation
+**Feature/Launch:**
 
-  **Description:**  
-    Instructors and students can navigate to all of the Microsoft Education experiences enabled in the Microsoft 365 LTI.
+- Microsoft 365 Navigation
 
-**Role:**  
-  membership#Instructor  
-  membership#Student
+**Description:**
 
-**LTI Launch Message Type:**  
-    LtiResourceLinkRequest
+- Instructors and students can navigate to all of the Microsoft Education experiences enabled in the Microsoft 365 LTI.
 
-**Custom claim params:**  
-    N/A
+**Role:**
 
-**Tool Response:**  
-  Renders the OneDrive Explorer
+- membership#Instructor  
+- membership#Student
 
-**Advantage Service Calls:**  
-  N/A
+**LTI Launch Message Type:**
 
-**Additional Details:**  
+- - LtiResourceLinkRequest
 
-**Allowed file type:**  
-  All File Types allowed
+**Custom claim params:**
 
-**Pre-Viewable file types:**  
-  [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+- - N/A
 
+**Tool Response:**
+
+- - Renders the OneDrive Explorer
+
+**Advantage Service Calls:**
+
+- - N/A
+
+**Additional Details:**
+
+- 
+**Allowed file type:**
+
+-   All File Types allowed
+
+**Pre-Viewable file types:**
+
+-   [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+
+&nbsp;&nbsp;
+
+&nbsp;&nbsp;
 </details>
 
 <details>
 <summary> Linking OneDrive File
+&nbsp;&nbsp;
 
+&nbsp;&nbsp;
 </summary>
 
-**Feature/Launch:**  
+**Feature/Launch:**
 
-Linking OneDrive File
+- Linking OneDrive File
 
-**Description:**  
+**Description:**
 
-An instructor can link a OneDrive File inside a course. The File is accessible as readonly to all students in the class.
+- An instructor can link a OneDrive File inside a course. The File is accessible as readonly to all students in the class.
 
-**Role:**  
+**Role:**
 
-membership#Instructor
+- membership#Instructor
 
-**LTI Launch Message Type:**  
-LtiDeepLinkingRequest
+**LTI Launch Message Type:**
 
-**Custom claim params:**  
-launchType = link-selection
+- LtiDeepLinkingRequest
 
-**Tool Response:**  
-DeepLinkResponse with launch url
+**Custom claim params:**
+
+- launchType = link-selection
+
+**Tool Response:**
+
+- DeepLinkResponse with launch url
 
 <!-- LtiLinkItem contentItem = new LtiLinkItem  
 {  
@@ -256,38 +276,53 @@ LtiLinkItem contentItem = new LtiLinkItem
             };
 ```
 
-**Advantage Service Calls:**  
-N/A
+**Advantage Service Calls:**
 
-**Additional Details:**  
+- N/A
 
-**Allowed file type:**  
-All File Types allowed
+**Additional Details:**
 
-**Pre-Viewable file types:**  
-[As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+- 
+
+**Allowed file type:**
+
+- All File Types allowed
+
+**Pre-Viewable file types:**
+
+- [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>Link and embed OneDrive Files</summary>
+<summary>Link and embed OneDrive Files
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-Link + embed OneDrive Files
+**Feature/Launch:**
 
-**Description:**  
-An instructor can link or embed a OneDrive File inside a course. The File is accessible as readonly to all students and teacher in the class.
+- Link + embed OneDrive Files
 
-**Role:**  
-membership#Instructor
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiDeepLinkingRequest
+- An instructor can link or embed a OneDrive File inside a course. The File is accessible as readonly to all students and teacher in the class.
 
-**Custom claim params:**  
-launchType = shared-item
+**Role:**
 
-**Tool Response:**  
-DeepLinkResponse with launch url
+- membership#Instructor
+
+**LTI Launch Message Type:**
+
+- LtiDeepLinkingRequest
+
+**Custom claim params:**
+
+- launchType = shared-item
+
+**Tool Response:**
+
+- DeepLinkResponse with launch url
 
 ```
 LtiLinkItem contentItem = new LtiLinkItem
@@ -315,73 +350,103 @@ LtiLinkItem contentItem = new LtiLinkItem
 &nbsp;&nbsp;}  
 };
 -->
-**Advantage Service Calls:**  
-N/A
+**Advantage Service Calls:**
 
-**Additional Details:**  
-Need mechanism to pass custom parameters in deep links https://www.imsglobal.org/spec/lti-dl/v2p0#custom-properties
+- N/A
 
-**Allowed file type:**  
-All File Types allowed
+**Additional Details:**
 
-**Pre-Viewable file types:**  
-[As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+- Need mechanism to pass custom parameters in deep links https://www.imsglobal.org/spec/lti-dl/v2p0#custom-properties
+
+**Allowed file type:**
+
+- All File Types allowed
+
+**Pre-Viewable file types:**
+
+- [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>View Linked/Embedded Files</summary>
+<summary>View Linked/Embedded Files
 
-**Feature/Launch:**  
-View Linked/Embedded Files
+&nbsp;&nbsp;
+</summary>
 
-**Description:**  
-View the embedded files with a deep links
+**Feature/Launch:**
 
-**Role:**  
-membership#Instructor  
-membership#Student
+- View Linked/Embedded Files
 
-**LTI Launch Message Type:**  
-LtiResourceLinkRequest
+**Description:**
 
-**Custom claim params:**  
+- View the embedded files with a deep links
 
-**Tool Response:**  
-Renders the embedded file.
+**Role:**
 
-**Advantage Service Calls:**  
-N/A
+- membership#Instructor  
+- membership#Student
 
-**Additional Details:**  
-Custom parameters set by the deep link request must be sent in the corresponding resource link launch.
+**LTI Launch Message Type:**
 
-**Allowed file type:**  
-All File Types allowed
+- LtiResourceLinkRequest
 
-**Pre-Viewable file types:**  
-[As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+**Custom claim params:**
+
+- 
+- 
+**Tool Response:**
+
+- Renders the embedded file.
+
+**Advantage Service Calls:**
+
+- N/A
+
+**Additional Details:**
+
+- Custom parameters set by the deep link request must be sent in the corresponding resource link launch.
+
+**Allowed file type:**
+
+- All File Types allowed
+
+**Pre-Viewable file types:**
+
+- [As supported by OneDrive](https://support.microsoft.com/en-us/office/file-types-supported-for-previewing-files-in-onedrive-sharepoint-and-teams-e054cd0f-8ef2-4ccb-937e-26e37419c5e4)
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>Create a Microsoft submittable activity that is part of an LMS content item</summary>
+<summary>Create a Microsoft submittable activity that is part of an LMS content item
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-Create a Microsoft submittable activity that is part of an LMS content item
+**Feature/Launch:**
 
-**Description:**  
-An instructor adds a Microsoft document or assignment to an LMS content item (assignment) for all student members of the course to complete and submit.
+- Create a Microsoft submittable activity that is part of an LMS content item
 
-**Role:**  
-membership#Instructor
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiDeepLinkingRequest
+- An instructor adds a Microsoft document or assignment to an LMS content item (assignment) for all student members of the course to complete and submit.
 
-**Custom claim params:**  
-launchType=assignments
+**Role:**
 
-**Tool Response:**  
-DeepLink Response with launch url
+- membership#Instructor
+
+**LTI Launch Message Type:**
+
+- LtiDeepLinkingRequest
+
+**Custom claim params:**
+
+- launchType=assignments
+
+**Tool Response:**
+
+- DeepLink Response with launch url
 
 ```
 LtiLinkItem contentItem = new LtiLinkItem
@@ -413,79 +478,108 @@ LtiLinkItem contentItem = new LtiLinkItem
 &nbsp;&nbsp;}  
 };
 -->
-**Advantage Service Calls:**  
-N/A
+**Advantage Service Calls:**
 
-**Additional Details:**  
-Need mechanism to pass custom parameters in deep links https://www.imsglobal.org/spec/lti-dl/v2p0#custom-properties
+- N/A
 
-**Allowed file type:**  
-PPTX, XLSX, DOCX
+**Additional Details:**
 
-**Pre-Viewable file types:**  
-PPTX, XLSX, DOCX
+- Need mechanism to pass custom parameters in deep links https://www.imsglobal.org/spec/lti-dl/v2p0#custom-properties
+
+**Allowed file type:**
+
+- PPTX, XLSX, DOCX
+
+**Pre-Viewable file types:**
+
+- PPTX, XLSX, DOCX
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>View a Microsoft submittable activity that is part of an LMS content item</summary>
+<summary>View a Microsoft submittable activity that is part of an LMS content item
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-View a Microsoft submittable activity that is part of an LMS content item
+**Feature/Launch:**
 
-**Description:**  
-Students able able to view and get their own copy of the Microsoft activity (document, assignment, etc.) to view, complete, and submit
+- View a Microsoft submittable activity that is part of an LMS content item
 
-**Role:**  
-membership#Student
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiResourceLinkRequest
+- Students able able to view and get their own copy of the Microsoft activity (document, assignment, etc.) to view, complete, and submit
 
-**Custom claim params:**  
-launchType=assignments  
-Two additional claims required - max allowed Attempts and student attempts done
+**Role:**
 
-**Tool Response:**  
-Render the assignment
+- membership#Student
 
-**Advantage Service Calls:**  
-N/A
+**LTI Launch Message Type:**
+
+- LtiResourceLinkRequest
+
+**Custom claim params:**
+
+- launchType=assignments  
+- Two additional claims required:
+  - max allowed Attempts
+  - student attempts done
+
+**Tool Response:**
+
+- Render the assignment
+
+**Advantage Service Calls:**
+
+- N/A
 
 **Additional Details:**
 
 - Custom parameters set by the deep link request must be sent in the corresponding resource link launch.  
 - The launch should have a AssignmentGradeService LineItemUrl  
-- In canvas the two custom claims are  
-  - "AllowedAttempts": "$Canvas.assignment.allowedAttempts",  
+- In Canvas. the two custom claims are:
+  - "AllowedAttempts": "$Canvas.assignment.allowedAttempts",
   - "StudentAttempts": "$Canvas.assignment.submission.studentAttempts"
 
-**Allowed file type:**  
-PPTX, XLSX, DOCX
+**Allowed file type:**
 
-**Pre-Viewable file types:**  
-PPTX, XLSX, DOCX
+- PPTX, XLSX, DOCX
+
+**Pre-Viewable file types:**
+
+- PPTX, XLSX, DOCX
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>Create a microsoft submittable activity</summary>
+<summary>Create a microsoft submittable activity
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-Create a microsoft submittable activity
+**Feature/Launch:**
 
-**Description:**  
-An instructor adds a Microsoft document or assignment to an LMS content item (assignment) for all student members of the course to complete and submit.
+- Create a microsoft submittable activity
 
-**Role:**  
-membership#Instructor
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiDeepLinkingRequest
+- An instructor adds a Microsoft document or assignment to an LMS content item (assignment) for all student members of the course to complete and submit.
 
-**Custom claim params:**  
-launchType=courseAssignments
+**Role:**
 
-**Tool Response:**  
-DeepLink Response with launch url
+- membership#Instructor
+
+**LTI Launch Message Type:**
+
+- LtiDeepLinkingRequest
+
+**Custom claim params:**
+
+- launchType=courseAssignments
+
+**Tool Response:**
+
+- DeepLink Response with launch url
 
 ```LtiLinkItem contentItem = new LtiLinkItem
             {
@@ -516,78 +610,112 @@ DeepLink Response with launch url
 &nbsp;&nbsp;}  
 };
 -->
-**Advantage Service Calls:**  
+**Advantage Service Calls:**
 
-**Additional Details:**  
+- 
+- 
+**Additional Details:**
 
-**Allowed file type:**  
+- 
+- 
+**Allowed file type:**
 
-**Pre-Viewable file types:**  
+- 
+- 
+**Pre-Viewable file types:**
 
+- 
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>View a Microsoft submittable activity</summary>
+<summary>View a Microsoft submittable activity
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-View a Microsoft submittable activity
+**Feature/Launch:**
 
-**Description:**  
-Students able able to view and get their own copy of the Microsoft activity (document, assignment, etc.) to view, complete, and submit.
+- View a Microsoft submittable activity
 
-**Role:**  
-membership#Student
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiResourceLinkRequest
+- Students able able to view and get their own copy of the Microsoft activity (document, assignment, etc.) to view, complete, and submit.
 
-**Custom claim params:**  
-launchType=assignments  
-Two additional claims required - max allowed Attempts and student attempts done
+**Role:**
 
-**Tool Response:**  
-Render the assignment
+- membership#Student
 
-**Advantage Service Calls:**  
-N/A
+**LTI Launch Message Type:**
 
-**Additional Details:**  
+- LtiResourceLinkRequest
+
+**Custom claim params:**
+
+- launchType=assignments  
+- Two additional claims required:
+  - max allowed Attempts
+  - student attempts done
+
+**Tool Response:**
+
+- Render the assignment
+
+**Advantage Service Calls:**
+
+- N/A
+
+**Additional Details:**
 
 - Custom parameters set by the deep link request must be sent in the corresponding resource link launch.  
 - The launch should have a AssignmentGradeService LineItemUrl  
 - In canvas the two custom claims are  
   - "AllowedAttempts": "$Canvas.assignment.allowedAttempts",  
-  -"StudentAttempts": "$Canvas.assignment.submission.studentAttempts"
+  - "StudentAttempts": "$Canvas.assignment.submission.studentAttempts"
 
-**Allowed file type:**  
-PPTX, XLSX, DOCX
+**Allowed file type:**
 
-**Pre-Viewable file types:**  
-PPTX, XLSX, DOCX
+- PPTX, XLSX, DOCX
+
+**Pre-Viewable file types:**
+
+- PPTX, XLSX, DOCX
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>Submit a cloud assignment</summary>
+<summary>Submit a cloud assignment
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-Submit a cloud assignment
+**Feature/Launch:**
 
-**Description:**  
-Once students finish editing the file. OneDrive UX provides a way to submit the file which would be available to Teacher for Grading using AGS.
+- Submit a cloud assignment
 
-**Role:**  
-membership#Student
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiResourceLinkRequest
+- Once students finish editing the file. OneDrive UX provides a way to submit the file which would be available to Teacher for Grading using AGS.
 
-**Custom claim params:**  
-Call is from within the OneDrive UX.
+**Role:**
 
-**Tool Response:**  
+- membership#Student
 
-**Advantage Service Calls:**  
-AGS Call to upload the score.
+**LTI Launch Message Type:**
+
+- LtiResourceLinkRequest
+
+**Custom claim params:**
+
+- Call is from within the OneDrive UX.
+
+**Tool Response:**
+
+-
+
+**Advantage Service Calls:**
+
+- AGS Call to upload the score.
 
 ```dotnetcli
 LtiContentItem[] contentItems = new[]
@@ -645,35 +773,49 @@ var score = new LtiScore
 
 Post Call - \<LineItemUrl>/Scores
 -->
-**Additional Details:**  
+**Additional Details:**
 
-**Allowed file type:**  
-PPTX, XLSX, DOCX
+- 
 
-**Pre-Viewable file types:**  
-PPTX, XLSX, DOCX
+**Allowed file type:**
+
+- PPTX, XLSX, DOCX
+
+**Pre-Viewable file types:**
+
+- PPTX, XLSX, DOCX
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>Submit a Assignment using One Drive(Templateless)</summary>
+<summary>Submit a Assignment using One Drive(Templateless)
+&nbsp;&nbsp;
+</summary>
 
 **Feature/Launch:**
-Submit a Assignment using One Drive(Templateless)
+
+- Submit a Assignment using One Drive(Templateless)
 
 **Description:**
-For a submission, student can upload a file using OneDrive
+
+- For a submission, student can upload a file using OneDrive
 
 **Role:**
-membership#Student
+
+- membership#Student
 
 **LTI Launch Message Type:**
-LtiDeepLinkingRequest
 
-**Custom claim params:**  
-launchType=assignments
+- LtiDeepLinkingRequest
 
-**Tool Response:**  
-DeepLink response
+**Custom claim params:**
+
+- launchType=assignments
+
+**Tool Response:**
+
+- DeepLink response
 
 ```dotnetcli
 LtiFileItem contentItem = new LtiFileItem
@@ -702,40 +844,54 @@ LtiFileItem contentItem = new LtiFileItem
 &nbsp;&nbsp;}  
 };
 -->
-**Advantage Service Calls:**  
-N/A
+**Advantage Service Calls:**
 
-**Additional Details:**  
-The LMS should use the downloadUrl to download the file.
+- N/A
 
-**Allowed file type:**  
-All File types allowed
+**Additional Details:**
 
-**Pre-Viewable file types:**  
-No preview
+- The LMS should use the downloadUrl to download the file.
+
+**Allowed file type:**
+
+- All File types allowed
+
+**Pre-Viewable file types:**
+
+- No preview
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>Create a Collaboration Document</summary>
+<summary>Create a Collaboration Document
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-Create a Collaboration Document
+**Feature/Launch:**
 
-**Description:**  
-Instructors or students can create a collaboration where all members in a course can collaborate with option to use an existing file or create a blank file.
+- Create a Collaboration Document
 
-**Role:**  
-membership#Instructor  
-membership#Student
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiDeepLinkingRequest
+- Instructors or students can create a collaboration where all members in a course can collaborate with option to use an existing file or create a blank file.
 
-**Custom claim params:**  
-launchType=collaborations
+**Role:**
 
-**Tool Response:**  
-DeepLink Response with launch url
+- membership#Instructor  
+- membership#Student
+
+**LTI Launch Message Type:**
+
+- LtiDeepLinkingRequest
+
+**Custom claim params:**
+
+- launchType=collaborations
+
+**Tool Response:**
+
+- DeepLink Response with launch url
 
 ```
 LtiLinkItem contentItem = new LtiLinkItem
@@ -808,115 +964,171 @@ LtiDeepLinkingResponse response = new LtiDeepLinkingResponse
 &nbsp;&nbsp;}  
 };
 -->
-**Advantage Service Calls:**  
-NRPS
+**Advantage Service Calls:**
 
-**Additional Details:**  
-1. Max 250 members allowed in collaboration.
+- NRPS
 
-**Allowed file type:**  
-PPTX, XLSX, DOCX
+**Additional Details:**
 
-**Pre-Viewable file types:**  
-PPTX, XLSX, DOCX
+- Max 250 members allowed in collaboration.
+
+**Allowed file type:**
+
+- PPTX, XLSX, DOCX
+
+**Pre-Viewable file types:**
+
+- PPTX, XLSX, DOCX
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>View a Collaboration Document - Jatin</summary>
+<summary>View a Collaboration Document - Jatin
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-View a Collaboration Document - Jatin
+**Feature/Launch:**
 
-**Description:**  
-Opening a collaboration document
+- View a Collaboration Document - Jatin
 
-**Role:**  
-membership#Instructor  
-membership#Student
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiResourceLinkRequest
+- Opening a collaboration document
 
-**Custom claim params:**  
-launchType = collaborations  
-sharedItemId = \<itemId>
+**Role:**
 
-**Tool Response:**  
-Renders the collaboration document
+- membership#Instructor  
+- membership#Student
 
-**Advantage Service Calls:**  
+**LTI Launch Message Type:**
 
-**Additional Details:**  
+- LtiResourceLinkRequest
 
-**Allowed file type:**  
-PPTX, XLSX, DOCX
+**Custom claim params:**
 
-**Pre-Viewable file types:**  
-PPTX, XLSX, DOCX
+- launchType = collaborations  
+- sharedItemId = \<itemId>
+
+**Tool Response:**
+
+- Renders the collaboration document
+
+**Advantage Service Calls:**
+
+-
+
+**Additional Details:**
+
+-
+
+**Allowed file type:**
+
+- PPTX, XLSX, DOCX
+
+**Pre-Viewable file types:**
+
+- PPTX, XLSX, DOCX
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>Copy Assignments from One Course to another</summary>
+<summary>Copy Assignments from One Course to another
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-Copy Assignments from One Course to another
+**Feature/Launch:**
 
-**Description:**  
-Copy assignments that contain OneDrive LTI resources; allows educators to import existing assignments to new courses
+- Copy Assignments from One Course to another
 
-**Role:**  
-membership#Instructor  
-membership#Student
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiResourceLinkRequest
+- Copy assignments that contain OneDrive LTI resources; allows educators to import existing assignments to new courses
 
-**Custom claim params:**  
-**ContextHistory=$Context.id.history** (irrespective of placement; as in canvas)
+**Role:**
 
-**Tool Response:**  
-Copies over the resource and renders it when launched
+- membership#Instructor  
+- membership#Student
 
-**Advantage Service Calls:**  
+**LTI Launch Message Type:**
 
-**Additional Details:**  
-Prerequisite: Context.id.history LTI parameter must be implemented http://www.imsglobal.org/spec/lti/v1p3/#lti-context-variable
+- LtiResourceLinkRequest
 
-**Allowed file type:**  
+**Custom claim params:**
 
-**Pre-Viewable file types:**  
+- **ContextHistory=$Context.id.history** (irrespective of placement; as in Canvas)
 
+**Tool Response:**
+
+- Copies over the resource and renders it when launched
+
+**Advantage Service Calls:**
+
+- 
+
+**Additional Details:**
+
+- Prerequisite: Context.id.history LTI parameter must be implemented http://www.imsglobal.org/spec/lti/v1p3/#lti-context-variable
+
+**Allowed file type:**
+
+- 
+
+**Pre-Viewable file types:**
+
+-
+
+&nbsp;&nbsp;
 </details>
 
 <details>
-<summary>Admin settings UX launch</summary>
+<summary>Admin settings UX launch
+&nbsp;&nbsp;
+</summary>
 
-**Feature/Launch:**  
-Admin settings UX launch
+**Feature/Launch:**
 
-**Description:**  
+- Admin settings UX launch
 
-**Role:**  
-System/person#Administrator  
-Institution/person#Administrator
+**Description:**
 
-**LTI Launch Message Type:**  
-LtiResourceLinkRequest
+-
 
-**Custom claim params:**  
-launchType=account
+**Role:**
 
-**Tool Response:**  
-Renders admin settings UX
+- System/person#Administrator  
+- Institution/person#Administrator
 
-**Advantage Service Calls:**  
+**LTI Launch Message Type:**
 
-**Additional Details:**  
+- LtiResourceLinkRequest
 
-**Allowed file type:**  
+**Custom claim params:**
 
-**Pre-Viewable file types:**  
+- launchType=account
 
+**Tool Response:**
+
+- Renders admin settings UX
+
+**Advantage Service Calls:**
+
+-
+
+**Additional Details:**
+
+-
+
+**Allowed file type:**
+
+-
+
+**Pre-Viewable file types:**
+
+-
+
+&nbsp;&nbsp;
 </details>
 
 ## First-time Configuration by an LMS Administrator
