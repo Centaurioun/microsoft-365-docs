@@ -1,11 +1,11 @@
 ---
-title: Create conditional sections for a modern template in SharePoint
+title: Create conditional sections for a modern template
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 01/07/2025
+ms.date: 08/01/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to create conditional sections for templates in SharePoint.
 ---
 
-# Create conditional sections for a modern template in Sharepoint
+# Create conditional sections for a modern template
 
 When you create a modern template, you can specify which parts of a document will be included and under what conditions. This lets you control which sections of the template will be included when you generate a document.
 

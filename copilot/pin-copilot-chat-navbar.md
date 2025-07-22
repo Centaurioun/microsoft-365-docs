@@ -28,18 +28,20 @@ description: "Learn how to improve the use of Microsoft 365 Copilot Chat across 
 
 As an admin, you can pin Microsoft 365 Copilot Chat to the navigation bar of Teams, Outlook, and the Microsoft 365 Copilot app across the web, desktop, and mobile. Pinning makes it easy for users to access Copilot Chat as the secure and compliant generative AI chat solution that's available to them on their work identity (signed in with a Microsoft Entra account).
 
+> [!NOTE]
+> The information in this article is specific to the Copilot Chat experience in the navigation bar of Microsoft 365 apps. You can also [pin the Microsoft 365 Copilot app to the Windows taskbar](pin-copilot-taskbar.md). **Copilot Chat** is an integrated chat experience available within Microsoft 365 apps. The **Copilot app** is a standalone application that provides access to Chat, Search, Agents (if enabled), Notebooks, and Create. To understand the difference between the Copilot app and Copilot Chat, see [Decide which Copilot is right for you](which-copilot-for-your-organization.md).
+
 ## Before you begin
 
 :::image type="content" source="media/pin-copilot-mac.png" alt-text="Screenshot showing the Pin Copilot setting on the Copilot settings page in the Microsoft 365 admin center." lightbox="media/pin-copilot-mac.png":::
 
-The following roles can access the pinning setting in the Microsoft 365 admin center:
+The following role can access the pinning setting in the Microsoft 365 admin center:
 
-- Global Administrator
 - AI Administrator
 
-To get to this setting, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2310640" target="_blank">Copilot settings page</a>, or:
+To get to this setting, go to the [Copilot settings page](https://go.microsoft.com/fwlink/?linkid=2310640), or:
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
 1. Go to **Copilot** > **Settings**.
 1. Select **Pin Microsoft 365 Copilot Chat**.
 
@@ -50,7 +52,7 @@ To get to this setting, go to the <a href="https://go.microsoft.com/fwlink/?link
 
 Copilot Chat is pinned by default to the navigation bar of Teams, Outlook, and the Microsoft 365 Copilot app for most users eligible for Copilot Chat across web, mobile, and desktop.
 
-Admins can change the pinning settings for Copilot Chat by selecting one of the following options under Settings on the Copilot Control System page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> (Global Admin or AI Admin permissions are required).
+Admins can change the pinning settings for Copilot Chat by selecting one of the following options under Settings on the Copilot Control System page in the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 - **Pin Copilot to the navigation bar (recommended)**: Copilot Chat is automatically pinned for all users. Users aren't prompted.
 
@@ -64,13 +66,13 @@ Admins can change the pinning settings for Copilot Chat by selecting one of the 
 
     :::image type="content" source="media/do-not-pin-copilot-setting.png" alt-text="Screenshot showing the option to not pin Copilot for users.":::
 
-Global Admins and AI Admins can make changes to Copilot Chat pinning settings at any time. Changes take up to 48 hours to go into effect.
+You can make changes to Copilot Chat pinning settings at any time. Changes take up to 48 hours to go into effect.
 
 ## Pin at a group or user level
 
 For large enterprises with complex needs, you can set up the Pinning policy to apply to specific groups of users. This option isn't recommended for most customers due to management complexity.
 
-1. Sign in to the <a href="https://config.office.com/" target="_blank">Microsoft 365 Apps admin center</a>.
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com/).
 2. In the **Office policies** card, select **Go to Microsoft 365 Cloud Policy**.
 3. Select **Create**.
 4. Customize the basics and scope of the policy.
@@ -118,6 +120,7 @@ If you select **Do not pin Copilot** on the **Copilot** > **Settings** page in t
 
 ## More resources
 
+- [Pin Microsoft 365 Copilot to the Windows taskbar](pin-copilot-taskbar.md)
 - [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
 - [Microsoft 365 Copilot technical documentation hub](index.yml)
 - [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts)

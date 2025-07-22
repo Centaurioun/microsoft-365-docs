@@ -3,7 +3,7 @@ title: Push content types to a hub
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires
-ms.date: 04/14/2025
+ms.date: 08/01/2025
 manager: jtremper
 audience: admin
 ms.topic: how-to
@@ -19,14 +19,15 @@ description: Learn how to push content types to a hub.
 
 # Push content types to a hub
 
+<!---
 </br>
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=6698ac03-3ec8-4429-83b8-bc10b11357dd]  
 
 </br>
+--->
 
-
-To make important content types more consistently available to SharePoint libraries and lists, you can push them to the hubs that you choose. Pushing the content types automatically adds them to any new lists and libraries created on the sites associated with the hub, and to any new sites added to the hub. This feature requires a [Microsoft Syntex license](syntex-licensing.md).
+To make important content types more consistently available to SharePoint libraries and lists, you can push them to the hubs that you choose. Pushing the content types automatically adds them to any new lists and libraries created on the sites associated with the hub, and to any new sites added to the hub. This feature requires a [pay-as-you-go license](syntex-licensing.md).
 
 For this feature to work, the content types being pushed must already be published.
 

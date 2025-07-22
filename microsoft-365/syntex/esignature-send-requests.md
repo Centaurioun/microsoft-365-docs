@@ -1,10 +1,10 @@
 ---
-title: Create a signature request from a PDF in SharePoint eSignature
+title: Create a signature request from a PDF in eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 05/06/2025
+ms.date: 08/01/2025
 audience: enabler
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -14,14 +14,14 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use SharePoint eSignature to create and send electronic signature requests from a PDF file to people inside and outside of your organization. 
+description: Learn how to use eSignature to create and send electronic signature requests from a PDF file to people inside and outside of your organization. 
 ---
 
-# Create a signature request from a PDF in SharePoint eSignature
+# Create a signature request from a PDF in eSignature
 
 ## Create a signature request from a PDF
 
-Use the following steps to start the SharePoint eSignature process. You must be signed in to SharePoint by using your work email address.
+Use the following steps to start the eSignature process. You must be signed in to SharePoint by using your work email address.
 
 > [!NOTE]
 > Only unencrypted PDF documents are supported at this time.
@@ -76,7 +76,7 @@ You can also keep track of multiple requests with stacked notifications that can
 
 #### Track and manage other provider requests
 
-Managing ongoing eSignature requests for other providers is done on the provider website or through the Approvals app in Microsoft Teams. You'll also be notified by email from the provider throughout the signing process.
+Managing ongoing electronic signature requests for other providers is done on the provider website or through the Approvals app in Microsoft Teams. You'll also be notified by email from the provider throughout the signing process.
 
 ## Create a signature request using another provider
 

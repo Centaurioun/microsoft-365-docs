@@ -1,10 +1,10 @@
 ---
-title: Overview of prebuilt document processing in SharePoint
+title: Overview of prebuilt document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/23/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: concept-article
 ms.custom: intro-overview
@@ -18,15 +18,15 @@ ms.localizationpriority:  medium
 description: Learn about prebuilt document processing in SharePoint.
 ---
 
-# Overview of prebuilt document processing in SharePoint
+# Overview of prebuilt document processing
 
 > [!NOTE]
 > Through December 2025, you can try out a [limited amount](promo-syntex.md#included-monthly-capacity) of prebuilt document processing and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).
 
-In addition to using [custom models](model-types-overview.md#custom-models), Microsoft Syntex offers prebuilt models that help automate information extraction from documents—no training required. These models are ready to use and designed to recognize common document types and data patterns, so you can get started quickly and scale efficiently.
+In addition to using [custom models](model-types-overview.md#custom-models), document processing offers prebuilt models that help automate information extraction from documents—no training required. These models are ready to use and designed to recognize common document types and data patterns, so you can get started quickly and scale efficiently.
 
 > [!NOTE]
-> Microsoft respects the privacy and ownership of data you use to train and process models in Syntex. None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models. Your data remains securely within your organization’s tenant. For more information, see [Microsoft data protection and privacy](https://www.microsoft.com/en-us/trust-center/privacy).
+> Microsoft respects the privacy and ownership of data you use to train and process models. None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models. Your data remains securely within your organization’s tenant. For more information, see [Microsoft data protection and privacy](https://www.microsoft.com/en-us/trust-center/privacy).
 
 ## Introduction to prebuilt models
 
