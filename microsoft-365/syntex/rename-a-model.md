@@ -1,11 +1,11 @@
 ---
-title: Rename a document processing model in SharePoint
+title: Rename a document processing model
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 03/09/2025
+ms.date: 08/01/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how and why to rename a document processing model in SharePoint.
 ---
 
-# Rename a document processing model in SharePoint
+# Rename a document processing model
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 

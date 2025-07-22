@@ -1,10 +1,10 @@
 ---
-title: Overview of document translation in SharePoint
+title: Overview of document translation
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/23/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn about the document translation service in SharePoint.
 ---
 
-# Overview of document translation in SharePoint
+# Overview of document translation
 
 > [!NOTE]
 > Through December 2025, you can try out a [limited amount](promo-syntex.md#included-monthly-capacity) of document translation and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).

@@ -1,11 +1,11 @@
 ---
-title: Overview of taxonomy tagging in SharePoint
+title: Overview of taxonomy tagging
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 06/23/2025
+ms.date: 08/01/2025
 ms.topic: concept-article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 description: Learn about taxonomy tagging in SharePoint.
 ---
 
-# Overview of taxonomy tagging in SharePoint
+# Overview of taxonomy tagging
 
 > [!NOTE]
 > Through December 2025, you can try out a [limited amount](promo-syntex.md#included-monthly-capacity) of taxonomy tagging and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).

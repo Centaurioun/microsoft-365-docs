@@ -1,10 +1,10 @@
 ---
-title: Set up and manage document translation in SharePoint
+title: Set up and manage document translation
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/23/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up document translation in SharePoint.
 ---
 
-# Set up and manage document translation in SharePoint
+# Set up and manage document translation
 
 Document translation is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
@@ -25,7 +25,7 @@ Document translation is a pay-as-you-go service that is set up in the Microsoft 
 
 ### Licensing
 
-Before you can use document translation, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Document translation is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use document translation, you must first link an Azure subscription in [pay-as-you-go](syntex-azure-billing.md). Document translation is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -35,7 +35,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up translation
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), document translation is automatically set up and turned on for all SharePoint sites and for OneDrive.
+After an [Azure subscription is linked to pay-as-you-go](syntex-azure-billing.md), document translation is automatically set up and turned on for all SharePoint sites and for OneDrive.
 
 ## Manage sites
 

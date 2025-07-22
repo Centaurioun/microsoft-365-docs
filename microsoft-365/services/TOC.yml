@@ -14,7 +14,7 @@ items:
               items:
                 - name: Microsoft 365 Copilot 
                   href: pay-as-you-go-setup-copilot.md
-                - name: Microsoft Syntex 
+                - name: Document processing 
                   href: pay-as-you-go-setup.md
             - name: Set up a budget
               href: pay-as-you-go-budget.md
@@ -23,7 +23,7 @@ items:
       items:
             - name: Microsoft 365 Copilot
               href: /sharepoint/microsoft-365-pay-as-you-go-pricing
-            - name: Microsoft Syntex
+            - name: Document processing
               href: ../syntex/syntex-pay-as-you-go-services.md
             - name: Microsoft 365 Archive
               href: ../syntex/syntex-pay-as-you-go-services.md#storage-services
@@ -45,7 +45,7 @@ items:
                     - name: Use agents with pay-as-you-go billing 
                       href: /sharepoint/sharepoint-agents-azure-billing
 
-            - name: Microsoft Syntex
+            - name: Document processing
               items:
                 - name: Try out Syntex services
                   href: ../syntex/promo-syntex.md
@@ -58,25 +58,6 @@ items:
                       href: ../syntex/autofill-setup.md
                     - name: Create autofill columns
                       href: ../syntex/autofill.md
-
-                - name: Content assembly
-                  items: 
-                    - name: Overview 
-                      href: ../syntex/content-assembly.md
-                    - name: Admin setup 
-                      href: ../syntex/content-assembly-setup.md
-                    - name: Create a modern template
-                      href: ../syntex/content-assembly-modern-template.md
-                    - name: Map template fields to library columns
-                      href: ../syntex/content-assembly-map-fields.md
-                    - name: Create conditional sections in templates
-                      href: ../syntex/content-assembly-conditional-sections.md
-                    - name: Edit a modern template
-                      href: ../syntex/content-assembly-edit-template.md
-                    - name: Create a document from a modern template 
-                      href: ../syntex/content-assembly-create-document.md
-                    - name: Generate documents using Power Automate 
-                      href: ../syntex/automate-document-generation.md
 
                 - name: Document translation
                   items: 
@@ -110,6 +91,32 @@ items:
                     - name: Troubleshoot a request 
                       href: ../syntex/esignature-troubleshoot.md
 
+                - name: Optical character recognition 
+                  items: 
+                    - name: Overview 
+                      href: ../syntex/ocr-overview.md
+                    - name: Admin setup 
+                      href: ../syntex/ocr.md
+
+                - name: Content assembly
+                  items: 
+                    - name: Overview 
+                      href: ../syntex/content-assembly.md
+                    - name: Admin setup 
+                      href: ../syntex/content-assembly-setup.md
+                    - name: Create a modern template
+                      href: ../syntex/content-assembly-modern-template.md
+                    - name: Map template fields to library columns
+                      href: ../syntex/content-assembly-map-fields.md
+                    - name: Create conditional sections in templates
+                      href: ../syntex/content-assembly-conditional-sections.md
+                    - name: Edit a modern template
+                      href: ../syntex/content-assembly-edit-template.md
+                    - name: Create a document from a modern template 
+                      href: ../syntex/content-assembly-create-document.md
+                    - name: Generate documents using Power Automate 
+                      href: ../syntex/automate-document-generation.md
+
                 - name: Image tagging
                   items: 
                     - name: Overview 
@@ -119,12 +126,14 @@ items:
                     - name: Find and manage images
                       href: ../syntex/image-tagging.md
 
-                - name: Optical character recognition 
+                - name: Taxonomy tagging 
                   items: 
                     - name: Overview 
-                      href: ../syntex/ocr-overview.md
+                      href: ../syntex/taxonomy-tagging-overview.md
                     - name: Admin setup 
-                      href: ../syntex/ocr.md
+                      href: ../syntex/taxonomy-tagging-setup.md
+                    - name: Find and manage terms 
+                      href: ../syntex/taxonomy-tagging.md
 
                 - name: Prebuilt document processing
                   items:
@@ -231,15 +240,6 @@ items:
                           href: ../syntex/page-range.md
                         - name: Analyze model usage
                           href: ../syntex/model-usage-analytics.md
-
-                - name: Taxonomy tagging 
-                  items: 
-                    - name: Overview 
-                      href: ../syntex/taxonomy-tagging-overview.md
-                    - name: Admin setup 
-                      href: ../syntex/taxonomy-tagging-setup.md
-                    - name: Find and manage terms 
-                      href: ../syntex/taxonomy-tagging.md
 
                 - name: Unstructured document processing
                   items:

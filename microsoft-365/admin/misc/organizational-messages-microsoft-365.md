@@ -286,7 +286,7 @@ Advanced features are accessible to admins within Organizational messages in Mic
 
 - Microsoft 365 E3-E5 licenses
 - Office 365 E3-E5 licenses
-- Windows 365 E3-E5 licenses
+- Windows Enterprise E3-E5 licenses
 
 ### End user – receiving messages with advanced features
 
@@ -294,7 +294,7 @@ End users within a tenant are eligible to receive messages created using advance
 
 - Microsoft 365 E3-E5 license
 - Office 365 E3-E5 license
-- Windows 365 E3-E5 license
+- Windows Enterprise E3-E5 license
 
 ### Current advanced features
 

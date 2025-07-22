@@ -1,11 +1,11 @@
 ---
-title: Find and manage terms using taxonomy tagging in SharePoint
+title: Find and manage terms using taxonomy tagging
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 04/13/2025
+ms.date: 08/01/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 description: Learn how to use taxonomy tagging to search, sort, filter, and manage terms in SharePoint.
 ---
 
-# Find and manage terms using taxonomy tagging in SharePoint
+# Find and manage terms using taxonomy tagging
 
 Before you can use taxonomy tagging, you need to turn it on in a document library. There are two methods you can use to do this:
 

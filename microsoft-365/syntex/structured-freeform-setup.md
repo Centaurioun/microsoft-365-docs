@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/24/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.custom: setup
@@ -26,7 +26,7 @@ Structured and freeform document processing is a pay-as-you-go service that is s
 
 ### Licensing
 
-Before you can use structured and freeform document processing, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Structured and freeform document processing is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use structured and freeform document processing, you must first link an Azure subscription in [pay-as-you-go](syntex-azure-billing.md). Structured and freeform document processing is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -36,7 +36,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up structured and freeform document processing
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), structured and freeform document processing is automatically set up and enabled for all SharePoint sites.
+After an [Azure subscription is linked to pay-as-you-go](syntex-azure-billing.md), structured and freeform document processing is automatically set up and enabled for all SharePoint sites.
 
 ## Manage sites
 
@@ -84,7 +84,7 @@ To turn off structured and freeform document processing, follow these steps.
 
 ### Set up a default Power Platform environment
 
-Your tenant comes with a default Power Platform environment. To make the default environment ready for to use with Microsoft Syntex, follow these steps:
+Your tenant comes with a default Power Platform environment. To make the default environment ready for to use, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a Global Administrator, a Power Platform Administrator, or a Dynamics 365 Administrator.
 

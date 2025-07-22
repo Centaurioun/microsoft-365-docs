@@ -19,6 +19,8 @@ ms.localizationpriority: medium
 
 This guide provides steps for deploying the Microsoft 365 Learning Tool Interoperability® (LTI) app in Moodle.
 
+:::image type="content" source="./media/moodle.png" alt-text="Screenshot of Moodle." border="true":::
+
 For an overview of the Microsoft 365 LTI integration for learning management systems (LMS), see [Integrating Microsoft products with your Learning Management System](/microsoft-365/lti/).
 
 > [!IMPORTANT]
@@ -150,12 +152,12 @@ Learn more about Microsoft 365 LTI application scenarios for Instructors and Stu
 
 If you receive an error message regarding cookies being blocked, check your browser's address bar for an icon to allow third-party cookies and popups. If this issue persists, review your settings related to cookies and popups to make sure they're allowed for this app.
 
-## Getting help for admins and educators
+## Getting help and giving feedback
 
 - LMS and Microsoft 365 admins can contact Microsoft [Education Support](https://aka.ms/edusupport) to help resolve configuration and deployment issues, for themselves or on behalf of users.
 
 - Educators and Learners can contact support or give feedback directly from the app through the help and feedback menu.
 
-:::image type="content" source="./media/feedback.png" alt-text="Screenshot of link to send feedback for Microsoft Teams Assignments." border="true":::
+:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI ." border="true":::
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. (**[**1edtech.org**](https://1edtech.org)**).

@@ -1,10 +1,10 @@
 ---
-title: Supported entity categories for the sensitive information prebuilt model in SharePoint
+title: Supported entity categories for the sensitive information prebuilt model
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 01/28/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: article
 ms.service: microsoft-syntex
@@ -19,7 +19,7 @@ description: Learn about the entity categories used in the prebuilt sensitive in
 
 ---
 
-# Supported entity categories for the sensitive information prebuilt model in SharePoint
+# Supported entity categories for the sensitive information prebuilt model
 
 The following list shows the entity categories that can be returned by the prebuilt sensitive information model.
 

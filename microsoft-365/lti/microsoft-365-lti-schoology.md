@@ -4,7 +4,7 @@ description: Learn how to deploy the Microsoft 365 Learning Tool Interoperabilit
 author: jennplatt
 ms.author: avering
 manager: michal.gideoni
-ms.date: 07/10/2025
+ms.date: 07/21/2025
 audience: admin
 ms.topic: how-to
 ms.service: msteams
@@ -34,7 +34,7 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 ## One-time setup by an LMS administrator
 
-1. Access the **Teams Assignments** app in the **Schoology** [**App Center**](https://app.schoology.com/apps) by copying this direct link into a browser: `https://_\<apps>_.schoology.com/apps/profile/6017478062` and replacing the _\<apps>_ portion of the URL with your organizations custom subdomain (for example: districtXYZ.schoology.com/apps/profile/6017478062). Then browse the app store profile.
+1. Access the **Teams Assignments** app in the **Schoology** [**App Center**](https://app.schoology.com/apps) by copying this direct link into a browser: `https://_\<apps>_.schoology.com/apps/profile/7876809197` and replacing the _\<apps>_ portion of the URL with your organizations custom subdomain (for example: districtXYZ.schoology.com/apps/profile/7876809197). Then browse the app store profile.
 
 1. Select **Login** in the upper right to log into your Schoology Learning instance as an administrator with access to install and configure the app.
 
@@ -56,9 +56,9 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 ## First-time Configuration by an LMS Administrator
 
-You must launch the app for the first time as a user with the **Brightspace System Administrator** role to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step!
+You must launch the app for the first time as a user with the **System Admin** role to complete the configuration for your deployment and activate the tool. Users won't have access until you complete this step!
 
-1. As a Brightspace System Administrator, access any Course that has the Microsoft Education link added
+1. As a System Admin, access any Course that has the Microsoft Education link added
 
 1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
 <!-- -->
@@ -76,12 +76,12 @@ Learn more about Microsoft 365 LTI application scenarios for Instructors and Stu
 
 If you receive an error message regarding cookies being blocked, check your browser's address bar for an icon to allow third-party cookies and popups. If this issue persists, review your settings related to cookies and popups to make sure they're allowed for this app.
 
-## Getting help for admins and educators
+## Getting help and giving feedback
 
 - LMS and Microsoft 365 admins can contact Microsoft [Education Support](https://aka.ms/edusupport) to help resolve configuration and deployment issues, for themselves or on behalf of users.
 
 - Educators and Learners can contact support or give feedback directly from the app through the help and feedback menu.
 
-:::image type="content" source="./media/feedback.png" alt-text="Screenshot of link to send feedback for Microsoft Teams Assignments." border="true":::
+:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI ." border="true":::
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. (**[**1edtech.org**](https://1edtech.org)**).

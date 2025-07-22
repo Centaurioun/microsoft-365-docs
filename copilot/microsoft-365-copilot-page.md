@@ -26,11 +26,11 @@ When [Microsoft 365 Copilot](microsoft-365-copilot-overview.md) is available in 
 
 The admin center also gives shortcuts to other services that can affect how Copilot is used in your organization.
 
+The following video is an overview of managing Microsoft 365 Copilot for your organization. It's 1 minute and 45 seconds long.
+
+> [!VIDEO 4ad48e80-9329-41fd-8d63-0b443281ec92]
+
 This article is for IT administrators, and lists some of the Copilot scenarios you can control in the Microsoft 365 admin center.
-
-This article applies to:
-
-- Microsoft 365 Copilot
 
 > [!NOTE]
 >
