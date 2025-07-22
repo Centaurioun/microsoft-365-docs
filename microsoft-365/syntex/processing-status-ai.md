@@ -1,5 +1,5 @@
 ---
-title: Monitor the activity status of files processed for autofill and translation in SharePoint
+title: Monitor the activity status of files processed for autofill and translation
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to monitor the processing status of files in a SharePoint document library.
 ---
 
-# Monitor the activity status of files processed for autofill and translation in SharePoint
+# Monitor the activity status of files processed for autofill and translation
 
 <sup>**Applies to:**  &ensp; &#10003; Autofill columns &ensp; | &ensp; &#10003; Document translation</sup>
 
