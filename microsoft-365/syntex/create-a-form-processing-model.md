@@ -1,10 +1,10 @@
 ---
-title: Train a structured or freeform document processing model in Microsoft Syntex
+title: Train a structured or freeform document processing model
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/13/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -15,16 +15,16 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
-description: Learn how to train a structured or freeform document processing model in Microsoft Syntex.
+description: Learn how to train a structured model or freeform model for document processing for Microsoft 365.
 ---
 
-# Train a structured or freeform document processing model in Microsoft Syntex
+# Train a structured or freeform document processing model
 
 <!---
 Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—Syntex users can create a [structured document processing](form-processing-overview.md) model directly from a SharePoint document library. 
 --->
 
-Follow the instructions in [Create a model in Microsoft Syntex](create-syntex-model.md) to create a structured or freeform document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
+Follow the instructions in [Create an enterprise model for document processing](create-syntex-model.md) to create a structured or freeform document processing model in a content center. Or, follow the instructions in [Create a model on a local SharePoint site](create-local-model.md) to create the model on a local site. Then use this article to train your model.
 
 ![Diagram of the workflow to train an AI Builder model.](../media/content-understanding/train-aib-model.png)
 
@@ -46,7 +46,7 @@ After you create your structured or freeform document processing model, the **Ch
 
 2.  You can create as many collections of document layouts you want your model to process. For detailed steps, see [Group documents by collections](/ai-builder/create-form-processing-model#group-documents-by-collections). 
 
-3. After you create your collections and add at least five example files for each, AI Builder on Microsoft Syntex will examine the uploaded documents to detect the fields and tables. This process usually takes a few seconds. When the analysis is complete, you can proceed with tagging the documents.
+3. After you create your collections and add at least five example files for each, AI Builder will examine the uploaded documents to detect the fields and tables. This process usually takes a few seconds. When the analysis is complete, you can proceed with tagging the documents.
 
 ## Step 2: Tag fields and tables
 
@@ -100,7 +100,7 @@ To run the flow:
 ### Use flows to extract information
 
 > [!IMPORTANT]
-> The information in this section doesn't apply to the latest release of Microsoft Syntex. It is left as reference only for the form processing models that were created in previous releases. In the latest release, you no longer need to configure the flows to process existing files.
+> The information in this section doesn't apply to the latest release of document processing models. It is left as reference only for the form processing models that were created in previous releases. In the latest release, you no longer need to configure the flows to process existing files.
 
 Two flows are available to process a selected file or batch of files in a library where a structured or freeform document processing model has been applied.
 

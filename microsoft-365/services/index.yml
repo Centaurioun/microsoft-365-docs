@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/27/2025 #Required; mm/dd/yyyy format
+  ms.date: 07/18/2025 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
   titleSuffix: Microsoft 365
 
@@ -54,7 +54,7 @@ landingContent:
         links:
           - text: Microsoft 365 Copilot
             url: /sharepoint/microsoft-365-pay-as-you-go-pricing
-          - text: Microsoft Syntex
+          - text: Document processing
             url: ../syntex/syntex-pay-as-you-go-services.md
           - text: Microsoft 365 Archive
             url: ../syntex/syntex-pay-as-you-go-services.md#storage-services
@@ -80,28 +80,28 @@ landingContent:
             url: ../backup/backup-overview.md
 
 # Card 6
-  - title: Document & image services
+  - title: Document processing services
     linkLists:
       - linkListType: overview
         links:
           - text: Autofill columns
             url: ../syntex/autofill-overview.md
-          - text: Content assembly
-            url: ../syntex/content-assembly.md
           - text: Document translation
             url: ../syntex/translation-overview.md
           - text: eSignature
             url: ../syntex/esignature-overview.md
-          - text: Image tagging
-            url: ../syntex/image-tagging-overview.md
           - text: Optical character recognition
             url: ../syntex/ocr-overview.md
+          - text: Content assembly
+            url: ../syntex/content-assembly.md
+          - text: Image tagging
+            url: ../syntex/image-tagging-overview.md
+          - text: Taxonomy tagging
+            url: ../syntex/taxonomy-tagging-overview.md
           - text: Prebuilt document processing
             url: ../syntex/prebuilt-overview.md
           - text: Structured and freeform document processing
             url: ../syntex/form-processing-overview.md
-          - text: Taxonomy tagging
-            url: ../syntex/taxonomy-tagging-overview.md
           - text: Unstructured document processing
             url: ../syntex/document-understanding-overview.md
 
