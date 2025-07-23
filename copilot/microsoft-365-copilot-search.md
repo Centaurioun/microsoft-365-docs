@@ -69,3 +69,29 @@ Copilot Search allows admins to curate answers that provide concise, authoritati
 - **People:** Surface coworkers' roles and show how they fit into the organization.
 
 For more information, see [how to curate answers for Copilot Search](/microsoftsearch/setup-microsoft-search#step-2-create-answers).
+
+## How is Microsoft 365 Copilot Search different from Microsoft 365 Copilot Chat? 
+The following table shows some of the key differences between Microsoft 365 Copilot and Microsoft 365 Copilot Chat.
+
+| Feature | Microsoft 365 Copilot Search  | Microsoft 365 Copilot Chat  |
+|---|---|---|
+| Best for | Find what you need quickly | Generate deeper answers, created content and get the task done |
+| Interaction style | Query-based (search box) | Conversational (chat-based) |
+| Data sources | Microsoft Graph & third-party connectors | Microsoft Graph, third-party connectors, web |
+
+## How is Microsoft 365 Copilot Search different from Microsoft Search? 
+
+The following table shows a summary of key comparisons between Microsoft 365 Copilot Search (Paid) and Microsoft Search (Free), focusing on the most relevant features:
+
+| Feature/Capability | Microsoft Copilot Search (paid) | Microsoft Search (free) |
+|---|---|---|
+| UI Entry Point | Microsoft 365 Copilot App (Web, Desktop, Mobile) Microsoft 365 Copilot App (Web, Desktop, Mobile), SharePoint (organizational tab) |
+| User Eligibility | Requires Microsoft 365 Copilot license | Available to unpaid Entra ID users |
+| Search Experience | AI-powered, semantic search; universal search across M365 & non-M365 sources; modern UX | Keyword-based search; interleaved results; Teams/Outlook in Messages vertical |
+| Graph Connector Support (3P) | Instant support for all tenant-enabled connectors with semantic search & personalization | Requires admin setup for connectors to appear as verticals with result-types and filters. No semantic search. |
+| Integration with Copilot Chat | Deep integration with Chat —via Copilot Chat answers | No integration |
+| Security & Privacy | Enterprise-grade security and privacy; sensitivity labels in UX | Same baseline security; sensitivity labels in UX. Already available as default |
+| Integrations | Native Edge integration (people-centric, tenant-scoped search) | Native Edge integration (people-centric, tenant-scoped search) |
+| Administration | No setup required; admin can configure bookmarks/acronyms; Admin analytics reports will be available starting August 2025 | Admin config for bookmarks/acronyms; Admin analytics available |
+| Future Updates | Document-level AI summary, enhanced people search, Ranking/Relevance and natural language improvements and more | N/A |
+
