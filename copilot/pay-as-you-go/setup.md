@@ -97,8 +97,8 @@ If you have an existing billing policy that doesn’t have a budget assigned to 
    - To send budget spending alerts, in the **Recipients** box, select the name of one or more groups that you want to receive alert messages.
    - Under the **Send alerts when usage reaches this percentage of budget** section, the default value is 100%. To add other percentages, select **Add more**, then enter the percentage at which you want an alert sent.
 
-   > [!NOTE]
-   > It can take up to 24 hours for recipients to receive budget alert notifications.
+      > [!NOTE]
+      > It can take up to 24 hours for recipients to receive budget alert notifications.
 
    - When you’re finished configuring the budget, select **Save**.
 
