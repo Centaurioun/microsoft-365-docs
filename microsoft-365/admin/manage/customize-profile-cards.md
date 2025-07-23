@@ -12,4 +12,5 @@ ms.topic: how-to
 ms.date:     07/24/2025
 ---
 
-Enriching and customizing your organization's profile cards
+# Enriching and customizing your organization's profile cards
+
