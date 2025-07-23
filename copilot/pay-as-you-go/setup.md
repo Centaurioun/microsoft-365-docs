@@ -49,7 +49,7 @@ To set up pay-as-you-go, you must have the following prerequisites:
 
 ## Add a billing policy
 
-To set up pay-as-you-go billing for Microsoft 365 Copilot, you must first add a billing policy. You can create up to 10 billing policies for your tenant.
+To set up pay-as-you-go billing for Microsoft 365 Copilot, you must first add a billing policy in the Microsoft 365 admin center. You can create up to 10 billing policies for your tenant.
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Copilot** > **Billing & usage** page.
 2. On the **Billing policies** tab, select **Add a billing policy**.
@@ -57,22 +57,22 @@ To set up pay-as-you-go billing for Microsoft 365 Copilot, you must first add a 
 4. On the **Choose users** page, select a user scope for the billing policy, then select **Next**. You can choose from the following user scopes:
 
     - **All Users**: All users in the tenant are included in the billing policy
-    - **Specific group**: Assign a specific security group to be included in the billing policy
-5. On the **Budget** page, select the checkbox next to **Set a budget for this policy**. This lets you specify a spending budget for Copilot usage by your users.
+    - **Specific group**: Assign a specific security group to include in the billing policy
+5. On the **Budget** page, select the checkbox next to **Set a budget for this policy**. This option lets you specify a spending budget for your user's Copilot usage.
    - Enter a value for the budget limit.
    - Select when to reset the budget spending: first day of the month, first day of the quarter, or first day of the year.
-   - To send budget spending alerts, in the Recipients box, select the name of one or more groups that you want to receive alert messages.
-   - Under the Send alerts when usage reaches this percentage of budget section, the default value is 100%. To add additional percentages, select Add more, then enter the percentage at which you want an alert sent.
+   - To send budget spending alerts, in the **Recipients** box, select the name of one or more groups that you want to receive alert messages.
+   - Under the **Send alerts when usage reaches this percentage of budget** section, the default value is 100%. To add other percentages, select **Add more**, then enter the percentage at which you want an alert sent.
 
-   > [!NOTE]
-   > It can take up to 24 hours for recipients to receive budget alert notifications.
+      > [!NOTE]
+      > It can take up to 24 hours for recipients to receive budget alert notifications.
 
    - When you're finished configuring the budget, select **Next**.
 
-   > [!IMPORTANT]
-   > When you set a budget amount, it triggers email notifications based on your organization's spending relative to that limit. However, the system doesn't enforce the budget or prevent your organization from exceeding it. Usage can continue uninterrupted even after the budget is surpassed, ensuring no disruption to the service.
-
 6. On the **Review and finish** page, review the details, then select **Create policy**.
+
+> [!IMPORTANT]
+> When you set a budget amount, it triggers email notifications based on your organization's spending relative to that limit. However, the system doesn't enforce the budget or prevent your organization from exceeding it. Usage can continue uninterrupted even after the budget is surpassed, ensuring no disruption to the service.
 
 ## Connect a billing policy
 
@@ -90,20 +90,20 @@ If you have an existing billing policy that doesn’t have a budget assigned to 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Copilot** > **Billing & usage** page.
 2. On the **Billing policies** tab, select an existing billing policy.
 3. In the flyout panel, select the **Budget** tab, then select **Settings**.
-4. To set a budget, select the checkbox next to **Set a budget for this policy**. This lets you specify a spending budget for Copilot usage by your users.
+4. To set a budget, select the checkbox next to **Set a budget for this policy**. This option lets you specify a spending budget for Copilot usage by your users.
 
    - Enter a value for the budget limit.
    - Select when to reset the budget spending: first day of the month, first day of the quarter, or first day of the year.
    - To send budget spending alerts, in the **Recipients** box, select the name of one or more groups that you want to receive alert messages.
-   - Under the **Send alerts when usage reaches this percentage of budget** section, the default value is 100%. To add more percentages, select **Add more**, then enter the percentage at which you want an alert sent.
+   - Under the **Send alerts when usage reaches this percentage of budget** section, the default value is 100%. To add other percentages, select **Add more**, then enter the percentage at which you want an alert sent.
 
    > [!NOTE]
    > It can take up to 24 hours for recipients to receive budget alert notifications.
 
    - When you’re finished configuring the budget, select **Save**.
 
-   > [!IMPORTANT]
-   > When you set a budget amount, it triggers email notifications based on your organization’s spending relative to that limit. However, the system doesn’t enforce the budget or prevent your organization from exceeding it. Usage can continue uninterrupted even after the budget is surpassed, ensuring no disruption to the service.
+> [!IMPORTANT]
+> When you set a budget amount, it triggers email notifications based on your organization’s spending relative to that limit. However, the system doesn’t enforce the budget or prevent your organization from exceeding it. Usage can continue uninterrupted even after the budget is surpassed, ensuring no disruption to the service.
 
 ## View spending for your organization
 
@@ -119,7 +119,7 @@ Disabling pay-as-you-go for a Copilot service involves disconnecting the billing
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Copilot** > **Billing & usage** page.
 2. Select the **Pay-as-you-go services** tab, then select the Copilot service, like Microsoft 365 Copilot Chat or SharePoint agent.
-3. Clear the checkboxes of the billing policies that you want to disconnect..
+3. Clear the checkboxes of the billing policies that you want to disconnect.
 4. Read and accept the confirmation. This step completes the disconnection.
 
 When you turn off pay-as-you-go, it can take up to two hours for users to stop being able to use the agents. If the agent is unused, it stops being available when pay-as-you-go is turned off.
@@ -134,9 +134,9 @@ After you disable pay-as-you-go, you can also delete the billing policy.
   
 ## What if pay-as-you-go is already set up in the Power Platform admin center?
 
-If you already set up a pay-as-you-go billing policy in the Power Platform admin center, you can create another policy in the Microsoft 365 admin center. Both policies can coexist and you won't get billed twice. The billing system ensures that you're only billed once for your organization's usage, regardless of the setup location.
+If you already set up a pay-as-you-go billing policy in the Power Platform admin center, you can create another policy in the Microsoft 365 admin center. Both policies can coexist and you're only billed once. The billing system ensures that you're only billed once for your organization's usage, regardless of the billing policy location.
 
-Although the policies can coexist, we recommend that you turn off any pay-as-you-go billing policy in the Power Platform admin center before you enable it in the Microsoft 365 admin center. This provides a single location for you to manage your pay-as-you-go policies.
+Although the policies can coexist, we recommend that you turn off any pay-as-you-go billing policy in the Power Platform admin center before you enable it in the Microsoft 365 admin center. By disabling the policy in the Power Platform admin center, you can manage your pay-as-you-go policies from single location.
 
 ## Related articles
 
