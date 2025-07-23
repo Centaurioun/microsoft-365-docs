@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 05/27/2025
+ms.date: 07/20/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -108,12 +108,12 @@ The document is set as read-only, and the document will be shared with the appro
 
 After making the necessary changes to the document, filling in the required field values, running the revision analysis to review all section modifications, and obtaining approval according to the workflow set at the template level, you can then send the generated agreement for electronic signatures.
 
-SharePoint Agreements supports SharePoint eSignature and other signature providers that can be used to send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
+SharePoint Agreements supports the eSignature service and other signature providers that can be used to send signature requests to recipients. For more information, see [Overview of eSignature](/microsoft-365/syntex/esignature-overview).
 
 > [!NOTE]
-> The document can only be sent for eSignature if at least one signature field is configured at the template level.
+> The document can only be sent for electronic signature if at least one signature field is configured at the template level.
 
-To request eSignature for a document, follow these steps:
+To request an electronic signature for a document, follow these steps:
 
 1. With the agreement open in Microsoft Word, on the **Generate documents** panel, select **Request signatures**.
 
@@ -122,7 +122,7 @@ To request eSignature for a document, follow these steps:
     > [!NOTE]
     > If you select **Edit document** from the pane at any time during or after the electronic signature process, the document's state will be reset to **Draft**, and any pending signature requests will be canceled. You will need to request signatures again with the modified document after making the relevant changes. This ensures that the document's integrity is maintained both during and after the signature process.
 
-#### Use SharePoint eSignature
+#### Use eSignature
 
 1. Enter the name for the signature request, and then enter the requested signers' names or email addresses (whether internal or external to the organization). Optionally, you can add more information about the request for the signers.
 

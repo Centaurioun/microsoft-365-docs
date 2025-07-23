@@ -60,8 +60,8 @@ You must launch the app for the first time as a user with the **System Admin** r
 
 1. As a System Admin, access any Course that has the Microsoft Education link added
 
-1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
-<!-- -->
+1. Continue with the [**Microsoft 365 LTI first-time configuration steps**](microsoft-365-lti-first-time-configuration.md) to complete the configuration for your organization.
+
 ## Ongoing use by instructors and students in a course
 
 On first access, users must sign in using their Microsoft 365 (Microsoft Entra) account.
@@ -82,6 +82,6 @@ If you receive an error message regarding cookies being blocked, check your brow
 
 - Educators and Learners can contact support or give feedback directly from the app through the help and feedback menu.
 
-:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI ." border="true":::
+:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI." border="true":::
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. (**[**1edtech.org**](https://1edtech.org)**).

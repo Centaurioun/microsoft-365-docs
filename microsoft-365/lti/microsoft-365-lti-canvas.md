@@ -99,8 +99,7 @@ You must launch the app for the first time as a user with the **Canvas Administr
 
     :::image type="content" source="./media/microsoft-education-navigation.png" alt-text="Screenshot of Microsoft Education in the navigation pane." border="true":::
 
-1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
-<!-- -->
+1. Continue with the [**Microsoft 365 LTI first-time configuration steps**](microsoft-365-lti-first-time-configuration.md) to complete the configuration for your organization.
 
 The Microsoft Education app is now deployed, configured, and ready to use in your Canvas courses!
 
@@ -125,6 +124,6 @@ If you receive an error message regarding cookies being blocked, check your brow
 
 - Educators and Learners can contact support or give feedback directly from the app through the help and feedback menu.
 
-:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI ." border="true":::
+:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI." border="true":::
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. (**[**1edtech.org**](https://1edtech.org)**).
