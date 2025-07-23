@@ -4,7 +4,7 @@ description: Learn how to deploy the Microsoft 365 Learning Tool Interoperabilit
 author: jennplatt
 ms.author: avering
 manager: michal.gideoni
-ms.date: 07/10/2025
+ms.date: 07/23/2025
 audience: admin
 ms.topic: how-to
 ms.service: msteams
@@ -228,10 +228,10 @@ LtiLinkItem contentItem = new LtiLinkItem
 
 - N/A
 
-**Additional Details:**
+<!-- **Additional Details:**
 
 - 
-
+-->
 **Allowed File Type:**
 
 - All file types allowed
@@ -655,10 +655,7 @@ Post Call - <LineItemUrl>/Scores
 </details>
 
 <details>
-<summary>Submit a Assignment using One Drive (Templateless)
-
-&nbsp;&nbsp;
-</summary>
+<summary>Submit a Assignment using One Drive (Templateless)</summary>
 
 **Feature/Launch:**
 
@@ -905,10 +902,10 @@ Groups = []
 
 - Admin settings UX launch
 
-**Description:**
+<!--**Description:**
 
 -
-
+-->
 **Role:**
 
 - System/person#Administrator  
@@ -926,7 +923,7 @@ Groups = []
 
 - Renders admin settings UX
 
-**Advantage Service Calls:**
+<!-- **Advantage Service Calls:**
 
 -
 
@@ -941,7 +938,7 @@ Groups = []
 **Previewable File Types:**
 
 -
-
+-->
 &nbsp;&nbsp;
 </details>
 
