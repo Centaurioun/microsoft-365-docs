@@ -21,7 +21,7 @@ This guide provides steps for deploying the Microsoft 365 Learning Tool Interope
 
 :::image type="content" source="./media/microsoft-365-lti.png" alt-text="Screenshot of Microsoft 365 LTI." border="true":::
 
-For an overview of the Microsoft 356 LTI integration for learning management systems (LMS), see [Integrating Microsoft products with your Learning Management System](/microsoft-365/lti/).
+For an overview of the Microsoft 365 LTI integration for learning management systems (LMS), see [Integrating Microsoft products with your Learning Management System](/microsoft-365/lti/).
 
 ## Request a Microsoft 365 sandbox environment
 
@@ -32,7 +32,7 @@ For an overview of the Microsoft 356 LTI integration for learning management sys
 
 1. You first need a Microsoft Partner ID. Your Microsoft Partner ID appears in the top right corner next to your name when you log into the [Microsoft Partner Center](https://partner.microsoft.com/). If you don't have one, you can obtain one by [joining the Microsoft AI Cloud Partner program](https://partner.microsoft.com/partnership).
 
-1. When you have your Microsoft Parter ID, request a sandbox using one of the following methods based on your business type:
+1. When you have your Microsoft Partner ID, request a sandbox using one of the following methods based on your business type:
 
     - [Request a Microsoft 365 Education development/testing sandbox](https://m365edupartnerportal.powerappsportals.com/MSEDUIntegrationSignup/) as an Education ISV or SI partner who builds and supports integrations with Microsoft products and services.
     - [Request to join the Microsoft Global Training Partner program](https://m365edupartnerportal.powerappsportals.com/MSGTPSignup/) as a Training Partner who delivers training and support to customers on Microsoft products and services.
@@ -118,7 +118,7 @@ Every platform may have different options and steps for completing tool registra
     |---|---|---|---|
     | **t** | ResourceLink.title | Title of the resource lineItem (assignment) from the label property | t=$ResourceLink.title |
     | **dd** | ResourceLink.submission.endDateTime | Due date of the resource lineItem (assignment) from the endDateTime property | dd=$ResourceLink.submission.endDateTime |
-    | **mp** | N/A | Maximum score possible for a lineItem submission form the scoreMaximum property | mp=$ResourceLink.lineItem.scoreMaximum |
+    | **mp** | N/A | Maximum score possible for a lineItem submission from the scoreMaximum property | mp=$ResourceLink.lineItem.scoreMaximum |
     | **csid** | CourseOffering.sourcedId | Sourced ID for the course offering in the LMS | csid=$CourseOffering.sourcedId |
     | **ssid** | CourseSection.sourcedId | Sourced IDs for the course sections in the LMS | ssid=$CourseSection.sourcedId |
 
@@ -421,7 +421,7 @@ LtiLinkItem contentItem = new LtiLinkItem
 
 **Description:**
 
-- Students able able to view and get their own copy of the Microsoft activity (document, assignment, etc.) to view, complete, and submit
+- Students able to view and get their own copy of the Microsoft activity (document, assignment, etc.) to view, complete, and submit
 
 **Role:**
 
@@ -535,7 +535,7 @@ LtiLinkItem contentItem = new LtiLinkItem
 
 **Description:**
 
-- Students able able to view and get their own copy of the Microsoft activity (document, assignment, etc.) to view, complete, and submit.
+- Students able to view and get their own copy of the Microsoft activity (document, assignment, etc.) to view, complete, and submit.
 
 **Role:**
 
