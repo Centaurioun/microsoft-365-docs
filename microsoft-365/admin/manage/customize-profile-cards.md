@@ -14,7 +14,7 @@ ms.date:     07/24/2025
 
 # Enriching and customizing your organization's profile cards 
 
-[Profile cards](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365 show key information about an organization’s employees. As an admin, you can use the Microsoft 365 admin center to add certain properties from your organization's profile cards. These settings are configured under People settings in your admin dashboard.
+[Profile cards](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365 show key information about an organization’s employees. As an admin, you can use the Microsoft 365 Admin Center to add certain properties to your organization's profile cards. These settings are configured under People settings in your admin dashboard.
 
 ## Before you begin
 
@@ -22,7 +22,7 @@ You must be a Global Administrator or a People Administrator to do the tasks in 
 
 ## Properties in profile cards
 
-Profile card properties map to attributes in the [Microsoft 365 profile resource](/graph/api/resources/profile?view=graph-rest-beta) and can be populated from various sources, including:  
+Properties in profile cards map to attributes in the [Microsoft 365 profile resource](/graph/api/resources/profile?view=graph-rest-beta) and can be populated from various sources, including:  
 
 - [Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info)
 
@@ -32,7 +32,7 @@ Profile card properties map to attributes in the [Microsoft 365 profile resource
 
 - [User-provided details](https://support.microsoft.com/en-gb/office/edit-your-profile-in-microsoft-365-e7056090-56d4-4b81-bb3f-b6af31089ebe)
 
-Read [Build Microsoft 365 Copilot connectors for people data](/microsoft-365-copilot/extensibility/build-connectors-with-people-data) to learn how to ingest people data from your external source systems (for example human resources, talent management, or other people systems) into Microsoft Graph.
+Read [Build Microsoft 365 Copilot connectors for people data](/microsoft-365-copilot/extensibility/build-connectors-with-people-data) to learn how to ingest people data from external source systems (for example human resources, talent management, or other people systems) into Microsoft Graph.
 
 ### Default properties
 
@@ -60,70 +60,53 @@ Some properties are shown by default on profile cards when data is available. Th
 
 ### Optional properties
 
-By default, certain properties are not displayed on profile cards. However, tenant administrators can configure these optional properties to be shown or hidden using the **People settings** in the Microsoft 365 admin center.
+Admins can choose to show or hide certain properties on the profile cards. They're hidden by default, but admins can make them visible in **People settings** in the Microsoft 365 Admin Center.
 
 When enabled, these properties appear in the **Contact** tab of the profile cards. They are visible to users viewing their own profile as well as when viewing the profiles of others.
 
-### Change your country/region
+- Division
 
-You can't change the country/region for your subscription. The country/region where your organization is headquartered determines which services are available to you, the taxes and billing currency, and the location of the data center. To change your organization's country/region, sign up for a new account, choose the desired country or region, and buy a new subscription.
+- Role
 
-### Edit organization information
+- Employee number
 
-To change information on your organization's profile page, use the following steps.
-  
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-2. In the **Navigation menu**, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
-3. Select the **Organization profile** tab, select **Organization information**.
-4. Update your organization's information, then select **Save**. You must fill in all required fields marked with an asterisk (*) before you can save your changes.
+- Employee type
+
+- Cost center
+
+- User principal name
+
+- Alias
+
+- Fax
+
+- Street address
+
+- State 
+
+- Postal code
+
+When changing the visibility of these properties, it can take up to 24 hours for changes to be reflected on profile cards.
 
 > [!NOTE]
-> SharePoint Online and OneDrive have a 256-character limit on Windows PCs. If you exceed the character limit, you receive an error message when you try to do anything within the synchronized document libraries, like creating folders or renaming documents.
+> Street address, state, and postal code will be shown under the Business address attribute on the cards.
 
-### What do the organization information fields mean?
+> [!NOTE]
+> Hiding a property removes it from profile cards but does not delete the underlying data from Microsoft 365 profiles or stop the property from appearing in other Microsoft 365 experiences. To permanently delete the data, admins need to remove it from the source system.
 
-The following table explains the fields shown in the **Organization information** pane.
+### How to find the source of a property? 
 
-| Field | Description |
-|---------|---------|
-|Name  | The organization's name that's used to identify it.  |
-|Address, City, State/Province, ZIP/Postal code   | The address entered is shown on your invoice under **Sold To**. The Sold To address is the same as your organization address on your profile page.    |
-|Country or region   | The country/region where the organization is headquartered. The selected country/region determines which services are available to you, the taxes and billing currency for your country/region, and the location of the data center closest to you. To find out whether a country/region is supported, see [About license restrictions](https://www.microsoft.com/microsoft-365/business/microsoft-office-license-restrictions).<br/><br/>**NOTE:** After you select a country/region, it can't be changed. If you need to change the selection, you must cancel your subscription and sign up again. For help with this process, [contact support](../get-help-support.md).        |
-|Phone   | The primary telephone number for your organization. It's usually the number of your organization headquarters.  |
-|Technical contact | The email address for the primary technical person who administers your subscription. This person receives communications about Microsoft service status. |
-|Preferred language | Determines the language for all communications that are sent from Microsoft to your organization. When you sign up, this setting determines the language used by SharePoint Online, that your users see on your team site. If you change the language preference setting after you sign up, all future communications are sent in the most recent language selected.<br/><br/>**IMPORTANT:** The language used by SharePoint Online can't be changed.           |
+Users can learn the source of each property on their profile cards by [exporting their profile card data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#:~:text=Hover%20over%20your%20name%20or%20profile%20photo%20to,as%20a%20JSON%20file%20in%20your%20Downloads%20folder.). The export will show source IDs for each property, indicating the system the data comes from. [Learn what each source ID represents](/graph/api/resources/profilesourceannotation?view=graph-rest-beta)
 
-## Change your contact preferences for communications from Microsoft
+If a source ID does not have a known mapping, the data comes from a third-party source. In this case, users should contact their tenant admin to identify the system. Admins can then match the source ID with a connector ID in Microsoft 365 Admin Center to find the data source. 
 
-Use the **Contact preferences** section of the Settings & privacy page to choose the Microsoft 365 product-related communications that you want to receive.
-  
-Read [Update your admin phone number and email address in Microsoft 365](update-phone-number-and-email-address.md) for info on how to change your admin cell phone number and email address.
-  
-### To update your information
-  
-1. In the admin center, select the **Settings** icon in the top right of the header.
+### How can users edit their profile info? 
 
-2. Select **Update contact preferences**.
-
-3. Under **Contact preferences**, choose the types of product-related communications you want to receive.
-
-4. Choose **Save** when you're done.
-  
-For Office 365 Enterprise, Microsoft 365 Business Standard, and Microsoft 365 Business Basic, when you first signed up as an admin for Microsoft 365, depending on the country or region of the users in your organization, your users might be automatically signed up to receive product-related communications.
-
-## Change organization settings for Cloud PCs
-
-By default, new Cloud PCs are created with the Windows 11 operating system and the Standard User account type. To change these default settings, use the following steps.
-
-1. In the Microsoft 365 admin center, in the **Navigation menu**, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
-2. On the **Services** tab, select **Windows 365**.
-3. Select your preferred operating system and account type, then select **Save**.
-
-Organization settings only apply to newly created Cloud PCs. When these settings are changed, they don't change the OS or account type of existing Cloud PCs.
+Users may want to edit certain organization-managed information shown on their profile card—for example if the property is incorrect or out of date. As above, users should find the source ID of the property and share it with their admin. Admins can then update the info in the source system.  
 
 ## Related content
 
-[Update your Microsoft 365 admin phone number and email address](update-phone-number-and-email-address.md) (article)\
-[Send email from a different address in Outlook.com](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
-[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)\
-[Configure email forwarding in Microsoft 365](../email/configure-email-forwarding.md) (article)
+Manage people data and related experiences from the Microsoft Admin Center (article)
+
+[Build Microsoft 365 Copilot connectors for people data](/microsoft-365-copilot/extensibility/build-connectors-with-people-data) (article)
+
