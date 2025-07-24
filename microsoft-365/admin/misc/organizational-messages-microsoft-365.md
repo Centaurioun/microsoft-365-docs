@@ -461,34 +461,58 @@ All messages have a state that indicates their creation or delivery status, incl
 
 ### How does localization work in Organizational messages?
 
-For **premade messages**, your message is delivered to end users who have their related product language set to one of the following:
+The following are the locales supported:
 
 - en-US
+
 - de-DE
+
 - es
+
 - fr-FR
+
 - it-IT
+
 - ja-JP
+
 - ko-KR
+
 - nl-NL
+
 - pl-PL
+
 - pt-BR
+
 - pt-PT
+
 - ru-RU
+
 - tr-TR
+
 - zh-Hans
+
 - zh-Hant
 
-For example, if the Organizational Messages Writer (admin) selects "Message A" to send to end users, any end user whose preferred language matches one of the supported languages listed above will qualify to receive "Message A."
+For **premade** messages, an Organizational Message will be created for all locales listed above. If the Organizational Messages Writer (admin) selects "Premade Message A" to send to end users, any end user whose first preferred language matches one of the supported languages listed above will qualify to receive "Premade Message A" in their first preferred language.
+
+For **custom messages**, the creation of an Organizational Message will be restricted to the language selected as the Microsoft 365 admin center (MyAccount) display language so long as it is one of the locales listed above.
+
+For example, If the Organizational Messages Writer (admin) sets their Microsoft 365 admin center (MyAccount) display language to French (which is one of the supported language listed above) while creating "Custom Message B", then only end users with French as the first option under "Preferred Languages" in their Windows Settings will receive "Custom Message B." End users whose preferred language is any other language will not receive "Custom Message B".
+
+Locale fallback:
+
+If the Organizational Messages Writer (admin) locale is outside of the supported list above, the created message will fall back to the corresponding locale with the same language (if applicable). If there is no corresponding locale with the same language, then the created message will fall back to en-US
+
+Fallback examples:
+
+fr-CA will fall back to fr-FR, and users with all fr language locales will receive the message.
+
+lv_LV will fall back to en-US, and users with all en languages locales will receive the message.
 
 > [!NOTE]
 >
 > - *Locale of the custom message writer selected*: Display language set in the Microsoft 365 admin center (MyAccount).
 > - *Locale of the message receiver selected*: First supported language listed under "Preferred Languages" in the user's Windows Settings menu. This is determined by the operating system on the user's device.
-
-For **custom messages**, delivery will be restricted to the language selected as the Microsoft 365 admin center (MyAccount) display language.
-
-For example, if the Organizational Messages Writer (admin) sets their Microsoft 365 admin center (MyAccount) display language to French while creating "Message B," only end users with French as the first option under "Preferred Languages" in their Windows Settings will receive "Message B." End users whose preferred language is any other language will not receive the message.
 
 ### Does Organizational Messages support government environments, such as GCC, GCCH, etc.?
 
