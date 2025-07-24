@@ -30,6 +30,10 @@ Users enter a prompt in Copilot and Copilot responds with AI-generated informati
 
 Users get content relevant to their work tasks, and in the context of the Microsoft 365 app they're using.
 
+The following video is an overview of managing Microsoft 365 Copilot for your organization. It's 1 minute and 45 seconds long.
+
+> [!VIDEO <video c9679373-1812-4882-a690-8d4b8e8411ea>]
+
 For example, you're an Operations Manager and are working with human resources to update job descriptions. In a Copilot prompting session, you can ask Copilot to create a job description and also add qualifications that should be included in the description. In the same prompting session, you can expand the generated job description to also create different levels, like Level 1, Level 2, and Level 3.
 
 You can also [create and use agents](/microsoft-365-copilot/extensibility) to customize your Copilot experience with your organization's data sources. For example, you're a warehouse manager and you need to know the status of a shipment. You can ask your Copilot shipping agent "What is the status of shipment 1234?" Copilot uses your data sources to get the information and can respond with the status.
