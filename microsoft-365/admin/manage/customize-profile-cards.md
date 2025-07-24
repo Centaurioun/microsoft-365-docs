@@ -32,11 +32,11 @@ Properties in profile cards map to attributes in the [Microsoft 365 profile reso
 
 - [User-provided details](https://support.microsoft.com/en-gb/office/edit-your-profile-in-microsoft-365-e7056090-56d4-4b81-bb3f-b6af31089ebe)
 
-Read [Build Microsoft 365 Copilot connectors for people data](/microsoft-365-copilot/extensibility/build-connectors-with-people-data) to learn how to ingest people data from external source systems (for example human resources, talent management, or other people systems) into Microsoft Graph.
+Read [Build Microsoft 365 Copilot connectors for people data](/microsoft-365-copilot/extensibility/build-connectors-with-people-data) to learn how to ingest people data from external source systems into Microsoft Graph.
 
 ### Default properties
 
-Some properties are shown by default on profile cards when data is available. These properties can't be removed by admins:
+Some properties are shown by default on profile cards when data is available. Admins cannot hide these properties:
 
 - Name
 
@@ -62,7 +62,7 @@ Some properties are shown by default on profile cards when data is available. Th
 
 Admins can choose to show or hide certain properties on the profile cards. They're hidden by default, but admins can make them visible in **People settings** in the Microsoft 365 Admin Center.
 
-When enabled, these properties appear in the **Contact** tab of the profile cards. They are visible to users viewing their own profile as well as when viewing the profiles of others.
+When enabled, these properties appear in the **Contact** tab of the profile cards. They're visible to users viewing their own profile and when viewing the profiles of others.
 
 - Division
 
@@ -86,19 +86,19 @@ When enabled, these properties appear in the **Contact** tab of the profile card
 
 - Postal code
 
-When changing the visibility of these properties, it can take up to 24 hours for changes to be reflected on profile cards.
+After changing the visibility of these properties, it can take up to 24 hours for changes to be reflected on profile cards.
 
 > [!NOTE]
-> Street address, state, and postal code will be shown under the Business address attribute on the cards.
+> When enabled, street address, state, and postal code is shown under the Business address attribute on the cards.
 
 > [!NOTE]
-> Hiding a property removes it from profile cards but does not delete the underlying data from Microsoft 365 profiles or stop the property from appearing in other Microsoft 365 experiences. To permanently delete the data, admins need to remove it from the source system.
+> Hiding a property removes it from profile cards but doesn't delete the underlying data from Microsoft 365 profiles or stop the property from appearing in other Microsoft 365 experiences. To permanently delete the data, admins need to remove it from the source system.
 
 ### How to find the source of a property? 
 
-Users can learn the source of each property on their profile cards by [exporting their profile card data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#:~:text=Hover%20over%20your%20name%20or%20profile%20photo%20to,as%20a%20JSON%20file%20in%20your%20Downloads%20folder.). The export will show source IDs for each property, indicating the system the data comes from. [Learn what each source ID represents](/graph/api/resources/profilesourceannotation?view=graph-rest-beta)
+Users can learn the source of each property on their profile cards by [exporting their profile card data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#:~:text=Hover%20over%20your%20name%20or%20profile%20photo%20to,as%20a%20JSON%20file%20in%20your%20Downloads%20folder.). The export shows source IDs for each property, indicating the system the data comes from. [Learn what each source ID represents](/graph/api/resources/profilesourceannotation?view=graph-rest-beta)
 
-If a source ID does not have a known mapping, the data comes from a third-party source. In this case, users should contact their tenant admin to identify the system. Admins can then match the source ID with a connector ID in Microsoft 365 Admin Center to find the data source. 
+If a source ID doesn't have a known mapping, the data comes from a third-party source. In this case, users should contact their tenant admin to identify the system. Admins can then match the source ID with a connector ID in Microsoft 365 Admin Center to find the data source. 
 
 ### How can users edit their profile info? 
 
