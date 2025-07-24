@@ -94,13 +94,13 @@ After an admin changes the visibility of these properties, it can take up to 24 
 > [!NOTE]
 > Hiding a property removes it from profile cards but doesn't delete the underlying data from Microsoft 365 profiles or stop the property from appearing in other Microsoft 365 experiences. To permanently delete the data, admins need to remove it from the source system.
 
-### How to find the source of a property? 
+## How to find the source of a property? 
 
 Users can learn the source of each property on their profile cards by [exporting their profile card data](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#:~:text=Hover%20over%20your%20name%20or%20profile%20photo%20to,as%20a%20JSON%20file%20in%20your%20Downloads%20folder.). The export shows source IDs for each property, indicating the system the data comes from. [Learn what each source ID represents](/graph/api/resources/profilesourceannotation?view=graph-rest-beta)
 
 If a source ID doesn't have a known mapping, the data comes from a third-party source. In this case, users should contact their tenant admin to identify the system. Admins can then match the source ID with a connector ID in Microsoft 365 Admin Center to find the data source. 
 
-### How can users edit their profile info? 
+## How can users edit their profile info? 
 
 Users may want to edit certain organization-managed information shown on their profile card—for example if the property is incorrect or out of date. As above, users should find the source ID of the property and share it with their admin. Admins can then update the info in the source system.  
 
