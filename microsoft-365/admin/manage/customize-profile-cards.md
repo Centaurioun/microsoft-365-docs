@@ -36,7 +36,7 @@ Read [Build Microsoft 365 Copilot connectors for people data](/microsoft-365-cop
 
 ### Default properties
 
-Some properties are shown by default on profile cards when data is available. Admins cannot hide these properties:
+Some properties are shown by default on profile cards when data is available. Admins can't hide these properties:
 
 - Name
 
@@ -86,10 +86,10 @@ When enabled, these properties appear in the **Contact** tab of the profile card
 
 - Postal code
 
-After changing the visibility of these properties, it can take up to 24 hours for changes to be reflected on profile cards.
+After an admin changes the visibility of these properties, it can take up to 24 hours for changes to be reflected on profile cards.
 
 > [!NOTE]
-> When enabled, street address, state, and postal code is shown under the Business address attribute on the cards.
+> If enabled, street address, state, and postal code are shown under the Business address attribute on the cards.
 
 > [!NOTE]
 > Hiding a property removes it from profile cards but doesn't delete the underlying data from Microsoft 365 profiles or stop the property from appearing in other Microsoft 365 experiences. To permanently delete the data, admins need to remove it from the source system.
