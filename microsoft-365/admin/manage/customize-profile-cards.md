@@ -34,13 +34,31 @@ Profile card properties map to attributes in the [Microsoft 365 profile resource
 
 Read Build Microsoft 365 Copilot connectors for people data to learn how to ingest people data from your external source systems (for example human resources, talent management, or other people systems) into Microsoft Graph.
 
-### Default properties on your profile cards 
+### Default properties
 
-The steps to change your organization’s name depend on the type of billing account that you have. [Find out what type of billing account you have](../../commerce/manage-billing-accounts.md#view-my-billing-accounts).
+Some properties are shown by default on profile cards when data is available. These properties can't be removed by admins:
 
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you can’t change your organization’s name without assistance. [Complete this form](https://www.microsoft.com/download/details.aspx?id=102732), then contact support to get help with changing your organization’s name.
+- Name
 
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you can change your organization’s name in the Microsoft 365 admin center. To change your organization’s name, follow the steps in [Edit organization information](#edit-organization-information).
+- Email
+
+- Chat
+
+- Work phone
+
+- Mobile
+
+- Work location
+
+- Company
+
+- Job title
+
+- Department
+
+- Business address
+
+### Optional properties
 
 ### Change your country/region
 
