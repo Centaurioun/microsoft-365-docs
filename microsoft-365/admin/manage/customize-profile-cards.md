@@ -30,9 +30,9 @@ Profile card properties map to attributes in the [Microsoft 365 profile resource
 
 - [Microsoft 365 Copilot connectors for people data](/graph/peopleconnectors)
 
-- User-provided details
+- [User-provided details](https://support.microsoft.com/en-gb/office/edit-your-profile-in-microsoft-365-e7056090-56d4-4b81-bb3f-b6af31089ebe)
 
-Read Build Microsoft 365 Copilot connectors for people data to learn how to ingest people data from your external source systems (for example human resources, talent management, or other people systems) into Microsoft Graph.
+Read [Build Microsoft 365 Copilot connectors for people data](/microsoft-365-copilot/extensibility/build-connectors-with-people-data) to learn how to ingest people data from your external source systems (for example human resources, talent management, or other people systems) into Microsoft Graph.
 
 ### Default properties
 
@@ -59,6 +59,10 @@ Some properties are shown by default on profile cards when data is available. Th
 - Business address
 
 ### Optional properties
+
+By default, certain properties are not displayed on profile cards. However, tenant administrators can configure these optional properties to be shown or hidden using the **People settings** in the Microsoft 365 admin center.
+
+When enabled, these properties appear in the **Contact** tab of the profile cards. They are visible to users viewing their own profile as well as when viewing the profiles of others.
 
 ### Change your country/region
 
