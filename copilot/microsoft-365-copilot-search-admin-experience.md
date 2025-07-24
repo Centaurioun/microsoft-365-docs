@@ -5,7 +5,7 @@ ms.author: kwekua
 manager: dansimp
 ms.date: 06/05/2025  
 ms.topic: overview
-ms.service: microsoft-365-admin
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: CopilotSearch
 ms.custom: QuickDraft

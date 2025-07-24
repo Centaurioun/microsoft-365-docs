@@ -113,6 +113,8 @@ items:
     href: microsoft-365-copilot-search-manage.md
   - name: Microsoft 365 Copilot Search admin experience
     href: microsoft-365-copilot-search-admin-experience.md
+  - name: Microsoft 365 Copilot Search FAQ
+    href: microsoft-365-copilot-search-faq.yml
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
   - name: Overview of AI in Microsoft Teams
