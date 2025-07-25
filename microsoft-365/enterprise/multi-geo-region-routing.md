@@ -48,7 +48,7 @@ To adopt an MX target in mx.microsoft, follow these steps:
    Enable-DnssecForVerifiedDomain -DomainName <DomainName>
    ```
 
-   In this command, replace "domain name" with the name of your chosen domain. For example, if your domain is contosotest.com, the command you execute will look like the example shown below:
+   In this command, replace "domain name" with the name of your chosen domain. For example, if your domain is **contosotest.com**, the command you execute will look like the example shown below:
 
    ```PowerShell
    Enable-DnssecForVerifiedDomain -DomainName contosotest.com
