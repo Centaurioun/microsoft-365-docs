@@ -1,10 +1,10 @@
 ---
-title: Overview of Microsoft Syntex
+title: Overview of document processing for Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/28/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: overview
 ms.custom: intro-overview
@@ -15,14 +15,17 @@ ms.collection:
     - m365initiative-syntex
     - essentials-overview
 ms.localizationpriority:  medium
-description: Learn about the capabilities, services, and features in Microsoft Syntex.
+description: Learn about the document processing services and features in Microsoft 365.
 ---
 
-# Overview of Microsoft Syntex
+# Overview of document processing for Microsoft 365
 
-Microsoft Syntex is a powerful suite of AI-powered content management and productivity services designed to help your organization transform how you handle documents and information. A flexible pay-as-you-go model gives you access to advanced capabilities—such as intelligent document discovery, classification, analysis, and processing—without the need for upfront licensing commitments.
+Document processing for Microsoft 365 provides a powerful suite of AI-powered content management and productivity services designed to help your organization transform how you handle documents and information. A flexible pay-as-you-go approach gives you access to advanced capabilities—such as intelligent document discovery, classification, analysis, and processing—without the need for upfront licensing commitments.
 
-By automating content workflows and enhancing document understanding, your everyday business content is turned into actionable knowledge. This not only streamlines operations and reduces manual effort, but also empowers people in your organization to make faster, more informed decisions based on insights extracted from their content.
+By automating content workflows and enhancing document understanding, your everyday business content is turned into actionable knowledge. This advancement not only streamlines operations and reduces manual effort, but also empowers people in your organization to make faster, more informed decisions based on insights extracted from their content.
+
+> [!NOTE]
+> The pay-as-you-go services previously offered under Microsoft Syntex are now referred to as document processing services. The features and functionality of these services remain unchanged.
 
 <!---</br>
 
@@ -30,39 +33,28 @@ By automating content workflows and enhancing document understanding, your every
 
 </br>--->
 
-<!---
-Microsoft Syntex provides a powerful suite of pay-as-you-go content management and productivity services that harnesses AI and machine learning to intelligently discover, analyze, organize, classify, and process your organization's documents. With pay-as-you-go licensing, your organization can use these services without any license commitment or upfront purchasing.
-
-By automating content workflows and enhancing understanding, these services transform your business documents into actionable knowledge. This streamlines everyday processes, provides valuable insights, and empowers people in your organization to make informed decisions.
---->
-<!---
-
-This flexible model allows any user in your organization to access Syntex services and only pay for what they use, making it a cost-effective solution for managing your content."
-
-Microsoft Syntex provides a powerful suite of content management and productivity services that harnesses AI and machine learning to intelligently discover, analyze, organize, classify, and process your organization's documents.
-Microsoft Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, content artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries, Microsoft Teams, OneDrive for Business, and Exchange.
-
-With Syntex, you can automate your content-based processes—capturing the information in your business documents and transforming that information into working knowledge for your organization. Rather than clicking and sorting through hundreds or thousands of files, Syntex extracts, analyzes, and categorizes the data for you.
-
-You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
---->
-
-
-## Document and image services
+## Document processing services
 
 |Icon|Description|
 |---|---|
 |:::image type="icon" source="/office/media/icons/usage-report-blue.png" :::|**Autofill columns** <br>Streamline the process of managing files and their associated information by using large language models (LLMs) to extract or generate content automatically. [Learn more about autofill columns.](autofill-overview.md)|
-|:::image type="icon" source="/office/media/icons/structure-blue.png" :::|**Content assembly** <br>Automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, correspondence, and more. [Learn more about content assembly.](content-assembly.md)|
 |:::image type="icon" source="/office/media/icons/chat-room-conversation-blue.png" :::|**Document translation** <br>Create a translated copy of a document in a SharePoint document library, preserving the original format and structure of the file. Available for all supported languages and dialects. [Learn more about document translation.](translation-overview.md)|
-|:::image type="icon" source="/office/media/icons/sign-up-blue.png" :::|**eSignature** <br>Send electronic requests using SharePoint eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. [Learn more about SharePoint eSignature.](esignature-overview.md)|
-|:::image type="icon" source="/office/media/icons/blog-site-blue.png" :::|**Image tagging** <br>Find, sort, filter, and manage images in SharePoint document libraries. [Learn more about image tagging.](image-tagging-overview.md)|
+|:::image type="icon" source="/office/media/icons/sign-up-blue.png" :::|**eSignature** <br>Send electronic requests using eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. [Learn more about eSignature.](esignature-overview.md)|
 |:::image type="icon" source="/office/media/icons/paragraph-writing-blue.png" :::|**Optical character recognition** <br> Extract printed or handwritten text from images, letting you quickly and accurately find the keywords and phrases you're looking for. [Learn more about using optical character recognition.](ocr-overview.md)|
-|:::image type="icon" source="/office/media/icons/bill-blue.png" :::|**Prebuilt document processing** <br>Save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), [receipts](prebuilt-model-receipt.md), and other types of documents. [Learn more about prebuilt document processing.](prebuilt-overview.md)|
-|:::image type="icon" source="/office/media/icons/layout-navigation-blue.png" :::|**Structured and freeform document processing** <br>Automatically extract information from documents, such as letters, contracts, forms, and invoices, where the information can appear anywhere in the document. [Learn more about structured and freeform document processing.](form-processing-overview.md)|
+|:::image type="icon" source="/office/media/icons/structure-blue.png" :::|**Content assembly** <br>Automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, correspondence, and more. [Learn more about content assembly.](content-assembly.md)|
+|:::image type="icon" source="/office/media/icons/blog-site-blue.png" :::|**Image tagging** <br>Find, sort, filter, and manage images in SharePoint document libraries. [Learn more about image tagging.](image-tagging-overview.md)|
 |:::image type="icon" source="/office/media/icons/tasks-blue.png" :::|**Taxonomy tagging** <br> Automatically tag terms or term sets in SharePoint document libraries, making the files easier to search, sort, filter, and manage. [Learn more about taxonomy tagging.](taxonomy-tagging-overview.md)|
-|:::image type="icon" source="/office/media/icons/objects-blue.png" :::|**Unstructured document processing** <br> Automatically classify documents that vary in composition and extract information from them. [Learn more about unstructured document processing.](document-understanding-overview.md)|
+|:::image type="icon" source="/office/media/icons/bill-blue.png" :::|**Prebuilt models** <br>Save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), [receipts](prebuilt-model-receipt.md), and other types of documents. [Learn more about prebuilt document processing.](prebuilt-overview.md)|
+|:::image type="icon" source="/office/media/icons/layout-navigation-blue.png" :::|**Structured and freeform models** <br>Automatically extract information from documents, such as letters, contracts, forms, and invoices, where the information can appear anywhere in the document. [Learn more about structured and freeform document processing.](form-processing-overview.md)|
+|:::image type="icon" source="/office/media/icons/objects-blue.png" :::|**Unstructured models** <br> Automatically classify documents that vary in composition and extract information from them. [Learn more about unstructured document processing.](document-understanding-overview.md)|
 
+## Pricing & billing
+
+Use the document processing services without any license commitment or upfront purchasing. Any user in your organization can use the services and only pay if and when services are used. For more information, see [Pay-as-you-go pricing for document processing](syntex-pay-as-you-go-services.md).
+
+For information about how to set up pay-as-you-go, see [Set up pay-as-you-go billing for document processing](syntex-azure-billing.md).
+
+<!---
 ## Storage services
 
 |Icon|Description|
@@ -75,6 +67,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
 |Icon|Description|
 |---|---|
 |:::image type="icon" source="/office/media/icons/video-play.png" :::|**Video translation** <br>Translate video transcripts and closed captions into over 100 supported languages, allowing viewers to choose the translated versions while watching. [Learn more about video translation.](https://support.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de)|
+
 
 ## Included features
 
