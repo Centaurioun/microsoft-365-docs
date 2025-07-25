@@ -42,5 +42,5 @@ Once the role is assigned, that user can navigate to __Settings > Org settings 
 
 The People settings section includes the settings for 
 
-- [Profile card enrichment](/microsoft-365/admin/manage/customize-profile-cards)
+- [Profile card enrichment and customization](/microsoft-365/admin/manage/customize-profile-cards)
 
