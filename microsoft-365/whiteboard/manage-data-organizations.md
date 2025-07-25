@@ -28,7 +28,7 @@ In order to manage data, you must first ensure that Whiteboard is enabled for yo
 
 Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country/region and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
 
-Content in Azure doesn't support Data Loss Prevention (DLP), eDiscovery, retention policies, and similar features. This content can be managed using [Whiteboard PowerShell cmdlets](/powershell/module/whiteboard/). Eventually, whiteboards stored in Azure will need to be migrated to OneDrive for Business or deleted.
+Content in Azure doesn't support Data Loss Prevention (DLP), eDiscovery, retention policies, and similar features. This content can be managed using [Whiteboard PowerShell cmdlets](/powershell/module/whiteboardadmin/). Eventually, whiteboards stored in Azure will need to be migrated to OneDrive for Business or deleted.
 
 ### If a user account is deleted in Azure
 
@@ -41,7 +41,7 @@ As of **June 1, 2022**, the behavior of whiteboards on Azure has changed. Any wh
 
 If you want to retain a deleted user's whiteboards, *before* you delete the account, you can transfer ownership. You can transfer a single whiteboard or all of them to another user.
 
-- Follow these instructions to [transfer all whiteboards](/powershell/module/whiteboard/invoke-transferallwhiteboards).
+- Follow these instructions to [transfer all whiteboards](/powershell/module/whiteboardadmin/invoke-transferallwhiteboards).
 
 - For more information about how to delete user accounts, see [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user).
 
