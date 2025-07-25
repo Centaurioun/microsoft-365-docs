@@ -7,7 +7,7 @@ ms.author: aaroncz
 author: aczechowski
 manager: dansimp
 ms.reviewer: christin,vmirapur
-ms.date: 07/21/2025
+ms.date: 07/24/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -49,6 +49,9 @@ As an admin, you can pin the Microsoft 365 Copilot app to the Windows taskbar of
   - Windows 11, version 23H2 with [KB5058502][KB-23]
 
   For more information, see [Windows 11 - release information](/windows/release-health/windows11-release-information).
+
+  > [!NOTE]
+  > These updates aren't required to use the setting to pin the app.
 
 ## Configure settings
 
