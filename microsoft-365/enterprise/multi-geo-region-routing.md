@@ -31,7 +31,7 @@ To enable IRR for Exchange Online, you need to use PowerShell cmdlets to configu
 
 ## Prerequisites
 
-1. The domain you want to enable with IRR must be added to the Exchange Admin Center (EAC) as an accepted domain. For more information on adding domains to the EAC, see [Create accepted domains](/exchange/mail-flow/accepted-domains/accepted-domain-procedures).
+1. The domain you want to enable with IRR must be added to the Exchange Admin Center (EAC) as an accepted domain. For more information on adding domains to the EAC, see [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 1. For IRR to apply to specific users, you need to make the IRR-enabled domain be the user’s primary domain. Additionally, the user’s PDL must align with the domain’s mail flow region. This alignment ensures that the mail is processed in the same region as the region in which the email is stored. You must use one of the 3-letter codes specified in [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) as the **PreferredDataLocation** value for the user, as these are the regions that support IRR.
 1. IRR requires the user to have a Microsoft 365 Multi-Geo license and a second license of any SKU type that grants email capabilities.
 1. IRR requires the usage of an MX target in mx.microsoft, a domain that is Domain Name System Security Extensions (DNSSEC) enabled. If your contosotest.com domain isn't DNSSEC enabled, mail flow continues to work as expected but DNSSEC-validations don't occur. If your contosotest.com domain is DNSSEC enabled, mail flow continues to work and you benefit from the extra security of DNSSEC.
@@ -48,7 +48,7 @@ To adopt an MX target in mx.microsoft, follow these steps:
    Enable-DnssecForVerifiedDomain -DomainName <DomainName>
    ```
 
-   In this command, replace "domain" with the name of your chosen domain, that is, contosotest.com. The command you execute will look like as shown in the following example:
+   In this command, replace "domain name" with the name of your chosen domain. For example, if your domain is contosotest.com, the command you execute will look like the example shown below:
 
    ```PowerShell
    Enable-DnssecForVerifiedDomain -DomainName contosotest.com
