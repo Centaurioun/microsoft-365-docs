@@ -3,8 +3,8 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title: customize-profile-cards
-description: Informative article on how admins can enable additional properties in profile cards and impact of this
+title: Customize-profile-cards
+description: Informative article on how admins can enable extra properties in profile cards and impact of this customization
 author:      SuryaLashmiS # GitHub alias
 ms.author:   srinivasansu # Microsoft alias
 ms.service: microsoft-365-admin
