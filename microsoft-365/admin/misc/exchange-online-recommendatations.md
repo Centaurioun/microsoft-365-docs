@@ -97,7 +97,7 @@ Create a Microsoft 365 group for collaboration between teams and a shared worksp
 - [Create and Manage Groups](/exchange/recipients-in-exchange-online/create-and-manage-groups) - get to know the different groups you can create and manage in your Exchange Online organization.
 - [Mail flow rule procedures in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures) - you can use mail flow rules to meet different objectives in the Exchange Admin Center.
 - [Backing up email in Exchange Online](/exchange/back-up-email) – learn how to recover your data if it gets accidentally deleted.
-- [Default email protections for cloud mailboxes](/defender-office-365/eop-about) – learn about how the protections work and the protection features available in all organizations with cloud mailboxes.
+- [Default email protections for cloud mailboxes](/defender-office-365/eop-about) – learn about the protection features available in all organizations with cloud mailboxes.
 - [Sharing in Exchange Online](/exchange/sharing/sharing) – get to know how users can share their schedules with others.
 - [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) – get to know Exchange Online limits for a variety of service areas, including address book limits, mailbox storage limits, and reporting and message trace limits, to name just a few.
 - [Archive features in Exchange Online](/microsoft-365/compliance/enable-archive-mailboxes) – learn how to enable a specialized mailbox called the archive mailbox that appears alongside the users’ primary mailbox folders.
