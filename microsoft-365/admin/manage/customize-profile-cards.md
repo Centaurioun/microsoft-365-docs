@@ -62,7 +62,7 @@ Some properties are shown by default on profile cards when data is available. Ad
 
 Admins can choose to show or hide certain properties on the profile cards. They're hidden by default, but admins can make them visible in **People settings** in the Microsoft 365 Admin Center.
 
-When enabled, these properties appear in the **Contact** tab of the profile cards. They're visible to users viewing their own profile and when viewing the profiles of others.
+When enabled, these properties appear in the **Contact** tab of the profile cards in [Microsoft 365 Copilot app](https://www.microsoft365.com/?omkt=en-US). They're visible to users viewing their own profile and when viewing the profiles of others.
 
 - Division
 
@@ -110,3 +110,4 @@ Manage people data and related experiences from the Microsoft Admin Center (arti
 
 [Build Microsoft 365 Copilot connectors for people data](/microsoft-365-copilot/extensibility/build-connectors-with-people-data) (article)
 
+[Microsoft 365 Copilot connectors for people data](/graph/peopleconnectors) (article)
