@@ -75,7 +75,7 @@ Here are answers to general questions about moving applicable  customer data at 
 ### How do we define Applicable Customer Data?
 <details><summary>Select to expand</summary>
 
-Applicable customer data is a term that refers to a subset of customer data defined in the [Microsoft Online Services Terms](https://aka.ms/ost):
+Applicable customer data is a term that refers to a subset of customer data defined in the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement):
 
 - Exchange Online mailbox content (email body, calendar entries, and the content of email attachments)
 - SharePoint site content and the files stored within that site
