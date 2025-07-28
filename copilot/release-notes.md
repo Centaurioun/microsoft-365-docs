@@ -83,9 +83,9 @@ Updates released between July 8, 2025, and July 22, 2025.
 
   You can now use the dictation button to input your prompts via speech, making interactions with Copilot more natural and efficient. 
  <a href="https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=475968" target="_blank">Learn more.</a>
-- **Researcher available in GA** [Windows, Mac, Web]
+- **[Researcher](https://go.microsoft.com/fwlink/?linkid=2329838) available in GA** [Windows, Mac, Web]
 
-  The researcher agent is pre-installed in Copilot Chat for all worldwide users. Find it in the left navigation pane alongside other agents, giving you quick access to research tools as part of the Copilot Premium license.
+  The [Researcher](https://go.microsoft.com/fwlink/?linkid=2329838) agent is pre-installed in Copilot Chat for all worldwide users. Find it in the left navigation pane alongside other agents, giving you quick access to research tools as part of the Copilot Premium license.
  <a href="https://www.microsoft.com/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/?msockid=2484525e9a9b66d4330b47329bb667c9" target="_blank">Learn more.</a>
 ### Microsoft 365 Purview compliance portal
 - **Data Security Posture Management for AI - Data Risk Assessments.** [Web]
