@@ -63,6 +63,10 @@ To create a translated version of a document, follow these steps:
 
 You can create a rule to automatically translate a document [when a new file is added](content-processing-translate.md#translate-a-document-when-a-new-file-is-added) or [when data in a column changes](content-processing-translate.md#translate-a-document-when-data-in-a-column-changes). For step-by-step instruction, see [Create a rule to translate a document](content-processing-translate.md).
 
+## View the processing status
+
+You can view real-time updates on files processed for document translation on the **Translation activity** panel. For more information, see [Monitor the status of files processed for autofill and translation in SharePoint](processing-status-ai.md).
+
 ## Translate a video transcript
 
 To create a translated version of a video transcript or closed captioning, see [How to translate transcripts in Stream for SharePoint](https://support.microsoft.com/office/microsoft-syntex-pay-as-you-go-transcript-translations-in-stream-for-sharepoint-2e34ad1b-e213-47ed-a806-5cc0d88751de#bkmk_howtotranslate).
