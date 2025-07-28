@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssathyamoort
-ms.date: 05/27/2025
+ms.date: 07/20/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -312,9 +312,9 @@ To set up a mandatory approval workflow on a template, follow these steps:
 
 5. Finally, publish the template for the changes to take effect.
 
-### Configure a SharePoint eSignature workflow
+### Configure a eSignature workflow
 
-After creating or editing a template, you can set up a SharePoint eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. SharePoint Agreements supports SharePoint eSignature and other signature providers that can be used to send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
+After creating or editing a template, you can set up a eSignature flow. This ensures that every document generated from the template is automatically sent for signatures according to the specified flow. SharePoint Agreements supports the eSignature service and other signature providers that can be used to send signature requests to recipients. For more information, see [Overview of eSignature](/microsoft-365/syntex/esignature-overview).
 
 To set up a mandatory signature workflow, follow these steps:
 
@@ -322,9 +322,9 @@ To set up a mandatory signature workflow, follow these steps:
 
    ![A screenshot of the Manage templates panel showing the Configure required signatures option.](../../media/content-understanding/agreements-esignature-configure-required-signatures.png)
 
-2. Select the signature provider you want to use. Signature providers that are available for SharePoint Agreements are enabled in the Microsoft 365 admin center. For more information, see [Set up SharePoint eSignature](/microsoft-365/syntex/esignature-setup#add-signature-providers).
+2. Select the signature provider you want to use. Signature providers that are available for SharePoint Agreements are enabled in the Microsoft 365 admin center. For more information, see [Set up eSignature](/microsoft-365/syntex/esignature-setup#add-signature-providers).
 
-#### Use SharePoint eSignature
+#### Use eSignature
 
 1. Set up signature fields in the template by first adding a signer label, such as first party or vendor.
 
