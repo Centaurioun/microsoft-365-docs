@@ -45,7 +45,7 @@ When you submit an on-demand request for autofill or translation:
 
     - For autofill:
 
-        ![Screenshot of the message bar showing that the action is in progress for autofill.](../media/content-understanding/processing-status-message-bar-autofill.png)
+        ![Screenshot of the message bar showing that the action is in progress for autofill.](../media/content-understanding/processing-status-message-bar-columns.png)
 
     - For translation:
 
