@@ -61,34 +61,6 @@ When you submit an on-demand request for autofill or translation:
 
 4. The message bar disappears once the request is completed or failed.
 
-<!---
-## Monitor the status of a file being processed
-
-When you submit an on-demand request for autofill or translation:
-
-1. A message bar appears at the top of the library, indicating the action is in progress.
-
-    ![Screenshot of the message bar showing that the action is in progress for autofill.](../media/content-understanding/processing-status-message-bar-autofill.png)
-
-    ![Screenshot of the message bar showing that the action is in progress for translation.](../media/content-understanding/processing-status-message-bar-translation.png)
-
-2. On the right side of the message bar, select the view status button to open the corresponding [activity panel](#view-the-activity-panel).
-
-3. The activity panel shows the current action being processed.
-
-4. The message bar disappears once the request is completed or failed.
-
---->
-<!---
-When you submit on-demand request for autofill or translation, a message bar appears at the top of the library. This bar indicates that the action is being processed and provides a **View activity feed** button.
-
-1. Select **View activity feed** to open the activity panel. [Learn more about the activity panel.](#view-the-activity-panel)
-
-2. At the top of the panel, you’ll see the current action being processed.
-
-The message bar remains visible while requests are being processed. It disappears once the request is either completed or failed.
---->
-
 ## Monitor the status of any file
 
 To view the processing status of one or more files:
