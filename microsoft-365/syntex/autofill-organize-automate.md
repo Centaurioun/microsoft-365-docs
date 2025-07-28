@@ -20,9 +20,13 @@ description: Learn how to organize and automate columns in a document library in
 
 # Organize and automate columns in a SharePoint document library
 
-Use the SharePoint Agent Librarian Skill to create richer, more powerful document libraries to manage your content.
+The Knowledge agent in SharePoint empowers users to build richer, more intelligent document libraries for streamlined content management. By simplifying the configuration process, it ensures consistent and accurate data capture across your organization. With recommended metadata columns, the agent improves library-scoped chat experiences and enables rule-based automation flows that support efficient business processes. This approach keeps your SharePoint libraries organized, relevant, and continuously up-to-date—making document management smarter and more scalable.
 
-Building on the autofill columns feature, this agent skill simplifies the process of configuring a document library and ensures consistent and accurate data capture. Recommended metadata columns enhance library-scoped agent chat and are also used to suggest rule-based flows that streamline business processes. This approach to automating document management keeps your SharePoint libraries organized, relevant, and up-to-date.
+<!---
+Use the Knowledge agent in SharePoint to create richer, more powerful document libraries to manage your content.
+
+This agent simplifies the process of configuring a document library and ensures consistent and accurate data capture. Recommended metadata columns enhance library-scoped agent chat and are also used to suggest rule-based flows that streamline business processes. This approach to automating document management keeps your SharePoint libraries organized, relevant, and up-to-date.
+--->
 
 ## Suggest and create columns
 
@@ -86,6 +90,8 @@ To get suggested columns and metabase based on the content in your document libr
 
    ![Screenshot of the Save and apply your changes? confirmation screen.](../media/content-understanding/autofill-librarian-confirmation-screen.png)
 
+<!---
+
 ## Planned capabilities coming soon
 
 We’re actively working on expanding this feature. Upcoming enhancements include:
@@ -95,7 +101,19 @@ We’re actively working on expanding this feature. Upcoming enhancements includ
 - New library flow​
 - Metadata view creation​
 - Classification grounding support
+--->
 
+## Frequently asked questions
+
+TBD
+<!---
+## We value your feedback
+
+Your feedback drives improvements for everyone. Share your experience with this feature by filling out this [quick survey](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=bc020eefeadd43cfb107a4e3443594b1&id=v4j5cvGGr0GRqy180BHbR_PzshIK4BNFl0DNg2VJeqVUMjZWOTZYN0lUNU45SlVFWlNCUjBYR0E2Mi4u).
+--->
+
+<!---
 ## Help us improve this feature
 
 Your feedback and suggestions can help us to refine this feature to meet your needs. Submit suggestions by using this [bug template](https://onedrive.visualstudio.com/ODSP%20Product%20Experiences/_workitems/create/Bug?templateId=c70796a2-07d9-4045-9ae7-57b0a493a290&ownerId=e1686dd0-4520-4f7f-9947-34d07bf00b0a) and provide feedback by taking this [brief survey](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=bc020eefeadd43cfb107a4e3443594b1&id=v4j5cvGGr0GRqy180BHbR_PzshIK4BNFl0DNg2VJeqVUMjZWOTZYN0lUNU45SlVFWlNCUjBYR0E2Mi4u).
+--->
