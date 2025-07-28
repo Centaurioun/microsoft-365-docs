@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 07/28/2025
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
