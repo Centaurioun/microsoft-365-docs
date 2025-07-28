@@ -105,7 +105,8 @@ We’re actively working on expanding this feature. Upcoming enhancements includ
 
 ## Frequently asked questions
 
-TBD
+Coming soon
+
 <!---
 ## We value your feedback
 
