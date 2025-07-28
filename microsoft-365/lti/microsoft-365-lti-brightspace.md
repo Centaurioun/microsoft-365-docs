@@ -4,7 +4,7 @@ description: Learn how to deploy the Microsoft 365 Learning Tool Interoperabilit
 author: jennplatt
 ms.author: avering
 manager: michal.gideoni
-ms.date: 07/14/2025
+ms.date: 07/23/2025
 audience: admin
 ms.topic: how-to
 ms.service: msteams
@@ -52,7 +52,7 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 1. Log into Brightspace as an Administrator or Super Administrator with permission to **Manage Extensibility** and **External Tools**.
 
-1. In Brightspace, navigate to **Admin Tools** **(gear icon)** > **Manage Extensibility** and then select the **Register Tool** button.
+1. In Brightspace, navigate to **Admin Tools** **(gear icon)** > **Manage Extensibility**, select the **LTI Advantage** tab, and then select the **Register Tool** button.
 
 1. Select the **Standard** registration radio button and enter the values listed in the table:
 
