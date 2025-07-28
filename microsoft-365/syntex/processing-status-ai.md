@@ -74,7 +74,7 @@ To view the processing status of one or more files:
 
     - For autofill: Select **Autofill columns** > **View recent activity**.
 
-        ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity-autofill.png)
+        ![Screenshot of the More options menu showing Autofill columns and View recent activity.](../media/content-understanding/processing-status-view-recent-activity-columns.png)
 
     - For translation: Select **Translate** > **View recent activity**.
 
