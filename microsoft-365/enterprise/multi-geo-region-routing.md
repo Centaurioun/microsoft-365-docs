@@ -25,111 +25,131 @@ This article describes the process of configuring Multi-Geo In-Region Routing (I
 
 ## Overview
 
-Multi-Geo In-Region Routing (IRR) enables customers to control the routing of inbound emails to comply with regional data regulations. IRR ensures that emails sent to users within specific geo-regions are processed and stored in their respective region. By directing emails to accepted domains that are associated with specific geo-regions and users located in those same geo-regions, IRR ensures that emails are fully processed and stored in the user's region. This processing and storage of emails keeps the data within the user’s Preferred Data Location (PDL), enhancing data sovereignty and compliance.
+Multi-Geo In-Region Routing (IRR) enables you to use recipient accepted domains to control inbound email routing to comply with regional data regulations. IRR ensures email is fully processed and stored within the recipient's Preferred Data Location (PDL), which enhances data sovereignty and compliance.
 
-To enable IRR for Exchange Online, you need to use PowerShell cmdlets to configure the settings for each domain you plan to enable with the feature.
+This article describes the steps to configure accepted domains for IRR.
 
 ## Prerequisites
 
-1. The domain you want to enable with IRR must be added to the Exchange Admin Center (EAC) as an accepted domain. For more information on adding domains to the EAC, see [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
-1. For IRR to apply to specific users, you need to make the IRR-enabled domain be the user’s primary domain. Additionally, the user’s PDL must align with the domain’s mail flow region. This alignment ensures that the mail is processed in the same region as the region in which the email is stored. You must use one of the 3-letter codes specified in [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) as the **PreferredDataLocation** value for the user, as these are the regions that support IRR.
-1. IRR requires the user to have a Microsoft 365 Multi-Geo license and a second license of any SKU type that grants email capabilities.
-1. IRR requires the usage of an MX target in mx.microsoft, a domain that is Domain Name System Security Extensions (DNSSEC) enabled. If your contosotest.com domain isn't DNSSEC enabled, mail flow continues to work as expected but DNSSEC-validations don't occur. If your contosotest.com domain is DNSSEC enabled, mail flow continues to work and you benefit from the extra security of DNSSEC.
+- Domains that use IRR must be visible in the Exchange admin center (EAC) as accepted domains. For more information configuring accepted domains, see [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-### Adopting an MX target
+- IRR is applied to users that meet the following criteria:
+  - The user's primary email address is in the IRR-enabled domain.
+  - The user's PDL aligns with the domain's mail flow region. This alignment ensures that the mail is processed in the same region where the email is stored.
+  - The user's **PreferredDataLocation** value must be a three-letter code specified in [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability), because these regions support IRR.
 
-To adopt an MX target in mx.microsoft, follow these steps:
+- IRR requires the following licenses for users:
+  - A Microsoft 365 Multi-Geo license.
+  - A second license of any kind that grants email capabilities.
 
-1. Update the TTL (Time To Live) of your existing MX record to the lowest TTL possible (but not lower than 30 seconds). Then, wait for the previous TTL to expire before proceeding. For example, if the TTL of your existing MX record was '3,600 seconds' or '1 hour' before you changed it, you need to wait 1 hour before proceeding to the next step.
-1. Connect to Exchange Online PowerShell.
-1. For the domain that you want to enable with IRR, run the following command:
+- IRR requires an MX target in `mx.microsoft`, which is Domain Name System Security Extensions (DNSSEC) enabled:
+  - If your accepted domain isn't DNSSEC enabled, DNSSEC validations don't occur, but mail flow works as expected.
+  - If your accepted domain is DNSSEC enabled, you benefit from the extra security of DNSSEC.
 
-   ```PowerShell
+### Adopt an MX target
+
+To adopt an MX target in mx.microsoft, do the following steps:
+
+1. At the DNS hosting service for your domain, update the time to live (TTL) of the existing MX record to a minimum of 30 seconds, and then wait for the previous TTL to expire before you proceed. For example, if the previous TTL was 3,600 seconds, wait one hour before you proceed to the next step.
+
+2. In [Exchange Online PowerShell](/microsoft-365/enterprise/administering-exchange-online-multi-geo?view=o365-worldwide#connect-directly-to-a-geo-location-using-exchange-online-powershell), replace \<DomainName\> with the name of the domain where you want to enable IRR, and then run the following command:
+
+   ```powershell
    Enable-DnssecForVerifiedDomain -DomainName <DomainName>
    ```
 
-   In this command, replace "domain name" with the name of your chosen domain. For example, if your domain is **contosotest.com**, the command you execute will look like the example shown below:
+   For example:
 
-   ```PowerShell
+   ```powershell
    Enable-DnssecForVerifiedDomain -DomainName contosotest.com
    ```
 
-   > [!NOTE]
-   > This command can take a few minutes to execute.
+   For detailed syntax and parameter information, see [Enable-DnssecForVerifiedDomain](/powershell/module/exchange/enable-dnssecforverifieddomain).
 
-   The successful execution of the command that you had run is indicated by the following output:
+   > [!TIP]
+   > This command can take a few minutes to run.
 
-   |Result  |DnssecMxValue  |ErrorData  |
-   |---------|---------|---------|
-   |Success     |contosotest-com.o-v1.mx.microsoft         |         |
+   The following example output indicates success:
 
-   The output (indicating the successful execution of the command) provides the MX value for the domain. This value—**contosotest-com.o-v1.mx.microsoft**—is the name that the new MX record points to for the domain you're enabling with IRR.
-
-1. Take the "DnssecMxValue" value, navigate to the DNS registrar hosting the domain; add a new MX record using the "DnssecMxValue" value returned in Step 3 (for example, **contosotest-com.o-v1.mx.microsoft**); set the TTL to the lowest possible value (but not lower than 30 seconds); and set the priority of the new MX record to **20**.
-
-   > [!WARNING]
-   > If you're using a third-party email gateway (for example, Proofpoint), leave the MX record value so that it stays pointing to the third party. Instead, change the smarthost name that the third party uses to relay your mail to Exchange Online after the third party completes the processing on their side. The smarthost name for the domain enabled with IRR needs to be changed so that this changed smarthost name is set to be the "DnssecMxValue." This changing of the smarthost name ensures that inbound email to Exchange Online for domains using third-party email gateways are processed by Exchange Online using IRR.
-
-1. Verify that the new MX is working via the Inbound SMTP Email test by expanding the **Test Steps** dropdown in the **Microsoft Remote Connectivity Analyzer** page (https://testconnectivity.microsoft.com/tests/O365InboundSmtp/input) and choosing the appropriate values.
-
-   > [!NOTE]
-   > You may have to retry these steps under the **Test Steps** dropdown depending on DNS caching.
-
-    Once you complete verifying whether the new MX is working via the Inbound SMTP Email test, the following screenshot is displayed:
-
-    :::image type="content" source="../media/connectivity-test-results.png" alt-text="Screenshot that shows the results of the Connectivity Test process." lightbox="../media/connectivity-test-results.png":::
-
-    This resultant screen denotes that "the Mail Exchanger ending in mx.microsoft was successfully tested" and that the new MX is working as expected.
-
-1. Change the priority of the legacy MX from current priority to **30**; change the priority of the MX record created in Step 3 so that it's set to priority **0** (highest priority).
-1. Delete the legacy MX record ending with "mail.protection.outlook.com," "mail.eo.outlook.com," or "mail.protection.outlook.de." Then, update the TTL for the MX record ending with "mx.microsoft" to **3600 seconds**.
-
-## Enabling IRR
-
-Once you comply with the [Prerequisites](#prerequisites) and the steps in [Adopting an MX target](#adopting-an-mx-target), perform the following steps to enable IRR:
-
-1. Connect to an Admin account for your tenant using Exchange Online PowerShell by running the following command:
-  
-   ```PowerShell
-   Connect-ExchangeOnline -UserPrincipalName <username>
+   ```console
+   Result       DnssecMxValue                        ErrorData
+   -------      ------------------                   -------------
+   Success      contosotest-com.o-v1.mx.microsoft    
    ```
 
-   > [!NOTE]
-   > Open PowerShell using the "Run as Administrator" mode.
+3. Do one of the following steps based on your existing mail flow configuration:
+   - **The existing MX record for your domain points to Microsoft 365**: Create a new MX record at the DNS hosting service for your domain with the following properties:
+     - **Record type**: MX
+     - **Priority**: 20
+     - **Hostname**: Use the **DnssecMxValue** value from the previous step. For example, `contosotest-com.o-v1.mx.microsoft`.
+     - **TTL**: A minimum of 30 seconds.
 
-2. Run the following command  to set the **MailFlowRegion** attribute's value for the domain to whatever secondary region you want it to be aligned:
+      We provide instructions to create the proof of domain ownership MX record for Microsoft 365 at many domain registrars. You can use these instructions as a starting point to create the MX record value. For more information, see [Add DNS records to connect your domain](/Microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-   ```PowerShell
-   Set-AcceptedDomain <domain> -MailFlowRegion <PreferredDataLocation Value>
+   - **The existing MX record for your domain points to a non-Microsoft service or device**: At the non-Microsoft service, change the smart host value that relays mail from the service to Microsoft 365 to the **DnssecMxValue** value (for example, `contosotest-com.o-v1.mx.microsoft`).
+
+4. Use the **Inbound SMTP Email** test in the **Microsoft Remote Connectivity Analyzer** at <https://testconnectivity.microsoft.com/tests/O365InboundSmtp/input> to verify the IRR-related MX record is working.
+
+   > [!TIP]
+   > You might have to retry the test, depending on DNS caching.
+
+   Successful completion of the test looks like this:
+
+   :::image type="content" source="../media/connectivity-test-results.png" alt-text="Screenshot that shows the results of the Connectivity Test process." lightbox="../media/connectivity-test-results.png":::
+
+5. Change the **Priority** values of the MX records for your domain:
+   - **The existing MX record from Step 1**: Change the **Priority** value to 30.
+   - **The IRR MX record from Step 3 (ends with mx.microsoft)**:  Change **Priority** value to **0** (highest priority).
+
+6. Delete any legacy MX records that contain the following values:
+   - `mail.protection.outlook.com`
+   - `mail.eo.outlook.com`
+   - `mail.protection.outlook.de.`
+
+7. Update the TTL for the IRR MX from Step 3 (ends with `mx.microsoft`) to **3600 seconds**.
+
+## Enable IRR
+
+After you complete the [Prerequisites](#prerequisites) and the steps in [Adopt an MX target](#adopt-an-mx-target), do the following steps to enable IRR for the domain:
+
+1. [Connect to Exchange Online PowerShell](/microsoft-365/enterprise/administering-exchange-online-multi-geo?view=o365-worldwide#connect-directly-to-a-geo-location-using-exchange-online-powershell) using an admin account.
+
+2. Use the following syntax:
+
+   ```powershell
+   Set-AcceptedDomain -Identity <Domain> -MailFlowRegion <PreferredDataLocation>
    ```
 
-   > [!NOTE]
-   > You must use one of the 3-letter codes specified in [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) as the **PreferredDataLocation** value for the user, as these are the regions that support IRR.
+   - \<Domain\> is the accepted domain.
+   - \<PreferredDataLocation\> is a valid three-letter code specified in [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability).
 
-   The IRR is configured and enabled.
+   For example:
 
-3. Wait for 30 minutes after enabling IRR to allow previously cached DNS records to expire and updated routing information to propagate. Once this time (of 30 minutes) has passed, send an email to that domain to verify whether the mail flow is working as expected.
+   ```powershell
+   Set-AcceptedDomain -Identity contosotest.com -MailFlowRegion GBR
+   ```
 
-Once you send the email to that domain, if you view error messages, such messages denote that the mail flow isn't working as expected. For more information on the error messages, see [Potential errors](#potential-errors).
+   For detailed syntax and parameter information, see [Set-AcceptedDomain](/powershell/module/exchange/set-accepteddomain).
+
+3. Wait 30 minutes after enabling IRR to allow previously cached DNS records to expire and updated routing information to propagate. Then, send an email to recipients in the domain to verify whether mail flow is working as expected.
+
+Errors that you might encounter are described in the next section.
 
 ### Potential errors
 
 This section describes the types of error messages that are displayed if the mail flow isn't working as expected as a result of an IRR configuration failure.
 
-The types of errors are:
-
-- [Wrong region error](#wrong-region-error)
-- [System errors](#system-errors) 
-
 #### Wrong region error
 
-|Error message |Description  |
-|---------|---------|
-|451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information please go to https://go.microsoft.com/fwlink/?linkid=865268     |This SMTP error is returned when an email server tries to deliver a message to a tenant’s wrong M365 endpoint. However, tenants for whom multi-geo SKU and IRR are enabled shouldn't get this error if the message is being delivered to one of the tenant’s [AllowedMailboxRegions](administering-exchange-online-multi-geo.md).         |
+> 451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information go to <https://go.microsoft.com/fwlink/p/?linkid=865268>.
+
+You get this SMTP error when mail is delivered to the wrong Microsoft 365 endpoint. If your organization is enabled for multi-geo and IRR, you shouldn't get this error if mail is delivered to a geo location [configured in your Exchange Online organization](administering-exchange-online-multi-geo#view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization.md).|
 
 #### System errors
 
-The following SMTP errors indicate a temporary system error. An email server is expected to retry message delivery in such cases:
+The following SMTP errors indicate a temporary system error:
 
 - **451 4.3.2 Temporary server error. Please try again later ATTR55**
 - **451 4.4.3 Temporary server error. Please try again later ATTR55.1**
+
+Email servers are expected to retry message delivery.
