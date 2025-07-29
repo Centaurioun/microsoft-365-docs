@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - must-keep
-ms.custom: 
-- AdminSurgePortfolio
-- campaignIDs-batch1
+- trust-pod
+- feedback-content
+ms.custom: campaignIDs-batch1
 description: "Learn about feedback your users can send to Microsoft about Microsoft products."
 ---
 
