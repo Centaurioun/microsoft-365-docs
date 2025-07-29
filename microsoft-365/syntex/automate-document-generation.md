@@ -1,11 +1,11 @@
 ---
-title: Automate document generation with Microsoft Syntex and Power Automate
+title: Automate document generation with document processing and Power Automate
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 01/23/2025
+ms.date: 08/01/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid:
@@ -13,12 +13,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to automatically create documents and other content using Microsoft Syntex and Power Automate.
+description: Learn how to automatically create documents and other content using document processing for Microsoft 365 and Power Automate.
 ---
 
-# Automate document generation with Microsoft Syntex and Power Automate
+# Automate document generation with document processing and Power Automate
 
-Using content assembly in Microsoft Syntex together with Power Automate, you can automate the generation of documents using modern templates.
+Using content assembly together with Power Automate, you can automate the generation of documents using modern templates.
 
 ## Automate document generation
 
@@ -42,7 +42,7 @@ Follow these steps to automatically generate documents using a modern template a
 
 5. Select the SharePoint connector again. In the search box, search for and select the action **Generate document using Syntex**.
 
-   ![Screenshot of the SharePoint connector Actions tab showing Generate document using Syntex action.](../media/content-understanding/document-generation-action.png)
+   ![Screenshot of the SharePoint connector Actions tab showing Generate document using document processing action.](../media/content-understanding/document-generation-action.png)
 
 6. Enter the site information, and select the document library that contains the modern template.
 

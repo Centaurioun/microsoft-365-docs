@@ -1,10 +1,10 @@
 ---
-title: Set up and manage unstructured document processing in SharePoint
+title: Set up and manage unstructured document processing
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/24/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.custom: setup
@@ -18,7 +18,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up and manage the unstructured document processing service in SharePoint.
 ---
 
-# Set up and manage unstructured document processing in SharePoint
+# Set up and manage unstructured document processing
 
 Unstructured document processing is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
@@ -26,7 +26,7 @@ Unstructured document processing is a pay-as-you-go service that is set up in th
 
 ### Licensing
 
-Before you can use unstructured document processing, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Unstructured document processing is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use unstructured document processing, you must first link an Azure subscription in [pay-as-you-go](syntex-azure-billing.md). Unstructured document processing is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -36,7 +36,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up unstructured document processing
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), unstructured document processing is automatically set up and enabled for all SharePoint sites.
+After an [Azure subscription is linked to pay-as-you-go](syntex-azure-billing.md), unstructured document processing is automatically set up and enabled for all SharePoint sites.
 
 ## Manage sites
 
