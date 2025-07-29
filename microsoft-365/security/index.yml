@@ -1,0 +1,109 @@
+### YamlMime:Hub
+
+title: Microsoft 365 security # < 60 chars
+summary: Protect your Microsoft 365 environment. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about security for Microsoft 365 products and services. 
+  services: office-365-security-compliance
+  ms.service: microsoft-365-security
+  ms.topic: hub-page # Required
+  ms.collection: 
+  - m365-security-compliance
+  - trust-pod
+  author: dansimp #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/24/2024 #Required; mm/dd/yyyy format.
+  ms.custom: intro-hub-or-landing
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Zero Trust and Microsoft 365
+      itemType: quickstart
+      url: /microsoft-365/security/microsoft-365-zero-trust
+    # Card
+    - title: Zero Trust identity and device access configurations
+      itemType: quickstart
+      url: /microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview
+    # Card
+    - title: Strengthen your security posture
+      itemType: quickstart
+      url: /microsoft-365/security/security-posture-solution-overview
+    # Card
+    - title: Microsoft SIEM and XDR security solutions
+      itemType: overview
+      url: https://www.microsoft.com/en-us/security/business/threat-protection
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  # Supports up to 3 subsections
+  sections:
+  - title: Security scenarios & solutions
+    items: 
+      - title: Microsoft 365 security solutions
+        links:
+         - url: /microsoft-365/solutions/setup-secure-collaboration-with-teams
+           itemType: overview
+           text: Set up secure file sharing and collaboration with Microsoft Teams
+         - url: /microsoft-365/solutions/empower-people-to-work-remotely
+           text : Empower people to work remotely with Microsoft 365
+           itemType: how-to-guide
+         - url: /microsoft-365/solutions/ransomware-protection-microsoft-365
+           text: Deploy ransomware protection for your Microsoft 365 tenant
+           itemType: overview
+      # Card
+      - title: Microsoft Copilot 
+        links:
+         - url: /copilot/microsoft-365/microsoft-365-copilot-privacy
+           itemType: overview
+           text: Data, Privacy, and Security for Microsoft 365 Copilot     
+ 
+   # Card
+      - title: Microsoft Teams
+        links:
+         - url: /microsoftteams/teams-security-guide
+           itemType: overview
+           text: Security and Microsoft Teams
+
+  # Card
+      - title: Microsoft SharePoint and Microsoft OneDrive
+        links:
+         - url: /sharepoint/safeguarding-your-data
+           itemType: overview
+           text: How SharePoint and OneDrive safeguard your data
+         - url: /sharepoint/authentication
+           itemType: overview
+           text: SharePoint authentication
+  # Card
+      - title: Microsoft Viva
+        links:
+         - url: /Viva/viva-security
+           itemType: overview
+           text: Understand how security works in Microsoft Viva
+  # Card
+      - title: Microsoft Defender products and services
+        links:
+         - url: /defender/
+           itemType: overview
+           text: Lean about the Microsoft Defender products
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  sections: 
+  - title: Learning, Training, and Certification # < 60 chars (optional)
+    items:
+     - title: Recommended Microsoft 365 learning modules
+       summary: Microsoft 365 security and compliance 
+       url: /training/paths/m365-security-compliance-capabilities/
+     - title: Microsoft certification for Security
+       summary: Security, compliance, and identity fundamentals
+       url: /credentials/certifications/security-compliance-and-identity-fundamentals

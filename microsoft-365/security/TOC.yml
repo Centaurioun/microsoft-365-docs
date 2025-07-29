@@ -1,0 +1,55 @@
+items:
+- name: Microsoft 365 security
+  href: index.yml
+  expanded: true
+  items:
+    - name: Get started
+      items:
+        - name: Microsoft 365 Zero Trust deployment plan
+          href: /security/zero-trust/microsoft-365-zero-trust?toc=%2Fmicrosoft-365%2Fsecurity%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+        - name: Top tasks to support working from home
+          href: top-security-tasks-for-remote-work.md
+    - name: Zero Trust identity and device access configurations
+      items:
+        - name: Overview
+          href: /security/zero-trust/zero-trust-identity-device-access-policies-overview?toc=%2Fmicrosoft-365%2Fsecurity%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+        - name: Prerequisite work
+          href: /security/zero-trust/zero-trust-identity-device-access-policies-prerequisite?toc=%2Fmicrosoft-365%2Fsecurity%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+        - name: Common identity and device access policies
+          href: /security/zero-trust/zero-trust-identity-device-access-policies-common?toc=%2Fmicrosoft-365%2Fsecurity%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+        - name: Policies for guest and external users
+          href: /security/zero-trust/zero-trust-identity-device-access-policies-guest-access?toc=%2Fmicrosoft-365%2Fsecurity%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+        - name: Recommended policies and settings for Microsoft 365 workloads
+          href: /security/zero-trust/zero-trust-identity-device-access-policies-workloads?toc=%2Fmicrosoft-365%2Fsecurity%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
+    - name: Strengthen your security posture with Microsoft Defender XDR
+      items:
+        - name: Overview
+          href: security-posture-solution-overview.md
+        - name: Phase 1 - Configure capabilities
+          href: strengthen-security-posture-configure-capabilities.md
+        - name: Phase 2 - Assess and protect your assets
+          href: strengthen-security-posture-assess-protect.md
+        - name: Phase 3 - Improve your security posture
+          href: strengthen-security-posture-investigate-improve.md
+        - name: Phase 4 - Maintain a secure posture
+          href: strengthen-security-posture-track-maintain.md
+    - name: Microsoft Defender XDR docs
+      items:
+       - name: Microsoft Defender XDR
+         href: ./defender/index.yml
+       - name: Defender for Office 365
+         href: ./office-365-security/index.yml
+       - name: Defender for Endpoint
+         href: ./defender-endpoint/index.yml
+       - name: Defender for Identity
+         href: /defender-for-identity
+       - name: Defender for Cloud Apps
+         href: /cloud-app-security
+       - name: Defender for Business
+         href: ./defender-business/index.yml
+    - name: Microsoft 365 Enterprise
+      href: ../enterprise/index.yml
+    - name: Microsoft Purview
+      href: ../compliance/index.yml
+    - name: Manage active content in Office documents
+      href: active-content-in-trusted-docs.md
