@@ -25,6 +25,8 @@ items:
           href: autofill-setup.md
         - name: Create autofill columns
           href: autofill.md
+        - name: Monitor activity status
+          href: processing-status-ai.md
 
     - name: Document translation
       items: 
@@ -36,6 +38,8 @@ items:
           href: translation.md
         - name: Use a glossary 
           href: translation-glossary.md
+        - name: Monitor activity status
+          href: processing-status-ai.md
 
     - name: eSignature 
       items: 
