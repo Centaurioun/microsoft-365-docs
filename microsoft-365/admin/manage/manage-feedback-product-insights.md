@@ -10,8 +10,10 @@ audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.collection: 
+- Adm_O365
+- trust-pod
+- feedback-content
 description: "Use Net promoter scores (NPS) from your end users to see how they feel about Microsoft products and services."
 ---
 
