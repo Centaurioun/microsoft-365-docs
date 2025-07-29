@@ -2,8 +2,8 @@
 title: "Configure Multi-Geo In-Region Routing (In Preview)"
 ms.reviewer:
 ms.date: 07/02/2025
-ms.author: kvice
-author: kelleyvice-msft
+ms.author: chrisda
+author: chrisda
 manager: scotv
 audience: ITPro
 ms.topic: how-to
@@ -131,6 +131,5 @@ The types of errors are:
 
 The following SMTP errors indicate a temporary system error. An email server is expected to retry message delivery in such cases:
 
-- **451 4.4.3 Temporary server error. Please try again later ATTR3.4**
 - **451 4.3.2 Temporary server error. Please try again later ATTR55**
 - **451 4.4.3 Temporary server error. Please try again later ATTR55.1**
