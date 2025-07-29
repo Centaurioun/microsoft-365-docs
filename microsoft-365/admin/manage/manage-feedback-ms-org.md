@@ -10,13 +10,13 @@ audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: 
-- AdminSurgePortfolio
-- admindeeplinkMAC
+- trust-pod
+- feedback-content
+ms.custom: admindeeplinkMAC
 description: "Manage feedback your users can send to Microsoft about Microsoft products."
 ---
 
