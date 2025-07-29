@@ -14,8 +14,7 @@ metadata:
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
   ms.date: 07/18/2025 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
-  titleSuffix: Microsoft 365
-
+ 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
