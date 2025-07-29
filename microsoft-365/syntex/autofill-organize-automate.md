@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/11/2025
+ms.date: 08/04/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -20,7 +20,9 @@ description: Learn how to organize and automate columns in a document library in
 
 # Organize and automate columns in a SharePoint document library
 
-The Knowledge agent in SharePoint empowers users to build richer, more intelligent document libraries for streamlined content management. By simplifying the configuration process, it ensures consistent and accurate data capture across your organization. With recommended metadata columns, the agent improves library-scoped chat experiences and enables rule-based automation flows that support efficient business processes. This approach keeps your SharePoint libraries organized, relevant, and continuously up-to-date—making document management smarter and more scalable.
+The Knowledge agent in SharePoint empowers you to build richer, more intelligent document libraries for streamlined content management. By simplifying the configuration process, it ensures consistent and accurate data capture across your organization.
+
+With recommended metadata columns, the agent improves library-scoped chat experiences and enables rule-based automation flows that support efficient business processes. This approach keeps your SharePoint libraries organized, relevant, and continuously up-to-date—making document management smarter and more scalable.
 
 <!---
 Use the Knowledge agent in SharePoint to create richer, more powerful document libraries to manage your content.
@@ -38,11 +40,11 @@ To get suggested columns and metabase based on the content in your document libr
 
 ### Launch the quick action
 
-1. In the lower-right corner of your document library, select the **Open AI quick actions** icon.
+1. In the lower-right corner of your document library, select the **AI quick actions** icon.
 
    ![Screenshot of a document library with the icon highlighted.](../media/content-understanding/autofill-librarian-open-actions-icon.png)
 
-2. From the **AI quick actions** menu, select **Organize this library**.
+2. From the **AI quick actions** menu, select **Organize and automate this library**.
 
    ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/autofill-librarian-agents-in-sharepoint-menu.png)
 
