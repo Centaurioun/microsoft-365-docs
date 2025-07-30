@@ -66,7 +66,7 @@ Most enterprise organizations have secured their HR management systems and knowl
 
 When you integrate these enterprise systems into the ESS agent, it becomes a more reliable source for providing information to your users. In order to integrate these systems, you need to make them accessible to the Power Platform environment where the ESS agents are hosted.
 
-You need to configure these systems with allowlists for the source IP addresses from which the ESS agent is hosted and executed, such as the Power Platform environment. See the documentation listed below for information on retrieving the list of IP address ranges to configure in the network environment:
+You need to configure these systems with allowlists for the source IP addresses from which the ESS agent is hosted and executed, such as the Power Platform environment. See the following documentation for information on retrieving the list of IP address ranges to configure in the network environment:
 
 [Learn about overall Power Platform URLs and IP address ranges.](/power-platform/admin/online-requirements).
 
@@ -174,7 +174,7 @@ Add Domain Security Policies for respective ISSG under the **View/Modify** acces
 
 ![Screenshot showing where to put Domain Security Policies permitting Get access.](../media/ess/workday-5.png)
 
-After Domain addition, run the task below to finalize the Domain policy changes:
+After Domain addition, run the following task to finalize the Domain policy changes:
 
 **Task - Activate Pending Security Policy Changes**
 
@@ -196,7 +196,7 @@ You don't need to do this step if SSO is already established for Workday with Mi
 
 ### Install the Workday Extension Pack for ESS agent
 
-The ESS agent is designed to have separate extension packs for each third-party ISV. Consequently, you need to install these extension packs before starting any configurations or customizations.
+The ESS agent is designed to have separate extension packs for each third-party ISV. You need to install these extension packs before starting any configurations or customizations.
 
 The following steps are required to install and enable the Workday Extension Pack:
 
@@ -223,7 +223,7 @@ Currently, the Workday connector in Power Platform supports three types of authe
 - Microsoft Entra ID Integrated
 - Microsoft Entra ID Integrated with API Management
 
-In this article, you learn how to set up the **Microsoft Entra ID Integrated** authentication method. You need to have completed SSO configuration in order to do this.
+In this article, you learn how to set up the **Microsoft Entra ID Integrated** authentication method. You need to complete the SSO configuration in order to do this setup.
 
 When you install the Workday connector, the first step is to set up connections using the form. Fill out the following fields:
 
@@ -290,7 +290,7 @@ During the Workday Extension Pack installation process, you're prompted for the 
 |Generic User              |new_sharedworkdaysoap_0786a                  |ISSG_Generic_COPILOT             |
 |Microsoft Dataverse       |msviess_sharedcommondataserviceforapps_92b66 |ISSG_WQL_COPILOT                 |
 
-Note that all the above user accounts mentioned in the table under "Expected connection user account" should be available in Entra for SSO and use the respective accounts in UPN format (example: `ISSG_WQL_COPILOT@contoso.com`). Ensure that each connection is explicitly set up with its own account even though the connection status turned green after the first connection setup.
+All the user accounts mentioned in the table under "Expected connection user account" should be available in Entra for SSO and use the respective accounts in UPN format (example: `ISSG_WQL_COPILOT@contoso.com`). Ensure that each connection is explicitly set up with its own account even though the connection status turned green after the first connection setup.
 
 #### Step five: Update the environment variables
 
@@ -302,8 +302,8 @@ Note that all the above user accounts mentioned in the table under "Expected con
 |-----------------------------------------|------------|
 |WorkdayWebsiteRedirectMessage            |This is the message shown to users in success/failure scenarios for update email/phone number actions |
 |EmployeeContextRequestAccountName        |Should contain the account that has access to the RaaS report. Reference from connection table: ISUAccount |
-|EmployeeContextRequestReportName         |should be the name of the report that contains the required information reference from above connection table: ReportName |
-|EmployeeContextRequestReportInstanceName |should be the instance name that the report belongs to reference from above connection table: Report Instance |
+|EmployeeContextRequestReportName         |should be the name of the report that contains the required information reference from connection table: ReportName |
+|EmployeeContextRequestReportInstanceName |should be the instance name that the report belongs to reference from connection table: Report Instance |
 
 #### Step 6: Confirm the Workday flows are turned on
 
