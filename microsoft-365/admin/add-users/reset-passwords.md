@@ -2,9 +2,9 @@
 title: "Reset passwords"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 04/02/2025
 audience: Admin
 ms.topic: how-to
@@ -18,6 +18,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - must-keep
+- trust-pod
 ms.custom:
   - VSBFY23
   - TopSMBIssues

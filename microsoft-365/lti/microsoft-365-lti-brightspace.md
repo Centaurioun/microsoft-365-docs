@@ -4,7 +4,7 @@ description: Learn how to deploy the Microsoft 365 Learning Tool Interoperabilit
 author: jennplatt
 ms.author: avering
 manager: michal.gideoni
-ms.date: 07/23/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: msteams
@@ -103,11 +103,9 @@ You now have a tool registration configured in the Microsoft registration portal
 1. In Configuration Settings, select **Grades created by LTI will be included in Final Grade** and **Auto Create Grade Items**. Make sure that **Open as External Resource** is **not** checked.
     :::image type="content" source="./media/brightspace-configuration-settings.png" alt-text="Screenshot of configuration settings." border="true":::
 
-1. Select **Add Org Units**. Select the orgs you wish to deploy to, or the **root org** or **all** units to deploy the app for all orgs.
+1. Select **Add Org Units**. Select the orgs you wish to deploy to, or the **root org** or **all** units to deploy the app for all orgs by searching for the Organization name and selecting **All Descendants**
 
-1. Select **Create Deployment** and confirm the deployment.
-
-1. From the deployments list, select the **Microsoft** **Education** deployment, scroll down to **Deployment Id** at the bottom, and save this value and its name, as it also is required in the Microsoft Registration portal.
+1. Select **Create Deployment** and confirm the deployment. A pop-up appears, showing the Deployment ID. Save it with the Name chosen on step 3, as it will be required in the Microsoft Registration Portal.
 
 **To add links to the Microsoft Education tools in your D2L Brightspace courses:**
 
@@ -157,7 +155,7 @@ You now have a tool registration configured in the Microsoft registration portal
 
 1. Navigate to **Admin Tools** > **Navigation and Themes**.
 
-1. Select **Standard Course Navigation** and then **Add Links**.
+1. Select the Navbar that you wish to modify and then **Add Links**.
 
 1. Select **Create Custom Link**.
 
@@ -171,7 +169,7 @@ You now have a tool registration configured in the Microsoft registration portal
 
 1. Ensure that the **Microsoft Education** checkbox is selected, and then select **Add**.
 
-1. Drag the Teams Assignments link to your preferred location in the course navigation.
+1. Drag the Teams Assignments link to your preferred location in the Navbar.
 
 1. Select **Save and Close**.
 
