@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- trust-pod
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb

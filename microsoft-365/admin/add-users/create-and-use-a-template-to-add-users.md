@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - must-keep
+- trust-pod
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
