@@ -104,3 +104,7 @@ To turn off autofill on a specific column, follow these steps:
 
 > [!NOTE]
 > To see the column types that are currently available for autofill, see [Requirements and limitations](autofill-overview.md#requirements-and-limitations).
+
+## View the processing status
+
+You can view real-time updates on files processed for autofill columns on the **Autofill activity** panel. For more information, see [Monitor the status of files processed for autofill and translation in SharePoint](processing-status-ai.md).
