@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
+- trust-pod
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
