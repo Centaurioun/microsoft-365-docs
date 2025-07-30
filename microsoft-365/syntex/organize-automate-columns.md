@@ -92,7 +92,7 @@ To get suggested columns and metabase based on the content in your document libr
 
 2. On the **Save and apply your changes?** confirmation screen, select **Apply changes**.
 
-   ![Screenshot of the Save and apply your changes? confirmation screen.](../media/content-understanding/autofill-librarian-confirmation-screen.png)
+   ![Screenshot of the Save and apply your changes? confirmation screen.](../media/content-understanding/knowledge-agent-confirmation-screen.png)
 
 ## Natural language automations
 
