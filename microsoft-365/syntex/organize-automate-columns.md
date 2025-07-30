@@ -56,23 +56,25 @@ To get suggested columns and metabase based on the content in your document libr
 
 ### Use a suggested action
 
-1. From the chat panel, select an action. For this example, we selected **Suggest more columns**.
+1. From the chat panel, select an action. For this example, we use **Suggest more columns**.
 
-2. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **Suggested**. This might take a few moments.
+2. In the chat box, review the instruction provided. If needed, you can modify the text to better suit your intent. Once you're ready, select the **Send** button to submit your action.
 
-   ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/autofill-librarian-suggested-columns-added.png)
+3. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **Suggested**. This might take a few moments.
 
-3. Review the suggested columns and the associated metadata to make sure they're appropriate for your content.
+   ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/knowledge-agent-suggested-columns-added.png)
 
-4. If you want to remove a suggested column, select the column name, and then select **Dismiss suggestion**.
+4. Review the suggested columns and the associated metadata to make sure they're appropriate for your content.
 
-   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/autofill-librarian-dismiss-suggestion.png)
+5. If you want to remove a suggested column, select the column name, and then select **Remove column**.
 
-5. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the instruction. To do so, select the column name, and then select **Edit column**.
+   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
 
-   ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/autofill-librarian-edit-column.png)
+6. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the instruction. To do so, select the column name, and then select **Edit column**.
 
-6. On the **Edit column** panel, you can edit the column name or edit the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
+   ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
+
+7. On the **Edit column** panel, you can edit the column name or edit the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
 
