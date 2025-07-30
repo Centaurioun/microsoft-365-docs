@@ -443,7 +443,7 @@ Requests templates are XML objects that define the request body that gets sent t
 </requestTemplates>
 ```
 
-This is a full sample template:
+This example is a full sample template:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
