@@ -58,7 +58,7 @@ To get suggested columns and metabase based on the content in your document libr
 
 1. From the chat panel, select an action. For this example, we use **Suggest more columns**.
 
-2. In the chat box, review the instruction provided. If needed, you can modify the text to better suit your intent. Once you're ready, select the **Send** button to submit your action.
+2. In the chat box, review the instruction provided. If needed, you can modify the text to better suit your intent. Once you're ready, select **Send** (![Screenshot of the send icon in the chat box.](../media/content-understanding/chat-box-send-icon.png)) to submit your action.
 
 3. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **Suggested**. This might take a few moments.
 
@@ -76,15 +76,15 @@ To get suggested columns and metabase based on the content in your document libr
 
 7. On the **Edit column** panel, you can edit the column name or edit the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
 
-   ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/autofill-librarian-edit-column-panel.png)
+   ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
 
 ### Enter a custom action
 
 1. In the chat panel’s text box, enter your own instruction.
 
-   ![Screenshot of the text box showing a custom instruction has been entered.](../media/content-understanding/autofill-librarian-custom-prompt.png)
+   ![Screenshot of the text box showing a custom instruction has been entered.](../media/content-understanding/knowledge-agent-custom-prompt.png)
 
-2. Press **Enter** to submit the action and initiate the suggestion flow.
+2. Select **Send** (![Screenshot of the send icon in the chat box.](../media/content-understanding/chat-box-send-icon.png)) to submit your action.
 
 ### Save your changes
 
