@@ -123,7 +123,7 @@ Steps breakdown:
 - Non-LLM answer: 1c
 
 >[!NOTE]
->The average price per user without a Microsoft 365 Copilot license is fifteen cents per query.
+>The average price per user without a Microsoft 365 Copilot license is 15 cents per query.
 
 ## Required roles
 
