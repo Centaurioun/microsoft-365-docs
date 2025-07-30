@@ -30,7 +30,7 @@ Use the Knowledge agent in SharePoint to create richer, more powerful document l
 This agent simplifies the process of configuring a document library and ensures consistent and accurate data capture. Recommended metadata columns enhance library-scoped agent chat and are also used to suggest rule-based flows that streamline business processes. This approach to automating document management keeps your SharePoint libraries organized, relevant, and up-to-date.
 --->
 
-## Suggest and create columns
+## Get suggested columns and metadata
 
 To get suggested columns and metabase based on the content in your document library, follow these steps.
 
