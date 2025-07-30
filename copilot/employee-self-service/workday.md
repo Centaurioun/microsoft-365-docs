@@ -62,7 +62,7 @@ We recommend you set up Copilot Studio capacity to monitor capacity usage of the
 
 ## Infrastructure setup for third-party ISV integration
 
-Most enterprise organizations have secured their HR management systems and knowledge sources from external networks, as it's critical to protect sensitive information about employees, organizations, knowledge assets, and more.
+Most enterprise organizations secure their HR management systems and knowledge sources from external networks, as it's critical to protect sensitive information about employees, organizations, knowledge assets, and more.
 
 When you integrate these enterprise systems into the ESS agent, it becomes a more reliable source for providing information to your users. In order to integrate these systems, you need to make them accessible to the Power Platform environment where the ESS agents are hosted.
 
