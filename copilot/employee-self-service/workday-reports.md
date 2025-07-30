@@ -345,7 +345,7 @@ This report is used for retrieving the required user context attributes from Wor
 |Temporary report                        |                                       |
 |Date report definition will be deleted  |                                       |
 
-The report name can be anything but rest of the definition including column sequences, xml alias, etc., should be kept intact to have the report return the exact same response expected by the ESS Agent.
+The report name can be anything but rest of the definition including column sequences, xml alias, and so on, should be kept intact to have the report return the exact same response expected by the ESS Agent.
 
 This report takes **Username** as an input and returns the following responses:
 
