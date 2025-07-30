@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - basic-mobility-security
+- trust-pod
 ms.custom: 
 - AdminSurgePortfolio
 - basic-mobility-security
