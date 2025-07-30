@@ -56,7 +56,7 @@ To get suggested columns and metabase based on the content in your document libr
 
 ### Use a suggested action
 
-1. From the chat panel, select one of the suggested actions. For this example, we selected **Create columns**.
+1. From the chat panel, select an action. For this example, we selected **Create columns**.
 
 2. The system analyzes your library and suggests new columns, which appear highlighted and marked as **Suggested**. This might take a few moments.
 
