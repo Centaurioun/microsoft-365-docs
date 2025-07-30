@@ -2,9 +2,9 @@
 title: "Remove a former employee - Overview"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 10/01/2024
 audience: Admin
 ms.topic: solution-overview

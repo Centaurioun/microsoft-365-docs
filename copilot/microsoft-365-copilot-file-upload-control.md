@@ -1,12 +1,12 @@
 ---
 title: Controls to manage file uploads in Microsoft 365 Copilot and Copilot Chat
 description: Overview of a control that allows admins to determine whether users can upload local files or attach cloud files when using Copilot or Copilot Chat. 
-ms.author: davidedwards
-author: davidedwards
-manager: kellis
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 06/26/2025
 audience: Admin
-ms.reviewer: suparekh
+ms.reviewer: suparekh; davidedwards
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
@@ -15,6 +15,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- trust-pod
 ms.custom: [copilot-learning-hub]
 robots: NOINDEX, NOFOLLOW
 appliesto:
