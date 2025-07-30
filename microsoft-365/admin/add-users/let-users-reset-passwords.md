@@ -2,9 +2,9 @@
 title: "Let users reset their own passwords"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 10/01/2024
 audience: Admin
 ms.topic: how-to

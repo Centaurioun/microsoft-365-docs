@@ -2,9 +2,9 @@
 title: "Restore a user"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 11/14/2024
 audience: Admin
 ms.topic: how-to
