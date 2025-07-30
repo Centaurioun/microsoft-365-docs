@@ -33,7 +33,7 @@ If you have security groups, mail enabled groups, or Microsoft 365 groups, you c
 
 ## Before you begin
 
-- You must be at least a License Administrator or User Administrator to assign licenses. Currently, Group Administrators can’t assign licenses. For more information, see [Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+- You must be at least a Groups Administrator, License Administrator or User Administrator to assign licenses.
 - In addition to the steps described in this article, you can also use the Microsoft Graph PowerShell SDK to assign or unassign Microsoft 365 licenses to groups. For more information, see [Set-MgGroupLicense](/powershell/module/microsoft.graph.groups/set-mggrouplicense).
 - Group-based licensing doesn't currently support nested groups (groups that contain other groups). If you assign licenses to a nested group, only users in the first-level group are assigned licenses.
 - When you assign or modify licenses for a large group, like 100,000 users, it can affect performance. In certain high load situations, it might take a long time to process license changes for groups or membership changes to groups with existing licenses.

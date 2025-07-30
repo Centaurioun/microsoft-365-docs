@@ -42,7 +42,7 @@ Updates released between July 8, 2025, and July 22, 2025.
  <a href="/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-knowledge" target="_blank">Learn more.</a>
 - **Share agents from embedded builder** [Windows, Web]
 
-  Users can share agents from an embedded agent builder to other individual users or group chats. Users can also create and share an extension option in web and send a request to admin to publish to the store.
+  Users can share agents from an embedded agent builder to other individual users or group chats.
  <a href="/microsoft-365/admin/manage/manage-embedded-knowledge-agents?" target="_blank">Learn more.</a>
 - **Share agents with context-aware link previews** [Windows, Web]
 
@@ -2544,7 +2544,7 @@ Updates released between July 8, 2025, and July 22, 2025.
  <a href="/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-knowledge" target="_blank">Learn more.</a>
 - **Share agents from embedded builder** [Windows, Web]
 
-  Users can share agents from an embedded agent builder to other individual users or group chats. Users can also create and share an extension option in web and send a request to admin to publish to the store.
+  Users can share agents from an embedded agent builder to other individual users or group chats.
  <a href="/microsoft-365/admin/manage/manage-embedded-knowledge-agents" target="_blank">Learn more.</a>
 - **Share agents with context-aware link previews** [Windows, Web]
 
@@ -3882,7 +3882,7 @@ Updates released between July 8, 2025, and July 22, 2025.
  <a href="/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-knowledge" target="_blank">Learn more.</a>
 - **Share agents from embedded builder** [Windows, Web]
 
-  Users can share agents from an embedded agent builder to other individual users or group chats. Users can also create and share an extension option in web and send a request to admin to publish to the store.
+  Users can share agents from an embedded agent builder to other individual users or group chats.
  <a href="/microsoft-365/admin/manage/manage-embedded-knowledge-agents" target="_blank">Learn more.</a>
 - **Share agents with context-aware link previews** [Windows, Web]
 
