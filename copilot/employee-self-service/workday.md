@@ -45,7 +45,7 @@ This diagram outlines the high-level components that make up the overall solutio
 - A Microsoft Entra user account with active subscription
 - Workday single sign-on (SSO) enabled subscription
 
-You'll also need to meet the [prerequisites to deploy the Employee Self-Service agent.](prerequisites.md)
+You also need to meet the [prerequisites to deploy the Employee Self-Service agent](prerequisites.md).
 
 ### Set up Copilot Studio capacity
 
@@ -282,7 +282,7 @@ Workday report configuration provides the SOAP base URL.
 
 #### Step four: Configure connections
 
-During the Workday Extension Pack installation process, you'll be prompted for the following connection configurations:
+During the Workday Extension Pack installation process, you're prompted for the following connection configurations:
 
 |Connection reference name |Connection reference ID |Expected connection user account |
 |--------------------------|------------------------|--------------------|
