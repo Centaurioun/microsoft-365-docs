@@ -277,7 +277,7 @@ Workday report configuration provides the SOAP base URL.
 1. Update the value with the correct name in the **Value** section.
 
 > [!NOTE]
-> The ESS agent uses a new Workday connector, which isn't the same as the one published in the Power Platfrom connectors list (Workday HCM - Connectors). The current connector used in the agent is Workday SOAP. Plan for any DLP policies to allowlist this connector in the environment where the agent is being deployed and tested.
+> The ESS agent uses a new Workday connector, which isn't the same as the one published in the Power Platform connectors list (Workday HCM - Connectors). The current connector used in the agent is Workday SOAP. Plan for any DLP policies to allowlist this connector in the environment where the agent is being deployed and tested.
 
 #### Step four: Configure connections
 
