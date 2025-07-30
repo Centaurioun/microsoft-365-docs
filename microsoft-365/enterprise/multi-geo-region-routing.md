@@ -1,7 +1,7 @@
 ---
 title: "Configure Multi-Geo In-Region Routing (In Preview)"
 ms.reviewer:
-ms.date: 07/02/2025
+ms.date: 07/30/2025
 ms.author: chrisda
 author: chrisda
 manager: scotv
