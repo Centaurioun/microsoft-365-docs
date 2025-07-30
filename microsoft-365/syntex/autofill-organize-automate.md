@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 08/04/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: concept-article
 ms.service: microsoft-syntex
@@ -92,8 +92,83 @@ To get suggested columns and metabase based on the content in your document libr
 
    ![Screenshot of the Save and apply your changes? confirmation screen.](../media/content-understanding/autofill-librarian-confirmation-screen.png)
 
-<!---
+## Natural language automations
 
+### Create automations with plain language
+
+The Knowledge agent enables you to set up automations in your document library simply by describing what you want to happen, using natural language. You don’t need to know technical terms or navigate complex menus—just tell the agent your intent, and it will suggest and configure the appropriate workflow.
+
+#### Supported automation actions
+
+- **Send an email** (for example, “Email me when a contract is approved”)
+- **Move a file** (for example, “Move reviewed invoices to the Verified Expenses folder”)
+- **Copy a file** (for example, “Copy all Northwind Traders invoices to their folder”)
+- **Translate a file** (for example, “Create a translated copy in French when a new policy is added”)
+
+#### How it works
+
+- The agent parses your chat input and, using library metadata, suggests a workflow.
+- You’ll see a summary card in chat and can confirm or edit before enabling.
+- If your request references data not yet tracked (for example, “Expiration Date”), the agent will suggest creating the necessary column.
+- For more complex automations or if the agent needs more details, you may be prompted for clarification or directed to the Rules UI for advanced editing.
+
+#### Example prompts
+
+- “Alert me to unpaid invoices due in the next 7 days.”
+- “Flag invoices missing invoice numbers.”
+- “Move ‘Reviewed’ invoices to the Verified Expenses folder.”
+- “Copy all invoices from Northwind Traders to their folder.”
+- “Translate new HR policies to Spanish.”
+
+### How automations are surfaced in chat
+
+When you use the Knowledge agent to organize and automate your document library, the agent communicates proposed workflows and automations directly in the chat panel as interactive cards. Each card summarizes the trigger, conditions, and actions that will be set up. For example, after you describe your intent (for example, “Alert me when an invoice is due in 7 days”), the agent parses your request and presents a card in chat showing:
+
+- **Trigger**: When a new file is added, or when a file/metadata is modified
+- **Condition**: For example, “Invoice Date is within 7 days”
+- **Action**: For example, “Send an email to me”
+
+You can review, confirm, or edit the workflow directly from the chat card before it is enabled. This keeps you in control and ensures transparency at every step. If more information is needed, the agent will prompt you in chat to clarify details before finalizing the automation.
+
+## Frequently asked questions
+
+##### What do I need to set up to see these capabilities?
+
+You need to have a Copilot license and the autofill pay-as-you-go meter turned on (for all sites or select ones).
+
+##### Why am I seeing errors when I try to process files?
+
+The Knowledge agent cannot process encrypted files, so it's likely that the files in your document library are encrypted. If your organizational policy allows, you will need to change the sensitivity label on the files for the Knowlege Agent to be able to process them.
+
+##### I don't see the "Organize and Automate" skill in the floating button. What's happening?
+
+The "organize and automate" action is only available to site owners or site members when in the root of a document library. It is disabled if the user has navigated into a folder.
+
+##### How does the agent keep me in control?
+
+Every agent action is shown as a card in chat for your review. You can edit or decline any suggestion, and changes aren't applied to the document library until you click the **Save changes** button.
+
+##### What kinds of automations can I create with the Knowledge agent?
+
+The agent can help you configure rules to send email notifications, move or copy files, and created translated document copies based on triggers like file creation, file change, or metadata change.
+
+##### What if I want to edit an automation later?
+
+You can edit automations via chat by selecting **Edit** on the rule card.
+
+![Screenshot of the New rule card showing the Edit option.](../media/content-understanding/knowledge-agent-edit-rule.png)
+
+##### What languages are supported?
+
+The agent [supports the same languages as Copilot](https://support.microsoft.com/topic/26de43a1-c176-4908-bef7-29c8c37ac7ce) for text-based prompts and responses, but can only process files in English currently.
+
+<!---
+## We value your feedback
+
+Your feedback drives improvements for everyone. Share your experience with this feature by filling out this [quick survey](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=bc020eefeadd43cfb107a4e3443594b1&id=v4j5cvGGr0GRqy180BHbR_PzshIK4BNFl0DNg2VJeqVUMjZWOTZYN0lUNU45SlVFWlNCUjBYR0E2Mi4u).
+--->
+
+<!---
 ## Planned capabilities coming soon
 
 We’re actively working on expanding this feature. Upcoming enhancements include:
@@ -103,19 +178,7 @@ We’re actively working on expanding this feature. Upcoming enhancements includ
 - New library flow​
 - Metadata view creation​
 - Classification grounding support
---->
 
-## Frequently asked questions
-
-Coming soon
-
-<!---
-## We value your feedback
-
-Your feedback drives improvements for everyone. Share your experience with this feature by filling out this [quick survey](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=bc020eefeadd43cfb107a4e3443594b1&id=v4j5cvGGr0GRqy180BHbR_PzshIK4BNFl0DNg2VJeqVUMjZWOTZYN0lUNU45SlVFWlNCUjBYR0E2Mi4u).
---->
-
-<!---
 ## Help us improve this feature
 
 Your feedback and suggestions can help us to refine this feature to meet your needs. Submit suggestions by using this [bug template](https://onedrive.visualstudio.com/ODSP%20Product%20Experiences/_workitems/create/Bug?templateId=c70796a2-07d9-4045-9ae7-57b0a493a290&ownerId=e1686dd0-4520-4f7f-9947-34d07bf00b0a) and provide feedback by taking this [brief survey](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=bc020eefeadd43cfb107a4e3443594b1&id=v4j5cvGGr0GRqy180BHbR_PzshIK4BNFl0DNg2VJeqVUMjZWOTZYN0lUNU45SlVFWlNCUjBYR0E2Mi4u).
