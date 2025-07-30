@@ -74,7 +74,7 @@ To get suggested columns and metabase based on the content in your document libr
 
    ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
 
-7. On the **Edit column** panel, you can edit the column name or edit the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
+7. On the **Edit column** panel, you can change the column name or modify the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
 
@@ -98,37 +98,37 @@ To get suggested columns and metabase based on the content in your document libr
 
 ### Create automations with plain language
 
-With the Knowledge agent, you can automate tasks in your document library simply by describing what you want to happen. No need to learn technical jargon or navigate complex menus—just explain your intent in everyday language. The agent will interpret your request, suggest the right workflow, and set it up for you automatically.
+With the Knowledge agent, you can automate tasks in your document library simply by describing what you want to happen. No need to learn technical jargon or navigate complex menus—just explain your intent in everyday language. The agent interprets your request, suggests the right workflow, and sets it up for you automatically.
 
 #### Supported automation actions
 
-- **Send an email** (for example, “Email me when a contract is approved”)
-- **Move a file** (for example, “Move reviewed invoices to the Verified Expenses folder”)
-- **Copy a file** (for example, “Copy all Northwind Traders invoices to their folder”)
-- **Translate a file** (for example, “Create a translated copy in French when a new policy is added”)
+- **Send an email** (for example, "Email me when a contract is approved")
+- **Move a file** (for example, "Move reviewed invoices to the Verified Expenses folder")
+- **Copy a file** (for example, "Copy all Northwind Traders invoices to their folder")
+- **Translate a file** (for example, "Create a translated copy in French when a new policy is added")
 
 #### How it works
 
 - The agent parses your chat input and, using library metadata, suggests a workflow.
 - You see a summary card in chat and can confirm or edit before enabling.
-- If your request references data not yet tracked (for example, “Expiration Date”), the agent suggests creating the necessary column.
+- If your request references data not yet tracked (for example, "Expiration Date"), the agent suggests creating the necessary column.
 - For more complex automations or if the agent needs more details, you might be prompted for clarification or directed to the Rules UI for advanced editing.
 
 #### Example prompts
 
-- “Alert me to unpaid invoices due in the next seven days.”
-- “Flag invoices missing invoice numbers.”
-- “Move ‘Reviewed’ invoices to the Verified Expenses folder.”
-- “Copy all invoices from Northwind Traders to their folder.”
-- “Translate new HR policies to Spanish.”
+- "Alert me to unpaid invoices due in the next seven days."
+- "Flag invoices missing invoice numbers."
+- "Move "Reviewed" invoices to the Verified Expenses folder."
+- "Copy all invoices from Northwind Traders to their folder."
+- "Translate new HR policies to Spanish."
 
 ### How automations are surfaced in chat
 
-When you use the Knowledge agent to organize and automate your document library, the agent communicates proposed workflows and automations directly in the chat panel as interactive cards. Each card summarizes the trigger, conditions, and actions that are set up. For example, after you describe your intent (for example, “Alert me when an invoice is due in seven days”), the agent parses your request and presents a card in chat showing:
+When you use the Knowledge agent to organize and automate your document library, the agent communicates proposed workflows and automations directly in the chat panel as interactive cards. Each card summarizes the trigger, conditions, and actions that are set up. For example, after you describe your intent (for example, "Alert me when an invoice is due in seven days"), the agent parses your request and presents a card in chat showing:
 
-- **Trigger**: When a new file is added, or when a file/metadata is modified
-- **Condition**: For example, “Invoice Date is within seven days”
-- **Action**: For example, “Send an email to me”
+- **Trigger**: When a new file is added, or when a file or metadata is modified
+- **Condition**: For example, "Invoice Date is within seven days"
+- **Action**: For example, "Send an email to me"
 
 You can review, confirm, or edit the workflow directly from the chat card before it's enabled. This keeps you in control and ensures transparency at every step. If more information is needed, the agent prompts you in chat to clarify details before finalizing the automation.
 
@@ -140,7 +140,7 @@ You need to have a Copilot license and the autofill pay-as-you-go service turned
 
 ##### Why am I seeing errors when I try to process files?
 
-The Knowledge agent can't process encrypted files, so it's likely that the files in your document library are encrypted. If your organizational policy allows, you'll need to change the sensitivity label on the files for the Knowledge agent to be able to process them.
+The Knowledge agent can't process encrypted files, so it's likely that the files in your document library are encrypted. If your organizational policy allows, you need to change the sensitivity label on the files for the Knowledge agent to be able to process them.
 
 ##### I don't see the "Organize and Automate" skill in the floating button. What's happening?
 
