@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center – Microsoft 365 Copilot Chat usage"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 07/16/2025
+ms.date: 05/07/2025
 ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
@@ -24,7 +24,7 @@ description: "Learn about the Microsoft 365 Copilot Chat usage report and gain i
 The Microsoft 365 Copilot Chat usage dashboard provides insights into active usage of Microsoft 365 Copilot Chat. The report includes total active users, average daily active users, and active users per app. Usage insights can be viewed as totals and trends for the past 7, 30, 90, or 180-day periods. The report also shows the last activity date per user, anonymized by default. To view all reports, check out [Microsoft 365 Reports in the admin center overview](activity-reports.md).
 
 > [!NOTE]
-> The report is currently limited to users without a Microsoft 365 Copilot license that interact with Copilot Chat in Teams, Outlook, Copilot.cloud.microsoft, Microsoft 365 Copilot (app), Microsoft Edge, Word, Excel, and PowerPoint. The all-up Copilot Chat user count as well as the ‘last activity date’ for each user will reflect usage of Copilot Chat in all of these host apps. Initially the report will not provide a breakout of usage in Word, Excel, and PowerPoint, but this update is planned and will be available soon.
+> The report is currently limited to users without a Microsoft 365 Copilot license that interact with Copilot Chat in Teams, Outlook, Copilot.cloud.microsoft, Microsoft 365 Copilot (app), and Microsoft Edge.
 
 ## How do I get to the Microsoft 365 Copilot Chat usage report?
 
@@ -81,7 +81,7 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |-----------------------------|-----------------------------------------------------------------------------|
 | **Username**                | The user's principal name.                                                  |
 | **Display name**            | The full name of the user.                                                  |
-| **Last activity date (UTC)**| The most recent date on which the user sent a message to Microsoft 365 Copilot Chat in Teams, Outlook, Copilot.cloud.microsoft, Microsoft Edge, the Microsoft 365 Copilot (app), Word, Excel, or PowerPoint. This date remains fixed even if the timeframe of the report is changed.  |
+| **Last activity date (UTC)**| The most recent date on which the user sent a message to Microsoft 365 Copilot Chat in Teams, Outlook, Copilot.cloud.microsoft, Microsoft Edge, or the Microsoft 365 Copilot (app). This date remains fixed even if the timeframe of the report is changed. |
 | **Last activity date of Teams (UTC)**| The most recent date on which the user sent a message to Microsoft 365 Copilot Chat in Teams. This date remains fixed even if the timeframe of the report is changed. |
 | **Last activity date of Outlook (UTC)**| The most recent date on which the user sent a message to Microsoft 365 Copilot Chat in Outlook. This date remains fixed even if the timeframe of the report is changed.  |
 | **Last activity date of Copilot.cloud.microsoft (UTC)**| The most recent date on which the user sent a message to Microsoft 365 Copilot Chat in Copilot.cloud.microsoft. This date remains fixed even if the timeframe of the report is changed. |

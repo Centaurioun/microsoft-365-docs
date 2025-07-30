@@ -4,7 +4,7 @@ description: Learn how to deploy the Microsoft 365 Learning Tool Interoperabilit
 author: jennplatt
 ms.author: avering
 manager: michal.gideoni
-ms.date: 07/14/2025
+ms.date: 07/23/2025
 audience: admin
 ms.topic: how-to
 ms.service: msteams
@@ -52,7 +52,7 @@ To fully integrate with your LMS environment and perform tasks on behalf of user
 
 1. Log into Brightspace as an Administrator or Super Administrator with permission to **Manage Extensibility** and **External Tools**.
 
-1. In Brightspace, navigate to **Admin Tools** **(gear icon)** > **Manage Extensibility** and then select the **Register Tool** button.
+1. In Brightspace, navigate to **Admin Tools** **(gear icon)** > **Manage Extensibility**, select the **LTI Advantage** tab, and then select the **Register Tool** button.
 
 1. Select the **Standard** registration radio button and enter the values listed in the table:
 
@@ -181,8 +181,8 @@ You must launch the app for the first time as a user with the **Brightspace Syst
 
 1. As a Brightspace System Administrator, access any Course that has the Microsoft Education link added.
 
-1. Continue with the **Microsoft 365 LTI first-time configuration steps** to complete the configuration for your organization.
-<!-- -->
+1. Continue with the [**Microsoft 365 LTI first-time configuration steps**](microsoft-365-lti-first-time-configuration.md) to complete the configuration for your organization.
+
 ## Ongoing use by instructors and students in a course
 
 On first access, users must sign in using their Microsoft 365 (Microsoft Entra) account.
@@ -197,12 +197,12 @@ Learn more about Microsoft 365 LTI application scenarios for Instructors and Stu
 
 If you receive an error message regarding cookies being blocked, check your browser's address bar for an icon to allow third-party cookies and popups. If this issue persists, review your settings related to cookies and popups to make sure they are allowed for this app.
 
-## Getting help for admins and educators
+## Getting help and giving feedback
 
 - LMS and Microsoft 365 admins can contact Microsoft [Education Support](https://aka.ms/edusupport) to help resolve configuration and deployment issues, for themselves or on behalf of users.
 
 - Educators and Learners can contact support or give feedback directly from the app through the help and feedback menu.
 
-:::image type="content" source="./media/feedback.png" alt-text="Screenshot of link to send feedback for Microsoft Teams Assignments." border="true":::
+:::image type="content" source="./media/help-and-feedback.png" alt-text="Screenshot of link to send feedback for Microsoft 365 LTI." border="true":::
 
 Learning Tools Interoperability® (LTI®) is a trademark of the 1EdTech Consortium, Inc. (**[**1edtech.org**](https://1edtech.org)**)

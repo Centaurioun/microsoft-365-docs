@@ -3,10 +3,10 @@ title: Microsoft 365 Copilot blueprint for oversharing
 description: Use this deployment blueprint to help prevent oversharing when using Microsoft 365 Copilot.
 f1.keywords:
 - NOCSH
-ms.author: mandia
-author: MandiOhlinger
-manager: laurawi
-ms.date: 01/15/2025
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
+ms.date: 07/22/2025
 ms.update-cycle: 180-days
 ms.reviewer: 
 audience: Admin
@@ -18,6 +18,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - essentials-overview
+- trust-pod
 ms.custom: [copilot-learning-hub]
 appliesto:
   - ✅ Microsoft 365 Copilot

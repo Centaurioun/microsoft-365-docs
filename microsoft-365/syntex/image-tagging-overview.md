@@ -1,11 +1,11 @@
 ---
-title: Overview of image tagging in SharePoint
+title: Overview of image tagging
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 06/23/2025
+ms.date: 08/01/2025
 ms.topic: article
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 description: Learn about enhanced image tagging in SharePoint.
 ---
 
-# Overview of image tagging in SharePoint
+# Overview of image tagging
 
 > [!NOTE]
 > Through December 2025, you can try out a [limited amount](promo-syntex.md#included-monthly-capacity) of image tagging and other selected content services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out pay-as-you-go services](promo-syntex.md).

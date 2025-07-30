@@ -1,11 +1,11 @@
 ---
-title: Duplicate a document processing model in SharePoint
+title: Duplicate a document processing model
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 02/20/2025
+ms.date: 08/01/2025
 ms.topic: how-to
 ms.service: microsoft-syntex
 search.appverid: 
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how and why to duplicate a document processing model in SharePoint.
 ---
 
-# Duplicate a document processing model in SharePoint
+# Duplicate a document processing model
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
@@ -49,4 +49,3 @@ Follow these steps to duplicate an unstructured document processingmodel.
    c. (Optional) Under **Advanced settings**, select whether you want to associate an existing [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview).
 
 5. Select **Duplicate**.
-
