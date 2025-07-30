@@ -195,8 +195,8 @@ This report is used for retrieving the required user context attributes from Wor
 
 **Prompt Defaults**
 
-|Field |Prompt qualifier |Label for prompt |label for prompt XML alias |Default type |Default value |Required |Do not prompt at runtime |Do not include in subtitle |
-|------|-----------------|-----------------|---------------------------|-------------|--------------|---------|----------------|------------------------------------|
+|Field |Prompt qualifier |Label for prompt |label for prompt XML alias |Default type |Default value |Required |Don't prompt at runtime |Don't include in subtitle |
+|------|-----------------|-----------------|---------------------------|-------------|--------------|---------|---------------|-----------------------------------|
 |User Name |Default prompt |  |User_Name |No default value |  |Yes |  |  |
 |Employee Type | |  |Employee_Type |No default value |  |  |Yes |  |
 |Non-Employee Type | |  |Employee_Type |No default value |  |  |Yes |  |
