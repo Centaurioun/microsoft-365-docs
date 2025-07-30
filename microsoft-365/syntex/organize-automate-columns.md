@@ -96,7 +96,7 @@ To get suggested columns and metabase based on the content in your document libr
 
 ## Natural language automations
 
-### Create automations with plain language
+### Create automations using plain language
 
 With the Knowledge agent, you can automate tasks in your document library simply by describing what you want to happen. No need to learn technical jargon or navigate complex menus—just explain your intent in everyday language. The agent interprets your request, suggests the right workflow, and sets it up for you automatically.
 
@@ -118,7 +118,7 @@ With the Knowledge agent, you can automate tasks in your document library simply
 
 - "Alert me to unpaid invoices due in the next seven days."
 - "Flag invoices missing invoice numbers."
-- "Move "Reviewed" invoices to the Verified Expenses folder."
+- "Move 'Reviewed' invoices to the Verified Expenses folder."
 - "Copy all invoices from Northwind Traders to their folder."
 - "Translate new HR policies to Spanish."
 
