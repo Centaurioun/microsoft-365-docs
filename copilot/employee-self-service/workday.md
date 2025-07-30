@@ -394,7 +394,7 @@ The scenario object is an XML object used to drive specific customer scenarios i
 
 **apiRequest**
 
-The apiRequest nodes contain information that conveys to the Wrokday API flow how to request data.
+The apiRequest nodes contain information that conveys to the Workday API flow how to request data.
 
 ```xml
 <apiRequest> 
