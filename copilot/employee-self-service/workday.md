@@ -561,7 +561,7 @@ The Employee Self-Service agent Workday extension pack contains the following To
 |Topic                              |Description |
 |-----------------------------------|------------|
 |Workday System AccessCheck         |Checks the user context for required attributes is null for an employee |
-|Workday System ParseError          |Logs errors to application insights and defines which error message returned by “Workday System Get Common Execution” to show the end user. |
+|Workday System ParseError          |Logs errors to application insights and defines which error message returned by "Workday System Get Common Execution" to show the end user. |
 |Workday System ManagerCheck        |Checks if the user attempting to call a Manager topic meets the criteria. Ends the topic with an error message if not. |
 |Workday System Get CommonExecution |Executes the call to the flow to invoke the Workday API. |
 |Workday System Get UserContext     |Executes the call to retrieve user context information and assigns the information to global variables for use in other topics. |
