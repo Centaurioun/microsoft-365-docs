@@ -25,9 +25,9 @@ appliesto:
 # Microsoft 365 Copilot overview
 
 > [!NOTE]
-> - Copilot Chat is in the process of transitioning to the ChatGPT-5 model as its primary supporting LLM. Users can try ChatGPT-5 with their Copilot prompts by selecting the Try Smart button at the top right in Copilot Chat.
+> - Copilot Chat is in the process of transitioning to the ChatGPT-5 model as its primary supporting LLM. Users can try ChatGPT-5 with their Copilot prompts by selecting the **Try Smart** button in Copilot Chat.
 > - When using Smart in Copilot Chat, Copilot Chat chooses the best model, including ChatGPT-5, to generate a response that has increased complexity, accuracy, and overall performance.
-> - Users can use the Try Smart button in Copilot Chat whether they have or don't have a Microsoft 365 Copilot license.
+> - The **Try Smart** button will appear in Copilot Chat whether users have or don't have a Microsoft 365 Copilot license.
 > 
 > For more information about the user experience, see [How Copilot Chat understands your prompts](https://support.microsoft.com/en-us/topic/12c8d9f8-db32-4f99-8ebe-d8d85879137f).
 
