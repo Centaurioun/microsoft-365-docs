@@ -13,6 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - must-keep
+- trust-pod
 hideEdit: true
 ms.date: 07/30/2025
 ---
