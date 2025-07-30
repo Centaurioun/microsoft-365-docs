@@ -57,12 +57,13 @@ You must be a Global Administrator to turn on this setting.
 
     > [!IMPORTANT]
     > It might take several minutes to load the first report of the day. After the report is loaded, it’s available to view for the next 24 hours. Usage data may take up to 72 hours to update.
+1. Under **Aggregation level**, select the operational hierarchy level at which you want to view the aggregated data.
 
 ### Interpret the report
 
 The table shows usage data for your frontline teams during the date range you selected.
 
-:::image type="content" source="media/flw-usage-report.png" alt-text="Screenshot of the usage dashboard showing the frontline usage report and the Deployment task progress card." lightbox="media/flw-usage-report.png":::
+:::image type="content" source="media/flw-usage-report-with-active-channels-and-chats-data.png" alt-text="Screenshot of the usage dashboard showing the frontline usage report and the Deployment task progress card." lightbox="media/flw-usage-report-with-active-channels-and-chats-data.png":::
 
 Each row in the table represents a team.
 
