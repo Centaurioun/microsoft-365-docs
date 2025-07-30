@@ -18,6 +18,7 @@ ms.collection:
 - Adm_TOC
 - SPO_Content
 - m365solution-overview
+- trust-pod
 ms.custom:
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done
