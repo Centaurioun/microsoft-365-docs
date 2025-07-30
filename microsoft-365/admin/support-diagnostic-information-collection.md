@@ -19,7 +19,7 @@ description: "Learn about the diagnostic data Microsoft 365 Support engineers ac
 # Understanding Microsoft 365 case creation and diagnostic data access
 
 > [!IMPORTANT]
-> Based on customer feedback, Microsoft is rolling back and evaluating the following feature:
+> **Based on customer feedback, Microsoft is rolling back and evaluating the following feature**:
 > 
 > When you create a support request and you grant advanced diagnostic consent, you see a notification that cross-tenant access settings were updated due to a partner addition. The notification occurs because the Microsoft Support tenant (`Office365ConciergeSupport.onmicrosoft.com - b4c546a4-7dac-46a6-a7dd-ed822a11efd3`) is added as a service provider for the duration of active support requests in your tenant. Expect to see audit logs in these categories:
 > 
