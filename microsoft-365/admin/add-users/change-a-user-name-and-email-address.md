@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - must-keep
+- trust-pod
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
