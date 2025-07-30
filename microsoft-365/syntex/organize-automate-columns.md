@@ -56,9 +56,9 @@ To get suggested columns and metabase based on the content in your document libr
 
 ### Use a suggested action
 
-1. From the chat panel, select an action. For this example, we selected **Create columns**.
+1. From the chat panel, select an action. For this example, we selected **Suggest more columns**.
 
-2. The system analyzes your library and suggests new columns, which appear highlighted and marked as **Suggested**. This might take a few moments.
+2. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **Suggested**. This might take a few moments.
 
    ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/autofill-librarian-suggested-columns-added.png)
 
