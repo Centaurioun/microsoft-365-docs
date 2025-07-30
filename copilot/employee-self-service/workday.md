@@ -33,7 +33,7 @@ The Employee Self-Service agent is built on Copilot and uses AI to provide relev
 
 [![Infographic that describes the components of the ESS agent and Workday integration.](../media/ess/workday-1.png)](../media/ess/workday-1.png#lightbox)
 
-This diagram outlines the high-level components that make up the overall solution for ESS agent and Workday integration. Different roles need to perform various activities for both initial deployment and ongoing operation. As this solution involves multiple platforms, it's recommended to read through the documentation and understand the process before beginning integration. A first step is to identify stakeholders to set up an environment to [deploy the ESS agent](deploy-overview-alm.md).
+This diagram outlines the high-level components that make up the overall solution for ESS agent and Workday integration. Different roles need to perform various activities for both initial deployment and ongoing operation. As this solution involves multiple platforms, we recommend you read through the documentation and understand the process before beginning integration. A first step is to identify stakeholders to set up an environment to [deploy the ESS agent](deploy-overview-alm.md).
 
 >[!NOTE]
 >Workday integration is currently configured to get only Employee details and doesn't work for External staff or Non-Employees.
@@ -49,7 +49,7 @@ You also need to meet the [prerequisites to deploy the Employee Self-Service age
 
 ### Set up Copilot Studio capacity
 
-It's recommended to set up Copilot Studio capacity to monitor capacity usage of the ESS agent over time. [Learn more about the deployment process for the ESS agent.](deploy-overview-alm.md)
+We recommend you set up Copilot Studio capacity to monitor capacity usage of the ESS agent over time. [Learn more about the deployment process for the ESS agent.](deploy-overview-alm.md)
 
 ## Deployment role requirements
 
@@ -72,7 +72,7 @@ You need to configure these systems with allowlists for the source IP addresses 
 
 [Learn about Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
 
-For Workday integration, the ESS agent uses the RaaS (Reports as a service) endpoint with SOAP exchange. It's required to work with InfoSec to allowlist the ESS agent to communicate with this endpoint. If any more data security requirements need to be met, especially for SOAP exchange, work with your security specialists to increase the security for data in transit.
+For Workday integration, the ESS agent uses the RaaS (Reports as a service) endpoint with SOAP exchange. You must work with InfoSec to allowlist the ESS agent to communicate with this endpoint. If any more data security requirements need to be met, especially for SOAP exchange, work with your security specialists to increase the security for data in transit.
 
 ## Configure and prepare Workday reports
 
@@ -103,7 +103,7 @@ Use the X509 public key provided by Microsoft Entra to create a new key in Workd
 |Issuer                             |Enter the unique identifier for your SAML IdP, which must match the Issuer ID in SAML messages that the IdP sends. You can get this identifier from your IdP. For Microsoft Entra, this entry should be "Microsoft Entra Identifier". |
 |X509 Certificate                   |Select or create the X.509 public certificate to use to verify the signature on SAML sign-in and sign out requests. You can get this information from your SAML provider. |
 |SP initiated                       |Select to specify SP-initiated SAML authentication. |
-|Service Provider ID                |Identifies Workday as the service provider in the Issuer element of SAML messages sent to the IdP.</br> Service Provider ID needs to be unique (IdP requires this value to be unique on their end). </br>This needs to match "Identifier (Entity ID)" field on Microsoft Entra. </br>These formats are examples (remove the spaces for your own URL): </br>http:// www .workday .com/sbx </br>*http:// www .workday .com/prod </br>*http:// www .workday .com/< tenant name > |
+|Service Provider ID                |Identifies Workday as the service provider in the Issuer element of SAML messages sent to the IdP.</br> Service Provider ID needs to be unique (IdP requires this value to be unique on their end). </br>This information needs to match "Identifier (Entity ID)" field on Microsoft Entra. </br>These formats are examples (remove the spaces for your own URL): </br>http:// www .workday .com/sbx </br>*http:// www .workday .com/prod </br>*http:// www .workday .com/< tenant name > |
 |Sign SP-initiated Request          |Set to "No" if your SAML provider isn't using Workday's Public Key. |
 |Don't Deflate SP-initiated Request |Select this checkbox to ensure that Workday doesn't deflate the message again if the IdP deflates the authentication request message. |
 |Always require IdP Authentication  |Don't select. |
