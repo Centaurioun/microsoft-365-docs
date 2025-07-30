@@ -576,12 +576,12 @@ Errors caused by Workday flows are first logged in Application Insights. Then, a
 
 The following error codes may be returned from the Invoke Workday API flow. By default, they don't have unique error responses.
 
-|Error string              |Description                                                                        |
-|--------------------------|-----------------------------------------------------------------------------------|
-|TemplateRetrievalFailure  |The call to retrieve the template configuration has failed.                        |
-|XmlTemplateToJsonFailed   |The call to parse the template has failed.                                         |
-|generateXMLFailure        |The call to generate the XML body for the Workday SOAP API has failed.             |
-|executeUserSOAPFailure    |The call to the Workday SOAP API using user authentication has failed.             |
-|executeGenericSOAPFailure |The call to the Workday SOAP API using the generic user authentication has failed. |
-|executeContextSOAPFailure |executeContextSOAPFailure                                                          |
-|extractManagerDataFailure |The call to extract data has failed.                                               |
+|Error string              |Description                                                                    |
+|--------------------------|-------------------------------------------------------------------------------|
+|TemplateRetrievalFailure  |The call to retrieve the template configuration failed.                        |
+|XmlTemplateToJsonFailed   |The call to parse the template failed.                                         |
+|generateXMLFailure        |The call to generate the XML body for the Workday SOAP API failed.             |
+|executeUserSOAPFailure    |The call to the Workday SOAP API using user authentication failed.             |
+|executeGenericSOAPFailure |The call to the Workday SOAP API using the generic user authentication failed. |
+|executeContextSOAPFailure |executeContextSOAPFailure.                                                     |
+|extractManagerDataFailure |The call to extract data failed.                                               |
