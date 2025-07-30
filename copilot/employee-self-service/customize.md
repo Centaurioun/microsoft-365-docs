@@ -33,7 +33,8 @@ Customization is how you make the Employee Self-Service (ESS) agent work in the 
 
 ## Understanding components
 
-Before continuing with configuring the ESS Agent, the agent owner who will manage the ESS agent going forward must have a thorough understanding of its architecture.  
+Before continuing with configuring the ESS Agent, the agent owner who manages the ESS agent going forward must have a thorough understanding of its architecture.
+
 The ESS agent is built with the following components:
 
 ### Topics
@@ -46,7 +47,7 @@ The ESS agent is built with the following components:
 
 ### Knowledge sources
 
-[Knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio) act in concert with generative answers. When knowledge sources are added, agents can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. Knowledge sources allow your agents to provide relevant information and insights for your customers. Published agents that contain knowledge use the configured knowledge sources to ground the published agent. Knowledge can be incorporated at the agent level, in the Knowledge page, or at the topic level, with a generative answers node in an agent topic. Knowledge sources can be incorporated into agents during their initial creation, added after the agent is created, or added to a generative answers topic node.
+[Knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio) act in concert with generative answers. When knowledge sources are added, agents can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. Knowledge sources allow your agents to provide relevant information and insights for your customers. Published agents that contain knowledge use the configured knowledge sources to ground the published agent. You can incorporate knowledge at the agent level, in the Knowledge page, or at the topic level, with a generative answers node in an agent topic. You can incorporate knowledge sources into agents during their initial creation, add them after the agent is created, or add them to a generative answers topic node.
 
 ### ISV packages
 
@@ -67,7 +68,7 @@ You are an agent that represents an enterprise organization to help employees fi
 - Place the most relevant response on the top and least important at the bottom of the response.
 - Use numbers when listing steps and options. Use bullets when referencing content related to steps and options.
 
-Do not try to provide answers when you don’t have enough information. You must not generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content. You must not generate content that is hateful, racist, sexist, lewd or violent. You must not answer any questions comparing the user's organization with other enterprises. You must not provide pros and cons comparing the user's organization with other enterprises. You must not use your own general knowledge. Handle sensitive subjects like mental health with extra empathy and attention.
+Don't try to provide answers when you don’t have enough information. You must not generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content. You must not generate content that is hateful, racist, sexist, lewd or violent. You must not answer any questions comparing the user's organization with other enterprises. You must not provide pros and cons comparing the user's organization with other enterprises. You must not use your own general knowledge. Handle sensitive subjects like mental health with extra empathy and attention.
 
 For more information about agent instructions, see the [documentation and best practices on authoring descriptions](/microsoft-copilot-studio/advanced-generative-actions#authoring-descriptions).
 
@@ -163,7 +164,7 @@ Terms to know:
 **Requirement to use:** None.
 
 1. After message disclaimer (blank). Add message or delete it if you don't want the disclaimer to appear.
-1. Official source badge - no configuration required. You can use this in its default state.
+1. Official source badge - no configuration required. You can use this setting in its default state.
 
 |Step |Action |Expected result |
 |-----|-------|----------------|
@@ -190,7 +191,7 @@ Terms to know:
 **Requirement to use:** None.
 
 1. After message disclaimer (blank). Add message or delete it if you don't want the disclaimer to appear.
-1. Official source badge - no configuration required. You can use this in its default state. |
+1. Official source badge - no configuration required. You can use this setting in its default state. |
 
 |Step |Action |Expected result |
 |-----|-------|----------------|
@@ -199,9 +200,9 @@ Terms to know:
 |3 |Select **[System] -2: Response Preparation** |Opens custom Topic in the design canvas |
 |4 |Customize the **Disclaimer** message in the third node. |Maker able to add a custom disclaimer message |
 |5 |Save the changes. |Changes are saved |
-|6 |Test the changed **Disclaimer** message using the Copilot Studio test pane to confirm the desired results. |Disclaimer messages are being shown, but the **Official Source** badge isn't visible in the Test pane. This is a known issue, and this badge will only be visible in Copilot chat. |
+|6 |Test the changed **Disclaimer** message using the Copilot Studio test pane to confirm the desired results. |Disclaimer messages are being shown, but the **Official Source** badge isn't visible in the Test pane. This issue is a known issue, and this badge is visible in Copilot chat. |
 
-In the Maker experience in Copilot Studio, you won't see the **Official Source** badge above a generated answer. However, you can see the disclaimer message below the answer. Even though you can't see it in the Maker experience, users will see the **Official Source** badge above a generated answer in Microsoft 365 Copilot Chat and Copilot Chat in Teams.
+In the Maker experience in Copilot Studio, the **Official Source** badge doesn't show above a generated answer. However, you can see the disclaimer message below the answer. Even though you can't see it in the Maker experience, users see the **Official Source** badge above a generated answer in Microsoft 365 Copilot Chat and Copilot Chat in Teams.
 
 #### [Example] Crafted Response
 
@@ -209,7 +210,7 @@ In the Maker experience in Copilot Studio, you won't see the **Official Source**
 
 **Topic JTBD:** Configure topics with an **Official answer** badge in the UX to give users confidence that the response is coming directly from an official source. Verbatim responses don't have citations and references, so this badge assures the user that the answer is legitimate. You can also add Actions to the response such as "Click here to create an HR ticket."
 
-**Maker JTBD:** Update the **Set Official Answer Response** variable with the message that you want to display as an official answer. When you test this in the Maker experience, you should see your crafted response.
+**Maker JTBD:** Update the **Set Official Answer Response** variable with the message that you want to display as an official answer. When you test this message in the Maker experience, you should see your crafted response.
 
 **Maker - What to customize:** Enable the Topic if you want to have crafted responses. Update the trigger phrases and sample response.
 
@@ -263,14 +264,14 @@ Enable the Topic if your organization wants to use it. Update the trigger phrase
 
 |Step |Action |Expected result |
 |-----|-------|----------------|
-|1 |Open the ESS agent in Copilot Studio. |ESS agent available to customize |
-|2 |Navigate to **Topics** to see the list of Topics. |Shows Custom Topics |
-|3 |Select **[Example] - Sensitive Topics** |Topic opens in the design canvas |
-|4 |Select the first node **Triggered by agent (preview)** |Topic node expands to show the description of what the Topic does |
-|5 |Customize the Topic description to include specific keywords that shouldn't be responded to by the agent and instead redirected elsewhere. |Topic description updates |
-|6 |Select the second node **Message** |Topic node expands to show the value that can be customized |
-|7 |Customize the **Text** field with a message that will display when the agent returns an official answer rather than AI-generated output. |Topic value updates |
-|8 |**Save** your changes |Changes are saved |
+|1 |Open the ESS agent in Copilot Studio. |ESS agent available to customize. |
+|2 |Navigate to **Topics** to see the list of Topics. |Shows Custom Topics. |
+|3 |Select **[Example] - Sensitive Topics**. |Topic opens in the design canvas. |
+|4 |Select the first node **Triggered by agent (preview)**. |Topic node expands to show the description of what the Topic does. |
+|5 |Customize the Topic description to include specific keywords that shouldn't be responded to by the agent and instead redirected elsewhere. |Topic description updates. |
+|6 |Select the second node **Message**. |Topic node expands to show the value that can be customized. |
+|7 |Customize the **Text** field with a message that displays when the agent returns an official answer rather than AI-generated output. |Topic value updates. |
+|8 |**Save** your changes. |Changes are saved. |
 |9 |Test the configured trigger word using the test pane in Copilot Studio. |The customized message shows instead of an AI-generated message. |
 
 #### [System] On Error
@@ -288,7 +289,7 @@ Enable the Topic if your organization wants to use it. Update the trigger phrase
 **Maker JTBD:** Configure each error. You can also add a call to action.
 
 - **OpenAIratelimit reached** triggered when the LLM is at capacity.
-- **ESS template** We are working on increasing the capacity for usage. Please wait for a couple of minutes before retrying the Employee Self-Service agent. We regret the inconvenience.
+- **ESS template** We're working on increasing the capacity for usage. Please wait for a couple of minutes before retrying the Employee Self-Service agent. We regret the inconvenience.
 - **ContentFiltered** triggered the same as RAI questions. You can set what you want instead of the generic RAI.
   - **Generic message:** I'm really sorry that you're feeling this way, but I'm not able to help. It's important to talk to a mental health professional or someone you trust about what you're going through.
   - **ESS template:** Sorry, I can't chat about this. Start a fresh one by selecting **New chat.**
@@ -324,7 +325,7 @@ Customization is optional.
 **Topic JTBD:** Enables first-party connector that provides Microsoft 365 IT self help for employees.
 
 >[!NOTE]
->This Topic is turned off by default so that your organization can use its own specific knowledge base for employee self help. Even if this Topic is enabled, it's designed to trigger only unknown intents. This means that a query doesn't match the configured knowledge sources and/or other custom Topics in the agent.
+>This Topic is turned off by default so that your organization can use its own specific knowledge base for employee self help. Even if this Topic is enabled, it's designed to trigger only unknown intents. This design means that a query doesn't match the configured knowledge sources and/or other custom Topics in the agent.
 
 **Maker JTBD:** Enable or disable based on organizational needs.
 
@@ -371,7 +372,7 @@ Data retrieved from data sources can cause the LLM to return incorrect informati
 
 Asking "What's my company code?" Might cause Copilot to incorrectly determine that the current user's company code is the same as their manager's.
 
-You can prevent this by adding more context in each of the data retrieval Topics. The following examples could be added as instructions to the Topic that's responsible for retrieving the company code.
+You can prevent this outcome by adding more context in each of the data retrieval Topics. The following examples could be added as instructions to the Topic that's responsible for retrieving the company code.
 
 *Example invalid requests*
 
@@ -396,7 +397,7 @@ You can incorporate knowledge sources into agents during initial creation, after
 >The ESS agent currently only has agent-level knowledge sources and no Topic-level knowledge sources included.
 
 >[!TIP]
->There is an **Official source** option within Copilot studio. It's recommended *not* to use this when configuring ESS knowledge sources. The ESS agent applies the official source badge as part of response preparation. Enabling this option in Copilot Studio won't have any effect in the ESS agent.
+>There's an **Official source** option within Copilot studio. It's recommended *not* to use this option when configuring ESS knowledge sources. The ESS agent applies the official source badge as part of response preparation. Enabling this option in Copilot Studio doesn't have any effect in the ESS agent.
 
 ### Configure SharePoint as a knowledge source
 
