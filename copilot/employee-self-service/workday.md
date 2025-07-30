@@ -500,7 +500,7 @@ This is a full sample template:
 
 **RaaS Template Setup**
 
-If a new Template is needed for an RaaS scenario other than context, the Template requires first-time setup to work.
+If a new Template is needed for a RaaS scenario other than context, the Template requires first-time setup to work.
 
 Update the following fields in the < endpoint > node:
 
