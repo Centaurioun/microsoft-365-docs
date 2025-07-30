@@ -90,7 +90,7 @@ A sample capacity plan with costing for approximately 1,000 users:
 |-------------|------------------|--------------|------------|----------|
 |Example |What is the parental leave policy? |What is the parental leave policy? |What is my cost center #? |I'm being discriminated against |
 |Frequency |81% |2% |14% |3% |
-|Price for users without Microsoft 365 Copilot per query |sixteen cents |twelve cents |five cents |one cent |
+|Price for users without Microsoft 365 Copilot per query |16 cents |12 cents |5 cents |1 cent |
 
 Steps breakdown:
 
