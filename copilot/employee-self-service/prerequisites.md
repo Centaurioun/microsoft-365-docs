@@ -23,11 +23,11 @@ appliesto:
 >[!NOTE]
 >The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
-You'll need to confirm the following prerequisites have been met before deploying the Employee Self-Service agent (ESS) to your organization.
+You need to confirm the following prerequisites have been met before deploying the Employee Self-Service agent (ESS) to your organization.
 
 ## Licensing
 
-The ESS Agent is built on top of Microsoft 365 Copilot. Users will therefore need the following licenses depending on the tools they use at work.
+The ESS Agent is built on top of Microsoft 365 Copilot. Users need the following licenses depending on the tools they use at work.
 
 |Role   |Workload/tools   |Licensing and access|
 |----------|-----------|------------|
@@ -40,11 +40,11 @@ The ESS Agent is built on top of Microsoft 365 Copilot. Users will therefore nee
 
 ## Set up Copilot Studio capacity
 
-The ESS agent uses agent flows. You therefore need to set up the Copilot Studio capacity. [Learn about Copilot Studio capacity](/microsoft-copilot-studio/requirements-messages-management).
+The ESS agent uses agent flows. You need to set up the Copilot Studio capacity. [Learn about Copilot Studio capacity](/microsoft-copilot-studio/requirements-messages-management).
 
 ### Capacity planning
 
-The ESS Agent operates on Copilot, requiring Copilot licenses. Users without assigned licenses will be automatically billed on a Pay-as-you-go basis. [Learn how to set up your consumption meter](/power-platform/admin/pay-as-you-go-overview).
+The ESS Agent operates on Copilot, requiring Copilot licenses. Users without assigned licenses are automatically billed on a Pay-as-you-go basis. [Learn how to set up your consumption meter](/power-platform/admin/pay-as-you-go-overview).
 
 If ESS Agent is going to be consumed by users without Copilot licenses, it requires proactive capacity planning to ensure that the consumption cost is optimized for the usage. A basic guideline to follow is that any messages generated from LLM output incur additional cost for users in the Pay-as-you-go plan.
 
@@ -84,7 +84,7 @@ Use the following sample benchmarks to understand capacity planning for ESS agen
 
 #### Sample 3
 
-This is a sample capacity plan with costing for approximately 1,000 users.
+A sample capacity plan with costing for approximately 1,000 users:
 
 |Scenario type |Knowledge search **without** user context cached |Knowledge search **with** user context cached |Topics |Verbatims |
 |-------------|------------------|--------------|------------|----------|
