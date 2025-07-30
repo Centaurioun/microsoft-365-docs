@@ -96,7 +96,7 @@ To get suggested columns and metabase based on the content in your document libr
 
 ### Create automations with plain language
 
-The Knowledge agent enables you to set up automations in your document library simply by describing what you want to happen, using natural language. You don’t need to know technical terms or navigate complex menus—just tell the agent your intent, and it will suggest and configure the appropriate workflow.
+With the Knowledge agent, you can automate tasks in your document library simply by describing what you want to happen. No need to learn technical jargon or navigate complex menus—just explain your intent in everyday language. The agent will interpret your request, suggest the right workflow, and set it up for you automatically.
 
 #### Supported automation actions
 
