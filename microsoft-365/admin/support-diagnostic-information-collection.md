@@ -18,6 +18,15 @@ description: "Learn about the diagnostic data Microsoft 365 Support engineers ac
 
 # Understanding Microsoft 365 case creation and diagnostic data access
 
+> [!IMPORTANT]
+> Based on customer feedback, Microsoft is rolling back and evaluating the following feature:
+> 
+> When you create a support request and you grant advanced diagnostic consent, you see a notification that cross-tenant access settings were updated due to a partner addition. The notification occurs because the Microsoft Support tenant (`Office365ConciergeSupport.onmicrosoft.com - b4c546a4-7dac-46a6-a7dd-ed822a11efd3`) is added as a service provider for the duration of active support requests in your tenant. Expect to see audit logs in these categories:
+> 
+> - `Policy`
+> - `CrossTenantAccessSettings`
+> - `DelegatedAdminServiceProviderConstraints`
+
 The purpose of this article is to inform Microsoft 365 customers about the type of information that Microsoft Support engineers may collect and use in order to resolve a support case.
 
 ## Consent for diagnostic information
@@ -47,11 +56,3 @@ Microsoft retains diagnostic data for up to 28 days after it is collected. After
 
 Activity performed on a customer tenant is available under Microsoft Entra Audit logs.
 
-> [!IMPORTANT]
-> Based on customer feedback, Microsoft is rolling back and evaluating the following feature:
-> 
-> When you create a support request and you grant advanced diagnostic consent, you see a notification that cross-tenant access settings were updated due to a partner addition. The notification occurs because the Microsoft Support tenant (`Office365ConciergeSupport.onmicrosoft.com - b4c546a4-7dac-46a6-a7dd-ed822a11efd3`) is added as a service provider for the duration of active support requests in your tenant. Expect to see audit logs in these categories:
-> 
-> - `Policy`
-> - `CrossTenantAccessSettings`
-> - `DelegatedAdminServiceProviderConstraints`
