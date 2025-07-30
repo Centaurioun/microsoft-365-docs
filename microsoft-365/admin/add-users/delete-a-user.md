@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - SPO_Content
+- trust-pod
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet

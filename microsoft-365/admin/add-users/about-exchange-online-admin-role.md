@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - must-keep
+- trust-pod
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkEXCHANGE

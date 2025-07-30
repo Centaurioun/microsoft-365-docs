@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365_Setup
 - Adm_TOC
+- trust-pod
 ms.custom:
 - VSBFY23
 - okr_smb
