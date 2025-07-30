@@ -108,13 +108,13 @@ The Knowledge agent enables you to set up automations in your document library s
 #### How it works
 
 - The agent parses your chat input and, using library metadata, suggests a workflow.
-- You’ll see a summary card in chat and can confirm or edit before enabling.
-- If your request references data not yet tracked (for example, “Expiration Date”), the agent will suggest creating the necessary column.
-- For more complex automations or if the agent needs more details, you may be prompted for clarification or directed to the Rules UI for advanced editing.
+- You see a summary card in chat and can confirm or edit before enabling.
+- If your request references data not yet tracked (for example, “Expiration Date”), the agent suggests creating the necessary column.
+- For more complex automations or if the agent needs more details, you might be prompted for clarification or directed to the Rules UI for advanced editing.
 
 #### Example prompts
 
-- “Alert me to unpaid invoices due in the next 7 days.”
+- “Alert me to unpaid invoices due in the next seven days.”
 - “Flag invoices missing invoice numbers.”
 - “Move ‘Reviewed’ invoices to the Verified Expenses folder.”
 - “Copy all invoices from Northwind Traders to their folder.”
@@ -122,13 +122,13 @@ The Knowledge agent enables you to set up automations in your document library s
 
 ### How automations are surfaced in chat
 
-When you use the Knowledge agent to organize and automate your document library, the agent communicates proposed workflows and automations directly in the chat panel as interactive cards. Each card summarizes the trigger, conditions, and actions that will be set up. For example, after you describe your intent (for example, “Alert me when an invoice is due in 7 days”), the agent parses your request and presents a card in chat showing:
+When you use the Knowledge agent to organize and automate your document library, the agent communicates proposed workflows and automations directly in the chat panel as interactive cards. Each card summarizes the trigger, conditions, and actions that are set up. For example, after you describe your intent (for example, “Alert me when an invoice is due in seven days”), the agent parses your request and presents a card in chat showing:
 
 - **Trigger**: When a new file is added, or when a file/metadata is modified
-- **Condition**: For example, “Invoice Date is within 7 days”
+- **Condition**: For example, “Invoice Date is within seven days”
 - **Action**: For example, “Send an email to me”
 
-You can review, confirm, or edit the workflow directly from the chat card before it is enabled. This keeps you in control and ensures transparency at every step. If more information is needed, the agent will prompt you in chat to clarify details before finalizing the automation.
+You can review, confirm, or edit the workflow directly from the chat card before it's enabled. This keeps you in control and ensures transparency at every step. If more information is needed, the agent prompts you in chat to clarify details before finalizing the automation.
 
 ## Frequently asked questions
 
@@ -138,15 +138,15 @@ You need to have a Copilot license and the autofill pay-as-you-go meter turned o
 
 ##### Why am I seeing errors when I try to process files?
 
-The Knowledge agent cannot process encrypted files, so it's likely that the files in your document library are encrypted. If your organizational policy allows, you will need to change the sensitivity label on the files for the Knowlege Agent to be able to process them.
+The Knowledge agent can't process encrypted files, so it's likely that the files in your document library are encrypted. If your organizational policy allows, you'll need to change the sensitivity label on the files for the Knowledge agent to be able to process them.
 
 ##### I don't see the "Organize and Automate" skill in the floating button. What's happening?
 
-The "organize and automate" action is only available to site owners or site members when in the root of a document library. It is disabled if the user has navigated into a folder.
+The "organize and automate" action is only available to site owners or site members when in the root of a document library. It's disabled if the user has navigated into a folder.
 
 ##### How does the agent keep me in control?
 
-Every agent action is shown as a card in chat for your review. You can edit or decline any suggestion, and changes aren't applied to the document library until you click the **Save changes** button.
+Every agent action is shown as a card in chat for your review. You can edit or decline any suggestion, and changes aren't applied to the document library until you select **Save changes**.
 
 ##### What kinds of automations can I create with the Knowledge agent?
 
