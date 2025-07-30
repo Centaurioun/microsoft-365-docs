@@ -52,7 +52,7 @@ To adopt an MX target in mx.microsoft, do the following steps:
 
 1. At the DNS hosting service for your domain, update the time to live (TTL) of the existing MX record to a minimum of 30 seconds, and then wait for the previous TTL to expire before you proceed. For example, if the previous TTL was 3,600 seconds, wait one hour before you proceed to the next step.
 
-2. In [Exchange Online PowerShell](/microsoft-365/enterprise/administering-exchange-online-multi-geo?view=o365-worldwide#connect-directly-to-a-geo-location-using-exchange-online-powershell), replace \<DomainName\> with the name of the domain where you want to enable IRR, and then run the following command:
+2. In [Exchange Online PowerShell](/microsoft-365/enterprise/administering-exchange-online-multi-geo?view=o365-worldwide#connect-directly-to-a-geo-location-using-exchange-online-powershell&preserve-view=true), replace \<DomainName\> with the name of the domain where you want to enable IRR, and then run the following command:
 
    ```powershell
    Enable-DnssecForVerifiedDomain -DomainName <DomainName>
@@ -112,7 +112,7 @@ To adopt an MX target in mx.microsoft, do the following steps:
 
 After you complete the [Prerequisites](#prerequisites) and the steps in [Adopt an MX target](#adopt-an-mx-target), do the following steps to enable IRR for the domain:
 
-1. [Connect to Exchange Online PowerShell](/microsoft-365/enterprise/administering-exchange-online-multi-geo?view=o365-worldwide#connect-directly-to-a-geo-location-using-exchange-online-powershell) using an admin account.
+1. [Connect to Exchange Online PowerShell](/microsoft-365/enterprise/administering-exchange-online-multi-geo?view=o365-worldwide#connect-directly-to-a-geo-location-using-exchange-online-powershell&preserve-view=true) using an admin account.
 
 2. Use the following syntax:
 
@@ -143,7 +143,7 @@ This section describes the types of error messages that are displayed if the mai
 
 > 451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information go to <https://go.microsoft.com/fwlink/p/?linkid=865268>.
 
-You get this SMTP error when mail is delivered to the wrong Microsoft 365 endpoint. If your organization is enabled for multi-geo and IRR, you shouldn't get this error if mail is delivered to a geo location [configured in your Exchange Online organization](administering-exchange-online-multi-geo#view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization.md).|
+You get this SMTP error when mail is delivered to the wrong Microsoft 365 endpoint. If your organization is enabled for multi-geo and IRR, you shouldn't get this error if mail is delivered to a geo location [configured in your Exchange Online organization](administering-exchange-online-multi-geo.md#view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization).|
 
 #### System errors
 
