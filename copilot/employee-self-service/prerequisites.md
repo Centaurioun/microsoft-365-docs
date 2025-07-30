@@ -29,12 +29,12 @@ You need to confirm the following prerequisites are met before deploying the Emp
 
 The ESS Agent is built on top of Microsoft 365 Copilot. Users need the following licenses depending on the tools they use at work.
 
-|Role   |Workload/tools   |Licensing and access|
-|----------|-----------|------------|
-|Users  |Microsoft 365 Copilot    |[Microsoft 365 Copilot](../microsoft-365-copilot-licensing.md)       |
-|Users |Microsoft Power Platform*  |[Licensing overview for Power Platform](/power-platform/admin/pricing-billing-skus) </br>[Request limits and allocations](/power-platform/admin/api-request-limits-allocations)|
-|Users |Microsoft Teams |[Manage user access to Microsoft Teams](/microsoftteams/user-access) |
-|Environment admins and makers |Copilot Studio |[Copilot Studio licensing and subscriptions](/microsoft-copilot-studio/requirements-licensing-subscriptions) |
+|Role                          |Workload/tools |Licensing and access |
+|------------------------------|---------------|---------------------|
+|Users                         |Microsoft 365 Copilot |[Microsoft 365 Copilot](../microsoft-365-copilot-licensing.md)       |
+|Users                         |Microsoft Power Platform* |[Licensing overview for Power Platform](/power-platform/admin/pricing-billing-skus) </br>[Request limits and allocations](/power-platform/admin/api-request-limits-allocations)|
+|Users                         |Microsoft Teams |[Manage user access to Microsoft Teams](/microsoftteams/user-access) |
+|Environment admins and makers |Copilot Studio  |[Copilot Studio licensing and subscriptions](/microsoft-copilot-studio/requirements-licensing-subscriptions) |
 
 *Premium licenses are required for some third-party connectors.
 
@@ -60,27 +60,27 @@ Use the following sample benchmarks to understand capacity planning for ESS agen
 
 #### Sample 1: Last 28 days (28d)
 
-|Capacity plan metric |Sample consumption |
-|---------------------|-------------------|
-|Enabled users |40,000 |
-|Monthly active users (MAU) |1,100 (3% of activated) |
-|Total conversations |5,129 |
-|Total interactions |6,917 |
-|Average interactions per conversation |1.34 |
-|Average conversations per user |~5 |
-|Average interactions per user |~6 |
+|Capacity plan metric                  |Sample consumption      |
+|--------------------------------------|------------------------|
+|Enabled users                         |40,000                  |
+|Monthly active users (MAU)            |1,100 (3% of activated) |
+|Total conversations                   |5,129                   |
+|Total interactions                    |6,917                   |
+|Average interactions per conversation |1.34                    |
+|Average conversations per user        |~5                      |
+|Average interactions per user         |~6                      |
 
 #### Sample 2: Last two months
 
-|Capacity plan metric |Sample consumption |
-|---------------------|-------------------|
-|Enabled users |40,000 |
-|Monthly active users (MAU) |2,075 (5% of activated) |
-|Total conversations |11,000 |
-|Total interactions |16,000 |
-|Average interactions per conversation |1.45 |
-|Average conversations per user |~5 |
-|Average interactions per user |~8 |
+|Capacity plan metric                  |Sample consumption      |
+|--------------------------------------|------------------------|
+|Enabled users                         |40,000                  |
+|Monthly active users (MAU)            |2,075 (5% of activated) |
+|Total conversations                   |11,000                  |
+|Total interactions                    |16,000                  |
+|Average interactions per conversation |1.45                    |
+|Average conversations per user        |~5                      |
+|Average interactions per user         |~8                      |
 
 #### Sample 3
 
@@ -129,8 +129,8 @@ Steps breakdown:
 
 The ESS Agent includes several different technical components and configuration areas, which require different Microsoft 365 roles for deployment. We recommend you use the least privileged role possible to perform each necessary activity. For roles with elevated privileges, use just-in-time access.
 
-|Role |Description |Activities performed |Configuration areas|
-|-----|------------|---------------------|-------------------|
+|Role |Description |Activities performed |Configuration areas |
+|-----|------------|---------------------|--------------------|
 |Global admin |User who has permissions to configure and delegate other roles |Assign user roles |Microsoft admin center |
 |Power Platform administrator |User who has power to configure Power Platform environments and assign roles within Power Platform |- Create environments </br> - Assign user roles </br> - Install ESS agent |- Power Platform </br> - Microsoft Copilot Studio |
 |Power Platform maker |User who has permission to make changes in a specific Power Platform environment. We recommend you have the agent owner for this agent perform this role. |Configure ESS agent |- Power Platform </br> - Microsoft Copilot Studio |
