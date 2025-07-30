@@ -74,7 +74,9 @@ Each row in the table represents a team.
 |Active users|The number of active users on each team. Users are considered active if they signed in to Teams at least one time during the selected date range. |
 |Active Walkie Talkie users|The number of Walkie Talkie users on each team. Users are considered active walkie-talkie user if they used walkie talkie at least one time during the selected date range. |
 |Active chat users|The number of active chat users on each team. Users are considered active chat user if they posted at least one message in a private chat during the selected date range. |
+|Chat message count|The number of unique messages that the user posted in a private chat during the selected date range. |
 |Active channels|The number of active channels on each team. Channels are considered active if they have at least one active user during the selected date range. |
+|Channels' posted messages|The number of unique messages that the user posted in a channel during the selected date range. |
 |Last activity date|The last date on which the user signed in to Teams.|
 
 You can:
