@@ -1,10 +1,10 @@
 ---
-title: Use metadata to find content in document libraries in SharePoint
+title: Use metadata to find content in document libraries
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 03/16/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -13,17 +13,17 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: high
-description: Learn how to use Syntex content query and search for custom site columns to find items in SharePoint document libraries.
+description: Learn how to use content query and search for custom site columns to find items in SharePoint document libraries.
 ---
 
-# Use metadata to find content in document libraries in SharePoint
+# Use metadata to find content in document libraries
 
 Content query gives you the ability to quickly search through your document's metadata with ease. The content query feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
 Content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, specific keywords in a file, or a specific file type.
 
 > [!NOTE]
-> The content query feature is available for users who have Microsoft Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
+> The content query feature is available for users who have [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## Columns you can query
 
@@ -44,16 +44,8 @@ You can now use content query to search for metadata in any of the queriable col
 When you add new document libraries within a site, all of these column types are queriable.
 
 On existing libraries, when you select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)), the service will start a workflow to make all of these column types queriable as well. This process can take up to five days to complete.
-<!---
-Not all columns that show up in a document library are queriable. To learn more about queriable columns in SharePoint, see [List columns or Site columns: Which one to choose?](/microsoft-365/community/list-column-or-site-column-which-one-to-choose).
---->
-<!---
-**New document libraries** — For new libraries, all of the columns are available in content query.
 
-**Existing document libraries** — For existing libraries, all of the queriable columns won't be immediately available. You need to select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)) in the existing library. Then after five days, check the library again and all of the columns should be available.
---->
-
-## To use Syntex content query
+## To use content query
 
 1. From a SharePoint document library, in the **Search this library** box, select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)).
 

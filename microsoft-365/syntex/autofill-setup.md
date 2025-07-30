@@ -1,10 +1,10 @@
 ---
-title: Set up and manage autofill columns in SharePoint
+title: Set up and manage autofill columns
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/13/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: install-set-up-deploy
 ms.service: microsoft-syntex
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up and manage sites for autofill columns in SharePoint.
 ---
 
-# Set up and manage autofill columns in SharePoint
+# Set up and manage autofill columns
 
 Autofill columns is a pay-as-you-go service that is set up in the Microsoft 365 admin center.
 
@@ -25,7 +25,7 @@ Autofill columns is a pay-as-you-go service that is set up in the Microsoft 365 
 
 ### Licensing
 
-Before you can use autofill columns, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). The autofill columns service is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use autofill columns, you must first link an Azure subscription in [pay-as-you-go](syntex-azure-billing.md). The autofill columns service is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
@@ -35,7 +35,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up autofill columns
 
-After an [Azure subscription is linked to Microsoft Syntex](syntex-azure-billing.md), autofill columns is automatically set up and turned on for all SharePoint sites.
+After an [Azure subscription is linked to document processing](syntex-azure-billing.md), autofill columns is automatically set up and turned on for all SharePoint sites.
 
 ## Manage sites
 
