@@ -148,27 +148,27 @@ This report is used for retrieving the required user context attributes from Wor
 
 **Condition as Text:** User Name equal to from user input And CF LRV Worker Type in the selection list Employee
 
-|Filter on Aggregations |  |  |  |  |  |  |  |
-|---------------------------|--|--|--|--|--|--|--|
-|**Filter condition for filtering on aggregated values** |  |  |  |  |  |  |  |
-|And/Or | ( |Aggregation function |Field |Operator |Comparison type |Comparison value | ) |
+|Filter on Aggregations |                        |                     |      |         |                |                  |  |
+|-----------------------|------------------------|---------------------|------|---------|----------------|------------------|--|
+|**Filter condition for filtering on aggregated values** |  |          |      |         |                |                  |  |
+|And/Or                 |(                       |Aggregation function |Field |Operator |Comparison type |Comparison value  |) |
 
 ## Workday User Context Custom Report - SUB-FILTER
 
 **View Custom Report: WD User Context**
 
-|Report Name  |WD User Context  |
-|--|--|
-|Report Type |Advanced |
-|Data Source |All Workday Accounts |
-|Data Source Type |Standard |
-|Primary Business Object |Workday Account |
-|Report definition usages |  |
-|Saved filter usages |  |
-|**Additional info** |  |
-|**Data Source Description** |Accesses the Workday Account object and returns one row per Workday account. Includes all Workday accounts ever created, either currently enabled or not. Doesn't contain built-in prompts. This data source shows settings of a user's sign in information and preferences in Workday. |
-|Brief Description |  |
-|Passes Report Column Toggles |  |
+|Report Name                  |WD User Context        |
+|-----------------------------|-----------------------|
+|Report Type                  |Advanced               |
+|Data Source                  |All Workday Accounts   |
+|Data Source Type             |Standard               |
+|Primary Business Object      |Workday Account        |
+|Report definition usages     |                       |
+|Saved filter usages          |                       |
+|**Additional info**          |                       |
+|**Data Source Description**  |Accesses the Workday Account object and returns one row per Workday account. Includes all Workday accounts ever created, either currently enabled or not. Doesn't contain built-in prompts. This data source shows settings of a user's sign in information and preferences in Workday.       |
+|Brief Description            |                       |
+|Passes Report Column Toggles |                       |
 
 ## Workday User Context Custom Report - PROMPTS
 
