@@ -136,7 +136,7 @@ You can review, confirm, or edit the workflow directly from the chat card before
 
 ##### What do I need to set up to see these capabilities?
 
-You need to have a Copilot license and the autofill pay-as-you-go meter turned on (for all sites or select ones).
+You need to have a Copilot license and the autofill pay-as-you-go service turned on (for all sites or select ones).
 
 ##### Why am I seeing errors when I try to process files?
 
