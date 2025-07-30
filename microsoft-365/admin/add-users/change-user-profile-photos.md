@@ -2,9 +2,9 @@
 title: "Change user profile photo"
 f1.keywords:
 - NOCSH
-ms.author: chrisda
-author: chrisda
-manager: deniseb
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 06/11/2024
 audience: Admin
 ms.topic: how-to
