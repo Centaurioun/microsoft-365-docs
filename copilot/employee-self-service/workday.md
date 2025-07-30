@@ -99,15 +99,15 @@ Use the X509 public key provided by Microsoft Entra to create a new key in Workd
 
 |Field |Description |
 |------|------------|
-|Identity provider name             |This can be any name. |
-|Issuer                             |Enter the unique identifier for your SAML IdP, which must match the Issuer ID in SAML messages that the IdP sends. You can get this identifier from your IdP. For Microsoft Entra, this should be "Microsoft Entra Identifier." |
+|Identity provider name             |Can be any name. |
+|Issuer                             |Enter the unique identifier for your SAML IdP, which must match the Issuer ID in SAML messages that the IdP sends. You can get this identifier from your IdP. For Microsoft Entra, this entry should be "Microsoft Entra Identifier". |
 |X509 Certificate                   |Select or create the X.509 public certificate to use to verify the signature on SAML sign-in and sign out requests. You can get this information from your SAML provider. |
 |SP initiated                       |Select to specify SP-initiated SAML authentication. |
 |Service Provider ID                |Identifies Workday as the service provider in the Issuer element of SAML messages sent to the IdP.</br> Service Provider ID needs to be unique (IdP requires this value to be unique on their end). </br>This needs to match "Identifier (Entity ID)" field on Microsoft Entra. </br>These formats are examples (remove the spaces for your own URL): </br>http:// www .workday .com/sbx </br>*http:// www .workday .com/prod </br>*http:// www .workday .com/< tenant name > |
 |Sign SP-initiated Request          |Set to "No" if your SAML provider isn't using Workday's Public Key. |
 |Don't Deflate SP-initiated Request |Select this checkbox to ensure that Workday doesn't deflate the message again if the IdP deflates the authentication request message. |
-|Always require IdP Authentication  |Don't select this. |
-|IdP SSO Service URL                |Enter the URL to which Workday sends SAML authentication requests. You can get this URL from your SAML IdP. </br>For Microsoft Entra, you can get this from the **Login URL** field. |
+|Always require IdP Authentication  |Don't select. |
+|IdP SSO Service URL                |Enter the URL to which Workday sends SAML authentication requests. You can get this URL from your SAML IdP. </br>For Microsoft Entra, you can get this URL from the **Login URL** field. |
 
 ### Task 3 Create Generic Users and Integration System User
 
@@ -137,7 +137,7 @@ Edit the authentication policy for the Workday tenant. If there are no authentic
 1. Select **SAML** as Allowed Authentication Type if the generic user accounts are also created in Microsoft Entra. Otherwise, select **User Name Password**. If both methods are in use, then allow both.
 1. Ensure these generic user entries are at the top of the list.
 1. Make sure you have the SAML option enabled for the **All Employees** security group along with any other required method in your workday environment.
-1. **Execute Task - Activate All Pending Authentication Policy Changes** to activate all pending authentication policy changes. This is required to finalize all authentic policy changes.
+1. **Execute Task - Activate All Pending Authentication Policy Changes** to activate all pending authentication policy changes. Required to finalize all authentic policy changes.
 
 ### Task 5 Register API Client
 
@@ -228,7 +228,8 @@ In this article, you learn how to set up the **Microsoft Entra ID Integrated** a
 When you install the Workday connector, the first step is to set up connections using the form. Fill out the following fields:
 
 **Microsoft Entra resource URL (Application ID URI)**
-This is Microsoft Entra's app registration created for Workday SSO. [Learn how to access app registrations](/entra/identity-platform/quickstart-register-app).
+
+Microsoft Entra's app registration created for Workday SSO. [Learn how to access app registrations](/entra/identity-platform/quickstart-register-app).
 
 1. Select **All applications**.
 1. Choose the correct application created for Workday SSO.
@@ -300,10 +301,10 @@ All the user accounts mentioned in the table under "Expected connection user acc
 
 |Environment variable                     |Description |
 |-----------------------------------------|------------|
-|WorkdayWebsiteRedirectMessage            |This is the message shown to users in success/failure scenarios for update email/phone number actions |
+|WorkdayWebsiteRedirectMessage            |The message shown to users in success/failure scenarios for update email/phone number actions |
 |EmployeeContextRequestAccountName        |Should contain the account that has access to the RaaS report. Reference from connection table: ISUAccount |
-|EmployeeContextRequestReportName         |should be the name of the report that contains the required information reference from connection table: ReportName |
-|EmployeeContextRequestReportInstanceName |should be the instance name that the report belongs to reference from connection table: Report Instance |
+|EmployeeContextRequestReportName         |The name of the report that contains the required information reference from connection table: ReportName |
+|EmployeeContextRequestReportInstanceName |The instance name that the report belongs to reference from connection table: Report Instance |
 
 #### Step 6: Confirm the Workday flows are turned on
 
