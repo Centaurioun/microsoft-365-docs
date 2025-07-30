@@ -4,9 +4,9 @@ metadata:
   title: "Basic Mobility and Security frequently asked questions (FAQs)"
   f1.keywords:
   - NOCSH
-  ms.author: kwekua
-  author: kwekua
-  manager: scotv
+  ms.author: deniseb
+  author: denisebmsft
+  manager: dansimp
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-basic-mobility-security
