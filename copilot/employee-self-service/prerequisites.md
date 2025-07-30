@@ -46,7 +46,7 @@ The ESS agent uses agent flows. You need to set up the Copilot Studio capacity. 
 
 The ESS Agent operates on Copilot, requiring Copilot licenses. Users without assigned licenses are automatically billed on a Pay-as-you-go basis. [Learn how to set up your consumption meter](/power-platform/admin/pay-as-you-go-overview).
 
-If ESS Agent is going to be consumed by users without Copilot licenses, it requires proactive capacity planning to ensure that the consumption cost is optimized for the usage. A basic guideline to follow is that any messages generated from LLM output incur additional cost for users in the Pay-as-you-go plan.
+If ESS Agent is going to be consumed by users without Copilot licenses, it requires proactive capacity planning to ensure that the consumption cost is optimized for the usage. A basic guideline to follow is that any messages generated from LLM output incur more cost for users in the Pay-as-you-go plan.
 
 The ESS agent performs LLM compute for the following scenarios in addition to the included Topics:
 
@@ -90,7 +90,7 @@ A sample capacity plan with costing for approximately 1,000 users:
 |-------------|------------------|--------------|------------|----------|
 |Example |What is the parental leave policy? |What is the parental leave policy? |What is my cost center #? |I'm being discriminated against |
 |Frequency |81% |2% |14% |3% |
-|Price for users without Microsoft 365 Copilot per query |16 cents |12 cents |5 cents |1 cent |
+|Price for users without Microsoft 365 Copilot per query |sixteen cents |twelve cents |five cents |one cent |
 
 Steps breakdown:
 
@@ -123,11 +123,11 @@ Steps breakdown:
 - Non-LLM answer: 1c
 
 >[!NOTE]
->The average price per user without a Microsoft 365 Copilot license is 15 cents per query.
+>The average price per user without a Microsoft 365 Copilot license is fifteen cents per query.
 
 ## Required roles
 
-The ESS Agent includes several different technical components and configuration areas, which require different Microsoft 365 roles for deployment. It's recommended to use the least privileged role possible to perform each necessary activity. For roles with elevated privileges, use just-in-time access.
+The ESS Agent includes several different technical components and configuration areas, which require different Microsoft 365 roles for deployment. We recommend you use the least privileged role possible to perform each necessary activity. For roles with elevated privileges, use just-in-time access.
 
 |Role |Description |Activities performed |Configuration areas|
 |-----|------------|---------------------|-------------------|
@@ -140,7 +140,7 @@ The ESS Agent includes several different technical components and configuration 
 
 [Learn more about role-based security roles for Power Platform](/power-platform/admin/database-security)
 
-### Non-configuration required roles
+### Nonconfiguration required roles
 
 These roles don't need to work in the technical configuration areas, but they're crucial to the success of the agent.
 
