@@ -1,9 +1,10 @@
 ---
 title: Publish the Employee Self-Service agent to your organization
 f1.keywords: NOCSH
-ms.author: daisyfeller
-author: daisyfell
-manager: triciagill
+ms.author: heidip
+author: MicrosoftHeidip
+manager: dansimp
+ms.reviewer: semani
 ms.date: 7/3/2025
 audience: Admin
 ms.topic: article

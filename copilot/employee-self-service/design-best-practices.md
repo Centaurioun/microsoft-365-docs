@@ -1,9 +1,10 @@
 ---
 title: Design guidance and best practices
 f1.keywords: NOCSH
-ms.author: daisyfeller
-author: daisyfell
-manager: triciagill
+ms.author: heidip
+author: MicrosoftHeidi
+manager: dansimp
+ms.reviewer: semani
 ms.date: 7/3/2025
 audience: Admin
 ms.topic: article

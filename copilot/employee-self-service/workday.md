@@ -2,9 +2,10 @@
 title: Integrate Workday with your Employee Self-Service deployment
 f1.keywords:
 - NOCSH
-ms.author: daisyfeller
-author: daisyfell
-manager: triciag
+ms.author: heidip
+author: MicrosoftHeidi
+manager: dansimp
+ms.reviewer: semani
 ms.date: 07/3/2025
 audience: Admin
 ms.topic: how-to
