@@ -1,10 +1,10 @@
 ---
 title: Integrate Microsoft Reflect LTI with D2L Brightspace
-author: v-jenplatt
+author: jennplatt
 ms.author: eladgr
 manager: dsitton
 ms.reviewer: eladgr
-ms.date: 008/01/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: integration
 ms.service: msteams

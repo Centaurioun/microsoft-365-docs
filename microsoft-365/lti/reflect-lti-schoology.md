@@ -1,6 +1,6 @@
 ---
 title: Integrate Microsoft Reflect LTI with Schoology Learning
-author: v-jenplatt
+author: jennplatt
 ms.author: eladgr
 manager: dsitton
 ms.reviewer: eladgr
