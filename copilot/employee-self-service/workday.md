@@ -421,7 +421,7 @@ The apiRequest nodes contain information that conveys to the Wrokday API flow ho
 
 **requestTemplates**
 
-Requests templates are XML objects that define the request body that gets sent to Copilot. These templates often contain replacable values that are filled as part of the flow. Replaceable values appear in curly brackets {example_replaceable_value}.
+Requests templates are XML objects that define the request body that gets sent to Copilot. These templates often contain replaceable values that are filled as part of the flow. Replaceable values appear in curly brackets {example_replaceable_value}.
 
 ```xml
 <requestTemplates> 
