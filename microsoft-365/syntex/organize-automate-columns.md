@@ -60,7 +60,7 @@ To get suggested columns and metabase based on the content in your document libr
 
 2. In the chat box, review the instruction provided. If needed, you can modify the text to better suit your intent. Once you're ready, select **Send** (![Screenshot of the send icon in the chat box.](../media/content-understanding/chat-box-send-icon.png)) to submit your action.
 
-3. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **Suggested**. This might take a few moments.
+3. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **AI-generated**. This might take a few moments.
 
    ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/knowledge-agent-suggested-columns-added.png)
 
