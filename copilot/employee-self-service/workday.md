@@ -55,9 +55,9 @@ It's recommended to set up Copilot Studio capacity to monitor capacity usage of 
 
 |Role |Description |Activities performed |Configuration area |
 |-----|------------|---------------------|-------------------|
-|Workday administrator |User who can perform administrative tasks |1. Create X509 public key</br> 2. Edit tenant setup - security</br> 3. Create Integration System User</br> 4. Create security group</br> 5. Manage authentication policies</br> 6. Register API client</br> 7. Security domain permission changes</br> 8. Create reports |Workday |
-|Application administrator **or** Cloud application administrator **or** application owner** |User who can configure SSO integration with Workday |1. Adding workday from gallery</br> 2. Configure Microsoft Entra SSO</br> 3. Configure Workday</br> 4. Test SSO |Microsoft Entra</br> Workday |
-|Environment Maker |User who can customize the ESS agent |1. Install and configure Workday extension pack</br> 2. Manage Workday Topics</br> 3. Set up user context |Microsoft Copilot Studio |
+|Workday administrator |User who can perform administrative tasks |1. Create X509 public key </br>2. Edit tenant setup - security </br>3. Create Integration System User </br>4. Create security group </br>5. Manage authentication policies </br>6. Register API client </br>7. Security domain permission changes </br>8. Create reports |Workday |
+|Application administrator **or** Cloud application administrator **or** application owner** |User who can configure SSO integration with Workday |1. Adding workday from gallery </br>2. Configure Microsoft Entra SSO </br>3. Configure Workday </br>4. Test SSO |Microsoft Entra</br> Workday |
+|Environment Maker |User who can customize the ESS agent |1. Install and configure Workday extension pack </br>2. Manage Workday Topics</br> 3. Set up user context |Microsoft Copilot Studio |
 |InfoSec/ IT Infrastructure/ Change control board |User committee responsible for security infrastructure changes |Configure IT platform services such as network and firewall rules |Network firewall policies |
 
 ## Infrastructure setup for third-party ISV integration
@@ -68,9 +68,9 @@ When you integrate these enterprise systems into the ESS agent, it becomes a mor
 
 You need to configure these systems with allowlists for the source IP addresses from which the ESS agent is hosted and executed, such as the Power Platform environment. See the documentation listed below for information on retrieving the list of IP address ranges to configure in the network environment:
 
-[Learn about overall Power Platform URLs and IP address ranges.](/power-platform/admin/online-requirements)
+[Learn about overall Power Platform URLs and IP address ranges.](/power-platform/admin/online-requirements).
 
-[Learn about Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform)
+[Learn about Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
 
 For Workday integration, the ESS agent uses the RaaS (Reports as a service) endpoint with SOAP exchange. It's required to work with InfoSec to allowlist the ESS agent to communicate with this endpoint. If any more data security requirements need to be met, especially for SOAP exchange, work with your security specialists to increase the security for data in transit.
 
@@ -88,8 +88,7 @@ The following configuration and preparation tasks need to be done in Workday by 
 
 ### Task 1 Create the X.509 public key
 
-Use the X509 public key provided by Microsoft Entra to create a new
- key in Workday.
+Use the X509 public key provided by Microsoft Entra to create a new key in Workday.
 
 ### Task 2 Edit tenant setup - security
 
@@ -100,31 +99,31 @@ Use the X509 public key provided by Microsoft Entra to create a new
 
 |Field |Description |
 |------|------------|
-|Identity provider name |This can be any name |
-|Issuer |Enter the unique identifier for your SAML IdP, which must match the Issuer ID in SAML messages that the IdP sends. You can get this identifier from your IdP. For Microsoft Entra, this should be "Microsoft Entra Identifier." |
-|X509 Certificate |Select or create the X.509 public certificate to use to verify the signature on SAML sign-in and sign out requests. You can get this information from your SAML provider. |
-|SP initiated |Select to specify SP-initiated SAML authentication |
-|Service Provider ID |Identifies Workday as the service provider in the Issuer element of SAML messages sent to the IdP.</br> Service Provider ID needs to be unique (IdP requires this value to be unique on their end.)</br> This needs to match "Identifier (Entity ID) field on Microsoft Entra.</br> These formats are examples (remove the spaces for your own URL):</br>http:// www .workday .com/sbx</br>*http:// www .workday .com/prod</br>*http:// www .workday .com/< tenant name > |
-|Sign SP-initiated Request |Set to "No" if your SAML provider isn't using Workday's Public Key |
-|Don't Deflate SP-initiated Request |Select this checkbox to ensure that Workday doesn't deflate the message again if the IdP deflates the authentication request message |
-|Always require IdP Authentication |Don't select this |
-|IdP SSO Service URL |Enter the URL to which Workday sends SAML authentication requests. You can get this URL from your SAML IdP.</br> For Microsoft Entra, you can get this from the **Login URL** field. |
+|Identity provider name             |This can be any name. |
+|Issuer                             |Enter the unique identifier for your SAML IdP, which must match the Issuer ID in SAML messages that the IdP sends. You can get this identifier from your IdP. For Microsoft Entra, this should be "Microsoft Entra Identifier." |
+|X509 Certificate                   |Select or create the X.509 public certificate to use to verify the signature on SAML sign-in and sign out requests. You can get this information from your SAML provider. |
+|SP initiated                       |Select to specify SP-initiated SAML authentication. |
+|Service Provider ID                |Identifies Workday as the service provider in the Issuer element of SAML messages sent to the IdP.</br> Service Provider ID needs to be unique (IdP requires this value to be unique on their end). </br>This needs to match "Identifier (Entity ID) field on Microsoft Entra. </br>These formats are examples (remove the spaces for your own URL): </br>http:// www .workday .com/sbx </br>*http:// www .workday .com/prod </br>*http:// www .workday .com/< tenant name > |
+|Sign SP-initiated Request          |Set to "No" if your SAML provider isn't using Workday's Public Key. |
+|Don't Deflate SP-initiated Request |Select this checkbox to ensure that Workday doesn't deflate the message again if the IdP deflates the authentication request message. |
+|Always require IdP Authentication  |Don't select this. |
+|IdP SSO Service URL                |Enter the URL to which Workday sends SAML authentication requests. You can get this URL from your SAML IdP. </br>For Microsoft Entra, you can get this from the **Login URL** field. |
 
 ### Task 3 Create Generic Users and Integration System User
 
 1. Task - Create Integration System User
 
-|Username |Do not allow UI sessions |
-|---------|-------------------------|
-|ISU_WQL_COPILOT |check |
-|ISU_Generic_COPILOT |check |
+|Username            |Don't allow UI sessions |
+|--------------------|------------------------|
+|ISU_WQL_COPILOT     |check                   |
+|ISU_Generic_COPILOT |check                   |
 
 2. Task - Integration System Security Groups (Unconstrained)
 
-|Group name |Integration System Users |
-|-----------|-------------------------|
-|ISSG_WQL_COPILOT |ISU_WQL_COPILOT |
-|ISSG_GENERIC_COPILOT |ISU_Generic_COPILOT |
+|Group name           |Integration System Users |
+|---------------------|-------------------------|
+|ISSG_WQL_COPILOT     |ISU_WQL_COPILOT          |
+|ISSG_GENERIC_COPILOT |ISU_Generic_COPILOT      |
 
 >[!NOTE]
 >If these Generic user accounts are created in Microsoft Entra, the Workday Account username for these users must exactly match the Microsoft Entra Account to support OAuth mechanisms.
@@ -158,16 +157,16 @@ The Client ID and the endpoints autogenerated after the client is created must b
     1. Search for the ISSG you created in task 3.
     1. Using related actions, select **Maintain Domain Permissions for Security Group** under the **Security Group** option.
 
-|ISSG |Security Domain |Report/Task permissions: Modify Access| View access| Integration permissions: Put access |Get access|
-|----|------|------|--------|------|-------|
-|ISSG_WQL_COPILOT |Workday accounts |no |yes |no |no |
-|ISSG_WQL_COPILOT |Custom Report Creation |yes |no |no |no |
-|ISSG_WQL_COPILOT |Person Data: Work Email |no |yes |no |yes |
-|ISSG_WQL_COPILOT |Worker Data: Current Staffing Information |no |yes |no |yes |
-|ISSG_WQL_COPILOT |SetUp: Tenant Setup - Reporting and Analytics |no |yes |no |yes |
-|ISSG_WQL_COPILOT |Worker Data: Worker ID |no |yes |no |yes |
-|ISSG_Generic_COPILOT |Job Information |no |no |no |yes |
-|ISSG_Generic_COPILOT |SetUp: Compensation Packages |no |no |no |yes |
+|ISSG |Security Domain |Report/Task permissions: Modify Access| View access| Integration permissions: Put access |Get access |
+|-----|----------------|--------------------------------------|------------|-------------------------------------|-----------|
+|ISSG_WQL_COPILOT     |Workday accounts                              |No  |Yes |No |No  |
+|ISSG_WQL_COPILOT     |Custom Report Creation                        |Yes |No  |No |No  |
+|ISSG_WQL_COPILOT     |Person Data: Work Email                       |No  |Yes |No |Yes |
+|ISSG_WQL_COPILOT     |Worker Data: Current Staffing Information     |No  |Yes |No |Yes |
+|ISSG_WQL_COPILOT     |SetUp: Tenant Setup - Reporting and Analytics |No  |Yes |No |Yes |
+|ISSG_WQL_COPILOT     |Worker Data: Worker ID                        |No  |Yes |No |Yes |
+|ISSG_Generic_COPILOT |Job Information                               |No  |No  |No |Yes |
+|ISSG_Generic_COPILOT |SetUp: Compensation Packages                  |No  |No  |No |Yes |
 
 Add Domain Security Policies for respective ISSG under the **View/Modify** access of **Report/Task Permissions** or under **Put/Get** access of **Integration permissions**. Refer to the graphic for more information.
 
@@ -179,21 +178,21 @@ After Domain addition, run the task below to finalize the Domain policy changes:
 
 **Task - Activate Pending Security Policy Changes**
 
-Security configuration to support ESS Copilot features for full-time employees and managers
+Security configuration to support ESS Copilot features for full-time employees and managers:
 
-|Security Domain |Security Groups to be added in Security Domain |Integration Permissions: Put Access |Get Access|
-|----------------|-----------------------------------------------|------------------------------------|----------|
-|Worker Data: Public Worker Reports |1. Employee As Self</br> 2. Manager |no |yes |
+|Security Domain                    |Security Groups to be added in Security Domain |Integration Permissions: Put Access |Get Access|
+|-----------------------------------|-----------------------------------------------|------------------------------------|----------|
+|Worker Data: Public Worker Reports |1. Employee As Self</br> 2. Manager            |No                                  |Yes       |
 
 ### Task 7 Create Reports
 
-[Learn how to create the reports you need for Workday integration](workday-reports.md)
+[Learn how to create the reports you need for Workday integration](workday-reports.md).
 
 ## Set up SSO for Workday with Microsoft Entra
 
 You don't need to do this step if SSO is already established for Workday with Microsoft Entra.
 
-[See the comprehensive guidance on setting up SSO integration with Workday](/entra/identity/saas-apps/workday-tutorial)
+[See the comprehensive guidance on setting up SSO integration with Workday](/entra/identity/saas-apps/workday-tutorial).
 
 ### Install the Workday Extension Pack for ESS agent
 
@@ -258,18 +257,18 @@ Workday report configuration provides the SOAP base URL.
 <soapbind:address location="https://wd2-impl-services1.workday.com/ccx/service/<<ReportInstance>>/<<WorkdayInstanceName>>/<<ISUAccount>>/<<ReportName>>"/>
 ```
 
-|Name |Used in |Variable/parameter |Default value |
-|-----|--------|-------------------|--------------|
-|Report Instance |PP environment variable |EmployeeContextRequestReportInstanceName |Report2 |
-|WorkdayInstanceName |Connection configuration |Workday instance name |< Workday Instance Name > |
-|ISUAccount |PP environment variable |EmployeeContextRequestAccountName |ISU_WQL_COPILOT@< domain >.com |
-|ReportName |PP environment variable |EmployeeContextRequestReportName |WD_User_Context |
+|Name                 |Used in                  |Variable/parameter                       |Default value                  |
+|---------------------|-------------------------|-----------------------------------------|-------------------------------|
+|Report Instance      |PP environment variable  |EmployeeContextRequestReportInstanceName |Report2                        |
+|WorkdayInstanceName  |Connection configuration |Workday instance name                    |< Workday Instance Name >      |
+|ISUAccount           |PP environment variable  |EmployeeContextRequestAccountName        |ISU_WQL_COPILOT@< domain >.com |
+|ReportName           |PP environment variable  |EmployeeContextRequestReportName         |WD_User_Context                |
 
->[!NOTE]
->[If the ISUAccount name gets encoded in the report XML output, substitute %40 with @ character to make it a qualified UPN.]
+> [!NOTE]
+> If the ISUAccount name gets encoded in the report XML output, substitute %40 with @ character to make it a qualified UPN.
 
->[!IMPORTANT]
->If the custom report name is different from the default name (**WD_User_Context**), follow these steps:
+> [!IMPORTANT]
+> If the custom report name is different from the default name (**WD_User_Context**), follow these steps:
 
 1. Sign in to Copilot Studio and open the **Employee Self-Service** agent.
 1. Open **Solutions** in the navigation pane.
@@ -277,19 +276,19 @@ Workday report configuration provides the SOAP base URL.
 1. Select **Objects** > **Employee Self-Service Template Configuration** > **HRWorkdayHCMEmployeeGetContext**.
 1. Update the value with the correct name in the **Value** section.
 
->[!NOTE]
->[The ESS agent uses a new Workday connector, which is not the same as the one published in the Power Platfrom connectors list (Workday HCM - Connectors). The current connector used in the agent is Workday SOAP. Plan for any DLP policies to allowlist this connector in the environment where the agent is being deployed and tested.]
+> [!NOTE]
+> The ESS agent uses a new Workday connector, which isn't the same as the one published in the Power Platfrom connectors list (Workday HCM - Connectors). The current connector used in the agent is Workday SOAP. Plan for any DLP policies to allowlist this connector in the environment where the agent is being deployed and tested.
 
 #### Step four: Configure connections
 
 During the Workday Extension Pack installation process, you're prompted for the following connection configurations:
 
-|Connection reference name |Connection reference ID |Expected connection user account |
-|--------------------------|------------------------|--------------------|
-|OAuthUser |new_sharedworkdaysoap_ff0df |Maker/the signed-in user |
-|Context Generic User |new_sharedworkdaysoap_d6081 |ISSG_WQL_COPILOT |
-|Generic User |new_sharedworkdaysoap_0786a |ISSG_Generic_COPILOT |
-|Microsoft Dataverse |msviess_sharedcommondataserviceforapps_92b66 |ISSG_WQL_COPILOT |
+|Connection reference name |Connection reference ID                      |Expected connection user account |
+|--------------------------|---------------------------------------------|---------------------------------|
+|OAuthUser                 |new_sharedworkdaysoap_ff0df                  |Maker/the signed-in user         |
+|Context Generic User      |new_sharedworkdaysoap_d6081                  |ISSG_WQL_COPILOT                 |
+|Generic User              |new_sharedworkdaysoap_0786a                  |ISSG_Generic_COPILOT             |
+|Microsoft Dataverse       |msviess_sharedcommondataserviceforapps_92b66 |ISSG_WQL_COPILOT                 |
 
 Note that all the above user accounts mentioned in the table under "Expected connection user account" should be available in Entra for SSO and use the respective accounts in UPN format (example: `ISSG_WQL_COPILOT@contoso.com`). Ensure that each connection is explicitly set up with its own account even though the connection status turned green after the first connection setup.
 
@@ -299,11 +298,11 @@ Note that all the above user accounts mentioned in the table under "Expected con
 1. A banner on the solutions page prompts you to fill in the environment variables.
 1. Update the following environment variables. Refer to the following inputs from the **SOAP Base URL** section.
 
-|Environment variable |Description |
-|---------------------|------------|
-|WorkdayWebsiteRedirectMessage |This is the message shown to users in success/failure scenarios for update email/phone number actions |
-|EmployeeContextRequestAccountName |Should contain the account that has access to the RaaS report. Reference from connection table: ISUAccount |
-|EmployeeContextRequestReportName |should be the name of the report that contains the required information reference from above connection table: ReportName |
+|Environment variable                     |Description |
+|-----------------------------------------|------------|
+|WorkdayWebsiteRedirectMessage            |This is the message shown to users in success/failure scenarios for update email/phone number actions |
+|EmployeeContextRequestAccountName        |Should contain the account that has access to the RaaS report. Reference from connection table: ISUAccount |
+|EmployeeContextRequestReportName         |should be the name of the report that contains the required information reference from above connection table: ReportName |
 |EmployeeContextRequestReportInstanceName |should be the instance name that the report belongs to reference from above connection table: Report Instance |
 
 #### Step 6: Confirm the Workday flows are turned on
@@ -326,9 +325,9 @@ Use **Templates** to complete the customizations required for Workday integratio
 
 ### Permissions to read Templates
 
-You need the following permissions to retrieve Template data from Dataverse.
+You need the following permissions to retrieve Template data from Dataverse:
 
-|Microsoft Dataverse |ISSG_WQL_COPILOT |Dataflow Maker, Environment Maker, System Admin for the environment  |
+|Microsoft Dataverse |ISSG_WQL_COPILOT |Dataflow Maker, Environment Maker, System Admin for the environment |
 
 >[!NOTE]
 >If the least privileged principles need to be followed for this account on Dataverse environment, the permission required for this account is **Read Organization** in Power Platform. Follow the instructions for creating a custom role with least privileged access and assign it to this account.
@@ -526,46 +525,46 @@ The Employee Self-Service agent Workday extension pack contains the following To
 
 **User Topics**
 
-|Topic |Description |
-|------|------------|
-|Workday Get BaseCompensation |Retrieves base compensation for the employee making the request |
-|Workday Get CompanyCode |Retrieves company code and company name for the employee making the request |
-|Workday Get CostCenter |Retrieves cost center code and cost center name for the employee making the request |
-|Workday Get EmployeeID |Retrieves Employee ID for the employee making the request. This data is retrieved from User Context |
-|Workday Get ServiceAnniversary |Calculates the service anniversary for the employee making the request |
-|Workday Get JobFunction |Retrieves job title, business title, job profile name, and job family for the employee making the request |
-|Workday Get CompensationRatio |Calculates the compensation ratio for the employee making the request using their annual compensation and the midpoint compensation for their role |
-|Workday Get Certifications |Retrieves certifications for the employee making the request. |
-|Workday Get ContactInformation |Retrieves contact information for the employee making the request. |
-|Workday Get Education |Retrieves education details for the employee making the request. |
-|Workday Get EmergencyContact |Retrieves emergency contact details for the employee making the request. |
+|Topic                             |Description |
+|----------------------------------|------------|
+|Workday Get BaseCompensation      |Retrieves base compensation for the employee making the request |
+|Workday Get CompanyCode           |Retrieves company code and company name for the employee making the request |
+|Workday Get CostCenter            |Retrieves cost center code and cost center name for the employee making the request |
+|Workday Get EmployeeID            |Retrieves Employee ID for the employee making the request. This data is retrieved from User Context |
+|Workday Get ServiceAnniversary    |Calculates the service anniversary for the employee making the request |
+|Workday Get JobFunction           |Retrieves job title, business title, job profile name, and job family for the employee making the request |
+|Workday Get CompensationRatio     |Calculates the compensation ratio for the employee making the request using their annual compensation and the midpoint compensation for their role |
+|Workday Get Certifications        |Retrieves certifications for the employee making the request. |
+|Workday Get ContactInformation    |Retrieves contact information for the employee making the request. |
+|Workday Get Education             |Retrieves education details for the employee making the request. |
+|Workday Get EmergencyContact      |Retrieves emergency contact details for the employee making the request. |
 |Workday Get EmploymentInformation |Retrieves all the employment information for the employee making the request. |
-|Workday Get GovernmentIDs |Retrieves government identifiers for the employee making the request. |
-|Workday Get LanguageInformation |Retrieves language details for the employee making the request. |
-|Workday Get NationalIDs |Retrieves national identifier details for the employee making the request. |
-|Workday Get Passports |Retrieves passport details for the employee making the request. |
-|Workday Get Visas |Retrieves visa details for the employee making the request. |
-|Employee Writes Email |For employees to update their personal email address. |
-|Employee Writes PhoneNumber |For employees to update their personal phone number |
+|Workday Get GovernmentIDs         |Retrieves government identifiers for the employee making the request. |
+|Workday Get LanguageInformation   |Retrieves language details for the employee making the request. |
+|Workday Get NationalIDs           |Retrieves national identifier details for the employee making the request. |
+|Workday Get Passports             |Retrieves passport details for the employee making the request. |
+|Workday Get Visas                 |Retrieves visa details for the employee making the request. |
+|Employee Writes Email             |For employees to update their personal email address. |
+|Employee Writes PhoneNumber       |For employees to update their personal phone number |
 
 **Manager Topics**
 
-|Topic |Description |
-|------|------------|
-|Workday Get MyDirects CompanyCode |Retrieves company code information for all direct reports of the employee making the request. |
-|Workday Get MyDirects CostCenter |Retrieves cost center information for all direct reports of the employee making the request. |
-|Workday Get MyDirects JobFunction |Retrieves job title, business title, job profile name, and job family for all direct reports of the employee making the request. |
+|Topic                                    |Description |
+|-----------------------------------------|------------|
+|Workday Get MyDirects CompanyCode        |Retrieves company code information for all direct reports of the employee making the request. |
+|Workday Get MyDirects CostCenter         |Retrieves cost center information for all direct reports of the employee making the request. |
+|Workday Get MyDirects JobFunction        |Retrieves job title, business title, job profile name, and job family for all direct reports of the employee making the request. |
 |Workday Get MyDirects ServiceAnniversary |Calculates the service anniversary for the employee making the request. |
 
 **System Topics**
 
-|Topic |Description |
-|------|------------|
-|Workday System AccessCheck |Checks the user context for required attributes are null for an employee |
-|Workday System ParseError |Logs errors to application insights and defines which error message returned by “Workday System Get Common Execution” to show the end user. |
-|Workday System ManagerCheck |Checks if the user attempting to call a Manager topic meets the criteria. Ends the topic with an error message if not. |
+|Topic                              |Description |
+|-----------------------------------|------------|
+|Workday System AccessCheck         |Checks the user context for required attributes are null for an employee |
+|Workday System ParseError          |Logs errors to application insights and defines which error message returned by “Workday System Get Common Execution” to show the end user. |
+|Workday System ManagerCheck        |Checks if the user attempting to call a Manager topic meets the criteria. Ends the topic with an error message if not. |
 |Workday System Get CommonExecution |Executes the call to the flow to invoke the Workday API. |
-|Workday System Get UserContext |Executes the call to retrieve user context information and assigns the information to global variables for use in other topics. |
+|Workday System Get UserContext     |Executes the call to retrieve user context information and assigns the information to global variables for use in other topics. |
 
 #### Enable or disable topics and use cases
 
@@ -577,12 +576,12 @@ Errors caused by Workday flows are first logged in Application Insights. Then, a
 
 The following error codes may be returned from the Invoke Workday API flow. By default, they don't have unique error responses.
 
-|Error string |Description |
-|-------------|------------|
-|TemplateRetrievalFailure |The call to retrieve the template configuration has failed. |
-|XmlTemplateToJsonFailed |The call to parse the template has failed. |
-|generateXMLFailure |The call to generate the XML body for the Workday SOAP API has failed. |
-|executeUserSOAPFailure |The call to the Workday SOAP API using user authentication has failed. |
+|Error string              |Description                                                                        |
+|--------------------------|-----------------------------------------------------------------------------------|
+|TemplateRetrievalFailure  |The call to retrieve the template configuration has failed.                        |
+|XmlTemplateToJsonFailed   |The call to parse the template has failed.                                         |
+|generateXMLFailure        |The call to generate the XML body for the Workday SOAP API has failed.             |
+|executeUserSOAPFailure    |The call to the Workday SOAP API using user authentication has failed.             |
 |executeGenericSOAPFailure |The call to the Workday SOAP API using the generic user authentication has failed. |
-|executeContextSOAPFailure |executeContextSOAPFailure |
-|extractManagerDataFailure |The call to extract data has failed. |
+|executeContextSOAPFailure |executeContextSOAPFailure                                                          |
+|extractManagerDataFailure |The call to extract data has failed.                                               |
