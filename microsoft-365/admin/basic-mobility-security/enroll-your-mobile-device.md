@@ -2,9 +2,9 @@
 title: "Enroll your mobile device using Basic Mobility and Security"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 11/11/2024
 audience: Admin
 ms.topic: article
