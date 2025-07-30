@@ -48,11 +48,11 @@ To get suggested columns and metabase based on the content in your document libr
 
    ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/autofill-librarian-agents-in-sharepoint-menu.png)
 
-3. The chat panel opens and displays a list of [suggested actions](#use-a-suggested-action) related to columns that you can try.
+3. The chat panel opens and displays a list of [suggested actions](#use-a-suggested-action) related to columns.
 
    ![Screenshot of the chat panel showing the instruction for column actions.](../media/content-understanding/autofill-librarian-agents-chat-panel.png)
 
-    You can also enter a [custom action](#enter-a-custom-action) with your own instruction.
+    You can also enter a [custom action](#enter-a-custom-action) in the chat panel.
 
 ### Use a suggested action
 
@@ -62,7 +62,7 @@ To get suggested columns and metabase based on the content in your document libr
 
    ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/autofill-librarian-suggested-columns-added.png)
 
-3. Review the suggested columns and the associated metadata to make they're appropriate for your content.
+3. Review the suggested columns and the associated metadata to make sure they're appropriate for your content.
 
 4. If you want to remove a suggested column, select the column name, and then select **Dismiss suggestion**.
 
@@ -78,11 +78,11 @@ To get suggested columns and metabase based on the content in your document libr
 
 ### Enter a custom action
 
-1. In the text box in the lower portion of the chat window, enter your own instructions.
+1. In the chat panel’s text box, enter your own instruction.
 
    ![Screenshot of the text box showing a custom instruction has been entered.](../media/content-understanding/autofill-librarian-custom-prompt.png)
 
-2. Press **Enter** to submit the action and initiate the suggestion flow based on your custom request.
+2. Press **Enter** to submit the action and initiate the suggestion flow.
 
 ### Save your changes
 
