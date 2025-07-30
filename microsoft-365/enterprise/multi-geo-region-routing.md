@@ -143,7 +143,7 @@ This section describes the types of error messages that are displayed if the mai
 
 > 451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information go to <https://go.microsoft.com/fwlink/p/?linkid=865268>.
 
-You get this SMTP error when mail is delivered to the wrong Microsoft 365 endpoint. If your organization is enabled for multi-geo and IRR, you shouldn't get this error if mail is delivered to a geo location [configured in your Exchange Online organization](administering-exchange-online-multi-geo.md#view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization).|
+You get this SMTP error when mail is delivered to the wrong Microsoft 365 endpoint. If your organization is enabled for multi-geo and IRR, you shouldn't get this error if mail is delivered to a geo location [configured in your Exchange Online organization](administering-exchange-online-multi-geo.md#view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization).
 
 #### System errors
 
