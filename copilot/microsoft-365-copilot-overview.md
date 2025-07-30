@@ -5,8 +5,8 @@ f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
-manager: scotv
-ms.date: 02/13/2025
+manager: dansimp
+ms.date: 07/30/2025
 audience: Admin
 ms.reviewer: mandia
 ms.topic: overview
@@ -23,6 +23,12 @@ appliesto:
 ---
 
 # Microsoft 365 Copilot overview
+
+> [!NOTE]
+> - Copilot Chat is in the process of transitioning to the ChatGPT-5 model as its primary supporting LLM. Users can try ChatGPT-5 with their Copilot prompts by selecting the Try Smart button at the top right in Copilot Chat.
+> - When using Smart in Copilot Chat, Copilot Chat chooses the best model, including ChatGPT-5, to generate a response that has increased complexity, accuracy, and overall performance.
+> - Users can use the Try Smart button in Copilot Chat whether they have or don't have a Microsoft 365 Copilot license.
+> For more information, see LINK.
 
 **Microsoft 365 Copilot is an AI-powered tool that helps with your work tasks**.
 
@@ -55,9 +61,7 @@ This article applies to:
 
 Microsoft 365 Copilot:
 
-- Pairs with the Microsoft 365 productivity apps that you use every day, like Word, Excel, PowerPoint, Outlook, Teams, and others.
-
-  So, you can use Copilot in Word to help create a document, in Excel to get suggestions for formulas, in Outlook to summarize an email thread, and in Teams to summarize meetings.
+- Pairs with the Microsoft 365 productivity apps that you use every day, like Word, Excel, PowerPoint, Outlook, Teams, and others. You can use Copilot in Word to help create a document, in Excel to get suggestions for formulas, in Outlook to summarize an email thread, and in Teams to summarize meetings.
 
 - Uses content in [Microsoft Graph](/graph/overview) to personalize the responses with a user's work emails, chats, and documents. Copilot only shows the data that users have permission to access.
 
@@ -65,7 +69,7 @@ Microsoft 365 Copilot:
 
 - Coordinates large language models (LLMs). LLMs are a type of artificial intelligence (AI) algorithms. These algorithms use deep learning techniques and data sets to understand, summarize, predict, and generate content.
 
-  The LLMs include pretrained models, like Generative Pre-Trained Transformers, like GPT-4, that are designed for these tasks. To learn more about Generative Pre-Trained Transformers (GPT), ask [Copilot](https://copilot.microsoft.com).
+   The LLMs include pretrained models, like Generative Pre-Trained Transformers, like GPT-4, that are designed for these tasks. To learn more about Generative Pre-Trained Transformers (GPT), ask [Copilot](https://copilot.microsoft.com).
 
 To learn more, see:
 
