@@ -135,8 +135,8 @@ The ESS Agent includes several different technical components and configuration 
 |Power Platform administrator |User who has power to configure Power Platform environments and assign roles within Power Platform |- Create environments </br> - Assign user roles </br> - Install ESS agent |- Power Platform </br> - Microsoft Copilot Studio |
 |Power Platform maker |User who has permission to make changes in a specific Power Platform environment. It’s recommended to have the agent owner for this agent perform this role. |Configure ESS agent |- Power Platform </br> - Microsoft Copilot Studio |
 |ISV administrators |Users who manage third-party solutions |Provide configuration inputs for ISV applications |ISV application's administration and configuration interface |
-|Information security |Infrastructure team who manage and control enterprise application security policies |- Allowlist inbound requests for ISV endpoints </br> - Manage single sign-on configurations |- Network firewall policies </br> - Signle sign-on applications |
-|Change control board |Team that manages changes in an organization relating to deploying an enterprise application |- Approve technical architecture </br> - Approve data security, compliance, and governance policies </br> - Approve responsible AI polices |N/A |
+|Information security |Infrastructure team who manage and control enterprise application security policies |- Allowlist inbound requests for ISV endpoints </br> - Manage single sign-on configurations |- Network firewall policies </br> - Single Sign-On applications |
+|Change control board |Team that manages changes in an organization relating to deploying an enterprise application |- Approve technical architecture </br> - Approve data security, compliance, and governance policies </br> - Approve responsible AI policies |N/A |
 
 [Learn more about role-based security roles for Power Platform](/power-platform/admin/database-security)
 
