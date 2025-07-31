@@ -305,7 +305,7 @@ The agent [supports the same languages as Copilot](https://support.microsoft.com
 
 ##### How can I provide feedback on this feature?
 
-Share your experience with this feature by filling out this [quick survey](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=bc020eefeadd43cfb107a4e3443594b1&id=v4j5cvGGr0GRqy180BHbR_PzshIK4BNFl0DNg2VJeqVUMjZWOTZYN0lUNU45SlVFWlNCUjBYR0E2Mi4u).
+Share your experience with us by filling out this [quick survey](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=bc020eefeadd43cfb107a4e3443594b1&id=v4j5cvGGr0GRqy180BHbR_PzshIK4BNFl0DNg2VJeqVUMjZWOTZYN0lUNU45SlVFWlNCUjBYR0E2Mi4u).
 
 <!---
 ## Planned capabilities coming soon
