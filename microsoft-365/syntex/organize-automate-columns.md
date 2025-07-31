@@ -281,9 +281,9 @@ You need to have a Copilot license and the autofill pay-as-you-go service turned
 
 The Knowledge agent can't process encrypted files, so it's likely that the files in your document library are encrypted. If your organizational policy allows, you need to change the sensitivity label on the files for the Knowledge agent to be able to process them.
 
-##### I don't see the "Organize and Automate" skill in the floating button. What's happening?
+##### I don't see the "Organize and automate" skill in the floating button. What's happening?
 
-The "organize and automate" action is only available to site owners or site members when in the root of a document library. It's disabled if the user has navigated into a folder.
+The **Organize and automate this library** action is only available to site owners or site members when in the root of a document library. It's disabled if the user has navigated into a folder.
 
 ##### How does the agent keep me in control?
 
@@ -295,7 +295,7 @@ The agent can help you configure rules to send email notifications, move or copy
 
 ##### What if I want to edit an automation later?
 
-You can edit automations via chat by selecting **Edit** on the rule card.
+You can edit automations via the chat panel by selecting **Edit** on the rule card.
 
 ![Screenshot of the New rule card showing the Edit option.](../media/content-understanding/knowledge-agent-edit-rule.png)
 
