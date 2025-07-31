@@ -20,7 +20,7 @@ description: Learn about deployment and governance methods for agents in Microso
 Microsoft 365 Copilot can be extended by installing agents. [Agents](/microsoft-365-copilot/extensibility/agents-overview) provide additional knowledge, skills, and automated workflows to address your unique business needs and enhance workflows within Microsoft 365 Copilot. In addition, Microsoft 365 Copilot can deliver highly skilled expertise on demand.
 
 > [!NOTE]
-> Microsoft deployed the Researcher and Analyst agents to existing users with Microsoft 365 Copilot licenses.
+> Microsoft deployed the [Researcher](https://go.microsoft.com/fwlink/?linkid=2329838) and [Analyst](https://go.microsoft.com/fwlink/?linkid=2329729) agents to existing users with Microsoft 365 Copilot licenses.
 
 There are different methods used to install agents in Microsoft 365 Copilot.
 
