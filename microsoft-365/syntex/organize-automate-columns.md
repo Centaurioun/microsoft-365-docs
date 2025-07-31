@@ -84,7 +84,7 @@ Follow these steps to use the **Suggest more columns** action.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
 
-# [Create a rule](#tab/create-a-rule)
+# [**Create a rule**](#tab/create-a-rule)
 
 Follow these steps to use the **Create a rule** action.
 
@@ -110,7 +110,7 @@ Follow these steps to use the **Create a rule** action.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
 
-# [Add an action items column](#tab/add-an-action-items-column)
+# [**Add an action items column**](#tab/add-an-action-items-column)
 
 Follow these steps to use the **Add an action items column** action.
 
@@ -136,7 +136,7 @@ Follow these steps to use the **Add an action items column** action.
 
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
 
-# [Add a summary column](#tab/add-a-summary-column)
+# [**Add a summary column**](#tab/add-a-summary-column)
 
 Follow these steps to use the **Add a summary column** action.
 
