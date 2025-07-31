@@ -54,6 +54,7 @@ To get suggested columns and metabase based on the content in your document libr
 
     You can also enter a [custom action](#enter-a-custom-action) in the chat panel.
 
+<!---
 ### Use a suggested action
 
 Select the **Suggest more columns**, **Create a rule**, **Add an action items column**, or **Add a summary column** tab for steps to initiate an action.
@@ -171,8 +172,7 @@ Follow these steps to use the **Add a summary column** action.
    ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
 
 ---
-
-_________________________________________________________________
+--->
 
 ### Use a suggested action
 
