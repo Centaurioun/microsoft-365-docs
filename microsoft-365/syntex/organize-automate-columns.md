@@ -235,8 +235,11 @@ With the Knowledge agent, you can automate tasks in your document library simply
 
 - The agent parses your chat input and, using library metadata, suggests a workflow.
 - You see a summary card in chat and can confirm or edit before enabling.
-- If your request references data not yet tracked (for example, "Expiration Date"), the agent suggests creating the necessary column.
-- For more complex automations or if the agent needs more details, you might be prompted for clarification or directed to the Rules UI for advanced editing.
+- If your request references data not yet tracked (for example, "Property state"), the agent suggests creating the necessary column.
+
+   ![Screenshot of the Create a rule screen.](../media/content-understanding/knowledge-agent-create-a-rule.png)
+
+- For more complex automations or if the agent needs more details, you might be prompted for clarification or directed to the **Create a rule** screen for advanced editing.
 
 #### Example prompts
 
