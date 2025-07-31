@@ -60,6 +60,8 @@ Select the **Suggest more columns**, **Create a rule**, **Add an action items co
 
 # [**Suggest more columns**](#tab/suggest-more-columns)
 
+### Suggest more columns
+
 Follow these steps to use the **Suggest more columns** action.
 
 1. From the chat panel, select **Suggest more columns**.
