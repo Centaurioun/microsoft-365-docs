@@ -190,6 +190,16 @@ Follow these steps to use the **Add a summary column** action.
 
 4. Review the suggested columns and the associated metadata to make sure they're appropriate for your content.
 
+5. To remove a suggested column:
+
+   - From the library canvas, select the column name, and then select **Remove column**.
+
+   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
+
+   - From the chat panel, on the column card, select **Remove**.
+
+   ![Screenshot of a column card on the chat panel with the suggested with the Remove option highlighted.](../media/content-understanding/knowledge-agent-remove-column-chat-panel.png)
+
 5. If you want to remove a suggested column, select the column name, and then select **Remove column**.
 
    ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
