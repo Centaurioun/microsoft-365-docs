@@ -58,7 +58,7 @@ To get suggested columns and metabase based on the content in your document libr
 
 Select the **Suggest more columns**, **Create a rule**, **Add an action items column**, or **Add a summary column** tab for steps to initiate an action.
 
-# [Suggest more columns](#tab/suggest-more-columns)
+# [**Suggest more columns**](#tab/suggest-more-columns)
 
 Follow these steps to use the **Suggest more columns** action.
 
