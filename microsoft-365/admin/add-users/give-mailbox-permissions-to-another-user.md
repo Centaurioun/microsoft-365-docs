@@ -2,9 +2,9 @@
 title: "Give mailbox permissions to another user - Admin Help"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 09/30/2024
 audience: Admin
 ms.topic: how-to
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
+- trust-pod
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
