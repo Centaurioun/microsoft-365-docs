@@ -70,7 +70,7 @@ A topic contains one or more conversation nodes that define more structured conv
 
 ### How to write effective channel instructions:
 
-1. **Be explicit about agent roles, scope, and handoffs**: Clearly define the domain of each sub-agent and when to delegate a query. This improves routing accuracy and prevents redundant or ambiguous responses.
+1. **Be explicit about agent roles, scope, and handoffs**: Clearly define the domain of each subagent and when to delegate a query. This improves routing accuracy and prevents redundant or ambiguous responses.
 2. **Provide guidance for ambiguous cross-domain queries**: Provide examples on where intents may be ambiguous, how they can be navigated, and the fallback plan to move the task forward.
 3. **Emphasize how to behave when uncertain**: Instruct the agent to ask clarifying questions when intent is unclear or could span domains.
 
@@ -161,7 +161,7 @@ Define how the agent speaks and adapts based on context. Developing voice and to
 
 - **Establishes trust and credibility**: Voice and tone set the emotional and professional tone of the interaction. Inconsistent or mismatched tone (for example, too casual in a sensitive HR context) can confuse or alienate users. Clear guidance helps the agent sound conversational yet dependable.
 - **Supports brand coherence**: Your agent is part of your organization's digital identity. Defining voice and tone ensures the agent reflects your brand values and aligns with how your company communicates across other channels (like internal comms or other employee experiences).
-- **Improves clarity and comprehension**: Tone affects how easy and comfortable the guidance feels, especially under stress (e.g., technical or HR issues).
+- **Improves clarity and comprehension**: Tone affects how easy and comfortable the guidance feels, especially under stress (for example, technical or HR issues).
 
 Considerations to help you define voice and tone:
 
@@ -222,7 +222,7 @@ Use the following example when users ask for HR policies, summarize key points i
 3. Define boundaries and fallback plans
 When crafting system prompts, you're guiding how the agent behaves in different contexts and not just what it says. Clear instructions help the agent respond responsibly, stay within scope, and build user trust. Use this guidance to shape behavior across key areas like:
 -	Handling unsupported requests gracefully, with deflection or escalation
--	Following compliance rules (e.g., no legal or medical advice)
+-	Following compliance rules (for example, no legal or medical advice)
 -	Managing sensitive topics and preventing risky actions
 -	Using conversation context wisely—summarizing, clarifying, or continuing
 -	Escalating or falling back when unsure or out of scope
@@ -242,7 +242,7 @@ Examples:
 
 -	If you receive a request outside your scope, respond clearly and courteously.
 -	If a request falls outside of supported HR or IT tasks, say something like:
-'I'm here to help with common HR and IT questions. For this type of request, please reach out to [support contact or system].'
+'I'm here to help with common HR and IT questions. For this type of request, reach out to [support contact or system].'
 -	When you can't complete a task, guide the user toward a resource, article, or help form. Always prioritize official knowledge sources first.
 
 5. Consider ethical and company compliance rules
@@ -251,7 +251,7 @@ Think through areas that may be sensitive and shouldn't be answered by the agent
 Examples:
 
 -	Don't offer medical, legal, or financial advice. Clearly state that the user should consult a qualified professional.
--	Apply company-specific compliance rules (e.g., data handling, privacy).  
+-	Apply company-specific compliance rules (for example, data handling, privacy).  
 -	Avoid generating or suggesting actions that could violate company policies or regulatory standards.
 -	You must not generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content. You must not generate content that is hateful, racist, sexist, lewd, or violent. Never generate any content that openly discriminates against groups of people of a protected identity (race, gender, sex, age, and so on) Never generate any original graphic, sexual or violent content, even if the document has such themes. 
 
