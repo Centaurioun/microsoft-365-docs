@@ -42,14 +42,14 @@ View the whole list of known issues and limitations to assess if this agent is a
 
 Applies to:
 
-|Package |Version |
-|--------|--------|
-|ESS agent |1.0.0.70 |
-|ServiceNow HR |v1.1.06 |
-|Workday |v1.0.0.109 |
-|SAP SuccessFactors |v1.0.0.43 |
-|ServiceNow LiveAgent |v.1.0.0.0 |
-|ServiceNow IT |v1.0.0.37 |
+|Package              |Version    |
+|---------------------|-----------|
+|ESS agent            |1.0.0.70   |
+|ServiceNow HR        |v1.1.06    |
+|Workday              |v1.0.0.109 |
+|SAP SuccessFactors   |v1.0.0.43  |
+|ServiceNow LiveAgent |v.1.0.0.0  |
+|ServiceNow IT        |v1.0.0.37  |
 
 |Area |Limitation |Planned fix |Workaround / guidance |
 |-----|-----------|------------|----------------------|
@@ -78,7 +78,7 @@ Applies to:
 |Licensing and payment | End users can continue consuming ESS Agent when there's no Copilot license assigned to them and the billing plan is disabled, or the message capacity is exhausted. | End users can't consume ESS Agent when the billing usage enforcement is rolled out by late summer 2025. | Enforce a billing plan in Copilot Studio per environment where the ESS Agent is being published. |
 |Content related |Semantic indexing is limited to roughly 200 pages of content; anything beyond this limit isn't processed. |By design - there are no plans to include it in the future roadmap. |To stay within the ~200-page semantic indexing limit, consider breaking up your knowledge content into smaller, topic-focused libraries or SharePoint sites. Prioritize including only the most relevant and frequently used content in the initial knowledge source. Less critical or long-tail content can be stored separately and accessed through links or added later as needed. This configuration helps ensure the most valuable content is indexed and searchable by the ESS Agent. |
 |Content related |If a page only has links and no actual content, it's not part of the summary the agent creates. |By design - there are no plans to include it in the future roadmap. |To ensure these pages are included in the summary, add a brief description or context alongside the links. Even a short paragraph explaining what the links are for or summarizing the content they point to can make the page eligible for summarization. This explanation helps the ESS Agent better understand and include the information during indexing. |
-|Content related |You might notice lower-quality responses when the agent pulls information from Graph Connector content. |Enhanced response quality for Graph Connector content is planned for release in Summer 2025. |To improve response quality, prioritize using SharePoint or directly integrated knowledge bases as your primary content sources, especially for high-impact topics. If you must use Graph Connector sources, ensure the content is well-structured, includes clear headings, and avoids overly long pages or lists of links. Adding short summaries or key takeaways at the top of each page can also help the agent generate better answers. |
+|Content related |You might notice lower-quality responses when the agent pulls information from Graph Connector content. |Enhanced response quality for Graph Connector content is planned for release in summer 2025. |To improve response quality, prioritize using SharePoint or directly integrated knowledge bases as your primary content sources, especially for high-impact topics. If you must use Graph Connector sources, ensure the content is well-structured, includes clear headings, and avoids overly long pages or lists of links. Adding short summaries or key takeaways at the top of each page can also help the agent generate better answers. |
 |Security, compliance, and privacy | Workers council region deployments aren't supported. Deployment to users in regions requiring workers council approval (such as France and Germany). | We're currently evaluating the feasibility of including this functionality in a future roadmap. | Focus preview deployments on users located outside of workers council countries where additional approvals are required for new tools like Employee Self-Service Agent. |
 
 ## Platform dependency - known issues and limitations
