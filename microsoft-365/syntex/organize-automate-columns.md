@@ -200,19 +200,13 @@ Follow these steps to use the **Add a summary column** action.
 
        ![Screenshot of a column card on the chat panel with the suggested with the Remove option highlighted.](../media/content-understanding/knowledge-agent-remove-column-chat-panel.png)
 
-5. If you want to remove a suggested column, select the column name, and then select **Remove column**.
-
-   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
-
-   You can also remove the column from the chat panel.
-
 6. To rename the column or to refine the metadata in a suggested column:
 
     - From the document library page, select the column name, and then select **Edit column**.
 
        ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
 
-   - From the chat panel, on the column card, select **Edit**.
+    - From the chat panel, on the column card, select **Edit**.
 
        ![Screenshot of a column card on the chat panel with the suggested with the Edit option highlighted.](../media/content-understanding/knowledge-agent-edit-column-chat-panel.png)
 
