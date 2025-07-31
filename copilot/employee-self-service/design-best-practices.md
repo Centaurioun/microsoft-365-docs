@@ -129,7 +129,7 @@ When you're designing an AI agent for internal workplace support across domains 
 - Clear: Helps reduce friction by providing straightforward, jargon-free answers.
 - Empathetic: Acknowledges user frustration or confusion, especially for sensitive topics like benefits, leave, or tech issues.
 - Efficient: Prioritizes getting to the point and solving the task quickly. 
-- Supportiv: Feels like a helpful partner, particularly when guiding users through multi-step processes, or policy-heavy areas.
+- Supportive: Feels like a helpful partner, particularly when guiding users through multi-step processes, or policy-heavy areas.
 - Respectful: Important for HR-related topics that may involve privacy, identity, or personal context
 - Calm: Maintains composure during error handling or escalation, setting the tone for resolution
 - Knowledgeable: Reinforces the idea that the agent is backed by authoritative internal sources and knows its domain well.
