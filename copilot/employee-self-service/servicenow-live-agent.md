@@ -165,7 +165,7 @@ topic-id: To get the Topic ID, search for "sys_cs_topic.list." Locate the flow t
 #### Changes on the ESS agent
 
 1. Install the ServiceNow Live Agent ISV package.
-1. If you weren't asked to enter the ServiceNow Live Agent URL, visit the solutions page to see **One environment variable needs to be updated.** Select that message and enter the URL.
+1. If there wasn't an option to enter the ServiceNow Live Agent URL, visit the solutions page to see **One environment variable needs to be updated.** Select that message and enter the URL.
 1. Enable topic ServiceNow Live Agent IT Escalate.
 
 ## Validate the integration of ESS and ServiceNow
@@ -179,7 +179,7 @@ This flow operates on the expectation that the user used to sign into CPS is alr
 1. The **Issue summary submitted** message shows with a **Start chat** link.
 ![Screenshot of the validation flow in the ESS agent.](media/snow-live-5.png)
 1. Select **Start chat.** In the new tab that opens, sign in with your ServiceNow credentials.
-1. You should see the summary shown in step four.
+1. You should see the summary shown in step 4.
 
 If you successfully completed these validation steps, the integration is successful.
 
