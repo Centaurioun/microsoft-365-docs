@@ -378,6 +378,8 @@ items:
            href: misc/experience-insights-dashboard.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
+         - name: Manager people data and experiences
+           href: ./manage/people-settings-in-microsoft-365-admin-center.md
          - name: Customize your organization profile cards
            href: ./manage/customize-profile-cards.md
          - name: Update your admin contact info
