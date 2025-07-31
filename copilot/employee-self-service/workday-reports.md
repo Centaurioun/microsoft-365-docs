@@ -41,7 +41,7 @@ Add.= additional info
 
 |Field name |Business object |CLRV Lookup field |CLRV Related business object |CLRV return value |add. Category |add. Authorized usage |
 |----------------------------|----------------|---------------------------|--------|-------------|--------------|--------------|
-|CF – ISO 2 Country Code LRV |Worker          |Location Address - Country |Country |Alpha-2 Code |Uncategorized |Default areas |
+|CF – ISO 2 Country Code LRV |Worker          |Location Address - Country/Region |Country/Region |Alpha-2 Code |Uncategorized |Default areas |
 |CF – EE Level LRV |Worker |Supervisory Organization - Primary Position |Supervisory Organization |Organization on Level from Top |Uncategorized |Default Areas |
 |CF – LRV Worker Type        |Workday Account |Worker                     |Worker  |Worker Type  |              |              |
 |CF LRV Sup Org Ref ID       |Worker |Manager's Default Supervisory Organization |Supervisory Organization |Reference ID |  |  |
