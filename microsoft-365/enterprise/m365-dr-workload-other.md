@@ -38,7 +38,7 @@ Tenants in EU member Countries/regions maintain data in Macro Region Geography 1
 
 ## Intune
 
-Refer to [Data storage and processing in Intune](/intune/intune-service/protect/privacy-data-store-process.md#storage-locations)
+Refer to [Data storage and processing in Intune](/intune/intune-service/protect/privacy-data-store-process#storage-locations)
 
 ## Office for Mobile
 
