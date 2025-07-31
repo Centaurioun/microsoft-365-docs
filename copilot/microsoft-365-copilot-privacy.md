@@ -13,6 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - must-keep
+- trust-pod
 hideEdit: true
 ms.date: 05/02/2025
 ms.custom: [copilot-learning-hub]
@@ -29,7 +30,7 @@ Microsoft 365 Copilot is a sophisticated processing and orchestration engine tha
 For an overview of how these three components work together, see [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md). For links to other content related to Microsoft 365 Copilot, see [Microsoft 365 Copilot documentation](index.yml).
 
 > [!IMPORTANT]
-> - Microsoft 365 Copilot is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary.
+> - Microsoft 365 Copilot, including [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search), is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary.
 > - Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot.
 > - Microsoft 365 Copilot operates with multiple protections, which include, but aren't limited to, [blocking harmful content](#how-does-copilot-block-harmful-content), [detecting protected material](#does-copilot-provide-protected-material-detection), and [blocking prompt injections (jailbreak attacks)](#does-copilot-block-prompt-injections-jailbreak-attacks).
 

@@ -3,7 +3,7 @@ title: Export and import unstructured document processing models with PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-ms.date: 04/06/2025
+ms.date: 08/01/2025
 manager: ssquires
 audience: admin
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn about how to export and import models with PowerShell in Microsoft Syntex.
+description: Learn about how to export and import document processing models with PowerShell.
 ---
 
 # Export and import unstructured document processing models with PowerShell
@@ -21,9 +21,9 @@ description: Learn about how to export and import models with PowerShell in Micr
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 > [!IMPORTANT]
-> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There's no service-level agreement (SLA) for open-source tool support from official Microsoft support channels.
+> The PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There's no service-level agreement (SLA) for open-source tool support from official Microsoft support channels.
 
-Microsoft Syntex models can be exported as PnP templates, enabling reuse across content centers or tenants.
+Document processing models can be exported as PnP templates, enabling reuse across content centers or tenants.
 
 ## Export all models in a content center
 

@@ -17,20 +17,20 @@ items:
   items: 
     - name: Set up your infrastructure for hybrid work
       items:
-      - name: Overview   
-        href: empower-people-to-work-remotely.md
+      - name: Overview
+        href: /security/zero-trust/empower-people-to-work-remotely
       - name: Step 1. Increase sign-in security
-        href: empower-people-to-work-remotely-secure-sign-in.md
+        href: /security/zero-trust/empower-people-to-work-remotely-secure-sign-in
       - name: Step 2. Provide remote access
-        href: empower-people-to-work-remotely-remote-access.md
+        href: /security/zero-trust/empower-people-to-work-remotely-remote-access
       - name: Step 3. Deploy security and compliance
-        href: empower-people-to-work-remotely-security-compliance.md
+        href: /security/zero-trust/empower-people-to-work-remotely-security-compliance
       - name: Step 4. Deploy endpoint management
-        href: empower-people-to-work-remotely-manage-endpoints.md
+        href: /security/zero-trust/empower-people-to-work-remotely-manage-endpoints
       - name: Step 5. Deploy productivity apps and services
-        href: empower-people-to-work-remotely-teams-productivity-apps.md
+        href: /security/zero-trust/empower-people-to-work-remotely-teams-productivity-apps
       - name: Step 6. Train your workers
-        href: empower-people-to-work-remotely-train-monitor-usage.md
+        href: /security/zero-trust/empower-people-to-work-remotely-train-monitor-usage
     - name: Manage endpoints with Intune and Microsoft 365
       items:
       - name: Overview

@@ -12,10 +12,9 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/20/2025 #Required; mm/dd/yyyy format
+  ms.date: 07/18/2025 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
-  titleSuffix: Microsoft 365
-
+ 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
@@ -30,7 +29,7 @@ landingContent:
             url: pay-as-you-go-overview.md
       - linkListType: whats-new
         links:
-          - text: What's new
+          - text: Available new services
             url: pay-as-you-go-whats-new.md
 
 # Card 2
@@ -44,6 +43,8 @@ landingContent:
         links:
           - text: Set up pay-as-you-go billing
             url: pay-as-you-go-setup.md
+          - text: Set up a pay-as-you-go budget
+            url: pay-as-you-go-budget.md
 
 # Card 3
   - title: Pay-as-you-go pricing
@@ -52,7 +53,7 @@ landingContent:
         links:
           - text: Microsoft 365 Copilot
             url: /sharepoint/microsoft-365-pay-as-you-go-pricing
-          - text: Microsoft Syntex
+          - text: Document processing
             url: ../syntex/syntex-pay-as-you-go-services.md
           - text: Microsoft 365 Archive
             url: ../syntex/syntex-pay-as-you-go-services.md#storage-services
@@ -78,28 +79,28 @@ landingContent:
             url: ../backup/backup-overview.md
 
 # Card 6
-  - title: Document & image services
+  - title: Document processing services
     linkLists:
       - linkListType: overview
         links:
           - text: Autofill columns
             url: ../syntex/autofill-overview.md
-          - text: Content assembly
-            url: ../syntex/content-assembly.md
           - text: Document translation
             url: ../syntex/translation-overview.md
           - text: eSignature
             url: ../syntex/esignature-overview.md
-          - text: Image tagging
-            url: ../syntex/image-tagging-overview.md
           - text: Optical character recognition
             url: ../syntex/ocr-overview.md
+          - text: Content assembly
+            url: ../syntex/content-assembly.md
+          - text: Image tagging
+            url: ../syntex/image-tagging-overview.md
+          - text: Taxonomy tagging
+            url: ../syntex/taxonomy-tagging-overview.md
           - text: Prebuilt document processing
             url: ../syntex/prebuilt-overview.md
           - text: Structured and freeform document processing
             url: ../syntex/form-processing-overview.md
-          - text: Taxonomy tagging
-            url: ../syntex/taxonomy-tagging-overview.md
           - text: Unstructured document processing
             url: ../syntex/document-understanding-overview.md
 
