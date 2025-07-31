@@ -184,7 +184,7 @@ Follow these steps to use the **Add a summary column** action.
 
    ![Screenshot of a document library with the suggested columns highlighted.](../media/content-understanding/knowledge-agent-suggested-columns-added.png)
 
-   The information on the suggested columns also appears in the chat panel.
+   The suggest column information also appears in the chat panel.
 
    ![Screenshot of the chat panel showing the suggested columns.](../media/content-understanding/knowledge-agent-suggested-columns-chat-panel.png)
 
@@ -194,9 +194,13 @@ Follow these steps to use the **Add a summary column** action.
 
    ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
 
+   You can also remove the column from the chat panel.
+
 6. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the instruction. To do so, select the column name, and then select **Edit column**.
 
    ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
+
+   You can also edit the column from the chat panel.
 
 7. On the **Edit column** panel, you can change the column name or modify the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
 
