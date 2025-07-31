@@ -303,11 +303,9 @@ You can edit automations via chat by selecting **Edit** on the rule card.
 
 The agent [supports the same languages as Copilot](https://support.microsoft.com/topic/26de43a1-c176-4908-bef7-29c8c37ac7ce) for text-based prompts and responses, but can only process files in English currently.
 
-<!---
-## We value your feedback
+##### How can I provide feedback on this feature?
 
-Your feedback drives improvements for everyone. Share your experience with this feature by filling out this [quick survey](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=bc020eefeadd43cfb107a4e3443594b1&id=v4j5cvGGr0GRqy180BHbR_PzshIK4BNFl0DNg2VJeqVUMjZWOTZYN0lUNU45SlVFWlNCUjBYR0E2Mi4u).
---->
+Share your experience with this feature by filling out this [quick survey](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=bc020eefeadd43cfb107a4e3443594b1&id=v4j5cvGGr0GRqy180BHbR_PzshIK4BNFl0DNg2VJeqVUMjZWOTZYN0lUNU45SlVFWlNCUjBYR0E2Mi4u).
 
 <!---
 ## Planned capabilities coming soon
