@@ -194,11 +194,11 @@ Follow these steps to use the **Add a summary column** action.
 
    - From the document library page, select the column name, and then select **Remove column**.
 
-   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
+       ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
 
    - From the chat panel, on the column card, select **Remove**.
 
-   ![Screenshot of a column card on the chat panel with the suggested with the Remove option highlighted.](../media/content-understanding/knowledge-agent-remove-column-chat-panel.png)
+       ![Screenshot of a column card on the chat panel with the suggested with the Remove option highlighted.](../media/content-understanding/knowledge-agent-remove-column-chat-panel.png)
 
 5. If you want to remove a suggested column, select the column name, and then select **Remove column**.
 
@@ -210,11 +210,11 @@ Follow these steps to use the **Add a summary column** action.
 
     - From the document library page, select the column name, and then select **Edit column**.
 
-   ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
+       ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
 
    - From the chat panel, on the column card, select **Edit**.
 
-   ![Screenshot of a column card on the chat panel with the suggested with the Edit option highlighted.](../media/content-understanding/knowledge-agent-edit-column-chat-panel.png)
+       ![Screenshot of a column card on the chat panel with the suggested with the Edit option highlighted.](../media/content-understanding/knowledge-agent-edit-column-chat-panel.png)
 
 7. On the **Edit column** panel, you can change the column name or modify the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
 
