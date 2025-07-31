@@ -50,25 +50,25 @@ Sign into ServiceNow PDI as an admin.
 
 Search for **System definition** and select the **Tables** under it. Label: ESS Copilot Summary.
 
-|Field name |Type |Size |Reference table |
-|-----------|-----|-----|----------------|
-|Chat Summary |String |4096 |  |
-|Copilot Agent Queue |String |1024 |  |
-|Requestor User Email |String |512 |  |
-|ServiceNow Interaction |Reference |  |Interaction |
-|Active |True/False |  |  |
+|Field name             |Type       |Size |Reference table |
+|-----------------------|-----------|-----|----------------|
+|Chat Summary           |String     |4096 |                |
+|Copilot Agent Queue    |String     |1024 |                |
+|Requestor User Email   |String     |512  |                |
+|ServiceNow Interaction |Reference  |     |Interaction     |
+|Active                 |True/False |     |                |
 
-![[Screenshot showing the table](media/snow-live-1.png)](media/snow-live-1.png#lightbox)
+![[Screenshot showing the table.](media/snow-live-1.png)](media/snow-live-1.png#lightbox)
 
-Before clicking on the submit, you need to update the permissions on this table based on the organization policy. Basically, all users who are going to use Live Agent should have permission to create records. For internal dev, we can set this role to **public**. An actual customer may have a different approach to handling this.
+Before clicking on the submit, you need to update the permissions on this table based on the organization policy. Basically, all users who are going to use Live Agent should have permission to create records. For internal dev, we can set this role to **public**. An actual customer may have a different approach to handling this circumstance.
 
 Select the **Controls** tab and change User role to public.
 
-![Screenshot of the user role changed to public](media/snow-live-2.png)
+![Screenshot of the user role changed to public.](media/snow-live-2.png)
 
 Select **Application Access** and check the box for **Can create** and **Can update**.
 
-![Screenshot of application access boxes checked](media/snow-live-3.png)
+![Screenshot of application access boxes checked.](media/snow-live-3.png)
 
 Now select the **Submit** button.
 
@@ -108,7 +108,7 @@ Search for **Conversation interfaces** and choose **Virtual Agent** > **Designer
 8. Add a path to decision node indicating **No Active Records Found**. Update the branch condition to **Get Copilot Summary from Custom Table** **is empty**.
 9. Add a text response in that path.
     1. **Node name:** Session timed out
-    1. **Response message:** The session you have accessed has timed out. Please return to Employee Self-Service to start a new session.
+    1. **Response message:** The session you have accessed has timed out. Return to Employee Self-Service to start a new session.
 10. This path ends here.
 11. Add a path to decision node indicating **Active Records Found**.
 12. Add a text response to the path you created.
@@ -165,7 +165,7 @@ topic-id: To get the Topic ID, search for "sys_cs_topic.list." Locate the flow t
 #### Changes on the ESS agent
 
 1. Install the ServiceNow Live Agent ISV package.
-1. You may not have been asked to put the ServiceNow Live Agent URL. In this case, visit the solutions page. You'll likely see **One environment variable needs to be updated.** Select that message and put the URL.
+1. You may not have been asked to put the ServiceNow Live Agent URL. In this case, visit the solutions page to likely see **One environment variable needs to be updated.** Select that message and enter the URL.
 1. Enable topic ServiceNow Live Agent IT Escalate.
 
 ## Validate the integration of ESS and ServiceNow
