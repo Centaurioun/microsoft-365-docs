@@ -182,7 +182,11 @@ Follow these steps to use the **Add a summary column** action.
 
 3. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **AI-generated**. This might take a few moments.
 
-   ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/knowledge-agent-suggested-columns-added.png)
+   ![Screenshot of a document library with the suggested columns highlighted.](../media/content-understanding/knowledge-agent-suggested-columns-added.png)
+
+   The information on the suggested columns also appears in the chat panel.
+
+   ![Screenshot of the chat panel showing the suggested columns.](../media/content-understanding/knowledge-agent-suggested-columns-chat-panel.png)
 
 4. Review the suggested columns and the associated metadata to make sure they're appropriate for your content.
 
