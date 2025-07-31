@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: efrene
 author: efrene
-manager: scotv
+manager: dansimp
 ms.date: 07/28/2025
 audience: Admin
 ms.topic: overview
