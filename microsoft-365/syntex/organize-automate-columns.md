@@ -56,6 +56,118 @@ To get suggested columns and metabase based on the content in your document libr
 
 ### Use a suggested action
 
+Select the **Suggest more columns**, **Create a rule**, **Add an action items column**, or **Add a summary column** tab for steps to initiate an action.
+
+# [Suggest more columns](#tab/suggest-more-columns)
+
+Follow these steps to use the **Suggest more columns** action.
+
+1. From the chat panel, select **Suggest more columns**.
+
+2. In the chat box, review the instruction provided. If needed, you can modify the text to better suit your intent. Once you're ready, select **Send** (![Screenshot of the send icon in the chat box.](../media/content-understanding/chat-box-send-icon.png)) to submit your action.
+
+3. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **AI-generated**. This might take a few moments.
+
+   ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/knowledge-agent-suggested-columns-added.png)
+
+4. Review the suggested columns and the associated metadata to make sure they're appropriate for your content.
+
+5. If you want to remove a suggested column, select the column name, and then select **Remove column**.
+
+   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
+
+6. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the instruction. To do so, select the column name, and then select **Edit column**.
+
+   ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
+
+7. On the **Edit column** panel, you can change the column name or modify the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
+
+   ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
+
+# [Create a rule](#tab/create-a-rule)
+
+Follow these steps to use the **Create a rule** action.
+
+1. From the chat panel, select **Create a rule**.
+
+2. In the chat box, review the instruction provided. If needed, you can modify the text to better suit your intent. Once you're ready, select **Send** (![Screenshot of the send icon in the chat box.](../media/content-understanding/chat-box-send-icon.png)) to submit your action.
+
+3. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **AI-generated**. This might take a few moments.
+
+   ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/knowledge-agent-suggested-columns-added.png)
+
+4. Review the suggested columns and the associated metadata to make sure they're appropriate for your content.
+
+5. If you want to remove a suggested column, select the column name, and then select **Remove column**.
+
+   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
+
+6. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the instruction. To do so, select the column name, and then select **Edit column**.
+
+   ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
+
+7. On the **Edit column** panel, you can change the column name or modify the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
+
+   ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
+
+# [Add an action items column](#tab/add-an-action-items-column)
+
+Follow these steps to use the **Add an action items column** action.
+
+1. From the chat panel, select **Add an action items column**.
+
+2. In the chat box, review the instruction provided. If needed, you can modify the text to better suit your intent. Once you're ready, select **Send** (![Screenshot of the send icon in the chat box.](../media/content-understanding/chat-box-send-icon.png)) to submit your action.
+
+3. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **AI-generated**. This might take a few moments.
+
+   ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/knowledge-agent-suggested-columns-added.png)
+
+4. Review the suggested columns and the associated metadata to make sure they're appropriate for your content.
+
+5. If you want to remove a suggested column, select the column name, and then select **Remove column**.
+
+   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
+
+6. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the instruction. To do so, select the column name, and then select **Edit column**.
+
+   ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
+
+7. On the **Edit column** panel, you can change the column name or modify the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
+
+   ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
+
+# [Add a summary column](#tab/add-a-summary-column)
+
+Follow these steps to use the **Add a summary column** action.
+
+1. From the chat panel, select **SAdd a summary column**.
+
+2. In the chat box, review the instruction provided. If needed, you can modify the text to better suit your intent. Once you're ready, select **Send** (![Screenshot of the send icon in the chat box.](../media/content-understanding/chat-box-send-icon.png)) to submit your action.
+
+3. The agent analyzes your library and suggests new columns, which appear highlighted and marked as **AI-generated**. This might take a few moments.
+
+   ![Screenshot of a document library with the suggest columns highlighted.](../media/content-understanding/knowledge-agent-suggested-columns-added.png)
+
+4. Review the suggested columns and the associated metadata to make sure they're appropriate for your content.
+
+5. If you want to remove a suggested column, select the column name, and then select **Remove column**.
+
+   ![Screenshot of a suggested with the Dismiss suggestion option highlighted.](../media/content-understanding/knowledge-agent-remove-column.png)
+
+6. If you want to rename the column or to refine the metadata in a suggested column to get a better result, you can edit the instruction. To do so, select the column name, and then select **Edit column**.
+
+   ![Screenshot of a suggested with the Edit column option highlighted.](../media/content-understanding/knowledge-agent-edit-column.png)
+
+7. On the **Edit column** panel, you can change the column name or modify the instruction that generates the metadata. After you edit the instruction, test it to make sure it gives you the information you want. When you're done making changes for that column, select **Save**.
+
+   ![Screenshot of the Edit column panel for a suggested solumn.](../media/content-understanding/knowledge-agent-edit-column-panel.png)
+
+---
+
+_________________________________________________________________
+
+### Use a suggested action
+
 1. From the chat panel, select an action. For this example, we use **Suggest more columns**.
 
 2. In the chat box, review the instruction provided. If needed, you can modify the text to better suit your intent. Once you're ready, select **Send** (![Screenshot of the send icon in the chat box.](../media/content-understanding/chat-box-send-icon.png)) to submit your action.
