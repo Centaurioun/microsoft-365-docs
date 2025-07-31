@@ -108,14 +108,14 @@ Search for **Conversation interfaces** and choose **Virtual Agent** > **Designer
 8. Add a path to decision node indicating **No Active Records Found**. Update the branch condition to **Get Copilot Summary from Custom Table** **is empty**.
 9. Add a text response in that path.
     1. **Node name:** Session timed out
-    1. **Response message:** The session you have accessed has timed out. Return to Employee Self-Service to start a new session.
+    1. **Response message:** The session you accessed timed out. Return to Employee Self-Service to start a new session.
 10. This path ends here.
 11. Add a path to decision node indicating **Active Records Found**.
 12. Add a text response to the path you created.
     1. **Node name:** Show Chat Summary
-    1. **Response Message:** Here is a summary from your session with Employee Self-Service:
+    1. **Response Message:** A summary from your session with Employee Self-Service:
 13. Next use the **Data Pill Picker** to select **Input Variables** > **Get Copilot Summary from Custom Table** > **Chat Summary**.
-14. Add a look up utility:
+14. Add a lookup utility:
     1. **Node name:** Get associated interaction record
     1. **Table:** Interaction
     1. **Filter this table by using:** Select script and enter the following code:
@@ -148,24 +148,24 @@ Search for **Conversation interfaces** and choose **Virtual Agent** > **Designer
 })() 
 ```
 
-17. Next, **Save** and **Publish**. Refer to the screenshot for an example of the flow.
+17. Next, select the **Save** and **Publish** options. Refer to the screenshot for an example of the flow.
 
 ![Screenshot of the created flow.](media/snow-live-4.png)
 
 ### Step 4: Get the ServiceNow Live Agent URL to the ESS agent
 
-The following is the format for the URL:
+The following example is the format for the URL:
 
 https://base-url/sn_va_web_client_app_embed.do?sysparm_skip_load_history=true&sysparm_topic=topic-id&sysparm_vasource=ESS
 
-base-url: base URL of the ServiceNow PDI
+Base-url: the base URL of the ServiceNow PDI
 
 topic-id: To get the Topic ID, search for "sys_cs_topic.list." Locate the flow that you created. Select the name and copy "sysId."
 
 #### Changes on the ESS agent
 
 1. Install the ServiceNow Live Agent ISV package.
-1. You may not have been asked to put the ServiceNow Live Agent URL. In this case, visit the solutions page to likely see **One environment variable needs to be updated.** Select that message and enter the URL.
+1. If you weren't asked to enter the ServiceNow Live Agent URL, visit the solutions page to see **One environment variable needs to be updated.** Select that message and enter the URL.
 1. Enable topic ServiceNow Live Agent IT Escalate.
 
 ## Validate the integration of ESS and ServiceNow
