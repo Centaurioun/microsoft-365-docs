@@ -1,10 +1,10 @@
 ---
-title: Discover other trained document processing models in SharePoint
+title: Discover other trained document processing models
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/10/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to find trained models that have been applied to other content centers in SharePoint.
 ---
 
-# Discover other trained document processing models in SharePoint
+# Discover other trained document processing models
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 

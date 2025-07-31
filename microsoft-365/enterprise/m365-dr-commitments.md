@@ -1,9 +1,9 @@
 ---
 title: Advanced Data Residency Commitments
 description: Advanced Data Residency Commitments
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: v-nihmi
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
 ms.topic: article
@@ -57,8 +57,8 @@ The following customer data is stored at rest in the _Local Region Geography_:
 
 The following customer data is stored at rest in the _Local Region Geography_:
 
-- MDO P1 doesn't store any customer data within its service.
-- Exchange Online Protection (EOP). The following customer data is stored at rest in the _Local Region Geography_: Service configuration data and policies, quarantined email and attachments, junk email, grading analysis, blocklists (url, tenant, user), spam domains, reports, and alerts
+- Microsoft Defender for Office 365 P1 doesn't store any customer data within its service.
+- Exchange Online Protection. The following customer data is stored at rest in the _Local Region Geography_: Service configuration data and policies, quarantined email and attachments, junk email, grading analysis, blocklists (url, tenant, user), spam domains, reports, and alerts.
 
 ## Office for the Web
 
