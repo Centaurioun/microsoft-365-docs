@@ -29,7 +29,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to add extra SharePoint file storage in your Microsoft 365 subscription."
-ms.date: 03/27/2025
+ms.date: 07/30/2025
 ---
 
 # Add more SharePoint storage to your subscription
