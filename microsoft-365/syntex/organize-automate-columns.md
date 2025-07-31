@@ -42,15 +42,15 @@ To get suggested columns and metabase based on the content in your document libr
 
 1. In the lower-right corner of your document library, select the **AI quick actions** icon.
 
-   ![Screenshot of a document library with the icon highlighted.](../media/content-understanding/autofill-librarian-open-actions-icon.png)
+   ![Screenshot of a document library with the icon highlighted.](../media/content-understanding/knowledge-agent-open-actions-icon.png)
 
 2. From the **AI quick actions** menu, select **Organize and automate this library**.
 
-   ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/autofill-librarian-agents-in-sharepoint-menu.png)
+   ![Screenshot of the Agents in SharePoint menu with the Organize this library option highlighted.](../media/content-understanding/knowledge-agent-in-sharepoint-menu.png)
 
 3. The chat panel opens and displays a list of [suggested actions](#use-a-suggested-action) related to columns.
 
-   ![Screenshot of the chat panel showing the instruction for column actions.](../media/content-understanding/autofill-librarian-agents-chat-panel.png)
+   ![Screenshot of the chat panel showing the instruction for column actions.](../media/content-understanding/knowledge-agent-chat-panel.png)
 
     You can also enter a [custom action](#enter-a-custom-action) in the chat panel.
 
