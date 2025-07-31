@@ -36,7 +36,7 @@ This guide includes:
 
 Our goal is to be transparent, help you avoid surprises, and guide you toward quick wins using supported configurations and best practices.
 
-View the whole list of known issues and limitations to assess if this agent is a fit for your organization.
+Assess if this agent is a fit for your organization by viewing the whole list of known issues and limitations.
 
 ## Full list of known issues and limitations
 
