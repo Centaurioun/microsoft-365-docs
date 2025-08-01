@@ -83,7 +83,7 @@ items:
                         - name: Create a request from PDF
                           href: ../documentprocessing/esignature-send-requests.md
                     - name: Cancel a signature request 
-                      href: ../syntex/esignature-cancel-request.md
+                      href: ../documentprocessing/esignature-cancel-request.md
                     - name: Review and sign a request 
                       href: ../syntex/esignature-review-sign-requests.md
                     - name: Track and manage using Approvals 
