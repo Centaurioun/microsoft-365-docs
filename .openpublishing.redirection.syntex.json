@@ -271,6 +271,11 @@
     "redirect_document_id":true
    },
    {
+    "source_path":"microsoft-365/syntex/content-processing-translate.md",
+    "redirect_url":"/microsoft-365/documentprocessing/content-processing-translate",
+    "redirect_document_id":true
+   },
+   {
     "source_path":"microsoft-365/syntex/content-processing-overview.md",
     "redirect_url":"/microsoft-365/documentprocessing/content-processing-overview",
     "redirect_document_id":true
