@@ -334,8 +334,6 @@ items:
           items:
             - name: Data Location Card
               href: m365-dr-data-location.md
-            - name: Legacy Move Program
-              href: m365-dr-legacy-move-program.md
             - name: Where is my data stored? 
               href: o365-data-locations.md
 
