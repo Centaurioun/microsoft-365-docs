@@ -336,6 +336,11 @@
     "redirect_document_id":true
    },
    {
+    "source_path":"microsoft-365/syntex/esignature-approvals.md",
+    "redirect_url":"/microsoft-365/documentprocessing/esignature-approvals",
+    "redirect_document_id":true
+   },
+   {
     "source_path":"microsoft-365/syntex/esignature-overview.md",
     "redirect_url":"/microsoft-365/documentprocessing/esignature-overview",
     "redirect_document_id":true
@@ -358,6 +363,56 @@
    {
     "source_path":"microsoft-365/syntex/esignature-troubleshoot.md",
     "redirect_url":"/microsoft-365/documentprocessing/esignature-troubleshoot",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/esignature-cancel-request.md",
+    "redirect_url":"/microsoft-365/documentprocessing/esignature-cancel-request",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/esignature-create-request-word.md",
+    "redirect_url":"/microsoft-365/documentprocessing/esignature-create-request-word",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/organize-automate-columns.md",
+    "redirect_url":"/microsoft-365/documentprocessing/organize-automate-columns",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/page-range.md",
+    "redirect_url":"/microsoft-365/documentprocessing/page-range",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/prebuilt-model-sensitive-info-entities.md",
+    "redirect_url":"/microsoft-365/documentprocessing/prebuilt-model-sensitive-info-entities",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/prebuilt-model-simple.md",
+    "redirect_url":"/microsoft-365/documentprocessing/prebuilt-model-simple",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/prebuilt-requirements.md",
+    "redirect_url":"/microsoft-365/documentprocessing/prebuilt-requirements",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/processing-status-ai.md",
+    "redirect_url":"/microsoft-365/documentprocessing/processing-status-ai",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/structured-freeform-requirements.md",
+    "redirect_url":"/microsoft-365/documentprocessing/structured-freeform-requirements",
+    "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/syntex/translation-glossary.md",
+    "redirect_url":"/microsoft-365/documentprocessing/translation-glossary",
     "redirect_document_id":true
    },
    {
