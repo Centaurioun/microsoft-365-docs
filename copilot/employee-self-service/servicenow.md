@@ -32,12 +32,12 @@ The Employee Self-Service agent is built on Copilot and uses AI to provide relev
 
 ESS Agent acts as a front-end for consuming information from ServiceNow Knowledge using the Microsoft 365 Copilot Connector. The capabilities enabled for this integration are:
 
-- Employees can ask questions related to IT/HR workflows
+- Employees can ask questions related to IT/HR workflows.
    - How do I request a new device? 
    - How to create a new VPN connection?
    - How do I apply for leave? 
-- Use Semantic search in ESS Agent to enable employees to find relevant content based on keywords, personal preferences, and social connections
-- Employees can search for knowledge-based articles in ESS Agent after it's indexed and visible to all users or restricted with user criteria permissions
+- Use Semantic search in ESS Agent to enable employees to find relevant content based on keywords, personal preferences, and social connections.
+- Employees can search for knowledge-based articles in ESS Agent after it's indexed and visible to all users or restricted with user criteria permissions.
 
 ## Technical synopsis
 
@@ -214,7 +214,7 @@ To learn about Microsoft Entra Open ID Connect, refer to the [ServiceNow Copilot
 
 ## Microsoft 365 Copilot Connector configuration
 
-This section covers the tasks required for configuring Microsoft 365 Copilot Connector in Microsoft Admin Center (MAC). These tasks requires a Global Administrator role or a Security Administrator role in the Microsoft 365 tenant.
+This section covers the tasks required for configuring Microsoft 365 Copilot Connector in Microsoft Admin Center (MAC). These tasks require a Global Administrator role or a Security Administrator role in the Microsoft 365 tenant.
 
 1. Sign in to the **Microsoft Admin Center**.
 2. Select **Settings** → **Search & intelligence** in the left navigation pane.
