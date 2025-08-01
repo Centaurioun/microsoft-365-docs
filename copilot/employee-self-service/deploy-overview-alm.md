@@ -92,7 +92,7 @@ The ESS Agent has three distinct persona experiences:
 1. Environment maker: Install, configure, and publish the agent, including third-party ISV packages.
 1. User: Consume the ESS Agent within Microsoft Teams or Microsoft 365 Copilot chat. Users' data is harnessed from Microsoft 365 Graph.
 
-These experiences are within the boundary of a single tenant, whereas the environment maker's experience installing and publishing the agent can vary among different environments within Power Platform. It's recommended you establish ALM environments, such as Developer, Test, and Production, for publishing and testing the ESS Agent. Each of the third-party ISV applications can also be connected to the respective environments if each application has their own ALM instances (such as Developer, Test, and Production).
+These experiences are within the boundary of a single tenant, whereas the environment maker's experience installing and publishing the agent can vary among different environments within Power Platform. We recommend you establish ALM environments, such as Developer, Test, and Production, for publishing and testing the ESS Agent. Each of the third-party ISV applications can also be connected to the respective environments if each application has their own ALM instances (such as Developer, Test, and Production).
 We recommend you have end users using a live production tenant to make use of recent and meaningful user-object interactions in Microsoft Graph.
 
 ## Quality Assurance Strategy (QA)
