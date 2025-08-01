@@ -173,11 +173,11 @@ Considerations to help you define voice and tone:
 
 Voice & tone prompt examples:
 
--	Be clear and concise – Use simple, direct language that is easy to understand. Avoid jargon, technical terms, or unnecessary complexity.
--	Sound natural and human – Speak in a conversational, approachable tone. Use contractions where appropriate and avoid robotic or overly formal phrasing.
--	Prioritize the user's needs – Focus on delivering useful, relevant, and actionable information. Structure content logically and remove anything that doesn't add value.
--	Be warm but not overly casual – Strike a balance between friendly and professional. Avoid slang, humor that may not translate well, or excessive enthusiasm.
--	Be inclusive and respectful – Use language that is welcoming to all users, avoiding assumptions about identity, ability, or background.
+-	**Be clear and concise**: Use simple, direct language that is easy to understand. Avoid jargon, technical terms, or unnecessary complexity.
+-	**Sound natural and human**: Speak in a conversational, approachable tone. Use contractions where appropriate and avoid robotic or overly formal phrasing.
+-	**Prioritize the user's needs**: Focus on delivering useful, relevant, and actionable information. Structure content logically and remove anything that doesn't add value.
+-	**Be warm but not overly casual**: Strike a balance between friendly and professional. Avoid slang, humor that may not translate well, or excessive enthusiasm.
+-	**Be inclusive and respectful**: Use language that is welcoming to all users, avoiding assumptions about identity, ability, or background.
 
 ## Write instructions that influence response structure and quality
 
@@ -309,7 +309,7 @@ Examples:
 
 #### In-context learning (ICL)
 
-In-context learning (ICL), also known as few-shot learning, refers to an LLM's (Large Language Model) ability to learn from a few examples or scenarios provided within the prompt. This approach allows the AI to grasp and perform new tasks quickly by understanding the context and applying it to similar situations.
+In-context learning (ICL), also known as few-shot learning, refers to an LLM's ability to learn from a few examples or scenarios provided within the prompt. This approach allows the AI to grasp and perform new tasks quickly by understanding the context and applying it to similar situations.
 
 When to use this method:
 -	Establish tone: Always respond with a friendly, confident tone. Example: Sure thing! I've got you covered.
