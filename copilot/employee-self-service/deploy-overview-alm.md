@@ -56,7 +56,7 @@ There are four stages in deploying the ESS agent.
 
 Application lifecycle management (ALM) includes governance, development, and maintenance. The key areas of ALM are as follows:
 
-**Governance** includes managing requirements, managing resources, nurturing and system administration such as data security, user access, change tracking, reviewing, auditing, deployment control, and rollback.
+**Governance** includes managing requirements, managing resources, and nurturing, as well as system administration, such as data security, user access, change tracking, reviewing, auditing, deployment control, and roll back.
 
 **Application development** includes identifying current issues, planning, design, building and testing the application, and making continuous improvements. This area includes traditional developer and app maker roles.
 
@@ -100,13 +100,13 @@ We recommend you have end users using a live production tenant to make use of re
 Deploying Copilot agents is a transformative initiative, but without rigorous testing, even the most promising agent can fall short of expectations. Here's why testing is essential:
 
 - Ensures accuracy, relevance, and trust:
-  - *simulate real-world scenarios, including edge cases, to uncover blind spots early*.
+  - *simulate real-world scenarios, including edge cases, to uncover unguarded areas early*.
 - Supports security, compliance, and governance:
   - *Involve compliance, security, governance, and corporate communications teams early in the testing phase*.
 - Refines user experience and tone:
   - *Using Copilot Studio's instruction field to define tone, language, and behavior explicitly*.
 - Enables performance benchmarking and continuous improvement:
-  - *Define success metrics (e.g., resolution rate, user satisfaction) and track them from pilot to production*.
+  - *Define success metrics (for example, resolution rate, user satisfaction) and track them from pilot to production*.
 - Validates technical integration and readiness:
   - *A phased rollout – starting in dev/test environments before scaling to production*.
 - Aligns with Microsoft's deployment framework:
@@ -118,14 +118,14 @@ Deploying Copilot agents is a transformative initiative, but without rigorous te
 
 ### Golden prompt testing framework
 
-This framework is one of the most common testing frameworks for quality testing the agent serving as the final gate before production deployment. This information is shared here **only** for guidance and align with the standard QA process established for your enterprise.
+This framework is one of the most common testing frameworks for quality testing the agent serving as the final gate before production deployment. This information is shared here **only** for guidance and aligns with the standard QA process established for your enterprise.
 
 **What are golden prompts?**
 
 Golden prompts are a curated set of test scenarios that: 
 
 - Represent critical user workflows and edge cases
-- Have known, expected responses (golden responses)
+- Posess known, expected responses (golden responses)
 - Cover core functionality that must never break
 - Serve as regression detection mechanisms
 
@@ -133,7 +133,7 @@ The following **Process flow** can help you understand testing and golden prompt
 
 1. Scenarios
 1. Golden prompt testing
-1. Go or No go
+1. Go or abort
 1. Production release
 1. Feedback
 1. Repeat
@@ -147,16 +147,16 @@ The following **Process flow** can help you understand testing and golden prompt
 |Activities        |- Maintain comprehensive library of golden prompts </br>- Regularly review and update prompts based on: </br>--New feature additions </br>--Historical failure patterns </br>--Customer feedback </br>--Usage analytics |
 |Prompt categories |- **Core functionality:** Basic system operations </br>- **Integration points:** API calls, database operations </br>- **Edge cases:** Boundary conditions, error scenarios </br>- **Performance:** Response time and resource usage </br>- **Security:** Authentication, authorization, data validation |
 
-#### Pre-release testing protocol
+#### Prerelease testing protocol
 
 |Trigger          |Quality gate for production deployment |
 |-----------------|---------------------------------------|
 |Process          |1. **Testing strategy** Begin by testing the updated package in the Copilot Studio test window as an initial validation step. Additionally, consider using a ring deployment strategy to progressively test the package across lower environments before promoting it to production. </br>2. **Automated execution** Run all golden prompts against the modified package. </br>3. **Response verification** Compare actual responses with expected golden responses. </br>4. **Tolerance checking** Apply acceptable variance thresholds where applicable. </br>**Failure analysis** Investigate any mismatches or failures. |
-|Success criteria |- All golden prompts must pass </br>- Response times within acceptable ranges </br>- No security vulnerabilites introduced </br>- Memory/resource usage within limits |
+|Success criteria |- All golden prompts must pass </br>- Response times within acceptable ranges </br>- No security vulnerabilities introduced </br>- Memory/resource usage within limits |
 
-#### Go/ No go decision framework
+#### Go/Abort decision framework
 
 |Decision authority |Release management qualifying QA team approval |
 |-------------------|-----------------------------------------------|
 |Go criteria        |- 100% golden prompt pass rate </br>- All critical functionality verified </br>- Performance benchmarks met </br>- Security checks passed |
-|No go triggers     |- Any golden prompt failure </br>- Performance degradation beyond threshold </br>- Security vulnerability detected </br>- Resource usage exceeds limits |
+|Abort triggers     |- Any golden prompt failure </br>- Performance degradation beyond threshold </br>- Security vulnerability detected </br>- Resource usage exceeds limits |
