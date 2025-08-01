@@ -184,7 +184,7 @@ Voice & tone prompt examples:
 Writing clear instructions that shape the agent's response format is essential for ensuring readability and comprehension, especially in the workplace where users need quick, actionable answers. 
 
 1. Be explicit about the output format
-If you don't explicitly instruct the agent, it defaults to general-purpose formatting which might not be as engaging or understandable. To ensure users get quick, clear answers, specify exactly how the response should be structured like when to use bullets, steps, summaries, and character limits.
+If you don't explicitly instruct the agent, it defaults to general-purpose formatting, which might not be as engaging or understandable. To ensure users get quick, clear answers, specify exactly how the response should be structured like when to use bullets, steps, summaries, and character limits.
 
 Examples:
 
