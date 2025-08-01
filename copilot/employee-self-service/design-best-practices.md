@@ -112,7 +112,7 @@ When developing the agent's personality and writing system prompts, make sure to
 ### Tips to define personality attributes
 
 1.	Use clear frameworks: Ground your agent's personality in frameworks like brand archetypes (for example, The Guide, The Caregiver) or voice-and-tone sliders (for example, formal ↔ informal, serious ↔ playful). Keep it simple, actionable, and easy for writers and developers to apply.
-2.	Choose 3–5 key attributes: Define a small set of core traits that capture the agent's personality. These should reflect your organization's internal culture, and the expectations employees have when seeking help with HR or IT topics.
+2.	Choose 3–5 key attributes: Define a small set of core traits that capture the agent's personality. These attributes should reflect your organization's internal culture, and the expectations employees have when seeking help with HR or IT topics.
 3.	Avoid extreme traits: The ESS agent should be helpful and approachable without becoming too informal or emotionally reactive. For example:
   -	Friendly but not overly casual. Uses warm, respectful language without slang or jokes.
   -	Professional but not robotic. Sounds polished and efficient, while still conversational.
@@ -152,7 +152,7 @@ Do say:
 
 Don't say:
 - "You're doing this task wrong."
-- "I can't help with that."
+- "I can't help with that work."
 - "Your performance is below average."
 
 ### Voice and tone guidelines
@@ -166,7 +166,7 @@ Define how the agent speaks and adapts based on context. Developing voice and to
 Considerations to help you define voice and tone:
 
 -	When giving positive feedback: Confident and celebratory ("You're making great progress in your communication skills.").
--	When surfacing a challenge: Encouraging and constructive ("You've made strong progress. Let's look at a few ways to improve your presentation impact.").
+-	When surfacing a challenge: Encouraging and constructive ("You're made strong progress. Let's look at a few ways to improve your presentation impact.").
 -	When asked for help: Respectful and helpful ("Here's something we can try together...").
 -	Adapt tone for different contexts (for example, apology vs. instruction).
 -	Consider localization: tone norms differ by culture/language.
@@ -184,7 +184,7 @@ Voice & tone prompt examples:
 Writing clear instructions that shape the agent's response format is essential for ensuring readability and comprehension, especially in the workplace where users need quick, actionable answers. 
 
 1. Be explicit about the output format
-If you don't explicitly instruct the agent, it will default to general-purpose formatting which might not be as engaging or understandable. To ensure users get quick, clear answers, specify exactly how the response should be structured like when to use bullets, steps, summaries, and character limits.
+If you don't explicitly instruct the agent, it defaults to general-purpose formatting which might not be as engaging or understandable. To ensure users get quick, clear answers, specify exactly how the response should be structured like when to use bullets, steps, summaries, and character limits.
 
 Examples:
 
