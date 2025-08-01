@@ -125,7 +125,7 @@ This framework is one of the most common testing frameworks for quality testing 
 Golden prompts are a curated set of test scenarios that: 
 
 - Represent critical user workflows and edge cases
-- Posess known, expected responses (golden responses)
+- Possess known, expected responses (golden responses)
 - Cover core functionality that must never break
 - Serve as regression detection mechanisms
 
