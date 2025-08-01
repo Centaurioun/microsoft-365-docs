@@ -23,13 +23,13 @@ appliesto:
 >[!NOTE]
 >The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
-The Employee Self-Service (ESS) agent is a template in Microsoft Copilot Studio that can be infinitely customized to assist users in your organization with HR and IT tasks. Use guidance here to learn more about how to craft high-quality responses using a mix of techniques to fit your business needs. Learn more about agents in Copilot Studio.
+The Employee Self-Service (ESS) agent is a template in Microsoft Copilot Studio that can be infinitely customized to assist users in your organization with HR and IT tasks. Use guidance here to learn more about how to craft high-quality responses using a mix of techniques to fit your business needs.
 
 In this article:
--	Learn more about the elements of a good response and how responses are formed
--	Get help thinking more about crafting the agent's personality and voice
--	Explore prompt engineering considerations and techniques
--	See how you can test your agent to establish benchmarks for certain scenarios
+-	Learn more about the elements of a good response and how responses are formed.
+-	Get help thinking more about crafting the agent's personality and voice.
+-	Explore prompt engineering considerations and techniques.
+-	See how you can test your agent to establish benchmarks for certain scenarios.
 
 ## About response quality
 
@@ -47,9 +47,9 @@ Responses are a combination of **instructions, knowledge, and UI elements** buil
 
 Response quality relies on a handful of factors like the design elements provided by the platform, and conversational design decisions made by the maker:
 
--	Responses need instructions for the entire agent, for certain workflows, and for verbatim responses to ensure the right formatting, voice, and decision-making is prioritized
--	Responses need certain UI elements like disclaimers, references, and Adaptive Cards that help the user build trust and complete tasks
--	Responses need knowledge and data to return accurate and personalized responses that are complete, actionable, and generally useful based on the original intent
+-	Responses need instructions for the entire agent, for certain workflows, and for verbatim responses to ensure the right formatting, voice, and decision-making is prioritized.
+-	Responses need certain UI elements like disclaimers, references, and Adaptive Cards that help the user build trust and complete tasks.
+-	Responses need knowledge and data to return accurate and personalized responses that are complete, actionable, and useful based on the original intent.
 
 ## About writing instructions for your ESS agent
 
@@ -58,19 +58,19 @@ Instructions inform the agent's behavior, drive response quality, and can impact
 
 There are different kinds of instructions that work together to form responses:
 
-1. **Agent instructions (global)**: These instructions drive the behavior across conversations and shape the agent's personality. Agent instructions can be added on the Overview tab.
+1. **Agent instructions (global)**: These instructions drive the behavior across conversations and shape the agent's personality. Agent instructions can be added on the **Overview** tab.
 
-2. **Knowledge source instructions**: Clarify how each source should be used. Custom instructions for knowledge sources are important because they help the agent understand how to interpret and apply the information accurately when generating answers, so responses are relevant, trustworthy, and aligned with the user's intent. Learn more about knowledge sources.
+2. **Knowledge source instructions**: Clarify how each source should be used. Custom instructions for knowledge sources are important because they help the agent understand how to interpret and apply the information accurately when generating answers. Custom instructions make responses relevant, trustworthy, and aligned with the user's intent.
 
 3. **Topic trigger phrases and instructions**: Fine-tune how the agent detects user intent and delivers task-focused responses.
 
-A topic contains one or more conversation nodes that define more structured conversational paths. Each node performs an action, such as sending a message or asking a question. A topic is triggered using a specified set of trigger phrases, keywords, and questions that a user is likely to use for specific intents and can be customized using tools, actions, and variables. Learn more about topics.
+A topic contains one or more conversation nodes that define more structured conversational paths. Each node performs an action, such as sending a message or asking a question. A topic is triggered using a specified set of trigger phrases, keywords, and questions that a user is likely to use for specific intents. A topic can be customized using tools, actions, and variables.
 
 4. **Channel description**: Give instruction on intent recognition between domains and similar scenarios. Channel instruction ensures accurate intent routing, consistent user experience across domain agents, and drive actionable responses for a multi-domain deployment.
 
 ### How to write effective channel instructions:
 
-1. **Be explicit about agent roles, scope, and handoffs**: Clearly define the domain of each subagent and when to delegate a query. This improves routing accuracy and prevents redundant or ambiguous responses.
+1. **Be explicit about agent roles, scope, and handoffs**: Clearly define the domain of each subagent and when to delegate a query. This definition improves routing accuracy and prevents redundant or ambiguous responses.
 2. **Provide guidance for ambiguous cross-domain queries**: Provide examples on where intents may be ambiguous, how they can be navigated, and the fallback plan to move the task forward.
 3. **Emphasize how to behave when uncertain**: Instruct the agent to ask clarifying questions when intent is unclear or could span domains.
 
@@ -97,7 +97,7 @@ Start by thinking through:
 
 An agent's role and identity shape every interaction it has with users. When well-defined, the agent feels purposeful, trustworthy, and aligned with your product or service. When vague or inconsistent, it can create confusion, damage credibility, and lead to misaligned responses. Users need to understand who they're talking to, why that agent exists, and what they can expect from the conversation.
 
-This is especially critical in enterprise and productivity settings, where users rely on agents to act with clarity, accuracy, and consistency. A strong sense of role and identity reduces ambiguity for both the user and the underlying model.
+This context is especially critical in enterprise and productivity settings, where users rely on agents to act with clarity, accuracy, and consistency. A strong sense of role and identity reduces ambiguity for both the user and the underlying model.
 
 ### Persona definition and context
 
@@ -118,7 +118,7 @@ When developing the agent's personality and writing system prompts, make sure to
   -	Professional but not robotic. Sounds polished and efficient, while still conversational.
   -	Empathetic but not overbearing. Acknowledges frustrations without getting too personal.
   -	Confident but not arrogant. Provides answers clearly, with humility and precision
-4.	Document with examples: Pair each personality trait with example phrases or microcopy that show how it should come across in real responses. This helps maintain consistency across writers, prompts, and updates.
+4.	Document with examples: Pair each personality trait with example phrases or microcopy that show how it should come across in real responses. This work helps maintain consistency across writers, prompts, and updates.
 5.	Adapt for context: Maintain a consistent core personality but allow tone to flex slightly based on task type. For instance, IT troubleshooting may call for a more direct tone, while HR topics may require a bit more empathy and care.
 
 When you're designing an AI agent for internal workplace support across domains like HR, IT, facilities, finance, and more, you want personality traits that are universally professional, adaptable to different task types, and supportive without being too casual.
@@ -139,7 +139,7 @@ The following statements can help you define the persona:
 -	**Helpful and trustworthy**: The agent is designed to be a reliable first stop for employees seeking answers about HR, tech support, and more. It draws only from authoritative, org-managed sources, ensuring responses are grounded in official org guidance.
 -	**Friendly and efficient**: It aims to simplify the employee experience with quick, personalized responses - whether you're asking about your cost center, setting up a device, or finding a café near the office. It's like a knowledgeable workplace specialist who's always available to help you navigate life at work.
 -	**First-line support for employee needs**: The agent serves as a go-to resource for employees seeking quick, reliable answers about HR policies, Helpdesk tech support, and campus services. It's designed to reduce friction in accessing internal information and services.
--	**Streamlined access to authoritative information**: Unlike general-purpose Copilot tools, this agent only draws from official, org-managed sources from the organization's knowledge base. This ensures that responses are grounded in accurate, policy-aligned content.
+-	**Streamlined access to authoritative information**: Unlike general-purpose Copilot tools, this agent only draws from official, org-managed sources from the organization's knowledge base. This scope ensures that responses are grounded in accurate, policy-aligned content.
 -	**Personalized and location-aware assistance**: This agent tailors responses based on the employee's company code and location, helping users navigate region-specific services like dining options in specific regions or badge replacement procedures.
 -	**Task facilitation and escalation**: The agent can initiate actions like opening an AskHR case, listing existing HR or IT Helpdesk tickets, or transferring users to live support when needed by bridging the gap between self-service and human assistance.
 
@@ -151,7 +151,7 @@ Do say:
 - "Would you like to explore ways to grow in this area?"
 
 Don't say:
-- "You're doing this wrong."
+- "You're doing this task wrong."
 - "I can't help with that."
 - "Your performance is below average."
 
@@ -213,7 +213,7 @@ Don't:
 - Write long paragraphs
 - Add unnecessary explanation
 
-Use the following example when users ask for HR policies, summarize key points in a list like this:
+Use the following example when users ask for HR policies, summarize key points in a list, like this example:
 
 -	Topic
 -	What you need to know
@@ -338,8 +338,7 @@ Different elements like formatting, personalized responses, authoritative source
 
 ### How to approach establishing benchmarks 
 
-Testing response quality and setting clear benchmarks helps teams identify what's working well and where improvements are needed. Over time, this leads to more accurate, helpful, and personalized conversations that build trust and deliver better results for users.
-Each response can be scored from 1 (poor) to 5 (exceptional) across each category. Total score per response = 5 (poor) to 25 (exceptional).
+Testing response quality and setting clear benchmarks helps teams identify what's working well and where improvements are needed. Over time, this testing leads to more accurate, helpful, and personalized conversations that build trust and deliver better results for users. Each response can be scored from 1 (poor) to 5 (exceptional) across each category. Total score per response = 5 (poor) to 25 (exceptional).
 
 Use benchmark scores to understand how well the agent is meeting user expectations. A score of around 15 means the response is good because it's functional, accurate, and meets the basic need. A higher score, like 20 or above, means the response is great or exceptional, offering more value, personalization, and ease of use.
 
