@@ -412,7 +412,7 @@ You can incorporate knowledge sources into agents during initial creation, after
 
 #### SharePoint knowledge filtering
 
-At times you need to filter knowledge content from SharePoint personalized to the employee. This filtering is based on some of their profile attributes such as "country/location", "project code", "department", and more.
+At times you need to filter knowledge content from SharePoint personalized to the employee. This filtering is based on some of their profile attributes such as "country/region", "project code", "department", and more.
 
 The ESS Agent using SharePoint knowledge source relies on search index and metadata to identify the profile attributes applied while performing the search query. So, to apply the knowledge filters a Keyword Query Language (KQL) should be updated in the configuration.
 
