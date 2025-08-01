@@ -68,7 +68,7 @@ items:
                     - name: Translate documents 
                       href: ../syntex/translation.md
                     - name: Use a glossary 
-                      href: ../syntex/translation-glossary.md
+                      href: ../documentprocessing/translation-glossary.md
 
                 - name: eSignature 
                   items: 
@@ -79,15 +79,15 @@ items:
                     - name: Create a signature request
                       items:
                         - name: Create a request from Word
-                          href: ../syntex/esignature-create-request-word.md
+                          href: ../documentprocessing/esignature-create-request-word.md
                         - name: Create a request from PDF
-                          href: ../syntex/esignature-send-requests.md
+                          href: ../documentprocessing/esignature-send-requests.md
                     - name: Cancel a signature request 
                       href: ../syntex/esignature-cancel-request.md
                     - name: Review and sign a request 
                       href: ../syntex/esignature-review-sign-requests.md
                     - name: Track and manage using Approvals 
-                      href: ../syntex/esignature-approvals.md
+                      href: ../documentprocessing/esignature-approvals.md
                     - name: Troubleshoot a request 
                       href: ../syntex/esignature-troubleshoot.md
 
@@ -147,7 +147,7 @@ items:
                     - name: Admin setup
                       href: ../syntex/prebuilt-setup.md
                     - name: Requirements and limitations 
-                      href: ../syntex/prebuilt-requirements.md
+                      href: ../documentprocessing/prebuilt-requirements.md
                     - name: Set up a content center 
                       href: ../syntex/create-a-content-center.md
                     - name: Create an enterprise model
@@ -163,7 +163,7 @@ items:
                     - name: Sensitive information 
                       href: ../syntex/prebuilt-model-sensitive-info.md
                     - name: Simple documents 
-                      href: ../syntex/prebuilt-model-simple.md
+                      href: ../documentprocessing/prebuilt-model-simple.md
                     - name: Manage your model
                       items:
                         - name: Apply a model
@@ -187,7 +187,7 @@ items:
                         - name: View processing status 
                           href: ../syntex/processing-status.md
                         - name: Set a page range
-                          href: ../syntex/page-range.md
+                          href: ../documentprocessing/page-range.md
                         - name: Analyze model usage
                           href: ../syntex/model-usage-analytics.md
 
@@ -205,7 +205,7 @@ items:
                     - name: Admin setup
                       href: ../syntex/structured-freeform-setup.md
                     - name: Requirements and limitations 
-                      href: ../syntex/structured-freeform-requirements.md
+                      href: ../documentprocessing/structured-freeform-requirements.md
                     - name: Set up a content center 
                       href: ../syntex/create-a-content-center.md
                     - name: Create an enterprise model
@@ -237,7 +237,7 @@ items:
                         - name: View processing status 
                           href: ../syntex/processing-status.md
                         - name: Set a page range
-                          href: ../syntex/page-range.md
+                          href: ../documentprocessing/page-range.md
                         - name: Analyze model usage
                           href: ../syntex/model-usage-analytics.md
 
