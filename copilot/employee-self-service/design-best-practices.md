@@ -66,7 +66,7 @@ There are different kinds of instructions that work together to form responses:
 
 A topic contains one or more conversation nodes that define more structured conversational paths. Each node performs an action, such as sending a message or asking a question. A topic is triggered using a specified set of trigger phrases, keywords, and questions that a user is likely to use for specific intents. A topic can be customized using tools, actions, and variables.
 
-4. **Channel description**: Give instruction on intent recognition between domains and similar scenarios. Channel instruction ensures accurate intent routing, consistent user experience across domain agents, and drive actionable responses for a multi-domain deployment.
+4. **Channel description**: Give instruction on intent recognition between domains and similar scenarios. Channel instruction ensures accurate intent routing, consistent user experience across domain agents, and drives actionable responses for a multi-domain deployment.
 
 ### How to write effective channel instructions:
 
@@ -183,7 +183,8 @@ Voice & tone prompt examples:
 
 Writing clear instructions that shape the agent's response format is essential for ensuring readability and comprehension, especially in the workplace where users need quick, actionable answers. 
 
-1. Be explicit about the output format
+1. Be explicit about the output format.
+
 If you don't explicitly instruct the agent, it defaults to general-purpose formatting, which might not be as engaging or understandable. To ensure users get quick, clear answers, specify exactly how the response should be structured like when to use bullets, steps, summaries, and character limits.
 
 Examples:
@@ -197,7 +198,8 @@ Examples:
 -	Reinforce key takeaways, not just raw information by structuring information in a way that people can easily grasp and retain the most relevant insights.
 -	Always use clear source attribution when possible like when summarizing a claim or statistic, briefly reference the source like "According to the company's Q1 report..."
 
-2. Provide examples of what to do and what to avoid
+2. Provide examples of what to do and what to avoid.
+
 Guide the agent by pairing clear instructions with positive examples (what to do) and negative examples (what to avoid).
 
 Examples:
@@ -219,15 +221,17 @@ Use the following example when users ask for HR policies, summarize key points i
 -	What you need to know
 -	Who to contact for help
 
-3. Define boundaries and fallback plans
+3. Define boundaries and fallback plans.
+
 When crafting system prompts, you're guiding how the agent behaves in different contexts and not just what it says. Clear instructions help the agent respond responsibly, stay within scope, and build user trust. Use this guidance to shape behavior across key areas like:
--	Handling unsupported requests gracefully, with deflection or escalation
--	Following compliance rules (for example, no legal or medical advice)
--	Managing sensitive topics and preventing risky actions
--	Using conversation context wisely—summarizing, clarifying, or continuing
--	Escalating or falling back when unsure or out of scope
--	Being transparent about sources, uncertainty, or AI-generated content
--	Adapting responses based on user role, urgency, or metadata
+
+-	Handling unsupported requests gracefully, with deflection or escalation.
+-	Following compliance rules (for example, no legal or medical advice).
+-	Managing sensitive topics and preventing risky actions.
+-	Using conversation context wisely—summarizing, clarifying, or continuing.
+-	Escalating or falling back when unsure or out of scope.
+-	Being transparent about sources, uncertainty, or AI-generated content.
+-	Adapting responses based on user role, urgency, or metadata.
 
 Examples:
 
@@ -235,36 +239,40 @@ Examples:
 -	Don't speculate or make up responses when unsure. Say you don't know and suggest a next step or escalation path.
 -	For sensitive topics (for example, complaints, personal conflict), don't offer advice. Recommend contacting HR or another trusted internal support.
 
-4.Include instructions on handling unsupported requests
+4. Include instructions on handling unsupported requests.
+
 Instruct the agent to help the user understand what can be answered using this agent. Guide the agent to respond helpfully when it can't fulfill a request, by explaining its limitations and pointing users to the right next step.
 
 Examples:
 
 -	If you receive a request outside your scope, respond clearly and courteously.
 -	If a request falls outside of supported HR or IT tasks, say something like:
-'I'm here to help with common HR and IT questions. For this type of request, reach out to [support contact or system].'
+  'I'm here to help with common HR and IT questions. For this type of request, reach out to [support contact or system].'
 -	When you can't complete a task, guide the user toward a resource, article, or help form. Always prioritize official knowledge sources first.
 
-5. Consider ethical and company compliance rules
+5. Consider ethical and company compliance rules.
+
 Think through areas that may be sensitive and shouldn't be answered by the agent. Write prompts that prevent the agent from offering advice in sensitive or regulated areas, and make sure it respects company and legal policies.
 
 Examples:
 
 -	Don't offer medical, legal, or financial advice. Clearly state that the user should consult a qualified professional.
--	Apply company-specific compliance rules (for example, data handling, privacy).  
+-	Apply company-specific compliance rules (for example, data handling, privacy).
 -	Avoid generating or suggesting actions that could violate company policies or regulatory standards.
--	You must not generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content. You must not generate content that is hateful, racist, sexist, lewd, or violent. Never generate any content that openly discriminates against groups of people of a protected identity (race, gender, sex, age, and so on) Never generate any original graphic, sexual or violent content, even if the document has such themes. 
+-	Don't generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content. You must not generate content that is hateful, racist, sexist, lewd, or violent. Never generate any content that openly discriminates against groups of people of a protected identity (race, gender, sex, age, and so on) Never generate any original graphic, sexual or violent content, even if the document has such themes.
 
-6.Plan to write instructions for sensitive topics and risky actions
+6. Plan to write instructions for sensitive topics and risky actions.
+
 For topics that could be emotionally charged or could cause harm to the user or the organization, prompt the agent to de-escalate, avoid speculation, and redirect users to trusted human support.
 
 Examples:
 
-•-	Avoid giving guidance on sensitive topics like harassment, mental health, or discrimination. Recommend speaking with HR or using a dedicated support channel.
+- Avoid giving guidance on sensitive topics like harassment, mental health, or discrimination. Recommend speaking with HR or using a dedicated support channel.
 -	If a topic appears sensitive (for example, mental health, harassment), avoid offering guidance. Recommend talking to HR or another appropriate support channel."
--	For irreversible or risky actions (for example, editing data) include confirmation behaviors.  
+-	For irreversible or risky actions (for example, editing data) include confirmation behaviors.
 
-7. Get more specific about context handling
+7. Get more specific about context handling.
+
 Instructions for context handling help the agent maintain coherent, relevant conversations by guiding when to reference past interactions, ask clarifying questions, or reset the dialogue.
 
 Examples:
@@ -273,7 +281,8 @@ Examples:
 -	If a message is ambiguous or could have multiple meanings, ask a clarifying question before acting.
 -	Remember relevant context across exchanges unless explicitly instructed to reset or start over.
 
-8. Emphasize how the agent should respond with transparency
+8. Emphasize how the agent should respond with transparency.
+
 Encourage the agent to admit uncertainty, cite sources when possible, and never guess, so users know when to trust or verify an answer.
 
 Examples:
@@ -286,8 +295,9 @@ Examples:
 -	Balanced and neutral framing – Maintain objectivity. Avoid biased phrasing that could lead to misinterpretation or influence opinions.
 -	Safety and sensitivity – Avoid sensationalism. Don't exaggerate, use alarmist language, or include unverified claims.
 
-9. Specify how responses should adapt depending on user information
-Instruct the agent to adjust tone, length, and detail based on user role, urgency, or context to make responses more relevant and effective.
+9. Specify how responses should adapt depending on user information.
+
+Instruct the agent to adjust tone, length, and detail, based on user role, urgency, or context to make responses more relevant and effective.
 
 Examples:
 
@@ -299,7 +309,7 @@ Examples:
 
 #### In-context learning (ICL)
 
-In-context learning (ICL), also known as few-shot learning, refers to a LLM's ability to learn from a few examples or scenarios provided within the prompt. 
+In-context learning (ICL), also known as few-shot learning, refers to an LLM's ability to learn from a few examples or scenarios provided within the prompt. 
 This approach allows the AI to grasp and perform new tasks quickly by understanding the context and applying it to similar situations.
 
 When to use this method:
@@ -330,7 +340,7 @@ Response quality principles:
 - **Complete**: Nothing important is missing. The response includes all the key information the user needs, so they don't have to ask again or look elsewhere.
 - **Relevant**: It fits the user's intent. The response is relevant to the question and considers the user's role, region, or past activity.
 - **Useful**: It helps the user act by moving the user forward.
-- **Exceptional**: It goes above and beyond. The response is more helpful than websites or chat tools.
+- **Exceptional**: It's exceptional. The response is more helpful than websites or chat tools.
 
 ### How UI elements, knowledge, data, and topics reinforce response quality
 
@@ -340,7 +350,7 @@ Different elements like formatting, personalized responses, authoritative source
 
 Testing response quality and setting clear benchmarks helps teams identify what's working well and where improvements are needed. Over time, this testing leads to more accurate, helpful, and personalized conversations that build trust and deliver better results for users. Each response can be scored from 1 (poor) to 5 (exceptional) across each category. Total score per response = 5 (poor) to 25 (exceptional).
 
-Use benchmark scores to understand how well the agent is meeting user expectations. A score of around 15 means the response is good because it's functional, accurate, and meets the basic need. A higher score, like 20 or above, means the response is great or exceptional, offering more value, personalization, and ease of use.
+Use benchmark scores to understand how well the agent is meeting user expectations. A score of around 15 means the response is good because it's functional, accurate, and meets the basic need. A higher score, like over 20, means the response is great or exceptional, offering more value, personalization, and ease of use.
 
 ### Tips for benchmark testing
 
