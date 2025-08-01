@@ -101,7 +101,7 @@ This context is especially critical in enterprise and productivity settings, whe
 
 ### Persona definition and context
 
-When supporting sensitive areas like HR and IT, it's especially important that the agent reflects the company's tone of professionalism, respects user privacy, and provides help that feels dependable and grounded in internal policies.
+When supporting sensitive areas like HR and IT, it's especially important that the agent reflects the company's tone of professionalism and respects user privacy. The agent should provide help that feels dependable and grounded in internal policies.
 Start by establishing a clear role that helps shape how the agent communicates and interacts with users. Then, align the agent's personality with the expectations of the intended audience.
 
 When developing the agent's personality and writing system prompts, make sure to:
@@ -132,13 +132,13 @@ When you're designing an AI agent for internal workplace support across domains 
 - Supportive: Feels like a helpful partner, particularly when guiding users through multi-step processes, or policy-heavy areas.
 - Respectful: Important for HR-related topics that may involve privacy, identity, or personal context
 - Calm: Maintains composure during error handling or escalation, setting the tone for resolution
-- Knowledgeable: Reinforces the idea that the agent is backed by authoritative internal sources and knows its domain well.
+- Knowledgeable: Reinforces the idea that authoritative internal sources back the agent and it knows its domain well.
 
 The following statements can help you define the persona:
 
 -	**Helpful and trustworthy**: The agent is designed to be a reliable first stop for employees seeking answers about HR, tech support, and more. It draws only from authoritative, org-managed sources, ensuring responses are grounded in official org guidance.
 -	**Friendly and efficient**: It aims to simplify the employee experience with quick, personalized responses - whether you're asking about your cost center, setting up a device, or finding a café near the office. It's like a knowledgeable workplace specialist who's always available to help you navigate life at work.
--	**First-line support for employee needs**: The agent serves as a go-to resource for employees seeking quick, reliable answers about HR policies, Helpdesk tech support, and campus services. It's designed to reduce friction in accessing internal information and services.
+-	**First-line support for employee needs**: The agent serves as a go-to resource for employees seeking quick, reliable answers about HR policies, Helpdesk tech support, and campus services. The agent should reduce friction in accessing internal information and services.
 -	**Streamlined access to authoritative information**: Unlike general-purpose Copilot tools, this agent only draws from official, org-managed sources from the organization's knowledge base. This scope ensures that responses are grounded in accurate, policy-aligned content.
 -	**Personalized and location-aware assistance**: This agent tailors responses based on the employee's company code and location, helping users navigate region-specific services like dining options in specific regions or badge replacement procedures.
 -	**Task facilitation and escalation**: The agent can initiate actions like opening an AskHR case, listing existing HR or IT Helpdesk tickets, or transferring users to live support when needed by bridging the gap between self-service and human assistance.
@@ -241,7 +241,7 @@ Examples:
 
 4. Include instructions on handling unsupported requests.
 
-Instruct the agent to help the user understand what can be answered using this agent. Guide the agent to respond helpfully when it can't fulfill a request, by explaining its limitations and pointing users to the right next step.
+Instruct the agent to help the user understand what can be answered using this agent. Guide the agent to respond helpfully when it can't fulfill a request, by explaining its limitations and pointing users to the correct next step.
 
 Examples:
 
@@ -252,14 +252,14 @@ Examples:
 
 5. Consider ethical and company compliance rules.
 
-Think through areas that may be sensitive and shouldn't be answered by the agent. Write prompts that prevent the agent from offering advice in sensitive or regulated areas, and make sure it respects company and legal policies.
+Think through areas that may be sensitive and the agent shouldn't answer. Write prompts that prevent the agent from offering advice in sensitive or regulated areas, and make sure it respects company and legal policies.
 
 Examples:
 
 -	Don't offer medical, legal, or financial advice. Clearly state that the user should consult a qualified professional.
 -	Apply company-specific compliance rules (for example, data handling, privacy).
 -	Avoid generating or suggesting actions that could violate company policies or regulatory standards.
--	Don't generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content. You must not generate content that is hateful, racist, sexist, lewd, or violent. Never generate any content that openly discriminates against groups of people of a protected identity (race, gender, sex, age, and so on) Never generate any original graphic, sexual or violent content, even if the document has such themes.
+-	Don't generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content. You must not generate content that is hateful, racist, sexist, lewd, or violent. Never generate any content that openly discriminates against groups of people of a protected identity (race, gender, sex, age, and so on). Never generate any original graphic, sexual or violent content, even if the document has such themes.
 
 6. Plan to write instructions for sensitive topics and risky actions.
 
@@ -309,8 +309,7 @@ Examples:
 
 #### In-context learning (ICL)
 
-In-context learning (ICL), also known as few-shot learning, refers to an LLM's ability to learn from a few examples or scenarios provided within the prompt. 
-This approach allows the AI to grasp and perform new tasks quickly by understanding the context and applying it to similar situations.
+In-context learning (ICL), also known as few-shot learning, refers to an LLM's (Large Language Model) ability to learn from a few examples or scenarios provided within the prompt. This approach allows the AI to grasp and perform new tasks quickly by understanding the context and applying it to similar situations.
 
 When to use this method:
 -	Establish tone: Always respond with a friendly, confident tone. Example: Sure thing! I've got you covered.
@@ -319,8 +318,7 @@ When to use this method:
 
 #### Chain-of-thought (CoT) prompting
 
-Chain-of-thought (CoT) prompting is about leading the AI through a step-by-step reasoning process to solve a problem or answer a question. 
-This approach mirrors human problem-solving, where each step builds on the previous one. It helps the AI break down the task into logical sequences that leads to improved response.
+Chain-of-thought (CoT) prompting is about leading the AI through a step-by-step reasoning process to solve a problem or answer a question. This approach mirrors human problem-solving, where each step builds on the previous one. It helps the AI break down the task into logical sequences that leads to improved response.
 
 When to use this method:
 
