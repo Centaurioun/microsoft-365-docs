@@ -1,10 +1,10 @@
 ---
-title: Translate a document in SharePoint
+title: Translate a document
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 04/03/2025
+ms.date: 08/01/2025
 audience: admin
 ms.topic: how-to
 ms.service: microsoft-syntex
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to translate documents using SharePoint.
 ---
 
-# Translate a document in SharePoint
+# Translate a document
 
 Document translation lets you create a translated copy of a file manually on demand or automatically by using rules. You can set a rule to create a translated copy automatically when a document is created, or when data in a column is modified.​
 
@@ -62,6 +62,10 @@ To create a translated version of a document, follow these steps:
 ## Translate a document automatically
 
 You can create a rule to automatically translate a document [when a new file is added](content-processing-translate.md#translate-a-document-when-a-new-file-is-added) or [when data in a column changes](content-processing-translate.md#translate-a-document-when-data-in-a-column-changes). For step-by-step instruction, see [Create a rule to translate a document](content-processing-translate.md).
+
+## View the processing status
+
+You can view real-time updates on files processed for document translation on the **Translation activity** panel. For more information, see [Monitor the status of files processed for autofill and translation in SharePoint](processing-status-ai.md).
 
 ## Translate a video transcript
 
