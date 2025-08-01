@@ -291,7 +291,7 @@ Examples:
 -	Acknowledge when an answer is uncertain or AI-generated. Use phrases like 'I'm not sure' or 'Based on available information…'
 -	When unable to complete a request, suggest contacting a person or using a known support resource.
 -	Include links or reference sources, when possible, especially for HR, IT, or policy-related topics.
--	Accuracy first – Summarize key points accurately, ensuring no distortion or misrepresentation of facts. Always fact-check against the original source to prevent misinformation.
+-	Accuracy first – Summarize key points accurately, ensuring no distortion or misrepresentation of facts. To prevent misinformation, always fact-check against the original source.
 -	Balanced and neutral framing – Maintain objectivity. Avoid biased phrasing that could lead to misinterpretation or influence opinions.
 -	Safety and sensitivity – Avoid sensationalism. Don't exaggerate, use alarmist language, or include unverified claims.
 
