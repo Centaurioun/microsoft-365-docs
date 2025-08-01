@@ -368,7 +368,7 @@
    {
     "source_path":"microsoft-365/syntex/feature-limited-license.md",
     "redirect_url":"/microsoft-365/documentprocessing/feature-limited-license",
-    "redirect_document_id":true
+    "redirect_document_id":false
    },
    {
     "source_path":"microsoft-365/syntex/form-processing-overview.md",
@@ -398,7 +398,7 @@
    {
     "source_path":"microsoft-365/syntex/index.yml",
     "redirect_url":"/microsoft-365/documentprocessing/index.yml",
-    "redirect_document_id":true
+    "redirect_document_id":false
    },
    {
     "source_path":"microsoft-365/syntex/learn-about-document-understanding-models-through-the-sample-model.md",
@@ -658,7 +658,7 @@
    {
     "source_path":"microsoft-365/syntex/train-model.md",
     "redirect_url":"/microsoft-365/documentprocessing/train-model",
-    "redirect_document_id":true
+    "redirect_document_id":false
    },
    {
     "source_path":"microsoft-365/syntex/translation-overview.md",
