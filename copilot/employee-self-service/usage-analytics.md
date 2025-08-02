@@ -23,9 +23,9 @@ appliesto:
 >[!NOTE]
 >The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
-You can use different intefaces to monitor ESS agent usage depending on the role in your organization that is in charge of monitoring analytics.
+You can use different intefaces to monitor ESS agent usage depending on the role in your organization in charge of monitoring analytics.
 
-As an application or agent owner with the Environment Maker role, you can view analytics in Copilot Studio by navigating to the **Analytics** tab.
+As an application or agent owner with the Environment Maker role, you can navigate to the **Analytics** tab to view analytics in Copilot Studio.
 
 For advanced reporting requirements, you can integrate Azure Application Insights with Copilot Studio to gather more telemetry.
 
@@ -40,11 +40,11 @@ Feedback about Copilot is collected from Copilot experiences, such as when selec
 >[!NOTE]
 >If using Copilot for work or school, the IT admin can turn off feedback. If the thumb options don't appear next to Copilot responses or if selecting a thumb doesn't open the feedback pane, your organization's IT admin has likely turned off feedback.
 
-You can view feedback in the [Microsoft feedback portal](https://feedbackportal.microsoft.com/feedback). To view feedback that's been submitted to Microsoft, select **My feedback** and sign in. If using Copilot at work or school, your IT admin might not allow use of the feedback portal.
+You can view feedback in the [Microsoft feedback portal](https://feedbackportal.microsoft.com/feedback). To view feedback submitted to Microsoft, select **My feedback** and sign in. If using Copilot at work or school, your IT admin might not allow use of the feedback portal.
 
 ## Auditing and logging
 
-The ESS agent is built on Copilot and Power Platform. You can therefore use auditing capabilities from these platforms to log and monitor usage.
+The ESS agent is built on Copilot and Power Platform. You can use auditing capabilities from these platforms to log and monitor usage.
 
 ### Audit with Microsoft Purview
 
