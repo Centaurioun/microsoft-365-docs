@@ -29,6 +29,7 @@ appliesto:
 > - When using GPT-5 in Copilot Chat, Copilot chooses the best model, including GPT-5, to generate a response that has increased complexity, accuracy, and overall performance.
 > - The **Try GPT-5** button will appear in Copilot Chat, whether users do or don't have a Microsoft 365 Copilot license.
 > - This model update doesn't change your [security, privacy, or compliance settings](/copilot/microsoft-365/manage-public-web-access).
+> 
 > For more information, see [BLOG POST LINK](LINK).
 
 **Microsoft 365 Copilot is an AI-powered tool that helps with your work tasks**.
