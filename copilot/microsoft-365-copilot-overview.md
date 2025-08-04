@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: dansimp
-ms.date: 07/30/2025
+ms.date: 08/04/2025
 audience: Admin
 ms.reviewer: mandia
 ms.topic: overview
@@ -25,8 +25,8 @@ appliesto:
 # Microsoft 365 Copilot overview
 
 > [!NOTE]
-> - Copilot Chat is in the process of transitioning to the GPT-5 model as its primary supporting LLM. Users can try GPT-5 with their Copilot prompts by selecting the **Try Smart** button in Copilot Chat.
-> - When using Smart in Copilot Chat, Copilot Chat chooses the best model, including ChatGPT-5, to generate a response that has increased complexity, accuracy, and overall performance.
+> - Copilot Chat is in the process of transitioning to OpenAI's latest generative AI model, the GPT-5 model, as its primary supporting LLM. Users can try GPT-5 with their Copilot prompts by selecting the **Try GPT-5** button at the top right in Copilot Chat.
+> - When using GPT-5 in Copilot Chat, Copilot chooses the best model, including GPT-5, to generate a response that has increased complexity, accuracy, and overall performance.
 > - The **Try Smart** button will appear in Copilot Chat whether users have or don't have a Microsoft 365 Copilot license. The user experience can differ depending on the user's access level.
 > - This model update doesn't change your [security, privacy, or compliance settings](/copilot/microsoft-365/manage-public-web-access).
 > 
