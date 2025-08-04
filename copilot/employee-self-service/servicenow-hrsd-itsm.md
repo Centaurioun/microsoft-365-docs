@@ -334,7 +334,7 @@ Based on the SNOW connector and public APIs, the Service NOW extension pack incl
 
 #### Get Ticket Status
 
-This function allows users to retrieve the latest status of a ticket using ServiceNow APIs, enabling seamless integration with existing IT workflows. By accessing real-time ticket status information, users can efficiently track the progress of reported issues.
+This function allows users to retrieve the latest status of a ticket using ServiceNow APIs, enabling seamless integration with existing IT workflows. When users access real-time ticket status information, they can efficiently track the progress of reported issues.
 
 #### Get Ticket Details
 
