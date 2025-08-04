@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Entra monitoring"
+title: "Microsoft Entra monitoring"
 ms.author: nahomagize
 author: Na-ho-m
 manager: dansimp
@@ -19,14 +19,14 @@ ms.collection:
 ms.custom: admindeeplinkMAC
 f1.keywords:
   - NOCSH
-description: "Use monitoring for information about incidents or advisories related to Microsoft 365 Entra."
+description: "Use monitoring for information about incidents or advisories related to Microsoft Entra."
 ---
 
-# Microsoft 365 Entra monitoring
+# Microsoft Entra monitoring
 
 Microsoft Entra monitoring supports the following organizational scenarios with near real-time information:
 
-:::image type="content" source="../media/microsoft-365-entra.png" alt-text="Screenshot that shows organization-level scenarios for Microsoft 365 Entra monitoring." lightbox="../media/microsoft-365-entra.png":::
+:::image type="content" source="../media/microsoft-365-entra.png" alt-text="Screenshot that shows organization-level scenarios for Microsoft Entra monitoring." lightbox="../media/microsoft-365-entra.png":::
 
 - **Sign-ins requiring Cloud Multifactor Authentication (Completion Volume)**. Amount of users successfully completing interactive MFA sign ins using Microsoft Entra ID MFA cloud service (not counting MFA server activity). Users abandoning or canceling MFA requests, refreshing MFA sessions without doing interactive MFA, or using passwordless methods do not count in this chart at this time.
 
@@ -38,7 +38,7 @@ Microsoft Entra monitoring supports the following organizational scenarios with 
 
 Admins can use the information to correlate any Microsoft-reported issues with the usage data to confirm any actual impact to their organization. Also, admins can view any usage from the last two weeks of usage data to identify any anomalies.
 
-:::image type="content" source="../media/microsoft-365-entra-1.png" alt-text="Screenshot that shows example of Microsoft 365 Entra monitoring." lightbox="../media/microsoft-365-entra-1.png":::
+:::image type="content" source="../media/microsoft-365-entra-1.png" alt-text="Screenshot that shows example of Microsoft Entra monitoring." lightbox="../media/microsoft-365-entra-1.png":::
 
 **More information**
 
