@@ -78,7 +78,7 @@ If your organization needs to use a different identity provider than Microsoft E
 ## Publish the ESS agent
 
 >[!NOTE]
->If your organization's Teams app deployment has its own application lifecycle management/ DevOps process in place for deploying and testing new apps, you have the option to side-load apps into the Teams app store using the **Download.zip** option. Consult your organization's Teams app deployment policies and work with your Teams administrators.
+>If your organization's Teams app deployment has its own application lifecycle management/ DevOps process in place for deploying and testing new apps, you can side-load apps into the Teams app store using the **Download.zip** option. Consult your organization's Teams app deployment policies and work with your Teams administrators.
 
 1. Open the **Employee Self-Service** agent in Copilot Studio.
 1. Verify the customizations from the imported solution are in place.
