@@ -188,8 +188,8 @@ items:
                   href: microsoft-365-oab-size-limit-service-advisory.md
             - name: Microsoft 365 Apps monitoring
               href: microsoft-365-apps-monitoring.md
-            - name: Microsoft 365 Entra monitoring
-              href: microsoft-365-entra-monitoring.md
+            - name: Microsoft Entra monitoring
+              href: microsoft-entra-monitoring.md
             - name: Microsoft 365 Teams monitoring
               href: microsoft-365-teams-monitoring.md
             - name: Microsoft 365 for the web monitoring
@@ -296,6 +296,8 @@ items:
                   href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
                 - name: Configure search
                   href: configure-search-for-multi-geo.md
+                - name: Configure multi-geo in-region routing (In Preview)
+                  href: multi-geo-region-routing.md
                 - name: User Testing in Multi-Geo
                   href: m365-multi-geo-user-testing.md
             - name: Manage

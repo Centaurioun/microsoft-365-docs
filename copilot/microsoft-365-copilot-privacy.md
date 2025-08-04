@@ -13,6 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - must-keep
+- trust-pod
 hideEdit: true
 ms.date: 05/02/2025
 ms.custom: [copilot-learning-hub]
@@ -29,7 +30,7 @@ Microsoft 365 Copilot is a sophisticated processing and orchestration engine tha
 For an overview of how these three components work together, see [Microsoft 365 Copilot overview](microsoft-365-copilot-overview.md). For links to other content related to Microsoft 365 Copilot, see [Microsoft 365 Copilot documentation](index.yml).
 
 > [!IMPORTANT]
-> - Microsoft 365 Copilot is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary.
+> - Microsoft 365 Copilot, including [Microsoft 365 Copilot Search](/copilot/microsoft-365/microsoft-365-copilot-search), is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary.
 > - Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot.
 > - Microsoft 365 Copilot operates with multiple protections, which include, but aren't limited to, [blocking harmful content](#how-does-copilot-block-harmful-content), [detecting protected material](#does-copilot-provide-protected-material-detection), and [blocking prompt injections (jailbreak attacks)](#does-copilot-block-prompt-injections-jailbreak-attacks).
 
@@ -192,7 +193,7 @@ Jailbreak attacks are prompts designed to bypass Copilot's safeguards or induce 
 
 As AI is poised to transform our lives, we must collectively define new rules, norms, and practices for the use and impact of this technology. Microsoft has been on a Responsible AI journey since 2017, when we defined our principles and approach to ensuring this technology is used in a way that is driven by ethical principles that put people first.
 
-At Microsoft, we're guided by our [AI principles](https://www.microsoft.com/ai/our-approach), our [Responsible AI Standard](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5cmFl), and decades of research on AI, grounding, and privacy-preserving machine learning. A multidisciplinary team of researchers, engineers, and policy experts reviews our AI systems for potential harms and mitigations — refining training data, filtering to limit harmful content, query- and result-blocking sensitive topics, and applying Microsoft technologies like [InterpretML](https://www.microsoft.com/research/uploads/prod/2020/05/InterpretML-Whitepaper.pdf) and [Fairlearn](https://fairlearn.org/) to help detect and correct data bias. We make it clear how the system makes decisions by noting limitations, linking to sources, and prompting users to review, fact-check, and adjust content based on subject-matter expertise. For more information, see [Governing AI: A Blueprint for the Future](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW14Gtw).
+At Microsoft, we're guided by our [AI principles](https://www.microsoft.com/ai/our-approach), our [Responsible AI Standard](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Responsible-AI-Standard-General-Requirements.pdf), and decades of research on AI, grounding, and privacy-preserving machine learning. A multidisciplinary team of researchers, engineers, and policy experts reviews our AI systems for potential harms and mitigations — refining training data, filtering to limit harmful content, query- and result-blocking sensitive topics, and applying Microsoft technologies like [InterpretML](https://www.microsoft.com/research/uploads/prod/2020/05/InterpretML-Whitepaper.pdf) and [Fairlearn](https://fairlearn.org/) to help detect and correct data bias. We make it clear how the system makes decisions by noting limitations, linking to sources, and prompting users to review, fact-check, and adjust content based on subject-matter expertise. For more information, see [Governing AI: A Blueprint for the Future](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Governing-AI-A-Blueprint-for-the-Future.pdf).
 
 We aim to help our customers use our AI products responsibly, sharing our learnings, and building trust-based partnerships. For these new services, we want to provide our customers with information about the intended uses, capabilities, and limitations of our AI platform service, so they have the knowledge necessary to make responsible deployment choices. We also share resources and templates with developers inside organizations and with independent software vendors (ISVs), to help them build effective, safe, and transparent AI solutions.
 
