@@ -188,8 +188,8 @@ items:
                   href: microsoft-365-oab-size-limit-service-advisory.md
             - name: Microsoft 365 Apps monitoring
               href: microsoft-365-apps-monitoring.md
-            - name: Microsoft 365 Entra monitoring
-              href: microsoft-365-entra-monitoring.md
+            - name: Microsoft Entra monitoring
+              href: microsoft-entra-monitoring.md
             - name: Microsoft 365 Teams monitoring
               href: microsoft-365-teams-monitoring.md
             - name: Microsoft 365 for the web monitoring
