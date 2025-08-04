@@ -42,7 +42,7 @@ Preparation is the first step to deploying the Employee Self-Service (ESS) agent
 ## Set up your Power Platform environment and assign the Environment Maker role
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Power Platform administrator.
-1. Create a new environment, or select an existing environment to install the ESS agent.
+1. Create a new environment, or install the ESS agent on an existing environment.
 1. Select **+New** in the ribbon to create a new environment. Configure the following features:
     1. **Make this environment a Managed Environment**: Enable or disable based on your governance.
     1. **Get new features early**: Not required.
