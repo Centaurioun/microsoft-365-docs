@@ -836,8 +836,8 @@
     "redirect_document_id":true
    },
    {
-    "source_path":"microsoft-365/syntex/solutions/agreements-user-prereqs.md",
-    "redirect_url":"/microsoft-365/documentprocessing/solutions/agreements-user-prereqs",
+    "source_path":"microsoft-365/syntex/index.yml",
+    "redirect_url":"/microsoft-365/documentprocessing",
     "redirect_document_id":true
    }
   ]
