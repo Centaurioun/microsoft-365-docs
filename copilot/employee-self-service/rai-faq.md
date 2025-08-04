@@ -30,7 +30,7 @@ Employee Self-Service Agent (ESS) is a new set of capabilities to answer policy 
 - Retrieve the right information at the right time.
 - Take actions on essential HR and IT tasks-in line without navigating to multiple tools and workspaces, including help and running diagnostics on Microsoft 365 products and services.
 
-And while the ESS Agent is ready to go on day one, IT/admins can further customize the agent with OOB preconfigured no-code templates for key workflows, and connectors to third-party HR/IT systems in Copilot Studio for faster Time-To-Value (TTV).
+And while the ESS Agent is ready to go on day one, admins can further customize the agent with OOB preconfigured no-code templates for key workflows, and connectors to third-party HR/IT systems in Copilot Studio for faster Time-To-Value (TTV).
 
 ## What can Employee Self-Service do?
 
