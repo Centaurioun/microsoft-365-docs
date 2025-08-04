@@ -119,7 +119,7 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
 4. Assign a name for the application and select **Create**.
 5. Go to **Single sign-on** and select **SAML**.
 6. Follow specific guidelines in the **SuccessFactors SSO Configuration Guide**.
-7. Configure the following:
+7. Configure the following settings:
    1. **Identifier (Entity ID)**: Set to `api://<Enterprise App ID>` (for example, `api://33135bc6be6a-4cdc-9c96-af918e367425`).
      > [!NOTE]
      > We recommend you use the SF instance URL `https://<sfinstance>.successfactors.com`.
@@ -174,7 +174,7 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
 
 1. Sign-in to the SuccessFactors web UI with an admin account.
 2. Go to **Manage OAuth2 Client Applications**.
-3. Select the client application that's been created earlier.
+3. Select the client application created earlier.
 4. Update the certificate to the one downloaded from Microsoft Entra ID and paste only the certificate body content without the header and footer.
 
 ### Test the connection
@@ -437,7 +437,7 @@ The "Get Employee ID" and "Get Service Anniversary" topics are exceptions to thi
 
 Authorization for all the topics is as follows:
 
-- Authorization is done using the *permissionsMetadata* that's part of the Template configuration. The *permissionsMetadata* and *User ID* are used to create the query string for OData connector in *SuccessFactors Check User Permissions* flow.
+- Authorization is done using the *permissionsMetadata* part of the Template configuration. The *permissionsMetadata* and *User ID* are used to create the query string for OData connector in *SuccessFactors Check User Permissions* flow.
 - You should include *permissionMetadata* or *rolePermission* in the Template config file, as there's no other authorization check if both of those fields are missing.
 
 ### Get Base Compensation
