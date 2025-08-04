@@ -262,7 +262,7 @@ This step is required to set the user context for the ESS agent that primarily d
 
 ESS agent comes with few predefined templates that are being used for each topic. These templates are shipped with the default data attribute paths, if there are custom entities and paths being used in SAP SuccessFactors, then these templates must be customized to match the SAP SuccessFactors entities.
 
-Follow the steps below to set up templates:
+Follow these steps to set up templates:
 
 1. Open ESS agent in Copilot Studio.
 2. Select **Settings** in the top right corner of agent ribbon.
@@ -279,7 +279,7 @@ Follow the steps below to set up templates:
    [OPTIONAL] 
    "rootEntity": "EmpEmployment",//Entity to be queried 
    "filter": "personIdExternal eq '{personIdExternalVal}' and userId eq 
-   '{userIdVal}'",//Filter Expression to filter data more on format below 
+   '{userIdVal}'",//Filter Expression to filter data more on this format
    SAP integration for ESS agent 
    NDA Private Preview Customers ONLY 
    Microsoft Corporation © 
@@ -349,7 +349,7 @@ value
 
 ### Role based permissions config
 
-Role based permissions use the *roleId* provided in the config to check against *UserRoles* variable that is part of the user context. The flow queries *RBPRole* with *roleId* given in configuration, which returns all the *permissionStringValues* linked to the *roleId*. Then it matches the *permStringValue* in the config to what the OData connector returned. Manager scenarios are required to use RBP role because we check if the manager has permissions for multiple users at the same time and therefore using *PermissionsMetadata* would be slower. In this case, we can check that the user has 115 role, which gives them permission to make changes for directs. The Role ID must be created by the maker if the current SF implementation doesn't have it.
+Role based permissions use the *roleId* provided in the config to check against *UserRoles* variable that is part of the user context. The flow queries *RBPRole* with *roleId* given in configuration, which returns all the *permissionStringValues* linked to the *roleId*. Then it matches the *permStringValue* in the config to what the OData connector returned. Manager scenarios are required to use RBP role because we check if the manager has permissions for multiple users at the same time and therefore using *PermissionsMetadata* would be slower. In this case, we can check that the user has 115 role, which gives them permission to make changes for directs. The maker must create the Role ID if the current SF implementation doesn't have it.
 
 ```json
 { 
@@ -374,7 +374,7 @@ check for in role id
 1. Setting a variable with the filter parameters, which in this case is the alias of the user the context is retrieved for.
 2. Next split into parallel calls to reduce time:
     1. The left side retrieves the user context config in the first Dataverse call. The second Dataverse call retrieves the filter and request entities, which we query for in the OData connector at the end. After the left side is complete, the flow retrieves all the requested entities from the config for the user.
-    2. The right side retrieves the config to check if user *isManager* in the first Dataverse call. In the second Dataverse call flow retrieves the filter and request entities to query for. With that config, the flow queries for directs under the user and retrieves necessary information such as in this case *userId* of directs.
+    2. The right side retrieves the config to check if user *isManager* in the first Dataverse call. The second Dataverse call flow retrieves the filter and request entities to query for. With that config, the flow queries for directs under the user and retrieves necessary information such as in this case *userId* of directs.
 3. If the SF call for user data doesn't return anything, we terminate the flow and respond to copilot user not found.
 4. We split into parallel calls to check if the user has multiple records on the left.
 5. The left side checks if there are multiple records and then runs a child flow that gets the active user ID and updates the context. Then the flow makes an OData call to get the user's roles by their user ID.
@@ -422,11 +422,11 @@ Each of the Read topic has its own prompts, configurations, and so on, but the a
 - **ScenarioName**: Config Name, which is used by Dataverse call to get scenario configuration.
 - **userIdentifier**: User ID.
 
-Common orchestrator then returns a ModelResponse and LabelResponse, which is then parsed by the LLM using the following instructions to generate answer for user:
+A common orchestrator then returns a ModelResponse and LabelResponse, which the LLM then parses using the following instructions to generate an answer for the user:
 
-- Extract the input from the below response (map the Label response *value* as key in model response attribute then provide model value).
-- Provide response to the user in a human readable form.
-- Format properly so it looks clean and readable.
+- Extract the input from the following response (map the Label response *value* as key in model response attribute then provide model value).
+- Provide the response to the user in a human readable form.
+- Format it properly so it looks clean and readable.
 - Use only data values from variable named as "successfactorsModelResponse" and use variable named as "successfactorsLabelResponse" for labeling the data.
 - **Response example:**
   - Label Response:"key":"company","value":"company"
@@ -603,7 +603,7 @@ Authorization for all the topics is as follows:
 
 |Get Service Anniversary |Details |
 |------------------------|--------|
-|**Description** |This topic performs a calculated functionality using the "HireDate" value with some PowerFx functions as follows:<p>**Years worked**<p><li>`RoundDown(DateDiff(Topic.startDate, Now(), TimeUnit.Years), 0)` <br>This formula calculates the number of complete years the employee worked by finding the difference between current date and employee's start date and then rounding down to the nearest whole number<li>`DateDiff(Topic.startDate, Now(), TimeUnit.Years)` <br>This part of the formula calculates the difference in years between the employee's start date (`Topic.startDate`) and the current date (\`Now()\`).<li>`RoundDown(..., 0)` <br>This function takes the result of DateDiff and rounds it down to the nearest whole number. The 0 indicates the number of decimal places to round to, which in this case is zero, meaning it returns an integer value representing the complete years worked. <p>**Service Anniversary Intervals in Years** <p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)` <br>Calculates how many complete intervals of the service anniversary duration the employee has worked. It divides the total years worked by the service anniversary duration and rounds down to the nearest whole number. <p>**Upcoming Service Anniversary Count** <li>`Topic.serviceAnniversaryDuration \* (Topic.serviceAnniversaryIntervalsInYears + 1)` <br>This formula calculates the upcoming service anniversary count by multiplying the service anniversary duration by one more than the complete intervals already worked.<p>**Calculated Service Anniversary Date** <br>`DateAdd(Topic.startDate, Topic.serviceAnniversaryDuration \*(RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0) + 1), TimeUnit.Years)`<p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)` <br>This part of the formula calculates how many complete intervals of the service anniversary duration the employee worked by dividing the total years worked by the service anniversary duration and rounding down to the nearest whole number.<li>`Topic.serviceAnniversaryDuration \* (RoundDown(Topic.yearsWorked /Topic.serviceAnniversaryDuration, 0) + 1)` <br>This part of the formula calculates the total service anniversary intervals (plus one) to be added to the start date.<li>`DateAdd(Topic.startDate, ..., TimeUnit.Years)`<br>Finally, this function adds the calculated intervals to the start date to determine the upcoming service anniversary date. |
+|**Description** |This topic performs a calculated functionality using the "HireDate" value with some PowerFx functions as follows:<p>**Years worked**<p><li>`RoundDown(DateDiff(Topic.startDate, Now(), TimeUnit.Years), 0)` <br>This formula calculates the number of complete years the employee worked. It finds the difference between current date and employee's start date and then rounds down to the nearest whole number<li>`DateDiff(Topic.startDate, Now(), TimeUnit.Years)` <br>This part of the formula calculates the difference in years between the employee's start date (`Topic.startDate`) and the current date (\`Now()\`).<li>`RoundDown(..., 0)` <br>This function takes the result of DateDiff and rounds it down to the nearest whole number. The 0 indicates the number of decimal places to round to, which in this case is zero, meaning it returns an integer value representing the complete years worked. <p>**Service Anniversary Intervals in Years** <p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)` <br>Calculates how many complete intervals of the service anniversary duration the employee worked. It divides the total years worked by the service anniversary duration and rounds down to the nearest whole number. <p>**Upcoming Service Anniversary Count** <li>`Topic.serviceAnniversaryDuration \* (Topic.serviceAnniversaryIntervalsInYears + 1)` <br>This formula calculates the upcoming service anniversary count by multiplying the service anniversary duration by one more than the complete intervals already worked.<p>**Calculated Service Anniversary Date** <br>`DateAdd(Topic.startDate, Topic.serviceAnniversaryDuration \*(RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0) + 1), TimeUnit.Years)`<p><li>`RoundDown(Topic.yearsWorked / Topic.serviceAnniversaryDuration, 0)` <br>This part of the formula calculates how many complete intervals of the service anniversary duration the employee worked. It divides the total years worked by the service anniversary duration and rounding down to the nearest whole number.<li>`Topic.serviceAnniversaryDuration \* (RoundDown(Topic.yearsWorked /Topic.serviceAnniversaryDuration, 0) + 1)` <br>This part of the formula calculates the total service anniversary intervals (plus one) to be added to the start date.<li>`DateAdd(Topic.startDate, ..., TimeUnit.Years)`<br>Finally, this function adds the calculated intervals to the start date to determine the upcoming service anniversary date. |
 |**Prompts**  |<li>When is my next service anniversary?<li>Next anniversary<li>Service anniversary<li>Show my service anniversary date <li>What is my service anniversary date? |
 |**Scenario name**  |`msdyn_HRSAPSuccessFactorsHCMEmployeeGetHireDate` |
 |**Filter** |Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`|
