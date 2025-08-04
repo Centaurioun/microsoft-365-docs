@@ -45,7 +45,7 @@ The ESS agent acts as a front-end for consuming information from SAP SuccessFact
 
 :::image type="content" source="media/agent-and-success-factors-integration.png" alt-text="Diagram of the high-level components comprising overall solution for ESS agent and SuccessFactors integration." lightbox="media/agent-and-success-factors-integration.png":::
 
-The diagram outlines the high-level components comprising overall solution for the ESS agent and SuccessFactors integration. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it's better to spend some time initially understanding the various components and bring in the right stakeholders to set up an environment to deploy and test the ESS agent.
+The diagram outlines the high-level components comprising overall solution for the ESS agent and SuccessFactors integration. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, you should spend some time initially understanding the various components and bring in the right stakeholders to set up an environment to deploy and test the ESS agent.
 
 > [!NOTE]
 > SuccessFactors integration is currently based on OData V2.0, but the latest supported version is V4.0. Microsoft Entra ID using SuccessFactors is still a prerelease version and is subject to change.
@@ -69,7 +69,7 @@ You can refer to the ESS agent deployment guide for subscription requirements fo
 
 ### Infra set up for 3P ISV integration
 
-Most enterprise organizations secure their 3P HCMs/Knowledge Sources from external networks, as it's critical for the line of business to protect sensitive information about employees, organizations, knowledge assets, and so on.
+Most enterprise organizations secure their 3P HCMs/Knowledge Sources from external networks, as the line of business must protect sensitive information about employees, organizations, knowledge assets, and so on.
 
 When you need to integrate these enterprise systems into ESS agent to use it as a source for providing relevant information to the end users, these systems should be accessible to the Power Platform environment where these ESS agents are hosted.
 
@@ -99,8 +99,8 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
 
 - **User mapping**: Ensure that the Unique User Identifier claim of the Microsoft Entra ID user aligns precisely with the **user alias** in SuccessFactors (*one-to-one matching*).
 - **User access control**: Only users or groups listed in the Enterprise application are allowed to authenticate SuccessFactors.
-- **Resource URI**: It's found in the Enterprise app settings under *Expose an API* as the application ID URI.
-- **Company ID**: It's based on the enabled SuccessFactors modules.
+- **Resource URI**: Found in the Enterprise app settings under *Expose an API* as the application ID URI.
+- **Company ID**: Based on the enabled SuccessFactors modules.
 
 #### High-level overview
 
@@ -122,7 +122,7 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
 7. Configure the following:
    1. **Identifier (Entity ID)**: Set to `api://<Enterprise App ID>` (for example, `api://33135bc6be6a-4cdc-9c96-af918e367425`).
      > [!NOTE]
-     > It's recommended to use the SF instance URL `https://<sfinstance>.successfactors.com`.
+     > We recommend you use the SF instance URL `https://<sfinstance>.successfactors.com`.
 
    2. **Reply URL**: Used in the SAML token as the Recipient field (for example, `https://<apiserver>/oauth/token`).
 
@@ -438,7 +438,7 @@ The "Get Employee ID" and "Get Service Anniversary" topics are exceptions to thi
 Authorization for all the topics is as follows:
 
 - Authorization is done using the *permissionsMetadata* that's part of the Template configuration. The *permissionsMetadata* and *User ID* are used to create the query string for OData connector in *SuccessFactors Check User Permissions* flow.
-- It's important to include *permissionMetadata* or *rolePermission* in the Template config file, as there's no other authorization check if both of those fields are missing.
+- You should include *permissionMetadata* or *rolePermission* in the Template config file, as there's no other authorization check if both of those fields are missing.
 
 ### Get Base Compensation
 
