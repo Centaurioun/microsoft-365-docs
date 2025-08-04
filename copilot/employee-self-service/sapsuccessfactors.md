@@ -30,7 +30,7 @@ The Employee Self-Service agent is built on Copilot and uses AI to provide relev
 
 ## Functional synopsis
 
-The ESS agent acts as a front-end for consuming information from SAP SuccessFactors. The following are the scenarios currently supported by ESS agent for SAP SuccessFactors integration:
+The ESS agent acts as a front-end for consuming information from SAP SuccessFactors. The following items are the scenarios currently supported by ESS agent for SAP SuccessFactors integration:
 
 - [Get Base Compensation](#get-base-compensation)
 - [Get Company Code](#get-company-code)
@@ -156,7 +156,7 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
     4. **Application URL:** Can be any random URL.
     5. **X.509 Certificate:** Copy/paste the certificate downloaded from step 9 in the previous section.
      > [!NOTE]
-     > The certificate file needs to be renamed as a text file to open in a text editor. Then, copy/paste the crypted characters without including the header & footer lines.
+     > The certificate file needs to be renamed as a text file to open in a text editor. Then, copy/paste the crypted characters without including the header and footer lines.
 
 5. Select **Save**. The new client application now has an **API Key** that serves as *Client ID* in SAML2 session flow and can be used in the connection and Enterprise app configuration.
 
@@ -195,7 +195,7 @@ For more information on setting up SSO for SAP SuccessFactors with Microsoft Ent
 
 The ESS agent is designed to have separate extension packs for each third party ISV, like SuccessFactors. Hence, these extension packs must be installed before starting any configurations or customizations.
 
-The following are the steps required to install & enable the SuccessFactors extension pack:
+These steps are required to install and enable the SuccessFactors extension pack:
 
 1. **Entitlement**
    Work with your ESS agent private preview product managers for the entitlement process. Once the entitlement process is complete for your tenant, the SuccessFactors extension pack shows up under **Customize** section of ESS agent.
@@ -262,7 +262,7 @@ This step is required to set the user context for the ESS agent that primarily d
 
 ESS agent comes with few predefined templates that are being used for each topic. These templates are shipped with the default data attribute paths, if there are custom entities and paths being used in SAP SuccessFactors, then these templates must be customized to match the SAP SuccessFactors entities.
 
-Follow these steps to set up templates:
+To set up templates, follow these steps:
 
 1. Open ESS agent in Copilot Studio.
 2. Select **Settings** in the top right corner of agent ribbon.
@@ -379,7 +379,7 @@ check for in role id
 4. We split into parallel calls to check if the user has multiple records on the left.
 5. The left side checks if there are multiple records and then runs a child flow that gets the active user ID and updates the context. Then the flow makes an OData call to get the user's roles by their user ID.
 6. The right-side checks for open positions if the user is a manager and *IsManagerCheckVacantPositions* is set to "True". It makes Dataverse calls to get the necessary configs to make the SF OData request and then updates the *IsManager* variable.
-7. Lastly the flow composes an object with all the required user context fields and returns it to Copilot Studio (CPS).
+7. Finally, the flow composes an object with all the required user context fields and returns it to Copilot Studio (CPS).
 
 ## Read flow – High-level logic
 
@@ -738,7 +738,7 @@ and tolower(jobInfoNav/positionNav/effectiveStatus) eq 'a'",
 
 Use the API client tool for testing, validating, and confirming the assertion being generated and passed to SF. For more instructions, see [3462403 - SuccessFactors OData API: OAuth 2.0 Authentication](https://userapps.support.sap.com/sap/support/knowledge/en/3462403).
 
-The following highlighted are the critical pieces of information to be validated as part of claims authentication:
+The following highlighted items are the critical pieces of information to be validated as part of claims authentication:
 
 1. `<NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">` - Ensure that the correct NameID format is used for user mapping between Microsoft Entra and SAP SF.
 2. `<Attribute Name="api_key">` - Ensure that the claims token has the correct *api_key* from SAP SF OAuth 2.0 client application created.
