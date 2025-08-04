@@ -46,7 +46,7 @@ ESS Agent acts as a front-end for consuming information from ServiceNow HRSD and
 
 :::image type="content" source="media/agent-service-now-integration.png" alt-text="Diagram the high-level components comprising overall solution for ESS agent and ServiceNow HRSD integration." lightbox="media/agent-service-now-integration.png":::
 
-The previous diagram outlines the high-level components comprising overall solution for ESS agent and ServiceNow HRSD integration. There are different activities to be performed as a part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components. When you're ready, you can bring in the right stakeholders to set up an environment to deploy and test ESS Agent.
+The previous diagram outlines the high-level components comprising overall solution for ESS agent and ServiceNow HRSD integration. There are different activities to be performed as a part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it's better to spend some time initially in understanding the various components. When you're ready, you can bring in the right stakeholders to set up an environment to deploy and test ESS Agent.
 
 ## Known issues and limitations
 
@@ -76,7 +76,7 @@ Refer to the ESS Agent deployment guide for installation of the agent and subscr
 
 ## ServiceNow configuration
 
-This section outlines the tasks an adminstrator needs to configure in ServiceNow. ServiceNow integration supports several types of authentications:
+This section outlines the tasks an administrator needs to configure in ServiceNow. ServiceNow integration supports several types of authentications:
 
 - Basic authentication
 - Microsoft Entra ID OAuth using certificates
@@ -87,7 +87,7 @@ This section outlines the tasks an adminstrator needs to configure in ServiceNow
 > For all security related tasks in ServiceNow, the logged in user with `admin` or `security_admin` role must elevate their access using "Elevate role" option from the profile menu in the top right of navigation bar.
 
 > [!TIP]
-> Without elevating access, the new security objects can't be created. If **New** button in the top right of configuration pane is missing, then the role isn't elevated to "`security_admin`”.
+> Without elevating access, the new security objects can't be created. If **New** button in the top right of configuration pane is missing, then the role isn't elevated to "`security_admin`".
 
 ### Basic authentication
 
@@ -114,7 +114,7 @@ This authentication uses app tokens, allowing a registered Microsoft Entra ID ap
    - *email* - addressable email for user
    - *upn* - an identifier for the user
 8. Select **Add** to complete adding the claims.
-9. If it's the first time OpenId Connect being setup using claims like email, upn, there’s a confirmation screen to turn on the Microsoft Graph permissions. If you see the confirmation, check the box, and then select **Add**.
+9. If it's the first time OpenId Connect being setup using claims like email, upn, there's a confirmation screen to turn on the Microsoft Graph permissions. If you see the confirmation, check the box, and then select **Add**.
 
 This flow completes the Microsoft Entra piece of configuration.
 
@@ -123,8 +123,8 @@ This flow completes the Microsoft Entra piece of configuration.
 1. Sign in to the ServiceNow instance that needs to be integrated with ESS Agent.
 2. Elevate access permissions using **Elevate role**. Refer to the section **Error! Reference source not found.** – only the first part and not the tasks.
 3. Select **All** in the top navigation bar.
-4. Search for “OAuth” in the search box within dropdown navigation menu.
-5. Select **System OAuth à Application Registry** from the search results (if you don’t see this option, then you don’t have sufficient privileges).
+4. Search for "OAuth" in the search box within dropdown navigation menu.
+5. Select **System OAuth à Application Registry** from the search results (if you don't see this option, you don't have sufficient privileges).
 6. Select **New** in the configuration section pane.
 7. Select **Configure an OIDC provider to verify ID tokens**.
 8. Fill in the following information for the new application registry:
@@ -165,7 +165,7 @@ Perform tasks 1 and 2 from the previous sections for Microsoft Entra ID OAuth us
 
 In task 1, you add the application using the ServiceNow connector to the permission scope with Client ID = `c26b24aa-7874-4e06-ad55-7d06b1f79b63`.
 
-In task 2, you update the user claim to upn or any other custom claim property from the token in ServiceNow.  The user field should match the ServiceNow system user table field containing the upn or user ID.
+In task 2, you update the user claim to upn or any other custom claim property from the token in ServiceNow. The user field should match the ServiceNow system user table field containing the upn or user ID.
 
 ### Using OAuth2 authentication - Create an OAuth Application Registry
 
@@ -173,7 +173,7 @@ In task 2, you update the user claim to upn or any other custom claim property f
 2. Elevate access permissions using **Elevate role**.
 3. Select **All** in the top navigation bar.
 4. Search for **OAuth** in the search box within dropdown navigation menu.
-5. Select **System OAuth → Application Registry** from the search results (if you don’t see this option, then you don’t have sufficient privileges).
+5. Select **System OAuth → Application Registry** from the search results (if you don't see this option, you don't have sufficient privileges).
 6. Select **New** button in the top right corner of the configuration section pane.
 7. Select **Create an OAuth API endpoint for external clients**.
 8. Fill in the following information for the new application registry:
@@ -205,7 +205,8 @@ In task 2, you update the user claim to upn or any other custom claim property f
 
 ### Install ServiceNow HRSD extension pack
 
-ESS Agent is designed to have separate extension packs for each third party ISVs like ServiceNow, etc. Hence, these extension packs must be installed first before starting any configurations or customizations.
+ESS Agent is designed to have separate extension packs for third-party ISVs like ServiceNow. As a result, these extension packs must be installed first before starting any configurations or customizations.
+
 The following steps are required to install and enable the ServiceNow HRSD extension pack:
 
 1. **Entitlement**:
@@ -277,7 +278,7 @@ The following Topics are available from the ServiceNow HRSD extension pack:
 | 1  | **ServiceNow HRSD Create Case** | Creating an HR case in ServiceNow. |
 | 2  | **ServiceNow HRSD System Create Case** | This topic isn't an editable topic. Create case calls this topic for further processing. |
 | 3  | **ServiceNow HRSD Get Case Details** | Gets latest created case details. |
-| 4  | **ServiceNow HRSD System Get Case Details** | This topic isn't an editable topic. Get case details calls this for further processing. |
+| 4  | **ServiceNow HRSD System Get Case Details** | This topic isn't an editable topic. Get case details calls this topic for further processing. |
 | 5  | **ServiceNow HRSD Get Case Updates** | Get case update details in text format.</br> Not as detailed as case details. |
 | 6  | **ServiceNow HRSD Get User Cases** | List of user cases |
 | 7  | **ServiceNow HRSD System Get Cases List** | This topic isn't an editable topic. Get user cases calls this topic for further processing. |
@@ -310,7 +311,7 @@ The following Topics are available from the ServiceNow ITSM extension pack:
 
 |Topic                                  |Description |
 |---------------------------------------|------------|
-|**ServiceNow ITSM Create Ticket**      |This topic takes user input like description, severity, etc. and sends these details to the corresponding system topic. Successful creation generates another adaptive card with ticket details. |
+|**ServiceNow ITSM Create Ticket**      |This topic takes user input like description, severity, and so on. and sends these details to the corresponding system topic. Successful creation generates another adaptive card with ticket details. |
 |**ServiceNow ITSM Get User Tickets**   |This topic fetches the active or closed tickets, and does a quick check on a global variable, which we're using as cache for this data. |
 |**ServiceNow ITSM Get Ticket Details** |This topic acquires the *sysID* and passes it down to corresponding system topic. |
 |**ServiceNow ITSM Update Ticket** | This topic gets the *sysID* and other necessary input required for the update call. Also validates if the user has necessary permission to update that ticket. |
@@ -326,7 +327,7 @@ To access the template configurations:
 2. Select the installed customization titled ***Employee Self Service IT Helpdesk ServiceNow ITSM***.
 3. This action redirects you to the installed customization details page, where you can view all the Topics and Flows included in the customization package. Additionally, there's a ***Configuration*** option at the top with a manage button.
 4. By selecting the manage button, you're directed to the Dataverse Template Configurations table, which lists all available template configurations.
-5. Select the specific scenario template configuration, and it opens the actual value in the Dynamics 365 webpage in a new tab, which can edit the JSON as needed and save your changes.
+5. Select the specific scenario template configuration. It opens the actual value in the Dynamics 365 webpage in a new tab, which can edit the JSON as needed and save your changes.
 
 ### Capabilities for the ServiceNow extension pack
 
@@ -371,7 +372,7 @@ The template configurations reside within a custom Dataverse table, created thro
 - **ExcludeReferenceLinks**: Flag that indicates whether to exclude Table API links for reference fields.
 - **OutputFieldMapping**: Used to model the ServiceNow Table API output to JSON understood by the bot. Corresponding "FieldName" is mapped to "OutputName".
 - **UserParameters (InputFieldMapping)**: Values of the fields that need to be passed from the user via the bot to the backend flows. Used when creating and updating.
-- **GlobalParameters (InputFieldMapping)**: Global values that are consistently passed to the API with each call. These include essential values such as AssignmentGroup, which remain unchanged in every case.
+- **GlobalParameters (InputFieldMapping)**: Global values that are consistently passed to the API with each call. Includes essential values such as AssignmentGroup, which remain unchanged in every case.
 
 ## References
 
@@ -379,6 +380,6 @@ The template configurations reside within a custom Dataverse table, created thro
 - [External ID Token Authentication (OIDC) for Rest APIs - Support and Troubleshooting](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0720547)
 - [ServiceNow Catalog Microsoft 365 Copilot connector | Microsoft Learn](/microsoftsearch/servicenow-catalog-connector#3-authentication-type)
 
-For ServiceNow Knowledge documentation, refer to the following, which requires ServiceNow logins:
+For ServiceNow Knowledge documentation, refer to the following link, which requires ServiceNow logins:
 
 - [Table API](https://www.servicenow.com/docs/bundle/xanadu-api-reference/page/integrate/inbound-rest/concept/c_TableAPI.html)
