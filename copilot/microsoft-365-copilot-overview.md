@@ -19,7 +19,7 @@ ms.collection:
 - essentials-overview
 ms.custom: [copilot-learning-hub]
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Microsoft 365 Copilot overview
