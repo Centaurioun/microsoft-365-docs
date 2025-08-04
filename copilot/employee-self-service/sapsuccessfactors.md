@@ -45,7 +45,7 @@ The ESS agent acts as a front-end for consuming information from SAP SuccessFact
 
 :::image type="content" source="media/agent-and-success-factors-integration.png" alt-text="Diagram of the high-level components comprising overall solution for ESS agent and SuccessFactors integration." lightbox="media/agent-and-success-factors-integration.png":::
 
-The diagram outlines the high-level components comprising overall solution for ESS agent and SuccessFactors integration. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components and bring in the right stakeholders to set up an environment to deploy and test ESS agent.
+The diagram outlines the high-level components comprising overall solution for the ESS agent and SuccessFactors integration. There are different activities to be performed as part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it's better to spend some time initially understanding the various components and bring in the right stakeholders to set up an environment to deploy and test the ESS agent.
 
 > [!NOTE]
 > SuccessFactors integration is currently based on OData V2.0, but the latest supported version is V4.0. Microsoft Entra ID using SuccessFactors is still a prerelease version and is subject to change.
@@ -63,21 +63,21 @@ You can refer to the ESS agent deployment guide for subscription requirements fo
 |**Roles/Persona** |**Description** |**Activities performed** |**Configuration Areas** |
 |------------------|----------------|-------------------------|------------------------|
 |**SAP SF Administrator** |User performing administrative tasks. |1. Create an OAuth 2.0 client application in SuccessFactors.  <br>2. Upload the SAML certificate to OAuth 2.0 client application within SuccessFactors (SF). <br>3. Determine the API server where SF is hosted. <br>4. Confirm that maker account mapped in SAP SuccessFactors has OData API access. |SAP SuccessFactors |
-|**Application Administrator (or) Cloud Application Administrator (or) Application Owner** |User configuring single sign-on (SSO) integration. |1. Establish a Microsoft Enterprise application. <br>2. Configure SAML settings within the Enterprise application. <br>3. Obtain the Enterprise application’s SAML certificate. <br>4. Establish trust. |Azure Admin portal |
+|**Application Administrator (or) Cloud Application Administrator (or) Application Owner** |User configuring single sign-on (SSO) integration. |1. Establish a Microsoft Enterprise application. <br>2. Configure SAML settings within the Enterprise application. <br>3. Obtain the Enterprise application's SAML certificate. <br>4. Establish trust. |Azure Admin portal |
 |**Environment Maker** |User customizing the ESS agent. |1. Install and configure SAP SF extension pack. <br>2. Manage SAP SF topics. <br>3. Setup User Context. |Microsoft Copilot Studio |
 |**InfoSec/IT Infra/Change Control Board** |User committee responsible for security infrastructure changes. |Configure IT platform services such as network and firewall rules. |Network firewall policies |
 
 ### Infra set up for 3P ISV integration
 
-Most enterprise organizations secure their 3P HCMs/Knowledge Sources from external networks, as it’s critical for the line of business to protect sensitive information about employees, organizations, knowledge assets, and so on.
+Most enterprise organizations secure their 3P HCMs/Knowledge Sources from external networks, as it's critical for the line of business to protect sensitive information about employees, organizations, knowledge assets, and so on.
 
-When there’s a need to integrate these enterprise systems into ESS agent to use it as a source for providing relevant information to the end users, these systems should be accessible to the Power Platform environment where these ESS agents are hosted.
+When you need to integrate these enterprise systems into ESS agent to use it as a source for providing relevant information to the end users, these systems should be accessible to the Power Platform environment where these ESS agents are hosted.
 
 These systems must be configured with allowlists for the source IP addresses from where the ESS agent is hosted and executed, that is, Power Platform environment. For more information, see [Power Platform URLs and IP address ranges - Power Platform](/power-platform/admin/online-requirements).
 
 For more information on 3P ISV connectors, see [Managed connectors outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
 
-For SAP SuccessFactors (SF) integration, as ESS agent uses OData v2.0, it’s required to work with InfoSec to allowlist Power Platform connectors to communicate with this endpoint. If any extra data security requirements are to be met especially for OData exchange, work with your security specialists to harden the security for data in transit.
+For SAP SuccessFactors (SF) integration, as the ESS agent uses OData v2.0, you need to work with InfoSec to allowlist Power Platform connectors to communicate with this endpoint. If any extra data security requirements need to be met, especially for OData exchange, work with your security specialists to harden the security for data in-transit.
 
 ### Set up SSO for SAP SuccessFactors with Microsoft Entra
 
@@ -174,7 +174,7 @@ You can ignore this step if SSO is already established for SAP SuccessFactors wi
 
 1. Sign-in to the SuccessFactors web UI with an admin account.
 2. Go to **Manage OAuth2 Client Applications**.
-3. Select the client application that’s been created earlier.
+3. Select the client application that's been created earlier.
 4. Update the certificate to the one downloaded from Microsoft Entra ID and paste only the certificate body content without the header and footer.
 
 ### Test the connection
@@ -426,14 +426,14 @@ A common orchestrator then returns a ModelResponse and LabelResponse, which the 
 
 - Extract the input from the following response (map the Label response *value* as key in model response attribute then provide model value).
 - Provide the response to the user in a human readable form.
-- Format it properly so it looks clean and readable.
-- Use only data values from variable named as "successfactorsModelResponse" and use variable named as "successfactorsLabelResponse" for labeling the data.
+- Format the response properly to make it clean and readable.
+- Use only data values from the variable named "successfactorsModelResponse" and use the variable named "successfactorsLabelResponse" for labeling the data.
 - **Response example:**
   - Label Response:"key":"company","value":"company"
   - Model Response: "company":"12345"
   - Example Output: Your company is 12345 (Contoso Germany)
 
-The "Get Employee ID" and "Get Service Anniversary" topics are exception to this common execution method, which is further explained in their respective sections.
+The "Get Employee ID" and "Get Service Anniversary" topics are exceptions to this common execution method, which is further explained in their respective sections.
 
 Authorization for all the topics is as follows:
 
@@ -442,13 +442,13 @@ Authorization for all the topics is as follows:
 
 ### Get Base Compensation
 
-|Get Base Compensation| Details |
-| ------------------ | --------------|
-| **Description**  | Returns the users’ compensation data such as compensation ratio and salary. |
-| **Prompts**  | <li>>How much can I expect to earn annually, what is my salary? <li>Show me only my base salary details |
-| **Scenario name**|`msdyn_HRSAPSuccessFactorsHCMEmployeeGetBaseCompensationAndCompaRatio`  |
-| **Filter** | Filters on *personIdExternal* using *ESS _UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"` |
-| **Values queried** | CompaRatio <br> Currency <br> AnnualBaseSalary |
+|Get Base Compensation |Details |
+|----------------------|--------|
+|**Description**       | Returns the users' compensation data, such as compensation ratio and salary. |
+|**Prompts**           | <li>>How much can I expect to earn annually, what is my salary? <li>Show me only my base salary details |
+|**Scenario name**     |`msdyn_HRSAPSuccessFactorsHCMEmployeeGetBaseCompensationAndCompaRatio`.  |
+|**Filter**            | Filters on *personIdExternal* using *ESS _UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`. |
+|**Values queried**    | CompaRatio <br> Currency <br> AnnualBaseSalary. |
 
 **Configuration:**
 
@@ -488,13 +488,13 @@ Authorization for all the topics is as follows:
 
 ### Get Company Code 
 
-|Get Company Code  | Details |
-| ------------------ | --------------|
-| **Description**    | Returns users’ company code information. |
-| **Prompts**        | <li> What is my company code? <li> Get employee view on company code <li> Display my company code <li> Give me my company code, what is my company code? <li> Show me only my company code details |
-| **Scenario name**  |`msdyn_HRSAPSuccessFactorsHCMEmployeeGetCompanyCode` |
-| **Filter** | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id* <p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq'{userIdVal}'"`|
-| **Values queried** | CompanyCode <br> CompanyName (*No label is retrieved for company name as it is*) |
+|Get Company Code   |Details |
+|-------------------|--------|
+|**Description**    | Returns users' company code information. |
+|**Prompts**        | <li>What is my company code? <li> Get employee view on company code. <li>Display my company code <li>Give me my company code, what is my company code? <li>Show me only my company code details. |
+|**Scenario name**  |`msdyn_HRSAPSuccessFactorsHCMEmployeeGetCompanyCode`. |
+|**Filter** | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id* <p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq'{userIdVal}'"`. |
+|**Values queried** | CompanyCode. <br> CompanyName (*No label is retrieved for company name as it is*). |
 
 **Configuration**:
 
@@ -527,13 +527,13 @@ Authorization for all the topics is as follows:
 
 ### Get Cost Center
 
-|Get Cost Center| Details |
-| ------------------ | --------------|
-| **Description**    | Returns users’ current cost center. |
-| **Prompts** |<li>What is my Cost Center?<li>Can you show me the cost center I'm assigned to?<li>Can you show me my cost center?<li>Show me only my cost center details|
-| **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetCostCenter`|
-| **Filter** | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p> Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`|
-| **Values queried** | CostCenterCode <br> CostCenterName (*CostCenterName label isn't retrieved as it isn't necessary for topic*) |
+|Get Cost Center    |Details |
+|-------------------|--------|
+|**Description**    |Returns users' current cost center. |
+|**Prompts** |<li>What is my Cost Center?<li>Can you show me the cost center I'm assigned to?<li>Can you show me my cost center?<li>Show me only my cost center details. |
+|**Scenario name**  |`msdyn_HRSAPSuccessFactorsHCMEmployeeGetCostCenter`. |
+|**Filter** |Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p> Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`. |
+|**Values queried** |CostCenterCode. <br>CostCenterName (*CostCenterName label isn't retrieved as it isn't necessary for topic*). |
 
 **Configuration**:
 
@@ -566,13 +566,13 @@ Authorization for all the topics is as follows:
 
 ### Get Hire Date
 
-|Get Hire Data| Details |
-| ------------------ | --------------|
-| **Description**    | Returns the users’ hire date. |
-| **Prompts**        | <li>  When is my original start date?<li> Get my hire date<li> Get my start date<li> Show me only my hire date details   |
-| **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetHireDate`|
-| **Filter**  | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq'{userIdVal}'"`|
-| **Values queried** | HireDate   |
+|Get Hire Data      |Details |
+|-------------------|--------|
+|**Description**    |Returns the users' hire date. |
+|**Prompts**        |<li>When is my original start date? <li>Get my hire date. <li>Get my start date. <li>Show me only my hire date details. |
+|**Scenario name**  |`msdyn_HRSAPSuccessFactorsHCMEmployeeGetHireDate`. |
+|**Filter**  |Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq'{userIdVal}'"`. |
+|**Values queried** | HireDate. |
 
 **Configuration**:
 
@@ -636,20 +636,20 @@ Authorization for all the topics is as follows:
 
 ### Get Employee ID
 
-|Get Employee ID| Details |
-| ------------------ | --------------|
-| **Description** | Reads *ESS_UsetContext_Employee_Id* and returns it to the user. There's no config required for this topic. |
-| **Prompts**     | <li>What is my employee ID?<li>Show my employee ID?<li>What is my employee number? |
+|Get Employee ID |Details |
+|----------------|--------|
+|**Description** |Reads *ESS_UsetContext_Employee_Id* and returns it to the user. There's no config required for this topic. |
+|**Prompts**     |<li>What is my employee ID?<li>Show my employee ID?<li>What is my employee number? |
 
 ### Get Job Info
 
-|Get Job Info| Details |
-| ------------------ | --------------|
-| **Description** | Returns job information to the user, including Job Code, Job Title, Job Function, and Job Function Type. |
-| **Prompts**     | <li>What is my job code<li>What is job code<li>What is my role?<li>What is my job info? <li> What is my job title? <li>Show me only my job details |
-| **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetJobInfo` |
-| **Filter**| Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"` |
-| **Values queried** | JobCode<br>JobTitle<br>JobFunction<br>JobFunctionType |
+|Get Job Info       |Details |
+|-------------------|--------|
+|**Description**    | Returns job information to the user, including Job Code, Job Title, Job Function, and Job Function Type. |
+|**Prompts**        | <li>What is my job code? <li>What is a job code? <li>What is my role? <li>What is my job info? <li>What is my job title? <li>Show me only my job details. |
+|**Scenario name**  |`msdyn_HRSAPSuccessFactorsHCMEmployeeGetJobInfo`. |
+|**Filter**| Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`. |
+|**Values queried** | JobCode<br>JobTitle<br>JobFunction<br>JobFunctionType. |
 
 **Configuration**:
 
@@ -693,13 +693,13 @@ Authorization for all the topics is as follows:
 
 ### Get Position Number
 
-|Get Position Number| Details |
-| ------------------ | --------------|
-| **Description**    | Returns position number acquired from SuccessFactors. |
-| **Prompts**        |<li>What is my position ID? <li> Get my position number <li> Show me only my position details  |
-| **Scenario name**  | `msdyn_HRSAPSuccessFactorsHCMEmployeeGetPositionNumber` |
-| **Filter**   | Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`|
-| **Values queried** |JobCode  |
+|Get Position Number |Details |
+|--------------------|--------|
+|**Description**     |Returns position number acquired from SuccessFactors. |
+|**Prompts**         |<li>What is my position ID? <li> Get my position number. <li> Show me only my position details.  |
+|**Scenario name**   |`msdyn_HRSAPSuccessFactorsHCMEmployeeGetPositionNumber`. |
+|**Filter**          |Filters on *personIdExternal* using *ESS_UserContext_Employee_Id* and *user ID* using *ESS_UserContext_User_Id*<p>Expression: `"personIdExternal eq '{personIdExternalVal}' and userId eq '{userIdVal}'"`. |
+|**Values queried**  |JobCode. |
 
 **Configuration**:
 
