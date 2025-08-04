@@ -23,7 +23,7 @@ appliesto:
 >[!NOTE]
 >The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
-The Employee Self-Service (ESS) agent helps your employees by answering policy related questions, simplifying HR tasks, and assisting with IT help. The agent makes it easier to:
+The Employee Self-Service (ESS) agent answer policy-related questions, assist with IT help, and simplify HR tasks to help your employees. The agent makes it easier to:
 
 - Retrieve the right information at the right time in the flow of work. Users can access the agent in the environments they already work, including Teams and Microsoft 365 Copilot Chat.
 - Take action on essential HR and IT tasks without navigating to multiple tools and workspaces. ESS can even help run diagnostics on Microsoft 365 products and services.
@@ -31,8 +31,8 @@ The Employee Self-Service (ESS) agent helps your employees by answering policy r
 
 ## What's new
 
-|Version |Changes |
-|--------|--------|
+|Version  |Changes |
+|---------|--------|
 |1.0.0.64 |Hard agent handoff base template without context passing (Topic is disabled by default). |
 |1.0.0.66 |Internal licensing validation |
 |1.0.0.62 |ESS package name to Employee Self-Service Agent |
@@ -69,11 +69,11 @@ Before you deploy the Employee Self-Service agent, read through the documentatio
 
 ## Roles and responsibilities
 
-The ESS Agent involves multiple roles across different service areas. Operators in each of these should understand the configuration entirely for better operational efficiency.
+The ESS Agent involves multiple roles across different service areas. Operators in each of these areas should understand the configuration entirely for better operational efficiency.
 
 The **Admin** works in the Microsoft admin center to assign roles.
 
-The **Maker** works in Microsoft Copilot Studio to configure the agent. The maker sets up user context, knowledge sources (including M365 data and ISV connectors), topics, and ISV packages. All of this goes through orchestration to reach the end user.
+The **Maker** works in Microsoft Copilot Studio to configure the agent. The maker sets up user context, knowledge sources (including M365 data and ISV connectors), topics, and ISV packages. All of this information goes through orchestration to reach the end user.
 
 The **End user** accesses the Employee Self-Service agent in Microsoft 365 Chat or through Microsoft Teams.
 
