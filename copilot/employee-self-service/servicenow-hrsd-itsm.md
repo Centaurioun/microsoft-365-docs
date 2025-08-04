@@ -30,7 +30,7 @@ The Employee Self-Service agent is built on Copilot and uses AI to provide relev
 
 ## Functional synopsis
 
-ESS Agent acts as a front-end for consuming information from ServiceNow HRSD + ITSM using the Power Platform connector and following are the capabilities that’s enabled for this integration:
+ESS Agent acts as a front-end for consuming information from ServiceNow HRSD and ITSM using the Power Platform connector. The following items are the capabilities enabled for this integration:
 
 - Create an HR case
 - Get case details
@@ -46,7 +46,7 @@ ESS Agent acts as a front-end for consuming information from ServiceNow HRSD + I
 
 :::image type="content" source="media/agent-service-now-integration.png" alt-text="Diagram the high-level components comprising overall solution for ESS agent and ServiceNow HRSD integration." lightbox="media/agent-service-now-integration.png":::
 
-The previous diagram outlines the high-level components comprising overall solution for ESS agent and ServiceNow HRSD integration. There are different activities to be performed as a part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components and bring in the right stakeholders to set up an environment to deploy and test ESS Agent.
+The previous diagram outlines the high-level components comprising overall solution for ESS agent and ServiceNow HRSD integration. There are different activities to be performed as a part of initial deployment and for an ongoing operation. As the solution involves multiple technologies, it’s better to spend some time initially in understanding the various components. When you're ready, you can bring in the right stakeholders to set up an environment to deploy and test ESS Agent.
 
 ## Known issues and limitations
 
@@ -76,7 +76,7 @@ Refer to the ESS Agent deployment guide for installation of the agent and subscr
 
 ## ServiceNow configuration
 
-This section outlines the tasks required to be configured in ServiceNow by an administrator. ServiceNow integration supports several types of authentications:
+This section outlines the tasks an adminstrator needs to configure in ServiceNow. ServiceNow integration supports several types of authentications:
 
 - Basic authentication
 - Microsoft Entra ID OAuth using certificates
@@ -114,7 +114,7 @@ This authentication uses app tokens, allowing a registered Microsoft Entra ID ap
    - *email* - addressable email for user
    - *upn* - an identifier for the user
 8. Select **Add** to complete adding the claims.
-9. If this is the first time OpenId Connect being setup using claims like email, upn, there’s a confirmation screen to turn on the Microsoft Graph permissions. If you see the confirmation, check the box, and then select **Add**.
+9. If it's the first time OpenId Connect being setup using claims like email, upn, there’s a confirmation screen to turn on the Microsoft Graph permissions. If you see the confirmation, check the box, and then select **Add**.
 
 This flow completes the Microsoft Entra piece of configuration.
 
@@ -138,7 +138,7 @@ This flow completes the Microsoft Entra piece of configuration.
 
 #### Task 3: Register an Application in Microsoft Entra ID for connector usage
 
-This is the application that plays the role of a user with elevated permissions in the ServiceNow instance.
+This application plays the role of a user with elevated permissions in the ServiceNow instance.
 
 1. Sign into the Microsoft Entra admin center as a Global Administrator or Cloud App Administrator.
 2. Go to **Applications** > **App registrations**.
@@ -151,7 +151,7 @@ This is the application that plays the role of a user with elevated permissions 
 
 #### Task 4: Create a System User in ServiceNow
 
-In this task, you add a user to the Application created in task 3 (earlier in this article).
+In this task, you add a user to the Application created in task 3, earlier in this article.
 
 1. Go to **User Administration** > **Users** to create a new user.
 2. For **User ID**, use the object ID of the service principal of the application that was created in the previous task.
@@ -159,7 +159,7 @@ In this task, you add a user to the Application created in task 3 (earlier in th
 
 ### Microsoft Entra ID OAuth User sign in
 
-This is user-token based authentication where the end user can sign into Microsoft Entra ID using the ServiceNow connector, and get an access token with scope for the ServiceNow representative Microsoft Entra ID app.
+The user-token based authentication where the end user can sign into Microsoft Entra ID using the ServiceNow connector, and get an access token with scope for the ServiceNow representative Microsoft Entra ID app.
 
 Perform tasks 1 and 2 from the previous sections for Microsoft Entra ID OAuth using Certificate.
 
@@ -275,16 +275,16 @@ The following Topics are available from the ServiceNow HRSD extension pack:
 |Serial number |Topics |Description |
 |--------------|-------|------------|
 | 1  | **ServiceNow HRSD Create Case** | Creating an HR case in ServiceNow. |
-| 2  | **ServiceNow HRSD System Create Case** | This topic isn't an editable topic. Create case calls this for further processing.  |
+| 2  | **ServiceNow HRSD System Create Case** | This topic isn't an editable topic. Create case calls this topic for further processing. |
 | 3  | **ServiceNow HRSD Get Case Details** | Gets latest created case details. |
 | 4  | **ServiceNow HRSD System Get Case Details** | This topic isn't an editable topic. Get case details calls this for further processing. |
 | 5  | **ServiceNow HRSD Get Case Updates** | Get case update details in text format.</br> Not as detailed as case details. |
 | 6  | **ServiceNow HRSD Get User Cases** | List of user cases |
-| 7  | **ServiceNow HRSD System Get Cases List** | This topic isn't an editable topic. Get user cases calls this for further processing. |
-| 8  | **ServiceNow HRSD System Get Metadata Cached** |         |
-| 9  | **ServiceNow HRSD System Common Execution** |         |
-| 10 | **ServiceNow HRSD System Case Details Cache Lookup** |         |
-| 11 | **ServiceNow HRSD System Graceful Exit**  |         |
+| 7  | **ServiceNow HRSD System Get Cases List** | This topic isn't an editable topic. Get user cases calls this topic for further processing. |
+| 8  | **ServiceNow HRSD System Get Metadata Cached** |  |
+| 9  | **ServiceNow HRSD System Common Execution** |  |
+| 10 | **ServiceNow HRSD System Case Details Cache Lookup** |  |
+| 11 | **ServiceNow HRSD System Graceful Exit**  |  |
 
 ### Flows
 
@@ -362,7 +362,7 @@ The template configurations reside within a custom Dataverse table, created thro
 
 ### Understanding configurations naming
 
-- **Scenario**: The name of the scenario used as the identifier of the operation. This is the primary key for the template configuration and shouldn't be changed.
+- **Scenario**: The name of the scenario used as the identifier of the operation. This item is the primary key for the template configuration and shouldn't be changed.
 - **FilterCriteria**: This criterion is used to filter the ServiceNow table by applying the "Operator" on a specific "FieldName". "VariableName" refers to the name of the variable passed from the bot topics containing the actual value. If this variable isn't mandatory, the bot author may choose not to send it.
 - **SortCriteria**: Used to sort the list of records from a ServiceNow Table on "FieldName" by "Operator".
 - **Limit**: Maximum number of records to return.
