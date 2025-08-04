@@ -343,7 +343,7 @@ The Get Ticket Details feature lets users retrieve comprehensive information abo
 
 #### Get Ticket List
 
-The Get Ticket List feature lets users retrieve a history of user tickets. This functionality provides essential details about each ticket, including its unique number, a brief description, the status, and the date of the last update.
+The Get Ticket List feature lets users retrieve a history of user tickets. This functionality provides essential details about each ticket, like its unique number, a brief description, the status, and the date of the last update.
 
 #### Create Ticket
 
@@ -357,7 +357,7 @@ Post-Private Preview, users can add attachments to the ticket, letting them prov
 
 ### ServiceNow ITSM template configurations
 
-These JSON configurations are intended for the ServiceNow APIs within the backend, facilitating the linkage between input and output variables from and to the bot. Each scenario has a corresponding JSON configuration, enabling extension pack users to adjust the parameters utilized in the APIs without altering anything in the backend workflows. The way the backend interacts with bot topics regarding input and output variables is defined within these configurations.
+These JSON configurations are intended for the ServiceNow APIs within the backend. These configurations facilitate the linkage between input and output variables from and to the bot. Each scenario has a corresponding JSON configuration, enabling extension pack users to adjust the parameters utilized in the APIs without altering anything in the backend workflows. The way the backend interacts with bot topics regarding input and output variables is defined within these configurations.
 
 The template configurations reside within a custom Dataverse table, created through the ESS base package upon installation in an environment. Extension packs contribute extra rows to this table, each containing a stringified JSON configuration for a specific scenario. These configurations are retrieved at runtime using the Dataverse connectors within Power Automate flows.
 
