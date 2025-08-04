@@ -270,7 +270,7 @@ To set up templates, follow these steps:
 4. Select **Employee Self Service HR SuccessFactors** extension pack.
 5. Select **Open** from the dialog popup.
 6. Select **Manage** in the Configuration section.
-7. All the template configurations available are listed in the Power Apps, so select each of the "Get" templates to configure the right entities and paths. The following is an example of the "Get" configuration template:
+7. All the template configurations available are listed in the Power Apps, so select each of the "Get" templates to configure the right entities and paths. The following code is an example of the "Get" configuration template:
 
    ```json
    { 
