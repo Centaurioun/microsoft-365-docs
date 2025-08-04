@@ -71,7 +71,7 @@ You can refer to the ESS agent deployment guide for subscription requirements fo
 
 Most enterprise organizations secure their 3P HCMs/Knowledge Sources from external networks, as the line of business must protect sensitive information about employees, organizations, knowledge assets, and so on.
 
-When you need to integrate these enterprise systems into ESS agent to use it as a source for providing relevant information to the end users, these systems should be accessible to the Power Platform environment where these ESS agents are hosted.
+When you need to integrate these enterprise systems into ESS agent to use it as a source for providing relevant information to the end users, these systems should be accessible to the Power Platform environment hosting these ESS agents.
 
 These systems must be configured with allowlists for the source IP addresses from where the ESS agent is hosted and executed, that is, Power Platform environment. For more information, see [Power Platform URLs and IP address ranges - Power Platform](/power-platform/admin/online-requirements).
 
