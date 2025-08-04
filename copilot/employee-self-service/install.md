@@ -20,15 +20,15 @@ appliesto:
 
 # Install the Employee Self-Service agent
 
->[!NOTE]
->The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
+> [!NOTE]
+> The Employee Self-Service agent is currently in limited public preview. Deployment processes are subject to change before this product becomes generally available.
 
 After completing the required steps in the [preparation](prepare.md) stage, you can install the Employee Self-Service (ESS) agent in a specific Power Platform environment.
 
 ## Activities summary
 
-|Role |Activities to perform |Configuration area |
-|-----|----------------------|-------------------|
+|Role                      |Activities to perform |Configuration area |
+|--------------------------|----------------------|-------------------|
 |Environment administrator |- Select the right environment </br>- Set up a preferred solution </br>- Install the ESS agent |Microsoft Copilot Studio |
 
 ## Select the right environment
@@ -50,14 +50,14 @@ After completing the required steps in the [preparation](prepare.md) stage, you 
 ## Install the ESS agent
 
 1. Go to the Copilot Studio home page.
-1. Select **Create** in the navigation pane. This should show the **Employee Self-Service** agent on the **Explore agents** page.
+1. Select **Create** in the navigation pane. This action should show the **Employee Self-Service** agent on the **Explore agents** page.
 1. Select the **Employee Self-Service** agent and choose **Install** in the popup.
 
 The ESS agent is now installed in your selected Power Platform environment with a preferred solution that can be exported and imported into another environment.
 
 ## Installation checklist
 
-|Role |Verification steps |Result |
-|-----|-------------------|-------|
+|Role                      |Verification steps |Result |
+|--------------------------|-------------------|-------|
 |Environment Administrator |1. Sign in to Copilot Studio. </br>2. Select Agents to confirm whether your newly created agent is listed. </br>3. Confirm the Employee Self-Service agent is listed. |Pass/Fail |
-|Environment Maker |Access the newly created agent from Copilot Studio. |Pass/Fail |
+|Environment Maker         |Access the newly created agent from Copilot Studio. |Pass/Fail |
