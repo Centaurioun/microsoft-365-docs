@@ -81,7 +81,7 @@ To provide feedback on the Employee Self-Service (ESS) Agent, you can use the th
 
 ## Does the data retrieved from 3P ISVs pass through Copilot RAI?
 
-If the ISV data is returned directly, such as inserting values like employee numbers into predefined templates without modification, it bypasses Copilot RAI. However, if the data is processed using a large language model (LLM) to generate a summarized or narrative response, such as explaining the meaning of a specific policy along with its value, then it goes through the summarization node, which triggers Copilot RAI. This approach is also used for content like knowledge base articles, where the system may either return the article as-is or synthesize a concise summary using LLMs. In short, Copilot RAI is engaged only when LLM-based summarization or transformation of ISV data is involved.
+If the ISV data is returned directly, such as inserting values like employee numbers into predefined templates without modification, it bypasses Copilot RAI. However, if the data is processed using a large language model (LLM) to generate a summarized or narrative response, such as explaining the meaning of a specific policy along with its value, then it goes through the summarization node. This action triggers Copilot RAI. This approach is also used for content like knowledge base articles, where the system may either return the article as-is or synthesize a concise summary using LLMs. In short, Copilot RAI is engaged only when LLM-based summarization or transformation of ISV data is involved.
 
 ## What are plugins and how does Employee Self-Service use them?
 
