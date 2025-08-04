@@ -44,7 +44,7 @@ Preparation is the first step to deploying the Employee Self-Service (ESS) agent
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Power Platform administrator.
 1. Create a new environment, or select an existing environment to install the ESS agent.
 1. Select **+New** in the ribbon to create a new environment. Configure the following features:
-    1. **Make this enironment a Managed Environment**: Enable or disable based on your governance.
+    1. **Make this environment a Managed Environment**: Enable or disable based on your governance.
     1. **Get new features early**: Not required.
     1. Add a **Dataverse data store**.
 1. Under **Access**, select **Security roles**.
@@ -55,13 +55,13 @@ Preparation is the first step to deploying the Employee Self-Service (ESS) agent
 > Environment Makers can't install new agents. Only the environment administrators can install new agents.
 
 > [!IMPORTANT]
-> Important: Familiarize yourself with the Power Platform subscription plans and billing policies for your tenant. It’s recommended to perform initial [capacity planning](prerequisites.md#capacity-planning) before enabling and configuring the ESS agent to make sure you won’t incur additional billing.
+> Important: Familiarize yourself with the Power Platform subscription plans and billing policies for your tenant. We recommend you perform initial [capacity planning](prerequisites.md#capacity-planning) before enabling and configuring the ESS agent to make sure you don't incur additional billing.
 
 ## Infrastructure setup for third-party ISV integration
 
-Most organizations have secured their third-party HR systems and knowledge sources from external networks to protect sensitive information about employees, organizations, knowledge assets, and other data.
+Most organizations secure their third-party HR systems and knowledge sources from external networks to protect sensitive information about employees, organizations, knowledge assets, and other data.
 
-You’ll need to make these systems accessible to the Power Platform environment where the ESS agent is hosted in order to integrate them into the agent.
+You need to make these systems accessible to the Power Platform environment where the ESS agent is hosted in order to integrate them into the agent.
 
 These systems must be configured with allowlists for the source IP addresses from the Power Platform environment where the ESS agent is hosted and executed.
 
@@ -71,10 +71,10 @@ These systems must be configured with allowlists for the source IP addresses fro
 
 ## Preparation checklist
 
-Use the following checklist to make sure you’re ready to move on to the next stage of deployment. If any of these checks fail, you’ll need to repeat the steps in this article.
+Use the following checklist to make sure you're ready to move on to the next stage of deployment. If any of these checks fail, you need to repeat the steps in this article.
 
 |Role                      |Verification steps |Result |
 |--------------------------|-------------------|-------|
-|Environment administrator |1. Sign into the Power Platform admin center. </br>2. Select Environments to confirm your newly created environment is listed. </br>3. Confirm the following for your new environment: Dataverse= yes, release cycle = standard. |Pass/Fail |
-|Environment administrator |Confirm you have the ability to install agents from Copilot Studio. |Pass/Fail |
+|Environment administrator |1. Sign into the Power Platform admin center. </br>2. Select Environments to confirm your newly created environment is listed. </br>3. Confirm the following settings for your new environment: Dataverse= yes, release cycle = standard. |Pass/Fail |
+|Environment administrator |Confirm agents can be installed from Copilot Studio. |Pass/Fail |
 |Environment maker         |Access your newly created environment from Copilot Studio. |Pass/Fail |
