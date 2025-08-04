@@ -29,7 +29,7 @@ Copilot in Microsoft 365 admin centers harnesses the value of generative AI to b
 ## Microsoft 365 Copilot in the Microsoft 365 admin center
 Watch the following video to see the different Microsoft 365 Copilot settings and configuratoin options in the Microsoft 365 admin center. 
  
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=28be8725-2d69-4d93-a07d-8324c5083c46]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=28be8725-2d69-4d93-a07d-8324c5083c46]
 
 ## Before you begin
 
