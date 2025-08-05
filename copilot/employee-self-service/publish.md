@@ -1,9 +1,10 @@
 ---
 title: Publish the Employee Self-Service agent to your organization
 f1.keywords: NOCSH
-ms.author: daisyfeller
-author: daisyfell
-manager: triciagill
+ms.author: heidip
+author: MicrosoftHeidi
+manager: dansimp
+ms.reviewer: semani
 ms.date: 7/3/2025
 audience: Admin
 ms.topic: article
@@ -42,19 +43,19 @@ Terms to know:
 1. Before you export the solution, it needs to be published or deployed using the Azure DevOps CI/CD pipelines. This article covers the manual publishing option. See [the Power Platform documentation](/power-platform/alm/pipelines) to understand the Azure DevOps CI/CD pipeline deployment.
 1. Select **Publish** to publish all customizations.
 1. Select **Next** to export the solution.
-1. Specify the version number. It's recommended to export as **Managed** if the solution will deploy to another nondev environment.
-1. You can see the export status on the **Solutions** page. The status banner will update when the export is complete.
+1. Specify the version number. We recommend you export as **Managed** if the solution deploys to another nondev environment.
+1. You can see the export status on the **Solutions** page. The status banner updates when the export completes.
 1. Select **Download** to download the exported solution and save it in a preferred folder.
 
 >[!IMPORTANT]
->[No edits are allowed in the downloaded package, as they will cause the upload to fail.]
+>[No edits are allowed in the downloaded package, as they cause the upload to fail.]
 
 9. Choose the desired Power Platform environment to deploy and test this exported solution.
-10. Ensure all the dependencies required for customization are already available in the target environment. If the dependencies aren't available, imports will fail. The following dependencies need to be installed in the desired environment:
+10. Ensure all the dependencies required for customization are already available in the target environment. If the dependencies aren't available, imports fail. The following dependencies need to be installed in the desired environment:
     1. ESS agent
     1. Any third-party ISV packages used in customization
 11. Select **Solutions** options from the left navigation pane within the Power Platform environment you selected.
-12. Select the **Import Solution** option to import the file you downloaded in step nine.
+12. Select the **Import Solution** option to import the file you downloaded in step 9.
 13. Select the downloaded file using the **Browse** button in the right pane.
 
 ## Set up authentication
@@ -66,7 +67,7 @@ The ESS agent is designed to run on Teams channels and Microsoft 365 Copilot cha
 
 By default, the ESS agent uses Microsoft Entra authentication. Therefore, the default option is **Authenticate with Microsoft**.
 
-If your organization needs to use a different identity provider than Microsoft Entra, then you'll need to choose the **Authenticate manually** option and provide the following information:
+If your organization needs to use a different identity provider than Microsoft Entra, then you need to choose the **Authenticate manually** option and provide the following information:
 
 - Service provider
 - Client ID
@@ -77,14 +78,14 @@ If your organization needs to use a different identity provider than Microsoft E
 ## Publish the ESS agent
 
 >[!NOTE]
->If your organization's Teams app deployment has its own application lifecycle management/ DevOps process in place for deploying and testing new apps, you have the option to side-load apps into the Teams app store using the **Download.zip** option. Consult your organization's Teams app deployment policies and work with your Teams administrators.
+>If your organization's Teams app deployment has its own application lifecycle management/ DevOps process in place for deploying and testing new apps, you can side-load apps into the Teams app store using the **Download.zip** option. Consult your organization's Teams app deployment policies and work with your Teams administrators.
 
 1. Open the **Employee Self-Service** agent in Copilot Studio.
 1. Verify the customizations from the imported solution are in place.
 1. Select **Channels** in the top navigation bar.
 1. Choose **Microsoft Teams**.
 1. Select **Edit details** in the details pane for Microsoft Teams. Then check **Make agent available in Microsoft 365 Copilot.**
-1. Select the **Availability options** button. Then choose whether to share the agent to everyone in your organization or only to a specific set of users. It's recommended to start with a small group of pilot users who can test and provide feedback on the configurations.
+1. Select the **Availability options** button. Then choose whether to share the agent to everyone in your organization or only to a specific set of users. We recommend you start with a small group of pilot users who can test and provide feedback on the configurations.
 1. Choose whether to send email invitations to selected users. You can also choose to show users that this agent is built within Power Platform.
 1. Select **Submit for admin approval** to send the ESS Agent Teams app to your administrator.
 1. Confirm your submission.
@@ -94,7 +95,7 @@ If your organization needs to use a different identity provider than Microsoft E
 Approval is the final step to deploy the ESS agent to your users through Integrated apps.
 
 1. Sign in to the Microsoft admin center as an administrator with access to Integrated apps.
-1. Select **Integrated apps** under **Settings**. You'll see a notification to approve the published agent.
+1. Select **Integrated apps** under **Settings**. You see a notification to approve the published agent.
 1. Select **Review request**.
 1. Select the appropriate actions to publish the ESS agent.
 1. Confirm publish or update for the app.
@@ -110,21 +111,21 @@ Approval is the final step to deploy the ESS agent to your users through Integra
 
 ## Publishing checklist
 
-|Role |Verification steps |Result |
-|-----|-------------------|-------|
-|Environment Maker |1. Use the **Copy link** option to get the link to the ESS agent.</br> 2. Paste the link into a browser.</br> 3. This link redirects to the Teams interface for the ESS agent, which provides a link for Microsoft 365 Copilot Chat.</br> This is an option to mitigate any publishing lags. |Pass/Fail|
+|Role              |Verification steps |Result |
+|------------------|-------------------|-------|
+|Environment Maker |1. Use the **Copy link** option to get the link to the ESS agent. </br>2. Paste the link into a browser. </br>3. This link redirects to the Teams interface for the ESS agent, which provides a link for Microsoft 365 Copilot Chat. </br>This action is an option to mitigate any publishing lags. |Pass/Fail |
 
-You'll need to follow the publishing steps again if any of these steps fail.
+You need to follow the publishing steps again if any of these steps fail.
 
 ## Uninstall the ESS agent
 
-Follow these steps in case you need to delete the ESS agent.
+Follow these steps if you need to delete the ESS agent:
 
 1. Sign in to Copilot Studio.
 1. Select the environment where ESS is installed and needs to be uninstalled.
 1. Select **Agents** from the left navigation.
 1. Select **Employee Self Service (Preview)**.
-1. In the ESS agent page, select the ellipsis (**...**) in the upper right pane adjacent to **Test**.
+1. In the ESS agent page, select the ellipsis (**...**) in the upper right pane next to **Test**.
 1. Select the **Delete** option from the dropdown.
 1. A popup window appears directing you to Power Apps Solutions.
 1. Select **Go to Power Apps Solutions**.
