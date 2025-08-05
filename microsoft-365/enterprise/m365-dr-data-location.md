@@ -104,7 +104,7 @@ If a customer has a _Microsoft 365 Multi-Geo Capabilities_ data residency offeri
 
 The _Tenant’s Data Location Card_ will display the following message:
 
-:::image type="content" source="media\data-residency\m365-dlc-multigeo-0725.png" alt-text="Screenshot of Data Location View For Multi-Geo Customers":::
+:::image type="content" source="media\data-residency\m365-dlc-multigeo-0725.png" alt-text="Screenshot of Data Location View For Multi-Geo Customers.":::
 
 ## Microsoft 365 Services stored in "Europe"
 
