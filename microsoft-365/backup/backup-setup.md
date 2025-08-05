@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/07/2025
+ms.date: 08/01/2025
 ms.topic: install-set-up-deploy
 ms.service: microsoft-365-backup
 ms.custom: backup
