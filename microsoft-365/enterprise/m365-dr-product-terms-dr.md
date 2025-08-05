@@ -28,7 +28,7 @@ _Microsoft Privacy and Security Product Terms_ included with Microsoft's Cloud P
 
 **Terms apply to**: _Tenants_ with a _Default Geography_, regardless of date of initial provisioning, of Australia, Brazil, Canada, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, United States, and the European Union.
 
-**Commitments Period**: The commitment period is equal to the length of the customer’s agreement with Microsoft. Typically, this is 1-3 years.
+**Commitments Period**: The commitment period is equal to the length of the customer’s agreement with Microsoft. Typically, this period is 1-3 years.
 
 [_Microsoft 365 Core Services_](m365-dr-overview.md#table-1-definitions-and-terms): Services covered by the _Microsoft Privacy and Security Product Terms_ are:
 
