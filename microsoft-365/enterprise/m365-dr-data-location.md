@@ -76,7 +76,7 @@ A discrepancy may appear between _Current Geography_ and _Committed Geography_ i
 
     **Example**: If an Indonesian customer no longer meets the required number of _ADR_ licenses needed to retain in scope customer data in Indonesia, the _Tenant’s Committed Geography_ will change from "**Indonesia**" to "**No Commitment**" in their _Data Location Card_.
 
-    :::image type="content" source="media\data-residency\m365-dlc-adr-insufficient-seat-coverage-0725.png" alt-text="Screenshot of Data Location View For Customer With Insuffienct ADR Seat Coverage":::
+    :::image type="content" source="media\data-residency\m365-dlc-adr-insufficient-seat-coverage-0725.png" alt-text="Screenshot of Data Location View For Customer With Insuffienct ADR Seat Coverage.":::
 
 1. **A _Tenant’s Current Geography_ for the Microsoft 365 services displays a _Local Region Geography_, but its _Committed Geography_ displays a _Macro Region Geography_**. In this case, the _Tenant’s_ in scope customer data is compliant with the _Tenant’s Committed Geography_. Information about the _Tenant’s_ current data location (that is, _Current Geography_) is more granular, indicating a specific location or set of locations.
 
