@@ -9,6 +9,9 @@ manager: laurawi
 ms.date: 03/06/2025
 ms.reviewer: cabailey, ruihu
 audience: Admin
+role: administrator, business-owner, ai-engineer
+customer-intent: As an IT admin, I want to prepare my organization for Microsoft 365 Copilot.
+level: intermediate
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
