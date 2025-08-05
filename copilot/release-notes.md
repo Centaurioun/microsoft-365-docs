@@ -35,7 +35,7 @@ Updates released between July 22, 2025, and August 5, 2025.
 - **Admin pre-approval for trusted declarative agents** [Web]
 
   Admins can now pre-approve specific agents so their actions are always allowed without extra confirmation. This reduces interruptions and helps ensure a smooth workflow in integrated apps.
- <a href="/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide" target="_blank">Learn more.</a>
+ <a href="/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps" target="_blank">Learn more.</a>
 - **Discover and install Copilot agents easily** 
 
   Users in Word and PowerPoint can seamlessly find and install Copilot agents directly from the Unified App Store.
@@ -54,7 +54,7 @@ Updates released between July 22, 2025, and August 5, 2025.
 - **Fine-tune models with tenant data** 
 
   Developers and makers can fine-tune a model used in Microsoft 365 Copilot using their tenant data.
- <a href="https://learn.microsoft.com/copilot/microsoft-365/copilot-tuning-overview" target="_blank">Learn more.</a>
+ <a href="/copilot/microsoft-365/copilot-tuning-overview" target="_blank">Learn more.</a>
 - **Get relevant calendar results by time period** [Windows, Web]
 
   Quickly summarize meetings for a specific day to stay on top of your schedule and focus on the events that matter most.
@@ -83,7 +83,7 @@ Updates released between July 22, 2025, and August 5, 2025.
 - **Onboard SharePoint Agents as a PayG scenario in CCS** [Web]
 
   This feature introduces SharePoint Agents to the Pay-as-you-go tab under Copilot → Billing & usage, aligning with the existing workflow used for Microsoft 365 Copilot Chat. Administrators will gain the ability to manage and monitor SharePoint Agent consumption through the familiar Pay-as-you-go interface, ensuring consistent oversight across Copilot experiences. Integration with the SharePoint backend via API enables precise usage tracking and billing for this new scenario.
- <a href="/microsoft-365/services/pay-as-you-go-services?view=o365-worldwide" target="_blank">Learn more.</a>
+ <a href="/microsoft-365/services/pay-as-you-go-services" target="_blank">Learn more.</a>
 ### Microsoft 365 Copilot App
 - **Ask Microsoft 365 Copilot for insights using Click to Do** [Windows]
 
@@ -7726,3 +7726,4 @@ Updates released between December 18, 2024, and January 7, 2025.
 - **Use voice prompts for assistance** [Windows, Web, Mac]  
 
   Use voice to dictate into the Copilot chat prompt field.
+
