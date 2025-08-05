@@ -88,7 +88,7 @@ A discrepancy may appear between _Current Geography_ and _Committed Geography_ i
 
     **Example**: A _Tenant_ with a _Default Geography_ of Laos, that isn't currently eligible to purchase _ADR_ or _Multi-Geo_ and doesn't qualify for data residency based on _Product Terms_ or _EUDB_ will see a _Current Geography_ where their in scope customer data is currently stored, and "**No Commitment**" in the _Committed Geography_ field.
 
-    :::image type="content" source="media\data-residency\m365-dlc-not-eligible-for-durable-commitment-0725.png" alt-text="Screenshot of Data Location View For Customer With No Durable Commitments On Data Location":::
+    :::image type="content" source="media\data-residency\m365-dlc-not-eligible-for-durable-commitment-0725.png" alt-text="Screenshot of Data Location View For Customer With No Durable Commitments On Data Location.":::
 
 ## Microsoft 365 Services without a _Current Geography_ or _Committed Geography_
 
