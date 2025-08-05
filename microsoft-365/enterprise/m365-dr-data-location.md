@@ -82,7 +82,7 @@ A discrepancy may appear between _Current Geography_ and _Committed Geography_ i
 
     **Example**: A French _Tenant_ with a _Current Geography_ of "**France**" and a _Committed Geography_ of "**European Union/EFTA**". Since "**France**" is part of the _European Union_, in scope customer data is also within the "**European Union/EFTA**". In this example, "**France**" is a more specific and detailed location of where in scope customer data is stored.
 
-    :::image type="content" source="media\data-residency\m365-dlc-committed-geography-macro-region-0725.png" alt-text="Screenshot of Data Location View For Customer With Macro Region Geography for Committed Geography":::
+    :::image type="content" source="media\data-residency\m365-dlc-committed-geography-macro-region-0725.png" alt-text="Screenshot of Data Location View For Customer With Macro Region Geography for Committed Geography.":::
 
 1. **No data location is displayed under the _Committed Geography_ field**: In this case, information about the _Tenant’s Current Geography_ is accurate, and the _Tenant_ simply doesn't have any _Durable Commitment on Data Location_.
 
