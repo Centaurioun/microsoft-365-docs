@@ -108,7 +108,7 @@ In the **Integrated apps** section of the [Microsoft 365 admin center](/microsof
 For more information, see the following articles:
 
 - [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps)
-- [Extend Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/)
+- [Microsoft 365 Copilot extensibility overview](/microsoft-365-copilot/extensibility/)
 - [How Microsoft 365 Copilot can work with your external data](https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-microsoft-365-copilot-can-work-with-your-external-data/ba-p/3937645)
 
 ## How does Microsoft 365 Copilot protect organizational data?
