@@ -37,6 +37,7 @@ The _Data Location Card_ will display three columns outlining the covered _Servi
 The _Current Geography_ refers to the location where the in scope customer data is currently stored, while the _Committed Geography_ refers to the location where Microsoft will store in scope customer data based on the [data residency commitments applicable to the _Tenant_](m365-dr-overview.md#overview-of-data-residency).
 
 ## Finding The Commitments Applicable to a Microsoft 365 Service
+
 Different Microsoft 365 services may be covered by different commitments depending on several factors, including the date of a customer’s subscription, the date that a _Tenant_ was provisioned, the _Default Geography_ of a _Tenant_, and if _Product Terms_ apply to certain Microsoft 365 services. The data location on the _DLC_ will display the most conservative _Durable Commitment on Data Location_.
 
 For simplicity, the _Data Location Card_ only shows a single _Committed Geography_ based on a customer’s various commitments for their _Tenant_.
@@ -97,10 +98,10 @@ If a customer has a _Microsoft 365 Multi-Geo Capabilities_ data residency offeri
 
 The _Tenant’s Data Location Card_ will display the following message:
 
-:::image type="content" source="media\data-residency\m365-dlc-multi-geo-0725.png" alt-text="Screenshot of Data Location View For Multi-Geo Customers":::
+:::image type="content" source="media\data-residency\m365-dlc-multigeo-0725.png" alt-text="Screenshot of Data Location View For Multi-Geo Customers":::
 
 ## Microsoft 365 Services stored in “Europe”
 
-Certain _Tenants_ may have their in scope customer data stored in “**Europe**” but may not be provided with the _EUDB_ commitment based on the _Tenant’s Default Geography_. In these scenarios, users will see a _Current Geography_ of “**Europe**” and an information message stating “This tenant does not have an [EU Data Boundary](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/microsoft-product-and-services/security/pdf/eu-data-boundary-for-the-microsoft-cloud-frequently-asked-questions-updated-february-2025.pdf?df=df) (EUDB) data residency commitment.” at the bottom of the _DLC_. [Click here](privacy/eudb/eu-data-boundary-learn.md#how-to-configure-services-for-use-in-the-eu-data-boundary) for more information on _EUDB_ eligibility. For more information on _EUDB_ commitments, refer to the [Microsoft EU Data Boundary documentation](https://www.microsoft.com/trust-center/privacy/european-data-boundary-eudb?msockid=17b6c7f9a50068231a1fd4dea4ba694a) in the Microsoft Trust Center.
+Certain _Tenants_ may have their in scope customer data stored in “**Europe**” but may not be provided with the _EUDB_ commitment based on the _Tenant’s Default Geography_. In these scenarios, users will see a _Current Geography_ of “**Europe**” and an information message stating “This tenant does not have an [EU Data Boundary] (EUDB) data residency commitment.” at the bottom of the _DLC_. [Click here](/privacy/eudb/eu-data-boundary-learn.md#how-to-configure-services-for-use-in-the-eu-data-boundary) for more information on _EUDB_ eligibility. For more information on _EUDB_ commitments, refer to the [Microsoft EU Data Boundary documentation](https://www.microsoft.com/trust-center/privacy/european-data-boundary-eudb?msockid=17b6c7f9a50068231a1fd4dea4ba694a) in the Microsoft Trust Center.
 
 :::image type="content" source="media\data-residency\m365-dlc-no-eudb-commitment-0725.png" alt-text="Screenshot of Data Location View For Customer With No EUDB Commitment":::
