@@ -70,7 +70,7 @@ A discrepancy may appear between _Current Geography_ and _Committed Geography_ i
 
     Data residency based on _Product Terms_ doesn't include data migration into _Local Region Geographies_. _Tenants_ remain eligible for a data residency commitment for in scope customer data associated with _Microsoft 365 Core Services_ in their respective _Local Region Geography_—once their in scope customer data has been migrated to that location. To initiate migration, customers must purchase the required number of _ADR_ licenses and opt-in to the migration process.
 
-    :::image type="content" source="media\data-residency\m365-dlc-no-legacy-move-opt-in-0725.png" alt-text="Screenshot of Data Location View For Customer Who Did Not Opt-in To Legacy Move Program":::
+    :::image type="content" source="media\data-residency\m365-dlc-no-legacy-move-opt-in-0725.png" alt-text="Screenshot of Data Location View For Customer Who Did Not Opt-in To Legacy Move Program.":::
 
 1. **_ADR_ [licensing requirements](advanced-data-residency.md#licensing-requirements) are not met**. If a _Tenant_ was once covered by an _ADR_ commitment, and fails to meet the [licensing requirements](advanced-data-residency.md#licensing-requirements) – the _Tenant’s Data Location Card_ will reflect this change in the _Committed Geography_.
 
