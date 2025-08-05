@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: mandia
 author: MandiOhlinger
 manager: laurawi
-ms.date: 08/05/2025
+ms.date: 08/5/2025
 audience: Admin
 ms.reviewer: briandesouza
 ms.topic: get-started
@@ -29,14 +29,14 @@ This page lists the latest features and improvements for Microsoft 365 Copilot. 
 ## [All features](#tab/all)
 <!--- All features regardless of platform go here  -->
 <!-- 84976,94586,83228,97391,98372,95029,64023,99774,97856,95297,100348,100344,100339,100338,100350,99397,99368,98331,97241,96111,95253,84428,79743,78252,78115,78114,78099,84472 -->
-## August 4, 2025
-Updates released between July 22, 2025, and August 4, 2025.
+## August 5, 2025
+Updates released between July 22, 2025, and August 5, 2025.
 ### Copilot extensibility
 - **Admin pre-approval for trusted declarative agents** [Web]
 
   Admins can now pre-approve specific agents so their actions are always allowed without extra confirmation. This reduces interruptions and helps ensure a smooth workflow in integrated apps.
- <a href="/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps" target="_blank">Learn more.</a>
-- **Discover and install Copilot agents easily**
+ <a href="/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide" target="_blank">Learn more.</a>
+- **Discover and install Copilot agents easily** 
 
   Users in Word and PowerPoint can seamlessly find and install Copilot agents directly from the Unified App Store.
  <a href="/copilot/microsoft-365/copilot-agent-install" target="_blank">Learn more.</a>
@@ -44,17 +44,17 @@ Updates released between July 22, 2025, and August 4, 2025.
 
   Enjoy an improved agent builder experience with a full-screen view that streamlines the process of creating and managing your agents.
  <a href="/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build" target="_blank">Learn more.</a>
-- **Enhanced adaptive card capabilities in declarative agents**
+- **Enhanced adaptive card capabilities in declarative agents** 
 
   Developers now have access to enhanced adaptive card functionalities—including task modules, stage view, inline actions, and charts—directly in declarative agents for richer app experiences.
  <a href="/training/modules/copilot-declarative-agent-action-api-plugin-adaptive-cards-vsc/" target="_blank">Learn more.</a>
 - **Enhanced Q&A accuracy for SharePoint files** [Windows, Web]
 
   Improve the precision of Q&A interactions on SharePoint files that include tables, comments, and formatting. Benefit from more relevant and insightful responses whether you're working with Word, PDF, or PowerPoint files.
-- **Fine-tune models with tenant data**
+- **Fine-tune models with tenant data** 
 
   Developers and makers can fine-tune a model used in Microsoft 365 Copilot using their tenant data.
- <a href="/copilot/microsoft-365/copilot-tuning-overview" target="_blank">Learn more.</a>
+ <a href="https://learn.microsoft.com/copilot/microsoft-365/copilot-tuning-overview" target="_blank">Learn more.</a>
 - **Get relevant calendar results by time period** [Windows, Web]
 
   Quickly summarize meetings for a specific day to stay on top of your schedule and focus on the events that matter most.
@@ -66,7 +66,7 @@ Updates released between July 22, 2025, and August 4, 2025.
 
   Easily discover optimal meeting times and streamline Outlook handoffs with intelligent calendar suggestions that make scheduling a breeze.
  <a href="https://support.microsoft.com/office/how-do-i-use-the-the-scheduling-assistant-to-find-meeting-times-bdd6c165-4186-45f1-ad9e-5af067ac69a3" target="_blank">Learn more.</a>
-- **Semantically index more document pages**
+- **Semantically index more document pages** 
 
   With improved indexing, P99 documents can now include up to 180,000 characters (about 90-100 pages) for more comprehensive document insights, while P99.99 documents support up to 1.8 million characters (about 900–1,000 pages), which is a significant increase from the previous 18-20 page limit.
  <a href="/microsoftsearch/semantic-index-for-copilot" target="_blank">Learn more.</a>
@@ -79,11 +79,11 @@ Updates released between July 22, 2025, and August 4, 2025.
 
   Prevent agents from using model-trained knowledge by turning off internal knowledge, ensuring responses are based on specified grounded sources.
  <a href="/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-knowledge#prioritize-your-knowledge-sources-over-general-knowledge" target="_blank">Learn more.</a>
-### Microsoft 365 Admin Center
+### Microsoft 365 admin center
 - **Onboard SharePoint Agents as a PayG scenario in CCS** [Web]
 
   This feature introduces SharePoint Agents to the Pay-as-you-go tab under Copilot → Billing & usage, aligning with the existing workflow used for Microsoft 365 Copilot Chat. Administrators will gain the ability to manage and monitor SharePoint Agent consumption through the familiar Pay-as-you-go interface, ensuring consistent oversight across Copilot experiences. Integration with the SharePoint backend via API enables precise usage tracking and billing for this new scenario.
- <a href="/microsoft-365/services/pay-as-you-go-services" target="_blank">Learn more.</a>
+ <a href="/microsoft-365/services/pay-as-you-go-services?view=o365-worldwide" target="_blank">Learn more.</a>
 ### Microsoft 365 Copilot App
 - **Ask Microsoft 365 Copilot for insights using Click to Do** [Windows]
 
@@ -98,24 +98,24 @@ Updates released between July 22, 2025, and August 4, 2025.
   Generate sharing links for your agents in Business Chat. If the recipient doesn't have the agent, they'll be directed to the Microsoft 365 application catalog to install it. If they do, the agent will open directly in Microsoft 365 Copilot Business Chat.
  <a href="https://support.microsoft.com/topic/how-to-share-your-agent-44981c08-ab64-43f1-bcf8-ebadfc5469cc" target="_blank">Learn more.</a>
 ### Microsoft Intune
-- **Analyze error codes efficiently**
+- **Analyze error codes efficiently** 
 
   Use Copilot to analyze Intune error codes from device configuration profiles, compliance policies, and app installations, simplifying troubleshooting.
  <a href="/intune/intune-service/copilot/copilot-devices" target="_blank">Learn more.</a>
-- **Compare device settings to uncover issues**
+- **Compare device settings to uncover issues** 
 
   Easily compare settings on two devices using Copilot in Intune to identify potential misconfigurations.
  <a href="/intune/intune-service/copilot/copilot-devices" target="_blank">Learn more.</a>
-- **Get device summaries with Copilot**
+- **Get device summaries with Copilot** 
 
   Access device-specific information such as installed apps and group membership using Copilot in Intune for better device management.
  <a href="/intune/intune-service/copilot/copilot-devices" target="_blank">Learn more.</a>
 ### PowerPoint
-- **Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations now** [Mac, Windows:Web]
+- **Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations now** [Mac, Windows, Web]
 
   Once you integrate your organization's assets into a Sharepoint OAL (Organization Asset Library) you will be able to create presentations with your organization's image.
  <a href="/sharepoint/connect-organizational-asset-libraries-to-copilot" target="_blank">Learn more.</a>
-- **Copilot uses Enterprise assets hosted on Templafy when creating presentations now** [Mac, Windows:Web]
+- **Copilot uses Enterprise assets hosted on Templafy when creating presentations now** [Mac, Windows, Web]
 
   Once you connect your asset library hosted with Templafy to Microsoft365 and Copilot, you will be able to create presentations with your organization's images.
  <a href="/sharepoint/connect-organizational-asset-libraries-to-copilot" target="_blank">Learn more.</a>
@@ -130,11 +130,12 @@ Updates released between July 22, 2025, and August 4, 2025.
   Copilot in Teams  now has a 'stop' button after sending a prompt. This allows the user to stop Copilot's response either before the response has started to generate, or even after the response is generating. The user can then start a new prompt if they wish.
 - **Interpreter agent for seamless communication** [Windows, Mac]
 
-  Enhance communication and productivity in your Teams meetings with the Interpreter Agent, which translates spoken language into different languages in real-time. This feature ensures that participants, regardless of language, can fully engage in business meetings, customer calls, and project discussions. It supports English, Italian, German, French, Portuguese (Brazil), Japanese, Spanish, Chinese (Mandarin), and Korean.
+  Interpreter Agent acts like an instant translator during your Teams meetings. It listens to the spoken language in a meeting and immediately translates it into another language in real-time. This allows participants who speak different languages to understand each other and collaborate more effectively without waiting. Whether you're holding a business meeting, customer calls, or project discussions, the AI interpreter in Teams ensures everyone can participate fully, enhancing communication and productivity across diverse teams. It supports 9 different languages: English, Italian, German, French, Portuguese (Brazil), Japanese, Spanish, Chinese (Mandarin), and Korean.
  <a href="https://support.microsoft.com/office/interpreter-in-microsoft-teams-meetings-c7efe2bb-535d-42ab-a5c4-d2d91619b46d" target="_blank">Learn more.</a>
 - **Translated Intelligent meeting recap for multilingual meetings (Copilot and Teams Premium)** [Windows, Mac]
 
   Now, intelligent meeting recap supports multilingual meetings, ensuring you can easily catch up on key discussions even when multiple languages were spoken. After the meeting, your recap is automatically generated in the translation language you selected for live transcription and captions.
+ <a href="https://support.microsoft.com/office/recap-in-microsoft-teams-c2e3a0fe-504f-4b2c-bf85-504938f110ef" target="_blank">Learn more.</a>
 ### Word
 - **Access audio overviews in Word** [Web]
 
@@ -146,7 +147,7 @@ Updates released between July 22, 2025, and August 4, 2025.
 - **Use Writing suggestions to review content in Word** [Mac]
 
   Enhance your document content with AI-generated writing suggestion in the Copilot context menu. Get suggestions on logical structure, flow, and tone to make your documents more impactful.
- <a href="https://wus.prod.support.services.microsoft.com/topic/use-writing-suggestions-to-review-content-in-word-fa09c055-d623-4d20-954f-9b064a5a7c80" target="_blank">Learn more.</a>
+ <a href="https://support.microsoft.com/topic/use-writing-suggestions-to-review-content-in-word-fa09c055-d623-4d20-954f-9b064a5a7c80" target="_blank">Learn more.</a>
 
 
 <!-- 95840,98124,78170,73064,95241,97367,100044,97230,95268,95263,100351,99775,99156,98362,97883,95681,95248,95192,93065,83328,80346,74714,98515,98840 -->
@@ -2652,8 +2653,8 @@ Updates released between December 18, 2024, and January 7, 2025.
 ## [Windows](#tab/win)
 <!--- All features that have 'Windows' tag  -->
 <!-- 84976,94586,83228,95029,64023,99774,100348,100344,100339,100338,99368,98331,97241,79743,84472 -->
-## August 4, 2025
-Updates released between July 22, 2025, and August 4, 2025.
+## August 5, 2025
+Updates released between July 22, 2025, and August 5, 2025.
 ### Copilot extensibility
 - **Enhance agent builder with full screen mode** [Windows, Mac, Web]
 
@@ -2692,11 +2693,11 @@ Updates released between July 22, 2025, and August 4, 2025.
   Generate sharing links for your agents in Business Chat. If the recipient doesn't have the agent, they'll be directed to the Microsoft 365 application catalog to install it. If they do, the agent will open directly in Microsoft 365 Copilot Business Chat.
  <a href="https://support.microsoft.com/topic/how-to-share-your-agent-44981c08-ab64-43f1-bcf8-ebadfc5469cc" target="_blank">Learn more.</a>
 ### PowerPoint
-- **Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations now** [Mac, Windows:Web]
+- **Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations now** [Mac, Windows, Web]
 
   Once you integrate your organization's assets into a Sharepoint OAL (Organization Asset Library) you will be able to create presentations with your organization's image.
  <a href="/sharepoint/connect-organizational-asset-libraries-to-copilot" target="_blank">Learn more.</a>
-- **Copilot uses Enterprise assets hosted on Templafy when creating presentations now** [Mac, Windows:Web]
+- **Copilot uses Enterprise assets hosted on Templafy when creating presentations now** [Mac, Windows, Web]
 
   Once you connect your asset library hosted with Templafy to Microsoft365 and Copilot, you will be able to create presentations with your organization's images.
  <a href="/sharepoint/connect-organizational-asset-libraries-to-copilot" target="_blank">Learn more.</a>
@@ -2706,11 +2707,12 @@ Updates released between July 22, 2025, and August 4, 2025.
   Copilot in Teams  now has a 'stop' button after sending a prompt. This allows the user to stop Copilot's response either before the response has started to generate, or even after the response is generating. The user can then start a new prompt if they wish.
 - **Interpreter agent for seamless communication** [Windows, Mac]
 
-  Enhance communication and productivity in your Teams meetings with the Interpreter Agent, which translates spoken language into different languages in real-time. This feature ensures that participants, regardless of language, can fully engage in business meetings, customer calls, and project discussions. It supports English, Italian, German, French, Portuguese (Brazil), Japanese, Spanish, Chinese (Mandarin), and Korean.
+  Interpreter Agent acts like an instant translator during your Teams meetings. It listens to the spoken language in a meeting and immediately translates it into another language in real-time. This allows participants who speak different languages to understand each other and collaborate more effectively without waiting. Whether you're holding a business meeting, customer calls, or project discussions, the AI interpreter in Teams ensures everyone can participate fully, enhancing communication and productivity across diverse teams. It supports 9 different languages: English, Italian, German, French, Portuguese (Brazil), Japanese, Spanish, Chinese (Mandarin), and Korean.
  <a href="https://support.microsoft.com/office/interpreter-in-microsoft-teams-meetings-c7efe2bb-535d-42ab-a5c4-d2d91619b46d" target="_blank">Learn more.</a>
 - **Translated Intelligent meeting recap for multilingual meetings (Copilot and Teams Premium)** [Windows, Mac]
 
   Now, intelligent meeting recap supports multilingual meetings, ensuring you can easily catch up on key discussions even when multiple languages were spoken. After the meeting, your recap is automatically generated in the translation language you selected for live transcription and captions.
+ <a href="https://support.microsoft.com/office/recap-in-microsoft-teams-c2e3a0fe-504f-4b2c-bf85-504938f110ef" target="_blank">Learn more.</a>
 ### Word
 - **Kickstart your document with contextual prompts** [Windows]
 
@@ -4056,8 +4058,8 @@ Updates released between December 18, 2024, and January 7, 2025.
 ## [Web](#tab/web)
 <!--- All features that have 'Web' tag  -->
 <!-- 84976,94586,83228,98372,99774,97856,100348,100344,100339,100338,99397,99368,96111,78252 -->
-## August 4, 2025
-Updates released between July 22, 2025, and August 4, 2025.
+## August 5, 2025
+Updates released between July 22, 2025, and August 5, 2025.
 ### Copilot extensibility
 - **Admin pre-approval for trusted declarative agents** [Web]
 
@@ -4090,7 +4092,7 @@ Updates released between July 22, 2025, and August 4, 2025.
 
   Prevent agents from using model-trained knowledge by turning off internal knowledge, ensuring responses are based on specified grounded sources.
  <a href="/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-knowledge#prioritize-your-knowledge-sources-over-general-knowledge" target="_blank">Learn more.</a>
-### Microsoft 365 Admin Center
+### Microsoft 365 admin center
 - **Onboard SharePoint Agents as a PayG scenario in CCS** [Web]
 
   This feature introduces SharePoint Agents to the Pay-as-you-go tab under Copilot → Billing & usage, aligning with the existing workflow used for Microsoft 365 Copilot Chat. Administrators will gain the ability to manage and monitor SharePoint Agent consumption through the familiar Pay-as-you-go interface, ensuring consistent oversight across Copilot experiences. Integration with the SharePoint backend via API enables precise usage tracking and billing for this new scenario.
@@ -4101,11 +4103,11 @@ Updates released between July 22, 2025, and August 4, 2025.
   Generate sharing links for your agents in Business Chat. If the recipient doesn't have the agent, they'll be directed to the Microsoft 365 application catalog to install it. If they do, the agent will open directly in Microsoft 365 Copilot Business Chat.
  <a href="https://support.microsoft.com/topic/how-to-share-your-agent-44981c08-ab64-43f1-bcf8-ebadfc5469cc" target="_blank">Learn more.</a>
 ### PowerPoint
-- **Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations now** [Mac, Windows:Web]
+- **Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations now** [Mac, Windows, Web]
 
   Once you integrate your organization's assets into a Sharepoint OAL (Organization Asset Library) you will be able to create presentations with your organization's image.
  <a href="/sharepoint/connect-organizational-asset-libraries-to-copilot" target="_blank">Learn more.</a>
-- **Copilot uses Enterprise assets hosted on Templafy when creating presentations now** [Mac, Windows:Web]
+- **Copilot uses Enterprise assets hosted on Templafy when creating presentations now** [Mac, Windows, Web]
 
   Once you connect your asset library hosted with Templafy to Microsoft365 and Copilot, you will be able to create presentations with your organization's images.
  <a href="/sharepoint/connect-organizational-asset-libraries-to-copilot" target="_blank">Learn more.</a>
@@ -6876,35 +6878,36 @@ Updates released between December 18, 2024, and January 7, 2025.
 ## [Mac](#tab/mac)
 
 <!-- 94586,83228,97391,95029,99774,84472 -->
-## August 4, 2025
-Updates released between July 22, 2025, and August 4, 2025.
+## August 5, 2025
+Updates released between July 22, 2025, and August 5, 2025.
 ### Copilot extensibility
 - **Enhance agent builder with full screen mode** [Windows, Mac, Web]
 
   Enjoy an improved agent builder experience with a full-screen view that streamlines the process of creating and managing your agents.
  <a href="/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build" target="_blank">Learn more.</a>
 ### PowerPoint
-- **Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations now** [Mac, Windows:Web]
+- **Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations now** [Mac, Windows, Web]
 
   Once you integrate your organization's assets into a Sharepoint OAL (Organization Asset Library) you will be able to create presentations with your organization's image.
  <a href="/sharepoint/connect-organizational-asset-libraries-to-copilot" target="_blank">Learn more.</a>
-- **Copilot uses Enterprise assets hosted on Templafy when creating presentations now** [Mac, Windows:Web]
+- **Copilot uses Enterprise assets hosted on Templafy when creating presentations now** [Mac, Windows, Web]
 
   Once you connect your asset library hosted with Templafy to Microsoft365 and Copilot, you will be able to create presentations with your organization's images.
  <a href="/sharepoint/connect-organizational-asset-libraries-to-copilot" target="_blank">Learn more.</a>
 ### Teams
 - **Interpreter agent for seamless communication** [Windows, Mac]
 
-  Enhance communication and productivity in your Teams meetings with the Interpreter Agent, which translates spoken language into different languages in real-time. This feature ensures that participants, regardless of language, can fully engage in business meetings, customer calls, and project discussions. It supports English, Italian, German, French, Portuguese (Brazil), Japanese, Spanish, Chinese (Mandarin), and Korean.
+  Interpreter Agent acts like an instant translator during your Teams meetings. It listens to the spoken language in a meeting and immediately translates it into another language in real-time. This allows participants who speak different languages to understand each other and collaborate more effectively without waiting. Whether you're holding a business meeting, customer calls, or project discussions, the AI interpreter in Teams ensures everyone can participate fully, enhancing communication and productivity across diverse teams. It supports 9 different languages: English, Italian, German, French, Portuguese (Brazil), Japanese, Spanish, Chinese (Mandarin), and Korean.
  <a href="https://support.microsoft.com/office/interpreter-in-microsoft-teams-meetings-c7efe2bb-535d-42ab-a5c4-d2d91619b46d" target="_blank">Learn more.</a>
 - **Translated Intelligent meeting recap for multilingual meetings (Copilot and Teams Premium)** [Windows, Mac]
 
   Now, intelligent meeting recap supports multilingual meetings, ensuring you can easily catch up on key discussions even when multiple languages were spoken. After the meeting, your recap is automatically generated in the translation language you selected for live transcription and captions.
+ <a href="https://support.microsoft.com/office/recap-in-microsoft-teams-c2e3a0fe-504f-4b2c-bf85-504938f110ef" target="_blank">Learn more.</a>
 ### Word
 - **Use Writing suggestions to review content in Word** [Mac]
 
   Enhance your document content with AI-generated writing suggestion in the Copilot context menu. Get suggestions on logical structure, flow, and tone to make your documents more impactful.
- <a href="https://wus.prod.support.services.microsoft.com/topic/use-writing-suggestions-to-review-content-in-word-fa09c055-d623-4d20-954f-9b064a5a7c80" target="_blank">Learn more.</a>
+ <a href="https://support.microsoft.com/topic/use-writing-suggestions-to-review-content-in-word-fa09c055-d623-4d20-954f-9b064a5a7c80" target="_blank">Learn more.</a>
 
 <!-- 98124,78170,100044,98515 -->
 ## July 22, 2025
@@ -7723,4 +7726,3 @@ Updates released between December 18, 2024, and January 7, 2025.
 - **Use voice prompts for assistance** [Windows, Web, Mac]  
 
   Use voice to dictate into the Copilot chat prompt field.
-
