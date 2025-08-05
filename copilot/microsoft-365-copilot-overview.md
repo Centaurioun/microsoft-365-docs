@@ -38,7 +38,7 @@ Users enter a prompt in Copilot and Copilot responds with AI-generated informati
 
 Users get content relevant to their work tasks, and in the context of the Microsoft 365 app they're using.
 
-The following video is an overview of Microsoft 365 Copilot. It's 1 minute and 49 seconds long.
+The following video provides an overview of Microsoft 365 Copilot. It's 1 minute and 49 seconds long.
 
 > [!VIDEO c9679373-1812-4882-a690-8d4b8e8411ea]
 
