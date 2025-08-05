@@ -30,7 +30,7 @@ This article is designed to help customers and Tenant Global Admins understand h
 
 The _Data Location Card (DLC)_ in the Microsoft 365 admin center allows Tenant Global Admins to see where in scope customer data associated with certain _Microsoft 365 Core Services_ and _Microsoft 365 Expanded Services_ is stored at rest. To access the _Data Location Card_, select the "Data location" section in the Microsoft 365 admin center by navigating to **Admin** > **Settings** > **Org settings** > **Organization profile** > **Data location**.
 
-## Overview of the “Data at Rest” Locations
+## Overview of the "Data at Rest" Locations
 
 The _Data Location Card_ displays three columns outlining the covered _Services_, the _Current Geography_, and the _Committed Geography_.
 
@@ -70,7 +70,7 @@ A discrepancy may appear between _Current Geography_ and _Committed Geography_ i
 
 1. **_ADR_ [licensing requirements](advanced-data-residency.md#licensing-requirements) are not met**. If a _Tenant_ was once covered by an _ADR_ commitment, and fails to meet the [licensing requirements](advanced-data-residency.md#licensing-requirements) – the _Tenant’s Data Location Card_ will reflect this change in the _Committed Geography_.
 
-    **Example**: If an Indonesian customer no longer meets the required number of _ADR_ licenses needed to retain in scope customer data in Indonesia, the _Tenant’s Committed Geography_ will change from “**Indonesia**” to “**No Commitment**” in their _Data Location Card_.
+    **Example**: If an Indonesian customer no longer meets the required number of _ADR_ licenses needed to retain in scope customer data in Indonesia, the _Tenant’s Committed Geography_ will change from "**Indonesia**" to "**No Commitment**" in their _Data Location Card_.
 
     :::image type="content" source="media\data-residency\m365-dlc-adr-insufficient-seat-coverage-0725.png" alt-text="Screenshot of Data Location View For Customer With Insuffienct ADR Seat Coverage":::
 
