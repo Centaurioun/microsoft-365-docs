@@ -17,7 +17,8 @@ ms.collection:
 search.appverid: MET150
 ms.custom: 
 - commerce_purchase
-description: "Learn about the types of product keys available to Microsoft Customer Agreement for Enterprise customers." 
+description: "Learn about the types of product keys available to Microsoft Customer Agreement for Enterprise customers."
+ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/05/2025
 ---
 
