@@ -22,21 +22,21 @@ ms.collection:
 # Overview of Product Terms Data Residency
 
 > [!NOTE]
-> This document is intended to provide a general overview of the Microsoft Privacy and Security Product Terms in relation to data residency commitments. In the event of a discrepancy, the official terms listed on the [Privacy and Security Product Terms webpage](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) shall prevail.
+> This document is intended to provide a general overview of the _Microsoft Privacy and Security Product Terms_ ("_Product Terms_") in relation to Microsoft 365 data residency commitments. In the event of a discrepancy, the official terms listed on the [Privacy and Security Product Terms webpage](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) shall prevail.
 
-Microsoft Privacy and Security product terms included with Microsoft's Cloud product terms provides data residency commitment under the following conditions:
+_Microsoft Privacy and Security Product Terms_ included with Microsoft's Cloud Product Terms provides data residency commitment under the following conditions:
 
-**Terms apply to**: _Tenants_ with a _Default Geography_, regardless of date of initial provisioning, of Australia, Brazil, Canada, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, United States and the European Union.
+**Terms apply to**: _Tenants_ with a _Default Geography_, regardless of date of initial provisioning, of Australia, Brazil, Canada, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, United States, and the European Union.
 
-**Commitments Period**: The commitment period is equal to the length of the customer’s contract with Microsoft. Typically, this is 1-3 years.
+**Commitments Period**: The commitment period is equal to the length of the customer’s agreement with Microsoft. Typically, this is 1-3 years.
 
-[_Microsoft 365 Core Workloads_](m365-dr-overview.md#table-1-definitions-and-terms): Workloads covered by the Microsoft Privacy and Security product terms are:
+[_Microsoft 365 Core Services_](m365-dr-overview.md#table-1-definitions-and-terms): Services covered by the _Microsoft Privacy and Security Product Terms_ are:
 
-| Workload | Date Added to Privacy and Security Terms |
+| Service | Date Added to Privacy and Security Terms |
 |:-----|:-----|
 |Exchange Online |Always Included |
 |SharePoint |Always Included |
-|OneDrive |Always Included |
+|OneDrive for Business |Always Included |
 |Microsoft Teams |Added November 1, 2022 |
 |Microsoft 365 Copilot |Added March 1, 2024 |
 
@@ -47,8 +47,22 @@ The language at time of writing this article is:
 
 For more data residency capabilities, refer to the [_Multi-Geo_ service](microsoft-365-multi-geo.md) and/or the [_Advanced Data Residency_ service](advanced-data-residency.md).
 
-## FAQ
+## Product Terms Data Residency for Educational Customers
 
-### Privacy and Security Product Terms Data Residency and Migration
+**Terms apply to**: _Educational (EDU) Tenants_
 
-**Data residency based on _Privacy and Security Product Terms_ apply, but your _Tenant_ did not elect to take part in the _Legacy Move Program_**. If your _Tenant_ is eligible for data residency based on _Privacy and Security Product Terms_, but did not elect to participate in the _Legacy Move Program_ you may see a mismatch between _Current Geography_ and _Committed Geography_. In these cases, your _Tenant_ is still eligible to retain data for _Microsoft 365 Core Workloads_ in the respective _Local Region Geography_ once it has migrated to that location. Data residency based on _Privacy and Security Product Terms_ does not currently include data migration into the _Local Region Geography_. In order to migrate the data, you must first procure ADR license(s).
+**Commitments Period**: The commitment period is equal to the length of the customer’s agreement with Microsoft. Typically, this is 1-3 years.
+
+[_Microsoft 365 Core Services_](m365-dr-overview.md#table-1-definitions-and-terms): Services covered by the _Microsoft Privacy and Security Product Terms_ are:
+
+| Service | Date Added to Privacy and Security Terms |
+|:-----|:-----|
+|Exchange Online |Always Included |
+|SharePoint |Always Included |
+|OneDrive for Business |Always Included |
+|Microsoft Teams |Added November 1, 2022 |
+|Microsoft 365 Copilot |Added March 1, 2024 |
+
+The language at the time of writing this article is:
+
+- **Office 365 Education:** If Customer is provisioned outside of the EU or EFTA, and Customer has an Office 365 Education subscription but has not purchased an Advanced Data Residency for Education add-on, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the Product Terms, Microsoft may provision Customer's Office 365 Education tenant in, transfer [Customer Data](https://wwlpcms.azurewebsites.net/licensing/terms/product/Glossary/all) to, and store [Customer Data](https://wwlpcms.azurewebsites.net/licensing/terms/product/Glossary/all) at rest anywhere within the European Union or North America. If Customer is provisioned in the EU or EFTA, and Customer has an Office 365 Education subscription but has not purchased an Advanced Data Residency for Education add-on, then notwithstanding the "Location of Customer Data at Rest for Core Online Services" section of the Product Terms, Microsoft may provision Customer's Office 365 Education tenant in, transfer [Customer Data](https://wwlpcms.azurewebsites.net/licensing/terms/product/Glossary/all) to, and store [Customer Data](https://wwlpcms.azurewebsites.net/licensing/terms/product/Glossary/all) at rest anywhere within the European Union.
