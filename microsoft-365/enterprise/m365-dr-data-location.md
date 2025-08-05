@@ -96,7 +96,7 @@ If there's no data location shown (indicated by a "-" next to a Microsoft 365 se
 
 In the following example, the _Tenant_ doesn't have a Microsoft 365 Copilot subscription.
 
-:::image type="content" source="media\data-residency\m365-dlc-no-m365-copilot-subscription-0725.png" alt-text="Screenshot of Data Location View For Customer With No Microsoft 365 Copilot Subscription":::
+:::image type="content" source="media\data-residency\m365-dlc-no-m365-copilot-subscription-0725.png" alt-text="Screenshot of Data Location View For Customer With No Microsoft 365 Copilot Subscription.":::
 
 ## Data Location Card and _Microsoft 365 Multi-Geo Capabilities_
 
