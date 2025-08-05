@@ -32,13 +32,13 @@ The _Data Location Card (DLC)_ in the Microsoft 365 admin center allows Tenant G
 
 ## Overview of the “Data at Rest” Locations
 
-The _Data Location Card_ will display three columns outlining the covered _Services_, the _Current Geography_, and the _Committed Geography_.
+The _Data Location Card_ displays three columns outlining the covered _Services_, the _Current Geography_, and the _Committed Geography_.
 
 The _Current Geography_ refers to the location where the in scope customer data is currently stored, while the _Committed Geography_ refers to the location where Microsoft will store in scope customer data based on the [data residency commitments applicable to the _Tenant_](m365-dr-overview.md#overview-of-data-residency).
 
 ## Finding The Commitments Applicable to a Microsoft 365 Service
 
-Different Microsoft 365 services may be covered by different commitments depending on several factors, including the date of a customer’s subscription, the date that a _Tenant_ was provisioned, the _Default Geography_ of a _Tenant_, and if _Product Terms_ apply to certain Microsoft 365 services. The data location on the _DLC_ will display the most conservative _Durable Commitment on Data Location_.
+Different Microsoft 365 services may be covered by different commitments depending on several factors, including the date of a customer’s subscription, the date that a _Tenant_ was provisioned, the _Default Geography_ of a _Tenant_, and if _Product Terms_ apply to certain Microsoft 365 services. The data location on the _DLC_ displays the most conservative _Durable Commitment on Data Location_.
 
 For simplicity, the _Data Location Card_ only shows a single _Committed Geography_ based on a customer’s various commitments for their _Tenant_.
 
@@ -46,25 +46,25 @@ If a _Tenant_:
 
 - Has an active _ADR_ subscription, then the _Committed Geography_ will reflect the _Local Region Geography_ that is associated with the ADR commitment.
 
-- Does not have _ADR_ and qualifies for data residency based on [Product Terms](m365-dr-product-terms-dr.md), the applicable _Geography_ associated with the _Tenant’s Product Terms_ will be listed.
+- Doesn't have _ADR_ and qualifies for data residency based on [Product Terms](m365-dr-product-terms-dr.md), the applicable _Geography_ associated with the _Tenant’s Product Terms_ will be listed.
 
-- Does not have _ADR_, and does not qualify for data residency based on [Product Terms](m365-dr-product-terms-dr.md), but the _Tenant’s Default Geography_ is in the _European Union_ or _EFTA_, then the _Tenant’s Committed Geography_ will be the _European Union/EFTA_.
+- Doesn't have _ADR_, and doesn't qualify for data residency based on [Product Terms](m365-dr-product-terms-dr.md), but the _Tenant’s Default Geography_ is in the _European Union_ or _EFTA_, then the _Tenant’s Committed Geography_ will be the _European Union/EFTA_.
 
-- If a _Tenant_ does not have any of the above conditions, Microsoft will store the in scope customer data where it best enables Microsoft to provide services to customers, and that data storage location is subject to change without notice. The _DLC_ will also display “**No Commitment**” in the _Committed Geography_ field.
+- If a _Tenant_ doesn't have any of the above conditions, Microsoft will store the in scope customer data where it best enables Microsoft to provide services to customers, and that data storage location is subject to change without notice. The _DLC_ will also display "**No Commitment**" in the _Committed Geography_ field.
 
 ## Understanding Mismatches Between _Current Geography_ and _Committed Geography_
 
 A discrepancy may appear between _Current Geography_ and _Committed Geography_ in certain circumstances, including the following scenarios:
 
-1. **A customer has procured an _Advanced Data Residency (ADR)_ commitment for their _Tenant_, and the Tenant Global Admin has not yet [opted-in to migration](advanced-data-residency.md#data-migration-management).** If a Tenant Global Admin has not yet opted-in to migration, the _Data Location Card_ will show a mismatch between _Committed Geography_ and _Current Geography_. To rectify this discrepancy, the Tenant Global Admin must opt-in to migration and allow sufficient time for the migration to occur (see #2 below).
+1. **A customer has procured an _Advanced Data Residency (ADR)_ commitment for their _Tenant_, and the Tenant Global Admin has not yet [opted-in to migration](advanced-data-residency.md#data-migration-management).** If a Tenant Global Admin has not yet opted-in to migration, the _Data Location Card_ will show a mismatch between _Committed Geography_ and _Current Geography_. To rectify this discrepancy, the Tenant Global Admin must opt-in to migration and allow sufficient time for the migration to occur (see #2).
 :::image type="content" source="media\data-residency\m365-dlc-move-opt-in-0725.png" alt-text="Screenshot of Data Location View Before Migration Opt-in.":::
-1. **A customer has procured an _Advanced Data Residency (ADR)_ commitment on data location for their _Tenant_ and has [opted-in to migration](advanced-data-residency.md#data-migration-management).** While the _Tenant’s_ _Committed Geography_ will update to reflect the _Tenant’s_ new commitment, it will [take some time](https://go.microsoft.com/fwlink/p/?LinkId=523897) for the services to process the request and migrate in scope customer data to the new location. The _Tenant's Data Location Card_ will continue to display a mismatch between _Current Geography_ and _Committed Geography_ until the data migration effort is complete.
+1. **A customer has procured an _Advanced Data Residency (ADR)_ commitment on data location for their _Tenant_ and has [opted-in to migration](advanced-data-residency.md#data-migration-management).** While the _Tenant’s Committed Geography_ will update to reflect the _Tenant’s_ new commitment, it will [take some time](https://go.microsoft.com/fwlink/p/?LinkId=523897) for the services to process the request and migrate in scope customer data to the new location. The _Tenant's Data Location Card_ will continue to display a mismatch between _Current Geography_ and _Committed Geography_ until the data migration effort is complete.
 
-    **Example**: A _Tenant's Data Location Card_ displays a _Current Geography_ of “**Asia Pacific**”, but the customer recently purchased _ADR_ for Indonesia for this _Tenant_. After opting-in to data migration, the _Tenant’s Committed Geography_ will update to “**Indonesia**”. However, the _Tenant’s Current Geography_ will continue to display “**Asia Pacific**” until the in scope customer data has been migrated. When an individual service completes data migration efforts, the _Tenant’s Data Location Card_ will update and display a _Current Geography_ of “**Indonesia**”.
+    **Example**: A _Tenant's Data Location Card_ displays a _Current Geography_ of "**Asia Pacific**", but the customer recently purchased _ADR_ for Indonesia for this _Tenant_. After opting-in to data migration, the _Tenant’s Committed Geography_ will update to "**Indonesia**". However, the _Tenant’s Current Geography_ will continue to display "**Asia Pacific**" until the in scope customer data has been migrated. When an individual service completes data migration efforts, the _Tenant’s Data Location Card_ will update and display a _Current Geography_ of "**Indonesia**".
     :::image type="content" source="media\data-residency\m365-dlc-move-in-progress-0725.png" alt-text="Screenshot of Data Location View Migration in Progress.":::
-1. **A customer’s _Tenant_ is eligible for data residency based on _Privacy and Security Product Terms_, but the customer did not elect to take part in the _Legacy Move Program_**. If a customer’s _Tenant_ is eligible for data residency based on _Product Terms_, but the Tenant Global Admin did not elect their _Tenant_ to participate in the _Legacy Move Program_ then the _Tenant’s Data Location Card_ may display a mismatch between the _Tenant’s Current Geography_ and _Committed Geography_.
+1. **A customer’s _Tenant_ is eligible for data residency based on _Privacy and Security Product Terms_, but the customer didn't elect to take part in the _Legacy Move Program_**. If a customer’s _Tenant_ is eligible for data residency based on _Product Terms_, but the Tenant Global Admin didn't elect their _Tenant_ to participate in the _Legacy Move Program_ then the _Tenant’s Data Location Card_ may display a mismatch between the _Tenant’s Current Geography_ and _Committed Geography_.
 
-    Data residency based on _Product Terms_ does not include data migration into _Local Region Geographies_. _Tenants_ remain eligible for a data residency commitment for in scope customer data associated with _Microsoft 365 Core Services_ in their respective _Local Region Geography_—once their in scope customer data has been migrated to that location. To initiate migration, customers must purchase the required number of _ADR_ licenses and opt-in to the migration process.
+    Data residency based on _Product Terms_ doesn't include data migration into _Local Region Geographies_. _Tenants_ remain eligible for a data residency commitment for in scope customer data associated with _Microsoft 365 Core Services_ in their respective _Local Region Geography_—once their in scope customer data has been migrated to that location. To initiate migration, customers must purchase the required number of _ADR_ licenses and opt-in to the migration process.
 
     :::image type="content" source="media\data-residency\m365-dlc-no-legacy-move-opt-in-0725.png" alt-text="Screenshot of Data Location View For Customer Who Did Not Opt-in To Legacy Move Program":::
 
@@ -74,34 +74,34 @@ A discrepancy may appear between _Current Geography_ and _Committed Geography_ i
 
     :::image type="content" source="media\data-residency\m365-dlc-adr-insufficient-seat-coverage-0725.png" alt-text="Screenshot of Data Location View For Customer With Insuffienct ADR Seat Coverage":::
 
-1. **A _Tenant’s Current Geography_ for the Microsoft 365 services displays a _Local Region Geography_, but its _Committed Geography_ displays a _Macro Region Geography_**. In this case the _Tenant’s_ in scope customer data is compliant with the _Tenant’s Committed Geography_. Information about the _Tenant’s_ current data location (i.e., _Current Geography_) is more granular, indicating a specific location or set of locations.
+1. **A _Tenant’s Current Geography_ for the Microsoft 365 services displays a _Local Region Geography_, but its _Committed Geography_ displays a _Macro Region Geography_**. In this case, the _Tenant’s_ in scope customer data is compliant with the _Tenant’s Committed Geography_. Information about the _Tenant’s_ current data location (that is, _Current Geography_) is more granular, indicating a specific location or set of locations.
 
-    **Example**: A French _Tenant_ with a _Current Geography_ of “**France**” and a _Committed Geography_ of “**European Union/EFTA**”. Since “**France**” is part of the _European Union_, in scope customer data is also within the “**European Union/EFTA**”. In this example, “**France**” is a more specific and detailed location of where in scope customer data is stored.
+    **Example**: A French _Tenant_ with a _Current Geography_ of "**France**" and a _Committed Geography_ of "**European Union/EFTA**". Since "**France**" is part of the _European Union_, in scope customer data is also within the "**European Union/EFTA**". In this example, "**France**" is a more specific and detailed location of where in scope customer data is stored.
     :::image type="content" source="media\data-residency\m365-dlc-committed-geography-macro-region-0725.png" alt-text="Screenshot of Data Location View For Customer With Macro Region Geography for Committed Geography":::
 
-1. **No data location is displayed under the _Committed Geography_ field**: In this case, information about the _Tenant’s Current Geography_ is accurate, and the _Tenant_ simply does not have any _Durable Commitment on Data Location_.
+1. **No data location is displayed under the _Committed Geography_ field**: In this case, information about the _Tenant’s Current Geography_ is accurate, and the _Tenant_ simply doesn't have any _Durable Commitment on Data Location_.
 
-    **Example**: A _Tenant_ with a _Default Geography_ of Laos, that is not currently eligible to purchase _ADR_ or _Multi-Geo_ and does not qualify for data residency based on _Product Terms_ or _EUDB_, will see a _Current Geography_ where their in scope customer data is currently stored, and “**No Commitment**” in the _Committed Geography_ field.
+    **Example**: A _Tenant_ with a _Default Geography_ of Laos, that isn't currently eligible to purchase _ADR_ or _Multi-Geo_ and doesn't qualify for data residency based on _Product Terms_ or _EUDB_ will see a _Current Geography_ where their in scope customer data is currently stored, and "**No Commitment**" in the _Committed Geography_ field.
     :::image type="content" source="media\data-residency\m365-dlc-not-eligible-for-durable-commitment-0725.png" alt-text="Screenshot of Data Location View For Customer With No Durable Commitments On Data Location":::
 
 ## Microsoft 365 Services without a _Current Geography_ or _Committed Geography_
 
-If there is no data location shown (indicated by a “-” next to a Microsoft 365 service), a _Tenant_ does not currently have an active subscription for this service.
+If there's no data location shown (indicated by a "-" next to a Microsoft 365 service), a _Tenant_ doesn't currently have an active subscription for this service.
 
-In the following example, the _Tenant_ does not have a Microsoft 365 Copilot subscription.
+In the following example, the _Tenant_ doesn't have a Microsoft 365 Copilot subscription.
 
 :::image type="content" source="media\data-residency\m365-dlc-no-m365-copilot-subscription-0725.png" alt-text="Screenshot of Data Location View For Customer With No Microsoft 365 Copilot Subscription":::
 
 ## Data Location Card and _Microsoft 365 Multi-Geo Capabilities_
 
-If a customer has a _Microsoft 365 Multi-Geo Capabilities_ data residency offering, then the new _Data Location Card_ experience will only reflect the information related to the [_Tenant’s_ central location](microsoft-365-multi-geo.md#multi-geo-architecture). This is because the _Microsoft 365 Multi-Geo Capabilities_ offering allows Tenant Global Admins to store data in multiple locations. Information on _Satellite Locations_ will not be disclosed on the _Data Location Card_. For more information, please see the [Microsoft 365 Multi-Geo page](microsoft-365-multi-geo.md)
+If a customer has a _Microsoft 365 Multi-Geo Capabilities_ data residency offering, then the new _Data Location Card_ experience will only reflect the information related to the [_Tenant’s_ central location](microsoft-365-multi-geo.md#multi-geo-architecture). This is because the _Microsoft 365 Multi-Geo Capabilities_ offering allows Tenant Global Admins to store data in multiple locations. Information on _Satellite Locations_ isn't disclosed on the _Data Location Card_. For more information, please see the [Microsoft 365 Multi-Geo page](microsoft-365-multi-geo.md)
 
 The _Tenant’s Data Location Card_ will display the following message:
 
 :::image type="content" source="media\data-residency\m365-dlc-multigeo-0725.png" alt-text="Screenshot of Data Location View For Multi-Geo Customers":::
 
-## Microsoft 365 Services stored in “Europe”
+## Microsoft 365 Services stored in "Europe"
 
-Certain _Tenants_ may have their in scope customer data stored in “**Europe**” but may not be provided with the _EUDB_ commitment based on the _Tenant’s Default Geography_. In these scenarios, users will see a _Current Geography_ of “**Europe**” and an information message stating “This tenant does not have an [EU Data Boundary] (EUDB) data residency commitment.” at the bottom of the _DLC_. [Click here](/privacy/eudb/eu-data-boundary-learn.md#how-to-configure-services-for-use-in-the-eu-data-boundary) for more information on _EUDB_ eligibility. For more information on _EUDB_ commitments, refer to the [Microsoft EU Data Boundary documentation](https://www.microsoft.com/trust-center/privacy/european-data-boundary-eudb?msockid=17b6c7f9a50068231a1fd4dea4ba694a) in the Microsoft Trust Center.
+Certain _Tenants_ may have their in scope customer data stored in "**Europe**" but may not be provided with the _EUDB_ commitment based on the _Tenant’s Default Geography_. In these scenarios, users will see a _Current Geography_ of "**Europe**" and an information message stating “This tenant doesn't have an [EU Data Boundary] (EUDB) data residency commitment.” at the bottom of the _DLC_. [Click here](/privacy/eudb/eu-data-boundary-learn.md#how-to-configure-services-for-use-in-the-eu-data-boundary) for more information on _EUDB_ eligibility. For more information on _EUDB_ commitments, see the [Microsoft EU Data Boundary documentation](https://www.microsoft.com/trust-center/privacy/european-data-boundary-eudb?msockid=17b6c7f9a50068231a1fd4dea4ba694a) in the Microsoft Trust Center.
 
 :::image type="content" source="media\data-residency\m365-dlc-no-eudb-commitment-0725.png" alt-text="Screenshot of Data Location View For Customer With No EUDB Commitment":::
