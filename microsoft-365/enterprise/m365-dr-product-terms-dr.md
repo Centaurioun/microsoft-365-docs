@@ -51,7 +51,7 @@ For more data residency capabilities, refer to the [_Multi-Geo_ service](microso
 
 **Terms apply to**: _Educational (EDU) Tenants_
 
-**Commitments Period**: The commitment period is equal to the length of the customer’s agreement with Microsoft. Typically, this is 1-3 years.
+**Commitments Period**: The commitment period is equal to the length of the customer’s agreement with Microsoft. Typically, this period is 1-3 years.
 
 [_Microsoft 365 Core Services_](m365-dr-overview.md#table-1-definitions-and-terms): Services covered by the _Microsoft Privacy and Security Product Terms_ are:
 
