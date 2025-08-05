@@ -54,7 +54,7 @@ Updates released between July 22, 2025, and August 4, 2025.
 - **Fine-tune models with tenant data**
 
   Developers and makers can fine-tune a model used in Microsoft 365 Copilot using their tenant data.
- <a href="https://learn.microsoft.com/copilot/microsoft-365/copilot-tuning-overview" target="_blank">Learn more.</a>
+ <a href="/copilot/microsoft-365/copilot-tuning-overview" target="_blank">Learn more.</a>
 - **Get relevant calendar results by time period** [Windows, Web]
 
   Quickly summarize meetings for a specific day to stay on top of your schedule and focus on the events that matter most.
@@ -7723,3 +7723,4 @@ Updates released between December 18, 2024, and January 7, 2025.
 - **Use voice prompts for assistance** [Windows, Web, Mac]  
 
   Use voice to dictate into the Copilot chat prompt field.
+
