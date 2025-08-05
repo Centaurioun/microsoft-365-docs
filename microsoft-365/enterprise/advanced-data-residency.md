@@ -44,7 +44,7 @@ The following services are included in ADR. For more information, see:
   - [Data Lifecycle Management (DLM)](m365-dr-workload-purview.md#risk--compliance---data-lifecycle-management-dlm)
 
 > [!NOTE]
-> *The Microsoft Purview services list includes all services covered as part of the Advanced Data Residency commitment as of August 2025. Additional Microsoft Purview services aren't currently supported.
+> *The Microsoft Purview services list includes all services covered as part of the Advanced Data Residency commitment as of August 2025. Other Microsoft Purview services aren't currently supported.
 
 ## Licensing and Purchase
 
@@ -79,7 +79,7 @@ For example:
 
 Customers who purchase Multi-Geo licenses for their tenant don't have to also pay for ADR for the same licenses. You avoid 'double licensing' a single seat for two different data residency programs. For example, if a customer would normally require 15,000 ADR licenses to satisfy the program requirements, but they also have 4,000 Multi-Geo licenses, then they're only required to purchase 11,000 ADR licenses. The two programs combined would cover the normal ADR program requirement of 100% user coverage.
 
-To view/determine the number of assigned ADR licenses for your _Tenant_, you can access the _Data Location Card_ in the Microsoft 365 admin center by navigating to **Admin > Settings > Org settings > Organization profile > Data location**. This page will display the "Required Seat Count," "License Count," and "License Expiration." For more information, see "What does the "Advanced Data Residency (ADR) License Information" display?" below.
+To view/determine the number of assigned ADR licenses for your _Tenant_, you can access the _Data Location Card_ in the Microsoft 365 admin center by navigating to **Admin > Settings > Org settings > Organization profile > Data location**. This page displays the "Required Seat Count," "License Count," and "License Expiration." For more information, see "What does the "Advanced Data Residency (ADR) License Information" display?" below.
 
 > [!NOTE]
 > A new _Data Location Card (DLC)_ experience is rolling out now to Microsoft 365 customer _Tenants_. During the phased rollout, _Tenants_ may see a different _Data Location Card_ view within the Microsoft 365 admin center than the latest enhancements displayed below. Tenant Global Admins can [Learn More about the Data Location Card](m365-dr-data-location.md) in anticipation of the rollout in our updated Microsoft Learn documentation.
@@ -114,7 +114,7 @@ The following screenshot is an example of the Microsoft 365 admin center Data lo
 :::image type="content" alt-text="Screenshot of Microsoft 365 Admin Center Data location View." source="media\data-residency\m365-dlc-mac-view-0725.png" lightbox="media\data-residency\m365-dlc-mac-view-0725.png":::
 
 > [!NOTE]
-> The data migration process described in the sections below will not initiate until the Tenant Global Admin completes this task.
+> The data migration process described in the sections below won't initiate until the Tenant Global Admin completes this task.
 
 #### Before Migration Opt-in
 
@@ -174,7 +174,7 @@ For more information on Migration and Data Location, Tenant Global Admins can re
 
 ### What does the "Advanced Data Residency (ADR) License Information" display?
 
-The _Data Location Card_ has been updated for _Tenants_ who have purchased licenses for _Advanced Data Residency (ADR)_. _Tenants_ who have active or recently active _ADR_ subscriptions will now see a new field called “Advanced Data Residency (ADR) License Information.” This section will display three fields related to a _Tenant’s_ licensing:
+The _Data Location Card_ has been updated for _Tenants_ who have purchased licenses for _Advanced Data Residency (ADR)_. _Tenants_ who have active or recently active _ADR_ subscriptions will now see a new field called "Advanced Data Residency (ADR) License Information." This section will display three fields related to a _Tenant’s_ licensing:
 
 1. **Required Seat Count**: This field displays the number of Microsoft 365 seats that require _ADR_ coverage.
 
@@ -186,26 +186,26 @@ The _Data Location Card_ has been updated for _Tenants_ who have purchased licen
 
 The _Data Location Card_ will now display warnings and notifications related to Seat Coverage.
 
-In the event that a _Tenant_ falls below the number of licenses required for ADR coverage, a notification message is displayed with the text, “The Advanced Data Residency (ADR) license may not have sufficient seat coverage. Without full seat coverage, the tenant's data may be relocated outside the local region. Please consult with your Microsoft representatives to understand the requirements regarding sufficient seat coverage. Please procure additional ADR licenses promptly to ensure continued data residency within the Local Regional Geography.” A link to _Marketplace_ will also be provided to assist with procurement of _ADR_ licenses.
+In the event that a _Tenant_ falls below the number of licenses required for ADR coverage, a notification message is displayed with the text, "The Advanced Data Residency (ADR) license may not have sufficient seat coverage. Without full seat coverage, the tenant's data may be relocated outside the local region. Please consult with your Microsoft representatives to understand the requirements regarding sufficient seat coverage. Please procure additional ADR licenses promptly to ensure continued data residency within the Local Regional Geography." A link to _Marketplace_ will also be provided to assist with procurement of _ADR_ licenses.
 
 :::image type="content" source="media\data-residency\m365-dlc-adr-insufficient-seat-coverage-cropped-0725.png" alt-text="Screenshot of Data Location View Insufficient ADR Seat Coverage.":::
 
 If this warning message appears on a _Tenant’s Data Location Card_, Tenant Global Admins should reach out to their Microsoft Representatives to understand if their current agreements are properly reflected and what steps, if any, are required to bring the _Tenant_ back into compliance.
 
-In the event of a substantial discrepancy between the “Required Seat Count” and “License Count” the _Data Location Card_ will update the _Committed Geography_ location to display the most current and accurate commitments in place (if any) after _ADR_ has been removed. At this point, data may be relocated subject to the constraints displayed in the updated _Committed Geography_.
+In the event of a substantial discrepancy between the "Required Seat Count" and "License Count" the _Data Location Card_ will update the _Committed Geography_ location to display the most current and accurate commitments in place (if any) after _ADR_ has been removed. At this point, data may be relocated subject to the constraints displayed in the updated _Committed Geography_.
 
 ### ADR License Warnings and Notifications Related to License Expiry
 
 The new _Data Location Card_ is designed to help Tenant Global Admins track when _ADR_ licenses are nearing expiry, and will display the following warnings and alerts in relation to license expiry:
 
-**90 days before License Expiration**: A warning statement will appear on the _DLC_ indicating that “The Advanced Data Residency (ADR) licenses are about to expire. Please renew the licenses to maintain ADR coverage and ensure the data remains protected within your Local Regional Geography.” A link to _Marketplace_ will also be provided to assist with procurement of _ADR_ licenses.
+**90 days before License Expiration**: A warning statement will appear on the _DLC_ indicating that "The Advanced Data Residency (ADR) licenses are about to expire. Please renew the licenses to maintain ADR coverage and ensure the data remains protected within your Local Regional Geography." A link to _Marketplace_ will also be provided to assist with procurement of _ADR_ licenses.
 
 :::image type="content" source="media\data-residency\m365-dlc-adr-licenses-expiring-cropped-0725.png" alt-text="Screenshot of Data Location View ADR Licenses Expiring.":::
 
-**On License Expiration**: Starting on the day a _Tenant’s_ licenses expired, the _DLC_ will display a message indicating “The Advanced Data Residency (ADR) license has expired. Without a valid ADR license, the tenant’s data may be relocated outside the local region. Please renew promptly to ensure continued data residency within the Local Regional Geography.” A link to _Marketplace_ will also be provided to assist with procurement of _ADR_ licenses.
+**On License Expiration**: Starting on the day a _Tenant’s_ licenses expired, the _DLC_ will display a message indicating "The Advanced Data Residency (ADR) license has expired. Without a valid ADR license, the tenant’s data may be relocated outside the local region. Please renew promptly to ensure continued data residency within the Local Regional Geography." A link to _Marketplace_ will also be provided to assist with procurement of _ADR_ licenses.
 
 :::image type="content" source="media\data-residency\m365-dlc-adr-licenses-expired-cropped-0725.png" alt-text="Screenshot of Data Location View ADR Licenses Expired.":::
 
-It's important to note that while a _Tenant’s ADR_ licenses have expired, Microsoft will provide a grace period to allow the customer to renew their licenses. During this grace period, the _Tenant’s Data Location Card_ won't display any changes to the _Tenant’s Committed Geography_ and the _Tenant’s_ data will not be relocated.
+It's important to note that while a _Tenant’s ADR_ licenses have expired, Microsoft will provide a grace period to allow the customer to renew their licenses. During this grace period, the _Tenant’s Data Location Card_ won't display any changes to the _Tenant’s Committed Geography_ and the _Tenant’s_ data won't be relocated.
 
 **After Grace Period**: After the grace period provided, Microsoft will remove the _Durable Commitment on Data Location_ provided by _ADR_, and the _Committed Geography_ location in the _DLC_ will update to display the most current and accurate commitments in place (if any) after _ADR_ has been removed. At this point, data may be relocated, without notification or warning, subject to the constraints displayed in the updated _Committed Geography_.
