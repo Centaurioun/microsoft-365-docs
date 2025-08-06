@@ -15,7 +15,7 @@ ms.collection:
 - must-keep
 - trust-pod
 hideEdit: true
-ms.date: 05/02/2025
+ms.date: 08/06/2025
 ms.custom: [copilot-learning-hub]
 ---
 
@@ -61,8 +61,8 @@ Microsoft 365 Copilot only surfaces organizational data to which individual user
 When you enter prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services. Azure OpenAI doesn't cache customer content and Copilot modified prompts for Microsoft 365 Copilot. For more information, see the [Data stored about user interactions with Microsoft 365 Copilot](#data-stored-about-user-interactions-with-microsoft-365-copilot) section later in this article.
 
 > [!NOTE]
-> - When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](#extensibility-of-microsoft-365-copilot).
-> - When you’re using the web content plugin, Microsoft 365 Copilot parses the user’s prompt and identifies terms where web search would improve the quality of the response. Based on these terms, Copilot generates a search query that it sends to the Bing Search service. For more information, [Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](/microsoft-365-copilot/manage-public-web-access).
+> - When you’re using agents to help Microsoft 365 Copilot to provide more relevant information, check the privacy statement and terms of use of the agent to determine how it will handle your organization’s data. For more information, see [Extensibility of Microsoft 365 Copilot](#extensibility-of-microsoft-365-copilot).
+> - When you’re using web search, Microsoft 365 Copilot parses the user’s prompt and identifies terms where web search would improve the quality of the response. Based on these terms, Copilot generates a search query that it sends to the Bing Search service. For more information, [Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft 365 Copilot Chat](/microsoft-365-copilot/manage-public-web-access).
 
 While abuse monitoring, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. For information about content filtering, see the [How does Copilot block harmful content?](#how-does-copilot-block-harmful-content) section later in this article.
 
@@ -99,16 +99,16 @@ Microsoft [Advanced Data Residency (ADR)](/microsoft-365/enterprise/advanced-dat
 
 ## Extensibility of Microsoft 365 Copilot
 
-While Microsoft 365 Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many organizations still depend on various external tools and services for work management and collaboration. Microsoft 365 Copilot experiences can reference third-party tools and services when responding to a user’s request by using [Microsoft Graph connectors](/graph/connecting-external-content-connectors-overview) or plugins. Data from Graph connectors can be returned in Microsoft 365 Copilot responses if the user has permission to access that information.
+While Microsoft 365 Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many organizations still depend on various external tools and services for work management and collaboration. Microsoft 365 Copilot experiences can reference third-party tools and services when responding to a user’s request by using [Microsoft Graph connectors](/graph/connecting-external-content-connectors-overview) or agents. Data from Graph connectors can be returned in Microsoft 365 Copilot responses if the user has permission to access that information.
 
-When plugins are enabled, Microsoft 365 Copilot determines whether it needs to use a specific plugin to help provide a relevant response to the user. If a plugin is needed, Microsoft 365 Copilot generates a search query to send to the plugin on the user’s behalf. The query is based on the user’s prompt, Copilot activity history, and data the user has access to in Microsoft 365.
+When agents are enabled, Microsoft 365 Copilot determines whether it needs to use a specific agent to help provide a relevant response to the user. If an agent is needed, Microsoft 365 Copilot generates a search query to send to the agent on the user’s behalf. The query is based on the user’s prompt, Copilot activity history, and data the user has access to in Microsoft 365.
 
-In the **Integrated apps** section of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), admins can view the permissions and data access required by a plugin as well as the plugin’s terms of use and privacy statement. Admins have full control to select which plugins are allowed in their organization. A user can only access the plugins that their admin allows and that the user installed or is assigned. Microsoft 365 Copilot only uses plugins that are turned on by the user.
+In the **Integrated apps** section of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), admins can view the permissions and data access required by an agent as well as the agent’s terms of use and privacy statement. Admins have full control to select which agents are allowed in their organization. A user can only access the agents that their admin allows and that the user installed or is assigned. Microsoft 365 Copilot only uses agents that are turned on by the user.
 
 For more information, see the following articles:
 
-- [Manage Plugins for Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps)
-- [Extend Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/)
+- [Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps)
+- [Microsoft 365 Copilot extensibility overview](/microsoft-365-copilot/extensibility/)
 - [How Microsoft 365 Copilot can work with your external data](https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-microsoft-365-copilot-can-work-with-your-external-data/ba-p/3937645)
 
 ## How does Microsoft 365 Copilot protect organizational data?
@@ -127,7 +127,7 @@ We already implement multiple forms of protection to help prevent customers from
 
 - Your control over your data is reinforced by Microsoft's commitment to comply with broadly applicable privacy laws, such as the GDPR, and privacy standards, such as ISO/IEC 27018, the world’s first international code of practice for cloud privacy.
 
-- For content accessed through Microsoft 365 Copilot plugins, encryption can exclude programmatic access, thus limiting the plugin from accessing the content. For more information, see [Configure usage rights for Azure Information Protection](/azure/information-protection/configure-usage-rights).
+- For content accessed through Microsoft 365 Copilot agents, encryption can exclude programmatic access, thus limiting the agent from accessing the content. For more information, see [Configure usage rights for Azure Information Protection](/azure/information-protection/configure-usage-rights).
 
 ## Meeting regulatory compliance requirements
 
