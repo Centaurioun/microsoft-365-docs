@@ -198,8 +198,8 @@ Security configuration to support ESS Copilot features for full-time employees a
 ### Task 7 – Add ISSG_Generic_COPILOT to Integration Permissions
 
 1. Security configuration for Integration System Security Group (ISSG).
-1. Search for the ISSG created in Task 3.
-1. Using the **Related actions** option, select **Maintain Domain Permissions for Security Group** under the **Security Group** option.
+    1. Search for the ISSG created in Task 3.
+    1. Using the **Related actions** option, select **Maintain Domain Permissions for Security Group** under the **Security Group** option.
 1. Confirm whether or not the **Integration Build** domain security policy is added.
 1. If the **Integration Build** domain security policy isn't set, you need to add it.
     1. in the search textbox for this page, search for **integration build** and filter for **security**.
