@@ -10,6 +10,7 @@ ms.author:   srinivasansu # Microsoft alias
 ms.service: microsoft-365-admin
 ms.topic: article
 ms.date:     07/24/2025
+manager: scotv
 ---
 
 # Enriching and customizing your organization's profile cards 
