@@ -156,8 +156,6 @@ Terms to know:
 
 **Default:** On
 
-**Topic JTBD:** Maker wants to have messages from the LLM have an official source badge so that the end user knows this response came from an official source and not the web or another nonauthoritative source. The Maker can also add an after-message disclaimer to the responses such as "Check sources for accuracy."
-
 **Maker JTBD:** Maker needs to add redirection of the User Context retrieval topics from different ESS agent ISV packages. Or, if Makers configure other Topics to retrieve User Context attributes from other systems, then they should also be added as Topic redirections in this Topic.
 
 **Maker - What to customize:** </br>
