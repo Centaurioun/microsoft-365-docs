@@ -148,7 +148,7 @@ This report is used for retrieving the required user context attributes from Wor
 
 **Condition as Text:** User Name equal to from user input And CF LRV Worker Type in the selection list Employee
 
-|Filter on Aggregations |                        |                     |      |         |                |                  |  |
+|Filter on Aggregations |          &nbsp;     |         &nbsp;      |   &nbsp;   |   &nbsp;   |     &nbsp;    |       &nbsp;      | &nbsp; |
 |-----------------------|------------------------|---------------------|------|---------|----------------|------------------|--|
 |**Filter condition for filtering on aggregated values** |  |          |      |         |                |                  |  |
 |And/Or                 |(                       |Aggregation function |Field |Operator |Comparison type |Comparison value  |) |
