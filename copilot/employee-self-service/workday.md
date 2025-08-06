@@ -90,7 +90,8 @@ The following configuration and preparation tasks need to be done in Workday by 
 1. [Manage authentication policies](#task-4-manage-authentication-policies)
 1. [Register API client](#task-5-register-api-client)
 1. [Security configuration](#task-6-security-configuration)
-1. [Create reports](#task-7-create-reports)
+1. [Task 7 – Add ISSG_Generic_COPILOT to Integration Permissions](#task-7--add-issg_generic_copilot-to-integration-permissions)
+1. [Create reports](#task-8-create-reports)
 
 ### Task 1 Create the X.509 public key
 
