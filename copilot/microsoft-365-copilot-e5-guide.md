@@ -10,6 +10,7 @@ ms.date: 03/06/2025
 ms.update-cycle: 180-days
 ms.reviewer: cabailey, ruihu
 audience: Admin
+customer-intent: As an IT admin, I want to prepare my organization for Microsoft 365 Copilot.
 ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium

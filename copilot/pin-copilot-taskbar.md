@@ -7,8 +7,8 @@ ms.author: aaroncz
 author: aczechowski
 manager: dansimp
 ms.reviewer: christin,vmirapur
-ms.date: 07/24/2025
 ms.update-cycle: 180-days
+ms.date: 08/05/2025
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -24,9 +24,6 @@ ms.collection:
 ---
 
 # Pin Microsoft 365 Copilot app to the Windows taskbar
-
-> [!IMPORTANT]
-> This information is currently provided as a preview. The feature is expected to be available at the end of July 2025.
 
 As an admin, you can pin the Microsoft 365 Copilot app to the Windows taskbar of managed devices. This behavior gives users quick access to the Microsoft 365 Copilot app, which includes Copilot Chat, Search, Agents, and more, if these capabilities are already available to them. If your organization uses Microsoft Intune, use the Microsoft 365 admin center to automatically pin the app on all Windows 10 and Windows 11 Intune-managed devices with the Copilot app installed. This single toggle simplifies the pinning process instead of manually creating and deploying a Start layout policy. The setting is off by default.
 

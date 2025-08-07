@@ -51,10 +51,10 @@ See the following links to understand how you can determine current data residen
   - Audit (Premium)
   - Data Lifecycle Management (DLM)
   
-- Microsoft Entra ID [Data Location](m365-dr-workload-other.md#azure-active-directory-aad)
+- Microsoft Entra ID [Data Location](m365-dr-workload-other.md#microsoft-entra-id)
 - Whiteboard [Data Location](m365-dr-workload-other.md#whiteboard)
 - Forms [Data Location](m365-dr-workload-other.md#forms)
-- Intune [Data Location](m365-dr-workload-other.md#intune)
+- Intune [Data Location](/intune/intune-service/protect/privacy-data-store-process#storage-locations)
 - Planner [Data Location](m365-dr-workload-other.md#planner)
 - Viva Glint [Data Location](m365-dr-workload-other.md#viva-glint)
 - Viva Goals [Data Location](m365-dr-workload-other.md#viva-goals)
