@@ -3,12 +3,11 @@ title: "Microsoft 365 Copilot Search"
 author: kwekuako
 ms.author: kwekua  
 manager: dansimp
-ms.date: 06/05/2025
+ms.date: 08/07/2025
 ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: CopilotSearch
-ms.custom: QuickDraft
 ms.reviewer: kwekua
 audience: admin
 ai-usage: ai-assisted
@@ -85,7 +84,7 @@ The following table shows a summary of key comparisons between Microsoft 365 Cop
 
 | Feature/Capability | Microsoft Copilot Search (paid) | Microsoft Search (free) |
 |---|---|---|
-| UI Entry Point | Microsoft 365 Copilot App (Web, Desktop, Mobile) Microsoft 365 Copilot App (Web, Desktop, Mobile), SharePoint (organizational tab) |
+| UI Entry Point | Microsoft 365 Copilot App (Web, Desktop, Mobile) Microsoft 365 Copilot App (Web, Desktop, Mobile), SharePoint (organizational tab) | Microsoft 365 Copilot App (Web, Desktop, Mobile). SharePoint (organizational tab) |
 | User Eligibility | Requires Microsoft 365 Copilot license | Available to unpaid Entra ID users |
 | Search Experience | AI-powered, semantic search; universal search across M365 & non-M365 sources; modern UX | Keyword-based search; interleaved results; Teams/Outlook in Messages vertical |
 | Graph Connector Support (3P) | Instant support for all tenant-enabled connectors with semantic search & personalization | Requires admin setup for connectors to appear as verticals with result-types and filters. No semantic search. |
