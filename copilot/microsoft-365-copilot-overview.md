@@ -30,7 +30,7 @@ appliesto:
 > - The **Try GPT-5** button will appear in Copilot Chat, whether users do or don't have a Microsoft 365 Copilot license.
 > - This model update doesn't change your [security, privacy, or compliance settings](/copilot/microsoft-365/manage-public-web-access).
 > 
-> For more information, see the announcement in the [Microsoft 365 Copilot blog](https://www.microsoft.com/en-us/microsoft-365/blog/).
+> For more information, see the announcement on the [Microsoft 365 Blog](https://www.microsoft.com/en-us/microsoft-365/blog/).
 
 **Microsoft 365 Copilot is an AI-powered tool that helps with your work tasks**.
 
