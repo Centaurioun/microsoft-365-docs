@@ -5,6 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
+ms.update-cycle: 180-days
 manager: dansimp
 ms.date: 08/07/2025
 audience: Admin

@@ -4,6 +4,7 @@ ms.author: camillepack
 author: camillepack
 manager: dansimp
 ms.date: 06/02/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-copilot
