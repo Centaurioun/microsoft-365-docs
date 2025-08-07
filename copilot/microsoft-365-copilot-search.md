@@ -69,7 +69,7 @@ For example, Copilot Search uses the Bing search service to ground some of its a
 
 Here's an example of a Copilot Search results page featuring an answer with information grounded in the web:
 
-:::image type="content" source="media/copilot-search-web-search-700.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search results." lightbox="media/copilot-search-web-search-raw.png":::
+:::image type="content" source="media/copilot-search-web-search-700.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search results with a web answer." lightbox="media/copilot-search-web-search-raw.png":::
 
 Learn more about [optional connected experiences](/microsoft-365-apps/privacy/optional-connected-experiences) in Microsoft 365 apps and how to manage them.
 
