@@ -10,6 +10,7 @@ ms.author:   samegupt # Microsoft alias
 ms.service: microsoft-365-admin
 ms.topic: overview
 ms.date:     06/29/2025
+manager: scotv
 ---
 
 # Manage people data and related experiences from the Microsoft 365 admin center
