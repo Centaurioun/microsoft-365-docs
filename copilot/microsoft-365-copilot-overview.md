@@ -1,12 +1,12 @@
 ---
 title: What is Microsoft 365 Copilot?
-description: Learn about what Microsoft 365 Copilot is and the common Copilot features in Microsoft 365 apps, like Word, Excel, PowerPoint, and Teams. This article answers common questions about Copilot, including what is Copilot, how Copilot works, and the benefits of using Copilot. What is M365 Copilot?
+description: Learn about what Microsoft 365 Copilot is and common Copilot features in Microsoft 365 apps, like Word, Excel, PowerPoint, and Teams. This article answers common questions about Copilot, including what is Copilot, how Copilot works, and the benefits of using Copilot.
 f1.keywords:
 - NOCSH
 ms.author: camillepack
 author: camillepack
-manager: scotv
-ms.date: 02/13/2025
+manager: dansimp
+ms.date: 08/07/2025
 audience: Admin
 ms.reviewer: mandia
 ms.topic: overview
@@ -19,10 +19,18 @@ ms.collection:
 - essentials-overview
 ms.custom: [copilot-learning-hub]
 appliesto:
-  - ✅ Microsoft 365 Copilot
+- ✅ Microsoft 365 Copilot
 ---
 
 # Microsoft 365 Copilot overview
+
+> [!NOTE]
+> - Copilot Chat is in the process of transitioning to OpenAI's latest generative AI model, the GPT-5 model, as its primary supporting LLM. [Users can try GPT-5](https://support.microsoft.com/topic/12c8d9f8-db32-4f99-8ebe-d8d85879137f) with their Copilot prompts by selecting the **Try GPT-5** button at the top right in Copilot Chat.
+> - When using GPT-5 in Copilot Chat, Copilot chooses the best model, including GPT-5, to generate a response that has increased complexity, accuracy, and overall performance.
+> - The **Try GPT-5** button will appear in Copilot Chat, whether users do or don't have a Microsoft 365 Copilot license.
+> - This model update doesn't change your [security, privacy, or compliance settings](/copilot/microsoft-365/manage-public-web-access).
+> 
+> For more information, see the [Microsoft 365 Blog](https://www.microsoft.com/en-us/microsoft-365/blog/?p=278895).
 
 **Microsoft 365 Copilot is an AI-powered tool that helps with your work tasks**.
 
@@ -30,7 +38,7 @@ Users enter a prompt in Copilot and Copilot responds with AI-generated informati
 
 Users get content relevant to their work tasks, and in the context of the Microsoft 365 app they're using.
 
-The following video is an overview of Microsoft 365 Copilot. It's 1 minute and 49 seconds long.
+The following video provides an overview of Microsoft 365 Copilot. It's 1 minute and 49 seconds long.
 
 > [!VIDEO c9679373-1812-4882-a690-8d4b8e8411ea]
 
@@ -55,9 +63,7 @@ This article applies to:
 
 Microsoft 365 Copilot:
 
-- Pairs with the Microsoft 365 productivity apps that you use every day, like Word, Excel, PowerPoint, Outlook, Teams, and others.
-
-  So, you can use Copilot in Word to help create a document, in Excel to get suggestions for formulas, in Outlook to summarize an email thread, and in Teams to summarize meetings.
+- Pairs with the Microsoft 365 productivity apps that you use every day, like Word, Excel, PowerPoint, Outlook, Teams, and others. You can use Copilot in Word to help create a document, in Excel to get suggestions for formulas, in Outlook to summarize an email thread, and in Teams to summarize meetings.
 
 - Uses content in [Microsoft Graph](/graph/overview) to personalize the responses with a user's work emails, chats, and documents. Copilot only shows the data that users have permission to access.
 
@@ -65,7 +71,7 @@ Microsoft 365 Copilot:
 
 - Coordinates large language models (LLMs). LLMs are a type of artificial intelligence (AI) algorithms. These algorithms use deep learning techniques and data sets to understand, summarize, predict, and generate content.
 
-  The LLMs include pretrained models, like Generative Pre-Trained Transformers, like GPT-4, that are designed for these tasks. To learn more about Generative Pre-Trained Transformers (GPT), ask [Copilot](https://copilot.microsoft.com).
+   The LLMs include pretrained models, like Generative Pre-Trained Transformers, like GPT-4, that are designed for these tasks. To learn more about Generative Pre-Trained Transformers (GPT), ask [Copilot](https://copilot.microsoft.com).
 
 To learn more, see:
 
