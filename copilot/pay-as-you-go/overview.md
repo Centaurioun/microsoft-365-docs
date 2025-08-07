@@ -4,7 +4,6 @@ description: Enterprise and company IT admins can learn about the pay-as-you-go 
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: dansimp
-ms.date: 06/16/2025
 ms.update-cycle: 180-days
 ms.reviewer: nishanair
 audience: Admin
