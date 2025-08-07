@@ -7,6 +7,7 @@ ms.author: camillepack
 author: camillepack
 manager: scotv
 ms.date: 04/09/2025
+ms.update-cycle: 180-days
 ms.reviewer: elvaf
 audience: Admin
 ms.topic: how-to

@@ -5,7 +5,8 @@ f1.keywords:
 - NOCSH
 ms.author: mandia
 author: MandiOhlinger
-manager: laurawi
+manager: dansimp
+ms.update-cycle: 180-days
 ms.date: 08/5/2025
 audience: Admin
 ms.reviewer: briandesouza

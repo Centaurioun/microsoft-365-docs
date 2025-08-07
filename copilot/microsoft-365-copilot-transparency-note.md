@@ -15,7 +15,9 @@ ms.collection:
 - must-keep
 - trust-pod
 hideEdit: true
+ms.update-cycle: 180-days
 ms.date: 08/06/2025
+
 ---
 
 # Transparency Note for Microsoft 365 Copilot

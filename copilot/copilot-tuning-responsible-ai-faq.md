@@ -5,6 +5,7 @@ ms.author: emrek
 author: emrekiciman
 manager: calvind
 ms.date: 06/17/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: faq
 ms.service: microsoft-365-copilot

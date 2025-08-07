@@ -4,6 +4,7 @@ description: Enterprise and company IT administrators can use the Microsoft 365 
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: dansimp
+ms.update-cycle: 180-days
 ms.reviewer: nishanair
 audience: Admin
 ms.topic: get-started
