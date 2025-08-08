@@ -61,17 +61,9 @@ Copilot Search goes beyond keyword matching by using AI to interpret context, re
 
 ## Answer types
 
-A Copilot Answer in Microsoft 365 Copilot Search is a concise, AI-generated response that appears at the top of the search results page when you enter specific natural language queries. It's designed to deliver precise, contextual, and actionable insights by interpreting the meaning and intent behind a query.
+A Copilot Answer in Microsoft 365 Copilot Search is a concise, AI-generated response that's powered by Microsoft 365 Copilot Chat. It appears at the top of the search results page when you enter specific natural language queries.
 
-Copilot Answers may include references and information from external sources, including optional connected cloud-backed services and the web. This is consistent with the way Microsoft 365 Copilot, Copilot Chat, and other Microsoft 365 services access external services.
-
-For example, Copilot Search uses the Bing search service to ground some of its answers in the latest information from the web. The Bing search service operates separately from Microsoft 365 and has different data-handling practices from those used for prompts and responses. These data-handling practices are covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). This means that Microsoft acts as an independent data controller responsible for complying with all applicable laws and controller obligations.
-
-Here's an example of a Copilot Search results page featuring an answer with information grounded in the web:
-
-:::image type="content" source="media/copilot-search-web-search-700.png" alt-text="Screenshot that shows Microsoft 365 Copilot Search results with a web answer." lightbox="media/copilot-search-web-search-raw.png":::
-
-Learn more about [optional connected experiences](/microsoft-365-apps/privacy/optional-connected-experiences) in Microsoft 365 apps and how to manage them.
+Copilot Answers may include references and information from external sources, including optional connected cloud-backed services and the web. Its grounding is consistent with the grounding you've enabled for Copilot Chat. Learn more about how Copilot Search and Copilot Chat [use the Bing search service](/copilot/privacy-and-protections#privacy-and-security-of-generated-search-queries) to ground some answers and responses in the latest information from the web.
 
 Copilot Search also allows admins to curate answers that provide concise, authoritative results that are especially relevant to your organization. These answers are delivered directly in search results and convey information about your organization's acronyms, bookmarks, and people.
 
