@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: loop
 ms.reviewer: michalbr, dancost
 ms.date: 07/02/2025
+ms.update-cycle: 180-days
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 

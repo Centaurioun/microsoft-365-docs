@@ -10,6 +10,7 @@ ms.topic: concept-article
 f1.keywords:
 - NOCSH
 ms.date: 02/20/2025
+ms.update-cycle: 180-days
 ms.reviewer: deanw
 ms.custom:
 - it-pro

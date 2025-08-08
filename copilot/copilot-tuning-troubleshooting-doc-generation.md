@@ -5,6 +5,7 @@ ms.author: danielabo
 author: danielabom
 manager: calvind
 ms.date: 06/17/2025
+ms.update-cycle: 180-days
 ms.topic: troubleshooting
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium

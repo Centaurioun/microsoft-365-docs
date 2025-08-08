@@ -6,6 +6,7 @@ ms.author: camillepack
 author: camillepack
 manager: scotv
 ms.date: 05/01/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-copilot
@@ -24,6 +25,12 @@ description: "Learn about Copilot in Microsoft 365 admin centers and how it can 
 # Copilot in Microsoft 365 admin centers
 
 Copilot in Microsoft 365 admin centers harnesses the value of generative AI to boost IT admins' productivity by simplifying administration of Microsoft 365 and Microsoft 365 Copilot, and empowering you to focus on more strategic priorities. Copilot in Microsoft 365 admin centers helps admins perform tasks across different Microsoft 365 services using natural language interactions, contextual guidance, and proactive suggestions. Copilot in Microsoft 365 admin centers also leverages the power of Copilot to provide transferable skills across different admin centers and surfaces, breaking the barriers of switching between multiple admin tools and interfaces.
+
+
+## Microsoft 365 Copilot in the Microsoft 365 admin center
+Watch the following video to see the different Microsoft 365 Copilot settings and configuration options in the Microsoft 365 admin center. 
+ 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=28be8725-2d69-4d93-a07d-8324c5083c46]
 
 ## Before you begin
 

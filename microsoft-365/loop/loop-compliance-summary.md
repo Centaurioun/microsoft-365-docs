@@ -1,5 +1,6 @@
 ---
 ms.date: 07/02/2025
+ms.update-cycle: 180-days
 title: "Summary of governance, lifecycle, and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
 ms.author: jenz
