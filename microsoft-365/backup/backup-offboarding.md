@@ -24,6 +24,20 @@ To no longer use the Microsoft 365 Backup tool, you must offboard usage. This ac
 
 - If your billing account goes into an unhealthy state.
 
+
+# Offboarding specific sites/mailboxes/onedrives
+
+If you wish to delete backups of specific users, sites, or mailboxes to comply with GDPR regulations, you can do so using Admin PowerShell cmdlets.
+
+> Note
+> For you to be able to offboard a protection unit, it should be removed from policy first aka it's policy-id should be empty and state as "unprotected". 
+
+Here's the steps you can follow:
+
+1. Get the protection unit-id for the site/user/mailbox, you would like to offboard using the ![List protection units PowerShell cmdlet](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-list-driveprotectionunits?view=graph-rest-1.0&tabs=powershell)
+2. Use the ![protection unit offboarding PowerShell cmdlet](https://learn.microsoft.com/en-us/graph/api/protectionunitbase-offboard?view=graph-rest-beta&tabs=powershell) to initiate the offboarding progress.
+3. If you wish to cancel the offboarding within the 90 days grace-period. Use the ![cancel offboard PowerShell cmdlet](https://learn.microsoft.com/en-us/graph/api/protectionunitbase-canceloffboard?view=graph-rest-beta&tabs=http)
+
 ## Offboarding recovery undo period
 
 If offboarding from Microsoft 365 Backup is begun due to either an explicit request from you or due to an unhealthy billing state, the grace periods shown in the following table initiate.
