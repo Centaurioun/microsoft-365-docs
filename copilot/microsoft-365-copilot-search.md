@@ -19,7 +19,7 @@ description: An overview of the Microsoft 365 Copilot search feature.
 Microsoft 365 Copilot Search is an AI-powered universal search experience optimized for your organization. It provides a familiar search experience that helps users quickly find relevant results from your organization. It offers a simple user experience that helps you find what you need, when you need it in a fast and secure unified search.
 
 > [!NOTE]
-> Microsoft 365 Copilot Search becomes available in a Targeted release beginning late June 2025. It will become generally available as a Standard release starting July 23, 2025. Learn more about [Standard and Targeted releases]( /microsoft-365/admin/manage/release-options-in-office-365).
+> Microsoft 365 Copilot Search is generally available as both a Targeted and Standard release as of July 23, 2025. Learn more about [Standard and Targeted releases](/microsoft-365/admin/manage/release-options-in-office-365).
 
 **Unified search across all applications:** Copilot Search delivers comprehensive insights into your organization's data by interpreting content across Microsoft 365 applications and beyond. With over 100 connectors now in the Microsoft Catalog, support for custom connectors, and hundreds of connectors from integrated software vendors (ISVs), Copilot Search is the single place for quick information across all your Microsoft and non-Microsoft data sources. Learn more about the [Microsoft 365 Copilot connectors gallery](/microsoftsearch/connectors-gallery).
 
@@ -61,7 +61,11 @@ Copilot Search goes beyond keyword matching by using AI to interpret context, re
 
 ## Answer types
 
-Copilot Search allows admins to curate answers that provide concise, authoritative results that are especially relevant to your organization. These answers are delivered directly in search results and convey information about your organization's acronyms, bookmarks, and people.
+A Copilot Answer in Microsoft 365 Copilot Search is a concise, AI-generated response that's powered by Microsoft 365 Copilot Chat. It appears at the top of the search results page when you enter specific natural language queries.
+
+Copilot Answers may include references and information from external sources, including optional connected cloud-backed services and the web. Its grounding is consistent with the grounding you've enabled for Copilot Chat. Learn more about how Copilot Search and Copilot Chat [use the Bing search service](/copilot/privacy-and-protections#privacy-and-security-of-generated-search-queries) to ground some answers and responses in the latest information from the web.
+
+Copilot Search also allows admins to curate answers that provide concise, authoritative results that are especially relevant to your organization. These answers are delivered directly in search results and convey information about your organization's acronyms, bookmarks, and people.
 
 - **Acronyms:** Define terminology used in the workplace.
 - **Bookmarks:** Promote key resources in your organization.
