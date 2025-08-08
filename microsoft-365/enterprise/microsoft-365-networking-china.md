@@ -131,6 +131,5 @@ Microsoft is continually working to improve the Microsoft 365 user experience an
 
 [Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[Using a Zero Trust strategy to secure Microsoft’s network during remote work](https://www.microsoft.com/insidetrack/blog/using-a-zero-trust-strategy-to-secure-microsofts-network-during-remote-work)
 
 [Microsoft global network](/azure/networking/microsoft-global-network)
