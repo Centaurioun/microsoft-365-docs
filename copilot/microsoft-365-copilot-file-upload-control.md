@@ -5,6 +5,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.date: 06/26/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.reviewer: suparekh; davidedwards
 ms.topic: overview

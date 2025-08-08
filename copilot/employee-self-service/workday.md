@@ -7,6 +7,7 @@ author: MicrosoftHeidi
 manager: dansimp
 ms.reviewer: semani
 ms.date: 07/3/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot

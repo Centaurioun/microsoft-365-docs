@@ -7,6 +7,7 @@ ms.author: mandia
 author: MandiOhlinger
 manager: dansimp
 ms.date: 07/15/2025
+ms.update-cycle: 180-days
 audience: Admin
 ms.reviewer: nirupme
 ms.topic: how-to

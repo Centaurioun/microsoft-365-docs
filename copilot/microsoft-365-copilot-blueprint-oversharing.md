@@ -7,6 +7,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.date: 07/22/2025
+ms.update-cycle: 180-days
 ms.reviewer: 
 audience: Admin
 ms.topic: get-started

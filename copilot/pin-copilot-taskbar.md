@@ -7,6 +7,7 @@ ms.author: aaroncz
 author: aczechowski
 manager: dansimp
 ms.reviewer: christin,vmirapur
+ms.update-cycle: 180-days
 ms.date: 08/05/2025
 audience: Admin
 ms.topic: how-to
