@@ -34,14 +34,7 @@ _Tenants_ in EU member Countries/regions maintain data in Macro Region Geography
 
 ## Intune
 
-Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing _Tenants_. If you don't have an existing _Tenant_, create a trial _Tenant_ and provision Intune. Microsoft won't store Intune customer data at rest outside the stated geo, except if:
-
-- It's necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
-- The customer configures an account to enable such storage of customer data, including by using the following:
-  - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
-  - If you're using Intune's enrollment and compliance notification features to send emails to end-users, the emails are processed within the respective country for sovereign cloud customers, in EMEA for customers located in EMEA, and in North America for all other customers.
-- For Microsoft Entra ID: Refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
-- Preview, beta, or other prerelease services, which typically store customer data in the United States but might store it globally. Regardless, Microsoft doesn't control or limit the Geo from which customers or their end users might access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
+Refer to [Data storage and processing in Intune](/intune/intune-service/protect/privacy-data-store-process#storage-locations).
 
 ## Office for Mobile
 
